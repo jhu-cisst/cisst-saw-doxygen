@@ -1,0 +1,223 @@
+\hypertarget{classmts_end_user_interface_arg}{}\section{mts\+End\+User\+Interface\+Arg Class Reference}
+\label{classmts_end_user_interface_arg}\index{mts\+End\+User\+Interface\+Arg@{mts\+End\+User\+Interface\+Arg}}
+
+
+{\ttfamily \#include $<$mts\+Parameter\+Types.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmts_end_user_interface_arg_a8daa91521e9ae9aba41ff0a86eb8be32}{mts\+End\+User\+Interface\+Arg} (void)
+\item 
+\hyperlink{classmts_end_user_interface_arg_a3a8b4d5845b6b51793023f7141bd3ed9}{mts\+End\+User\+Interface\+Arg} (const \hyperlink{classmts_end_user_interface_arg}{mts\+End\+User\+Interface\+Arg} \&other)
+\item 
+\hyperlink{classmts_end_user_interface_arg_a18c314acc29c24c78f0b30b735812ac7}{$\sim$mts\+End\+User\+Interface\+Arg} ()
+\item 
+\hyperlink{classmts_end_user_interface_arg_a30628f4ff388e96bdb90da79894c94ab}{mts\+End\+User\+Interface\+Arg} (const size\+\_\+t \&new\+Original\+Interface, const std\+::string \&new\+User\+Name, const size\+\_\+t \&new\+End\+User\+Interface)
+\item 
+void \hyperlink{classmts_end_user_interface_arg_a4083d87feeb0463ff41500e2676d97ca}{Serialize\+Raw} (std\+::ostream \&output\+Stream) const 
+\item 
+void \hyperlink{classmts_end_user_interface_arg_ac46680a73fa9ad45491e281e159e5953}{De\+Serialize\+Raw} (std\+::istream \&input\+Stream)
+\item 
+void \hyperlink{classmts_end_user_interface_arg_af2dccb111ad6addf14e367a3e6fe1cf6}{To\+Stream} (std\+::ostream \&output\+Stream) const 
+\item 
+void \hyperlink{classmts_end_user_interface_arg_aedb07f8b29a24417ff3d648600838eb5}{To\+Stream\+Raw} (std\+::ostream \&output\+Stream, const char delimiter= \textquotesingle{} \textquotesingle{}, bool header\+Only=false, const std\+::string \&header\+Prefix=\char`\"{}\char`\"{}) const 
+\item 
+void \hyperlink{classmts_end_user_interface_arg_a8689f6f55e431f3b28dd67d44bf0d238}{Copy} (const \hyperlink{classmts_end_user_interface_arg}{mts\+End\+User\+Interface\+Arg} \&source)
+\item 
+void \hyperlink{classmts_end_user_interface_arg_a125a9e346d3687b334bd5747bf1246b4}{Serialize\+Binary} (std\+::ostream \&output\+Stream) const   throw (std\+::runtime\+\_\+error)
+\item 
+void \hyperlink{classmts_end_user_interface_arg_ab55a00b8c567da150de851c104485f76}{De\+Serialize\+Binary} (std\+::istream \&input\+Stream, const \hyperlink{classcmn_data_format}{cmn\+Data\+Format} \&local\+Format, const \hyperlink{classcmn_data_format}{cmn\+Data\+Format} \&remote\+Format)  throw (std\+::runtime\+\_\+error)
+\item 
+void \hyperlink{classmts_end_user_interface_arg_acd15e619df9ee960a31e40255d1d513d}{Serialize\+Text} (std\+::ostream \&output\+Stream, const char delimiter= \textquotesingle{},\textquotesingle{}) const   throw (std\+::runtime\+\_\+error)
+\item 
+std\+::string \hyperlink{classmts_end_user_interface_arg_af1d39679427e5893792730da7c43d2d1}{Serialize\+Description} (const char delimiter= \textquotesingle{},\textquotesingle{}, const std\+::string \&user\+Description=\char`\"{}\char`\"{}) const 
+\item 
+void \hyperlink{classmts_end_user_interface_arg_a7e9a4162c5cc043e2f8b7fa4abbd5e54}{De\+Serialize\+Text} (std\+::istream \&input\+Stream, const char delimiter= \textquotesingle{},\textquotesingle{})  throw (std\+::runtime\+\_\+error)
+\item 
+std\+::string \hyperlink{classmts_end_user_interface_arg_a77ad225702e52f4c013bb470f62936ff}{Human\+Readable} (void) const 
+\item 
+bool \hyperlink{classmts_end_user_interface_arg_a5e9fe2a42e555e206fcf0bc7f8323ff7}{Scalar\+Number\+Is\+Fixed} (void) const 
+\item 
+size\+\_\+t \hyperlink{classmts_end_user_interface_arg_afa2a1b6152a102d552e4e9c6467466ae}{Scalar\+Number} (void) const 
+\item 
+double \hyperlink{classmts_end_user_interface_arg_af3edfd53df02b3d327e8b806643b521e}{Scalar} (const size\+\_\+t index) const   throw (std\+::out\+\_\+of\+\_\+range)
+\item 
+std\+::string \hyperlink{classmts_end_user_interface_arg_ae653874248de9fa0e780e2fb8861fba9}{Scalar\+Description} (const size\+\_\+t index, const std\+::string \&user\+Description=\char`\"{}\char`\"{}) const   throw (std\+::out\+\_\+of\+\_\+range)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+size\+\_\+t \hyperlink{classmts_end_user_interface_arg_afcb9d3b4e1fa81a772d60480519232e6}{Original\+Interface}
+\item 
+std\+::string \hyperlink{classmts_end_user_interface_arg_a0698eac4ba5458816ef097e6094c1036}{User\+Name}
+\item 
+size\+\_\+t \hyperlink{classmts_end_user_interface_arg_a3eede0e50dd9601400c62f6d545ffa79}{End\+User\+Interface}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmts_end_user_interface_arg_a8daa91521e9ae9aba41ff0a86eb8be32}{}\index{mts\+End\+User\+Interface\+Arg@{mts\+End\+User\+Interface\+Arg}!mts\+End\+User\+Interface\+Arg@{mts\+End\+User\+Interface\+Arg}}
+\index{mts\+End\+User\+Interface\+Arg@{mts\+End\+User\+Interface\+Arg}!mts\+End\+User\+Interface\+Arg@{mts\+End\+User\+Interface\+Arg}}
+\subsubsection[{mts\+End\+User\+Interface\+Arg}]{\setlength{\rightskip}{0pt plus 5cm}mts\+End\+User\+Interface\+Arg\+::mts\+End\+User\+Interface\+Arg (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classmts_end_user_interface_arg_a8daa91521e9ae9aba41ff0a86eb8be32}
+\hypertarget{classmts_end_user_interface_arg_a3a8b4d5845b6b51793023f7141bd3ed9}{}\index{mts\+End\+User\+Interface\+Arg@{mts\+End\+User\+Interface\+Arg}!mts\+End\+User\+Interface\+Arg@{mts\+End\+User\+Interface\+Arg}}
+\index{mts\+End\+User\+Interface\+Arg@{mts\+End\+User\+Interface\+Arg}!mts\+End\+User\+Interface\+Arg@{mts\+End\+User\+Interface\+Arg}}
+\subsubsection[{mts\+End\+User\+Interface\+Arg}]{\setlength{\rightskip}{0pt plus 5cm}mts\+End\+User\+Interface\+Arg\+::mts\+End\+User\+Interface\+Arg (
+\begin{DoxyParamCaption}
+\item[{const {\bf mts\+End\+User\+Interface\+Arg} \&}]{other}
+\end{DoxyParamCaption}
+)}\label{classmts_end_user_interface_arg_a3a8b4d5845b6b51793023f7141bd3ed9}
+\hypertarget{classmts_end_user_interface_arg_a18c314acc29c24c78f0b30b735812ac7}{}\index{mts\+End\+User\+Interface\+Arg@{mts\+End\+User\+Interface\+Arg}!````~mts\+End\+User\+Interface\+Arg@{$\sim$mts\+End\+User\+Interface\+Arg}}
+\index{````~mts\+End\+User\+Interface\+Arg@{$\sim$mts\+End\+User\+Interface\+Arg}!mts\+End\+User\+Interface\+Arg@{mts\+End\+User\+Interface\+Arg}}
+\subsubsection[{$\sim$mts\+End\+User\+Interface\+Arg}]{\setlength{\rightskip}{0pt plus 5cm}mts\+End\+User\+Interface\+Arg\+::$\sim$mts\+End\+User\+Interface\+Arg (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classmts_end_user_interface_arg_a18c314acc29c24c78f0b30b735812ac7}
+\hypertarget{classmts_end_user_interface_arg_a30628f4ff388e96bdb90da79894c94ab}{}\index{mts\+End\+User\+Interface\+Arg@{mts\+End\+User\+Interface\+Arg}!mts\+End\+User\+Interface\+Arg@{mts\+End\+User\+Interface\+Arg}}
+\index{mts\+End\+User\+Interface\+Arg@{mts\+End\+User\+Interface\+Arg}!mts\+End\+User\+Interface\+Arg@{mts\+End\+User\+Interface\+Arg}}
+\subsubsection[{mts\+End\+User\+Interface\+Arg}]{\setlength{\rightskip}{0pt plus 5cm}mts\+End\+User\+Interface\+Arg\+::mts\+End\+User\+Interface\+Arg (
+\begin{DoxyParamCaption}
+\item[{const size\+\_\+t \&}]{new\+Original\+Interface, }
+\item[{const std\+::string \&}]{new\+User\+Name, }
+\item[{const size\+\_\+t \&}]{new\+End\+User\+Interface}
+\end{DoxyParamCaption}
+)}\label{classmts_end_user_interface_arg_a30628f4ff388e96bdb90da79894c94ab}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classmts_end_user_interface_arg_a8689f6f55e431f3b28dd67d44bf0d238}{}\index{mts\+End\+User\+Interface\+Arg@{mts\+End\+User\+Interface\+Arg}!Copy@{Copy}}
+\index{Copy@{Copy}!mts\+End\+User\+Interface\+Arg@{mts\+End\+User\+Interface\+Arg}}
+\subsubsection[{Copy}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+End\+User\+Interface\+Arg\+::\+Copy (
+\begin{DoxyParamCaption}
+\item[{const {\bf mts\+End\+User\+Interface\+Arg} \&}]{source}
+\end{DoxyParamCaption}
+)}\label{classmts_end_user_interface_arg_a8689f6f55e431f3b28dd67d44bf0d238}
+\hypertarget{classmts_end_user_interface_arg_ab55a00b8c567da150de851c104485f76}{}\index{mts\+End\+User\+Interface\+Arg@{mts\+End\+User\+Interface\+Arg}!De\+Serialize\+Binary@{De\+Serialize\+Binary}}
+\index{De\+Serialize\+Binary@{De\+Serialize\+Binary}!mts\+End\+User\+Interface\+Arg@{mts\+End\+User\+Interface\+Arg}}
+\subsubsection[{De\+Serialize\+Binary}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+End\+User\+Interface\+Arg\+::\+De\+Serialize\+Binary (
+\begin{DoxyParamCaption}
+\item[{std\+::istream \&}]{input\+Stream, }
+\item[{const {\bf cmn\+Data\+Format} \&}]{local\+Format, }
+\item[{const {\bf cmn\+Data\+Format} \&}]{remote\+Format}
+\end{DoxyParamCaption}
+) throw  std\+::runtime\+\_\+error) }\label{classmts_end_user_interface_arg_ab55a00b8c567da150de851c104485f76}
+\hypertarget{classmts_end_user_interface_arg_ac46680a73fa9ad45491e281e159e5953}{}\index{mts\+End\+User\+Interface\+Arg@{mts\+End\+User\+Interface\+Arg}!De\+Serialize\+Raw@{De\+Serialize\+Raw}}
+\index{De\+Serialize\+Raw@{De\+Serialize\+Raw}!mts\+End\+User\+Interface\+Arg@{mts\+End\+User\+Interface\+Arg}}
+\subsubsection[{De\+Serialize\+Raw}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+End\+User\+Interface\+Arg\+::\+De\+Serialize\+Raw (
+\begin{DoxyParamCaption}
+\item[{std\+::istream \&}]{input\+Stream}
+\end{DoxyParamCaption}
+)}\label{classmts_end_user_interface_arg_ac46680a73fa9ad45491e281e159e5953}
+\hypertarget{classmts_end_user_interface_arg_a7e9a4162c5cc043e2f8b7fa4abbd5e54}{}\index{mts\+End\+User\+Interface\+Arg@{mts\+End\+User\+Interface\+Arg}!De\+Serialize\+Text@{De\+Serialize\+Text}}
+\index{De\+Serialize\+Text@{De\+Serialize\+Text}!mts\+End\+User\+Interface\+Arg@{mts\+End\+User\+Interface\+Arg}}
+\subsubsection[{De\+Serialize\+Text}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+End\+User\+Interface\+Arg\+::\+De\+Serialize\+Text (
+\begin{DoxyParamCaption}
+\item[{std\+::istream \&}]{input\+Stream, }
+\item[{const char}]{delimiter = {\ttfamily \textquotesingle{},\textquotesingle{}}}
+\end{DoxyParamCaption}
+) throw  std\+::runtime\+\_\+error) }\label{classmts_end_user_interface_arg_a7e9a4162c5cc043e2f8b7fa4abbd5e54}
+\hypertarget{classmts_end_user_interface_arg_a77ad225702e52f4c013bb470f62936ff}{}\index{mts\+End\+User\+Interface\+Arg@{mts\+End\+User\+Interface\+Arg}!Human\+Readable@{Human\+Readable}}
+\index{Human\+Readable@{Human\+Readable}!mts\+End\+User\+Interface\+Arg@{mts\+End\+User\+Interface\+Arg}}
+\subsubsection[{Human\+Readable}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string mts\+End\+User\+Interface\+Arg\+::\+Human\+Readable (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classmts_end_user_interface_arg_a77ad225702e52f4c013bb470f62936ff}
+\hypertarget{classmts_end_user_interface_arg_af3edfd53df02b3d327e8b806643b521e}{}\index{mts\+End\+User\+Interface\+Arg@{mts\+End\+User\+Interface\+Arg}!Scalar@{Scalar}}
+\index{Scalar@{Scalar}!mts\+End\+User\+Interface\+Arg@{mts\+End\+User\+Interface\+Arg}}
+\subsubsection[{Scalar}]{\setlength{\rightskip}{0pt plus 5cm}double mts\+End\+User\+Interface\+Arg\+::\+Scalar (
+\begin{DoxyParamCaption}
+\item[{const size\+\_\+t}]{index}
+\end{DoxyParamCaption}
+) const throw  std\+::out\+\_\+of\+\_\+range) }\label{classmts_end_user_interface_arg_af3edfd53df02b3d327e8b806643b521e}
+\hypertarget{classmts_end_user_interface_arg_ae653874248de9fa0e780e2fb8861fba9}{}\index{mts\+End\+User\+Interface\+Arg@{mts\+End\+User\+Interface\+Arg}!Scalar\+Description@{Scalar\+Description}}
+\index{Scalar\+Description@{Scalar\+Description}!mts\+End\+User\+Interface\+Arg@{mts\+End\+User\+Interface\+Arg}}
+\subsubsection[{Scalar\+Description}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string mts\+End\+User\+Interface\+Arg\+::\+Scalar\+Description (
+\begin{DoxyParamCaption}
+\item[{const size\+\_\+t}]{index, }
+\item[{const std\+::string \&}]{user\+Description = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+) const throw  std\+::out\+\_\+of\+\_\+range) }\label{classmts_end_user_interface_arg_ae653874248de9fa0e780e2fb8861fba9}
+\hypertarget{classmts_end_user_interface_arg_afa2a1b6152a102d552e4e9c6467466ae}{}\index{mts\+End\+User\+Interface\+Arg@{mts\+End\+User\+Interface\+Arg}!Scalar\+Number@{Scalar\+Number}}
+\index{Scalar\+Number@{Scalar\+Number}!mts\+End\+User\+Interface\+Arg@{mts\+End\+User\+Interface\+Arg}}
+\subsubsection[{Scalar\+Number}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t mts\+End\+User\+Interface\+Arg\+::\+Scalar\+Number (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classmts_end_user_interface_arg_afa2a1b6152a102d552e4e9c6467466ae}
+\hypertarget{classmts_end_user_interface_arg_a5e9fe2a42e555e206fcf0bc7f8323ff7}{}\index{mts\+End\+User\+Interface\+Arg@{mts\+End\+User\+Interface\+Arg}!Scalar\+Number\+Is\+Fixed@{Scalar\+Number\+Is\+Fixed}}
+\index{Scalar\+Number\+Is\+Fixed@{Scalar\+Number\+Is\+Fixed}!mts\+End\+User\+Interface\+Arg@{mts\+End\+User\+Interface\+Arg}}
+\subsubsection[{Scalar\+Number\+Is\+Fixed}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+End\+User\+Interface\+Arg\+::\+Scalar\+Number\+Is\+Fixed (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classmts_end_user_interface_arg_a5e9fe2a42e555e206fcf0bc7f8323ff7}
+\hypertarget{classmts_end_user_interface_arg_a125a9e346d3687b334bd5747bf1246b4}{}\index{mts\+End\+User\+Interface\+Arg@{mts\+End\+User\+Interface\+Arg}!Serialize\+Binary@{Serialize\+Binary}}
+\index{Serialize\+Binary@{Serialize\+Binary}!mts\+End\+User\+Interface\+Arg@{mts\+End\+User\+Interface\+Arg}}
+\subsubsection[{Serialize\+Binary}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+End\+User\+Interface\+Arg\+::\+Serialize\+Binary (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{output\+Stream}
+\end{DoxyParamCaption}
+) const throw  std\+::runtime\+\_\+error) }\label{classmts_end_user_interface_arg_a125a9e346d3687b334bd5747bf1246b4}
+\hypertarget{classmts_end_user_interface_arg_af1d39679427e5893792730da7c43d2d1}{}\index{mts\+End\+User\+Interface\+Arg@{mts\+End\+User\+Interface\+Arg}!Serialize\+Description@{Serialize\+Description}}
+\index{Serialize\+Description@{Serialize\+Description}!mts\+End\+User\+Interface\+Arg@{mts\+End\+User\+Interface\+Arg}}
+\subsubsection[{Serialize\+Description}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string mts\+End\+User\+Interface\+Arg\+::\+Serialize\+Description (
+\begin{DoxyParamCaption}
+\item[{const char}]{delimiter = {\ttfamily \textquotesingle{},\textquotesingle{}}, }
+\item[{const std\+::string \&}]{user\+Description = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+) const}\label{classmts_end_user_interface_arg_af1d39679427e5893792730da7c43d2d1}
+\hypertarget{classmts_end_user_interface_arg_a4083d87feeb0463ff41500e2676d97ca}{}\index{mts\+End\+User\+Interface\+Arg@{mts\+End\+User\+Interface\+Arg}!Serialize\+Raw@{Serialize\+Raw}}
+\index{Serialize\+Raw@{Serialize\+Raw}!mts\+End\+User\+Interface\+Arg@{mts\+End\+User\+Interface\+Arg}}
+\subsubsection[{Serialize\+Raw}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+End\+User\+Interface\+Arg\+::\+Serialize\+Raw (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{output\+Stream}
+\end{DoxyParamCaption}
+) const}\label{classmts_end_user_interface_arg_a4083d87feeb0463ff41500e2676d97ca}
+\hypertarget{classmts_end_user_interface_arg_acd15e619df9ee960a31e40255d1d513d}{}\index{mts\+End\+User\+Interface\+Arg@{mts\+End\+User\+Interface\+Arg}!Serialize\+Text@{Serialize\+Text}}
+\index{Serialize\+Text@{Serialize\+Text}!mts\+End\+User\+Interface\+Arg@{mts\+End\+User\+Interface\+Arg}}
+\subsubsection[{Serialize\+Text}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+End\+User\+Interface\+Arg\+::\+Serialize\+Text (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{output\+Stream, }
+\item[{const char}]{delimiter = {\ttfamily \textquotesingle{},\textquotesingle{}}}
+\end{DoxyParamCaption}
+) const throw  std\+::runtime\+\_\+error) }\label{classmts_end_user_interface_arg_acd15e619df9ee960a31e40255d1d513d}
+\hypertarget{classmts_end_user_interface_arg_af2dccb111ad6addf14e367a3e6fe1cf6}{}\index{mts\+End\+User\+Interface\+Arg@{mts\+End\+User\+Interface\+Arg}!To\+Stream@{To\+Stream}}
+\index{To\+Stream@{To\+Stream}!mts\+End\+User\+Interface\+Arg@{mts\+End\+User\+Interface\+Arg}}
+\subsubsection[{To\+Stream}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+End\+User\+Interface\+Arg\+::\+To\+Stream (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{output\+Stream}
+\end{DoxyParamCaption}
+) const}\label{classmts_end_user_interface_arg_af2dccb111ad6addf14e367a3e6fe1cf6}
+\hypertarget{classmts_end_user_interface_arg_aedb07f8b29a24417ff3d648600838eb5}{}\index{mts\+End\+User\+Interface\+Arg@{mts\+End\+User\+Interface\+Arg}!To\+Stream\+Raw@{To\+Stream\+Raw}}
+\index{To\+Stream\+Raw@{To\+Stream\+Raw}!mts\+End\+User\+Interface\+Arg@{mts\+End\+User\+Interface\+Arg}}
+\subsubsection[{To\+Stream\+Raw}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+End\+User\+Interface\+Arg\+::\+To\+Stream\+Raw (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{output\+Stream, }
+\item[{const char}]{delimiter = {\ttfamily \textquotesingle{}~\textquotesingle{}}, }
+\item[{bool}]{header\+Only = {\ttfamily false}, }
+\item[{const std\+::string \&}]{header\+Prefix = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+) const}\label{classmts_end_user_interface_arg_aedb07f8b29a24417ff3d648600838eb5}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classmts_end_user_interface_arg_a3eede0e50dd9601400c62f6d545ffa79}{}\index{mts\+End\+User\+Interface\+Arg@{mts\+End\+User\+Interface\+Arg}!End\+User\+Interface@{End\+User\+Interface}}
+\index{End\+User\+Interface@{End\+User\+Interface}!mts\+End\+User\+Interface\+Arg@{mts\+End\+User\+Interface\+Arg}}
+\subsubsection[{End\+User\+Interface}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t mts\+End\+User\+Interface\+Arg\+::\+End\+User\+Interface}\label{classmts_end_user_interface_arg_a3eede0e50dd9601400c62f6d545ffa79}
+\hypertarget{classmts_end_user_interface_arg_afcb9d3b4e1fa81a772d60480519232e6}{}\index{mts\+End\+User\+Interface\+Arg@{mts\+End\+User\+Interface\+Arg}!Original\+Interface@{Original\+Interface}}
+\index{Original\+Interface@{Original\+Interface}!mts\+End\+User\+Interface\+Arg@{mts\+End\+User\+Interface\+Arg}}
+\subsubsection[{Original\+Interface}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t mts\+End\+User\+Interface\+Arg\+::\+Original\+Interface}\label{classmts_end_user_interface_arg_afcb9d3b4e1fa81a772d60480519232e6}
+\hypertarget{classmts_end_user_interface_arg_a0698eac4ba5458816ef097e6094c1036}{}\index{mts\+End\+User\+Interface\+Arg@{mts\+End\+User\+Interface\+Arg}!User\+Name@{User\+Name}}
+\index{User\+Name@{User\+Name}!mts\+End\+User\+Interface\+Arg@{mts\+End\+User\+Interface\+Arg}}
+\subsubsection[{User\+Name}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string mts\+End\+User\+Interface\+Arg\+::\+User\+Name}\label{classmts_end_user_interface_arg_a0698eac4ba5458816ef097e6094c1036}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw-\/build/cisst/include/cisst\+Multi\+Task/\hyperlink{mts_parameter_types_8h}{mts\+Parameter\+Types.\+h}\end{DoxyCompactItemize}

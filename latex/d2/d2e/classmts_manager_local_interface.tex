@@ -17,17 +17,17 @@ virtual bool \hyperlink{classmts_manager_local_interface_abfc11305625c7c4ce4c4bc
 \item 
 virtual bool \hyperlink{classmts_manager_local_interface_a652217c6fe0ad3d6a76fcd7fff7c0dc8}{Remove\+Component\+Proxy} (const std\+::string \&component\+Proxy\+Name, const std\+::string \&listener\+I\+D=\char`\"{}\char`\"{})=0
 \item 
-virtual bool \hyperlink{classmts_manager_local_interface_ad493767a207ec22ed33f6504895f1d94}{Create\+Interface\+Provided\+Proxy} (const std\+::string \&server\+Component\+Proxy\+Name, const mts\+Interface\+Provided\+Description \&provided\+Interface\+Description, const std\+::string \&listener\+I\+D=\char`\"{}\char`\"{})=0
+virtual bool \hyperlink{classmts_manager_local_interface_ad493767a207ec22ed33f6504895f1d94}{Create\+Interface\+Provided\+Proxy} (const std\+::string \&server\+Component\+Proxy\+Name, const \hyperlink{classmts_interface_provided_description}{mts\+Interface\+Provided\+Description} \&provided\+Interface\+Description, const std\+::string \&listener\+I\+D=\char`\"{}\char`\"{})=0
 \item 
-virtual bool \hyperlink{classmts_manager_local_interface_aee6b1f307a322614857eb18354f946d3}{Create\+Interface\+Required\+Proxy} (const std\+::string \&client\+Component\+Proxy\+Name, const mts\+Interface\+Required\+Description \&required\+Interface\+Description, const std\+::string \&listener\+I\+D=\char`\"{}\char`\"{})=0
+virtual bool \hyperlink{classmts_manager_local_interface_aee6b1f307a322614857eb18354f946d3}{Create\+Interface\+Required\+Proxy} (const std\+::string \&client\+Component\+Proxy\+Name, const \hyperlink{classmts_interface_required_description}{mts\+Interface\+Required\+Description} \&required\+Interface\+Description, const std\+::string \&listener\+I\+D=\char`\"{}\char`\"{})=0
 \item 
 virtual bool \hyperlink{classmts_manager_local_interface_a26a995efe03d1e5061f8eed130dfd368}{Remove\+Interface\+Provided\+Proxy} (const std\+::string \&component\+Proxy\+Name, const std\+::string \&provided\+Interface\+Proxy\+Name, const std\+::string \&listener\+I\+D=\char`\"{}\char`\"{})=0
 \item 
 virtual bool \hyperlink{classmts_manager_local_interface_a47397143664c81373bd0acb06e937ad6}{Remove\+Interface\+Required\+Proxy} (const std\+::string \&component\+Proxy\+Name, const std\+::string \&required\+Interface\+Proxy\+Name, const std\+::string \&listener\+I\+D=\char`\"{}\char`\"{})=0
 \item 
-virtual bool \hyperlink{classmts_manager_local_interface_a1c90c76d7ead2cc1fe9a31222d09aa54}{Connect\+Server\+Side\+Interface} (const mts\+Description\+Connection \&description, const std\+::string \&listener\+I\+D=\char`\"{}\char`\"{})=0
+virtual bool \hyperlink{classmts_manager_local_interface_a1c90c76d7ead2cc1fe9a31222d09aa54}{Connect\+Server\+Side\+Interface} (const \hyperlink{classmts_description_connection}{mts\+Description\+Connection} \&description, const std\+::string \&listener\+I\+D=\char`\"{}\char`\"{})=0
 \begin{DoxyCompactList}\small\item\em Connect interfaces at server side. \end{DoxyCompactList}\item 
-virtual bool \hyperlink{classmts_manager_local_interface_ac89f1ce8ca7e003b085b56aa25a72117}{Connect\+Client\+Side\+Interface} (const mts\+Description\+Connection \&description, const std\+::string \&listener\+I\+D=\char`\"{}\char`\"{})=0
+virtual bool \hyperlink{classmts_manager_local_interface_ac89f1ce8ca7e003b085b56aa25a72117}{Connect\+Client\+Side\+Interface} (const \hyperlink{classmts_description_connection}{mts\+Description\+Connection} \&description, const std\+::string \&listener\+I\+D=\char`\"{}\char`\"{})=0
 \begin{DoxyCompactList}\small\item\em Connect interfaces at client side. \end{DoxyCompactList}\item 
 virtual const std\+::string \hyperlink{classmts_manager_local_interface_af0a457e2895c8e4fc74aebdfce72d7c8}{Get\+Process\+Name} (const std\+::string \&listener\+I\+D=\char`\"{}\char`\"{}) const =0
 \item 
@@ -47,9 +47,9 @@ virtual void \hyperlink{classmts_manager_local_interface_a70d67480d63eafe650906d
 \item 
 virtual void \hyperlink{classmts_manager_local_interface_acf03d1240b5f0ba5637cd32fdd03ecaa}{Get\+Description\+Of\+Event\+Handler} (std\+::string \&description, const std\+::string \&component\+Name, const std\+::string \&required\+Interface\+Name, const std\+::string \&event\+Handler\+Name, const std\+::string \&listener\+I\+D=\char`\"{}\char`\"{})=0
 \item 
-virtual bool \hyperlink{classmts_manager_local_interface_a2a3db8231dd1d120d07352f90c55abd9}{Get\+Interface\+Provided\+Description} (const std\+::string \&server\+Component\+Name, const std\+::string \&provided\+Interface\+Name, mts\+Interface\+Provided\+Description \&provided\+Interface\+Description, const std\+::string \&listener\+I\+D=\char`\"{}\char`\"{})=0
+virtual bool \hyperlink{classmts_manager_local_interface_a2a3db8231dd1d120d07352f90c55abd9}{Get\+Interface\+Provided\+Description} (const std\+::string \&server\+Component\+Name, const std\+::string \&provided\+Interface\+Name, \hyperlink{classmts_interface_provided_description}{mts\+Interface\+Provided\+Description} \&provided\+Interface\+Description, const std\+::string \&listener\+I\+D=\char`\"{}\char`\"{})=0
 \begin{DoxyCompactList}\small\item\em Extract all information about provided interface such as command objects and event generators. Arguments are serialized, if any. \end{DoxyCompactList}\item 
-virtual bool \hyperlink{classmts_manager_local_interface_a3010191948ef1402d231eb94af75b51b}{Get\+Interface\+Required\+Description} (const std\+::string \&component\+Name, const std\+::string \&required\+Interface\+Name, mts\+Interface\+Required\+Description \&required\+Interface\+Description, const std\+::string \&listener\+I\+D=\char`\"{}\char`\"{})=0
+virtual bool \hyperlink{classmts_manager_local_interface_a3010191948ef1402d231eb94af75b51b}{Get\+Interface\+Required\+Description} (const std\+::string \&component\+Name, const std\+::string \&required\+Interface\+Name, \hyperlink{classmts_interface_required_description}{mts\+Interface\+Required\+Description} \&required\+Interface\+Description, const std\+::string \&listener\+I\+D=\char`\"{}\char`\"{})=0
 \begin{DoxyCompactList}\small\item\em Extract all information about required interface such as function objects and event handlers. Arguments are serialized, if any. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -58,7 +58,7 @@ virtual bool \hyperlink{classmts_manager_local_interface_a3010191948ef1402d231eb
 \index{Connect\+Client\+Side\+Interface@{Connect\+Client\+Side\+Interface}!mts\+Manager\+Local\+Interface@{mts\+Manager\+Local\+Interface}}
 \subsubsection[{Connect\+Client\+Side\+Interface}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool mts\+Manager\+Local\+Interface\+::\+Connect\+Client\+Side\+Interface (
 \begin{DoxyParamCaption}
-\item[{const mts\+Description\+Connection \&}]{description, }
+\item[{const {\bf mts\+Description\+Connection} \&}]{description, }
 \item[{const std\+::string \&}]{listener\+I\+D = {\ttfamily \char`\"{}\char`\"{}}}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classmts_manager_local_interface_ac89f1ce8ca7e003b085b56aa25a72117}
@@ -87,7 +87,7 @@ Implemented in \hyperlink{classmts_manager_local_af8f8d230b07f5d647b0e363f7e6321
 \index{Connect\+Server\+Side\+Interface@{Connect\+Server\+Side\+Interface}!mts\+Manager\+Local\+Interface@{mts\+Manager\+Local\+Interface}}
 \subsubsection[{Connect\+Server\+Side\+Interface}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool mts\+Manager\+Local\+Interface\+::\+Connect\+Server\+Side\+Interface (
 \begin{DoxyParamCaption}
-\item[{const mts\+Description\+Connection \&}]{description, }
+\item[{const {\bf mts\+Description\+Connection} \&}]{description, }
 \item[{const std\+::string \&}]{listener\+I\+D = {\ttfamily \char`\"{}\char`\"{}}}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classmts_manager_local_interface_a1c90c76d7ead2cc1fe9a31222d09aa54}
@@ -129,7 +129,7 @@ Implemented in \hyperlink{classmts_manager_local_a200bc8fea319014d8902724564d944
 \subsubsection[{Create\+Interface\+Provided\+Proxy}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool mts\+Manager\+Local\+Interface\+::\+Create\+Interface\+Provided\+Proxy (
 \begin{DoxyParamCaption}
 \item[{const std\+::string \&}]{server\+Component\+Proxy\+Name, }
-\item[{const mts\+Interface\+Provided\+Description \&}]{provided\+Interface\+Description, }
+\item[{const {\bf mts\+Interface\+Provided\+Description} \&}]{provided\+Interface\+Description, }
 \item[{const std\+::string \&}]{listener\+I\+D = {\ttfamily \char`\"{}\char`\"{}}}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classmts_manager_local_interface_ad493767a207ec22ed33f6504895f1d94}
@@ -142,7 +142,7 @@ Implemented in \hyperlink{classmts_manager_local_a196c71a8ad2532559e6744710954b5
 \subsubsection[{Create\+Interface\+Required\+Proxy}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool mts\+Manager\+Local\+Interface\+::\+Create\+Interface\+Required\+Proxy (
 \begin{DoxyParamCaption}
 \item[{const std\+::string \&}]{client\+Component\+Proxy\+Name, }
-\item[{const mts\+Interface\+Required\+Description \&}]{required\+Interface\+Description, }
+\item[{const {\bf mts\+Interface\+Required\+Description} \&}]{required\+Interface\+Description, }
 \item[{const std\+::string \&}]{listener\+I\+D = {\ttfamily \char`\"{}\char`\"{}}}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classmts_manager_local_interface_aee6b1f307a322614857eb18354f946d3}
@@ -200,7 +200,7 @@ Get description of a function in a required interface \hypertarget{classmts_mana
 \begin{DoxyParamCaption}
 \item[{const std\+::string \&}]{server\+Component\+Name, }
 \item[{const std\+::string \&}]{provided\+Interface\+Name, }
-\item[{mts\+Interface\+Provided\+Description \&}]{provided\+Interface\+Description, }
+\item[{{\bf mts\+Interface\+Provided\+Description} \&}]{provided\+Interface\+Description, }
 \item[{const std\+::string \&}]{listener\+I\+D = {\ttfamily \char`\"{}\char`\"{}}}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classmts_manager_local_interface_a2a3db8231dd1d120d07352f90c55abd9}
@@ -235,7 +235,7 @@ Implemented in \hyperlink{classmts_manager_local_ae131ad1d60cfa1b0abb67590525178
 \begin{DoxyParamCaption}
 \item[{const std\+::string \&}]{component\+Name, }
 \item[{const std\+::string \&}]{required\+Interface\+Name, }
-\item[{mts\+Interface\+Required\+Description \&}]{required\+Interface\+Description, }
+\item[{{\bf mts\+Interface\+Required\+Description} \&}]{required\+Interface\+Description, }
 \item[{const std\+::string \&}]{listener\+I\+D = {\ttfamily \char`\"{}\char`\"{}}}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classmts_manager_local_interface_a3010191948ef1402d231eb94af75b51b}

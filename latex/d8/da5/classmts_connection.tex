@@ -13,7 +13,7 @@ Inheritance diagram for mts\+Connection\+:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classmts_connection_a071972ee336069bba608bd6737251c80}{mts\+Connection} (const mts\+Description\+Connection \&description, const std\+::string \&request\+Process\+Name)
+\hyperlink{classmts_connection_a071972ee336069bba608bd6737251c80}{mts\+Connection} (const \hyperlink{classmts_description_connection}{mts\+Description\+Connection} \&description, const std\+::string \&request\+Process\+Name)
 \item 
 \hyperlink{mts_forward_declarations_8h_ad3543bb11742e1766374ec96016d6547}{Connection\+I\+D\+Type} \hyperlink{classmts_connection_a0cdb99db04bf430b6d66d101a06632e7}{Get\+Connection\+I\+D} (void) const 
 \item 
@@ -29,9 +29,9 @@ std\+::string \hyperlink{classmts_connection_a5840d98170336716c9e12b0790807b01}{
 \item 
 std\+::string \hyperlink{classmts_connection_a846f0404697261cd08493abbd9fe0b23}{Get\+Server\+Interface\+Name} (void) const 
 \item 
-mts\+Description\+Connection \hyperlink{classmts_connection_a57ce93d13a639abfde415fce5aea3b4f}{Get\+Description\+Connection} (void) const 
+\hyperlink{classmts_description_connection}{mts\+Description\+Connection} \hyperlink{classmts_connection_a57ce93d13a639abfde415fce5aea3b4f}{Get\+Description\+Connection} (void) const 
 \item 
-void \hyperlink{classmts_connection_a8cf4f6f7a4fb474edb6a853d9365d751}{Get\+Description\+Connection} (mts\+Description\+Connection \&description) const 
+void \hyperlink{classmts_connection_a8cf4f6f7a4fb474edb6a853d9365d751}{Get\+Description\+Connection} (\hyperlink{classmts_description_connection}{mts\+Description\+Connection} \&description) const 
 \item 
 bool \hyperlink{classmts_connection_ae9b6fd039a212ad72e7ccfd4a290cf25}{Is\+Connected} (void) const 
 \item 
@@ -54,7 +54,7 @@ void \hyperlink{classmts_connection_a893608b72a416d37013db5d036482100}{De\+Seria
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
-mts\+Description\+Connection \hyperlink{classmts_connection_a0a529fcb9c6627e79c49eb05265dd43e}{Connection\+Description}
+\hyperlink{classmts_description_connection}{mts\+Description\+Connection} \hyperlink{classmts_connection_a0a529fcb9c6627e79c49eb05265dd43e}{Connection\+Description}
 \item 
 const std\+::string \hyperlink{classmts_connection_a81c4b5147db8f46d70b30c7fabbc72c8}{Request\+Process\+Name}
 \item 
@@ -74,7 +74,7 @@ Data structure to keep connection information
 \index{mts\+Connection@{mts\+Connection}!mts\+Connection@{mts\+Connection}}
 \subsubsection[{mts\+Connection}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Connection\+::mts\+Connection (
 \begin{DoxyParamCaption}
-\item[{const mts\+Description\+Connection \&}]{description, }
+\item[{const {\bf mts\+Description\+Connection} \&}]{description, }
 \item[{const std\+::string \&}]{request\+Process\+Name}
 \end{DoxyParamCaption}
 )}\label{classmts_connection_a071972ee336069bba608bd6737251c80}
@@ -129,7 +129,7 @@ Reimplemented from \hyperlink{classmts_generic_object_af83ae8622a742a5b94bf72e53
 ) const}\label{classmts_connection_a0cdb99db04bf430b6d66d101a06632e7}
 Getters and Setters \hypertarget{classmts_connection_a57ce93d13a639abfde415fce5aea3b4f}{}\index{mts\+Connection@{mts\+Connection}!Get\+Description\+Connection@{Get\+Description\+Connection}}
 \index{Get\+Description\+Connection@{Get\+Description\+Connection}!mts\+Connection@{mts\+Connection}}
-\subsubsection[{Get\+Description\+Connection}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Description\+Connection mts\+Connection\+::\+Get\+Description\+Connection (
+\subsubsection[{Get\+Description\+Connection}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+Description\+Connection} mts\+Connection\+::\+Get\+Description\+Connection (
 \begin{DoxyParamCaption}
 \item[{void}]{}
 \end{DoxyParamCaption}
@@ -138,7 +138,7 @@ Getters and Setters \hypertarget{classmts_connection_a57ce93d13a639abfde415fce5a
 \index{Get\+Description\+Connection@{Get\+Description\+Connection}!mts\+Connection@{mts\+Connection}}
 \subsubsection[{Get\+Description\+Connection}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Connection\+::\+Get\+Description\+Connection (
 \begin{DoxyParamCaption}
-\item[{mts\+Description\+Connection \&}]{description}
+\item[{{\bf mts\+Description\+Connection} \&}]{description}
 \end{DoxyParamCaption}
 ) const}\label{classmts_connection_a8cf4f6f7a4fb474edb6a853d9365d751}
 \hypertarget{classmts_connection_a995804182172f108d74d7921e8335884}{}\index{mts\+Connection@{mts\+Connection}!Get\+Endpoint\+Info@{Get\+Endpoint\+Info}}
@@ -227,7 +227,7 @@ Reimplemented from \hyperlink{classmts_generic_object_a2030aaa58bc215eccce1dc8d2
 \subsubsection[{Connected}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Connection\+::\+Connected\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_connection_a2384cf6081cf01b9330bf6810108c2b5}
 \hypertarget{classmts_connection_a0a529fcb9c6627e79c49eb05265dd43e}{}\index{mts\+Connection@{mts\+Connection}!Connection\+Description@{Connection\+Description}}
 \index{Connection\+Description@{Connection\+Description}!mts\+Connection@{mts\+Connection}}
-\subsubsection[{Connection\+Description}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Description\+Connection mts\+Connection\+::\+Connection\+Description\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_connection_a0a529fcb9c6627e79c49eb05265dd43e}
+\subsubsection[{Connection\+Description}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+Description\+Connection} mts\+Connection\+::\+Connection\+Description\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_connection_a0a529fcb9c6627e79c49eb05265dd43e}
 \hypertarget{classmts_connection_ad5e701a7d4fe0a27b084d0f8d161c7d6}{}\index{mts\+Connection@{mts\+Connection}!Endpoint\+Info@{Endpoint\+Info}}
 \index{Endpoint\+Info@{Endpoint\+Info}!mts\+Connection@{mts\+Connection}}
 \subsubsection[{Endpoint\+Info}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string mts\+Connection\+::\+Endpoint\+Info\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_connection_ad5e701a7d4fe0a27b084d0f8d161c7d6}

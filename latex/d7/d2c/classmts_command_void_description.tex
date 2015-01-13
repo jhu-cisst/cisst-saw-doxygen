@@ -1,0 +1,211 @@
+\hypertarget{classmts_command_void_description}{}\section{mts\+Command\+Void\+Description Class Reference}
+\label{classmts_command_void_description}\index{mts\+Command\+Void\+Description@{mts\+Command\+Void\+Description}}
+
+
+{\ttfamily \#include $<$mts\+Interface\+Common.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmts_command_void_description_a5bc3aaec85b7b36e4ff84c63d8deae5f}{mts\+Command\+Void\+Description} (void)
+\item 
+\hyperlink{classmts_command_void_description_a9d040531c92ea4c8b02acd69031775e1}{mts\+Command\+Void\+Description} (const \hyperlink{classmts_command_void_description}{mts\+Command\+Void\+Description} \&other)
+\item 
+\hyperlink{classmts_command_void_description_a13158a67e2f4eba24a026a8771b43ee4}{$\sim$mts\+Command\+Void\+Description} ()
+\item 
+\hyperlink{classmts_command_void_description_a76e960109615ad44e99ab5bdde8369f8}{mts\+Command\+Void\+Description} (const std\+::string \&new\+Name)
+\item 
+void \hyperlink{classmts_command_void_description_a340a0e0c0143ddc712a10eaf48c478ed}{Serialize\+Raw} (std\+::ostream \&output\+Stream) const 
+\item 
+void \hyperlink{classmts_command_void_description_a39b8a55124bff411f5b7a6adbed0f306}{De\+Serialize\+Raw} (std\+::istream \&input\+Stream)
+\item 
+void \hyperlink{classmts_command_void_description_afca052335615fb80fa73ff7a2a64e10e}{To\+Stream} (std\+::ostream \&output\+Stream) const 
+\item 
+void \hyperlink{classmts_command_void_description_aed5f7ee865cf462b23334ba1ff451ddd}{To\+Stream\+Raw} (std\+::ostream \&output\+Stream, const char delimiter= \textquotesingle{} \textquotesingle{}, bool header\+Only=false, const std\+::string \&header\+Prefix=\char`\"{}\char`\"{}) const 
+\item 
+void \hyperlink{classmts_command_void_description_ac85ea01d42186b9ff3edd54ac348b84d}{Copy} (const \hyperlink{classmts_command_void_description}{mts\+Command\+Void\+Description} \&source)
+\item 
+void \hyperlink{classmts_command_void_description_a8f73300d3cf20874f119d4bc1ed77c1d}{Serialize\+Binary} (std\+::ostream \&output\+Stream) const   throw (std\+::runtime\+\_\+error)
+\item 
+void \hyperlink{classmts_command_void_description_a3fda3e49e9aca60ff86a89316701722f}{De\+Serialize\+Binary} (std\+::istream \&input\+Stream, const \hyperlink{classcmn_data_format}{cmn\+Data\+Format} \&local\+Format, const \hyperlink{classcmn_data_format}{cmn\+Data\+Format} \&remote\+Format)  throw (std\+::runtime\+\_\+error)
+\item 
+void \hyperlink{classmts_command_void_description_acef3373c62959147d26f92e431a0db8e}{Serialize\+Text} (std\+::ostream \&output\+Stream, const char delimiter= \textquotesingle{},\textquotesingle{}) const   throw (std\+::runtime\+\_\+error)
+\item 
+std\+::string \hyperlink{classmts_command_void_description_ae5839801fbc029a642fc64bee882238f}{Serialize\+Description} (const char delimiter= \textquotesingle{},\textquotesingle{}, const std\+::string \&user\+Description=\char`\"{}\char`\"{}) const 
+\item 
+void \hyperlink{classmts_command_void_description_aeac80ef19c065841ac86310552ae1be4}{De\+Serialize\+Text} (std\+::istream \&input\+Stream, const char delimiter= \textquotesingle{},\textquotesingle{})  throw (std\+::runtime\+\_\+error)
+\item 
+std\+::string \hyperlink{classmts_command_void_description_aee2a31ecb64a5e23e35e834145ff71f5}{Human\+Readable} (void) const 
+\item 
+bool \hyperlink{classmts_command_void_description_ad8e2201e0bd5af0e35f3bd64af0a6eb1}{Scalar\+Number\+Is\+Fixed} (void) const 
+\item 
+size\+\_\+t \hyperlink{classmts_command_void_description_aec84c76fd1522e65e4a55cf42ab9c86a}{Scalar\+Number} (void) const 
+\item 
+double \hyperlink{classmts_command_void_description_ae11ab50af5d388dac88f95557fe286a5}{Scalar} (const size\+\_\+t index) const   throw (std\+::out\+\_\+of\+\_\+range)
+\item 
+std\+::string \hyperlink{classmts_command_void_description_a89a603cca8292cc94ec93a9dadf0f528}{Scalar\+Description} (const size\+\_\+t index, const std\+::string \&user\+Description=\char`\"{}\char`\"{}) const   throw (std\+::out\+\_\+of\+\_\+range)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{classmts_command_void_description_a03b004586fef73637e80f22f3dbbf8f6}{Name}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmts_command_void_description_a5bc3aaec85b7b36e4ff84c63d8deae5f}{}\index{mts\+Command\+Void\+Description@{mts\+Command\+Void\+Description}!mts\+Command\+Void\+Description@{mts\+Command\+Void\+Description}}
+\index{mts\+Command\+Void\+Description@{mts\+Command\+Void\+Description}!mts\+Command\+Void\+Description@{mts\+Command\+Void\+Description}}
+\subsubsection[{mts\+Command\+Void\+Description}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Command\+Void\+Description\+::mts\+Command\+Void\+Description (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classmts_command_void_description_a5bc3aaec85b7b36e4ff84c63d8deae5f}
+\hypertarget{classmts_command_void_description_a9d040531c92ea4c8b02acd69031775e1}{}\index{mts\+Command\+Void\+Description@{mts\+Command\+Void\+Description}!mts\+Command\+Void\+Description@{mts\+Command\+Void\+Description}}
+\index{mts\+Command\+Void\+Description@{mts\+Command\+Void\+Description}!mts\+Command\+Void\+Description@{mts\+Command\+Void\+Description}}
+\subsubsection[{mts\+Command\+Void\+Description}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Command\+Void\+Description\+::mts\+Command\+Void\+Description (
+\begin{DoxyParamCaption}
+\item[{const {\bf mts\+Command\+Void\+Description} \&}]{other}
+\end{DoxyParamCaption}
+)}\label{classmts_command_void_description_a9d040531c92ea4c8b02acd69031775e1}
+\hypertarget{classmts_command_void_description_a13158a67e2f4eba24a026a8771b43ee4}{}\index{mts\+Command\+Void\+Description@{mts\+Command\+Void\+Description}!````~mts\+Command\+Void\+Description@{$\sim$mts\+Command\+Void\+Description}}
+\index{````~mts\+Command\+Void\+Description@{$\sim$mts\+Command\+Void\+Description}!mts\+Command\+Void\+Description@{mts\+Command\+Void\+Description}}
+\subsubsection[{$\sim$mts\+Command\+Void\+Description}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Command\+Void\+Description\+::$\sim$mts\+Command\+Void\+Description (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classmts_command_void_description_a13158a67e2f4eba24a026a8771b43ee4}
+\hypertarget{classmts_command_void_description_a76e960109615ad44e99ab5bdde8369f8}{}\index{mts\+Command\+Void\+Description@{mts\+Command\+Void\+Description}!mts\+Command\+Void\+Description@{mts\+Command\+Void\+Description}}
+\index{mts\+Command\+Void\+Description@{mts\+Command\+Void\+Description}!mts\+Command\+Void\+Description@{mts\+Command\+Void\+Description}}
+\subsubsection[{mts\+Command\+Void\+Description}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Command\+Void\+Description\+::mts\+Command\+Void\+Description (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{new\+Name}
+\end{DoxyParamCaption}
+)}\label{classmts_command_void_description_a76e960109615ad44e99ab5bdde8369f8}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classmts_command_void_description_ac85ea01d42186b9ff3edd54ac348b84d}{}\index{mts\+Command\+Void\+Description@{mts\+Command\+Void\+Description}!Copy@{Copy}}
+\index{Copy@{Copy}!mts\+Command\+Void\+Description@{mts\+Command\+Void\+Description}}
+\subsubsection[{Copy}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Command\+Void\+Description\+::\+Copy (
+\begin{DoxyParamCaption}
+\item[{const {\bf mts\+Command\+Void\+Description} \&}]{source}
+\end{DoxyParamCaption}
+)}\label{classmts_command_void_description_ac85ea01d42186b9ff3edd54ac348b84d}
+\hypertarget{classmts_command_void_description_a3fda3e49e9aca60ff86a89316701722f}{}\index{mts\+Command\+Void\+Description@{mts\+Command\+Void\+Description}!De\+Serialize\+Binary@{De\+Serialize\+Binary}}
+\index{De\+Serialize\+Binary@{De\+Serialize\+Binary}!mts\+Command\+Void\+Description@{mts\+Command\+Void\+Description}}
+\subsubsection[{De\+Serialize\+Binary}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Command\+Void\+Description\+::\+De\+Serialize\+Binary (
+\begin{DoxyParamCaption}
+\item[{std\+::istream \&}]{input\+Stream, }
+\item[{const {\bf cmn\+Data\+Format} \&}]{local\+Format, }
+\item[{const {\bf cmn\+Data\+Format} \&}]{remote\+Format}
+\end{DoxyParamCaption}
+) throw  std\+::runtime\+\_\+error) }\label{classmts_command_void_description_a3fda3e49e9aca60ff86a89316701722f}
+\hypertarget{classmts_command_void_description_a39b8a55124bff411f5b7a6adbed0f306}{}\index{mts\+Command\+Void\+Description@{mts\+Command\+Void\+Description}!De\+Serialize\+Raw@{De\+Serialize\+Raw}}
+\index{De\+Serialize\+Raw@{De\+Serialize\+Raw}!mts\+Command\+Void\+Description@{mts\+Command\+Void\+Description}}
+\subsubsection[{De\+Serialize\+Raw}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Command\+Void\+Description\+::\+De\+Serialize\+Raw (
+\begin{DoxyParamCaption}
+\item[{std\+::istream \&}]{input\+Stream}
+\end{DoxyParamCaption}
+)}\label{classmts_command_void_description_a39b8a55124bff411f5b7a6adbed0f306}
+\hypertarget{classmts_command_void_description_aeac80ef19c065841ac86310552ae1be4}{}\index{mts\+Command\+Void\+Description@{mts\+Command\+Void\+Description}!De\+Serialize\+Text@{De\+Serialize\+Text}}
+\index{De\+Serialize\+Text@{De\+Serialize\+Text}!mts\+Command\+Void\+Description@{mts\+Command\+Void\+Description}}
+\subsubsection[{De\+Serialize\+Text}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Command\+Void\+Description\+::\+De\+Serialize\+Text (
+\begin{DoxyParamCaption}
+\item[{std\+::istream \&}]{input\+Stream, }
+\item[{const char}]{delimiter = {\ttfamily \textquotesingle{},\textquotesingle{}}}
+\end{DoxyParamCaption}
+) throw  std\+::runtime\+\_\+error) }\label{classmts_command_void_description_aeac80ef19c065841ac86310552ae1be4}
+\hypertarget{classmts_command_void_description_aee2a31ecb64a5e23e35e834145ff71f5}{}\index{mts\+Command\+Void\+Description@{mts\+Command\+Void\+Description}!Human\+Readable@{Human\+Readable}}
+\index{Human\+Readable@{Human\+Readable}!mts\+Command\+Void\+Description@{mts\+Command\+Void\+Description}}
+\subsubsection[{Human\+Readable}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string mts\+Command\+Void\+Description\+::\+Human\+Readable (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classmts_command_void_description_aee2a31ecb64a5e23e35e834145ff71f5}
+\hypertarget{classmts_command_void_description_ae11ab50af5d388dac88f95557fe286a5}{}\index{mts\+Command\+Void\+Description@{mts\+Command\+Void\+Description}!Scalar@{Scalar}}
+\index{Scalar@{Scalar}!mts\+Command\+Void\+Description@{mts\+Command\+Void\+Description}}
+\subsubsection[{Scalar}]{\setlength{\rightskip}{0pt plus 5cm}double mts\+Command\+Void\+Description\+::\+Scalar (
+\begin{DoxyParamCaption}
+\item[{const size\+\_\+t}]{index}
+\end{DoxyParamCaption}
+) const throw  std\+::out\+\_\+of\+\_\+range) }\label{classmts_command_void_description_ae11ab50af5d388dac88f95557fe286a5}
+\hypertarget{classmts_command_void_description_a89a603cca8292cc94ec93a9dadf0f528}{}\index{mts\+Command\+Void\+Description@{mts\+Command\+Void\+Description}!Scalar\+Description@{Scalar\+Description}}
+\index{Scalar\+Description@{Scalar\+Description}!mts\+Command\+Void\+Description@{mts\+Command\+Void\+Description}}
+\subsubsection[{Scalar\+Description}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string mts\+Command\+Void\+Description\+::\+Scalar\+Description (
+\begin{DoxyParamCaption}
+\item[{const size\+\_\+t}]{index, }
+\item[{const std\+::string \&}]{user\+Description = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+) const throw  std\+::out\+\_\+of\+\_\+range) }\label{classmts_command_void_description_a89a603cca8292cc94ec93a9dadf0f528}
+\hypertarget{classmts_command_void_description_aec84c76fd1522e65e4a55cf42ab9c86a}{}\index{mts\+Command\+Void\+Description@{mts\+Command\+Void\+Description}!Scalar\+Number@{Scalar\+Number}}
+\index{Scalar\+Number@{Scalar\+Number}!mts\+Command\+Void\+Description@{mts\+Command\+Void\+Description}}
+\subsubsection[{Scalar\+Number}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t mts\+Command\+Void\+Description\+::\+Scalar\+Number (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classmts_command_void_description_aec84c76fd1522e65e4a55cf42ab9c86a}
+\hypertarget{classmts_command_void_description_ad8e2201e0bd5af0e35f3bd64af0a6eb1}{}\index{mts\+Command\+Void\+Description@{mts\+Command\+Void\+Description}!Scalar\+Number\+Is\+Fixed@{Scalar\+Number\+Is\+Fixed}}
+\index{Scalar\+Number\+Is\+Fixed@{Scalar\+Number\+Is\+Fixed}!mts\+Command\+Void\+Description@{mts\+Command\+Void\+Description}}
+\subsubsection[{Scalar\+Number\+Is\+Fixed}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Command\+Void\+Description\+::\+Scalar\+Number\+Is\+Fixed (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classmts_command_void_description_ad8e2201e0bd5af0e35f3bd64af0a6eb1}
+\hypertarget{classmts_command_void_description_a8f73300d3cf20874f119d4bc1ed77c1d}{}\index{mts\+Command\+Void\+Description@{mts\+Command\+Void\+Description}!Serialize\+Binary@{Serialize\+Binary}}
+\index{Serialize\+Binary@{Serialize\+Binary}!mts\+Command\+Void\+Description@{mts\+Command\+Void\+Description}}
+\subsubsection[{Serialize\+Binary}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Command\+Void\+Description\+::\+Serialize\+Binary (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{output\+Stream}
+\end{DoxyParamCaption}
+) const throw  std\+::runtime\+\_\+error) }\label{classmts_command_void_description_a8f73300d3cf20874f119d4bc1ed77c1d}
+\hypertarget{classmts_command_void_description_ae5839801fbc029a642fc64bee882238f}{}\index{mts\+Command\+Void\+Description@{mts\+Command\+Void\+Description}!Serialize\+Description@{Serialize\+Description}}
+\index{Serialize\+Description@{Serialize\+Description}!mts\+Command\+Void\+Description@{mts\+Command\+Void\+Description}}
+\subsubsection[{Serialize\+Description}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string mts\+Command\+Void\+Description\+::\+Serialize\+Description (
+\begin{DoxyParamCaption}
+\item[{const char}]{delimiter = {\ttfamily \textquotesingle{},\textquotesingle{}}, }
+\item[{const std\+::string \&}]{user\+Description = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+) const}\label{classmts_command_void_description_ae5839801fbc029a642fc64bee882238f}
+\hypertarget{classmts_command_void_description_a340a0e0c0143ddc712a10eaf48c478ed}{}\index{mts\+Command\+Void\+Description@{mts\+Command\+Void\+Description}!Serialize\+Raw@{Serialize\+Raw}}
+\index{Serialize\+Raw@{Serialize\+Raw}!mts\+Command\+Void\+Description@{mts\+Command\+Void\+Description}}
+\subsubsection[{Serialize\+Raw}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Command\+Void\+Description\+::\+Serialize\+Raw (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{output\+Stream}
+\end{DoxyParamCaption}
+) const}\label{classmts_command_void_description_a340a0e0c0143ddc712a10eaf48c478ed}
+\hypertarget{classmts_command_void_description_acef3373c62959147d26f92e431a0db8e}{}\index{mts\+Command\+Void\+Description@{mts\+Command\+Void\+Description}!Serialize\+Text@{Serialize\+Text}}
+\index{Serialize\+Text@{Serialize\+Text}!mts\+Command\+Void\+Description@{mts\+Command\+Void\+Description}}
+\subsubsection[{Serialize\+Text}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Command\+Void\+Description\+::\+Serialize\+Text (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{output\+Stream, }
+\item[{const char}]{delimiter = {\ttfamily \textquotesingle{},\textquotesingle{}}}
+\end{DoxyParamCaption}
+) const throw  std\+::runtime\+\_\+error) }\label{classmts_command_void_description_acef3373c62959147d26f92e431a0db8e}
+\hypertarget{classmts_command_void_description_afca052335615fb80fa73ff7a2a64e10e}{}\index{mts\+Command\+Void\+Description@{mts\+Command\+Void\+Description}!To\+Stream@{To\+Stream}}
+\index{To\+Stream@{To\+Stream}!mts\+Command\+Void\+Description@{mts\+Command\+Void\+Description}}
+\subsubsection[{To\+Stream}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Command\+Void\+Description\+::\+To\+Stream (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{output\+Stream}
+\end{DoxyParamCaption}
+) const}\label{classmts_command_void_description_afca052335615fb80fa73ff7a2a64e10e}
+\hypertarget{classmts_command_void_description_aed5f7ee865cf462b23334ba1ff451ddd}{}\index{mts\+Command\+Void\+Description@{mts\+Command\+Void\+Description}!To\+Stream\+Raw@{To\+Stream\+Raw}}
+\index{To\+Stream\+Raw@{To\+Stream\+Raw}!mts\+Command\+Void\+Description@{mts\+Command\+Void\+Description}}
+\subsubsection[{To\+Stream\+Raw}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Command\+Void\+Description\+::\+To\+Stream\+Raw (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{output\+Stream, }
+\item[{const char}]{delimiter = {\ttfamily \textquotesingle{}~\textquotesingle{}}, }
+\item[{bool}]{header\+Only = {\ttfamily false}, }
+\item[{const std\+::string \&}]{header\+Prefix = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+) const}\label{classmts_command_void_description_aed5f7ee865cf462b23334ba1ff451ddd}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classmts_command_void_description_a03b004586fef73637e80f22f3dbbf8f6}{}\index{mts\+Command\+Void\+Description@{mts\+Command\+Void\+Description}!Name@{Name}}
+\index{Name@{Name}!mts\+Command\+Void\+Description@{mts\+Command\+Void\+Description}}
+\subsubsection[{Name}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string mts\+Command\+Void\+Description\+::\+Name}\label{classmts_command_void_description_a03b004586fef73637e80f22f3dbbf8f6}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw-\/build/cisst/include/cisst\+Multi\+Task/\hyperlink{mts_interface_common_8h}{mts\+Interface\+Common.\+h}\end{DoxyCompactItemize}

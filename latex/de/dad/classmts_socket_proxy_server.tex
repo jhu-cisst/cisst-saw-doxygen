@@ -61,7 +61,7 @@ bool \hyperlink{classmts_socket_proxy_server_a484df52523d8ba237358a6cc56b8d67a}{
 \item 
 bool \hyperlink{classmts_socket_proxy_server_a8040ee220cf3249685932aad1cf52231}{Create\+Server\+Proxy} (const std\+::string \&required\+Interface\+Name, size\+\_\+t provided\+Mailbox\+Size)
 \begin{DoxyCompactList}\small\item\em Create server proxy. \end{DoxyCompactList}\item 
-bool \hyperlink{classmts_socket_proxy_server_aac2d100483f25d78682b8137546a8c25}{Get\+Interface\+Description} (mts\+Interface\+Provided\+Description \&desc) const 
+bool \hyperlink{classmts_socket_proxy_server_aac2d100483f25d78682b8137546a8c25}{Get\+Interface\+Description} (\hyperlink{classmts_interface_provided_description}{mts\+Interface\+Provided\+Description} \&desc) const 
 \item 
 bool \hyperlink{classmts_socket_proxy_server_ab9a97e4761a5824bdb8cdd2b2f29b530}{Get\+Handle\+Void} (const std\+::string \&command\+Name, std\+::string \&handle\+String) const 
 \item 
@@ -81,14 +81,14 @@ void \hyperlink{classmts_socket_proxy_server_a026fc4300e258e82f622f72fd7af1e6e}{
 \item 
 void \hyperlink{classmts_socket_proxy_server_ae1e5bf81532c293525cadac52bc7d169}{Add\+Special\+Commands} (void)
 \item 
-mts\+Execution\+Result \hyperlink{classmts_socket_proxy_server_a08aa6a4f76551b78546ae525bde4f325}{Get\+Init\+Data} (std\+::string \&output\+Arg\+Serialized, mts\+Proxy\+Serializer $\ast$serializer) const 
+\hyperlink{classmts_execution_result}{mts\+Execution\+Result} \hyperlink{classmts_socket_proxy_server_a08aa6a4f76551b78546ae525bde4f325}{Get\+Init\+Data} (std\+::string \&output\+Arg\+Serialized, mts\+Proxy\+Serializer $\ast$serializer) const 
 \end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{classosa_socket}{osa\+Socket} \hyperlink{classmts_socket_proxy_server_a8d1606419800ffe082caf5a6805dde19}{Socket}
 \item 
-mts\+Interface\+Provided\+Description \hyperlink{classmts_socket_proxy_server_a2e2a6206e203ad931a69637b8dcecd4e}{Interface\+Description}
+\hyperlink{classmts_interface_provided_description}{mts\+Interface\+Provided\+Description} \hyperlink{classmts_socket_proxy_server_a2e2a6206e203ad931a69637b8dcecd4e}{Interface\+Description}
 \item 
 \hyperlink{classmts_socket_proxy_server_a6d95a7cca6e51f877454df35d3fa56ab}{Function\+Void\+Proxy\+Map\+Type} \hyperlink{classmts_socket_proxy_server_a6bd22e4fe18232c34b81f2b7bf4f81c3}{Function\+Void\+Proxy\+Map}
 \item 
@@ -299,7 +299,7 @@ True if success, false otherwise
 ) const\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_socket_proxy_server_aa23bcc2804b23e7db80431e83caa3b3f}
 \hypertarget{classmts_socket_proxy_server_a08aa6a4f76551b78546ae525bde4f325}{}\index{mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}!Get\+Init\+Data@{Get\+Init\+Data}}
 \index{Get\+Init\+Data@{Get\+Init\+Data}!mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}}
-\subsubsection[{Get\+Init\+Data}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Execution\+Result mts\+Socket\+Proxy\+Server\+::\+Get\+Init\+Data (
+\subsubsection[{Get\+Init\+Data}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+Execution\+Result} mts\+Socket\+Proxy\+Server\+::\+Get\+Init\+Data (
 \begin{DoxyParamCaption}
 \item[{std\+::string \&}]{output\+Arg\+Serialized, }
 \item[{mts\+Proxy\+Serializer $\ast$}]{serializer}
@@ -309,7 +309,7 @@ True if success, false otherwise
 \index{Get\+Interface\+Description@{Get\+Interface\+Description}!mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}}
 \subsubsection[{Get\+Interface\+Description}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Socket\+Proxy\+Server\+::\+Get\+Interface\+Description (
 \begin{DoxyParamCaption}
-\item[{mts\+Interface\+Provided\+Description \&}]{desc}
+\item[{{\bf mts\+Interface\+Provided\+Description} \&}]{desc}
 \end{DoxyParamCaption}
 ) const\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_socket_proxy_server_aac2d100483f25d78682b8137546a8c25}
 \hypertarget{classmts_socket_proxy_server_a53ec6e91f127a1a301cd6225bc92fdb4}{}\index{mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}!Get\+Serializer\+For\+Client@{Get\+Serializer\+For\+Client}}
@@ -402,7 +402,7 @@ Reimplemented from \hyperlink{classmts_component_aaf28f0262b44eb6866e10089a02fa6
 \subsubsection[{Function\+Write\+Return\+Proxy\+Map}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Function\+Write\+Return\+Proxy\+Map\+Type} mts\+Socket\+Proxy\+Server\+::\+Function\+Write\+Return\+Proxy\+Map\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_socket_proxy_server_a7628f02b88924954ecbe2c242acce5ba}
 \hypertarget{classmts_socket_proxy_server_a2e2a6206e203ad931a69637b8dcecd4e}{}\index{mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}!Interface\+Description@{Interface\+Description}}
 \index{Interface\+Description@{Interface\+Description}!mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}}
-\subsubsection[{Interface\+Description}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Interface\+Provided\+Description mts\+Socket\+Proxy\+Server\+::\+Interface\+Description\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_socket_proxy_server_a2e2a6206e203ad931a69637b8dcecd4e}
+\subsubsection[{Interface\+Description}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+Interface\+Provided\+Description} mts\+Socket\+Proxy\+Server\+::\+Interface\+Description\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_socket_proxy_server_a2e2a6206e203ad931a69637b8dcecd4e}
 \hypertarget{classmts_socket_proxy_server_a8d1606419800ffe082caf5a6805dde19}{}\index{mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}!Socket@{Socket}}
 \index{Socket@{Socket}!mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}}
 \subsubsection[{Socket}]{\setlength{\rightskip}{0pt plus 5cm}{\bf osa\+Socket} mts\+Socket\+Proxy\+Server\+::\+Socket\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_socket_proxy_server_a8d1606419800ffe082caf5a6805dde19}

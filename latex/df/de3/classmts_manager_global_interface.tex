@@ -49,7 +49,7 @@ virtual bool \hyperlink{classmts_manager_global_interface_aa9e2d02acd143d1a3ec7b
 \begin{DoxyCompactList}\small\item\em Initiate connection process. \end{DoxyCompactList}\item 
 virtual bool \hyperlink{classmts_manager_global_interface_a997fe786b674ece0eaf077040f170e08}{Connect\+Server\+Side\+Interface\+Request} (const \hyperlink{mts_forward_declarations_8h_ad3543bb11742e1766374ec96016d6547}{Connection\+I\+D\+Type} connection\+I\+D)=0
 \begin{DoxyCompactList}\small\item\em Request the global component manager to connect interfaces at server side. \end{DoxyCompactList}\item 
-virtual void \hyperlink{classmts_manager_global_interface_a95665a4a3b83ac9ca2e0e883832f657c}{Get\+List\+Of\+Connections} (std\+::vector$<$ mts\+Description\+Connection $>$ \&list) const =0
+virtual void \hyperlink{classmts_manager_global_interface_a95665a4a3b83ac9ca2e0e883832f657c}{Get\+List\+Of\+Connections} (std\+::vector$<$ \hyperlink{classmts_description_connection}{mts\+Description\+Connection} $>$ \&list) const =0
 \item 
 virtual bool \hyperlink{classmts_manager_global_interface_a40dab0f138d6305055bda1ce2f852f6e}{Set\+Interface\+Provided\+Proxy\+Access\+Info} (const \hyperlink{mts_forward_declarations_8h_ad3543bb11742e1766374ec96016d6547}{Connection\+I\+D\+Type} connection\+I\+D, const std\+::string \&endpoint\+Info)=0
 \begin{DoxyCompactList}\small\item\em Set access information of the provided interface proxy. \end{DoxyCompactList}\item 
@@ -457,7 +457,7 @@ Implemented in \hyperlink{classmts_manager_global_ac56f876d73d6c494aa715d1081c9b
 \index{Get\+List\+Of\+Connections@{Get\+List\+Of\+Connections}!mts\+Manager\+Global\+Interface@{mts\+Manager\+Global\+Interface}}
 \subsubsection[{Get\+List\+Of\+Connections}]{\setlength{\rightskip}{0pt plus 5cm}virtual void mts\+Manager\+Global\+Interface\+::\+Get\+List\+Of\+Connections (
 \begin{DoxyParamCaption}
-\item[{std\+::vector$<$ mts\+Description\+Connection $>$ \&}]{list}
+\item[{std\+::vector$<$ {\bf mts\+Description\+Connection} $>$ \&}]{list}
 \end{DoxyParamCaption}
 ) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classmts_manager_global_interface_a95665a4a3b83ac9ca2e0e883832f657c}
 Get a list of all active connections represented by a set of strings 

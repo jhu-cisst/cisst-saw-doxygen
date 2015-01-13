@@ -1,0 +1,241 @@
+\hypertarget{classsvl_filter_source_text_file_types_1_1_file_info}{}\section{svl\+Filter\+Source\+Text\+File\+Types\+:\+:File\+Info Class Reference}
+\label{classsvl_filter_source_text_file_types_1_1_file_info}\index{svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info@{svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info}}
+
+
+{\ttfamily \#include $<$svl\+Filter\+Source\+Text\+File\+Types.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsvl_filter_source_text_file_types_1_1_file_info_aee7fde8e1afcd0c9c2a6d3d876fcf590}{File\+Info} (void)
+\item 
+\hyperlink{classsvl_filter_source_text_file_types_1_1_file_info_a563aa39fc54dfa562b92b0a61b5634de}{File\+Info} (const \hyperlink{classsvl_filter_source_text_file_types_1_1_file_info}{File\+Info} \&other)
+\item 
+\hyperlink{classsvl_filter_source_text_file_types_1_1_file_info_ad7d9a3cadb8c4406295fc5094b2de766}{$\sim$\+File\+Info} ()
+\item 
+void \hyperlink{classsvl_filter_source_text_file_types_1_1_file_info_a49ea28f91a70e9d2062418ae970a935a}{Assign} (const std\+::string \&\+\_\+filepath, const int \&\+\_\+timestamp\+\_\+column, const double \&\+\_\+timestamp\+\_\+unit, const double \&\+\_\+timestamp\+\_\+overflow\+\_\+value)
+\item 
+\hyperlink{classsvl_filter_source_text_file_types_1_1_file_info_a1a157ed38fdd60d7c7bf7c550f638a92}{File\+Info} (const std\+::string \&newfilepath, const int \&newtimestamp\+\_\+column, const double \&newtimestamp\+\_\+unit, const double \&newtimestamp\+\_\+overflow\+\_\+value)
+\item 
+void \hyperlink{classsvl_filter_source_text_file_types_1_1_file_info_ab55fc1154f5a0026365614afae92bede}{Serialize\+Raw} (std\+::ostream \&output\+Stream) const 
+\item 
+void \hyperlink{classsvl_filter_source_text_file_types_1_1_file_info_ac78d84dc03fec64461d98f23b37c5fe5}{De\+Serialize\+Raw} (std\+::istream \&input\+Stream)
+\item 
+void \hyperlink{classsvl_filter_source_text_file_types_1_1_file_info_a74c475c29ecd42ea46fc55573ffb888d}{To\+Stream} (std\+::ostream \&output\+Stream) const 
+\item 
+void \hyperlink{classsvl_filter_source_text_file_types_1_1_file_info_a7bd65d4afd72c9a162758856e66ac8b3}{To\+Stream\+Raw} (std\+::ostream \&output\+Stream, const char delimiter= \textquotesingle{} \textquotesingle{}, bool header\+Only=false, const std\+::string \&header\+Prefix=\char`\"{}\char`\"{}) const 
+\item 
+void \hyperlink{classsvl_filter_source_text_file_types_1_1_file_info_a594b2dfddb6e172796a0e2141145ca3f}{Copy} (const \hyperlink{classsvl_filter_source_text_file_types_1_1_file_info}{File\+Info} \&source)
+\item 
+void \hyperlink{classsvl_filter_source_text_file_types_1_1_file_info_a6f38186e88fcb9cb7cc8d29e99177ff8}{Serialize\+Binary} (std\+::ostream \&output\+Stream) const   throw (std\+::runtime\+\_\+error)
+\item 
+void \hyperlink{classsvl_filter_source_text_file_types_1_1_file_info_aef7bce372a0de8b80258d84a84639e66}{De\+Serialize\+Binary} (std\+::istream \&input\+Stream, const \hyperlink{classcmn_data_format}{cmn\+Data\+Format} \&local\+Format, const \hyperlink{classcmn_data_format}{cmn\+Data\+Format} \&remote\+Format)  throw (std\+::runtime\+\_\+error)
+\item 
+void \hyperlink{classsvl_filter_source_text_file_types_1_1_file_info_ab9908fda5a000fa5bc53c619fa966695}{Serialize\+Text} (std\+::ostream \&output\+Stream, const char delimiter= \textquotesingle{},\textquotesingle{}) const   throw (std\+::runtime\+\_\+error)
+\item 
+std\+::string \hyperlink{classsvl_filter_source_text_file_types_1_1_file_info_aa8446c293a0cef1fb2d2174c35485fb4}{Serialize\+Description} (const char delimiter= \textquotesingle{},\textquotesingle{}, const std\+::string \&user\+Description=\char`\"{}\char`\"{}) const 
+\item 
+void \hyperlink{classsvl_filter_source_text_file_types_1_1_file_info_acb7c244072a4733f4ac0f008f621b33e}{De\+Serialize\+Text} (std\+::istream \&input\+Stream, const char delimiter= \textquotesingle{},\textquotesingle{})  throw (std\+::runtime\+\_\+error)
+\item 
+std\+::string \hyperlink{classsvl_filter_source_text_file_types_1_1_file_info_a558114c36915e0f533c1d170f02e3ecc}{Human\+Readable} (void) const 
+\item 
+bool \hyperlink{classsvl_filter_source_text_file_types_1_1_file_info_a35ac02eb4f0e7522b03ae6bba0dda347}{Scalar\+Number\+Is\+Fixed} (void) const 
+\item 
+size\+\_\+t \hyperlink{classsvl_filter_source_text_file_types_1_1_file_info_a2b1f2da8026d6544841f211e17a11817}{Scalar\+Number} (void) const 
+\item 
+double \hyperlink{classsvl_filter_source_text_file_types_1_1_file_info_a8155daef33c8fda48f12dc715e73df7d}{Scalar} (const size\+\_\+t index) const   throw (std\+::out\+\_\+of\+\_\+range)
+\item 
+std\+::string \hyperlink{classsvl_filter_source_text_file_types_1_1_file_info_a5f0b3f7e2da4f476ff963a90e3eb537a}{Scalar\+Description} (const size\+\_\+t index, const std\+::string \&user\+Description=\char`\"{}\char`\"{}) const   throw (std\+::out\+\_\+of\+\_\+range)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{classsvl_filter_source_text_file_types_1_1_file_info_abc8384306829626692324b74274d1a46}{filepath}
+\item 
+int \hyperlink{classsvl_filter_source_text_file_types_1_1_file_info_a5d3a2e6aff4aa81a4d2d193986b81c47}{timestamp\+\_\+column}
+\item 
+double \hyperlink{classsvl_filter_source_text_file_types_1_1_file_info_aa6d0b04ba4092e788a532c3d88a0420e}{timestamp\+\_\+unit}
+\item 
+double \hyperlink{classsvl_filter_source_text_file_types_1_1_file_info_a55999a312d5bc7effb3d0541c4f7a833}{timestamp\+\_\+overflow\+\_\+value}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classsvl_filter_source_text_file_types_1_1_file_info_aee7fde8e1afcd0c9c2a6d3d876fcf590}{}\index{svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info@{svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info}!File\+Info@{File\+Info}}
+\index{File\+Info@{File\+Info}!svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info@{svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info}}
+\subsubsection[{File\+Info}]{\setlength{\rightskip}{0pt plus 5cm}svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info\+::\+File\+Info (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classsvl_filter_source_text_file_types_1_1_file_info_aee7fde8e1afcd0c9c2a6d3d876fcf590}
+\hypertarget{classsvl_filter_source_text_file_types_1_1_file_info_a563aa39fc54dfa562b92b0a61b5634de}{}\index{svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info@{svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info}!File\+Info@{File\+Info}}
+\index{File\+Info@{File\+Info}!svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info@{svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info}}
+\subsubsection[{File\+Info}]{\setlength{\rightskip}{0pt plus 5cm}svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info\+::\+File\+Info (
+\begin{DoxyParamCaption}
+\item[{const {\bf File\+Info} \&}]{other}
+\end{DoxyParamCaption}
+)}\label{classsvl_filter_source_text_file_types_1_1_file_info_a563aa39fc54dfa562b92b0a61b5634de}
+\hypertarget{classsvl_filter_source_text_file_types_1_1_file_info_ad7d9a3cadb8c4406295fc5094b2de766}{}\index{svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info@{svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info}!````~File\+Info@{$\sim$\+File\+Info}}
+\index{````~File\+Info@{$\sim$\+File\+Info}!svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info@{svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info}}
+\subsubsection[{$\sim$\+File\+Info}]{\setlength{\rightskip}{0pt plus 5cm}svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info\+::$\sim$\+File\+Info (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classsvl_filter_source_text_file_types_1_1_file_info_ad7d9a3cadb8c4406295fc5094b2de766}
+\hypertarget{classsvl_filter_source_text_file_types_1_1_file_info_a1a157ed38fdd60d7c7bf7c550f638a92}{}\index{svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info@{svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info}!File\+Info@{File\+Info}}
+\index{File\+Info@{File\+Info}!svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info@{svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info}}
+\subsubsection[{File\+Info}]{\setlength{\rightskip}{0pt plus 5cm}svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info\+::\+File\+Info (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{newfilepath, }
+\item[{const int \&}]{newtimestamp\+\_\+column, }
+\item[{const double \&}]{newtimestamp\+\_\+unit, }
+\item[{const double \&}]{newtimestamp\+\_\+overflow\+\_\+value}
+\end{DoxyParamCaption}
+)}\label{classsvl_filter_source_text_file_types_1_1_file_info_a1a157ed38fdd60d7c7bf7c550f638a92}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classsvl_filter_source_text_file_types_1_1_file_info_a49ea28f91a70e9d2062418ae970a935a}{}\index{svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info@{svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info}!Assign@{Assign}}
+\index{Assign@{Assign}!svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info@{svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info}}
+\subsubsection[{Assign}]{\setlength{\rightskip}{0pt plus 5cm}void svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info\+::\+Assign (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{\+\_\+filepath, }
+\item[{const int \&}]{\+\_\+timestamp\+\_\+column, }
+\item[{const double \&}]{\+\_\+timestamp\+\_\+unit, }
+\item[{const double \&}]{\+\_\+timestamp\+\_\+overflow\+\_\+value}
+\end{DoxyParamCaption}
+)}\label{classsvl_filter_source_text_file_types_1_1_file_info_a49ea28f91a70e9d2062418ae970a935a}
+\hypertarget{classsvl_filter_source_text_file_types_1_1_file_info_a594b2dfddb6e172796a0e2141145ca3f}{}\index{svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info@{svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info}!Copy@{Copy}}
+\index{Copy@{Copy}!svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info@{svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info}}
+\subsubsection[{Copy}]{\setlength{\rightskip}{0pt plus 5cm}void svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info\+::\+Copy (
+\begin{DoxyParamCaption}
+\item[{const {\bf File\+Info} \&}]{source}
+\end{DoxyParamCaption}
+)}\label{classsvl_filter_source_text_file_types_1_1_file_info_a594b2dfddb6e172796a0e2141145ca3f}
+\hypertarget{classsvl_filter_source_text_file_types_1_1_file_info_aef7bce372a0de8b80258d84a84639e66}{}\index{svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info@{svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info}!De\+Serialize\+Binary@{De\+Serialize\+Binary}}
+\index{De\+Serialize\+Binary@{De\+Serialize\+Binary}!svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info@{svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info}}
+\subsubsection[{De\+Serialize\+Binary}]{\setlength{\rightskip}{0pt plus 5cm}void svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info\+::\+De\+Serialize\+Binary (
+\begin{DoxyParamCaption}
+\item[{std\+::istream \&}]{input\+Stream, }
+\item[{const {\bf cmn\+Data\+Format} \&}]{local\+Format, }
+\item[{const {\bf cmn\+Data\+Format} \&}]{remote\+Format}
+\end{DoxyParamCaption}
+) throw  std\+::runtime\+\_\+error) }\label{classsvl_filter_source_text_file_types_1_1_file_info_aef7bce372a0de8b80258d84a84639e66}
+\hypertarget{classsvl_filter_source_text_file_types_1_1_file_info_ac78d84dc03fec64461d98f23b37c5fe5}{}\index{svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info@{svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info}!De\+Serialize\+Raw@{De\+Serialize\+Raw}}
+\index{De\+Serialize\+Raw@{De\+Serialize\+Raw}!svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info@{svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info}}
+\subsubsection[{De\+Serialize\+Raw}]{\setlength{\rightskip}{0pt plus 5cm}void svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info\+::\+De\+Serialize\+Raw (
+\begin{DoxyParamCaption}
+\item[{std\+::istream \&}]{input\+Stream}
+\end{DoxyParamCaption}
+)}\label{classsvl_filter_source_text_file_types_1_1_file_info_ac78d84dc03fec64461d98f23b37c5fe5}
+\hypertarget{classsvl_filter_source_text_file_types_1_1_file_info_acb7c244072a4733f4ac0f008f621b33e}{}\index{svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info@{svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info}!De\+Serialize\+Text@{De\+Serialize\+Text}}
+\index{De\+Serialize\+Text@{De\+Serialize\+Text}!svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info@{svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info}}
+\subsubsection[{De\+Serialize\+Text}]{\setlength{\rightskip}{0pt plus 5cm}void svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info\+::\+De\+Serialize\+Text (
+\begin{DoxyParamCaption}
+\item[{std\+::istream \&}]{input\+Stream, }
+\item[{const char}]{delimiter = {\ttfamily \textquotesingle{},\textquotesingle{}}}
+\end{DoxyParamCaption}
+) throw  std\+::runtime\+\_\+error) }\label{classsvl_filter_source_text_file_types_1_1_file_info_acb7c244072a4733f4ac0f008f621b33e}
+\hypertarget{classsvl_filter_source_text_file_types_1_1_file_info_a558114c36915e0f533c1d170f02e3ecc}{}\index{svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info@{svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info}!Human\+Readable@{Human\+Readable}}
+\index{Human\+Readable@{Human\+Readable}!svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info@{svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info}}
+\subsubsection[{Human\+Readable}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info\+::\+Human\+Readable (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classsvl_filter_source_text_file_types_1_1_file_info_a558114c36915e0f533c1d170f02e3ecc}
+\hypertarget{classsvl_filter_source_text_file_types_1_1_file_info_a8155daef33c8fda48f12dc715e73df7d}{}\index{svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info@{svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info}!Scalar@{Scalar}}
+\index{Scalar@{Scalar}!svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info@{svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info}}
+\subsubsection[{Scalar}]{\setlength{\rightskip}{0pt plus 5cm}double svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info\+::\+Scalar (
+\begin{DoxyParamCaption}
+\item[{const size\+\_\+t}]{index}
+\end{DoxyParamCaption}
+) const throw  std\+::out\+\_\+of\+\_\+range) }\label{classsvl_filter_source_text_file_types_1_1_file_info_a8155daef33c8fda48f12dc715e73df7d}
+\hypertarget{classsvl_filter_source_text_file_types_1_1_file_info_a5f0b3f7e2da4f476ff963a90e3eb537a}{}\index{svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info@{svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info}!Scalar\+Description@{Scalar\+Description}}
+\index{Scalar\+Description@{Scalar\+Description}!svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info@{svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info}}
+\subsubsection[{Scalar\+Description}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info\+::\+Scalar\+Description (
+\begin{DoxyParamCaption}
+\item[{const size\+\_\+t}]{index, }
+\item[{const std\+::string \&}]{user\+Description = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+) const throw  std\+::out\+\_\+of\+\_\+range) }\label{classsvl_filter_source_text_file_types_1_1_file_info_a5f0b3f7e2da4f476ff963a90e3eb537a}
+\hypertarget{classsvl_filter_source_text_file_types_1_1_file_info_a2b1f2da8026d6544841f211e17a11817}{}\index{svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info@{svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info}!Scalar\+Number@{Scalar\+Number}}
+\index{Scalar\+Number@{Scalar\+Number}!svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info@{svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info}}
+\subsubsection[{Scalar\+Number}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info\+::\+Scalar\+Number (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classsvl_filter_source_text_file_types_1_1_file_info_a2b1f2da8026d6544841f211e17a11817}
+\hypertarget{classsvl_filter_source_text_file_types_1_1_file_info_a35ac02eb4f0e7522b03ae6bba0dda347}{}\index{svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info@{svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info}!Scalar\+Number\+Is\+Fixed@{Scalar\+Number\+Is\+Fixed}}
+\index{Scalar\+Number\+Is\+Fixed@{Scalar\+Number\+Is\+Fixed}!svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info@{svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info}}
+\subsubsection[{Scalar\+Number\+Is\+Fixed}]{\setlength{\rightskip}{0pt plus 5cm}bool svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info\+::\+Scalar\+Number\+Is\+Fixed (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classsvl_filter_source_text_file_types_1_1_file_info_a35ac02eb4f0e7522b03ae6bba0dda347}
+\hypertarget{classsvl_filter_source_text_file_types_1_1_file_info_a6f38186e88fcb9cb7cc8d29e99177ff8}{}\index{svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info@{svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info}!Serialize\+Binary@{Serialize\+Binary}}
+\index{Serialize\+Binary@{Serialize\+Binary}!svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info@{svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info}}
+\subsubsection[{Serialize\+Binary}]{\setlength{\rightskip}{0pt plus 5cm}void svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info\+::\+Serialize\+Binary (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{output\+Stream}
+\end{DoxyParamCaption}
+) const throw  std\+::runtime\+\_\+error) }\label{classsvl_filter_source_text_file_types_1_1_file_info_a6f38186e88fcb9cb7cc8d29e99177ff8}
+\hypertarget{classsvl_filter_source_text_file_types_1_1_file_info_aa8446c293a0cef1fb2d2174c35485fb4}{}\index{svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info@{svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info}!Serialize\+Description@{Serialize\+Description}}
+\index{Serialize\+Description@{Serialize\+Description}!svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info@{svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info}}
+\subsubsection[{Serialize\+Description}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info\+::\+Serialize\+Description (
+\begin{DoxyParamCaption}
+\item[{const char}]{delimiter = {\ttfamily \textquotesingle{},\textquotesingle{}}, }
+\item[{const std\+::string \&}]{user\+Description = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+) const}\label{classsvl_filter_source_text_file_types_1_1_file_info_aa8446c293a0cef1fb2d2174c35485fb4}
+\hypertarget{classsvl_filter_source_text_file_types_1_1_file_info_ab55fc1154f5a0026365614afae92bede}{}\index{svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info@{svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info}!Serialize\+Raw@{Serialize\+Raw}}
+\index{Serialize\+Raw@{Serialize\+Raw}!svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info@{svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info}}
+\subsubsection[{Serialize\+Raw}]{\setlength{\rightskip}{0pt plus 5cm}void svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info\+::\+Serialize\+Raw (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{output\+Stream}
+\end{DoxyParamCaption}
+) const}\label{classsvl_filter_source_text_file_types_1_1_file_info_ab55fc1154f5a0026365614afae92bede}
+\hypertarget{classsvl_filter_source_text_file_types_1_1_file_info_ab9908fda5a000fa5bc53c619fa966695}{}\index{svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info@{svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info}!Serialize\+Text@{Serialize\+Text}}
+\index{Serialize\+Text@{Serialize\+Text}!svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info@{svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info}}
+\subsubsection[{Serialize\+Text}]{\setlength{\rightskip}{0pt plus 5cm}void svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info\+::\+Serialize\+Text (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{output\+Stream, }
+\item[{const char}]{delimiter = {\ttfamily \textquotesingle{},\textquotesingle{}}}
+\end{DoxyParamCaption}
+) const throw  std\+::runtime\+\_\+error) }\label{classsvl_filter_source_text_file_types_1_1_file_info_ab9908fda5a000fa5bc53c619fa966695}
+\hypertarget{classsvl_filter_source_text_file_types_1_1_file_info_a74c475c29ecd42ea46fc55573ffb888d}{}\index{svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info@{svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info}!To\+Stream@{To\+Stream}}
+\index{To\+Stream@{To\+Stream}!svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info@{svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info}}
+\subsubsection[{To\+Stream}]{\setlength{\rightskip}{0pt plus 5cm}void svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info\+::\+To\+Stream (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{output\+Stream}
+\end{DoxyParamCaption}
+) const}\label{classsvl_filter_source_text_file_types_1_1_file_info_a74c475c29ecd42ea46fc55573ffb888d}
+\hypertarget{classsvl_filter_source_text_file_types_1_1_file_info_a7bd65d4afd72c9a162758856e66ac8b3}{}\index{svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info@{svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info}!To\+Stream\+Raw@{To\+Stream\+Raw}}
+\index{To\+Stream\+Raw@{To\+Stream\+Raw}!svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info@{svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info}}
+\subsubsection[{To\+Stream\+Raw}]{\setlength{\rightskip}{0pt plus 5cm}void svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info\+::\+To\+Stream\+Raw (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{output\+Stream, }
+\item[{const char}]{delimiter = {\ttfamily \textquotesingle{}~\textquotesingle{}}, }
+\item[{bool}]{header\+Only = {\ttfamily false}, }
+\item[{const std\+::string \&}]{header\+Prefix = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+) const}\label{classsvl_filter_source_text_file_types_1_1_file_info_a7bd65d4afd72c9a162758856e66ac8b3}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classsvl_filter_source_text_file_types_1_1_file_info_abc8384306829626692324b74274d1a46}{}\index{svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info@{svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info}!filepath@{filepath}}
+\index{filepath@{filepath}!svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info@{svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info}}
+\subsubsection[{filepath}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info\+::filepath}\label{classsvl_filter_source_text_file_types_1_1_file_info_abc8384306829626692324b74274d1a46}
+\hypertarget{classsvl_filter_source_text_file_types_1_1_file_info_a5d3a2e6aff4aa81a4d2d193986b81c47}{}\index{svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info@{svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info}!timestamp\+\_\+column@{timestamp\+\_\+column}}
+\index{timestamp\+\_\+column@{timestamp\+\_\+column}!svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info@{svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info}}
+\subsubsection[{timestamp\+\_\+column}]{\setlength{\rightskip}{0pt plus 5cm}int svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info\+::timestamp\+\_\+column}\label{classsvl_filter_source_text_file_types_1_1_file_info_a5d3a2e6aff4aa81a4d2d193986b81c47}
+\hypertarget{classsvl_filter_source_text_file_types_1_1_file_info_a55999a312d5bc7effb3d0541c4f7a833}{}\index{svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info@{svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info}!timestamp\+\_\+overflow\+\_\+value@{timestamp\+\_\+overflow\+\_\+value}}
+\index{timestamp\+\_\+overflow\+\_\+value@{timestamp\+\_\+overflow\+\_\+value}!svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info@{svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info}}
+\subsubsection[{timestamp\+\_\+overflow\+\_\+value}]{\setlength{\rightskip}{0pt plus 5cm}double svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info\+::timestamp\+\_\+overflow\+\_\+value}\label{classsvl_filter_source_text_file_types_1_1_file_info_a55999a312d5bc7effb3d0541c4f7a833}
+\hypertarget{classsvl_filter_source_text_file_types_1_1_file_info_aa6d0b04ba4092e788a532c3d88a0420e}{}\index{svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info@{svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info}!timestamp\+\_\+unit@{timestamp\+\_\+unit}}
+\index{timestamp\+\_\+unit@{timestamp\+\_\+unit}!svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info@{svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info}}
+\subsubsection[{timestamp\+\_\+unit}]{\setlength{\rightskip}{0pt plus 5cm}double svl\+Filter\+Source\+Text\+File\+Types\+::\+File\+Info\+::timestamp\+\_\+unit}\label{classsvl_filter_source_text_file_types_1_1_file_info_aa6d0b04ba4092e788a532c3d88a0420e}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw-\/build/cisst/include/cisst\+Stereo\+Vision/\hyperlink{svl_filter_source_text_file_types_8h}{svl\+Filter\+Source\+Text\+File\+Types.\+h}\end{DoxyCompactItemize}

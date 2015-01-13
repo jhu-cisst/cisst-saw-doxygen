@@ -39,11 +39,11 @@ enum \hyperlink{classmts_open_i_g_t_link_aa7353a6a3f98f611defbaf89f13c8a27}{Conn
 \item 
 void \hyperlink{classmts_open_i_g_t_link_a77e185ccfb62504a0715138865d15b85}{Initialize} (void)
 \item 
-bool \hyperlink{classmts_open_i_g_t_link_a179b3a9dbe4601891943a646a2692329}{Send\+Frame} (const prm\+Position\+Cartesian\+Get \&frame\+C\+I\+S\+S\+T)
+bool \hyperlink{classmts_open_i_g_t_link_a179b3a9dbe4601891943a646a2692329}{Send\+Frame} (const \hyperlink{classprm_position_cartesian_get}{prm\+Position\+Cartesian\+Get} \&frame\+C\+I\+S\+S\+T)
 \item 
 bool \hyperlink{classmts_open_i_g_t_link_aed77b6cd845636b25631465c28540ed2}{Receive\+Header} (std\+::string \&message\+Type)
 \item 
-bool \hyperlink{classmts_open_i_g_t_link_a9299853f065591da9999bc027f12c70a}{Receive\+Frame} (prm\+Position\+Cartesian\+Get \&frame\+C\+I\+S\+S\+T)
+bool \hyperlink{classmts_open_i_g_t_link_a9299853f065591da9999bc027f12c70a}{Receive\+Frame} (\hyperlink{classprm_position_cartesian_get}{prm\+Position\+Cartesian\+Get} \&frame\+C\+I\+S\+S\+T)
 \item 
 void \hyperlink{classmts_open_i_g_t_link_abaa5ab92e7ce6b8af3a777ca0e36605e}{Skip\+Message} (void)
 \end{DoxyCompactItemize}
@@ -68,9 +68,9 @@ std\+::string \hyperlink{classmts_open_i_g_t_link_a093697b394242318dc24586d22b9a
 \item 
 saw\+Open\+I\+G\+T\+Link\+Data $\ast$ \hyperlink{classmts_open_i_g_t_link_a6ea66218c525d89e6ca0a5234d252078}{I\+G\+T\+L\+Data}
 \item 
-prm\+Position\+Cartesian\+Get \hyperlink{classmts_open_i_g_t_link_a97da17fac3c8d91dcd09005f06ded93a}{Frame\+Send}
+\hyperlink{classprm_position_cartesian_get}{prm\+Position\+Cartesian\+Get} \hyperlink{classmts_open_i_g_t_link_a97da17fac3c8d91dcd09005f06ded93a}{Frame\+Send}
 \item 
-prm\+Position\+Cartesian\+Get \hyperlink{classmts_open_i_g_t_link_aac470cfdb42709fbdb6d9228991204e2}{Frame\+Recv}
+\hyperlink{classprm_position_cartesian_get}{prm\+Position\+Cartesian\+Get} \hyperlink{classmts_open_i_g_t_link_aac470cfdb42709fbdb6d9228991204e2}{Frame\+Recv}
 \end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
@@ -149,7 +149,7 @@ Common initializing operations for both server and client \hypertarget{classmts_
 \index{Receive\+Frame@{Receive\+Frame}!mts\+Open\+I\+G\+T\+Link@{mts\+Open\+I\+G\+T\+Link}}
 \subsubsection[{Receive\+Frame}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Open\+I\+G\+T\+Link\+::\+Receive\+Frame (
 \begin{DoxyParamCaption}
-\item[{prm\+Position\+Cartesian\+Get \&}]{frame\+C\+I\+S\+S\+T}
+\item[{{\bf prm\+Position\+Cartesian\+Get} \&}]{frame\+C\+I\+S\+S\+T}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_open_i_g_t_link_a9299853f065591da9999bc027f12c70a}
 Receives an incoming frame 
@@ -190,7 +190,7 @@ Implements \hyperlink{classmts_task_a20e18c9479cb650792456c32ee689834}{mts\+Task
 \index{Send\+Frame@{Send\+Frame}!mts\+Open\+I\+G\+T\+Link@{mts\+Open\+I\+G\+T\+Link}}
 \subsubsection[{Send\+Frame}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Open\+I\+G\+T\+Link\+::\+Send\+Frame (
 \begin{DoxyParamCaption}
-\item[{const prm\+Position\+Cartesian\+Get \&}]{frame\+C\+I\+S\+S\+T}
+\item[{const {\bf prm\+Position\+Cartesian\+Get} \&}]{frame\+C\+I\+S\+S\+T}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_open_i_g_t_link_a179b3a9dbe4601891943a646a2692329}
 Sends the frame through the existing socket interface 
@@ -227,10 +227,10 @@ Reimplemented from \hyperlink{classmts_component_aaf28f0262b44eb6866e10089a02fa6
 \subsubsection[{Connection\+Type}]{\setlength{\rightskip}{0pt plus 5cm}int mts\+Open\+I\+G\+T\+Link\+::\+Connection\+Type\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_open_i_g_t_link_a62845fdde2c3186db262a28c1ef7ee85}
 \hypertarget{classmts_open_i_g_t_link_aac470cfdb42709fbdb6d9228991204e2}{}\index{mts\+Open\+I\+G\+T\+Link@{mts\+Open\+I\+G\+T\+Link}!Frame\+Recv@{Frame\+Recv}}
 \index{Frame\+Recv@{Frame\+Recv}!mts\+Open\+I\+G\+T\+Link@{mts\+Open\+I\+G\+T\+Link}}
-\subsubsection[{Frame\+Recv}]{\setlength{\rightskip}{0pt plus 5cm}prm\+Position\+Cartesian\+Get mts\+Open\+I\+G\+T\+Link\+::\+Frame\+Recv\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_open_i_g_t_link_aac470cfdb42709fbdb6d9228991204e2}
+\subsubsection[{Frame\+Recv}]{\setlength{\rightskip}{0pt plus 5cm}{\bf prm\+Position\+Cartesian\+Get} mts\+Open\+I\+G\+T\+Link\+::\+Frame\+Recv\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_open_i_g_t_link_aac470cfdb42709fbdb6d9228991204e2}
 \hypertarget{classmts_open_i_g_t_link_a97da17fac3c8d91dcd09005f06ded93a}{}\index{mts\+Open\+I\+G\+T\+Link@{mts\+Open\+I\+G\+T\+Link}!Frame\+Send@{Frame\+Send}}
 \index{Frame\+Send@{Frame\+Send}!mts\+Open\+I\+G\+T\+Link@{mts\+Open\+I\+G\+T\+Link}}
-\subsubsection[{Frame\+Send}]{\setlength{\rightskip}{0pt plus 5cm}prm\+Position\+Cartesian\+Get mts\+Open\+I\+G\+T\+Link\+::\+Frame\+Send\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_open_i_g_t_link_a97da17fac3c8d91dcd09005f06ded93a}
+\subsubsection[{Frame\+Send}]{\setlength{\rightskip}{0pt plus 5cm}{\bf prm\+Position\+Cartesian\+Get} mts\+Open\+I\+G\+T\+Link\+::\+Frame\+Send\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_open_i_g_t_link_a97da17fac3c8d91dcd09005f06ded93a}
 \hypertarget{classmts_open_i_g_t_link_aa416769aea8ba2074b1fa352c150facb}{}\index{mts\+Open\+I\+G\+T\+Link@{mts\+Open\+I\+G\+T\+Link}!Host@{Host}}
 \index{Host@{Host}!mts\+Open\+I\+G\+T\+Link@{mts\+Open\+I\+G\+T\+Link}}
 \subsubsection[{Host}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string mts\+Open\+I\+G\+T\+Link\+::\+Host\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_open_i_g_t_link_aa416769aea8ba2074b1fa352c150facb}

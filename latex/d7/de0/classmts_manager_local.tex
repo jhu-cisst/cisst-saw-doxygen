@@ -43,7 +43,7 @@ bool \hyperlink{classmts_manager_local_a137be62a7188c0fc0efb7130efac2ca5}{Remove
 \item 
 bool \hyperlink{classmts_manager_local_afc2ea63402479809aa1c72609b8d52b9}{Find\+Component} (const std\+::string \&component\+Name) const 
 \begin{DoxyCompactList}\small\item\em Check if a component exists by its name. \end{DoxyCompactList}\item 
-bool \hyperlink{classmts_manager_local_a0ae805235f0e479c0c150d7a0999a1e0}{Wait\+For\+State\+All} (mts\+Component\+State desired\+State, double timeout=3.\+0 $\ast$\hyperlink{cmn_units_8h_a212c64aa2bb4e6ff3d78943569e1b58c}{cmn\+\_\+minute}) const 
+bool \hyperlink{classmts_manager_local_a0ae805235f0e479c0c150d7a0999a1e0}{Wait\+For\+State\+All} (\hyperlink{classmts_component_state}{mts\+Component\+State} desired\+State, double timeout=3.\+0 $\ast$\hyperlink{cmn_units_8h_a212c64aa2bb4e6ff3d78943569e1b58c}{cmn\+\_\+minute}) const 
 \item 
 void \hyperlink{classmts_manager_local_a5266feade3df21c28176d03048d8178d}{Create\+All} (void)
 \begin{DoxyCompactList}\small\item\em Create all components. If a component is of type \hyperlink{classmts_task}{mts\+Task}, \hyperlink{classmts_task_abc1a625d025c1038fa48137f0ba53465}{mts\+Task\+::\+Create()} is called internally. \end{DoxyCompactList}\item 
@@ -200,21 +200,21 @@ bool \hyperlink{classmts_manager_local_a200bc8fea319014d8902724564d94481}{Create
 \begin{DoxyCompactList}\small\item\em Create component proxy. \end{DoxyCompactList}\item 
 bool \hyperlink{classmts_manager_local_ac323b42bdf8078864f78a572625b05e6}{Remove\+Component\+Proxy} (const std\+::string \&component\+Proxy\+Name, const std\+::string \&listener\+I\+D=\char`\"{}\char`\"{})
 \begin{DoxyCompactList}\small\item\em Remove component proxy. \end{DoxyCompactList}\item 
-bool \hyperlink{classmts_manager_local_a196c71a8ad2532559e6744710954b5aa}{Create\+Interface\+Provided\+Proxy} (const std\+::string \&server\+Component\+Proxy\+Name, const mts\+Interface\+Provided\+Description \&provided\+Interface\+Description, const std\+::string \&listener\+I\+D=\char`\"{}\char`\"{})
+bool \hyperlink{classmts_manager_local_a196c71a8ad2532559e6744710954b5aa}{Create\+Interface\+Provided\+Proxy} (const std\+::string \&server\+Component\+Proxy\+Name, const \hyperlink{classmts_interface_provided_description}{mts\+Interface\+Provided\+Description} \&provided\+Interface\+Description, const std\+::string \&listener\+I\+D=\char`\"{}\char`\"{})
 \begin{DoxyCompactList}\small\item\em Create provided interface proxy. \end{DoxyCompactList}\item 
-bool \hyperlink{classmts_manager_local_a5229948aa578826b68cd5fc0e2ad287e}{Create\+Interface\+Required\+Proxy} (const std\+::string \&client\+Component\+Proxy\+Name, const mts\+Interface\+Required\+Description \&required\+Interface\+Description, const std\+::string \&listener\+I\+D=\char`\"{}\char`\"{})
+bool \hyperlink{classmts_manager_local_a5229948aa578826b68cd5fc0e2ad287e}{Create\+Interface\+Required\+Proxy} (const std\+::string \&client\+Component\+Proxy\+Name, const \hyperlink{classmts_interface_required_description}{mts\+Interface\+Required\+Description} \&required\+Interface\+Description, const std\+::string \&listener\+I\+D=\char`\"{}\char`\"{})
 \begin{DoxyCompactList}\small\item\em Create required interface proxy. \end{DoxyCompactList}\item 
 bool \hyperlink{classmts_manager_local_a741ff68bfb31dcfad6a3ec244f7d2227}{Remove\+Interface\+Provided\+Proxy} (const std\+::string \&component\+Proxy\+Name, const std\+::string \&provided\+Interface\+Proxy\+Name, const std\+::string \&listener\+I\+D=\char`\"{}\char`\"{})
 \item 
 bool \hyperlink{classmts_manager_local_ac58e53b7cb5f77daf8cdcfb6cc0d0e1e}{Remove\+Interface\+Required\+Proxy} (const std\+::string \&component\+Proxy\+Name, const std\+::string \&required\+Interface\+Proxy\+Name, const std\+::string \&listener\+I\+D=\char`\"{}\char`\"{})
 \item 
-bool \hyperlink{classmts_manager_local_aad3fbe9e5b41e75e55599f8f7d61b8f0}{Connect\+Server\+Side\+Interface} (const mts\+Description\+Connection \&description, const std\+::string \&listener\+I\+D=\char`\"{}\char`\"{})
+bool \hyperlink{classmts_manager_local_aad3fbe9e5b41e75e55599f8f7d61b8f0}{Connect\+Server\+Side\+Interface} (const \hyperlink{classmts_description_connection}{mts\+Description\+Connection} \&description, const std\+::string \&listener\+I\+D=\char`\"{}\char`\"{})
 \item 
-bool \hyperlink{classmts_manager_local_af8f8d230b07f5d647b0e363f7e632160}{Connect\+Client\+Side\+Interface} (const mts\+Description\+Connection \&description, const std\+::string \&listener\+I\+D=\char`\"{}\char`\"{})
+bool \hyperlink{classmts_manager_local_af8f8d230b07f5d647b0e363f7e632160}{Connect\+Client\+Side\+Interface} (const \hyperlink{classmts_description_connection}{mts\+Description\+Connection} \&description, const std\+::string \&listener\+I\+D=\char`\"{}\char`\"{})
 \begin{DoxyCompactList}\small\item\em Connect two local interfaces at the client side. \end{DoxyCompactList}\item 
-bool \hyperlink{classmts_manager_local_ae131ad1d60cfa1b0abb675905251785a}{Get\+Interface\+Provided\+Description} (const std\+::string \&server\+Component\+Name, const std\+::string \&provided\+Interface\+Name, mts\+Interface\+Provided\+Description \&provided\+Interface\+Description, const std\+::string \&listener\+I\+D=\char`\"{}\char`\"{})
+bool \hyperlink{classmts_manager_local_ae131ad1d60cfa1b0abb675905251785a}{Get\+Interface\+Provided\+Description} (const std\+::string \&server\+Component\+Name, const std\+::string \&provided\+Interface\+Name, \hyperlink{classmts_interface_provided_description}{mts\+Interface\+Provided\+Description} \&provided\+Interface\+Description, const std\+::string \&listener\+I\+D=\char`\"{}\char`\"{})
 \item 
-bool \hyperlink{classmts_manager_local_a8056ed6c161b39b6492a671de76f71f2}{Get\+Interface\+Required\+Description} (const std\+::string \&component\+Name, const std\+::string \&required\+Interface\+Name, mts\+Interface\+Required\+Description \&required\+Interface\+Description, const std\+::string \&listener\+I\+D=\char`\"{}\char`\"{})
+bool \hyperlink{classmts_manager_local_a8056ed6c161b39b6492a671de76f71f2}{Get\+Interface\+Required\+Description} (const std\+::string \&component\+Name, const std\+::string \&required\+Interface\+Name, \hyperlink{classmts_interface_required_description}{mts\+Interface\+Required\+Description} \&required\+Interface\+Description, const std\+::string \&listener\+I\+D=\char`\"{}\char`\"{})
 \item 
 void \hyperlink{classmts_manager_local_af2a833e91816219c9e925e580c298182}{Set\+G\+C\+M\+Connected} (const bool connected)
 \end{DoxyCompactItemize}
@@ -421,7 +421,7 @@ If connection is established successfully, this information is reported to the g
 \index{Connect\+Client\+Side\+Interface@{Connect\+Client\+Side\+Interface}!mts\+Manager\+Local@{mts\+Manager\+Local}}
 \subsubsection[{Connect\+Client\+Side\+Interface}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Manager\+Local\+::\+Connect\+Client\+Side\+Interface (
 \begin{DoxyParamCaption}
-\item[{const mts\+Description\+Connection \&}]{description, }
+\item[{const {\bf mts\+Description\+Connection} \&}]{description, }
 \item[{const std\+::string \&}]{listener\+I\+D = {\ttfamily \char`\"{}\char`\"{}}}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classmts_manager_local_af8f8d230b07f5d647b0e363f7e632160}
@@ -459,7 +459,7 @@ Connect manager component client to manager component server (connect Interface\
 \index{Connect\+Server\+Side\+Interface@{Connect\+Server\+Side\+Interface}!mts\+Manager\+Local@{mts\+Manager\+Local}}
 \subsubsection[{Connect\+Server\+Side\+Interface}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Manager\+Local\+::\+Connect\+Server\+Side\+Interface (
 \begin{DoxyParamCaption}
-\item[{const mts\+Description\+Connection \&}]{description, }
+\item[{const {\bf mts\+Description\+Connection} \&}]{description, }
 \item[{const std\+::string \&}]{listener\+I\+D = {\ttfamily \char`\"{}\char`\"{}}}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classmts_manager_local_aad3fbe9e5b41e75e55599f8f7d61b8f0}
@@ -564,7 +564,7 @@ Implements \hyperlink{classmts_manager_local_interface_abfc11305625c7c4ce4c4bcef
 \subsubsection[{Create\+Interface\+Provided\+Proxy}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Manager\+Local\+::\+Create\+Interface\+Provided\+Proxy (
 \begin{DoxyParamCaption}
 \item[{const std\+::string \&}]{server\+Component\+Proxy\+Name, }
-\item[{const mts\+Interface\+Provided\+Description \&}]{provided\+Interface\+Description, }
+\item[{const {\bf mts\+Interface\+Provided\+Description} \&}]{provided\+Interface\+Description, }
 \item[{const std\+::string \&}]{listener\+I\+D = {\ttfamily \char`\"{}\char`\"{}}}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classmts_manager_local_a196c71a8ad2532559e6744710954b5aa}
@@ -588,7 +588,7 @@ Implements \hyperlink{classmts_manager_local_interface_ad493767a207ec22ed33f6504
 \subsubsection[{Create\+Interface\+Required\+Proxy}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Manager\+Local\+::\+Create\+Interface\+Required\+Proxy (
 \begin{DoxyParamCaption}
 \item[{const std\+::string \&}]{client\+Component\+Proxy\+Name, }
-\item[{const mts\+Interface\+Required\+Description \&}]{required\+Interface\+Description, }
+\item[{const {\bf mts\+Interface\+Required\+Description} \&}]{required\+Interface\+Description, }
 \item[{const std\+::string \&}]{listener\+I\+D = {\ttfamily \char`\"{}\char`\"{}}}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classmts_manager_local_a5229948aa578826b68cd5fc0e2ad287e}
@@ -804,7 +804,7 @@ Return singleton object of local component manager (networked mode, as G\+C\+M)
 \begin{DoxyParamCaption}
 \item[{const std\+::string \&}]{server\+Component\+Name, }
 \item[{const std\+::string \&}]{provided\+Interface\+Name, }
-\item[{mts\+Interface\+Provided\+Description \&}]{provided\+Interface\+Description, }
+\item[{{\bf mts\+Interface\+Provided\+Description} \&}]{provided\+Interface\+Description, }
 \item[{const std\+::string \&}]{listener\+I\+D = {\ttfamily \char`\"{}\char`\"{}}}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classmts_manager_local_ae131ad1d60cfa1b0abb675905251785a}
@@ -818,7 +818,7 @@ Implements \hyperlink{classmts_manager_local_interface_a2a3db8231dd1d120d07352f9
 \begin{DoxyParamCaption}
 \item[{const std\+::string \&}]{component\+Name, }
 \item[{const std\+::string \&}]{required\+Interface\+Name, }
-\item[{mts\+Interface\+Required\+Description \&}]{required\+Interface\+Description, }
+\item[{{\bf mts\+Interface\+Required\+Description} \&}]{required\+Interface\+Description, }
 \item[{const std\+::string \&}]{listener\+I\+D = {\ttfamily \char`\"{}\char`\"{}}}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classmts_manager_local_a8056ed6c161b39b6492a671de76f71f2}
@@ -1239,7 +1239,7 @@ Create a dot file to be used by graphviz to generate a nice graph of connections
 \index{Wait\+For\+State\+All@{Wait\+For\+State\+All}!mts\+Manager\+Local@{mts\+Manager\+Local}}
 \subsubsection[{Wait\+For\+State\+All}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Manager\+Local\+::\+Wait\+For\+State\+All (
 \begin{DoxyParamCaption}
-\item[{mts\+Component\+State}]{desired\+State, }
+\item[{{\bf mts\+Component\+State}}]{desired\+State, }
 \item[{double}]{timeout = {\ttfamily 3.0~$\ast${\bf cmn\+\_\+minute}}}
 \end{DoxyParamCaption}
 ) const}\label{classmts_manager_local_a0ae805235f0e479c0c150d7a0999a1e0}

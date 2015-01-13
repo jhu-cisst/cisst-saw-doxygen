@@ -1,8 +1,8 @@
 var searchData=
 [
   ['g',['g',['../d9/dd6/structsvl_r_g_b.html#aad56aeef6a029768848b46ea91b7332c',1,'svlRGB::g()'],['../db/d15/structsvl_r_g_b_a.html#a367a65b4b35bc3b855a6d818c843d02f',1,'svlRGBA::g()'],['../d9/dd8/structoni_r_g_b_c_r_x_y_z.html#ad205110931dbbf0fda04e3b0ad2e26bd',1,'oniRGBCRXYZ::g()'],['../d6/da4/classnmr_h_f_t_i_solver.html#a6b774e25595536c6c694d96dcef70587',1,'nmrHFTISolver::G()'],['../d8/dd8/classnmr_l_sq_lin_solution_dynamic.html#a399cb314fb848d36f58c14830bad0c28',1,'nmrLSqLinSolutionDynamic::G()']]],
-  ['gain',['Gain',['../d9/de2/classmts3_dconnexion.html#a790ed1fc6b5a64b4a1d022a541c3ae90',1,'mts3Dconnexion']]],
-  ['gamma',['Gamma',['../d7/d67/classsvl_filter_image_exposure_correction.html#a0bda9bde283f1fd9dc89780fc38f5eeb',1,'svlFilterImageExposureCorrection']]],
+  ['gain',['Gain',['../d9/de2/classmts3_dconnexion.html#a790ed1fc6b5a64b4a1d022a541c3ae90',1,'mts3Dconnexion::Gain()'],['../d1/de9/classsvl_filter_source_video_capture_types_1_1_image_properties.html#a47b78658b3a68de6462f0777a2f78dfe',1,'svlFilterSourceVideoCaptureTypes::ImageProperties::gain()']]],
+  ['gamma',['Gamma',['../d7/d67/classsvl_filter_image_exposure_correction.html#a0bda9bde283f1fd9dc89780fc38f5eeb',1,'svlFilterImageExposureCorrection::Gamma()'],['../d1/de9/classsvl_filter_source_video_capture_types_1_1_image_properties.html#a779634718935c5fe8c0d83cef288dcfe',1,'svlFilterSourceVideoCaptureTypes::ImageProperties::gamma()']]],
   ['gcm',['GCM',['../d6/d5e/classmts_manager_component_server.html#a59e64d383adcaa04d1e89e4596864209',1,'mtsManagerComponentServer']]],
   ['generalinterface',['GeneralInterface',['../dd/d51/classmts_manager_component_client.html#a6b305bb0053c9737e4be5fc8b5c76425',1,'mtsManagerComponentClient']]],
   ['geninfo',['GenInfo',['../de/d7d/classmts_a_t_i_net_f_t_config.html#a683259eee30c2156fe2e46bb34caa4eb',1,'mtsATINetFTConfig']]],
@@ -174,7 +174,7 @@ var searchData=
   ['gridsize',['gridSize',['../dc/ddc/classsvl_c_c_calibration_grid.html#ab80850211d593053f9742680204ad68d',1,'svlCCCalibrationGrid']]],
   ['gridsizepixel',['gridSizePixel',['../dc/ddc/classsvl_c_c_calibration_grid.html#a6bc5a200e85665be8811614a3abe470b',1,'svlCCCalibrationGrid']]],
   ['gripperclosed',['GripperClosed',['../d2/d1a/classmts_intuitive_research_kit_m_t_m.html#ac2406f66a4880a35ef854e85843d4c8e',1,'mtsIntuitiveResearchKitMTM::GripperClosed()'],['../d2/d1a/classmts_intuitive_research_kit_m_t_m.html#a01d3a4aee8e09094de4b74e0b0b7be5a',1,'mtsIntuitiveResearchKitMTM::GripperClosed()']]],
-  ['gripperevents',['GripperEvents',['../d2/d1a/classmts_intuitive_research_kit_m_t_m.html#a8db38299cd1c075a9a042ce462c6578e',1,'mtsIntuitiveResearchKitMTM']]],
+  ['gripperevents',['GripperEvents',['../d2/d1a/classmts_intuitive_research_kit_m_t_m.html#a9210a8fb459404cd847f50717b5450a1',1,'mtsIntuitiveResearchKitMTM']]],
   ['gripperpinch',['GripperPinch',['../d2/d1a/classmts_intuitive_research_kit_m_t_m.html#acf5b18a7bb385172688a4f8fafcc24d7',1,'mtsIntuitiveResearchKitMTM']]],
   ['gripperposition',['GripperPosition',['../d2/d1a/classmts_intuitive_research_kit_m_t_m.html#a5daa7ff2d7390d64d1246c39609fbff2',1,'mtsIntuitiveResearchKitMTM']]],
   ['groundtruthcalibrationgridpoints',['groundTruthCalibrationGridPoints',['../dc/ddc/classsvl_c_c_calibration_grid.html#a999d324f40227be7e33c7549f217bced',1,'svlCCCalibrationGrid']]],

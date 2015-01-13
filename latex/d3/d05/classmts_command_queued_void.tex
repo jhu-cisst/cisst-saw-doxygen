@@ -30,9 +30,9 @@ virtual \hyperlink{classmts_command_queued_void}{mts\+Command\+Queued\+Void} $\a
 \item 
 virtual void \hyperlink{classmts_command_queued_void_a78454afe56333b6e5bb2e9c07510bc67}{Allocate} (unsigned int \hyperlink{cmn_portability_8h_a021894e2626935fa2305434b1e893ff6}{C\+M\+N\+\_\+\+U\+N\+U\+S\+E\+D}(size))
 \item 
-mts\+Execution\+Result \hyperlink{classmts_command_queued_void_ac3d3b8518799820922ccfa207ecd7ab1}{Execute} (\hyperlink{mts_forward_declarations_8h_ad7426ccb6c883bc780d0ee197dddcbe7}{mts\+Blocking\+Type} blocking)
+\hyperlink{classmts_execution_result}{mts\+Execution\+Result} \hyperlink{classmts_command_queued_void_ac3d3b8518799820922ccfa207ecd7ab1}{Execute} (\hyperlink{mts_forward_declarations_8h_ad7426ccb6c883bc780d0ee197dddcbe7}{mts\+Blocking\+Type} blocking)
 \item 
-mts\+Execution\+Result \hyperlink{classmts_command_queued_void_a116aafff54b04cf64c0cc5613b3af268}{Execute} (\hyperlink{mts_forward_declarations_8h_ad7426ccb6c883bc780d0ee197dddcbe7}{mts\+Blocking\+Type} blocking, \hyperlink{classmts_command_write_base}{mts\+Command\+Write\+Base} $\ast$finished\+Event\+Handler)
+\hyperlink{classmts_execution_result}{mts\+Execution\+Result} \hyperlink{classmts_command_queued_void_a116aafff54b04cf64c0cc5613b3af268}{Execute} (\hyperlink{mts_forward_declarations_8h_ad7426ccb6c883bc780d0ee197dddcbe7}{mts\+Blocking\+Type} blocking, \hyperlink{classmts_command_write_base}{mts\+Command\+Write\+Base} $\ast$finished\+Event\+Handler)
 \item 
 \hyperlink{mts_forward_declarations_8h_ad7426ccb6c883bc780d0ee197dddcbe7}{mts\+Blocking\+Type} \hyperlink{classmts_command_queued_void_a163d660aee89584416b7d30fb171a388}{Blocking\+Flag\+Get} (void)
 \item 
@@ -114,14 +114,14 @@ This type.
 ) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_command_queued_void_ac05543187c0ece13fee129e78a3db5c3}
 \hypertarget{classmts_command_queued_void_ac3d3b8518799820922ccfa207ecd7ab1}{}\index{mts\+Command\+Queued\+Void@{mts\+Command\+Queued\+Void}!Execute@{Execute}}
 \index{Execute@{Execute}!mts\+Command\+Queued\+Void@{mts\+Command\+Queued\+Void}}
-\subsubsection[{Execute}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Execution\+Result mts\+Command\+Queued\+Void\+::\+Execute (
+\subsubsection[{Execute}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+Execution\+Result} mts\+Command\+Queued\+Void\+::\+Execute (
 \begin{DoxyParamCaption}
 \item[{{\bf mts\+Blocking\+Type}}]{blocking}
 \end{DoxyParamCaption}
 )}\label{classmts_command_queued_void_ac3d3b8518799820922ccfa207ecd7ab1}
-For a queued command, Execute means queueing the command. This method will return mts\+Execution\+Result\+::\+C\+O\+M\+M\+A\+N\+D\+\_\+\+Q\+U\+E\+U\+E\+D if the command has been queued; it doesn\textquotesingle{}t mean that the actual has been executed yet. If the command has been disabled (see \hyperlink{classmts_command_base_a2feea32ab49811d7d1e8c312344b94e6}{mts\+Command\+Base\+::\+Disable()}), Execute will return mts\+Execution\+Result\+::\+C\+O\+M\+M\+A\+N\+D\+\_\+\+D\+I\+S\+A\+B\+L\+E\+D. Finally, if the mailbox is full, \hyperlink{classmts_command_queued_void_ac3d3b8518799820922ccfa207ecd7ab1}{Execute()} will return mts\+Execution\+Result\+::\+I\+N\+T\+E\+R\+F\+A\+C\+E\+\_\+\+C\+O\+M\+M\+A\+N\+D\+\_\+\+M\+A\+I\+L\+B\+O\+X\+\_\+\+F\+U\+L\+L. This can happen if the task receiving the command doesn\textquotesingle{}t process/empty its mailboxes fast enough. \hypertarget{classmts_command_queued_void_a116aafff54b04cf64c0cc5613b3af268}{}\index{mts\+Command\+Queued\+Void@{mts\+Command\+Queued\+Void}!Execute@{Execute}}
+For a queued command, Execute means queueing the command. This method will return \hyperlink{classmts_execution_result_a10c4246c82ac99d88e5f716f79407b77a0e4d6149853440cbcaaa65391fe3dc69}{mts\+Execution\+Result\+::\+C\+O\+M\+M\+A\+N\+D\+\_\+\+Q\+U\+E\+U\+E\+D} if the command has been queued; it doesn\textquotesingle{}t mean that the actual has been executed yet. If the command has been disabled (see \hyperlink{classmts_command_base_a2feea32ab49811d7d1e8c312344b94e6}{mts\+Command\+Base\+::\+Disable()}), Execute will return \hyperlink{classmts_execution_result_a10c4246c82ac99d88e5f716f79407b77ae2ff22d330a4e0a41cd55be7dda1fc43}{mts\+Execution\+Result\+::\+C\+O\+M\+M\+A\+N\+D\+\_\+\+D\+I\+S\+A\+B\+L\+E\+D}. Finally, if the mailbox is full, \hyperlink{classmts_command_queued_void_ac3d3b8518799820922ccfa207ecd7ab1}{Execute()} will return \hyperlink{classmts_execution_result_a10c4246c82ac99d88e5f716f79407b77af7073c80d884d8ecaf97df0413f5478e}{mts\+Execution\+Result\+::\+I\+N\+T\+E\+R\+F\+A\+C\+E\+\_\+\+C\+O\+M\+M\+A\+N\+D\+\_\+\+M\+A\+I\+L\+B\+O\+X\+\_\+\+F\+U\+L\+L}. This can happen if the task receiving the command doesn\textquotesingle{}t process/empty its mailboxes fast enough. \hypertarget{classmts_command_queued_void_a116aafff54b04cf64c0cc5613b3af268}{}\index{mts\+Command\+Queued\+Void@{mts\+Command\+Queued\+Void}!Execute@{Execute}}
 \index{Execute@{Execute}!mts\+Command\+Queued\+Void@{mts\+Command\+Queued\+Void}}
-\subsubsection[{Execute}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Execution\+Result mts\+Command\+Queued\+Void\+::\+Execute (
+\subsubsection[{Execute}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+Execution\+Result} mts\+Command\+Queued\+Void\+::\+Execute (
 \begin{DoxyParamCaption}
 \item[{{\bf mts\+Blocking\+Type}}]{blocking, }
 \item[{{\bf mts\+Command\+Write\+Base} $\ast$}]{finished\+Event\+Handler}

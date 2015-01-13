@@ -46,21 +46,21 @@ virtual void \hyperlink{classmts_component_viewer_adce96720fed764a7fc1cc9598c74b
 \item 
 void \hyperlink{classmts_component_viewer_ab8a3016cf3b814fff4132646c8545401}{Activate\+Menu\+Items} (void)
 \item 
-std\+::string \hyperlink{classmts_component_viewer_a94496c56f20040de1e87a0c36df1925a}{Get\+Component\+In\+U\+Draw\+Graph\+Format} (const std\+::string \&process\+Name, const std\+::string \&component\+Name, const mts\+Component\+State \&component\+State) const 
+std\+::string \hyperlink{classmts_component_viewer_a94496c56f20040de1e87a0c36df1925a}{Get\+Component\+In\+U\+Draw\+Graph\+Format} (const std\+::string \&process\+Name, const std\+::string \&component\+Name, const \hyperlink{classmts_component_state}{mts\+Component\+State} \&component\+State) const 
 \item 
-std\+::string \hyperlink{classmts_component_viewer_a3c1f904308cac38bf80a506eece45e8f}{Get\+State\+In\+U\+Draw\+Graph\+Format} (const mts\+Component\+State \&component\+State) const 
+std\+::string \hyperlink{classmts_component_viewer_a3c1f904308cac38bf80a506eece45e8f}{Get\+State\+In\+U\+Draw\+Graph\+Format} (const \hyperlink{classmts_component_state}{mts\+Component\+State} \&component\+State) const 
 \item 
-std\+::string \hyperlink{classmts_component_viewer_a3f1d129888db918924b042da0d84eebd}{Get\+Connection\+In\+U\+Draw\+Graph\+Format} (const mts\+Description\+Connection \&connection) const 
+std\+::string \hyperlink{classmts_component_viewer_a3f1d129888db918924b042da0d84eebd}{Get\+Connection\+In\+U\+Draw\+Graph\+Format} (const \hyperlink{classmts_description_connection}{mts\+Description\+Connection} \&connection) const 
 \item 
 void \hyperlink{classmts_component_viewer_a4d5ea188a34cac5faa644618b1c55e2c}{Change\+Component\+Border} (const std\+::string \&process\+Name, const std\+::string \&component\+Name, \hyperlink{classmts_component_viewer_a2bd239a01fe3124526c4322e7305b99f}{Border\+Type} border)
 \item 
-virtual void \hyperlink{classmts_component_viewer_a119208a52ff869e4d7d687a04e8e1c08}{Add\+Component\+Handler} (const mts\+Description\+Component \&component\+Info)
+virtual void \hyperlink{classmts_component_viewer_a119208a52ff869e4d7d687a04e8e1c08}{Add\+Component\+Handler} (const \hyperlink{classmts_description_component}{mts\+Description\+Component} \&component\+Info)
 \item 
-virtual void \hyperlink{classmts_component_viewer_a1efc788ff4196c270e6e2d185b8c6104}{Change\+State\+Handler} (const mts\+Component\+State\+Change \&component\+State\+Change)
+virtual void \hyperlink{classmts_component_viewer_a1efc788ff4196c270e6e2d185b8c6104}{Change\+State\+Handler} (const \hyperlink{classmts_component_state_change}{mts\+Component\+State\+Change} \&component\+State\+Change)
 \item 
-virtual void \hyperlink{classmts_component_viewer_ad9a2f2ba75fa8f47d4540ee448ba3983}{Add\+Connection\+Handler} (const mts\+Description\+Connection \&connection\+Info)
+virtual void \hyperlink{classmts_component_viewer_ad9a2f2ba75fa8f47d4540ee448ba3983}{Add\+Connection\+Handler} (const \hyperlink{classmts_description_connection}{mts\+Description\+Connection} \&connection\+Info)
 \item 
-virtual void \hyperlink{classmts_component_viewer_a8ccf7105c4fa2b28f3f38fe9ea671806}{Remove\+Connection\+Handler} (const mts\+Description\+Connection \&connection\+Info)
+virtual void \hyperlink{classmts_component_viewer_a8ccf7105c4fa2b28f3f38fe9ea671806}{Remove\+Connection\+Handler} (const \hyperlink{classmts_description_connection}{mts\+Description\+Connection} \&connection\+Info)
 \end{DoxyCompactItemize}
 \subsection*{Static Protected Member Functions}
 \begin{DoxyCompactItemize}
@@ -82,7 +82,7 @@ bool \hyperlink{classmts_component_viewer_a3e3249972f2cd16f18ea84aa0df92218}{Sho
 \item 
 bool \hyperlink{classmts_component_viewer_aa6617f20137e55bf8fe983d8587a22d2}{Connection\+Started}
 \item 
-mts\+Description\+Connection \hyperlink{classmts_component_viewer_ab4e2905d1679386f9a8d15d0bcaaf996}{Connection\+Request}
+\hyperlink{classmts_description_connection}{mts\+Description\+Connection} \hyperlink{classmts_component_viewer_ab4e2905d1679386f9a8d15d0bcaaf996}{Connection\+Request}
 \item 
 \hyperlink{classosa_thread}{osa\+Thread} \hyperlink{classmts_component_viewer_a5b608706d9dec221cd4ca599a165fec7}{Reader\+Thread}
 \item 
@@ -141,14 +141,14 @@ bool \hyperlink{classmts_component_viewer_ad0d7132119ce154a8e7b646153ae0cc0}{Wai
 \index{Add\+Component\+Handler@{Add\+Component\+Handler}!mts\+Component\+Viewer@{mts\+Component\+Viewer}}
 \subsubsection[{Add\+Component\+Handler}]{\setlength{\rightskip}{0pt plus 5cm}virtual void mts\+Component\+Viewer\+::\+Add\+Component\+Handler (
 \begin{DoxyParamCaption}
-\item[{const mts\+Description\+Component \&}]{component\+Info}
+\item[{const {\bf mts\+Description\+Component} \&}]{component\+Info}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classmts_component_viewer_a119208a52ff869e4d7d687a04e8e1c08}
 \hypertarget{classmts_component_viewer_ad9a2f2ba75fa8f47d4540ee448ba3983}{}\index{mts\+Component\+Viewer@{mts\+Component\+Viewer}!Add\+Connection\+Handler@{Add\+Connection\+Handler}}
 \index{Add\+Connection\+Handler@{Add\+Connection\+Handler}!mts\+Component\+Viewer@{mts\+Component\+Viewer}}
 \subsubsection[{Add\+Connection\+Handler}]{\setlength{\rightskip}{0pt plus 5cm}virtual void mts\+Component\+Viewer\+::\+Add\+Connection\+Handler (
 \begin{DoxyParamCaption}
-\item[{const mts\+Description\+Connection \&}]{connection\+Info}
+\item[{const {\bf mts\+Description\+Connection} \&}]{connection\+Info}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classmts_component_viewer_ad9a2f2ba75fa8f47d4540ee448ba3983}
 \hypertarget{classmts_component_viewer_a4d5ea188a34cac5faa644618b1c55e2c}{}\index{mts\+Component\+Viewer@{mts\+Component\+Viewer}!Change\+Component\+Border@{Change\+Component\+Border}}
@@ -164,7 +164,7 @@ bool \hyperlink{classmts_component_viewer_ad0d7132119ce154a8e7b646153ae0cc0}{Wai
 \index{Change\+State\+Handler@{Change\+State\+Handler}!mts\+Component\+Viewer@{mts\+Component\+Viewer}}
 \subsubsection[{Change\+State\+Handler}]{\setlength{\rightskip}{0pt plus 5cm}virtual void mts\+Component\+Viewer\+::\+Change\+State\+Handler (
 \begin{DoxyParamCaption}
-\item[{const mts\+Component\+State\+Change \&}]{component\+State\+Change}
+\item[{const {\bf mts\+Component\+State\+Change} \&}]{component\+State\+Change}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classmts_component_viewer_a1efc788ff4196c270e6e2d185b8c6104}
 \hypertarget{classmts_component_viewer_aff0098569266c8804e07377551f627f9}{}\index{mts\+Component\+Viewer@{mts\+Component\+Viewer}!Cleanup@{Cleanup}}
@@ -202,21 +202,21 @@ Reimplemented from \hyperlink{classmts_task_a52c822f34f12a0eb14f3d02de9ddd6f6}{m
 \begin{DoxyParamCaption}
 \item[{const std\+::string \&}]{process\+Name, }
 \item[{const std\+::string \&}]{component\+Name, }
-\item[{const mts\+Component\+State \&}]{component\+State}
+\item[{const {\bf mts\+Component\+State} \&}]{component\+State}
 \end{DoxyParamCaption}
 ) const\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_component_viewer_a94496c56f20040de1e87a0c36df1925a}
 \hypertarget{classmts_component_viewer_a3f1d129888db918924b042da0d84eebd}{}\index{mts\+Component\+Viewer@{mts\+Component\+Viewer}!Get\+Connection\+In\+U\+Draw\+Graph\+Format@{Get\+Connection\+In\+U\+Draw\+Graph\+Format}}
 \index{Get\+Connection\+In\+U\+Draw\+Graph\+Format@{Get\+Connection\+In\+U\+Draw\+Graph\+Format}!mts\+Component\+Viewer@{mts\+Component\+Viewer}}
 \subsubsection[{Get\+Connection\+In\+U\+Draw\+Graph\+Format}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string mts\+Component\+Viewer\+::\+Get\+Connection\+In\+U\+Draw\+Graph\+Format (
 \begin{DoxyParamCaption}
-\item[{const mts\+Description\+Connection \&}]{connection}
+\item[{const {\bf mts\+Description\+Connection} \&}]{connection}
 \end{DoxyParamCaption}
 ) const\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_component_viewer_a3f1d129888db918924b042da0d84eebd}
 \hypertarget{classmts_component_viewer_a3c1f904308cac38bf80a506eece45e8f}{}\index{mts\+Component\+Viewer@{mts\+Component\+Viewer}!Get\+State\+In\+U\+Draw\+Graph\+Format@{Get\+State\+In\+U\+Draw\+Graph\+Format}}
 \index{Get\+State\+In\+U\+Draw\+Graph\+Format@{Get\+State\+In\+U\+Draw\+Graph\+Format}!mts\+Component\+Viewer@{mts\+Component\+Viewer}}
 \subsubsection[{Get\+State\+In\+U\+Draw\+Graph\+Format}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string mts\+Component\+Viewer\+::\+Get\+State\+In\+U\+Draw\+Graph\+Format (
 \begin{DoxyParamCaption}
-\item[{const mts\+Component\+State \&}]{component\+State}
+\item[{const {\bf mts\+Component\+State} \&}]{component\+State}
 \end{DoxyParamCaption}
 ) const\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_component_viewer_a3c1f904308cac38bf80a506eece45e8f}
 \hypertarget{classmts_component_viewer_a514501a010d6f9cde03032d7853cde39}{}\index{mts\+Component\+Viewer@{mts\+Component\+Viewer}!Parse\+Args@{Parse\+Args}}
@@ -255,7 +255,7 @@ Reimplemented from \hyperlink{classmts_task_a52c822f34f12a0eb14f3d02de9ddd6f6}{m
 \index{Remove\+Connection\+Handler@{Remove\+Connection\+Handler}!mts\+Component\+Viewer@{mts\+Component\+Viewer}}
 \subsubsection[{Remove\+Connection\+Handler}]{\setlength{\rightskip}{0pt plus 5cm}virtual void mts\+Component\+Viewer\+::\+Remove\+Connection\+Handler (
 \begin{DoxyParamCaption}
-\item[{const mts\+Description\+Connection \&}]{connection\+Info}
+\item[{const {\bf mts\+Description\+Connection} \&}]{connection\+Info}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classmts_component_viewer_a8ccf7105c4fa2b28f3f38fe9ea671806}
 \hypertarget{classmts_component_viewer_a4c3d8d11e6e2f187c1b8fdaef3b3c561}{}\index{mts\+Component\+Viewer@{mts\+Component\+Viewer}!Run@{Run}}
@@ -292,7 +292,7 @@ Reimplemented from \hyperlink{classmts_component_aaf28f0262b44eb6866e10089a02fa6
 \subsection{Member Data Documentation}
 \hypertarget{classmts_component_viewer_ab4e2905d1679386f9a8d15d0bcaaf996}{}\index{mts\+Component\+Viewer@{mts\+Component\+Viewer}!Connection\+Request@{Connection\+Request}}
 \index{Connection\+Request@{Connection\+Request}!mts\+Component\+Viewer@{mts\+Component\+Viewer}}
-\subsubsection[{Connection\+Request}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Description\+Connection mts\+Component\+Viewer\+::\+Connection\+Request\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_component_viewer_ab4e2905d1679386f9a8d15d0bcaaf996}
+\subsubsection[{Connection\+Request}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+Description\+Connection} mts\+Component\+Viewer\+::\+Connection\+Request\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_component_viewer_ab4e2905d1679386f9a8d15d0bcaaf996}
 \hypertarget{classmts_component_viewer_aa6617f20137e55bf8fe983d8587a22d2}{}\index{mts\+Component\+Viewer@{mts\+Component\+Viewer}!Connection\+Started@{Connection\+Started}}
 \index{Connection\+Started@{Connection\+Started}!mts\+Component\+Viewer@{mts\+Component\+Viewer}}
 \subsubsection[{Connection\+Started}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Component\+Viewer\+::\+Connection\+Started\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_component_viewer_aa6617f20137e55bf8fe983d8587a22d2}

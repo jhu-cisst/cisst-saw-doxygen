@@ -58,7 +58,7 @@ bool \hyperlink{classmts_manager_global_a2fdffc2fa545afe88283def2ea1d7c63}{Conne
 \begin{DoxyCompactList}\small\item\em Confirm that connection has been successfully established. \end{DoxyCompactList}\item 
 bool \hyperlink{classmts_manager_global_a76821bdfa173c602a1e2822abbd30207}{Disconnect} (const \hyperlink{mts_forward_declarations_8h_ad3543bb11742e1766374ec96016d6547}{Connection\+I\+D\+Type} connection\+I\+D)
 \begin{DoxyCompactList}\small\item\em Disconnect two interfaces. \end{DoxyCompactList}\item 
-bool \hyperlink{classmts_manager_global_a8f1aacccac9488a3ec0aeb4ecc547c7c}{Disconnect} (const mts\+Description\+Connection \&connection)
+bool \hyperlink{classmts_manager_global_a8f1aacccac9488a3ec0aeb4ecc547c7c}{Disconnect} (const \hyperlink{classmts_description_connection}{mts\+Description\+Connection} \&connection)
 \item 
 bool \hyperlink{classmts_manager_global_abfa53d9b4051f79c7b413ce1fa2b8cc9}{Disconnect} (const std\+::string \&client\+Process\+Name, const std\+::string \&client\+Component\+Name, const std\+::string \&client\+Interface\+Name, const std\+::string \&server\+Process\+Name, const std\+::string \&server\+Component\+Name, const std\+::string \&server\+Interface\+Name)
 \begin{DoxyCompactList}\small\item\em Disconnect two interfaces. \end{DoxyCompactList}\item 
@@ -66,7 +66,7 @@ bool \hyperlink{classmts_manager_global_a395aea7f5f6c28d676bd9f2d05b72ff6}{Initi
 \begin{DoxyCompactList}\small\item\em Initiate connection process. \end{DoxyCompactList}\item 
 bool \hyperlink{classmts_manager_global_acf0a8009a35013ec30c1fddda725eb20}{Connect\+Server\+Side\+Interface\+Request} (const \hyperlink{mts_forward_declarations_8h_ad3543bb11742e1766374ec96016d6547}{Connection\+I\+D\+Type} connection\+I\+D)
 \begin{DoxyCompactList}\small\item\em Request the global component manager to connect interfaces at server side. \end{DoxyCompactList}\item 
-void \hyperlink{classmts_manager_global_ab53df6ad67125ff7682e5a091287d2ec}{Get\+List\+Of\+Connections} (std\+::vector$<$ mts\+Description\+Connection $>$ \&list) const 
+void \hyperlink{classmts_manager_global_ab53df6ad67125ff7682e5a091287d2ec}{Get\+List\+Of\+Connections} (std\+::vector$<$ \hyperlink{classmts_description_connection}{mts\+Description\+Connection} $>$ \&list) const 
 \item 
 std\+::vector$<$ std\+::string $>$ \hyperlink{classmts_manager_global_a9a61d5f94f5cef7bb85b4184fbb971cd}{Get\+I\+P\+Address} (void) const 
 \item 
@@ -169,7 +169,7 @@ bool \hyperlink{classmts_manager_global_acaa9d8d96ff161094790ccfa9e6e3336}{Remov
 \item 
 bool \hyperlink{classmts_manager_global_a115d9b7e7e1b0125977ac0f737484537}{Cleanup\+Disconnected\+Process} (const std\+::string \&name\+Of\+Process\+Disconnected)
 \item 
-bool \hyperlink{classmts_manager_global_ab6db0d6f1e9d0717199bdbfdce5141e5}{Is\+Already\+Connected} (const mts\+Description\+Connection \&description) const 
+bool \hyperlink{classmts_manager_global_ab6db0d6f1e9d0717199bdbfdce5141e5}{Is\+Already\+Connected} (const \hyperlink{classmts_description_connection}{mts\+Description\+Connection} \&description) const 
 \item 
 int \hyperlink{classmts_manager_global_a0e3e1f31090dfa4288608b611bd5c723}{Get\+Number\+Of\+Interfaces} (const std\+::string \&process\+Name, const std\+::string \&component\+Name, const bool include\+Internal\+Interface=true) const 
 \item 
@@ -546,7 +546,7 @@ Implements \hyperlink{classmts_manager_global_interface_a343048a7887e629f95b340b
 \index{Disconnect@{Disconnect}!mts\+Manager\+Global@{mts\+Manager\+Global}}
 \subsubsection[{Disconnect}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Manager\+Global\+::\+Disconnect (
 \begin{DoxyParamCaption}
-\item[{const mts\+Description\+Connection \&}]{connection}
+\item[{const {\bf mts\+Description\+Connection} \&}]{connection}
 \end{DoxyParamCaption}
 )}\label{classmts_manager_global_a8f1aacccac9488a3ec0aeb4ecc547c7c}
 \hypertarget{classmts_manager_global_abfa53d9b4051f79c7b413ce1fa2b8cc9}{}\index{mts\+Manager\+Global@{mts\+Manager\+Global}!Disconnect@{Disconnect}}
@@ -866,7 +866,7 @@ Return I\+P address of this machine. \hypertarget{classmts_manager_global_aabf5b
 \index{Get\+List\+Of\+Connections@{Get\+List\+Of\+Connections}!mts\+Manager\+Global@{mts\+Manager\+Global}}
 \subsubsection[{Get\+List\+Of\+Connections}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Manager\+Global\+::\+Get\+List\+Of\+Connections (
 \begin{DoxyParamCaption}
-\item[{std\+::vector$<$ mts\+Description\+Connection $>$ \&}]{list}
+\item[{std\+::vector$<$ {\bf mts\+Description\+Connection} $>$ \&}]{list}
 \end{DoxyParamCaption}
 ) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_manager_global_ab53df6ad67125ff7682e5a091287d2ec}
 Get a list of all active connections represented by a set of strings 
@@ -999,7 +999,7 @@ Implements \hyperlink{classmts_manager_global_interface_aa9e2d02acd143d1a3ec7b7c
 \index{Is\+Already\+Connected@{Is\+Already\+Connected}!mts\+Manager\+Global@{mts\+Manager\+Global}}
 \subsubsection[{Is\+Already\+Connected}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Manager\+Global\+::\+Is\+Already\+Connected (
 \begin{DoxyParamCaption}
-\item[{const mts\+Description\+Connection \&}]{description}
+\item[{const {\bf mts\+Description\+Connection} \&}]{description}
 \end{DoxyParamCaption}
 ) const\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_manager_global_ab6db0d6f1e9d0717199bdbfdce5141e5}
 Check if two interfaces are connected \hypertarget{classmts_manager_global_a06739ca78771998b588fa3c3e686edff}{}\index{mts\+Manager\+Global@{mts\+Manager\+Global}!Is\+Proxy\+Component@{Is\+Proxy\+Component}}

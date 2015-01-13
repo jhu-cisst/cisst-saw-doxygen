@@ -25,9 +25,9 @@ virtual \hyperlink{classmts_command_queued_write_base}{mts\+Command\+Queued\+Wri
 \item 
 virtual void \hyperlink{classmts_command_queued_write_base_a4c913b692d849b9aa47f3c9ea235cd8f}{Allocate} (size\+\_\+t size)=0
 \item 
-mts\+Execution\+Result \hyperlink{classmts_command_queued_write_base_a6d7fa71986aac29927898583c4c1f1f9}{Execute} (const \hyperlink{classmts_generic_object}{mts\+Generic\+Object} \&argument, \hyperlink{mts_forward_declarations_8h_ad7426ccb6c883bc780d0ee197dddcbe7}{mts\+Blocking\+Type} blocking)
+\hyperlink{classmts_execution_result}{mts\+Execution\+Result} \hyperlink{classmts_command_queued_write_base_a6d7fa71986aac29927898583c4c1f1f9}{Execute} (const \hyperlink{classmts_generic_object}{mts\+Generic\+Object} \&argument, \hyperlink{mts_forward_declarations_8h_ad7426ccb6c883bc780d0ee197dddcbe7}{mts\+Blocking\+Type} blocking)
 \item 
-mts\+Execution\+Result \hyperlink{classmts_command_queued_write_base_af7ee7e7dd5d775d48ff191661ae7c376}{Execute} (const \hyperlink{classmts_generic_object}{mts\+Generic\+Object} \&argument, \hyperlink{mts_forward_declarations_8h_ad7426ccb6c883bc780d0ee197dddcbe7}{mts\+Blocking\+Type} blocking, \hyperlink{classmts_command_write_base}{mts\+Command\+Write\+Base} $\ast$finished\+Event\+Handler)=0
+\hyperlink{classmts_execution_result}{mts\+Execution\+Result} \hyperlink{classmts_command_queued_write_base_af7ee7e7dd5d775d48ff191661ae7c376}{Execute} (const \hyperlink{classmts_generic_object}{mts\+Generic\+Object} \&argument, \hyperlink{mts_forward_declarations_8h_ad7426ccb6c883bc780d0ee197dddcbe7}{mts\+Blocking\+Type} blocking, \hyperlink{classmts_command_write_base}{mts\+Command\+Write\+Base} $\ast$finished\+Event\+Handler)=0
 \item 
 virtual const \hyperlink{classmts_generic_object}{mts\+Generic\+Object} $\ast$ \hyperlink{classmts_command_queued_write_base_a40aee70e67c7415127e72be05eb6a3a4}{Argument\+Peek} (void) const =0
 \item 
@@ -150,7 +150,7 @@ Implemented in \hyperlink{classmts_command_queued_write_generic_a19ab52abd7a5763
 
 \hypertarget{classmts_command_queued_write_base_a6d7fa71986aac29927898583c4c1f1f9}{}\index{mts\+Command\+Queued\+Write\+Base@{mts\+Command\+Queued\+Write\+Base}!Execute@{Execute}}
 \index{Execute@{Execute}!mts\+Command\+Queued\+Write\+Base@{mts\+Command\+Queued\+Write\+Base}}
-\subsubsection[{Execute}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Execution\+Result mts\+Command\+Queued\+Write\+Base\+::\+Execute (
+\subsubsection[{Execute}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+Execution\+Result} mts\+Command\+Queued\+Write\+Base\+::\+Execute (
 \begin{DoxyParamCaption}
 \item[{const {\bf mts\+Generic\+Object} \&}]{argument, }
 \item[{{\bf mts\+Blocking\+Type}}]{blocking}
@@ -166,7 +166,7 @@ The execute method. Abstract method to be implemented by derived classes to run 
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-the execution result (mts\+Execution\+Result) 
+the execution result (\hyperlink{classmts_execution_result}{mts\+Execution\+Result}) 
 \end{DoxyReturn}
 
 
@@ -174,7 +174,7 @@ Implements \hyperlink{classmts_command_write_base_ae0f9db1cdc228fe67c59b86994d28
 
 \hypertarget{classmts_command_queued_write_base_af7ee7e7dd5d775d48ff191661ae7c376}{}\index{mts\+Command\+Queued\+Write\+Base@{mts\+Command\+Queued\+Write\+Base}!Execute@{Execute}}
 \index{Execute@{Execute}!mts\+Command\+Queued\+Write\+Base@{mts\+Command\+Queued\+Write\+Base}}
-\subsubsection[{Execute}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Execution\+Result mts\+Command\+Queued\+Write\+Base\+::\+Execute (
+\subsubsection[{Execute}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+Execution\+Result} mts\+Command\+Queued\+Write\+Base\+::\+Execute (
 \begin{DoxyParamCaption}
 \item[{const {\bf mts\+Generic\+Object} \&}]{argument, }
 \item[{{\bf mts\+Blocking\+Type}}]{blocking, }

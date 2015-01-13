@@ -119,7 +119,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">// Always include last</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="../../d7/d8b/mts_export_8h.html">cisstMultiTask/mtsExport.h</a>&gt;</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">class </span>mtsExecutionResult;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">class </span><a class="code" href="../../d1/d0a/classmts_execution_result.html">mtsExecutionResult</a>;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
 <div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="../../d6/d02/classmts_mail_box.html">   36</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../d9/d92/cmn_export_macros_8h.html#a99393e0c3ac434b2605235bbe20684f8">CISST_EXPORT</a> <a class="code" href="../../d6/d02/classmts_mail_box.html">mtsMailBox</a></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div>
@@ -136,7 +136,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">void</span> TriggerPostQueuedCommandIfNeeded(<span class="keywordtype">bool</span> isBlocking, <span class="keywordtype">bool</span> isBlockingReturn);</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">void</span> TriggerFinishedEventIfNeeded(<span class="keyword">const</span> std::string &amp;commandName, <a class="code" href="../../da/d89/classmts_command_write_base.html">mtsCommandWriteBase</a> *finishedEvent,</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                                      <a class="code" href="../../d2/d5f/classmts_generic_object.html">mtsGenericObject</a> *resultPointer, <span class="keyword">const</span> mtsExecutionResult &amp;result) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                                      <a class="code" href="../../d2/d5f/classmts_generic_object.html">mtsGenericObject</a> *resultPointer, <span class="keyword">const</span> <a class="code" href="../../d1/d0a/classmts_execution_result.html">mtsExecutionResult</a> &amp;result) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <a class="code" href="../../d6/d02/classmts_mail_box.html">mtsMailBox</a>(<span class="keyword">const</span> std::string &amp; name,</div>
@@ -174,6 +174,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="classmts_generic_object_html"><div class="ttname"><a href="../../d2/d5f/classmts_generic_object.html">mtsGenericObject</a></div><div class="ttdoc">Base class for data object in cisstMultiTask. </div><div class="ttdef"><b>Definition:</b> mtsGenericObject.h:56</div></div>
 <div class="ttc" id="classmts_command_write_base_html"><div class="ttname"><a href="../../da/d89/classmts_command_write_base.html">mtsCommandWriteBase</a></div><div class="ttdef"><b>Definition:</b> mtsCommandWriteBase.h:40</div></div>
 <div class="ttc" id="mts_queue_8h_html"><div class="ttname"><a href="../../d5/d97/mts_queue_8h.html">mtsQueue.h</a></div><div class="ttdoc">Defines mtsQueue. </div></div>
+<div class="ttc" id="classmts_execution_result_html"><div class="ttname"><a href="../../d1/d0a/classmts_execution_result.html">mtsExecutionResult</a></div><div class="ttdef"><b>Definition:</b> mtsExecutionResult.h:34</div></div>
 <div class="ttc" id="classmts_queue_html"><div class="ttname"><a href="../../db/d05/classmts_queue.html">mtsQueue&lt; mtsCommandBase * &gt;</a></div></div>
 <div class="ttc" id="mts_export_8h_html"><div class="ttname"><a href="../../d7/d8b/mts_export_8h.html">mtsExport.h</a></div><div class="ttdoc">Rules of exporting. </div></div>
 <div class="ttc" id="classmts_command_base_html"><div class="ttname"><a href="../../dc/df0/classmts_command_base.html">mtsCommandBase</a></div><div class="ttdef"><b>Definition:</b> mtsCommandBase.h:43</div></div>

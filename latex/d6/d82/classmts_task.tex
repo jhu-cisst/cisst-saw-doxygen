@@ -76,9 +76,9 @@ static std\+::runtime\+\_\+error \hyperlink{classmts_task_a518652604363d9402292a
 \item 
 void \hyperlink{classmts_task_a3ffb50ec20611c1372c1ef2fc7c252eb}{Run\+Event\+Handler} (void)
 \item 
-void \hyperlink{classmts_task_a8e7150ceb2934cc1b0d685f249c7c5c1}{Change\+State\+Event\+Handler} (const mts\+Component\+State \&new\+State)
+void \hyperlink{classmts_task_a8e7150ceb2934cc1b0d685f249c7c5c1}{Change\+State\+Event\+Handler} (const \hyperlink{classmts_component_state}{mts\+Component\+State} \&new\+State)
 \item 
-mts\+Execution\+Result \hyperlink{classmts_task_a6bc857ef1d6f98c90f55846e940e00c3}{Run\+Event} (bool check=true)
+\hyperlink{classmts_execution_result}{mts\+Execution\+Result} \hyperlink{classmts_task_a6bc857ef1d6f98c90f55846e940e00c3}{Run\+Event} (bool check=true)
 \item 
 virtual void $\ast$ \hyperlink{classmts_task_affcd896841ecfe785f898ef93a4202e9}{Run\+Internal} (void $\ast$argument)=0
 \item 
@@ -96,9 +96,9 @@ virtual void \hyperlink{classmts_task_a194fbc7a2dba85f02d80b85bf84ad26c}{Save\+T
 \item 
 virtual void \hyperlink{classmts_task_a89f212237d9b7e453c91df8a1a6962d2}{Set\+Thread\+Return\+Value} (void $\ast$return\+Value)
 \item 
-void \hyperlink{classmts_task_a320a9995ca33358c5c334862b6fdf7a2}{Change\+State} (mts\+Component\+State\+::\+Enum new\+State)
+void \hyperlink{classmts_task_a320a9995ca33358c5c334862b6fdf7a2}{Change\+State} (\hyperlink{classmts_component_state_a1158e4d2d79fff671354909e87f58928}{mts\+Component\+State\+::\+Enum} new\+State)
 \item 
-bool \hyperlink{classmts_task_a2153a26a4a92583bae49696501da212e}{Wait\+For\+State} (mts\+Component\+State desired\+State, double timeout)
+bool \hyperlink{classmts_task_a2153a26a4a92583bae49696501da212e}{Wait\+For\+State} (\hyperlink{classmts_component_state}{mts\+Component\+State} desired\+State, double timeout)
 \end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
@@ -221,14 +221,14 @@ Reimplemented in \hyperlink{classmts_task_from_signal_ab3cec57b1aa96bb362249da16
 \index{Change\+State@{Change\+State}!mts\+Task@{mts\+Task}}
 \subsubsection[{Change\+State}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Task\+::\+Change\+State (
 \begin{DoxyParamCaption}
-\item[{mts\+Component\+State\+::\+Enum}]{new\+State}
+\item[{{\bf mts\+Component\+State\+::\+Enum}}]{new\+State}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_task_a320a9995ca33358c5c334862b6fdf7a2}
 \hypertarget{classmts_task_a8e7150ceb2934cc1b0d685f249c7c5c1}{}\index{mts\+Task@{mts\+Task}!Change\+State\+Event\+Handler@{Change\+State\+Event\+Handler}}
 \index{Change\+State\+Event\+Handler@{Change\+State\+Event\+Handler}!mts\+Task@{mts\+Task}}
 \subsubsection[{Change\+State\+Event\+Handler}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Task\+::\+Change\+State\+Event\+Handler (
 \begin{DoxyParamCaption}
-\item[{const mts\+Component\+State \&}]{new\+State}
+\item[{const {\bf mts\+Component\+State} \&}]{new\+State}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_task_a8e7150ceb2934cc1b0d685f249c7c5c1}
 Change state event handler. \hypertarget{classmts_task_a6cd434e821df3f460832856c8d15bf2f}{}\index{mts\+Task@{mts\+Task}!Check\+For\+Own\+Thread@{Check\+For\+Own\+Thread}}
@@ -391,7 +391,7 @@ Implemented in \hyperlink{classmts_manager_component_client_a9bd3a578609dfafe654
 
 \hypertarget{classmts_task_a6bc857ef1d6f98c90f55846e940e00c3}{}\index{mts\+Task@{mts\+Task}!Run\+Event@{Run\+Event}}
 \index{Run\+Event@{Run\+Event}!mts\+Task@{mts\+Task}}
-\subsubsection[{Run\+Event}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Execution\+Result mts\+Task\+::\+Run\+Event (
+\subsubsection[{Run\+Event}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+Execution\+Result} mts\+Task\+::\+Run\+Event (
 \begin{DoxyParamCaption}
 \item[{bool}]{check = {\ttfamily true}}
 \end{DoxyParamCaption}
@@ -457,7 +457,7 @@ Reimplemented in \hyperlink{classmts_task_periodic_a18cf3343b3fccacc4966ed1356fa
 \index{Wait\+For\+State@{Wait\+For\+State}!mts\+Task@{mts\+Task}}
 \subsubsection[{Wait\+For\+State}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Task\+::\+Wait\+For\+State (
 \begin{DoxyParamCaption}
-\item[{mts\+Component\+State}]{desired\+State, }
+\item[{{\bf mts\+Component\+State}}]{desired\+State, }
 \item[{double}]{timeout}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classmts_task_a2153a26a4a92583bae49696501da212e}

@@ -118,9 +118,9 @@ bool \hyperlink{classmts_component_afee031d17dd144505bdb2400c20c787f}{Is\+Termin
 \item 
 bool \hyperlink{classmts_component_a9ea79bb1ef93b96f9caab0dd382fcd16}{Is\+End\+Task} (void) const 
 \item 
-const mts\+Component\+State \& \hyperlink{classmts_component_accc6e7dd1a32c10a4d3235f261b5fdcc}{Get\+State} (void) const 
+const \hyperlink{classmts_component_state}{mts\+Component\+State} \& \hyperlink{classmts_component_accc6e7dd1a32c10a4d3235f261b5fdcc}{Get\+State} (void) const 
 \item 
-void \hyperlink{classmts_component_a3a1956b97486a0ee89cc86c73004c9ce}{Get\+State} (mts\+Component\+State \&state) const 
+void \hyperlink{classmts_component_a3a1956b97486a0ee89cc86c73004c9ce}{Get\+State} (\hyperlink{classmts_component_state}{mts\+Component\+State} \&state) const 
 \item 
 void \hyperlink{classmts_component_aa654d2a0e1d1a9298ef2c8e5d69514df}{To\+Stream} (std\+::ostream \&output\+Stream) const 
 \item 
@@ -176,7 +176,7 @@ void \hyperlink{classmts_component_ae2f9fa8cd2b8081e1c6311cda35e0ef4}{Initialize
 \item 
 void \hyperlink{classmts_component_a88650abb8ed5890c29dc43668f1bccf4}{Kill\+Separate\+Log\+File} (void)
 \item 
-virtual bool \hyperlink{classmts_component_a936b8338f2c699abbf40faeaed3dff6e}{Wait\+For\+State} (mts\+Component\+State desired\+State, double timeout)
+virtual bool \hyperlink{classmts_component_a936b8338f2c699abbf40faeaed3dff6e}{Wait\+For\+State} (\hyperlink{classmts_component_state}{mts\+Component\+State} desired\+State, double timeout)
 \item 
 size\+\_\+t \hyperlink{classmts_component_a1012e9c56f4ad1e3e4ff50cf91597f63}{Process\+Mail\+Boxes} (\hyperlink{classmts_component_a1d4117bf122737abe5f943a7ce057ff6}{Interfaces\+Provided\+Map\+Type} \&interfaces)
 \item 
@@ -188,24 +188,24 @@ size\+\_\+t \hyperlink{classmts_component_a9d424fa33b3234ff3d2672b62e9f1675}{Pro
 \begin{DoxyCompactList}\small\item\em Enable support for dynamic component management services. \end{DoxyCompactList}\item 
 bool \hyperlink{classmts_component_af24429ddbfe7177fcfaf35482254f917}{Add\+Interface\+Internal} (const bool use\+Manger\+Component\+Services=false)
 \begin{DoxyCompactList}\small\item\em Add internal interfaces. \end{DoxyCompactList}\item 
-void \hyperlink{classmts_component_a4b1bf49f0edcbbe123e40399f971e494}{Interface\+Internal\+Commands\+\_\+\+Get\+End\+User\+Interface} (const mts\+End\+User\+Interface\+Arg \&argin, mts\+End\+User\+Interface\+Arg \&argout)
+void \hyperlink{classmts_component_a4b1bf49f0edcbbe123e40399f971e494}{Interface\+Internal\+Commands\+\_\+\+Get\+End\+User\+Interface} (const \hyperlink{classmts_end_user_interface_arg}{mts\+End\+User\+Interface\+Arg} \&argin, \hyperlink{classmts_end_user_interface_arg}{mts\+End\+User\+Interface\+Arg} \&argout)
 \item 
 void \hyperlink{classmts_component_ad9814156d7cd119f30b49671e38bbaf3}{Interface\+Internal\+Commands\+\_\+\+Add\+Observer\+List} (const \hyperlink{classmts_event_handler_list}{mts\+Event\+Handler\+List} \&argin, \hyperlink{classmts_event_handler_list}{mts\+Event\+Handler\+List} \&argout)
 \item 
-void \hyperlink{classmts_component_ab9c1d9ee9ee050e75b11b839f8516e1c}{Interface\+Internal\+Commands\+\_\+\+Remove\+End\+User\+Interface} (const mts\+End\+User\+Interface\+Arg \&argin, mts\+End\+User\+Interface\+Arg \&argout)
+void \hyperlink{classmts_component_ab9c1d9ee9ee050e75b11b839f8516e1c}{Interface\+Internal\+Commands\+\_\+\+Remove\+End\+User\+Interface} (const \hyperlink{classmts_end_user_interface_arg}{mts\+End\+User\+Interface\+Arg} \&argin, \hyperlink{classmts_end_user_interface_arg}{mts\+End\+User\+Interface\+Arg} \&argout)
 \item 
 void \hyperlink{classmts_component_a74c3b5c8d362b85ed84f36798aac7207}{Interface\+Internal\+Commands\+\_\+\+Remove\+Observer\+List} (const \hyperlink{classmts_event_handler_list}{mts\+Event\+Handler\+List} \&argin, \hyperlink{classmts_event_handler_list}{mts\+Event\+Handler\+List} \&argout)
 \item 
-void \hyperlink{classmts_component_a93427d2a73f3d1c2f965837a6eedc46d}{Interface\+Internal\+Commands\+\_\+\+Component\+Create} (const mts\+Description\+Component \&component\+Description, bool \&result)
+void \hyperlink{classmts_component_a93427d2a73f3d1c2f965837a6eedc46d}{Interface\+Internal\+Commands\+\_\+\+Component\+Create} (const \hyperlink{classmts_description_component}{mts\+Description\+Component} \&component\+Description, bool \&result)
 \item 
-void \hyperlink{classmts_component_a1df33090eed7cbc805482227a46fa365}{Interface\+Internal\+Commands\+\_\+\+Component\+Start\+Other} (const mts\+Component\+Status\+Control \&arg)
+void \hyperlink{classmts_component_a1df33090eed7cbc805482227a46fa365}{Interface\+Internal\+Commands\+\_\+\+Component\+Start\+Other} (const \hyperlink{classmts_component_status_control}{mts\+Component\+Status\+Control} \&arg)
 \end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
 std\+::string \hyperlink{classmts_component_a506cd73bf8afc8286ddf8d933b1b1658}{Name}
 \item 
-mts\+Component\+State \hyperlink{classmts_component_ac5352257c71985bc22cfa81e87f7f445}{State}
+\hyperlink{classmts_component_state}{mts\+Component\+State} \hyperlink{classmts_component_ac5352257c71985bc22cfa81e87f7f445}{State}
 \item 
 \hyperlink{classmts_interface_provided}{mts\+Interface\+Provided} $\ast$ \hyperlink{classmts_component_a6f9323d126ef72b6c3803abe4864b759}{Interface\+Provided\+To\+Manager}
 \item 
@@ -655,7 +655,7 @@ Get the total number of provided interfaces \hypertarget{classmts_component_a1e4
 ) const}\label{classmts_component_a1e4a567e217c8c36c3f4d76a6dcd64e7}
 Get the total number of required interfaces \hypertarget{classmts_component_accc6e7dd1a32c10a4d3235f261b5fdcc}{}\index{mts\+Component@{mts\+Component}!Get\+State@{Get\+State}}
 \index{Get\+State@{Get\+State}!mts\+Component@{mts\+Component}}
-\subsubsection[{Get\+State}]{\setlength{\rightskip}{0pt plus 5cm}const mts\+Component\+State\& mts\+Component\+::\+Get\+State (
+\subsubsection[{Get\+State}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf mts\+Component\+State}\& mts\+Component\+::\+Get\+State (
 \begin{DoxyParamCaption}
 \item[{void}]{}
 \end{DoxyParamCaption}
@@ -664,7 +664,7 @@ Return task state. \hypertarget{classmts_component_a3a1956b97486a0ee89cc86c73004
 \index{Get\+State@{Get\+State}!mts\+Component@{mts\+Component}}
 \subsubsection[{Get\+State}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Component\+::\+Get\+State (
 \begin{DoxyParamCaption}
-\item[{mts\+Component\+State \&}]{state}
+\item[{{\bf mts\+Component\+State} \&}]{state}
 \end{DoxyParamCaption}
 ) const}\label{classmts_component_a3a1956b97486a0ee89cc86c73004c9ce}
 \hypertarget{classmts_component_a2f16c864f392c4411f35e57fcc0ef4b7}{}\index{mts\+Component@{mts\+Component}!Get\+State\+Table@{Get\+State\+Table}}
@@ -701,7 +701,7 @@ Check if there is any interface with the given name \hypertarget{classmts_compon
 \index{Interface\+Internal\+Commands\+\_\+\+Component\+Create@{Interface\+Internal\+Commands\+\_\+\+Component\+Create}!mts\+Component@{mts\+Component}}
 \subsubsection[{Interface\+Internal\+Commands\+\_\+\+Component\+Create}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Component\+::\+Interface\+Internal\+Commands\+\_\+\+Component\+Create (
 \begin{DoxyParamCaption}
-\item[{const mts\+Description\+Component \&}]{component\+Description, }
+\item[{const {\bf mts\+Description\+Component} \&}]{component\+Description, }
 \item[{bool \&}]{result}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_component_a93427d2a73f3d1c2f965837a6eedc46d}
@@ -709,23 +709,23 @@ Check if there is any interface with the given name \hypertarget{classmts_compon
 \index{Interface\+Internal\+Commands\+\_\+\+Component\+Start\+Other@{Interface\+Internal\+Commands\+\_\+\+Component\+Start\+Other}!mts\+Component@{mts\+Component}}
 \subsubsection[{Interface\+Internal\+Commands\+\_\+\+Component\+Start\+Other}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Component\+::\+Interface\+Internal\+Commands\+\_\+\+Component\+Start\+Other (
 \begin{DoxyParamCaption}
-\item[{const mts\+Component\+Status\+Control \&}]{arg}
+\item[{const {\bf mts\+Component\+Status\+Control} \&}]{arg}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_component_a1df33090eed7cbc805482227a46fa365}
 \hypertarget{classmts_component_a4b1bf49f0edcbbe123e40399f971e494}{}\index{mts\+Component@{mts\+Component}!Interface\+Internal\+Commands\+\_\+\+Get\+End\+User\+Interface@{Interface\+Internal\+Commands\+\_\+\+Get\+End\+User\+Interface}}
 \index{Interface\+Internal\+Commands\+\_\+\+Get\+End\+User\+Interface@{Interface\+Internal\+Commands\+\_\+\+Get\+End\+User\+Interface}!mts\+Component@{mts\+Component}}
 \subsubsection[{Interface\+Internal\+Commands\+\_\+\+Get\+End\+User\+Interface}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Component\+::\+Interface\+Internal\+Commands\+\_\+\+Get\+End\+User\+Interface (
 \begin{DoxyParamCaption}
-\item[{const mts\+End\+User\+Interface\+Arg \&}]{argin, }
-\item[{mts\+End\+User\+Interface\+Arg \&}]{argout}
+\item[{const {\bf mts\+End\+User\+Interface\+Arg} \&}]{argin, }
+\item[{{\bf mts\+End\+User\+Interface\+Arg} \&}]{argout}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_component_a4b1bf49f0edcbbe123e40399f971e494}
 Internal commands to process command execution request coming from L\+C\+M (by invoking class methods) \hypertarget{classmts_component_ab9c1d9ee9ee050e75b11b839f8516e1c}{}\index{mts\+Component@{mts\+Component}!Interface\+Internal\+Commands\+\_\+\+Remove\+End\+User\+Interface@{Interface\+Internal\+Commands\+\_\+\+Remove\+End\+User\+Interface}}
 \index{Interface\+Internal\+Commands\+\_\+\+Remove\+End\+User\+Interface@{Interface\+Internal\+Commands\+\_\+\+Remove\+End\+User\+Interface}!mts\+Component@{mts\+Component}}
 \subsubsection[{Interface\+Internal\+Commands\+\_\+\+Remove\+End\+User\+Interface}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Component\+::\+Interface\+Internal\+Commands\+\_\+\+Remove\+End\+User\+Interface (
 \begin{DoxyParamCaption}
-\item[{const mts\+End\+User\+Interface\+Arg \&}]{argin, }
-\item[{mts\+End\+User\+Interface\+Arg \&}]{argout}
+\item[{const {\bf mts\+End\+User\+Interface\+Arg} \&}]{argin, }
+\item[{{\bf mts\+End\+User\+Interface\+Arg} \&}]{argout}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_component_ab9c1d9ee9ee050e75b11b839f8516e1c}
 \hypertarget{classmts_component_a74c3b5c8d362b85ed84f36798aac7207}{}\index{mts\+Component@{mts\+Component}!Interface\+Internal\+Commands\+\_\+\+Remove\+Observer\+List@{Interface\+Internal\+Commands\+\_\+\+Remove\+Observer\+List}}
@@ -955,7 +955,7 @@ Tells this component to use its own file for log. By default the messages are al
 \index{Wait\+For\+State@{Wait\+For\+State}!mts\+Component@{mts\+Component}}
 \subsubsection[{Wait\+For\+State}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool mts\+Component\+::\+Wait\+For\+State (
 \begin{DoxyParamCaption}
-\item[{mts\+Component\+State}]{desired\+State, }
+\item[{{\bf mts\+Component\+State}}]{desired\+State, }
 \item[{double}]{timeout}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classmts_component_a936b8338f2c699abbf40faeaed3dff6e}
@@ -1010,7 +1010,7 @@ A string identifying the \textquotesingle{}Name\textquotesingle{} of the compone
 \subsubsection[{Replay\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Component\+::\+Replay\+Mode\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_component_a1415d1093295a997b52d7c9d026fb5cc}
 \hypertarget{classmts_component_ac5352257c71985bc22cfa81e87f7f445}{}\index{mts\+Component@{mts\+Component}!State@{State}}
 \index{State@{State}!mts\+Component@{mts\+Component}}
-\subsubsection[{State}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Component\+State mts\+Component\+::\+State\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_component_ac5352257c71985bc22cfa81e87f7f445}
+\subsubsection[{State}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+Component\+State} mts\+Component\+::\+State\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_component_ac5352257c71985bc22cfa81e87f7f445}
 Component state. \hypertarget{classmts_component_abe07b3be754d3f14a8454b21f160b537}{}\index{mts\+Component@{mts\+Component}!State\+Tables@{State\+Tables}}
 \index{State\+Tables@{State\+Tables}!mts\+Component@{mts\+Component}}
 \subsubsection[{State\+Tables}]{\setlength{\rightskip}{0pt plus 5cm}{\bf State\+Table\+Map\+Type} mts\+Component\+::\+State\+Tables\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_component_abe07b3be754d3f14a8454b21f160b537}

@@ -25,7 +25,7 @@ var searchData=
   ['optimizerstatus',['OptimizerStatus',['../dd/dd1/classmts_robot_task.html#a3066e11973ad9a8371c36b12a0df2fa0',1,'mtsRobotTask']]],
   ['options',['Options',['../d7/de9/classcmn_command_line_options.html#a921f64221c35be2f04cb23d5d2a2952f',1,'cmnCommandLineOptions::Options()'],['../d6/d07/classnmr_l_s_e_i_solver.html#a543ee26ff54d6013059361219790c54b',1,'nmrLSEISolver::Options()']]],
   ['orientation',['Orientation',['../d9/de2/classmts3_dconnexion.html#afff4aa6e11a99251eaf021e9bba2047c',1,'mts3Dconnexion::Orientation()'],['../db/d62/classvct_qt_widget_rotation_open_g_l.html#ae9fd2c827d38e62e475257ce91261e20',1,'vctQtWidgetRotationOpenGL::orientation()'],['../df/d2e/structsvl_filter_tool_tracker_1_1___target_type.html#a8a69c9b0f6d7a51e35c0b9298786bfa0',1,'svlFilterToolTracker::_TargetType::orientation()']]],
-  ['originalinterface',['OriginalInterface',['../d9/d9d/classmts_interface_provided.html#aa3c7fd4efc804d522edf06f02aaf646e',1,'mtsInterfaceProvided']]],
+  ['originalinterface',['OriginalInterface',['../d4/dea/classmts_end_user_interface_arg.html#afcb9d3b4e1fa81a772d60480519232e6',1,'mtsEndUserInterfaceArg::OriginalInterface()'],['../d9/d9d/classmts_interface_provided.html#aa3c7fd4efc804d522edf06f02aaf646e',1,'mtsInterfaceProvided::OriginalInterface()']]],
   ['osa_5fcpu1',['OSA_CPU1',['../d6/d98/osa_c_p_u_affinity_8h.html#a42368c0860c5783b5b2f8192c953bc72',1,'osaCPUAffinity.h']]],
   ['osa_5fcpu10',['OSA_CPU10',['../d6/d98/osa_c_p_u_affinity_8h.html#abda6e711435bb042e8a162163657ab70',1,'osaCPUAffinity.h']]],
   ['osa_5fcpu11',['OSA_CPU11',['../d6/d98/osa_c_p_u_affinity_8h.html#a4a1e8f63a714ebcf8cacf79828d71726',1,'osaCPUAffinity.h']]],

@@ -1,0 +1,292 @@
+\hypertarget{classsvl_filter_source_video_capture_types_1_1_image_format}{}\section{svl\+Filter\+Source\+Video\+Capture\+Types\+:\+:Image\+Format Class Reference}
+\label{classsvl_filter_source_video_capture_types_1_1_image_format}\index{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format@{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format}}
+
+
+{\ttfamily \#include $<$svl\+Filter\+Source\+Video\+Capture\+Types.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsvl_filter_source_video_capture_types_1_1_image_format_ad09aa5e85464b4721e083c80fb309d9d}{Image\+Format} (void)
+\item 
+\hyperlink{classsvl_filter_source_video_capture_types_1_1_image_format_afc3363d068b9f2a5ae39794b66453f44}{Image\+Format} (const \hyperlink{classsvl_filter_source_video_capture_types_1_1_image_format}{Image\+Format} \&other)
+\item 
+\hyperlink{classsvl_filter_source_video_capture_types_1_1_image_format_a1a6dfaefb3838e1c63aa950ceee54138}{$\sim$\+Image\+Format} ()
+\item 
+void \hyperlink{classsvl_filter_source_video_capture_types_1_1_image_format_a8e5d7d3bddd7faeffdea2a4c700c2ae3}{Serialize\+Raw} (std\+::ostream \&output\+Stream) const 
+\item 
+void \hyperlink{classsvl_filter_source_video_capture_types_1_1_image_format_a22c39a8837ef03908ed5c4c8ebc5d374}{De\+Serialize\+Raw} (std\+::istream \&input\+Stream)
+\item 
+void \hyperlink{classsvl_filter_source_video_capture_types_1_1_image_format_a4fd41abc52537412f26f06762f680a33}{To\+Stream} (std\+::ostream \&output\+Stream) const 
+\item 
+void \hyperlink{classsvl_filter_source_video_capture_types_1_1_image_format_a516e93bf9a3668002888d49992cd55af}{To\+Stream\+Raw} (std\+::ostream \&output\+Stream, const char delimiter= \textquotesingle{} \textquotesingle{}, bool header\+Only=false, const std\+::string \&header\+Prefix=\char`\"{}\char`\"{}) const 
+\item 
+void \hyperlink{classsvl_filter_source_video_capture_types_1_1_image_format_a1f4f70055deccf48e610b642f6ce3019}{Copy} (const \hyperlink{classsvl_filter_source_video_capture_types_1_1_image_format}{Image\+Format} \&source)
+\item 
+void \hyperlink{classsvl_filter_source_video_capture_types_1_1_image_format_a68602d2348cca441cbc7a78464bf99d0}{Serialize\+Binary} (std\+::ostream \&output\+Stream) const   throw (std\+::runtime\+\_\+error)
+\item 
+void \hyperlink{classsvl_filter_source_video_capture_types_1_1_image_format_ad399aa52c8bf24bcf03da4c48749d156}{De\+Serialize\+Binary} (std\+::istream \&input\+Stream, const \hyperlink{classcmn_data_format}{cmn\+Data\+Format} \&local\+Format, const \hyperlink{classcmn_data_format}{cmn\+Data\+Format} \&remote\+Format)  throw (std\+::runtime\+\_\+error)
+\item 
+void \hyperlink{classsvl_filter_source_video_capture_types_1_1_image_format_ad5053766f20d355aa1254191315be533}{Serialize\+Text} (std\+::ostream \&output\+Stream, const char delimiter= \textquotesingle{},\textquotesingle{}) const   throw (std\+::runtime\+\_\+error)
+\item 
+std\+::string \hyperlink{classsvl_filter_source_video_capture_types_1_1_image_format_aaa3bb873f97073230e42744db6ccd451}{Serialize\+Description} (const char delimiter= \textquotesingle{},\textquotesingle{}, const std\+::string \&user\+Description=\char`\"{}\char`\"{}) const 
+\item 
+void \hyperlink{classsvl_filter_source_video_capture_types_1_1_image_format_af3302042bd2df124b6a50906cc843f08}{De\+Serialize\+Text} (std\+::istream \&input\+Stream, const char delimiter= \textquotesingle{},\textquotesingle{})  throw (std\+::runtime\+\_\+error)
+\item 
+std\+::string \hyperlink{classsvl_filter_source_video_capture_types_1_1_image_format_ab7601aa349baf7eaf949da851a2e7940}{Human\+Readable} (void) const 
+\item 
+bool \hyperlink{classsvl_filter_source_video_capture_types_1_1_image_format_ae65480e8368864e648f3d5fe01bbdab7}{Scalar\+Number\+Is\+Fixed} (void) const 
+\item 
+size\+\_\+t \hyperlink{classsvl_filter_source_video_capture_types_1_1_image_format_a32a644ef3b00e49e81ce88432d0cf6ec}{Scalar\+Number} (void) const 
+\item 
+double \hyperlink{classsvl_filter_source_video_capture_types_1_1_image_format_ac6dffb435777811c508559b339265b42}{Scalar} (const size\+\_\+t index) const   throw (std\+::out\+\_\+of\+\_\+range)
+\item 
+std\+::string \hyperlink{classsvl_filter_source_video_capture_types_1_1_image_format_afe864ddc07677340bf7b7c6b9aeb8cb8}{Scalar\+Description} (const size\+\_\+t index, const std\+::string \&user\+Description=\char`\"{}\char`\"{}) const   throw (std\+::out\+\_\+of\+\_\+range)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classsvl_filter_source_video_capture_types_1_1_image_format_a7c3d1c2c1fdfa3eb84d5e175bb62540f}{defaults}
+\item 
+unsigned int \hyperlink{classsvl_filter_source_video_capture_types_1_1_image_format_a240891b8edeff025cfc146a8bf0f10c8}{width}
+\item 
+unsigned int \hyperlink{classsvl_filter_source_video_capture_types_1_1_image_format_abb7d4da368b6bd7aea523163bece5d56}{height}
+\item 
+\hyperlink{namespacesvl_filter_source_video_capture_types_a6b2f5fb1010bb41e1fb7232f88fc515f}{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Pixel\+Type} \hyperlink{classsvl_filter_source_video_capture_types_1_1_image_format_a22a7b205fee2bf868890165f55c9b098}{colorspace}
+\item 
+double \hyperlink{classsvl_filter_source_video_capture_types_1_1_image_format_a1d13e39b8f47f5505b1aebeea7dfbbf4}{framerate}
+\item 
+bool \hyperlink{classsvl_filter_source_video_capture_types_1_1_image_format_a2fc3d0ae433e5def9e7f24d653ae8b47}{rgb\+\_\+order}
+\item 
+bool \hyperlink{classsvl_filter_source_video_capture_types_1_1_image_format_a7cbd79938ec75e77ea6cb6d8b0d414a0}{yuyv\+\_\+order}
+\item 
+int \hyperlink{classsvl_filter_source_video_capture_types_1_1_image_format_ab7168d8a514625e6d284515b6ce5260e}{custom\+\_\+mode}
+\item 
+unsigned int \hyperlink{classsvl_filter_source_video_capture_types_1_1_image_format_aa25b5c1bc445a3e4acfeb6b011914dc6}{custom\+\_\+roileft}
+\item 
+unsigned int \hyperlink{classsvl_filter_source_video_capture_types_1_1_image_format_acbbfb2564be79e788caff9b05119f725}{custom\+\_\+roitop}
+\item 
+unsigned int \hyperlink{classsvl_filter_source_video_capture_types_1_1_image_format_a596ab75ce0db32080b998848a16ff1b2}{custom\+\_\+framerate}
+\item 
+unsigned int \hyperlink{classsvl_filter_source_video_capture_types_1_1_image_format_ac9f69e49b8131198d899837d6905ad42}{custom\+\_\+maxwidth}
+\item 
+unsigned int \hyperlink{classsvl_filter_source_video_capture_types_1_1_image_format_aa23473103487ad59d5efc9b353b28f41}{custom\+\_\+maxheight}
+\item 
+unsigned int \hyperlink{classsvl_filter_source_video_capture_types_1_1_image_format_aff8e706d892c56f5464d883276d67598}{custom\+\_\+unitwidth}
+\item 
+unsigned int \hyperlink{classsvl_filter_source_video_capture_types_1_1_image_format_a86b715f7f8c492b57f37faddf5da95b6}{custom\+\_\+unitheight}
+\item 
+unsigned int \hyperlink{classsvl_filter_source_video_capture_types_1_1_image_format_a6bf2f9576510a7331db03b1c91ea780c}{custom\+\_\+unitleft}
+\item 
+unsigned int \hyperlink{classsvl_filter_source_video_capture_types_1_1_image_format_a26812d2ccf667df5f536615ffc4db887}{custom\+\_\+unittop}
+\item 
+\hyperlink{namespacesvl_filter_source_video_capture_types_a6b2f5fb1010bb41e1fb7232f88fc515f}{Pixel\+Type} \hyperlink{classsvl_filter_source_video_capture_types_1_1_image_format_a7177d015fafce8559862f411ff85b9d9}{custom\+\_\+colorspaces} \mbox{[}\hyperlink{namespacesvl_filter_source_video_capture_types_a6b2f5fb1010bb41e1fb7232f88fc515fa7359e65772a1ad89493b3c7145ac5ecc}{Pixel\+Type\+Count}\mbox{]}
+\item 
+\hyperlink{namespacesvl_filter_source_video_capture_types_a1c4eecd5680f271e0f58336666a69485}{Pattern\+Type} \hyperlink{classsvl_filter_source_video_capture_types_1_1_image_format_af48e4fcfa2e0d55073b7a2f804b82de5}{custom\+\_\+pattern}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classsvl_filter_source_video_capture_types_1_1_image_format_ad09aa5e85464b4721e083c80fb309d9d}{}\index{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format@{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format}!Image\+Format@{Image\+Format}}
+\index{Image\+Format@{Image\+Format}!svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format@{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format}}
+\subsubsection[{Image\+Format}]{\setlength{\rightskip}{0pt plus 5cm}svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format\+::\+Image\+Format (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classsvl_filter_source_video_capture_types_1_1_image_format_ad09aa5e85464b4721e083c80fb309d9d}
+\hypertarget{classsvl_filter_source_video_capture_types_1_1_image_format_afc3363d068b9f2a5ae39794b66453f44}{}\index{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format@{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format}!Image\+Format@{Image\+Format}}
+\index{Image\+Format@{Image\+Format}!svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format@{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format}}
+\subsubsection[{Image\+Format}]{\setlength{\rightskip}{0pt plus 5cm}svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format\+::\+Image\+Format (
+\begin{DoxyParamCaption}
+\item[{const {\bf Image\+Format} \&}]{other}
+\end{DoxyParamCaption}
+)}\label{classsvl_filter_source_video_capture_types_1_1_image_format_afc3363d068b9f2a5ae39794b66453f44}
+\hypertarget{classsvl_filter_source_video_capture_types_1_1_image_format_a1a6dfaefb3838e1c63aa950ceee54138}{}\index{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format@{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format}!````~Image\+Format@{$\sim$\+Image\+Format}}
+\index{````~Image\+Format@{$\sim$\+Image\+Format}!svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format@{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format}}
+\subsubsection[{$\sim$\+Image\+Format}]{\setlength{\rightskip}{0pt plus 5cm}svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format\+::$\sim$\+Image\+Format (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classsvl_filter_source_video_capture_types_1_1_image_format_a1a6dfaefb3838e1c63aa950ceee54138}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classsvl_filter_source_video_capture_types_1_1_image_format_a1f4f70055deccf48e610b642f6ce3019}{}\index{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format@{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format}!Copy@{Copy}}
+\index{Copy@{Copy}!svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format@{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format}}
+\subsubsection[{Copy}]{\setlength{\rightskip}{0pt plus 5cm}void svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format\+::\+Copy (
+\begin{DoxyParamCaption}
+\item[{const {\bf Image\+Format} \&}]{source}
+\end{DoxyParamCaption}
+)}\label{classsvl_filter_source_video_capture_types_1_1_image_format_a1f4f70055deccf48e610b642f6ce3019}
+\hypertarget{classsvl_filter_source_video_capture_types_1_1_image_format_ad399aa52c8bf24bcf03da4c48749d156}{}\index{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format@{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format}!De\+Serialize\+Binary@{De\+Serialize\+Binary}}
+\index{De\+Serialize\+Binary@{De\+Serialize\+Binary}!svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format@{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format}}
+\subsubsection[{De\+Serialize\+Binary}]{\setlength{\rightskip}{0pt plus 5cm}void svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format\+::\+De\+Serialize\+Binary (
+\begin{DoxyParamCaption}
+\item[{std\+::istream \&}]{input\+Stream, }
+\item[{const {\bf cmn\+Data\+Format} \&}]{local\+Format, }
+\item[{const {\bf cmn\+Data\+Format} \&}]{remote\+Format}
+\end{DoxyParamCaption}
+) throw  std\+::runtime\+\_\+error) }\label{classsvl_filter_source_video_capture_types_1_1_image_format_ad399aa52c8bf24bcf03da4c48749d156}
+\hypertarget{classsvl_filter_source_video_capture_types_1_1_image_format_a22c39a8837ef03908ed5c4c8ebc5d374}{}\index{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format@{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format}!De\+Serialize\+Raw@{De\+Serialize\+Raw}}
+\index{De\+Serialize\+Raw@{De\+Serialize\+Raw}!svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format@{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format}}
+\subsubsection[{De\+Serialize\+Raw}]{\setlength{\rightskip}{0pt plus 5cm}void svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format\+::\+De\+Serialize\+Raw (
+\begin{DoxyParamCaption}
+\item[{std\+::istream \&}]{input\+Stream}
+\end{DoxyParamCaption}
+)}\label{classsvl_filter_source_video_capture_types_1_1_image_format_a22c39a8837ef03908ed5c4c8ebc5d374}
+\hypertarget{classsvl_filter_source_video_capture_types_1_1_image_format_af3302042bd2df124b6a50906cc843f08}{}\index{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format@{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format}!De\+Serialize\+Text@{De\+Serialize\+Text}}
+\index{De\+Serialize\+Text@{De\+Serialize\+Text}!svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format@{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format}}
+\subsubsection[{De\+Serialize\+Text}]{\setlength{\rightskip}{0pt plus 5cm}void svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format\+::\+De\+Serialize\+Text (
+\begin{DoxyParamCaption}
+\item[{std\+::istream \&}]{input\+Stream, }
+\item[{const char}]{delimiter = {\ttfamily \textquotesingle{},\textquotesingle{}}}
+\end{DoxyParamCaption}
+) throw  std\+::runtime\+\_\+error) }\label{classsvl_filter_source_video_capture_types_1_1_image_format_af3302042bd2df124b6a50906cc843f08}
+\hypertarget{classsvl_filter_source_video_capture_types_1_1_image_format_ab7601aa349baf7eaf949da851a2e7940}{}\index{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format@{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format}!Human\+Readable@{Human\+Readable}}
+\index{Human\+Readable@{Human\+Readable}!svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format@{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format}}
+\subsubsection[{Human\+Readable}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format\+::\+Human\+Readable (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classsvl_filter_source_video_capture_types_1_1_image_format_ab7601aa349baf7eaf949da851a2e7940}
+\hypertarget{classsvl_filter_source_video_capture_types_1_1_image_format_ac6dffb435777811c508559b339265b42}{}\index{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format@{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format}!Scalar@{Scalar}}
+\index{Scalar@{Scalar}!svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format@{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format}}
+\subsubsection[{Scalar}]{\setlength{\rightskip}{0pt plus 5cm}double svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format\+::\+Scalar (
+\begin{DoxyParamCaption}
+\item[{const size\+\_\+t}]{index}
+\end{DoxyParamCaption}
+) const throw  std\+::out\+\_\+of\+\_\+range) }\label{classsvl_filter_source_video_capture_types_1_1_image_format_ac6dffb435777811c508559b339265b42}
+\hypertarget{classsvl_filter_source_video_capture_types_1_1_image_format_afe864ddc07677340bf7b7c6b9aeb8cb8}{}\index{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format@{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format}!Scalar\+Description@{Scalar\+Description}}
+\index{Scalar\+Description@{Scalar\+Description}!svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format@{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format}}
+\subsubsection[{Scalar\+Description}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format\+::\+Scalar\+Description (
+\begin{DoxyParamCaption}
+\item[{const size\+\_\+t}]{index, }
+\item[{const std\+::string \&}]{user\+Description = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+) const throw  std\+::out\+\_\+of\+\_\+range) }\label{classsvl_filter_source_video_capture_types_1_1_image_format_afe864ddc07677340bf7b7c6b9aeb8cb8}
+\hypertarget{classsvl_filter_source_video_capture_types_1_1_image_format_a32a644ef3b00e49e81ce88432d0cf6ec}{}\index{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format@{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format}!Scalar\+Number@{Scalar\+Number}}
+\index{Scalar\+Number@{Scalar\+Number}!svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format@{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format}}
+\subsubsection[{Scalar\+Number}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format\+::\+Scalar\+Number (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classsvl_filter_source_video_capture_types_1_1_image_format_a32a644ef3b00e49e81ce88432d0cf6ec}
+\hypertarget{classsvl_filter_source_video_capture_types_1_1_image_format_ae65480e8368864e648f3d5fe01bbdab7}{}\index{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format@{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format}!Scalar\+Number\+Is\+Fixed@{Scalar\+Number\+Is\+Fixed}}
+\index{Scalar\+Number\+Is\+Fixed@{Scalar\+Number\+Is\+Fixed}!svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format@{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format}}
+\subsubsection[{Scalar\+Number\+Is\+Fixed}]{\setlength{\rightskip}{0pt plus 5cm}bool svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format\+::\+Scalar\+Number\+Is\+Fixed (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classsvl_filter_source_video_capture_types_1_1_image_format_ae65480e8368864e648f3d5fe01bbdab7}
+\hypertarget{classsvl_filter_source_video_capture_types_1_1_image_format_a68602d2348cca441cbc7a78464bf99d0}{}\index{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format@{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format}!Serialize\+Binary@{Serialize\+Binary}}
+\index{Serialize\+Binary@{Serialize\+Binary}!svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format@{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format}}
+\subsubsection[{Serialize\+Binary}]{\setlength{\rightskip}{0pt plus 5cm}void svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format\+::\+Serialize\+Binary (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{output\+Stream}
+\end{DoxyParamCaption}
+) const throw  std\+::runtime\+\_\+error) }\label{classsvl_filter_source_video_capture_types_1_1_image_format_a68602d2348cca441cbc7a78464bf99d0}
+\hypertarget{classsvl_filter_source_video_capture_types_1_1_image_format_aaa3bb873f97073230e42744db6ccd451}{}\index{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format@{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format}!Serialize\+Description@{Serialize\+Description}}
+\index{Serialize\+Description@{Serialize\+Description}!svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format@{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format}}
+\subsubsection[{Serialize\+Description}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format\+::\+Serialize\+Description (
+\begin{DoxyParamCaption}
+\item[{const char}]{delimiter = {\ttfamily \textquotesingle{},\textquotesingle{}}, }
+\item[{const std\+::string \&}]{user\+Description = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+) const}\label{classsvl_filter_source_video_capture_types_1_1_image_format_aaa3bb873f97073230e42744db6ccd451}
+\hypertarget{classsvl_filter_source_video_capture_types_1_1_image_format_a8e5d7d3bddd7faeffdea2a4c700c2ae3}{}\index{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format@{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format}!Serialize\+Raw@{Serialize\+Raw}}
+\index{Serialize\+Raw@{Serialize\+Raw}!svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format@{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format}}
+\subsubsection[{Serialize\+Raw}]{\setlength{\rightskip}{0pt plus 5cm}void svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format\+::\+Serialize\+Raw (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{output\+Stream}
+\end{DoxyParamCaption}
+) const}\label{classsvl_filter_source_video_capture_types_1_1_image_format_a8e5d7d3bddd7faeffdea2a4c700c2ae3}
+\hypertarget{classsvl_filter_source_video_capture_types_1_1_image_format_ad5053766f20d355aa1254191315be533}{}\index{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format@{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format}!Serialize\+Text@{Serialize\+Text}}
+\index{Serialize\+Text@{Serialize\+Text}!svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format@{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format}}
+\subsubsection[{Serialize\+Text}]{\setlength{\rightskip}{0pt plus 5cm}void svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format\+::\+Serialize\+Text (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{output\+Stream, }
+\item[{const char}]{delimiter = {\ttfamily \textquotesingle{},\textquotesingle{}}}
+\end{DoxyParamCaption}
+) const throw  std\+::runtime\+\_\+error) }\label{classsvl_filter_source_video_capture_types_1_1_image_format_ad5053766f20d355aa1254191315be533}
+\hypertarget{classsvl_filter_source_video_capture_types_1_1_image_format_a4fd41abc52537412f26f06762f680a33}{}\index{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format@{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format}!To\+Stream@{To\+Stream}}
+\index{To\+Stream@{To\+Stream}!svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format@{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format}}
+\subsubsection[{To\+Stream}]{\setlength{\rightskip}{0pt plus 5cm}void svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format\+::\+To\+Stream (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{output\+Stream}
+\end{DoxyParamCaption}
+) const}\label{classsvl_filter_source_video_capture_types_1_1_image_format_a4fd41abc52537412f26f06762f680a33}
+\hypertarget{classsvl_filter_source_video_capture_types_1_1_image_format_a516e93bf9a3668002888d49992cd55af}{}\index{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format@{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format}!To\+Stream\+Raw@{To\+Stream\+Raw}}
+\index{To\+Stream\+Raw@{To\+Stream\+Raw}!svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format@{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format}}
+\subsubsection[{To\+Stream\+Raw}]{\setlength{\rightskip}{0pt plus 5cm}void svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format\+::\+To\+Stream\+Raw (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{output\+Stream, }
+\item[{const char}]{delimiter = {\ttfamily \textquotesingle{}~\textquotesingle{}}, }
+\item[{bool}]{header\+Only = {\ttfamily false}, }
+\item[{const std\+::string \&}]{header\+Prefix = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+) const}\label{classsvl_filter_source_video_capture_types_1_1_image_format_a516e93bf9a3668002888d49992cd55af}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classsvl_filter_source_video_capture_types_1_1_image_format_a22a7b205fee2bf868890165f55c9b098}{}\index{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format@{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format}!colorspace@{colorspace}}
+\index{colorspace@{colorspace}!svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format@{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format}}
+\subsubsection[{colorspace}]{\setlength{\rightskip}{0pt plus 5cm}{\bf svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Pixel\+Type} svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format\+::colorspace}\label{classsvl_filter_source_video_capture_types_1_1_image_format_a22a7b205fee2bf868890165f55c9b098}
+\hypertarget{classsvl_filter_source_video_capture_types_1_1_image_format_a7177d015fafce8559862f411ff85b9d9}{}\index{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format@{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format}!custom\+\_\+colorspaces@{custom\+\_\+colorspaces}}
+\index{custom\+\_\+colorspaces@{custom\+\_\+colorspaces}!svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format@{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format}}
+\subsubsection[{custom\+\_\+colorspaces}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Pixel\+Type} svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format\+::custom\+\_\+colorspaces\mbox{[}{\bf Pixel\+Type\+Count}\mbox{]}}\label{classsvl_filter_source_video_capture_types_1_1_image_format_a7177d015fafce8559862f411ff85b9d9}
+\hypertarget{classsvl_filter_source_video_capture_types_1_1_image_format_a596ab75ce0db32080b998848a16ff1b2}{}\index{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format@{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format}!custom\+\_\+framerate@{custom\+\_\+framerate}}
+\index{custom\+\_\+framerate@{custom\+\_\+framerate}!svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format@{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format}}
+\subsubsection[{custom\+\_\+framerate}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format\+::custom\+\_\+framerate}\label{classsvl_filter_source_video_capture_types_1_1_image_format_a596ab75ce0db32080b998848a16ff1b2}
+\hypertarget{classsvl_filter_source_video_capture_types_1_1_image_format_aa23473103487ad59d5efc9b353b28f41}{}\index{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format@{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format}!custom\+\_\+maxheight@{custom\+\_\+maxheight}}
+\index{custom\+\_\+maxheight@{custom\+\_\+maxheight}!svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format@{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format}}
+\subsubsection[{custom\+\_\+maxheight}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format\+::custom\+\_\+maxheight}\label{classsvl_filter_source_video_capture_types_1_1_image_format_aa23473103487ad59d5efc9b353b28f41}
+\hypertarget{classsvl_filter_source_video_capture_types_1_1_image_format_ac9f69e49b8131198d899837d6905ad42}{}\index{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format@{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format}!custom\+\_\+maxwidth@{custom\+\_\+maxwidth}}
+\index{custom\+\_\+maxwidth@{custom\+\_\+maxwidth}!svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format@{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format}}
+\subsubsection[{custom\+\_\+maxwidth}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format\+::custom\+\_\+maxwidth}\label{classsvl_filter_source_video_capture_types_1_1_image_format_ac9f69e49b8131198d899837d6905ad42}
+\hypertarget{classsvl_filter_source_video_capture_types_1_1_image_format_ab7168d8a514625e6d284515b6ce5260e}{}\index{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format@{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format}!custom\+\_\+mode@{custom\+\_\+mode}}
+\index{custom\+\_\+mode@{custom\+\_\+mode}!svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format@{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format}}
+\subsubsection[{custom\+\_\+mode}]{\setlength{\rightskip}{0pt plus 5cm}int svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format\+::custom\+\_\+mode}\label{classsvl_filter_source_video_capture_types_1_1_image_format_ab7168d8a514625e6d284515b6ce5260e}
+\hypertarget{classsvl_filter_source_video_capture_types_1_1_image_format_af48e4fcfa2e0d55073b7a2f804b82de5}{}\index{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format@{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format}!custom\+\_\+pattern@{custom\+\_\+pattern}}
+\index{custom\+\_\+pattern@{custom\+\_\+pattern}!svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format@{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format}}
+\subsubsection[{custom\+\_\+pattern}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Pattern\+Type} svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format\+::custom\+\_\+pattern}\label{classsvl_filter_source_video_capture_types_1_1_image_format_af48e4fcfa2e0d55073b7a2f804b82de5}
+\hypertarget{classsvl_filter_source_video_capture_types_1_1_image_format_aa25b5c1bc445a3e4acfeb6b011914dc6}{}\index{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format@{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format}!custom\+\_\+roileft@{custom\+\_\+roileft}}
+\index{custom\+\_\+roileft@{custom\+\_\+roileft}!svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format@{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format}}
+\subsubsection[{custom\+\_\+roileft}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format\+::custom\+\_\+roileft}\label{classsvl_filter_source_video_capture_types_1_1_image_format_aa25b5c1bc445a3e4acfeb6b011914dc6}
+\hypertarget{classsvl_filter_source_video_capture_types_1_1_image_format_acbbfb2564be79e788caff9b05119f725}{}\index{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format@{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format}!custom\+\_\+roitop@{custom\+\_\+roitop}}
+\index{custom\+\_\+roitop@{custom\+\_\+roitop}!svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format@{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format}}
+\subsubsection[{custom\+\_\+roitop}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format\+::custom\+\_\+roitop}\label{classsvl_filter_source_video_capture_types_1_1_image_format_acbbfb2564be79e788caff9b05119f725}
+\hypertarget{classsvl_filter_source_video_capture_types_1_1_image_format_a86b715f7f8c492b57f37faddf5da95b6}{}\index{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format@{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format}!custom\+\_\+unitheight@{custom\+\_\+unitheight}}
+\index{custom\+\_\+unitheight@{custom\+\_\+unitheight}!svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format@{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format}}
+\subsubsection[{custom\+\_\+unitheight}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format\+::custom\+\_\+unitheight}\label{classsvl_filter_source_video_capture_types_1_1_image_format_a86b715f7f8c492b57f37faddf5da95b6}
+\hypertarget{classsvl_filter_source_video_capture_types_1_1_image_format_a6bf2f9576510a7331db03b1c91ea780c}{}\index{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format@{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format}!custom\+\_\+unitleft@{custom\+\_\+unitleft}}
+\index{custom\+\_\+unitleft@{custom\+\_\+unitleft}!svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format@{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format}}
+\subsubsection[{custom\+\_\+unitleft}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format\+::custom\+\_\+unitleft}\label{classsvl_filter_source_video_capture_types_1_1_image_format_a6bf2f9576510a7331db03b1c91ea780c}
+\hypertarget{classsvl_filter_source_video_capture_types_1_1_image_format_a26812d2ccf667df5f536615ffc4db887}{}\index{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format@{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format}!custom\+\_\+unittop@{custom\+\_\+unittop}}
+\index{custom\+\_\+unittop@{custom\+\_\+unittop}!svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format@{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format}}
+\subsubsection[{custom\+\_\+unittop}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format\+::custom\+\_\+unittop}\label{classsvl_filter_source_video_capture_types_1_1_image_format_a26812d2ccf667df5f536615ffc4db887}
+\hypertarget{classsvl_filter_source_video_capture_types_1_1_image_format_aff8e706d892c56f5464d883276d67598}{}\index{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format@{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format}!custom\+\_\+unitwidth@{custom\+\_\+unitwidth}}
+\index{custom\+\_\+unitwidth@{custom\+\_\+unitwidth}!svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format@{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format}}
+\subsubsection[{custom\+\_\+unitwidth}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format\+::custom\+\_\+unitwidth}\label{classsvl_filter_source_video_capture_types_1_1_image_format_aff8e706d892c56f5464d883276d67598}
+\hypertarget{classsvl_filter_source_video_capture_types_1_1_image_format_a7c3d1c2c1fdfa3eb84d5e175bb62540f}{}\index{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format@{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format}!defaults@{defaults}}
+\index{defaults@{defaults}!svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format@{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format}}
+\subsubsection[{defaults}]{\setlength{\rightskip}{0pt plus 5cm}bool svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format\+::defaults}\label{classsvl_filter_source_video_capture_types_1_1_image_format_a7c3d1c2c1fdfa3eb84d5e175bb62540f}
+\hypertarget{classsvl_filter_source_video_capture_types_1_1_image_format_a1d13e39b8f47f5505b1aebeea7dfbbf4}{}\index{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format@{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format}!framerate@{framerate}}
+\index{framerate@{framerate}!svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format@{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format}}
+\subsubsection[{framerate}]{\setlength{\rightskip}{0pt plus 5cm}double svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format\+::framerate}\label{classsvl_filter_source_video_capture_types_1_1_image_format_a1d13e39b8f47f5505b1aebeea7dfbbf4}
+\hypertarget{classsvl_filter_source_video_capture_types_1_1_image_format_abb7d4da368b6bd7aea523163bece5d56}{}\index{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format@{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format}!height@{height}}
+\index{height@{height}!svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format@{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format}}
+\subsubsection[{height}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format\+::height}\label{classsvl_filter_source_video_capture_types_1_1_image_format_abb7d4da368b6bd7aea523163bece5d56}
+\hypertarget{classsvl_filter_source_video_capture_types_1_1_image_format_a2fc3d0ae433e5def9e7f24d653ae8b47}{}\index{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format@{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format}!rgb\+\_\+order@{rgb\+\_\+order}}
+\index{rgb\+\_\+order@{rgb\+\_\+order}!svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format@{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format}}
+\subsubsection[{rgb\+\_\+order}]{\setlength{\rightskip}{0pt plus 5cm}bool svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format\+::rgb\+\_\+order}\label{classsvl_filter_source_video_capture_types_1_1_image_format_a2fc3d0ae433e5def9e7f24d653ae8b47}
+\hypertarget{classsvl_filter_source_video_capture_types_1_1_image_format_a240891b8edeff025cfc146a8bf0f10c8}{}\index{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format@{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format}!width@{width}}
+\index{width@{width}!svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format@{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format}}
+\subsubsection[{width}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format\+::width}\label{classsvl_filter_source_video_capture_types_1_1_image_format_a240891b8edeff025cfc146a8bf0f10c8}
+\hypertarget{classsvl_filter_source_video_capture_types_1_1_image_format_a7cbd79938ec75e77ea6cb6d8b0d414a0}{}\index{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format@{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format}!yuyv\+\_\+order@{yuyv\+\_\+order}}
+\index{yuyv\+\_\+order@{yuyv\+\_\+order}!svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format@{svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format}}
+\subsubsection[{yuyv\+\_\+order}]{\setlength{\rightskip}{0pt plus 5cm}bool svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format\+::yuyv\+\_\+order}\label{classsvl_filter_source_video_capture_types_1_1_image_format_a7cbd79938ec75e77ea6cb6d8b0d414a0}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw-\/build/cisst/include/cisst\+Stereo\+Vision/\hyperlink{svl_filter_source_video_capture_types_8h}{svl\+Filter\+Source\+Video\+Capture\+Types.\+h}\end{DoxyCompactItemize}

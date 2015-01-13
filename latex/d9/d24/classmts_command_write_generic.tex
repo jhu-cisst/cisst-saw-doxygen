@@ -28,9 +28,9 @@ typedef void(\+\_\+class\+Type\+::$\ast$ \hyperlink{classmts_command_write_gener
 \item 
 virtual \hyperlink{classmts_command_write_generic_a83dcabde23ba9c1f67af37643ebb4638}{$\sim$mts\+Command\+Write\+Generic} ()
 \item 
-mts\+Execution\+Result \hyperlink{classmts_command_write_generic_a00ebcfefb63ba9751f70bacb93d77cd6}{Execute} (const \hyperlink{classmts_generic_object}{mts\+Generic\+Object} \&argument, \hyperlink{mts_forward_declarations_8h_ad7426ccb6c883bc780d0ee197dddcbe7}{mts\+Blocking\+Type} \hyperlink{cmn_portability_8h_a021894e2626935fa2305434b1e893ff6}{C\+M\+N\+\_\+\+U\+N\+U\+S\+E\+D}(blocking))
+\hyperlink{classmts_execution_result}{mts\+Execution\+Result} \hyperlink{classmts_command_write_generic_a00ebcfefb63ba9751f70bacb93d77cd6}{Execute} (const \hyperlink{classmts_generic_object}{mts\+Generic\+Object} \&argument, \hyperlink{mts_forward_declarations_8h_ad7426ccb6c883bc780d0ee197dddcbe7}{mts\+Blocking\+Type} \hyperlink{cmn_portability_8h_a021894e2626935fa2305434b1e893ff6}{C\+M\+N\+\_\+\+U\+N\+U\+S\+E\+D}(blocking))
 \item 
-mts\+Execution\+Result \hyperlink{classmts_command_write_generic_a7cfd8681dcf0ee2effc60c5c1f61c5c3}{Execute} (const \hyperlink{classmts_generic_object}{mts\+Generic\+Object} \&argument, \hyperlink{mts_forward_declarations_8h_ad7426ccb6c883bc780d0ee197dddcbe7}{mts\+Blocking\+Type} blocking, \hyperlink{classmts_command_write_base}{mts\+Command\+Write\+Base} $\ast$\hyperlink{cmn_portability_8h_a021894e2626935fa2305434b1e893ff6}{C\+M\+N\+\_\+\+U\+N\+U\+S\+E\+D}(finished\+Event\+Handler))
+\hyperlink{classmts_execution_result}{mts\+Execution\+Result} \hyperlink{classmts_command_write_generic_a7cfd8681dcf0ee2effc60c5c1f61c5c3}{Execute} (const \hyperlink{classmts_generic_object}{mts\+Generic\+Object} \&argument, \hyperlink{mts_forward_declarations_8h_ad7426ccb6c883bc780d0ee197dddcbe7}{mts\+Blocking\+Type} blocking, \hyperlink{classmts_command_write_base}{mts\+Command\+Write\+Base} $\ast$\hyperlink{cmn_portability_8h_a021894e2626935fa2305434b1e893ff6}{C\+M\+N\+\_\+\+U\+N\+U\+S\+E\+D}(finished\+Event\+Handler))
 \item 
 void \hyperlink{classmts_command_write_generic_aac58e354ab9ce4e1e088bb3089093521}{To\+Stream} (std\+::ostream \&output\+Stream) const 
 \end{DoxyCompactItemize}
@@ -93,7 +93,7 @@ The destructor. Does nothing
 \subsection{Member Function Documentation}
 \hypertarget{classmts_command_write_generic_a00ebcfefb63ba9751f70bacb93d77cd6}{}\index{mts\+Command\+Write\+Generic@{mts\+Command\+Write\+Generic}!Execute@{Execute}}
 \index{Execute@{Execute}!mts\+Command\+Write\+Generic@{mts\+Command\+Write\+Generic}}
-\subsubsection[{Execute}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+class\+Type$>$ mts\+Execution\+Result {\bf mts\+Command\+Write\+Generic}$<$ \+\_\+class\+Type $>$\+::Execute (
+\subsubsection[{Execute}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+class\+Type$>$ {\bf mts\+Execution\+Result} {\bf mts\+Command\+Write\+Generic}$<$ \+\_\+class\+Type $>$\+::Execute (
 \begin{DoxyParamCaption}
 \item[{const {\bf mts\+Generic\+Object} \&}]{argument, }
 \item[{{\bf mts\+Blocking\+Type} }]{C\+M\+N\+\_\+\+U\+N\+U\+S\+E\+Dblocking}
@@ -106,7 +106,7 @@ The execute method. Calling the execute method from the invoker applies the oper
 \end{DoxyParams}
 \hypertarget{classmts_command_write_generic_a7cfd8681dcf0ee2effc60c5c1f61c5c3}{}\index{mts\+Command\+Write\+Generic@{mts\+Command\+Write\+Generic}!Execute@{Execute}}
 \index{Execute@{Execute}!mts\+Command\+Write\+Generic@{mts\+Command\+Write\+Generic}}
-\subsubsection[{Execute}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+class\+Type$>$ mts\+Execution\+Result {\bf mts\+Command\+Write\+Generic}$<$ \+\_\+class\+Type $>$\+::Execute (
+\subsubsection[{Execute}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+class\+Type$>$ {\bf mts\+Execution\+Result} {\bf mts\+Command\+Write\+Generic}$<$ \+\_\+class\+Type $>$\+::Execute (
 \begin{DoxyParamCaption}
 \item[{const {\bf mts\+Generic\+Object} \&}]{argument, }
 \item[{{\bf mts\+Blocking\+Type}}]{blocking, }
@@ -125,7 +125,7 @@ The execute method. Method may be implemented by derived classes to run the actu
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-the execution result (mts\+Execution\+Result) 
+the execution result (\hyperlink{classmts_execution_result}{mts\+Execution\+Result}) 
 \end{DoxyReturn}
 
 

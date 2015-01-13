@@ -1,0 +1,155 @@
+\hypertarget{classcmn_data_3_01mts_description_connection_01_4}{}\section{cmn\+Data$<$ mts\+Description\+Connection $>$ Class Template Reference}
+\label{classcmn_data_3_01mts_description_connection_01_4}\index{cmn\+Data$<$ mts\+Description\+Connection $>$@{cmn\+Data$<$ mts\+Description\+Connection $>$}}
+
+
+{\ttfamily \#include $<$mts\+Parameter\+Types.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \hyperlink{classcmn_data_3_01mts_description_connection_01_4_aaa0116aa4e31f4127587d4fae40433a5a7b0c948b9ee14c84663770cf2547cbe6}{I\+S\+\_\+\+S\+P\+E\+C\+I\+A\+L\+I\+Z\+E\+D} = 1
+ \}
+\item 
+typedef \hyperlink{classmts_description_connection}{mts\+Description\+Connection} \hyperlink{classcmn_data_3_01mts_description_connection_01_4_ab5515cf136f07ae656b44ade675282a9}{Data\+Type}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{classcmn_data_3_01mts_description_connection_01_4_ab2d07c37ac58216c2e305e1d31dc2e00}{Copy} (\hyperlink{classcmn_data_3_01mts_description_connection_01_4_ab5515cf136f07ae656b44ade675282a9}{Data\+Type} \&data, const \hyperlink{classcmn_data_3_01mts_description_connection_01_4_ab5515cf136f07ae656b44ade675282a9}{Data\+Type} \&source)
+\item 
+static std\+::string \hyperlink{classcmn_data_3_01mts_description_connection_01_4_aef76c2239c07ff81d89e228be61310c8}{Serialize\+Description} (const \hyperlink{classcmn_data_3_01mts_description_connection_01_4_ab5515cf136f07ae656b44ade675282a9}{Data\+Type} \&data, const char delimiter, const std\+::string \&user\+Description)
+\item 
+static void \hyperlink{classcmn_data_3_01mts_description_connection_01_4_a4d99935a16742c5db40fbaa0730d47c1}{Serialize\+Binary} (const \hyperlink{classcmn_data_3_01mts_description_connection_01_4_ab5515cf136f07ae656b44ade675282a9}{Data\+Type} \&data, std\+::ostream \&output\+Stream)  throw (std\+::runtime\+\_\+error)
+\item 
+static void \hyperlink{classcmn_data_3_01mts_description_connection_01_4_aa33c905f00f38819afbbd14189ca93df}{De\+Serialize\+Binary} (\hyperlink{classcmn_data_3_01mts_description_connection_01_4_ab5515cf136f07ae656b44ade675282a9}{Data\+Type} \&data, std\+::istream \&input\+Stream, const \hyperlink{classcmn_data_format}{cmn\+Data\+Format} \&local\+Format, const \hyperlink{classcmn_data_format}{cmn\+Data\+Format} \&remote\+Format)  throw (std\+::runtime\+\_\+error)
+\item 
+static void \hyperlink{classcmn_data_3_01mts_description_connection_01_4_aa4f9e936035d6bd1a93a905d9fe15d4c}{Serialize\+Text} (const \hyperlink{classcmn_data_3_01mts_description_connection_01_4_ab5515cf136f07ae656b44ade675282a9}{Data\+Type} \&data, std\+::ostream \&output\+Stream, const char delimiter= \textquotesingle{},\textquotesingle{})  throw (std\+::runtime\+\_\+error)
+\item 
+static void \hyperlink{classcmn_data_3_01mts_description_connection_01_4_ac841595aca5bbfe10cebc7510e4ca55a}{De\+Serialize\+Text} (\hyperlink{classcmn_data_3_01mts_description_connection_01_4_ab5515cf136f07ae656b44ade675282a9}{Data\+Type} \&data, std\+::istream \&input\+Stream, const char delimiter= \textquotesingle{},\textquotesingle{})  throw (std\+::runtime\+\_\+error)
+\item 
+static std\+::string \hyperlink{classcmn_data_3_01mts_description_connection_01_4_a33941d5eb332171110836f8eca39f43b}{Human\+Readable} (const \hyperlink{classcmn_data_3_01mts_description_connection_01_4_ab5515cf136f07ae656b44ade675282a9}{Data\+Type} \&data)
+\item 
+static bool \hyperlink{classcmn_data_3_01mts_description_connection_01_4_af5f3939c268708bed21144c50eccbfe8}{Scalar\+Number\+Is\+Fixed} (const \hyperlink{classcmn_data_3_01mts_description_connection_01_4_ab5515cf136f07ae656b44ade675282a9}{Data\+Type} \&data)
+\item 
+static size\+\_\+t \hyperlink{classcmn_data_3_01mts_description_connection_01_4_a2e8e2761a6dff74abc7675eb3fee8c54}{Scalar\+Number} (const \hyperlink{classcmn_data_3_01mts_description_connection_01_4_ab5515cf136f07ae656b44ade675282a9}{Data\+Type} \&data)
+\item 
+static std\+::string \hyperlink{classcmn_data_3_01mts_description_connection_01_4_a3e9a5fc18c1c27514a9cd3a3731fa07f}{Scalar\+Description} (const \hyperlink{classcmn_data_3_01mts_description_connection_01_4_ab5515cf136f07ae656b44ade675282a9}{Data\+Type} \&data, const size\+\_\+t index, const std\+::string \&user\+Description=\char`\"{}\char`\"{})  throw (std\+::out\+\_\+of\+\_\+range)
+\item 
+static double \hyperlink{classcmn_data_3_01mts_description_connection_01_4_a0694e8b669097064d4857b402bb2a11b}{Scalar} (const \hyperlink{classcmn_data_3_01mts_description_connection_01_4_ab5515cf136f07ae656b44ade675282a9}{Data\+Type} \&data, const size\+\_\+t index)  throw (std\+::out\+\_\+of\+\_\+range)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classcmn_data_3_01mts_description_connection_01_4_ab5515cf136f07ae656b44ade675282a9}{}\index{cmn\+Data$<$ mts\+Description\+Connection $>$@{cmn\+Data$<$ mts\+Description\+Connection $>$}!Data\+Type@{Data\+Type}}
+\index{Data\+Type@{Data\+Type}!cmn\+Data$<$ mts\+Description\+Connection $>$@{cmn\+Data$<$ mts\+Description\+Connection $>$}}
+\subsubsection[{Data\+Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf mts\+Description\+Connection} {\bf cmn\+Data}$<$ {\bf mts\+Description\+Connection} $>$\+::{\bf Data\+Type}}\label{classcmn_data_3_01mts_description_connection_01_4_ab5515cf136f07ae656b44ade675282a9}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classcmn_data_3_01mts_description_connection_01_4_aaa0116aa4e31f4127587d4fae40433a5}{}\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}\label{classcmn_data_3_01mts_description_connection_01_4_aaa0116aa4e31f4127587d4fae40433a5}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{I\+S\+\_\+\+S\+P\+E\+C\+I\+A\+L\+I\+Z\+E\+D@{I\+S\+\_\+\+S\+P\+E\+C\+I\+A\+L\+I\+Z\+E\+D}!cmn\+Data$<$ mts\+Description\+Connection $>$@{cmn\+Data$<$ mts\+Description\+Connection $>$}}\index{cmn\+Data$<$ mts\+Description\+Connection $>$@{cmn\+Data$<$ mts\+Description\+Connection $>$}!I\+S\+\_\+\+S\+P\+E\+C\+I\+A\+L\+I\+Z\+E\+D@{I\+S\+\_\+\+S\+P\+E\+C\+I\+A\+L\+I\+Z\+E\+D}}\item[{\em 
+\hypertarget{classcmn_data_3_01mts_description_connection_01_4_aaa0116aa4e31f4127587d4fae40433a5a7b0c948b9ee14c84663770cf2547cbe6}{}I\+S\+\_\+\+S\+P\+E\+C\+I\+A\+L\+I\+Z\+E\+D\label{classcmn_data_3_01mts_description_connection_01_4_aaa0116aa4e31f4127587d4fae40433a5a7b0c948b9ee14c84663770cf2547cbe6}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcmn_data_3_01mts_description_connection_01_4_ab2d07c37ac58216c2e305e1d31dc2e00}{}\index{cmn\+Data$<$ mts\+Description\+Connection $>$@{cmn\+Data$<$ mts\+Description\+Connection $>$}!Copy@{Copy}}
+\index{Copy@{Copy}!cmn\+Data$<$ mts\+Description\+Connection $>$@{cmn\+Data$<$ mts\+Description\+Connection $>$}}
+\subsubsection[{Copy}]{\setlength{\rightskip}{0pt plus 5cm}static void {\bf cmn\+Data}$<$ {\bf mts\+Description\+Connection} $>$\+::Copy (
+\begin{DoxyParamCaption}
+\item[{{\bf Data\+Type} \&}]{data, }
+\item[{const {\bf Data\+Type} \&}]{source}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classcmn_data_3_01mts_description_connection_01_4_ab2d07c37ac58216c2e305e1d31dc2e00}
+\hypertarget{classcmn_data_3_01mts_description_connection_01_4_aa33c905f00f38819afbbd14189ca93df}{}\index{cmn\+Data$<$ mts\+Description\+Connection $>$@{cmn\+Data$<$ mts\+Description\+Connection $>$}!De\+Serialize\+Binary@{De\+Serialize\+Binary}}
+\index{De\+Serialize\+Binary@{De\+Serialize\+Binary}!cmn\+Data$<$ mts\+Description\+Connection $>$@{cmn\+Data$<$ mts\+Description\+Connection $>$}}
+\subsubsection[{De\+Serialize\+Binary}]{\setlength{\rightskip}{0pt plus 5cm}static void {\bf cmn\+Data}$<$ {\bf mts\+Description\+Connection} $>$\+::De\+Serialize\+Binary (
+\begin{DoxyParamCaption}
+\item[{{\bf Data\+Type} \&}]{data, }
+\item[{std\+::istream \&}]{input\+Stream, }
+\item[{const {\bf cmn\+Data\+Format} \&}]{local\+Format, }
+\item[{const {\bf cmn\+Data\+Format} \&}]{remote\+Format}
+\end{DoxyParamCaption}
+) throw  std\+::runtime\+\_\+error) \hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classcmn_data_3_01mts_description_connection_01_4_aa33c905f00f38819afbbd14189ca93df}
+\hypertarget{classcmn_data_3_01mts_description_connection_01_4_ac841595aca5bbfe10cebc7510e4ca55a}{}\index{cmn\+Data$<$ mts\+Description\+Connection $>$@{cmn\+Data$<$ mts\+Description\+Connection $>$}!De\+Serialize\+Text@{De\+Serialize\+Text}}
+\index{De\+Serialize\+Text@{De\+Serialize\+Text}!cmn\+Data$<$ mts\+Description\+Connection $>$@{cmn\+Data$<$ mts\+Description\+Connection $>$}}
+\subsubsection[{De\+Serialize\+Text}]{\setlength{\rightskip}{0pt plus 5cm}static void {\bf cmn\+Data}$<$ {\bf mts\+Description\+Connection} $>$\+::De\+Serialize\+Text (
+\begin{DoxyParamCaption}
+\item[{{\bf Data\+Type} \&}]{data, }
+\item[{std\+::istream \&}]{input\+Stream, }
+\item[{const char}]{delimiter = {\ttfamily \textquotesingle{},\textquotesingle{}}}
+\end{DoxyParamCaption}
+) throw  std\+::runtime\+\_\+error) \hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classcmn_data_3_01mts_description_connection_01_4_ac841595aca5bbfe10cebc7510e4ca55a}
+\hypertarget{classcmn_data_3_01mts_description_connection_01_4_a33941d5eb332171110836f8eca39f43b}{}\index{cmn\+Data$<$ mts\+Description\+Connection $>$@{cmn\+Data$<$ mts\+Description\+Connection $>$}!Human\+Readable@{Human\+Readable}}
+\index{Human\+Readable@{Human\+Readable}!cmn\+Data$<$ mts\+Description\+Connection $>$@{cmn\+Data$<$ mts\+Description\+Connection $>$}}
+\subsubsection[{Human\+Readable}]{\setlength{\rightskip}{0pt plus 5cm}static std\+::string {\bf cmn\+Data}$<$ {\bf mts\+Description\+Connection} $>$\+::Human\+Readable (
+\begin{DoxyParamCaption}
+\item[{const {\bf Data\+Type} \&}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classcmn_data_3_01mts_description_connection_01_4_a33941d5eb332171110836f8eca39f43b}
+\hypertarget{classcmn_data_3_01mts_description_connection_01_4_a0694e8b669097064d4857b402bb2a11b}{}\index{cmn\+Data$<$ mts\+Description\+Connection $>$@{cmn\+Data$<$ mts\+Description\+Connection $>$}!Scalar@{Scalar}}
+\index{Scalar@{Scalar}!cmn\+Data$<$ mts\+Description\+Connection $>$@{cmn\+Data$<$ mts\+Description\+Connection $>$}}
+\subsubsection[{Scalar}]{\setlength{\rightskip}{0pt plus 5cm}static double {\bf cmn\+Data}$<$ {\bf mts\+Description\+Connection} $>$\+::Scalar (
+\begin{DoxyParamCaption}
+\item[{const {\bf Data\+Type} \&}]{data, }
+\item[{const size\+\_\+t}]{index}
+\end{DoxyParamCaption}
+) throw  std\+::out\+\_\+of\+\_\+range) \hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classcmn_data_3_01mts_description_connection_01_4_a0694e8b669097064d4857b402bb2a11b}
+\hypertarget{classcmn_data_3_01mts_description_connection_01_4_a3e9a5fc18c1c27514a9cd3a3731fa07f}{}\index{cmn\+Data$<$ mts\+Description\+Connection $>$@{cmn\+Data$<$ mts\+Description\+Connection $>$}!Scalar\+Description@{Scalar\+Description}}
+\index{Scalar\+Description@{Scalar\+Description}!cmn\+Data$<$ mts\+Description\+Connection $>$@{cmn\+Data$<$ mts\+Description\+Connection $>$}}
+\subsubsection[{Scalar\+Description}]{\setlength{\rightskip}{0pt plus 5cm}static std\+::string {\bf cmn\+Data}$<$ {\bf mts\+Description\+Connection} $>$\+::Scalar\+Description (
+\begin{DoxyParamCaption}
+\item[{const {\bf Data\+Type} \&}]{data, }
+\item[{const size\+\_\+t}]{index, }
+\item[{const std\+::string \&}]{user\+Description = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+) throw  std\+::out\+\_\+of\+\_\+range) \hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classcmn_data_3_01mts_description_connection_01_4_a3e9a5fc18c1c27514a9cd3a3731fa07f}
+\hypertarget{classcmn_data_3_01mts_description_connection_01_4_a2e8e2761a6dff74abc7675eb3fee8c54}{}\index{cmn\+Data$<$ mts\+Description\+Connection $>$@{cmn\+Data$<$ mts\+Description\+Connection $>$}!Scalar\+Number@{Scalar\+Number}}
+\index{Scalar\+Number@{Scalar\+Number}!cmn\+Data$<$ mts\+Description\+Connection $>$@{cmn\+Data$<$ mts\+Description\+Connection $>$}}
+\subsubsection[{Scalar\+Number}]{\setlength{\rightskip}{0pt plus 5cm}static size\+\_\+t {\bf cmn\+Data}$<$ {\bf mts\+Description\+Connection} $>$\+::Scalar\+Number (
+\begin{DoxyParamCaption}
+\item[{const {\bf Data\+Type} \&}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classcmn_data_3_01mts_description_connection_01_4_a2e8e2761a6dff74abc7675eb3fee8c54}
+\hypertarget{classcmn_data_3_01mts_description_connection_01_4_af5f3939c268708bed21144c50eccbfe8}{}\index{cmn\+Data$<$ mts\+Description\+Connection $>$@{cmn\+Data$<$ mts\+Description\+Connection $>$}!Scalar\+Number\+Is\+Fixed@{Scalar\+Number\+Is\+Fixed}}
+\index{Scalar\+Number\+Is\+Fixed@{Scalar\+Number\+Is\+Fixed}!cmn\+Data$<$ mts\+Description\+Connection $>$@{cmn\+Data$<$ mts\+Description\+Connection $>$}}
+\subsubsection[{Scalar\+Number\+Is\+Fixed}]{\setlength{\rightskip}{0pt plus 5cm}static bool {\bf cmn\+Data}$<$ {\bf mts\+Description\+Connection} $>$\+::Scalar\+Number\+Is\+Fixed (
+\begin{DoxyParamCaption}
+\item[{const {\bf Data\+Type} \&}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classcmn_data_3_01mts_description_connection_01_4_af5f3939c268708bed21144c50eccbfe8}
+\hypertarget{classcmn_data_3_01mts_description_connection_01_4_a4d99935a16742c5db40fbaa0730d47c1}{}\index{cmn\+Data$<$ mts\+Description\+Connection $>$@{cmn\+Data$<$ mts\+Description\+Connection $>$}!Serialize\+Binary@{Serialize\+Binary}}
+\index{Serialize\+Binary@{Serialize\+Binary}!cmn\+Data$<$ mts\+Description\+Connection $>$@{cmn\+Data$<$ mts\+Description\+Connection $>$}}
+\subsubsection[{Serialize\+Binary}]{\setlength{\rightskip}{0pt plus 5cm}static void {\bf cmn\+Data}$<$ {\bf mts\+Description\+Connection} $>$\+::Serialize\+Binary (
+\begin{DoxyParamCaption}
+\item[{const {\bf Data\+Type} \&}]{data, }
+\item[{std\+::ostream \&}]{output\+Stream}
+\end{DoxyParamCaption}
+) throw  std\+::runtime\+\_\+error) \hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classcmn_data_3_01mts_description_connection_01_4_a4d99935a16742c5db40fbaa0730d47c1}
+\hypertarget{classcmn_data_3_01mts_description_connection_01_4_aef76c2239c07ff81d89e228be61310c8}{}\index{cmn\+Data$<$ mts\+Description\+Connection $>$@{cmn\+Data$<$ mts\+Description\+Connection $>$}!Serialize\+Description@{Serialize\+Description}}
+\index{Serialize\+Description@{Serialize\+Description}!cmn\+Data$<$ mts\+Description\+Connection $>$@{cmn\+Data$<$ mts\+Description\+Connection $>$}}
+\subsubsection[{Serialize\+Description}]{\setlength{\rightskip}{0pt plus 5cm}static std\+::string {\bf cmn\+Data}$<$ {\bf mts\+Description\+Connection} $>$\+::Serialize\+Description (
+\begin{DoxyParamCaption}
+\item[{const {\bf Data\+Type} \&}]{data, }
+\item[{const char}]{delimiter, }
+\item[{const std\+::string \&}]{user\+Description}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classcmn_data_3_01mts_description_connection_01_4_aef76c2239c07ff81d89e228be61310c8}
+\hypertarget{classcmn_data_3_01mts_description_connection_01_4_aa4f9e936035d6bd1a93a905d9fe15d4c}{}\index{cmn\+Data$<$ mts\+Description\+Connection $>$@{cmn\+Data$<$ mts\+Description\+Connection $>$}!Serialize\+Text@{Serialize\+Text}}
+\index{Serialize\+Text@{Serialize\+Text}!cmn\+Data$<$ mts\+Description\+Connection $>$@{cmn\+Data$<$ mts\+Description\+Connection $>$}}
+\subsubsection[{Serialize\+Text}]{\setlength{\rightskip}{0pt plus 5cm}static void {\bf cmn\+Data}$<$ {\bf mts\+Description\+Connection} $>$\+::Serialize\+Text (
+\begin{DoxyParamCaption}
+\item[{const {\bf Data\+Type} \&}]{data, }
+\item[{std\+::ostream \&}]{output\+Stream, }
+\item[{const char}]{delimiter = {\ttfamily \textquotesingle{},\textquotesingle{}}}
+\end{DoxyParamCaption}
+) throw  std\+::runtime\+\_\+error) \hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classcmn_data_3_01mts_description_connection_01_4_aa4f9e936035d6bd1a93a905d9fe15d4c}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw-\/build/cisst/include/cisst\+Multi\+Task/\hyperlink{mts_parameter_types_8h}{mts\+Parameter\+Types.\+h}\end{DoxyCompactItemize}

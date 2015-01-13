@@ -19,7 +19,7 @@ var searchData=
   ['userdata',['UserData',['../db/d49/structosa_call_back_base.html#a1178c4cd366dc6de8a939accf7099974',1,'osaCallBackBase::UserData()'],['../dc/d33/classosa_o_s_g_body.html#aaaa048aa92048243a7bf355e6d178ec1',1,'osaOSGBody::userdata()'],['../de/dae/classosa_o_s_g_image.html#a612dc68e1eccf9b96a8d2a2976a2d2de',1,'osaOSGImage::userdata()']]],
   ['userfn',['UserFn',['../d2/d7f/classnmr_fmin_solver.html#aae14c67da4d9b2d740a1adb8873904b3',1,'nmrFminSolver']]],
   ['userhandler',['UserHandler',['../d5/d12/classmts_event_receiver_void.html#a475c1ce714e9bbd2e708691fbc74c871',1,'mtsEventReceiverVoid::UserHandler()'],['../dd/ddf/classmts_event_receiver_write.html#a9ad8837c3e250203c0b0e8ce4112024d',1,'mtsEventReceiverWrite::UserHandler()']]],
-  ['username',['UserName',['../d9/d9d/classmts_interface_provided.html#a37bb4e89240cb1056a013d9aa9b1d2aa',1,'mtsInterfaceProvided']]],
+  ['username',['UserName',['../d4/dea/classmts_end_user_interface_arg.html#a0698eac4ba5458816ef097e6094c1036',1,'mtsEndUserInterfaceArg::UserName()'],['../d9/d9d/classmts_interface_provided.html#a37bb4e89240cb1056a013d9aa9b1d2aa',1,'mtsInterfaceProvided::UserName()']]],
   ['useseparatelogfileflag',['UseSeparateLogFileFlag',['../d6/d28/classmts_component.html#a12390c92b351b911b723158e636a9e5a',1,'mtsComponent']]],
   ['usrstate',['usrState',['../d2/dcc/classosa_open_n_i_skeleton.html#afd56b36e28cdc37b1f8e9e028537af41',1,'osaOpenNISkeleton']]],
   ['utils',['Utils',['../dc/d49/classmts_medtronic_stealthlink.html#ab6970edff3db4896a9cce824323f3c3e',1,'mtsMedtronicStealthlink']]]

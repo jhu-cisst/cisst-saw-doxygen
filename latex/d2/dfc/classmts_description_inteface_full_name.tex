@@ -1,0 +1,223 @@
+\hypertarget{classmts_description_inteface_full_name}{}\section{mts\+Description\+Inteface\+Full\+Name Class Reference}
+\label{classmts_description_inteface_full_name}\index{mts\+Description\+Inteface\+Full\+Name@{mts\+Description\+Inteface\+Full\+Name}}
+
+
+{\ttfamily \#include $<$mts\+Parameter\+Types.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmts_description_inteface_full_name_aba738688e0226daabddf5893ca0c01bb}{mts\+Description\+Inteface\+Full\+Name} (void)
+\item 
+\hyperlink{classmts_description_inteface_full_name_acc4b8572e3e5222aa06f67018b89c301}{mts\+Description\+Inteface\+Full\+Name} (const \hyperlink{classmts_description_inteface_full_name}{mts\+Description\+Inteface\+Full\+Name} \&other)
+\item 
+\hyperlink{classmts_description_inteface_full_name_adb8dc20a07bdc738c817655cff779ac3}{$\sim$mts\+Description\+Inteface\+Full\+Name} ()
+\item 
+\hyperlink{classmts_description_inteface_full_name_abfb76635a4d91c2953be2ee3e2d47c3c}{mts\+Description\+Inteface\+Full\+Name} (const std\+::string \&new\+Process\+Name, const std\+::string \&new\+Component\+Name, const std\+::string \&new\+Interface\+Name)
+\item 
+void \hyperlink{classmts_description_inteface_full_name_aa56968ec51f0bd45242972cd8d96b1f0}{Serialize\+Raw} (std\+::ostream \&output\+Stream) const 
+\item 
+void \hyperlink{classmts_description_inteface_full_name_ae678e3f1ffdca5fb96b849b030b010cd}{De\+Serialize\+Raw} (std\+::istream \&input\+Stream)
+\item 
+void \hyperlink{classmts_description_inteface_full_name_aada59891e3b35682b6c741029ee04e1d}{To\+Stream} (std\+::ostream \&output\+Stream) const 
+\item 
+void \hyperlink{classmts_description_inteface_full_name_a78d76c47edc3782946d3185ec6b3c120}{To\+Stream\+Raw} (std\+::ostream \&output\+Stream, const char delimiter= \textquotesingle{} \textquotesingle{}, bool header\+Only=false, const std\+::string \&header\+Prefix=\char`\"{}\char`\"{}) const 
+\item 
+void \hyperlink{classmts_description_inteface_full_name_acfb4f72aa2669df862ef62e48952bb31}{Copy} (const \hyperlink{classmts_description_inteface_full_name}{mts\+Description\+Inteface\+Full\+Name} \&source)
+\item 
+void \hyperlink{classmts_description_inteface_full_name_a569b18643eef587c690ddcb453fc53bd}{Serialize\+Binary} (std\+::ostream \&output\+Stream) const   throw (std\+::runtime\+\_\+error)
+\item 
+void \hyperlink{classmts_description_inteface_full_name_a3281a4a51929da129237e2d3378c9e2a}{De\+Serialize\+Binary} (std\+::istream \&input\+Stream, const \hyperlink{classcmn_data_format}{cmn\+Data\+Format} \&local\+Format, const \hyperlink{classcmn_data_format}{cmn\+Data\+Format} \&remote\+Format)  throw (std\+::runtime\+\_\+error)
+\item 
+void \hyperlink{classmts_description_inteface_full_name_afa4ff9facf2402c9f272723c094c71d5}{Serialize\+Text} (std\+::ostream \&output\+Stream, const char delimiter= \textquotesingle{},\textquotesingle{}) const   throw (std\+::runtime\+\_\+error)
+\item 
+std\+::string \hyperlink{classmts_description_inteface_full_name_aeccacf1652d6b76c91855c5a55d8324e}{Serialize\+Description} (const char delimiter= \textquotesingle{},\textquotesingle{}, const std\+::string \&user\+Description=\char`\"{}\char`\"{}) const 
+\item 
+void \hyperlink{classmts_description_inteface_full_name_ac8f0f22b44c061ac00b3c37345b1264c}{De\+Serialize\+Text} (std\+::istream \&input\+Stream, const char delimiter= \textquotesingle{},\textquotesingle{})  throw (std\+::runtime\+\_\+error)
+\item 
+std\+::string \hyperlink{classmts_description_inteface_full_name_a3af4d088b7dc68d64708384ec68a68af}{Human\+Readable} (void) const 
+\item 
+bool \hyperlink{classmts_description_inteface_full_name_a8b54a18f39b8b61c8b94e1256cc4de01}{Scalar\+Number\+Is\+Fixed} (void) const 
+\item 
+size\+\_\+t \hyperlink{classmts_description_inteface_full_name_aedad99d3a68de542986916e3d4f26cdd}{Scalar\+Number} (void) const 
+\item 
+double \hyperlink{classmts_description_inteface_full_name_a9d72e1b4ee6f1c1ae572a288b876fa46}{Scalar} (const size\+\_\+t index) const   throw (std\+::out\+\_\+of\+\_\+range)
+\item 
+std\+::string \hyperlink{classmts_description_inteface_full_name_a57819a1fb8f9c5c84fcaab8fbe5d5acf}{Scalar\+Description} (const size\+\_\+t index, const std\+::string \&user\+Description=\char`\"{}\char`\"{}) const   throw (std\+::out\+\_\+of\+\_\+range)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{classmts_description_inteface_full_name_a689aee0b2ad1499297717465e612daef}{Process\+Name}
+\item 
+std\+::string \hyperlink{classmts_description_inteface_full_name_aada456d08c4d1d0bddba60467c01afaa}{Component\+Name}
+\item 
+std\+::string \hyperlink{classmts_description_inteface_full_name_a5e31c5ab84fe29944b89730608d83f7e}{Interface\+Name}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmts_description_inteface_full_name_aba738688e0226daabddf5893ca0c01bb}{}\index{mts\+Description\+Inteface\+Full\+Name@{mts\+Description\+Inteface\+Full\+Name}!mts\+Description\+Inteface\+Full\+Name@{mts\+Description\+Inteface\+Full\+Name}}
+\index{mts\+Description\+Inteface\+Full\+Name@{mts\+Description\+Inteface\+Full\+Name}!mts\+Description\+Inteface\+Full\+Name@{mts\+Description\+Inteface\+Full\+Name}}
+\subsubsection[{mts\+Description\+Inteface\+Full\+Name}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Description\+Inteface\+Full\+Name\+::mts\+Description\+Inteface\+Full\+Name (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classmts_description_inteface_full_name_aba738688e0226daabddf5893ca0c01bb}
+\hypertarget{classmts_description_inteface_full_name_acc4b8572e3e5222aa06f67018b89c301}{}\index{mts\+Description\+Inteface\+Full\+Name@{mts\+Description\+Inteface\+Full\+Name}!mts\+Description\+Inteface\+Full\+Name@{mts\+Description\+Inteface\+Full\+Name}}
+\index{mts\+Description\+Inteface\+Full\+Name@{mts\+Description\+Inteface\+Full\+Name}!mts\+Description\+Inteface\+Full\+Name@{mts\+Description\+Inteface\+Full\+Name}}
+\subsubsection[{mts\+Description\+Inteface\+Full\+Name}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Description\+Inteface\+Full\+Name\+::mts\+Description\+Inteface\+Full\+Name (
+\begin{DoxyParamCaption}
+\item[{const {\bf mts\+Description\+Inteface\+Full\+Name} \&}]{other}
+\end{DoxyParamCaption}
+)}\label{classmts_description_inteface_full_name_acc4b8572e3e5222aa06f67018b89c301}
+\hypertarget{classmts_description_inteface_full_name_adb8dc20a07bdc738c817655cff779ac3}{}\index{mts\+Description\+Inteface\+Full\+Name@{mts\+Description\+Inteface\+Full\+Name}!````~mts\+Description\+Inteface\+Full\+Name@{$\sim$mts\+Description\+Inteface\+Full\+Name}}
+\index{````~mts\+Description\+Inteface\+Full\+Name@{$\sim$mts\+Description\+Inteface\+Full\+Name}!mts\+Description\+Inteface\+Full\+Name@{mts\+Description\+Inteface\+Full\+Name}}
+\subsubsection[{$\sim$mts\+Description\+Inteface\+Full\+Name}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Description\+Inteface\+Full\+Name\+::$\sim$mts\+Description\+Inteface\+Full\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classmts_description_inteface_full_name_adb8dc20a07bdc738c817655cff779ac3}
+\hypertarget{classmts_description_inteface_full_name_abfb76635a4d91c2953be2ee3e2d47c3c}{}\index{mts\+Description\+Inteface\+Full\+Name@{mts\+Description\+Inteface\+Full\+Name}!mts\+Description\+Inteface\+Full\+Name@{mts\+Description\+Inteface\+Full\+Name}}
+\index{mts\+Description\+Inteface\+Full\+Name@{mts\+Description\+Inteface\+Full\+Name}!mts\+Description\+Inteface\+Full\+Name@{mts\+Description\+Inteface\+Full\+Name}}
+\subsubsection[{mts\+Description\+Inteface\+Full\+Name}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Description\+Inteface\+Full\+Name\+::mts\+Description\+Inteface\+Full\+Name (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{new\+Process\+Name, }
+\item[{const std\+::string \&}]{new\+Component\+Name, }
+\item[{const std\+::string \&}]{new\+Interface\+Name}
+\end{DoxyParamCaption}
+)}\label{classmts_description_inteface_full_name_abfb76635a4d91c2953be2ee3e2d47c3c}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classmts_description_inteface_full_name_acfb4f72aa2669df862ef62e48952bb31}{}\index{mts\+Description\+Inteface\+Full\+Name@{mts\+Description\+Inteface\+Full\+Name}!Copy@{Copy}}
+\index{Copy@{Copy}!mts\+Description\+Inteface\+Full\+Name@{mts\+Description\+Inteface\+Full\+Name}}
+\subsubsection[{Copy}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Description\+Inteface\+Full\+Name\+::\+Copy (
+\begin{DoxyParamCaption}
+\item[{const {\bf mts\+Description\+Inteface\+Full\+Name} \&}]{source}
+\end{DoxyParamCaption}
+)}\label{classmts_description_inteface_full_name_acfb4f72aa2669df862ef62e48952bb31}
+\hypertarget{classmts_description_inteface_full_name_a3281a4a51929da129237e2d3378c9e2a}{}\index{mts\+Description\+Inteface\+Full\+Name@{mts\+Description\+Inteface\+Full\+Name}!De\+Serialize\+Binary@{De\+Serialize\+Binary}}
+\index{De\+Serialize\+Binary@{De\+Serialize\+Binary}!mts\+Description\+Inteface\+Full\+Name@{mts\+Description\+Inteface\+Full\+Name}}
+\subsubsection[{De\+Serialize\+Binary}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Description\+Inteface\+Full\+Name\+::\+De\+Serialize\+Binary (
+\begin{DoxyParamCaption}
+\item[{std\+::istream \&}]{input\+Stream, }
+\item[{const {\bf cmn\+Data\+Format} \&}]{local\+Format, }
+\item[{const {\bf cmn\+Data\+Format} \&}]{remote\+Format}
+\end{DoxyParamCaption}
+) throw  std\+::runtime\+\_\+error) }\label{classmts_description_inteface_full_name_a3281a4a51929da129237e2d3378c9e2a}
+\hypertarget{classmts_description_inteface_full_name_ae678e3f1ffdca5fb96b849b030b010cd}{}\index{mts\+Description\+Inteface\+Full\+Name@{mts\+Description\+Inteface\+Full\+Name}!De\+Serialize\+Raw@{De\+Serialize\+Raw}}
+\index{De\+Serialize\+Raw@{De\+Serialize\+Raw}!mts\+Description\+Inteface\+Full\+Name@{mts\+Description\+Inteface\+Full\+Name}}
+\subsubsection[{De\+Serialize\+Raw}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Description\+Inteface\+Full\+Name\+::\+De\+Serialize\+Raw (
+\begin{DoxyParamCaption}
+\item[{std\+::istream \&}]{input\+Stream}
+\end{DoxyParamCaption}
+)}\label{classmts_description_inteface_full_name_ae678e3f1ffdca5fb96b849b030b010cd}
+\hypertarget{classmts_description_inteface_full_name_ac8f0f22b44c061ac00b3c37345b1264c}{}\index{mts\+Description\+Inteface\+Full\+Name@{mts\+Description\+Inteface\+Full\+Name}!De\+Serialize\+Text@{De\+Serialize\+Text}}
+\index{De\+Serialize\+Text@{De\+Serialize\+Text}!mts\+Description\+Inteface\+Full\+Name@{mts\+Description\+Inteface\+Full\+Name}}
+\subsubsection[{De\+Serialize\+Text}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Description\+Inteface\+Full\+Name\+::\+De\+Serialize\+Text (
+\begin{DoxyParamCaption}
+\item[{std\+::istream \&}]{input\+Stream, }
+\item[{const char}]{delimiter = {\ttfamily \textquotesingle{},\textquotesingle{}}}
+\end{DoxyParamCaption}
+) throw  std\+::runtime\+\_\+error) }\label{classmts_description_inteface_full_name_ac8f0f22b44c061ac00b3c37345b1264c}
+\hypertarget{classmts_description_inteface_full_name_a3af4d088b7dc68d64708384ec68a68af}{}\index{mts\+Description\+Inteface\+Full\+Name@{mts\+Description\+Inteface\+Full\+Name}!Human\+Readable@{Human\+Readable}}
+\index{Human\+Readable@{Human\+Readable}!mts\+Description\+Inteface\+Full\+Name@{mts\+Description\+Inteface\+Full\+Name}}
+\subsubsection[{Human\+Readable}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string mts\+Description\+Inteface\+Full\+Name\+::\+Human\+Readable (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classmts_description_inteface_full_name_a3af4d088b7dc68d64708384ec68a68af}
+\hypertarget{classmts_description_inteface_full_name_a9d72e1b4ee6f1c1ae572a288b876fa46}{}\index{mts\+Description\+Inteface\+Full\+Name@{mts\+Description\+Inteface\+Full\+Name}!Scalar@{Scalar}}
+\index{Scalar@{Scalar}!mts\+Description\+Inteface\+Full\+Name@{mts\+Description\+Inteface\+Full\+Name}}
+\subsubsection[{Scalar}]{\setlength{\rightskip}{0pt plus 5cm}double mts\+Description\+Inteface\+Full\+Name\+::\+Scalar (
+\begin{DoxyParamCaption}
+\item[{const size\+\_\+t}]{index}
+\end{DoxyParamCaption}
+) const throw  std\+::out\+\_\+of\+\_\+range) }\label{classmts_description_inteface_full_name_a9d72e1b4ee6f1c1ae572a288b876fa46}
+\hypertarget{classmts_description_inteface_full_name_a57819a1fb8f9c5c84fcaab8fbe5d5acf}{}\index{mts\+Description\+Inteface\+Full\+Name@{mts\+Description\+Inteface\+Full\+Name}!Scalar\+Description@{Scalar\+Description}}
+\index{Scalar\+Description@{Scalar\+Description}!mts\+Description\+Inteface\+Full\+Name@{mts\+Description\+Inteface\+Full\+Name}}
+\subsubsection[{Scalar\+Description}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string mts\+Description\+Inteface\+Full\+Name\+::\+Scalar\+Description (
+\begin{DoxyParamCaption}
+\item[{const size\+\_\+t}]{index, }
+\item[{const std\+::string \&}]{user\+Description = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+) const throw  std\+::out\+\_\+of\+\_\+range) }\label{classmts_description_inteface_full_name_a57819a1fb8f9c5c84fcaab8fbe5d5acf}
+\hypertarget{classmts_description_inteface_full_name_aedad99d3a68de542986916e3d4f26cdd}{}\index{mts\+Description\+Inteface\+Full\+Name@{mts\+Description\+Inteface\+Full\+Name}!Scalar\+Number@{Scalar\+Number}}
+\index{Scalar\+Number@{Scalar\+Number}!mts\+Description\+Inteface\+Full\+Name@{mts\+Description\+Inteface\+Full\+Name}}
+\subsubsection[{Scalar\+Number}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t mts\+Description\+Inteface\+Full\+Name\+::\+Scalar\+Number (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classmts_description_inteface_full_name_aedad99d3a68de542986916e3d4f26cdd}
+\hypertarget{classmts_description_inteface_full_name_a8b54a18f39b8b61c8b94e1256cc4de01}{}\index{mts\+Description\+Inteface\+Full\+Name@{mts\+Description\+Inteface\+Full\+Name}!Scalar\+Number\+Is\+Fixed@{Scalar\+Number\+Is\+Fixed}}
+\index{Scalar\+Number\+Is\+Fixed@{Scalar\+Number\+Is\+Fixed}!mts\+Description\+Inteface\+Full\+Name@{mts\+Description\+Inteface\+Full\+Name}}
+\subsubsection[{Scalar\+Number\+Is\+Fixed}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Description\+Inteface\+Full\+Name\+::\+Scalar\+Number\+Is\+Fixed (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classmts_description_inteface_full_name_a8b54a18f39b8b61c8b94e1256cc4de01}
+\hypertarget{classmts_description_inteface_full_name_a569b18643eef587c690ddcb453fc53bd}{}\index{mts\+Description\+Inteface\+Full\+Name@{mts\+Description\+Inteface\+Full\+Name}!Serialize\+Binary@{Serialize\+Binary}}
+\index{Serialize\+Binary@{Serialize\+Binary}!mts\+Description\+Inteface\+Full\+Name@{mts\+Description\+Inteface\+Full\+Name}}
+\subsubsection[{Serialize\+Binary}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Description\+Inteface\+Full\+Name\+::\+Serialize\+Binary (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{output\+Stream}
+\end{DoxyParamCaption}
+) const throw  std\+::runtime\+\_\+error) }\label{classmts_description_inteface_full_name_a569b18643eef587c690ddcb453fc53bd}
+\hypertarget{classmts_description_inteface_full_name_aeccacf1652d6b76c91855c5a55d8324e}{}\index{mts\+Description\+Inteface\+Full\+Name@{mts\+Description\+Inteface\+Full\+Name}!Serialize\+Description@{Serialize\+Description}}
+\index{Serialize\+Description@{Serialize\+Description}!mts\+Description\+Inteface\+Full\+Name@{mts\+Description\+Inteface\+Full\+Name}}
+\subsubsection[{Serialize\+Description}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string mts\+Description\+Inteface\+Full\+Name\+::\+Serialize\+Description (
+\begin{DoxyParamCaption}
+\item[{const char}]{delimiter = {\ttfamily \textquotesingle{},\textquotesingle{}}, }
+\item[{const std\+::string \&}]{user\+Description = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+) const}\label{classmts_description_inteface_full_name_aeccacf1652d6b76c91855c5a55d8324e}
+\hypertarget{classmts_description_inteface_full_name_aa56968ec51f0bd45242972cd8d96b1f0}{}\index{mts\+Description\+Inteface\+Full\+Name@{mts\+Description\+Inteface\+Full\+Name}!Serialize\+Raw@{Serialize\+Raw}}
+\index{Serialize\+Raw@{Serialize\+Raw}!mts\+Description\+Inteface\+Full\+Name@{mts\+Description\+Inteface\+Full\+Name}}
+\subsubsection[{Serialize\+Raw}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Description\+Inteface\+Full\+Name\+::\+Serialize\+Raw (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{output\+Stream}
+\end{DoxyParamCaption}
+) const}\label{classmts_description_inteface_full_name_aa56968ec51f0bd45242972cd8d96b1f0}
+\hypertarget{classmts_description_inteface_full_name_afa4ff9facf2402c9f272723c094c71d5}{}\index{mts\+Description\+Inteface\+Full\+Name@{mts\+Description\+Inteface\+Full\+Name}!Serialize\+Text@{Serialize\+Text}}
+\index{Serialize\+Text@{Serialize\+Text}!mts\+Description\+Inteface\+Full\+Name@{mts\+Description\+Inteface\+Full\+Name}}
+\subsubsection[{Serialize\+Text}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Description\+Inteface\+Full\+Name\+::\+Serialize\+Text (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{output\+Stream, }
+\item[{const char}]{delimiter = {\ttfamily \textquotesingle{},\textquotesingle{}}}
+\end{DoxyParamCaption}
+) const throw  std\+::runtime\+\_\+error) }\label{classmts_description_inteface_full_name_afa4ff9facf2402c9f272723c094c71d5}
+\hypertarget{classmts_description_inteface_full_name_aada59891e3b35682b6c741029ee04e1d}{}\index{mts\+Description\+Inteface\+Full\+Name@{mts\+Description\+Inteface\+Full\+Name}!To\+Stream@{To\+Stream}}
+\index{To\+Stream@{To\+Stream}!mts\+Description\+Inteface\+Full\+Name@{mts\+Description\+Inteface\+Full\+Name}}
+\subsubsection[{To\+Stream}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Description\+Inteface\+Full\+Name\+::\+To\+Stream (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{output\+Stream}
+\end{DoxyParamCaption}
+) const}\label{classmts_description_inteface_full_name_aada59891e3b35682b6c741029ee04e1d}
+\hypertarget{classmts_description_inteface_full_name_a78d76c47edc3782946d3185ec6b3c120}{}\index{mts\+Description\+Inteface\+Full\+Name@{mts\+Description\+Inteface\+Full\+Name}!To\+Stream\+Raw@{To\+Stream\+Raw}}
+\index{To\+Stream\+Raw@{To\+Stream\+Raw}!mts\+Description\+Inteface\+Full\+Name@{mts\+Description\+Inteface\+Full\+Name}}
+\subsubsection[{To\+Stream\+Raw}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Description\+Inteface\+Full\+Name\+::\+To\+Stream\+Raw (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{output\+Stream, }
+\item[{const char}]{delimiter = {\ttfamily \textquotesingle{}~\textquotesingle{}}, }
+\item[{bool}]{header\+Only = {\ttfamily false}, }
+\item[{const std\+::string \&}]{header\+Prefix = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+) const}\label{classmts_description_inteface_full_name_a78d76c47edc3782946d3185ec6b3c120}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classmts_description_inteface_full_name_aada456d08c4d1d0bddba60467c01afaa}{}\index{mts\+Description\+Inteface\+Full\+Name@{mts\+Description\+Inteface\+Full\+Name}!Component\+Name@{Component\+Name}}
+\index{Component\+Name@{Component\+Name}!mts\+Description\+Inteface\+Full\+Name@{mts\+Description\+Inteface\+Full\+Name}}
+\subsubsection[{Component\+Name}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string mts\+Description\+Inteface\+Full\+Name\+::\+Component\+Name}\label{classmts_description_inteface_full_name_aada456d08c4d1d0bddba60467c01afaa}
+\hypertarget{classmts_description_inteface_full_name_a5e31c5ab84fe29944b89730608d83f7e}{}\index{mts\+Description\+Inteface\+Full\+Name@{mts\+Description\+Inteface\+Full\+Name}!Interface\+Name@{Interface\+Name}}
+\index{Interface\+Name@{Interface\+Name}!mts\+Description\+Inteface\+Full\+Name@{mts\+Description\+Inteface\+Full\+Name}}
+\subsubsection[{Interface\+Name}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string mts\+Description\+Inteface\+Full\+Name\+::\+Interface\+Name}\label{classmts_description_inteface_full_name_a5e31c5ab84fe29944b89730608d83f7e}
+\hypertarget{classmts_description_inteface_full_name_a689aee0b2ad1499297717465e612daef}{}\index{mts\+Description\+Inteface\+Full\+Name@{mts\+Description\+Inteface\+Full\+Name}!Process\+Name@{Process\+Name}}
+\index{Process\+Name@{Process\+Name}!mts\+Description\+Inteface\+Full\+Name@{mts\+Description\+Inteface\+Full\+Name}}
+\subsubsection[{Process\+Name}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string mts\+Description\+Inteface\+Full\+Name\+::\+Process\+Name}\label{classmts_description_inteface_full_name_a689aee0b2ad1499297717465e612daef}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw-\/build/cisst/include/cisst\+Multi\+Task/\hyperlink{mts_parameter_types_8h}{mts\+Parameter\+Types.\+h}\end{DoxyCompactItemize}

@@ -15,6 +15,8 @@ var searchData=
   ['powertype',['PowerType',['../d0/d02/classnmr_bernstein_polynomial_line_integral.html#a0e07aee2cb7c5f3f5d2c1f95cd4e9abf',1,'nmrBernsteinPolynomialLineIntegral::PowerType()'],['../dc/d0d/classnmr_multi_variable_power_basis.html#a2cb67df83e9fcac213848fa7a7295fcc',1,'nmrMultiVariablePowerBasis::PowerType()'],['../d8/d51/classnmr_polynomial_base.html#a58607c884bf2e6725a77ed4d9e14ba26',1,'nmrPolynomialBase::PowerType()'],['../d2/d1d/classnmr_polynomial_term_power_index.html#a2eec01c3a2c3f56f47982ceffd8e36ed',1,'nmrPolynomialTermPowerIndex::PowerType()'],['../de/dc1/classnmr_single_variable_power_basis.html#ae580b034e01160a9fc39455a9356730f',1,'nmrSingleVariablePowerBasis::PowerType()']]],
   ['prioritytype',['PriorityType',['../dc/d23/osa_thread_8h.html#a118e6f24bad4e18e7d179bb41166ae8c',1,'osaThread.h']]],
   ['prmblocking',['prmBlocking',['../d1/d8a/prm_forward_declarations_8h.html#aef1d8aa0eac2eaf31e9a97334a725d8f',1,'prmForwardDeclarations.h']]],
+  ['prmfixturegaincartesiansetproxy',['prmFixtureGainCartesianSetProxy',['../d4/d1e/prm_fixture_gain_cartesian_set_8h.html#af87206d08df2f1e9c9c1acc508fd47c8',1,'prmFixtureGainCartesianSet.h']]],
+  ['prmimusensorsproxy',['prmIMUSensorsProxy',['../d6/deb/prm_i_m_u_sensors_8h.html#a9449000df12ebc2f5f3336a1f95b50eb',1,'prmIMUSensors.h']]],
   ['prmjointtype',['prmJointType',['../db/de0/prm_joint_type_8h.html#a895942aa22779beb318114dcff38b5af',1,'prmJointType():&#160;prmJointType.h'],['../d8/d64/_minimal_prm_8h.html#a895942aa22779beb318114dcff38b5af',1,'prmJointType():&#160;MinimalPrm.h']]],
   ['prmjointtypeproxy',['prmJointTypeProxy',['../db/de0/prm_joint_type_8h.html#af8b629696d2b17a387022678c31617e8',1,'prmJointType.h']]],
   ['prmjointtypevec',['prmJointTypeVec',['../db/de0/prm_joint_type_8h.html#a3a21392b4484e2e24aa0b73d553f940e',1,'prmJointTypeVec():&#160;prmJointType.h'],['../d8/d64/_minimal_prm_8h.html#a8fb3d2243cac29e265114363c4093769',1,'prmJointTypeVec():&#160;MinimalPrm.h']]],
@@ -29,6 +31,8 @@ var searchData=
   ['prmmaskeduintvec',['prmMaskedUIntVec',['../d0/d8f/prm_masked_vector_8h.html#a7888282fc8b122b4e767640bbd69e140',1,'prmMaskedVector.h']]],
   ['prmmaskedulongvec',['prmMaskedULongVec',['../d0/d8f/prm_masked_vector_8h.html#a81c80eadc23ae80f12c2036ea9f338c3',1,'prmMaskedVector.h']]],
   ['prmmaskedushortvec',['prmMaskedUShortVec',['../d0/d8f/prm_masked_vector_8h.html#aa7db812bea44aa998d6ec98b96bd02bb',1,'prmMaskedVector.h']]],
+  ['prmpositioncartesiangetproxy',['prmPositionCartesianGetProxy',['../d8/d34/prm_position_cartesian_get_8h.html#aa0a0e2e195821bd0f9aa82524ed7194d',1,'prmPositionCartesianGet.h']]],
+  ['prmpositionjointgetproxy',['prmPositionJointGetProxy',['../de/d62/prm_position_joint_get_8h.html#ae2bacf23cd273587133c3eed7f8ad852',1,'prmPositionJointGet.h']]],
   ['prmtransformationbaseptr',['prmTransformationBasePtr',['../db/de7/prm_transformation_base_8h.html#a881a6a7d2191474974cdf36d79e1df08',1,'prmTransformationBase.h']]],
   ['processmaptype',['ProcessMapType',['../d1/d06/classmts_manager_global.html#ab0257cb91cc9d4c59cf85706f65da9f1',1,'mtsManagerGlobal']]]
 ];
