@@ -10,6 +10,7 @@ var searchData=
   ['and',['And',['../d6/db7/classvct_binary_operations_1_1_and.html',1,'vctBinaryOperations']]],
   ['arm',['Arm',['../d6/d58/classmts_intuitive_research_kit_console_1_1_arm.html',1,'mtsIntuitiveResearchKitConsole']]],
   ['armdata',['ArmData',['../d3/da6/classmts_intuitive_da_vinci_1_1_arm_data.html',1,'mtsIntuitiveDaVinci']]],
+  ['armstruct',['ArmStruct',['../d7/d19/structmts_atracsys_fusion_track_tool_qt_widget_1_1_arm_struct.html',1,'mtsAtracsysFusionTrackToolQtWidget']]],
   ['armstruct',['ArmStruct',['../dc/d02/structmts_intuitive_research_kit_arm_qt_widget_1_1_arm_struct.html',1,'mtsIntuitiveResearchKitArmQtWidget']]],
   ['armstruct',['ArmStruct',['../d5/db7/structmts_intuitive_da_vinci_arm_qt_widget_1_1_arm_struct.html',1,'mtsIntuitiveDaVinciArmQtWidget']]]
 ];

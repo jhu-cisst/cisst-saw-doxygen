@@ -94,11 +94,20 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <p>Remove the loop timer, use the automatic one. </p>
 <p class="enddd">Use wizard to set the buttons to 1, and 2 (keystroke #s).  </p>
 </dd>
+<dt><a class="anchor" id="_todo000013"></a>Class <a class="el" href="../../dd/dd4/classmts_atracsys_fusion_track.html">mtsAtracsysFusionTrack</a>  </dt>
+<dd><p class="startdd">Create InitLibrary method and call it in Configure or AddTool is not already done </p>
+<p>Add flag to check if ftkInit has been called and then check in AddTool and Startup, report error if not </p>
+<p>Add method AddTool to add tool from geometry as std::vector&lt;vct3&gt; + geometry Id </p>
+<p>Use method AddTool in AddToolIni </p>
+<p>AddTool(JSON value) </p>
+<p>Configure(JSON value) </p>
+<p class="enddd">Can this thing beep on command?  </p>
+</dd>
 <dt><a class="anchor" id="_todo000007"></a>Member <a class="el" href="../../d5/dba/classmts_collector_event.html#a9e9b47581d6445e5f0c5a71f70afe8e7">mtsCollectorEvent::Connect</a>  (void)</dt>
 <dd>copy documentation for <a class="el" href="../../dd/dde/classmts_collector_state.html">mtsCollectorState</a>  </dd>
 <dt><a class="anchor" id="_todo000008"></a>Member <a class="el" href="../../d8/d64/classmts_interface_required.html#a8830a8a10b35d4a57396edbb4e328012">mtsInterfaceRequired::AddSystemEventHandlers</a>  (void)</dt>
 <dd>update documentation Bind command and events. This method needs to provide a user Id so that GetCommandVoid and GetCommandWrite (queued commands) know which mailbox to use. The user Id is provided by the provided interface when calling AllocateResources.  </dd>
-<dt><a class="anchor" id="_todo000013"></a>File <a class="el" href="../../d8/d31/mts_micron_tracker_8h.html">mtsMicronTracker.h</a>  </dt>
+<dt><a class="anchor" id="_todo000014"></a>File <a class="el" href="../../d8/d31/mts_micron_tracker_8h.html">mtsMicronTracker.h</a>  </dt>
 <dd><p class="startdd">Replace current custom video player with an svl Qt widget (<a class="el" href="../../d5/d86/classmts_micron_tracker.html">mtsMicronTracker</a> already provides an svlSampleBuffer). </p>
 <p>ComputeCameraModel method needs error analysis. </p>
 <p>Mapping from markerName to markerHandle. </p>
@@ -107,7 +116,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <p>Fix/suppress _WIN32_WINNT macro redefinition warning. </p>
 <p class="enddd">See sawNDITracker for other common tracking related todos.  </p>
 </dd>
-<dt><a class="anchor" id="_todo000016"></a>File <a class="el" href="../../de/d87/mts_n_d_i_serial_8h.html">mtsNDISerial.h</a>  </dt>
+<dt><a class="anchor" id="_todo000017"></a>File <a class="el" href="../../de/d87/mts_n_d_i_serial_8h.html">mtsNDISerial.h</a>  </dt>
 <dd><p class="startdd">Consider deriving from <a class="el" href="../../d2/d8b/classmts_task_continuous.html">mtsTaskContinuous</a> using an "adaptive" sleep. </p>
 <p>Verify the need for existing sleep times. </p>
 <p>Enable/disable individual tools on-the-fly (or dynamically disable their interfaces). </p>
@@ -125,18 +134,18 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <p>Use a map to convert Tool's MainType to human readable text. </p>
 <p class="enddd">Strategies for error recovery, send an event with a human readable payload, implement in CheckResponse.  </p>
 </dd>
-<dt><a class="anchor" id="_todo000017"></a>File <a class="el" href="../../df/d2a/mts_open_i_g_t_link_8h.html">mtsOpenIGTLink.h</a>  </dt>
+<dt><a class="anchor" id="_todo000018"></a>File <a class="el" href="../../df/d2a/mts_open_i_g_t_link_8h.html">mtsOpenIGTLink.h</a>  </dt>
 <dd><p class="startdd">Handle multiple connections by storing the returned socket pointer in an array. </p>
 <p>Check for cyclic redundancy (CRC). </p>
 <p class="enddd">Handle message types besides TRANSFORM.  </p>
 </dd>
-<dt><a class="anchor" id="_todo000014"></a>File <a class="el" href="../../df/d3b/mts_p_i_d_8h.html">mtsPID.h</a>  </dt>
+<dt><a class="anchor" id="_todo000015"></a>File <a class="el" href="../../df/d3b/mts_p_i_d_8h.html">mtsPID.h</a>  </dt>
 <dd>Add dError filtering  </dd>
-<dt><a class="anchor" id="_todo000019"></a>Class <a class="el" href="../../d5/d80/classmts_robot_i_o1394_qt_widget.html">mtsRobotIO1394QtWidget</a>  </dt>
+<dt><a class="anchor" id="_todo000020"></a>Class <a class="el" href="../../d5/d80/classmts_robot_i_o1394_qt_widget.html">mtsRobotIO1394QtWidget</a>  </dt>
 <dd><p class="startdd">maybe rename this class to <a class="el" href="../../d3/d42/classmts_robot_i_o1394.html">mtsRobotIO1394</a>{Robot,DigitalInputs,Log}QtWidget and create using mtsRobotIO1394FactoryQtWidget </p>
 <p class="enddd">cisst Qt convention is now to start with the Qt prefix, i.e. mtsQtWidgetRobotIO1394 ...  </p>
 </dd>
-<dt><a class="anchor" id="_todo000015"></a>Class <a class="el" href="../../d0/d58/classmts_tele_operation.html">mtsTeleOperation</a>  </dt>
+<dt><a class="anchor" id="_todo000016"></a>Class <a class="el" href="../../d0/d58/classmts_tele_operation.html">mtsTeleOperation</a>  </dt>
 <dd></dd>
 <dt><a class="anchor" id="_todo000009"></a>Class <a class="el" href="../../d8/d6b/classmts_watchdog_server.html">mtsWatchdogServer</a>  </dt>
 <dd>Should be easy to merge server and client into a single object. Could integrate into standard component interfaces.  </dd>
@@ -144,9 +153,9 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <dd><p class="startdd">GetIP() could be static or external to the <a class="el" href="../../d9/d26/classosa_socket.html">osaSocket</a> class. </p>
 <p class="enddd">Perhaps GetLocalhostIP() should be outside the class.  </p>
 </dd>
-<dt><a class="anchor" id="_todo000011"></a>Class <a class="el" href="../../d1/dd2/classprm_velocity_cartesian_set.html">prmVelocityCartesianSet</a>  </dt>
+<dt><a class="anchor" id="_todo000010"></a>Class <a class="el" href="../../d1/dd2/classprm_velocity_cartesian_set.html">prmVelocityCartesianSet</a>  </dt>
 <dd>Review SerializeRaw and DeserializeRaw, they don't seriliaze the frame pointers.  </dd>
-<dt><a class="anchor" id="_todo000010"></a>Class <a class="el" href="../../d1/d9c/classsvl_filter_add_latency.html">svlFilterAddLatency</a>  </dt>
+<dt><a class="anchor" id="_todo000011"></a>Class <a class="el" href="../../d1/d9c/classsvl_filter_add_latency.html">svlFilterAddLatency</a>  </dt>
 <dd><p class="startdd">Check if we could use an stl container to manager the list of samples </p>
 <p>Change API to define latency in seconds </p>
 <p>Remove up/down by a hard coded number of samples </p>
@@ -155,10 +164,10 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <p>Add interface provided to set latency </p>
 <p class="enddd">Add method to report memory size used  </p>
 </dd>
-<dt><a class="anchor" id="_todo000002"></a>Member <a class="el" href="../../dd/d81/classvct_dynamic_matrix.html#a8c20bdf6d0df4b4271cb970dd8f225bd">vctDynamicMatrix&lt; _elementType &gt;::operator=</a>  (const vctReturnDynamicMatrix&lt; value_type &gt; &amp;otherMatrix)</dt>
-<dd>This operator needs some revisions.  </dd>
 <dt><a class="anchor" id="_todo000001"></a>Member <a class="el" href="../../dd/d81/classvct_dynamic_matrix.html#ac0062998c00df7a4e5155c3eac8fddb0">vctDynamicMatrix&lt; _elementType &gt;::operator=</a>  (const vctDynamicConstMatrixBase&lt; __matrixOwnerType, __elementType &gt; &amp;otherMatrix)</dt>
 <dd>This assumes a row major storage. Needs more work.  </dd>
+<dt><a class="anchor" id="_todo000002"></a>Member <a class="el" href="../../dd/d81/classvct_dynamic_matrix.html#a8c20bdf6d0df4b4271cb970dd8f225bd">vctDynamicMatrix&lt; _elementType &gt;::operator=</a>  (const vctReturnDynamicMatrix&lt; value_type &gt; &amp;otherMatrix)</dt>
+<dd>This operator needs some revisions.  </dd>
 <dt><a class="anchor" id="_todo000003"></a>Member <a class="el" href="../../d1/d56/classvct_dynamic_n_array.html#a46790594f24b17dd1f5c808210cf36c8">vctDynamicNArray&lt; _elementType, _dimension &gt;::operator=</a>  (const vctReturnDynamicNArray&lt; value_type, _dimension &gt; &amp;otherNArray)</dt>
 <dd>This operator needs some revisions.  </dd>
 <dt><a class="anchor" id="_todo000004"></a>Class <a class="el" href="../../d8/d91/classvct_plot2_d_base.html">vctPlot2DBase</a>  </dt>

@@ -7,7 +7,7 @@ var searchData=
   ['m_5fmg',['m_Mg',['../d8/dd8/classnmr_l_sq_lin_solution_dynamic.html#aadece8538a491ae3b8496d982fa1a877',1,'nmrLSqLinSolutionDynamic']]],
   ['m_5fn',['m_N',['../d8/dd8/classnmr_l_sq_lin_solution_dynamic.html#a872f898501930333c14736fac245a464',1,'nmrLSqLinSolutionDynamic']]],
   ['m_5fstreambuf',['m_Streambuf',['../d5/d01/classcmn_output_multiplexer.html#a64c336dbeee16f5d94503c2a4265b97c',1,'cmnOutputMultiplexer']]],
-  ['ma',['Ma',['../da/d34/classnmr_l_s_i_solver.html#a7c0ddb46f65e1e8504fba9b247c2b5c6',1,'nmrLSISolver::Ma()'],['../d6/d07/classnmr_l_s_e_i_solver.html#a1cb20a6323aad18c24b11714180e21a6',1,'nmrLSEISolver::MA()']]],
+  ['ma',['MA',['../d6/d07/classnmr_l_s_e_i_solver.html#a1cb20a6323aad18c24b11714180e21a6',1,'nmrLSEISolver::MA()'],['../da/d34/classnmr_l_s_i_solver.html#a7c0ddb46f65e1e8504fba9b247c2b5c6',1,'nmrLSISolver::Ma()']]],
   ['macceleration',['mAcceleration',['../d0/d2e/classrob_l_s_p_b.html#a8526c72ab0442d86ed6abcd6772aaf02',1,'robLSPB']]],
   ['maccelerationtime',['mAccelerationTime',['../d0/d2e/classrob_l_s_p_b.html#af5da64a23030f4447e9e107a2f4e314a',1,'robLSPB']]],
   ['mactuatorbitstocurrentoffsets',['mActuatorBitsToCurrentOffsets',['../d6/dbf/classsaw_robot_i_o1394_1_1osa_robot1394.html#a55fdda8e7c8a25ee495e40146dfe2c34',1,'sawRobotIO1394::osaRobot1394']]],

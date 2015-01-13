@@ -97,7 +97,7 @@ var searchData=
   ['codec',['Codec',['../d8/d39/classsvl_video_codec_base.html#a8a6e5b36251d67fbab74399ba965b46a',1,'svlVideoCodecBase']]],
   ['col',['col',['../d9/dd8/structoni_r_g_b_c_r_x_y_z.html#a66042f0ffba0616df5098f0ae276ed57',1,'oniRGBCRXYZ']]],
   ['collecting',['Collecting',['../d5/dba/classmts_collector_event.html#ae9292be0812681c2a314e048a0a4f0a5',1,'mtsCollectorEvent::Collecting()'],['../dd/d3e/classmts_state_table_1_1_data_collection_info.html#a3cba7424d384d2c04aef689839de610f',1,'mtsStateTable::DataCollectionInfo::Collecting()']]],
-  ['collection',['Collection',['../db/d7d/classmts_collector_qt_component.html#ab2f828d446ea4ab8567f9bf01eee3c07',1,'mtsCollectorQtComponent']]],
+  ['collection',['Collection',['../db/d7d/classmts_collector_qt_component.html#a909f4e8e680f123ec04a1934a6ced498',1,'mtsCollectorQtComponent']]],
   ['collectionstarted',['CollectionStarted',['../dd/d3e/classmts_state_table_1_1_data_collection_info.html#a95b64dcedf855f7881f4903e74101549',1,'mtsStateTable::DataCollectionInfo']]],
   ['collectionstartedeventtrigger',['CollectionStartedEventTrigger',['../d9/d5d/classmts_collector_base.html#aad959016aa62b9f20980c7cb61ccba8a',1,'mtsCollectorBase']]],
   ['collectionstopped',['CollectionStopped',['../dd/d3e/classmts_state_table_1_1_data_collection_info.html#ae4ff6ebaf115c070c00ff0686997383f',1,'mtsStateTable::DataCollectionInfo']]],

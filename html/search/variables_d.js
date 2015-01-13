@@ -6,7 +6,7 @@ var searchData=
   ['nameofrobotio1394',['NameOfRobotIO1394',['../d5/d69/classmts_robot_i_o1394_qt_widget_factory.html#a768d49c9080b3cdd9bfac4739011881e',1,'mtsRobotIO1394QtWidgetFactory']]],
   ['narray',['NArray',['../dd/d8c/classvct_dynamic_const_n_array_base.html#abab29addf55644fbec7540399d586874',1,'vctDynamicConstNArrayBase']]],
   ['navgbytespersec',['nAvgBytesPerSec',['../d1/dfc/struct_w_a_v_e_f_o_r_m_a_t_e_x.html#a9c4552a741e95a77db5ca70559aa460b',1,'WAVEFORMATEX']]],
-  ['nb',['Nb',['../d8/db3/classnmr_s_v_d_r_s_solver.html#a2f397a32b6791b9eb438158f6b620cb5',1,'nmrSVDRSSolver::Nb()'],['../d6/da4/classnmr_h_f_t_i_solver.html#ab83977ce7dee82d78187122861d5492e',1,'nmrHFTISolver::NB()']]],
+  ['nb',['NB',['../d6/da4/classnmr_h_f_t_i_solver.html#ab83977ce7dee82d78187122861d5492e',1,'nmrHFTISolver::NB()'],['../d8/db3/classnmr_s_v_d_r_s_solver.html#a2f397a32b6791b9eb438158f6b620cb5',1,'nmrSVDRSSolver::Nb()']]],
   ['nbbytesreadsofar',['NbBytesReadSoFar',['../d7/d2d/classmts_sartorius_serial.html#a124551b1b4929356d1b40d78666316ed',1,'mtsSartoriusSerial']]],
   ['nblockalign',['nBlockAlign',['../d1/dfc/struct_w_a_v_e_f_o_r_m_a_t_e_x.html#a3b2bf371bd87c8e3ed7d7ed451b19b2c',1,'WAVEFORMATEX']]],
   ['nbytes',['nbytes',['../df/da8/classosa_c_a_n_bus_frame.html#abc694b0742e9c5b7e2db8640caa17565',1,'osaCANBusFrame']]],

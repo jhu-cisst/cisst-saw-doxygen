@@ -3,6 +3,7 @@ var searchData=
   ['nmrbernsteinpolynomial_2eh',['nmrBernsteinPolynomial.h',['../d5/df2/nmr_bernstein_polynomial_8h.html',1,'']]],
   ['nmrbernsteinpolynomiallineintegral_2eh',['nmrBernsteinPolynomialLineIntegral.h',['../d6/d9c/nmr_bernstein_polynomial_line_integral_8h.html',1,'']]],
   ['nmrcallback_2eh',['nmrCallBack.h',['../d1/dbe/nmr_call_back_8h.html',1,'']]],
+  ['nmrconfig_2eh',['nmrConfig.h',['../d1/ddc/nmr_config_8h.html',1,'']]],
   ['nmrconstraintoptimizer_2eh',['nmrConstraintOptimizer.h',['../da/d92/nmr_constraint_optimizer_8h.html',1,'']]],
   ['nmrdynallocpolynomialcontainer_2eh',['nmrDynAllocPolynomialContainer.h',['../d2/d98/nmr_dyn_alloc_polynomial_container_8h.html',1,'']]],
   ['nmrexport_2eh',['nmrExport.h',['../de/da9/nmr_export_8h.html',1,'']]],

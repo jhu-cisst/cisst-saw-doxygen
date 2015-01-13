@@ -1,0 +1,187 @@
+\hypertarget{classmts_atracsys_fusion_track}{}\section{mts\+Atracsys\+Fusion\+Track Class Reference}
+\label{classmts_atracsys_fusion_track}\index{mts\+Atracsys\+Fusion\+Track@{mts\+Atracsys\+Fusion\+Track}}
+
+
+{\ttfamily \#include $<$mts\+Atracsys\+Fusion\+Track.\+h$>$}
+
+Inheritance diagram for mts\+Atracsys\+Fusion\+Track\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{dd/dd4/classmts_atracsys_fusion_track}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmts_atracsys_fusion_track_a5bcca2cd451655e117fbeeabc7a23d33}{mts\+Atracsys\+Fusion\+Track} (const std\+::string \&component\+Name)
+\item 
+\hyperlink{classmts_atracsys_fusion_track_a8a04117b698ea15b2e950d41b5e744bc}{mts\+Atracsys\+Fusion\+Track} (const \hyperlink{classmts_task_continuous_constructor_arg}{mts\+Task\+Continuous\+Constructor\+Arg} \&arg)
+\item 
+\hyperlink{classmts_atracsys_fusion_track_ab96e81a7d51c76dde68824c2c278856e}{$\sim$mts\+Atracsys\+Fusion\+Track} (void)
+\item 
+void \hyperlink{classmts_atracsys_fusion_track_a0d38344ac2e2b6625b8d2b962907e3c2}{Construct} (void)
+\item 
+void \hyperlink{classmts_atracsys_fusion_track_a5cb7ab3697df62aeba09323a6850b0ed}{Configure} (const std\+::string \&filename=\char`\"{}\char`\"{})
+\item 
+void \hyperlink{classmts_atracsys_fusion_track_a0fd653e583a93199b17363d1ea814c9e}{Startup} (void)
+\item 
+void \hyperlink{classmts_atracsys_fusion_track_a061e6f4c62d6c55763d29d52b39c3d8b}{Run} (void)
+\item 
+void \hyperlink{classmts_atracsys_fusion_track_a07fb7211b705cc4c8202aeb88bed9393}{Cleanup} (void)
+\item 
+bool \hyperlink{classmts_atracsys_fusion_track_a51665abf9e4115443a5f462f086b305d}{Add\+Tool\+Ini} (const std\+::string \&tool\+Name, const std\+::string \&file\+Name)
+\item 
+size\+\_\+t \hyperlink{classmts_atracsys_fusion_track_ab6b5df551fecc8da355afdcbeebfb5a4}{Get\+Number\+Of\+Tools} (void) const 
+\item 
+std\+::string \hyperlink{classmts_atracsys_fusion_track_af05c7d17287e4688fcdaea85861d67d9}{Get\+Tool\+Name} (const size\+\_\+t index) const 
+\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classcmn_named_map}{cmn\+Named\+Map}$<$ mts\+Atracsys\+Fusion\+Track\+Tool $>$ \hyperlink{classmts_atracsys_fusion_track_a2c58e85f9c00731a4b06b57142177ba1}{Tools\+Type}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+mts\+Atracsys\+Fusion\+Track\+Internals $\ast$ \hyperlink{classmts_atracsys_fusion_track_a2bdd364a64be4962039fad4b810e7997}{Internals}
+\item 
+\hyperlink{classmts_atracsys_fusion_track_a2c58e85f9c00731a4b06b57142177ba1}{Tools\+Type} \hyperlink{classmts_atracsys_fusion_track_a1d04ed198c5523f65f43758ff7fb7813}{Tools}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000013}{Todo}]Create Init\+Library method and call it in Configure or Add\+Tool is not already done 
+
+Add flag to check if ftk\+Init has been called and then check in Add\+Tool and Startup, report error if not 
+
+Add method Add\+Tool to add tool from geometry as std\+::vector$<$vct3$>$ + geometry Id 
+
+Use method Add\+Tool in Add\+Tool\+Ini 
+
+Add\+Tool(\+J\+S\+O\+N value) 
+
+Configure(\+J\+S\+O\+N value) 
+
+Can this thing beep on command? \end{DoxyRefDesc}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classmts_atracsys_fusion_track_a2c58e85f9c00731a4b06b57142177ba1}{}\index{mts\+Atracsys\+Fusion\+Track@{mts\+Atracsys\+Fusion\+Track}!Tools\+Type@{Tools\+Type}}
+\index{Tools\+Type@{Tools\+Type}!mts\+Atracsys\+Fusion\+Track@{mts\+Atracsys\+Fusion\+Track}}
+\subsubsection[{Tools\+Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf cmn\+Named\+Map}$<$mts\+Atracsys\+Fusion\+Track\+Tool$>$ {\bf mts\+Atracsys\+Fusion\+Track\+::\+Tools\+Type}\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_atracsys_fusion_track_a2c58e85f9c00731a4b06b57142177ba1}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmts_atracsys_fusion_track_a5bcca2cd451655e117fbeeabc7a23d33}{}\index{mts\+Atracsys\+Fusion\+Track@{mts\+Atracsys\+Fusion\+Track}!mts\+Atracsys\+Fusion\+Track@{mts\+Atracsys\+Fusion\+Track}}
+\index{mts\+Atracsys\+Fusion\+Track@{mts\+Atracsys\+Fusion\+Track}!mts\+Atracsys\+Fusion\+Track@{mts\+Atracsys\+Fusion\+Track}}
+\subsubsection[{mts\+Atracsys\+Fusion\+Track}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Atracsys\+Fusion\+Track\+::mts\+Atracsys\+Fusion\+Track (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{component\+Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_atracsys_fusion_track_a5bcca2cd451655e117fbeeabc7a23d33}
+\hypertarget{classmts_atracsys_fusion_track_a8a04117b698ea15b2e950d41b5e744bc}{}\index{mts\+Atracsys\+Fusion\+Track@{mts\+Atracsys\+Fusion\+Track}!mts\+Atracsys\+Fusion\+Track@{mts\+Atracsys\+Fusion\+Track}}
+\index{mts\+Atracsys\+Fusion\+Track@{mts\+Atracsys\+Fusion\+Track}!mts\+Atracsys\+Fusion\+Track@{mts\+Atracsys\+Fusion\+Track}}
+\subsubsection[{mts\+Atracsys\+Fusion\+Track}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Atracsys\+Fusion\+Track\+::mts\+Atracsys\+Fusion\+Track (
+\begin{DoxyParamCaption}
+\item[{const {\bf mts\+Task\+Continuous\+Constructor\+Arg} \&}]{arg}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_atracsys_fusion_track_a8a04117b698ea15b2e950d41b5e744bc}
+\hypertarget{classmts_atracsys_fusion_track_ab96e81a7d51c76dde68824c2c278856e}{}\index{mts\+Atracsys\+Fusion\+Track@{mts\+Atracsys\+Fusion\+Track}!````~mts\+Atracsys\+Fusion\+Track@{$\sim$mts\+Atracsys\+Fusion\+Track}}
+\index{````~mts\+Atracsys\+Fusion\+Track@{$\sim$mts\+Atracsys\+Fusion\+Track}!mts\+Atracsys\+Fusion\+Track@{mts\+Atracsys\+Fusion\+Track}}
+\subsubsection[{$\sim$mts\+Atracsys\+Fusion\+Track}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Atracsys\+Fusion\+Track\+::$\sim$mts\+Atracsys\+Fusion\+Track (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_atracsys_fusion_track_ab96e81a7d51c76dde68824c2c278856e}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classmts_atracsys_fusion_track_a51665abf9e4115443a5f462f086b305d}{}\index{mts\+Atracsys\+Fusion\+Track@{mts\+Atracsys\+Fusion\+Track}!Add\+Tool\+Ini@{Add\+Tool\+Ini}}
+\index{Add\+Tool\+Ini@{Add\+Tool\+Ini}!mts\+Atracsys\+Fusion\+Track@{mts\+Atracsys\+Fusion\+Track}}
+\subsubsection[{Add\+Tool\+Ini}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Atracsys\+Fusion\+Track\+::\+Add\+Tool\+Ini (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{tool\+Name, }
+\item[{const std\+::string \&}]{file\+Name}
+\end{DoxyParamCaption}
+)}\label{classmts_atracsys_fusion_track_a51665abf9e4115443a5f462f086b305d}
+\hypertarget{classmts_atracsys_fusion_track_a07fb7211b705cc4c8202aeb88bed9393}{}\index{mts\+Atracsys\+Fusion\+Track@{mts\+Atracsys\+Fusion\+Track}!Cleanup@{Cleanup}}
+\index{Cleanup@{Cleanup}!mts\+Atracsys\+Fusion\+Track@{mts\+Atracsys\+Fusion\+Track}}
+\subsubsection[{Cleanup}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Atracsys\+Fusion\+Track\+::\+Cleanup (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_atracsys_fusion_track_a07fb7211b705cc4c8202aeb88bed9393}
+Virtual method that gets overloaded, and is run after the component gets killed using \hyperlink{classmts_task_continuous_ad1f8145306e074fbea8baab3beef4c5b}{Kill()} method. 
+
+Reimplemented from \hyperlink{classmts_component_a891f330f4fde7d831dcf7dc537dc5e81}{mts\+Component}.
+
+\hypertarget{classmts_atracsys_fusion_track_a5cb7ab3697df62aeba09323a6850b0ed}{}\index{mts\+Atracsys\+Fusion\+Track@{mts\+Atracsys\+Fusion\+Track}!Configure@{Configure}}
+\index{Configure@{Configure}!mts\+Atracsys\+Fusion\+Track@{mts\+Atracsys\+Fusion\+Track}}
+\subsubsection[{Configure}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Atracsys\+Fusion\+Track\+::\+Configure (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{filename = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_atracsys_fusion_track_a5cb7ab3697df62aeba09323a6850b0ed}
+The virtual method so that the interface or tasks can configure themselves 
+
+Reimplemented from \hyperlink{classmts_component_ad872432876de7879dc96c232b411c146}{mts\+Component}.
+
+\hypertarget{classmts_atracsys_fusion_track_a0d38344ac2e2b6625b8d2b962907e3c2}{}\index{mts\+Atracsys\+Fusion\+Track@{mts\+Atracsys\+Fusion\+Track}!Construct@{Construct}}
+\index{Construct@{Construct}!mts\+Atracsys\+Fusion\+Track@{mts\+Atracsys\+Fusion\+Track}}
+\subsubsection[{Construct}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Atracsys\+Fusion\+Track\+::\+Construct (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classmts_atracsys_fusion_track_a0d38344ac2e2b6625b8d2b962907e3c2}
+\hypertarget{classmts_atracsys_fusion_track_ab6b5df551fecc8da355afdcbeebfb5a4}{}\index{mts\+Atracsys\+Fusion\+Track@{mts\+Atracsys\+Fusion\+Track}!Get\+Number\+Of\+Tools@{Get\+Number\+Of\+Tools}}
+\index{Get\+Number\+Of\+Tools@{Get\+Number\+Of\+Tools}!mts\+Atracsys\+Fusion\+Track@{mts\+Atracsys\+Fusion\+Track}}
+\subsubsection[{Get\+Number\+Of\+Tools}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t mts\+Atracsys\+Fusion\+Track\+::\+Get\+Number\+Of\+Tools (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_atracsys_fusion_track_ab6b5df551fecc8da355afdcbeebfb5a4}
+\hypertarget{classmts_atracsys_fusion_track_af05c7d17287e4688fcdaea85861d67d9}{}\index{mts\+Atracsys\+Fusion\+Track@{mts\+Atracsys\+Fusion\+Track}!Get\+Tool\+Name@{Get\+Tool\+Name}}
+\index{Get\+Tool\+Name@{Get\+Tool\+Name}!mts\+Atracsys\+Fusion\+Track@{mts\+Atracsys\+Fusion\+Track}}
+\subsubsection[{Get\+Tool\+Name}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string mts\+Atracsys\+Fusion\+Track\+::\+Get\+Tool\+Name (
+\begin{DoxyParamCaption}
+\item[{const size\+\_\+t}]{index}
+\end{DoxyParamCaption}
+) const}\label{classmts_atracsys_fusion_track_af05c7d17287e4688fcdaea85861d67d9}
+\hypertarget{classmts_atracsys_fusion_track_a061e6f4c62d6c55763d29d52b39c3d8b}{}\index{mts\+Atracsys\+Fusion\+Track@{mts\+Atracsys\+Fusion\+Track}!Run@{Run}}
+\index{Run@{Run}!mts\+Atracsys\+Fusion\+Track@{mts\+Atracsys\+Fusion\+Track}}
+\subsubsection[{Run}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Atracsys\+Fusion\+Track\+::\+Run (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_atracsys_fusion_track_a061e6f4c62d6c55763d29d52b39c3d8b}
+Pure virtual method that gets overloaded to run the actual task. 
+
+Implements \hyperlink{classmts_task_a20e18c9479cb650792456c32ee689834}{mts\+Task}.
+
+\hypertarget{classmts_atracsys_fusion_track_a0fd653e583a93199b17363d1ea814c9e}{}\index{mts\+Atracsys\+Fusion\+Track@{mts\+Atracsys\+Fusion\+Track}!Startup@{Startup}}
+\index{Startup@{Startup}!mts\+Atracsys\+Fusion\+Track@{mts\+Atracsys\+Fusion\+Track}}
+\subsubsection[{Startup}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Atracsys\+Fusion\+Track\+::\+Startup (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_atracsys_fusion_track_a0fd653e583a93199b17363d1ea814c9e}
+Virtual method that gets overloaded, and is run before the component is started. 
+
+Reimplemented from \hyperlink{classmts_component_aaf28f0262b44eb6866e10089a02fa6e4}{mts\+Component}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classmts_atracsys_fusion_track_a2bdd364a64be4962039fad4b810e7997}{}\index{mts\+Atracsys\+Fusion\+Track@{mts\+Atracsys\+Fusion\+Track}!Internals@{Internals}}
+\index{Internals@{Internals}!mts\+Atracsys\+Fusion\+Track@{mts\+Atracsys\+Fusion\+Track}}
+\subsubsection[{Internals}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Atracsys\+Fusion\+Track\+Internals$\ast$ mts\+Atracsys\+Fusion\+Track\+::\+Internals\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_atracsys_fusion_track_a2bdd364a64be4962039fad4b810e7997}
+\hypertarget{classmts_atracsys_fusion_track_a1d04ed198c5523f65f43758ff7fb7813}{}\index{mts\+Atracsys\+Fusion\+Track@{mts\+Atracsys\+Fusion\+Track}!Tools@{Tools}}
+\index{Tools@{Tools}!mts\+Atracsys\+Fusion\+Track@{mts\+Atracsys\+Fusion\+Track}}
+\subsubsection[{Tools}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Tools\+Type} mts\+Atracsys\+Fusion\+Track\+::\+Tools\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_atracsys_fusion_track_a1d04ed198c5523f65f43758ff7fb7813}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/saw\+Atracsys\+Fusion\+Track/include/saw\+Atracsys\+Fusion\+Track/\hyperlink{mts_atracsys_fusion_track_8h}{mts\+Atracsys\+Fusion\+Track.\+h}\end{DoxyCompactItemize}

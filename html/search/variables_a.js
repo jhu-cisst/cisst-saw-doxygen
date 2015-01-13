@@ -6,7 +6,7 @@ var searchData=
   ['keyboardinput',['KeyboardInput',['../d1/df6/classmts_keyboard.html#a23ecc71912ee8cf5f722a93a1a29613e',1,'mtsKeyboard']]],
   ['keyevent',['KeyEvent',['../d1/df6/classmts_keyboard.html#afdd1b226b01e8d9da4c14b83c7c61b82',1,'mtsKeyboard']]],
   ['ki',['Ki',['../de/d85/classmts_p_i_d.html#a979243fca1ea255c49b241658246d964',1,'mtsPID']]],
-  ['kinematics',['kinematics',['../d5/dd2/classrob_link.html#a4aa26f90307b406c336f9b7fae00b905',1,'robLink::kinematics()'],['../d4/d95/classmts_v_f_base.html#ad68e05d7529b31405ab7efc74a2dbeaa',1,'mtsVFBase::Kinematics()'],['../d7/d50/classmts_v_f_controller.html#af130251a32e9663507ab4d0ecf2c1ebe',1,'mtsVFController::Kinematics()']]],
+  ['kinematics',['Kinematics',['../d4/d95/classmts_v_f_base.html#ad68e05d7529b31405ab7efc74a2dbeaa',1,'mtsVFBase::Kinematics()'],['../d7/d50/classmts_v_f_controller.html#af130251a32e9663507ab4d0ecf2c1ebe',1,'mtsVFController::Kinematics()'],['../d5/dd2/classrob_link.html#a4aa26f90307b406c336f9b7fae00b905',1,'robLink::kinematics()']]],
   ['kp',['Kp',['../d0/daa/classrob_computed_torque.html#a11a6fdb06f86a2b81402c1c872c23484',1,'robComputedTorque::Kp()'],['../de/d85/classmts_p_i_d.html#a0aa502158f417e137495a5c2ded4c5d0',1,'mtsPID::Kp()']]],
   ['krank',['krank',['../d6/da4/classnmr_h_f_t_i_solver.html#ac7a0dd2e365ca0310b5bb988d7b0f5b2',1,'nmrHFTISolver']]]
 ];

@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['n',['N',['../d3/dbb/group__cisst_numerical.html#gga8bc802fdd01983a924581cc069adbb4fa017d2b71061eea6ea68ce5346c3bc89c',1,'nmrSVDFixedSizeData']]],
-  ['nb',['NB',['../d3/dbb/group__cisst_numerical.html#gga4ef8ae2ba4a78f0b89803798016b5275a7aa4b91bbfeaafff839f5290659f8067',1,'nmrInverseDynamicData::NB()'],['../d3/dbb/group__cisst_numerical.html#gga8d5c908167a6894978180395e058b508a23462bd6af096d6bf2b131c334abb82f',1,'nmrInverseFixedSizeData::NB()']]],
+  ['n',['N',['../d3/dbb/group__cisst_numerical.html#gga4b329a4e5f612430051b43225bd23a1ba017d2b71061eea6ea68ce5346c3bc89c',1,'nmrSVDFixedSizeData']]],
+  ['nb',['NB',['../d3/dbb/group__cisst_numerical.html#ggad99b8f3eaeb516bd937224b0209b27f0a7aa4b91bbfeaafff839f5290659f8067',1,'nmrInverseDynamicData::NB()'],['../d3/dbb/group__cisst_numerical.html#gga9faf581415b6d28c6eec597d66949f1da23462bd6af096d6bf2b131c334abb82f',1,'nmrInverseFixedSizeData::NB()']]],
   ['nb_5faxis',['NB_AXIS',['../d9/d04/classmts_lo_po_mo_co.html#a933389a16a909530cb872cb7e2a03e4eac6dba0b930a9af0a1804587423ca4878',1,'mtsLoPoMoCo']]],
   ['nb_5fjoints',['NB_JOINTS',['../d4/d52/classmts_novint_h_d_l.html#a8724392125cc09d43cf7f08aa55758c2ac8cb22af32b40caa61bd313eafc3d9f0',1,'mtsNovintHDL::NB_JOINTS()'],['../d1/d8f/classmts_sensable_h_d.html#a84d35b044861ecfea50f9fba325ad26daa92e43e72ff821fcb7bb36577c22cab4',1,'mtsSensableHD::NB_JOINTS()']]],
   ['nmr_5fboth_5fcontradiction',['NMR_BOTH_CONTRADICTION',['../d0/d68/classnmr_constraint_optimizer.html#ad46bf972892431d2c0a43a7099aec898aa25395952bb1907f0f8911e4d197c04b',1,'nmrConstraintOptimizer']]],
