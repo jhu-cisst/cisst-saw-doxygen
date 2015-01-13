@@ -1,0 +1,278 @@
+\hypertarget{classosa_c_a_n_bus}{}\section{osa\+C\+A\+N\+Bus Class Reference}
+\label{classosa_c_a_n_bus}\index{osa\+C\+A\+N\+Bus@{osa\+C\+A\+N\+Bus}}
+
+
+Generic C\+A\+N bus.  
+
+
+
+
+{\ttfamily \#include $<$osa\+C\+A\+N\+Bus.\+h$>$}
+
+Inheritance diagram for osa\+C\+A\+N\+Bus\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{de/dbc/classosa_c_a_n_bus}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classosa_c_a_n_bus_1_1_filter}{Filter}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classosa_c_a_n_bus_ae977dbc0e1c16772395408c8e018fe6c}{Rate} \{ \hyperlink{classosa_c_a_n_bus_ae977dbc0e1c16772395408c8e018fe6caba07be3d817138593a2d9b20beb2fd7b}{R\+A\+T\+E\+\_\+150} =150000, 
+\hyperlink{classosa_c_a_n_bus_ae977dbc0e1c16772395408c8e018fe6cacfba6e26887df2910d93f4d2dcf70b3e}{R\+A\+T\+E\+\_\+300} =300000, 
+\hyperlink{classosa_c_a_n_bus_ae977dbc0e1c16772395408c8e018fe6ca17b91a8147de2124aca3198a0bfcb7b0}{R\+A\+T\+E\+\_\+1000} =1000000
+ \}
+\begin{DoxyCompactList}\small\item\em The different C\+A\+N rates. \end{DoxyCompactList}\item 
+enum \hyperlink{classosa_c_a_n_bus_a6fa3e95ec4c36932d0640e40e0748fde}{Errno} \{ \hyperlink{classosa_c_a_n_bus_a6fa3e95ec4c36932d0640e40e0748fdeaef10d7d2c42027e99e8b6662a516adef}{E\+S\+U\+C\+C\+E\+S\+S}, 
+\hyperlink{classosa_c_a_n_bus_a6fa3e95ec4c36932d0640e40e0748fdea2bd4b249945acf638e8d93c36b122150}{E\+F\+A\+I\+L\+U\+R\+E}
+ \}
+\begin{DoxyCompactList}\small\item\em The different C\+A\+N rates. \end{DoxyCompactList}\item 
+enum \hyperlink{classosa_c_a_n_bus_a74fe35c6059237887431f3ccece7b21b}{Flags} \{ \hyperlink{classosa_c_a_n_bus_a74fe35c6059237887431f3ccece7b21ba30f701fa6e0dba6e274540941ccd3978}{M\+S\+G\+\_\+\+N\+O\+F\+L\+A\+G} = 0x00, 
+\hyperlink{classosa_c_a_n_bus_a74fe35c6059237887431f3ccece7b21baf6e1a4ae7ca482b35052ce540ff572a9}{M\+S\+G\+\_\+\+C\+O\+N\+F\+I\+R\+M} = 0x01, 
+\hyperlink{classosa_c_a_n_bus_a74fe35c6059237887431f3ccece7b21bae3b54980d3955fa497e0c19728dde774}{M\+S\+G\+\_\+\+D\+O\+N\+T\+W\+A\+I\+T} = 0x02
+ \}
+\item 
+enum \hyperlink{classosa_c_a_n_bus_a992406c83a336e95fb4a09b0b13df786}{Loopback} \{ \hyperlink{classosa_c_a_n_bus_a992406c83a336e95fb4a09b0b13df786aea134020b1d03c7df95f141401e2cb0f}{L\+O\+O\+P\+B\+A\+C\+K\+\_\+\+O\+N}, 
+\hyperlink{classosa_c_a_n_bus_a992406c83a336e95fb4a09b0b13df786ae2557509d0c1ac68029eeb6bdf6e703d}{L\+O\+O\+P\+B\+A\+C\+K\+\_\+\+O\+F\+F}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classosa_c_a_n_bus_abe19d4eebf9d21dcc3f23eb245716a89}{osa\+C\+A\+N\+Bus} (\hyperlink{classosa_c_a_n_bus_ae977dbc0e1c16772395408c8e018fe6c}{osa\+C\+A\+N\+Bus\+::\+Rate} \hyperlink{classosa_c_a_n_bus_a4ff86a9ecf19161b1f34666888e0a331}{rate}, \hyperlink{classosa_c_a_n_bus_a992406c83a336e95fb4a09b0b13df786}{osa\+C\+A\+N\+Bus\+::\+Loopback} \hyperlink{classosa_c_a_n_bus_a724e9c478dd48908882e29f189d98968}{loopback}=\hyperlink{classosa_c_a_n_bus_a992406c83a336e95fb4a09b0b13df786ae2557509d0c1ac68029eeb6bdf6e703d}{osa\+C\+A\+N\+Bus\+::\+L\+O\+O\+P\+B\+A\+C\+K\+\_\+\+O\+F\+F})
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+virtual \hyperlink{classosa_c_a_n_bus_a055aece68a45f1e8c8375c62eaaf8e0c}{$\sim$osa\+C\+A\+N\+Bus} ()
+\begin{DoxyCompactList}\small\item\em Default destructor. \end{DoxyCompactList}\item 
+virtual \hyperlink{classosa_c_a_n_bus_a6fa3e95ec4c36932d0640e40e0748fde}{osa\+C\+A\+N\+Bus\+::\+Errno} \hyperlink{classosa_c_a_n_bus_a3471574c0625ff4ec43b2fa8a3a020af}{Open} ()=0
+\begin{DoxyCompactList}\small\item\em Open the C\+A\+N device. \end{DoxyCompactList}\item 
+virtual \hyperlink{classosa_c_a_n_bus_a6fa3e95ec4c36932d0640e40e0748fde}{osa\+C\+A\+N\+Bus\+::\+Errno} \hyperlink{classosa_c_a_n_bus_aeabd3fe0c7db2c13978834f4bd2f08db}{Close} ()=0
+\begin{DoxyCompactList}\small\item\em Close the C\+A\+N device. \end{DoxyCompactList}\item 
+virtual \hyperlink{classosa_c_a_n_bus_a6fa3e95ec4c36932d0640e40e0748fde}{osa\+C\+A\+N\+Bus\+::\+Errno} \hyperlink{classosa_c_a_n_bus_a21b88fd2a857089845305d1e2eabb5b9}{Send} (const \hyperlink{classosa_c_a_n_bus_frame}{osa\+C\+A\+N\+Bus\+Frame} \&frame, \hyperlink{classosa_c_a_n_bus_a74fe35c6059237887431f3ccece7b21b}{osa\+C\+A\+N\+Bus\+::\+Flags} flags=\hyperlink{classosa_c_a_n_bus_a74fe35c6059237887431f3ccece7b21ba30f701fa6e0dba6e274540941ccd3978}{osa\+C\+A\+N\+Bus\+::\+M\+S\+G\+\_\+\+N\+O\+F\+L\+A\+G})=0
+\begin{DoxyCompactList}\small\item\em Send a C\+A\+N frame on the bus. \end{DoxyCompactList}\item 
+virtual \hyperlink{classosa_c_a_n_bus_a6fa3e95ec4c36932d0640e40e0748fde}{osa\+C\+A\+N\+Bus\+::\+Errno} \hyperlink{classosa_c_a_n_bus_a8c095ec60f161eaf8f014b039f62faab}{Recv} (\hyperlink{classosa_c_a_n_bus_frame}{osa\+C\+A\+N\+Bus\+Frame} \&frame, \hyperlink{classosa_c_a_n_bus_a74fe35c6059237887431f3ccece7b21b}{osa\+C\+A\+N\+Bus\+::\+Flags} flags=\hyperlink{classosa_c_a_n_bus_a74fe35c6059237887431f3ccece7b21ba30f701fa6e0dba6e274540941ccd3978}{osa\+C\+A\+N\+Bus\+::\+M\+S\+G\+\_\+\+N\+O\+F\+L\+A\+G})=0
+\begin{DoxyCompactList}\small\item\em Receive a C\+A\+N frame. \end{DoxyCompactList}\item 
+virtual \hyperlink{classosa_c_a_n_bus_a6fa3e95ec4c36932d0640e40e0748fde}{osa\+C\+A\+N\+Bus\+::\+Errno} \hyperlink{classosa_c_a_n_bus_abc63dc1654ae14c4e0705c01cd3a6405}{Add\+Filter} (const \hyperlink{classosa_c_a_n_bus_1_1_filter}{osa\+C\+A\+N\+Bus\+::\+Filter} \&filter)=0
+\begin{DoxyCompactList}\small\item\em Add a C\+A\+N filter to the device. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classosa_c_a_n_bus_ae977dbc0e1c16772395408c8e018fe6c}{osa\+C\+A\+N\+Bus\+::\+Rate} \hyperlink{classosa_c_a_n_bus_a4ff86a9ecf19161b1f34666888e0a331}{rate}
+\begin{DoxyCompactList}\small\item\em The rate of the device. \end{DoxyCompactList}\item 
+\hyperlink{classosa_c_a_n_bus_a992406c83a336e95fb4a09b0b13df786}{osa\+C\+A\+N\+Bus\+::\+Loopback} \hyperlink{classosa_c_a_n_bus_a724e9c478dd48908882e29f189d98968}{loopback}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Generic C\+A\+N bus. 
+
+The only thing this class does is to define the interface that must be implemented by a C\+A\+N bus. Any implementation of a C\+A\+N device depends on an actual device driver. 
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classosa_c_a_n_bus_a6fa3e95ec4c36932d0640e40e0748fde}{}\index{osa\+C\+A\+N\+Bus@{osa\+C\+A\+N\+Bus}!Errno@{Errno}}
+\index{Errno@{Errno}!osa\+C\+A\+N\+Bus@{osa\+C\+A\+N\+Bus}}
+\subsubsection[{Errno}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf osa\+C\+A\+N\+Bus\+::\+Errno}}\label{classosa_c_a_n_bus_a6fa3e95ec4c36932d0640e40e0748fde}
+
+
+The different C\+A\+N rates. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{E\+S\+U\+C\+C\+E\+S\+S@{E\+S\+U\+C\+C\+E\+S\+S}!osa\+C\+A\+N\+Bus@{osa\+C\+A\+N\+Bus}}\index{osa\+C\+A\+N\+Bus@{osa\+C\+A\+N\+Bus}!E\+S\+U\+C\+C\+E\+S\+S@{E\+S\+U\+C\+C\+E\+S\+S}}\item[{\em 
+\hypertarget{classosa_c_a_n_bus_a6fa3e95ec4c36932d0640e40e0748fdeaef10d7d2c42027e99e8b6662a516adef}{}E\+S\+U\+C\+C\+E\+S\+S\label{classosa_c_a_n_bus_a6fa3e95ec4c36932d0640e40e0748fdeaef10d7d2c42027e99e8b6662a516adef}
+}]\index{E\+F\+A\+I\+L\+U\+R\+E@{E\+F\+A\+I\+L\+U\+R\+E}!osa\+C\+A\+N\+Bus@{osa\+C\+A\+N\+Bus}}\index{osa\+C\+A\+N\+Bus@{osa\+C\+A\+N\+Bus}!E\+F\+A\+I\+L\+U\+R\+E@{E\+F\+A\+I\+L\+U\+R\+E}}\item[{\em 
+\hypertarget{classosa_c_a_n_bus_a6fa3e95ec4c36932d0640e40e0748fdea2bd4b249945acf638e8d93c36b122150}{}E\+F\+A\+I\+L\+U\+R\+E\label{classosa_c_a_n_bus_a6fa3e95ec4c36932d0640e40e0748fdea2bd4b249945acf638e8d93c36b122150}
+}]\end{description}
+\end{Desc}
+\hypertarget{classosa_c_a_n_bus_a74fe35c6059237887431f3ccece7b21b}{}\index{osa\+C\+A\+N\+Bus@{osa\+C\+A\+N\+Bus}!Flags@{Flags}}
+\index{Flags@{Flags}!osa\+C\+A\+N\+Bus@{osa\+C\+A\+N\+Bus}}
+\subsubsection[{Flags}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf osa\+C\+A\+N\+Bus\+::\+Flags}}\label{classosa_c_a_n_bus_a74fe35c6059237887431f3ccece7b21b}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{M\+S\+G\+\_\+\+N\+O\+F\+L\+A\+G@{M\+S\+G\+\_\+\+N\+O\+F\+L\+A\+G}!osa\+C\+A\+N\+Bus@{osa\+C\+A\+N\+Bus}}\index{osa\+C\+A\+N\+Bus@{osa\+C\+A\+N\+Bus}!M\+S\+G\+\_\+\+N\+O\+F\+L\+A\+G@{M\+S\+G\+\_\+\+N\+O\+F\+L\+A\+G}}\item[{\em 
+\hypertarget{classosa_c_a_n_bus_a74fe35c6059237887431f3ccece7b21ba30f701fa6e0dba6e274540941ccd3978}{}M\+S\+G\+\_\+\+N\+O\+F\+L\+A\+G\label{classosa_c_a_n_bus_a74fe35c6059237887431f3ccece7b21ba30f701fa6e0dba6e274540941ccd3978}
+}]\index{M\+S\+G\+\_\+\+C\+O\+N\+F\+I\+R\+M@{M\+S\+G\+\_\+\+C\+O\+N\+F\+I\+R\+M}!osa\+C\+A\+N\+Bus@{osa\+C\+A\+N\+Bus}}\index{osa\+C\+A\+N\+Bus@{osa\+C\+A\+N\+Bus}!M\+S\+G\+\_\+\+C\+O\+N\+F\+I\+R\+M@{M\+S\+G\+\_\+\+C\+O\+N\+F\+I\+R\+M}}\item[{\em 
+\hypertarget{classosa_c_a_n_bus_a74fe35c6059237887431f3ccece7b21baf6e1a4ae7ca482b35052ce540ff572a9}{}M\+S\+G\+\_\+\+C\+O\+N\+F\+I\+R\+M\label{classosa_c_a_n_bus_a74fe35c6059237887431f3ccece7b21baf6e1a4ae7ca482b35052ce540ff572a9}
+}]\index{M\+S\+G\+\_\+\+D\+O\+N\+T\+W\+A\+I\+T@{M\+S\+G\+\_\+\+D\+O\+N\+T\+W\+A\+I\+T}!osa\+C\+A\+N\+Bus@{osa\+C\+A\+N\+Bus}}\index{osa\+C\+A\+N\+Bus@{osa\+C\+A\+N\+Bus}!M\+S\+G\+\_\+\+D\+O\+N\+T\+W\+A\+I\+T@{M\+S\+G\+\_\+\+D\+O\+N\+T\+W\+A\+I\+T}}\item[{\em 
+\hypertarget{classosa_c_a_n_bus_a74fe35c6059237887431f3ccece7b21bae3b54980d3955fa497e0c19728dde774}{}M\+S\+G\+\_\+\+D\+O\+N\+T\+W\+A\+I\+T\label{classosa_c_a_n_bus_a74fe35c6059237887431f3ccece7b21bae3b54980d3955fa497e0c19728dde774}
+}]\end{description}
+\end{Desc}
+\hypertarget{classosa_c_a_n_bus_a992406c83a336e95fb4a09b0b13df786}{}\index{osa\+C\+A\+N\+Bus@{osa\+C\+A\+N\+Bus}!Loopback@{Loopback}}
+\index{Loopback@{Loopback}!osa\+C\+A\+N\+Bus@{osa\+C\+A\+N\+Bus}}
+\subsubsection[{Loopback}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf osa\+C\+A\+N\+Bus\+::\+Loopback}}\label{classosa_c_a_n_bus_a992406c83a336e95fb4a09b0b13df786}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{L\+O\+O\+P\+B\+A\+C\+K\+\_\+\+O\+N@{L\+O\+O\+P\+B\+A\+C\+K\+\_\+\+O\+N}!osa\+C\+A\+N\+Bus@{osa\+C\+A\+N\+Bus}}\index{osa\+C\+A\+N\+Bus@{osa\+C\+A\+N\+Bus}!L\+O\+O\+P\+B\+A\+C\+K\+\_\+\+O\+N@{L\+O\+O\+P\+B\+A\+C\+K\+\_\+\+O\+N}}\item[{\em 
+\hypertarget{classosa_c_a_n_bus_a992406c83a336e95fb4a09b0b13df786aea134020b1d03c7df95f141401e2cb0f}{}L\+O\+O\+P\+B\+A\+C\+K\+\_\+\+O\+N\label{classosa_c_a_n_bus_a992406c83a336e95fb4a09b0b13df786aea134020b1d03c7df95f141401e2cb0f}
+}]\index{L\+O\+O\+P\+B\+A\+C\+K\+\_\+\+O\+F\+F@{L\+O\+O\+P\+B\+A\+C\+K\+\_\+\+O\+F\+F}!osa\+C\+A\+N\+Bus@{osa\+C\+A\+N\+Bus}}\index{osa\+C\+A\+N\+Bus@{osa\+C\+A\+N\+Bus}!L\+O\+O\+P\+B\+A\+C\+K\+\_\+\+O\+F\+F@{L\+O\+O\+P\+B\+A\+C\+K\+\_\+\+O\+F\+F}}\item[{\em 
+\hypertarget{classosa_c_a_n_bus_a992406c83a336e95fb4a09b0b13df786ae2557509d0c1ac68029eeb6bdf6e703d}{}L\+O\+O\+P\+B\+A\+C\+K\+\_\+\+O\+F\+F\label{classosa_c_a_n_bus_a992406c83a336e95fb4a09b0b13df786ae2557509d0c1ac68029eeb6bdf6e703d}
+}]\end{description}
+\end{Desc}
+\hypertarget{classosa_c_a_n_bus_ae977dbc0e1c16772395408c8e018fe6c}{}\index{osa\+C\+A\+N\+Bus@{osa\+C\+A\+N\+Bus}!Rate@{Rate}}
+\index{Rate@{Rate}!osa\+C\+A\+N\+Bus@{osa\+C\+A\+N\+Bus}}
+\subsubsection[{Rate}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf osa\+C\+A\+N\+Bus\+::\+Rate}}\label{classosa_c_a_n_bus_ae977dbc0e1c16772395408c8e018fe6c}
+
+
+The different C\+A\+N rates. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{R\+A\+T\+E\+\_\+150@{R\+A\+T\+E\+\_\+150}!osa\+C\+A\+N\+Bus@{osa\+C\+A\+N\+Bus}}\index{osa\+C\+A\+N\+Bus@{osa\+C\+A\+N\+Bus}!R\+A\+T\+E\+\_\+150@{R\+A\+T\+E\+\_\+150}}\item[{\em 
+\hypertarget{classosa_c_a_n_bus_ae977dbc0e1c16772395408c8e018fe6caba07be3d817138593a2d9b20beb2fd7b}{}R\+A\+T\+E\+\_\+150\label{classosa_c_a_n_bus_ae977dbc0e1c16772395408c8e018fe6caba07be3d817138593a2d9b20beb2fd7b}
+}]\index{R\+A\+T\+E\+\_\+300@{R\+A\+T\+E\+\_\+300}!osa\+C\+A\+N\+Bus@{osa\+C\+A\+N\+Bus}}\index{osa\+C\+A\+N\+Bus@{osa\+C\+A\+N\+Bus}!R\+A\+T\+E\+\_\+300@{R\+A\+T\+E\+\_\+300}}\item[{\em 
+\hypertarget{classosa_c_a_n_bus_ae977dbc0e1c16772395408c8e018fe6cacfba6e26887df2910d93f4d2dcf70b3e}{}R\+A\+T\+E\+\_\+300\label{classosa_c_a_n_bus_ae977dbc0e1c16772395408c8e018fe6cacfba6e26887df2910d93f4d2dcf70b3e}
+}]\index{R\+A\+T\+E\+\_\+1000@{R\+A\+T\+E\+\_\+1000}!osa\+C\+A\+N\+Bus@{osa\+C\+A\+N\+Bus}}\index{osa\+C\+A\+N\+Bus@{osa\+C\+A\+N\+Bus}!R\+A\+T\+E\+\_\+1000@{R\+A\+T\+E\+\_\+1000}}\item[{\em 
+\hypertarget{classosa_c_a_n_bus_ae977dbc0e1c16772395408c8e018fe6ca17b91a8147de2124aca3198a0bfcb7b0}{}R\+A\+T\+E\+\_\+1000\label{classosa_c_a_n_bus_ae977dbc0e1c16772395408c8e018fe6ca17b91a8147de2124aca3198a0bfcb7b0}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classosa_c_a_n_bus_abe19d4eebf9d21dcc3f23eb245716a89}{}\index{osa\+C\+A\+N\+Bus@{osa\+C\+A\+N\+Bus}!osa\+C\+A\+N\+Bus@{osa\+C\+A\+N\+Bus}}
+\index{osa\+C\+A\+N\+Bus@{osa\+C\+A\+N\+Bus}!osa\+C\+A\+N\+Bus@{osa\+C\+A\+N\+Bus}}
+\subsubsection[{osa\+C\+A\+N\+Bus}]{\setlength{\rightskip}{0pt plus 5cm}osa\+C\+A\+N\+Bus\+::osa\+C\+A\+N\+Bus (
+\begin{DoxyParamCaption}
+\item[{{\bf osa\+C\+A\+N\+Bus\+::\+Rate}}]{rate, }
+\item[{{\bf osa\+C\+A\+N\+Bus\+::\+Loopback}}]{loopback = {\ttfamily {\bf osa\+C\+A\+N\+Bus\+::\+L\+O\+O\+P\+B\+A\+C\+K\+\_\+\+O\+F\+F}}}
+\end{DoxyParamCaption}
+)}\label{classosa_c_a_n_bus_abe19d4eebf9d21dcc3f23eb245716a89}
+
+
+Default constructor. 
+
+Initialize a C\+A\+N device with the given rate 
+\begin{DoxyParams}{Parameters}
+{\em rate} & The C\+A\+N rate \\
+\hline
+\end{DoxyParams}
+\hypertarget{classosa_c_a_n_bus_a055aece68a45f1e8c8375c62eaaf8e0c}{}\index{osa\+C\+A\+N\+Bus@{osa\+C\+A\+N\+Bus}!````~osa\+C\+A\+N\+Bus@{$\sim$osa\+C\+A\+N\+Bus}}
+\index{````~osa\+C\+A\+N\+Bus@{$\sim$osa\+C\+A\+N\+Bus}!osa\+C\+A\+N\+Bus@{osa\+C\+A\+N\+Bus}}
+\subsubsection[{$\sim$osa\+C\+A\+N\+Bus}]{\setlength{\rightskip}{0pt plus 5cm}virtual osa\+C\+A\+N\+Bus\+::$\sim$osa\+C\+A\+N\+Bus (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classosa_c_a_n_bus_a055aece68a45f1e8c8375c62eaaf8e0c}
+
+
+Default destructor. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classosa_c_a_n_bus_abc63dc1654ae14c4e0705c01cd3a6405}{}\index{osa\+C\+A\+N\+Bus@{osa\+C\+A\+N\+Bus}!Add\+Filter@{Add\+Filter}}
+\index{Add\+Filter@{Add\+Filter}!osa\+C\+A\+N\+Bus@{osa\+C\+A\+N\+Bus}}
+\subsubsection[{Add\+Filter}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf osa\+C\+A\+N\+Bus\+::\+Errno} osa\+C\+A\+N\+Bus\+::\+Add\+Filter (
+\begin{DoxyParamCaption}
+\item[{const {\bf osa\+C\+A\+N\+Bus\+::\+Filter} \&}]{filter}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classosa_c_a_n_bus_abc63dc1654ae14c4e0705c01cd3a6405}
+
+
+Add a C\+A\+N filter to the device. 
+
+Call this method to add a C\+A\+N filter to the device. This is O\+S and dependant as it typically interacts with the driver to screen C\+A\+N frames. 
+
+Implemented in \hyperlink{classosa_socket_c_a_n_a139052b40505443b7c82e9983b873508}{osa\+Socket\+C\+A\+N}, \hyperlink{classosa_r_t_socket_c_a_n_a3a96bca01aa133ada72df390789bf3a4}{osa\+R\+T\+Socket\+C\+A\+N}, and \hyperlink{classosa_bit_ctrl_afa9ebb6045f5f8ee218a4473f26bd073}{osa\+Bit\+Ctrl}.
+
+\hypertarget{classosa_c_a_n_bus_aeabd3fe0c7db2c13978834f4bd2f08db}{}\index{osa\+C\+A\+N\+Bus@{osa\+C\+A\+N\+Bus}!Close@{Close}}
+\index{Close@{Close}!osa\+C\+A\+N\+Bus@{osa\+C\+A\+N\+Bus}}
+\subsubsection[{Close}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf osa\+C\+A\+N\+Bus\+::\+Errno} osa\+C\+A\+N\+Bus\+::\+Close (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classosa_c_a_n_bus_aeabd3fe0c7db2c13978834f4bd2f08db}
+
+
+Close the C\+A\+N device. 
+
+
+
+Implemented in \hyperlink{classosa_socket_c_a_n_a131308c6fa41ee200b5b1785f12c709b}{osa\+Socket\+C\+A\+N}, \hyperlink{classosa_r_t_socket_c_a_n_a74c55b778afb9a7ae633f3714d99003c}{osa\+R\+T\+Socket\+C\+A\+N}, and \hyperlink{classosa_bit_ctrl_ae9f22f9f65e034468625b4fb5f98c942}{osa\+Bit\+Ctrl}.
+
+\hypertarget{classosa_c_a_n_bus_a3471574c0625ff4ec43b2fa8a3a020af}{}\index{osa\+C\+A\+N\+Bus@{osa\+C\+A\+N\+Bus}!Open@{Open}}
+\index{Open@{Open}!osa\+C\+A\+N\+Bus@{osa\+C\+A\+N\+Bus}}
+\subsubsection[{Open}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf osa\+C\+A\+N\+Bus\+::\+Errno} osa\+C\+A\+N\+Bus\+::\+Open (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classosa_c_a_n_bus_a3471574c0625ff4ec43b2fa8a3a020af}
+
+
+Open the C\+A\+N device. 
+
+
+
+Implemented in \hyperlink{classosa_socket_c_a_n_a5a8bb9db219c9f4072b5bcc357eeb847}{osa\+Socket\+C\+A\+N}, \hyperlink{classosa_r_t_socket_c_a_n_a68885fe9f90ca673958caaa6f0e4a251}{osa\+R\+T\+Socket\+C\+A\+N}, and \hyperlink{classosa_bit_ctrl_a15aee59c56dc544a743df2ec6c31616c}{osa\+Bit\+Ctrl}.
+
+\hypertarget{classosa_c_a_n_bus_a8c095ec60f161eaf8f014b039f62faab}{}\index{osa\+C\+A\+N\+Bus@{osa\+C\+A\+N\+Bus}!Recv@{Recv}}
+\index{Recv@{Recv}!osa\+C\+A\+N\+Bus@{osa\+C\+A\+N\+Bus}}
+\subsubsection[{Recv}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf osa\+C\+A\+N\+Bus\+::\+Errno} osa\+C\+A\+N\+Bus\+::\+Recv (
+\begin{DoxyParamCaption}
+\item[{{\bf osa\+C\+A\+N\+Bus\+Frame} \&}]{frame, }
+\item[{{\bf osa\+C\+A\+N\+Bus\+::\+Flags}}]{flags = {\ttfamily {\bf osa\+C\+A\+N\+Bus\+::\+M\+S\+G\+\_\+\+N\+O\+F\+L\+A\+G}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classosa_c_a_n_bus_a8c095ec60f161eaf8f014b039f62faab}
+
+
+Receive a C\+A\+N frame. 
+
+Call this method to receive a C\+A\+N frame. The method can be blocking. 
+\begin{DoxyParams}{Parameters}
+{\em frame\mbox{[}out\mbox{]}} & The C\+A\+N frame received from the bus \\
+\hline
+{\em block} & Block the device until a C\+A\+N frame is received \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classosa_socket_c_a_n_a919c1f68caffb33ddcca41797553be58}{osa\+Socket\+C\+A\+N}, \hyperlink{classosa_r_t_socket_c_a_n_ad48837c43d6cd6575aa49c1b9959561f}{osa\+R\+T\+Socket\+C\+A\+N}, and \hyperlink{classosa_bit_ctrl_a1f333b8627d5bbe0b69afb78c432b801}{osa\+Bit\+Ctrl}.
+
+\hypertarget{classosa_c_a_n_bus_a21b88fd2a857089845305d1e2eabb5b9}{}\index{osa\+C\+A\+N\+Bus@{osa\+C\+A\+N\+Bus}!Send@{Send}}
+\index{Send@{Send}!osa\+C\+A\+N\+Bus@{osa\+C\+A\+N\+Bus}}
+\subsubsection[{Send}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf osa\+C\+A\+N\+Bus\+::\+Errno} osa\+C\+A\+N\+Bus\+::\+Send (
+\begin{DoxyParamCaption}
+\item[{const {\bf osa\+C\+A\+N\+Bus\+Frame} \&}]{frame, }
+\item[{{\bf osa\+C\+A\+N\+Bus\+::\+Flags}}]{flags = {\ttfamily {\bf osa\+C\+A\+N\+Bus\+::\+M\+S\+G\+\_\+\+N\+O\+F\+L\+A\+G}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classosa_c_a_n_bus_a21b88fd2a857089845305d1e2eabb5b9}
+
+
+Send a C\+A\+N frame on the bus. 
+
+Call this method to send a C\+A\+N frame on the bus. The method can be blocking 
+\begin{DoxyParams}{Parameters}
+{\em frame\mbox{[}in\mbox{]}} & The C\+A\+N frame to send on the bus \\
+\hline
+{\em block} & Block the device until the operation is completed \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classosa_socket_c_a_n_a59accc9278f0cbab72e578bb8d486a43}{osa\+Socket\+C\+A\+N}, \hyperlink{classosa_r_t_socket_c_a_n_aa1f62bdadfb3481ca3f96a8152e22508}{osa\+R\+T\+Socket\+C\+A\+N}, and \hyperlink{classosa_bit_ctrl_a8bb8bcf5e56ce2e844dc9d5e5fa01b5c}{osa\+Bit\+Ctrl}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classosa_c_a_n_bus_a724e9c478dd48908882e29f189d98968}{}\index{osa\+C\+A\+N\+Bus@{osa\+C\+A\+N\+Bus}!loopback@{loopback}}
+\index{loopback@{loopback}!osa\+C\+A\+N\+Bus@{osa\+C\+A\+N\+Bus}}
+\subsubsection[{loopback}]{\setlength{\rightskip}{0pt plus 5cm}{\bf osa\+C\+A\+N\+Bus\+::\+Loopback} osa\+C\+A\+N\+Bus\+::loopback\hspace{0.3cm}{\ttfamily [protected]}}\label{classosa_c_a_n_bus_a724e9c478dd48908882e29f189d98968}
+\hypertarget{classosa_c_a_n_bus_a4ff86a9ecf19161b1f34666888e0a331}{}\index{osa\+C\+A\+N\+Bus@{osa\+C\+A\+N\+Bus}!rate@{rate}}
+\index{rate@{rate}!osa\+C\+A\+N\+Bus@{osa\+C\+A\+N\+Bus}}
+\subsubsection[{rate}]{\setlength{\rightskip}{0pt plus 5cm}{\bf osa\+C\+A\+N\+Bus\+::\+Rate} osa\+C\+A\+N\+Bus\+::rate\hspace{0.3cm}{\ttfamily [protected]}}\label{classosa_c_a_n_bus_a4ff86a9ecf19161b1f34666888e0a331}
+
+
+The rate of the device. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/saw\+C\+A\+N\+Bus/include/saw\+C\+A\+N\+Bus/\hyperlink{osa_c_a_n_bus_8h}{osa\+C\+A\+N\+Bus.\+h}\end{DoxyCompactItemize}

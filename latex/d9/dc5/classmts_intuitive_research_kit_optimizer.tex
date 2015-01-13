@@ -1,0 +1,173 @@
+\hypertarget{classmts_intuitive_research_kit_optimizer}{}\section{mts\+Intuitive\+Research\+Kit\+Optimizer Class Reference}
+\label{classmts_intuitive_research_kit_optimizer}\index{mts\+Intuitive\+Research\+Kit\+Optimizer@{mts\+Intuitive\+Research\+Kit\+Optimizer}}
+
+
+{\ttfamily \#include $<$mts\+Intuitive\+Research\+Kit\+Optimizer.\+h$>$}
+
+Inheritance diagram for mts\+Intuitive\+Research\+Kit\+Optimizer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{d9/dc5/classmts_intuitive_research_kit_optimizer}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmts_intuitive_research_kit_optimizer_af160a886afc7ade0e09a70492774604d}{mts\+Intuitive\+Research\+Kit\+Optimizer} (void)
+\item 
+\hyperlink{classmts_intuitive_research_kit_optimizer_a1fd1f5d52df0c43a0ed45b2e9147801b}{mts\+Intuitive\+Research\+Kit\+Optimizer} (const size\+\_\+t num\+Of\+Joints)
+\item 
+\hyperlink{classmts_intuitive_research_kit_optimizer_a6c1bb4177eff53d8dbe8224c591cfe91}{$\sim$mts\+Intuitive\+Research\+Kit\+Optimizer} ()
+\item 
+void \hyperlink{classmts_intuitive_research_kit_optimizer_a05bdadeaebb6088921f840c84769511c}{Update\+Jacobian} (const \hyperlink{classrob_manipulator}{rob\+Manipulator} \&manip)
+\item 
+void \hyperlink{classmts_intuitive_research_kit_optimizer_a6b9b58fa536eb466fd511d02ef99d7d2}{Update\+Kinematics} (\hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \&q\+Curr, \hyperlink{vct_transformation_types_8h_a33da47f4deb2556b37a69a2c44b29d75}{vct\+Frm4x4} cartesian\+Current, \hyperlink{vct_transformation_types_8h_a33da47f4deb2556b37a69a2c44b29d75}{vct\+Frm4x4} cartesian\+Desired)
+\item 
+void \hyperlink{classmts_intuitive_research_kit_optimizer_a63904f22f0ee3d20eb683f7576f9923f}{Update\+Params} (\hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \&q\+Curr, const \hyperlink{classrob_manipulator}{rob\+Manipulator} \&manip, const double tick\+Time, \hyperlink{vct_transformation_types_8h_a33da47f4deb2556b37a69a2c44b29d75}{vct\+Frm4x4} cartesian\+Current, \hyperlink{vct_transformation_types_8h_a33da47f4deb2556b37a69a2c44b29d75}{vct\+Frm4x4} cartesian\+Desired)
+\item 
+void \hyperlink{classmts_intuitive_research_kit_optimizer_aef0de374260f326d4c49f7f8598d9eda}{Initialize\+Follow\+V\+F} (const size\+\_\+t objective\+Rows, const std\+::string \&vf\+Name, const std\+::string \&current\+Kin\+Name, const std\+::string \&desired\+Kin\+Name=\char`\"{}\char`\"{})
+\item 
+void \hyperlink{classmts_intuitive_research_kit_optimizer_a6928383d7ecd2e6e1fcd0281ff7e37c6}{Initialize\+Plane\+V\+F} (const size\+\_\+t rows, mts\+V\+F\+Data\+Plane \&plane\+Data, const std\+::string \&current\+Kin\+Name, const std\+::string \&desired\+Kin\+Name)
+\item 
+bool \hyperlink{classmts_intuitive_research_kit_optimizer_a91dcdb8e78fe389d008ee470d3e163b9}{Solve} (\hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \&dq)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+prm\+Kinematics\+State \hyperlink{classmts_intuitive_research_kit_optimizer_a10517be9e248c92c46501f6eea30433c}{Current\+Slave\+Kinematics}
+\item 
+prm\+Kinematics\+State \hyperlink{classmts_intuitive_research_kit_optimizer_a095ebf16dfbac51a8d8c24830824b856}{Desired\+Slave\+Kinematics}
+\item 
+mts\+V\+F\+Data\+Follow \hyperlink{classmts_intuitive_research_kit_optimizer_a08aabafa6727fbfa54b229e0faa21bdf}{Follow\+Data}
+\item 
+\hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \hyperlink{classmts_intuitive_research_kit_optimizer_ac33e4d294b5b6abee6863f070b477c42}{Controller\+Output}
+\item 
+prm\+Joint\+State \hyperlink{classmts_intuitive_research_kit_optimizer_ad436ec7283125c4598fcb243f0354e29}{Current\+Joint\+State}
+\item 
+size\+\_\+t \hyperlink{classmts_intuitive_research_kit_optimizer_aa64f574f639972c9ef2ce46db04c48f6}{Num\+Of\+Joints}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>\hyperlink{vct_dynamic_matrix_types_8h_a48f1eb2461d20a99e824ee5753a37c84}{vctDoubleMat} \hyperlink{classmts_intuitive_research_kit_optimizer_abfe8527a15da180a73c60e761ac889bb}{BodyJacobian}\\
+\>\hyperlink{vct_dynamic_matrix_types_8h_a48f1eb2461d20a99e824ee5753a37c84}{vctDoubleMat} \hyperlink{classmts_intuitive_research_kit_optimizer_a84bd5de92e87e58310b54fa83fe8faf3}{Adjoint}\\
+\} \hyperlink{classmts_intuitive_research_kit_optimizer_a44919bd63f06f71c6438842d38d94416}{Cached}\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmts_intuitive_research_kit_optimizer_af160a886afc7ade0e09a70492774604d}{}\index{mts\+Intuitive\+Research\+Kit\+Optimizer@{mts\+Intuitive\+Research\+Kit\+Optimizer}!mts\+Intuitive\+Research\+Kit\+Optimizer@{mts\+Intuitive\+Research\+Kit\+Optimizer}}
+\index{mts\+Intuitive\+Research\+Kit\+Optimizer@{mts\+Intuitive\+Research\+Kit\+Optimizer}!mts\+Intuitive\+Research\+Kit\+Optimizer@{mts\+Intuitive\+Research\+Kit\+Optimizer}}
+\subsubsection[{mts\+Intuitive\+Research\+Kit\+Optimizer}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Intuitive\+Research\+Kit\+Optimizer\+::mts\+Intuitive\+Research\+Kit\+Optimizer (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_intuitive_research_kit_optimizer_af160a886afc7ade0e09a70492774604d}
+\hypertarget{classmts_intuitive_research_kit_optimizer_a1fd1f5d52df0c43a0ed45b2e9147801b}{}\index{mts\+Intuitive\+Research\+Kit\+Optimizer@{mts\+Intuitive\+Research\+Kit\+Optimizer}!mts\+Intuitive\+Research\+Kit\+Optimizer@{mts\+Intuitive\+Research\+Kit\+Optimizer}}
+\index{mts\+Intuitive\+Research\+Kit\+Optimizer@{mts\+Intuitive\+Research\+Kit\+Optimizer}!mts\+Intuitive\+Research\+Kit\+Optimizer@{mts\+Intuitive\+Research\+Kit\+Optimizer}}
+\subsubsection[{mts\+Intuitive\+Research\+Kit\+Optimizer}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Intuitive\+Research\+Kit\+Optimizer\+::mts\+Intuitive\+Research\+Kit\+Optimizer (
+\begin{DoxyParamCaption}
+\item[{const size\+\_\+t}]{num\+Of\+Joints}
+\end{DoxyParamCaption}
+)}\label{classmts_intuitive_research_kit_optimizer_a1fd1f5d52df0c43a0ed45b2e9147801b}
+\hypertarget{classmts_intuitive_research_kit_optimizer_a6c1bb4177eff53d8dbe8224c591cfe91}{}\index{mts\+Intuitive\+Research\+Kit\+Optimizer@{mts\+Intuitive\+Research\+Kit\+Optimizer}!````~mts\+Intuitive\+Research\+Kit\+Optimizer@{$\sim$mts\+Intuitive\+Research\+Kit\+Optimizer}}
+\index{````~mts\+Intuitive\+Research\+Kit\+Optimizer@{$\sim$mts\+Intuitive\+Research\+Kit\+Optimizer}!mts\+Intuitive\+Research\+Kit\+Optimizer@{mts\+Intuitive\+Research\+Kit\+Optimizer}}
+\subsubsection[{$\sim$mts\+Intuitive\+Research\+Kit\+Optimizer}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Intuitive\+Research\+Kit\+Optimizer\+::$\sim$mts\+Intuitive\+Research\+Kit\+Optimizer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_intuitive_research_kit_optimizer_a6c1bb4177eff53d8dbe8224c591cfe91}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classmts_intuitive_research_kit_optimizer_aef0de374260f326d4c49f7f8598d9eda}{}\index{mts\+Intuitive\+Research\+Kit\+Optimizer@{mts\+Intuitive\+Research\+Kit\+Optimizer}!Initialize\+Follow\+V\+F@{Initialize\+Follow\+V\+F}}
+\index{Initialize\+Follow\+V\+F@{Initialize\+Follow\+V\+F}!mts\+Intuitive\+Research\+Kit\+Optimizer@{mts\+Intuitive\+Research\+Kit\+Optimizer}}
+\subsubsection[{Initialize\+Follow\+V\+F}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Intuitive\+Research\+Kit\+Optimizer\+::\+Initialize\+Follow\+V\+F (
+\begin{DoxyParamCaption}
+\item[{const size\+\_\+t}]{objective\+Rows, }
+\item[{const std\+::string \&}]{vf\+Name, }
+\item[{const std\+::string \&}]{current\+Kin\+Name, }
+\item[{const std\+::string \&}]{desired\+Kin\+Name = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)}\label{classmts_intuitive_research_kit_optimizer_aef0de374260f326d4c49f7f8598d9eda}
+\hypertarget{classmts_intuitive_research_kit_optimizer_a6928383d7ecd2e6e1fcd0281ff7e37c6}{}\index{mts\+Intuitive\+Research\+Kit\+Optimizer@{mts\+Intuitive\+Research\+Kit\+Optimizer}!Initialize\+Plane\+V\+F@{Initialize\+Plane\+V\+F}}
+\index{Initialize\+Plane\+V\+F@{Initialize\+Plane\+V\+F}!mts\+Intuitive\+Research\+Kit\+Optimizer@{mts\+Intuitive\+Research\+Kit\+Optimizer}}
+\subsubsection[{Initialize\+Plane\+V\+F}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Intuitive\+Research\+Kit\+Optimizer\+::\+Initialize\+Plane\+V\+F (
+\begin{DoxyParamCaption}
+\item[{const size\+\_\+t}]{rows, }
+\item[{mts\+V\+F\+Data\+Plane \&}]{plane\+Data, }
+\item[{const std\+::string \&}]{current\+Kin\+Name, }
+\item[{const std\+::string \&}]{desired\+Kin\+Name}
+\end{DoxyParamCaption}
+)}\label{classmts_intuitive_research_kit_optimizer_a6928383d7ecd2e6e1fcd0281ff7e37c6}
+\hypertarget{classmts_intuitive_research_kit_optimizer_a91dcdb8e78fe389d008ee470d3e163b9}{}\index{mts\+Intuitive\+Research\+Kit\+Optimizer@{mts\+Intuitive\+Research\+Kit\+Optimizer}!Solve@{Solve}}
+\index{Solve@{Solve}!mts\+Intuitive\+Research\+Kit\+Optimizer@{mts\+Intuitive\+Research\+Kit\+Optimizer}}
+\subsubsection[{Solve}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Intuitive\+Research\+Kit\+Optimizer\+::\+Solve (
+\begin{DoxyParamCaption}
+\item[{{\bf vct\+Double\+Vec} \&}]{dq}
+\end{DoxyParamCaption}
+)}\label{classmts_intuitive_research_kit_optimizer_a91dcdb8e78fe389d008ee470d3e163b9}
+\hypertarget{classmts_intuitive_research_kit_optimizer_a05bdadeaebb6088921f840c84769511c}{}\index{mts\+Intuitive\+Research\+Kit\+Optimizer@{mts\+Intuitive\+Research\+Kit\+Optimizer}!Update\+Jacobian@{Update\+Jacobian}}
+\index{Update\+Jacobian@{Update\+Jacobian}!mts\+Intuitive\+Research\+Kit\+Optimizer@{mts\+Intuitive\+Research\+Kit\+Optimizer}}
+\subsubsection[{Update\+Jacobian}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Intuitive\+Research\+Kit\+Optimizer\+::\+Update\+Jacobian (
+\begin{DoxyParamCaption}
+\item[{const {\bf rob\+Manipulator} \&}]{manip}
+\end{DoxyParamCaption}
+)}\label{classmts_intuitive_research_kit_optimizer_a05bdadeaebb6088921f840c84769511c}
+\hypertarget{classmts_intuitive_research_kit_optimizer_a6b9b58fa536eb466fd511d02ef99d7d2}{}\index{mts\+Intuitive\+Research\+Kit\+Optimizer@{mts\+Intuitive\+Research\+Kit\+Optimizer}!Update\+Kinematics@{Update\+Kinematics}}
+\index{Update\+Kinematics@{Update\+Kinematics}!mts\+Intuitive\+Research\+Kit\+Optimizer@{mts\+Intuitive\+Research\+Kit\+Optimizer}}
+\subsubsection[{Update\+Kinematics}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Intuitive\+Research\+Kit\+Optimizer\+::\+Update\+Kinematics (
+\begin{DoxyParamCaption}
+\item[{{\bf vct\+Double\+Vec} \&}]{q\+Curr, }
+\item[{{\bf vct\+Frm4x4}}]{cartesian\+Current, }
+\item[{{\bf vct\+Frm4x4}}]{cartesian\+Desired}
+\end{DoxyParamCaption}
+)}\label{classmts_intuitive_research_kit_optimizer_a6b9b58fa536eb466fd511d02ef99d7d2}
+\hypertarget{classmts_intuitive_research_kit_optimizer_a63904f22f0ee3d20eb683f7576f9923f}{}\index{mts\+Intuitive\+Research\+Kit\+Optimizer@{mts\+Intuitive\+Research\+Kit\+Optimizer}!Update\+Params@{Update\+Params}}
+\index{Update\+Params@{Update\+Params}!mts\+Intuitive\+Research\+Kit\+Optimizer@{mts\+Intuitive\+Research\+Kit\+Optimizer}}
+\subsubsection[{Update\+Params}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Intuitive\+Research\+Kit\+Optimizer\+::\+Update\+Params (
+\begin{DoxyParamCaption}
+\item[{{\bf vct\+Double\+Vec} \&}]{q\+Curr, }
+\item[{const {\bf rob\+Manipulator} \&}]{manip, }
+\item[{const double}]{tick\+Time, }
+\item[{{\bf vct\+Frm4x4}}]{cartesian\+Current, }
+\item[{{\bf vct\+Frm4x4}}]{cartesian\+Desired}
+\end{DoxyParamCaption}
+)}\label{classmts_intuitive_research_kit_optimizer_a63904f22f0ee3d20eb683f7576f9923f}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classmts_intuitive_research_kit_optimizer_a84bd5de92e87e58310b54fa83fe8faf3}{}\index{mts\+Intuitive\+Research\+Kit\+Optimizer@{mts\+Intuitive\+Research\+Kit\+Optimizer}!Adjoint@{Adjoint}}
+\index{Adjoint@{Adjoint}!mts\+Intuitive\+Research\+Kit\+Optimizer@{mts\+Intuitive\+Research\+Kit\+Optimizer}}
+\subsubsection[{Adjoint}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Double\+Mat} mts\+Intuitive\+Research\+Kit\+Optimizer\+::\+Adjoint}\label{classmts_intuitive_research_kit_optimizer_a84bd5de92e87e58310b54fa83fe8faf3}
+\hypertarget{classmts_intuitive_research_kit_optimizer_abfe8527a15da180a73c60e761ac889bb}{}\index{mts\+Intuitive\+Research\+Kit\+Optimizer@{mts\+Intuitive\+Research\+Kit\+Optimizer}!Body\+Jacobian@{Body\+Jacobian}}
+\index{Body\+Jacobian@{Body\+Jacobian}!mts\+Intuitive\+Research\+Kit\+Optimizer@{mts\+Intuitive\+Research\+Kit\+Optimizer}}
+\subsubsection[{Body\+Jacobian}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Double\+Mat} mts\+Intuitive\+Research\+Kit\+Optimizer\+::\+Body\+Jacobian}\label{classmts_intuitive_research_kit_optimizer_abfe8527a15da180a73c60e761ac889bb}
+\hypertarget{classmts_intuitive_research_kit_optimizer_a44919bd63f06f71c6438842d38d94416}{}\index{mts\+Intuitive\+Research\+Kit\+Optimizer@{mts\+Intuitive\+Research\+Kit\+Optimizer}!Cached@{Cached}}
+\index{Cached@{Cached}!mts\+Intuitive\+Research\+Kit\+Optimizer@{mts\+Intuitive\+Research\+Kit\+Optimizer}}
+\subsubsection[{Cached}]{\setlength{\rightskip}{0pt plus 5cm}struct \{ ... \}   mts\+Intuitive\+Research\+Kit\+Optimizer\+::\+Cached\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_intuitive_research_kit_optimizer_a44919bd63f06f71c6438842d38d94416}
+\hypertarget{classmts_intuitive_research_kit_optimizer_ac33e4d294b5b6abee6863f070b477c42}{}\index{mts\+Intuitive\+Research\+Kit\+Optimizer@{mts\+Intuitive\+Research\+Kit\+Optimizer}!Controller\+Output@{Controller\+Output}}
+\index{Controller\+Output@{Controller\+Output}!mts\+Intuitive\+Research\+Kit\+Optimizer@{mts\+Intuitive\+Research\+Kit\+Optimizer}}
+\subsubsection[{Controller\+Output}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Double\+Vec} mts\+Intuitive\+Research\+Kit\+Optimizer\+::\+Controller\+Output\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_intuitive_research_kit_optimizer_ac33e4d294b5b6abee6863f070b477c42}
+\hypertarget{classmts_intuitive_research_kit_optimizer_ad436ec7283125c4598fcb243f0354e29}{}\index{mts\+Intuitive\+Research\+Kit\+Optimizer@{mts\+Intuitive\+Research\+Kit\+Optimizer}!Current\+Joint\+State@{Current\+Joint\+State}}
+\index{Current\+Joint\+State@{Current\+Joint\+State}!mts\+Intuitive\+Research\+Kit\+Optimizer@{mts\+Intuitive\+Research\+Kit\+Optimizer}}
+\subsubsection[{Current\+Joint\+State}]{\setlength{\rightskip}{0pt plus 5cm}prm\+Joint\+State mts\+Intuitive\+Research\+Kit\+Optimizer\+::\+Current\+Joint\+State\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_intuitive_research_kit_optimizer_ad436ec7283125c4598fcb243f0354e29}
+\hypertarget{classmts_intuitive_research_kit_optimizer_a10517be9e248c92c46501f6eea30433c}{}\index{mts\+Intuitive\+Research\+Kit\+Optimizer@{mts\+Intuitive\+Research\+Kit\+Optimizer}!Current\+Slave\+Kinematics@{Current\+Slave\+Kinematics}}
+\index{Current\+Slave\+Kinematics@{Current\+Slave\+Kinematics}!mts\+Intuitive\+Research\+Kit\+Optimizer@{mts\+Intuitive\+Research\+Kit\+Optimizer}}
+\subsubsection[{Current\+Slave\+Kinematics}]{\setlength{\rightskip}{0pt plus 5cm}prm\+Kinematics\+State mts\+Intuitive\+Research\+Kit\+Optimizer\+::\+Current\+Slave\+Kinematics\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_intuitive_research_kit_optimizer_a10517be9e248c92c46501f6eea30433c}
+\hypertarget{classmts_intuitive_research_kit_optimizer_a095ebf16dfbac51a8d8c24830824b856}{}\index{mts\+Intuitive\+Research\+Kit\+Optimizer@{mts\+Intuitive\+Research\+Kit\+Optimizer}!Desired\+Slave\+Kinematics@{Desired\+Slave\+Kinematics}}
+\index{Desired\+Slave\+Kinematics@{Desired\+Slave\+Kinematics}!mts\+Intuitive\+Research\+Kit\+Optimizer@{mts\+Intuitive\+Research\+Kit\+Optimizer}}
+\subsubsection[{Desired\+Slave\+Kinematics}]{\setlength{\rightskip}{0pt plus 5cm}prm\+Kinematics\+State mts\+Intuitive\+Research\+Kit\+Optimizer\+::\+Desired\+Slave\+Kinematics\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_intuitive_research_kit_optimizer_a095ebf16dfbac51a8d8c24830824b856}
+\hypertarget{classmts_intuitive_research_kit_optimizer_a08aabafa6727fbfa54b229e0faa21bdf}{}\index{mts\+Intuitive\+Research\+Kit\+Optimizer@{mts\+Intuitive\+Research\+Kit\+Optimizer}!Follow\+Data@{Follow\+Data}}
+\index{Follow\+Data@{Follow\+Data}!mts\+Intuitive\+Research\+Kit\+Optimizer@{mts\+Intuitive\+Research\+Kit\+Optimizer}}
+\subsubsection[{Follow\+Data}]{\setlength{\rightskip}{0pt plus 5cm}mts\+V\+F\+Data\+Follow mts\+Intuitive\+Research\+Kit\+Optimizer\+::\+Follow\+Data\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_intuitive_research_kit_optimizer_a08aabafa6727fbfa54b229e0faa21bdf}
+\hypertarget{classmts_intuitive_research_kit_optimizer_aa64f574f639972c9ef2ce46db04c48f6}{}\index{mts\+Intuitive\+Research\+Kit\+Optimizer@{mts\+Intuitive\+Research\+Kit\+Optimizer}!Num\+Of\+Joints@{Num\+Of\+Joints}}
+\index{Num\+Of\+Joints@{Num\+Of\+Joints}!mts\+Intuitive\+Research\+Kit\+Optimizer@{mts\+Intuitive\+Research\+Kit\+Optimizer}}
+\subsubsection[{Num\+Of\+Joints}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t mts\+Intuitive\+Research\+Kit\+Optimizer\+::\+Num\+Of\+Joints\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_intuitive_research_kit_optimizer_aa64f574f639972c9ef2ce46db04c48f6}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/saw\+Intuitive\+Research\+Kit/include/saw\+Intuitive\+Research\+Kit/\hyperlink{mts_intuitive_research_kit_optimizer_8h}{mts\+Intuitive\+Research\+Kit\+Optimizer.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,148 @@
+\hypertarget{classcmn_output_multiplexer}{}\section{cmn\+Output\+Multiplexer Class Reference}
+\label{classcmn_output_multiplexer}\index{cmn\+Output\+Multiplexer@{cmn\+Output\+Multiplexer}}
+
+
+Creates a collection of objects that channels output to multiple sinks.  
+
+
+
+
+{\ttfamily \#include $<$cmn\+Output\+Multiplexer.\+h$>$}
+
+Inheritance diagram for cmn\+Output\+Multiplexer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{d5/d01/classcmn_output_multiplexer}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef char \hyperlink{classcmn_output_multiplexer_aa35542dd7f4e6d55780bc7ed741910fe}{char\+\_\+type}
+\item 
+typedef std\+::ostream \hyperlink{classcmn_output_multiplexer_abebdbc4cebf9eeb2ce4159f2c649968e}{Channel\+Type}
+\item 
+typedef std\+::list$<$ \hyperlink{classcmn_output_multiplexer_abebdbc4cebf9eeb2ce4159f2c649968e}{Channel\+Type} $\ast$ $>$ \hyperlink{classcmn_output_multiplexer_aca2d6dc567cf721a0dbb2f887c175b7b}{Channel\+Container\+Type}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcmn_output_multiplexer_ae508d920a59799588a6bcd87a5e33f50}{cmn\+Output\+Multiplexer} ()
+\item 
+\hyperlink{classcmn_output_multiplexer_abebdbc4cebf9eeb2ce4159f2c649968e}{Channel\+Type} \& \hyperlink{classcmn_output_multiplexer_a70d534895f21217e1e7e75e837fc65e7}{Add\+Channel} (\hyperlink{classcmn_output_multiplexer_abebdbc4cebf9eeb2ce4159f2c649968e}{Channel\+Type} $\ast$channel)
+\item 
+\hyperlink{classcmn_output_multiplexer_abebdbc4cebf9eeb2ce4159f2c649968e}{Channel\+Type} \& \hyperlink{classcmn_output_multiplexer_acd5d9cf95e534975f63dc4a61bd54b84}{Remove\+Channel} (\hyperlink{classcmn_output_multiplexer_abebdbc4cebf9eeb2ce4159f2c649968e}{Channel\+Type} $\ast$channel)
+\item 
+const \hyperlink{classcmn_output_multiplexer_aca2d6dc567cf721a0dbb2f887c175b7b}{Channel\+Container\+Type} \& \hyperlink{classcmn_output_multiplexer_a9720bcf8e2380b30373fbd1ad329f639}{Get\+Channels} () const 
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcmn_output_multiplexer_aca2d6dc567cf721a0dbb2f887c175b7b}{Channel\+Container\+Type} \hyperlink{classcmn_output_multiplexer_a2bbdcfbb9a7395c5538432523ade4b1a}{m\+\_\+\+Channel\+Container}
+\item 
+\hyperlink{classcmn_l_o_d_multiplexer_streambuf}{cmn\+L\+O\+D\+Multiplexer\+Streambuf}$<$ \hyperlink{classcmn_output_multiplexer_aa35542dd7f4e6d55780bc7ed741910fe}{char\+\_\+type} $>$ \hyperlink{classcmn_output_multiplexer_a64c336dbeee16f5d94503c2a4265b97c}{m\+\_\+\+Streambuf}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Creates a collection of objects that channels output to multiple sinks. 
+
+Types for dynamic control of output messages. This includes debugging information, error reporting, state logging etc. This file declares {\itshape class \hyperlink{classcmn_output_multiplexer}{cmn\+Output\+Multiplexer}}. a \hyperlink{classcmn_output_multiplexer}{cmn\+Output\+Multiplexer} inherits the public interface of a generic ostream, and channels the output to multiple sinks.
+
+Usage\+: Include the module in your application with\+: \#include \char`\"{}cmn\+Output\+Multiplexer.\+h\char`\"{}
+
+Create a collection of ostream objects, and attach them to a \hyperlink{classcmn_output_multiplexer}{cmn\+Output\+Multiplexer}. Use the standrard ostream syntax (operator $<$$<$) to stream objects to the multiplexer.
+
+
+\begin{DoxyCode}
+ofstream log(\textcolor{stringliteral}{"logfile.txt"});
+windowoutputstream display;  \textcolor{comment}{// hypothetical class}
+
+\hyperlink{classcmn_output_multiplexer}{cmnOutputMultiplexer} multiplexer;
+multiplexer.\hyperlink{classcmn_output_multiplexer_a70d534895f21217e1e7e75e837fc65e7}{AddChannel}(&log);
+multiplexer.\hyperlink{classcmn_output_multiplexer_a70d534895f21217e1e7e75e837fc65e7}{AddChannel}(&windowoutputstream);
+
+multiplexer << \textcolor{stringliteral}{"Hello, world"} << endl;  \textcolor{comment}{// channel the message ot all streams.}
+\end{DoxyCode}
+
+
+Notes\+:
+\begin{DoxyEnumerate}
+\item \hyperlink{classcmn_output_multiplexer}{cmn\+Output\+Multiplexer} does not O\+W\+N the output streams. They are created and destroyed externally.
+\item The initial implementation uses a list to store the addresses of the output channels. There is no guarantee on the order of storage or the order of output channelling.
+\item It is assumed that none of the output channels modifies the data arguments.
+\item The multiplexer does not buffer any output. There is no implementation for seekp() and tellp().
+\item It is guaranteed that at most one instance of an ostream object is stored as a channel in a single multiplexer. The \hyperlink{classcmn_output_multiplexer_a70d534895f21217e1e7e75e837fc65e7}{Add\+Channel()} function checks for uniqueness. 
+\end{DoxyEnumerate}
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classcmn_output_multiplexer_aca2d6dc567cf721a0dbb2f887c175b7b}{}\index{cmn\+Output\+Multiplexer@{cmn\+Output\+Multiplexer}!Channel\+Container\+Type@{Channel\+Container\+Type}}
+\index{Channel\+Container\+Type@{Channel\+Container\+Type}!cmn\+Output\+Multiplexer@{cmn\+Output\+Multiplexer}}
+\subsubsection[{Channel\+Container\+Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::list$<${\bf Channel\+Type} $\ast$$>$ {\bf cmn\+Output\+Multiplexer\+::\+Channel\+Container\+Type}}\label{classcmn_output_multiplexer_aca2d6dc567cf721a0dbb2f887c175b7b}
+Type of internal data structure storing the channels. \hypertarget{classcmn_output_multiplexer_abebdbc4cebf9eeb2ce4159f2c649968e}{}\index{cmn\+Output\+Multiplexer@{cmn\+Output\+Multiplexer}!Channel\+Type@{Channel\+Type}}
+\index{Channel\+Type@{Channel\+Type}!cmn\+Output\+Multiplexer@{cmn\+Output\+Multiplexer}}
+\subsubsection[{Channel\+Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::ostream {\bf cmn\+Output\+Multiplexer\+::\+Channel\+Type}}\label{classcmn_output_multiplexer_abebdbc4cebf9eeb2ce4159f2c649968e}
+\hypertarget{classcmn_output_multiplexer_aa35542dd7f4e6d55780bc7ed741910fe}{}\index{cmn\+Output\+Multiplexer@{cmn\+Output\+Multiplexer}!char\+\_\+type@{char\+\_\+type}}
+\index{char\+\_\+type@{char\+\_\+type}!cmn\+Output\+Multiplexer@{cmn\+Output\+Multiplexer}}
+\subsubsection[{char\+\_\+type}]{\setlength{\rightskip}{0pt plus 5cm}typedef char {\bf cmn\+Output\+Multiplexer\+::char\+\_\+type}}\label{classcmn_output_multiplexer_aa35542dd7f4e6d55780bc7ed741910fe}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcmn_output_multiplexer_ae508d920a59799588a6bcd87a5e33f50}{}\index{cmn\+Output\+Multiplexer@{cmn\+Output\+Multiplexer}!cmn\+Output\+Multiplexer@{cmn\+Output\+Multiplexer}}
+\index{cmn\+Output\+Multiplexer@{cmn\+Output\+Multiplexer}!cmn\+Output\+Multiplexer@{cmn\+Output\+Multiplexer}}
+\subsubsection[{cmn\+Output\+Multiplexer}]{\setlength{\rightskip}{0pt plus 5cm}cmn\+Output\+Multiplexer\+::cmn\+Output\+Multiplexer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classcmn_output_multiplexer_ae508d920a59799588a6bcd87a5e33f50}
+Default constructor -\/ initialize base class. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classcmn_output_multiplexer_a70d534895f21217e1e7e75e837fc65e7}{}\index{cmn\+Output\+Multiplexer@{cmn\+Output\+Multiplexer}!Add\+Channel@{Add\+Channel}}
+\index{Add\+Channel@{Add\+Channel}!cmn\+Output\+Multiplexer@{cmn\+Output\+Multiplexer}}
+\subsubsection[{Add\+Channel}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Channel\+Type}\& cmn\+Output\+Multiplexer\+::\+Add\+Channel (
+\begin{DoxyParamCaption}
+\item[{{\bf Channel\+Type} $\ast$}]{channel}
+\end{DoxyParamCaption}
+)}\label{classcmn_output_multiplexer_a70d534895f21217e1e7e75e837fc65e7}
+Add an output channel. See notes above. 
+\begin{DoxyParams}{Parameters}
+{\em channel} & A pointer to the output channel to be added. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classcmn_output_multiplexer_a9720bcf8e2380b30373fbd1ad329f639}{}\index{cmn\+Output\+Multiplexer@{cmn\+Output\+Multiplexer}!Get\+Channels@{Get\+Channels}}
+\index{Get\+Channels@{Get\+Channels}!cmn\+Output\+Multiplexer@{cmn\+Output\+Multiplexer}}
+\subsubsection[{Get\+Channels}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Channel\+Container\+Type}\& cmn\+Output\+Multiplexer\+::\+Get\+Channels (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classcmn_output_multiplexer_a9720bcf8e2380b30373fbd1ad329f639}
+Enable access to the channel storage, without addition or removal of channels. Elements of the container can be accessed using the standard const\+\_\+iterator interfaces. Note that the channels themselves are non-\/const, so individual manipulation of each is enabled. \hypertarget{classcmn_output_multiplexer_acd5d9cf95e534975f63dc4a61bd54b84}{}\index{cmn\+Output\+Multiplexer@{cmn\+Output\+Multiplexer}!Remove\+Channel@{Remove\+Channel}}
+\index{Remove\+Channel@{Remove\+Channel}!cmn\+Output\+Multiplexer@{cmn\+Output\+Multiplexer}}
+\subsubsection[{Remove\+Channel}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Channel\+Type}\& cmn\+Output\+Multiplexer\+::\+Remove\+Channel (
+\begin{DoxyParamCaption}
+\item[{{\bf Channel\+Type} $\ast$}]{channel}
+\end{DoxyParamCaption}
+)}\label{classcmn_output_multiplexer_acd5d9cf95e534975f63dc4a61bd54b84}
+Remove an output channel. 
+\begin{DoxyParams}{Parameters}
+{\em channel} & A pointer to the output channel to be removed. No change occurs if the pointer is not on the list of channels for this multiplexer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+channel Returns $\ast$this, The output channel. 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classcmn_output_multiplexer_a2bbdcfbb9a7395c5538432523ade4b1a}{}\index{cmn\+Output\+Multiplexer@{cmn\+Output\+Multiplexer}!m\+\_\+\+Channel\+Container@{m\+\_\+\+Channel\+Container}}
+\index{m\+\_\+\+Channel\+Container@{m\+\_\+\+Channel\+Container}!cmn\+Output\+Multiplexer@{cmn\+Output\+Multiplexer}}
+\subsubsection[{m\+\_\+\+Channel\+Container}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Channel\+Container\+Type} cmn\+Output\+Multiplexer\+::m\+\_\+\+Channel\+Container\hspace{0.3cm}{\ttfamily [protected]}}\label{classcmn_output_multiplexer_a2bbdcfbb9a7395c5538432523ade4b1a}
+\hypertarget{classcmn_output_multiplexer_a64c336dbeee16f5d94503c2a4265b97c}{}\index{cmn\+Output\+Multiplexer@{cmn\+Output\+Multiplexer}!m\+\_\+\+Streambuf@{m\+\_\+\+Streambuf}}
+\index{m\+\_\+\+Streambuf@{m\+\_\+\+Streambuf}!cmn\+Output\+Multiplexer@{cmn\+Output\+Multiplexer}}
+\subsubsection[{m\+\_\+\+Streambuf}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cmn\+L\+O\+D\+Multiplexer\+Streambuf}$<${\bf char\+\_\+type}$>$ cmn\+Output\+Multiplexer\+::m\+\_\+\+Streambuf\hspace{0.3cm}{\ttfamily [protected]}}\label{classcmn_output_multiplexer_a64c336dbeee16f5d94503c2a4265b97c}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Common/\hyperlink{cmn_output_multiplexer_8h}{cmn\+Output\+Multiplexer.\+h}\end{DoxyCompactItemize}

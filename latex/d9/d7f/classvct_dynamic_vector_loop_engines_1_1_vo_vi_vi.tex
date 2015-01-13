@@ -1,0 +1,61 @@
+\hypertarget{classvct_dynamic_vector_loop_engines_1_1_vo_vi_vi}{}\section{vct\+Dynamic\+Vector\+Loop\+Engines\+:\+:Vo\+Vi\+Vi$<$ \+\_\+element\+Operation\+Type $>$ Class Template Reference}
+\label{classvct_dynamic_vector_loop_engines_1_1_vo_vi_vi}\index{vct\+Dynamic\+Vector\+Loop\+Engines\+::\+Vo\+Vi\+Vi$<$ \+\_\+element\+Operation\+Type $>$@{vct\+Dynamic\+Vector\+Loop\+Engines\+::\+Vo\+Vi\+Vi$<$ \+\_\+element\+Operation\+Type $>$}}
+
+
+Implement operation of the form $v_o = op(v_{i1}, v_{i2})$ for dynamic vectors.  
+
+
+
+
+{\ttfamily \#include $<$vct\+Dynamic\+Vector\+Loop\+Engines.\+h$>$}
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class \+\_\+output\+Vector\+Type , class \+\_\+input1\+Vector\+Type , class \+\_\+input2\+Vector\+Type $>$ }\\static void \hyperlink{classvct_dynamic_vector_loop_engines_1_1_vo_vi_vi_a908a77f7ed8af039a3c0cdbe36be2757}{Run} (\+\_\+output\+Vector\+Type \&output\+Vector, const \+\_\+input1\+Vector\+Type \&input1\+Vector, const \+\_\+input2\+Vector\+Type \&input2\+Vector)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class \+\_\+element\+Operation\+Type$>$class vct\+Dynamic\+Vector\+Loop\+Engines\+::\+Vo\+Vi\+Vi$<$ \+\_\+element\+Operation\+Type $>$}
+
+Implement operation of the form $v_o = op(v_{i1}, v_{i2})$ for dynamic vectors. 
+
+This class uses a loop to perform binary vector operations of the form \[ v_o = \mathrm{op}(v_{i1}, v_{i2}) \]
+
+where $v_o$ is the output vector, and $v_{i1}, v_{i2}$ are input vectors, all of the same size, {\itshape op} stands for the a binary operation performed elementwise between $v_{i1}$ and $v_{i2}$, and whose result is stored elementwise into $v_o$.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+element\+Operation\+Type} & The type of the binary operation.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classvct_dynamic_vector_loop_engines}{vct\+Dynamic\+Vector\+Loop\+Engines} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classvct_dynamic_vector_loop_engines_1_1_vo_vi_vi_a908a77f7ed8af039a3c0cdbe36be2757}{}\index{vct\+Dynamic\+Vector\+Loop\+Engines\+::\+Vo\+Vi\+Vi@{vct\+Dynamic\+Vector\+Loop\+Engines\+::\+Vo\+Vi\+Vi}!Run@{Run}}
+\index{Run@{Run}!vct\+Dynamic\+Vector\+Loop\+Engines\+::\+Vo\+Vi\+Vi@{vct\+Dynamic\+Vector\+Loop\+Engines\+::\+Vo\+Vi\+Vi}}
+\subsubsection[{Run}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Operation\+Type $>$ template$<$class \+\_\+output\+Vector\+Type , class \+\_\+input1\+Vector\+Type , class \+\_\+input2\+Vector\+Type $>$ static void {\bf vct\+Dynamic\+Vector\+Loop\+Engines\+::\+Vo\+Vi\+Vi}$<$ \+\_\+element\+Operation\+Type $>$\+::Run (
+\begin{DoxyParamCaption}
+\item[{\+\_\+output\+Vector\+Type \&}]{output\+Vector, }
+\item[{const \+\_\+input1\+Vector\+Type \&}]{input1\+Vector, }
+\item[{const \+\_\+input2\+Vector\+Type \&}]{input2\+Vector}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classvct_dynamic_vector_loop_engines_1_1_vo_vi_vi_a908a77f7ed8af039a3c0cdbe36be2757}
+Unroll the loop 
+\begin{DoxyParams}{Parameters}
+{\em output\+Vector} & The output vector. \\
+\hline
+{\em input1\+Vector} & The first input vector. \\
+\hline
+{\em input2\+Vector} & The second input vector. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Vector/\hyperlink{vct_dynamic_vector_loop_engines_8h}{vct\+Dynamic\+Vector\+Loop\+Engines.\+h}\end{DoxyCompactItemize}

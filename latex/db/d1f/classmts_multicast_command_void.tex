@@ -1,0 +1,118 @@
+\hypertarget{classmts_multicast_command_void}{}\section{mts\+Multicast\+Command\+Void Class Reference}
+\label{classmts_multicast_command_void}\index{mts\+Multicast\+Command\+Void@{mts\+Multicast\+Command\+Void}}
+
+
+{\ttfamily \#include $<$mts\+Multicast\+Command\+Void.\+h$>$}
+
+Inheritance diagram for mts\+Multicast\+Command\+Void\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{db/d1f/classmts_multicast_command_void}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classmts_command_void}{mts\+Command\+Void} \hyperlink{classmts_multicast_command_void_a62fa2f55d19429b000f3cafc044b67a5}{Base\+Type}
+\item 
+typedef std\+::vector$<$ \hyperlink{classmts_command_void_aa0e2be86c520aef7b9c3a59e3cfbbce3}{Base\+Type} $\ast$ $>$ \hyperlink{classmts_multicast_command_void_a2d0478105f8fcc377056363ab5aa7fa0}{Vector\+Type}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmts_multicast_command_void_a0cab0a922e91a5e620e70162f7d3fe65}{mts\+Multicast\+Command\+Void} (const std\+::string \&name)
+\item 
+\hyperlink{classmts_multicast_command_void_ad96e12608775cabdd603604353cff4a7}{$\sim$mts\+Multicast\+Command\+Void} ()
+\item 
+virtual bool \hyperlink{classmts_multicast_command_void_a2d04e7d3c12a6a47535540d34c737576}{Add\+Command} (\hyperlink{classmts_command_void_aa0e2be86c520aef7b9c3a59e3cfbbce3}{Base\+Type} $\ast$command)
+\item 
+virtual bool \hyperlink{classmts_multicast_command_void_a7b9664767999861a6bc08fda5e405e94}{Remove\+Command} (\hyperlink{classmts_command_void_aa0e2be86c520aef7b9c3a59e3cfbbce3}{Base\+Type} $\ast$command)
+\item 
+virtual mts\+Execution\+Result \hyperlink{classmts_multicast_command_void_a8e00a2156c2aafd723a554e979974b60}{Execute} (\hyperlink{mts_forward_declarations_8h_ad7426ccb6c883bc780d0ee197dddcbe7}{mts\+Blocking\+Type} \hyperlink{cmn_portability_8h_a021894e2626935fa2305434b1e893ff6}{C\+M\+N\+\_\+\+U\+N\+U\+S\+E\+D}(blocking))
+\item 
+virtual void \hyperlink{classmts_multicast_command_void_a8d3442e9f633665c9e465c351432c82e}{To\+Stream} (std\+::ostream \&output\+Stream) const 
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmts_multicast_command_void_a2d0478105f8fcc377056363ab5aa7fa0}{Vector\+Type} \hyperlink{classmts_multicast_command_void_a71303972432c845838760333033f6226}{Commands}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class contains a vector of two or more command objects. Currently it is used by composite interface, where the command needs to be chained, such that it is executed on more than one interface. This is the no argument version, that is the execute method takes no argument. 
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classmts_multicast_command_void_a62fa2f55d19429b000f3cafc044b67a5}{}\index{mts\+Multicast\+Command\+Void@{mts\+Multicast\+Command\+Void}!Base\+Type@{Base\+Type}}
+\index{Base\+Type@{Base\+Type}!mts\+Multicast\+Command\+Void@{mts\+Multicast\+Command\+Void}}
+\subsubsection[{Base\+Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf mts\+Command\+Void} {\bf mts\+Multicast\+Command\+Void\+::\+Base\+Type}}\label{classmts_multicast_command_void_a62fa2f55d19429b000f3cafc044b67a5}
+\hypertarget{classmts_multicast_command_void_a2d0478105f8fcc377056363ab5aa7fa0}{}\index{mts\+Multicast\+Command\+Void@{mts\+Multicast\+Command\+Void}!Vector\+Type@{Vector\+Type}}
+\index{Vector\+Type@{Vector\+Type}!mts\+Multicast\+Command\+Void@{mts\+Multicast\+Command\+Void}}
+\subsubsection[{Vector\+Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::vector$<${\bf Base\+Type} $\ast$$>$ {\bf mts\+Multicast\+Command\+Void\+::\+Vector\+Type}}\label{classmts_multicast_command_void_a2d0478105f8fcc377056363ab5aa7fa0}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmts_multicast_command_void_a0cab0a922e91a5e620e70162f7d3fe65}{}\index{mts\+Multicast\+Command\+Void@{mts\+Multicast\+Command\+Void}!mts\+Multicast\+Command\+Void@{mts\+Multicast\+Command\+Void}}
+\index{mts\+Multicast\+Command\+Void@{mts\+Multicast\+Command\+Void}!mts\+Multicast\+Command\+Void@{mts\+Multicast\+Command\+Void}}
+\subsubsection[{mts\+Multicast\+Command\+Void}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Multicast\+Command\+Void\+::mts\+Multicast\+Command\+Void (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name}
+\end{DoxyParamCaption}
+)}\label{classmts_multicast_command_void_a0cab0a922e91a5e620e70162f7d3fe65}
+Default constructor. Does nothing. \hypertarget{classmts_multicast_command_void_ad96e12608775cabdd603604353cff4a7}{}\index{mts\+Multicast\+Command\+Void@{mts\+Multicast\+Command\+Void}!````~mts\+Multicast\+Command\+Void@{$\sim$mts\+Multicast\+Command\+Void}}
+\index{````~mts\+Multicast\+Command\+Void@{$\sim$mts\+Multicast\+Command\+Void}!mts\+Multicast\+Command\+Void@{mts\+Multicast\+Command\+Void}}
+\subsubsection[{$\sim$mts\+Multicast\+Command\+Void}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Multicast\+Command\+Void\+::$\sim$mts\+Multicast\+Command\+Void (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classmts_multicast_command_void_ad96e12608775cabdd603604353cff4a7}
+Default destructor. Does nothing. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classmts_multicast_command_void_a2d04e7d3c12a6a47535540d34c737576}{}\index{mts\+Multicast\+Command\+Void@{mts\+Multicast\+Command\+Void}!Add\+Command@{Add\+Command}}
+\index{Add\+Command@{Add\+Command}!mts\+Multicast\+Command\+Void@{mts\+Multicast\+Command\+Void}}
+\subsubsection[{Add\+Command}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool mts\+Multicast\+Command\+Void\+::\+Add\+Command (
+\begin{DoxyParamCaption}
+\item[{{\bf Base\+Type} $\ast$}]{command}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_multicast_command_void_a2d04e7d3c12a6a47535540d34c737576}
+Add a command to the composite. \hypertarget{classmts_multicast_command_void_a8e00a2156c2aafd723a554e979974b60}{}\index{mts\+Multicast\+Command\+Void@{mts\+Multicast\+Command\+Void}!Execute@{Execute}}
+\index{Execute@{Execute}!mts\+Multicast\+Command\+Void@{mts\+Multicast\+Command\+Void}}
+\subsubsection[{Execute}]{\setlength{\rightskip}{0pt plus 5cm}virtual mts\+Execution\+Result mts\+Multicast\+Command\+Void\+::\+Execute (
+\begin{DoxyParamCaption}
+\item[{{\bf mts\+Blocking\+Type} }]{C\+M\+N\+\_\+\+U\+N\+U\+S\+E\+Dblocking}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_multicast_command_void_a8e00a2156c2aafd723a554e979974b60}
+Execute all the commands in the composite. 
+
+Reimplemented from \hyperlink{classmts_command_void_a931ef188b21159c6340021fdd7a2d373}{mts\+Command\+Void}.
+
+\hypertarget{classmts_multicast_command_void_a7b9664767999861a6bc08fda5e405e94}{}\index{mts\+Multicast\+Command\+Void@{mts\+Multicast\+Command\+Void}!Remove\+Command@{Remove\+Command}}
+\index{Remove\+Command@{Remove\+Command}!mts\+Multicast\+Command\+Void@{mts\+Multicast\+Command\+Void}}
+\subsubsection[{Remove\+Command}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool mts\+Multicast\+Command\+Void\+::\+Remove\+Command (
+\begin{DoxyParamCaption}
+\item[{{\bf Base\+Type} $\ast$}]{command}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_multicast_command_void_a7b9664767999861a6bc08fda5e405e94}
+Remove a command from the composite. \hypertarget{classmts_multicast_command_void_a8d3442e9f633665c9e465c351432c82e}{}\index{mts\+Multicast\+Command\+Void@{mts\+Multicast\+Command\+Void}!To\+Stream@{To\+Stream}}
+\index{To\+Stream@{To\+Stream}!mts\+Multicast\+Command\+Void@{mts\+Multicast\+Command\+Void}}
+\subsubsection[{To\+Stream}]{\setlength{\rightskip}{0pt plus 5cm}virtual void mts\+Multicast\+Command\+Void\+::\+To\+Stream (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{output\+Stream}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_multicast_command_void_a8d3442e9f633665c9e465c351432c82e}
+
+
+Reimplemented from \hyperlink{classmts_command_void_a3b78ce1750d144b2e914be8e03274539}{mts\+Command\+Void}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classmts_multicast_command_void_a71303972432c845838760333033f6226}{}\index{mts\+Multicast\+Command\+Void@{mts\+Multicast\+Command\+Void}!Commands@{Commands}}
+\index{Commands@{Commands}!mts\+Multicast\+Command\+Void@{mts\+Multicast\+Command\+Void}}
+\subsubsection[{Commands}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector\+Type} mts\+Multicast\+Command\+Void\+::\+Commands\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_multicast_command_void_a71303972432c845838760333033f6226}
+Vector to commands that constitute the composite command. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Multi\+Task/\hyperlink{mts_multicast_command_void_8h}{mts\+Multicast\+Command\+Void.\+h}\end{DoxyCompactItemize}

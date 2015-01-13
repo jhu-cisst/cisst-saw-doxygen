@@ -1,0 +1,36 @@
+\hypertarget{classvct_dynamic_matrix_base_1_1_submatrix}{}\section{vct\+Dynamic\+Matrix\+Base$<$ \+\_\+matrix\+Owner\+Type, \+\_\+element\+Type $>$\+:\+:Submatrix Class Reference}
+\label{classvct_dynamic_matrix_base_1_1_submatrix}\index{vct\+Dynamic\+Matrix\+Base$<$ \+\_\+matrix\+Owner\+Type, \+\_\+element\+Type $>$\+::\+Submatrix@{vct\+Dynamic\+Matrix\+Base$<$ \+\_\+matrix\+Owner\+Type, \+\_\+element\+Type $>$\+::\+Submatrix}}
+
+
+{\ttfamily \#include $<$vct\+Dynamic\+Matrix\+Base.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classvct_dynamic_matrix_ref}{vct\+Dynamic\+Matrix\+Ref}$<$ value\+\_\+type $>$ \hyperlink{classvct_dynamic_matrix_base_1_1_submatrix_a253f9d0900cce7df1b7ec9e3d5117623}{Type}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class \+\_\+matrix\+Owner\+Type, typename \+\_\+element\+Type$>$class vct\+Dynamic\+Matrix\+Base$<$ \+\_\+matrix\+Owner\+Type, \+\_\+element\+Type $>$\+::\+Submatrix}
+
+Define a \hyperlink{classvct_dynamic_matrix_base_1_1_submatrix}{Submatrix} class for compatibility with the fixed size matrices. A submatrix has the same stride as the parent container.
+
+Example\+:
+
+typedef \hyperlink{classvct_dynamic_matrix}{vct\+Dynamic\+Matrix$<$double$>$} Matrix\+Type; Matrix\+Type M(6,6); Matrix\+Type\+::\+Submatrix\+::\+Type top\+Left(\+M, 0, 0, 3, 3); Matrix\+Type\+::\+Submatrix\+::\+Type bottom\+Right(\+M, 3, 3); // implicitely everything left
+
+\begin{DoxyNote}{Note}
+There is no straightforward way to define a fixed-\/size submatrix of a dynamic matrix, because the stride of the dynamic matrix is not known in compilation time. A way to do it is\+:
+\end{DoxyNote}
+vct\+Fixed\+Size\+Matrix\+Ref$<$double, 3, 3, 1, 6$>$ top\+Right(\+M, 0, 3); vct\+Fixed\+Size\+Matrix\+Ref$<$double, 3, 3, 1, 6$>$ bottom\+Left(\+M, 3, 0); 
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classvct_dynamic_matrix_base_1_1_submatrix_a253f9d0900cce7df1b7ec9e3d5117623}{}\index{vct\+Dynamic\+Matrix\+Base\+::\+Submatrix@{vct\+Dynamic\+Matrix\+Base\+::\+Submatrix}!Type@{Type}}
+\index{Type@{Type}!vct\+Dynamic\+Matrix\+Base\+::\+Submatrix@{vct\+Dynamic\+Matrix\+Base\+::\+Submatrix}}
+\subsubsection[{Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+matrix\+Owner\+Type, typename \+\_\+element\+Type$>$ typedef {\bf vct\+Dynamic\+Matrix\+Ref}$<$value\+\_\+type$>$ {\bf vct\+Dynamic\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type, \+\_\+element\+Type $>$\+::{\bf Submatrix\+::\+Type}}\label{classvct_dynamic_matrix_base_1_1_submatrix_a253f9d0900cce7df1b7ec9e3d5117623}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Vector/\hyperlink{vct_dynamic_matrix_base_8h}{vct\+Dynamic\+Matrix\+Base.\+h}\end{DoxyCompactItemize}

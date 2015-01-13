@@ -1,0 +1,206 @@
+\hypertarget{classsvl_filter_video_exposure_manager}{}\section{svl\+Filter\+Video\+Exposure\+Manager Class Reference}
+\label{classsvl_filter_video_exposure_manager}\index{svl\+Filter\+Video\+Exposure\+Manager@{svl\+Filter\+Video\+Exposure\+Manager}}
+
+
+{\ttfamily \#include $<$svl\+Filter\+Video\+Exposure\+Manager.\+h$>$}
+
+Inheritance diagram for svl\+Filter\+Video\+Exposure\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{d9/d7a/classsvl_filter_video_exposure_manager}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsvl_filter_video_exposure_manager_aee6501625b5da7e0d1ccf214df9e8718}{svl\+Filter\+Video\+Exposure\+Manager} ()
+\item 
+virtual int \hyperlink{classsvl_filter_video_exposure_manager_ac4752946ce8c27aa0ef73e4cdaaec5c9}{Set\+Video\+Capture\+Filter} (\hyperlink{classsvl_filter_source_video_capture}{svl\+Filter\+Source\+Video\+Capture} $\ast$sourcefilter)
+\item 
+virtual \hyperlink{classsvl_filter_source_video_capture}{svl\+Filter\+Source\+Video\+Capture} $\ast$ \hyperlink{classsvl_filter_video_exposure_manager_a4192edd57895da5cb3081c472f044b48}{Get\+Video\+Capture\+Filter} () const 
+\item 
+virtual void \hyperlink{classsvl_filter_video_exposure_manager_a6bfb1a6bab6882ddd448a1ee5b5406e0}{Set\+Saturation\+Tolerance} (double tolerance)
+\item 
+virtual double \hyperlink{classsvl_filter_video_exposure_manager_ae984963200bcf2fbdb1b40d42df4335a}{Get\+Saturation\+Tolerance} () const 
+\item 
+virtual void \hyperlink{classsvl_filter_video_exposure_manager_a3750e525f8fd7675dccf30a126342cc7}{Set\+Saturation\+Threshold} (unsigned char threshold)
+\item 
+virtual unsigned char \hyperlink{classsvl_filter_video_exposure_manager_a1ba163365e52a1dd21929ae7574a51b4}{Get\+Saturation\+Threshold} () const 
+\item 
+virtual void \hyperlink{classsvl_filter_video_exposure_manager_a56e877b051b622038a19b6b99af5946f}{Set\+Max\+Gain} (unsigned int maxgain)
+\item 
+virtual unsigned int \hyperlink{classsvl_filter_video_exposure_manager_aeb9862e63a3baaaaa7ce54ee8102775d}{Get\+Max\+Gain} () const 
+\item 
+virtual void \hyperlink{classsvl_filter_video_exposure_manager_ae7a5bbc3333df726f48510459445f524}{Set\+Max\+Shutter} (unsigned int maxshutter)
+\item 
+virtual unsigned int \hyperlink{classsvl_filter_video_exposure_manager_a36b3cbe18e865d2ad232d9a6a5114c43}{Get\+Max\+Shutter} () const 
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual int \hyperlink{classsvl_filter_video_exposure_manager_a10dd305120d6db59cf59769ceb172299}{Initialize} (\hyperlink{classsvl_sample}{svl\+Sample} $\ast$sync\+Input, \hyperlink{classsvl_sample}{svl\+Sample} $\ast$\&sync\+Output)
+\item 
+virtual int \hyperlink{classsvl_filter_video_exposure_manager_a7f970fa286042e61110755b706a36217}{Process} (\hyperlink{structsvl_proc_info}{svl\+Proc\+Info} $\ast$proc\+Info, \hyperlink{classsvl_sample}{svl\+Sample} $\ast$sync\+Input, \hyperlink{classsvl_sample}{svl\+Sample} $\ast$\&sync\+Output)
+\item 
+virtual void \hyperlink{classsvl_filter_video_exposure_manager_a4b3ab1c8d4ee5916f08f30f5a873fb43}{Get\+Saturation\+Ratio} (\hyperlink{classsvl_sample_image}{svl\+Sample\+Image} $\ast$image, const unsigned int videoch, double \&saturation, unsigned int \&maxval)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsvl_filter_source_video_capture}{svl\+Filter\+Source\+Video\+Capture} $\ast$ \hyperlink{classsvl_filter_video_exposure_manager_a1465c2428b76152bd3397825a1d4163b}{Source\+Filter}
+\item 
+double \hyperlink{classsvl_filter_video_exposure_manager_ade971b6b43879957865e69fb76a045e3}{Tolerance}
+\item 
+unsigned char \hyperlink{classsvl_filter_video_exposure_manager_ab2fc8e4a7d94af1976849d160ac946ba}{Threshold}
+\item 
+int \hyperlink{classsvl_filter_video_exposure_manager_ad1b3117790f8bffebf55f8362eefda54}{Max\+Gain}
+\item 
+int \hyperlink{classsvl_filter_video_exposure_manager_a0c93ed7790f14669fdf52207f0a1105e}{Max\+Shutter}
+\item 
+\hyperlink{classvct_dynamic_vector}{vct\+Dynamic\+Vector}$<$ unsigned int $>$ \hyperlink{classsvl_filter_video_exposure_manager_a124bab248348d2ee81a6e1629366a146}{Histogram}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classsvl_filter_video_exposure_manager_aee6501625b5da7e0d1ccf214df9e8718}{}\index{svl\+Filter\+Video\+Exposure\+Manager@{svl\+Filter\+Video\+Exposure\+Manager}!svl\+Filter\+Video\+Exposure\+Manager@{svl\+Filter\+Video\+Exposure\+Manager}}
+\index{svl\+Filter\+Video\+Exposure\+Manager@{svl\+Filter\+Video\+Exposure\+Manager}!svl\+Filter\+Video\+Exposure\+Manager@{svl\+Filter\+Video\+Exposure\+Manager}}
+\subsubsection[{svl\+Filter\+Video\+Exposure\+Manager}]{\setlength{\rightskip}{0pt plus 5cm}svl\+Filter\+Video\+Exposure\+Manager\+::svl\+Filter\+Video\+Exposure\+Manager (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classsvl_filter_video_exposure_manager_aee6501625b5da7e0d1ccf214df9e8718}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classsvl_filter_video_exposure_manager_aeb9862e63a3baaaaa7ce54ee8102775d}{}\index{svl\+Filter\+Video\+Exposure\+Manager@{svl\+Filter\+Video\+Exposure\+Manager}!Get\+Max\+Gain@{Get\+Max\+Gain}}
+\index{Get\+Max\+Gain@{Get\+Max\+Gain}!svl\+Filter\+Video\+Exposure\+Manager@{svl\+Filter\+Video\+Exposure\+Manager}}
+\subsubsection[{Get\+Max\+Gain}]{\setlength{\rightskip}{0pt plus 5cm}virtual unsigned int svl\+Filter\+Video\+Exposure\+Manager\+::\+Get\+Max\+Gain (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{classsvl_filter_video_exposure_manager_aeb9862e63a3baaaaa7ce54ee8102775d}
+\hypertarget{classsvl_filter_video_exposure_manager_a36b3cbe18e865d2ad232d9a6a5114c43}{}\index{svl\+Filter\+Video\+Exposure\+Manager@{svl\+Filter\+Video\+Exposure\+Manager}!Get\+Max\+Shutter@{Get\+Max\+Shutter}}
+\index{Get\+Max\+Shutter@{Get\+Max\+Shutter}!svl\+Filter\+Video\+Exposure\+Manager@{svl\+Filter\+Video\+Exposure\+Manager}}
+\subsubsection[{Get\+Max\+Shutter}]{\setlength{\rightskip}{0pt plus 5cm}virtual unsigned int svl\+Filter\+Video\+Exposure\+Manager\+::\+Get\+Max\+Shutter (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{classsvl_filter_video_exposure_manager_a36b3cbe18e865d2ad232d9a6a5114c43}
+\hypertarget{classsvl_filter_video_exposure_manager_a4b3ab1c8d4ee5916f08f30f5a873fb43}{}\index{svl\+Filter\+Video\+Exposure\+Manager@{svl\+Filter\+Video\+Exposure\+Manager}!Get\+Saturation\+Ratio@{Get\+Saturation\+Ratio}}
+\index{Get\+Saturation\+Ratio@{Get\+Saturation\+Ratio}!svl\+Filter\+Video\+Exposure\+Manager@{svl\+Filter\+Video\+Exposure\+Manager}}
+\subsubsection[{Get\+Saturation\+Ratio}]{\setlength{\rightskip}{0pt plus 5cm}virtual void svl\+Filter\+Video\+Exposure\+Manager\+::\+Get\+Saturation\+Ratio (
+\begin{DoxyParamCaption}
+\item[{{\bf svl\+Sample\+Image} $\ast$}]{image, }
+\item[{const unsigned int}]{videoch, }
+\item[{double \&}]{saturation, }
+\item[{unsigned int \&}]{maxval}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classsvl_filter_video_exposure_manager_a4b3ab1c8d4ee5916f08f30f5a873fb43}
+\hypertarget{classsvl_filter_video_exposure_manager_a1ba163365e52a1dd21929ae7574a51b4}{}\index{svl\+Filter\+Video\+Exposure\+Manager@{svl\+Filter\+Video\+Exposure\+Manager}!Get\+Saturation\+Threshold@{Get\+Saturation\+Threshold}}
+\index{Get\+Saturation\+Threshold@{Get\+Saturation\+Threshold}!svl\+Filter\+Video\+Exposure\+Manager@{svl\+Filter\+Video\+Exposure\+Manager}}
+\subsubsection[{Get\+Saturation\+Threshold}]{\setlength{\rightskip}{0pt plus 5cm}virtual unsigned char svl\+Filter\+Video\+Exposure\+Manager\+::\+Get\+Saturation\+Threshold (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{classsvl_filter_video_exposure_manager_a1ba163365e52a1dd21929ae7574a51b4}
+\hypertarget{classsvl_filter_video_exposure_manager_ae984963200bcf2fbdb1b40d42df4335a}{}\index{svl\+Filter\+Video\+Exposure\+Manager@{svl\+Filter\+Video\+Exposure\+Manager}!Get\+Saturation\+Tolerance@{Get\+Saturation\+Tolerance}}
+\index{Get\+Saturation\+Tolerance@{Get\+Saturation\+Tolerance}!svl\+Filter\+Video\+Exposure\+Manager@{svl\+Filter\+Video\+Exposure\+Manager}}
+\subsubsection[{Get\+Saturation\+Tolerance}]{\setlength{\rightskip}{0pt plus 5cm}virtual double svl\+Filter\+Video\+Exposure\+Manager\+::\+Get\+Saturation\+Tolerance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{classsvl_filter_video_exposure_manager_ae984963200bcf2fbdb1b40d42df4335a}
+\hypertarget{classsvl_filter_video_exposure_manager_a4192edd57895da5cb3081c472f044b48}{}\index{svl\+Filter\+Video\+Exposure\+Manager@{svl\+Filter\+Video\+Exposure\+Manager}!Get\+Video\+Capture\+Filter@{Get\+Video\+Capture\+Filter}}
+\index{Get\+Video\+Capture\+Filter@{Get\+Video\+Capture\+Filter}!svl\+Filter\+Video\+Exposure\+Manager@{svl\+Filter\+Video\+Exposure\+Manager}}
+\subsubsection[{Get\+Video\+Capture\+Filter}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf svl\+Filter\+Source\+Video\+Capture}$\ast$ svl\+Filter\+Video\+Exposure\+Manager\+::\+Get\+Video\+Capture\+Filter (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{classsvl_filter_video_exposure_manager_a4192edd57895da5cb3081c472f044b48}
+\hypertarget{classsvl_filter_video_exposure_manager_a10dd305120d6db59cf59769ceb172299}{}\index{svl\+Filter\+Video\+Exposure\+Manager@{svl\+Filter\+Video\+Exposure\+Manager}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!svl\+Filter\+Video\+Exposure\+Manager@{svl\+Filter\+Video\+Exposure\+Manager}}
+\subsubsection[{Initialize}]{\setlength{\rightskip}{0pt plus 5cm}virtual int svl\+Filter\+Video\+Exposure\+Manager\+::\+Initialize (
+\begin{DoxyParamCaption}
+\item[{{\bf svl\+Sample} $\ast$}]{sync\+Input, }
+\item[{{\bf svl\+Sample} $\ast$\&}]{sync\+Output}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classsvl_filter_video_exposure_manager_a10dd305120d6db59cf59769ceb172299}
+
+
+Implements \hyperlink{classsvl_filter_base_ac8eddcd9336c2b381facc8fb372e3bfb}{svl\+Filter\+Base}.
+
+\hypertarget{classsvl_filter_video_exposure_manager_a7f970fa286042e61110755b706a36217}{}\index{svl\+Filter\+Video\+Exposure\+Manager@{svl\+Filter\+Video\+Exposure\+Manager}!Process@{Process}}
+\index{Process@{Process}!svl\+Filter\+Video\+Exposure\+Manager@{svl\+Filter\+Video\+Exposure\+Manager}}
+\subsubsection[{Process}]{\setlength{\rightskip}{0pt plus 5cm}virtual int svl\+Filter\+Video\+Exposure\+Manager\+::\+Process (
+\begin{DoxyParamCaption}
+\item[{{\bf svl\+Proc\+Info} $\ast$}]{proc\+Info, }
+\item[{{\bf svl\+Sample} $\ast$}]{sync\+Input, }
+\item[{{\bf svl\+Sample} $\ast$\&}]{sync\+Output}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classsvl_filter_video_exposure_manager_a7f970fa286042e61110755b706a36217}
+
+
+Implements \hyperlink{classsvl_filter_base_aaff77d711088384d00e717fb4ec88aab}{svl\+Filter\+Base}.
+
+\hypertarget{classsvl_filter_video_exposure_manager_a56e877b051b622038a19b6b99af5946f}{}\index{svl\+Filter\+Video\+Exposure\+Manager@{svl\+Filter\+Video\+Exposure\+Manager}!Set\+Max\+Gain@{Set\+Max\+Gain}}
+\index{Set\+Max\+Gain@{Set\+Max\+Gain}!svl\+Filter\+Video\+Exposure\+Manager@{svl\+Filter\+Video\+Exposure\+Manager}}
+\subsubsection[{Set\+Max\+Gain}]{\setlength{\rightskip}{0pt plus 5cm}virtual void svl\+Filter\+Video\+Exposure\+Manager\+::\+Set\+Max\+Gain (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{maxgain}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classsvl_filter_video_exposure_manager_a56e877b051b622038a19b6b99af5946f}
+\hypertarget{classsvl_filter_video_exposure_manager_ae7a5bbc3333df726f48510459445f524}{}\index{svl\+Filter\+Video\+Exposure\+Manager@{svl\+Filter\+Video\+Exposure\+Manager}!Set\+Max\+Shutter@{Set\+Max\+Shutter}}
+\index{Set\+Max\+Shutter@{Set\+Max\+Shutter}!svl\+Filter\+Video\+Exposure\+Manager@{svl\+Filter\+Video\+Exposure\+Manager}}
+\subsubsection[{Set\+Max\+Shutter}]{\setlength{\rightskip}{0pt plus 5cm}virtual void svl\+Filter\+Video\+Exposure\+Manager\+::\+Set\+Max\+Shutter (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{maxshutter}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classsvl_filter_video_exposure_manager_ae7a5bbc3333df726f48510459445f524}
+\hypertarget{classsvl_filter_video_exposure_manager_a3750e525f8fd7675dccf30a126342cc7}{}\index{svl\+Filter\+Video\+Exposure\+Manager@{svl\+Filter\+Video\+Exposure\+Manager}!Set\+Saturation\+Threshold@{Set\+Saturation\+Threshold}}
+\index{Set\+Saturation\+Threshold@{Set\+Saturation\+Threshold}!svl\+Filter\+Video\+Exposure\+Manager@{svl\+Filter\+Video\+Exposure\+Manager}}
+\subsubsection[{Set\+Saturation\+Threshold}]{\setlength{\rightskip}{0pt plus 5cm}virtual void svl\+Filter\+Video\+Exposure\+Manager\+::\+Set\+Saturation\+Threshold (
+\begin{DoxyParamCaption}
+\item[{unsigned char}]{threshold}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classsvl_filter_video_exposure_manager_a3750e525f8fd7675dccf30a126342cc7}
+\hypertarget{classsvl_filter_video_exposure_manager_a6bfb1a6bab6882ddd448a1ee5b5406e0}{}\index{svl\+Filter\+Video\+Exposure\+Manager@{svl\+Filter\+Video\+Exposure\+Manager}!Set\+Saturation\+Tolerance@{Set\+Saturation\+Tolerance}}
+\index{Set\+Saturation\+Tolerance@{Set\+Saturation\+Tolerance}!svl\+Filter\+Video\+Exposure\+Manager@{svl\+Filter\+Video\+Exposure\+Manager}}
+\subsubsection[{Set\+Saturation\+Tolerance}]{\setlength{\rightskip}{0pt plus 5cm}virtual void svl\+Filter\+Video\+Exposure\+Manager\+::\+Set\+Saturation\+Tolerance (
+\begin{DoxyParamCaption}
+\item[{double}]{tolerance}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classsvl_filter_video_exposure_manager_a6bfb1a6bab6882ddd448a1ee5b5406e0}
+\hypertarget{classsvl_filter_video_exposure_manager_ac4752946ce8c27aa0ef73e4cdaaec5c9}{}\index{svl\+Filter\+Video\+Exposure\+Manager@{svl\+Filter\+Video\+Exposure\+Manager}!Set\+Video\+Capture\+Filter@{Set\+Video\+Capture\+Filter}}
+\index{Set\+Video\+Capture\+Filter@{Set\+Video\+Capture\+Filter}!svl\+Filter\+Video\+Exposure\+Manager@{svl\+Filter\+Video\+Exposure\+Manager}}
+\subsubsection[{Set\+Video\+Capture\+Filter}]{\setlength{\rightskip}{0pt plus 5cm}virtual int svl\+Filter\+Video\+Exposure\+Manager\+::\+Set\+Video\+Capture\+Filter (
+\begin{DoxyParamCaption}
+\item[{{\bf svl\+Filter\+Source\+Video\+Capture} $\ast$}]{sourcefilter}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classsvl_filter_video_exposure_manager_ac4752946ce8c27aa0ef73e4cdaaec5c9}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classsvl_filter_video_exposure_manager_a124bab248348d2ee81a6e1629366a146}{}\index{svl\+Filter\+Video\+Exposure\+Manager@{svl\+Filter\+Video\+Exposure\+Manager}!Histogram@{Histogram}}
+\index{Histogram@{Histogram}!svl\+Filter\+Video\+Exposure\+Manager@{svl\+Filter\+Video\+Exposure\+Manager}}
+\subsubsection[{Histogram}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Dynamic\+Vector}$<$unsigned int$>$ svl\+Filter\+Video\+Exposure\+Manager\+::\+Histogram\hspace{0.3cm}{\ttfamily [protected]}}\label{classsvl_filter_video_exposure_manager_a124bab248348d2ee81a6e1629366a146}
+\hypertarget{classsvl_filter_video_exposure_manager_ad1b3117790f8bffebf55f8362eefda54}{}\index{svl\+Filter\+Video\+Exposure\+Manager@{svl\+Filter\+Video\+Exposure\+Manager}!Max\+Gain@{Max\+Gain}}
+\index{Max\+Gain@{Max\+Gain}!svl\+Filter\+Video\+Exposure\+Manager@{svl\+Filter\+Video\+Exposure\+Manager}}
+\subsubsection[{Max\+Gain}]{\setlength{\rightskip}{0pt plus 5cm}int svl\+Filter\+Video\+Exposure\+Manager\+::\+Max\+Gain\hspace{0.3cm}{\ttfamily [protected]}}\label{classsvl_filter_video_exposure_manager_ad1b3117790f8bffebf55f8362eefda54}
+\hypertarget{classsvl_filter_video_exposure_manager_a0c93ed7790f14669fdf52207f0a1105e}{}\index{svl\+Filter\+Video\+Exposure\+Manager@{svl\+Filter\+Video\+Exposure\+Manager}!Max\+Shutter@{Max\+Shutter}}
+\index{Max\+Shutter@{Max\+Shutter}!svl\+Filter\+Video\+Exposure\+Manager@{svl\+Filter\+Video\+Exposure\+Manager}}
+\subsubsection[{Max\+Shutter}]{\setlength{\rightskip}{0pt plus 5cm}int svl\+Filter\+Video\+Exposure\+Manager\+::\+Max\+Shutter\hspace{0.3cm}{\ttfamily [protected]}}\label{classsvl_filter_video_exposure_manager_a0c93ed7790f14669fdf52207f0a1105e}
+\hypertarget{classsvl_filter_video_exposure_manager_a1465c2428b76152bd3397825a1d4163b}{}\index{svl\+Filter\+Video\+Exposure\+Manager@{svl\+Filter\+Video\+Exposure\+Manager}!Source\+Filter@{Source\+Filter}}
+\index{Source\+Filter@{Source\+Filter}!svl\+Filter\+Video\+Exposure\+Manager@{svl\+Filter\+Video\+Exposure\+Manager}}
+\subsubsection[{Source\+Filter}]{\setlength{\rightskip}{0pt plus 5cm}{\bf svl\+Filter\+Source\+Video\+Capture}$\ast$ svl\+Filter\+Video\+Exposure\+Manager\+::\+Source\+Filter\hspace{0.3cm}{\ttfamily [protected]}}\label{classsvl_filter_video_exposure_manager_a1465c2428b76152bd3397825a1d4163b}
+\hypertarget{classsvl_filter_video_exposure_manager_ab2fc8e4a7d94af1976849d160ac946ba}{}\index{svl\+Filter\+Video\+Exposure\+Manager@{svl\+Filter\+Video\+Exposure\+Manager}!Threshold@{Threshold}}
+\index{Threshold@{Threshold}!svl\+Filter\+Video\+Exposure\+Manager@{svl\+Filter\+Video\+Exposure\+Manager}}
+\subsubsection[{Threshold}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char svl\+Filter\+Video\+Exposure\+Manager\+::\+Threshold\hspace{0.3cm}{\ttfamily [protected]}}\label{classsvl_filter_video_exposure_manager_ab2fc8e4a7d94af1976849d160ac946ba}
+\hypertarget{classsvl_filter_video_exposure_manager_ade971b6b43879957865e69fb76a045e3}{}\index{svl\+Filter\+Video\+Exposure\+Manager@{svl\+Filter\+Video\+Exposure\+Manager}!Tolerance@{Tolerance}}
+\index{Tolerance@{Tolerance}!svl\+Filter\+Video\+Exposure\+Manager@{svl\+Filter\+Video\+Exposure\+Manager}}
+\subsubsection[{Tolerance}]{\setlength{\rightskip}{0pt plus 5cm}double svl\+Filter\+Video\+Exposure\+Manager\+::\+Tolerance\hspace{0.3cm}{\ttfamily [protected]}}\label{classsvl_filter_video_exposure_manager_ade971b6b43879957865e69fb76a045e3}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Stereo\+Vision/\hyperlink{svl_filter_video_exposure_manager_8h}{svl\+Filter\+Video\+Exposure\+Manager.\+h}\end{DoxyCompactItemize}

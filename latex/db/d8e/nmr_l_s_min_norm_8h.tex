@@ -1,0 +1,83 @@
+\hypertarget{nmr_l_s_min_norm_8h}{}\section{/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Numerical/nmr\+L\+S\+Min\+Norm.h File Reference}
+\label{nmr_l_s_min_norm_8h}\index{/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Numerical/nmr\+L\+S\+Min\+Norm.\+h@{/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Numerical/nmr\+L\+S\+Min\+Norm.\+h}}
+{\ttfamily \#include $<$cisst\+Numerical/nmr\+Netlib.\+h$>$}\\*
+{\ttfamily \#include $<$cisst\+Vector/vct\+Dynamic\+Matrix.\+h$>$}\\*
+{\ttfamily \#include $<$cisst\+Numerical/nmr\+Export.\+h$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classnmr_l_s_min_norm}{nmr\+L\+S\+Min\+Norm}
+\item 
+class \hyperlink{classnmr_l_s_min_norm_1_1_data}{nmr\+L\+S\+Min\+Norm\+::\+Data}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classvct_dynamic_matrix}{vct\+Dynamic\+Matrix}$<$ double $>$ \hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} \hyperlink{nmr_l_s_min_norm_8h_a55281e20c019be194ce0dc3f175d60cc}{nmr\+L\+S\+Min\+Norm} (\hyperlink{classvct_dynamic_matrix}{vct\+Dynamic\+Matrix}$<$ double $>$ \&A, \hyperlink{classvct_dynamic_matrix}{vct\+Dynamic\+Matrix}$<$ double $>$ \&b, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E r=-\/1.\+0)
+\begin{DoxyCompactList}\small\item\em Computes the minimum norm solution to a real linear least squares problem. \end{DoxyCompactList}\item 
+\hyperlink{classvct_dynamic_matrix}{vct\+Dynamic\+Matrix}$<$ double $>$ \hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} \hyperlink{nmr_l_s_min_norm_8h_ac0097600054a6557b4ad83fde0d56823}{nmr\+L\+S\+Min\+Norm} (\hyperlink{classvct_dynamic_matrix}{vct\+Dynamic\+Matrix}$<$ double $>$ \&A, \hyperlink{classvct_dynamic_matrix}{vct\+Dynamic\+Matrix}$<$ double $>$ \&b, \hyperlink{classnmr_l_s_min_norm_1_1_data}{nmr\+L\+S\+Min\+Norm\+::\+Data} \&data, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E r=-\/1.\+0)
+\begin{DoxyCompactList}\small\item\em Computes the minimum norm solution to a real linear least squares problem. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{nmr_l_s_min_norm_8h_a55281e20c019be194ce0dc3f175d60cc}{}\index{nmr\+L\+S\+Min\+Norm.\+h@{nmr\+L\+S\+Min\+Norm.\+h}!nmr\+L\+S\+Min\+Norm@{nmr\+L\+S\+Min\+Norm}}
+\index{nmr\+L\+S\+Min\+Norm@{nmr\+L\+S\+Min\+Norm}!nmr\+L\+S\+Min\+Norm.\+h@{nmr\+L\+S\+Min\+Norm.\+h}}
+\subsubsection[{nmr\+L\+S\+Min\+Norm}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Dynamic\+Matrix}$<$double$>$ {\bf C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} {\bf nmr\+L\+S\+Min\+Norm} (
+\begin{DoxyParamCaption}
+\item[{{\bf vct\+Dynamic\+Matrix}$<$ double $>$ \&}]{A, }
+\item[{{\bf vct\+Dynamic\+Matrix}$<$ double $>$ \&}]{b, }
+\item[{C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E}]{r = {\ttfamily -\/1.0}}
+\end{DoxyParamCaption}
+)}\label{nmr_l_s_min_norm_8h_a55281e20c019be194ce0dc3f175d60cc}
+
+
+Computes the minimum norm solution to a real linear least squares problem. 
+
+Computes the minimum norm solution to a real linear least squares problem\+: $ \min_{\mathbf{x}} \| \mathbf{b} - A\mathbf{x} \| $
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em A} & The $ M \times N $ column major matrix. \\
+\hline
+\mbox{\tt out}  & {\em A} & The first $ \min ( M \times N ) $ right singular vectors. \\
+\hline
+\mbox{\tt in}  & {\em b} & The $ M \times O $ column major matrix. The matrix can be overwritten. \\
+\hline
+ & {\em r} & Used to determine the effective rank of A. Singular values $ \sigma_i \leq r\sigma_1 $ are treated as zero (low rank approximation). If $ r<0 $, machine precision is used instead. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The $ N \times O $ minimum norm solutions $ \mathbf{x} $. 
+\end{DoxyReturn}
+\hypertarget{nmr_l_s_min_norm_8h_ac0097600054a6557b4ad83fde0d56823}{}\index{nmr\+L\+S\+Min\+Norm.\+h@{nmr\+L\+S\+Min\+Norm.\+h}!nmr\+L\+S\+Min\+Norm@{nmr\+L\+S\+Min\+Norm}}
+\index{nmr\+L\+S\+Min\+Norm@{nmr\+L\+S\+Min\+Norm}!nmr\+L\+S\+Min\+Norm.\+h@{nmr\+L\+S\+Min\+Norm.\+h}}
+\subsubsection[{nmr\+L\+S\+Min\+Norm}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Dynamic\+Matrix}$<$double$>$ {\bf C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} {\bf nmr\+L\+S\+Min\+Norm} (
+\begin{DoxyParamCaption}
+\item[{{\bf vct\+Dynamic\+Matrix}$<$ double $>$ \&}]{A, }
+\item[{{\bf vct\+Dynamic\+Matrix}$<$ double $>$ \&}]{b, }
+\item[{{\bf nmr\+L\+S\+Min\+Norm\+::\+Data} \&}]{data, }
+\item[{C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E}]{r = {\ttfamily -\/1.0}}
+\end{DoxyParamCaption}
+)}\label{nmr_l_s_min_norm_8h_ac0097600054a6557b4ad83fde0d56823}
+
+
+Computes the minimum norm solution to a real linear least squares problem. 
+
+Computes the minimum norm solution to a real linear least squares problem\+: $ \min_{\mathbf{x}} \| \mathbf{b} - A\mathbf{x} \| $
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em A} & A $ M \times N $ column major matrix. \\
+\hline
+\mbox{\tt out}  & {\em A} & The first $ \min ( M \times N ) $ right singular vectors. \\
+\hline
+\mbox{\tt in}  & {\em b} & A $ M \times O $ column major matrix. The matrix can be overwritten. \\
+\hline
+\mbox{\tt in}  & {\em data} & Provide pre-\/allocated workspace. If the workspace is not adequate it will be reallocated. \\
+\hline
+ & {\em r} & Used to determine the effective rank of A. Singular values $ \sigma_i \leq r\sigma_1 $ are treated as zero (low rank approximation). If $ r<0 $, machine precision is used instead. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The $ N \times O $ minimum norm solutions $ \mathbf{x} $. 
+\end{DoxyReturn}

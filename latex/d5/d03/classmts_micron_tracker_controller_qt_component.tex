@@ -1,0 +1,317 @@
+\hypertarget{classmts_micron_tracker_controller_qt_component}{}\section{mts\+Micron\+Tracker\+Controller\+Qt\+Component Class Reference}
+\label{classmts_micron_tracker_controller_qt_component}\index{mts\+Micron\+Tracker\+Controller\+Qt\+Component@{mts\+Micron\+Tracker\+Controller\+Qt\+Component}}
+
+
+{\ttfamily \#include $<$mts\+Micron\+Tracker\+Controller\+Qt\+Component.\+h$>$}
+
+Inheritance diagram for mts\+Micron\+Tracker\+Controller\+Qt\+Component\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{d5/d03/classmts_micron_tracker_controller_qt_component}
+\end{center}
+\end{figure}
+\subsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classmts_micron_tracker_controller_qt_component_af3659dd1929cbf9e4c29f5523b932808}{Update\+Frames} ()
+\item 
+void \hyperlink{classmts_micron_tracker_controller_qt_component_a032e41bba072daf42260c3a60f2a5cac}{Paint\+Image} (Q\+Image \&frame\+Indexed8, Q\+List$<$ Q\+Point $\ast$ $>$ \&markers)
+\item 
+void \hyperlink{classmts_micron_tracker_controller_qt_component_ac556c6d8147a702ce23df9b134a3f6a6}{Paint\+Image\+With\+Xpoints} (Q\+Image \&frame\+Indexed8, Q\+List$<$ Q\+Point $\ast$ $>$ \&markers, std\+::vector$<$ \hyperlink{vct_fixed_size_vector_types_8h_a3af82acdbf4eeb73c551909240b106ea}{vct3} $>$ \&xpoints)
+\item 
+void \hyperlink{classmts_micron_tracker_controller_qt_component_a648e184aaaa06b0e5900539b43cffa94}{M\+T\+C\+Calibrate\+Pivot\+Q\+Slot} (void)
+\item 
+void \hyperlink{classmts_micron_tracker_controller_qt_component_a0cfa5816fdd883e2eeed1f67d412b092}{M\+T\+C\+Compute\+Camera\+Model\+Q\+Slot} (void)
+\item 
+void \hyperlink{classmts_micron_tracker_controller_qt_component_a66528ff13d9bceff414f6470bd7a32cd}{M\+T\+C\+Track\+Q\+Slot} (bool toggled)
+\item 
+void \hyperlink{classmts_micron_tracker_controller_qt_component_a474618f51b5d7d9c85569c3b0491c8dd}{Record\+Q\+Slot} (bool toggled)
+\item 
+void \hyperlink{classmts_micron_tracker_controller_qt_component_a60304e6ce11bb9b7a529ffaeaac42c38}{Screenshot\+Q\+Slot} (void)
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmts_micron_tracker_controller_qt_component_aac0e38ca9caced66a923669ca69e4ee1}{mts\+Micron\+Tracker\+Controller\+Qt\+Component} (const std\+::string \&task\+Name)
+\item 
+\hyperlink{classmts_micron_tracker_controller_qt_component_a0937bfd4d0acfa21bbb3a298e55c5f5e}{$\sim$mts\+Micron\+Tracker\+Controller\+Qt\+Component} (void)
+\item 
+void \hyperlink{classmts_micron_tracker_controller_qt_component_aecb249c8f83d2127298877585dcf0084}{Configure} (const std\+::string \&\hyperlink{cmn_portability_8h_a021894e2626935fa2305434b1e893ff6}{C\+M\+N\+\_\+\+U\+N\+U\+S\+E\+D}(filename)=\char`\"{}\char`\"{})
+\item 
+void \hyperlink{classmts_micron_tracker_controller_qt_component_a940b3d0e9a62b0231de067aea6b12f6d}{Add\+Tool} (Q\+Object $\ast$tool\+Qt\+Component, Q\+Widget $\ast$tool\+Qt\+Widget, Q\+Point $\ast$marker\+Left, Q\+Point $\ast$marker\+Right)
+\item 
+Q\+Widget $\ast$ \hyperlink{classmts_micron_tracker_controller_qt_component_a35826c5cef11e71a5485a3d409a1cb4e}{Get\+Widget} (void)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Ui\+::mts\+Micron\+Tracker\+Controller\+Qt\+Widget $\ast$ \hyperlink{classmts_micron_tracker_controller_qt_component_af0e9d2db7eabf1b7a405f93ce0ba48eb}{Controller\+Widget}
+\item 
+Q\+Widget \hyperlink{classmts_micron_tracker_controller_qt_component_a3dbbb592a657af89f0d956cfe3192a21}{Central\+Widget}
+\item 
+Q\+Timer $\ast$ \hyperlink{classmts_micron_tracker_controller_qt_component_a6f10236718137e39ed23b3d8b44450db}{Timer}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>\hyperlink{classmts_function_write}{mtsFunctionWrite} \hyperlink{classmts_micron_tracker_controller_qt_component_a9d2f06a80735cb7683087a3b6c182d0f}{CalibratePivot}\\
+\>\hyperlink{classmts_function_write}{mtsFunctionWrite} \hyperlink{classmts_micron_tracker_controller_qt_component_a84845dc8f1102c8cad725dc4af8714f6}{Capture}\\
+\>\hyperlink{classmts_function_write}{mtsFunctionWrite} \hyperlink{classmts_micron_tracker_controller_qt_component_a84667286a3af7870d553d47b1a012495}{Track}\\
+\>\hyperlink{classmts_function_read}{mtsFunctionRead} \hyperlink{classmts_micron_tracker_controller_qt_component_a1ea05a723f36ecdbbf6d0a6b5d3a5da3}{GetFrameLeft}\\
+\>\hyperlink{classmts_function_read}{mtsFunctionRead} \hyperlink{classmts_micron_tracker_controller_qt_component_a03286c9e24bcfb6b4f2844d32a810acc}{GetFrameRight}\\
+\>\hyperlink{classmts_function_read}{mtsFunctionRead} \hyperlink{classmts_micron_tracker_controller_qt_component_a60560b239aeaa2195956432d427c1953}{GetXPointsMaxNum}\\
+\>\hyperlink{classmts_function_read}{mtsFunctionRead} \hyperlink{classmts_micron_tracker_controller_qt_component_a13d765e020c059185fa31693a27c589f}{GetXPoints}\\
+\>\hyperlink{classmts_function_read}{mtsFunctionRead} \hyperlink{classmts_micron_tracker_controller_qt_component_a87c6b979f25a860d9366410f629d174e}{GetXPointsProjectionLeft}\\
+\>\hyperlink{classmts_function_read}{mtsFunctionRead} \hyperlink{classmts_micron_tracker_controller_qt_component_a24af7630afa77520d336159c2cf54f99}{GetXPointsProjectionRight}\\
+\>\hyperlink{classmts_function_write}{mtsFunctionWrite} \hyperlink{classmts_micron_tracker_controller_qt_component_ae7f7d0c6684a288ede78965e1267ced2}{ComputeCameraModel}\\
+\>\hyperlink{mts_vector_8h_af820219f2f2497ada1dfccfa2747982a}{mtsUCharVec} \hyperlink{classmts_micron_tracker_controller_qt_component_a62027237e7ab9b44dbe44f9dfcdb0a45}{FrameLeft}\\
+\>\hyperlink{mts_vector_8h_af820219f2f2497ada1dfccfa2747982a}{mtsUCharVec} \hyperlink{classmts_micron_tracker_controller_qt_component_ad2b253f95e98959accd87c8a0eff4c3a}{FrameRight}\\
+\>int \hyperlink{classmts_micron_tracker_controller_qt_component_addf0cf9703d784ef7870b5b2d35024c4}{XPointsMaxNum}\\
+\>std::vector$<$ \hyperlink{vct_fixed_size_vector_types_8h_a3af82acdbf4eeb73c551909240b106ea}{vct3} $>$ \hyperlink{classmts_micron_tracker_controller_qt_component_abaa9a9b2fffad200e964682888db5417}{XPoints}\\
+\>std::vector$<$ \hyperlink{vct_fixed_size_vector_types_8h_a3af82acdbf4eeb73c551909240b106ea}{vct3} $>$ \hyperlink{classmts_micron_tracker_controller_qt_component_ab4435aec94942d35c86ade1c60047405}{XPointsProjectionLeft}\\
+\>std::vector$<$ \hyperlink{vct_fixed_size_vector_types_8h_a3af82acdbf4eeb73c551909240b106ea}{vct3} $>$ \hyperlink{classmts_micron_tracker_controller_qt_component_a638d175869aa0a701bc334bfa7d03590}{XPointsProjectionRight}\\
+\} \hyperlink{classmts_micron_tracker_controller_qt_component_af0e2f2621daeadbe0c4059fe2c3cd649}{MTC}\\
+
+\end{tabbing}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>\hyperlink{classmts_function_void}{mtsFunctionVoid} \hyperlink{classmts_micron_tracker_controller_qt_component_a550857b87914df82a707e6493a8d2555}{Start}\\
+\>\hyperlink{classmts_function_void}{mtsFunctionVoid} \hyperlink{classmts_micron_tracker_controller_qt_component_a7c5a8c0b9f551eb491550ca0704ca0d2}{Stop}\\
+\} \hyperlink{classmts_micron_tracker_controller_qt_component_a83ae492dbfed25c8b8228a4ebc44b9b4}{Collector}\\
+
+\end{tabbing}\item 
+Q\+Image \hyperlink{classmts_micron_tracker_controller_qt_component_a5a49408aaca6767730195a7f6e6ee859}{Frame\+Indexed8}
+\item 
+Q\+Image \hyperlink{classmts_micron_tracker_controller_qt_component_a2bcd03bf9c1a7a3ce4f6339bd4f8928e}{Frame\+R\+G\+B}
+\item 
+Q\+Painter \hyperlink{classmts_micron_tracker_controller_qt_component_ac80c41545a6b9c5a633fef5f6c5b8c9b}{Marker\+Painter}
+\item 
+Q\+Point \hyperlink{classmts_micron_tracker_controller_qt_component_a841a943c376a4f657a680c3c1ebeef40}{Marker\+Position}
+\item 
+Q\+List$<$ Q\+String $>$ \hyperlink{classmts_micron_tracker_controller_qt_component_a9c2fe3fd9ddc39de26a8a0047571cf5d}{Marker\+Names}
+\item 
+Q\+List$<$ Q\+Point $\ast$ $>$ \hyperlink{classmts_micron_tracker_controller_qt_component_a933dd8ff3d631665e825a30bf9ad8140}{Markers\+Left}
+\item 
+Q\+List$<$ Q\+Point $\ast$ $>$ \hyperlink{classmts_micron_tracker_controller_qt_component_ac2481b44f1f9f09fc9ea04b9d996279a}{Markers\+Right}
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const unsigned int \hyperlink{classmts_micron_tracker_controller_qt_component_a21d605763b597bc0aac16ccd81da7efe}{Frame\+Width} = 1024
+\item 
+static const unsigned int \hyperlink{classmts_micron_tracker_controller_qt_component_a42e61d9abf3d47a2429dd76448ff6fae}{Frame\+Height} = 768
+\item 
+static const unsigned int \hyperlink{classmts_micron_tracker_controller_qt_component_aef12d46a73222fb1ab376af7f0c71abb}{Frame\+Size} = \hyperlink{classmts_micron_tracker_controller_qt_component_a21d605763b597bc0aac16ccd81da7efe}{Frame\+Width} $\ast$ \hyperlink{classmts_micron_tracker_controller_qt_component_a42e61d9abf3d47a2429dd76448ff6fae}{Frame\+Height}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmts_micron_tracker_controller_qt_component_aac0e38ca9caced66a923669ca69e4ee1}{}\index{mts\+Micron\+Tracker\+Controller\+Qt\+Component@{mts\+Micron\+Tracker\+Controller\+Qt\+Component}!mts\+Micron\+Tracker\+Controller\+Qt\+Component@{mts\+Micron\+Tracker\+Controller\+Qt\+Component}}
+\index{mts\+Micron\+Tracker\+Controller\+Qt\+Component@{mts\+Micron\+Tracker\+Controller\+Qt\+Component}!mts\+Micron\+Tracker\+Controller\+Qt\+Component@{mts\+Micron\+Tracker\+Controller\+Qt\+Component}}
+\subsubsection[{mts\+Micron\+Tracker\+Controller\+Qt\+Component}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Micron\+Tracker\+Controller\+Qt\+Component\+::mts\+Micron\+Tracker\+Controller\+Qt\+Component (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{task\+Name}
+\end{DoxyParamCaption}
+)}\label{classmts_micron_tracker_controller_qt_component_aac0e38ca9caced66a923669ca69e4ee1}
+\hypertarget{classmts_micron_tracker_controller_qt_component_a0937bfd4d0acfa21bbb3a298e55c5f5e}{}\index{mts\+Micron\+Tracker\+Controller\+Qt\+Component@{mts\+Micron\+Tracker\+Controller\+Qt\+Component}!````~mts\+Micron\+Tracker\+Controller\+Qt\+Component@{$\sim$mts\+Micron\+Tracker\+Controller\+Qt\+Component}}
+\index{````~mts\+Micron\+Tracker\+Controller\+Qt\+Component@{$\sim$mts\+Micron\+Tracker\+Controller\+Qt\+Component}!mts\+Micron\+Tracker\+Controller\+Qt\+Component@{mts\+Micron\+Tracker\+Controller\+Qt\+Component}}
+\subsubsection[{$\sim$mts\+Micron\+Tracker\+Controller\+Qt\+Component}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Micron\+Tracker\+Controller\+Qt\+Component\+::$\sim$mts\+Micron\+Tracker\+Controller\+Qt\+Component (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_micron_tracker_controller_qt_component_a0937bfd4d0acfa21bbb3a298e55c5f5e}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classmts_micron_tracker_controller_qt_component_a940b3d0e9a62b0231de067aea6b12f6d}{}\index{mts\+Micron\+Tracker\+Controller\+Qt\+Component@{mts\+Micron\+Tracker\+Controller\+Qt\+Component}!Add\+Tool@{Add\+Tool}}
+\index{Add\+Tool@{Add\+Tool}!mts\+Micron\+Tracker\+Controller\+Qt\+Component@{mts\+Micron\+Tracker\+Controller\+Qt\+Component}}
+\subsubsection[{Add\+Tool}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Micron\+Tracker\+Controller\+Qt\+Component\+::\+Add\+Tool (
+\begin{DoxyParamCaption}
+\item[{Q\+Object $\ast$}]{tool\+Qt\+Component, }
+\item[{Q\+Widget $\ast$}]{tool\+Qt\+Widget, }
+\item[{Q\+Point $\ast$}]{marker\+Left, }
+\item[{Q\+Point $\ast$}]{marker\+Right}
+\end{DoxyParamCaption}
+)}\label{classmts_micron_tracker_controller_qt_component_a940b3d0e9a62b0231de067aea6b12f6d}
+\hypertarget{classmts_micron_tracker_controller_qt_component_aecb249c8f83d2127298877585dcf0084}{}\index{mts\+Micron\+Tracker\+Controller\+Qt\+Component@{mts\+Micron\+Tracker\+Controller\+Qt\+Component}!Configure@{Configure}}
+\index{Configure@{Configure}!mts\+Micron\+Tracker\+Controller\+Qt\+Component@{mts\+Micron\+Tracker\+Controller\+Qt\+Component}}
+\subsubsection[{Configure}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Micron\+Tracker\+Controller\+Qt\+Component\+::\+Configure (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{C\+M\+N\+\_\+\+U\+N\+U\+S\+E\+Dfilename = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_micron_tracker_controller_qt_component_aecb249c8f83d2127298877585dcf0084}
+\hypertarget{classmts_micron_tracker_controller_qt_component_a35826c5cef11e71a5485a3d409a1cb4e}{}\index{mts\+Micron\+Tracker\+Controller\+Qt\+Component@{mts\+Micron\+Tracker\+Controller\+Qt\+Component}!Get\+Widget@{Get\+Widget}}
+\index{Get\+Widget@{Get\+Widget}!mts\+Micron\+Tracker\+Controller\+Qt\+Component@{mts\+Micron\+Tracker\+Controller\+Qt\+Component}}
+\subsubsection[{Get\+Widget}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Widget$\ast$ mts\+Micron\+Tracker\+Controller\+Qt\+Component\+::\+Get\+Widget (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_micron_tracker_controller_qt_component_a35826c5cef11e71a5485a3d409a1cb4e}
+\hypertarget{classmts_micron_tracker_controller_qt_component_a648e184aaaa06b0e5900539b43cffa94}{}\index{mts\+Micron\+Tracker\+Controller\+Qt\+Component@{mts\+Micron\+Tracker\+Controller\+Qt\+Component}!M\+T\+C\+Calibrate\+Pivot\+Q\+Slot@{M\+T\+C\+Calibrate\+Pivot\+Q\+Slot}}
+\index{M\+T\+C\+Calibrate\+Pivot\+Q\+Slot@{M\+T\+C\+Calibrate\+Pivot\+Q\+Slot}!mts\+Micron\+Tracker\+Controller\+Qt\+Component@{mts\+Micron\+Tracker\+Controller\+Qt\+Component}}
+\subsubsection[{M\+T\+C\+Calibrate\+Pivot\+Q\+Slot}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Micron\+Tracker\+Controller\+Qt\+Component\+::\+M\+T\+C\+Calibrate\+Pivot\+Q\+Slot (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}\label{classmts_micron_tracker_controller_qt_component_a648e184aaaa06b0e5900539b43cffa94}
+\hypertarget{classmts_micron_tracker_controller_qt_component_a0cfa5816fdd883e2eeed1f67d412b092}{}\index{mts\+Micron\+Tracker\+Controller\+Qt\+Component@{mts\+Micron\+Tracker\+Controller\+Qt\+Component}!M\+T\+C\+Compute\+Camera\+Model\+Q\+Slot@{M\+T\+C\+Compute\+Camera\+Model\+Q\+Slot}}
+\index{M\+T\+C\+Compute\+Camera\+Model\+Q\+Slot@{M\+T\+C\+Compute\+Camera\+Model\+Q\+Slot}!mts\+Micron\+Tracker\+Controller\+Qt\+Component@{mts\+Micron\+Tracker\+Controller\+Qt\+Component}}
+\subsubsection[{M\+T\+C\+Compute\+Camera\+Model\+Q\+Slot}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Micron\+Tracker\+Controller\+Qt\+Component\+::\+M\+T\+C\+Compute\+Camera\+Model\+Q\+Slot (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}\label{classmts_micron_tracker_controller_qt_component_a0cfa5816fdd883e2eeed1f67d412b092}
+\hypertarget{classmts_micron_tracker_controller_qt_component_a66528ff13d9bceff414f6470bd7a32cd}{}\index{mts\+Micron\+Tracker\+Controller\+Qt\+Component@{mts\+Micron\+Tracker\+Controller\+Qt\+Component}!M\+T\+C\+Track\+Q\+Slot@{M\+T\+C\+Track\+Q\+Slot}}
+\index{M\+T\+C\+Track\+Q\+Slot@{M\+T\+C\+Track\+Q\+Slot}!mts\+Micron\+Tracker\+Controller\+Qt\+Component@{mts\+Micron\+Tracker\+Controller\+Qt\+Component}}
+\subsubsection[{M\+T\+C\+Track\+Q\+Slot}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Micron\+Tracker\+Controller\+Qt\+Component\+::\+M\+T\+C\+Track\+Q\+Slot (
+\begin{DoxyParamCaption}
+\item[{bool}]{toggled}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}\label{classmts_micron_tracker_controller_qt_component_a66528ff13d9bceff414f6470bd7a32cd}
+\hypertarget{classmts_micron_tracker_controller_qt_component_a032e41bba072daf42260c3a60f2a5cac}{}\index{mts\+Micron\+Tracker\+Controller\+Qt\+Component@{mts\+Micron\+Tracker\+Controller\+Qt\+Component}!Paint\+Image@{Paint\+Image}}
+\index{Paint\+Image@{Paint\+Image}!mts\+Micron\+Tracker\+Controller\+Qt\+Component@{mts\+Micron\+Tracker\+Controller\+Qt\+Component}}
+\subsubsection[{Paint\+Image}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Micron\+Tracker\+Controller\+Qt\+Component\+::\+Paint\+Image (
+\begin{DoxyParamCaption}
+\item[{Q\+Image \&}]{frame\+Indexed8, }
+\item[{Q\+List$<$ Q\+Point $\ast$ $>$ \&}]{markers}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}\label{classmts_micron_tracker_controller_qt_component_a032e41bba072daf42260c3a60f2a5cac}
+\hypertarget{classmts_micron_tracker_controller_qt_component_ac556c6d8147a702ce23df9b134a3f6a6}{}\index{mts\+Micron\+Tracker\+Controller\+Qt\+Component@{mts\+Micron\+Tracker\+Controller\+Qt\+Component}!Paint\+Image\+With\+Xpoints@{Paint\+Image\+With\+Xpoints}}
+\index{Paint\+Image\+With\+Xpoints@{Paint\+Image\+With\+Xpoints}!mts\+Micron\+Tracker\+Controller\+Qt\+Component@{mts\+Micron\+Tracker\+Controller\+Qt\+Component}}
+\subsubsection[{Paint\+Image\+With\+Xpoints}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Micron\+Tracker\+Controller\+Qt\+Component\+::\+Paint\+Image\+With\+Xpoints (
+\begin{DoxyParamCaption}
+\item[{Q\+Image \&}]{frame\+Indexed8, }
+\item[{Q\+List$<$ Q\+Point $\ast$ $>$ \&}]{markers, }
+\item[{std\+::vector$<$ {\bf vct3} $>$ \&}]{xpoints}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}\label{classmts_micron_tracker_controller_qt_component_ac556c6d8147a702ce23df9b134a3f6a6}
+\hypertarget{classmts_micron_tracker_controller_qt_component_a474618f51b5d7d9c85569c3b0491c8dd}{}\index{mts\+Micron\+Tracker\+Controller\+Qt\+Component@{mts\+Micron\+Tracker\+Controller\+Qt\+Component}!Record\+Q\+Slot@{Record\+Q\+Slot}}
+\index{Record\+Q\+Slot@{Record\+Q\+Slot}!mts\+Micron\+Tracker\+Controller\+Qt\+Component@{mts\+Micron\+Tracker\+Controller\+Qt\+Component}}
+\subsubsection[{Record\+Q\+Slot}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Micron\+Tracker\+Controller\+Qt\+Component\+::\+Record\+Q\+Slot (
+\begin{DoxyParamCaption}
+\item[{bool}]{toggled}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}\label{classmts_micron_tracker_controller_qt_component_a474618f51b5d7d9c85569c3b0491c8dd}
+\hypertarget{classmts_micron_tracker_controller_qt_component_a60304e6ce11bb9b7a529ffaeaac42c38}{}\index{mts\+Micron\+Tracker\+Controller\+Qt\+Component@{mts\+Micron\+Tracker\+Controller\+Qt\+Component}!Screenshot\+Q\+Slot@{Screenshot\+Q\+Slot}}
+\index{Screenshot\+Q\+Slot@{Screenshot\+Q\+Slot}!mts\+Micron\+Tracker\+Controller\+Qt\+Component@{mts\+Micron\+Tracker\+Controller\+Qt\+Component}}
+\subsubsection[{Screenshot\+Q\+Slot}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Micron\+Tracker\+Controller\+Qt\+Component\+::\+Screenshot\+Q\+Slot (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}\label{classmts_micron_tracker_controller_qt_component_a60304e6ce11bb9b7a529ffaeaac42c38}
+\hypertarget{classmts_micron_tracker_controller_qt_component_af3659dd1929cbf9e4c29f5523b932808}{}\index{mts\+Micron\+Tracker\+Controller\+Qt\+Component@{mts\+Micron\+Tracker\+Controller\+Qt\+Component}!Update\+Frames@{Update\+Frames}}
+\index{Update\+Frames@{Update\+Frames}!mts\+Micron\+Tracker\+Controller\+Qt\+Component@{mts\+Micron\+Tracker\+Controller\+Qt\+Component}}
+\subsubsection[{Update\+Frames}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Micron\+Tracker\+Controller\+Qt\+Component\+::\+Update\+Frames (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}\label{classmts_micron_tracker_controller_qt_component_af3659dd1929cbf9e4c29f5523b932808}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classmts_micron_tracker_controller_qt_component_a9d2f06a80735cb7683087a3b6c182d0f}{}\index{mts\+Micron\+Tracker\+Controller\+Qt\+Component@{mts\+Micron\+Tracker\+Controller\+Qt\+Component}!Calibrate\+Pivot@{Calibrate\+Pivot}}
+\index{Calibrate\+Pivot@{Calibrate\+Pivot}!mts\+Micron\+Tracker\+Controller\+Qt\+Component@{mts\+Micron\+Tracker\+Controller\+Qt\+Component}}
+\subsubsection[{Calibrate\+Pivot}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+Function\+Write} mts\+Micron\+Tracker\+Controller\+Qt\+Component\+::\+Calibrate\+Pivot}\label{classmts_micron_tracker_controller_qt_component_a9d2f06a80735cb7683087a3b6c182d0f}
+\hypertarget{classmts_micron_tracker_controller_qt_component_a84845dc8f1102c8cad725dc4af8714f6}{}\index{mts\+Micron\+Tracker\+Controller\+Qt\+Component@{mts\+Micron\+Tracker\+Controller\+Qt\+Component}!Capture@{Capture}}
+\index{Capture@{Capture}!mts\+Micron\+Tracker\+Controller\+Qt\+Component@{mts\+Micron\+Tracker\+Controller\+Qt\+Component}}
+\subsubsection[{Capture}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+Function\+Write} mts\+Micron\+Tracker\+Controller\+Qt\+Component\+::\+Capture}\label{classmts_micron_tracker_controller_qt_component_a84845dc8f1102c8cad725dc4af8714f6}
+\hypertarget{classmts_micron_tracker_controller_qt_component_a3dbbb592a657af89f0d956cfe3192a21}{}\index{mts\+Micron\+Tracker\+Controller\+Qt\+Component@{mts\+Micron\+Tracker\+Controller\+Qt\+Component}!Central\+Widget@{Central\+Widget}}
+\index{Central\+Widget@{Central\+Widget}!mts\+Micron\+Tracker\+Controller\+Qt\+Component@{mts\+Micron\+Tracker\+Controller\+Qt\+Component}}
+\subsubsection[{Central\+Widget}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Widget mts\+Micron\+Tracker\+Controller\+Qt\+Component\+::\+Central\+Widget\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_micron_tracker_controller_qt_component_a3dbbb592a657af89f0d956cfe3192a21}
+\hypertarget{classmts_micron_tracker_controller_qt_component_a83ae492dbfed25c8b8228a4ebc44b9b4}{}\index{mts\+Micron\+Tracker\+Controller\+Qt\+Component@{mts\+Micron\+Tracker\+Controller\+Qt\+Component}!Collector@{Collector}}
+\index{Collector@{Collector}!mts\+Micron\+Tracker\+Controller\+Qt\+Component@{mts\+Micron\+Tracker\+Controller\+Qt\+Component}}
+\subsubsection[{Collector}]{\setlength{\rightskip}{0pt plus 5cm}struct \{ ... \}   mts\+Micron\+Tracker\+Controller\+Qt\+Component\+::\+Collector\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_micron_tracker_controller_qt_component_a83ae492dbfed25c8b8228a4ebc44b9b4}
+\hypertarget{classmts_micron_tracker_controller_qt_component_ae7f7d0c6684a288ede78965e1267ced2}{}\index{mts\+Micron\+Tracker\+Controller\+Qt\+Component@{mts\+Micron\+Tracker\+Controller\+Qt\+Component}!Compute\+Camera\+Model@{Compute\+Camera\+Model}}
+\index{Compute\+Camera\+Model@{Compute\+Camera\+Model}!mts\+Micron\+Tracker\+Controller\+Qt\+Component@{mts\+Micron\+Tracker\+Controller\+Qt\+Component}}
+\subsubsection[{Compute\+Camera\+Model}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+Function\+Write} mts\+Micron\+Tracker\+Controller\+Qt\+Component\+::\+Compute\+Camera\+Model}\label{classmts_micron_tracker_controller_qt_component_ae7f7d0c6684a288ede78965e1267ced2}
+\hypertarget{classmts_micron_tracker_controller_qt_component_af0e9d2db7eabf1b7a405f93ce0ba48eb}{}\index{mts\+Micron\+Tracker\+Controller\+Qt\+Component@{mts\+Micron\+Tracker\+Controller\+Qt\+Component}!Controller\+Widget@{Controller\+Widget}}
+\index{Controller\+Widget@{Controller\+Widget}!mts\+Micron\+Tracker\+Controller\+Qt\+Component@{mts\+Micron\+Tracker\+Controller\+Qt\+Component}}
+\subsubsection[{Controller\+Widget}]{\setlength{\rightskip}{0pt plus 5cm}Ui\+::mts\+Micron\+Tracker\+Controller\+Qt\+Widget$\ast$ mts\+Micron\+Tracker\+Controller\+Qt\+Component\+::\+Controller\+Widget\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_micron_tracker_controller_qt_component_af0e9d2db7eabf1b7a405f93ce0ba48eb}
+\hypertarget{classmts_micron_tracker_controller_qt_component_a42e61d9abf3d47a2429dd76448ff6fae}{}\index{mts\+Micron\+Tracker\+Controller\+Qt\+Component@{mts\+Micron\+Tracker\+Controller\+Qt\+Component}!Frame\+Height@{Frame\+Height}}
+\index{Frame\+Height@{Frame\+Height}!mts\+Micron\+Tracker\+Controller\+Qt\+Component@{mts\+Micron\+Tracker\+Controller\+Qt\+Component}}
+\subsubsection[{Frame\+Height}]{\setlength{\rightskip}{0pt plus 5cm}const unsigned int mts\+Micron\+Tracker\+Controller\+Qt\+Component\+::\+Frame\+Height = 768\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}\label{classmts_micron_tracker_controller_qt_component_a42e61d9abf3d47a2429dd76448ff6fae}
+\hypertarget{classmts_micron_tracker_controller_qt_component_a5a49408aaca6767730195a7f6e6ee859}{}\index{mts\+Micron\+Tracker\+Controller\+Qt\+Component@{mts\+Micron\+Tracker\+Controller\+Qt\+Component}!Frame\+Indexed8@{Frame\+Indexed8}}
+\index{Frame\+Indexed8@{Frame\+Indexed8}!mts\+Micron\+Tracker\+Controller\+Qt\+Component@{mts\+Micron\+Tracker\+Controller\+Qt\+Component}}
+\subsubsection[{Frame\+Indexed8}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Image mts\+Micron\+Tracker\+Controller\+Qt\+Component\+::\+Frame\+Indexed8\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_micron_tracker_controller_qt_component_a5a49408aaca6767730195a7f6e6ee859}
+\hypertarget{classmts_micron_tracker_controller_qt_component_a62027237e7ab9b44dbe44f9dfcdb0a45}{}\index{mts\+Micron\+Tracker\+Controller\+Qt\+Component@{mts\+Micron\+Tracker\+Controller\+Qt\+Component}!Frame\+Left@{Frame\+Left}}
+\index{Frame\+Left@{Frame\+Left}!mts\+Micron\+Tracker\+Controller\+Qt\+Component@{mts\+Micron\+Tracker\+Controller\+Qt\+Component}}
+\subsubsection[{Frame\+Left}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+U\+Char\+Vec} mts\+Micron\+Tracker\+Controller\+Qt\+Component\+::\+Frame\+Left}\label{classmts_micron_tracker_controller_qt_component_a62027237e7ab9b44dbe44f9dfcdb0a45}
+\hypertarget{classmts_micron_tracker_controller_qt_component_a2bcd03bf9c1a7a3ce4f6339bd4f8928e}{}\index{mts\+Micron\+Tracker\+Controller\+Qt\+Component@{mts\+Micron\+Tracker\+Controller\+Qt\+Component}!Frame\+R\+G\+B@{Frame\+R\+G\+B}}
+\index{Frame\+R\+G\+B@{Frame\+R\+G\+B}!mts\+Micron\+Tracker\+Controller\+Qt\+Component@{mts\+Micron\+Tracker\+Controller\+Qt\+Component}}
+\subsubsection[{Frame\+R\+G\+B}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Image mts\+Micron\+Tracker\+Controller\+Qt\+Component\+::\+Frame\+R\+G\+B\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_micron_tracker_controller_qt_component_a2bcd03bf9c1a7a3ce4f6339bd4f8928e}
+\hypertarget{classmts_micron_tracker_controller_qt_component_ad2b253f95e98959accd87c8a0eff4c3a}{}\index{mts\+Micron\+Tracker\+Controller\+Qt\+Component@{mts\+Micron\+Tracker\+Controller\+Qt\+Component}!Frame\+Right@{Frame\+Right}}
+\index{Frame\+Right@{Frame\+Right}!mts\+Micron\+Tracker\+Controller\+Qt\+Component@{mts\+Micron\+Tracker\+Controller\+Qt\+Component}}
+\subsubsection[{Frame\+Right}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+U\+Char\+Vec} mts\+Micron\+Tracker\+Controller\+Qt\+Component\+::\+Frame\+Right}\label{classmts_micron_tracker_controller_qt_component_ad2b253f95e98959accd87c8a0eff4c3a}
+\hypertarget{classmts_micron_tracker_controller_qt_component_aef12d46a73222fb1ab376af7f0c71abb}{}\index{mts\+Micron\+Tracker\+Controller\+Qt\+Component@{mts\+Micron\+Tracker\+Controller\+Qt\+Component}!Frame\+Size@{Frame\+Size}}
+\index{Frame\+Size@{Frame\+Size}!mts\+Micron\+Tracker\+Controller\+Qt\+Component@{mts\+Micron\+Tracker\+Controller\+Qt\+Component}}
+\subsubsection[{Frame\+Size}]{\setlength{\rightskip}{0pt plus 5cm}const unsigned int mts\+Micron\+Tracker\+Controller\+Qt\+Component\+::\+Frame\+Size = {\bf Frame\+Width} $\ast$ {\bf Frame\+Height}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}\label{classmts_micron_tracker_controller_qt_component_aef12d46a73222fb1ab376af7f0c71abb}
+\hypertarget{classmts_micron_tracker_controller_qt_component_a21d605763b597bc0aac16ccd81da7efe}{}\index{mts\+Micron\+Tracker\+Controller\+Qt\+Component@{mts\+Micron\+Tracker\+Controller\+Qt\+Component}!Frame\+Width@{Frame\+Width}}
+\index{Frame\+Width@{Frame\+Width}!mts\+Micron\+Tracker\+Controller\+Qt\+Component@{mts\+Micron\+Tracker\+Controller\+Qt\+Component}}
+\subsubsection[{Frame\+Width}]{\setlength{\rightskip}{0pt plus 5cm}const unsigned int mts\+Micron\+Tracker\+Controller\+Qt\+Component\+::\+Frame\+Width = 1024\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}\label{classmts_micron_tracker_controller_qt_component_a21d605763b597bc0aac16ccd81da7efe}
+\hypertarget{classmts_micron_tracker_controller_qt_component_a1ea05a723f36ecdbbf6d0a6b5d3a5da3}{}\index{mts\+Micron\+Tracker\+Controller\+Qt\+Component@{mts\+Micron\+Tracker\+Controller\+Qt\+Component}!Get\+Frame\+Left@{Get\+Frame\+Left}}
+\index{Get\+Frame\+Left@{Get\+Frame\+Left}!mts\+Micron\+Tracker\+Controller\+Qt\+Component@{mts\+Micron\+Tracker\+Controller\+Qt\+Component}}
+\subsubsection[{Get\+Frame\+Left}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+Function\+Read} mts\+Micron\+Tracker\+Controller\+Qt\+Component\+::\+Get\+Frame\+Left}\label{classmts_micron_tracker_controller_qt_component_a1ea05a723f36ecdbbf6d0a6b5d3a5da3}
+\hypertarget{classmts_micron_tracker_controller_qt_component_a03286c9e24bcfb6b4f2844d32a810acc}{}\index{mts\+Micron\+Tracker\+Controller\+Qt\+Component@{mts\+Micron\+Tracker\+Controller\+Qt\+Component}!Get\+Frame\+Right@{Get\+Frame\+Right}}
+\index{Get\+Frame\+Right@{Get\+Frame\+Right}!mts\+Micron\+Tracker\+Controller\+Qt\+Component@{mts\+Micron\+Tracker\+Controller\+Qt\+Component}}
+\subsubsection[{Get\+Frame\+Right}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+Function\+Read} mts\+Micron\+Tracker\+Controller\+Qt\+Component\+::\+Get\+Frame\+Right}\label{classmts_micron_tracker_controller_qt_component_a03286c9e24bcfb6b4f2844d32a810acc}
+\hypertarget{classmts_micron_tracker_controller_qt_component_a13d765e020c059185fa31693a27c589f}{}\index{mts\+Micron\+Tracker\+Controller\+Qt\+Component@{mts\+Micron\+Tracker\+Controller\+Qt\+Component}!Get\+X\+Points@{Get\+X\+Points}}
+\index{Get\+X\+Points@{Get\+X\+Points}!mts\+Micron\+Tracker\+Controller\+Qt\+Component@{mts\+Micron\+Tracker\+Controller\+Qt\+Component}}
+\subsubsection[{Get\+X\+Points}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+Function\+Read} mts\+Micron\+Tracker\+Controller\+Qt\+Component\+::\+Get\+X\+Points}\label{classmts_micron_tracker_controller_qt_component_a13d765e020c059185fa31693a27c589f}
+\hypertarget{classmts_micron_tracker_controller_qt_component_a60560b239aeaa2195956432d427c1953}{}\index{mts\+Micron\+Tracker\+Controller\+Qt\+Component@{mts\+Micron\+Tracker\+Controller\+Qt\+Component}!Get\+X\+Points\+Max\+Num@{Get\+X\+Points\+Max\+Num}}
+\index{Get\+X\+Points\+Max\+Num@{Get\+X\+Points\+Max\+Num}!mts\+Micron\+Tracker\+Controller\+Qt\+Component@{mts\+Micron\+Tracker\+Controller\+Qt\+Component}}
+\subsubsection[{Get\+X\+Points\+Max\+Num}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+Function\+Read} mts\+Micron\+Tracker\+Controller\+Qt\+Component\+::\+Get\+X\+Points\+Max\+Num}\label{classmts_micron_tracker_controller_qt_component_a60560b239aeaa2195956432d427c1953}
+\hypertarget{classmts_micron_tracker_controller_qt_component_a87c6b979f25a860d9366410f629d174e}{}\index{mts\+Micron\+Tracker\+Controller\+Qt\+Component@{mts\+Micron\+Tracker\+Controller\+Qt\+Component}!Get\+X\+Points\+Projection\+Left@{Get\+X\+Points\+Projection\+Left}}
+\index{Get\+X\+Points\+Projection\+Left@{Get\+X\+Points\+Projection\+Left}!mts\+Micron\+Tracker\+Controller\+Qt\+Component@{mts\+Micron\+Tracker\+Controller\+Qt\+Component}}
+\subsubsection[{Get\+X\+Points\+Projection\+Left}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+Function\+Read} mts\+Micron\+Tracker\+Controller\+Qt\+Component\+::\+Get\+X\+Points\+Projection\+Left}\label{classmts_micron_tracker_controller_qt_component_a87c6b979f25a860d9366410f629d174e}
+\hypertarget{classmts_micron_tracker_controller_qt_component_a24af7630afa77520d336159c2cf54f99}{}\index{mts\+Micron\+Tracker\+Controller\+Qt\+Component@{mts\+Micron\+Tracker\+Controller\+Qt\+Component}!Get\+X\+Points\+Projection\+Right@{Get\+X\+Points\+Projection\+Right}}
+\index{Get\+X\+Points\+Projection\+Right@{Get\+X\+Points\+Projection\+Right}!mts\+Micron\+Tracker\+Controller\+Qt\+Component@{mts\+Micron\+Tracker\+Controller\+Qt\+Component}}
+\subsubsection[{Get\+X\+Points\+Projection\+Right}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+Function\+Read} mts\+Micron\+Tracker\+Controller\+Qt\+Component\+::\+Get\+X\+Points\+Projection\+Right}\label{classmts_micron_tracker_controller_qt_component_a24af7630afa77520d336159c2cf54f99}
+\hypertarget{classmts_micron_tracker_controller_qt_component_a9c2fe3fd9ddc39de26a8a0047571cf5d}{}\index{mts\+Micron\+Tracker\+Controller\+Qt\+Component@{mts\+Micron\+Tracker\+Controller\+Qt\+Component}!Marker\+Names@{Marker\+Names}}
+\index{Marker\+Names@{Marker\+Names}!mts\+Micron\+Tracker\+Controller\+Qt\+Component@{mts\+Micron\+Tracker\+Controller\+Qt\+Component}}
+\subsubsection[{Marker\+Names}]{\setlength{\rightskip}{0pt plus 5cm}Q\+List$<$Q\+String$>$ mts\+Micron\+Tracker\+Controller\+Qt\+Component\+::\+Marker\+Names\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_micron_tracker_controller_qt_component_a9c2fe3fd9ddc39de26a8a0047571cf5d}
+\hypertarget{classmts_micron_tracker_controller_qt_component_ac80c41545a6b9c5a633fef5f6c5b8c9b}{}\index{mts\+Micron\+Tracker\+Controller\+Qt\+Component@{mts\+Micron\+Tracker\+Controller\+Qt\+Component}!Marker\+Painter@{Marker\+Painter}}
+\index{Marker\+Painter@{Marker\+Painter}!mts\+Micron\+Tracker\+Controller\+Qt\+Component@{mts\+Micron\+Tracker\+Controller\+Qt\+Component}}
+\subsubsection[{Marker\+Painter}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Painter mts\+Micron\+Tracker\+Controller\+Qt\+Component\+::\+Marker\+Painter\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_micron_tracker_controller_qt_component_ac80c41545a6b9c5a633fef5f6c5b8c9b}
+\hypertarget{classmts_micron_tracker_controller_qt_component_a841a943c376a4f657a680c3c1ebeef40}{}\index{mts\+Micron\+Tracker\+Controller\+Qt\+Component@{mts\+Micron\+Tracker\+Controller\+Qt\+Component}!Marker\+Position@{Marker\+Position}}
+\index{Marker\+Position@{Marker\+Position}!mts\+Micron\+Tracker\+Controller\+Qt\+Component@{mts\+Micron\+Tracker\+Controller\+Qt\+Component}}
+\subsubsection[{Marker\+Position}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Point mts\+Micron\+Tracker\+Controller\+Qt\+Component\+::\+Marker\+Position\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_micron_tracker_controller_qt_component_a841a943c376a4f657a680c3c1ebeef40}
+\hypertarget{classmts_micron_tracker_controller_qt_component_a933dd8ff3d631665e825a30bf9ad8140}{}\index{mts\+Micron\+Tracker\+Controller\+Qt\+Component@{mts\+Micron\+Tracker\+Controller\+Qt\+Component}!Markers\+Left@{Markers\+Left}}
+\index{Markers\+Left@{Markers\+Left}!mts\+Micron\+Tracker\+Controller\+Qt\+Component@{mts\+Micron\+Tracker\+Controller\+Qt\+Component}}
+\subsubsection[{Markers\+Left}]{\setlength{\rightskip}{0pt plus 5cm}Q\+List$<$Q\+Point $\ast$$>$ mts\+Micron\+Tracker\+Controller\+Qt\+Component\+::\+Markers\+Left\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_micron_tracker_controller_qt_component_a933dd8ff3d631665e825a30bf9ad8140}
+\hypertarget{classmts_micron_tracker_controller_qt_component_ac2481b44f1f9f09fc9ea04b9d996279a}{}\index{mts\+Micron\+Tracker\+Controller\+Qt\+Component@{mts\+Micron\+Tracker\+Controller\+Qt\+Component}!Markers\+Right@{Markers\+Right}}
+\index{Markers\+Right@{Markers\+Right}!mts\+Micron\+Tracker\+Controller\+Qt\+Component@{mts\+Micron\+Tracker\+Controller\+Qt\+Component}}
+\subsubsection[{Markers\+Right}]{\setlength{\rightskip}{0pt plus 5cm}Q\+List$<$Q\+Point $\ast$$>$ mts\+Micron\+Tracker\+Controller\+Qt\+Component\+::\+Markers\+Right\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_micron_tracker_controller_qt_component_ac2481b44f1f9f09fc9ea04b9d996279a}
+\hypertarget{classmts_micron_tracker_controller_qt_component_af0e2f2621daeadbe0c4059fe2c3cd649}{}\index{mts\+Micron\+Tracker\+Controller\+Qt\+Component@{mts\+Micron\+Tracker\+Controller\+Qt\+Component}!M\+T\+C@{M\+T\+C}}
+\index{M\+T\+C@{M\+T\+C}!mts\+Micron\+Tracker\+Controller\+Qt\+Component@{mts\+Micron\+Tracker\+Controller\+Qt\+Component}}
+\subsubsection[{M\+T\+C}]{\setlength{\rightskip}{0pt plus 5cm}struct \{ ... \}   mts\+Micron\+Tracker\+Controller\+Qt\+Component\+::\+M\+T\+C\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_micron_tracker_controller_qt_component_af0e2f2621daeadbe0c4059fe2c3cd649}
+\hypertarget{classmts_micron_tracker_controller_qt_component_a550857b87914df82a707e6493a8d2555}{}\index{mts\+Micron\+Tracker\+Controller\+Qt\+Component@{mts\+Micron\+Tracker\+Controller\+Qt\+Component}!Start@{Start}}
+\index{Start@{Start}!mts\+Micron\+Tracker\+Controller\+Qt\+Component@{mts\+Micron\+Tracker\+Controller\+Qt\+Component}}
+\subsubsection[{Start}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+Function\+Void} mts\+Micron\+Tracker\+Controller\+Qt\+Component\+::\+Start}\label{classmts_micron_tracker_controller_qt_component_a550857b87914df82a707e6493a8d2555}
+\hypertarget{classmts_micron_tracker_controller_qt_component_a7c5a8c0b9f551eb491550ca0704ca0d2}{}\index{mts\+Micron\+Tracker\+Controller\+Qt\+Component@{mts\+Micron\+Tracker\+Controller\+Qt\+Component}!Stop@{Stop}}
+\index{Stop@{Stop}!mts\+Micron\+Tracker\+Controller\+Qt\+Component@{mts\+Micron\+Tracker\+Controller\+Qt\+Component}}
+\subsubsection[{Stop}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+Function\+Void} mts\+Micron\+Tracker\+Controller\+Qt\+Component\+::\+Stop}\label{classmts_micron_tracker_controller_qt_component_a7c5a8c0b9f551eb491550ca0704ca0d2}
+\hypertarget{classmts_micron_tracker_controller_qt_component_a6f10236718137e39ed23b3d8b44450db}{}\index{mts\+Micron\+Tracker\+Controller\+Qt\+Component@{mts\+Micron\+Tracker\+Controller\+Qt\+Component}!Timer@{Timer}}
+\index{Timer@{Timer}!mts\+Micron\+Tracker\+Controller\+Qt\+Component@{mts\+Micron\+Tracker\+Controller\+Qt\+Component}}
+\subsubsection[{Timer}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Timer$\ast$ mts\+Micron\+Tracker\+Controller\+Qt\+Component\+::\+Timer\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_micron_tracker_controller_qt_component_a6f10236718137e39ed23b3d8b44450db}
+\hypertarget{classmts_micron_tracker_controller_qt_component_a84667286a3af7870d553d47b1a012495}{}\index{mts\+Micron\+Tracker\+Controller\+Qt\+Component@{mts\+Micron\+Tracker\+Controller\+Qt\+Component}!Track@{Track}}
+\index{Track@{Track}!mts\+Micron\+Tracker\+Controller\+Qt\+Component@{mts\+Micron\+Tracker\+Controller\+Qt\+Component}}
+\subsubsection[{Track}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+Function\+Write} mts\+Micron\+Tracker\+Controller\+Qt\+Component\+::\+Track}\label{classmts_micron_tracker_controller_qt_component_a84667286a3af7870d553d47b1a012495}
+\hypertarget{classmts_micron_tracker_controller_qt_component_abaa9a9b2fffad200e964682888db5417}{}\index{mts\+Micron\+Tracker\+Controller\+Qt\+Component@{mts\+Micron\+Tracker\+Controller\+Qt\+Component}!X\+Points@{X\+Points}}
+\index{X\+Points@{X\+Points}!mts\+Micron\+Tracker\+Controller\+Qt\+Component@{mts\+Micron\+Tracker\+Controller\+Qt\+Component}}
+\subsubsection[{X\+Points}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf vct3}$>$ mts\+Micron\+Tracker\+Controller\+Qt\+Component\+::\+X\+Points}\label{classmts_micron_tracker_controller_qt_component_abaa9a9b2fffad200e964682888db5417}
+\hypertarget{classmts_micron_tracker_controller_qt_component_addf0cf9703d784ef7870b5b2d35024c4}{}\index{mts\+Micron\+Tracker\+Controller\+Qt\+Component@{mts\+Micron\+Tracker\+Controller\+Qt\+Component}!X\+Points\+Max\+Num@{X\+Points\+Max\+Num}}
+\index{X\+Points\+Max\+Num@{X\+Points\+Max\+Num}!mts\+Micron\+Tracker\+Controller\+Qt\+Component@{mts\+Micron\+Tracker\+Controller\+Qt\+Component}}
+\subsubsection[{X\+Points\+Max\+Num}]{\setlength{\rightskip}{0pt plus 5cm}int mts\+Micron\+Tracker\+Controller\+Qt\+Component\+::\+X\+Points\+Max\+Num}\label{classmts_micron_tracker_controller_qt_component_addf0cf9703d784ef7870b5b2d35024c4}
+\hypertarget{classmts_micron_tracker_controller_qt_component_ab4435aec94942d35c86ade1c60047405}{}\index{mts\+Micron\+Tracker\+Controller\+Qt\+Component@{mts\+Micron\+Tracker\+Controller\+Qt\+Component}!X\+Points\+Projection\+Left@{X\+Points\+Projection\+Left}}
+\index{X\+Points\+Projection\+Left@{X\+Points\+Projection\+Left}!mts\+Micron\+Tracker\+Controller\+Qt\+Component@{mts\+Micron\+Tracker\+Controller\+Qt\+Component}}
+\subsubsection[{X\+Points\+Projection\+Left}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf vct3}$>$ mts\+Micron\+Tracker\+Controller\+Qt\+Component\+::\+X\+Points\+Projection\+Left}\label{classmts_micron_tracker_controller_qt_component_ab4435aec94942d35c86ade1c60047405}
+\hypertarget{classmts_micron_tracker_controller_qt_component_a638d175869aa0a701bc334bfa7d03590}{}\index{mts\+Micron\+Tracker\+Controller\+Qt\+Component@{mts\+Micron\+Tracker\+Controller\+Qt\+Component}!X\+Points\+Projection\+Right@{X\+Points\+Projection\+Right}}
+\index{X\+Points\+Projection\+Right@{X\+Points\+Projection\+Right}!mts\+Micron\+Tracker\+Controller\+Qt\+Component@{mts\+Micron\+Tracker\+Controller\+Qt\+Component}}
+\subsubsection[{X\+Points\+Projection\+Right}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf vct3}$>$ mts\+Micron\+Tracker\+Controller\+Qt\+Component\+::\+X\+Points\+Projection\+Right}\label{classmts_micron_tracker_controller_qt_component_a638d175869aa0a701bc334bfa7d03590}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/saw\+Claron\+Micron\+Tracker/include/saw\+Claron\+Micron\+Tracker/\hyperlink{mts_micron_tracker_controller_qt_component_8h}{mts\+Micron\+Tracker\+Controller\+Qt\+Component.\+h}\end{DoxyCompactItemize}

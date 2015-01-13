@@ -1,0 +1,118 @@
+\hypertarget{classmts_gravity_compensation}{}\section{mts\+Gravity\+Compensation Class Reference}
+\label{classmts_gravity_compensation}\index{mts\+Gravity\+Compensation@{mts\+Gravity\+Compensation}}
+
+
+{\ttfamily \#include $<$mts\+Gravity\+Compensation.\+h$>$}
+
+Inheritance diagram for mts\+Gravity\+Compensation\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=7.000000cm]{d3/df8/classmts_gravity_compensation}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmts_gravity_compensation_a1b3a369e9f9633bc2634eb77a28f87db}{mts\+Gravity\+Compensation} (const std\+::string \&taskname, double period, const std\+::string \&robfilename, const \hyperlink{classvct_frame4x4}{vct\+Frame4x4}$<$ double $>$ \&Rtwb, \hyperlink{osa_c_p_u_affinity_8h_aaec7cdd7797e5e6eb5438c15fee5477a}{osa\+C\+P\+U\+Mask} \hyperlink{classmts_controller_a3125e5e9b65dc2347725215e8af73c9f}{cpumask}=\hyperlink{osa_c_p_u_affinity_8h_a2ae5ea257830cff2814d81ce526ada35}{O\+S\+A\+\_\+\+C\+P\+U\+A\+N\+Y})
+\begin{DoxyCompactList}\small\item\em Main constructor. \end{DoxyCompactList}\item 
+\hyperlink{classmts_gravity_compensation_a312a64260a6619fe8bf927dc2eeaf32a}{$\sim$mts\+Gravity\+Compensation} ()
+\item 
+void \hyperlink{classmts_gravity_compensation_afeb995f4fc2dcfa36f058d2daa4ca122}{Configure} (const std\+::string \&argv)
+\item 
+void \hyperlink{classmts_gravity_compensation_aa6d2d14d2980a33229624fa7462de7c3}{Startup} ()
+\item 
+void \hyperlink{classmts_gravity_compensation_a4434cc931c8e6069450b78b5ad83792d}{Run} ()
+\item 
+void \hyperlink{classmts_gravity_compensation_a207284822f031b9eef14414f77badbff}{Cleanup} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmts_gravity_compensation_a1b3a369e9f9633bc2634eb77a28f87db}{}\index{mts\+Gravity\+Compensation@{mts\+Gravity\+Compensation}!mts\+Gravity\+Compensation@{mts\+Gravity\+Compensation}}
+\index{mts\+Gravity\+Compensation@{mts\+Gravity\+Compensation}!mts\+Gravity\+Compensation@{mts\+Gravity\+Compensation}}
+\subsubsection[{mts\+Gravity\+Compensation}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Gravity\+Compensation\+::mts\+Gravity\+Compensation (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{taskname, }
+\item[{double}]{period, }
+\item[{const std\+::string \&}]{robfilename, }
+\item[{const {\bf vct\+Frame4x4}$<$ double $>$ \&}]{Rtwb, }
+\item[{{\bf osa\+C\+P\+U\+Mask}}]{cpumask = {\ttfamily {\bf O\+S\+A\+\_\+\+C\+P\+U\+A\+N\+Y}}}
+\end{DoxyParamCaption}
+)}\label{classmts_gravity_compensation_a1b3a369e9f9633bc2634eb77a28f87db}
+
+
+Main constructor. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em taskname} & The name of the M\+T\+S periodic task \\
+\hline
+ & {\em period} & The period of the task \\
+\hline
+\mbox{\tt in}  & {\em robfilename} & File containing the kinematics and dynamics parameters \\
+\hline
+\mbox{\tt in}  & {\em Rtwb} & Position and orientation of the robot with resepct to world frame \\
+\hline
+ & {\em cpumask} & The mask of the allowed C\+P\+U for the task \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmts_gravity_compensation_a312a64260a6619fe8bf927dc2eeaf32a}{}\index{mts\+Gravity\+Compensation@{mts\+Gravity\+Compensation}!````~mts\+Gravity\+Compensation@{$\sim$mts\+Gravity\+Compensation}}
+\index{````~mts\+Gravity\+Compensation@{$\sim$mts\+Gravity\+Compensation}!mts\+Gravity\+Compensation@{mts\+Gravity\+Compensation}}
+\subsubsection[{$\sim$mts\+Gravity\+Compensation}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Gravity\+Compensation\+::$\sim$mts\+Gravity\+Compensation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classmts_gravity_compensation_a312a64260a6619fe8bf927dc2eeaf32a}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classmts_gravity_compensation_a207284822f031b9eef14414f77badbff}{}\index{mts\+Gravity\+Compensation@{mts\+Gravity\+Compensation}!Cleanup@{Cleanup}}
+\index{Cleanup@{Cleanup}!mts\+Gravity\+Compensation@{mts\+Gravity\+Compensation}}
+\subsubsection[{Cleanup}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Gravity\+Compensation\+::\+Cleanup (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_gravity_compensation_a207284822f031b9eef14414f77badbff}
+Virtual method that gets overloaded, and is run after the component gets killed using \hyperlink{classmts_task_continuous_ad1f8145306e074fbea8baab3beef4c5b}{Kill()} method. 
+
+Reimplemented from \hyperlink{classmts_component_a891f330f4fde7d831dcf7dc537dc5e81}{mts\+Component}.
+
+\hypertarget{classmts_gravity_compensation_afeb995f4fc2dcfa36f058d2daa4ca122}{}\index{mts\+Gravity\+Compensation@{mts\+Gravity\+Compensation}!Configure@{Configure}}
+\index{Configure@{Configure}!mts\+Gravity\+Compensation@{mts\+Gravity\+Compensation}}
+\subsubsection[{Configure}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Gravity\+Compensation\+::\+Configure (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{filename}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_gravity_compensation_afeb995f4fc2dcfa36f058d2daa4ca122}
+The virtual method so that the interface or tasks can configure themselves 
+
+Reimplemented from \hyperlink{classmts_component_ad872432876de7879dc96c232b411c146}{mts\+Component}.
+
+\hypertarget{classmts_gravity_compensation_a4434cc931c8e6069450b78b5ad83792d}{}\index{mts\+Gravity\+Compensation@{mts\+Gravity\+Compensation}!Run@{Run}}
+\index{Run@{Run}!mts\+Gravity\+Compensation@{mts\+Gravity\+Compensation}}
+\subsubsection[{Run}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Gravity\+Compensation\+::\+Run (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_gravity_compensation_a4434cc931c8e6069450b78b5ad83792d}
+Pure virtual method that gets overloaded to run the actual task. 
+
+Implements \hyperlink{classmts_task_a20e18c9479cb650792456c32ee689834}{mts\+Task}.
+
+\hypertarget{classmts_gravity_compensation_aa6d2d14d2980a33229624fa7462de7c3}{}\index{mts\+Gravity\+Compensation@{mts\+Gravity\+Compensation}!Startup@{Startup}}
+\index{Startup@{Startup}!mts\+Gravity\+Compensation@{mts\+Gravity\+Compensation}}
+\subsubsection[{Startup}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Gravity\+Compensation\+::\+Startup (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_gravity_compensation_aa6d2d14d2980a33229624fa7462de7c3}
+Virtual method that gets overloaded, and is run before the component is started. 
+
+Reimplemented from \hyperlink{classmts_component_aaf28f0262b44eb6866e10089a02fa6e4}{mts\+Component}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/saw\+Controllers/include/saw\+Controllers/\hyperlink{mts_gravity_compensation_8h}{mts\+Gravity\+Compensation.\+h}\end{DoxyCompactItemize}

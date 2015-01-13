@@ -1,0 +1,53 @@
+\hypertarget{classvct_dynamic_vector_loop_engines_1_1_vio_vi_vi}{}\section{vct\+Dynamic\+Vector\+Loop\+Engines\+:\+:Vio\+Vi\+Vi$<$ \+\_\+io\+Element\+Operation\+Type, \+\_\+vector\+Element\+Operation\+Type $>$ Class Template Reference}
+\label{classvct_dynamic_vector_loop_engines_1_1_vio_vi_vi}\index{vct\+Dynamic\+Vector\+Loop\+Engines\+::\+Vio\+Vi\+Vi$<$ \+\_\+io\+Element\+Operation\+Type, \+\_\+vector\+Element\+Operation\+Type $>$@{vct\+Dynamic\+Vector\+Loop\+Engines\+::\+Vio\+Vi\+Vi$<$ \+\_\+io\+Element\+Operation\+Type, \+\_\+vector\+Element\+Operation\+Type $>$}}
+
+
+Implement operation of the form $v_{io} = op_{io}(v_{io}, op_{v}(v_{i1}, v_{i2}))$ for dynamic vectors.  
+
+
+
+
+{\ttfamily \#include $<$vct\+Dynamic\+Vector\+Loop\+Engines.\+h$>$}
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class \+\_\+io\+Vector\+Type , class \+\_\+input1\+Vector\+Type , class \+\_\+input2\+Vector\+Type $>$ }\\static void \hyperlink{classvct_dynamic_vector_loop_engines_1_1_vio_vi_vi_a0bbdb2a24aa1cf001c0c9aa2e25d3ca3}{Run} (\+\_\+io\+Vector\+Type \&io\+Vector, const \+\_\+input1\+Vector\+Type \&input1\+Vector, const \+\_\+input2\+Vector\+Type \&input2\+Vector)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class \+\_\+io\+Element\+Operation\+Type, class \+\_\+vector\+Element\+Operation\+Type$>$class vct\+Dynamic\+Vector\+Loop\+Engines\+::\+Vio\+Vi\+Vi$<$ \+\_\+io\+Element\+Operation\+Type, \+\_\+vector\+Element\+Operation\+Type $>$}
+
+Implement operation of the form $v_{io} = op_{io}(v_{io}, op_{v}(v_{i1}, v_{i2}))$ for dynamic vectors. 
+
+This class uses template specialization to perform store-\/back vector-\/vector-\/vector operations
+
+\[ v_{io} = \mathrm{op_{io}}(V_{io}, \mathrm{op_{vv}}(v_{i1}, v_{i2})) \]
+
+where $v_{io}$ is an input-\/output (store-\/back) vector; $v_{i1}$ and $v_{i2}$ are two input vectors. A typical example is\+: $v_{io} += v_{i1} \cdot v_{i2}$. $op_{vv}$ is an operation between the elements of $v_{i1}$ and $v_{i2}$; $op_{io}$ is an operation between the output of $op_{vv}$ and the elements of $v_{io}$.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+io\+Operation\+Type} & The type of the store-\/back operation.\\
+\hline
+{\em \+\_\+scalar\+Vector\+Element\+Operation\+Type} & The type of the element wise operation between input vectors. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classvct_dynamic_vector_loop_engines_1_1_vio_vi_vi_a0bbdb2a24aa1cf001c0c9aa2e25d3ca3}{}\index{vct\+Dynamic\+Vector\+Loop\+Engines\+::\+Vio\+Vi\+Vi@{vct\+Dynamic\+Vector\+Loop\+Engines\+::\+Vio\+Vi\+Vi}!Run@{Run}}
+\index{Run@{Run}!vct\+Dynamic\+Vector\+Loop\+Engines\+::\+Vio\+Vi\+Vi@{vct\+Dynamic\+Vector\+Loop\+Engines\+::\+Vio\+Vi\+Vi}}
+\subsubsection[{Run}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+io\+Element\+Operation\+Type , class \+\_\+vector\+Element\+Operation\+Type $>$ template$<$class \+\_\+io\+Vector\+Type , class \+\_\+input1\+Vector\+Type , class \+\_\+input2\+Vector\+Type $>$ static void {\bf vct\+Dynamic\+Vector\+Loop\+Engines\+::\+Vio\+Vi\+Vi}$<$ \+\_\+io\+Element\+Operation\+Type, \+\_\+vector\+Element\+Operation\+Type $>$\+::Run (
+\begin{DoxyParamCaption}
+\item[{\+\_\+io\+Vector\+Type \&}]{io\+Vector, }
+\item[{const \+\_\+input1\+Vector\+Type \&}]{input1\+Vector, }
+\item[{const \+\_\+input2\+Vector\+Type \&}]{input2\+Vector}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classvct_dynamic_vector_loop_engines_1_1_vio_vi_vi_a0bbdb2a24aa1cf001c0c9aa2e25d3ca3}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Vector/\hyperlink{vct_dynamic_vector_loop_engines_8h}{vct\+Dynamic\+Vector\+Loop\+Engines.\+h}\end{DoxyCompactItemize}

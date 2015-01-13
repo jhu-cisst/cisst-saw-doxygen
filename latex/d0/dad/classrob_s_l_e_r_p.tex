@@ -1,0 +1,94 @@
+\hypertarget{classrob_s_l_e_r_p}{}\section{rob\+S\+L\+E\+R\+P Class Reference}
+\label{classrob_s_l_e_r_p}\index{rob\+S\+L\+E\+R\+P@{rob\+S\+L\+E\+R\+P}}
+
+
+Define a spherical linear interpolation function.  
+
+
+
+
+{\ttfamily \#include $<$rob\+S\+L\+E\+R\+P.\+h$>$}
+
+Inheritance diagram for rob\+S\+L\+E\+R\+P\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{d0/dad/classrob_s_l_e_r_p}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classrob_s_l_e_r_p_abe2cf92f80f117d47750187d40480679}{rob\+S\+L\+E\+R\+P} (const \hyperlink{classvct_matrix_rotation3}{vct\+Matrix\+Rotation3}$<$ double $>$ \&Rw1, const \hyperlink{classvct_matrix_rotation3}{vct\+Matrix\+Rotation3}$<$ double $>$ \&Rw2, double wmax, double \hyperlink{classrob_function_a9a4b408a3a5a8ae927caec3b6bac36ef}{t1}=0.\+0)
+\item 
+\hyperlink{classrob_s_l_e_r_p_aaaeb4084e143f4ed8ffcbd0473fb75bd}{rob\+S\+L\+E\+R\+P} (const \hyperlink{classvct_quaternion_rotation3}{vct\+Quaternion\+Rotation3}$<$ double $>$ \&\hyperlink{classrob_function_s_o3_ab39d2e94ec47a7218e8e42209243c628}{qw1}, const \hyperlink{classvct_quaternion_rotation3}{vct\+Quaternion\+Rotation3}$<$ double $>$ \&\hyperlink{classrob_function_s_o3_ae8f7673ef36c4dcf8af771af852b974d}{qw2}, double wmax, double \hyperlink{classrob_function_a9a4b408a3a5a8ae927caec3b6bac36ef}{t1}=0.\+0)
+\item 
+void \hyperlink{classrob_s_l_e_r_p_a2dd6fee7cb282ece5320c3d74e54af7c}{Evaluate} (double t, \hyperlink{classvct_quaternion_rotation3}{vct\+Quaternion\+Rotation3}$<$ double $>$ \&q, \hyperlink{classvct_fixed_size_vector}{vct\+Fixed\+Size\+Vector}$<$ double, 3 $>$ \&w, \hyperlink{classvct_fixed_size_vector}{vct\+Fixed\+Size\+Vector}$<$ double, 3 $>$ \&wd)
+\begin{DoxyCompactList}\small\item\em Evaluate the function. \end{DoxyCompactList}\item 
+void \hyperlink{classrob_s_l_e_r_p_ad562f5f1e1f2bc779edbded51d498448}{Blend} (\hyperlink{classrob_function}{rob\+Function} $\ast$function, double wmax, double wdmax)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Define a spherical linear interpolation function. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classrob_s_l_e_r_p_abe2cf92f80f117d47750187d40480679}{}\index{rob\+S\+L\+E\+R\+P@{rob\+S\+L\+E\+R\+P}!rob\+S\+L\+E\+R\+P@{rob\+S\+L\+E\+R\+P}}
+\index{rob\+S\+L\+E\+R\+P@{rob\+S\+L\+E\+R\+P}!rob\+S\+L\+E\+R\+P@{rob\+S\+L\+E\+R\+P}}
+\subsubsection[{rob\+S\+L\+E\+R\+P}]{\setlength{\rightskip}{0pt plus 5cm}rob\+S\+L\+E\+R\+P\+::rob\+S\+L\+E\+R\+P (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Matrix\+Rotation3}$<$ double $>$ \&}]{Rw1, }
+\item[{const {\bf vct\+Matrix\+Rotation3}$<$ double $>$ \&}]{Rw2, }
+\item[{double}]{wmax, }
+\item[{double}]{t1 = {\ttfamily 0.0}}
+\end{DoxyParamCaption}
+)}\label{classrob_s_l_e_r_p_abe2cf92f80f117d47750187d40480679}
+\hypertarget{classrob_s_l_e_r_p_aaaeb4084e143f4ed8ffcbd0473fb75bd}{}\index{rob\+S\+L\+E\+R\+P@{rob\+S\+L\+E\+R\+P}!rob\+S\+L\+E\+R\+P@{rob\+S\+L\+E\+R\+P}}
+\index{rob\+S\+L\+E\+R\+P@{rob\+S\+L\+E\+R\+P}!rob\+S\+L\+E\+R\+P@{rob\+S\+L\+E\+R\+P}}
+\subsubsection[{rob\+S\+L\+E\+R\+P}]{\setlength{\rightskip}{0pt plus 5cm}rob\+S\+L\+E\+R\+P\+::rob\+S\+L\+E\+R\+P (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Quaternion\+Rotation3}$<$ double $>$ \&}]{qw1, }
+\item[{const {\bf vct\+Quaternion\+Rotation3}$<$ double $>$ \&}]{qw2, }
+\item[{double}]{wmax, }
+\item[{double}]{t1 = {\ttfamily 0.0}}
+\end{DoxyParamCaption}
+)}\label{classrob_s_l_e_r_p_aaaeb4084e143f4ed8ffcbd0473fb75bd}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classrob_s_l_e_r_p_ad562f5f1e1f2bc779edbded51d498448}{}\index{rob\+S\+L\+E\+R\+P@{rob\+S\+L\+E\+R\+P}!Blend@{Blend}}
+\index{Blend@{Blend}!rob\+S\+L\+E\+R\+P@{rob\+S\+L\+E\+R\+P}}
+\subsubsection[{Blend}]{\setlength{\rightskip}{0pt plus 5cm}void rob\+S\+L\+E\+R\+P\+::\+Blend (
+\begin{DoxyParamCaption}
+\item[{{\bf rob\+Function} $\ast$}]{function, }
+\item[{double}]{wmax, }
+\item[{double}]{wdmax}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classrob_s_l_e_r_p_ad562f5f1e1f2bc779edbded51d498448}
+
+
+Implements \hyperlink{classrob_function_s_o3_a490d756026b0030048f084baf97ee34b}{rob\+Function\+S\+O3}.
+
+\hypertarget{classrob_s_l_e_r_p_a2dd6fee7cb282ece5320c3d74e54af7c}{}\index{rob\+S\+L\+E\+R\+P@{rob\+S\+L\+E\+R\+P}!Evaluate@{Evaluate}}
+\index{Evaluate@{Evaluate}!rob\+S\+L\+E\+R\+P@{rob\+S\+L\+E\+R\+P}}
+\subsubsection[{Evaluate}]{\setlength{\rightskip}{0pt plus 5cm}void rob\+S\+L\+E\+R\+P\+::\+Evaluate (
+\begin{DoxyParamCaption}
+\item[{double}]{t, }
+\item[{{\bf vct\+Quaternion\+Rotation3}$<$ double $>$ \&}]{q, }
+\item[{{\bf vct\+Fixed\+Size\+Vector}$<$ double, 3 $>$ \&}]{w, }
+\item[{{\bf vct\+Fixed\+Size\+Vector}$<$ double, 3 $>$ \&}]{wd}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classrob_s_l_e_r_p_a2dd6fee7cb282ece5320c3d74e54af7c}
+
+
+Evaluate the function. 
+
+
+
+Reimplemented from \hyperlink{classrob_function_s_o3_a1c7d71ed0dbd9fb669af528372dd49ca}{rob\+Function\+S\+O3}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Robot/\hyperlink{rob_s_l_e_r_p_8h}{rob\+S\+L\+E\+R\+P.\+h}\end{DoxyCompactItemize}

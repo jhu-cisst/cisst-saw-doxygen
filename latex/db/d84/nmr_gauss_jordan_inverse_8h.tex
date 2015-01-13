@@ -1,0 +1,72 @@
+\hypertarget{nmr_gauss_jordan_inverse_8h}{}\section{/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Numerical/nmr\+Gauss\+Jordan\+Inverse.h File Reference}
+\label{nmr_gauss_jordan_inverse_8h}\index{/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Numerical/nmr\+Gauss\+Jordan\+Inverse.\+h@{/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Numerical/nmr\+Gauss\+Jordan\+Inverse.\+h}}
+{\ttfamily \#include $<$cisst\+Common/cmn\+Portability.\+h$>$}\\*
+{\ttfamily \#include $<$cisst\+Vector/vct\+Forward\+Declarations.\+h$>$}\\*
+{\ttfamily \#include $<$cisst\+Numerical/nmr\+Export.\+h$>$}\\*
+\subsection*{Functions}
+\begin{Indent}{\bf Gauss Jordan Inverse for fixed size matrices}\par
+{\em The function nmr\+Gauss\+Jordan\+Inverse\+Nx\+N (N = 2, 3, 4) computes the inverse of a Nx\+N matrix using Gauss-\/\+Jordan elimination.
+
+The function is instantiated for matrices of double and float in either storage order. When compiled in release mode, this function is at least 2.\+5 times faster than a parallel function in C-\/\+L\+A\+P\+A\+C\+K based on L\+U decomposition (dgetrf, dgetri), with an equvalent precision. However, the speed advantage is counted here only in R\+E\+L\+E\+A\+S\+E mode, whereas in debug mode these functions are significantly slower.
+
+The functions have been optimized to run for specific and typically occuring fixed-\/size cases, namely 2x2, 3x3 and 4x4. However, if all you need is to solve one linear equation, it is more efficient to have a direct solver than to compute the inverse first.
+
+In terms of numerical stability, the Gauss-\/\+Jordan method should be fairly stable for the specific matrix sizes in question, but it only uses row pivoting, and therefore other methods that include also column pivoting should be more stable.
+
+
+\begin{DoxyParams}{Parameters}
+{\em A} & the matrix whose inverse is computed, passed by value. \\
+\hline
+{\em nonsingular} & (output) set to true if A is nonsingular, and to false if A is singular. \\
+\hline
+{\em Ainv} & (output) set to the inverse of A if A is nonsingular \\
+\hline
+{\em singularity\+Tolerance} & a tolerance value for determining when a near-\/zero is encountered on the diagonal, which indicates that A is singular.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+For the 2x2 case, it may be more efficient and not less stable to use Kramer\textquotesingle{}s rule. 
+\end{DoxyNote}
+}\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class \+\_\+element\+Type , bool \+\_\+row\+Major\+In, bool \+\_\+row\+Major\+Out$>$ }\\\hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} void \hyperlink{nmr_gauss_jordan_inverse_8h_ab5dda1fde91bd26409f59f9f95a0e1b9}{nmr\+Gauss\+Jordan\+Inverse2x2} (\hyperlink{classvct_fixed_size_matrix}{vct\+Fixed\+Size\+Matrix}$<$ \+\_\+element\+Type, 2, 2, \+\_\+row\+Major\+In $>$ A, bool \&nonsingular, \hyperlink{classvct_fixed_size_matrix}{vct\+Fixed\+Size\+Matrix}$<$ \+\_\+element\+Type, 2, 2, \+\_\+row\+Major\+Out $>$ \&Ainv, const \+\_\+element\+Type singularity\+Tolerance)
+\item 
+{\footnotesize template$<$class \+\_\+element\+Type , bool \+\_\+row\+Major\+In, bool \+\_\+row\+Major\+Out$>$ }\\\hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} void \hyperlink{nmr_gauss_jordan_inverse_8h_aeec861fd603b96fb70b273d08f43988e}{nmr\+Gauss\+Jordan\+Inverse3x3} (\hyperlink{classvct_fixed_size_matrix}{vct\+Fixed\+Size\+Matrix}$<$ \+\_\+element\+Type, 3, 3, \+\_\+row\+Major\+In $>$ A, bool \&nonsingular, \hyperlink{classvct_fixed_size_matrix}{vct\+Fixed\+Size\+Matrix}$<$ \+\_\+element\+Type, 3, 3, \+\_\+row\+Major\+Out $>$ \&Ainv, const \+\_\+element\+Type singularity\+Tolerance)
+\item 
+{\footnotesize template$<$class \+\_\+element\+Type , bool \+\_\+row\+Major\+In, bool \+\_\+row\+Major\+Out$>$ }\\\hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} void \hyperlink{nmr_gauss_jordan_inverse_8h_a62812caf23e8c98ce54b4ecb6496ab4c}{nmr\+Gauss\+Jordan\+Inverse4x4} (\hyperlink{classvct_fixed_size_matrix}{vct\+Fixed\+Size\+Matrix}$<$ \+\_\+element\+Type, 4, 4, \+\_\+row\+Major\+In $>$ A, bool \&nonsingular, \hyperlink{classvct_fixed_size_matrix}{vct\+Fixed\+Size\+Matrix}$<$ \+\_\+element\+Type, 4, 4, \+\_\+row\+Major\+Out $>$ \&Ainv, const \+\_\+element\+Type singularity\+Tolerance)
+\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\subsection{Function Documentation}
+\hypertarget{nmr_gauss_jordan_inverse_8h_ab5dda1fde91bd26409f59f9f95a0e1b9}{}\index{nmr\+Gauss\+Jordan\+Inverse.\+h@{nmr\+Gauss\+Jordan\+Inverse.\+h}!nmr\+Gauss\+Jordan\+Inverse2x2@{nmr\+Gauss\+Jordan\+Inverse2x2}}
+\index{nmr\+Gauss\+Jordan\+Inverse2x2@{nmr\+Gauss\+Jordan\+Inverse2x2}!nmr\+Gauss\+Jordan\+Inverse.\+h@{nmr\+Gauss\+Jordan\+Inverse.\+h}}
+\subsubsection[{nmr\+Gauss\+Jordan\+Inverse2x2}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type , bool \+\_\+row\+Major\+In, bool \+\_\+row\+Major\+Out$>$ {\bf C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} void nmr\+Gauss\+Jordan\+Inverse2x2 (
+\begin{DoxyParamCaption}
+\item[{{\bf vct\+Fixed\+Size\+Matrix}$<$ \+\_\+element\+Type, 2, 2, \+\_\+row\+Major\+In $>$}]{A, }
+\item[{bool \&}]{nonsingular, }
+\item[{{\bf vct\+Fixed\+Size\+Matrix}$<$ \+\_\+element\+Type, 2, 2, \+\_\+row\+Major\+Out $>$ \&}]{Ainv, }
+\item[{const \+\_\+element\+Type}]{singularity\+Tolerance}
+\end{DoxyParamCaption}
+)}\label{nmr_gauss_jordan_inverse_8h_ab5dda1fde91bd26409f59f9f95a0e1b9}
+Gauss Jordan Inverse for a 2 by 2 matrix. \hypertarget{nmr_gauss_jordan_inverse_8h_aeec861fd603b96fb70b273d08f43988e}{}\index{nmr\+Gauss\+Jordan\+Inverse.\+h@{nmr\+Gauss\+Jordan\+Inverse.\+h}!nmr\+Gauss\+Jordan\+Inverse3x3@{nmr\+Gauss\+Jordan\+Inverse3x3}}
+\index{nmr\+Gauss\+Jordan\+Inverse3x3@{nmr\+Gauss\+Jordan\+Inverse3x3}!nmr\+Gauss\+Jordan\+Inverse.\+h@{nmr\+Gauss\+Jordan\+Inverse.\+h}}
+\subsubsection[{nmr\+Gauss\+Jordan\+Inverse3x3}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type , bool \+\_\+row\+Major\+In, bool \+\_\+row\+Major\+Out$>$ {\bf C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} void nmr\+Gauss\+Jordan\+Inverse3x3 (
+\begin{DoxyParamCaption}
+\item[{{\bf vct\+Fixed\+Size\+Matrix}$<$ \+\_\+element\+Type, 3, 3, \+\_\+row\+Major\+In $>$}]{A, }
+\item[{bool \&}]{nonsingular, }
+\item[{{\bf vct\+Fixed\+Size\+Matrix}$<$ \+\_\+element\+Type, 3, 3, \+\_\+row\+Major\+Out $>$ \&}]{Ainv, }
+\item[{const \+\_\+element\+Type}]{singularity\+Tolerance}
+\end{DoxyParamCaption}
+)}\label{nmr_gauss_jordan_inverse_8h_aeec861fd603b96fb70b273d08f43988e}
+Gauss Jordan Inverse for a 3 by 3 matrix. \hypertarget{nmr_gauss_jordan_inverse_8h_a62812caf23e8c98ce54b4ecb6496ab4c}{}\index{nmr\+Gauss\+Jordan\+Inverse.\+h@{nmr\+Gauss\+Jordan\+Inverse.\+h}!nmr\+Gauss\+Jordan\+Inverse4x4@{nmr\+Gauss\+Jordan\+Inverse4x4}}
+\index{nmr\+Gauss\+Jordan\+Inverse4x4@{nmr\+Gauss\+Jordan\+Inverse4x4}!nmr\+Gauss\+Jordan\+Inverse.\+h@{nmr\+Gauss\+Jordan\+Inverse.\+h}}
+\subsubsection[{nmr\+Gauss\+Jordan\+Inverse4x4}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type , bool \+\_\+row\+Major\+In, bool \+\_\+row\+Major\+Out$>$ {\bf C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} void nmr\+Gauss\+Jordan\+Inverse4x4 (
+\begin{DoxyParamCaption}
+\item[{{\bf vct\+Fixed\+Size\+Matrix}$<$ \+\_\+element\+Type, 4, 4, \+\_\+row\+Major\+In $>$}]{A, }
+\item[{bool \&}]{nonsingular, }
+\item[{{\bf vct\+Fixed\+Size\+Matrix}$<$ \+\_\+element\+Type, 4, 4, \+\_\+row\+Major\+Out $>$ \&}]{Ainv, }
+\item[{const \+\_\+element\+Type}]{singularity\+Tolerance}
+\end{DoxyParamCaption}
+)}\label{nmr_gauss_jordan_inverse_8h_a62812caf23e8c98ce54b4ecb6496ab4c}
+Gauss Jordan Inverse for a 4 by 4 matrix. 

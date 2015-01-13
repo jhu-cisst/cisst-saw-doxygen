@@ -1,0 +1,155 @@
+\hypertarget{structsvl_rect}{}\section{svl\+Rect Struct Reference}
+\label{structsvl_rect}\index{svl\+Rect@{svl\+Rect}}
+
+
+{\ttfamily \#include $<$svl\+Types.\+h$>$}
+
+Inheritance diagram for svl\+Rect\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{dd/d02/structsvl_rect}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structsvl_rect_a4b5e30c09763e483582b5eef11459728}{svl\+Rect} ()
+\item 
+\hyperlink{structsvl_rect_a6cbc7247eb1283ef4c48a40f9f12bdce}{svl\+Rect} (int \hyperlink{structsvl_rect_aee6c8420a1d44587061ddc2301ce7126}{left}, int \hyperlink{structsvl_rect_a66ceb775b0be45ce2d4229208e1bb210}{top}, int \hyperlink{structsvl_rect_a277323d99bd51d332973e9f4c94ef081}{right}, int \hyperlink{structsvl_rect_abebdb3b96af5a98d7a952b6a441f7e89}{bottom})
+\item 
+virtual \hyperlink{structsvl_shape}{svl\+Shape} $\ast$ \hyperlink{structsvl_rect_a0ab014564b0a89c3ca7827fabe4a3456}{Clone} ()
+\item 
+virtual bool \hyperlink{structsvl_rect_a902cdd64176ef3b0f8b9bf6ec765eb8b}{Is\+Within} (int x, int y) const 
+\item 
+virtual void \hyperlink{structsvl_rect_a67c503e5c9786eaa5db09d036b50081d}{Get\+Bounding\+Rect} (\hyperlink{structsvl_rect}{svl\+Rect} \&rect) const 
+\item 
+void \hyperlink{structsvl_rect_a82eb80ea151de2e80a0bc05edb86e6e0}{Assign} (const \hyperlink{structsvl_rect}{svl\+Rect} \&rect)
+\item 
+void \hyperlink{structsvl_rect_a117afb790f25ab7ac6736267d8e3fc29}{Assign} (int \hyperlink{structsvl_rect_aee6c8420a1d44587061ddc2301ce7126}{left}, int \hyperlink{structsvl_rect_a66ceb775b0be45ce2d4229208e1bb210}{top}, int \hyperlink{structsvl_rect_a277323d99bd51d332973e9f4c94ef081}{right}, int \hyperlink{structsvl_rect_abebdb3b96af5a98d7a952b6a441f7e89}{bottom})
+\item 
+void \hyperlink{structsvl_rect_a210eeef09846b33ede5425949ebb4b0c}{Normalize} ()
+\item 
+void \hyperlink{structsvl_rect_a31eda9994c2a4d0f008228556424d12c}{Trim} (const int minx, const int maxx, const int miny, const int maxy)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{structsvl_rect_aee6c8420a1d44587061ddc2301ce7126}{left}
+\item 
+int \hyperlink{structsvl_rect_a66ceb775b0be45ce2d4229208e1bb210}{top}
+\item 
+int \hyperlink{structsvl_rect_a277323d99bd51d332973e9f4c94ef081}{right}
+\item 
+int \hyperlink{structsvl_rect_abebdb3b96af5a98d7a952b6a441f7e89}{bottom}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{structsvl_rect_a4b5e30c09763e483582b5eef11459728}{}\index{svl\+Rect@{svl\+Rect}!svl\+Rect@{svl\+Rect}}
+\index{svl\+Rect@{svl\+Rect}!svl\+Rect@{svl\+Rect}}
+\subsubsection[{svl\+Rect}]{\setlength{\rightskip}{0pt plus 5cm}svl\+Rect\+::svl\+Rect (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{structsvl_rect_a4b5e30c09763e483582b5eef11459728}
+\hypertarget{structsvl_rect_a6cbc7247eb1283ef4c48a40f9f12bdce}{}\index{svl\+Rect@{svl\+Rect}!svl\+Rect@{svl\+Rect}}
+\index{svl\+Rect@{svl\+Rect}!svl\+Rect@{svl\+Rect}}
+\subsubsection[{svl\+Rect}]{\setlength{\rightskip}{0pt plus 5cm}svl\+Rect\+::svl\+Rect (
+\begin{DoxyParamCaption}
+\item[{int}]{left, }
+\item[{int}]{top, }
+\item[{int}]{right, }
+\item[{int}]{bottom}
+\end{DoxyParamCaption}
+)}\label{structsvl_rect_a6cbc7247eb1283ef4c48a40f9f12bdce}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{structsvl_rect_a82eb80ea151de2e80a0bc05edb86e6e0}{}\index{svl\+Rect@{svl\+Rect}!Assign@{Assign}}
+\index{Assign@{Assign}!svl\+Rect@{svl\+Rect}}
+\subsubsection[{Assign}]{\setlength{\rightskip}{0pt plus 5cm}void svl\+Rect\+::\+Assign (
+\begin{DoxyParamCaption}
+\item[{const {\bf svl\+Rect} \&}]{rect}
+\end{DoxyParamCaption}
+)}\label{structsvl_rect_a82eb80ea151de2e80a0bc05edb86e6e0}
+\hypertarget{structsvl_rect_a117afb790f25ab7ac6736267d8e3fc29}{}\index{svl\+Rect@{svl\+Rect}!Assign@{Assign}}
+\index{Assign@{Assign}!svl\+Rect@{svl\+Rect}}
+\subsubsection[{Assign}]{\setlength{\rightskip}{0pt plus 5cm}void svl\+Rect\+::\+Assign (
+\begin{DoxyParamCaption}
+\item[{int}]{left, }
+\item[{int}]{top, }
+\item[{int}]{right, }
+\item[{int}]{bottom}
+\end{DoxyParamCaption}
+)}\label{structsvl_rect_a117afb790f25ab7ac6736267d8e3fc29}
+\hypertarget{structsvl_rect_a0ab014564b0a89c3ca7827fabe4a3456}{}\index{svl\+Rect@{svl\+Rect}!Clone@{Clone}}
+\index{Clone@{Clone}!svl\+Rect@{svl\+Rect}}
+\subsubsection[{Clone}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf svl\+Shape}$\ast$ svl\+Rect\+::\+Clone (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{structsvl_rect_a0ab014564b0a89c3ca7827fabe4a3456}
+
+
+Implements \hyperlink{structsvl_shape_a6f647fa2d6996e6733628e813d2ce3f5}{svl\+Shape}.
+
+\hypertarget{structsvl_rect_a67c503e5c9786eaa5db09d036b50081d}{}\index{svl\+Rect@{svl\+Rect}!Get\+Bounding\+Rect@{Get\+Bounding\+Rect}}
+\index{Get\+Bounding\+Rect@{Get\+Bounding\+Rect}!svl\+Rect@{svl\+Rect}}
+\subsubsection[{Get\+Bounding\+Rect}]{\setlength{\rightskip}{0pt plus 5cm}virtual void svl\+Rect\+::\+Get\+Bounding\+Rect (
+\begin{DoxyParamCaption}
+\item[{{\bf svl\+Rect} \&}]{rect}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{structsvl_rect_a67c503e5c9786eaa5db09d036b50081d}
+
+
+Implements \hyperlink{structsvl_shape_aa62674350858fd8c8d09a5e761431da4}{svl\+Shape}.
+
+\hypertarget{structsvl_rect_a902cdd64176ef3b0f8b9bf6ec765eb8b}{}\index{svl\+Rect@{svl\+Rect}!Is\+Within@{Is\+Within}}
+\index{Is\+Within@{Is\+Within}!svl\+Rect@{svl\+Rect}}
+\subsubsection[{Is\+Within}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool svl\+Rect\+::\+Is\+Within (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{structsvl_rect_a902cdd64176ef3b0f8b9bf6ec765eb8b}
+
+
+Implements \hyperlink{structsvl_shape_afe5534b4382f7b5d50471dff823fdc84}{svl\+Shape}.
+
+\hypertarget{structsvl_rect_a210eeef09846b33ede5425949ebb4b0c}{}\index{svl\+Rect@{svl\+Rect}!Normalize@{Normalize}}
+\index{Normalize@{Normalize}!svl\+Rect@{svl\+Rect}}
+\subsubsection[{Normalize}]{\setlength{\rightskip}{0pt plus 5cm}void svl\+Rect\+::\+Normalize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{structsvl_rect_a210eeef09846b33ede5425949ebb4b0c}
+\hypertarget{structsvl_rect_a31eda9994c2a4d0f008228556424d12c}{}\index{svl\+Rect@{svl\+Rect}!Trim@{Trim}}
+\index{Trim@{Trim}!svl\+Rect@{svl\+Rect}}
+\subsubsection[{Trim}]{\setlength{\rightskip}{0pt plus 5cm}void svl\+Rect\+::\+Trim (
+\begin{DoxyParamCaption}
+\item[{const int}]{minx, }
+\item[{const int}]{maxx, }
+\item[{const int}]{miny, }
+\item[{const int}]{maxy}
+\end{DoxyParamCaption}
+)}\label{structsvl_rect_a31eda9994c2a4d0f008228556424d12c}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{structsvl_rect_abebdb3b96af5a98d7a952b6a441f7e89}{}\index{svl\+Rect@{svl\+Rect}!bottom@{bottom}}
+\index{bottom@{bottom}!svl\+Rect@{svl\+Rect}}
+\subsubsection[{bottom}]{\setlength{\rightskip}{0pt plus 5cm}int svl\+Rect\+::bottom}\label{structsvl_rect_abebdb3b96af5a98d7a952b6a441f7e89}
+\hypertarget{structsvl_rect_aee6c8420a1d44587061ddc2301ce7126}{}\index{svl\+Rect@{svl\+Rect}!left@{left}}
+\index{left@{left}!svl\+Rect@{svl\+Rect}}
+\subsubsection[{left}]{\setlength{\rightskip}{0pt plus 5cm}int svl\+Rect\+::left}\label{structsvl_rect_aee6c8420a1d44587061ddc2301ce7126}
+\hypertarget{structsvl_rect_a277323d99bd51d332973e9f4c94ef081}{}\index{svl\+Rect@{svl\+Rect}!right@{right}}
+\index{right@{right}!svl\+Rect@{svl\+Rect}}
+\subsubsection[{right}]{\setlength{\rightskip}{0pt plus 5cm}int svl\+Rect\+::right}\label{structsvl_rect_a277323d99bd51d332973e9f4c94ef081}
+\hypertarget{structsvl_rect_a66ceb775b0be45ce2d4229208e1bb210}{}\index{svl\+Rect@{svl\+Rect}!top@{top}}
+\index{top@{top}!svl\+Rect@{svl\+Rect}}
+\subsubsection[{top}]{\setlength{\rightskip}{0pt plus 5cm}int svl\+Rect\+::top}\label{structsvl_rect_a66ceb775b0be45ce2d4229208e1bb210}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Stereo\+Vision/\hyperlink{svl_types_8h}{svl\+Types.\+h}\end{DoxyCompactItemize}

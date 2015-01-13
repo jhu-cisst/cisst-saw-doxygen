@@ -1,0 +1,265 @@
+\hypertarget{classsvl_image_tracker}{}\section{svl\+Image\+Tracker Class Reference}
+\label{classsvl_image_tracker}\index{svl\+Image\+Tracker@{svl\+Image\+Tracker}}
+
+
+{\ttfamily \#include $<$svl\+Filter\+Image\+Tracker.\+h$>$}
+
+Inheritance diagram for svl\+Image\+Tracker\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{d6/d52/classsvl_image_tracker}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsvl_image_tracker_ab130e149fbc53c12361f616549f84c46}{svl\+Image\+Tracker} ()
+\item 
+bool \hyperlink{classsvl_image_tracker_a24e5e8a1a815d9e3623c66843d26df54}{Is\+Initialized} ()
+\item 
+virtual int \hyperlink{classsvl_image_tracker_afb9901eea52ba7bbdc2c70a0f4e5af09}{Set\+Image\+Size} (unsigned int width, unsigned int height)
+\item 
+virtual void \hyperlink{classsvl_image_tracker_aba04fa0ae482bc0c0cfcfcdc3608a4eb}{Set\+R\+O\+I} (const \hyperlink{structsvl_rect}{svl\+Rect} \&rect)
+\item 
+virtual void \hyperlink{classsvl_image_tracker_ab96f03b502eb23724acaf6c892981ac5}{Set\+R\+O\+I} (int left, int top, int right, int bottom)
+\item 
+virtual void \hyperlink{classsvl_image_tracker_ab65af89cd2f8498a27d02d4fe88265f6}{Set\+R\+O\+I} (const \hyperlink{structsvl_quad}{svl\+Quad} \&quad)
+\item 
+virtual void \hyperlink{classsvl_image_tracker_a43925e4cb1461046d3ac7f1f923e86ac}{Set\+R\+O\+I} (const \hyperlink{structsvl_ellipse}{svl\+Ellipse} \&ellipse)
+\item 
+virtual int \hyperlink{classsvl_image_tracker_a293f114b4d3cbf8bc32c2e5ce2fe8889}{Get\+R\+O\+I\+Margin} ()
+\item 
+virtual int \hyperlink{classsvl_image_tracker_a37dd0dd1b30ce96784258bb359a790d6}{Set\+Target\+Count} (unsigned int targetcount)
+\item 
+virtual int \hyperlink{classsvl_image_tracker_a33dbddc5e274df467a2f459652fa620f}{Set\+Target} (unsigned int targetid, const \hyperlink{structsvl_target2_d}{svl\+Target2\+D} \&target)
+\item 
+virtual int \hyperlink{classsvl_image_tracker_aaf99e4e4e69e44f6e57f97f8322a9e76}{Get\+Target} (unsigned int targetid, \hyperlink{structsvl_target2_d}{svl\+Target2\+D} \&target)
+\item 
+virtual int \hyperlink{classsvl_image_tracker_a530ac429c83a63e48e00eac848d4d2ec}{Initialize} ()
+\item 
+virtual void \hyperlink{classsvl_image_tracker_a29a3d1e5434ce42eb568aa861b33ce96}{Reset\+Targets} ()
+\item 
+virtual int \hyperlink{classsvl_image_tracker_a817d28eaf0a20c73273e7c9060c03ebf}{Pre\+Process\+Image} (\hyperlink{classsvl_sample_image}{svl\+Sample\+Image} \&image, unsigned int videoch=\hyperlink{svl_definitions_8h_ab9fec7615f19c8df2919eebcab0b187f}{S\+V\+L\+\_\+\+L\+E\+F\+T})
+\item 
+virtual int \hyperlink{classsvl_image_tracker_aa806fe1fe56828124a85cb81e0d7bd7f}{Track} (\hyperlink{classsvl_sample_image}{svl\+Sample\+Image} \&image, unsigned int videoch=\hyperlink{svl_definitions_8h_ab9fec7615f19c8df2919eebcab0b187f}{S\+V\+L\+\_\+\+L\+E\+F\+T})=0
+\item 
+virtual int \hyperlink{classsvl_image_tracker_af1307ba743f3b10c5596a2307dd7217c}{Track} (\hyperlink{structsvl_proc_info}{svl\+Proc\+Info} $\ast$proc\+Info, \hyperlink{classsvl_sample_image}{svl\+Sample\+Image} \&image, unsigned int videoch=\hyperlink{svl_definitions_8h_ab9fec7615f19c8df2919eebcab0b187f}{S\+V\+L\+\_\+\+L\+E\+F\+T})
+\item 
+virtual void \hyperlink{classsvl_image_tracker_a08ca47278e9d55b83f081c10e1159340}{Release} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classsvl_image_tracker_ad5478f0908bc03e76fb876e43aa1deae}{Initialized}
+\item 
+unsigned int \hyperlink{classsvl_image_tracker_a6bad5bd6edbd63f8a350203afe26dea6}{Width}
+\item 
+unsigned int \hyperlink{classsvl_image_tracker_a0ff4ce15e78b8699cb891123daaa7231}{Height}
+\item 
+\hyperlink{structsvl_quad}{svl\+Quad} \hyperlink{classsvl_image_tracker_a89ce7f905564fec40407e77aa898e465}{R\+O\+I\+Rect}
+\item 
+\hyperlink{structsvl_ellipse}{svl\+Ellipse} \hyperlink{classsvl_image_tracker_aedd5673ace2aef2c64c0e0b5a52f7e14}{R\+O\+I\+Ellipse}
+\item 
+\hyperlink{classvct_dynamic_vector}{vct\+Dynamic\+Vector}$<$ \hyperlink{structsvl_target2_d}{svl\+Target2\+D} $>$ \hyperlink{classsvl_image_tracker_acc589d98d13de77df8a2eed855df9d28}{Targets}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classsvl_image_tracker_ab130e149fbc53c12361f616549f84c46}{}\index{svl\+Image\+Tracker@{svl\+Image\+Tracker}!svl\+Image\+Tracker@{svl\+Image\+Tracker}}
+\index{svl\+Image\+Tracker@{svl\+Image\+Tracker}!svl\+Image\+Tracker@{svl\+Image\+Tracker}}
+\subsubsection[{svl\+Image\+Tracker}]{\setlength{\rightskip}{0pt plus 5cm}svl\+Image\+Tracker\+::svl\+Image\+Tracker (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classsvl_image_tracker_ab130e149fbc53c12361f616549f84c46}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classsvl_image_tracker_a293f114b4d3cbf8bc32c2e5ce2fe8889}{}\index{svl\+Image\+Tracker@{svl\+Image\+Tracker}!Get\+R\+O\+I\+Margin@{Get\+R\+O\+I\+Margin}}
+\index{Get\+R\+O\+I\+Margin@{Get\+R\+O\+I\+Margin}!svl\+Image\+Tracker@{svl\+Image\+Tracker}}
+\subsubsection[{Get\+R\+O\+I\+Margin}]{\setlength{\rightskip}{0pt plus 5cm}virtual int svl\+Image\+Tracker\+::\+Get\+R\+O\+I\+Margin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classsvl_image_tracker_a293f114b4d3cbf8bc32c2e5ce2fe8889}
+
+
+Reimplemented in \hyperlink{classsvl_tracker_m_s_brute_force_afea3ca4f31862335eb7802627ec7bf5f}{svl\+Tracker\+M\+S\+Brute\+Force}.
+
+\hypertarget{classsvl_image_tracker_aaf99e4e4e69e44f6e57f97f8322a9e76}{}\index{svl\+Image\+Tracker@{svl\+Image\+Tracker}!Get\+Target@{Get\+Target}}
+\index{Get\+Target@{Get\+Target}!svl\+Image\+Tracker@{svl\+Image\+Tracker}}
+\subsubsection[{Get\+Target}]{\setlength{\rightskip}{0pt plus 5cm}virtual int svl\+Image\+Tracker\+::\+Get\+Target (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{targetid, }
+\item[{{\bf svl\+Target2\+D} \&}]{target}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classsvl_image_tracker_aaf99e4e4e69e44f6e57f97f8322a9e76}
+
+
+Reimplemented in \hyperlink{classsvl_tracker_cisst_ac705a780f73a3493f8b294757365fe94}{svl\+Tracker\+Cisst}.
+
+\hypertarget{classsvl_image_tracker_a530ac429c83a63e48e00eac848d4d2ec}{}\index{svl\+Image\+Tracker@{svl\+Image\+Tracker}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!svl\+Image\+Tracker@{svl\+Image\+Tracker}}
+\subsubsection[{Initialize}]{\setlength{\rightskip}{0pt plus 5cm}virtual int svl\+Image\+Tracker\+::\+Initialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classsvl_image_tracker_a530ac429c83a63e48e00eac848d4d2ec}
+
+
+Reimplemented in \hyperlink{classsvl_tracker_m_s_brute_force_af4f2a1ebacfc6158d6ea17b41ceada2f}{svl\+Tracker\+M\+S\+Brute\+Force}, \hyperlink{classsvl_tracker_cisst_a2c5e0e63fb75a4b05a1b0114d3871703}{svl\+Tracker\+Cisst}, and \hyperlink{classsvl_tracker_o_c_v_mean_shift_a87583574f4821796798cb340df2b2133}{svl\+Tracker\+O\+C\+V\+Mean\+Shift}.
+
+\hypertarget{classsvl_image_tracker_a24e5e8a1a815d9e3623c66843d26df54}{}\index{svl\+Image\+Tracker@{svl\+Image\+Tracker}!Is\+Initialized@{Is\+Initialized}}
+\index{Is\+Initialized@{Is\+Initialized}!svl\+Image\+Tracker@{svl\+Image\+Tracker}}
+\subsubsection[{Is\+Initialized}]{\setlength{\rightskip}{0pt plus 5cm}bool svl\+Image\+Tracker\+::\+Is\+Initialized (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classsvl_image_tracker_a24e5e8a1a815d9e3623c66843d26df54}
+\hypertarget{classsvl_image_tracker_a817d28eaf0a20c73273e7c9060c03ebf}{}\index{svl\+Image\+Tracker@{svl\+Image\+Tracker}!Pre\+Process\+Image@{Pre\+Process\+Image}}
+\index{Pre\+Process\+Image@{Pre\+Process\+Image}!svl\+Image\+Tracker@{svl\+Image\+Tracker}}
+\subsubsection[{Pre\+Process\+Image}]{\setlength{\rightskip}{0pt plus 5cm}virtual int svl\+Image\+Tracker\+::\+Pre\+Process\+Image (
+\begin{DoxyParamCaption}
+\item[{{\bf svl\+Sample\+Image} \&}]{image, }
+\item[{unsigned int}]{videoch = {\ttfamily {\bf S\+V\+L\+\_\+\+L\+E\+F\+T}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classsvl_image_tracker_a817d28eaf0a20c73273e7c9060c03ebf}
+
+
+Reimplemented in \hyperlink{classsvl_tracker_m_s_brute_force_aa252636897f247f1e27d35c4e32c6523}{svl\+Tracker\+M\+S\+Brute\+Force}, and \hyperlink{classsvl_tracker_o_c_v_mean_shift_a7a0b8229b75ef85b5aff257df2fcb2cd}{svl\+Tracker\+O\+C\+V\+Mean\+Shift}.
+
+\hypertarget{classsvl_image_tracker_a08ca47278e9d55b83f081c10e1159340}{}\index{svl\+Image\+Tracker@{svl\+Image\+Tracker}!Release@{Release}}
+\index{Release@{Release}!svl\+Image\+Tracker@{svl\+Image\+Tracker}}
+\subsubsection[{Release}]{\setlength{\rightskip}{0pt plus 5cm}virtual void svl\+Image\+Tracker\+::\+Release (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classsvl_image_tracker_a08ca47278e9d55b83f081c10e1159340}
+
+
+Reimplemented in \hyperlink{classsvl_tracker_m_s_brute_force_a6e263ceb708413cc26709dbaae6700f8}{svl\+Tracker\+M\+S\+Brute\+Force}, \hyperlink{classsvl_tracker_cisst_ac7c0f1b27c219e01880016fe8a547d74}{svl\+Tracker\+Cisst}, and \hyperlink{classsvl_tracker_o_c_v_mean_shift_ae2cf254b0fab604a2d5384a4aa9b97c3}{svl\+Tracker\+O\+C\+V\+Mean\+Shift}.
+
+\hypertarget{classsvl_image_tracker_a29a3d1e5434ce42eb568aa861b33ce96}{}\index{svl\+Image\+Tracker@{svl\+Image\+Tracker}!Reset\+Targets@{Reset\+Targets}}
+\index{Reset\+Targets@{Reset\+Targets}!svl\+Image\+Tracker@{svl\+Image\+Tracker}}
+\subsubsection[{Reset\+Targets}]{\setlength{\rightskip}{0pt plus 5cm}virtual void svl\+Image\+Tracker\+::\+Reset\+Targets (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classsvl_image_tracker_a29a3d1e5434ce42eb568aa861b33ce96}
+
+
+Reimplemented in \hyperlink{classsvl_tracker_m_s_brute_force_a3763e4631332c34d4d7408928e921932}{svl\+Tracker\+M\+S\+Brute\+Force}.
+
+\hypertarget{classsvl_image_tracker_afb9901eea52ba7bbdc2c70a0f4e5af09}{}\index{svl\+Image\+Tracker@{svl\+Image\+Tracker}!Set\+Image\+Size@{Set\+Image\+Size}}
+\index{Set\+Image\+Size@{Set\+Image\+Size}!svl\+Image\+Tracker@{svl\+Image\+Tracker}}
+\subsubsection[{Set\+Image\+Size}]{\setlength{\rightskip}{0pt plus 5cm}virtual int svl\+Image\+Tracker\+::\+Set\+Image\+Size (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{width, }
+\item[{unsigned int}]{height}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classsvl_image_tracker_afb9901eea52ba7bbdc2c70a0f4e5af09}
+\hypertarget{classsvl_image_tracker_aba04fa0ae482bc0c0cfcfcdc3608a4eb}{}\index{svl\+Image\+Tracker@{svl\+Image\+Tracker}!Set\+R\+O\+I@{Set\+R\+O\+I}}
+\index{Set\+R\+O\+I@{Set\+R\+O\+I}!svl\+Image\+Tracker@{svl\+Image\+Tracker}}
+\subsubsection[{Set\+R\+O\+I}]{\setlength{\rightskip}{0pt plus 5cm}virtual void svl\+Image\+Tracker\+::\+Set\+R\+O\+I (
+\begin{DoxyParamCaption}
+\item[{const {\bf svl\+Rect} \&}]{rect}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classsvl_image_tracker_aba04fa0ae482bc0c0cfcfcdc3608a4eb}
+\hypertarget{classsvl_image_tracker_ab96f03b502eb23724acaf6c892981ac5}{}\index{svl\+Image\+Tracker@{svl\+Image\+Tracker}!Set\+R\+O\+I@{Set\+R\+O\+I}}
+\index{Set\+R\+O\+I@{Set\+R\+O\+I}!svl\+Image\+Tracker@{svl\+Image\+Tracker}}
+\subsubsection[{Set\+R\+O\+I}]{\setlength{\rightskip}{0pt plus 5cm}virtual void svl\+Image\+Tracker\+::\+Set\+R\+O\+I (
+\begin{DoxyParamCaption}
+\item[{int}]{left, }
+\item[{int}]{top, }
+\item[{int}]{right, }
+\item[{int}]{bottom}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classsvl_image_tracker_ab96f03b502eb23724acaf6c892981ac5}
+\hypertarget{classsvl_image_tracker_ab65af89cd2f8498a27d02d4fe88265f6}{}\index{svl\+Image\+Tracker@{svl\+Image\+Tracker}!Set\+R\+O\+I@{Set\+R\+O\+I}}
+\index{Set\+R\+O\+I@{Set\+R\+O\+I}!svl\+Image\+Tracker@{svl\+Image\+Tracker}}
+\subsubsection[{Set\+R\+O\+I}]{\setlength{\rightskip}{0pt plus 5cm}virtual void svl\+Image\+Tracker\+::\+Set\+R\+O\+I (
+\begin{DoxyParamCaption}
+\item[{const {\bf svl\+Quad} \&}]{quad}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classsvl_image_tracker_ab65af89cd2f8498a27d02d4fe88265f6}
+\hypertarget{classsvl_image_tracker_a43925e4cb1461046d3ac7f1f923e86ac}{}\index{svl\+Image\+Tracker@{svl\+Image\+Tracker}!Set\+R\+O\+I@{Set\+R\+O\+I}}
+\index{Set\+R\+O\+I@{Set\+R\+O\+I}!svl\+Image\+Tracker@{svl\+Image\+Tracker}}
+\subsubsection[{Set\+R\+O\+I}]{\setlength{\rightskip}{0pt plus 5cm}virtual void svl\+Image\+Tracker\+::\+Set\+R\+O\+I (
+\begin{DoxyParamCaption}
+\item[{const {\bf svl\+Ellipse} \&}]{ellipse}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classsvl_image_tracker_a43925e4cb1461046d3ac7f1f923e86ac}
+\hypertarget{classsvl_image_tracker_a33dbddc5e274df467a2f459652fa620f}{}\index{svl\+Image\+Tracker@{svl\+Image\+Tracker}!Set\+Target@{Set\+Target}}
+\index{Set\+Target@{Set\+Target}!svl\+Image\+Tracker@{svl\+Image\+Tracker}}
+\subsubsection[{Set\+Target}]{\setlength{\rightskip}{0pt plus 5cm}virtual int svl\+Image\+Tracker\+::\+Set\+Target (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{targetid, }
+\item[{const {\bf svl\+Target2\+D} \&}]{target}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classsvl_image_tracker_a33dbddc5e274df467a2f459652fa620f}
+
+
+Reimplemented in \hyperlink{classsvl_tracker_m_s_brute_force_a9125651c10a859a3644eb270a14a7832}{svl\+Tracker\+M\+S\+Brute\+Force}, and \hyperlink{classsvl_tracker_o_c_v_mean_shift_a681e10fbccb458b343bbb3b873a88cab}{svl\+Tracker\+O\+C\+V\+Mean\+Shift}.
+
+\hypertarget{classsvl_image_tracker_a37dd0dd1b30ce96784258bb359a790d6}{}\index{svl\+Image\+Tracker@{svl\+Image\+Tracker}!Set\+Target\+Count@{Set\+Target\+Count}}
+\index{Set\+Target\+Count@{Set\+Target\+Count}!svl\+Image\+Tracker@{svl\+Image\+Tracker}}
+\subsubsection[{Set\+Target\+Count}]{\setlength{\rightskip}{0pt plus 5cm}virtual int svl\+Image\+Tracker\+::\+Set\+Target\+Count (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{targetcount}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classsvl_image_tracker_a37dd0dd1b30ce96784258bb359a790d6}
+
+
+Reimplemented in \hyperlink{classsvl_tracker_cisst_aa9ece9d86e6288e2878cc4d9a5aa2ecc}{svl\+Tracker\+Cisst}, and \hyperlink{classsvl_tracker_o_c_v_mean_shift_a323dbe231d319def26e8ce46b734e375}{svl\+Tracker\+O\+C\+V\+Mean\+Shift}.
+
+\hypertarget{classsvl_image_tracker_aa806fe1fe56828124a85cb81e0d7bd7f}{}\index{svl\+Image\+Tracker@{svl\+Image\+Tracker}!Track@{Track}}
+\index{Track@{Track}!svl\+Image\+Tracker@{svl\+Image\+Tracker}}
+\subsubsection[{Track}]{\setlength{\rightskip}{0pt plus 5cm}virtual int svl\+Image\+Tracker\+::\+Track (
+\begin{DoxyParamCaption}
+\item[{{\bf svl\+Sample\+Image} \&}]{image, }
+\item[{unsigned int}]{videoch = {\ttfamily {\bf S\+V\+L\+\_\+\+L\+E\+F\+T}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classsvl_image_tracker_aa806fe1fe56828124a85cb81e0d7bd7f}
+
+
+Implemented in \hyperlink{classsvl_tracker_m_s_brute_force_af693efc065120ce40c3f311a787c37bd}{svl\+Tracker\+M\+S\+Brute\+Force}, \hyperlink{classsvl_tracker_cisst_a45b609e4a8b49d3d3dcfee9520af4997}{svl\+Tracker\+Cisst}, and \hyperlink{classsvl_tracker_o_c_v_mean_shift_a35c6c70d76bd53e08fd023e45c8aafe8}{svl\+Tracker\+O\+C\+V\+Mean\+Shift}.
+
+\hypertarget{classsvl_image_tracker_af1307ba743f3b10c5596a2307dd7217c}{}\index{svl\+Image\+Tracker@{svl\+Image\+Tracker}!Track@{Track}}
+\index{Track@{Track}!svl\+Image\+Tracker@{svl\+Image\+Tracker}}
+\subsubsection[{Track}]{\setlength{\rightskip}{0pt plus 5cm}virtual int svl\+Image\+Tracker\+::\+Track (
+\begin{DoxyParamCaption}
+\item[{{\bf svl\+Proc\+Info} $\ast$}]{proc\+Info, }
+\item[{{\bf svl\+Sample\+Image} \&}]{image, }
+\item[{unsigned int}]{videoch = {\ttfamily {\bf S\+V\+L\+\_\+\+L\+E\+F\+T}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classsvl_image_tracker_af1307ba743f3b10c5596a2307dd7217c}
+
+
+Reimplemented in \hyperlink{classsvl_tracker_m_s_brute_force_acf680657566ae5e363d5d40922d50024}{svl\+Tracker\+M\+S\+Brute\+Force}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classsvl_image_tracker_a0ff4ce15e78b8699cb891123daaa7231}{}\index{svl\+Image\+Tracker@{svl\+Image\+Tracker}!Height@{Height}}
+\index{Height@{Height}!svl\+Image\+Tracker@{svl\+Image\+Tracker}}
+\subsubsection[{Height}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int svl\+Image\+Tracker\+::\+Height\hspace{0.3cm}{\ttfamily [protected]}}\label{classsvl_image_tracker_a0ff4ce15e78b8699cb891123daaa7231}
+\hypertarget{classsvl_image_tracker_ad5478f0908bc03e76fb876e43aa1deae}{}\index{svl\+Image\+Tracker@{svl\+Image\+Tracker}!Initialized@{Initialized}}
+\index{Initialized@{Initialized}!svl\+Image\+Tracker@{svl\+Image\+Tracker}}
+\subsubsection[{Initialized}]{\setlength{\rightskip}{0pt plus 5cm}bool svl\+Image\+Tracker\+::\+Initialized\hspace{0.3cm}{\ttfamily [protected]}}\label{classsvl_image_tracker_ad5478f0908bc03e76fb876e43aa1deae}
+\hypertarget{classsvl_image_tracker_aedd5673ace2aef2c64c0e0b5a52f7e14}{}\index{svl\+Image\+Tracker@{svl\+Image\+Tracker}!R\+O\+I\+Ellipse@{R\+O\+I\+Ellipse}}
+\index{R\+O\+I\+Ellipse@{R\+O\+I\+Ellipse}!svl\+Image\+Tracker@{svl\+Image\+Tracker}}
+\subsubsection[{R\+O\+I\+Ellipse}]{\setlength{\rightskip}{0pt plus 5cm}{\bf svl\+Ellipse} svl\+Image\+Tracker\+::\+R\+O\+I\+Ellipse\hspace{0.3cm}{\ttfamily [protected]}}\label{classsvl_image_tracker_aedd5673ace2aef2c64c0e0b5a52f7e14}
+\hypertarget{classsvl_image_tracker_a89ce7f905564fec40407e77aa898e465}{}\index{svl\+Image\+Tracker@{svl\+Image\+Tracker}!R\+O\+I\+Rect@{R\+O\+I\+Rect}}
+\index{R\+O\+I\+Rect@{R\+O\+I\+Rect}!svl\+Image\+Tracker@{svl\+Image\+Tracker}}
+\subsubsection[{R\+O\+I\+Rect}]{\setlength{\rightskip}{0pt plus 5cm}{\bf svl\+Quad} svl\+Image\+Tracker\+::\+R\+O\+I\+Rect\hspace{0.3cm}{\ttfamily [protected]}}\label{classsvl_image_tracker_a89ce7f905564fec40407e77aa898e465}
+\hypertarget{classsvl_image_tracker_acc589d98d13de77df8a2eed855df9d28}{}\index{svl\+Image\+Tracker@{svl\+Image\+Tracker}!Targets@{Targets}}
+\index{Targets@{Targets}!svl\+Image\+Tracker@{svl\+Image\+Tracker}}
+\subsubsection[{Targets}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Dynamic\+Vector}$<${\bf svl\+Target2\+D}$>$ svl\+Image\+Tracker\+::\+Targets\hspace{0.3cm}{\ttfamily [protected]}}\label{classsvl_image_tracker_acc589d98d13de77df8a2eed855df9d28}
+\hypertarget{classsvl_image_tracker_a6bad5bd6edbd63f8a350203afe26dea6}{}\index{svl\+Image\+Tracker@{svl\+Image\+Tracker}!Width@{Width}}
+\index{Width@{Width}!svl\+Image\+Tracker@{svl\+Image\+Tracker}}
+\subsubsection[{Width}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int svl\+Image\+Tracker\+::\+Width\hspace{0.3cm}{\ttfamily [protected]}}\label{classsvl_image_tracker_a6bad5bd6edbd63f8a350203afe26dea6}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Stereo\+Vision/\hyperlink{svl_filter_image_tracker_8h}{svl\+Filter\+Image\+Tracker.\+h}\end{DoxyCompactItemize}

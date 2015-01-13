@@ -1,0 +1,113 @@
+\hypertarget{classvct_qt_widget_rotation_open_g_l}{}\section{vct\+Qt\+Widget\+Rotation\+Open\+G\+L Class Reference}
+\label{classvct_qt_widget_rotation_open_g_l}\index{vct\+Qt\+Widget\+Rotation\+Open\+G\+L@{vct\+Qt\+Widget\+Rotation\+Open\+G\+L}}
+
+
+{\ttfamily \#include $<$vct\+Qt\+Widget\+Rotation.\+h$>$}
+
+Inheritance diagram for vct\+Qt\+Widget\+Rotation\+Open\+G\+L\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{db/d62/classvct_qt_widget_rotation_open_g_l}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classvct_qt_widget_rotation_open_g_l_a85770983769f339d9413469cc675459a}{vct\+Qt\+Widget\+Rotation\+Open\+G\+L} (void)
+\item 
+\hyperlink{classvct_qt_widget_rotation_open_g_l_a8d0b0ed089215ff0a7a151e9c64c22b8}{$\sim$vct\+Qt\+Widget\+Rotation\+Open\+G\+L} (void)
+\item 
+void \hyperlink{classvct_qt_widget_rotation_open_g_l_a298f09ac2e58f8dbab585ff7043fc39a}{Set\+Value} (const \hyperlink{vct_transformation_types_8h_a30fe23c1d38748a9b8f2fb9bb2471382}{vct\+Mat\+Rot3} \&rotation)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classvct_qt_widget_rotation_open_g_l_ae0d4b905ea88519fed5cb4e01a92ff52}{initialize\+G\+L} (void)
+\item 
+void \hyperlink{classvct_qt_widget_rotation_open_g_l_abd1e68e6770fbbdb57bbe6645b4713da}{paint\+G\+L} (void)
+\item 
+void \hyperlink{classvct_qt_widget_rotation_open_g_l_a41ac2ac38ff2cc2f789e9681e1327aeb}{resize\+G\+L} (int width, int height)
+\item 
+void \hyperlink{classvct_qt_widget_rotation_open_g_l_a4bc2dceaacfa29f43cbd134eea70b977}{draw3\+D\+Axis} (const double scale)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{vct_fixed_size_vector_types_8h_a3af82acdbf4eeb73c551909240b106ea}{vct3} \hyperlink{classvct_qt_widget_rotation_open_g_l_ae9fd2c827d38e62e475257ce91261e20}{orientation}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Widget to visualize rotation using 3 axes in Open\+G\+L \begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000005}{Todo}]use rotation matrix to rotate axis instead of euler angles 
+
+use a G\+L list to create the axes once and re-\/use later 
+
+remove reference frame? \end{DoxyRefDesc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classvct_qt_widget_rotation_open_g_l_a85770983769f339d9413469cc675459a}{}\index{vct\+Qt\+Widget\+Rotation\+Open\+G\+L@{vct\+Qt\+Widget\+Rotation\+Open\+G\+L}!vct\+Qt\+Widget\+Rotation\+Open\+G\+L@{vct\+Qt\+Widget\+Rotation\+Open\+G\+L}}
+\index{vct\+Qt\+Widget\+Rotation\+Open\+G\+L@{vct\+Qt\+Widget\+Rotation\+Open\+G\+L}!vct\+Qt\+Widget\+Rotation\+Open\+G\+L@{vct\+Qt\+Widget\+Rotation\+Open\+G\+L}}
+\subsubsection[{vct\+Qt\+Widget\+Rotation\+Open\+G\+L}]{\setlength{\rightskip}{0pt plus 5cm}vct\+Qt\+Widget\+Rotation\+Open\+G\+L\+::vct\+Qt\+Widget\+Rotation\+Open\+G\+L (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classvct_qt_widget_rotation_open_g_l_a85770983769f339d9413469cc675459a}
+\hypertarget{classvct_qt_widget_rotation_open_g_l_a8d0b0ed089215ff0a7a151e9c64c22b8}{}\index{vct\+Qt\+Widget\+Rotation\+Open\+G\+L@{vct\+Qt\+Widget\+Rotation\+Open\+G\+L}!````~vct\+Qt\+Widget\+Rotation\+Open\+G\+L@{$\sim$vct\+Qt\+Widget\+Rotation\+Open\+G\+L}}
+\index{````~vct\+Qt\+Widget\+Rotation\+Open\+G\+L@{$\sim$vct\+Qt\+Widget\+Rotation\+Open\+G\+L}!vct\+Qt\+Widget\+Rotation\+Open\+G\+L@{vct\+Qt\+Widget\+Rotation\+Open\+G\+L}}
+\subsubsection[{$\sim$vct\+Qt\+Widget\+Rotation\+Open\+G\+L}]{\setlength{\rightskip}{0pt plus 5cm}vct\+Qt\+Widget\+Rotation\+Open\+G\+L\+::$\sim$vct\+Qt\+Widget\+Rotation\+Open\+G\+L (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_qt_widget_rotation_open_g_l_a8d0b0ed089215ff0a7a151e9c64c22b8}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classvct_qt_widget_rotation_open_g_l_a4bc2dceaacfa29f43cbd134eea70b977}{}\index{vct\+Qt\+Widget\+Rotation\+Open\+G\+L@{vct\+Qt\+Widget\+Rotation\+Open\+G\+L}!draw3\+D\+Axis@{draw3\+D\+Axis}}
+\index{draw3\+D\+Axis@{draw3\+D\+Axis}!vct\+Qt\+Widget\+Rotation\+Open\+G\+L@{vct\+Qt\+Widget\+Rotation\+Open\+G\+L}}
+\subsubsection[{draw3\+D\+Axis}]{\setlength{\rightskip}{0pt plus 5cm}void vct\+Qt\+Widget\+Rotation\+Open\+G\+L\+::draw3\+D\+Axis (
+\begin{DoxyParamCaption}
+\item[{const double}]{scale}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classvct_qt_widget_rotation_open_g_l_a4bc2dceaacfa29f43cbd134eea70b977}
+\hypertarget{classvct_qt_widget_rotation_open_g_l_ae0d4b905ea88519fed5cb4e01a92ff52}{}\index{vct\+Qt\+Widget\+Rotation\+Open\+G\+L@{vct\+Qt\+Widget\+Rotation\+Open\+G\+L}!initialize\+G\+L@{initialize\+G\+L}}
+\index{initialize\+G\+L@{initialize\+G\+L}!vct\+Qt\+Widget\+Rotation\+Open\+G\+L@{vct\+Qt\+Widget\+Rotation\+Open\+G\+L}}
+\subsubsection[{initialize\+G\+L}]{\setlength{\rightskip}{0pt plus 5cm}void vct\+Qt\+Widget\+Rotation\+Open\+G\+L\+::initialize\+G\+L (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classvct_qt_widget_rotation_open_g_l_ae0d4b905ea88519fed5cb4e01a92ff52}
+\hypertarget{classvct_qt_widget_rotation_open_g_l_abd1e68e6770fbbdb57bbe6645b4713da}{}\index{vct\+Qt\+Widget\+Rotation\+Open\+G\+L@{vct\+Qt\+Widget\+Rotation\+Open\+G\+L}!paint\+G\+L@{paint\+G\+L}}
+\index{paint\+G\+L@{paint\+G\+L}!vct\+Qt\+Widget\+Rotation\+Open\+G\+L@{vct\+Qt\+Widget\+Rotation\+Open\+G\+L}}
+\subsubsection[{paint\+G\+L}]{\setlength{\rightskip}{0pt plus 5cm}void vct\+Qt\+Widget\+Rotation\+Open\+G\+L\+::paint\+G\+L (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classvct_qt_widget_rotation_open_g_l_abd1e68e6770fbbdb57bbe6645b4713da}
+\hypertarget{classvct_qt_widget_rotation_open_g_l_a41ac2ac38ff2cc2f789e9681e1327aeb}{}\index{vct\+Qt\+Widget\+Rotation\+Open\+G\+L@{vct\+Qt\+Widget\+Rotation\+Open\+G\+L}!resize\+G\+L@{resize\+G\+L}}
+\index{resize\+G\+L@{resize\+G\+L}!vct\+Qt\+Widget\+Rotation\+Open\+G\+L@{vct\+Qt\+Widget\+Rotation\+Open\+G\+L}}
+\subsubsection[{resize\+G\+L}]{\setlength{\rightskip}{0pt plus 5cm}void vct\+Qt\+Widget\+Rotation\+Open\+G\+L\+::resize\+G\+L (
+\begin{DoxyParamCaption}
+\item[{int}]{width, }
+\item[{int}]{height}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classvct_qt_widget_rotation_open_g_l_a41ac2ac38ff2cc2f789e9681e1327aeb}
+\hypertarget{classvct_qt_widget_rotation_open_g_l_a298f09ac2e58f8dbab585ff7043fc39a}{}\index{vct\+Qt\+Widget\+Rotation\+Open\+G\+L@{vct\+Qt\+Widget\+Rotation\+Open\+G\+L}!Set\+Value@{Set\+Value}}
+\index{Set\+Value@{Set\+Value}!vct\+Qt\+Widget\+Rotation\+Open\+G\+L@{vct\+Qt\+Widget\+Rotation\+Open\+G\+L}}
+\subsubsection[{Set\+Value}]{\setlength{\rightskip}{0pt plus 5cm}void vct\+Qt\+Widget\+Rotation\+Open\+G\+L\+::\+Set\+Value (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Mat\+Rot3} \&}]{rotation}
+\end{DoxyParamCaption}
+)}\label{classvct_qt_widget_rotation_open_g_l_a298f09ac2e58f8dbab585ff7043fc39a}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classvct_qt_widget_rotation_open_g_l_ae9fd2c827d38e62e475257ce91261e20}{}\index{vct\+Qt\+Widget\+Rotation\+Open\+G\+L@{vct\+Qt\+Widget\+Rotation\+Open\+G\+L}!orientation@{orientation}}
+\index{orientation@{orientation}!vct\+Qt\+Widget\+Rotation\+Open\+G\+L@{vct\+Qt\+Widget\+Rotation\+Open\+G\+L}}
+\subsubsection[{orientation}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct3} vct\+Qt\+Widget\+Rotation\+Open\+G\+L\+::orientation\hspace{0.3cm}{\ttfamily [protected]}}\label{classvct_qt_widget_rotation_open_g_l_ae9fd2c827d38e62e475257ce91261e20}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Vector/\hyperlink{vct_qt_widget_rotation_8h}{vct\+Qt\+Widget\+Rotation.\+h}\end{DoxyCompactItemize}

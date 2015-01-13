@@ -1,0 +1,1182 @@
+\hypertarget{classvct_fixed_size_const_vector_base}{}\section{vct\+Fixed\+Size\+Const\+Vector\+Base$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$ Class Template Reference}
+\label{classvct_fixed_size_const_vector_base}\index{vct\+Fixed\+Size\+Const\+Vector\+Base$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$@{vct\+Fixed\+Size\+Const\+Vector\+Base$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$}}
+
+
+A template for a fixed length vector with fixed spacing in memory.  
+
+
+
+
+{\ttfamily \#include $<$vct\+Fixed\+Size\+Const\+Vector\+Base.\+h$>$}
+
+Inheritance diagram for vct\+Fixed\+Size\+Const\+Vector\+Base$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.213213cm]{d3/dde/classvct_fixed_size_const_vector_base}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classvct_fixed_size_const_vector_base_1_1_const_subvector}{Const\+Subvector}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \hyperlink{classvct_fixed_size_const_vector_base_abce8a0d5a26d7343df60ea28ccf38626ac440f88d775ff77d03e1a484a213dcfe}{S\+I\+Z\+E} = Vector\+Traits\+:\+:S\+I\+Z\+E
+ \}
+\item 
+enum \{ \hyperlink{classvct_fixed_size_const_vector_base_a8b833ecc64bf9196c1a89a56d6f11ebbaddc2fa94f972a3bf4df3a35bec4bdc48}{S\+T\+R\+I\+D\+E} = Vector\+Traits\+:\+:S\+T\+R\+I\+D\+E
+ \}
+\item 
+typedef \hyperlink{classvct_fixed_size_const_vector_base}{vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$ \hyperlink{classvct_fixed_size_const_vector_base_a071063bc4fa43112cc287b2dbef53180}{This\+Type}
+\item 
+typedef \hyperlink{classvct_fixed_size_vector_traits}{vct\+Fixed\+Size\+Vector\+Traits}$<$ \+\_\+element\+Type, \+\_\+size, \+\_\+stride $>$ \hyperlink{classvct_fixed_size_const_vector_base_ac47f6db624303dee621bca2ec51aa75e}{Vector\+Traits}
+\item 
+typedef \hyperlink{classvct_fixed_size_vector_traits_a4c4cff693ac7f81edfb240a208506309}{Vector\+Traits\+::iterator} \hyperlink{classvct_fixed_size_const_vector_base_ad0ba9b13bb2515695b4e44290bdbaa5d}{iterator}
+\item 
+typedef \hyperlink{classvct_fixed_size_vector_traits_a9c7e38590e4a27350095e89a84dc0d09}{Vector\+Traits\+::const\+\_\+iterator} \hyperlink{classvct_fixed_size_const_vector_base_abc547e0542bb6f7d92876a56c7ea5cdc}{const\+\_\+iterator}
+\item 
+typedef \hyperlink{classvct_fixed_size_vector_traits_a46a61657ee7bece7277e0b59c4e0ea41}{Vector\+Traits\+::reverse\+\_\+iterator} \hyperlink{classvct_fixed_size_const_vector_base_ae22e8ced509e202d00620f384ac3a5b2}{reverse\+\_\+iterator}
+\item 
+typedef \hyperlink{classvct_fixed_size_vector_traits_a66365350e5fae26c9cf29a3ce0bb4a60}{Vector\+Traits\+::const\+\_\+reverse\+\_\+iterator} \hyperlink{classvct_fixed_size_const_vector_base_acd0a5fe64ff3551c45cebfb2ba81cf10}{const\+\_\+reverse\+\_\+iterator}
+\item 
+typedef \hyperlink{classvct_fixed_size_vector}{vct\+Fixed\+Size\+Vector}$<$ \+\_\+element\+Type, \+\_\+size $>$ \hyperlink{classvct_fixed_size_const_vector_base_a4de94a741a6bb9046e05754c32475ecd}{Vector\+Value\+Type}
+\item 
+typedef \hyperlink{classvct_fixed_size_vector}{vct\+Fixed\+Size\+Vector}$<$ \+\_\+element\+Type, \+\_\+size $>$ \hyperlink{classvct_fixed_size_const_vector_base_aaf3accb7cec5765478b5d8fa39c22408}{Copy\+Type}
+\item 
+typedef \hyperlink{classvct_fixed_size_vector}{vct\+Fixed\+Size\+Vector}$<$ bool, \+\_\+size $>$ \hyperlink{classvct_fixed_size_const_vector_base_a15899465a75a2f78965bdcf2d6e34bc5}{Bool\+Vector\+Value\+Type}
+\end{DoxyCompactItemize}
+{\bf }\par
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classvct_fixed_size_const_matrix_ref}{vct\+Fixed\+Size\+Const\+Matrix\+Ref}$<$ \+\_\+element\+Type, 1, \+\_\+size, \+\_\+stride $\ast$\+\_\+size, \+\_\+stride $>$ \hyperlink{classvct_fixed_size_const_vector_base_ab7c118dbf79db9194157ced0e4549814}{Row\+Const\+Matrix\+Ref\+Type}
+\item 
+typedef \hyperlink{classvct_fixed_size_matrix_ref}{vct\+Fixed\+Size\+Matrix\+Ref}$<$ \+\_\+element\+Type, 1, \+\_\+size, \+\_\+stride $\ast$\+\_\+size, \+\_\+stride $>$ \hyperlink{classvct_fixed_size_const_vector_base_a1f9ff7c6b2b3f98c51d1bf3eefdfbd32}{Row\+Matrix\+Ref\+Type}
+\end{DoxyCompactItemize}
+
+{\bf }\par
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classvct_fixed_size_const_matrix_ref}{vct\+Fixed\+Size\+Const\+Matrix\+Ref}$<$ \+\_\+element\+Type, \+\_\+size, 1, \+\_\+stride, \+\_\+stride $\ast$\+\_\+size $>$ \hyperlink{classvct_fixed_size_const_vector_base_a7dd213f3b90969b8c89fd0766cf0a70e}{Col\+Const\+Matrix\+Ref\+Type}
+\item 
+typedef \hyperlink{classvct_fixed_size_matrix_ref}{vct\+Fixed\+Size\+Matrix\+Ref}$<$ \+\_\+element\+Type, \+\_\+size, 1, \+\_\+stride, \+\_\+stride $\ast$\+\_\+size $>$ \hyperlink{classvct_fixed_size_const_vector_base_ac2454662f16abd75fdef4ce8d2a00a48}{Col\+Matrix\+Ref\+Type}
+\end{DoxyCompactItemize}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classvct_fixed_size_const_vector_base_aa58a77c3e1e45a50d7677d9a8fbb5f17}{V\+C\+T\+\_\+\+C\+O\+N\+T\+A\+I\+N\+E\+R\+\_\+\+T\+R\+A\+I\+T\+S\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+S} (\+\_\+element\+Type)
+\item 
+\hyperlink{classvct_fixed_size_const_vector_base_abc547e0542bb6f7d92876a56c7ea5cdc}{const\+\_\+iterator} \hyperlink{classvct_fixed_size_const_vector_base_a78e79d048c2a069fa331a10c7c497806}{begin} (void) const 
+\item 
+\hyperlink{classvct_fixed_size_const_vector_base_abc547e0542bb6f7d92876a56c7ea5cdc}{const\+\_\+iterator} \hyperlink{classvct_fixed_size_const_vector_base_a304e1ab5b8fc2627cf8544d1acc3ba36}{end} (void) const 
+\item 
+\hyperlink{classvct_fixed_size_const_vector_base_acd0a5fe64ff3551c45cebfb2ba81cf10}{const\+\_\+reverse\+\_\+iterator} \hyperlink{classvct_fixed_size_const_vector_base_a619ec380da3061d80e856f28fe2b2964}{rbegin} (void) const 
+\item 
+\hyperlink{classvct_fixed_size_const_vector_base_acd0a5fe64ff3551c45cebfb2ba81cf10}{const\+\_\+reverse\+\_\+iterator} \hyperlink{classvct_fixed_size_const_vector_base_acd691bb22ac1ca5abf578be37273fb5d}{rend} (void) const 
+\item 
+size\+\_\+type \hyperlink{classvct_fixed_size_const_vector_base_a05beb10f53809905f4db11b0b5b6f651}{size} (void) const 
+\item 
+size\+\_\+type \hyperlink{classvct_fixed_size_const_vector_base_a50473c70f34bcab8e01ba2eaeef69813}{max\+\_\+size} (void) const 
+\item 
+difference\+\_\+type \hyperlink{classvct_fixed_size_const_vector_base_ac1cbc7509e0cc11b011acc63f2584331}{stride} (void) const 
+\item 
+bool \hyperlink{classvct_fixed_size_const_vector_base_aed78a0e4e2c5119bfb92d53bedb572e2}{empty} (void) const 
+\item 
+const\+\_\+reference \hyperlink{classvct_fixed_size_const_vector_base_a54c324bad074d2c2ca7bfadcda0eba3d}{operator\mbox{[}$\,$\mbox{]}} (size\+\_\+type index) const 
+\item 
+const\+\_\+reference \hyperlink{classvct_fixed_size_const_vector_base_ae5a13bd07071fd5338c87d13ba385b33}{at} (size\+\_\+type index) const   throw (std\+::out\+\_\+of\+\_\+range)
+\item 
+const\+\_\+reference \hyperlink{classvct_fixed_size_const_vector_base_a7e21b648dfa6753525587c1b5b45d16e}{operator()} (size\+\_\+type index) const   throw (std\+::out\+\_\+of\+\_\+range)
+\item 
+const\+\_\+reference \hyperlink{classvct_fixed_size_const_vector_base_a74c07af6ecdfcd5b83eb7c1296d05daa}{Element} (size\+\_\+type index) const 
+\item 
+const\+\_\+pointer \hyperlink{classvct_fixed_size_const_vector_base_a86ebcd642499eea0d64454a5ac944fcd}{Pointer} (size\+\_\+type index=0) const 
+\item 
+bool \hyperlink{classvct_fixed_size_const_vector_base_a4a1e8dbbfb96f4da5392d5bac6574f2a}{Valid\+Index} (size\+\_\+type index) const 
+\item 
+{\footnotesize template$<$stride\+\_\+type \+\_\+\+\_\+stride, class \+\_\+\+\_\+data\+Ptr\+Type $>$ }\\value\+\_\+type \hyperlink{classvct_fixed_size_const_vector_base_ad33a3f89474cac17f0f917a0725106da}{Dot\+Product} (const \hyperlink{classvct_fixed_size_const_vector_base}{vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+\+\_\+stride, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type $>$ \&other\+Vector) const 
+\item 
+std\+::string \hyperlink{classvct_fixed_size_const_vector_base_ab28c36ca88b582037a197d5b37fb6a20}{To\+String} (void) const 
+\item 
+void \hyperlink{classvct_fixed_size_const_vector_base_abec81757524558b2c393646313f31163}{To\+Stream} (std\+::ostream \&output\+Stream) const 
+\item 
+void \hyperlink{classvct_fixed_size_const_vector_base_aa413d5dd8a954fe8e36b21299f5181aa}{To\+Stream\+Raw} (std\+::ostream \&output\+Stream, const char delimiter= \textquotesingle{} \textquotesingle{}, bool header\+Only=false, const std\+::string \&header\+Prefix=\char`\"{}\char`\"{}) const 
+\item 
+void \hyperlink{classvct_fixed_size_const_vector_base_a3b7b8125332df76aec10b7053339e691}{Serialize\+Raw} (std\+::ostream \&output\+Stream) const 
+\end{DoxyCompactItemize}
+\begin{Indent}{\bf Size dependant methods.}\par
+{\em The following methods are size dependant, i.\+e. don\textquotesingle{}t necessarily mean anything for all sizes of vector. For example, using the \hyperlink{classvct_fixed_size_const_vector_base_a7512e09f861dd14a4953184ba21bea65}{Z()} method on a vector of size 2 shouldn\textquotesingle{}t be allowed. It would have been possible to check these errors at compilation time, but this would require an overhead of code and therefore execution time which is not worth it. Therefore, we are using and \hyperlink{group__cisst_common_ga6a12b7031ea38ac5bf5937b8633c97ff}{C\+M\+N\+\_\+\+A\+S\+S\+E\+R\+T()} to check that the template parameter \+\_\+size is valid
+
+\begin{DoxyNote}{Note}
+Using \hyperlink{group__cisst_common_ga6a12b7031ea38ac5bf5937b8633c97ff}{C\+M\+N\+\_\+\+A\+S\+S\+E\+R\+T} on a template parameter still allows the compiler to perform some optimization, which would be harder if \hyperlink{group__cisst_common_ga6a12b7031ea38ac5bf5937b8633c97ff}{C\+M\+N\+\_\+\+A\+S\+S\+E\+R\+T} was testing a method paramater. 
+\end{DoxyNote}
+}\begin{DoxyCompactItemize}
+\item 
+const value\+\_\+type \& \hyperlink{classvct_fixed_size_const_vector_base_ab4c73c8ed62e07d70b60f176fec6a6a4}{X} (void) const 
+\item 
+const value\+\_\+type \& \hyperlink{classvct_fixed_size_const_vector_base_acd49ac5b86c51004025038feaee9b207}{Y} (void) const 
+\item 
+const value\+\_\+type \& \hyperlink{classvct_fixed_size_const_vector_base_a7512e09f861dd14a4953184ba21bea65}{Z} (void) const 
+\item 
+const value\+\_\+type \& \hyperlink{classvct_fixed_size_const_vector_base_a9159e8044eaf25afd14bf29b4896cb2e}{W} (void) const 
+\item 
+\hyperlink{classvct_fixed_size_const_vector_ref}{vct\+Fixed\+Size\+Const\+Vector\+Ref}$<$ \+\_\+element\+Type, 2, \+\_\+stride $>$ \hyperlink{classvct_fixed_size_const_vector_base_a37dd8ddaeed8782eba28c4ed33df976c}{X\+Y} (void) const 
+\item 
+\hyperlink{classvct_fixed_size_const_vector_ref}{vct\+Fixed\+Size\+Const\+Vector\+Ref}$<$ \+\_\+element\+Type, 2, 2 $\ast$\+\_\+stride $>$ \hyperlink{classvct_fixed_size_const_vector_base_abfc16233497e3ad6111483a8ec40a317}{X\+Z} (void) const 
+\item 
+\hyperlink{classvct_fixed_size_const_vector_ref}{vct\+Fixed\+Size\+Const\+Vector\+Ref}$<$ \+\_\+element\+Type, 2, 3 $\ast$\+\_\+stride $>$ \hyperlink{classvct_fixed_size_const_vector_base_aaaf0bfafb4c463a8e80529292c78263e}{X\+W} (void) const 
+\item 
+\hyperlink{classvct_fixed_size_const_vector_ref}{vct\+Fixed\+Size\+Const\+Vector\+Ref}$<$ \+\_\+element\+Type, 2, \+\_\+stride $>$ \hyperlink{classvct_fixed_size_const_vector_base_a3b919c98160f6d0b27d114155d24e5d1}{Y\+Z} (void) const 
+\item 
+\hyperlink{classvct_fixed_size_const_vector_ref}{vct\+Fixed\+Size\+Const\+Vector\+Ref}$<$ \+\_\+element\+Type, 2, 2 $\ast$\+\_\+stride $>$ \hyperlink{classvct_fixed_size_const_vector_base_ac1c376d6a306b27fb8cb655f0092d57f}{Y\+W} (void) const 
+\item 
+\hyperlink{classvct_fixed_size_const_vector_ref}{vct\+Fixed\+Size\+Const\+Vector\+Ref}$<$ \+\_\+element\+Type, 2, \+\_\+stride $>$ \hyperlink{classvct_fixed_size_const_vector_base_ae712b316e450452ba6603329c9418237}{Z\+W} (void) const 
+\item 
+\hyperlink{classvct_fixed_size_const_vector_ref}{vct\+Fixed\+Size\+Const\+Vector\+Ref}$<$ \+\_\+element\+Type, 3, \+\_\+stride $>$ \hyperlink{classvct_fixed_size_const_vector_base_ad3c02fe9042d5bb8b4a92e51bb3869da}{X\+Y\+Z} (void) const 
+\item 
+\hyperlink{classvct_fixed_size_const_vector_ref}{vct\+Fixed\+Size\+Const\+Vector\+Ref}$<$ \+\_\+element\+Type, 3, \+\_\+stride $>$ \hyperlink{classvct_fixed_size_const_vector_base_a4c6e3b73735612f6253cb1bbfa0a485f}{Y\+Z\+W} (void) const 
+\item 
+\hyperlink{classvct_fixed_size_const_vector_ref}{vct\+Fixed\+Size\+Const\+Vector\+Ref}$<$ \+\_\+element\+Type, 4, \+\_\+stride $>$ \hyperlink{classvct_fixed_size_const_vector_base_ae2b5ae2687bab88d80caf5becdd8a058}{X\+Y\+Z\+W} (void) const 
+\end{DoxyCompactItemize}
+\end{Indent}
+{\bf }\par
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classvct_fixed_size_const_vector_base_ab7c118dbf79db9194157ced0e4549814}{Row\+Const\+Matrix\+Ref\+Type} \hyperlink{classvct_fixed_size_const_vector_base_aca37c653fd919f86d4c4950ea4ff1737}{As\+Row\+Matrix} (void) const 
+\item 
+\hyperlink{classvct_fixed_size_const_vector_base_a7dd213f3b90969b8c89fd0766cf0a70e}{Col\+Const\+Matrix\+Ref\+Type} \hyperlink{classvct_fixed_size_const_vector_base_ac13901448b8758b416bfa26d5deba10d}{As\+Col\+Matrix} (void) const 
+\end{DoxyCompactItemize}
+
+\begin{Indent}{\bf Incremental operations returning a scalar.}\par
+{\em Compute a scalar from all the elements of the vector. }\begin{DoxyCompactItemize}
+\item 
+value\+\_\+type \hyperlink{classvct_fixed_size_const_vector_base_ac511673c2790b811713df7728f65b5da}{Sum\+Of\+Elements} (void) const 
+\item 
+value\+\_\+type \hyperlink{classvct_fixed_size_const_vector_base_a826fd6b5c97c074d6c0484cc107bb31e}{Product\+Of\+Elements} (void) const 
+\item 
+value\+\_\+type \hyperlink{classvct_fixed_size_const_vector_base_a5a865a5e5eceae4e781620f83efa54b4}{Norm\+Square} (void) const 
+\item 
+Norm\+Type \hyperlink{classvct_fixed_size_const_vector_base_a43f0c7b075985c9ad43df78aa3af48cf}{Norm} (void) const 
+\item 
+bool \hyperlink{classvct_fixed_size_const_vector_base_a137a8c27c0ac4c69d82603d8ccc57ff5}{Is\+Normalized} (\+\_\+element\+Type tolerance=\hyperlink{classcmn_type_traits}{cmn\+Type\+Traits}$<$ \+\_\+element\+Type $>$\+::Tolerance()) const 
+\item 
+value\+\_\+type \hyperlink{classvct_fixed_size_const_vector_base_a24e2d1c86fbfa08de36508830bcd18a5}{L1\+Norm} (void) const 
+\item 
+value\+\_\+type \hyperlink{classvct_fixed_size_const_vector_base_a6cc25d43b07b0e85cebf697f4473013a}{Linf\+Norm} (void) const 
+\item 
+value\+\_\+type \hyperlink{classvct_fixed_size_const_vector_base_ae8a9354f4981167ad4b32ebc46718075}{Max\+Element} (void) const 
+\item 
+value\+\_\+type \hyperlink{classvct_fixed_size_const_vector_base_a3f26bcaaecf71aaf2e4150a1cba75310}{Min\+Element} (void) const 
+\item 
+value\+\_\+type \hyperlink{classvct_fixed_size_const_vector_base_adec6fb220a9ea13e9fb0ecae8ad1785b}{Max\+Abs\+Element} (void) const 
+\item 
+value\+\_\+type \hyperlink{classvct_fixed_size_const_vector_base_a841b82fc4780be7d5c992b9d75f4ccbc}{Min\+Abs\+Element} (void) const 
+\item 
+void \hyperlink{classvct_fixed_size_const_vector_base_a53a918269efce35fdb84addc8d694b2d}{Min\+And\+Max\+Element} (value\+\_\+type \&min\+Element, value\+\_\+type \&max\+Element) const 
+\item 
+bool \hyperlink{classvct_fixed_size_const_vector_base_ada9b5030f7256d8ffb7aaf314db06e92}{Is\+Positive} (void) const 
+\item 
+bool \hyperlink{classvct_fixed_size_const_vector_base_a0dd3b76cdec4fa3b54816cb878c5cb28}{Is\+Non\+Negative} (void) const 
+\item 
+bool \hyperlink{classvct_fixed_size_const_vector_base_a4158db8c718b0fe65cd9a2328d9cac0b}{Is\+Non\+Positive} (void) const 
+\item 
+bool \hyperlink{classvct_fixed_size_const_vector_base_a9306ec231b0528ef5b881461ea1ff8d8}{Is\+Negative} (void) const 
+\item 
+bool \hyperlink{classvct_fixed_size_const_vector_base_a302eaee9662d01603781e2f29bdaaebe}{All} (void) const 
+\item 
+bool \hyperlink{classvct_fixed_size_const_vector_base_aa3a86b1d3cae13dae3c33bd8541f4406}{Any} (void) const 
+\item 
+bool \hyperlink{classvct_fixed_size_const_vector_base_a7cf413f6effa64e31fe306f9ac11a97d}{Is\+Finite} (void) const 
+\item 
+bool \hyperlink{classvct_fixed_size_const_vector_base_a542964b8e6a6e430b24a50db0b9bf591}{Has\+Na\+N} (void) const 
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Storage format.}\par
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classvct_fixed_size_const_vector_base_ae3938e1b5a4e3822889f584568ba6629}{Is\+Compact} (void) const 
+\item 
+bool \hyperlink{classvct_fixed_size_const_vector_base_a29f89413c10a8bc6f266d43baa57b758}{Is\+Fortran} (void) const 
+\item 
+{\footnotesize template$<$size\+\_\+type \+\_\+\+\_\+size, stride\+\_\+type \+\_\+\+\_\+stride, class \+\_\+\+\_\+data\+Ptr\+Type $>$ }\\bool \hyperlink{classvct_fixed_size_const_vector_base_a01d4cd7d810371fa09e5e7154fb294bc}{Fast\+Copy\+Compatible} (const \hyperlink{classvct_fixed_size_const_vector_base}{vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+size, \+\_\+\+\_\+stride, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type $>$ \&source) const 
+\item 
+{\footnotesize template$<$class \+\_\+\+\_\+vector\+Owner\+Type $>$ }\\bool \hyperlink{classvct_fixed_size_const_vector_base_ad85b7a0580923858f7bc6aa7bfcc60fb}{Fast\+Copy\+Compatible} (const \hyperlink{classvct_dynamic_const_vector_base}{vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type, value\+\_\+type $>$ \&source) const 
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Elementwise comparisons between vectors.}\par
+{\em Returns the vector of comparison\textquotesingle{}s results. }\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$stride\+\_\+type \+\_\+\+\_\+stride, class \+\_\+\+\_\+data\+Ptr\+Type $>$ }\\bool \hyperlink{classvct_fixed_size_const_vector_base_aa38d2e3dbaa035b37c246dc53ae9bb70}{Equal} (const \hyperlink{classvct_fixed_size_const_vector_base}{vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+\+\_\+stride, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type $>$ \&other\+Vector) const 
+\item 
+{\footnotesize template$<$stride\+\_\+type \+\_\+\+\_\+stride, class \+\_\+\+\_\+data\+Ptr\+Type $>$ }\\bool \hyperlink{classvct_fixed_size_const_vector_base_aca59301cbeb1a7d4c4de2bc0b71ca335}{operator==} (const \hyperlink{classvct_fixed_size_const_vector_base}{vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+\+\_\+stride, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type $>$ \&other\+Vector) const 
+\item 
+{\footnotesize template$<$stride\+\_\+type \+\_\+\+\_\+stride, class \+\_\+\+\_\+data\+Ptr\+Type $>$ }\\bool \hyperlink{classvct_fixed_size_const_vector_base_a0f25ef63a9fd997f96335a895299cba2}{Almost\+Equal} (const \hyperlink{classvct_fixed_size_const_vector_base}{vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+\+\_\+stride, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type $>$ \&other\+Vector, value\+\_\+type tolerance) const 
+\item 
+{\footnotesize template$<$stride\+\_\+type \+\_\+\+\_\+stride, class \+\_\+\+\_\+data\+Ptr\+Type $>$ }\\bool \hyperlink{classvct_fixed_size_const_vector_base_a227427cc3efc30b79cbefac7196e21e3}{Almost\+Equal} (const \hyperlink{classvct_fixed_size_const_vector_base}{vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+\+\_\+stride, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type $>$ \&other\+Vector) const 
+\item 
+{\footnotesize template$<$stride\+\_\+type \+\_\+\+\_\+stride, class \+\_\+\+\_\+data\+Ptr\+Type $>$ }\\bool \hyperlink{classvct_fixed_size_const_vector_base_ac918c482412a22251943dc80dc085a9a}{Not\+Equal} (const \hyperlink{classvct_fixed_size_const_vector_base}{vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+\+\_\+stride, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type $>$ \&other\+Vector) const 
+\item 
+{\footnotesize template$<$stride\+\_\+type \+\_\+\+\_\+stride, class \+\_\+\+\_\+data\+Ptr\+Type $>$ }\\bool \hyperlink{classvct_fixed_size_const_vector_base_a9cc58a2f86353b2c8d613ddf18442f0c}{operator!=} (const \hyperlink{classvct_fixed_size_const_vector_base}{vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+\+\_\+stride, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type $>$ \&other\+Vector) const 
+\item 
+{\footnotesize template$<$stride\+\_\+type \+\_\+\+\_\+stride, class \+\_\+\+\_\+data\+Ptr\+Type $>$ }\\bool \hyperlink{classvct_fixed_size_const_vector_base_a6f1e9c515d2702d34579bf02ec9b20af}{Lesser} (const \hyperlink{classvct_fixed_size_const_vector_base}{vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+\+\_\+stride, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type $>$ \&other\+Vector) const 
+\item 
+{\footnotesize template$<$stride\+\_\+type \+\_\+\+\_\+stride, class \+\_\+\+\_\+data\+Ptr\+Type $>$ }\\bool \hyperlink{classvct_fixed_size_const_vector_base_a4b261299156a998aaacaad3965cad247}{Lesser\+Or\+Equal} (const \hyperlink{classvct_fixed_size_const_vector_base}{vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+\+\_\+stride, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type $>$ \&other\+Vector) const 
+\item 
+{\footnotesize template$<$stride\+\_\+type \+\_\+\+\_\+stride, class \+\_\+\+\_\+data\+Ptr\+Type $>$ }\\bool \hyperlink{classvct_fixed_size_const_vector_base_a96afecfdcad63e7c4726061da0b0be35}{Greater} (const \hyperlink{classvct_fixed_size_const_vector_base}{vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+\+\_\+stride, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type $>$ \&other\+Vector) const 
+\item 
+{\footnotesize template$<$stride\+\_\+type \+\_\+\+\_\+stride, class \+\_\+\+\_\+data\+Ptr\+Type $>$ }\\bool \hyperlink{classvct_fixed_size_const_vector_base_a51d3b98adfbe986f056857c7fa5beada}{Greater\+Or\+Equal} (const \hyperlink{classvct_fixed_size_const_vector_base}{vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+\+\_\+stride, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type $>$ \&other\+Vector) const 
+\item 
+{\footnotesize template$<$stride\+\_\+type \+\_\+\+\_\+stride, class \+\_\+\+\_\+data\+Ptr\+Type $>$ }\\\hyperlink{classvct_fixed_size_const_vector_base_a15899465a75a2f78965bdcf2d6e34bc5}{Bool\+Vector\+Value\+Type} \hyperlink{classvct_fixed_size_const_vector_base_a5b1ef9c19b953cba03dfa4679fa891de}{Elementwise\+Equal} (const \hyperlink{classvct_fixed_size_const_vector_base}{vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+\+\_\+stride, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type $>$ \&other\+Vector) const 
+\item 
+{\footnotesize template$<$stride\+\_\+type \+\_\+\+\_\+stride, class \+\_\+\+\_\+data\+Ptr\+Type $>$ }\\\hyperlink{classvct_fixed_size_const_vector_base_a15899465a75a2f78965bdcf2d6e34bc5}{Bool\+Vector\+Value\+Type} \hyperlink{classvct_fixed_size_const_vector_base_affd4520d21b356049664b7b696c73e51}{Elementwise\+Not\+Equal} (const \hyperlink{classvct_fixed_size_const_vector_base}{vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+\+\_\+stride, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type $>$ \&other\+Vector) const 
+\item 
+{\footnotesize template$<$stride\+\_\+type \+\_\+\+\_\+stride, class \+\_\+\+\_\+data\+Ptr\+Type $>$ }\\\hyperlink{classvct_fixed_size_const_vector_base_a15899465a75a2f78965bdcf2d6e34bc5}{Bool\+Vector\+Value\+Type} \hyperlink{classvct_fixed_size_const_vector_base_a6858554efb3024dcac960994b3762eed}{Elementwise\+Lesser} (const \hyperlink{classvct_fixed_size_const_vector_base}{vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+\+\_\+stride, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type $>$ \&other\+Vector) const 
+\item 
+{\footnotesize template$<$stride\+\_\+type \+\_\+\+\_\+stride, class \+\_\+\+\_\+data\+Ptr\+Type $>$ }\\\hyperlink{classvct_fixed_size_const_vector_base_a15899465a75a2f78965bdcf2d6e34bc5}{Bool\+Vector\+Value\+Type} \hyperlink{classvct_fixed_size_const_vector_base_a09107ff818ef0b09a8012db430a1be32}{Elementwise\+Lesser\+Or\+Equal} (const \hyperlink{classvct_fixed_size_const_vector_base}{vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+\+\_\+stride, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type $>$ \&other\+Vector) const 
+\item 
+{\footnotesize template$<$stride\+\_\+type \+\_\+\+\_\+stride, class \+\_\+\+\_\+data\+Ptr\+Type $>$ }\\\hyperlink{classvct_fixed_size_const_vector_base_a15899465a75a2f78965bdcf2d6e34bc5}{Bool\+Vector\+Value\+Type} \hyperlink{classvct_fixed_size_const_vector_base_aecfe9c83072108ad25e703d123308bda}{Elementwise\+Greater} (const \hyperlink{classvct_fixed_size_const_vector_base}{vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+\+\_\+stride, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type $>$ \&other\+Vector) const 
+\item 
+{\footnotesize template$<$stride\+\_\+type \+\_\+\+\_\+stride, class \+\_\+\+\_\+data\+Ptr\+Type $>$ }\\\hyperlink{classvct_fixed_size_const_vector_base_a15899465a75a2f78965bdcf2d6e34bc5}{Bool\+Vector\+Value\+Type} \hyperlink{classvct_fixed_size_const_vector_base_a5c06998807817166a95ecb4c39672a45}{Elementwise\+Greater\+Or\+Equal} (const \hyperlink{classvct_fixed_size_const_vector_base}{vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+\+\_\+stride, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type $>$ \&other\+Vector) const 
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Elementwise comparisons between a vector and a scalar.}\par
+{\em Returns the vector of comparison\textquotesingle{}s results. }\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classvct_fixed_size_const_vector_base_a3f17febef880688b00147208cdd1eb15}{Equal} (const value\+\_\+type \&scalar) const 
+\item 
+bool \hyperlink{classvct_fixed_size_const_vector_base_a3dc305977c625937fd0809ae2b171d8c}{operator==} (const value\+\_\+type \&scalar) const 
+\item 
+bool \hyperlink{classvct_fixed_size_const_vector_base_ab33e5ab35918ea803a5c94f3f9ee7a9e}{Not\+Equal} (const value\+\_\+type \&scalar) const 
+\item 
+bool \hyperlink{classvct_fixed_size_const_vector_base_a22f3b10fd91364fa701b9a775436fb89}{operator!=} (const value\+\_\+type \&scalar) const 
+\item 
+bool \hyperlink{classvct_fixed_size_const_vector_base_ac047078e830c5fbe4fcfa01b6930026d}{Lesser} (const value\+\_\+type \&scalar) const 
+\item 
+bool \hyperlink{classvct_fixed_size_const_vector_base_a992df32d08f73a6c97f0ff49796fd940}{Lesser\+Or\+Equal} (const value\+\_\+type \&scalar) const 
+\item 
+bool \hyperlink{classvct_fixed_size_const_vector_base_aa08707e079adf289afb2a381baee6878}{Greater} (const value\+\_\+type \&scalar) const 
+\item 
+bool \hyperlink{classvct_fixed_size_const_vector_base_a59ac073f92ab479bb1292ff336b9dcdb}{Greater\+Or\+Equal} (const value\+\_\+type \&scalar) const 
+\item 
+\hyperlink{classvct_fixed_size_const_vector_base_a15899465a75a2f78965bdcf2d6e34bc5}{Bool\+Vector\+Value\+Type} \hyperlink{classvct_fixed_size_const_vector_base_a0e410fd6fc061481880f6052f6af3aa0}{Elementwise\+Equal} (const value\+\_\+type \&scalar) const 
+\item 
+\hyperlink{classvct_fixed_size_const_vector_base_a15899465a75a2f78965bdcf2d6e34bc5}{Bool\+Vector\+Value\+Type} \hyperlink{classvct_fixed_size_const_vector_base_ab00e79ffdc3b73f4c13732d2b195a8e3}{Elementwise\+Not\+Equal} (const value\+\_\+type \&scalar) const 
+\item 
+\hyperlink{classvct_fixed_size_const_vector_base_a15899465a75a2f78965bdcf2d6e34bc5}{Bool\+Vector\+Value\+Type} \hyperlink{classvct_fixed_size_const_vector_base_a822a3c606a54eff1d9817c61b096e51f}{Elementwise\+Lesser} (const value\+\_\+type \&scalar) const 
+\item 
+\hyperlink{classvct_fixed_size_const_vector_base_a15899465a75a2f78965bdcf2d6e34bc5}{Bool\+Vector\+Value\+Type} \hyperlink{classvct_fixed_size_const_vector_base_a392251a56025cd31edca7874e62024dd}{Elementwise\+Lesser\+Or\+Equal} (const value\+\_\+type \&scalar) const 
+\item 
+\hyperlink{classvct_fixed_size_const_vector_base_a15899465a75a2f78965bdcf2d6e34bc5}{Bool\+Vector\+Value\+Type} \hyperlink{classvct_fixed_size_const_vector_base_a6b10ccea0fc8949b4748531b68a0e63b}{Elementwise\+Greater} (const value\+\_\+type \&scalar) const 
+\item 
+\hyperlink{classvct_fixed_size_const_vector_base_a15899465a75a2f78965bdcf2d6e34bc5}{Bool\+Vector\+Value\+Type} \hyperlink{classvct_fixed_size_const_vector_base_a3c602bf31a8f0db3bcdce403ed8844bd}{Elementwise\+Greater\+Or\+Equal} (const value\+\_\+type \&scalar) const 
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Unary elementwise operations.}\par
+{\em Returns the result of vector.\+op(). }\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classvct_fixed_size_const_vector_base_a4de94a741a6bb9046e05754c32475ecd}{Vector\+Value\+Type} \hyperlink{classvct_fixed_size_const_vector_base_a21a96c3a0ab1e49ff3a944587a31305d}{Abs} (void) const 
+\item 
+\hyperlink{classvct_fixed_size_const_vector_base_a4de94a741a6bb9046e05754c32475ecd}{Vector\+Value\+Type} \hyperlink{classvct_fixed_size_const_vector_base_aef8fcf83fd0ecf62ef865c865177da28}{Negation} (void) const 
+\item 
+\hyperlink{classvct_fixed_size_const_vector_base_a4de94a741a6bb9046e05754c32475ecd}{Vector\+Value\+Type} \hyperlink{classvct_fixed_size_const_vector_base_aff9b482b5a27910cc314cc43385bc2f4}{Floor} (void) const 
+\item 
+\hyperlink{classvct_fixed_size_const_vector_base_a4de94a741a6bb9046e05754c32475ecd}{Vector\+Value\+Type} \hyperlink{classvct_fixed_size_const_vector_base_aa566ac36b1faa0ff5659e32c508c960c}{Ceil} (void) const 
+\item 
+\hyperlink{classvct_fixed_size_const_vector_base_a4de94a741a6bb9046e05754c32475ecd}{Vector\+Value\+Type} \hyperlink{classvct_fixed_size_const_vector_base_a5e759e9dd867d0f2752f614716087d6a}{Normalized} (void) const   throw (std\+::runtime\+\_\+error)
+\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classvct_fixed_size_const_vector_base_a3fb1938773c324fbb7c33c0304050dd8}{Throw\+Unless\+Valid\+Index} (size\+\_\+type index) const   throw (std\+::out\+\_\+of\+\_\+range)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\+\_\+data\+Ptr\+Type \hyperlink{classvct_fixed_size_const_vector_base_ad5bab7d48e82872547b8838ef74980ee}{Data}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$class vct\+Fixed\+Size\+Const\+Vector\+Base$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$}
+
+A template for a fixed length vector with fixed spacing in memory. 
+
+The vector can be defined over an existing memory block, or define its own memory block. The class\textquotesingle{}s methods follow the S\+T\+L specifications for Random Access Container. It uses \hyperlink{classvct_fixed_size_vector_traits}{vct\+Fixed\+Size\+Vector\+Traits} to define the types required by the S\+T\+L interface.
+
+This class defines a read-\/only memory vector. The read/write vector is derived from this class (compare with \hyperlink{classvct_fixed_stride_vector_const_iterator}{vct\+Fixed\+Stride\+Vector\+Const\+Iterator}). Therefore, all the methods of this class are const. The non-\/const vector and methods are defined in \hyperlink{classvct_fixed_size_vector_base}{vct\+Fixed\+Size\+Vector\+Base}.
+
+Vector indexing is zero-\/based.
+
+The method provided for the compatibility with the S\+T\+L containers start with a lower case. Other methods start with a capitalilized letter (see C\+I\+S\+S\+T naming convention).
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+element\+Type} & the type of element in the vector.\\
+\hline
+{\em \+\_\+size} & the number of elements that the vector provides access to.\\
+\hline
+{\em \+\_\+stride} & the spacing between the elements in the memory block. \+\_\+stride=1 means that the elements are next to each other. \+\_\+stride=2 means they are separated by one, and so on.\\
+\hline
+{\em \+\_\+data\+Ptr\+Type} & the type of object that defines the vector. This may be an element pointer of an acutal fixed-\/size C-\/style array type.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classvct_fixed_stride_vector_const_iterator}{vct\+Fixed\+Stride\+Vector\+Const\+Iterator} \hyperlink{classvct_fixed_size_vector_traits}{vct\+Fixed\+Size\+Vector\+Traits} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classvct_fixed_size_const_vector_base_a15899465a75a2f78965bdcf2d6e34bc5}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!Bool\+Vector\+Value\+Type@{Bool\+Vector\+Value\+Type}}
+\index{Bool\+Vector\+Value\+Type@{Bool\+Vector\+Value\+Type}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{Bool\+Vector\+Value\+Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ typedef {\bf vct\+Fixed\+Size\+Vector}$<$bool, \+\_\+size$>$ {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::{\bf Bool\+Vector\+Value\+Type}}\label{classvct_fixed_size_const_vector_base_a15899465a75a2f78965bdcf2d6e34bc5}
+The type of a vector of booleans returned from operations on this object, e.\+g., Elementwise\+Equal. \hypertarget{classvct_fixed_size_const_vector_base_a7dd213f3b90969b8c89fd0766cf0a70e}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!Col\+Const\+Matrix\+Ref\+Type@{Col\+Const\+Matrix\+Ref\+Type}}
+\index{Col\+Const\+Matrix\+Ref\+Type@{Col\+Const\+Matrix\+Ref\+Type}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{Col\+Const\+Matrix\+Ref\+Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ typedef {\bf vct\+Fixed\+Size\+Const\+Matrix\+Ref}$<$\+\_\+element\+Type, \+\_\+size, 1, \+\_\+stride, \+\_\+stride$\ast$\+\_\+size$>$ {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::{\bf Col\+Const\+Matrix\+Ref\+Type}}\label{classvct_fixed_size_const_vector_base_a7dd213f3b90969b8c89fd0766cf0a70e}
+type of overlay column matrix over this sequence \hypertarget{classvct_fixed_size_const_vector_base_ac2454662f16abd75fdef4ce8d2a00a48}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!Col\+Matrix\+Ref\+Type@{Col\+Matrix\+Ref\+Type}}
+\index{Col\+Matrix\+Ref\+Type@{Col\+Matrix\+Ref\+Type}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{Col\+Matrix\+Ref\+Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ typedef {\bf vct\+Fixed\+Size\+Matrix\+Ref}$<$\+\_\+element\+Type, \+\_\+size, 1, \+\_\+stride, \+\_\+stride$\ast$\+\_\+size$>$ {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::{\bf Col\+Matrix\+Ref\+Type}}\label{classvct_fixed_size_const_vector_base_ac2454662f16abd75fdef4ce8d2a00a48}
+\hypertarget{classvct_fixed_size_const_vector_base_abc547e0542bb6f7d92876a56c7ea5cdc}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!const\+\_\+iterator@{const\+\_\+iterator}}
+\index{const\+\_\+iterator@{const\+\_\+iterator}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{const\+\_\+iterator}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ typedef {\bf Vector\+Traits\+::const\+\_\+iterator} {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::{\bf const\+\_\+iterator}}\label{classvct_fixed_size_const_vector_base_abc547e0542bb6f7d92876a56c7ea5cdc}
+Const iterator on the elements of the vector. \hypertarget{classvct_fixed_size_const_vector_base_acd0a5fe64ff3551c45cebfb2ba81cf10}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!const\+\_\+reverse\+\_\+iterator@{const\+\_\+reverse\+\_\+iterator}}
+\index{const\+\_\+reverse\+\_\+iterator@{const\+\_\+reverse\+\_\+iterator}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{const\+\_\+reverse\+\_\+iterator}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ typedef {\bf Vector\+Traits\+::const\+\_\+reverse\+\_\+iterator} {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::{\bf const\+\_\+reverse\+\_\+iterator}}\label{classvct_fixed_size_const_vector_base_acd0a5fe64ff3551c45cebfb2ba81cf10}
+Const reverse iterator on the elements of the vector. \hypertarget{classvct_fixed_size_const_vector_base_aaf3accb7cec5765478b5d8fa39c22408}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!Copy\+Type@{Copy\+Type}}
+\index{Copy\+Type@{Copy\+Type}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{Copy\+Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ typedef {\bf vct\+Fixed\+Size\+Vector}$<$\+\_\+element\+Type, \+\_\+size$>$ {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::{\bf Copy\+Type}}\label{classvct_fixed_size_const_vector_base_aaf3accb7cec5765478b5d8fa39c22408}
+The type used to create a copy. \hypertarget{classvct_fixed_size_const_vector_base_ad0ba9b13bb2515695b4e44290bdbaa5d}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!iterator@{iterator}}
+\index{iterator@{iterator}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{iterator}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ typedef {\bf Vector\+Traits\+::iterator} {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::{\bf iterator}}\label{classvct_fixed_size_const_vector_base_ad0ba9b13bb2515695b4e44290bdbaa5d}
+Iterator on the elements of the vector. \hypertarget{classvct_fixed_size_const_vector_base_ae22e8ced509e202d00620f384ac3a5b2}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!reverse\+\_\+iterator@{reverse\+\_\+iterator}}
+\index{reverse\+\_\+iterator@{reverse\+\_\+iterator}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{reverse\+\_\+iterator}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ typedef {\bf Vector\+Traits\+::reverse\+\_\+iterator} {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::{\bf reverse\+\_\+iterator}}\label{classvct_fixed_size_const_vector_base_ae22e8ced509e202d00620f384ac3a5b2}
+Reverse iterator on the elements of the vector. \hypertarget{classvct_fixed_size_const_vector_base_ab7c118dbf79db9194157ced0e4549814}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!Row\+Const\+Matrix\+Ref\+Type@{Row\+Const\+Matrix\+Ref\+Type}}
+\index{Row\+Const\+Matrix\+Ref\+Type@{Row\+Const\+Matrix\+Ref\+Type}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{Row\+Const\+Matrix\+Ref\+Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ typedef {\bf vct\+Fixed\+Size\+Const\+Matrix\+Ref}$<$\+\_\+element\+Type, 1, \+\_\+size, \+\_\+stride$\ast$\+\_\+size,\+\_\+stride$>$ {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::{\bf Row\+Const\+Matrix\+Ref\+Type}}\label{classvct_fixed_size_const_vector_base_ab7c118dbf79db9194157ced0e4549814}
+type of overlay row matrix over this sequence \hypertarget{classvct_fixed_size_const_vector_base_a1f9ff7c6b2b3f98c51d1bf3eefdfbd32}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!Row\+Matrix\+Ref\+Type@{Row\+Matrix\+Ref\+Type}}
+\index{Row\+Matrix\+Ref\+Type@{Row\+Matrix\+Ref\+Type}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{Row\+Matrix\+Ref\+Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ typedef {\bf vct\+Fixed\+Size\+Matrix\+Ref}$<$\+\_\+element\+Type, 1, \+\_\+size, \+\_\+stride$\ast$\+\_\+size, \+\_\+stride$>$ {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::{\bf Row\+Matrix\+Ref\+Type}}\label{classvct_fixed_size_const_vector_base_a1f9ff7c6b2b3f98c51d1bf3eefdfbd32}
+\hypertarget{classvct_fixed_size_const_vector_base_a071063bc4fa43112cc287b2dbef53180}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!This\+Type@{This\+Type}}
+\index{This\+Type@{This\+Type}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{This\+Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ typedef {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$\+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type$>$ {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::{\bf This\+Type}}\label{classvct_fixed_size_const_vector_base_a071063bc4fa43112cc287b2dbef53180}
+Type of the vector itself. \hypertarget{classvct_fixed_size_const_vector_base_ac47f6db624303dee621bca2ec51aa75e}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!Vector\+Traits@{Vector\+Traits}}
+\index{Vector\+Traits@{Vector\+Traits}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{Vector\+Traits}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ typedef {\bf vct\+Fixed\+Size\+Vector\+Traits}$<$\+\_\+element\+Type, \+\_\+size, \+\_\+stride$>$ {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::{\bf Vector\+Traits}}\label{classvct_fixed_size_const_vector_base_ac47f6db624303dee621bca2ec51aa75e}
+Traits used for all useful types related to a \hyperlink{classvct_fixed_size_vector}{vct\+Fixed\+Size\+Vector}. \hypertarget{classvct_fixed_size_const_vector_base_a4de94a741a6bb9046e05754c32475ecd}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!Vector\+Value\+Type@{Vector\+Value\+Type}}
+\index{Vector\+Value\+Type@{Vector\+Value\+Type}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{Vector\+Value\+Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ typedef {\bf vct\+Fixed\+Size\+Vector}$<$\+\_\+element\+Type, \+\_\+size$>$ {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::{\bf Vector\+Value\+Type}}\label{classvct_fixed_size_const_vector_base_a4de94a741a6bb9046e05754c32475ecd}
+The type of a vector returned by value from operations on this object 
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classvct_fixed_size_const_vector_base_abce8a0d5a26d7343df60ea28ccf38626}{}\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ anonymous enum}\label{classvct_fixed_size_const_vector_base_abce8a0d5a26d7343df60ea28ccf38626}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{S\+I\+Z\+E@{S\+I\+Z\+E}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!S\+I\+Z\+E@{S\+I\+Z\+E}}\item[{\em 
+\hypertarget{classvct_fixed_size_const_vector_base_abce8a0d5a26d7343df60ea28ccf38626ac440f88d775ff77d03e1a484a213dcfe}{}S\+I\+Z\+E\label{classvct_fixed_size_const_vector_base_abce8a0d5a26d7343df60ea28ccf38626ac440f88d775ff77d03e1a484a213dcfe}
+}]\end{description}
+\end{Desc}
+\hypertarget{classvct_fixed_size_const_vector_base_a8b833ecc64bf9196c1a89a56d6f11ebb}{}\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ anonymous enum}\label{classvct_fixed_size_const_vector_base_a8b833ecc64bf9196c1a89a56d6f11ebb}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{S\+T\+R\+I\+D\+E@{S\+T\+R\+I\+D\+E}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!S\+T\+R\+I\+D\+E@{S\+T\+R\+I\+D\+E}}\item[{\em 
+\hypertarget{classvct_fixed_size_const_vector_base_a8b833ecc64bf9196c1a89a56d6f11ebbaddc2fa94f972a3bf4df3a35bec4bdc48}{}S\+T\+R\+I\+D\+E\label{classvct_fixed_size_const_vector_base_a8b833ecc64bf9196c1a89a56d6f11ebbaddc2fa94f972a3bf4df3a35bec4bdc48}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classvct_fixed_size_const_vector_base_a21a96c3a0ab1e49ff3a944587a31305d}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!Abs@{Abs}}
+\index{Abs@{Abs}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{Abs}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type , class \+\_\+data\+Ptr\+Type $>$ {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::{\bf Vector\+Value\+Type} {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::Abs (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_fixed_size_const_vector_base_a21a96c3a0ab1e49ff3a944587a31305d}
+Unary elementwise operations on a vector. For each element of the vector \char`\"{}this\char`\"{}, performs $ this[i] \leftarrow op(otherVector[i])$ where $op$ can calculate the absolute value (Abs), the opposite (Negation) or the normalized version (Normalized).
+
+\begin{DoxyReturn}{Returns}
+A new vector. 
+\end{DoxyReturn}
+\hypertarget{classvct_fixed_size_const_vector_base_a302eaee9662d01603781e2f29bdaaebe}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!All@{All}}
+\index{All@{All}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{All}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ bool {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::All (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_fixed_size_const_vector_base_a302eaee9662d01603781e2f29bdaaebe}
+Return true if all the elements of this vector are nonzero, false otherwise \hypertarget{classvct_fixed_size_const_vector_base_a0f25ef63a9fd997f96335a895299cba2}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!Almost\+Equal@{Almost\+Equal}}
+\index{Almost\+Equal@{Almost\+Equal}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{Almost\+Equal}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ template$<$stride\+\_\+type \+\_\+\+\_\+stride, class \+\_\+\+\_\+data\+Ptr\+Type $>$ bool {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::Almost\+Equal (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+\+\_\+stride, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type $>$ \&}]{other\+Vector, }
+\item[{value\+\_\+type}]{tolerance}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_fixed_size_const_vector_base_a0f25ef63a9fd997f96335a895299cba2}
+\hypertarget{classvct_fixed_size_const_vector_base_a227427cc3efc30b79cbefac7196e21e3}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!Almost\+Equal@{Almost\+Equal}}
+\index{Almost\+Equal@{Almost\+Equal}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{Almost\+Equal}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ template$<$stride\+\_\+type \+\_\+\+\_\+stride, class \+\_\+\+\_\+data\+Ptr\+Type $>$ bool {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::Almost\+Equal (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+\+\_\+stride, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type $>$ \&}]{other\+Vector}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_fixed_size_const_vector_base_a227427cc3efc30b79cbefac7196e21e3}
+\hypertarget{classvct_fixed_size_const_vector_base_aa3a86b1d3cae13dae3c33bd8541f4406}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!Any@{Any}}
+\index{Any@{Any}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{Any}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ bool {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::Any (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_fixed_size_const_vector_base_aa3a86b1d3cae13dae3c33bd8541f4406}
+Return true if any element of this vector is nonzero, false otherwise \hypertarget{classvct_fixed_size_const_vector_base_ac13901448b8758b416bfa26d5deba10d}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!As\+Col\+Matrix@{As\+Col\+Matrix}}
+\index{As\+Col\+Matrix@{As\+Col\+Matrix}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{As\+Col\+Matrix}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ {\bf Col\+Const\+Matrix\+Ref\+Type} {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::As\+Col\+Matrix (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_fixed_size_const_vector_base_ac13901448b8758b416bfa26d5deba10d}
+\hypertarget{classvct_fixed_size_const_vector_base_aca37c653fd919f86d4c4950ea4ff1737}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!As\+Row\+Matrix@{As\+Row\+Matrix}}
+\index{As\+Row\+Matrix@{As\+Row\+Matrix}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{As\+Row\+Matrix}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ {\bf Row\+Const\+Matrix\+Ref\+Type} {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::As\+Row\+Matrix (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_fixed_size_const_vector_base_aca37c653fd919f86d4c4950ea4ff1737}
+Create an overlay matrix (Matrix\+Ref) on top of this vector and return it. \hypertarget{classvct_fixed_size_const_vector_base_ae5a13bd07071fd5338c87d13ba385b33}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!at@{at}}
+\index{at@{at}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{at}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ const\+\_\+reference {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::at (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+type}]{index}
+\end{DoxyParamCaption}
+) const throw  std\+::out\+\_\+of\+\_\+range) \hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_fixed_size_const_vector_base_ae5a13bd07071fd5338c87d13ba385b33}
+Access an element by index (const). Compare with std\+::vector\+::at(). This method can be a handy substitute for the overloaded operator \mbox{[}\mbox{]} when operator overloading is unavailable or inconvenient. \begin{DoxyReturn}{Returns}
+a const reference to element\mbox{[}index\mbox{]} 
+\end{DoxyReturn}
+\hypertarget{classvct_fixed_size_const_vector_base_a78e79d048c2a069fa331a10c7c497806}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!begin@{begin}}
+\index{begin@{begin}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{begin}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ {\bf const\+\_\+iterator} {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::begin (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_fixed_size_const_vector_base_a78e79d048c2a069fa331a10c7c497806}
+Returns a const iterator on the first element (S\+T\+L compatibility). \hypertarget{classvct_fixed_size_const_vector_base_aa566ac36b1faa0ff5659e32c508c960c}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!Ceil@{Ceil}}
+\index{Ceil@{Ceil}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{Ceil}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type , class \+\_\+data\+Ptr\+Type $>$ {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::{\bf Vector\+Value\+Type} {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::Ceil (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_fixed_size_const_vector_base_aa566ac36b1faa0ff5659e32c508c960c}
+\hypertarget{classvct_fixed_size_const_vector_base_ad33a3f89474cac17f0f917a0725106da}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!Dot\+Product@{Dot\+Product}}
+\index{Dot\+Product@{Dot\+Product}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{Dot\+Product}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ template$<$stride\+\_\+type \+\_\+\+\_\+stride, class \+\_\+\+\_\+data\+Ptr\+Type $>$ value\+\_\+type {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::Dot\+Product (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+\+\_\+stride, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type $>$ \&}]{other\+Vector}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_fixed_size_const_vector_base_ad33a3f89474cac17f0f917a0725106da}
+Dot product with another vector {\itshape of the same type and size}
+
+
+\begin{DoxyParams}{Parameters}
+{\em other\+Vector} & second operand of the dot product (\char`\"{}this\char`\"{} is the first operand) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The dot product of this and other\+Vector. 
+\end{DoxyReturn}
+\hypertarget{classvct_fixed_size_const_vector_base_a74c07af6ecdfcd5b83eb7c1296d05daa}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!Element@{Element}}
+\index{Element@{Element}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{Element}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ const\+\_\+reference {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::Element (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+type}]{index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_fixed_size_const_vector_base_a74c07af6ecdfcd5b83eb7c1296d05daa}
+Access an element by index (const). This method allows to access an element without any bounds checking.
+
+\begin{DoxyReturn}{Returns}
+a reference to the element at index 
+\end{DoxyReturn}
+\hypertarget{classvct_fixed_size_const_vector_base_a5b1ef9c19b953cba03dfa4679fa891de}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!Elementwise\+Equal@{Elementwise\+Equal}}
+\index{Elementwise\+Equal@{Elementwise\+Equal}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{Elementwise\+Equal}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ template$<$stride\+\_\+type \+\_\+\+\_\+stride, class \+\_\+\+\_\+data\+Ptr\+Type $>$ {\bf Bool\+Vector\+Value\+Type} {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::Elementwise\+Equal (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+\+\_\+stride, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type $>$ \&}]{other\+Vector}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_fixed_size_const_vector_base_a5b1ef9c19b953cba03dfa4679fa891de}
+Comparison between two vectors of the same size, containing the same type of elements. The strides and the internal representation (\+\_\+data\+Ptr\+Type) can be different. The comparaison ( $ = \neq < \leq > \geq $) for \hyperlink{classvct_fixed_size_const_vector_base_a5b1ef9c19b953cba03dfa4679fa891de}{Elementwise\+Equal()}, \hyperlink{classvct_fixed_size_const_vector_base_affd4520d21b356049664b7b696c73e51}{Elementwise\+Not\+Equal()}, \hyperlink{classvct_fixed_size_const_vector_base_a6858554efb3024dcac960994b3762eed}{Elementwise\+Lesser()}, \hyperlink{classvct_fixed_size_const_vector_base_a09107ff818ef0b09a8012db430a1be32}{Elementwise\+Lesser\+Or\+Equal()}, \hyperlink{classvct_fixed_size_const_vector_base_aecfe9c83072108ad25e703d123308bda}{Elementwise\+Greater()} or \hyperlink{classvct_fixed_size_const_vector_base_a5c06998807817166a95ecb4c39672a45}{Elementwise\+Greater\+Or\+Equal()} is performed elementwise between the two vectors and stored in a newly created vector. There is no operator provided since the semantic would be ambiguous.
+
+\begin{DoxyReturn}{Returns}
+A vector of booleans. 
+\end{DoxyReturn}
+\hypertarget{classvct_fixed_size_const_vector_base_a0e410fd6fc061481880f6052f6af3aa0}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!Elementwise\+Equal@{Elementwise\+Equal}}
+\index{Elementwise\+Equal@{Elementwise\+Equal}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{Elementwise\+Equal}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ {\bf Bool\+Vector\+Value\+Type} {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::Elementwise\+Equal (
+\begin{DoxyParamCaption}
+\item[{const value\+\_\+type \&}]{scalar}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_fixed_size_const_vector_base_a0e410fd6fc061481880f6052f6af3aa0}
+Comparison between a vector and a scalar, containing the same type of elements. The comparaison ( $ = \neq < \leq > \geq $) for \hyperlink{classvct_fixed_size_const_vector_base_a5b1ef9c19b953cba03dfa4679fa891de}{Elementwise\+Equal()}, \hyperlink{classvct_fixed_size_const_vector_base_affd4520d21b356049664b7b696c73e51}{Elementwise\+Not\+Equal()}, \hyperlink{classvct_fixed_size_const_vector_base_a6858554efb3024dcac960994b3762eed}{Elementwise\+Lesser()}, \hyperlink{classvct_fixed_size_const_vector_base_a09107ff818ef0b09a8012db430a1be32}{Elementwise\+Lesser\+Or\+Equal()}, \hyperlink{classvct_fixed_size_const_vector_base_aecfe9c83072108ad25e703d123308bda}{Elementwise\+Greater()} or \hyperlink{classvct_fixed_size_const_vector_base_a5c06998807817166a95ecb4c39672a45}{Elementwise\+Greater\+Or\+Equal()} is performed elementwise between the vector and the scalar and stored in a newly created vector. There is no operator provided since the semantic would be ambiguous.
+
+\begin{DoxyReturn}{Returns}
+A vector of booleans. 
+\end{DoxyReturn}
+\hypertarget{classvct_fixed_size_const_vector_base_aecfe9c83072108ad25e703d123308bda}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!Elementwise\+Greater@{Elementwise\+Greater}}
+\index{Elementwise\+Greater@{Elementwise\+Greater}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{Elementwise\+Greater}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ template$<$stride\+\_\+type \+\_\+\+\_\+stride, class \+\_\+\+\_\+data\+Ptr\+Type $>$ {\bf Bool\+Vector\+Value\+Type} {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::Elementwise\+Greater (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+\+\_\+stride, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type $>$ \&}]{other\+Vector}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_fixed_size_const_vector_base_aecfe9c83072108ad25e703d123308bda}
+\hypertarget{classvct_fixed_size_const_vector_base_a6b10ccea0fc8949b4748531b68a0e63b}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!Elementwise\+Greater@{Elementwise\+Greater}}
+\index{Elementwise\+Greater@{Elementwise\+Greater}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{Elementwise\+Greater}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ {\bf Bool\+Vector\+Value\+Type} {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::Elementwise\+Greater (
+\begin{DoxyParamCaption}
+\item[{const value\+\_\+type \&}]{scalar}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_fixed_size_const_vector_base_a6b10ccea0fc8949b4748531b68a0e63b}
+\hypertarget{classvct_fixed_size_const_vector_base_a5c06998807817166a95ecb4c39672a45}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!Elementwise\+Greater\+Or\+Equal@{Elementwise\+Greater\+Or\+Equal}}
+\index{Elementwise\+Greater\+Or\+Equal@{Elementwise\+Greater\+Or\+Equal}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{Elementwise\+Greater\+Or\+Equal}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ template$<$stride\+\_\+type \+\_\+\+\_\+stride, class \+\_\+\+\_\+data\+Ptr\+Type $>$ {\bf Bool\+Vector\+Value\+Type} {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::Elementwise\+Greater\+Or\+Equal (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+\+\_\+stride, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type $>$ \&}]{other\+Vector}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_fixed_size_const_vector_base_a5c06998807817166a95ecb4c39672a45}
+\hypertarget{classvct_fixed_size_const_vector_base_a3c602bf31a8f0db3bcdce403ed8844bd}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!Elementwise\+Greater\+Or\+Equal@{Elementwise\+Greater\+Or\+Equal}}
+\index{Elementwise\+Greater\+Or\+Equal@{Elementwise\+Greater\+Or\+Equal}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{Elementwise\+Greater\+Or\+Equal}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ {\bf Bool\+Vector\+Value\+Type} {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::Elementwise\+Greater\+Or\+Equal (
+\begin{DoxyParamCaption}
+\item[{const value\+\_\+type \&}]{scalar}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_fixed_size_const_vector_base_a3c602bf31a8f0db3bcdce403ed8844bd}
+\hypertarget{classvct_fixed_size_const_vector_base_a6858554efb3024dcac960994b3762eed}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!Elementwise\+Lesser@{Elementwise\+Lesser}}
+\index{Elementwise\+Lesser@{Elementwise\+Lesser}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{Elementwise\+Lesser}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ template$<$stride\+\_\+type \+\_\+\+\_\+stride, class \+\_\+\+\_\+data\+Ptr\+Type $>$ {\bf Bool\+Vector\+Value\+Type} {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::Elementwise\+Lesser (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+\+\_\+stride, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type $>$ \&}]{other\+Vector}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_fixed_size_const_vector_base_a6858554efb3024dcac960994b3762eed}
+\hypertarget{classvct_fixed_size_const_vector_base_a822a3c606a54eff1d9817c61b096e51f}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!Elementwise\+Lesser@{Elementwise\+Lesser}}
+\index{Elementwise\+Lesser@{Elementwise\+Lesser}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{Elementwise\+Lesser}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ {\bf Bool\+Vector\+Value\+Type} {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::Elementwise\+Lesser (
+\begin{DoxyParamCaption}
+\item[{const value\+\_\+type \&}]{scalar}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_fixed_size_const_vector_base_a822a3c606a54eff1d9817c61b096e51f}
+\hypertarget{classvct_fixed_size_const_vector_base_a09107ff818ef0b09a8012db430a1be32}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!Elementwise\+Lesser\+Or\+Equal@{Elementwise\+Lesser\+Or\+Equal}}
+\index{Elementwise\+Lesser\+Or\+Equal@{Elementwise\+Lesser\+Or\+Equal}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{Elementwise\+Lesser\+Or\+Equal}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ template$<$stride\+\_\+type \+\_\+\+\_\+stride, class \+\_\+\+\_\+data\+Ptr\+Type $>$ {\bf Bool\+Vector\+Value\+Type} {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::Elementwise\+Lesser\+Or\+Equal (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+\+\_\+stride, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type $>$ \&}]{other\+Vector}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_fixed_size_const_vector_base_a09107ff818ef0b09a8012db430a1be32}
+\hypertarget{classvct_fixed_size_const_vector_base_a392251a56025cd31edca7874e62024dd}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!Elementwise\+Lesser\+Or\+Equal@{Elementwise\+Lesser\+Or\+Equal}}
+\index{Elementwise\+Lesser\+Or\+Equal@{Elementwise\+Lesser\+Or\+Equal}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{Elementwise\+Lesser\+Or\+Equal}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ {\bf Bool\+Vector\+Value\+Type} {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::Elementwise\+Lesser\+Or\+Equal (
+\begin{DoxyParamCaption}
+\item[{const value\+\_\+type \&}]{scalar}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_fixed_size_const_vector_base_a392251a56025cd31edca7874e62024dd}
+\hypertarget{classvct_fixed_size_const_vector_base_affd4520d21b356049664b7b696c73e51}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!Elementwise\+Not\+Equal@{Elementwise\+Not\+Equal}}
+\index{Elementwise\+Not\+Equal@{Elementwise\+Not\+Equal}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{Elementwise\+Not\+Equal}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ template$<$stride\+\_\+type \+\_\+\+\_\+stride, class \+\_\+\+\_\+data\+Ptr\+Type $>$ {\bf Bool\+Vector\+Value\+Type} {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::Elementwise\+Not\+Equal (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+\+\_\+stride, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type $>$ \&}]{other\+Vector}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_fixed_size_const_vector_base_affd4520d21b356049664b7b696c73e51}
+\hypertarget{classvct_fixed_size_const_vector_base_ab00e79ffdc3b73f4c13732d2b195a8e3}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!Elementwise\+Not\+Equal@{Elementwise\+Not\+Equal}}
+\index{Elementwise\+Not\+Equal@{Elementwise\+Not\+Equal}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{Elementwise\+Not\+Equal}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ {\bf Bool\+Vector\+Value\+Type} {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::Elementwise\+Not\+Equal (
+\begin{DoxyParamCaption}
+\item[{const value\+\_\+type \&}]{scalar}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_fixed_size_const_vector_base_ab00e79ffdc3b73f4c13732d2b195a8e3}
+\hypertarget{classvct_fixed_size_const_vector_base_aed78a0e4e2c5119bfb92d53bedb572e2}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!empty@{empty}}
+\index{empty@{empty}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{empty}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ bool {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::empty (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_fixed_size_const_vector_base_aed78a0e4e2c5119bfb92d53bedb572e2}
+Tell is the vector is empty (S\+T\+L compatibility). False unless S\+I\+Z\+E is zero. \hypertarget{classvct_fixed_size_const_vector_base_a304e1ab5b8fc2627cf8544d1acc3ba36}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!end@{end}}
+\index{end@{end}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{end}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ {\bf const\+\_\+iterator} {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::end (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_fixed_size_const_vector_base_a304e1ab5b8fc2627cf8544d1acc3ba36}
+Returns a const iterator on the last element (S\+T\+L compatibility). \hypertarget{classvct_fixed_size_const_vector_base_aa38d2e3dbaa035b37c246dc53ae9bb70}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!Equal@{Equal}}
+\index{Equal@{Equal}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{Equal}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ template$<$stride\+\_\+type \+\_\+\+\_\+stride, class \+\_\+\+\_\+data\+Ptr\+Type $>$ bool {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::Equal (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+\+\_\+stride, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type $>$ \&}]{other\+Vector}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_fixed_size_const_vector_base_aa38d2e3dbaa035b37c246dc53ae9bb70}
+Comparison between two vectors of the same size, containing the same type of elements. The stride and the internal representation (\+\_\+data\+Ptr\+Type) can be different. The comparaison ( $ = \neq < \leq > \geq $) for \hyperlink{classvct_fixed_size_const_vector_base_aa38d2e3dbaa035b37c246dc53ae9bb70}{Equal()}, \hyperlink{classvct_fixed_size_const_vector_base_ac918c482412a22251943dc80dc085a9a}{Not\+Equal()}, \hyperlink{classvct_fixed_size_const_vector_base_a6f1e9c515d2702d34579bf02ec9b20af}{Lesser()}, \hyperlink{classvct_fixed_size_const_vector_base_a4b261299156a998aaacaad3965cad247}{Lesser\+Or\+Equal()}, \hyperlink{classvct_fixed_size_const_vector_base_a96afecfdcad63e7c4726061da0b0be35}{Greater()} or \hyperlink{classvct_fixed_size_const_vector_base_a51d3b98adfbe986f056857c7fa5beada}{Greater\+Or\+Equal()} is performed elementwise between the two vectors. A logical \char`\"{}and\char`\"{} is performed (except for Not\+Equal which uses a logical \char`\"{}or\char`\"{}) to accumulate the elementwise results. The only operators provided are \char`\"{}==\char`\"{} and \char`\"{}!=\char`\"{} since the semantic is not ambiguous.
+
+\begin{DoxyReturn}{Returns}
+A boolean. 
+\end{DoxyReturn}
+\hypertarget{classvct_fixed_size_const_vector_base_a3f17febef880688b00147208cdd1eb15}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!Equal@{Equal}}
+\index{Equal@{Equal}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{Equal}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ bool {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::Equal (
+\begin{DoxyParamCaption}
+\item[{const value\+\_\+type \&}]{scalar}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_fixed_size_const_vector_base_a3f17febef880688b00147208cdd1eb15}
+Comparison between a vector and a scalar. The type of the elements of the vector and the scalar must be the same. The comparaison ( $ = \neq < \leq > \geq $) for \hyperlink{classvct_fixed_size_const_vector_base_aa38d2e3dbaa035b37c246dc53ae9bb70}{Equal()}, \hyperlink{classvct_fixed_size_const_vector_base_ac918c482412a22251943dc80dc085a9a}{Not\+Equal()}, \hyperlink{classvct_fixed_size_const_vector_base_a6f1e9c515d2702d34579bf02ec9b20af}{Lesser()}, \hyperlink{classvct_fixed_size_const_vector_base_a4b261299156a998aaacaad3965cad247}{Lesser\+Or\+Equal()}, \hyperlink{classvct_fixed_size_const_vector_base_a96afecfdcad63e7c4726061da0b0be35}{Greater()} or \hyperlink{classvct_fixed_size_const_vector_base_a51d3b98adfbe986f056857c7fa5beada}{Greater\+Or\+Equal()} is performed elementwise between the vector and the scalar. A logical \char`\"{}and\char`\"{} is performed (except for Not\+Equal which uses a logical \char`\"{}or\char`\"{}) to accumulate the elementwise results.. The only operators provided are \char`\"{}==\char`\"{} and \char`\"{}!=\char`\"{} since the semantic is not ambiguous.
+
+\begin{DoxyReturn}{Returns}
+A boolean. 
+\end{DoxyReturn}
+\hypertarget{classvct_fixed_size_const_vector_base_a01d4cd7d810371fa09e5e7154fb294bc}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!Fast\+Copy\+Compatible@{Fast\+Copy\+Compatible}}
+\index{Fast\+Copy\+Compatible@{Fast\+Copy\+Compatible}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{Fast\+Copy\+Compatible}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ template$<$size\+\_\+type \+\_\+\+\_\+size, stride\+\_\+type \+\_\+\+\_\+stride, class \+\_\+\+\_\+data\+Ptr\+Type $>$ bool {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::Fast\+Copy\+Compatible (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+size, \+\_\+\+\_\+stride, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type $>$ \&}]{source}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_fixed_size_const_vector_base_a01d4cd7d810371fa09e5e7154fb294bc}
+Test if the method Fast\+Copy\+Of can be used instead of Assign. See Fast\+Copy\+Of for more details. \hypertarget{classvct_fixed_size_const_vector_base_ad85b7a0580923858f7bc6aa7bfcc60fb}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!Fast\+Copy\+Compatible@{Fast\+Copy\+Compatible}}
+\index{Fast\+Copy\+Compatible@{Fast\+Copy\+Compatible}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{Fast\+Copy\+Compatible}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ template$<$class \+\_\+\+\_\+vector\+Owner\+Type $>$ bool {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::Fast\+Copy\+Compatible (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type, value\+\_\+type $>$ \&}]{source}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_fixed_size_const_vector_base_ad85b7a0580923858f7bc6aa7bfcc60fb}
+Test if the method Fast\+Copy\+Of can be used instead of Assign. See Fast\+Copy\+Of for more details. \hypertarget{classvct_fixed_size_const_vector_base_aff9b482b5a27910cc314cc43385bc2f4}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!Floor@{Floor}}
+\index{Floor@{Floor}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{Floor}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type , class \+\_\+data\+Ptr\+Type $>$ {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::{\bf Vector\+Value\+Type} {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::Floor (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_fixed_size_const_vector_base_aff9b482b5a27910cc314cc43385bc2f4}
+\hypertarget{classvct_fixed_size_const_vector_base_a96afecfdcad63e7c4726061da0b0be35}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!Greater@{Greater}}
+\index{Greater@{Greater}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{Greater}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ template$<$stride\+\_\+type \+\_\+\+\_\+stride, class \+\_\+\+\_\+data\+Ptr\+Type $>$ bool {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::Greater (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+\+\_\+stride, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type $>$ \&}]{other\+Vector}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_fixed_size_const_vector_base_a96afecfdcad63e7c4726061da0b0be35}
+\hypertarget{classvct_fixed_size_const_vector_base_aa08707e079adf289afb2a381baee6878}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!Greater@{Greater}}
+\index{Greater@{Greater}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{Greater}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ bool {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::Greater (
+\begin{DoxyParamCaption}
+\item[{const value\+\_\+type \&}]{scalar}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_fixed_size_const_vector_base_aa08707e079adf289afb2a381baee6878}
+\hypertarget{classvct_fixed_size_const_vector_base_a51d3b98adfbe986f056857c7fa5beada}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!Greater\+Or\+Equal@{Greater\+Or\+Equal}}
+\index{Greater\+Or\+Equal@{Greater\+Or\+Equal}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{Greater\+Or\+Equal}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ template$<$stride\+\_\+type \+\_\+\+\_\+stride, class \+\_\+\+\_\+data\+Ptr\+Type $>$ bool {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::Greater\+Or\+Equal (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+\+\_\+stride, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type $>$ \&}]{other\+Vector}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_fixed_size_const_vector_base_a51d3b98adfbe986f056857c7fa5beada}
+\hypertarget{classvct_fixed_size_const_vector_base_a59ac073f92ab479bb1292ff336b9dcdb}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!Greater\+Or\+Equal@{Greater\+Or\+Equal}}
+\index{Greater\+Or\+Equal@{Greater\+Or\+Equal}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{Greater\+Or\+Equal}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ bool {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::Greater\+Or\+Equal (
+\begin{DoxyParamCaption}
+\item[{const value\+\_\+type \&}]{scalar}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_fixed_size_const_vector_base_a59ac073f92ab479bb1292ff336b9dcdb}
+\hypertarget{classvct_fixed_size_const_vector_base_a542964b8e6a6e430b24a50db0b9bf591}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!Has\+Na\+N@{Has\+Na\+N}}
+\index{Has\+Na\+N@{Has\+Na\+N}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{Has\+Na\+N}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ bool {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::Has\+Na\+N (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_fixed_size_const_vector_base_a542964b8e6a6e430b24a50db0b9bf591}
+Return true if any element of this vector is Na\+N, false otherwise \hypertarget{classvct_fixed_size_const_vector_base_ae3938e1b5a4e3822889f584568ba6629}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!Is\+Compact@{Is\+Compact}}
+\index{Is\+Compact@{Is\+Compact}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{Is\+Compact}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ bool {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::Is\+Compact (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_fixed_size_const_vector_base_ae3938e1b5a4e3822889f584568ba6629}
+Test if the vector is compact, i.\+e. a vector of length l actually uses a contiguous block of memory or size l. A compact vector has a stride equal to 1. \hypertarget{classvct_fixed_size_const_vector_base_a7cf413f6effa64e31fe306f9ac11a97d}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!Is\+Finite@{Is\+Finite}}
+\index{Is\+Finite@{Is\+Finite}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{Is\+Finite}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ bool {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::Is\+Finite (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_fixed_size_const_vector_base_a7cf413f6effa64e31fe306f9ac11a97d}
+Return true if all the elements of this vector are finite, false otherwise \hypertarget{classvct_fixed_size_const_vector_base_a29f89413c10a8bc6f266d43baa57b758}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!Is\+Fortran@{Is\+Fortran}}
+\index{Is\+Fortran@{Is\+Fortran}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{Is\+Fortran}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ bool {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::Is\+Fortran (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_fixed_size_const_vector_base_a29f89413c10a8bc6f266d43baa57b758}
+Test if the vector is \char`\"{}\+Fortran\char`\"{} compatible, i.\+e. is compact. \begin{DoxySeeAlso}{See also}
+\hyperlink{classvct_fixed_size_const_vector_base_ae3938e1b5a4e3822889f584568ba6629}{Is\+Compact} 
+\end{DoxySeeAlso}
+\hypertarget{classvct_fixed_size_const_vector_base_a9306ec231b0528ef5b881461ea1ff8d8}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!Is\+Negative@{Is\+Negative}}
+\index{Is\+Negative@{Is\+Negative}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{Is\+Negative}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ bool {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::Is\+Negative (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_fixed_size_const_vector_base_a9306ec231b0528ef5b881461ea1ff8d8}
+Return true if all the elements of this vector are strictly negative, false otherwise \hypertarget{classvct_fixed_size_const_vector_base_a0dd3b76cdec4fa3b54816cb878c5cb28}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!Is\+Non\+Negative@{Is\+Non\+Negative}}
+\index{Is\+Non\+Negative@{Is\+Non\+Negative}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{Is\+Non\+Negative}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ bool {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::Is\+Non\+Negative (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_fixed_size_const_vector_base_a0dd3b76cdec4fa3b54816cb878c5cb28}
+Return true if all the elements of this vector are non-\/negative, false otherwise \hypertarget{classvct_fixed_size_const_vector_base_a4158db8c718b0fe65cd9a2328d9cac0b}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!Is\+Non\+Positive@{Is\+Non\+Positive}}
+\index{Is\+Non\+Positive@{Is\+Non\+Positive}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{Is\+Non\+Positive}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ bool {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::Is\+Non\+Positive (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_fixed_size_const_vector_base_a4158db8c718b0fe65cd9a2328d9cac0b}
+Return true if all the elements of this vector are non-\/positive, false otherwise \hypertarget{classvct_fixed_size_const_vector_base_a137a8c27c0ac4c69d82603d8ccc57ff5}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!Is\+Normalized@{Is\+Normalized}}
+\index{Is\+Normalized@{Is\+Normalized}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{Is\+Normalized}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ bool {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::Is\+Normalized (
+\begin{DoxyParamCaption}
+\item[{\+\_\+element\+Type}]{tolerance = {\ttfamily {\bf cmn\+Type\+Traits}$<$\+\_\+elementType$>$\+:\+:Tolerance()}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_fixed_size_const_vector_base_a137a8c27c0ac4c69d82603d8ccc57ff5}
+Test if this vector is normalized. 
+\begin{DoxyParams}{Parameters}
+{\em tolerance} & The maximum difference between the norm and 1 to consider the vector normalized. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classvct_fixed_size_const_vector_base_ada9b5030f7256d8ffb7aaf314db06e92}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!Is\+Positive@{Is\+Positive}}
+\index{Is\+Positive@{Is\+Positive}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{Is\+Positive}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ bool {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::Is\+Positive (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_fixed_size_const_vector_base_ada9b5030f7256d8ffb7aaf314db06e92}
+Return true if all the elements of this vector are strictly positive, false otherwise \hypertarget{classvct_fixed_size_const_vector_base_a24e2d1c86fbfa08de36508830bcd18a5}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!L1\+Norm@{L1\+Norm}}
+\index{L1\+Norm@{L1\+Norm}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{L1\+Norm}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ value\+\_\+type {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::L1\+Norm (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_fixed_size_const_vector_base_a24e2d1c86fbfa08de36508830bcd18a5}
+Return the L1 norm of the vector, i.\+e. the sum of the absolute values of all the elements.
+
+\begin{DoxyReturn}{Returns}
+The L1 norm. 
+\end{DoxyReturn}
+\hypertarget{classvct_fixed_size_const_vector_base_a6f1e9c515d2702d34579bf02ec9b20af}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!Lesser@{Lesser}}
+\index{Lesser@{Lesser}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{Lesser}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ template$<$stride\+\_\+type \+\_\+\+\_\+stride, class \+\_\+\+\_\+data\+Ptr\+Type $>$ bool {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::Lesser (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+\+\_\+stride, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type $>$ \&}]{other\+Vector}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_fixed_size_const_vector_base_a6f1e9c515d2702d34579bf02ec9b20af}
+\hypertarget{classvct_fixed_size_const_vector_base_ac047078e830c5fbe4fcfa01b6930026d}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!Lesser@{Lesser}}
+\index{Lesser@{Lesser}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{Lesser}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ bool {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::Lesser (
+\begin{DoxyParamCaption}
+\item[{const value\+\_\+type \&}]{scalar}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_fixed_size_const_vector_base_ac047078e830c5fbe4fcfa01b6930026d}
+\hypertarget{classvct_fixed_size_const_vector_base_a4b261299156a998aaacaad3965cad247}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!Lesser\+Or\+Equal@{Lesser\+Or\+Equal}}
+\index{Lesser\+Or\+Equal@{Lesser\+Or\+Equal}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{Lesser\+Or\+Equal}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ template$<$stride\+\_\+type \+\_\+\+\_\+stride, class \+\_\+\+\_\+data\+Ptr\+Type $>$ bool {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::Lesser\+Or\+Equal (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+\+\_\+stride, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type $>$ \&}]{other\+Vector}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_fixed_size_const_vector_base_a4b261299156a998aaacaad3965cad247}
+\hypertarget{classvct_fixed_size_const_vector_base_a992df32d08f73a6c97f0ff49796fd940}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!Lesser\+Or\+Equal@{Lesser\+Or\+Equal}}
+\index{Lesser\+Or\+Equal@{Lesser\+Or\+Equal}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{Lesser\+Or\+Equal}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ bool {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::Lesser\+Or\+Equal (
+\begin{DoxyParamCaption}
+\item[{const value\+\_\+type \&}]{scalar}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_fixed_size_const_vector_base_a992df32d08f73a6c97f0ff49796fd940}
+\hypertarget{classvct_fixed_size_const_vector_base_a6cc25d43b07b0e85cebf697f4473013a}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!Linf\+Norm@{Linf\+Norm}}
+\index{Linf\+Norm@{Linf\+Norm}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{Linf\+Norm}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ value\+\_\+type {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::Linf\+Norm (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_fixed_size_const_vector_base_a6cc25d43b07b0e85cebf697f4473013a}
+Return the Linf norm of the vector, i.\+e. the maximum of the absolute values of all the elements.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classvct_fixed_size_const_vector_base_adec6fb220a9ea13e9fb0ecae8ad1785b}{Max\+Abs\+Element}.
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+The Linf norm. 
+\end{DoxyReturn}
+\hypertarget{classvct_fixed_size_const_vector_base_a50473c70f34bcab8e01ba2eaeef69813}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!max\+\_\+size@{max\+\_\+size}}
+\index{max\+\_\+size@{max\+\_\+size}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{max\+\_\+size}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ size\+\_\+type {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::max\+\_\+size (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_fixed_size_const_vector_base_a50473c70f34bcab8e01ba2eaeef69813}
+Returns the maximum size of the vector (S\+T\+L compatibility). For a fixed size vector, same as the \hyperlink{classvct_fixed_size_const_vector_base_a05beb10f53809905f4db11b0b5b6f651}{size()}. \hypertarget{classvct_fixed_size_const_vector_base_adec6fb220a9ea13e9fb0ecae8ad1785b}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!Max\+Abs\+Element@{Max\+Abs\+Element}}
+\index{Max\+Abs\+Element@{Max\+Abs\+Element}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{Max\+Abs\+Element}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ value\+\_\+type {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::Max\+Abs\+Element (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_fixed_size_const_vector_base_adec6fb220a9ea13e9fb0ecae8ad1785b}
+Return the maximum of the absolute values of all the elements.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classvct_fixed_size_const_vector_base_a6cc25d43b07b0e85cebf697f4473013a}{Linf\+Norm}.
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+The maximum of the absolute values. 
+\end{DoxyReturn}
+\hypertarget{classvct_fixed_size_const_vector_base_ae8a9354f4981167ad4b32ebc46718075}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!Max\+Element@{Max\+Element}}
+\index{Max\+Element@{Max\+Element}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{Max\+Element}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ value\+\_\+type {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::Max\+Element (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_fixed_size_const_vector_base_ae8a9354f4981167ad4b32ebc46718075}
+Return the maximum element of the vector. \begin{DoxyReturn}{Returns}
+The maximum element 
+\end{DoxyReturn}
+\hypertarget{classvct_fixed_size_const_vector_base_a841b82fc4780be7d5c992b9d75f4ccbc}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!Min\+Abs\+Element@{Min\+Abs\+Element}}
+\index{Min\+Abs\+Element@{Min\+Abs\+Element}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{Min\+Abs\+Element}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ value\+\_\+type {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::Min\+Abs\+Element (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_fixed_size_const_vector_base_a841b82fc4780be7d5c992b9d75f4ccbc}
+Return the minimum of the absolute values of all the elements.
+
+\begin{DoxyReturn}{Returns}
+The minimum of the absolute values. 
+\end{DoxyReturn}
+\hypertarget{classvct_fixed_size_const_vector_base_a53a918269efce35fdb84addc8d694b2d}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!Min\+And\+Max\+Element@{Min\+And\+Max\+Element}}
+\index{Min\+And\+Max\+Element@{Min\+And\+Max\+Element}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{Min\+And\+Max\+Element}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ void {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::Min\+And\+Max\+Element (
+\begin{DoxyParamCaption}
+\item[{value\+\_\+type \&}]{min\+Element, }
+\item[{value\+\_\+type \&}]{max\+Element}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_fixed_size_const_vector_base_a53a918269efce35fdb84addc8d694b2d}
+Compute the minimum A\+N\+D maximum elements of the vector. This method is more runtime-\/efficient than computing them separately. 
+\begin{DoxyParams}{Parameters}
+{\em min\+Element} & reference to store the minimum element result. \\
+\hline
+{\em max\+Element} & reference to store the maximum element result. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classvct_fixed_size_const_vector_base_a3f26bcaaecf71aaf2e4150a1cba75310}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!Min\+Element@{Min\+Element}}
+\index{Min\+Element@{Min\+Element}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{Min\+Element}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ value\+\_\+type {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::Min\+Element (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_fixed_size_const_vector_base_a3f26bcaaecf71aaf2e4150a1cba75310}
+Return the minimum element of the vector. \begin{DoxyReturn}{Returns}
+The minimum element 
+\end{DoxyReturn}
+\hypertarget{classvct_fixed_size_const_vector_base_aef8fcf83fd0ecf62ef865c865177da28}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!Negation@{Negation}}
+\index{Negation@{Negation}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{Negation}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type , class \+\_\+data\+Ptr\+Type $>$ {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::{\bf Vector\+Value\+Type} {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::Negation (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_fixed_size_const_vector_base_aef8fcf83fd0ecf62ef865c865177da28}
+\hypertarget{classvct_fixed_size_const_vector_base_a43f0c7b075985c9ad43df78aa3af48cf}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!Norm@{Norm}}
+\index{Norm@{Norm}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{Norm}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ Norm\+Type {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::Norm (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_fixed_size_const_vector_base_a43f0c7b075985c9ad43df78aa3af48cf}
+Return the norm of the vector. \begin{DoxyReturn}{Returns}
+The norm. 
+\end{DoxyReturn}
+\hypertarget{classvct_fixed_size_const_vector_base_a5e759e9dd867d0f2752f614716087d6a}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!Normalized@{Normalized}}
+\index{Normalized@{Normalized}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{Normalized}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type , class \+\_\+data\+Ptr\+Type $>$ {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::{\bf Vector\+Value\+Type} {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::Normalized (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const throw  std\+::runtime\+\_\+error) \hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_fixed_size_const_vector_base_a5e759e9dd867d0f2752f614716087d6a}
+\hypertarget{classvct_fixed_size_const_vector_base_a5a865a5e5eceae4e781620f83efa54b4}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!Norm\+Square@{Norm\+Square}}
+\index{Norm\+Square@{Norm\+Square}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{Norm\+Square}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ value\+\_\+type {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::Norm\+Square (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_fixed_size_const_vector_base_a5a865a5e5eceae4e781620f83efa54b4}
+Return the square of the norm of the vector. \begin{DoxyReturn}{Returns}
+The square of the norm 
+\end{DoxyReturn}
+\hypertarget{classvct_fixed_size_const_vector_base_ac918c482412a22251943dc80dc085a9a}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!Not\+Equal@{Not\+Equal}}
+\index{Not\+Equal@{Not\+Equal}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{Not\+Equal}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ template$<$stride\+\_\+type \+\_\+\+\_\+stride, class \+\_\+\+\_\+data\+Ptr\+Type $>$ bool {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::Not\+Equal (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+\+\_\+stride, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type $>$ \&}]{other\+Vector}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_fixed_size_const_vector_base_ac918c482412a22251943dc80dc085a9a}
+\hypertarget{classvct_fixed_size_const_vector_base_ab33e5ab35918ea803a5c94f3f9ee7a9e}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!Not\+Equal@{Not\+Equal}}
+\index{Not\+Equal@{Not\+Equal}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{Not\+Equal}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ bool {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::Not\+Equal (
+\begin{DoxyParamCaption}
+\item[{const value\+\_\+type \&}]{scalar}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_fixed_size_const_vector_base_ab33e5ab35918ea803a5c94f3f9ee7a9e}
+\hypertarget{classvct_fixed_size_const_vector_base_a9cc58a2f86353b2c8d613ddf18442f0c}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{operator"!=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ template$<$stride\+\_\+type \+\_\+\+\_\+stride, class \+\_\+\+\_\+data\+Ptr\+Type $>$ bool {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::operator!= (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+\+\_\+stride, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type $>$ \&}]{other\+Vector}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_fixed_size_const_vector_base_a9cc58a2f86353b2c8d613ddf18442f0c}
+\hypertarget{classvct_fixed_size_const_vector_base_a22f3b10fd91364fa701b9a775436fb89}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{operator"!=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ bool {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::operator!= (
+\begin{DoxyParamCaption}
+\item[{const value\+\_\+type \&}]{scalar}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_fixed_size_const_vector_base_a22f3b10fd91364fa701b9a775436fb89}
+\hypertarget{classvct_fixed_size_const_vector_base_a7e21b648dfa6753525587c1b5b45d16e}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!operator()@{operator()}}
+\index{operator()@{operator()}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ const\+\_\+reference {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::operator() (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+type}]{index}
+\end{DoxyParamCaption}
+) const throw  std\+::out\+\_\+of\+\_\+range) \hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_fixed_size_const_vector_base_a7e21b648dfa6753525587c1b5b45d16e}
+Access an element by index (const). See method \hyperlink{classvct_fixed_size_const_vector_base_ae5a13bd07071fd5338c87d13ba385b33}{at()}. \begin{DoxyReturn}{Returns}
+a const reference to element\mbox{[}index\mbox{]} 
+\end{DoxyReturn}
+\hypertarget{classvct_fixed_size_const_vector_base_aca59301cbeb1a7d4c4de2bc0b71ca335}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!operator==@{operator==}}
+\index{operator==@{operator==}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ template$<$stride\+\_\+type \+\_\+\+\_\+stride, class \+\_\+\+\_\+data\+Ptr\+Type $>$ bool {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+\+\_\+stride, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type $>$ \&}]{other\+Vector}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_fixed_size_const_vector_base_aca59301cbeb1a7d4c4de2bc0b71ca335}
+\hypertarget{classvct_fixed_size_const_vector_base_a3dc305977c625937fd0809ae2b171d8c}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!operator==@{operator==}}
+\index{operator==@{operator==}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ bool {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::operator== (
+\begin{DoxyParamCaption}
+\item[{const value\+\_\+type \&}]{scalar}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_fixed_size_const_vector_base_a3dc305977c625937fd0809ae2b171d8c}
+\hypertarget{classvct_fixed_size_const_vector_base_a54c324bad074d2c2ca7bfadcda0eba3d}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ const\+\_\+reference {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+type}]{index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_fixed_size_const_vector_base_a54c324bad074d2c2ca7bfadcda0eba3d}
+Access an element by index (const). \begin{DoxyReturn}{Returns}
+a const reference to the element\mbox{[}index\mbox{]} 
+\end{DoxyReturn}
+\hypertarget{classvct_fixed_size_const_vector_base_a86ebcd642499eea0d64454a5ac944fcd}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!Pointer@{Pointer}}
+\index{Pointer@{Pointer}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{Pointer}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ const\+\_\+pointer {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::Pointer (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+type}]{index = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_fixed_size_const_vector_base_a86ebcd642499eea0d64454a5ac944fcd}
+Returns a const pointer to an element of the container, specified by its index. Addition to the S\+T\+L requirements. \hypertarget{classvct_fixed_size_const_vector_base_a826fd6b5c97c074d6c0484cc107bb31e}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!Product\+Of\+Elements@{Product\+Of\+Elements}}
+\index{Product\+Of\+Elements@{Product\+Of\+Elements}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{Product\+Of\+Elements}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ value\+\_\+type {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::Product\+Of\+Elements (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_fixed_size_const_vector_base_a826fd6b5c97c074d6c0484cc107bb31e}
+Return the product of the elements of the vector. \begin{DoxyReturn}{Returns}
+The product of all the elements 
+\end{DoxyReturn}
+\hypertarget{classvct_fixed_size_const_vector_base_a619ec380da3061d80e856f28fe2b2964}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!rbegin@{rbegin}}
+\index{rbegin@{rbegin}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{rbegin}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ {\bf const\+\_\+reverse\+\_\+iterator} {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::rbegin (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_fixed_size_const_vector_base_a619ec380da3061d80e856f28fe2b2964}
+Returns a reverse const iterator on the last element (S\+T\+L compatibility). \hypertarget{classvct_fixed_size_const_vector_base_acd691bb22ac1ca5abf578be37273fb5d}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!rend@{rend}}
+\index{rend@{rend}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{rend}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ {\bf const\+\_\+reverse\+\_\+iterator} {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::rend (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_fixed_size_const_vector_base_acd691bb22ac1ca5abf578be37273fb5d}
+Returns a reverse const iterator on the element before first (S\+T\+L compatibility). \hypertarget{classvct_fixed_size_const_vector_base_a3b7b8125332df76aec10b7053339e691}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!Serialize\+Raw@{Serialize\+Raw}}
+\index{Serialize\+Raw@{Serialize\+Raw}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{Serialize\+Raw}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ void {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::Serialize\+Raw (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{output\+Stream}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_fixed_size_const_vector_base_a3b7b8125332df76aec10b7053339e691}
+Binary serialization \hypertarget{classvct_fixed_size_const_vector_base_a05beb10f53809905f4db11b0b5b6f651}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!size@{size}}
+\index{size@{size}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ size\+\_\+type {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::size (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_fixed_size_const_vector_base_a05beb10f53809905f4db11b0b5b6f651}
+Returns the size of the vector (S\+T\+L compatibility). \hypertarget{classvct_fixed_size_const_vector_base_ac1cbc7509e0cc11b011acc63f2584331}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!stride@{stride}}
+\index{stride@{stride}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{stride}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ difference\+\_\+type {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::stride (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_fixed_size_const_vector_base_ac1cbc7509e0cc11b011acc63f2584331}
+Not required by S\+T\+L but provided for completeness \hypertarget{classvct_fixed_size_const_vector_base_ac511673c2790b811713df7728f65b5da}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!Sum\+Of\+Elements@{Sum\+Of\+Elements}}
+\index{Sum\+Of\+Elements@{Sum\+Of\+Elements}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{Sum\+Of\+Elements}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ value\+\_\+type {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::Sum\+Of\+Elements (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_fixed_size_const_vector_base_ac511673c2790b811713df7728f65b5da}
+Return the sum of the elements of the vector. \begin{DoxyReturn}{Returns}
+The sum of all the elements 
+\end{DoxyReturn}
+\hypertarget{classvct_fixed_size_const_vector_base_a3fb1938773c324fbb7c33c0304050dd8}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!Throw\+Unless\+Valid\+Index@{Throw\+Unless\+Valid\+Index}}
+\index{Throw\+Unless\+Valid\+Index@{Throw\+Unless\+Valid\+Index}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{Throw\+Unless\+Valid\+Index}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ void {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::Throw\+Unless\+Valid\+Index (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+type}]{index}
+\end{DoxyParamCaption}
+) const throw  std\+::out\+\_\+of\+\_\+range) \hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\label{classvct_fixed_size_const_vector_base_a3fb1938773c324fbb7c33c0304050dd8}
+Check the validity of an index. \hypertarget{classvct_fixed_size_const_vector_base_abec81757524558b2c393646313f31163}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!To\+Stream@{To\+Stream}}
+\index{To\+Stream@{To\+Stream}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{To\+Stream}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ void {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::To\+Stream (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{output\+Stream}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_fixed_size_const_vector_base_abec81757524558b2c393646313f31163}
+Print the matrix in a human readable format \hypertarget{classvct_fixed_size_const_vector_base_aa413d5dd8a954fe8e36b21299f5181aa}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!To\+Stream\+Raw@{To\+Stream\+Raw}}
+\index{To\+Stream\+Raw@{To\+Stream\+Raw}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{To\+Stream\+Raw}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ void {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::To\+Stream\+Raw (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{output\+Stream, }
+\item[{const char}]{delimiter = {\ttfamily \textquotesingle{}~\textquotesingle{}}, }
+\item[{bool}]{header\+Only = {\ttfamily false}, }
+\item[{const std\+::string \&}]{header\+Prefix = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_fixed_size_const_vector_base_aa413d5dd8a954fe8e36b21299f5181aa}
+Print data only with optional separator \hypertarget{classvct_fixed_size_const_vector_base_ab28c36ca88b582037a197d5b37fb6a20}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!To\+String@{To\+String}}
+\index{To\+String@{To\+String}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{To\+String}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ std\+::string {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::To\+String (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_fixed_size_const_vector_base_ab28c36ca88b582037a197d5b37fb6a20}
+\hypertarget{classvct_fixed_size_const_vector_base_a4a1e8dbbfb96f4da5392d5bac6574f2a}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!Valid\+Index@{Valid\+Index}}
+\index{Valid\+Index@{Valid\+Index}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{Valid\+Index}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ bool {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::Valid\+Index (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+type}]{index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_fixed_size_const_vector_base_a4a1e8dbbfb96f4da5392d5bac6574f2a}
+Returns true if this index is valid. \hypertarget{classvct_fixed_size_const_vector_base_aa58a77c3e1e45a50d7677d9a8fbb5f17}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!V\+C\+T\+\_\+\+C\+O\+N\+T\+A\+I\+N\+E\+R\+\_\+\+T\+R\+A\+I\+T\+S\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+S@{V\+C\+T\+\_\+\+C\+O\+N\+T\+A\+I\+N\+E\+R\+\_\+\+T\+R\+A\+I\+T\+S\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+S}}
+\index{V\+C\+T\+\_\+\+C\+O\+N\+T\+A\+I\+N\+E\+R\+\_\+\+T\+R\+A\+I\+T\+S\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+S@{V\+C\+T\+\_\+\+C\+O\+N\+T\+A\+I\+N\+E\+R\+\_\+\+T\+R\+A\+I\+T\+S\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+S}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{V\+C\+T\+\_\+\+C\+O\+N\+T\+A\+I\+N\+E\+R\+\_\+\+T\+R\+A\+I\+T\+S\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+S}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::V\+C\+T\+\_\+\+C\+O\+N\+T\+A\+I\+N\+E\+R\+\_\+\+T\+R\+A\+I\+T\+S\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+S (
+\begin{DoxyParamCaption}
+\item[{\+\_\+element\+Type}]{}
+\end{DoxyParamCaption}
+)}\label{classvct_fixed_size_const_vector_base_aa58a77c3e1e45a50d7677d9a8fbb5f17}
+\hypertarget{classvct_fixed_size_const_vector_base_a9159e8044eaf25afd14bf29b4896cb2e}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!W@{W}}
+\index{W@{W}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{W}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ const value\+\_\+type\& {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::W (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_fixed_size_const_vector_base_a9159e8044eaf25afd14bf29b4896cb2e}
+Returns the fourth element of the vector. This method uses \hyperlink{group__cisst_common_ga6a12b7031ea38ac5bf5937b8633c97ff}{C\+M\+N\+\_\+\+A\+S\+S\+E\+R\+T} to check that the size is at least 4. \hypertarget{classvct_fixed_size_const_vector_base_ab4c73c8ed62e07d70b60f176fec6a6a4}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!X@{X}}
+\index{X@{X}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{X}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ const value\+\_\+type\& {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::X (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_fixed_size_const_vector_base_ab4c73c8ed62e07d70b60f176fec6a6a4}
+Returns the first element of the vector. This method uses \hyperlink{group__cisst_common_ga6a12b7031ea38ac5bf5937b8633c97ff}{C\+M\+N\+\_\+\+A\+S\+S\+E\+R\+T} to check that the size is at least 1. \hypertarget{classvct_fixed_size_const_vector_base_aaaf0bfafb4c463a8e80529292c78263e}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!X\+W@{X\+W}}
+\index{X\+W@{X\+W}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{X\+W}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ {\bf vct\+Fixed\+Size\+Const\+Vector\+Ref}$<$\+\_\+element\+Type, 2, 3 $\ast$ \+\_\+stride$>$ {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::X\+W (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_fixed_size_const_vector_base_aaaf0bfafb4c463a8e80529292c78263e}
+Return a (const) vector reference for the first and fourth elements of this vector. \hypertarget{classvct_fixed_size_const_vector_base_a37dd8ddaeed8782eba28c4ed33df976c}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!X\+Y@{X\+Y}}
+\index{X\+Y@{X\+Y}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{X\+Y}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ {\bf vct\+Fixed\+Size\+Const\+Vector\+Ref}$<$\+\_\+element\+Type, 2, \+\_\+stride$>$ {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::X\+Y (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_fixed_size_const_vector_base_a37dd8ddaeed8782eba28c4ed33df976c}
+Return a (const) vector reference for the first two elements of this vector. May be used when switching from homogeneous coordinates to normal \hypertarget{classvct_fixed_size_const_vector_base_ad3c02fe9042d5bb8b4a92e51bb3869da}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!X\+Y\+Z@{X\+Y\+Z}}
+\index{X\+Y\+Z@{X\+Y\+Z}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{X\+Y\+Z}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ {\bf vct\+Fixed\+Size\+Const\+Vector\+Ref}$<$\+\_\+element\+Type, 3, \+\_\+stride$>$ {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::X\+Y\+Z (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_fixed_size_const_vector_base_ad3c02fe9042d5bb8b4a92e51bb3869da}
+Return a (const) vector reference for the first three elements of this vector. May be used when switching from homogeneous coordinates to normal, or when refering to a subvector of a row or a column inside a small matrix. \hypertarget{classvct_fixed_size_const_vector_base_ae2b5ae2687bab88d80caf5becdd8a058}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!X\+Y\+Z\+W@{X\+Y\+Z\+W}}
+\index{X\+Y\+Z\+W@{X\+Y\+Z\+W}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{X\+Y\+Z\+W}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ {\bf vct\+Fixed\+Size\+Const\+Vector\+Ref}$<$\+\_\+element\+Type, 4, \+\_\+stride$>$ {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::X\+Y\+Z\+W (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_fixed_size_const_vector_base_ae2b5ae2687bab88d80caf5becdd8a058}
+Return a (const) vector reference for the first four elements of this vector. May be used when switching from homogeneous coordinates to normal, or when refering to a subvector of a row or a column inside a small matrix. \hypertarget{classvct_fixed_size_const_vector_base_abfc16233497e3ad6111483a8ec40a317}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!X\+Z@{X\+Z}}
+\index{X\+Z@{X\+Z}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{X\+Z}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ {\bf vct\+Fixed\+Size\+Const\+Vector\+Ref}$<$\+\_\+element\+Type, 2, 2 $\ast$ \+\_\+stride$>$ {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::X\+Z (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_fixed_size_const_vector_base_abfc16233497e3ad6111483a8ec40a317}
+Return a (const) vector reference for the first and third elements of this vector. \hypertarget{classvct_fixed_size_const_vector_base_acd49ac5b86c51004025038feaee9b207}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!Y@{Y}}
+\index{Y@{Y}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{Y}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ const value\+\_\+type\& {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::Y (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_fixed_size_const_vector_base_acd49ac5b86c51004025038feaee9b207}
+Returns the second element of the vector. This method uses \hyperlink{group__cisst_common_ga6a12b7031ea38ac5bf5937b8633c97ff}{C\+M\+N\+\_\+\+A\+S\+S\+E\+R\+T} to check that the size is at least 2. \hypertarget{classvct_fixed_size_const_vector_base_ac1c376d6a306b27fb8cb655f0092d57f}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!Y\+W@{Y\+W}}
+\index{Y\+W@{Y\+W}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{Y\+W}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ {\bf vct\+Fixed\+Size\+Const\+Vector\+Ref}$<$\+\_\+element\+Type, 2, 2 $\ast$ \+\_\+stride$>$ {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::Y\+W (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_fixed_size_const_vector_base_ac1c376d6a306b27fb8cb655f0092d57f}
+Return a (const) vector reference for the two elements of this vector beginning on the second. \hypertarget{classvct_fixed_size_const_vector_base_a3b919c98160f6d0b27d114155d24e5d1}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!Y\+Z@{Y\+Z}}
+\index{Y\+Z@{Y\+Z}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{Y\+Z}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ {\bf vct\+Fixed\+Size\+Const\+Vector\+Ref}$<$\+\_\+element\+Type, 2, \+\_\+stride$>$ {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::Y\+Z (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_fixed_size_const_vector_base_a3b919c98160f6d0b27d114155d24e5d1}
+Return a (const) vector reference for the two elements of this vector beginning on the second. \hypertarget{classvct_fixed_size_const_vector_base_a4c6e3b73735612f6253cb1bbfa0a485f}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!Y\+Z\+W@{Y\+Z\+W}}
+\index{Y\+Z\+W@{Y\+Z\+W}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{Y\+Z\+W}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ {\bf vct\+Fixed\+Size\+Const\+Vector\+Ref}$<$\+\_\+element\+Type, 3, \+\_\+stride$>$ {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::Y\+Z\+W (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_fixed_size_const_vector_base_a4c6e3b73735612f6253cb1bbfa0a485f}
+Return a (const) vector reference for the second, third and fourth elements of this vector. \hypertarget{classvct_fixed_size_const_vector_base_a7512e09f861dd14a4953184ba21bea65}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!Z@{Z}}
+\index{Z@{Z}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{Z}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ const value\+\_\+type\& {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::Z (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_fixed_size_const_vector_base_a7512e09f861dd14a4953184ba21bea65}
+Returns the third element of the vector. This method uses \hyperlink{group__cisst_common_ga6a12b7031ea38ac5bf5937b8633c97ff}{C\+M\+N\+\_\+\+A\+S\+S\+E\+R\+T} to check that the size is at least 3. \hypertarget{classvct_fixed_size_const_vector_base_ae712b316e450452ba6603329c9418237}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!Z\+W@{Z\+W}}
+\index{Z\+W@{Z\+W}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{Z\+W}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ {\bf vct\+Fixed\+Size\+Const\+Vector\+Ref}$<$\+\_\+element\+Type, 2, \+\_\+stride$>$ {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::Z\+W (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_fixed_size_const_vector_base_ae712b316e450452ba6603329c9418237}
+Return a (const) vector reference for the two elements of this vector beginning on the third. 
+
+\subsection{Member Data Documentation}
+\hypertarget{classvct_fixed_size_const_vector_base_ad5bab7d48e82872547b8838ef74980ee}{}\index{vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}!Data@{Data}}
+\index{Data@{Data}!vct\+Fixed\+Size\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Const\+Vector\+Base}}
+\subsubsection[{Data}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ \+\_\+data\+Ptr\+Type {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::Data\hspace{0.3cm}{\ttfamily [protected]}}\label{classvct_fixed_size_const_vector_base_ad5bab7d48e82872547b8838ef74980ee}
+A declaration of the vector-\/defining member object 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Vector/\hyperlink{vct_fixed_size_const_vector_base_8h}{vct\+Fixed\+Size\+Const\+Vector\+Base.\+h}\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Vector/\hyperlink{vct_fixed_size_vector_8h}{vct\+Fixed\+Size\+Vector.\+h}\end{DoxyCompactItemize}

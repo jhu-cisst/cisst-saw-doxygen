@@ -1,0 +1,119 @@
+\hypertarget{classcmn_l_o_d_output_multiplexer}{}\section{cmn\+L\+O\+D\+Output\+Multiplexer Class Reference}
+\label{classcmn_l_o_d_output_multiplexer}\index{cmn\+L\+O\+D\+Output\+Multiplexer@{cmn\+L\+O\+D\+Output\+Multiplexer}}
+
+
+Types for dynamic control of output messages.  
+
+
+
+
+{\ttfamily \#include $<$cmn\+L\+O\+D\+Output\+Multiplexer.\+h$>$}
+
+Inheritance diagram for cmn\+L\+O\+D\+Output\+Multiplexer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{d0/df0/classcmn_l_o_d_output_multiplexer}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef char \hyperlink{classcmn_l_o_d_output_multiplexer_a8228345f1af2deaa59cda6f4958c5b3b}{char\+\_\+type}
+\item 
+typedef \hyperlink{classcmn_l_o_d_multiplexer_streambuf}{cmn\+L\+O\+D\+Multiplexer\+Streambuf}$<$ \hyperlink{classcmn_l_o_d_output_multiplexer_a8228345f1af2deaa59cda6f4958c5b3b}{char\+\_\+type} $>$ \hyperlink{classcmn_l_o_d_output_multiplexer_a8020e1fe3db5ba7fb371c4554b986d6c}{Sink\+Type}
+\item 
+typedef std\+::ostream \hyperlink{classcmn_l_o_d_output_multiplexer_a5c02280584b487c3d478b0fee8f829ef}{Base\+Type}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcmn_l_o_d_output_multiplexer_a17b986fa816c80a63425114faceb5dee}{cmn\+L\+O\+D\+Output\+Multiplexer} (\hyperlink{classcmn_l_o_d_output_multiplexer_a8020e1fe3db5ba7fb371c4554b986d6c}{Sink\+Type} $\ast$multiplexer, \hyperlink{cmn_log_lo_d_8h_a70c67165c37a0971e0dd1a85d4edaaae}{cmn\+Log\+Level} level)
+\item 
+\hyperlink{classcmn_l_o_d_output_multiplexer}{cmn\+L\+O\+D\+Output\+Multiplexer} \& \hyperlink{classcmn_l_o_d_output_multiplexer_a4a0452cd477f67f2dc29660ea55aca7e}{Ref} (void)
+\item 
+\hyperlink{cmn_log_lo_d_8h_a70c67165c37a0971e0dd1a85d4edaaae}{cmn\+Log\+Level} \hyperlink{classcmn_l_o_d_output_multiplexer_ad4735fb2cf10f4ffc5df153269e3b6d2}{Get\+L\+O\+D} (void) const 
+\item 
+void \hyperlink{classcmn_l_o_d_output_multiplexer_a4eef514980032c40545b4d40cc4a294b}{Set\+L\+O\+D} (\hyperlink{cmn_log_lo_d_8h_a70c67165c37a0971e0dd1a85d4edaaae}{cmn\+Log\+Level} lod)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Types for dynamic control of output messages. 
+
+This includes debugging information, error reporting, state logging etc. This file declares class \hyperlink{classcmn_l_o_d_output_multiplexer}{cmn\+L\+O\+D\+Output\+Multiplexer}. A \hyperlink{classcmn_l_o_d_output_multiplexer}{cmn\+L\+O\+D\+Output\+Multiplexer} inherits the public interface of a generic ostream, and attaches each output message with a Level Of Detail (L\+O\+D) descriptor. The L\+O\+D descriptor is forwarded through a \hyperlink{classcmn_multiplexer_streambuf_proxy}{cmn\+Multiplexer\+Streambuf\+Proxy} to a \hyperlink{classcmn_l_o_d_multiplexer_streambuf}{cmn\+L\+O\+D\+Multiplexer\+Streambuf} that performs the actual multiplexing.
+
+Create a collection of ostream objects, and attach them to a \hyperlink{classcmn_l_o_d_multiplexer_streambuf}{cmn\+L\+O\+D\+Multiplexer\+Streambuf}. Create a \hyperlink{classcmn_l_o_d_output_multiplexer}{cmn\+L\+O\+D\+Output\+Multiplexer} and assign it with the L\+O\+D value and the \hyperlink{classcmn_l_o_d_multiplexer_streambuf}{cmn\+L\+O\+D\+Multiplexer\+Streambuf} address. Use the standard ostream syntax (operator $<$$<$) to stream objects to the multiplexer.
+
+Example (assume that the object lod\+Multiplexer\+Streambuf is a \hyperlink{classcmn_l_o_d_multiplexer_streambuf}{cmn\+L\+O\+D\+Multiplexer\+Streambuf})\+:
+
+
+\begin{DoxyCode}
+\textcolor{comment}{// The multiple output channels}
+ofstream log(\textcolor{stringliteral}{"logfile.txt"});
+windowoutputstream display;  \textcolor{comment}{// hypothetical class}
+
+\hyperlink{classcmn_l_o_d_output_multiplexer}{cmnLODOutputMultiplexer} multiplexerOutput(&lodMultiplexetStreambuf, 
+      \hyperlink{cmn_log_lo_d_8h_a941e5ff3075571f0ad1e53e1204bd856}{CMN\_LOG\_ALLOW\_DEFAULT});
+
+lodMultiplexerStreambuf.AddChannel(log, \hyperlink{cmn_log_lo_d_8h_a941e5ff3075571f0ad1e53e1204bd856}{CMN\_LOG\_ALLOW\_DEFAULT});
+lodMultiplexerStreambuf.AddChannel(windowoutputstream, \hyperlink{cmn_log_lo_d_8h_acf03c43c8a0fbe1c13b2aa4ac3b0a856}{CMN\_LOG\_ALLOW\_ALL});
+
+multiplexerStreambuf << \textcolor{stringliteral}{"Hello, world"} << endl;  \textcolor{comment}{// channel the message only to 'log'}
+\end{DoxyCode}
+
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{cmn_l_o_d_multiplexer_streambuf_8h}{cmn\+L\+O\+D\+Multiplexer\+Streambuf.\+h}, \hyperlink{cmn_multiplexer_streambuf_proxy_8h}{cmn\+Multiplexer\+Streambuf\+Proxy.\+h}, C++ documentation of basic\+\_\+streambuf and iostream 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classcmn_l_o_d_output_multiplexer_a5c02280584b487c3d478b0fee8f829ef}{}\index{cmn\+L\+O\+D\+Output\+Multiplexer@{cmn\+L\+O\+D\+Output\+Multiplexer}!Base\+Type@{Base\+Type}}
+\index{Base\+Type@{Base\+Type}!cmn\+L\+O\+D\+Output\+Multiplexer@{cmn\+L\+O\+D\+Output\+Multiplexer}}
+\subsubsection[{Base\+Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::ostream {\bf cmn\+L\+O\+D\+Output\+Multiplexer\+::\+Base\+Type}}\label{classcmn_l_o_d_output_multiplexer_a5c02280584b487c3d478b0fee8f829ef}
+\hypertarget{classcmn_l_o_d_output_multiplexer_a8228345f1af2deaa59cda6f4958c5b3b}{}\index{cmn\+L\+O\+D\+Output\+Multiplexer@{cmn\+L\+O\+D\+Output\+Multiplexer}!char\+\_\+type@{char\+\_\+type}}
+\index{char\+\_\+type@{char\+\_\+type}!cmn\+L\+O\+D\+Output\+Multiplexer@{cmn\+L\+O\+D\+Output\+Multiplexer}}
+\subsubsection[{char\+\_\+type}]{\setlength{\rightskip}{0pt plus 5cm}typedef char {\bf cmn\+L\+O\+D\+Output\+Multiplexer\+::char\+\_\+type}}\label{classcmn_l_o_d_output_multiplexer_a8228345f1af2deaa59cda6f4958c5b3b}
+\hypertarget{classcmn_l_o_d_output_multiplexer_a8020e1fe3db5ba7fb371c4554b986d6c}{}\index{cmn\+L\+O\+D\+Output\+Multiplexer@{cmn\+L\+O\+D\+Output\+Multiplexer}!Sink\+Type@{Sink\+Type}}
+\index{Sink\+Type@{Sink\+Type}!cmn\+L\+O\+D\+Output\+Multiplexer@{cmn\+L\+O\+D\+Output\+Multiplexer}}
+\subsubsection[{Sink\+Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf cmn\+L\+O\+D\+Multiplexer\+Streambuf}$<${\bf char\+\_\+type}$>$ {\bf cmn\+L\+O\+D\+Output\+Multiplexer\+::\+Sink\+Type}}\label{classcmn_l_o_d_output_multiplexer_a8020e1fe3db5ba7fb371c4554b986d6c}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcmn_l_o_d_output_multiplexer_a17b986fa816c80a63425114faceb5dee}{}\index{cmn\+L\+O\+D\+Output\+Multiplexer@{cmn\+L\+O\+D\+Output\+Multiplexer}!cmn\+L\+O\+D\+Output\+Multiplexer@{cmn\+L\+O\+D\+Output\+Multiplexer}}
+\index{cmn\+L\+O\+D\+Output\+Multiplexer@{cmn\+L\+O\+D\+Output\+Multiplexer}!cmn\+L\+O\+D\+Output\+Multiplexer@{cmn\+L\+O\+D\+Output\+Multiplexer}}
+\subsubsection[{cmn\+L\+O\+D\+Output\+Multiplexer}]{\setlength{\rightskip}{0pt plus 5cm}cmn\+L\+O\+D\+Output\+Multiplexer\+::cmn\+L\+O\+D\+Output\+Multiplexer (
+\begin{DoxyParamCaption}
+\item[{{\bf Sink\+Type} $\ast$}]{multiplexer, }
+\item[{{\bf cmn\+Log\+Level}}]{level}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classcmn_l_o_d_output_multiplexer_a17b986fa816c80a63425114faceb5dee}
+Constructor that initializes base class and stores L\+O\+D. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classcmn_l_o_d_output_multiplexer_ad4735fb2cf10f4ffc5df153269e3b6d2}{}\index{cmn\+L\+O\+D\+Output\+Multiplexer@{cmn\+L\+O\+D\+Output\+Multiplexer}!Get\+L\+O\+D@{Get\+L\+O\+D}}
+\index{Get\+L\+O\+D@{Get\+L\+O\+D}!cmn\+L\+O\+D\+Output\+Multiplexer@{cmn\+L\+O\+D\+Output\+Multiplexer}}
+\subsubsection[{Get\+L\+O\+D}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cmn\+Log\+Level} cmn\+L\+O\+D\+Output\+Multiplexer\+::\+Get\+L\+O\+D (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classcmn_l_o_d_output_multiplexer_ad4735fb2cf10f4ffc5df153269e3b6d2}
+Returns the Level of Detail. \hypertarget{classcmn_l_o_d_output_multiplexer_a4a0452cd477f67f2dc29660ea55aca7e}{}\index{cmn\+L\+O\+D\+Output\+Multiplexer@{cmn\+L\+O\+D\+Output\+Multiplexer}!Ref@{Ref}}
+\index{Ref@{Ref}!cmn\+L\+O\+D\+Output\+Multiplexer@{cmn\+L\+O\+D\+Output\+Multiplexer}}
+\subsubsection[{Ref}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cmn\+L\+O\+D\+Output\+Multiplexer}\& cmn\+L\+O\+D\+Output\+Multiplexer\+::\+Ref (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classcmn_l_o_d_output_multiplexer_a4a0452cd477f67f2dc29660ea55aca7e}
+This method simply returns a reference to this object. It is used when a \hyperlink{classcmn_l_o_d_output_multiplexer}{cmn\+L\+O\+D\+Output\+Multiplexer} is created and immediately operated on, to ensure that the object operated on is an l-\/value rather than r-\/value. This solves compiler ambiguities and errors that lead to incorrect printout. Use it where the old C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+H\+A\+C\+K would be used. Normally, one doesn\textquotesingle{}t need to call this method in other cases. \hypertarget{classcmn_l_o_d_output_multiplexer_a4eef514980032c40545b4d40cc4a294b}{}\index{cmn\+L\+O\+D\+Output\+Multiplexer@{cmn\+L\+O\+D\+Output\+Multiplexer}!Set\+L\+O\+D@{Set\+L\+O\+D}}
+\index{Set\+L\+O\+D@{Set\+L\+O\+D}!cmn\+L\+O\+D\+Output\+Multiplexer@{cmn\+L\+O\+D\+Output\+Multiplexer}}
+\subsubsection[{Set\+L\+O\+D}]{\setlength{\rightskip}{0pt plus 5cm}void cmn\+L\+O\+D\+Output\+Multiplexer\+::\+Set\+L\+O\+D (
+\begin{DoxyParamCaption}
+\item[{{\bf cmn\+Log\+Level}}]{lod}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classcmn_l_o_d_output_multiplexer_a4eef514980032c40545b4d40cc4a294b}
+Sets the Level of Detail. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Common/\hyperlink{cmn_l_o_d_output_multiplexer_8h}{cmn\+L\+O\+D\+Output\+Multiplexer.\+h}\end{DoxyCompactItemize}

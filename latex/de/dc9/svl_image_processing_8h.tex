@@ -1,0 +1,80 @@
+\hypertarget{svl_image_processing_8h}{}\section{/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Stereo\+Vision/svl\+Image\+Processing.h File Reference}
+\label{svl_image_processing_8h}\index{/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Stereo\+Vision/svl\+Image\+Processing.\+h@{/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Stereo\+Vision/svl\+Image\+Processing.\+h}}
+{\ttfamily \#include $<$cisst\+Stereo\+Vision/svl\+Types.\+h$>$}\\*
+{\ttfamily \#include $<$cisst\+Stereo\+Vision/svl\+Camera\+Geometry.\+h$>$}\\*
+{\ttfamily \#include $<$cisst\+Stereo\+Vision/svl\+Export.\+h$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classsvl_image_processing_1_1_internals}{svl\+Image\+Processing\+::\+Internals}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacesvl_image_processing}{svl\+Image\+Processing}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{namespacesvl_image_processing_a52b75591f8aa2cf8a2b4ea843b2f864a}{svl\+Image\+Processing\+::\+D\+I\+\_\+\+Algorithm} \{ \\*
+\hyperlink{namespacesvl_image_processing_a52b75591f8aa2cf8a2b4ea843b2f864aa73d04fb676b1d8a4eb2e107629637e10}{svl\+Image\+Processing\+::\+D\+I\+\_\+\+None}, 
+\hyperlink{namespacesvl_image_processing_a52b75591f8aa2cf8a2b4ea843b2f864aa228be787d8eacef51545d7b0e5d834c6}{svl\+Image\+Processing\+::\+D\+I\+\_\+\+Blending}, 
+\hyperlink{namespacesvl_image_processing_a52b75591f8aa2cf8a2b4ea843b2f864aa8c3cd58f7894507f4629c50b465d8623}{svl\+Image\+Processing\+::\+D\+I\+\_\+\+Discarding}, 
+\hyperlink{namespacesvl_image_processing_a52b75591f8aa2cf8a2b4ea843b2f864aae669a1776585899a84ae392a39a02ddb}{svl\+Image\+Processing\+::\+D\+I\+\_\+\+Adaptive\+Blending}, 
+\\*
+\hyperlink{namespacesvl_image_processing_a52b75591f8aa2cf8a2b4ea843b2f864aa7c0ad13a0502df7b0ebef799a51d9c4e}{svl\+Image\+Processing\+::\+D\+I\+\_\+\+Adaptive\+Discarding}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} \hyperlink{namespacesvl_image_processing_afec459e2a0098f55c4bbf6046eb3aaa1}{svl\+Image\+Processing\+::\+Convolution} (\hyperlink{classsvl_sample_image}{svl\+Sample\+Image} $\ast$src\+\_\+img, unsigned int src\+\_\+videoch, \hyperlink{classsvl_sample_image}{svl\+Sample\+Image} $\ast$dst\+\_\+img, unsigned int dst\+\_\+videoch, \hyperlink{classvct_dynamic_vector}{vct\+Dynamic\+Vector}$<$ double $>$ kernel\+\_\+horiz, \hyperlink{classvct_dynamic_vector}{vct\+Dynamic\+Vector}$<$ double $>$ kernel\+\_\+vert, bool absres=false)
+\item 
+int \hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} \hyperlink{namespacesvl_image_processing_a880dbed3ab656ceaa85d30c1a21e4e22}{svl\+Image\+Processing\+::\+Convolution} (\hyperlink{classsvl_sample_image}{svl\+Sample\+Image} $\ast$src\+\_\+img, unsigned int src\+\_\+videoch, \hyperlink{classsvl_sample_image}{svl\+Sample\+Image} $\ast$dst\+\_\+img, unsigned int dst\+\_\+videoch, \hyperlink{classvct_dynamic_matrix}{vct\+Dynamic\+Matrix}$<$ double $>$ kernel, bool absres=false)
+\item 
+int \hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} \hyperlink{namespacesvl_image_processing_a80042923e0363cf08cb045b22d5a94f9}{svl\+Image\+Processing\+::\+Unsharp\+Mask} (const \hyperlink{classsvl_sample_image}{svl\+Sample\+Image} $\ast$src\+\_\+img, unsigned int src\+\_\+videoch, \hyperlink{classsvl_sample_image}{svl\+Sample\+Image} $\ast$dst\+\_\+img, unsigned int dst\+\_\+videoch, int radius, double amount, int threshold=0)
+\item 
+int \hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} \hyperlink{namespacesvl_image_processing_a1c84cbebcb082d646b0e304ac23042f3}{svl\+Image\+Processing\+::\+Crop} (\hyperlink{classsvl_sample_image}{svl\+Sample\+Image} $\ast$src\+\_\+img, unsigned int src\+\_\+videoch, \hyperlink{classsvl_sample_image}{svl\+Sample\+Image} $\ast$dst\+\_\+img, unsigned int dst\+\_\+videoch, int left, int top)
+\item 
+int \hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} \hyperlink{namespacesvl_image_processing_ad12f45ec4313ca217249da5793a0e9da}{svl\+Image\+Processing\+::\+Resize} (\hyperlink{classsvl_sample_image}{svl\+Sample\+Image} $\ast$src\+\_\+img, unsigned int src\+\_\+videoch, \hyperlink{classsvl_sample_image}{svl\+Sample\+Image} $\ast$dst\+\_\+img, unsigned int dst\+\_\+videoch, bool interpolation)
+\item 
+int \hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} \hyperlink{namespacesvl_image_processing_ab6fbb6e07771c385bb43ea816db591fa}{svl\+Image\+Processing\+::\+Resize} (\hyperlink{classsvl_sample_image}{svl\+Sample\+Image} $\ast$src\+\_\+img, unsigned int src\+\_\+videoch, \hyperlink{classsvl_sample_image}{svl\+Sample\+Image} $\ast$dst\+\_\+img, unsigned int dst\+\_\+videoch, bool interpolation, \hyperlink{classvct_dynamic_vector}{vct\+Dynamic\+Vector}$<$ unsigned char $>$ \&internals)
+\item 
+int \hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} \hyperlink{namespacesvl_image_processing_a189bad878f0eaa18d73001249f1d6fae}{svl\+Image\+Processing\+::\+Deinterlace} (\hyperlink{classsvl_sample_image}{svl\+Sample\+Image} $\ast$image, unsigned int videoch, D\+I\+\_\+\+Algorithm algorithm)
+\item 
+int \hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} \hyperlink{namespacesvl_image_processing_a1deb4c78574fb77a765f68bb5d6e9d26}{svl\+Image\+Processing\+::\+Disparity\+Map\+To\+Surface} (\hyperlink{svl_sample_matrix_types_8h_ae74daf1a1fd34516e4d5f580b15a24b7}{svl\+Sample\+Matrix\+Float} $\ast$disparity\+\_\+map, \hyperlink{svl_sample_image_types_8h_a3e34d5c72fa0d2a079d24e0668358bfc}{svl\+Sample\+Image3\+D\+Map} $\ast$mesh\+\_\+3d, \hyperlink{classsvl_camera_geometry}{svl\+Camera\+Geometry} \&camera\+\_\+geometry, \hyperlink{structsvl_rect}{svl\+Rect} \&roi)
+\item 
+int \hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} \hyperlink{namespacesvl_image_processing_ad9c69ec6ba8c2bca78c92e6c526aea03}{svl\+Image\+Processing\+::\+Rectify} (\hyperlink{classsvl_sample_image}{svl\+Sample\+Image} $\ast$src\+\_\+img, unsigned int src\+\_\+videoch, \hyperlink{classsvl_sample_image}{svl\+Sample\+Image} $\ast$dst\+\_\+img, unsigned int dst\+\_\+videoch, const std\+::string \&table\+\_\+filename, bool interpolation)
+\item 
+int \hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} \hyperlink{namespacesvl_image_processing_afd12d68b2945a19f275a133bca4e6232}{svl\+Image\+Processing\+::\+Rectify} (\hyperlink{classsvl_sample_image}{svl\+Sample\+Image} $\ast$src\+\_\+img, unsigned int src\+\_\+videoch, \hyperlink{classsvl_sample_image}{svl\+Sample\+Image} $\ast$dst\+\_\+img, unsigned int dst\+\_\+videoch, const std\+::string \&table\+\_\+filename, bool interpolation, Internals \&internals)
+\item 
+int \hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} \hyperlink{namespacesvl_image_processing_aae74cfc118a2828f66163464fd418274}{svl\+Image\+Processing\+::\+Rectify} (\hyperlink{classsvl_sample_image}{svl\+Sample\+Image} $\ast$src\+\_\+img, unsigned int src\+\_\+videoch, \hyperlink{classsvl_sample_image}{svl\+Sample\+Image} $\ast$dst\+\_\+img, unsigned int dst\+\_\+videoch, bool interpolation, Internals \&internals)
+\item 
+int \hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} \hyperlink{namespacesvl_image_processing_ac0f716d58a6015a9648836a883e1fb32}{svl\+Image\+Processing\+::\+Set\+Exposure} (\hyperlink{classsvl_sample_image}{svl\+Sample\+Image} $\ast$image, unsigned int videoch, double brightness, double contrast, double gamma)
+\item 
+int \hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} \hyperlink{namespacesvl_image_processing_ae8acb9198b94108a07bbf0579316658f}{svl\+Image\+Processing\+::\+Set\+Exposure} (\hyperlink{classsvl_sample_image}{svl\+Sample\+Image} $\ast$image, unsigned int videoch, double brightness, double contrast, double gamma, Internals \&internals)
+\item 
+int \hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} \hyperlink{namespacesvl_image_processing_aaac2f4f8efbbb642c2957d91d54a2fac}{svl\+Image\+Processing\+::\+Dilate} (\hyperlink{classsvl_sample_image}{svl\+Sample\+Image} $\ast$src\+\_\+img, unsigned int src\+\_\+videoch, \hyperlink{classsvl_sample_image}{svl\+Sample\+Image} $\ast$dst\+\_\+img, unsigned int dst\+\_\+videoch, unsigned int radius)
+\item 
+int \hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} \hyperlink{namespacesvl_image_processing_abaa033a40ea75268ed95876ba061a7b5}{svl\+Image\+Processing\+::\+Erode} (\hyperlink{classsvl_sample_image}{svl\+Sample\+Image} $\ast$src\+\_\+img, unsigned int src\+\_\+videoch, \hyperlink{classsvl_sample_image}{svl\+Sample\+Image} $\ast$dst\+\_\+img, unsigned int dst\+\_\+videoch, unsigned int radius)
+\item 
+int \hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} \hyperlink{namespacesvl_image_processing_adbdd2812201b8085d9f4a37cdd2858a7}{svl\+Image\+Processing\+::\+Blend} (\hyperlink{classsvl_sample_image}{svl\+Sample\+Image} $\ast$src1\+\_\+img, unsigned int src1\+\_\+videoch, \hyperlink{classsvl_sample_image}{svl\+Sample\+Image} $\ast$src2\+\_\+img, unsigned int src2\+\_\+videoch, \hyperlink{classsvl_sample_image}{svl\+Sample\+Image} $\ast$mask\+\_\+img, unsigned int mask\+\_\+videoch, \hyperlink{classsvl_sample_image}{svl\+Sample\+Image} $\ast$dst\+\_\+img, unsigned int dst\+\_\+videoch)
+\item 
+int \hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} \hyperlink{namespacesvl_image_processing_a454ae19ad32cfb837dd13169a01d5d99}{svl\+Image\+Processing\+::\+Swap\+Color\+Channels} (\hyperlink{classsvl_sample_image}{svl\+Sample\+Image} $\ast$src\+\_\+img, unsigned int src\+\_\+videoch, \hyperlink{classsvl_sample_image}{svl\+Sample\+Image} $\ast$dst\+\_\+img, unsigned int dst\+\_\+videoch)
+\item 
+unsigned int \hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} \hyperlink{namespacesvl_image_processing_ab67a8fcff51b4dbddda68a51697ea222}{svl\+Image\+Processing\+::\+Label\+Blobs} (const \hyperlink{svl_sample_image_types_8h_a812ff42c7181179f558b68c43eeacee5}{svl\+Sample\+Image\+Mono8} $\ast$image, \hyperlink{svl_sample_image_types_8h_ac5d9d107eabb65b55f67d2a70ccf2cd6}{svl\+Sample\+Image\+Mono32} $\ast$labels, Internals \&internals)
+\item 
+unsigned int \hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} \hyperlink{namespacesvl_image_processing_a03a2903ed508d4db0f8d21517d03344e}{svl\+Image\+Processing\+::\+Label\+Blobs} (const \hyperlink{svl_sample_image_types_8h_a40d6fa6c50215a4f52a8027a42eef1d9}{svl\+Sample\+Image\+Mono8\+Stereo} $\ast$image, \hyperlink{svl_sample_image_types_8h_a31510d38b03e3baeedb79e24fe3c7d0b}{svl\+Sample\+Image\+Mono32\+Stereo} $\ast$labels, const unsigned int videoch, Internals \&internals)
+\item 
+int \hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} \hyperlink{namespacesvl_image_processing_a6831b99429115d0e46283e0f423c4c6a}{svl\+Image\+Processing\+::\+Get\+Blobs\+From\+Labels} (const \hyperlink{svl_sample_image_types_8h_a812ff42c7181179f558b68c43eeacee5}{svl\+Sample\+Image\+Mono8} $\ast$image, const \hyperlink{svl_sample_image_types_8h_ac5d9d107eabb65b55f67d2a70ccf2cd6}{svl\+Sample\+Image\+Mono32} $\ast$labels, \hyperlink{classsvl_sample_blobs}{svl\+Sample\+Blobs} $\ast$blobs, Internals \&internals, unsigned int min\+\_\+area=0, unsigned int max\+\_\+area=0, double min\+\_\+compactness=0.\+0, double max\+\_\+compactness=0.\+0)
+\item 
+int \hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} \hyperlink{namespacesvl_image_processing_ab99d41836ca0a0aac47b00a1c803bb76}{svl\+Image\+Processing\+::\+Get\+Blobs\+From\+Labels} (const \hyperlink{svl_sample_image_types_8h_a40d6fa6c50215a4f52a8027a42eef1d9}{svl\+Sample\+Image\+Mono8\+Stereo} $\ast$image, const \hyperlink{svl_sample_image_types_8h_a31510d38b03e3baeedb79e24fe3c7d0b}{svl\+Sample\+Image\+Mono32\+Stereo} $\ast$labels, \hyperlink{classsvl_sample_blobs}{svl\+Sample\+Blobs} $\ast$blobs, const unsigned int videoch, Internals \&internals, unsigned int min\+\_\+area=0, unsigned int max\+\_\+area=0, double min\+\_\+compactness=0.\+0, double max\+\_\+compactness=0.\+0)
+\item 
+int \hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} \hyperlink{namespacesvl_image_processing_a4a85afa0bb53375e699868c357452543}{svl\+Image\+Processing\+::\+Fit\+Ellipse} (\hyperlink{classvct_dynamic_vector}{vct\+Dynamic\+Vector}$<$ \hyperlink{vct_fixed_size_vector_types_8h_add8c88eb6a432b15f14b866b9c35325f}{vct\+Int2} $>$ \&points, \hyperlink{structsvl_ellipse}{svl\+Ellipse} \&ellipse, Internals \&internals)
+\item 
+int \hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} \hyperlink{namespacesvl_image_processing_aad9cc4e49aa720ddcee41baf824d9f23}{svl\+Image\+Processing\+::\+Fit\+Ellipse} (\hyperlink{classvct_dynamic_vector_ref}{vct\+Dynamic\+Vector\+Ref}$<$ \hyperlink{vct_fixed_size_vector_types_8h_add8c88eb6a432b15f14b866b9c35325f}{vct\+Int2} $>$ \&points, \hyperlink{structsvl_ellipse}{svl\+Ellipse} \&ellipse, Internals \&internals)
+\item 
+int \hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} \hyperlink{namespacesvl_image_processing_acfdf5370aa634ba4667c30c3bcde4d38}{svl\+Image\+Processing\+::\+Fit\+Ellipse} (\hyperlink{classvct_dynamic_vector}{vct\+Dynamic\+Vector}$<$ int $>$ \&xs, \hyperlink{classvct_dynamic_vector}{vct\+Dynamic\+Vector}$<$ int $>$ \&ys, \hyperlink{structsvl_ellipse}{svl\+Ellipse} \&ellipse, Internals \&internals)
+\item 
+int \hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} \hyperlink{namespacesvl_image_processing_a78eee24a87a52ecc83dc9e68f8b68d9c}{svl\+Image\+Processing\+::\+Fit\+Ellipse} (\hyperlink{classvct_dynamic_vector_ref}{vct\+Dynamic\+Vector\+Ref}$<$ int $>$ \&xs, \hyperlink{classvct_dynamic_vector_ref}{vct\+Dynamic\+Vector\+Ref}$<$ int $>$ \&ys, \hyperlink{structsvl_ellipse}{svl\+Ellipse} \&ellipse, Internals \&internals)
+\end{DoxyCompactItemize}

@@ -1,0 +1,134 @@
+\hypertarget{classsvl_filter_add_latency}{}\section{svl\+Filter\+Add\+Latency Class Reference}
+\label{classsvl_filter_add_latency}\index{svl\+Filter\+Add\+Latency@{svl\+Filter\+Add\+Latency}}
+
+
+{\ttfamily \#include $<$svl\+Filter\+Add\+Latency.\+h$>$}
+
+Inheritance diagram for svl\+Filter\+Add\+Latency\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{d1/d9c/classsvl_filter_add_latency}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsvl_filter_add_latency_a8a35f064afd54f5e79a83e7325991f47}{svl\+Filter\+Add\+Latency} (void)
+\item 
+virtual \hyperlink{classsvl_filter_add_latency_a00b6253e53e92f5904374de49de3d6f2}{$\sim$svl\+Filter\+Add\+Latency} ()
+\item 
+void \hyperlink{classsvl_filter_add_latency_a5762a25ca96b3348737b826c9bacfd84}{Up\+Latency} (void)
+\item 
+void \hyperlink{classsvl_filter_add_latency_a37f482dc4b5cb281143f035ac0ee7015}{Down\+Latency} (void)
+\item 
+void \hyperlink{classsvl_filter_add_latency_ae6279a563cfb972897ac1c1798a95183}{Set\+Frame\+Delayed} (const unsigned int number\+Of\+Frames)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual int \hyperlink{classsvl_filter_add_latency_ad06a3990b76dfac940511599a2878d2c}{Initialize} (\hyperlink{classsvl_sample}{svl\+Sample} $\ast$sync\+Input, \hyperlink{classsvl_sample}{svl\+Sample} $\ast$\&sync\+Output)
+\item 
+virtual int \hyperlink{classsvl_filter_add_latency_ada70c21a47779f0a2c1342bd487ee17a}{Process} (\hyperlink{structsvl_proc_info}{svl\+Proc\+Info} $\ast$proc\+Info, \hyperlink{classsvl_sample}{svl\+Sample} $\ast$sync\+Input, \hyperlink{classsvl_sample}{svl\+Sample} $\ast$\&sync\+Output)
+\item 
+virtual int \hyperlink{classsvl_filter_add_latency_af980f5dc40c61ea9c2430fecbe123ef8}{Release} (void)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000010}{Todo}]Check if we could use an stl container to manager the list of samples 
+
+Change A\+P\+I to define latency in seconds 
+
+Remove up/down by a hard coded number of samples 
+
+In Release, make sure memory is freed for linked list 
+
+Is memcpy the best way to copy the in/out samples, is there a more generic way? 
+
+Add interface provided to set latency 
+
+Add method to report memory size used \end{DoxyRefDesc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classsvl_filter_add_latency_a8a35f064afd54f5e79a83e7325991f47}{}\index{svl\+Filter\+Add\+Latency@{svl\+Filter\+Add\+Latency}!svl\+Filter\+Add\+Latency@{svl\+Filter\+Add\+Latency}}
+\index{svl\+Filter\+Add\+Latency@{svl\+Filter\+Add\+Latency}!svl\+Filter\+Add\+Latency@{svl\+Filter\+Add\+Latency}}
+\subsubsection[{svl\+Filter\+Add\+Latency}]{\setlength{\rightskip}{0pt plus 5cm}svl\+Filter\+Add\+Latency\+::svl\+Filter\+Add\+Latency (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classsvl_filter_add_latency_a8a35f064afd54f5e79a83e7325991f47}
+\hypertarget{classsvl_filter_add_latency_a00b6253e53e92f5904374de49de3d6f2}{}\index{svl\+Filter\+Add\+Latency@{svl\+Filter\+Add\+Latency}!````~svl\+Filter\+Add\+Latency@{$\sim$svl\+Filter\+Add\+Latency}}
+\index{````~svl\+Filter\+Add\+Latency@{$\sim$svl\+Filter\+Add\+Latency}!svl\+Filter\+Add\+Latency@{svl\+Filter\+Add\+Latency}}
+\subsubsection[{$\sim$svl\+Filter\+Add\+Latency}]{\setlength{\rightskip}{0pt plus 5cm}virtual svl\+Filter\+Add\+Latency\+::$\sim$svl\+Filter\+Add\+Latency (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classsvl_filter_add_latency_a00b6253e53e92f5904374de49de3d6f2}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classsvl_filter_add_latency_a37f482dc4b5cb281143f035ac0ee7015}{}\index{svl\+Filter\+Add\+Latency@{svl\+Filter\+Add\+Latency}!Down\+Latency@{Down\+Latency}}
+\index{Down\+Latency@{Down\+Latency}!svl\+Filter\+Add\+Latency@{svl\+Filter\+Add\+Latency}}
+\subsubsection[{Down\+Latency}]{\setlength{\rightskip}{0pt plus 5cm}void svl\+Filter\+Add\+Latency\+::\+Down\+Latency (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classsvl_filter_add_latency_a37f482dc4b5cb281143f035ac0ee7015}
+\hypertarget{classsvl_filter_add_latency_ad06a3990b76dfac940511599a2878d2c}{}\index{svl\+Filter\+Add\+Latency@{svl\+Filter\+Add\+Latency}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!svl\+Filter\+Add\+Latency@{svl\+Filter\+Add\+Latency}}
+\subsubsection[{Initialize}]{\setlength{\rightskip}{0pt plus 5cm}virtual int svl\+Filter\+Add\+Latency\+::\+Initialize (
+\begin{DoxyParamCaption}
+\item[{{\bf svl\+Sample} $\ast$}]{sync\+Input, }
+\item[{{\bf svl\+Sample} $\ast$\&}]{sync\+Output}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classsvl_filter_add_latency_ad06a3990b76dfac940511599a2878d2c}
+
+
+Implements \hyperlink{classsvl_filter_base_ac8eddcd9336c2b381facc8fb372e3bfb}{svl\+Filter\+Base}.
+
+\hypertarget{classsvl_filter_add_latency_ada70c21a47779f0a2c1342bd487ee17a}{}\index{svl\+Filter\+Add\+Latency@{svl\+Filter\+Add\+Latency}!Process@{Process}}
+\index{Process@{Process}!svl\+Filter\+Add\+Latency@{svl\+Filter\+Add\+Latency}}
+\subsubsection[{Process}]{\setlength{\rightskip}{0pt plus 5cm}virtual int svl\+Filter\+Add\+Latency\+::\+Process (
+\begin{DoxyParamCaption}
+\item[{{\bf svl\+Proc\+Info} $\ast$}]{proc\+Info, }
+\item[{{\bf svl\+Sample} $\ast$}]{sync\+Input, }
+\item[{{\bf svl\+Sample} $\ast$\&}]{sync\+Output}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classsvl_filter_add_latency_ada70c21a47779f0a2c1342bd487ee17a}
+
+
+Implements \hyperlink{classsvl_filter_base_aaff77d711088384d00e717fb4ec88aab}{svl\+Filter\+Base}.
+
+\hypertarget{classsvl_filter_add_latency_af980f5dc40c61ea9c2430fecbe123ef8}{}\index{svl\+Filter\+Add\+Latency@{svl\+Filter\+Add\+Latency}!Release@{Release}}
+\index{Release@{Release}!svl\+Filter\+Add\+Latency@{svl\+Filter\+Add\+Latency}}
+\subsubsection[{Release}]{\setlength{\rightskip}{0pt plus 5cm}virtual int svl\+Filter\+Add\+Latency\+::\+Release (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classsvl_filter_add_latency_af980f5dc40c61ea9c2430fecbe123ef8}
+
+
+Reimplemented from \hyperlink{classsvl_filter_base_ab689b852e2cee497fcd0ca6708105e17}{svl\+Filter\+Base}.
+
+\hypertarget{classsvl_filter_add_latency_ae6279a563cfb972897ac1c1798a95183}{}\index{svl\+Filter\+Add\+Latency@{svl\+Filter\+Add\+Latency}!Set\+Frame\+Delayed@{Set\+Frame\+Delayed}}
+\index{Set\+Frame\+Delayed@{Set\+Frame\+Delayed}!svl\+Filter\+Add\+Latency@{svl\+Filter\+Add\+Latency}}
+\subsubsection[{Set\+Frame\+Delayed}]{\setlength{\rightskip}{0pt plus 5cm}void svl\+Filter\+Add\+Latency\+::\+Set\+Frame\+Delayed (
+\begin{DoxyParamCaption}
+\item[{const unsigned int}]{number\+Of\+Frames}
+\end{DoxyParamCaption}
+)}\label{classsvl_filter_add_latency_ae6279a563cfb972897ac1c1798a95183}
+\hypertarget{classsvl_filter_add_latency_a5762a25ca96b3348737b826c9bacfd84}{}\index{svl\+Filter\+Add\+Latency@{svl\+Filter\+Add\+Latency}!Up\+Latency@{Up\+Latency}}
+\index{Up\+Latency@{Up\+Latency}!svl\+Filter\+Add\+Latency@{svl\+Filter\+Add\+Latency}}
+\subsubsection[{Up\+Latency}]{\setlength{\rightskip}{0pt plus 5cm}void svl\+Filter\+Add\+Latency\+::\+Up\+Latency (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classsvl_filter_add_latency_a5762a25ca96b3348737b826c9bacfd84}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Stereo\+Vision/\hyperlink{svl_filter_add_latency_8h}{svl\+Filter\+Add\+Latency.\+h}\end{DoxyCompactItemize}

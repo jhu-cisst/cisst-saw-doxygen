@@ -1,0 +1,244 @@
+\hypertarget{classmts_connection}{}\section{mts\+Connection Class Reference}
+\label{classmts_connection}\index{mts\+Connection@{mts\+Connection}}
+
+
+{\ttfamily \#include $<$mts\+Connection.\+h$>$}
+
+Inheritance diagram for mts\+Connection\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{d8/da5/classmts_connection}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmts_connection_a071972ee336069bba608bd6737251c80}{mts\+Connection} (const mts\+Description\+Connection \&description, const std\+::string \&request\+Process\+Name)
+\item 
+\hyperlink{mts_forward_declarations_8h_ad3543bb11742e1766374ec96016d6547}{Connection\+I\+D\+Type} \hyperlink{classmts_connection_a0cdb99db04bf430b6d66d101a06632e7}{Get\+Connection\+I\+D} (void) const 
+\item 
+std\+::string \hyperlink{classmts_connection_a863c48dc7afc08a3cf46daa8baefc71d}{Get\+Client\+Process\+Name} (void) const 
+\item 
+std\+::string \hyperlink{classmts_connection_a3121c2b3b8b866c02061f1933cb6dbb3}{Get\+Client\+Component\+Name} (void) const 
+\item 
+std\+::string \hyperlink{classmts_connection_a9e646b120e7922e1cc541b3cd76f8cdc}{Get\+Client\+Interface\+Name} (void) const 
+\item 
+std\+::string \hyperlink{classmts_connection_a7238662b0ee1b16715b154bdc3e7d2b1}{Get\+Server\+Process\+Name} (void) const 
+\item 
+std\+::string \hyperlink{classmts_connection_a5840d98170336716c9e12b0790807b01}{Get\+Server\+Component\+Name} (void) const 
+\item 
+std\+::string \hyperlink{classmts_connection_a846f0404697261cd08493abbd9fe0b23}{Get\+Server\+Interface\+Name} (void) const 
+\item 
+mts\+Description\+Connection \hyperlink{classmts_connection_a57ce93d13a639abfde415fce5aea3b4f}{Get\+Description\+Connection} (void) const 
+\item 
+void \hyperlink{classmts_connection_a8cf4f6f7a4fb474edb6a853d9365d751}{Get\+Description\+Connection} (mts\+Description\+Connection \&description) const 
+\item 
+bool \hyperlink{classmts_connection_ae9b6fd039a212ad72e7ccfd4a290cf25}{Is\+Connected} (void) const 
+\item 
+void \hyperlink{classmts_connection_ab6500a009f3f07c65be009eb7b6acd2f}{Set\+Connected} (void)
+\item 
+bool \hyperlink{classmts_connection_ac1299d1d2ab8168b017950fc372268f4}{Is\+Remote\+Connection} (void) const 
+\item 
+std\+::string \hyperlink{classmts_connection_a995804182172f108d74d7921e8335884}{Get\+Endpoint\+Info} (void) const 
+\item 
+void \hyperlink{classmts_connection_ae3cb5e96eb3b93919f1a43d3f4ec19be}{Set\+Proxy\+Access\+Info} (const std\+::string \&endpoint\+Info)
+\item 
+bool \hyperlink{classmts_connection_a60f579a4b4c6b4e08497b48ed4ef41a4}{Check\+Timeout} (void) const 
+\item 
+void \hyperlink{classmts_connection_ac622a2e9885cfbbc588f9a08a0849f38}{To\+Stream} (std\+::ostream \&output\+Stream) const 
+\item 
+void \hyperlink{classmts_connection_a2a29a2b202174b39c7b0f93d18791fb5}{Serialize\+Raw} (std\+::ostream \&output\+Stream) const 
+\item 
+void \hyperlink{classmts_connection_a893608b72a416d37013db5d036482100}{De\+Serialize\+Raw} (std\+::istream \&input\+Stream)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+mts\+Description\+Connection \hyperlink{classmts_connection_a0a529fcb9c6627e79c49eb05265dd43e}{Connection\+Description}
+\item 
+const std\+::string \hyperlink{classmts_connection_a81c4b5147db8f46d70b30c7fabbc72c8}{Request\+Process\+Name}
+\item 
+bool \hyperlink{classmts_connection_a2384cf6081cf01b9330bf6810108c2b5}{Connected}
+\item 
+std\+::string \hyperlink{classmts_connection_ad5e701a7d4fe0a27b084d0f8d161c7d6}{Endpoint\+Info}
+\item 
+double \hyperlink{classmts_connection_a6c190911c627762bcdc0a2145a6739c8}{Timeout\+Time}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Data structure to keep connection information 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmts_connection_a071972ee336069bba608bd6737251c80}{}\index{mts\+Connection@{mts\+Connection}!mts\+Connection@{mts\+Connection}}
+\index{mts\+Connection@{mts\+Connection}!mts\+Connection@{mts\+Connection}}
+\subsubsection[{mts\+Connection}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Connection\+::mts\+Connection (
+\begin{DoxyParamCaption}
+\item[{const mts\+Description\+Connection \&}]{description, }
+\item[{const std\+::string \&}]{request\+Process\+Name}
+\end{DoxyParamCaption}
+)}\label{classmts_connection_a071972ee336069bba608bd6737251c80}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classmts_connection_a60f579a4b4c6b4e08497b48ed4ef41a4}{}\index{mts\+Connection@{mts\+Connection}!Check\+Timeout@{Check\+Timeout}}
+\index{Check\+Timeout@{Check\+Timeout}!mts\+Connection@{mts\+Connection}}
+\subsubsection[{Check\+Timeout}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Connection\+::\+Check\+Timeout (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classmts_connection_a60f579a4b4c6b4e08497b48ed4ef41a4}
+In the state of pending connection, check if this connection should be invalidated due to connection timeout \hypertarget{classmts_connection_a893608b72a416d37013db5d036482100}{}\index{mts\+Connection@{mts\+Connection}!De\+Serialize\+Raw@{De\+Serialize\+Raw}}
+\index{De\+Serialize\+Raw@{De\+Serialize\+Raw}!mts\+Connection@{mts\+Connection}}
+\subsubsection[{De\+Serialize\+Raw}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Connection\+::\+De\+Serialize\+Raw (
+\begin{DoxyParamCaption}
+\item[{std\+::istream \&}]{input\+Stream}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_connection_a893608b72a416d37013db5d036482100}
+Binary deserialization 
+
+Reimplemented from \hyperlink{classmts_generic_object_af83ae8622a742a5b94bf72e53d20a1cd}{mts\+Generic\+Object}.
+
+\hypertarget{classmts_connection_a3121c2b3b8b866c02061f1933cb6dbb3}{}\index{mts\+Connection@{mts\+Connection}!Get\+Client\+Component\+Name@{Get\+Client\+Component\+Name}}
+\index{Get\+Client\+Component\+Name@{Get\+Client\+Component\+Name}!mts\+Connection@{mts\+Connection}}
+\subsubsection[{Get\+Client\+Component\+Name}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string mts\+Connection\+::\+Get\+Client\+Component\+Name (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classmts_connection_a3121c2b3b8b866c02061f1933cb6dbb3}
+\hypertarget{classmts_connection_a9e646b120e7922e1cc541b3cd76f8cdc}{}\index{mts\+Connection@{mts\+Connection}!Get\+Client\+Interface\+Name@{Get\+Client\+Interface\+Name}}
+\index{Get\+Client\+Interface\+Name@{Get\+Client\+Interface\+Name}!mts\+Connection@{mts\+Connection}}
+\subsubsection[{Get\+Client\+Interface\+Name}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string mts\+Connection\+::\+Get\+Client\+Interface\+Name (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classmts_connection_a9e646b120e7922e1cc541b3cd76f8cdc}
+\hypertarget{classmts_connection_a863c48dc7afc08a3cf46daa8baefc71d}{}\index{mts\+Connection@{mts\+Connection}!Get\+Client\+Process\+Name@{Get\+Client\+Process\+Name}}
+\index{Get\+Client\+Process\+Name@{Get\+Client\+Process\+Name}!mts\+Connection@{mts\+Connection}}
+\subsubsection[{Get\+Client\+Process\+Name}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string mts\+Connection\+::\+Get\+Client\+Process\+Name (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classmts_connection_a863c48dc7afc08a3cf46daa8baefc71d}
+\hypertarget{classmts_connection_a0cdb99db04bf430b6d66d101a06632e7}{}\index{mts\+Connection@{mts\+Connection}!Get\+Connection\+I\+D@{Get\+Connection\+I\+D}}
+\index{Get\+Connection\+I\+D@{Get\+Connection\+I\+D}!mts\+Connection@{mts\+Connection}}
+\subsubsection[{Get\+Connection\+I\+D}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Connection\+I\+D\+Type} mts\+Connection\+::\+Get\+Connection\+I\+D (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classmts_connection_a0cdb99db04bf430b6d66d101a06632e7}
+Getters and Setters \hypertarget{classmts_connection_a57ce93d13a639abfde415fce5aea3b4f}{}\index{mts\+Connection@{mts\+Connection}!Get\+Description\+Connection@{Get\+Description\+Connection}}
+\index{Get\+Description\+Connection@{Get\+Description\+Connection}!mts\+Connection@{mts\+Connection}}
+\subsubsection[{Get\+Description\+Connection}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Description\+Connection mts\+Connection\+::\+Get\+Description\+Connection (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classmts_connection_a57ce93d13a639abfde415fce5aea3b4f}
+\hypertarget{classmts_connection_a8cf4f6f7a4fb474edb6a853d9365d751}{}\index{mts\+Connection@{mts\+Connection}!Get\+Description\+Connection@{Get\+Description\+Connection}}
+\index{Get\+Description\+Connection@{Get\+Description\+Connection}!mts\+Connection@{mts\+Connection}}
+\subsubsection[{Get\+Description\+Connection}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Connection\+::\+Get\+Description\+Connection (
+\begin{DoxyParamCaption}
+\item[{mts\+Description\+Connection \&}]{description}
+\end{DoxyParamCaption}
+) const}\label{classmts_connection_a8cf4f6f7a4fb474edb6a853d9365d751}
+\hypertarget{classmts_connection_a995804182172f108d74d7921e8335884}{}\index{mts\+Connection@{mts\+Connection}!Get\+Endpoint\+Info@{Get\+Endpoint\+Info}}
+\index{Get\+Endpoint\+Info@{Get\+Endpoint\+Info}!mts\+Connection@{mts\+Connection}}
+\subsubsection[{Get\+Endpoint\+Info}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string mts\+Connection\+::\+Get\+Endpoint\+Info (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_connection_a995804182172f108d74d7921e8335884}
+\hypertarget{classmts_connection_a5840d98170336716c9e12b0790807b01}{}\index{mts\+Connection@{mts\+Connection}!Get\+Server\+Component\+Name@{Get\+Server\+Component\+Name}}
+\index{Get\+Server\+Component\+Name@{Get\+Server\+Component\+Name}!mts\+Connection@{mts\+Connection}}
+\subsubsection[{Get\+Server\+Component\+Name}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string mts\+Connection\+::\+Get\+Server\+Component\+Name (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classmts_connection_a5840d98170336716c9e12b0790807b01}
+\hypertarget{classmts_connection_a846f0404697261cd08493abbd9fe0b23}{}\index{mts\+Connection@{mts\+Connection}!Get\+Server\+Interface\+Name@{Get\+Server\+Interface\+Name}}
+\index{Get\+Server\+Interface\+Name@{Get\+Server\+Interface\+Name}!mts\+Connection@{mts\+Connection}}
+\subsubsection[{Get\+Server\+Interface\+Name}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string mts\+Connection\+::\+Get\+Server\+Interface\+Name (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classmts_connection_a846f0404697261cd08493abbd9fe0b23}
+\hypertarget{classmts_connection_a7238662b0ee1b16715b154bdc3e7d2b1}{}\index{mts\+Connection@{mts\+Connection}!Get\+Server\+Process\+Name@{Get\+Server\+Process\+Name}}
+\index{Get\+Server\+Process\+Name@{Get\+Server\+Process\+Name}!mts\+Connection@{mts\+Connection}}
+\subsubsection[{Get\+Server\+Process\+Name}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string mts\+Connection\+::\+Get\+Server\+Process\+Name (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classmts_connection_a7238662b0ee1b16715b154bdc3e7d2b1}
+\hypertarget{classmts_connection_ae9b6fd039a212ad72e7ccfd4a290cf25}{}\index{mts\+Connection@{mts\+Connection}!Is\+Connected@{Is\+Connected}}
+\index{Is\+Connected@{Is\+Connected}!mts\+Connection@{mts\+Connection}}
+\subsubsection[{Is\+Connected}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Connection\+::\+Is\+Connected (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_connection_ae9b6fd039a212ad72e7ccfd4a290cf25}
+\hypertarget{classmts_connection_ac1299d1d2ab8168b017950fc372268f4}{}\index{mts\+Connection@{mts\+Connection}!Is\+Remote\+Connection@{Is\+Remote\+Connection}}
+\index{Is\+Remote\+Connection@{Is\+Remote\+Connection}!mts\+Connection@{mts\+Connection}}
+\subsubsection[{Is\+Remote\+Connection}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Connection\+::\+Is\+Remote\+Connection (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classmts_connection_ac1299d1d2ab8168b017950fc372268f4}
+\hypertarget{classmts_connection_a2a29a2b202174b39c7b0f93d18791fb5}{}\index{mts\+Connection@{mts\+Connection}!Serialize\+Raw@{Serialize\+Raw}}
+\index{Serialize\+Raw@{Serialize\+Raw}!mts\+Connection@{mts\+Connection}}
+\subsubsection[{Serialize\+Raw}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Connection\+::\+Serialize\+Raw (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{output\+Stream}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_connection_a2a29a2b202174b39c7b0f93d18791fb5}
+Binary serialization 
+
+Reimplemented from \hyperlink{classmts_generic_object_a33d4404a50a87243ca5a1e2b1913dd3b}{mts\+Generic\+Object}.
+
+\hypertarget{classmts_connection_ab6500a009f3f07c65be009eb7b6acd2f}{}\index{mts\+Connection@{mts\+Connection}!Set\+Connected@{Set\+Connected}}
+\index{Set\+Connected@{Set\+Connected}!mts\+Connection@{mts\+Connection}}
+\subsubsection[{Set\+Connected}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Connection\+::\+Set\+Connected (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_connection_ab6500a009f3f07c65be009eb7b6acd2f}
+\hypertarget{classmts_connection_ae3cb5e96eb3b93919f1a43d3f4ec19be}{}\index{mts\+Connection@{mts\+Connection}!Set\+Proxy\+Access\+Info@{Set\+Proxy\+Access\+Info}}
+\index{Set\+Proxy\+Access\+Info@{Set\+Proxy\+Access\+Info}!mts\+Connection@{mts\+Connection}}
+\subsubsection[{Set\+Proxy\+Access\+Info}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Connection\+::\+Set\+Proxy\+Access\+Info (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{endpoint\+Info}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_connection_ae3cb5e96eb3b93919f1a43d3f4ec19be}
+\hypertarget{classmts_connection_ac622a2e9885cfbbc588f9a08a0849f38}{}\index{mts\+Connection@{mts\+Connection}!To\+Stream@{To\+Stream}}
+\index{To\+Stream@{To\+Stream}!mts\+Connection@{mts\+Connection}}
+\subsubsection[{To\+Stream}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Connection\+::\+To\+Stream (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{output\+Stream}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_connection_ac622a2e9885cfbbc588f9a08a0849f38}
+Human readable text output. This method only streams the data members of \hyperlink{classmts_generic_object}{mts\+Generic\+Object}, i.\+e. the Timestamp and Valid flag. It should be called by any derived class re-\/implementing To\+Stream. 
+
+Reimplemented from \hyperlink{classmts_generic_object_a2030aaa58bc215eccce1dc8d20dd0fdc}{mts\+Generic\+Object}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classmts_connection_a2384cf6081cf01b9330bf6810108c2b5}{}\index{mts\+Connection@{mts\+Connection}!Connected@{Connected}}
+\index{Connected@{Connected}!mts\+Connection@{mts\+Connection}}
+\subsubsection[{Connected}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Connection\+::\+Connected\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_connection_a2384cf6081cf01b9330bf6810108c2b5}
+\hypertarget{classmts_connection_a0a529fcb9c6627e79c49eb05265dd43e}{}\index{mts\+Connection@{mts\+Connection}!Connection\+Description@{Connection\+Description}}
+\index{Connection\+Description@{Connection\+Description}!mts\+Connection@{mts\+Connection}}
+\subsubsection[{Connection\+Description}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Description\+Connection mts\+Connection\+::\+Connection\+Description\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_connection_a0a529fcb9c6627e79c49eb05265dd43e}
+\hypertarget{classmts_connection_ad5e701a7d4fe0a27b084d0f8d161c7d6}{}\index{mts\+Connection@{mts\+Connection}!Endpoint\+Info@{Endpoint\+Info}}
+\index{Endpoint\+Info@{Endpoint\+Info}!mts\+Connection@{mts\+Connection}}
+\subsubsection[{Endpoint\+Info}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string mts\+Connection\+::\+Endpoint\+Info\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_connection_ad5e701a7d4fe0a27b084d0f8d161c7d6}
+\hypertarget{classmts_connection_a81c4b5147db8f46d70b30c7fabbc72c8}{}\index{mts\+Connection@{mts\+Connection}!Request\+Process\+Name@{Request\+Process\+Name}}
+\index{Request\+Process\+Name@{Request\+Process\+Name}!mts\+Connection@{mts\+Connection}}
+\subsubsection[{Request\+Process\+Name}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string mts\+Connection\+::\+Request\+Process\+Name\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_connection_a81c4b5147db8f46d70b30c7fabbc72c8}
+\hypertarget{classmts_connection_a6c190911c627762bcdc0a2145a6739c8}{}\index{mts\+Connection@{mts\+Connection}!Timeout\+Time@{Timeout\+Time}}
+\index{Timeout\+Time@{Timeout\+Time}!mts\+Connection@{mts\+Connection}}
+\subsubsection[{Timeout\+Time}]{\setlength{\rightskip}{0pt plus 5cm}double mts\+Connection\+::\+Timeout\+Time\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_connection_a6c190911c627762bcdc0a2145a6739c8}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Multi\+Task/\hyperlink{mts_connection_8h}{mts\+Connection.\+h}\end{DoxyCompactItemize}

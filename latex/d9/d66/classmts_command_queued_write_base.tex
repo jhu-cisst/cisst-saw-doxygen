@@ -1,0 +1,243 @@
+\hypertarget{classmts_command_queued_write_base}{}\section{mts\+Command\+Queued\+Write\+Base Class Reference}
+\label{classmts_command_queued_write_base}\index{mts\+Command\+Queued\+Write\+Base@{mts\+Command\+Queued\+Write\+Base}}
+
+
+{\ttfamily \#include $<$mts\+Command\+Queued\+Write\+Base.\+h$>$}
+
+Inheritance diagram for mts\+Command\+Queued\+Write\+Base\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{d9/d66/classmts_command_queued_write_base}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmts_command_queued_write_base_a3acce98115e1e2ebc41079f22ed1b30e}{mts\+Command\+Queued\+Write\+Base} (\hyperlink{classmts_mail_box}{mts\+Mail\+Box} $\ast$mail\+Box, \hyperlink{classmts_command_write_base}{mts\+Command\+Write\+Base} $\ast$actual\+Command, size\+\_\+t size)
+\item 
+virtual \hyperlink{classmts_command_queued_write_base_a67b0676e10efe628b44930d9b5a1f12f}{$\sim$mts\+Command\+Queued\+Write\+Base} ()
+\item 
+virtual \hyperlink{classmts_command_write_base}{mts\+Command\+Write\+Base} $\ast$ \hyperlink{classmts_command_queued_write_base_a7e97a8a3bc60fca2ba15bd335a8838b6}{Get\+Actual\+Command} (void)
+\item 
+virtual void \hyperlink{classmts_command_queued_write_base_a8c3b9a68b2f3067d1e4974f963fd9d23}{To\+Stream} (std\+::ostream \&output\+Stream) const 
+\item 
+virtual \hyperlink{classmts_command_queued_write_base}{mts\+Command\+Queued\+Write\+Base} $\ast$ \hyperlink{classmts_command_queued_write_base_af5ad182c80a9c5660d9da1afa425f417}{Clone} (\hyperlink{classmts_mail_box}{mts\+Mail\+Box} $\ast$mail\+Box, size\+\_\+t size) const =0
+\item 
+virtual void \hyperlink{classmts_command_queued_write_base_a4c913b692d849b9aa47f3c9ea235cd8f}{Allocate} (size\+\_\+t size)=0
+\item 
+mts\+Execution\+Result \hyperlink{classmts_command_queued_write_base_a6d7fa71986aac29927898583c4c1f1f9}{Execute} (const \hyperlink{classmts_generic_object}{mts\+Generic\+Object} \&argument, \hyperlink{mts_forward_declarations_8h_ad7426ccb6c883bc780d0ee197dddcbe7}{mts\+Blocking\+Type} blocking)
+\item 
+mts\+Execution\+Result \hyperlink{classmts_command_queued_write_base_af7ee7e7dd5d775d48ff191661ae7c376}{Execute} (const \hyperlink{classmts_generic_object}{mts\+Generic\+Object} \&argument, \hyperlink{mts_forward_declarations_8h_ad7426ccb6c883bc780d0ee197dddcbe7}{mts\+Blocking\+Type} blocking, \hyperlink{classmts_command_write_base}{mts\+Command\+Write\+Base} $\ast$finished\+Event\+Handler)=0
+\item 
+virtual const \hyperlink{classmts_generic_object}{mts\+Generic\+Object} $\ast$ \hyperlink{classmts_command_queued_write_base_a40aee70e67c7415127e72be05eb6a3a4}{Argument\+Peek} (void) const =0
+\item 
+virtual \hyperlink{classmts_generic_object}{mts\+Generic\+Object} $\ast$ \hyperlink{classmts_command_queued_write_base_aa13d3a24097258f9975595930d582540}{Argument\+Get} (void)=0
+\item 
+\hyperlink{mts_forward_declarations_8h_ad7426ccb6c883bc780d0ee197dddcbe7}{mts\+Blocking\+Type} \hyperlink{classmts_command_queued_write_base_aa138c8036f3181703af3395845c92bd0}{Blocking\+Flag\+Get} (void)
+\item 
+\hyperlink{classmts_command_write_base}{mts\+Command\+Write\+Base} $\ast$ \hyperlink{classmts_command_queued_write_base_a2b0fa088500491f1a6af2d2f01d35733}{Finished\+Event\+Get} (void)
+\item 
+virtual const std\+::string \hyperlink{classmts_command_queued_write_base_afe6398dca9145cde8de0ba0d8de993df}{Get\+Mail\+Box\+Name} (void) const 
+\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classmts_command_write_base}{mts\+Command\+Write\+Base} \hyperlink{classmts_command_queued_write_base_aff4a3cf3c103da033abb3cbee439d1ce}{Base\+Type}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmts_command_queued_write_base_a37c683e821be080652509253afdf26f4}{mts\+Command\+Queued\+Write\+Base} (void)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmts_mail_box}{mts\+Mail\+Box} $\ast$ \hyperlink{classmts_command_queued_write_base_aff12f0b8e184ae4891388a5c0c647724}{Mail\+Box}
+\item 
+\hyperlink{classmts_command_write_base}{mts\+Command\+Write\+Base} $\ast$ \hyperlink{classmts_command_queued_write_base_a0b7c5cdfff1c742e84796cf3f80bbd68}{Actual\+Command}
+\item 
+\hyperlink{classmts_queue}{mts\+Queue}$<$ \hyperlink{mts_forward_declarations_8h_ad7426ccb6c883bc780d0ee197dddcbe7}{mts\+Blocking\+Type} $>$ \hyperlink{classmts_command_queued_write_base_a8aba2d8465fe58370e4058b9b4998621}{Blocking\+Flag\+Queue}
+\item 
+\hyperlink{classmts_queue}{mts\+Queue}$<$ \hyperlink{classmts_command_write_base}{mts\+Command\+Write\+Base} $\ast$ $>$ \hyperlink{classmts_command_queued_write_base_a67c11afa021916f995d1d537312c9a4c}{Finished\+Event\+Queue}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classmts_command_queued_write_base_aff4a3cf3c103da033abb3cbee439d1ce}{}\index{mts\+Command\+Queued\+Write\+Base@{mts\+Command\+Queued\+Write\+Base}!Base\+Type@{Base\+Type}}
+\index{Base\+Type@{Base\+Type}!mts\+Command\+Queued\+Write\+Base@{mts\+Command\+Queued\+Write\+Base}}
+\subsubsection[{Base\+Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf mts\+Command\+Write\+Base} {\bf mts\+Command\+Queued\+Write\+Base\+::\+Base\+Type}\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_command_queued_write_base_aff4a3cf3c103da033abb3cbee439d1ce}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmts_command_queued_write_base_a37c683e821be080652509253afdf26f4}{}\index{mts\+Command\+Queued\+Write\+Base@{mts\+Command\+Queued\+Write\+Base}!mts\+Command\+Queued\+Write\+Base@{mts\+Command\+Queued\+Write\+Base}}
+\index{mts\+Command\+Queued\+Write\+Base@{mts\+Command\+Queued\+Write\+Base}!mts\+Command\+Queued\+Write\+Base@{mts\+Command\+Queued\+Write\+Base}}
+\subsubsection[{mts\+Command\+Queued\+Write\+Base}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Command\+Queued\+Write\+Base\+::mts\+Command\+Queued\+Write\+Base (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\label{classmts_command_queued_write_base_a37c683e821be080652509253afdf26f4}
+\hypertarget{classmts_command_queued_write_base_a3acce98115e1e2ebc41079f22ed1b30e}{}\index{mts\+Command\+Queued\+Write\+Base@{mts\+Command\+Queued\+Write\+Base}!mts\+Command\+Queued\+Write\+Base@{mts\+Command\+Queued\+Write\+Base}}
+\index{mts\+Command\+Queued\+Write\+Base@{mts\+Command\+Queued\+Write\+Base}!mts\+Command\+Queued\+Write\+Base@{mts\+Command\+Queued\+Write\+Base}}
+\subsubsection[{mts\+Command\+Queued\+Write\+Base}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Command\+Queued\+Write\+Base\+::mts\+Command\+Queued\+Write\+Base (
+\begin{DoxyParamCaption}
+\item[{{\bf mts\+Mail\+Box} $\ast$}]{mail\+Box, }
+\item[{{\bf mts\+Command\+Write\+Base} $\ast$}]{actual\+Command, }
+\item[{size\+\_\+t}]{size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_command_queued_write_base_a3acce98115e1e2ebc41079f22ed1b30e}
+\hypertarget{classmts_command_queued_write_base_a67b0676e10efe628b44930d9b5a1f12f}{}\index{mts\+Command\+Queued\+Write\+Base@{mts\+Command\+Queued\+Write\+Base}!````~mts\+Command\+Queued\+Write\+Base@{$\sim$mts\+Command\+Queued\+Write\+Base}}
+\index{````~mts\+Command\+Queued\+Write\+Base@{$\sim$mts\+Command\+Queued\+Write\+Base}!mts\+Command\+Queued\+Write\+Base@{mts\+Command\+Queued\+Write\+Base}}
+\subsubsection[{$\sim$mts\+Command\+Queued\+Write\+Base}]{\setlength{\rightskip}{0pt plus 5cm}virtual mts\+Command\+Queued\+Write\+Base\+::$\sim$mts\+Command\+Queued\+Write\+Base (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classmts_command_queued_write_base_a67b0676e10efe628b44930d9b5a1f12f}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classmts_command_queued_write_base_a4c913b692d849b9aa47f3c9ea235cd8f}{}\index{mts\+Command\+Queued\+Write\+Base@{mts\+Command\+Queued\+Write\+Base}!Allocate@{Allocate}}
+\index{Allocate@{Allocate}!mts\+Command\+Queued\+Write\+Base@{mts\+Command\+Queued\+Write\+Base}}
+\subsubsection[{Allocate}]{\setlength{\rightskip}{0pt plus 5cm}virtual void mts\+Command\+Queued\+Write\+Base\+::\+Allocate (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classmts_command_queued_write_base_a4c913b692d849b9aa47f3c9ea235cd8f}
+
+
+Implemented in \hyperlink{classmts_command_queued_write_generic_a126f75b549a510e4ec11a5f2e48b570d}{mts\+Command\+Queued\+Write\+Generic}, and \hyperlink{classmts_command_queued_write_a708715a7f63ed3d31aa8ef57c15d5bcb}{mts\+Command\+Queued\+Write$<$ \+\_\+argument\+Type $>$}.
+
+\hypertarget{classmts_command_queued_write_base_aa13d3a24097258f9975595930d582540}{}\index{mts\+Command\+Queued\+Write\+Base@{mts\+Command\+Queued\+Write\+Base}!Argument\+Get@{Argument\+Get}}
+\index{Argument\+Get@{Argument\+Get}!mts\+Command\+Queued\+Write\+Base@{mts\+Command\+Queued\+Write\+Base}}
+\subsubsection[{Argument\+Get}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf mts\+Generic\+Object}$\ast$ mts\+Command\+Queued\+Write\+Base\+::\+Argument\+Get (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classmts_command_queued_write_base_aa13d3a24097258f9975595930d582540}
+
+
+Implemented in \hyperlink{classmts_command_queued_write_generic_adb83e8e295b8fca5b5d998fcc123083d}{mts\+Command\+Queued\+Write\+Generic}, and \hyperlink{classmts_command_queued_write_a6ca68723d7a73d8c2e365a45c9f2518a}{mts\+Command\+Queued\+Write$<$ \+\_\+argument\+Type $>$}.
+
+\hypertarget{classmts_command_queued_write_base_a40aee70e67c7415127e72be05eb6a3a4}{}\index{mts\+Command\+Queued\+Write\+Base@{mts\+Command\+Queued\+Write\+Base}!Argument\+Peek@{Argument\+Peek}}
+\index{Argument\+Peek@{Argument\+Peek}!mts\+Command\+Queued\+Write\+Base@{mts\+Command\+Queued\+Write\+Base}}
+\subsubsection[{Argument\+Peek}]{\setlength{\rightskip}{0pt plus 5cm}virtual const {\bf mts\+Generic\+Object}$\ast$ mts\+Command\+Queued\+Write\+Base\+::\+Argument\+Peek (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classmts_command_queued_write_base_a40aee70e67c7415127e72be05eb6a3a4}
+
+
+Implemented in \hyperlink{classmts_command_queued_write_generic_a1a165e04b368372046169d786335588f}{mts\+Command\+Queued\+Write\+Generic}, and \hyperlink{classmts_command_queued_write_a720c2911ca6dff95951947ee393acb9e}{mts\+Command\+Queued\+Write$<$ \+\_\+argument\+Type $>$}.
+
+\hypertarget{classmts_command_queued_write_base_aa138c8036f3181703af3395845c92bd0}{}\index{mts\+Command\+Queued\+Write\+Base@{mts\+Command\+Queued\+Write\+Base}!Blocking\+Flag\+Get@{Blocking\+Flag\+Get}}
+\index{Blocking\+Flag\+Get@{Blocking\+Flag\+Get}!mts\+Command\+Queued\+Write\+Base@{mts\+Command\+Queued\+Write\+Base}}
+\subsubsection[{Blocking\+Flag\+Get}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+Blocking\+Type} mts\+Command\+Queued\+Write\+Base\+::\+Blocking\+Flag\+Get (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classmts_command_queued_write_base_aa138c8036f3181703af3395845c92bd0}
+\hypertarget{classmts_command_queued_write_base_af5ad182c80a9c5660d9da1afa425f417}{}\index{mts\+Command\+Queued\+Write\+Base@{mts\+Command\+Queued\+Write\+Base}!Clone@{Clone}}
+\index{Clone@{Clone}!mts\+Command\+Queued\+Write\+Base@{mts\+Command\+Queued\+Write\+Base}}
+\subsubsection[{Clone}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf mts\+Command\+Queued\+Write\+Base}$\ast$ mts\+Command\+Queued\+Write\+Base\+::\+Clone (
+\begin{DoxyParamCaption}
+\item[{{\bf mts\+Mail\+Box} $\ast$}]{mail\+Box, }
+\item[{size\+\_\+t}]{size}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classmts_command_queued_write_base_af5ad182c80a9c5660d9da1afa425f417}
+
+
+Implemented in \hyperlink{classmts_command_queued_write_generic_a19ab52abd7a5763ca948dfedb561956b}{mts\+Command\+Queued\+Write\+Generic}, \hyperlink{classmts_command_queued_write_a7a083a9a4beb94394cd590c33bc0799a}{mts\+Command\+Queued\+Write$<$ \+\_\+argument\+Type $>$}, and \hyperlink{classmts_command_filtered_queued_write_a43b5f03075b7403afec8db6afb7c1e0d}{mts\+Command\+Filtered\+Queued\+Write}.
+
+\hypertarget{classmts_command_queued_write_base_a6d7fa71986aac29927898583c4c1f1f9}{}\index{mts\+Command\+Queued\+Write\+Base@{mts\+Command\+Queued\+Write\+Base}!Execute@{Execute}}
+\index{Execute@{Execute}!mts\+Command\+Queued\+Write\+Base@{mts\+Command\+Queued\+Write\+Base}}
+\subsubsection[{Execute}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Execution\+Result mts\+Command\+Queued\+Write\+Base\+::\+Execute (
+\begin{DoxyParamCaption}
+\item[{const {\bf mts\+Generic\+Object} \&}]{argument, }
+\item[{{\bf mts\+Blocking\+Type}}]{blocking}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_command_queued_write_base_a6d7fa71986aac29927898583c4c1f1f9}
+The execute method. Abstract method to be implemented by derived classes to run the actual operation on the receiver
+
+
+\begin{DoxyParams}{Parameters}
+{\em argument} & The data passed to the operation method \\
+\hline
+{\em blocking} & Indicates whether caller wishes to block until command finishes\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the execution result (mts\+Execution\+Result) 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classmts_command_write_base_ae0f9db1cdc228fe67c59b86994d28115}{mts\+Command\+Write\+Base}.
+
+\hypertarget{classmts_command_queued_write_base_af7ee7e7dd5d775d48ff191661ae7c376}{}\index{mts\+Command\+Queued\+Write\+Base@{mts\+Command\+Queued\+Write\+Base}!Execute@{Execute}}
+\index{Execute@{Execute}!mts\+Command\+Queued\+Write\+Base@{mts\+Command\+Queued\+Write\+Base}}
+\subsubsection[{Execute}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Execution\+Result mts\+Command\+Queued\+Write\+Base\+::\+Execute (
+\begin{DoxyParamCaption}
+\item[{const {\bf mts\+Generic\+Object} \&}]{argument, }
+\item[{{\bf mts\+Blocking\+Type}}]{blocking, }
+\item[{{\bf mts\+Command\+Write\+Base} $\ast$}]{finished\+Event\+Handler}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classmts_command_queued_write_base_af7ee7e7dd5d775d48ff191661ae7c376}
+
+
+Implemented in \hyperlink{classmts_command_queued_write_generic_ac80ac62ca14d0714e1090305e189d13d}{mts\+Command\+Queued\+Write\+Generic}, \hyperlink{classmts_command_queued_write_aac9bc57a48b9cb773327c1020df0cabf}{mts\+Command\+Queued\+Write$<$ \+\_\+argument\+Type $>$}, and \hyperlink{classmts_command_filtered_queued_write_aff8888085a9797ea557a097f07dd742b}{mts\+Command\+Filtered\+Queued\+Write}.
+
+\hypertarget{classmts_command_queued_write_base_a2b0fa088500491f1a6af2d2f01d35733}{}\index{mts\+Command\+Queued\+Write\+Base@{mts\+Command\+Queued\+Write\+Base}!Finished\+Event\+Get@{Finished\+Event\+Get}}
+\index{Finished\+Event\+Get@{Finished\+Event\+Get}!mts\+Command\+Queued\+Write\+Base@{mts\+Command\+Queued\+Write\+Base}}
+\subsubsection[{Finished\+Event\+Get}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+Command\+Write\+Base}$\ast$ mts\+Command\+Queued\+Write\+Base\+::\+Finished\+Event\+Get (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classmts_command_queued_write_base_a2b0fa088500491f1a6af2d2f01d35733}
+\hypertarget{classmts_command_queued_write_base_a7e97a8a3bc60fca2ba15bd335a8838b6}{}\index{mts\+Command\+Queued\+Write\+Base@{mts\+Command\+Queued\+Write\+Base}!Get\+Actual\+Command@{Get\+Actual\+Command}}
+\index{Get\+Actual\+Command@{Get\+Actual\+Command}!mts\+Command\+Queued\+Write\+Base@{mts\+Command\+Queued\+Write\+Base}}
+\subsubsection[{Get\+Actual\+Command}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf mts\+Command\+Write\+Base}$\ast$ mts\+Command\+Queued\+Write\+Base\+::\+Get\+Actual\+Command (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classmts_command_queued_write_base_a7e97a8a3bc60fca2ba15bd335a8838b6}
+\hypertarget{classmts_command_queued_write_base_afe6398dca9145cde8de0ba0d8de993df}{}\index{mts\+Command\+Queued\+Write\+Base@{mts\+Command\+Queued\+Write\+Base}!Get\+Mail\+Box\+Name@{Get\+Mail\+Box\+Name}}
+\index{Get\+Mail\+Box\+Name@{Get\+Mail\+Box\+Name}!mts\+Command\+Queued\+Write\+Base@{mts\+Command\+Queued\+Write\+Base}}
+\subsubsection[{Get\+Mail\+Box\+Name}]{\setlength{\rightskip}{0pt plus 5cm}virtual const std\+::string mts\+Command\+Queued\+Write\+Base\+::\+Get\+Mail\+Box\+Name (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classmts_command_queued_write_base_afe6398dca9145cde8de0ba0d8de993df}
+\hypertarget{classmts_command_queued_write_base_a8c3b9a68b2f3067d1e4974f963fd9d23}{}\index{mts\+Command\+Queued\+Write\+Base@{mts\+Command\+Queued\+Write\+Base}!To\+Stream@{To\+Stream}}
+\index{To\+Stream@{To\+Stream}!mts\+Command\+Queued\+Write\+Base@{mts\+Command\+Queued\+Write\+Base}}
+\subsubsection[{To\+Stream}]{\setlength{\rightskip}{0pt plus 5cm}virtual void mts\+Command\+Queued\+Write\+Base\+::\+To\+Stream (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{output\+Stream}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_command_queued_write_base_a8c3b9a68b2f3067d1e4974f963fd9d23}
+
+
+Implements \hyperlink{classmts_command_base_a0885ce7a5321d7b672694ade780b9d64}{mts\+Command\+Base}.
+
+
+
+Reimplemented in \hyperlink{classmts_command_queued_write_generic_a08ecb69cf7b48addc3ac1c2c00749862}{mts\+Command\+Queued\+Write\+Generic}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classmts_command_queued_write_base_a0b7c5cdfff1c742e84796cf3f80bbd68}{}\index{mts\+Command\+Queued\+Write\+Base@{mts\+Command\+Queued\+Write\+Base}!Actual\+Command@{Actual\+Command}}
+\index{Actual\+Command@{Actual\+Command}!mts\+Command\+Queued\+Write\+Base@{mts\+Command\+Queued\+Write\+Base}}
+\subsubsection[{Actual\+Command}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+Command\+Write\+Base}$\ast$ mts\+Command\+Queued\+Write\+Base\+::\+Actual\+Command\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_command_queued_write_base_a0b7c5cdfff1c742e84796cf3f80bbd68}
+\hypertarget{classmts_command_queued_write_base_a8aba2d8465fe58370e4058b9b4998621}{}\index{mts\+Command\+Queued\+Write\+Base@{mts\+Command\+Queued\+Write\+Base}!Blocking\+Flag\+Queue@{Blocking\+Flag\+Queue}}
+\index{Blocking\+Flag\+Queue@{Blocking\+Flag\+Queue}!mts\+Command\+Queued\+Write\+Base@{mts\+Command\+Queued\+Write\+Base}}
+\subsubsection[{Blocking\+Flag\+Queue}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+Queue}$<${\bf mts\+Blocking\+Type}$>$ mts\+Command\+Queued\+Write\+Base\+::\+Blocking\+Flag\+Queue\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_command_queued_write_base_a8aba2d8465fe58370e4058b9b4998621}
+Queue of flags to indicate if the command is blocking or not \hypertarget{classmts_command_queued_write_base_a67c11afa021916f995d1d537312c9a4c}{}\index{mts\+Command\+Queued\+Write\+Base@{mts\+Command\+Queued\+Write\+Base}!Finished\+Event\+Queue@{Finished\+Event\+Queue}}
+\index{Finished\+Event\+Queue@{Finished\+Event\+Queue}!mts\+Command\+Queued\+Write\+Base@{mts\+Command\+Queued\+Write\+Base}}
+\subsubsection[{Finished\+Event\+Queue}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+Queue}$<${\bf mts\+Command\+Write\+Base} $\ast$$>$ mts\+Command\+Queued\+Write\+Base\+::\+Finished\+Event\+Queue\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_command_queued_write_base_a67c11afa021916f995d1d537312c9a4c}
+Queue for return events (to send result to caller). If non-\/zero, this indicates that a blocking call was made (previously, this was a Blocking\+Flag\+Queue). \hypertarget{classmts_command_queued_write_base_aff12f0b8e184ae4891388a5c0c647724}{}\index{mts\+Command\+Queued\+Write\+Base@{mts\+Command\+Queued\+Write\+Base}!Mail\+Box@{Mail\+Box}}
+\index{Mail\+Box@{Mail\+Box}!mts\+Command\+Queued\+Write\+Base@{mts\+Command\+Queued\+Write\+Base}}
+\subsubsection[{Mail\+Box}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+Mail\+Box}$\ast$ mts\+Command\+Queued\+Write\+Base\+::\+Mail\+Box\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_command_queued_write_base_aff12f0b8e184ae4891388a5c0c647724}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Multi\+Task/\hyperlink{mts_command_queued_write_base_8h}{mts\+Command\+Queued\+Write\+Base.\+h}\end{DoxyCompactItemize}

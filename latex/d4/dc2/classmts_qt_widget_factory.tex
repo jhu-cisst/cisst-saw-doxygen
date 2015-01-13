@@ -1,0 +1,95 @@
+\hypertarget{classmts_qt_widget_factory}{}\section{mts\+Qt\+Widget\+Factory Class Reference}
+\label{classmts_qt_widget_factory}\index{mts\+Qt\+Widget\+Factory@{mts\+Qt\+Widget\+Factory}}
+
+
+{\ttfamily \#include $<$mts\+Qt\+Widget\+Factory.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classmts_qt_widget_factory_1_1_widget_read_creator}{Widget\+Read\+Creator}
+\item 
+class \hyperlink{classmts_qt_widget_factory_1_1_widget_write_creator}{Widget\+Write\+Creator}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::map$<$ const std\+::type\+\_\+info $\ast$, Widget\+Read\+Creator\+Function, \hyperlink{classmts_qt_type_info_comparator}{mts\+Qt\+Type\+Info\+Comparator} $>$ \hyperlink{classmts_qt_widget_factory_a22c882dba48529d554a71443765cb645}{Widget\+Read\+Creator\+Map}
+\item 
+typedef std\+::map$<$ const std\+::type\+\_\+info $\ast$, Widget\+Write\+Creator\+Function, \hyperlink{classmts_qt_type_info_comparator}{mts\+Qt\+Type\+Info\+Comparator} $>$ \hyperlink{classmts_qt_widget_factory_aa2d044bd78383f0beb1973cbb076d4df}{Widget\+Write\+Creator\+Map}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classmts_qt_widget_generic_object_read}{mts\+Qt\+Widget\+Generic\+Object\+Read} $\ast$ \hyperlink{classmts_qt_widget_factory_a7cc69b831fc2b45023c291479a5d1f09}{Create\+Widget\+Read} (const std\+::type\+\_\+info $\ast$type)
+\item 
+static \hyperlink{classmts_qt_widget_generic_object_write}{mts\+Qt\+Widget\+Generic\+Object\+Write} $\ast$ \hyperlink{classmts_qt_widget_factory_acd6e5c0627a787519689a1a455cd804d}{Create\+Widget\+Write} (const std\+::type\+\_\+info $\ast$type)
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classmts_qt_widget_factory_a22c882dba48529d554a71443765cb645}{Widget\+Read\+Creator\+Map} \& \hyperlink{classmts_qt_widget_factory_ae1c4cd68242b6b184762d4c2e233edfc}{Get\+Widget\+Read\+Creators} (void)
+\item 
+static \hyperlink{classmts_qt_widget_factory_aa2d044bd78383f0beb1973cbb076d4df}{Widget\+Write\+Creator\+Map} \& \hyperlink{classmts_qt_widget_factory_a7cd290938deff1f5471a9bb2640d22f1}{Get\+Widget\+Write\+Creators} (void)
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classmts_qt_widget_factory_ad9d711027580a58bc57b4a3f6579be13}{Widget\+Read\+Creator}
+\item 
+class \hyperlink{classmts_qt_widget_factory_a19ec73574902b95864ee67c18b960512}{Widget\+Write\+Creator}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classmts_qt_widget_factory_a22c882dba48529d554a71443765cb645}{}\index{mts\+Qt\+Widget\+Factory@{mts\+Qt\+Widget\+Factory}!Widget\+Read\+Creator\+Map@{Widget\+Read\+Creator\+Map}}
+\index{Widget\+Read\+Creator\+Map@{Widget\+Read\+Creator\+Map}!mts\+Qt\+Widget\+Factory@{mts\+Qt\+Widget\+Factory}}
+\subsubsection[{Widget\+Read\+Creator\+Map}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::map$<$const std\+::type\+\_\+info $\ast$, Widget\+Read\+Creator\+Function, {\bf mts\+Qt\+Type\+Info\+Comparator}$>$ {\bf mts\+Qt\+Widget\+Factory\+::\+Widget\+Read\+Creator\+Map}}\label{classmts_qt_widget_factory_a22c882dba48529d554a71443765cb645}
+\hypertarget{classmts_qt_widget_factory_aa2d044bd78383f0beb1973cbb076d4df}{}\index{mts\+Qt\+Widget\+Factory@{mts\+Qt\+Widget\+Factory}!Widget\+Write\+Creator\+Map@{Widget\+Write\+Creator\+Map}}
+\index{Widget\+Write\+Creator\+Map@{Widget\+Write\+Creator\+Map}!mts\+Qt\+Widget\+Factory@{mts\+Qt\+Widget\+Factory}}
+\subsubsection[{Widget\+Write\+Creator\+Map}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::map$<$const std\+::type\+\_\+info $\ast$, Widget\+Write\+Creator\+Function, {\bf mts\+Qt\+Type\+Info\+Comparator}$>$ {\bf mts\+Qt\+Widget\+Factory\+::\+Widget\+Write\+Creator\+Map}}\label{classmts_qt_widget_factory_aa2d044bd78383f0beb1973cbb076d4df}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classmts_qt_widget_factory_a7cc69b831fc2b45023c291479a5d1f09}{}\index{mts\+Qt\+Widget\+Factory@{mts\+Qt\+Widget\+Factory}!Create\+Widget\+Read@{Create\+Widget\+Read}}
+\index{Create\+Widget\+Read@{Create\+Widget\+Read}!mts\+Qt\+Widget\+Factory@{mts\+Qt\+Widget\+Factory}}
+\subsubsection[{Create\+Widget\+Read}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf mts\+Qt\+Widget\+Generic\+Object\+Read}$\ast$ mts\+Qt\+Widget\+Factory\+::\+Create\+Widget\+Read (
+\begin{DoxyParamCaption}
+\item[{const std\+::type\+\_\+info $\ast$}]{type}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classmts_qt_widget_factory_a7cc69b831fc2b45023c291479a5d1f09}
+\hypertarget{classmts_qt_widget_factory_acd6e5c0627a787519689a1a455cd804d}{}\index{mts\+Qt\+Widget\+Factory@{mts\+Qt\+Widget\+Factory}!Create\+Widget\+Write@{Create\+Widget\+Write}}
+\index{Create\+Widget\+Write@{Create\+Widget\+Write}!mts\+Qt\+Widget\+Factory@{mts\+Qt\+Widget\+Factory}}
+\subsubsection[{Create\+Widget\+Write}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf mts\+Qt\+Widget\+Generic\+Object\+Write}$\ast$ mts\+Qt\+Widget\+Factory\+::\+Create\+Widget\+Write (
+\begin{DoxyParamCaption}
+\item[{const std\+::type\+\_\+info $\ast$}]{type}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classmts_qt_widget_factory_acd6e5c0627a787519689a1a455cd804d}
+\hypertarget{classmts_qt_widget_factory_ae1c4cd68242b6b184762d4c2e233edfc}{}\index{mts\+Qt\+Widget\+Factory@{mts\+Qt\+Widget\+Factory}!Get\+Widget\+Read\+Creators@{Get\+Widget\+Read\+Creators}}
+\index{Get\+Widget\+Read\+Creators@{Get\+Widget\+Read\+Creators}!mts\+Qt\+Widget\+Factory@{mts\+Qt\+Widget\+Factory}}
+\subsubsection[{Get\+Widget\+Read\+Creators}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Widget\+Read\+Creator\+Map}\& mts\+Qt\+Widget\+Factory\+::\+Get\+Widget\+Read\+Creators (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}\label{classmts_qt_widget_factory_ae1c4cd68242b6b184762d4c2e233edfc}
+\hypertarget{classmts_qt_widget_factory_a7cd290938deff1f5471a9bb2640d22f1}{}\index{mts\+Qt\+Widget\+Factory@{mts\+Qt\+Widget\+Factory}!Get\+Widget\+Write\+Creators@{Get\+Widget\+Write\+Creators}}
+\index{Get\+Widget\+Write\+Creators@{Get\+Widget\+Write\+Creators}!mts\+Qt\+Widget\+Factory@{mts\+Qt\+Widget\+Factory}}
+\subsubsection[{Get\+Widget\+Write\+Creators}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Widget\+Write\+Creator\+Map}\& mts\+Qt\+Widget\+Factory\+::\+Get\+Widget\+Write\+Creators (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}\label{classmts_qt_widget_factory_a7cd290938deff1f5471a9bb2640d22f1}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classmts_qt_widget_factory_ad9d711027580a58bc57b4a3f6579be13}{}\index{mts\+Qt\+Widget\+Factory@{mts\+Qt\+Widget\+Factory}!Widget\+Read\+Creator@{Widget\+Read\+Creator}}
+\index{Widget\+Read\+Creator@{Widget\+Read\+Creator}!mts\+Qt\+Widget\+Factory@{mts\+Qt\+Widget\+Factory}}
+\subsubsection[{Widget\+Read\+Creator}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf Widget\+Read\+Creator}\hspace{0.3cm}{\ttfamily [friend]}}\label{classmts_qt_widget_factory_ad9d711027580a58bc57b4a3f6579be13}
+\hypertarget{classmts_qt_widget_factory_a19ec73574902b95864ee67c18b960512}{}\index{mts\+Qt\+Widget\+Factory@{mts\+Qt\+Widget\+Factory}!Widget\+Write\+Creator@{Widget\+Write\+Creator}}
+\index{Widget\+Write\+Creator@{Widget\+Write\+Creator}!mts\+Qt\+Widget\+Factory@{mts\+Qt\+Widget\+Factory}}
+\subsubsection[{Widget\+Write\+Creator}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf Widget\+Write\+Creator}\hspace{0.3cm}{\ttfamily [friend]}}\label{classmts_qt_widget_factory_a19ec73574902b95864ee67c18b960512}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Multi\+Task/\hyperlink{mts_qt_widget_factory_8h}{mts\+Qt\+Widget\+Factory.\+h}\end{DoxyCompactItemize}

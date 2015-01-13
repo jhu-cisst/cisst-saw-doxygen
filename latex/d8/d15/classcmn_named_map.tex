@@ -1,0 +1,354 @@
+\hypertarget{classcmn_named_map}{}\section{cmn\+Named\+Map$<$ \+\_\+element\+Type $>$ Class Template Reference}
+\label{classcmn_named_map}\index{cmn\+Named\+Map$<$ \+\_\+element\+Type $>$@{cmn\+Named\+Map$<$ \+\_\+element\+Type $>$}}
+
+
+{\ttfamily \#include $<$cmn\+Named\+Map.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::map$<$ std\+::string, \+\_\+element\+Type $\ast$ $>$ \hyperlink{classcmn_named_map_a35919ad9cccf3e060063b489db663425}{Map\+Type}
+\item 
+typedef Map\+Type\+::iterator \hyperlink{classcmn_named_map_a0ad463b349c3c95e8f639e12f492765e}{iterator}
+\item 
+typedef Map\+Type\+::const\+\_\+iterator \hyperlink{classcmn_named_map_a94a2be09d6678944e3a330c641d69d41}{const\+\_\+iterator}
+\item 
+typedef Map\+Type\+::reverse\+\_\+iterator \hyperlink{classcmn_named_map_abfbc3bd1bf3e0ea32fcdf61db4377014}{reverse\+\_\+iterator}
+\item 
+typedef Map\+Type\+::const\+\_\+reverse\+\_\+iterator \hyperlink{classcmn_named_map_ad32ba46e0f30a14d943acac6b229094c}{const\+\_\+reverse\+\_\+iterator}
+\item 
+typedef Map\+Type\+::size\+\_\+type \hyperlink{classcmn_named_map_aaaf5963f1e9b26efb08e7f0cd7199335}{size\+\_\+type}
+\item 
+typedef \+\_\+element\+Type \hyperlink{classcmn_named_map_a04797ca34105e40893cf1bdbea391f32}{element\+\_\+type}
+\item 
+typedef void(\+\_\+element\+Type\+::$\ast$ \hyperlink{classcmn_named_map_a78add53bc0e9b925dc3c5ec981994d2b}{Void\+Method\+Pointer}) (void)
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcmn_named_map_a4c250a20fc4693af98372a5bddf23fc3}{cmn\+Named\+Map} (bool takes\+Ownership=false)
+\item 
+\hyperlink{classcmn_named_map_a9204d10744786fb89a8a4c257657f7af}{cmn\+Named\+Map} (const char $\ast$map\+Name, bool takes\+Ownership=false)
+\item 
+\hyperlink{classcmn_named_map_aba94948e0a87cb078537dd42e3ea9da7}{cmn\+Named\+Map} (const std\+::string \&map\+Name, bool takes\+Ownership=false)
+\item 
+\hyperlink{classcmn_named_map_a1eb8737aa452d92dee390a1e13ed3534}{cmn\+Named\+Map} (const std\+::string \&map\+Name, const \hyperlink{classcmn_generic_object}{cmn\+Generic\+Object} \&owner, bool takes\+Ownership=false)
+\item 
+\hyperlink{classcmn_named_map_a79c1232b9dd2f9577cde17a81179ab00}{$\sim$cmn\+Named\+Map} ()
+\item 
+void \hyperlink{classcmn_named_map_add0f54de1d0383787c7ce070d24dac64}{Set\+Owner} (const \hyperlink{classcmn_generic_object}{cmn\+Generic\+Object} \&owner)
+\item 
+bool \hyperlink{classcmn_named_map_a0df1ea146e99d1ac628c7b51717b40df}{Add\+Item} (const std\+::string \&name, \+\_\+element\+Type $\ast$item, \hyperlink{cmn_log_lo_d_8h_a70c67165c37a0971e0dd1a85d4edaaae}{cmn\+Log\+Level} lod=\hyperlink{cmn_log_lo_d_8h_a7ace6c3eaafa3c4670c6d0dc71406e37}{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+R\+U\+N\+\_\+\+E\+R\+R\+O\+R})
+\item 
+\+\_\+element\+Type $\ast$ \hyperlink{classcmn_named_map_aaebc16da1a7a806b349e7e5f7e41da09}{Get\+Item} (const std\+::string \&name, \hyperlink{cmn_log_lo_d_8h_a70c67165c37a0971e0dd1a85d4edaaae}{cmn\+Log\+Level} lod=\hyperlink{cmn_log_lo_d_8h_a285ec3fc9bf3bf806e6752070005504b}{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+R\+U\+N\+\_\+\+D\+E\+B\+U\+G}) const 
+\item 
+bool \hyperlink{classcmn_named_map_ae33739318733f66074f308e6077b0cbb}{Find\+Item} (const std\+::string \&item\+Name) const 
+\item 
+bool \hyperlink{classcmn_named_map_a1f41463cb8ad29cc123b6eb751876239}{Remove\+Item} (const std\+::string \&name, \hyperlink{cmn_log_lo_d_8h_a70c67165c37a0971e0dd1a85d4edaaae}{cmn\+Log\+Level} lod=\hyperlink{cmn_log_lo_d_8h_a7ace6c3eaafa3c4670c6d0dc71406e37}{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+R\+U\+N\+\_\+\+E\+R\+R\+O\+R})
+\item 
+void \hyperlink{classcmn_named_map_ae0a0c6bec0c43bd152aa29b396a7dccb}{For\+Each\+Void} (\hyperlink{classcmn_named_map_a78add53bc0e9b925dc3c5ec981994d2b}{Void\+Method\+Pointer} method)
+\item 
+void \hyperlink{classcmn_named_map_a1082cdd551da4064ac01d1687bf91bf2}{To\+Stream} (std\+::ostream \&output\+Stream) const 
+\item 
+void \hyperlink{classcmn_named_map_a7b4699c7d3e7bcda36f0d5f3615a9594}{Delete\+All} (void)
+\item 
+\hyperlink{classcmn_named_map_aaaf5963f1e9b26efb08e7f0cd7199335}{size\+\_\+type} \hyperlink{classcmn_named_map_a5c545600ff58364bef71df804078378f}{size} (void) const 
+\item 
+bool \hyperlink{classcmn_named_map_a6f8ee322e0cef9aa6841dfe4e9b51b0b}{empty} (void) const 
+\item 
+void \hyperlink{classcmn_named_map_ab1bb56227b49802271d395b99af72bcb}{clear} (void)
+\item 
+\hyperlink{classcmn_named_map_a0ad463b349c3c95e8f639e12f492765e}{iterator} \hyperlink{classcmn_named_map_a1161a0e7eaaf2b34cd6747f29e9f52d7}{begin} (void)
+\item 
+\hyperlink{classcmn_named_map_a94a2be09d6678944e3a330c641d69d41}{const\+\_\+iterator} \hyperlink{classcmn_named_map_aefff0d0c751cf9fee634b95bd796abcd}{begin} (void) const 
+\item 
+\hyperlink{classcmn_named_map_a0ad463b349c3c95e8f639e12f492765e}{iterator} \hyperlink{classcmn_named_map_a593995b97e2051fb19a53ba3d27fd207}{end} (void)
+\item 
+\hyperlink{classcmn_named_map_a94a2be09d6678944e3a330c641d69d41}{const\+\_\+iterator} \hyperlink{classcmn_named_map_a5c0a21bb49e60dfd6c585ce3c3406bf4}{end} (void) const 
+\end{DoxyCompactItemize}
+{\bf }\par
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classcmn_named_map_aa606927a1fb85df463d2148200923f40}{Get\+Names} (std\+::vector$<$ std\+::string $>$ \&place\+Holder) const 
+\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{classcmn_named_map_a4748c784451cca8eda41a7959b71f434}{Get\+Names} (void) const 
+\end{DoxyCompactItemize}
+
+{\bf }\par
+\begin{DoxyCompactItemize}
+\item 
+const \hyperlink{classcmn_named_map_a35919ad9cccf3e060063b489db663425}{Map\+Type} \& \hyperlink{classcmn_named_map_a10b7d4cf884a7b5cb44aeb7133452049}{Get\+Map} (void) const 
+\item 
+\hyperlink{classcmn_named_map_a35919ad9cccf3e060063b489db663425}{Map\+Type} \& \hyperlink{classcmn_named_map_a2e819ccf5448f3b47f50246e61f5b453}{Get\+Map} (void)
+\end{DoxyCompactItemize}
+
+\subsection*{Protected Member Functions}
+{\bf }\par
+\begin{DoxyCompactItemize}
+\item 
+const \hyperlink{classcmn_class_services_base}{cmn\+Class\+Services\+Base} $\ast$ \hyperlink{classcmn_named_map_ae27d833a5b4bb6fd27982d571a9479fa}{Services} (void) const 
+\item 
+\hyperlink{classcmn_logger_a7d192777882d1dc6bb48ceac0b4e65bb}{cmn\+Logger\+::\+Stream\+Buf\+Type} $\ast$ \hyperlink{classcmn_named_map_a1b154ee9ae3a3eaa748b867702f206d4}{Get\+Log\+Multiplexer} (void) const 
+\end{DoxyCompactItemize}
+
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcmn_named_map_a35919ad9cccf3e060063b489db663425}{Map\+Type} \hyperlink{classcmn_named_map_aa5cb7ee747ba8ccc07557a5da5d48b19}{Map}
+\item 
+bool \hyperlink{classcmn_named_map_ad3775ffc68ea99a853f8eed94f1f1a4f}{Takes\+Ownership}
+\item 
+std\+::string \hyperlink{classcmn_named_map_a5dd1ca924e7481edf3e9c6f65c0f4b3d}{Map\+Name}
+\item 
+const \hyperlink{classcmn_class_services_base}{cmn\+Class\+Services\+Base} $\ast$ \hyperlink{classcmn_named_map_a8e6bffe8f1bdc710bacc3f1d38d75621}{Owner\+Services}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class \+\_\+element\+Type$>$class cmn\+Named\+Map$<$ \+\_\+element\+Type $>$}
+
+\hyperlink{classcmn_named_map}{cmn\+Named\+Map} provides a map (lookup table), where the key is a string and the value (item) is specified by the template parameter. The map actually contains a pointer to the value. In cisst\+Multi\+Task, this class is used to maintain the lists of interfaces per task/device, as well as the lists of commands per interface.
+
+The \hyperlink{classcmn_named_map}{cmn\+Named\+Map} class is a small \char`\"{}wrapper\char`\"{} around std\+::map that was created to factorize some code that would otherwise be duplicated. 
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classcmn_named_map_a94a2be09d6678944e3a330c641d69d41}{}\index{cmn\+Named\+Map@{cmn\+Named\+Map}!const\+\_\+iterator@{const\+\_\+iterator}}
+\index{const\+\_\+iterator@{const\+\_\+iterator}!cmn\+Named\+Map@{cmn\+Named\+Map}}
+\subsubsection[{const\+\_\+iterator}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ typedef Map\+Type\+::const\+\_\+iterator {\bf cmn\+Named\+Map}$<$ \+\_\+element\+Type $>$\+::{\bf const\+\_\+iterator}}\label{classcmn_named_map_a94a2be09d6678944e3a330c641d69d41}
+\hypertarget{classcmn_named_map_ad32ba46e0f30a14d943acac6b229094c}{}\index{cmn\+Named\+Map@{cmn\+Named\+Map}!const\+\_\+reverse\+\_\+iterator@{const\+\_\+reverse\+\_\+iterator}}
+\index{const\+\_\+reverse\+\_\+iterator@{const\+\_\+reverse\+\_\+iterator}!cmn\+Named\+Map@{cmn\+Named\+Map}}
+\subsubsection[{const\+\_\+reverse\+\_\+iterator}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ typedef Map\+Type\+::const\+\_\+reverse\+\_\+iterator {\bf cmn\+Named\+Map}$<$ \+\_\+element\+Type $>$\+::{\bf const\+\_\+reverse\+\_\+iterator}}\label{classcmn_named_map_ad32ba46e0f30a14d943acac6b229094c}
+\hypertarget{classcmn_named_map_a04797ca34105e40893cf1bdbea391f32}{}\index{cmn\+Named\+Map@{cmn\+Named\+Map}!element\+\_\+type@{element\+\_\+type}}
+\index{element\+\_\+type@{element\+\_\+type}!cmn\+Named\+Map@{cmn\+Named\+Map}}
+\subsubsection[{element\+\_\+type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ typedef \+\_\+element\+Type {\bf cmn\+Named\+Map}$<$ \+\_\+element\+Type $>$\+::{\bf element\+\_\+type}}\label{classcmn_named_map_a04797ca34105e40893cf1bdbea391f32}
+\hypertarget{classcmn_named_map_a0ad463b349c3c95e8f639e12f492765e}{}\index{cmn\+Named\+Map@{cmn\+Named\+Map}!iterator@{iterator}}
+\index{iterator@{iterator}!cmn\+Named\+Map@{cmn\+Named\+Map}}
+\subsubsection[{iterator}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ typedef Map\+Type\+::iterator {\bf cmn\+Named\+Map}$<$ \+\_\+element\+Type $>$\+::{\bf iterator}}\label{classcmn_named_map_a0ad463b349c3c95e8f639e12f492765e}
+\hypertarget{classcmn_named_map_a35919ad9cccf3e060063b489db663425}{}\index{cmn\+Named\+Map@{cmn\+Named\+Map}!Map\+Type@{Map\+Type}}
+\index{Map\+Type@{Map\+Type}!cmn\+Named\+Map@{cmn\+Named\+Map}}
+\subsubsection[{Map\+Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ typedef std\+::map$<$std\+::string, \+\_\+element\+Type $\ast$$>$ {\bf cmn\+Named\+Map}$<$ \+\_\+element\+Type $>$\+::{\bf Map\+Type}}\label{classcmn_named_map_a35919ad9cccf3e060063b489db663425}
+Type of the actual map \hypertarget{classcmn_named_map_abfbc3bd1bf3e0ea32fcdf61db4377014}{}\index{cmn\+Named\+Map@{cmn\+Named\+Map}!reverse\+\_\+iterator@{reverse\+\_\+iterator}}
+\index{reverse\+\_\+iterator@{reverse\+\_\+iterator}!cmn\+Named\+Map@{cmn\+Named\+Map}}
+\subsubsection[{reverse\+\_\+iterator}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ typedef Map\+Type\+::reverse\+\_\+iterator {\bf cmn\+Named\+Map}$<$ \+\_\+element\+Type $>$\+::{\bf reverse\+\_\+iterator}}\label{classcmn_named_map_abfbc3bd1bf3e0ea32fcdf61db4377014}
+\hypertarget{classcmn_named_map_aaaf5963f1e9b26efb08e7f0cd7199335}{}\index{cmn\+Named\+Map@{cmn\+Named\+Map}!size\+\_\+type@{size\+\_\+type}}
+\index{size\+\_\+type@{size\+\_\+type}!cmn\+Named\+Map@{cmn\+Named\+Map}}
+\subsubsection[{size\+\_\+type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ typedef Map\+Type\+::size\+\_\+type {\bf cmn\+Named\+Map}$<$ \+\_\+element\+Type $>$\+::{\bf size\+\_\+type}}\label{classcmn_named_map_aaaf5963f1e9b26efb08e7f0cd7199335}
+\hypertarget{classcmn_named_map_a78add53bc0e9b925dc3c5ec981994d2b}{}\index{cmn\+Named\+Map@{cmn\+Named\+Map}!Void\+Method\+Pointer@{Void\+Method\+Pointer}}
+\index{Void\+Method\+Pointer@{Void\+Method\+Pointer}!cmn\+Named\+Map@{cmn\+Named\+Map}}
+\subsubsection[{Void\+Method\+Pointer}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ typedef void(\+\_\+element\+Type\+::$\ast$ {\bf cmn\+Named\+Map}$<$ \+\_\+element\+Type $>$\+::Void\+Method\+Pointer) (void)}\label{classcmn_named_map_a78add53bc0e9b925dc3c5ec981994d2b}
+Type of void method in class \+\_\+element\+Type 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcmn_named_map_a4c250a20fc4693af98372a5bddf23fc3}{}\index{cmn\+Named\+Map@{cmn\+Named\+Map}!cmn\+Named\+Map@{cmn\+Named\+Map}}
+\index{cmn\+Named\+Map@{cmn\+Named\+Map}!cmn\+Named\+Map@{cmn\+Named\+Map}}
+\subsubsection[{cmn\+Named\+Map}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ {\bf cmn\+Named\+Map}$<$ \+\_\+element\+Type $>$\+::{\bf cmn\+Named\+Map} (
+\begin{DoxyParamCaption}
+\item[{bool}]{takes\+Ownership = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classcmn_named_map_a4c250a20fc4693af98372a5bddf23fc3}
+Default constructor, initialize the internal map and set the map name to \char`\"{}undefined\char`\"{} \hypertarget{classcmn_named_map_a9204d10744786fb89a8a4c257657f7af}{}\index{cmn\+Named\+Map@{cmn\+Named\+Map}!cmn\+Named\+Map@{cmn\+Named\+Map}}
+\index{cmn\+Named\+Map@{cmn\+Named\+Map}!cmn\+Named\+Map@{cmn\+Named\+Map}}
+\subsubsection[{cmn\+Named\+Map}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ {\bf cmn\+Named\+Map}$<$ \+\_\+element\+Type $>$\+::{\bf cmn\+Named\+Map} (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{map\+Name, }
+\item[{bool}]{takes\+Ownership = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classcmn_named_map_a9204d10744786fb89a8a4c257657f7af}
+Constructor with a map name. The map name is useful for all human readable log messages as well as string streaming (e.\+g. std\+::cout) \hypertarget{classcmn_named_map_aba94948e0a87cb078537dd42e3ea9da7}{}\index{cmn\+Named\+Map@{cmn\+Named\+Map}!cmn\+Named\+Map@{cmn\+Named\+Map}}
+\index{cmn\+Named\+Map@{cmn\+Named\+Map}!cmn\+Named\+Map@{cmn\+Named\+Map}}
+\subsubsection[{cmn\+Named\+Map}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ {\bf cmn\+Named\+Map}$<$ \+\_\+element\+Type $>$\+::{\bf cmn\+Named\+Map} (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{map\+Name, }
+\item[{bool}]{takes\+Ownership = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classcmn_named_map_aba94948e0a87cb078537dd42e3ea9da7}
+\hypertarget{classcmn_named_map_a1eb8737aa452d92dee390a1e13ed3534}{}\index{cmn\+Named\+Map@{cmn\+Named\+Map}!cmn\+Named\+Map@{cmn\+Named\+Map}}
+\index{cmn\+Named\+Map@{cmn\+Named\+Map}!cmn\+Named\+Map@{cmn\+Named\+Map}}
+\subsubsection[{cmn\+Named\+Map}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ {\bf cmn\+Named\+Map}$<$ \+\_\+element\+Type $>$\+::{\bf cmn\+Named\+Map} (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{map\+Name, }
+\item[{const {\bf cmn\+Generic\+Object} \&}]{owner, }
+\item[{bool}]{takes\+Ownership = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classcmn_named_map_a1eb8737aa452d92dee390a1e13ed3534}
+Constructor with a map name and a pointer a \hyperlink{classcmn_generic_object}{cmn\+Generic\+Object} (in most cases, use \char`\"{}$\ast$this\char`\"{}). The map name is useful for all human readable log messages as well as string streaming (e.\+g. std\+::cout). The \hyperlink{classcmn_generic_object}{cmn\+Generic\+Object} level of detail will be used to filter the messages. \hypertarget{classcmn_named_map_a79c1232b9dd2f9577cde17a81179ab00}{}\index{cmn\+Named\+Map@{cmn\+Named\+Map}!````~cmn\+Named\+Map@{$\sim$cmn\+Named\+Map}}
+\index{````~cmn\+Named\+Map@{$\sim$cmn\+Named\+Map}!cmn\+Named\+Map@{cmn\+Named\+Map}}
+\subsubsection[{$\sim$cmn\+Named\+Map}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ {\bf cmn\+Named\+Map}$<$ \+\_\+element\+Type $>$\+::$\sim${\bf cmn\+Named\+Map} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classcmn_named_map_a79c1232b9dd2f9577cde17a81179ab00}
+Destructor. Relies on std\+::map destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classcmn_named_map_a0df1ea146e99d1ac628c7b51717b40df}{}\index{cmn\+Named\+Map@{cmn\+Named\+Map}!Add\+Item@{Add\+Item}}
+\index{Add\+Item@{Add\+Item}!cmn\+Named\+Map@{cmn\+Named\+Map}}
+\subsubsection[{Add\+Item}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ bool {\bf cmn\+Named\+Map}$<$ \+\_\+element\+Type $>$\+::Add\+Item (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name, }
+\item[{\+\_\+element\+Type $\ast$}]{item, }
+\item[{{\bf cmn\+Log\+Level}}]{lod = {\ttfamily {\bf C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+R\+U\+N\+\_\+\+E\+R\+R\+O\+R}}}
+\end{DoxyParamCaption}
+)}\label{classcmn_named_map_a0df1ea146e99d1ac628c7b51717b40df}
+Add an item to the internal map. The log level of details is used to determine the lod of a message if the item can not be added. \hypertarget{classcmn_named_map_a1161a0e7eaaf2b34cd6747f29e9f52d7}{}\index{cmn\+Named\+Map@{cmn\+Named\+Map}!begin@{begin}}
+\index{begin@{begin}!cmn\+Named\+Map@{cmn\+Named\+Map}}
+\subsubsection[{begin}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ {\bf iterator} {\bf cmn\+Named\+Map}$<$ \+\_\+element\+Type $>$\+::begin (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classcmn_named_map_a1161a0e7eaaf2b34cd6747f29e9f52d7}
+\hypertarget{classcmn_named_map_aefff0d0c751cf9fee634b95bd796abcd}{}\index{cmn\+Named\+Map@{cmn\+Named\+Map}!begin@{begin}}
+\index{begin@{begin}!cmn\+Named\+Map@{cmn\+Named\+Map}}
+\subsubsection[{begin}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ {\bf const\+\_\+iterator} {\bf cmn\+Named\+Map}$<$ \+\_\+element\+Type $>$\+::begin (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classcmn_named_map_aefff0d0c751cf9fee634b95bd796abcd}
+\hypertarget{classcmn_named_map_ab1bb56227b49802271d395b99af72bcb}{}\index{cmn\+Named\+Map@{cmn\+Named\+Map}!clear@{clear}}
+\index{clear@{clear}!cmn\+Named\+Map@{cmn\+Named\+Map}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ void {\bf cmn\+Named\+Map}$<$ \+\_\+element\+Type $>$\+::clear (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classcmn_named_map_ab1bb56227b49802271d395b99af72bcb}
+\hypertarget{classcmn_named_map_a7b4699c7d3e7bcda36f0d5f3615a9594}{}\index{cmn\+Named\+Map@{cmn\+Named\+Map}!Delete\+All@{Delete\+All}}
+\index{Delete\+All@{Delete\+All}!cmn\+Named\+Map@{cmn\+Named\+Map}}
+\subsubsection[{Delete\+All}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type $>$ void {\bf cmn\+Named\+Map}$<$ \+\_\+element\+Type $>$\+::Delete\+All (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classcmn_named_map_a7b4699c7d3e7bcda36f0d5f3615a9594}
+Delete all content while preserving keys, i.\+e. the map contains pairs of names and null pointers. \hypertarget{classcmn_named_map_a6f8ee322e0cef9aa6841dfe4e9b51b0b}{}\index{cmn\+Named\+Map@{cmn\+Named\+Map}!empty@{empty}}
+\index{empty@{empty}!cmn\+Named\+Map@{cmn\+Named\+Map}}
+\subsubsection[{empty}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ bool {\bf cmn\+Named\+Map}$<$ \+\_\+element\+Type $>$\+::empty (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classcmn_named_map_a6f8ee322e0cef9aa6841dfe4e9b51b0b}
+\hypertarget{classcmn_named_map_a593995b97e2051fb19a53ba3d27fd207}{}\index{cmn\+Named\+Map@{cmn\+Named\+Map}!end@{end}}
+\index{end@{end}!cmn\+Named\+Map@{cmn\+Named\+Map}}
+\subsubsection[{end}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ {\bf iterator} {\bf cmn\+Named\+Map}$<$ \+\_\+element\+Type $>$\+::end (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classcmn_named_map_a593995b97e2051fb19a53ba3d27fd207}
+\hypertarget{classcmn_named_map_a5c0a21bb49e60dfd6c585ce3c3406bf4}{}\index{cmn\+Named\+Map@{cmn\+Named\+Map}!end@{end}}
+\index{end@{end}!cmn\+Named\+Map@{cmn\+Named\+Map}}
+\subsubsection[{end}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ {\bf const\+\_\+iterator} {\bf cmn\+Named\+Map}$<$ \+\_\+element\+Type $>$\+::end (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classcmn_named_map_a5c0a21bb49e60dfd6c585ce3c3406bf4}
+\hypertarget{classcmn_named_map_ae33739318733f66074f308e6077b0cbb}{}\index{cmn\+Named\+Map@{cmn\+Named\+Map}!Find\+Item@{Find\+Item}}
+\index{Find\+Item@{Find\+Item}!cmn\+Named\+Map@{cmn\+Named\+Map}}
+\subsubsection[{Find\+Item}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type $>$ bool {\bf cmn\+Named\+Map}$<$ \+\_\+element\+Type $>$\+::Find\+Item (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{item\+Name}
+\end{DoxyParamCaption}
+) const}\label{classcmn_named_map_ae33739318733f66074f308e6077b0cbb}
+Find an item by name \hypertarget{classcmn_named_map_ae0a0c6bec0c43bd152aa29b396a7dccb}{}\index{cmn\+Named\+Map@{cmn\+Named\+Map}!For\+Each\+Void@{For\+Each\+Void}}
+\index{For\+Each\+Void@{For\+Each\+Void}!cmn\+Named\+Map@{cmn\+Named\+Map}}
+\subsubsection[{For\+Each\+Void}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type $>$ void {\bf cmn\+Named\+Map}$<$ \+\_\+element\+Type $>$\+::For\+Each\+Void (
+\begin{DoxyParamCaption}
+\item[{{\bf Void\+Method\+Pointer}}]{method}
+\end{DoxyParamCaption}
+)}\label{classcmn_named_map_ae0a0c6bec0c43bd152aa29b396a7dccb}
+Execute a method on all objects contained in the map \hypertarget{classcmn_named_map_aaebc16da1a7a806b349e7e5f7e41da09}{}\index{cmn\+Named\+Map@{cmn\+Named\+Map}!Get\+Item@{Get\+Item}}
+\index{Get\+Item@{Get\+Item}!cmn\+Named\+Map@{cmn\+Named\+Map}}
+\subsubsection[{Get\+Item}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type $>$ \+\_\+element\+Type $\ast$ {\bf cmn\+Named\+Map}$<$ \+\_\+element\+Type $>$\+::Get\+Item (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name, }
+\item[{{\bf cmn\+Log\+Level}}]{lod = {\ttfamily {\bf C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+R\+U\+N\+\_\+\+D\+E\+B\+U\+G}}}
+\end{DoxyParamCaption}
+) const}\label{classcmn_named_map_aaebc16da1a7a806b349e7e5f7e41da09}
+Get an item by name \hypertarget{classcmn_named_map_a1b154ee9ae3a3eaa748b867702f206d4}{}\index{cmn\+Named\+Map@{cmn\+Named\+Map}!Get\+Log\+Multiplexer@{Get\+Log\+Multiplexer}}
+\index{Get\+Log\+Multiplexer@{Get\+Log\+Multiplexer}!cmn\+Named\+Map@{cmn\+Named\+Map}}
+\subsubsection[{Get\+Log\+Multiplexer}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ {\bf cmn\+Logger\+::\+Stream\+Buf\+Type}$\ast$ {\bf cmn\+Named\+Map}$<$ \+\_\+element\+Type $>$\+::Get\+Log\+Multiplexer (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\label{classcmn_named_map_a1b154ee9ae3a3eaa748b867702f206d4}
+\hypertarget{classcmn_named_map_a10b7d4cf884a7b5cb44aeb7133452049}{}\index{cmn\+Named\+Map@{cmn\+Named\+Map}!Get\+Map@{Get\+Map}}
+\index{Get\+Map@{Get\+Map}!cmn\+Named\+Map@{cmn\+Named\+Map}}
+\subsubsection[{Get\+Map}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ const {\bf Map\+Type}\& {\bf cmn\+Named\+Map}$<$ \+\_\+element\+Type $>$\+::Get\+Map (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classcmn_named_map_a10b7d4cf884a7b5cb44aeb7133452049}
+Reference on the internal map \hypertarget{classcmn_named_map_a2e819ccf5448f3b47f50246e61f5b453}{}\index{cmn\+Named\+Map@{cmn\+Named\+Map}!Get\+Map@{Get\+Map}}
+\index{Get\+Map@{Get\+Map}!cmn\+Named\+Map@{cmn\+Named\+Map}}
+\subsubsection[{Get\+Map}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ {\bf Map\+Type}\& {\bf cmn\+Named\+Map}$<$ \+\_\+element\+Type $>$\+::Get\+Map (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classcmn_named_map_a2e819ccf5448f3b47f50246e61f5b453}
+\hypertarget{classcmn_named_map_aa606927a1fb85df463d2148200923f40}{}\index{cmn\+Named\+Map@{cmn\+Named\+Map}!Get\+Names@{Get\+Names}}
+\index{Get\+Names@{Get\+Names}!cmn\+Named\+Map@{cmn\+Named\+Map}}
+\subsubsection[{Get\+Names}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type $>$ void {\bf cmn\+Named\+Map}$<$ \+\_\+element\+Type $>$\+::Get\+Names (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ std\+::string $>$ \&}]{place\+Holder}
+\end{DoxyParamCaption}
+) const}\label{classcmn_named_map_aa606927a1fb85df463d2148200923f40}
+List of names used, i.\+e. list of keys in the map \hypertarget{classcmn_named_map_a4748c784451cca8eda41a7959b71f434}{}\index{cmn\+Named\+Map@{cmn\+Named\+Map}!Get\+Names@{Get\+Names}}
+\index{Get\+Names@{Get\+Names}!cmn\+Named\+Map@{cmn\+Named\+Map}}
+\subsubsection[{Get\+Names}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type $>$ std\+::vector$<$ std\+::string $>$ {\bf cmn\+Named\+Map}$<$ \+\_\+element\+Type $>$\+::Get\+Names (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classcmn_named_map_a4748c784451cca8eda41a7959b71f434}
+\hypertarget{classcmn_named_map_a1f41463cb8ad29cc123b6eb751876239}{}\index{cmn\+Named\+Map@{cmn\+Named\+Map}!Remove\+Item@{Remove\+Item}}
+\index{Remove\+Item@{Remove\+Item}!cmn\+Named\+Map@{cmn\+Named\+Map}}
+\subsubsection[{Remove\+Item}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type $>$ bool {\bf cmn\+Named\+Map}$<$ \+\_\+element\+Type $>$\+::Remove\+Item (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name, }
+\item[{{\bf cmn\+Log\+Level}}]{lod = {\ttfamily {\bf C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+R\+U\+N\+\_\+\+E\+R\+R\+O\+R}}}
+\end{DoxyParamCaption}
+)}\label{classcmn_named_map_a1f41463cb8ad29cc123b6eb751876239}
+Remove an item from the internal map. The log level of details is used to determine the lod of a message if the item can not be removed. \hypertarget{classcmn_named_map_ae27d833a5b4bb6fd27982d571a9479fa}{}\index{cmn\+Named\+Map@{cmn\+Named\+Map}!Services@{Services}}
+\index{Services@{Services}!cmn\+Named\+Map@{cmn\+Named\+Map}}
+\subsubsection[{Services}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ const {\bf cmn\+Class\+Services\+Base}$\ast$ {\bf cmn\+Named\+Map}$<$ \+\_\+element\+Type $>$\+::Services (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\label{classcmn_named_map_ae27d833a5b4bb6fd27982d571a9479fa}
+Method use to emulate the \hyperlink{classcmn_generic_object}{cmn\+Generic\+Object} interface used by C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S macros. \hypertarget{classcmn_named_map_add0f54de1d0383787c7ce070d24dac64}{}\index{cmn\+Named\+Map@{cmn\+Named\+Map}!Set\+Owner@{Set\+Owner}}
+\index{Set\+Owner@{Set\+Owner}!cmn\+Named\+Map@{cmn\+Named\+Map}}
+\subsubsection[{Set\+Owner}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ void {\bf cmn\+Named\+Map}$<$ \+\_\+element\+Type $>$\+::Set\+Owner (
+\begin{DoxyParamCaption}
+\item[{const {\bf cmn\+Generic\+Object} \&}]{owner}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classcmn_named_map_add0f54de1d0383787c7ce070d24dac64}
+Set the map owner \hypertarget{classcmn_named_map_a5c545600ff58364bef71df804078378f}{}\index{cmn\+Named\+Map@{cmn\+Named\+Map}!size@{size}}
+\index{size@{size}!cmn\+Named\+Map@{cmn\+Named\+Map}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ {\bf size\+\_\+type} {\bf cmn\+Named\+Map}$<$ \+\_\+element\+Type $>$\+::size (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classcmn_named_map_a5c545600ff58364bef71df804078378f}
+S\+T\+L compatible size \hypertarget{classcmn_named_map_a1082cdd551da4064ac01d1687bf91bf2}{}\index{cmn\+Named\+Map@{cmn\+Named\+Map}!To\+Stream@{To\+Stream}}
+\index{To\+Stream@{To\+Stream}!cmn\+Named\+Map@{cmn\+Named\+Map}}
+\subsubsection[{To\+Stream}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type $>$ void {\bf cmn\+Named\+Map}$<$ \+\_\+element\+Type $>$\+::To\+Stream (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{output\+Stream}
+\end{DoxyParamCaption}
+) const}\label{classcmn_named_map_a1082cdd551da4064ac01d1687bf91bf2}
+Print the content of the map as well as its name 
+
+\subsection{Member Data Documentation}
+\hypertarget{classcmn_named_map_aa5cb7ee747ba8ccc07557a5da5d48b19}{}\index{cmn\+Named\+Map@{cmn\+Named\+Map}!Map@{Map}}
+\index{Map@{Map}!cmn\+Named\+Map@{cmn\+Named\+Map}}
+\subsubsection[{Map}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ {\bf Map\+Type} {\bf cmn\+Named\+Map}$<$ \+\_\+element\+Type $>$\+::Map\hspace{0.3cm}{\ttfamily [protected]}}\label{classcmn_named_map_aa5cb7ee747ba8ccc07557a5da5d48b19}
+Map data member, uses an std\+::map \hypertarget{classcmn_named_map_a5dd1ca924e7481edf3e9c6f65c0f4b3d}{}\index{cmn\+Named\+Map@{cmn\+Named\+Map}!Map\+Name@{Map\+Name}}
+\index{Map\+Name@{Map\+Name}!cmn\+Named\+Map@{cmn\+Named\+Map}}
+\subsubsection[{Map\+Name}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ std\+::string {\bf cmn\+Named\+Map}$<$ \+\_\+element\+Type $>$\+::Map\+Name\hspace{0.3cm}{\ttfamily [protected]}}\label{classcmn_named_map_a5dd1ca924e7481edf3e9c6f65c0f4b3d}
+Name of the map, mostly for logging purposes. \hypertarget{classcmn_named_map_a8e6bffe8f1bdc710bacc3f1d38d75621}{}\index{cmn\+Named\+Map@{cmn\+Named\+Map}!Owner\+Services@{Owner\+Services}}
+\index{Owner\+Services@{Owner\+Services}!cmn\+Named\+Map@{cmn\+Named\+Map}}
+\subsubsection[{Owner\+Services}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ const {\bf cmn\+Class\+Services\+Base}$\ast$ {\bf cmn\+Named\+Map}$<$ \+\_\+element\+Type $>$\+::Owner\+Services\hspace{0.3cm}{\ttfamily [protected]}}\label{classcmn_named_map_a8e6bffe8f1bdc710bacc3f1d38d75621}
+Pointer on existing services. This allows to use the class name and level of detail of another class, e.\+g. the class that owns this map. To set the \char`\"{}\+Owner\char`\"{}, use the method Set\+Owner after the \hyperlink{classcmn_named_map}{cmn\+Named\+Map} is constructed. \hypertarget{classcmn_named_map_ad3775ffc68ea99a853f8eed94f1f1a4f}{}\index{cmn\+Named\+Map@{cmn\+Named\+Map}!Takes\+Ownership@{Takes\+Ownership}}
+\index{Takes\+Ownership@{Takes\+Ownership}!cmn\+Named\+Map@{cmn\+Named\+Map}}
+\subsubsection[{Takes\+Ownership}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ bool {\bf cmn\+Named\+Map}$<$ \+\_\+element\+Type $>$\+::Takes\+Ownership\hspace{0.3cm}{\ttfamily [protected]}}\label{classcmn_named_map_ad3775ffc68ea99a853f8eed94f1f1a4f}
+Flag set to determine if the map \char`\"{}takes ownership\char`\"{} of data. If the map takes ownership it will perform the required {\ttfamily delete} on its data when necessary. The default is false, i.\+e. the map destructor will not attempt to delete its objects. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Common/\hyperlink{cmn_named_map_8h}{cmn\+Named\+Map.\+h}\end{DoxyCompactItemize}

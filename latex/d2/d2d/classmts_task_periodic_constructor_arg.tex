@@ -1,0 +1,177 @@
+\hypertarget{classmts_task_periodic_constructor_arg}{}\section{mts\+Task\+Periodic\+Constructor\+Arg Class Reference}
+\label{classmts_task_periodic_constructor_arg}\index{mts\+Task\+Periodic\+Constructor\+Arg@{mts\+Task\+Periodic\+Constructor\+Arg}}
+
+
+{\ttfamily \#include $<$mts\+Task\+Periodic.\+h$>$}
+
+Inheritance diagram for mts\+Task\+Periodic\+Constructor\+Arg\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{d2/d2d/classmts_task_periodic_constructor_arg}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \hyperlink{classmts_task_periodic_constructor_arg_af722cba7f752072d877df7a5caccff77a636d05314de683eba7b7c31f0627f5cb}{S\+T\+A\+T\+E\+\_\+\+T\+A\+B\+L\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+I\+Z\+E} = 256
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmts_task_periodic_constructor_arg_a859ff291bf47192285f9ab515ce03056}{mts\+Task\+Periodic\+Constructor\+Arg} ()
+\item 
+\hyperlink{classmts_task_periodic_constructor_arg_aab112f4d4f81df67d60dd9283bfd6374}{mts\+Task\+Periodic\+Constructor\+Arg} (const std\+::string \&name, double period, bool is\+Hard\+Real\+Time=false, unsigned int size\+State\+Table=\hyperlink{classmts_task_periodic_constructor_arg_af722cba7f752072d877df7a5caccff77a636d05314de683eba7b7c31f0627f5cb}{S\+T\+A\+T\+E\+\_\+\+T\+A\+B\+L\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+I\+Z\+E})
+\item 
+\hyperlink{classmts_task_periodic_constructor_arg_aa42f9007a3d15d0d6c37d6129149d405}{mts\+Task\+Periodic\+Constructor\+Arg} (const \hyperlink{classmts_task_periodic_constructor_arg}{mts\+Task\+Periodic\+Constructor\+Arg} \&other)
+\item 
+\hyperlink{classmts_task_periodic_constructor_arg_afe25fce7a682ee2a4be36cd63249e8b9}{$\sim$mts\+Task\+Periodic\+Constructor\+Arg} ()
+\item 
+void \hyperlink{classmts_task_periodic_constructor_arg_accdba07a3168373637092903d6c415fd}{Serialize\+Raw} (std\+::ostream \&output\+Stream) const 
+\item 
+void \hyperlink{classmts_task_periodic_constructor_arg_a42a52417233307de92b780e9f9beaf7f}{De\+Serialize\+Raw} (std\+::istream \&input\+Stream)
+\item 
+void \hyperlink{classmts_task_periodic_constructor_arg_addfcb27fe5ad37e6c1ab6dad37b7e120}{To\+Stream} (std\+::ostream \&output\+Stream) const 
+\item 
+virtual void \hyperlink{classmts_task_periodic_constructor_arg_a4820a784c730fdb160090b77675485e8}{To\+Stream\+Raw} (std\+::ostream \&output\+Stream, const char delimiter= \textquotesingle{} \textquotesingle{}, bool header\+Only=false, const std\+::string \&header\+Prefix=\char`\"{}\char`\"{}) const 
+\item 
+virtual bool \hyperlink{classmts_task_periodic_constructor_arg_a95bf0bdf04e064a9c94246948c895ed2}{From\+Stream\+Raw} (std\+::istream \&input\+Stream, const char delimiter= \textquotesingle{} \textquotesingle{})
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{classmts_task_periodic_constructor_arg_a2d6bafc9b8014ea8972324df1325fe28}{Name}
+\item 
+double \hyperlink{classmts_task_periodic_constructor_arg_aa83e6ea04bc9432451c8b9ba9001e629}{Period}
+\item 
+bool \hyperlink{classmts_task_periodic_constructor_arg_a584cbd7f13e57c11978c9264e78aac46}{Is\+Hard\+Real\+Time}
+\item 
+unsigned int \hyperlink{classmts_task_periodic_constructor_arg_a63da643cce33a5cb0e262e4cb391c0a6}{State\+Table\+Size}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classmts_task_periodic_constructor_arg_af722cba7f752072d877df7a5caccff77}{}\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}\label{classmts_task_periodic_constructor_arg_af722cba7f752072d877df7a5caccff77}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{S\+T\+A\+T\+E\+\_\+\+T\+A\+B\+L\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+I\+Z\+E@{S\+T\+A\+T\+E\+\_\+\+T\+A\+B\+L\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+I\+Z\+E}!mts\+Task\+Periodic\+Constructor\+Arg@{mts\+Task\+Periodic\+Constructor\+Arg}}\index{mts\+Task\+Periodic\+Constructor\+Arg@{mts\+Task\+Periodic\+Constructor\+Arg}!S\+T\+A\+T\+E\+\_\+\+T\+A\+B\+L\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+I\+Z\+E@{S\+T\+A\+T\+E\+\_\+\+T\+A\+B\+L\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+I\+Z\+E}}\item[{\em 
+\hypertarget{classmts_task_periodic_constructor_arg_af722cba7f752072d877df7a5caccff77a636d05314de683eba7b7c31f0627f5cb}{}S\+T\+A\+T\+E\+\_\+\+T\+A\+B\+L\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+I\+Z\+E\label{classmts_task_periodic_constructor_arg_af722cba7f752072d877df7a5caccff77a636d05314de683eba7b7c31f0627f5cb}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmts_task_periodic_constructor_arg_a859ff291bf47192285f9ab515ce03056}{}\index{mts\+Task\+Periodic\+Constructor\+Arg@{mts\+Task\+Periodic\+Constructor\+Arg}!mts\+Task\+Periodic\+Constructor\+Arg@{mts\+Task\+Periodic\+Constructor\+Arg}}
+\index{mts\+Task\+Periodic\+Constructor\+Arg@{mts\+Task\+Periodic\+Constructor\+Arg}!mts\+Task\+Periodic\+Constructor\+Arg@{mts\+Task\+Periodic\+Constructor\+Arg}}
+\subsubsection[{mts\+Task\+Periodic\+Constructor\+Arg}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Task\+Periodic\+Constructor\+Arg\+::mts\+Task\+Periodic\+Constructor\+Arg (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_task_periodic_constructor_arg_a859ff291bf47192285f9ab515ce03056}
+\hypertarget{classmts_task_periodic_constructor_arg_aab112f4d4f81df67d60dd9283bfd6374}{}\index{mts\+Task\+Periodic\+Constructor\+Arg@{mts\+Task\+Periodic\+Constructor\+Arg}!mts\+Task\+Periodic\+Constructor\+Arg@{mts\+Task\+Periodic\+Constructor\+Arg}}
+\index{mts\+Task\+Periodic\+Constructor\+Arg@{mts\+Task\+Periodic\+Constructor\+Arg}!mts\+Task\+Periodic\+Constructor\+Arg@{mts\+Task\+Periodic\+Constructor\+Arg}}
+\subsubsection[{mts\+Task\+Periodic\+Constructor\+Arg}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Task\+Periodic\+Constructor\+Arg\+::mts\+Task\+Periodic\+Constructor\+Arg (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name, }
+\item[{double}]{period, }
+\item[{bool}]{is\+Hard\+Real\+Time = {\ttfamily false}, }
+\item[{unsigned int}]{size\+State\+Table = {\ttfamily {\bf S\+T\+A\+T\+E\+\_\+\+T\+A\+B\+L\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+I\+Z\+E}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_task_periodic_constructor_arg_aab112f4d4f81df67d60dd9283bfd6374}
+\hypertarget{classmts_task_periodic_constructor_arg_aa42f9007a3d15d0d6c37d6129149d405}{}\index{mts\+Task\+Periodic\+Constructor\+Arg@{mts\+Task\+Periodic\+Constructor\+Arg}!mts\+Task\+Periodic\+Constructor\+Arg@{mts\+Task\+Periodic\+Constructor\+Arg}}
+\index{mts\+Task\+Periodic\+Constructor\+Arg@{mts\+Task\+Periodic\+Constructor\+Arg}!mts\+Task\+Periodic\+Constructor\+Arg@{mts\+Task\+Periodic\+Constructor\+Arg}}
+\subsubsection[{mts\+Task\+Periodic\+Constructor\+Arg}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Task\+Periodic\+Constructor\+Arg\+::mts\+Task\+Periodic\+Constructor\+Arg (
+\begin{DoxyParamCaption}
+\item[{const {\bf mts\+Task\+Periodic\+Constructor\+Arg} \&}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_task_periodic_constructor_arg_aa42f9007a3d15d0d6c37d6129149d405}
+\hypertarget{classmts_task_periodic_constructor_arg_afe25fce7a682ee2a4be36cd63249e8b9}{}\index{mts\+Task\+Periodic\+Constructor\+Arg@{mts\+Task\+Periodic\+Constructor\+Arg}!````~mts\+Task\+Periodic\+Constructor\+Arg@{$\sim$mts\+Task\+Periodic\+Constructor\+Arg}}
+\index{````~mts\+Task\+Periodic\+Constructor\+Arg@{$\sim$mts\+Task\+Periodic\+Constructor\+Arg}!mts\+Task\+Periodic\+Constructor\+Arg@{mts\+Task\+Periodic\+Constructor\+Arg}}
+\subsubsection[{$\sim$mts\+Task\+Periodic\+Constructor\+Arg}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Task\+Periodic\+Constructor\+Arg\+::$\sim$mts\+Task\+Periodic\+Constructor\+Arg (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_task_periodic_constructor_arg_afe25fce7a682ee2a4be36cd63249e8b9}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classmts_task_periodic_constructor_arg_a42a52417233307de92b780e9f9beaf7f}{}\index{mts\+Task\+Periodic\+Constructor\+Arg@{mts\+Task\+Periodic\+Constructor\+Arg}!De\+Serialize\+Raw@{De\+Serialize\+Raw}}
+\index{De\+Serialize\+Raw@{De\+Serialize\+Raw}!mts\+Task\+Periodic\+Constructor\+Arg@{mts\+Task\+Periodic\+Constructor\+Arg}}
+\subsubsection[{De\+Serialize\+Raw}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Task\+Periodic\+Constructor\+Arg\+::\+De\+Serialize\+Raw (
+\begin{DoxyParamCaption}
+\item[{std\+::istream \&}]{input\+Stream}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_task_periodic_constructor_arg_a42a52417233307de92b780e9f9beaf7f}
+Binary deserialization 
+
+Reimplemented from \hyperlink{classmts_generic_object_af83ae8622a742a5b94bf72e53d20a1cd}{mts\+Generic\+Object}.
+
+\hypertarget{classmts_task_periodic_constructor_arg_a95bf0bdf04e064a9c94246948c895ed2}{}\index{mts\+Task\+Periodic\+Constructor\+Arg@{mts\+Task\+Periodic\+Constructor\+Arg}!From\+Stream\+Raw@{From\+Stream\+Raw}}
+\index{From\+Stream\+Raw@{From\+Stream\+Raw}!mts\+Task\+Periodic\+Constructor\+Arg@{mts\+Task\+Periodic\+Constructor\+Arg}}
+\subsubsection[{From\+Stream\+Raw}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool mts\+Task\+Periodic\+Constructor\+Arg\+::\+From\+Stream\+Raw (
+\begin{DoxyParamCaption}
+\item[{std\+::istream \&}]{input\+Stream, }
+\item[{const char}]{delimiter = {\ttfamily \textquotesingle{}~\textquotesingle{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_task_periodic_constructor_arg_a95bf0bdf04e064a9c94246948c895ed2}
+Read from an unformatted text input (e.\+g., one created by To\+Stream\+Raw). Returns true if successful. 
+
+Reimplemented from \hyperlink{classmts_generic_object_a975ee040ad3b033df2c4bbdbabc34ed4}{mts\+Generic\+Object}.
+
+\hypertarget{classmts_task_periodic_constructor_arg_accdba07a3168373637092903d6c415fd}{}\index{mts\+Task\+Periodic\+Constructor\+Arg@{mts\+Task\+Periodic\+Constructor\+Arg}!Serialize\+Raw@{Serialize\+Raw}}
+\index{Serialize\+Raw@{Serialize\+Raw}!mts\+Task\+Periodic\+Constructor\+Arg@{mts\+Task\+Periodic\+Constructor\+Arg}}
+\subsubsection[{Serialize\+Raw}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Task\+Periodic\+Constructor\+Arg\+::\+Serialize\+Raw (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{output\+Stream}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_task_periodic_constructor_arg_accdba07a3168373637092903d6c415fd}
+Binary serialization 
+
+Reimplemented from \hyperlink{classmts_generic_object_a33d4404a50a87243ca5a1e2b1913dd3b}{mts\+Generic\+Object}.
+
+\hypertarget{classmts_task_periodic_constructor_arg_addfcb27fe5ad37e6c1ab6dad37b7e120}{}\index{mts\+Task\+Periodic\+Constructor\+Arg@{mts\+Task\+Periodic\+Constructor\+Arg}!To\+Stream@{To\+Stream}}
+\index{To\+Stream@{To\+Stream}!mts\+Task\+Periodic\+Constructor\+Arg@{mts\+Task\+Periodic\+Constructor\+Arg}}
+\subsubsection[{To\+Stream}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Task\+Periodic\+Constructor\+Arg\+::\+To\+Stream (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{output\+Stream}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_task_periodic_constructor_arg_addfcb27fe5ad37e6c1ab6dad37b7e120}
+Human readable text output. This method only streams the data members of \hyperlink{classmts_generic_object}{mts\+Generic\+Object}, i.\+e. the Timestamp and Valid flag. It should be called by any derived class re-\/implementing To\+Stream. 
+
+Reimplemented from \hyperlink{classmts_generic_object_a2030aaa58bc215eccce1dc8d20dd0fdc}{mts\+Generic\+Object}.
+
+\hypertarget{classmts_task_periodic_constructor_arg_a4820a784c730fdb160090b77675485e8}{}\index{mts\+Task\+Periodic\+Constructor\+Arg@{mts\+Task\+Periodic\+Constructor\+Arg}!To\+Stream\+Raw@{To\+Stream\+Raw}}
+\index{To\+Stream\+Raw@{To\+Stream\+Raw}!mts\+Task\+Periodic\+Constructor\+Arg@{mts\+Task\+Periodic\+Constructor\+Arg}}
+\subsubsection[{To\+Stream\+Raw}]{\setlength{\rightskip}{0pt plus 5cm}virtual void mts\+Task\+Periodic\+Constructor\+Arg\+::\+To\+Stream\+Raw (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{output\+Stream, }
+\item[{const char}]{delimiter = {\ttfamily \textquotesingle{}~\textquotesingle{}}, }
+\item[{bool}]{header\+Only = {\ttfamily false}, }
+\item[{const std\+::string \&}]{header\+Prefix = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_task_periodic_constructor_arg_a4820a784c730fdb160090b77675485e8}
+Raw text output to stream 
+
+Reimplemented from \hyperlink{classmts_generic_object_a4916a6c62ee5b167d7c93c88ab72523a}{mts\+Generic\+Object}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classmts_task_periodic_constructor_arg_a584cbd7f13e57c11978c9264e78aac46}{}\index{mts\+Task\+Periodic\+Constructor\+Arg@{mts\+Task\+Periodic\+Constructor\+Arg}!Is\+Hard\+Real\+Time@{Is\+Hard\+Real\+Time}}
+\index{Is\+Hard\+Real\+Time@{Is\+Hard\+Real\+Time}!mts\+Task\+Periodic\+Constructor\+Arg@{mts\+Task\+Periodic\+Constructor\+Arg}}
+\subsubsection[{Is\+Hard\+Real\+Time}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Task\+Periodic\+Constructor\+Arg\+::\+Is\+Hard\+Real\+Time}\label{classmts_task_periodic_constructor_arg_a584cbd7f13e57c11978c9264e78aac46}
+\hypertarget{classmts_task_periodic_constructor_arg_a2d6bafc9b8014ea8972324df1325fe28}{}\index{mts\+Task\+Periodic\+Constructor\+Arg@{mts\+Task\+Periodic\+Constructor\+Arg}!Name@{Name}}
+\index{Name@{Name}!mts\+Task\+Periodic\+Constructor\+Arg@{mts\+Task\+Periodic\+Constructor\+Arg}}
+\subsubsection[{Name}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string mts\+Task\+Periodic\+Constructor\+Arg\+::\+Name}\label{classmts_task_periodic_constructor_arg_a2d6bafc9b8014ea8972324df1325fe28}
+\hypertarget{classmts_task_periodic_constructor_arg_aa83e6ea04bc9432451c8b9ba9001e629}{}\index{mts\+Task\+Periodic\+Constructor\+Arg@{mts\+Task\+Periodic\+Constructor\+Arg}!Period@{Period}}
+\index{Period@{Period}!mts\+Task\+Periodic\+Constructor\+Arg@{mts\+Task\+Periodic\+Constructor\+Arg}}
+\subsubsection[{Period}]{\setlength{\rightskip}{0pt plus 5cm}double mts\+Task\+Periodic\+Constructor\+Arg\+::\+Period}\label{classmts_task_periodic_constructor_arg_aa83e6ea04bc9432451c8b9ba9001e629}
+\hypertarget{classmts_task_periodic_constructor_arg_a63da643cce33a5cb0e262e4cb391c0a6}{}\index{mts\+Task\+Periodic\+Constructor\+Arg@{mts\+Task\+Periodic\+Constructor\+Arg}!State\+Table\+Size@{State\+Table\+Size}}
+\index{State\+Table\+Size@{State\+Table\+Size}!mts\+Task\+Periodic\+Constructor\+Arg@{mts\+Task\+Periodic\+Constructor\+Arg}}
+\subsubsection[{State\+Table\+Size}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int mts\+Task\+Periodic\+Constructor\+Arg\+::\+State\+Table\+Size}\label{classmts_task_periodic_constructor_arg_a63da643cce33a5cb0e262e4cb391c0a6}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Multi\+Task/\hyperlink{mts_task_periodic_8h}{mts\+Task\+Periodic.\+h}\end{DoxyCompactItemize}

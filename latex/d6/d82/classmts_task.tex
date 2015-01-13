@@ -1,0 +1,570 @@
+\hypertarget{classmts_task}{}\section{mts\+Task Class Reference}
+\label{classmts_task}\index{mts\+Task@{mts\+Task}}
+
+
+{\ttfamily \#include $<$mts\+Task.\+h$>$}
+
+Inheritance diagram for mts\+Task\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{d6/d82/classmts_task}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classmts_component}{mts\+Component} \hyperlink{classmts_task_aac1f3b293b0dc04205b449899c795b80}{Base\+Type}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmts_task_a984edec80b837edc155eebc67092faf0}{mts\+Task} (const std\+::string \&name, unsigned int size\+State\+Table=256)
+\item 
+virtual \hyperlink{classmts_task_a7a3b50f50f6763c1c0bc5891ec51e32f}{$\sim$mts\+Task} ()
+\item 
+virtual void \hyperlink{classmts_task_aa600105632635600a684541c06a2924b}{On\+Startup\+Exception} (const std\+::exception \&excp)
+\item 
+virtual void \hyperlink{classmts_task_a20e18c9479cb650792456c32ee689834}{Run} (void)=0
+\item 
+virtual void \hyperlink{classmts_task_a58a8ec774820a2e527cf6f5ecdca5842}{On\+Run\+Exception} (const std\+::exception \&excp)
+\item 
+virtual void \hyperlink{classmts_task_a52c822f34f12a0eb14f3d02de9ddd6f6}{Configure} (const std\+::string \&\hyperlink{cmn_portability_8h_a021894e2626935fa2305434b1e893ff6}{C\+M\+N\+\_\+\+U\+N\+U\+S\+E\+D}(filename)=\char`\"{}\char`\"{})
+\item 
+void \hyperlink{classmts_task_ae1ddab5da6257ef89e546ef45a651d6b}{Set\+Initialization\+Delay} (double delay)
+\item 
+virtual void \hyperlink{classmts_task_aa051581f8b5c35105d595d7a46ccbe17}{Create} (void $\ast$data)=0
+\item 
+void \hyperlink{classmts_task_abc1a625d025c1038fa48137f0ba53465}{Create} (void)
+\item 
+void \hyperlink{classmts_task_a67a15d7fffef28708b813e2ea624e4f8}{Kill} (void)
+\item 
+double \hyperlink{classmts_task_ad3536c42140e452a4deb6b5a6f7bf629}{Get\+Average\+Period} (void) const 
+\item 
+const std\+::string \hyperlink{classmts_task_a46a4b088bfae45d795d3c3408db95b96}{Get\+Default\+State\+Table\+Name} (void) const 
+\item 
+\hyperlink{classmts_state_table}{mts\+State\+Table} $\ast$ \hyperlink{classmts_task_ad36b9bceda5769e3552769c0047a7bf9}{Get\+Default\+State\+Table} (void)
+\item 
+\hyperlink{classmts_interface_required}{mts\+Interface\+Required} $\ast$ \hyperlink{classmts_task_a00af25054306741c82c9b3ea2b234cce}{Add\+Interface\+Required\+Without\+System\+Event\+Handlers} (const std\+::string \&interface\+Required\+Name, \hyperlink{mts_forward_declarations_8h_a9ef1ce54724afde7802db326ff8606f3}{mts\+Required\+Type} required=\hyperlink{mts_forward_declarations_8h_a9ef1ce54724afde7802db326ff8606f3ae01fd85391b60e546bbb1be9716c4ec9}{M\+T\+S\+\_\+\+R\+E\+Q\+U\+I\+R\+E\+D})
+\item 
+\hyperlink{classmts_interface_provided}{mts\+Interface\+Provided} $\ast$ \hyperlink{classmts_task_a285ac2354e954ed0f3f8213590eff19c}{Add\+Interface\+Provided\+Without\+System\+Events} (const std\+::string \&new\+Interface\+Name, \hyperlink{mts_forward_declarations_8h_abedfb5c45b329a89b0fb647a96a7c938}{mts\+Interface\+Queueing\+Policy} queueing\+Policy=\hyperlink{mts_forward_declarations_8h_abedfb5c45b329a89b0fb647a96a7c938aff70a768b1fb65f10206583efbad12bb}{M\+T\+S\+\_\+\+C\+O\+M\+P\+O\+N\+E\+N\+T\+\_\+\+P\+O\+L\+I\+C\+Y}, bool is\+Proxy=false)
+\item 
+virtual bool \hyperlink{classmts_task_aeb6270faa5d0c00740677c510e7031a4}{Wait\+To\+Start} (double timeout)
+\item 
+virtual bool \hyperlink{classmts_task_ad0b31e1f08f2ce351eb5f71e80ccda27}{Wait\+To\+Terminate} (double timeout)
+\item 
+virtual void \hyperlink{classmts_task_ab99ef3c0d368d3f2a35c5fad7a035471}{Wait\+For\+Wakeup} (void)
+\item 
+virtual void \hyperlink{classmts_task_a4cb52c04023a0cc729a92eceefa268f7}{Wakeup} (void)
+\item 
+void \hyperlink{classmts_task_aa8f23b499eb009b20055b54df343fb37}{Process\+Manager\+Commands\+If\+Not\+Active} ()
+\item 
+bool \hyperlink{classmts_task_a6cd434e821df3f460832856c8d15bf2f}{Check\+For\+Own\+Thread} (void) const 
+\item 
+virtual bool \hyperlink{classmts_task_ae6568e446bb341b862bb2748be221c85}{Is\+Periodic} (void) const 
+\item 
+virtual bool \hyperlink{classmts_task_a09580b446a82b6ecdd14f6e5d2b5da96}{Is\+Overran\+Period} (void) const 
+\item 
+virtual void \hyperlink{classmts_task_a317c88555ccdb5a70af2cba2d9070c8d}{Reset\+Overran\+Period} (void)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::runtime\+\_\+error \hyperlink{classmts_task_a518652604363d9402292a67c1836e888}{Unknown\+Exception}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classmts_task_a3ffb50ec20611c1372c1ef2fc7c252eb}{Run\+Event\+Handler} (void)
+\item 
+void \hyperlink{classmts_task_a8e7150ceb2934cc1b0d685f249c7c5c1}{Change\+State\+Event\+Handler} (const mts\+Component\+State \&new\+State)
+\item 
+mts\+Execution\+Result \hyperlink{classmts_task_a6bc857ef1d6f98c90f55846e940e00c3}{Run\+Event} (bool check=true)
+\item 
+virtual void $\ast$ \hyperlink{classmts_task_affcd896841ecfe785f898ef93a4202e9}{Run\+Internal} (void $\ast$argument)=0
+\item 
+void \hyperlink{classmts_task_a4f73416a80c5a7601a5cf3fce0167da5}{Do\+Run\+Internal} (void)
+\item 
+virtual void \hyperlink{classmts_task_a6816f8dfc6124376896318ebcdd4832b}{Startup\+Internal} (void)
+\item 
+virtual void \hyperlink{classmts_task_aba518c256e0c623e1e826cc7c76fe8eb}{Cleanup\+Internal} (void)
+\item 
+void \hyperlink{classmts_task_acaccf2da6d6f8f26c65657656d572131}{Sleep} (double time\+In\+Seconds)
+\item 
+\hyperlink{classmts_state_index_a80d0a5acdec3b616347ddea2912b6294}{mts\+State\+Index\+::\+Time\+Ticks\+Type} \hyperlink{classmts_task_a6beb5091a65dd8c7b501701a72cd5057}{Get\+Tick} (void) const 
+\item 
+virtual void \hyperlink{classmts_task_a194fbc7a2dba85f02d80b85bf84ad26c}{Save\+Thread\+Start\+Data} (void $\ast$data)
+\item 
+virtual void \hyperlink{classmts_task_a89f212237d9b7e453c91df8a1a6962d2}{Set\+Thread\+Return\+Value} (void $\ast$return\+Value)
+\item 
+void \hyperlink{classmts_task_a320a9995ca33358c5c334862b6fdf7a2}{Change\+State} (mts\+Component\+State\+::\+Enum new\+State)
+\item 
+bool \hyperlink{classmts_task_a2153a26a4a92583bae49696501da212e}{Wait\+For\+State} (mts\+Component\+State desired\+State, double timeout)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classosa_thread}{osa\+Thread} \hyperlink{classmts_task_a020aaf3f85e33991c3b349138b826218}{Thread}
+\item 
+double \hyperlink{classmts_task_a019723804fb78a9c8a2146d921290570}{Initialization\+Delay}
+\item 
+\hyperlink{classosa_mutex}{osa\+Mutex} \hyperlink{classmts_task_abcc895b6d73ea813783da11440e2fe3a}{State\+Change}
+\item 
+\hyperlink{classosa_thread_signal}{osa\+Thread\+Signal} \hyperlink{classmts_task_a49ee515de5a8a49d2c307ed429ce390f}{State\+Change\+Signal}
+\item 
+\hyperlink{classmts_state_table}{mts\+State\+Table} \hyperlink{classmts_task_afef3935273a3dfe792b7d3beb6b3c4f1}{State\+Table}
+\item 
+bool \hyperlink{classmts_task_a974896a778a02b8928397213658b1c83}{Overran\+Period}
+\item 
+void $\ast$ \hyperlink{classmts_task_a0f4d0bdac8ce91bd7a44a80d0903165b}{Thread\+Start\+Data}
+\item 
+void $\ast$ \hyperlink{classmts_task_a78bef07d3d9f446ee5d83724ada03d7e}{Return\+Value}
+\item 
+\hyperlink{classmts_callable_void_base}{mts\+Callable\+Void\+Base} $\ast$ \hyperlink{classmts_task_a044e5d67f206af2df17d7406860d4ec4}{Interface\+Provided\+To\+Manager\+Callable}
+\item 
+\hyperlink{classmts_interface_required}{mts\+Interface\+Required} $\ast$ \hyperlink{classmts_task_af77b19432b3640be7680c03cd0f78c22}{Exec\+In}
+\item 
+\hyperlink{classmts_interface_provided}{mts\+Interface\+Provided} $\ast$ \hyperlink{classmts_task_a5a65f2162a178087dc90effe7a9ab6d8}{Exec\+Out}
+\item 
+\hyperlink{classmts_function_void}{mts\+Function\+Void} \hyperlink{classmts_task_a8c40d935488c3bdba29f88bef9ee7809}{Run\+Event\+Internal}
+\item 
+bool \hyperlink{classmts_task_a274a28efd0acb799f30a25ca6a729956}{Run\+Event\+Called}
+\item 
+\hyperlink{classmts_function_write}{mts\+Function\+Write} \hyperlink{classmts_task_ae7a10d8ab52bae5e6a5dc9589a7a386e}{Change\+State\+Event}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classmts_task_a31c1c611dbb103ac58ed40d84960baa0}{mts\+Manager\+Local}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This class provides the base for implementing tasks that have a thread, a state table to store the state at each \textquotesingle{}tick\textquotesingle{} (increment) of the task, and queues to receive messages (commands) from other tasks. It is derived from \hyperlink{classmts_component}{mts\+Component}, so it also contains the provided and required interfaces, with their lists of commands. 
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classmts_task_aac1f3b293b0dc04205b449899c795b80}{}\index{mts\+Task@{mts\+Task}!Base\+Type@{Base\+Type}}
+\index{Base\+Type@{Base\+Type}!mts\+Task@{mts\+Task}}
+\subsubsection[{Base\+Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf mts\+Component} {\bf mts\+Task\+::\+Base\+Type}}\label{classmts_task_aac1f3b293b0dc04205b449899c795b80}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmts_task_a984edec80b837edc155eebc67092faf0}{}\index{mts\+Task@{mts\+Task}!mts\+Task@{mts\+Task}}
+\index{mts\+Task@{mts\+Task}!mts\+Task@{mts\+Task}}
+\subsubsection[{mts\+Task}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Task\+::mts\+Task (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name, }
+\item[{unsigned int}]{size\+State\+Table = {\ttfamily 256}}
+\end{DoxyParamCaption}
+)}\label{classmts_task_a984edec80b837edc155eebc67092faf0}
+Create a task with name \textquotesingle{}name\textquotesingle{} and set the state table size (see \hyperlink{classmts_state_table}{mts\+State\+Table}). This is the task base class. Tasks should be derived from one of the existing derived classes\+: \hyperlink{classmts_task_continuous}{mts\+Task\+Continuous}, \hyperlink{classmts_task_periodic}{mts\+Task\+Periodic}, \hyperlink{classmts_task_from_callback}{mts\+Task\+From\+Callback}, and \hyperlink{classmts_task_from_signal}{mts\+Task\+From\+Signal}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name for the task \\
+\hline
+{\em size\+State\+Table} & The history size of the state table\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+The full string name is maintained in the class member data (in \hyperlink{classmts_component}{mts\+Component} base class). But, be aware that when a thread and/or thread buddy is created, only the first 6 characters of this name are used with the thread or thread buddy. This is an artifact of the 6 character limit imposed by R\+T\+A\+I/\+Linux.
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classmts_component}{mts\+Component}, \hyperlink{classmts_task_continuous}{mts\+Task\+Continuous}, \hyperlink{classmts_task_periodic}{mts\+Task\+Periodic}, \hyperlink{classmts_task_from_callback}{mts\+Task\+From\+Callback}, \hyperlink{classmts_task_from_signal}{mts\+Task\+From\+Signal} 
+\end{DoxySeeAlso}
+\hypertarget{classmts_task_a7a3b50f50f6763c1c0bc5891ec51e32f}{}\index{mts\+Task@{mts\+Task}!````~mts\+Task@{$\sim$mts\+Task}}
+\index{````~mts\+Task@{$\sim$mts\+Task}!mts\+Task@{mts\+Task}}
+\subsubsection[{$\sim$mts\+Task}]{\setlength{\rightskip}{0pt plus 5cm}virtual mts\+Task\+::$\sim$mts\+Task (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_task_a7a3b50f50f6763c1c0bc5891ec51e32f}
+Default Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classmts_task_a285ac2354e954ed0f3f8213590eff19c}{}\index{mts\+Task@{mts\+Task}!Add\+Interface\+Provided\+Without\+System\+Events@{Add\+Interface\+Provided\+Without\+System\+Events}}
+\index{Add\+Interface\+Provided\+Without\+System\+Events@{Add\+Interface\+Provided\+Without\+System\+Events}!mts\+Task@{mts\+Task}}
+\subsubsection[{Add\+Interface\+Provided\+Without\+System\+Events}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+Interface\+Provided}$\ast$ mts\+Task\+::\+Add\+Interface\+Provided\+Without\+System\+Events (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{interface\+Provided\+Name, }
+\item[{{\bf mts\+Interface\+Queueing\+Policy}}]{queueing\+Policy = {\ttfamily {\bf M\+T\+S\+\_\+\+C\+O\+M\+P\+O\+N\+E\+N\+T\+\_\+\+P\+O\+L\+I\+C\+Y}}, }
+\item[{bool}]{is\+Proxy = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_task_a285ac2354e954ed0f3f8213590eff19c}
+Method to add a bare provided interface, i.\+e. without all the system events. This method should not be used by regular users as it might break things like blocking commands.
+
+This method is virtual so that \hyperlink{classmts_task}{mts\+Task} can redefine it and create a provided interface that includes queues for thread safety. 
+
+Reimplemented from \hyperlink{classmts_component_a06de220ed3ff629565ec27fded349d81}{mts\+Component}.
+
+
+
+Reimplemented in \hyperlink{classmts_task_from_signal_a3c970338699b4f96c81382af821ed8fd}{mts\+Task\+From\+Signal}.
+
+\hypertarget{classmts_task_a00af25054306741c82c9b3ea2b234cce}{}\index{mts\+Task@{mts\+Task}!Add\+Interface\+Required\+Without\+System\+Event\+Handlers@{Add\+Interface\+Required\+Without\+System\+Event\+Handlers}}
+\index{Add\+Interface\+Required\+Without\+System\+Event\+Handlers@{Add\+Interface\+Required\+Without\+System\+Event\+Handlers}!mts\+Task@{mts\+Task}}
+\subsubsection[{Add\+Interface\+Required\+Without\+System\+Event\+Handlers}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+Interface\+Required}$\ast$ mts\+Task\+::\+Add\+Interface\+Required\+Without\+System\+Event\+Handlers (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{interface\+Required\+Name, }
+\item[{{\bf mts\+Required\+Type}}]{required = {\ttfamily {\bf M\+T\+S\+\_\+\+R\+E\+Q\+U\+I\+R\+E\+D}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_task_a00af25054306741c82c9b3ea2b234cce}
+
+
+Reimplemented from \hyperlink{classmts_component_a007fa609ad6324d5cce07f125fd4fb5a}{mts\+Component}.
+
+
+
+Reimplemented in \hyperlink{classmts_task_from_signal_ab3cec57b1aa96bb362249da1619c70da}{mts\+Task\+From\+Signal}.
+
+\hypertarget{classmts_task_a320a9995ca33358c5c334862b6fdf7a2}{}\index{mts\+Task@{mts\+Task}!Change\+State@{Change\+State}}
+\index{Change\+State@{Change\+State}!mts\+Task@{mts\+Task}}
+\subsubsection[{Change\+State}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Task\+::\+Change\+State (
+\begin{DoxyParamCaption}
+\item[{mts\+Component\+State\+::\+Enum}]{new\+State}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_task_a320a9995ca33358c5c334862b6fdf7a2}
+\hypertarget{classmts_task_a8e7150ceb2934cc1b0d685f249c7c5c1}{}\index{mts\+Task@{mts\+Task}!Change\+State\+Event\+Handler@{Change\+State\+Event\+Handler}}
+\index{Change\+State\+Event\+Handler@{Change\+State\+Event\+Handler}!mts\+Task@{mts\+Task}}
+\subsubsection[{Change\+State\+Event\+Handler}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Task\+::\+Change\+State\+Event\+Handler (
+\begin{DoxyParamCaption}
+\item[{const mts\+Component\+State \&}]{new\+State}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_task_a8e7150ceb2934cc1b0d685f249c7c5c1}
+Change state event handler. \hypertarget{classmts_task_a6cd434e821df3f460832856c8d15bf2f}{}\index{mts\+Task@{mts\+Task}!Check\+For\+Own\+Thread@{Check\+For\+Own\+Thread}}
+\index{Check\+For\+Own\+Thread@{Check\+For\+Own\+Thread}!mts\+Task@{mts\+Task}}
+\subsubsection[{Check\+For\+Own\+Thread}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Task\+::\+Check\+For\+Own\+Thread (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classmts_task_a6cd434e821df3f460832856c8d15bf2f}
+Returns true if currently executing in thread-\/space of component. \hypertarget{classmts_task_aba518c256e0c623e1e826cc7c76fe8eb}{}\index{mts\+Task@{mts\+Task}!Cleanup\+Internal@{Cleanup\+Internal}}
+\index{Cleanup\+Internal@{Cleanup\+Internal}!mts\+Task@{mts\+Task}}
+\subsubsection[{Cleanup\+Internal}]{\setlength{\rightskip}{0pt plus 5cm}virtual void mts\+Task\+::\+Cleanup\+Internal (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classmts_task_aba518c256e0c623e1e826cc7c76fe8eb}
+The member function that is executed once the task terminates. This does some cleanup work. 
+
+Reimplemented in \hyperlink{classmts_task_periodic_a9c53e006fe135c78d64a71790b9a6000}{mts\+Task\+Periodic}.
+
+\hypertarget{classmts_task_a52c822f34f12a0eb14f3d02de9ddd6f6}{}\index{mts\+Task@{mts\+Task}!Configure@{Configure}}
+\index{Configure@{Configure}!mts\+Task@{mts\+Task}}
+\subsubsection[{Configure}]{\setlength{\rightskip}{0pt plus 5cm}virtual void mts\+Task\+::\+Configure (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{C\+M\+N\+\_\+\+U\+N\+U\+S\+E\+Dfilename = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classmts_task_a52c822f34f12a0eb14f3d02de9ddd6f6}
+Virtual method that gets called when the task/interface needs to be configured. Should it take X\+M\+L info?? 
+
+Reimplemented in \hyperlink{classmts_sensable_h_d_a3819baf43b57192a1a339a942d2fa0d7}{mts\+Sensable\+H\+D}, \hyperlink{classmts_open_a_l_record_a678283f5ad5b18064fd7c77bb697c038}{mts\+Open\+A\+L\+Record}, \hyperlink{classmts_novint_h_d_l_ab6df53b1e9ab9f557022d60694950c78}{mts\+Novint\+H\+D\+L}, \hyperlink{classmts_component_viewer_af3c34464ddff5a8b5728fb414543a144}{mts\+Component\+Viewer}, \hyperlink{classmts_intuitive_da_vinci_a98409faa6d3f51b2bd153df262b4db59}{mts\+Intuitive\+Da\+Vinci}, \hyperlink{classmts_open_a_l_play_a50d5e6a0d10ed9ce6731610c8a90348d}{mts\+Open\+A\+L\+Play}, \hyperlink{classmts_sartorius_serial_ae6b6992083c4e16a241634b1c976efee}{mts\+Sartorius\+Serial}, \hyperlink{classmts_text_to_speech_a7ac4d804f9e043bf877ea37138867687}{mts\+Text\+To\+Speech}, and \hyperlink{classmts_keyboard_a386a495b739b6a14475c8009c5b63c09}{mts\+Keyboard}.
+
+\hypertarget{classmts_task_aa051581f8b5c35105d595d7a46ccbe17}{}\index{mts\+Task@{mts\+Task}!Create@{Create}}
+\index{Create@{Create}!mts\+Task@{mts\+Task}}
+\subsubsection[{Create}]{\setlength{\rightskip}{0pt plus 5cm}virtual void mts\+Task\+::\+Create (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classmts_task_aa051581f8b5c35105d595d7a46ccbe17}
+
+
+Implemented in \hyperlink{classmts_task_continuous_a28e79bc5f1a3eb9b7ef01910dd2b55e8}{mts\+Task\+Continuous}, \hyperlink{classmts_sensable_h_d_a842668ae5afc97ce4513ef6c619e0a3c}{mts\+Sensable\+H\+D}, \hyperlink{classmts_task_from_callback_ad167ac4fc56eb5559af44741cbc10600}{mts\+Task\+From\+Callback}, and \hyperlink{classmts_novint_h_d_l_ab07ce6cde2e9b851c291f61a1332ca63}{mts\+Novint\+H\+D\+L}.
+
+\hypertarget{classmts_task_abc1a625d025c1038fa48137f0ba53465}{}\index{mts\+Task@{mts\+Task}!Create@{Create}}
+\index{Create@{Create}!mts\+Task@{mts\+Task}}
+\subsubsection[{Create}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Task\+::\+Create (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classmts_task_abc1a625d025c1038fa48137f0ba53465}
+Virtual method to create the components, e.\+g. for tasks create the required threads. For other components, place initialization code. 
+
+Reimplemented from \hyperlink{classmts_component_a7e8a723ce2fa2ed12b2fb4095ca6feec}{mts\+Component}.
+
+\hypertarget{classmts_task_a4f73416a80c5a7601a5cf3fce0167da5}{}\index{mts\+Task@{mts\+Task}!Do\+Run\+Internal@{Do\+Run\+Internal}}
+\index{Do\+Run\+Internal@{Do\+Run\+Internal}!mts\+Task@{mts\+Task}}
+\subsubsection[{Do\+Run\+Internal}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Task\+::\+Do\+Run\+Internal (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_task_a4f73416a80c5a7601a5cf3fce0167da5}
+The main part of the Run loop that is the same for all derived classes. This should not be overloaded. \hypertarget{classmts_task_ad3536c42140e452a4deb6b5a6f7bf629}{}\index{mts\+Task@{mts\+Task}!Get\+Average\+Period@{Get\+Average\+Period}}
+\index{Get\+Average\+Period@{Get\+Average\+Period}!mts\+Task@{mts\+Task}}
+\subsubsection[{Get\+Average\+Period}]{\setlength{\rightskip}{0pt plus 5cm}double mts\+Task\+::\+Get\+Average\+Period (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_task_ad3536c42140e452a4deb6b5a6f7bf629}
+Return the average period. \hypertarget{classmts_task_ad36b9bceda5769e3552769c0047a7bf9}{}\index{mts\+Task@{mts\+Task}!Get\+Default\+State\+Table@{Get\+Default\+State\+Table}}
+\index{Get\+Default\+State\+Table@{Get\+Default\+State\+Table}!mts\+Task@{mts\+Task}}
+\subsubsection[{Get\+Default\+State\+Table}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+State\+Table}$\ast$ mts\+Task\+::\+Get\+Default\+State\+Table (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_task_ad36b9bceda5769e3552769c0047a7bf9}
+Return a pointer to the default state table. See Get\+State\+Table and Get\+Default\+State\+Table\+Name. \hypertarget{classmts_task_a46a4b088bfae45d795d3c3408db95b96}{}\index{mts\+Task@{mts\+Task}!Get\+Default\+State\+Table\+Name@{Get\+Default\+State\+Table\+Name}}
+\index{Get\+Default\+State\+Table\+Name@{Get\+Default\+State\+Table\+Name}!mts\+Task@{mts\+Task}}
+\subsubsection[{Get\+Default\+State\+Table\+Name}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string mts\+Task\+::\+Get\+Default\+State\+Table\+Name (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_task_a46a4b088bfae45d795d3c3408db95b96}
+Return the name of this state table. \hypertarget{classmts_task_a6beb5091a65dd8c7b501701a72cd5057}{}\index{mts\+Task@{mts\+Task}!Get\+Tick@{Get\+Tick}}
+\index{Get\+Tick@{Get\+Tick}!mts\+Task@{mts\+Task}}
+\subsubsection[{Get\+Tick}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+State\+Index\+::\+Time\+Ticks\+Type} mts\+Task\+::\+Get\+Tick (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_task_a6beb5091a65dd8c7b501701a72cd5057}
+Return the current tick count. \hypertarget{classmts_task_a09580b446a82b6ecdd14f6e5d2b5da96}{}\index{mts\+Task@{mts\+Task}!Is\+Overran\+Period@{Is\+Overran\+Period}}
+\index{Is\+Overran\+Period@{Is\+Overran\+Period}!mts\+Task@{mts\+Task}}
+\subsubsection[{Is\+Overran\+Period}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool mts\+Task\+::\+Is\+Overran\+Period (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classmts_task_a09580b446a82b6ecdd14f6e5d2b5da96}
+Return true if task overran allocated period. Note that this is not restricted to \hyperlink{classmts_task_periodic}{mts\+Task\+Periodic}. For example, an \hyperlink{classmts_task_from_callback}{mts\+Task\+From\+Callback} can overrun if a second callback occurs before the first is finished. \hypertarget{classmts_task_ae6568e446bb341b862bb2748be221c85}{}\index{mts\+Task@{mts\+Task}!Is\+Periodic@{Is\+Periodic}}
+\index{Is\+Periodic@{Is\+Periodic}!mts\+Task@{mts\+Task}}
+\subsubsection[{Is\+Periodic}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool mts\+Task\+::\+Is\+Periodic (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classmts_task_ae6568e446bb341b862bb2748be221c85}
+Return true if thread is periodic. 
+
+Reimplemented in \hyperlink{classmts_task_periodic_af825cb47ff69d22024981da77ddcf2c2}{mts\+Task\+Periodic}.
+
+\hypertarget{classmts_task_a67a15d7fffef28708b813e2ea624e4f8}{}\index{mts\+Task@{mts\+Task}!Kill@{Kill}}
+\index{Kill@{Kill}!mts\+Task@{mts\+Task}}
+\subsubsection[{Kill}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Task\+::\+Kill (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_task_a67a15d7fffef28708b813e2ea624e4f8}
+End the task 
+
+Reimplemented from \hyperlink{classmts_component_a8c874182b54438abb963b755c3b27f95}{mts\+Component}.
+
+
+
+Reimplemented in \hyperlink{classmts_task_continuous_ad1f8145306e074fbea8baab3beef4c5b}{mts\+Task\+Continuous}, \hyperlink{classmts_task_from_callback_ae5a5080d14be6175588bc98275070384}{mts\+Task\+From\+Callback}, \hyperlink{classmts_sensable_h_d_a735f1a0600ddd91e112e92e520d07d46}{mts\+Sensable\+H\+D}, \hyperlink{classmts_novint_h_d_l_a1a0ada52f3d96ed663e0f34ebbe0e629}{mts\+Novint\+H\+D\+L}, and \hyperlink{classmts_task_from_signal_a9a1b6e7c80ca2c2fdc14de78e3635922}{mts\+Task\+From\+Signal}.
+
+\hypertarget{classmts_task_a58a8ec774820a2e527cf6f5ecdca5842}{}\index{mts\+Task@{mts\+Task}!On\+Run\+Exception@{On\+Run\+Exception}}
+\index{On\+Run\+Exception@{On\+Run\+Exception}!mts\+Task@{mts\+Task}}
+\subsubsection[{On\+Run\+Exception}]{\setlength{\rightskip}{0pt plus 5cm}virtual void mts\+Task\+::\+On\+Run\+Exception (
+\begin{DoxyParamCaption}
+\item[{const std\+::exception \&}]{excp}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_task_a58a8ec774820a2e527cf6f5ecdca5842}
+Virtual method that gets called if an exception is thrown in the Run method. \hypertarget{classmts_task_aa600105632635600a684541c06a2924b}{}\index{mts\+Task@{mts\+Task}!On\+Startup\+Exception@{On\+Startup\+Exception}}
+\index{On\+Startup\+Exception@{On\+Startup\+Exception}!mts\+Task@{mts\+Task}}
+\subsubsection[{On\+Startup\+Exception}]{\setlength{\rightskip}{0pt plus 5cm}virtual void mts\+Task\+::\+On\+Startup\+Exception (
+\begin{DoxyParamCaption}
+\item[{const std\+::exception \&}]{excp}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_task_aa600105632635600a684541c06a2924b}
+Virtual method that gets called if an exception is thrown in the Startup method. This could be moved to \hyperlink{classmts_component}{mts\+Component}. \hypertarget{classmts_task_aa8f23b499eb009b20055b54df343fb37}{}\index{mts\+Task@{mts\+Task}!Process\+Manager\+Commands\+If\+Not\+Active@{Process\+Manager\+Commands\+If\+Not\+Active}}
+\index{Process\+Manager\+Commands\+If\+Not\+Active@{Process\+Manager\+Commands\+If\+Not\+Active}!mts\+Task@{mts\+Task}}
+\subsubsection[{Process\+Manager\+Commands\+If\+Not\+Active}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Task\+::\+Process\+Manager\+Commands\+If\+Not\+Active (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classmts_task_aa8f23b499eb009b20055b54df343fb37}
+Conditionally process internal mailbox \hypertarget{classmts_task_a317c88555ccdb5a70af2cba2d9070c8d}{}\index{mts\+Task@{mts\+Task}!Reset\+Overran\+Period@{Reset\+Overran\+Period}}
+\index{Reset\+Overran\+Period@{Reset\+Overran\+Period}!mts\+Task@{mts\+Task}}
+\subsubsection[{Reset\+Overran\+Period}]{\setlength{\rightskip}{0pt plus 5cm}virtual void mts\+Task\+::\+Reset\+Overran\+Period (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classmts_task_a317c88555ccdb5a70af2cba2d9070c8d}
+Reset overran period flag. \hypertarget{classmts_task_a20e18c9479cb650792456c32ee689834}{}\index{mts\+Task@{mts\+Task}!Run@{Run}}
+\index{Run@{Run}!mts\+Task@{mts\+Task}}
+\subsubsection[{Run}]{\setlength{\rightskip}{0pt plus 5cm}virtual void mts\+Task\+::\+Run (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classmts_task_a20e18c9479cb650792456c32ee689834}
+Pure virtual method that gets overloaded to run the actual task. 
+
+Implemented in \hyperlink{classmts_manager_component_client_a9bd3a578609dfafe654f5646eb7a0c74}{mts\+Manager\+Component\+Client}, \hyperlink{classmts_manager_component_base_a833777d244564494fbfaed685e2b543d}{mts\+Manager\+Component\+Base}, \hyperlink{classmts_medtronic_stealthlink_adb65e0936975a36c6c1885925d63dcc6}{mts\+Medtronic\+Stealthlink}, \hyperlink{classmts_p_i_d_a43f5e34d7a45a19fb9f2fa8685303e2e}{mts\+P\+I\+D}, \hyperlink{classmts_socket_proxy_server_a10ea0b133dccf740841af2058b332ced}{mts\+Socket\+Proxy\+Server}, \hyperlink{classmts_medtronic_stealthlink_adb65e0936975a36c6c1885925d63dcc6}{mts\+Medtronic\+Stealthlink}, \hyperlink{classmts_c_m_u_sphinx4_aaa675bedc415146f13f5e532aa76f5ef}{mts\+C\+M\+U\+Sphinx4}, \hyperlink{classmts_collector_event_a9812847f92aa6d306fefcd900bdb7d8d}{mts\+Collector\+Event}, \hyperlink{classmts_manager_component_server_a18c682506c92fd6e0523e3925f1e637b}{mts\+Manager\+Component\+Server}, \hyperlink{classmts_sensable_h_d_a9fbf2831f6dfbb39089c53a411bff751}{mts\+Sensable\+H\+D}, \hyperlink{classmts_socket_proxy_client_a7a45114ab6273e061801d8610a2f0507}{mts\+Socket\+Proxy\+Client}, \hyperlink{classmts_open_a_l_record_a523d1b8491d0c56b1bb3e96c8305e7aa}{mts\+Open\+A\+L\+Record}, \hyperlink{classmts_qt_application_a31e4e1351cf964b479d96e061f2eebac}{mts\+Qt\+Application}, \hyperlink{classmts_novint_h_d_l_a95c92d72b00ec707b16f58d464194cf6}{mts\+Novint\+H\+D\+L}, \hyperlink{classmts_component_viewer_a4c3d8d11e6e2f187c1b8fdaef3b3c561}{mts\+Component\+Viewer}, \hyperlink{classmts_n_d_i_serial_a72e2d58128b11e5d376db3ec8b3b81cb}{mts\+N\+D\+I\+Serial}, \hyperlink{classmts_g_l_u_t_manipulator_a1a8729d2fe65bc4934ea7a99752d8b1f}{mts\+G\+L\+U\+T\+Manipulator}, \hyperlink{classmts_open_a_l_play_a2c0ee1fd77ccb0b7e67767aee82cd164}{mts\+Open\+A\+L\+Play}, \hyperlink{classire_task_aa800f1928e669ace4ce6b7bda8611e59}{ire\+Task}, \hyperlink{classmts_micron_tracker_a6445add41169ec175e0aff27432c930d}{mts\+Micron\+Tracker}, \hyperlink{classmts_component_add_latency_a0991c25360c716a374fc8c2543840688}{mts\+Component\+Add\+Latency}, \hyperlink{classmts_intuitive_da_vinci_a8b6c9c77958c2726d1e7ae46d0e34ee2}{mts\+Intuitive\+Da\+Vinci}, \hyperlink{classmts_o_s_g_camera_task_a017d41a7a6dbfced2a43c81daa98e6a0}{mts\+O\+S\+G\+Camera\+Task}, \hyperlink{classmts_sartorius_serial_aa3bb133f25535f1b9af2f2da6356ad18}{mts\+Sartorius\+Serial}, \hyperlink{classmts3_dconnexion_a8ea74b76b74ae0bb7e1e6c491869bfc0}{mts3\+Dconnexion}, \hyperlink{classmts_open_i_g_t_link_a5bffb1931626355ec81281d953e1df55}{mts\+Open\+I\+G\+T\+Link}, \hyperlink{classmts_w_a_m_a3e630eeac8155b8c6a61ef3abfb0d14f}{mts\+W\+A\+M}, \hyperlink{classmts_trajectory_a4b4b3112c8dd657f8a986a161adaff00}{mts\+Trajectory}, \hyperlink{classmts_o_s_g_manipulator_task_a7cf39031d1894ae1b320410d51703213}{mts\+O\+S\+G\+Manipulator\+Task}, \hyperlink{classmts_robot_task_a7c6ceb57c621ab8d11a80de7519c9d9a}{mts\+Robot\+Task}, \hyperlink{classmts_robot_i_o1394_a01fea2cc930d89b666f603b27eed61ba}{mts\+Robot\+I\+O1394}, \hyperlink{classmts_intuitive_research_kit_u_d_p_streamer_a300965bcb1e0bc75e323037f31213815}{mts\+Intuitive\+Research\+Kit\+U\+D\+P\+Streamer}, \hyperlink{classmts_o_d_e_manipulator_task_a4dd0bebf8a9287051fe198aa4e42b631}{mts\+O\+D\+E\+Manipulator\+Task}, \hyperlink{classmts_o_s_g_image_a9512bb3ca14c4f6de9e64f2c0f7bda7c}{mts\+O\+S\+G\+Image}, \hyperlink{classmts_text_to_speech_a9c724a185cfff331ccb781e16e4ed5b5}{mts\+Text\+To\+Speech}, \hyperlink{classmts_p_d_g_c_a443cbb3ccb3ae69415b22db66d20c466}{mts\+P\+D\+G\+C}, \hyperlink{classmts_a_t_i_net_f_t_sensor_a91e4aba10538d0e42c27748a8730cc20}{mts\+A\+T\+I\+Net\+F\+T\+Sensor}, \hyperlink{classmts_collector_qt_factory_a643e420653f8996f700acf0e1aa5d214}{mts\+Collector\+Qt\+Factory}, \hyperlink{classmts_tele_operation_a9d7840b7ac88227c2b49cc83d98bdbb7}{mts\+Tele\+Operation}, \hyperlink{classmts_o_d_e_world_a9a5287b71830a7c814642c7c23448412}{mts\+O\+D\+E\+World}, \hyperlink{classmts_collector_factory_a06d146dcb006904d4a3e7b6522451089}{mts\+Collector\+Factory}, \hyperlink{classmts_gravity_compensation_a4434cc931c8e6069450b78b5ad83792d}{mts\+Gravity\+Compensation}, \hyperlink{classmts_keyboard_ad185c6674e74f5a8a644de354a161cdc}{mts\+Keyboard}, \hyperlink{classmts_intuitive_research_kit_arm_a1694cd44f39f14e0a9d8df7052aa60f1}{mts\+Intuitive\+Research\+Kit\+Arm}, and \hyperlink{classmts_intuitive_research_kit_console_ad43239998cb5751d31491cdcf5330ba1}{mts\+Intuitive\+Research\+Kit\+Console}.
+
+\hypertarget{classmts_task_a6bc857ef1d6f98c90f55846e940e00c3}{}\index{mts\+Task@{mts\+Task}!Run\+Event@{Run\+Event}}
+\index{Run\+Event@{Run\+Event}!mts\+Task@{mts\+Task}}
+\subsubsection[{Run\+Event}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Execution\+Result mts\+Task\+::\+Run\+Event (
+\begin{DoxyParamCaption}
+\item[{bool}]{check = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_task_a6bc857ef1d6f98c90f55846e940e00c3}
+\hypertarget{classmts_task_a3ffb50ec20611c1372c1ef2fc7c252eb}{}\index{mts\+Task@{mts\+Task}!Run\+Event\+Handler@{Run\+Event\+Handler}}
+\index{Run\+Event\+Handler@{Run\+Event\+Handler}!mts\+Task@{mts\+Task}}
+\subsubsection[{Run\+Event\+Handler}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Task\+::\+Run\+Event\+Handler (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_task_a3ffb50ec20611c1372c1ef2fc7c252eb}
+Run event handler. \hypertarget{classmts_task_affcd896841ecfe785f898ef93a4202e9}{}\index{mts\+Task@{mts\+Task}!Run\+Internal@{Run\+Internal}}
+\index{Run\+Internal@{Run\+Internal}!mts\+Task@{mts\+Task}}
+\subsubsection[{Run\+Internal}]{\setlength{\rightskip}{0pt plus 5cm}virtual void$\ast$ mts\+Task\+::\+Run\+Internal (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{argument}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}\label{classmts_task_affcd896841ecfe785f898ef93a4202e9}
+The member function that is passed as \textquotesingle{}start routine\textquotesingle{} argument for thread creation. 
+
+Implemented in \hyperlink{classmts_task_periodic_aabe3aa8bd8d2b8d3ca488cfbe19a2c63}{mts\+Task\+Periodic}, \hyperlink{classmts_task_continuous_ae7335e46dbed0ab3e1e44b628c438319}{mts\+Task\+Continuous}, \hyperlink{classmts_task_from_callback_a595282bbeeeb168f4f585bee75c92df2}{mts\+Task\+From\+Callback}, and \hyperlink{classmts_task_from_signal_a8bdcd5913b1e3928d3dbc08a96f3fe65}{mts\+Task\+From\+Signal}.
+
+\hypertarget{classmts_task_a194fbc7a2dba85f02d80b85bf84ad26c}{}\index{mts\+Task@{mts\+Task}!Save\+Thread\+Start\+Data@{Save\+Thread\+Start\+Data}}
+\index{Save\+Thread\+Start\+Data@{Save\+Thread\+Start\+Data}!mts\+Task@{mts\+Task}}
+\subsubsection[{Save\+Thread\+Start\+Data}]{\setlength{\rightskip}{0pt plus 5cm}virtual void mts\+Task\+::\+Save\+Thread\+Start\+Data (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classmts_task_a194fbc7a2dba85f02d80b85bf84ad26c}
+Save any \textquotesingle{}user data\textquotesingle{} that was passed to the thread start routine. \hypertarget{classmts_task_ae1ddab5da6257ef89e546ef45a651d6b}{}\index{mts\+Task@{mts\+Task}!Set\+Initialization\+Delay@{Set\+Initialization\+Delay}}
+\index{Set\+Initialization\+Delay@{Set\+Initialization\+Delay}!mts\+Task@{mts\+Task}}
+\subsubsection[{Set\+Initialization\+Delay}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Task\+::\+Set\+Initialization\+Delay (
+\begin{DoxyParamCaption}
+\item[{double}]{delay}
+\end{DoxyParamCaption}
+)}\label{classmts_task_ae1ddab5da6257ef89e546ef45a651d6b}
+Set the initialization delay. See Initialization\+Delay. \hypertarget{classmts_task_a89f212237d9b7e453c91df8a1a6962d2}{}\index{mts\+Task@{mts\+Task}!Set\+Thread\+Return\+Value@{Set\+Thread\+Return\+Value}}
+\index{Set\+Thread\+Return\+Value@{Set\+Thread\+Return\+Value}!mts\+Task@{mts\+Task}}
+\subsubsection[{Set\+Thread\+Return\+Value}]{\setlength{\rightskip}{0pt plus 5cm}virtual void mts\+Task\+::\+Set\+Thread\+Return\+Value (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{return\+Value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classmts_task_a89f212237d9b7e453c91df8a1a6962d2}
+\hypertarget{classmts_task_acaccf2da6d6f8f26c65657656d572131}{}\index{mts\+Task@{mts\+Task}!Sleep@{Sleep}}
+\index{Sleep@{Sleep}!mts\+Task@{mts\+Task}}
+\subsubsection[{Sleep}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Task\+::\+Sleep (
+\begin{DoxyParamCaption}
+\item[{double}]{time\+In\+Seconds}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_task_acaccf2da6d6f8f26c65657656d572131}
+Delay the task by the specified amount. This is a protected member function because it should only be called from within the task. Otherwise, use osa\+Sleep. \hypertarget{classmts_task_a6816f8dfc6124376896318ebcdd4832b}{}\index{mts\+Task@{mts\+Task}!Startup\+Internal@{Startup\+Internal}}
+\index{Startup\+Internal@{Startup\+Internal}!mts\+Task@{mts\+Task}}
+\subsubsection[{Startup\+Internal}]{\setlength{\rightskip}{0pt plus 5cm}virtual void mts\+Task\+::\+Startup\+Internal (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classmts_task_a6816f8dfc6124376896318ebcdd4832b}
+The member funtion that is executed as soon as the thread gets created. It does some housekeeping before the user code can be executed. 
+
+Reimplemented in \hyperlink{classmts_task_periodic_a18cf3343b3fccacc4966ed1356fad70c}{mts\+Task\+Periodic}, and \hyperlink{classmts_task_from_callback_ae1369f0e11b6d87d833d32548b7caafe}{mts\+Task\+From\+Callback}.
+
+\hypertarget{classmts_task_a2153a26a4a92583bae49696501da212e}{}\index{mts\+Task@{mts\+Task}!Wait\+For\+State@{Wait\+For\+State}}
+\index{Wait\+For\+State@{Wait\+For\+State}!mts\+Task@{mts\+Task}}
+\subsubsection[{Wait\+For\+State}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Task\+::\+Wait\+For\+State (
+\begin{DoxyParamCaption}
+\item[{mts\+Component\+State}]{desired\+State, }
+\item[{double}]{timeout}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classmts_task_a2153a26a4a92583bae49696501da212e}
+Helper function to wait on a state change, with specified timeout in seconds. 
+
+Reimplemented from \hyperlink{classmts_component_a936b8338f2c699abbf40faeaed3dff6e}{mts\+Component}.
+
+\hypertarget{classmts_task_ab99ef3c0d368d3f2a35c5fad7a035471}{}\index{mts\+Task@{mts\+Task}!Wait\+For\+Wakeup@{Wait\+For\+Wakeup}}
+\index{Wait\+For\+Wakeup@{Wait\+For\+Wakeup}!mts\+Task@{mts\+Task}}
+\subsubsection[{Wait\+For\+Wakeup}]{\setlength{\rightskip}{0pt plus 5cm}virtual void mts\+Task\+::\+Wait\+For\+Wakeup (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classmts_task_ab99ef3c0d368d3f2a35c5fad7a035471}
+Suspend this task until the Wakeup method is called. \hypertarget{classmts_task_aeb6270faa5d0c00740677c510e7031a4}{}\index{mts\+Task@{mts\+Task}!Wait\+To\+Start@{Wait\+To\+Start}}
+\index{Wait\+To\+Start@{Wait\+To\+Start}!mts\+Task@{mts\+Task}}
+\subsubsection[{Wait\+To\+Start}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool mts\+Task\+::\+Wait\+To\+Start (
+\begin{DoxyParamCaption}
+\item[{double}]{timeout}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_task_aeb6270faa5d0c00740677c510e7031a4}
+Wait for task to start. 
+\begin{DoxyParams}{Parameters}
+{\em timeout} & The timeout in seconds \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if task has started; false if timeout occurred before task started. 
+\end{DoxyReturn}
+\hypertarget{classmts_task_ad0b31e1f08f2ce351eb5f71e80ccda27}{}\index{mts\+Task@{mts\+Task}!Wait\+To\+Terminate@{Wait\+To\+Terminate}}
+\index{Wait\+To\+Terminate@{Wait\+To\+Terminate}!mts\+Task@{mts\+Task}}
+\subsubsection[{Wait\+To\+Terminate}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool mts\+Task\+::\+Wait\+To\+Terminate (
+\begin{DoxyParamCaption}
+\item[{double}]{timeout}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_task_ad0b31e1f08f2ce351eb5f71e80ccda27}
+Wait for task to finish (after issuing a task Kill). 
+\begin{DoxyParams}{Parameters}
+{\em timeout} & The timeout in seconds \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the task terminated without timeout happening; false if timeout occured and task did not finish 
+\end{DoxyReturn}
+\hypertarget{classmts_task_a4cb52c04023a0cc729a92eceefa268f7}{}\index{mts\+Task@{mts\+Task}!Wakeup@{Wakeup}}
+\index{Wakeup@{Wakeup}!mts\+Task@{mts\+Task}}
+\subsubsection[{Wakeup}]{\setlength{\rightskip}{0pt plus 5cm}virtual void mts\+Task\+::\+Wakeup (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classmts_task_a4cb52c04023a0cc729a92eceefa268f7}
+Wakeup the task. 
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classmts_task_a31c1c611dbb103ac58ed40d84960baa0}{}\index{mts\+Task@{mts\+Task}!mts\+Manager\+Local@{mts\+Manager\+Local}}
+\index{mts\+Manager\+Local@{mts\+Manager\+Local}!mts\+Task@{mts\+Task}}
+\subsubsection[{mts\+Manager\+Local}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf mts\+Manager\+Local}\hspace{0.3cm}{\ttfamily [friend]}}\label{classmts_task_a31c1c611dbb103ac58ed40d84960baa0}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classmts_task_ae7a10d8ab52bae5e6a5dc9589a7a386e}{}\index{mts\+Task@{mts\+Task}!Change\+State\+Event@{Change\+State\+Event}}
+\index{Change\+State\+Event@{Change\+State\+Event}!mts\+Task@{mts\+Task}}
+\subsubsection[{Change\+State\+Event}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+Function\+Write} mts\+Task\+::\+Change\+State\+Event\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_task_ae7a10d8ab52bae5e6a5dc9589a7a386e}
+Event generator used to change state of dependent tasks. \hypertarget{classmts_task_af77b19432b3640be7680c03cd0f78c22}{}\index{mts\+Task@{mts\+Task}!Exec\+In@{Exec\+In}}
+\index{Exec\+In@{Exec\+In}!mts\+Task@{mts\+Task}}
+\subsubsection[{Exec\+In}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+Interface\+Required}$\ast$ mts\+Task\+::\+Exec\+In\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_task_af77b19432b3640be7680c03cd0f78c22}
+Exec\+In required interface. \hypertarget{classmts_task_a5a65f2162a178087dc90effe7a9ab6d8}{}\index{mts\+Task@{mts\+Task}!Exec\+Out@{Exec\+Out}}
+\index{Exec\+Out@{Exec\+Out}!mts\+Task@{mts\+Task}}
+\subsubsection[{Exec\+Out}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+Interface\+Provided}$\ast$ mts\+Task\+::\+Exec\+Out\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_task_a5a65f2162a178087dc90effe7a9ab6d8}
+Exec\+Out provided interface. \hypertarget{classmts_task_a019723804fb78a9c8a2146d921290570}{}\index{mts\+Task@{mts\+Task}!Initialization\+Delay@{Initialization\+Delay}}
+\index{Initialization\+Delay@{Initialization\+Delay}!mts\+Task@{mts\+Task}}
+\subsubsection[{Initialization\+Delay}]{\setlength{\rightskip}{0pt plus 5cm}double mts\+Task\+::\+Initialization\+Delay\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_task_a019723804fb78a9c8a2146d921290570}
+Delay given for the task to start. During initialization the task thread will wait for the specified delay (set by default to 3 seconds in the constructor). Increasing this delay can be useful when using \hyperlink{classmts_task_from_callback}{mts\+Task\+From\+Callback} if the callback might take more than 3 seconds to trigger the task\textquotesingle{}s Run method. \hypertarget{classmts_task_a044e5d67f206af2df17d7406860d4ec4}{}\index{mts\+Task@{mts\+Task}!Interface\+Provided\+To\+Manager\+Callable@{Interface\+Provided\+To\+Manager\+Callable}}
+\index{Interface\+Provided\+To\+Manager\+Callable@{Interface\+Provided\+To\+Manager\+Callable}!mts\+Task@{mts\+Task}}
+\subsubsection[{Interface\+Provided\+To\+Manager\+Callable}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+Callable\+Void\+Base}$\ast$ mts\+Task\+::\+Interface\+Provided\+To\+Manager\+Callable\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_task_a044e5d67f206af2df17d7406860d4ec4}
+Callable object used when queueing. \hypertarget{classmts_task_a974896a778a02b8928397213658b1c83}{}\index{mts\+Task@{mts\+Task}!Overran\+Period@{Overran\+Period}}
+\index{Overran\+Period@{Overran\+Period}!mts\+Task@{mts\+Task}}
+\subsubsection[{Overran\+Period}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Task\+::\+Overran\+Period\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_task_a974896a778a02b8928397213658b1c83}
+True if the task took more time to do computation than allocated time. \hypertarget{classmts_task_a78bef07d3d9f446ee5d83724ada03d7e}{}\index{mts\+Task@{mts\+Task}!Return\+Value@{Return\+Value}}
+\index{Return\+Value@{Return\+Value}!mts\+Task@{mts\+Task}}
+\subsubsection[{Return\+Value}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ mts\+Task\+::\+Return\+Value\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_task_a78bef07d3d9f446ee5d83724ada03d7e}
+The return value for Run\+Internal. \hypertarget{classmts_task_a274a28efd0acb799f30a25ca6a729956}{}\index{mts\+Task@{mts\+Task}!Run\+Event\+Called@{Run\+Event\+Called}}
+\index{Run\+Event\+Called@{Run\+Event\+Called}!mts\+Task@{mts\+Task}}
+\subsubsection[{Run\+Event\+Called}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Task\+::\+Run\+Event\+Called\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_task_a274a28efd0acb799f30a25ca6a729956}
+\hypertarget{classmts_task_a8c40d935488c3bdba29f88bef9ee7809}{}\index{mts\+Task@{mts\+Task}!Run\+Event\+Internal@{Run\+Event\+Internal}}
+\index{Run\+Event\+Internal@{Run\+Event\+Internal}!mts\+Task@{mts\+Task}}
+\subsubsection[{Run\+Event\+Internal}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+Function\+Void} mts\+Task\+::\+Run\+Event\+Internal\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_task_a8c40d935488c3bdba29f88bef9ee7809}
+Event generator used to pass thread of execution to another task. User code should not call this directly (call Run\+Event instead). \hypertarget{classmts_task_abcc895b6d73ea813783da11440e2fe3a}{}\index{mts\+Task@{mts\+Task}!State\+Change@{State\+Change}}
+\index{State\+Change@{State\+Change}!mts\+Task@{mts\+Task}}
+\subsubsection[{State\+Change}]{\setlength{\rightskip}{0pt plus 5cm}{\bf osa\+Mutex} mts\+Task\+::\+State\+Change\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_task_abcc895b6d73ea813783da11440e2fe3a}
+Mutex used when changing task states. Do not change this directly, use the Change\+State method instead. \hypertarget{classmts_task_a49ee515de5a8a49d2c307ed429ce390f}{}\index{mts\+Task@{mts\+Task}!State\+Change\+Signal@{State\+Change\+Signal}}
+\index{State\+Change\+Signal@{State\+Change\+Signal}!mts\+Task@{mts\+Task}}
+\subsubsection[{State\+Change\+Signal}]{\setlength{\rightskip}{0pt plus 5cm}{\bf osa\+Thread\+Signal} mts\+Task\+::\+State\+Change\+Signal\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_task_a49ee515de5a8a49d2c307ed429ce390f}
+Signal for caller to wait on task state changes. \hypertarget{classmts_task_afef3935273a3dfe792b7d3beb6b3c4f1}{}\index{mts\+Task@{mts\+Task}!State\+Table@{State\+Table}}
+\index{State\+Table@{State\+Table}!mts\+Task@{mts\+Task}}
+\subsubsection[{State\+Table}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+State\+Table} mts\+Task\+::\+State\+Table\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_task_afef3935273a3dfe792b7d3beb6b3c4f1}
+The state data table object to store the states of the task. \hypertarget{classmts_task_a020aaf3f85e33991c3b349138b826218}{}\index{mts\+Task@{mts\+Task}!Thread@{Thread}}
+\index{Thread@{Thread}!mts\+Task@{mts\+Task}}
+\subsubsection[{Thread}]{\setlength{\rightskip}{0pt plus 5cm}{\bf osa\+Thread} mts\+Task\+::\+Thread\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_task_a020aaf3f85e33991c3b349138b826218}
+The O\+S independent thread object. \hypertarget{classmts_task_a0f4d0bdac8ce91bd7a44a80d0903165b}{}\index{mts\+Task@{mts\+Task}!Thread\+Start\+Data@{Thread\+Start\+Data}}
+\index{Thread\+Start\+Data@{Thread\+Start\+Data}!mts\+Task@{mts\+Task}}
+\subsubsection[{Thread\+Start\+Data}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ mts\+Task\+::\+Thread\+Start\+Data\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_task_a0f4d0bdac8ce91bd7a44a80d0903165b}
+The data passed to the thread. \hypertarget{classmts_task_a518652604363d9402292a67c1836e888}{}\index{mts\+Task@{mts\+Task}!Unknown\+Exception@{Unknown\+Exception}}
+\index{Unknown\+Exception@{Unknown\+Exception}!mts\+Task@{mts\+Task}}
+\subsubsection[{Unknown\+Exception}]{\setlength{\rightskip}{0pt plus 5cm}std\+::runtime\+\_\+error mts\+Task\+::\+Unknown\+Exception\hspace{0.3cm}{\ttfamily [static]}}\label{classmts_task_a518652604363d9402292a67c1836e888}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Multi\+Task/\hyperlink{mts_task_8h}{mts\+Task.\+h}\end{DoxyCompactItemize}

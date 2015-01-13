@@ -1,0 +1,180 @@
+\hypertarget{classosa_time_server}{}\section{osa\+Time\+Server Class Reference}
+\label{classosa_time_server}\index{osa\+Time\+Server@{osa\+Time\+Server}}
+
+
+Class for relative time.  
+
+
+
+
+{\ttfamily \#include $<$osa\+Time\+Server.\+h$>$}
+
+Inheritance diagram for osa\+Time\+Server\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{d4/de7/classosa_time_server}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classosa_time_server_a2025b74de2c3114ddc29187c660038e4}{osa\+Time\+Server} ()
+\item 
+\hyperlink{classosa_time_server_aff5e7e7d548f61b52f0892e67b302539}{$\sim$osa\+Time\+Server} ()
+\item 
+void \hyperlink{classosa_time_server_afac2aebe744ae87dc8666c79ce86fae3}{Set\+Time\+Origin} (void)
+\item 
+void \hyperlink{classosa_time_server_a02158dcb3a8e7cef7e816d53c03e1ffc}{Set\+Time\+Origin\+From} (const \hyperlink{classosa_time_server}{osa\+Time\+Server} $\ast$other)
+\item 
+bool \hyperlink{classosa_time_server_a8cf91b6ce8714f4b2bfa68437e182355}{Get\+Time\+Origin} (\hyperlink{structosa_absolute_time}{osa\+Absolute\+Time} \&origin) const 
+\item 
+double \hyperlink{classosa_time_server_a9c0a681ef88f4391d883be21ce8ed6bd}{Get\+Relative\+Time} (void) const 
+\item 
+double \hyperlink{classosa_time_server_a00e1277d460d21ca0c90ade821d11a84}{Get\+Absolute\+Time\+In\+Seconds} (void) const 
+\item 
+\hyperlink{structosa_absolute_time}{osa\+Absolute\+Time} \hyperlink{classosa_time_server_a2656918bbf5d6c4b2746d6957c0bd8fc}{Get\+Absolute\+Time} (void) const 
+\item 
+double \hyperlink{classosa_time_server_aabc695f2895828c46d1b2713dc668aa4}{Estimate\+Drift} (void) const 
+\item 
+void \hyperlink{classosa_time_server_a2cedc54dd23cb60605eb6207aea9129b}{Relative\+To\+Absolute} (double relative, \hyperlink{structosa_absolute_time}{osa\+Absolute\+Time} \&absolute) const 
+\item 
+double \hyperlink{classosa_time_server_a502141b5545d6cfc025d91ca3dfa5a29}{Absolute\+To\+Relative} (const \hyperlink{structosa_absolute_time}{osa\+Absolute\+Time} \&absolute) const 
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classosa_time_server_a973e8a021d390521eba93b2dd9fcb557}{osa\+Time\+Server\+Test}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class for relative time. 
+
+The osa\+Relative\+Time class is used to manage the relationship between relative and absolute time. Specifically, the Get\+Relative\+Time method returns the number of seconds that have elapsed since the time origin was set (via a call to Set\+Time\+Origin).
+
+Although it might seem possible to implement this class without O\+S dependencies (e.\+g., by using osa\+Get\+Absolute\+Time), this is problematic on some platforms, such as Windows, where it is necessary to synchronize multiple time sources to get a high resolution time that is relative to an absolute time. Also, even on non-\/\+Windows platforms, it would not have been as efficient because the native (O\+S-\/specific) \char`\"{}absolute time\char`\"{} structure would have to converted to an \hyperlink{structosa_absolute_time}{osa\+Absolute\+Time} structure for every call to Get\+Relative\+Time.
+
+This class has significant overlap with \hyperlink{classosa_stopwatch}{osa\+Stopwatch}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classosa_time_server_a2025b74de2c3114ddc29187c660038e4}{}\index{osa\+Time\+Server@{osa\+Time\+Server}!osa\+Time\+Server@{osa\+Time\+Server}}
+\index{osa\+Time\+Server@{osa\+Time\+Server}!osa\+Time\+Server@{osa\+Time\+Server}}
+\subsubsection[{osa\+Time\+Server}]{\setlength{\rightskip}{0pt plus 5cm}osa\+Time\+Server\+::osa\+Time\+Server (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classosa_time_server_a2025b74de2c3114ddc29187c660038e4}
+Default constructor. \hypertarget{classosa_time_server_aff5e7e7d548f61b52f0892e67b302539}{}\index{osa\+Time\+Server@{osa\+Time\+Server}!````~osa\+Time\+Server@{$\sim$osa\+Time\+Server}}
+\index{````~osa\+Time\+Server@{$\sim$osa\+Time\+Server}!osa\+Time\+Server@{osa\+Time\+Server}}
+\subsubsection[{$\sim$osa\+Time\+Server}]{\setlength{\rightskip}{0pt plus 5cm}osa\+Time\+Server\+::$\sim$osa\+Time\+Server (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classosa_time_server_aff5e7e7d548f61b52f0892e67b302539}
+Destructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classosa_time_server_a502141b5545d6cfc025d91ca3dfa5a29}{}\index{osa\+Time\+Server@{osa\+Time\+Server}!Absolute\+To\+Relative@{Absolute\+To\+Relative}}
+\index{Absolute\+To\+Relative@{Absolute\+To\+Relative}!osa\+Time\+Server@{osa\+Time\+Server}}
+\subsubsection[{Absolute\+To\+Relative}]{\setlength{\rightskip}{0pt plus 5cm}double osa\+Time\+Server\+::\+Absolute\+To\+Relative (
+\begin{DoxyParamCaption}
+\item[{const {\bf osa\+Absolute\+Time} \&}]{absolute}
+\end{DoxyParamCaption}
+) const}\label{classosa_time_server_a502141b5545d6cfc025d91ca3dfa5a29}
+Convert the specified absolute time to a relative time by subtracting from the time origin and converting to seconds. 
+\begin{DoxyParams}{Parameters}
+{\em absolute} & The absolute time value (input) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The relative time value in seconds 
+\end{DoxyReturn}
+\hypertarget{classosa_time_server_aabc695f2895828c46d1b2713dc668aa4}{}\index{osa\+Time\+Server@{osa\+Time\+Server}!Estimate\+Drift@{Estimate\+Drift}}
+\index{Estimate\+Drift@{Estimate\+Drift}!osa\+Time\+Server@{osa\+Time\+Server}}
+\subsubsection[{Estimate\+Drift}]{\setlength{\rightskip}{0pt plus 5cm}double osa\+Time\+Server\+::\+Estimate\+Drift (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classosa_time_server_aabc695f2895828c46d1b2713dc668aa4}
+Estimate drift between synchronized clocks (Windows only) \hypertarget{classosa_time_server_a2656918bbf5d6c4b2746d6957c0bd8fc}{}\index{osa\+Time\+Server@{osa\+Time\+Server}!Get\+Absolute\+Time@{Get\+Absolute\+Time}}
+\index{Get\+Absolute\+Time@{Get\+Absolute\+Time}!osa\+Time\+Server@{osa\+Time\+Server}}
+\subsubsection[{Get\+Absolute\+Time}]{\setlength{\rightskip}{0pt plus 5cm}{\bf osa\+Absolute\+Time} osa\+Time\+Server\+::\+Get\+Absolute\+Time (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classosa_time_server_a2656918bbf5d6c4b2746d6957c0bd8fc}
+Get the absolute time since 1970. \begin{DoxyReturn}{Returns}
+The number of seconds 
+\end{DoxyReturn}
+\hypertarget{classosa_time_server_a00e1277d460d21ca0c90ade821d11a84}{}\index{osa\+Time\+Server@{osa\+Time\+Server}!Get\+Absolute\+Time\+In\+Seconds@{Get\+Absolute\+Time\+In\+Seconds}}
+\index{Get\+Absolute\+Time\+In\+Seconds@{Get\+Absolute\+Time\+In\+Seconds}!osa\+Time\+Server@{osa\+Time\+Server}}
+\subsubsection[{Get\+Absolute\+Time\+In\+Seconds}]{\setlength{\rightskip}{0pt plus 5cm}double osa\+Time\+Server\+::\+Get\+Absolute\+Time\+In\+Seconds (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classosa_time_server_a00e1277d460d21ca0c90ade821d11a84}
+Get the number of seconds that have elapsed since 1970. \begin{DoxyReturn}{Returns}
+The number of seconds 
+\end{DoxyReturn}
+\hypertarget{classosa_time_server_a9c0a681ef88f4391d883be21ce8ed6bd}{}\index{osa\+Time\+Server@{osa\+Time\+Server}!Get\+Relative\+Time@{Get\+Relative\+Time}}
+\index{Get\+Relative\+Time@{Get\+Relative\+Time}!osa\+Time\+Server@{osa\+Time\+Server}}
+\subsubsection[{Get\+Relative\+Time}]{\setlength{\rightskip}{0pt plus 5cm}double osa\+Time\+Server\+::\+Get\+Relative\+Time (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classosa_time_server_a9c0a681ef88f4391d883be21ce8ed6bd}
+Get the number of seconds that have elapsed since the time origin. \begin{DoxyReturn}{Returns}
+The number of seconds 
+\end{DoxyReturn}
+\hypertarget{classosa_time_server_a8cf91b6ce8714f4b2bfa68437e182355}{}\index{osa\+Time\+Server@{osa\+Time\+Server}!Get\+Time\+Origin@{Get\+Time\+Origin}}
+\index{Get\+Time\+Origin@{Get\+Time\+Origin}!osa\+Time\+Server@{osa\+Time\+Server}}
+\subsubsection[{Get\+Time\+Origin}]{\setlength{\rightskip}{0pt plus 5cm}bool osa\+Time\+Server\+::\+Get\+Time\+Origin (
+\begin{DoxyParamCaption}
+\item[{{\bf osa\+Absolute\+Time} \&}]{origin}
+\end{DoxyParamCaption}
+) const}\label{classosa_time_server_a8cf91b6ce8714f4b2bfa68437e182355}
+Get the time origin that is in effect for the relative time measurements. 
+\begin{DoxyParams}{Parameters}
+{\em origin} & Returns the current origin \\
+\hline
+\end{DoxyParams}
+\hypertarget{classosa_time_server_a2cedc54dd23cb60605eb6207aea9129b}{}\index{osa\+Time\+Server@{osa\+Time\+Server}!Relative\+To\+Absolute@{Relative\+To\+Absolute}}
+\index{Relative\+To\+Absolute@{Relative\+To\+Absolute}!osa\+Time\+Server@{osa\+Time\+Server}}
+\subsubsection[{Relative\+To\+Absolute}]{\setlength{\rightskip}{0pt plus 5cm}void osa\+Time\+Server\+::\+Relative\+To\+Absolute (
+\begin{DoxyParamCaption}
+\item[{double}]{relative, }
+\item[{{\bf osa\+Absolute\+Time} \&}]{absolute}
+\end{DoxyParamCaption}
+) const}\label{classosa_time_server_a2cedc54dd23cb60605eb6207aea9129b}
+Convert the specified relative time (in seconds) to an absolute time by adding it to the time origin. 
+\begin{DoxyParams}{Parameters}
+{\em relative} & The relative time value in seconds (input) \\
+\hline
+{\em absolute} & The absolute time value (output) \\
+\hline
+\end{DoxyParams}
+\hypertarget{classosa_time_server_afac2aebe744ae87dc8666c79ce86fae3}{}\index{osa\+Time\+Server@{osa\+Time\+Server}!Set\+Time\+Origin@{Set\+Time\+Origin}}
+\index{Set\+Time\+Origin@{Set\+Time\+Origin}!osa\+Time\+Server@{osa\+Time\+Server}}
+\subsubsection[{Set\+Time\+Origin}]{\setlength{\rightskip}{0pt plus 5cm}void osa\+Time\+Server\+::\+Set\+Time\+Origin (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classosa_time_server_afac2aebe744ae87dc8666c79ce86fae3}
+Set the time origin for the relative time measurements to \char`\"{}now\char`\"{}. Subsequent calls to Get\+Relative\+Time will return the number of seconds that have elaspsed since this call was made. \hypertarget{classosa_time_server_a02158dcb3a8e7cef7e816d53c03e1ffc}{}\index{osa\+Time\+Server@{osa\+Time\+Server}!Set\+Time\+Origin\+From@{Set\+Time\+Origin\+From}}
+\index{Set\+Time\+Origin\+From@{Set\+Time\+Origin\+From}!osa\+Time\+Server@{osa\+Time\+Server}}
+\subsubsection[{Set\+Time\+Origin\+From}]{\setlength{\rightskip}{0pt plus 5cm}void osa\+Time\+Server\+::\+Set\+Time\+Origin\+From (
+\begin{DoxyParamCaption}
+\item[{const {\bf osa\+Time\+Server} $\ast$}]{other}
+\end{DoxyParamCaption}
+)}\label{classosa_time_server_a02158dcb3a8e7cef7e816d53c03e1ffc}
+Set the time origin based on the specified time server. For systems that need to synchronize to the performance counter, this also sets the offset (i.\+e., does not call Synchronize again). 
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classosa_time_server_a973e8a021d390521eba93b2dd9fcb557}{}\index{osa\+Time\+Server@{osa\+Time\+Server}!osa\+Time\+Server\+Test@{osa\+Time\+Server\+Test}}
+\index{osa\+Time\+Server\+Test@{osa\+Time\+Server\+Test}!osa\+Time\+Server@{osa\+Time\+Server}}
+\subsubsection[{osa\+Time\+Server\+Test}]{\setlength{\rightskip}{0pt plus 5cm}friend class osa\+Time\+Server\+Test\hspace{0.3cm}{\ttfamily [friend]}}\label{classosa_time_server_a973e8a021d390521eba93b2dd9fcb557}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+O\+S\+Abstraction/\hyperlink{osa_time_server_8h}{osa\+Time\+Server.\+h}\end{DoxyCompactItemize}

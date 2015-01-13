@@ -1,0 +1,213 @@
+\hypertarget{classmts_command_write_base}{}\section{mts\+Command\+Write\+Base Class Reference}
+\label{classmts_command_write_base}\index{mts\+Command\+Write\+Base@{mts\+Command\+Write\+Base}}
+
+
+{\ttfamily \#include $<$mts\+Command\+Write\+Base.\+h$>$}
+
+Inheritance diagram for mts\+Command\+Write\+Base\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.525054cm]{da/d89/classmts_command_write_base}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classmts_command_base}{mts\+Command\+Base} \hyperlink{classmts_command_write_base_a5d78c8590cfc73fa29d93b3678cba199}{Base\+Type}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmts_command_write_base_a6f4d5fca6143636b3f0b55c99e1807fb}{mts\+Command\+Write\+Base} (void)
+\item 
+\hyperlink{classmts_command_write_base_a5a7579b6022d48ba89fff9d4a757258e}{mts\+Command\+Write\+Base} (const std\+::string \&name)
+\item 
+virtual \hyperlink{classmts_command_write_base_afc6522de71949aa9a17fbbfed1b739a8}{$\sim$mts\+Command\+Write\+Base} ()
+\item 
+virtual mts\+Execution\+Result \hyperlink{classmts_command_write_base_ae0f9db1cdc228fe67c59b86994d28115}{Execute} (const \hyperlink{classmts_generic_object}{mts\+Generic\+Object} \&argument, \hyperlink{mts_forward_declarations_8h_ad7426ccb6c883bc780d0ee197dddcbe7}{mts\+Blocking\+Type} blocking)=0
+\item 
+virtual mts\+Execution\+Result \hyperlink{classmts_command_write_base_a2bf3f188291d690478be5452ba5ba42d}{Execute} (const \hyperlink{classmts_generic_object}{mts\+Generic\+Object} \&argument, \hyperlink{mts_forward_declarations_8h_ad7426ccb6c883bc780d0ee197dddcbe7}{mts\+Blocking\+Type} blocking, \hyperlink{classmts_command_write_base}{mts\+Command\+Write\+Base} $\ast$\hyperlink{cmn_portability_8h_a021894e2626935fa2305434b1e893ff6}{C\+M\+N\+\_\+\+U\+N\+U\+S\+E\+D}(finished\+Event\+Handler))=0
+\item 
+size\+\_\+t \hyperlink{classmts_command_write_base_a0654ecf1e52106edaa961f4dd9ad8272}{Number\+Of\+Arguments} (void) const 
+\item 
+bool \hyperlink{classmts_command_write_base_a69c98178df30cf4b2c3bd808c3616402}{Returns} (void) const 
+\item 
+virtual const \hyperlink{classmts_generic_object}{mts\+Generic\+Object} $\ast$ \hyperlink{classmts_command_write_base_aeb23012177ead24850c6d2f5f9d76015}{Get\+Argument\+Prototype} (void) const 
+\item 
+const \hyperlink{classcmn_class_services_base}{cmn\+Class\+Services\+Base} $\ast$ \hyperlink{classmts_command_write_base_a95228eaf116fb4f55922f21ad47ea3a6}{Get\+Argument\+Class\+Services} (void) const 
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classmts_command_write_base_a1b369a356b5c2fb8ed3f5a72c3c521d1}{Set\+Argument\+Prototype} (const \hyperlink{classmts_generic_object}{mts\+Generic\+Object} $\ast$argument\+Prototype)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \hyperlink{classmts_generic_object}{mts\+Generic\+Object} $\ast$ \hyperlink{classmts_command_write_base_a92e316a7f32f52a18b47a02867b104d2}{Argument\+Prototype}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classmts_command_write_base_a01bea616c1ae77f302ccedbbc1300c12}{mts\+Multicast\+Command\+Write\+Base}
+\item 
+class \hyperlink{classmts_command_write_base_aebd3531dc414cbd5c5aff710ecbfac4f}{mts\+Command\+Queued\+Write\+Generic}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A base class of command object with an execute method that takes one argument. 
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classmts_command_write_base_a5d78c8590cfc73fa29d93b3678cba199}{}\index{mts\+Command\+Write\+Base@{mts\+Command\+Write\+Base}!Base\+Type@{Base\+Type}}
+\index{Base\+Type@{Base\+Type}!mts\+Command\+Write\+Base@{mts\+Command\+Write\+Base}}
+\subsubsection[{Base\+Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf mts\+Command\+Base} {\bf mts\+Command\+Write\+Base\+::\+Base\+Type}}\label{classmts_command_write_base_a5d78c8590cfc73fa29d93b3678cba199}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmts_command_write_base_a6f4d5fca6143636b3f0b55c99e1807fb}{}\index{mts\+Command\+Write\+Base@{mts\+Command\+Write\+Base}!mts\+Command\+Write\+Base@{mts\+Command\+Write\+Base}}
+\index{mts\+Command\+Write\+Base@{mts\+Command\+Write\+Base}!mts\+Command\+Write\+Base@{mts\+Command\+Write\+Base}}
+\subsubsection[{mts\+Command\+Write\+Base}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Command\+Write\+Base\+::mts\+Command\+Write\+Base (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_command_write_base_a6f4d5fca6143636b3f0b55c99e1807fb}
+The constructor. Does nothing \hypertarget{classmts_command_write_base_a5a7579b6022d48ba89fff9d4a757258e}{}\index{mts\+Command\+Write\+Base@{mts\+Command\+Write\+Base}!mts\+Command\+Write\+Base@{mts\+Command\+Write\+Base}}
+\index{mts\+Command\+Write\+Base@{mts\+Command\+Write\+Base}!mts\+Command\+Write\+Base@{mts\+Command\+Write\+Base}}
+\subsubsection[{mts\+Command\+Write\+Base}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Command\+Write\+Base\+::mts\+Command\+Write\+Base (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_command_write_base_a5a7579b6022d48ba89fff9d4a757258e}
+\hypertarget{classmts_command_write_base_afc6522de71949aa9a17fbbfed1b739a8}{}\index{mts\+Command\+Write\+Base@{mts\+Command\+Write\+Base}!````~mts\+Command\+Write\+Base@{$\sim$mts\+Command\+Write\+Base}}
+\index{````~mts\+Command\+Write\+Base@{$\sim$mts\+Command\+Write\+Base}!mts\+Command\+Write\+Base@{mts\+Command\+Write\+Base}}
+\subsubsection[{$\sim$mts\+Command\+Write\+Base}]{\setlength{\rightskip}{0pt plus 5cm}virtual mts\+Command\+Write\+Base\+::$\sim$mts\+Command\+Write\+Base (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classmts_command_write_base_afc6522de71949aa9a17fbbfed1b739a8}
+The destructor. Does nothing 
+
+\subsection{Member Function Documentation}
+\hypertarget{classmts_command_write_base_ae0f9db1cdc228fe67c59b86994d28115}{}\index{mts\+Command\+Write\+Base@{mts\+Command\+Write\+Base}!Execute@{Execute}}
+\index{Execute@{Execute}!mts\+Command\+Write\+Base@{mts\+Command\+Write\+Base}}
+\subsubsection[{Execute}]{\setlength{\rightskip}{0pt plus 5cm}virtual mts\+Execution\+Result mts\+Command\+Write\+Base\+::\+Execute (
+\begin{DoxyParamCaption}
+\item[{const {\bf mts\+Generic\+Object} \&}]{argument, }
+\item[{{\bf mts\+Blocking\+Type}}]{blocking}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classmts_command_write_base_ae0f9db1cdc228fe67c59b86994d28115}
+The execute method. Abstract method to be implemented by derived classes to run the actual operation on the receiver
+
+
+\begin{DoxyParams}{Parameters}
+{\em argument} & The data passed to the operation method \\
+\hline
+{\em blocking} & Indicates whether caller wishes to block until command finishes\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the execution result (mts\+Execution\+Result) 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classmts_command_queued_write_base_a6d7fa71986aac29927898583c4c1f1f9}{mts\+Command\+Queued\+Write\+Base}, \hyperlink{classmts_multicast_command_write_base_ab8a9cde81c9d5653defafd2093383a51}{mts\+Multicast\+Command\+Write\+Base}, and \hyperlink{classmts_command_filtered_write_a6324b444c5b118399e3c4b1b3c3cc8dd}{mts\+Command\+Filtered\+Write}.
+
+\hypertarget{classmts_command_write_base_a2bf3f188291d690478be5452ba5ba42d}{}\index{mts\+Command\+Write\+Base@{mts\+Command\+Write\+Base}!Execute@{Execute}}
+\index{Execute@{Execute}!mts\+Command\+Write\+Base@{mts\+Command\+Write\+Base}}
+\subsubsection[{Execute}]{\setlength{\rightskip}{0pt plus 5cm}virtual mts\+Execution\+Result mts\+Command\+Write\+Base\+::\+Execute (
+\begin{DoxyParamCaption}
+\item[{const {\bf mts\+Generic\+Object} \&}]{argument, }
+\item[{{\bf mts\+Blocking\+Type}}]{blocking, }
+\item[{{\bf mts\+Command\+Write\+Base} $\ast$}]{C\+M\+N\+\_\+\+U\+N\+U\+S\+E\+Dfinished\+Event\+Handler}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classmts_command_write_base_a2bf3f188291d690478be5452ba5ba42d}
+The execute method. Method may be implemented by derived classes to run the actual operation on the receiver
+
+
+\begin{DoxyParams}{Parameters}
+{\em argument} & The data passed to the operation method \\
+\hline
+{\em blocking} & Indicates whether caller wishes to block until command finishes \\
+\hline
+{\em finished\+Event\+Handler} & Command object to invoke when blocking command is finished\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the execution result (mts\+Execution\+Result) 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classmts_command_write_generic_a7cfd8681dcf0ee2effc60c5c1f61c5c3}{mts\+Command\+Write\+Generic$<$ \+\_\+class\+Type $>$}, \hyperlink{classmts_command_write_a3b67b44b7bd102b2cdd3ed01432aeb5c}{mts\+Command\+Write$<$ \+\_\+class\+Type, \+\_\+argument\+Type $>$}, \hyperlink{classmts_multicast_command_write_generic_ac0d9b6b578959511ddc197c38b3d05e4}{mts\+Multicast\+Command\+Write\+Generic}, \hyperlink{classmts_multicast_command_write_abdd5968cb00cca869eb59be2ff83cc1c}{mts\+Multicast\+Command\+Write$<$ \+\_\+argument\+Type $>$}, and \hyperlink{classmts_command_filtered_write_adad546b19cb146481df6f46aef804478}{mts\+Command\+Filtered\+Write}.
+
+\hypertarget{classmts_command_write_base_a95228eaf116fb4f55922f21ad47ea3a6}{}\index{mts\+Command\+Write\+Base@{mts\+Command\+Write\+Base}!Get\+Argument\+Class\+Services@{Get\+Argument\+Class\+Services}}
+\index{Get\+Argument\+Class\+Services@{Get\+Argument\+Class\+Services}!mts\+Command\+Write\+Base@{mts\+Command\+Write\+Base}}
+\subsubsection[{Get\+Argument\+Class\+Services}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf cmn\+Class\+Services\+Base}$\ast$ mts\+Command\+Write\+Base\+::\+Get\+Argument\+Class\+Services (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_command_write_base_a95228eaf116fb4f55922f21ad47ea3a6}
+Return const pointer of class services associated to the argument type. \hypertarget{classmts_command_write_base_aeb23012177ead24850c6d2f5f9d76015}{}\index{mts\+Command\+Write\+Base@{mts\+Command\+Write\+Base}!Get\+Argument\+Prototype@{Get\+Argument\+Prototype}}
+\index{Get\+Argument\+Prototype@{Get\+Argument\+Prototype}!mts\+Command\+Write\+Base@{mts\+Command\+Write\+Base}}
+\subsubsection[{Get\+Argument\+Prototype}]{\setlength{\rightskip}{0pt plus 5cm}virtual const {\bf mts\+Generic\+Object}$\ast$ mts\+Command\+Write\+Base\+::\+Get\+Argument\+Prototype (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classmts_command_write_base_aeb23012177ead24850c6d2f5f9d76015}
+Return a pointer on the argument prototype 
+
+Reimplemented in \hyperlink{classmts_command_queued_write_generic_a0213856735a304c121713cfa32e90f70}{mts\+Command\+Queued\+Write\+Generic}, \hyperlink{classmts_command_queued_write_adf14fc179c04c9532b8f2500550bd37c}{mts\+Command\+Queued\+Write$<$ \+\_\+argument\+Type $>$}, \hyperlink{classmts_command_filtered_write_a5bd6b23d95778ef83e4ae4cc0df857fa}{mts\+Command\+Filtered\+Write}, and \hyperlink{classmts_command_filtered_queued_write_a576ba5d70031bcbc36b8243c8c1ee0b3}{mts\+Command\+Filtered\+Queued\+Write}.
+
+\hypertarget{classmts_command_write_base_a0654ecf1e52106edaa961f4dd9ad8272}{}\index{mts\+Command\+Write\+Base@{mts\+Command\+Write\+Base}!Number\+Of\+Arguments@{Number\+Of\+Arguments}}
+\index{Number\+Of\+Arguments@{Number\+Of\+Arguments}!mts\+Command\+Write\+Base@{mts\+Command\+Write\+Base}}
+\subsubsection[{Number\+Of\+Arguments}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t mts\+Command\+Write\+Base\+::\+Number\+Of\+Arguments (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classmts_command_write_base_a0654ecf1e52106edaa961f4dd9ad8272}
+Returns number of arguments (parameters) expected by Execute method. Must be overloaded in derived classes. 
+
+Implements \hyperlink{classmts_command_base_abde89dfcf0078294f634c232b7537cc3}{mts\+Command\+Base}.
+
+\hypertarget{classmts_command_write_base_a69c98178df30cf4b2c3bd808c3616402}{}\index{mts\+Command\+Write\+Base@{mts\+Command\+Write\+Base}!Returns@{Returns}}
+\index{Returns@{Returns}!mts\+Command\+Write\+Base@{mts\+Command\+Write\+Base}}
+\subsubsection[{Returns}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Command\+Write\+Base\+::\+Returns (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classmts_command_write_base_a69c98178df30cf4b2c3bd808c3616402}
+
+
+Implements \hyperlink{classmts_command_base_a0217171a8e7bead32766e94748e11658}{mts\+Command\+Base}.
+
+\hypertarget{classmts_command_write_base_a1b369a356b5c2fb8ed3f5a72c3c521d1}{}\index{mts\+Command\+Write\+Base@{mts\+Command\+Write\+Base}!Set\+Argument\+Prototype@{Set\+Argument\+Prototype}}
+\index{Set\+Argument\+Prototype@{Set\+Argument\+Prototype}!mts\+Command\+Write\+Base@{mts\+Command\+Write\+Base}}
+\subsubsection[{Set\+Argument\+Prototype}]{\setlength{\rightskip}{0pt plus 5cm}virtual void mts\+Command\+Write\+Base\+::\+Set\+Argument\+Prototype (
+\begin{DoxyParamCaption}
+\item[{const {\bf mts\+Generic\+Object} $\ast$}]{argument\+Prototype}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classmts_command_write_base_a1b369a356b5c2fb8ed3f5a72c3c521d1}
+
+
+Reimplemented in \hyperlink{classmts_command_queued_write_generic_a49574e06b777c7122675adb3022993ef}{mts\+Command\+Queued\+Write\+Generic}.
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classmts_command_write_base_aebd3531dc414cbd5c5aff710ecbfac4f}{}\index{mts\+Command\+Write\+Base@{mts\+Command\+Write\+Base}!mts\+Command\+Queued\+Write\+Generic@{mts\+Command\+Queued\+Write\+Generic}}
+\index{mts\+Command\+Queued\+Write\+Generic@{mts\+Command\+Queued\+Write\+Generic}!mts\+Command\+Write\+Base@{mts\+Command\+Write\+Base}}
+\subsubsection[{mts\+Command\+Queued\+Write\+Generic}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf mts\+Command\+Queued\+Write\+Generic}\hspace{0.3cm}{\ttfamily [friend]}}\label{classmts_command_write_base_aebd3531dc414cbd5c5aff710ecbfac4f}
+\hypertarget{classmts_command_write_base_a01bea616c1ae77f302ccedbbc1300c12}{}\index{mts\+Command\+Write\+Base@{mts\+Command\+Write\+Base}!mts\+Multicast\+Command\+Write\+Base@{mts\+Multicast\+Command\+Write\+Base}}
+\index{mts\+Multicast\+Command\+Write\+Base@{mts\+Multicast\+Command\+Write\+Base}!mts\+Command\+Write\+Base@{mts\+Command\+Write\+Base}}
+\subsubsection[{mts\+Multicast\+Command\+Write\+Base}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf mts\+Multicast\+Command\+Write\+Base}\hspace{0.3cm}{\ttfamily [friend]}}\label{classmts_command_write_base_a01bea616c1ae77f302ccedbbc1300c12}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classmts_command_write_base_a92e316a7f32f52a18b47a02867b104d2}{}\index{mts\+Command\+Write\+Base@{mts\+Command\+Write\+Base}!Argument\+Prototype@{Argument\+Prototype}}
+\index{Argument\+Prototype@{Argument\+Prototype}!mts\+Command\+Write\+Base@{mts\+Command\+Write\+Base}}
+\subsubsection[{Argument\+Prototype}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf mts\+Generic\+Object}$\ast$ mts\+Command\+Write\+Base\+::\+Argument\+Prototype\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_command_write_base_a92e316a7f32f52a18b47a02867b104d2}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Multi\+Task/\hyperlink{mts_command_write_base_8h}{mts\+Command\+Write\+Base.\+h}\end{DoxyCompactItemize}

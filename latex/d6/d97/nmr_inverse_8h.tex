@@ -1,0 +1,257 @@
+\hypertarget{nmr_inverse_8h}{}\section{/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Numerical/nmr\+Inverse.h File Reference}
+\label{nmr_inverse_8h}\index{/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Numerical/nmr\+Inverse.\+h@{/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Numerical/nmr\+Inverse.\+h}}
+
+
+Declaration of nmr\+Inverse.  
+
+
+{\ttfamily \#include $<$cisst\+Common/cmn\+Throw.\+h$>$}\\*
+{\ttfamily \#include $<$cisst\+Vector/vct\+Fixed\+Size\+Matrix.\+h$>$}\\*
+{\ttfamily \#include $<$cisst\+Vector/vct\+Dynamic\+Matrix.\+h$>$}\\*
+{\ttfamily \#include $<$cisst\+Numerical/nmr\+Netlib.\+h$>$}\\*
+{\ttfamily \#include $<$cisst\+Numerical/nmr\+Export.\+h$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classnmr_inverse_dynamic_data}{nmr\+Inverse\+Dynamic\+Data}
+\begin{DoxyCompactList}\small\item\em Data for Inverse problem (Dynamic). \end{DoxyCompactList}\item 
+class \hyperlink{classnmr_inverse_dynamic_data_1_1_friend}{nmr\+Inverse\+Dynamic\+Data\+::\+Friend}
+\item 
+class \hyperlink{classnmr_inverse_fixed_size_data}{nmr\+Inverse\+Fixed\+Size\+Data$<$ \+\_\+size, \+\_\+storage\+Order $>$}
+\begin{DoxyCompactList}\small\item\em Data for Inverse problem (Fixed size). \end{DoxyCompactList}\item 
+class \hyperlink{classnmr_inverse_fixed_size_data_1_1_friend}{nmr\+Inverse\+Fixed\+Size\+Data$<$ \+\_\+size, \+\_\+storage\+Order $>$\+::\+Friend}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{Indent}{\bf Algorithm Inverse\+: Compute the inverse of a square matrix}\par
+{\em using Lower Upper Decomposition
+
+These functions are different wrappers for the L\+A\+P\+A\+C\+K function dgetrf and dgetri. They compute the inverse factorization of a square matrix A.
+
+These functions are wrappers around the L\+A\+P\+A\+C\+K routine dgetrf and dgetri, therefore they share some features with the L\+A\+P\+A\+C\+K routine\+: 
+\begin{DoxyEnumerate}
+\item On exit, the content of A is altered. 
+\item The vectors and matrices must be compact, i.\+e. use a contiguous block of memory. 
+\end{DoxyEnumerate}
+
+The \hyperlink{nmr_inverse_8h_a018d876444a46377abdd85e296643035}{nmr\+Inverse} functions add the following features\+: 
+\begin{DoxyEnumerate}
+\item A simplified interface to the cisst\+Vector matrices, either \hyperlink{classvct_dynamic_matrix}{vct\+Dynamic\+Matrix} or \hyperlink{classvct_fixed_size_matrix}{vct\+Fixed\+Size\+Matrix}. 
+\item Input validation checks are performed, i.\+e. an std\+::runtime\+\_\+error exception will be thrown if the sizes or storage order don\textquotesingle{}t match or if the containers are not compact. 
+\item Helper classes to allocate memory for the output and workspace\+: \hyperlink{classnmr_inverse_fixed_size_data}{nmr\+Inverse\+Fixed\+Size\+Data} and \hyperlink{classnmr_inverse_dynamic_data}{nmr\+Inverse\+Dynamic\+Data}. 
+\end{DoxyEnumerate}
+
+There are different ways to call this function to compute the Inverse of the matrix A. These correspond to different overloaded \hyperlink{nmr_inverse_8h_a018d876444a46377abdd85e296643035}{nmr\+Inverse} functions\+: 
+\begin{DoxyEnumerate}
+\item Using a preallocated data object.
+
+The user creates the input matrix A\+: 
+\begin{DoxyCode}
+\hyperlink{classvct_dynamic_matrix}{vctDynamicMatrix<CISSTNETLIB\_DOUBLE>} A(12, 24 , 
+      \hyperlink{vct_forward_declarations_8h_a432cdf8923afaf82f551450ad4034746}{VCT\_COL\_MAJOR}); \textcolor{comment}{// 12 x 24 matrix}
+\hyperlink{group__cisst_vector_ga0d25660a2dc6ef9c093f6f6b2804d2d0}{vctRandom}(A, -10.0, 10.0);
+\end{DoxyCode}
+ The user allocates a data object which could be of type \hyperlink{classnmr_inverse_fixed_size_data}{nmr\+Inverse\+Fixed\+Size\+Data} or \hyperlink{classnmr_inverse_dynamic_data}{nmr\+Inverse\+Dynamic\+Data}. corresponding to fixed size or dynamic matrix A\+: 
+\begin{DoxyCode}
+\hyperlink{classnmr_inverse_dynamic_data}{nmrInverseDynamicData} data(A);
+\end{DoxyCode}
+ Call the nmr\+Inverse function\+: 
+\begin{DoxyCode}
+\hyperlink{nmr_inverse_8h_a51b66ffadde859083c4c761ee9cae824}{nmrInverse}(A, data);
+\end{DoxyCode}
+ The content of input matrix A is modified by this routine.
+
+
+\item The user provides the vector pivot\+Indices and workspace.
+
+The User allocates memory for this vector\+: 
+\begin{DoxyCode}
+\hyperlink{classvct_dynamic_matrix}{vctDynamicMatrix<CISSTNETLIB\_DOUBLE>} A(5, 5, 
+      \hyperlink{vct_forward_declarations_8h_a432cdf8923afaf82f551450ad4034746}{VCT\_COL\_MAJOR});
+\hyperlink{group__cisst_vector_ga0d25660a2dc6ef9c093f6f6b2804d2d0}{vctRandom}(A, -10.0, 10.0);
+\hyperlink{classvct_dynamic_vector}{vctDynamicVector<CISSTNETLIB\_INTEGER>}
+    pivotIndices(\hyperlink{classnmr_inverse_dynamic_data_ab327168662ab28ad8ae94e3b08acb7e7}{nmrInverseDynamicData::PivotIndicesSize}(A));
+\hyperlink{classvct_dynamic_vector}{vctDynamicVector<CISSTNETLIB\_DOUBLE>}
+    workspace(\hyperlink{classnmr_inverse_dynamic_data_ae35f9f1621272764b8e2b057410a9eeb}{nmrInverseDynamicData::WorkspaceSize}(A));
+\end{DoxyCode}
+ Call the Inverse routine\+: 
+\begin{DoxyCode}
+\hyperlink{nmr_inverse_8h_a51b66ffadde859083c4c761ee9cae824}{nmrInverse}(A, pivotIndices, workspace);
+\end{DoxyCode}
+ The Inverse function verifies that the size of the data objects matches the input.
+
+
+\item Using a data for fixed size containers.
+
+
+\begin{DoxyCode}
+\hyperlink{classvct_fixed_size_matrix}{vctFixedSizeMatrix<CISSTNETLIB\_DOUBLE, 5, 5, VCT\_COL\_MAJOR>}
+       A;
+\hyperlink{group__cisst_vector_ga0d25660a2dc6ef9c093f6f6b2804d2d0}{vctRandom}(A, -10.0, 10.0);
+\textcolor{keyword}{typedef} \hyperlink{classnmr_inverse_fixed_size_data}{nmrInverseFixedSizeData<5, VCT\_COL\_MAJOR>} DataType;
+DataType data;
+\hyperlink{nmr_inverse_8h_a51b66ffadde859083c4c761ee9cae824}{nmrInverse}(A, data);
+\end{DoxyCode}
+
+
+
+\end{DoxyEnumerate}
+
+\begin{DoxyNote}{Note}
+The Inverse functions make use of L\+A\+P\+A\+C\+K routines. To activate this code, set the C\+I\+S\+S\+T\+\_\+\+H\+A\+S\+\_\+\+C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B flag to O\+N during the configuration of cisst with C\+Make. 
+\end{DoxyNote}
+}\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class \+\_\+matrix\+Owner\+Type $>$ }\\C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R \hyperlink{nmr_inverse_8h_a51b66ffadde859083c4c761ee9cae824}{nmr\+Inverse} (\hyperlink{classvct_dynamic_matrix_base}{vct\+Dynamic\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&A, \hyperlink{classnmr_inverse_dynamic_data}{nmr\+Inverse\+Dynamic\+Data} \&data)  throw (std\+::runtime\+\_\+error)
+\item 
+{\footnotesize template$<$class \+\_\+matrix\+Owner\+Type\+A , class \+\_\+vector\+Owner\+Type\+Pivot\+Indices , class \+\_\+vector\+Owner\+Type\+Workspace $>$ }\\C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R \hyperlink{nmr_inverse_8h_adba7137eff6918ac6883c35e528eb37e}{nmr\+Inverse} (\hyperlink{classvct_dynamic_matrix_base}{vct\+Dynamic\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type\+A, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&A, \hyperlink{classvct_dynamic_vector_base}{vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+Pivot\+Indices, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R $>$ \&pivot\+Indices, \hyperlink{classvct_dynamic_vector_base}{vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+Workspace, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&workspace)
+\item 
+{\footnotesize template$<$class \+\_\+matrix\+Owner\+Type\+A $>$ }\\C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R \hyperlink{nmr_inverse_8h_a9f7686b136d5e0eedd02e86c5ad4f2da}{nmr\+Inverse} (\hyperlink{classvct_dynamic_matrix_base}{vct\+Dynamic\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type\+A, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&A)
+\item 
+{\footnotesize template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::size\+\_\+type \+\_\+max\+Size1, vct\+::size\+\_\+type \+\_\+l\+Work, bool \+\_\+storage\+Order$>$ }\\C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R \hyperlink{nmr_inverse_8h_a4bdfeaecfad758c9a56da636cfc4a18e}{nmr\+Inverse} (\hyperlink{classvct_fixed_size_matrix}{vct\+Fixed\+Size\+Matrix}$<$ C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E, \+\_\+size, \+\_\+size, \+\_\+storage\+Order $>$ \&A, \hyperlink{classvct_fixed_size_vector}{vct\+Fixed\+Size\+Vector}$<$ C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R, \+\_\+max\+Size1 $>$ \&pivot\+Indices, \hyperlink{classvct_fixed_size_vector}{vct\+Fixed\+Size\+Vector}$<$ C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E, \+\_\+l\+Work $>$ \&workspace)
+\item 
+{\footnotesize template$<$vct\+::size\+\_\+type \+\_\+size, bool \+\_\+storage\+Order$>$ }\\C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R \hyperlink{nmr_inverse_8h_aa1ecc5db18bf5a6a29afbd1ff6dbda05}{nmr\+Inverse} (\hyperlink{classvct_fixed_size_matrix}{vct\+Fixed\+Size\+Matrix}$<$ C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E, \+\_\+size, \+\_\+size, \+\_\+storage\+Order $>$ \&A, \hyperlink{classnmr_inverse_fixed_size_data}{nmr\+Inverse\+Fixed\+Size\+Data}$<$ \+\_\+size, \+\_\+storage\+Order $>$ \&data)
+\item 
+{\footnotesize template$<$vct\+::size\+\_\+type \+\_\+size, bool \+\_\+storage\+Order$>$ }\\C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R \hyperlink{nmr_inverse_8h_a018d876444a46377abdd85e296643035}{nmr\+Inverse} (\hyperlink{classvct_fixed_size_matrix}{vct\+Fixed\+Size\+Matrix}$<$ C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E, \+\_\+size, \+\_\+size, \+\_\+storage\+Order $>$ \&A)
+\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\subsection{Detailed Description}
+Declaration of nmr\+Inverse. 
+
+
+
+\subsection{Function Documentation}
+\hypertarget{nmr_inverse_8h_a51b66ffadde859083c4c761ee9cae824}{}\index{nmr\+Inverse.\+h@{nmr\+Inverse.\+h}!nmr\+Inverse@{nmr\+Inverse}}
+\index{nmr\+Inverse@{nmr\+Inverse}!nmr\+Inverse.\+h@{nmr\+Inverse.\+h}}
+\subsubsection[{nmr\+Inverse}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+matrix\+Owner\+Type $>$ C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R nmr\+Inverse (
+\begin{DoxyParamCaption}
+\item[{{\bf vct\+Dynamic\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&}]{A, }
+\item[{{\bf nmr\+Inverse\+Dynamic\+Data} \&}]{data}
+\end{DoxyParamCaption}
+) throw  std\+::runtime\+\_\+error) \hspace{0.3cm}{\ttfamily [inline]}}\label{nmr_inverse_8h_a51b66ffadde859083c4c761ee9cae824}
+This function solves the Inverse problem for a dynamic matrix using an \hyperlink{classnmr_inverse_dynamic_data}{nmr\+Inverse\+Dynamic\+Data}.
+
+This function checks for valid input (size and compact) and calls the L\+A\+P\+A\+C\+K function. If the input doesn\textquotesingle{}t match the data, an exception is thrown ({\ttfamily std\+::runtime\+\_\+error}).
+
+This function modifies the input matrix A and stores the results in the data.
+
+
+\begin{DoxyParams}{Parameters}
+{\em A} & A square matrix, either \hyperlink{classvct_dynamic_matrix}{vct\+Dynamic\+Matrix} or \hyperlink{classvct_dynamic_matrix_ref}{vct\+Dynamic\+Matrix\+Ref}. \\
+\hline
+{\em data} & A data object corresponding to the input matrix.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Test}
+\item[\hyperlink{test__test000001}{Test}]nmr\+Inverse\+Test\+::\+Test\+Dynamic\+Column\+Major nmr\+Inverse\+Test\+::\+Test\+Dynamic\+Row\+Major \end{DoxyRefDesc}
+\hypertarget{nmr_inverse_8h_adba7137eff6918ac6883c35e528eb37e}{}\index{nmr\+Inverse.\+h@{nmr\+Inverse.\+h}!nmr\+Inverse@{nmr\+Inverse}}
+\index{nmr\+Inverse@{nmr\+Inverse}!nmr\+Inverse.\+h@{nmr\+Inverse.\+h}}
+\subsubsection[{nmr\+Inverse}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+matrix\+Owner\+Type\+A , class \+\_\+vector\+Owner\+Type\+Pivot\+Indices , class \+\_\+vector\+Owner\+Type\+Workspace $>$ C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R nmr\+Inverse (
+\begin{DoxyParamCaption}
+\item[{{\bf vct\+Dynamic\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type\+A, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&}]{A, }
+\item[{{\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+Pivot\+Indices, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R $>$ \&}]{pivot\+Indices, }
+\item[{{\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+Workspace, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&}]{workspace}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{nmr_inverse_8h_adba7137eff6918ac6883c35e528eb37e}
+This function solves the Inverse problem for a dynamic matrix using the storage provided by the user (pivot\+Indices and workspace).
+
+Internally, a data is created using the storage provided by the user (see \hyperlink{classnmr_inverse_dynamic_data_a63ba1f6ac432d51a55e029277fb025ed}{nmr\+Inverse\+Dynamic\+Data\+::\+Set\+Ref}). While the data is being build, the consistency of the output is checked. Then, the nmr\+Inverse(\+A, data) function can be used safely.
+
+
+\begin{DoxyParams}{Parameters}
+{\em A} & is a reference to a dynamic square matrix \\
+\hline
+{\em pivot\+Indices} & Vector created by the user to store the pivot indices. \\
+\hline
+{\em workspace} & Vector created by the user for the workspace.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Test}
+\item[\hyperlink{test__test000002}{Test}]nmr\+Inverse\+Test\+::\+Test\+Dynamic\+Column\+Major\+User\+Alloc nmr\+Inverse\+Test\+::\+Test\+Dynamic\+Row\+Major\+User\+Alloc \end{DoxyRefDesc}
+\hypertarget{nmr_inverse_8h_a9f7686b136d5e0eedd02e86c5ad4f2da}{}\index{nmr\+Inverse.\+h@{nmr\+Inverse.\+h}!nmr\+Inverse@{nmr\+Inverse}}
+\index{nmr\+Inverse@{nmr\+Inverse}!nmr\+Inverse.\+h@{nmr\+Inverse.\+h}}
+\subsubsection[{nmr\+Inverse}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+matrix\+Owner\+Type\+A $>$ C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R nmr\+Inverse (
+\begin{DoxyParamCaption}
+\item[{{\bf vct\+Dynamic\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type\+A, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&}]{A}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{nmr_inverse_8h_a9f7686b136d5e0eedd02e86c5ad4f2da}
+This function solves the Inverse problem for a dynamic matrix.
+
+Internally, a data object is created. This forces the dynamic allocation of the pivot indices vector as well as the workspace vector. Then, the nmr\+Inverse(\+A, data) function can be used safely.
+
+
+\begin{DoxyParams}{Parameters}
+{\em A} & is a reference to a dynamic square matrix \\
+\hline
+\end{DoxyParams}
+\hypertarget{nmr_inverse_8h_a4bdfeaecfad758c9a56da636cfc4a18e}{}\index{nmr\+Inverse.\+h@{nmr\+Inverse.\+h}!nmr\+Inverse@{nmr\+Inverse}}
+\index{nmr\+Inverse@{nmr\+Inverse}!nmr\+Inverse.\+h@{nmr\+Inverse.\+h}}
+\subsubsection[{nmr\+Inverse}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::size\+\_\+type \+\_\+max\+Size1, vct\+::size\+\_\+type \+\_\+l\+Work, bool \+\_\+storage\+Order$>$ C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R nmr\+Inverse (
+\begin{DoxyParamCaption}
+\item[{{\bf vct\+Fixed\+Size\+Matrix}$<$ C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E, \+\_\+size, \+\_\+size, \+\_\+storage\+Order $>$ \&}]{A, }
+\item[{{\bf vct\+Fixed\+Size\+Vector}$<$ C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R, \+\_\+max\+Size1 $>$ \&}]{pivot\+Indices, }
+\item[{{\bf vct\+Fixed\+Size\+Vector}$<$ C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E, \+\_\+l\+Work $>$ \&}]{workspace}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{nmr_inverse_8h_a4bdfeaecfad758c9a56da636cfc4a18e}
+This function solves the Inverse problem for a fixed size matrix using the storage provided by the user for the pivot indices vector as well as the workspace vector.
+
+The sizes of the matrices must match at compilation time. This is enforced by the template parameters and matching problems will lead to compilation errors. Since there is no easy way to enforce the size of the vector pivot\+Indices with template parameters, a runtime check is performed. The test uses C\+M\+N\+\_\+\+A\+S\+S\+E\+R\+T to determine what to do if the sizes don\textquotesingle{}t match. By default C\+M\+N\+\_\+\+A\+S\+S\+E\+R\+T calls {\ttfamily abort()} but it can be configured to be ignored or to throw an exception (see \hyperlink{group__cisst_common_ga6a12b7031ea38ac5bf5937b8633c97ff}{C\+M\+N\+\_\+\+A\+S\+S\+E\+R\+T} for details).
+
+This function modifies the input matrix A.
+
+
+\begin{DoxyParams}{Parameters}
+{\em A} & is a fixed size square matrix. \\
+\hline
+{\em pivot\+Indices} & Vector created by the caller for the pivot indices. \\
+\hline
+{\em workspace} & Vector created by the caller for the workspace.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Test}
+\item[\hyperlink{test__test000003}{Test}]Test\+Fixed\+Size\+Column\+Major\+User\+Alloc Test\+Fixed\+Size\+Row\+Major\+User\+Alloc \end{DoxyRefDesc}
+\hypertarget{nmr_inverse_8h_aa1ecc5db18bf5a6a29afbd1ff6dbda05}{}\index{nmr\+Inverse.\+h@{nmr\+Inverse.\+h}!nmr\+Inverse@{nmr\+Inverse}}
+\index{nmr\+Inverse@{nmr\+Inverse}!nmr\+Inverse.\+h@{nmr\+Inverse.\+h}}
+\subsubsection[{nmr\+Inverse}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, bool \+\_\+storage\+Order$>$ C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R nmr\+Inverse (
+\begin{DoxyParamCaption}
+\item[{{\bf vct\+Fixed\+Size\+Matrix}$<$ C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E, \+\_\+size, \+\_\+size, \+\_\+storage\+Order $>$ \&}]{A, }
+\item[{{\bf nmr\+Inverse\+Fixed\+Size\+Data}$<$ \+\_\+size, \+\_\+storage\+Order $>$ \&}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{nmr_inverse_8h_aa1ecc5db18bf5a6a29afbd1ff6dbda05}
+This function solves the Inverse problem for a fixed size matrix using \hyperlink{classnmr_inverse_fixed_size_data}{nmr\+Inverse\+Fixed\+Size\+Data} to allocate the memory required for the pivot indices and the workspace\+: 
+\begin{DoxyCode}
+1 vctFixedSizeMatrix<CISSTNETLIB\_DOUBLE, 7, 7, VCT\_ROW\_MAJOR> A;
+2 vctRandom(A, -10.0, 10.0);
+3 nmrInverseFixedSizeData<7, VCT\_ROW\_MAJOR> data;
+4 nmrInverse(A, data);
+\end{DoxyCode}
+
+
+This method calls nmr\+Inverse(\+A, pivot\+Indices, workspace).
+
+
+\begin{DoxyParams}{Parameters}
+{\em A} & A fixed size square matrix. \\
+\hline
+{\em data} & A data object.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Test}
+\item[\hyperlink{test__test000004}{Test}]Test\+Fixed\+Size\+Column\+Major Test\+Fixed\+Size\+Row\+Major \end{DoxyRefDesc}
+\hypertarget{nmr_inverse_8h_a018d876444a46377abdd85e296643035}{}\index{nmr\+Inverse.\+h@{nmr\+Inverse.\+h}!nmr\+Inverse@{nmr\+Inverse}}
+\index{nmr\+Inverse@{nmr\+Inverse}!nmr\+Inverse.\+h@{nmr\+Inverse.\+h}}
+\subsubsection[{nmr\+Inverse}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, bool \+\_\+storage\+Order$>$ C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R nmr\+Inverse (
+\begin{DoxyParamCaption}
+\item[{{\bf vct\+Fixed\+Size\+Matrix}$<$ C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E, \+\_\+size, \+\_\+size, \+\_\+storage\+Order $>$ \&}]{A}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{nmr_inverse_8h_a018d876444a46377abdd85e296643035}
+This function solves the Inverse problem for a fixed size matrix.
+
+Internally, a data object is created. This forces the allocation (stack) of the pivot indices vector as well as the workspace vector. Then, the nmr\+Inverse(\+A, data) function can be used safely.
+
+
+\begin{DoxyParams}{Parameters}
+{\em A} & A fixed size square matrix. \\
+\hline
+\end{DoxyParams}

@@ -1,0 +1,204 @@
+\hypertarget{classmts_state_index}{}\section{mts\+State\+Index Class Reference}
+\label{classmts_state_index}\index{mts\+State\+Index@{mts\+State\+Index}}
+
+
+{\ttfamily \#include $<$mts\+State\+Index.\+h$>$}
+
+Inheritance diagram for mts\+State\+Index\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{d2/d0a/classmts_state_index}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef unsigned long long int \hyperlink{classmts_state_index_a80d0a5acdec3b616347ddea2912b6294}{Time\+Ticks\+Type}
+\item 
+typedef \hyperlink{classmts_generic_object}{mts\+Generic\+Object} \hyperlink{classmts_state_index_a9b228c6cd3d48921c5253fd6b1a95800}{Base\+Type}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmts_state_index_aef0bef10b969db03fa40817c316227f5}{mts\+State\+Index} ()
+\item 
+\hyperlink{classmts_state_index_a03e7f263594442b60da5bab69406c3fa}{mts\+State\+Index} (double timestamp, int index, \hyperlink{classmts_state_index_a80d0a5acdec3b616347ddea2912b6294}{Time\+Ticks\+Type} ticks, int \hyperlink{classmts_state_index_a7edfd9644598e469b2a4e6161b15d9b6}{Length})
+\item 
+\hyperlink{classmts_state_index_afb7ff083d182f2dba64dc183292ddfd2}{$\sim$mts\+State\+Index} ()
+\item 
+int \hyperlink{classmts_state_index_a7edfd9644598e469b2a4e6161b15d9b6}{Length} (void) const 
+\item 
+int \hyperlink{classmts_state_index_ac117e13b981b49408776af1b53dfa09c}{Index} (void) const 
+\item 
+\hyperlink{classmts_state_index_a80d0a5acdec3b616347ddea2912b6294}{Time\+Ticks\+Type} \hyperlink{classmts_state_index_af3cc32958c37bae9e7d658b9a94655e2}{Ticks} (void) const 
+\item 
+\hyperlink{classmts_state_index}{mts\+State\+Index} \& \hyperlink{classmts_state_index_adf83691b3fc4a5676685ce24192549f4}{operator-\/-\/} ()
+\item 
+\hyperlink{classmts_state_index}{mts\+State\+Index} \& \hyperlink{classmts_state_index_a1d41bc34a81a7b327f0e861e8a94a382}{operator-\/=} (int number)
+\item 
+\hyperlink{classmts_state_index}{mts\+State\+Index} \hyperlink{classmts_state_index_abff1cc39caae8dd968f73ad546cf5095}{operator-\/} (int number)
+\item 
+bool \hyperlink{classmts_state_index_a7adcfadae2d8422c6f585b82fd5ca084}{operator==} (const \hyperlink{classmts_state_index}{mts\+State\+Index} \&that) const 
+\item 
+bool \hyperlink{classmts_state_index_aaec271010e78d34917aab1674216ade5}{operator!=} (const \hyperlink{classmts_state_index}{mts\+State\+Index} \&that) const 
+\item 
+virtual void \hyperlink{classmts_state_index_a3e16f00c85016723e04052e03a2547ec}{To\+Stream} (std\+::ostream \&output\+Stream) const 
+\item 
+virtual void \hyperlink{classmts_state_index_adbe9ecadbcdf1321b8c6c37235490def}{To\+Stream\+Raw} (std\+::ostream \&output\+Stream, const char delimiter= \textquotesingle{} \textquotesingle{}, bool header\+Only=false, const std\+::string \&header\+Prefix=\char`\"{}\char`\"{}) const 
+\item 
+void \hyperlink{classmts_state_index_a805bdf14ee35773a9b1212599ba959c8}{Serialize\+Raw} (std\+::ostream \&output\+Stream) const 
+\item 
+virtual void \hyperlink{classmts_state_index_a431ca694480fa7568b5384187d139402}{De\+Serialize\+Raw} (std\+::istream \&input\+Stream)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The time indexing of state data is provided by the \hyperlink{classmts_state_index}{mts\+State\+Index} class.
+
+Each iteration of the Task Loop increments a tick counter, which is stored as an unsigned long. (mts\+Time\+Ticks). A \hyperlink{classmts_state_index}{mts\+State\+Index} object contains the following information\+: The tick value is stored in the \hyperlink{classmts_state_index}{mts\+State\+Index} class to act as a data validity check. This is used to ensure that the circular buffer has not wrapped around and overwritten the index entry between the time that the \hyperlink{classmts_state_index}{mts\+State\+Index} object was created and the time it was used. 
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classmts_state_index_a9b228c6cd3d48921c5253fd6b1a95800}{}\index{mts\+State\+Index@{mts\+State\+Index}!Base\+Type@{Base\+Type}}
+\index{Base\+Type@{Base\+Type}!mts\+State\+Index@{mts\+State\+Index}}
+\subsubsection[{Base\+Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf mts\+Generic\+Object} {\bf mts\+State\+Index\+::\+Base\+Type}}\label{classmts_state_index_a9b228c6cd3d48921c5253fd6b1a95800}
+Base type \hypertarget{classmts_state_index_a80d0a5acdec3b616347ddea2912b6294}{}\index{mts\+State\+Index@{mts\+State\+Index}!Time\+Ticks\+Type@{Time\+Ticks\+Type}}
+\index{Time\+Ticks\+Type@{Time\+Ticks\+Type}!mts\+State\+Index@{mts\+State\+Index}}
+\subsubsection[{Time\+Ticks\+Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned long long int {\bf mts\+State\+Index\+::\+Time\+Ticks\+Type}}\label{classmts_state_index_a80d0a5acdec3b616347ddea2912b6294}
+Time\+Ticks are typedef\textquotesingle{}ed as unsigned long long (64 bits) 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmts_state_index_aef0bef10b969db03fa40817c316227f5}{}\index{mts\+State\+Index@{mts\+State\+Index}!mts\+State\+Index@{mts\+State\+Index}}
+\index{mts\+State\+Index@{mts\+State\+Index}!mts\+State\+Index@{mts\+State\+Index}}
+\subsubsection[{mts\+State\+Index}]{\setlength{\rightskip}{0pt plus 5cm}mts\+State\+Index\+::mts\+State\+Index (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_state_index_aef0bef10b969db03fa40817c316227f5}
+Default constructor. Does nothing. \hypertarget{classmts_state_index_a03e7f263594442b60da5bab69406c3fa}{}\index{mts\+State\+Index@{mts\+State\+Index}!mts\+State\+Index@{mts\+State\+Index}}
+\index{mts\+State\+Index@{mts\+State\+Index}!mts\+State\+Index@{mts\+State\+Index}}
+\subsubsection[{mts\+State\+Index}]{\setlength{\rightskip}{0pt plus 5cm}mts\+State\+Index\+::mts\+State\+Index (
+\begin{DoxyParamCaption}
+\item[{double}]{timestamp, }
+\item[{int}]{index, }
+\item[{{\bf Time\+Ticks\+Type}}]{ticks, }
+\item[{int}]{Length}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_state_index_a03e7f263594442b60da5bab69406c3fa}
+Default constructor. Does nothing. \hypertarget{classmts_state_index_afb7ff083d182f2dba64dc183292ddfd2}{}\index{mts\+State\+Index@{mts\+State\+Index}!````~mts\+State\+Index@{$\sim$mts\+State\+Index}}
+\index{````~mts\+State\+Index@{$\sim$mts\+State\+Index}!mts\+State\+Index@{mts\+State\+Index}}
+\subsubsection[{$\sim$mts\+State\+Index}]{\setlength{\rightskip}{0pt plus 5cm}mts\+State\+Index\+::$\sim$mts\+State\+Index (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_state_index_afb7ff083d182f2dba64dc183292ddfd2}
+Default destructor. Does nothing. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classmts_state_index_a431ca694480fa7568b5384187d139402}{}\index{mts\+State\+Index@{mts\+State\+Index}!De\+Serialize\+Raw@{De\+Serialize\+Raw}}
+\index{De\+Serialize\+Raw@{De\+Serialize\+Raw}!mts\+State\+Index@{mts\+State\+Index}}
+\subsubsection[{De\+Serialize\+Raw}]{\setlength{\rightskip}{0pt plus 5cm}virtual void mts\+State\+Index\+::\+De\+Serialize\+Raw (
+\begin{DoxyParamCaption}
+\item[{std\+::istream \&}]{input\+Stream}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_state_index_a431ca694480fa7568b5384187d139402}
+De-\/serialize the content of the object without any extra information, i.\+e. no class type nor format version. 
+
+Reimplemented from \hyperlink{classmts_generic_object_af83ae8622a742a5b94bf72e53d20a1cd}{mts\+Generic\+Object}.
+
+\hypertarget{classmts_state_index_ac117e13b981b49408776af1b53dfa09c}{}\index{mts\+State\+Index@{mts\+State\+Index}!Index@{Index}}
+\index{Index@{Index}!mts\+State\+Index@{mts\+State\+Index}}
+\subsubsection[{Index}]{\setlength{\rightskip}{0pt plus 5cm}int mts\+State\+Index\+::\+Index (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_state_index_ac117e13b981b49408776af1b53dfa09c}
+\hypertarget{classmts_state_index_a7edfd9644598e469b2a4e6161b15d9b6}{}\index{mts\+State\+Index@{mts\+State\+Index}!Length@{Length}}
+\index{Length@{Length}!mts\+State\+Index@{mts\+State\+Index}}
+\subsubsection[{Length}]{\setlength{\rightskip}{0pt plus 5cm}int mts\+State\+Index\+::\+Length (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_state_index_a7edfd9644598e469b2a4e6161b15d9b6}
+The length of the circular buffer. \hypertarget{classmts_state_index_aaec271010e78d34917aab1674216ade5}{}\index{mts\+State\+Index@{mts\+State\+Index}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!mts\+State\+Index@{mts\+State\+Index}}
+\subsubsection[{operator"!=}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+State\+Index\+::operator!= (
+\begin{DoxyParamCaption}
+\item[{const {\bf mts\+State\+Index} \&}]{that}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_state_index_aaec271010e78d34917aab1674216ade5}
+Overloaded operator \hypertarget{classmts_state_index_abff1cc39caae8dd968f73ad546cf5095}{}\index{mts\+State\+Index@{mts\+State\+Index}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!mts\+State\+Index@{mts\+State\+Index}}
+\subsubsection[{operator-\/}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+State\+Index} mts\+State\+Index\+::operator-\/ (
+\begin{DoxyParamCaption}
+\item[{int}]{number}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_state_index_abff1cc39caae8dd968f73ad546cf5095}
+Overloaded operator \hypertarget{classmts_state_index_adf83691b3fc4a5676685ce24192549f4}{}\index{mts\+State\+Index@{mts\+State\+Index}!operator-\/-\/@{operator-\/-\/}}
+\index{operator-\/-\/@{operator-\/-\/}!mts\+State\+Index@{mts\+State\+Index}}
+\subsubsection[{operator-\/-\/}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+State\+Index}\& mts\+State\+Index\+::operator-\/-\/ (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_state_index_adf83691b3fc4a5676685ce24192549f4}
+Note that the increment operators are not defined for this class, since we dont want future times. \hypertarget{classmts_state_index_a1d41bc34a81a7b327f0e861e8a94a382}{}\index{mts\+State\+Index@{mts\+State\+Index}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!mts\+State\+Index@{mts\+State\+Index}}
+\subsubsection[{operator-\/=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+State\+Index}\& mts\+State\+Index\+::operator-\/= (
+\begin{DoxyParamCaption}
+\item[{int}]{number}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_state_index_a1d41bc34a81a7b327f0e861e8a94a382}
+Overloaded operator \hypertarget{classmts_state_index_a7adcfadae2d8422c6f585b82fd5ca084}{}\index{mts\+State\+Index@{mts\+State\+Index}!operator==@{operator==}}
+\index{operator==@{operator==}!mts\+State\+Index@{mts\+State\+Index}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+State\+Index\+::operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf mts\+State\+Index} \&}]{that}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_state_index_a7adcfadae2d8422c6f585b82fd5ca084}
+The comparison operators \hypertarget{classmts_state_index_a805bdf14ee35773a9b1212599ba959c8}{}\index{mts\+State\+Index@{mts\+State\+Index}!Serialize\+Raw@{Serialize\+Raw}}
+\index{Serialize\+Raw@{Serialize\+Raw}!mts\+State\+Index@{mts\+State\+Index}}
+\subsubsection[{Serialize\+Raw}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+State\+Index\+::\+Serialize\+Raw (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{output\+Stream}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_state_index_a805bdf14ee35773a9b1212599ba959c8}
+Serialize the content of the object without any extra information, i.\+e. no class type nor format version. The \char`\"{}receiver\char`\"{} is supposed to already know what to expect. 
+
+Reimplemented from \hyperlink{classmts_generic_object_a33d4404a50a87243ca5a1e2b1913dd3b}{mts\+Generic\+Object}.
+
+\hypertarget{classmts_state_index_af3cc32958c37bae9e7d658b9a94655e2}{}\index{mts\+State\+Index@{mts\+State\+Index}!Ticks@{Ticks}}
+\index{Ticks@{Ticks}!mts\+State\+Index@{mts\+State\+Index}}
+\subsubsection[{Ticks}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Time\+Ticks\+Type} mts\+State\+Index\+::\+Ticks (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_state_index_af3cc32958c37bae9e7d658b9a94655e2}
+Return the ticks corresponding to the time. \hypertarget{classmts_state_index_a3e16f00c85016723e04052e03a2547ec}{}\index{mts\+State\+Index@{mts\+State\+Index}!To\+Stream@{To\+Stream}}
+\index{To\+Stream@{To\+Stream}!mts\+State\+Index@{mts\+State\+Index}}
+\subsubsection[{To\+Stream}]{\setlength{\rightskip}{0pt plus 5cm}virtual void mts\+State\+Index\+::\+To\+Stream (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{output\+Stream}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_state_index_a3e16f00c85016723e04052e03a2547ec}
+Human readable text output 
+
+Reimplemented from \hyperlink{classmts_generic_object_a2030aaa58bc215eccce1dc8d20dd0fdc}{mts\+Generic\+Object}.
+
+\hypertarget{classmts_state_index_adbe9ecadbcdf1321b8c6c37235490def}{}\index{mts\+State\+Index@{mts\+State\+Index}!To\+Stream\+Raw@{To\+Stream\+Raw}}
+\index{To\+Stream\+Raw@{To\+Stream\+Raw}!mts\+State\+Index@{mts\+State\+Index}}
+\subsubsection[{To\+Stream\+Raw}]{\setlength{\rightskip}{0pt plus 5cm}virtual void mts\+State\+Index\+::\+To\+Stream\+Raw (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{output\+Stream, }
+\item[{const char}]{delimiter = {\ttfamily \textquotesingle{}~\textquotesingle{}}, }
+\item[{bool}]{header\+Only = {\ttfamily false}, }
+\item[{const std\+::string \&}]{header\+Prefix = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_state_index_adbe9ecadbcdf1321b8c6c37235490def}
+Machine reabable text output 
+
+Reimplemented from \hyperlink{classmts_generic_object_a4916a6c62ee5b167d7c93c88ab72523a}{mts\+Generic\+Object}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Multi\+Task/\hyperlink{mts_state_index_8h}{mts\+State\+Index.\+h}\end{DoxyCompactItemize}

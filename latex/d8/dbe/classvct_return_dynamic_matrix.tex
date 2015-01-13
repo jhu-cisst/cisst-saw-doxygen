@@ -1,0 +1,63 @@
+\hypertarget{classvct_return_dynamic_matrix}{}\section{vct\+Return\+Dynamic\+Matrix$<$ \+\_\+element\+Type $>$ Class Template Reference}
+\label{classvct_return_dynamic_matrix}\index{vct\+Return\+Dynamic\+Matrix$<$ \+\_\+element\+Type $>$@{vct\+Return\+Dynamic\+Matrix$<$ \+\_\+element\+Type $>$}}
+
+
+{\ttfamily \#include $<$vct\+Dynamic\+Matrix.\+h$>$}
+
+Inheritance diagram for vct\+Return\+Dynamic\+Matrix$<$ \+\_\+element\+Type $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{d8/dbe/classvct_return_dynamic_matrix}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classvct_dynamic_matrix}{vct\+Dynamic\+Matrix}$<$ \+\_\+element\+Type $>$ \hyperlink{classvct_return_dynamic_matrix_a28dcbb4e9972a46485593c2009a12ea8}{Base\+Type}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classvct_return_dynamic_matrix_a2a3ab642a2e91db15078ef92fc96ae03}{V\+C\+T\+\_\+\+C\+O\+N\+T\+A\+I\+N\+E\+R\+\_\+\+T\+R\+A\+I\+T\+S\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+S} (\+\_\+element\+Type)
+\item 
+\hyperlink{classvct_return_dynamic_matrix_a687f2622f53078303d60288d01249242}{vct\+Return\+Dynamic\+Matrix} (const \hyperlink{classvct_dynamic_matrix_a80b366a0b1c03c7a5453e76aea1fbe83}{Base\+Type} \&other)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class \+\_\+element\+Type$>$class vct\+Return\+Dynamic\+Matrix$<$ \+\_\+element\+Type $>$}
+
+Class \hyperlink{classvct_return_dynamic_matrix}{vct\+Return\+Dynamic\+Matrix} is specialized to store a temporary matrix object by transfering ownership. An object of this class has all the methods inherited from \hyperlink{classvct_dynamic_matrix}{vct\+Dynamic\+Matrix}, but can only be constructed in one way -- taking the ownership from another \hyperlink{classvct_dynamic_matrix}{vct\+Dynamic\+Matrix} (or \hyperlink{classvct_return_dynamic_matrix}{vct\+Return\+Dynamic\+Matrix}) object. In turn, when an assignment occurs from a \hyperlink{classvct_return_dynamic_matrix}{vct\+Return\+Dynamic\+Matrix} to a \hyperlink{classvct_dynamic_matrix}{vct\+Dynamic\+Matrix} (or likewise construction), the lhs \hyperlink{classvct_dynamic_matrix}{vct\+Dynamic\+Matrix} strips this object from the ownership of the data.
+
+Use this class only when you want to return a newly created dynamic matrix from a function, without going through memory allocation and deallocation. Never use it on an object that is going to remain in scope after constructing the \hyperlink{classvct_return_dynamic_matrix}{vct\+Return\+Dynamic\+Matrix}. 
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classvct_return_dynamic_matrix_a28dcbb4e9972a46485593c2009a12ea8}{}\index{vct\+Return\+Dynamic\+Matrix@{vct\+Return\+Dynamic\+Matrix}!Base\+Type@{Base\+Type}}
+\index{Base\+Type@{Base\+Type}!vct\+Return\+Dynamic\+Matrix@{vct\+Return\+Dynamic\+Matrix}}
+\subsubsection[{Base\+Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ typedef {\bf vct\+Dynamic\+Matrix}$<$\+\_\+element\+Type$>$ {\bf vct\+Return\+Dynamic\+Matrix}$<$ \+\_\+element\+Type $>$\+::{\bf Base\+Type}}\label{classvct_return_dynamic_matrix_a28dcbb4e9972a46485593c2009a12ea8}
+Base type of \hyperlink{classvct_return_dynamic_matrix}{vct\+Return\+Dynamic\+Matrix}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classvct_return_dynamic_matrix_a687f2622f53078303d60288d01249242}{}\index{vct\+Return\+Dynamic\+Matrix@{vct\+Return\+Dynamic\+Matrix}!vct\+Return\+Dynamic\+Matrix@{vct\+Return\+Dynamic\+Matrix}}
+\index{vct\+Return\+Dynamic\+Matrix@{vct\+Return\+Dynamic\+Matrix}!vct\+Return\+Dynamic\+Matrix@{vct\+Return\+Dynamic\+Matrix}}
+\subsubsection[{vct\+Return\+Dynamic\+Matrix}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ {\bf vct\+Return\+Dynamic\+Matrix}$<$ \+\_\+element\+Type $>$\+::{\bf vct\+Return\+Dynamic\+Matrix} (
+\begin{DoxyParamCaption}
+\item[{const {\bf Base\+Type} \&}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}\label{classvct_return_dynamic_matrix_a687f2622f53078303d60288d01249242}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classvct_return_dynamic_matrix_a2a3ab642a2e91db15078ef92fc96ae03}{}\index{vct\+Return\+Dynamic\+Matrix@{vct\+Return\+Dynamic\+Matrix}!V\+C\+T\+\_\+\+C\+O\+N\+T\+A\+I\+N\+E\+R\+\_\+\+T\+R\+A\+I\+T\+S\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+S@{V\+C\+T\+\_\+\+C\+O\+N\+T\+A\+I\+N\+E\+R\+\_\+\+T\+R\+A\+I\+T\+S\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+S}}
+\index{V\+C\+T\+\_\+\+C\+O\+N\+T\+A\+I\+N\+E\+R\+\_\+\+T\+R\+A\+I\+T\+S\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+S@{V\+C\+T\+\_\+\+C\+O\+N\+T\+A\+I\+N\+E\+R\+\_\+\+T\+R\+A\+I\+T\+S\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+S}!vct\+Return\+Dynamic\+Matrix@{vct\+Return\+Dynamic\+Matrix}}
+\subsubsection[{V\+C\+T\+\_\+\+C\+O\+N\+T\+A\+I\+N\+E\+R\+\_\+\+T\+R\+A\+I\+T\+S\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+S}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ {\bf vct\+Return\+Dynamic\+Matrix}$<$ \+\_\+element\+Type $>$\+::V\+C\+T\+\_\+\+C\+O\+N\+T\+A\+I\+N\+E\+R\+\_\+\+T\+R\+A\+I\+T\+S\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+S (
+\begin{DoxyParamCaption}
+\item[{\+\_\+element\+Type}]{}
+\end{DoxyParamCaption}
+)}\label{classvct_return_dynamic_matrix_a2a3ab642a2e91db15078ef92fc96ae03}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Vector/\hyperlink{vct_dynamic_matrix_8h}{vct\+Dynamic\+Matrix.\+h}\end{DoxyCompactItemize}

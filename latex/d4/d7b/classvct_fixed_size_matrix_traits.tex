@@ -1,0 +1,110 @@
+\hypertarget{classvct_fixed_size_matrix_traits}{}\section{vct\+Fixed\+Size\+Matrix\+Traits$<$ \+\_\+element\+Type, \+\_\+rows, \+\_\+cols, \+\_\+row\+Stride, \+\_\+col\+Stride $>$ Class Template Reference}
+\label{classvct_fixed_size_matrix_traits}\index{vct\+Fixed\+Size\+Matrix\+Traits$<$ \+\_\+element\+Type, \+\_\+rows, \+\_\+cols, \+\_\+row\+Stride, \+\_\+col\+Stride $>$@{vct\+Fixed\+Size\+Matrix\+Traits$<$ \+\_\+element\+Type, \+\_\+rows, \+\_\+cols, \+\_\+row\+Stride, \+\_\+col\+Stride $>$}}
+
+
+Define common container related types based on the properties of a fixed size container.  
+
+
+
+
+{\ttfamily \#include $<$vct\+Fixed\+Size\+Matrix\+Traits.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \hyperlink{classvct_fixed_size_matrix_traits_a99506cd46619256b0ad9c09afc88cfe4a4111cbfc8e82c98dfb13e63b65fc606b}{R\+O\+W\+S} = \+\_\+rows, 
+\hyperlink{classvct_fixed_size_matrix_traits_a99506cd46619256b0ad9c09afc88cfe4af33df4089c668a48b5d59ac86af3138e}{C\+O\+L\+S} = \+\_\+cols, 
+\hyperlink{classvct_fixed_size_matrix_traits_a99506cd46619256b0ad9c09afc88cfe4a6b0f4f5000cd410b68ea5903cd33ec2b}{L\+E\+N\+G\+T\+H} = R\+O\+W\+S$\ast$\+C\+O\+L\+S
+ \}
+\item 
+enum \{ \hyperlink{classvct_fixed_size_matrix_traits_ac32aced1f46e5b302415ea1f2494dd40aef62e1a69a3a5647a2ade9f04f005f72}{R\+O\+W\+S\+T\+R\+I\+D\+E} = \+\_\+row\+Stride, 
+\hyperlink{classvct_fixed_size_matrix_traits_ac32aced1f46e5b302415ea1f2494dd40ad831203257041b2517422372fd4faea2}{C\+O\+L\+S\+T\+R\+I\+D\+E} = \+\_\+col\+Stride
+ \}
+\item 
+typedef \hyperlink{classvct_fixed_stride_matrix_iterator}{vct\+Fixed\+Stride\+Matrix\+Iterator}$<$ \+\_\+element\+Type, \+\_\+col\+Stride, \+\_\+cols, \+\_\+row\+Stride $>$ \hyperlink{classvct_fixed_size_matrix_traits_a677065481ada218e2559cdec92e97fd8}{iterator}
+\item 
+typedef \hyperlink{classvct_fixed_stride_matrix_const_iterator}{vct\+Fixed\+Stride\+Matrix\+Const\+Iterator}$<$ \+\_\+element\+Type, \+\_\+col\+Stride, \+\_\+cols, \+\_\+row\+Stride $>$ \hyperlink{classvct_fixed_size_matrix_traits_a8f7178fb03f45772c705fba16e08065d}{const\+\_\+iterator}
+\item 
+typedef \hyperlink{classvct_fixed_stride_matrix_iterator}{vct\+Fixed\+Stride\+Matrix\+Iterator}$<$ \+\_\+element\+Type,-\/\+\_\+col\+Stride, \+\_\+cols,-\/\+\_\+row\+Stride $>$ \hyperlink{classvct_fixed_size_matrix_traits_aa132098455575ae9bc4962c994273baa}{reverse\+\_\+iterator}
+\item 
+typedef \hyperlink{classvct_fixed_stride_matrix_const_iterator}{vct\+Fixed\+Stride\+Matrix\+Const\+Iterator}$<$ \+\_\+element\+Type,-\/\+\_\+col\+Stride, \+\_\+cols,-\/\+\_\+row\+Stride $>$ \hyperlink{classvct_fixed_size_matrix_traits_a362cff0931f811552609307e80af3eab}{const\+\_\+reverse\+\_\+iterator}
+\item 
+typedef value\+\_\+type \hyperlink{classvct_fixed_size_matrix_traits_a3894b24d65c8d4b54d17192001d28dc2}{array}\mbox{[}\hyperlink{classvct_fixed_size_matrix_traits_a99506cd46619256b0ad9c09afc88cfe4a6b0f4f5000cd410b68ea5903cd33ec2b}{L\+E\+N\+G\+T\+H}\mbox{]}
+\item 
+typedef const value\+\_\+type \hyperlink{classvct_fixed_size_matrix_traits_ac7459b07165b6f472e2f5238cc069b55}{const\+\_\+array}\mbox{[}\hyperlink{classvct_fixed_size_matrix_traits_a99506cd46619256b0ad9c09afc88cfe4a6b0f4f5000cd410b68ea5903cd33ec2b}{L\+E\+N\+G\+T\+H}\mbox{]}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classvct_fixed_size_matrix_traits_a9ac65f0b7d8723c8e13b131e6941096b}{V\+C\+T\+\_\+\+C\+O\+N\+T\+A\+I\+N\+E\+R\+\_\+\+T\+R\+A\+I\+T\+S\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+S} (\+\_\+element\+Type)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class \+\_\+element\+Type, vct\+::size\+\_\+type \+\_\+rows, vct\+::size\+\_\+type \+\_\+cols, vct\+::stride\+\_\+type \+\_\+row\+Stride, vct\+::stride\+\_\+type \+\_\+col\+Stride$>$class vct\+Fixed\+Size\+Matrix\+Traits$<$ \+\_\+element\+Type, \+\_\+rows, \+\_\+cols, \+\_\+row\+Stride, \+\_\+col\+Stride $>$}
+
+Define common container related types based on the properties of a fixed size container. 
+
+The types are declared according to the S\+T\+L requirements for the types declared by a container object. This class is used as a trait to declare the actual containers.
+
+In addition to the S\+T\+L required types, we declare a few more types for completeness. 
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classvct_fixed_size_matrix_traits_a3894b24d65c8d4b54d17192001d28dc2}{}\index{vct\+Fixed\+Size\+Matrix\+Traits@{vct\+Fixed\+Size\+Matrix\+Traits}!array@{array}}
+\index{array@{array}!vct\+Fixed\+Size\+Matrix\+Traits@{vct\+Fixed\+Size\+Matrix\+Traits}}
+\subsubsection[{array}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type , vct\+::size\+\_\+type \+\_\+rows, vct\+::size\+\_\+type \+\_\+cols, vct\+::stride\+\_\+type \+\_\+row\+Stride, vct\+::stride\+\_\+type \+\_\+col\+Stride$>$ typedef value\+\_\+type {\bf vct\+Fixed\+Size\+Matrix\+Traits}$<$ \+\_\+element\+Type, \+\_\+rows, \+\_\+cols, \+\_\+row\+Stride, \+\_\+col\+Stride $>$\+::array\mbox{[}{\bf L\+E\+N\+G\+T\+H}\mbox{]}}\label{classvct_fixed_size_matrix_traits_a3894b24d65c8d4b54d17192001d28dc2}
+Declared for completeness. \hypertarget{classvct_fixed_size_matrix_traits_ac7459b07165b6f472e2f5238cc069b55}{}\index{vct\+Fixed\+Size\+Matrix\+Traits@{vct\+Fixed\+Size\+Matrix\+Traits}!const\+\_\+array@{const\+\_\+array}}
+\index{const\+\_\+array@{const\+\_\+array}!vct\+Fixed\+Size\+Matrix\+Traits@{vct\+Fixed\+Size\+Matrix\+Traits}}
+\subsubsection[{const\+\_\+array}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type , vct\+::size\+\_\+type \+\_\+rows, vct\+::size\+\_\+type \+\_\+cols, vct\+::stride\+\_\+type \+\_\+row\+Stride, vct\+::stride\+\_\+type \+\_\+col\+Stride$>$ typedef const value\+\_\+type {\bf vct\+Fixed\+Size\+Matrix\+Traits}$<$ \+\_\+element\+Type, \+\_\+rows, \+\_\+cols, \+\_\+row\+Stride, \+\_\+col\+Stride $>$\+::const\+\_\+array\mbox{[}{\bf L\+E\+N\+G\+T\+H}\mbox{]}}\label{classvct_fixed_size_matrix_traits_ac7459b07165b6f472e2f5238cc069b55}
+Declared for completeness. \hypertarget{classvct_fixed_size_matrix_traits_a8f7178fb03f45772c705fba16e08065d}{}\index{vct\+Fixed\+Size\+Matrix\+Traits@{vct\+Fixed\+Size\+Matrix\+Traits}!const\+\_\+iterator@{const\+\_\+iterator}}
+\index{const\+\_\+iterator@{const\+\_\+iterator}!vct\+Fixed\+Size\+Matrix\+Traits@{vct\+Fixed\+Size\+Matrix\+Traits}}
+\subsubsection[{const\+\_\+iterator}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type , vct\+::size\+\_\+type \+\_\+rows, vct\+::size\+\_\+type \+\_\+cols, vct\+::stride\+\_\+type \+\_\+row\+Stride, vct\+::stride\+\_\+type \+\_\+col\+Stride$>$ typedef {\bf vct\+Fixed\+Stride\+Matrix\+Const\+Iterator}$<$\+\_\+element\+Type, \+\_\+col\+Stride, \+\_\+cols, \+\_\+row\+Stride$>$ {\bf vct\+Fixed\+Size\+Matrix\+Traits}$<$ \+\_\+element\+Type, \+\_\+rows, \+\_\+cols, \+\_\+row\+Stride, \+\_\+col\+Stride $>$\+::{\bf const\+\_\+iterator}}\label{classvct_fixed_size_matrix_traits_a8f7178fb03f45772c705fba16e08065d}
+Const iterator, follows the S\+T\+L naming convention. \hypertarget{classvct_fixed_size_matrix_traits_a362cff0931f811552609307e80af3eab}{}\index{vct\+Fixed\+Size\+Matrix\+Traits@{vct\+Fixed\+Size\+Matrix\+Traits}!const\+\_\+reverse\+\_\+iterator@{const\+\_\+reverse\+\_\+iterator}}
+\index{const\+\_\+reverse\+\_\+iterator@{const\+\_\+reverse\+\_\+iterator}!vct\+Fixed\+Size\+Matrix\+Traits@{vct\+Fixed\+Size\+Matrix\+Traits}}
+\subsubsection[{const\+\_\+reverse\+\_\+iterator}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type , vct\+::size\+\_\+type \+\_\+rows, vct\+::size\+\_\+type \+\_\+cols, vct\+::stride\+\_\+type \+\_\+row\+Stride, vct\+::stride\+\_\+type \+\_\+col\+Stride$>$ typedef {\bf vct\+Fixed\+Stride\+Matrix\+Const\+Iterator}$<$\+\_\+element\+Type, -\/\+\_\+col\+Stride, \+\_\+cols, -\/\+\_\+row\+Stride$>$ {\bf vct\+Fixed\+Size\+Matrix\+Traits}$<$ \+\_\+element\+Type, \+\_\+rows, \+\_\+cols, \+\_\+row\+Stride, \+\_\+col\+Stride $>$\+::{\bf const\+\_\+reverse\+\_\+iterator}}\label{classvct_fixed_size_matrix_traits_a362cff0931f811552609307e80af3eab}
+Const reverse iterator, follows the S\+T\+L naming convention. \hypertarget{classvct_fixed_size_matrix_traits_a677065481ada218e2559cdec92e97fd8}{}\index{vct\+Fixed\+Size\+Matrix\+Traits@{vct\+Fixed\+Size\+Matrix\+Traits}!iterator@{iterator}}
+\index{iterator@{iterator}!vct\+Fixed\+Size\+Matrix\+Traits@{vct\+Fixed\+Size\+Matrix\+Traits}}
+\subsubsection[{iterator}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type , vct\+::size\+\_\+type \+\_\+rows, vct\+::size\+\_\+type \+\_\+cols, vct\+::stride\+\_\+type \+\_\+row\+Stride, vct\+::stride\+\_\+type \+\_\+col\+Stride$>$ typedef {\bf vct\+Fixed\+Stride\+Matrix\+Iterator}$<$\+\_\+element\+Type, \+\_\+col\+Stride, \+\_\+cols, \+\_\+row\+Stride$>$ {\bf vct\+Fixed\+Size\+Matrix\+Traits}$<$ \+\_\+element\+Type, \+\_\+rows, \+\_\+cols, \+\_\+row\+Stride, \+\_\+col\+Stride $>$\+::{\bf iterator}}\label{classvct_fixed_size_matrix_traits_a677065481ada218e2559cdec92e97fd8}
+Iterator, follows the S\+T\+L naming convention. \hypertarget{classvct_fixed_size_matrix_traits_aa132098455575ae9bc4962c994273baa}{}\index{vct\+Fixed\+Size\+Matrix\+Traits@{vct\+Fixed\+Size\+Matrix\+Traits}!reverse\+\_\+iterator@{reverse\+\_\+iterator}}
+\index{reverse\+\_\+iterator@{reverse\+\_\+iterator}!vct\+Fixed\+Size\+Matrix\+Traits@{vct\+Fixed\+Size\+Matrix\+Traits}}
+\subsubsection[{reverse\+\_\+iterator}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type , vct\+::size\+\_\+type \+\_\+rows, vct\+::size\+\_\+type \+\_\+cols, vct\+::stride\+\_\+type \+\_\+row\+Stride, vct\+::stride\+\_\+type \+\_\+col\+Stride$>$ typedef {\bf vct\+Fixed\+Stride\+Matrix\+Iterator}$<$\+\_\+element\+Type, -\/\+\_\+col\+Stride, \+\_\+cols, -\/\+\_\+row\+Stride$>$ {\bf vct\+Fixed\+Size\+Matrix\+Traits}$<$ \+\_\+element\+Type, \+\_\+rows, \+\_\+cols, \+\_\+row\+Stride, \+\_\+col\+Stride $>$\+::{\bf reverse\+\_\+iterator}}\label{classvct_fixed_size_matrix_traits_aa132098455575ae9bc4962c994273baa}
+Reverse iterator, follows the S\+T\+L naming convention. 
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classvct_fixed_size_matrix_traits_a99506cd46619256b0ad9c09afc88cfe4}{}\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type , vct\+::size\+\_\+type \+\_\+rows, vct\+::size\+\_\+type \+\_\+cols, vct\+::stride\+\_\+type \+\_\+row\+Stride, vct\+::stride\+\_\+type \+\_\+col\+Stride$>$ anonymous enum}\label{classvct_fixed_size_matrix_traits_a99506cd46619256b0ad9c09afc88cfe4}
+Define the dimensions of the matrix\+: number of rows, number of columns, and the total length of the matrix, which is their product \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{R\+O\+W\+S@{R\+O\+W\+S}!vct\+Fixed\+Size\+Matrix\+Traits@{vct\+Fixed\+Size\+Matrix\+Traits}}\index{vct\+Fixed\+Size\+Matrix\+Traits@{vct\+Fixed\+Size\+Matrix\+Traits}!R\+O\+W\+S@{R\+O\+W\+S}}\item[{\em 
+\hypertarget{classvct_fixed_size_matrix_traits_a99506cd46619256b0ad9c09afc88cfe4a4111cbfc8e82c98dfb13e63b65fc606b}{}R\+O\+W\+S\label{classvct_fixed_size_matrix_traits_a99506cd46619256b0ad9c09afc88cfe4a4111cbfc8e82c98dfb13e63b65fc606b}
+}]\index{C\+O\+L\+S@{C\+O\+L\+S}!vct\+Fixed\+Size\+Matrix\+Traits@{vct\+Fixed\+Size\+Matrix\+Traits}}\index{vct\+Fixed\+Size\+Matrix\+Traits@{vct\+Fixed\+Size\+Matrix\+Traits}!C\+O\+L\+S@{C\+O\+L\+S}}\item[{\em 
+\hypertarget{classvct_fixed_size_matrix_traits_a99506cd46619256b0ad9c09afc88cfe4af33df4089c668a48b5d59ac86af3138e}{}C\+O\+L\+S\label{classvct_fixed_size_matrix_traits_a99506cd46619256b0ad9c09afc88cfe4af33df4089c668a48b5d59ac86af3138e}
+}]\index{L\+E\+N\+G\+T\+H@{L\+E\+N\+G\+T\+H}!vct\+Fixed\+Size\+Matrix\+Traits@{vct\+Fixed\+Size\+Matrix\+Traits}}\index{vct\+Fixed\+Size\+Matrix\+Traits@{vct\+Fixed\+Size\+Matrix\+Traits}!L\+E\+N\+G\+T\+H@{L\+E\+N\+G\+T\+H}}\item[{\em 
+\hypertarget{classvct_fixed_size_matrix_traits_a99506cd46619256b0ad9c09afc88cfe4a6b0f4f5000cd410b68ea5903cd33ec2b}{}L\+E\+N\+G\+T\+H\label{classvct_fixed_size_matrix_traits_a99506cd46619256b0ad9c09afc88cfe4a6b0f4f5000cd410b68ea5903cd33ec2b}
+}]\end{description}
+\end{Desc}
+\hypertarget{classvct_fixed_size_matrix_traits_ac32aced1f46e5b302415ea1f2494dd40}{}\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type , vct\+::size\+\_\+type \+\_\+rows, vct\+::size\+\_\+type \+\_\+cols, vct\+::stride\+\_\+type \+\_\+row\+Stride, vct\+::stride\+\_\+type \+\_\+col\+Stride$>$ anonymous enum}\label{classvct_fixed_size_matrix_traits_ac32aced1f46e5b302415ea1f2494dd40}
+Declared to enable inference of the stride of the container. \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{R\+O\+W\+S\+T\+R\+I\+D\+E@{R\+O\+W\+S\+T\+R\+I\+D\+E}!vct\+Fixed\+Size\+Matrix\+Traits@{vct\+Fixed\+Size\+Matrix\+Traits}}\index{vct\+Fixed\+Size\+Matrix\+Traits@{vct\+Fixed\+Size\+Matrix\+Traits}!R\+O\+W\+S\+T\+R\+I\+D\+E@{R\+O\+W\+S\+T\+R\+I\+D\+E}}\item[{\em 
+\hypertarget{classvct_fixed_size_matrix_traits_ac32aced1f46e5b302415ea1f2494dd40aef62e1a69a3a5647a2ade9f04f005f72}{}R\+O\+W\+S\+T\+R\+I\+D\+E\label{classvct_fixed_size_matrix_traits_ac32aced1f46e5b302415ea1f2494dd40aef62e1a69a3a5647a2ade9f04f005f72}
+}]\index{C\+O\+L\+S\+T\+R\+I\+D\+E@{C\+O\+L\+S\+T\+R\+I\+D\+E}!vct\+Fixed\+Size\+Matrix\+Traits@{vct\+Fixed\+Size\+Matrix\+Traits}}\index{vct\+Fixed\+Size\+Matrix\+Traits@{vct\+Fixed\+Size\+Matrix\+Traits}!C\+O\+L\+S\+T\+R\+I\+D\+E@{C\+O\+L\+S\+T\+R\+I\+D\+E}}\item[{\em 
+\hypertarget{classvct_fixed_size_matrix_traits_ac32aced1f46e5b302415ea1f2494dd40ad831203257041b2517422372fd4faea2}{}C\+O\+L\+S\+T\+R\+I\+D\+E\label{classvct_fixed_size_matrix_traits_ac32aced1f46e5b302415ea1f2494dd40ad831203257041b2517422372fd4faea2}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classvct_fixed_size_matrix_traits_a9ac65f0b7d8723c8e13b131e6941096b}{}\index{vct\+Fixed\+Size\+Matrix\+Traits@{vct\+Fixed\+Size\+Matrix\+Traits}!V\+C\+T\+\_\+\+C\+O\+N\+T\+A\+I\+N\+E\+R\+\_\+\+T\+R\+A\+I\+T\+S\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+S@{V\+C\+T\+\_\+\+C\+O\+N\+T\+A\+I\+N\+E\+R\+\_\+\+T\+R\+A\+I\+T\+S\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+S}}
+\index{V\+C\+T\+\_\+\+C\+O\+N\+T\+A\+I\+N\+E\+R\+\_\+\+T\+R\+A\+I\+T\+S\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+S@{V\+C\+T\+\_\+\+C\+O\+N\+T\+A\+I\+N\+E\+R\+\_\+\+T\+R\+A\+I\+T\+S\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+S}!vct\+Fixed\+Size\+Matrix\+Traits@{vct\+Fixed\+Size\+Matrix\+Traits}}
+\subsubsection[{V\+C\+T\+\_\+\+C\+O\+N\+T\+A\+I\+N\+E\+R\+\_\+\+T\+R\+A\+I\+T\+S\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+S}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type , vct\+::size\+\_\+type \+\_\+rows, vct\+::size\+\_\+type \+\_\+cols, vct\+::stride\+\_\+type \+\_\+row\+Stride, vct\+::stride\+\_\+type \+\_\+col\+Stride$>$ {\bf vct\+Fixed\+Size\+Matrix\+Traits}$<$ \+\_\+element\+Type, \+\_\+rows, \+\_\+cols, \+\_\+row\+Stride, \+\_\+col\+Stride $>$\+::V\+C\+T\+\_\+\+C\+O\+N\+T\+A\+I\+N\+E\+R\+\_\+\+T\+R\+A\+I\+T\+S\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+S (
+\begin{DoxyParamCaption}
+\item[{\+\_\+element\+Type}]{}
+\end{DoxyParamCaption}
+)}\label{classvct_fixed_size_matrix_traits_a9ac65f0b7d8723c8e13b131e6941096b}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Vector/\hyperlink{vct_fixed_size_matrix_traits_8h}{vct\+Fixed\+Size\+Matrix\+Traits.\+h}\end{DoxyCompactItemize}

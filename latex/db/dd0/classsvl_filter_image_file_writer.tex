@@ -1,0 +1,148 @@
+\hypertarget{classsvl_filter_image_file_writer}{}\section{svl\+Filter\+Image\+File\+Writer Class Reference}
+\label{classsvl_filter_image_file_writer}\index{svl\+Filter\+Image\+File\+Writer@{svl\+Filter\+Image\+File\+Writer}}
+
+
+{\ttfamily \#include $<$svl\+Filter\+Image\+File\+Writer.\+h$>$}
+
+Inheritance diagram for svl\+Filter\+Image\+File\+Writer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{db/dd0/classsvl_filter_image_file_writer}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsvl_filter_image_file_writer_ad8e4e4440cf4fe0ea14649495fc4e220}{svl\+Filter\+Image\+File\+Writer} ()
+\item 
+virtual \hyperlink{classsvl_filter_image_file_writer_a06cad16c566fa7b00c0669dbc11bb8d9}{$\sim$svl\+Filter\+Image\+File\+Writer} ()
+\item 
+int \hyperlink{classsvl_filter_image_file_writer_a40aaf6cacaf9bf36bbf32d4cd2f3e0be}{Disable} (bool disable, int videoch=\hyperlink{svl_definitions_8h_ab9fec7615f19c8df2919eebcab0b187f}{S\+V\+L\+\_\+\+L\+E\+F\+T})
+\item 
+int \hyperlink{classsvl_filter_image_file_writer_a6ec1a9ddd849c3d71469bb86a666acd5}{Set\+File\+Path} (const std\+::string \&filepathprefix, const std\+::string \&extension, int videoch=\hyperlink{svl_definitions_8h_ab9fec7615f19c8df2919eebcab0b187f}{S\+V\+L\+\_\+\+L\+E\+F\+T})
+\item 
+int \hyperlink{classsvl_filter_image_file_writer_a2674429141ffebd271507dc77603ef87}{Set\+Compression} (int compression, int videoch=\hyperlink{svl_definitions_8h_ab9fec7615f19c8df2919eebcab0b187f}{S\+V\+L\+\_\+\+L\+E\+F\+T})
+\item 
+void \hyperlink{classsvl_filter_image_file_writer_a8c59ebfc5b6c2a2a228cba756ff3dee7}{Enable\+Timestamps} (bool enable=true)
+\item 
+void \hyperlink{classsvl_filter_image_file_writer_ae16a97119e0b0036453324fcb816a031}{Pause} ()
+\item 
+void \hyperlink{classsvl_filter_image_file_writer_a5eee7896d9b546a2714cb3fcff46e188}{Record} (int frames=-\/1)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual int \hyperlink{classsvl_filter_image_file_writer_a7c4e14d04f9be074a2deafef8838f0ed}{Initialize} (\hyperlink{classsvl_sample}{svl\+Sample} $\ast$sync\+Input, \hyperlink{classsvl_sample}{svl\+Sample} $\ast$\&sync\+Output)
+\item 
+virtual int \hyperlink{classsvl_filter_image_file_writer_a222f6482d1f5d52b0dbe2d28dc6e1e1e}{Process} (\hyperlink{structsvl_proc_info}{svl\+Proc\+Info} $\ast$proc\+Info, \hyperlink{classsvl_sample}{svl\+Sample} $\ast$sync\+Input, \hyperlink{classsvl_sample}{svl\+Sample} $\ast$\&sync\+Output)
+\item 
+virtual int \hyperlink{classsvl_filter_image_file_writer_ae50dc53654ccdc0f4de18b574a0068c6}{Release} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classsvl_filter_image_file_writer_ad8e4e4440cf4fe0ea14649495fc4e220}{}\index{svl\+Filter\+Image\+File\+Writer@{svl\+Filter\+Image\+File\+Writer}!svl\+Filter\+Image\+File\+Writer@{svl\+Filter\+Image\+File\+Writer}}
+\index{svl\+Filter\+Image\+File\+Writer@{svl\+Filter\+Image\+File\+Writer}!svl\+Filter\+Image\+File\+Writer@{svl\+Filter\+Image\+File\+Writer}}
+\subsubsection[{svl\+Filter\+Image\+File\+Writer}]{\setlength{\rightskip}{0pt plus 5cm}svl\+Filter\+Image\+File\+Writer\+::svl\+Filter\+Image\+File\+Writer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classsvl_filter_image_file_writer_ad8e4e4440cf4fe0ea14649495fc4e220}
+\hypertarget{classsvl_filter_image_file_writer_a06cad16c566fa7b00c0669dbc11bb8d9}{}\index{svl\+Filter\+Image\+File\+Writer@{svl\+Filter\+Image\+File\+Writer}!````~svl\+Filter\+Image\+File\+Writer@{$\sim$svl\+Filter\+Image\+File\+Writer}}
+\index{````~svl\+Filter\+Image\+File\+Writer@{$\sim$svl\+Filter\+Image\+File\+Writer}!svl\+Filter\+Image\+File\+Writer@{svl\+Filter\+Image\+File\+Writer}}
+\subsubsection[{$\sim$svl\+Filter\+Image\+File\+Writer}]{\setlength{\rightskip}{0pt plus 5cm}virtual svl\+Filter\+Image\+File\+Writer\+::$\sim$svl\+Filter\+Image\+File\+Writer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classsvl_filter_image_file_writer_a06cad16c566fa7b00c0669dbc11bb8d9}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classsvl_filter_image_file_writer_a40aaf6cacaf9bf36bbf32d4cd2f3e0be}{}\index{svl\+Filter\+Image\+File\+Writer@{svl\+Filter\+Image\+File\+Writer}!Disable@{Disable}}
+\index{Disable@{Disable}!svl\+Filter\+Image\+File\+Writer@{svl\+Filter\+Image\+File\+Writer}}
+\subsubsection[{Disable}]{\setlength{\rightskip}{0pt plus 5cm}int svl\+Filter\+Image\+File\+Writer\+::\+Disable (
+\begin{DoxyParamCaption}
+\item[{bool}]{disable, }
+\item[{int}]{videoch = {\ttfamily {\bf S\+V\+L\+\_\+\+L\+E\+F\+T}}}
+\end{DoxyParamCaption}
+)}\label{classsvl_filter_image_file_writer_a40aaf6cacaf9bf36bbf32d4cd2f3e0be}
+\hypertarget{classsvl_filter_image_file_writer_a8c59ebfc5b6c2a2a228cba756ff3dee7}{}\index{svl\+Filter\+Image\+File\+Writer@{svl\+Filter\+Image\+File\+Writer}!Enable\+Timestamps@{Enable\+Timestamps}}
+\index{Enable\+Timestamps@{Enable\+Timestamps}!svl\+Filter\+Image\+File\+Writer@{svl\+Filter\+Image\+File\+Writer}}
+\subsubsection[{Enable\+Timestamps}]{\setlength{\rightskip}{0pt plus 5cm}void svl\+Filter\+Image\+File\+Writer\+::\+Enable\+Timestamps (
+\begin{DoxyParamCaption}
+\item[{bool}]{enable = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}\label{classsvl_filter_image_file_writer_a8c59ebfc5b6c2a2a228cba756ff3dee7}
+\hypertarget{classsvl_filter_image_file_writer_a7c4e14d04f9be074a2deafef8838f0ed}{}\index{svl\+Filter\+Image\+File\+Writer@{svl\+Filter\+Image\+File\+Writer}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!svl\+Filter\+Image\+File\+Writer@{svl\+Filter\+Image\+File\+Writer}}
+\subsubsection[{Initialize}]{\setlength{\rightskip}{0pt plus 5cm}virtual int svl\+Filter\+Image\+File\+Writer\+::\+Initialize (
+\begin{DoxyParamCaption}
+\item[{{\bf svl\+Sample} $\ast$}]{sync\+Input, }
+\item[{{\bf svl\+Sample} $\ast$\&}]{sync\+Output}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classsvl_filter_image_file_writer_a7c4e14d04f9be074a2deafef8838f0ed}
+
+
+Implements \hyperlink{classsvl_filter_base_ac8eddcd9336c2b381facc8fb372e3bfb}{svl\+Filter\+Base}.
+
+\hypertarget{classsvl_filter_image_file_writer_ae16a97119e0b0036453324fcb816a031}{}\index{svl\+Filter\+Image\+File\+Writer@{svl\+Filter\+Image\+File\+Writer}!Pause@{Pause}}
+\index{Pause@{Pause}!svl\+Filter\+Image\+File\+Writer@{svl\+Filter\+Image\+File\+Writer}}
+\subsubsection[{Pause}]{\setlength{\rightskip}{0pt plus 5cm}void svl\+Filter\+Image\+File\+Writer\+::\+Pause (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classsvl_filter_image_file_writer_ae16a97119e0b0036453324fcb816a031}
+\hypertarget{classsvl_filter_image_file_writer_a222f6482d1f5d52b0dbe2d28dc6e1e1e}{}\index{svl\+Filter\+Image\+File\+Writer@{svl\+Filter\+Image\+File\+Writer}!Process@{Process}}
+\index{Process@{Process}!svl\+Filter\+Image\+File\+Writer@{svl\+Filter\+Image\+File\+Writer}}
+\subsubsection[{Process}]{\setlength{\rightskip}{0pt plus 5cm}virtual int svl\+Filter\+Image\+File\+Writer\+::\+Process (
+\begin{DoxyParamCaption}
+\item[{{\bf svl\+Proc\+Info} $\ast$}]{proc\+Info, }
+\item[{{\bf svl\+Sample} $\ast$}]{sync\+Input, }
+\item[{{\bf svl\+Sample} $\ast$\&}]{sync\+Output}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classsvl_filter_image_file_writer_a222f6482d1f5d52b0dbe2d28dc6e1e1e}
+
+
+Implements \hyperlink{classsvl_filter_base_aaff77d711088384d00e717fb4ec88aab}{svl\+Filter\+Base}.
+
+\hypertarget{classsvl_filter_image_file_writer_a5eee7896d9b546a2714cb3fcff46e188}{}\index{svl\+Filter\+Image\+File\+Writer@{svl\+Filter\+Image\+File\+Writer}!Record@{Record}}
+\index{Record@{Record}!svl\+Filter\+Image\+File\+Writer@{svl\+Filter\+Image\+File\+Writer}}
+\subsubsection[{Record}]{\setlength{\rightskip}{0pt plus 5cm}void svl\+Filter\+Image\+File\+Writer\+::\+Record (
+\begin{DoxyParamCaption}
+\item[{int}]{frames = {\ttfamily -\/1}}
+\end{DoxyParamCaption}
+)}\label{classsvl_filter_image_file_writer_a5eee7896d9b546a2714cb3fcff46e188}
+\hypertarget{classsvl_filter_image_file_writer_ae50dc53654ccdc0f4de18b574a0068c6}{}\index{svl\+Filter\+Image\+File\+Writer@{svl\+Filter\+Image\+File\+Writer}!Release@{Release}}
+\index{Release@{Release}!svl\+Filter\+Image\+File\+Writer@{svl\+Filter\+Image\+File\+Writer}}
+\subsubsection[{Release}]{\setlength{\rightskip}{0pt plus 5cm}virtual int svl\+Filter\+Image\+File\+Writer\+::\+Release (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classsvl_filter_image_file_writer_ae50dc53654ccdc0f4de18b574a0068c6}
+
+
+Reimplemented from \hyperlink{classsvl_filter_base_ab689b852e2cee497fcd0ca6708105e17}{svl\+Filter\+Base}.
+
+\hypertarget{classsvl_filter_image_file_writer_a2674429141ffebd271507dc77603ef87}{}\index{svl\+Filter\+Image\+File\+Writer@{svl\+Filter\+Image\+File\+Writer}!Set\+Compression@{Set\+Compression}}
+\index{Set\+Compression@{Set\+Compression}!svl\+Filter\+Image\+File\+Writer@{svl\+Filter\+Image\+File\+Writer}}
+\subsubsection[{Set\+Compression}]{\setlength{\rightskip}{0pt plus 5cm}int svl\+Filter\+Image\+File\+Writer\+::\+Set\+Compression (
+\begin{DoxyParamCaption}
+\item[{int}]{compression, }
+\item[{int}]{videoch = {\ttfamily {\bf S\+V\+L\+\_\+\+L\+E\+F\+T}}}
+\end{DoxyParamCaption}
+)}\label{classsvl_filter_image_file_writer_a2674429141ffebd271507dc77603ef87}
+\hypertarget{classsvl_filter_image_file_writer_a6ec1a9ddd849c3d71469bb86a666acd5}{}\index{svl\+Filter\+Image\+File\+Writer@{svl\+Filter\+Image\+File\+Writer}!Set\+File\+Path@{Set\+File\+Path}}
+\index{Set\+File\+Path@{Set\+File\+Path}!svl\+Filter\+Image\+File\+Writer@{svl\+Filter\+Image\+File\+Writer}}
+\subsubsection[{Set\+File\+Path}]{\setlength{\rightskip}{0pt plus 5cm}int svl\+Filter\+Image\+File\+Writer\+::\+Set\+File\+Path (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{filepathprefix, }
+\item[{const std\+::string \&}]{extension, }
+\item[{int}]{videoch = {\ttfamily {\bf S\+V\+L\+\_\+\+L\+E\+F\+T}}}
+\end{DoxyParamCaption}
+)}\label{classsvl_filter_image_file_writer_a6ec1a9ddd849c3d71469bb86a666acd5}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Stereo\+Vision/\hyperlink{svl_filter_image_file_writer_8h}{svl\+Filter\+Image\+File\+Writer.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,141 @@
+\hypertarget{classmts_callable_void_return_method}{}\section{mts\+Callable\+Void\+Return\+Method$<$ \+\_\+class\+Type, \+\_\+result\+Type $>$ Class Template Reference}
+\label{classmts_callable_void_return_method}\index{mts\+Callable\+Void\+Return\+Method$<$ \+\_\+class\+Type, \+\_\+result\+Type $>$@{mts\+Callable\+Void\+Return\+Method$<$ \+\_\+class\+Type, \+\_\+result\+Type $>$}}
+
+
+{\ttfamily \#include $<$mts\+Callable\+Void\+Return\+Method.\+h$>$}
+
+Inheritance diagram for mts\+Callable\+Void\+Return\+Method$<$ \+\_\+class\+Type, \+\_\+result\+Type $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{d1/d1f/classmts_callable_void_return_method}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classmts_callable_void_return_method_1_1_conditional_cast}{Conditional\+Cast}
+\item 
+class \hyperlink{classmts_callable_void_return_method_1_1_conditional_cast_3_01true_00_01__dummy_01_4}{Conditional\+Cast$<$ true, \+\_\+dummy $>$}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classmts_callable_void_return_base}{mts\+Callable\+Void\+Return\+Base} \hyperlink{classmts_callable_void_return_method_a01907ccc09041bebecb2085a84f74bb1}{Base\+Type}
+\item 
+typedef \+\_\+result\+Type \hyperlink{classmts_callable_void_return_method_af01afd5ee66910d12e6fc9703a976260}{Result\+Type}
+\item 
+typedef \+\_\+class\+Type \hyperlink{classmts_callable_void_return_method_a2bea77e5dd239ec2a1d3558dd3ca1776}{Class\+Type}
+\item 
+typedef \hyperlink{classmts_callable_void_return_method}{mts\+Callable\+Void\+Return\+Method}$<$ \hyperlink{classmts_callable_void_return_method_a2bea77e5dd239ec2a1d3558dd3ca1776}{Class\+Type}, \hyperlink{classmts_callable_void_return_method_af01afd5ee66910d12e6fc9703a976260}{Result\+Type} $>$ \hyperlink{classmts_callable_void_return_method_a03bdd60bba7b2b001dd94270d8a27a5f}{This\+Type}
+\item 
+typedef void(\+\_\+class\+Type\+::$\ast$ \hyperlink{classmts_callable_void_return_method_a8fcdd120f008efea73b3d51cbb34f773}{Action\+Type}) (\hyperlink{classmts_callable_void_return_method_af01afd5ee66910d12e6fc9703a976260}{Result\+Type} \&result)
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmts_callable_void_return_method_a98d4891da35626a8e9f924c98c75fa7b}{mts\+Callable\+Void\+Return\+Method} (void)
+\item 
+\hyperlink{classmts_callable_void_return_method_a2cfed63557476b9bdf5995654ed903b8}{mts\+Callable\+Void\+Return\+Method} (\hyperlink{classmts_callable_void_return_method_a8fcdd120f008efea73b3d51cbb34f773}{Action\+Type} action, \hyperlink{classmts_callable_void_return_method_a2bea77e5dd239ec2a1d3558dd3ca1776}{Class\+Type} $\ast$class\+Instantiation)
+\item 
+virtual \hyperlink{classmts_callable_void_return_method_a5ce2600e928bc28ec4c973636307860f}{$\sim$mts\+Callable\+Void\+Return\+Method} ()
+\item 
+mts\+Execution\+Result \hyperlink{classmts_callable_void_return_method_a815dd28e94497e91cb0ed1e891a35dad}{Execute} (\hyperlink{classmts_generic_object}{mts\+Generic\+Object} \&result)
+\item 
+void \hyperlink{classmts_callable_void_return_method_a2ca736ce45432c5cd746227795253ea3}{To\+Stream} (std\+::ostream \&output\+Stream) const 
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmts_callable_void_return_method_a8fcdd120f008efea73b3d51cbb34f773}{Action\+Type} \hyperlink{classmts_callable_void_return_method_ae6e1e00e4a13c6e6a6047323adf7707d}{Action}
+\item 
+\hyperlink{classmts_callable_void_return_method_a2bea77e5dd239ec2a1d3558dd3ca1776}{Class\+Type} $\ast$ \hyperlink{classmts_callable_void_return_method_a38ecd87e4473a2f42fde5567cd637937}{Class\+Instantiation}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classmts_callable_void_return_method_a8fcdd120f008efea73b3d51cbb34f773}{}\index{mts\+Callable\+Void\+Return\+Method@{mts\+Callable\+Void\+Return\+Method}!Action\+Type@{Action\+Type}}
+\index{Action\+Type@{Action\+Type}!mts\+Callable\+Void\+Return\+Method@{mts\+Callable\+Void\+Return\+Method}}
+\subsubsection[{Action\+Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+class\+Type , class \+\_\+result\+Type $>$ typedef void(\+\_\+class\+Type\+::$\ast$ {\bf mts\+Callable\+Void\+Return\+Method}$<$ \+\_\+class\+Type, \+\_\+result\+Type $>$\+::Action\+Type) ({\bf Result\+Type} \&result)}\label{classmts_callable_void_return_method_a8fcdd120f008efea73b3d51cbb34f773}
+Typedef for pointer to member function (method) of a specific class (\+\_\+class\+Type). \hypertarget{classmts_callable_void_return_method_a01907ccc09041bebecb2085a84f74bb1}{}\index{mts\+Callable\+Void\+Return\+Method@{mts\+Callable\+Void\+Return\+Method}!Base\+Type@{Base\+Type}}
+\index{Base\+Type@{Base\+Type}!mts\+Callable\+Void\+Return\+Method@{mts\+Callable\+Void\+Return\+Method}}
+\subsubsection[{Base\+Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+class\+Type , class \+\_\+result\+Type $>$ typedef {\bf mts\+Callable\+Void\+Return\+Base} {\bf mts\+Callable\+Void\+Return\+Method}$<$ \+\_\+class\+Type, \+\_\+result\+Type $>$\+::{\bf Base\+Type}}\label{classmts_callable_void_return_method_a01907ccc09041bebecb2085a84f74bb1}
+\hypertarget{classmts_callable_void_return_method_a2bea77e5dd239ec2a1d3558dd3ca1776}{}\index{mts\+Callable\+Void\+Return\+Method@{mts\+Callable\+Void\+Return\+Method}!Class\+Type@{Class\+Type}}
+\index{Class\+Type@{Class\+Type}!mts\+Callable\+Void\+Return\+Method@{mts\+Callable\+Void\+Return\+Method}}
+\subsubsection[{Class\+Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+class\+Type , class \+\_\+result\+Type $>$ typedef \+\_\+class\+Type {\bf mts\+Callable\+Void\+Return\+Method}$<$ \+\_\+class\+Type, \+\_\+result\+Type $>$\+::{\bf Class\+Type}}\label{classmts_callable_void_return_method_a2bea77e5dd239ec2a1d3558dd3ca1776}
+Typedef for the specific interface. \hypertarget{classmts_callable_void_return_method_af01afd5ee66910d12e6fc9703a976260}{}\index{mts\+Callable\+Void\+Return\+Method@{mts\+Callable\+Void\+Return\+Method}!Result\+Type@{Result\+Type}}
+\index{Result\+Type@{Result\+Type}!mts\+Callable\+Void\+Return\+Method@{mts\+Callable\+Void\+Return\+Method}}
+\subsubsection[{Result\+Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+class\+Type , class \+\_\+result\+Type $>$ typedef \+\_\+result\+Type {\bf mts\+Callable\+Void\+Return\+Method}$<$ \+\_\+class\+Type, \+\_\+result\+Type $>$\+::{\bf Result\+Type}}\label{classmts_callable_void_return_method_af01afd5ee66910d12e6fc9703a976260}
+\hypertarget{classmts_callable_void_return_method_a03bdd60bba7b2b001dd94270d8a27a5f}{}\index{mts\+Callable\+Void\+Return\+Method@{mts\+Callable\+Void\+Return\+Method}!This\+Type@{This\+Type}}
+\index{This\+Type@{This\+Type}!mts\+Callable\+Void\+Return\+Method@{mts\+Callable\+Void\+Return\+Method}}
+\subsubsection[{This\+Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+class\+Type , class \+\_\+result\+Type $>$ typedef {\bf mts\+Callable\+Void\+Return\+Method}$<${\bf Class\+Type}, {\bf Result\+Type}$>$ {\bf mts\+Callable\+Void\+Return\+Method}$<$ \+\_\+class\+Type, \+\_\+result\+Type $>$\+::{\bf This\+Type}}\label{classmts_callable_void_return_method_a03bdd60bba7b2b001dd94270d8a27a5f}
+This type. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmts_callable_void_return_method_a98d4891da35626a8e9f924c98c75fa7b}{}\index{mts\+Callable\+Void\+Return\+Method@{mts\+Callable\+Void\+Return\+Method}!mts\+Callable\+Void\+Return\+Method@{mts\+Callable\+Void\+Return\+Method}}
+\index{mts\+Callable\+Void\+Return\+Method@{mts\+Callable\+Void\+Return\+Method}!mts\+Callable\+Void\+Return\+Method@{mts\+Callable\+Void\+Return\+Method}}
+\subsubsection[{mts\+Callable\+Void\+Return\+Method}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+class\+Type , class \+\_\+result\+Type $>$ {\bf mts\+Callable\+Void\+Return\+Method}$<$ \+\_\+class\+Type, \+\_\+result\+Type $>$\+::{\bf mts\+Callable\+Void\+Return\+Method} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_callable_void_return_method_a98d4891da35626a8e9f924c98c75fa7b}
+The constructor. Does nothing. \hypertarget{classmts_callable_void_return_method_a2cfed63557476b9bdf5995654ed903b8}{}\index{mts\+Callable\+Void\+Return\+Method@{mts\+Callable\+Void\+Return\+Method}!mts\+Callable\+Void\+Return\+Method@{mts\+Callable\+Void\+Return\+Method}}
+\index{mts\+Callable\+Void\+Return\+Method@{mts\+Callable\+Void\+Return\+Method}!mts\+Callable\+Void\+Return\+Method@{mts\+Callable\+Void\+Return\+Method}}
+\subsubsection[{mts\+Callable\+Void\+Return\+Method}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+class\+Type , class \+\_\+result\+Type $>$ {\bf mts\+Callable\+Void\+Return\+Method}$<$ \+\_\+class\+Type, \+\_\+result\+Type $>$\+::{\bf mts\+Callable\+Void\+Return\+Method} (
+\begin{DoxyParamCaption}
+\item[{{\bf Action\+Type}}]{action, }
+\item[{{\bf Class\+Type} $\ast$}]{class\+Instantiation}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_callable_void_return_method_a2cfed63557476b9bdf5995654ed903b8}
+The constructor. 
+\begin{DoxyParams}{Parameters}
+{\em action} & Pointer to the member function that is to be called by the invoker of the command \\
+\hline
+{\em class\+Instantiation} & Pointer to the receiver of the command \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmts_callable_void_return_method_a5ce2600e928bc28ec4c973636307860f}{}\index{mts\+Callable\+Void\+Return\+Method@{mts\+Callable\+Void\+Return\+Method}!````~mts\+Callable\+Void\+Return\+Method@{$\sim$mts\+Callable\+Void\+Return\+Method}}
+\index{````~mts\+Callable\+Void\+Return\+Method@{$\sim$mts\+Callable\+Void\+Return\+Method}!mts\+Callable\+Void\+Return\+Method@{mts\+Callable\+Void\+Return\+Method}}
+\subsubsection[{$\sim$mts\+Callable\+Void\+Return\+Method}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+class\+Type , class \+\_\+result\+Type $>$ virtual {\bf mts\+Callable\+Void\+Return\+Method}$<$ \+\_\+class\+Type, \+\_\+result\+Type $>$\+::$\sim${\bf mts\+Callable\+Void\+Return\+Method} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classmts_callable_void_return_method_a5ce2600e928bc28ec4c973636307860f}
+The destructor. Does nothing 
+
+\subsection{Member Function Documentation}
+\hypertarget{classmts_callable_void_return_method_a815dd28e94497e91cb0ed1e891a35dad}{}\index{mts\+Callable\+Void\+Return\+Method@{mts\+Callable\+Void\+Return\+Method}!Execute@{Execute}}
+\index{Execute@{Execute}!mts\+Callable\+Void\+Return\+Method@{mts\+Callable\+Void\+Return\+Method}}
+\subsubsection[{Execute}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+class\+Type , class \+\_\+result\+Type $>$ mts\+Execution\+Result {\bf mts\+Callable\+Void\+Return\+Method}$<$ \+\_\+class\+Type, \+\_\+result\+Type $>$\+::Execute (
+\begin{DoxyParamCaption}
+\item[{{\bf mts\+Generic\+Object} \&}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classmts_callable_void_return_method_a815dd28e94497e91cb0ed1e891a35dad}
+The execute method. Abstract method to be implemented by derived classes to run the actual operation on the receiver. 
+
+Implements \hyperlink{classmts_callable_void_return_base_a7f0fe84a7078bad40663aa86cd455fc2}{mts\+Callable\+Void\+Return\+Base}.
+
+\hypertarget{classmts_callable_void_return_method_a2ca736ce45432c5cd746227795253ea3}{}\index{mts\+Callable\+Void\+Return\+Method@{mts\+Callable\+Void\+Return\+Method}!To\+Stream@{To\+Stream}}
+\index{To\+Stream@{To\+Stream}!mts\+Callable\+Void\+Return\+Method@{mts\+Callable\+Void\+Return\+Method}}
+\subsubsection[{To\+Stream}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+class\+Type , class \+\_\+result\+Type $>$ void {\bf mts\+Callable\+Void\+Return\+Method}$<$ \+\_\+class\+Type, \+\_\+result\+Type $>$\+::To\+Stream (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{output\+Stream}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classmts_callable_void_return_method_a2ca736ce45432c5cd746227795253ea3}
+Human readable description 
+
+Implements \hyperlink{classmts_callable_void_return_base_ab5c0d1c688e1996c31260e95525f8f6d}{mts\+Callable\+Void\+Return\+Base}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classmts_callable_void_return_method_ae6e1e00e4a13c6e6a6047323adf7707d}{}\index{mts\+Callable\+Void\+Return\+Method@{mts\+Callable\+Void\+Return\+Method}!Action@{Action}}
+\index{Action@{Action}!mts\+Callable\+Void\+Return\+Method@{mts\+Callable\+Void\+Return\+Method}}
+\subsubsection[{Action}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+class\+Type , class \+\_\+result\+Type $>$ {\bf Action\+Type} {\bf mts\+Callable\+Void\+Return\+Method}$<$ \+\_\+class\+Type, \+\_\+result\+Type $>$\+::Action\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_callable_void_return_method_ae6e1e00e4a13c6e6a6047323adf7707d}
+The pointer to member function of the receiver class that is to be invoked for a particular instance of the command. \hypertarget{classmts_callable_void_return_method_a38ecd87e4473a2f42fde5567cd637937}{}\index{mts\+Callable\+Void\+Return\+Method@{mts\+Callable\+Void\+Return\+Method}!Class\+Instantiation@{Class\+Instantiation}}
+\index{Class\+Instantiation@{Class\+Instantiation}!mts\+Callable\+Void\+Return\+Method@{mts\+Callable\+Void\+Return\+Method}}
+\subsubsection[{Class\+Instantiation}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+class\+Type , class \+\_\+result\+Type $>$ {\bf Class\+Type}$\ast$ {\bf mts\+Callable\+Void\+Return\+Method}$<$ \+\_\+class\+Type, \+\_\+result\+Type $>$\+::Class\+Instantiation\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_callable_void_return_method_a38ecd87e4473a2f42fde5567cd637937}
+Stores the receiver object of the command. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Multi\+Task/\hyperlink{mts_callable_void_return_method_8h}{mts\+Callable\+Void\+Return\+Method.\+h}\end{DoxyCompactItemize}

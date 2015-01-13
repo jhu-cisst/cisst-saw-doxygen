@@ -1,0 +1,139 @@
+\hypertarget{classosa_o_s_g_pointer3_d}{}\section{osa\+O\+S\+G\+Pointer3\+D Class Reference}
+\label{classosa_o_s_g_pointer3_d}\index{osa\+O\+S\+G\+Pointer3\+D@{osa\+O\+S\+G\+Pointer3\+D}}
+
+
+{\ttfamily \#include $<$osa\+O\+S\+G\+Body\+U\+I.\+h$>$}
+
+Inheritance diagram for osa\+O\+S\+G\+Pointer3\+D\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{d4/dc4/classosa_o_s_g_pointer3_d}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classosa_o_s_g_pointer3_d_1_1_intersection_callback}{Intersection\+Callback}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classosa_o_s_g_pointer3_d_ab3ac4146d29dbee143442e45d5291ebb}{osa\+O\+S\+G\+Pointer3\+D} (\hyperlink{classosa_o_s_g_world}{osa\+O\+S\+G\+World} $\ast$\hyperlink{classosa_o_s_g_pointer3_d_a6576d36096a1c3a9127fbf9dbafee677}{world}, const \hyperlink{classvct_frame4x4}{vct\+Frame4x4}$<$ double $>$ \&Rt, const std\+::string \&name, double scale=1.\+0, double alpha=1.\+0)
+\item 
+void \hyperlink{classosa_o_s_g_pointer3_d_aa51e8dc14f22a449c93a78d873f6475f}{Check\+Intersection} ()
+\item 
+void \hyperlink{classosa_o_s_g_pointer3_d_a31f316426965bb26f8f60038ec3cec09}{Select} ()
+\item 
+void \hyperlink{classosa_o_s_g_pointer3_d_a5992e455b2cf10becf0c53c68d2675c6}{Release} ()
+\item 
+void \hyperlink{classosa_o_s_g_pointer3_d_ad4ae75b60655b5f3cfec87548a4a3648}{Set\+Velocity} (const \hyperlink{classvct_fixed_size_vector}{vct\+Fixed\+Size\+Vector}$<$ double, 3 $>$ \&v)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classosa_o_s_g_pointer3_d_a86a35fd43800ca80364a27ea13780013}{Build\+Polytope} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+osg\+::ref\+\_\+ptr$<$ osg\+::\+Geode $>$ \hyperlink{classosa_o_s_g_pointer3_d_af706c282ea0f7b14ae0b430a3b769510}{geode}
+\item 
+osg\+::ref\+\_\+ptr$<$ osg\+::\+Shape\+Drawable $>$ \hyperlink{classosa_o_s_g_pointer3_d_ab6c2c828a3e43d02bb12dac34b12cbbc}{drawable}
+\item 
+osg\+::ref\+\_\+ptr$<$ osg\+::\+Sphere $>$ \hyperlink{classosa_o_s_g_pointer3_d_a3f2f4ea0fac395d6b6a8cb20af610d9d}{sphere}
+\item 
+osg\+::ref\+\_\+ptr$<$ \hyperlink{classosa_o_s_g_pointer3_d_1_1_intersection_callback}{Intersection\+Callback} $>$ \hyperlink{classosa_o_s_g_pointer3_d_add1c2a935b2af684bf2cc3c180410a1c}{intersectioncallback}
+\item 
+osg\+::ref\+\_\+ptr$<$ \hyperlink{classosa_o_s_g_world}{osa\+O\+S\+G\+World} $>$ \hyperlink{classosa_o_s_g_pointer3_d_a6576d36096a1c3a9127fbf9dbafee677}{world}
+\item 
+\hyperlink{classvct_fixed_size_vector}{vct\+Fixed\+Size\+Vector}$<$ double, 3 $>$ \hyperlink{classosa_o_s_g_pointer3_d_a9ed8936280696f8f7bd78bb1d20e7d81}{velocity}
+\item 
+osg\+::\+Polytope \hyperlink{classosa_o_s_g_pointer3_d_a99d8f639a80c650298763ab6f28c711a}{polytope}
+\item 
+bool \hyperlink{classosa_o_s_g_pointer3_d_acd02af84dcccbf5bb89fda754600414d}{select}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classosa_o_s_g_pointer3_d_ab3ac4146d29dbee143442e45d5291ebb}{}\index{osa\+O\+S\+G\+Pointer3\+D@{osa\+O\+S\+G\+Pointer3\+D}!osa\+O\+S\+G\+Pointer3\+D@{osa\+O\+S\+G\+Pointer3\+D}}
+\index{osa\+O\+S\+G\+Pointer3\+D@{osa\+O\+S\+G\+Pointer3\+D}!osa\+O\+S\+G\+Pointer3\+D@{osa\+O\+S\+G\+Pointer3\+D}}
+\subsubsection[{osa\+O\+S\+G\+Pointer3\+D}]{\setlength{\rightskip}{0pt plus 5cm}osa\+O\+S\+G\+Pointer3\+D\+::osa\+O\+S\+G\+Pointer3\+D (
+\begin{DoxyParamCaption}
+\item[{{\bf osa\+O\+S\+G\+World} $\ast$}]{world, }
+\item[{const {\bf vct\+Frame4x4}$<$ double $>$ \&}]{Rt, }
+\item[{const std\+::string \&}]{name, }
+\item[{double}]{scale = {\ttfamily 1.0}, }
+\item[{double}]{alpha = {\ttfamily 1.0}}
+\end{DoxyParamCaption}
+)}\label{classosa_o_s_g_pointer3_d_ab3ac4146d29dbee143442e45d5291ebb}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classosa_o_s_g_pointer3_d_a86a35fd43800ca80364a27ea13780013}{}\index{osa\+O\+S\+G\+Pointer3\+D@{osa\+O\+S\+G\+Pointer3\+D}!Build\+Polytope@{Build\+Polytope}}
+\index{Build\+Polytope@{Build\+Polytope}!osa\+O\+S\+G\+Pointer3\+D@{osa\+O\+S\+G\+Pointer3\+D}}
+\subsubsection[{Build\+Polytope}]{\setlength{\rightskip}{0pt plus 5cm}void osa\+O\+S\+G\+Pointer3\+D\+::\+Build\+Polytope (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classosa_o_s_g_pointer3_d_a86a35fd43800ca80364a27ea13780013}
+\hypertarget{classosa_o_s_g_pointer3_d_aa51e8dc14f22a449c93a78d873f6475f}{}\index{osa\+O\+S\+G\+Pointer3\+D@{osa\+O\+S\+G\+Pointer3\+D}!Check\+Intersection@{Check\+Intersection}}
+\index{Check\+Intersection@{Check\+Intersection}!osa\+O\+S\+G\+Pointer3\+D@{osa\+O\+S\+G\+Pointer3\+D}}
+\subsubsection[{Check\+Intersection}]{\setlength{\rightskip}{0pt plus 5cm}void osa\+O\+S\+G\+Pointer3\+D\+::\+Check\+Intersection (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classosa_o_s_g_pointer3_d_aa51e8dc14f22a449c93a78d873f6475f}
+\hypertarget{classosa_o_s_g_pointer3_d_a5992e455b2cf10becf0c53c68d2675c6}{}\index{osa\+O\+S\+G\+Pointer3\+D@{osa\+O\+S\+G\+Pointer3\+D}!Release@{Release}}
+\index{Release@{Release}!osa\+O\+S\+G\+Pointer3\+D@{osa\+O\+S\+G\+Pointer3\+D}}
+\subsubsection[{Release}]{\setlength{\rightskip}{0pt plus 5cm}void osa\+O\+S\+G\+Pointer3\+D\+::\+Release (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classosa_o_s_g_pointer3_d_a5992e455b2cf10becf0c53c68d2675c6}
+\hypertarget{classosa_o_s_g_pointer3_d_a31f316426965bb26f8f60038ec3cec09}{}\index{osa\+O\+S\+G\+Pointer3\+D@{osa\+O\+S\+G\+Pointer3\+D}!Select@{Select}}
+\index{Select@{Select}!osa\+O\+S\+G\+Pointer3\+D@{osa\+O\+S\+G\+Pointer3\+D}}
+\subsubsection[{Select}]{\setlength{\rightskip}{0pt plus 5cm}void osa\+O\+S\+G\+Pointer3\+D\+::\+Select (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classosa_o_s_g_pointer3_d_a31f316426965bb26f8f60038ec3cec09}
+\hypertarget{classosa_o_s_g_pointer3_d_ad4ae75b60655b5f3cfec87548a4a3648}{}\index{osa\+O\+S\+G\+Pointer3\+D@{osa\+O\+S\+G\+Pointer3\+D}!Set\+Velocity@{Set\+Velocity}}
+\index{Set\+Velocity@{Set\+Velocity}!osa\+O\+S\+G\+Pointer3\+D@{osa\+O\+S\+G\+Pointer3\+D}}
+\subsubsection[{Set\+Velocity}]{\setlength{\rightskip}{0pt plus 5cm}void osa\+O\+S\+G\+Pointer3\+D\+::\+Set\+Velocity (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Fixed\+Size\+Vector}$<$ double, 3 $>$ \&}]{v}
+\end{DoxyParamCaption}
+)}\label{classosa_o_s_g_pointer3_d_ad4ae75b60655b5f3cfec87548a4a3648}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classosa_o_s_g_pointer3_d_ab6c2c828a3e43d02bb12dac34b12cbbc}{}\index{osa\+O\+S\+G\+Pointer3\+D@{osa\+O\+S\+G\+Pointer3\+D}!drawable@{drawable}}
+\index{drawable@{drawable}!osa\+O\+S\+G\+Pointer3\+D@{osa\+O\+S\+G\+Pointer3\+D}}
+\subsubsection[{drawable}]{\setlength{\rightskip}{0pt plus 5cm}osg\+::ref\+\_\+ptr$<$ osg\+::\+Shape\+Drawable $>$ osa\+O\+S\+G\+Pointer3\+D\+::drawable\hspace{0.3cm}{\ttfamily [protected]}}\label{classosa_o_s_g_pointer3_d_ab6c2c828a3e43d02bb12dac34b12cbbc}
+\hypertarget{classosa_o_s_g_pointer3_d_af706c282ea0f7b14ae0b430a3b769510}{}\index{osa\+O\+S\+G\+Pointer3\+D@{osa\+O\+S\+G\+Pointer3\+D}!geode@{geode}}
+\index{geode@{geode}!osa\+O\+S\+G\+Pointer3\+D@{osa\+O\+S\+G\+Pointer3\+D}}
+\subsubsection[{geode}]{\setlength{\rightskip}{0pt plus 5cm}osg\+::ref\+\_\+ptr$<$ osg\+::\+Geode $>$ osa\+O\+S\+G\+Pointer3\+D\+::geode\hspace{0.3cm}{\ttfamily [protected]}}\label{classosa_o_s_g_pointer3_d_af706c282ea0f7b14ae0b430a3b769510}
+\hypertarget{classosa_o_s_g_pointer3_d_add1c2a935b2af684bf2cc3c180410a1c}{}\index{osa\+O\+S\+G\+Pointer3\+D@{osa\+O\+S\+G\+Pointer3\+D}!intersectioncallback@{intersectioncallback}}
+\index{intersectioncallback@{intersectioncallback}!osa\+O\+S\+G\+Pointer3\+D@{osa\+O\+S\+G\+Pointer3\+D}}
+\subsubsection[{intersectioncallback}]{\setlength{\rightskip}{0pt plus 5cm}osg\+::ref\+\_\+ptr$<${\bf Intersection\+Callback}$>$ osa\+O\+S\+G\+Pointer3\+D\+::intersectioncallback\hspace{0.3cm}{\ttfamily [protected]}}\label{classosa_o_s_g_pointer3_d_add1c2a935b2af684bf2cc3c180410a1c}
+\hypertarget{classosa_o_s_g_pointer3_d_a99d8f639a80c650298763ab6f28c711a}{}\index{osa\+O\+S\+G\+Pointer3\+D@{osa\+O\+S\+G\+Pointer3\+D}!polytope@{polytope}}
+\index{polytope@{polytope}!osa\+O\+S\+G\+Pointer3\+D@{osa\+O\+S\+G\+Pointer3\+D}}
+\subsubsection[{polytope}]{\setlength{\rightskip}{0pt plus 5cm}osg\+::\+Polytope osa\+O\+S\+G\+Pointer3\+D\+::polytope\hspace{0.3cm}{\ttfamily [protected]}}\label{classosa_o_s_g_pointer3_d_a99d8f639a80c650298763ab6f28c711a}
+\hypertarget{classosa_o_s_g_pointer3_d_acd02af84dcccbf5bb89fda754600414d}{}\index{osa\+O\+S\+G\+Pointer3\+D@{osa\+O\+S\+G\+Pointer3\+D}!select@{select}}
+\index{select@{select}!osa\+O\+S\+G\+Pointer3\+D@{osa\+O\+S\+G\+Pointer3\+D}}
+\subsubsection[{select}]{\setlength{\rightskip}{0pt plus 5cm}bool osa\+O\+S\+G\+Pointer3\+D\+::select\hspace{0.3cm}{\ttfamily [protected]}}\label{classosa_o_s_g_pointer3_d_acd02af84dcccbf5bb89fda754600414d}
+\hypertarget{classosa_o_s_g_pointer3_d_a3f2f4ea0fac395d6b6a8cb20af610d9d}{}\index{osa\+O\+S\+G\+Pointer3\+D@{osa\+O\+S\+G\+Pointer3\+D}!sphere@{sphere}}
+\index{sphere@{sphere}!osa\+O\+S\+G\+Pointer3\+D@{osa\+O\+S\+G\+Pointer3\+D}}
+\subsubsection[{sphere}]{\setlength{\rightskip}{0pt plus 5cm}osg\+::ref\+\_\+ptr$<$ osg\+::\+Sphere $>$ osa\+O\+S\+G\+Pointer3\+D\+::sphere\hspace{0.3cm}{\ttfamily [protected]}}\label{classosa_o_s_g_pointer3_d_a3f2f4ea0fac395d6b6a8cb20af610d9d}
+\hypertarget{classosa_o_s_g_pointer3_d_a9ed8936280696f8f7bd78bb1d20e7d81}{}\index{osa\+O\+S\+G\+Pointer3\+D@{osa\+O\+S\+G\+Pointer3\+D}!velocity@{velocity}}
+\index{velocity@{velocity}!osa\+O\+S\+G\+Pointer3\+D@{osa\+O\+S\+G\+Pointer3\+D}}
+\subsubsection[{velocity}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Fixed\+Size\+Vector}$<$double,3$>$ osa\+O\+S\+G\+Pointer3\+D\+::velocity\hspace{0.3cm}{\ttfamily [protected]}}\label{classosa_o_s_g_pointer3_d_a9ed8936280696f8f7bd78bb1d20e7d81}
+\hypertarget{classosa_o_s_g_pointer3_d_a6576d36096a1c3a9127fbf9dbafee677}{}\index{osa\+O\+S\+G\+Pointer3\+D@{osa\+O\+S\+G\+Pointer3\+D}!world@{world}}
+\index{world@{world}!osa\+O\+S\+G\+Pointer3\+D@{osa\+O\+S\+G\+Pointer3\+D}}
+\subsubsection[{world}]{\setlength{\rightskip}{0pt plus 5cm}osg\+::ref\+\_\+ptr$<$ {\bf osa\+O\+S\+G\+World} $>$ osa\+O\+S\+G\+Pointer3\+D\+::world\hspace{0.3cm}{\ttfamily [protected]}}\label{classosa_o_s_g_pointer3_d_a6576d36096a1c3a9127fbf9dbafee677}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/saw\+Open\+Scene\+Graph/include/saw\+Open\+Scene\+Graph/\hyperlink{osa_o_s_g_body_u_i_8h}{osa\+O\+S\+G\+Body\+U\+I.\+h}\end{DoxyCompactItemize}

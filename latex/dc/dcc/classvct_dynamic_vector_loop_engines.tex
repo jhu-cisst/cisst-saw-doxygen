@@ -1,0 +1,82 @@
+\hypertarget{classvct_dynamic_vector_loop_engines}{}\section{vct\+Dynamic\+Vector\+Loop\+Engines Class Reference}
+\label{classvct_dynamic_vector_loop_engines}\index{vct\+Dynamic\+Vector\+Loop\+Engines@{vct\+Dynamic\+Vector\+Loop\+Engines}}
+
+
+Container class for the vector loop based engines.  
+
+
+
+
+{\ttfamily \#include $<$vct\+Dynamic\+Vector\+Loop\+Engines.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classvct_dynamic_vector_loop_engines_1_1_min_and_max}{Min\+And\+Max}
+\item 
+class \hyperlink{classvct_dynamic_vector_loop_engines_1_1_select_by_index}{Select\+By\+Index}
+\item 
+class \hyperlink{classvct_dynamic_vector_loop_engines_1_1_so_vi}{So\+Vi}
+\begin{DoxyCompactList}\small\item\em Implement operation of the form $s_o = op_{incr}(op(v_i))$ for dynamic vectors. \end{DoxyCompactList}\item 
+class \hyperlink{classvct_dynamic_vector_loop_engines_1_1_so_vi_si}{So\+Vi\+Si}
+\begin{DoxyCompactList}\small\item\em Implement operation of the form $s_o = op_{incr}(op(v_i, s_i))$ for dynamic vectors. \end{DoxyCompactList}\item 
+class \hyperlink{classvct_dynamic_vector_loop_engines_1_1_so_vi_vi}{So\+Vi\+Vi}
+\begin{DoxyCompactList}\small\item\em Implement operation of the form $s_o = op_{incr}(op(v_{i1}, v_{i2}))$ for dynamic vectors. \end{DoxyCompactList}\item 
+class \hyperlink{classvct_dynamic_vector_loop_engines_1_1_vio}{Vio}
+\begin{DoxyCompactList}\small\item\em Implement operation of the form $v_{io} = op(v_{io})$ for dynamic vectors. \end{DoxyCompactList}\item 
+class \hyperlink{classvct_dynamic_vector_loop_engines_1_1_vio_si}{Vio\+Si}
+\begin{DoxyCompactList}\small\item\em Implement operation of the form $ v_{io} = op(v_{io}, s_i)$ for dynamic vectors. \end{DoxyCompactList}\item 
+class \hyperlink{classvct_dynamic_vector_loop_engines_1_1_vio_si_vi}{Vio\+Si\+Vi}
+\begin{DoxyCompactList}\small\item\em Implement operation of the form $v_{io} = op_{io}(v_{io}, op_{sv}(s, v_i))$ for dynamic vectors. \end{DoxyCompactList}\item 
+class \hyperlink{classvct_dynamic_vector_loop_engines_1_1_vio_vi}{Vio\+Vi}
+\begin{DoxyCompactList}\small\item\em Implement operation of the form $v_{io} = op(v_{io}, v_i)$ for dynamic vectors. \end{DoxyCompactList}\item 
+class \hyperlink{classvct_dynamic_vector_loop_engines_1_1_vio_vio}{Vio\+Vio}
+\begin{DoxyCompactList}\small\item\em Implement operation of the form $(v_{1}, v_{2}) = op(v_{1}, v_{2})$ for dynamic vectors. \end{DoxyCompactList}\item 
+class \hyperlink{classvct_dynamic_vector_loop_engines_1_1_vio_vi_vi}{Vio\+Vi\+Vi}
+\begin{DoxyCompactList}\small\item\em Implement operation of the form $v_{io} = op_{io}(v_{io}, op_{v}(v_{i1}, v_{i2}))$ for dynamic vectors. \end{DoxyCompactList}\item 
+class \hyperlink{classvct_dynamic_vector_loop_engines_1_1_vo_si_vi}{Vo\+Si\+Vi}
+\begin{DoxyCompactList}\small\item\em Implement operation of the form $vo = op(si, vi)$ for dynamic vectors. \end{DoxyCompactList}\item 
+class \hyperlink{classvct_dynamic_vector_loop_engines_1_1_vo_vi}{Vo\+Vi}
+\begin{DoxyCompactList}\small\item\em Implement operation of the form $v_o = op(v_i)$ for dynamic vectors. \end{DoxyCompactList}\item 
+class \hyperlink{classvct_dynamic_vector_loop_engines_1_1_vo_vi_si}{Vo\+Vi\+Si}
+\begin{DoxyCompactList}\small\item\em Implement operation of the form $vo = op(vi, si)$ for dynamic vectors. \end{DoxyCompactList}\item 
+class \hyperlink{classvct_dynamic_vector_loop_engines_1_1_vo_vi_vi}{Vo\+Vi\+Vi}
+\begin{DoxyCompactList}\small\item\em Implement operation of the form $v_o = op(v_{i1}, v_{i2})$ for dynamic vectors. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{classvct_dynamic_vector_loop_engines_a11c15e614e735c9fc969b955f967c5a8}{Throw\+Exception} (void)  throw (std\+::runtime\+\_\+error)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Container class for the vector loop based engines. 
+
+Loop engines can be used for dynamic vectors (see \hyperlink{classvct_dynamic_vector}{vct\+Dynamic\+Vector}) to apply similar operations (see \hyperlink{classvct_binary_operations}{vct\+Binary\+Operations}, \hyperlink{classvct_unary_operations}{vct\+Unary\+Operations}, \hyperlink{classvct_store_back_binary_operations}{vct\+Store\+Back\+Binary\+Operations}, \hyperlink{classvct_store_back_unary_operations}{vct\+Store\+Back\+Unary\+Operations}). Each engine corresponds to an operation signature.
+
+Loop engines are named according to the type of the parameters and their role (i.\+e. input/output). The order reflects the mathematical expression. For exemple, \hyperlink{classvct_dynamic_vector_loop_engines_1_1_vo_vi_vi}{Vo\+Vi\+Vi} stands for one output vector with two input vectors used in $v_o = v_i op v_i$ and \hyperlink{classvct_dynamic_vector_loop_engines_1_1_vio_si}{Vio\+Si} stands for one input/output vector and one scalar input used in $v_{io} = v_{io} op s_i$.
+
+The implementation is based on loops. The inner class are templated by the operation type and allows to plug any operation with a given signature.
+
+All vector types must support the index operator (\mbox{[}\mbox{]}) to access their elements. The input vector types must have it as const method. The output vector type must have it as non-\/const method.
+
+The method size() is also required. For the operations based on two or more vectors, this method is used to check that the operands have the same size. If the sizes don\textquotesingle{}t match, an exception of type std\+::runtime\+\_\+error is thrown.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classvct_fixed_size_vector_recursive_engines}{vct\+Fixed\+Size\+Vector\+Recursive\+Engines} \hyperlink{classvct_dynamic_vector_loop_engines_1_1_vo_vi_vi}{Vo\+Vi\+Vi} \hyperlink{classvct_dynamic_vector_loop_engines_1_1_vio_vi}{Vio\+Vi} \hyperlink{classvct_dynamic_vector_loop_engines_1_1_vo_vi_si}{Vo\+Vi\+Si} \hyperlink{classvct_dynamic_vector_loop_engines_1_1_vo_si_vi}{Vo\+Si\+Vi} \hyperlink{classvct_dynamic_vector_loop_engines_1_1_vio_si}{Vio\+Si} \hyperlink{classvct_dynamic_vector_loop_engines_1_1_vo_vi}{Vo\+Vi} \hyperlink{classvct_dynamic_vector_loop_engines_1_1_vio}{Vio} \hyperlink{classvct_dynamic_vector_loop_engines_1_1_so_vi}{So\+Vi} \hyperlink{classvct_dynamic_vector_loop_engines_1_1_so_vi_vi}{So\+Vi\+Vi} So\+Vo\+Si 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classvct_dynamic_vector_loop_engines_a11c15e614e735c9fc969b955f967c5a8}{}\index{vct\+Dynamic\+Vector\+Loop\+Engines@{vct\+Dynamic\+Vector\+Loop\+Engines}!Throw\+Exception@{Throw\+Exception}}
+\index{Throw\+Exception@{Throw\+Exception}!vct\+Dynamic\+Vector\+Loop\+Engines@{vct\+Dynamic\+Vector\+Loop\+Engines}}
+\subsubsection[{Throw\+Exception}]{\setlength{\rightskip}{0pt plus 5cm}static void vct\+Dynamic\+Vector\+Loop\+Engines\+::\+Throw\+Exception (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) throw  std\+::runtime\+\_\+error) \hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classvct_dynamic_vector_loop_engines_a11c15e614e735c9fc969b955f967c5a8}
+Helper function to throw an exception whenever sizes mismatch. This enforces that a standard message is sent. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Vector/\hyperlink{vct_dynamic_vector_loop_engines_8h}{vct\+Dynamic\+Vector\+Loop\+Engines.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,410 @@
+\hypertarget{classmts_open_a_l_record}{}\section{mts\+Open\+A\+L\+Record Class Reference}
+\label{classmts_open_a_l_record}\index{mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}}
+
+
+{\ttfamily \#include $<$mts\+Open\+A\+L\+Record.\+h$>$}
+
+Inheritance diagram for mts\+Open\+A\+L\+Record\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=6.000000cm]{d6/d64/classmts_open_a_l_record}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classmts_open_a_l_record_a2d116a8b22a82a4255ae64c32e2c48a5}{Sound\+Format} \{ \hyperlink{classmts_open_a_l_record_a2d116a8b22a82a4255ae64c32e2c48a5a5ca88ef75354851153e15a2452873f48}{M\+O\+N\+O8}, 
+\hyperlink{classmts_open_a_l_record_a2d116a8b22a82a4255ae64c32e2c48a5a01080a99fb43d5bf53f695a2844f6ca6}{M\+O\+N\+O16}, 
+\hyperlink{classmts_open_a_l_record_a2d116a8b22a82a4255ae64c32e2c48a5ae7217bba22c6e7438dbf5a6351e03dfc}{S\+T\+E\+R\+E\+O8}, 
+\hyperlink{classmts_open_a_l_record_a2d116a8b22a82a4255ae64c32e2c48a5a08fb0f867599715554390dcec9d8bf48}{S\+T\+E\+R\+E\+O16}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmts_open_a_l_record_a7112129e20c6756047f76a2bd6fb847b}{mts\+Open\+A\+L\+Record} (const std\+::string \&task\+Name, double period, int frequency=44100, \hyperlink{classmts_open_a_l_record_a2d116a8b22a82a4255ae64c32e2c48a5}{Sound\+Format} fmt=\hyperlink{classmts_open_a_l_record_a2d116a8b22a82a4255ae64c32e2c48a5a01080a99fb43d5bf53f695a2844f6ca6}{mts\+Open\+A\+L\+Record\+::\+M\+O\+N\+O16})
+\item 
+\hyperlink{classmts_open_a_l_record_a58af853109d2ca3bf65f51a85b055f38}{$\sim$mts\+Open\+A\+L\+Record} ()
+\item 
+void \hyperlink{classmts_open_a_l_record_a678283f5ad5b18064fd7c77bb697c038}{Configure} (const std\+::string \&\hyperlink{cmn_portability_8h_a021894e2626935fa2305434b1e893ff6}{C\+M\+N\+\_\+\+U\+N\+U\+S\+E\+D}(filename))
+\item 
+void \hyperlink{classmts_open_a_l_record_af12e28c60fb84f14cbc4a9dcc8253c31}{Set\+File\+Name} (const \hyperlink{mts_generic_object_proxy_8h_adbc21bfbf98367e582bf8a263b7e711f}{mts\+Std\+String} \&file\+Name)
+\item 
+void \hyperlink{classmts_open_a_l_record_a7e332c21cc1fbb6fb1c975a9d03288a3}{Get\+File\+Name} (\hyperlink{mts_generic_object_proxy_8h_adbc21bfbf98367e582bf8a263b7e711f}{mts\+Std\+String} \&file\+Name) const 
+\item 
+void \hyperlink{classmts_open_a_l_record_abeaf9fc5e12c476b1bcc0da88d53664b}{Startup} (void)
+\item 
+void \hyperlink{classmts_open_a_l_record_a523d1b8491d0c56b1bb3e96c8305e7aa}{Run} (void)
+\item 
+void \hyperlink{classmts_open_a_l_record_a1a84af0c3c5e0204c42ca76668376921}{Cleanup} (void)
+\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \hyperlink{classmts_open_a_l_record_a667bce1fdf2b381eaf611c6b57095a5ba05bd0357a52fd8c22fcca0efacde5dce}{B\+U\+F\+F\+E\+R\+S\+I\+Z\+E} = 50000
+ \}
+\item 
+enum \hyperlink{classmts_open_a_l_record_aaa02dc02dc02dc5db9e32fa7dfd6eb12}{File\+Type} \{ \hyperlink{classmts_open_a_l_record_aaa02dc02dc02dc5db9e32fa7dfd6eb12a248f1191863baefc70d0852c62f6e411}{C\+A\+I}, 
+\hyperlink{classmts_open_a_l_record_aaa02dc02dc02dc5db9e32fa7dfd6eb12ab79c9227652e7dbc18e65858f29a40bf}{W\+A\+V}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classmts_open_a_l_record_a94fc75ab447960990767227c7c86a0fd}{Record} (void)
+\item 
+void \hyperlink{classmts_open_a_l_record_a6d54a48f9f78be6796632ced51aac3cc}{Stop} (void)
+\item 
+void \hyperlink{classmts_open_a_l_record_a1bd95a51a00ef828d504b7ee075f414c}{Set\+Capture\+Device\+Name} (const \hyperlink{mts_generic_object_proxy_8h_adbc21bfbf98367e582bf8a263b7e711f}{mts\+Std\+String} \&device\+Name)
+\begin{DoxyCompactList}\small\item\em /todo this needs checks to see if the device is being used? \end{DoxyCompactList}\item 
+void \hyperlink{classmts_open_a_l_record_a30449d511adcb2bd8232693e2e55502a}{Set\+Capture\+Device\+I\+D} (const \hyperlink{mts_generic_object_proxy_8h_aa17aa0caae80dcf94844f2bd9942adba}{mts\+U\+Int} \&device\+I\+D)
+\item 
+void \hyperlink{classmts_open_a_l_record_aa83b5cf8e8264a5a82543982031e3c37}{Get\+Capture\+Device\+Names} (\hyperlink{mts_vector_8h_accf55f170c81d5578af841b3adeaf24e}{mts\+Std\+String\+Vec} \&names) const 
+\item 
+void \hyperlink{classmts_open_a_l_record_aa5648303f30fa54768c73eba92ce1078}{Calc\+Stream\+Volume} (A\+Lchar $\ast$stream, int number\+Of\+Samples)
+\item 
+void \hyperlink{classmts_open_a_l_record_adaa713cebec6e3ef881fda1c253c077f}{Print\+C\+A\+I\+Header} (\hyperlink{structosa_open_a_l_c_a_i_header}{osa\+Open\+A\+L\+C\+A\+I\+Header} $\ast$header)
+\item 
+std\+::string \hyperlink{classmts_open_a_l_record_a67969fa07e4a4b9f4296b5a87a778713}{Get\+A\+L\+Error\+String} (A\+Lenum err)
+\item 
+bool \hyperlink{classmts_open_a_l_record_a268351553e0ac70e92bf1186f68e7485}{Check\+A\+L\+Error} (std\+::string \&error)
+\item 
+void \hyperlink{classmts_open_a_l_record_a8c614504fcc551de4fdff600489fb346}{Open\+Header\+File} (const std\+::string \&filename)
+\item 
+void \hyperlink{classmts_open_a_l_record_a672e1d4baff68d8b92e5f349db4389ad}{Close\+Header\+File} (void)
+\item 
+void \hyperlink{classmts_open_a_l_record_a03ddab803a649ff0e4aaaa9076d25959}{Write\+To\+Header\+File} (const double \&timestamp, const int bytes)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{mts_generic_object_proxy_8h_ae2e26261f1874d4aa4ee374ece7646bd}{mts\+Bool} \hyperlink{classmts_open_a_l_record_aeb8fac1959946f5b1662b33adc288e7e}{Is\+Recording}
+\item 
+\hyperlink{mts_generic_object_proxy_8h_adbc21bfbf98367e582bf8a263b7e711f}{mts\+Std\+String} \hyperlink{classmts_open_a_l_record_ab223127647885d9ee127a25cbfab0237}{File\+Name}
+\item 
+F\+I\+L\+E $\ast$ \hyperlink{classmts_open_a_l_record_ae204a0035723055db0f3a8456bc4750e}{Sound\+File}
+\item 
+\hyperlink{classmts_open_a_l_record_aaa02dc02dc02dc5db9e32fa7dfd6eb12}{File\+Type} \hyperlink{classmts_open_a_l_record_a88250eb5db2f3cc3141b965e7b694427}{F\+Type}
+\item 
+\hyperlink{structosa_open_a_l_c_a_i_header}{osa\+Open\+A\+L\+C\+A\+I\+Header} $\ast$ \hyperlink{classmts_open_a_l_record_a1f50522cc80c0e69217ef7e783b12ebd}{C\+A\+I\+Header}
+\item 
+\hyperlink{structosa_open_a_l_w_a_v_header}{osa\+Open\+A\+L\+W\+A\+V\+Header} $\ast$ \hyperlink{classmts_open_a_l_record_ad185524b5a93f8e920b57db367ff01c6}{W\+A\+V\+Header}
+\item 
+A\+L\+Cdevice $\ast$ \hyperlink{classmts_open_a_l_record_a9c77ad6b3cc869cc3211ea8c7d7c3fd4}{Capture\+Device}
+\item 
+A\+Lchar \hyperlink{classmts_open_a_l_record_a26e5a320687336531db59542ee4046d9}{Sound\+Buffer} \mbox{[}\hyperlink{classmts_open_a_l_record_a667bce1fdf2b381eaf611c6b57095a5ba05bd0357a52fd8c22fcca0efacde5dce}{B\+U\+F\+F\+E\+R\+S\+I\+Z\+E}\mbox{]}
+\item 
+int \hyperlink{classmts_open_a_l_record_abdef3d872b82e51ee115081cf0916e24}{Sound\+Frequency}
+\item 
+int \hyperlink{classmts_open_a_l_record_a58a82826d08f9019e43bc26336db1ee9}{Sound\+Fmt}
+\item 
+unsigned short \hyperlink{classmts_open_a_l_record_a7c60619f4a29bda2dd1bfd023ddae904}{Num\+Channels}
+\item 
+unsigned short \hyperlink{classmts_open_a_l_record_aec855f8eb743fe606161ae0a2a6eb215}{Num\+Bits}
+\item 
+unsigned int \hyperlink{classmts_open_a_l_record_a0b1e633d79412c792c8a7a65a10d6751}{Bytes\+Per\+Sample}
+\item 
+\hyperlink{mts_generic_object_proxy_8h_a31e76b0190a8d3f9838626cd7b47bd75}{mts\+Double} \hyperlink{classmts_open_a_l_record_ab57135f4e6a6339382521b416e1ed914}{Start\+Time}
+\item 
+\hyperlink{mts_generic_object_proxy_8h_a31e76b0190a8d3f9838626cd7b47bd75}{mts\+Double} \hyperlink{classmts_open_a_l_record_a72313b9ec76ec2abd90ac514c1d2b515}{End\+Time}
+\item 
+\hyperlink{mts_generic_object_proxy_8h_a31e76b0190a8d3f9838626cd7b47bd75}{mts\+Double} \hyperlink{classmts_open_a_l_record_af6104f48da53ce5733a1a888520d38a1}{Time}
+\item 
+\hyperlink{mts_generic_object_proxy_8h_a31e76b0190a8d3f9838626cd7b47bd75}{mts\+Double} \hyperlink{classmts_open_a_l_record_a37028bf96b8e119b15db1b2edad8bd7c}{File\+Size}
+\item 
+const \hyperlink{classosa_time_server}{osa\+Time\+Server} $\ast$ \hyperlink{classmts_open_a_l_record_a91de11a3551290c23f912ebe998981ca}{Time\+Server}
+\item 
+\hyperlink{mts_generic_object_proxy_8h_a31e76b0190a8d3f9838626cd7b47bd75}{mts\+Double} \hyperlink{classmts_open_a_l_record_a36e814f3bb80ef27231bebaabca3f75d}{Stream\+Volume}
+\item 
+std\+::ofstream \hyperlink{classmts_open_a_l_record_a61c9f1c9a9e20ca8c2e6085c96dfc30f}{Header\+Stream}
+\item 
+double \hyperlink{classmts_open_a_l_record_a9c0c43fcbd4f722395a179a006a49714}{Last\+Header\+Update\+Time}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Records in P\+C\+M format in cisst C\+A\+I format or in W\+A\+V format. The wav format has a limitation of 3\+G\+B file size when played with other players, it should be fine with cisst player because we don\textquotesingle{}t use the internal header size information. \begin{DoxyNote}{Note}
+the wav file has an absolute timestamp that is embedded in the first 8 bytes of the datasample. 
+\end{DoxyNote}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classmts_open_a_l_record_a667bce1fdf2b381eaf611c6b57095a5b}{}\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_open_a_l_record_a667bce1fdf2b381eaf611c6b57095a5b}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{B\+U\+F\+F\+E\+R\+S\+I\+Z\+E@{B\+U\+F\+F\+E\+R\+S\+I\+Z\+E}!mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}}\index{mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}!B\+U\+F\+F\+E\+R\+S\+I\+Z\+E@{B\+U\+F\+F\+E\+R\+S\+I\+Z\+E}}\item[{\em 
+\hypertarget{classmts_open_a_l_record_a667bce1fdf2b381eaf611c6b57095a5ba05bd0357a52fd8c22fcca0efacde5dce}{}B\+U\+F\+F\+E\+R\+S\+I\+Z\+E\label{classmts_open_a_l_record_a667bce1fdf2b381eaf611c6b57095a5ba05bd0357a52fd8c22fcca0efacde5dce}
+}]\end{description}
+\end{Desc}
+\hypertarget{classmts_open_a_l_record_aaa02dc02dc02dc5db9e32fa7dfd6eb12}{}\index{mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}!File\+Type@{File\+Type}}
+\index{File\+Type@{File\+Type}!mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}}
+\subsubsection[{File\+Type}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf mts\+Open\+A\+L\+Record\+::\+File\+Type}\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_open_a_l_record_aaa02dc02dc02dc5db9e32fa7dfd6eb12}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{C\+A\+I@{C\+A\+I}!mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}}\index{mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}!C\+A\+I@{C\+A\+I}}\item[{\em 
+\hypertarget{classmts_open_a_l_record_aaa02dc02dc02dc5db9e32fa7dfd6eb12a248f1191863baefc70d0852c62f6e411}{}C\+A\+I\label{classmts_open_a_l_record_aaa02dc02dc02dc5db9e32fa7dfd6eb12a248f1191863baefc70d0852c62f6e411}
+}]\index{W\+A\+V@{W\+A\+V}!mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}}\index{mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}!W\+A\+V@{W\+A\+V}}\item[{\em 
+\hypertarget{classmts_open_a_l_record_aaa02dc02dc02dc5db9e32fa7dfd6eb12ab79c9227652e7dbc18e65858f29a40bf}{}W\+A\+V\label{classmts_open_a_l_record_aaa02dc02dc02dc5db9e32fa7dfd6eb12ab79c9227652e7dbc18e65858f29a40bf}
+}]\end{description}
+\end{Desc}
+\hypertarget{classmts_open_a_l_record_a2d116a8b22a82a4255ae64c32e2c48a5}{}\index{mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}!Sound\+Format@{Sound\+Format}}
+\index{Sound\+Format@{Sound\+Format}!mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}}
+\subsubsection[{Sound\+Format}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf mts\+Open\+A\+L\+Record\+::\+Sound\+Format}}\label{classmts_open_a_l_record_a2d116a8b22a82a4255ae64c32e2c48a5}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{M\+O\+N\+O8@{M\+O\+N\+O8}!mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}}\index{mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}!M\+O\+N\+O8@{M\+O\+N\+O8}}\item[{\em 
+\hypertarget{classmts_open_a_l_record_a2d116a8b22a82a4255ae64c32e2c48a5a5ca88ef75354851153e15a2452873f48}{}M\+O\+N\+O8\label{classmts_open_a_l_record_a2d116a8b22a82a4255ae64c32e2c48a5a5ca88ef75354851153e15a2452873f48}
+}]\index{M\+O\+N\+O16@{M\+O\+N\+O16}!mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}}\index{mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}!M\+O\+N\+O16@{M\+O\+N\+O16}}\item[{\em 
+\hypertarget{classmts_open_a_l_record_a2d116a8b22a82a4255ae64c32e2c48a5a01080a99fb43d5bf53f695a2844f6ca6}{}M\+O\+N\+O16\label{classmts_open_a_l_record_a2d116a8b22a82a4255ae64c32e2c48a5a01080a99fb43d5bf53f695a2844f6ca6}
+}]\index{S\+T\+E\+R\+E\+O8@{S\+T\+E\+R\+E\+O8}!mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}}\index{mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}!S\+T\+E\+R\+E\+O8@{S\+T\+E\+R\+E\+O8}}\item[{\em 
+\hypertarget{classmts_open_a_l_record_a2d116a8b22a82a4255ae64c32e2c48a5ae7217bba22c6e7438dbf5a6351e03dfc}{}S\+T\+E\+R\+E\+O8\label{classmts_open_a_l_record_a2d116a8b22a82a4255ae64c32e2c48a5ae7217bba22c6e7438dbf5a6351e03dfc}
+}]\index{S\+T\+E\+R\+E\+O16@{S\+T\+E\+R\+E\+O16}!mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}}\index{mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}!S\+T\+E\+R\+E\+O16@{S\+T\+E\+R\+E\+O16}}\item[{\em 
+\hypertarget{classmts_open_a_l_record_a2d116a8b22a82a4255ae64c32e2c48a5a08fb0f867599715554390dcec9d8bf48}{}S\+T\+E\+R\+E\+O16\label{classmts_open_a_l_record_a2d116a8b22a82a4255ae64c32e2c48a5a08fb0f867599715554390dcec9d8bf48}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmts_open_a_l_record_a7112129e20c6756047f76a2bd6fb847b}{}\index{mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}!mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}}
+\index{mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}!mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}}
+\subsubsection[{mts\+Open\+A\+L\+Record}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Open\+A\+L\+Record\+::mts\+Open\+A\+L\+Record (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{task\+Name, }
+\item[{double}]{period, }
+\item[{int}]{frequency = {\ttfamily 44100}, }
+\item[{{\bf Sound\+Format}}]{fmt = {\ttfamily {\bf mts\+Open\+A\+L\+Record\+::\+M\+O\+N\+O16}}}
+\end{DoxyParamCaption}
+)}\label{classmts_open_a_l_record_a7112129e20c6756047f76a2bd6fb847b}
+\hypertarget{classmts_open_a_l_record_a58af853109d2ca3bf65f51a85b055f38}{}\index{mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}!````~mts\+Open\+A\+L\+Record@{$\sim$mts\+Open\+A\+L\+Record}}
+\index{````~mts\+Open\+A\+L\+Record@{$\sim$mts\+Open\+A\+L\+Record}!mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}}
+\subsubsection[{$\sim$mts\+Open\+A\+L\+Record}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Open\+A\+L\+Record\+::$\sim$mts\+Open\+A\+L\+Record (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classmts_open_a_l_record_a58af853109d2ca3bf65f51a85b055f38}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classmts_open_a_l_record_aa5648303f30fa54768c73eba92ce1078}{}\index{mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}!Calc\+Stream\+Volume@{Calc\+Stream\+Volume}}
+\index{Calc\+Stream\+Volume@{Calc\+Stream\+Volume}!mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}}
+\subsubsection[{Calc\+Stream\+Volume}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Open\+A\+L\+Record\+::\+Calc\+Stream\+Volume (
+\begin{DoxyParamCaption}
+\item[{A\+Lchar $\ast$}]{stream, }
+\item[{int}]{number\+Of\+Samples}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_open_a_l_record_aa5648303f30fa54768c73eba92ce1078}
+\hypertarget{classmts_open_a_l_record_a268351553e0ac70e92bf1186f68e7485}{}\index{mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}!Check\+A\+L\+Error@{Check\+A\+L\+Error}}
+\index{Check\+A\+L\+Error@{Check\+A\+L\+Error}!mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}}
+\subsubsection[{Check\+A\+L\+Error}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Open\+A\+L\+Record\+::\+Check\+A\+L\+Error (
+\begin{DoxyParamCaption}
+\item[{std\+::string \&}]{error}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_open_a_l_record_a268351553e0ac70e92bf1186f68e7485}
+\hypertarget{classmts_open_a_l_record_a1a84af0c3c5e0204c42ca76668376921}{}\index{mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}!Cleanup@{Cleanup}}
+\index{Cleanup@{Cleanup}!mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}}
+\subsubsection[{Cleanup}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Open\+A\+L\+Record\+::\+Cleanup (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classmts_open_a_l_record_a1a84af0c3c5e0204c42ca76668376921}
+Virtual method that gets overloaded, and is run after the component gets killed using \hyperlink{classmts_task_continuous_ad1f8145306e074fbea8baab3beef4c5b}{Kill()} method. 
+
+Reimplemented from \hyperlink{classmts_component_a891f330f4fde7d831dcf7dc537dc5e81}{mts\+Component}.
+
+\hypertarget{classmts_open_a_l_record_a672e1d4baff68d8b92e5f349db4389ad}{}\index{mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}!Close\+Header\+File@{Close\+Header\+File}}
+\index{Close\+Header\+File@{Close\+Header\+File}!mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}}
+\subsubsection[{Close\+Header\+File}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Open\+A\+L\+Record\+::\+Close\+Header\+File (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_open_a_l_record_a672e1d4baff68d8b92e5f349db4389ad}
+\hypertarget{classmts_open_a_l_record_a678283f5ad5b18064fd7c77bb697c038}{}\index{mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}!Configure@{Configure}}
+\index{Configure@{Configure}!mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}}
+\subsubsection[{Configure}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Open\+A\+L\+Record\+::\+Configure (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{C\+M\+N\+\_\+\+U\+N\+U\+S\+E\+Dfilename}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classmts_open_a_l_record_a678283f5ad5b18064fd7c77bb697c038}
+Virtual method that gets called when the task/interface needs to be configured. Should it take X\+M\+L info?? 
+
+Reimplemented from \hyperlink{classmts_task_a52c822f34f12a0eb14f3d02de9ddd6f6}{mts\+Task}.
+
+\hypertarget{classmts_open_a_l_record_a67969fa07e4a4b9f4296b5a87a778713}{}\index{mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}!Get\+A\+L\+Error\+String@{Get\+A\+L\+Error\+String}}
+\index{Get\+A\+L\+Error\+String@{Get\+A\+L\+Error\+String}!mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}}
+\subsubsection[{Get\+A\+L\+Error\+String}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string mts\+Open\+A\+L\+Record\+::\+Get\+A\+L\+Error\+String (
+\begin{DoxyParamCaption}
+\item[{A\+Lenum}]{err}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_open_a_l_record_a67969fa07e4a4b9f4296b5a87a778713}
+\hypertarget{classmts_open_a_l_record_aa83b5cf8e8264a5a82543982031e3c37}{}\index{mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}!Get\+Capture\+Device\+Names@{Get\+Capture\+Device\+Names}}
+\index{Get\+Capture\+Device\+Names@{Get\+Capture\+Device\+Names}!mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}}
+\subsubsection[{Get\+Capture\+Device\+Names}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Open\+A\+L\+Record\+::\+Get\+Capture\+Device\+Names (
+\begin{DoxyParamCaption}
+\item[{{\bf mts\+Std\+String\+Vec} \&}]{names}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_open_a_l_record_aa83b5cf8e8264a5a82543982031e3c37}
+\hypertarget{classmts_open_a_l_record_a7e332c21cc1fbb6fb1c975a9d03288a3}{}\index{mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}!Get\+File\+Name@{Get\+File\+Name}}
+\index{Get\+File\+Name@{Get\+File\+Name}!mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}}
+\subsubsection[{Get\+File\+Name}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Open\+A\+L\+Record\+::\+Get\+File\+Name (
+\begin{DoxyParamCaption}
+\item[{{\bf mts\+Std\+String} \&}]{file\+Name}
+\end{DoxyParamCaption}
+) const}\label{classmts_open_a_l_record_a7e332c21cc1fbb6fb1c975a9d03288a3}
+\hypertarget{classmts_open_a_l_record_a8c614504fcc551de4fdff600489fb346}{}\index{mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}!Open\+Header\+File@{Open\+Header\+File}}
+\index{Open\+Header\+File@{Open\+Header\+File}!mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}}
+\subsubsection[{Open\+Header\+File}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Open\+A\+L\+Record\+::\+Open\+Header\+File (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{filename}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_open_a_l_record_a8c614504fcc551de4fdff600489fb346}
+\hypertarget{classmts_open_a_l_record_adaa713cebec6e3ef881fda1c253c077f}{}\index{mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}!Print\+C\+A\+I\+Header@{Print\+C\+A\+I\+Header}}
+\index{Print\+C\+A\+I\+Header@{Print\+C\+A\+I\+Header}!mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}}
+\subsubsection[{Print\+C\+A\+I\+Header}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Open\+A\+L\+Record\+::\+Print\+C\+A\+I\+Header (
+\begin{DoxyParamCaption}
+\item[{{\bf osa\+Open\+A\+L\+C\+A\+I\+Header} $\ast$}]{header}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_open_a_l_record_adaa713cebec6e3ef881fda1c253c077f}
+\hypertarget{classmts_open_a_l_record_a94fc75ab447960990767227c7c86a0fd}{}\index{mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}!Record@{Record}}
+\index{Record@{Record}!mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}}
+\subsubsection[{Record}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Open\+A\+L\+Record\+::\+Record (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_open_a_l_record_a94fc75ab447960990767227c7c86a0fd}
+\hypertarget{classmts_open_a_l_record_a523d1b8491d0c56b1bb3e96c8305e7aa}{}\index{mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}!Run@{Run}}
+\index{Run@{Run}!mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}}
+\subsubsection[{Run}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Open\+A\+L\+Record\+::\+Run (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_open_a_l_record_a523d1b8491d0c56b1bb3e96c8305e7aa}
+Pure virtual method that gets overloaded to run the actual task. 
+
+Implements \hyperlink{classmts_task_a20e18c9479cb650792456c32ee689834}{mts\+Task}.
+
+\hypertarget{classmts_open_a_l_record_a30449d511adcb2bd8232693e2e55502a}{}\index{mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}!Set\+Capture\+Device\+I\+D@{Set\+Capture\+Device\+I\+D}}
+\index{Set\+Capture\+Device\+I\+D@{Set\+Capture\+Device\+I\+D}!mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}}
+\subsubsection[{Set\+Capture\+Device\+I\+D}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Open\+A\+L\+Record\+::\+Set\+Capture\+Device\+I\+D (
+\begin{DoxyParamCaption}
+\item[{const {\bf mts\+U\+Int} \&}]{device\+I\+D}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_open_a_l_record_a30449d511adcb2bd8232693e2e55502a}
+\hypertarget{classmts_open_a_l_record_a1bd95a51a00ef828d504b7ee075f414c}{}\index{mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}!Set\+Capture\+Device\+Name@{Set\+Capture\+Device\+Name}}
+\index{Set\+Capture\+Device\+Name@{Set\+Capture\+Device\+Name}!mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}}
+\subsubsection[{Set\+Capture\+Device\+Name}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Open\+A\+L\+Record\+::\+Set\+Capture\+Device\+Name (
+\begin{DoxyParamCaption}
+\item[{const {\bf mts\+Std\+String} \&}]{device\+Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_open_a_l_record_a1bd95a51a00ef828d504b7ee075f414c}
+
+
+/todo this needs checks to see if the device is being used? 
+
+\hypertarget{classmts_open_a_l_record_af12e28c60fb84f14cbc4a9dcc8253c31}{}\index{mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}!Set\+File\+Name@{Set\+File\+Name}}
+\index{Set\+File\+Name@{Set\+File\+Name}!mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}}
+\subsubsection[{Set\+File\+Name}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Open\+A\+L\+Record\+::\+Set\+File\+Name (
+\begin{DoxyParamCaption}
+\item[{const {\bf mts\+Std\+String} \&}]{file\+Name}
+\end{DoxyParamCaption}
+)}\label{classmts_open_a_l_record_af12e28c60fb84f14cbc4a9dcc8253c31}
+\hypertarget{classmts_open_a_l_record_abeaf9fc5e12c476b1bcc0da88d53664b}{}\index{mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}!Startup@{Startup}}
+\index{Startup@{Startup}!mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}}
+\subsubsection[{Startup}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Open\+A\+L\+Record\+::\+Startup (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_open_a_l_record_abeaf9fc5e12c476b1bcc0da88d53664b}
+Virtual method that gets overloaded, and is run before the component is started. 
+
+Reimplemented from \hyperlink{classmts_component_aaf28f0262b44eb6866e10089a02fa6e4}{mts\+Component}.
+
+\hypertarget{classmts_open_a_l_record_a6d54a48f9f78be6796632ced51aac3cc}{}\index{mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}!Stop@{Stop}}
+\index{Stop@{Stop}!mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}}
+\subsubsection[{Stop}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Open\+A\+L\+Record\+::\+Stop (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_open_a_l_record_a6d54a48f9f78be6796632ced51aac3cc}
+\hypertarget{classmts_open_a_l_record_a03ddab803a649ff0e4aaaa9076d25959}{}\index{mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}!Write\+To\+Header\+File@{Write\+To\+Header\+File}}
+\index{Write\+To\+Header\+File@{Write\+To\+Header\+File}!mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}}
+\subsubsection[{Write\+To\+Header\+File}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Open\+A\+L\+Record\+::\+Write\+To\+Header\+File (
+\begin{DoxyParamCaption}
+\item[{const double \&}]{timestamp, }
+\item[{const int}]{bytes}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_open_a_l_record_a03ddab803a649ff0e4aaaa9076d25959}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classmts_open_a_l_record_a0b1e633d79412c792c8a7a65a10d6751}{}\index{mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}!Bytes\+Per\+Sample@{Bytes\+Per\+Sample}}
+\index{Bytes\+Per\+Sample@{Bytes\+Per\+Sample}!mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}}
+\subsubsection[{Bytes\+Per\+Sample}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int mts\+Open\+A\+L\+Record\+::\+Bytes\+Per\+Sample\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_open_a_l_record_a0b1e633d79412c792c8a7a65a10d6751}
+\hypertarget{classmts_open_a_l_record_a1f50522cc80c0e69217ef7e783b12ebd}{}\index{mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}!C\+A\+I\+Header@{C\+A\+I\+Header}}
+\index{C\+A\+I\+Header@{C\+A\+I\+Header}!mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}}
+\subsubsection[{C\+A\+I\+Header}]{\setlength{\rightskip}{0pt plus 5cm}{\bf osa\+Open\+A\+L\+C\+A\+I\+Header}$\ast$ mts\+Open\+A\+L\+Record\+::\+C\+A\+I\+Header\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_open_a_l_record_a1f50522cc80c0e69217ef7e783b12ebd}
+\hypertarget{classmts_open_a_l_record_a9c77ad6b3cc869cc3211ea8c7d7c3fd4}{}\index{mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}!Capture\+Device@{Capture\+Device}}
+\index{Capture\+Device@{Capture\+Device}!mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}}
+\subsubsection[{Capture\+Device}]{\setlength{\rightskip}{0pt plus 5cm}A\+L\+Cdevice$\ast$ mts\+Open\+A\+L\+Record\+::\+Capture\+Device\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_open_a_l_record_a9c77ad6b3cc869cc3211ea8c7d7c3fd4}
+\hypertarget{classmts_open_a_l_record_a72313b9ec76ec2abd90ac514c1d2b515}{}\index{mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}!End\+Time@{End\+Time}}
+\index{End\+Time@{End\+Time}!mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}}
+\subsubsection[{End\+Time}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+Double} mts\+Open\+A\+L\+Record\+::\+End\+Time\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_open_a_l_record_a72313b9ec76ec2abd90ac514c1d2b515}
+\hypertarget{classmts_open_a_l_record_ab223127647885d9ee127a25cbfab0237}{}\index{mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}!File\+Name@{File\+Name}}
+\index{File\+Name@{File\+Name}!mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}}
+\subsubsection[{File\+Name}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+Std\+String} mts\+Open\+A\+L\+Record\+::\+File\+Name\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_open_a_l_record_ab223127647885d9ee127a25cbfab0237}
+\hypertarget{classmts_open_a_l_record_a37028bf96b8e119b15db1b2edad8bd7c}{}\index{mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}!File\+Size@{File\+Size}}
+\index{File\+Size@{File\+Size}!mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}}
+\subsubsection[{File\+Size}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+Double} mts\+Open\+A\+L\+Record\+::\+File\+Size\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_open_a_l_record_a37028bf96b8e119b15db1b2edad8bd7c}
+\hypertarget{classmts_open_a_l_record_a88250eb5db2f3cc3141b965e7b694427}{}\index{mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}!F\+Type@{F\+Type}}
+\index{F\+Type@{F\+Type}!mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}}
+\subsubsection[{F\+Type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf File\+Type} mts\+Open\+A\+L\+Record\+::\+F\+Type\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_open_a_l_record_a88250eb5db2f3cc3141b965e7b694427}
+\hypertarget{classmts_open_a_l_record_a61c9f1c9a9e20ca8c2e6085c96dfc30f}{}\index{mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}!Header\+Stream@{Header\+Stream}}
+\index{Header\+Stream@{Header\+Stream}!mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}}
+\subsubsection[{Header\+Stream}]{\setlength{\rightskip}{0pt plus 5cm}std\+::ofstream mts\+Open\+A\+L\+Record\+::\+Header\+Stream\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_open_a_l_record_a61c9f1c9a9e20ca8c2e6085c96dfc30f}
+\hypertarget{classmts_open_a_l_record_aeb8fac1959946f5b1662b33adc288e7e}{}\index{mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}!Is\+Recording@{Is\+Recording}}
+\index{Is\+Recording@{Is\+Recording}!mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}}
+\subsubsection[{Is\+Recording}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+Bool} mts\+Open\+A\+L\+Record\+::\+Is\+Recording\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_open_a_l_record_aeb8fac1959946f5b1662b33adc288e7e}
+\hypertarget{classmts_open_a_l_record_a9c0c43fcbd4f722395a179a006a49714}{}\index{mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}!Last\+Header\+Update\+Time@{Last\+Header\+Update\+Time}}
+\index{Last\+Header\+Update\+Time@{Last\+Header\+Update\+Time}!mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}}
+\subsubsection[{Last\+Header\+Update\+Time}]{\setlength{\rightskip}{0pt plus 5cm}double mts\+Open\+A\+L\+Record\+::\+Last\+Header\+Update\+Time\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_open_a_l_record_a9c0c43fcbd4f722395a179a006a49714}
+\hypertarget{classmts_open_a_l_record_aec855f8eb743fe606161ae0a2a6eb215}{}\index{mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}!Num\+Bits@{Num\+Bits}}
+\index{Num\+Bits@{Num\+Bits}!mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}}
+\subsubsection[{Num\+Bits}]{\setlength{\rightskip}{0pt plus 5cm}unsigned short mts\+Open\+A\+L\+Record\+::\+Num\+Bits\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_open_a_l_record_aec855f8eb743fe606161ae0a2a6eb215}
+\hypertarget{classmts_open_a_l_record_a7c60619f4a29bda2dd1bfd023ddae904}{}\index{mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}!Num\+Channels@{Num\+Channels}}
+\index{Num\+Channels@{Num\+Channels}!mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}}
+\subsubsection[{Num\+Channels}]{\setlength{\rightskip}{0pt plus 5cm}unsigned short mts\+Open\+A\+L\+Record\+::\+Num\+Channels\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_open_a_l_record_a7c60619f4a29bda2dd1bfd023ddae904}
+\hypertarget{classmts_open_a_l_record_a26e5a320687336531db59542ee4046d9}{}\index{mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}!Sound\+Buffer@{Sound\+Buffer}}
+\index{Sound\+Buffer@{Sound\+Buffer}!mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}}
+\subsubsection[{Sound\+Buffer}]{\setlength{\rightskip}{0pt plus 5cm}A\+Lchar mts\+Open\+A\+L\+Record\+::\+Sound\+Buffer\mbox{[}{\bf B\+U\+F\+F\+E\+R\+S\+I\+Z\+E}\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_open_a_l_record_a26e5a320687336531db59542ee4046d9}
+\hypertarget{classmts_open_a_l_record_ae204a0035723055db0f3a8456bc4750e}{}\index{mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}!Sound\+File@{Sound\+File}}
+\index{Sound\+File@{Sound\+File}!mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}}
+\subsubsection[{Sound\+File}]{\setlength{\rightskip}{0pt plus 5cm}F\+I\+L\+E$\ast$ mts\+Open\+A\+L\+Record\+::\+Sound\+File\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_open_a_l_record_ae204a0035723055db0f3a8456bc4750e}
+\hypertarget{classmts_open_a_l_record_a58a82826d08f9019e43bc26336db1ee9}{}\index{mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}!Sound\+Fmt@{Sound\+Fmt}}
+\index{Sound\+Fmt@{Sound\+Fmt}!mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}}
+\subsubsection[{Sound\+Fmt}]{\setlength{\rightskip}{0pt plus 5cm}int mts\+Open\+A\+L\+Record\+::\+Sound\+Fmt\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_open_a_l_record_a58a82826d08f9019e43bc26336db1ee9}
+\hypertarget{classmts_open_a_l_record_abdef3d872b82e51ee115081cf0916e24}{}\index{mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}!Sound\+Frequency@{Sound\+Frequency}}
+\index{Sound\+Frequency@{Sound\+Frequency}!mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}}
+\subsubsection[{Sound\+Frequency}]{\setlength{\rightskip}{0pt plus 5cm}int mts\+Open\+A\+L\+Record\+::\+Sound\+Frequency\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_open_a_l_record_abdef3d872b82e51ee115081cf0916e24}
+\hypertarget{classmts_open_a_l_record_ab57135f4e6a6339382521b416e1ed914}{}\index{mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}!Start\+Time@{Start\+Time}}
+\index{Start\+Time@{Start\+Time}!mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}}
+\subsubsection[{Start\+Time}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+Double} mts\+Open\+A\+L\+Record\+::\+Start\+Time\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_open_a_l_record_ab57135f4e6a6339382521b416e1ed914}
+\hypertarget{classmts_open_a_l_record_a36e814f3bb80ef27231bebaabca3f75d}{}\index{mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}!Stream\+Volume@{Stream\+Volume}}
+\index{Stream\+Volume@{Stream\+Volume}!mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}}
+\subsubsection[{Stream\+Volume}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+Double} mts\+Open\+A\+L\+Record\+::\+Stream\+Volume\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_open_a_l_record_a36e814f3bb80ef27231bebaabca3f75d}
+\hypertarget{classmts_open_a_l_record_af6104f48da53ce5733a1a888520d38a1}{}\index{mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}!Time@{Time}}
+\index{Time@{Time}!mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}}
+\subsubsection[{Time}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+Double} mts\+Open\+A\+L\+Record\+::\+Time\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_open_a_l_record_af6104f48da53ce5733a1a888520d38a1}
+\hypertarget{classmts_open_a_l_record_a91de11a3551290c23f912ebe998981ca}{}\index{mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}!Time\+Server@{Time\+Server}}
+\index{Time\+Server@{Time\+Server}!mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}}
+\subsubsection[{Time\+Server}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf osa\+Time\+Server}$\ast$ mts\+Open\+A\+L\+Record\+::\+Time\+Server\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_open_a_l_record_a91de11a3551290c23f912ebe998981ca}
+\hypertarget{classmts_open_a_l_record_ad185524b5a93f8e920b57db367ff01c6}{}\index{mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}!W\+A\+V\+Header@{W\+A\+V\+Header}}
+\index{W\+A\+V\+Header@{W\+A\+V\+Header}!mts\+Open\+A\+L\+Record@{mts\+Open\+A\+L\+Record}}
+\subsubsection[{W\+A\+V\+Header}]{\setlength{\rightskip}{0pt plus 5cm}{\bf osa\+Open\+A\+L\+W\+A\+V\+Header}$\ast$ mts\+Open\+A\+L\+Record\+::\+W\+A\+V\+Header\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_open_a_l_record_ad185524b5a93f8e920b57db367ff01c6}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/saw\+Open\+A\+L/include/saw\+Open\+A\+L/\hyperlink{mts_open_a_l_record_8h}{mts\+Open\+A\+L\+Record.\+h}\end{DoxyCompactItemize}

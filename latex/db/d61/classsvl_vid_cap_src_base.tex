@@ -1,0 +1,225 @@
+\hypertarget{classsvl_vid_cap_src_base}{}\section{svl\+Vid\+Cap\+Src\+Base Class Reference}
+\label{classsvl_vid_cap_src_base}\index{svl\+Vid\+Cap\+Src\+Base@{svl\+Vid\+Cap\+Src\+Base}}
+
+
+{\ttfamily \#include $<$svl\+Filter\+Source\+Video\+Capture.\+h$>$}
+
+Inheritance diagram for svl\+Vid\+Cap\+Src\+Base\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{db/d61/classsvl_vid_cap_src_base}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsvl_vid_cap_src_base_ab8cc8201078038fd5f5313c05f87dcac}{svl\+Vid\+Cap\+Src\+Base} ()
+\item 
+virtual \hyperlink{classsvl_vid_cap_src_base_a77cc24bcfb46dff52df9f6d2dd1d90b9}{$\sim$svl\+Vid\+Cap\+Src\+Base} ()
+\item 
+virtual \hyperlink{classsvl_filter_source_video_capture_a75f10dbd026c0ae70007a18758895ea0}{svl\+Filter\+Source\+Video\+Capture\+::\+Platform\+Type} \hyperlink{classsvl_vid_cap_src_base_a68051fa2425450d680972590ca46d3fc}{Get\+Platform\+Type} ()=0
+\item 
+virtual int \hyperlink{classsvl_vid_cap_src_base_ae404263240c88e7752f5951b3e7a0ec3}{Set\+Stream\+Count} (unsigned int numofstreams)=0
+\item 
+virtual int \hyperlink{classsvl_vid_cap_src_base_ada28da77dd5c4a52f018b0499a07f8cb}{Get\+Device\+List} (\hyperlink{classsvl_filter_source_video_capture_ad656487fb2deec890dc39764152b8f8b}{svl\+Filter\+Source\+Video\+Capture\+::\+Device\+Info} $\ast$$\ast$deviceinfo)=0
+\item 
+virtual int \hyperlink{classsvl_vid_cap_src_base_a2855a57b3e6bb2be4a1020600fb76b4b}{Open} ()=0
+\item 
+virtual void \hyperlink{classsvl_vid_cap_src_base_a7a3a449ce94eee9ebe05111bb98dea2b}{Close} ()=0
+\item 
+virtual int \hyperlink{classsvl_vid_cap_src_base_a591d834d9e9667140032244038419080}{Start} ()=0
+\item 
+virtual \hyperlink{svl_types_8h_a7b03c3d61bbbbf8fe59585453969d250}{svl\+Image\+R\+G\+B} $\ast$ \hyperlink{classsvl_vid_cap_src_base_a262ea84a6bd1dfda77e41a1e04525fc8}{Get\+Latest\+Frame} (bool waitfornew, unsigned int videoch=0)=0
+\item 
+virtual int \hyperlink{classsvl_vid_cap_src_base_a8991f55335b8fb8aaf8a20ed28435a86}{Stop} ()=0
+\item 
+virtual bool \hyperlink{classsvl_vid_cap_src_base_a5ffea8235203732a10dadacf8feb5a4d}{Is\+Running} ()=0
+\item 
+virtual int \hyperlink{classsvl_vid_cap_src_base_a140b325929146f88f394e5c5dc6b11bf}{Set\+Device} (int devid, int inid, unsigned int videoch=0)=0
+\item 
+virtual int \hyperlink{classsvl_vid_cap_src_base_afb426faca853d787204e08ac1a62a973}{Get\+Width} (unsigned int videoch=0)=0
+\item 
+virtual int \hyperlink{classsvl_vid_cap_src_base_adf4dcbe7d7164d72c8b859ef20ceb7de}{Get\+Height} (unsigned int videoch=0)=0
+\item 
+virtual int \hyperlink{classsvl_vid_cap_src_base_aac9100e211b4ee7f1bca5a1a7f9d4532}{Get\+Format\+List} (unsigned int deviceid, \hyperlink{classsvl_filter_source_video_capture_a0944cc8abe4240701683128c28fa5349}{svl\+Filter\+Source\+Video\+Capture\+::\+Image\+Format} $\ast$$\ast$formatlist)
+\item 
+virtual int \hyperlink{classsvl_vid_cap_src_base_a47565a17137685fd975f382cca9efd9c}{Set\+Format} (\hyperlink{classsvl_filter_source_video_capture_a0944cc8abe4240701683128c28fa5349}{svl\+Filter\+Source\+Video\+Capture\+::\+Image\+Format} \&format, unsigned int videoch=0)
+\item 
+virtual int \hyperlink{classsvl_vid_cap_src_base_a4a8e40411c467ab669a38921cccc2989}{Get\+Format} (\hyperlink{classsvl_filter_source_video_capture_a0944cc8abe4240701683128c28fa5349}{svl\+Filter\+Source\+Video\+Capture\+::\+Image\+Format} \&format, unsigned int videoch=0)
+\item 
+virtual int \hyperlink{classsvl_vid_cap_src_base_a00941a067dfffdad2a03f796c7f963a8}{Set\+Image\+Properties} (\hyperlink{classsvl_filter_source_video_capture_ad5d8ccc6a284be386d49b60574937f4d}{svl\+Filter\+Source\+Video\+Capture\+::\+Image\+Properties} \&properties, unsigned int videoch=0)
+\item 
+virtual int \hyperlink{classsvl_vid_cap_src_base_a6aa50b6642215ca2c83d6939bdeb98fe}{Get\+Image\+Properties} (\hyperlink{classsvl_filter_source_video_capture_ad5d8ccc6a284be386d49b60574937f4d}{svl\+Filter\+Source\+Video\+Capture\+::\+Image\+Properties} \&properties, unsigned int videoch=0)
+\item 
+virtual int \hyperlink{classsvl_vid_cap_src_base_ab0095cbc2d02a16c685204adb4dcb22c}{Set\+Trigger} (\hyperlink{classsvl_filter_source_video_capture_a609a8eb75ea23b7b35068207cc3c3144}{svl\+Filter\+Source\+Video\+Capture\+::\+External\+Trigger} \&trigger, unsigned int videoch=0)
+\item 
+virtual int \hyperlink{classsvl_vid_cap_src_base_a76cbb7b8ae66e2f71bab5ea36bd518a4}{Get\+Trigger} (\hyperlink{classsvl_filter_source_video_capture_a609a8eb75ea23b7b35068207cc3c3144}{svl\+Filter\+Source\+Video\+Capture\+::\+External\+Trigger} \&trigger, unsigned int videoch=0)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classsvl_vid_cap_src_base_ab8cc8201078038fd5f5313c05f87dcac}{}\index{svl\+Vid\+Cap\+Src\+Base@{svl\+Vid\+Cap\+Src\+Base}!svl\+Vid\+Cap\+Src\+Base@{svl\+Vid\+Cap\+Src\+Base}}
+\index{svl\+Vid\+Cap\+Src\+Base@{svl\+Vid\+Cap\+Src\+Base}!svl\+Vid\+Cap\+Src\+Base@{svl\+Vid\+Cap\+Src\+Base}}
+\subsubsection[{svl\+Vid\+Cap\+Src\+Base}]{\setlength{\rightskip}{0pt plus 5cm}svl\+Vid\+Cap\+Src\+Base\+::svl\+Vid\+Cap\+Src\+Base (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classsvl_vid_cap_src_base_ab8cc8201078038fd5f5313c05f87dcac}
+\hypertarget{classsvl_vid_cap_src_base_a77cc24bcfb46dff52df9f6d2dd1d90b9}{}\index{svl\+Vid\+Cap\+Src\+Base@{svl\+Vid\+Cap\+Src\+Base}!````~svl\+Vid\+Cap\+Src\+Base@{$\sim$svl\+Vid\+Cap\+Src\+Base}}
+\index{````~svl\+Vid\+Cap\+Src\+Base@{$\sim$svl\+Vid\+Cap\+Src\+Base}!svl\+Vid\+Cap\+Src\+Base@{svl\+Vid\+Cap\+Src\+Base}}
+\subsubsection[{$\sim$svl\+Vid\+Cap\+Src\+Base}]{\setlength{\rightskip}{0pt plus 5cm}virtual svl\+Vid\+Cap\+Src\+Base\+::$\sim$svl\+Vid\+Cap\+Src\+Base (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classsvl_vid_cap_src_base_a77cc24bcfb46dff52df9f6d2dd1d90b9}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classsvl_vid_cap_src_base_a7a3a449ce94eee9ebe05111bb98dea2b}{}\index{svl\+Vid\+Cap\+Src\+Base@{svl\+Vid\+Cap\+Src\+Base}!Close@{Close}}
+\index{Close@{Close}!svl\+Vid\+Cap\+Src\+Base@{svl\+Vid\+Cap\+Src\+Base}}
+\subsubsection[{Close}]{\setlength{\rightskip}{0pt plus 5cm}virtual void svl\+Vid\+Cap\+Src\+Base\+::\+Close (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classsvl_vid_cap_src_base_a7a3a449ce94eee9ebe05111bb98dea2b}
+\hypertarget{classsvl_vid_cap_src_base_ada28da77dd5c4a52f018b0499a07f8cb}{}\index{svl\+Vid\+Cap\+Src\+Base@{svl\+Vid\+Cap\+Src\+Base}!Get\+Device\+List@{Get\+Device\+List}}
+\index{Get\+Device\+List@{Get\+Device\+List}!svl\+Vid\+Cap\+Src\+Base@{svl\+Vid\+Cap\+Src\+Base}}
+\subsubsection[{Get\+Device\+List}]{\setlength{\rightskip}{0pt plus 5cm}virtual int svl\+Vid\+Cap\+Src\+Base\+::\+Get\+Device\+List (
+\begin{DoxyParamCaption}
+\item[{{\bf svl\+Filter\+Source\+Video\+Capture\+::\+Device\+Info} $\ast$$\ast$}]{deviceinfo}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classsvl_vid_cap_src_base_ada28da77dd5c4a52f018b0499a07f8cb}
+\hypertarget{classsvl_vid_cap_src_base_a4a8e40411c467ab669a38921cccc2989}{}\index{svl\+Vid\+Cap\+Src\+Base@{svl\+Vid\+Cap\+Src\+Base}!Get\+Format@{Get\+Format}}
+\index{Get\+Format@{Get\+Format}!svl\+Vid\+Cap\+Src\+Base@{svl\+Vid\+Cap\+Src\+Base}}
+\subsubsection[{Get\+Format}]{\setlength{\rightskip}{0pt plus 5cm}virtual int svl\+Vid\+Cap\+Src\+Base\+::\+Get\+Format (
+\begin{DoxyParamCaption}
+\item[{{\bf svl\+Filter\+Source\+Video\+Capture\+::\+Image\+Format} \&}]{format, }
+\item[{unsigned int}]{videoch = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classsvl_vid_cap_src_base_a4a8e40411c467ab669a38921cccc2989}
+\hypertarget{classsvl_vid_cap_src_base_aac9100e211b4ee7f1bca5a1a7f9d4532}{}\index{svl\+Vid\+Cap\+Src\+Base@{svl\+Vid\+Cap\+Src\+Base}!Get\+Format\+List@{Get\+Format\+List}}
+\index{Get\+Format\+List@{Get\+Format\+List}!svl\+Vid\+Cap\+Src\+Base@{svl\+Vid\+Cap\+Src\+Base}}
+\subsubsection[{Get\+Format\+List}]{\setlength{\rightskip}{0pt plus 5cm}virtual int svl\+Vid\+Cap\+Src\+Base\+::\+Get\+Format\+List (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{deviceid, }
+\item[{{\bf svl\+Filter\+Source\+Video\+Capture\+::\+Image\+Format} $\ast$$\ast$}]{formatlist}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classsvl_vid_cap_src_base_aac9100e211b4ee7f1bca5a1a7f9d4532}
+\hypertarget{classsvl_vid_cap_src_base_adf4dcbe7d7164d72c8b859ef20ceb7de}{}\index{svl\+Vid\+Cap\+Src\+Base@{svl\+Vid\+Cap\+Src\+Base}!Get\+Height@{Get\+Height}}
+\index{Get\+Height@{Get\+Height}!svl\+Vid\+Cap\+Src\+Base@{svl\+Vid\+Cap\+Src\+Base}}
+\subsubsection[{Get\+Height}]{\setlength{\rightskip}{0pt plus 5cm}virtual int svl\+Vid\+Cap\+Src\+Base\+::\+Get\+Height (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{videoch = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classsvl_vid_cap_src_base_adf4dcbe7d7164d72c8b859ef20ceb7de}
+\hypertarget{classsvl_vid_cap_src_base_a6aa50b6642215ca2c83d6939bdeb98fe}{}\index{svl\+Vid\+Cap\+Src\+Base@{svl\+Vid\+Cap\+Src\+Base}!Get\+Image\+Properties@{Get\+Image\+Properties}}
+\index{Get\+Image\+Properties@{Get\+Image\+Properties}!svl\+Vid\+Cap\+Src\+Base@{svl\+Vid\+Cap\+Src\+Base}}
+\subsubsection[{Get\+Image\+Properties}]{\setlength{\rightskip}{0pt plus 5cm}virtual int svl\+Vid\+Cap\+Src\+Base\+::\+Get\+Image\+Properties (
+\begin{DoxyParamCaption}
+\item[{{\bf svl\+Filter\+Source\+Video\+Capture\+::\+Image\+Properties} \&}]{properties, }
+\item[{unsigned int}]{videoch = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classsvl_vid_cap_src_base_a6aa50b6642215ca2c83d6939bdeb98fe}
+\hypertarget{classsvl_vid_cap_src_base_a262ea84a6bd1dfda77e41a1e04525fc8}{}\index{svl\+Vid\+Cap\+Src\+Base@{svl\+Vid\+Cap\+Src\+Base}!Get\+Latest\+Frame@{Get\+Latest\+Frame}}
+\index{Get\+Latest\+Frame@{Get\+Latest\+Frame}!svl\+Vid\+Cap\+Src\+Base@{svl\+Vid\+Cap\+Src\+Base}}
+\subsubsection[{Get\+Latest\+Frame}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf svl\+Image\+R\+G\+B}$\ast$ svl\+Vid\+Cap\+Src\+Base\+::\+Get\+Latest\+Frame (
+\begin{DoxyParamCaption}
+\item[{bool}]{waitfornew, }
+\item[{unsigned int}]{videoch = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classsvl_vid_cap_src_base_a262ea84a6bd1dfda77e41a1e04525fc8}
+\hypertarget{classsvl_vid_cap_src_base_a68051fa2425450d680972590ca46d3fc}{}\index{svl\+Vid\+Cap\+Src\+Base@{svl\+Vid\+Cap\+Src\+Base}!Get\+Platform\+Type@{Get\+Platform\+Type}}
+\index{Get\+Platform\+Type@{Get\+Platform\+Type}!svl\+Vid\+Cap\+Src\+Base@{svl\+Vid\+Cap\+Src\+Base}}
+\subsubsection[{Get\+Platform\+Type}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf svl\+Filter\+Source\+Video\+Capture\+::\+Platform\+Type} svl\+Vid\+Cap\+Src\+Base\+::\+Get\+Platform\+Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classsvl_vid_cap_src_base_a68051fa2425450d680972590ca46d3fc}
+\hypertarget{classsvl_vid_cap_src_base_a76cbb7b8ae66e2f71bab5ea36bd518a4}{}\index{svl\+Vid\+Cap\+Src\+Base@{svl\+Vid\+Cap\+Src\+Base}!Get\+Trigger@{Get\+Trigger}}
+\index{Get\+Trigger@{Get\+Trigger}!svl\+Vid\+Cap\+Src\+Base@{svl\+Vid\+Cap\+Src\+Base}}
+\subsubsection[{Get\+Trigger}]{\setlength{\rightskip}{0pt plus 5cm}virtual int svl\+Vid\+Cap\+Src\+Base\+::\+Get\+Trigger (
+\begin{DoxyParamCaption}
+\item[{{\bf svl\+Filter\+Source\+Video\+Capture\+::\+External\+Trigger} \&}]{trigger, }
+\item[{unsigned int}]{videoch = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classsvl_vid_cap_src_base_a76cbb7b8ae66e2f71bab5ea36bd518a4}
+\hypertarget{classsvl_vid_cap_src_base_afb426faca853d787204e08ac1a62a973}{}\index{svl\+Vid\+Cap\+Src\+Base@{svl\+Vid\+Cap\+Src\+Base}!Get\+Width@{Get\+Width}}
+\index{Get\+Width@{Get\+Width}!svl\+Vid\+Cap\+Src\+Base@{svl\+Vid\+Cap\+Src\+Base}}
+\subsubsection[{Get\+Width}]{\setlength{\rightskip}{0pt plus 5cm}virtual int svl\+Vid\+Cap\+Src\+Base\+::\+Get\+Width (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{videoch = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classsvl_vid_cap_src_base_afb426faca853d787204e08ac1a62a973}
+\hypertarget{classsvl_vid_cap_src_base_a5ffea8235203732a10dadacf8feb5a4d}{}\index{svl\+Vid\+Cap\+Src\+Base@{svl\+Vid\+Cap\+Src\+Base}!Is\+Running@{Is\+Running}}
+\index{Is\+Running@{Is\+Running}!svl\+Vid\+Cap\+Src\+Base@{svl\+Vid\+Cap\+Src\+Base}}
+\subsubsection[{Is\+Running}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool svl\+Vid\+Cap\+Src\+Base\+::\+Is\+Running (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classsvl_vid_cap_src_base_a5ffea8235203732a10dadacf8feb5a4d}
+\hypertarget{classsvl_vid_cap_src_base_a2855a57b3e6bb2be4a1020600fb76b4b}{}\index{svl\+Vid\+Cap\+Src\+Base@{svl\+Vid\+Cap\+Src\+Base}!Open@{Open}}
+\index{Open@{Open}!svl\+Vid\+Cap\+Src\+Base@{svl\+Vid\+Cap\+Src\+Base}}
+\subsubsection[{Open}]{\setlength{\rightskip}{0pt plus 5cm}virtual int svl\+Vid\+Cap\+Src\+Base\+::\+Open (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classsvl_vid_cap_src_base_a2855a57b3e6bb2be4a1020600fb76b4b}
+\hypertarget{classsvl_vid_cap_src_base_a140b325929146f88f394e5c5dc6b11bf}{}\index{svl\+Vid\+Cap\+Src\+Base@{svl\+Vid\+Cap\+Src\+Base}!Set\+Device@{Set\+Device}}
+\index{Set\+Device@{Set\+Device}!svl\+Vid\+Cap\+Src\+Base@{svl\+Vid\+Cap\+Src\+Base}}
+\subsubsection[{Set\+Device}]{\setlength{\rightskip}{0pt plus 5cm}virtual int svl\+Vid\+Cap\+Src\+Base\+::\+Set\+Device (
+\begin{DoxyParamCaption}
+\item[{int}]{devid, }
+\item[{int}]{inid, }
+\item[{unsigned int}]{videoch = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classsvl_vid_cap_src_base_a140b325929146f88f394e5c5dc6b11bf}
+\hypertarget{classsvl_vid_cap_src_base_a47565a17137685fd975f382cca9efd9c}{}\index{svl\+Vid\+Cap\+Src\+Base@{svl\+Vid\+Cap\+Src\+Base}!Set\+Format@{Set\+Format}}
+\index{Set\+Format@{Set\+Format}!svl\+Vid\+Cap\+Src\+Base@{svl\+Vid\+Cap\+Src\+Base}}
+\subsubsection[{Set\+Format}]{\setlength{\rightskip}{0pt plus 5cm}virtual int svl\+Vid\+Cap\+Src\+Base\+::\+Set\+Format (
+\begin{DoxyParamCaption}
+\item[{{\bf svl\+Filter\+Source\+Video\+Capture\+::\+Image\+Format} \&}]{format, }
+\item[{unsigned int}]{videoch = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classsvl_vid_cap_src_base_a47565a17137685fd975f382cca9efd9c}
+\hypertarget{classsvl_vid_cap_src_base_a00941a067dfffdad2a03f796c7f963a8}{}\index{svl\+Vid\+Cap\+Src\+Base@{svl\+Vid\+Cap\+Src\+Base}!Set\+Image\+Properties@{Set\+Image\+Properties}}
+\index{Set\+Image\+Properties@{Set\+Image\+Properties}!svl\+Vid\+Cap\+Src\+Base@{svl\+Vid\+Cap\+Src\+Base}}
+\subsubsection[{Set\+Image\+Properties}]{\setlength{\rightskip}{0pt plus 5cm}virtual int svl\+Vid\+Cap\+Src\+Base\+::\+Set\+Image\+Properties (
+\begin{DoxyParamCaption}
+\item[{{\bf svl\+Filter\+Source\+Video\+Capture\+::\+Image\+Properties} \&}]{properties, }
+\item[{unsigned int}]{videoch = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classsvl_vid_cap_src_base_a00941a067dfffdad2a03f796c7f963a8}
+\hypertarget{classsvl_vid_cap_src_base_ae404263240c88e7752f5951b3e7a0ec3}{}\index{svl\+Vid\+Cap\+Src\+Base@{svl\+Vid\+Cap\+Src\+Base}!Set\+Stream\+Count@{Set\+Stream\+Count}}
+\index{Set\+Stream\+Count@{Set\+Stream\+Count}!svl\+Vid\+Cap\+Src\+Base@{svl\+Vid\+Cap\+Src\+Base}}
+\subsubsection[{Set\+Stream\+Count}]{\setlength{\rightskip}{0pt plus 5cm}virtual int svl\+Vid\+Cap\+Src\+Base\+::\+Set\+Stream\+Count (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{numofstreams}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classsvl_vid_cap_src_base_ae404263240c88e7752f5951b3e7a0ec3}
+\hypertarget{classsvl_vid_cap_src_base_ab0095cbc2d02a16c685204adb4dcb22c}{}\index{svl\+Vid\+Cap\+Src\+Base@{svl\+Vid\+Cap\+Src\+Base}!Set\+Trigger@{Set\+Trigger}}
+\index{Set\+Trigger@{Set\+Trigger}!svl\+Vid\+Cap\+Src\+Base@{svl\+Vid\+Cap\+Src\+Base}}
+\subsubsection[{Set\+Trigger}]{\setlength{\rightskip}{0pt plus 5cm}virtual int svl\+Vid\+Cap\+Src\+Base\+::\+Set\+Trigger (
+\begin{DoxyParamCaption}
+\item[{{\bf svl\+Filter\+Source\+Video\+Capture\+::\+External\+Trigger} \&}]{trigger, }
+\item[{unsigned int}]{videoch = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classsvl_vid_cap_src_base_ab0095cbc2d02a16c685204adb4dcb22c}
+\hypertarget{classsvl_vid_cap_src_base_a591d834d9e9667140032244038419080}{}\index{svl\+Vid\+Cap\+Src\+Base@{svl\+Vid\+Cap\+Src\+Base}!Start@{Start}}
+\index{Start@{Start}!svl\+Vid\+Cap\+Src\+Base@{svl\+Vid\+Cap\+Src\+Base}}
+\subsubsection[{Start}]{\setlength{\rightskip}{0pt plus 5cm}virtual int svl\+Vid\+Cap\+Src\+Base\+::\+Start (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classsvl_vid_cap_src_base_a591d834d9e9667140032244038419080}
+\hypertarget{classsvl_vid_cap_src_base_a8991f55335b8fb8aaf8a20ed28435a86}{}\index{svl\+Vid\+Cap\+Src\+Base@{svl\+Vid\+Cap\+Src\+Base}!Stop@{Stop}}
+\index{Stop@{Stop}!svl\+Vid\+Cap\+Src\+Base@{svl\+Vid\+Cap\+Src\+Base}}
+\subsubsection[{Stop}]{\setlength{\rightskip}{0pt plus 5cm}virtual int svl\+Vid\+Cap\+Src\+Base\+::\+Stop (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classsvl_vid_cap_src_base_a8991f55335b8fb8aaf8a20ed28435a86}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Stereo\+Vision/\hyperlink{svl_filter_source_video_capture_8h}{svl\+Filter\+Source\+Video\+Capture.\+h}\end{DoxyCompactItemize}

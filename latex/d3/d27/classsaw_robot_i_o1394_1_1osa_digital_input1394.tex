@@ -1,0 +1,168 @@
+\hypertarget{classsaw_robot_i_o1394_1_1osa_digital_input1394}{}\section{saw\+Robot\+I\+O1394\+:\+:osa\+Digital\+Input1394 Class Reference}
+\label{classsaw_robot_i_o1394_1_1osa_digital_input1394}\index{saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394@{saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394}}
+
+
+{\ttfamily \#include $<$osa\+Digital\+Input1394.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsaw_robot_i_o1394_1_1osa_digital_input1394_a1de20d07136b2eaf707ede2d406720dd}{osa\+Digital\+Input1394} (const \hyperlink{structsaw_robot_i_o1394_1_1osa_digital_input1394_configuration}{osa\+Digital\+Input1394\+Configuration} \&config)
+\item 
+void \hyperlink{classsaw_robot_i_o1394_1_1osa_digital_input1394_ad9e3c775df55a9e2abb465f4545a8549}{Configure} (const \hyperlink{structsaw_robot_i_o1394_1_1osa_digital_input1394_configuration}{osa\+Digital\+Input1394\+Configuration} \&config)
+\item 
+void \hyperlink{classsaw_robot_i_o1394_1_1osa_digital_input1394_a388dfbcdba37ad2f5eabfd3941454996}{Set\+Board} (Amp\+I\+O $\ast$board)
+\item 
+void \hyperlink{classsaw_robot_i_o1394_1_1osa_digital_input1394_acb437ffaafcbed80862b306eb2b4ace7}{Poll\+State} (void)
+\item 
+\hyperlink{structsaw_robot_i_o1394_1_1osa_digital_input1394_configuration}{osa\+Digital\+Input1394\+Configuration} \hyperlink{classsaw_robot_i_o1394_1_1osa_digital_input1394_a595d4af2e32df6bde45923e11d5c578f}{Configuration} (void) const 
+\item 
+std\+::string \hyperlink{classsaw_robot_i_o1394_1_1osa_digital_input1394_ae70c925cef3a3cd9994968d956ec49e3}{Name} (void) const 
+\item 
+bool \hyperlink{classsaw_robot_i_o1394_1_1osa_digital_input1394_a4ec5c3ec935ff28717d46c4c0d21f4c4}{Value} (void) const 
+\item 
+bool \hyperlink{classsaw_robot_i_o1394_1_1osa_digital_input1394_aea5a53a644461e57f13e20be4f2ca467}{Previous\+Value} (void) const 
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Amp\+I\+O $\ast$ \hyperlink{classsaw_robot_i_o1394_1_1osa_digital_input1394_a93581ba4f81ad98d30f425a25abb7dca}{m\+Board}
+\item 
+\hyperlink{structsaw_robot_i_o1394_1_1osa_digital_input1394_configuration}{osa\+Digital\+Input1394\+Configuration} \hyperlink{classsaw_robot_i_o1394_1_1osa_digital_input1394_a8b79a361c88f2612ccc41bbb8214b7bf}{m\+Configuration}
+\item 
+std\+::string \hyperlink{classsaw_robot_i_o1394_1_1osa_digital_input1394_a85c9f8c8b018618c95f3b0e2717d1142}{m\+Name}
+\item 
+int \hyperlink{classsaw_robot_i_o1394_1_1osa_digital_input1394_a4eddecb44399dcf72296c813bb578aff}{m\+Bit\+I\+D}
+\item 
+Amp\+I\+O\+\_\+\+U\+Int32 \hyperlink{classsaw_robot_i_o1394_1_1osa_digital_input1394_a18b04e419656a846e38a0461e4d90561}{m\+Bit\+Mask}
+\item 
+bool \hyperlink{classsaw_robot_i_o1394_1_1osa_digital_input1394_a0d90ac8bd939db2551e0452edd9a61ec}{m\+Pressed\+Value}
+\item 
+bool \hyperlink{classsaw_robot_i_o1394_1_1osa_digital_input1394_ac6ca087605b561e7e22b3992138f47ec}{m\+Trigger\+Press}
+\item 
+bool \hyperlink{classsaw_robot_i_o1394_1_1osa_digital_input1394_ae392f805d438b0d03b980146e9b53708}{m\+Trigger\+Release}
+\item 
+double \hyperlink{classsaw_robot_i_o1394_1_1osa_digital_input1394_a4d3524031a8e64c375d96f4487460c80}{m\+Debounce\+Threshold}
+\item 
+Amp\+I\+O\+\_\+\+U\+Int32 \hyperlink{classsaw_robot_i_o1394_1_1osa_digital_input1394_a7559d48897825942cbe87670b974bee9}{m\+Digital\+Input\+Bits}
+\item 
+bool \hyperlink{classsaw_robot_i_o1394_1_1osa_digital_input1394_af6b92673c21b3119f9ecbcb48d37e82a}{m\+Value}
+\item 
+bool \hyperlink{classsaw_robot_i_o1394_1_1osa_digital_input1394_a171fce3b8c874f4545bb4eeaf4a1f600}{m\+Transition\+Value}
+\item 
+bool \hyperlink{classsaw_robot_i_o1394_1_1osa_digital_input1394_ae5141e1c40246fa97dce7e90dad688ae}{m\+Previous\+Value}
+\item 
+double \hyperlink{classsaw_robot_i_o1394_1_1osa_digital_input1394_a6c941a62713dce958b6d5fce3aee7ac0}{m\+Debounce\+Counter}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_digital_input1394_a1de20d07136b2eaf707ede2d406720dd}{}\index{saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394@{saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394}!osa\+Digital\+Input1394@{osa\+Digital\+Input1394}}
+\index{osa\+Digital\+Input1394@{osa\+Digital\+Input1394}!saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394@{saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394}}
+\subsubsection[{osa\+Digital\+Input1394}]{\setlength{\rightskip}{0pt plus 5cm}saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394\+::osa\+Digital\+Input1394 (
+\begin{DoxyParamCaption}
+\item[{const {\bf osa\+Digital\+Input1394\+Configuration} \&}]{config}
+\end{DoxyParamCaption}
+)}\label{classsaw_robot_i_o1394_1_1osa_digital_input1394_a1de20d07136b2eaf707ede2d406720dd}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_digital_input1394_a595d4af2e32df6bde45923e11d5c578f}{}\index{saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394@{saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394}!Configuration@{Configuration}}
+\index{Configuration@{Configuration}!saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394@{saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394}}
+\subsubsection[{Configuration}]{\setlength{\rightskip}{0pt plus 5cm}{\bf osa\+Digital\+Input1394\+Configuration} saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394\+::\+Configuration (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classsaw_robot_i_o1394_1_1osa_digital_input1394_a595d4af2e32df6bde45923e11d5c578f}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_digital_input1394_ad9e3c775df55a9e2abb465f4545a8549}{}\index{saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394@{saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394}!Configure@{Configure}}
+\index{Configure@{Configure}!saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394@{saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394}}
+\subsubsection[{Configure}]{\setlength{\rightskip}{0pt plus 5cm}void saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394\+::\+Configure (
+\begin{DoxyParamCaption}
+\item[{const {\bf osa\+Digital\+Input1394\+Configuration} \&}]{config}
+\end{DoxyParamCaption}
+)}\label{classsaw_robot_i_o1394_1_1osa_digital_input1394_ad9e3c775df55a9e2abb465f4545a8549}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_digital_input1394_ae70c925cef3a3cd9994968d956ec49e3}{}\index{saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394@{saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394}!Name@{Name}}
+\index{Name@{Name}!saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394@{saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394}}
+\subsubsection[{Name}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394\+::\+Name (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classsaw_robot_i_o1394_1_1osa_digital_input1394_ae70c925cef3a3cd9994968d956ec49e3}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_digital_input1394_acb437ffaafcbed80862b306eb2b4ace7}{}\index{saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394@{saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394}!Poll\+State@{Poll\+State}}
+\index{Poll\+State@{Poll\+State}!saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394@{saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394}}
+\subsubsection[{Poll\+State}]{\setlength{\rightskip}{0pt plus 5cm}void saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394\+::\+Poll\+State (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classsaw_robot_i_o1394_1_1osa_digital_input1394_acb437ffaafcbed80862b306eb2b4ace7}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_digital_input1394_aea5a53a644461e57f13e20be4f2ca467}{}\index{saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394@{saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394}!Previous\+Value@{Previous\+Value}}
+\index{Previous\+Value@{Previous\+Value}!saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394@{saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394}}
+\subsubsection[{Previous\+Value}]{\setlength{\rightskip}{0pt plus 5cm}bool saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394\+::\+Previous\+Value (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classsaw_robot_i_o1394_1_1osa_digital_input1394_aea5a53a644461e57f13e20be4f2ca467}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_digital_input1394_a388dfbcdba37ad2f5eabfd3941454996}{}\index{saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394@{saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394}!Set\+Board@{Set\+Board}}
+\index{Set\+Board@{Set\+Board}!saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394@{saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394}}
+\subsubsection[{Set\+Board}]{\setlength{\rightskip}{0pt plus 5cm}void saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394\+::\+Set\+Board (
+\begin{DoxyParamCaption}
+\item[{Amp\+I\+O $\ast$}]{board}
+\end{DoxyParamCaption}
+)}\label{classsaw_robot_i_o1394_1_1osa_digital_input1394_a388dfbcdba37ad2f5eabfd3941454996}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_digital_input1394_a4ec5c3ec935ff28717d46c4c0d21f4c4}{}\index{saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394@{saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394}!Value@{Value}}
+\index{Value@{Value}!saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394@{saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394}}
+\subsubsection[{Value}]{\setlength{\rightskip}{0pt plus 5cm}bool saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394\+::\+Value (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classsaw_robot_i_o1394_1_1osa_digital_input1394_a4ec5c3ec935ff28717d46c4c0d21f4c4}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_digital_input1394_a4eddecb44399dcf72296c813bb578aff}{}\index{saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394@{saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394}!m\+Bit\+I\+D@{m\+Bit\+I\+D}}
+\index{m\+Bit\+I\+D@{m\+Bit\+I\+D}!saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394@{saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394}}
+\subsubsection[{m\+Bit\+I\+D}]{\setlength{\rightskip}{0pt plus 5cm}int saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394\+::m\+Bit\+I\+D\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_digital_input1394_a4eddecb44399dcf72296c813bb578aff}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_digital_input1394_a18b04e419656a846e38a0461e4d90561}{}\index{saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394@{saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394}!m\+Bit\+Mask@{m\+Bit\+Mask}}
+\index{m\+Bit\+Mask@{m\+Bit\+Mask}!saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394@{saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394}}
+\subsubsection[{m\+Bit\+Mask}]{\setlength{\rightskip}{0pt plus 5cm}Amp\+I\+O\+\_\+\+U\+Int32 saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394\+::m\+Bit\+Mask\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_digital_input1394_a18b04e419656a846e38a0461e4d90561}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_digital_input1394_a93581ba4f81ad98d30f425a25abb7dca}{}\index{saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394@{saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394}!m\+Board@{m\+Board}}
+\index{m\+Board@{m\+Board}!saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394@{saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394}}
+\subsubsection[{m\+Board}]{\setlength{\rightskip}{0pt plus 5cm}Amp\+I\+O$\ast$ saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394\+::m\+Board\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_digital_input1394_a93581ba4f81ad98d30f425a25abb7dca}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_digital_input1394_a8b79a361c88f2612ccc41bbb8214b7bf}{}\index{saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394@{saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394}!m\+Configuration@{m\+Configuration}}
+\index{m\+Configuration@{m\+Configuration}!saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394@{saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394}}
+\subsubsection[{m\+Configuration}]{\setlength{\rightskip}{0pt plus 5cm}{\bf osa\+Digital\+Input1394\+Configuration} saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394\+::m\+Configuration\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_digital_input1394_a8b79a361c88f2612ccc41bbb8214b7bf}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_digital_input1394_a6c941a62713dce958b6d5fce3aee7ac0}{}\index{saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394@{saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394}!m\+Debounce\+Counter@{m\+Debounce\+Counter}}
+\index{m\+Debounce\+Counter@{m\+Debounce\+Counter}!saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394@{saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394}}
+\subsubsection[{m\+Debounce\+Counter}]{\setlength{\rightskip}{0pt plus 5cm}double saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394\+::m\+Debounce\+Counter\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_digital_input1394_a6c941a62713dce958b6d5fce3aee7ac0}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_digital_input1394_a4d3524031a8e64c375d96f4487460c80}{}\index{saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394@{saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394}!m\+Debounce\+Threshold@{m\+Debounce\+Threshold}}
+\index{m\+Debounce\+Threshold@{m\+Debounce\+Threshold}!saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394@{saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394}}
+\subsubsection[{m\+Debounce\+Threshold}]{\setlength{\rightskip}{0pt plus 5cm}double saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394\+::m\+Debounce\+Threshold\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_digital_input1394_a4d3524031a8e64c375d96f4487460c80}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_digital_input1394_a7559d48897825942cbe87670b974bee9}{}\index{saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394@{saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394}!m\+Digital\+Input\+Bits@{m\+Digital\+Input\+Bits}}
+\index{m\+Digital\+Input\+Bits@{m\+Digital\+Input\+Bits}!saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394@{saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394}}
+\subsubsection[{m\+Digital\+Input\+Bits}]{\setlength{\rightskip}{0pt plus 5cm}Amp\+I\+O\+\_\+\+U\+Int32 saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394\+::m\+Digital\+Input\+Bits\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_digital_input1394_a7559d48897825942cbe87670b974bee9}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_digital_input1394_a85c9f8c8b018618c95f3b0e2717d1142}{}\index{saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394@{saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394}!m\+Name@{m\+Name}}
+\index{m\+Name@{m\+Name}!saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394@{saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394}}
+\subsubsection[{m\+Name}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394\+::m\+Name\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_digital_input1394_a85c9f8c8b018618c95f3b0e2717d1142}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_digital_input1394_a0d90ac8bd939db2551e0452edd9a61ec}{}\index{saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394@{saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394}!m\+Pressed\+Value@{m\+Pressed\+Value}}
+\index{m\+Pressed\+Value@{m\+Pressed\+Value}!saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394@{saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394}}
+\subsubsection[{m\+Pressed\+Value}]{\setlength{\rightskip}{0pt plus 5cm}bool saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394\+::m\+Pressed\+Value\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_digital_input1394_a0d90ac8bd939db2551e0452edd9a61ec}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_digital_input1394_ae5141e1c40246fa97dce7e90dad688ae}{}\index{saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394@{saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394}!m\+Previous\+Value@{m\+Previous\+Value}}
+\index{m\+Previous\+Value@{m\+Previous\+Value}!saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394@{saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394}}
+\subsubsection[{m\+Previous\+Value}]{\setlength{\rightskip}{0pt plus 5cm}bool saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394\+::m\+Previous\+Value\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_digital_input1394_ae5141e1c40246fa97dce7e90dad688ae}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_digital_input1394_a171fce3b8c874f4545bb4eeaf4a1f600}{}\index{saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394@{saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394}!m\+Transition\+Value@{m\+Transition\+Value}}
+\index{m\+Transition\+Value@{m\+Transition\+Value}!saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394@{saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394}}
+\subsubsection[{m\+Transition\+Value}]{\setlength{\rightskip}{0pt plus 5cm}bool saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394\+::m\+Transition\+Value\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_digital_input1394_a171fce3b8c874f4545bb4eeaf4a1f600}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_digital_input1394_ac6ca087605b561e7e22b3992138f47ec}{}\index{saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394@{saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394}!m\+Trigger\+Press@{m\+Trigger\+Press}}
+\index{m\+Trigger\+Press@{m\+Trigger\+Press}!saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394@{saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394}}
+\subsubsection[{m\+Trigger\+Press}]{\setlength{\rightskip}{0pt plus 5cm}bool saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394\+::m\+Trigger\+Press\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_digital_input1394_ac6ca087605b561e7e22b3992138f47ec}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_digital_input1394_ae392f805d438b0d03b980146e9b53708}{}\index{saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394@{saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394}!m\+Trigger\+Release@{m\+Trigger\+Release}}
+\index{m\+Trigger\+Release@{m\+Trigger\+Release}!saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394@{saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394}}
+\subsubsection[{m\+Trigger\+Release}]{\setlength{\rightskip}{0pt plus 5cm}bool saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394\+::m\+Trigger\+Release\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_digital_input1394_ae392f805d438b0d03b980146e9b53708}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_digital_input1394_af6b92673c21b3119f9ecbcb48d37e82a}{}\index{saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394@{saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394}!m\+Value@{m\+Value}}
+\index{m\+Value@{m\+Value}!saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394@{saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394}}
+\subsubsection[{m\+Value}]{\setlength{\rightskip}{0pt plus 5cm}bool saw\+Robot\+I\+O1394\+::osa\+Digital\+Input1394\+::m\+Value\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_digital_input1394_af6b92673c21b3119f9ecbcb48d37e82a}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/saw\+Robot\+I\+O1394/include/saw\+Robot\+I\+O1394/\hyperlink{osa_digital_input1394_8h}{osa\+Digital\+Input1394.\+h}\end{DoxyCompactItemize}

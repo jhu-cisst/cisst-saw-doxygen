@@ -1,0 +1,68 @@
+\hypertarget{mts_micron_tracker_8h}{}\section{/\+Users/anton/devel/cisst-\/saw/saw\+Claron\+Micron\+Tracker/include/saw\+Claron\+Micron\+Tracker/mts\+Micron\+Tracker.h File Reference}
+\label{mts_micron_tracker_8h}\index{/\+Users/anton/devel/cisst-\/saw/saw\+Claron\+Micron\+Tracker/include/saw\+Claron\+Micron\+Tracker/mts\+Micron\+Tracker.\+h@{/\+Users/anton/devel/cisst-\/saw/saw\+Claron\+Micron\+Tracker/include/saw\+Claron\+Micron\+Tracker/mts\+Micron\+Tracker.\+h}}
+
+
+cisst component for Claron Micron\+Tracker trackers.  
+
+
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include $<$cisst\+Vector/vct\+Dynamic\+N\+Array.\+h$>$}\\*
+{\ttfamily \#include $<$cisst\+Vector/vct\+Fixed\+Size\+Vector\+Types.\+h$>$}\\*
+{\ttfamily \#include $<$cisst\+Multi\+Task/mts\+Task\+Periodic.\+h$>$}\\*
+{\ttfamily \#include $<$cisst\+Multi\+Task/mts\+Vector.\+h$>$}\\*
+{\ttfamily \#include $<$cisst\+Multi\+Task/mts\+Transformation\+Types.\+h$>$}\\*
+{\ttfamily \#include $<$cisst\+O\+S\+Abstraction/osa\+Get\+Time.\+h$>$}\\*
+{\ttfamily \#include $<$cisst\+Parameter\+Types/prm\+Position\+Cartesian\+Get.\+h$>$}\\*
+{\ttfamily \#include $<$cisst\+Stereo\+Vision/svl\+Buffer\+Sample.\+h$>$}\\*
+{\ttfamily \#include $<$saw\+Claron\+Micron\+Tracker/saw\+Claron\+Micron\+Tracker\+Export.\+h$>$}\\*
+{\ttfamily \#include $<$M\+T\+C.\+h$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classmts_micron_tracker}{mts\+Micron\+Tracker}
+\item 
+class \hyperlink{classmts_micron_tracker_1_1_tool}{mts\+Micron\+Tracker\+::\+Tool}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{mts_micron_tracker_8h_a64b20cde4aa0e7c69f7c2d3124de468b}{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+I\+N\+S\+T\+A\+N\+T\+I\+A\+T\+I\+O\+N} (\hyperlink{classmts_micron_tracker}{mts\+Micron\+Tracker})
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+cisst component for Claron Micron\+Tracker trackers. 
+
+\begin{DoxyRefDesc}{Bug}
+\item[\hyperlink{bug__bug000001}{Bug}]Hard coded to only support 640x480 resolution cameras. 
+
+Automatic light coolness adjustment using Cool\+Card is not working.\end{DoxyRefDesc}
+
+
+\begin{DoxyWarning}{Warning}
+Hdr\+Enabled\+Set is disabled, since it\textquotesingle{}s removed in the new A\+P\+I.
+\end{DoxyWarning}
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000013}{Todo}]Replace current custom video player with an svl Qt widget (\hyperlink{classmts_micron_tracker}{mts\+Micron\+Tracker} already provides an svl\+Sample\+Buffer). 
+
+Compute\+Camera\+Model method needs error analysis. 
+
+Mapping from marker\+Name to marker\+Handle. 
+
+Refactor the method of obtaining marker projections for the controller Qt Component. 
+
+Check for mt\+Measurement\+Hazard\+Code using Xform3\+D\+\_\+\+Hazard\+Code\+Get. 
+
+Fix/suppress \+\_\+\+W\+I\+N32\+\_\+\+W\+I\+N\+N\+T macro redefinition warning. 
+
+See saw\+N\+D\+I\+Tracker for other common tracking related todos. \end{DoxyRefDesc}
+
+
+\subsection{Function Documentation}
+\hypertarget{mts_micron_tracker_8h_a64b20cde4aa0e7c69f7c2d3124de468b}{}\index{mts\+Micron\+Tracker.\+h@{mts\+Micron\+Tracker.\+h}!C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+I\+N\+S\+T\+A\+N\+T\+I\+A\+T\+I\+O\+N@{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+I\+N\+S\+T\+A\+N\+T\+I\+A\+T\+I\+O\+N}}
+\index{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+I\+N\+S\+T\+A\+N\+T\+I\+A\+T\+I\+O\+N@{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+I\+N\+S\+T\+A\+N\+T\+I\+A\+T\+I\+O\+N}!mts\+Micron\+Tracker.\+h@{mts\+Micron\+Tracker.\+h}}
+\subsubsection[{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+I\+N\+S\+T\+A\+N\+T\+I\+A\+T\+I\+O\+N}]{\setlength{\rightskip}{0pt plus 5cm}C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+I\+N\+S\+T\+A\+N\+T\+I\+A\+T\+I\+O\+N (
+\begin{DoxyParamCaption}
+\item[{{\bf mts\+Micron\+Tracker}}]{}
+\end{DoxyParamCaption}
+)}\label{mts_micron_tracker_8h_a64b20cde4aa0e7c69f7c2d3124de468b}

@@ -1,0 +1,172 @@
+\hypertarget{classsvl_file}{}\section{svl\+File Class Reference}
+\label{classsvl_file}\index{svl\+File@{svl\+File}}
+
+
+{\ttfamily \#include $<$svl\+File.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classsvl_file_a457656e908091234c3b92e11596ae1eb}{Open\+Mode} \{ \hyperlink{classsvl_file_a457656e908091234c3b92e11596ae1ebafe4e2c50609d24167be9c0c276c0c6c2}{R} = 1, 
+\hyperlink{classsvl_file_a457656e908091234c3b92e11596ae1eba45f29a6a13ea3cf2977585d5f68e5e4b}{W} = 2
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsvl_file_a3bf2cd56dbbb1503e4a85289d9fa20d3}{svl\+File} ()
+\item 
+\hyperlink{classsvl_file_a092ae18727d1b6b95ce8e08297ce7309}{svl\+File} (const \hyperlink{classsvl_file}{svl\+File} \&file)
+\item 
+\hyperlink{classsvl_file_a537ab837bf88a0f8db65661a700c65ec}{svl\+File} (const std\+::string \&filepath, const \hyperlink{classsvl_file_a457656e908091234c3b92e11596ae1eb}{Open\+Mode} mode=\hyperlink{classsvl_file_a457656e908091234c3b92e11596ae1ebafe4e2c50609d24167be9c0c276c0c6c2}{R})
+\item 
+virtual \hyperlink{classsvl_file_a11bb01c4178002babdd83bb308222cb6}{$\sim$svl\+File} ()
+\item 
+virtual int \hyperlink{classsvl_file_ab433e010e565a684b6767dc3ab8f16cf}{Open} (const std\+::string \&filepath, const \hyperlink{classsvl_file_a457656e908091234c3b92e11596ae1eb}{Open\+Mode} mode=\hyperlink{classsvl_file_a457656e908091234c3b92e11596ae1ebafe4e2c50609d24167be9c0c276c0c6c2}{R})
+\item 
+virtual int \hyperlink{classsvl_file_a94d17e1c028e00296adae1006976abd5}{Close} ()
+\item 
+virtual bool \hyperlink{classsvl_file_a72f2b30878e3e55d5c6c987b2d4eb959}{Is\+Open} ()
+\item 
+virtual long long int \hyperlink{classsvl_file_a84cb50a2e47f112fa7b7cd24532e6661}{Read} (char $\ast$buffer, const long long int length)
+\item 
+virtual long long int \hyperlink{classsvl_file_af4517b3f890e9b56686b1e31728ada17}{Write} (const char $\ast$buffer, const long long int length)
+\item 
+{\footnotesize template$<$class \+\_\+\+Value\+Type $>$ }\\bool \hyperlink{classsvl_file_ab60935c3bcfaa69e07332059b3ab9a13}{Read} (\+\_\+\+Value\+Type \&value)
+\item 
+{\footnotesize template$<$class \+\_\+\+Value\+Type $>$ }\\bool \hyperlink{classsvl_file_abed84f5285fa5052a219d198fc5a2e0a}{Write} (const \+\_\+\+Value\+Type \&value)
+\item 
+virtual long long int \hyperlink{classsvl_file_a9ccc4b30233d9619c9c59e275f13e47b}{Get\+Length} ()
+\item 
+virtual long long int \hyperlink{classsvl_file_af846b5c2d9afff7e0112bdab62a1ea5d}{Get\+Pos} ()
+\item 
+virtual int \hyperlink{classsvl_file_ac7c60953728feb139668ce0e1ba7daff}{Seek} (const long long int abspos)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classsvl_file_a457656e908091234c3b92e11596ae1eb}{}\index{svl\+File@{svl\+File}!Open\+Mode@{Open\+Mode}}
+\index{Open\+Mode@{Open\+Mode}!svl\+File@{svl\+File}}
+\subsubsection[{Open\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf svl\+File\+::\+Open\+Mode}}\label{classsvl_file_a457656e908091234c3b92e11596ae1eb}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{R@{R}!svl\+File@{svl\+File}}\index{svl\+File@{svl\+File}!R@{R}}\item[{\em 
+\hypertarget{classsvl_file_a457656e908091234c3b92e11596ae1ebafe4e2c50609d24167be9c0c276c0c6c2}{}R\label{classsvl_file_a457656e908091234c3b92e11596ae1ebafe4e2c50609d24167be9c0c276c0c6c2}
+}]\index{W@{W}!svl\+File@{svl\+File}}\index{svl\+File@{svl\+File}!W@{W}}\item[{\em 
+\hypertarget{classsvl_file_a457656e908091234c3b92e11596ae1eba45f29a6a13ea3cf2977585d5f68e5e4b}{}W\label{classsvl_file_a457656e908091234c3b92e11596ae1eba45f29a6a13ea3cf2977585d5f68e5e4b}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classsvl_file_a3bf2cd56dbbb1503e4a85289d9fa20d3}{}\index{svl\+File@{svl\+File}!svl\+File@{svl\+File}}
+\index{svl\+File@{svl\+File}!svl\+File@{svl\+File}}
+\subsubsection[{svl\+File}]{\setlength{\rightskip}{0pt plus 5cm}svl\+File\+::svl\+File (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classsvl_file_a3bf2cd56dbbb1503e4a85289d9fa20d3}
+\hypertarget{classsvl_file_a092ae18727d1b6b95ce8e08297ce7309}{}\index{svl\+File@{svl\+File}!svl\+File@{svl\+File}}
+\index{svl\+File@{svl\+File}!svl\+File@{svl\+File}}
+\subsubsection[{svl\+File}]{\setlength{\rightskip}{0pt plus 5cm}svl\+File\+::svl\+File (
+\begin{DoxyParamCaption}
+\item[{const {\bf svl\+File} \&}]{file}
+\end{DoxyParamCaption}
+)}\label{classsvl_file_a092ae18727d1b6b95ce8e08297ce7309}
+\hypertarget{classsvl_file_a537ab837bf88a0f8db65661a700c65ec}{}\index{svl\+File@{svl\+File}!svl\+File@{svl\+File}}
+\index{svl\+File@{svl\+File}!svl\+File@{svl\+File}}
+\subsubsection[{svl\+File}]{\setlength{\rightskip}{0pt plus 5cm}svl\+File\+::svl\+File (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{filepath, }
+\item[{const {\bf Open\+Mode}}]{mode = {\ttfamily {\bf R}}}
+\end{DoxyParamCaption}
+)}\label{classsvl_file_a537ab837bf88a0f8db65661a700c65ec}
+\hypertarget{classsvl_file_a11bb01c4178002babdd83bb308222cb6}{}\index{svl\+File@{svl\+File}!````~svl\+File@{$\sim$svl\+File}}
+\index{````~svl\+File@{$\sim$svl\+File}!svl\+File@{svl\+File}}
+\subsubsection[{$\sim$svl\+File}]{\setlength{\rightskip}{0pt plus 5cm}virtual svl\+File\+::$\sim$svl\+File (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classsvl_file_a11bb01c4178002babdd83bb308222cb6}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classsvl_file_a94d17e1c028e00296adae1006976abd5}{}\index{svl\+File@{svl\+File}!Close@{Close}}
+\index{Close@{Close}!svl\+File@{svl\+File}}
+\subsubsection[{Close}]{\setlength{\rightskip}{0pt plus 5cm}virtual int svl\+File\+::\+Close (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classsvl_file_a94d17e1c028e00296adae1006976abd5}
+\hypertarget{classsvl_file_a9ccc4b30233d9619c9c59e275f13e47b}{}\index{svl\+File@{svl\+File}!Get\+Length@{Get\+Length}}
+\index{Get\+Length@{Get\+Length}!svl\+File@{svl\+File}}
+\subsubsection[{Get\+Length}]{\setlength{\rightskip}{0pt plus 5cm}virtual long long int svl\+File\+::\+Get\+Length (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classsvl_file_a9ccc4b30233d9619c9c59e275f13e47b}
+\hypertarget{classsvl_file_af846b5c2d9afff7e0112bdab62a1ea5d}{}\index{svl\+File@{svl\+File}!Get\+Pos@{Get\+Pos}}
+\index{Get\+Pos@{Get\+Pos}!svl\+File@{svl\+File}}
+\subsubsection[{Get\+Pos}]{\setlength{\rightskip}{0pt plus 5cm}virtual long long int svl\+File\+::\+Get\+Pos (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classsvl_file_af846b5c2d9afff7e0112bdab62a1ea5d}
+\hypertarget{classsvl_file_a72f2b30878e3e55d5c6c987b2d4eb959}{}\index{svl\+File@{svl\+File}!Is\+Open@{Is\+Open}}
+\index{Is\+Open@{Is\+Open}!svl\+File@{svl\+File}}
+\subsubsection[{Is\+Open}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool svl\+File\+::\+Is\+Open (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classsvl_file_a72f2b30878e3e55d5c6c987b2d4eb959}
+\hypertarget{classsvl_file_ab433e010e565a684b6767dc3ab8f16cf}{}\index{svl\+File@{svl\+File}!Open@{Open}}
+\index{Open@{Open}!svl\+File@{svl\+File}}
+\subsubsection[{Open}]{\setlength{\rightskip}{0pt plus 5cm}virtual int svl\+File\+::\+Open (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{filepath, }
+\item[{const {\bf Open\+Mode}}]{mode = {\ttfamily {\bf R}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classsvl_file_ab433e010e565a684b6767dc3ab8f16cf}
+\hypertarget{classsvl_file_a84cb50a2e47f112fa7b7cd24532e6661}{}\index{svl\+File@{svl\+File}!Read@{Read}}
+\index{Read@{Read}!svl\+File@{svl\+File}}
+\subsubsection[{Read}]{\setlength{\rightskip}{0pt plus 5cm}virtual long long int svl\+File\+::\+Read (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{buffer, }
+\item[{const long long int}]{length}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classsvl_file_a84cb50a2e47f112fa7b7cd24532e6661}
+\hypertarget{classsvl_file_ab60935c3bcfaa69e07332059b3ab9a13}{}\index{svl\+File@{svl\+File}!Read@{Read}}
+\index{Read@{Read}!svl\+File@{svl\+File}}
+\subsubsection[{Read}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Value\+Type $>$ bool svl\+File\+::\+Read (
+\begin{DoxyParamCaption}
+\item[{\+\_\+\+Value\+Type \&}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classsvl_file_ab60935c3bcfaa69e07332059b3ab9a13}
+\hypertarget{classsvl_file_ac7c60953728feb139668ce0e1ba7daff}{}\index{svl\+File@{svl\+File}!Seek@{Seek}}
+\index{Seek@{Seek}!svl\+File@{svl\+File}}
+\subsubsection[{Seek}]{\setlength{\rightskip}{0pt plus 5cm}virtual int svl\+File\+::\+Seek (
+\begin{DoxyParamCaption}
+\item[{const long long int}]{abspos}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classsvl_file_ac7c60953728feb139668ce0e1ba7daff}
+\hypertarget{classsvl_file_af4517b3f890e9b56686b1e31728ada17}{}\index{svl\+File@{svl\+File}!Write@{Write}}
+\index{Write@{Write}!svl\+File@{svl\+File}}
+\subsubsection[{Write}]{\setlength{\rightskip}{0pt plus 5cm}virtual long long int svl\+File\+::\+Write (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{buffer, }
+\item[{const long long int}]{length}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classsvl_file_af4517b3f890e9b56686b1e31728ada17}
+\hypertarget{classsvl_file_abed84f5285fa5052a219d198fc5a2e0a}{}\index{svl\+File@{svl\+File}!Write@{Write}}
+\index{Write@{Write}!svl\+File@{svl\+File}}
+\subsubsection[{Write}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Value\+Type $>$ bool svl\+File\+::\+Write (
+\begin{DoxyParamCaption}
+\item[{const \+\_\+\+Value\+Type \&}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classsvl_file_abed84f5285fa5052a219d198fc5a2e0a}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Stereo\+Vision/\hyperlink{svl_file_8h}{svl\+File.\+h}\end{DoxyCompactItemize}

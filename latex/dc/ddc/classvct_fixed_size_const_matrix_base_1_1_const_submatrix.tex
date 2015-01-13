@@ -1,0 +1,33 @@
+\hypertarget{classvct_fixed_size_const_matrix_base_1_1_const_submatrix}{}\section{vct\+Fixed\+Size\+Const\+Matrix\+Base$<$ \+\_\+rows, \+\_\+cols, \+\_\+row\+Stride, \+\_\+col\+Stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+:\+:Const\+Submatrix$<$ \+\_\+sub\+Rows, \+\_\+sub\+Cols $>$ Class Template Reference}
+\label{classvct_fixed_size_const_matrix_base_1_1_const_submatrix}\index{vct\+Fixed\+Size\+Const\+Matrix\+Base$<$ \+\_\+rows, \+\_\+cols, \+\_\+row\+Stride, \+\_\+col\+Stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::\+Const\+Submatrix$<$ \+\_\+sub\+Rows, \+\_\+sub\+Cols $>$@{vct\+Fixed\+Size\+Const\+Matrix\+Base$<$ \+\_\+rows, \+\_\+cols, \+\_\+row\+Stride, \+\_\+col\+Stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::\+Const\+Submatrix$<$ \+\_\+sub\+Rows, \+\_\+sub\+Cols $>$}}
+
+
+{\ttfamily \#include $<$vct\+Fixed\+Size\+Const\+Matrix\+Base.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classvct_fixed_size_const_matrix_ref}{vct\+Fixed\+Size\+Const\+Matrix\+Ref}$<$ value\+\_\+type, \+\_\+sub\+Rows, \+\_\+sub\+Cols, \hyperlink{classvct_fixed_size_const_matrix_base_a0aa9b864b8810dd6a50640c965564bd0a1249f054e777d0972eee94e9e33c3f4f}{R\+O\+W\+S\+T\+R\+I\+D\+E}, \hyperlink{classvct_fixed_size_const_matrix_base_a0aa9b864b8810dd6a50640c965564bd0aee4513ad3dee685fdda1bc2c264be993}{C\+O\+L\+S\+T\+R\+I\+D\+E} $>$ \hyperlink{classvct_fixed_size_const_matrix_base_1_1_const_submatrix_a274c4b7ec1c81155c412da08ab1e1f41}{Type}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$vct\+::size\+\_\+type \+\_\+rows, vct\+::size\+\_\+type \+\_\+cols, vct\+::stride\+\_\+type \+\_\+row\+Stride, vct\+::stride\+\_\+type \+\_\+col\+Stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$template$<$size\+\_\+type \+\_\+sub\+Rows, size\+\_\+type \+\_\+sub\+Cols$>$class vct\+Fixed\+Size\+Const\+Matrix\+Base$<$ \+\_\+rows, \+\_\+cols, \+\_\+row\+Stride, \+\_\+col\+Stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::\+Const\+Submatrix$<$ \+\_\+sub\+Rows, \+\_\+sub\+Cols $>$}
+
+Easy definition of a submatrix type
+
+This class declares a const submatrix type. To declare a submatrix object, here\textquotesingle{}s an example.
+
+typedef \hyperlink{classvct_fixed_size_matrix}{vct\+Fixed\+Size\+Matrix$<$double, 4, 4$>$} double4x4; double4x4 m; double4x4\+::\+Const\+Submatrix$<$3, 3$>$\+::\+Type sub\+Matrix( m, 0, 0 );
+
+The submatrix strides with respect to the parent container are always 1. The is, the memory strides between the elements of the parent matrix and submatrix are equal. For more sophisticated submatrices, the user has to write customized code. 
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classvct_fixed_size_const_matrix_base_1_1_const_submatrix_a274c4b7ec1c81155c412da08ab1e1f41}{}\index{vct\+Fixed\+Size\+Const\+Matrix\+Base\+::\+Const\+Submatrix@{vct\+Fixed\+Size\+Const\+Matrix\+Base\+::\+Const\+Submatrix}!Type@{Type}}
+\index{Type@{Type}!vct\+Fixed\+Size\+Const\+Matrix\+Base\+::\+Const\+Submatrix@{vct\+Fixed\+Size\+Const\+Matrix\+Base\+::\+Const\+Submatrix}}
+\subsubsection[{Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+rows, vct\+::size\+\_\+type \+\_\+cols, vct\+::stride\+\_\+type \+\_\+row\+Stride, vct\+::stride\+\_\+type \+\_\+col\+Stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ template$<$size\+\_\+type \+\_\+sub\+Rows, size\+\_\+type \+\_\+sub\+Cols$>$ typedef {\bf vct\+Fixed\+Size\+Const\+Matrix\+Ref}$<$value\+\_\+type, \+\_\+sub\+Rows, \+\_\+sub\+Cols, {\bf R\+O\+W\+S\+T\+R\+I\+D\+E}, {\bf C\+O\+L\+S\+T\+R\+I\+D\+E}$>$ {\bf vct\+Fixed\+Size\+Const\+Matrix\+Base}$<$ \+\_\+rows, \+\_\+cols, \+\_\+row\+Stride, \+\_\+col\+Stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::{\bf Const\+Submatrix}$<$ \+\_\+sub\+Rows, \+\_\+sub\+Cols $>$\+::{\bf Type}}\label{classvct_fixed_size_const_matrix_base_1_1_const_submatrix_a274c4b7ec1c81155c412da08ab1e1f41}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Vector/\hyperlink{vct_fixed_size_const_matrix_base_8h}{vct\+Fixed\+Size\+Const\+Matrix\+Base.\+h}\end{DoxyCompactItemize}

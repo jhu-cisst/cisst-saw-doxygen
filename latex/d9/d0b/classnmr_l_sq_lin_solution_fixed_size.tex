@@ -1,0 +1,280 @@
+\hypertarget{classnmr_l_sq_lin_solution_fixed_size}{}\section{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size$<$ \+\_\+ma, \+\_\+me, \+\_\+mg, \+\_\+n $>$ Class Template Reference}
+\label{classnmr_l_sq_lin_solution_fixed_size}\index{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size$<$ \+\_\+ma, \+\_\+me, \+\_\+mg, \+\_\+n $>$@{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size$<$ \+\_\+ma, \+\_\+me, \+\_\+mg, \+\_\+n $>$}}
+
+
+{\ttfamily \#include $<$nmr\+L\+Sq\+Lin.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classnmr_l_sq_lin_solution_fixed_size_1_1_friend}{Friend}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \hyperlink{classnmr_l_sq_lin_solution_fixed_size_a063deb807bc813e22dd91e6c46b807d6ae3e4f8b142b5889bc0b2126e9537c8b2}{M\+I\+N\+\_\+\+M\+N} = (\+\_\+ma$<$\+\_\+n) ? \+\_\+ma \+: \+\_\+n
+ \}
+\item 
+enum \{ \hyperlink{classnmr_l_sq_lin_solution_fixed_size_a195fd9dda7262435a876c1a88037b90ca4e75ba2df09e63a5497124b135e202e3}{K} = (\+\_\+ma + \+\_\+mg $>$ \+\_\+n)?(\+\_\+ma + \+\_\+mg) \+: \+\_\+n
+ \}
+\item 
+enum \{ \hyperlink{classnmr_l_sq_lin_solution_fixed_size_abcb6a32d75ed163cd311c2bd29f62d49a5f815776fb43b9780b8f7856b74937f1}{L\+W\+O\+R\+K\+\_\+\+L\+S} = 2$\ast$((vct\+:\+:size\+\_\+type)M\+I\+N\+\_\+\+M\+N)
+ \}
+\item 
+enum \{ \hyperlink{classnmr_l_sq_lin_solution_fixed_size_ad373aff51e5dd5ae2749ef98f256603cad4e1e895007caae4b907a07c8f6bff75}{L\+W\+O\+R\+K\+\_\+\+L\+S\+I} = \+\_\+n + (\+\_\+mg + 2)$\ast$(\+\_\+n + 7) + (vct\+:\+:size\+\_\+type)K
+ \}
+\item 
+enum \{ \hyperlink{classnmr_l_sq_lin_solution_fixed_size_a0935ea26d5ca1f470185d0fb8fc9a9b5a509d9c24964fdf1469993d4a5bc0ec02}{L\+W\+O\+R\+K\+\_\+\+L\+S\+E\+I} = 2$\ast$(\+\_\+me + \+\_\+n) + (\+\_\+mg + 2)$\ast$(\+\_\+n + 7) + (vct\+:\+:size\+\_\+type)K
+ \}
+\item 
+enum \{ \hyperlink{classnmr_l_sq_lin_solution_fixed_size_a3bcd6f5502072a715fd33d81f4d89411abff983994905aed52bfd51bf9f66d6df}{L\+W\+O\+R\+K\+\_\+\+T\+M\+P} = ((vct\+:\+:size\+\_\+type)L\+W\+O\+R\+K\+\_\+\+L\+S $>$ (vct\+:\+:size\+\_\+type)L\+W\+O\+R\+K\+\_\+\+L\+S\+I) ? (vct\+:\+:size\+\_\+type)L\+W\+O\+R\+K\+\_\+\+L\+S \+: (vct\+:\+:size\+\_\+type)L\+W\+O\+R\+K\+\_\+\+L\+S\+I
+ \}
+\item 
+enum \{ \hyperlink{classnmr_l_sq_lin_solution_fixed_size_ac46fee8cb4a87666ea735949ff921531acacf0e784782d62fc0567d6c62575610}{L\+W\+O\+R\+K} = ((vct\+:\+:size\+\_\+type)L\+W\+O\+R\+K\+\_\+\+L\+S\+E\+I $>$ (vct\+:\+:size\+\_\+type)L\+W\+O\+R\+K\+\_\+\+T\+M\+P) ? (vct\+:\+:size\+\_\+type)L\+W\+O\+R\+K\+\_\+\+L\+S\+E\+I \+: (vct\+:\+:size\+\_\+type)L\+W\+O\+R\+K\+\_\+\+T\+M\+P
+ \}
+\item 
+enum \{ \hyperlink{classnmr_l_sq_lin_solution_fixed_size_a6cb29b5b81e8b4782fd24a46a2392e6eae423106426616171263d79efdfc0b1dd}{L\+I\+W\+O\+R\+K} = \+\_\+mg + 2$\ast$\+\_\+n + 2
+ \}
+\item 
+typedef \hyperlink{classvct_fixed_size_matrix_ref}{vct\+Fixed\+Size\+Matrix\+Ref}$<$ C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E, \+\_\+ma, \+\_\+n, 1, \+\_\+ma $>$ \hyperlink{classnmr_l_sq_lin_solution_fixed_size_a7a9b41c20d4c0b44cdae4bf7b39f7e39}{Type\+A}
+\item 
+typedef \hyperlink{classvct_fixed_size_matrix_ref}{vct\+Fixed\+Size\+Matrix\+Ref}$<$ C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E,(\+\_\+me==0)?1\+:\+\_\+me, \+\_\+n, 1,(\+\_\+me==0)?1\+:\+\_\+me $>$ \hyperlink{classnmr_l_sq_lin_solution_fixed_size_a74ac0c633236e0b04e8969f7fbfc92a6}{Type\+E}
+\item 
+typedef \hyperlink{classvct_fixed_size_matrix_ref}{vct\+Fixed\+Size\+Matrix\+Ref}$<$ C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E,(\+\_\+mg==0)?1\+:\+\_\+mg, \+\_\+n, 1,(\+\_\+mg==0)?1\+:\+\_\+mg $>$ \hyperlink{classnmr_l_sq_lin_solution_fixed_size_a043640ee3f0a5a11b4b6972ddd9c8b90}{Type\+G}
+\item 
+typedef \hyperlink{classvct_fixed_size_vector_ref}{vct\+Fixed\+Size\+Vector\+Ref}$<$ C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E, \+\_\+ma, 1 $>$ \hyperlink{classnmr_l_sq_lin_solution_fixed_size_a9fca08d2c610b0087085dd343e5d171b}{Typeb}
+\item 
+typedef \hyperlink{classvct_fixed_size_vector_ref}{vct\+Fixed\+Size\+Vector\+Ref}$<$ C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E,(\+\_\+me==0)?1\+:\+\_\+me, 1 $>$ \hyperlink{classnmr_l_sq_lin_solution_fixed_size_ada2bec63c68d10997259c4c0fff5a085}{Typef}
+\item 
+typedef \hyperlink{classvct_fixed_size_vector_ref}{vct\+Fixed\+Size\+Vector\+Ref}$<$ C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E,(\+\_\+mg==0)?1\+:\+\_\+mg, 1 $>$ \hyperlink{classnmr_l_sq_lin_solution_fixed_size_aa86f02bad0142d8bccac845d426bb153}{Typeh}
+\item 
+typedef \hyperlink{classvct_fixed_size_vector_ref}{vct\+Fixed\+Size\+Vector\+Ref}$<$ C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E,(\+\_\+me==0)?1\+:\+\_\+me, 1 $>$ \hyperlink{classnmr_l_sq_lin_solution_fixed_size_a8d12c1d86e766d8b7782e39f38b90073}{Type\+R\+Norm\+E}
+\item 
+typedef \hyperlink{classvct_fixed_size_vector_ref}{vct\+Fixed\+Size\+Vector\+Ref}$<$ C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E, \+\_\+ma, 1 $>$ \hyperlink{classnmr_l_sq_lin_solution_fixed_size_a61e14c469c463bc06a411061aad13b3a}{Type\+R\+Norm\+L}
+\item 
+typedef \hyperlink{classvct_fixed_size_vector}{vct\+Fixed\+Size\+Vector}$<$ C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E, \hyperlink{classnmr_l_sq_lin_solution_fixed_size_ac46fee8cb4a87666ea735949ff921531acacf0e784782d62fc0567d6c62575610}{L\+W\+O\+R\+K} $>$ \hyperlink{classnmr_l_sq_lin_solution_fixed_size_a2804f3b3815a82a0f9655bcd2f86e7e4}{Type\+Work}
+\item 
+typedef \hyperlink{classvct_fixed_size_vector}{vct\+Fixed\+Size\+Vector}$<$ C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R, \hyperlink{classnmr_l_sq_lin_solution_fixed_size_a6cb29b5b81e8b4782fd24a46a2392e6eae423106426616171263d79efdfc0b1dd}{L\+I\+W\+O\+R\+K} $>$ \hyperlink{classnmr_l_sq_lin_solution_fixed_size_a1838601b0a3e6fa7972e8854b888152a}{Type\+I\+Work}
+\item 
+typedef \hyperlink{classvct_fixed_size_vector}{vct\+Fixed\+Size\+Vector}$<$ C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E, \+\_\+n $>$ \hyperlink{classnmr_l_sq_lin_solution_fixed_size_aa00d3b54073dac6aba6e3793d4f88348}{Type\+X}
+\item 
+typedef \hyperlink{classvct_fixed_size_vector}{vct\+Fixed\+Size\+Vector}$<$ C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E, \+\_\+ma+\+\_\+me $>$ \hyperlink{classnmr_l_sq_lin_solution_fixed_size_a384dc1235386018c6edbdc782c5f84be}{Type\+R\+Norm}
+\item 
+typedef \hyperlink{classvct_fixed_size_matrix}{vct\+Fixed\+Size\+Matrix}$<$ C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E, \+\_\+ma+\+\_\+me+\+\_\+mg, \+\_\+n+1, \hyperlink{vct_forward_declarations_8h_a432cdf8923afaf82f551450ad4034746}{V\+C\+T\+\_\+\+C\+O\+L\+\_\+\+M\+A\+J\+O\+R} $>$ \hyperlink{classnmr_l_sq_lin_solution_fixed_size_adf9a982c0414dafb9fb1164b8da4f96f}{Type\+Input}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classnmr_l_sq_lin_solution_fixed_size_a3060f6d235cfc41dbeefe8d8dbc50ba3}{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size} ()
+\item 
+const \hyperlink{classnmr_l_sq_lin_solution_fixed_size_aa00d3b54073dac6aba6e3793d4f88348}{Type\+X} \& \hyperlink{classnmr_l_sq_lin_solution_fixed_size_ac71994a5fb212ccf098e14e56656a258}{Get\+X} (void) const 
+\item 
+const \hyperlink{classnmr_l_sq_lin_solution_fixed_size_a61e14c469c463bc06a411061aad13b3a}{Type\+R\+Norm\+L} \& \hyperlink{classnmr_l_sq_lin_solution_fixed_size_a4b7c9a9b618661f5d2e60859755eddf4}{Get\+R\+Norm} (void) const 
+\item 
+const \hyperlink{classnmr_l_sq_lin_solution_fixed_size_a8d12c1d86e766d8b7782e39f38b90073}{Type\+R\+Norm\+E} \& \hyperlink{classnmr_l_sq_lin_solution_fixed_size_aee6661611d7ef29b421f78598c942730}{Get\+R\+Norm\+E} (void) const 
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classnmr_l_sq_lin_solution_fixed_size_a2804f3b3815a82a0f9655bcd2f86e7e4}{Type\+Work} \hyperlink{classnmr_l_sq_lin_solution_fixed_size_a3718294e665cb353e17c58bae35e91ef}{Workspace\+Memory}
+\item 
+\hyperlink{classnmr_l_sq_lin_solution_fixed_size_a1838601b0a3e6fa7972e8854b888152a}{Type\+I\+Work} \hyperlink{classnmr_l_sq_lin_solution_fixed_size_a679c28e537d3e2c4d0be4592715715eb}{I\+Workspace\+Memory}
+\item 
+\hyperlink{classnmr_l_sq_lin_solution_fixed_size_a384dc1235386018c6edbdc782c5f84be}{Type\+R\+Norm} \hyperlink{classnmr_l_sq_lin_solution_fixed_size_ab8968759e536db86f658fe569aec7c4c}{R\+Norm}
+\item 
+\hyperlink{classnmr_l_sq_lin_solution_fixed_size_adf9a982c0414dafb9fb1164b8da4f96f}{Type\+Input} \hyperlink{classnmr_l_sq_lin_solution_fixed_size_aabb06ec545a84d0e6cf73353c88d7bba}{Input\+Memory}
+\item 
+\hyperlink{classnmr_l_sq_lin_solution_fixed_size_aa00d3b54073dac6aba6e3793d4f88348}{Type\+X} \hyperlink{classnmr_l_sq_lin_solution_fixed_size_ae6be321dc3efeb73c08a9b66ca650c59}{X}
+\item 
+\hyperlink{classnmr_l_sq_lin_solution_fixed_size_a61e14c469c463bc06a411061aad13b3a}{Type\+R\+Norm\+L} \hyperlink{classnmr_l_sq_lin_solution_fixed_size_ae7fc2b92147410b773caab779fefcb66}{R\+Norm\+L}
+\item 
+\hyperlink{classnmr_l_sq_lin_solution_fixed_size_a8d12c1d86e766d8b7782e39f38b90073}{Type\+R\+Norm\+E} \hyperlink{classnmr_l_sq_lin_solution_fixed_size_a7db2609534904651db0df467d94c13ad}{R\+Norm\+E}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classnmr_l_sq_lin_solution_fixed_size_a7f8321d57e81bc613d5dbef3410ba70e}{Friend}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$vct\+::size\+\_\+type \+\_\+ma, vct\+::size\+\_\+type \+\_\+me, vct\+::size\+\_\+type \+\_\+mg, vct\+::size\+\_\+type \+\_\+n$>$class nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size$<$ \+\_\+ma, \+\_\+me, \+\_\+mg, \+\_\+n $>$}
+
+This provides the solution class for fixed size matrices and provides a easy to use template. That is nmr\+S\+V\+D\+Solution\+Fixed\+Size$<$4, 3, V\+C\+T\+\_\+\+C\+O\+L\+\_\+\+M\+A\+J\+O\+R$>$ vs. nmr\+S\+V\+D\+Solution\+Base$<$vct\+Fixed\+Size\+Matrix$<$4, 3, V\+C\+T\+\_\+\+C\+O\+L\+\_\+\+M\+A\+J\+O\+R$>$ No extra work of allocation etc is required for fixed size. 
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classnmr_l_sq_lin_solution_fixed_size_a7a9b41c20d4c0b44cdae4bf7b39f7e39}{}\index{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size@{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size}!Type\+A@{Type\+A}}
+\index{Type\+A@{Type\+A}!nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size@{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size}}
+\subsubsection[{Type\+A}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+ma, vct\+::size\+\_\+type \+\_\+me, vct\+::size\+\_\+type \+\_\+mg, vct\+::size\+\_\+type \+\_\+n$>$ typedef {\bf vct\+Fixed\+Size\+Matrix\+Ref}$<$C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E, \+\_\+ma, \+\_\+n, 1, \+\_\+ma$>$ {\bf nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size}$<$ \+\_\+ma, \+\_\+me, \+\_\+mg, \+\_\+n $>$\+::{\bf Type\+A}}\label{classnmr_l_sq_lin_solution_fixed_size_a7a9b41c20d4c0b44cdae4bf7b39f7e39}
+\hypertarget{classnmr_l_sq_lin_solution_fixed_size_a9fca08d2c610b0087085dd343e5d171b}{}\index{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size@{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size}!Typeb@{Typeb}}
+\index{Typeb@{Typeb}!nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size@{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size}}
+\subsubsection[{Typeb}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+ma, vct\+::size\+\_\+type \+\_\+me, vct\+::size\+\_\+type \+\_\+mg, vct\+::size\+\_\+type \+\_\+n$>$ typedef {\bf vct\+Fixed\+Size\+Vector\+Ref}$<$C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E, \+\_\+ma, 1$>$ {\bf nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size}$<$ \+\_\+ma, \+\_\+me, \+\_\+mg, \+\_\+n $>$\+::{\bf Typeb}}\label{classnmr_l_sq_lin_solution_fixed_size_a9fca08d2c610b0087085dd343e5d171b}
+\hypertarget{classnmr_l_sq_lin_solution_fixed_size_a74ac0c633236e0b04e8969f7fbfc92a6}{}\index{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size@{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size}!Type\+E@{Type\+E}}
+\index{Type\+E@{Type\+E}!nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size@{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size}}
+\subsubsection[{Type\+E}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+ma, vct\+::size\+\_\+type \+\_\+me, vct\+::size\+\_\+type \+\_\+mg, vct\+::size\+\_\+type \+\_\+n$>$ typedef {\bf vct\+Fixed\+Size\+Matrix\+Ref}$<$C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E, (\+\_\+me==0)?1\+:\+\_\+me, \+\_\+n, 1, (\+\_\+me==0)?1\+:\+\_\+me$>$ {\bf nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size}$<$ \+\_\+ma, \+\_\+me, \+\_\+mg, \+\_\+n $>$\+::{\bf Type\+E}}\label{classnmr_l_sq_lin_solution_fixed_size_a74ac0c633236e0b04e8969f7fbfc92a6}
+\hypertarget{classnmr_l_sq_lin_solution_fixed_size_ada2bec63c68d10997259c4c0fff5a085}{}\index{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size@{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size}!Typef@{Typef}}
+\index{Typef@{Typef}!nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size@{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size}}
+\subsubsection[{Typef}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+ma, vct\+::size\+\_\+type \+\_\+me, vct\+::size\+\_\+type \+\_\+mg, vct\+::size\+\_\+type \+\_\+n$>$ typedef {\bf vct\+Fixed\+Size\+Vector\+Ref}$<$C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E, (\+\_\+me==0)?1\+:\+\_\+me, 1$>$ {\bf nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size}$<$ \+\_\+ma, \+\_\+me, \+\_\+mg, \+\_\+n $>$\+::{\bf Typef}}\label{classnmr_l_sq_lin_solution_fixed_size_ada2bec63c68d10997259c4c0fff5a085}
+\hypertarget{classnmr_l_sq_lin_solution_fixed_size_a043640ee3f0a5a11b4b6972ddd9c8b90}{}\index{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size@{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size}!Type\+G@{Type\+G}}
+\index{Type\+G@{Type\+G}!nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size@{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size}}
+\subsubsection[{Type\+G}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+ma, vct\+::size\+\_\+type \+\_\+me, vct\+::size\+\_\+type \+\_\+mg, vct\+::size\+\_\+type \+\_\+n$>$ typedef {\bf vct\+Fixed\+Size\+Matrix\+Ref}$<$C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E, (\+\_\+mg==0)?1\+:\+\_\+mg, \+\_\+n, 1, (\+\_\+mg==0)?1\+:\+\_\+mg$>$ {\bf nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size}$<$ \+\_\+ma, \+\_\+me, \+\_\+mg, \+\_\+n $>$\+::{\bf Type\+G}}\label{classnmr_l_sq_lin_solution_fixed_size_a043640ee3f0a5a11b4b6972ddd9c8b90}
+\hypertarget{classnmr_l_sq_lin_solution_fixed_size_aa86f02bad0142d8bccac845d426bb153}{}\index{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size@{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size}!Typeh@{Typeh}}
+\index{Typeh@{Typeh}!nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size@{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size}}
+\subsubsection[{Typeh}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+ma, vct\+::size\+\_\+type \+\_\+me, vct\+::size\+\_\+type \+\_\+mg, vct\+::size\+\_\+type \+\_\+n$>$ typedef {\bf vct\+Fixed\+Size\+Vector\+Ref}$<$C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E, (\+\_\+mg==0)?1\+:\+\_\+mg, 1$>$ {\bf nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size}$<$ \+\_\+ma, \+\_\+me, \+\_\+mg, \+\_\+n $>$\+::{\bf Typeh}}\label{classnmr_l_sq_lin_solution_fixed_size_aa86f02bad0142d8bccac845d426bb153}
+\hypertarget{classnmr_l_sq_lin_solution_fixed_size_adf9a982c0414dafb9fb1164b8da4f96f}{}\index{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size@{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size}!Type\+Input@{Type\+Input}}
+\index{Type\+Input@{Type\+Input}!nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size@{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size}}
+\subsubsection[{Type\+Input}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+ma, vct\+::size\+\_\+type \+\_\+me, vct\+::size\+\_\+type \+\_\+mg, vct\+::size\+\_\+type \+\_\+n$>$ typedef {\bf vct\+Fixed\+Size\+Matrix}$<$C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E, \+\_\+ma + \+\_\+me + \+\_\+mg, \+\_\+n + 1, {\bf V\+C\+T\+\_\+\+C\+O\+L\+\_\+\+M\+A\+J\+O\+R}$>$ {\bf nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size}$<$ \+\_\+ma, \+\_\+me, \+\_\+mg, \+\_\+n $>$\+::{\bf Type\+Input}}\label{classnmr_l_sq_lin_solution_fixed_size_adf9a982c0414dafb9fb1164b8da4f96f}
+\hypertarget{classnmr_l_sq_lin_solution_fixed_size_a1838601b0a3e6fa7972e8854b888152a}{}\index{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size@{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size}!Type\+I\+Work@{Type\+I\+Work}}
+\index{Type\+I\+Work@{Type\+I\+Work}!nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size@{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size}}
+\subsubsection[{Type\+I\+Work}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+ma, vct\+::size\+\_\+type \+\_\+me, vct\+::size\+\_\+type \+\_\+mg, vct\+::size\+\_\+type \+\_\+n$>$ typedef {\bf vct\+Fixed\+Size\+Vector}$<$C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R, {\bf L\+I\+W\+O\+R\+K}$>$ {\bf nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size}$<$ \+\_\+ma, \+\_\+me, \+\_\+mg, \+\_\+n $>$\+::{\bf Type\+I\+Work}}\label{classnmr_l_sq_lin_solution_fixed_size_a1838601b0a3e6fa7972e8854b888152a}
+\hypertarget{classnmr_l_sq_lin_solution_fixed_size_a384dc1235386018c6edbdc782c5f84be}{}\index{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size@{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size}!Type\+R\+Norm@{Type\+R\+Norm}}
+\index{Type\+R\+Norm@{Type\+R\+Norm}!nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size@{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size}}
+\subsubsection[{Type\+R\+Norm}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+ma, vct\+::size\+\_\+type \+\_\+me, vct\+::size\+\_\+type \+\_\+mg, vct\+::size\+\_\+type \+\_\+n$>$ typedef {\bf vct\+Fixed\+Size\+Vector}$<$C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E, \+\_\+ma + \+\_\+me$>$ {\bf nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size}$<$ \+\_\+ma, \+\_\+me, \+\_\+mg, \+\_\+n $>$\+::{\bf Type\+R\+Norm}}\label{classnmr_l_sq_lin_solution_fixed_size_a384dc1235386018c6edbdc782c5f84be}
+\hypertarget{classnmr_l_sq_lin_solution_fixed_size_a8d12c1d86e766d8b7782e39f38b90073}{}\index{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size@{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size}!Type\+R\+Norm\+E@{Type\+R\+Norm\+E}}
+\index{Type\+R\+Norm\+E@{Type\+R\+Norm\+E}!nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size@{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size}}
+\subsubsection[{Type\+R\+Norm\+E}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+ma, vct\+::size\+\_\+type \+\_\+me, vct\+::size\+\_\+type \+\_\+mg, vct\+::size\+\_\+type \+\_\+n$>$ typedef {\bf vct\+Fixed\+Size\+Vector\+Ref}$<$C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E, (\+\_\+me==0)?1\+:\+\_\+me, 1$>$ {\bf nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size}$<$ \+\_\+ma, \+\_\+me, \+\_\+mg, \+\_\+n $>$\+::{\bf Type\+R\+Norm\+E}}\label{classnmr_l_sq_lin_solution_fixed_size_a8d12c1d86e766d8b7782e39f38b90073}
+\hypertarget{classnmr_l_sq_lin_solution_fixed_size_a61e14c469c463bc06a411061aad13b3a}{}\index{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size@{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size}!Type\+R\+Norm\+L@{Type\+R\+Norm\+L}}
+\index{Type\+R\+Norm\+L@{Type\+R\+Norm\+L}!nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size@{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size}}
+\subsubsection[{Type\+R\+Norm\+L}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+ma, vct\+::size\+\_\+type \+\_\+me, vct\+::size\+\_\+type \+\_\+mg, vct\+::size\+\_\+type \+\_\+n$>$ typedef {\bf vct\+Fixed\+Size\+Vector\+Ref}$<$C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E, \+\_\+ma, 1$>$ {\bf nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size}$<$ \+\_\+ma, \+\_\+me, \+\_\+mg, \+\_\+n $>$\+::{\bf Type\+R\+Norm\+L}}\label{classnmr_l_sq_lin_solution_fixed_size_a61e14c469c463bc06a411061aad13b3a}
+\hypertarget{classnmr_l_sq_lin_solution_fixed_size_a2804f3b3815a82a0f9655bcd2f86e7e4}{}\index{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size@{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size}!Type\+Work@{Type\+Work}}
+\index{Type\+Work@{Type\+Work}!nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size@{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size}}
+\subsubsection[{Type\+Work}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+ma, vct\+::size\+\_\+type \+\_\+me, vct\+::size\+\_\+type \+\_\+mg, vct\+::size\+\_\+type \+\_\+n$>$ typedef {\bf vct\+Fixed\+Size\+Vector}$<$C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E, {\bf L\+W\+O\+R\+K}$>$ {\bf nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size}$<$ \+\_\+ma, \+\_\+me, \+\_\+mg, \+\_\+n $>$\+::{\bf Type\+Work}}\label{classnmr_l_sq_lin_solution_fixed_size_a2804f3b3815a82a0f9655bcd2f86e7e4}
+\hypertarget{classnmr_l_sq_lin_solution_fixed_size_aa00d3b54073dac6aba6e3793d4f88348}{}\index{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size@{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size}!Type\+X@{Type\+X}}
+\index{Type\+X@{Type\+X}!nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size@{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size}}
+\subsubsection[{Type\+X}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+ma, vct\+::size\+\_\+type \+\_\+me, vct\+::size\+\_\+type \+\_\+mg, vct\+::size\+\_\+type \+\_\+n$>$ typedef {\bf vct\+Fixed\+Size\+Vector}$<$C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E, \+\_\+n$>$ {\bf nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size}$<$ \+\_\+ma, \+\_\+me, \+\_\+mg, \+\_\+n $>$\+::{\bf Type\+X}}\label{classnmr_l_sq_lin_solution_fixed_size_aa00d3b54073dac6aba6e3793d4f88348}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classnmr_l_sq_lin_solution_fixed_size_a063deb807bc813e22dd91e6c46b807d6}{}\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+ma, vct\+::size\+\_\+type \+\_\+me, vct\+::size\+\_\+type \+\_\+mg, vct\+::size\+\_\+type \+\_\+n$>$ anonymous enum}\label{classnmr_l_sq_lin_solution_fixed_size_a063deb807bc813e22dd91e6c46b807d6}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{M\+I\+N\+\_\+\+M\+N@{M\+I\+N\+\_\+\+M\+N}!nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size@{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size}}\index{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size@{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size}!M\+I\+N\+\_\+\+M\+N@{M\+I\+N\+\_\+\+M\+N}}\item[{\em 
+\hypertarget{classnmr_l_sq_lin_solution_fixed_size_a063deb807bc813e22dd91e6c46b807d6ae3e4f8b142b5889bc0b2126e9537c8b2}{}M\+I\+N\+\_\+\+M\+N\label{classnmr_l_sq_lin_solution_fixed_size_a063deb807bc813e22dd91e6c46b807d6ae3e4f8b142b5889bc0b2126e9537c8b2}
+}]\end{description}
+\end{Desc}
+\hypertarget{classnmr_l_sq_lin_solution_fixed_size_a195fd9dda7262435a876c1a88037b90c}{}\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+ma, vct\+::size\+\_\+type \+\_\+me, vct\+::size\+\_\+type \+\_\+mg, vct\+::size\+\_\+type \+\_\+n$>$ anonymous enum}\label{classnmr_l_sq_lin_solution_fixed_size_a195fd9dda7262435a876c1a88037b90c}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{K@{K}!nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size@{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size}}\index{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size@{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size}!K@{K}}\item[{\em 
+\hypertarget{classnmr_l_sq_lin_solution_fixed_size_a195fd9dda7262435a876c1a88037b90ca4e75ba2df09e63a5497124b135e202e3}{}K\label{classnmr_l_sq_lin_solution_fixed_size_a195fd9dda7262435a876c1a88037b90ca4e75ba2df09e63a5497124b135e202e3}
+}]\end{description}
+\end{Desc}
+\hypertarget{classnmr_l_sq_lin_solution_fixed_size_abcb6a32d75ed163cd311c2bd29f62d49}{}\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+ma, vct\+::size\+\_\+type \+\_\+me, vct\+::size\+\_\+type \+\_\+mg, vct\+::size\+\_\+type \+\_\+n$>$ anonymous enum}\label{classnmr_l_sq_lin_solution_fixed_size_abcb6a32d75ed163cd311c2bd29f62d49}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{L\+W\+O\+R\+K\+\_\+\+L\+S@{L\+W\+O\+R\+K\+\_\+\+L\+S}!nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size@{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size}}\index{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size@{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size}!L\+W\+O\+R\+K\+\_\+\+L\+S@{L\+W\+O\+R\+K\+\_\+\+L\+S}}\item[{\em 
+\hypertarget{classnmr_l_sq_lin_solution_fixed_size_abcb6a32d75ed163cd311c2bd29f62d49a5f815776fb43b9780b8f7856b74937f1}{}L\+W\+O\+R\+K\+\_\+\+L\+S\label{classnmr_l_sq_lin_solution_fixed_size_abcb6a32d75ed163cd311c2bd29f62d49a5f815776fb43b9780b8f7856b74937f1}
+}]\end{description}
+\end{Desc}
+\hypertarget{classnmr_l_sq_lin_solution_fixed_size_ad373aff51e5dd5ae2749ef98f256603c}{}\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+ma, vct\+::size\+\_\+type \+\_\+me, vct\+::size\+\_\+type \+\_\+mg, vct\+::size\+\_\+type \+\_\+n$>$ anonymous enum}\label{classnmr_l_sq_lin_solution_fixed_size_ad373aff51e5dd5ae2749ef98f256603c}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{L\+W\+O\+R\+K\+\_\+\+L\+S\+I@{L\+W\+O\+R\+K\+\_\+\+L\+S\+I}!nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size@{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size}}\index{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size@{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size}!L\+W\+O\+R\+K\+\_\+\+L\+S\+I@{L\+W\+O\+R\+K\+\_\+\+L\+S\+I}}\item[{\em 
+\hypertarget{classnmr_l_sq_lin_solution_fixed_size_ad373aff51e5dd5ae2749ef98f256603cad4e1e895007caae4b907a07c8f6bff75}{}L\+W\+O\+R\+K\+\_\+\+L\+S\+I\label{classnmr_l_sq_lin_solution_fixed_size_ad373aff51e5dd5ae2749ef98f256603cad4e1e895007caae4b907a07c8f6bff75}
+}]\end{description}
+\end{Desc}
+\hypertarget{classnmr_l_sq_lin_solution_fixed_size_a0935ea26d5ca1f470185d0fb8fc9a9b5}{}\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+ma, vct\+::size\+\_\+type \+\_\+me, vct\+::size\+\_\+type \+\_\+mg, vct\+::size\+\_\+type \+\_\+n$>$ anonymous enum}\label{classnmr_l_sq_lin_solution_fixed_size_a0935ea26d5ca1f470185d0fb8fc9a9b5}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{L\+W\+O\+R\+K\+\_\+\+L\+S\+E\+I@{L\+W\+O\+R\+K\+\_\+\+L\+S\+E\+I}!nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size@{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size}}\index{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size@{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size}!L\+W\+O\+R\+K\+\_\+\+L\+S\+E\+I@{L\+W\+O\+R\+K\+\_\+\+L\+S\+E\+I}}\item[{\em 
+\hypertarget{classnmr_l_sq_lin_solution_fixed_size_a0935ea26d5ca1f470185d0fb8fc9a9b5a509d9c24964fdf1469993d4a5bc0ec02}{}L\+W\+O\+R\+K\+\_\+\+L\+S\+E\+I\label{classnmr_l_sq_lin_solution_fixed_size_a0935ea26d5ca1f470185d0fb8fc9a9b5a509d9c24964fdf1469993d4a5bc0ec02}
+}]\end{description}
+\end{Desc}
+\hypertarget{classnmr_l_sq_lin_solution_fixed_size_a3bcd6f5502072a715fd33d81f4d89411}{}\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+ma, vct\+::size\+\_\+type \+\_\+me, vct\+::size\+\_\+type \+\_\+mg, vct\+::size\+\_\+type \+\_\+n$>$ anonymous enum}\label{classnmr_l_sq_lin_solution_fixed_size_a3bcd6f5502072a715fd33d81f4d89411}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{L\+W\+O\+R\+K\+\_\+\+T\+M\+P@{L\+W\+O\+R\+K\+\_\+\+T\+M\+P}!nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size@{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size}}\index{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size@{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size}!L\+W\+O\+R\+K\+\_\+\+T\+M\+P@{L\+W\+O\+R\+K\+\_\+\+T\+M\+P}}\item[{\em 
+\hypertarget{classnmr_l_sq_lin_solution_fixed_size_a3bcd6f5502072a715fd33d81f4d89411abff983994905aed52bfd51bf9f66d6df}{}L\+W\+O\+R\+K\+\_\+\+T\+M\+P\label{classnmr_l_sq_lin_solution_fixed_size_a3bcd6f5502072a715fd33d81f4d89411abff983994905aed52bfd51bf9f66d6df}
+}]\end{description}
+\end{Desc}
+\hypertarget{classnmr_l_sq_lin_solution_fixed_size_ac46fee8cb4a87666ea735949ff921531}{}\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+ma, vct\+::size\+\_\+type \+\_\+me, vct\+::size\+\_\+type \+\_\+mg, vct\+::size\+\_\+type \+\_\+n$>$ anonymous enum}\label{classnmr_l_sq_lin_solution_fixed_size_ac46fee8cb4a87666ea735949ff921531}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{L\+W\+O\+R\+K@{L\+W\+O\+R\+K}!nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size@{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size}}\index{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size@{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size}!L\+W\+O\+R\+K@{L\+W\+O\+R\+K}}\item[{\em 
+\hypertarget{classnmr_l_sq_lin_solution_fixed_size_ac46fee8cb4a87666ea735949ff921531acacf0e784782d62fc0567d6c62575610}{}L\+W\+O\+R\+K\label{classnmr_l_sq_lin_solution_fixed_size_ac46fee8cb4a87666ea735949ff921531acacf0e784782d62fc0567d6c62575610}
+}]\end{description}
+\end{Desc}
+\hypertarget{classnmr_l_sq_lin_solution_fixed_size_a6cb29b5b81e8b4782fd24a46a2392e6e}{}\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+ma, vct\+::size\+\_\+type \+\_\+me, vct\+::size\+\_\+type \+\_\+mg, vct\+::size\+\_\+type \+\_\+n$>$ anonymous enum}\label{classnmr_l_sq_lin_solution_fixed_size_a6cb29b5b81e8b4782fd24a46a2392e6e}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{L\+I\+W\+O\+R\+K@{L\+I\+W\+O\+R\+K}!nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size@{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size}}\index{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size@{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size}!L\+I\+W\+O\+R\+K@{L\+I\+W\+O\+R\+K}}\item[{\em 
+\hypertarget{classnmr_l_sq_lin_solution_fixed_size_a6cb29b5b81e8b4782fd24a46a2392e6eae423106426616171263d79efdfc0b1dd}{}L\+I\+W\+O\+R\+K\label{classnmr_l_sq_lin_solution_fixed_size_a6cb29b5b81e8b4782fd24a46a2392e6eae423106426616171263d79efdfc0b1dd}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classnmr_l_sq_lin_solution_fixed_size_a3060f6d235cfc41dbeefe8d8dbc50ba3}{}\index{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size@{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size}!nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size@{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size}}
+\index{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size@{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size}!nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size@{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size}}
+\subsubsection[{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+ma, vct\+::size\+\_\+type \+\_\+me, vct\+::size\+\_\+type \+\_\+mg, vct\+::size\+\_\+type \+\_\+n$>$ {\bf nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size}$<$ \+\_\+ma, \+\_\+me, \+\_\+mg, \+\_\+n $>$\+::{\bf nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classnmr_l_sq_lin_solution_fixed_size_a3060f6d235cfc41dbeefe8d8dbc50ba3}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classnmr_l_sq_lin_solution_fixed_size_a4b7c9a9b618661f5d2e60859755eddf4}{}\index{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size@{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size}!Get\+R\+Norm@{Get\+R\+Norm}}
+\index{Get\+R\+Norm@{Get\+R\+Norm}!nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size@{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size}}
+\subsubsection[{Get\+R\+Norm}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+ma, vct\+::size\+\_\+type \+\_\+me, vct\+::size\+\_\+type \+\_\+mg, vct\+::size\+\_\+type \+\_\+n$>$ const {\bf Type\+R\+Norm\+L}\& {\bf nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size}$<$ \+\_\+ma, \+\_\+me, \+\_\+mg, \+\_\+n $>$\+::Get\+R\+Norm (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classnmr_l_sq_lin_solution_fixed_size_a4b7c9a9b618661f5d2e60859755eddf4}
+\hypertarget{classnmr_l_sq_lin_solution_fixed_size_aee6661611d7ef29b421f78598c942730}{}\index{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size@{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size}!Get\+R\+Norm\+E@{Get\+R\+Norm\+E}}
+\index{Get\+R\+Norm\+E@{Get\+R\+Norm\+E}!nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size@{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size}}
+\subsubsection[{Get\+R\+Norm\+E}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+ma, vct\+::size\+\_\+type \+\_\+me, vct\+::size\+\_\+type \+\_\+mg, vct\+::size\+\_\+type \+\_\+n$>$ const {\bf Type\+R\+Norm\+E}\& {\bf nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size}$<$ \+\_\+ma, \+\_\+me, \+\_\+mg, \+\_\+n $>$\+::Get\+R\+Norm\+E (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classnmr_l_sq_lin_solution_fixed_size_aee6661611d7ef29b421f78598c942730}
+\hypertarget{classnmr_l_sq_lin_solution_fixed_size_ac71994a5fb212ccf098e14e56656a258}{}\index{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size@{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size}!Get\+X@{Get\+X}}
+\index{Get\+X@{Get\+X}!nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size@{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size}}
+\subsubsection[{Get\+X}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+ma, vct\+::size\+\_\+type \+\_\+me, vct\+::size\+\_\+type \+\_\+mg, vct\+::size\+\_\+type \+\_\+n$>$ const {\bf Type\+X}\& {\bf nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size}$<$ \+\_\+ma, \+\_\+me, \+\_\+mg, \+\_\+n $>$\+::Get\+X (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classnmr_l_sq_lin_solution_fixed_size_ac71994a5fb212ccf098e14e56656a258}
+In order to get access to X, after the have been computed by calling nmr\+L\+Sq\+Lin function. use the following methods. 
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classnmr_l_sq_lin_solution_fixed_size_a7f8321d57e81bc613d5dbef3410ba70e}{}\index{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size@{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size}!Friend@{Friend}}
+\index{Friend@{Friend}!nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size@{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size}}
+\subsubsection[{Friend}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+ma, vct\+::size\+\_\+type \+\_\+me, vct\+::size\+\_\+type \+\_\+mg, vct\+::size\+\_\+type \+\_\+n$>$ friend class {\bf Friend}\hspace{0.3cm}{\ttfamily [friend]}}\label{classnmr_l_sq_lin_solution_fixed_size_a7f8321d57e81bc613d5dbef3410ba70e}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classnmr_l_sq_lin_solution_fixed_size_aabb06ec545a84d0e6cf73353c88d7bba}{}\index{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size@{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size}!Input\+Memory@{Input\+Memory}}
+\index{Input\+Memory@{Input\+Memory}!nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size@{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size}}
+\subsubsection[{Input\+Memory}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+ma, vct\+::size\+\_\+type \+\_\+me, vct\+::size\+\_\+type \+\_\+mg, vct\+::size\+\_\+type \+\_\+n$>$ {\bf Type\+Input} {\bf nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size}$<$ \+\_\+ma, \+\_\+me, \+\_\+mg, \+\_\+n $>$\+::Input\+Memory\hspace{0.3cm}{\ttfamily [protected]}}\label{classnmr_l_sq_lin_solution_fixed_size_aabb06ec545a84d0e6cf73353c88d7bba}
+Memory allocated for input if needed The L\+S\+E\+I (constrained least squares) require that the the input matrices be in one continous memory block ordered accoring to fortran order (Column Major format), such that first Mc rows and N columns represent A, Ma rows and N+1 th column represent b next Me rows represent (E, f) and last Mg rows represent (G, h) where the original L\+S\+E\+I problem is arg min $\vert$$\vert$ A x -\/ b $\vert$$\vert$, s.\+t. E x = f and G x $>$= h. The input for L\+S\+I is similar other than Me == 0. \hypertarget{classnmr_l_sq_lin_solution_fixed_size_a679c28e537d3e2c4d0be4592715715eb}{}\index{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size@{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size}!I\+Workspace\+Memory@{I\+Workspace\+Memory}}
+\index{I\+Workspace\+Memory@{I\+Workspace\+Memory}!nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size@{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size}}
+\subsubsection[{I\+Workspace\+Memory}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+ma, vct\+::size\+\_\+type \+\_\+me, vct\+::size\+\_\+type \+\_\+mg, vct\+::size\+\_\+type \+\_\+n$>$ {\bf Type\+I\+Work} {\bf nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size}$<$ \+\_\+ma, \+\_\+me, \+\_\+mg, \+\_\+n $>$\+::I\+Workspace\+Memory\hspace{0.3cm}{\ttfamily [protected]}}\label{classnmr_l_sq_lin_solution_fixed_size_a679c28e537d3e2c4d0be4592715715eb}
+\hypertarget{classnmr_l_sq_lin_solution_fixed_size_ab8968759e536db86f658fe569aec7c4c}{}\index{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size@{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size}!R\+Norm@{R\+Norm}}
+\index{R\+Norm@{R\+Norm}!nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size@{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size}}
+\subsubsection[{R\+Norm}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+ma, vct\+::size\+\_\+type \+\_\+me, vct\+::size\+\_\+type \+\_\+mg, vct\+::size\+\_\+type \+\_\+n$>$ {\bf Type\+R\+Norm} {\bf nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size}$<$ \+\_\+ma, \+\_\+me, \+\_\+mg, \+\_\+n $>$\+::R\+Norm\hspace{0.3cm}{\ttfamily [protected]}}\label{classnmr_l_sq_lin_solution_fixed_size_ab8968759e536db86f658fe569aec7c4c}
+Memory allocated for norms if needed. \hypertarget{classnmr_l_sq_lin_solution_fixed_size_a7db2609534904651db0df467d94c13ad}{}\index{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size@{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size}!R\+Norm\+E@{R\+Norm\+E}}
+\index{R\+Norm\+E@{R\+Norm\+E}!nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size@{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size}}
+\subsubsection[{R\+Norm\+E}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+ma, vct\+::size\+\_\+type \+\_\+me, vct\+::size\+\_\+type \+\_\+mg, vct\+::size\+\_\+type \+\_\+n$>$ {\bf Type\+R\+Norm\+E} {\bf nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size}$<$ \+\_\+ma, \+\_\+me, \+\_\+mg, \+\_\+n $>$\+::R\+Norm\+E\hspace{0.3cm}{\ttfamily [protected]}}\label{classnmr_l_sq_lin_solution_fixed_size_a7db2609534904651db0df467d94c13ad}
+\hypertarget{classnmr_l_sq_lin_solution_fixed_size_ae7fc2b92147410b773caab779fefcb66}{}\index{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size@{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size}!R\+Norm\+L@{R\+Norm\+L}}
+\index{R\+Norm\+L@{R\+Norm\+L}!nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size@{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size}}
+\subsubsection[{R\+Norm\+L}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+ma, vct\+::size\+\_\+type \+\_\+me, vct\+::size\+\_\+type \+\_\+mg, vct\+::size\+\_\+type \+\_\+n$>$ {\bf Type\+R\+Norm\+L} {\bf nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size}$<$ \+\_\+ma, \+\_\+me, \+\_\+mg, \+\_\+n $>$\+::R\+Norm\+L\hspace{0.3cm}{\ttfamily [protected]}}\label{classnmr_l_sq_lin_solution_fixed_size_ae7fc2b92147410b773caab779fefcb66}
+\hypertarget{classnmr_l_sq_lin_solution_fixed_size_a3718294e665cb353e17c58bae35e91ef}{}\index{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size@{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size}!Workspace\+Memory@{Workspace\+Memory}}
+\index{Workspace\+Memory@{Workspace\+Memory}!nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size@{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size}}
+\subsubsection[{Workspace\+Memory}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+ma, vct\+::size\+\_\+type \+\_\+me, vct\+::size\+\_\+type \+\_\+mg, vct\+::size\+\_\+type \+\_\+n$>$ {\bf Type\+Work} {\bf nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size}$<$ \+\_\+ma, \+\_\+me, \+\_\+mg, \+\_\+n $>$\+::Workspace\+Memory\hspace{0.3cm}{\ttfamily [protected]}}\label{classnmr_l_sq_lin_solution_fixed_size_a3718294e665cb353e17c58bae35e91ef}
+Memory allocated for Workspace matrices if needed \hypertarget{classnmr_l_sq_lin_solution_fixed_size_ae6be321dc3efeb73c08a9b66ca650c59}{}\index{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size@{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size}!X@{X}}
+\index{X@{X}!nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size@{nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size}}
+\subsubsection[{X}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+ma, vct\+::size\+\_\+type \+\_\+me, vct\+::size\+\_\+type \+\_\+mg, vct\+::size\+\_\+type \+\_\+n$>$ {\bf Type\+X} {\bf nmr\+L\+Sq\+Lin\+Solution\+Fixed\+Size}$<$ \+\_\+ma, \+\_\+me, \+\_\+mg, \+\_\+n $>$\+::X\hspace{0.3cm}{\ttfamily [protected]}}\label{classnmr_l_sq_lin_solution_fixed_size_ae6be321dc3efeb73c08a9b66ca650c59}
+References to work or return or input types, these point either to user allocated memory or our memory chunks if needed 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Numerical/\hyperlink{nmr_l_sq_lin_8h}{nmr\+L\+Sq\+Lin.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,217 @@
+\hypertarget{classmts_task_continuous}{}\section{mts\+Task\+Continuous Class Reference}
+\label{classmts_task_continuous}\index{mts\+Task\+Continuous@{mts\+Task\+Continuous}}
+
+
+{\ttfamily \#include $<$mts\+Task\+Continuous.\+h$>$}
+
+Inheritance diagram for mts\+Task\+Continuous\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{d2/d8b/classmts_task_continuous}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classmts_task}{mts\+Task} \hyperlink{classmts_task_continuous_ab1c75a7d5ac83cba5bc21ebd4a31d804}{Base\+Type}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmts_task_continuous_aa4b574ad6b3400d74e0986658648c787}{mts\+Task\+Continuous} (const std\+::string \&name, unsigned int size\+State\+Table=256, bool new\+Thread=true)
+\item 
+\hyperlink{classmts_task_continuous_a71a509719307ae6318756ecb0c2af84b}{mts\+Task\+Continuous} (const \hyperlink{classmts_task_continuous_constructor_arg}{mts\+Task\+Continuous\+Constructor\+Arg} \&arg)
+\item 
+virtual \hyperlink{classmts_task_continuous_a654204c18f81e298a988e89a3a524d02}{$\sim$mts\+Task\+Continuous} ()
+\item 
+void \hyperlink{classmts_task_continuous_a28e79bc5f1a3eb9b7ef01910dd2b55e8}{Create} (void $\ast$data=0)
+\item 
+void \hyperlink{classmts_task_continuous_a935299c6e0bb33bb524fee95610a40ee}{Start} (void)
+\item 
+void \hyperlink{classmts_task_continuous_ac227f446b1316fa938016d3190652f0d}{Suspend} (void)
+\item 
+void \hyperlink{classmts_task_continuous_ad1f8145306e074fbea8baab3beef4c5b}{Kill} (void)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void $\ast$ \hyperlink{classmts_task_continuous_ae7335e46dbed0ab3e1e44b628c438319}{Run\+Internal} (void $\ast$argument)
+\item 
+virtual void \hyperlink{classmts_task_continuous_ac15a9fc5d7e15c27a3677171770069c0}{Start\+Internal} (void)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classmts_task_continuous_a10a9569559a59e62d28ab29c6fc7636c}{New\+Thread}
+\item 
+bool \hyperlink{classmts_task_continuous_ae820327812640e231d44a4b2ad6b148e}{Capture\+Thread}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classmts_task_continuous_a21d47396ed8d4c10b5acd6a083b219f9}{mts\+Task\+Manager}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This class inherits from \hyperlink{classmts_task}{mts\+Task} and provides the base for implementing continuous loops, where the user-\/supplied Run method is repeatedly invoked. It also introduces the possibility to create a new thread or to use an existing thread for the task. 
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classmts_task_continuous_ab1c75a7d5ac83cba5bc21ebd4a31d804}{}\index{mts\+Task\+Continuous@{mts\+Task\+Continuous}!Base\+Type@{Base\+Type}}
+\index{Base\+Type@{Base\+Type}!mts\+Task\+Continuous@{mts\+Task\+Continuous}}
+\subsubsection[{Base\+Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf mts\+Task} {\bf mts\+Task\+Continuous\+::\+Base\+Type}}\label{classmts_task_continuous_ab1c75a7d5ac83cba5bc21ebd4a31d804}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmts_task_continuous_aa4b574ad6b3400d74e0986658648c787}{}\index{mts\+Task\+Continuous@{mts\+Task\+Continuous}!mts\+Task\+Continuous@{mts\+Task\+Continuous}}
+\index{mts\+Task\+Continuous@{mts\+Task\+Continuous}!mts\+Task\+Continuous@{mts\+Task\+Continuous}}
+\subsubsection[{mts\+Task\+Continuous}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Task\+Continuous\+::mts\+Task\+Continuous (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name, }
+\item[{unsigned int}]{size\+State\+Table = {\ttfamily 256}, }
+\item[{bool}]{new\+Thread = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}\label{classmts_task_continuous_aa4b574ad6b3400d74e0986658648c787}
+Create a task with name \textquotesingle{}name\textquotesingle{} that has a state table of the specified size.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the task \\
+\hline
+{\em size\+State\+Table} & The history size of the state table \\
+\hline
+{\em new\+Thread} & True if a new thread should be created for this task\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+See note in \hyperlink{classmts_task}{mts\+Task} regarding length of string name.
+\end{DoxyNote}
+If new\+Thread is false, the task will not create a new thread, but will rather \char`\"{}capture\char`\"{} an existing thread. This is done as follows\+:
+
+1) Call \hyperlink{classmts_task_continuous_a28e79bc5f1a3eb9b7ef01910dd2b55e8}{mts\+Task\+Continuous\+::\+Create} from the thread to be captured. The class will get the thread id for the current thread and use it to initialize all interfaces in \hyperlink{classmts_task_a6816f8dfc6124376896318ebcdd4832b}{mts\+Task\+::\+Startup\+Internal}. Once this is done, Create returns to the calling thread.
+
+2) Call \hyperlink{classmts_task_continuous_a935299c6e0bb33bb524fee95610a40ee}{mts\+Task\+Continuous\+::\+Start} from the thread to be captured. This function captures the thread, and uses it to call the \hyperlink{classmts_task_a20e18c9479cb650792456c32ee689834}{mts\+Task\+::\+Run} method. It does not return until the task is terminated.
+
+Other tasks can use \hyperlink{classmts_component_a7264642eb5c56729d1f80263e0e1152b}{mts\+Task\+::\+Suspend} and \hyperlink{classmts_component_abfb4a63739ec45a9cdb91e3363db7c5c}{mts\+Task\+::\+Start} to suspend and resume this task, or \hyperlink{classmts_task_a67a15d7fffef28708b813e2ea624e4f8}{mts\+Task\+::\+Kill} to terminate it. In other words, once started the task should behave the same regardless of whether or not a new thread was created.
+
+Note that \hyperlink{classmts_task_from_callback}{mts\+Task\+From\+Callback} provides another mechanism for using an existing thread. In that case, the task does not capture the thread, but just registers itself as a callback.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classmts_task}{mts\+Task}, \hyperlink{classmts_task_periodic}{mts\+Task\+Periodic}, \hyperlink{classmts_task_from_signal}{mts\+Task\+From\+Signal}, \hyperlink{classmts_task_from_callback}{mts\+Task\+From\+Callback} 
+\end{DoxySeeAlso}
+\hypertarget{classmts_task_continuous_a71a509719307ae6318756ecb0c2af84b}{}\index{mts\+Task\+Continuous@{mts\+Task\+Continuous}!mts\+Task\+Continuous@{mts\+Task\+Continuous}}
+\index{mts\+Task\+Continuous@{mts\+Task\+Continuous}!mts\+Task\+Continuous@{mts\+Task\+Continuous}}
+\subsubsection[{mts\+Task\+Continuous}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Task\+Continuous\+::mts\+Task\+Continuous (
+\begin{DoxyParamCaption}
+\item[{const {\bf mts\+Task\+Continuous\+Constructor\+Arg} \&}]{arg}
+\end{DoxyParamCaption}
+)}\label{classmts_task_continuous_a71a509719307ae6318756ecb0c2af84b}
+\hypertarget{classmts_task_continuous_a654204c18f81e298a988e89a3a524d02}{}\index{mts\+Task\+Continuous@{mts\+Task\+Continuous}!````~mts\+Task\+Continuous@{$\sim$mts\+Task\+Continuous}}
+\index{````~mts\+Task\+Continuous@{$\sim$mts\+Task\+Continuous}!mts\+Task\+Continuous@{mts\+Task\+Continuous}}
+\subsubsection[{$\sim$mts\+Task\+Continuous}]{\setlength{\rightskip}{0pt plus 5cm}virtual mts\+Task\+Continuous\+::$\sim$mts\+Task\+Continuous (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_task_continuous_a654204c18f81e298a988e89a3a524d02}
+Default Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classmts_task_continuous_a28e79bc5f1a3eb9b7ef01910dd2b55e8}{}\index{mts\+Task\+Continuous@{mts\+Task\+Continuous}!Create@{Create}}
+\index{Create@{Create}!mts\+Task\+Continuous@{mts\+Task\+Continuous}}
+\subsubsection[{Create}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Task\+Continuous\+::\+Create (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{data = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_task_continuous_a28e79bc5f1a3eb9b7ef01910dd2b55e8}
+
+
+Implements \hyperlink{classmts_task_aa051581f8b5c35105d595d7a46ccbe17}{mts\+Task}.
+
+\hypertarget{classmts_task_continuous_ad1f8145306e074fbea8baab3beef4c5b}{}\index{mts\+Task\+Continuous@{mts\+Task\+Continuous}!Kill@{Kill}}
+\index{Kill@{Kill}!mts\+Task\+Continuous@{mts\+Task\+Continuous}}
+\subsubsection[{Kill}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Task\+Continuous\+::\+Kill (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_task_continuous_ad1f8145306e074fbea8baab3beef4c5b}
+End the task 
+
+Reimplemented from \hyperlink{classmts_task_a67a15d7fffef28708b813e2ea624e4f8}{mts\+Task}.
+
+
+
+Reimplemented in \hyperlink{classmts_task_from_signal_a9a1b6e7c80ca2c2fdc14de78e3635922}{mts\+Task\+From\+Signal}.
+
+\hypertarget{classmts_task_continuous_ae7335e46dbed0ab3e1e44b628c438319}{}\index{mts\+Task\+Continuous@{mts\+Task\+Continuous}!Run\+Internal@{Run\+Internal}}
+\index{Run\+Internal@{Run\+Internal}!mts\+Task\+Continuous@{mts\+Task\+Continuous}}
+\subsubsection[{Run\+Internal}]{\setlength{\rightskip}{0pt plus 5cm}virtual void$\ast$ mts\+Task\+Continuous\+::\+Run\+Internal (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{argument}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classmts_task_continuous_ae7335e46dbed0ab3e1e44b628c438319}
+The member function that is passed as \textquotesingle{}start routine\textquotesingle{} argument for thread creation. 
+
+Implements \hyperlink{classmts_task_affcd896841ecfe785f898ef93a4202e9}{mts\+Task}.
+
+
+
+Reimplemented in \hyperlink{classmts_task_periodic_aabe3aa8bd8d2b8d3ca488cfbe19a2c63}{mts\+Task\+Periodic}, and \hyperlink{classmts_task_from_signal_a8bdcd5913b1e3928d3dbc08a96f3fe65}{mts\+Task\+From\+Signal}.
+
+\hypertarget{classmts_task_continuous_a935299c6e0bb33bb524fee95610a40ee}{}\index{mts\+Task\+Continuous@{mts\+Task\+Continuous}!Start@{Start}}
+\index{Start@{Start}!mts\+Task\+Continuous@{mts\+Task\+Continuous}}
+\subsubsection[{Start}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Task\+Continuous\+::\+Start (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_task_continuous_a935299c6e0bb33bb524fee95610a40ee}
+Start/resume execution of the task 
+
+Reimplemented from \hyperlink{classmts_component_abfb4a63739ec45a9cdb91e3363db7c5c}{mts\+Component}.
+
+\hypertarget{classmts_task_continuous_ac15a9fc5d7e15c27a3677171770069c0}{}\index{mts\+Task\+Continuous@{mts\+Task\+Continuous}!Start\+Internal@{Start\+Internal}}
+\index{Start\+Internal@{Start\+Internal}!mts\+Task\+Continuous@{mts\+Task\+Continuous}}
+\subsubsection[{Start\+Internal}]{\setlength{\rightskip}{0pt plus 5cm}virtual void mts\+Task\+Continuous\+::\+Start\+Internal (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classmts_task_continuous_ac15a9fc5d7e15c27a3677171770069c0}
+Called from Start 
+
+Reimplemented in \hyperlink{classmts_task_periodic_ac593dd5d4352b12308c86b9a8df0c322}{mts\+Task\+Periodic}.
+
+\hypertarget{classmts_task_continuous_ac227f446b1316fa938016d3190652f0d}{}\index{mts\+Task\+Continuous@{mts\+Task\+Continuous}!Suspend@{Suspend}}
+\index{Suspend@{Suspend}!mts\+Task\+Continuous@{mts\+Task\+Continuous}}
+\subsubsection[{Suspend}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Task\+Continuous\+::\+Suspend (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_task_continuous_ac227f446b1316fa938016d3190652f0d}
+Suspend the execution of the task 
+
+Reimplemented from \hyperlink{classmts_component_a7264642eb5c56729d1f80263e0e1152b}{mts\+Component}.
+
+
+
+Reimplemented in \hyperlink{classmts_task_periodic_af3e36d8b4f558dc69e9667ed060828cf}{mts\+Task\+Periodic}.
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classmts_task_continuous_a21d47396ed8d4c10b5acd6a083b219f9}{}\index{mts\+Task\+Continuous@{mts\+Task\+Continuous}!mts\+Task\+Manager@{mts\+Task\+Manager}}
+\index{mts\+Task\+Manager@{mts\+Task\+Manager}!mts\+Task\+Continuous@{mts\+Task\+Continuous}}
+\subsubsection[{mts\+Task\+Manager}]{\setlength{\rightskip}{0pt plus 5cm}friend class mts\+Task\+Manager\hspace{0.3cm}{\ttfamily [friend]}}\label{classmts_task_continuous_a21d47396ed8d4c10b5acd6a083b219f9}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classmts_task_continuous_ae820327812640e231d44a4b2ad6b148e}{}\index{mts\+Task\+Continuous@{mts\+Task\+Continuous}!Capture\+Thread@{Capture\+Thread}}
+\index{Capture\+Thread@{Capture\+Thread}!mts\+Task\+Continuous@{mts\+Task\+Continuous}}
+\subsubsection[{Capture\+Thread}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Task\+Continuous\+::\+Capture\+Thread\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_task_continuous_ae820327812640e231d44a4b2ad6b148e}
+If a new thread is not created, we need to capture the current thread on the first call to Start. \hypertarget{classmts_task_continuous_a10a9569559a59e62d28ab29c6fc7636c}{}\index{mts\+Task\+Continuous@{mts\+Task\+Continuous}!New\+Thread@{New\+Thread}}
+\index{New\+Thread@{New\+Thread}!mts\+Task\+Continuous@{mts\+Task\+Continuous}}
+\subsubsection[{New\+Thread}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Task\+Continuous\+::\+New\+Thread\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_task_continuous_a10a9569559a59e62d28ab29c6fc7636c}
+True if a new thread should be created for this task. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Multi\+Task/\hyperlink{mts_task_continuous_8h}{mts\+Task\+Continuous.\+h}\end{DoxyCompactItemize}

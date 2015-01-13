@@ -1,0 +1,273 @@
+\hypertarget{classsvl_filter_image_overlay}{}\section{svl\+Filter\+Image\+Overlay Class Reference}
+\label{classsvl_filter_image_overlay}\index{svl\+Filter\+Image\+Overlay@{svl\+Filter\+Image\+Overlay}}
+
+
+{\ttfamily \#include $<$svl\+Filter\+Image\+Overlay.\+h$>$}
+
+Inheritance diagram for svl\+Filter\+Image\+Overlay\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{dc/db5/classsvl_filter_image_overlay}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structsvl_filter_image_overlay_1_1___transform_internal}{\+\_\+\+Transform\+Internal}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classsvl_filter_image_overlay}{svl\+Filter\+Image\+Overlay} \hyperlink{classsvl_filter_image_overlay_a9e4175de9ad9d65a5621a9fd78da6227}{This\+Type}
+\item 
+typedef svl\+Filter\+Image\+Overlay\+Types\+::\+Image\+Transform \hyperlink{classsvl_filter_image_overlay_a68354a171b2498de3aa1c5ba0ff2f002}{Image\+Transform}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsvl_filter_image_overlay_ad8e6426a1d91c01b1fa244100decd246}{svl\+Filter\+Image\+Overlay} ()
+\item 
+virtual \hyperlink{classsvl_filter_image_overlay_a14deb084ab6aaee051606de8679afa3e}{$\sim$svl\+Filter\+Image\+Overlay} ()
+\item 
+int \hyperlink{classsvl_filter_image_overlay_a55209d9094f26404bec157445491875f}{Add\+Input\+Image} (const std\+::string \&name)
+\item 
+int \hyperlink{classsvl_filter_image_overlay_af6649342f865bcd70125a066e32bbc15}{Add\+Input\+Matrix} (const std\+::string \&name)
+\item 
+int \hyperlink{classsvl_filter_image_overlay_a887fa00813cbd2cc22766a51eceba371}{Add\+Input\+Targets} (const std\+::string \&name)
+\item 
+int \hyperlink{classsvl_filter_image_overlay_a5b1ca83eafa53f24dea3efcdcc89b083}{Add\+Input\+Blobs} (const std\+::string \&name)
+\item 
+int \hyperlink{classsvl_filter_image_overlay_ac2f752b66a68d996371fe0410422a571}{Add\+Input\+Text} (const std\+::string \&name)
+\item 
+void \hyperlink{classsvl_filter_image_overlay_a6f44d99a957f7afe7a31c611196273fc}{Add\+Overlay} (\hyperlink{classsvl_overlay}{svl\+Overlay} \&overlay)
+\item 
+int \hyperlink{classsvl_filter_image_overlay_a56745c5d2b39f246ed563309be041ccf}{Add\+Queued\+Items} ()
+\item 
+int \hyperlink{classsvl_filter_image_overlay_a21402287a1dfa675e1120f3584807cc1}{Remove\+Overlay} (\hyperlink{classsvl_overlay}{svl\+Overlay} \&overlay)
+\item 
+int \hyperlink{classsvl_filter_image_overlay_a29e129be2f262cbcaa946201d4614db2}{Remove\+And\+Delete\+Overlay} (\hyperlink{classsvl_overlay}{svl\+Overlay} $\ast$overlay)
+\item 
+void \hyperlink{classsvl_filter_image_overlay_a996c36ed3c06e33aa372a1dfc6b70199}{Set\+Enable\+Input\+Sync} (bool enabled)
+\item 
+bool \hyperlink{classsvl_filter_image_overlay_a36f871d87ae65b11b209a204bed0becd}{Get\+Enable\+Input\+Sync} () const 
+\item 
+void \hyperlink{classsvl_filter_image_overlay_acfb8f04ba2e62df2d5ef285d2ca35f96}{Set\+Enable\+Transform\+Sync} (bool enabled)
+\item 
+bool \hyperlink{classsvl_filter_image_overlay_a1a70af2f7458fed3895f30249ff56480}{Get\+Enable\+Transform\+Sync} () const 
+\item 
+virtual void \hyperlink{classsvl_filter_image_overlay_afefde4a1ee3a1f8c5fecf29efa67c14f}{Set\+Transform} (const \hyperlink{classsvl_filter_image_overlay_a68354a171b2498de3aa1c5ba0ff2f002}{This\+Type\+::\+Image\+Transform} \&transform)
+\item 
+virtual void \hyperlink{classsvl_filter_image_overlay_a031a9989f7ea4d9ac45fa7664163baaf}{Set\+Transforms} (const \hyperlink{classvct_dynamic_vector}{vct\+Dynamic\+Vector}$<$ \hyperlink{classsvl_filter_image_overlay_a68354a171b2498de3aa1c5ba0ff2f002}{This\+Type\+::\+Image\+Transform} $>$ \&transforms)
+\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structsvl_filter_image_overlay_1_1___transform_internal}{svl\+Filter\+Image\+Overlay\+::\+\_\+\+Transform\+Internal} \hyperlink{classsvl_filter_image_overlay_a18061cddeca5ead367351cc833ce7c4e}{Transform\+Internal}
+\item 
+typedef std\+::map$<$ \hyperlink{classsvl_filter_input}{svl\+Filter\+Input} $\ast$, \hyperlink{classsvl_sample}{svl\+Sample} $\ast$ $>$ \hyperlink{classsvl_filter_image_overlay_a0cb98a1b14141d0a0940656ebec8d3ea}{\+\_\+\+Sample\+Cache\+Map}
+\item 
+typedef std\+::map$<$ int, \hyperlink{classsvl_filter_image_overlay_a18061cddeca5ead367351cc833ce7c4e}{Transform\+Internal} $>$ \hyperlink{classsvl_filter_image_overlay_ae7f68bdaad7a6718f5d38e99099fd1a4}{\+\_\+\+Transform\+Cache\+Map}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual int \hyperlink{classsvl_filter_image_overlay_a5bc58766f4b4b26c27b3a11215482e82}{Initialize} (\hyperlink{classsvl_sample}{svl\+Sample} $\ast$sync\+Input, \hyperlink{classsvl_sample}{svl\+Sample} $\ast$\&sync\+Output)
+\item 
+virtual int \hyperlink{classsvl_filter_image_overlay_a9c9ee1c08fa8e647597ce6b484b01607}{Process} (\hyperlink{structsvl_proc_info}{svl\+Proc\+Info} $\ast$proc\+Info, \hyperlink{classsvl_sample}{svl\+Sample} $\ast$sync\+Input, \hyperlink{classsvl_sample}{svl\+Sample} $\ast$\&sync\+Output)
+\item 
+virtual void \hyperlink{classsvl_filter_image_overlay_a062f860bb4efedcf5d67ef616c5a8ab6}{On\+Stop} ()
+\item 
+virtual void \hyperlink{classsvl_filter_image_overlay_ae012a89b44bd3b6f6c510e01a1b43603}{Create\+Interfaces} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classsvl_filter_image_overlay_a0cb98a1b14141d0a0940656ebec8d3ea}{}\index{svl\+Filter\+Image\+Overlay@{svl\+Filter\+Image\+Overlay}!\+\_\+\+Sample\+Cache\+Map@{\+\_\+\+Sample\+Cache\+Map}}
+\index{\+\_\+\+Sample\+Cache\+Map@{\+\_\+\+Sample\+Cache\+Map}!svl\+Filter\+Image\+Overlay@{svl\+Filter\+Image\+Overlay}}
+\subsubsection[{\+\_\+\+Sample\+Cache\+Map}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::map$<${\bf svl\+Filter\+Input}$\ast$, {\bf svl\+Sample}$\ast$$>$ {\bf svl\+Filter\+Image\+Overlay\+::\+\_\+\+Sample\+Cache\+Map}\hspace{0.3cm}{\ttfamily [protected]}}\label{classsvl_filter_image_overlay_a0cb98a1b14141d0a0940656ebec8d3ea}
+\hypertarget{classsvl_filter_image_overlay_ae7f68bdaad7a6718f5d38e99099fd1a4}{}\index{svl\+Filter\+Image\+Overlay@{svl\+Filter\+Image\+Overlay}!\+\_\+\+Transform\+Cache\+Map@{\+\_\+\+Transform\+Cache\+Map}}
+\index{\+\_\+\+Transform\+Cache\+Map@{\+\_\+\+Transform\+Cache\+Map}!svl\+Filter\+Image\+Overlay@{svl\+Filter\+Image\+Overlay}}
+\subsubsection[{\+\_\+\+Transform\+Cache\+Map}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::map$<$int, {\bf Transform\+Internal}$>$ {\bf svl\+Filter\+Image\+Overlay\+::\+\_\+\+Transform\+Cache\+Map}\hspace{0.3cm}{\ttfamily [protected]}}\label{classsvl_filter_image_overlay_ae7f68bdaad7a6718f5d38e99099fd1a4}
+\hypertarget{classsvl_filter_image_overlay_a68354a171b2498de3aa1c5ba0ff2f002}{}\index{svl\+Filter\+Image\+Overlay@{svl\+Filter\+Image\+Overlay}!Image\+Transform@{Image\+Transform}}
+\index{Image\+Transform@{Image\+Transform}!svl\+Filter\+Image\+Overlay@{svl\+Filter\+Image\+Overlay}}
+\subsubsection[{Image\+Transform}]{\setlength{\rightskip}{0pt plus 5cm}typedef svl\+Filter\+Image\+Overlay\+Types\+::\+Image\+Transform {\bf svl\+Filter\+Image\+Overlay\+::\+Image\+Transform}}\label{classsvl_filter_image_overlay_a68354a171b2498de3aa1c5ba0ff2f002}
+\hypertarget{classsvl_filter_image_overlay_a9e4175de9ad9d65a5621a9fd78da6227}{}\index{svl\+Filter\+Image\+Overlay@{svl\+Filter\+Image\+Overlay}!This\+Type@{This\+Type}}
+\index{This\+Type@{This\+Type}!svl\+Filter\+Image\+Overlay@{svl\+Filter\+Image\+Overlay}}
+\subsubsection[{This\+Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf svl\+Filter\+Image\+Overlay} {\bf svl\+Filter\+Image\+Overlay\+::\+This\+Type}}\label{classsvl_filter_image_overlay_a9e4175de9ad9d65a5621a9fd78da6227}
+\hypertarget{classsvl_filter_image_overlay_a18061cddeca5ead367351cc833ce7c4e}{}\index{svl\+Filter\+Image\+Overlay@{svl\+Filter\+Image\+Overlay}!Transform\+Internal@{Transform\+Internal}}
+\index{Transform\+Internal@{Transform\+Internal}!svl\+Filter\+Image\+Overlay@{svl\+Filter\+Image\+Overlay}}
+\subsubsection[{Transform\+Internal}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf svl\+Filter\+Image\+Overlay\+::\+\_\+\+Transform\+Internal}  {\bf svl\+Filter\+Image\+Overlay\+::\+Transform\+Internal}\hspace{0.3cm}{\ttfamily [protected]}}\label{classsvl_filter_image_overlay_a18061cddeca5ead367351cc833ce7c4e}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classsvl_filter_image_overlay_ad8e6426a1d91c01b1fa244100decd246}{}\index{svl\+Filter\+Image\+Overlay@{svl\+Filter\+Image\+Overlay}!svl\+Filter\+Image\+Overlay@{svl\+Filter\+Image\+Overlay}}
+\index{svl\+Filter\+Image\+Overlay@{svl\+Filter\+Image\+Overlay}!svl\+Filter\+Image\+Overlay@{svl\+Filter\+Image\+Overlay}}
+\subsubsection[{svl\+Filter\+Image\+Overlay}]{\setlength{\rightskip}{0pt plus 5cm}svl\+Filter\+Image\+Overlay\+::svl\+Filter\+Image\+Overlay (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classsvl_filter_image_overlay_ad8e6426a1d91c01b1fa244100decd246}
+\hypertarget{classsvl_filter_image_overlay_a14deb084ab6aaee051606de8679afa3e}{}\index{svl\+Filter\+Image\+Overlay@{svl\+Filter\+Image\+Overlay}!````~svl\+Filter\+Image\+Overlay@{$\sim$svl\+Filter\+Image\+Overlay}}
+\index{````~svl\+Filter\+Image\+Overlay@{$\sim$svl\+Filter\+Image\+Overlay}!svl\+Filter\+Image\+Overlay@{svl\+Filter\+Image\+Overlay}}
+\subsubsection[{$\sim$svl\+Filter\+Image\+Overlay}]{\setlength{\rightskip}{0pt plus 5cm}virtual svl\+Filter\+Image\+Overlay\+::$\sim$svl\+Filter\+Image\+Overlay (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classsvl_filter_image_overlay_a14deb084ab6aaee051606de8679afa3e}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classsvl_filter_image_overlay_a5b1ca83eafa53f24dea3efcdcc89b083}{}\index{svl\+Filter\+Image\+Overlay@{svl\+Filter\+Image\+Overlay}!Add\+Input\+Blobs@{Add\+Input\+Blobs}}
+\index{Add\+Input\+Blobs@{Add\+Input\+Blobs}!svl\+Filter\+Image\+Overlay@{svl\+Filter\+Image\+Overlay}}
+\subsubsection[{Add\+Input\+Blobs}]{\setlength{\rightskip}{0pt plus 5cm}int svl\+Filter\+Image\+Overlay\+::\+Add\+Input\+Blobs (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name}
+\end{DoxyParamCaption}
+)}\label{classsvl_filter_image_overlay_a5b1ca83eafa53f24dea3efcdcc89b083}
+\hypertarget{classsvl_filter_image_overlay_a55209d9094f26404bec157445491875f}{}\index{svl\+Filter\+Image\+Overlay@{svl\+Filter\+Image\+Overlay}!Add\+Input\+Image@{Add\+Input\+Image}}
+\index{Add\+Input\+Image@{Add\+Input\+Image}!svl\+Filter\+Image\+Overlay@{svl\+Filter\+Image\+Overlay}}
+\subsubsection[{Add\+Input\+Image}]{\setlength{\rightskip}{0pt plus 5cm}int svl\+Filter\+Image\+Overlay\+::\+Add\+Input\+Image (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name}
+\end{DoxyParamCaption}
+)}\label{classsvl_filter_image_overlay_a55209d9094f26404bec157445491875f}
+\hypertarget{classsvl_filter_image_overlay_af6649342f865bcd70125a066e32bbc15}{}\index{svl\+Filter\+Image\+Overlay@{svl\+Filter\+Image\+Overlay}!Add\+Input\+Matrix@{Add\+Input\+Matrix}}
+\index{Add\+Input\+Matrix@{Add\+Input\+Matrix}!svl\+Filter\+Image\+Overlay@{svl\+Filter\+Image\+Overlay}}
+\subsubsection[{Add\+Input\+Matrix}]{\setlength{\rightskip}{0pt plus 5cm}int svl\+Filter\+Image\+Overlay\+::\+Add\+Input\+Matrix (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name}
+\end{DoxyParamCaption}
+)}\label{classsvl_filter_image_overlay_af6649342f865bcd70125a066e32bbc15}
+\hypertarget{classsvl_filter_image_overlay_a887fa00813cbd2cc22766a51eceba371}{}\index{svl\+Filter\+Image\+Overlay@{svl\+Filter\+Image\+Overlay}!Add\+Input\+Targets@{Add\+Input\+Targets}}
+\index{Add\+Input\+Targets@{Add\+Input\+Targets}!svl\+Filter\+Image\+Overlay@{svl\+Filter\+Image\+Overlay}}
+\subsubsection[{Add\+Input\+Targets}]{\setlength{\rightskip}{0pt plus 5cm}int svl\+Filter\+Image\+Overlay\+::\+Add\+Input\+Targets (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name}
+\end{DoxyParamCaption}
+)}\label{classsvl_filter_image_overlay_a887fa00813cbd2cc22766a51eceba371}
+\hypertarget{classsvl_filter_image_overlay_ac2f752b66a68d996371fe0410422a571}{}\index{svl\+Filter\+Image\+Overlay@{svl\+Filter\+Image\+Overlay}!Add\+Input\+Text@{Add\+Input\+Text}}
+\index{Add\+Input\+Text@{Add\+Input\+Text}!svl\+Filter\+Image\+Overlay@{svl\+Filter\+Image\+Overlay}}
+\subsubsection[{Add\+Input\+Text}]{\setlength{\rightskip}{0pt plus 5cm}int svl\+Filter\+Image\+Overlay\+::\+Add\+Input\+Text (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name}
+\end{DoxyParamCaption}
+)}\label{classsvl_filter_image_overlay_ac2f752b66a68d996371fe0410422a571}
+\hypertarget{classsvl_filter_image_overlay_a6f44d99a957f7afe7a31c611196273fc}{}\index{svl\+Filter\+Image\+Overlay@{svl\+Filter\+Image\+Overlay}!Add\+Overlay@{Add\+Overlay}}
+\index{Add\+Overlay@{Add\+Overlay}!svl\+Filter\+Image\+Overlay@{svl\+Filter\+Image\+Overlay}}
+\subsubsection[{Add\+Overlay}]{\setlength{\rightskip}{0pt plus 5cm}void svl\+Filter\+Image\+Overlay\+::\+Add\+Overlay (
+\begin{DoxyParamCaption}
+\item[{{\bf svl\+Overlay} \&}]{overlay}
+\end{DoxyParamCaption}
+)}\label{classsvl_filter_image_overlay_a6f44d99a957f7afe7a31c611196273fc}
+\hypertarget{classsvl_filter_image_overlay_a56745c5d2b39f246ed563309be041ccf}{}\index{svl\+Filter\+Image\+Overlay@{svl\+Filter\+Image\+Overlay}!Add\+Queued\+Items@{Add\+Queued\+Items}}
+\index{Add\+Queued\+Items@{Add\+Queued\+Items}!svl\+Filter\+Image\+Overlay@{svl\+Filter\+Image\+Overlay}}
+\subsubsection[{Add\+Queued\+Items}]{\setlength{\rightskip}{0pt plus 5cm}int svl\+Filter\+Image\+Overlay\+::\+Add\+Queued\+Items (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classsvl_filter_image_overlay_a56745c5d2b39f246ed563309be041ccf}
+\hypertarget{classsvl_filter_image_overlay_ae012a89b44bd3b6f6c510e01a1b43603}{}\index{svl\+Filter\+Image\+Overlay@{svl\+Filter\+Image\+Overlay}!Create\+Interfaces@{Create\+Interfaces}}
+\index{Create\+Interfaces@{Create\+Interfaces}!svl\+Filter\+Image\+Overlay@{svl\+Filter\+Image\+Overlay}}
+\subsubsection[{Create\+Interfaces}]{\setlength{\rightskip}{0pt plus 5cm}virtual void svl\+Filter\+Image\+Overlay\+::\+Create\+Interfaces (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classsvl_filter_image_overlay_ae012a89b44bd3b6f6c510e01a1b43603}
+\hypertarget{classsvl_filter_image_overlay_a36f871d87ae65b11b209a204bed0becd}{}\index{svl\+Filter\+Image\+Overlay@{svl\+Filter\+Image\+Overlay}!Get\+Enable\+Input\+Sync@{Get\+Enable\+Input\+Sync}}
+\index{Get\+Enable\+Input\+Sync@{Get\+Enable\+Input\+Sync}!svl\+Filter\+Image\+Overlay@{svl\+Filter\+Image\+Overlay}}
+\subsubsection[{Get\+Enable\+Input\+Sync}]{\setlength{\rightskip}{0pt plus 5cm}bool svl\+Filter\+Image\+Overlay\+::\+Get\+Enable\+Input\+Sync (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classsvl_filter_image_overlay_a36f871d87ae65b11b209a204bed0becd}
+\hypertarget{classsvl_filter_image_overlay_a1a70af2f7458fed3895f30249ff56480}{}\index{svl\+Filter\+Image\+Overlay@{svl\+Filter\+Image\+Overlay}!Get\+Enable\+Transform\+Sync@{Get\+Enable\+Transform\+Sync}}
+\index{Get\+Enable\+Transform\+Sync@{Get\+Enable\+Transform\+Sync}!svl\+Filter\+Image\+Overlay@{svl\+Filter\+Image\+Overlay}}
+\subsubsection[{Get\+Enable\+Transform\+Sync}]{\setlength{\rightskip}{0pt plus 5cm}bool svl\+Filter\+Image\+Overlay\+::\+Get\+Enable\+Transform\+Sync (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classsvl_filter_image_overlay_a1a70af2f7458fed3895f30249ff56480}
+\hypertarget{classsvl_filter_image_overlay_a5bc58766f4b4b26c27b3a11215482e82}{}\index{svl\+Filter\+Image\+Overlay@{svl\+Filter\+Image\+Overlay}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!svl\+Filter\+Image\+Overlay@{svl\+Filter\+Image\+Overlay}}
+\subsubsection[{Initialize}]{\setlength{\rightskip}{0pt plus 5cm}virtual int svl\+Filter\+Image\+Overlay\+::\+Initialize (
+\begin{DoxyParamCaption}
+\item[{{\bf svl\+Sample} $\ast$}]{sync\+Input, }
+\item[{{\bf svl\+Sample} $\ast$\&}]{sync\+Output}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classsvl_filter_image_overlay_a5bc58766f4b4b26c27b3a11215482e82}
+
+
+Implements \hyperlink{classsvl_filter_base_ac8eddcd9336c2b381facc8fb372e3bfb}{svl\+Filter\+Base}.
+
+\hypertarget{classsvl_filter_image_overlay_a062f860bb4efedcf5d67ef616c5a8ab6}{}\index{svl\+Filter\+Image\+Overlay@{svl\+Filter\+Image\+Overlay}!On\+Stop@{On\+Stop}}
+\index{On\+Stop@{On\+Stop}!svl\+Filter\+Image\+Overlay@{svl\+Filter\+Image\+Overlay}}
+\subsubsection[{On\+Stop}]{\setlength{\rightskip}{0pt plus 5cm}virtual void svl\+Filter\+Image\+Overlay\+::\+On\+Stop (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classsvl_filter_image_overlay_a062f860bb4efedcf5d67ef616c5a8ab6}
+
+
+Reimplemented from \hyperlink{classsvl_filter_base_adf99599f927bf2934c9b4059e9dc2ed1}{svl\+Filter\+Base}.
+
+\hypertarget{classsvl_filter_image_overlay_a9c9ee1c08fa8e647597ce6b484b01607}{}\index{svl\+Filter\+Image\+Overlay@{svl\+Filter\+Image\+Overlay}!Process@{Process}}
+\index{Process@{Process}!svl\+Filter\+Image\+Overlay@{svl\+Filter\+Image\+Overlay}}
+\subsubsection[{Process}]{\setlength{\rightskip}{0pt plus 5cm}virtual int svl\+Filter\+Image\+Overlay\+::\+Process (
+\begin{DoxyParamCaption}
+\item[{{\bf svl\+Proc\+Info} $\ast$}]{proc\+Info, }
+\item[{{\bf svl\+Sample} $\ast$}]{sync\+Input, }
+\item[{{\bf svl\+Sample} $\ast$\&}]{sync\+Output}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classsvl_filter_image_overlay_a9c9ee1c08fa8e647597ce6b484b01607}
+
+
+Implements \hyperlink{classsvl_filter_base_aaff77d711088384d00e717fb4ec88aab}{svl\+Filter\+Base}.
+
+\hypertarget{classsvl_filter_image_overlay_a29e129be2f262cbcaa946201d4614db2}{}\index{svl\+Filter\+Image\+Overlay@{svl\+Filter\+Image\+Overlay}!Remove\+And\+Delete\+Overlay@{Remove\+And\+Delete\+Overlay}}
+\index{Remove\+And\+Delete\+Overlay@{Remove\+And\+Delete\+Overlay}!svl\+Filter\+Image\+Overlay@{svl\+Filter\+Image\+Overlay}}
+\subsubsection[{Remove\+And\+Delete\+Overlay}]{\setlength{\rightskip}{0pt plus 5cm}int svl\+Filter\+Image\+Overlay\+::\+Remove\+And\+Delete\+Overlay (
+\begin{DoxyParamCaption}
+\item[{{\bf svl\+Overlay} $\ast$}]{overlay}
+\end{DoxyParamCaption}
+)}\label{classsvl_filter_image_overlay_a29e129be2f262cbcaa946201d4614db2}
+\hypertarget{classsvl_filter_image_overlay_a21402287a1dfa675e1120f3584807cc1}{}\index{svl\+Filter\+Image\+Overlay@{svl\+Filter\+Image\+Overlay}!Remove\+Overlay@{Remove\+Overlay}}
+\index{Remove\+Overlay@{Remove\+Overlay}!svl\+Filter\+Image\+Overlay@{svl\+Filter\+Image\+Overlay}}
+\subsubsection[{Remove\+Overlay}]{\setlength{\rightskip}{0pt plus 5cm}int svl\+Filter\+Image\+Overlay\+::\+Remove\+Overlay (
+\begin{DoxyParamCaption}
+\item[{{\bf svl\+Overlay} \&}]{overlay}
+\end{DoxyParamCaption}
+)}\label{classsvl_filter_image_overlay_a21402287a1dfa675e1120f3584807cc1}
+\hypertarget{classsvl_filter_image_overlay_a996c36ed3c06e33aa372a1dfc6b70199}{}\index{svl\+Filter\+Image\+Overlay@{svl\+Filter\+Image\+Overlay}!Set\+Enable\+Input\+Sync@{Set\+Enable\+Input\+Sync}}
+\index{Set\+Enable\+Input\+Sync@{Set\+Enable\+Input\+Sync}!svl\+Filter\+Image\+Overlay@{svl\+Filter\+Image\+Overlay}}
+\subsubsection[{Set\+Enable\+Input\+Sync}]{\setlength{\rightskip}{0pt plus 5cm}void svl\+Filter\+Image\+Overlay\+::\+Set\+Enable\+Input\+Sync (
+\begin{DoxyParamCaption}
+\item[{bool}]{enabled}
+\end{DoxyParamCaption}
+)}\label{classsvl_filter_image_overlay_a996c36ed3c06e33aa372a1dfc6b70199}
+\hypertarget{classsvl_filter_image_overlay_acfb8f04ba2e62df2d5ef285d2ca35f96}{}\index{svl\+Filter\+Image\+Overlay@{svl\+Filter\+Image\+Overlay}!Set\+Enable\+Transform\+Sync@{Set\+Enable\+Transform\+Sync}}
+\index{Set\+Enable\+Transform\+Sync@{Set\+Enable\+Transform\+Sync}!svl\+Filter\+Image\+Overlay@{svl\+Filter\+Image\+Overlay}}
+\subsubsection[{Set\+Enable\+Transform\+Sync}]{\setlength{\rightskip}{0pt plus 5cm}void svl\+Filter\+Image\+Overlay\+::\+Set\+Enable\+Transform\+Sync (
+\begin{DoxyParamCaption}
+\item[{bool}]{enabled}
+\end{DoxyParamCaption}
+)}\label{classsvl_filter_image_overlay_acfb8f04ba2e62df2d5ef285d2ca35f96}
+\hypertarget{classsvl_filter_image_overlay_afefde4a1ee3a1f8c5fecf29efa67c14f}{}\index{svl\+Filter\+Image\+Overlay@{svl\+Filter\+Image\+Overlay}!Set\+Transform@{Set\+Transform}}
+\index{Set\+Transform@{Set\+Transform}!svl\+Filter\+Image\+Overlay@{svl\+Filter\+Image\+Overlay}}
+\subsubsection[{Set\+Transform}]{\setlength{\rightskip}{0pt plus 5cm}virtual void svl\+Filter\+Image\+Overlay\+::\+Set\+Transform (
+\begin{DoxyParamCaption}
+\item[{const {\bf This\+Type\+::\+Image\+Transform} \&}]{transform}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classsvl_filter_image_overlay_afefde4a1ee3a1f8c5fecf29efa67c14f}
+\hypertarget{classsvl_filter_image_overlay_a031a9989f7ea4d9ac45fa7664163baaf}{}\index{svl\+Filter\+Image\+Overlay@{svl\+Filter\+Image\+Overlay}!Set\+Transforms@{Set\+Transforms}}
+\index{Set\+Transforms@{Set\+Transforms}!svl\+Filter\+Image\+Overlay@{svl\+Filter\+Image\+Overlay}}
+\subsubsection[{Set\+Transforms}]{\setlength{\rightskip}{0pt plus 5cm}virtual void svl\+Filter\+Image\+Overlay\+::\+Set\+Transforms (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Vector}$<$ {\bf This\+Type\+::\+Image\+Transform} $>$ \&}]{transforms}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classsvl_filter_image_overlay_a031a9989f7ea4d9ac45fa7664163baaf}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Stereo\+Vision/\hyperlink{svl_filter_image_overlay_8h}{svl\+Filter\+Image\+Overlay.\+h}\end{DoxyCompactItemize}

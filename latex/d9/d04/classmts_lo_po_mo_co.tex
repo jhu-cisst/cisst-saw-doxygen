@@ -1,0 +1,330 @@
+\hypertarget{classmts_lo_po_mo_co}{}\section{mts\+Lo\+Po\+Mo\+Co Class Reference}
+\label{classmts_lo_po_mo_co}\index{mts\+Lo\+Po\+Mo\+Co@{mts\+Lo\+Po\+Mo\+Co}}
+
+
+{\ttfamily \#include $<$mts\+Lo\+Po\+Mo\+Co.\+h$>$}
+
+Inheritance diagram for mts\+Lo\+Po\+Mo\+Co\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{d9/d04/classmts_lo_po_mo_co}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \hyperlink{classmts_lo_po_mo_co_a933389a16a909530cb872cb7e2a03e4eac6dba0b930a9af0a1804587423ca4878}{N\+B\+\_\+\+A\+X\+I\+S} = 4
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmts_lo_po_mo_co_a43e47d59bc0d7c596393e6cde9925102}{mts\+Lo\+Po\+Mo\+Co} (const std\+::string \&device\+Name, unsigned int number\+Of\+Boards)
+\item 
+virtual \hyperlink{classmts_lo_po_mo_co_a2f64ffac304c55dd2f63896711cf23d7}{$\sim$mts\+Lo\+Po\+Mo\+Co} ()
+\item 
+virtual void \hyperlink{classmts_lo_po_mo_co_aa597d72647d0187b9f601973a7a1077b}{Configure} (const std\+::string \&filename)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classmts_lo_po_mo_co_aef21dadb70636f34c3674f5f1bc3bd53}{Latch\+Encoders} (void)
+\item 
+void \hyperlink{classmts_lo_po_mo_co_a46a1f51a4123956838720c4dca50aeeb}{Start\+Motor\+Current\+Conv} (void)
+\item 
+void \hyperlink{classmts_lo_po_mo_co_a3181fa8f81a530e20de55adbcb09a50e}{Start\+Pot\+Feedback\+Conv} (void)
+\item 
+void \hyperlink{classmts_lo_po_mo_co_a18238e257128dff22573950fbcabbe85}{Start\+Pot\+Feedback\+Conv\+Fast} (void)
+\item 
+void \hyperlink{classmts_lo_po_mo_co_a45c547240bba97cd4358dfe5c0484542}{Enable\+All} (void)
+\item 
+void \hyperlink{classmts_lo_po_mo_co_a540842d14cc67089cd0dab1579b5b242}{Disable\+All} (void)
+\item 
+void \hyperlink{classmts_lo_po_mo_co_aa2037e3920acbb529e2e3a163d52d792}{Get\+Positions} (\hyperlink{mts_vector_8h_a3e011934ab1b5774f640a7bb70d9a672}{mts\+Long\+Vec} \&Positions) const 
+\item 
+void \hyperlink{classmts_lo_po_mo_co_aa6289b399da0bf7f536e90a811600263}{Get\+Velocities} (\hyperlink{mts_vector_8h_a70974166b1900882680f3002b69e11c5}{mts\+Short\+Vec} \&Velocities) const 
+\item 
+void \hyperlink{classmts_lo_po_mo_co_a7ba6e1e29a54575d4511c487ace79077}{Get\+Motor\+Currents} (\hyperlink{mts_vector_8h_a70974166b1900882680f3002b69e11c5}{mts\+Short\+Vec} \&Motor\+Currents) const 
+\item 
+void \hyperlink{classmts_lo_po_mo_co_ac5cc00b1a930711fce5cf1cd274f922d}{Get\+Pot\+Feedbacks} (\hyperlink{mts_vector_8h_a70974166b1900882680f3002b69e11c5}{mts\+Short\+Vec} \&Pot\+Feedbacks) const 
+\item 
+void \hyperlink{classmts_lo_po_mo_co_a039fdbe3af9ab8e06d3bd6e2156f441a}{Set\+Motor\+Voltages} (const \hyperlink{mts_vector_8h_a70974166b1900882680f3002b69e11c5}{mts\+Short\+Vec} \&Motor\+Voltages)
+\item 
+void \hyperlink{classmts_lo_po_mo_co_afff8ede1c86fb740cf8bf123363263bc}{Set\+Current\+Limits} (const \hyperlink{mts_vector_8h_a70974166b1900882680f3002b69e11c5}{mts\+Short\+Vec} \&Current\+Limits)
+\item 
+void \hyperlink{classmts_lo_po_mo_co_ab1a20245e2e28f323973a9adf382c21f}{Set\+Positions} (const \hyperlink{mts_vector_8h_a3e011934ab1b5774f640a7bb70d9a672}{mts\+Long\+Vec} \&Positions)
+\item 
+void \hyperlink{classmts_lo_po_mo_co_a4c21cfc643adfa5b3df7db0d58b3a6a6}{Load\+Motor\+Voltages} (void)
+\item 
+void \hyperlink{classmts_lo_po_mo_co_a79ad0f5da6232c6359f2599f1f0d8335}{Load\+Current\+Limits} (void)
+\item 
+void \hyperlink{classmts_lo_po_mo_co_a47e5897e8beeb300c28046e4f5039864}{Load\+Motor\+Voltages\+Current\+Limits} (void)
+\item 
+void \hyperlink{classmts_lo_po_mo_co_a0b82596365920aba765d3fc04b929213}{Frequency\+To\+R\+P\+S} (const \hyperlink{mts_vector_8h_a70974166b1900882680f3002b69e11c5}{mts\+Short\+Vec} \&from\+Data, \hyperlink{mts_vector_8h_af69167a5dc2ad33eb93965b9387d8403}{mts\+Double\+Vec} \&to\+Data) const 
+\item 
+void \hyperlink{classmts_lo_po_mo_co_a3bb745819b0680a4a69119a121c358aa}{A\+D\+C\+To\+Motor\+Currents} (const \hyperlink{mts_vector_8h_a70974166b1900882680f3002b69e11c5}{mts\+Short\+Vec} \&from\+Data, \hyperlink{mts_vector_8h_af69167a5dc2ad33eb93965b9387d8403}{mts\+Double\+Vec} \&to\+Data) const 
+\item 
+void \hyperlink{classmts_lo_po_mo_co_a2a17c6e795d560987ae632aa6f141be5}{A\+D\+C\+To\+Pot\+Feedbacks} (const \hyperlink{mts_vector_8h_a70974166b1900882680f3002b69e11c5}{mts\+Short\+Vec} \&from\+Data, \hyperlink{classmts_vector}{mts\+Vector}$<$ double $>$ \&to\+Data) const 
+\item 
+void \hyperlink{classmts_lo_po_mo_co_a22c839b12f2c4d0877a2aa9e34784494}{Motor\+Voltages\+To\+D\+A\+C} (const \hyperlink{mts_vector_8h_af69167a5dc2ad33eb93965b9387d8403}{mts\+Double\+Vec} \&from\+Data, \hyperlink{mts_vector_8h_a70974166b1900882680f3002b69e11c5}{mts\+Short\+Vec} \&to\+Data) const 
+\item 
+void \hyperlink{classmts_lo_po_mo_co_a1b4780a38e6efbcdb6b80f2d8f9deae3}{Current\+Limits\+To\+D\+A\+C} (const \hyperlink{mts_vector_8h_af69167a5dc2ad33eb93965b9387d8403}{mts\+Double\+Vec} \&from\+Data, \hyperlink{mts_vector_8h_a70974166b1900882680f3002b69e11c5}{mts\+Short\+Vec} \&to\+Data) const 
+\item 
+void \hyperlink{classmts_lo_po_mo_co_a541a2df206472d07a224eedef7b8f201}{Enable} (const \hyperlink{mts_generic_object_proxy_8h_a169c76d3ebc9c8cf6c47d54425dc5097}{mts\+Short} \&axis\+Index)
+\item 
+void \hyperlink{classmts_lo_po_mo_co_a55a7c4103f18fb9b3279ed12da42849d}{Disable} (const \hyperlink{mts_generic_object_proxy_8h_a169c76d3ebc9c8cf6c47d54425dc5097}{mts\+Short} \&axis\+Index)
+\item 
+void \hyperlink{classmts_lo_po_mo_co_a95a68b16d6a6b2e7799b4cd103786056}{Reset\+Encoders} (const \hyperlink{mts_generic_object_proxy_8h_a169c76d3ebc9c8cf6c47d54425dc5097}{mts\+Short} \&axis\+Index)
+\item 
+void \hyperlink{classmts_lo_po_mo_co_abf4a21b18b765979767e9a582c206bff}{Set\+Digital\+Output} (const \hyperlink{mts_vector_8h_a15d098f238910e70dc542de74110a22e}{mts\+Int\+Vec} \&Digital\+Output)
+\item 
+void \hyperlink{classmts_lo_po_mo_co_a03f8a16147fba1d76ab98adb3603b673}{Get\+Digital\+Input} (\hyperlink{mts_vector_8h_a15d098f238910e70dc542de74110a22e}{mts\+Int\+Vec} \&Digital\+Input) const 
+\item 
+void \hyperlink{classmts_lo_po_mo_co_a3e155c3cd605b815fe89878a502a7614}{Get\+Latched\+Index} (\hyperlink{mts_vector_8h_a70974166b1900882680f3002b69e11c5}{mts\+Short\+Vec} \&latched\+Index) const 
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A specific device class for the Lo\+Po\+Mo\+Co motion controller card. 
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classmts_lo_po_mo_co_a933389a16a909530cb872cb7e2a03e4e}{}\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}\label{classmts_lo_po_mo_co_a933389a16a909530cb872cb7e2a03e4e}
+Number of axis per board \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{N\+B\+\_\+\+A\+X\+I\+S@{N\+B\+\_\+\+A\+X\+I\+S}!mts\+Lo\+Po\+Mo\+Co@{mts\+Lo\+Po\+Mo\+Co}}\index{mts\+Lo\+Po\+Mo\+Co@{mts\+Lo\+Po\+Mo\+Co}!N\+B\+\_\+\+A\+X\+I\+S@{N\+B\+\_\+\+A\+X\+I\+S}}\item[{\em 
+\hypertarget{classmts_lo_po_mo_co_a933389a16a909530cb872cb7e2a03e4eac6dba0b930a9af0a1804587423ca4878}{}N\+B\+\_\+\+A\+X\+I\+S\label{classmts_lo_po_mo_co_a933389a16a909530cb872cb7e2a03e4eac6dba0b930a9af0a1804587423ca4878}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmts_lo_po_mo_co_a43e47d59bc0d7c596393e6cde9925102}{}\index{mts\+Lo\+Po\+Mo\+Co@{mts\+Lo\+Po\+Mo\+Co}!mts\+Lo\+Po\+Mo\+Co@{mts\+Lo\+Po\+Mo\+Co}}
+\index{mts\+Lo\+Po\+Mo\+Co@{mts\+Lo\+Po\+Mo\+Co}!mts\+Lo\+Po\+Mo\+Co@{mts\+Lo\+Po\+Mo\+Co}}
+\subsubsection[{mts\+Lo\+Po\+Mo\+Co}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Lo\+Po\+Mo\+Co\+::mts\+Lo\+Po\+Mo\+Co (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{device\+Name, }
+\item[{unsigned int}]{number\+Of\+Boards}
+\end{DoxyParamCaption}
+)}\label{classmts_lo_po_mo_co_a43e47d59bc0d7c596393e6cde9925102}
+Constructor. Prepares the maps. \hypertarget{classmts_lo_po_mo_co_a2f64ffac304c55dd2f63896711cf23d7}{}\index{mts\+Lo\+Po\+Mo\+Co@{mts\+Lo\+Po\+Mo\+Co}!````~mts\+Lo\+Po\+Mo\+Co@{$\sim$mts\+Lo\+Po\+Mo\+Co}}
+\index{````~mts\+Lo\+Po\+Mo\+Co@{$\sim$mts\+Lo\+Po\+Mo\+Co}!mts\+Lo\+Po\+Mo\+Co@{mts\+Lo\+Po\+Mo\+Co}}
+\subsubsection[{$\sim$mts\+Lo\+Po\+Mo\+Co}]{\setlength{\rightskip}{0pt plus 5cm}virtual mts\+Lo\+Po\+Mo\+Co\+::$\sim$mts\+Lo\+Po\+Mo\+Co (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_lo_po_mo_co_a2f64ffac304c55dd2f63896711cf23d7}
+Default destructor. Disables motor power. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classmts_lo_po_mo_co_a3bb745819b0680a4a69119a121c358aa}{}\index{mts\+Lo\+Po\+Mo\+Co@{mts\+Lo\+Po\+Mo\+Co}!A\+D\+C\+To\+Motor\+Currents@{A\+D\+C\+To\+Motor\+Currents}}
+\index{A\+D\+C\+To\+Motor\+Currents@{A\+D\+C\+To\+Motor\+Currents}!mts\+Lo\+Po\+Mo\+Co@{mts\+Lo\+Po\+Mo\+Co}}
+\subsubsection[{A\+D\+C\+To\+Motor\+Currents}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Lo\+Po\+Mo\+Co\+::\+A\+D\+C\+To\+Motor\+Currents (
+\begin{DoxyParamCaption}
+\item[{const {\bf mts\+Short\+Vec} \&}]{from\+Data, }
+\item[{{\bf mts\+Double\+Vec} \&}]{to\+Data}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_lo_po_mo_co_a3bb745819b0680a4a69119a121c358aa}
+Convert motor currents in A\+D\+C counts to m\+A. It is indexed by the string A\+D\+C\+To\+Motor\+Currents in the Qualified\+Read\+Map. \hypertarget{classmts_lo_po_mo_co_a2a17c6e795d560987ae632aa6f141be5}{}\index{mts\+Lo\+Po\+Mo\+Co@{mts\+Lo\+Po\+Mo\+Co}!A\+D\+C\+To\+Pot\+Feedbacks@{A\+D\+C\+To\+Pot\+Feedbacks}}
+\index{A\+D\+C\+To\+Pot\+Feedbacks@{A\+D\+C\+To\+Pot\+Feedbacks}!mts\+Lo\+Po\+Mo\+Co@{mts\+Lo\+Po\+Mo\+Co}}
+\subsubsection[{A\+D\+C\+To\+Pot\+Feedbacks}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Lo\+Po\+Mo\+Co\+::\+A\+D\+C\+To\+Pot\+Feedbacks (
+\begin{DoxyParamCaption}
+\item[{const {\bf mts\+Short\+Vec} \&}]{from\+Data, }
+\item[{{\bf mts\+Vector}$<$ double $>$ \&}]{to\+Data}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_lo_po_mo_co_a2a17c6e795d560987ae632aa6f141be5}
+Convert pot feedback in A\+D\+C counts to V. It is indexed by the string A\+D\+C\+To\+Pot\+Feedbacks in the Qualified\+Read\+Map. \hypertarget{classmts_lo_po_mo_co_aa597d72647d0187b9f601973a7a1077b}{}\index{mts\+Lo\+Po\+Mo\+Co@{mts\+Lo\+Po\+Mo\+Co}!Configure@{Configure}}
+\index{Configure@{Configure}!mts\+Lo\+Po\+Mo\+Co@{mts\+Lo\+Po\+Mo\+Co}}
+\subsubsection[{Configure}]{\setlength{\rightskip}{0pt plus 5cm}virtual void mts\+Lo\+Po\+Mo\+Co\+::\+Configure (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{filename}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_lo_po_mo_co_aa597d72647d0187b9f601973a7a1077b}
+Configure takes the top level configuration file which points to the configuration file for each board. 
+
+Reimplemented from \hyperlink{classmts_component_ad872432876de7879dc96c232b411c146}{mts\+Component}.
+
+\hypertarget{classmts_lo_po_mo_co_a1b4780a38e6efbcdb6b80f2d8f9deae3}{}\index{mts\+Lo\+Po\+Mo\+Co@{mts\+Lo\+Po\+Mo\+Co}!Current\+Limits\+To\+D\+A\+C@{Current\+Limits\+To\+D\+A\+C}}
+\index{Current\+Limits\+To\+D\+A\+C@{Current\+Limits\+To\+D\+A\+C}!mts\+Lo\+Po\+Mo\+Co@{mts\+Lo\+Po\+Mo\+Co}}
+\subsubsection[{Current\+Limits\+To\+D\+A\+C}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Lo\+Po\+Mo\+Co\+::\+Current\+Limits\+To\+D\+A\+C (
+\begin{DoxyParamCaption}
+\item[{const {\bf mts\+Double\+Vec} \&}]{from\+Data, }
+\item[{{\bf mts\+Short\+Vec} \&}]{to\+Data}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_lo_po_mo_co_a1b4780a38e6efbcdb6b80f2d8f9deae3}
+Convert currents limits in m\+A to D\+A\+C counts. It is indexed by the string Current\+Limits\+To\+D\+A\+C in the Qualified\+Read\+Map. \hypertarget{classmts_lo_po_mo_co_a55a7c4103f18fb9b3279ed12da42849d}{}\index{mts\+Lo\+Po\+Mo\+Co@{mts\+Lo\+Po\+Mo\+Co}!Disable@{Disable}}
+\index{Disable@{Disable}!mts\+Lo\+Po\+Mo\+Co@{mts\+Lo\+Po\+Mo\+Co}}
+\subsubsection[{Disable}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Lo\+Po\+Mo\+Co\+::\+Disable (
+\begin{DoxyParamCaption}
+\item[{const {\bf mts\+Short} \&}]{axis\+Index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_lo_po_mo_co_a55a7c4103f18fb9b3279ed12da42849d}
+Disable the specified axis \hypertarget{classmts_lo_po_mo_co_a540842d14cc67089cd0dab1579b5b242}{}\index{mts\+Lo\+Po\+Mo\+Co@{mts\+Lo\+Po\+Mo\+Co}!Disable\+All@{Disable\+All}}
+\index{Disable\+All@{Disable\+All}!mts\+Lo\+Po\+Mo\+Co@{mts\+Lo\+Po\+Mo\+Co}}
+\subsubsection[{Disable\+All}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Lo\+Po\+Mo\+Co\+::\+Disable\+All (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_lo_po_mo_co_a540842d14cc67089cd0dab1579b5b242}
+Disable all axes on this board \hypertarget{classmts_lo_po_mo_co_a541a2df206472d07a224eedef7b8f201}{}\index{mts\+Lo\+Po\+Mo\+Co@{mts\+Lo\+Po\+Mo\+Co}!Enable@{Enable}}
+\index{Enable@{Enable}!mts\+Lo\+Po\+Mo\+Co@{mts\+Lo\+Po\+Mo\+Co}}
+\subsubsection[{Enable}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Lo\+Po\+Mo\+Co\+::\+Enable (
+\begin{DoxyParamCaption}
+\item[{const {\bf mts\+Short} \&}]{axis\+Index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_lo_po_mo_co_a541a2df206472d07a224eedef7b8f201}
+Enable the specified axis \hypertarget{classmts_lo_po_mo_co_a45c547240bba97cd4358dfe5c0484542}{}\index{mts\+Lo\+Po\+Mo\+Co@{mts\+Lo\+Po\+Mo\+Co}!Enable\+All@{Enable\+All}}
+\index{Enable\+All@{Enable\+All}!mts\+Lo\+Po\+Mo\+Co@{mts\+Lo\+Po\+Mo\+Co}}
+\subsubsection[{Enable\+All}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Lo\+Po\+Mo\+Co\+::\+Enable\+All (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_lo_po_mo_co_a45c547240bba97cd4358dfe5c0484542}
+Enable all axis on this board \hypertarget{classmts_lo_po_mo_co_a0b82596365920aba765d3fc04b929213}{}\index{mts\+Lo\+Po\+Mo\+Co@{mts\+Lo\+Po\+Mo\+Co}!Frequency\+To\+R\+P\+S@{Frequency\+To\+R\+P\+S}}
+\index{Frequency\+To\+R\+P\+S@{Frequency\+To\+R\+P\+S}!mts\+Lo\+Po\+Mo\+Co@{mts\+Lo\+Po\+Mo\+Co}}
+\subsubsection[{Frequency\+To\+R\+P\+S}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Lo\+Po\+Mo\+Co\+::\+Frequency\+To\+R\+P\+S (
+\begin{DoxyParamCaption}
+\item[{const {\bf mts\+Short\+Vec} \&}]{from\+Data, }
+\item[{{\bf mts\+Double\+Vec} \&}]{to\+Data}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_lo_po_mo_co_a0b82596365920aba765d3fc04b929213}
+Convert encoder frequencies to revolutions per second. It is indexed by the string Frequency\+To\+R\+P\+S in the Qualified\+Read\+Map. \hypertarget{classmts_lo_po_mo_co_a03f8a16147fba1d76ab98adb3603b673}{}\index{mts\+Lo\+Po\+Mo\+Co@{mts\+Lo\+Po\+Mo\+Co}!Get\+Digital\+Input@{Get\+Digital\+Input}}
+\index{Get\+Digital\+Input@{Get\+Digital\+Input}!mts\+Lo\+Po\+Mo\+Co@{mts\+Lo\+Po\+Mo\+Co}}
+\subsubsection[{Get\+Digital\+Input}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Lo\+Po\+Mo\+Co\+::\+Get\+Digital\+Input (
+\begin{DoxyParamCaption}
+\item[{{\bf mts\+Int\+Vec} \&}]{Digital\+Input}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_lo_po_mo_co_a03f8a16147fba1d76ab98adb3603b673}
+\hypertarget{classmts_lo_po_mo_co_a3e155c3cd605b815fe89878a502a7614}{}\index{mts\+Lo\+Po\+Mo\+Co@{mts\+Lo\+Po\+Mo\+Co}!Get\+Latched\+Index@{Get\+Latched\+Index}}
+\index{Get\+Latched\+Index@{Get\+Latched\+Index}!mts\+Lo\+Po\+Mo\+Co@{mts\+Lo\+Po\+Mo\+Co}}
+\subsubsection[{Get\+Latched\+Index}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Lo\+Po\+Mo\+Co\+::\+Get\+Latched\+Index (
+\begin{DoxyParamCaption}
+\item[{{\bf mts\+Short\+Vec} \&}]{latched\+Index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_lo_po_mo_co_a3e155c3cd605b815fe89878a502a7614}
+\hypertarget{classmts_lo_po_mo_co_a7ba6e1e29a54575d4511c487ace79077}{}\index{mts\+Lo\+Po\+Mo\+Co@{mts\+Lo\+Po\+Mo\+Co}!Get\+Motor\+Currents@{Get\+Motor\+Currents}}
+\index{Get\+Motor\+Currents@{Get\+Motor\+Currents}!mts\+Lo\+Po\+Mo\+Co@{mts\+Lo\+Po\+Mo\+Co}}
+\subsubsection[{Get\+Motor\+Currents}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Lo\+Po\+Mo\+Co\+::\+Get\+Motor\+Currents (
+\begin{DoxyParamCaption}
+\item[{{\bf mts\+Short\+Vec} \&}]{Motor\+Currents}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_lo_po_mo_co_a7ba6e1e29a54575d4511c487ace79077}
+Get the latest motor currents. Assumes that a conversion has been started using the void operation Start\+Motor\+Current\+Conv. It is indexed by the string Motor\+Currents in the Read\+Map. \hypertarget{classmts_lo_po_mo_co_aa2037e3920acbb529e2e3a163d52d792}{}\index{mts\+Lo\+Po\+Mo\+Co@{mts\+Lo\+Po\+Mo\+Co}!Get\+Positions@{Get\+Positions}}
+\index{Get\+Positions@{Get\+Positions}!mts\+Lo\+Po\+Mo\+Co@{mts\+Lo\+Po\+Mo\+Co}}
+\subsubsection[{Get\+Positions}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Lo\+Po\+Mo\+Co\+::\+Get\+Positions (
+\begin{DoxyParamCaption}
+\item[{{\bf mts\+Long\+Vec} \&}]{Positions}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_lo_po_mo_co_aa2037e3920acbb529e2e3a163d52d792}
+Get the latest encoder positions. Assumes that encoders are latched using the void operation Latch\+Encoders. It is indexed by the string Positions in the Read\+Map. \hypertarget{classmts_lo_po_mo_co_ac5cc00b1a930711fce5cf1cd274f922d}{}\index{mts\+Lo\+Po\+Mo\+Co@{mts\+Lo\+Po\+Mo\+Co}!Get\+Pot\+Feedbacks@{Get\+Pot\+Feedbacks}}
+\index{Get\+Pot\+Feedbacks@{Get\+Pot\+Feedbacks}!mts\+Lo\+Po\+Mo\+Co@{mts\+Lo\+Po\+Mo\+Co}}
+\subsubsection[{Get\+Pot\+Feedbacks}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Lo\+Po\+Mo\+Co\+::\+Get\+Pot\+Feedbacks (
+\begin{DoxyParamCaption}
+\item[{{\bf mts\+Short\+Vec} \&}]{Pot\+Feedbacks}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_lo_po_mo_co_ac5cc00b1a930711fce5cf1cd274f922d}
+Get the latest pot position. Assumes that a conversion has been started using the void operation Start\+Pot\+Feedback\+Conv. It is indexed by the string Pot\+Feedbacks in the Read\+Map. \hypertarget{classmts_lo_po_mo_co_aa6289b399da0bf7f536e90a811600263}{}\index{mts\+Lo\+Po\+Mo\+Co@{mts\+Lo\+Po\+Mo\+Co}!Get\+Velocities@{Get\+Velocities}}
+\index{Get\+Velocities@{Get\+Velocities}!mts\+Lo\+Po\+Mo\+Co@{mts\+Lo\+Po\+Mo\+Co}}
+\subsubsection[{Get\+Velocities}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Lo\+Po\+Mo\+Co\+::\+Get\+Velocities (
+\begin{DoxyParamCaption}
+\item[{{\bf mts\+Short\+Vec} \&}]{Velocities}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_lo_po_mo_co_aa6289b399da0bf7f536e90a811600263}
+Get the velocity. Assumes that encoders are latched using the void operation Latch\+Encoders and that Encoders are read using Get\+Position. It is indexed by the string Velocities in the Read\+Map. \hypertarget{classmts_lo_po_mo_co_aef21dadb70636f34c3674f5f1bc3bd53}{}\index{mts\+Lo\+Po\+Mo\+Co@{mts\+Lo\+Po\+Mo\+Co}!Latch\+Encoders@{Latch\+Encoders}}
+\index{Latch\+Encoders@{Latch\+Encoders}!mts\+Lo\+Po\+Mo\+Co@{mts\+Lo\+Po\+Mo\+Co}}
+\subsubsection[{Latch\+Encoders}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Lo\+Po\+Mo\+Co\+::\+Latch\+Encoders (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_lo_po_mo_co_aef21dadb70636f34c3674f5f1bc3bd53}
+Latch the encoder positions. It is indexed by the string Latch\+Encoders in the Pre\+Read\+Map. \hypertarget{classmts_lo_po_mo_co_a79ad0f5da6232c6359f2599f1f0d8335}{}\index{mts\+Lo\+Po\+Mo\+Co@{mts\+Lo\+Po\+Mo\+Co}!Load\+Current\+Limits@{Load\+Current\+Limits}}
+\index{Load\+Current\+Limits@{Load\+Current\+Limits}!mts\+Lo\+Po\+Mo\+Co@{mts\+Lo\+Po\+Mo\+Co}}
+\subsubsection[{Load\+Current\+Limits}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Lo\+Po\+Mo\+Co\+::\+Load\+Current\+Limits (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_lo_po_mo_co_a79ad0f5da6232c6359f2599f1f0d8335}
+Load the current limits D\+A\+C buffer to actual analog output. It is indexed by the string Load\+Current\+Limits in the Void\+Map. \hypertarget{classmts_lo_po_mo_co_a4c21cfc643adfa5b3df7db0d58b3a6a6}{}\index{mts\+Lo\+Po\+Mo\+Co@{mts\+Lo\+Po\+Mo\+Co}!Load\+Motor\+Voltages@{Load\+Motor\+Voltages}}
+\index{Load\+Motor\+Voltages@{Load\+Motor\+Voltages}!mts\+Lo\+Po\+Mo\+Co@{mts\+Lo\+Po\+Mo\+Co}}
+\subsubsection[{Load\+Motor\+Voltages}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Lo\+Po\+Mo\+Co\+::\+Load\+Motor\+Voltages (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_lo_po_mo_co_a4c21cfc643adfa5b3df7db0d58b3a6a6}
+Load the motor voltage D\+A\+C buffer to actual analog output. It is indexed by the string Load\+Motor\+Voltages in the Void\+Map. \hypertarget{classmts_lo_po_mo_co_a47e5897e8beeb300c28046e4f5039864}{}\index{mts\+Lo\+Po\+Mo\+Co@{mts\+Lo\+Po\+Mo\+Co}!Load\+Motor\+Voltages\+Current\+Limits@{Load\+Motor\+Voltages\+Current\+Limits}}
+\index{Load\+Motor\+Voltages\+Current\+Limits@{Load\+Motor\+Voltages\+Current\+Limits}!mts\+Lo\+Po\+Mo\+Co@{mts\+Lo\+Po\+Mo\+Co}}
+\subsubsection[{Load\+Motor\+Voltages\+Current\+Limits}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Lo\+Po\+Mo\+Co\+::\+Load\+Motor\+Voltages\+Current\+Limits (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_lo_po_mo_co_a47e5897e8beeb300c28046e4f5039864}
+Load the motor voltages and current limits D\+A\+C buffer to actual analog output. It is indexed by the string Load\+Motor\+Voltages\+Current\+Limits in the Void\+Map. \hypertarget{classmts_lo_po_mo_co_a22c839b12f2c4d0877a2aa9e34784494}{}\index{mts\+Lo\+Po\+Mo\+Co@{mts\+Lo\+Po\+Mo\+Co}!Motor\+Voltages\+To\+D\+A\+C@{Motor\+Voltages\+To\+D\+A\+C}}
+\index{Motor\+Voltages\+To\+D\+A\+C@{Motor\+Voltages\+To\+D\+A\+C}!mts\+Lo\+Po\+Mo\+Co@{mts\+Lo\+Po\+Mo\+Co}}
+\subsubsection[{Motor\+Voltages\+To\+D\+A\+C}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Lo\+Po\+Mo\+Co\+::\+Motor\+Voltages\+To\+D\+A\+C (
+\begin{DoxyParamCaption}
+\item[{const {\bf mts\+Double\+Vec} \&}]{from\+Data, }
+\item[{{\bf mts\+Short\+Vec} \&}]{to\+Data}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_lo_po_mo_co_a22c839b12f2c4d0877a2aa9e34784494}
+Convert motor voltages in V to D\+A\+C counts. It is indexed by the string Motor\+Voltages\+To\+D\+A\+C in the Qualified\+Read\+Map. \hypertarget{classmts_lo_po_mo_co_a95a68b16d6a6b2e7799b4cd103786056}{}\index{mts\+Lo\+Po\+Mo\+Co@{mts\+Lo\+Po\+Mo\+Co}!Reset\+Encoders@{Reset\+Encoders}}
+\index{Reset\+Encoders@{Reset\+Encoders}!mts\+Lo\+Po\+Mo\+Co@{mts\+Lo\+Po\+Mo\+Co}}
+\subsubsection[{Reset\+Encoders}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Lo\+Po\+Mo\+Co\+::\+Reset\+Encoders (
+\begin{DoxyParamCaption}
+\item[{const {\bf mts\+Short} \&}]{axis\+Index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_lo_po_mo_co_a95a68b16d6a6b2e7799b4cd103786056}
+Reset Encoder \hypertarget{classmts_lo_po_mo_co_afff8ede1c86fb740cf8bf123363263bc}{}\index{mts\+Lo\+Po\+Mo\+Co@{mts\+Lo\+Po\+Mo\+Co}!Set\+Current\+Limits@{Set\+Current\+Limits}}
+\index{Set\+Current\+Limits@{Set\+Current\+Limits}!mts\+Lo\+Po\+Mo\+Co@{mts\+Lo\+Po\+Mo\+Co}}
+\subsubsection[{Set\+Current\+Limits}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Lo\+Po\+Mo\+Co\+::\+Set\+Current\+Limits (
+\begin{DoxyParamCaption}
+\item[{const {\bf mts\+Short\+Vec} \&}]{Current\+Limits}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_lo_po_mo_co_afff8ede1c86fb740cf8bf123363263bc}
+Write current limits to the D\+A\+C buffer. Assumes that these would be loaded using the void operation Load\+Current\+Limits or Load\+Motor\+Voltages\+Current\+Limits. It is indexed by the string Current\+Limits in the Write\+Map. \hypertarget{classmts_lo_po_mo_co_abf4a21b18b765979767e9a582c206bff}{}\index{mts\+Lo\+Po\+Mo\+Co@{mts\+Lo\+Po\+Mo\+Co}!Set\+Digital\+Output@{Set\+Digital\+Output}}
+\index{Set\+Digital\+Output@{Set\+Digital\+Output}!mts\+Lo\+Po\+Mo\+Co@{mts\+Lo\+Po\+Mo\+Co}}
+\subsubsection[{Set\+Digital\+Output}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Lo\+Po\+Mo\+Co\+::\+Set\+Digital\+Output (
+\begin{DoxyParamCaption}
+\item[{const {\bf mts\+Int\+Vec} \&}]{Digital\+Output}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_lo_po_mo_co_abf4a21b18b765979767e9a582c206bff}
+\hypertarget{classmts_lo_po_mo_co_a039fdbe3af9ab8e06d3bd6e2156f441a}{}\index{mts\+Lo\+Po\+Mo\+Co@{mts\+Lo\+Po\+Mo\+Co}!Set\+Motor\+Voltages@{Set\+Motor\+Voltages}}
+\index{Set\+Motor\+Voltages@{Set\+Motor\+Voltages}!mts\+Lo\+Po\+Mo\+Co@{mts\+Lo\+Po\+Mo\+Co}}
+\subsubsection[{Set\+Motor\+Voltages}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Lo\+Po\+Mo\+Co\+::\+Set\+Motor\+Voltages (
+\begin{DoxyParamCaption}
+\item[{const {\bf mts\+Short\+Vec} \&}]{Motor\+Voltages}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_lo_po_mo_co_a039fdbe3af9ab8e06d3bd6e2156f441a}
+Write motor votlages to the D\+A\+C buffer. Assumes that these would be loaded using the void operation Load\+Motor\+Voltages or Load\+Motor\+Voltages\+Current\+Limits. It is indexed by the string Motor\+Voltages in the Write\+Map. \hypertarget{classmts_lo_po_mo_co_ab1a20245e2e28f323973a9adf382c21f}{}\index{mts\+Lo\+Po\+Mo\+Co@{mts\+Lo\+Po\+Mo\+Co}!Set\+Positions@{Set\+Positions}}
+\index{Set\+Positions@{Set\+Positions}!mts\+Lo\+Po\+Mo\+Co@{mts\+Lo\+Po\+Mo\+Co}}
+\subsubsection[{Set\+Positions}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Lo\+Po\+Mo\+Co\+::\+Set\+Positions (
+\begin{DoxyParamCaption}
+\item[{const {\bf mts\+Long\+Vec} \&}]{Positions}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_lo_po_mo_co_ab1a20245e2e28f323973a9adf382c21f}
+Write the current positions to the encoder buffer. It is indexed by the string Set\+Positions in the Write\+Map. \hypertarget{classmts_lo_po_mo_co_a46a1f51a4123956838720c4dca50aeeb}{}\index{mts\+Lo\+Po\+Mo\+Co@{mts\+Lo\+Po\+Mo\+Co}!Start\+Motor\+Current\+Conv@{Start\+Motor\+Current\+Conv}}
+\index{Start\+Motor\+Current\+Conv@{Start\+Motor\+Current\+Conv}!mts\+Lo\+Po\+Mo\+Co@{mts\+Lo\+Po\+Mo\+Co}}
+\subsubsection[{Start\+Motor\+Current\+Conv}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Lo\+Po\+Mo\+Co\+::\+Start\+Motor\+Current\+Conv (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_lo_po_mo_co_a46a1f51a4123956838720c4dca50aeeb}
+Start conversion on A\+D\+C connected to current limits. It is indexed by the string Start\+Motor\+Current\+Conv in the Pre\+Read\+Map. \hypertarget{classmts_lo_po_mo_co_a3181fa8f81a530e20de55adbcb09a50e}{}\index{mts\+Lo\+Po\+Mo\+Co@{mts\+Lo\+Po\+Mo\+Co}!Start\+Pot\+Feedback\+Conv@{Start\+Pot\+Feedback\+Conv}}
+\index{Start\+Pot\+Feedback\+Conv@{Start\+Pot\+Feedback\+Conv}!mts\+Lo\+Po\+Mo\+Co@{mts\+Lo\+Po\+Mo\+Co}}
+\subsubsection[{Start\+Pot\+Feedback\+Conv}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Lo\+Po\+Mo\+Co\+::\+Start\+Pot\+Feedback\+Conv (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_lo_po_mo_co_a3181fa8f81a530e20de55adbcb09a50e}
+Start conversion on A\+D\+C connected to pots. It is indexed by the string Start\+Pot\+Feedback\+Conv in the Pre\+Read\+Map. \hypertarget{classmts_lo_po_mo_co_a18238e257128dff22573950fbcabbe85}{}\index{mts\+Lo\+Po\+Mo\+Co@{mts\+Lo\+Po\+Mo\+Co}!Start\+Pot\+Feedback\+Conv\+Fast@{Start\+Pot\+Feedback\+Conv\+Fast}}
+\index{Start\+Pot\+Feedback\+Conv\+Fast@{Start\+Pot\+Feedback\+Conv\+Fast}!mts\+Lo\+Po\+Mo\+Co@{mts\+Lo\+Po\+Mo\+Co}}
+\subsubsection[{Start\+Pot\+Feedback\+Conv\+Fast}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Lo\+Po\+Mo\+Co\+::\+Start\+Pot\+Feedback\+Conv\+Fast (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_lo_po_mo_co_a18238e257128dff22573950fbcabbe85}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/saw\+Lo\+Po\+Mo\+Co/include/saw\+Lo\+Po\+Mo\+Co/\hyperlink{mts_lo_po_mo_co_8h}{mts\+Lo\+Po\+Mo\+Co.\+h}\end{DoxyCompactItemize}

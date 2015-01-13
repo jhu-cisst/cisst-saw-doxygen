@@ -1,0 +1,387 @@
+\hypertarget{cmn_class_register_macros_8h}{}\section{/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Common/cmn\+Class\+Register\+Macros.h File Reference}
+\label{cmn_class_register_macros_8h}\index{/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Common/cmn\+Class\+Register\+Macros.\+h@{/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Common/cmn\+Class\+Register\+Macros.\+h}}
+
+
+Class registration macros.  
+
+
+{\ttfamily \#include $<$cisst\+Common/cmn\+Type\+Traits.\+h$>$}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{cmn_class_register_macros_8h_a489304cbd8f2b5e2afce49a6c7547b4a}{\+\_\+cmn\+Class\+Register\+Macros\+\_\+h}
+\end{DoxyCompactItemize}
+\begin{Indent}{\bf Methods declaration}\par
+{\em These macros are used to declare the required methods and data members for the class registration (see also \hyperlink{classcmn_class_register}{cmn\+Class\+Register}). Every class which needs to be registered should include one of these macros within its declaration A\+N\+D be derived from \hyperlink{classcmn_generic_object}{cmn\+Generic\+Object}.
+
+To declare a registered class without dynamic creation, the header file my\+Class.\+h should have\+:
+
+
+\begin{DoxyCode}
+\textcolor{keyword}{class }\hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{CISST\_EXPORT} myClass: \textcolor{keyword}{public} \hyperlink{classcmn_generic_object}{cmnGenericObject}
+\{
+    \hyperlink{cmn_class_register_macros_8h_a7fbab4cbcdfbf35062de4f734e697034}{CMN\_DECLARE\_SERVICES}(#\hyperlink{cmn_class_register_macros_8h_a655b277c7507ae5ce052a5134dacc596}{CMN\_NO\_DYNAMIC\_CREATION}, 
+      \hyperlink{cmn_log_lo_d_8h_ac2213548b400589fcf2e07edc9909ae3}{CMN\_LOG\_DEFAULT\_LOD});
+\textcolor{keyword}{public}:
+    ...
+\};
+\end{DoxyCode}
+
+
+The macro \hyperlink{cmn_class_register_macros_8h_a7fbab4cbcdfbf35062de4f734e697034}{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S} defines amongst other things a static method which can not be inlined. Therefore, when one wants to create a Dll (shared libraries on Windows) with a C++ compiler from Microsoft, one must explicitly export it. In most cases, the class itself is \char`\"{}exported\char`\"{} using \hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T}. If the class is not wholly exported, it is possible to export some methods explicitly. In this case, the macro \hyperlink{cmn_class_register_macros_8h_a3dcd7732deee3f450741f0eb099ff778}{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+E\+X\+P\+O\+R\+T} should be used\+:
+
+
+\begin{DoxyCode}
+\textcolor{keyword}{class }myClass: \textcolor{keyword}{public} \hyperlink{classcmn_generic_object}{cmnGenericObject}
+\{
+    \hyperlink{cmn_class_register_macros_8h_a3dcd7732deee3f450741f0eb099ff778}{CMN\_DECLARE\_SERVICES\_EXPORT}(
+      \hyperlink{cmn_class_register_macros_8h_a655b277c7507ae5ce052a5134dacc596}{CMN\_NO\_DYNAMIC\_CREATION}, \hyperlink{cmn_log_lo_d_8h_ac2213548b400589fcf2e07edc9909ae3}{CMN\_LOG\_DEFAULT\_LOD});
+\textcolor{keyword}{public}:
+    \hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{CISST\_EXPORT} \textcolor{keywordtype}{void} MethodA(\textcolor{keywordtype}{void});
+    ...
+\};
+\end{DoxyCode}
+
+
+Finally, the macro \hyperlink{cmn_class_register_macros_8h_af8df3ac865f864f55bfa16f2222bf1c8}{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+E\+X\+P\+O\+R\+T\+\_\+\+A\+L\+W\+A\+Y\+S} was introduced as a temporary fix for template classes, such as \hyperlink{classmts_generic_object_proxy}{mts\+Generic\+Object\+Proxy}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em has\+Dynamic\+Creation} & Set this parameter to \hyperlink{cmn_class_register_macros_8h_ae4935a070cfc17d287f22f52d5141b17}{C\+M\+N\+\_\+\+D\+Y\+N\+A\+M\+I\+C\+\_\+\+C\+R\+E\+A\+T\+I\+O\+N} to enable dynamic creation and \hyperlink{cmn_class_register_macros_8h_a655b277c7507ae5ce052a5134dacc596}{C\+M\+N\+\_\+\+N\+O\+\_\+\+D\+Y\+N\+A\+M\+I\+C\+\_\+\+C\+R\+E\+A\+T\+I\+O\+N} to disable dynamic creation. Dynamic creation requires a public default constructor.\\
+\hline
+{\em lod} & The default Level of Detail used for this class (see also \hyperlink{cmn_logger_8h_a2eb3b40558ec17c9ae45197777aca7b2}{C\+M\+N\+\_\+\+L\+O\+G} and \hyperlink{cmn_log_lo_d_8h_ac2213548b400589fcf2e07edc9909ae3}{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+L\+O\+D}. \\
+\hline
+\end{DoxyParams}
+}\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{cmn_class_register_macros_8h_a7fbab4cbcdfbf35062de4f734e697034}{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S}(has\+Dynamic\+Creation,  lod)
+\item 
+\#define \hyperlink{cmn_class_register_macros_8h_a3dcd7732deee3f450741f0eb099ff778}{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+E\+X\+P\+O\+R\+T}(has\+Dynamic\+Creation,  lod)
+\item 
+\#define \hyperlink{cmn_class_register_macros_8h_af8df3ac865f864f55bfa16f2222bf1c8}{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+E\+X\+P\+O\+R\+T\+\_\+\+A\+L\+W\+A\+Y\+S}(has\+Dynamic\+Creation,  lod)~\hyperlink{cmn_class_register_macros_8h_a3dcd7732deee3f450741f0eb099ff778}{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+E\+X\+P\+O\+R\+T}(has\+Dynamic\+Creation, lod)
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Global function declaration}\par
+{\em The templated function cmn\+Class\+Services\+Instantiate is used to generate a unique object of type \hyperlink{classcmn_class_services}{cmn\+Class\+Services} for each class defined in cisst. It contains a static data member which will be constructed the first time it is called. The header file my\+Class.\+h should have to following code after the class declaration of my\+Class\+:
+
+
+\begin{DoxyCode}
+\hyperlink{cmn_class_register_macros_8h_aa48d094056bcdcf9e6956cb155d49df3}{CMN\_DECLARE\_SERVICES\_INSTANTIATION\_EXPORT}(myClass)
+\end{DoxyCode}
+
+
+In most case, \hyperlink{svl_filter_splitter_8h_ad1a0b59b6425e7aa5f3a61f12d7f0da2}{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+I\+N\+S\+T\+A\+N\+T\+I\+A\+T\+I\+O\+N\+\_\+\+E\+X\+P\+O\+R\+T} should be used. One case where \hyperlink{mts_text_to_speech_8h_aae5c71840342a68c45d71caab531fec2}{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+I\+N\+S\+T\+A\+N\+T\+I\+A\+T\+I\+O\+N} should be used in when the class instantiation will reside in the executable, i.\+e. the programmer is not creating a library but is linking all is binaries directly into and executable.
+
+For a template class, it is necessary to specify which template specialization is being registered. To do so, it is recommended to create a {\ttfamily typedef} before using this macro\+: 
+\begin{DoxyCode}
+\textcolor{keyword}{template} <\textcolor{keyword}{class} \_templateParameter>
+myClass<\_templateParameter>: \textcolor{keyword}{public} \hyperlink{classcmn_generic_object}{cmnGenericObject}
+\{
+    \hyperlink{cmn_class_register_macros_8h_a3dcd7732deee3f450741f0eb099ff778}{CMN\_DECLARE\_SERVICES\_EXPORT}(
+      \hyperlink{cmn_class_register_macros_8h_a655b277c7507ae5ce052a5134dacc596}{CMN\_NO\_DYNAMIC\_CREATION}, \hyperlink{cmn_log_lo_d_8h_ac2213548b400589fcf2e07edc9909ae3}{CMN\_LOG\_DEFAULT\_LOD});
+\textcolor{keyword}{public}:
+    ...
+\};
+
+\textcolor{keyword}{typedef} myClass<double> myClassDouble;
+\hyperlink{cmn_class_register_macros_8h_aa48d094056bcdcf9e6956cb155d49df3}{CMN\_DECLARE\_SERVICES\_INSTANTIATION\_EXPORT}(myClassDouble)
+\end{DoxyCode}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em class\+Name} & The name of the class being registered, without any quote. \\
+\hline
+\end{DoxyParams}
+}\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{cmn_class_register_macros_8h_a198d81818e0b66ebe53e692dc7c5d058}{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+I\+N\+S\+T\+A\+N\+T\+I\+A\+T\+I\+O\+N}(class\+Name)
+\item 
+\#define \hyperlink{cmn_class_register_macros_8h_aa48d094056bcdcf9e6956cb155d49df3}{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+I\+N\+S\+T\+A\+N\+T\+I\+A\+T\+I\+O\+N\+\_\+\+E\+X\+P\+O\+R\+T}(class\+Name)
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Methods and function implementation}\par
+{\em These macros implements the methods and function declared by \hyperlink{cmn_class_register_macros_8h_a7fbab4cbcdfbf35062de4f734e697034}{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S} and \hyperlink{svl_filter_splitter_8h_ad1a0b59b6425e7aa5f3a61f12d7f0da2}{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+I\+N\+S\+T\+A\+N\+T\+I\+A\+T\+I\+O\+N\+\_\+\+E\+X\+P\+O\+R\+T}. For a non templated class, the source file my\+Class.\+cpp must have\+:
+
+
+\begin{DoxyCode}
+\hyperlink{cmn_class_register_macros_8h_a59997edde1868f5ce515ff85dfeaf2f8}{CMN\_IMPLEMENT\_SERVICES}(myClass);
+\end{DoxyCode}
+
+
+For a templated class specialized and define using {\ttfamily typedef ... my\+Class\+Double}, the source file must have\+:
+
+
+\begin{DoxyCode}
+\hyperlink{cmn_class_register_macros_8h_a6d3e8cb412f66ff7e73f3ab52290f471}{CMN\_IMPLEMENT\_SERVICES\_TEMPLATED}(myClassDouble);
+\end{DoxyCode}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em class\+Name} & The name of the class being registered, without any quote. \\
+\hline
+\end{DoxyParams}
+}\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{cmn_class_register_macros_8h_a12ab6d7d7081d7aa4cf0bcf6b0a2d210}{L\+I\+B\+R\+A\+R\+Y\+\_\+\+N\+A\+M\+E\+\_\+\+F\+O\+R\+\_\+\+C\+I\+S\+S\+T\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R}~\char`\"{}\char`\"{}
+\item 
+\#define \hyperlink{cmn_class_register_macros_8h_a6fd760c16fcaeaa68c56d557ebd050ab}{C\+M\+N\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+I\+N\+T\+E\+R\+N\+A\+L}(class\+Name,  parent\+Services,  arg\+Type)
+\item 
+\#define \hyperlink{cmn_class_register_macros_8h_a59997edde1868f5ce515ff85dfeaf2f8}{C\+M\+N\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S}(class\+Name)~\hyperlink{cmn_class_register_macros_8h_a6fd760c16fcaeaa68c56d557ebd050ab}{C\+M\+N\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+I\+N\+T\+E\+R\+N\+A\+L}(class\+Name, 0, class\+Name)
+\item 
+\#define \hyperlink{cmn_class_register_macros_8h_a583e3df28c29b5913825d4a7f607015e}{C\+M\+N\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+D\+E\+R\+I\+V\+E\+D}(class\+Name,  parent\+Name)
+\item 
+\#define \hyperlink{cmn_class_register_macros_8h_aa5e69fbf99139cc409dc6ca95cf0a16e}{C\+M\+N\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+D\+\_\+\+I\+N\+T\+E\+R\+N\+A\+L}(class\+Name,  parent\+Services,  arg\+Type)
+\item 
+\#define \hyperlink{cmn_class_register_macros_8h_a6d3e8cb412f66ff7e73f3ab52290f471}{C\+M\+N\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+D}(class\+Name)~\hyperlink{cmn_class_register_macros_8h_aa5e69fbf99139cc409dc6ca95cf0a16e}{C\+M\+N\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+D\+\_\+\+I\+N\+T\+E\+R\+N\+A\+L}(class\+Name, 0, class\+Name)
+\item 
+\#define \hyperlink{cmn_class_register_macros_8h_a1ceb41eb2ecadea0355c04c6153933ae}{C\+M\+N\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+D\+E\+R\+I\+V\+E\+D\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+D}(class\+Name,  parent\+Name)
+\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Variables}
+\begin{Indent}{\bf Possible values used in combination with}\par
+{\em \hyperlink{cmn_class_register_macros_8h_a7fbab4cbcdfbf35062de4f734e697034}{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S} and \hyperlink{cmn_class_register_macros_8h_a3dcd7732deee3f450741f0eb099ff778}{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+E\+X\+P\+O\+R\+T}. }\begin{DoxyCompactItemize}
+\item 
+const int \hyperlink{cmn_class_register_macros_8h_a655b277c7507ae5ce052a5134dacc596}{C\+M\+N\+\_\+\+N\+O\+\_\+\+D\+Y\+N\+A\+M\+I\+C\+\_\+\+C\+R\+E\+A\+T\+I\+O\+N} = 0
+\item 
+const int \hyperlink{cmn_class_register_macros_8h_a69c4eb8a67ade443567b297ad37793c9}{C\+M\+N\+\_\+\+D\+Y\+N\+A\+M\+I\+C\+\_\+\+C\+R\+E\+A\+T\+I\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T} = 1
+\item 
+const int \hyperlink{cmn_class_register_macros_8h_af57891d7b5eda7cd9204c533834ce8a7}{C\+M\+N\+\_\+\+D\+Y\+N\+A\+M\+I\+C\+\_\+\+C\+R\+E\+A\+T\+I\+O\+N\+\_\+\+C\+O\+P\+Y} = 2
+\item 
+const int \hyperlink{cmn_class_register_macros_8h_ae4935a070cfc17d287f22f52d5141b17}{C\+M\+N\+\_\+\+D\+Y\+N\+A\+M\+I\+C\+\_\+\+C\+R\+E\+A\+T\+I\+O\+N} = 3
+\item 
+const int \hyperlink{cmn_class_register_macros_8h_ae03abce559a5be22f565350dc9f34ddd}{C\+M\+N\+\_\+\+D\+Y\+N\+A\+M\+I\+C\+\_\+\+C\+R\+E\+A\+T\+I\+O\+N\+\_\+\+S\+E\+T\+N\+A\+M\+E} = 5
+\item 
+const int \hyperlink{cmn_class_register_macros_8h_a06f3630c8f5b33a490f9da4beb12e1d9}{C\+M\+N\+\_\+\+D\+Y\+N\+A\+M\+I\+C\+\_\+\+C\+R\+E\+A\+T\+I\+O\+N\+\_\+\+O\+N\+E\+A\+R\+G} = 8
+\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\subsection{Detailed Description}
+Class registration macros. 
+
+These macros can be divided in three sets, one of each should be used for any registered class.
+
+
+\begin{DoxyItemize}
+\item \hyperlink{cmn_class_register_macros_8h_a7fbab4cbcdfbf35062de4f734e697034}{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S} and \hyperlink{cmn_class_register_macros_8h_a3dcd7732deee3f450741f0eb099ff778}{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+E\+X\+P\+O\+R\+T} are used in the header file to add the declaration of methods and data members within the scope of the registered class.
+\item \hyperlink{cmn_class_register_macros_8h_a198d81818e0b66ebe53e692dc7c5d058}{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+I\+N\+S\+T\+A\+N\+T\+I\+A\+T\+I\+O\+N} and \hyperlink{cmn_class_register_macros_8h_aa48d094056bcdcf9e6956cb155d49df3}{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+I\+N\+S\+T\+A\+N\+T\+I\+A\+T\+I\+O\+N\+\_\+\+E\+X\+P\+O\+R\+T} are used in the header file to declare a template specialization of the global function cmn\+Class\+Services\+Instantiate for the registered class.
+\item \hyperlink{cmn_class_register_macros_8h_a59997edde1868f5ce515ff85dfeaf2f8}{C\+M\+N\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S} and \hyperlink{cmn_class_register_macros_8h_a6d3e8cb412f66ff7e73f3ab52290f471}{C\+M\+N\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+D} are used in the source file to implement the methods declared by \hyperlink{cmn_class_register_macros_8h_a7fbab4cbcdfbf35062de4f734e697034}{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S} and the function specialization declared by \hyperlink{cmn_class_register_macros_8h_a198d81818e0b66ebe53e692dc7c5d058}{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+I\+N\+S\+T\+A\+N\+T\+I\+A\+T\+I\+O\+N}.
+\end{DoxyItemize}
+
+The macros ending with \+\_\+\+E\+X\+P\+O\+R\+T are required to handle the generation of D\+L\+Ls correctly with the different Microsoft compilers (see also \hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T}) and the macro ending with \+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+D is required to register a specialized version of a templated class.
+
+Finally, the definitions \hyperlink{cmn_class_register_macros_8h_ae4935a070cfc17d287f22f52d5141b17}{C\+M\+N\+\_\+\+D\+Y\+N\+A\+M\+I\+C\+\_\+\+C\+R\+E\+A\+T\+I\+O\+N} and \hyperlink{cmn_class_register_macros_8h_a655b277c7507ae5ce052a5134dacc596}{C\+M\+N\+\_\+\+N\+O\+\_\+\+D\+Y\+N\+A\+M\+I\+C\+\_\+\+C\+R\+E\+A\+T\+I\+O\+N} are provided to increase the code readability. 
+
+\subsection{Macro Definition Documentation}
+\hypertarget{cmn_class_register_macros_8h_a489304cbd8f2b5e2afce49a6c7547b4a}{}\index{cmn\+Class\+Register\+Macros.\+h@{cmn\+Class\+Register\+Macros.\+h}!\+\_\+cmn\+Class\+Register\+Macros\+\_\+h@{\+\_\+cmn\+Class\+Register\+Macros\+\_\+h}}
+\index{\+\_\+cmn\+Class\+Register\+Macros\+\_\+h@{\+\_\+cmn\+Class\+Register\+Macros\+\_\+h}!cmn\+Class\+Register\+Macros.\+h@{cmn\+Class\+Register\+Macros.\+h}}
+\subsubsection[{\+\_\+cmn\+Class\+Register\+Macros\+\_\+h}]{\setlength{\rightskip}{0pt plus 5cm}\#define \+\_\+cmn\+Class\+Register\+Macros\+\_\+h}\label{cmn_class_register_macros_8h_a489304cbd8f2b5e2afce49a6c7547b4a}
+\hypertarget{cmn_class_register_macros_8h_a7fbab4cbcdfbf35062de4f734e697034}{}\index{cmn\+Class\+Register\+Macros.\+h@{cmn\+Class\+Register\+Macros.\+h}!C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S@{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S}}
+\index{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S@{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S}!cmn\+Class\+Register\+Macros.\+h@{cmn\+Class\+Register\+Macros.\+h}}
+\subsubsection[{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S(
+\begin{DoxyParamCaption}
+\item[{}]{has\+Dynamic\+Creation, }
+\item[{}]{lod}
+\end{DoxyParamCaption}
+)}\label{cmn_class_register_macros_8h_a7fbab4cbcdfbf35062de4f734e697034}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keyword}{public}: \(\backslash\)
+      enum \{HAS\_DYNAMIC\_CREATION = hasDynamicCreation\}; \(\backslash\)
+      enum \{InitialLoD = lod\}; \(\backslash\)
+      static \hyperlink{classcmn_class_services_base}{cmnClassServicesBase} * ClassServices(\textcolor{keywordtype}{void}); \(\backslash\)
+      virtual \textcolor{keyword}{const} \hyperlink{classcmn_class_services_base}{cmnClassServicesBase} * Services(\textcolor{keywordtype}{void}) \textcolor{keyword}{const}; \(\backslash\)
+    private: \(\backslash\)
+      static \hyperlink{classcmn_class_services_base}{cmnClassServicesBase} * ClassServicesPointer;
+\end{DoxyCode}
+\hypertarget{cmn_class_register_macros_8h_a3dcd7732deee3f450741f0eb099ff778}{}\index{cmn\+Class\+Register\+Macros.\+h@{cmn\+Class\+Register\+Macros.\+h}!C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+E\+X\+P\+O\+R\+T@{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+E\+X\+P\+O\+R\+T}}
+\index{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+E\+X\+P\+O\+R\+T@{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+E\+X\+P\+O\+R\+T}!cmn\+Class\+Register\+Macros.\+h@{cmn\+Class\+Register\+Macros.\+h}}
+\subsubsection[{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+E\+X\+P\+O\+R\+T}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+E\+X\+P\+O\+R\+T(
+\begin{DoxyParamCaption}
+\item[{}]{has\+Dynamic\+Creation, }
+\item[{}]{lod}
+\end{DoxyParamCaption}
+)}\label{cmn_class_register_macros_8h_a3dcd7732deee3f450741f0eb099ff778}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keyword}{public}: \(\backslash\)
+      enum \{HAS\_DYNAMIC\_CREATION = hasDynamicCreation\}; \(\backslash\)
+      enum \{InitialLoD = lod\}; \hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{\(\backslash\)}
+\hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{      CISST\_EXPORT} \textcolor{keyword}{static} \hyperlink{classcmn_class_services_base}{cmnClassServicesBase} * ClassServices(\textcolor{keywordtype}{void});
+       \(\backslash\)
+      virtual \hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{CISST\_EXPORT} \textcolor{keyword}{const} \hyperlink{classcmn_class_services_base}{cmnClassServicesBase} * Services(\textcolor{keywordtype}{void}) \textcolor{keyword}{
+      const}; \(\backslash\)
+    private: \(\backslash\)
+      static \hyperlink{classcmn_class_services_base}{cmnClassServicesBase} * ClassServicesPointer;
+\end{DoxyCode}
+\hypertarget{cmn_class_register_macros_8h_af8df3ac865f864f55bfa16f2222bf1c8}{}\index{cmn\+Class\+Register\+Macros.\+h@{cmn\+Class\+Register\+Macros.\+h}!C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+E\+X\+P\+O\+R\+T\+\_\+\+A\+L\+W\+A\+Y\+S@{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+E\+X\+P\+O\+R\+T\+\_\+\+A\+L\+W\+A\+Y\+S}}
+\index{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+E\+X\+P\+O\+R\+T\+\_\+\+A\+L\+W\+A\+Y\+S@{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+E\+X\+P\+O\+R\+T\+\_\+\+A\+L\+W\+A\+Y\+S}!cmn\+Class\+Register\+Macros.\+h@{cmn\+Class\+Register\+Macros.\+h}}
+\subsubsection[{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+E\+X\+P\+O\+R\+T\+\_\+\+A\+L\+W\+A\+Y\+S}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+E\+X\+P\+O\+R\+T\+\_\+\+A\+L\+W\+A\+Y\+S(
+\begin{DoxyParamCaption}
+\item[{}]{has\+Dynamic\+Creation, }
+\item[{}]{lod}
+\end{DoxyParamCaption}
+)~{\bf C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+E\+X\+P\+O\+R\+T}(has\+Dynamic\+Creation, lod)}\label{cmn_class_register_macros_8h_af8df3ac865f864f55bfa16f2222bf1c8}
+\hypertarget{cmn_class_register_macros_8h_a198d81818e0b66ebe53e692dc7c5d058}{}\index{cmn\+Class\+Register\+Macros.\+h@{cmn\+Class\+Register\+Macros.\+h}!C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+I\+N\+S\+T\+A\+N\+T\+I\+A\+T\+I\+O\+N@{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+I\+N\+S\+T\+A\+N\+T\+I\+A\+T\+I\+O\+N}}
+\index{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+I\+N\+S\+T\+A\+N\+T\+I\+A\+T\+I\+O\+N@{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+I\+N\+S\+T\+A\+N\+T\+I\+A\+T\+I\+O\+N}!cmn\+Class\+Register\+Macros.\+h@{cmn\+Class\+Register\+Macros.\+h}}
+\subsubsection[{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+I\+N\+S\+T\+A\+N\+T\+I\+A\+T\+I\+O\+N}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+I\+N\+S\+T\+A\+N\+T\+I\+A\+T\+I\+O\+N(
+\begin{DoxyParamCaption}
+\item[{}]{class\+Name}
+\end{DoxyParamCaption}
+)}\label{cmn_class_register_macros_8h_a198d81818e0b66ebe53e692dc7c5d058}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keyword}{template}<> \(\backslash\)
+cmnClassServicesBase * cmnClassServicesInstantiate<className>(void);
+\end{DoxyCode}
+\hypertarget{cmn_class_register_macros_8h_aa48d094056bcdcf9e6956cb155d49df3}{}\index{cmn\+Class\+Register\+Macros.\+h@{cmn\+Class\+Register\+Macros.\+h}!C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+I\+N\+S\+T\+A\+N\+T\+I\+A\+T\+I\+O\+N\+\_\+\+E\+X\+P\+O\+R\+T@{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+I\+N\+S\+T\+A\+N\+T\+I\+A\+T\+I\+O\+N\+\_\+\+E\+X\+P\+O\+R\+T}}
+\index{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+I\+N\+S\+T\+A\+N\+T\+I\+A\+T\+I\+O\+N\+\_\+\+E\+X\+P\+O\+R\+T@{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+I\+N\+S\+T\+A\+N\+T\+I\+A\+T\+I\+O\+N\+\_\+\+E\+X\+P\+O\+R\+T}!cmn\+Class\+Register\+Macros.\+h@{cmn\+Class\+Register\+Macros.\+h}}
+\subsubsection[{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+I\+N\+S\+T\+A\+N\+T\+I\+A\+T\+I\+O\+N\+\_\+\+E\+X\+P\+O\+R\+T}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+I\+N\+S\+T\+A\+N\+T\+I\+A\+T\+I\+O\+N\+\_\+\+E\+X\+P\+O\+R\+T(
+\begin{DoxyParamCaption}
+\item[{}]{class\+Name}
+\end{DoxyParamCaption}
+)}\label{cmn_class_register_macros_8h_aa48d094056bcdcf9e6956cb155d49df3}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keyword}{template}<> CISST\_EXPORT \(\backslash\)
+cmnClassServicesBase * cmnClassServicesInstantiate<className>(void);
+\end{DoxyCode}
+\hypertarget{cmn_class_register_macros_8h_a59997edde1868f5ce515ff85dfeaf2f8}{}\index{cmn\+Class\+Register\+Macros.\+h@{cmn\+Class\+Register\+Macros.\+h}!C\+M\+N\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S@{C\+M\+N\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S}}
+\index{C\+M\+N\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S@{C\+M\+N\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S}!cmn\+Class\+Register\+Macros.\+h@{cmn\+Class\+Register\+Macros.\+h}}
+\subsubsection[{C\+M\+N\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+M\+N\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S(
+\begin{DoxyParamCaption}
+\item[{}]{class\+Name}
+\end{DoxyParamCaption}
+)~{\bf C\+M\+N\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+I\+N\+T\+E\+R\+N\+A\+L}(class\+Name, 0, class\+Name)}\label{cmn_class_register_macros_8h_a59997edde1868f5ce515ff85dfeaf2f8}
+\hypertarget{cmn_class_register_macros_8h_a583e3df28c29b5913825d4a7f607015e}{}\index{cmn\+Class\+Register\+Macros.\+h@{cmn\+Class\+Register\+Macros.\+h}!C\+M\+N\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+D\+E\+R\+I\+V\+E\+D@{C\+M\+N\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+D\+E\+R\+I\+V\+E\+D}}
+\index{C\+M\+N\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+D\+E\+R\+I\+V\+E\+D@{C\+M\+N\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+D\+E\+R\+I\+V\+E\+D}!cmn\+Class\+Register\+Macros.\+h@{cmn\+Class\+Register\+Macros.\+h}}
+\subsubsection[{C\+M\+N\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+D\+E\+R\+I\+V\+E\+D}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+M\+N\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+D\+E\+R\+I\+V\+E\+D(
+\begin{DoxyParamCaption}
+\item[{}]{class\+Name, }
+\item[{}]{parent\+Name}
+\end{DoxyParamCaption}
+)}\label{cmn_class_register_macros_8h_a583e3df28c29b5913825d4a7f607015e}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\hyperlink{cmn_type_traits_8h_a434bfc0c5a215f217e4c5b3790e4591e}{CMN\_IS\_DERIVED\_FROM\_ASSERT}(className, parentName) \hyperlink{cmn_class_register_macros_8h_a6fd760c16fcaeaa68c56d557ebd050ab}{\(\backslash\)}
+\hyperlink{cmn_class_register_macros_8h_a6fd760c16fcaeaa68c56d557ebd050ab}{            CMN\_IMPLEMENT\_SERVICES\_INTERNAL}(className, 
+      parentName::ClassServices(), className)
+\end{DoxyCode}
+\hypertarget{cmn_class_register_macros_8h_a1ceb41eb2ecadea0355c04c6153933ae}{}\index{cmn\+Class\+Register\+Macros.\+h@{cmn\+Class\+Register\+Macros.\+h}!C\+M\+N\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+D\+E\+R\+I\+V\+E\+D\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+D@{C\+M\+N\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+D\+E\+R\+I\+V\+E\+D\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+D}}
+\index{C\+M\+N\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+D\+E\+R\+I\+V\+E\+D\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+D@{C\+M\+N\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+D\+E\+R\+I\+V\+E\+D\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+D}!cmn\+Class\+Register\+Macros.\+h@{cmn\+Class\+Register\+Macros.\+h}}
+\subsubsection[{C\+M\+N\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+D\+E\+R\+I\+V\+E\+D\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+D}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+M\+N\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+D\+E\+R\+I\+V\+E\+D\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+D(
+\begin{DoxyParamCaption}
+\item[{}]{class\+Name, }
+\item[{}]{parent\+Name}
+\end{DoxyParamCaption}
+)}\label{cmn_class_register_macros_8h_a1ceb41eb2ecadea0355c04c6153933ae}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\hyperlink{cmn_type_traits_8h_a434bfc0c5a215f217e4c5b3790e4591e}{CMN\_IS\_DERIVED\_FROM\_ASSERT}(className, parentName) \hyperlink{cmn_class_register_macros_8h_aa5e69fbf99139cc409dc6ca95cf0a16e}{\(\backslash\)}
+\hyperlink{cmn_class_register_macros_8h_aa5e69fbf99139cc409dc6ca95cf0a16e}{            CMN\_IMPLEMENT\_SERVICES\_TEMPLATED\_INTERNAL}(
+      className, parentName::ClassServices(), className)
+\end{DoxyCode}
+\hypertarget{cmn_class_register_macros_8h_a6fd760c16fcaeaa68c56d557ebd050ab}{}\index{cmn\+Class\+Register\+Macros.\+h@{cmn\+Class\+Register\+Macros.\+h}!C\+M\+N\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+I\+N\+T\+E\+R\+N\+A\+L@{C\+M\+N\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+I\+N\+T\+E\+R\+N\+A\+L}}
+\index{C\+M\+N\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+I\+N\+T\+E\+R\+N\+A\+L@{C\+M\+N\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+I\+N\+T\+E\+R\+N\+A\+L}!cmn\+Class\+Register\+Macros.\+h@{cmn\+Class\+Register\+Macros.\+h}}
+\subsubsection[{C\+M\+N\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+I\+N\+T\+E\+R\+N\+A\+L}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+M\+N\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+I\+N\+T\+E\+R\+N\+A\+L(
+\begin{DoxyParamCaption}
+\item[{}]{class\+Name, }
+\item[{}]{parent\+Services, }
+\item[{}]{arg\+Type}
+\end{DoxyParamCaption}
+)}\label{cmn_class_register_macros_8h_a6fd760c16fcaeaa68c56d557ebd050ab}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\hyperlink{classcmn_class_services_base}{cmnClassServicesBase} * className::ClassServices(\textcolor{keywordtype}{void}) \(\backslash\)
+\{ \(\backslash\)
+    static \hyperlink{classcmn_class_services_base}{cmnClassServicesBase} * classServices = 
+      cmnClassServicesInstantiate<className>(); \(\backslash\)
+    return classServices; \(\backslash\)
+\} \(\backslash\)
+cmnClassServicesBase * className::ClassServicesPointer = className::ClassServices(); \(\backslash\)
+const \hyperlink{classcmn_class_services_base}{cmnClassServicesBase} * className::Services(\textcolor{keywordtype}{void}) const    \(\backslash\)
+\{ \(\backslash\)
+    return this->ClassServices(); \(\backslash\)
+\} \(\backslash\)
+template<> \(\backslash\)
+cmnClassServicesBase * cmnClassServicesInstantiate<className>(void) \(\backslash\)
+\{ \(\backslash\)
+    static 
+      \hyperlink{classcmn_class_services}{cmnClassServices<className::HAS\_DYNAMIC\_CREATION, className, argType> \(\backslash\)}
+\hyperlink{classcmn_class_services}{        classServices}(#className, &\textcolor{keyword}{typeid}(className), parentServices, 
+      \hyperlink{cmn_class_register_macros_8h_a12ab6d7d7081d7aa4cf0bcf6b0a2d210}{LIBRARY\_NAME\_FOR\_CISST\_REGISTER}, className::InitialLoD); \(\backslash\)
+    return \textcolor{keyword}{static\_cast<}\hyperlink{classcmn_class_services_base}{cmnClassServicesBase} *\textcolor{keyword}{>}(&classServices); \(\backslash\)
+\} \(\backslash\)
+static \hyperlink{classcmn_class_services_base}{cmnClassServicesBase} * className##ClassServicesPointer = 
+      className::ClassServices();
+\end{DoxyCode}
+\hypertarget{cmn_class_register_macros_8h_a6d3e8cb412f66ff7e73f3ab52290f471}{}\index{cmn\+Class\+Register\+Macros.\+h@{cmn\+Class\+Register\+Macros.\+h}!C\+M\+N\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+D@{C\+M\+N\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+D}}
+\index{C\+M\+N\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+D@{C\+M\+N\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+D}!cmn\+Class\+Register\+Macros.\+h@{cmn\+Class\+Register\+Macros.\+h}}
+\subsubsection[{C\+M\+N\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+D}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+M\+N\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+D(
+\begin{DoxyParamCaption}
+\item[{}]{class\+Name}
+\end{DoxyParamCaption}
+)~{\bf C\+M\+N\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+D\+\_\+\+I\+N\+T\+E\+R\+N\+A\+L}(class\+Name, 0, class\+Name)}\label{cmn_class_register_macros_8h_a6d3e8cb412f66ff7e73f3ab52290f471}
+\hypertarget{cmn_class_register_macros_8h_aa5e69fbf99139cc409dc6ca95cf0a16e}{}\index{cmn\+Class\+Register\+Macros.\+h@{cmn\+Class\+Register\+Macros.\+h}!C\+M\+N\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+D\+\_\+\+I\+N\+T\+E\+R\+N\+A\+L@{C\+M\+N\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+D\+\_\+\+I\+N\+T\+E\+R\+N\+A\+L}}
+\index{C\+M\+N\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+D\+\_\+\+I\+N\+T\+E\+R\+N\+A\+L@{C\+M\+N\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+D\+\_\+\+I\+N\+T\+E\+R\+N\+A\+L}!cmn\+Class\+Register\+Macros.\+h@{cmn\+Class\+Register\+Macros.\+h}}
+\subsubsection[{C\+M\+N\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+D\+\_\+\+I\+N\+T\+E\+R\+N\+A\+L}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+M\+N\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+D\+\_\+\+I\+N\+T\+E\+R\+N\+A\+L(
+\begin{DoxyParamCaption}
+\item[{}]{class\+Name, }
+\item[{}]{parent\+Services, }
+\item[{}]{arg\+Type}
+\end{DoxyParamCaption}
+)}\label{cmn_class_register_macros_8h_aa5e69fbf99139cc409dc6ca95cf0a16e}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keyword}{template}<> \(\backslash\)
+cmnClassServicesBase * className::ClassServices(\textcolor{keywordtype}{void}) \(\backslash\)
+\{ \(\backslash\)
+    static \hyperlink{classcmn_class_services_base}{cmnClassServicesBase} * classServices = 
+      cmnClassServicesInstantiate<className>(); \(\backslash\)
+    return classServices; \(\backslash\)
+\} \(\backslash\)
+template<> \(\backslash\)
+cmnClassServicesBase * className::ClassServicesPointer = className::ClassServices(); \(\backslash\)
+template<> \(\backslash\)
+const \hyperlink{classcmn_class_services_base}{cmnClassServicesBase} * className::Services(\textcolor{keywordtype}{void}) const \(\backslash\)
+\{ \(\backslash\)
+   return this->ClassServices(); \(\backslash\)
+\} \(\backslash\)
+template<> \(\backslash\)
+cmnClassServicesBase * cmnClassServicesInstantiate<className>(void) \(\backslash\)
+\{ \(\backslash\)
+    static 
+      \hyperlink{classcmn_class_services}{cmnClassServices<className::HAS\_DYNAMIC\_CREATION, className, argType> \(\backslash\)}
+\hyperlink{classcmn_class_services}{        classServices}(#className, &\textcolor{keyword}{typeid}(className), parentServices, 
+      \hyperlink{cmn_class_register_macros_8h_a12ab6d7d7081d7aa4cf0bcf6b0a2d210}{LIBRARY\_NAME\_FOR\_CISST\_REGISTER}, className::InitialLoD); \(\backslash\)
+    return \textcolor{keyword}{static\_cast<}\hyperlink{classcmn_class_services_base}{cmnClassServicesBase} *\textcolor{keyword}{>}(&classServices); \(\backslash\)
+\} \(\backslash\)
+static \hyperlink{classcmn_class_services_base}{cmnClassServicesBase} * className##ClassServicesPointer = 
+      className::ClassServices();
+\end{DoxyCode}
+\hypertarget{cmn_class_register_macros_8h_a12ab6d7d7081d7aa4cf0bcf6b0a2d210}{}\index{cmn\+Class\+Register\+Macros.\+h@{cmn\+Class\+Register\+Macros.\+h}!L\+I\+B\+R\+A\+R\+Y\+\_\+\+N\+A\+M\+E\+\_\+\+F\+O\+R\+\_\+\+C\+I\+S\+S\+T\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R@{L\+I\+B\+R\+A\+R\+Y\+\_\+\+N\+A\+M\+E\+\_\+\+F\+O\+R\+\_\+\+C\+I\+S\+S\+T\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R}}
+\index{L\+I\+B\+R\+A\+R\+Y\+\_\+\+N\+A\+M\+E\+\_\+\+F\+O\+R\+\_\+\+C\+I\+S\+S\+T\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R@{L\+I\+B\+R\+A\+R\+Y\+\_\+\+N\+A\+M\+E\+\_\+\+F\+O\+R\+\_\+\+C\+I\+S\+S\+T\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R}!cmn\+Class\+Register\+Macros.\+h@{cmn\+Class\+Register\+Macros.\+h}}
+\subsubsection[{L\+I\+B\+R\+A\+R\+Y\+\_\+\+N\+A\+M\+E\+\_\+\+F\+O\+R\+\_\+\+C\+I\+S\+S\+T\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R}]{\setlength{\rightskip}{0pt plus 5cm}\#define L\+I\+B\+R\+A\+R\+Y\+\_\+\+N\+A\+M\+E\+\_\+\+F\+O\+R\+\_\+\+C\+I\+S\+S\+T\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R~\char`\"{}\char`\"{}}\label{cmn_class_register_macros_8h_a12ab6d7d7081d7aa4cf0bcf6b0a2d210}
+
+
+\subsection{Variable Documentation}
+\hypertarget{cmn_class_register_macros_8h_ae4935a070cfc17d287f22f52d5141b17}{}\index{cmn\+Class\+Register\+Macros.\+h@{cmn\+Class\+Register\+Macros.\+h}!C\+M\+N\+\_\+\+D\+Y\+N\+A\+M\+I\+C\+\_\+\+C\+R\+E\+A\+T\+I\+O\+N@{C\+M\+N\+\_\+\+D\+Y\+N\+A\+M\+I\+C\+\_\+\+C\+R\+E\+A\+T\+I\+O\+N}}
+\index{C\+M\+N\+\_\+\+D\+Y\+N\+A\+M\+I\+C\+\_\+\+C\+R\+E\+A\+T\+I\+O\+N@{C\+M\+N\+\_\+\+D\+Y\+N\+A\+M\+I\+C\+\_\+\+C\+R\+E\+A\+T\+I\+O\+N}!cmn\+Class\+Register\+Macros.\+h@{cmn\+Class\+Register\+Macros.\+h}}
+\subsubsection[{C\+M\+N\+\_\+\+D\+Y\+N\+A\+M\+I\+C\+\_\+\+C\+R\+E\+A\+T\+I\+O\+N}]{\setlength{\rightskip}{0pt plus 5cm}const int C\+M\+N\+\_\+\+D\+Y\+N\+A\+M\+I\+C\+\_\+\+C\+R\+E\+A\+T\+I\+O\+N = 3}\label{cmn_class_register_macros_8h_ae4935a070cfc17d287f22f52d5141b17}
+\hypertarget{cmn_class_register_macros_8h_af57891d7b5eda7cd9204c533834ce8a7}{}\index{cmn\+Class\+Register\+Macros.\+h@{cmn\+Class\+Register\+Macros.\+h}!C\+M\+N\+\_\+\+D\+Y\+N\+A\+M\+I\+C\+\_\+\+C\+R\+E\+A\+T\+I\+O\+N\+\_\+\+C\+O\+P\+Y@{C\+M\+N\+\_\+\+D\+Y\+N\+A\+M\+I\+C\+\_\+\+C\+R\+E\+A\+T\+I\+O\+N\+\_\+\+C\+O\+P\+Y}}
+\index{C\+M\+N\+\_\+\+D\+Y\+N\+A\+M\+I\+C\+\_\+\+C\+R\+E\+A\+T\+I\+O\+N\+\_\+\+C\+O\+P\+Y@{C\+M\+N\+\_\+\+D\+Y\+N\+A\+M\+I\+C\+\_\+\+C\+R\+E\+A\+T\+I\+O\+N\+\_\+\+C\+O\+P\+Y}!cmn\+Class\+Register\+Macros.\+h@{cmn\+Class\+Register\+Macros.\+h}}
+\subsubsection[{C\+M\+N\+\_\+\+D\+Y\+N\+A\+M\+I\+C\+\_\+\+C\+R\+E\+A\+T\+I\+O\+N\+\_\+\+C\+O\+P\+Y}]{\setlength{\rightskip}{0pt plus 5cm}const int C\+M\+N\+\_\+\+D\+Y\+N\+A\+M\+I\+C\+\_\+\+C\+R\+E\+A\+T\+I\+O\+N\+\_\+\+C\+O\+P\+Y = 2}\label{cmn_class_register_macros_8h_af57891d7b5eda7cd9204c533834ce8a7}
+\hypertarget{cmn_class_register_macros_8h_a69c4eb8a67ade443567b297ad37793c9}{}\index{cmn\+Class\+Register\+Macros.\+h@{cmn\+Class\+Register\+Macros.\+h}!C\+M\+N\+\_\+\+D\+Y\+N\+A\+M\+I\+C\+\_\+\+C\+R\+E\+A\+T\+I\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T@{C\+M\+N\+\_\+\+D\+Y\+N\+A\+M\+I\+C\+\_\+\+C\+R\+E\+A\+T\+I\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T}}
+\index{C\+M\+N\+\_\+\+D\+Y\+N\+A\+M\+I\+C\+\_\+\+C\+R\+E\+A\+T\+I\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T@{C\+M\+N\+\_\+\+D\+Y\+N\+A\+M\+I\+C\+\_\+\+C\+R\+E\+A\+T\+I\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T}!cmn\+Class\+Register\+Macros.\+h@{cmn\+Class\+Register\+Macros.\+h}}
+\subsubsection[{C\+M\+N\+\_\+\+D\+Y\+N\+A\+M\+I\+C\+\_\+\+C\+R\+E\+A\+T\+I\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T}]{\setlength{\rightskip}{0pt plus 5cm}const int C\+M\+N\+\_\+\+D\+Y\+N\+A\+M\+I\+C\+\_\+\+C\+R\+E\+A\+T\+I\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T = 1}\label{cmn_class_register_macros_8h_a69c4eb8a67ade443567b297ad37793c9}
+\hypertarget{cmn_class_register_macros_8h_a06f3630c8f5b33a490f9da4beb12e1d9}{}\index{cmn\+Class\+Register\+Macros.\+h@{cmn\+Class\+Register\+Macros.\+h}!C\+M\+N\+\_\+\+D\+Y\+N\+A\+M\+I\+C\+\_\+\+C\+R\+E\+A\+T\+I\+O\+N\+\_\+\+O\+N\+E\+A\+R\+G@{C\+M\+N\+\_\+\+D\+Y\+N\+A\+M\+I\+C\+\_\+\+C\+R\+E\+A\+T\+I\+O\+N\+\_\+\+O\+N\+E\+A\+R\+G}}
+\index{C\+M\+N\+\_\+\+D\+Y\+N\+A\+M\+I\+C\+\_\+\+C\+R\+E\+A\+T\+I\+O\+N\+\_\+\+O\+N\+E\+A\+R\+G@{C\+M\+N\+\_\+\+D\+Y\+N\+A\+M\+I\+C\+\_\+\+C\+R\+E\+A\+T\+I\+O\+N\+\_\+\+O\+N\+E\+A\+R\+G}!cmn\+Class\+Register\+Macros.\+h@{cmn\+Class\+Register\+Macros.\+h}}
+\subsubsection[{C\+M\+N\+\_\+\+D\+Y\+N\+A\+M\+I\+C\+\_\+\+C\+R\+E\+A\+T\+I\+O\+N\+\_\+\+O\+N\+E\+A\+R\+G}]{\setlength{\rightskip}{0pt plus 5cm}const int C\+M\+N\+\_\+\+D\+Y\+N\+A\+M\+I\+C\+\_\+\+C\+R\+E\+A\+T\+I\+O\+N\+\_\+\+O\+N\+E\+A\+R\+G = 8}\label{cmn_class_register_macros_8h_a06f3630c8f5b33a490f9da4beb12e1d9}
+\hypertarget{cmn_class_register_macros_8h_ae03abce559a5be22f565350dc9f34ddd}{}\index{cmn\+Class\+Register\+Macros.\+h@{cmn\+Class\+Register\+Macros.\+h}!C\+M\+N\+\_\+\+D\+Y\+N\+A\+M\+I\+C\+\_\+\+C\+R\+E\+A\+T\+I\+O\+N\+\_\+\+S\+E\+T\+N\+A\+M\+E@{C\+M\+N\+\_\+\+D\+Y\+N\+A\+M\+I\+C\+\_\+\+C\+R\+E\+A\+T\+I\+O\+N\+\_\+\+S\+E\+T\+N\+A\+M\+E}}
+\index{C\+M\+N\+\_\+\+D\+Y\+N\+A\+M\+I\+C\+\_\+\+C\+R\+E\+A\+T\+I\+O\+N\+\_\+\+S\+E\+T\+N\+A\+M\+E@{C\+M\+N\+\_\+\+D\+Y\+N\+A\+M\+I\+C\+\_\+\+C\+R\+E\+A\+T\+I\+O\+N\+\_\+\+S\+E\+T\+N\+A\+M\+E}!cmn\+Class\+Register\+Macros.\+h@{cmn\+Class\+Register\+Macros.\+h}}
+\subsubsection[{C\+M\+N\+\_\+\+D\+Y\+N\+A\+M\+I\+C\+\_\+\+C\+R\+E\+A\+T\+I\+O\+N\+\_\+\+S\+E\+T\+N\+A\+M\+E}]{\setlength{\rightskip}{0pt plus 5cm}const int C\+M\+N\+\_\+\+D\+Y\+N\+A\+M\+I\+C\+\_\+\+C\+R\+E\+A\+T\+I\+O\+N\+\_\+\+S\+E\+T\+N\+A\+M\+E = 5}\label{cmn_class_register_macros_8h_ae03abce559a5be22f565350dc9f34ddd}
+\hypertarget{cmn_class_register_macros_8h_a655b277c7507ae5ce052a5134dacc596}{}\index{cmn\+Class\+Register\+Macros.\+h@{cmn\+Class\+Register\+Macros.\+h}!C\+M\+N\+\_\+\+N\+O\+\_\+\+D\+Y\+N\+A\+M\+I\+C\+\_\+\+C\+R\+E\+A\+T\+I\+O\+N@{C\+M\+N\+\_\+\+N\+O\+\_\+\+D\+Y\+N\+A\+M\+I\+C\+\_\+\+C\+R\+E\+A\+T\+I\+O\+N}}
+\index{C\+M\+N\+\_\+\+N\+O\+\_\+\+D\+Y\+N\+A\+M\+I\+C\+\_\+\+C\+R\+E\+A\+T\+I\+O\+N@{C\+M\+N\+\_\+\+N\+O\+\_\+\+D\+Y\+N\+A\+M\+I\+C\+\_\+\+C\+R\+E\+A\+T\+I\+O\+N}!cmn\+Class\+Register\+Macros.\+h@{cmn\+Class\+Register\+Macros.\+h}}
+\subsubsection[{C\+M\+N\+\_\+\+N\+O\+\_\+\+D\+Y\+N\+A\+M\+I\+C\+\_\+\+C\+R\+E\+A\+T\+I\+O\+N}]{\setlength{\rightskip}{0pt plus 5cm}const int C\+M\+N\+\_\+\+N\+O\+\_\+\+D\+Y\+N\+A\+M\+I\+C\+\_\+\+C\+R\+E\+A\+T\+I\+O\+N = 0}\label{cmn_class_register_macros_8h_a655b277c7507ae5ce052a5134dacc596}

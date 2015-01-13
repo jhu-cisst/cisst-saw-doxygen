@@ -1,0 +1,258 @@
+\hypertarget{classmts_sensable_h_d}{}\section{mts\+Sensable\+H\+D Class Reference}
+\label{classmts_sensable_h_d}\index{mts\+Sensable\+H\+D@{mts\+Sensable\+H\+D}}
+
+
+{\ttfamily \#include $<$mts\+Sensable\+H\+D.\+h$>$}
+
+Inheritance diagram for mts\+Sensable\+H\+D\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=6.000000cm]{d1/d8f/classmts_sensable_h_d}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structmts_sensable_h_d_1_1_device_data}{Device\+Data}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \hyperlink{classmts_sensable_h_d_a84d35b044861ecfea50f9fba325ad26daa92e43e72ff821fcb7bb36577c22cab4}{N\+B\+\_\+\+J\+O\+I\+N\+T\+S} = 6
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmts_sensable_h_d_a8edc1b99888eea9146e97e9e1e4244a2}{mts\+Sensable\+H\+D} (const std\+::string \&task\+Name, const std\+::string \&first\+Device\+Name)
+\item 
+\hyperlink{classmts_sensable_h_d_a65eb4de4d62c141f61b4c5afaa3b12ca}{mts\+Sensable\+H\+D} (const std\+::string \&task\+Name, const std\+::string \&first\+Device\+Name, bool first\+Device\+Forces\+Enabled)
+\item 
+\hyperlink{classmts_sensable_h_d_a21ff41ea6bf303e046d42f1c5843d31a}{mts\+Sensable\+H\+D} (const std\+::string \&task\+Name, const std\+::string \&first\+Device\+Name, const std\+::string \&second\+Device\+Name, bool first\+Device\+Forces\+Enabled, bool second\+Device\+Forces\+Enabled)
+\item 
+\hyperlink{classmts_sensable_h_d_a9fbacf9fb330e6acb3715bcb1f6ff66e}{$\sim$mts\+Sensable\+H\+D} ()
+\item 
+void \hyperlink{classmts_sensable_h_d_a3819baf43b57192a1a339a942d2fa0d7}{Configure} (const std\+::string \&\hyperlink{cmn_portability_8h_a021894e2626935fa2305434b1e893ff6}{C\+M\+N\+\_\+\+U\+N\+U\+S\+E\+D}(filename)=\char`\"{}\char`\"{})
+\item 
+void \hyperlink{classmts_sensable_h_d_a842668ae5afc97ce4513ef6c619e0a3c}{Create} (void $\ast$data=0)
+\item 
+void \hyperlink{classmts_sensable_h_d_a9fbf2831f6dfbb39089c53a411bff751}{Run} ()
+\item 
+void \hyperlink{classmts_sensable_h_d_a7541d19a105b37a06e943e503a6eea2f}{Start} (void)
+\item 
+void \hyperlink{classmts_sensable_h_d_a735f1a0600ddd91e112e92e520d07d46}{Kill} (void)
+\item 
+void \hyperlink{classmts_sensable_h_d_ae55b2349e493058a723ca94d54f341d0}{Cleanup} (void)
+\item 
+virtual void \hyperlink{classmts_sensable_h_d_a42fe43b1265e162e83ed815e726955da}{User\+Control} (void)
+\end{DoxyCompactItemize}
+{\bf }\par
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmts_sensable_h_d_aed43dbeb27fa30622e969a8cf471a697}{mts\+Sensable\+H\+D} (const std\+::string \&task\+Name, const std\+::string \&first\+Device\+Name, const std\+::string \&second\+Device\+Name)
+\item 
+\hyperlink{classmts_sensable_h_d_ac9efabdeee298603256c66885e4fe998}{mts\+Sensable\+H\+D} (const char $\ast$task\+Name, const char $\ast$first\+Device\+Name, const char $\ast$second\+Device\+Name)
+\end{DoxyCompactItemize}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classmts_sensable_h_d_a75a41334d77a8db7e0913e9d5ca0483d}{Device\+Count}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classmts_sensable_h_d_ada94e86f257a11e1df347dc003eb0bba}{Set\+Interfaces} (const std\+::string \&first\+Device\+Name, const std\+::string \&second\+Device\+Name, bool first\+Device\+Forces\+Enabled, bool second\+Device\+Forces\+Enabled)
+\item 
+void \hyperlink{classmts_sensable_h_d_a4bb52aba80991b43e4692fdbbdf97e6b}{Setup\+Interfaces} (void)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classvct_dynamic_vector}{vct\+Dynamic\+Vector}$<$ \hyperlink{structmts_sensable_h_d_1_1_device_data}{Device\+Data} $\ast$ $>$ \hyperlink{classmts_sensable_h_d_a0c8ea80df145268d76c57d99ca5820e3}{Devices\+Vector}
+\item 
+\hyperlink{classvct_dynamic_vector}{vct\+Dynamic\+Vector}$<$ mts\+Sensable\+H\+D\+Handle $\ast$ $>$ \hyperlink{classmts_sensable_h_d_addc29ab0005b52b7c220957338fd13b0}{Devices\+Handle\+Vector}
+\item 
+mts\+Sensable\+H\+D\+Driver\+Data $\ast$ \hyperlink{classmts_sensable_h_d_abdb150f4135097e1530e967a8b4c9b8c}{Driver}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classmts_sensable_h_d_a84d35b044861ecfea50f9fba325ad26d}{}\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}\label{classmts_sensable_h_d_a84d35b044861ecfea50f9fba325ad26d}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{N\+B\+\_\+\+J\+O\+I\+N\+T\+S@{N\+B\+\_\+\+J\+O\+I\+N\+T\+S}!mts\+Sensable\+H\+D@{mts\+Sensable\+H\+D}}\index{mts\+Sensable\+H\+D@{mts\+Sensable\+H\+D}!N\+B\+\_\+\+J\+O\+I\+N\+T\+S@{N\+B\+\_\+\+J\+O\+I\+N\+T\+S}}\item[{\em 
+\hypertarget{classmts_sensable_h_d_a84d35b044861ecfea50f9fba325ad26daa92e43e72ff821fcb7bb36577c22cab4}{}N\+B\+\_\+\+J\+O\+I\+N\+T\+S\label{classmts_sensable_h_d_a84d35b044861ecfea50f9fba325ad26daa92e43e72ff821fcb7bb36577c22cab4}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmts_sensable_h_d_a8edc1b99888eea9146e97e9e1e4244a2}{}\index{mts\+Sensable\+H\+D@{mts\+Sensable\+H\+D}!mts\+Sensable\+H\+D@{mts\+Sensable\+H\+D}}
+\index{mts\+Sensable\+H\+D@{mts\+Sensable\+H\+D}!mts\+Sensable\+H\+D@{mts\+Sensable\+H\+D}}
+\subsubsection[{mts\+Sensable\+H\+D}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Sensable\+H\+D\+::mts\+Sensable\+H\+D (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{task\+Name, }
+\item[{const std\+::string \&}]{first\+Device\+Name}
+\end{DoxyParamCaption}
+)}\label{classmts_sensable_h_d_a8edc1b99888eea9146e97e9e1e4244a2}
+Constructor for a single arm with a user specified name. The name must match the device name as defined by Sensable drivers. Force output initially disabled \hypertarget{classmts_sensable_h_d_a65eb4de4d62c141f61b4c5afaa3b12ca}{}\index{mts\+Sensable\+H\+D@{mts\+Sensable\+H\+D}!mts\+Sensable\+H\+D@{mts\+Sensable\+H\+D}}
+\index{mts\+Sensable\+H\+D@{mts\+Sensable\+H\+D}!mts\+Sensable\+H\+D@{mts\+Sensable\+H\+D}}
+\subsubsection[{mts\+Sensable\+H\+D}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Sensable\+H\+D\+::mts\+Sensable\+H\+D (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{task\+Name, }
+\item[{const std\+::string \&}]{first\+Device\+Name, }
+\item[{bool}]{first\+Device\+Forces\+Enabled}
+\end{DoxyParamCaption}
+)}\label{classmts_sensable_h_d_a65eb4de4d62c141f61b4c5afaa3b12ca}
+Constructor for a single arm with a user specified name. The name must match the device name as defined by Sensable drivers. Overloaded to enable/disable force output. \hypertarget{classmts_sensable_h_d_aed43dbeb27fa30622e969a8cf471a697}{}\index{mts\+Sensable\+H\+D@{mts\+Sensable\+H\+D}!mts\+Sensable\+H\+D@{mts\+Sensable\+H\+D}}
+\index{mts\+Sensable\+H\+D@{mts\+Sensable\+H\+D}!mts\+Sensable\+H\+D@{mts\+Sensable\+H\+D}}
+\subsubsection[{mts\+Sensable\+H\+D}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Sensable\+H\+D\+::mts\+Sensable\+H\+D (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{task\+Name, }
+\item[{const std\+::string \&}]{first\+Device\+Name, }
+\item[{const std\+::string \&}]{second\+Device\+Name}
+\end{DoxyParamCaption}
+)}\label{classmts_sensable_h_d_aed43dbeb27fa30622e969a8cf471a697}
+Constructor for two arms with a user specified names. The names must match the device names as defined by Sensable drivers. Force output initially disabled \hypertarget{classmts_sensable_h_d_ac9efabdeee298603256c66885e4fe998}{}\index{mts\+Sensable\+H\+D@{mts\+Sensable\+H\+D}!mts\+Sensable\+H\+D@{mts\+Sensable\+H\+D}}
+\index{mts\+Sensable\+H\+D@{mts\+Sensable\+H\+D}!mts\+Sensable\+H\+D@{mts\+Sensable\+H\+D}}
+\subsubsection[{mts\+Sensable\+H\+D}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Sensable\+H\+D\+::mts\+Sensable\+H\+D (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{task\+Name, }
+\item[{const char $\ast$}]{first\+Device\+Name, }
+\item[{const char $\ast$}]{second\+Device\+Name}
+\end{DoxyParamCaption}
+)}\label{classmts_sensable_h_d_ac9efabdeee298603256c66885e4fe998}
+\hypertarget{classmts_sensable_h_d_a21ff41ea6bf303e046d42f1c5843d31a}{}\index{mts\+Sensable\+H\+D@{mts\+Sensable\+H\+D}!mts\+Sensable\+H\+D@{mts\+Sensable\+H\+D}}
+\index{mts\+Sensable\+H\+D@{mts\+Sensable\+H\+D}!mts\+Sensable\+H\+D@{mts\+Sensable\+H\+D}}
+\subsubsection[{mts\+Sensable\+H\+D}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Sensable\+H\+D\+::mts\+Sensable\+H\+D (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{task\+Name, }
+\item[{const std\+::string \&}]{first\+Device\+Name, }
+\item[{const std\+::string \&}]{second\+Device\+Name, }
+\item[{bool}]{first\+Device\+Forces\+Enabled, }
+\item[{bool}]{second\+Device\+Forces\+Enabled}
+\end{DoxyParamCaption}
+)}\label{classmts_sensable_h_d_a21ff41ea6bf303e046d42f1c5843d31a}
+Constructor for two arms with a user specified names. The names must match the device names as defined by Sensable drivers. Overloaded to enable/disable force output. \hypertarget{classmts_sensable_h_d_a9fbacf9fb330e6acb3715bcb1f6ff66e}{}\index{mts\+Sensable\+H\+D@{mts\+Sensable\+H\+D}!````~mts\+Sensable\+H\+D@{$\sim$mts\+Sensable\+H\+D}}
+\index{````~mts\+Sensable\+H\+D@{$\sim$mts\+Sensable\+H\+D}!mts\+Sensable\+H\+D@{mts\+Sensable\+H\+D}}
+\subsubsection[{$\sim$mts\+Sensable\+H\+D}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Sensable\+H\+D\+::$\sim$mts\+Sensable\+H\+D (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classmts_sensable_h_d_a9fbacf9fb330e6acb3715bcb1f6ff66e}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classmts_sensable_h_d_ae55b2349e493058a723ca94d54f341d0}{}\index{mts\+Sensable\+H\+D@{mts\+Sensable\+H\+D}!Cleanup@{Cleanup}}
+\index{Cleanup@{Cleanup}!mts\+Sensable\+H\+D@{mts\+Sensable\+H\+D}}
+\subsubsection[{Cleanup}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Sensable\+H\+D\+::\+Cleanup (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classmts_sensable_h_d_ae55b2349e493058a723ca94d54f341d0}
+Virtual method that gets overloaded, and is run after the component gets killed using \hyperlink{classmts_sensable_h_d_a735f1a0600ddd91e112e92e520d07d46}{Kill()} method. 
+
+Reimplemented from \hyperlink{classmts_component_a891f330f4fde7d831dcf7dc537dc5e81}{mts\+Component}.
+
+\hypertarget{classmts_sensable_h_d_a3819baf43b57192a1a339a942d2fa0d7}{}\index{mts\+Sensable\+H\+D@{mts\+Sensable\+H\+D}!Configure@{Configure}}
+\index{Configure@{Configure}!mts\+Sensable\+H\+D@{mts\+Sensable\+H\+D}}
+\subsubsection[{Configure}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Sensable\+H\+D\+::\+Configure (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{C\+M\+N\+\_\+\+U\+N\+U\+S\+E\+Dfilename = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classmts_sensable_h_d_a3819baf43b57192a1a339a942d2fa0d7}
+Virtual method that gets called when the task/interface needs to be configured. Should it take X\+M\+L info?? 
+
+Reimplemented from \hyperlink{classmts_task_a52c822f34f12a0eb14f3d02de9ddd6f6}{mts\+Task}.
+
+\hypertarget{classmts_sensable_h_d_a842668ae5afc97ce4513ef6c619e0a3c}{}\index{mts\+Sensable\+H\+D@{mts\+Sensable\+H\+D}!Create@{Create}}
+\index{Create@{Create}!mts\+Sensable\+H\+D@{mts\+Sensable\+H\+D}}
+\subsubsection[{Create}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Sensable\+H\+D\+::\+Create (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{data = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_sensable_h_d_a842668ae5afc97ce4513ef6c619e0a3c}
+
+
+Reimplemented from \hyperlink{classmts_task_from_callback_ad167ac4fc56eb5559af44741cbc10600}{mts\+Task\+From\+Callback}.
+
+\hypertarget{classmts_sensable_h_d_a735f1a0600ddd91e112e92e520d07d46}{}\index{mts\+Sensable\+H\+D@{mts\+Sensable\+H\+D}!Kill@{Kill}}
+\index{Kill@{Kill}!mts\+Sensable\+H\+D@{mts\+Sensable\+H\+D}}
+\subsubsection[{Kill}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Sensable\+H\+D\+::\+Kill (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_sensable_h_d_a735f1a0600ddd91e112e92e520d07d46}
+End the task 
+
+Reimplemented from \hyperlink{classmts_task_from_callback_ae5a5080d14be6175588bc98275070384}{mts\+Task\+From\+Callback}.
+
+\hypertarget{classmts_sensable_h_d_a9fbf2831f6dfbb39089c53a411bff751}{}\index{mts\+Sensable\+H\+D@{mts\+Sensable\+H\+D}!Run@{Run}}
+\index{Run@{Run}!mts\+Sensable\+H\+D@{mts\+Sensable\+H\+D}}
+\subsubsection[{Run}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Sensable\+H\+D\+::\+Run (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_sensable_h_d_a9fbf2831f6dfbb39089c53a411bff751}
+Pure virtual method that gets overloaded to run the actual task. 
+
+Implements \hyperlink{classmts_task_a20e18c9479cb650792456c32ee689834}{mts\+Task}.
+
+\hypertarget{classmts_sensable_h_d_ada94e86f257a11e1df347dc003eb0bba}{}\index{mts\+Sensable\+H\+D@{mts\+Sensable\+H\+D}!Set\+Interfaces@{Set\+Interfaces}}
+\index{Set\+Interfaces@{Set\+Interfaces}!mts\+Sensable\+H\+D@{mts\+Sensable\+H\+D}}
+\subsubsection[{Set\+Interfaces}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Sensable\+H\+D\+::\+Set\+Interfaces (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{first\+Device\+Name, }
+\item[{const std\+::string \&}]{second\+Device\+Name, }
+\item[{bool}]{first\+Device\+Forces\+Enabled, }
+\item[{bool}]{second\+Device\+Forces\+Enabled}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_sensable_h_d_ada94e86f257a11e1df347dc003eb0bba}
+\hypertarget{classmts_sensable_h_d_a4bb52aba80991b43e4692fdbbdf97e6b}{}\index{mts\+Sensable\+H\+D@{mts\+Sensable\+H\+D}!Setup\+Interfaces@{Setup\+Interfaces}}
+\index{Setup\+Interfaces@{Setup\+Interfaces}!mts\+Sensable\+H\+D@{mts\+Sensable\+H\+D}}
+\subsubsection[{Setup\+Interfaces}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Sensable\+H\+D\+::\+Setup\+Interfaces (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_sensable_h_d_a4bb52aba80991b43e4692fdbbdf97e6b}
+\hypertarget{classmts_sensable_h_d_a7541d19a105b37a06e943e503a6eea2f}{}\index{mts\+Sensable\+H\+D@{mts\+Sensable\+H\+D}!Start@{Start}}
+\index{Start@{Start}!mts\+Sensable\+H\+D@{mts\+Sensable\+H\+D}}
+\subsubsection[{Start}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Sensable\+H\+D\+::\+Start (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_sensable_h_d_a7541d19a105b37a06e943e503a6eea2f}
+Start/resume execution of the task 
+
+Reimplemented from \hyperlink{classmts_task_from_callback_a420e3a65a5cb0bcd5adad46964a49892}{mts\+Task\+From\+Callback}.
+
+\hypertarget{classmts_sensable_h_d_a42fe43b1265e162e83ed815e726955da}{}\index{mts\+Sensable\+H\+D@{mts\+Sensable\+H\+D}!User\+Control@{User\+Control}}
+\index{User\+Control@{User\+Control}!mts\+Sensable\+H\+D@{mts\+Sensable\+H\+D}}
+\subsubsection[{User\+Control}]{\setlength{\rightskip}{0pt plus 5cm}virtual void mts\+Sensable\+H\+D\+::\+User\+Control (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classmts_sensable_h_d_a42fe43b1265e162e83ed815e726955da}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classmts_sensable_h_d_a75a41334d77a8db7e0913e9d5ca0483d}{}\index{mts\+Sensable\+H\+D@{mts\+Sensable\+H\+D}!Device\+Count@{Device\+Count}}
+\index{Device\+Count@{Device\+Count}!mts\+Sensable\+H\+D@{mts\+Sensable\+H\+D}}
+\subsubsection[{Device\+Count}]{\setlength{\rightskip}{0pt plus 5cm}int mts\+Sensable\+H\+D\+::\+Device\+Count}\label{classmts_sensable_h_d_a75a41334d77a8db7e0913e9d5ca0483d}
+\hypertarget{classmts_sensable_h_d_addc29ab0005b52b7c220957338fd13b0}{}\index{mts\+Sensable\+H\+D@{mts\+Sensable\+H\+D}!Devices\+Handle\+Vector@{Devices\+Handle\+Vector}}
+\index{Devices\+Handle\+Vector@{Devices\+Handle\+Vector}!mts\+Sensable\+H\+D@{mts\+Sensable\+H\+D}}
+\subsubsection[{Devices\+Handle\+Vector}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Dynamic\+Vector}$<$mts\+Sensable\+H\+D\+Handle $\ast$$>$ mts\+Sensable\+H\+D\+::\+Devices\+Handle\+Vector\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_sensable_h_d_addc29ab0005b52b7c220957338fd13b0}
+\hypertarget{classmts_sensable_h_d_a0c8ea80df145268d76c57d99ca5820e3}{}\index{mts\+Sensable\+H\+D@{mts\+Sensable\+H\+D}!Devices\+Vector@{Devices\+Vector}}
+\index{Devices\+Vector@{Devices\+Vector}!mts\+Sensable\+H\+D@{mts\+Sensable\+H\+D}}
+\subsubsection[{Devices\+Vector}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Dynamic\+Vector}$<${\bf Device\+Data} $\ast$$>$ mts\+Sensable\+H\+D\+::\+Devices\+Vector\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_sensable_h_d_a0c8ea80df145268d76c57d99ca5820e3}
+\hypertarget{classmts_sensable_h_d_abdb150f4135097e1530e967a8b4c9b8c}{}\index{mts\+Sensable\+H\+D@{mts\+Sensable\+H\+D}!Driver@{Driver}}
+\index{Driver@{Driver}!mts\+Sensable\+H\+D@{mts\+Sensable\+H\+D}}
+\subsubsection[{Driver}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Sensable\+H\+D\+Driver\+Data$\ast$ mts\+Sensable\+H\+D\+::\+Driver\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_sensable_h_d_abdb150f4135097e1530e967a8b4c9b8c}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/saw\+Sensable\+Phantom/include/saw\+Sensable\+Phantom/\hyperlink{mts_sensable_h_d_8h}{mts\+Sensable\+H\+D.\+h}\end{DoxyCompactItemize}

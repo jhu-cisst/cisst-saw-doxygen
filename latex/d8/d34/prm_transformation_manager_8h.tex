@@ -1,0 +1,132 @@
+\hypertarget{prm_transformation_manager_8h}{}\section{/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Parameter\+Types/prm\+Transformation\+Manager.h File Reference}
+\label{prm_transformation_manager_8h}\index{/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Parameter\+Types/prm\+Transformation\+Manager.\+h@{/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Parameter\+Types/prm\+Transformation\+Manager.\+h}}
+
+
+A singleton tree of transformations, and support classes.  
+
+
+{\ttfamily \#include $<$cisst\+Parameter\+Types/prm\+Transformation\+Base.\+h$>$}\\*
+{\ttfamily \#include $<$cisst\+Parameter\+Types/prm\+Transformation\+Fixed.\+h$>$}\\*
+{\ttfamily \#include $<$cisst\+Parameter\+Types/prm\+Export.\+h$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classprm_transformation_manager}{prm\+Transformation\+Manager}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{prm_transformation_manager_8h_acb52dd3de4226ed526e4dedc42f4a75e}{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+I\+N\+S\+T\+A\+N\+T\+I\+A\+T\+I\+O\+N} (\hyperlink{classprm_transformation_manager}{prm\+Transformation\+Manager})
+\item 
+\hyperlink{vct_transformation_types_8h_a81feda0a02c2d1bc26e5553f409fed20}{vct\+Frm3} \hyperlink{prm_transformation_manager_8h_a731a64aa8924d753766621f289f73a2e}{prm\+W\+R\+T\+Reference} (const \hyperlink{prm_transformation_base_8h_a881a6a7d2191474974cdf36d79e1df08}{prm\+Transformation\+Base\+Ptr} \&tip\+Frame, const \hyperlink{prm_transformation_base_8h_a881a6a7d2191474974cdf36d79e1df08}{prm\+Transformation\+Base\+Ptr} \&ref\+Frame)
+\item 
+\hyperlink{vct_transformation_types_8h_a81feda0a02c2d1bc26e5553f409fed20}{vct\+Frm3} \hyperlink{prm_transformation_manager_8h_aaa9754eb4d0d1b821124f915fcad636b}{prm\+W\+R\+T\+World} (const \hyperlink{prm_transformation_base_8h_a881a6a7d2191474974cdf36d79e1df08}{prm\+Transformation\+Base\+Ptr} \&frame)
+\item 
+\hyperlink{vct_transformation_types_8h_a81feda0a02c2d1bc26e5553f409fed20}{vct\+Frm3} \hyperlink{prm_transformation_manager_8h_a8ba1e5f9850d3805a5b83bd7206791db}{prm\+W\+R\+T\+Reference} (const std\+::string \&tip\+Frame, const std\+::string \&ref\+Frame)
+\item 
+\hyperlink{vct_transformation_types_8h_a81feda0a02c2d1bc26e5553f409fed20}{vct\+Frm3} \hyperlink{prm_transformation_manager_8h_a9987cabf712b91b9596b67ae9d651b3c}{prm\+W\+R\+T\+Reference} (const std\+::string \&tip\+Frame, const \hyperlink{prm_transformation_base_8h_a881a6a7d2191474974cdf36d79e1df08}{prm\+Transformation\+Base\+Ptr} \&ref\+Frame)
+\item 
+\hyperlink{vct_transformation_types_8h_a81feda0a02c2d1bc26e5553f409fed20}{vct\+Frm3} \hyperlink{prm_transformation_manager_8h_a10d83094c060676c6409e00c7f2f99d1}{prm\+W\+R\+T\+Reference} (const \hyperlink{prm_transformation_base_8h_a881a6a7d2191474974cdf36d79e1df08}{prm\+Transformation\+Base\+Ptr} \&tip\+Frame, const std\+::string \&ref\+Frame)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A singleton tree of transformations, and support classes. 
+
+
+
+\subsection{Function Documentation}
+\hypertarget{prm_transformation_manager_8h_acb52dd3de4226ed526e4dedc42f4a75e}{}\index{prm\+Transformation\+Manager.\+h@{prm\+Transformation\+Manager.\+h}!C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+I\+N\+S\+T\+A\+N\+T\+I\+A\+T\+I\+O\+N@{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+I\+N\+S\+T\+A\+N\+T\+I\+A\+T\+I\+O\+N}}
+\index{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+I\+N\+S\+T\+A\+N\+T\+I\+A\+T\+I\+O\+N@{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+I\+N\+S\+T\+A\+N\+T\+I\+A\+T\+I\+O\+N}!prm\+Transformation\+Manager.\+h@{prm\+Transformation\+Manager.\+h}}
+\subsubsection[{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+I\+N\+S\+T\+A\+N\+T\+I\+A\+T\+I\+O\+N}]{\setlength{\rightskip}{0pt plus 5cm}C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+I\+N\+S\+T\+A\+N\+T\+I\+A\+T\+I\+O\+N (
+\begin{DoxyParamCaption}
+\item[{{\bf prm\+Transformation\+Manager}}]{}
+\end{DoxyParamCaption}
+)}\label{prm_transformation_manager_8h_acb52dd3de4226ed526e4dedc42f4a75e}
+\hypertarget{prm_transformation_manager_8h_a731a64aa8924d753766621f289f73a2e}{}\index{prm\+Transformation\+Manager.\+h@{prm\+Transformation\+Manager.\+h}!prm\+W\+R\+T\+Reference@{prm\+W\+R\+T\+Reference}}
+\index{prm\+W\+R\+T\+Reference@{prm\+W\+R\+T\+Reference}!prm\+Transformation\+Manager.\+h@{prm\+Transformation\+Manager.\+h}}
+\subsubsection[{prm\+W\+R\+T\+Reference}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Frm3} prm\+W\+R\+T\+Reference (
+\begin{DoxyParamCaption}
+\item[{const {\bf prm\+Transformation\+Base\+Ptr} \&}]{tip\+Frame, }
+\item[{const {\bf prm\+Transformation\+Base\+Ptr} \&}]{ref\+Frame}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{prm_transformation_manager_8h_a731a64aa8924d753766621f289f73a2e}
+Convenience function for computation of the current transformation between two frames using the frame manager. 
+\begin{DoxyParams}{Parameters}
+{\em tip\+Frame} & const \hyperlink{classprm_transformation_base}{prm\+Transformation\+Base}\& reference to end of the frame manager branch \\
+\hline
+{\em ref\+Frame} & const \hyperlink{classprm_transformation_base}{prm\+Transformation\+Base}\& reference to start of the frame manager branch \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vct\+Frm3 homogeneous transform value of the Cartesian relationship between tip and ref frames. 
+\end{DoxyReturn}
+\hypertarget{prm_transformation_manager_8h_a8ba1e5f9850d3805a5b83bd7206791db}{}\index{prm\+Transformation\+Manager.\+h@{prm\+Transformation\+Manager.\+h}!prm\+W\+R\+T\+Reference@{prm\+W\+R\+T\+Reference}}
+\index{prm\+W\+R\+T\+Reference@{prm\+W\+R\+T\+Reference}!prm\+Transformation\+Manager.\+h@{prm\+Transformation\+Manager.\+h}}
+\subsubsection[{prm\+W\+R\+T\+Reference}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Frm3} prm\+W\+R\+T\+Reference (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{tip\+Frame, }
+\item[{const std\+::string \&}]{ref\+Frame}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{prm_transformation_manager_8h_a8ba1e5f9850d3805a5b83bd7206791db}
+Convenience function allowing string names to be specified instead of pointers. 
+\begin{DoxyParams}{Parameters}
+{\em tip\+Frame} & const std\+::string \& tip frame name \\
+\hline
+{\em ref\+Frame} & const std\+::string \& reference frame name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vct\+Frm3 homogeneous transform value of the Cartesian relationship between frame and the\+World. 
+\end{DoxyReturn}
+\hypertarget{prm_transformation_manager_8h_a9987cabf712b91b9596b67ae9d651b3c}{}\index{prm\+Transformation\+Manager.\+h@{prm\+Transformation\+Manager.\+h}!prm\+W\+R\+T\+Reference@{prm\+W\+R\+T\+Reference}}
+\index{prm\+W\+R\+T\+Reference@{prm\+W\+R\+T\+Reference}!prm\+Transformation\+Manager.\+h@{prm\+Transformation\+Manager.\+h}}
+\subsubsection[{prm\+W\+R\+T\+Reference}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Frm3} prm\+W\+R\+T\+Reference (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{tip\+Frame, }
+\item[{const {\bf prm\+Transformation\+Base\+Ptr} \&}]{ref\+Frame}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{prm_transformation_manager_8h_a9987cabf712b91b9596b67ae9d651b3c}
+Convenience function allowing tip string name to be specified instead of pointers. 
+\begin{DoxyParams}{Parameters}
+{\em tip\+Frame} & const std\+::string \& tip frame name \\
+\hline
+{\em ref\+Frame} & const \hyperlink{classprm_transformation_base}{prm\+Transformation\+Base}\& reference to start of the frame manager branch \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vct\+Frm3 homogeneous transform value of the Cartesian relationship between frame and the\+World. 
+\end{DoxyReturn}
+\hypertarget{prm_transformation_manager_8h_a10d83094c060676c6409e00c7f2f99d1}{}\index{prm\+Transformation\+Manager.\+h@{prm\+Transformation\+Manager.\+h}!prm\+W\+R\+T\+Reference@{prm\+W\+R\+T\+Reference}}
+\index{prm\+W\+R\+T\+Reference@{prm\+W\+R\+T\+Reference}!prm\+Transformation\+Manager.\+h@{prm\+Transformation\+Manager.\+h}}
+\subsubsection[{prm\+W\+R\+T\+Reference}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Frm3} prm\+W\+R\+T\+Reference (
+\begin{DoxyParamCaption}
+\item[{const {\bf prm\+Transformation\+Base\+Ptr} \&}]{tip\+Frame, }
+\item[{const std\+::string \&}]{ref\+Frame}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{prm_transformation_manager_8h_a10d83094c060676c6409e00c7f2f99d1}
+Convenience function allowing tip string name to be specified instead of pointers. 
+\begin{DoxyParams}{Parameters}
+{\em tip\+Frame} & const \hyperlink{classprm_transformation_base}{prm\+Transformation\+Base}\& reference to end of the frame manager branch \\
+\hline
+{\em ref\+Frame} & const std\+::string \& reference frame name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vct\+Frm3 homogeneous transform value of the Cartesian relationship between frame and the\+World. 
+\end{DoxyReturn}
+\hypertarget{prm_transformation_manager_8h_aaa9754eb4d0d1b821124f915fcad636b}{}\index{prm\+Transformation\+Manager.\+h@{prm\+Transformation\+Manager.\+h}!prm\+W\+R\+T\+World@{prm\+W\+R\+T\+World}}
+\index{prm\+W\+R\+T\+World@{prm\+W\+R\+T\+World}!prm\+Transformation\+Manager.\+h@{prm\+Transformation\+Manager.\+h}}
+\subsubsection[{prm\+W\+R\+T\+World}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Frm3} prm\+W\+R\+T\+World (
+\begin{DoxyParamCaption}
+\item[{const {\bf prm\+Transformation\+Base\+Ptr} \&}]{frame}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{prm_transformation_manager_8h_aaa9754eb4d0d1b821124f915fcad636b}
+Convenience function for computation of the current transformation between a frame and the world coordinate system. 
+\begin{DoxyParams}{Parameters}
+{\em frame} & const \hyperlink{classprm_transformation_base}{prm\+Transformation\+Base}\& reference to target frame \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vct\+Frm3 homogeneous transform value of the Cartesian relationship between frame and the\+World. 
+\end{DoxyReturn}

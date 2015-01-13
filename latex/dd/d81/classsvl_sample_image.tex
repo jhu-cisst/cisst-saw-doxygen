@@ -1,0 +1,673 @@
+\hypertarget{classsvl_sample_image}{}\section{svl\+Sample\+Image Class Reference}
+\label{classsvl_sample_image}\index{svl\+Sample\+Image@{svl\+Sample\+Image}}
+
+
+{\ttfamily \#include $<$svl\+Sample\+Image.\+h$>$}
+
+Inheritance diagram for svl\+Sample\+Image\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.768421cm]{dd/d81/classsvl_sample_image}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsvl_sample_image_a3ea8c6077b2fc3242525420ec735b8cd}{svl\+Sample\+Image} ()
+\item 
+\hyperlink{classsvl_sample_image_ad1e8932d931df496c76922257f9227d5}{svl\+Sample\+Image} (const \hyperlink{classsvl_sample_image}{svl\+Sample\+Image} \&other)
+\item 
+virtual \hyperlink{classsvl_sample_image_ab5335f489acd87face50a5bfa4cef0d9}{$\sim$svl\+Sample\+Image} ()
+\item 
+virtual \hyperlink{svl_definitions_8h_a8e3e868f4df8c6c3a6dba958c81b34b5}{svl\+Pixel\+Type} \hyperlink{classsvl_sample_image_ae43c1829be4c737f25e826ab9aa2dc5c}{Get\+Pixel\+Type} () const 
+\item 
+virtual int \hyperlink{classsvl_sample_image_ac32fdf4170720d33ffb5ee2bdf75ae5c}{Get\+Alpha\+Channel} () const 
+\item 
+virtual \hyperlink{classsvl_sample}{svl\+Sample} $\ast$ \hyperlink{classsvl_sample_image_a76fab1c3b1e2ecc2189c0d289d98e66a}{Get\+New\+Instance} () const =0
+\item 
+virtual \hyperlink{svl_definitions_8h_aa00696d338a58db361335a01fd11e122}{svl\+Stream\+Type} \hyperlink{classsvl_sample_image_a90f04a79c0906179bfecb77d07231a11}{Get\+Type} () const =0
+\item 
+virtual int \hyperlink{classsvl_sample_image_a47e887ac52468fadc6bc67431644c048}{Set\+Size} (const \hyperlink{classsvl_sample}{svl\+Sample} $\ast$sample)=0
+\item 
+virtual int \hyperlink{classsvl_sample_image_a29daafd2f51f8ff6ce0ce00080a20fa9}{Set\+Size} (const \hyperlink{classsvl_sample}{svl\+Sample} \&sample)=0
+\item 
+virtual int \hyperlink{classsvl_sample_image_a22a7170e17637426ff48d3abfdaadc82}{Copy\+Of} (const \hyperlink{classsvl_sample}{svl\+Sample} $\ast$sample)=0
+\item 
+virtual int \hyperlink{classsvl_sample_image_a4d24e3ee26d7a70f73fb88348a01c1eb}{Copy\+Of} (const \hyperlink{classsvl_sample}{svl\+Sample} \&sample)=0
+\item 
+virtual bool \hyperlink{classsvl_sample_image_a9a91b9605afdddb16a5b67290039c3a3}{Is\+Initialized} () const =0
+\item 
+virtual unsigned char $\ast$ \hyperlink{classsvl_sample_image_a40315b943675a7eabe94aced3b7b3e41}{Get\+U\+Char\+Pointer} ()=0
+\item 
+virtual const unsigned char $\ast$ \hyperlink{classsvl_sample_image_a4527d6f63176444867741956c3fa902d}{Get\+U\+Char\+Pointer} () const =0
+\item 
+virtual unsigned int \hyperlink{classsvl_sample_image_a06557dd28b342027873fe82d4ca81196}{Get\+Data\+Size} () const =0
+\item 
+virtual void \hyperlink{classsvl_sample_image_ac8f36bed025509c4d9c77060413d9ece}{Serialize\+Raw} (std\+::ostream \&output\+Stream) const =0
+\item 
+virtual void \hyperlink{classsvl_sample_image_a377e3cc76c0a426b3acaae6f3a835723}{De\+Serialize\+Raw} (std\+::istream \&input\+Stream)=0
+\item 
+virtual \hyperlink{svl_types_8h_aa5a40a13021ba9708bfe921e18fdfa53}{Ipl\+Image} $\ast$ \hyperlink{classsvl_sample_image_a186f2ed3f98059785a8ec9de5dd55ec6}{Ipl\+Image\+Ref} (const unsigned int videochannel=0) const =0
+\item 
+virtual \hyperlink{namespacecv_a60d81b54f4914bec4cc4a72ab77eb444}{cv\+::\+Mat} \hyperlink{classsvl_sample_image_a6f6b8f9491bb9effdda7a42023208b9f}{Cv\+Mat\+Ref} (const unsigned int videochannel=0) const =0
+\item 
+virtual unsigned char $\ast$ \hyperlink{classsvl_sample_image_a197092f84532696829338eeef8c961fb}{Get\+U\+Char\+Pointer} (const unsigned int videochannel)=0
+\item 
+virtual const unsigned char $\ast$ \hyperlink{classsvl_sample_image_aa5e8009157462ed2b4a2b9a6733057b7}{Get\+U\+Char\+Pointer} (const unsigned int videochannel) const =0
+\item 
+virtual unsigned char $\ast$ \hyperlink{classsvl_sample_image_a5290dc4e28f8e5221d745bdf11523168}{Get\+U\+Char\+Pointer} (const unsigned int videochannel, const unsigned int x, const unsigned int y)=0
+\item 
+virtual const unsigned char $\ast$ \hyperlink{classsvl_sample_image_a75e4980f2dbffab07a44da67fdf1f3d6}{Get\+U\+Char\+Pointer} (const unsigned int videochannel, const unsigned int x, const unsigned int y) const =0
+\item 
+virtual void \hyperlink{classsvl_sample_image_a7092189a385c234da3d96dce9fe8958a}{Set\+Size} (const unsigned int width, const unsigned int height)=0
+\item 
+virtual void \hyperlink{classsvl_sample_image_a2bb1c673c435a89029fb0809cc740e0d}{Set\+Size} (const unsigned int videochannel, const unsigned int width, const unsigned int height)=0
+\item 
+virtual int \hyperlink{classsvl_sample_image_a17e6ad84e31a3c4848773c01a6c811c2}{Set\+Size} (const \hyperlink{svl_types_8h_aa5a40a13021ba9708bfe921e18fdfa53}{Ipl\+Image} $\ast$ipl\+\_\+image, const unsigned int videochannel=0)=0
+\item 
+virtual int \hyperlink{classsvl_sample_image_a57255ee3dc0fd9509f9aa22eb5c85fa4}{Set\+Size} (const \hyperlink{namespacecv_a60d81b54f4914bec4cc4a72ab77eb444}{cv\+::\+Mat} \&cv\+\_\+mat, const unsigned int videochannel=0)=0
+\item 
+virtual int \hyperlink{classsvl_sample_image_ad39690ff5f70bcf7a7dc632be9760656}{Copy\+Of} (const \hyperlink{svl_types_8h_aa5a40a13021ba9708bfe921e18fdfa53}{Ipl\+Image} $\ast$ipl\+\_\+image, const unsigned int videochannel=0)=0
+\item 
+virtual int \hyperlink{classsvl_sample_image_a97a0bece9ac692866587712372a8b162}{Copy\+Of} (const \hyperlink{namespacecv_a60d81b54f4914bec4cc4a72ab77eb444}{cv\+::\+Mat} \&cv\+\_\+mat, const unsigned int videochannel=0)=0
+\item 
+virtual unsigned int \hyperlink{classsvl_sample_image_a50d7ca3459272a2dd7b7ee68dabd6e54}{Get\+Video\+Channels} () const =0
+\item 
+virtual unsigned int \hyperlink{classsvl_sample_image_a473f2373ddcc8db26f7770e9a093801f}{Get\+Data\+Channels} () const =0
+\item 
+virtual unsigned int \hyperlink{classsvl_sample_image_a4202b640e742ec266078b00a9b8afa0e}{Get\+B\+P\+P} () const =0
+\item 
+virtual unsigned int \hyperlink{classsvl_sample_image_a93493be70fead7b2020810512129e45f}{Get\+Width} (const unsigned int videochannel=0) const =0
+\item 
+virtual unsigned int \hyperlink{classsvl_sample_image_ae9b31054c61c8aa90fd57753bf573456}{Get\+Height} (const unsigned int videochannel=0) const =0
+\item 
+virtual unsigned int \hyperlink{classsvl_sample_image_a48bd873cc1b46bf5f18157451b7f8fdd}{Get\+Row\+Stride} (const unsigned int videochannel=0) const =0
+\item 
+virtual unsigned int \hyperlink{classsvl_sample_image_a9b5b050e77a24299d0f08fcfefe6599d}{Get\+Data\+Size} (const unsigned int videochannel) const =0
+\item 
+virtual \hyperlink{classsvl_sample_image}{svl\+Sample\+Image} $\ast$ \hyperlink{classsvl_sample_image_a1fc3d0662cfd58ae96ab4a3b1724d690}{Get\+Sub\+Image} (const unsigned int top, const unsigned int height, const unsigned int videochannel=0)=0
+\item 
+virtual \hyperlink{classsvl_sample_image}{svl\+Sample\+Image} $\ast$ \hyperlink{classsvl_sample_image_a034171461bca11c13606f03abbf526a3}{Get\+Sub\+Image} (\hyperlink{structsvl_proc_info}{svl\+Proc\+Info} $\ast$proc\+Info, const unsigned int videochannel=0)=0
+\item 
+int \hyperlink{classsvl_sample_image_aef0e73b0e5906d4b60e689f41ff49a48}{Import\+Data} (unsigned char $\ast$input, const unsigned int size, const int param=0, const unsigned int videoch=\hyperlink{svl_definitions_8h_ab9fec7615f19c8df2919eebcab0b187f}{S\+V\+L\+\_\+\+L\+E\+F\+T})
+\item 
+int \hyperlink{classsvl_sample_image_a11b13d1f63e3a8581a84c848a83e8f85}{Import\+Data} (unsigned short $\ast$input, const unsigned int size, const int param=0, const unsigned int videoch=\hyperlink{svl_definitions_8h_ab9fec7615f19c8df2919eebcab0b187f}{S\+V\+L\+\_\+\+L\+E\+F\+T})
+\item 
+int \hyperlink{classsvl_sample_image_a92d332b2a5d130f19a4fc4aae9fc181c}{Import\+Data} (unsigned int $\ast$input, const unsigned int size, const int param=0, const unsigned int videoch=\hyperlink{svl_definitions_8h_ab9fec7615f19c8df2919eebcab0b187f}{S\+V\+L\+\_\+\+L\+E\+F\+T})
+\item 
+int \hyperlink{classsvl_sample_image_a6a64f4d94e9af374c72f94fa6b722ebd}{Import\+Data} (float $\ast$input, const unsigned int size, const int param=0, const unsigned int videoch=\hyperlink{svl_definitions_8h_ab9fec7615f19c8df2919eebcab0b187f}{S\+V\+L\+\_\+\+L\+E\+F\+T})
+\item 
+int \hyperlink{classsvl_sample_image_a762e6af7ff5258f2be32303ef0127b80}{Import\+Image} (const \hyperlink{classsvl_sample_image}{svl\+Sample\+Image} $\ast$image, const int param=0)
+\item 
+int \hyperlink{classsvl_sample_image_a714d30ac5f7c020e27a9e227748e1422}{Import\+Image} (const \hyperlink{classsvl_sample_image}{svl\+Sample\+Image} \&image, const int param=0)
+\item 
+int \hyperlink{classsvl_sample_image_a15dddfe94cc94595368e31e827bda277}{Import\+Image} (const \hyperlink{classsvl_sample_image}{svl\+Sample\+Image} $\ast$image, const unsigned int src\+\_\+channel, const unsigned int dest\+\_\+channel, const int param=0)
+\item 
+int \hyperlink{classsvl_sample_image_a06d3e066bf3e6e6f1e0dcb650c4e48e1}{Import\+Image} (const \hyperlink{classsvl_sample_image}{svl\+Sample\+Image} \&image, const unsigned int src\+\_\+channel, const unsigned int dest\+\_\+channel, const int param=0)
+\item 
+int \hyperlink{classsvl_sample_image_ac46bb5c709df83a50a886b22747314db}{Import\+Matrix} (const \hyperlink{classsvl_sample_matrix}{svl\+Sample\+Matrix} $\ast$matrix, const int param=0, const unsigned int videoch=\hyperlink{svl_definitions_8h_ab9fec7615f19c8df2919eebcab0b187f}{S\+V\+L\+\_\+\+L\+E\+F\+T})
+\item 
+int \hyperlink{classsvl_sample_image_ab436c7a9201cf26c5035b1c46e5e4f17}{Import\+Sample} (const \hyperlink{classsvl_sample}{svl\+Sample} $\ast$sample)
+\item 
+int \hyperlink{classsvl_sample_image_a43b4076ff6d5667bf3916ec547f751d9}{Import\+Sample} (const \hyperlink{classsvl_sample}{svl\+Sample} $\ast$sample, const unsigned int videoch)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classsvl_sample_image_a3ea8c6077b2fc3242525420ec735b8cd}{}\index{svl\+Sample\+Image@{svl\+Sample\+Image}!svl\+Sample\+Image@{svl\+Sample\+Image}}
+\index{svl\+Sample\+Image@{svl\+Sample\+Image}!svl\+Sample\+Image@{svl\+Sample\+Image}}
+\subsubsection[{svl\+Sample\+Image}]{\setlength{\rightskip}{0pt plus 5cm}svl\+Sample\+Image\+::svl\+Sample\+Image (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classsvl_sample_image_a3ea8c6077b2fc3242525420ec735b8cd}
+\hypertarget{classsvl_sample_image_ad1e8932d931df496c76922257f9227d5}{}\index{svl\+Sample\+Image@{svl\+Sample\+Image}!svl\+Sample\+Image@{svl\+Sample\+Image}}
+\index{svl\+Sample\+Image@{svl\+Sample\+Image}!svl\+Sample\+Image@{svl\+Sample\+Image}}
+\subsubsection[{svl\+Sample\+Image}]{\setlength{\rightskip}{0pt plus 5cm}svl\+Sample\+Image\+::svl\+Sample\+Image (
+\begin{DoxyParamCaption}
+\item[{const {\bf svl\+Sample\+Image} \&}]{other}
+\end{DoxyParamCaption}
+)}\label{classsvl_sample_image_ad1e8932d931df496c76922257f9227d5}
+\hypertarget{classsvl_sample_image_ab5335f489acd87face50a5bfa4cef0d9}{}\index{svl\+Sample\+Image@{svl\+Sample\+Image}!````~svl\+Sample\+Image@{$\sim$svl\+Sample\+Image}}
+\index{````~svl\+Sample\+Image@{$\sim$svl\+Sample\+Image}!svl\+Sample\+Image@{svl\+Sample\+Image}}
+\subsubsection[{$\sim$svl\+Sample\+Image}]{\setlength{\rightskip}{0pt plus 5cm}virtual svl\+Sample\+Image\+::$\sim$svl\+Sample\+Image (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classsvl_sample_image_ab5335f489acd87face50a5bfa4cef0d9}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classsvl_sample_image_a22a7170e17637426ff48d3abfdaadc82}{}\index{svl\+Sample\+Image@{svl\+Sample\+Image}!Copy\+Of@{Copy\+Of}}
+\index{Copy\+Of@{Copy\+Of}!svl\+Sample\+Image@{svl\+Sample\+Image}}
+\subsubsection[{Copy\+Of}]{\setlength{\rightskip}{0pt plus 5cm}virtual int svl\+Sample\+Image\+::\+Copy\+Of (
+\begin{DoxyParamCaption}
+\item[{const {\bf svl\+Sample} $\ast$}]{sample}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classsvl_sample_image_a22a7170e17637426ff48d3abfdaadc82}
+
+
+Implements \hyperlink{classsvl_sample_aa80a261472f0e0dd1bf7ecd25ee40bda}{svl\+Sample}.
+
+
+
+Implemented in \hyperlink{classsvl_sample_image_custom_add5fb5b28b462591ee5920ae62cb59f3}{svl\+Sample\+Image\+Custom$<$ \+\_\+\+Value\+Type, \+\_\+\+Data\+Channels, \+\_\+\+Video\+Channels $>$}, \hyperlink{classsvl_sample_image_custom_add5fb5b28b462591ee5920ae62cb59f3}{svl\+Sample\+Image\+Custom$<$ float, 3, 1 $>$}, \hyperlink{classsvl_sample_image_custom_add5fb5b28b462591ee5920ae62cb59f3}{svl\+Sample\+Image\+Custom$<$ unsigned char, 3, 1 $>$}, \hyperlink{classsvl_sample_c_u_d_a_image_custom_acb3ccb03ab61127574e7dd76f3fa1574}{svl\+Sample\+C\+U\+D\+A\+Image\+Custom$<$ \+\_\+\+Value\+Type, \+\_\+\+Data\+Channels, \+\_\+\+Video\+Channels $>$}, and \hyperlink{classsvl_sample_c_u_d_a_image_a5d0e37569f6898f1a5595ecf00216e17}{svl\+Sample\+C\+U\+D\+A\+Image}.
+
+\hypertarget{classsvl_sample_image_a4d24e3ee26d7a70f73fb88348a01c1eb}{}\index{svl\+Sample\+Image@{svl\+Sample\+Image}!Copy\+Of@{Copy\+Of}}
+\index{Copy\+Of@{Copy\+Of}!svl\+Sample\+Image@{svl\+Sample\+Image}}
+\subsubsection[{Copy\+Of}]{\setlength{\rightskip}{0pt plus 5cm}virtual int svl\+Sample\+Image\+::\+Copy\+Of (
+\begin{DoxyParamCaption}
+\item[{const {\bf svl\+Sample} \&}]{sample}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classsvl_sample_image_a4d24e3ee26d7a70f73fb88348a01c1eb}
+
+
+Implements \hyperlink{classsvl_sample_a79831d7302d638ba99be09ba19ebf7b6}{svl\+Sample}.
+
+
+
+Implemented in \hyperlink{classsvl_sample_image_custom_ab84806d39cdabe6d0e3cdd8edad4ee5e}{svl\+Sample\+Image\+Custom$<$ \+\_\+\+Value\+Type, \+\_\+\+Data\+Channels, \+\_\+\+Video\+Channels $>$}, \hyperlink{classsvl_sample_image_custom_ab84806d39cdabe6d0e3cdd8edad4ee5e}{svl\+Sample\+Image\+Custom$<$ float, 3, 1 $>$}, \hyperlink{classsvl_sample_image_custom_ab84806d39cdabe6d0e3cdd8edad4ee5e}{svl\+Sample\+Image\+Custom$<$ unsigned char, 3, 1 $>$}, \hyperlink{classsvl_sample_c_u_d_a_image_custom_a686a74b9f5215dbb14d6e8ad8e890308}{svl\+Sample\+C\+U\+D\+A\+Image\+Custom$<$ \+\_\+\+Value\+Type, \+\_\+\+Data\+Channels, \+\_\+\+Video\+Channels $>$}, and \hyperlink{classsvl_sample_c_u_d_a_image_ac4ad6e11ebd3a3c36c09658a1b72d55f}{svl\+Sample\+C\+U\+D\+A\+Image}.
+
+\hypertarget{classsvl_sample_image_ad39690ff5f70bcf7a7dc632be9760656}{}\index{svl\+Sample\+Image@{svl\+Sample\+Image}!Copy\+Of@{Copy\+Of}}
+\index{Copy\+Of@{Copy\+Of}!svl\+Sample\+Image@{svl\+Sample\+Image}}
+\subsubsection[{Copy\+Of}]{\setlength{\rightskip}{0pt plus 5cm}virtual int svl\+Sample\+Image\+::\+Copy\+Of (
+\begin{DoxyParamCaption}
+\item[{const {\bf Ipl\+Image} $\ast$}]{ipl\+\_\+image, }
+\item[{const unsigned int}]{videochannel = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classsvl_sample_image_ad39690ff5f70bcf7a7dc632be9760656}
+
+
+Implemented in \hyperlink{classsvl_sample_c_u_d_a_image_a5036280241a192db6f80feb6ca456922}{svl\+Sample\+C\+U\+D\+A\+Image}.
+
+\hypertarget{classsvl_sample_image_a97a0bece9ac692866587712372a8b162}{}\index{svl\+Sample\+Image@{svl\+Sample\+Image}!Copy\+Of@{Copy\+Of}}
+\index{Copy\+Of@{Copy\+Of}!svl\+Sample\+Image@{svl\+Sample\+Image}}
+\subsubsection[{Copy\+Of}]{\setlength{\rightskip}{0pt plus 5cm}virtual int svl\+Sample\+Image\+::\+Copy\+Of (
+\begin{DoxyParamCaption}
+\item[{const {\bf cv\+::\+Mat} \&}]{cv\+\_\+mat, }
+\item[{const unsigned int}]{videochannel = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classsvl_sample_image_a97a0bece9ac692866587712372a8b162}
+\hypertarget{classsvl_sample_image_a6f6b8f9491bb9effdda7a42023208b9f}{}\index{svl\+Sample\+Image@{svl\+Sample\+Image}!Cv\+Mat\+Ref@{Cv\+Mat\+Ref}}
+\index{Cv\+Mat\+Ref@{Cv\+Mat\+Ref}!svl\+Sample\+Image@{svl\+Sample\+Image}}
+\subsubsection[{Cv\+Mat\+Ref}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf cv\+::\+Mat} svl\+Sample\+Image\+::\+Cv\+Mat\+Ref (
+\begin{DoxyParamCaption}
+\item[{const unsigned int}]{videochannel = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classsvl_sample_image_a6f6b8f9491bb9effdda7a42023208b9f}
+\hypertarget{classsvl_sample_image_a377e3cc76c0a426b3acaae6f3a835723}{}\index{svl\+Sample\+Image@{svl\+Sample\+Image}!De\+Serialize\+Raw@{De\+Serialize\+Raw}}
+\index{De\+Serialize\+Raw@{De\+Serialize\+Raw}!svl\+Sample\+Image@{svl\+Sample\+Image}}
+\subsubsection[{De\+Serialize\+Raw}]{\setlength{\rightskip}{0pt plus 5cm}virtual void svl\+Sample\+Image\+::\+De\+Serialize\+Raw (
+\begin{DoxyParamCaption}
+\item[{std\+::istream \&}]{input\+Stream}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classsvl_sample_image_a377e3cc76c0a426b3acaae6f3a835723}
+Binary deserialization 
+
+Implements \hyperlink{classsvl_sample_abee71d4fe9d4caa789e785849fb87b42}{svl\+Sample}.
+
+
+
+Implemented in \hyperlink{classsvl_sample_image_custom_a068f71a3b20c7853f0930682278ecc6d}{svl\+Sample\+Image\+Custom$<$ \+\_\+\+Value\+Type, \+\_\+\+Data\+Channels, \+\_\+\+Video\+Channels $>$}, \hyperlink{classsvl_sample_image_custom_a068f71a3b20c7853f0930682278ecc6d}{svl\+Sample\+Image\+Custom$<$ float, 3, 1 $>$}, \hyperlink{classsvl_sample_image_custom_a068f71a3b20c7853f0930682278ecc6d}{svl\+Sample\+Image\+Custom$<$ unsigned char, 3, 1 $>$}, and \hyperlink{classsvl_sample_c_u_d_a_image_ab09d7cf8b648321c6906335998897797}{svl\+Sample\+C\+U\+D\+A\+Image}.
+
+\hypertarget{classsvl_sample_image_ac32fdf4170720d33ffb5ee2bdf75ae5c}{}\index{svl\+Sample\+Image@{svl\+Sample\+Image}!Get\+Alpha\+Channel@{Get\+Alpha\+Channel}}
+\index{Get\+Alpha\+Channel@{Get\+Alpha\+Channel}!svl\+Sample\+Image@{svl\+Sample\+Image}}
+\subsubsection[{Get\+Alpha\+Channel}]{\setlength{\rightskip}{0pt plus 5cm}virtual int svl\+Sample\+Image\+::\+Get\+Alpha\+Channel (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{classsvl_sample_image_ac32fdf4170720d33ffb5ee2bdf75ae5c}
+\hypertarget{classsvl_sample_image_a4202b640e742ec266078b00a9b8afa0e}{}\index{svl\+Sample\+Image@{svl\+Sample\+Image}!Get\+B\+P\+P@{Get\+B\+P\+P}}
+\index{Get\+B\+P\+P@{Get\+B\+P\+P}!svl\+Sample\+Image@{svl\+Sample\+Image}}
+\subsubsection[{Get\+B\+P\+P}]{\setlength{\rightskip}{0pt plus 5cm}virtual unsigned int svl\+Sample\+Image\+::\+Get\+B\+P\+P (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classsvl_sample_image_a4202b640e742ec266078b00a9b8afa0e}
+
+
+Implemented in \hyperlink{classsvl_sample_image_custom_a86dacd22703fbe2f2ac527995c90b704}{svl\+Sample\+Image\+Custom$<$ \+\_\+\+Value\+Type, \+\_\+\+Data\+Channels, \+\_\+\+Video\+Channels $>$}, \hyperlink{classsvl_sample_image_custom_a86dacd22703fbe2f2ac527995c90b704}{svl\+Sample\+Image\+Custom$<$ float, 3, 1 $>$}, \hyperlink{classsvl_sample_image_custom_a86dacd22703fbe2f2ac527995c90b704}{svl\+Sample\+Image\+Custom$<$ unsigned char, 3, 1 $>$}, \hyperlink{classsvl_sample_c_u_d_a_image_custom_a448fb7eaf742ac6cba8fdcfe5e25bb27}{svl\+Sample\+C\+U\+D\+A\+Image\+Custom$<$ \+\_\+\+Value\+Type, \+\_\+\+Data\+Channels, \+\_\+\+Video\+Channels $>$}, and \hyperlink{classsvl_sample_c_u_d_a_image_a70064e27b2da53aa23cc14a912df4947}{svl\+Sample\+C\+U\+D\+A\+Image}.
+
+\hypertarget{classsvl_sample_image_a473f2373ddcc8db26f7770e9a093801f}{}\index{svl\+Sample\+Image@{svl\+Sample\+Image}!Get\+Data\+Channels@{Get\+Data\+Channels}}
+\index{Get\+Data\+Channels@{Get\+Data\+Channels}!svl\+Sample\+Image@{svl\+Sample\+Image}}
+\subsubsection[{Get\+Data\+Channels}]{\setlength{\rightskip}{0pt plus 5cm}virtual unsigned int svl\+Sample\+Image\+::\+Get\+Data\+Channels (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classsvl_sample_image_a473f2373ddcc8db26f7770e9a093801f}
+
+
+Implemented in \hyperlink{classsvl_sample_image_custom_a69f356f71fb518bd1b624cf9bde82e01}{svl\+Sample\+Image\+Custom$<$ \+\_\+\+Value\+Type, \+\_\+\+Data\+Channels, \+\_\+\+Video\+Channels $>$}, \hyperlink{classsvl_sample_image_custom_a69f356f71fb518bd1b624cf9bde82e01}{svl\+Sample\+Image\+Custom$<$ float, 3, 1 $>$}, \hyperlink{classsvl_sample_image_custom_a69f356f71fb518bd1b624cf9bde82e01}{svl\+Sample\+Image\+Custom$<$ unsigned char, 3, 1 $>$}, \hyperlink{classsvl_sample_c_u_d_a_image_custom_a7f1e6872613762fd4e5575618d61b2ff}{svl\+Sample\+C\+U\+D\+A\+Image\+Custom$<$ \+\_\+\+Value\+Type, \+\_\+\+Data\+Channels, \+\_\+\+Video\+Channels $>$}, and \hyperlink{classsvl_sample_c_u_d_a_image_a0c65f845f61252de75eb0ee7eec33c2a}{svl\+Sample\+C\+U\+D\+A\+Image}.
+
+\hypertarget{classsvl_sample_image_a06557dd28b342027873fe82d4ca81196}{}\index{svl\+Sample\+Image@{svl\+Sample\+Image}!Get\+Data\+Size@{Get\+Data\+Size}}
+\index{Get\+Data\+Size@{Get\+Data\+Size}!svl\+Sample\+Image@{svl\+Sample\+Image}}
+\subsubsection[{Get\+Data\+Size}]{\setlength{\rightskip}{0pt plus 5cm}virtual unsigned int svl\+Sample\+Image\+::\+Get\+Data\+Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classsvl_sample_image_a06557dd28b342027873fe82d4ca81196}
+
+
+Implements \hyperlink{classsvl_sample_afe89dcbee419cb667618ec6a0c37e7f7}{svl\+Sample}.
+
+
+
+Implemented in \hyperlink{classsvl_sample_image_custom_a55e36a7b9db217750f0d826bcc394464}{svl\+Sample\+Image\+Custom$<$ \+\_\+\+Value\+Type, \+\_\+\+Data\+Channels, \+\_\+\+Video\+Channels $>$}, \hyperlink{classsvl_sample_image_custom_a55e36a7b9db217750f0d826bcc394464}{svl\+Sample\+Image\+Custom$<$ float, 3, 1 $>$}, \hyperlink{classsvl_sample_image_custom_a55e36a7b9db217750f0d826bcc394464}{svl\+Sample\+Image\+Custom$<$ unsigned char, 3, 1 $>$}, \hyperlink{classsvl_sample_c_u_d_a_image_custom_a13164006726f6feab443cad5838d9e21}{svl\+Sample\+C\+U\+D\+A\+Image\+Custom$<$ \+\_\+\+Value\+Type, \+\_\+\+Data\+Channels, \+\_\+\+Video\+Channels $>$}, and \hyperlink{classsvl_sample_c_u_d_a_image_afff8663e603047c1c6362daefebf7e47}{svl\+Sample\+C\+U\+D\+A\+Image}.
+
+\hypertarget{classsvl_sample_image_a9b5b050e77a24299d0f08fcfefe6599d}{}\index{svl\+Sample\+Image@{svl\+Sample\+Image}!Get\+Data\+Size@{Get\+Data\+Size}}
+\index{Get\+Data\+Size@{Get\+Data\+Size}!svl\+Sample\+Image@{svl\+Sample\+Image}}
+\subsubsection[{Get\+Data\+Size}]{\setlength{\rightskip}{0pt plus 5cm}virtual unsigned int svl\+Sample\+Image\+::\+Get\+Data\+Size (
+\begin{DoxyParamCaption}
+\item[{const unsigned int}]{videochannel}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classsvl_sample_image_a9b5b050e77a24299d0f08fcfefe6599d}
+
+
+Implemented in \hyperlink{classsvl_sample_image_custom_a09cde03b41e68144c2d11ce705914fcb}{svl\+Sample\+Image\+Custom$<$ \+\_\+\+Value\+Type, \+\_\+\+Data\+Channels, \+\_\+\+Video\+Channels $>$}, \hyperlink{classsvl_sample_image_custom_a09cde03b41e68144c2d11ce705914fcb}{svl\+Sample\+Image\+Custom$<$ float, 3, 1 $>$}, \hyperlink{classsvl_sample_image_custom_a09cde03b41e68144c2d11ce705914fcb}{svl\+Sample\+Image\+Custom$<$ unsigned char, 3, 1 $>$}, \hyperlink{classsvl_sample_c_u_d_a_image_custom_a91f5c83941f02372a8651075c66ff30a}{svl\+Sample\+C\+U\+D\+A\+Image\+Custom$<$ \+\_\+\+Value\+Type, \+\_\+\+Data\+Channels, \+\_\+\+Video\+Channels $>$}, and \hyperlink{classsvl_sample_c_u_d_a_image_a921357e8b357e1ce5b913c0d89150b5f}{svl\+Sample\+C\+U\+D\+A\+Image}.
+
+\hypertarget{classsvl_sample_image_ae9b31054c61c8aa90fd57753bf573456}{}\index{svl\+Sample\+Image@{svl\+Sample\+Image}!Get\+Height@{Get\+Height}}
+\index{Get\+Height@{Get\+Height}!svl\+Sample\+Image@{svl\+Sample\+Image}}
+\subsubsection[{Get\+Height}]{\setlength{\rightskip}{0pt plus 5cm}virtual unsigned int svl\+Sample\+Image\+::\+Get\+Height (
+\begin{DoxyParamCaption}
+\item[{const unsigned int}]{videochannel = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classsvl_sample_image_ae9b31054c61c8aa90fd57753bf573456}
+
+
+Implemented in \hyperlink{classsvl_sample_image_custom_aa65d95dad39f90d1f84a9dd978120d95}{svl\+Sample\+Image\+Custom$<$ \+\_\+\+Value\+Type, \+\_\+\+Data\+Channels, \+\_\+\+Video\+Channels $>$}, \hyperlink{classsvl_sample_image_custom_aa65d95dad39f90d1f84a9dd978120d95}{svl\+Sample\+Image\+Custom$<$ float, 3, 1 $>$}, \hyperlink{classsvl_sample_image_custom_aa65d95dad39f90d1f84a9dd978120d95}{svl\+Sample\+Image\+Custom$<$ unsigned char, 3, 1 $>$}, \hyperlink{classsvl_sample_c_u_d_a_image_custom_aa2654e88559a37dd01bfda572d53be38}{svl\+Sample\+C\+U\+D\+A\+Image\+Custom$<$ \+\_\+\+Value\+Type, \+\_\+\+Data\+Channels, \+\_\+\+Video\+Channels $>$}, and \hyperlink{classsvl_sample_c_u_d_a_image_ab6d91b6ab95b3a020018f2b619c68f15}{svl\+Sample\+C\+U\+D\+A\+Image}.
+
+\hypertarget{classsvl_sample_image_a76fab1c3b1e2ecc2189c0d289d98e66a}{}\index{svl\+Sample\+Image@{svl\+Sample\+Image}!Get\+New\+Instance@{Get\+New\+Instance}}
+\index{Get\+New\+Instance@{Get\+New\+Instance}!svl\+Sample\+Image@{svl\+Sample\+Image}}
+\subsubsection[{Get\+New\+Instance}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf svl\+Sample}$\ast$ svl\+Sample\+Image\+::\+Get\+New\+Instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classsvl_sample_image_a76fab1c3b1e2ecc2189c0d289d98e66a}
+
+
+Implements \hyperlink{classsvl_sample_a1f6cc4075c22bbaa4a4225f1079bca59}{svl\+Sample}.
+
+
+
+Implemented in \hyperlink{classsvl_sample_image_custom_aeb7b03acbcec862fc59c6dcac98209b0}{svl\+Sample\+Image\+Custom$<$ \+\_\+\+Value\+Type, \+\_\+\+Data\+Channels, \+\_\+\+Video\+Channels $>$}, \hyperlink{classsvl_sample_image_custom_aeb7b03acbcec862fc59c6dcac98209b0}{svl\+Sample\+Image\+Custom$<$ float, 3, 1 $>$}, \hyperlink{classsvl_sample_image_custom_aeb7b03acbcec862fc59c6dcac98209b0}{svl\+Sample\+Image\+Custom$<$ unsigned char, 3, 1 $>$}, \hyperlink{classsvl_sample_c_u_d_a_image_custom_a8978ea89a71df5b4b23dc0b0f6f0b233}{svl\+Sample\+C\+U\+D\+A\+Image\+Custom$<$ \+\_\+\+Value\+Type, \+\_\+\+Data\+Channels, \+\_\+\+Video\+Channels $>$}, and \hyperlink{classsvl_sample_c_u_d_a_image_a5d7500f6a102241bb5d4722cd6f2d147}{svl\+Sample\+C\+U\+D\+A\+Image}.
+
+\hypertarget{classsvl_sample_image_ae43c1829be4c737f25e826ab9aa2dc5c}{}\index{svl\+Sample\+Image@{svl\+Sample\+Image}!Get\+Pixel\+Type@{Get\+Pixel\+Type}}
+\index{Get\+Pixel\+Type@{Get\+Pixel\+Type}!svl\+Sample\+Image@{svl\+Sample\+Image}}
+\subsubsection[{Get\+Pixel\+Type}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf svl\+Pixel\+Type} svl\+Sample\+Image\+::\+Get\+Pixel\+Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{classsvl_sample_image_ae43c1829be4c737f25e826ab9aa2dc5c}
+\hypertarget{classsvl_sample_image_a48bd873cc1b46bf5f18157451b7f8fdd}{}\index{svl\+Sample\+Image@{svl\+Sample\+Image}!Get\+Row\+Stride@{Get\+Row\+Stride}}
+\index{Get\+Row\+Stride@{Get\+Row\+Stride}!svl\+Sample\+Image@{svl\+Sample\+Image}}
+\subsubsection[{Get\+Row\+Stride}]{\setlength{\rightskip}{0pt plus 5cm}virtual unsigned int svl\+Sample\+Image\+::\+Get\+Row\+Stride (
+\begin{DoxyParamCaption}
+\item[{const unsigned int}]{videochannel = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classsvl_sample_image_a48bd873cc1b46bf5f18157451b7f8fdd}
+
+
+Implemented in \hyperlink{classsvl_sample_image_custom_a82aa2aea1a4d809685cf3c50d7eaaed3}{svl\+Sample\+Image\+Custom$<$ \+\_\+\+Value\+Type, \+\_\+\+Data\+Channels, \+\_\+\+Video\+Channels $>$}, \hyperlink{classsvl_sample_image_custom_a82aa2aea1a4d809685cf3c50d7eaaed3}{svl\+Sample\+Image\+Custom$<$ float, 3, 1 $>$}, \hyperlink{classsvl_sample_image_custom_a82aa2aea1a4d809685cf3c50d7eaaed3}{svl\+Sample\+Image\+Custom$<$ unsigned char, 3, 1 $>$}, \hyperlink{classsvl_sample_c_u_d_a_image_custom_aac061e7c49bfb41bf959ba9a163911d8}{svl\+Sample\+C\+U\+D\+A\+Image\+Custom$<$ \+\_\+\+Value\+Type, \+\_\+\+Data\+Channels, \+\_\+\+Video\+Channels $>$}, and \hyperlink{classsvl_sample_c_u_d_a_image_a86041b091b6227b6ed5ff7610b364733}{svl\+Sample\+C\+U\+D\+A\+Image}.
+
+\hypertarget{classsvl_sample_image_a1fc3d0662cfd58ae96ab4a3b1724d690}{}\index{svl\+Sample\+Image@{svl\+Sample\+Image}!Get\+Sub\+Image@{Get\+Sub\+Image}}
+\index{Get\+Sub\+Image@{Get\+Sub\+Image}!svl\+Sample\+Image@{svl\+Sample\+Image}}
+\subsubsection[{Get\+Sub\+Image}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf svl\+Sample\+Image}$\ast$ svl\+Sample\+Image\+::\+Get\+Sub\+Image (
+\begin{DoxyParamCaption}
+\item[{const unsigned int}]{top, }
+\item[{const unsigned int}]{height, }
+\item[{const unsigned int}]{videochannel = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classsvl_sample_image_a1fc3d0662cfd58ae96ab4a3b1724d690}
+
+
+Implemented in \hyperlink{classsvl_sample_image_custom_a557f36a16a924eb9fcdd7231a61fb63e}{svl\+Sample\+Image\+Custom$<$ \+\_\+\+Value\+Type, \+\_\+\+Data\+Channels, \+\_\+\+Video\+Channels $>$}, \hyperlink{classsvl_sample_image_custom_a557f36a16a924eb9fcdd7231a61fb63e}{svl\+Sample\+Image\+Custom$<$ float, 3, 1 $>$}, \hyperlink{classsvl_sample_image_custom_a557f36a16a924eb9fcdd7231a61fb63e}{svl\+Sample\+Image\+Custom$<$ unsigned char, 3, 1 $>$}, and \hyperlink{classsvl_sample_c_u_d_a_image_a0f07da2017998aef3bff17a0956dbc88}{svl\+Sample\+C\+U\+D\+A\+Image}.
+
+\hypertarget{classsvl_sample_image_a034171461bca11c13606f03abbf526a3}{}\index{svl\+Sample\+Image@{svl\+Sample\+Image}!Get\+Sub\+Image@{Get\+Sub\+Image}}
+\index{Get\+Sub\+Image@{Get\+Sub\+Image}!svl\+Sample\+Image@{svl\+Sample\+Image}}
+\subsubsection[{Get\+Sub\+Image}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf svl\+Sample\+Image}$\ast$ svl\+Sample\+Image\+::\+Get\+Sub\+Image (
+\begin{DoxyParamCaption}
+\item[{{\bf svl\+Proc\+Info} $\ast$}]{proc\+Info, }
+\item[{const unsigned int}]{videochannel = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classsvl_sample_image_a034171461bca11c13606f03abbf526a3}
+
+
+Implemented in \hyperlink{classsvl_sample_image_custom_af1641340334bb3ab547f17beb3f04383}{svl\+Sample\+Image\+Custom$<$ \+\_\+\+Value\+Type, \+\_\+\+Data\+Channels, \+\_\+\+Video\+Channels $>$}, \hyperlink{classsvl_sample_image_custom_af1641340334bb3ab547f17beb3f04383}{svl\+Sample\+Image\+Custom$<$ float, 3, 1 $>$}, \hyperlink{classsvl_sample_image_custom_af1641340334bb3ab547f17beb3f04383}{svl\+Sample\+Image\+Custom$<$ unsigned char, 3, 1 $>$}, and \hyperlink{classsvl_sample_c_u_d_a_image_a45d29278924d1f0c66619d2b4ed4dc47}{svl\+Sample\+C\+U\+D\+A\+Image}.
+
+\hypertarget{classsvl_sample_image_a90f04a79c0906179bfecb77d07231a11}{}\index{svl\+Sample\+Image@{svl\+Sample\+Image}!Get\+Type@{Get\+Type}}
+\index{Get\+Type@{Get\+Type}!svl\+Sample\+Image@{svl\+Sample\+Image}}
+\subsubsection[{Get\+Type}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf svl\+Stream\+Type} svl\+Sample\+Image\+::\+Get\+Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classsvl_sample_image_a90f04a79c0906179bfecb77d07231a11}
+
+
+Implements \hyperlink{classsvl_sample_ab2ab29d5dcd80646f29955bc103cf927}{svl\+Sample}.
+
+
+
+Implemented in \hyperlink{classsvl_sample_image_custom_a07cb7b6e330adc6332fc334283f2b70d}{svl\+Sample\+Image\+Custom$<$ \+\_\+\+Value\+Type, \+\_\+\+Data\+Channels, \+\_\+\+Video\+Channels $>$}, \hyperlink{classsvl_sample_image_custom_a07cb7b6e330adc6332fc334283f2b70d}{svl\+Sample\+Image\+Custom$<$ float, 3, 1 $>$}, \hyperlink{classsvl_sample_image_custom_a07cb7b6e330adc6332fc334283f2b70d}{svl\+Sample\+Image\+Custom$<$ unsigned char, 3, 1 $>$}, \hyperlink{classsvl_sample_c_u_d_a_image_custom_a8a69cb31980239dd0063aa21a742f4c7}{svl\+Sample\+C\+U\+D\+A\+Image\+Custom$<$ \+\_\+\+Value\+Type, \+\_\+\+Data\+Channels, \+\_\+\+Video\+Channels $>$}, and \hyperlink{classsvl_sample_c_u_d_a_image_a9f207b0e1b0ef08d839acbe9fdac64c3}{svl\+Sample\+C\+U\+D\+A\+Image}.
+
+\hypertarget{classsvl_sample_image_a40315b943675a7eabe94aced3b7b3e41}{}\index{svl\+Sample\+Image@{svl\+Sample\+Image}!Get\+U\+Char\+Pointer@{Get\+U\+Char\+Pointer}}
+\index{Get\+U\+Char\+Pointer@{Get\+U\+Char\+Pointer}!svl\+Sample\+Image@{svl\+Sample\+Image}}
+\subsubsection[{Get\+U\+Char\+Pointer}]{\setlength{\rightskip}{0pt plus 5cm}virtual unsigned char$\ast$ svl\+Sample\+Image\+::\+Get\+U\+Char\+Pointer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classsvl_sample_image_a40315b943675a7eabe94aced3b7b3e41}
+
+
+Implements \hyperlink{classsvl_sample_a1d6d0bcdc9c59c719151fdef2b41fb07}{svl\+Sample}.
+
+
+
+Implemented in \hyperlink{classsvl_sample_image_custom_a20935c430bdfda2b8c2e47cedea54300}{svl\+Sample\+Image\+Custom$<$ \+\_\+\+Value\+Type, \+\_\+\+Data\+Channels, \+\_\+\+Video\+Channels $>$}, \hyperlink{classsvl_sample_image_custom_a20935c430bdfda2b8c2e47cedea54300}{svl\+Sample\+Image\+Custom$<$ float, 3, 1 $>$}, \hyperlink{classsvl_sample_image_custom_a20935c430bdfda2b8c2e47cedea54300}{svl\+Sample\+Image\+Custom$<$ unsigned char, 3, 1 $>$}, and \hyperlink{classsvl_sample_c_u_d_a_image_af5920ea9804f0d8e9c0eb6a05d525b5b}{svl\+Sample\+C\+U\+D\+A\+Image}.
+
+\hypertarget{classsvl_sample_image_a4527d6f63176444867741956c3fa902d}{}\index{svl\+Sample\+Image@{svl\+Sample\+Image}!Get\+U\+Char\+Pointer@{Get\+U\+Char\+Pointer}}
+\index{Get\+U\+Char\+Pointer@{Get\+U\+Char\+Pointer}!svl\+Sample\+Image@{svl\+Sample\+Image}}
+\subsubsection[{Get\+U\+Char\+Pointer}]{\setlength{\rightskip}{0pt plus 5cm}virtual const unsigned char$\ast$ svl\+Sample\+Image\+::\+Get\+U\+Char\+Pointer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classsvl_sample_image_a4527d6f63176444867741956c3fa902d}
+
+
+Implements \hyperlink{classsvl_sample_a1709332c9744a208763d49707f9a180b}{svl\+Sample}.
+
+
+
+Implemented in \hyperlink{classsvl_sample_image_custom_a98588a912725f4f68429db103ce99638}{svl\+Sample\+Image\+Custom$<$ \+\_\+\+Value\+Type, \+\_\+\+Data\+Channels, \+\_\+\+Video\+Channels $>$}, \hyperlink{classsvl_sample_image_custom_a98588a912725f4f68429db103ce99638}{svl\+Sample\+Image\+Custom$<$ float, 3, 1 $>$}, \hyperlink{classsvl_sample_image_custom_a98588a912725f4f68429db103ce99638}{svl\+Sample\+Image\+Custom$<$ unsigned char, 3, 1 $>$}, and \hyperlink{classsvl_sample_c_u_d_a_image_ac934fb0fc4bfa36edd6844b2c1a33c9d}{svl\+Sample\+C\+U\+D\+A\+Image}.
+
+\hypertarget{classsvl_sample_image_a197092f84532696829338eeef8c961fb}{}\index{svl\+Sample\+Image@{svl\+Sample\+Image}!Get\+U\+Char\+Pointer@{Get\+U\+Char\+Pointer}}
+\index{Get\+U\+Char\+Pointer@{Get\+U\+Char\+Pointer}!svl\+Sample\+Image@{svl\+Sample\+Image}}
+\subsubsection[{Get\+U\+Char\+Pointer}]{\setlength{\rightskip}{0pt plus 5cm}virtual unsigned char$\ast$ svl\+Sample\+Image\+::\+Get\+U\+Char\+Pointer (
+\begin{DoxyParamCaption}
+\item[{const unsigned int}]{videochannel}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classsvl_sample_image_a197092f84532696829338eeef8c961fb}
+
+
+Implemented in \hyperlink{classsvl_sample_image_custom_a62661fb5cb361956db41ddca64fb8de4}{svl\+Sample\+Image\+Custom$<$ \+\_\+\+Value\+Type, \+\_\+\+Data\+Channels, \+\_\+\+Video\+Channels $>$}, \hyperlink{classsvl_sample_image_custom_a62661fb5cb361956db41ddca64fb8de4}{svl\+Sample\+Image\+Custom$<$ float, 3, 1 $>$}, \hyperlink{classsvl_sample_image_custom_a62661fb5cb361956db41ddca64fb8de4}{svl\+Sample\+Image\+Custom$<$ unsigned char, 3, 1 $>$}, and \hyperlink{classsvl_sample_c_u_d_a_image_a6fa54c02d9ef41e88354dfb687d18c82}{svl\+Sample\+C\+U\+D\+A\+Image}.
+
+\hypertarget{classsvl_sample_image_aa5e8009157462ed2b4a2b9a6733057b7}{}\index{svl\+Sample\+Image@{svl\+Sample\+Image}!Get\+U\+Char\+Pointer@{Get\+U\+Char\+Pointer}}
+\index{Get\+U\+Char\+Pointer@{Get\+U\+Char\+Pointer}!svl\+Sample\+Image@{svl\+Sample\+Image}}
+\subsubsection[{Get\+U\+Char\+Pointer}]{\setlength{\rightskip}{0pt plus 5cm}virtual const unsigned char$\ast$ svl\+Sample\+Image\+::\+Get\+U\+Char\+Pointer (
+\begin{DoxyParamCaption}
+\item[{const unsigned int}]{videochannel}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classsvl_sample_image_aa5e8009157462ed2b4a2b9a6733057b7}
+
+
+Implemented in \hyperlink{classsvl_sample_image_custom_a1c3e87a17fa2483ef99b778f11228ec5}{svl\+Sample\+Image\+Custom$<$ \+\_\+\+Value\+Type, \+\_\+\+Data\+Channels, \+\_\+\+Video\+Channels $>$}, \hyperlink{classsvl_sample_image_custom_a1c3e87a17fa2483ef99b778f11228ec5}{svl\+Sample\+Image\+Custom$<$ float, 3, 1 $>$}, \hyperlink{classsvl_sample_image_custom_a1c3e87a17fa2483ef99b778f11228ec5}{svl\+Sample\+Image\+Custom$<$ unsigned char, 3, 1 $>$}, and \hyperlink{classsvl_sample_c_u_d_a_image_a07ff219ee1c51e675ccc08b0cbb86adb}{svl\+Sample\+C\+U\+D\+A\+Image}.
+
+\hypertarget{classsvl_sample_image_a5290dc4e28f8e5221d745bdf11523168}{}\index{svl\+Sample\+Image@{svl\+Sample\+Image}!Get\+U\+Char\+Pointer@{Get\+U\+Char\+Pointer}}
+\index{Get\+U\+Char\+Pointer@{Get\+U\+Char\+Pointer}!svl\+Sample\+Image@{svl\+Sample\+Image}}
+\subsubsection[{Get\+U\+Char\+Pointer}]{\setlength{\rightskip}{0pt plus 5cm}virtual unsigned char$\ast$ svl\+Sample\+Image\+::\+Get\+U\+Char\+Pointer (
+\begin{DoxyParamCaption}
+\item[{const unsigned int}]{videochannel, }
+\item[{const unsigned int}]{x, }
+\item[{const unsigned int}]{y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classsvl_sample_image_a5290dc4e28f8e5221d745bdf11523168}
+
+
+Implemented in \hyperlink{classsvl_sample_image_custom_a1ed7950bd52f718bb21d6614f6197bac}{svl\+Sample\+Image\+Custom$<$ \+\_\+\+Value\+Type, \+\_\+\+Data\+Channels, \+\_\+\+Video\+Channels $>$}, \hyperlink{classsvl_sample_image_custom_a1ed7950bd52f718bb21d6614f6197bac}{svl\+Sample\+Image\+Custom$<$ float, 3, 1 $>$}, \hyperlink{classsvl_sample_image_custom_a1ed7950bd52f718bb21d6614f6197bac}{svl\+Sample\+Image\+Custom$<$ unsigned char, 3, 1 $>$}, and \hyperlink{classsvl_sample_c_u_d_a_image_af56adc449e7a74bd2b8ed3be9062d757}{svl\+Sample\+C\+U\+D\+A\+Image}.
+
+\hypertarget{classsvl_sample_image_a75e4980f2dbffab07a44da67fdf1f3d6}{}\index{svl\+Sample\+Image@{svl\+Sample\+Image}!Get\+U\+Char\+Pointer@{Get\+U\+Char\+Pointer}}
+\index{Get\+U\+Char\+Pointer@{Get\+U\+Char\+Pointer}!svl\+Sample\+Image@{svl\+Sample\+Image}}
+\subsubsection[{Get\+U\+Char\+Pointer}]{\setlength{\rightskip}{0pt plus 5cm}virtual const unsigned char$\ast$ svl\+Sample\+Image\+::\+Get\+U\+Char\+Pointer (
+\begin{DoxyParamCaption}
+\item[{const unsigned int}]{videochannel, }
+\item[{const unsigned int}]{x, }
+\item[{const unsigned int}]{y}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classsvl_sample_image_a75e4980f2dbffab07a44da67fdf1f3d6}
+
+
+Implemented in \hyperlink{classsvl_sample_image_custom_abba3385b59196b344bbe8cba90013b68}{svl\+Sample\+Image\+Custom$<$ \+\_\+\+Value\+Type, \+\_\+\+Data\+Channels, \+\_\+\+Video\+Channels $>$}, \hyperlink{classsvl_sample_image_custom_abba3385b59196b344bbe8cba90013b68}{svl\+Sample\+Image\+Custom$<$ float, 3, 1 $>$}, \hyperlink{classsvl_sample_image_custom_abba3385b59196b344bbe8cba90013b68}{svl\+Sample\+Image\+Custom$<$ unsigned char, 3, 1 $>$}, and \hyperlink{classsvl_sample_c_u_d_a_image_a32198e02963a9aec2785c6ca76d7176d}{svl\+Sample\+C\+U\+D\+A\+Image}.
+
+\hypertarget{classsvl_sample_image_a50d7ca3459272a2dd7b7ee68dabd6e54}{}\index{svl\+Sample\+Image@{svl\+Sample\+Image}!Get\+Video\+Channels@{Get\+Video\+Channels}}
+\index{Get\+Video\+Channels@{Get\+Video\+Channels}!svl\+Sample\+Image@{svl\+Sample\+Image}}
+\subsubsection[{Get\+Video\+Channels}]{\setlength{\rightskip}{0pt plus 5cm}virtual unsigned int svl\+Sample\+Image\+::\+Get\+Video\+Channels (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classsvl_sample_image_a50d7ca3459272a2dd7b7ee68dabd6e54}
+
+
+Implemented in \hyperlink{classsvl_sample_image_custom_a5e9b96c832ad4af214cada505f859bc2}{svl\+Sample\+Image\+Custom$<$ \+\_\+\+Value\+Type, \+\_\+\+Data\+Channels, \+\_\+\+Video\+Channels $>$}, \hyperlink{classsvl_sample_image_custom_a5e9b96c832ad4af214cada505f859bc2}{svl\+Sample\+Image\+Custom$<$ float, 3, 1 $>$}, \hyperlink{classsvl_sample_image_custom_a5e9b96c832ad4af214cada505f859bc2}{svl\+Sample\+Image\+Custom$<$ unsigned char, 3, 1 $>$}, \hyperlink{classsvl_sample_c_u_d_a_image_custom_a01f74e4d6bffe1c868a589d282c4094a}{svl\+Sample\+C\+U\+D\+A\+Image\+Custom$<$ \+\_\+\+Value\+Type, \+\_\+\+Data\+Channels, \+\_\+\+Video\+Channels $>$}, and \hyperlink{classsvl_sample_c_u_d_a_image_a37d6b27087d1c2f1c88c0a1f643f56e4}{svl\+Sample\+C\+U\+D\+A\+Image}.
+
+\hypertarget{classsvl_sample_image_a93493be70fead7b2020810512129e45f}{}\index{svl\+Sample\+Image@{svl\+Sample\+Image}!Get\+Width@{Get\+Width}}
+\index{Get\+Width@{Get\+Width}!svl\+Sample\+Image@{svl\+Sample\+Image}}
+\subsubsection[{Get\+Width}]{\setlength{\rightskip}{0pt plus 5cm}virtual unsigned int svl\+Sample\+Image\+::\+Get\+Width (
+\begin{DoxyParamCaption}
+\item[{const unsigned int}]{videochannel = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classsvl_sample_image_a93493be70fead7b2020810512129e45f}
+
+
+Implemented in \hyperlink{classsvl_sample_image_custom_af03ade3f099c87b685ad52c0183deac8}{svl\+Sample\+Image\+Custom$<$ \+\_\+\+Value\+Type, \+\_\+\+Data\+Channels, \+\_\+\+Video\+Channels $>$}, \hyperlink{classsvl_sample_image_custom_af03ade3f099c87b685ad52c0183deac8}{svl\+Sample\+Image\+Custom$<$ float, 3, 1 $>$}, \hyperlink{classsvl_sample_image_custom_af03ade3f099c87b685ad52c0183deac8}{svl\+Sample\+Image\+Custom$<$ unsigned char, 3, 1 $>$}, \hyperlink{classsvl_sample_c_u_d_a_image_custom_a0d0a411f2c9079b065457d2e74a13c1e}{svl\+Sample\+C\+U\+D\+A\+Image\+Custom$<$ \+\_\+\+Value\+Type, \+\_\+\+Data\+Channels, \+\_\+\+Video\+Channels $>$}, and \hyperlink{classsvl_sample_c_u_d_a_image_a3360fac3241f26806cc4bd792920338e}{svl\+Sample\+C\+U\+D\+A\+Image}.
+
+\hypertarget{classsvl_sample_image_aef0e73b0e5906d4b60e689f41ff49a48}{}\index{svl\+Sample\+Image@{svl\+Sample\+Image}!Import\+Data@{Import\+Data}}
+\index{Import\+Data@{Import\+Data}!svl\+Sample\+Image@{svl\+Sample\+Image}}
+\subsubsection[{Import\+Data}]{\setlength{\rightskip}{0pt plus 5cm}int svl\+Sample\+Image\+::\+Import\+Data (
+\begin{DoxyParamCaption}
+\item[{unsigned char $\ast$}]{input, }
+\item[{const unsigned int}]{size, }
+\item[{const int}]{param = {\ttfamily 0}, }
+\item[{const unsigned int}]{videoch = {\ttfamily {\bf S\+V\+L\+\_\+\+L\+E\+F\+T}}}
+\end{DoxyParamCaption}
+)}\label{classsvl_sample_image_aef0e73b0e5906d4b60e689f41ff49a48}
+\hypertarget{classsvl_sample_image_a11b13d1f63e3a8581a84c848a83e8f85}{}\index{svl\+Sample\+Image@{svl\+Sample\+Image}!Import\+Data@{Import\+Data}}
+\index{Import\+Data@{Import\+Data}!svl\+Sample\+Image@{svl\+Sample\+Image}}
+\subsubsection[{Import\+Data}]{\setlength{\rightskip}{0pt plus 5cm}int svl\+Sample\+Image\+::\+Import\+Data (
+\begin{DoxyParamCaption}
+\item[{unsigned short $\ast$}]{input, }
+\item[{const unsigned int}]{size, }
+\item[{const int}]{param = {\ttfamily 0}, }
+\item[{const unsigned int}]{videoch = {\ttfamily {\bf S\+V\+L\+\_\+\+L\+E\+F\+T}}}
+\end{DoxyParamCaption}
+)}\label{classsvl_sample_image_a11b13d1f63e3a8581a84c848a83e8f85}
+\hypertarget{classsvl_sample_image_a92d332b2a5d130f19a4fc4aae9fc181c}{}\index{svl\+Sample\+Image@{svl\+Sample\+Image}!Import\+Data@{Import\+Data}}
+\index{Import\+Data@{Import\+Data}!svl\+Sample\+Image@{svl\+Sample\+Image}}
+\subsubsection[{Import\+Data}]{\setlength{\rightskip}{0pt plus 5cm}int svl\+Sample\+Image\+::\+Import\+Data (
+\begin{DoxyParamCaption}
+\item[{unsigned int $\ast$}]{input, }
+\item[{const unsigned int}]{size, }
+\item[{const int}]{param = {\ttfamily 0}, }
+\item[{const unsigned int}]{videoch = {\ttfamily {\bf S\+V\+L\+\_\+\+L\+E\+F\+T}}}
+\end{DoxyParamCaption}
+)}\label{classsvl_sample_image_a92d332b2a5d130f19a4fc4aae9fc181c}
+\hypertarget{classsvl_sample_image_a6a64f4d94e9af374c72f94fa6b722ebd}{}\index{svl\+Sample\+Image@{svl\+Sample\+Image}!Import\+Data@{Import\+Data}}
+\index{Import\+Data@{Import\+Data}!svl\+Sample\+Image@{svl\+Sample\+Image}}
+\subsubsection[{Import\+Data}]{\setlength{\rightskip}{0pt plus 5cm}int svl\+Sample\+Image\+::\+Import\+Data (
+\begin{DoxyParamCaption}
+\item[{float $\ast$}]{input, }
+\item[{const unsigned int}]{size, }
+\item[{const int}]{param = {\ttfamily 0}, }
+\item[{const unsigned int}]{videoch = {\ttfamily {\bf S\+V\+L\+\_\+\+L\+E\+F\+T}}}
+\end{DoxyParamCaption}
+)}\label{classsvl_sample_image_a6a64f4d94e9af374c72f94fa6b722ebd}
+\hypertarget{classsvl_sample_image_a762e6af7ff5258f2be32303ef0127b80}{}\index{svl\+Sample\+Image@{svl\+Sample\+Image}!Import\+Image@{Import\+Image}}
+\index{Import\+Image@{Import\+Image}!svl\+Sample\+Image@{svl\+Sample\+Image}}
+\subsubsection[{Import\+Image}]{\setlength{\rightskip}{0pt plus 5cm}int svl\+Sample\+Image\+::\+Import\+Image (
+\begin{DoxyParamCaption}
+\item[{const {\bf svl\+Sample\+Image} $\ast$}]{image, }
+\item[{const int}]{param = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\label{classsvl_sample_image_a762e6af7ff5258f2be32303ef0127b80}
+\hypertarget{classsvl_sample_image_a714d30ac5f7c020e27a9e227748e1422}{}\index{svl\+Sample\+Image@{svl\+Sample\+Image}!Import\+Image@{Import\+Image}}
+\index{Import\+Image@{Import\+Image}!svl\+Sample\+Image@{svl\+Sample\+Image}}
+\subsubsection[{Import\+Image}]{\setlength{\rightskip}{0pt plus 5cm}int svl\+Sample\+Image\+::\+Import\+Image (
+\begin{DoxyParamCaption}
+\item[{const {\bf svl\+Sample\+Image} \&}]{image, }
+\item[{const int}]{param = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\label{classsvl_sample_image_a714d30ac5f7c020e27a9e227748e1422}
+\hypertarget{classsvl_sample_image_a15dddfe94cc94595368e31e827bda277}{}\index{svl\+Sample\+Image@{svl\+Sample\+Image}!Import\+Image@{Import\+Image}}
+\index{Import\+Image@{Import\+Image}!svl\+Sample\+Image@{svl\+Sample\+Image}}
+\subsubsection[{Import\+Image}]{\setlength{\rightskip}{0pt plus 5cm}int svl\+Sample\+Image\+::\+Import\+Image (
+\begin{DoxyParamCaption}
+\item[{const {\bf svl\+Sample\+Image} $\ast$}]{image, }
+\item[{const unsigned int}]{src\+\_\+channel, }
+\item[{const unsigned int}]{dest\+\_\+channel, }
+\item[{const int}]{param = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\label{classsvl_sample_image_a15dddfe94cc94595368e31e827bda277}
+\hypertarget{classsvl_sample_image_a06d3e066bf3e6e6f1e0dcb650c4e48e1}{}\index{svl\+Sample\+Image@{svl\+Sample\+Image}!Import\+Image@{Import\+Image}}
+\index{Import\+Image@{Import\+Image}!svl\+Sample\+Image@{svl\+Sample\+Image}}
+\subsubsection[{Import\+Image}]{\setlength{\rightskip}{0pt plus 5cm}int svl\+Sample\+Image\+::\+Import\+Image (
+\begin{DoxyParamCaption}
+\item[{const {\bf svl\+Sample\+Image} \&}]{image, }
+\item[{const unsigned int}]{src\+\_\+channel, }
+\item[{const unsigned int}]{dest\+\_\+channel, }
+\item[{const int}]{param = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\label{classsvl_sample_image_a06d3e066bf3e6e6f1e0dcb650c4e48e1}
+\hypertarget{classsvl_sample_image_ac46bb5c709df83a50a886b22747314db}{}\index{svl\+Sample\+Image@{svl\+Sample\+Image}!Import\+Matrix@{Import\+Matrix}}
+\index{Import\+Matrix@{Import\+Matrix}!svl\+Sample\+Image@{svl\+Sample\+Image}}
+\subsubsection[{Import\+Matrix}]{\setlength{\rightskip}{0pt plus 5cm}int svl\+Sample\+Image\+::\+Import\+Matrix (
+\begin{DoxyParamCaption}
+\item[{const {\bf svl\+Sample\+Matrix} $\ast$}]{matrix, }
+\item[{const int}]{param = {\ttfamily 0}, }
+\item[{const unsigned int}]{videoch = {\ttfamily {\bf S\+V\+L\+\_\+\+L\+E\+F\+T}}}
+\end{DoxyParamCaption}
+)}\label{classsvl_sample_image_ac46bb5c709df83a50a886b22747314db}
+\hypertarget{classsvl_sample_image_ab436c7a9201cf26c5035b1c46e5e4f17}{}\index{svl\+Sample\+Image@{svl\+Sample\+Image}!Import\+Sample@{Import\+Sample}}
+\index{Import\+Sample@{Import\+Sample}!svl\+Sample\+Image@{svl\+Sample\+Image}}
+\subsubsection[{Import\+Sample}]{\setlength{\rightskip}{0pt plus 5cm}int svl\+Sample\+Image\+::\+Import\+Sample (
+\begin{DoxyParamCaption}
+\item[{const {\bf svl\+Sample} $\ast$}]{sample}
+\end{DoxyParamCaption}
+)}\label{classsvl_sample_image_ab436c7a9201cf26c5035b1c46e5e4f17}
+\hypertarget{classsvl_sample_image_a43b4076ff6d5667bf3916ec547f751d9}{}\index{svl\+Sample\+Image@{svl\+Sample\+Image}!Import\+Sample@{Import\+Sample}}
+\index{Import\+Sample@{Import\+Sample}!svl\+Sample\+Image@{svl\+Sample\+Image}}
+\subsubsection[{Import\+Sample}]{\setlength{\rightskip}{0pt plus 5cm}int svl\+Sample\+Image\+::\+Import\+Sample (
+\begin{DoxyParamCaption}
+\item[{const {\bf svl\+Sample} $\ast$}]{sample, }
+\item[{const unsigned int}]{videoch}
+\end{DoxyParamCaption}
+)}\label{classsvl_sample_image_a43b4076ff6d5667bf3916ec547f751d9}
+\hypertarget{classsvl_sample_image_a186f2ed3f98059785a8ec9de5dd55ec6}{}\index{svl\+Sample\+Image@{svl\+Sample\+Image}!Ipl\+Image\+Ref@{Ipl\+Image\+Ref}}
+\index{Ipl\+Image\+Ref@{Ipl\+Image\+Ref}!svl\+Sample\+Image@{svl\+Sample\+Image}}
+\subsubsection[{Ipl\+Image\+Ref}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Ipl\+Image}$\ast$ svl\+Sample\+Image\+::\+Ipl\+Image\+Ref (
+\begin{DoxyParamCaption}
+\item[{const unsigned int}]{videochannel = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classsvl_sample_image_a186f2ed3f98059785a8ec9de5dd55ec6}
+
+
+Implemented in \hyperlink{classsvl_sample_c_u_d_a_image_a42cdc8530cd24b6cbe7215545360145c}{svl\+Sample\+C\+U\+D\+A\+Image}.
+
+\hypertarget{classsvl_sample_image_a9a91b9605afdddb16a5b67290039c3a3}{}\index{svl\+Sample\+Image@{svl\+Sample\+Image}!Is\+Initialized@{Is\+Initialized}}
+\index{Is\+Initialized@{Is\+Initialized}!svl\+Sample\+Image@{svl\+Sample\+Image}}
+\subsubsection[{Is\+Initialized}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool svl\+Sample\+Image\+::\+Is\+Initialized (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classsvl_sample_image_a9a91b9605afdddb16a5b67290039c3a3}
+
+
+Reimplemented from \hyperlink{classsvl_sample_adf73a72c661e6df3c5f51a36c55040bb}{svl\+Sample}.
+
+
+
+Implemented in \hyperlink{classsvl_sample_image_custom_a05a63a27f8d36c3a6d3da3e557401e34}{svl\+Sample\+Image\+Custom$<$ \+\_\+\+Value\+Type, \+\_\+\+Data\+Channels, \+\_\+\+Video\+Channels $>$}, \hyperlink{classsvl_sample_image_custom_a05a63a27f8d36c3a6d3da3e557401e34}{svl\+Sample\+Image\+Custom$<$ float, 3, 1 $>$}, \hyperlink{classsvl_sample_image_custom_a05a63a27f8d36c3a6d3da3e557401e34}{svl\+Sample\+Image\+Custom$<$ unsigned char, 3, 1 $>$}, \hyperlink{classsvl_sample_c_u_d_a_image_custom_af7617f8ba9cd4079f2f630ab6024c81e}{svl\+Sample\+C\+U\+D\+A\+Image\+Custom$<$ \+\_\+\+Value\+Type, \+\_\+\+Data\+Channels, \+\_\+\+Video\+Channels $>$}, and \hyperlink{classsvl_sample_c_u_d_a_image_ae1c901a8f2628191096b70789ec9253d}{svl\+Sample\+C\+U\+D\+A\+Image}.
+
+\hypertarget{classsvl_sample_image_ac8f36bed025509c4d9c77060413d9ece}{}\index{svl\+Sample\+Image@{svl\+Sample\+Image}!Serialize\+Raw@{Serialize\+Raw}}
+\index{Serialize\+Raw@{Serialize\+Raw}!svl\+Sample\+Image@{svl\+Sample\+Image}}
+\subsubsection[{Serialize\+Raw}]{\setlength{\rightskip}{0pt plus 5cm}virtual void svl\+Sample\+Image\+::\+Serialize\+Raw (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{output\+Stream}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classsvl_sample_image_ac8f36bed025509c4d9c77060413d9ece}
+Binary serialization 
+
+Implements \hyperlink{classsvl_sample_a3d0ae4485588110c4be9bdf25fac8f57}{svl\+Sample}.
+
+
+
+Implemented in \hyperlink{classsvl_sample_image_custom_a2d467642f90ec4dc898658e6e7dd0e31}{svl\+Sample\+Image\+Custom$<$ \+\_\+\+Value\+Type, \+\_\+\+Data\+Channels, \+\_\+\+Video\+Channels $>$}, \hyperlink{classsvl_sample_image_custom_a2d467642f90ec4dc898658e6e7dd0e31}{svl\+Sample\+Image\+Custom$<$ float, 3, 1 $>$}, \hyperlink{classsvl_sample_image_custom_a2d467642f90ec4dc898658e6e7dd0e31}{svl\+Sample\+Image\+Custom$<$ unsigned char, 3, 1 $>$}, and \hyperlink{classsvl_sample_c_u_d_a_image_afa06e96bb83e21adb533a602221432dc}{svl\+Sample\+C\+U\+D\+A\+Image}.
+
+\hypertarget{classsvl_sample_image_a47e887ac52468fadc6bc67431644c048}{}\index{svl\+Sample\+Image@{svl\+Sample\+Image}!Set\+Size@{Set\+Size}}
+\index{Set\+Size@{Set\+Size}!svl\+Sample\+Image@{svl\+Sample\+Image}}
+\subsubsection[{Set\+Size}]{\setlength{\rightskip}{0pt plus 5cm}virtual int svl\+Sample\+Image\+::\+Set\+Size (
+\begin{DoxyParamCaption}
+\item[{const {\bf svl\+Sample} $\ast$}]{sample}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classsvl_sample_image_a47e887ac52468fadc6bc67431644c048}
+
+
+Implements \hyperlink{classsvl_sample_a4a4c91f6bca2ece232fbbc745cf710f4}{svl\+Sample}.
+
+
+
+Implemented in \hyperlink{classsvl_sample_image_custom_a67274b637cf728989b840642d9947c22}{svl\+Sample\+Image\+Custom$<$ \+\_\+\+Value\+Type, \+\_\+\+Data\+Channels, \+\_\+\+Video\+Channels $>$}, \hyperlink{classsvl_sample_image_custom_a67274b637cf728989b840642d9947c22}{svl\+Sample\+Image\+Custom$<$ float, 3, 1 $>$}, \hyperlink{classsvl_sample_image_custom_a67274b637cf728989b840642d9947c22}{svl\+Sample\+Image\+Custom$<$ unsigned char, 3, 1 $>$}, \hyperlink{classsvl_sample_c_u_d_a_image_custom_a89befc3335ed2ddef86b4435bb357ca9}{svl\+Sample\+C\+U\+D\+A\+Image\+Custom$<$ \+\_\+\+Value\+Type, \+\_\+\+Data\+Channels, \+\_\+\+Video\+Channels $>$}, and \hyperlink{classsvl_sample_c_u_d_a_image_a492f7179e526a5931c5f0f3c84394677}{svl\+Sample\+C\+U\+D\+A\+Image}.
+
+\hypertarget{classsvl_sample_image_a29daafd2f51f8ff6ce0ce00080a20fa9}{}\index{svl\+Sample\+Image@{svl\+Sample\+Image}!Set\+Size@{Set\+Size}}
+\index{Set\+Size@{Set\+Size}!svl\+Sample\+Image@{svl\+Sample\+Image}}
+\subsubsection[{Set\+Size}]{\setlength{\rightskip}{0pt plus 5cm}virtual int svl\+Sample\+Image\+::\+Set\+Size (
+\begin{DoxyParamCaption}
+\item[{const {\bf svl\+Sample} \&}]{sample}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classsvl_sample_image_a29daafd2f51f8ff6ce0ce00080a20fa9}
+
+
+Implements \hyperlink{classsvl_sample_a10f80eb24f0d8d2eba304dc6e3c46252}{svl\+Sample}.
+
+
+
+Implemented in \hyperlink{classsvl_sample_image_custom_af573cdf05b8b2bc88fa059e9e01c1bde}{svl\+Sample\+Image\+Custom$<$ \+\_\+\+Value\+Type, \+\_\+\+Data\+Channels, \+\_\+\+Video\+Channels $>$}, \hyperlink{classsvl_sample_image_custom_af573cdf05b8b2bc88fa059e9e01c1bde}{svl\+Sample\+Image\+Custom$<$ float, 3, 1 $>$}, \hyperlink{classsvl_sample_image_custom_af573cdf05b8b2bc88fa059e9e01c1bde}{svl\+Sample\+Image\+Custom$<$ unsigned char, 3, 1 $>$}, \hyperlink{classsvl_sample_c_u_d_a_image_custom_af233c4d9493dab2a10c307212e565802}{svl\+Sample\+C\+U\+D\+A\+Image\+Custom$<$ \+\_\+\+Value\+Type, \+\_\+\+Data\+Channels, \+\_\+\+Video\+Channels $>$}, and \hyperlink{classsvl_sample_c_u_d_a_image_afb8a430a19e60edf45d68556513b543c}{svl\+Sample\+C\+U\+D\+A\+Image}.
+
+\hypertarget{classsvl_sample_image_a7092189a385c234da3d96dce9fe8958a}{}\index{svl\+Sample\+Image@{svl\+Sample\+Image}!Set\+Size@{Set\+Size}}
+\index{Set\+Size@{Set\+Size}!svl\+Sample\+Image@{svl\+Sample\+Image}}
+\subsubsection[{Set\+Size}]{\setlength{\rightskip}{0pt plus 5cm}virtual void svl\+Sample\+Image\+::\+Set\+Size (
+\begin{DoxyParamCaption}
+\item[{const unsigned int}]{width, }
+\item[{const unsigned int}]{height}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classsvl_sample_image_a7092189a385c234da3d96dce9fe8958a}
+
+
+Implemented in \hyperlink{classsvl_sample_image_custom_afd5680235e119e25aaa963ded5c48eaf}{svl\+Sample\+Image\+Custom$<$ \+\_\+\+Value\+Type, \+\_\+\+Data\+Channels, \+\_\+\+Video\+Channels $>$}, \hyperlink{classsvl_sample_image_custom_afd5680235e119e25aaa963ded5c48eaf}{svl\+Sample\+Image\+Custom$<$ float, 3, 1 $>$}, \hyperlink{classsvl_sample_image_custom_afd5680235e119e25aaa963ded5c48eaf}{svl\+Sample\+Image\+Custom$<$ unsigned char, 3, 1 $>$}, \hyperlink{classsvl_sample_c_u_d_a_image_custom_a2f2ff05dbc7045bc600e3d61762fb96d}{svl\+Sample\+C\+U\+D\+A\+Image\+Custom$<$ \+\_\+\+Value\+Type, \+\_\+\+Data\+Channels, \+\_\+\+Video\+Channels $>$}, and \hyperlink{classsvl_sample_c_u_d_a_image_a8e8d4b761c82afb7cf4e08852fb9c5a5}{svl\+Sample\+C\+U\+D\+A\+Image}.
+
+\hypertarget{classsvl_sample_image_a2bb1c673c435a89029fb0809cc740e0d}{}\index{svl\+Sample\+Image@{svl\+Sample\+Image}!Set\+Size@{Set\+Size}}
+\index{Set\+Size@{Set\+Size}!svl\+Sample\+Image@{svl\+Sample\+Image}}
+\subsubsection[{Set\+Size}]{\setlength{\rightskip}{0pt plus 5cm}virtual void svl\+Sample\+Image\+::\+Set\+Size (
+\begin{DoxyParamCaption}
+\item[{const unsigned int}]{videochannel, }
+\item[{const unsigned int}]{width, }
+\item[{const unsigned int}]{height}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classsvl_sample_image_a2bb1c673c435a89029fb0809cc740e0d}
+
+
+Implemented in \hyperlink{classsvl_sample_image_custom_a9f5e5b51372a642bb86b7f3a7ca18fac}{svl\+Sample\+Image\+Custom$<$ \+\_\+\+Value\+Type, \+\_\+\+Data\+Channels, \+\_\+\+Video\+Channels $>$}, \hyperlink{classsvl_sample_image_custom_a9f5e5b51372a642bb86b7f3a7ca18fac}{svl\+Sample\+Image\+Custom$<$ float, 3, 1 $>$}, \hyperlink{classsvl_sample_image_custom_a9f5e5b51372a642bb86b7f3a7ca18fac}{svl\+Sample\+Image\+Custom$<$ unsigned char, 3, 1 $>$}, \hyperlink{classsvl_sample_c_u_d_a_image_custom_ab07bd9b726eeb5137a5508a6f8b43043}{svl\+Sample\+C\+U\+D\+A\+Image\+Custom$<$ \+\_\+\+Value\+Type, \+\_\+\+Data\+Channels, \+\_\+\+Video\+Channels $>$}, and \hyperlink{classsvl_sample_c_u_d_a_image_a692d4b96e25e3ace46f84606cffab219}{svl\+Sample\+C\+U\+D\+A\+Image}.
+
+\hypertarget{classsvl_sample_image_a17e6ad84e31a3c4848773c01a6c811c2}{}\index{svl\+Sample\+Image@{svl\+Sample\+Image}!Set\+Size@{Set\+Size}}
+\index{Set\+Size@{Set\+Size}!svl\+Sample\+Image@{svl\+Sample\+Image}}
+\subsubsection[{Set\+Size}]{\setlength{\rightskip}{0pt plus 5cm}virtual int svl\+Sample\+Image\+::\+Set\+Size (
+\begin{DoxyParamCaption}
+\item[{const {\bf Ipl\+Image} $\ast$}]{ipl\+\_\+image, }
+\item[{const unsigned int}]{videochannel = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classsvl_sample_image_a17e6ad84e31a3c4848773c01a6c811c2}
+
+
+Implemented in \hyperlink{classsvl_sample_c_u_d_a_image_a1d5c01d23b191bf16c370dd67fef6d7e}{svl\+Sample\+C\+U\+D\+A\+Image}.
+
+\hypertarget{classsvl_sample_image_a57255ee3dc0fd9509f9aa22eb5c85fa4}{}\index{svl\+Sample\+Image@{svl\+Sample\+Image}!Set\+Size@{Set\+Size}}
+\index{Set\+Size@{Set\+Size}!svl\+Sample\+Image@{svl\+Sample\+Image}}
+\subsubsection[{Set\+Size}]{\setlength{\rightskip}{0pt plus 5cm}virtual int svl\+Sample\+Image\+::\+Set\+Size (
+\begin{DoxyParamCaption}
+\item[{const {\bf cv\+::\+Mat} \&}]{cv\+\_\+mat, }
+\item[{const unsigned int}]{videochannel = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classsvl_sample_image_a57255ee3dc0fd9509f9aa22eb5c85fa4}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Stereo\+Vision/\hyperlink{svl_sample_image_8h}{svl\+Sample\+Image.\+h}\end{DoxyCompactItemize}

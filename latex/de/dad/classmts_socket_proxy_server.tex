@@ -1,0 +1,416 @@
+\hypertarget{classmts_socket_proxy_server}{}\section{mts\+Socket\+Proxy\+Server Class Reference}
+\label{classmts_socket_proxy_server}\index{mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}}
+
+
+{\ttfamily \#include $<$mts\+Socket\+Proxy\+Server.\+h$>$}
+
+Inheritance diagram for mts\+Socket\+Proxy\+Server\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{de/dad/classmts_socket_proxy_server}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmts_socket_proxy_server_a6ebb4c4b1dfaa429094b3fdac1659471}{mts\+Socket\+Proxy\+Server} (const std\+::string \&name, const std\+::string \&component\+Name, const std\+::string \&provided\+Interface\+Name, unsigned short port)
+\item 
+\hyperlink{classmts_socket_proxy_server_ac55aba203dc89676c5fc133e5b9a6090}{mts\+Socket\+Proxy\+Server} (const \hyperlink{classmts_socket_proxy_server_constructor_arg}{mts\+Socket\+Proxy\+Server\+Constructor\+Arg} \&arg)
+\item 
+virtual \hyperlink{classmts_socket_proxy_server_ac16f10d6cf3bb67eda9c2f9797e69fec}{$\sim$mts\+Socket\+Proxy\+Server} ()
+\item 
+void \hyperlink{classmts_socket_proxy_server_afa15c24264a578805db0e08773a59044}{Configure} (const std\+::string \&)
+\item 
+void \hyperlink{classmts_socket_proxy_server_ac503a2964c4d1187775bf48a91708bbd}{Startup} (void)
+\item 
+void \hyperlink{classmts_socket_proxy_server_a10ea0b133dccf740841af2058b332ced}{Run} (void)
+\item 
+void \hyperlink{classmts_socket_proxy_server_a53e1c85a91a01f1e12301860e7de9673}{Cleanup} (void)
+\item 
+mts\+Proxy\+Serializer $\ast$ \hyperlink{classmts_socket_proxy_server_a53ec6e91f127a1a301cd6225bc92fdb4}{Get\+Serializer\+For\+Client} (const \hyperlink{structosa_i_pand_port}{osa\+I\+Pand\+Port} \&ip\+\_\+port) const 
+\item 
+mts\+Proxy\+Serializer $\ast$ \hyperlink{classmts_socket_proxy_server_a2af72d89d2922a1c1eb711c035cd90bb}{Get\+Serializer\+For\+Current\+Client} (void) const 
+\item 
+\hyperlink{classmts_command_write_base}{mts\+Command\+Write\+Base} $\ast$ \hyperlink{classmts_socket_proxy_server_a2c65e1478bf9b6224c567d7991132a1f}{Allocate\+Finished\+Event} (const std\+::string \&event\+Handle)
+\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::map$<$ \hyperlink{structosa_i_pand_port}{osa\+I\+Pand\+Port}, mts\+Proxy\+Serializer $\ast$ $>$ \hyperlink{classmts_socket_proxy_server_a7119b8c41d2a72f7234f77bdcc1e2fad}{Client\+Map\+Type}
+\item 
+typedef \hyperlink{classcmn_named_map}{cmn\+Named\+Map}$<$ Function\+Void\+Proxy $>$ \hyperlink{classmts_socket_proxy_server_a6d95a7cca6e51f877454df35d3fa56ab}{Function\+Void\+Proxy\+Map\+Type}
+\item 
+typedef \hyperlink{classcmn_named_map}{cmn\+Named\+Map}$<$ Function\+Write\+Proxy $>$ \hyperlink{classmts_socket_proxy_server_ae84115470284d069bbd2856f4fa11e43}{Function\+Write\+Proxy\+Map\+Type}
+\item 
+typedef \hyperlink{classcmn_named_map}{cmn\+Named\+Map}$<$ Function\+Read\+Proxy $>$ \hyperlink{classmts_socket_proxy_server_ac02122bd068b3dc59511a47e2e733671}{Function\+Read\+Proxy\+Map\+Type}
+\item 
+typedef \hyperlink{classcmn_named_map}{cmn\+Named\+Map}$<$ Function\+Qualified\+Read\+Proxy $>$ \hyperlink{classmts_socket_proxy_server_ad42c455d343f85b06a2c7047739c9c7b}{Function\+Qualified\+Read\+Proxy\+Map\+Type}
+\item 
+typedef \hyperlink{classcmn_named_map}{cmn\+Named\+Map}$<$ Function\+Void\+Return\+Proxy $>$ \hyperlink{classmts_socket_proxy_server_a542c0cd156add7e963c92287aaf4e7f3}{Function\+Void\+Return\+Proxy\+Map\+Type}
+\item 
+typedef \hyperlink{classcmn_named_map}{cmn\+Named\+Map}$<$ Function\+Write\+Return\+Proxy $>$ \hyperlink{classmts_socket_proxy_server_ab8976dbfc7fa5afbb1f02e7cddc2d71d}{Function\+Write\+Return\+Proxy\+Map\+Type}
+\item 
+typedef \hyperlink{classcmn_named_map}{cmn\+Named\+Map}$<$ mts\+Event\+Sender\+Void $>$ \hyperlink{classmts_socket_proxy_server_ae784ef6005901f988064e99f28bc4dc4}{Event\+Generator\+Void\+Proxy\+Map\+Type}
+\item 
+typedef \hyperlink{classcmn_named_map}{cmn\+Named\+Map}$<$ mts\+Event\+Sender\+Write $>$ \hyperlink{classmts_socket_proxy_server_a54071862784d4a4b6b75588e5c03df14}{Event\+Generator\+Write\+Proxy\+Map\+Type}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classmts_socket_proxy_server_a484df52523d8ba237358a6cc56b8d67a}{Init} (const std\+::string \&component\+Name, const std\+::string \&provided\+Interface\+Name)
+\item 
+bool \hyperlink{classmts_socket_proxy_server_a8040ee220cf3249685932aad1cf52231}{Create\+Server\+Proxy} (const std\+::string \&required\+Interface\+Name, size\+\_\+t provided\+Mailbox\+Size)
+\begin{DoxyCompactList}\small\item\em Create server proxy. \end{DoxyCompactList}\item 
+bool \hyperlink{classmts_socket_proxy_server_aac2d100483f25d78682b8137546a8c25}{Get\+Interface\+Description} (mts\+Interface\+Provided\+Description \&desc) const 
+\item 
+bool \hyperlink{classmts_socket_proxy_server_ab9a97e4761a5824bdb8cdd2b2f29b530}{Get\+Handle\+Void} (const std\+::string \&command\+Name, std\+::string \&handle\+String) const 
+\item 
+bool \hyperlink{classmts_socket_proxy_server_a33f70a2d493e886ecd92321928aeef9a}{Get\+Handle\+Read} (const std\+::string \&command\+Name, std\+::string \&handle\+String) const 
+\item 
+bool \hyperlink{classmts_socket_proxy_server_a44b7dcdd1649d6f8766fbc5eca76f07c}{Get\+Handle\+Write} (const std\+::string \&command\+Name, std\+::string \&handle\+String) const 
+\item 
+bool \hyperlink{classmts_socket_proxy_server_a9fc0e7143f33f086e8ed0e77946e294c}{Get\+Handle\+Qualified\+Read} (const std\+::string \&command\+Name, std\+::string \&handle\+String) const 
+\item 
+bool \hyperlink{classmts_socket_proxy_server_a432865d53e1346134ddcc41422b013f2}{Get\+Handle\+Void\+Return} (const std\+::string \&command\+Name, std\+::string \&handle\+String) const 
+\item 
+bool \hyperlink{classmts_socket_proxy_server_aa23bcc2804b23e7db80431e83caa3b3f}{Get\+Handle\+Write\+Return} (const std\+::string \&command\+Name, std\+::string \&handle\+String) const 
+\item 
+void \hyperlink{classmts_socket_proxy_server_a15fb0f2b7b457e74434f618f7b3c1b0d}{Event\+Enable} (const std\+::string \&event\+Handle\+And\+Name)
+\item 
+void \hyperlink{classmts_socket_proxy_server_a026fc4300e258e82f622f72fd7af1e6e}{Event\+Disable} (const std\+::string \&event\+Handle\+And\+Name)
+\item 
+void \hyperlink{classmts_socket_proxy_server_ae1e5bf81532c293525cadac52bc7d169}{Add\+Special\+Commands} (void)
+\item 
+mts\+Execution\+Result \hyperlink{classmts_socket_proxy_server_a08aa6a4f76551b78546ae525bde4f325}{Get\+Init\+Data} (std\+::string \&output\+Arg\+Serialized, mts\+Proxy\+Serializer $\ast$serializer) const 
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classosa_socket}{osa\+Socket} \hyperlink{classmts_socket_proxy_server_a8d1606419800ffe082caf5a6805dde19}{Socket}
+\item 
+mts\+Interface\+Provided\+Description \hyperlink{classmts_socket_proxy_server_a2e2a6206e203ad931a69637b8dcecd4e}{Interface\+Description}
+\item 
+\hyperlink{classmts_socket_proxy_server_a6d95a7cca6e51f877454df35d3fa56ab}{Function\+Void\+Proxy\+Map\+Type} \hyperlink{classmts_socket_proxy_server_a6bd22e4fe18232c34b81f2b7bf4f81c3}{Function\+Void\+Proxy\+Map}
+\item 
+\hyperlink{classmts_socket_proxy_server_ae84115470284d069bbd2856f4fa11e43}{Function\+Write\+Proxy\+Map\+Type} \hyperlink{classmts_socket_proxy_server_a32e552baa11f56924b5877d67a65421c}{Function\+Write\+Proxy\+Map}
+\item 
+\hyperlink{classmts_socket_proxy_server_ac02122bd068b3dc59511a47e2e733671}{Function\+Read\+Proxy\+Map\+Type} \hyperlink{classmts_socket_proxy_server_a8e126ba85100a6153f7e244b1cdc226f}{Function\+Read\+Proxy\+Map}
+\item 
+\hyperlink{classmts_socket_proxy_server_ad42c455d343f85b06a2c7047739c9c7b}{Function\+Qualified\+Read\+Proxy\+Map\+Type} \hyperlink{classmts_socket_proxy_server_ab63d24a71f84275695f79461be04b118}{Function\+Qualified\+Read\+Proxy\+Map}
+\item 
+\hyperlink{classmts_socket_proxy_server_a542c0cd156add7e963c92287aaf4e7f3}{Function\+Void\+Return\+Proxy\+Map\+Type} \hyperlink{classmts_socket_proxy_server_a13c785afdf7affb3f63ff3eb45560c19}{Function\+Void\+Return\+Proxy\+Map}
+\item 
+\hyperlink{classmts_socket_proxy_server_ab8976dbfc7fa5afbb1f02e7cddc2d71d}{Function\+Write\+Return\+Proxy\+Map\+Type} \hyperlink{classmts_socket_proxy_server_a7628f02b88924954ecbe2c242acce5ba}{Function\+Write\+Return\+Proxy\+Map}
+\item 
+\hyperlink{classmts_socket_proxy_server_ae784ef6005901f988064e99f28bc4dc4}{Event\+Generator\+Void\+Proxy\+Map\+Type} \hyperlink{classmts_socket_proxy_server_a4a78412a050d8cfad01e7738cc96dee4}{Event\+Generator\+Void\+Proxy\+Map}
+\item 
+\hyperlink{classmts_socket_proxy_server_a54071862784d4a4b6b75588e5c03df14}{Event\+Generator\+Write\+Proxy\+Map\+Type} \hyperlink{classmts_socket_proxy_server_a8e4bb429d5685a620b5d1b9894092a1d}{Event\+Generator\+Write\+Proxy\+Map}
+\item 
+\hyperlink{classmts_socket_proxy_server_a7119b8c41d2a72f7234f77bdcc1e2fad}{Client\+Map\+Type} \hyperlink{classmts_socket_proxy_server_acb24d470395fe5cad656863434c0ef52}{Client\+Map}
+\item 
+Finished\+Event\+List $\ast$ \hyperlink{classmts_socket_proxy_server_a1907551b9d6dd7bcb7e46668686d29e1}{Finished\+Events}
+\item 
+std\+::vector$<$ \hyperlink{classmts_command_base}{mts\+Command\+Base} $\ast$ $>$ \hyperlink{classmts_socket_proxy_server_a033ddf4256700a5393055451d6f883a0}{Special\+Commands}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classmts_socket_proxy_server_a7119b8c41d2a72f7234f77bdcc1e2fad}{}\index{mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}!Client\+Map\+Type@{Client\+Map\+Type}}
+\index{Client\+Map\+Type@{Client\+Map\+Type}!mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}}
+\subsubsection[{Client\+Map\+Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::map$<${\bf osa\+I\+Pand\+Port}, mts\+Proxy\+Serializer $\ast$$>$ {\bf mts\+Socket\+Proxy\+Server\+::\+Client\+Map\+Type}\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_socket_proxy_server_a7119b8c41d2a72f7234f77bdcc1e2fad}
+Typedef for client connections. The current design of the cisst serializer only sends the class services the first time an instance of the class is serialized; thus we need a separate serializer for each client. \hypertarget{classmts_socket_proxy_server_ae784ef6005901f988064e99f28bc4dc4}{}\index{mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}!Event\+Generator\+Void\+Proxy\+Map\+Type@{Event\+Generator\+Void\+Proxy\+Map\+Type}}
+\index{Event\+Generator\+Void\+Proxy\+Map\+Type@{Event\+Generator\+Void\+Proxy\+Map\+Type}!mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}}
+\subsubsection[{Event\+Generator\+Void\+Proxy\+Map\+Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf cmn\+Named\+Map}$<$mts\+Event\+Sender\+Void$>$ {\bf mts\+Socket\+Proxy\+Server\+::\+Event\+Generator\+Void\+Proxy\+Map\+Type}\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_socket_proxy_server_ae784ef6005901f988064e99f28bc4dc4}
+Typedef for event generator proxies \hypertarget{classmts_socket_proxy_server_a54071862784d4a4b6b75588e5c03df14}{}\index{mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}!Event\+Generator\+Write\+Proxy\+Map\+Type@{Event\+Generator\+Write\+Proxy\+Map\+Type}}
+\index{Event\+Generator\+Write\+Proxy\+Map\+Type@{Event\+Generator\+Write\+Proxy\+Map\+Type}!mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}}
+\subsubsection[{Event\+Generator\+Write\+Proxy\+Map\+Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf cmn\+Named\+Map}$<$mts\+Event\+Sender\+Write$>$ {\bf mts\+Socket\+Proxy\+Server\+::\+Event\+Generator\+Write\+Proxy\+Map\+Type}\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_socket_proxy_server_a54071862784d4a4b6b75588e5c03df14}
+\hypertarget{classmts_socket_proxy_server_ad42c455d343f85b06a2c7047739c9c7b}{}\index{mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}!Function\+Qualified\+Read\+Proxy\+Map\+Type@{Function\+Qualified\+Read\+Proxy\+Map\+Type}}
+\index{Function\+Qualified\+Read\+Proxy\+Map\+Type@{Function\+Qualified\+Read\+Proxy\+Map\+Type}!mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}}
+\subsubsection[{Function\+Qualified\+Read\+Proxy\+Map\+Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf cmn\+Named\+Map}$<$Function\+Qualified\+Read\+Proxy$>$ {\bf mts\+Socket\+Proxy\+Server\+::\+Function\+Qualified\+Read\+Proxy\+Map\+Type}\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_socket_proxy_server_ad42c455d343f85b06a2c7047739c9c7b}
+\hypertarget{classmts_socket_proxy_server_ac02122bd068b3dc59511a47e2e733671}{}\index{mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}!Function\+Read\+Proxy\+Map\+Type@{Function\+Read\+Proxy\+Map\+Type}}
+\index{Function\+Read\+Proxy\+Map\+Type@{Function\+Read\+Proxy\+Map\+Type}!mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}}
+\subsubsection[{Function\+Read\+Proxy\+Map\+Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf cmn\+Named\+Map}$<$Function\+Read\+Proxy$>$ {\bf mts\+Socket\+Proxy\+Server\+::\+Function\+Read\+Proxy\+Map\+Type}\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_socket_proxy_server_ac02122bd068b3dc59511a47e2e733671}
+\hypertarget{classmts_socket_proxy_server_a6d95a7cca6e51f877454df35d3fa56ab}{}\index{mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}!Function\+Void\+Proxy\+Map\+Type@{Function\+Void\+Proxy\+Map\+Type}}
+\index{Function\+Void\+Proxy\+Map\+Type@{Function\+Void\+Proxy\+Map\+Type}!mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}}
+\subsubsection[{Function\+Void\+Proxy\+Map\+Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf cmn\+Named\+Map}$<$Function\+Void\+Proxy$>$ {\bf mts\+Socket\+Proxy\+Server\+::\+Function\+Void\+Proxy\+Map\+Type}\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_socket_proxy_server_a6d95a7cca6e51f877454df35d3fa56ab}
+Typedef for function proxies \hypertarget{classmts_socket_proxy_server_a542c0cd156add7e963c92287aaf4e7f3}{}\index{mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}!Function\+Void\+Return\+Proxy\+Map\+Type@{Function\+Void\+Return\+Proxy\+Map\+Type}}
+\index{Function\+Void\+Return\+Proxy\+Map\+Type@{Function\+Void\+Return\+Proxy\+Map\+Type}!mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}}
+\subsubsection[{Function\+Void\+Return\+Proxy\+Map\+Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf cmn\+Named\+Map}$<$Function\+Void\+Return\+Proxy$>$ {\bf mts\+Socket\+Proxy\+Server\+::\+Function\+Void\+Return\+Proxy\+Map\+Type}\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_socket_proxy_server_a542c0cd156add7e963c92287aaf4e7f3}
+\hypertarget{classmts_socket_proxy_server_ae84115470284d069bbd2856f4fa11e43}{}\index{mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}!Function\+Write\+Proxy\+Map\+Type@{Function\+Write\+Proxy\+Map\+Type}}
+\index{Function\+Write\+Proxy\+Map\+Type@{Function\+Write\+Proxy\+Map\+Type}!mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}}
+\subsubsection[{Function\+Write\+Proxy\+Map\+Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf cmn\+Named\+Map}$<$Function\+Write\+Proxy$>$ {\bf mts\+Socket\+Proxy\+Server\+::\+Function\+Write\+Proxy\+Map\+Type}\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_socket_proxy_server_ae84115470284d069bbd2856f4fa11e43}
+\hypertarget{classmts_socket_proxy_server_ab8976dbfc7fa5afbb1f02e7cddc2d71d}{}\index{mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}!Function\+Write\+Return\+Proxy\+Map\+Type@{Function\+Write\+Return\+Proxy\+Map\+Type}}
+\index{Function\+Write\+Return\+Proxy\+Map\+Type@{Function\+Write\+Return\+Proxy\+Map\+Type}!mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}}
+\subsubsection[{Function\+Write\+Return\+Proxy\+Map\+Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf cmn\+Named\+Map}$<$Function\+Write\+Return\+Proxy$>$ {\bf mts\+Socket\+Proxy\+Server\+::\+Function\+Write\+Return\+Proxy\+Map\+Type}\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_socket_proxy_server_ab8976dbfc7fa5afbb1f02e7cddc2d71d}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmts_socket_proxy_server_a6ebb4c4b1dfaa429094b3fdac1659471}{}\index{mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}!mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}}
+\index{mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}!mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}}
+\subsubsection[{mts\+Socket\+Proxy\+Server}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Socket\+Proxy\+Server\+::mts\+Socket\+Proxy\+Server (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name, }
+\item[{const std\+::string \&}]{component\+Name, }
+\item[{const std\+::string \&}]{provided\+Interface\+Name, }
+\item[{unsigned short}]{port}
+\end{DoxyParamCaption}
+)}\label{classmts_socket_proxy_server_a6ebb4c4b1dfaa429094b3fdac1659471}
+Constructor 
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the proxy component \\
+\hline
+{\em component\+Name} & Name of the component for which proxy is being created \\
+\hline
+{\em provided\+Interface\+Name} & Name of the provided interface (from component\+Name) for which proxy is being created \\
+\hline
+{\em port} & Port to use for socket (U\+D\+P) \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmts_socket_proxy_server_ac55aba203dc89676c5fc133e5b9a6090}{}\index{mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}!mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}}
+\index{mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}!mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}}
+\subsubsection[{mts\+Socket\+Proxy\+Server}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Socket\+Proxy\+Server\+::mts\+Socket\+Proxy\+Server (
+\begin{DoxyParamCaption}
+\item[{const {\bf mts\+Socket\+Proxy\+Server\+Constructor\+Arg} \&}]{arg}
+\end{DoxyParamCaption}
+)}\label{classmts_socket_proxy_server_ac55aba203dc89676c5fc133e5b9a6090}
+\hypertarget{classmts_socket_proxy_server_ac16f10d6cf3bb67eda9c2f9797e69fec}{}\index{mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}!````~mts\+Socket\+Proxy\+Server@{$\sim$mts\+Socket\+Proxy\+Server}}
+\index{````~mts\+Socket\+Proxy\+Server@{$\sim$mts\+Socket\+Proxy\+Server}!mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}}
+\subsubsection[{$\sim$mts\+Socket\+Proxy\+Server}]{\setlength{\rightskip}{0pt plus 5cm}virtual mts\+Socket\+Proxy\+Server\+::$\sim$mts\+Socket\+Proxy\+Server (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_socket_proxy_server_ac16f10d6cf3bb67eda9c2f9797e69fec}
+Destructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classmts_socket_proxy_server_ae1e5bf81532c293525cadac52bc7d169}{}\index{mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}!Add\+Special\+Commands@{Add\+Special\+Commands}}
+\index{Add\+Special\+Commands@{Add\+Special\+Commands}!mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}}
+\subsubsection[{Add\+Special\+Commands}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Socket\+Proxy\+Server\+::\+Add\+Special\+Commands (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_socket_proxy_server_ae1e5bf81532c293525cadac52bc7d169}
+\hypertarget{classmts_socket_proxy_server_a2c65e1478bf9b6224c567d7991132a1f}{}\index{mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}!Allocate\+Finished\+Event@{Allocate\+Finished\+Event}}
+\index{Allocate\+Finished\+Event@{Allocate\+Finished\+Event}!mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}}
+\subsubsection[{Allocate\+Finished\+Event}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+Command\+Write\+Base}$\ast$ mts\+Socket\+Proxy\+Server\+::\+Allocate\+Finished\+Event (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{event\+Handle}
+\end{DoxyParamCaption}
+)}\label{classmts_socket_proxy_server_a2c65e1478bf9b6224c567d7991132a1f}
+\hypertarget{classmts_socket_proxy_server_a53e1c85a91a01f1e12301860e7de9673}{}\index{mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}!Cleanup@{Cleanup}}
+\index{Cleanup@{Cleanup}!mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}}
+\subsubsection[{Cleanup}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Socket\+Proxy\+Server\+::\+Cleanup (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_socket_proxy_server_a53e1c85a91a01f1e12301860e7de9673}
+Virtual method that gets overloaded, and is run after the component gets killed using \hyperlink{classmts_task_continuous_ad1f8145306e074fbea8baab3beef4c5b}{Kill()} method. 
+
+Reimplemented from \hyperlink{classmts_component_a891f330f4fde7d831dcf7dc537dc5e81}{mts\+Component}.
+
+\hypertarget{classmts_socket_proxy_server_afa15c24264a578805db0e08773a59044}{}\index{mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}!Configure@{Configure}}
+\index{Configure@{Configure}!mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}}
+\subsubsection[{Configure}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Socket\+Proxy\+Server\+::\+Configure (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{filename}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classmts_socket_proxy_server_afa15c24264a578805db0e08773a59044}
+The virtual method so that the interface or tasks can configure themselves 
+
+Reimplemented from \hyperlink{classmts_component_ad872432876de7879dc96c232b411c146}{mts\+Component}.
+
+\hypertarget{classmts_socket_proxy_server_a8040ee220cf3249685932aad1cf52231}{}\index{mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}!Create\+Server\+Proxy@{Create\+Server\+Proxy}}
+\index{Create\+Server\+Proxy@{Create\+Server\+Proxy}!mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}}
+\subsubsection[{Create\+Server\+Proxy}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Socket\+Proxy\+Server\+::\+Create\+Server\+Proxy (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{required\+Interface\+Name, }
+\item[{size\+\_\+t}]{provided\+Mailbox\+Size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_socket_proxy_server_a8040ee220cf3249685932aad1cf52231}
+
+
+Create server proxy. 
+
+\begin{DoxyReturn}{Returns}
+True if success, false otherwise 
+\end{DoxyReturn}
+\hypertarget{classmts_socket_proxy_server_a026fc4300e258e82f622f72fd7af1e6e}{}\index{mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}!Event\+Disable@{Event\+Disable}}
+\index{Event\+Disable@{Event\+Disable}!mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}}
+\subsubsection[{Event\+Disable}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Socket\+Proxy\+Server\+::\+Event\+Disable (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{event\+Handle\+And\+Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_socket_proxy_server_a026fc4300e258e82f622f72fd7af1e6e}
+\hypertarget{classmts_socket_proxy_server_a15fb0f2b7b457e74434f618f7b3c1b0d}{}\index{mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}!Event\+Enable@{Event\+Enable}}
+\index{Event\+Enable@{Event\+Enable}!mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}}
+\subsubsection[{Event\+Enable}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Socket\+Proxy\+Server\+::\+Event\+Enable (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{event\+Handle\+And\+Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_socket_proxy_server_a15fb0f2b7b457e74434f618f7b3c1b0d}
+\hypertarget{classmts_socket_proxy_server_a9fc0e7143f33f086e8ed0e77946e294c}{}\index{mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}!Get\+Handle\+Qualified\+Read@{Get\+Handle\+Qualified\+Read}}
+\index{Get\+Handle\+Qualified\+Read@{Get\+Handle\+Qualified\+Read}!mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}}
+\subsubsection[{Get\+Handle\+Qualified\+Read}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Socket\+Proxy\+Server\+::\+Get\+Handle\+Qualified\+Read (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{command\+Name, }
+\item[{std\+::string \&}]{handle\+String}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_socket_proxy_server_a9fc0e7143f33f086e8ed0e77946e294c}
+\hypertarget{classmts_socket_proxy_server_a33f70a2d493e886ecd92321928aeef9a}{}\index{mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}!Get\+Handle\+Read@{Get\+Handle\+Read}}
+\index{Get\+Handle\+Read@{Get\+Handle\+Read}!mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}}
+\subsubsection[{Get\+Handle\+Read}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Socket\+Proxy\+Server\+::\+Get\+Handle\+Read (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{command\+Name, }
+\item[{std\+::string \&}]{handle\+String}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_socket_proxy_server_a33f70a2d493e886ecd92321928aeef9a}
+\hypertarget{classmts_socket_proxy_server_ab9a97e4761a5824bdb8cdd2b2f29b530}{}\index{mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}!Get\+Handle\+Void@{Get\+Handle\+Void}}
+\index{Get\+Handle\+Void@{Get\+Handle\+Void}!mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}}
+\subsubsection[{Get\+Handle\+Void}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Socket\+Proxy\+Server\+::\+Get\+Handle\+Void (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{command\+Name, }
+\item[{std\+::string \&}]{handle\+String}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_socket_proxy_server_ab9a97e4761a5824bdb8cdd2b2f29b530}
+\hypertarget{classmts_socket_proxy_server_a432865d53e1346134ddcc41422b013f2}{}\index{mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}!Get\+Handle\+Void\+Return@{Get\+Handle\+Void\+Return}}
+\index{Get\+Handle\+Void\+Return@{Get\+Handle\+Void\+Return}!mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}}
+\subsubsection[{Get\+Handle\+Void\+Return}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Socket\+Proxy\+Server\+::\+Get\+Handle\+Void\+Return (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{command\+Name, }
+\item[{std\+::string \&}]{handle\+String}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_socket_proxy_server_a432865d53e1346134ddcc41422b013f2}
+\hypertarget{classmts_socket_proxy_server_a44b7dcdd1649d6f8766fbc5eca76f07c}{}\index{mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}!Get\+Handle\+Write@{Get\+Handle\+Write}}
+\index{Get\+Handle\+Write@{Get\+Handle\+Write}!mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}}
+\subsubsection[{Get\+Handle\+Write}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Socket\+Proxy\+Server\+::\+Get\+Handle\+Write (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{command\+Name, }
+\item[{std\+::string \&}]{handle\+String}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_socket_proxy_server_a44b7dcdd1649d6f8766fbc5eca76f07c}
+\hypertarget{classmts_socket_proxy_server_aa23bcc2804b23e7db80431e83caa3b3f}{}\index{mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}!Get\+Handle\+Write\+Return@{Get\+Handle\+Write\+Return}}
+\index{Get\+Handle\+Write\+Return@{Get\+Handle\+Write\+Return}!mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}}
+\subsubsection[{Get\+Handle\+Write\+Return}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Socket\+Proxy\+Server\+::\+Get\+Handle\+Write\+Return (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{command\+Name, }
+\item[{std\+::string \&}]{handle\+String}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_socket_proxy_server_aa23bcc2804b23e7db80431e83caa3b3f}
+\hypertarget{classmts_socket_proxy_server_a08aa6a4f76551b78546ae525bde4f325}{}\index{mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}!Get\+Init\+Data@{Get\+Init\+Data}}
+\index{Get\+Init\+Data@{Get\+Init\+Data}!mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}}
+\subsubsection[{Get\+Init\+Data}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Execution\+Result mts\+Socket\+Proxy\+Server\+::\+Get\+Init\+Data (
+\begin{DoxyParamCaption}
+\item[{std\+::string \&}]{output\+Arg\+Serialized, }
+\item[{mts\+Proxy\+Serializer $\ast$}]{serializer}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_socket_proxy_server_a08aa6a4f76551b78546ae525bde4f325}
+\hypertarget{classmts_socket_proxy_server_aac2d100483f25d78682b8137546a8c25}{}\index{mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}!Get\+Interface\+Description@{Get\+Interface\+Description}}
+\index{Get\+Interface\+Description@{Get\+Interface\+Description}!mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}}
+\subsubsection[{Get\+Interface\+Description}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Socket\+Proxy\+Server\+::\+Get\+Interface\+Description (
+\begin{DoxyParamCaption}
+\item[{mts\+Interface\+Provided\+Description \&}]{desc}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_socket_proxy_server_aac2d100483f25d78682b8137546a8c25}
+\hypertarget{classmts_socket_proxy_server_a53ec6e91f127a1a301cd6225bc92fdb4}{}\index{mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}!Get\+Serializer\+For\+Client@{Get\+Serializer\+For\+Client}}
+\index{Get\+Serializer\+For\+Client@{Get\+Serializer\+For\+Client}!mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}}
+\subsubsection[{Get\+Serializer\+For\+Client}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Proxy\+Serializer$\ast$ mts\+Socket\+Proxy\+Server\+::\+Get\+Serializer\+For\+Client (
+\begin{DoxyParamCaption}
+\item[{const {\bf osa\+I\+Pand\+Port} \&}]{ip\+\_\+port}
+\end{DoxyParamCaption}
+) const}\label{classmts_socket_proxy_server_a53ec6e91f127a1a301cd6225bc92fdb4}
+Return serializer for client identified by ip\+\_\+port; if serializer does not exist, create it. 
+\begin{DoxyParams}{Parameters}
+{\em ip\+\_\+port} & I\+P address and port number of client \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to serializer 
+\end{DoxyReturn}
+\hypertarget{classmts_socket_proxy_server_a2af72d89d2922a1c1eb711c035cd90bb}{}\index{mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}!Get\+Serializer\+For\+Current\+Client@{Get\+Serializer\+For\+Current\+Client}}
+\index{Get\+Serializer\+For\+Current\+Client@{Get\+Serializer\+For\+Current\+Client}!mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}}
+\subsubsection[{Get\+Serializer\+For\+Current\+Client}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Proxy\+Serializer$\ast$ mts\+Socket\+Proxy\+Server\+::\+Get\+Serializer\+For\+Current\+Client (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classmts_socket_proxy_server_a2af72d89d2922a1c1eb711c035cd90bb}
+Return serializer for current client (last one to send a message); if serializer does not exist, create it. \begin{DoxyReturn}{Returns}
+Pointer to serializer 
+\end{DoxyReturn}
+\hypertarget{classmts_socket_proxy_server_a484df52523d8ba237358a6cc56b8d67a}{}\index{mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}!Init@{Init}}
+\index{Init@{Init}!mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}}
+\subsubsection[{Init}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Socket\+Proxy\+Server\+::\+Init (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{component\+Name, }
+\item[{const std\+::string \&}]{provided\+Interface\+Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_socket_proxy_server_a484df52523d8ba237358a6cc56b8d67a}
+\hypertarget{classmts_socket_proxy_server_a10ea0b133dccf740841af2058b332ced}{}\index{mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}!Run@{Run}}
+\index{Run@{Run}!mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}}
+\subsubsection[{Run}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Socket\+Proxy\+Server\+::\+Run (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_socket_proxy_server_a10ea0b133dccf740841af2058b332ced}
+Pure virtual method that gets overloaded to run the actual task. 
+
+Implements \hyperlink{classmts_task_a20e18c9479cb650792456c32ee689834}{mts\+Task}.
+
+\hypertarget{classmts_socket_proxy_server_ac503a2964c4d1187775bf48a91708bbd}{}\index{mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}!Startup@{Startup}}
+\index{Startup@{Startup}!mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}}
+\subsubsection[{Startup}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Socket\+Proxy\+Server\+::\+Startup (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_socket_proxy_server_ac503a2964c4d1187775bf48a91708bbd}
+Virtual method that gets overloaded, and is run before the component is started. 
+
+Reimplemented from \hyperlink{classmts_component_aaf28f0262b44eb6866e10089a02fa6e4}{mts\+Component}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classmts_socket_proxy_server_acb24d470395fe5cad656863434c0ef52}{}\index{mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}!Client\+Map@{Client\+Map}}
+\index{Client\+Map@{Client\+Map}!mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}}
+\subsubsection[{Client\+Map}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Client\+Map\+Type} mts\+Socket\+Proxy\+Server\+::\+Client\+Map\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_socket_proxy_server_acb24d470395fe5cad656863434c0ef52}
+\hypertarget{classmts_socket_proxy_server_a4a78412a050d8cfad01e7738cc96dee4}{}\index{mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}!Event\+Generator\+Void\+Proxy\+Map@{Event\+Generator\+Void\+Proxy\+Map}}
+\index{Event\+Generator\+Void\+Proxy\+Map@{Event\+Generator\+Void\+Proxy\+Map}!mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}}
+\subsubsection[{Event\+Generator\+Void\+Proxy\+Map}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Event\+Generator\+Void\+Proxy\+Map\+Type} mts\+Socket\+Proxy\+Server\+::\+Event\+Generator\+Void\+Proxy\+Map\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_socket_proxy_server_a4a78412a050d8cfad01e7738cc96dee4}
+\hypertarget{classmts_socket_proxy_server_a8e4bb429d5685a620b5d1b9894092a1d}{}\index{mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}!Event\+Generator\+Write\+Proxy\+Map@{Event\+Generator\+Write\+Proxy\+Map}}
+\index{Event\+Generator\+Write\+Proxy\+Map@{Event\+Generator\+Write\+Proxy\+Map}!mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}}
+\subsubsection[{Event\+Generator\+Write\+Proxy\+Map}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Event\+Generator\+Write\+Proxy\+Map\+Type} mts\+Socket\+Proxy\+Server\+::\+Event\+Generator\+Write\+Proxy\+Map\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_socket_proxy_server_a8e4bb429d5685a620b5d1b9894092a1d}
+\hypertarget{classmts_socket_proxy_server_a1907551b9d6dd7bcb7e46668686d29e1}{}\index{mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}!Finished\+Events@{Finished\+Events}}
+\index{Finished\+Events@{Finished\+Events}!mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}}
+\subsubsection[{Finished\+Events}]{\setlength{\rightskip}{0pt plus 5cm}Finished\+Event\+List$\ast$ mts\+Socket\+Proxy\+Server\+::\+Finished\+Events\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_socket_proxy_server_a1907551b9d6dd7bcb7e46668686d29e1}
+\hypertarget{classmts_socket_proxy_server_ab63d24a71f84275695f79461be04b118}{}\index{mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}!Function\+Qualified\+Read\+Proxy\+Map@{Function\+Qualified\+Read\+Proxy\+Map}}
+\index{Function\+Qualified\+Read\+Proxy\+Map@{Function\+Qualified\+Read\+Proxy\+Map}!mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}}
+\subsubsection[{Function\+Qualified\+Read\+Proxy\+Map}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Function\+Qualified\+Read\+Proxy\+Map\+Type} mts\+Socket\+Proxy\+Server\+::\+Function\+Qualified\+Read\+Proxy\+Map\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_socket_proxy_server_ab63d24a71f84275695f79461be04b118}
+\hypertarget{classmts_socket_proxy_server_a8e126ba85100a6153f7e244b1cdc226f}{}\index{mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}!Function\+Read\+Proxy\+Map@{Function\+Read\+Proxy\+Map}}
+\index{Function\+Read\+Proxy\+Map@{Function\+Read\+Proxy\+Map}!mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}}
+\subsubsection[{Function\+Read\+Proxy\+Map}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Function\+Read\+Proxy\+Map\+Type} mts\+Socket\+Proxy\+Server\+::\+Function\+Read\+Proxy\+Map\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_socket_proxy_server_a8e126ba85100a6153f7e244b1cdc226f}
+\hypertarget{classmts_socket_proxy_server_a6bd22e4fe18232c34b81f2b7bf4f81c3}{}\index{mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}!Function\+Void\+Proxy\+Map@{Function\+Void\+Proxy\+Map}}
+\index{Function\+Void\+Proxy\+Map@{Function\+Void\+Proxy\+Map}!mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}}
+\subsubsection[{Function\+Void\+Proxy\+Map}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Function\+Void\+Proxy\+Map\+Type} mts\+Socket\+Proxy\+Server\+::\+Function\+Void\+Proxy\+Map\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_socket_proxy_server_a6bd22e4fe18232c34b81f2b7bf4f81c3}
+\hypertarget{classmts_socket_proxy_server_a13c785afdf7affb3f63ff3eb45560c19}{}\index{mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}!Function\+Void\+Return\+Proxy\+Map@{Function\+Void\+Return\+Proxy\+Map}}
+\index{Function\+Void\+Return\+Proxy\+Map@{Function\+Void\+Return\+Proxy\+Map}!mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}}
+\subsubsection[{Function\+Void\+Return\+Proxy\+Map}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Function\+Void\+Return\+Proxy\+Map\+Type} mts\+Socket\+Proxy\+Server\+::\+Function\+Void\+Return\+Proxy\+Map\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_socket_proxy_server_a13c785afdf7affb3f63ff3eb45560c19}
+\hypertarget{classmts_socket_proxy_server_a32e552baa11f56924b5877d67a65421c}{}\index{mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}!Function\+Write\+Proxy\+Map@{Function\+Write\+Proxy\+Map}}
+\index{Function\+Write\+Proxy\+Map@{Function\+Write\+Proxy\+Map}!mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}}
+\subsubsection[{Function\+Write\+Proxy\+Map}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Function\+Write\+Proxy\+Map\+Type} mts\+Socket\+Proxy\+Server\+::\+Function\+Write\+Proxy\+Map\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_socket_proxy_server_a32e552baa11f56924b5877d67a65421c}
+\hypertarget{classmts_socket_proxy_server_a7628f02b88924954ecbe2c242acce5ba}{}\index{mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}!Function\+Write\+Return\+Proxy\+Map@{Function\+Write\+Return\+Proxy\+Map}}
+\index{Function\+Write\+Return\+Proxy\+Map@{Function\+Write\+Return\+Proxy\+Map}!mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}}
+\subsubsection[{Function\+Write\+Return\+Proxy\+Map}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Function\+Write\+Return\+Proxy\+Map\+Type} mts\+Socket\+Proxy\+Server\+::\+Function\+Write\+Return\+Proxy\+Map\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_socket_proxy_server_a7628f02b88924954ecbe2c242acce5ba}
+\hypertarget{classmts_socket_proxy_server_a2e2a6206e203ad931a69637b8dcecd4e}{}\index{mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}!Interface\+Description@{Interface\+Description}}
+\index{Interface\+Description@{Interface\+Description}!mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}}
+\subsubsection[{Interface\+Description}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Interface\+Provided\+Description mts\+Socket\+Proxy\+Server\+::\+Interface\+Description\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_socket_proxy_server_a2e2a6206e203ad931a69637b8dcecd4e}
+\hypertarget{classmts_socket_proxy_server_a8d1606419800ffe082caf5a6805dde19}{}\index{mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}!Socket@{Socket}}
+\index{Socket@{Socket}!mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}}
+\subsubsection[{Socket}]{\setlength{\rightskip}{0pt plus 5cm}{\bf osa\+Socket} mts\+Socket\+Proxy\+Server\+::\+Socket\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_socket_proxy_server_a8d1606419800ffe082caf5a6805dde19}
+\hypertarget{classmts_socket_proxy_server_a033ddf4256700a5393055451d6f883a0}{}\index{mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}!Special\+Commands@{Special\+Commands}}
+\index{Special\+Commands@{Special\+Commands}!mts\+Socket\+Proxy\+Server@{mts\+Socket\+Proxy\+Server}}
+\subsubsection[{Special\+Commands}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf mts\+Command\+Base} $\ast$$>$ mts\+Socket\+Proxy\+Server\+::\+Special\+Commands\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_socket_proxy_server_a033ddf4256700a5393055451d6f883a0}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Multi\+Task/\hyperlink{mts_socket_proxy_server_8h}{mts\+Socket\+Proxy\+Server.\+h}\end{DoxyCompactItemize}

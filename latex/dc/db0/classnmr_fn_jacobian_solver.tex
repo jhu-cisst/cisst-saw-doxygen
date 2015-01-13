@@ -1,0 +1,186 @@
+\hypertarget{classnmr_fn_jacobian_solver}{}\section{nmr\+Fn\+Jacobian\+Solver Class Reference}
+\label{classnmr_fn_jacobian_solver}\index{nmr\+Fn\+Jacobian\+Solver@{nmr\+Fn\+Jacobian\+Solver}}
+
+
+{\ttfamily \#include $<$nmr\+Fn\+Jacobian\+Solver.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classnmr_fn_jacobian_solver_a42945a9762a21086dbed694fb2eae847}{nmr\+Fn\+Jacobian\+Solver} (void)
+\item 
+\hyperlink{classnmr_fn_jacobian_solver_a093c7f03d142c70a018d1fd197204e9a}{nmr\+Fn\+Jacobian\+Solver} (C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R n)
+\item 
+void \hyperlink{classnmr_fn_jacobian_solver_a24d51b6d33d9e14fe233dd3c5346bf97}{Allocate} (C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R n)
+\end{DoxyCompactItemize}
+{\bf }\par
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classnmr_fn_jacobian_solver_a4cb9401ac4fde1fbfedd87ca8ab3290a}{nmr\+Fn\+Jacobian\+Solver} (\hyperlink{classvct_dynamic_vector}{vct\+Dynamic\+Vector}$<$ C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&X)
+\end{DoxyCompactItemize}
+
+{\bf }\par
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classnmr_fn_jacobian_solver_a9c3cebdf5c983c51380cae418739cf34}{Allocate} (\hyperlink{classvct_dynamic_vector}{vct\+Dynamic\+Vector}$<$ C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&X)
+\end{DoxyCompactItemize}
+
+{\bf }\par
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$int \+\_\+\+\_\+instance\+Line\+F, class \+\_\+\+\_\+element\+Type\+F , int \+\_\+\+\_\+instance\+Line\+J, class \+\_\+\+\_\+element\+Type\+J $>$ }\\void \hyperlink{classnmr_fn_jacobian_solver_a085f5cb7f91c8a9e0ef8a69380e3edf4}{Solve} (\hyperlink{classnmr_call_back_function_f}{nmr\+Call\+Back\+Function\+F}$<$ \+\_\+\+\_\+instance\+Line\+F, \+\_\+\+\_\+element\+Type\+F $>$ \&call\+Back\+F, \hyperlink{classnmr_call_back_function_j}{nmr\+Call\+Back\+Function\+J}$<$ \+\_\+\+\_\+instance\+Line\+J, \+\_\+\+\_\+element\+Type\+J $>$ \&call\+Back\+J, \hyperlink{classvct_dynamic_vector}{vct\+Dynamic\+Vector}$<$ C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&X, \hyperlink{classvct_dynamic_vector}{vct\+Dynamic\+Vector}$<$ C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&F, \hyperlink{classvct_dynamic_vector}{vct\+Dynamic\+Vector}$<$ C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&J, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E tolerance)  throw (std\+::runtime\+\_\+error)
+\end{DoxyCompactItemize}
+
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R \hyperlink{classnmr_fn_jacobian_solver_a64a7c452930ff10113eebecb0557a6e5}{N}
+\item 
+C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R \hyperlink{classnmr_fn_jacobian_solver_a02cae10a0151e5937759820a96d87dc8}{Ldfjac}
+\item 
+C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E \hyperlink{classnmr_fn_jacobian_solver_a674186e39a43be30ebf759fc267feb64}{Tolerance}
+\item 
+C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R \hyperlink{classnmr_fn_jacobian_solver_afa9942d18f7d84f9fcb21f1d0e410fd3}{Info}
+\item 
+C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R \hyperlink{classnmr_fn_jacobian_solver_a35ca595e6f6bc84e3aed0ac91643356c}{Lwork}
+\item 
+\hyperlink{classvct_dynamic_vector}{vct\+Dynamic\+Vector}$<$ C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \hyperlink{classnmr_fn_jacobian_solver_aa3feee6872edf26213e56a7309aaa2bf}{Work}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Algorithm Fn\+: Solve nonlinear set of equations using Powell\textquotesingle{}s method The purpose of this class is to find a zero of a system of N nonlinear functions in N variables by a modification of the powell hybrid method. the user must provide a subroutine which calculates the functions and the jacobian.
+
+The data members of this class are\+:
+
+
+\begin{DoxyItemize}
+\item N\+: The number of variables and also the equations. N $>$= 0.
+\item Tolerance\+: A nonnegative input variable. Termination occurs when the algorithm estimates either that the relative error in the sum of squares is at most Tolerance or that the relative error between X and the solution is at most Tolerance. (Default set to 1.\+0e-\/6).
+\item Work\+: A working vector of length N$\ast$(N+13)/2
+\item L\+Work\+: Length of working array.
+\item Info\+: = info is an integer output variable. if the user has terminated execution, info is set to the (negative) value of Flag. see description of Function\+Pointer. otherwise, info is set as follows.
+
+info = 0 improper input parameters.
+
+info = 1 algorithm estimates that the relative error between x and the solution is at most tol.
+
+info = 2 number of calls to user function with iflag = 1 has reached 100$\ast$(n+1).
+
+info = 3 tol is too small. no further improvement in the approximate solution x is possible.
+
+info = 4 iteration is not making good progress.
+\end{DoxyItemize}
+
+The input/output from this class is\+:
+\begin{DoxyItemize}
+\item X\+: On entry, the inital estimate of solution vector. On exit, final estimate of solution vector.
+\item call\+Back\+: Is object of type nmr\+Call\+Back\+Fn\+Solver used to supply the user method. The user method which belongs to a user defined class \textquotesingle{}Cfoo\textquotesingle{} has the following definition int Cfoo\+::\+Mbar (\hyperlink{classvct_dynamic_vector_ref}{vct\+Dynamic\+Vector\+Ref$<$double$>$} \&X, \hyperlink{classvct_dynamic_vector_ref}{vct\+Dynamic\+Vector\+Ref$<$double$>$} \&F, \hyperlink{classvct_dynamic_matrix_ref}{vct\+Dynamic\+Matrix\+Ref$<$double$>$} \&J, long int \&Flag) if Flag = 1 calculate the functions at X and return this vector in F. do not alter J. if Flag = 2 calculate the jacobian at X and return this matrix in J. do not alter F. the value of Flag should not be changed by Mbar unless the user wants to terminate execution of Solver. in this case set Flag to a negative integer.
+\end{DoxyItemize}
+
+\begin{DoxyVerb}  The solver calls this method when needed to obtain value for function for
+  a given variable values X.
+
+  The following constructor can be used to contruct the nmrCallBackFnSolver object
+  required to be passed to the Solve() method. This object needs to be created
+  only once per given set of nonlinear functions to be minized.
+      nmrCallBackFnSolver<nmrUNIQUE_IDENTIFIER_LINE, Cfoo> callBackObject(this, &Cfoo::Mbar);
+\end{DoxyVerb}
+
+
+\begin{DoxyNote}{Note}
+This code relies on the E\+R\+C C\+I\+S\+S\+T cnetlib library. Since cnetlib is optional, make sure that C\+I\+S\+S\+T\+\_\+\+H\+A\+S\+\_\+\+C\+N\+E\+T\+L\+I\+B has been turned O\+N during the configuration with C\+Make. 
+\end{DoxyNote}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classnmr_fn_jacobian_solver_a42945a9762a21086dbed694fb2eae847}{}\index{nmr\+Fn\+Jacobian\+Solver@{nmr\+Fn\+Jacobian\+Solver}!nmr\+Fn\+Jacobian\+Solver@{nmr\+Fn\+Jacobian\+Solver}}
+\index{nmr\+Fn\+Jacobian\+Solver@{nmr\+Fn\+Jacobian\+Solver}!nmr\+Fn\+Jacobian\+Solver@{nmr\+Fn\+Jacobian\+Solver}}
+\subsubsection[{nmr\+Fn\+Jacobian\+Solver}]{\setlength{\rightskip}{0pt plus 5cm}nmr\+Fn\+Jacobian\+Solver\+::nmr\+Fn\+Jacobian\+Solver (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classnmr_fn_jacobian_solver_a42945a9762a21086dbed694fb2eae847}
+Default constructor. This constructor doesn\textquotesingle{}t allocate any memory. If you use this constructor, you will need to use one of the \hyperlink{classnmr_fn_jacobian_solver_a24d51b6d33d9e14fe233dd3c5346bf97}{Allocate()} methods before you can use the Solve method. \hypertarget{classnmr_fn_jacobian_solver_a093c7f03d142c70a018d1fd197204e9a}{}\index{nmr\+Fn\+Jacobian\+Solver@{nmr\+Fn\+Jacobian\+Solver}!nmr\+Fn\+Jacobian\+Solver@{nmr\+Fn\+Jacobian\+Solver}}
+\index{nmr\+Fn\+Jacobian\+Solver@{nmr\+Fn\+Jacobian\+Solver}!nmr\+Fn\+Jacobian\+Solver@{nmr\+Fn\+Jacobian\+Solver}}
+\subsubsection[{nmr\+Fn\+Jacobian\+Solver}]{\setlength{\rightskip}{0pt plus 5cm}nmr\+Fn\+Jacobian\+Solver\+::nmr\+Fn\+Jacobian\+Solver (
+\begin{DoxyParamCaption}
+\item[{C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R}]{n}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classnmr_fn_jacobian_solver_a093c7f03d142c70a018d1fd197204e9a}
+Constructor with memory allocation. This constructor allocates the memory based on N. It relies on the method \hyperlink{classnmr_fn_jacobian_solver_a24d51b6d33d9e14fe233dd3c5346bf97}{Allocate()}. The next call to the \hyperlink{classnmr_fn_jacobian_solver_a085f5cb7f91c8a9e0ef8a69380e3edf4}{Solve()} method will check that the parameters match the dimension.
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & Number of variables This order will be used for the output as well. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classnmr_fn_jacobian_solver_a4cb9401ac4fde1fbfedd87ca8ab3290a}{}\index{nmr\+Fn\+Jacobian\+Solver@{nmr\+Fn\+Jacobian\+Solver}!nmr\+Fn\+Jacobian\+Solver@{nmr\+Fn\+Jacobian\+Solver}}
+\index{nmr\+Fn\+Jacobian\+Solver@{nmr\+Fn\+Jacobian\+Solver}!nmr\+Fn\+Jacobian\+Solver@{nmr\+Fn\+Jacobian\+Solver}}
+\subsubsection[{nmr\+Fn\+Jacobian\+Solver}]{\setlength{\rightskip}{0pt plus 5cm}nmr\+Fn\+Jacobian\+Solver\+::nmr\+Fn\+Jacobian\+Solver (
+\begin{DoxyParamCaption}
+\item[{{\bf vct\+Dynamic\+Vector}$<$ C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&}]{X}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classnmr_fn_jacobian_solver_a4cb9401ac4fde1fbfedd87ca8ab3290a}
+Constructor with memory allocation. This constructor allocates the memory based on the actual input of the \hyperlink{classnmr_fn_jacobian_solver_a085f5cb7f91c8a9e0ef8a69380e3edf4}{Solve()} method. It relies on the method \hyperlink{classnmr_fn_jacobian_solver_a24d51b6d33d9e14fe233dd3c5346bf97}{Allocate()}. The next call to the \hyperlink{classnmr_fn_jacobian_solver_a085f5cb7f91c8a9e0ef8a69380e3edf4}{Solve()} method will check that the parameters match the dimension and storage order. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classnmr_fn_jacobian_solver_a24d51b6d33d9e14fe233dd3c5346bf97}{}\index{nmr\+Fn\+Jacobian\+Solver@{nmr\+Fn\+Jacobian\+Solver}!Allocate@{Allocate}}
+\index{Allocate@{Allocate}!nmr\+Fn\+Jacobian\+Solver@{nmr\+Fn\+Jacobian\+Solver}}
+\subsubsection[{Allocate}]{\setlength{\rightskip}{0pt plus 5cm}void nmr\+Fn\+Jacobian\+Solver\+::\+Allocate (
+\begin{DoxyParamCaption}
+\item[{C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R}]{n}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classnmr_fn_jacobian_solver_a24d51b6d33d9e14fe233dd3c5346bf97}
+This method allocates the memory based on N. The next call to the \hyperlink{classnmr_fn_jacobian_solver_a085f5cb7f91c8a9e0ef8a69380e3edf4}{Solve()} method will check that the parameters match the dimension.
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & Number of variables \\
+\hline
+\end{DoxyParams}
+\hypertarget{classnmr_fn_jacobian_solver_a9c3cebdf5c983c51380cae418739cf34}{}\index{nmr\+Fn\+Jacobian\+Solver@{nmr\+Fn\+Jacobian\+Solver}!Allocate@{Allocate}}
+\index{Allocate@{Allocate}!nmr\+Fn\+Jacobian\+Solver@{nmr\+Fn\+Jacobian\+Solver}}
+\subsubsection[{Allocate}]{\setlength{\rightskip}{0pt plus 5cm}void nmr\+Fn\+Jacobian\+Solver\+::\+Allocate (
+\begin{DoxyParamCaption}
+\item[{{\bf vct\+Dynamic\+Vector}$<$ C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&}]{X}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classnmr_fn_jacobian_solver_a9c3cebdf5c983c51380cae418739cf34}
+Allocate memory to solve this problem. This method provides a convenient way to extract the required sizes from the input containers. The next call to the \hyperlink{classnmr_fn_jacobian_solver_a085f5cb7f91c8a9e0ef8a69380e3edf4}{Solve()} method will check that the parameters match the dimension. \hypertarget{classnmr_fn_jacobian_solver_a085f5cb7f91c8a9e0ef8a69380e3edf4}{}\index{nmr\+Fn\+Jacobian\+Solver@{nmr\+Fn\+Jacobian\+Solver}!Solve@{Solve}}
+\index{Solve@{Solve}!nmr\+Fn\+Jacobian\+Solver@{nmr\+Fn\+Jacobian\+Solver}}
+\subsubsection[{Solve}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int \+\_\+\+\_\+instance\+Line\+F, class \+\_\+\+\_\+element\+Type\+F , int \+\_\+\+\_\+instance\+Line\+J, class \+\_\+\+\_\+element\+Type\+J $>$ void nmr\+Fn\+Jacobian\+Solver\+::\+Solve (
+\begin{DoxyParamCaption}
+\item[{{\bf nmr\+Call\+Back\+Function\+F}$<$ \+\_\+\+\_\+instance\+Line\+F, \+\_\+\+\_\+element\+Type\+F $>$ \&}]{call\+Back\+F, }
+\item[{{\bf nmr\+Call\+Back\+Function\+J}$<$ \+\_\+\+\_\+instance\+Line\+J, \+\_\+\+\_\+element\+Type\+J $>$ \&}]{call\+Back\+J, }
+\item[{{\bf vct\+Dynamic\+Vector}$<$ C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&}]{X, }
+\item[{{\bf vct\+Dynamic\+Vector}$<$ C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&}]{F, }
+\item[{{\bf vct\+Dynamic\+Vector}$<$ C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&}]{J, }
+\item[{C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E}]{tolerance}
+\end{DoxyParamCaption}
+) throw  std\+::runtime\+\_\+error) \hspace{0.3cm}{\ttfamily [inline]}}\label{classnmr_fn_jacobian_solver_a085f5cb7f91c8a9e0ef8a69380e3edf4}
+This computes the solves nonlinear equations problem invloving N functions in N variables. On input, X contains the starting point, On output, X contains the final estimate F contains the final values 
+
+\subsection{Member Data Documentation}
+\hypertarget{classnmr_fn_jacobian_solver_afa9942d18f7d84f9fcb21f1d0e410fd3}{}\index{nmr\+Fn\+Jacobian\+Solver@{nmr\+Fn\+Jacobian\+Solver}!Info@{Info}}
+\index{Info@{Info}!nmr\+Fn\+Jacobian\+Solver@{nmr\+Fn\+Jacobian\+Solver}}
+\subsubsection[{Info}]{\setlength{\rightskip}{0pt plus 5cm}C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R nmr\+Fn\+Jacobian\+Solver\+::\+Info\hspace{0.3cm}{\ttfamily [protected]}}\label{classnmr_fn_jacobian_solver_afa9942d18f7d84f9fcb21f1d0e410fd3}
+\hypertarget{classnmr_fn_jacobian_solver_a02cae10a0151e5937759820a96d87dc8}{}\index{nmr\+Fn\+Jacobian\+Solver@{nmr\+Fn\+Jacobian\+Solver}!Ldfjac@{Ldfjac}}
+\index{Ldfjac@{Ldfjac}!nmr\+Fn\+Jacobian\+Solver@{nmr\+Fn\+Jacobian\+Solver}}
+\subsubsection[{Ldfjac}]{\setlength{\rightskip}{0pt plus 5cm}C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R nmr\+Fn\+Jacobian\+Solver\+::\+Ldfjac\hspace{0.3cm}{\ttfamily [protected]}}\label{classnmr_fn_jacobian_solver_a02cae10a0151e5937759820a96d87dc8}
+\hypertarget{classnmr_fn_jacobian_solver_a35ca595e6f6bc84e3aed0ac91643356c}{}\index{nmr\+Fn\+Jacobian\+Solver@{nmr\+Fn\+Jacobian\+Solver}!Lwork@{Lwork}}
+\index{Lwork@{Lwork}!nmr\+Fn\+Jacobian\+Solver@{nmr\+Fn\+Jacobian\+Solver}}
+\subsubsection[{Lwork}]{\setlength{\rightskip}{0pt plus 5cm}C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R nmr\+Fn\+Jacobian\+Solver\+::\+Lwork\hspace{0.3cm}{\ttfamily [protected]}}\label{classnmr_fn_jacobian_solver_a35ca595e6f6bc84e3aed0ac91643356c}
+\hypertarget{classnmr_fn_jacobian_solver_a64a7c452930ff10113eebecb0557a6e5}{}\index{nmr\+Fn\+Jacobian\+Solver@{nmr\+Fn\+Jacobian\+Solver}!N@{N}}
+\index{N@{N}!nmr\+Fn\+Jacobian\+Solver@{nmr\+Fn\+Jacobian\+Solver}}
+\subsubsection[{N}]{\setlength{\rightskip}{0pt plus 5cm}C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R nmr\+Fn\+Jacobian\+Solver\+::\+N\hspace{0.3cm}{\ttfamily [protected]}}\label{classnmr_fn_jacobian_solver_a64a7c452930ff10113eebecb0557a6e5}
+\hypertarget{classnmr_fn_jacobian_solver_a674186e39a43be30ebf759fc267feb64}{}\index{nmr\+Fn\+Jacobian\+Solver@{nmr\+Fn\+Jacobian\+Solver}!Tolerance@{Tolerance}}
+\index{Tolerance@{Tolerance}!nmr\+Fn\+Jacobian\+Solver@{nmr\+Fn\+Jacobian\+Solver}}
+\subsubsection[{Tolerance}]{\setlength{\rightskip}{0pt plus 5cm}C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E nmr\+Fn\+Jacobian\+Solver\+::\+Tolerance\hspace{0.3cm}{\ttfamily [protected]}}\label{classnmr_fn_jacobian_solver_a674186e39a43be30ebf759fc267feb64}
+\hypertarget{classnmr_fn_jacobian_solver_aa3feee6872edf26213e56a7309aaa2bf}{}\index{nmr\+Fn\+Jacobian\+Solver@{nmr\+Fn\+Jacobian\+Solver}!Work@{Work}}
+\index{Work@{Work}!nmr\+Fn\+Jacobian\+Solver@{nmr\+Fn\+Jacobian\+Solver}}
+\subsubsection[{Work}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Dynamic\+Vector}$<$C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E$>$ nmr\+Fn\+Jacobian\+Solver\+::\+Work\hspace{0.3cm}{\ttfamily [protected]}}\label{classnmr_fn_jacobian_solver_aa3feee6872edf26213e56a7309aaa2bf}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Numerical/\hyperlink{nmr_fn_jacobian_solver_8h}{nmr\+Fn\+Jacobian\+Solver.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,81 @@
+\hypertarget{classvct_dynamic_matrix_loop_engines}{}\section{vct\+Dynamic\+Matrix\+Loop\+Engines Class Reference}
+\label{classvct_dynamic_matrix_loop_engines}\index{vct\+Dynamic\+Matrix\+Loop\+Engines@{vct\+Dynamic\+Matrix\+Loop\+Engines}}
+
+
+Container class for the dynamic matrix engines.  
+
+
+
+
+{\ttfamily \#include $<$vct\+Dynamic\+Matrix\+Loop\+Engines.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classvct_dynamic_matrix_loop_engines_1_1_min_and_max}{Min\+And\+Max}
+\item 
+class \hyperlink{classvct_dynamic_matrix_loop_engines_1_1_mio}{Mio}
+\item 
+class \hyperlink{classvct_dynamic_matrix_loop_engines_1_1_mio_mi}{Mio\+Mi}
+\item 
+class \hyperlink{classvct_dynamic_matrix_loop_engines_1_1_mio_mi_mi}{Mio\+Mi\+Mi}
+\begin{DoxyCompactList}\small\item\em Implement operation of the form $m_{io} = op_{io}(m_{io}, op_{mm}(m_{i1}, m_{i2}))$ for fixed size matrices. \end{DoxyCompactList}\item 
+class \hyperlink{classvct_dynamic_matrix_loop_engines_1_1_mio_si}{Mio\+Si}
+\item 
+class \hyperlink{classvct_dynamic_matrix_loop_engines_1_1_mio_si_mi}{Mio\+Si\+Mi}
+\begin{DoxyCompactList}\small\item\em Implement operation of the form $m_{io} = op_{io}(m_{io}, op_{sm}(s, m_i))$ for fixed size matrices. \end{DoxyCompactList}\item 
+class \hyperlink{classvct_dynamic_matrix_loop_engines_1_1_mo_mi}{Mo\+Mi}
+\item 
+class \hyperlink{classvct_dynamic_matrix_loop_engines_1_1_mo_mi_mi}{Mo\+Mi\+Mi}
+\item 
+class \hyperlink{classvct_dynamic_matrix_loop_engines_1_1_mo_mi_si}{Mo\+Mi\+Si}
+\item 
+class \hyperlink{classvct_dynamic_matrix_loop_engines_1_1_mo_si_mi}{Mo\+Si\+Mi}
+\item 
+class \hyperlink{classvct_dynamic_matrix_loop_engines_1_1_product}{Product}
+\item 
+class \hyperlink{classvct_dynamic_matrix_loop_engines_1_1_select_rows_by_index}{Select\+Rows\+By\+Index}
+\item 
+class \hyperlink{classvct_dynamic_matrix_loop_engines_1_1_so_mi}{So\+Mi}
+\item 
+class \hyperlink{classvct_dynamic_matrix_loop_engines_1_1_so_mi_mi}{So\+Mi\+Mi}
+\item 
+class \hyperlink{classvct_dynamic_matrix_loop_engines_1_1_so_mi_si}{So\+Mi\+Si}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{classvct_dynamic_matrix_loop_engines_a51089dd3e50ade08ff00100f3f744553}{Throw\+Size\+Mismatch\+Exception} (void)  throw (std\+::runtime\+\_\+error)
+\item 
+static void \hyperlink{classvct_dynamic_matrix_loop_engines_aecf08e55d6f6cfdd1e9fe4aa91181a21}{Throw\+Shared\+Pointers\+Exception} (void)  throw (std\+::runtime\+\_\+error)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Container class for the dynamic matrix engines. 
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classvct_dynamic_matrix_loop_engines_1_1_mo_mi_mi}{Mo\+Mi\+Mi} \hyperlink{classvct_dynamic_matrix_loop_engines_1_1_mio_mi}{Mio\+Mi} \hyperlink{classvct_dynamic_matrix_loop_engines_1_1_mo_mi_si}{Mo\+Mi\+Si} \hyperlink{classvct_dynamic_matrix_loop_engines_1_1_mo_si_mi}{Mo\+Si\+Mi} \hyperlink{classvct_dynamic_matrix_loop_engines_1_1_mio_si}{Mio\+Si} \hyperlink{classvct_dynamic_matrix_loop_engines_1_1_mo_mi}{Mo\+Mi} \hyperlink{classvct_dynamic_matrix_loop_engines_1_1_mio}{Mio} \hyperlink{classvct_dynamic_matrix_loop_engines_1_1_so_mi}{So\+Mi} \hyperlink{classvct_dynamic_matrix_loop_engines_1_1_so_mi_mi}{So\+Mi\+Mi} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classvct_dynamic_matrix_loop_engines_aecf08e55d6f6cfdd1e9fe4aa91181a21}{}\index{vct\+Dynamic\+Matrix\+Loop\+Engines@{vct\+Dynamic\+Matrix\+Loop\+Engines}!Throw\+Shared\+Pointers\+Exception@{Throw\+Shared\+Pointers\+Exception}}
+\index{Throw\+Shared\+Pointers\+Exception@{Throw\+Shared\+Pointers\+Exception}!vct\+Dynamic\+Matrix\+Loop\+Engines@{vct\+Dynamic\+Matrix\+Loop\+Engines}}
+\subsubsection[{Throw\+Shared\+Pointers\+Exception}]{\setlength{\rightskip}{0pt plus 5cm}static void vct\+Dynamic\+Matrix\+Loop\+Engines\+::\+Throw\+Shared\+Pointers\+Exception (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) throw  std\+::runtime\+\_\+error) \hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classvct_dynamic_matrix_loop_engines_aecf08e55d6f6cfdd1e9fe4aa91181a21}
+Helper function to throw an exception whenever the output has the same base pointer as the output. This enforces that a standard message is sent. \hypertarget{classvct_dynamic_matrix_loop_engines_a51089dd3e50ade08ff00100f3f744553}{}\index{vct\+Dynamic\+Matrix\+Loop\+Engines@{vct\+Dynamic\+Matrix\+Loop\+Engines}!Throw\+Size\+Mismatch\+Exception@{Throw\+Size\+Mismatch\+Exception}}
+\index{Throw\+Size\+Mismatch\+Exception@{Throw\+Size\+Mismatch\+Exception}!vct\+Dynamic\+Matrix\+Loop\+Engines@{vct\+Dynamic\+Matrix\+Loop\+Engines}}
+\subsubsection[{Throw\+Size\+Mismatch\+Exception}]{\setlength{\rightskip}{0pt plus 5cm}static void vct\+Dynamic\+Matrix\+Loop\+Engines\+::\+Throw\+Size\+Mismatch\+Exception (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) throw  std\+::runtime\+\_\+error) \hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classvct_dynamic_matrix_loop_engines_a51089dd3e50ade08ff00100f3f744553}
+Helper function to throw an exception whenever sizes mismatch. This enforces that a standard message is sent. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Vector/\hyperlink{vct_dynamic_matrix_loop_engines_8h}{vct\+Dynamic\+Matrix\+Loop\+Engines.\+h}\end{DoxyCompactItemize}

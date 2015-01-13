@@ -1,0 +1,93 @@
+\hypertarget{classnmr_is_orthonormal_fixed_size_data}{}\section{nmr\+Is\+Orthonormal\+Fixed\+Size\+Data$<$ \+\_\+element\+Type, \+\_\+rows $>$ Class Template Reference}
+\label{classnmr_is_orthonormal_fixed_size_data}\index{nmr\+Is\+Orthonormal\+Fixed\+Size\+Data$<$ \+\_\+element\+Type, \+\_\+rows $>$@{nmr\+Is\+Orthonormal\+Fixed\+Size\+Data$<$ \+\_\+element\+Type, \+\_\+rows $>$}}
+
+
+Data for \hyperlink{nmr_is_orthonormal_8h_acf0ff1e2dbe0c988db04d9db1e2e7697}{nmr\+Is\+Orthonormal} (Fixed size).  
+
+
+
+
+{\ttfamily \#include $<$nmr\+Is\+Orthonormal.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classnmr_is_orthonormal_fixed_size_data_1_1_friend}{Friend}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \hyperlink{group__cisst_numerical_gga664e774b6eb2e7cdc1dd1c0c09bbce8aaeabb21a3e2e6f96c3895dc03d022f297}{S\+I\+Z\+E} = \+\_\+rows $\ast$ \+\_\+rows
+ \}
+\item 
+typedef \hyperlink{classvct_fixed_size_vector}{vct\+Fixed\+Size\+Vector}$<$ \+\_\+element\+Type, \hyperlink{group__cisst_numerical_gga664e774b6eb2e7cdc1dd1c0c09bbce8aaeabb21a3e2e6f96c3895dc03d022f297}{S\+I\+Z\+E} $>$ \hyperlink{classnmr_is_orthonormal_fixed_size_data_a9c2423d8da4e6400b83e1425454bbbe3}{Vector\+Type\+Workspace}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classnmr_is_orthonormal_fixed_size_data_aa9468e75b1a0437d067e1bafd9cbee0e}{nmr\+Is\+Orthonormal\+Fixed\+Size\+Data} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classnmr_is_orthonormal_fixed_size_data_a9c2423d8da4e6400b83e1425454bbbe3}{Vector\+Type\+Workspace} \hyperlink{classnmr_is_orthonormal_fixed_size_data_a482c2819e75c1c6fe359e7b22b6d1a63}{Workspace\+Member}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classnmr_is_orthonormal_fixed_size_data_a7f8321d57e81bc613d5dbef3410ba70e}{Friend}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class \+\_\+element\+Type, vct\+::size\+\_\+type \+\_\+rows$>$class nmr\+Is\+Orthonormal\+Fixed\+Size\+Data$<$ \+\_\+element\+Type, \+\_\+rows $>$}
+
+Data for \hyperlink{nmr_is_orthonormal_8h_acf0ff1e2dbe0c988db04d9db1e2e7697}{nmr\+Is\+Orthonormal} (Fixed size). 
+
+This class is similar to \hyperlink{classnmr_is_orthonormal_dynamic_data}{nmr\+Is\+Orthonormal\+Dynamic\+Data} except that it is dedicated to fixed size containers. While \hyperlink{classnmr_is_orthonormal_dynamic_data}{nmr\+Is\+Orthonormal\+Dynamic\+Data} is designed to be modified dynamically, \hyperlink{classnmr_is_orthonormal_fixed_size_data}{nmr\+Is\+Orthonormal\+Fixed\+Size\+Data} is fully defined at compilation time using template parameters. The required parameter is the dimension of the input matrix\+: 
+\begin{DoxyCode}
+\hyperlink{classnmr_is_orthonormal_fixed_size_data}{nmrIsOrthonormalFixedSizeData<4>} data;
+\end{DoxyCode}
+
+
+\begin{DoxyNote}{Note}
+An object of type \hyperlink{classnmr_is_orthonormal_fixed_size_data}{nmr\+Is\+Orthonormal\+Fixed\+Size\+Data} contains the memory required for the output and the workspace, i.\+e. its actual size will be equal to the memory required to store the workspace.
+
+There is no dynamic memory allocation (no {\ttfamily new}) and the memory can not be used by reference. To use memory by reference, one must use \hyperlink{classnmr_is_orthonormal_dynamic_data}{nmr\+Is\+Orthonormal\+Dynamic\+Data} with \hyperlink{classvct_dynamic_matrix_ref}{vct\+Dynamic\+Matrix\+Ref} and \hyperlink{classvct_dynamic_vector_ref}{vct\+Dynamic\+Vector\+Ref} (these dynamic references can actually be used to overlay a fixed size container).
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{nmr_is_orthonormal_8h_acf0ff1e2dbe0c988db04d9db1e2e7697}{nmr\+Is\+Orthonormal} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classnmr_is_orthonormal_fixed_size_data_a9c2423d8da4e6400b83e1425454bbbe3}{}\index{nmr\+Is\+Orthonormal\+Fixed\+Size\+Data@{nmr\+Is\+Orthonormal\+Fixed\+Size\+Data}!Vector\+Type\+Workspace@{Vector\+Type\+Workspace}}
+\index{Vector\+Type\+Workspace@{Vector\+Type\+Workspace}!nmr\+Is\+Orthonormal\+Fixed\+Size\+Data@{nmr\+Is\+Orthonormal\+Fixed\+Size\+Data}}
+\subsubsection[{Vector\+Type\+Workspace}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type, vct\+::size\+\_\+type \+\_\+rows$>$ typedef {\bf vct\+Fixed\+Size\+Vector}$<$\+\_\+element\+Type, {\bf S\+I\+Z\+E}$>$ {\bf nmr\+Is\+Orthonormal\+Fixed\+Size\+Data}$<$ \+\_\+element\+Type, \+\_\+rows $>$\+::{\bf Vector\+Type\+Workspace}}\label{classnmr_is_orthonormal_fixed_size_data_a9c2423d8da4e6400b83e1425454bbbe3}
+Type of the workspace vector (size and storage order computed from the data object template parameters). 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classnmr_is_orthonormal_fixed_size_data_aa9468e75b1a0437d067e1bafd9cbee0e}{}\index{nmr\+Is\+Orthonormal\+Fixed\+Size\+Data@{nmr\+Is\+Orthonormal\+Fixed\+Size\+Data}!nmr\+Is\+Orthonormal\+Fixed\+Size\+Data@{nmr\+Is\+Orthonormal\+Fixed\+Size\+Data}}
+\index{nmr\+Is\+Orthonormal\+Fixed\+Size\+Data@{nmr\+Is\+Orthonormal\+Fixed\+Size\+Data}!nmr\+Is\+Orthonormal\+Fixed\+Size\+Data@{nmr\+Is\+Orthonormal\+Fixed\+Size\+Data}}
+\subsubsection[{nmr\+Is\+Orthonormal\+Fixed\+Size\+Data}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type, vct\+::size\+\_\+type \+\_\+rows$>$ {\bf nmr\+Is\+Orthonormal\+Fixed\+Size\+Data}$<$ \+\_\+element\+Type, \+\_\+rows $>$\+::{\bf nmr\+Is\+Orthonormal\+Fixed\+Size\+Data} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classnmr_is_orthonormal_fixed_size_data_aa9468e75b1a0437d067e1bafd9cbee0e}
+Default constructor. Does nothing since the allocation is performed on the stack. 
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classnmr_is_orthonormal_fixed_size_data_a7f8321d57e81bc613d5dbef3410ba70e}{}\index{nmr\+Is\+Orthonormal\+Fixed\+Size\+Data@{nmr\+Is\+Orthonormal\+Fixed\+Size\+Data}!Friend@{Friend}}
+\index{Friend@{Friend}!nmr\+Is\+Orthonormal\+Fixed\+Size\+Data@{nmr\+Is\+Orthonormal\+Fixed\+Size\+Data}}
+\subsubsection[{Friend}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type, vct\+::size\+\_\+type \+\_\+rows$>$ friend class {\bf Friend}\hspace{0.3cm}{\ttfamily [friend]}}\label{classnmr_is_orthonormal_fixed_size_data_a7f8321d57e81bc613d5dbef3410ba70e}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classnmr_is_orthonormal_fixed_size_data_a482c2819e75c1c6fe359e7b22b6d1a63}{}\index{nmr\+Is\+Orthonormal\+Fixed\+Size\+Data@{nmr\+Is\+Orthonormal\+Fixed\+Size\+Data}!Workspace\+Member@{Workspace\+Member}}
+\index{Workspace\+Member@{Workspace\+Member}!nmr\+Is\+Orthonormal\+Fixed\+Size\+Data@{nmr\+Is\+Orthonormal\+Fixed\+Size\+Data}}
+\subsubsection[{Workspace\+Member}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type, vct\+::size\+\_\+type \+\_\+rows$>$ {\bf Vector\+Type\+Workspace} {\bf nmr\+Is\+Orthonormal\+Fixed\+Size\+Data}$<$ \+\_\+element\+Type, \+\_\+rows $>$\+::Workspace\+Member\hspace{0.3cm}{\ttfamily [protected]}}\label{classnmr_is_orthonormal_fixed_size_data_a482c2819e75c1c6fe359e7b22b6d1a63}
+Data member used to store the workspace vector. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Numerical/\hyperlink{nmr_is_orthonormal_8h}{nmr\+Is\+Orthonormal.\+h}\end{DoxyCompactItemize}

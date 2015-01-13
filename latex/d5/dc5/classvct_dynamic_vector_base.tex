@@ -1,0 +1,1474 @@
+\hypertarget{classvct_dynamic_vector_base}{}\section{vct\+Dynamic\+Vector\+Base$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$ Class Template Reference}
+\label{classvct_dynamic_vector_base}\index{vct\+Dynamic\+Vector\+Base$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$@{vct\+Dynamic\+Vector\+Base$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$}}
+
+
+{\ttfamily \#include $<$vct\+Dynamic\+Vector\+Base.\+h$>$}
+
+Inheritance diagram for vct\+Dynamic\+Vector\+Base$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{d5/dc5/classvct_dynamic_vector_base}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classvct_dynamic_vector_base_1_1_subvector}{Subvector}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classvct_dynamic_vector_base}{vct\+Dynamic\+Vector\+Base} \hyperlink{classvct_dynamic_vector_base_ae4c00cc291df57593d6a73c838ae897a}{This\+Type}
+\item 
+typedef \hyperlink{classvct_dynamic_const_vector_base}{vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$ \hyperlink{classvct_dynamic_vector_base_a773a8005371ea8d078a842eff2cb719f}{Base\+Type}
+\item 
+typedef \+\_\+vector\+Owner\+Type \hyperlink{classvct_dynamic_vector_base_a563d79f5b4dd71f037192fe2961b48eb}{Vector\+Owner\+Type}
+\item 
+typedef \hyperlink{classvct_dynamic_const_vector_base_aaed13bc31a9ee4971bad765ba5c2c811}{Base\+Type\+::iterator} \hyperlink{classvct_dynamic_vector_base_a5f711892fff6a5b01aa014db476f3084}{iterator}
+\item 
+typedef \hyperlink{classvct_dynamic_const_vector_base_af10d167259519ceeca9276da3435e193}{Base\+Type\+::reverse\+\_\+iterator} \hyperlink{classvct_dynamic_vector_base_ad569da2c70b9f9468f466f59535d53c7}{reverse\+\_\+iterator}
+\item 
+typedef \hyperlink{classvct_dynamic_const_vector_base_ad04d1e54698ac5e244d15dfacd0e603c}{Base\+Type\+::const\+\_\+iterator} \hyperlink{classvct_dynamic_vector_base_adf3a8f5fcdecc355b9930fa2166e3fb6}{const\+\_\+iterator}
+\item 
+typedef \hyperlink{classvct_dynamic_const_vector_base_aadfcc99550b376238b6c793c17d19ca5}{Base\+Type\+::const\+\_\+reverse\+\_\+iterator} \hyperlink{classvct_dynamic_vector_base_a19db937e3f8b2fdc7c7d6e720c2bc9b3}{const\+\_\+reverse\+\_\+iterator}
+\item 
+typedef \hyperlink{classvct_dynamic_const_vector_base_a010ba1a93ccebf494be5a188f923eb43}{Base\+Type\+::\+Copy\+Type} \hyperlink{classvct_dynamic_vector_base_a62fcc6341849207c5273566d0bce3cf5}{Copy\+Type}
+\item 
+typedef \hyperlink{classvct_dynamic_const_vector_base_a8ffd0619835fb50d43c07502d231e6c8}{Base\+Type\+::\+Vector\+Value\+Type} \hyperlink{classvct_dynamic_vector_base_ad3db797a792ca2ced6433a42b0fa54d6}{Vector\+Value\+Type}
+\item 
+typedef class \hyperlink{classcmn_type_traits}{cmn\+Type\+Traits}$<$ value\+\_\+type $>$ \hyperlink{classvct_dynamic_vector_base_ae5ebb885e67454fa18cb8101f1acc8dd}{Type\+Traits}
+\item 
+typedef \hyperlink{classcmn_type_traits_a824cf785b2d249f59bf5d9f03c6e8049}{Type\+Traits\+::\+Va\+Arg\+Promotion} \hyperlink{classvct_dynamic_vector_base_a74f36531adfd7ec68ac6500176134156}{Element\+Va\+Arg\+Promotion}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classvct_dynamic_vector_base_a002c5a49abe5a7d4f4480c882b63739d}{V\+C\+T\+\_\+\+C\+O\+N\+T\+A\+I\+N\+E\+R\+\_\+\+T\+R\+A\+I\+T\+S\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+S} (\+\_\+element\+Type)
+\item 
+\hyperlink{classvct_dynamic_const_vector_base_aaed13bc31a9ee4971bad765ba5c2c811}{iterator} \hyperlink{classvct_dynamic_vector_base_ab26ac6919f9cbbfa2df0bc60b4c37212}{begin} (void)
+\item 
+\hyperlink{classvct_dynamic_const_vector_base_aaed13bc31a9ee4971bad765ba5c2c811}{iterator} \hyperlink{classvct_dynamic_vector_base_a0db66404e972562ed8952947248c4be4}{end} (void)
+\item 
+\hyperlink{classvct_dynamic_const_vector_base_af10d167259519ceeca9276da3435e193}{reverse\+\_\+iterator} \hyperlink{classvct_dynamic_vector_base_a051fd4d8e7a0831cf8e20c3228a24b9f}{rbegin} (void)
+\item 
+\hyperlink{classvct_dynamic_const_vector_base_af10d167259519ceeca9276da3435e193}{reverse\+\_\+iterator} \hyperlink{classvct_dynamic_vector_base_ab2704e8e0ca57fb063515cf17424cbb5}{rend} (void)
+\item 
+\hyperlink{classvct_dynamic_const_vector_base_ad04d1e54698ac5e244d15dfacd0e603c}{const\+\_\+iterator} \hyperlink{classvct_dynamic_vector_base_ac76838f129302af0897b00aa7fc6e369}{begin} (void) const 
+\item 
+\hyperlink{classvct_dynamic_const_vector_base_ad04d1e54698ac5e244d15dfacd0e603c}{const\+\_\+iterator} \hyperlink{classvct_dynamic_vector_base_a98e165c1af677afb6dfc91d22cb7b422}{end} (void) const 
+\item 
+\hyperlink{classvct_dynamic_const_vector_base_aadfcc99550b376238b6c793c17d19ca5}{const\+\_\+reverse\+\_\+iterator} \hyperlink{classvct_dynamic_vector_base_a328e7ffa7b9da097998f9d279fc43c2f}{rbegin} (void) const 
+\item 
+\hyperlink{classvct_dynamic_const_vector_base_aadfcc99550b376238b6c793c17d19ca5}{const\+\_\+reverse\+\_\+iterator} \hyperlink{classvct_dynamic_vector_base_ab997e462e868b68f456fde3b6a110ac6}{rend} (void) const 
+\item 
+reference \hyperlink{classvct_dynamic_vector_base_a409f03ced63e5f2374ec9847754ab034}{operator\mbox{[}$\,$\mbox{]}} (index\+\_\+type index)
+\item 
+const\+\_\+reference \hyperlink{classvct_dynamic_vector_base_a88f9f5af3f9381a5a96b60d1eddffe09}{operator\mbox{[}$\,$\mbox{]}} (index\+\_\+type index) const 
+\item 
+const \hyperlink{classvct_dynamic_vector_base_a563d79f5b4dd71f037192fe2961b48eb}{Vector\+Owner\+Type} \& \hyperlink{classvct_dynamic_vector_base_a0aaf6fd5bab4cbdf8d4fa82c714933f4}{Owner} (void) const 
+\item 
+\hyperlink{classvct_dynamic_vector_base_a563d79f5b4dd71f037192fe2961b48eb}{Vector\+Owner\+Type} \& \hyperlink{classvct_dynamic_vector_base_ab79d7986566cc243e97688fc3f715cfb}{Owner} (void)
+\item 
+pointer \hyperlink{classvct_dynamic_vector_base_a00f5d63bffcb55c825b0f75e91c8a291}{Pointer} (index\+\_\+type index=0)
+\item 
+const\+\_\+pointer \hyperlink{classvct_dynamic_vector_base_afd12e61375a9146ea5b6944b98dadf38}{Pointer} (index\+\_\+type index=0) const 
+\item 
+reference \hyperlink{classvct_dynamic_vector_base_a03f2316e98cb6eafca55501f12c9172a}{at} (index\+\_\+type index)  throw (std\+::out\+\_\+of\+\_\+range)
+\item 
+const\+\_\+reference \hyperlink{classvct_dynamic_vector_base_a29413207bf990dc9d3287646d4cc9737}{at} (index\+\_\+type index) const   throw (std\+::out\+\_\+of\+\_\+range)
+\item 
+reference \hyperlink{classvct_dynamic_vector_base_ae92326b64db6d69f66a07f84f2e4ba51}{operator()} (index\+\_\+type index)  throw (std\+::out\+\_\+of\+\_\+range)
+\item 
+const\+\_\+reference \hyperlink{classvct_dynamic_vector_base_a69688eb852e014ad42579da676dbb855}{operator()} (index\+\_\+type index) const   throw (std\+::out\+\_\+of\+\_\+range)
+\item 
+reference \hyperlink{classvct_dynamic_vector_base_a8b1a7efd0d0bb21b701a4461d79c7da2}{Element} (index\+\_\+type index)
+\item 
+const\+\_\+reference \hyperlink{classvct_dynamic_vector_base_a991666c27b8c59dbf0548aa635b8e3c5}{Element} (index\+\_\+type index) const 
+\item 
+value\+\_\+type \hyperlink{classvct_dynamic_vector_base_a0cf13429dcd83b565c3cbd7e30ecdec7}{Set\+All} (const value\+\_\+type value)
+\item 
+bool \hyperlink{classvct_dynamic_vector_base_a3b6cf5114c3971757b595c4181759393}{Zeros} (void)
+\item 
+\hyperlink{classvct_dynamic_const_vector_base_a39da273523717f678f54d3321ebca3dd}{This\+Type} \& \hyperlink{classvct_dynamic_vector_base_a321c52baa29a91ba074899f39c1d8c23}{Assign} (const value\+\_\+type $\ast$elements)
+\item 
+\hyperlink{classvct_dynamic_const_vector_base_a39da273523717f678f54d3321ebca3dd}{This\+Type} \& \hyperlink{classvct_dynamic_vector_base_a769dc8306b512b908e694195a3b99831}{Assign} (value\+\_\+type element0, value\+\_\+type element1,...)  throw (std\+::runtime\+\_\+error)
+\item 
+{\footnotesize template$<$class \+\_\+\+\_\+vector\+Owner\+Type , class \+\_\+\+\_\+element\+Type $>$ }\\\hyperlink{classvct_dynamic_const_vector_base_a39da273523717f678f54d3321ebca3dd}{This\+Type} \& \hyperlink{classvct_dynamic_vector_base_a821f0b7240811f28a154aab6dd91f5e6}{Concatenation\+Of} (const \hyperlink{classvct_dynamic_const_vector_base}{vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type, \+\_\+\+\_\+element\+Type $>$ \&other\+Vector, \+\_\+\+\_\+element\+Type last\+Element)
+\item 
+{\footnotesize template$<$class \+\_\+\+\_\+vector\+Owner\+Type $>$ }\\\hyperlink{classvct_dynamic_const_vector_base_a39da273523717f678f54d3321ebca3dd}{This\+Type} \& \hyperlink{classvct_dynamic_vector_base_a26a9316f13b80d311bb2eb356503e5f7}{Add\+Product\+Of} (const value\+\_\+type scalar, const \hyperlink{classvct_dynamic_const_vector_base}{vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$ \&other\+Vector)
+\item 
+{\footnotesize template$<$class \+\_\+\+\_\+vector\+Owner\+Type1 , class \+\_\+\+\_\+vector\+Owner\+Type2 $>$ }\\\hyperlink{classvct_dynamic_const_vector_base_a39da273523717f678f54d3321ebca3dd}{This\+Type} \& \hyperlink{classvct_dynamic_vector_base_af6ce0db0da09b89aff853c3029ec90e1}{Add\+Elementwise\+Product\+Of} (const \hyperlink{classvct_dynamic_const_vector_base}{vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type1, \+\_\+element\+Type $>$ \&vector1, const \hyperlink{classvct_dynamic_const_vector_base}{vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type2, \+\_\+element\+Type $>$ \&vector2)
+\end{DoxyCompactItemize}
+{\bf }\par
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class \+\_\+\+\_\+vector\+Owner\+Type $>$ }\\\hyperlink{classvct_dynamic_const_vector_base_a39da273523717f678f54d3321ebca3dd}{This\+Type} \& \hyperlink{classvct_dynamic_vector_base_a0d174f0a9557fd562de13324c14e0b92}{Assign} (const \hyperlink{classvct_dynamic_const_vector_base}{vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type, value\+\_\+type $>$ \&other)
+\end{DoxyCompactItemize}
+
+{\bf }\par
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class \+\_\+\+\_\+vector\+Owner\+Type $>$ }\\\hyperlink{classvct_dynamic_const_vector_base_a39da273523717f678f54d3321ebca3dd}{This\+Type} \& \hyperlink{classvct_dynamic_vector_base_acec7a6bf6e8e611b45dc7c3553ad72d6}{Assign} (const \hyperlink{classvct_dynamic_const_vector_base}{vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type, value\+\_\+type $>$ \&other, size\+\_\+type length, size\+\_\+type start\+Position\+This=0, size\+\_\+type start\+Position\+Other=0)
+\end{DoxyCompactItemize}
+
+\begin{Indent}{\bf Assignment operation between vectors of different types.}\par
+{\em 
+\begin{DoxyParams}{Parameters}
+{\em other} & The vector to be copied. \\
+\hline
+\end{DoxyParams}
+}\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class \+\_\+\+\_\+vector\+Owner\+Type , typename \+\_\+\+\_\+element\+Type $>$ }\\\hyperlink{classvct_dynamic_const_vector_base_a39da273523717f678f54d3321ebca3dd}{This\+Type} \& \hyperlink{classvct_dynamic_vector_base_ad4afb1dd8544f91213679e148f8aa890}{Assign} (const \hyperlink{classvct_dynamic_const_vector_base}{vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type, \+\_\+\+\_\+element\+Type $>$ \&other)
+\item 
+{\footnotesize template$<$class \+\_\+\+\_\+vector\+Owner\+Type , typename \+\_\+\+\_\+element\+Type $>$ }\\\hyperlink{classvct_dynamic_const_vector_base_a39da273523717f678f54d3321ebca3dd}{This\+Type} \& \hyperlink{classvct_dynamic_vector_base_a14b5a93889a05a9d29814b269e6df95e}{operator=} (const \hyperlink{classvct_dynamic_const_vector_base}{vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type, \+\_\+\+\_\+element\+Type $>$ \&other)
+\item 
+{\footnotesize template$<$size\+\_\+type \+\_\+\+\_\+size, stride\+\_\+type \+\_\+\+\_\+stride, class \+\_\+\+\_\+element\+Type , class \+\_\+\+\_\+data\+Ptr\+Type $>$ }\\\hyperlink{classvct_dynamic_const_vector_base_a39da273523717f678f54d3321ebca3dd}{This\+Type} \& \hyperlink{classvct_dynamic_vector_base_a92c5dd44b7b9e737312706c0ba69870b}{Assign} (const \hyperlink{classvct_fixed_size_const_vector_base}{vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+size, \+\_\+\+\_\+stride, \+\_\+\+\_\+element\+Type, \+\_\+\+\_\+data\+Ptr\+Type $>$ \&other)
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Forced assignment operation between vectors of}\par
+{\em different types. This method will use Set\+Size on the destination vector (this vector) to make sure the assignment will work. It is important to note that if the sizes don\textquotesingle{}t match, memory for this vector will be re-\/allocated. If the program has previously created some references (as in vct\+Dynamic\{Const\}Vector\+Ref) on this vector, they will become invalid.
+
+\begin{DoxyNote}{Note}
+For a non-\/reallocating Assign, it is recommended to use the \hyperlink{classvct_dynamic_vector_base_a0d174f0a9557fd562de13324c14e0b92}{Assign()} methods.
+
+This method is provided for both fixed size and dynamic vectors for A\+P\+I consistency (usable in templated code). There is obviously not resize involved on fixed size vectors.
+
+If the destination vector doesn\textquotesingle{}t have the same size as the source and can not be resized, an exception will be thrown by the Assign method called internally.
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The vector to be copied. \\
+\hline
+\end{DoxyParams}
+}\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class \+\_\+\+\_\+vector\+Owner\+Type , typename \+\_\+\+\_\+element\+Type $>$ }\\\hyperlink{classvct_dynamic_const_vector_base_a39da273523717f678f54d3321ebca3dd}{This\+Type} \& \hyperlink{classvct_dynamic_vector_base_a68ad74bbcd1f57319a155d6310683088}{Force\+Assign} (const \hyperlink{classvct_dynamic_const_vector_base}{vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type, \+\_\+\+\_\+element\+Type $>$ \&other)
+\item 
+{\footnotesize template$<$size\+\_\+type \+\_\+\+\_\+size, stride\+\_\+type \+\_\+\+\_\+stride, class \+\_\+\+\_\+element\+Type , class \+\_\+\+\_\+data\+Ptr\+Type $>$ }\\\hyperlink{classvct_dynamic_const_vector_base_a39da273523717f678f54d3321ebca3dd}{This\+Type} \& \hyperlink{classvct_dynamic_vector_base_ac16a1162151c26e5a12f38e0eaa00c1c}{Force\+Assign} (const \hyperlink{classvct_fixed_size_const_vector_base}{vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+size, \+\_\+\+\_\+stride, \+\_\+\+\_\+element\+Type, \+\_\+\+\_\+data\+Ptr\+Type $>$ \&other)
+\end{DoxyCompactItemize}
+\end{Indent}
+{\bf }\par
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class \+\_\+\+\_\+vector\+Owner\+Type $>$ }\\bool \hyperlink{classvct_dynamic_vector_base_ad2bbab4a18c78a546aa5e182206f6edb}{Fast\+Copy\+Of} (const \hyperlink{classvct_dynamic_const_vector_base}{vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type, value\+\_\+type $>$ \&source, bool perform\+Safety\+Checks=true)  throw (std\+::runtime\+\_\+error)
+\item 
+{\footnotesize template$<$size\+\_\+type \+\_\+\+\_\+size, stride\+\_\+type \+\_\+\+\_\+stride, class \+\_\+\+\_\+data\+Ptr\+Type $>$ }\\bool \hyperlink{classvct_dynamic_vector_base_a12155c8c505faf9e77a30a0d430f900f}{Fast\+Copy\+Of} (const \hyperlink{classvct_fixed_size_const_vector_base}{vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+size, \+\_\+\+\_\+stride, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type $>$ \&source, bool perform\+Safety\+Checks=true)  throw (std\+::runtime\+\_\+error)
+\end{DoxyCompactItemize}
+
+\begin{Indent}{\bf Size dependant methods.}\par
+{\em The following methods are size dependant, i.\+e. don\textquotesingle{}t necessarily mean anything for all sizes of vector. For example, using the \hyperlink{classvct_dynamic_vector_base_aa689aa7d7b29bd5f370fd3a4f526419c}{Z()} method on a vector of size 2 shouldn\textquotesingle{}t be allowed. Therefore, we are using \hyperlink{group__cisst_common_ga6a12b7031ea38ac5bf5937b8633c97ff}{C\+M\+N\+\_\+\+A\+S\+S\+E\+R\+T} to check that the size is valid }\begin{DoxyCompactItemize}
+\item 
+value\+\_\+type \& \hyperlink{classvct_dynamic_vector_base_ac1c2e4fabde849a5adc380e763f5a5a0}{X} (void)
+\item 
+const value\+\_\+type \& \hyperlink{classvct_dynamic_vector_base_a23d6b86c6aeda2974ec731e6e5b32286}{X} (void) const 
+\item 
+value\+\_\+type \& \hyperlink{classvct_dynamic_vector_base_ac824e0b7985c1665f8bb90c098f6bb1e}{Y} (void)
+\item 
+const value\+\_\+type \& \hyperlink{classvct_dynamic_vector_base_a7a7f871ea3a0350db5ee5da093426850}{Y} (void) const 
+\item 
+value\+\_\+type \& \hyperlink{classvct_dynamic_vector_base_aa689aa7d7b29bd5f370fd3a4f526419c}{Z} (void)
+\item 
+const value\+\_\+type \& \hyperlink{classvct_dynamic_vector_base_a933e0e8e08d777d86a02432d2568df47}{Z} (void) const 
+\item 
+value\+\_\+type \& \hyperlink{classvct_dynamic_vector_base_acdbaaa52e7ec8209050a6edac83e363a}{W} (void)
+\item 
+const value\+\_\+type \& \hyperlink{classvct_dynamic_vector_base_aef2206a0cf3908da039e445207990a66}{W} (void) const 
+\item 
+\hyperlink{classvct_dynamic_vector_ref}{vct\+Dynamic\+Vector\+Ref}$<$ \+\_\+element\+Type $>$ \hyperlink{classvct_dynamic_vector_base_ac5eb55ee30f87e702d1bcb521739c923}{X\+Y} (void)
+\item 
+\hyperlink{classvct_dynamic_vector_ref}{vct\+Dynamic\+Vector\+Ref}$<$ \+\_\+element\+Type $>$ \hyperlink{classvct_dynamic_vector_base_a89314df61e7549d378549ccb87ac626b}{X\+Z} (void)
+\item 
+\hyperlink{classvct_dynamic_vector_ref}{vct\+Dynamic\+Vector\+Ref}$<$ \+\_\+element\+Type $>$ \hyperlink{classvct_dynamic_vector_base_a8c0bad5e6b534f05a395cf4332829427}{X\+W} (void)
+\item 
+\hyperlink{classvct_dynamic_vector_ref}{vct\+Dynamic\+Vector\+Ref}$<$ \+\_\+element\+Type $>$ \hyperlink{classvct_dynamic_vector_base_a42ae7ee6df6d93a1248338490e5d2440}{Y\+Z} (void)
+\item 
+\hyperlink{classvct_dynamic_vector_ref}{vct\+Dynamic\+Vector\+Ref}$<$ \+\_\+element\+Type $>$ \hyperlink{classvct_dynamic_vector_base_a354e6752fbb9ae3d559f868a47df9ae1}{Y\+W} (void)
+\item 
+\hyperlink{classvct_dynamic_vector_ref}{vct\+Dynamic\+Vector\+Ref}$<$ \+\_\+element\+Type $>$ \hyperlink{classvct_dynamic_vector_base_a79547eec078c029c39968a24be5ff789}{Z\+W} (void)
+\item 
+\hyperlink{classvct_dynamic_const_vector_ref}{vct\+Dynamic\+Const\+Vector\+Ref}$<$ \+\_\+element\+Type $>$ \hyperlink{classvct_dynamic_vector_base_afe423ba4dc5c4a4c1862cecd40d976ea}{X\+Y} (void) const 
+\item 
+\hyperlink{classvct_dynamic_const_vector_ref}{vct\+Dynamic\+Const\+Vector\+Ref}$<$ \+\_\+element\+Type $>$ \hyperlink{classvct_dynamic_vector_base_aa9c7bbdbec9e45e55d9e2a40851a69a6}{X\+Z} (void) const 
+\item 
+\hyperlink{classvct_dynamic_const_vector_ref}{vct\+Dynamic\+Const\+Vector\+Ref}$<$ \+\_\+element\+Type $>$ \hyperlink{classvct_dynamic_vector_base_a519032c001cf5abef98eec4a8d507547}{X\+W} (void) const 
+\item 
+\hyperlink{classvct_dynamic_const_vector_ref}{vct\+Dynamic\+Const\+Vector\+Ref}$<$ \+\_\+element\+Type $>$ \hyperlink{classvct_dynamic_vector_base_adb644a21e8df88cbcc256131f7381481}{Y\+Z} (void) const 
+\item 
+\hyperlink{classvct_dynamic_const_vector_ref}{vct\+Dynamic\+Const\+Vector\+Ref}$<$ \+\_\+element\+Type $>$ \hyperlink{classvct_dynamic_vector_base_a0831c0124fb285f0f357bd234e1012c4}{Y\+W} (void) const 
+\item 
+\hyperlink{classvct_dynamic_const_vector_ref}{vct\+Dynamic\+Const\+Vector\+Ref}$<$ \+\_\+element\+Type $>$ \hyperlink{classvct_dynamic_vector_base_a6c17bdbbc81a83c91e482e1449eb351b}{Z\+W} (void) const 
+\item 
+\hyperlink{classvct_dynamic_vector_ref}{vct\+Dynamic\+Vector\+Ref}$<$ \+\_\+element\+Type $>$ \hyperlink{classvct_dynamic_vector_base_a41e0d558b7e790345d4e5638292dbc31}{X\+Y\+Z} (void)
+\item 
+\hyperlink{classvct_dynamic_vector_ref}{vct\+Dynamic\+Vector\+Ref}$<$ \+\_\+element\+Type $>$ \hyperlink{classvct_dynamic_vector_base_ad7aafd0663f3a997715ecaa20927192b}{Y\+Z\+W} (void)
+\item 
+\hyperlink{classvct_dynamic_const_vector_ref}{vct\+Dynamic\+Const\+Vector\+Ref}$<$ \+\_\+element\+Type $>$ \hyperlink{classvct_dynamic_vector_base_ae9729a3797a319b7354c0a7de7728acc}{X\+Y\+Z} (void) const 
+\item 
+\hyperlink{classvct_dynamic_const_vector_ref}{vct\+Dynamic\+Const\+Vector\+Ref}$<$ \+\_\+element\+Type $>$ \hyperlink{classvct_dynamic_vector_base_ad0fa6ceb43b20c493d8e5b8c58e5914d}{Y\+Z\+W} (void) const 
+\item 
+\hyperlink{classvct_dynamic_vector_ref}{vct\+Dynamic\+Vector\+Ref}$<$ \+\_\+element\+Type $>$ \hyperlink{classvct_dynamic_vector_base_a039fd2542bf02f1f02d7ba5db6b6c5cf}{X\+Y\+Z\+W} (void)
+\item 
+\hyperlink{classvct_dynamic_const_vector_ref}{vct\+Dynamic\+Const\+Vector\+Ref}$<$ \+\_\+element\+Type $>$ \hyperlink{classvct_dynamic_vector_base_a0c8bf0dd9ff05cc3d77f9c0b1c309138}{X\+Y\+Z\+W} (void) const 
+\item 
+{\footnotesize template$<$class \+\_\+\+\_\+input\+Vector\+Owner , class \+\_\+\+\_\+index\+Vector\+Owner $>$ }\\void \hyperlink{classvct_dynamic_vector_base_a5c4b71a4400bd77cfd0978f6ea5306d4}{Select\+From} (const \hyperlink{classvct_dynamic_const_vector_base}{vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+input\+Vector\+Owner, \+\_\+element\+Type $>$ \&input, const \hyperlink{classvct_dynamic_const_vector_base}{vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+index\+Vector\+Owner, index\+\_\+type $>$ \&index)
+\item 
+{\footnotesize template$<$class \+\_\+\+\_\+vector\+Owner\+Type1 , class \+\_\+\+\_\+vector\+Owner\+Type2 $>$ }\\void \hyperlink{classvct_dynamic_vector_base_a716dd14b3357992e5c4b8c395a93e0b3}{Cross\+Product\+Of} (const \hyperlink{classvct_dynamic_const_vector_base}{vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type1, \+\_\+element\+Type $>$ \&input\+Vector1, const \hyperlink{classvct_dynamic_const_vector_base}{vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type2, \+\_\+element\+Type $>$ \&input\+Vector2)
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Binary elementwise operations between two vectors.}\par
+{\em Operate on both elements and store values in both. }\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class \+\_\+\+\_\+vector\+Owner\+Type1 , class \+\_\+\+\_\+vector\+Owner\+Type2 $>$ }\\\hyperlink{classvct_dynamic_const_vector_base_a39da273523717f678f54d3321ebca3dd}{This\+Type} \& \hyperlink{classvct_dynamic_vector_base_a84f320f980e99e4e0ca50791e2cb1135}{Sum\+Of} (const \hyperlink{classvct_dynamic_const_vector_base}{vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type1, \+\_\+element\+Type $>$ \&vector1, const \hyperlink{classvct_dynamic_const_vector_base}{vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type2, \+\_\+element\+Type $>$ \&vector2)
+\item 
+{\footnotesize template$<$class \+\_\+\+\_\+vector\+Owner\+Type1 , class \+\_\+\+\_\+vector\+Owner\+Type2 $>$ }\\\hyperlink{classvct_dynamic_const_vector_base_a39da273523717f678f54d3321ebca3dd}{This\+Type} \& \hyperlink{classvct_dynamic_vector_base_a5aaf9ec315eff49da3966255f7378ab8}{Difference\+Of} (const \hyperlink{classvct_dynamic_const_vector_base}{vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type1, \+\_\+element\+Type $>$ \&vector1, const \hyperlink{classvct_dynamic_const_vector_base}{vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type2, \+\_\+element\+Type $>$ \&vector2)
+\item 
+{\footnotesize template$<$class \+\_\+\+\_\+vector\+Owner\+Type1 , class \+\_\+\+\_\+vector\+Owner\+Type2 $>$ }\\\hyperlink{classvct_dynamic_const_vector_base_a39da273523717f678f54d3321ebca3dd}{This\+Type} \& \hyperlink{classvct_dynamic_vector_base_afc8c54fbb85155eefbeaf1d2d31fcc84}{Elementwise\+Product\+Of} (const \hyperlink{classvct_dynamic_const_vector_base}{vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type1, \+\_\+element\+Type $>$ \&vector1, const \hyperlink{classvct_dynamic_const_vector_base}{vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type2, \+\_\+element\+Type $>$ \&vector2)
+\item 
+{\footnotesize template$<$class \+\_\+\+\_\+vector\+Owner\+Type1 , class \+\_\+\+\_\+vector\+Owner\+Type2 $>$ }\\\hyperlink{classvct_dynamic_const_vector_base_a39da273523717f678f54d3321ebca3dd}{This\+Type} \& \hyperlink{classvct_dynamic_vector_base_a39deeeee45de88cd2408d8e4de3306fb}{Elementwise\+Ratio\+Of} (const \hyperlink{classvct_dynamic_const_vector_base}{vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type1, \+\_\+element\+Type $>$ \&vector1, const \hyperlink{classvct_dynamic_const_vector_base}{vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type2, \+\_\+element\+Type $>$ \&vector2)
+\item 
+{\footnotesize template$<$class \+\_\+\+\_\+vector\+Owner\+Type1 , class \+\_\+\+\_\+vector\+Owner\+Type2 $>$ }\\\hyperlink{classvct_dynamic_const_vector_base_a39da273523717f678f54d3321ebca3dd}{This\+Type} \& \hyperlink{classvct_dynamic_vector_base_abedada58a344d1b9d9905c72d953d9e8}{Elementwise\+Min\+Of} (const \hyperlink{classvct_dynamic_const_vector_base}{vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type1, \+\_\+element\+Type $>$ \&vector1, const \hyperlink{classvct_dynamic_const_vector_base}{vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type2, \+\_\+element\+Type $>$ \&vector2)
+\item 
+{\footnotesize template$<$class \+\_\+\+\_\+vector\+Owner\+Type1 , class \+\_\+\+\_\+vector\+Owner\+Type2 $>$ }\\\hyperlink{classvct_dynamic_const_vector_base_a39da273523717f678f54d3321ebca3dd}{This\+Type} \& \hyperlink{classvct_dynamic_vector_base_ab3874cad21ff8758f4df3171a347e534}{Elementwise\+Max\+Of} (const \hyperlink{classvct_dynamic_const_vector_base}{vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type1, \+\_\+element\+Type $>$ \&vector1, const \hyperlink{classvct_dynamic_const_vector_base}{vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type2, \+\_\+element\+Type $>$ \&vector2)
+\item 
+{\footnotesize template$<$class \+\_\+\+\_\+vector\+Owner\+Type1 , class \+\_\+\+\_\+vector\+Owner\+Type2 $>$ }\\\hyperlink{classvct_dynamic_const_vector_base_a39da273523717f678f54d3321ebca3dd}{This\+Type} \& \hyperlink{classvct_dynamic_vector_base_a9a5e7b9273dd0a6bcd1634e87ce30cb0}{Elementwise\+Clipped\+In\+Of} (const \hyperlink{classvct_dynamic_const_vector_base}{vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type1, \+\_\+element\+Type $>$ \&bound\+Vector, const \hyperlink{classvct_dynamic_const_vector_base}{vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type2, \+\_\+element\+Type $>$ \&vector)
+\item 
+{\footnotesize template$<$class \+\_\+\+\_\+vector\+Owner\+Type $>$ }\\\hyperlink{classvct_dynamic_const_vector_base_a39da273523717f678f54d3321ebca3dd}{This\+Type} \& \hyperlink{classvct_dynamic_vector_base_a4eb825f90117f38bfebe2ba99521162e}{Add} (const \hyperlink{classvct_dynamic_const_vector_base}{vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$ \&other\+Vector)
+\item 
+{\footnotesize template$<$class \+\_\+\+\_\+vector\+Owner\+Type $>$ }\\\hyperlink{classvct_dynamic_const_vector_base_a39da273523717f678f54d3321ebca3dd}{This\+Type} \& \hyperlink{classvct_dynamic_vector_base_a824ce9d2c9706552ca6116750eeec386}{Subtract} (const \hyperlink{classvct_dynamic_const_vector_base}{vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$ \&other\+Vector)
+\item 
+{\footnotesize template$<$class \+\_\+\+\_\+vector\+Owner\+Type $>$ }\\\hyperlink{classvct_dynamic_const_vector_base_a39da273523717f678f54d3321ebca3dd}{This\+Type} \& \hyperlink{classvct_dynamic_vector_base_aa1dd17f2ca5aa677ae54f469de2e3c5c}{Elementwise\+Multiply} (const \hyperlink{classvct_dynamic_const_vector_base}{vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$ \&other\+Vector)
+\item 
+{\footnotesize template$<$class \+\_\+\+\_\+vector\+Owner\+Type $>$ }\\\hyperlink{classvct_dynamic_const_vector_base_a39da273523717f678f54d3321ebca3dd}{This\+Type} \& \hyperlink{classvct_dynamic_vector_base_a20bfdee5188de2db037dd17a006c5db8}{Elementwise\+Divide} (const \hyperlink{classvct_dynamic_const_vector_base}{vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$ \&other\+Vector)
+\item 
+{\footnotesize template$<$class \+\_\+\+\_\+vector\+Owner\+Type $>$ }\\\hyperlink{classvct_dynamic_const_vector_base_a39da273523717f678f54d3321ebca3dd}{This\+Type} \& \hyperlink{classvct_dynamic_vector_base_afa0399fb7fb0ac76bef4c6550696cbdd}{Elementwise\+Min} (const \hyperlink{classvct_dynamic_const_vector_base}{vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$ \&other\+Vector)
+\item 
+{\footnotesize template$<$class \+\_\+\+\_\+vector\+Owner\+Type $>$ }\\\hyperlink{classvct_dynamic_const_vector_base_a39da273523717f678f54d3321ebca3dd}{This\+Type} \& \hyperlink{classvct_dynamic_vector_base_a9d782455c955138903ef49a02b173aad}{Elementwise\+Max} (const \hyperlink{classvct_dynamic_const_vector_base}{vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$ \&other\+Vector)
+\item 
+{\footnotesize template$<$class \+\_\+\+\_\+vector\+Owner\+Type $>$ }\\\hyperlink{classvct_dynamic_const_vector_base_a39da273523717f678f54d3321ebca3dd}{This\+Type} \& \hyperlink{classvct_dynamic_vector_base_a34ebdb5ea47bb05882b5db91c1a4987a}{Elementwise\+Clip\+In} (const \hyperlink{classvct_dynamic_const_vector_base}{vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$ \&bound\+Vector)
+\item 
+{\footnotesize template$<$class \+\_\+\+\_\+vector\+Owner\+Type $>$ }\\\hyperlink{classvct_dynamic_const_vector_base_a39da273523717f678f54d3321ebca3dd}{This\+Type} \& \hyperlink{classvct_dynamic_vector_base_ac2f6969f2446d396f892de7345b179c5}{operator+=} (const \hyperlink{classvct_dynamic_const_vector_base}{vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$ \&other\+Vector)
+\item 
+{\footnotesize template$<$class \+\_\+\+\_\+vector\+Owner\+Type $>$ }\\\hyperlink{classvct_dynamic_const_vector_base_a39da273523717f678f54d3321ebca3dd}{This\+Type} \& \hyperlink{classvct_dynamic_vector_base_abf61f9e3ee6622ab355b8b34f0fceace}{operator-\/=} (const \hyperlink{classvct_dynamic_const_vector_base}{vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$ \&other\+Vector)
+\item 
+{\footnotesize template$<$class \+\_\+\+\_\+vector\+Owner\+Type $>$ }\\\hyperlink{classvct_dynamic_const_vector_base_a39da273523717f678f54d3321ebca3dd}{This\+Type} \& \hyperlink{classvct_dynamic_vector_base_aa18ec9599ba05be407f344ee33085188}{Swap\+Elements\+With} (\hyperlink{classvct_dynamic_vector_base}{vct\+Dynamic\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$ \&other\+Vector)
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Binary elementwise operations a vector and a scalar.}\par
+{\em Store the result of op(vector, scalar) to a third vector. }\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class \+\_\+\+\_\+vector\+Owner\+Type $>$ }\\\hyperlink{classvct_dynamic_const_vector_base_a39da273523717f678f54d3321ebca3dd}{This\+Type} \& \hyperlink{classvct_dynamic_vector_base_a2c0062999ae26dc98c2ba1bfdb98caa0}{Sum\+Of} (const \hyperlink{classvct_dynamic_const_vector_base}{vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$ \&vector, const value\+\_\+type scalar)
+\item 
+{\footnotesize template$<$class \+\_\+\+\_\+vector\+Owner\+Type $>$ }\\\hyperlink{classvct_dynamic_const_vector_base_a39da273523717f678f54d3321ebca3dd}{This\+Type} \& \hyperlink{classvct_dynamic_vector_base_a718ed377442500d229e086d991930b6b}{Difference\+Of} (const \hyperlink{classvct_dynamic_const_vector_base}{vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$ \&vector, const value\+\_\+type scalar)
+\item 
+{\footnotesize template$<$class \+\_\+\+\_\+vector\+Owner\+Type $>$ }\\\hyperlink{classvct_dynamic_const_vector_base_a39da273523717f678f54d3321ebca3dd}{This\+Type} \& \hyperlink{classvct_dynamic_vector_base_afabc21a02bc651668a08467c94d63edf}{Product\+Of} (const \hyperlink{classvct_dynamic_const_vector_base}{vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$ \&vector, const value\+\_\+type scalar)
+\item 
+{\footnotesize template$<$class \+\_\+\+\_\+vector\+Owner\+Type $>$ }\\\hyperlink{classvct_dynamic_const_vector_base_a39da273523717f678f54d3321ebca3dd}{This\+Type} \& \hyperlink{classvct_dynamic_vector_base_a65511640e701d17de999787dae10624a}{Ratio\+Of} (const \hyperlink{classvct_dynamic_const_vector_base}{vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$ \&vector, const value\+\_\+type scalar)
+\item 
+{\footnotesize template$<$class \+\_\+\+\_\+vector\+Owner\+Type $>$ }\\\hyperlink{classvct_dynamic_const_vector_base_a39da273523717f678f54d3321ebca3dd}{This\+Type} \& \hyperlink{classvct_dynamic_vector_base_aff114456352f054cfa33dcf55504d488}{Clipped\+Above\+Of} (const \hyperlink{classvct_dynamic_const_vector_base}{vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$ \&vector, const value\+\_\+type upper\+Bound)
+\item 
+{\footnotesize template$<$class \+\_\+\+\_\+vector\+Owner\+Type $>$ }\\\hyperlink{classvct_dynamic_const_vector_base_a39da273523717f678f54d3321ebca3dd}{This\+Type} \& \hyperlink{classvct_dynamic_vector_base_adc04ce9cda9d9c7535f625cb114b334a}{Clipped\+Below\+Of} (const \hyperlink{classvct_dynamic_const_vector_base}{vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$ \&vector, const value\+\_\+type lower\+Bound)
+\item 
+{\footnotesize template$<$class \+\_\+\+\_\+vector\+Owner\+Type $>$ }\\\hyperlink{classvct_dynamic_const_vector_base_a39da273523717f678f54d3321ebca3dd}{This\+Type} \& \hyperlink{classvct_dynamic_vector_base_a2a41f6dd284eee6ee782a554fd7ab54b}{Clipped\+In\+Of} (const \hyperlink{classvct_dynamic_const_vector_base}{vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$ \&vector, const value\+\_\+type bound)
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Binary elementwise operations a scalar and a vector.}\par
+{\em Store the result of op(scalar, vector) to a third vector. }\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class \+\_\+\+\_\+vector\+Owner\+Type $>$ }\\\hyperlink{classvct_dynamic_const_vector_base_a39da273523717f678f54d3321ebca3dd}{This\+Type} \& \hyperlink{classvct_dynamic_vector_base_af487dcdd740d3ed4b207d326e5fd6f12}{Sum\+Of} (const value\+\_\+type scalar, const \hyperlink{classvct_dynamic_const_vector_base}{vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$ \&vector)
+\item 
+{\footnotesize template$<$class \+\_\+\+\_\+vector\+Owner\+Type $>$ }\\\hyperlink{classvct_dynamic_const_vector_base_a39da273523717f678f54d3321ebca3dd}{This\+Type} \& \hyperlink{classvct_dynamic_vector_base_afb5e23e0a2b99a13b467d748e9cabb1f}{Difference\+Of} (const value\+\_\+type scalar, const \hyperlink{classvct_dynamic_const_vector_base}{vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$ \&vector)
+\item 
+{\footnotesize template$<$class \+\_\+\+\_\+vector\+Owner\+Type $>$ }\\\hyperlink{classvct_dynamic_const_vector_base_a39da273523717f678f54d3321ebca3dd}{This\+Type} \& \hyperlink{classvct_dynamic_vector_base_a2f7c76bbe958efd932aa4bc0dcce4108}{Product\+Of} (const value\+\_\+type scalar, const \hyperlink{classvct_dynamic_const_vector_base}{vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$ \&vector)
+\item 
+{\footnotesize template$<$class \+\_\+\+\_\+vector\+Owner\+Type $>$ }\\\hyperlink{classvct_dynamic_const_vector_base_a39da273523717f678f54d3321ebca3dd}{This\+Type} \& \hyperlink{classvct_dynamic_vector_base_a7051973a756f647f4b846406f2e91ede}{Ratio\+Of} (const value\+\_\+type scalar, const \hyperlink{classvct_dynamic_const_vector_base}{vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$ \&vector)
+\item 
+{\footnotesize template$<$class \+\_\+\+\_\+vector\+Owner\+Type $>$ }\\\hyperlink{classvct_dynamic_const_vector_base_a39da273523717f678f54d3321ebca3dd}{This\+Type} \& \hyperlink{classvct_dynamic_vector_base_a4915805fdc719f586d0543e37c253b76}{Clipped\+Above\+Of} (const value\+\_\+type upper\+Bound, const \hyperlink{classvct_dynamic_const_vector_base}{vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$ \&vector)
+\item 
+{\footnotesize template$<$class \+\_\+\+\_\+vector\+Owner\+Type $>$ }\\\hyperlink{classvct_dynamic_const_vector_base_a39da273523717f678f54d3321ebca3dd}{This\+Type} \& \hyperlink{classvct_dynamic_vector_base_a05e54537bddcec043c39976525b0bcd7}{Clipped\+Below\+Of} (const value\+\_\+type lower\+Bound, const \hyperlink{classvct_dynamic_const_vector_base}{vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$ \&vector)
+\item 
+{\footnotesize template$<$class \+\_\+\+\_\+vector\+Owner\+Type $>$ }\\\hyperlink{classvct_dynamic_const_vector_base_a39da273523717f678f54d3321ebca3dd}{This\+Type} \& \hyperlink{classvct_dynamic_vector_base_a26861762ef763c10ffcd9bc02530d291}{Clipped\+In\+Of} (const value\+\_\+type bound, const \hyperlink{classvct_dynamic_const_vector_base}{vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$ \&vector)
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Binary elementwise operations between a vector and a scalar.}\par
+{\em Store the result of op(this, scalar) back to this vector. }\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classvct_dynamic_const_vector_base_a39da273523717f678f54d3321ebca3dd}{This\+Type} \& \hyperlink{classvct_dynamic_vector_base_ac5fd1fdbda2f81924cbbf4de056e5435}{Add} (const value\+\_\+type scalar)
+\item 
+\hyperlink{classvct_dynamic_const_vector_base_a39da273523717f678f54d3321ebca3dd}{This\+Type} \& \hyperlink{classvct_dynamic_vector_base_a2d860076420a521f60caad0470f21bdb}{Subtract} (const value\+\_\+type scalar)
+\item 
+\hyperlink{classvct_dynamic_const_vector_base_a39da273523717f678f54d3321ebca3dd}{This\+Type} \& \hyperlink{classvct_dynamic_vector_base_aafb96cc6707729560680238849f6cf02}{Multiply} (const value\+\_\+type scalar)
+\item 
+\hyperlink{classvct_dynamic_const_vector_base_a39da273523717f678f54d3321ebca3dd}{This\+Type} \& \hyperlink{classvct_dynamic_vector_base_a4716f1b6eb5b3373f023c77c775abace}{Divide} (const value\+\_\+type scalar)
+\item 
+\hyperlink{classvct_dynamic_const_vector_base_a39da273523717f678f54d3321ebca3dd}{This\+Type} \& \hyperlink{classvct_dynamic_vector_base_acb2e769ff0f70bbce2e45d549f8a23c0}{Clip\+Above} (const value\+\_\+type upper\+Bound)
+\item 
+\hyperlink{classvct_dynamic_const_vector_base_a39da273523717f678f54d3321ebca3dd}{This\+Type} \& \hyperlink{classvct_dynamic_vector_base_af73430126994c263c1169837a9c9c58d}{Clip\+Below} (const value\+\_\+type lower\+Bound)
+\item 
+\hyperlink{classvct_dynamic_const_vector_base_a39da273523717f678f54d3321ebca3dd}{This\+Type} \& \hyperlink{classvct_dynamic_vector_base_a5e3a219ac2bf358961fb67ec48639d6c}{Clip\+In} (const value\+\_\+type bound)
+\item 
+\hyperlink{classvct_dynamic_const_vector_base_a39da273523717f678f54d3321ebca3dd}{This\+Type} \& \hyperlink{classvct_dynamic_vector_base_a6a60f395f89f628e44566c6d574e9579}{operator+=} (const value\+\_\+type scalar)
+\item 
+\hyperlink{classvct_dynamic_const_vector_base_a39da273523717f678f54d3321ebca3dd}{This\+Type} \& \hyperlink{classvct_dynamic_vector_base_a00d36e2c3d0443099567cbe840af0821}{operator-\/=} (const value\+\_\+type scalar)
+\item 
+\hyperlink{classvct_dynamic_const_vector_base_a39da273523717f678f54d3321ebca3dd}{This\+Type} \& \hyperlink{classvct_dynamic_vector_base_a955c825c03c72580f33a605e8075ffb2}{operator$\ast$=} (const value\+\_\+type scalar)
+\item 
+\hyperlink{classvct_dynamic_const_vector_base_a39da273523717f678f54d3321ebca3dd}{This\+Type} \& \hyperlink{classvct_dynamic_vector_base_a273990280eeaaaab279fb696650d1e7f}{operator/=} (const value\+\_\+type scalar)
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Binary elementwise operations between a vector and a}\par
+{\em matrix. Store the result of op() to a third vector (this vector). }\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class \+\_\+\+\_\+matrix\+Owner\+Type , class \+\_\+\+\_\+vector\+Owner\+Type $>$ }\\\hyperlink{classvct_dynamic_const_vector_base_a39da273523717f678f54d3321ebca3dd}{This\+Type} \& \hyperlink{classvct_dynamic_vector_base_aae3e15da4eae6cb4df0d982984b2de42}{Product\+Of} (const \hyperlink{classvct_dynamic_const_matrix_base}{vct\+Dynamic\+Const\+Matrix\+Base}$<$ \+\_\+\+\_\+matrix\+Owner\+Type, \+\_\+element\+Type $>$ \&input\+Matrix, const \hyperlink{classvct_dynamic_const_vector_base}{vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$ \&input\+Vector)
+\item 
+{\footnotesize template$<$class \+\_\+\+\_\+vector\+Owner\+Type , class \+\_\+\+\_\+matrix\+Owner\+Type $>$ }\\\hyperlink{classvct_dynamic_const_vector_base_a39da273523717f678f54d3321ebca3dd}{This\+Type} \& \hyperlink{classvct_dynamic_vector_base_ad86a700afbc9feafd2cec7b61db67706}{Product\+Of} (const \hyperlink{classvct_dynamic_const_vector_base}{vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$ \&input\+Vector, const \hyperlink{classvct_dynamic_const_matrix_base}{vct\+Dynamic\+Const\+Matrix\+Base}$<$ \+\_\+\+\_\+matrix\+Owner\+Type, \+\_\+element\+Type $>$ \&input\+Matrix)
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Unary elementwise operations.}\par
+{\em Store the result of op(vector) to another vector. }\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class \+\_\+\+\_\+vector\+Owner\+Type $>$ }\\\hyperlink{classvct_dynamic_const_vector_base_a39da273523717f678f54d3321ebca3dd}{This\+Type} \& \hyperlink{classvct_dynamic_vector_base_a41137c2be55ad6cfdfedb695e7b82ead}{Abs\+Of} (const \hyperlink{classvct_dynamic_const_vector_base}{vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$ \&other\+Vector)
+\item 
+{\footnotesize template$<$class \+\_\+\+\_\+vector\+Owner\+Type $>$ }\\\hyperlink{classvct_dynamic_const_vector_base_a39da273523717f678f54d3321ebca3dd}{This\+Type} \& \hyperlink{classvct_dynamic_vector_base_a9f6f640db32ecb6de8c30fe6e4ea708e}{Negation\+Of} (const \hyperlink{classvct_dynamic_const_vector_base}{vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$ \&other\+Vector)
+\item 
+{\footnotesize template$<$class \+\_\+\+\_\+vector\+Owner\+Type $>$ }\\\hyperlink{classvct_dynamic_const_vector_base_a39da273523717f678f54d3321ebca3dd}{This\+Type} \& \hyperlink{classvct_dynamic_vector_base_ad0f2f07cd961899b254df8ea725d1bc7}{Floor\+Of} (const \hyperlink{classvct_dynamic_const_vector_base}{vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$ \&other\+Vector)
+\item 
+{\footnotesize template$<$class \+\_\+\+\_\+vector\+Owner\+Type $>$ }\\\hyperlink{classvct_dynamic_const_vector_base_a39da273523717f678f54d3321ebca3dd}{This\+Type} \& \hyperlink{classvct_dynamic_vector_base_aa0c44a54e66a3a355da37e5eec4b3835}{Ceil\+Of} (const \hyperlink{classvct_dynamic_const_vector_base}{vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$ \&other\+Vector)
+\item 
+{\footnotesize template$<$class \+\_\+\+\_\+vector\+Owner\+Type $>$ }\\\hyperlink{classvct_dynamic_const_vector_base_a39da273523717f678f54d3321ebca3dd}{This\+Type} \& \hyperlink{classvct_dynamic_vector_base_aa5ef903765165168fa48f9c5f8403fd5}{Normalized\+Of} (const \hyperlink{classvct_dynamic_const_vector_base}{vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$ \&other\+Vector)  throw (std\+::runtime\+\_\+error)
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Store back unary elementwise operations.}\par
+{\em Store the result of op(this) to this vector. }\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classvct_dynamic_const_vector_base_a39da273523717f678f54d3321ebca3dd}{This\+Type} \& \hyperlink{classvct_dynamic_vector_base_ab3c44e0d5224cf4f2dec1d506ab6c604}{Abs\+Self} (void)
+\item 
+\hyperlink{classvct_dynamic_const_vector_base_a39da273523717f678f54d3321ebca3dd}{This\+Type} \& \hyperlink{classvct_dynamic_vector_base_a569459da915ad59245304445ae699782}{Negation\+Self} (void)
+\item 
+\hyperlink{classvct_dynamic_const_vector_base_a39da273523717f678f54d3321ebca3dd}{This\+Type} \& \hyperlink{classvct_dynamic_vector_base_ab900e7960dbd3dbf857673ed27f29cb2}{Floor\+Self} (void)
+\item 
+\hyperlink{classvct_dynamic_const_vector_base_a39da273523717f678f54d3321ebca3dd}{This\+Type} \& \hyperlink{classvct_dynamic_vector_base_a8ffae784a033f6595e133d4c4abe6b39}{Ceil\+Self} (void)
+\item 
+\hyperlink{classvct_dynamic_const_vector_base_a39da273523717f678f54d3321ebca3dd}{This\+Type} \& \hyperlink{classvct_dynamic_vector_base_a9e20a5576c634ae993c7eca4c35aab98}{Normalized\+Self} (void)  throw (std\+::runtime\+\_\+error)
+\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classvct_dynamic_vector_base_af017ae93f1ac2b0bb0431a0aedb79ca1}{vct\+Dynamic\+Vector\+Loop\+Engines}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$class vct\+Dynamic\+Vector\+Base$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$}
+
+This class provides all the const methods inherited from vct\+Const\+Vector\+Base, and extends them with non-\/const methods, such as Sum\+Of.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classvct_dynamic_const_vector_base}{vct\+Dynamic\+Const\+Vector\+Base} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classvct_dynamic_vector_base_a773a8005371ea8d078a842eff2cb719f}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!Base\+Type@{Base\+Type}}
+\index{Base\+Type@{Base\+Type}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{Base\+Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ typedef {\bf vct\+Dynamic\+Const\+Vector\+Base}$<$\+\_\+vector\+Owner\+Type, \+\_\+element\+Type$>$ {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::{\bf Base\+Type}}\label{classvct_dynamic_vector_base_a773a8005371ea8d078a842eff2cb719f}
+Type of the base class. \hypertarget{classvct_dynamic_vector_base_adf3a8f5fcdecc355b9930fa2166e3fb6}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!const\+\_\+iterator@{const\+\_\+iterator}}
+\index{const\+\_\+iterator@{const\+\_\+iterator}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{const\+\_\+iterator}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ typedef {\bf Base\+Type\+::const\+\_\+iterator} {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::{\bf const\+\_\+iterator}}\label{classvct_dynamic_vector_base_adf3a8f5fcdecc355b9930fa2166e3fb6}
+\hypertarget{classvct_dynamic_vector_base_a19db937e3f8b2fdc7c7d6e720c2bc9b3}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!const\+\_\+reverse\+\_\+iterator@{const\+\_\+reverse\+\_\+iterator}}
+\index{const\+\_\+reverse\+\_\+iterator@{const\+\_\+reverse\+\_\+iterator}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{const\+\_\+reverse\+\_\+iterator}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ typedef {\bf Base\+Type\+::const\+\_\+reverse\+\_\+iterator} {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::{\bf const\+\_\+reverse\+\_\+iterator}}\label{classvct_dynamic_vector_base_a19db937e3f8b2fdc7c7d6e720c2bc9b3}
+\hypertarget{classvct_dynamic_vector_base_a62fcc6341849207c5273566d0bce3cf5}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!Copy\+Type@{Copy\+Type}}
+\index{Copy\+Type@{Copy\+Type}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{Copy\+Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ typedef {\bf Base\+Type\+::\+Copy\+Type} {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::{\bf Copy\+Type}}\label{classvct_dynamic_vector_base_a62fcc6341849207c5273566d0bce3cf5}
+\hypertarget{classvct_dynamic_vector_base_a74f36531adfd7ec68ac6500176134156}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!Element\+Va\+Arg\+Promotion@{Element\+Va\+Arg\+Promotion}}
+\index{Element\+Va\+Arg\+Promotion@{Element\+Va\+Arg\+Promotion}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{Element\+Va\+Arg\+Promotion}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ typedef {\bf Type\+Traits\+::\+Va\+Arg\+Promotion} {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::{\bf Element\+Va\+Arg\+Promotion}}\label{classvct_dynamic_vector_base_a74f36531adfd7ec68ac6500176134156}
+\hypertarget{classvct_dynamic_vector_base_a5f711892fff6a5b01aa014db476f3084}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!iterator@{iterator}}
+\index{iterator@{iterator}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{iterator}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ typedef {\bf Base\+Type\+::iterator} {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::{\bf iterator}}\label{classvct_dynamic_vector_base_a5f711892fff6a5b01aa014db476f3084}
+\hypertarget{classvct_dynamic_vector_base_ad569da2c70b9f9468f466f59535d53c7}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!reverse\+\_\+iterator@{reverse\+\_\+iterator}}
+\index{reverse\+\_\+iterator@{reverse\+\_\+iterator}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{reverse\+\_\+iterator}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ typedef {\bf Base\+Type\+::reverse\+\_\+iterator} {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::{\bf reverse\+\_\+iterator}}\label{classvct_dynamic_vector_base_ad569da2c70b9f9468f466f59535d53c7}
+\hypertarget{classvct_dynamic_vector_base_ae4c00cc291df57593d6a73c838ae897a}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!This\+Type@{This\+Type}}
+\index{This\+Type@{This\+Type}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{This\+Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ typedef {\bf vct\+Dynamic\+Vector\+Base} {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::{\bf This\+Type}}\label{classvct_dynamic_vector_base_ae4c00cc291df57593d6a73c838ae897a}
+\hypertarget{classvct_dynamic_vector_base_ae5ebb885e67454fa18cb8101f1acc8dd}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!Type\+Traits@{Type\+Traits}}
+\index{Type\+Traits@{Type\+Traits}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{Type\+Traits}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ typedef class {\bf cmn\+Type\+Traits}$<$ value\+\_\+type $>$ {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::{\bf Type\+Traits}}\label{classvct_dynamic_vector_base_ae5ebb885e67454fa18cb8101f1acc8dd}
+Type traits for the elements of the vector. \hypertarget{classvct_dynamic_vector_base_a563d79f5b4dd71f037192fe2961b48eb}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!Vector\+Owner\+Type@{Vector\+Owner\+Type}}
+\index{Vector\+Owner\+Type@{Vector\+Owner\+Type}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{Vector\+Owner\+Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ typedef \+\_\+vector\+Owner\+Type {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::{\bf Vector\+Owner\+Type}}\label{classvct_dynamic_vector_base_a563d79f5b4dd71f037192fe2961b48eb}
+\hypertarget{classvct_dynamic_vector_base_ad3db797a792ca2ced6433a42b0fa54d6}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!Vector\+Value\+Type@{Vector\+Value\+Type}}
+\index{Vector\+Value\+Type@{Vector\+Value\+Type}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{Vector\+Value\+Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ typedef {\bf Base\+Type\+::\+Vector\+Value\+Type} {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::{\bf Vector\+Value\+Type}}\label{classvct_dynamic_vector_base_ad3db797a792ca2ced6433a42b0fa54d6}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classvct_dynamic_vector_base_a41137c2be55ad6cfdfedb695e7b82ead}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!Abs\+Of@{Abs\+Of}}
+\index{Abs\+Of@{Abs\+Of}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{Abs\+Of}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ template$<$class \+\_\+\+\_\+vector\+Owner\+Type $>$ {\bf This\+Type}\& {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::Abs\+Of (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$ \&}]{other\+Vector}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_a41137c2be55ad6cfdfedb695e7b82ead}
+Unary elementwise operations on a vector. For each element of the vector \char`\"{}this\char`\"{}, performs $ this[i] \leftarrow op(otherVector[i])$ where $op$ can calculate the absolute value (Abs\+Of), the opposite (Negation\+Of) or the normalized version (Normalized\+Of).
+
+
+\begin{DoxyParams}{Parameters}
+{\em other\+Vector} & The operand of the unary operation.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The vector \char`\"{}this\char`\"{} modified. 
+\end{DoxyReturn}
+\hypertarget{classvct_dynamic_vector_base_ab3c44e0d5224cf4f2dec1d506ab6c604}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!Abs\+Self@{Abs\+Self}}
+\index{Abs\+Self@{Abs\+Self}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{Abs\+Self}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ {\bf This\+Type}\& {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::Abs\+Self (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_ab3c44e0d5224cf4f2dec1d506ab6c604}
+Unary elementwise operations on a vector. For each element of the vector \char`\"{}this\char`\"{}, performs $ this[i] \leftarrow op(this[i])$ where $op$ can calculate the absolute value (Abs\+Self), the opposite (Negation\+Self) or the normalized version (Normalized\+Self).
+
+\begin{DoxyReturn}{Returns}
+The vector \char`\"{}this\char`\"{} modified. 
+\end{DoxyReturn}
+\hypertarget{classvct_dynamic_vector_base_a4eb825f90117f38bfebe2ba99521162e}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!Add@{Add}}
+\index{Add@{Add}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{Add}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ template$<$class \+\_\+\+\_\+vector\+Owner\+Type $>$ {\bf This\+Type}\& {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::Add (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$ \&}]{other\+Vector}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_a4eb825f90117f38bfebe2ba99521162e}
+Store back binary elementwise operations between two vectors. For each element of the vectors, performs $ this[i] \leftarrow op(this[i], otherVector[i])$ where $op$ is either an addition (Add), a subtraction (Subtraction), a multiplication (Elementwise\+Multiply) a division (Elementwise\+Divide), a minimization (Elementwise\+Min) or a maximisation (Elementwise\+Max).
+
+
+\begin{DoxyParams}{Parameters}
+{\em other\+Vector} & The second operand of the binary operation (this\mbox{[}i\mbox{]} is the first operand)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The vector \char`\"{}this\char`\"{} modified. 
+\end{DoxyReturn}
+\hypertarget{classvct_dynamic_vector_base_ac5fd1fdbda2f81924cbbf4de056e5435}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!Add@{Add}}
+\index{Add@{Add}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{Add}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ {\bf This\+Type}\& {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::Add (
+\begin{DoxyParamCaption}
+\item[{const value\+\_\+type}]{scalar}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_ac5fd1fdbda2f81924cbbf4de056e5435}
+Store back binary elementwise operations between a vector and a scalar. For each element of the vector \char`\"{}this\char`\"{}, performs $ this[i] \leftarrow op(this[i], scalar)$ where $op$ is either an addition (Add), a subtraction (Subtract), a multiplication (Multiply), a division (Divide), a minimum (Clip\+Above) or a maximum (Clip\+Below).
+
+
+\begin{DoxyParams}{Parameters}
+{\em scalar} & The second operand of the binary operation (this\mbox{[}i\mbox{]} is the first operand.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The vector \char`\"{}this\char`\"{} modified. 
+\end{DoxyReturn}
+\hypertarget{classvct_dynamic_vector_base_af6ce0db0da09b89aff853c3029ec90e1}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!Add\+Elementwise\+Product\+Of@{Add\+Elementwise\+Product\+Of}}
+\index{Add\+Elementwise\+Product\+Of@{Add\+Elementwise\+Product\+Of}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{Add\+Elementwise\+Product\+Of}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ template$<$class \+\_\+\+\_\+vector\+Owner\+Type1 , class \+\_\+\+\_\+vector\+Owner\+Type2 $>$ {\bf This\+Type}\& {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::Add\+Elementwise\+Product\+Of (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type1, \+\_\+element\+Type $>$ \&}]{vector1, }
+\item[{const {\bf vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type2, \+\_\+element\+Type $>$ \&}]{vector2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_af6ce0db0da09b89aff853c3029ec90e1}
+\hypertarget{classvct_dynamic_vector_base_a26a9316f13b80d311bb2eb356503e5f7}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!Add\+Product\+Of@{Add\+Product\+Of}}
+\index{Add\+Product\+Of@{Add\+Product\+Of}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{Add\+Product\+Of}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ template$<$class \+\_\+\+\_\+vector\+Owner\+Type $>$ {\bf This\+Type}\& {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::Add\+Product\+Of (
+\begin{DoxyParamCaption}
+\item[{const value\+\_\+type}]{scalar, }
+\item[{const {\bf vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$ \&}]{other\+Vector}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_a26a9316f13b80d311bb2eb356503e5f7}
+\hypertarget{classvct_dynamic_vector_base_a0d174f0a9557fd562de13324c14e0b92}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!Assign@{Assign}}
+\index{Assign@{Assign}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{Assign}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ template$<$class \+\_\+\+\_\+vector\+Owner\+Type $>$ {\bf This\+Type}\& {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::Assign (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type, value\+\_\+type $>$ \&}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_a0d174f0a9557fd562de13324c14e0b92}
+Assignment operation between vectors containing the same data type but different owners 
+\begin{DoxyParams}{Parameters}
+{\em other} & The vector to be copied. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classvct_dynamic_vector_base_acec7a6bf6e8e611b45dc7c3553ad72d6}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!Assign@{Assign}}
+\index{Assign@{Assign}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{Assign}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ template$<$class \+\_\+\+\_\+vector\+Owner\+Type $>$ {\bf This\+Type}\& {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::Assign (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type, value\+\_\+type $>$ \&}]{other, }
+\item[{size\+\_\+type}]{length, }
+\item[{size\+\_\+type}]{start\+Position\+This = {\ttfamily 0}, }
+\item[{size\+\_\+type}]{start\+Position\+Other = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_acec7a6bf6e8e611b45dc7c3553ad72d6}
+Assignment operation between vectors containing the same data type but different owners and sizes. The number of elements to be copied must be lower or equal to the vector\textquotesingle{}s size.
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The vector to be copied. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classvct_dynamic_vector_base_ad4afb1dd8544f91213679e148f8aa890}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!Assign@{Assign}}
+\index{Assign@{Assign}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{Assign}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ template$<$class \+\_\+\+\_\+vector\+Owner\+Type , typename \+\_\+\+\_\+element\+Type $>$ {\bf This\+Type}\& {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::Assign (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type, \+\_\+\+\_\+element\+Type $>$ \&}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_ad4afb1dd8544f91213679e148f8aa890}
+\hypertarget{classvct_dynamic_vector_base_a92c5dd44b7b9e737312706c0ba69870b}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!Assign@{Assign}}
+\index{Assign@{Assign}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{Assign}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ template$<$size\+\_\+type \+\_\+\+\_\+size, stride\+\_\+type \+\_\+\+\_\+stride, class \+\_\+\+\_\+element\+Type , class \+\_\+\+\_\+data\+Ptr\+Type $>$ {\bf This\+Type}\& {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::Assign (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+size, \+\_\+\+\_\+stride, \+\_\+\+\_\+element\+Type, \+\_\+\+\_\+data\+Ptr\+Type $>$ \&}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_a92c5dd44b7b9e737312706c0ba69870b}
+\hypertarget{classvct_dynamic_vector_base_a321c52baa29a91ba074899f39c1d8c23}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!Assign@{Assign}}
+\index{Assign@{Assign}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{Assign}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ {\bf This\+Type}\& {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::Assign (
+\begin{DoxyParamCaption}
+\item[{const value\+\_\+type $\ast$}]{elements}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_a321c52baa29a91ba074899f39c1d8c23}
+Assign to this vector values from a C array given as a pointer to value\+\_\+type. The purpose of this method is to simplify the syntax by not necessitating the creation of an explicit vector for the given array. However, we only provide this method for an array of value\+\_\+type. For arrays of other types a vector still needs to be declared.
+
+This method assumes that the input array has the necessary number of elements.
+
+\begin{DoxyReturn}{Returns}
+a reference to this object. 
+\end{DoxyReturn}
+\hypertarget{classvct_dynamic_vector_base_a769dc8306b512b908e694195a3b99831}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!Assign@{Assign}}
+\index{Assign@{Assign}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{Assign}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ {\bf This\+Type}\& {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::Assign (
+\begin{DoxyParamCaption}
+\item[{value\+\_\+type}]{element0, }
+\item[{value\+\_\+type}]{element1, }
+\item[{}]{...}
+\end{DoxyParamCaption}
+) throw  std\+::runtime\+\_\+error) \hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_a769dc8306b512b908e694195a3b99831}
+Assign to this vector using stdarg macros and variable number of arguments. This operation assumes that all the arguments are of type value\+\_\+type, and that their number is equal to the size of the vector. The user may need to explicitly cast the parameters to value\+\_\+type to avoid runtime bugs and errors. We have not checked if stdarg macros can use reference types (probably not), so unlike the other constructors, this constructor takes all arguments by value.
+
+\begin{DoxyNote}{Note}
+This method does not assert that the size is correct, as there is no way to know how many arguments were passed. 
+\end{DoxyNote}
+\hypertarget{classvct_dynamic_vector_base_a03f2316e98cb6eafca55501f12c9172a}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!at@{at}}
+\index{at@{at}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{at}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ reference {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::at (
+\begin{DoxyParamCaption}
+\item[{index\+\_\+type}]{index}
+\end{DoxyParamCaption}
+) throw  std\+::out\+\_\+of\+\_\+range) \hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_a03f2316e98cb6eafca55501f12c9172a}
+Access an element by index (non-\/const). Compare with std\+::vector\+::at. This method can be a handy substitute for the overloaded operator \mbox{[}\mbox{]} when operator overloading is unavailable or inconvenient.
+
+\begin{DoxyReturn}{Returns}
+a non-\/const reference to element\mbox{[}index\mbox{]} 
+\end{DoxyReturn}
+\hypertarget{classvct_dynamic_vector_base_a29413207bf990dc9d3287646d4cc9737}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!at@{at}}
+\index{at@{at}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{at}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ const\+\_\+reference {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::at (
+\begin{DoxyParamCaption}
+\item[{index\+\_\+type}]{index}
+\end{DoxyParamCaption}
+) const throw  std\+::out\+\_\+of\+\_\+range) \hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_a29413207bf990dc9d3287646d4cc9737}
+\hypertarget{classvct_dynamic_vector_base_ab26ac6919f9cbbfa2df0bc60b4c37212}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!begin@{begin}}
+\index{begin@{begin}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{begin}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ {\bf iterator} {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::begin (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_ab26ac6919f9cbbfa2df0bc60b4c37212}
+Returns an iterator on the first element (S\+T\+L compatibility). \hypertarget{classvct_dynamic_vector_base_ac76838f129302af0897b00aa7fc6e369}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!begin@{begin}}
+\index{begin@{begin}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{begin}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ {\bf const\+\_\+iterator} {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::begin (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_ac76838f129302af0897b00aa7fc6e369}
+\hypertarget{classvct_dynamic_vector_base_aa0c44a54e66a3a355da37e5eec4b3835}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!Ceil\+Of@{Ceil\+Of}}
+\index{Ceil\+Of@{Ceil\+Of}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{Ceil\+Of}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ template$<$class \+\_\+\+\_\+vector\+Owner\+Type $>$ {\bf This\+Type}\& {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::Ceil\+Of (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$ \&}]{other\+Vector}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_aa0c44a54e66a3a355da37e5eec4b3835}
+\hypertarget{classvct_dynamic_vector_base_a8ffae784a033f6595e133d4c4abe6b39}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!Ceil\+Self@{Ceil\+Self}}
+\index{Ceil\+Self@{Ceil\+Self}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{Ceil\+Self}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ {\bf This\+Type}\& {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::Ceil\+Self (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_a8ffae784a033f6595e133d4c4abe6b39}
+\hypertarget{classvct_dynamic_vector_base_acb2e769ff0f70bbce2e45d549f8a23c0}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!Clip\+Above@{Clip\+Above}}
+\index{Clip\+Above@{Clip\+Above}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{Clip\+Above}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ {\bf This\+Type}\& {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::Clip\+Above (
+\begin{DoxyParamCaption}
+\item[{const value\+\_\+type}]{upper\+Bound}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_acb2e769ff0f70bbce2e45d549f8a23c0}
+\hypertarget{classvct_dynamic_vector_base_af73430126994c263c1169837a9c9c58d}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!Clip\+Below@{Clip\+Below}}
+\index{Clip\+Below@{Clip\+Below}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{Clip\+Below}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ {\bf This\+Type}\& {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::Clip\+Below (
+\begin{DoxyParamCaption}
+\item[{const value\+\_\+type}]{lower\+Bound}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_af73430126994c263c1169837a9c9c58d}
+\hypertarget{classvct_dynamic_vector_base_a5e3a219ac2bf358961fb67ec48639d6c}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!Clip\+In@{Clip\+In}}
+\index{Clip\+In@{Clip\+In}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{Clip\+In}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ {\bf This\+Type}\& {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::Clip\+In (
+\begin{DoxyParamCaption}
+\item[{const value\+\_\+type}]{bound}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_a5e3a219ac2bf358961fb67ec48639d6c}
+\hypertarget{classvct_dynamic_vector_base_aff114456352f054cfa33dcf55504d488}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!Clipped\+Above\+Of@{Clipped\+Above\+Of}}
+\index{Clipped\+Above\+Of@{Clipped\+Above\+Of}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{Clipped\+Above\+Of}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ template$<$class \+\_\+\+\_\+vector\+Owner\+Type $>$ {\bf This\+Type}\& {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::Clipped\+Above\+Of (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$ \&}]{vector, }
+\item[{const value\+\_\+type}]{upper\+Bound}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_aff114456352f054cfa33dcf55504d488}
+\hypertarget{classvct_dynamic_vector_base_a4915805fdc719f586d0543e37c253b76}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!Clipped\+Above\+Of@{Clipped\+Above\+Of}}
+\index{Clipped\+Above\+Of@{Clipped\+Above\+Of}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{Clipped\+Above\+Of}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ template$<$class \+\_\+\+\_\+vector\+Owner\+Type $>$ {\bf This\+Type}\& {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::Clipped\+Above\+Of (
+\begin{DoxyParamCaption}
+\item[{const value\+\_\+type}]{upper\+Bound, }
+\item[{const {\bf vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$ \&}]{vector}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_a4915805fdc719f586d0543e37c253b76}
+\hypertarget{classvct_dynamic_vector_base_adc04ce9cda9d9c7535f625cb114b334a}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!Clipped\+Below\+Of@{Clipped\+Below\+Of}}
+\index{Clipped\+Below\+Of@{Clipped\+Below\+Of}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{Clipped\+Below\+Of}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ template$<$class \+\_\+\+\_\+vector\+Owner\+Type $>$ {\bf This\+Type}\& {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::Clipped\+Below\+Of (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$ \&}]{vector, }
+\item[{const value\+\_\+type}]{lower\+Bound}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_adc04ce9cda9d9c7535f625cb114b334a}
+\hypertarget{classvct_dynamic_vector_base_a05e54537bddcec043c39976525b0bcd7}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!Clipped\+Below\+Of@{Clipped\+Below\+Of}}
+\index{Clipped\+Below\+Of@{Clipped\+Below\+Of}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{Clipped\+Below\+Of}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ template$<$class \+\_\+\+\_\+vector\+Owner\+Type $>$ {\bf This\+Type}\& {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::Clipped\+Below\+Of (
+\begin{DoxyParamCaption}
+\item[{const value\+\_\+type}]{lower\+Bound, }
+\item[{const {\bf vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$ \&}]{vector}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_a05e54537bddcec043c39976525b0bcd7}
+\hypertarget{classvct_dynamic_vector_base_a2a41f6dd284eee6ee782a554fd7ab54b}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!Clipped\+In\+Of@{Clipped\+In\+Of}}
+\index{Clipped\+In\+Of@{Clipped\+In\+Of}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{Clipped\+In\+Of}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ template$<$class \+\_\+\+\_\+vector\+Owner\+Type $>$ {\bf This\+Type}\& {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::Clipped\+In\+Of (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$ \&}]{vector, }
+\item[{const value\+\_\+type}]{bound}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_a2a41f6dd284eee6ee782a554fd7ab54b}
+\hypertarget{classvct_dynamic_vector_base_a26861762ef763c10ffcd9bc02530d291}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!Clipped\+In\+Of@{Clipped\+In\+Of}}
+\index{Clipped\+In\+Of@{Clipped\+In\+Of}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{Clipped\+In\+Of}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ template$<$class \+\_\+\+\_\+vector\+Owner\+Type $>$ {\bf This\+Type}\& {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::Clipped\+In\+Of (
+\begin{DoxyParamCaption}
+\item[{const value\+\_\+type}]{bound, }
+\item[{const {\bf vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$ \&}]{vector}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_a26861762ef763c10ffcd9bc02530d291}
+\hypertarget{classvct_dynamic_vector_base_a821f0b7240811f28a154aab6dd91f5e6}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!Concatenation\+Of@{Concatenation\+Of}}
+\index{Concatenation\+Of@{Concatenation\+Of}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{Concatenation\+Of}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ template$<$class \+\_\+\+\_\+vector\+Owner\+Type , class \+\_\+\+\_\+element\+Type $>$ {\bf This\+Type}\& {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::Concatenation\+Of (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type, \+\_\+\+\_\+element\+Type $>$ \&}]{other\+Vector, }
+\item[{\+\_\+\+\_\+element\+Type}]{last\+Element}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_a821f0b7240811f28a154aab6dd91f5e6}
+Concatenate a single element at the end of a shorter-\/by-\/1 vector to obtain a vector of my size. The concatenation result is stored in this vector. The function is useful, e.\+g., when embedding vectors from R$^\wedge$n into R$^\wedge$\{n+1\} or into homogeneous space. \hypertarget{classvct_dynamic_vector_base_a716dd14b3357992e5c4b8c395a93e0b3}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!Cross\+Product\+Of@{Cross\+Product\+Of}}
+\index{Cross\+Product\+Of@{Cross\+Product\+Of}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{Cross\+Product\+Of}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ template$<$class \+\_\+\+\_\+vector\+Owner\+Type1 , class \+\_\+\+\_\+vector\+Owner\+Type2 $>$ void {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::Cross\+Product\+Of (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type1, \+\_\+element\+Type $>$ \&}]{input\+Vector1, }
+\item[{const {\bf vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type2, \+\_\+element\+Type $>$ \&}]{input\+Vector2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_a716dd14b3357992e5c4b8c395a93e0b3}
+Cross Product of two vectors. This method uses \hyperlink{group__cisst_common_ga6a12b7031ea38ac5bf5937b8633c97ff}{C\+M\+N\+\_\+\+A\+S\+S\+E\+R\+T} to check that the size of the vector is 3, and can only be performed on arguments vectors of size 3. \hypertarget{classvct_dynamic_vector_base_a5aaf9ec315eff49da3966255f7378ab8}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!Difference\+Of@{Difference\+Of}}
+\index{Difference\+Of@{Difference\+Of}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{Difference\+Of}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ template$<$class \+\_\+\+\_\+vector\+Owner\+Type1 , class \+\_\+\+\_\+vector\+Owner\+Type2 $>$ {\bf This\+Type}\& {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::Difference\+Of (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type1, \+\_\+element\+Type $>$ \&}]{vector1, }
+\item[{const {\bf vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type2, \+\_\+element\+Type $>$ \&}]{vector2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_a5aaf9ec315eff49da3966255f7378ab8}
+\hypertarget{classvct_dynamic_vector_base_a718ed377442500d229e086d991930b6b}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!Difference\+Of@{Difference\+Of}}
+\index{Difference\+Of@{Difference\+Of}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{Difference\+Of}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ template$<$class \+\_\+\+\_\+vector\+Owner\+Type $>$ {\bf This\+Type}\& {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::Difference\+Of (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$ \&}]{vector, }
+\item[{const value\+\_\+type}]{scalar}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_a718ed377442500d229e086d991930b6b}
+\hypertarget{classvct_dynamic_vector_base_afb5e23e0a2b99a13b467d748e9cabb1f}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!Difference\+Of@{Difference\+Of}}
+\index{Difference\+Of@{Difference\+Of}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{Difference\+Of}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ template$<$class \+\_\+\+\_\+vector\+Owner\+Type $>$ {\bf This\+Type}\& {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::Difference\+Of (
+\begin{DoxyParamCaption}
+\item[{const value\+\_\+type}]{scalar, }
+\item[{const {\bf vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$ \&}]{vector}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_afb5e23e0a2b99a13b467d748e9cabb1f}
+\hypertarget{classvct_dynamic_vector_base_a4716f1b6eb5b3373f023c77c775abace}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!Divide@{Divide}}
+\index{Divide@{Divide}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{Divide}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ {\bf This\+Type}\& {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::Divide (
+\begin{DoxyParamCaption}
+\item[{const value\+\_\+type}]{scalar}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_a4716f1b6eb5b3373f023c77c775abace}
+\hypertarget{classvct_dynamic_vector_base_a8b1a7efd0d0bb21b701a4461d79c7da2}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!Element@{Element}}
+\index{Element@{Element}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{Element}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ reference {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::Element (
+\begin{DoxyParamCaption}
+\item[{index\+\_\+type}]{index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_a8b1a7efd0d0bb21b701a4461d79c7da2}
+Access an element by index (non const). This method allows to access an element without any bounds checking.
+
+\begin{DoxyReturn}{Returns}
+a reference to the element at index 
+\end{DoxyReturn}
+\hypertarget{classvct_dynamic_vector_base_a991666c27b8c59dbf0548aa635b8e3c5}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!Element@{Element}}
+\index{Element@{Element}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{Element}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ const\+\_\+reference {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::Element (
+\begin{DoxyParamCaption}
+\item[{index\+\_\+type}]{index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_a991666c27b8c59dbf0548aa635b8e3c5}
+\hypertarget{classvct_dynamic_vector_base_a34ebdb5ea47bb05882b5db91c1a4987a}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!Elementwise\+Clip\+In@{Elementwise\+Clip\+In}}
+\index{Elementwise\+Clip\+In@{Elementwise\+Clip\+In}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{Elementwise\+Clip\+In}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ template$<$class \+\_\+\+\_\+vector\+Owner\+Type $>$ {\bf This\+Type}\& {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::Elementwise\+Clip\+In (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$ \&}]{bound\+Vector}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_a34ebdb5ea47bb05882b5db91c1a4987a}
+\hypertarget{classvct_dynamic_vector_base_a9a5e7b9273dd0a6bcd1634e87ce30cb0}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!Elementwise\+Clipped\+In\+Of@{Elementwise\+Clipped\+In\+Of}}
+\index{Elementwise\+Clipped\+In\+Of@{Elementwise\+Clipped\+In\+Of}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{Elementwise\+Clipped\+In\+Of}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ template$<$class \+\_\+\+\_\+vector\+Owner\+Type1 , class \+\_\+\+\_\+vector\+Owner\+Type2 $>$ {\bf This\+Type}\& {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::Elementwise\+Clipped\+In\+Of (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type1, \+\_\+element\+Type $>$ \&}]{bound\+Vector, }
+\item[{const {\bf vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type2, \+\_\+element\+Type $>$ \&}]{vector}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_a9a5e7b9273dd0a6bcd1634e87ce30cb0}
+\hypertarget{classvct_dynamic_vector_base_a20bfdee5188de2db037dd17a006c5db8}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!Elementwise\+Divide@{Elementwise\+Divide}}
+\index{Elementwise\+Divide@{Elementwise\+Divide}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{Elementwise\+Divide}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ template$<$class \+\_\+\+\_\+vector\+Owner\+Type $>$ {\bf This\+Type}\& {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::Elementwise\+Divide (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$ \&}]{other\+Vector}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_a20bfdee5188de2db037dd17a006c5db8}
+\hypertarget{classvct_dynamic_vector_base_a9d782455c955138903ef49a02b173aad}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!Elementwise\+Max@{Elementwise\+Max}}
+\index{Elementwise\+Max@{Elementwise\+Max}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{Elementwise\+Max}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ template$<$class \+\_\+\+\_\+vector\+Owner\+Type $>$ {\bf This\+Type}\& {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::Elementwise\+Max (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$ \&}]{other\+Vector}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_a9d782455c955138903ef49a02b173aad}
+\hypertarget{classvct_dynamic_vector_base_ab3874cad21ff8758f4df3171a347e534}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!Elementwise\+Max\+Of@{Elementwise\+Max\+Of}}
+\index{Elementwise\+Max\+Of@{Elementwise\+Max\+Of}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{Elementwise\+Max\+Of}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ template$<$class \+\_\+\+\_\+vector\+Owner\+Type1 , class \+\_\+\+\_\+vector\+Owner\+Type2 $>$ {\bf This\+Type}\& {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::Elementwise\+Max\+Of (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type1, \+\_\+element\+Type $>$ \&}]{vector1, }
+\item[{const {\bf vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type2, \+\_\+element\+Type $>$ \&}]{vector2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_ab3874cad21ff8758f4df3171a347e534}
+\hypertarget{classvct_dynamic_vector_base_afa0399fb7fb0ac76bef4c6550696cbdd}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!Elementwise\+Min@{Elementwise\+Min}}
+\index{Elementwise\+Min@{Elementwise\+Min}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{Elementwise\+Min}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ template$<$class \+\_\+\+\_\+vector\+Owner\+Type $>$ {\bf This\+Type}\& {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::Elementwise\+Min (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$ \&}]{other\+Vector}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_afa0399fb7fb0ac76bef4c6550696cbdd}
+\hypertarget{classvct_dynamic_vector_base_abedada58a344d1b9d9905c72d953d9e8}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!Elementwise\+Min\+Of@{Elementwise\+Min\+Of}}
+\index{Elementwise\+Min\+Of@{Elementwise\+Min\+Of}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{Elementwise\+Min\+Of}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ template$<$class \+\_\+\+\_\+vector\+Owner\+Type1 , class \+\_\+\+\_\+vector\+Owner\+Type2 $>$ {\bf This\+Type}\& {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::Elementwise\+Min\+Of (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type1, \+\_\+element\+Type $>$ \&}]{vector1, }
+\item[{const {\bf vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type2, \+\_\+element\+Type $>$ \&}]{vector2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_abedada58a344d1b9d9905c72d953d9e8}
+\hypertarget{classvct_dynamic_vector_base_aa1dd17f2ca5aa677ae54f469de2e3c5c}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!Elementwise\+Multiply@{Elementwise\+Multiply}}
+\index{Elementwise\+Multiply@{Elementwise\+Multiply}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{Elementwise\+Multiply}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ template$<$class \+\_\+\+\_\+vector\+Owner\+Type $>$ {\bf This\+Type}\& {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::Elementwise\+Multiply (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$ \&}]{other\+Vector}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_aa1dd17f2ca5aa677ae54f469de2e3c5c}
+\hypertarget{classvct_dynamic_vector_base_afc8c54fbb85155eefbeaf1d2d31fcc84}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!Elementwise\+Product\+Of@{Elementwise\+Product\+Of}}
+\index{Elementwise\+Product\+Of@{Elementwise\+Product\+Of}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{Elementwise\+Product\+Of}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ template$<$class \+\_\+\+\_\+vector\+Owner\+Type1 , class \+\_\+\+\_\+vector\+Owner\+Type2 $>$ {\bf This\+Type}\& {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::Elementwise\+Product\+Of (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type1, \+\_\+element\+Type $>$ \&}]{vector1, }
+\item[{const {\bf vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type2, \+\_\+element\+Type $>$ \&}]{vector2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_afc8c54fbb85155eefbeaf1d2d31fcc84}
+\hypertarget{classvct_dynamic_vector_base_a39deeeee45de88cd2408d8e4de3306fb}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!Elementwise\+Ratio\+Of@{Elementwise\+Ratio\+Of}}
+\index{Elementwise\+Ratio\+Of@{Elementwise\+Ratio\+Of}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{Elementwise\+Ratio\+Of}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ template$<$class \+\_\+\+\_\+vector\+Owner\+Type1 , class \+\_\+\+\_\+vector\+Owner\+Type2 $>$ {\bf This\+Type}\& {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::Elementwise\+Ratio\+Of (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type1, \+\_\+element\+Type $>$ \&}]{vector1, }
+\item[{const {\bf vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type2, \+\_\+element\+Type $>$ \&}]{vector2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_a39deeeee45de88cd2408d8e4de3306fb}
+\hypertarget{classvct_dynamic_vector_base_a0db66404e972562ed8952947248c4be4}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!end@{end}}
+\index{end@{end}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{end}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ {\bf iterator} {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::end (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_a0db66404e972562ed8952947248c4be4}
+Returns an iterator on the last element (S\+T\+L compatibility). \hypertarget{classvct_dynamic_vector_base_a98e165c1af677afb6dfc91d22cb7b422}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!end@{end}}
+\index{end@{end}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{end}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ {\bf const\+\_\+iterator} {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::end (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_a98e165c1af677afb6dfc91d22cb7b422}
+\hypertarget{classvct_dynamic_vector_base_ad2bbab4a18c78a546aa5e182206f6edb}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!Fast\+Copy\+Of@{Fast\+Copy\+Of}}
+\index{Fast\+Copy\+Of@{Fast\+Copy\+Of}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{Fast\+Copy\+Of}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ template$<$class \+\_\+\+\_\+vector\+Owner\+Type $>$ bool {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::Fast\+Copy\+Of (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type, value\+\_\+type $>$ \&}]{source, }
+\item[{bool}]{perform\+Safety\+Checks = {\ttfamily true}}
+\end{DoxyParamCaption}
+) throw  std\+::runtime\+\_\+error) \hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_ad2bbab4a18c78a546aa5e182206f6edb}
+Fast copy. This method uses {\ttfamily memcpy} whenever it is possible to perform a fast copy from another vector to this vector.
+
+
+\begin{DoxyItemize}
+\item The method will first verify that the source and destination have the same size and throws an exception otherwise ({\ttfamily std\+::runtime\+\_\+error}). See \hyperlink{cmn_throw_8h_a6fe29a0b6f112fe0032896bb904f8377}{cmn\+Throw} for details.
+\item If any of the two vectors is not compact, this method will return {\ttfamily false}. If both vectors are compact, a {\ttfamily memcpy} is performed and the method returns {\ttfamily true}.
+\item To avoid the tests above, one can set the parameter {\ttfamily perform\+Safety\+Checks} to {\ttfamily false}. This should be used only when the programmer knows for sure that the source and destination are compatible (size and compactness).
+\item As opposed to Assign, this method doesn\textquotesingle{}t perform any type conversion.
+\item Since no constructor is called for the contained elements, this function performs a \char`\"{}shallow copy\char`\"{}. If the contained objects have a pointer as data member, the copied object will carry on the same pointer (hence pointing at the same memory block which could easily lead to bugs).
+\end{DoxyItemize}
+
+The basic and safe use of this method for a vector would be\+: 
+\begin{DoxyCode}
+\textcolor{keywordflow}{if} (!destination.FastCopyOf(source)) \{
+    destination.Assign(source);
+\}
+\end{DoxyCode}
+
+
+If the method is to be called many times (in a loop for example), it is recommended to check that the source and destination are compatible once and then use the option to turn off the different safety checks for each Fast\+Copy\+Of. 
+\begin{DoxyCode}
+\textcolor{keywordtype}{bool} canUseFastCopy = destination.FastCopyCompatible(source);
+\hyperlink{namespacevct_a50405d87494dce1f22ee3930ca285ee9}{vct::index\_type} index;
+\textcolor{keywordflow}{for} (index = 0; index < 1000; index++) \{
+    DoSomethingUseful(source);
+    \textcolor{keywordflow}{if} (canUseFastCopy) \{
+        destination.FastCopyOf(source, \textcolor{keyword}{false}); \textcolor{comment}{// Do not check again}
+    \} \textcolor{keywordflow}{else} \{
+        destination.Assign(source);
+    \}
+\}
+\end{DoxyCode}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em source} & Vector used to set the content of this vector.\\
+\hline
+{\em perform\+Safety\+Checks} & Flag set to {\ttfamily false} to avoid safety checks, use with extreme caution. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classvct_dynamic_vector_base_a12155c8c505faf9e77a30a0d430f900f}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!Fast\+Copy\+Of@{Fast\+Copy\+Of}}
+\index{Fast\+Copy\+Of@{Fast\+Copy\+Of}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{Fast\+Copy\+Of}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ template$<$size\+\_\+type \+\_\+\+\_\+size, stride\+\_\+type \+\_\+\+\_\+stride, class \+\_\+\+\_\+data\+Ptr\+Type $>$ bool {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::Fast\+Copy\+Of (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+size, \+\_\+\+\_\+stride, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type $>$ \&}]{source, }
+\item[{bool}]{perform\+Safety\+Checks = {\ttfamily true}}
+\end{DoxyParamCaption}
+) throw  std\+::runtime\+\_\+error) \hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_a12155c8c505faf9e77a30a0d430f900f}
+\hypertarget{classvct_dynamic_vector_base_ad0f2f07cd961899b254df8ea725d1bc7}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!Floor\+Of@{Floor\+Of}}
+\index{Floor\+Of@{Floor\+Of}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{Floor\+Of}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ template$<$class \+\_\+\+\_\+vector\+Owner\+Type $>$ {\bf This\+Type}\& {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::Floor\+Of (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$ \&}]{other\+Vector}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_ad0f2f07cd961899b254df8ea725d1bc7}
+\hypertarget{classvct_dynamic_vector_base_ab900e7960dbd3dbf857673ed27f29cb2}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!Floor\+Self@{Floor\+Self}}
+\index{Floor\+Self@{Floor\+Self}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{Floor\+Self}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ {\bf This\+Type}\& {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::Floor\+Self (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_ab900e7960dbd3dbf857673ed27f29cb2}
+\hypertarget{classvct_dynamic_vector_base_a68ad74bbcd1f57319a155d6310683088}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!Force\+Assign@{Force\+Assign}}
+\index{Force\+Assign@{Force\+Assign}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{Force\+Assign}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ template$<$class \+\_\+\+\_\+vector\+Owner\+Type , typename \+\_\+\+\_\+element\+Type $>$ {\bf This\+Type}\& {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::Force\+Assign (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type, \+\_\+\+\_\+element\+Type $>$ \&}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_a68ad74bbcd1f57319a155d6310683088}
+\hypertarget{classvct_dynamic_vector_base_ac16a1162151c26e5a12f38e0eaa00c1c}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!Force\+Assign@{Force\+Assign}}
+\index{Force\+Assign@{Force\+Assign}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{Force\+Assign}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ template$<$size\+\_\+type \+\_\+\+\_\+size, stride\+\_\+type \+\_\+\+\_\+stride, class \+\_\+\+\_\+element\+Type , class \+\_\+\+\_\+data\+Ptr\+Type $>$ {\bf This\+Type}\& {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::Force\+Assign (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+size, \+\_\+\+\_\+stride, \+\_\+\+\_\+element\+Type, \+\_\+\+\_\+data\+Ptr\+Type $>$ \&}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_ac16a1162151c26e5a12f38e0eaa00c1c}
+\hypertarget{classvct_dynamic_vector_base_aafb96cc6707729560680238849f6cf02}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!Multiply@{Multiply}}
+\index{Multiply@{Multiply}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{Multiply}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ {\bf This\+Type}\& {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::Multiply (
+\begin{DoxyParamCaption}
+\item[{const value\+\_\+type}]{scalar}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_aafb96cc6707729560680238849f6cf02}
+\hypertarget{classvct_dynamic_vector_base_a9f6f640db32ecb6de8c30fe6e4ea708e}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!Negation\+Of@{Negation\+Of}}
+\index{Negation\+Of@{Negation\+Of}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{Negation\+Of}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ template$<$class \+\_\+\+\_\+vector\+Owner\+Type $>$ {\bf This\+Type}\& {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::Negation\+Of (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$ \&}]{other\+Vector}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_a9f6f640db32ecb6de8c30fe6e4ea708e}
+\hypertarget{classvct_dynamic_vector_base_a569459da915ad59245304445ae699782}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!Negation\+Self@{Negation\+Self}}
+\index{Negation\+Self@{Negation\+Self}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{Negation\+Self}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ {\bf This\+Type}\& {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::Negation\+Self (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_a569459da915ad59245304445ae699782}
+\hypertarget{classvct_dynamic_vector_base_aa5ef903765165168fa48f9c5f8403fd5}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!Normalized\+Of@{Normalized\+Of}}
+\index{Normalized\+Of@{Normalized\+Of}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{Normalized\+Of}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ template$<$class \+\_\+\+\_\+vector\+Owner\+Type $>$ {\bf This\+Type}\& {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::Normalized\+Of (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$ \&}]{other\+Vector}
+\end{DoxyParamCaption}
+) throw  std\+::runtime\+\_\+error) \hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_aa5ef903765165168fa48f9c5f8403fd5}
+\hypertarget{classvct_dynamic_vector_base_a9e20a5576c634ae993c7eca4c35aab98}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!Normalized\+Self@{Normalized\+Self}}
+\index{Normalized\+Self@{Normalized\+Self}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{Normalized\+Self}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ {\bf This\+Type}\& {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::Normalized\+Self (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) throw  std\+::runtime\+\_\+error) \hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_a9e20a5576c634ae993c7eca4c35aab98}
+\hypertarget{classvct_dynamic_vector_base_ae92326b64db6d69f66a07f84f2e4ba51}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!operator()@{operator()}}
+\index{operator()@{operator()}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ reference {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::operator() (
+\begin{DoxyParamCaption}
+\item[{index\+\_\+type}]{index}
+\end{DoxyParamCaption}
+) throw  std\+::out\+\_\+of\+\_\+range) \hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_ae92326b64db6d69f66a07f84f2e4ba51}
+Overloaded operator () for simplified (non-\/const) element access with bounds checking \hypertarget{classvct_dynamic_vector_base_a69688eb852e014ad42579da676dbb855}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!operator()@{operator()}}
+\index{operator()@{operator()}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ const\+\_\+reference {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::operator() (
+\begin{DoxyParamCaption}
+\item[{index\+\_\+type}]{index}
+\end{DoxyParamCaption}
+) const throw  std\+::out\+\_\+of\+\_\+range) \hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_a69688eb852e014ad42579da676dbb855}
+\hypertarget{classvct_dynamic_vector_base_a955c825c03c72580f33a605e8075ffb2}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!operator$\ast$=@{operator$\ast$=}}
+\index{operator$\ast$=@{operator$\ast$=}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{operator$\ast$=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ {\bf This\+Type}\& {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::operator$\ast$= (
+\begin{DoxyParamCaption}
+\item[{const value\+\_\+type}]{scalar}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_a955c825c03c72580f33a605e8075ffb2}
+\hypertarget{classvct_dynamic_vector_base_ac2f6969f2446d396f892de7345b179c5}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{operator+=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ template$<$class \+\_\+\+\_\+vector\+Owner\+Type $>$ {\bf This\+Type}\& {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::operator+= (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$ \&}]{other\+Vector}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_ac2f6969f2446d396f892de7345b179c5}
+\hypertarget{classvct_dynamic_vector_base_a6a60f395f89f628e44566c6d574e9579}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{operator+=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ {\bf This\+Type}\& {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::operator+= (
+\begin{DoxyParamCaption}
+\item[{const value\+\_\+type}]{scalar}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_a6a60f395f89f628e44566c6d574e9579}
+\hypertarget{classvct_dynamic_vector_base_abf61f9e3ee6622ab355b8b34f0fceace}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{operator-\/=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ template$<$class \+\_\+\+\_\+vector\+Owner\+Type $>$ {\bf This\+Type}\& {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::operator-\/= (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$ \&}]{other\+Vector}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_abf61f9e3ee6622ab355b8b34f0fceace}
+\hypertarget{classvct_dynamic_vector_base_a00d36e2c3d0443099567cbe840af0821}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{operator-\/=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ {\bf This\+Type}\& {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::operator-\/= (
+\begin{DoxyParamCaption}
+\item[{const value\+\_\+type}]{scalar}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_a00d36e2c3d0443099567cbe840af0821}
+\hypertarget{classvct_dynamic_vector_base_a273990280eeaaaab279fb696650d1e7f}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!operator/=@{operator/=}}
+\index{operator/=@{operator/=}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{operator/=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ {\bf This\+Type}\& {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::operator/= (
+\begin{DoxyParamCaption}
+\item[{const value\+\_\+type}]{scalar}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_a273990280eeaaaab279fb696650d1e7f}
+\hypertarget{classvct_dynamic_vector_base_a14b5a93889a05a9d29814b269e6df95e}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!operator=@{operator=}}
+\index{operator=@{operator=}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ template$<$class \+\_\+\+\_\+vector\+Owner\+Type , typename \+\_\+\+\_\+element\+Type $>$ {\bf This\+Type}\& {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type, \+\_\+\+\_\+element\+Type $>$ \&}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_a14b5a93889a05a9d29814b269e6df95e}
+\hypertarget{classvct_dynamic_vector_base_a409f03ced63e5f2374ec9847754ab034}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ reference {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{index\+\_\+type}]{index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_a409f03ced63e5f2374ec9847754ab034}
+Access an element by index. \begin{DoxyReturn}{Returns}
+a reference to the element\mbox{[}index\mbox{]} 
+\end{DoxyReturn}
+\hypertarget{classvct_dynamic_vector_base_a88f9f5af3f9381a5a96b60d1eddffe09}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ const\+\_\+reference {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{index\+\_\+type}]{index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_a88f9f5af3f9381a5a96b60d1eddffe09}
+\hypertarget{classvct_dynamic_vector_base_a0aaf6fd5bab4cbdf8d4fa82c714933f4}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!Owner@{Owner}}
+\index{Owner@{Owner}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{Owner}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ const {\bf Vector\+Owner\+Type}\& {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::Owner (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_a0aaf6fd5bab4cbdf8d4fa82c714933f4}
+\hypertarget{classvct_dynamic_vector_base_ab79d7986566cc243e97688fc3f715cfb}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!Owner@{Owner}}
+\index{Owner@{Owner}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{Owner}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ {\bf Vector\+Owner\+Type}\& {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::Owner (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_ab79d7986566cc243e97688fc3f715cfb}
+\hypertarget{classvct_dynamic_vector_base_a00f5d63bffcb55c825b0f75e91c8a291}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!Pointer@{Pointer}}
+\index{Pointer@{Pointer}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{Pointer}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ pointer {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::Pointer (
+\begin{DoxyParamCaption}
+\item[{index\+\_\+type}]{index = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_a00f5d63bffcb55c825b0f75e91c8a291}
+Addition to the S\+T\+L requirements. Return a pointer to an element of the container, specified by its index. \hypertarget{classvct_dynamic_vector_base_afd12e61375a9146ea5b6944b98dadf38}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!Pointer@{Pointer}}
+\index{Pointer@{Pointer}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{Pointer}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ const\+\_\+pointer {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::Pointer (
+\begin{DoxyParamCaption}
+\item[{index\+\_\+type}]{index = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_afd12e61375a9146ea5b6944b98dadf38}
+\hypertarget{classvct_dynamic_vector_base_afabc21a02bc651668a08467c94d63edf}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!Product\+Of@{Product\+Of}}
+\index{Product\+Of@{Product\+Of}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{Product\+Of}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ template$<$class \+\_\+\+\_\+vector\+Owner\+Type $>$ {\bf This\+Type}\& {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::Product\+Of (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$ \&}]{vector, }
+\item[{const value\+\_\+type}]{scalar}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_afabc21a02bc651668a08467c94d63edf}
+\hypertarget{classvct_dynamic_vector_base_a2f7c76bbe958efd932aa4bc0dcce4108}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!Product\+Of@{Product\+Of}}
+\index{Product\+Of@{Product\+Of}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{Product\+Of}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ template$<$class \+\_\+\+\_\+vector\+Owner\+Type $>$ {\bf This\+Type}\& {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::Product\+Of (
+\begin{DoxyParamCaption}
+\item[{const value\+\_\+type}]{scalar, }
+\item[{const {\bf vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$ \&}]{vector}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_a2f7c76bbe958efd932aa4bc0dcce4108}
+\hypertarget{classvct_dynamic_vector_base_aae3e15da4eae6cb4df0d982984b2de42}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!Product\+Of@{Product\+Of}}
+\index{Product\+Of@{Product\+Of}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{Product\+Of}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ template$<$class \+\_\+\+\_\+matrix\+Owner\+Type , class \+\_\+\+\_\+vector\+Owner\+Type $>$ {\bf This\+Type}\& {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::Product\+Of (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Const\+Matrix\+Base}$<$ \+\_\+\+\_\+matrix\+Owner\+Type, \+\_\+element\+Type $>$ \&}]{input\+Matrix, }
+\item[{const {\bf vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$ \&}]{input\+Vector}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_aae3e15da4eae6cb4df0d982984b2de42}
+Product of a matrix and a vector.
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+Matrix} & The first operand of the binary operation\\
+\hline
+{\em input\+Vector} & The second operand of the binary operation\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The vector \char`\"{}this\char`\"{} modified. 
+\end{DoxyReturn}
+\hypertarget{classvct_dynamic_vector_base_ad86a700afbc9feafd2cec7b61db67706}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!Product\+Of@{Product\+Of}}
+\index{Product\+Of@{Product\+Of}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{Product\+Of}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ template$<$class \+\_\+\+\_\+vector\+Owner\+Type , class \+\_\+\+\_\+matrix\+Owner\+Type $>$ {\bf This\+Type}\& {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::Product\+Of (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$ \&}]{input\+Vector, }
+\item[{const {\bf vct\+Dynamic\+Const\+Matrix\+Base}$<$ \+\_\+\+\_\+matrix\+Owner\+Type, \+\_\+element\+Type $>$ \&}]{input\+Matrix}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_ad86a700afbc9feafd2cec7b61db67706}
+Product of a vector and a matrix.
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+Vector} & The first operand of the binary operation\\
+\hline
+{\em input\+Matrix} & The second operand of the binary operation\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The vector \char`\"{}this\char`\"{} modified. 
+\end{DoxyReturn}
+\hypertarget{classvct_dynamic_vector_base_a65511640e701d17de999787dae10624a}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!Ratio\+Of@{Ratio\+Of}}
+\index{Ratio\+Of@{Ratio\+Of}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{Ratio\+Of}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ template$<$class \+\_\+\+\_\+vector\+Owner\+Type $>$ {\bf This\+Type}\& {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::Ratio\+Of (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$ \&}]{vector, }
+\item[{const value\+\_\+type}]{scalar}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_a65511640e701d17de999787dae10624a}
+\hypertarget{classvct_dynamic_vector_base_a7051973a756f647f4b846406f2e91ede}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!Ratio\+Of@{Ratio\+Of}}
+\index{Ratio\+Of@{Ratio\+Of}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{Ratio\+Of}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ template$<$class \+\_\+\+\_\+vector\+Owner\+Type $>$ {\bf This\+Type}\& {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::Ratio\+Of (
+\begin{DoxyParamCaption}
+\item[{const value\+\_\+type}]{scalar, }
+\item[{const {\bf vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$ \&}]{vector}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_a7051973a756f647f4b846406f2e91ede}
+\hypertarget{classvct_dynamic_vector_base_a051fd4d8e7a0831cf8e20c3228a24b9f}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!rbegin@{rbegin}}
+\index{rbegin@{rbegin}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{rbegin}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ {\bf reverse\+\_\+iterator} {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::rbegin (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_a051fd4d8e7a0831cf8e20c3228a24b9f}
+Returns a reverse iterator on the last element (S\+T\+L compatibility). \hypertarget{classvct_dynamic_vector_base_a328e7ffa7b9da097998f9d279fc43c2f}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!rbegin@{rbegin}}
+\index{rbegin@{rbegin}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{rbegin}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ {\bf const\+\_\+reverse\+\_\+iterator} {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::rbegin (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_a328e7ffa7b9da097998f9d279fc43c2f}
+\hypertarget{classvct_dynamic_vector_base_ab2704e8e0ca57fb063515cf17424cbb5}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!rend@{rend}}
+\index{rend@{rend}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{rend}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ {\bf reverse\+\_\+iterator} {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::rend (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_ab2704e8e0ca57fb063515cf17424cbb5}
+Returns a reverse iterator on the element before first (S\+T\+L compatibility). \hypertarget{classvct_dynamic_vector_base_ab997e462e868b68f456fde3b6a110ac6}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!rend@{rend}}
+\index{rend@{rend}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{rend}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ {\bf const\+\_\+reverse\+\_\+iterator} {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::rend (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_ab997e462e868b68f456fde3b6a110ac6}
+\hypertarget{classvct_dynamic_vector_base_a5c4b71a4400bd77cfd0978f6ea5306d4}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!Select\+From@{Select\+From}}
+\index{Select\+From@{Select\+From}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{Select\+From}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ template$<$class \+\_\+\+\_\+input\+Vector\+Owner , class \+\_\+\+\_\+index\+Vector\+Owner $>$ void {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::Select\+From (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+input\+Vector\+Owner, \+\_\+element\+Type $>$ \&}]{input, }
+\item[{const {\bf vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+index\+Vector\+Owner, index\+\_\+type $>$ \&}]{index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_a5c4b71a4400bd77cfd0978f6ea5306d4}
+Select a subset of elements by a given sequence of indexes. The selected elements from the input vector are stored in this vector. There is no requirement of order or uniqueness in the indexes sequence, and no verification that the indexes are valid. \hypertarget{classvct_dynamic_vector_base_a0cf13429dcd83b565c3cbd7e30ecdec7}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!Set\+All@{Set\+All}}
+\index{Set\+All@{Set\+All}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{Set\+All}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ value\+\_\+type {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::Set\+All (
+\begin{DoxyParamCaption}
+\item[{const value\+\_\+type}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_a0cf13429dcd83b565c3cbd7e30ecdec7}
+Assign the given value to all the elements. 
+\begin{DoxyParams}{Parameters}
+{\em value} & the value used to set all the elements of the vector \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value used to set all the elements 
+\end{DoxyReturn}
+\hypertarget{classvct_dynamic_vector_base_a824ce9d2c9706552ca6116750eeec386}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!Subtract@{Subtract}}
+\index{Subtract@{Subtract}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{Subtract}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ template$<$class \+\_\+\+\_\+vector\+Owner\+Type $>$ {\bf This\+Type}\& {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::Subtract (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$ \&}]{other\+Vector}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_a824ce9d2c9706552ca6116750eeec386}
+\hypertarget{classvct_dynamic_vector_base_a2d860076420a521f60caad0470f21bdb}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!Subtract@{Subtract}}
+\index{Subtract@{Subtract}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{Subtract}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ {\bf This\+Type}\& {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::Subtract (
+\begin{DoxyParamCaption}
+\item[{const value\+\_\+type}]{scalar}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_a2d860076420a521f60caad0470f21bdb}
+\hypertarget{classvct_dynamic_vector_base_a84f320f980e99e4e0ca50791e2cb1135}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!Sum\+Of@{Sum\+Of}}
+\index{Sum\+Of@{Sum\+Of}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{Sum\+Of}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ template$<$class \+\_\+\+\_\+vector\+Owner\+Type1 , class \+\_\+\+\_\+vector\+Owner\+Type2 $>$ {\bf This\+Type}\& {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::Sum\+Of (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type1, \+\_\+element\+Type $>$ \&}]{vector1, }
+\item[{const {\bf vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type2, \+\_\+element\+Type $>$ \&}]{vector2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_a84f320f980e99e4e0ca50791e2cb1135}
+Binary elementwise operations between two vectors. For each element of the vectors, performs $ this[i] \leftarrow op(vector1[i], vector2[i])$ where $op$ is either an addition (Sum\+Of), a subtraction (Difference\+Of), a multiplication (Elementwise\+Product\+Of), a division (Elementwise\+Ratio\+Of), a minimum (Elementwise\+Min\+Of) or a maximum (Elementwise\+Max\+Of).
+
+
+\begin{DoxyParams}{Parameters}
+{\em vector1} & The first operand of the binary operation\\
+\hline
+{\em vector2} & The second operand of the binary operation\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The vector \char`\"{}this\char`\"{} modified. 
+\end{DoxyReturn}
+\hypertarget{classvct_dynamic_vector_base_a2c0062999ae26dc98c2ba1bfdb98caa0}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!Sum\+Of@{Sum\+Of}}
+\index{Sum\+Of@{Sum\+Of}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{Sum\+Of}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ template$<$class \+\_\+\+\_\+vector\+Owner\+Type $>$ {\bf This\+Type}\& {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::Sum\+Of (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$ \&}]{vector, }
+\item[{const value\+\_\+type}]{scalar}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_a2c0062999ae26dc98c2ba1bfdb98caa0}
+Binary elementwise operations between a vector and a scalar. For each element of the vector \char`\"{}this\char`\"{}, performs $ this[i] \leftarrow op(vector[i], scalar)$ where $op$ is either an addition (Sum\+Of), a subtraction (Difference\+Of), a multiplication (Product\+Of), a division (Ratio\+Of), a minimum (Clipped\+Above\+Of) or a maximum (Clipped\+Below\+Of).
+
+
+\begin{DoxyParams}{Parameters}
+{\em vector} & The first operand of the binary operation. \\
+\hline
+{\em scalar} & The second operand of the binary operation.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The vector \char`\"{}this\char`\"{} modified. 
+\end{DoxyReturn}
+\hypertarget{classvct_dynamic_vector_base_af487dcdd740d3ed4b207d326e5fd6f12}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!Sum\+Of@{Sum\+Of}}
+\index{Sum\+Of@{Sum\+Of}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{Sum\+Of}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ template$<$class \+\_\+\+\_\+vector\+Owner\+Type $>$ {\bf This\+Type}\& {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::Sum\+Of (
+\begin{DoxyParamCaption}
+\item[{const value\+\_\+type}]{scalar, }
+\item[{const {\bf vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$ \&}]{vector}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_af487dcdd740d3ed4b207d326e5fd6f12}
+Binary elementwise operations between a scalar and a vector. For each element of the vector \char`\"{}this\char`\"{}, performs $ this[i] \leftarrow op(scalar, vector[i])$ where $op$ is either an addition (Sum\+Of), a subtraction (Difference\+Of), a multiplication (Product\+Of), a division (Ratio\+Of), a minimum (Clipped\+Above\+Of) or a maximum (Clipped\+Below\+Of).
+
+
+\begin{DoxyParams}{Parameters}
+{\em scalar} & The first operand of the binary operation. \\
+\hline
+{\em vector} & The second operand of the binary operation.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The vector \char`\"{}this\char`\"{} modified. 
+\end{DoxyReturn}
+\hypertarget{classvct_dynamic_vector_base_aa18ec9599ba05be407f344ee33085188}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!Swap\+Elements\+With@{Swap\+Elements\+With}}
+\index{Swap\+Elements\+With@{Swap\+Elements\+With}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{Swap\+Elements\+With}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ template$<$class \+\_\+\+\_\+vector\+Owner\+Type $>$ {\bf This\+Type}\& {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::Swap\+Elements\+With (
+\begin{DoxyParamCaption}
+\item[{{\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$ \&}]{other\+Vector}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_aa18ec9599ba05be407f344ee33085188}
+Swap the elements of both vectors with each other. \hypertarget{classvct_dynamic_vector_base_a002c5a49abe5a7d4f4480c882b63739d}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!V\+C\+T\+\_\+\+C\+O\+N\+T\+A\+I\+N\+E\+R\+\_\+\+T\+R\+A\+I\+T\+S\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+S@{V\+C\+T\+\_\+\+C\+O\+N\+T\+A\+I\+N\+E\+R\+\_\+\+T\+R\+A\+I\+T\+S\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+S}}
+\index{V\+C\+T\+\_\+\+C\+O\+N\+T\+A\+I\+N\+E\+R\+\_\+\+T\+R\+A\+I\+T\+S\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+S@{V\+C\+T\+\_\+\+C\+O\+N\+T\+A\+I\+N\+E\+R\+\_\+\+T\+R\+A\+I\+T\+S\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+S}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{V\+C\+T\+\_\+\+C\+O\+N\+T\+A\+I\+N\+E\+R\+\_\+\+T\+R\+A\+I\+T\+S\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+S}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::V\+C\+T\+\_\+\+C\+O\+N\+T\+A\+I\+N\+E\+R\+\_\+\+T\+R\+A\+I\+T\+S\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+S (
+\begin{DoxyParamCaption}
+\item[{\+\_\+element\+Type}]{}
+\end{DoxyParamCaption}
+)}\label{classvct_dynamic_vector_base_a002c5a49abe5a7d4f4480c882b63739d}
+\hypertarget{classvct_dynamic_vector_base_acdbaaa52e7ec8209050a6edac83e363a}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!W@{W}}
+\index{W@{W}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{W}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ value\+\_\+type\& {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::W (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_acdbaaa52e7ec8209050a6edac83e363a}
+Returns the fourth element of the vector. This method uses \hyperlink{group__cisst_common_ga6a12b7031ea38ac5bf5937b8633c97ff}{C\+M\+N\+\_\+\+A\+S\+S\+E\+R\+T} to check that the size is at least 4. \hypertarget{classvct_dynamic_vector_base_aef2206a0cf3908da039e445207990a66}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!W@{W}}
+\index{W@{W}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{W}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ const value\+\_\+type\& {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::W (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_aef2206a0cf3908da039e445207990a66}
+\hypertarget{classvct_dynamic_vector_base_ac1c2e4fabde849a5adc380e763f5a5a0}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!X@{X}}
+\index{X@{X}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{X}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ value\+\_\+type\& {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::X (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_ac1c2e4fabde849a5adc380e763f5a5a0}
+Returns the first element of the vector. This method uses \hyperlink{group__cisst_common_ga6a12b7031ea38ac5bf5937b8633c97ff}{C\+M\+N\+\_\+\+A\+S\+S\+E\+R\+T} to check that the size is at least 1. \hypertarget{classvct_dynamic_vector_base_a23d6b86c6aeda2974ec731e6e5b32286}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!X@{X}}
+\index{X@{X}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{X}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ const value\+\_\+type\& {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::X (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_a23d6b86c6aeda2974ec731e6e5b32286}
+\hypertarget{classvct_dynamic_vector_base_a8c0bad5e6b534f05a395cf4332829427}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!X\+W@{X\+W}}
+\index{X\+W@{X\+W}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{X\+W}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ {\bf vct\+Dynamic\+Vector\+Ref}$<$\+\_\+element\+Type$>$ {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::X\+W (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_a8c0bad5e6b534f05a395cf4332829427}
+Return a (non-\/const) vector reference for the first and fourth elements of this vector. \hypertarget{classvct_dynamic_vector_base_a519032c001cf5abef98eec4a8d507547}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!X\+W@{X\+W}}
+\index{X\+W@{X\+W}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{X\+W}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ {\bf vct\+Dynamic\+Const\+Vector\+Ref}$<$\+\_\+element\+Type$>$ {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::X\+W (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_a519032c001cf5abef98eec4a8d507547}
+\hypertarget{classvct_dynamic_vector_base_ac5eb55ee30f87e702d1bcb521739c923}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!X\+Y@{X\+Y}}
+\index{X\+Y@{X\+Y}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{X\+Y}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ {\bf vct\+Dynamic\+Vector\+Ref}$<$\+\_\+element\+Type$>$ {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::X\+Y (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_ac5eb55ee30f87e702d1bcb521739c923}
+Return a (non-\/const) vector reference for the first two elements of this vector. May be used when switching from homogeneous coordinates to normal. (shadowed from base class). \hypertarget{classvct_dynamic_vector_base_afe423ba4dc5c4a4c1862cecd40d976ea}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!X\+Y@{X\+Y}}
+\index{X\+Y@{X\+Y}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{X\+Y}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ {\bf vct\+Dynamic\+Const\+Vector\+Ref}$<$\+\_\+element\+Type$>$ {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::X\+Y (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_afe423ba4dc5c4a4c1862cecd40d976ea}
+\hypertarget{classvct_dynamic_vector_base_a41e0d558b7e790345d4e5638292dbc31}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!X\+Y\+Z@{X\+Y\+Z}}
+\index{X\+Y\+Z@{X\+Y\+Z}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{X\+Y\+Z}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ {\bf vct\+Dynamic\+Vector\+Ref}$<$\+\_\+element\+Type$>$ {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::X\+Y\+Z (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_a41e0d558b7e790345d4e5638292dbc31}
+Return a (non-\/const) vector reference for the first three elements of this vector. May be used when switching from homogeneous coordinates to normal, or when refering to a subvector of a row or a column inside a small matrix. \hypertarget{classvct_dynamic_vector_base_ae9729a3797a319b7354c0a7de7728acc}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!X\+Y\+Z@{X\+Y\+Z}}
+\index{X\+Y\+Z@{X\+Y\+Z}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{X\+Y\+Z}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ {\bf vct\+Dynamic\+Const\+Vector\+Ref}$<$\+\_\+element\+Type$>$ {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::X\+Y\+Z (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_ae9729a3797a319b7354c0a7de7728acc}
+\hypertarget{classvct_dynamic_vector_base_a039fd2542bf02f1f02d7ba5db6b6c5cf}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!X\+Y\+Z\+W@{X\+Y\+Z\+W}}
+\index{X\+Y\+Z\+W@{X\+Y\+Z\+W}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{X\+Y\+Z\+W}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ {\bf vct\+Dynamic\+Vector\+Ref}$<$\+\_\+element\+Type$>$ {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::X\+Y\+Z\+W (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_a039fd2542bf02f1f02d7ba5db6b6c5cf}
+Return a (non-\/const) vector reference for the first four elements of this vector. May be used when switching from homogeneous coordinates to normal, or when refering to a subvector of a row or a column inside a small matrix. \hypertarget{classvct_dynamic_vector_base_a0c8bf0dd9ff05cc3d77f9c0b1c309138}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!X\+Y\+Z\+W@{X\+Y\+Z\+W}}
+\index{X\+Y\+Z\+W@{X\+Y\+Z\+W}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{X\+Y\+Z\+W}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ {\bf vct\+Dynamic\+Const\+Vector\+Ref}$<$\+\_\+element\+Type$>$ {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::X\+Y\+Z\+W (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_a0c8bf0dd9ff05cc3d77f9c0b1c309138}
+\hypertarget{classvct_dynamic_vector_base_a89314df61e7549d378549ccb87ac626b}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!X\+Z@{X\+Z}}
+\index{X\+Z@{X\+Z}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{X\+Z}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ {\bf vct\+Dynamic\+Vector\+Ref}$<$\+\_\+element\+Type$>$ {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::X\+Z (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_a89314df61e7549d378549ccb87ac626b}
+Return a (non-\/const) vector reference for the first and third elements of this vector. \hypertarget{classvct_dynamic_vector_base_aa9c7bbdbec9e45e55d9e2a40851a69a6}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!X\+Z@{X\+Z}}
+\index{X\+Z@{X\+Z}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{X\+Z}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ {\bf vct\+Dynamic\+Const\+Vector\+Ref}$<$\+\_\+element\+Type$>$ {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::X\+Z (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_aa9c7bbdbec9e45e55d9e2a40851a69a6}
+\hypertarget{classvct_dynamic_vector_base_ac824e0b7985c1665f8bb90c098f6bb1e}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!Y@{Y}}
+\index{Y@{Y}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{Y}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ value\+\_\+type\& {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::Y (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_ac824e0b7985c1665f8bb90c098f6bb1e}
+Returns the second element of the vector. This method uses \hyperlink{group__cisst_common_ga6a12b7031ea38ac5bf5937b8633c97ff}{C\+M\+N\+\_\+\+A\+S\+S\+E\+R\+T} to check that the size is at least 2. \hypertarget{classvct_dynamic_vector_base_a7a7f871ea3a0350db5ee5da093426850}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!Y@{Y}}
+\index{Y@{Y}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{Y}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ const value\+\_\+type\& {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::Y (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_a7a7f871ea3a0350db5ee5da093426850}
+\hypertarget{classvct_dynamic_vector_base_a354e6752fbb9ae3d559f868a47df9ae1}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!Y\+W@{Y\+W}}
+\index{Y\+W@{Y\+W}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{Y\+W}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ {\bf vct\+Dynamic\+Vector\+Ref}$<$\+\_\+element\+Type$>$ {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::Y\+W (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_a354e6752fbb9ae3d559f868a47df9ae1}
+Return a (non-\/const) vector reference for the two elements of this vector beginning on the second. \hypertarget{classvct_dynamic_vector_base_a0831c0124fb285f0f357bd234e1012c4}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!Y\+W@{Y\+W}}
+\index{Y\+W@{Y\+W}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{Y\+W}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ {\bf vct\+Dynamic\+Const\+Vector\+Ref}$<$\+\_\+element\+Type$>$ {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::Y\+W (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_a0831c0124fb285f0f357bd234e1012c4}
+\hypertarget{classvct_dynamic_vector_base_a42ae7ee6df6d93a1248338490e5d2440}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!Y\+Z@{Y\+Z}}
+\index{Y\+Z@{Y\+Z}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{Y\+Z}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ {\bf vct\+Dynamic\+Vector\+Ref}$<$\+\_\+element\+Type$>$ {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::Y\+Z (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_a42ae7ee6df6d93a1248338490e5d2440}
+Return a (non-\/const) vector reference for the two elements of this vector beginning on the second. \hypertarget{classvct_dynamic_vector_base_adb644a21e8df88cbcc256131f7381481}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!Y\+Z@{Y\+Z}}
+\index{Y\+Z@{Y\+Z}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{Y\+Z}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ {\bf vct\+Dynamic\+Const\+Vector\+Ref}$<$\+\_\+element\+Type$>$ {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::Y\+Z (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_adb644a21e8df88cbcc256131f7381481}
+\hypertarget{classvct_dynamic_vector_base_ad7aafd0663f3a997715ecaa20927192b}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!Y\+Z\+W@{Y\+Z\+W}}
+\index{Y\+Z\+W@{Y\+Z\+W}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{Y\+Z\+W}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ {\bf vct\+Dynamic\+Vector\+Ref}$<$\+\_\+element\+Type$>$ {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::Y\+Z\+W (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_ad7aafd0663f3a997715ecaa20927192b}
+Return a (non-\/const) vector reference for the second, third and fourth elements of this vector. \hypertarget{classvct_dynamic_vector_base_ad0fa6ceb43b20c493d8e5b8c58e5914d}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!Y\+Z\+W@{Y\+Z\+W}}
+\index{Y\+Z\+W@{Y\+Z\+W}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{Y\+Z\+W}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ {\bf vct\+Dynamic\+Const\+Vector\+Ref}$<$\+\_\+element\+Type$>$ {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::Y\+Z\+W (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_ad0fa6ceb43b20c493d8e5b8c58e5914d}
+\hypertarget{classvct_dynamic_vector_base_aa689aa7d7b29bd5f370fd3a4f526419c}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!Z@{Z}}
+\index{Z@{Z}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{Z}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ value\+\_\+type\& {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::Z (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_aa689aa7d7b29bd5f370fd3a4f526419c}
+Returns the third element of the vector. This method uses \hyperlink{group__cisst_common_ga6a12b7031ea38ac5bf5937b8633c97ff}{C\+M\+N\+\_\+\+A\+S\+S\+E\+R\+T} to check that the size is at least 3. \hypertarget{classvct_dynamic_vector_base_a933e0e8e08d777d86a02432d2568df47}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!Z@{Z}}
+\index{Z@{Z}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{Z}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ const value\+\_\+type\& {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::Z (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_a933e0e8e08d777d86a02432d2568df47}
+\hypertarget{classvct_dynamic_vector_base_a3b6cf5114c3971757b595c4181759393}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!Zeros@{Zeros}}
+\index{Zeros@{Zeros}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{Zeros}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ bool {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::Zeros (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_a3b6cf5114c3971757b595c4181759393}
+Assign zero to all elements. This methods assumes that the element type has a zero and this zero value can be set using memset(0). If the vector is not compact this method will use Set\+All(0) and memset otherwise. This provides a slightly more efficent way to set all elements to zero.
+
+\begin{DoxyReturn}{Returns}
+true if the vector is compact and memset was used, false otherwise. 
+\end{DoxyReturn}
+\hypertarget{classvct_dynamic_vector_base_a79547eec078c029c39968a24be5ff789}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!Z\+W@{Z\+W}}
+\index{Z\+W@{Z\+W}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{Z\+W}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ {\bf vct\+Dynamic\+Vector\+Ref}$<$\+\_\+element\+Type$>$ {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::Z\+W (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_a79547eec078c029c39968a24be5ff789}
+Return a (non-\/const) vector reference for the two elements of this vector beginning on the third. \hypertarget{classvct_dynamic_vector_base_a6c17bdbbc81a83c91e482e1449eb351b}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!Z\+W@{Z\+W}}
+\index{Z\+W@{Z\+W}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{Z\+W}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ {\bf vct\+Dynamic\+Const\+Vector\+Ref}$<$\+\_\+element\+Type$>$ {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::Z\+W (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_dynamic_vector_base_a6c17bdbbc81a83c91e482e1449eb351b}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classvct_dynamic_vector_base_af017ae93f1ac2b0bb0431a0aedb79ca1}{}\index{vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}!vct\+Dynamic\+Vector\+Loop\+Engines@{vct\+Dynamic\+Vector\+Loop\+Engines}}
+\index{vct\+Dynamic\+Vector\+Loop\+Engines@{vct\+Dynamic\+Vector\+Loop\+Engines}!vct\+Dynamic\+Vector\+Base@{vct\+Dynamic\+Vector\+Base}}
+\subsubsection[{vct\+Dynamic\+Vector\+Loop\+Engines}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ friend class {\bf vct\+Dynamic\+Vector\+Loop\+Engines}\hspace{0.3cm}{\ttfamily [friend]}}\label{classvct_dynamic_vector_base_af017ae93f1ac2b0bb0431a0aedb79ca1}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Vector/\hyperlink{vct_dynamic_vector_base_8h}{vct\+Dynamic\+Vector\+Base.\+h}\end{DoxyCompactItemize}

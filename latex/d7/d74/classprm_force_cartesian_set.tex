@@ -1,0 +1,166 @@
+\hypertarget{classprm_force_cartesian_set}{}\section{prm\+Force\+Cartesian\+Set Class Reference}
+\label{classprm_force_cartesian_set}\index{prm\+Force\+Cartesian\+Set@{prm\+Force\+Cartesian\+Set}}
+
+
+{\ttfamily \#include $<$prm\+Force\+Cartesian\+Set.\+h$>$}
+
+Inheritance diagram for prm\+Force\+Cartesian\+Set\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{d7/d74/classprm_force_cartesian_set}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classprm_motion_base}{prm\+Motion\+Base} \hyperlink{classprm_force_cartesian_set_a1b8582b968aaf818d1305d80d2f7f5df}{Base\+Type}
+\item 
+typedef \hyperlink{classvct_fixed_size_vector}{vct\+Fixed\+Size\+Vector}$<$ double, 6 $>$ \hyperlink{classprm_force_cartesian_set_aef7a9a5a3ce601f7d1f1c752ddb36c00}{Force\+Type}
+\item 
+typedef \hyperlink{classvct_fixed_size_vector}{vct\+Fixed\+Size\+Vector}$<$ bool, 6 $>$ \hyperlink{classprm_force_cartesian_set_abcc1516523be27cf3b572d0d1c463db9}{Mask\+Type}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classprm_force_cartesian_set_a0365087de929b46d3f79bbd55491731c}{prm\+Force\+Cartesian\+Set} ()
+\item 
+\hyperlink{classprm_force_cartesian_set_a456fabc5cecaa75cda0934696d57831d}{prm\+Force\+Cartesian\+Set} (const \hyperlink{classprm_force_cartesian_set_aef7a9a5a3ce601f7d1f1c752ddb36c00}{Force\+Type} \&force, const \hyperlink{classprm_force_cartesian_set_abcc1516523be27cf3b572d0d1c463db9}{Mask\+Type} \&mask)
+\item 
+void \hyperlink{classprm_force_cartesian_set_a38537175a3cf47a82f9b74826605c0c2}{Set\+All} (double force\+Set, bool mask)
+\item 
+virtual \hyperlink{classprm_force_cartesian_set_ac1544bc3e945811b2406f34df9a8d084}{$\sim$prm\+Force\+Cartesian\+Set} ()
+\item 
+void \hyperlink{classprm_force_cartesian_set_a78ba6df453036e7cc2490be6bcc9bf7f}{To\+Stream} (std\+::ostream \&output\+Stream) const 
+\item 
+void \hyperlink{classprm_force_cartesian_set_a5cddf5bcd6c9663b7e435c4b9bddf1af}{To\+Stream\+Raw} (std\+::ostream \&output\+Stream, const char delimiter= \textquotesingle{} \textquotesingle{}, bool header\+Only=false, const std\+::string \&header\+Prefix=\char`\"{}\char`\"{}) const 
+\item 
+void \hyperlink{classprm_force_cartesian_set_a5a62aa3833314ee1df02d8e85b32fa1e}{Serialize\+Raw} (std\+::ostream \&output\+Stream) const 
+\item 
+void \hyperlink{classprm_force_cartesian_set_afed6acd5be75fc38cfee9000a52b6209}{De\+Serialize\+Raw} (std\+::istream \&input\+Stream)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classprm_force_cartesian_set_a7b1376e3debee0dc4e290eeda1836abc}{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+M\+E\+M\+B\+E\+R\+\_\+\+A\+N\+D\+\_\+\+A\+C\+C\+E\+S\+S\+O\+R\+S} (\hyperlink{classprm_force_cartesian_set_aef7a9a5a3ce601f7d1f1c752ddb36c00}{Force\+Type}, Force)
+\item 
+\hyperlink{classprm_force_cartesian_set_a3cb88ba29555b4ff1839a2ddf0933809}{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+M\+E\+M\+B\+E\+R\+\_\+\+A\+N\+D\+\_\+\+A\+C\+C\+E\+S\+S\+O\+R\+S} (\hyperlink{classprm_force_cartesian_set_abcc1516523be27cf3b572d0d1c463db9}{Mask\+Type}, Mask)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Cartesian position motion command arguments -\/ default motion is a line between the current position and the goal 
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classprm_force_cartesian_set_a1b8582b968aaf818d1305d80d2f7f5df}{}\index{prm\+Force\+Cartesian\+Set@{prm\+Force\+Cartesian\+Set}!Base\+Type@{Base\+Type}}
+\index{Base\+Type@{Base\+Type}!prm\+Force\+Cartesian\+Set@{prm\+Force\+Cartesian\+Set}}
+\subsubsection[{Base\+Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf prm\+Motion\+Base} {\bf prm\+Force\+Cartesian\+Set\+::\+Base\+Type}}\label{classprm_force_cartesian_set_a1b8582b968aaf818d1305d80d2f7f5df}
+\hypertarget{classprm_force_cartesian_set_aef7a9a5a3ce601f7d1f1c752ddb36c00}{}\index{prm\+Force\+Cartesian\+Set@{prm\+Force\+Cartesian\+Set}!Force\+Type@{Force\+Type}}
+\index{Force\+Type@{Force\+Type}!prm\+Force\+Cartesian\+Set@{prm\+Force\+Cartesian\+Set}}
+\subsubsection[{Force\+Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf vct\+Fixed\+Size\+Vector}$<$double, 6$>$ {\bf prm\+Force\+Cartesian\+Set\+::\+Force\+Type}}\label{classprm_force_cartesian_set_aef7a9a5a3ce601f7d1f1c752ddb36c00}
+\hypertarget{classprm_force_cartesian_set_abcc1516523be27cf3b572d0d1c463db9}{}\index{prm\+Force\+Cartesian\+Set@{prm\+Force\+Cartesian\+Set}!Mask\+Type@{Mask\+Type}}
+\index{Mask\+Type@{Mask\+Type}!prm\+Force\+Cartesian\+Set@{prm\+Force\+Cartesian\+Set}}
+\subsubsection[{Mask\+Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf vct\+Fixed\+Size\+Vector}$<$bool, 6$>$ {\bf prm\+Force\+Cartesian\+Set\+::\+Mask\+Type}}\label{classprm_force_cartesian_set_abcc1516523be27cf3b572d0d1c463db9}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classprm_force_cartesian_set_a0365087de929b46d3f79bbd55491731c}{}\index{prm\+Force\+Cartesian\+Set@{prm\+Force\+Cartesian\+Set}!prm\+Force\+Cartesian\+Set@{prm\+Force\+Cartesian\+Set}}
+\index{prm\+Force\+Cartesian\+Set@{prm\+Force\+Cartesian\+Set}!prm\+Force\+Cartesian\+Set@{prm\+Force\+Cartesian\+Set}}
+\subsubsection[{prm\+Force\+Cartesian\+Set}]{\setlength{\rightskip}{0pt plus 5cm}prm\+Force\+Cartesian\+Set\+::prm\+Force\+Cartesian\+Set (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classprm_force_cartesian_set_a0365087de929b46d3f79bbd55491731c}
+default constructor \hypertarget{classprm_force_cartesian_set_a456fabc5cecaa75cda0934696d57831d}{}\index{prm\+Force\+Cartesian\+Set@{prm\+Force\+Cartesian\+Set}!prm\+Force\+Cartesian\+Set@{prm\+Force\+Cartesian\+Set}}
+\index{prm\+Force\+Cartesian\+Set@{prm\+Force\+Cartesian\+Set}!prm\+Force\+Cartesian\+Set@{prm\+Force\+Cartesian\+Set}}
+\subsubsection[{prm\+Force\+Cartesian\+Set}]{\setlength{\rightskip}{0pt plus 5cm}prm\+Force\+Cartesian\+Set\+::prm\+Force\+Cartesian\+Set (
+\begin{DoxyParamCaption}
+\item[{const {\bf Force\+Type} \&}]{force, }
+\item[{const {\bf Mask\+Type} \&}]{mask}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classprm_force_cartesian_set_a456fabc5cecaa75cda0934696d57831d}
+constructor with all parameters \hypertarget{classprm_force_cartesian_set_ac1544bc3e945811b2406f34df9a8d084}{}\index{prm\+Force\+Cartesian\+Set@{prm\+Force\+Cartesian\+Set}!````~prm\+Force\+Cartesian\+Set@{$\sim$prm\+Force\+Cartesian\+Set}}
+\index{````~prm\+Force\+Cartesian\+Set@{$\sim$prm\+Force\+Cartesian\+Set}!prm\+Force\+Cartesian\+Set@{prm\+Force\+Cartesian\+Set}}
+\subsubsection[{$\sim$prm\+Force\+Cartesian\+Set}]{\setlength{\rightskip}{0pt plus 5cm}virtual prm\+Force\+Cartesian\+Set\+::$\sim$prm\+Force\+Cartesian\+Set (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classprm_force_cartesian_set_ac1544bc3e945811b2406f34df9a8d084}
+destructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classprm_force_cartesian_set_a7b1376e3debee0dc4e290eeda1836abc}{}\index{prm\+Force\+Cartesian\+Set@{prm\+Force\+Cartesian\+Set}!C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+M\+E\+M\+B\+E\+R\+\_\+\+A\+N\+D\+\_\+\+A\+C\+C\+E\+S\+S\+O\+R\+S@{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+M\+E\+M\+B\+E\+R\+\_\+\+A\+N\+D\+\_\+\+A\+C\+C\+E\+S\+S\+O\+R\+S}}
+\index{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+M\+E\+M\+B\+E\+R\+\_\+\+A\+N\+D\+\_\+\+A\+C\+C\+E\+S\+S\+O\+R\+S@{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+M\+E\+M\+B\+E\+R\+\_\+\+A\+N\+D\+\_\+\+A\+C\+C\+E\+S\+S\+O\+R\+S}!prm\+Force\+Cartesian\+Set@{prm\+Force\+Cartesian\+Set}}
+\subsubsection[{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+M\+E\+M\+B\+E\+R\+\_\+\+A\+N\+D\+\_\+\+A\+C\+C\+E\+S\+S\+O\+R\+S}]{\setlength{\rightskip}{0pt plus 5cm}prm\+Force\+Cartesian\+Set\+::\+C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+M\+E\+M\+B\+E\+R\+\_\+\+A\+N\+D\+\_\+\+A\+C\+C\+E\+S\+S\+O\+R\+S (
+\begin{DoxyParamCaption}
+\item[{{\bf Force\+Type}}]{, }
+\item[{Force}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classprm_force_cartesian_set_a7b1376e3debee0dc4e290eeda1836abc}
+Set and Get methods for the reference frame for current force, mask, movinf and reference frames. This is defined by a node in the transformation tree. \hypertarget{classprm_force_cartesian_set_a3cb88ba29555b4ff1839a2ddf0933809}{}\index{prm\+Force\+Cartesian\+Set@{prm\+Force\+Cartesian\+Set}!C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+M\+E\+M\+B\+E\+R\+\_\+\+A\+N\+D\+\_\+\+A\+C\+C\+E\+S\+S\+O\+R\+S@{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+M\+E\+M\+B\+E\+R\+\_\+\+A\+N\+D\+\_\+\+A\+C\+C\+E\+S\+S\+O\+R\+S}}
+\index{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+M\+E\+M\+B\+E\+R\+\_\+\+A\+N\+D\+\_\+\+A\+C\+C\+E\+S\+S\+O\+R\+S@{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+M\+E\+M\+B\+E\+R\+\_\+\+A\+N\+D\+\_\+\+A\+C\+C\+E\+S\+S\+O\+R\+S}!prm\+Force\+Cartesian\+Set@{prm\+Force\+Cartesian\+Set}}
+\subsubsection[{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+M\+E\+M\+B\+E\+R\+\_\+\+A\+N\+D\+\_\+\+A\+C\+C\+E\+S\+S\+O\+R\+S}]{\setlength{\rightskip}{0pt plus 5cm}prm\+Force\+Cartesian\+Set\+::\+C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+M\+E\+M\+B\+E\+R\+\_\+\+A\+N\+D\+\_\+\+A\+C\+C\+E\+S\+S\+O\+R\+S (
+\begin{DoxyParamCaption}
+\item[{{\bf Mask\+Type}}]{, }
+\item[{Mask}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classprm_force_cartesian_set_a3cb88ba29555b4ff1839a2ddf0933809}
+\hypertarget{classprm_force_cartesian_set_afed6acd5be75fc38cfee9000a52b6209}{}\index{prm\+Force\+Cartesian\+Set@{prm\+Force\+Cartesian\+Set}!De\+Serialize\+Raw@{De\+Serialize\+Raw}}
+\index{De\+Serialize\+Raw@{De\+Serialize\+Raw}!prm\+Force\+Cartesian\+Set@{prm\+Force\+Cartesian\+Set}}
+\subsubsection[{De\+Serialize\+Raw}]{\setlength{\rightskip}{0pt plus 5cm}void prm\+Force\+Cartesian\+Set\+::\+De\+Serialize\+Raw (
+\begin{DoxyParamCaption}
+\item[{std\+::istream \&}]{input\+Stream}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classprm_force_cartesian_set_afed6acd5be75fc38cfee9000a52b6209}
+Binary deserialization 
+
+Reimplemented from \hyperlink{classmts_generic_object_af83ae8622a742a5b94bf72e53d20a1cd}{mts\+Generic\+Object}.
+
+\hypertarget{classprm_force_cartesian_set_a5a62aa3833314ee1df02d8e85b32fa1e}{}\index{prm\+Force\+Cartesian\+Set@{prm\+Force\+Cartesian\+Set}!Serialize\+Raw@{Serialize\+Raw}}
+\index{Serialize\+Raw@{Serialize\+Raw}!prm\+Force\+Cartesian\+Set@{prm\+Force\+Cartesian\+Set}}
+\subsubsection[{Serialize\+Raw}]{\setlength{\rightskip}{0pt plus 5cm}void prm\+Force\+Cartesian\+Set\+::\+Serialize\+Raw (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{output\+Stream}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{classprm_force_cartesian_set_a5a62aa3833314ee1df02d8e85b32fa1e}
+Binary serialization 
+
+Reimplemented from \hyperlink{classmts_generic_object_a33d4404a50a87243ca5a1e2b1913dd3b}{mts\+Generic\+Object}.
+
+\hypertarget{classprm_force_cartesian_set_a38537175a3cf47a82f9b74826605c0c2}{}\index{prm\+Force\+Cartesian\+Set@{prm\+Force\+Cartesian\+Set}!Set\+All@{Set\+All}}
+\index{Set\+All@{Set\+All}!prm\+Force\+Cartesian\+Set@{prm\+Force\+Cartesian\+Set}}
+\subsubsection[{Set\+All}]{\setlength{\rightskip}{0pt plus 5cm}void prm\+Force\+Cartesian\+Set\+::\+Set\+All (
+\begin{DoxyParamCaption}
+\item[{double}]{force\+Set, }
+\item[{bool}]{mask}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classprm_force_cartesian_set_a38537175a3cf47a82f9b74826605c0c2}
+\hypertarget{classprm_force_cartesian_set_a78ba6df453036e7cc2490be6bcc9bf7f}{}\index{prm\+Force\+Cartesian\+Set@{prm\+Force\+Cartesian\+Set}!To\+Stream@{To\+Stream}}
+\index{To\+Stream@{To\+Stream}!prm\+Force\+Cartesian\+Set@{prm\+Force\+Cartesian\+Set}}
+\subsubsection[{To\+Stream}]{\setlength{\rightskip}{0pt plus 5cm}void prm\+Force\+Cartesian\+Set\+::\+To\+Stream (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{output\+Stream}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{classprm_force_cartesian_set_a78ba6df453036e7cc2490be6bcc9bf7f}
+Human readable output to stream. 
+
+Reimplemented from \hyperlink{classmts_generic_object_a2030aaa58bc215eccce1dc8d20dd0fdc}{mts\+Generic\+Object}.
+
+\hypertarget{classprm_force_cartesian_set_a5cddf5bcd6c9663b7e435c4b9bddf1af}{}\index{prm\+Force\+Cartesian\+Set@{prm\+Force\+Cartesian\+Set}!To\+Stream\+Raw@{To\+Stream\+Raw}}
+\index{To\+Stream\+Raw@{To\+Stream\+Raw}!prm\+Force\+Cartesian\+Set@{prm\+Force\+Cartesian\+Set}}
+\subsubsection[{To\+Stream\+Raw}]{\setlength{\rightskip}{0pt plus 5cm}void prm\+Force\+Cartesian\+Set\+::\+To\+Stream\+Raw (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{output\+Stream, }
+\item[{const char}]{delimiter = {\ttfamily \textquotesingle{}~\textquotesingle{}}, }
+\item[{bool}]{header\+Only = {\ttfamily false}, }
+\item[{const std\+::string \&}]{header\+Prefix = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{classprm_force_cartesian_set_a5cddf5bcd6c9663b7e435c4b9bddf1af}
+To stream raw data. 
+
+Reimplemented from \hyperlink{classmts_generic_object_a4916a6c62ee5b167d7c93c88ab72523a}{mts\+Generic\+Object}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Parameter\+Types/\hyperlink{prm_force_cartesian_set_8h}{prm\+Force\+Cartesian\+Set.\+h}\end{DoxyCompactItemize}

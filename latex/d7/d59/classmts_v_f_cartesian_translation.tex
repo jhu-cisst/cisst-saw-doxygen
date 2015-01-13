@@ -1,0 +1,140 @@
+\hypertarget{classmts_v_f_cartesian_translation}{}\section{mts\+V\+F\+Cartesian\+Translation Class Reference}
+\label{classmts_v_f_cartesian_translation}\index{mts\+V\+F\+Cartesian\+Translation@{mts\+V\+F\+Cartesian\+Translation}}
+
+
+This is the base class for all virtual fixture objects.  
+
+
+
+
+{\ttfamily \#include $<$mts\+V\+F\+Cart\+Vel.\+h$>$}
+
+Inheritance diagram for mts\+V\+F\+Cartesian\+Translation\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{d7/d59/classmts_v_f_cartesian_translation}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmts_v_f_cartesian_translation_a7d231a8919224a527952de0642ada8a3}{mts\+V\+F\+Cartesian\+Translation} ()
+\item 
+\hyperlink{classmts_v_f_cartesian_translation_a665414c1fa25cee96c3b4ce1d2896af2}{mts\+V\+F\+Cartesian\+Translation} (const std\+::string \&name, mts\+V\+F\+Data\+Base $\ast$data)
+\item 
+void \hyperlink{classmts_v_f_cartesian_translation_ad86d342b2fb779bb9cd6755c175bfeea}{Fill\+In\+Tableau\+Refs} (const \hyperlink{classmts_v_f_base_a742dd08f8b70bafeb746cec14d9ee974}{mts\+V\+F\+Base\+::\+C\+O\+N\+T\+R\+O\+L\+L\+E\+R\+M\+O\+D\+E} mode, const double Tick\+Time)
+\begin{DoxyCompactList}\small\item\em Updates co with virtual fixture data. \end{DoxyCompactList}\item 
+void \hyperlink{classmts_v_f_cartesian_translation_aaf1a2989af3387cc5355b3adaaae5fc2}{Convert\+Refs} (const \hyperlink{classmts_v_f_base_a742dd08f8b70bafeb746cec14d9ee974}{mts\+V\+F\+Base\+::\+C\+O\+N\+T\+R\+O\+L\+L\+E\+R\+M\+O\+D\+E} mode, const double Tick\+Time)
+\begin{DoxyCompactList}\small\item\em Converts the data in the references if a change in mode is needed. \end{DoxyCompactList}\item 
+void \hyperlink{classmts_v_f_cartesian_translation_abc87c7d13e2c60839e9a02e0e6b2742b}{Assign\+Refs} (const \hyperlink{classmts_v_f_base_a742dd08f8b70bafeb746cec14d9ee974}{mts\+V\+F\+Base\+::\+C\+O\+N\+T\+R\+O\+L\+L\+E\+R\+M\+O\+D\+E}, const double, const \hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \&, \hyperlink{vct_dynamic_matrix_types_8h_a48f1eb2461d20a99e824ee5753a37c84}{vct\+Double\+Mat} \&, \hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \&, \hyperlink{vct_dynamic_matrix_types_8h_a48f1eb2461d20a99e824ee5753a37c84}{vct\+Double\+Mat} \&, \hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \&, \hyperlink{vct_dynamic_matrix_types_8h_a48f1eb2461d20a99e824ee5753a37c84}{vct\+Double\+Mat} \&, \hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \&)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{vct_dynamic_matrix_types_8h_a48f1eb2461d20a99e824ee5753a37c84}{vct\+Double\+Mat} \hyperlink{classmts_v_f_cartesian_translation_ac1142bba466b1bf454c1c5f9aed054f5}{Identity\+Skew\+Matrix}
+\item 
+\hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \hyperlink{classmts_v_f_cartesian_translation_acce719308f90543b9c42b923ad079df4}{w}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This is the base class for all virtual fixture objects. 
+
+mts\+V\+F\+Cart\+Vel\+: A class that contains logic for the implementation of virtual fixtures 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmts_v_f_cartesian_translation_a7d231a8919224a527952de0642ada8a3}{}\index{mts\+V\+F\+Cartesian\+Translation@{mts\+V\+F\+Cartesian\+Translation}!mts\+V\+F\+Cartesian\+Translation@{mts\+V\+F\+Cartesian\+Translation}}
+\index{mts\+V\+F\+Cartesian\+Translation@{mts\+V\+F\+Cartesian\+Translation}!mts\+V\+F\+Cartesian\+Translation@{mts\+V\+F\+Cartesian\+Translation}}
+\subsubsection[{mts\+V\+F\+Cartesian\+Translation}]{\setlength{\rightskip}{0pt plus 5cm}mts\+V\+F\+Cartesian\+Translation\+::mts\+V\+F\+Cartesian\+Translation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_v_f_cartesian_translation_a7d231a8919224a527952de0642ada8a3}
+Constructor \hypertarget{classmts_v_f_cartesian_translation_a665414c1fa25cee96c3b4ce1d2896af2}{}\index{mts\+V\+F\+Cartesian\+Translation@{mts\+V\+F\+Cartesian\+Translation}!mts\+V\+F\+Cartesian\+Translation@{mts\+V\+F\+Cartesian\+Translation}}
+\index{mts\+V\+F\+Cartesian\+Translation@{mts\+V\+F\+Cartesian\+Translation}!mts\+V\+F\+Cartesian\+Translation@{mts\+V\+F\+Cartesian\+Translation}}
+\subsubsection[{mts\+V\+F\+Cartesian\+Translation}]{\setlength{\rightskip}{0pt plus 5cm}mts\+V\+F\+Cartesian\+Translation\+::mts\+V\+F\+Cartesian\+Translation (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name, }
+\item[{mts\+V\+F\+Data\+Base $\ast$}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_v_f_cartesian_translation_a665414c1fa25cee96c3b4ce1d2896af2}
+Constructor 
+\begin{DoxyParams}{Parameters}
+{\em name} & String name of object \\
+\hline
+{\em data} & V\+F Data passed from remote user \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classmts_v_f_cartesian_translation_abc87c7d13e2c60839e9a02e0e6b2742b}{}\index{mts\+V\+F\+Cartesian\+Translation@{mts\+V\+F\+Cartesian\+Translation}!Assign\+Refs@{Assign\+Refs}}
+\index{Assign\+Refs@{Assign\+Refs}!mts\+V\+F\+Cartesian\+Translation@{mts\+V\+F\+Cartesian\+Translation}}
+\subsubsection[{Assign\+Refs}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+V\+F\+Cartesian\+Translation\+::\+Assign\+Refs (
+\begin{DoxyParamCaption}
+\item[{const {\bf mts\+V\+F\+Base\+::\+C\+O\+N\+T\+R\+O\+L\+L\+E\+R\+M\+O\+D\+E}}]{, }
+\item[{const double}]{, }
+\item[{const {\bf vct\+Double\+Vec} \&}]{, }
+\item[{{\bf vct\+Double\+Mat} \&}]{, }
+\item[{{\bf vct\+Double\+Vec} \&}]{, }
+\item[{{\bf vct\+Double\+Mat} \&}]{, }
+\item[{{\bf vct\+Double\+Vec} \&}]{, }
+\item[{{\bf vct\+Double\+Mat} \&}]{, }
+\item[{{\bf vct\+Double\+Vec} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_v_f_cartesian_translation_abc87c7d13e2c60839e9a02e0e6b2742b}
+
+
+Reimplemented from \hyperlink{classmts_v_f_base_ad5081f5e82db7c18483dc5defbeae620}{mts\+V\+F\+Base}.
+
+\hypertarget{classmts_v_f_cartesian_translation_aaf1a2989af3387cc5355b3adaaae5fc2}{}\index{mts\+V\+F\+Cartesian\+Translation@{mts\+V\+F\+Cartesian\+Translation}!Convert\+Refs@{Convert\+Refs}}
+\index{Convert\+Refs@{Convert\+Refs}!mts\+V\+F\+Cartesian\+Translation@{mts\+V\+F\+Cartesian\+Translation}}
+\subsubsection[{Convert\+Refs}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+V\+F\+Cartesian\+Translation\+::\+Convert\+Refs (
+\begin{DoxyParamCaption}
+\item[{const {\bf mts\+V\+F\+Base\+::\+C\+O\+N\+T\+R\+O\+L\+L\+E\+R\+M\+O\+D\+E}}]{mode, }
+\item[{const double}]{Tick\+Time}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_v_f_cartesian_translation_aaf1a2989af3387cc5355b3adaaae5fc2}
+
+
+Converts the data in the references if a change in mode is needed. 
+
+
+
+Implements \hyperlink{classmts_v_f_base_acca2d183c9ca2659d3cf6c0af5120b55}{mts\+V\+F\+Base}.
+
+\hypertarget{classmts_v_f_cartesian_translation_ad86d342b2fb779bb9cd6755c175bfeea}{}\index{mts\+V\+F\+Cartesian\+Translation@{mts\+V\+F\+Cartesian\+Translation}!Fill\+In\+Tableau\+Refs@{Fill\+In\+Tableau\+Refs}}
+\index{Fill\+In\+Tableau\+Refs@{Fill\+In\+Tableau\+Refs}!mts\+V\+F\+Cartesian\+Translation@{mts\+V\+F\+Cartesian\+Translation}}
+\subsubsection[{Fill\+In\+Tableau\+Refs}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+V\+F\+Cartesian\+Translation\+::\+Fill\+In\+Tableau\+Refs (
+\begin{DoxyParamCaption}
+\item[{const {\bf mts\+V\+F\+Base\+::\+C\+O\+N\+T\+R\+O\+L\+L\+E\+R\+M\+O\+D\+E}}]{mode, }
+\item[{const double}]{Tick\+Time}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_v_f_cartesian_translation_ad86d342b2fb779bb9cd6755c175bfeea}
+
+
+Updates co with virtual fixture data. 
+
+Fill\+In\+Tableau\+Refs 
+
+Implements \hyperlink{classmts_v_f_base_aef5a28675f79945766a2b114c957ae6f}{mts\+V\+F\+Base}.
+
+
+
+Reimplemented in \hyperlink{classmts_v_f_plane_a23097d9359e426edaf5584de27f2a696}{mts\+V\+F\+Plane}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classmts_v_f_cartesian_translation_ac1142bba466b1bf454c1c5f9aed054f5}{}\index{mts\+V\+F\+Cartesian\+Translation@{mts\+V\+F\+Cartesian\+Translation}!Identity\+Skew\+Matrix@{Identity\+Skew\+Matrix}}
+\index{Identity\+Skew\+Matrix@{Identity\+Skew\+Matrix}!mts\+V\+F\+Cartesian\+Translation@{mts\+V\+F\+Cartesian\+Translation}}
+\subsubsection[{Identity\+Skew\+Matrix}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Double\+Mat} mts\+V\+F\+Cartesian\+Translation\+::\+Identity\+Skew\+Matrix}\label{classmts_v_f_cartesian_translation_ac1142bba466b1bf454c1c5f9aed054f5}
+\hypertarget{classmts_v_f_cartesian_translation_acce719308f90543b9c42b923ad079df4}{}\index{mts\+V\+F\+Cartesian\+Translation@{mts\+V\+F\+Cartesian\+Translation}!w@{w}}
+\index{w@{w}!mts\+V\+F\+Cartesian\+Translation@{mts\+V\+F\+Cartesian\+Translation}}
+\subsubsection[{w}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Double\+Vec} mts\+V\+F\+Cartesian\+Translation\+::w}\label{classmts_v_f_cartesian_translation_acce719308f90543b9c42b923ad079df4}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/saw\+Constraint\+Controller/include/saw\+Constraint\+Controller/\hyperlink{mts_v_f_cart_vel_8h}{mts\+V\+F\+Cart\+Vel.\+h}\end{DoxyCompactItemize}

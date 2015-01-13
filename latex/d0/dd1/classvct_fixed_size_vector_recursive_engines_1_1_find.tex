@@ -1,0 +1,49 @@
+\hypertarget{classvct_fixed_size_vector_recursive_engines_1_1_find}{}\section{vct\+Fixed\+Size\+Vector\+Recursive\+Engines$<$ \+\_\+size $>$\+:\+:Find$<$ \+\_\+condition\+Operation\+Type, \+\_\+current\+Index $>$ Class Template Reference}
+\label{classvct_fixed_size_vector_recursive_engines_1_1_find}\index{vct\+Fixed\+Size\+Vector\+Recursive\+Engines$<$ \+\_\+size $>$\+::\+Find$<$ \+\_\+condition\+Operation\+Type, \+\_\+current\+Index $>$@{vct\+Fixed\+Size\+Vector\+Recursive\+Engines$<$ \+\_\+size $>$\+::\+Find$<$ \+\_\+condition\+Operation\+Type, \+\_\+current\+Index $>$}}
+
+
+{\ttfamily \#include $<$vct\+Fixed\+Size\+Vector\+Recursive\+Engines.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classvct_fixed_size_vector_recursive_engines}{vct\+Fixed\+Size\+Vector\+Recursive\+Engines}$<$ \+\_\+size-\/1 $>$\+::template \hyperlink{classvct_fixed_size_vector_recursive_engines_1_1_find}{Find}$<$ \+\_\+condition\+Operation\+Type, \+\_\+current\+Index+1 $>$ \hyperlink{classvct_fixed_size_vector_recursive_engines_1_1_find_aae2588d04bd3f2f1cd9daff01c63f334}{Recursive\+Step}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class \+\_\+input\+Vector\+Type , class \+\_\+input\+Scalar\+Type $>$ }\\static \hyperlink{namespacevct_a50405d87494dce1f22ee3930ca285ee9}{vct\+::index\+\_\+type} \hyperlink{classvct_fixed_size_vector_recursive_engines_1_1_find_a89ea50c19849424df4e14b9a7f63a74d}{Unfold} (const \+\_\+input\+Vector\+Type $\ast$input\+Vector, const \+\_\+input\+Scalar\+Type \&input\+Scalar)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$vct\+::size\+\_\+type \+\_\+size$>$template$<$class \+\_\+condition\+Operation\+Type, vct\+::index\+\_\+type \+\_\+current\+Index$>$class vct\+Fixed\+Size\+Vector\+Recursive\+Engines$<$ \+\_\+size $>$\+::\+Find$<$ \+\_\+condition\+Operation\+Type, \+\_\+current\+Index $>$}
+
+The \hyperlink{classvct_fixed_size_vector_recursive_engines_1_1_find}{Find} engine returns the first index in which a condition evaluates to \textquotesingle{}true\textquotesingle{}. The index is returned as an unsigned integer. The condition is evaluated between each element of the input vector and the input scalar, in the form {\ttfamily  \+\_\+condition\+Operation\+Type\+::\+Operate(input\+Vector\mbox{[}index\mbox{]}, input\+Scalar)}. That is, the static method Operate is a binary predicate.
+
+The \hyperlink{classvct_fixed_size_vector_recursive_engines_1_1_find}{Find} engine uses an auxiliary template argument {\ttfamily \+\_\+current\+Index} which is incremented as the recursion nesting increases. We need it so that we don\textquotesingle{}t have to evaluate the function again to return the index.
+
+If the condition never evaluates to true, the function returns a value one past the length of the vector ({\ttfamily \+\_\+size}).
+
+A typical example assigned {\ttfamily \+\_\+condition\+Operation} with an equality test, searching for the first occurence of a value in the vector. 
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classvct_fixed_size_vector_recursive_engines_1_1_find_aae2588d04bd3f2f1cd9daff01c63f334}{}\index{vct\+Fixed\+Size\+Vector\+Recursive\+Engines\+::\+Find@{vct\+Fixed\+Size\+Vector\+Recursive\+Engines\+::\+Find}!Recursive\+Step@{Recursive\+Step}}
+\index{Recursive\+Step@{Recursive\+Step}!vct\+Fixed\+Size\+Vector\+Recursive\+Engines\+::\+Find@{vct\+Fixed\+Size\+Vector\+Recursive\+Engines\+::\+Find}}
+\subsubsection[{Recursive\+Step}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size$>$ template$<$class \+\_\+condition\+Operation\+Type , vct\+::index\+\_\+type \+\_\+current\+Index$>$ typedef {\bf vct\+Fixed\+Size\+Vector\+Recursive\+Engines}$<$\+\_\+size-\/1$>$\+::template {\bf Find}$<$\+\_\+condition\+Operation\+Type, \+\_\+current\+Index+1$>$ {\bf vct\+Fixed\+Size\+Vector\+Recursive\+Engines}$<$ \+\_\+size $>$\+::{\bf Find}$<$ \+\_\+condition\+Operation\+Type, \+\_\+current\+Index $>$\+::{\bf Recursive\+Step}}\label{classvct_fixed_size_vector_recursive_engines_1_1_find_aae2588d04bd3f2f1cd9daff01c63f334}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classvct_fixed_size_vector_recursive_engines_1_1_find_a89ea50c19849424df4e14b9a7f63a74d}{}\index{vct\+Fixed\+Size\+Vector\+Recursive\+Engines\+::\+Find@{vct\+Fixed\+Size\+Vector\+Recursive\+Engines\+::\+Find}!Unfold@{Unfold}}
+\index{Unfold@{Unfold}!vct\+Fixed\+Size\+Vector\+Recursive\+Engines\+::\+Find@{vct\+Fixed\+Size\+Vector\+Recursive\+Engines\+::\+Find}}
+\subsubsection[{Unfold}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size$>$ template$<$class \+\_\+condition\+Operation\+Type , vct\+::index\+\_\+type \+\_\+current\+Index$>$ template$<$class \+\_\+input\+Vector\+Type , class \+\_\+input\+Scalar\+Type $>$ static {\bf vct\+::index\+\_\+type} {\bf vct\+Fixed\+Size\+Vector\+Recursive\+Engines}$<$ \+\_\+size $>$\+::{\bf Find}$<$ \+\_\+condition\+Operation\+Type, \+\_\+current\+Index $>$\+::Unfold (
+\begin{DoxyParamCaption}
+\item[{const \+\_\+input\+Vector\+Type $\ast$}]{input\+Vector, }
+\item[{const \+\_\+input\+Scalar\+Type \&}]{input\+Scalar}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classvct_fixed_size_vector_recursive_engines_1_1_find_a89ea50c19849424df4e14b9a7f63a74d}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Vector/\hyperlink{vct_fixed_size_vector_recursive_engines_8h}{vct\+Fixed\+Size\+Vector\+Recursive\+Engines.\+h}\end{DoxyCompactItemize}

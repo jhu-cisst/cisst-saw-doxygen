@@ -1,0 +1,124 @@
+\hypertarget{classmts_v_f_follow}{}\section{mts\+V\+F\+Follow Class Reference}
+\label{classmts_v_f_follow}\index{mts\+V\+F\+Follow@{mts\+V\+F\+Follow}}
+
+
+This is the base class for all virtual fixture objects.  
+
+
+
+
+{\ttfamily \#include $<$mts\+V\+F\+Follow.\+h$>$}
+
+Inheritance diagram for mts\+V\+F\+Follow\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{df/dfa/classmts_v_f_follow}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmts_v_f_follow_a5f15e27b89b3d7f72ae070521e6a9eb6}{mts\+V\+F\+Follow} ()
+\item 
+\hyperlink{classmts_v_f_follow_a0d0f799ae68cefa06cdd18dc5b1238ce}{mts\+V\+F\+Follow} (const std\+::string \&name, mts\+V\+F\+Data\+Base $\ast$data)
+\item 
+void \hyperlink{classmts_v_f_follow_a2fe8bc0fb58b00efe62b4d145e561989}{Fill\+In\+Tableau\+Refs} (const \hyperlink{classmts_v_f_base_a742dd08f8b70bafeb746cec14d9ee974}{mts\+V\+F\+Base\+::\+C\+O\+N\+T\+R\+O\+L\+L\+E\+R\+M\+O\+D\+E} mode, const double Tick\+Time)
+\begin{DoxyCompactList}\small\item\em Updates co with virtual fixture data. \end{DoxyCompactList}\item 
+void \hyperlink{classmts_v_f_follow_aadec8c04389a7cf95447d843870b762a}{Set\+Manipulator} (\hyperlink{classrob_manipulator}{rob\+Manipulator} $\ast$rm)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+prm\+Kinematics\+State $\ast$ \hyperlink{classmts_v_f_follow_a0adff05f67fe4bf9be72591e0fc22ace}{Current\+Kinematics}
+\item 
+prm\+Kinematics\+State $\ast$ \hyperlink{classmts_v_f_follow_a02185f7d37d06a02cd2a92e6226b5867}{Desired\+Kinematics}
+\item 
+\hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \hyperlink{classmts_v_f_follow_ae704f3167a578520448f6f47aa032aff}{Current\+Joint\+Set}
+\item 
+\hyperlink{vct_transformation_types_8h_a33da47f4deb2556b37a69a2c44b29d75}{vct\+Frm4x4} \hyperlink{classmts_v_f_follow_a3561088c012af44b6dcd0a54f6fce5ae}{Desired\+Frame}
+\item 
+\hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \hyperlink{classmts_v_f_follow_ae4c68fd6c7d03a6bcdb86d1e2e5dae60}{Desired\+Joint\+Set}
+\item 
+\hyperlink{classrob_manipulator}{rob\+Manipulator} $\ast$ \hyperlink{classmts_v_f_follow_ad30c27f37797a47a2461551aab20103a}{Manipulator}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This is the base class for all virtual fixture objects. 
+
+\hyperlink{classmts_v_f_follow}{mts\+V\+F\+Follow}\+: A class that contains logic for the implementation of virtual fixtures 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmts_v_f_follow_a5f15e27b89b3d7f72ae070521e6a9eb6}{}\index{mts\+V\+F\+Follow@{mts\+V\+F\+Follow}!mts\+V\+F\+Follow@{mts\+V\+F\+Follow}}
+\index{mts\+V\+F\+Follow@{mts\+V\+F\+Follow}!mts\+V\+F\+Follow@{mts\+V\+F\+Follow}}
+\subsubsection[{mts\+V\+F\+Follow}]{\setlength{\rightskip}{0pt plus 5cm}mts\+V\+F\+Follow\+::mts\+V\+F\+Follow (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_v_f_follow_a5f15e27b89b3d7f72ae070521e6a9eb6}
+Constructor \hypertarget{classmts_v_f_follow_a0d0f799ae68cefa06cdd18dc5b1238ce}{}\index{mts\+V\+F\+Follow@{mts\+V\+F\+Follow}!mts\+V\+F\+Follow@{mts\+V\+F\+Follow}}
+\index{mts\+V\+F\+Follow@{mts\+V\+F\+Follow}!mts\+V\+F\+Follow@{mts\+V\+F\+Follow}}
+\subsubsection[{mts\+V\+F\+Follow}]{\setlength{\rightskip}{0pt plus 5cm}mts\+V\+F\+Follow\+::mts\+V\+F\+Follow (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name, }
+\item[{mts\+V\+F\+Data\+Base $\ast$}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_v_f_follow_a0d0f799ae68cefa06cdd18dc5b1238ce}
+Constructor 
+\begin{DoxyParams}{Parameters}
+{\em name} & String name of object \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classmts_v_f_follow_a2fe8bc0fb58b00efe62b4d145e561989}{}\index{mts\+V\+F\+Follow@{mts\+V\+F\+Follow}!Fill\+In\+Tableau\+Refs@{Fill\+In\+Tableau\+Refs}}
+\index{Fill\+In\+Tableau\+Refs@{Fill\+In\+Tableau\+Refs}!mts\+V\+F\+Follow@{mts\+V\+F\+Follow}}
+\subsubsection[{Fill\+In\+Tableau\+Refs}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+V\+F\+Follow\+::\+Fill\+In\+Tableau\+Refs (
+\begin{DoxyParamCaption}
+\item[{const {\bf mts\+V\+F\+Base\+::\+C\+O\+N\+T\+R\+O\+L\+L\+E\+R\+M\+O\+D\+E}}]{mode, }
+\item[{const double}]{Tick\+Time}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_v_f_follow_a2fe8bc0fb58b00efe62b4d145e561989}
+
+
+Updates co with virtual fixture data. 
+
+Fill\+In\+Tableau\+Refs 
+
+Reimplemented from \hyperlink{classmts_v_f_joint_position_ac7b7a944fb075d0775cb32424f02916f}{mts\+V\+F\+Joint\+Position}.
+
+\hypertarget{classmts_v_f_follow_aadec8c04389a7cf95447d843870b762a}{}\index{mts\+V\+F\+Follow@{mts\+V\+F\+Follow}!Set\+Manipulator@{Set\+Manipulator}}
+\index{Set\+Manipulator@{Set\+Manipulator}!mts\+V\+F\+Follow@{mts\+V\+F\+Follow}}
+\subsubsection[{Set\+Manipulator}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+V\+F\+Follow\+::\+Set\+Manipulator (
+\begin{DoxyParamCaption}
+\item[{{\bf rob\+Manipulator} $\ast$}]{rm}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_v_f_follow_aadec8c04389a7cf95447d843870b762a}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classmts_v_f_follow_ae704f3167a578520448f6f47aa032aff}{}\index{mts\+V\+F\+Follow@{mts\+V\+F\+Follow}!Current\+Joint\+Set@{Current\+Joint\+Set}}
+\index{Current\+Joint\+Set@{Current\+Joint\+Set}!mts\+V\+F\+Follow@{mts\+V\+F\+Follow}}
+\subsubsection[{Current\+Joint\+Set}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Double\+Vec} mts\+V\+F\+Follow\+::\+Current\+Joint\+Set}\label{classmts_v_f_follow_ae704f3167a578520448f6f47aa032aff}
+\hypertarget{classmts_v_f_follow_a0adff05f67fe4bf9be72591e0fc22ace}{}\index{mts\+V\+F\+Follow@{mts\+V\+F\+Follow}!Current\+Kinematics@{Current\+Kinematics}}
+\index{Current\+Kinematics@{Current\+Kinematics}!mts\+V\+F\+Follow@{mts\+V\+F\+Follow}}
+\subsubsection[{Current\+Kinematics}]{\setlength{\rightskip}{0pt plus 5cm}prm\+Kinematics\+State$\ast$ mts\+V\+F\+Follow\+::\+Current\+Kinematics}\label{classmts_v_f_follow_a0adff05f67fe4bf9be72591e0fc22ace}
+\hypertarget{classmts_v_f_follow_a3561088c012af44b6dcd0a54f6fce5ae}{}\index{mts\+V\+F\+Follow@{mts\+V\+F\+Follow}!Desired\+Frame@{Desired\+Frame}}
+\index{Desired\+Frame@{Desired\+Frame}!mts\+V\+F\+Follow@{mts\+V\+F\+Follow}}
+\subsubsection[{Desired\+Frame}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Frm4x4} mts\+V\+F\+Follow\+::\+Desired\+Frame}\label{classmts_v_f_follow_a3561088c012af44b6dcd0a54f6fce5ae}
+\hypertarget{classmts_v_f_follow_ae4c68fd6c7d03a6bcdb86d1e2e5dae60}{}\index{mts\+V\+F\+Follow@{mts\+V\+F\+Follow}!Desired\+Joint\+Set@{Desired\+Joint\+Set}}
+\index{Desired\+Joint\+Set@{Desired\+Joint\+Set}!mts\+V\+F\+Follow@{mts\+V\+F\+Follow}}
+\subsubsection[{Desired\+Joint\+Set}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Double\+Vec} mts\+V\+F\+Follow\+::\+Desired\+Joint\+Set}\label{classmts_v_f_follow_ae4c68fd6c7d03a6bcdb86d1e2e5dae60}
+\hypertarget{classmts_v_f_follow_a02185f7d37d06a02cd2a92e6226b5867}{}\index{mts\+V\+F\+Follow@{mts\+V\+F\+Follow}!Desired\+Kinematics@{Desired\+Kinematics}}
+\index{Desired\+Kinematics@{Desired\+Kinematics}!mts\+V\+F\+Follow@{mts\+V\+F\+Follow}}
+\subsubsection[{Desired\+Kinematics}]{\setlength{\rightskip}{0pt plus 5cm}prm\+Kinematics\+State$\ast$ mts\+V\+F\+Follow\+::\+Desired\+Kinematics}\label{classmts_v_f_follow_a02185f7d37d06a02cd2a92e6226b5867}
+\hypertarget{classmts_v_f_follow_ad30c27f37797a47a2461551aab20103a}{}\index{mts\+V\+F\+Follow@{mts\+V\+F\+Follow}!Manipulator@{Manipulator}}
+\index{Manipulator@{Manipulator}!mts\+V\+F\+Follow@{mts\+V\+F\+Follow}}
+\subsubsection[{Manipulator}]{\setlength{\rightskip}{0pt plus 5cm}{\bf rob\+Manipulator}$\ast$ mts\+V\+F\+Follow\+::\+Manipulator}\label{classmts_v_f_follow_ad30c27f37797a47a2461551aab20103a}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/saw\+Intuitive\+Research\+Kit/include/saw\+Intuitive\+Research\+Kit/\hyperlink{mts_v_f_follow_8h}{mts\+V\+F\+Follow.\+h}\end{DoxyCompactItemize}

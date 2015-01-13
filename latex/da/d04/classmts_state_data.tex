@@ -1,0 +1,174 @@
+\hypertarget{classmts_state_data}{}\section{mts\+State\+Data$<$ \+\_\+element\+Type $>$ Class Template Reference}
+\label{classmts_state_data}\index{mts\+State\+Data$<$ \+\_\+element\+Type $>$@{mts\+State\+Data$<$ \+\_\+element\+Type $>$}}
+
+
+{\ttfamily \#include $<$mts\+State\+Data.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classmts_state_data_a8183b2f36ae85ea50894047cb93fcc50}{Get} (const \hyperlink{classmts_state_index}{mts\+State\+Index} \&when, \hyperlink{classmts_state_data_aeffdf781c6be5cac19466d4f3d25b3a3}{value\+\_\+type} \&data) const 
+\item 
+void \hyperlink{classmts_state_data_a1a67b4827040969bf39a7c501cc3f210}{Get\+Latest} (\hyperlink{classmts_state_data_aeffdf781c6be5cac19466d4f3d25b3a3}{value\+\_\+type} \&obj) const 
+\item 
+void \hyperlink{classmts_state_data_a0e57052afa72058a9b212e620c2b6bed}{Get\+History} (const \hyperlink{classmts_state_index}{mts\+State\+Index} \&end, \hyperlink{classmts_vector}{mts\+Vector}$<$ \hyperlink{classmts_state_data_aeffdf781c6be5cac19466d4f3d25b3a3}{value\+\_\+type} $>$ \&data) const 
+\item 
+void \hyperlink{classmts_state_data_a5832b112fbcf7e63ab366e3dc4ffae70}{Set} (const \hyperlink{classmts_state_data_aeffdf781c6be5cac19466d4f3d25b3a3}{value\+\_\+type} \&obj)
+\item 
+\hyperlink{classmts_state_data_a12c7e484ccac76e8c5551b53d1a42a25}{mts\+State\+Data} ()
+\item 
+\hyperlink{classmts_state_data_a0f79aa7136a7bbd819c27d7efcc3dfe4}{$\sim$mts\+State\+Data} ()
+\item 
+\hyperlink{classmts_state_data_aaa07d52871cdcbe7388b69bbcf1b114a}{This\+Type} \& \hyperlink{classmts_state_data_a5a75e7d54ef66a9b03c4a643af42c58e}{operator=} (\hyperlink{classmts_state_data_aeffdf781c6be5cac19466d4f3d25b3a3}{value\+\_\+type} data)
+\item 
+\hyperlink{classmts_state_data_a729478ccf1a9d8b35cd644567f7ecd5e}{operator value\+\_\+type \&} (void)
+\item 
+void \hyperlink{classmts_state_data_a0c842d51fed06b16cce7da28a0b3ee5b}{Add\+To\+State\+Table} (\hyperlink{classmts_state_table}{mts\+State\+Table} \&table, const std\+::string \&data\+Name=\char`\"{}\char`\"{})
+\item 
+void \hyperlink{classmts_state_data_ad75f6fd4812170a7c4f8352f73cf2c5d}{Add\+Read\+Command\+To\+Interface} (\hyperlink{classmts_interface_provided}{mts\+Interface\+Provided} $\ast$interface\+Provided, const std\+::string \&command\+Name)
+\item 
+void \hyperlink{classmts_state_data_a0a840896d80f8ad090700855e18aae9e}{Add\+Write\+Command\+To\+Interface} (\hyperlink{classmts_interface_provided}{mts\+Interface\+Provided} $\ast$interface\+Provided, const std\+::string \&command\+Name)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmts_state_data_aeffdf781c6be5cac19466d4f3d25b3a3}{value\+\_\+type} \hyperlink{classmts_state_data_a3f34dd7340ba9ff2f006a00ca7557f15}{Data}
+\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classmts_state_data}{mts\+State\+Data}$<$ \+\_\+element\+Type $>$ \hyperlink{classmts_state_data_aaa07d52871cdcbe7388b69bbcf1b114a}{This\+Type}
+\item 
+typedef \hyperlink{classmts_state_table_1_1_accessor}{mts\+State\+Table\+::\+Accessor}$<$ \+\_\+element\+Type $>$ \hyperlink{classmts_state_data_a21eb9a3d0093820221159ffd63fa9616}{Accessor\+Type}
+\item 
+typedef \+\_\+element\+Type \hyperlink{classmts_state_data_aeffdf781c6be5cac19466d4f3d25b3a3}{value\+\_\+type}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{mts_state_table_8h_ac3a0e34e8991d51790b043fa01857a35}{mts\+State\+Data\+Id} \hyperlink{classmts_state_data_ae5f3c63391a2375ab7f58d1c99bd8521}{Id}
+\item 
+\hyperlink{classmts_state_table}{mts\+State\+Table} $\ast$ \hyperlink{classmts_state_data_a8933fedc828fdc64dedb258260be5e4a}{Table}
+\item 
+const \hyperlink{classmts_state_data_a21eb9a3d0093820221159ffd63fa9616}{Accessor\+Type} $\ast$ \hyperlink{classmts_state_data_a41e425be145f2a83a7386a783d3db35c}{Accessor}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classmts_state_data_a21eb9a3d0093820221159ffd63fa9616}{}\index{mts\+State\+Data@{mts\+State\+Data}!Accessor\+Type@{Accessor\+Type}}
+\index{Accessor\+Type@{Accessor\+Type}!mts\+State\+Data@{mts\+State\+Data}}
+\subsubsection[{Accessor\+Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type $>$ typedef {\bf mts\+State\+Table\+::\+Accessor}$<$\+\_\+element\+Type$>$ {\bf mts\+State\+Data}$<$ \+\_\+element\+Type $>$\+::{\bf Accessor\+Type}\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_state_data_a21eb9a3d0093820221159ffd63fa9616}
+\hypertarget{classmts_state_data_aaa07d52871cdcbe7388b69bbcf1b114a}{}\index{mts\+State\+Data@{mts\+State\+Data}!This\+Type@{This\+Type}}
+\index{This\+Type@{This\+Type}!mts\+State\+Data@{mts\+State\+Data}}
+\subsubsection[{This\+Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type $>$ typedef {\bf mts\+State\+Data}$<$\+\_\+element\+Type$>$ {\bf mts\+State\+Data}$<$ \+\_\+element\+Type $>$\+::{\bf This\+Type}\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_state_data_aaa07d52871cdcbe7388b69bbcf1b114a}
+\hypertarget{classmts_state_data_aeffdf781c6be5cac19466d4f3d25b3a3}{}\index{mts\+State\+Data@{mts\+State\+Data}!value\+\_\+type@{value\+\_\+type}}
+\index{value\+\_\+type@{value\+\_\+type}!mts\+State\+Data@{mts\+State\+Data}}
+\subsubsection[{value\+\_\+type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type $>$ typedef \+\_\+element\+Type {\bf mts\+State\+Data}$<$ \+\_\+element\+Type $>$\+::{\bf value\+\_\+type}\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_state_data_aeffdf781c6be5cac19466d4f3d25b3a3}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmts_state_data_a12c7e484ccac76e8c5551b53d1a42a25}{}\index{mts\+State\+Data@{mts\+State\+Data}!mts\+State\+Data@{mts\+State\+Data}}
+\index{mts\+State\+Data@{mts\+State\+Data}!mts\+State\+Data@{mts\+State\+Data}}
+\subsubsection[{mts\+State\+Data}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type $>$ {\bf mts\+State\+Data}$<$ \+\_\+element\+Type $>$\+::{\bf mts\+State\+Data} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_state_data_a12c7e484ccac76e8c5551b53d1a42a25}
+\hypertarget{classmts_state_data_a0f79aa7136a7bbd819c27d7efcc3dfe4}{}\index{mts\+State\+Data@{mts\+State\+Data}!````~mts\+State\+Data@{$\sim$mts\+State\+Data}}
+\index{````~mts\+State\+Data@{$\sim$mts\+State\+Data}!mts\+State\+Data@{mts\+State\+Data}}
+\subsubsection[{$\sim$mts\+State\+Data}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type $>$ {\bf mts\+State\+Data}$<$ \+\_\+element\+Type $>$\+::$\sim${\bf mts\+State\+Data} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_state_data_a0f79aa7136a7bbd819c27d7efcc3dfe4}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classmts_state_data_ad75f6fd4812170a7c4f8352f73cf2c5d}{}\index{mts\+State\+Data@{mts\+State\+Data}!Add\+Read\+Command\+To\+Interface@{Add\+Read\+Command\+To\+Interface}}
+\index{Add\+Read\+Command\+To\+Interface@{Add\+Read\+Command\+To\+Interface}!mts\+State\+Data@{mts\+State\+Data}}
+\subsubsection[{Add\+Read\+Command\+To\+Interface}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type $>$ void {\bf mts\+State\+Data}$<$ \+\_\+element\+Type $>$\+::Add\+Read\+Command\+To\+Interface (
+\begin{DoxyParamCaption}
+\item[{{\bf mts\+Interface\+Provided} $\ast$}]{interface\+Provided, }
+\item[{const std\+::string \&}]{command\+Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_state_data_ad75f6fd4812170a7c4f8352f73cf2c5d}
+Adds command objects to the specified device interface. Note that there are two command objects\+: a \textquotesingle{}read\textquotesingle{} command to get the latest value, and a \textquotesingle{}qualified read\textquotesingle{} command to get the value at the specified time. This is normally called from the constructor, and the command\+Name would typically be Get\+X\+X\+X, where X\+X\+X is the name of the state data. \hypertarget{classmts_state_data_a0c842d51fed06b16cce7da28a0b3ee5b}{}\index{mts\+State\+Data@{mts\+State\+Data}!Add\+To\+State\+Table@{Add\+To\+State\+Table}}
+\index{Add\+To\+State\+Table@{Add\+To\+State\+Table}!mts\+State\+Data@{mts\+State\+Data}}
+\subsubsection[{Add\+To\+State\+Table}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type $>$ void {\bf mts\+State\+Data}$<$ \+\_\+element\+Type $>$\+::Add\+To\+State\+Table (
+\begin{DoxyParamCaption}
+\item[{{\bf mts\+State\+Table} \&}]{table, }
+\item[{const std\+::string \&}]{data\+Name = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_state_data_a0c842d51fed06b16cce7da28a0b3ee5b}
+Adds a new element (array) for this state data to the state table. This is normally called from the constructor. The data\+Name is optional. \hypertarget{classmts_state_data_a0a840896d80f8ad090700855e18aae9e}{}\index{mts\+State\+Data@{mts\+State\+Data}!Add\+Write\+Command\+To\+Interface@{Add\+Write\+Command\+To\+Interface}}
+\index{Add\+Write\+Command\+To\+Interface@{Add\+Write\+Command\+To\+Interface}!mts\+State\+Data@{mts\+State\+Data}}
+\subsubsection[{Add\+Write\+Command\+To\+Interface}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type $>$ void {\bf mts\+State\+Data}$<$ \+\_\+element\+Type $>$\+::Add\+Write\+Command\+To\+Interface (
+\begin{DoxyParamCaption}
+\item[{{\bf mts\+Interface\+Provided} $\ast$}]{interface\+Provided, }
+\item[{const std\+::string \&}]{command\+Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_state_data_a0a840896d80f8ad090700855e18aae9e}
+Add write command to the specified task interface. Note that this must be a task so that the write is thread-\/safe. \hypertarget{classmts_state_data_a8183b2f36ae85ea50894047cb93fcc50}{}\index{mts\+State\+Data@{mts\+State\+Data}!Get@{Get}}
+\index{Get@{Get}!mts\+State\+Data@{mts\+State\+Data}}
+\subsubsection[{Get}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type $>$ void {\bf mts\+State\+Data}$<$ \+\_\+element\+Type $>$\+::Get (
+\begin{DoxyParamCaption}
+\item[{const {\bf mts\+State\+Index} \&}]{when, }
+\item[{{\bf value\+\_\+type} \&}]{data}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_state_data_a8183b2f36ae85ea50894047cb93fcc50}
+\hypertarget{classmts_state_data_a0e57052afa72058a9b212e620c2b6bed}{}\index{mts\+State\+Data@{mts\+State\+Data}!Get\+History@{Get\+History}}
+\index{Get\+History@{Get\+History}!mts\+State\+Data@{mts\+State\+Data}}
+\subsubsection[{Get\+History}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type $>$ void {\bf mts\+State\+Data}$<$ \+\_\+element\+Type $>$\+::Get\+History (
+\begin{DoxyParamCaption}
+\item[{const {\bf mts\+State\+Index} \&}]{end, }
+\item[{{\bf mts\+Vector}$<$ {\bf value\+\_\+type} $>$ \&}]{data}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_state_data_a0e57052afa72058a9b212e620c2b6bed}
+\hypertarget{classmts_state_data_a1a67b4827040969bf39a7c501cc3f210}{}\index{mts\+State\+Data@{mts\+State\+Data}!Get\+Latest@{Get\+Latest}}
+\index{Get\+Latest@{Get\+Latest}!mts\+State\+Data@{mts\+State\+Data}}
+\subsubsection[{Get\+Latest}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type $>$ void {\bf mts\+State\+Data}$<$ \+\_\+element\+Type $>$\+::Get\+Latest (
+\begin{DoxyParamCaption}
+\item[{{\bf value\+\_\+type} \&}]{obj}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_state_data_a1a67b4827040969bf39a7c501cc3f210}
+\hypertarget{classmts_state_data_a729478ccf1a9d8b35cd644567f7ecd5e}{}\index{mts\+State\+Data@{mts\+State\+Data}!operator value\+\_\+type \&@{operator value\+\_\+type \&}}
+\index{operator value\+\_\+type \&@{operator value\+\_\+type \&}!mts\+State\+Data@{mts\+State\+Data}}
+\subsubsection[{operator value\+\_\+type \&}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type $>$ {\bf mts\+State\+Data}$<$ \+\_\+element\+Type $>$\+::operator {\bf value\+\_\+type} \& (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_state_data_a729478ccf1a9d8b35cd644567f7ecd5e}
+Cast operator. This allows to assign to an object of the actual type without explicitly referencing the public data member \char`\"{}\+Data\char`\"{}. \hypertarget{classmts_state_data_a5a75e7d54ef66a9b03c4a643af42c58e}{}\index{mts\+State\+Data@{mts\+State\+Data}!operator=@{operator=}}
+\index{operator=@{operator=}!mts\+State\+Data@{mts\+State\+Data}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type $>$ {\bf This\+Type}\& {\bf mts\+State\+Data}$<$ \+\_\+element\+Type $>$\+::operator= (
+\begin{DoxyParamCaption}
+\item[{{\bf value\+\_\+type}}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_state_data_a5a75e7d54ef66a9b03c4a643af42c58e}
+Conversion assignment. This allows to assign from an object of the actual type without explicitly referencing the public member \char`\"{}\+Data\char`\"{}. \hypertarget{classmts_state_data_a5832b112fbcf7e63ab366e3dc4ffae70}{}\index{mts\+State\+Data@{mts\+State\+Data}!Set@{Set}}
+\index{Set@{Set}!mts\+State\+Data@{mts\+State\+Data}}
+\subsubsection[{Set}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type $>$ void {\bf mts\+State\+Data}$<$ \+\_\+element\+Type $>$\+::Set (
+\begin{DoxyParamCaption}
+\item[{const {\bf value\+\_\+type} \&}]{obj}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_state_data_a5832b112fbcf7e63ab366e3dc4ffae70}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classmts_state_data_a41e425be145f2a83a7386a783d3db35c}{}\index{mts\+State\+Data@{mts\+State\+Data}!Accessor@{Accessor}}
+\index{Accessor@{Accessor}!mts\+State\+Data@{mts\+State\+Data}}
+\subsubsection[{Accessor}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type $>$ const {\bf Accessor\+Type}$\ast$ {\bf mts\+State\+Data}$<$ \+\_\+element\+Type $>$\+::Accessor\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_state_data_a41e425be145f2a83a7386a783d3db35c}
+\hypertarget{classmts_state_data_a3f34dd7340ba9ff2f006a00ca7557f15}{}\index{mts\+State\+Data@{mts\+State\+Data}!Data@{Data}}
+\index{Data@{Data}!mts\+State\+Data@{mts\+State\+Data}}
+\subsubsection[{Data}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type $>$ {\bf value\+\_\+type} {\bf mts\+State\+Data}$<$ \+\_\+element\+Type $>$\+::Data}\label{classmts_state_data_a3f34dd7340ba9ff2f006a00ca7557f15}
+\hypertarget{classmts_state_data_ae5f3c63391a2375ab7f58d1c99bd8521}{}\index{mts\+State\+Data@{mts\+State\+Data}!Id@{Id}}
+\index{Id@{Id}!mts\+State\+Data@{mts\+State\+Data}}
+\subsubsection[{Id}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type $>$ {\bf mts\+State\+Data\+Id} {\bf mts\+State\+Data}$<$ \+\_\+element\+Type $>$\+::Id\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_state_data_ae5f3c63391a2375ab7f58d1c99bd8521}
+\hypertarget{classmts_state_data_a8933fedc828fdc64dedb258260be5e4a}{}\index{mts\+State\+Data@{mts\+State\+Data}!Table@{Table}}
+\index{Table@{Table}!mts\+State\+Data@{mts\+State\+Data}}
+\subsubsection[{Table}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type $>$ {\bf mts\+State\+Table}$\ast$ {\bf mts\+State\+Data}$<$ \+\_\+element\+Type $>$\+::Table\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_state_data_a8933fedc828fdc64dedb258260be5e4a}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Multi\+Task/\hyperlink{mts_state_data_8h}{mts\+State\+Data.\+h}\end{DoxyCompactItemize}

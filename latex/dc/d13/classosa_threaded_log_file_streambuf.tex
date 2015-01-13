@@ -1,0 +1,127 @@
+\hypertarget{classosa_threaded_log_file_streambuf}{}\section{osa\+Threaded\+Log\+File\+Streambuf$<$ \+\_\+element, \+\_\+trait $>$ Class Template Reference}
+\label{classosa_threaded_log_file_streambuf}\index{osa\+Threaded\+Log\+File\+Streambuf$<$ \+\_\+element, \+\_\+trait $>$@{osa\+Threaded\+Log\+File\+Streambuf$<$ \+\_\+element, \+\_\+trait $>$}}
+
+
+{\ttfamily \#include $<$osa\+Threaded\+Log\+File.\+h$>$}
+
+Inheritance diagram for osa\+Threaded\+Log\+File\+Streambuf$<$ \+\_\+element, \+\_\+trait $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{dc/d13/classosa_threaded_log_file_streambuf}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::basic\+\_\+streambuf$<$ \+\_\+element, \+\_\+trait $>$ \hyperlink{classosa_threaded_log_file_streambuf_a918db063483813434ed1d8f81c3fb205}{Base\+Class\+Type}
+\item 
+typedef std\+::basic\+\_\+streambuf$<$ \+\_\+element, \+\_\+trait $>$ \hyperlink{classosa_threaded_log_file_streambuf_a216ca33908152519430e5456e828805f}{Channel\+Type}
+\item 
+typedef std\+::pair$<$ \hyperlink{classosa_thread_id}{osa\+Thread\+Id}, \hyperlink{classosa_threaded_log_file_streambuf_a216ca33908152519430e5456e828805f}{Channel\+Type} $\ast$ $>$ \hyperlink{classosa_threaded_log_file_streambuf_afe93c480e5a97ccc96aa3027a8c15ed5}{Element\+Type}
+\item 
+typedef std\+::list$<$ \hyperlink{classosa_threaded_log_file_streambuf_afe93c480e5a97ccc96aa3027a8c15ed5}{Element\+Type} $>$ \hyperlink{classosa_threaded_log_file_streambuf_aa02aa00f9d3dbd620e15914d5ee83fb5}{Channel\+Container\+Type}
+\item 
+typedef Channel\+Container\+Type\+::iterator \hyperlink{classosa_threaded_log_file_streambuf_a2f40fd9fa3cc49d0c1adfda883c35fa0}{iterator}
+\item 
+typedef Channel\+Container\+Type\+::const\+\_\+iterator \hyperlink{classosa_threaded_log_file_streambuf_ae7f904ba3ba23106eb4821db7db66a26}{const\+\_\+iterator}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classosa_threaded_log_file_streambuf_a4ef5ef4896d14022f68b32dbeafbd0c2}{osa\+Threaded\+Log\+File\+Streambuf} (const std\+::string \&file\+Prefix)
+\item 
+\hyperlink{classosa_threaded_log_file_streambuf_a216ca33908152519430e5456e828805f}{Channel\+Type} $\ast$ \hyperlink{classosa_threaded_log_file_streambuf_a059c2cbfffeb0ecc80cdf23c1f1939e6}{Add\+Channel\+For\+Thread} (const \hyperlink{classosa_thread_id}{osa\+Thread\+Id} \&thread\+Id)
+\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::basic\+\_\+streambuf$<$ \+\_\+element, \+\_\+trait $>$\+::\hyperlink{classosa_threaded_log_file_streambuf_aac7f3a06c7b5f2824da9634732698e4b}{int\+\_\+type} \hyperlink{classosa_threaded_log_file_streambuf_aac7f3a06c7b5f2824da9634732698e4b}{int\+\_\+type}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual int \hyperlink{classosa_threaded_log_file_streambuf_aaf9cb36fea5412016f33e84b029c40c8}{sync} ()
+\item 
+virtual std\+::streamsize \hyperlink{classosa_threaded_log_file_streambuf_a81d062496b7afa56309b41909f63cbe9}{xsputn} (const \+\_\+element $\ast$s, std\+::streamsize n)
+\item 
+virtual \hyperlink{classosa_threaded_log_file_streambuf_aac7f3a06c7b5f2824da9634732698e4b}{int\+\_\+type} \hyperlink{classosa_threaded_log_file_streambuf_aecc7d94de57ab54fc8ab15ff941e5f92}{overflow} (\hyperlink{classosa_threaded_log_file_streambuf_aac7f3a06c7b5f2824da9634732698e4b}{int\+\_\+type} c=\+\_\+trait\+::eof())
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class \+\_\+element, class \+\_\+trait = std\+::char\+\_\+traits$<$\+\_\+element$>$$>$class osa\+Threaded\+Log\+File\+Streambuf$<$ \+\_\+element, \+\_\+trait $>$}
+
+\begin{DoxySeeAlso}{See also}
+C++ manual on basic\+\_\+ostream and basic\+\_\+streambuf, \hyperlink{classcmn_logger}{cmn\+Logger} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classosa_threaded_log_file_streambuf_a918db063483813434ed1d8f81c3fb205}{}\index{osa\+Threaded\+Log\+File\+Streambuf@{osa\+Threaded\+Log\+File\+Streambuf}!Base\+Class\+Type@{Base\+Class\+Type}}
+\index{Base\+Class\+Type@{Base\+Class\+Type}!osa\+Threaded\+Log\+File\+Streambuf@{osa\+Threaded\+Log\+File\+Streambuf}}
+\subsubsection[{Base\+Class\+Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element, class \+\_\+trait = std\+::char\+\_\+traits$<$\+\_\+element$>$$>$ typedef std\+::basic\+\_\+streambuf$<$\+\_\+element, \+\_\+trait$>$ {\bf osa\+Threaded\+Log\+File\+Streambuf}$<$ \+\_\+element, \+\_\+trait $>$\+::{\bf Base\+Class\+Type}}\label{classosa_threaded_log_file_streambuf_a918db063483813434ed1d8f81c3fb205}
+\hypertarget{classosa_threaded_log_file_streambuf_aa02aa00f9d3dbd620e15914d5ee83fb5}{}\index{osa\+Threaded\+Log\+File\+Streambuf@{osa\+Threaded\+Log\+File\+Streambuf}!Channel\+Container\+Type@{Channel\+Container\+Type}}
+\index{Channel\+Container\+Type@{Channel\+Container\+Type}!osa\+Threaded\+Log\+File\+Streambuf@{osa\+Threaded\+Log\+File\+Streambuf}}
+\subsubsection[{Channel\+Container\+Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element, class \+\_\+trait = std\+::char\+\_\+traits$<$\+\_\+element$>$$>$ typedef std\+::list$<${\bf Element\+Type}$>$ {\bf osa\+Threaded\+Log\+File\+Streambuf}$<$ \+\_\+element, \+\_\+trait $>$\+::{\bf Channel\+Container\+Type}}\label{classosa_threaded_log_file_streambuf_aa02aa00f9d3dbd620e15914d5ee83fb5}
+Type of internal data structure storing the channels. \hypertarget{classosa_threaded_log_file_streambuf_a216ca33908152519430e5456e828805f}{}\index{osa\+Threaded\+Log\+File\+Streambuf@{osa\+Threaded\+Log\+File\+Streambuf}!Channel\+Type@{Channel\+Type}}
+\index{Channel\+Type@{Channel\+Type}!osa\+Threaded\+Log\+File\+Streambuf@{osa\+Threaded\+Log\+File\+Streambuf}}
+\subsubsection[{Channel\+Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element, class \+\_\+trait = std\+::char\+\_\+traits$<$\+\_\+element$>$$>$ typedef std\+::basic\+\_\+streambuf$<$\+\_\+element, \+\_\+trait$>$ {\bf osa\+Threaded\+Log\+File\+Streambuf}$<$ \+\_\+element, \+\_\+trait $>$\+::{\bf Channel\+Type}}\label{classosa_threaded_log_file_streambuf_a216ca33908152519430e5456e828805f}
+\hypertarget{classosa_threaded_log_file_streambuf_ae7f904ba3ba23106eb4821db7db66a26}{}\index{osa\+Threaded\+Log\+File\+Streambuf@{osa\+Threaded\+Log\+File\+Streambuf}!const\+\_\+iterator@{const\+\_\+iterator}}
+\index{const\+\_\+iterator@{const\+\_\+iterator}!osa\+Threaded\+Log\+File\+Streambuf@{osa\+Threaded\+Log\+File\+Streambuf}}
+\subsubsection[{const\+\_\+iterator}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element, class \+\_\+trait = std\+::char\+\_\+traits$<$\+\_\+element$>$$>$ typedef Channel\+Container\+Type\+::const\+\_\+iterator {\bf osa\+Threaded\+Log\+File\+Streambuf}$<$ \+\_\+element, \+\_\+trait $>$\+::{\bf const\+\_\+iterator}}\label{classosa_threaded_log_file_streambuf_ae7f904ba3ba23106eb4821db7db66a26}
+\hypertarget{classosa_threaded_log_file_streambuf_afe93c480e5a97ccc96aa3027a8c15ed5}{}\index{osa\+Threaded\+Log\+File\+Streambuf@{osa\+Threaded\+Log\+File\+Streambuf}!Element\+Type@{Element\+Type}}
+\index{Element\+Type@{Element\+Type}!osa\+Threaded\+Log\+File\+Streambuf@{osa\+Threaded\+Log\+File\+Streambuf}}
+\subsubsection[{Element\+Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element, class \+\_\+trait = std\+::char\+\_\+traits$<$\+\_\+element$>$$>$ typedef std\+::pair$<${\bf osa\+Thread\+Id}, {\bf Channel\+Type} $\ast$$>$ {\bf osa\+Threaded\+Log\+File\+Streambuf}$<$ \+\_\+element, \+\_\+trait $>$\+::{\bf Element\+Type}}\label{classosa_threaded_log_file_streambuf_afe93c480e5a97ccc96aa3027a8c15ed5}
+\hypertarget{classosa_threaded_log_file_streambuf_aac7f3a06c7b5f2824da9634732698e4b}{}\index{osa\+Threaded\+Log\+File\+Streambuf@{osa\+Threaded\+Log\+File\+Streambuf}!int\+\_\+type@{int\+\_\+type}}
+\index{int\+\_\+type@{int\+\_\+type}!osa\+Threaded\+Log\+File\+Streambuf@{osa\+Threaded\+Log\+File\+Streambuf}}
+\subsubsection[{int\+\_\+type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element, class \+\_\+trait = std\+::char\+\_\+traits$<$\+\_\+element$>$$>$ typedef std\+::basic\+\_\+streambuf$<$\+\_\+element, \+\_\+trait$>$\+::{\bf int\+\_\+type} {\bf osa\+Threaded\+Log\+File\+Streambuf}$<$ \+\_\+element, \+\_\+trait $>$\+::{\bf int\+\_\+type}\hspace{0.3cm}{\ttfamily [protected]}}\label{classosa_threaded_log_file_streambuf_aac7f3a06c7b5f2824da9634732698e4b}
+\hypertarget{classosa_threaded_log_file_streambuf_a2f40fd9fa3cc49d0c1adfda883c35fa0}{}\index{osa\+Threaded\+Log\+File\+Streambuf@{osa\+Threaded\+Log\+File\+Streambuf}!iterator@{iterator}}
+\index{iterator@{iterator}!osa\+Threaded\+Log\+File\+Streambuf@{osa\+Threaded\+Log\+File\+Streambuf}}
+\subsubsection[{iterator}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element, class \+\_\+trait = std\+::char\+\_\+traits$<$\+\_\+element$>$$>$ typedef Channel\+Container\+Type\+::iterator {\bf osa\+Threaded\+Log\+File\+Streambuf}$<$ \+\_\+element, \+\_\+trait $>$\+::{\bf iterator}}\label{classosa_threaded_log_file_streambuf_a2f40fd9fa3cc49d0c1adfda883c35fa0}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classosa_threaded_log_file_streambuf_a4ef5ef4896d14022f68b32dbeafbd0c2}{}\index{osa\+Threaded\+Log\+File\+Streambuf@{osa\+Threaded\+Log\+File\+Streambuf}!osa\+Threaded\+Log\+File\+Streambuf@{osa\+Threaded\+Log\+File\+Streambuf}}
+\index{osa\+Threaded\+Log\+File\+Streambuf@{osa\+Threaded\+Log\+File\+Streambuf}!osa\+Threaded\+Log\+File\+Streambuf@{osa\+Threaded\+Log\+File\+Streambuf}}
+\subsubsection[{osa\+Threaded\+Log\+File\+Streambuf}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element, class \+\_\+trait = std\+::char\+\_\+traits$<$\+\_\+element$>$$>$ {\bf osa\+Threaded\+Log\+File\+Streambuf}$<$ \+\_\+element, \+\_\+trait $>$\+::{\bf osa\+Threaded\+Log\+File\+Streambuf} (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{file\+Prefix}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classosa_threaded_log_file_streambuf_a4ef5ef4896d14022f68b32dbeafbd0c2}
+Create the stream buf with the file name prefix. Does nothing else than storing the file name prefix. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classosa_threaded_log_file_streambuf_a059c2cbfffeb0ecc80cdf23c1f1939e6}{}\index{osa\+Threaded\+Log\+File\+Streambuf@{osa\+Threaded\+Log\+File\+Streambuf}!Add\+Channel\+For\+Thread@{Add\+Channel\+For\+Thread}}
+\index{Add\+Channel\+For\+Thread@{Add\+Channel\+For\+Thread}!osa\+Threaded\+Log\+File\+Streambuf@{osa\+Threaded\+Log\+File\+Streambuf}}
+\subsubsection[{Add\+Channel\+For\+Thread}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element , class \+\_\+trait $>$ {\bf osa\+Threaded\+Log\+File\+Streambuf}$<$ \+\_\+element, \+\_\+trait $>$\+::{\bf Channel\+Type} $\ast$ {\bf osa\+Threaded\+Log\+File\+Streambuf}$<$ \+\_\+element, \+\_\+trait $>$\+::Add\+Channel\+For\+Thread (
+\begin{DoxyParamCaption}
+\item[{const {\bf osa\+Thread\+Id} \&}]{thread\+Id}
+\end{DoxyParamCaption}
+)}\label{classosa_threaded_log_file_streambuf_a059c2cbfffeb0ecc80cdf23c1f1939e6}
+Create a file for the current thread and add its buffer to the list of channels. \hypertarget{classosa_threaded_log_file_streambuf_aecc7d94de57ab54fc8ab15ff941e5f92}{}\index{osa\+Threaded\+Log\+File\+Streambuf@{osa\+Threaded\+Log\+File\+Streambuf}!overflow@{overflow}}
+\index{overflow@{overflow}!osa\+Threaded\+Log\+File\+Streambuf@{osa\+Threaded\+Log\+File\+Streambuf}}
+\subsubsection[{overflow}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element , class \+\_\+trait $>$ {\bf osa\+Threaded\+Log\+File\+Streambuf}$<$ \+\_\+element, \+\_\+trait $>$\+::{\bf int\+\_\+type} {\bf osa\+Threaded\+Log\+File\+Streambuf}$<$ \+\_\+element, \+\_\+trait $>$\+::overflow (
+\begin{DoxyParamCaption}
+\item[{{\bf int\+\_\+type}}]{c = {\ttfamily \+\_\+trait\+:\+:eof()}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classosa_threaded_log_file_streambuf_aecc7d94de57ab54fc8ab15ff941e5f92}
+Override the basic\+\_\+streambuf overflow. \hyperlink{classosa_threaded_log_file_streambuf_aecc7d94de57ab54fc8ab15ff941e5f92}{overflow()} is called when sputc() discovers it does not have space in the storage buffer. In our case, it\textquotesingle{}s always. See more on it in the basic\+\_\+streambuf documentation. \hypertarget{classosa_threaded_log_file_streambuf_aaf9cb36fea5412016f33e84b029c40c8}{}\index{osa\+Threaded\+Log\+File\+Streambuf@{osa\+Threaded\+Log\+File\+Streambuf}!sync@{sync}}
+\index{sync@{sync}!osa\+Threaded\+Log\+File\+Streambuf@{osa\+Threaded\+Log\+File\+Streambuf}}
+\subsubsection[{sync}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element , class \+\_\+trait $>$ int {\bf osa\+Threaded\+Log\+File\+Streambuf}$<$ \+\_\+element, \+\_\+trait $>$\+::sync (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classosa_threaded_log_file_streambuf_aaf9cb36fea5412016f33e84b029c40c8}
+Override the basic\+\_\+streambuf sync for the current file output. \hypertarget{classosa_threaded_log_file_streambuf_a81d062496b7afa56309b41909f63cbe9}{}\index{osa\+Threaded\+Log\+File\+Streambuf@{osa\+Threaded\+Log\+File\+Streambuf}!xsputn@{xsputn}}
+\index{xsputn@{xsputn}!osa\+Threaded\+Log\+File\+Streambuf@{osa\+Threaded\+Log\+File\+Streambuf}}
+\subsubsection[{xsputn}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element, class \+\_\+trait $>$ std\+::streamsize {\bf osa\+Threaded\+Log\+File\+Streambuf}$<$ \+\_\+element, \+\_\+trait $>$\+::xsputn (
+\begin{DoxyParamCaption}
+\item[{const \+\_\+element $\ast$}]{s, }
+\item[{std\+::streamsize}]{n}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classosa_threaded_log_file_streambuf_a81d062496b7afa56309b41909f63cbe9}
+Override the basic\+\_\+streambuf xsputn for the current file output. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+O\+S\+Abstraction/\hyperlink{osa_threaded_log_file_8h}{osa\+Threaded\+Log\+File.\+h}\end{DoxyCompactItemize}

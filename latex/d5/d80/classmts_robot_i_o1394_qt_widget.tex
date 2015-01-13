@@ -1,0 +1,204 @@
+\hypertarget{classmts_robot_i_o1394_qt_widget}{}\section{mts\+Robot\+I\+O1394\+Qt\+Widget Class Reference}
+\label{classmts_robot_i_o1394_qt_widget}\index{mts\+Robot\+I\+O1394\+Qt\+Widget@{mts\+Robot\+I\+O1394\+Qt\+Widget}}
+
+
+{\ttfamily \#include $<$mts\+Robot\+I\+O1394\+Qt\+Widget.\+h$>$}
+
+Inheritance diagram for mts\+Robot\+I\+O1394\+Qt\+Widget\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{d5/d80/classmts_robot_i_o1394_qt_widget}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structmts_robot_i_o1394_qt_widget_1_1_actuator_struct}{Actuator\+Struct}
+\item 
+struct \hyperlink{structmts_robot_i_o1394_qt_widget_1_1_robot_struct}{Robot\+Struct}
+\end{DoxyCompactItemize}
+\subsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classmts_robot_i_o1394_qt_widget_aa67b0d5f0d3ba1ea6ae470d669181d6e}{Signal\+Power\+Status} (bool status)
+\item 
+void \hyperlink{classmts_robot_i_o1394_qt_widget_a2653466bf8a851e95fe47930f2b88aab}{Signal\+Watchdog\+Status} (bool status)
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmts_robot_i_o1394_qt_widget_a543c42d3fa7318d97d89c1936d5ca743}{mts\+Robot\+I\+O1394\+Qt\+Widget} (const std\+::string \&component\+Name, unsigned int number\+Of\+Actuators, unsigned int number\+Of\+Brakes, double period\+In\+Seconds=50.\+0 $\ast$\hyperlink{cmn_units_8h_aaf4d3f2fafb9b4a95606544b9d876b4a}{cmn\+\_\+ms})
+\item 
+\hyperlink{classmts_robot_i_o1394_qt_widget_aeaf28b08e36f26be20223307eeb48271}{mts\+Robot\+I\+O1394\+Qt\+Widget} (const \hyperlink{mts_component_8h_aa605f54730dc942fd5d3b0419fbb1aa8}{mts\+Component\+Constructor\+Name\+And\+U\+Int} \&arg)
+\item 
+\hyperlink{classmts_robot_i_o1394_qt_widget_a072d12c4c0a44fe3aafb5c9d1ae66926}{$\sim$mts\+Robot\+I\+O1394\+Qt\+Widget} (void)
+\item 
+void \hyperlink{classmts_robot_i_o1394_qt_widget_abcdf2ec519494dbf0917d2e4360ddf73}{Configure} (const std\+::string \&filename=\char`\"{}\char`\"{})
+\item 
+void \hyperlink{classmts_robot_i_o1394_qt_widget_a4f09cb9747549dba97bd03445f40dfcb}{Startup} (void)
+\item 
+void \hyperlink{classmts_robot_i_o1394_qt_widget_ac30591b633ede4a45f9742edd6d8c590}{Cleanup} (void)
+\end{DoxyCompactItemize}
+\subsection*{Protected Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classmts_robot_i_o1394_qt_widget_ac326195caa3410254aab44d0a96f46a8}{Slot\+Power\+Status} (bool status)
+\item 
+void \hyperlink{classmts_robot_i_o1394_qt_widget_a1eefb335b7779916e02d81d587b2a62a}{Slot\+Watchdog\+Status} (bool status)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classmts_robot_i_o1394_qt_widget_a09359bcaa8d312cbc1ca6bc440a3d6b0}{Init} (void)
+\item 
+virtual void \hyperlink{classmts_robot_i_o1394_qt_widget_af8e5a4c1a6483729693c0067a044e6c2}{close\+Event} (Q\+Close\+Event $\ast$event)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classmts_robot_i_o1394_qt_widget_ae0e6af9087d5457633b4d42a93c63bcd}{Direct\+Control}
+\item 
+int \hyperlink{classmts_robot_i_o1394_qt_widget_a4fa3dd1b6769a8a4fc0c51b77dbf3413}{Timer\+Period\+In\+Milliseconds}
+\item 
+double \hyperlink{classmts_robot_i_o1394_qt_widget_a65cefe450636651de5c971d33119c6db}{Watchdog\+Period\+In\+Seconds}
+\item 
+struct \hyperlink{structmts_robot_i_o1394_qt_widget_1_1_robot_struct}{mts\+Robot\+I\+O1394\+Qt\+Widget\+::\+Robot\+Struct} \hyperlink{classmts_robot_i_o1394_qt_widget_ade381e042472af642876b731415a18af}{Robot}
+\item 
+struct \hyperlink{structmts_robot_i_o1394_qt_widget_1_1_actuator_struct}{mts\+Robot\+I\+O1394\+Qt\+Widget\+::\+Actuator\+Struct} \hyperlink{classmts_robot_i_o1394_qt_widget_a68401b5200788155540f952697487364}{Actuators}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000019}{Todo}]maybe rename this class to \hyperlink{classmts_robot_i_o1394}{mts\+Robot\+I\+O1394}\{Robot,Digital\+Inputs,Log\}Qt\+Widget and create using mts\+Robot\+I\+O1394\+Factory\+Qt\+Widget 
+
+cisst Qt convention is now to start with the Qt prefix, i.\+e. mts\+Qt\+Widget\+Robot\+I\+O1394 ... \end{DoxyRefDesc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmts_robot_i_o1394_qt_widget_a543c42d3fa7318d97d89c1936d5ca743}{}\index{mts\+Robot\+I\+O1394\+Qt\+Widget@{mts\+Robot\+I\+O1394\+Qt\+Widget}!mts\+Robot\+I\+O1394\+Qt\+Widget@{mts\+Robot\+I\+O1394\+Qt\+Widget}}
+\index{mts\+Robot\+I\+O1394\+Qt\+Widget@{mts\+Robot\+I\+O1394\+Qt\+Widget}!mts\+Robot\+I\+O1394\+Qt\+Widget@{mts\+Robot\+I\+O1394\+Qt\+Widget}}
+\subsubsection[{mts\+Robot\+I\+O1394\+Qt\+Widget}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Robot\+I\+O1394\+Qt\+Widget\+::mts\+Robot\+I\+O1394\+Qt\+Widget (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{component\+Name, }
+\item[{unsigned int}]{number\+Of\+Actuators, }
+\item[{unsigned int}]{number\+Of\+Brakes, }
+\item[{double}]{period\+In\+Seconds = {\ttfamily 50.0~$\ast${\bf cmn\+\_\+ms}}}
+\end{DoxyParamCaption}
+)}\label{classmts_robot_i_o1394_qt_widget_a543c42d3fa7318d97d89c1936d5ca743}
+\hypertarget{classmts_robot_i_o1394_qt_widget_aeaf28b08e36f26be20223307eeb48271}{}\index{mts\+Robot\+I\+O1394\+Qt\+Widget@{mts\+Robot\+I\+O1394\+Qt\+Widget}!mts\+Robot\+I\+O1394\+Qt\+Widget@{mts\+Robot\+I\+O1394\+Qt\+Widget}}
+\index{mts\+Robot\+I\+O1394\+Qt\+Widget@{mts\+Robot\+I\+O1394\+Qt\+Widget}!mts\+Robot\+I\+O1394\+Qt\+Widget@{mts\+Robot\+I\+O1394\+Qt\+Widget}}
+\subsubsection[{mts\+Robot\+I\+O1394\+Qt\+Widget}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Robot\+I\+O1394\+Qt\+Widget\+::mts\+Robot\+I\+O1394\+Qt\+Widget (
+\begin{DoxyParamCaption}
+\item[{const {\bf mts\+Component\+Constructor\+Name\+And\+U\+Int} \&}]{arg}
+\end{DoxyParamCaption}
+)}\label{classmts_robot_i_o1394_qt_widget_aeaf28b08e36f26be20223307eeb48271}
+\hypertarget{classmts_robot_i_o1394_qt_widget_a072d12c4c0a44fe3aafb5c9d1ae66926}{}\index{mts\+Robot\+I\+O1394\+Qt\+Widget@{mts\+Robot\+I\+O1394\+Qt\+Widget}!````~mts\+Robot\+I\+O1394\+Qt\+Widget@{$\sim$mts\+Robot\+I\+O1394\+Qt\+Widget}}
+\index{````~mts\+Robot\+I\+O1394\+Qt\+Widget@{$\sim$mts\+Robot\+I\+O1394\+Qt\+Widget}!mts\+Robot\+I\+O1394\+Qt\+Widget@{mts\+Robot\+I\+O1394\+Qt\+Widget}}
+\subsubsection[{$\sim$mts\+Robot\+I\+O1394\+Qt\+Widget}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Robot\+I\+O1394\+Qt\+Widget\+::$\sim$mts\+Robot\+I\+O1394\+Qt\+Widget (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_robot_i_o1394_qt_widget_a072d12c4c0a44fe3aafb5c9d1ae66926}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classmts_robot_i_o1394_qt_widget_ac30591b633ede4a45f9742edd6d8c590}{}\index{mts\+Robot\+I\+O1394\+Qt\+Widget@{mts\+Robot\+I\+O1394\+Qt\+Widget}!Cleanup@{Cleanup}}
+\index{Cleanup@{Cleanup}!mts\+Robot\+I\+O1394\+Qt\+Widget@{mts\+Robot\+I\+O1394\+Qt\+Widget}}
+\subsubsection[{Cleanup}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Robot\+I\+O1394\+Qt\+Widget\+::\+Cleanup (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_robot_i_o1394_qt_widget_ac30591b633ede4a45f9742edd6d8c590}
+Virtual method that gets overloaded, and is run after the component gets killed using \hyperlink{classmts_component_a8c874182b54438abb963b755c3b27f95}{Kill()} method. 
+
+Reimplemented from \hyperlink{classmts_component_a891f330f4fde7d831dcf7dc537dc5e81}{mts\+Component}.
+
+\hypertarget{classmts_robot_i_o1394_qt_widget_af8e5a4c1a6483729693c0067a044e6c2}{}\index{mts\+Robot\+I\+O1394\+Qt\+Widget@{mts\+Robot\+I\+O1394\+Qt\+Widget}!close\+Event@{close\+Event}}
+\index{close\+Event@{close\+Event}!mts\+Robot\+I\+O1394\+Qt\+Widget@{mts\+Robot\+I\+O1394\+Qt\+Widget}}
+\subsubsection[{close\+Event}]{\setlength{\rightskip}{0pt plus 5cm}virtual void mts\+Robot\+I\+O1394\+Qt\+Widget\+::close\+Event (
+\begin{DoxyParamCaption}
+\item[{Q\+Close\+Event $\ast$}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classmts_robot_i_o1394_qt_widget_af8e5a4c1a6483729693c0067a044e6c2}
+\hypertarget{classmts_robot_i_o1394_qt_widget_abcdf2ec519494dbf0917d2e4360ddf73}{}\index{mts\+Robot\+I\+O1394\+Qt\+Widget@{mts\+Robot\+I\+O1394\+Qt\+Widget}!Configure@{Configure}}
+\index{Configure@{Configure}!mts\+Robot\+I\+O1394\+Qt\+Widget@{mts\+Robot\+I\+O1394\+Qt\+Widget}}
+\subsubsection[{Configure}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Robot\+I\+O1394\+Qt\+Widget\+::\+Configure (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{filename = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_robot_i_o1394_qt_widget_abcdf2ec519494dbf0917d2e4360ddf73}
+The virtual method so that the interface or tasks can configure themselves 
+
+Reimplemented from \hyperlink{classmts_component_ad872432876de7879dc96c232b411c146}{mts\+Component}.
+
+\hypertarget{classmts_robot_i_o1394_qt_widget_a09359bcaa8d312cbc1ca6bc440a3d6b0}{}\index{mts\+Robot\+I\+O1394\+Qt\+Widget@{mts\+Robot\+I\+O1394\+Qt\+Widget}!Init@{Init}}
+\index{Init@{Init}!mts\+Robot\+I\+O1394\+Qt\+Widget@{mts\+Robot\+I\+O1394\+Qt\+Widget}}
+\subsubsection[{Init}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Robot\+I\+O1394\+Qt\+Widget\+::\+Init (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_robot_i_o1394_qt_widget_a09359bcaa8d312cbc1ca6bc440a3d6b0}
+\hypertarget{classmts_robot_i_o1394_qt_widget_aa67b0d5f0d3ba1ea6ae470d669181d6e}{}\index{mts\+Robot\+I\+O1394\+Qt\+Widget@{mts\+Robot\+I\+O1394\+Qt\+Widget}!Signal\+Power\+Status@{Signal\+Power\+Status}}
+\index{Signal\+Power\+Status@{Signal\+Power\+Status}!mts\+Robot\+I\+O1394\+Qt\+Widget@{mts\+Robot\+I\+O1394\+Qt\+Widget}}
+\subsubsection[{Signal\+Power\+Status}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Robot\+I\+O1394\+Qt\+Widget\+::\+Signal\+Power\+Status (
+\begin{DoxyParamCaption}
+\item[{bool}]{status}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [signal]}}\label{classmts_robot_i_o1394_qt_widget_aa67b0d5f0d3ba1ea6ae470d669181d6e}
+\hypertarget{classmts_robot_i_o1394_qt_widget_a2653466bf8a851e95fe47930f2b88aab}{}\index{mts\+Robot\+I\+O1394\+Qt\+Widget@{mts\+Robot\+I\+O1394\+Qt\+Widget}!Signal\+Watchdog\+Status@{Signal\+Watchdog\+Status}}
+\index{Signal\+Watchdog\+Status@{Signal\+Watchdog\+Status}!mts\+Robot\+I\+O1394\+Qt\+Widget@{mts\+Robot\+I\+O1394\+Qt\+Widget}}
+\subsubsection[{Signal\+Watchdog\+Status}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Robot\+I\+O1394\+Qt\+Widget\+::\+Signal\+Watchdog\+Status (
+\begin{DoxyParamCaption}
+\item[{bool}]{status}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [signal]}}\label{classmts_robot_i_o1394_qt_widget_a2653466bf8a851e95fe47930f2b88aab}
+\hypertarget{classmts_robot_i_o1394_qt_widget_ac326195caa3410254aab44d0a96f46a8}{}\index{mts\+Robot\+I\+O1394\+Qt\+Widget@{mts\+Robot\+I\+O1394\+Qt\+Widget}!Slot\+Power\+Status@{Slot\+Power\+Status}}
+\index{Slot\+Power\+Status@{Slot\+Power\+Status}!mts\+Robot\+I\+O1394\+Qt\+Widget@{mts\+Robot\+I\+O1394\+Qt\+Widget}}
+\subsubsection[{Slot\+Power\+Status}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Robot\+I\+O1394\+Qt\+Widget\+::\+Slot\+Power\+Status (
+\begin{DoxyParamCaption}
+\item[{bool}]{status}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [slot]}}\label{classmts_robot_i_o1394_qt_widget_ac326195caa3410254aab44d0a96f46a8}
+\hypertarget{classmts_robot_i_o1394_qt_widget_a1eefb335b7779916e02d81d587b2a62a}{}\index{mts\+Robot\+I\+O1394\+Qt\+Widget@{mts\+Robot\+I\+O1394\+Qt\+Widget}!Slot\+Watchdog\+Status@{Slot\+Watchdog\+Status}}
+\index{Slot\+Watchdog\+Status@{Slot\+Watchdog\+Status}!mts\+Robot\+I\+O1394\+Qt\+Widget@{mts\+Robot\+I\+O1394\+Qt\+Widget}}
+\subsubsection[{Slot\+Watchdog\+Status}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Robot\+I\+O1394\+Qt\+Widget\+::\+Slot\+Watchdog\+Status (
+\begin{DoxyParamCaption}
+\item[{bool}]{status}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [slot]}}\label{classmts_robot_i_o1394_qt_widget_a1eefb335b7779916e02d81d587b2a62a}
+\hypertarget{classmts_robot_i_o1394_qt_widget_a4f09cb9747549dba97bd03445f40dfcb}{}\index{mts\+Robot\+I\+O1394\+Qt\+Widget@{mts\+Robot\+I\+O1394\+Qt\+Widget}!Startup@{Startup}}
+\index{Startup@{Startup}!mts\+Robot\+I\+O1394\+Qt\+Widget@{mts\+Robot\+I\+O1394\+Qt\+Widget}}
+\subsubsection[{Startup}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Robot\+I\+O1394\+Qt\+Widget\+::\+Startup (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_robot_i_o1394_qt_widget_a4f09cb9747549dba97bd03445f40dfcb}
+Virtual method that gets overloaded, and is run before the component is started. 
+
+Reimplemented from \hyperlink{classmts_component_aaf28f0262b44eb6866e10089a02fa6e4}{mts\+Component}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classmts_robot_i_o1394_qt_widget_a68401b5200788155540f952697487364}{}\index{mts\+Robot\+I\+O1394\+Qt\+Widget@{mts\+Robot\+I\+O1394\+Qt\+Widget}!Actuators@{Actuators}}
+\index{Actuators@{Actuators}!mts\+Robot\+I\+O1394\+Qt\+Widget@{mts\+Robot\+I\+O1394\+Qt\+Widget}}
+\subsubsection[{Actuators}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf mts\+Robot\+I\+O1394\+Qt\+Widget\+::\+Actuator\+Struct}  mts\+Robot\+I\+O1394\+Qt\+Widget\+::\+Actuators\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_robot_i_o1394_qt_widget_a68401b5200788155540f952697487364}
+\hypertarget{classmts_robot_i_o1394_qt_widget_ae0e6af9087d5457633b4d42a93c63bcd}{}\index{mts\+Robot\+I\+O1394\+Qt\+Widget@{mts\+Robot\+I\+O1394\+Qt\+Widget}!Direct\+Control@{Direct\+Control}}
+\index{Direct\+Control@{Direct\+Control}!mts\+Robot\+I\+O1394\+Qt\+Widget@{mts\+Robot\+I\+O1394\+Qt\+Widget}}
+\subsubsection[{Direct\+Control}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Robot\+I\+O1394\+Qt\+Widget\+::\+Direct\+Control\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_robot_i_o1394_qt_widget_ae0e6af9087d5457633b4d42a93c63bcd}
+\hypertarget{classmts_robot_i_o1394_qt_widget_ade381e042472af642876b731415a18af}{}\index{mts\+Robot\+I\+O1394\+Qt\+Widget@{mts\+Robot\+I\+O1394\+Qt\+Widget}!Robot@{Robot}}
+\index{Robot@{Robot}!mts\+Robot\+I\+O1394\+Qt\+Widget@{mts\+Robot\+I\+O1394\+Qt\+Widget}}
+\subsubsection[{Robot}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf mts\+Robot\+I\+O1394\+Qt\+Widget\+::\+Robot\+Struct}  mts\+Robot\+I\+O1394\+Qt\+Widget\+::\+Robot\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_robot_i_o1394_qt_widget_ade381e042472af642876b731415a18af}
+\hypertarget{classmts_robot_i_o1394_qt_widget_a4fa3dd1b6769a8a4fc0c51b77dbf3413}{}\index{mts\+Robot\+I\+O1394\+Qt\+Widget@{mts\+Robot\+I\+O1394\+Qt\+Widget}!Timer\+Period\+In\+Milliseconds@{Timer\+Period\+In\+Milliseconds}}
+\index{Timer\+Period\+In\+Milliseconds@{Timer\+Period\+In\+Milliseconds}!mts\+Robot\+I\+O1394\+Qt\+Widget@{mts\+Robot\+I\+O1394\+Qt\+Widget}}
+\subsubsection[{Timer\+Period\+In\+Milliseconds}]{\setlength{\rightskip}{0pt plus 5cm}int mts\+Robot\+I\+O1394\+Qt\+Widget\+::\+Timer\+Period\+In\+Milliseconds\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_robot_i_o1394_qt_widget_a4fa3dd1b6769a8a4fc0c51b77dbf3413}
+\hypertarget{classmts_robot_i_o1394_qt_widget_a65cefe450636651de5c971d33119c6db}{}\index{mts\+Robot\+I\+O1394\+Qt\+Widget@{mts\+Robot\+I\+O1394\+Qt\+Widget}!Watchdog\+Period\+In\+Seconds@{Watchdog\+Period\+In\+Seconds}}
+\index{Watchdog\+Period\+In\+Seconds@{Watchdog\+Period\+In\+Seconds}!mts\+Robot\+I\+O1394\+Qt\+Widget@{mts\+Robot\+I\+O1394\+Qt\+Widget}}
+\subsubsection[{Watchdog\+Period\+In\+Seconds}]{\setlength{\rightskip}{0pt plus 5cm}double mts\+Robot\+I\+O1394\+Qt\+Widget\+::\+Watchdog\+Period\+In\+Seconds\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_robot_i_o1394_qt_widget_a65cefe450636651de5c971d33119c6db}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/saw\+Robot\+I\+O1394/include/saw\+Robot\+I\+O1394/\hyperlink{mts_robot_i_o1394_qt_widget_8h}{mts\+Robot\+I\+O1394\+Qt\+Widget.\+h}\end{DoxyCompactItemize}

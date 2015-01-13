@@ -1,0 +1,233 @@
+\hypertarget{classosa_c_a_n_bus_frame}{}\section{osa\+C\+A\+N\+Bus\+Frame Class Reference}
+\label{classosa_c_a_n_bus_frame}\index{osa\+C\+A\+N\+Bus\+Frame@{osa\+C\+A\+N\+Bus\+Frame}}
+
+
+C\+A\+N frame implementation.  
+
+
+
+
+{\ttfamily \#include $<$osa\+C\+A\+N\+Bus\+Frame.\+h$>$}
+
+Inheritance diagram for osa\+C\+A\+N\+Bus\+Frame\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{df/da8/classosa_c_a_n_bus_frame}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef unsigned short \hyperlink{classosa_c_a_n_bus_frame_ae917bcfe6427b2055a405716909c6048}{I\+D}
+\begin{DoxyCompactList}\small\item\em The id of a C\+A\+N frame. \end{DoxyCompactList}\item 
+typedef unsigned short \hyperlink{classosa_c_a_n_bus_frame_a28c1ee7996aa3559ed24871ab5bd9d0d}{Mask}
+\item 
+typedef unsigned char \hyperlink{classosa_c_a_n_bus_frame_a938f540c9de33b240d3bc4f21c341ba5}{Data}
+\begin{DoxyCompactList}\small\item\em The data type. \end{DoxyCompactList}\item 
+typedef \hyperlink{classosa_c_a_n_bus_frame_a938f540c9de33b240d3bc4f21c341ba5}{Data} \hyperlink{classosa_c_a_n_bus_frame_ac41162892eefb85a1308d485ec630969}{Data\+Field}\mbox{[}8\mbox{]}
+\begin{DoxyCompactList}\small\item\em The field of data. \end{DoxyCompactList}\item 
+typedef unsigned char \hyperlink{classosa_c_a_n_bus_frame_ab5bacbd4959a9046925438af889744f4}{Data\+Length}
+\begin{DoxyCompactList}\small\item\em The data length type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classosa_c_a_n_bus_frame_a2615199c847dd3ed03b7414c5c1c473d}{osa\+C\+A\+N\+Bus\+Frame} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{classosa_c_a_n_bus_frame_a76d0e5885c53c1730b387315b2dd9d3c}{osa\+C\+A\+N\+Bus\+Frame} (\hyperlink{classosa_c_a_n_bus_frame_ae917bcfe6427b2055a405716909c6048}{I\+D} canid, \hyperlink{classosa_c_a_n_bus_frame_ac41162892eefb85a1308d485ec630969}{Data\+Field} \hyperlink{classosa_c_a_n_bus_frame_ae5114021468fe3ca35f95ec123db1e2d}{data}, \hyperlink{classosa_c_a_n_bus_frame_ab5bacbd4959a9046925438af889744f4}{Data\+Length} \hyperlink{classosa_c_a_n_bus_frame_abc694b0742e9c5b7e2db8640caa17565}{nbytes})
+\begin{DoxyCompactList}\small\item\em Overloaded constructor. \end{DoxyCompactList}\item 
+\hyperlink{classosa_c_a_n_bus_frame_a93601457f3b5e4254a3ed9b11d790f1d}{osa\+C\+A\+N\+Bus\+Frame} (\hyperlink{classosa_c_a_n_bus_frame_ae917bcfe6427b2055a405716909c6048}{I\+D} canid, const \hyperlink{classvct_dynamic_vector}{vct\+Dynamic\+Vector}$<$ \hyperlink{classosa_c_a_n_bus_frame_a938f540c9de33b240d3bc4f21c341ba5}{Data} $>$ \&\hyperlink{classosa_c_a_n_bus_frame_ae5114021468fe3ca35f95ec123db1e2d}{data})
+\item 
+\hyperlink{classosa_c_a_n_bus_frame_ae917bcfe6427b2055a405716909c6048}{I\+D} \hyperlink{classosa_c_a_n_bus_frame_ab70017817004bc49297fbc303a5a0919}{Get\+I\+D} () const 
+\begin{DoxyCompactList}\small\item\em Return the identifier of the frame. \end{DoxyCompactList}\item 
+\hyperlink{classosa_c_a_n_bus_frame_ab5bacbd4959a9046925438af889744f4}{Data\+Length} \hyperlink{classosa_c_a_n_bus_frame_a4dac9f774e50ee0396481400d0179768}{Get\+Length} () const 
+\begin{DoxyCompactList}\small\item\em Return the length in bytes of the data. \end{DoxyCompactList}\item 
+\hyperlink{classosa_c_a_n_bus_frame_a938f540c9de33b240d3bc4f21c341ba5}{Data} $\ast$ \hyperlink{classosa_c_a_n_bus_frame_ac9a92b54cd93f9125c35bbfb4b1c0cc5}{Get\+Data} ()
+\begin{DoxyCompactList}\small\item\em Return a pointer to the data. \end{DoxyCompactList}\item 
+const \hyperlink{classosa_c_a_n_bus_frame_a938f540c9de33b240d3bc4f21c341ba5}{Data} $\ast$ \hyperlink{classosa_c_a_n_bus_frame_a43ef25ac96b0ecebadfa8fc3e5709353}{Get\+Data} () const 
+\begin{DoxyCompactList}\small\item\em Return a const pointer to the data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classosa_c_a_n_bus_frame_ae917bcfe6427b2055a405716909c6048}{I\+D} \hyperlink{classosa_c_a_n_bus_frame_a43c2a396a6f7dcf502daeb8f3cc8967e}{id}
+\begin{DoxyCompactList}\small\item\em The I\+D of the node origin. \end{DoxyCompactList}\item 
+\hyperlink{classosa_c_a_n_bus_frame_ac41162892eefb85a1308d485ec630969}{Data\+Field} \hyperlink{classosa_c_a_n_bus_frame_ae5114021468fe3ca35f95ec123db1e2d}{data}
+\begin{DoxyCompactList}\small\item\em The message (8 bytes) \end{DoxyCompactList}\item 
+\hyperlink{classosa_c_a_n_bus_frame_ab5bacbd4959a9046925438af889744f4}{Data\+Length} \hyperlink{classosa_c_a_n_bus_frame_abc694b0742e9c5b7e2db8640caa17565}{nbytes}
+\begin{DoxyCompactList}\small\item\em The lenght of the message in bytes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \hyperlink{classosa_c_a_n_bus_frame_ac61918af64d7f16800905a9fbb02d8a5}{operator$<$$<$} (std\+::ostream \&os, const \hyperlink{classosa_c_a_n_bus_frame}{osa\+C\+A\+N\+Bus\+Frame} \&frame)
+\begin{DoxyCompactList}\small\item\em Output the can frame. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+C\+A\+N frame implementation. 
+
+This defines a basic C\+A\+N frame. It does not support the extended frame format. The frame is composed of an identifier, 8 bytes of data and a data length. A C\+A\+N frame contain an 11 bits identifier, 0-\/8 bytes of data and a data length code (0-\/8). This class does not support the extended frame format. 
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classosa_c_a_n_bus_frame_a938f540c9de33b240d3bc4f21c341ba5}{}\index{osa\+C\+A\+N\+Bus\+Frame@{osa\+C\+A\+N\+Bus\+Frame}!Data@{Data}}
+\index{Data@{Data}!osa\+C\+A\+N\+Bus\+Frame@{osa\+C\+A\+N\+Bus\+Frame}}
+\subsubsection[{Data}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned char {\bf osa\+C\+A\+N\+Bus\+Frame\+::\+Data}}\label{classosa_c_a_n_bus_frame_a938f540c9de33b240d3bc4f21c341ba5}
+
+
+The data type. 
+
+\hypertarget{classosa_c_a_n_bus_frame_ac41162892eefb85a1308d485ec630969}{}\index{osa\+C\+A\+N\+Bus\+Frame@{osa\+C\+A\+N\+Bus\+Frame}!Data\+Field@{Data\+Field}}
+\index{Data\+Field@{Data\+Field}!osa\+C\+A\+N\+Bus\+Frame@{osa\+C\+A\+N\+Bus\+Frame}}
+\subsubsection[{Data\+Field}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Data} osa\+C\+A\+N\+Bus\+Frame\+::\+Data\+Field\mbox{[}8\mbox{]}}\label{classosa_c_a_n_bus_frame_ac41162892eefb85a1308d485ec630969}
+
+
+The field of data. 
+
+\hypertarget{classosa_c_a_n_bus_frame_ab5bacbd4959a9046925438af889744f4}{}\index{osa\+C\+A\+N\+Bus\+Frame@{osa\+C\+A\+N\+Bus\+Frame}!Data\+Length@{Data\+Length}}
+\index{Data\+Length@{Data\+Length}!osa\+C\+A\+N\+Bus\+Frame@{osa\+C\+A\+N\+Bus\+Frame}}
+\subsubsection[{Data\+Length}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned char {\bf osa\+C\+A\+N\+Bus\+Frame\+::\+Data\+Length}}\label{classosa_c_a_n_bus_frame_ab5bacbd4959a9046925438af889744f4}
+
+
+The data length type. 
+
+\hypertarget{classosa_c_a_n_bus_frame_ae917bcfe6427b2055a405716909c6048}{}\index{osa\+C\+A\+N\+Bus\+Frame@{osa\+C\+A\+N\+Bus\+Frame}!I\+D@{I\+D}}
+\index{I\+D@{I\+D}!osa\+C\+A\+N\+Bus\+Frame@{osa\+C\+A\+N\+Bus\+Frame}}
+\subsubsection[{I\+D}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned short {\bf osa\+C\+A\+N\+Bus\+Frame\+::\+I\+D}}\label{classosa_c_a_n_bus_frame_ae917bcfe6427b2055a405716909c6048}
+
+
+The id of a C\+A\+N frame. 
+
+A C\+A\+N I\+D has 11 bits so we use 16 bits to represent a C\+A\+N id of which only the 11 L\+S\+B are used. \hypertarget{classosa_c_a_n_bus_frame_a28c1ee7996aa3559ed24871ab5bd9d0d}{}\index{osa\+C\+A\+N\+Bus\+Frame@{osa\+C\+A\+N\+Bus\+Frame}!Mask@{Mask}}
+\index{Mask@{Mask}!osa\+C\+A\+N\+Bus\+Frame@{osa\+C\+A\+N\+Bus\+Frame}}
+\subsubsection[{Mask}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned short {\bf osa\+C\+A\+N\+Bus\+Frame\+::\+Mask}}\label{classosa_c_a_n_bus_frame_a28c1ee7996aa3559ed24871ab5bd9d0d}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classosa_c_a_n_bus_frame_a2615199c847dd3ed03b7414c5c1c473d}{}\index{osa\+C\+A\+N\+Bus\+Frame@{osa\+C\+A\+N\+Bus\+Frame}!osa\+C\+A\+N\+Bus\+Frame@{osa\+C\+A\+N\+Bus\+Frame}}
+\index{osa\+C\+A\+N\+Bus\+Frame@{osa\+C\+A\+N\+Bus\+Frame}!osa\+C\+A\+N\+Bus\+Frame@{osa\+C\+A\+N\+Bus\+Frame}}
+\subsubsection[{osa\+C\+A\+N\+Bus\+Frame}]{\setlength{\rightskip}{0pt plus 5cm}osa\+C\+A\+N\+Bus\+Frame\+::osa\+C\+A\+N\+Bus\+Frame (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classosa_c_a_n_bus_frame_a2615199c847dd3ed03b7414c5c1c473d}
+
+
+Default constructor. 
+
+Set the I\+Ds to \char`\"{}0\char`\"{} the message length to \char`\"{}0\char`\"{} and all the message bytes to \char`\"{}0\char`\"{} \hypertarget{classosa_c_a_n_bus_frame_a76d0e5885c53c1730b387315b2dd9d3c}{}\index{osa\+C\+A\+N\+Bus\+Frame@{osa\+C\+A\+N\+Bus\+Frame}!osa\+C\+A\+N\+Bus\+Frame@{osa\+C\+A\+N\+Bus\+Frame}}
+\index{osa\+C\+A\+N\+Bus\+Frame@{osa\+C\+A\+N\+Bus\+Frame}!osa\+C\+A\+N\+Bus\+Frame@{osa\+C\+A\+N\+Bus\+Frame}}
+\subsubsection[{osa\+C\+A\+N\+Bus\+Frame}]{\setlength{\rightskip}{0pt plus 5cm}osa\+C\+A\+N\+Bus\+Frame\+::osa\+C\+A\+N\+Bus\+Frame (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+D}}]{canid, }
+\item[{{\bf Data\+Field}}]{data, }
+\item[{{\bf Data\+Length}}]{nbytes}
+\end{DoxyParamCaption}
+)}\label{classosa_c_a_n_bus_frame_a76d0e5885c53c1730b387315b2dd9d3c}
+
+
+Overloaded constructor. 
+
+Set the id of the C\+A\+N frame and the message \hypertarget{classosa_c_a_n_bus_frame_a93601457f3b5e4254a3ed9b11d790f1d}{}\index{osa\+C\+A\+N\+Bus\+Frame@{osa\+C\+A\+N\+Bus\+Frame}!osa\+C\+A\+N\+Bus\+Frame@{osa\+C\+A\+N\+Bus\+Frame}}
+\index{osa\+C\+A\+N\+Bus\+Frame@{osa\+C\+A\+N\+Bus\+Frame}!osa\+C\+A\+N\+Bus\+Frame@{osa\+C\+A\+N\+Bus\+Frame}}
+\subsubsection[{osa\+C\+A\+N\+Bus\+Frame}]{\setlength{\rightskip}{0pt plus 5cm}osa\+C\+A\+N\+Bus\+Frame\+::osa\+C\+A\+N\+Bus\+Frame (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+D}}]{canid, }
+\item[{const {\bf vct\+Dynamic\+Vector}$<$ {\bf Data} $>$ \&}]{data}
+\end{DoxyParamCaption}
+)}\label{classosa_c_a_n_bus_frame_a93601457f3b5e4254a3ed9b11d790f1d}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classosa_c_a_n_bus_frame_ac9a92b54cd93f9125c35bbfb4b1c0cc5}{}\index{osa\+C\+A\+N\+Bus\+Frame@{osa\+C\+A\+N\+Bus\+Frame}!Get\+Data@{Get\+Data}}
+\index{Get\+Data@{Get\+Data}!osa\+C\+A\+N\+Bus\+Frame@{osa\+C\+A\+N\+Bus\+Frame}}
+\subsubsection[{Get\+Data}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Data}$\ast$ osa\+C\+A\+N\+Bus\+Frame\+::\+Get\+Data (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classosa_c_a_n_bus_frame_ac9a92b54cd93f9125c35bbfb4b1c0cc5}
+
+
+Return a pointer to the data. 
+
+\hypertarget{classosa_c_a_n_bus_frame_a43ef25ac96b0ecebadfa8fc3e5709353}{}\index{osa\+C\+A\+N\+Bus\+Frame@{osa\+C\+A\+N\+Bus\+Frame}!Get\+Data@{Get\+Data}}
+\index{Get\+Data@{Get\+Data}!osa\+C\+A\+N\+Bus\+Frame@{osa\+C\+A\+N\+Bus\+Frame}}
+\subsubsection[{Get\+Data}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Data}$\ast$ osa\+C\+A\+N\+Bus\+Frame\+::\+Get\+Data (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classosa_c_a_n_bus_frame_a43ef25ac96b0ecebadfa8fc3e5709353}
+
+
+Return a const pointer to the data. 
+
+\hypertarget{classosa_c_a_n_bus_frame_ab70017817004bc49297fbc303a5a0919}{}\index{osa\+C\+A\+N\+Bus\+Frame@{osa\+C\+A\+N\+Bus\+Frame}!Get\+I\+D@{Get\+I\+D}}
+\index{Get\+I\+D@{Get\+I\+D}!osa\+C\+A\+N\+Bus\+Frame@{osa\+C\+A\+N\+Bus\+Frame}}
+\subsubsection[{Get\+I\+D}]{\setlength{\rightskip}{0pt plus 5cm}{\bf I\+D} osa\+C\+A\+N\+Bus\+Frame\+::\+Get\+I\+D (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classosa_c_a_n_bus_frame_ab70017817004bc49297fbc303a5a0919}
+
+
+Return the identifier of the frame. 
+
+\hypertarget{classosa_c_a_n_bus_frame_a4dac9f774e50ee0396481400d0179768}{}\index{osa\+C\+A\+N\+Bus\+Frame@{osa\+C\+A\+N\+Bus\+Frame}!Get\+Length@{Get\+Length}}
+\index{Get\+Length@{Get\+Length}!osa\+C\+A\+N\+Bus\+Frame@{osa\+C\+A\+N\+Bus\+Frame}}
+\subsubsection[{Get\+Length}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Data\+Length} osa\+C\+A\+N\+Bus\+Frame\+::\+Get\+Length (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classosa_c_a_n_bus_frame_a4dac9f774e50ee0396481400d0179768}
+
+
+Return the length in bytes of the data. 
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classosa_c_a_n_bus_frame_ac61918af64d7f16800905a9fbb02d8a5}{}\index{osa\+C\+A\+N\+Bus\+Frame@{osa\+C\+A\+N\+Bus\+Frame}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!osa\+C\+A\+N\+Bus\+Frame@{osa\+C\+A\+N\+Bus\+Frame}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}std\+::ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{os, }
+\item[{const {\bf osa\+C\+A\+N\+Bus\+Frame} \&}]{frame}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\label{classosa_c_a_n_bus_frame_ac61918af64d7f16800905a9fbb02d8a5}
+
+
+Output the can frame. 
+
+Prints out the frame\textquotesingle{}s identifier, data length and data 
+\begin{DoxyParams}{Parameters}
+{\em os\mbox{[}in\mbox{]}} & An ouptput stream \\
+\hline
+{\em cf\mbox{[}in\mbox{]}} & A C\+A\+N frame \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classosa_c_a_n_bus_frame_ae5114021468fe3ca35f95ec123db1e2d}{}\index{osa\+C\+A\+N\+Bus\+Frame@{osa\+C\+A\+N\+Bus\+Frame}!data@{data}}
+\index{data@{data}!osa\+C\+A\+N\+Bus\+Frame@{osa\+C\+A\+N\+Bus\+Frame}}
+\subsubsection[{data}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Data\+Field} osa\+C\+A\+N\+Bus\+Frame\+::data\hspace{0.3cm}{\ttfamily [protected]}}\label{classosa_c_a_n_bus_frame_ae5114021468fe3ca35f95ec123db1e2d}
+
+
+The message (8 bytes) 
+
+\hypertarget{classosa_c_a_n_bus_frame_a43c2a396a6f7dcf502daeb8f3cc8967e}{}\index{osa\+C\+A\+N\+Bus\+Frame@{osa\+C\+A\+N\+Bus\+Frame}!id@{id}}
+\index{id@{id}!osa\+C\+A\+N\+Bus\+Frame@{osa\+C\+A\+N\+Bus\+Frame}}
+\subsubsection[{id}]{\setlength{\rightskip}{0pt plus 5cm}{\bf I\+D} osa\+C\+A\+N\+Bus\+Frame\+::id\hspace{0.3cm}{\ttfamily [protected]}}\label{classosa_c_a_n_bus_frame_a43c2a396a6f7dcf502daeb8f3cc8967e}
+
+
+The I\+D of the node origin. 
+
+\hypertarget{classosa_c_a_n_bus_frame_abc694b0742e9c5b7e2db8640caa17565}{}\index{osa\+C\+A\+N\+Bus\+Frame@{osa\+C\+A\+N\+Bus\+Frame}!nbytes@{nbytes}}
+\index{nbytes@{nbytes}!osa\+C\+A\+N\+Bus\+Frame@{osa\+C\+A\+N\+Bus\+Frame}}
+\subsubsection[{nbytes}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Data\+Length} osa\+C\+A\+N\+Bus\+Frame\+::nbytes\hspace{0.3cm}{\ttfamily [protected]}}\label{classosa_c_a_n_bus_frame_abc694b0742e9c5b7e2db8640caa17565}
+
+
+The lenght of the message in bytes. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/saw\+C\+A\+N\+Bus/include/saw\+C\+A\+N\+Bus/\hyperlink{osa_c_a_n_bus_frame_8h}{osa\+C\+A\+N\+Bus\+Frame.\+h}\end{DoxyCompactItemize}

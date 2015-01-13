@@ -1,0 +1,184 @@
+\hypertarget{cmn_data_functions_vector_helpers_8h}{}\section{/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Common/cmn\+Data\+Functions\+Vector\+Helpers.h File Reference}
+\label{cmn_data_functions_vector_helpers_8h}\index{/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Common/cmn\+Data\+Functions\+Vector\+Helpers.\+h@{/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Common/cmn\+Data\+Functions\+Vector\+Helpers.\+h}}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{cmn_data_functions_vector_helpers_8h_a5ce0f9ab17ced1850c3e3cc2c408a296}{\+\_\+cmn\+Data\+Functions\+Vector\+Helpers\+\_\+h}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class \+\_\+vector\+Type $>$ }\\void \hyperlink{cmn_data_functions_vector_helpers_8h_a16cdb44f8a3dc38e057ff2c1568d7993}{cmn\+Data\+Vector\+Copy} (\+\_\+vector\+Type \&data, const \+\_\+vector\+Type \&source)
+\item 
+{\footnotesize template$<$class \+\_\+vector\+Type $>$ }\\std\+::string \hyperlink{cmn_data_functions_vector_helpers_8h_af465b49f0a695f9b5cbeae07673f2ce2}{cmn\+Data\+Vector\+Human\+Readable} (const \+\_\+vector\+Type \&data)
+\item 
+{\footnotesize template$<$class \+\_\+vector\+Type $>$ }\\void \hyperlink{cmn_data_functions_vector_helpers_8h_a40df41edc843bc072e89f7624d0a751b}{cmn\+Data\+Vector\+Serialize\+Text} (const \+\_\+vector\+Type \&data, std\+::ostream \&output\+Stream, const char delimiter)  throw (std\+::runtime\+\_\+error)
+\item 
+{\footnotesize template$<$class \+\_\+vector\+Type $>$ }\\void \hyperlink{cmn_data_functions_vector_helpers_8h_ae6dce946950e8b91a2c1b85ddb793db8}{cmn\+Data\+Vector\+De\+Serialize\+Text} (\+\_\+vector\+Type \&data, std\+::istream \&input\+Stream, const char delimiter)
+\item 
+{\footnotesize template$<$class \+\_\+vector\+Type $>$ }\\void \hyperlink{cmn_data_functions_vector_helpers_8h_ae7a903f82b6c6878eef0160aeeffddef}{cmn\+Data\+Vector\+De\+Serialize\+Text\+Resize} (\+\_\+vector\+Type \&data, std\+::istream \&input\+Stream, const char delimiter)  throw (std\+::runtime\+\_\+error)
+\item 
+{\footnotesize template$<$class \+\_\+vector\+Type $>$ }\\void \hyperlink{cmn_data_functions_vector_helpers_8h_ac11c3cb861fcf3a8d9cf74f1491f885e}{cmn\+Data\+Vector\+De\+Serialize\+Text\+Check\+Size} (\+\_\+vector\+Type \&data, std\+::istream \&input\+Stream, const char delimiter)  throw (std\+::runtime\+\_\+error)
+\item 
+{\footnotesize template$<$class \+\_\+vector\+Type $>$ }\\std\+::string \hyperlink{cmn_data_functions_vector_helpers_8h_a64a02355a438590a98d02514aa505358}{cmn\+Data\+Vector\+Serialize\+Description} (const \+\_\+vector\+Type \&data, const char delimiter, const std\+::string \&user\+Description, const bool serialize\+Size)
+\item 
+{\footnotesize template$<$class \+\_\+vector\+Type $>$ }\\void \hyperlink{cmn_data_functions_vector_helpers_8h_abcbe4ec8560997e101be45559b6e7fd4}{cmn\+Data\+Vector\+Serialize\+Binary} (const \+\_\+vector\+Type \&data, std\+::ostream \&output\+Stream)  throw (std\+::runtime\+\_\+error)
+\item 
+{\footnotesize template$<$class \+\_\+vector\+Type $>$ }\\void \hyperlink{cmn_data_functions_vector_helpers_8h_a7d001809374c1eb41efa180aff51f6e5}{cmn\+Data\+Vector\+De\+Serialize\+Binary} (\+\_\+vector\+Type \&data, std\+::istream \&input\+Stream, const \hyperlink{classcmn_data_format}{cmn\+Data\+Format} \&local\+Format, const \hyperlink{classcmn_data_format}{cmn\+Data\+Format} \&remote\+Format)  throw (std\+::runtime\+\_\+error)
+\item 
+{\footnotesize template$<$class \+\_\+vector\+Type $>$ }\\void \hyperlink{cmn_data_functions_vector_helpers_8h_a7b55dda9904cb4ef5476a27c9e36dfd7}{cmn\+Data\+Vector\+De\+Serialize\+Binary\+Resize} (\+\_\+vector\+Type \&data, std\+::istream \&input\+Stream, const \hyperlink{classcmn_data_format}{cmn\+Data\+Format} \&local\+Format, const \hyperlink{classcmn_data_format}{cmn\+Data\+Format} \&remote\+Format)  throw (std\+::runtime\+\_\+error)
+\item 
+{\footnotesize template$<$class \+\_\+vector\+Type $>$ }\\void \hyperlink{cmn_data_functions_vector_helpers_8h_a717de1fcec92e972c0e1fdc549d25dd8}{cmn\+Data\+Vector\+De\+Serialize\+Binary\+Check\+Size} (\+\_\+vector\+Type \&data, std\+::istream \&input\+Stream, const \hyperlink{classcmn_data_format}{cmn\+Data\+Format} \&local\+Format, const \hyperlink{classcmn_data_format}{cmn\+Data\+Format} \&remote\+Format)  throw (std\+::runtime\+\_\+error)
+\item 
+{\footnotesize template$<$class \+\_\+vector\+Type $>$ }\\size\+\_\+t \hyperlink{cmn_data_functions_vector_helpers_8h_a80436726cece11addf1abe29eb2da069}{cmn\+Data\+Vector\+Scalar\+Number} (const \+\_\+vector\+Type \&data)
+\item 
+{\footnotesize template$<$class \+\_\+vector\+Type , class \+\_\+element\+Type $>$ }\\bool \hyperlink{cmn_data_functions_vector_helpers_8h_ab38bce3ae47954d6e0223eb37e61c591}{cmn\+Data\+Vector\+Scalar\+Find\+In\+Vector\+Index} (\+\_\+vector\+Type data, const size\+\_\+t size, const size\+\_\+t scalar\+Number, const size\+\_\+t index, size\+\_\+t \&element\+Index, size\+\_\+t \&in\+Element\+Index)
+\item 
+{\footnotesize template$<$class \+\_\+vector\+Type $>$ }\\std\+::string \hyperlink{cmn_data_functions_vector_helpers_8h_a15d30ea858e3be7d0bc2b2295733079e}{cmn\+Data\+Vector\+Scalar\+Description} (const \+\_\+vector\+Type \&data, const size\+\_\+t index, const std\+::string \&user\+Description)  throw (std\+::out\+\_\+of\+\_\+range)
+\item 
+{\footnotesize template$<$class \+\_\+vector\+Type $>$ }\\double \hyperlink{cmn_data_functions_vector_helpers_8h_a42de818b8a72c22a12137c1d67aacf08}{cmn\+Data\+Vector\+Scalar} (const \+\_\+vector\+Type \&data, const size\+\_\+t index)  throw (std\+::out\+\_\+of\+\_\+range)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{cmn_data_functions_vector_helpers_8h_a5ce0f9ab17ced1850c3e3cc2c408a296}{}\index{cmn\+Data\+Functions\+Vector\+Helpers.\+h@{cmn\+Data\+Functions\+Vector\+Helpers.\+h}!\+\_\+cmn\+Data\+Functions\+Vector\+Helpers\+\_\+h@{\+\_\+cmn\+Data\+Functions\+Vector\+Helpers\+\_\+h}}
+\index{\+\_\+cmn\+Data\+Functions\+Vector\+Helpers\+\_\+h@{\+\_\+cmn\+Data\+Functions\+Vector\+Helpers\+\_\+h}!cmn\+Data\+Functions\+Vector\+Helpers.\+h@{cmn\+Data\+Functions\+Vector\+Helpers.\+h}}
+\subsubsection[{\+\_\+cmn\+Data\+Functions\+Vector\+Helpers\+\_\+h}]{\setlength{\rightskip}{0pt plus 5cm}\#define \+\_\+cmn\+Data\+Functions\+Vector\+Helpers\+\_\+h}\label{cmn_data_functions_vector_helpers_8h_a5ce0f9ab17ced1850c3e3cc2c408a296}
+
+
+\subsection{Function Documentation}
+\hypertarget{cmn_data_functions_vector_helpers_8h_a16cdb44f8a3dc38e057ff2c1568d7993}{}\index{cmn\+Data\+Functions\+Vector\+Helpers.\+h@{cmn\+Data\+Functions\+Vector\+Helpers.\+h}!cmn\+Data\+Vector\+Copy@{cmn\+Data\+Vector\+Copy}}
+\index{cmn\+Data\+Vector\+Copy@{cmn\+Data\+Vector\+Copy}!cmn\+Data\+Functions\+Vector\+Helpers.\+h@{cmn\+Data\+Functions\+Vector\+Helpers.\+h}}
+\subsubsection[{cmn\+Data\+Vector\+Copy}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Type $>$ void cmn\+Data\+Vector\+Copy (
+\begin{DoxyParamCaption}
+\item[{\+\_\+vector\+Type \&}]{data, }
+\item[{const \+\_\+vector\+Type \&}]{source}
+\end{DoxyParamCaption}
+)}\label{cmn_data_functions_vector_helpers_8h_a16cdb44f8a3dc38e057ff2c1568d7993}
+\hypertarget{cmn_data_functions_vector_helpers_8h_a7d001809374c1eb41efa180aff51f6e5}{}\index{cmn\+Data\+Functions\+Vector\+Helpers.\+h@{cmn\+Data\+Functions\+Vector\+Helpers.\+h}!cmn\+Data\+Vector\+De\+Serialize\+Binary@{cmn\+Data\+Vector\+De\+Serialize\+Binary}}
+\index{cmn\+Data\+Vector\+De\+Serialize\+Binary@{cmn\+Data\+Vector\+De\+Serialize\+Binary}!cmn\+Data\+Functions\+Vector\+Helpers.\+h@{cmn\+Data\+Functions\+Vector\+Helpers.\+h}}
+\subsubsection[{cmn\+Data\+Vector\+De\+Serialize\+Binary}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Type $>$ void cmn\+Data\+Vector\+De\+Serialize\+Binary (
+\begin{DoxyParamCaption}
+\item[{\+\_\+vector\+Type \&}]{data, }
+\item[{std\+::istream \&}]{input\+Stream, }
+\item[{const {\bf cmn\+Data\+Format} \&}]{local\+Format, }
+\item[{const {\bf cmn\+Data\+Format} \&}]{remote\+Format}
+\end{DoxyParamCaption}
+) throw  std\+::runtime\+\_\+error) }\label{cmn_data_functions_vector_helpers_8h_a7d001809374c1eb41efa180aff51f6e5}
+\hypertarget{cmn_data_functions_vector_helpers_8h_a717de1fcec92e972c0e1fdc549d25dd8}{}\index{cmn\+Data\+Functions\+Vector\+Helpers.\+h@{cmn\+Data\+Functions\+Vector\+Helpers.\+h}!cmn\+Data\+Vector\+De\+Serialize\+Binary\+Check\+Size@{cmn\+Data\+Vector\+De\+Serialize\+Binary\+Check\+Size}}
+\index{cmn\+Data\+Vector\+De\+Serialize\+Binary\+Check\+Size@{cmn\+Data\+Vector\+De\+Serialize\+Binary\+Check\+Size}!cmn\+Data\+Functions\+Vector\+Helpers.\+h@{cmn\+Data\+Functions\+Vector\+Helpers.\+h}}
+\subsubsection[{cmn\+Data\+Vector\+De\+Serialize\+Binary\+Check\+Size}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Type $>$ void cmn\+Data\+Vector\+De\+Serialize\+Binary\+Check\+Size (
+\begin{DoxyParamCaption}
+\item[{\+\_\+vector\+Type \&}]{data, }
+\item[{std\+::istream \&}]{input\+Stream, }
+\item[{const {\bf cmn\+Data\+Format} \&}]{local\+Format, }
+\item[{const {\bf cmn\+Data\+Format} \&}]{remote\+Format}
+\end{DoxyParamCaption}
+) throw  std\+::runtime\+\_\+error) }\label{cmn_data_functions_vector_helpers_8h_a717de1fcec92e972c0e1fdc549d25dd8}
+\hypertarget{cmn_data_functions_vector_helpers_8h_a7b55dda9904cb4ef5476a27c9e36dfd7}{}\index{cmn\+Data\+Functions\+Vector\+Helpers.\+h@{cmn\+Data\+Functions\+Vector\+Helpers.\+h}!cmn\+Data\+Vector\+De\+Serialize\+Binary\+Resize@{cmn\+Data\+Vector\+De\+Serialize\+Binary\+Resize}}
+\index{cmn\+Data\+Vector\+De\+Serialize\+Binary\+Resize@{cmn\+Data\+Vector\+De\+Serialize\+Binary\+Resize}!cmn\+Data\+Functions\+Vector\+Helpers.\+h@{cmn\+Data\+Functions\+Vector\+Helpers.\+h}}
+\subsubsection[{cmn\+Data\+Vector\+De\+Serialize\+Binary\+Resize}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Type $>$ void cmn\+Data\+Vector\+De\+Serialize\+Binary\+Resize (
+\begin{DoxyParamCaption}
+\item[{\+\_\+vector\+Type \&}]{data, }
+\item[{std\+::istream \&}]{input\+Stream, }
+\item[{const {\bf cmn\+Data\+Format} \&}]{local\+Format, }
+\item[{const {\bf cmn\+Data\+Format} \&}]{remote\+Format}
+\end{DoxyParamCaption}
+) throw  std\+::runtime\+\_\+error) }\label{cmn_data_functions_vector_helpers_8h_a7b55dda9904cb4ef5476a27c9e36dfd7}
+\hypertarget{cmn_data_functions_vector_helpers_8h_ae6dce946950e8b91a2c1b85ddb793db8}{}\index{cmn\+Data\+Functions\+Vector\+Helpers.\+h@{cmn\+Data\+Functions\+Vector\+Helpers.\+h}!cmn\+Data\+Vector\+De\+Serialize\+Text@{cmn\+Data\+Vector\+De\+Serialize\+Text}}
+\index{cmn\+Data\+Vector\+De\+Serialize\+Text@{cmn\+Data\+Vector\+De\+Serialize\+Text}!cmn\+Data\+Functions\+Vector\+Helpers.\+h@{cmn\+Data\+Functions\+Vector\+Helpers.\+h}}
+\subsubsection[{cmn\+Data\+Vector\+De\+Serialize\+Text}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Type $>$ void cmn\+Data\+Vector\+De\+Serialize\+Text (
+\begin{DoxyParamCaption}
+\item[{\+\_\+vector\+Type \&}]{data, }
+\item[{std\+::istream \&}]{input\+Stream, }
+\item[{const char}]{delimiter}
+\end{DoxyParamCaption}
+)}\label{cmn_data_functions_vector_helpers_8h_ae6dce946950e8b91a2c1b85ddb793db8}
+\hypertarget{cmn_data_functions_vector_helpers_8h_ac11c3cb861fcf3a8d9cf74f1491f885e}{}\index{cmn\+Data\+Functions\+Vector\+Helpers.\+h@{cmn\+Data\+Functions\+Vector\+Helpers.\+h}!cmn\+Data\+Vector\+De\+Serialize\+Text\+Check\+Size@{cmn\+Data\+Vector\+De\+Serialize\+Text\+Check\+Size}}
+\index{cmn\+Data\+Vector\+De\+Serialize\+Text\+Check\+Size@{cmn\+Data\+Vector\+De\+Serialize\+Text\+Check\+Size}!cmn\+Data\+Functions\+Vector\+Helpers.\+h@{cmn\+Data\+Functions\+Vector\+Helpers.\+h}}
+\subsubsection[{cmn\+Data\+Vector\+De\+Serialize\+Text\+Check\+Size}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Type $>$ void cmn\+Data\+Vector\+De\+Serialize\+Text\+Check\+Size (
+\begin{DoxyParamCaption}
+\item[{\+\_\+vector\+Type \&}]{data, }
+\item[{std\+::istream \&}]{input\+Stream, }
+\item[{const char}]{delimiter}
+\end{DoxyParamCaption}
+) throw  std\+::runtime\+\_\+error) }\label{cmn_data_functions_vector_helpers_8h_ac11c3cb861fcf3a8d9cf74f1491f885e}
+\hypertarget{cmn_data_functions_vector_helpers_8h_ae7a903f82b6c6878eef0160aeeffddef}{}\index{cmn\+Data\+Functions\+Vector\+Helpers.\+h@{cmn\+Data\+Functions\+Vector\+Helpers.\+h}!cmn\+Data\+Vector\+De\+Serialize\+Text\+Resize@{cmn\+Data\+Vector\+De\+Serialize\+Text\+Resize}}
+\index{cmn\+Data\+Vector\+De\+Serialize\+Text\+Resize@{cmn\+Data\+Vector\+De\+Serialize\+Text\+Resize}!cmn\+Data\+Functions\+Vector\+Helpers.\+h@{cmn\+Data\+Functions\+Vector\+Helpers.\+h}}
+\subsubsection[{cmn\+Data\+Vector\+De\+Serialize\+Text\+Resize}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Type $>$ void cmn\+Data\+Vector\+De\+Serialize\+Text\+Resize (
+\begin{DoxyParamCaption}
+\item[{\+\_\+vector\+Type \&}]{data, }
+\item[{std\+::istream \&}]{input\+Stream, }
+\item[{const char}]{delimiter}
+\end{DoxyParamCaption}
+) throw  std\+::runtime\+\_\+error) }\label{cmn_data_functions_vector_helpers_8h_ae7a903f82b6c6878eef0160aeeffddef}
+\hypertarget{cmn_data_functions_vector_helpers_8h_af465b49f0a695f9b5cbeae07673f2ce2}{}\index{cmn\+Data\+Functions\+Vector\+Helpers.\+h@{cmn\+Data\+Functions\+Vector\+Helpers.\+h}!cmn\+Data\+Vector\+Human\+Readable@{cmn\+Data\+Vector\+Human\+Readable}}
+\index{cmn\+Data\+Vector\+Human\+Readable@{cmn\+Data\+Vector\+Human\+Readable}!cmn\+Data\+Functions\+Vector\+Helpers.\+h@{cmn\+Data\+Functions\+Vector\+Helpers.\+h}}
+\subsubsection[{cmn\+Data\+Vector\+Human\+Readable}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Type $>$ std\+::string cmn\+Data\+Vector\+Human\+Readable (
+\begin{DoxyParamCaption}
+\item[{const \+\_\+vector\+Type \&}]{data}
+\end{DoxyParamCaption}
+)}\label{cmn_data_functions_vector_helpers_8h_af465b49f0a695f9b5cbeae07673f2ce2}
+\hypertarget{cmn_data_functions_vector_helpers_8h_a42de818b8a72c22a12137c1d67aacf08}{}\index{cmn\+Data\+Functions\+Vector\+Helpers.\+h@{cmn\+Data\+Functions\+Vector\+Helpers.\+h}!cmn\+Data\+Vector\+Scalar@{cmn\+Data\+Vector\+Scalar}}
+\index{cmn\+Data\+Vector\+Scalar@{cmn\+Data\+Vector\+Scalar}!cmn\+Data\+Functions\+Vector\+Helpers.\+h@{cmn\+Data\+Functions\+Vector\+Helpers.\+h}}
+\subsubsection[{cmn\+Data\+Vector\+Scalar}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Type $>$ double cmn\+Data\+Vector\+Scalar (
+\begin{DoxyParamCaption}
+\item[{const \+\_\+vector\+Type \&}]{data, }
+\item[{const size\+\_\+t}]{index}
+\end{DoxyParamCaption}
+) throw  std\+::out\+\_\+of\+\_\+range) }\label{cmn_data_functions_vector_helpers_8h_a42de818b8a72c22a12137c1d67aacf08}
+\hypertarget{cmn_data_functions_vector_helpers_8h_a15d30ea858e3be7d0bc2b2295733079e}{}\index{cmn\+Data\+Functions\+Vector\+Helpers.\+h@{cmn\+Data\+Functions\+Vector\+Helpers.\+h}!cmn\+Data\+Vector\+Scalar\+Description@{cmn\+Data\+Vector\+Scalar\+Description}}
+\index{cmn\+Data\+Vector\+Scalar\+Description@{cmn\+Data\+Vector\+Scalar\+Description}!cmn\+Data\+Functions\+Vector\+Helpers.\+h@{cmn\+Data\+Functions\+Vector\+Helpers.\+h}}
+\subsubsection[{cmn\+Data\+Vector\+Scalar\+Description}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Type $>$ std\+::string cmn\+Data\+Vector\+Scalar\+Description (
+\begin{DoxyParamCaption}
+\item[{const \+\_\+vector\+Type \&}]{data, }
+\item[{const size\+\_\+t}]{index, }
+\item[{const std\+::string \&}]{user\+Description}
+\end{DoxyParamCaption}
+) throw  std\+::out\+\_\+of\+\_\+range) }\label{cmn_data_functions_vector_helpers_8h_a15d30ea858e3be7d0bc2b2295733079e}
+\hypertarget{cmn_data_functions_vector_helpers_8h_ab38bce3ae47954d6e0223eb37e61c591}{}\index{cmn\+Data\+Functions\+Vector\+Helpers.\+h@{cmn\+Data\+Functions\+Vector\+Helpers.\+h}!cmn\+Data\+Vector\+Scalar\+Find\+In\+Vector\+Index@{cmn\+Data\+Vector\+Scalar\+Find\+In\+Vector\+Index}}
+\index{cmn\+Data\+Vector\+Scalar\+Find\+In\+Vector\+Index@{cmn\+Data\+Vector\+Scalar\+Find\+In\+Vector\+Index}!cmn\+Data\+Functions\+Vector\+Helpers.\+h@{cmn\+Data\+Functions\+Vector\+Helpers.\+h}}
+\subsubsection[{cmn\+Data\+Vector\+Scalar\+Find\+In\+Vector\+Index}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Type , class \+\_\+element\+Type $>$ bool cmn\+Data\+Vector\+Scalar\+Find\+In\+Vector\+Index (
+\begin{DoxyParamCaption}
+\item[{\+\_\+vector\+Type}]{data, }
+\item[{const size\+\_\+t}]{size, }
+\item[{const size\+\_\+t}]{scalar\+Number, }
+\item[{const size\+\_\+t}]{index, }
+\item[{size\+\_\+t \&}]{element\+Index, }
+\item[{size\+\_\+t \&}]{in\+Element\+Index}
+\end{DoxyParamCaption}
+)}\label{cmn_data_functions_vector_helpers_8h_ab38bce3ae47954d6e0223eb37e61c591}
+\hypertarget{cmn_data_functions_vector_helpers_8h_a80436726cece11addf1abe29eb2da069}{}\index{cmn\+Data\+Functions\+Vector\+Helpers.\+h@{cmn\+Data\+Functions\+Vector\+Helpers.\+h}!cmn\+Data\+Vector\+Scalar\+Number@{cmn\+Data\+Vector\+Scalar\+Number}}
+\index{cmn\+Data\+Vector\+Scalar\+Number@{cmn\+Data\+Vector\+Scalar\+Number}!cmn\+Data\+Functions\+Vector\+Helpers.\+h@{cmn\+Data\+Functions\+Vector\+Helpers.\+h}}
+\subsubsection[{cmn\+Data\+Vector\+Scalar\+Number}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Type $>$ size\+\_\+t cmn\+Data\+Vector\+Scalar\+Number (
+\begin{DoxyParamCaption}
+\item[{const \+\_\+vector\+Type \&}]{data}
+\end{DoxyParamCaption}
+)}\label{cmn_data_functions_vector_helpers_8h_a80436726cece11addf1abe29eb2da069}
+\hypertarget{cmn_data_functions_vector_helpers_8h_abcbe4ec8560997e101be45559b6e7fd4}{}\index{cmn\+Data\+Functions\+Vector\+Helpers.\+h@{cmn\+Data\+Functions\+Vector\+Helpers.\+h}!cmn\+Data\+Vector\+Serialize\+Binary@{cmn\+Data\+Vector\+Serialize\+Binary}}
+\index{cmn\+Data\+Vector\+Serialize\+Binary@{cmn\+Data\+Vector\+Serialize\+Binary}!cmn\+Data\+Functions\+Vector\+Helpers.\+h@{cmn\+Data\+Functions\+Vector\+Helpers.\+h}}
+\subsubsection[{cmn\+Data\+Vector\+Serialize\+Binary}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Type $>$ void cmn\+Data\+Vector\+Serialize\+Binary (
+\begin{DoxyParamCaption}
+\item[{const \+\_\+vector\+Type \&}]{data, }
+\item[{std\+::ostream \&}]{output\+Stream}
+\end{DoxyParamCaption}
+) throw  std\+::runtime\+\_\+error) }\label{cmn_data_functions_vector_helpers_8h_abcbe4ec8560997e101be45559b6e7fd4}
+\hypertarget{cmn_data_functions_vector_helpers_8h_a64a02355a438590a98d02514aa505358}{}\index{cmn\+Data\+Functions\+Vector\+Helpers.\+h@{cmn\+Data\+Functions\+Vector\+Helpers.\+h}!cmn\+Data\+Vector\+Serialize\+Description@{cmn\+Data\+Vector\+Serialize\+Description}}
+\index{cmn\+Data\+Vector\+Serialize\+Description@{cmn\+Data\+Vector\+Serialize\+Description}!cmn\+Data\+Functions\+Vector\+Helpers.\+h@{cmn\+Data\+Functions\+Vector\+Helpers.\+h}}
+\subsubsection[{cmn\+Data\+Vector\+Serialize\+Description}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Type $>$ std\+::string cmn\+Data\+Vector\+Serialize\+Description (
+\begin{DoxyParamCaption}
+\item[{const \+\_\+vector\+Type \&}]{data, }
+\item[{const char}]{delimiter, }
+\item[{const std\+::string \&}]{user\+Description, }
+\item[{const bool}]{serialize\+Size}
+\end{DoxyParamCaption}
+)}\label{cmn_data_functions_vector_helpers_8h_a64a02355a438590a98d02514aa505358}
+\hypertarget{cmn_data_functions_vector_helpers_8h_a40df41edc843bc072e89f7624d0a751b}{}\index{cmn\+Data\+Functions\+Vector\+Helpers.\+h@{cmn\+Data\+Functions\+Vector\+Helpers.\+h}!cmn\+Data\+Vector\+Serialize\+Text@{cmn\+Data\+Vector\+Serialize\+Text}}
+\index{cmn\+Data\+Vector\+Serialize\+Text@{cmn\+Data\+Vector\+Serialize\+Text}!cmn\+Data\+Functions\+Vector\+Helpers.\+h@{cmn\+Data\+Functions\+Vector\+Helpers.\+h}}
+\subsubsection[{cmn\+Data\+Vector\+Serialize\+Text}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Type $>$ void cmn\+Data\+Vector\+Serialize\+Text (
+\begin{DoxyParamCaption}
+\item[{const \+\_\+vector\+Type \&}]{data, }
+\item[{std\+::ostream \&}]{output\+Stream, }
+\item[{const char}]{delimiter}
+\end{DoxyParamCaption}
+) throw  std\+::runtime\+\_\+error) }\label{cmn_data_functions_vector_helpers_8h_a40df41edc843bc072e89f7624d0a751b}

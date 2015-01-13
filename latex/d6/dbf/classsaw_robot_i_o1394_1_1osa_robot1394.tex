@@ -1,0 +1,1240 @@
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394}{}\section{saw\+Robot\+I\+O1394\+:\+:osa\+Robot1394 Class Reference}
+\label{classsaw_robot_i_o1394_1_1osa_robot1394}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+
+
+{\ttfamily \#include $<$osa\+Robot1394.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{Indent}{\bf Lifecycle}\par
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_a64823709982373c4e12b195dc8e3550a}{osa\+Robot1394} (const \hyperlink{structsaw_robot_i_o1394_1_1osa_robot1394_configuration}{osa\+Robot1394\+Configuration} \&config, const size\+\_\+t max\+\_\+consecutive\+\_\+current\+\_\+safety\+\_\+violations=100)
+\item 
+void \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_a4015586b6aefc4e115efcd8c5a3ffdcf}{Configure} (const \hyperlink{structsaw_robot_i_o1394_1_1osa_robot1394_configuration}{osa\+Robot1394\+Configuration} \&config)
+\item 
+void \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_ace9682c3c6c17de917b73b205168c431}{Set\+Boards} (const std\+::vector$<$ \hyperlink{structsaw_robot_i_o1394_1_1osa_actuator_mapping}{osa\+Actuator\+Mapping} $>$ \&actuator\+Boards, const std\+::vector$<$ \hyperlink{structsaw_robot_i_o1394_1_1osa_brake_mapping}{osa\+Brake\+Mapping} $>$ \&brake\+Boards)
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf State Update Functions}\par
+{\em \} These functions interact with the lower-\/level hardware to query information only and update this class\textquotesingle{} members. }\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_a01557c89c207af1bd203f2d890af5057}{Poll\+Validity} (void)
+\item 
+void \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_ac57a268f5fd855fb58906514e3beb9cd}{Poll\+State} (void)
+\item 
+void \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_a4dbd546337cf55fe1edd85451878f025}{Convert\+State} (void)
+\item 
+void \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_a16946ac9eca7aecf40da51ac139f9346}{Check\+State} (void)
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Command Functions}\par
+{\em \} These functions interact with the lower-\/level hardware when called to change its state in some way. Note that these functions do not have any side-\/effects in the class. }\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_a89f0d7f2ed2aa3d5e8398da89276b108}{Enable\+Power} (void)
+\begin{DoxyCompactList}\small\item\em Power / Safety Control. \end{DoxyCompactList}\item 
+void \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_ac31ce6b6da5276bae89eebce4e9a186b}{Enable\+Boards\+Power} (void)
+\item 
+void \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_a359d28a205ddf92f7b51140ac3fbbf30}{Disable\+Power} (void)
+\item 
+void \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_ac3166a4f77a336b7d62bd3a4714b6f19}{Disable\+Board\+Power} (void)
+\item 
+void \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_affb84d6b12bd5f71e88ce7aaefe3023f}{Set\+Safety\+Relay} (const bool \&enabled)
+\item 
+void \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_a6635e06d2704dd3b19c8527de6a00f29}{Set\+Watchdog\+Period} (const double \&period\+In\+Seconds)
+\item 
+void \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_ac663115c6f8371a09a58829815b3bcfc}{Set\+Actuator\+Power} (const bool \&enabled)
+\item 
+void \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_a9c4d9418f9f94029a424793754aec522}{Set\+Actuator\+Power} (const \hyperlink{vct_dynamic_vector_types_8h_aeb2237c134aee3769198bd9d55c8a9e0}{vct\+Bool\+Vec} \&enabled)
+\item 
+void \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_aba8de9371f9f46984f92970a30c2fd8e}{Set\+Brake\+Power} (const bool \&enabled)
+\item 
+void \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_a7b6d3652c1b1933d64d3ffd6cf143db2}{Set\+Brake\+Power} (const \hyperlink{vct_dynamic_vector_types_8h_aeb2237c134aee3769198bd9d55c8a9e0}{vct\+Bool\+Vec} \&enabled)
+\item 
+void \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_a85fab2fddef54480e415cf09ec9cb2ff}{Set\+Encoder\+Position} (const \hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \&pos)
+\begin{DoxyCompactList}\small\item\em Encoder Control. \end{DoxyCompactList}\item 
+void \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_a64b8bc6716c9e9d1be66f55618cdb6d6}{Set\+Encoder\+Position\+Bits} (const \hyperlink{vct_dynamic_vector_types_8h_a47260df0b570a25352b3f318ed0b4c4e}{vct\+Int\+Vec} \&bits)
+\item 
+void \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_aed34a0863a908df33e54a828b93a8230}{Set\+Single\+Encoder\+Position} (const int index, const double pos=0)
+\item 
+void \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_ab7dee648d9d063e7cc24cdc904859538}{Set\+Single\+Encoder\+Position\+Bits} (const int index, const int bits=0)
+\item 
+void \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_a4a7625a56a46deac9ccb4a941cf8cda6}{Set\+Joint\+Effort} (const \hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \&efforts)
+\begin{DoxyCompactList}\small\item\em Actuator Control. \end{DoxyCompactList}\item 
+void \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_a4e2c3a7ff10a61f01b31017e2542422b}{Set\+Actuator\+Effort} (const \hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \&efforts)
+\item 
+void \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_a071968e765c8811d219247a9cb9cc301}{Set\+Actuator\+Current} (const \hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \&currents)
+\item 
+void \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_a12573b0a6f08989503310c143ff38b11}{Set\+Actuator\+Current\+Bits} (const \hyperlink{vct_dynamic_vector_types_8h_a47260df0b570a25352b3f318ed0b4c4e}{vct\+Int\+Vec} \&bits)
+\item 
+void \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_ac47f7c391fc2893c8102be62c58f1688}{Use\+Pots\+For\+Safety\+Check} (const bool \&use\+Pots\+For\+Safety\+Check)
+\begin{DoxyCompactList}\small\item\em Use potentiometers for safety. \end{DoxyCompactList}\item 
+void \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_a25f45f1a866d1802da011d9c3b1fbfff}{Set\+Pots\+To\+Encoders\+Tolerance} (const \hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \&tolerances)
+\item 
+void \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_a91d3f75e7f86defc1d85737f956e9b11}{Set\+Brake\+Current} (const \hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \&currents)
+\begin{DoxyCompactList}\small\item\em Brake Control. \end{DoxyCompactList}\item 
+void \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_a9607d876dad522b0e8accf672083a073}{Set\+Brake\+Current\+Bits} (const \hyperlink{vct_dynamic_vector_types_8h_a47260df0b570a25352b3f318ed0b4c4e}{vct\+Int\+Vec} \&bits)
+\item 
+void \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_ac82ce11beb6adad4783fb0f988fb6559}{Brake\+Release} (void)
+\item 
+void \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_ad782e0761f93901333bc49b795f96f40}{Brake\+Engage} (void)
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf State Accessors}\par
+{\em \} These accessors only access data which is contained in this class, i.\+e. they do not interact with the lower-\/level hardware. To update these data from the lower-\/level system, you must call poll\+\_\+state. }\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_a0717e94a561fb7dff6f438cb8be3858f}{Valid} (void) const 
+\item 
+bool \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_a27fbb2ba67d54d480873273d3912ca1c}{Power\+Status} (void) const 
+\item 
+bool \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_aaaaaff30d724104f33813430ee391ceb}{Safety\+Relay} (void) const 
+\item 
+bool \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_a375eafa1dcc5e6e022472b1a435a8de9}{Watchdog\+Status} (void) const 
+\item 
+const \hyperlink{vct_dynamic_vector_types_8h_aeb2237c134aee3769198bd9d55c8a9e0}{vct\+Bool\+Vec} \& \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_a1eda6e2132f4a0127a77273d8df6d0ea}{Actuator\+Power\+Status} (void) const 
+\item 
+const \hyperlink{vct_dynamic_vector_types_8h_aeb2237c134aee3769198bd9d55c8a9e0}{vct\+Bool\+Vec} \& \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_a9f396a55f74ca6105d10f315052c052a}{Brake\+Power\+Status} (void) const 
+\item 
+const \hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \& \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_aa2b1e24f66bb30181d61001fa6b04836}{Actuator\+Current\+Feedback} (void) const 
+\item 
+const \hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \& \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_a56bdc8fda6bbe0e26d3ba273d522b0d6}{Brake\+Current\+Feedback} (void) const 
+\item 
+const \hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \& \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_aee6e3eb5964265bf0f6224c81649c213}{Pot\+Position} (void) const 
+\item 
+const \hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \& \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_add104f977b5a360fe8bda14f2e94f82a}{Actuator\+Time\+Stamp} (void) const 
+\item 
+const \hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \& \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_a768874a0b4053acb1444a879fa906b72}{Brake\+Time\+Stamp} (void) const 
+\item 
+const \hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \& \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_a48592681f5ecec1241d2c49e6be891ad}{Encoder\+Position} (void) const 
+\item 
+const \hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \& \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_ad48ab1de52591c73afa9ec0bdc9beac4}{Encoder\+Velocity} (void) const 
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Parameter Accessors}\par
+{\em \} }\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structsaw_robot_i_o1394_1_1osa_robot1394_configuration}{osa\+Robot1394\+Configuration} \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_adf520906bf5d183fe3df07f0f3e02023}{Get\+Configuration} (void) const 
+\item 
+std\+::string \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_aec7dc72444d443fa19cc2548e7075ac4}{Name} (void) const 
+\item 
+size\+\_\+t \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_a382c3409976e75099e8e88ed14eb95d7}{Number\+Of\+Joints} (void) const 
+\item 
+size\+\_\+t \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_af99d3703d915a397b34633f5a5a4968d}{Number\+Of\+Actuators} (void) const 
+\item 
+size\+\_\+t \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_a05a9efe49036caedb16bc435e96ad705}{Number\+Of\+Brakes} (void) const 
+\item 
+void \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_a1caed838046de3d1e1c25dd7f3dbe690}{Get\+Joint\+Types} (\hyperlink{prm_joint_type_8h_a3a21392b4484e2e24aa0b73d553f940e}{prm\+Joint\+Type\+Vec} \&joint\+Types) const 
+\item 
+void \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_a825ced0f4c3ac85fb55a57abeef33c8a}{Get\+Joint\+Effort\+Command\+Limits} (\hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \&limits) const 
+\item 
+void \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_aac0cb2dcb0a11d0d4ee376944f8b03ab}{Get\+Actuator\+Effort\+Command\+Limits} (\hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \&limits) const 
+\item 
+void \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_ab29e269479f2dd3d9e64a48d6e944107}{Get\+Actuator\+Current\+Command\+Limits} (\hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \&limits) const 
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Bias Calibration Functions}\par
+{\em \} }\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_a44c554bb95c4c56aa936dc586e3cc888}{Calibrate\+Encoder\+Offsets\+From\+Pots} (void)
+\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const size\+\_\+t \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_a3d4cfdd12c7987826fb43028bd06e4b5}{W\+A\+T\+C\+H\+D\+O\+G\+\_\+\+M\+S\+\_\+\+T\+O\+\_\+\+C\+O\+U\+N\+T} = 192
+\begin{DoxyCompactList}\small\item\em Watchdog counts per ms (note counter width, e.\+g. 16 bits) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Conversion Functions}
+\label{_amgrpf75c7e767a0acc58e1bb77c3595a5698}%
+\} These functions convert data between units for various purposes. They have no side-\/effects. \begin{DoxyCompactItemize}
+\item 
+typedef std\+::map$<$ int, Amp\+I\+O $\ast$ $>$\+::iterator \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_a978238551892ef80ceb59dfdaca46d9d}{unique\+\_\+board\+\_\+iterator}
+\item 
+typedef std\+::map$<$ int, Amp\+I\+O $\ast$ $>$\+::const\+\_\+iterator \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_a01f7b23037caa05ef8fceb96d032d451}{unique\+\_\+board\+\_\+const\+\_\+iterator}
+\item 
+std\+::vector$<$ \hyperlink{structsaw_robot_i_o1394_1_1osa_actuator_mapping}{osa\+Actuator\+Mapping} $>$ \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_a8e50f36a5543dc7106a8500c45fef92e}{m\+Actuator\+Info}
+\begin{DoxyCompactList}\small\item\em Board Objects. \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{structsaw_robot_i_o1394_1_1osa_brake_mapping}{osa\+Brake\+Mapping} $>$ \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_a24d42b0a3f64f3d123ecb7885bc75b3f}{m\+Brake\+Info}
+\item 
+std\+::map$<$ int, Amp\+I\+O $\ast$ $>$ \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_a70a3fca1526a53bdad88bc037ad70e42}{m\+Unique\+Boards}
+\item 
+\hyperlink{structsaw_robot_i_o1394_1_1osa_robot1394_configuration}{osa\+Robot1394\+Configuration} \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_a9db1624d163768f058e4d883147be328}{m\+Configuration}
+\begin{DoxyCompactList}\small\item\em Robot Configuration. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_a58671c0e58211874a910b94d5e818366}{m\+Name}
+\item 
+size\+\_\+t \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_a423086327762984870f709c81eccb17a}{m\+Number\+Of\+Actuators}
+\item 
+size\+\_\+t \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_acc4d11ad6a18d9a9b294371cfce7420a}{m\+Number\+Of\+Joints}
+\item 
+size\+\_\+t \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_aa946b78c2e09f0ad69a1676d5550dcc3}{m\+Number\+Of\+Brakes}
+\item 
+bool \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_a054235afa64819d42d7a761bbd840336}{m\+Brake\+Releasing}
+\item 
+\hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_a9cb2dd0b02583f901ac166b971c3ad7a}{m\+Brake\+Releasing\+Timer}
+\item 
+\hyperlink{vct_dynamic_vector_types_8h_a47260df0b570a25352b3f318ed0b4c4e}{vct\+Int\+Vec} \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_a61cef93b8d7e5118334dc2b18fd4ebe5}{m\+Counts\+Per\+Turn}
+\begin{DoxyCompactList}\small\item\em Vectors of actuator properties. \end{DoxyCompactList}\item 
+\hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_ad2a0704862573ef828d5bd144ca6e98f}{m\+Effort\+To\+Current\+Scales}
+\item 
+\hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_ad575ec6aeec11e510ee4cb1c79ae0faf}{m\+Actuator\+Current\+To\+Bits\+Scales}
+\item 
+\hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_aa827483068b8e3b6073fdd69348bc89f}{m\+Brake\+Current\+To\+Bits\+Scales}
+\item 
+\hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_a860f7b96fe04821b608daaf462a088e8}{m\+Actuator\+Current\+To\+Bits\+Offsets}
+\item 
+\hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_a0d6c644ce6ccb25a241f3e1ce2133fbd}{m\+Brake\+Current\+To\+Bits\+Offsets}
+\item 
+\hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_aac06ad637bc37227e61aadb884a02624}{m\+Actuator\+Bits\+To\+Current\+Scales}
+\item 
+\hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_a9c2be125ed8e141e4b2a863ad6f4693f}{m\+Brake\+Bits\+To\+Current\+Scales}
+\item 
+\hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_a55fdda8e7c8a25ee495e40146dfe2c34}{m\+Actuator\+Bits\+To\+Current\+Offsets}
+\item 
+\hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_a23aa30fe5f635add8bbddc17db0941f8}{m\+Brake\+Bits\+To\+Current\+Offsets}
+\item 
+\hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_aa115b94f8b15460bbbcddd98e612ccc1}{m\+Bits\+To\+Position\+Scales}
+\item 
+\hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_abadd7d52a5d9e68c810e369dfc72f925}{m\+Bits\+To\+Position\+Offsets}
+\item 
+\hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_aa51a9e533b06f98c22af4e2d72986a1a}{m\+Bits\+To\+D\+Position\+Scales}
+\item 
+\hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_ada6e52edc470af63e49ca880572ffd9c}{m\+Bits\+To\+D\+Position\+Offsets}
+\item 
+\hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_afda779f5dced66405c4501132854e62f}{m\+Bits\+To\+D\+Time\+Scales}
+\item 
+\hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_ab7ed95eae22bfb0b229fa18c368c87ba}{m\+Bits\+To\+D\+Time\+Offsets}
+\item 
+\hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_a44d6ebe4f625ae46b0fd4e7f02a75730}{m\+Bits\+To\+Vecocity\+Scales}
+\item 
+\hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_ad2760faca08ac407f851652eb70d33a4}{m\+Bits\+To\+Velocity\+Offsets}
+\item 
+\hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_aaca5336a34f6fabdd00da8ce1e083d49}{m\+Bits\+To\+Voltage\+Scales}
+\item 
+\hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_a9191d8fec4a7cfd14efe45c847f9f8c3}{m\+Bits\+To\+Voltage\+Offsets}
+\item 
+\hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_a2e460340720ce5bb15970010ce9a88ac}{m\+Voltage\+To\+Position\+Scales}
+\item 
+\hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_a15ce989fff4dd01f4a031bebc3e8a695}{m\+Voltage\+To\+Position\+Offsets}
+\item 
+\hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_a19552332bb107e278dff718998747be3}{m\+Joint\+Effort\+Command\+Limits}
+\item 
+\hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_a12cb941f9850576fadb92c976f5f8846}{m\+Actuator\+Effort\+Command\+Limits}
+\item 
+\hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_a71df0b94d456a44282b6339bdf973931}{m\+Actuator\+Current\+Command\+Limits}
+\item 
+\hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_a7a56e7255b3b0c47d1a84706856a2c8c}{m\+Brake\+Current\+Command\+Limits}
+\item 
+\hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_ac96efae1697d8f547486d8a5caeace3e}{m\+Actuator\+Current\+Feedback\+Limits}
+\item 
+\hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_a86f55f72dbbcb54c3b4ba0224590f8bb}{m\+Brake\+Current\+Feedback\+Limits}
+\item 
+\hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_ae7403c87ba3f27f675f42469e8b1becd}{m\+Pots\+To\+Encoders\+Tolerance}
+\item 
+\hyperlink{prm_joint_type_8h_a3a21392b4484e2e24aa0b73d553f940e}{prm\+Joint\+Type\+Vec} \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_af5829db2fe13eb37578e7bcafce7a3b7}{m\+Joint\+Type}
+\begin{DoxyCompactList}\small\item\em Robot type. \end{DoxyCompactList}\item 
+\hyperlink{namespacesaw_robot_i_o1394_a9d63d89648f679b6af5cf3f16576bde9}{osa\+Pot1394\+Location} \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_a064754c253caef562e4c95429b0ae1ee}{m\+Pot\+Type}
+\item 
+bool \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_a2aeda5f2dad4bc849117833d94dea2fd}{m\+Use\+Pots\+For\+Safety\+Check}
+\item 
+bool \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_acc0bfb2da3fa7f77e29298984da615ec}{m\+Valid}
+\begin{DoxyCompactList}\small\item\em State Members. \end{DoxyCompactList}\item 
+bool \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_aaccb154ac4cf5f274828bd3c8102c823}{m\+Power\+Status}
+\item 
+bool \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_aa988f2c166a0f19e3600343057fef2d2}{m\+Previous\+Power\+Status}
+\item 
+bool \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_a340e3e038049be9906f65234a7489aa3}{m\+Watchdog\+Status}
+\item 
+bool \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_ab525fcd9abd100ef9a2574aaa4381ad5}{m\+Previous\+Watchdog\+Status}
+\item 
+bool \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_ae0a5ea1b2b875284bd8c3e5df038c3e1}{m\+Is\+All\+Boards\+Firm\+Ware\+Four}
+\item 
+unsigned short \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_a550d25317369e34ea8be9006e4494d83}{m\+Safety\+Relay}
+\item 
+\hyperlink{vct_dynamic_vector_types_8h_aeb2237c134aee3769198bd9d55c8a9e0}{vct\+Bool\+Vec} \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_a05b12ee5d3989a36d9ce09cda53f0def}{m\+Actuator\+Power\+Status}
+\item 
+\hyperlink{vct_dynamic_vector_types_8h_aeb2237c134aee3769198bd9d55c8a9e0}{vct\+Bool\+Vec} \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_a924555f66097c253573a21d92d7047e7}{m\+Brake\+Power\+Status}
+\item 
+\hyperlink{vct_dynamic_vector_types_8h_aeb2237c134aee3769198bd9d55c8a9e0}{vct\+Bool\+Vec} \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_afd9b906632c4446927e150271eac903a}{m\+Actuator\+Power\+Enabled}
+\item 
+\hyperlink{vct_dynamic_vector_types_8h_aeb2237c134aee3769198bd9d55c8a9e0}{vct\+Bool\+Vec} \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_a06adfd5606014f53d98318950c5bade0}{m\+Brake\+Power\+Enabled}
+\item 
+\hyperlink{vct_dynamic_vector_types_8h_aeb2237c134aee3769198bd9d55c8a9e0}{vct\+Bool\+Vec} \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_a119181445cf6191ef28344da96efac95}{m\+Digital\+Inputs}
+\item 
+\hyperlink{vct_dynamic_vector_types_8h_a47260df0b570a25352b3f318ed0b4c4e}{vct\+Int\+Vec} \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_a01d4a10825d97a82209fc07fc6370a2e}{m\+Pot\+Bits}
+\item 
+\hyperlink{vct_dynamic_vector_types_8h_a47260df0b570a25352b3f318ed0b4c4e}{vct\+Int\+Vec} \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_a7119048e21fbc8a9c86cf0134422ba8d}{m\+Encoder\+Position\+Bits}
+\item 
+\hyperlink{vct_dynamic_vector_types_8h_a47260df0b570a25352b3f318ed0b4c4e}{vct\+Int\+Vec} \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_a13f87d7ed14b03dce76fa76ac7f4cf34}{m\+Encoder\+Velocity\+Bits}
+\item 
+\hyperlink{vct_dynamic_vector_types_8h_a47260df0b570a25352b3f318ed0b4c4e}{vct\+Int\+Vec} \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_afa5cba1adb139c1143d6309c75a6fcad}{m\+Encoder\+Velocity\+Bits\+Now}
+\item 
+\hyperlink{vct_dynamic_vector_types_8h_a47260df0b570a25352b3f318ed0b4c4e}{vct\+Int\+Vec} \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_a9e83ab4ef0dba16278c617e15d2ed690}{m\+Encoder\+D\+Position\+Bits}
+\item 
+\hyperlink{vct_dynamic_vector_types_8h_a47260df0b570a25352b3f318ed0b4c4e}{vct\+Int\+Vec} \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_a06635f7e22b48d6cae77b90b17257897}{m\+Encoder\+D\+Time\+Bits}
+\item 
+\hyperlink{vct_dynamic_vector_types_8h_a47260df0b570a25352b3f318ed0b4c4e}{vct\+Int\+Vec} \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_acf3f087c94a5061ad372ee4806213adc}{m\+Actuator\+Current\+Bits\+Command}
+\item 
+\hyperlink{vct_dynamic_vector_types_8h_a47260df0b570a25352b3f318ed0b4c4e}{vct\+Int\+Vec} \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_a3d8dfc9c82f174dcd41561d56eadee63}{m\+Brake\+Current\+Bits\+Command}
+\item 
+\hyperlink{vct_dynamic_vector_types_8h_a47260df0b570a25352b3f318ed0b4c4e}{vct\+Int\+Vec} \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_a99d4a564d40c910ab85cc96200a0ad69}{m\+Actuator\+Current\+Bits\+Feedback}
+\item 
+\hyperlink{vct_dynamic_vector_types_8h_a47260df0b570a25352b3f318ed0b4c4e}{vct\+Int\+Vec} \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_acda3aefc8072e9de13ac01f7ac9348e4}{m\+Brake\+Current\+Bits\+Feedback}
+\item 
+\hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_a5706cbd78ae4d7d71354a0cdbc534131}{m\+Actuator\+Timestamp}
+\item 
+\hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_a936f7c8a56258411b8e18b8b52a65dea}{m\+Brake\+Timestamp}
+\item 
+\hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_a62c0b2584557d10a46918cda8b317d9f}{m\+Pot\+Voltage}
+\item 
+\hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_ab4206064d9fa3a5180e0208184956607}{m\+Pot\+Position}
+\item 
+\hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_ab697461eda8f5697307366d8f9f9a385}{m\+Encoder\+Position}
+\item 
+\hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_a80656b12b73342f271a6937324762acc}{m\+Encoder\+Position\+Prev}
+\item 
+\hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_adbb522d8a21c93e5a9834dd06f1b1880}{m\+Encoder\+Velocity}
+\item 
+\hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_af96e15f1e27127c80ffb27020b8c04f2}{m\+Encoder\+Velocity\+Dx\+Dt}
+\item 
+\hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_aca3ecb39f928176391a09853a518d7f4}{m\+Encoder\+D\+Position}
+\item 
+\hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_aa6a28710ff2617268c4e8162145ea57d}{m\+Encoder\+D\+Time}
+\item 
+\hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_a4813af540545db7127d0592131d26303}{m\+Joint\+Position}
+\item 
+\hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_ac82b9c0859a670b75c230c79e9115766}{m\+Joint\+Velocity}
+\item 
+\hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_a9cc2cc2d087fab2af1d39db3fd37f11e}{m\+Joint\+Torque}
+\item 
+\hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_aca4c8469d9db6807067732402bd2e312}{m\+Actuator\+Current\+Command}
+\item 
+\hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_acc6418a3c5dea94294d639c0b7a22c36}{m\+Brake\+Current\+Command}
+\item 
+\hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_a9e734c633100f225b4648e96f3a37633}{m\+Actuator\+Effort\+Command}
+\item 
+\hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_a90d657845d24a64168784c4bf93bbb70}{m\+Actuator\+Current\+Feedback}
+\item 
+\hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_a241f76dd72963537d37f487a9ddbcd46}{m\+Pots\+To\+Encoders\+Error}
+\item 
+\hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_a10a1f22d9849fb1064ce7ac41566814f}{m\+Brake\+Current\+Feedback}
+\item 
+\hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_adf3549ef02e4240f20a349af74ae41eb}{m\+Actuator\+Effort\+Feedback}
+\item 
+\hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_a199ba9e4231efcfb8505b92f2b51a7f2}{m\+Actuator\+Temperature}
+\item 
+\hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_afc8bcc9aec7faac8040ade02c31be22e}{m\+Brake\+Temperature}
+\item 
+\hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_aff3f31f6f71d5e028172058b89c6eb5a}{m\+Brake\+Release\+Current}
+\item 
+\hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_a228ae3a31f376f2d1ece0c57b787cd0c}{m\+Brake\+Release\+Time}
+\item 
+\hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_a28987e1bf7db987c6bfe64897b1f17af}{m\+Brake\+Released\+Current}
+\item 
+\hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_a750756adaca4166dd9874daee0dea864}{m\+Brake\+Engaged\+Current}
+\item 
+size\+\_\+t \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_a31a6983af09293393bb7b15df2c26b6f}{m\+Current\+Safety\+Violations\+Counter}
+\item 
+size\+\_\+t \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_a5cbb3eae608f0e374289f215c038ae24}{m\+Current\+Safety\+Violations\+Maximum}
+\item 
+void \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_aff09b06efab375206419d63342222ba6}{Encoder\+Position\+To\+Bits} (const \hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \&pos, \hyperlink{vct_dynamic_vector_types_8h_a47260df0b570a25352b3f318ed0b4c4e}{vct\+Int\+Vec} \&bits) const 
+\begin{DoxyCompactList}\small\item\em Conversions for encoders. \end{DoxyCompactList}\item 
+void \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_a965bfe1b495adbb15b851db7a4e6284f}{Encoder\+Bits\+To\+Position} (const \hyperlink{vct_dynamic_vector_types_8h_a47260df0b570a25352b3f318ed0b4c4e}{vct\+Int\+Vec} \&bits, \hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \&pos) const 
+\item 
+void \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_af2d53c1c54f1ce55918306b2e9906941}{Encoder\+Bits\+To\+D\+Position} (const \hyperlink{vct_dynamic_vector_types_8h_a47260df0b570a25352b3f318ed0b4c4e}{vct\+Int\+Vec} \&bits, \hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \&dpos) const 
+\item 
+void \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_a25fd6e62f012bee2eaae831fca09c3a7}{Encoder\+Bits\+To\+D\+Time} (const \hyperlink{vct_dynamic_vector_types_8h_a47260df0b570a25352b3f318ed0b4c4e}{vct\+Int\+Vec} \&bits, \hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \&dt) const 
+\item 
+void \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_a1a38e1c16ad3a8dd7b3294a062893917}{Encoder\+Bits\+To\+Velocity} (const \hyperlink{vct_dynamic_vector_types_8h_a47260df0b570a25352b3f318ed0b4c4e}{vct\+Int\+Vec} \&bits, \hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \&vel) const 
+\item 
+void \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_a25209a86c47b754cf7d9290a24a9afa1}{Actuator\+Effort\+To\+Current} (const \hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \&efforts, \hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \&currents) const 
+\begin{DoxyCompactList}\small\item\em Conversions for actuator current commands and measurements. \end{DoxyCompactList}\item 
+void \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_ad7c3019c97632013924763fb80986b02}{Actuator\+Current\+To\+Bits} (const \hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \&currents, \hyperlink{vct_dynamic_vector_types_8h_a47260df0b570a25352b3f318ed0b4c4e}{vct\+Int\+Vec} \&bits) const 
+\item 
+void \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_a9d27b2739d3ce56722f981f26f016c56}{Actuator\+Bits\+To\+Current} (const \hyperlink{vct_dynamic_vector_types_8h_a47260df0b570a25352b3f318ed0b4c4e}{vct\+Int\+Vec} \&bits, \hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \&currents) const 
+\item 
+void \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_a414f641a56bffe2120265f739b14fb8e}{Actuator\+Current\+To\+Effort} (const \hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \&currents, \hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \&efforts) const 
+\item 
+void \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_a7e92d8c12c7df3258b6cbf2ff4f3b34f}{Brake\+Current\+To\+Bits} (const \hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \&currents, \hyperlink{vct_dynamic_vector_types_8h_a47260df0b570a25352b3f318ed0b4c4e}{vct\+Int\+Vec} \&bits) const 
+\begin{DoxyCompactList}\small\item\em Conversions for brake commands. \end{DoxyCompactList}\item 
+void \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_ad4d4e27d20db8e829190b67d12b3849f}{Brake\+Bits\+To\+Current} (const \hyperlink{vct_dynamic_vector_types_8h_a47260df0b570a25352b3f318ed0b4c4e}{vct\+Int\+Vec} \&bits, \hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \&currents) const 
+\item 
+void \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_ab0b7370aab8c9ddd1baeecdf5db6686a}{Pot\+Bits\+To\+Voltage} (const \hyperlink{vct_dynamic_vector_types_8h_a47260df0b570a25352b3f318ed0b4c4e}{vct\+Int\+Vec} \&bits, \hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \&voltages) const 
+\begin{DoxyCompactList}\small\item\em Conversions for potentiometers. \end{DoxyCompactList}\item 
+void \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_a2f9dee18922338235bafae71cdf9b455}{Pot\+Voltage\+To\+Position} (const \hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \&voltages, \hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \&pos) const 
+\item 
+void \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_a4fca5b824e45e5ee67b0e4c85f5e578d}{Clip\+Actuator\+Effort} (\hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \&efforts)
+\item 
+void \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_acf20ff44ca8642b3bde8666b5c44b96b}{Clip\+Actuator\+Current} (\hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \&currents)
+\item 
+void \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394_aa9f9b0e565e7b7546a83288b95c51fd1}{Clip\+Brake\+Current} (\hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \&currents)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+I\+O1394 Robot Abstraction Layer This class is responsible for robot-\/level actuation and unit conversion as well as safety monitoring for the Q\+L\+A robot control architecture. 
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_a01f7b23037caa05ef8fceb96d032d451}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!unique\+\_\+board\+\_\+const\+\_\+iterator@{unique\+\_\+board\+\_\+const\+\_\+iterator}}
+\index{unique\+\_\+board\+\_\+const\+\_\+iterator@{unique\+\_\+board\+\_\+const\+\_\+iterator}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{unique\+\_\+board\+\_\+const\+\_\+iterator}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::map$<$int, Amp\+I\+O$\ast$$>$\+::const\+\_\+iterator {\bf saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::unique\+\_\+board\+\_\+const\+\_\+iterator}\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_robot1394_a01f7b23037caa05ef8fceb96d032d451}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_a978238551892ef80ceb59dfdaca46d9d}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!unique\+\_\+board\+\_\+iterator@{unique\+\_\+board\+\_\+iterator}}
+\index{unique\+\_\+board\+\_\+iterator@{unique\+\_\+board\+\_\+iterator}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{unique\+\_\+board\+\_\+iterator}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::map$<$int, Amp\+I\+O$\ast$$>$\+::iterator {\bf saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::unique\+\_\+board\+\_\+iterator}\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_robot1394_a978238551892ef80ceb59dfdaca46d9d}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_a64823709982373c4e12b195dc8e3550a}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!osa\+Robot1394@{osa\+Robot1394}}
+\index{osa\+Robot1394@{osa\+Robot1394}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{osa\+Robot1394}]{\setlength{\rightskip}{0pt plus 5cm}saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::osa\+Robot1394 (
+\begin{DoxyParamCaption}
+\item[{const {\bf osa\+Robot1394\+Configuration} \&}]{config, }
+\item[{const size\+\_\+t}]{max\+\_\+consecutive\+\_\+current\+\_\+safety\+\_\+violations = {\ttfamily 100}}
+\end{DoxyParamCaption}
+)}\label{classsaw_robot_i_o1394_1_1osa_robot1394_a64823709982373c4e12b195dc8e3550a}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_a9d27b2739d3ce56722f981f26f016c56}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!Actuator\+Bits\+To\+Current@{Actuator\+Bits\+To\+Current}}
+\index{Actuator\+Bits\+To\+Current@{Actuator\+Bits\+To\+Current}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{Actuator\+Bits\+To\+Current}]{\setlength{\rightskip}{0pt plus 5cm}void saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::\+Actuator\+Bits\+To\+Current (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Int\+Vec} \&}]{bits, }
+\item[{{\bf vct\+Double\+Vec} \&}]{currents}
+\end{DoxyParamCaption}
+) const}\label{classsaw_robot_i_o1394_1_1osa_robot1394_a9d27b2739d3ce56722f981f26f016c56}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_aa2b1e24f66bb30181d61001fa6b04836}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!Actuator\+Current\+Feedback@{Actuator\+Current\+Feedback}}
+\index{Actuator\+Current\+Feedback@{Actuator\+Current\+Feedback}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{Actuator\+Current\+Feedback}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf vct\+Double\+Vec}\& saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::\+Actuator\+Current\+Feedback (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classsaw_robot_i_o1394_1_1osa_robot1394_aa2b1e24f66bb30181d61001fa6b04836}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_ad7c3019c97632013924763fb80986b02}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!Actuator\+Current\+To\+Bits@{Actuator\+Current\+To\+Bits}}
+\index{Actuator\+Current\+To\+Bits@{Actuator\+Current\+To\+Bits}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{Actuator\+Current\+To\+Bits}]{\setlength{\rightskip}{0pt plus 5cm}void saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::\+Actuator\+Current\+To\+Bits (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Double\+Vec} \&}]{currents, }
+\item[{{\bf vct\+Int\+Vec} \&}]{bits}
+\end{DoxyParamCaption}
+) const}\label{classsaw_robot_i_o1394_1_1osa_robot1394_ad7c3019c97632013924763fb80986b02}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_a414f641a56bffe2120265f739b14fb8e}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!Actuator\+Current\+To\+Effort@{Actuator\+Current\+To\+Effort}}
+\index{Actuator\+Current\+To\+Effort@{Actuator\+Current\+To\+Effort}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{Actuator\+Current\+To\+Effort}]{\setlength{\rightskip}{0pt plus 5cm}void saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::\+Actuator\+Current\+To\+Effort (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Double\+Vec} \&}]{currents, }
+\item[{{\bf vct\+Double\+Vec} \&}]{efforts}
+\end{DoxyParamCaption}
+) const}\label{classsaw_robot_i_o1394_1_1osa_robot1394_a414f641a56bffe2120265f739b14fb8e}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_a25209a86c47b754cf7d9290a24a9afa1}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!Actuator\+Effort\+To\+Current@{Actuator\+Effort\+To\+Current}}
+\index{Actuator\+Effort\+To\+Current@{Actuator\+Effort\+To\+Current}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{Actuator\+Effort\+To\+Current}]{\setlength{\rightskip}{0pt plus 5cm}void saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::\+Actuator\+Effort\+To\+Current (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Double\+Vec} \&}]{efforts, }
+\item[{{\bf vct\+Double\+Vec} \&}]{currents}
+\end{DoxyParamCaption}
+) const}\label{classsaw_robot_i_o1394_1_1osa_robot1394_a25209a86c47b754cf7d9290a24a9afa1}
+
+
+Conversions for actuator current commands and measurements. 
+
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_a1eda6e2132f4a0127a77273d8df6d0ea}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!Actuator\+Power\+Status@{Actuator\+Power\+Status}}
+\index{Actuator\+Power\+Status@{Actuator\+Power\+Status}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{Actuator\+Power\+Status}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf vct\+Bool\+Vec}\& saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::\+Actuator\+Power\+Status (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classsaw_robot_i_o1394_1_1osa_robot1394_a1eda6e2132f4a0127a77273d8df6d0ea}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_add104f977b5a360fe8bda14f2e94f82a}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!Actuator\+Time\+Stamp@{Actuator\+Time\+Stamp}}
+\index{Actuator\+Time\+Stamp@{Actuator\+Time\+Stamp}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{Actuator\+Time\+Stamp}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf vct\+Double\+Vec}\& saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::\+Actuator\+Time\+Stamp (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classsaw_robot_i_o1394_1_1osa_robot1394_add104f977b5a360fe8bda14f2e94f82a}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_ad4d4e27d20db8e829190b67d12b3849f}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!Brake\+Bits\+To\+Current@{Brake\+Bits\+To\+Current}}
+\index{Brake\+Bits\+To\+Current@{Brake\+Bits\+To\+Current}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{Brake\+Bits\+To\+Current}]{\setlength{\rightskip}{0pt plus 5cm}void saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::\+Brake\+Bits\+To\+Current (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Int\+Vec} \&}]{bits, }
+\item[{{\bf vct\+Double\+Vec} \&}]{currents}
+\end{DoxyParamCaption}
+) const}\label{classsaw_robot_i_o1394_1_1osa_robot1394_ad4d4e27d20db8e829190b67d12b3849f}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_a56bdc8fda6bbe0e26d3ba273d522b0d6}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!Brake\+Current\+Feedback@{Brake\+Current\+Feedback}}
+\index{Brake\+Current\+Feedback@{Brake\+Current\+Feedback}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{Brake\+Current\+Feedback}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf vct\+Double\+Vec}\& saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::\+Brake\+Current\+Feedback (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classsaw_robot_i_o1394_1_1osa_robot1394_a56bdc8fda6bbe0e26d3ba273d522b0d6}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_a7e92d8c12c7df3258b6cbf2ff4f3b34f}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!Brake\+Current\+To\+Bits@{Brake\+Current\+To\+Bits}}
+\index{Brake\+Current\+To\+Bits@{Brake\+Current\+To\+Bits}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{Brake\+Current\+To\+Bits}]{\setlength{\rightskip}{0pt plus 5cm}void saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::\+Brake\+Current\+To\+Bits (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Double\+Vec} \&}]{currents, }
+\item[{{\bf vct\+Int\+Vec} \&}]{bits}
+\end{DoxyParamCaption}
+) const}\label{classsaw_robot_i_o1394_1_1osa_robot1394_a7e92d8c12c7df3258b6cbf2ff4f3b34f}
+
+
+Conversions for brake commands. 
+
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_ad782e0761f93901333bc49b795f96f40}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!Brake\+Engage@{Brake\+Engage}}
+\index{Brake\+Engage@{Brake\+Engage}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{Brake\+Engage}]{\setlength{\rightskip}{0pt plus 5cm}void saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::\+Brake\+Engage (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classsaw_robot_i_o1394_1_1osa_robot1394_ad782e0761f93901333bc49b795f96f40}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_a9f396a55f74ca6105d10f315052c052a}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!Brake\+Power\+Status@{Brake\+Power\+Status}}
+\index{Brake\+Power\+Status@{Brake\+Power\+Status}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{Brake\+Power\+Status}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf vct\+Bool\+Vec}\& saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::\+Brake\+Power\+Status (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classsaw_robot_i_o1394_1_1osa_robot1394_a9f396a55f74ca6105d10f315052c052a}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_ac82ce11beb6adad4783fb0f988fb6559}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!Brake\+Release@{Brake\+Release}}
+\index{Brake\+Release@{Brake\+Release}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{Brake\+Release}]{\setlength{\rightskip}{0pt plus 5cm}void saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::\+Brake\+Release (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classsaw_robot_i_o1394_1_1osa_robot1394_ac82ce11beb6adad4783fb0f988fb6559}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_a768874a0b4053acb1444a879fa906b72}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!Brake\+Time\+Stamp@{Brake\+Time\+Stamp}}
+\index{Brake\+Time\+Stamp@{Brake\+Time\+Stamp}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{Brake\+Time\+Stamp}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf vct\+Double\+Vec}\& saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::\+Brake\+Time\+Stamp (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classsaw_robot_i_o1394_1_1osa_robot1394_a768874a0b4053acb1444a879fa906b72}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_a44c554bb95c4c56aa936dc586e3cc888}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!Calibrate\+Encoder\+Offsets\+From\+Pots@{Calibrate\+Encoder\+Offsets\+From\+Pots}}
+\index{Calibrate\+Encoder\+Offsets\+From\+Pots@{Calibrate\+Encoder\+Offsets\+From\+Pots}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{Calibrate\+Encoder\+Offsets\+From\+Pots}]{\setlength{\rightskip}{0pt plus 5cm}void saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::\+Calibrate\+Encoder\+Offsets\+From\+Pots (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classsaw_robot_i_o1394_1_1osa_robot1394_a44c554bb95c4c56aa936dc586e3cc888}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_a16946ac9eca7aecf40da51ac139f9346}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!Check\+State@{Check\+State}}
+\index{Check\+State@{Check\+State}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{Check\+State}]{\setlength{\rightskip}{0pt plus 5cm}void saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::\+Check\+State (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classsaw_robot_i_o1394_1_1osa_robot1394_a16946ac9eca7aecf40da51ac139f9346}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_acf20ff44ca8642b3bde8666b5c44b96b}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!Clip\+Actuator\+Current@{Clip\+Actuator\+Current}}
+\index{Clip\+Actuator\+Current@{Clip\+Actuator\+Current}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{Clip\+Actuator\+Current}]{\setlength{\rightskip}{0pt plus 5cm}void saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::\+Clip\+Actuator\+Current (
+\begin{DoxyParamCaption}
+\item[{{\bf vct\+Double\+Vec} \&}]{currents}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_robot1394_acf20ff44ca8642b3bde8666b5c44b96b}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_a4fca5b824e45e5ee67b0e4c85f5e578d}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!Clip\+Actuator\+Effort@{Clip\+Actuator\+Effort}}
+\index{Clip\+Actuator\+Effort@{Clip\+Actuator\+Effort}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{Clip\+Actuator\+Effort}]{\setlength{\rightskip}{0pt plus 5cm}void saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::\+Clip\+Actuator\+Effort (
+\begin{DoxyParamCaption}
+\item[{{\bf vct\+Double\+Vec} \&}]{efforts}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_robot1394_a4fca5b824e45e5ee67b0e4c85f5e578d}
+\} \hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_aa9f9b0e565e7b7546a83288b95c51fd1}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!Clip\+Brake\+Current@{Clip\+Brake\+Current}}
+\index{Clip\+Brake\+Current@{Clip\+Brake\+Current}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{Clip\+Brake\+Current}]{\setlength{\rightskip}{0pt plus 5cm}void saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::\+Clip\+Brake\+Current (
+\begin{DoxyParamCaption}
+\item[{{\bf vct\+Double\+Vec} \&}]{currents}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_robot1394_aa9f9b0e565e7b7546a83288b95c51fd1}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_a4015586b6aefc4e115efcd8c5a3ffdcf}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!Configure@{Configure}}
+\index{Configure@{Configure}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{Configure}]{\setlength{\rightskip}{0pt plus 5cm}void saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::\+Configure (
+\begin{DoxyParamCaption}
+\item[{const {\bf osa\+Robot1394\+Configuration} \&}]{config}
+\end{DoxyParamCaption}
+)}\label{classsaw_robot_i_o1394_1_1osa_robot1394_a4015586b6aefc4e115efcd8c5a3ffdcf}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_a4dbd546337cf55fe1edd85451878f025}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!Convert\+State@{Convert\+State}}
+\index{Convert\+State@{Convert\+State}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{Convert\+State}]{\setlength{\rightskip}{0pt plus 5cm}void saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::\+Convert\+State (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classsaw_robot_i_o1394_1_1osa_robot1394_a4dbd546337cf55fe1edd85451878f025}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_ac3166a4f77a336b7d62bd3a4714b6f19}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!Disable\+Board\+Power@{Disable\+Board\+Power}}
+\index{Disable\+Board\+Power@{Disable\+Board\+Power}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{Disable\+Board\+Power}]{\setlength{\rightskip}{0pt plus 5cm}void saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::\+Disable\+Board\+Power (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classsaw_robot_i_o1394_1_1osa_robot1394_ac3166a4f77a336b7d62bd3a4714b6f19}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_a359d28a205ddf92f7b51140ac3fbbf30}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!Disable\+Power@{Disable\+Power}}
+\index{Disable\+Power@{Disable\+Power}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{Disable\+Power}]{\setlength{\rightskip}{0pt plus 5cm}void saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::\+Disable\+Power (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classsaw_robot_i_o1394_1_1osa_robot1394_a359d28a205ddf92f7b51140ac3fbbf30}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_ac31ce6b6da5276bae89eebce4e9a186b}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!Enable\+Boards\+Power@{Enable\+Boards\+Power}}
+\index{Enable\+Boards\+Power@{Enable\+Boards\+Power}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{Enable\+Boards\+Power}]{\setlength{\rightskip}{0pt plus 5cm}void saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::\+Enable\+Boards\+Power (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classsaw_robot_i_o1394_1_1osa_robot1394_ac31ce6b6da5276bae89eebce4e9a186b}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_a89f0d7f2ed2aa3d5e8398da89276b108}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!Enable\+Power@{Enable\+Power}}
+\index{Enable\+Power@{Enable\+Power}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{Enable\+Power}]{\setlength{\rightskip}{0pt plus 5cm}void saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::\+Enable\+Power (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classsaw_robot_i_o1394_1_1osa_robot1394_a89f0d7f2ed2aa3d5e8398da89276b108}
+
+
+Power / Safety Control. 
+
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_af2d53c1c54f1ce55918306b2e9906941}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!Encoder\+Bits\+To\+D\+Position@{Encoder\+Bits\+To\+D\+Position}}
+\index{Encoder\+Bits\+To\+D\+Position@{Encoder\+Bits\+To\+D\+Position}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{Encoder\+Bits\+To\+D\+Position}]{\setlength{\rightskip}{0pt plus 5cm}void saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::\+Encoder\+Bits\+To\+D\+Position (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Int\+Vec} \&}]{bits, }
+\item[{{\bf vct\+Double\+Vec} \&}]{dpos}
+\end{DoxyParamCaption}
+) const}\label{classsaw_robot_i_o1394_1_1osa_robot1394_af2d53c1c54f1ce55918306b2e9906941}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_a25fd6e62f012bee2eaae831fca09c3a7}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!Encoder\+Bits\+To\+D\+Time@{Encoder\+Bits\+To\+D\+Time}}
+\index{Encoder\+Bits\+To\+D\+Time@{Encoder\+Bits\+To\+D\+Time}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{Encoder\+Bits\+To\+D\+Time}]{\setlength{\rightskip}{0pt plus 5cm}void saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::\+Encoder\+Bits\+To\+D\+Time (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Int\+Vec} \&}]{bits, }
+\item[{{\bf vct\+Double\+Vec} \&}]{dt}
+\end{DoxyParamCaption}
+) const}\label{classsaw_robot_i_o1394_1_1osa_robot1394_a25fd6e62f012bee2eaae831fca09c3a7}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_a965bfe1b495adbb15b851db7a4e6284f}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!Encoder\+Bits\+To\+Position@{Encoder\+Bits\+To\+Position}}
+\index{Encoder\+Bits\+To\+Position@{Encoder\+Bits\+To\+Position}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{Encoder\+Bits\+To\+Position}]{\setlength{\rightskip}{0pt plus 5cm}void saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::\+Encoder\+Bits\+To\+Position (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Int\+Vec} \&}]{bits, }
+\item[{{\bf vct\+Double\+Vec} \&}]{pos}
+\end{DoxyParamCaption}
+) const}\label{classsaw_robot_i_o1394_1_1osa_robot1394_a965bfe1b495adbb15b851db7a4e6284f}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_a1a38e1c16ad3a8dd7b3294a062893917}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!Encoder\+Bits\+To\+Velocity@{Encoder\+Bits\+To\+Velocity}}
+\index{Encoder\+Bits\+To\+Velocity@{Encoder\+Bits\+To\+Velocity}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{Encoder\+Bits\+To\+Velocity}]{\setlength{\rightskip}{0pt plus 5cm}void saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::\+Encoder\+Bits\+To\+Velocity (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Int\+Vec} \&}]{bits, }
+\item[{{\bf vct\+Double\+Vec} \&}]{vel}
+\end{DoxyParamCaption}
+) const}\label{classsaw_robot_i_o1394_1_1osa_robot1394_a1a38e1c16ad3a8dd7b3294a062893917}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_a48592681f5ecec1241d2c49e6be891ad}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!Encoder\+Position@{Encoder\+Position}}
+\index{Encoder\+Position@{Encoder\+Position}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{Encoder\+Position}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf vct\+Double\+Vec}\& saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::\+Encoder\+Position (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classsaw_robot_i_o1394_1_1osa_robot1394_a48592681f5ecec1241d2c49e6be891ad}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_aff09b06efab375206419d63342222ba6}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!Encoder\+Position\+To\+Bits@{Encoder\+Position\+To\+Bits}}
+\index{Encoder\+Position\+To\+Bits@{Encoder\+Position\+To\+Bits}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{Encoder\+Position\+To\+Bits}]{\setlength{\rightskip}{0pt plus 5cm}void saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::\+Encoder\+Position\+To\+Bits (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Double\+Vec} \&}]{pos, }
+\item[{{\bf vct\+Int\+Vec} \&}]{bits}
+\end{DoxyParamCaption}
+) const}\label{classsaw_robot_i_o1394_1_1osa_robot1394_aff09b06efab375206419d63342222ba6}
+
+
+Conversions for encoders. 
+
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_ad48ab1de52591c73afa9ec0bdc9beac4}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!Encoder\+Velocity@{Encoder\+Velocity}}
+\index{Encoder\+Velocity@{Encoder\+Velocity}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{Encoder\+Velocity}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf vct\+Double\+Vec}\& saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::\+Encoder\+Velocity (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classsaw_robot_i_o1394_1_1osa_robot1394_ad48ab1de52591c73afa9ec0bdc9beac4}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_ab29e269479f2dd3d9e64a48d6e944107}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!Get\+Actuator\+Current\+Command\+Limits@{Get\+Actuator\+Current\+Command\+Limits}}
+\index{Get\+Actuator\+Current\+Command\+Limits@{Get\+Actuator\+Current\+Command\+Limits}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{Get\+Actuator\+Current\+Command\+Limits}]{\setlength{\rightskip}{0pt plus 5cm}void saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::\+Get\+Actuator\+Current\+Command\+Limits (
+\begin{DoxyParamCaption}
+\item[{{\bf vct\+Double\+Vec} \&}]{limits}
+\end{DoxyParamCaption}
+) const}\label{classsaw_robot_i_o1394_1_1osa_robot1394_ab29e269479f2dd3d9e64a48d6e944107}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_aac0cb2dcb0a11d0d4ee376944f8b03ab}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!Get\+Actuator\+Effort\+Command\+Limits@{Get\+Actuator\+Effort\+Command\+Limits}}
+\index{Get\+Actuator\+Effort\+Command\+Limits@{Get\+Actuator\+Effort\+Command\+Limits}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{Get\+Actuator\+Effort\+Command\+Limits}]{\setlength{\rightskip}{0pt plus 5cm}void saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::\+Get\+Actuator\+Effort\+Command\+Limits (
+\begin{DoxyParamCaption}
+\item[{{\bf vct\+Double\+Vec} \&}]{limits}
+\end{DoxyParamCaption}
+) const}\label{classsaw_robot_i_o1394_1_1osa_robot1394_aac0cb2dcb0a11d0d4ee376944f8b03ab}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_adf520906bf5d183fe3df07f0f3e02023}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!Get\+Configuration@{Get\+Configuration}}
+\index{Get\+Configuration@{Get\+Configuration}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{Get\+Configuration}]{\setlength{\rightskip}{0pt plus 5cm}{\bf osa\+Robot1394\+Configuration} saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::\+Get\+Configuration (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classsaw_robot_i_o1394_1_1osa_robot1394_adf520906bf5d183fe3df07f0f3e02023}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_a825ced0f4c3ac85fb55a57abeef33c8a}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!Get\+Joint\+Effort\+Command\+Limits@{Get\+Joint\+Effort\+Command\+Limits}}
+\index{Get\+Joint\+Effort\+Command\+Limits@{Get\+Joint\+Effort\+Command\+Limits}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{Get\+Joint\+Effort\+Command\+Limits}]{\setlength{\rightskip}{0pt plus 5cm}void saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::\+Get\+Joint\+Effort\+Command\+Limits (
+\begin{DoxyParamCaption}
+\item[{{\bf vct\+Double\+Vec} \&}]{limits}
+\end{DoxyParamCaption}
+) const}\label{classsaw_robot_i_o1394_1_1osa_robot1394_a825ced0f4c3ac85fb55a57abeef33c8a}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_a1caed838046de3d1e1c25dd7f3dbe690}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!Get\+Joint\+Types@{Get\+Joint\+Types}}
+\index{Get\+Joint\+Types@{Get\+Joint\+Types}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{Get\+Joint\+Types}]{\setlength{\rightskip}{0pt plus 5cm}void saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::\+Get\+Joint\+Types (
+\begin{DoxyParamCaption}
+\item[{{\bf prm\+Joint\+Type\+Vec} \&}]{joint\+Types}
+\end{DoxyParamCaption}
+) const}\label{classsaw_robot_i_o1394_1_1osa_robot1394_a1caed838046de3d1e1c25dd7f3dbe690}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_aec7dc72444d443fa19cc2548e7075ac4}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!Name@{Name}}
+\index{Name@{Name}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{Name}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::\+Name (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classsaw_robot_i_o1394_1_1osa_robot1394_aec7dc72444d443fa19cc2548e7075ac4}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_af99d3703d915a397b34633f5a5a4968d}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!Number\+Of\+Actuators@{Number\+Of\+Actuators}}
+\index{Number\+Of\+Actuators@{Number\+Of\+Actuators}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{Number\+Of\+Actuators}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::\+Number\+Of\+Actuators (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classsaw_robot_i_o1394_1_1osa_robot1394_af99d3703d915a397b34633f5a5a4968d}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_a05a9efe49036caedb16bc435e96ad705}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!Number\+Of\+Brakes@{Number\+Of\+Brakes}}
+\index{Number\+Of\+Brakes@{Number\+Of\+Brakes}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{Number\+Of\+Brakes}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::\+Number\+Of\+Brakes (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classsaw_robot_i_o1394_1_1osa_robot1394_a05a9efe49036caedb16bc435e96ad705}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_a382c3409976e75099e8e88ed14eb95d7}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!Number\+Of\+Joints@{Number\+Of\+Joints}}
+\index{Number\+Of\+Joints@{Number\+Of\+Joints}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{Number\+Of\+Joints}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::\+Number\+Of\+Joints (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classsaw_robot_i_o1394_1_1osa_robot1394_a382c3409976e75099e8e88ed14eb95d7}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_ac57a268f5fd855fb58906514e3beb9cd}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!Poll\+State@{Poll\+State}}
+\index{Poll\+State@{Poll\+State}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{Poll\+State}]{\setlength{\rightskip}{0pt plus 5cm}void saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::\+Poll\+State (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classsaw_robot_i_o1394_1_1osa_robot1394_ac57a268f5fd855fb58906514e3beb9cd}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_a01557c89c207af1bd203f2d890af5057}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!Poll\+Validity@{Poll\+Validity}}
+\index{Poll\+Validity@{Poll\+Validity}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{Poll\+Validity}]{\setlength{\rightskip}{0pt plus 5cm}void saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::\+Poll\+Validity (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classsaw_robot_i_o1394_1_1osa_robot1394_a01557c89c207af1bd203f2d890af5057}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_ab0b7370aab8c9ddd1baeecdf5db6686a}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!Pot\+Bits\+To\+Voltage@{Pot\+Bits\+To\+Voltage}}
+\index{Pot\+Bits\+To\+Voltage@{Pot\+Bits\+To\+Voltage}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{Pot\+Bits\+To\+Voltage}]{\setlength{\rightskip}{0pt plus 5cm}void saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::\+Pot\+Bits\+To\+Voltage (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Int\+Vec} \&}]{bits, }
+\item[{{\bf vct\+Double\+Vec} \&}]{voltages}
+\end{DoxyParamCaption}
+) const}\label{classsaw_robot_i_o1394_1_1osa_robot1394_ab0b7370aab8c9ddd1baeecdf5db6686a}
+
+
+Conversions for potentiometers. 
+
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_aee6e3eb5964265bf0f6224c81649c213}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!Pot\+Position@{Pot\+Position}}
+\index{Pot\+Position@{Pot\+Position}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{Pot\+Position}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf vct\+Double\+Vec}\& saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::\+Pot\+Position (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classsaw_robot_i_o1394_1_1osa_robot1394_aee6e3eb5964265bf0f6224c81649c213}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_a2f9dee18922338235bafae71cdf9b455}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!Pot\+Voltage\+To\+Position@{Pot\+Voltage\+To\+Position}}
+\index{Pot\+Voltage\+To\+Position@{Pot\+Voltage\+To\+Position}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{Pot\+Voltage\+To\+Position}]{\setlength{\rightskip}{0pt plus 5cm}void saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::\+Pot\+Voltage\+To\+Position (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Double\+Vec} \&}]{voltages, }
+\item[{{\bf vct\+Double\+Vec} \&}]{pos}
+\end{DoxyParamCaption}
+) const}\label{classsaw_robot_i_o1394_1_1osa_robot1394_a2f9dee18922338235bafae71cdf9b455}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_a27fbb2ba67d54d480873273d3912ca1c}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!Power\+Status@{Power\+Status}}
+\index{Power\+Status@{Power\+Status}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{Power\+Status}]{\setlength{\rightskip}{0pt plus 5cm}bool saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::\+Power\+Status (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classsaw_robot_i_o1394_1_1osa_robot1394_a27fbb2ba67d54d480873273d3912ca1c}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_aaaaaff30d724104f33813430ee391ceb}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!Safety\+Relay@{Safety\+Relay}}
+\index{Safety\+Relay@{Safety\+Relay}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{Safety\+Relay}]{\setlength{\rightskip}{0pt plus 5cm}bool saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::\+Safety\+Relay (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classsaw_robot_i_o1394_1_1osa_robot1394_aaaaaff30d724104f33813430ee391ceb}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_a071968e765c8811d219247a9cb9cc301}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!Set\+Actuator\+Current@{Set\+Actuator\+Current}}
+\index{Set\+Actuator\+Current@{Set\+Actuator\+Current}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{Set\+Actuator\+Current}]{\setlength{\rightskip}{0pt plus 5cm}void saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::\+Set\+Actuator\+Current (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Double\+Vec} \&}]{currents}
+\end{DoxyParamCaption}
+)}\label{classsaw_robot_i_o1394_1_1osa_robot1394_a071968e765c8811d219247a9cb9cc301}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_a12573b0a6f08989503310c143ff38b11}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!Set\+Actuator\+Current\+Bits@{Set\+Actuator\+Current\+Bits}}
+\index{Set\+Actuator\+Current\+Bits@{Set\+Actuator\+Current\+Bits}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{Set\+Actuator\+Current\+Bits}]{\setlength{\rightskip}{0pt plus 5cm}void saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::\+Set\+Actuator\+Current\+Bits (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Int\+Vec} \&}]{bits}
+\end{DoxyParamCaption}
+)}\label{classsaw_robot_i_o1394_1_1osa_robot1394_a12573b0a6f08989503310c143ff38b11}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_a4e2c3a7ff10a61f01b31017e2542422b}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!Set\+Actuator\+Effort@{Set\+Actuator\+Effort}}
+\index{Set\+Actuator\+Effort@{Set\+Actuator\+Effort}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{Set\+Actuator\+Effort}]{\setlength{\rightskip}{0pt plus 5cm}void saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::\+Set\+Actuator\+Effort (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Double\+Vec} \&}]{efforts}
+\end{DoxyParamCaption}
+)}\label{classsaw_robot_i_o1394_1_1osa_robot1394_a4e2c3a7ff10a61f01b31017e2542422b}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_ac663115c6f8371a09a58829815b3bcfc}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!Set\+Actuator\+Power@{Set\+Actuator\+Power}}
+\index{Set\+Actuator\+Power@{Set\+Actuator\+Power}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{Set\+Actuator\+Power}]{\setlength{\rightskip}{0pt plus 5cm}void saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::\+Set\+Actuator\+Power (
+\begin{DoxyParamCaption}
+\item[{const bool \&}]{enabled}
+\end{DoxyParamCaption}
+)}\label{classsaw_robot_i_o1394_1_1osa_robot1394_ac663115c6f8371a09a58829815b3bcfc}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_a9c4d9418f9f94029a424793754aec522}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!Set\+Actuator\+Power@{Set\+Actuator\+Power}}
+\index{Set\+Actuator\+Power@{Set\+Actuator\+Power}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{Set\+Actuator\+Power}]{\setlength{\rightskip}{0pt plus 5cm}void saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::\+Set\+Actuator\+Power (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Bool\+Vec} \&}]{enabled}
+\end{DoxyParamCaption}
+)}\label{classsaw_robot_i_o1394_1_1osa_robot1394_a9c4d9418f9f94029a424793754aec522}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_ace9682c3c6c17de917b73b205168c431}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!Set\+Boards@{Set\+Boards}}
+\index{Set\+Boards@{Set\+Boards}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{Set\+Boards}]{\setlength{\rightskip}{0pt plus 5cm}void saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::\+Set\+Boards (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ {\bf osa\+Actuator\+Mapping} $>$ \&}]{actuator\+Boards, }
+\item[{const std\+::vector$<$ {\bf osa\+Brake\+Mapping} $>$ \&}]{brake\+Boards}
+\end{DoxyParamCaption}
+)}\label{classsaw_robot_i_o1394_1_1osa_robot1394_ace9682c3c6c17de917b73b205168c431}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_a91d3f75e7f86defc1d85737f956e9b11}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!Set\+Brake\+Current@{Set\+Brake\+Current}}
+\index{Set\+Brake\+Current@{Set\+Brake\+Current}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{Set\+Brake\+Current}]{\setlength{\rightskip}{0pt plus 5cm}void saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::\+Set\+Brake\+Current (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Double\+Vec} \&}]{currents}
+\end{DoxyParamCaption}
+)}\label{classsaw_robot_i_o1394_1_1osa_robot1394_a91d3f75e7f86defc1d85737f956e9b11}
+
+
+Brake Control. 
+
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_a9607d876dad522b0e8accf672083a073}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!Set\+Brake\+Current\+Bits@{Set\+Brake\+Current\+Bits}}
+\index{Set\+Brake\+Current\+Bits@{Set\+Brake\+Current\+Bits}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{Set\+Brake\+Current\+Bits}]{\setlength{\rightskip}{0pt plus 5cm}void saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::\+Set\+Brake\+Current\+Bits (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Int\+Vec} \&}]{bits}
+\end{DoxyParamCaption}
+)}\label{classsaw_robot_i_o1394_1_1osa_robot1394_a9607d876dad522b0e8accf672083a073}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_aba8de9371f9f46984f92970a30c2fd8e}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!Set\+Brake\+Power@{Set\+Brake\+Power}}
+\index{Set\+Brake\+Power@{Set\+Brake\+Power}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{Set\+Brake\+Power}]{\setlength{\rightskip}{0pt plus 5cm}void saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::\+Set\+Brake\+Power (
+\begin{DoxyParamCaption}
+\item[{const bool \&}]{enabled}
+\end{DoxyParamCaption}
+)}\label{classsaw_robot_i_o1394_1_1osa_robot1394_aba8de9371f9f46984f92970a30c2fd8e}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_a7b6d3652c1b1933d64d3ffd6cf143db2}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!Set\+Brake\+Power@{Set\+Brake\+Power}}
+\index{Set\+Brake\+Power@{Set\+Brake\+Power}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{Set\+Brake\+Power}]{\setlength{\rightskip}{0pt plus 5cm}void saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::\+Set\+Brake\+Power (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Bool\+Vec} \&}]{enabled}
+\end{DoxyParamCaption}
+)}\label{classsaw_robot_i_o1394_1_1osa_robot1394_a7b6d3652c1b1933d64d3ffd6cf143db2}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_a85fab2fddef54480e415cf09ec9cb2ff}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!Set\+Encoder\+Position@{Set\+Encoder\+Position}}
+\index{Set\+Encoder\+Position@{Set\+Encoder\+Position}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{Set\+Encoder\+Position}]{\setlength{\rightskip}{0pt plus 5cm}void saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::\+Set\+Encoder\+Position (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Double\+Vec} \&}]{pos}
+\end{DoxyParamCaption}
+)}\label{classsaw_robot_i_o1394_1_1osa_robot1394_a85fab2fddef54480e415cf09ec9cb2ff}
+
+
+Encoder Control. 
+
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_a64b8bc6716c9e9d1be66f55618cdb6d6}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!Set\+Encoder\+Position\+Bits@{Set\+Encoder\+Position\+Bits}}
+\index{Set\+Encoder\+Position\+Bits@{Set\+Encoder\+Position\+Bits}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{Set\+Encoder\+Position\+Bits}]{\setlength{\rightskip}{0pt plus 5cm}void saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::\+Set\+Encoder\+Position\+Bits (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Int\+Vec} \&}]{bits}
+\end{DoxyParamCaption}
+)}\label{classsaw_robot_i_o1394_1_1osa_robot1394_a64b8bc6716c9e9d1be66f55618cdb6d6}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_a4a7625a56a46deac9ccb4a941cf8cda6}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!Set\+Joint\+Effort@{Set\+Joint\+Effort}}
+\index{Set\+Joint\+Effort@{Set\+Joint\+Effort}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{Set\+Joint\+Effort}]{\setlength{\rightskip}{0pt plus 5cm}void saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::\+Set\+Joint\+Effort (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Double\+Vec} \&}]{efforts}
+\end{DoxyParamCaption}
+)}\label{classsaw_robot_i_o1394_1_1osa_robot1394_a4a7625a56a46deac9ccb4a941cf8cda6}
+
+
+Actuator Control. 
+
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_a25f45f1a866d1802da011d9c3b1fbfff}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!Set\+Pots\+To\+Encoders\+Tolerance@{Set\+Pots\+To\+Encoders\+Tolerance}}
+\index{Set\+Pots\+To\+Encoders\+Tolerance@{Set\+Pots\+To\+Encoders\+Tolerance}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{Set\+Pots\+To\+Encoders\+Tolerance}]{\setlength{\rightskip}{0pt plus 5cm}void saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::\+Set\+Pots\+To\+Encoders\+Tolerance (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Double\+Vec} \&}]{tolerances}
+\end{DoxyParamCaption}
+)}\label{classsaw_robot_i_o1394_1_1osa_robot1394_a25f45f1a866d1802da011d9c3b1fbfff}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_affb84d6b12bd5f71e88ce7aaefe3023f}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!Set\+Safety\+Relay@{Set\+Safety\+Relay}}
+\index{Set\+Safety\+Relay@{Set\+Safety\+Relay}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{Set\+Safety\+Relay}]{\setlength{\rightskip}{0pt plus 5cm}void saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::\+Set\+Safety\+Relay (
+\begin{DoxyParamCaption}
+\item[{const bool \&}]{enabled}
+\end{DoxyParamCaption}
+)}\label{classsaw_robot_i_o1394_1_1osa_robot1394_affb84d6b12bd5f71e88ce7aaefe3023f}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_aed34a0863a908df33e54a828b93a8230}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!Set\+Single\+Encoder\+Position@{Set\+Single\+Encoder\+Position}}
+\index{Set\+Single\+Encoder\+Position@{Set\+Single\+Encoder\+Position}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{Set\+Single\+Encoder\+Position}]{\setlength{\rightskip}{0pt plus 5cm}void saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::\+Set\+Single\+Encoder\+Position (
+\begin{DoxyParamCaption}
+\item[{const int}]{index, }
+\item[{const double}]{pos = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\label{classsaw_robot_i_o1394_1_1osa_robot1394_aed34a0863a908df33e54a828b93a8230}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_ab7dee648d9d063e7cc24cdc904859538}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!Set\+Single\+Encoder\+Position\+Bits@{Set\+Single\+Encoder\+Position\+Bits}}
+\index{Set\+Single\+Encoder\+Position\+Bits@{Set\+Single\+Encoder\+Position\+Bits}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{Set\+Single\+Encoder\+Position\+Bits}]{\setlength{\rightskip}{0pt plus 5cm}void saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::\+Set\+Single\+Encoder\+Position\+Bits (
+\begin{DoxyParamCaption}
+\item[{const int}]{index, }
+\item[{const int}]{bits = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\label{classsaw_robot_i_o1394_1_1osa_robot1394_ab7dee648d9d063e7cc24cdc904859538}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_a6635e06d2704dd3b19c8527de6a00f29}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!Set\+Watchdog\+Period@{Set\+Watchdog\+Period}}
+\index{Set\+Watchdog\+Period@{Set\+Watchdog\+Period}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{Set\+Watchdog\+Period}]{\setlength{\rightskip}{0pt plus 5cm}void saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::\+Set\+Watchdog\+Period (
+\begin{DoxyParamCaption}
+\item[{const double \&}]{period\+In\+Seconds}
+\end{DoxyParamCaption}
+)}\label{classsaw_robot_i_o1394_1_1osa_robot1394_a6635e06d2704dd3b19c8527de6a00f29}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_ac47f7c391fc2893c8102be62c58f1688}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!Use\+Pots\+For\+Safety\+Check@{Use\+Pots\+For\+Safety\+Check}}
+\index{Use\+Pots\+For\+Safety\+Check@{Use\+Pots\+For\+Safety\+Check}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{Use\+Pots\+For\+Safety\+Check}]{\setlength{\rightskip}{0pt plus 5cm}void saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::\+Use\+Pots\+For\+Safety\+Check (
+\begin{DoxyParamCaption}
+\item[{const bool \&}]{use\+Pots\+For\+Safety\+Check}
+\end{DoxyParamCaption}
+)}\label{classsaw_robot_i_o1394_1_1osa_robot1394_ac47f7c391fc2893c8102be62c58f1688}
+
+
+Use potentiometers for safety. 
+
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_a0717e94a561fb7dff6f438cb8be3858f}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!Valid@{Valid}}
+\index{Valid@{Valid}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{Valid}]{\setlength{\rightskip}{0pt plus 5cm}bool saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::\+Valid (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classsaw_robot_i_o1394_1_1osa_robot1394_a0717e94a561fb7dff6f438cb8be3858f}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_a375eafa1dcc5e6e022472b1a435a8de9}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!Watchdog\+Status@{Watchdog\+Status}}
+\index{Watchdog\+Status@{Watchdog\+Status}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{Watchdog\+Status}]{\setlength{\rightskip}{0pt plus 5cm}bool saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::\+Watchdog\+Status (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classsaw_robot_i_o1394_1_1osa_robot1394_a375eafa1dcc5e6e022472b1a435a8de9}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_a55fdda8e7c8a25ee495e40146dfe2c34}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!m\+Actuator\+Bits\+To\+Current\+Offsets@{m\+Actuator\+Bits\+To\+Current\+Offsets}}
+\index{m\+Actuator\+Bits\+To\+Current\+Offsets@{m\+Actuator\+Bits\+To\+Current\+Offsets}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{m\+Actuator\+Bits\+To\+Current\+Offsets}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Double\+Vec} saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::m\+Actuator\+Bits\+To\+Current\+Offsets\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_robot1394_a55fdda8e7c8a25ee495e40146dfe2c34}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_aac06ad637bc37227e61aadb884a02624}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!m\+Actuator\+Bits\+To\+Current\+Scales@{m\+Actuator\+Bits\+To\+Current\+Scales}}
+\index{m\+Actuator\+Bits\+To\+Current\+Scales@{m\+Actuator\+Bits\+To\+Current\+Scales}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{m\+Actuator\+Bits\+To\+Current\+Scales}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Double\+Vec} saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::m\+Actuator\+Bits\+To\+Current\+Scales\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_robot1394_aac06ad637bc37227e61aadb884a02624}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_acf3f087c94a5061ad372ee4806213adc}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!m\+Actuator\+Current\+Bits\+Command@{m\+Actuator\+Current\+Bits\+Command}}
+\index{m\+Actuator\+Current\+Bits\+Command@{m\+Actuator\+Current\+Bits\+Command}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{m\+Actuator\+Current\+Bits\+Command}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Int\+Vec} saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::m\+Actuator\+Current\+Bits\+Command\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_robot1394_acf3f087c94a5061ad372ee4806213adc}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_a99d4a564d40c910ab85cc96200a0ad69}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!m\+Actuator\+Current\+Bits\+Feedback@{m\+Actuator\+Current\+Bits\+Feedback}}
+\index{m\+Actuator\+Current\+Bits\+Feedback@{m\+Actuator\+Current\+Bits\+Feedback}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{m\+Actuator\+Current\+Bits\+Feedback}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Int\+Vec} saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::m\+Actuator\+Current\+Bits\+Feedback\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_robot1394_a99d4a564d40c910ab85cc96200a0ad69}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_aca4c8469d9db6807067732402bd2e312}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!m\+Actuator\+Current\+Command@{m\+Actuator\+Current\+Command}}
+\index{m\+Actuator\+Current\+Command@{m\+Actuator\+Current\+Command}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{m\+Actuator\+Current\+Command}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Double\+Vec} saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::m\+Actuator\+Current\+Command\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_robot1394_aca4c8469d9db6807067732402bd2e312}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_a71df0b94d456a44282b6339bdf973931}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!m\+Actuator\+Current\+Command\+Limits@{m\+Actuator\+Current\+Command\+Limits}}
+\index{m\+Actuator\+Current\+Command\+Limits@{m\+Actuator\+Current\+Command\+Limits}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{m\+Actuator\+Current\+Command\+Limits}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Double\+Vec} saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::m\+Actuator\+Current\+Command\+Limits\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_robot1394_a71df0b94d456a44282b6339bdf973931}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_a90d657845d24a64168784c4bf93bbb70}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!m\+Actuator\+Current\+Feedback@{m\+Actuator\+Current\+Feedback}}
+\index{m\+Actuator\+Current\+Feedback@{m\+Actuator\+Current\+Feedback}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{m\+Actuator\+Current\+Feedback}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Double\+Vec} saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::m\+Actuator\+Current\+Feedback\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_robot1394_a90d657845d24a64168784c4bf93bbb70}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_ac96efae1697d8f547486d8a5caeace3e}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!m\+Actuator\+Current\+Feedback\+Limits@{m\+Actuator\+Current\+Feedback\+Limits}}
+\index{m\+Actuator\+Current\+Feedback\+Limits@{m\+Actuator\+Current\+Feedback\+Limits}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{m\+Actuator\+Current\+Feedback\+Limits}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Double\+Vec} saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::m\+Actuator\+Current\+Feedback\+Limits\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_robot1394_ac96efae1697d8f547486d8a5caeace3e}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_a860f7b96fe04821b608daaf462a088e8}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!m\+Actuator\+Current\+To\+Bits\+Offsets@{m\+Actuator\+Current\+To\+Bits\+Offsets}}
+\index{m\+Actuator\+Current\+To\+Bits\+Offsets@{m\+Actuator\+Current\+To\+Bits\+Offsets}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{m\+Actuator\+Current\+To\+Bits\+Offsets}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Double\+Vec} saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::m\+Actuator\+Current\+To\+Bits\+Offsets\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_robot1394_a860f7b96fe04821b608daaf462a088e8}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_ad575ec6aeec11e510ee4cb1c79ae0faf}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!m\+Actuator\+Current\+To\+Bits\+Scales@{m\+Actuator\+Current\+To\+Bits\+Scales}}
+\index{m\+Actuator\+Current\+To\+Bits\+Scales@{m\+Actuator\+Current\+To\+Bits\+Scales}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{m\+Actuator\+Current\+To\+Bits\+Scales}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Double\+Vec} saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::m\+Actuator\+Current\+To\+Bits\+Scales\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_robot1394_ad575ec6aeec11e510ee4cb1c79ae0faf}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_a9e734c633100f225b4648e96f3a37633}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!m\+Actuator\+Effort\+Command@{m\+Actuator\+Effort\+Command}}
+\index{m\+Actuator\+Effort\+Command@{m\+Actuator\+Effort\+Command}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{m\+Actuator\+Effort\+Command}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Double\+Vec} saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::m\+Actuator\+Effort\+Command\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_robot1394_a9e734c633100f225b4648e96f3a37633}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_a12cb941f9850576fadb92c976f5f8846}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!m\+Actuator\+Effort\+Command\+Limits@{m\+Actuator\+Effort\+Command\+Limits}}
+\index{m\+Actuator\+Effort\+Command\+Limits@{m\+Actuator\+Effort\+Command\+Limits}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{m\+Actuator\+Effort\+Command\+Limits}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Double\+Vec} saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::m\+Actuator\+Effort\+Command\+Limits\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_robot1394_a12cb941f9850576fadb92c976f5f8846}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_adf3549ef02e4240f20a349af74ae41eb}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!m\+Actuator\+Effort\+Feedback@{m\+Actuator\+Effort\+Feedback}}
+\index{m\+Actuator\+Effort\+Feedback@{m\+Actuator\+Effort\+Feedback}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{m\+Actuator\+Effort\+Feedback}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Double\+Vec} saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::m\+Actuator\+Effort\+Feedback\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_robot1394_adf3549ef02e4240f20a349af74ae41eb}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_a8e50f36a5543dc7106a8500c45fef92e}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!m\+Actuator\+Info@{m\+Actuator\+Info}}
+\index{m\+Actuator\+Info@{m\+Actuator\+Info}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{m\+Actuator\+Info}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf osa\+Actuator\+Mapping}$>$ saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::m\+Actuator\+Info\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_robot1394_a8e50f36a5543dc7106a8500c45fef92e}
+
+
+Board Objects. 
+
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_afd9b906632c4446927e150271eac903a}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!m\+Actuator\+Power\+Enabled@{m\+Actuator\+Power\+Enabled}}
+\index{m\+Actuator\+Power\+Enabled@{m\+Actuator\+Power\+Enabled}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{m\+Actuator\+Power\+Enabled}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Bool\+Vec} saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::m\+Actuator\+Power\+Enabled\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_robot1394_afd9b906632c4446927e150271eac903a}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_a05b12ee5d3989a36d9ce09cda53f0def}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!m\+Actuator\+Power\+Status@{m\+Actuator\+Power\+Status}}
+\index{m\+Actuator\+Power\+Status@{m\+Actuator\+Power\+Status}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{m\+Actuator\+Power\+Status}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Bool\+Vec} saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::m\+Actuator\+Power\+Status\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_robot1394_a05b12ee5d3989a36d9ce09cda53f0def}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_a199ba9e4231efcfb8505b92f2b51a7f2}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!m\+Actuator\+Temperature@{m\+Actuator\+Temperature}}
+\index{m\+Actuator\+Temperature@{m\+Actuator\+Temperature}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{m\+Actuator\+Temperature}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Double\+Vec} saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::m\+Actuator\+Temperature\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_robot1394_a199ba9e4231efcfb8505b92f2b51a7f2}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_a5706cbd78ae4d7d71354a0cdbc534131}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!m\+Actuator\+Timestamp@{m\+Actuator\+Timestamp}}
+\index{m\+Actuator\+Timestamp@{m\+Actuator\+Timestamp}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{m\+Actuator\+Timestamp}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Double\+Vec} saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::m\+Actuator\+Timestamp\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_robot1394_a5706cbd78ae4d7d71354a0cdbc534131}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_ada6e52edc470af63e49ca880572ffd9c}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!m\+Bits\+To\+D\+Position\+Offsets@{m\+Bits\+To\+D\+Position\+Offsets}}
+\index{m\+Bits\+To\+D\+Position\+Offsets@{m\+Bits\+To\+D\+Position\+Offsets}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{m\+Bits\+To\+D\+Position\+Offsets}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Double\+Vec} saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::m\+Bits\+To\+D\+Position\+Offsets\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_robot1394_ada6e52edc470af63e49ca880572ffd9c}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_aa51a9e533b06f98c22af4e2d72986a1a}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!m\+Bits\+To\+D\+Position\+Scales@{m\+Bits\+To\+D\+Position\+Scales}}
+\index{m\+Bits\+To\+D\+Position\+Scales@{m\+Bits\+To\+D\+Position\+Scales}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{m\+Bits\+To\+D\+Position\+Scales}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Double\+Vec} saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::m\+Bits\+To\+D\+Position\+Scales\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_robot1394_aa51a9e533b06f98c22af4e2d72986a1a}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_ab7ed95eae22bfb0b229fa18c368c87ba}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!m\+Bits\+To\+D\+Time\+Offsets@{m\+Bits\+To\+D\+Time\+Offsets}}
+\index{m\+Bits\+To\+D\+Time\+Offsets@{m\+Bits\+To\+D\+Time\+Offsets}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{m\+Bits\+To\+D\+Time\+Offsets}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Double\+Vec} saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::m\+Bits\+To\+D\+Time\+Offsets\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_robot1394_ab7ed95eae22bfb0b229fa18c368c87ba}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_afda779f5dced66405c4501132854e62f}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!m\+Bits\+To\+D\+Time\+Scales@{m\+Bits\+To\+D\+Time\+Scales}}
+\index{m\+Bits\+To\+D\+Time\+Scales@{m\+Bits\+To\+D\+Time\+Scales}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{m\+Bits\+To\+D\+Time\+Scales}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Double\+Vec} saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::m\+Bits\+To\+D\+Time\+Scales\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_robot1394_afda779f5dced66405c4501132854e62f}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_abadd7d52a5d9e68c810e369dfc72f925}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!m\+Bits\+To\+Position\+Offsets@{m\+Bits\+To\+Position\+Offsets}}
+\index{m\+Bits\+To\+Position\+Offsets@{m\+Bits\+To\+Position\+Offsets}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{m\+Bits\+To\+Position\+Offsets}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Double\+Vec} saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::m\+Bits\+To\+Position\+Offsets\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_robot1394_abadd7d52a5d9e68c810e369dfc72f925}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_aa115b94f8b15460bbbcddd98e612ccc1}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!m\+Bits\+To\+Position\+Scales@{m\+Bits\+To\+Position\+Scales}}
+\index{m\+Bits\+To\+Position\+Scales@{m\+Bits\+To\+Position\+Scales}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{m\+Bits\+To\+Position\+Scales}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Double\+Vec} saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::m\+Bits\+To\+Position\+Scales\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_robot1394_aa115b94f8b15460bbbcddd98e612ccc1}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_a44d6ebe4f625ae46b0fd4e7f02a75730}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!m\+Bits\+To\+Vecocity\+Scales@{m\+Bits\+To\+Vecocity\+Scales}}
+\index{m\+Bits\+To\+Vecocity\+Scales@{m\+Bits\+To\+Vecocity\+Scales}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{m\+Bits\+To\+Vecocity\+Scales}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Double\+Vec} saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::m\+Bits\+To\+Vecocity\+Scales\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_robot1394_a44d6ebe4f625ae46b0fd4e7f02a75730}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_ad2760faca08ac407f851652eb70d33a4}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!m\+Bits\+To\+Velocity\+Offsets@{m\+Bits\+To\+Velocity\+Offsets}}
+\index{m\+Bits\+To\+Velocity\+Offsets@{m\+Bits\+To\+Velocity\+Offsets}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{m\+Bits\+To\+Velocity\+Offsets}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Double\+Vec} saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::m\+Bits\+To\+Velocity\+Offsets\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_robot1394_ad2760faca08ac407f851652eb70d33a4}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_a9191d8fec4a7cfd14efe45c847f9f8c3}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!m\+Bits\+To\+Voltage\+Offsets@{m\+Bits\+To\+Voltage\+Offsets}}
+\index{m\+Bits\+To\+Voltage\+Offsets@{m\+Bits\+To\+Voltage\+Offsets}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{m\+Bits\+To\+Voltage\+Offsets}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Double\+Vec} saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::m\+Bits\+To\+Voltage\+Offsets\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_robot1394_a9191d8fec4a7cfd14efe45c847f9f8c3}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_aaca5336a34f6fabdd00da8ce1e083d49}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!m\+Bits\+To\+Voltage\+Scales@{m\+Bits\+To\+Voltage\+Scales}}
+\index{m\+Bits\+To\+Voltage\+Scales@{m\+Bits\+To\+Voltage\+Scales}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{m\+Bits\+To\+Voltage\+Scales}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Double\+Vec} saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::m\+Bits\+To\+Voltage\+Scales\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_robot1394_aaca5336a34f6fabdd00da8ce1e083d49}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_a23aa30fe5f635add8bbddc17db0941f8}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!m\+Brake\+Bits\+To\+Current\+Offsets@{m\+Brake\+Bits\+To\+Current\+Offsets}}
+\index{m\+Brake\+Bits\+To\+Current\+Offsets@{m\+Brake\+Bits\+To\+Current\+Offsets}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{m\+Brake\+Bits\+To\+Current\+Offsets}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Double\+Vec} saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::m\+Brake\+Bits\+To\+Current\+Offsets\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_robot1394_a23aa30fe5f635add8bbddc17db0941f8}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_a9c2be125ed8e141e4b2a863ad6f4693f}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!m\+Brake\+Bits\+To\+Current\+Scales@{m\+Brake\+Bits\+To\+Current\+Scales}}
+\index{m\+Brake\+Bits\+To\+Current\+Scales@{m\+Brake\+Bits\+To\+Current\+Scales}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{m\+Brake\+Bits\+To\+Current\+Scales}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Double\+Vec} saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::m\+Brake\+Bits\+To\+Current\+Scales\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_robot1394_a9c2be125ed8e141e4b2a863ad6f4693f}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_a3d8dfc9c82f174dcd41561d56eadee63}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!m\+Brake\+Current\+Bits\+Command@{m\+Brake\+Current\+Bits\+Command}}
+\index{m\+Brake\+Current\+Bits\+Command@{m\+Brake\+Current\+Bits\+Command}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{m\+Brake\+Current\+Bits\+Command}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Int\+Vec} saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::m\+Brake\+Current\+Bits\+Command\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_robot1394_a3d8dfc9c82f174dcd41561d56eadee63}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_acda3aefc8072e9de13ac01f7ac9348e4}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!m\+Brake\+Current\+Bits\+Feedback@{m\+Brake\+Current\+Bits\+Feedback}}
+\index{m\+Brake\+Current\+Bits\+Feedback@{m\+Brake\+Current\+Bits\+Feedback}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{m\+Brake\+Current\+Bits\+Feedback}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Int\+Vec} saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::m\+Brake\+Current\+Bits\+Feedback\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_robot1394_acda3aefc8072e9de13ac01f7ac9348e4}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_acc6418a3c5dea94294d639c0b7a22c36}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!m\+Brake\+Current\+Command@{m\+Brake\+Current\+Command}}
+\index{m\+Brake\+Current\+Command@{m\+Brake\+Current\+Command}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{m\+Brake\+Current\+Command}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Double\+Vec} saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::m\+Brake\+Current\+Command\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_robot1394_acc6418a3c5dea94294d639c0b7a22c36}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_a7a56e7255b3b0c47d1a84706856a2c8c}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!m\+Brake\+Current\+Command\+Limits@{m\+Brake\+Current\+Command\+Limits}}
+\index{m\+Brake\+Current\+Command\+Limits@{m\+Brake\+Current\+Command\+Limits}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{m\+Brake\+Current\+Command\+Limits}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Double\+Vec} saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::m\+Brake\+Current\+Command\+Limits\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_robot1394_a7a56e7255b3b0c47d1a84706856a2c8c}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_a10a1f22d9849fb1064ce7ac41566814f}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!m\+Brake\+Current\+Feedback@{m\+Brake\+Current\+Feedback}}
+\index{m\+Brake\+Current\+Feedback@{m\+Brake\+Current\+Feedback}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{m\+Brake\+Current\+Feedback}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Double\+Vec} saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::m\+Brake\+Current\+Feedback\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_robot1394_a10a1f22d9849fb1064ce7ac41566814f}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_a86f55f72dbbcb54c3b4ba0224590f8bb}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!m\+Brake\+Current\+Feedback\+Limits@{m\+Brake\+Current\+Feedback\+Limits}}
+\index{m\+Brake\+Current\+Feedback\+Limits@{m\+Brake\+Current\+Feedback\+Limits}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{m\+Brake\+Current\+Feedback\+Limits}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Double\+Vec} saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::m\+Brake\+Current\+Feedback\+Limits\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_robot1394_a86f55f72dbbcb54c3b4ba0224590f8bb}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_a0d6c644ce6ccb25a241f3e1ce2133fbd}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!m\+Brake\+Current\+To\+Bits\+Offsets@{m\+Brake\+Current\+To\+Bits\+Offsets}}
+\index{m\+Brake\+Current\+To\+Bits\+Offsets@{m\+Brake\+Current\+To\+Bits\+Offsets}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{m\+Brake\+Current\+To\+Bits\+Offsets}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Double\+Vec} saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::m\+Brake\+Current\+To\+Bits\+Offsets\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_robot1394_a0d6c644ce6ccb25a241f3e1ce2133fbd}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_aa827483068b8e3b6073fdd69348bc89f}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!m\+Brake\+Current\+To\+Bits\+Scales@{m\+Brake\+Current\+To\+Bits\+Scales}}
+\index{m\+Brake\+Current\+To\+Bits\+Scales@{m\+Brake\+Current\+To\+Bits\+Scales}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{m\+Brake\+Current\+To\+Bits\+Scales}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Double\+Vec} saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::m\+Brake\+Current\+To\+Bits\+Scales\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_robot1394_aa827483068b8e3b6073fdd69348bc89f}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_a750756adaca4166dd9874daee0dea864}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!m\+Brake\+Engaged\+Current@{m\+Brake\+Engaged\+Current}}
+\index{m\+Brake\+Engaged\+Current@{m\+Brake\+Engaged\+Current}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{m\+Brake\+Engaged\+Current}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Double\+Vec} saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::m\+Brake\+Engaged\+Current\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_robot1394_a750756adaca4166dd9874daee0dea864}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_a24d42b0a3f64f3d123ecb7885bc75b3f}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!m\+Brake\+Info@{m\+Brake\+Info}}
+\index{m\+Brake\+Info@{m\+Brake\+Info}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{m\+Brake\+Info}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf osa\+Brake\+Mapping}$>$ saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::m\+Brake\+Info\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_robot1394_a24d42b0a3f64f3d123ecb7885bc75b3f}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_a06adfd5606014f53d98318950c5bade0}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!m\+Brake\+Power\+Enabled@{m\+Brake\+Power\+Enabled}}
+\index{m\+Brake\+Power\+Enabled@{m\+Brake\+Power\+Enabled}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{m\+Brake\+Power\+Enabled}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Bool\+Vec} saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::m\+Brake\+Power\+Enabled\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_robot1394_a06adfd5606014f53d98318950c5bade0}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_a924555f66097c253573a21d92d7047e7}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!m\+Brake\+Power\+Status@{m\+Brake\+Power\+Status}}
+\index{m\+Brake\+Power\+Status@{m\+Brake\+Power\+Status}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{m\+Brake\+Power\+Status}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Bool\+Vec} saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::m\+Brake\+Power\+Status\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_robot1394_a924555f66097c253573a21d92d7047e7}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_aff3f31f6f71d5e028172058b89c6eb5a}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!m\+Brake\+Release\+Current@{m\+Brake\+Release\+Current}}
+\index{m\+Brake\+Release\+Current@{m\+Brake\+Release\+Current}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{m\+Brake\+Release\+Current}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Double\+Vec} saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::m\+Brake\+Release\+Current\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_robot1394_aff3f31f6f71d5e028172058b89c6eb5a}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_a28987e1bf7db987c6bfe64897b1f17af}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!m\+Brake\+Released\+Current@{m\+Brake\+Released\+Current}}
+\index{m\+Brake\+Released\+Current@{m\+Brake\+Released\+Current}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{m\+Brake\+Released\+Current}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Double\+Vec} saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::m\+Brake\+Released\+Current\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_robot1394_a28987e1bf7db987c6bfe64897b1f17af}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_a228ae3a31f376f2d1ece0c57b787cd0c}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!m\+Brake\+Release\+Time@{m\+Brake\+Release\+Time}}
+\index{m\+Brake\+Release\+Time@{m\+Brake\+Release\+Time}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{m\+Brake\+Release\+Time}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Double\+Vec} saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::m\+Brake\+Release\+Time\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_robot1394_a228ae3a31f376f2d1ece0c57b787cd0c}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_a054235afa64819d42d7a761bbd840336}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!m\+Brake\+Releasing@{m\+Brake\+Releasing}}
+\index{m\+Brake\+Releasing@{m\+Brake\+Releasing}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{m\+Brake\+Releasing}]{\setlength{\rightskip}{0pt plus 5cm}bool saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::m\+Brake\+Releasing\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_robot1394_a054235afa64819d42d7a761bbd840336}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_a9cb2dd0b02583f901ac166b971c3ad7a}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!m\+Brake\+Releasing\+Timer@{m\+Brake\+Releasing\+Timer}}
+\index{m\+Brake\+Releasing\+Timer@{m\+Brake\+Releasing\+Timer}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{m\+Brake\+Releasing\+Timer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Double\+Vec} saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::m\+Brake\+Releasing\+Timer\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_robot1394_a9cb2dd0b02583f901ac166b971c3ad7a}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_afc8bcc9aec7faac8040ade02c31be22e}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!m\+Brake\+Temperature@{m\+Brake\+Temperature}}
+\index{m\+Brake\+Temperature@{m\+Brake\+Temperature}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{m\+Brake\+Temperature}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Double\+Vec} saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::m\+Brake\+Temperature\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_robot1394_afc8bcc9aec7faac8040ade02c31be22e}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_a936f7c8a56258411b8e18b8b52a65dea}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!m\+Brake\+Timestamp@{m\+Brake\+Timestamp}}
+\index{m\+Brake\+Timestamp@{m\+Brake\+Timestamp}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{m\+Brake\+Timestamp}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Double\+Vec} saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::m\+Brake\+Timestamp\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_robot1394_a936f7c8a56258411b8e18b8b52a65dea}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_a9db1624d163768f058e4d883147be328}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!m\+Configuration@{m\+Configuration}}
+\index{m\+Configuration@{m\+Configuration}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{m\+Configuration}]{\setlength{\rightskip}{0pt plus 5cm}{\bf osa\+Robot1394\+Configuration} saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::m\+Configuration\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_robot1394_a9db1624d163768f058e4d883147be328}
+
+
+Robot Configuration. 
+
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_a61cef93b8d7e5118334dc2b18fd4ebe5}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!m\+Counts\+Per\+Turn@{m\+Counts\+Per\+Turn}}
+\index{m\+Counts\+Per\+Turn@{m\+Counts\+Per\+Turn}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{m\+Counts\+Per\+Turn}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Int\+Vec} saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::m\+Counts\+Per\+Turn\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_robot1394_a61cef93b8d7e5118334dc2b18fd4ebe5}
+
+
+Vectors of actuator properties. 
+
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_a31a6983af09293393bb7b15df2c26b6f}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!m\+Current\+Safety\+Violations\+Counter@{m\+Current\+Safety\+Violations\+Counter}}
+\index{m\+Current\+Safety\+Violations\+Counter@{m\+Current\+Safety\+Violations\+Counter}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{m\+Current\+Safety\+Violations\+Counter}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::m\+Current\+Safety\+Violations\+Counter\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_robot1394_a31a6983af09293393bb7b15df2c26b6f}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_a5cbb3eae608f0e374289f215c038ae24}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!m\+Current\+Safety\+Violations\+Maximum@{m\+Current\+Safety\+Violations\+Maximum}}
+\index{m\+Current\+Safety\+Violations\+Maximum@{m\+Current\+Safety\+Violations\+Maximum}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{m\+Current\+Safety\+Violations\+Maximum}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::m\+Current\+Safety\+Violations\+Maximum\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_robot1394_a5cbb3eae608f0e374289f215c038ae24}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_a119181445cf6191ef28344da96efac95}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!m\+Digital\+Inputs@{m\+Digital\+Inputs}}
+\index{m\+Digital\+Inputs@{m\+Digital\+Inputs}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{m\+Digital\+Inputs}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Bool\+Vec} saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::m\+Digital\+Inputs\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_robot1394_a119181445cf6191ef28344da96efac95}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_ad2a0704862573ef828d5bd144ca6e98f}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!m\+Effort\+To\+Current\+Scales@{m\+Effort\+To\+Current\+Scales}}
+\index{m\+Effort\+To\+Current\+Scales@{m\+Effort\+To\+Current\+Scales}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{m\+Effort\+To\+Current\+Scales}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Double\+Vec} saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::m\+Effort\+To\+Current\+Scales\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_robot1394_ad2a0704862573ef828d5bd144ca6e98f}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_aca3ecb39f928176391a09853a518d7f4}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!m\+Encoder\+D\+Position@{m\+Encoder\+D\+Position}}
+\index{m\+Encoder\+D\+Position@{m\+Encoder\+D\+Position}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{m\+Encoder\+D\+Position}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Double\+Vec} saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::m\+Encoder\+D\+Position\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_robot1394_aca3ecb39f928176391a09853a518d7f4}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_a9e83ab4ef0dba16278c617e15d2ed690}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!m\+Encoder\+D\+Position\+Bits@{m\+Encoder\+D\+Position\+Bits}}
+\index{m\+Encoder\+D\+Position\+Bits@{m\+Encoder\+D\+Position\+Bits}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{m\+Encoder\+D\+Position\+Bits}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Int\+Vec} saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::m\+Encoder\+D\+Position\+Bits\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_robot1394_a9e83ab4ef0dba16278c617e15d2ed690}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_aa6a28710ff2617268c4e8162145ea57d}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!m\+Encoder\+D\+Time@{m\+Encoder\+D\+Time}}
+\index{m\+Encoder\+D\+Time@{m\+Encoder\+D\+Time}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{m\+Encoder\+D\+Time}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Double\+Vec} saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::m\+Encoder\+D\+Time\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_robot1394_aa6a28710ff2617268c4e8162145ea57d}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_a06635f7e22b48d6cae77b90b17257897}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!m\+Encoder\+D\+Time\+Bits@{m\+Encoder\+D\+Time\+Bits}}
+\index{m\+Encoder\+D\+Time\+Bits@{m\+Encoder\+D\+Time\+Bits}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{m\+Encoder\+D\+Time\+Bits}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Int\+Vec} saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::m\+Encoder\+D\+Time\+Bits\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_robot1394_a06635f7e22b48d6cae77b90b17257897}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_ab697461eda8f5697307366d8f9f9a385}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!m\+Encoder\+Position@{m\+Encoder\+Position}}
+\index{m\+Encoder\+Position@{m\+Encoder\+Position}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{m\+Encoder\+Position}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Double\+Vec} saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::m\+Encoder\+Position\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_robot1394_ab697461eda8f5697307366d8f9f9a385}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_a7119048e21fbc8a9c86cf0134422ba8d}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!m\+Encoder\+Position\+Bits@{m\+Encoder\+Position\+Bits}}
+\index{m\+Encoder\+Position\+Bits@{m\+Encoder\+Position\+Bits}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{m\+Encoder\+Position\+Bits}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Int\+Vec} saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::m\+Encoder\+Position\+Bits\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_robot1394_a7119048e21fbc8a9c86cf0134422ba8d}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_a80656b12b73342f271a6937324762acc}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!m\+Encoder\+Position\+Prev@{m\+Encoder\+Position\+Prev}}
+\index{m\+Encoder\+Position\+Prev@{m\+Encoder\+Position\+Prev}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{m\+Encoder\+Position\+Prev}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Double\+Vec} saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::m\+Encoder\+Position\+Prev\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_robot1394_a80656b12b73342f271a6937324762acc}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_adbb522d8a21c93e5a9834dd06f1b1880}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!m\+Encoder\+Velocity@{m\+Encoder\+Velocity}}
+\index{m\+Encoder\+Velocity@{m\+Encoder\+Velocity}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{m\+Encoder\+Velocity}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Double\+Vec} saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::m\+Encoder\+Velocity\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_robot1394_adbb522d8a21c93e5a9834dd06f1b1880}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_a13f87d7ed14b03dce76fa76ac7f4cf34}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!m\+Encoder\+Velocity\+Bits@{m\+Encoder\+Velocity\+Bits}}
+\index{m\+Encoder\+Velocity\+Bits@{m\+Encoder\+Velocity\+Bits}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{m\+Encoder\+Velocity\+Bits}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Int\+Vec} saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::m\+Encoder\+Velocity\+Bits\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_robot1394_a13f87d7ed14b03dce76fa76ac7f4cf34}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_afa5cba1adb139c1143d6309c75a6fcad}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!m\+Encoder\+Velocity\+Bits\+Now@{m\+Encoder\+Velocity\+Bits\+Now}}
+\index{m\+Encoder\+Velocity\+Bits\+Now@{m\+Encoder\+Velocity\+Bits\+Now}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{m\+Encoder\+Velocity\+Bits\+Now}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Int\+Vec} saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::m\+Encoder\+Velocity\+Bits\+Now\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_robot1394_afa5cba1adb139c1143d6309c75a6fcad}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_af96e15f1e27127c80ffb27020b8c04f2}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!m\+Encoder\+Velocity\+Dx\+Dt@{m\+Encoder\+Velocity\+Dx\+Dt}}
+\index{m\+Encoder\+Velocity\+Dx\+Dt@{m\+Encoder\+Velocity\+Dx\+Dt}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{m\+Encoder\+Velocity\+Dx\+Dt}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Double\+Vec} saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::m\+Encoder\+Velocity\+Dx\+Dt\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_robot1394_af96e15f1e27127c80ffb27020b8c04f2}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_ae0a5ea1b2b875284bd8c3e5df038c3e1}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!m\+Is\+All\+Boards\+Firm\+Ware\+Four@{m\+Is\+All\+Boards\+Firm\+Ware\+Four}}
+\index{m\+Is\+All\+Boards\+Firm\+Ware\+Four@{m\+Is\+All\+Boards\+Firm\+Ware\+Four}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{m\+Is\+All\+Boards\+Firm\+Ware\+Four}]{\setlength{\rightskip}{0pt plus 5cm}bool saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::m\+Is\+All\+Boards\+Firm\+Ware\+Four\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_robot1394_ae0a5ea1b2b875284bd8c3e5df038c3e1}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_a19552332bb107e278dff718998747be3}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!m\+Joint\+Effort\+Command\+Limits@{m\+Joint\+Effort\+Command\+Limits}}
+\index{m\+Joint\+Effort\+Command\+Limits@{m\+Joint\+Effort\+Command\+Limits}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{m\+Joint\+Effort\+Command\+Limits}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Double\+Vec} saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::m\+Joint\+Effort\+Command\+Limits\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_robot1394_a19552332bb107e278dff718998747be3}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_a4813af540545db7127d0592131d26303}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!m\+Joint\+Position@{m\+Joint\+Position}}
+\index{m\+Joint\+Position@{m\+Joint\+Position}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{m\+Joint\+Position}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Double\+Vec} saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::m\+Joint\+Position\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_robot1394_a4813af540545db7127d0592131d26303}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_a9cc2cc2d087fab2af1d39db3fd37f11e}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!m\+Joint\+Torque@{m\+Joint\+Torque}}
+\index{m\+Joint\+Torque@{m\+Joint\+Torque}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{m\+Joint\+Torque}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Double\+Vec} saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::m\+Joint\+Torque\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_robot1394_a9cc2cc2d087fab2af1d39db3fd37f11e}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_af5829db2fe13eb37578e7bcafce7a3b7}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!m\+Joint\+Type@{m\+Joint\+Type}}
+\index{m\+Joint\+Type@{m\+Joint\+Type}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{m\+Joint\+Type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf prm\+Joint\+Type\+Vec} saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::m\+Joint\+Type\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_robot1394_af5829db2fe13eb37578e7bcafce7a3b7}
+
+
+Robot type. 
+
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_ac82b9c0859a670b75c230c79e9115766}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!m\+Joint\+Velocity@{m\+Joint\+Velocity}}
+\index{m\+Joint\+Velocity@{m\+Joint\+Velocity}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{m\+Joint\+Velocity}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Double\+Vec} saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::m\+Joint\+Velocity\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_robot1394_ac82b9c0859a670b75c230c79e9115766}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_a58671c0e58211874a910b94d5e818366}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!m\+Name@{m\+Name}}
+\index{m\+Name@{m\+Name}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{m\+Name}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::m\+Name\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_robot1394_a58671c0e58211874a910b94d5e818366}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_a423086327762984870f709c81eccb17a}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!m\+Number\+Of\+Actuators@{m\+Number\+Of\+Actuators}}
+\index{m\+Number\+Of\+Actuators@{m\+Number\+Of\+Actuators}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{m\+Number\+Of\+Actuators}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::m\+Number\+Of\+Actuators\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_robot1394_a423086327762984870f709c81eccb17a}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_aa946b78c2e09f0ad69a1676d5550dcc3}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!m\+Number\+Of\+Brakes@{m\+Number\+Of\+Brakes}}
+\index{m\+Number\+Of\+Brakes@{m\+Number\+Of\+Brakes}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{m\+Number\+Of\+Brakes}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::m\+Number\+Of\+Brakes\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_robot1394_aa946b78c2e09f0ad69a1676d5550dcc3}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_acc4d11ad6a18d9a9b294371cfce7420a}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!m\+Number\+Of\+Joints@{m\+Number\+Of\+Joints}}
+\index{m\+Number\+Of\+Joints@{m\+Number\+Of\+Joints}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{m\+Number\+Of\+Joints}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::m\+Number\+Of\+Joints\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_robot1394_acc4d11ad6a18d9a9b294371cfce7420a}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_a01d4a10825d97a82209fc07fc6370a2e}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!m\+Pot\+Bits@{m\+Pot\+Bits}}
+\index{m\+Pot\+Bits@{m\+Pot\+Bits}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{m\+Pot\+Bits}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Int\+Vec} saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::m\+Pot\+Bits\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_robot1394_a01d4a10825d97a82209fc07fc6370a2e}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_ab4206064d9fa3a5180e0208184956607}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!m\+Pot\+Position@{m\+Pot\+Position}}
+\index{m\+Pot\+Position@{m\+Pot\+Position}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{m\+Pot\+Position}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Double\+Vec} saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::m\+Pot\+Position\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_robot1394_ab4206064d9fa3a5180e0208184956607}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_a241f76dd72963537d37f487a9ddbcd46}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!m\+Pots\+To\+Encoders\+Error@{m\+Pots\+To\+Encoders\+Error}}
+\index{m\+Pots\+To\+Encoders\+Error@{m\+Pots\+To\+Encoders\+Error}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{m\+Pots\+To\+Encoders\+Error}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Double\+Vec} saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::m\+Pots\+To\+Encoders\+Error\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_robot1394_a241f76dd72963537d37f487a9ddbcd46}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_ae7403c87ba3f27f675f42469e8b1becd}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!m\+Pots\+To\+Encoders\+Tolerance@{m\+Pots\+To\+Encoders\+Tolerance}}
+\index{m\+Pots\+To\+Encoders\+Tolerance@{m\+Pots\+To\+Encoders\+Tolerance}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{m\+Pots\+To\+Encoders\+Tolerance}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Double\+Vec} saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::m\+Pots\+To\+Encoders\+Tolerance\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_robot1394_ae7403c87ba3f27f675f42469e8b1becd}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_a064754c253caef562e4c95429b0ae1ee}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!m\+Pot\+Type@{m\+Pot\+Type}}
+\index{m\+Pot\+Type@{m\+Pot\+Type}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{m\+Pot\+Type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf osa\+Pot1394\+Location} saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::m\+Pot\+Type\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_robot1394_a064754c253caef562e4c95429b0ae1ee}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_a62c0b2584557d10a46918cda8b317d9f}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!m\+Pot\+Voltage@{m\+Pot\+Voltage}}
+\index{m\+Pot\+Voltage@{m\+Pot\+Voltage}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{m\+Pot\+Voltage}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Double\+Vec} saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::m\+Pot\+Voltage\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_robot1394_a62c0b2584557d10a46918cda8b317d9f}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_aaccb154ac4cf5f274828bd3c8102c823}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!m\+Power\+Status@{m\+Power\+Status}}
+\index{m\+Power\+Status@{m\+Power\+Status}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{m\+Power\+Status}]{\setlength{\rightskip}{0pt plus 5cm}bool saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::m\+Power\+Status\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_robot1394_aaccb154ac4cf5f274828bd3c8102c823}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_aa988f2c166a0f19e3600343057fef2d2}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!m\+Previous\+Power\+Status@{m\+Previous\+Power\+Status}}
+\index{m\+Previous\+Power\+Status@{m\+Previous\+Power\+Status}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{m\+Previous\+Power\+Status}]{\setlength{\rightskip}{0pt plus 5cm}bool saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::m\+Previous\+Power\+Status\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_robot1394_aa988f2c166a0f19e3600343057fef2d2}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_ab525fcd9abd100ef9a2574aaa4381ad5}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!m\+Previous\+Watchdog\+Status@{m\+Previous\+Watchdog\+Status}}
+\index{m\+Previous\+Watchdog\+Status@{m\+Previous\+Watchdog\+Status}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{m\+Previous\+Watchdog\+Status}]{\setlength{\rightskip}{0pt plus 5cm}bool saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::m\+Previous\+Watchdog\+Status\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_robot1394_ab525fcd9abd100ef9a2574aaa4381ad5}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_a550d25317369e34ea8be9006e4494d83}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!m\+Safety\+Relay@{m\+Safety\+Relay}}
+\index{m\+Safety\+Relay@{m\+Safety\+Relay}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{m\+Safety\+Relay}]{\setlength{\rightskip}{0pt plus 5cm}unsigned short saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::m\+Safety\+Relay\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_robot1394_a550d25317369e34ea8be9006e4494d83}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_a70a3fca1526a53bdad88bc037ad70e42}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!m\+Unique\+Boards@{m\+Unique\+Boards}}
+\index{m\+Unique\+Boards@{m\+Unique\+Boards}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{m\+Unique\+Boards}]{\setlength{\rightskip}{0pt plus 5cm}std\+::map$<$int, Amp\+I\+O$\ast$$>$ saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::m\+Unique\+Boards\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_robot1394_a70a3fca1526a53bdad88bc037ad70e42}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_a2aeda5f2dad4bc849117833d94dea2fd}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!m\+Use\+Pots\+For\+Safety\+Check@{m\+Use\+Pots\+For\+Safety\+Check}}
+\index{m\+Use\+Pots\+For\+Safety\+Check@{m\+Use\+Pots\+For\+Safety\+Check}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{m\+Use\+Pots\+For\+Safety\+Check}]{\setlength{\rightskip}{0pt plus 5cm}bool saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::m\+Use\+Pots\+For\+Safety\+Check\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_robot1394_a2aeda5f2dad4bc849117833d94dea2fd}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_acc0bfb2da3fa7f77e29298984da615ec}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!m\+Valid@{m\+Valid}}
+\index{m\+Valid@{m\+Valid}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{m\+Valid}]{\setlength{\rightskip}{0pt plus 5cm}bool saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::m\+Valid\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_robot1394_acc0bfb2da3fa7f77e29298984da615ec}
+
+
+State Members. 
+
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_a15ce989fff4dd01f4a031bebc3e8a695}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!m\+Voltage\+To\+Position\+Offsets@{m\+Voltage\+To\+Position\+Offsets}}
+\index{m\+Voltage\+To\+Position\+Offsets@{m\+Voltage\+To\+Position\+Offsets}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{m\+Voltage\+To\+Position\+Offsets}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Double\+Vec} saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::m\+Voltage\+To\+Position\+Offsets\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_robot1394_a15ce989fff4dd01f4a031bebc3e8a695}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_a2e460340720ce5bb15970010ce9a88ac}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!m\+Voltage\+To\+Position\+Scales@{m\+Voltage\+To\+Position\+Scales}}
+\index{m\+Voltage\+To\+Position\+Scales@{m\+Voltage\+To\+Position\+Scales}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{m\+Voltage\+To\+Position\+Scales}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Double\+Vec} saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::m\+Voltage\+To\+Position\+Scales\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_robot1394_a2e460340720ce5bb15970010ce9a88ac}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_a340e3e038049be9906f65234a7489aa3}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!m\+Watchdog\+Status@{m\+Watchdog\+Status}}
+\index{m\+Watchdog\+Status@{m\+Watchdog\+Status}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{m\+Watchdog\+Status}]{\setlength{\rightskip}{0pt plus 5cm}bool saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::m\+Watchdog\+Status\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_robot1394_a340e3e038049be9906f65234a7489aa3}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_robot1394_a3d4cfdd12c7987826fb43028bd06e4b5}{}\index{saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}!W\+A\+T\+C\+H\+D\+O\+G\+\_\+\+M\+S\+\_\+\+T\+O\+\_\+\+C\+O\+U\+N\+T@{W\+A\+T\+C\+H\+D\+O\+G\+\_\+\+M\+S\+\_\+\+T\+O\+\_\+\+C\+O\+U\+N\+T}}
+\index{W\+A\+T\+C\+H\+D\+O\+G\+\_\+\+M\+S\+\_\+\+T\+O\+\_\+\+C\+O\+U\+N\+T@{W\+A\+T\+C\+H\+D\+O\+G\+\_\+\+M\+S\+\_\+\+T\+O\+\_\+\+C\+O\+U\+N\+T}!saw\+Robot\+I\+O1394\+::osa\+Robot1394@{saw\+Robot\+I\+O1394\+::osa\+Robot1394}}
+\subsubsection[{W\+A\+T\+C\+H\+D\+O\+G\+\_\+\+M\+S\+\_\+\+T\+O\+\_\+\+C\+O\+U\+N\+T}]{\setlength{\rightskip}{0pt plus 5cm}const size\+\_\+t saw\+Robot\+I\+O1394\+::osa\+Robot1394\+::\+W\+A\+T\+C\+H\+D\+O\+G\+\_\+\+M\+S\+\_\+\+T\+O\+\_\+\+C\+O\+U\+N\+T = 192\hspace{0.3cm}{\ttfamily [static]}}\label{classsaw_robot_i_o1394_1_1osa_robot1394_a3d4cfdd12c7987826fb43028bd06e4b5}
+
+
+Watchdog counts per ms (note counter width, e.\+g. 16 bits) 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/saw\+Robot\+I\+O1394/include/saw\+Robot\+I\+O1394/\hyperlink{osa_robot1394_8h}{osa\+Robot1394.\+h}\end{DoxyCompactItemize}

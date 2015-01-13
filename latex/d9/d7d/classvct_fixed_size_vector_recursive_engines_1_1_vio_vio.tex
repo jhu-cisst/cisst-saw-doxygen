@@ -1,0 +1,71 @@
+\hypertarget{classvct_fixed_size_vector_recursive_engines_1_1_vio_vio}{}\section{vct\+Fixed\+Size\+Vector\+Recursive\+Engines$<$ \+\_\+size $>$\+:\+:Vio\+Vio$<$ \+\_\+element\+Operation\+Type $>$ Class Template Reference}
+\label{classvct_fixed_size_vector_recursive_engines_1_1_vio_vio}\index{vct\+Fixed\+Size\+Vector\+Recursive\+Engines$<$ \+\_\+size $>$\+::\+Vio\+Vio$<$ \+\_\+element\+Operation\+Type $>$@{vct\+Fixed\+Size\+Vector\+Recursive\+Engines$<$ \+\_\+size $>$\+::\+Vio\+Vio$<$ \+\_\+element\+Operation\+Type $>$}}
+
+
+Implement operation of the form $(v_{1}, v_{2}) = op(v_{1}, v_{2})$ for fixed size vectors.  
+
+
+
+
+{\ttfamily \#include $<$vct\+Fixed\+Size\+Vector\+Recursive\+Engines.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classvct_fixed_size_vector_recursive_engines}{vct\+Fixed\+Size\+Vector\+Recursive\+Engines}$<$ \+\_\+size-\/1 $>$\+::template \hyperlink{classvct_fixed_size_vector_recursive_engines_1_1_vio_vio}{Vio\+Vio}$<$ \+\_\+element\+Operation\+Type $>$ \hyperlink{classvct_fixed_size_vector_recursive_engines_1_1_vio_vio_a90191766e286b1e089653e847b102a73}{Recursive\+Step}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class \+\_\+input\+Output\+Vector1\+Type , class \+\_\+input\+Output\+Vector2\+Type $>$ }\\static void \hyperlink{classvct_fixed_size_vector_recursive_engines_1_1_vio_vio_aae5514f2d9b1fd021b82c69773d91b3a}{Unfold} (\+\_\+input\+Output\+Vector1\+Type \&input\+Output1, \+\_\+input\+Output\+Vector2\+Type \&input\+Output2)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$vct\+::size\+\_\+type \+\_\+size$>$template$<$class \+\_\+element\+Operation\+Type$>$class vct\+Fixed\+Size\+Vector\+Recursive\+Engines$<$ \+\_\+size $>$\+::\+Vio\+Vio$<$ \+\_\+element\+Operation\+Type $>$}
+
+Implement operation of the form $(v_{1}, v_{2}) = op(v_{1}, v_{2})$ for fixed size vectors. 
+
+This class uses template specialization to perform binary vector operations of the form \[ (v_{1}, v_{2}) = \mathrm{op}(v_{1}, v_{2}) \]
+
+where both $v_{1}, v_{2}$ are input and output vectors of an equal fixed size, determined at compilation time. The operation is evaluated elementwise, that is, $(v_{1}[i], v_{2}[i] = \mathrm{op}(v_{1}[i], v_{2}[i])$. The typical operation in this case is swapping the elements of the two vectors.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+element\+Operation\+Type} & The type of the binary operation that inputs and rewrites corresponding elements in both vectors.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classvct_fixed_size_vector_recursive_engines}{vct\+Fixed\+Size\+Vector\+Recursive\+Engines} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classvct_fixed_size_vector_recursive_engines_1_1_vio_vio_a90191766e286b1e089653e847b102a73}{}\index{vct\+Fixed\+Size\+Vector\+Recursive\+Engines\+::\+Vio\+Vio@{vct\+Fixed\+Size\+Vector\+Recursive\+Engines\+::\+Vio\+Vio}!Recursive\+Step@{Recursive\+Step}}
+\index{Recursive\+Step@{Recursive\+Step}!vct\+Fixed\+Size\+Vector\+Recursive\+Engines\+::\+Vio\+Vio@{vct\+Fixed\+Size\+Vector\+Recursive\+Engines\+::\+Vio\+Vio}}
+\subsubsection[{Recursive\+Step}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size$>$ template$<$class \+\_\+element\+Operation\+Type $>$ typedef {\bf vct\+Fixed\+Size\+Vector\+Recursive\+Engines}$<$\+\_\+size-\/1$>$\+::template {\bf Vio\+Vio}$<$\+\_\+element\+Operation\+Type$>$ {\bf vct\+Fixed\+Size\+Vector\+Recursive\+Engines}$<$ \+\_\+size $>$\+::{\bf Vio\+Vio}$<$ \+\_\+element\+Operation\+Type $>$\+::{\bf Recursive\+Step}}\label{classvct_fixed_size_vector_recursive_engines_1_1_vio_vio_a90191766e286b1e089653e847b102a73}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classvct_fixed_size_vector_recursive_engines_1_1_vio_vio_aae5514f2d9b1fd021b82c69773d91b3a}{}\index{vct\+Fixed\+Size\+Vector\+Recursive\+Engines\+::\+Vio\+Vio@{vct\+Fixed\+Size\+Vector\+Recursive\+Engines\+::\+Vio\+Vio}!Unfold@{Unfold}}
+\index{Unfold@{Unfold}!vct\+Fixed\+Size\+Vector\+Recursive\+Engines\+::\+Vio\+Vio@{vct\+Fixed\+Size\+Vector\+Recursive\+Engines\+::\+Vio\+Vio}}
+\subsubsection[{Unfold}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size$>$ template$<$class \+\_\+element\+Operation\+Type $>$ template$<$class \+\_\+input\+Output\+Vector1\+Type , class \+\_\+input\+Output\+Vector2\+Type $>$ static void {\bf vct\+Fixed\+Size\+Vector\+Recursive\+Engines}$<$ \+\_\+size $>$\+::{\bf Vio\+Vio}$<$ \+\_\+element\+Operation\+Type $>$\+::Unfold (
+\begin{DoxyParamCaption}
+\item[{\+\_\+input\+Output\+Vector1\+Type \&}]{input\+Output1, }
+\item[{\+\_\+input\+Output\+Vector2\+Type \&}]{input\+Output2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classvct_fixed_size_vector_recursive_engines_1_1_vio_vio_aae5514f2d9b1fd021b82c69773d91b3a}
+Unfold the recursion. Performs the operation \+\_\+element\+Operation\+Type elementwise on the last elements of the input/output vector(s) and call Unfold for the \+\_\+size -\/ 1 elements left (i.\+e. unfold the recursive calls).
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+Output1} & The first input-\/output vector. \\
+\hline
+{\em input\+Output2} & The second input-\/output vector. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Vector/\hyperlink{vct_fixed_size_vector_recursive_engines_8h}{vct\+Fixed\+Size\+Vector\+Recursive\+Engines.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,94 @@
+\hypertarget{classosa_gravity_compensation}{}\section{osa\+Gravity\+Compensation Class Reference}
+\label{classosa_gravity_compensation}\index{osa\+Gravity\+Compensation@{osa\+Gravity\+Compensation}}
+
+
+{\ttfamily \#include $<$osa\+Gravity\+Compensation.\+h$>$}
+
+Inheritance diagram for osa\+Gravity\+Compensation\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{d2/d17/classosa_gravity_compensation}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classosa_gravity_compensation_a179d78f4a936077a2c75ba01ff9f0331}{Errno} \{ \hyperlink{classosa_gravity_compensation_a179d78f4a936077a2c75ba01ff9f0331a8a21250fa311b657e14fca50d6be30e0}{E\+S\+U\+C\+C\+E\+S\+S}, 
+\hyperlink{classosa_gravity_compensation_a179d78f4a936077a2c75ba01ff9f0331a2961d66ff650ae6e10681848900c5491}{E\+F\+A\+I\+L\+U\+R\+E}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classosa_gravity_compensation_aa2b2a285c799d1722331c00b3a0dd899}{osa\+Gravity\+Compensation} (const std\+::string \&robfile, const \hyperlink{classvct_frame4x4}{vct\+Frame4x4}$<$ double $>$ \&Rtwb)
+\begin{DoxyCompactList}\small\item\em Main constructor. \end{DoxyCompactList}\item 
+\hyperlink{classosa_gravity_compensation_a179d78f4a936077a2c75ba01ff9f0331}{osa\+Gravity\+Compensation\+::\+Errno} \hyperlink{classosa_gravity_compensation_a018b9d1f7912687cd82ce183c8699cd6}{Evaluate} (const \hyperlink{classvct_dynamic_vector}{vct\+Dynamic\+Vector}$<$ double $>$ \&q, \hyperlink{classvct_dynamic_vector}{vct\+Dynamic\+Vector}$<$ double $>$ \&tau)
+\begin{DoxyCompactList}\small\item\em Evaluate the control law. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classosa_gravity_compensation_a179d78f4a936077a2c75ba01ff9f0331}{}\index{osa\+Gravity\+Compensation@{osa\+Gravity\+Compensation}!Errno@{Errno}}
+\index{Errno@{Errno}!osa\+Gravity\+Compensation@{osa\+Gravity\+Compensation}}
+\subsubsection[{Errno}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf osa\+Gravity\+Compensation\+::\+Errno}}\label{classosa_gravity_compensation_a179d78f4a936077a2c75ba01ff9f0331}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{E\+S\+U\+C\+C\+E\+S\+S@{E\+S\+U\+C\+C\+E\+S\+S}!osa\+Gravity\+Compensation@{osa\+Gravity\+Compensation}}\index{osa\+Gravity\+Compensation@{osa\+Gravity\+Compensation}!E\+S\+U\+C\+C\+E\+S\+S@{E\+S\+U\+C\+C\+E\+S\+S}}\item[{\em 
+\hypertarget{classosa_gravity_compensation_a179d78f4a936077a2c75ba01ff9f0331a8a21250fa311b657e14fca50d6be30e0}{}E\+S\+U\+C\+C\+E\+S\+S\label{classosa_gravity_compensation_a179d78f4a936077a2c75ba01ff9f0331a8a21250fa311b657e14fca50d6be30e0}
+}]\index{E\+F\+A\+I\+L\+U\+R\+E@{E\+F\+A\+I\+L\+U\+R\+E}!osa\+Gravity\+Compensation@{osa\+Gravity\+Compensation}}\index{osa\+Gravity\+Compensation@{osa\+Gravity\+Compensation}!E\+F\+A\+I\+L\+U\+R\+E@{E\+F\+A\+I\+L\+U\+R\+E}}\item[{\em 
+\hypertarget{classosa_gravity_compensation_a179d78f4a936077a2c75ba01ff9f0331a2961d66ff650ae6e10681848900c5491}{}E\+F\+A\+I\+L\+U\+R\+E\label{classosa_gravity_compensation_a179d78f4a936077a2c75ba01ff9f0331a2961d66ff650ae6e10681848900c5491}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classosa_gravity_compensation_aa2b2a285c799d1722331c00b3a0dd899}{}\index{osa\+Gravity\+Compensation@{osa\+Gravity\+Compensation}!osa\+Gravity\+Compensation@{osa\+Gravity\+Compensation}}
+\index{osa\+Gravity\+Compensation@{osa\+Gravity\+Compensation}!osa\+Gravity\+Compensation@{osa\+Gravity\+Compensation}}
+\subsubsection[{osa\+Gravity\+Compensation}]{\setlength{\rightskip}{0pt plus 5cm}osa\+Gravity\+Compensation\+::osa\+Gravity\+Compensation (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{robfile, }
+\item[{const {\bf vct\+Frame4x4}$<$ double $>$ \&}]{Rtwb}
+\end{DoxyParamCaption}
+)}\label{classosa_gravity_compensation_aa2b2a285c799d1722331c00b3a0dd899}
+
+
+Main constructor. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em robfilename} & File containing the kinematics and dynamics parameters \\
+\hline
+\mbox{\tt in}  & {\em Rtwb} & Position and orientation of the robot with resepct to world frame \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classosa_gravity_compensation_a018b9d1f7912687cd82ce183c8699cd6}{}\index{osa\+Gravity\+Compensation@{osa\+Gravity\+Compensation}!Evaluate@{Evaluate}}
+\index{Evaluate@{Evaluate}!osa\+Gravity\+Compensation@{osa\+Gravity\+Compensation}}
+\subsubsection[{Evaluate}]{\setlength{\rightskip}{0pt plus 5cm}{\bf osa\+Gravity\+Compensation\+::\+Errno} osa\+Gravity\+Compensation\+::\+Evaluate (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Vector}$<$ double $>$ \&}]{q, }
+\item[{{\bf vct\+Dynamic\+Vector}$<$ double $>$ \&}]{tau}
+\end{DoxyParamCaption}
+)}\label{classosa_gravity_compensation_a018b9d1f7912687cd82ce183c8699cd6}
+
+
+Evaluate the control law. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em qs} & Desired joint positions \\
+\hline
+\mbox{\tt out}  & {\em tau} & Joint forces/torques \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+E\+S\+U\+C\+C\+E\+S\+S if the evaluation was successful. E\+F\+A\+I\+L\+U\+R\+E otherwise 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/saw\+Controllers/include/saw\+Controllers/\hyperlink{osa_gravity_compensation_8h}{osa\+Gravity\+Compensation.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,183 @@
+\hypertarget{classmts_robot_i_o1394_qt_widget_factory}{}\section{mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory Class Reference}
+\label{classmts_robot_i_o1394_qt_widget_factory}\index{mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory@{mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory}}
+
+
+{\ttfamily \#include $<$mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory.\+h$>$}
+
+Inheritance diagram for mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{d5/d69/classmts_robot_i_o1394_qt_widget_factory}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structmts_robot_i_o1394_qt_widget_factory_1_1_config_struct}{Config\+Struct}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::list$<$ \hyperlink{classmts_robot_i_o1394_qt_widget}{mts\+Robot\+I\+O1394\+Qt\+Widget} $\ast$ $>$ \hyperlink{classmts_robot_i_o1394_qt_widget_factory_aaa614e39fe48800dab4b21edf6845c22}{Widget\+List\+Type}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmts_robot_i_o1394_qt_widget_factory_a5af9f14113c1a8df00e5dcc6eec93c44}{mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory} (const std\+::string \&name)
+\item 
+\hyperlink{classmts_robot_i_o1394_qt_widget_factory_aea31ad277310292acf320ea8551a5c29}{$\sim$mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory} (void)
+\item 
+void \hyperlink{classmts_robot_i_o1394_qt_widget_factory_a38461e327f136bdfeb44bcc5facdc7a6}{Configure} (const std\+::string \&filename=\char`\"{}\char`\"{})
+\item 
+void \hyperlink{classmts_robot_i_o1394_qt_widget_factory_a39d213bdac308c273d5a6c630ea630c7}{Startup} (void)
+\item 
+const \hyperlink{classmts_robot_i_o1394_qt_widget_factory_aaa614e39fe48800dab4b21edf6845c22}{Widget\+List\+Type} \& \hyperlink{classmts_robot_i_o1394_qt_widget_factory_a9994bbd0f82c4a5790d048740baf34f3}{Widgets} (void) const 
+\item 
+\hyperlink{classprm_qt_widget_event_buttons_component}{prm\+Qt\+Widget\+Event\+Buttons\+Component} $\ast$ \hyperlink{classmts_robot_i_o1394_qt_widget_factory_ad87c9cb3b7864100eb976824a534976c}{Buttons\+Widget} (void)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classmts_robot_i_o1394_qt_widget_factory_a2a585339c5e62006657cb9a0d6fc89d9}{Build\+Widgets} (void)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmts_robot_i_o1394_qt_widget_factory_aaa614e39fe48800dab4b21edf6845c22}{Widget\+List\+Type} \hyperlink{classmts_robot_i_o1394_qt_widget_factory_adaf0b9c315792eced9d1190bc3614fa8}{m\+Widgets}
+\item 
+\hyperlink{classprm_qt_widget_event_buttons_component}{prm\+Qt\+Widget\+Event\+Buttons\+Component} $\ast$ \hyperlink{classmts_robot_i_o1394_qt_widget_factory_a3eeee417f7939a43eeebe0d7624a5fb3}{m\+Buttons\+Widget}
+\item 
+bool \hyperlink{classmts_robot_i_o1394_qt_widget_factory_abc8f7a79cbc09c4f19a09654fc72fe4f}{Build\+Widgets\+Called}
+\item 
+\hyperlink{classmts_interface_required}{mts\+Interface\+Required} $\ast$ \hyperlink{classmts_robot_i_o1394_qt_widget_factory_a5456e298db56b3eb79c89bbbedd21846}{Robot\+Configure\+Interface}
+\item 
+std\+::string \hyperlink{classmts_robot_i_o1394_qt_widget_factory_a768d49c9080b3cdd9bfac4739011881e}{Name\+Of\+Robot\+I\+O1394}
+\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{classmts_robot_i_o1394_qt_widget_factory_ad869dbe413a4475f430975043773b5e9}{Robot\+Names}
+\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{classmts_robot_i_o1394_qt_widget_factory_a91c2107342e4c1ca2bdeefa374351e38}{Digital\+Input\+Names}
+\item 
+int \hyperlink{classmts_robot_i_o1394_qt_widget_factory_a12d58bb02a5e646dc4d901430db1753c}{Number\+Of\+Robots}
+\item 
+int \hyperlink{classmts_robot_i_o1394_qt_widget_factory_a76ca8abd91f3d9a0bd3aa6da7bd1deb3}{Number\+Of\+Digital\+Inputs}
+\item 
+\hyperlink{vct_dynamic_vector_types_8h_a47260df0b570a25352b3f318ed0b4c4e}{vct\+Int\+Vec} \hyperlink{classmts_robot_i_o1394_qt_widget_factory_a6a595f9b10a1a92194fa7619bbb08b80}{Number\+Of\+Actuators\+Per\+Robot}
+\item 
+\hyperlink{vct_dynamic_vector_types_8h_a47260df0b570a25352b3f318ed0b4c4e}{vct\+Int\+Vec} \hyperlink{classmts_robot_i_o1394_qt_widget_factory_a6a3a45284259fee4e32d6c2a2a1b864c}{Number\+Of\+Brakes\+Per\+Robot}
+\item 
+struct \hyperlink{structmts_robot_i_o1394_qt_widget_factory_1_1_config_struct}{mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory\+::\+Config\+Struct} \hyperlink{classmts_robot_i_o1394_qt_widget_factory_a16b184d35dfa791f432a526a950569f9}{Configuration}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classmts_robot_i_o1394_qt_widget_factory_aaa614e39fe48800dab4b21edf6845c22}{}\index{mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory@{mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory}!Widget\+List\+Type@{Widget\+List\+Type}}
+\index{Widget\+List\+Type@{Widget\+List\+Type}!mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory@{mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory}}
+\subsubsection[{Widget\+List\+Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::list$<${\bf mts\+Robot\+I\+O1394\+Qt\+Widget} $\ast$$>$ {\bf mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory\+::\+Widget\+List\+Type}}\label{classmts_robot_i_o1394_qt_widget_factory_aaa614e39fe48800dab4b21edf6845c22}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmts_robot_i_o1394_qt_widget_factory_a5af9f14113c1a8df00e5dcc6eec93c44}{}\index{mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory@{mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory}!mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory@{mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory}}
+\index{mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory@{mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory}!mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory@{mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory}}
+\subsubsection[{mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory\+::mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name}
+\end{DoxyParamCaption}
+)}\label{classmts_robot_i_o1394_qt_widget_factory_a5af9f14113c1a8df00e5dcc6eec93c44}
+\hypertarget{classmts_robot_i_o1394_qt_widget_factory_aea31ad277310292acf320ea8551a5c29}{}\index{mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory@{mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory}!````~mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory@{$\sim$mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory}}
+\index{````~mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory@{$\sim$mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory}!mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory@{mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory}}
+\subsubsection[{$\sim$mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory\+::$\sim$mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_robot_i_o1394_qt_widget_factory_aea31ad277310292acf320ea8551a5c29}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classmts_robot_i_o1394_qt_widget_factory_a2a585339c5e62006657cb9a0d6fc89d9}{}\index{mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory@{mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory}!Build\+Widgets@{Build\+Widgets}}
+\index{Build\+Widgets@{Build\+Widgets}!mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory@{mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory}}
+\subsubsection[{Build\+Widgets}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory\+::\+Build\+Widgets (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_robot_i_o1394_qt_widget_factory_a2a585339c5e62006657cb9a0d6fc89d9}
+\hypertarget{classmts_robot_i_o1394_qt_widget_factory_ad87c9cb3b7864100eb976824a534976c}{}\index{mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory@{mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory}!Buttons\+Widget@{Buttons\+Widget}}
+\index{Buttons\+Widget@{Buttons\+Widget}!mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory@{mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory}}
+\subsubsection[{Buttons\+Widget}]{\setlength{\rightskip}{0pt plus 5cm}{\bf prm\+Qt\+Widget\+Event\+Buttons\+Component}$\ast$ mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory\+::\+Buttons\+Widget (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_robot_i_o1394_qt_widget_factory_ad87c9cb3b7864100eb976824a534976c}
+\hypertarget{classmts_robot_i_o1394_qt_widget_factory_a38461e327f136bdfeb44bcc5facdc7a6}{}\index{mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory@{mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory}!Configure@{Configure}}
+\index{Configure@{Configure}!mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory@{mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory}}
+\subsubsection[{Configure}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory\+::\+Configure (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{filename = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_robot_i_o1394_qt_widget_factory_a38461e327f136bdfeb44bcc5facdc7a6}
+The virtual method so that the interface or tasks can configure themselves 
+
+Reimplemented from \hyperlink{classmts_component_ad872432876de7879dc96c232b411c146}{mts\+Component}.
+
+\hypertarget{classmts_robot_i_o1394_qt_widget_factory_a39d213bdac308c273d5a6c630ea630c7}{}\index{mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory@{mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory}!Startup@{Startup}}
+\index{Startup@{Startup}!mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory@{mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory}}
+\subsubsection[{Startup}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory\+::\+Startup (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_robot_i_o1394_qt_widget_factory_a39d213bdac308c273d5a6c630ea630c7}
+Virtual method that gets overloaded, and is run before the component is started. 
+
+Reimplemented from \hyperlink{classmts_component_aaf28f0262b44eb6866e10089a02fa6e4}{mts\+Component}.
+
+\hypertarget{classmts_robot_i_o1394_qt_widget_factory_a9994bbd0f82c4a5790d048740baf34f3}{}\index{mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory@{mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory}!Widgets@{Widgets}}
+\index{Widgets@{Widgets}!mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory@{mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory}}
+\subsubsection[{Widgets}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Widget\+List\+Type}\& mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory\+::\+Widgets (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classmts_robot_i_o1394_qt_widget_factory_a9994bbd0f82c4a5790d048740baf34f3}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classmts_robot_i_o1394_qt_widget_factory_abc8f7a79cbc09c4f19a09654fc72fe4f}{}\index{mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory@{mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory}!Build\+Widgets\+Called@{Build\+Widgets\+Called}}
+\index{Build\+Widgets\+Called@{Build\+Widgets\+Called}!mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory@{mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory}}
+\subsubsection[{Build\+Widgets\+Called}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory\+::\+Build\+Widgets\+Called\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_robot_i_o1394_qt_widget_factory_abc8f7a79cbc09c4f19a09654fc72fe4f}
+\hypertarget{classmts_robot_i_o1394_qt_widget_factory_a16b184d35dfa791f432a526a950569f9}{}\index{mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory@{mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory}!Configuration@{Configuration}}
+\index{Configuration@{Configuration}!mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory@{mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory}}
+\subsubsection[{Configuration}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory\+::\+Config\+Struct}  mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory\+::\+Configuration\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_robot_i_o1394_qt_widget_factory_a16b184d35dfa791f432a526a950569f9}
+\hypertarget{classmts_robot_i_o1394_qt_widget_factory_a91c2107342e4c1ca2bdeefa374351e38}{}\index{mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory@{mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory}!Digital\+Input\+Names@{Digital\+Input\+Names}}
+\index{Digital\+Input\+Names@{Digital\+Input\+Names}!mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory@{mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory}}
+\subsubsection[{Digital\+Input\+Names}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$std\+::string$>$ mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory\+::\+Digital\+Input\+Names\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_robot_i_o1394_qt_widget_factory_a91c2107342e4c1ca2bdeefa374351e38}
+\hypertarget{classmts_robot_i_o1394_qt_widget_factory_a3eeee417f7939a43eeebe0d7624a5fb3}{}\index{mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory@{mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory}!m\+Buttons\+Widget@{m\+Buttons\+Widget}}
+\index{m\+Buttons\+Widget@{m\+Buttons\+Widget}!mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory@{mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory}}
+\subsubsection[{m\+Buttons\+Widget}]{\setlength{\rightskip}{0pt plus 5cm}{\bf prm\+Qt\+Widget\+Event\+Buttons\+Component}$\ast$ mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory\+::m\+Buttons\+Widget\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_robot_i_o1394_qt_widget_factory_a3eeee417f7939a43eeebe0d7624a5fb3}
+\hypertarget{classmts_robot_i_o1394_qt_widget_factory_adaf0b9c315792eced9d1190bc3614fa8}{}\index{mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory@{mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory}!m\+Widgets@{m\+Widgets}}
+\index{m\+Widgets@{m\+Widgets}!mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory@{mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory}}
+\subsubsection[{m\+Widgets}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Widget\+List\+Type} mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory\+::m\+Widgets\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_robot_i_o1394_qt_widget_factory_adaf0b9c315792eced9d1190bc3614fa8}
+\hypertarget{classmts_robot_i_o1394_qt_widget_factory_a768d49c9080b3cdd9bfac4739011881e}{}\index{mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory@{mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory}!Name\+Of\+Robot\+I\+O1394@{Name\+Of\+Robot\+I\+O1394}}
+\index{Name\+Of\+Robot\+I\+O1394@{Name\+Of\+Robot\+I\+O1394}!mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory@{mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory}}
+\subsubsection[{Name\+Of\+Robot\+I\+O1394}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory\+::\+Name\+Of\+Robot\+I\+O1394\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_robot_i_o1394_qt_widget_factory_a768d49c9080b3cdd9bfac4739011881e}
+\hypertarget{classmts_robot_i_o1394_qt_widget_factory_a6a595f9b10a1a92194fa7619bbb08b80}{}\index{mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory@{mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory}!Number\+Of\+Actuators\+Per\+Robot@{Number\+Of\+Actuators\+Per\+Robot}}
+\index{Number\+Of\+Actuators\+Per\+Robot@{Number\+Of\+Actuators\+Per\+Robot}!mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory@{mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory}}
+\subsubsection[{Number\+Of\+Actuators\+Per\+Robot}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Int\+Vec} mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory\+::\+Number\+Of\+Actuators\+Per\+Robot\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_robot_i_o1394_qt_widget_factory_a6a595f9b10a1a92194fa7619bbb08b80}
+\hypertarget{classmts_robot_i_o1394_qt_widget_factory_a6a3a45284259fee4e32d6c2a2a1b864c}{}\index{mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory@{mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory}!Number\+Of\+Brakes\+Per\+Robot@{Number\+Of\+Brakes\+Per\+Robot}}
+\index{Number\+Of\+Brakes\+Per\+Robot@{Number\+Of\+Brakes\+Per\+Robot}!mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory@{mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory}}
+\subsubsection[{Number\+Of\+Brakes\+Per\+Robot}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Int\+Vec} mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory\+::\+Number\+Of\+Brakes\+Per\+Robot\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_robot_i_o1394_qt_widget_factory_a6a3a45284259fee4e32d6c2a2a1b864c}
+\hypertarget{classmts_robot_i_o1394_qt_widget_factory_a76ca8abd91f3d9a0bd3aa6da7bd1deb3}{}\index{mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory@{mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory}!Number\+Of\+Digital\+Inputs@{Number\+Of\+Digital\+Inputs}}
+\index{Number\+Of\+Digital\+Inputs@{Number\+Of\+Digital\+Inputs}!mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory@{mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory}}
+\subsubsection[{Number\+Of\+Digital\+Inputs}]{\setlength{\rightskip}{0pt plus 5cm}int mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory\+::\+Number\+Of\+Digital\+Inputs\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_robot_i_o1394_qt_widget_factory_a76ca8abd91f3d9a0bd3aa6da7bd1deb3}
+\hypertarget{classmts_robot_i_o1394_qt_widget_factory_a12d58bb02a5e646dc4d901430db1753c}{}\index{mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory@{mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory}!Number\+Of\+Robots@{Number\+Of\+Robots}}
+\index{Number\+Of\+Robots@{Number\+Of\+Robots}!mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory@{mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory}}
+\subsubsection[{Number\+Of\+Robots}]{\setlength{\rightskip}{0pt plus 5cm}int mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory\+::\+Number\+Of\+Robots\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_robot_i_o1394_qt_widget_factory_a12d58bb02a5e646dc4d901430db1753c}
+\hypertarget{classmts_robot_i_o1394_qt_widget_factory_a5456e298db56b3eb79c89bbbedd21846}{}\index{mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory@{mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory}!Robot\+Configure\+Interface@{Robot\+Configure\+Interface}}
+\index{Robot\+Configure\+Interface@{Robot\+Configure\+Interface}!mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory@{mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory}}
+\subsubsection[{Robot\+Configure\+Interface}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+Interface\+Required}$\ast$ mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory\+::\+Robot\+Configure\+Interface\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_robot_i_o1394_qt_widget_factory_a5456e298db56b3eb79c89bbbedd21846}
+\hypertarget{classmts_robot_i_o1394_qt_widget_factory_ad869dbe413a4475f430975043773b5e9}{}\index{mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory@{mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory}!Robot\+Names@{Robot\+Names}}
+\index{Robot\+Names@{Robot\+Names}!mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory@{mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory}}
+\subsubsection[{Robot\+Names}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$std\+::string$>$ mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory\+::\+Robot\+Names\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_robot_i_o1394_qt_widget_factory_ad869dbe413a4475f430975043773b5e9}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/saw\+Robot\+I\+O1394/include/saw\+Robot\+I\+O1394/\hyperlink{mts_robot_i_o1394_qt_widget_factory_8h}{mts\+Robot\+I\+O1394\+Qt\+Widget\+Factory.\+h}\end{DoxyCompactItemize}

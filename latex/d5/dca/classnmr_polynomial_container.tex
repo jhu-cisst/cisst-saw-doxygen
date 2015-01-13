@@ -1,0 +1,652 @@
+\hypertarget{classnmr_polynomial_container}{}\section{nmr\+Polynomial\+Container$<$ \+\_\+\+Term\+Info $>$ Class Template Reference}
+\label{classnmr_polynomial_container}\index{nmr\+Polynomial\+Container$<$ \+\_\+\+Term\+Info $>$@{nmr\+Polynomial\+Container$<$ \+\_\+\+Term\+Info $>$}}
+
+
+{\ttfamily \#include $<$nmr\+Polynomial\+Container.\+h$>$}
+
+Inheritance diagram for nmr\+Polynomial\+Container$<$ \+\_\+\+Term\+Info $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{d5/dca/classnmr_polynomial_container}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classnmr_polynomial_container_1_1_equality_tester}{Equality\+Tester}
+\item 
+class \hyperlink{classnmr_polynomial_container_1_1_less_or_equality_tester}{Less\+Or\+Equality\+Tester}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classnmr_polynomial_base}{nmr\+Polynomial\+Base} \hyperlink{classnmr_polynomial_container_afcdfc28d7e6ba39198175c7a2cc5ed7d}{Base\+Type}
+\item 
+typedef \+\_\+\+Term\+Info \hyperlink{classnmr_polynomial_container_acc456652a77699f540082b3f285ac460}{Term\+Info\+Type}
+\item 
+typedef std\+::pair$<$ \hyperlink{classnmr_polynomial_term_power_index}{nmr\+Polynomial\+Term\+Power\+Index}, \hyperlink{classnmr_polynomial_container_acc456652a77699f540082b3f285ac460}{Term\+Info\+Type} $>$ \hyperlink{classnmr_polynomial_container_ae9c399b9034fb32315a644ebb103b4dd}{Container\+Element\+Type}
+\item 
+typedef std\+::list$<$ \hyperlink{classnmr_polynomial_container_ae9c399b9034fb32315a644ebb103b4dd}{Container\+Element\+Type} $>$ \hyperlink{classnmr_polynomial_container_ae9ba96ffe1b50f1cd84e6728c3a77128}{Term\+Container\+Type}
+\item 
+typedef Term\+Container\+Type\+::value\+\_\+type \hyperlink{classnmr_polynomial_container_a64089fefb243ca7cd6fc412083f9fa9d}{Term\+Type}
+\item 
+typedef Term\+Container\+Type\+::iterator \hyperlink{classnmr_polynomial_container_a276e57445d038e8a16462f47b85719a3}{Term\+Iterator\+Type}
+\item 
+typedef Term\+Container\+Type\+::const\+\_\+iterator \hyperlink{classnmr_polynomial_container_aba8d31506ab6a487fdc4fe2815469442}{Term\+Const\+Iterator\+Type}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classnmr_polynomial_container_a64d893a4d10133f60228dfe6572c4207}{nmr\+Polynomial\+Container} (\hyperlink{classnmr_polynomial_base_aae95477e451ddc7d3ee3f41cbdaadde2}{Variable\+Index\+Type} num\+Variables, \hyperlink{classnmr_polynomial_base_a58607c884bf2e6725a77ed4d9e14ba26}{Power\+Type} min\+Degree, \hyperlink{classnmr_polynomial_base_a58607c884bf2e6725a77ed4d9e14ba26}{Power\+Type} max\+Degree)
+\item 
+virtual \hyperlink{classnmr_polynomial_container_a8a8e9cbcf9b278f74ca644a2be8773c5}{$\sim$nmr\+Polynomial\+Container} ()
+\item 
+virtual \hyperlink{classnmr_polynomial_base_a4b0abd66b12b6f5bfb30d0eb1607e661}{Term\+Counter\+Type} \hyperlink{classnmr_polynomial_container_a155c42ad638239ba889ca69739287e85}{Get\+Number\+Of\+Terms} () const 
+\item 
+virtual bool \hyperlink{classnmr_polynomial_container_afec06d447808f6751b9e28b168a4ff60}{Is\+Empty} () const 
+\item 
+virtual void \hyperlink{classnmr_polynomial_container_a0f2a6cb8aca5e95073051de89973ab56}{Set\+Min\+Degree} (\hyperlink{classnmr_polynomial_base_a58607c884bf2e6725a77ed4d9e14ba26}{Power\+Type} new\+Min)  throw (std\+::runtime\+\_\+error)
+\item 
+virtual void \hyperlink{classnmr_polynomial_container_ac54f6c4d7ba690d4b103f051853a61b6}{Set\+Max\+Degree} (\hyperlink{classnmr_polynomial_base_a58607c884bf2e6725a77ed4d9e14ba26}{Power\+Type} new\+Max)  throw (std\+::runtime\+\_\+error)
+\item 
+virtual void \hyperlink{classnmr_polynomial_container_a0f42d97bb5e37df22b3b940177c05823}{Fill\+All\+Terms} ()
+\item 
+virtual bool \hyperlink{classnmr_polynomial_container_ad8e23eba5aab3f5cf0f153c054fe7b8a}{Includes\+Index} (const \hyperlink{classnmr_polynomial_term_power_index}{nmr\+Polynomial\+Term\+Power\+Index} \&target) const 
+\item 
+virtual \hyperlink{classnmr_polynomial_base_a4b0abd66b12b6f5bfb30d0eb1607e661}{Term\+Counter\+Type} \hyperlink{classnmr_polynomial_container_a1ea223fdd9f483c32fed3eb91d880cec}{Get\+Index\+Position} (const \hyperlink{classnmr_polynomial_term_power_index}{nmr\+Polynomial\+Term\+Power\+Index} \&term) const 
+\item 
+\hyperlink{classnmr_polynomial_container_a276e57445d038e8a16462f47b85719a3}{Term\+Iterator\+Type} \hyperlink{classnmr_polynomial_container_aa67592164a3279435821dafeef6da287}{Get\+Term\+Iterator\+For\+Position} (\hyperlink{classnmr_polynomial_base_a4b0abd66b12b6f5bfb30d0eb1607e661}{Term\+Counter\+Type} position)
+\item 
+\hyperlink{classnmr_polynomial_container_a276e57445d038e8a16462f47b85719a3}{Term\+Iterator\+Type} \hyperlink{classnmr_polynomial_container_ae7f1d8d2a7a436d50f037eca26a2d071}{First\+Term\+Iterator} ()
+\item 
+\hyperlink{classnmr_polynomial_container_aba8d31506ab6a487fdc4fe2815469442}{Term\+Const\+Iterator\+Type} \hyperlink{classnmr_polynomial_container_a35d115a7a1de687fbd430fc3e72d1852}{First\+Term\+Iterator} () const 
+\item 
+\hyperlink{classnmr_polynomial_container_a276e57445d038e8a16462f47b85719a3}{Term\+Iterator\+Type} \hyperlink{classnmr_polynomial_container_a35de8fd324e8a82fafd8b1f142454f52}{End\+Term\+Iterator} ()
+\item 
+\hyperlink{classnmr_polynomial_container_aba8d31506ab6a487fdc4fe2815469442}{Term\+Const\+Iterator\+Type} \hyperlink{classnmr_polynomial_container_a6f91158da45a46d4e893d2f12fe66c0e}{End\+Term\+Iterator} () const 
+\item 
+\hyperlink{classnmr_polynomial_container_a276e57445d038e8a16462f47b85719a3}{Term\+Iterator\+Type} \hyperlink{classnmr_polynomial_container_a0e60c3316d2eb4bd648060f86277f965}{Find\+Term} (const \hyperlink{classnmr_polynomial_term_power_index}{nmr\+Polynomial\+Term\+Power\+Index} \&target)
+\item 
+\hyperlink{classnmr_polynomial_container_aba8d31506ab6a487fdc4fe2815469442}{Term\+Const\+Iterator\+Type} \hyperlink{classnmr_polynomial_container_a90f2dabc7119967f2eae12e5dc8df03d}{Find\+Term} (const \hyperlink{classnmr_polynomial_term_power_index}{nmr\+Polynomial\+Term\+Power\+Index} \&target) const 
+\item 
+virtual void \hyperlink{classnmr_polynomial_container_a550fbc8732a929a79236887f0fdddd4c}{Remove\+Term} (const \hyperlink{classnmr_polynomial_term_power_index}{nmr\+Polynomial\+Term\+Power\+Index} \&where)
+\item 
+virtual void \hyperlink{classnmr_polynomial_container_a9fc6e6c406c10d615d3cf5a97926720f}{Remove\+Term} (\hyperlink{classnmr_polynomial_container_a276e57445d038e8a16462f47b85719a3}{Term\+Iterator\+Type} \&where)
+\item 
+virtual void \hyperlink{classnmr_polynomial_container_a0d62bc3c08f01936868cbed1b32abeda}{Clear} ()
+\item 
+virtual \hyperlink{classnmr_polynomial_base_ac3b6b28653104ea70419279a35580940}{Insert\+Status} \hyperlink{classnmr_polynomial_container_a4ac9b1833ec593f10d54baaa7a2ebe81}{Set\+Coefficient} (const \hyperlink{classnmr_polynomial_term_power_index}{nmr\+Polynomial\+Term\+Power\+Index} \&where, \hyperlink{classnmr_polynomial_base_a8693efdfc8585ccb49abea69f74f3eef}{Coefficient\+Type} coefficient)=0
+\item 
+virtual \hyperlink{classnmr_polynomial_base_ac3b6b28653104ea70419279a35580940}{Insert\+Status} \hyperlink{classnmr_polynomial_container_a5b1188598da1993c8a1497a403af2b18}{Set\+Coefficient} (\hyperlink{classnmr_polynomial_container_a276e57445d038e8a16462f47b85719a3}{Term\+Iterator\+Type} \&where, \hyperlink{classnmr_polynomial_base_a8693efdfc8585ccb49abea69f74f3eef}{Coefficient\+Type} coefficient)=0
+\item 
+virtual \hyperlink{classnmr_polynomial_base_a8693efdfc8585ccb49abea69f74f3eef}{Coefficient\+Type} \hyperlink{classnmr_polynomial_container_ae2526acacd3b7d957524818a87619a65}{Get\+Coefficient} (const \hyperlink{classnmr_polynomial_container_aba8d31506ab6a487fdc4fe2815469442}{Term\+Const\+Iterator\+Type} \&where) const =0
+\item 
+virtual \hyperlink{classnmr_polynomial_base_a8693efdfc8585ccb49abea69f74f3eef}{Coefficient\+Type} \hyperlink{classnmr_polynomial_container_ae92f218f650f44ec1c22528cc19d6790}{Get\+Coefficient} (const \hyperlink{classnmr_polynomial_container_a276e57445d038e8a16462f47b85719a3}{Term\+Iterator\+Type} \&where) const =0
+\item 
+virtual void \hyperlink{classnmr_polynomial_container_a1a543d698e2f173271bdd0642d8404b0}{Collect\+Coefficients} (\hyperlink{classnmr_polynomial_base_a8693efdfc8585ccb49abea69f74f3eef}{Coefficient\+Type} target\mbox{[}$\,$\mbox{]}) const 
+\item 
+virtual void \hyperlink{classnmr_polynomial_container_a035c9c6e4b57de5106d5de512ce42cca}{Restore\+Coefficients} (const \hyperlink{classnmr_polynomial_base_a8693efdfc8585ccb49abea69f74f3eef}{Coefficient\+Type} source\mbox{[}$\,$\mbox{]})
+\item 
+const \hyperlink{classnmr_polynomial_term_power_index}{nmr\+Polynomial\+Term\+Power\+Index} \& \hyperlink{classnmr_polynomial_container_aa11e3c563a7f25d0754d2b558731b68f}{Get\+Term\+Power\+Index} (const \hyperlink{classnmr_polynomial_container_aba8d31506ab6a487fdc4fe2815469442}{Term\+Const\+Iterator\+Type} \&where) const 
+\item 
+const \hyperlink{classnmr_polynomial_term_power_index}{nmr\+Polynomial\+Term\+Power\+Index} \& \hyperlink{classnmr_polynomial_container_a2143e3ffbe827d4ec643b9fa98da1147}{Get\+Term\+Power\+Index} (const \hyperlink{classnmr_polynomial_container_a276e57445d038e8a16462f47b85719a3}{Term\+Iterator\+Type} \&where) const 
+\item 
+virtual \hyperlink{classnmr_polynomial_base_a72f0bc16b225e4708bcf15a77ba206e3}{Value\+Type} \hyperlink{classnmr_polynomial_container_ace5c179e6031133fed7602405f0eb56e}{Evaluate\+Basis} (const \hyperlink{classnmr_polynomial_container_aba8d31506ab6a487fdc4fe2815469442}{Term\+Const\+Iterator\+Type} \&where, const \hyperlink{classnmr_multi_variable_power_basis}{nmr\+Multi\+Variable\+Power\+Basis} \&variables) const =0
+\item 
+virtual \hyperlink{classnmr_polynomial_base_a72f0bc16b225e4708bcf15a77ba206e3}{Value\+Type} \hyperlink{classnmr_polynomial_container_a36281b8ecdc51dfcdac7a373c01ba234}{Evaluate\+Basis} (const \hyperlink{classnmr_polynomial_container_a276e57445d038e8a16462f47b85719a3}{Term\+Iterator\+Type} \&where, const \hyperlink{classnmr_multi_variable_power_basis}{nmr\+Multi\+Variable\+Power\+Basis} \&variables) const =0
+\item 
+\hyperlink{classnmr_polynomial_base_a72f0bc16b225e4708bcf15a77ba206e3}{Value\+Type} \hyperlink{classnmr_polynomial_container_a8f83a6642b01d0d3ce1df25f9e7c8fc5}{Evaluate\+Term} (const \hyperlink{classnmr_polynomial_container_aba8d31506ab6a487fdc4fe2815469442}{Term\+Const\+Iterator\+Type} \&where) const 
+\item 
+\hyperlink{classnmr_polynomial_base_a72f0bc16b225e4708bcf15a77ba206e3}{Value\+Type} \hyperlink{classnmr_polynomial_container_abeea4f2120d30716e094613b8cf7ce9e}{Evaluate\+Term} (const \hyperlink{classnmr_polynomial_container_a276e57445d038e8a16462f47b85719a3}{Term\+Iterator\+Type} \&where) const 
+\item 
+\hyperlink{classnmr_polynomial_base_a72f0bc16b225e4708bcf15a77ba206e3}{Value\+Type} \hyperlink{classnmr_polynomial_container_a35718a7ac77d0753a8ea2f69a3ff0141}{Evaluate\+Term} (const \hyperlink{classnmr_polynomial_container_aba8d31506ab6a487fdc4fe2815469442}{Term\+Const\+Iterator\+Type} \&where, const \hyperlink{classnmr_multi_variable_power_basis}{nmr\+Multi\+Variable\+Power\+Basis} \&variables) const 
+\item 
+\hyperlink{classnmr_polynomial_base_a72f0bc16b225e4708bcf15a77ba206e3}{Value\+Type} \hyperlink{classnmr_polynomial_container_a75719fb872dc581d1829ef3ea8b2f562}{Evaluate\+Term} (const \hyperlink{classnmr_polynomial_container_a276e57445d038e8a16462f47b85719a3}{Term\+Iterator\+Type} \&where, const \hyperlink{classnmr_multi_variable_power_basis}{nmr\+Multi\+Variable\+Power\+Basis} \&variables) const 
+\item 
+virtual \hyperlink{classnmr_polynomial_base_a72f0bc16b225e4708bcf15a77ba206e3}{Value\+Type} \hyperlink{classnmr_polynomial_container_a8f747bfe057e3056dd1b544367569df3}{Evaluate} (const \hyperlink{classnmr_multi_variable_power_basis}{nmr\+Multi\+Variable\+Power\+Basis} \&variables) const 
+\item 
+virtual void \hyperlink{classnmr_polynomial_container_adf8130b5dc6b646596e2baf689de9a4b}{Evaluate\+Basis\+Vector} (const \hyperlink{classnmr_multi_variable_power_basis}{nmr\+Multi\+Variable\+Power\+Basis} \&variables, \hyperlink{classnmr_polynomial_base_a72f0bc16b225e4708bcf15a77ba206e3}{Value\+Type} term\+Base\+Values\mbox{[}$\,$\mbox{]}) const 
+\item 
+virtual \hyperlink{classnmr_polynomial_base_a72f0bc16b225e4708bcf15a77ba206e3}{Value\+Type} \hyperlink{classnmr_polynomial_container_a7cba138156c317147ea5bc49dc10e5be}{Evaluate\+For\+Coefficients} (const \hyperlink{classnmr_multi_variable_power_basis}{nmr\+Multi\+Variable\+Power\+Basis} \&variables, const \hyperlink{classnmr_polynomial_base_a8693efdfc8585ccb49abea69f74f3eef}{Coefficient\+Type} coefficients\mbox{[}$\,$\mbox{]}) const 
+\item 
+virtual void \hyperlink{classnmr_polynomial_container_aa6584fddf2054bc8ed4fb54a3be19aa3}{Scale} (\hyperlink{classnmr_polynomial_base_a8693efdfc8585ccb49abea69f74f3eef}{Coefficient\+Type} scale\+Factor)
+\item 
+virtual void \hyperlink{classnmr_polynomial_container_a883f221d9a4428feaa207f98470f721a}{Add\+Constant} (\hyperlink{classnmr_polynomial_base_a8693efdfc8585ccb49abea69f74f3eef}{Coefficient\+Type} shift\+Amount)=0
+\item 
+virtual void \hyperlink{classnmr_polynomial_container_a8495f9383c2168896c693bc954238845}{Add\+Constant\+To\+Coefficients} (\hyperlink{classnmr_polynomial_base_a8693efdfc8585ccb49abea69f74f3eef}{Coefficient\+Type} coefficients\mbox{[}$\,$\mbox{]}, \hyperlink{classnmr_polynomial_base_a8693efdfc8585ccb49abea69f74f3eef}{Coefficient\+Type} shift\+Amount) const =0
+\item 
+virtual void \hyperlink{classnmr_polynomial_container_aa8d77ebaccb2e9849b8921cf4a7408a8}{Serialize\+Term\+Info} (std\+::ostream \&output, const \hyperlink{classnmr_polynomial_container_aba8d31506ab6a487fdc4fe2815469442}{Term\+Const\+Iterator\+Type} \&term\+Iterator) const =0
+\item 
+virtual void \hyperlink{classnmr_polynomial_container_aa1d8ad137c0dce9e4d3b4f576ca4c0e8}{Deserialize\+Term\+Info} (std\+::istream \&input, \hyperlink{classnmr_polynomial_container_a276e57445d038e8a16462f47b85719a3}{Term\+Iterator\+Type} \&term\+Iterator)=0
+\item 
+virtual void \hyperlink{classnmr_polynomial_container_a1fb16b0f2382343c1313b5fb2c6d5e6e}{Serialize\+Raw} (std\+::ostream \&output) const 
+\item 
+virtual void \hyperlink{classnmr_polynomial_container_a2a166a5b7f970b2fec4a374fcfc1de44}{Deserialize\+Raw} (std\+::istream \&input)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+const \hyperlink{classnmr_polynomial_container_acc456652a77699f540082b3f285ac460}{Term\+Info\+Type} \& \hyperlink{classnmr_polynomial_container_a9c29b5a6752e6aa94975a230e4ac6948}{Get\+Term\+Info} (const \hyperlink{classnmr_polynomial_container_aba8d31506ab6a487fdc4fe2815469442}{Term\+Const\+Iterator\+Type} \&term\+Iterator) const 
+\item 
+\hyperlink{classnmr_polynomial_container_acc456652a77699f540082b3f285ac460}{Term\+Info\+Type} \& \hyperlink{classnmr_polynomial_container_a0f2ab228be1631eccf5b23122308289e}{Get\+Term\+Info} (const \hyperlink{classnmr_polynomial_container_aba8d31506ab6a487fdc4fe2815469442}{Term\+Const\+Iterator\+Type} \&term\+Iterator)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classnmr_polynomial_container_ae9ba96ffe1b50f1cd84e6728c3a77128}{Term\+Container\+Type} \hyperlink{classnmr_polynomial_container_a70c5e0c98f3a13222bb51bf855e6988a}{Terms}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classnmr_polynomial_container_afcdfc28d7e6ba39198175c7a2cc5ed7d}{}\index{nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}!Base\+Type@{Base\+Type}}
+\index{Base\+Type@{Base\+Type}!nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}}
+\subsubsection[{Base\+Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Term\+Info$>$ typedef {\bf nmr\+Polynomial\+Base} {\bf nmr\+Polynomial\+Container}$<$ \+\_\+\+Term\+Info $>$\+::{\bf Base\+Type}}\label{classnmr_polynomial_container_afcdfc28d7e6ba39198175c7a2cc5ed7d}
+\hypertarget{classnmr_polynomial_container_ae9c399b9034fb32315a644ebb103b4dd}{}\index{nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}!Container\+Element\+Type@{Container\+Element\+Type}}
+\index{Container\+Element\+Type@{Container\+Element\+Type}!nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}}
+\subsubsection[{Container\+Element\+Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Term\+Info$>$ typedef std\+::pair$<${\bf nmr\+Polynomial\+Term\+Power\+Index}, {\bf Term\+Info\+Type}$>$ {\bf nmr\+Polynomial\+Container}$<$ \+\_\+\+Term\+Info $>$\+::{\bf Container\+Element\+Type}}\label{classnmr_polynomial_container_ae9c399b9034fb32315a644ebb103b4dd}
+\hypertarget{classnmr_polynomial_container_aba8d31506ab6a487fdc4fe2815469442}{}\index{nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}!Term\+Const\+Iterator\+Type@{Term\+Const\+Iterator\+Type}}
+\index{Term\+Const\+Iterator\+Type@{Term\+Const\+Iterator\+Type}!nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}}
+\subsubsection[{Term\+Const\+Iterator\+Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Term\+Info$>$ typedef Term\+Container\+Type\+::const\+\_\+iterator {\bf nmr\+Polynomial\+Container}$<$ \+\_\+\+Term\+Info $>$\+::{\bf Term\+Const\+Iterator\+Type}}\label{classnmr_polynomial_container_aba8d31506ab6a487fdc4fe2815469442}
+\hypertarget{classnmr_polynomial_container_ae9ba96ffe1b50f1cd84e6728c3a77128}{}\index{nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}!Term\+Container\+Type@{Term\+Container\+Type}}
+\index{Term\+Container\+Type@{Term\+Container\+Type}!nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}}
+\subsubsection[{Term\+Container\+Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Term\+Info$>$ typedef std\+::list$<${\bf Container\+Element\+Type}$>$ {\bf nmr\+Polynomial\+Container}$<$ \+\_\+\+Term\+Info $>$\+::{\bf Term\+Container\+Type}}\label{classnmr_polynomial_container_ae9ba96ffe1b50f1cd84e6728c3a77128}
+\hypertarget{classnmr_polynomial_container_acc456652a77699f540082b3f285ac460}{}\index{nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}!Term\+Info\+Type@{Term\+Info\+Type}}
+\index{Term\+Info\+Type@{Term\+Info\+Type}!nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}}
+\subsubsection[{Term\+Info\+Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Term\+Info$>$ typedef \+\_\+\+Term\+Info {\bf nmr\+Polynomial\+Container}$<$ \+\_\+\+Term\+Info $>$\+::{\bf Term\+Info\+Type}}\label{classnmr_polynomial_container_acc456652a77699f540082b3f285ac460}
+\hypertarget{classnmr_polynomial_container_a276e57445d038e8a16462f47b85719a3}{}\index{nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}!Term\+Iterator\+Type@{Term\+Iterator\+Type}}
+\index{Term\+Iterator\+Type@{Term\+Iterator\+Type}!nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}}
+\subsubsection[{Term\+Iterator\+Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Term\+Info$>$ typedef Term\+Container\+Type\+::iterator {\bf nmr\+Polynomial\+Container}$<$ \+\_\+\+Term\+Info $>$\+::{\bf Term\+Iterator\+Type}}\label{classnmr_polynomial_container_a276e57445d038e8a16462f47b85719a3}
+\hypertarget{classnmr_polynomial_container_a64089fefb243ca7cd6fc412083f9fa9d}{}\index{nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}!Term\+Type@{Term\+Type}}
+\index{Term\+Type@{Term\+Type}!nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}}
+\subsubsection[{Term\+Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Term\+Info$>$ typedef Term\+Container\+Type\+::value\+\_\+type {\bf nmr\+Polynomial\+Container}$<$ \+\_\+\+Term\+Info $>$\+::{\bf Term\+Type}}\label{classnmr_polynomial_container_a64089fefb243ca7cd6fc412083f9fa9d}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classnmr_polynomial_container_a64d893a4d10133f60228dfe6572c4207}{}\index{nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}!nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}}
+\index{nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}!nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}}
+\subsubsection[{nmr\+Polynomial\+Container}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Term\+Info$>$ {\bf nmr\+Polynomial\+Container}$<$ \+\_\+\+Term\+Info $>$\+::{\bf nmr\+Polynomial\+Container} (
+\begin{DoxyParamCaption}
+\item[{{\bf Variable\+Index\+Type}}]{num\+Variables, }
+\item[{{\bf Power\+Type}}]{min\+Degree, }
+\item[{{\bf Power\+Type}}]{max\+Degree}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classnmr_polynomial_container_a64d893a4d10133f60228dfe6572c4207}
+\hypertarget{classnmr_polynomial_container_a8a8e9cbcf9b278f74ca644a2be8773c5}{}\index{nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}!````~nmr\+Polynomial\+Container@{$\sim$nmr\+Polynomial\+Container}}
+\index{````~nmr\+Polynomial\+Container@{$\sim$nmr\+Polynomial\+Container}!nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}}
+\subsubsection[{$\sim$nmr\+Polynomial\+Container}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Term\+Info$>$ virtual {\bf nmr\+Polynomial\+Container}$<$ \+\_\+\+Term\+Info $>$\+::$\sim${\bf nmr\+Polynomial\+Container} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classnmr_polynomial_container_a8a8e9cbcf9b278f74ca644a2be8773c5}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classnmr_polynomial_container_a883f221d9a4428feaa207f98470f721a}{}\index{nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}!Add\+Constant@{Add\+Constant}}
+\index{Add\+Constant@{Add\+Constant}!nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}}
+\subsubsection[{Add\+Constant}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Term\+Info$>$ virtual void {\bf nmr\+Polynomial\+Container}$<$ \+\_\+\+Term\+Info $>$\+::Add\+Constant (
+\begin{DoxyParamCaption}
+\item[{{\bf Coefficient\+Type}}]{shift\+Amount}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classnmr_polynomial_container_a883f221d9a4428feaa207f98470f721a}
+Overloaded from \hyperlink{classnmr_polynomial_base}{nmr\+Polynomial\+Base} and declared abstract as the implementation varies in subtypes. See subtype implementations 
+
+Implements \hyperlink{classnmr_polynomial_base_a0ef8894033ea77d971fdf9a565061464}{nmr\+Polynomial\+Base}.
+
+
+
+Implemented in \hyperlink{classnmr_bernstein_polynomial_aea0de386d6fba42e5ff2c36d5412b25e}{nmr\+Bernstein\+Polynomial}, and \hyperlink{classnmr_standard_polynomial_adc5e1beae5c00ee4dcf3582a10c99ba5}{nmr\+Standard\+Polynomial}.
+
+\hypertarget{classnmr_polynomial_container_a8495f9383c2168896c693bc954238845}{}\index{nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}!Add\+Constant\+To\+Coefficients@{Add\+Constant\+To\+Coefficients}}
+\index{Add\+Constant\+To\+Coefficients@{Add\+Constant\+To\+Coefficients}!nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}}
+\subsubsection[{Add\+Constant\+To\+Coefficients}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Term\+Info$>$ virtual void {\bf nmr\+Polynomial\+Container}$<$ \+\_\+\+Term\+Info $>$\+::Add\+Constant\+To\+Coefficients (
+\begin{DoxyParamCaption}
+\item[{{\bf Coefficient\+Type}}]{coefficients\mbox{[}$\,$\mbox{]}, }
+\item[{{\bf Coefficient\+Type}}]{shift\+Amount}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classnmr_polynomial_container_a8495f9383c2168896c693bc954238845}
+Overloaded from \hyperlink{classnmr_polynomial_base}{nmr\+Polynomial\+Base}. See subtype implementations 
+
+Implements \hyperlink{classnmr_polynomial_base_ac539bd58986be490fb91970959e6ce93}{nmr\+Polynomial\+Base}.
+
+
+
+Implemented in \hyperlink{classnmr_bernstein_polynomial_a02c6714afc14c2138054e6b27ab8375b}{nmr\+Bernstein\+Polynomial}, and \hyperlink{classnmr_standard_polynomial_a8b1737695f4eb49a0876fda6cb909795}{nmr\+Standard\+Polynomial}.
+
+\hypertarget{classnmr_polynomial_container_a0d62bc3c08f01936868cbed1b32abeda}{}\index{nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}!Clear@{Clear}}
+\index{Clear@{Clear}!nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}}
+\subsubsection[{Clear}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Term\+Info$>$ virtual void {\bf nmr\+Polynomial\+Container}$<$ \+\_\+\+Term\+Info $>$\+::Clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classnmr_polynomial_container_a0d62bc3c08f01936868cbed1b32abeda}
+
+
+Implements \hyperlink{classnmr_polynomial_base_a432db50d77044c8e092e273e07abd898}{nmr\+Polynomial\+Base}.
+
+
+
+Reimplemented in \hyperlink{classnmr_bernstein_polynomial_a7987a19a4cccb2dac54ffee7b77492fb}{nmr\+Bernstein\+Polynomial}, and \hyperlink{classnmr_standard_polynomial_a7efcdc4097121d65de20dde2523e6525}{nmr\+Standard\+Polynomial}.
+
+\hypertarget{classnmr_polynomial_container_a1a543d698e2f173271bdd0642d8404b0}{}\index{nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}!Collect\+Coefficients@{Collect\+Coefficients}}
+\index{Collect\+Coefficients@{Collect\+Coefficients}!nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}}
+\subsubsection[{Collect\+Coefficients}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Term\+Info$>$ virtual void {\bf nmr\+Polynomial\+Container}$<$ \+\_\+\+Term\+Info $>$\+::Collect\+Coefficients (
+\begin{DoxyParamCaption}
+\item[{{\bf Coefficient\+Type}}]{target\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classnmr_polynomial_container_a1a543d698e2f173271bdd0642d8404b0}
+
+
+Implements \hyperlink{classnmr_polynomial_base_a0e387415f60457ed1e410a1aac35a159}{nmr\+Polynomial\+Base}.
+
+\hypertarget{classnmr_polynomial_container_a2a166a5b7f970b2fec4a374fcfc1de44}{}\index{nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}!Deserialize\+Raw@{Deserialize\+Raw}}
+\index{Deserialize\+Raw@{Deserialize\+Raw}!nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}}
+\subsubsection[{Deserialize\+Raw}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Term\+Info$>$ virtual void {\bf nmr\+Polynomial\+Container}$<$ \+\_\+\+Term\+Info $>$\+::Deserialize\+Raw (
+\begin{DoxyParamCaption}
+\item[{std\+::istream \&}]{input}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classnmr_polynomial_container_a2a166a5b7f970b2fec4a374fcfc1de44}
+\hyperlink{classnmr_polynomial_base_a5c2c2a98bc2b230c1eddb437d5430259}{nmr\+Polynomial\+Base\+::\+Deserialize\+Raw()} plus deserialize all the terms. For each term we use \hyperlink{classnmr_polynomial_term_power_index_ae80206421efe7d48c9b7a63c3e29c477}{nmr\+Polynomial\+Term\+Power\+Index\+::\+Deserialize\+Index\+Raw()} and then call the abstract \hyperlink{classnmr_polynomial_container_aa1d8ad137c0dce9e4d3b4f576ca4c0e8}{Deserialize\+Term\+Info()} to complete the rest of the term information. 
+
+Reimplemented from \hyperlink{classnmr_polynomial_base_a5c2c2a98bc2b230c1eddb437d5430259}{nmr\+Polynomial\+Base}.
+
+\hypertarget{classnmr_polynomial_container_aa1d8ad137c0dce9e4d3b4f576ca4c0e8}{}\index{nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}!Deserialize\+Term\+Info@{Deserialize\+Term\+Info}}
+\index{Deserialize\+Term\+Info@{Deserialize\+Term\+Info}!nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}}
+\subsubsection[{Deserialize\+Term\+Info}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Term\+Info$>$ virtual void {\bf nmr\+Polynomial\+Container}$<$ \+\_\+\+Term\+Info $>$\+::Deserialize\+Term\+Info (
+\begin{DoxyParamCaption}
+\item[{std\+::istream \&}]{input, }
+\item[{{\bf Term\+Iterator\+Type} \&}]{term\+Iterator}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classnmr_polynomial_container_aa1d8ad137c0dce9e4d3b4f576ca4c0e8}
+Deserialize and do other necessary initializations for the Term\+Info\+Member associated with the power index of a term. This function should be complementart to Serialize\+Term\+Info.
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & the input deserialization stream \\
+\hline
+{\em term\+Iterator} & an iterator referreing to the term whose contents are being deserialized. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classnmr_bernstein_polynomial_a457024b5819f590ef4a9feb1b803a796}{nmr\+Bernstein\+Polynomial}, \hyperlink{classnmr_standard_polynomial_ac4e1ca13a07cf587db161710a09f5fcb}{nmr\+Standard\+Polynomial}, and \hyperlink{classnmr_dyn_alloc_polynomial_container_a166383324b0c1392e5faf798d7c5a622}{nmr\+Dyn\+Alloc\+Polynomial\+Container}.
+
+\hypertarget{classnmr_polynomial_container_a35de8fd324e8a82fafd8b1f142454f52}{}\index{nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}!End\+Term\+Iterator@{End\+Term\+Iterator}}
+\index{End\+Term\+Iterator@{End\+Term\+Iterator}!nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}}
+\subsubsection[{End\+Term\+Iterator}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Term\+Info$>$ {\bf Term\+Iterator\+Type} {\bf nmr\+Polynomial\+Container}$<$ \+\_\+\+Term\+Info $>$\+::End\+Term\+Iterator (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classnmr_polynomial_container_a35de8fd324e8a82fafd8b1f142454f52}
+\hypertarget{classnmr_polynomial_container_a6f91158da45a46d4e893d2f12fe66c0e}{}\index{nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}!End\+Term\+Iterator@{End\+Term\+Iterator}}
+\index{End\+Term\+Iterator@{End\+Term\+Iterator}!nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}}
+\subsubsection[{End\+Term\+Iterator}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Term\+Info$>$ {\bf Term\+Const\+Iterator\+Type} {\bf nmr\+Polynomial\+Container}$<$ \+\_\+\+Term\+Info $>$\+::End\+Term\+Iterator (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classnmr_polynomial_container_a6f91158da45a46d4e893d2f12fe66c0e}
+\hypertarget{classnmr_polynomial_container_a8f747bfe057e3056dd1b544367569df3}{}\index{nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}!Evaluate@{Evaluate}}
+\index{Evaluate@{Evaluate}!nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}}
+\subsubsection[{Evaluate}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Term\+Info$>$ virtual {\bf Value\+Type} {\bf nmr\+Polynomial\+Container}$<$ \+\_\+\+Term\+Info $>$\+::Evaluate (
+\begin{DoxyParamCaption}
+\item[{const {\bf nmr\+Multi\+Variable\+Power\+Basis} \&}]{variables}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classnmr_polynomial_container_a8f747bfe057e3056dd1b544367569df3}
+Evaluate the polynomial for externally given variables 
+
+Implements \hyperlink{classnmr_polynomial_base_a1df2433e0fe5c22d7d80934a10868a09}{nmr\+Polynomial\+Base}.
+
+\hypertarget{classnmr_polynomial_container_ace5c179e6031133fed7602405f0eb56e}{}\index{nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}!Evaluate\+Basis@{Evaluate\+Basis}}
+\index{Evaluate\+Basis@{Evaluate\+Basis}!nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}}
+\subsubsection[{Evaluate\+Basis}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Term\+Info$>$ virtual {\bf Value\+Type} {\bf nmr\+Polynomial\+Container}$<$ \+\_\+\+Term\+Info $>$\+::Evaluate\+Basis (
+\begin{DoxyParamCaption}
+\item[{const {\bf Term\+Const\+Iterator\+Type} \&}]{where, }
+\item[{const {\bf nmr\+Multi\+Variable\+Power\+Basis} \&}]{variables}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classnmr_polynomial_container_ace5c179e6031133fed7602405f0eb56e}
+
+
+Implemented in \hyperlink{classnmr_bernstein_polynomial_aa47f112a93af89b894da0808171fe168}{nmr\+Bernstein\+Polynomial}, and \hyperlink{classnmr_standard_polynomial_a28025454a47d7cc8d412e44ac0d32f8b}{nmr\+Standard\+Polynomial}.
+
+\hypertarget{classnmr_polynomial_container_a36281b8ecdc51dfcdac7a373c01ba234}{}\index{nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}!Evaluate\+Basis@{Evaluate\+Basis}}
+\index{Evaluate\+Basis@{Evaluate\+Basis}!nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}}
+\subsubsection[{Evaluate\+Basis}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Term\+Info$>$ virtual {\bf Value\+Type} {\bf nmr\+Polynomial\+Container}$<$ \+\_\+\+Term\+Info $>$\+::Evaluate\+Basis (
+\begin{DoxyParamCaption}
+\item[{const {\bf Term\+Iterator\+Type} \&}]{where, }
+\item[{const {\bf nmr\+Multi\+Variable\+Power\+Basis} \&}]{variables}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classnmr_polynomial_container_a36281b8ecdc51dfcdac7a373c01ba234}
+
+
+Implemented in \hyperlink{classnmr_bernstein_polynomial_a655a3b41ac928510914e202332fe54b2}{nmr\+Bernstein\+Polynomial}, and \hyperlink{classnmr_standard_polynomial_a929583fdcc7461fef1086cab401a698d}{nmr\+Standard\+Polynomial}.
+
+\hypertarget{classnmr_polynomial_container_adf8130b5dc6b646596e2baf689de9a4b}{}\index{nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}!Evaluate\+Basis\+Vector@{Evaluate\+Basis\+Vector}}
+\index{Evaluate\+Basis\+Vector@{Evaluate\+Basis\+Vector}!nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}}
+\subsubsection[{Evaluate\+Basis\+Vector}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Term\+Info$>$ virtual void {\bf nmr\+Polynomial\+Container}$<$ \+\_\+\+Term\+Info $>$\+::Evaluate\+Basis\+Vector (
+\begin{DoxyParamCaption}
+\item[{const {\bf nmr\+Multi\+Variable\+Power\+Basis} \&}]{variables, }
+\item[{{\bf Value\+Type}}]{term\+Base\+Values\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classnmr_polynomial_container_adf8130b5dc6b646596e2baf689de9a4b}
+Evaluate the basis functions of the terms as a vector of values. 
+
+Implements \hyperlink{classnmr_polynomial_base_a8a52666a2ac9b19714aee3ca0da0194a}{nmr\+Polynomial\+Base}.
+
+\hypertarget{classnmr_polynomial_container_a7cba138156c317147ea5bc49dc10e5be}{}\index{nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}!Evaluate\+For\+Coefficients@{Evaluate\+For\+Coefficients}}
+\index{Evaluate\+For\+Coefficients@{Evaluate\+For\+Coefficients}!nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}}
+\subsubsection[{Evaluate\+For\+Coefficients}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Term\+Info$>$ virtual {\bf Value\+Type} {\bf nmr\+Polynomial\+Container}$<$ \+\_\+\+Term\+Info $>$\+::Evaluate\+For\+Coefficients (
+\begin{DoxyParamCaption}
+\item[{const {\bf nmr\+Multi\+Variable\+Power\+Basis} \&}]{variables, }
+\item[{const {\bf Coefficient\+Type}}]{coefficients\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classnmr_polynomial_container_a7cba138156c317147ea5bc49dc10e5be}
+Evaluate the polynomial at the currently specified point, using externally defined coefficients. This lets the user create many polynomials over the same set of basis functions without having to duplicate the terms. The input coefficients must be ordered the same way as the terms in this object. It is best to order them using \hyperlink{classnmr_polynomial_container_a1a543d698e2f173271bdd0642d8404b0}{Collect\+Coefficients()} 
+
+Implements \hyperlink{classnmr_polynomial_base_a2536de8569d074248e1ddc892bb4cb6d}{nmr\+Polynomial\+Base}.
+
+\hypertarget{classnmr_polynomial_container_a8f83a6642b01d0d3ce1df25f9e7c8fc5}{}\index{nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}!Evaluate\+Term@{Evaluate\+Term}}
+\index{Evaluate\+Term@{Evaluate\+Term}!nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}}
+\subsubsection[{Evaluate\+Term}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Term\+Info$>$ {\bf Value\+Type} {\bf nmr\+Polynomial\+Container}$<$ \+\_\+\+Term\+Info $>$\+::Evaluate\+Term (
+\begin{DoxyParamCaption}
+\item[{const {\bf Term\+Const\+Iterator\+Type} \&}]{where}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classnmr_polynomial_container_a8f83a6642b01d0d3ce1df25f9e7c8fc5}
+\hypertarget{classnmr_polynomial_container_abeea4f2120d30716e094613b8cf7ce9e}{}\index{nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}!Evaluate\+Term@{Evaluate\+Term}}
+\index{Evaluate\+Term@{Evaluate\+Term}!nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}}
+\subsubsection[{Evaluate\+Term}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Term\+Info$>$ {\bf Value\+Type} {\bf nmr\+Polynomial\+Container}$<$ \+\_\+\+Term\+Info $>$\+::Evaluate\+Term (
+\begin{DoxyParamCaption}
+\item[{const {\bf Term\+Iterator\+Type} \&}]{where}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classnmr_polynomial_container_abeea4f2120d30716e094613b8cf7ce9e}
+\hypertarget{classnmr_polynomial_container_a35718a7ac77d0753a8ea2f69a3ff0141}{}\index{nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}!Evaluate\+Term@{Evaluate\+Term}}
+\index{Evaluate\+Term@{Evaluate\+Term}!nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}}
+\subsubsection[{Evaluate\+Term}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Term\+Info$>$ {\bf Value\+Type} {\bf nmr\+Polynomial\+Container}$<$ \+\_\+\+Term\+Info $>$\+::Evaluate\+Term (
+\begin{DoxyParamCaption}
+\item[{const {\bf Term\+Const\+Iterator\+Type} \&}]{where, }
+\item[{const {\bf nmr\+Multi\+Variable\+Power\+Basis} \&}]{variables}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classnmr_polynomial_container_a35718a7ac77d0753a8ea2f69a3ff0141}
+\hypertarget{classnmr_polynomial_container_a75719fb872dc581d1829ef3ea8b2f562}{}\index{nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}!Evaluate\+Term@{Evaluate\+Term}}
+\index{Evaluate\+Term@{Evaluate\+Term}!nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}}
+\subsubsection[{Evaluate\+Term}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Term\+Info$>$ {\bf Value\+Type} {\bf nmr\+Polynomial\+Container}$<$ \+\_\+\+Term\+Info $>$\+::Evaluate\+Term (
+\begin{DoxyParamCaption}
+\item[{const {\bf Term\+Iterator\+Type} \&}]{where, }
+\item[{const {\bf nmr\+Multi\+Variable\+Power\+Basis} \&}]{variables}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classnmr_polynomial_container_a75719fb872dc581d1829ef3ea8b2f562}
+\hypertarget{classnmr_polynomial_container_a0f42d97bb5e37df22b3b940177c05823}{}\index{nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}!Fill\+All\+Terms@{Fill\+All\+Terms}}
+\index{Fill\+All\+Terms@{Fill\+All\+Terms}!nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}}
+\subsubsection[{Fill\+All\+Terms}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Term\+Info$>$ virtual void {\bf nmr\+Polynomial\+Container}$<$ \+\_\+\+Term\+Info $>$\+::Fill\+All\+Terms (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classnmr_polynomial_container_a0f42d97bb5e37df22b3b940177c05823}
+
+
+Implements \hyperlink{classnmr_polynomial_base_a9f0bc5fa29d3e7ff670162f23e9f28d3}{nmr\+Polynomial\+Base}.
+
+\hypertarget{classnmr_polynomial_container_a0e60c3316d2eb4bd648060f86277f965}{}\index{nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}!Find\+Term@{Find\+Term}}
+\index{Find\+Term@{Find\+Term}!nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}}
+\subsubsection[{Find\+Term}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Term\+Info$>$ {\bf Term\+Iterator\+Type} {\bf nmr\+Polynomial\+Container}$<$ \+\_\+\+Term\+Info $>$\+::Find\+Term (
+\begin{DoxyParamCaption}
+\item[{const {\bf nmr\+Polynomial\+Term\+Power\+Index} \&}]{target}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classnmr_polynomial_container_a0e60c3316d2eb4bd648060f86277f965}
+\hypertarget{classnmr_polynomial_container_a90f2dabc7119967f2eae12e5dc8df03d}{}\index{nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}!Find\+Term@{Find\+Term}}
+\index{Find\+Term@{Find\+Term}!nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}}
+\subsubsection[{Find\+Term}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Term\+Info$>$ {\bf Term\+Const\+Iterator\+Type} {\bf nmr\+Polynomial\+Container}$<$ \+\_\+\+Term\+Info $>$\+::Find\+Term (
+\begin{DoxyParamCaption}
+\item[{const {\bf nmr\+Polynomial\+Term\+Power\+Index} \&}]{target}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classnmr_polynomial_container_a90f2dabc7119967f2eae12e5dc8df03d}
+\hypertarget{classnmr_polynomial_container_ae7f1d8d2a7a436d50f037eca26a2d071}{}\index{nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}!First\+Term\+Iterator@{First\+Term\+Iterator}}
+\index{First\+Term\+Iterator@{First\+Term\+Iterator}!nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}}
+\subsubsection[{First\+Term\+Iterator}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Term\+Info$>$ {\bf Term\+Iterator\+Type} {\bf nmr\+Polynomial\+Container}$<$ \+\_\+\+Term\+Info $>$\+::First\+Term\+Iterator (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classnmr_polynomial_container_ae7f1d8d2a7a436d50f037eca26a2d071}
+\hypertarget{classnmr_polynomial_container_a35d115a7a1de687fbd430fc3e72d1852}{}\index{nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}!First\+Term\+Iterator@{First\+Term\+Iterator}}
+\index{First\+Term\+Iterator@{First\+Term\+Iterator}!nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}}
+\subsubsection[{First\+Term\+Iterator}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Term\+Info$>$ {\bf Term\+Const\+Iterator\+Type} {\bf nmr\+Polynomial\+Container}$<$ \+\_\+\+Term\+Info $>$\+::First\+Term\+Iterator (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classnmr_polynomial_container_a35d115a7a1de687fbd430fc3e72d1852}
+\hypertarget{classnmr_polynomial_container_ae2526acacd3b7d957524818a87619a65}{}\index{nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}!Get\+Coefficient@{Get\+Coefficient}}
+\index{Get\+Coefficient@{Get\+Coefficient}!nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}}
+\subsubsection[{Get\+Coefficient}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Term\+Info$>$ virtual {\bf Coefficient\+Type} {\bf nmr\+Polynomial\+Container}$<$ \+\_\+\+Term\+Info $>$\+::Get\+Coefficient (
+\begin{DoxyParamCaption}
+\item[{const {\bf Term\+Const\+Iterator\+Type} \&}]{where}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classnmr_polynomial_container_ae2526acacd3b7d957524818a87619a65}
+
+
+Implemented in \hyperlink{classnmr_bernstein_polynomial_aff3c634b10989a7ac81272eb06e5f5a8}{nmr\+Bernstein\+Polynomial}, and \hyperlink{classnmr_standard_polynomial_adacf2ad64351421df2364f61bbc44dd2}{nmr\+Standard\+Polynomial}.
+
+\hypertarget{classnmr_polynomial_container_ae92f218f650f44ec1c22528cc19d6790}{}\index{nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}!Get\+Coefficient@{Get\+Coefficient}}
+\index{Get\+Coefficient@{Get\+Coefficient}!nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}}
+\subsubsection[{Get\+Coefficient}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Term\+Info$>$ virtual {\bf Coefficient\+Type} {\bf nmr\+Polynomial\+Container}$<$ \+\_\+\+Term\+Info $>$\+::Get\+Coefficient (
+\begin{DoxyParamCaption}
+\item[{const {\bf Term\+Iterator\+Type} \&}]{where}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classnmr_polynomial_container_ae92f218f650f44ec1c22528cc19d6790}
+
+
+Implemented in \hyperlink{classnmr_bernstein_polynomial_a989595e97345a8dbfab7c77c637dc9fb}{nmr\+Bernstein\+Polynomial}, and \hyperlink{classnmr_standard_polynomial_a005eea5f7e6c10d15b99e347563cc507}{nmr\+Standard\+Polynomial}.
+
+\hypertarget{classnmr_polynomial_container_a1ea223fdd9f483c32fed3eb91d880cec}{}\index{nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}!Get\+Index\+Position@{Get\+Index\+Position}}
+\index{Get\+Index\+Position@{Get\+Index\+Position}!nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}}
+\subsubsection[{Get\+Index\+Position}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Term\+Info$>$ virtual {\bf Term\+Counter\+Type} {\bf nmr\+Polynomial\+Container}$<$ \+\_\+\+Term\+Info $>$\+::Get\+Index\+Position (
+\begin{DoxyParamCaption}
+\item[{const {\bf nmr\+Polynomial\+Term\+Power\+Index} \&}]{term}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classnmr_polynomial_container_a1ea223fdd9f483c32fed3eb91d880cec}
+
+
+Implements \hyperlink{classnmr_polynomial_base_abc7652cef60def42b5f327536bb483e9}{nmr\+Polynomial\+Base}.
+
+\hypertarget{classnmr_polynomial_container_a155c42ad638239ba889ca69739287e85}{}\index{nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}!Get\+Number\+Of\+Terms@{Get\+Number\+Of\+Terms}}
+\index{Get\+Number\+Of\+Terms@{Get\+Number\+Of\+Terms}!nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}}
+\subsubsection[{Get\+Number\+Of\+Terms}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Term\+Info$>$ virtual {\bf Term\+Counter\+Type} {\bf nmr\+Polynomial\+Container}$<$ \+\_\+\+Term\+Info $>$\+::Get\+Number\+Of\+Terms (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classnmr_polynomial_container_a155c42ad638239ba889ca69739287e85}
+
+
+Implements \hyperlink{classnmr_polynomial_base_a69f1c0053d6ee20693ea719d32a159ee}{nmr\+Polynomial\+Base}.
+
+\hypertarget{classnmr_polynomial_container_a9c29b5a6752e6aa94975a230e4ac6948}{}\index{nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}!Get\+Term\+Info@{Get\+Term\+Info}}
+\index{Get\+Term\+Info@{Get\+Term\+Info}!nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}}
+\subsubsection[{Get\+Term\+Info}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Term\+Info$>$ const {\bf Term\+Info\+Type}\& {\bf nmr\+Polynomial\+Container}$<$ \+\_\+\+Term\+Info $>$\+::Get\+Term\+Info (
+\begin{DoxyParamCaption}
+\item[{const {\bf Term\+Const\+Iterator\+Type} \&}]{term\+Iterator}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\label{classnmr_polynomial_container_a9c29b5a6752e6aa94975a230e4ac6948}
+\hypertarget{classnmr_polynomial_container_a0f2ab228be1631eccf5b23122308289e}{}\index{nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}!Get\+Term\+Info@{Get\+Term\+Info}}
+\index{Get\+Term\+Info@{Get\+Term\+Info}!nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}}
+\subsubsection[{Get\+Term\+Info}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Term\+Info$>$ {\bf Term\+Info\+Type}\& {\bf nmr\+Polynomial\+Container}$<$ \+\_\+\+Term\+Info $>$\+::Get\+Term\+Info (
+\begin{DoxyParamCaption}
+\item[{const {\bf Term\+Const\+Iterator\+Type} \&}]{term\+Iterator}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\label{classnmr_polynomial_container_a0f2ab228be1631eccf5b23122308289e}
+\hypertarget{classnmr_polynomial_container_aa67592164a3279435821dafeef6da287}{}\index{nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}!Get\+Term\+Iterator\+For\+Position@{Get\+Term\+Iterator\+For\+Position}}
+\index{Get\+Term\+Iterator\+For\+Position@{Get\+Term\+Iterator\+For\+Position}!nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}}
+\subsubsection[{Get\+Term\+Iterator\+For\+Position}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Term\+Info$>$ {\bf Term\+Iterator\+Type} {\bf nmr\+Polynomial\+Container}$<$ \+\_\+\+Term\+Info $>$\+::Get\+Term\+Iterator\+For\+Position (
+\begin{DoxyParamCaption}
+\item[{{\bf Term\+Counter\+Type}}]{position}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classnmr_polynomial_container_aa67592164a3279435821dafeef6da287}
+Return the iterator for a term identified by its sequential number (as in Get\+Index\+Position). \hypertarget{classnmr_polynomial_container_aa11e3c563a7f25d0754d2b558731b68f}{}\index{nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}!Get\+Term\+Power\+Index@{Get\+Term\+Power\+Index}}
+\index{Get\+Term\+Power\+Index@{Get\+Term\+Power\+Index}!nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}}
+\subsubsection[{Get\+Term\+Power\+Index}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Term\+Info$>$ const {\bf nmr\+Polynomial\+Term\+Power\+Index}\& {\bf nmr\+Polynomial\+Container}$<$ \+\_\+\+Term\+Info $>$\+::Get\+Term\+Power\+Index (
+\begin{DoxyParamCaption}
+\item[{const {\bf Term\+Const\+Iterator\+Type} \&}]{where}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classnmr_polynomial_container_aa11e3c563a7f25d0754d2b558731b68f}
+\hypertarget{classnmr_polynomial_container_a2143e3ffbe827d4ec643b9fa98da1147}{}\index{nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}!Get\+Term\+Power\+Index@{Get\+Term\+Power\+Index}}
+\index{Get\+Term\+Power\+Index@{Get\+Term\+Power\+Index}!nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}}
+\subsubsection[{Get\+Term\+Power\+Index}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Term\+Info$>$ const {\bf nmr\+Polynomial\+Term\+Power\+Index}\& {\bf nmr\+Polynomial\+Container}$<$ \+\_\+\+Term\+Info $>$\+::Get\+Term\+Power\+Index (
+\begin{DoxyParamCaption}
+\item[{const {\bf Term\+Iterator\+Type} \&}]{where}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classnmr_polynomial_container_a2143e3ffbe827d4ec643b9fa98da1147}
+\hypertarget{classnmr_polynomial_container_ad8e23eba5aab3f5cf0f153c054fe7b8a}{}\index{nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}!Includes\+Index@{Includes\+Index}}
+\index{Includes\+Index@{Includes\+Index}!nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}}
+\subsubsection[{Includes\+Index}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Term\+Info$>$ virtual bool {\bf nmr\+Polynomial\+Container}$<$ \+\_\+\+Term\+Info $>$\+::Includes\+Index (
+\begin{DoxyParamCaption}
+\item[{const {\bf nmr\+Polynomial\+Term\+Power\+Index} \&}]{target}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classnmr_polynomial_container_ad8e23eba5aab3f5cf0f153c054fe7b8a}
+
+
+Implements \hyperlink{classnmr_polynomial_base_a4530609f1461afe98e49d8899bfe216a}{nmr\+Polynomial\+Base}.
+
+\hypertarget{classnmr_polynomial_container_afec06d447808f6751b9e28b168a4ff60}{}\index{nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}!Is\+Empty@{Is\+Empty}}
+\index{Is\+Empty@{Is\+Empty}!nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}}
+\subsubsection[{Is\+Empty}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Term\+Info$>$ virtual bool {\bf nmr\+Polynomial\+Container}$<$ \+\_\+\+Term\+Info $>$\+::Is\+Empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classnmr_polynomial_container_afec06d447808f6751b9e28b168a4ff60}
+
+
+Implements \hyperlink{classnmr_polynomial_base_abd683b694cb97b6cffc95752258a65ba}{nmr\+Polynomial\+Base}.
+
+\hypertarget{classnmr_polynomial_container_a550fbc8732a929a79236887f0fdddd4c}{}\index{nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}!Remove\+Term@{Remove\+Term}}
+\index{Remove\+Term@{Remove\+Term}!nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}}
+\subsubsection[{Remove\+Term}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Term\+Info$>$ virtual void {\bf nmr\+Polynomial\+Container}$<$ \+\_\+\+Term\+Info $>$\+::Remove\+Term (
+\begin{DoxyParamCaption}
+\item[{const {\bf nmr\+Polynomial\+Term\+Power\+Index} \&}]{where}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classnmr_polynomial_container_a550fbc8732a929a79236887f0fdddd4c}
+
+
+Implements \hyperlink{classnmr_polynomial_base_ad329db0b6a9372a6f2eb093f8c2272ac}{nmr\+Polynomial\+Base}.
+
+\hypertarget{classnmr_polynomial_container_a9fc6e6c406c10d615d3cf5a97926720f}{}\index{nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}!Remove\+Term@{Remove\+Term}}
+\index{Remove\+Term@{Remove\+Term}!nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}}
+\subsubsection[{Remove\+Term}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Term\+Info$>$ virtual void {\bf nmr\+Polynomial\+Container}$<$ \+\_\+\+Term\+Info $>$\+::Remove\+Term (
+\begin{DoxyParamCaption}
+\item[{{\bf Term\+Iterator\+Type} \&}]{where}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classnmr_polynomial_container_a9fc6e6c406c10d615d3cf5a97926720f}
+
+
+Reimplemented in \hyperlink{classnmr_bernstein_polynomial_a615e825f6b2c453fa48bf50b387af9bb}{nmr\+Bernstein\+Polynomial}, and \hyperlink{classnmr_standard_polynomial_a0149f843c87d2082933b4d317f9ca69d}{nmr\+Standard\+Polynomial}.
+
+\hypertarget{classnmr_polynomial_container_a035c9c6e4b57de5106d5de512ce42cca}{}\index{nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}!Restore\+Coefficients@{Restore\+Coefficients}}
+\index{Restore\+Coefficients@{Restore\+Coefficients}!nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}}
+\subsubsection[{Restore\+Coefficients}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Term\+Info$>$ virtual void {\bf nmr\+Polynomial\+Container}$<$ \+\_\+\+Term\+Info $>$\+::Restore\+Coefficients (
+\begin{DoxyParamCaption}
+\item[{const {\bf Coefficient\+Type}}]{source\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classnmr_polynomial_container_a035c9c6e4b57de5106d5de512ce42cca}
+
+
+Implements \hyperlink{classnmr_polynomial_base_a8e788ad20bd0571154016e52c8747c07}{nmr\+Polynomial\+Base}.
+
+\hypertarget{classnmr_polynomial_container_aa6584fddf2054bc8ed4fb54a3be19aa3}{}\index{nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}!Scale@{Scale}}
+\index{Scale@{Scale}!nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}}
+\subsubsection[{Scale}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Term\+Info$>$ virtual void {\bf nmr\+Polynomial\+Container}$<$ \+\_\+\+Term\+Info $>$\+::Scale (
+\begin{DoxyParamCaption}
+\item[{{\bf Coefficient\+Type}}]{scale\+Factor}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classnmr_polynomial_container_aa6584fddf2054bc8ed4fb54a3be19aa3}
+Overloaded from \hyperlink{classnmr_polynomial_base}{nmr\+Polynomial\+Base} 
+
+Implements \hyperlink{classnmr_polynomial_base_afe01d24b59008ee6bbb93d201dc585e6}{nmr\+Polynomial\+Base}.
+
+\hypertarget{classnmr_polynomial_container_a1fb16b0f2382343c1313b5fb2c6d5e6e}{}\index{nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}!Serialize\+Raw@{Serialize\+Raw}}
+\index{Serialize\+Raw@{Serialize\+Raw}!nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}}
+\subsubsection[{Serialize\+Raw}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Term\+Info$>$ virtual void {\bf nmr\+Polynomial\+Container}$<$ \+\_\+\+Term\+Info $>$\+::Serialize\+Raw (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{output}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classnmr_polynomial_container_a1fb16b0f2382343c1313b5fb2c6d5e6e}
+\hyperlink{classnmr_polynomial_base_a3663611e1e29322a62d7224babad4286}{nmr\+Polynomial\+Base\+::\+Serialize\+Raw()} plus serialize for each term the power index in \hyperlink{classnmr_polynomial_term_power_index_ad70d8491c72c723c52d6ee09d54755b8}{nmr\+Polynomial\+Term\+Power\+Index\+::\+Serialize\+Index\+Raw()} format, and the specific term information by calling the abstract Serialize\+Term\+Info for that term. 
+
+Reimplemented from \hyperlink{classnmr_polynomial_base_a3663611e1e29322a62d7224babad4286}{nmr\+Polynomial\+Base}.
+
+\hypertarget{classnmr_polynomial_container_aa8d77ebaccb2e9849b8921cf4a7408a8}{}\index{nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}!Serialize\+Term\+Info@{Serialize\+Term\+Info}}
+\index{Serialize\+Term\+Info@{Serialize\+Term\+Info}!nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}}
+\subsubsection[{Serialize\+Term\+Info}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Term\+Info$>$ virtual void {\bf nmr\+Polynomial\+Container}$<$ \+\_\+\+Term\+Info $>$\+::Serialize\+Term\+Info (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{output, }
+\item[{const {\bf Term\+Const\+Iterator\+Type} \&}]{term\+Iterator}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classnmr_polynomial_container_aa8d77ebaccb2e9849b8921cf4a7408a8}
+Serialize the Term\+Info member associated with the power index of a term. The implementation of this function is to be specific per Term\+Info concrete type, and so it should be overridden in the derived classes. This function is called from \hyperlink{classnmr_polynomial_container_a1fb16b0f2382343c1313b5fb2c6d5e6e}{Serialize\+Raw()}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em output} & the output serializetion stream \\
+\hline
+{\em term\+Iterator} & an iterator referring to the term whose contents are being serialized. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classnmr_bernstein_polynomial_ab8846bb7223b02b87c366672d4a07a4f}{nmr\+Bernstein\+Polynomial}, \hyperlink{classnmr_standard_polynomial_a5867b0d1cba13066228b8a8862feebfa}{nmr\+Standard\+Polynomial}, and \hyperlink{classnmr_dyn_alloc_polynomial_container_a523aa33f3b5729a4cd9500fa278e56c6}{nmr\+Dyn\+Alloc\+Polynomial\+Container}.
+
+\hypertarget{classnmr_polynomial_container_a4ac9b1833ec593f10d54baaa7a2ebe81}{}\index{nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}!Set\+Coefficient@{Set\+Coefficient}}
+\index{Set\+Coefficient@{Set\+Coefficient}!nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}}
+\subsubsection[{Set\+Coefficient}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Term\+Info$>$ virtual {\bf Insert\+Status} {\bf nmr\+Polynomial\+Container}$<$ \+\_\+\+Term\+Info $>$\+::Set\+Coefficient (
+\begin{DoxyParamCaption}
+\item[{const {\bf nmr\+Polynomial\+Term\+Power\+Index} \&}]{where, }
+\item[{{\bf Coefficient\+Type}}]{coefficient}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classnmr_polynomial_container_a4ac9b1833ec593f10d54baaa7a2ebe81}
+
+
+Implements \hyperlink{classnmr_polynomial_base_ac48244b385d53d08c25fed757ca7ba6a}{nmr\+Polynomial\+Base}.
+
+
+
+Implemented in \hyperlink{classnmr_bernstein_polynomial_ada942e63869c140436d7b9706b2b5199}{nmr\+Bernstein\+Polynomial}, and \hyperlink{classnmr_standard_polynomial_a57f4a28dfc2a2a6030bbb9b82683924e}{nmr\+Standard\+Polynomial}.
+
+\hypertarget{classnmr_polynomial_container_a5b1188598da1993c8a1497a403af2b18}{}\index{nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}!Set\+Coefficient@{Set\+Coefficient}}
+\index{Set\+Coefficient@{Set\+Coefficient}!nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}}
+\subsubsection[{Set\+Coefficient}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Term\+Info$>$ virtual {\bf Insert\+Status} {\bf nmr\+Polynomial\+Container}$<$ \+\_\+\+Term\+Info $>$\+::Set\+Coefficient (
+\begin{DoxyParamCaption}
+\item[{{\bf Term\+Iterator\+Type} \&}]{where, }
+\item[{{\bf Coefficient\+Type}}]{coefficient}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classnmr_polynomial_container_a5b1188598da1993c8a1497a403af2b18}
+
+
+Implemented in \hyperlink{classnmr_bernstein_polynomial_a39bb0e94db9696628401d9e6f5e74b1e}{nmr\+Bernstein\+Polynomial}, and \hyperlink{classnmr_standard_polynomial_ad74e6eb31017644b058027d3bafa263d}{nmr\+Standard\+Polynomial}.
+
+\hypertarget{classnmr_polynomial_container_ac54f6c4d7ba690d4b103f051853a61b6}{}\index{nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}!Set\+Max\+Degree@{Set\+Max\+Degree}}
+\index{Set\+Max\+Degree@{Set\+Max\+Degree}!nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}}
+\subsubsection[{Set\+Max\+Degree}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Term\+Info$>$ virtual void {\bf nmr\+Polynomial\+Container}$<$ \+\_\+\+Term\+Info $>$\+::Set\+Max\+Degree (
+\begin{DoxyParamCaption}
+\item[{{\bf Power\+Type}}]{new\+Max}
+\end{DoxyParamCaption}
+) throw  std\+::runtime\+\_\+error) \hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classnmr_polynomial_container_ac54f6c4d7ba690d4b103f051853a61b6}
+
+
+Implements \hyperlink{classnmr_polynomial_base_ab6bd189c5aa67120857a93c6d93ff1b3}{nmr\+Polynomial\+Base}.
+
+\hypertarget{classnmr_polynomial_container_a0f2a6cb8aca5e95073051de89973ab56}{}\index{nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}!Set\+Min\+Degree@{Set\+Min\+Degree}}
+\index{Set\+Min\+Degree@{Set\+Min\+Degree}!nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}}
+\subsubsection[{Set\+Min\+Degree}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Term\+Info$>$ virtual void {\bf nmr\+Polynomial\+Container}$<$ \+\_\+\+Term\+Info $>$\+::Set\+Min\+Degree (
+\begin{DoxyParamCaption}
+\item[{{\bf Power\+Type}}]{new\+Min}
+\end{DoxyParamCaption}
+) throw  std\+::runtime\+\_\+error) \hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classnmr_polynomial_container_a0f2a6cb8aca5e95073051de89973ab56}
+
+
+Implements \hyperlink{classnmr_polynomial_base_af36d01115bacbb1d8aced67d56cae75b}{nmr\+Polynomial\+Base}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classnmr_polynomial_container_a70c5e0c98f3a13222bb51bf855e6988a}{}\index{nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}!Terms@{Terms}}
+\index{Terms@{Terms}!nmr\+Polynomial\+Container@{nmr\+Polynomial\+Container}}
+\subsubsection[{Terms}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Term\+Info$>$ {\bf Term\+Container\+Type} {\bf nmr\+Polynomial\+Container}$<$ \+\_\+\+Term\+Info $>$\+::Terms\hspace{0.3cm}{\ttfamily [protected]}}\label{classnmr_polynomial_container_a70c5e0c98f3a13222bb51bf855e6988a}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Numerical/\hyperlink{nmr_polynomial_container_8h}{nmr\+Polynomial\+Container.\+h}\end{DoxyCompactItemize}

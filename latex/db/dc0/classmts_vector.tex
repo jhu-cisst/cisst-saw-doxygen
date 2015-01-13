@@ -1,0 +1,170 @@
+\hypertarget{classmts_vector}{}\section{mts\+Vector$<$ \+\_\+element\+Type $>$ Class Template Reference}
+\label{classmts_vector}\index{mts\+Vector$<$ \+\_\+element\+Type $>$@{mts\+Vector$<$ \+\_\+element\+Type $>$}}
+
+
+{\ttfamily \#include $<$mts\+Vector.\+h$>$}
+
+Inheritance diagram for mts\+Vector$<$ \+\_\+element\+Type $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.077922cm]{db/dc0/classmts_vector}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classmts_vector}{mts\+Vector}$<$ value\+\_\+type $>$ \hyperlink{classmts_vector_a39c230cdeada331a65d94ee6790611e4}{This\+Type}
+\item 
+typedef \hyperlink{classvct_dynamic_vector}{vct\+Dynamic\+Vector}$<$ value\+\_\+type $>$ \hyperlink{classmts_vector_a49432bef14e2c0e3d4d9786d4e1093c7}{Vector\+Type}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmts_vector_a1a58641b9a6be36ef053853a4f17b2be}{V\+C\+T\+\_\+\+C\+O\+N\+T\+A\+I\+N\+E\+R\+\_\+\+T\+R\+A\+I\+T\+S\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+S} (\+\_\+element\+Type)
+\item 
+\hyperlink{classmts_vector_a87a79f0e97df96765fa393b08c23817c}{mts\+Vector} (void)
+\item 
+\hyperlink{classmts_vector_a2316fe5ddd0c535f306c115cf84fe08f}{mts\+Vector} (size\+\_\+type \hyperlink{classvct_dynamic_const_vector_base_a79950d8cced7fd4e790d9ac2ca1c43a7}{size})
+\item 
+\hyperlink{classvct_dynamic_const_vector_base_a39da273523717f678f54d3321ebca3dd}{This\+Type} \& \hyperlink{classmts_vector_a66509e4463a281ecfe252236872d2835}{operator=} (const \hyperlink{classmts_vector_a49432bef14e2c0e3d4d9786d4e1093c7}{Vector\+Type} \&data)
+\item 
+\hyperlink{classmts_vector_ac0b3eaab70c823b6c1402b2ec3941f53}{mts\+Vector} (const \hyperlink{classvct_dynamic_const_vector_base_a39da273523717f678f54d3321ebca3dd}{This\+Type} \&other\+Vector)
+\item 
+\hyperlink{classmts_vector_a3dd3d96f8241bf032dfeafd7f939fd86}{mts\+Vector} (const \hyperlink{classmts_vector_a49432bef14e2c0e3d4d9786d4e1093c7}{Vector\+Type} \&other\+Vector)
+\item 
+\hyperlink{classmts_vector_a3c2d2ded1f98025ef7e4a39b500431fc}{$\sim$mts\+Vector} ()
+\item 
+virtual std\+::string \hyperlink{classmts_vector_ae5e936e57683f889249d877790b7dd22}{To\+String} (void) const 
+\item 
+virtual void \hyperlink{classmts_vector_a38a18c371b6e20b7fd4534e42d2cfe59}{To\+Stream} (std\+::ostream \&output\+Stream) const 
+\item 
+virtual void \hyperlink{classmts_vector_a4893fa7e69f3b9307cdb96f937852151}{To\+Stream\+Raw} (std\+::ostream \&output\+Stream, const char delimiter= \textquotesingle{} \textquotesingle{}, bool header\+Only=false, const std\+::string \&header\+Prefix=\char`\"{}\char`\"{}) const 
+\item 
+void \hyperlink{classmts_vector_a4e794f0bba29de4e6f09009f167d2916}{Serialize\+Raw} (std\+::ostream \&output\+Stream) const 
+\item 
+void \hyperlink{classmts_vector_aed1e6de9cc166814be483f3bfb468724}{De\+Serialize\+Raw} (std\+::istream \&input\+Stream)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classmts_vector_a39c230cdeada331a65d94ee6790611e4}{}\index{mts\+Vector@{mts\+Vector}!This\+Type@{This\+Type}}
+\index{This\+Type@{This\+Type}!mts\+Vector@{mts\+Vector}}
+\subsubsection[{This\+Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ typedef {\bf mts\+Vector}$<$value\+\_\+type$>$ {\bf mts\+Vector}$<$ \+\_\+element\+Type $>$\+::{\bf This\+Type}}\label{classmts_vector_a39c230cdeada331a65d94ee6790611e4}
+This type. \hypertarget{classmts_vector_a49432bef14e2c0e3d4d9786d4e1093c7}{}\index{mts\+Vector@{mts\+Vector}!Vector\+Type@{Vector\+Type}}
+\index{Vector\+Type@{Vector\+Type}!mts\+Vector@{mts\+Vector}}
+\subsubsection[{Vector\+Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ typedef {\bf vct\+Dynamic\+Vector}$<$value\+\_\+type$>$ {\bf mts\+Vector}$<$ \+\_\+element\+Type $>$\+::{\bf Vector\+Type}}\label{classmts_vector_a49432bef14e2c0e3d4d9786d4e1093c7}
+Type of vector used to store the elements. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmts_vector_a87a79f0e97df96765fa393b08c23817c}{}\index{mts\+Vector@{mts\+Vector}!mts\+Vector@{mts\+Vector}}
+\index{mts\+Vector@{mts\+Vector}!mts\+Vector@{mts\+Vector}}
+\subsubsection[{mts\+Vector}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ {\bf mts\+Vector}$<$ \+\_\+element\+Type $>$\+::{\bf mts\+Vector} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_vector_a87a79f0e97df96765fa393b08c23817c}
+Default constructor. \hypertarget{classmts_vector_a2316fe5ddd0c535f306c115cf84fe08f}{}\index{mts\+Vector@{mts\+Vector}!mts\+Vector@{mts\+Vector}}
+\index{mts\+Vector@{mts\+Vector}!mts\+Vector@{mts\+Vector}}
+\subsubsection[{mts\+Vector}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ {\bf mts\+Vector}$<$ \+\_\+element\+Type $>$\+::{\bf mts\+Vector} (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+type}]{size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_vector_a2316fe5ddd0c535f306c115cf84fe08f}
+Constructor with memory allocation for a given size. Assign zero to all elements. \hypertarget{classmts_vector_ac0b3eaab70c823b6c1402b2ec3941f53}{}\index{mts\+Vector@{mts\+Vector}!mts\+Vector@{mts\+Vector}}
+\index{mts\+Vector@{mts\+Vector}!mts\+Vector@{mts\+Vector}}
+\subsubsection[{mts\+Vector}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ {\bf mts\+Vector}$<$ \+\_\+element\+Type $>$\+::{\bf mts\+Vector} (
+\begin{DoxyParamCaption}
+\item[{const {\bf This\+Type} \&}]{other\+Vector}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_vector_ac0b3eaab70c823b6c1402b2ec3941f53}
+Copy constructor. \hypertarget{classmts_vector_a3dd3d96f8241bf032dfeafd7f939fd86}{}\index{mts\+Vector@{mts\+Vector}!mts\+Vector@{mts\+Vector}}
+\index{mts\+Vector@{mts\+Vector}!mts\+Vector@{mts\+Vector}}
+\subsubsection[{mts\+Vector}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ {\bf mts\+Vector}$<$ \+\_\+element\+Type $>$\+::{\bf mts\+Vector} (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector\+Type} \&}]{other\+Vector}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_vector_a3dd3d96f8241bf032dfeafd7f939fd86}
+Pseudo copy constructor from vector type. \hypertarget{classmts_vector_a3c2d2ded1f98025ef7e4a39b500431fc}{}\index{mts\+Vector@{mts\+Vector}!````~mts\+Vector@{$\sim$mts\+Vector}}
+\index{````~mts\+Vector@{$\sim$mts\+Vector}!mts\+Vector@{mts\+Vector}}
+\subsubsection[{$\sim$mts\+Vector}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ {\bf mts\+Vector}$<$ \+\_\+element\+Type $>$\+::$\sim${\bf mts\+Vector} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_vector_a3c2d2ded1f98025ef7e4a39b500431fc}
+Default destructor, will call the destructor of the contained vector and free the memory. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classmts_vector_aed1e6de9cc166814be483f3bfb468724}{}\index{mts\+Vector@{mts\+Vector}!De\+Serialize\+Raw@{De\+Serialize\+Raw}}
+\index{De\+Serialize\+Raw@{De\+Serialize\+Raw}!mts\+Vector@{mts\+Vector}}
+\subsubsection[{De\+Serialize\+Raw}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ void {\bf mts\+Vector}$<$ \+\_\+element\+Type $>$\+::De\+Serialize\+Raw (
+\begin{DoxyParamCaption}
+\item[{std\+::istream \&}]{input\+Stream}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classmts_vector_aed1e6de9cc166814be483f3bfb468724}
+Binary deserialization 
+
+Reimplemented from \hyperlink{classmts_generic_object_af83ae8622a742a5b94bf72e53d20a1cd}{mts\+Generic\+Object}.
+
+\hypertarget{classmts_vector_a66509e4463a281ecfe252236872d2835}{}\index{mts\+Vector@{mts\+Vector}!operator=@{operator=}}
+\index{operator=@{operator=}!mts\+Vector@{mts\+Vector}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ {\bf This\+Type}\& {\bf mts\+Vector}$<$ \+\_\+element\+Type $>$\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector\+Type} \&}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_vector_a66509e4463a281ecfe252236872d2835}
+Assignment from vector base class. This operator assign the data from one vector to another, it doesn\textquotesingle{}t replace the object itself, i.\+e. it doesn\textquotesingle{}t release and allocate any new memory. \hypertarget{classmts_vector_a4e794f0bba29de4e6f09009f167d2916}{}\index{mts\+Vector@{mts\+Vector}!Serialize\+Raw@{Serialize\+Raw}}
+\index{Serialize\+Raw@{Serialize\+Raw}!mts\+Vector@{mts\+Vector}}
+\subsubsection[{Serialize\+Raw}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ void {\bf mts\+Vector}$<$ \+\_\+element\+Type $>$\+::Serialize\+Raw (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{output\+Stream}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classmts_vector_a4e794f0bba29de4e6f09009f167d2916}
+Binary serialization 
+
+Reimplemented from \hyperlink{classmts_generic_object_a33d4404a50a87243ca5a1e2b1913dd3b}{mts\+Generic\+Object}.
+
+\hypertarget{classmts_vector_a38a18c371b6e20b7fd4534e42d2cfe59}{}\index{mts\+Vector@{mts\+Vector}!To\+Stream@{To\+Stream}}
+\index{To\+Stream@{To\+Stream}!mts\+Vector@{mts\+Vector}}
+\subsubsection[{To\+Stream}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ virtual void {\bf mts\+Vector}$<$ \+\_\+element\+Type $>$\+::To\+Stream (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{output\+Stream}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classmts_vector_a38a18c371b6e20b7fd4534e42d2cfe59}
+To stream human readable output 
+
+Reimplemented from \hyperlink{classmts_generic_object_a2030aaa58bc215eccce1dc8d20dd0fdc}{mts\+Generic\+Object}.
+
+\hypertarget{classmts_vector_a4893fa7e69f3b9307cdb96f937852151}{}\index{mts\+Vector@{mts\+Vector}!To\+Stream\+Raw@{To\+Stream\+Raw}}
+\index{To\+Stream\+Raw@{To\+Stream\+Raw}!mts\+Vector@{mts\+Vector}}
+\subsubsection[{To\+Stream\+Raw}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ virtual void {\bf mts\+Vector}$<$ \+\_\+element\+Type $>$\+::To\+Stream\+Raw (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{output\+Stream, }
+\item[{const char}]{delimiter = {\ttfamily \textquotesingle{}~\textquotesingle{}}, }
+\item[{bool}]{header\+Only = {\ttfamily false}, }
+\item[{const std\+::string \&}]{header\+Prefix = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classmts_vector_a4893fa7e69f3b9307cdb96f937852151}
+To stream raw data. 
+
+Reimplemented from \hyperlink{classmts_generic_object_a4916a6c62ee5b167d7c93c88ab72523a}{mts\+Generic\+Object}.
+
+\hypertarget{classmts_vector_ae5e936e57683f889249d877790b7dd22}{}\index{mts\+Vector@{mts\+Vector}!To\+String@{To\+String}}
+\index{To\+String@{To\+String}!mts\+Vector@{mts\+Vector}}
+\subsubsection[{To\+String}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ virtual std\+::string {\bf mts\+Vector}$<$ \+\_\+element\+Type $>$\+::To\+String (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classmts_vector_ae5e936e57683f889249d877790b7dd22}
+To stream human readable output \hypertarget{classmts_vector_a1a58641b9a6be36ef053853a4f17b2be}{}\index{mts\+Vector@{mts\+Vector}!V\+C\+T\+\_\+\+C\+O\+N\+T\+A\+I\+N\+E\+R\+\_\+\+T\+R\+A\+I\+T\+S\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+S@{V\+C\+T\+\_\+\+C\+O\+N\+T\+A\+I\+N\+E\+R\+\_\+\+T\+R\+A\+I\+T\+S\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+S}}
+\index{V\+C\+T\+\_\+\+C\+O\+N\+T\+A\+I\+N\+E\+R\+\_\+\+T\+R\+A\+I\+T\+S\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+S@{V\+C\+T\+\_\+\+C\+O\+N\+T\+A\+I\+N\+E\+R\+\_\+\+T\+R\+A\+I\+T\+S\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+S}!mts\+Vector@{mts\+Vector}}
+\subsubsection[{V\+C\+T\+\_\+\+C\+O\+N\+T\+A\+I\+N\+E\+R\+\_\+\+T\+R\+A\+I\+T\+S\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+S}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ {\bf mts\+Vector}$<$ \+\_\+element\+Type $>$\+::V\+C\+T\+\_\+\+C\+O\+N\+T\+A\+I\+N\+E\+R\+\_\+\+T\+R\+A\+I\+T\+S\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+S (
+\begin{DoxyParamCaption}
+\item[{\+\_\+element\+Type}]{}
+\end{DoxyParamCaption}
+)}\label{classmts_vector_a1a58641b9a6be36ef053853a4f17b2be}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Multi\+Task/\hyperlink{mts_vector_8h}{mts\+Vector.\+h}\end{DoxyCompactItemize}

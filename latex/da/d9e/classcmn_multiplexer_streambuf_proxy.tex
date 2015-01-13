@@ -1,0 +1,157 @@
+\hypertarget{classcmn_multiplexer_streambuf_proxy}{}\section{cmn\+Multiplexer\+Streambuf\+Proxy$<$ \+\_\+element, \+\_\+trait $>$ Class Template Reference}
+\label{classcmn_multiplexer_streambuf_proxy}\index{cmn\+Multiplexer\+Streambuf\+Proxy$<$ \+\_\+element, \+\_\+trait $>$@{cmn\+Multiplexer\+Streambuf\+Proxy$<$ \+\_\+element, \+\_\+trait $>$}}
+
+
+Types for dynamic control of output messages.  
+
+
+
+
+{\ttfamily \#include $<$cmn\+Forward\+Declarations.\+h$>$}
+
+Inheritance diagram for cmn\+Multiplexer\+Streambuf\+Proxy$<$ \+\_\+element, \+\_\+trait $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{da/d9e/classcmn_multiplexer_streambuf_proxy}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classcmn_l_o_d_multiplexer_streambuf}{cmn\+L\+O\+D\+Multiplexer\+Streambuf}$<$ \+\_\+element, \+\_\+trait $>$ \hyperlink{classcmn_multiplexer_streambuf_proxy_aad26781c796870ad583a690f1d4132bb}{Channel\+Type}
+\item 
+typedef std\+::basic\+\_\+streambuf$<$ \+\_\+element, \+\_\+trait $>$\+::\hyperlink{classcmn_multiplexer_streambuf_proxy_ac600a28e3e3c860fc54ca7e7931bc6df}{int\+\_\+type} \hyperlink{classcmn_multiplexer_streambuf_proxy_ac600a28e3e3c860fc54ca7e7931bc6df}{int\+\_\+type}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcmn_multiplexer_streambuf_proxy_a19cff8cb9fe6ab6410c1beeae2a13b59}{cmn\+Multiplexer\+Streambuf\+Proxy} (\hyperlink{classcmn_multiplexer_streambuf_proxy_aad26781c796870ad583a690f1d4132bb}{Channel\+Type} $\ast$output, \hyperlink{cmn_log_lo_d_8h_a70c67165c37a0971e0dd1a85d4edaaae}{cmn\+Log\+Level} level)
+\item 
+\hyperlink{cmn_log_lo_d_8h_a70c67165c37a0971e0dd1a85d4edaaae}{cmn\+Log\+Level} \hyperlink{classcmn_multiplexer_streambuf_proxy_a50f130ccf182f35f00d59f5b91890801}{Get\+L\+O\+D} (void) const 
+\item 
+void \hyperlink{classcmn_multiplexer_streambuf_proxy_ac89fbe628f8c171f1f8871b1641045e3}{Set\+L\+O\+D} (\hyperlink{cmn_log_lo_d_8h_a70c67165c37a0971e0dd1a85d4edaaae}{cmn\+Log\+Level} level)
+\item 
+\hyperlink{classcmn_multiplexer_streambuf_proxy_aad26781c796870ad583a690f1d4132bb}{Channel\+Type} $\ast$ \hyperlink{classcmn_multiplexer_streambuf_proxy_ae7ac63ce755124ec9943925052848cd9}{Get\+Output} (void) const 
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual std\+::streamsize \hyperlink{classcmn_multiplexer_streambuf_proxy_a43ad7db2163d7cc48b55be06686d285a}{xsputn} (const \+\_\+element $\ast$s, std\+::streamsize n)
+\item 
+virtual int \hyperlink{classcmn_multiplexer_streambuf_proxy_a7e7755a46401f3d10e6c1f2100af0a4d}{sync} (void)
+\item 
+virtual \hyperlink{classcmn_multiplexer_streambuf_proxy_ac600a28e3e3c860fc54ca7e7931bc6df}{int\+\_\+type} \hyperlink{classcmn_multiplexer_streambuf_proxy_a10a4e0b433962e191fcbff9b8238ed99}{overflow} (\hyperlink{classcmn_multiplexer_streambuf_proxy_ac600a28e3e3c860fc54ca7e7931bc6df}{int\+\_\+type} c=\+\_\+trait\+::eof())
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class \+\_\+element, class \+\_\+trait$>$class cmn\+Multiplexer\+Streambuf\+Proxy$<$ \+\_\+element, \+\_\+trait $>$}
+
+Types for dynamic control of output messages. 
+
+This includes debugging information, error reporting, state logging etc. This file declares {\itshape class \hyperlink{classcmn_multiplexer_streambuf_proxy}{cmn\+Multiplexer\+Streambuf\+Proxy}}. It is a templated class derived from the standard library\textquotesingle{}s basic\+\_\+streambuf. But is stores a Level Of Detail (L\+O\+D) descriptor that applies to each message that\textquotesingle{}s output through it. The L\+O\+D descriptor is transferred to a \hyperlink{classcmn_l_o_d_multiplexer_streambuf}{cmn\+L\+O\+D\+Multiplexer\+Streambuf} object, that stores a list of L\+O\+Ded output channels, and decides which ones will be actually used. The proxy is implemented by overriding basic\+\_\+streambuf output functions \hyperlink{classcmn_multiplexer_streambuf_proxy_a43ad7db2163d7cc48b55be06686d285a}{xsputn()}, \hyperlink{classcmn_multiplexer_streambuf_proxy_a10a4e0b433962e191fcbff9b8238ed99}{overflow()} and \hyperlink{classcmn_multiplexer_streambuf_proxy_a7e7755a46401f3d10e6c1f2100af0a4d}{sync()}.
+
+Usage\+: Include the module in your application with\+: \#include $<$\hyperlink{cmn_multiplexer_streambuf_proxy_8h}{cmn\+Multiplexer\+Streambuf\+Proxy.\+h}$>$
+
+Attach a \hyperlink{classcmn_multiplexer_streambuf_proxy}{cmn\+Multiplexer\+Streambuf\+Proxy} object with an ostream. The output functions $<$$<$ , put(), write() etc will operate directly on the \hyperlink{classcmn_multiplexer_streambuf_proxy}{cmn\+Multiplexer\+Streambuf\+Proxy}.
+
+Example of using a \hyperlink{classcmn_l_o_d_output_multiplexer}{cmn\+L\+O\+D\+Output\+Multiplexer}, which is an ostream that is attached to a proxy. Assume that the object lod\+Multiplexer\+Streambuf is a \hyperlink{classcmn_l_o_d_multiplexer_streambuf}{cmn\+L\+O\+D\+Multiplexer\+Streambuf}.
+
+
+\begin{DoxyCode}
+\textcolor{comment}{// The multiple output channels}
+ofstream log(\textcolor{stringliteral}{"logfile.txt"});
+windowoutputstream display;    \textcolor{comment}{// hypothesized class}
+
+lodMultiplexerStreambuf.AddChannel(log.rdbuf(), \hyperlink{cmn_log_lo_d_8h_a941e5ff3075571f0ad1e53e1204bd856}{CMN\_LOG\_ALLOW\_DEFAULT});
+lodMultiplexerStreambuf.AddChannel(windowoutputstream.rdbuf(), 
+      \hyperlink{cmn_log_lo_d_8h_ab7e55f4e2a66d48b58961a862ba40cc2}{CMN\_LOG\_ALLOW\_ERRORS});
+
+cmnLODMultiplexer multiplexerOutput(&lodMultiplexetStreambuf, 
+      \hyperlink{cmn_log_lo_d_8h_a27e55e3638c78366331ee3c1ca3d60ef}{CMN\_LOG\_LEVEL\_INIT\_DEBUG});
+
+multiplexerStreambuf << \textcolor{stringliteral}{"Hello, world"} << endl;  \textcolor{comment}{// channel the message only to 'log'}
+\end{DoxyCode}
+
+
+Notes\+:
+\begin{DoxyEnumerate}
+\item It is assumed that none of the output channels modifies the data arguments.
+\item \hyperlink{classcmn_multiplexer_streambuf_proxy}{cmn\+Multiplexer\+Streambuf\+Proxy} does not buffer data. Instead, whenever at attempt is made to use stream\+::put() on a stream with a multiplexer streambuf, the \hyperlink{classcmn_multiplexer_streambuf_a90999d31356176b52174452e2a43c1ae}{cmn\+Multiplexer\+Streambuf\+::overflow()} is called automatically, and it forwards the character to the output channels.
+\end{DoxyEnumerate}
+
+\begin{DoxySeeAlso}{See also}
+C++ manual on basic\+\_\+ostream and basic\+\_\+streambuf. \hyperlink{cmn_output_multiplexer_8h}{cmn\+Output\+Multiplexer.\+h} and \hyperlink{cmn_l_o_d_multiplexer_streambuf_8h}{cmn\+L\+O\+D\+Multiplexer\+Streambuf.\+h} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classcmn_multiplexer_streambuf_proxy_aad26781c796870ad583a690f1d4132bb}{}\index{cmn\+Multiplexer\+Streambuf\+Proxy@{cmn\+Multiplexer\+Streambuf\+Proxy}!Channel\+Type@{Channel\+Type}}
+\index{Channel\+Type@{Channel\+Type}!cmn\+Multiplexer\+Streambuf\+Proxy@{cmn\+Multiplexer\+Streambuf\+Proxy}}
+\subsubsection[{Channel\+Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element, class \+\_\+trait$>$ typedef {\bf cmn\+L\+O\+D\+Multiplexer\+Streambuf}$<$\+\_\+element, \+\_\+trait$>$ {\bf cmn\+Multiplexer\+Streambuf\+Proxy}$<$ \+\_\+element, \+\_\+trait $>$\+::{\bf Channel\+Type}}\label{classcmn_multiplexer_streambuf_proxy_aad26781c796870ad583a690f1d4132bb}
+\hypertarget{classcmn_multiplexer_streambuf_proxy_ac600a28e3e3c860fc54ca7e7931bc6df}{}\index{cmn\+Multiplexer\+Streambuf\+Proxy@{cmn\+Multiplexer\+Streambuf\+Proxy}!int\+\_\+type@{int\+\_\+type}}
+\index{int\+\_\+type@{int\+\_\+type}!cmn\+Multiplexer\+Streambuf\+Proxy@{cmn\+Multiplexer\+Streambuf\+Proxy}}
+\subsubsection[{int\+\_\+type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element, class \+\_\+trait$>$ typedef std\+::basic\+\_\+streambuf$<$\+\_\+element, \+\_\+trait$>$\+::{\bf int\+\_\+type} {\bf cmn\+Multiplexer\+Streambuf\+Proxy}$<$ \+\_\+element, \+\_\+trait $>$\+::{\bf int\+\_\+type}}\label{classcmn_multiplexer_streambuf_proxy_ac600a28e3e3c860fc54ca7e7931bc6df}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcmn_multiplexer_streambuf_proxy_a19cff8cb9fe6ab6410c1beeae2a13b59}{}\index{cmn\+Multiplexer\+Streambuf\+Proxy@{cmn\+Multiplexer\+Streambuf\+Proxy}!cmn\+Multiplexer\+Streambuf\+Proxy@{cmn\+Multiplexer\+Streambuf\+Proxy}}
+\index{cmn\+Multiplexer\+Streambuf\+Proxy@{cmn\+Multiplexer\+Streambuf\+Proxy}!cmn\+Multiplexer\+Streambuf\+Proxy@{cmn\+Multiplexer\+Streambuf\+Proxy}}
+\subsubsection[{cmn\+Multiplexer\+Streambuf\+Proxy}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element, class \+\_\+trait$>$ {\bf cmn\+Multiplexer\+Streambuf\+Proxy}$<$ \+\_\+element, \+\_\+trait $>$\+::{\bf cmn\+Multiplexer\+Streambuf\+Proxy} (
+\begin{DoxyParamCaption}
+\item[{{\bf Channel\+Type} $\ast$}]{output, }
+\item[{{\bf cmn\+Log\+Level}}]{level}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classcmn_multiplexer_streambuf_proxy_a19cff8cb9fe6ab6410c1beeae2a13b59}
+Constructor\+: initialize the true output multiplexer and the current L\+O\+D. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classcmn_multiplexer_streambuf_proxy_a50f130ccf182f35f00d59f5b91890801}{}\index{cmn\+Multiplexer\+Streambuf\+Proxy@{cmn\+Multiplexer\+Streambuf\+Proxy}!Get\+L\+O\+D@{Get\+L\+O\+D}}
+\index{Get\+L\+O\+D@{Get\+L\+O\+D}!cmn\+Multiplexer\+Streambuf\+Proxy@{cmn\+Multiplexer\+Streambuf\+Proxy}}
+\subsubsection[{Get\+L\+O\+D}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element, class \+\_\+trait$>$ {\bf cmn\+Log\+Level} {\bf cmn\+Multiplexer\+Streambuf\+Proxy}$<$ \+\_\+element, \+\_\+trait $>$\+::Get\+L\+O\+D (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classcmn_multiplexer_streambuf_proxy_a50f130ccf182f35f00d59f5b91890801}
+Returns the Level of Detail. \hypertarget{classcmn_multiplexer_streambuf_proxy_ae7ac63ce755124ec9943925052848cd9}{}\index{cmn\+Multiplexer\+Streambuf\+Proxy@{cmn\+Multiplexer\+Streambuf\+Proxy}!Get\+Output@{Get\+Output}}
+\index{Get\+Output@{Get\+Output}!cmn\+Multiplexer\+Streambuf\+Proxy@{cmn\+Multiplexer\+Streambuf\+Proxy}}
+\subsubsection[{Get\+Output}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element, class \+\_\+trait$>$ {\bf Channel\+Type}$\ast$ {\bf cmn\+Multiplexer\+Streambuf\+Proxy}$<$ \+\_\+element, \+\_\+trait $>$\+::Get\+Output (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classcmn_multiplexer_streambuf_proxy_ae7ac63ce755124ec9943925052848cd9}
+Returns a pointer to the output multiplexer. \hypertarget{classcmn_multiplexer_streambuf_proxy_a10a4e0b433962e191fcbff9b8238ed99}{}\index{cmn\+Multiplexer\+Streambuf\+Proxy@{cmn\+Multiplexer\+Streambuf\+Proxy}!overflow@{overflow}}
+\index{overflow@{overflow}!cmn\+Multiplexer\+Streambuf\+Proxy@{cmn\+Multiplexer\+Streambuf\+Proxy}}
+\subsubsection[{overflow}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element , class \+\_\+trait $>$ {\bf cmn\+Multiplexer\+Streambuf\+Proxy}$<$ \+\_\+element, \+\_\+trait $>$\+::{\bf int\+\_\+type} {\bf cmn\+Multiplexer\+Streambuf\+Proxy}$<$ \+\_\+element, \+\_\+trait $>$\+::overflow (
+\begin{DoxyParamCaption}
+\item[{{\bf int\+\_\+type}}]{c = {\ttfamily \+\_\+trait\+:\+:eof()}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classcmn_multiplexer_streambuf_proxy_a10a4e0b433962e191fcbff9b8238ed99}
+Override the basic\+\_\+streambuf overflow for multiplexing. \hyperlink{classcmn_multiplexer_streambuf_proxy_a10a4e0b433962e191fcbff9b8238ed99}{overflow()} is called when sputc() discovers it does not have space in the storage buffer. In our case, it\textquotesingle{}s always. See more on it in the basic\+\_\+streambuf documentation. \hypertarget{classcmn_multiplexer_streambuf_proxy_ac89fbe628f8c171f1f8871b1641045e3}{}\index{cmn\+Multiplexer\+Streambuf\+Proxy@{cmn\+Multiplexer\+Streambuf\+Proxy}!Set\+L\+O\+D@{Set\+L\+O\+D}}
+\index{Set\+L\+O\+D@{Set\+L\+O\+D}!cmn\+Multiplexer\+Streambuf\+Proxy@{cmn\+Multiplexer\+Streambuf\+Proxy}}
+\subsubsection[{Set\+L\+O\+D}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element, class \+\_\+trait$>$ void {\bf cmn\+Multiplexer\+Streambuf\+Proxy}$<$ \+\_\+element, \+\_\+trait $>$\+::Set\+L\+O\+D (
+\begin{DoxyParamCaption}
+\item[{{\bf cmn\+Log\+Level}}]{level}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classcmn_multiplexer_streambuf_proxy_ac89fbe628f8c171f1f8871b1641045e3}
+Sets the Level of Detail. \hypertarget{classcmn_multiplexer_streambuf_proxy_a7e7755a46401f3d10e6c1f2100af0a4d}{}\index{cmn\+Multiplexer\+Streambuf\+Proxy@{cmn\+Multiplexer\+Streambuf\+Proxy}!sync@{sync}}
+\index{sync@{sync}!cmn\+Multiplexer\+Streambuf\+Proxy@{cmn\+Multiplexer\+Streambuf\+Proxy}}
+\subsubsection[{sync}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element , class \+\_\+trait $>$ int {\bf cmn\+Multiplexer\+Streambuf\+Proxy}$<$ \+\_\+element, \+\_\+trait $>$\+::sync (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classcmn_multiplexer_streambuf_proxy_a7e7755a46401f3d10e6c1f2100af0a4d}
+Override the basic\+\_\+streambuf sync for multiplexing. \hypertarget{classcmn_multiplexer_streambuf_proxy_a43ad7db2163d7cc48b55be06686d285a}{}\index{cmn\+Multiplexer\+Streambuf\+Proxy@{cmn\+Multiplexer\+Streambuf\+Proxy}!xsputn@{xsputn}}
+\index{xsputn@{xsputn}!cmn\+Multiplexer\+Streambuf\+Proxy@{cmn\+Multiplexer\+Streambuf\+Proxy}}
+\subsubsection[{xsputn}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element, class \+\_\+trait $>$ std\+::streamsize {\bf cmn\+Multiplexer\+Streambuf\+Proxy}$<$ \+\_\+element, \+\_\+trait $>$\+::xsputn (
+\begin{DoxyParamCaption}
+\item[{const \+\_\+element $\ast$}]{s, }
+\item[{std\+::streamsize}]{n}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classcmn_multiplexer_streambuf_proxy_a43ad7db2163d7cc48b55be06686d285a}
+Override the basic\+\_\+streambuf xsputn to do the multiplexing. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Common/\hyperlink{cmn_forward_declarations_8h}{cmn\+Forward\+Declarations.\+h}\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Common/\hyperlink{cmn_multiplexer_streambuf_proxy_8h}{cmn\+Multiplexer\+Streambuf\+Proxy.\+h}\end{DoxyCompactItemize}

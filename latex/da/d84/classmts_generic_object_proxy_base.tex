@@ -1,0 +1,227 @@
+\hypertarget{classmts_generic_object_proxy_base}{}\section{mts\+Generic\+Object\+Proxy\+Base$<$ \+\_\+element\+Type $>$ Class Template Reference}
+\label{classmts_generic_object_proxy_base}\index{mts\+Generic\+Object\+Proxy\+Base$<$ \+\_\+element\+Type $>$@{mts\+Generic\+Object\+Proxy\+Base$<$ \+\_\+element\+Type $>$}}
+
+
+{\ttfamily \#include $<$mts\+Generic\+Object\+Proxy.\+h$>$}
+
+Inheritance diagram for mts\+Generic\+Object\+Proxy\+Base$<$ \+\_\+element\+Type $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.957597cm]{da/d84/classmts_generic_object_proxy_base}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \hyperlink{classmts_generic_object_proxy_base_a589316b94c0f5d9e8b805ebac8380372acdf8d979b924886946ce75d2d6b49acf}{H\+A\+S\+\_\+\+D\+Y\+N\+A\+M\+I\+C\+\_\+\+C\+R\+E\+A\+T\+I\+O\+N} = true
+ \}
+\item 
+enum \{ \hyperlink{classmts_generic_object_proxy_base_a588c759e4b343c4c1993c15dc384e020a65ac8d6bdefc9e15df73a3fde47083dd}{Initial\+Lo\+D} = C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+A\+L\+L\+O\+W\+\_\+\+D\+E\+F\+A\+U\+L\+T
+ \}
+\item 
+typedef \hyperlink{classmts_generic_object_proxy_base}{mts\+Generic\+Object\+Proxy\+Base}$<$ \+\_\+element\+Type $>$ \hyperlink{classmts_generic_object_proxy_base_adfa837044848485e7241e56816a74083}{This\+Type}
+\item 
+typedef \hyperlink{classmts_generic_object}{mts\+Generic\+Object} \hyperlink{classmts_generic_object_proxy_base_a61a6c330998d8ba0923ff57f0a30b81e}{Base\+Type}
+\item 
+typedef \hyperlink{classmts_generic_object_proxy}{mts\+Generic\+Object\+Proxy}$<$ \+\_\+element\+Type $>$ \hyperlink{classmts_generic_object_proxy_base_ac87827bf98fee558160a8985c41f4126}{De\+Ref\+Type}
+\item 
+typedef \hyperlink{classmts_generic_object_proxy_ref}{mts\+Generic\+Object\+Proxy\+Ref}$<$ \+\_\+element\+Type $>$ \hyperlink{classmts_generic_object_proxy_base_adddd01c8aea004bf5f0a5894438970c9}{Ref\+Type}
+\item 
+typedef \+\_\+element\+Type \hyperlink{classmts_generic_object_proxy_base_a82246d737da0e0bfb1710f63f6afa34b}{value\+\_\+type}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual const \hyperlink{classcmn_class_services_base}{cmn\+Class\+Services\+Base} $\ast$ \hyperlink{classmts_generic_object_proxy_base_a668f4395140c372201eb656664d4bfc3}{Services} (void) const 
+\item 
+\hyperlink{classmts_generic_object_proxy_base_aa831f498493fffb7f885a0ab0f2241dd}{mts\+Generic\+Object\+Proxy\+Base} (void)
+\item 
+\hyperlink{classmts_generic_object_proxy_base_aca3fa6198627eec09b0658a2e4d3a8a3}{mts\+Generic\+Object\+Proxy\+Base} (const \hyperlink{classmts_generic_object_proxy_base_adfa837044848485e7241e56816a74083}{This\+Type} \&other)
+\item 
+\hyperlink{classmts_generic_object_proxy_base_af159cf4b9332116312b0021396a8bf7f}{$\sim$mts\+Generic\+Object\+Proxy\+Base} (void)
+\item 
+virtual \hyperlink{classmts_generic_object_proxy_base_a82246d737da0e0bfb1710f63f6afa34b}{value\+\_\+type} \& \hyperlink{classmts_generic_object_proxy_base_a9d51847ed0c04af750b39c0d90945747}{Get\+Data} (void)=0
+\item 
+virtual const \hyperlink{classmts_generic_object_proxy_base_a82246d737da0e0bfb1710f63f6afa34b}{value\+\_\+type} \& \hyperlink{classmts_generic_object_proxy_base_a85594c5fb042f7b0432667893e745aa7}{Get\+Data} (void) const =0
+\item 
+\hyperlink{classmts_generic_object_proxy_base_adfa837044848485e7241e56816a74083}{This\+Type} \& \hyperlink{classmts_generic_object_proxy_base_a195e1cff25b666f995ca1e65df92b93e}{operator=} (const \hyperlink{classmts_generic_object_proxy_base_adfa837044848485e7241e56816a74083}{This\+Type} \&data)
+\item 
+virtual void \hyperlink{classmts_generic_object_proxy_base_a3bcbb45ef582c5bed7206d8752fa7a4a}{Assign} (const \hyperlink{classmts_generic_object_proxy_base_adfa837044848485e7241e56816a74083}{This\+Type} \&other)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classcmn_class_services_base}{cmn\+Class\+Services\+Base} $\ast$ \hyperlink{classmts_generic_object_proxy_base_a111e3d881829cbc1d2efc5feaf894aae}{Class\+Services} (void)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class \+\_\+element\+Type$>$class mts\+Generic\+Object\+Proxy\+Base$<$ \+\_\+element\+Type $>$}
+
+Proxy class used to create a simple \hyperlink{classmts_generic_object}{mts\+Generic\+Object}, i.\+e. data object with a registered type, dynamic creation, serialization and de-\/serialization. Note that there are really three classes defined here\+: \hyperlink{classmts_generic_object_proxy_base}{mts\+Generic\+Object\+Proxy\+Base}, \hyperlink{classmts_generic_object_proxy}{mts\+Generic\+Object\+Proxy}, and \hyperlink{classmts_generic_object_proxy_ref}{mts\+Generic\+Object\+Proxy\+Ref} (henceforth called Proxy\+Base, Proxy, and Proxy\+Ref for brevity). Proxy\+Base provides a common base class. Proxy contains one data member of the actual type provided as the template parameter. Proxy\+Ref contains a pointer to a data member of the actual type provided as the template parameter.
+
+Proxy\+Ref is used internally by the library to enable arbitrary data types T (not just ones derived from \hyperlink{classmts_generic_object}{mts\+Generic\+Object}) to be added to the State Table. In this case, the State\+Vector (State Table history) will be an array of Proxy$<$\+T$>$ and the State\+Vector\+Elements (pointers to working copy) will be of type Proxy\+Ref$<$\+T$>$.
+
+To create an \hyperlink{classmts_generic_object}{mts\+Generic\+Object} from an existing type, one would have to specialize \hyperlink{classmts_generic_object_proxy}{mts\+Generic\+Object\+Proxy} as follows in the header file (it is not necessary to worry about the Proxy\+Base or Proxy\+Ref -- these are handled automatically)\+: 
+\begin{DoxyCode}
+\textcolor{keyword}{class }UserType \{
+    ....
+\};
+
+\textcolor{keyword}{typedef} \hyperlink{classmts_generic_object_proxy}{mtsGenericObjectProxy<UserType>} UserTypeProxy;
+\hyperlink{cmn_class_register_macros_8h_a198d81818e0b66ebe53e692dc7c5d058}{CMN\_DECLARE\_SERVICES\_INSTANTIATION}(UserTypeProxy);
+\end{DoxyCode}
+
+
+It is also required to instantiate the associated services in the compiled code (.cpp) file with\+: 
+\begin{DoxyCode}
+\hyperlink{cmn_class_register_macros_8h_a6d3e8cb412f66ff7e73f3ab52290f471}{CMN\_IMPLEMENT\_SERVICES\_TEMPLATED}(UserTypeProxy);
+\end{DoxyCode}
+
+
+\begin{DoxyNote}{Note}
+It is really important to note that this simple way of creating \hyperlink{classmts_generic_object}{mts\+Generic\+Object} derived classes works as is for classes which can be serialized as a memory block, i.\+e. native types, compact structs, ... For classes which require a more complex way to serialize and deserialize, the user will also have to overload the functions cmn\+Serialize\+Raw and cmn\+De\+Serialize\+Raw.
+
+As it is, this class cannot be used in libraries other than cisst\+Common if a D\+L\+L is to be created. The issue is that the class will be declared as imported in the header file because it is part of cisst\+Common. (P\+K\+: O\+B\+S\+O\+L\+E\+T\+E C\+O\+M\+M\+E\+N\+T?)
+
+There are some \char`\"{}dirty tricks\char`\"{} in this class now, so that we can have a Proxy class and a Proxy\+Ref class, and enable assignments between them. This provides a bit of polymorphic behavior for the command objects, because the Execute method can be parameterized as a Proxy\+Base object, and thus can be called with either a Proxy or Proxy\+Ref object. This is used for \char`\"{}read from state\char`\"{} commands. One particularly dirty trick is that the class services are actually defined in the Proxy class, but are \char`\"{}stolen\char`\"{} by the Proxy\+Ref class, via the Proxy\+Base class.
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classmts_generic_object}{mts\+Generic\+Object}, \hyperlink{classcmn_class_services}{cmn\+Class\+Services}, \hyperlink{classcmn_serializer}{cmn\+Serializer}, \hyperlink{classcmn_de_serializer}{cmn\+De\+Serializer}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+element\+Type} & The actual type for which we want to provide a proxy object. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classmts_generic_object_proxy_base_a61a6c330998d8ba0923ff57f0a30b81e}{}\index{mts\+Generic\+Object\+Proxy\+Base@{mts\+Generic\+Object\+Proxy\+Base}!Base\+Type@{Base\+Type}}
+\index{Base\+Type@{Base\+Type}!mts\+Generic\+Object\+Proxy\+Base@{mts\+Generic\+Object\+Proxy\+Base}}
+\subsubsection[{Base\+Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ typedef {\bf mts\+Generic\+Object} {\bf mts\+Generic\+Object\+Proxy\+Base}$<$ \+\_\+element\+Type $>$\+::{\bf Base\+Type}}\label{classmts_generic_object_proxy_base_a61a6c330998d8ba0923ff57f0a30b81e}
+\hypertarget{classmts_generic_object_proxy_base_ac87827bf98fee558160a8985c41f4126}{}\index{mts\+Generic\+Object\+Proxy\+Base@{mts\+Generic\+Object\+Proxy\+Base}!De\+Ref\+Type@{De\+Ref\+Type}}
+\index{De\+Ref\+Type@{De\+Ref\+Type}!mts\+Generic\+Object\+Proxy\+Base@{mts\+Generic\+Object\+Proxy\+Base}}
+\subsubsection[{De\+Ref\+Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ typedef {\bf mts\+Generic\+Object\+Proxy}$<$\+\_\+element\+Type$>$ {\bf mts\+Generic\+Object\+Proxy\+Base}$<$ \+\_\+element\+Type $>$\+::{\bf De\+Ref\+Type}}\label{classmts_generic_object_proxy_base_ac87827bf98fee558160a8985c41f4126}
+\hypertarget{classmts_generic_object_proxy_base_adddd01c8aea004bf5f0a5894438970c9}{}\index{mts\+Generic\+Object\+Proxy\+Base@{mts\+Generic\+Object\+Proxy\+Base}!Ref\+Type@{Ref\+Type}}
+\index{Ref\+Type@{Ref\+Type}!mts\+Generic\+Object\+Proxy\+Base@{mts\+Generic\+Object\+Proxy\+Base}}
+\subsubsection[{Ref\+Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ typedef {\bf mts\+Generic\+Object\+Proxy\+Ref}$<$\+\_\+element\+Type$>$ {\bf mts\+Generic\+Object\+Proxy\+Base}$<$ \+\_\+element\+Type $>$\+::{\bf Ref\+Type}}\label{classmts_generic_object_proxy_base_adddd01c8aea004bf5f0a5894438970c9}
+\hypertarget{classmts_generic_object_proxy_base_adfa837044848485e7241e56816a74083}{}\index{mts\+Generic\+Object\+Proxy\+Base@{mts\+Generic\+Object\+Proxy\+Base}!This\+Type@{This\+Type}}
+\index{This\+Type@{This\+Type}!mts\+Generic\+Object\+Proxy\+Base@{mts\+Generic\+Object\+Proxy\+Base}}
+\subsubsection[{This\+Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ typedef {\bf mts\+Generic\+Object\+Proxy\+Base}$<$\+\_\+element\+Type$>$ {\bf mts\+Generic\+Object\+Proxy\+Base}$<$ \+\_\+element\+Type $>$\+::{\bf This\+Type}}\label{classmts_generic_object_proxy_base_adfa837044848485e7241e56816a74083}
+\hypertarget{classmts_generic_object_proxy_base_a82246d737da0e0bfb1710f63f6afa34b}{}\index{mts\+Generic\+Object\+Proxy\+Base@{mts\+Generic\+Object\+Proxy\+Base}!value\+\_\+type@{value\+\_\+type}}
+\index{value\+\_\+type@{value\+\_\+type}!mts\+Generic\+Object\+Proxy\+Base@{mts\+Generic\+Object\+Proxy\+Base}}
+\subsubsection[{value\+\_\+type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ typedef \+\_\+element\+Type {\bf mts\+Generic\+Object\+Proxy\+Base}$<$ \+\_\+element\+Type $>$\+::{\bf value\+\_\+type}}\label{classmts_generic_object_proxy_base_a82246d737da0e0bfb1710f63f6afa34b}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classmts_generic_object_proxy_base_a589316b94c0f5d9e8b805ebac8380372}{}\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ anonymous enum}\label{classmts_generic_object_proxy_base_a589316b94c0f5d9e8b805ebac8380372}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{H\+A\+S\+\_\+\+D\+Y\+N\+A\+M\+I\+C\+\_\+\+C\+R\+E\+A\+T\+I\+O\+N@{H\+A\+S\+\_\+\+D\+Y\+N\+A\+M\+I\+C\+\_\+\+C\+R\+E\+A\+T\+I\+O\+N}!mts\+Generic\+Object\+Proxy\+Base@{mts\+Generic\+Object\+Proxy\+Base}}\index{mts\+Generic\+Object\+Proxy\+Base@{mts\+Generic\+Object\+Proxy\+Base}!H\+A\+S\+\_\+\+D\+Y\+N\+A\+M\+I\+C\+\_\+\+C\+R\+E\+A\+T\+I\+O\+N@{H\+A\+S\+\_\+\+D\+Y\+N\+A\+M\+I\+C\+\_\+\+C\+R\+E\+A\+T\+I\+O\+N}}\item[{\em 
+\hypertarget{classmts_generic_object_proxy_base_a589316b94c0f5d9e8b805ebac8380372acdf8d979b924886946ce75d2d6b49acf}{}H\+A\+S\+\_\+\+D\+Y\+N\+A\+M\+I\+C\+\_\+\+C\+R\+E\+A\+T\+I\+O\+N\label{classmts_generic_object_proxy_base_a589316b94c0f5d9e8b805ebac8380372acdf8d979b924886946ce75d2d6b49acf}
+}]\end{description}
+\end{Desc}
+\hypertarget{classmts_generic_object_proxy_base_a588c759e4b343c4c1993c15dc384e020}{}\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ anonymous enum}\label{classmts_generic_object_proxy_base_a588c759e4b343c4c1993c15dc384e020}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Initial\+Lo\+D@{Initial\+Lo\+D}!mts\+Generic\+Object\+Proxy\+Base@{mts\+Generic\+Object\+Proxy\+Base}}\index{mts\+Generic\+Object\+Proxy\+Base@{mts\+Generic\+Object\+Proxy\+Base}!Initial\+Lo\+D@{Initial\+Lo\+D}}\item[{\em 
+\hypertarget{classmts_generic_object_proxy_base_a588c759e4b343c4c1993c15dc384e020a65ac8d6bdefc9e15df73a3fde47083dd}{}Initial\+Lo\+D\label{classmts_generic_object_proxy_base_a588c759e4b343c4c1993c15dc384e020a65ac8d6bdefc9e15df73a3fde47083dd}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmts_generic_object_proxy_base_aa831f498493fffb7f885a0ab0f2241dd}{}\index{mts\+Generic\+Object\+Proxy\+Base@{mts\+Generic\+Object\+Proxy\+Base}!mts\+Generic\+Object\+Proxy\+Base@{mts\+Generic\+Object\+Proxy\+Base}}
+\index{mts\+Generic\+Object\+Proxy\+Base@{mts\+Generic\+Object\+Proxy\+Base}!mts\+Generic\+Object\+Proxy\+Base@{mts\+Generic\+Object\+Proxy\+Base}}
+\subsubsection[{mts\+Generic\+Object\+Proxy\+Base}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ {\bf mts\+Generic\+Object\+Proxy\+Base}$<$ \+\_\+element\+Type $>$\+::{\bf mts\+Generic\+Object\+Proxy\+Base} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_generic_object_proxy_base_aa831f498493fffb7f885a0ab0f2241dd}
+Default constructor. The data member is initialized using its default constructor. \hypertarget{classmts_generic_object_proxy_base_aca3fa6198627eec09b0658a2e4d3a8a3}{}\index{mts\+Generic\+Object\+Proxy\+Base@{mts\+Generic\+Object\+Proxy\+Base}!mts\+Generic\+Object\+Proxy\+Base@{mts\+Generic\+Object\+Proxy\+Base}}
+\index{mts\+Generic\+Object\+Proxy\+Base@{mts\+Generic\+Object\+Proxy\+Base}!mts\+Generic\+Object\+Proxy\+Base@{mts\+Generic\+Object\+Proxy\+Base}}
+\subsubsection[{mts\+Generic\+Object\+Proxy\+Base}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ {\bf mts\+Generic\+Object\+Proxy\+Base}$<$ \+\_\+element\+Type $>$\+::{\bf mts\+Generic\+Object\+Proxy\+Base} (
+\begin{DoxyParamCaption}
+\item[{const {\bf This\+Type} \&}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_generic_object_proxy_base_aca3fa6198627eec09b0658a2e4d3a8a3}
+Copy constructor. \hypertarget{classmts_generic_object_proxy_base_af159cf4b9332116312b0021396a8bf7f}{}\index{mts\+Generic\+Object\+Proxy\+Base@{mts\+Generic\+Object\+Proxy\+Base}!````~mts\+Generic\+Object\+Proxy\+Base@{$\sim$mts\+Generic\+Object\+Proxy\+Base}}
+\index{````~mts\+Generic\+Object\+Proxy\+Base@{$\sim$mts\+Generic\+Object\+Proxy\+Base}!mts\+Generic\+Object\+Proxy\+Base@{mts\+Generic\+Object\+Proxy\+Base}}
+\subsubsection[{$\sim$mts\+Generic\+Object\+Proxy\+Base}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ {\bf mts\+Generic\+Object\+Proxy\+Base}$<$ \+\_\+element\+Type $>$\+::$\sim${\bf mts\+Generic\+Object\+Proxy\+Base} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_generic_object_proxy_base_af159cf4b9332116312b0021396a8bf7f}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classmts_generic_object_proxy_base_a3bcbb45ef582c5bed7206d8752fa7a4a}{}\index{mts\+Generic\+Object\+Proxy\+Base@{mts\+Generic\+Object\+Proxy\+Base}!Assign@{Assign}}
+\index{Assign@{Assign}!mts\+Generic\+Object\+Proxy\+Base@{mts\+Generic\+Object\+Proxy\+Base}}
+\subsubsection[{Assign}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ virtual void {\bf mts\+Generic\+Object\+Proxy\+Base}$<$ \+\_\+element\+Type $>$\+::Assign (
+\begin{DoxyParamCaption}
+\item[{const {\bf This\+Type} \&}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classmts_generic_object_proxy_base_a3bcbb45ef582c5bed7206d8752fa7a4a}
+\hypertarget{classmts_generic_object_proxy_base_a111e3d881829cbc1d2efc5feaf894aae}{}\index{mts\+Generic\+Object\+Proxy\+Base@{mts\+Generic\+Object\+Proxy\+Base}!Class\+Services@{Class\+Services}}
+\index{Class\+Services@{Class\+Services}!mts\+Generic\+Object\+Proxy\+Base@{mts\+Generic\+Object\+Proxy\+Base}}
+\subsubsection[{Class\+Services}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ static {\bf cmn\+Class\+Services\+Base}$\ast$ {\bf mts\+Generic\+Object\+Proxy\+Base}$<$ \+\_\+element\+Type $>$\+::Class\+Services (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classmts_generic_object_proxy_base_a111e3d881829cbc1d2efc5feaf894aae}
+\hypertarget{classmts_generic_object_proxy_base_a9d51847ed0c04af750b39c0d90945747}{}\index{mts\+Generic\+Object\+Proxy\+Base@{mts\+Generic\+Object\+Proxy\+Base}!Get\+Data@{Get\+Data}}
+\index{Get\+Data@{Get\+Data}!mts\+Generic\+Object\+Proxy\+Base@{mts\+Generic\+Object\+Proxy\+Base}}
+\subsubsection[{Get\+Data}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ virtual {\bf value\+\_\+type}\& {\bf mts\+Generic\+Object\+Proxy\+Base}$<$ \+\_\+element\+Type $>$\+::Get\+Data (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classmts_generic_object_proxy_base_a9d51847ed0c04af750b39c0d90945747}
+Return pointer to data 
+
+Implemented in \hyperlink{classmts_generic_object_proxy_ref_af067553e3178323f5327ad552698135f}{mts\+Generic\+Object\+Proxy\+Ref$<$ \+\_\+element\+Type $>$}, \hyperlink{classmts_generic_object_proxy_ab55dbcddbcd3b9db0e8e4326b63a8cf1}{mts\+Generic\+Object\+Proxy$<$ \+\_\+element\+Type $>$}, \hyperlink{classmts_generic_object_proxy_ab55dbcddbcd3b9db0e8e4326b63a8cf1}{mts\+Generic\+Object\+Proxy$<$ double $>$}, \hyperlink{classmts_generic_object_proxy_ab55dbcddbcd3b9db0e8e4326b63a8cf1}{mts\+Generic\+Object\+Proxy$<$ std\+::string $>$}, \hyperlink{classmts_generic_object_proxy_ab55dbcddbcd3b9db0e8e4326b63a8cf1}{mts\+Generic\+Object\+Proxy$<$ float $>$}, \hyperlink{classmts_generic_object_proxy_ab55dbcddbcd3b9db0e8e4326b63a8cf1}{mts\+Generic\+Object\+Proxy$<$ int $>$}, and \hyperlink{classmts_generic_object_proxy_ab55dbcddbcd3b9db0e8e4326b63a8cf1}{mts\+Generic\+Object\+Proxy$<$ bool $>$}.
+
+\hypertarget{classmts_generic_object_proxy_base_a85594c5fb042f7b0432667893e745aa7}{}\index{mts\+Generic\+Object\+Proxy\+Base@{mts\+Generic\+Object\+Proxy\+Base}!Get\+Data@{Get\+Data}}
+\index{Get\+Data@{Get\+Data}!mts\+Generic\+Object\+Proxy\+Base@{mts\+Generic\+Object\+Proxy\+Base}}
+\subsubsection[{Get\+Data}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ virtual const {\bf value\+\_\+type}\& {\bf mts\+Generic\+Object\+Proxy\+Base}$<$ \+\_\+element\+Type $>$\+::Get\+Data (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classmts_generic_object_proxy_base_a85594c5fb042f7b0432667893e745aa7}
+
+
+Implemented in \hyperlink{classmts_generic_object_proxy_ref_adb9cebfd67fe512f9622343011cec5f7}{mts\+Generic\+Object\+Proxy\+Ref$<$ \+\_\+element\+Type $>$}, \hyperlink{classmts_generic_object_proxy_ae845cb9d57238d227c98a25d08d54dff}{mts\+Generic\+Object\+Proxy$<$ \+\_\+element\+Type $>$}, \hyperlink{classmts_generic_object_proxy_ae845cb9d57238d227c98a25d08d54dff}{mts\+Generic\+Object\+Proxy$<$ double $>$}, \hyperlink{classmts_generic_object_proxy_ae845cb9d57238d227c98a25d08d54dff}{mts\+Generic\+Object\+Proxy$<$ std\+::string $>$}, \hyperlink{classmts_generic_object_proxy_ae845cb9d57238d227c98a25d08d54dff}{mts\+Generic\+Object\+Proxy$<$ float $>$}, \hyperlink{classmts_generic_object_proxy_ae845cb9d57238d227c98a25d08d54dff}{mts\+Generic\+Object\+Proxy$<$ int $>$}, and \hyperlink{classmts_generic_object_proxy_ae845cb9d57238d227c98a25d08d54dff}{mts\+Generic\+Object\+Proxy$<$ bool $>$}.
+
+\hypertarget{classmts_generic_object_proxy_base_a195e1cff25b666f995ca1e65df92b93e}{}\index{mts\+Generic\+Object\+Proxy\+Base@{mts\+Generic\+Object\+Proxy\+Base}!operator=@{operator=}}
+\index{operator=@{operator=}!mts\+Generic\+Object\+Proxy\+Base@{mts\+Generic\+Object\+Proxy\+Base}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ {\bf This\+Type}\& {\bf mts\+Generic\+Object\+Proxy\+Base}$<$ \+\_\+element\+Type $>$\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf This\+Type} \&}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_generic_object_proxy_base_a195e1cff25b666f995ca1e65df92b93e}
+Conversion assignment. \hypertarget{classmts_generic_object_proxy_base_a668f4395140c372201eb656664d4bfc3}{}\index{mts\+Generic\+Object\+Proxy\+Base@{mts\+Generic\+Object\+Proxy\+Base}!Services@{Services}}
+\index{Services@{Services}!mts\+Generic\+Object\+Proxy\+Base@{mts\+Generic\+Object\+Proxy\+Base}}
+\subsubsection[{Services}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ virtual const {\bf cmn\+Class\+Services\+Base}$\ast$ {\bf mts\+Generic\+Object\+Proxy\+Base}$<$ \+\_\+element\+Type $>$\+::Services (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classmts_generic_object_proxy_base_a668f4395140c372201eb656664d4bfc3}
+Pure virtual method to access the class services. The derived classes should always declare and implement this method using the macros \hyperlink{cmn_class_register_macros_8h_a7fbab4cbcdfbf35062de4f734e697034}{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S}, \hyperlink{mts_text_to_speech_8h_aae5c71840342a68c45d71caab531fec2}{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+I\+N\+S\+T\+A\+N\+T\+I\+A\+T\+I\+O\+N} and \hyperlink{cmn_class_register_macros_8h_a59997edde1868f5ce515ff85dfeaf2f8}{C\+M\+N\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S}. In N\+O W\+A\+Y, a user should redefine/overload this method otherwise.
+
+\begin{DoxyReturn}{Returns}
+A pointer on the class services. This points to the unique instance of cmn\+Class\+Service\+Base for a given class.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classcmn_class_register}{cmn\+Class\+Register} cmn\+Class\+Service\+Base 
+\end{DoxySeeAlso}
+
+
+Implements \hyperlink{classcmn_generic_object_ac1e9145a0ed0711ac0c0c3edd37b673a}{cmn\+Generic\+Object}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Multi\+Task/\hyperlink{mts_generic_object_proxy_8h}{mts\+Generic\+Object\+Proxy.\+h}\end{DoxyCompactItemize}

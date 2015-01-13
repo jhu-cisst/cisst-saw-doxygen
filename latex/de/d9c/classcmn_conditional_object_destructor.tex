@@ -1,0 +1,41 @@
+\hypertarget{classcmn_conditional_object_destructor}{}\section{cmn\+Conditional\+Object\+Destructor$<$ \+\_\+has\+Dynamic\+Creation, \+\_\+class $>$ Class Template Reference}
+\label{classcmn_conditional_object_destructor}\index{cmn\+Conditional\+Object\+Destructor$<$ \+\_\+has\+Dynamic\+Creation, \+\_\+class $>$@{cmn\+Conditional\+Object\+Destructor$<$ \+\_\+has\+Dynamic\+Creation, \+\_\+class $>$}}
+
+
+{\ttfamily \#include $<$cmn\+Class\+Services.\+h$>$}
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \hyperlink{classcmn_conditional_object_destructor_a06fad8de84abc650a73ce8adc7edf2a9}{Delete\+Array} (\hyperlink{classcmn_generic_object}{generic\+\_\+pointer} \&data, size\+\_\+t \&size)
+\item 
+static bool \hyperlink{classcmn_conditional_object_destructor_a406a9967de6c2eb7a7996f00976cd885}{Delete} (\hyperlink{classcmn_generic_object}{cmn\+Generic\+Object} $\ast$existing)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$int \+\_\+has\+Dynamic\+Creation, typename \+\_\+class$>$class cmn\+Conditional\+Object\+Destructor$<$ \+\_\+has\+Dynamic\+Creation, \+\_\+class $>$}
+
+Default implementation with dynamic creation enabled 
+
+\subsection{Member Function Documentation}
+\hypertarget{classcmn_conditional_object_destructor_a406a9967de6c2eb7a7996f00976cd885}{}\index{cmn\+Conditional\+Object\+Destructor@{cmn\+Conditional\+Object\+Destructor}!Delete@{Delete}}
+\index{Delete@{Delete}!cmn\+Conditional\+Object\+Destructor@{cmn\+Conditional\+Object\+Destructor}}
+\subsubsection[{Delete}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int \+\_\+has\+Dynamic\+Creation, typename \+\_\+class $>$ static bool {\bf cmn\+Conditional\+Object\+Destructor}$<$ \+\_\+has\+Dynamic\+Creation, \+\_\+class $>$\+::Delete (
+\begin{DoxyParamCaption}
+\item[{{\bf cmn\+Generic\+Object} $\ast$}]{existing}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classcmn_conditional_object_destructor_a406a9967de6c2eb7a7996f00976cd885}
+Default implementation of delete when dynamic creation is enabled. Call destructor for the given class. \hypertarget{classcmn_conditional_object_destructor_a06fad8de84abc650a73ce8adc7edf2a9}{}\index{cmn\+Conditional\+Object\+Destructor@{cmn\+Conditional\+Object\+Destructor}!Delete\+Array@{Delete\+Array}}
+\index{Delete\+Array@{Delete\+Array}!cmn\+Conditional\+Object\+Destructor@{cmn\+Conditional\+Object\+Destructor}}
+\subsubsection[{Delete\+Array}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int \+\_\+has\+Dynamic\+Creation, typename \+\_\+class $>$ static bool {\bf cmn\+Conditional\+Object\+Destructor}$<$ \+\_\+has\+Dynamic\+Creation, \+\_\+class $>$\+::Delete\+Array (
+\begin{DoxyParamCaption}
+\item[{{\bf generic\+\_\+pointer} \&}]{data, }
+\item[{size\+\_\+t \&}]{size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classcmn_conditional_object_destructor_a06fad8de84abc650a73ce8adc7edf2a9}
+Default implementation of Delete\+Array. Call the destructor for each object and then delete the container 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Common/\hyperlink{cmn_class_services_8h}{cmn\+Class\+Services.\+h}\end{DoxyCompactItemize}

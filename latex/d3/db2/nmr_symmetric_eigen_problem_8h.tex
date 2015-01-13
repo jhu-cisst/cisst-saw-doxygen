@@ -1,0 +1,79 @@
+\hypertarget{nmr_symmetric_eigen_problem_8h}{}\section{/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Numerical/nmr\+Symmetric\+Eigen\+Problem.h File Reference}
+\label{nmr_symmetric_eigen_problem_8h}\index{/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Numerical/nmr\+Symmetric\+Eigen\+Problem.\+h@{/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Numerical/nmr\+Symmetric\+Eigen\+Problem.\+h}}
+{\ttfamily \#include $<$cisst\+Numerical/nmr\+Netlib.\+h$>$}\\*
+{\ttfamily \#include $<$cisst\+Vector/vct\+Dynamic\+Matrix.\+h$>$}\\*
+{\ttfamily \#include $<$cisst\+Numerical/nmr\+Export.\+h$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classnmr_symmetric_eigen_problem}{nmr\+Symmetric\+Eigen\+Problem}
+\item 
+class \hyperlink{classnmr_symmetric_eigen_problem_1_1_data}{nmr\+Symmetric\+Eigen\+Problem\+::\+Data}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classnmr_symmetric_eigen_problem_a74a598587dbf205ee28575c65b2d3879}{nmr\+Symmetric\+Eigen\+Problem\+::\+Errno} \hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} \hyperlink{nmr_symmetric_eigen_problem_8h_a32ce9121bd06d9f0081d767d7facdf61}{nmr\+Symmetric\+Eigen\+Problem} (\hyperlink{classvct_dynamic_matrix}{vct\+Dynamic\+Matrix}$<$ double $>$ \&A, \hyperlink{classvct_dynamic_vector}{vct\+Dynamic\+Vector}$<$ double $>$ \&D, \hyperlink{classvct_dynamic_matrix}{vct\+Dynamic\+Matrix}$<$ double $>$ \&V)
+\begin{DoxyCompactList}\small\item\em Symmetric Eigenproblems (S\+E\+P) \end{DoxyCompactList}\item 
+\hyperlink{classnmr_symmetric_eigen_problem_a74a598587dbf205ee28575c65b2d3879}{nmr\+Symmetric\+Eigen\+Problem\+::\+Errno} \hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} \hyperlink{nmr_symmetric_eigen_problem_8h_ad190c2b52cfe6f315a1c6accc5f40c7c}{nmr\+Symmetric\+Eigen\+Problem} (\hyperlink{classvct_dynamic_matrix}{vct\+Dynamic\+Matrix}$<$ double $>$ \&A, \hyperlink{classvct_dynamic_vector}{vct\+Dynamic\+Vector}$<$ double $>$ \&D, \hyperlink{classvct_dynamic_matrix}{vct\+Dynamic\+Matrix}$<$ double $>$ \&V, \hyperlink{classnmr_symmetric_eigen_problem_1_1_data}{nmr\+Symmetric\+Eigen\+Problem\+::\+Data} \&data)
+\begin{DoxyCompactList}\small\item\em Symmetric Eigenproblems (S\+E\+P) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{nmr_symmetric_eigen_problem_8h_a32ce9121bd06d9f0081d767d7facdf61}{}\index{nmr\+Symmetric\+Eigen\+Problem.\+h@{nmr\+Symmetric\+Eigen\+Problem.\+h}!nmr\+Symmetric\+Eigen\+Problem@{nmr\+Symmetric\+Eigen\+Problem}}
+\index{nmr\+Symmetric\+Eigen\+Problem@{nmr\+Symmetric\+Eigen\+Problem}!nmr\+Symmetric\+Eigen\+Problem.\+h@{nmr\+Symmetric\+Eigen\+Problem.\+h}}
+\subsubsection[{nmr\+Symmetric\+Eigen\+Problem}]{\setlength{\rightskip}{0pt plus 5cm}{\bf nmr\+Symmetric\+Eigen\+Problem\+::\+Errno} {\bf C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} {\bf nmr\+Symmetric\+Eigen\+Problem} (
+\begin{DoxyParamCaption}
+\item[{{\bf vct\+Dynamic\+Matrix}$<$ double $>$ \&}]{A, }
+\item[{{\bf vct\+Dynamic\+Vector}$<$ double $>$ \&}]{D, }
+\item[{{\bf vct\+Dynamic\+Matrix}$<$ double $>$ \&}]{V}
+\end{DoxyParamCaption}
+)}\label{nmr_symmetric_eigen_problem_8h_a32ce9121bd06d9f0081d767d7facdf61}
+
+
+Symmetric Eigenproblems (S\+E\+P) 
+
+Computes all the eigen values and eigen vectors of a symmetric matrix $ A \mathbf{x} = \lambda \mathbf{x} $ such that $ A = V D V^T $. The eigen values are sorted in ascending order. This function uses L\+A\+P\+A\+C\+K dsyevr.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em A} & The $ N \times N $ column major matrix. The matrix A is modified during the evaluation. The matrix must be in column major. \\
+\hline
+\mbox{\tt out}  & {\em D} & The vector of $ N $ eigen vectors. The vector must be allocated prior to calling. \\
+\hline
+\mbox{\tt out}  & {\em V} & The $ N \times N $ matrix of eigen vectors. Eigen vectors are stored in the columns of D. The matrix must be column major and allocated prior to calling. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+E\+S\+U\+C\+C\+E\+S\+S if the computation was successful. E\+F\+A\+I\+L\+U\+R\+E otherwise. 
+\end{DoxyReturn}
+\hypertarget{nmr_symmetric_eigen_problem_8h_ad190c2b52cfe6f315a1c6accc5f40c7c}{}\index{nmr\+Symmetric\+Eigen\+Problem.\+h@{nmr\+Symmetric\+Eigen\+Problem.\+h}!nmr\+Symmetric\+Eigen\+Problem@{nmr\+Symmetric\+Eigen\+Problem}}
+\index{nmr\+Symmetric\+Eigen\+Problem@{nmr\+Symmetric\+Eigen\+Problem}!nmr\+Symmetric\+Eigen\+Problem.\+h@{nmr\+Symmetric\+Eigen\+Problem.\+h}}
+\subsubsection[{nmr\+Symmetric\+Eigen\+Problem}]{\setlength{\rightskip}{0pt plus 5cm}{\bf nmr\+Symmetric\+Eigen\+Problem\+::\+Errno} {\bf C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} {\bf nmr\+Symmetric\+Eigen\+Problem} (
+\begin{DoxyParamCaption}
+\item[{{\bf vct\+Dynamic\+Matrix}$<$ double $>$ \&}]{A, }
+\item[{{\bf vct\+Dynamic\+Vector}$<$ double $>$ \&}]{D, }
+\item[{{\bf vct\+Dynamic\+Matrix}$<$ double $>$ \&}]{V, }
+\item[{{\bf nmr\+Symmetric\+Eigen\+Problem\+::\+Data} \&}]{data}
+\end{DoxyParamCaption}
+)}\label{nmr_symmetric_eigen_problem_8h_ad190c2b52cfe6f315a1c6accc5f40c7c}
+
+
+Symmetric Eigenproblems (S\+E\+P) 
+
+Computes all the eigen values and eigen vectors of a symmetric matrix $ A \mathbf{x} = \lambda \mathbf{x} $ such that $ A = V D V^T $. The eigen values are sorted in ascending order. This function uses L\+A\+P\+A\+C\+K dsyevr.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em A} & The $ N \times N $ column major matrix. The matrix A is modified during the evaluation. The matrix must be column major. \\
+\hline
+\mbox{\tt out}  & {\em D} & The vector of $ N $ eigen vectors. The vector must be allocated before calling. \\
+\hline
+\mbox{\tt out}  & {\em V} & The $ N \times N $ matrix of eigen vectors. Eigen vectors are stored in the columns of V. The matrix must be column major and allocated before calling. \\
+\hline
+\mbox{\tt in}  & {\em data} & Computation data. This data can is filled during the initial call and can be reused in subsequent calls. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+E\+S\+U\+C\+C\+E\+S\+S if the computation was successful. E\+F\+A\+I\+L\+U\+R\+E otherwise. 
+\end{DoxyReturn}

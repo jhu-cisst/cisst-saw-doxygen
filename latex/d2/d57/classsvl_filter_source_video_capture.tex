@@ -1,0 +1,843 @@
+\hypertarget{classsvl_filter_source_video_capture}{}\section{svl\+Filter\+Source\+Video\+Capture Class Reference}
+\label{classsvl_filter_source_video_capture}\index{svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}}
+
+
+{\ttfamily \#include $<$svl\+Filter\+Source\+Video\+Capture.\+h$>$}
+
+Inheritance diagram for svl\+Filter\+Source\+Video\+Capture\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{d2/d57/classsvl_filter_source_video_capture}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classsvl_filter_source_video_capture_a479413536f6b6d984c08c44b0cbd64f2}{\+\_\+\+Image\+Properties\+Mask} \{ \\*
+\hyperlink{classsvl_filter_source_video_capture_a479413536f6b6d984c08c44b0cbd64f2a4d4abed08ff5a841c3cad808d18d88d1}{prop\+Shutter} = 1, 
+\hyperlink{classsvl_filter_source_video_capture_a479413536f6b6d984c08c44b0cbd64f2a88da91bf4ae85481673925943068bc37}{prop\+Gain} = 1 $<$$<$ 1, 
+\hyperlink{classsvl_filter_source_video_capture_a479413536f6b6d984c08c44b0cbd64f2aede12f2f91b1e017e4027f350ea8035b}{prop\+White\+Balance} = 1 $<$$<$ 2, 
+\hyperlink{classsvl_filter_source_video_capture_a479413536f6b6d984c08c44b0cbd64f2ac3c2d9c1e70cc5b6bc1c76ed483cd7a0}{prop\+Brightness} = 1 $<$$<$ 3, 
+\\*
+\hyperlink{classsvl_filter_source_video_capture_a479413536f6b6d984c08c44b0cbd64f2a5084b58f2483c79dc12662bc03696ddf}{prop\+Gamma} = 1 $<$$<$ 4, 
+\hyperlink{classsvl_filter_source_video_capture_a479413536f6b6d984c08c44b0cbd64f2afe5986680c0c4853df93e46902891b37}{prop\+Saturation} = 1 $<$$<$ 5
+ \}
+\item 
+typedef svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Platform\+Type \hyperlink{classsvl_filter_source_video_capture_a75f10dbd026c0ae70007a18758895ea0}{Platform\+Type}
+\item 
+typedef svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Device\+Info \hyperlink{classsvl_filter_source_video_capture_ad656487fb2deec890dc39764152b8f8b}{Device\+Info}
+\item 
+typedef svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Pixel\+Type \hyperlink{classsvl_filter_source_video_capture_a0d92a26e94ffd48535df5ab2ff330c90}{Pixel\+Type}
+\item 
+typedef svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Pattern\+Type \hyperlink{classsvl_filter_source_video_capture_a374a69b1d506cf982ba5ce45d5f84776}{Pattern\+Type}
+\item 
+typedef svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format \hyperlink{classsvl_filter_source_video_capture_a0944cc8abe4240701683128c28fa5349}{Image\+Format}
+\item 
+typedef svl\+Filter\+Source\+Video\+Capture\+Types\+::\+External\+Trigger \hyperlink{classsvl_filter_source_video_capture_a609a8eb75ea23b7b35068207cc3c3144}{External\+Trigger}
+\item 
+typedef enum \hyperlink{classsvl_filter_source_video_capture_a479413536f6b6d984c08c44b0cbd64f2}{svl\+Filter\+Source\+Video\+Capture\+::\+\_\+\+Image\+Properties\+Mask} \hyperlink{classsvl_filter_source_video_capture_a52391ed8950c7d9b76ddb7d444a18ed1}{Image\+Properties\+Mask}
+\item 
+typedef svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Properties \hyperlink{classsvl_filter_source_video_capture_ad5d8ccc6a284be386d49b60574937f4d}{Image\+Properties}
+\item 
+typedef svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Config \hyperlink{classsvl_filter_source_video_capture_ac541a625ce316b5320170cef3ca02277}{Config}
+\item 
+typedef \hyperlink{classsvl_filter_source_video_capture}{svl\+Filter\+Source\+Video\+Capture} \hyperlink{classsvl_filter_source_video_capture_ad91d138b62c181697b084d06a12fb55a}{This\+Type}
+\item 
+typedef \hyperlink{classvct_dynamic_vector}{vct\+Dynamic\+Vector}$<$ \hyperlink{classsvl_filter_source_video_capture_ad656487fb2deec890dc39764152b8f8b}{Device\+Info} $>$ \hyperlink{classsvl_filter_source_video_capture_a52d28d8296c6b85055022a72c69334e4}{Device\+Info\+List\+Type}
+\item 
+typedef \hyperlink{classvct_dynamic_vector}{vct\+Dynamic\+Vector}$<$ \hyperlink{classsvl_filter_source_video_capture_a0944cc8abe4240701683128c28fa5349}{Image\+Format} $>$ \hyperlink{classsvl_filter_source_video_capture_af6d31bdf8807755322cd7e5ef1f0d8d9}{Format\+List\+Type}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsvl_filter_source_video_capture_a7f25fb86c326d7abb1b1d83a336283ab}{svl\+Filter\+Source\+Video\+Capture} ()
+\item 
+\hyperlink{classsvl_filter_source_video_capture_a3f7ef92098e7365ea75adfd3b5ba6084}{svl\+Filter\+Source\+Video\+Capture} (unsigned int channelcount)
+\item 
+virtual \hyperlink{classsvl_filter_source_video_capture_aa562e71761456f45d66fdad6855508a2}{$\sim$svl\+Filter\+Source\+Video\+Capture} ()
+\item 
+int \hyperlink{classsvl_filter_source_video_capture_aa23d8b697cd920034d4b2eca29defcea}{Enumerate\+Devices} ()
+\item 
+int \hyperlink{classsvl_filter_source_video_capture_af5e7798d59ea80decda47baaa233f637}{Set\+Channel\+Count} (unsigned int channelcount)
+\item 
+virtual void \hyperlink{classsvl_filter_source_video_capture_adfd8794f6f06b431beb7022370b7b6ef}{Set\+Target\+Frequency} (const double \&hertz)
+\item 
+double \hyperlink{classsvl_filter_source_video_capture_a79b4017c863b616bb138b54d4875d280}{Get\+Target\+Frequency} () const 
+\item 
+int \hyperlink{classsvl_filter_source_video_capture_a312929cfc056417d0884be3575e12072}{Dialog\+Setup} (unsigned int videoch=\hyperlink{svl_definitions_8h_ab9fec7615f19c8df2919eebcab0b187f}{S\+V\+L\+\_\+\+L\+E\+F\+T})
+\item 
+int \hyperlink{classsvl_filter_source_video_capture_ac406e5e23bd3a8aa68f6b17e6d8afa99}{Dialog\+Device} ()
+\item 
+int \hyperlink{classsvl_filter_source_video_capture_a6dbe33ac0c7aebb296ebcf16c3b8c860}{Dialog\+Input} (unsigned int deviceid)
+\item 
+int \hyperlink{classsvl_filter_source_video_capture_a70944875b11f999ccbe6f50874e694d0}{Dialog\+Format} (unsigned int videoch=\hyperlink{svl_definitions_8h_ab9fec7615f19c8df2919eebcab0b187f}{S\+V\+L\+\_\+\+L\+E\+F\+T})
+\item 
+int \hyperlink{classsvl_filter_source_video_capture_aa0be0c5befb0a6fc76277a1df61c5513}{Dialog\+Trigger} (unsigned int videoch=\hyperlink{svl_definitions_8h_ab9fec7615f19c8df2919eebcab0b187f}{S\+V\+L\+\_\+\+L\+E\+F\+T})
+\item 
+int \hyperlink{classsvl_filter_source_video_capture_a7555805bed43a6cc640d0c393115e3b6}{Dialog\+Image\+Properties} (unsigned int videoch=\hyperlink{svl_definitions_8h_ab9fec7615f19c8df2919eebcab0b187f}{S\+V\+L\+\_\+\+L\+E\+F\+T})
+\item 
+int \hyperlink{classsvl_filter_source_video_capture_a21cb6cab9a30f845f15072fbb18d7380}{Get\+Device\+List} (\hyperlink{classsvl_filter_source_video_capture_ad656487fb2deec890dc39764152b8f8b}{Device\+Info} $\ast$$\ast$deviceinfolist) const 
+\item 
+void \hyperlink{classsvl_filter_source_video_capture_acc6ebb12708759516814f721fb1f71e1}{Release\+Device\+List} (\hyperlink{classsvl_filter_source_video_capture_ad656487fb2deec890dc39764152b8f8b}{Device\+Info} $\ast$deviceinfolist) const 
+\item 
+int \hyperlink{classsvl_filter_source_video_capture_ac898139251c6c708cd17822a794f63f7}{Print\+Device\+List} (bool update=false)
+\item 
+int \hyperlink{classsvl_filter_source_video_capture_a8c89ca74d3499711f6c6dcd6bdb36be6}{Print\+Input\+List} (int deviceid, bool update=false)
+\item 
+int \hyperlink{classsvl_filter_source_video_capture_aebf3b0b1b3c9ef04c20db692d7253256}{Set\+Device} (int deviceid, int inputid=0, unsigned int videoch=\hyperlink{svl_definitions_8h_ab9fec7615f19c8df2919eebcab0b187f}{S\+V\+L\+\_\+\+L\+E\+F\+T})
+\item 
+int \hyperlink{classsvl_filter_source_video_capture_a48d8ab9fc28c745aa66d41236f8a9e93}{Get\+Device} (int \&deviceid, int \&inputid, unsigned int videoch=\hyperlink{svl_definitions_8h_ab9fec7615f19c8df2919eebcab0b187f}{S\+V\+L\+\_\+\+L\+E\+F\+T}) const 
+\item 
+int \hyperlink{classsvl_filter_source_video_capture_aaeaf902a2fb7ac3884627bece1582909}{Get\+Format\+List} (\hyperlink{classsvl_filter_source_video_capture_a0944cc8abe4240701683128c28fa5349}{Image\+Format} $\ast$$\ast$formatlist, unsigned int videoch=\hyperlink{svl_definitions_8h_ab9fec7615f19c8df2919eebcab0b187f}{S\+V\+L\+\_\+\+L\+E\+F\+T}) const 
+\item 
+void \hyperlink{classsvl_filter_source_video_capture_ab6665993a38e11a5357df6087e29fa0b}{Release\+Format\+List} (\hyperlink{classsvl_filter_source_video_capture_a0944cc8abe4240701683128c28fa5349}{Image\+Format} $\ast$formatlist) const 
+\item 
+int \hyperlink{classsvl_filter_source_video_capture_abb0305cbcc53b3aad08fb5f9e1071bbb}{Print\+Format\+List} (unsigned int videoch=\hyperlink{svl_definitions_8h_ab9fec7615f19c8df2919eebcab0b187f}{S\+V\+L\+\_\+\+L\+E\+F\+T})
+\item 
+int \hyperlink{classsvl_filter_source_video_capture_ae2c6ad1d0236879bd925449a372f2346}{Select\+Format} (unsigned int formatid, unsigned int videoch=\hyperlink{svl_definitions_8h_ab9fec7615f19c8df2919eebcab0b187f}{S\+V\+L\+\_\+\+L\+E\+F\+T})
+\item 
+int \hyperlink{classsvl_filter_source_video_capture_ae52650c5e7e0c082c11f9f1cd1a80bcc}{Set\+Format} (const \hyperlink{classsvl_filter_source_video_capture_a0944cc8abe4240701683128c28fa5349}{Image\+Format} \&format, unsigned int videoch=\hyperlink{svl_definitions_8h_ab9fec7615f19c8df2919eebcab0b187f}{S\+V\+L\+\_\+\+L\+E\+F\+T})
+\item 
+int \hyperlink{classsvl_filter_source_video_capture_a249fb6ec35e4888c8426fbc97cf2625c}{Get\+Format} (\hyperlink{classsvl_filter_source_video_capture_a0944cc8abe4240701683128c28fa5349}{Image\+Format} \&format, unsigned int videoch=\hyperlink{svl_definitions_8h_ab9fec7615f19c8df2919eebcab0b187f}{S\+V\+L\+\_\+\+L\+E\+F\+T}) const 
+\item 
+int \hyperlink{classsvl_filter_source_video_capture_a0a756acc24c4c262b23d40671f8a3d7c}{Set\+Trigger} (const \hyperlink{classsvl_filter_source_video_capture_a609a8eb75ea23b7b35068207cc3c3144}{External\+Trigger} \&trigger, unsigned int videoch=\hyperlink{svl_definitions_8h_ab9fec7615f19c8df2919eebcab0b187f}{S\+V\+L\+\_\+\+L\+E\+F\+T})
+\item 
+int \hyperlink{classsvl_filter_source_video_capture_a13ad2c1cec2121ea7742f4c00bb49059}{Get\+Trigger} (\hyperlink{classsvl_filter_source_video_capture_a609a8eb75ea23b7b35068207cc3c3144}{External\+Trigger} \&trigger, unsigned int videoch=\hyperlink{svl_definitions_8h_ab9fec7615f19c8df2919eebcab0b187f}{S\+V\+L\+\_\+\+L\+E\+F\+T}) const 
+\item 
+int \hyperlink{classsvl_filter_source_video_capture_a35dbd104d0ea8c40300e571ee17c2fac}{Set\+Image\+Properties} (const \hyperlink{classsvl_filter_source_video_capture_ad5d8ccc6a284be386d49b60574937f4d}{Image\+Properties} \&properties, unsigned int videoch=\hyperlink{svl_definitions_8h_ab9fec7615f19c8df2919eebcab0b187f}{S\+V\+L\+\_\+\+L\+E\+F\+T})
+\item 
+int \hyperlink{classsvl_filter_source_video_capture_a3e217734151f975b80fdc1c2e8173e33}{Get\+Image\+Properties} (\hyperlink{classsvl_filter_source_video_capture_ad5d8ccc6a284be386d49b60574937f4d}{Image\+Properties} \&properties, unsigned int videoch=\hyperlink{svl_definitions_8h_ab9fec7615f19c8df2919eebcab0b187f}{S\+V\+L\+\_\+\+L\+E\+F\+T}) const 
+\item 
+unsigned int \hyperlink{classsvl_filter_source_video_capture_a270795bce27dbfb8107f1d2b6ea5c483}{Get\+Width} (unsigned int videoch=\hyperlink{svl_definitions_8h_ab9fec7615f19c8df2919eebcab0b187f}{S\+V\+L\+\_\+\+L\+E\+F\+T}) const 
+\item 
+unsigned int \hyperlink{classsvl_filter_source_video_capture_a3e8da832599f63d73f6e5e582364284e}{Get\+Height} (unsigned int videoch=\hyperlink{svl_definitions_8h_ab9fec7615f19c8df2919eebcab0b187f}{S\+V\+L\+\_\+\+L\+E\+F\+T}) const 
+\item 
+int \hyperlink{classsvl_filter_source_video_capture_aeaf58c30af75ce6f014ec2ec25eaecaf}{Save\+Settings} (const char $\ast$filepath)
+\item 
+int \hyperlink{classsvl_filter_source_video_capture_a01bdbd8e70c734acd7f47947f876d4ca}{Load\+Settings} (const char $\ast$filepath)
+\item 
+int \hyperlink{classsvl_filter_source_video_capture_a07b84b8d328f94e6342959709a385808}{Set\+Default\+Settings} (unsigned int videoch=\hyperlink{svl_definitions_8h_ab9fec7615f19c8df2919eebcab0b187f}{S\+V\+L\+\_\+\+L\+E\+F\+T})
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::string \hyperlink{classsvl_filter_source_video_capture_a98018ec9cd94d108a90a21f91be1e7cd}{Get\+Pixel\+Type\+Name} (\hyperlink{classsvl_filter_source_video_capture_a0d92a26e94ffd48535df5ab2ff330c90}{Pixel\+Type} pixeltype)
+\item 
+static std\+::string \hyperlink{classsvl_filter_source_video_capture_a0f87882443980b7a5d3364e294f12daf}{Get\+Pattern\+Type\+Name} (\hyperlink{classsvl_filter_source_video_capture_a374a69b1d506cf982ba5ce45d5f84776}{Pattern\+Type} patterntype)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual int \hyperlink{classsvl_filter_source_video_capture_a1da5704a88657e2e84d8215fcbe9e2c3}{Initialize} (\hyperlink{classsvl_sample}{svl\+Sample} $\ast$\&sync\+Output)
+\item 
+virtual int \hyperlink{classsvl_filter_source_video_capture_a6910f1c5144a593ecd7bfd713944730e}{Process} (\hyperlink{structsvl_proc_info}{svl\+Proc\+Info} $\ast$proc\+Info, \hyperlink{classsvl_sample}{svl\+Sample} $\ast$\&sync\+Output)
+\item 
+virtual int \hyperlink{classsvl_filter_source_video_capture_a004ca0768d12f5bf38eff0b6274f2beb}{Release} ()
+\item 
+virtual void \hyperlink{classsvl_filter_source_video_capture_a2fd59f93d8c5e44e67c9dcce01514edd}{Create\+Interfaces} ()
+\item 
+virtual void \hyperlink{classsvl_filter_source_video_capture_aa910918889f8432791329274497a69d4}{Enumerate\+Devices\+Command} (void)
+\item 
+virtual void \hyperlink{classsvl_filter_source_video_capture_a50e0b460d69240a109215cae6aa43e5a}{Get\+Device\+List\+Command} (\hyperlink{classsvl_filter_source_video_capture_a52d28d8296c6b85055022a72c69334e4}{This\+Type\+::\+Device\+Info\+List\+Type} \&devicelist) const 
+\item 
+virtual void \hyperlink{classsvl_filter_source_video_capture_ad5113b583320c5a857766ec6311f2908}{Get\+Command} (\hyperlink{classsvl_filter_source_video_capture_ac541a625ce316b5320170cef3ca02277}{This\+Type\+::\+Config} \&objref) const 
+\item 
+virtual void \hyperlink{classsvl_filter_source_video_capture_ac506464be36d152e330394bc5598dbf4}{Set\+Command} (const \hyperlink{classsvl_filter_source_video_capture_ac541a625ce316b5320170cef3ca02277}{This\+Type\+::\+Config} \&objref)
+\item 
+virtual void \hyperlink{classsvl_filter_source_video_capture_ad5362d8c49ab408cc2b2dece5a98dac9}{Set\+Channels\+Command} (const int \&channels)
+\item 
+virtual void \hyperlink{classsvl_filter_source_video_capture_aee975b68fbf20b1ff832c1cfdfa0b471}{Set\+Device\+L\+Command} (const int \&deviceid)
+\item 
+virtual void \hyperlink{classsvl_filter_source_video_capture_ac90e7cc9fd637928d42b213a55749a4f}{Set\+Device\+R\+Command} (const int \&deviceid)
+\item 
+virtual void \hyperlink{classsvl_filter_source_video_capture_afbee99709cde9fc26d88815acfe24d57}{Set\+Input\+L\+Command} (const int \&inputid)
+\item 
+virtual void \hyperlink{classsvl_filter_source_video_capture_a37f49c97c934e171a3ddae4c06d0bc88}{Set\+Input\+R\+Command} (const int \&inputid)
+\item 
+virtual void \hyperlink{classsvl_filter_source_video_capture_a1d64fd9952f1eaf7b01b9b31273b8329}{Set\+Format\+L\+Command} (const \hyperlink{classsvl_filter_source_video_capture_a0944cc8abe4240701683128c28fa5349}{This\+Type\+::\+Image\+Format} \&format)
+\item 
+virtual void \hyperlink{classsvl_filter_source_video_capture_abf61696d18768de36cdfbc1ae47c65af}{Set\+Format\+R\+Command} (const \hyperlink{classsvl_filter_source_video_capture_a0944cc8abe4240701683128c28fa5349}{This\+Type\+::\+Image\+Format} \&format)
+\item 
+virtual void \hyperlink{classsvl_filter_source_video_capture_a0cdd80a307fa9216000ae363fe8664a8}{Select\+Format\+L\+Command} (const int \&formatid)
+\item 
+virtual void \hyperlink{classsvl_filter_source_video_capture_ad42cf6d7de3f1c517cf514a5878d5eb8}{Select\+Format\+R\+Command} (const int \&formatid)
+\item 
+virtual void \hyperlink{classsvl_filter_source_video_capture_ab81e6be420ad82b1c1414ebb1c7ca424}{Set\+Trigger\+L\+Command} (const \hyperlink{classsvl_filter_source_video_capture_a609a8eb75ea23b7b35068207cc3c3144}{This\+Type\+::\+External\+Trigger} \&trigger)
+\item 
+virtual void \hyperlink{classsvl_filter_source_video_capture_ab534dbc847bc8ee2099035c3e5833133}{Set\+Trigger\+R\+Command} (const \hyperlink{classsvl_filter_source_video_capture_a609a8eb75ea23b7b35068207cc3c3144}{This\+Type\+::\+External\+Trigger} \&trigger)
+\item 
+virtual void \hyperlink{classsvl_filter_source_video_capture_a24fe5d58190fbc762bcae850dff16645}{Set\+Image\+Properties\+L\+Command} (const \hyperlink{classsvl_filter_source_video_capture_ad5d8ccc6a284be386d49b60574937f4d}{This\+Type\+::\+Image\+Properties} \&properties)
+\item 
+virtual void \hyperlink{classsvl_filter_source_video_capture_abf3a679658d86ab8d23e27e2fde85e2a}{Set\+Image\+Properties\+R\+Command} (const \hyperlink{classsvl_filter_source_video_capture_ad5d8ccc6a284be386d49b60574937f4d}{This\+Type\+::\+Image\+Properties} \&properties)
+\item 
+virtual void \hyperlink{classsvl_filter_source_video_capture_abbacd31e3f5edfd5b2b2a50c7053bc99}{Save\+Settings\+Command} (const std\+::string \&filepath)
+\item 
+virtual void \hyperlink{classsvl_filter_source_video_capture_a3850149032cf1d35c30a3638b4481c76}{Load\+Settings\+Command} (const std\+::string \&filepath)
+\item 
+virtual void \hyperlink{classsvl_filter_source_video_capture_a1dd7a55838ea87f65aad6dd9ed2a7874}{Get\+Channels\+Command} (int \&channels) const 
+\item 
+virtual void \hyperlink{classsvl_filter_source_video_capture_a651807fb1391fd672e9bd97e598dd243}{Get\+Device\+L\+Command} (int \&deviceid) const 
+\item 
+virtual void \hyperlink{classsvl_filter_source_video_capture_ad6ec3e7df7121a67d17136126501d5ff}{Get\+Device\+R\+Command} (int \&deviceid) const 
+\item 
+virtual void \hyperlink{classsvl_filter_source_video_capture_a2fc6b6f712c78c0fdda8cfb62ac2cb35}{Get\+Input\+L\+Command} (int \&inputid) const 
+\item 
+virtual void \hyperlink{classsvl_filter_source_video_capture_a97e2fe09635eed40583aa6b1b4b51ab7}{Get\+Input\+R\+Command} (int \&inputid) const 
+\item 
+virtual void \hyperlink{classsvl_filter_source_video_capture_a3947836ef8d61f6201203c4db3614782}{Get\+Format\+L\+Command} (\hyperlink{classsvl_filter_source_video_capture_a0944cc8abe4240701683128c28fa5349}{This\+Type\+::\+Image\+Format} \&format) const 
+\item 
+virtual void \hyperlink{classsvl_filter_source_video_capture_af2ad11e3109c2162deef43ae9b66465f}{Get\+Format\+R\+Command} (\hyperlink{classsvl_filter_source_video_capture_a0944cc8abe4240701683128c28fa5349}{This\+Type\+::\+Image\+Format} \&format) const 
+\item 
+virtual void \hyperlink{classsvl_filter_source_video_capture_af1ce86b874a6fe5ef8356bf290dce420}{Get\+Dimensions\+L\+Command} (\hyperlink{vct_fixed_size_vector_types_8h_add8c88eb6a432b15f14b866b9c35325f}{vct\+Int2} \&dimensions) const 
+\item 
+virtual void \hyperlink{classsvl_filter_source_video_capture_a69e13d8177c9db036b867a53f6196e16}{Get\+Dimensions\+R\+Command} (\hyperlink{vct_fixed_size_vector_types_8h_add8c88eb6a432b15f14b866b9c35325f}{vct\+Int2} \&dimensions) const 
+\item 
+virtual void \hyperlink{classsvl_filter_source_video_capture_a8f6d51e949b294c7d30d17fe98755abd}{Get\+Format\+List\+L\+Command} (\hyperlink{classsvl_filter_source_video_capture_af6d31bdf8807755322cd7e5ef1f0d8d9}{This\+Type\+::\+Format\+List\+Type} \&formatlist) const 
+\item 
+virtual void \hyperlink{classsvl_filter_source_video_capture_a9e0816d82331d49ca668c520e0b6f08b}{Get\+Format\+List\+R\+Command} (\hyperlink{classsvl_filter_source_video_capture_af6d31bdf8807755322cd7e5ef1f0d8d9}{This\+Type\+::\+Format\+List\+Type} \&formatlist) const 
+\item 
+virtual void \hyperlink{classsvl_filter_source_video_capture_ae425165fad79636ee1c44dc67f10d6ed}{Get\+Trigger\+L\+Command} (\hyperlink{classsvl_filter_source_video_capture_a609a8eb75ea23b7b35068207cc3c3144}{This\+Type\+::\+External\+Trigger} \&trigger) const 
+\item 
+virtual void \hyperlink{classsvl_filter_source_video_capture_a0ad2bb0c7ecedf0cf3db911764c92257}{Get\+Trigger\+R\+Command} (\hyperlink{classsvl_filter_source_video_capture_a609a8eb75ea23b7b35068207cc3c3144}{This\+Type\+::\+External\+Trigger} \&trigger) const 
+\item 
+virtual void \hyperlink{classsvl_filter_source_video_capture_a29d406f7888ac42962c86edc507c7f98}{Get\+Image\+Properties\+L\+Command} (\hyperlink{classsvl_filter_source_video_capture_ad5d8ccc6a284be386d49b60574937f4d}{This\+Type\+::\+Image\+Properties} \&properties) const 
+\item 
+virtual void \hyperlink{classsvl_filter_source_video_capture_a5b1dd1a254e7425ce53539e909a49e53}{Get\+Image\+Properties\+R\+Command} (\hyperlink{classsvl_filter_source_video_capture_ad5d8ccc6a284be386d49b60574937f4d}{This\+Type\+::\+Image\+Properties} \&properties) const 
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classsvl_filter_source_video_capture_aa65165c939d276c4378a32c5405f83d4}{svl\+Vid\+Cap\+Src\+Dialog\+Thread}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classsvl_filter_source_video_capture_ac541a625ce316b5320170cef3ca02277}{}\index{svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}!Config@{Config}}
+\index{Config@{Config}!svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}}
+\subsubsection[{Config}]{\setlength{\rightskip}{0pt plus 5cm}typedef svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Config {\bf svl\+Filter\+Source\+Video\+Capture\+::\+Config}}\label{classsvl_filter_source_video_capture_ac541a625ce316b5320170cef3ca02277}
+\hypertarget{classsvl_filter_source_video_capture_ad656487fb2deec890dc39764152b8f8b}{}\index{svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}!Device\+Info@{Device\+Info}}
+\index{Device\+Info@{Device\+Info}!svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}}
+\subsubsection[{Device\+Info}]{\setlength{\rightskip}{0pt plus 5cm}typedef svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Device\+Info {\bf svl\+Filter\+Source\+Video\+Capture\+::\+Device\+Info}}\label{classsvl_filter_source_video_capture_ad656487fb2deec890dc39764152b8f8b}
+\hypertarget{classsvl_filter_source_video_capture_a52d28d8296c6b85055022a72c69334e4}{}\index{svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}!Device\+Info\+List\+Type@{Device\+Info\+List\+Type}}
+\index{Device\+Info\+List\+Type@{Device\+Info\+List\+Type}!svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}}
+\subsubsection[{Device\+Info\+List\+Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf vct\+Dynamic\+Vector}$<${\bf Device\+Info}$>$ {\bf svl\+Filter\+Source\+Video\+Capture\+::\+Device\+Info\+List\+Type}}\label{classsvl_filter_source_video_capture_a52d28d8296c6b85055022a72c69334e4}
+\hypertarget{classsvl_filter_source_video_capture_a609a8eb75ea23b7b35068207cc3c3144}{}\index{svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}!External\+Trigger@{External\+Trigger}}
+\index{External\+Trigger@{External\+Trigger}!svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}}
+\subsubsection[{External\+Trigger}]{\setlength{\rightskip}{0pt plus 5cm}typedef svl\+Filter\+Source\+Video\+Capture\+Types\+::\+External\+Trigger {\bf svl\+Filter\+Source\+Video\+Capture\+::\+External\+Trigger}}\label{classsvl_filter_source_video_capture_a609a8eb75ea23b7b35068207cc3c3144}
+\hypertarget{classsvl_filter_source_video_capture_af6d31bdf8807755322cd7e5ef1f0d8d9}{}\index{svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}!Format\+List\+Type@{Format\+List\+Type}}
+\index{Format\+List\+Type@{Format\+List\+Type}!svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}}
+\subsubsection[{Format\+List\+Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf vct\+Dynamic\+Vector}$<${\bf Image\+Format}$>$ {\bf svl\+Filter\+Source\+Video\+Capture\+::\+Format\+List\+Type}}\label{classsvl_filter_source_video_capture_af6d31bdf8807755322cd7e5ef1f0d8d9}
+\hypertarget{classsvl_filter_source_video_capture_a0944cc8abe4240701683128c28fa5349}{}\index{svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}!Image\+Format@{Image\+Format}}
+\index{Image\+Format@{Image\+Format}!svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}}
+\subsubsection[{Image\+Format}]{\setlength{\rightskip}{0pt plus 5cm}typedef svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Format {\bf svl\+Filter\+Source\+Video\+Capture\+::\+Image\+Format}}\label{classsvl_filter_source_video_capture_a0944cc8abe4240701683128c28fa5349}
+\hypertarget{classsvl_filter_source_video_capture_ad5d8ccc6a284be386d49b60574937f4d}{}\index{svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}!Image\+Properties@{Image\+Properties}}
+\index{Image\+Properties@{Image\+Properties}!svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}}
+\subsubsection[{Image\+Properties}]{\setlength{\rightskip}{0pt plus 5cm}typedef svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Image\+Properties {\bf svl\+Filter\+Source\+Video\+Capture\+::\+Image\+Properties}}\label{classsvl_filter_source_video_capture_ad5d8ccc6a284be386d49b60574937f4d}
+\hypertarget{classsvl_filter_source_video_capture_a52391ed8950c7d9b76ddb7d444a18ed1}{}\index{svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}!Image\+Properties\+Mask@{Image\+Properties\+Mask}}
+\index{Image\+Properties\+Mask@{Image\+Properties\+Mask}!svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}}
+\subsubsection[{Image\+Properties\+Mask}]{\setlength{\rightskip}{0pt plus 5cm}typedef enum {\bf svl\+Filter\+Source\+Video\+Capture\+::\+\_\+\+Image\+Properties\+Mask}  {\bf svl\+Filter\+Source\+Video\+Capture\+::\+Image\+Properties\+Mask}}\label{classsvl_filter_source_video_capture_a52391ed8950c7d9b76ddb7d444a18ed1}
+\hypertarget{classsvl_filter_source_video_capture_a374a69b1d506cf982ba5ce45d5f84776}{}\index{svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}!Pattern\+Type@{Pattern\+Type}}
+\index{Pattern\+Type@{Pattern\+Type}!svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}}
+\subsubsection[{Pattern\+Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Pattern\+Type {\bf svl\+Filter\+Source\+Video\+Capture\+::\+Pattern\+Type}}\label{classsvl_filter_source_video_capture_a374a69b1d506cf982ba5ce45d5f84776}
+\hypertarget{classsvl_filter_source_video_capture_a0d92a26e94ffd48535df5ab2ff330c90}{}\index{svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}!Pixel\+Type@{Pixel\+Type}}
+\index{Pixel\+Type@{Pixel\+Type}!svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}}
+\subsubsection[{Pixel\+Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Pixel\+Type {\bf svl\+Filter\+Source\+Video\+Capture\+::\+Pixel\+Type}}\label{classsvl_filter_source_video_capture_a0d92a26e94ffd48535df5ab2ff330c90}
+\hypertarget{classsvl_filter_source_video_capture_a75f10dbd026c0ae70007a18758895ea0}{}\index{svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}!Platform\+Type@{Platform\+Type}}
+\index{Platform\+Type@{Platform\+Type}!svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}}
+\subsubsection[{Platform\+Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef svl\+Filter\+Source\+Video\+Capture\+Types\+::\+Platform\+Type {\bf svl\+Filter\+Source\+Video\+Capture\+::\+Platform\+Type}}\label{classsvl_filter_source_video_capture_a75f10dbd026c0ae70007a18758895ea0}
+\hypertarget{classsvl_filter_source_video_capture_ad91d138b62c181697b084d06a12fb55a}{}\index{svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}!This\+Type@{This\+Type}}
+\index{This\+Type@{This\+Type}!svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}}
+\subsubsection[{This\+Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf svl\+Filter\+Source\+Video\+Capture} {\bf svl\+Filter\+Source\+Video\+Capture\+::\+This\+Type}}\label{classsvl_filter_source_video_capture_ad91d138b62c181697b084d06a12fb55a}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classsvl_filter_source_video_capture_a479413536f6b6d984c08c44b0cbd64f2}{}\index{svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}!\+\_\+\+Image\+Properties\+Mask@{\+\_\+\+Image\+Properties\+Mask}}
+\index{\+\_\+\+Image\+Properties\+Mask@{\+\_\+\+Image\+Properties\+Mask}!svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}}
+\subsubsection[{\+\_\+\+Image\+Properties\+Mask}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf svl\+Filter\+Source\+Video\+Capture\+::\+\_\+\+Image\+Properties\+Mask}}\label{classsvl_filter_source_video_capture_a479413536f6b6d984c08c44b0cbd64f2}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{prop\+Shutter@{prop\+Shutter}!svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}}\index{svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}!prop\+Shutter@{prop\+Shutter}}\item[{\em 
+\hypertarget{classsvl_filter_source_video_capture_a479413536f6b6d984c08c44b0cbd64f2a4d4abed08ff5a841c3cad808d18d88d1}{}prop\+Shutter\label{classsvl_filter_source_video_capture_a479413536f6b6d984c08c44b0cbd64f2a4d4abed08ff5a841c3cad808d18d88d1}
+}]\index{prop\+Gain@{prop\+Gain}!svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}}\index{svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}!prop\+Gain@{prop\+Gain}}\item[{\em 
+\hypertarget{classsvl_filter_source_video_capture_a479413536f6b6d984c08c44b0cbd64f2a88da91bf4ae85481673925943068bc37}{}prop\+Gain\label{classsvl_filter_source_video_capture_a479413536f6b6d984c08c44b0cbd64f2a88da91bf4ae85481673925943068bc37}
+}]\index{prop\+White\+Balance@{prop\+White\+Balance}!svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}}\index{svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}!prop\+White\+Balance@{prop\+White\+Balance}}\item[{\em 
+\hypertarget{classsvl_filter_source_video_capture_a479413536f6b6d984c08c44b0cbd64f2aede12f2f91b1e017e4027f350ea8035b}{}prop\+White\+Balance\label{classsvl_filter_source_video_capture_a479413536f6b6d984c08c44b0cbd64f2aede12f2f91b1e017e4027f350ea8035b}
+}]\index{prop\+Brightness@{prop\+Brightness}!svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}}\index{svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}!prop\+Brightness@{prop\+Brightness}}\item[{\em 
+\hypertarget{classsvl_filter_source_video_capture_a479413536f6b6d984c08c44b0cbd64f2ac3c2d9c1e70cc5b6bc1c76ed483cd7a0}{}prop\+Brightness\label{classsvl_filter_source_video_capture_a479413536f6b6d984c08c44b0cbd64f2ac3c2d9c1e70cc5b6bc1c76ed483cd7a0}
+}]\index{prop\+Gamma@{prop\+Gamma}!svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}}\index{svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}!prop\+Gamma@{prop\+Gamma}}\item[{\em 
+\hypertarget{classsvl_filter_source_video_capture_a479413536f6b6d984c08c44b0cbd64f2a5084b58f2483c79dc12662bc03696ddf}{}prop\+Gamma\label{classsvl_filter_source_video_capture_a479413536f6b6d984c08c44b0cbd64f2a5084b58f2483c79dc12662bc03696ddf}
+}]\index{prop\+Saturation@{prop\+Saturation}!svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}}\index{svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}!prop\+Saturation@{prop\+Saturation}}\item[{\em 
+\hypertarget{classsvl_filter_source_video_capture_a479413536f6b6d984c08c44b0cbd64f2afe5986680c0c4853df93e46902891b37}{}prop\+Saturation\label{classsvl_filter_source_video_capture_a479413536f6b6d984c08c44b0cbd64f2afe5986680c0c4853df93e46902891b37}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classsvl_filter_source_video_capture_a7f25fb86c326d7abb1b1d83a336283ab}{}\index{svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}!svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}}
+\index{svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}!svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}}
+\subsubsection[{svl\+Filter\+Source\+Video\+Capture}]{\setlength{\rightskip}{0pt plus 5cm}svl\+Filter\+Source\+Video\+Capture\+::svl\+Filter\+Source\+Video\+Capture (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classsvl_filter_source_video_capture_a7f25fb86c326d7abb1b1d83a336283ab}
+\hypertarget{classsvl_filter_source_video_capture_a3f7ef92098e7365ea75adfd3b5ba6084}{}\index{svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}!svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}}
+\index{svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}!svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}}
+\subsubsection[{svl\+Filter\+Source\+Video\+Capture}]{\setlength{\rightskip}{0pt plus 5cm}svl\+Filter\+Source\+Video\+Capture\+::svl\+Filter\+Source\+Video\+Capture (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{channelcount}
+\end{DoxyParamCaption}
+)}\label{classsvl_filter_source_video_capture_a3f7ef92098e7365ea75adfd3b5ba6084}
+\hypertarget{classsvl_filter_source_video_capture_aa562e71761456f45d66fdad6855508a2}{}\index{svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}!````~svl\+Filter\+Source\+Video\+Capture@{$\sim$svl\+Filter\+Source\+Video\+Capture}}
+\index{````~svl\+Filter\+Source\+Video\+Capture@{$\sim$svl\+Filter\+Source\+Video\+Capture}!svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}}
+\subsubsection[{$\sim$svl\+Filter\+Source\+Video\+Capture}]{\setlength{\rightskip}{0pt plus 5cm}virtual svl\+Filter\+Source\+Video\+Capture\+::$\sim$svl\+Filter\+Source\+Video\+Capture (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classsvl_filter_source_video_capture_aa562e71761456f45d66fdad6855508a2}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classsvl_filter_source_video_capture_a2fd59f93d8c5e44e67c9dcce01514edd}{}\index{svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}!Create\+Interfaces@{Create\+Interfaces}}
+\index{Create\+Interfaces@{Create\+Interfaces}!svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}}
+\subsubsection[{Create\+Interfaces}]{\setlength{\rightskip}{0pt plus 5cm}virtual void svl\+Filter\+Source\+Video\+Capture\+::\+Create\+Interfaces (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classsvl_filter_source_video_capture_a2fd59f93d8c5e44e67c9dcce01514edd}
+\hypertarget{classsvl_filter_source_video_capture_ac406e5e23bd3a8aa68f6b17e6d8afa99}{}\index{svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}!Dialog\+Device@{Dialog\+Device}}
+\index{Dialog\+Device@{Dialog\+Device}!svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}}
+\subsubsection[{Dialog\+Device}]{\setlength{\rightskip}{0pt plus 5cm}int svl\+Filter\+Source\+Video\+Capture\+::\+Dialog\+Device (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classsvl_filter_source_video_capture_ac406e5e23bd3a8aa68f6b17e6d8afa99}
+\hypertarget{classsvl_filter_source_video_capture_a70944875b11f999ccbe6f50874e694d0}{}\index{svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}!Dialog\+Format@{Dialog\+Format}}
+\index{Dialog\+Format@{Dialog\+Format}!svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}}
+\subsubsection[{Dialog\+Format}]{\setlength{\rightskip}{0pt plus 5cm}int svl\+Filter\+Source\+Video\+Capture\+::\+Dialog\+Format (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{videoch = {\ttfamily {\bf S\+V\+L\+\_\+\+L\+E\+F\+T}}}
+\end{DoxyParamCaption}
+)}\label{classsvl_filter_source_video_capture_a70944875b11f999ccbe6f50874e694d0}
+\hypertarget{classsvl_filter_source_video_capture_a7555805bed43a6cc640d0c393115e3b6}{}\index{svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}!Dialog\+Image\+Properties@{Dialog\+Image\+Properties}}
+\index{Dialog\+Image\+Properties@{Dialog\+Image\+Properties}!svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}}
+\subsubsection[{Dialog\+Image\+Properties}]{\setlength{\rightskip}{0pt plus 5cm}int svl\+Filter\+Source\+Video\+Capture\+::\+Dialog\+Image\+Properties (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{videoch = {\ttfamily {\bf S\+V\+L\+\_\+\+L\+E\+F\+T}}}
+\end{DoxyParamCaption}
+)}\label{classsvl_filter_source_video_capture_a7555805bed43a6cc640d0c393115e3b6}
+\hypertarget{classsvl_filter_source_video_capture_a6dbe33ac0c7aebb296ebcf16c3b8c860}{}\index{svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}!Dialog\+Input@{Dialog\+Input}}
+\index{Dialog\+Input@{Dialog\+Input}!svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}}
+\subsubsection[{Dialog\+Input}]{\setlength{\rightskip}{0pt plus 5cm}int svl\+Filter\+Source\+Video\+Capture\+::\+Dialog\+Input (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{deviceid}
+\end{DoxyParamCaption}
+)}\label{classsvl_filter_source_video_capture_a6dbe33ac0c7aebb296ebcf16c3b8c860}
+\hypertarget{classsvl_filter_source_video_capture_a312929cfc056417d0884be3575e12072}{}\index{svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}!Dialog\+Setup@{Dialog\+Setup}}
+\index{Dialog\+Setup@{Dialog\+Setup}!svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}}
+\subsubsection[{Dialog\+Setup}]{\setlength{\rightskip}{0pt plus 5cm}int svl\+Filter\+Source\+Video\+Capture\+::\+Dialog\+Setup (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{videoch = {\ttfamily {\bf S\+V\+L\+\_\+\+L\+E\+F\+T}}}
+\end{DoxyParamCaption}
+)}\label{classsvl_filter_source_video_capture_a312929cfc056417d0884be3575e12072}
+\hypertarget{classsvl_filter_source_video_capture_aa0be0c5befb0a6fc76277a1df61c5513}{}\index{svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}!Dialog\+Trigger@{Dialog\+Trigger}}
+\index{Dialog\+Trigger@{Dialog\+Trigger}!svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}}
+\subsubsection[{Dialog\+Trigger}]{\setlength{\rightskip}{0pt plus 5cm}int svl\+Filter\+Source\+Video\+Capture\+::\+Dialog\+Trigger (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{videoch = {\ttfamily {\bf S\+V\+L\+\_\+\+L\+E\+F\+T}}}
+\end{DoxyParamCaption}
+)}\label{classsvl_filter_source_video_capture_aa0be0c5befb0a6fc76277a1df61c5513}
+\hypertarget{classsvl_filter_source_video_capture_aa23d8b697cd920034d4b2eca29defcea}{}\index{svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}!Enumerate\+Devices@{Enumerate\+Devices}}
+\index{Enumerate\+Devices@{Enumerate\+Devices}!svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}}
+\subsubsection[{Enumerate\+Devices}]{\setlength{\rightskip}{0pt plus 5cm}int svl\+Filter\+Source\+Video\+Capture\+::\+Enumerate\+Devices (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classsvl_filter_source_video_capture_aa23d8b697cd920034d4b2eca29defcea}
+\hypertarget{classsvl_filter_source_video_capture_aa910918889f8432791329274497a69d4}{}\index{svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}!Enumerate\+Devices\+Command@{Enumerate\+Devices\+Command}}
+\index{Enumerate\+Devices\+Command@{Enumerate\+Devices\+Command}!svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}}
+\subsubsection[{Enumerate\+Devices\+Command}]{\setlength{\rightskip}{0pt plus 5cm}virtual void svl\+Filter\+Source\+Video\+Capture\+::\+Enumerate\+Devices\+Command (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classsvl_filter_source_video_capture_aa910918889f8432791329274497a69d4}
+\hypertarget{classsvl_filter_source_video_capture_a1dd7a55838ea87f65aad6dd9ed2a7874}{}\index{svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}!Get\+Channels\+Command@{Get\+Channels\+Command}}
+\index{Get\+Channels\+Command@{Get\+Channels\+Command}!svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}}
+\subsubsection[{Get\+Channels\+Command}]{\setlength{\rightskip}{0pt plus 5cm}virtual void svl\+Filter\+Source\+Video\+Capture\+::\+Get\+Channels\+Command (
+\begin{DoxyParamCaption}
+\item[{int \&}]{channels}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classsvl_filter_source_video_capture_a1dd7a55838ea87f65aad6dd9ed2a7874}
+\hypertarget{classsvl_filter_source_video_capture_ad5113b583320c5a857766ec6311f2908}{}\index{svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}!Get\+Command@{Get\+Command}}
+\index{Get\+Command@{Get\+Command}!svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}}
+\subsubsection[{Get\+Command}]{\setlength{\rightskip}{0pt plus 5cm}virtual void svl\+Filter\+Source\+Video\+Capture\+::\+Get\+Command (
+\begin{DoxyParamCaption}
+\item[{{\bf This\+Type\+::\+Config} \&}]{objref}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classsvl_filter_source_video_capture_ad5113b583320c5a857766ec6311f2908}
+\hypertarget{classsvl_filter_source_video_capture_a48d8ab9fc28c745aa66d41236f8a9e93}{}\index{svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}!Get\+Device@{Get\+Device}}
+\index{Get\+Device@{Get\+Device}!svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}}
+\subsubsection[{Get\+Device}]{\setlength{\rightskip}{0pt plus 5cm}int svl\+Filter\+Source\+Video\+Capture\+::\+Get\+Device (
+\begin{DoxyParamCaption}
+\item[{int \&}]{deviceid, }
+\item[{int \&}]{inputid, }
+\item[{unsigned int}]{videoch = {\ttfamily {\bf S\+V\+L\+\_\+\+L\+E\+F\+T}}}
+\end{DoxyParamCaption}
+) const}\label{classsvl_filter_source_video_capture_a48d8ab9fc28c745aa66d41236f8a9e93}
+\hypertarget{classsvl_filter_source_video_capture_a651807fb1391fd672e9bd97e598dd243}{}\index{svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}!Get\+Device\+L\+Command@{Get\+Device\+L\+Command}}
+\index{Get\+Device\+L\+Command@{Get\+Device\+L\+Command}!svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}}
+\subsubsection[{Get\+Device\+L\+Command}]{\setlength{\rightskip}{0pt plus 5cm}virtual void svl\+Filter\+Source\+Video\+Capture\+::\+Get\+Device\+L\+Command (
+\begin{DoxyParamCaption}
+\item[{int \&}]{deviceid}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classsvl_filter_source_video_capture_a651807fb1391fd672e9bd97e598dd243}
+\hypertarget{classsvl_filter_source_video_capture_a21cb6cab9a30f845f15072fbb18d7380}{}\index{svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}!Get\+Device\+List@{Get\+Device\+List}}
+\index{Get\+Device\+List@{Get\+Device\+List}!svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}}
+\subsubsection[{Get\+Device\+List}]{\setlength{\rightskip}{0pt plus 5cm}int svl\+Filter\+Source\+Video\+Capture\+::\+Get\+Device\+List (
+\begin{DoxyParamCaption}
+\item[{{\bf Device\+Info} $\ast$$\ast$}]{deviceinfolist}
+\end{DoxyParamCaption}
+) const}\label{classsvl_filter_source_video_capture_a21cb6cab9a30f845f15072fbb18d7380}
+\hypertarget{classsvl_filter_source_video_capture_a50e0b460d69240a109215cae6aa43e5a}{}\index{svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}!Get\+Device\+List\+Command@{Get\+Device\+List\+Command}}
+\index{Get\+Device\+List\+Command@{Get\+Device\+List\+Command}!svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}}
+\subsubsection[{Get\+Device\+List\+Command}]{\setlength{\rightskip}{0pt plus 5cm}virtual void svl\+Filter\+Source\+Video\+Capture\+::\+Get\+Device\+List\+Command (
+\begin{DoxyParamCaption}
+\item[{{\bf This\+Type\+::\+Device\+Info\+List\+Type} \&}]{devicelist}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classsvl_filter_source_video_capture_a50e0b460d69240a109215cae6aa43e5a}
+\hypertarget{classsvl_filter_source_video_capture_ad6ec3e7df7121a67d17136126501d5ff}{}\index{svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}!Get\+Device\+R\+Command@{Get\+Device\+R\+Command}}
+\index{Get\+Device\+R\+Command@{Get\+Device\+R\+Command}!svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}}
+\subsubsection[{Get\+Device\+R\+Command}]{\setlength{\rightskip}{0pt plus 5cm}virtual void svl\+Filter\+Source\+Video\+Capture\+::\+Get\+Device\+R\+Command (
+\begin{DoxyParamCaption}
+\item[{int \&}]{deviceid}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classsvl_filter_source_video_capture_ad6ec3e7df7121a67d17136126501d5ff}
+\hypertarget{classsvl_filter_source_video_capture_af1ce86b874a6fe5ef8356bf290dce420}{}\index{svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}!Get\+Dimensions\+L\+Command@{Get\+Dimensions\+L\+Command}}
+\index{Get\+Dimensions\+L\+Command@{Get\+Dimensions\+L\+Command}!svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}}
+\subsubsection[{Get\+Dimensions\+L\+Command}]{\setlength{\rightskip}{0pt plus 5cm}virtual void svl\+Filter\+Source\+Video\+Capture\+::\+Get\+Dimensions\+L\+Command (
+\begin{DoxyParamCaption}
+\item[{{\bf vct\+Int2} \&}]{dimensions}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classsvl_filter_source_video_capture_af1ce86b874a6fe5ef8356bf290dce420}
+\hypertarget{classsvl_filter_source_video_capture_a69e13d8177c9db036b867a53f6196e16}{}\index{svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}!Get\+Dimensions\+R\+Command@{Get\+Dimensions\+R\+Command}}
+\index{Get\+Dimensions\+R\+Command@{Get\+Dimensions\+R\+Command}!svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}}
+\subsubsection[{Get\+Dimensions\+R\+Command}]{\setlength{\rightskip}{0pt plus 5cm}virtual void svl\+Filter\+Source\+Video\+Capture\+::\+Get\+Dimensions\+R\+Command (
+\begin{DoxyParamCaption}
+\item[{{\bf vct\+Int2} \&}]{dimensions}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classsvl_filter_source_video_capture_a69e13d8177c9db036b867a53f6196e16}
+\hypertarget{classsvl_filter_source_video_capture_a249fb6ec35e4888c8426fbc97cf2625c}{}\index{svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}!Get\+Format@{Get\+Format}}
+\index{Get\+Format@{Get\+Format}!svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}}
+\subsubsection[{Get\+Format}]{\setlength{\rightskip}{0pt plus 5cm}int svl\+Filter\+Source\+Video\+Capture\+::\+Get\+Format (
+\begin{DoxyParamCaption}
+\item[{{\bf Image\+Format} \&}]{format, }
+\item[{unsigned int}]{videoch = {\ttfamily {\bf S\+V\+L\+\_\+\+L\+E\+F\+T}}}
+\end{DoxyParamCaption}
+) const}\label{classsvl_filter_source_video_capture_a249fb6ec35e4888c8426fbc97cf2625c}
+\hypertarget{classsvl_filter_source_video_capture_a3947836ef8d61f6201203c4db3614782}{}\index{svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}!Get\+Format\+L\+Command@{Get\+Format\+L\+Command}}
+\index{Get\+Format\+L\+Command@{Get\+Format\+L\+Command}!svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}}
+\subsubsection[{Get\+Format\+L\+Command}]{\setlength{\rightskip}{0pt plus 5cm}virtual void svl\+Filter\+Source\+Video\+Capture\+::\+Get\+Format\+L\+Command (
+\begin{DoxyParamCaption}
+\item[{{\bf This\+Type\+::\+Image\+Format} \&}]{format}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classsvl_filter_source_video_capture_a3947836ef8d61f6201203c4db3614782}
+\hypertarget{classsvl_filter_source_video_capture_aaeaf902a2fb7ac3884627bece1582909}{}\index{svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}!Get\+Format\+List@{Get\+Format\+List}}
+\index{Get\+Format\+List@{Get\+Format\+List}!svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}}
+\subsubsection[{Get\+Format\+List}]{\setlength{\rightskip}{0pt plus 5cm}int svl\+Filter\+Source\+Video\+Capture\+::\+Get\+Format\+List (
+\begin{DoxyParamCaption}
+\item[{{\bf Image\+Format} $\ast$$\ast$}]{formatlist, }
+\item[{unsigned int}]{videoch = {\ttfamily {\bf S\+V\+L\+\_\+\+L\+E\+F\+T}}}
+\end{DoxyParamCaption}
+) const}\label{classsvl_filter_source_video_capture_aaeaf902a2fb7ac3884627bece1582909}
+\hypertarget{classsvl_filter_source_video_capture_a8f6d51e949b294c7d30d17fe98755abd}{}\index{svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}!Get\+Format\+List\+L\+Command@{Get\+Format\+List\+L\+Command}}
+\index{Get\+Format\+List\+L\+Command@{Get\+Format\+List\+L\+Command}!svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}}
+\subsubsection[{Get\+Format\+List\+L\+Command}]{\setlength{\rightskip}{0pt plus 5cm}virtual void svl\+Filter\+Source\+Video\+Capture\+::\+Get\+Format\+List\+L\+Command (
+\begin{DoxyParamCaption}
+\item[{{\bf This\+Type\+::\+Format\+List\+Type} \&}]{formatlist}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classsvl_filter_source_video_capture_a8f6d51e949b294c7d30d17fe98755abd}
+\hypertarget{classsvl_filter_source_video_capture_a9e0816d82331d49ca668c520e0b6f08b}{}\index{svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}!Get\+Format\+List\+R\+Command@{Get\+Format\+List\+R\+Command}}
+\index{Get\+Format\+List\+R\+Command@{Get\+Format\+List\+R\+Command}!svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}}
+\subsubsection[{Get\+Format\+List\+R\+Command}]{\setlength{\rightskip}{0pt plus 5cm}virtual void svl\+Filter\+Source\+Video\+Capture\+::\+Get\+Format\+List\+R\+Command (
+\begin{DoxyParamCaption}
+\item[{{\bf This\+Type\+::\+Format\+List\+Type} \&}]{formatlist}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classsvl_filter_source_video_capture_a9e0816d82331d49ca668c520e0b6f08b}
+\hypertarget{classsvl_filter_source_video_capture_af2ad11e3109c2162deef43ae9b66465f}{}\index{svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}!Get\+Format\+R\+Command@{Get\+Format\+R\+Command}}
+\index{Get\+Format\+R\+Command@{Get\+Format\+R\+Command}!svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}}
+\subsubsection[{Get\+Format\+R\+Command}]{\setlength{\rightskip}{0pt plus 5cm}virtual void svl\+Filter\+Source\+Video\+Capture\+::\+Get\+Format\+R\+Command (
+\begin{DoxyParamCaption}
+\item[{{\bf This\+Type\+::\+Image\+Format} \&}]{format}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classsvl_filter_source_video_capture_af2ad11e3109c2162deef43ae9b66465f}
+\hypertarget{classsvl_filter_source_video_capture_a3e8da832599f63d73f6e5e582364284e}{}\index{svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}!Get\+Height@{Get\+Height}}
+\index{Get\+Height@{Get\+Height}!svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}}
+\subsubsection[{Get\+Height}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int svl\+Filter\+Source\+Video\+Capture\+::\+Get\+Height (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{videoch = {\ttfamily {\bf S\+V\+L\+\_\+\+L\+E\+F\+T}}}
+\end{DoxyParamCaption}
+) const}\label{classsvl_filter_source_video_capture_a3e8da832599f63d73f6e5e582364284e}
+\hypertarget{classsvl_filter_source_video_capture_a3e217734151f975b80fdc1c2e8173e33}{}\index{svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}!Get\+Image\+Properties@{Get\+Image\+Properties}}
+\index{Get\+Image\+Properties@{Get\+Image\+Properties}!svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}}
+\subsubsection[{Get\+Image\+Properties}]{\setlength{\rightskip}{0pt plus 5cm}int svl\+Filter\+Source\+Video\+Capture\+::\+Get\+Image\+Properties (
+\begin{DoxyParamCaption}
+\item[{{\bf Image\+Properties} \&}]{properties, }
+\item[{unsigned int}]{videoch = {\ttfamily {\bf S\+V\+L\+\_\+\+L\+E\+F\+T}}}
+\end{DoxyParamCaption}
+) const}\label{classsvl_filter_source_video_capture_a3e217734151f975b80fdc1c2e8173e33}
+\hypertarget{classsvl_filter_source_video_capture_a29d406f7888ac42962c86edc507c7f98}{}\index{svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}!Get\+Image\+Properties\+L\+Command@{Get\+Image\+Properties\+L\+Command}}
+\index{Get\+Image\+Properties\+L\+Command@{Get\+Image\+Properties\+L\+Command}!svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}}
+\subsubsection[{Get\+Image\+Properties\+L\+Command}]{\setlength{\rightskip}{0pt plus 5cm}virtual void svl\+Filter\+Source\+Video\+Capture\+::\+Get\+Image\+Properties\+L\+Command (
+\begin{DoxyParamCaption}
+\item[{{\bf This\+Type\+::\+Image\+Properties} \&}]{properties}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classsvl_filter_source_video_capture_a29d406f7888ac42962c86edc507c7f98}
+\hypertarget{classsvl_filter_source_video_capture_a5b1dd1a254e7425ce53539e909a49e53}{}\index{svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}!Get\+Image\+Properties\+R\+Command@{Get\+Image\+Properties\+R\+Command}}
+\index{Get\+Image\+Properties\+R\+Command@{Get\+Image\+Properties\+R\+Command}!svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}}
+\subsubsection[{Get\+Image\+Properties\+R\+Command}]{\setlength{\rightskip}{0pt plus 5cm}virtual void svl\+Filter\+Source\+Video\+Capture\+::\+Get\+Image\+Properties\+R\+Command (
+\begin{DoxyParamCaption}
+\item[{{\bf This\+Type\+::\+Image\+Properties} \&}]{properties}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classsvl_filter_source_video_capture_a5b1dd1a254e7425ce53539e909a49e53}
+\hypertarget{classsvl_filter_source_video_capture_a2fc6b6f712c78c0fdda8cfb62ac2cb35}{}\index{svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}!Get\+Input\+L\+Command@{Get\+Input\+L\+Command}}
+\index{Get\+Input\+L\+Command@{Get\+Input\+L\+Command}!svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}}
+\subsubsection[{Get\+Input\+L\+Command}]{\setlength{\rightskip}{0pt plus 5cm}virtual void svl\+Filter\+Source\+Video\+Capture\+::\+Get\+Input\+L\+Command (
+\begin{DoxyParamCaption}
+\item[{int \&}]{inputid}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classsvl_filter_source_video_capture_a2fc6b6f712c78c0fdda8cfb62ac2cb35}
+\hypertarget{classsvl_filter_source_video_capture_a97e2fe09635eed40583aa6b1b4b51ab7}{}\index{svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}!Get\+Input\+R\+Command@{Get\+Input\+R\+Command}}
+\index{Get\+Input\+R\+Command@{Get\+Input\+R\+Command}!svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}}
+\subsubsection[{Get\+Input\+R\+Command}]{\setlength{\rightskip}{0pt plus 5cm}virtual void svl\+Filter\+Source\+Video\+Capture\+::\+Get\+Input\+R\+Command (
+\begin{DoxyParamCaption}
+\item[{int \&}]{inputid}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classsvl_filter_source_video_capture_a97e2fe09635eed40583aa6b1b4b51ab7}
+\hypertarget{classsvl_filter_source_video_capture_a0f87882443980b7a5d3364e294f12daf}{}\index{svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}!Get\+Pattern\+Type\+Name@{Get\+Pattern\+Type\+Name}}
+\index{Get\+Pattern\+Type\+Name@{Get\+Pattern\+Type\+Name}!svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}}
+\subsubsection[{Get\+Pattern\+Type\+Name}]{\setlength{\rightskip}{0pt plus 5cm}static std\+::string svl\+Filter\+Source\+Video\+Capture\+::\+Get\+Pattern\+Type\+Name (
+\begin{DoxyParamCaption}
+\item[{{\bf Pattern\+Type}}]{patterntype}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classsvl_filter_source_video_capture_a0f87882443980b7a5d3364e294f12daf}
+\hypertarget{classsvl_filter_source_video_capture_a98018ec9cd94d108a90a21f91be1e7cd}{}\index{svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}!Get\+Pixel\+Type\+Name@{Get\+Pixel\+Type\+Name}}
+\index{Get\+Pixel\+Type\+Name@{Get\+Pixel\+Type\+Name}!svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}}
+\subsubsection[{Get\+Pixel\+Type\+Name}]{\setlength{\rightskip}{0pt plus 5cm}static std\+::string svl\+Filter\+Source\+Video\+Capture\+::\+Get\+Pixel\+Type\+Name (
+\begin{DoxyParamCaption}
+\item[{{\bf Pixel\+Type}}]{pixeltype}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classsvl_filter_source_video_capture_a98018ec9cd94d108a90a21f91be1e7cd}
+\hypertarget{classsvl_filter_source_video_capture_a79b4017c863b616bb138b54d4875d280}{}\index{svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}!Get\+Target\+Frequency@{Get\+Target\+Frequency}}
+\index{Get\+Target\+Frequency@{Get\+Target\+Frequency}!svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}}
+\subsubsection[{Get\+Target\+Frequency}]{\setlength{\rightskip}{0pt plus 5cm}double svl\+Filter\+Source\+Video\+Capture\+::\+Get\+Target\+Frequency (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{classsvl_filter_source_video_capture_a79b4017c863b616bb138b54d4875d280}
+
+
+Reimplemented from \hyperlink{classsvl_filter_source_base_a5b5d1b96c248afc1d5ecc099b879e0c5}{svl\+Filter\+Source\+Base}.
+
+\hypertarget{classsvl_filter_source_video_capture_a13ad2c1cec2121ea7742f4c00bb49059}{}\index{svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}!Get\+Trigger@{Get\+Trigger}}
+\index{Get\+Trigger@{Get\+Trigger}!svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}}
+\subsubsection[{Get\+Trigger}]{\setlength{\rightskip}{0pt plus 5cm}int svl\+Filter\+Source\+Video\+Capture\+::\+Get\+Trigger (
+\begin{DoxyParamCaption}
+\item[{{\bf External\+Trigger} \&}]{trigger, }
+\item[{unsigned int}]{videoch = {\ttfamily {\bf S\+V\+L\+\_\+\+L\+E\+F\+T}}}
+\end{DoxyParamCaption}
+) const}\label{classsvl_filter_source_video_capture_a13ad2c1cec2121ea7742f4c00bb49059}
+\hypertarget{classsvl_filter_source_video_capture_ae425165fad79636ee1c44dc67f10d6ed}{}\index{svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}!Get\+Trigger\+L\+Command@{Get\+Trigger\+L\+Command}}
+\index{Get\+Trigger\+L\+Command@{Get\+Trigger\+L\+Command}!svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}}
+\subsubsection[{Get\+Trigger\+L\+Command}]{\setlength{\rightskip}{0pt plus 5cm}virtual void svl\+Filter\+Source\+Video\+Capture\+::\+Get\+Trigger\+L\+Command (
+\begin{DoxyParamCaption}
+\item[{{\bf This\+Type\+::\+External\+Trigger} \&}]{trigger}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classsvl_filter_source_video_capture_ae425165fad79636ee1c44dc67f10d6ed}
+\hypertarget{classsvl_filter_source_video_capture_a0ad2bb0c7ecedf0cf3db911764c92257}{}\index{svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}!Get\+Trigger\+R\+Command@{Get\+Trigger\+R\+Command}}
+\index{Get\+Trigger\+R\+Command@{Get\+Trigger\+R\+Command}!svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}}
+\subsubsection[{Get\+Trigger\+R\+Command}]{\setlength{\rightskip}{0pt plus 5cm}virtual void svl\+Filter\+Source\+Video\+Capture\+::\+Get\+Trigger\+R\+Command (
+\begin{DoxyParamCaption}
+\item[{{\bf This\+Type\+::\+External\+Trigger} \&}]{trigger}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classsvl_filter_source_video_capture_a0ad2bb0c7ecedf0cf3db911764c92257}
+\hypertarget{classsvl_filter_source_video_capture_a270795bce27dbfb8107f1d2b6ea5c483}{}\index{svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}!Get\+Width@{Get\+Width}}
+\index{Get\+Width@{Get\+Width}!svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}}
+\subsubsection[{Get\+Width}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int svl\+Filter\+Source\+Video\+Capture\+::\+Get\+Width (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{videoch = {\ttfamily {\bf S\+V\+L\+\_\+\+L\+E\+F\+T}}}
+\end{DoxyParamCaption}
+) const}\label{classsvl_filter_source_video_capture_a270795bce27dbfb8107f1d2b6ea5c483}
+\hypertarget{classsvl_filter_source_video_capture_a1da5704a88657e2e84d8215fcbe9e2c3}{}\index{svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}}
+\subsubsection[{Initialize}]{\setlength{\rightskip}{0pt plus 5cm}virtual int svl\+Filter\+Source\+Video\+Capture\+::\+Initialize (
+\begin{DoxyParamCaption}
+\item[{{\bf svl\+Sample} $\ast$\&}]{sync\+Output}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classsvl_filter_source_video_capture_a1da5704a88657e2e84d8215fcbe9e2c3}
+
+
+Reimplemented from \hyperlink{classsvl_filter_source_base_a7fea7ec5ddd6eb315f482fce965e2cc9}{svl\+Filter\+Source\+Base}.
+
+\hypertarget{classsvl_filter_source_video_capture_a01bdbd8e70c734acd7f47947f876d4ca}{}\index{svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}!Load\+Settings@{Load\+Settings}}
+\index{Load\+Settings@{Load\+Settings}!svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}}
+\subsubsection[{Load\+Settings}]{\setlength{\rightskip}{0pt plus 5cm}int svl\+Filter\+Source\+Video\+Capture\+::\+Load\+Settings (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{filepath}
+\end{DoxyParamCaption}
+)}\label{classsvl_filter_source_video_capture_a01bdbd8e70c734acd7f47947f876d4ca}
+\hypertarget{classsvl_filter_source_video_capture_a3850149032cf1d35c30a3638b4481c76}{}\index{svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}!Load\+Settings\+Command@{Load\+Settings\+Command}}
+\index{Load\+Settings\+Command@{Load\+Settings\+Command}!svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}}
+\subsubsection[{Load\+Settings\+Command}]{\setlength{\rightskip}{0pt plus 5cm}virtual void svl\+Filter\+Source\+Video\+Capture\+::\+Load\+Settings\+Command (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{filepath}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classsvl_filter_source_video_capture_a3850149032cf1d35c30a3638b4481c76}
+\hypertarget{classsvl_filter_source_video_capture_ac898139251c6c708cd17822a794f63f7}{}\index{svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}!Print\+Device\+List@{Print\+Device\+List}}
+\index{Print\+Device\+List@{Print\+Device\+List}!svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}}
+\subsubsection[{Print\+Device\+List}]{\setlength{\rightskip}{0pt plus 5cm}int svl\+Filter\+Source\+Video\+Capture\+::\+Print\+Device\+List (
+\begin{DoxyParamCaption}
+\item[{bool}]{update = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\label{classsvl_filter_source_video_capture_ac898139251c6c708cd17822a794f63f7}
+\hypertarget{classsvl_filter_source_video_capture_abb0305cbcc53b3aad08fb5f9e1071bbb}{}\index{svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}!Print\+Format\+List@{Print\+Format\+List}}
+\index{Print\+Format\+List@{Print\+Format\+List}!svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}}
+\subsubsection[{Print\+Format\+List}]{\setlength{\rightskip}{0pt plus 5cm}int svl\+Filter\+Source\+Video\+Capture\+::\+Print\+Format\+List (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{videoch = {\ttfamily {\bf S\+V\+L\+\_\+\+L\+E\+F\+T}}}
+\end{DoxyParamCaption}
+)}\label{classsvl_filter_source_video_capture_abb0305cbcc53b3aad08fb5f9e1071bbb}
+\hypertarget{classsvl_filter_source_video_capture_a8c89ca74d3499711f6c6dcd6bdb36be6}{}\index{svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}!Print\+Input\+List@{Print\+Input\+List}}
+\index{Print\+Input\+List@{Print\+Input\+List}!svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}}
+\subsubsection[{Print\+Input\+List}]{\setlength{\rightskip}{0pt plus 5cm}int svl\+Filter\+Source\+Video\+Capture\+::\+Print\+Input\+List (
+\begin{DoxyParamCaption}
+\item[{int}]{deviceid, }
+\item[{bool}]{update = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\label{classsvl_filter_source_video_capture_a8c89ca74d3499711f6c6dcd6bdb36be6}
+\hypertarget{classsvl_filter_source_video_capture_a6910f1c5144a593ecd7bfd713944730e}{}\index{svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}!Process@{Process}}
+\index{Process@{Process}!svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}}
+\subsubsection[{Process}]{\setlength{\rightskip}{0pt plus 5cm}virtual int svl\+Filter\+Source\+Video\+Capture\+::\+Process (
+\begin{DoxyParamCaption}
+\item[{{\bf svl\+Proc\+Info} $\ast$}]{proc\+Info, }
+\item[{{\bf svl\+Sample} $\ast$\&}]{sync\+Output}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classsvl_filter_source_video_capture_a6910f1c5144a593ecd7bfd713944730e}
+
+
+Implements \hyperlink{classsvl_filter_source_base_a6d50fd7ef217d1d760c76e325169ecaf}{svl\+Filter\+Source\+Base}.
+
+\hypertarget{classsvl_filter_source_video_capture_a004ca0768d12f5bf38eff0b6274f2beb}{}\index{svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}!Release@{Release}}
+\index{Release@{Release}!svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}}
+\subsubsection[{Release}]{\setlength{\rightskip}{0pt plus 5cm}virtual int svl\+Filter\+Source\+Video\+Capture\+::\+Release (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classsvl_filter_source_video_capture_a004ca0768d12f5bf38eff0b6274f2beb}
+
+
+Reimplemented from \hyperlink{classsvl_filter_source_base_a358d2a26ad00dad3f7a4a6aa965f9032}{svl\+Filter\+Source\+Base}.
+
+\hypertarget{classsvl_filter_source_video_capture_acc6ebb12708759516814f721fb1f71e1}{}\index{svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}!Release\+Device\+List@{Release\+Device\+List}}
+\index{Release\+Device\+List@{Release\+Device\+List}!svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}}
+\subsubsection[{Release\+Device\+List}]{\setlength{\rightskip}{0pt plus 5cm}void svl\+Filter\+Source\+Video\+Capture\+::\+Release\+Device\+List (
+\begin{DoxyParamCaption}
+\item[{{\bf Device\+Info} $\ast$}]{deviceinfolist}
+\end{DoxyParamCaption}
+) const}\label{classsvl_filter_source_video_capture_acc6ebb12708759516814f721fb1f71e1}
+\hypertarget{classsvl_filter_source_video_capture_ab6665993a38e11a5357df6087e29fa0b}{}\index{svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}!Release\+Format\+List@{Release\+Format\+List}}
+\index{Release\+Format\+List@{Release\+Format\+List}!svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}}
+\subsubsection[{Release\+Format\+List}]{\setlength{\rightskip}{0pt plus 5cm}void svl\+Filter\+Source\+Video\+Capture\+::\+Release\+Format\+List (
+\begin{DoxyParamCaption}
+\item[{{\bf Image\+Format} $\ast$}]{formatlist}
+\end{DoxyParamCaption}
+) const}\label{classsvl_filter_source_video_capture_ab6665993a38e11a5357df6087e29fa0b}
+\hypertarget{classsvl_filter_source_video_capture_aeaf58c30af75ce6f014ec2ec25eaecaf}{}\index{svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}!Save\+Settings@{Save\+Settings}}
+\index{Save\+Settings@{Save\+Settings}!svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}}
+\subsubsection[{Save\+Settings}]{\setlength{\rightskip}{0pt plus 5cm}int svl\+Filter\+Source\+Video\+Capture\+::\+Save\+Settings (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{filepath}
+\end{DoxyParamCaption}
+)}\label{classsvl_filter_source_video_capture_aeaf58c30af75ce6f014ec2ec25eaecaf}
+\hypertarget{classsvl_filter_source_video_capture_abbacd31e3f5edfd5b2b2a50c7053bc99}{}\index{svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}!Save\+Settings\+Command@{Save\+Settings\+Command}}
+\index{Save\+Settings\+Command@{Save\+Settings\+Command}!svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}}
+\subsubsection[{Save\+Settings\+Command}]{\setlength{\rightskip}{0pt plus 5cm}virtual void svl\+Filter\+Source\+Video\+Capture\+::\+Save\+Settings\+Command (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{filepath}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classsvl_filter_source_video_capture_abbacd31e3f5edfd5b2b2a50c7053bc99}
+\hypertarget{classsvl_filter_source_video_capture_ae2c6ad1d0236879bd925449a372f2346}{}\index{svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}!Select\+Format@{Select\+Format}}
+\index{Select\+Format@{Select\+Format}!svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}}
+\subsubsection[{Select\+Format}]{\setlength{\rightskip}{0pt plus 5cm}int svl\+Filter\+Source\+Video\+Capture\+::\+Select\+Format (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{formatid, }
+\item[{unsigned int}]{videoch = {\ttfamily {\bf S\+V\+L\+\_\+\+L\+E\+F\+T}}}
+\end{DoxyParamCaption}
+)}\label{classsvl_filter_source_video_capture_ae2c6ad1d0236879bd925449a372f2346}
+\hypertarget{classsvl_filter_source_video_capture_a0cdd80a307fa9216000ae363fe8664a8}{}\index{svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}!Select\+Format\+L\+Command@{Select\+Format\+L\+Command}}
+\index{Select\+Format\+L\+Command@{Select\+Format\+L\+Command}!svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}}
+\subsubsection[{Select\+Format\+L\+Command}]{\setlength{\rightskip}{0pt plus 5cm}virtual void svl\+Filter\+Source\+Video\+Capture\+::\+Select\+Format\+L\+Command (
+\begin{DoxyParamCaption}
+\item[{const int \&}]{formatid}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classsvl_filter_source_video_capture_a0cdd80a307fa9216000ae363fe8664a8}
+\hypertarget{classsvl_filter_source_video_capture_ad42cf6d7de3f1c517cf514a5878d5eb8}{}\index{svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}!Select\+Format\+R\+Command@{Select\+Format\+R\+Command}}
+\index{Select\+Format\+R\+Command@{Select\+Format\+R\+Command}!svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}}
+\subsubsection[{Select\+Format\+R\+Command}]{\setlength{\rightskip}{0pt plus 5cm}virtual void svl\+Filter\+Source\+Video\+Capture\+::\+Select\+Format\+R\+Command (
+\begin{DoxyParamCaption}
+\item[{const int \&}]{formatid}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classsvl_filter_source_video_capture_ad42cf6d7de3f1c517cf514a5878d5eb8}
+\hypertarget{classsvl_filter_source_video_capture_af5e7798d59ea80decda47baaa233f637}{}\index{svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}!Set\+Channel\+Count@{Set\+Channel\+Count}}
+\index{Set\+Channel\+Count@{Set\+Channel\+Count}!svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}}
+\subsubsection[{Set\+Channel\+Count}]{\setlength{\rightskip}{0pt plus 5cm}int svl\+Filter\+Source\+Video\+Capture\+::\+Set\+Channel\+Count (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{channelcount}
+\end{DoxyParamCaption}
+)}\label{classsvl_filter_source_video_capture_af5e7798d59ea80decda47baaa233f637}
+\hypertarget{classsvl_filter_source_video_capture_ad5362d8c49ab408cc2b2dece5a98dac9}{}\index{svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}!Set\+Channels\+Command@{Set\+Channels\+Command}}
+\index{Set\+Channels\+Command@{Set\+Channels\+Command}!svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}}
+\subsubsection[{Set\+Channels\+Command}]{\setlength{\rightskip}{0pt plus 5cm}virtual void svl\+Filter\+Source\+Video\+Capture\+::\+Set\+Channels\+Command (
+\begin{DoxyParamCaption}
+\item[{const int \&}]{channels}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classsvl_filter_source_video_capture_ad5362d8c49ab408cc2b2dece5a98dac9}
+\hypertarget{classsvl_filter_source_video_capture_ac506464be36d152e330394bc5598dbf4}{}\index{svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}!Set\+Command@{Set\+Command}}
+\index{Set\+Command@{Set\+Command}!svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}}
+\subsubsection[{Set\+Command}]{\setlength{\rightskip}{0pt plus 5cm}virtual void svl\+Filter\+Source\+Video\+Capture\+::\+Set\+Command (
+\begin{DoxyParamCaption}
+\item[{const {\bf This\+Type\+::\+Config} \&}]{objref}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classsvl_filter_source_video_capture_ac506464be36d152e330394bc5598dbf4}
+\hypertarget{classsvl_filter_source_video_capture_a07b84b8d328f94e6342959709a385808}{}\index{svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}!Set\+Default\+Settings@{Set\+Default\+Settings}}
+\index{Set\+Default\+Settings@{Set\+Default\+Settings}!svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}}
+\subsubsection[{Set\+Default\+Settings}]{\setlength{\rightskip}{0pt plus 5cm}int svl\+Filter\+Source\+Video\+Capture\+::\+Set\+Default\+Settings (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{videoch = {\ttfamily {\bf S\+V\+L\+\_\+\+L\+E\+F\+T}}}
+\end{DoxyParamCaption}
+)}\label{classsvl_filter_source_video_capture_a07b84b8d328f94e6342959709a385808}
+\hypertarget{classsvl_filter_source_video_capture_aebf3b0b1b3c9ef04c20db692d7253256}{}\index{svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}!Set\+Device@{Set\+Device}}
+\index{Set\+Device@{Set\+Device}!svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}}
+\subsubsection[{Set\+Device}]{\setlength{\rightskip}{0pt plus 5cm}int svl\+Filter\+Source\+Video\+Capture\+::\+Set\+Device (
+\begin{DoxyParamCaption}
+\item[{int}]{deviceid, }
+\item[{int}]{inputid = {\ttfamily 0}, }
+\item[{unsigned int}]{videoch = {\ttfamily {\bf S\+V\+L\+\_\+\+L\+E\+F\+T}}}
+\end{DoxyParamCaption}
+)}\label{classsvl_filter_source_video_capture_aebf3b0b1b3c9ef04c20db692d7253256}
+\hypertarget{classsvl_filter_source_video_capture_aee975b68fbf20b1ff832c1cfdfa0b471}{}\index{svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}!Set\+Device\+L\+Command@{Set\+Device\+L\+Command}}
+\index{Set\+Device\+L\+Command@{Set\+Device\+L\+Command}!svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}}
+\subsubsection[{Set\+Device\+L\+Command}]{\setlength{\rightskip}{0pt plus 5cm}virtual void svl\+Filter\+Source\+Video\+Capture\+::\+Set\+Device\+L\+Command (
+\begin{DoxyParamCaption}
+\item[{const int \&}]{deviceid}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classsvl_filter_source_video_capture_aee975b68fbf20b1ff832c1cfdfa0b471}
+\hypertarget{classsvl_filter_source_video_capture_ac90e7cc9fd637928d42b213a55749a4f}{}\index{svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}!Set\+Device\+R\+Command@{Set\+Device\+R\+Command}}
+\index{Set\+Device\+R\+Command@{Set\+Device\+R\+Command}!svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}}
+\subsubsection[{Set\+Device\+R\+Command}]{\setlength{\rightskip}{0pt plus 5cm}virtual void svl\+Filter\+Source\+Video\+Capture\+::\+Set\+Device\+R\+Command (
+\begin{DoxyParamCaption}
+\item[{const int \&}]{deviceid}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classsvl_filter_source_video_capture_ac90e7cc9fd637928d42b213a55749a4f}
+\hypertarget{classsvl_filter_source_video_capture_ae52650c5e7e0c082c11f9f1cd1a80bcc}{}\index{svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}!Set\+Format@{Set\+Format}}
+\index{Set\+Format@{Set\+Format}!svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}}
+\subsubsection[{Set\+Format}]{\setlength{\rightskip}{0pt plus 5cm}int svl\+Filter\+Source\+Video\+Capture\+::\+Set\+Format (
+\begin{DoxyParamCaption}
+\item[{const {\bf Image\+Format} \&}]{format, }
+\item[{unsigned int}]{videoch = {\ttfamily {\bf S\+V\+L\+\_\+\+L\+E\+F\+T}}}
+\end{DoxyParamCaption}
+)}\label{classsvl_filter_source_video_capture_ae52650c5e7e0c082c11f9f1cd1a80bcc}
+\hypertarget{classsvl_filter_source_video_capture_a1d64fd9952f1eaf7b01b9b31273b8329}{}\index{svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}!Set\+Format\+L\+Command@{Set\+Format\+L\+Command}}
+\index{Set\+Format\+L\+Command@{Set\+Format\+L\+Command}!svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}}
+\subsubsection[{Set\+Format\+L\+Command}]{\setlength{\rightskip}{0pt plus 5cm}virtual void svl\+Filter\+Source\+Video\+Capture\+::\+Set\+Format\+L\+Command (
+\begin{DoxyParamCaption}
+\item[{const {\bf This\+Type\+::\+Image\+Format} \&}]{format}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classsvl_filter_source_video_capture_a1d64fd9952f1eaf7b01b9b31273b8329}
+\hypertarget{classsvl_filter_source_video_capture_abf61696d18768de36cdfbc1ae47c65af}{}\index{svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}!Set\+Format\+R\+Command@{Set\+Format\+R\+Command}}
+\index{Set\+Format\+R\+Command@{Set\+Format\+R\+Command}!svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}}
+\subsubsection[{Set\+Format\+R\+Command}]{\setlength{\rightskip}{0pt plus 5cm}virtual void svl\+Filter\+Source\+Video\+Capture\+::\+Set\+Format\+R\+Command (
+\begin{DoxyParamCaption}
+\item[{const {\bf This\+Type\+::\+Image\+Format} \&}]{format}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classsvl_filter_source_video_capture_abf61696d18768de36cdfbc1ae47c65af}
+\hypertarget{classsvl_filter_source_video_capture_a35dbd104d0ea8c40300e571ee17c2fac}{}\index{svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}!Set\+Image\+Properties@{Set\+Image\+Properties}}
+\index{Set\+Image\+Properties@{Set\+Image\+Properties}!svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}}
+\subsubsection[{Set\+Image\+Properties}]{\setlength{\rightskip}{0pt plus 5cm}int svl\+Filter\+Source\+Video\+Capture\+::\+Set\+Image\+Properties (
+\begin{DoxyParamCaption}
+\item[{const {\bf Image\+Properties} \&}]{properties, }
+\item[{unsigned int}]{videoch = {\ttfamily {\bf S\+V\+L\+\_\+\+L\+E\+F\+T}}}
+\end{DoxyParamCaption}
+)}\label{classsvl_filter_source_video_capture_a35dbd104d0ea8c40300e571ee17c2fac}
+\hypertarget{classsvl_filter_source_video_capture_a24fe5d58190fbc762bcae850dff16645}{}\index{svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}!Set\+Image\+Properties\+L\+Command@{Set\+Image\+Properties\+L\+Command}}
+\index{Set\+Image\+Properties\+L\+Command@{Set\+Image\+Properties\+L\+Command}!svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}}
+\subsubsection[{Set\+Image\+Properties\+L\+Command}]{\setlength{\rightskip}{0pt plus 5cm}virtual void svl\+Filter\+Source\+Video\+Capture\+::\+Set\+Image\+Properties\+L\+Command (
+\begin{DoxyParamCaption}
+\item[{const {\bf This\+Type\+::\+Image\+Properties} \&}]{properties}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classsvl_filter_source_video_capture_a24fe5d58190fbc762bcae850dff16645}
+\hypertarget{classsvl_filter_source_video_capture_abf3a679658d86ab8d23e27e2fde85e2a}{}\index{svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}!Set\+Image\+Properties\+R\+Command@{Set\+Image\+Properties\+R\+Command}}
+\index{Set\+Image\+Properties\+R\+Command@{Set\+Image\+Properties\+R\+Command}!svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}}
+\subsubsection[{Set\+Image\+Properties\+R\+Command}]{\setlength{\rightskip}{0pt plus 5cm}virtual void svl\+Filter\+Source\+Video\+Capture\+::\+Set\+Image\+Properties\+R\+Command (
+\begin{DoxyParamCaption}
+\item[{const {\bf This\+Type\+::\+Image\+Properties} \&}]{properties}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classsvl_filter_source_video_capture_abf3a679658d86ab8d23e27e2fde85e2a}
+\hypertarget{classsvl_filter_source_video_capture_afbee99709cde9fc26d88815acfe24d57}{}\index{svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}!Set\+Input\+L\+Command@{Set\+Input\+L\+Command}}
+\index{Set\+Input\+L\+Command@{Set\+Input\+L\+Command}!svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}}
+\subsubsection[{Set\+Input\+L\+Command}]{\setlength{\rightskip}{0pt plus 5cm}virtual void svl\+Filter\+Source\+Video\+Capture\+::\+Set\+Input\+L\+Command (
+\begin{DoxyParamCaption}
+\item[{const int \&}]{inputid}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classsvl_filter_source_video_capture_afbee99709cde9fc26d88815acfe24d57}
+\hypertarget{classsvl_filter_source_video_capture_a37f49c97c934e171a3ddae4c06d0bc88}{}\index{svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}!Set\+Input\+R\+Command@{Set\+Input\+R\+Command}}
+\index{Set\+Input\+R\+Command@{Set\+Input\+R\+Command}!svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}}
+\subsubsection[{Set\+Input\+R\+Command}]{\setlength{\rightskip}{0pt plus 5cm}virtual void svl\+Filter\+Source\+Video\+Capture\+::\+Set\+Input\+R\+Command (
+\begin{DoxyParamCaption}
+\item[{const int \&}]{inputid}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classsvl_filter_source_video_capture_a37f49c97c934e171a3ddae4c06d0bc88}
+\hypertarget{classsvl_filter_source_video_capture_adfd8794f6f06b431beb7022370b7b6ef}{}\index{svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}!Set\+Target\+Frequency@{Set\+Target\+Frequency}}
+\index{Set\+Target\+Frequency@{Set\+Target\+Frequency}!svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}}
+\subsubsection[{Set\+Target\+Frequency}]{\setlength{\rightskip}{0pt plus 5cm}virtual void svl\+Filter\+Source\+Video\+Capture\+::\+Set\+Target\+Frequency (
+\begin{DoxyParamCaption}
+\item[{const double \&}]{hertz}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classsvl_filter_source_video_capture_adfd8794f6f06b431beb7022370b7b6ef}
+
+
+Reimplemented from \hyperlink{classsvl_filter_source_base_afa3df2b062e408bcc91789986cb8e7be}{svl\+Filter\+Source\+Base}.
+
+\hypertarget{classsvl_filter_source_video_capture_a0a756acc24c4c262b23d40671f8a3d7c}{}\index{svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}!Set\+Trigger@{Set\+Trigger}}
+\index{Set\+Trigger@{Set\+Trigger}!svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}}
+\subsubsection[{Set\+Trigger}]{\setlength{\rightskip}{0pt plus 5cm}int svl\+Filter\+Source\+Video\+Capture\+::\+Set\+Trigger (
+\begin{DoxyParamCaption}
+\item[{const {\bf External\+Trigger} \&}]{trigger, }
+\item[{unsigned int}]{videoch = {\ttfamily {\bf S\+V\+L\+\_\+\+L\+E\+F\+T}}}
+\end{DoxyParamCaption}
+)}\label{classsvl_filter_source_video_capture_a0a756acc24c4c262b23d40671f8a3d7c}
+\hypertarget{classsvl_filter_source_video_capture_ab81e6be420ad82b1c1414ebb1c7ca424}{}\index{svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}!Set\+Trigger\+L\+Command@{Set\+Trigger\+L\+Command}}
+\index{Set\+Trigger\+L\+Command@{Set\+Trigger\+L\+Command}!svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}}
+\subsubsection[{Set\+Trigger\+L\+Command}]{\setlength{\rightskip}{0pt plus 5cm}virtual void svl\+Filter\+Source\+Video\+Capture\+::\+Set\+Trigger\+L\+Command (
+\begin{DoxyParamCaption}
+\item[{const {\bf This\+Type\+::\+External\+Trigger} \&}]{trigger}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classsvl_filter_source_video_capture_ab81e6be420ad82b1c1414ebb1c7ca424}
+\hypertarget{classsvl_filter_source_video_capture_ab534dbc847bc8ee2099035c3e5833133}{}\index{svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}!Set\+Trigger\+R\+Command@{Set\+Trigger\+R\+Command}}
+\index{Set\+Trigger\+R\+Command@{Set\+Trigger\+R\+Command}!svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}}
+\subsubsection[{Set\+Trigger\+R\+Command}]{\setlength{\rightskip}{0pt plus 5cm}virtual void svl\+Filter\+Source\+Video\+Capture\+::\+Set\+Trigger\+R\+Command (
+\begin{DoxyParamCaption}
+\item[{const {\bf This\+Type\+::\+External\+Trigger} \&}]{trigger}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classsvl_filter_source_video_capture_ab534dbc847bc8ee2099035c3e5833133}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classsvl_filter_source_video_capture_aa65165c939d276c4378a32c5405f83d4}{}\index{svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}!svl\+Vid\+Cap\+Src\+Dialog\+Thread@{svl\+Vid\+Cap\+Src\+Dialog\+Thread}}
+\index{svl\+Vid\+Cap\+Src\+Dialog\+Thread@{svl\+Vid\+Cap\+Src\+Dialog\+Thread}!svl\+Filter\+Source\+Video\+Capture@{svl\+Filter\+Source\+Video\+Capture}}
+\subsubsection[{svl\+Vid\+Cap\+Src\+Dialog\+Thread}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf svl\+Vid\+Cap\+Src\+Dialog\+Thread}\hspace{0.3cm}{\ttfamily [friend]}}\label{classsvl_filter_source_video_capture_aa65165c939d276c4378a32c5405f83d4}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Stereo\+Vision/\hyperlink{svl_filter_source_video_capture_8h}{svl\+Filter\+Source\+Video\+Capture.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,139 @@
+\hypertarget{vct_dynamic_const_n_array_base_8h}{}\section{/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Vector/vct\+Dynamic\+Const\+N\+Array\+Base.h File Reference}
+\label{vct_dynamic_const_n_array_base_8h}\index{/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Vector/vct\+Dynamic\+Const\+N\+Array\+Base.\+h@{/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Vector/vct\+Dynamic\+Const\+N\+Array\+Base.\+h}}
+
+
+Declaration of \hyperlink{classvct_dynamic_const_n_array_base}{vct\+Dynamic\+Const\+N\+Array\+Base}.  
+
+
+{\ttfamily \#include $<$cisst\+Common/cmn\+Type\+Traits.\+h$>$}\\*
+{\ttfamily \#include $<$cisst\+Common/cmn\+Throw.\+h$>$}\\*
+{\ttfamily \#include $<$cisst\+Common/cmn\+Assert.\+h$>$}\\*
+{\ttfamily \#include $<$cisst\+Vector/vct\+Container\+Traits.\+h$>$}\\*
+{\ttfamily \#include $<$cisst\+Vector/vct\+Dynamic\+N\+Array\+Loop\+Engines.\+h$>$}\\*
+{\ttfamily \#include $<$cisst\+Vector/vct\+Fixed\+Size\+Vector.\+h$>$}\\*
+{\ttfamily \#include $<$cisst\+Vector/vct\+Forward\+Declarations.\+h$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classvct_dynamic_n_array_types}{vct\+Dynamic\+N\+Array\+Types$<$ \+\_\+dimension $>$}
+\item 
+class \hyperlink{classvct_dynamic_n_array_types_1_1_slices_types}{vct\+Dynamic\+N\+Array\+Types$<$ \+\_\+dimension $>$\+::\+Slices\+Types$<$ \+\_\+element\+Type $>$}
+\item 
+class \hyperlink{classvct_dynamic_n_array_types_3_011_01_4}{vct\+Dynamic\+N\+Array\+Types$<$ 1 $>$}
+\item 
+class \hyperlink{classvct_dynamic_n_array_types_3_011_01_4_1_1_slices_types}{vct\+Dynamic\+N\+Array\+Types$<$ 1 $>$\+::\+Slices\+Types$<$ \+\_\+element\+Type $>$}
+\item 
+class \hyperlink{classvct_dynamic_const_n_array_base}{vct\+Dynamic\+Const\+N\+Array\+Base$<$ \+\_\+n\+Array\+Owner\+Type, \+\_\+element\+Type, \+\_\+dimension $>$}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{vct_dynamic_const_n_array_base_8h_a6553ebe02f1a1a5282bc78228d030bc6}{\+\_\+vct\+Dynamic\+Const\+N\+Array\+Base\+\_\+h}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class \+\_\+n\+Array\+Owner\+Type , class \+\_\+\+\_\+n\+Array\+Owner\+Type , class \+\_\+element\+Type , class \+\_\+element\+Operation\+Type , vct\+::size\+\_\+type \+\_\+dimension$>$ }\\\hyperlink{classvct_return_dynamic_n_array}{vct\+Return\+Dynamic\+N\+Array}$<$ bool, \+\_\+dimension $>$ \hyperlink{vct_dynamic_const_n_array_base_8h_a4fe65852da66459fd4bdd292b203f11a}{vct\+Dynamic\+N\+Array\+Elementwise\+Compare\+N\+Array} (const \hyperlink{classvct_dynamic_const_n_array_base}{vct\+Dynamic\+Const\+N\+Array\+Base}$<$ \+\_\+n\+Array\+Owner\+Type, \+\_\+element\+Type, \+\_\+dimension $>$ \&n\+Array1, const \hyperlink{classvct_dynamic_const_n_array_base}{vct\+Dynamic\+Const\+N\+Array\+Base}$<$ \+\_\+n\+Array\+Owner\+Type, \+\_\+element\+Type, \+\_\+dimension $>$ \&n\+Array2)
+\item 
+{\footnotesize template$<$class \+\_\+n\+Array\+Owner\+Type , class \+\_\+element\+Type , class \+\_\+element\+Operation\+Type , vct\+::size\+\_\+type \+\_\+dimension$>$ }\\\hyperlink{classvct_return_dynamic_n_array}{vct\+Return\+Dynamic\+N\+Array}$<$ bool, \+\_\+dimension $>$ \hyperlink{vct_dynamic_const_n_array_base_8h_abd022f9e3f94e1fffa3200c0edb4cdcb}{vct\+Dynamic\+N\+Array\+Elementwise\+Compare\+Scalar} (const \hyperlink{classvct_dynamic_const_n_array_base}{vct\+Dynamic\+Const\+N\+Array\+Base}$<$ \+\_\+n\+Array\+Owner\+Type, \+\_\+element\+Type, \+\_\+dimension $>$ \&n\+Array, const \+\_\+element\+Type \&scalar)
+\item 
+{\footnotesize template$<$class \+\_\+n\+Array\+Owner\+Type , class \+\_\+element\+Type , vct\+::size\+\_\+type \+\_\+dimension$>$ }\\\hyperlink{classvct_dynamic_n_array_ref}{vct\+Dynamic\+N\+Array\+Ref}$<$ \+\_\+element\+Type, \+\_\+dimension-\/1 $>$ \hyperlink{vct_dynamic_const_n_array_base_8h_afe4890fa5d31a798ae34231ba68f7180}{vct\+Dynamic\+N\+Array\+N\+Array\+Slice} (\hyperlink{classvct_dynamic_n_array_base}{vct\+Dynamic\+N\+Array\+Base}$<$ \+\_\+n\+Array\+Owner\+Type, \+\_\+element\+Type, \+\_\+dimension $>$ \&input, \hyperlink{namespacevct_a3e2935e13aac4500965e00d30565775b}{vct\+::size\+\_\+type} dimension, \hyperlink{namespacevct_a50405d87494dce1f22ee3930ca285ee9}{vct\+::index\+\_\+type} index)
+\item 
+{\footnotesize template$<$class \+\_\+n\+Array\+Owner\+Type , class \+\_\+element\+Type $>$ }\\\+\_\+element\+Type \& \hyperlink{vct_dynamic_const_n_array_base_8h_a01b64490fff0beb9b9debc012015e566}{vct\+Dynamic\+N\+Array\+Element\+Slice} (\hyperlink{classvct_dynamic_n_array_base}{vct\+Dynamic\+N\+Array\+Base}$<$ \+\_\+n\+Array\+Owner\+Type, \+\_\+element\+Type, 1 $>$ \&input, \hyperlink{namespacevct_a50405d87494dce1f22ee3930ca285ee9}{vct\+::index\+\_\+type} index)
+\item 
+{\footnotesize template$<$class \+\_\+n\+Array\+Owner\+Type , class \+\_\+element\+Type , vct\+::size\+\_\+type \+\_\+dimension$>$ }\\\hyperlink{classvct_dynamic_const_n_array_ref}{vct\+Dynamic\+Const\+N\+Array\+Ref}$<$ \+\_\+element\+Type, \+\_\+dimension-\/1 $>$ \hyperlink{vct_dynamic_const_n_array_base_8h_a15f27eb4049c7e14e775b6d7584d26d6}{vct\+Dynamic\+N\+Array\+Const\+N\+Array\+Slice} (const \hyperlink{classvct_dynamic_const_n_array_base}{vct\+Dynamic\+Const\+N\+Array\+Base}$<$ \+\_\+n\+Array\+Owner\+Type, \+\_\+element\+Type, \+\_\+dimension $>$ \&input, \hyperlink{namespacevct_a3e2935e13aac4500965e00d30565775b}{vct\+::size\+\_\+type} dimension, \hyperlink{namespacevct_a50405d87494dce1f22ee3930ca285ee9}{vct\+::index\+\_\+type} index)
+\item 
+{\footnotesize template$<$class \+\_\+n\+Array\+Owner\+Type , class \+\_\+element\+Type $>$ }\\const \+\_\+element\+Type \& \hyperlink{vct_dynamic_const_n_array_base_8h_a6d3e2c579e911d4f9d1b0a79eac9c265}{vct\+Dynamic\+N\+Array\+Const\+Element\+Slice} (const \hyperlink{classvct_dynamic_const_n_array_base}{vct\+Dynamic\+Const\+N\+Array\+Base}$<$ \+\_\+n\+Array\+Owner\+Type, \+\_\+element\+Type, 1 $>$ \&input, \hyperlink{namespacevct_a50405d87494dce1f22ee3930ca285ee9}{vct\+::index\+\_\+type} index)
+\item 
+{\footnotesize template$<$class \+\_\+n\+Array\+Owner\+Type , typename \+\_\+element\+Type , vct\+::size\+\_\+type \+\_\+dimension$>$ }\\bool \hyperlink{vct_dynamic_const_n_array_base_8h_aaa74479ffbfa5431bf03436d7c85574e}{vct\+All} (const \hyperlink{classvct_dynamic_const_n_array_base}{vct\+Dynamic\+Const\+N\+Array\+Base}$<$ \+\_\+n\+Array\+Owner\+Type, \+\_\+element\+Type, \+\_\+dimension $>$ \&n\+Array)
+\item 
+{\footnotesize template$<$class \+\_\+n\+Array\+Owner\+Type , typename \+\_\+element\+Type , vct\+::size\+\_\+type \+\_\+dimension$>$ }\\bool \hyperlink{vct_dynamic_const_n_array_base_8h_a7469b187121bc84d058753def5b1f85f}{vct\+Any} (const \hyperlink{classvct_dynamic_const_n_array_base}{vct\+Dynamic\+Const\+N\+Array\+Base}$<$ \+\_\+n\+Array\+Owner\+Type, \+\_\+element\+Type, \+\_\+dimension $>$ \&n\+Array)
+\item 
+{\footnotesize template$<$class \+\_\+n\+Array\+Owner\+Type , typename \+\_\+element\+Type , vct\+::size\+\_\+type \+\_\+dimension$>$ }\\std\+::ostream \& \hyperlink{vct_dynamic_const_n_array_base_8h_a8ffd24e684469bce7130e8502645d70a}{operator$<$$<$} (std\+::ostream \&output, const \hyperlink{classvct_dynamic_const_n_array_base}{vct\+Dynamic\+Const\+N\+Array\+Base}$<$ \+\_\+n\+Array\+Owner\+Type, \+\_\+element\+Type, \+\_\+dimension $>$ \&n\+Array)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Declaration of \hyperlink{classvct_dynamic_const_n_array_base}{vct\+Dynamic\+Const\+N\+Array\+Base}. 
+
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{vct_dynamic_const_n_array_base_8h_a6553ebe02f1a1a5282bc78228d030bc6}{}\index{vct\+Dynamic\+Const\+N\+Array\+Base.\+h@{vct\+Dynamic\+Const\+N\+Array\+Base.\+h}!\+\_\+vct\+Dynamic\+Const\+N\+Array\+Base\+\_\+h@{\+\_\+vct\+Dynamic\+Const\+N\+Array\+Base\+\_\+h}}
+\index{\+\_\+vct\+Dynamic\+Const\+N\+Array\+Base\+\_\+h@{\+\_\+vct\+Dynamic\+Const\+N\+Array\+Base\+\_\+h}!vct\+Dynamic\+Const\+N\+Array\+Base.\+h@{vct\+Dynamic\+Const\+N\+Array\+Base.\+h}}
+\subsubsection[{\+\_\+vct\+Dynamic\+Const\+N\+Array\+Base\+\_\+h}]{\setlength{\rightskip}{0pt plus 5cm}\#define \+\_\+vct\+Dynamic\+Const\+N\+Array\+Base\+\_\+h}\label{vct_dynamic_const_n_array_base_8h_a6553ebe02f1a1a5282bc78228d030bc6}
+
+
+\subsection{Function Documentation}
+\hypertarget{vct_dynamic_const_n_array_base_8h_a8ffd24e684469bce7130e8502645d70a}{}\index{vct\+Dynamic\+Const\+N\+Array\+Base.\+h@{vct\+Dynamic\+Const\+N\+Array\+Base.\+h}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!vct\+Dynamic\+Const\+N\+Array\+Base.\+h@{vct\+Dynamic\+Const\+N\+Array\+Base.\+h}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+n\+Array\+Owner\+Type , typename \+\_\+element\+Type , vct\+::size\+\_\+type \+\_\+dimension$>$ std\+::ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{output, }
+\item[{const {\bf vct\+Dynamic\+Const\+N\+Array\+Base}$<$ \+\_\+n\+Array\+Owner\+Type, \+\_\+element\+Type, \+\_\+dimension $>$ \&}]{n\+Array}
+\end{DoxyParamCaption}
+)}\label{vct_dynamic_const_n_array_base_8h_a8ffd24e684469bce7130e8502645d70a}
+Stream out operator. \hypertarget{vct_dynamic_const_n_array_base_8h_aaa74479ffbfa5431bf03436d7c85574e}{}\index{vct\+Dynamic\+Const\+N\+Array\+Base.\+h@{vct\+Dynamic\+Const\+N\+Array\+Base.\+h}!vct\+All@{vct\+All}}
+\index{vct\+All@{vct\+All}!vct\+Dynamic\+Const\+N\+Array\+Base.\+h@{vct\+Dynamic\+Const\+N\+Array\+Base.\+h}}
+\subsubsection[{vct\+All}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+n\+Array\+Owner\+Type , typename \+\_\+element\+Type , vct\+::size\+\_\+type \+\_\+dimension$>$ bool vct\+All (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Const\+N\+Array\+Base}$<$ \+\_\+n\+Array\+Owner\+Type, \+\_\+element\+Type, \+\_\+dimension $>$ \&}]{n\+Array}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{vct_dynamic_const_n_array_base_8h_aaa74479ffbfa5431bf03436d7c85574e}
+Return true if all the elements of the N\+Array are nonzero, false otherwise \hypertarget{vct_dynamic_const_n_array_base_8h_a7469b187121bc84d058753def5b1f85f}{}\index{vct\+Dynamic\+Const\+N\+Array\+Base.\+h@{vct\+Dynamic\+Const\+N\+Array\+Base.\+h}!vct\+Any@{vct\+Any}}
+\index{vct\+Any@{vct\+Any}!vct\+Dynamic\+Const\+N\+Array\+Base.\+h@{vct\+Dynamic\+Const\+N\+Array\+Base.\+h}}
+\subsubsection[{vct\+Any}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+n\+Array\+Owner\+Type , typename \+\_\+element\+Type , vct\+::size\+\_\+type \+\_\+dimension$>$ bool vct\+Any (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Const\+N\+Array\+Base}$<$ \+\_\+n\+Array\+Owner\+Type, \+\_\+element\+Type, \+\_\+dimension $>$ \&}]{n\+Array}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{vct_dynamic_const_n_array_base_8h_a7469b187121bc84d058753def5b1f85f}
+Return true if any element of the N\+Array is nonzero, false otherwise \hypertarget{vct_dynamic_const_n_array_base_8h_a6d3e2c579e911d4f9d1b0a79eac9c265}{}\index{vct\+Dynamic\+Const\+N\+Array\+Base.\+h@{vct\+Dynamic\+Const\+N\+Array\+Base.\+h}!vct\+Dynamic\+N\+Array\+Const\+Element\+Slice@{vct\+Dynamic\+N\+Array\+Const\+Element\+Slice}}
+\index{vct\+Dynamic\+N\+Array\+Const\+Element\+Slice@{vct\+Dynamic\+N\+Array\+Const\+Element\+Slice}!vct\+Dynamic\+Const\+N\+Array\+Base.\+h@{vct\+Dynamic\+Const\+N\+Array\+Base.\+h}}
+\subsubsection[{vct\+Dynamic\+N\+Array\+Const\+Element\+Slice}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+n\+Array\+Owner\+Type , class \+\_\+element\+Type $>$ const \+\_\+element\+Type\& vct\+Dynamic\+N\+Array\+Const\+Element\+Slice (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Const\+N\+Array\+Base}$<$ \+\_\+n\+Array\+Owner\+Type, \+\_\+element\+Type, 1 $>$ \&}]{input, }
+\item[{{\bf vct\+::index\+\_\+type}}]{index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{vct_dynamic_const_n_array_base_8h_a6d3e2c579e911d4f9d1b0a79eac9c265}
+\hypertarget{vct_dynamic_const_n_array_base_8h_a15f27eb4049c7e14e775b6d7584d26d6}{}\index{vct\+Dynamic\+Const\+N\+Array\+Base.\+h@{vct\+Dynamic\+Const\+N\+Array\+Base.\+h}!vct\+Dynamic\+N\+Array\+Const\+N\+Array\+Slice@{vct\+Dynamic\+N\+Array\+Const\+N\+Array\+Slice}}
+\index{vct\+Dynamic\+N\+Array\+Const\+N\+Array\+Slice@{vct\+Dynamic\+N\+Array\+Const\+N\+Array\+Slice}!vct\+Dynamic\+Const\+N\+Array\+Base.\+h@{vct\+Dynamic\+Const\+N\+Array\+Base.\+h}}
+\subsubsection[{vct\+Dynamic\+N\+Array\+Const\+N\+Array\+Slice}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+n\+Array\+Owner\+Type , class \+\_\+element\+Type , vct\+::size\+\_\+type \+\_\+dimension$>$ {\bf vct\+Dynamic\+Const\+N\+Array\+Ref}$<$\+\_\+element\+Type, \+\_\+dimension -\/ 1$>$ vct\+Dynamic\+N\+Array\+Const\+N\+Array\+Slice (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Const\+N\+Array\+Base}$<$ \+\_\+n\+Array\+Owner\+Type, \+\_\+element\+Type, \+\_\+dimension $>$ \&}]{input, }
+\item[{{\bf vct\+::size\+\_\+type}}]{dimension, }
+\item[{{\bf vct\+::index\+\_\+type}}]{index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{vct_dynamic_const_n_array_base_8h_a15f27eb4049c7e14e775b6d7584d26d6}
+\hypertarget{vct_dynamic_const_n_array_base_8h_a01b64490fff0beb9b9debc012015e566}{}\index{vct\+Dynamic\+Const\+N\+Array\+Base.\+h@{vct\+Dynamic\+Const\+N\+Array\+Base.\+h}!vct\+Dynamic\+N\+Array\+Element\+Slice@{vct\+Dynamic\+N\+Array\+Element\+Slice}}
+\index{vct\+Dynamic\+N\+Array\+Element\+Slice@{vct\+Dynamic\+N\+Array\+Element\+Slice}!vct\+Dynamic\+Const\+N\+Array\+Base.\+h@{vct\+Dynamic\+Const\+N\+Array\+Base.\+h}}
+\subsubsection[{vct\+Dynamic\+N\+Array\+Element\+Slice}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+n\+Array\+Owner\+Type , class \+\_\+element\+Type $>$ \+\_\+element\+Type\& vct\+Dynamic\+N\+Array\+Element\+Slice (
+\begin{DoxyParamCaption}
+\item[{{\bf vct\+Dynamic\+N\+Array\+Base}$<$ \+\_\+n\+Array\+Owner\+Type, \+\_\+element\+Type, 1 $>$ \&}]{input, }
+\item[{{\bf vct\+::index\+\_\+type}}]{index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{vct_dynamic_const_n_array_base_8h_a01b64490fff0beb9b9debc012015e566}
+\hypertarget{vct_dynamic_const_n_array_base_8h_a4fe65852da66459fd4bdd292b203f11a}{}\index{vct\+Dynamic\+Const\+N\+Array\+Base.\+h@{vct\+Dynamic\+Const\+N\+Array\+Base.\+h}!vct\+Dynamic\+N\+Array\+Elementwise\+Compare\+N\+Array@{vct\+Dynamic\+N\+Array\+Elementwise\+Compare\+N\+Array}}
+\index{vct\+Dynamic\+N\+Array\+Elementwise\+Compare\+N\+Array@{vct\+Dynamic\+N\+Array\+Elementwise\+Compare\+N\+Array}!vct\+Dynamic\+Const\+N\+Array\+Base.\+h@{vct\+Dynamic\+Const\+N\+Array\+Base.\+h}}
+\subsubsection[{vct\+Dynamic\+N\+Array\+Elementwise\+Compare\+N\+Array}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+n\+Array\+Owner\+Type , class \+\_\+\+\_\+n\+Array\+Owner\+Type , class \+\_\+element\+Type , class \+\_\+element\+Operation\+Type , vct\+::size\+\_\+type \+\_\+dimension$>$ {\bf vct\+Return\+Dynamic\+N\+Array}$<$bool, \+\_\+dimension$>$ vct\+Dynamic\+N\+Array\+Elementwise\+Compare\+N\+Array (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Const\+N\+Array\+Base}$<$ \+\_\+n\+Array\+Owner\+Type, \+\_\+element\+Type, \+\_\+dimension $>$ \&}]{n\+Array1, }
+\item[{const {\bf vct\+Dynamic\+Const\+N\+Array\+Base}$<$ \+\_\+n\+Array\+Owner\+Type, \+\_\+element\+Type, \+\_\+dimension $>$ \&}]{n\+Array2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{vct_dynamic_const_n_array_base_8h_a4fe65852da66459fd4bdd292b203f11a}
+\hypertarget{vct_dynamic_const_n_array_base_8h_abd022f9e3f94e1fffa3200c0edb4cdcb}{}\index{vct\+Dynamic\+Const\+N\+Array\+Base.\+h@{vct\+Dynamic\+Const\+N\+Array\+Base.\+h}!vct\+Dynamic\+N\+Array\+Elementwise\+Compare\+Scalar@{vct\+Dynamic\+N\+Array\+Elementwise\+Compare\+Scalar}}
+\index{vct\+Dynamic\+N\+Array\+Elementwise\+Compare\+Scalar@{vct\+Dynamic\+N\+Array\+Elementwise\+Compare\+Scalar}!vct\+Dynamic\+Const\+N\+Array\+Base.\+h@{vct\+Dynamic\+Const\+N\+Array\+Base.\+h}}
+\subsubsection[{vct\+Dynamic\+N\+Array\+Elementwise\+Compare\+Scalar}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+n\+Array\+Owner\+Type , class \+\_\+element\+Type , class \+\_\+element\+Operation\+Type , vct\+::size\+\_\+type \+\_\+dimension$>$ {\bf vct\+Return\+Dynamic\+N\+Array}$<$bool, \+\_\+dimension$>$ vct\+Dynamic\+N\+Array\+Elementwise\+Compare\+Scalar (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Const\+N\+Array\+Base}$<$ \+\_\+n\+Array\+Owner\+Type, \+\_\+element\+Type, \+\_\+dimension $>$ \&}]{n\+Array, }
+\item[{const \+\_\+element\+Type \&}]{scalar}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{vct_dynamic_const_n_array_base_8h_abd022f9e3f94e1fffa3200c0edb4cdcb}
+\hypertarget{vct_dynamic_const_n_array_base_8h_afe4890fa5d31a798ae34231ba68f7180}{}\index{vct\+Dynamic\+Const\+N\+Array\+Base.\+h@{vct\+Dynamic\+Const\+N\+Array\+Base.\+h}!vct\+Dynamic\+N\+Array\+N\+Array\+Slice@{vct\+Dynamic\+N\+Array\+N\+Array\+Slice}}
+\index{vct\+Dynamic\+N\+Array\+N\+Array\+Slice@{vct\+Dynamic\+N\+Array\+N\+Array\+Slice}!vct\+Dynamic\+Const\+N\+Array\+Base.\+h@{vct\+Dynamic\+Const\+N\+Array\+Base.\+h}}
+\subsubsection[{vct\+Dynamic\+N\+Array\+N\+Array\+Slice}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+n\+Array\+Owner\+Type , class \+\_\+element\+Type , vct\+::size\+\_\+type \+\_\+dimension$>$ {\bf vct\+Dynamic\+N\+Array\+Ref}$<$\+\_\+element\+Type, \+\_\+dimension -\/ 1$>$ vct\+Dynamic\+N\+Array\+N\+Array\+Slice (
+\begin{DoxyParamCaption}
+\item[{{\bf vct\+Dynamic\+N\+Array\+Base}$<$ \+\_\+n\+Array\+Owner\+Type, \+\_\+element\+Type, \+\_\+dimension $>$ \&}]{input, }
+\item[{{\bf vct\+::size\+\_\+type}}]{dimension, }
+\item[{{\bf vct\+::index\+\_\+type}}]{index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{vct_dynamic_const_n_array_base_8h_afe4890fa5d31a798ae34231ba68f7180}

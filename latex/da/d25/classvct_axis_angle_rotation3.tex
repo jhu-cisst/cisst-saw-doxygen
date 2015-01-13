@@ -1,0 +1,660 @@
+\hypertarget{classvct_axis_angle_rotation3}{}\section{vct\+Axis\+Angle\+Rotation3$<$ \+\_\+element\+Type $>$ Class Template Reference}
+\label{classvct_axis_angle_rotation3}\index{vct\+Axis\+Angle\+Rotation3$<$ \+\_\+element\+Type $>$@{vct\+Axis\+Angle\+Rotation3$<$ \+\_\+element\+Type $>$}}
+
+
+Define a rotation based on an axis and an angle for a space of dimension 3.  
+
+
+
+
+{\ttfamily \#include $<$vct\+Axis\+Angle\+Rotation3.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \hyperlink{group__cisst_vector_gga278b4a98a62e4f5ff42ce055836240a9a778d22dfe29402d2cfdd381c1b870285}{D\+I\+M\+E\+N\+S\+I\+O\+N} = 3
+ \}
+\item 
+typedef \hyperlink{classvct_axis_angle_rotation3}{vct\+Axis\+Angle\+Rotation3}$<$ value\+\_\+type $>$ \hyperlink{classvct_axis_angle_rotation3_af654a8037b7b82a378f69cb1bfd9b8dd}{This\+Type}
+\item 
+typedef \hyperlink{classvct_fixed_size_vector}{vct\+Fixed\+Size\+Vector}$<$ value\+\_\+type, \hyperlink{group__cisst_vector_gga278b4a98a62e4f5ff42ce055836240a9a778d22dfe29402d2cfdd381c1b870285}{D\+I\+M\+E\+N\+S\+I\+O\+N} $>$ \hyperlink{classvct_axis_angle_rotation3_a3178fd901bb60bb447711b9d5f7e7aae}{Axis\+Type}
+\item 
+typedef \hyperlink{classcmn_type_traits}{cmn\+Type\+Traits}$<$ \+\_\+element\+Type $>$ \hyperlink{classvct_axis_angle_rotation3_a7765132e2cf950c6598eb4d75e6fc297}{Type\+Traits}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classvct_axis_angle_rotation3_a6961961f60bc9f9ad6c2c1978f53238b}{V\+C\+T\+\_\+\+C\+O\+N\+T\+A\+I\+N\+E\+R\+\_\+\+T\+R\+A\+I\+T\+S\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+S} (\+\_\+element\+Type)
+\item 
+\hyperlink{classvct_axis_angle_rotation3_a204b668773ce3653801fe19a776a95d5}{vct\+Axis\+Angle\+Rotation3} ()
+\item 
+\hyperlink{classvct_axis_angle_rotation3_af654a8037b7b82a378f69cb1bfd9b8dd}{This\+Type} \& \hyperlink{classvct_axis_angle_rotation3_adc6555da59fc027daac377767fbbb6c6}{Assign} (const \hyperlink{classvct_axis_angle_rotation3_af654a8037b7b82a378f69cb1bfd9b8dd}{This\+Type} \&other)
+\item 
+const \hyperlink{classvct_axis_angle_rotation3_a3178fd901bb60bb447711b9d5f7e7aae}{Axis\+Type} \& \hyperlink{classvct_axis_angle_rotation3_aa20fe6d1c17276a020efcc739dba37a0}{Axis} (void) const 
+\item 
+\hyperlink{classvct_axis_angle_rotation3_a3178fd901bb60bb447711b9d5f7e7aae}{Axis\+Type} \& \hyperlink{classvct_axis_angle_rotation3_a79e1af8f556aac9e63a26687a50b6745}{Axis} (void)
+\item 
+const Angle\+Type \& \hyperlink{classvct_axis_angle_rotation3_a49fa5666cf32e7883f8478c5ce135a75}{Angle} (void) const 
+\item 
+Angle\+Type \& \hyperlink{classvct_axis_angle_rotation3_a583ad12369e06b7788fd473a812663f1}{Angle} (void)
+\item 
+\hyperlink{classvct_axis_angle_rotation3_af654a8037b7b82a378f69cb1bfd9b8dd}{This\+Type} \& \hyperlink{classvct_axis_angle_rotation3_a088952ce769f71e7f13a38e2654714b3}{Inverse\+Self} (void)
+\item 
+\hyperlink{classvct_axis_angle_rotation3_af654a8037b7b82a378f69cb1bfd9b8dd}{This\+Type} \& \hyperlink{classvct_axis_angle_rotation3_a8172f2362d94c1c0a802568b99ae4fda}{Inverse\+Of} (const \hyperlink{classvct_axis_angle_rotation3_af654a8037b7b82a378f69cb1bfd9b8dd}{This\+Type} \&other\+Rotation)
+\item 
+\hyperlink{classvct_axis_angle_rotation3_af654a8037b7b82a378f69cb1bfd9b8dd}{This\+Type} \hyperlink{classvct_axis_angle_rotation3_a9f9e7f38289d1b9e77f3f3cc3c1d5213}{Inverse} (void) const 
+\item 
+\hyperlink{classvct_axis_angle_rotation3_af654a8037b7b82a378f69cb1bfd9b8dd}{This\+Type} \& \hyperlink{classvct_axis_angle_rotation3_a37ddf9e48a259ffbf6f1beddcadf2aed}{Normalized\+Self} (void)
+\item 
+\hyperlink{classvct_axis_angle_rotation3_af654a8037b7b82a378f69cb1bfd9b8dd}{This\+Type} \& \hyperlink{classvct_axis_angle_rotation3_a9ab57a20a5831e8a46abf161e89d9e05}{Normalized\+Of} (const \hyperlink{classvct_axis_angle_rotation3_af654a8037b7b82a378f69cb1bfd9b8dd}{This\+Type} \&other\+Rotation)
+\item 
+\hyperlink{classvct_axis_angle_rotation3_af654a8037b7b82a378f69cb1bfd9b8dd}{This\+Type} \hyperlink{classvct_axis_angle_rotation3_a116569ba3bfefa865eaa77f47e437a4f}{Normalized} (void) const 
+\item 
+bool \hyperlink{classvct_axis_angle_rotation3_a8ce58b2c95cf2abbb6e4244c5837f46d}{Is\+Normalized} (value\+\_\+type tolerance=\hyperlink{classcmn_type_traits_adc129bf9867295b90d300768b780fa99}{Type\+Traits\+::\+Tolerance}()) const 
+\item 
+bool \hyperlink{classvct_axis_angle_rotation3_a1551351754cb3255404e61e04828d5e0}{Almost\+Equal} (const \hyperlink{classvct_axis_angle_rotation3_af654a8037b7b82a378f69cb1bfd9b8dd}{This\+Type} \&other, value\+\_\+type tolerance=\hyperlink{classcmn_type_traits_adc129bf9867295b90d300768b780fa99}{Type\+Traits\+::\+Tolerance}()) const 
+\item 
+bool \hyperlink{classvct_axis_angle_rotation3_af333432bd09bebbce7334e23d9e0d637}{Almost\+Equivalent} (const \hyperlink{classvct_axis_angle_rotation3_af654a8037b7b82a378f69cb1bfd9b8dd}{This\+Type} \&other, value\+\_\+type tolerance=\hyperlink{classcmn_type_traits_adc129bf9867295b90d300768b780fa99}{Type\+Traits\+::\+Tolerance}()) const 
+\item 
+std\+::string \hyperlink{classvct_axis_angle_rotation3_a21face93472a7d62f8f9065d609cfe32}{To\+String} (void) const 
+\item 
+void \hyperlink{classvct_axis_angle_rotation3_acbda7447118bc35acbb77b0de1c4cfa7}{To\+Stream} (std\+::ostream \&output\+Stream) const 
+\item 
+void \hyperlink{classvct_axis_angle_rotation3_a19187b14336ba6721c158f42a8eeee0e}{To\+Stream\+Raw} (std\+::ostream \&output\+Stream, const char delimiter= \textquotesingle{} \textquotesingle{}, bool header\+Only=false, const std\+::string \&header\+Prefix=\char`\"{}\char`\"{}) const 
+\item 
+void \hyperlink{classvct_axis_angle_rotation3_a9ae280f8e1ea64146875bc7ab4d9648f}{Serialize\+Raw} (std\+::ostream \&output\+Stream) const 
+\item 
+void \hyperlink{classvct_axis_angle_rotation3_a1365204e692b40572f0996a38551c2c3}{De\+Serialize\+Raw} (std\+::istream \&input\+Stream)
+\end{DoxyCompactItemize}
+\begin{Indent}{\bf Constructors with normalization test.}\par
+{\em These constructors will check that the input is valid, i.\+e. normalized. If the input is not normalized, an exception (of type {\ttfamily std\+::runtime\+\_\+error}) will be thrown. Each constructor uses the corresponding \hyperlink{classvct_axis_angle_rotation3_a296f32cc8359a9b986f1d15dd1834aa0}{From()} method based on the input type.
+
+\begin{DoxyNote}{Note}
+See the \hyperlink{_minimal_cmn_8h_ad50e82cf9c9dbd0e6443c13e0d1a6f1a}{cmn\+Throw()} function if an {\ttfamily abort} is better than an exception for your application. 
+\end{DoxyNote}
+}\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$stride\+\_\+type \+\_\+\+\_\+stride, class \+\_\+\+\_\+data\+Ptr\+Type $>$ }\\\hyperlink{classvct_axis_angle_rotation3_ada2d924fbd3a153056a59386780f3131}{vct\+Axis\+Angle\+Rotation3} (const \hyperlink{classvct_fixed_size_const_vector_base}{vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \hyperlink{group__cisst_vector_gga278b4a98a62e4f5ff42ce055836240a9a778d22dfe29402d2cfdd381c1b870285}{D\+I\+M\+E\+N\+S\+I\+O\+N}, \+\_\+\+\_\+stride, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type $>$ \&axis, const Angle\+Type angle)  throw (std\+::runtime\+\_\+error)
+\item 
+{\footnotesize template$<$class \+\_\+vector\+Owner\+Type $>$ }\\\hyperlink{classvct_axis_angle_rotation3_aaca2918591b9722203a8fcdf793e6abe}{vct\+Axis\+Angle\+Rotation3} (const \hyperlink{classvct_dynamic_const_vector_base}{vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, value\+\_\+type $>$ \&axis, Angle\+Type angle)  throw (std\+::runtime\+\_\+error)
+\item 
+{\footnotesize template$<$class \+\_\+container\+Type $>$ }\\\hyperlink{classvct_axis_angle_rotation3_a04fa3bc0de3bcbb8399125d1509008d0}{vct\+Axis\+Angle\+Rotation3} (const \hyperlink{classvct_quaternion_rotation3_base}{vct\+Quaternion\+Rotation3\+Base}$<$ \+\_\+container\+Type $>$ \&quaternion\+Rotation)  throw (std\+::runtime\+\_\+error)
+\item 
+{\footnotesize template$<$class \+\_\+container\+Type $>$ }\\\hyperlink{classvct_axis_angle_rotation3_ae5f8d6b81b3784ebb1ee58ec7f5bca27}{vct\+Axis\+Angle\+Rotation3} (const \hyperlink{classvct_matrix_rotation3_base}{vct\+Matrix\+Rotation3\+Base}$<$ \+\_\+container\+Type $>$ \&matrix\+Rotation)  throw (std\+::runtime\+\_\+error)
+\item 
+{\footnotesize template$<$class \+\_\+container\+Type $>$ }\\\hyperlink{classvct_axis_angle_rotation3_a38b21663c016386d0b5a961a23b98b04}{vct\+Axis\+Angle\+Rotation3} (const \hyperlink{classvct_rodriguez_rotation3_base}{vct\+Rodriguez\+Rotation3\+Base}$<$ \+\_\+container\+Type $>$ \&rodriguez\+Rotation)  throw (std\+::runtime\+\_\+error)
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Constructors without normalization test}\par
+{\em These constructors will either assume that the input is normalized or normalize the input (a copy of it, if required) based on the last parameter provided\+: 
+\begin{DoxyItemize}
+\item If the normalization flag is set to \hyperlink{vct_forward_declarations_8h_a6fd516b0c35fa9967b4da5f03a788985}{V\+C\+T\+\_\+\+D\+O\+\_\+\+N\+O\+T\+\_\+\+N\+O\+R\+M\+A\+L\+I\+Z\+E}, the input is considered already normalized and the constructor will not perform any sanity check. This can lead to numerical instabilities which have to be handled by the caller.
+
+
+\item If the normalization flag is set to \hyperlink{vct_forward_declarations_8h_ae54c682b919a7c5743ea498810518565}{V\+C\+T\+\_\+\+N\+O\+R\+M\+A\+L\+I\+Z\+E}, the input will be normalized. This option should be used whenever it is important to obtain a result as \char`\"{}normalized\char`\"{} as possible.
+
+
+\end{DoxyItemize}}\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$stride\+\_\+type \+\_\+\+\_\+stride, class \+\_\+\+\_\+data\+Ptr\+Type $>$ }\\\hyperlink{classvct_axis_angle_rotation3_a0f6f1bc1932974648c434795c928da93}{vct\+Axis\+Angle\+Rotation3} (const \hyperlink{classvct_fixed_size_const_vector_base}{vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \hyperlink{group__cisst_vector_gga278b4a98a62e4f5ff42ce055836240a9a778d22dfe29402d2cfdd381c1b870285}{D\+I\+M\+E\+N\+S\+I\+O\+N}, \+\_\+\+\_\+stride, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type $>$ \&axis, const Angle\+Type angle, bool normalize\+Input)
+\item 
+{\footnotesize template$<$class \+\_\+vector\+Owner\+Type $>$ }\\\hyperlink{classvct_axis_angle_rotation3_ac956d88cd5738814d0a7cc371f2c6a6e}{vct\+Axis\+Angle\+Rotation3} (const \hyperlink{classvct_dynamic_const_vector_base}{vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, value\+\_\+type $>$ \&axis, Angle\+Type angle, bool normalize\+Input)
+\item 
+{\footnotesize template$<$class \+\_\+container\+Type $>$ }\\\hyperlink{classvct_axis_angle_rotation3_a480f58d5670bfa86156cbc480315289c}{vct\+Axis\+Angle\+Rotation3} (const \hyperlink{classvct_quaternion_rotation3_base}{vct\+Quaternion\+Rotation3\+Base}$<$ \+\_\+container\+Type $>$ \&quaternion\+Rotation, bool normalize\+Input)
+\item 
+{\footnotesize template$<$class \+\_\+container\+Type $>$ }\\\hyperlink{classvct_axis_angle_rotation3_a95f2a93ec7159be4e2745dc4c1e69d64}{vct\+Axis\+Angle\+Rotation3} (const \hyperlink{classvct_matrix_rotation3_base}{vct\+Matrix\+Rotation3\+Base}$<$ \+\_\+container\+Type $>$ \&matrix\+Rotation, bool normalize\+Input)
+\item 
+{\footnotesize template$<$class \+\_\+container\+Type $>$ }\\\hyperlink{classvct_axis_angle_rotation3_a13fc3b115bce109caaf269ab41da1dcc}{vct\+Axis\+Angle\+Rotation3} (const \hyperlink{classvct_rodriguez_rotation3_base}{vct\+Rodriguez\+Rotation3\+Base}$<$ \+\_\+container\+Type $>$ \&rodriguez\+Rotation, bool normalize\+Input)
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Conversion from normalized input.}\par
+{\em These methods will check that the input is normalized. If the input is not normalized, an exception ({\ttfamily std\+::runtime\+\_\+error}) will be thrown using \hyperlink{_minimal_cmn_8h_ad50e82cf9c9dbd0e6443c13e0d1a6f1a}{cmn\+Throw()}.
+
+\begin{DoxyNote}{Note}
+Since all exceptions are thrown using \hyperlink{_minimal_cmn_8h_ad50e82cf9c9dbd0e6443c13e0d1a6f1a}{cmn\+Throw()}, it is possible to configure these methods to use {\ttfamily abort()} if the normalization requirements are not met (see \hyperlink{_minimal_cmn_8h_ad50e82cf9c9dbd0e6443c13e0d1a6f1a}{cmn\+Throw()}). 
+\end{DoxyNote}
+}\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$stride\+\_\+type \+\_\+\+\_\+stride, class \+\_\+\+\_\+data\+Ptr\+Type $>$ }\\\hyperlink{classvct_axis_angle_rotation3_af654a8037b7b82a378f69cb1bfd9b8dd}{This\+Type} \& \hyperlink{classvct_axis_angle_rotation3_a296f32cc8359a9b986f1d15dd1834aa0}{From} (const \hyperlink{classvct_fixed_size_const_vector_base}{vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \hyperlink{group__cisst_vector_gga278b4a98a62e4f5ff42ce055836240a9a778d22dfe29402d2cfdd381c1b870285}{D\+I\+M\+E\+N\+S\+I\+O\+N}, \+\_\+\+\_\+stride, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type $>$ \&axis, const Angle\+Type angle)  throw (std\+::runtime\+\_\+error)
+\item 
+{\footnotesize template$<$class \+\_\+vector\+Owner\+Type $>$ }\\\hyperlink{classvct_axis_angle_rotation3_af654a8037b7b82a378f69cb1bfd9b8dd}{This\+Type} \& \hyperlink{classvct_axis_angle_rotation3_a2debd6ae28a69c331f79f464e00c057d}{From} (const \hyperlink{classvct_dynamic_const_vector_base}{vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, value\+\_\+type $>$ \&axis, Angle\+Type angle)  throw (std\+::runtime\+\_\+error)
+\item 
+{\footnotesize template$<$class \+\_\+container\+Type $>$ }\\\hyperlink{classvct_axis_angle_rotation3_af654a8037b7b82a378f69cb1bfd9b8dd}{This\+Type} \& \hyperlink{classvct_axis_angle_rotation3_ad9d0c6340e9597487d9c96d568ccdc8b}{From} (const \hyperlink{classvct_quaternion_rotation3_base}{vct\+Quaternion\+Rotation3\+Base}$<$ \+\_\+container\+Type $>$ \&quaternion\+Rotation)  throw (std\+::runtime\+\_\+error)
+\item 
+{\footnotesize template$<$class \+\_\+container\+Type $>$ }\\\hyperlink{classvct_axis_angle_rotation3_af654a8037b7b82a378f69cb1bfd9b8dd}{This\+Type} \& \hyperlink{classvct_axis_angle_rotation3_a3466260e181f02ad123b838497643dba}{From} (const \hyperlink{classvct_matrix_rotation3_base}{vct\+Matrix\+Rotation3\+Base}$<$ \+\_\+container\+Type $>$ \&matrix\+Rotation)  throw (std\+::runtime\+\_\+error)
+\item 
+{\footnotesize template$<$class \+\_\+container\+Type $>$ }\\\hyperlink{classvct_axis_angle_rotation3_af654a8037b7b82a378f69cb1bfd9b8dd}{This\+Type} \& \hyperlink{classvct_axis_angle_rotation3_a024f33bed744a3c73469580a5de27555}{From} (const \hyperlink{classvct_rodriguez_rotation3_base}{vct\+Rodriguez\+Rotation3\+Base}$<$ \+\_\+container\+Type $>$ \&rodriguez\+Rotation)  throw (std\+::runtime\+\_\+error)
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Conversion and normalization.}\par
+{\em These method will accept any input and attempt to either normalize the input and then convert or convert and then normalize the quaternion itself.~\newline
+The order depends on the type of input. }\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$stride\+\_\+type \+\_\+\+\_\+stride, class \+\_\+\+\_\+data\+Ptr\+Type $>$ }\\\hyperlink{classvct_axis_angle_rotation3_af654a8037b7b82a378f69cb1bfd9b8dd}{This\+Type} \& \hyperlink{classvct_axis_angle_rotation3_a50c217d61a517bda838d9b1cbe2aaa5d}{From\+Normalized} (const \hyperlink{classvct_fixed_size_const_vector_base}{vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \hyperlink{group__cisst_vector_gga278b4a98a62e4f5ff42ce055836240a9a778d22dfe29402d2cfdd381c1b870285}{D\+I\+M\+E\+N\+S\+I\+O\+N}, \+\_\+\+\_\+stride, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type $>$ \&axis, const Angle\+Type angle)
+\item 
+{\footnotesize template$<$class \+\_\+container\+Type $>$ }\\\hyperlink{classvct_axis_angle_rotation3_af654a8037b7b82a378f69cb1bfd9b8dd}{This\+Type} \& \hyperlink{classvct_axis_angle_rotation3_ad11bae97a565e6c5680a3030fc6ca015}{From\+Normalized} (const \hyperlink{classvct_quaternion_rotation3_base}{vct\+Quaternion\+Rotation3\+Base}$<$ \+\_\+container\+Type $>$ \&quaternion\+Rotation)
+\item 
+{\footnotesize template$<$class \+\_\+container\+Type $>$ }\\\hyperlink{classvct_axis_angle_rotation3_af654a8037b7b82a378f69cb1bfd9b8dd}{This\+Type} \& \hyperlink{classvct_axis_angle_rotation3_a1b960664eabdb59b342fd81e5c9d1564}{From\+Normalized} (const \hyperlink{classvct_matrix_rotation3_base}{vct\+Matrix\+Rotation3\+Base}$<$ \+\_\+container\+Type $>$ \&matrix\+Rotation)
+\item 
+{\footnotesize template$<$class \+\_\+container\+Type $>$ }\\\hyperlink{classvct_axis_angle_rotation3_af654a8037b7b82a378f69cb1bfd9b8dd}{This\+Type} \& \hyperlink{classvct_axis_angle_rotation3_a7233e3bbd1724b7d69ea4fcdc7ddc3e5}{From\+Normalized} (const \hyperlink{classvct_rodriguez_rotation3_base}{vct\+Rodriguez\+Rotation3\+Base}$<$ \+\_\+container\+Type $>$ \&rodriguez\+Rotation)
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Conversion.}\par
+{\em These method don\textquotesingle{}t check if the input is normalized nor try to normalize the results. They should be used with caution since the resulting rotation (in this case a quaternion) might not be normalized. }\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$stride\+\_\+type \+\_\+\+\_\+stride, class \+\_\+\+\_\+data\+Ptr\+Type $>$ }\\\hyperlink{classvct_axis_angle_rotation3_af654a8037b7b82a378f69cb1bfd9b8dd}{This\+Type} \& \hyperlink{classvct_axis_angle_rotation3_a220791aee1a43056534d744fe932aa0c}{From\+Raw} (const \hyperlink{classvct_fixed_size_const_vector_base}{vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \hyperlink{group__cisst_vector_gga278b4a98a62e4f5ff42ce055836240a9a778d22dfe29402d2cfdd381c1b870285}{D\+I\+M\+E\+N\+S\+I\+O\+N}, \+\_\+\+\_\+stride, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type $>$ \&axis, const Angle\+Type angle)
+\item 
+{\footnotesize template$<$class \+\_\+container\+Type $>$ }\\\hyperlink{classvct_axis_angle_rotation3_af654a8037b7b82a378f69cb1bfd9b8dd}{This\+Type} \& \hyperlink{classvct_axis_angle_rotation3_a86dd746e2ebc26d0773aaac3359fe98a}{From\+Raw} (const \hyperlink{classvct_quaternion_rotation3_base}{vct\+Quaternion\+Rotation3\+Base}$<$ \+\_\+container\+Type $>$ \&quaternion\+Rotation)
+\item 
+{\footnotesize template$<$class \+\_\+container\+Type $>$ }\\\hyperlink{classvct_axis_angle_rotation3_af654a8037b7b82a378f69cb1bfd9b8dd}{This\+Type} \& \hyperlink{classvct_axis_angle_rotation3_af2312e336196ae9e18d8380ec03035e4}{From\+Raw} (const \hyperlink{classvct_matrix_rotation3_base}{vct\+Matrix\+Rotation3\+Base}$<$ \+\_\+container\+Type $>$ \&matrix\+Rotation)
+\item 
+{\footnotesize template$<$class \+\_\+container\+Type $>$ }\\\hyperlink{classvct_axis_angle_rotation3_af654a8037b7b82a378f69cb1bfd9b8dd}{This\+Type} \& \hyperlink{classvct_axis_angle_rotation3_a9743ce2a4bf2b409ebaca2ab81d45d60}{From\+Raw} (const \hyperlink{classvct_rodriguez_rotation3_base}{vct\+Rodriguez\+Rotation3\+Base}$<$ \+\_\+container\+Type $>$ \&rodriguez\+Rotation)
+\end{DoxyCompactItemize}
+\end{Indent}
+{\bf }\par
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classvct_axis_angle_rotation3_aec0f3161d774f905800a1952f20bcb54}{Equal} (const \hyperlink{classvct_axis_angle_rotation3_af654a8037b7b82a378f69cb1bfd9b8dd}{This\+Type} \&other) const 
+\item 
+bool \hyperlink{classvct_axis_angle_rotation3_a984a5e120d4c3bdc4ded5560a4b9f7b6}{operator==} (const \hyperlink{classvct_axis_angle_rotation3_af654a8037b7b82a378f69cb1bfd9b8dd}{This\+Type} \&other) const 
+\end{DoxyCompactItemize}
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} const \hyperlink{classvct_axis_angle_rotation3_af654a8037b7b82a378f69cb1bfd9b8dd}{This\+Type} \& \hyperlink{classvct_axis_angle_rotation3_a66b018a0fc03eb011c286761aa00833b}{Identity} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classvct_axis_angle_rotation3_a1849694a8937fd494daf2878aee541a2}{Throw\+Unless\+Is\+Normalized} (void) const   throw (std\+::runtime\+\_\+error)
+\item 
+{\footnotesize template$<$class \+\_\+input\+Type $>$ }\\void \hyperlink{classvct_axis_angle_rotation3_a680d5519113ed0c2687c0352261bb47c}{Throw\+Unless\+Is\+Normalized} (const \+\_\+input\+Type \&input) const   throw (std\+::runtime\+\_\+error)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classvct_axis_angle_rotation3_a3178fd901bb60bb447711b9d5f7e7aae}{Axis\+Type} \hyperlink{classvct_axis_angle_rotation3_ae73a683f2aff0496ec2d15176c357d83}{Axis\+Member}
+\item 
+Angle\+Type \hyperlink{classvct_axis_angle_rotation3_aa04d755b8de3c1bf343c0c027a1af28f}{Angle\+Member}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class \+\_\+element\+Type$>$class vct\+Axis\+Angle\+Rotation3$<$ \+\_\+element\+Type $>$}
+
+Define a rotation based on an axis and an angle for a space of dimension 3. 
+
+This class is templated by the element type. It contains a fixed size vector and an angle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+element\+Type} & The type of elements.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classvct_quaternion}{vct\+Quaternion} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classvct_axis_angle_rotation3_a3178fd901bb60bb447711b9d5f7e7aae}{}\index{vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}!Axis\+Type@{Axis\+Type}}
+\index{Axis\+Type@{Axis\+Type}!vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}}
+\subsubsection[{Axis\+Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ typedef {\bf vct\+Fixed\+Size\+Vector}$<$value\+\_\+type, {\bf D\+I\+M\+E\+N\+S\+I\+O\+N}$>$ {\bf vct\+Axis\+Angle\+Rotation3}$<$ \+\_\+element\+Type $>$\+::{\bf Axis\+Type}}\label{classvct_axis_angle_rotation3_a3178fd901bb60bb447711b9d5f7e7aae}
+\hypertarget{classvct_axis_angle_rotation3_af654a8037b7b82a378f69cb1bfd9b8dd}{}\index{vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}!This\+Type@{This\+Type}}
+\index{This\+Type@{This\+Type}!vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}}
+\subsubsection[{This\+Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ typedef {\bf vct\+Axis\+Angle\+Rotation3}$<$value\+\_\+type$>$ {\bf vct\+Axis\+Angle\+Rotation3}$<$ \+\_\+element\+Type $>$\+::{\bf This\+Type}}\label{classvct_axis_angle_rotation3_af654a8037b7b82a378f69cb1bfd9b8dd}
+\hypertarget{classvct_axis_angle_rotation3_a7765132e2cf950c6598eb4d75e6fc297}{}\index{vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}!Type\+Traits@{Type\+Traits}}
+\index{Type\+Traits@{Type\+Traits}!vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}}
+\subsubsection[{Type\+Traits}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ typedef {\bf cmn\+Type\+Traits}$<$\+\_\+element\+Type$>$ {\bf vct\+Axis\+Angle\+Rotation3}$<$ \+\_\+element\+Type $>$\+::{\bf Type\+Traits}}\label{classvct_axis_angle_rotation3_a7765132e2cf950c6598eb4d75e6fc297}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classvct_axis_angle_rotation3_a204b668773ce3653801fe19a776a95d5}{}\index{vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}!vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}}
+\index{vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}!vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}}
+\subsubsection[{vct\+Axis\+Angle\+Rotation3}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ {\bf vct\+Axis\+Angle\+Rotation3}$<$ \+\_\+element\+Type $>$\+::{\bf vct\+Axis\+Angle\+Rotation3} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_axis_angle_rotation3_a204b668773ce3653801fe19a776a95d5}
+Default constructor. Sets the axis to (1, 0, 0) and the angle to zero. \hypertarget{classvct_axis_angle_rotation3_ada2d924fbd3a153056a59386780f3131}{}\index{vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}!vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}}
+\index{vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}!vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}}
+\subsubsection[{vct\+Axis\+Angle\+Rotation3}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ template$<$stride\+\_\+type \+\_\+\+\_\+stride, class \+\_\+\+\_\+data\+Ptr\+Type $>$ {\bf vct\+Axis\+Angle\+Rotation3}$<$ \+\_\+element\+Type $>$\+::{\bf vct\+Axis\+Angle\+Rotation3} (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ {\bf D\+I\+M\+E\+N\+S\+I\+O\+N}, \+\_\+\+\_\+stride, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type $>$ \&}]{axis, }
+\item[{const Angle\+Type}]{angle}
+\end{DoxyParamCaption}
+) throw  std\+::runtime\+\_\+error) \hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_axis_angle_rotation3_ada2d924fbd3a153056a59386780f3131}
+Constructor from an axis and an angle. 
+\begin{DoxyParams}{Parameters}
+{\em axis} & A unit vector of size 3. \\
+\hline
+{\em angle} & The angle in radian \\
+\hline
+\end{DoxyParams}
+\hypertarget{classvct_axis_angle_rotation3_aaca2918591b9722203a8fcdf793e6abe}{}\index{vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}!vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}}
+\index{vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}!vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}}
+\subsubsection[{vct\+Axis\+Angle\+Rotation3}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ template$<$class \+\_\+vector\+Owner\+Type $>$ {\bf vct\+Axis\+Angle\+Rotation3}$<$ \+\_\+element\+Type $>$\+::{\bf vct\+Axis\+Angle\+Rotation3} (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, value\+\_\+type $>$ \&}]{axis, }
+\item[{Angle\+Type}]{angle}
+\end{DoxyParamCaption}
+) throw  std\+::runtime\+\_\+error) \hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_axis_angle_rotation3_aaca2918591b9722203a8fcdf793e6abe}
+Constructor from an axis and an angle. 
+\begin{DoxyParams}{Parameters}
+{\em axis} & A unit vector of size 3. \\
+\hline
+{\em angle} & The angle in radian \\
+\hline
+\end{DoxyParams}
+\hypertarget{classvct_axis_angle_rotation3_a04fa3bc0de3bcbb8399125d1509008d0}{}\index{vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}!vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}}
+\index{vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}!vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}}
+\subsubsection[{vct\+Axis\+Angle\+Rotation3}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ template$<$class \+\_\+container\+Type $>$ {\bf vct\+Axis\+Angle\+Rotation3}$<$ \+\_\+element\+Type $>$\+::{\bf vct\+Axis\+Angle\+Rotation3} (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Quaternion\+Rotation3\+Base}$<$ \+\_\+container\+Type $>$ \&}]{quaternion\+Rotation}
+\end{DoxyParamCaption}
+) throw  std\+::runtime\+\_\+error) \hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}\label{classvct_axis_angle_rotation3_a04fa3bc0de3bcbb8399125d1509008d0}
+Constructor from a \hyperlink{classvct_quaternion_rotation3}{vct\+Quaternion\+Rotation3}. \hypertarget{classvct_axis_angle_rotation3_ae5f8d6b81b3784ebb1ee58ec7f5bca27}{}\index{vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}!vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}}
+\index{vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}!vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}}
+\subsubsection[{vct\+Axis\+Angle\+Rotation3}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ template$<$class \+\_\+container\+Type $>$ {\bf vct\+Axis\+Angle\+Rotation3}$<$ \+\_\+element\+Type $>$\+::{\bf vct\+Axis\+Angle\+Rotation3} (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Matrix\+Rotation3\+Base}$<$ \+\_\+container\+Type $>$ \&}]{matrix\+Rotation}
+\end{DoxyParamCaption}
+) throw  std\+::runtime\+\_\+error) \hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}\label{classvct_axis_angle_rotation3_ae5f8d6b81b3784ebb1ee58ec7f5bca27}
+Constructor from a \hyperlink{classvct_matrix_rotation3}{vct\+Matrix\+Rotation3}. \hypertarget{classvct_axis_angle_rotation3_a38b21663c016386d0b5a961a23b98b04}{}\index{vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}!vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}}
+\index{vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}!vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}}
+\subsubsection[{vct\+Axis\+Angle\+Rotation3}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ template$<$class \+\_\+container\+Type $>$ {\bf vct\+Axis\+Angle\+Rotation3}$<$ \+\_\+element\+Type $>$\+::{\bf vct\+Axis\+Angle\+Rotation3} (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Rodriguez\+Rotation3\+Base}$<$ \+\_\+container\+Type $>$ \&}]{rodriguez\+Rotation}
+\end{DoxyParamCaption}
+) throw  std\+::runtime\+\_\+error) \hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}\label{classvct_axis_angle_rotation3_a38b21663c016386d0b5a961a23b98b04}
+Constructor from a \hyperlink{classvct_rodriguez_rotation3}{vct\+Rodriguez\+Rotation3}. \hypertarget{classvct_axis_angle_rotation3_a0f6f1bc1932974648c434795c928da93}{}\index{vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}!vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}}
+\index{vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}!vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}}
+\subsubsection[{vct\+Axis\+Angle\+Rotation3}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ template$<$stride\+\_\+type \+\_\+\+\_\+stride, class \+\_\+\+\_\+data\+Ptr\+Type $>$ {\bf vct\+Axis\+Angle\+Rotation3}$<$ \+\_\+element\+Type $>$\+::{\bf vct\+Axis\+Angle\+Rotation3} (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ {\bf D\+I\+M\+E\+N\+S\+I\+O\+N}, \+\_\+\+\_\+stride, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type $>$ \&}]{axis, }
+\item[{const Angle\+Type}]{angle, }
+\item[{bool}]{normalize\+Input}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_axis_angle_rotation3_a0f6f1bc1932974648c434795c928da93}
+Constructor from an axis and an angle. 
+\begin{DoxyParams}{Parameters}
+{\em axis} & A vector of size 3. \\
+\hline
+{\em angle} & The angle in radian \\
+\hline
+{\em normalize\+Input} & Normalize the input or convert as is (\hyperlink{vct_forward_declarations_8h_ae54c682b919a7c5743ea498810518565}{V\+C\+T\+\_\+\+N\+O\+R\+M\+A\+L\+I\+Z\+E} or \hyperlink{vct_forward_declarations_8h_a6fd516b0c35fa9967b4da5f03a788985}{V\+C\+T\+\_\+\+D\+O\+\_\+\+N\+O\+T\+\_\+\+N\+O\+R\+M\+A\+L\+I\+Z\+E}) \\
+\hline
+\end{DoxyParams}
+\hypertarget{classvct_axis_angle_rotation3_ac956d88cd5738814d0a7cc371f2c6a6e}{}\index{vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}!vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}}
+\index{vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}!vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}}
+\subsubsection[{vct\+Axis\+Angle\+Rotation3}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ template$<$class \+\_\+vector\+Owner\+Type $>$ {\bf vct\+Axis\+Angle\+Rotation3}$<$ \+\_\+element\+Type $>$\+::{\bf vct\+Axis\+Angle\+Rotation3} (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, value\+\_\+type $>$ \&}]{axis, }
+\item[{Angle\+Type}]{angle, }
+\item[{bool}]{normalize\+Input}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_axis_angle_rotation3_ac956d88cd5738814d0a7cc371f2c6a6e}
+Constructor from an axis and an angle. 
+\begin{DoxyParams}{Parameters}
+{\em axis} & A vector of size 3. \\
+\hline
+{\em angle} & The angle in radian \\
+\hline
+{\em normalize\+Input} & Normalize the input or convert as is (\hyperlink{vct_forward_declarations_8h_ae54c682b919a7c5743ea498810518565}{V\+C\+T\+\_\+\+N\+O\+R\+M\+A\+L\+I\+Z\+E} or \hyperlink{vct_forward_declarations_8h_a6fd516b0c35fa9967b4da5f03a788985}{V\+C\+T\+\_\+\+D\+O\+\_\+\+N\+O\+T\+\_\+\+N\+O\+R\+M\+A\+L\+I\+Z\+E}) \\
+\hline
+\end{DoxyParams}
+\hypertarget{classvct_axis_angle_rotation3_a480f58d5670bfa86156cbc480315289c}{}\index{vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}!vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}}
+\index{vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}!vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}}
+\subsubsection[{vct\+Axis\+Angle\+Rotation3}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ template$<$class \+\_\+container\+Type $>$ {\bf vct\+Axis\+Angle\+Rotation3}$<$ \+\_\+element\+Type $>$\+::{\bf vct\+Axis\+Angle\+Rotation3} (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Quaternion\+Rotation3\+Base}$<$ \+\_\+container\+Type $>$ \&}]{quaternion\+Rotation, }
+\item[{bool}]{normalize\+Input}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_axis_angle_rotation3_a480f58d5670bfa86156cbc480315289c}
+Constructor from a \hyperlink{classvct_quaternion_rotation3}{vct\+Quaternion\+Rotation3}. \hypertarget{classvct_axis_angle_rotation3_a95f2a93ec7159be4e2745dc4c1e69d64}{}\index{vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}!vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}}
+\index{vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}!vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}}
+\subsubsection[{vct\+Axis\+Angle\+Rotation3}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ template$<$class \+\_\+container\+Type $>$ {\bf vct\+Axis\+Angle\+Rotation3}$<$ \+\_\+element\+Type $>$\+::{\bf vct\+Axis\+Angle\+Rotation3} (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Matrix\+Rotation3\+Base}$<$ \+\_\+container\+Type $>$ \&}]{matrix\+Rotation, }
+\item[{bool}]{normalize\+Input}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_axis_angle_rotation3_a95f2a93ec7159be4e2745dc4c1e69d64}
+Constructor from a \hyperlink{classvct_matrix_rotation3}{vct\+Matrix\+Rotation3}. \hypertarget{classvct_axis_angle_rotation3_a13fc3b115bce109caaf269ab41da1dcc}{}\index{vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}!vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}}
+\index{vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}!vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}}
+\subsubsection[{vct\+Axis\+Angle\+Rotation3}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ template$<$class \+\_\+container\+Type $>$ {\bf vct\+Axis\+Angle\+Rotation3}$<$ \+\_\+element\+Type $>$\+::{\bf vct\+Axis\+Angle\+Rotation3} (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Rodriguez\+Rotation3\+Base}$<$ \+\_\+container\+Type $>$ \&}]{rodriguez\+Rotation, }
+\item[{bool}]{normalize\+Input}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_axis_angle_rotation3_a13fc3b115bce109caaf269ab41da1dcc}
+Constructor from a \hyperlink{classvct_rodriguez_rotation3}{vct\+Rodriguez\+Rotation3}. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classvct_axis_angle_rotation3_a1551351754cb3255404e61e04828d5e0}{}\index{vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}!Almost\+Equal@{Almost\+Equal}}
+\index{Almost\+Equal@{Almost\+Equal}!vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}}
+\subsubsection[{Almost\+Equal}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ bool {\bf vct\+Axis\+Angle\+Rotation3}$<$ \+\_\+element\+Type $>$\+::Almost\+Equal (
+\begin{DoxyParamCaption}
+\item[{const {\bf This\+Type} \&}]{other, }
+\item[{value\+\_\+type}]{tolerance = {\ttfamily {\bf Type\+Traits\+::\+Tolerance}()}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_axis_angle_rotation3_a1551351754cb3255404e61e04828d5e0}
+Return true if this rotation is effectively equal to the other rotation, up to the given tolerance. Rotations may be effectively equal if one is elementwise equal to the other.
+
+The tolerance factor is used to compare each of the elements of the difference vector.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classvct_axis_angle_rotation3_af333432bd09bebbce7334e23d9e0d637}{Almost\+Equivalent} 
+\end{DoxySeeAlso}
+\hypertarget{classvct_axis_angle_rotation3_af333432bd09bebbce7334e23d9e0d637}{}\index{vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}!Almost\+Equivalent@{Almost\+Equivalent}}
+\index{Almost\+Equivalent@{Almost\+Equivalent}!vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}}
+\subsubsection[{Almost\+Equivalent}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ bool {\bf vct\+Axis\+Angle\+Rotation3}$<$ \+\_\+element\+Type $>$\+::Almost\+Equivalent (
+\begin{DoxyParamCaption}
+\item[{const {\bf This\+Type} \&}]{other, }
+\item[{value\+\_\+type}]{tolerance = {\ttfamily {\bf Type\+Traits\+::\+Tolerance}()}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_axis_angle_rotation3_af333432bd09bebbce7334e23d9e0d637}
+Return true if this rotation is effectively equavilent to the other rotation, up to the given tolerance. Rotation may be effectively equivalent if their axis are aligned and their angles are equal, modulus 2 P\+I (take into account the direction of the axis).
+
+The tolerance factor is used to compare each of the elements of the difference vector.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classvct_axis_angle_rotation3_a1551351754cb3255404e61e04828d5e0}{Almost\+Equal} 
+\end{DoxySeeAlso}
+\hypertarget{classvct_axis_angle_rotation3_a49fa5666cf32e7883f8478c5ce135a75}{}\index{vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}!Angle@{Angle}}
+\index{Angle@{Angle}!vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}}
+\subsubsection[{Angle}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ const Angle\+Type\& {\bf vct\+Axis\+Angle\+Rotation3}$<$ \+\_\+element\+Type $>$\+::Angle (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_axis_angle_rotation3_a49fa5666cf32e7883f8478c5ce135a75}
+Const reference to the rotation angle data member (in radians). \hypertarget{classvct_axis_angle_rotation3_a583ad12369e06b7788fd473a812663f1}{}\index{vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}!Angle@{Angle}}
+\index{Angle@{Angle}!vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}}
+\subsubsection[{Angle}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ Angle\+Type\& {\bf vct\+Axis\+Angle\+Rotation3}$<$ \+\_\+element\+Type $>$\+::Angle (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_axis_angle_rotation3_a583ad12369e06b7788fd473a812663f1}
+Reference to the rotation angle data member (in radians). \hypertarget{classvct_axis_angle_rotation3_adc6555da59fc027daac377767fbbb6c6}{}\index{vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}!Assign@{Assign}}
+\index{Assign@{Assign}!vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}}
+\subsubsection[{Assign}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ {\bf This\+Type}\& {\bf vct\+Axis\+Angle\+Rotation3}$<$ \+\_\+element\+Type $>$\+::Assign (
+\begin{DoxyParamCaption}
+\item[{const {\bf This\+Type} \&}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_axis_angle_rotation3_adc6555da59fc027daac377767fbbb6c6}
+Assignement method. This method doesn\textquotesingle{}t perform any test on the input. \hypertarget{classvct_axis_angle_rotation3_aa20fe6d1c17276a020efcc739dba37a0}{}\index{vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}!Axis@{Axis}}
+\index{Axis@{Axis}!vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}}
+\subsubsection[{Axis}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ const {\bf Axis\+Type}\& {\bf vct\+Axis\+Angle\+Rotation3}$<$ \+\_\+element\+Type $>$\+::Axis (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_axis_angle_rotation3_aa20fe6d1c17276a020efcc739dba37a0}
+Const reference to the rotation axis data member. \hypertarget{classvct_axis_angle_rotation3_a79e1af8f556aac9e63a26687a50b6745}{}\index{vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}!Axis@{Axis}}
+\index{Axis@{Axis}!vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}}
+\subsubsection[{Axis}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ {\bf Axis\+Type}\& {\bf vct\+Axis\+Angle\+Rotation3}$<$ \+\_\+element\+Type $>$\+::Axis (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_axis_angle_rotation3_a79e1af8f556aac9e63a26687a50b6745}
+Reference to the rotation axis data member. \hypertarget{classvct_axis_angle_rotation3_a1365204e692b40572f0996a38551c2c3}{}\index{vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}!De\+Serialize\+Raw@{De\+Serialize\+Raw}}
+\index{De\+Serialize\+Raw@{De\+Serialize\+Raw}!vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}}
+\subsubsection[{De\+Serialize\+Raw}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ void {\bf vct\+Axis\+Angle\+Rotation3}$<$ \+\_\+element\+Type $>$\+::De\+Serialize\+Raw (
+\begin{DoxyParamCaption}
+\item[{std\+::istream \&}]{input\+Stream}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_axis_angle_rotation3_a1365204e692b40572f0996a38551c2c3}
+Binary deserialization \hypertarget{classvct_axis_angle_rotation3_aec0f3161d774f905800a1952f20bcb54}{}\index{vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}!Equal@{Equal}}
+\index{Equal@{Equal}!vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}}
+\subsubsection[{Equal}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ bool {\bf vct\+Axis\+Angle\+Rotation3}$<$ \+\_\+element\+Type $>$\+::Equal (
+\begin{DoxyParamCaption}
+\item[{const {\bf This\+Type} \&}]{other}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_axis_angle_rotation3_aec0f3161d774f905800a1952f20bcb54}
+Return true if this rotation is exactly equal to the other rotation, without any tolerance error. Rotations may be effectively equal if one is elementwise equal to the other.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classvct_axis_angle_rotation3_a1551351754cb3255404e61e04828d5e0}{Almost\+Equal} 
+\end{DoxySeeAlso}
+\hypertarget{classvct_axis_angle_rotation3_a296f32cc8359a9b986f1d15dd1834aa0}{}\index{vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}!From@{From}}
+\index{From@{From}!vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}}
+\subsubsection[{From}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ template$<$stride\+\_\+type \+\_\+\+\_\+stride, class \+\_\+\+\_\+data\+Ptr\+Type $>$ {\bf This\+Type}\& {\bf vct\+Axis\+Angle\+Rotation3}$<$ \+\_\+element\+Type $>$\+::From (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ {\bf D\+I\+M\+E\+N\+S\+I\+O\+N}, \+\_\+\+\_\+stride, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type $>$ \&}]{axis, }
+\item[{const Angle\+Type}]{angle}
+\end{DoxyParamCaption}
+) throw  std\+::runtime\+\_\+error) \hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_axis_angle_rotation3_a296f32cc8359a9b986f1d15dd1834aa0}
+Conversion from an angle and an axis. \hypertarget{classvct_axis_angle_rotation3_a2debd6ae28a69c331f79f464e00c057d}{}\index{vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}!From@{From}}
+\index{From@{From}!vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}}
+\subsubsection[{From}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ template$<$class \+\_\+vector\+Owner\+Type $>$ {\bf This\+Type}\& {\bf vct\+Axis\+Angle\+Rotation3}$<$ \+\_\+element\+Type $>$\+::From (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, value\+\_\+type $>$ \&}]{axis, }
+\item[{Angle\+Type}]{angle}
+\end{DoxyParamCaption}
+) throw  std\+::runtime\+\_\+error) \hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_axis_angle_rotation3_a2debd6ae28a69c331f79f464e00c057d}
+Conversion from an angle and an axis. \hypertarget{classvct_axis_angle_rotation3_ad9d0c6340e9597487d9c96d568ccdc8b}{}\index{vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}!From@{From}}
+\index{From@{From}!vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}}
+\subsubsection[{From}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ template$<$class \+\_\+container\+Type $>$ {\bf This\+Type}\& {\bf vct\+Axis\+Angle\+Rotation3}$<$ \+\_\+element\+Type $>$\+::From (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Quaternion\+Rotation3\+Base}$<$ \+\_\+container\+Type $>$ \&}]{quaternion\+Rotation}
+\end{DoxyParamCaption}
+) throw  std\+::runtime\+\_\+error) \hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_axis_angle_rotation3_ad9d0c6340e9597487d9c96d568ccdc8b}
+Conversion from a \hyperlink{classvct_quaternion_rotation3}{vct\+Quaternion\+Rotation3}. \hypertarget{classvct_axis_angle_rotation3_a3466260e181f02ad123b838497643dba}{}\index{vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}!From@{From}}
+\index{From@{From}!vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}}
+\subsubsection[{From}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ template$<$class \+\_\+container\+Type $>$ {\bf This\+Type}\& {\bf vct\+Axis\+Angle\+Rotation3}$<$ \+\_\+element\+Type $>$\+::From (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Matrix\+Rotation3\+Base}$<$ \+\_\+container\+Type $>$ \&}]{matrix\+Rotation}
+\end{DoxyParamCaption}
+) throw  std\+::runtime\+\_\+error) \hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_axis_angle_rotation3_a3466260e181f02ad123b838497643dba}
+Conversion from a \hyperlink{classvct_matrix_rotation3}{vct\+Matrix\+Rotation3}. \hypertarget{classvct_axis_angle_rotation3_a024f33bed744a3c73469580a5de27555}{}\index{vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}!From@{From}}
+\index{From@{From}!vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}}
+\subsubsection[{From}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ template$<$class \+\_\+container\+Type $>$ {\bf This\+Type}\& {\bf vct\+Axis\+Angle\+Rotation3}$<$ \+\_\+element\+Type $>$\+::From (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Rodriguez\+Rotation3\+Base}$<$ \+\_\+container\+Type $>$ \&}]{rodriguez\+Rotation}
+\end{DoxyParamCaption}
+) throw  std\+::runtime\+\_\+error) \hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_axis_angle_rotation3_a024f33bed744a3c73469580a5de27555}
+Conversion from a \hyperlink{classvct_rodriguez_rotation3}{vct\+Rodriguez\+Rotation3}. \hypertarget{classvct_axis_angle_rotation3_a50c217d61a517bda838d9b1cbe2aaa5d}{}\index{vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}!From\+Normalized@{From\+Normalized}}
+\index{From\+Normalized@{From\+Normalized}!vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}}
+\subsubsection[{From\+Normalized}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ template$<$stride\+\_\+type \+\_\+\+\_\+stride, class \+\_\+\+\_\+data\+Ptr\+Type $>$ {\bf This\+Type}\& {\bf vct\+Axis\+Angle\+Rotation3}$<$ \+\_\+element\+Type $>$\+::From\+Normalized (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ {\bf D\+I\+M\+E\+N\+S\+I\+O\+N}, \+\_\+\+\_\+stride, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type $>$ \&}]{axis, }
+\item[{const Angle\+Type}]{angle}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_axis_angle_rotation3_a50c217d61a517bda838d9b1cbe2aaa5d}
+Conversion from an axis and an angle. \hypertarget{classvct_axis_angle_rotation3_ad11bae97a565e6c5680a3030fc6ca015}{}\index{vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}!From\+Normalized@{From\+Normalized}}
+\index{From\+Normalized@{From\+Normalized}!vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}}
+\subsubsection[{From\+Normalized}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ template$<$class \+\_\+container\+Type $>$ {\bf This\+Type}\& {\bf vct\+Axis\+Angle\+Rotation3}$<$ \+\_\+element\+Type $>$\+::From\+Normalized (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Quaternion\+Rotation3\+Base}$<$ \+\_\+container\+Type $>$ \&}]{quaternion\+Rotation}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_axis_angle_rotation3_ad11bae97a565e6c5680a3030fc6ca015}
+Conversion from an axis and an angle. \hypertarget{classvct_axis_angle_rotation3_a1b960664eabdb59b342fd81e5c9d1564}{}\index{vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}!From\+Normalized@{From\+Normalized}}
+\index{From\+Normalized@{From\+Normalized}!vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}}
+\subsubsection[{From\+Normalized}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ template$<$class \+\_\+container\+Type $>$ {\bf This\+Type}\& {\bf vct\+Axis\+Angle\+Rotation3}$<$ \+\_\+element\+Type $>$\+::From\+Normalized (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Matrix\+Rotation3\+Base}$<$ \+\_\+container\+Type $>$ \&}]{matrix\+Rotation}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_axis_angle_rotation3_a1b960664eabdb59b342fd81e5c9d1564}
+Conversion from a \hyperlink{classvct_matrix_rotation3}{vct\+Matrix\+Rotation3}. \hypertarget{classvct_axis_angle_rotation3_a7233e3bbd1724b7d69ea4fcdc7ddc3e5}{}\index{vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}!From\+Normalized@{From\+Normalized}}
+\index{From\+Normalized@{From\+Normalized}!vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}}
+\subsubsection[{From\+Normalized}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ template$<$class \+\_\+container\+Type $>$ {\bf This\+Type}\& {\bf vct\+Axis\+Angle\+Rotation3}$<$ \+\_\+element\+Type $>$\+::From\+Normalized (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Rodriguez\+Rotation3\+Base}$<$ \+\_\+container\+Type $>$ \&}]{rodriguez\+Rotation}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_axis_angle_rotation3_a7233e3bbd1724b7d69ea4fcdc7ddc3e5}
+Conversion from a \hyperlink{classvct_rodriguez_rotation3}{vct\+Rodriguez\+Rotation3}. \hypertarget{classvct_axis_angle_rotation3_a220791aee1a43056534d744fe932aa0c}{}\index{vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}!From\+Raw@{From\+Raw}}
+\index{From\+Raw@{From\+Raw}!vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}}
+\subsubsection[{From\+Raw}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ template$<$stride\+\_\+type \+\_\+\+\_\+stride, class \+\_\+\+\_\+data\+Ptr\+Type $>$ {\bf This\+Type}\& {\bf vct\+Axis\+Angle\+Rotation3}$<$ \+\_\+element\+Type $>$\+::From\+Raw (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ {\bf D\+I\+M\+E\+N\+S\+I\+O\+N}, \+\_\+\+\_\+stride, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type $>$ \&}]{axis, }
+\item[{const Angle\+Type}]{angle}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_axis_angle_rotation3_a220791aee1a43056534d744fe932aa0c}
+Conversion from an axis and an angle. \hypertarget{classvct_axis_angle_rotation3_a86dd746e2ebc26d0773aaac3359fe98a}{}\index{vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}!From\+Raw@{From\+Raw}}
+\index{From\+Raw@{From\+Raw}!vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}}
+\subsubsection[{From\+Raw}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ template$<$class \+\_\+container\+Type $>$ {\bf This\+Type}\& {\bf vct\+Axis\+Angle\+Rotation3}$<$ \+\_\+element\+Type $>$\+::From\+Raw (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Quaternion\+Rotation3\+Base}$<$ \+\_\+container\+Type $>$ \&}]{quaternion\+Rotation}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_axis_angle_rotation3_a86dd746e2ebc26d0773aaac3359fe98a}
+Conversion from a \hyperlink{classvct_quaternion_rotation3}{vct\+Quaternion\+Rotation3}. \hypertarget{classvct_axis_angle_rotation3_af2312e336196ae9e18d8380ec03035e4}{}\index{vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}!From\+Raw@{From\+Raw}}
+\index{From\+Raw@{From\+Raw}!vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}}
+\subsubsection[{From\+Raw}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ template$<$class \+\_\+container\+Type $>$ {\bf This\+Type}\& {\bf vct\+Axis\+Angle\+Rotation3}$<$ \+\_\+element\+Type $>$\+::From\+Raw (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Matrix\+Rotation3\+Base}$<$ \+\_\+container\+Type $>$ \&}]{matrix\+Rotation}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_axis_angle_rotation3_af2312e336196ae9e18d8380ec03035e4}
+Conversion from a \hyperlink{classvct_matrix_rotation3}{vct\+Matrix\+Rotation3}. \hypertarget{classvct_axis_angle_rotation3_a9743ce2a4bf2b409ebaca2ab81d45d60}{}\index{vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}!From\+Raw@{From\+Raw}}
+\index{From\+Raw@{From\+Raw}!vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}}
+\subsubsection[{From\+Raw}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ template$<$class \+\_\+container\+Type $>$ {\bf This\+Type}\& {\bf vct\+Axis\+Angle\+Rotation3}$<$ \+\_\+element\+Type $>$\+::From\+Raw (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Rodriguez\+Rotation3\+Base}$<$ \+\_\+container\+Type $>$ \&}]{rodriguez\+Rotation}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_axis_angle_rotation3_a9743ce2a4bf2b409ebaca2ab81d45d60}
+Conversion from a \hyperlink{classvct_rodriguez_rotation3}{vct\+Rodriguez\+Rotation3}. \hypertarget{classvct_axis_angle_rotation3_a66b018a0fc03eb011c286761aa00833b}{}\index{vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}!Identity@{Identity}}
+\index{Identity@{Identity}!vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}}
+\subsubsection[{Identity}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ static {\bf C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} const {\bf This\+Type}\& {\bf vct\+Axis\+Angle\+Rotation3}$<$ \+\_\+element\+Type $>$\+::Identity (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classvct_axis_angle_rotation3_a66b018a0fc03eb011c286761aa00833b}
+Const reference to the identity. In this case, the axis is set to {\ttfamily (1, 0, 0)} and the angle is set to zero. \hypertarget{classvct_axis_angle_rotation3_a9f9e7f38289d1b9e77f3f3cc3c1d5213}{}\index{vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}!Inverse@{Inverse}}
+\index{Inverse@{Inverse}!vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}}
+\subsubsection[{Inverse}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ {\bf This\+Type} {\bf vct\+Axis\+Angle\+Rotation3}$<$ \+\_\+element\+Type $>$\+::Inverse (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_axis_angle_rotation3_a9f9e7f38289d1b9e77f3f3cc3c1d5213}
+Create and return by copy the inverse of this rotation. This method is not the most efficient since it requires a copy. See also \hyperlink{classvct_axis_angle_rotation3_a088952ce769f71e7f13a38e2654714b3}{Inverse\+Self()}. \hypertarget{classvct_axis_angle_rotation3_a8172f2362d94c1c0a802568b99ae4fda}{}\index{vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}!Inverse\+Of@{Inverse\+Of}}
+\index{Inverse\+Of@{Inverse\+Of}!vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}}
+\subsubsection[{Inverse\+Of}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ {\bf This\+Type}\& {\bf vct\+Axis\+Angle\+Rotation3}$<$ \+\_\+element\+Type $>$\+::Inverse\+Of (
+\begin{DoxyParamCaption}
+\item[{const {\bf This\+Type} \&}]{other\+Rotation}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_axis_angle_rotation3_a8172f2362d94c1c0a802568b99ae4fda}
+Set this rotation as the inverse of another one. See also \hyperlink{classvct_axis_angle_rotation3_a088952ce769f71e7f13a38e2654714b3}{Inverse\+Self()}. \hypertarget{classvct_axis_angle_rotation3_a088952ce769f71e7f13a38e2654714b3}{}\index{vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}!Inverse\+Self@{Inverse\+Self}}
+\index{Inverse\+Self@{Inverse\+Self}!vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}}
+\subsubsection[{Inverse\+Self}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ {\bf This\+Type}\& {\bf vct\+Axis\+Angle\+Rotation3}$<$ \+\_\+element\+Type $>$\+::Inverse\+Self (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_axis_angle_rotation3_a088952ce769f71e7f13a38e2654714b3}
+Inverse this axis angle rotation. This methods assumes that the axis is normalized and the angle is betweem 0 and 2 $\ast$ P\+I. The axis is not changed but the angle is set to 2 $\ast$ P\+I minus the previous value. \hypertarget{classvct_axis_angle_rotation3_a8ce58b2c95cf2abbb6e4244c5837f46d}{}\index{vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}!Is\+Normalized@{Is\+Normalized}}
+\index{Is\+Normalized@{Is\+Normalized}!vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}}
+\subsubsection[{Is\+Normalized}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ bool {\bf vct\+Axis\+Angle\+Rotation3}$<$ \+\_\+element\+Type $>$\+::Is\+Normalized (
+\begin{DoxyParamCaption}
+\item[{value\+\_\+type}]{tolerance = {\ttfamily {\bf Type\+Traits\+::\+Tolerance}()}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_axis_angle_rotation3_a8ce58b2c95cf2abbb6e4244c5837f46d}
+Test if this rotation is normalized. This methods checks that the axis is normalized (with tolerance). Any angle is considered valid.
+
+
+\begin{DoxyParams}{Parameters}
+{\em tolerance} & Tolerance for the norm test. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classvct_axis_angle_rotation3_a116569ba3bfefa865eaa77f47e437a4f}{}\index{vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}!Normalized@{Normalized}}
+\index{Normalized@{Normalized}!vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}}
+\subsubsection[{Normalized}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ {\bf This\+Type} {\bf vct\+Axis\+Angle\+Rotation3}$<$ \+\_\+element\+Type $>$\+::Normalized (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_axis_angle_rotation3_a116569ba3bfefa865eaa77f47e437a4f}
+Returns the normalized version of this rotation. This method returns a copy of the normalized rotation and does not modify this rotation. See also \hyperlink{classvct_axis_angle_rotation3_a37ddf9e48a259ffbf6f1beddcadf2aed}{Normalized\+Self()}. \hypertarget{classvct_axis_angle_rotation3_a9ab57a20a5831e8a46abf161e89d9e05}{}\index{vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}!Normalized\+Of@{Normalized\+Of}}
+\index{Normalized\+Of@{Normalized\+Of}!vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}}
+\subsubsection[{Normalized\+Of}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ {\bf This\+Type}\& {\bf vct\+Axis\+Angle\+Rotation3}$<$ \+\_\+element\+Type $>$\+::Normalized\+Of (
+\begin{DoxyParamCaption}
+\item[{const {\bf This\+Type} \&}]{other\+Rotation}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_axis_angle_rotation3_a9ab57a20a5831e8a46abf161e89d9e05}
+Sets this rotation as the normalized version of another one.
+
+
+\begin{DoxyParams}{Parameters}
+{\em other\+Rotation} & Axis angle rotation used to compute the normalized rotation. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classvct_axis_angle_rotation3_a37ddf9e48a259ffbf6f1beddcadf2aed}{}\index{vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}!Normalized\+Self@{Normalized\+Self}}
+\index{Normalized\+Self@{Normalized\+Self}!vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}}
+\subsubsection[{Normalized\+Self}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ {\bf This\+Type}\& {\bf vct\+Axis\+Angle\+Rotation3}$<$ \+\_\+element\+Type $>$\+::Normalized\+Self (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_axis_angle_rotation3_a37ddf9e48a259ffbf6f1beddcadf2aed}
+Normalizes this rotation. This method first normalizes the axis and then modifies the angle so that it\textquotesingle{}s value is between 0 and 2 $\ast$ P\+I. \hypertarget{classvct_axis_angle_rotation3_a984a5e120d4c3bdc4ded5560a4b9f7b6}{}\index{vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}!operator==@{operator==}}
+\index{operator==@{operator==}!vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ bool {\bf vct\+Axis\+Angle\+Rotation3}$<$ \+\_\+element\+Type $>$\+::operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf This\+Type} \&}]{other}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_axis_angle_rotation3_a984a5e120d4c3bdc4ded5560a4b9f7b6}
+\hypertarget{classvct_axis_angle_rotation3_a9ae280f8e1ea64146875bc7ab4d9648f}{}\index{vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}!Serialize\+Raw@{Serialize\+Raw}}
+\index{Serialize\+Raw@{Serialize\+Raw}!vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}}
+\subsubsection[{Serialize\+Raw}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ void {\bf vct\+Axis\+Angle\+Rotation3}$<$ \+\_\+element\+Type $>$\+::Serialize\+Raw (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{output\+Stream}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_axis_angle_rotation3_a9ae280f8e1ea64146875bc7ab4d9648f}
+Binary serialization \hypertarget{classvct_axis_angle_rotation3_a1849694a8937fd494daf2878aee541a2}{}\index{vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}!Throw\+Unless\+Is\+Normalized@{Throw\+Unless\+Is\+Normalized}}
+\index{Throw\+Unless\+Is\+Normalized@{Throw\+Unless\+Is\+Normalized}!vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}}
+\subsubsection[{Throw\+Unless\+Is\+Normalized}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ void {\bf vct\+Axis\+Angle\+Rotation3}$<$ \+\_\+element\+Type $>$\+::Throw\+Unless\+Is\+Normalized (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const throw  std\+::runtime\+\_\+error) \hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\label{classvct_axis_angle_rotation3_a1849694a8937fd494daf2878aee541a2}
+Throw an exception unless this rotation is normalized. \hypertarget{classvct_axis_angle_rotation3_a680d5519113ed0c2687c0352261bb47c}{}\index{vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}!Throw\+Unless\+Is\+Normalized@{Throw\+Unless\+Is\+Normalized}}
+\index{Throw\+Unless\+Is\+Normalized@{Throw\+Unless\+Is\+Normalized}!vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}}
+\subsubsection[{Throw\+Unless\+Is\+Normalized}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ template$<$class \+\_\+input\+Type $>$ void {\bf vct\+Axis\+Angle\+Rotation3}$<$ \+\_\+element\+Type $>$\+::Throw\+Unless\+Is\+Normalized (
+\begin{DoxyParamCaption}
+\item[{const \+\_\+input\+Type \&}]{input}
+\end{DoxyParamCaption}
+) const throw  std\+::runtime\+\_\+error) \hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\label{classvct_axis_angle_rotation3_a680d5519113ed0c2687c0352261bb47c}
+Throw an exception unless the input is normalized. 
+\begin{DoxyParams}{Parameters}
+{\em input} & An object with {\ttfamily Is\+Normalized} method. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classvct_axis_angle_rotation3_acbda7447118bc35acbb77b0de1c4cfa7}{}\index{vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}!To\+Stream@{To\+Stream}}
+\index{To\+Stream@{To\+Stream}!vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}}
+\subsubsection[{To\+Stream}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ void {\bf vct\+Axis\+Angle\+Rotation3}$<$ \+\_\+element\+Type $>$\+::To\+Stream (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{output\+Stream}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_axis_angle_rotation3_acbda7447118bc35acbb77b0de1c4cfa7}
+Print the matrix in a human readable format \hypertarget{classvct_axis_angle_rotation3_a19187b14336ba6721c158f42a8eeee0e}{}\index{vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}!To\+Stream\+Raw@{To\+Stream\+Raw}}
+\index{To\+Stream\+Raw@{To\+Stream\+Raw}!vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}}
+\subsubsection[{To\+Stream\+Raw}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ void {\bf vct\+Axis\+Angle\+Rotation3}$<$ \+\_\+element\+Type $>$\+::To\+Stream\+Raw (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{output\+Stream, }
+\item[{const char}]{delimiter = {\ttfamily \textquotesingle{}~\textquotesingle{}}, }
+\item[{bool}]{header\+Only = {\ttfamily false}, }
+\item[{const std\+::string \&}]{header\+Prefix = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_axis_angle_rotation3_a19187b14336ba6721c158f42a8eeee0e}
+Print in machine processable format \hypertarget{classvct_axis_angle_rotation3_a21face93472a7d62f8f9065d609cfe32}{}\index{vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}!To\+String@{To\+String}}
+\index{To\+String@{To\+String}!vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}}
+\subsubsection[{To\+String}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ std\+::string {\bf vct\+Axis\+Angle\+Rotation3}$<$ \+\_\+element\+Type $>$\+::To\+String (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_axis_angle_rotation3_a21face93472a7d62f8f9065d609cfe32}
+\hypertarget{classvct_axis_angle_rotation3_a6961961f60bc9f9ad6c2c1978f53238b}{}\index{vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}!V\+C\+T\+\_\+\+C\+O\+N\+T\+A\+I\+N\+E\+R\+\_\+\+T\+R\+A\+I\+T\+S\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+S@{V\+C\+T\+\_\+\+C\+O\+N\+T\+A\+I\+N\+E\+R\+\_\+\+T\+R\+A\+I\+T\+S\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+S}}
+\index{V\+C\+T\+\_\+\+C\+O\+N\+T\+A\+I\+N\+E\+R\+\_\+\+T\+R\+A\+I\+T\+S\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+S@{V\+C\+T\+\_\+\+C\+O\+N\+T\+A\+I\+N\+E\+R\+\_\+\+T\+R\+A\+I\+T\+S\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+S}!vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}}
+\subsubsection[{V\+C\+T\+\_\+\+C\+O\+N\+T\+A\+I\+N\+E\+R\+\_\+\+T\+R\+A\+I\+T\+S\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+S}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ {\bf vct\+Axis\+Angle\+Rotation3}$<$ \+\_\+element\+Type $>$\+::V\+C\+T\+\_\+\+C\+O\+N\+T\+A\+I\+N\+E\+R\+\_\+\+T\+R\+A\+I\+T\+S\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+S (
+\begin{DoxyParamCaption}
+\item[{\+\_\+element\+Type}]{}
+\end{DoxyParamCaption}
+)}\label{classvct_axis_angle_rotation3_a6961961f60bc9f9ad6c2c1978f53238b}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classvct_axis_angle_rotation3_aa04d755b8de3c1bf343c0c027a1af28f}{}\index{vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}!Angle\+Member@{Angle\+Member}}
+\index{Angle\+Member@{Angle\+Member}!vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}}
+\subsubsection[{Angle\+Member}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ Angle\+Type {\bf vct\+Axis\+Angle\+Rotation3}$<$ \+\_\+element\+Type $>$\+::Angle\+Member\hspace{0.3cm}{\ttfamily [protected]}}\label{classvct_axis_angle_rotation3_aa04d755b8de3c1bf343c0c027a1af28f}
+\hypertarget{classvct_axis_angle_rotation3_ae73a683f2aff0496ec2d15176c357d83}{}\index{vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}!Axis\+Member@{Axis\+Member}}
+\index{Axis\+Member@{Axis\+Member}!vct\+Axis\+Angle\+Rotation3@{vct\+Axis\+Angle\+Rotation3}}
+\subsubsection[{Axis\+Member}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ {\bf Axis\+Type} {\bf vct\+Axis\+Angle\+Rotation3}$<$ \+\_\+element\+Type $>$\+::Axis\+Member\hspace{0.3cm}{\ttfamily [protected]}}\label{classvct_axis_angle_rotation3_ae73a683f2aff0496ec2d15176c357d83}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Vector/\hyperlink{vct_axis_angle_rotation3_8h}{vct\+Axis\+Angle\+Rotation3.\+h}\end{DoxyCompactItemize}

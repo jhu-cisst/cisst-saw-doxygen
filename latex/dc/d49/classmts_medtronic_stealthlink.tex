@@ -1,0 +1,451 @@
+\hypertarget{classmts_medtronic_stealthlink}{}\section{mts\+Medtronic\+Stealthlink Class Reference}
+\label{classmts_medtronic_stealthlink}\index{mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}}
+
+
+{\ttfamily \#include $<$mts\+Medtronic\+Stealthlink.\+h$>$}
+
+Inheritance diagram for mts\+Medtronic\+Stealthlink\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=6.000000cm]{dc/d49/classmts_medtronic_stealthlink}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classmts_medtronic_stealthlink_1_1_exam_information}{Exam\+Information}
+\item 
+class \hyperlink{classmts_medtronic_stealthlink_1_1_registration}{Registration}
+\item 
+class \hyperlink{classmts_medtronic_stealthlink_1_1_tool}{Tool}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmts_medtronic_stealthlink_a0a0b803800d2565351d71539a43b9e05}{mts\+Medtronic\+Stealthlink} (const std\+::string \&task\+Name, const double \&period\+In\+Seconds)
+\item 
+\hyperlink{classmts_medtronic_stealthlink_a6daf9c04998cf9312874cd32cb4e17ab}{mts\+Medtronic\+Stealthlink} (const \hyperlink{classmts_task_periodic_constructor_arg}{mts\+Task\+Periodic\+Constructor\+Arg} \&arg)
+\item 
+\hyperlink{classmts_medtronic_stealthlink_ab9cba06cf6f390b86adeb2d4dd8685f8}{$\sim$mts\+Medtronic\+Stealthlink} ()
+\item 
+void \hyperlink{classmts_medtronic_stealthlink_a392b709d4b6bc9bd5907eeafe345623e}{Startup} (void)
+\item 
+void \hyperlink{classmts_medtronic_stealthlink_a714520abc9570b541c7609d5cdaac454}{Configure} (const std\+::string \&filename=\char`\"{}\char`\"{})
+\item 
+void \hyperlink{classmts_medtronic_stealthlink_adb65e0936975a36c6c1885925d63dcc6}{Run} (void)
+\item 
+void \hyperlink{classmts_medtronic_stealthlink_a084330aa558fbdd4f230450ef7ac0114}{Cleanup} (void)
+\item 
+\hyperlink{classmts_medtronic_stealthlink_a681ffc65034cc175c6df68bac21ba047}{mts\+Medtronic\+Stealthlink} (const std\+::string \&task\+Name)
+\item 
+\hyperlink{classmts_medtronic_stealthlink_ab9cba06cf6f390b86adeb2d4dd8685f8}{$\sim$mts\+Medtronic\+Stealthlink} ()
+\item 
+void \hyperlink{classmts_medtronic_stealthlink_a392b709d4b6bc9bd5907eeafe345623e}{Startup} (void)
+\item 
+void \hyperlink{classmts_medtronic_stealthlink_a714520abc9570b541c7609d5cdaac454}{Configure} (const std\+::string \&filename=\char`\"{}\char`\"{})
+\item 
+void \hyperlink{classmts_medtronic_stealthlink_adb65e0936975a36c6c1885925d63dcc6}{Run} (void)
+\item 
+void \hyperlink{classmts_medtronic_stealthlink_a084330aa558fbdd4f230450ef7ac0114}{Cleanup} (void)
+\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \hyperlink{classmts_medtronic_stealthlink_aa6dc5e01ed985d6e4303bb84642387e6a2db20fb33f325a4d491d94d48829d57e}{M\+A\+X\+\_\+\+M\+U\+L\+T\+\_\+\+T\+O\+O\+L\+S} = 5
+ \}
+\item 
+typedef std\+::vector$<$ \hyperlink{classmts_medtronic_stealthlink_1_1_tool}{Tool} $\ast$ $>$ \hyperlink{classmts_medtronic_stealthlink_ab6218cf1cbe807b4cc2cc262528e7ae9}{Tools\+Container}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classmts_medtronic_stealthlink_ae06f8fd7e621ea1402a751d335a94769}{Request\+Exam\+Information} (void)
+\item 
+void \hyperlink{classmts_medtronic_stealthlink_a44ff78af55d1dafdf41baaf3657ebc24}{Request\+Surgical\+Plan} (void)
+\item 
+void \hyperlink{classmts_medtronic_stealthlink_ae60211f430f60cd11a37156a53eaa1dc}{Get\+Surgical\+Plan} (\hyperlink{mts_vector_8h_af69167a5dc2ad33eb93965b9387d8403}{mts\+Double\+Vec} \&plan) const 
+\item 
+void \hyperlink{classmts_medtronic_stealthlink_ad4b03cca497d5cbb450a1cef93ac64d7}{Reset\+All\+Tools} (void)
+\item 
+\hyperlink{classmts_medtronic_stealthlink_1_1_tool}{Tool} $\ast$ \hyperlink{classmts_medtronic_stealthlink_a183ea588664bf2850dc56405c7bea2bb}{Find\+Tool} (const std\+::string \&stealth\+Name) const 
+\item 
+\hyperlink{classmts_medtronic_stealthlink_1_1_tool}{Tool} $\ast$ \hyperlink{classmts_medtronic_stealthlink_a6f4b088bb06ecdb655e26c79f0612b25}{Add\+Tool} (const std\+::string \&stealth\+Name, const std\+::string \&interface\+Name)
+\item 
+void \hyperlink{classmts_medtronic_stealthlink_a8ff47edf8d1292a5c2ecee33a49b9923}{Init} (void)
+\item 
+void \hyperlink{classmts_medtronic_stealthlink_ab812b32d819a83e3d5b3c04749a71efd}{operator()} (M\+Nav\+Stealth\+Link\+::\+Instrument \&instrument\+\_\+in)
+\item 
+void \hyperlink{classmts_medtronic_stealthlink_a6a6352f68c6541b906923c8aec4560b5}{operator()} (const M\+Nav\+Stealth\+Link\+::\+Frame \&frame\+\_\+in)
+\item 
+void \hyperlink{classmts_medtronic_stealthlink_acdb93302db9bc6125a2b34bb49133ff5}{operator()} (const M\+Nav\+Stealth\+Link\+::\+Registration \&registration\+\_\+in)
+\item 
+void \hyperlink{classmts_medtronic_stealthlink_adff332df7664519d1f219224ae3a51b6}{operator()} (const M\+Nav\+Stealth\+Link\+::\+Exam \&exam\+\_\+in)
+\item 
+void \hyperlink{classmts_medtronic_stealthlink_a90f4d5213489fc6738c3a237fd32719b}{operator()} (M\+Nav\+Stealth\+Link\+::\+Surgical\+Plan \&surgical\+Plan\+\_\+in)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+As\+C\+L\+\_\+\+Client $\ast$ \hyperlink{classmts_medtronic_stealthlink_a1330ec37490335ecddccec758efd763c}{Client}
+\item 
+M\+Nav\+Stealth\+Link\+::\+Stealth\+Server $\ast$ \hyperlink{classmts_medtronic_stealthlink_a8b38a61b23060e7f601e1736d7072804}{Stealth\+Server\+Proxy}
+\item 
+mts\+Medtronic\+Stealthlink\+\_\+\+As\+C\+L\+\_\+\+Utils $\ast$ \hyperlink{classmts_medtronic_stealthlink_ab6970edff3db4896a9cce824323f3c3e}{Utils}
+\item 
+\hyperlink{classmts_stealth_tool}{mts\+Stealth\+Tool} \hyperlink{classmts_medtronic_stealthlink_aacf8237d9bfdc92bda9296875469b23a}{Tool\+Data}
+\item 
+\hyperlink{classmts_stealth_tool}{mts\+Stealth\+Tool} \hyperlink{classmts_medtronic_stealthlink_ae9ec69cddab3fbe60851cdb37b77f1ad}{Mult\+Tool\+Data}
+\item 
+\hyperlink{classmts_stealth_frame}{mts\+Stealth\+Frame} \hyperlink{classmts_medtronic_stealthlink_a063e3d22d099f48291852d9f0557fcdf}{Frame\+Data}
+\item 
+\hyperlink{classmts_stealth_registration}{mts\+Stealth\+Registration} \hyperlink{classmts_medtronic_stealthlink_a199da265ece19f82bd552db08f0e1f6e}{Registration\+Data}
+\item 
+\hyperlink{classmts_stealth_probe_cal}{mts\+Stealth\+Probe\+Cal} \hyperlink{classmts_medtronic_stealthlink_a0a1b2f32b469292811f9d1b8822c9c7b}{Probe\+Cal}
+\item 
+\hyperlink{mts_vector_8h_af69167a5dc2ad33eb93965b9387d8403}{mts\+Double\+Vec} \hyperlink{classmts_medtronic_stealthlink_ae24546a408ca0acb2dc6ccd4c42578b0}{Surgical\+Plan}
+\item 
+bool \hyperlink{classmts_medtronic_stealthlink_a42444da9be77b2b040660fea34bc9690}{Stealthlink\+Present}
+\item 
+\hyperlink{classmts_medtronic_stealthlink_ab6218cf1cbe807b4cc2cc262528e7ae9}{Tools\+Container} \hyperlink{classmts_medtronic_stealthlink_acb4d5215e055c4c39c62d3a06259ccb4}{Tools}
+\item 
+\hyperlink{classmts_medtronic_stealthlink_1_1_tool}{Tool} $\ast$ \hyperlink{classmts_medtronic_stealthlink_a4411bd7e0677a6acecedd426640ecbc8}{Current\+Tool}
+\item 
+\hyperlink{classmts_medtronic_stealthlink_1_1_tool}{Tool} $\ast$ \hyperlink{classmts_medtronic_stealthlink_a49aa0c7078f417253999302e19b67c8d}{Current\+Frame}
+\item 
+bool \hyperlink{classmts_medtronic_stealthlink_ac483f650c9ed1942194dbccca2c306d5}{Track\+Mult\+Tools}
+\item 
+\hyperlink{classmts_medtronic_stealthlink_1_1_tool}{Tool} $\ast$ \hyperlink{classmts_medtronic_stealthlink_a4e1f3377976ce273c64305dcfdbfe8c4}{Current\+Mult\+Tool} \mbox{[}\hyperlink{classmts_medtronic_stealthlink_aa6dc5e01ed985d6e4303bb84642387e6a2db20fb33f325a4d491d94d48829d57e}{M\+A\+X\+\_\+\+M\+U\+L\+T\+\_\+\+T\+O\+O\+L\+S}\mbox{]}
+\item 
+\hyperlink{classmts_medtronic_stealthlink_1_1_registration}{Registration} \hyperlink{classmts_medtronic_stealthlink_af3f0000b5a3e54cd33d8e133644c24eb}{Registration\+Member}
+\item 
+\hyperlink{classmts_medtronic_stealthlink_1_1_exam_information}{Exam\+Information} \hyperlink{classmts_medtronic_stealthlink_ab54f2ca3dd9279f65c616522695c43d3}{Exam\+Information\+Member}
+\item 
+\hyperlink{class_m_nav_stealth_link_1_1_subscription}{M\+Nav\+Stealth\+Link\+::\+Subscription}$<$ M\+Nav\+Stealth\+Link\+::\+Instrument $>$ $\ast$ \hyperlink{classmts_medtronic_stealthlink_a51d1dca84c09fff538413563f0bc3fd7}{instrument\+Subscription}
+\item 
+\hyperlink{class_m_nav_stealth_link_1_1_subscription}{M\+Nav\+Stealth\+Link\+::\+Subscription}$<$ M\+Nav\+Stealth\+Link\+::\+Frame $>$ $\ast$ \hyperlink{classmts_medtronic_stealthlink_a7498531aa89d4481e690d6a964f0de1e}{frame\+Subscription}
+\item 
+\hyperlink{class_m_nav_stealth_link_1_1_subscription}{M\+Nav\+Stealth\+Link\+::\+Subscription}$<$ M\+Nav\+Stealth\+Link\+::\+Registration $>$ $\ast$ \hyperlink{classmts_medtronic_stealthlink_a66aaac1496dacfa13dae52aec5b53be4}{registration\+Subscription}
+\item 
+\hyperlink{class_m_nav_stealth_link_1_1_subscription}{M\+Nav\+Stealth\+Link\+::\+Subscription}$<$ M\+Nav\+Stealth\+Link\+::\+Exam $>$ $\ast$ \hyperlink{classmts_medtronic_stealthlink_ae91000f8a40ee3468158a2b2bdd7ec5b}{exam\+Subscription}
+\item 
+\hyperlink{class_m_nav_stealth_link_1_1_subscription}{M\+Nav\+Stealth\+Link\+::\+Subscription}$<$ M\+Nav\+Stealth\+Link\+::\+Surgical\+Plan $>$ $\ast$ \hyperlink{classmts_medtronic_stealthlink_a341c6bd05bb61053f5b6ce6dde68f0b3}{surgical\+Plan\+Subscription}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\class \hyperlink{classmts_medtronic_stealthlink_a4366be00dfae3e97b5db855f73f8e36b}{M\+Nav\+Stealth\+Link\+::\+Subscription}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classmts_medtronic_stealthlink_ab6218cf1cbe807b4cc2cc262528e7ae9}{}\index{mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}!Tools\+Container@{Tools\+Container}}
+\index{Tools\+Container@{Tools\+Container}!mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}}
+\subsubsection[{Tools\+Container}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::vector$<${\bf Tool} $\ast$$>$ {\bf mts\+Medtronic\+Stealthlink\+::\+Tools\+Container}\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_medtronic_stealthlink_ab6218cf1cbe807b4cc2cc262528e7ae9}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classmts_medtronic_stealthlink_aa6dc5e01ed985d6e4303bb84642387e6}{}\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_medtronic_stealthlink_aa6dc5e01ed985d6e4303bb84642387e6}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{M\+A\+X\+\_\+\+M\+U\+L\+T\+\_\+\+T\+O\+O\+L\+S@{M\+A\+X\+\_\+\+M\+U\+L\+T\+\_\+\+T\+O\+O\+L\+S}!mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}}\index{mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}!M\+A\+X\+\_\+\+M\+U\+L\+T\+\_\+\+T\+O\+O\+L\+S@{M\+A\+X\+\_\+\+M\+U\+L\+T\+\_\+\+T\+O\+O\+L\+S}}\item[{\em 
+\hypertarget{classmts_medtronic_stealthlink_aa6dc5e01ed985d6e4303bb84642387e6a2db20fb33f325a4d491d94d48829d57e}{}M\+A\+X\+\_\+\+M\+U\+L\+T\+\_\+\+T\+O\+O\+L\+S\label{classmts_medtronic_stealthlink_aa6dc5e01ed985d6e4303bb84642387e6a2db20fb33f325a4d491d94d48829d57e}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmts_medtronic_stealthlink_a0a0b803800d2565351d71539a43b9e05}{}\index{mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}!mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}}
+\index{mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}!mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}}
+\subsubsection[{mts\+Medtronic\+Stealthlink}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Medtronic\+Stealthlink\+::mts\+Medtronic\+Stealthlink (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{task\+Name, }
+\item[{const double \&}]{period\+In\+Seconds}
+\end{DoxyParamCaption}
+)}\label{classmts_medtronic_stealthlink_a0a0b803800d2565351d71539a43b9e05}
+\hypertarget{classmts_medtronic_stealthlink_a6daf9c04998cf9312874cd32cb4e17ab}{}\index{mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}!mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}}
+\index{mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}!mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}}
+\subsubsection[{mts\+Medtronic\+Stealthlink}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Medtronic\+Stealthlink\+::mts\+Medtronic\+Stealthlink (
+\begin{DoxyParamCaption}
+\item[{const {\bf mts\+Task\+Periodic\+Constructor\+Arg} \&}]{arg}
+\end{DoxyParamCaption}
+)}\label{classmts_medtronic_stealthlink_a6daf9c04998cf9312874cd32cb4e17ab}
+\hypertarget{classmts_medtronic_stealthlink_ab9cba06cf6f390b86adeb2d4dd8685f8}{}\index{mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}!````~mts\+Medtronic\+Stealthlink@{$\sim$mts\+Medtronic\+Stealthlink}}
+\index{````~mts\+Medtronic\+Stealthlink@{$\sim$mts\+Medtronic\+Stealthlink}!mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}}
+\subsubsection[{$\sim$mts\+Medtronic\+Stealthlink}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Medtronic\+Stealthlink\+::$\sim$mts\+Medtronic\+Stealthlink (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classmts_medtronic_stealthlink_ab9cba06cf6f390b86adeb2d4dd8685f8}
+\hypertarget{classmts_medtronic_stealthlink_a681ffc65034cc175c6df68bac21ba047}{}\index{mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}!mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}}
+\index{mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}!mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}}
+\subsubsection[{mts\+Medtronic\+Stealthlink}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Medtronic\+Stealthlink\+::mts\+Medtronic\+Stealthlink (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{task\+Name}
+\end{DoxyParamCaption}
+)}\label{classmts_medtronic_stealthlink_a681ffc65034cc175c6df68bac21ba047}
+\hypertarget{classmts_medtronic_stealthlink_ab9cba06cf6f390b86adeb2d4dd8685f8}{}\index{mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}!````~mts\+Medtronic\+Stealthlink@{$\sim$mts\+Medtronic\+Stealthlink}}
+\index{````~mts\+Medtronic\+Stealthlink@{$\sim$mts\+Medtronic\+Stealthlink}!mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}}
+\subsubsection[{$\sim$mts\+Medtronic\+Stealthlink}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Medtronic\+Stealthlink\+::$\sim$mts\+Medtronic\+Stealthlink (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classmts_medtronic_stealthlink_ab9cba06cf6f390b86adeb2d4dd8685f8}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classmts_medtronic_stealthlink_a6f4b088bb06ecdb655e26c79f0612b25}{}\index{mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}!Add\+Tool@{Add\+Tool}}
+\index{Add\+Tool@{Add\+Tool}!mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}}
+\subsubsection[{Add\+Tool}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Tool}$\ast$ mts\+Medtronic\+Stealthlink\+::\+Add\+Tool (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{stealth\+Name, }
+\item[{const std\+::string \&}]{interface\+Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_medtronic_stealthlink_a6f4b088bb06ecdb655e26c79f0612b25}
+Add a tool using its stealth name and the name of the corresponding provided interface \hypertarget{classmts_medtronic_stealthlink_a084330aa558fbdd4f230450ef7ac0114}{}\index{mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}!Cleanup@{Cleanup}}
+\index{Cleanup@{Cleanup}!mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}}
+\subsubsection[{Cleanup}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Medtronic\+Stealthlink\+::\+Cleanup (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_medtronic_stealthlink_a084330aa558fbdd4f230450ef7ac0114}
+Virtual method that gets overloaded, and is run after the component gets killed using \hyperlink{classmts_task_from_signal_a9a1b6e7c80ca2c2fdc14de78e3635922}{Kill()} method. 
+
+Reimplemented from \hyperlink{classmts_component_a891f330f4fde7d831dcf7dc537dc5e81}{mts\+Component}.
+
+\hypertarget{classmts_medtronic_stealthlink_a084330aa558fbdd4f230450ef7ac0114}{}\index{mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}!Cleanup@{Cleanup}}
+\index{Cleanup@{Cleanup}!mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}}
+\subsubsection[{Cleanup}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Medtronic\+Stealthlink\+::\+Cleanup (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_medtronic_stealthlink_a084330aa558fbdd4f230450ef7ac0114}
+Virtual method that gets overloaded, and is run after the component gets killed using \hyperlink{classmts_task_from_signal_a9a1b6e7c80ca2c2fdc14de78e3635922}{Kill()} method. 
+
+Reimplemented from \hyperlink{classmts_component_a891f330f4fde7d831dcf7dc537dc5e81}{mts\+Component}.
+
+\hypertarget{classmts_medtronic_stealthlink_a714520abc9570b541c7609d5cdaac454}{}\index{mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}!Configure@{Configure}}
+\index{Configure@{Configure}!mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}}
+\subsubsection[{Configure}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Medtronic\+Stealthlink\+::\+Configure (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{filename = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_medtronic_stealthlink_a714520abc9570b541c7609d5cdaac454}
+Configure the Stealthlink interface using an X\+M\+L file. If the X\+M\+L file is not found, the system uses a default I\+P address (192.\+168.\+0.\+1) and does not predefine any provided interfaces for the tools. Note that if a tool is not pre-\/defined via the X\+M\+L file, it can still be discovered at runtime and a provided interface will be dynamically added. 
+
+Reimplemented from \hyperlink{classmts_component_ad872432876de7879dc96c232b411c146}{mts\+Component}.
+
+\hypertarget{classmts_medtronic_stealthlink_a714520abc9570b541c7609d5cdaac454}{}\index{mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}!Configure@{Configure}}
+\index{Configure@{Configure}!mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}}
+\subsubsection[{Configure}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Medtronic\+Stealthlink\+::\+Configure (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{filename = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_medtronic_stealthlink_a714520abc9570b541c7609d5cdaac454}
+Configure the Stealthlink interface using an X\+M\+L file. If the X\+M\+L file is not found, the system uses a default I\+P address (192.\+168.\+0.\+1) and does not predefine any provided interfaces for the tools. Note that if a tool is not pre-\/defined via the X\+M\+L file, it can still be discovered at runtime and a provided interface will be dynamically added. 
+
+Reimplemented from \hyperlink{classmts_component_ad872432876de7879dc96c232b411c146}{mts\+Component}.
+
+\hypertarget{classmts_medtronic_stealthlink_a183ea588664bf2850dc56405c7bea2bb}{}\index{mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}!Find\+Tool@{Find\+Tool}}
+\index{Find\+Tool@{Find\+Tool}!mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}}
+\subsubsection[{Find\+Tool}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Tool}$\ast$ mts\+Medtronic\+Stealthlink\+::\+Find\+Tool (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{stealth\+Name}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_medtronic_stealthlink_a183ea588664bf2850dc56405c7bea2bb}
+Find a tool using the stealh name \hypertarget{classmts_medtronic_stealthlink_ae60211f430f60cd11a37156a53eaa1dc}{}\index{mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}!Get\+Surgical\+Plan@{Get\+Surgical\+Plan}}
+\index{Get\+Surgical\+Plan@{Get\+Surgical\+Plan}!mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}}
+\subsubsection[{Get\+Surgical\+Plan}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Medtronic\+Stealthlink\+::\+Get\+Surgical\+Plan (
+\begin{DoxyParamCaption}
+\item[{{\bf mts\+Double\+Vec} \&}]{plan}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_medtronic_stealthlink_ae60211f430f60cd11a37156a53eaa1dc}
+\hypertarget{classmts_medtronic_stealthlink_a8ff47edf8d1292a5c2ecee33a49b9923}{}\index{mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}!Init@{Init}}
+\index{Init@{Init}!mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}}
+\subsubsection[{Init}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Medtronic\+Stealthlink\+::\+Init (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_medtronic_stealthlink_a8ff47edf8d1292a5c2ecee33a49b9923}
+\hypertarget{classmts_medtronic_stealthlink_ab812b32d819a83e3d5b3c04749a71efd}{}\index{mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}!operator()@{operator()}}
+\index{operator()@{operator()}!mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Medtronic\+Stealthlink\+::operator() (
+\begin{DoxyParamCaption}
+\item[{M\+Nav\+Stealth\+Link\+::\+Instrument \&}]{instrument\+\_\+in}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_medtronic_stealthlink_ab812b32d819a83e3d5b3c04749a71efd}
+\hypertarget{classmts_medtronic_stealthlink_a6a6352f68c6541b906923c8aec4560b5}{}\index{mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}!operator()@{operator()}}
+\index{operator()@{operator()}!mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Medtronic\+Stealthlink\+::operator() (
+\begin{DoxyParamCaption}
+\item[{const M\+Nav\+Stealth\+Link\+::\+Frame \&}]{frame\+\_\+in}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_medtronic_stealthlink_a6a6352f68c6541b906923c8aec4560b5}
+\hypertarget{classmts_medtronic_stealthlink_acdb93302db9bc6125a2b34bb49133ff5}{}\index{mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}!operator()@{operator()}}
+\index{operator()@{operator()}!mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Medtronic\+Stealthlink\+::operator() (
+\begin{DoxyParamCaption}
+\item[{const M\+Nav\+Stealth\+Link\+::\+Registration \&}]{registration\+\_\+in}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_medtronic_stealthlink_acdb93302db9bc6125a2b34bb49133ff5}
+\hypertarget{classmts_medtronic_stealthlink_adff332df7664519d1f219224ae3a51b6}{}\index{mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}!operator()@{operator()}}
+\index{operator()@{operator()}!mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Medtronic\+Stealthlink\+::operator() (
+\begin{DoxyParamCaption}
+\item[{const M\+Nav\+Stealth\+Link\+::\+Exam \&}]{exam\+\_\+in}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_medtronic_stealthlink_adff332df7664519d1f219224ae3a51b6}
+\hypertarget{classmts_medtronic_stealthlink_a90f4d5213489fc6738c3a237fd32719b}{}\index{mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}!operator()@{operator()}}
+\index{operator()@{operator()}!mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Medtronic\+Stealthlink\+::operator() (
+\begin{DoxyParamCaption}
+\item[{M\+Nav\+Stealth\+Link\+::\+Surgical\+Plan \&}]{surgical\+Plan\+\_\+in}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_medtronic_stealthlink_a90f4d5213489fc6738c3a237fd32719b}
+\hypertarget{classmts_medtronic_stealthlink_ae06f8fd7e621ea1402a751d335a94769}{}\index{mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}!Request\+Exam\+Information@{Request\+Exam\+Information}}
+\index{Request\+Exam\+Information@{Request\+Exam\+Information}!mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}}
+\subsubsection[{Request\+Exam\+Information}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Medtronic\+Stealthlink\+::\+Request\+Exam\+Information (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_medtronic_stealthlink_ae06f8fd7e621ea1402a751d335a94769}
+\hypertarget{classmts_medtronic_stealthlink_a44ff78af55d1dafdf41baaf3657ebc24}{}\index{mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}!Request\+Surgical\+Plan@{Request\+Surgical\+Plan}}
+\index{Request\+Surgical\+Plan@{Request\+Surgical\+Plan}!mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}}
+\subsubsection[{Request\+Surgical\+Plan}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Medtronic\+Stealthlink\+::\+Request\+Surgical\+Plan (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_medtronic_stealthlink_a44ff78af55d1dafdf41baaf3657ebc24}
+\hypertarget{classmts_medtronic_stealthlink_ad4b03cca497d5cbb450a1cef93ac64d7}{}\index{mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}!Reset\+All\+Tools@{Reset\+All\+Tools}}
+\index{Reset\+All\+Tools@{Reset\+All\+Tools}!mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}}
+\subsubsection[{Reset\+All\+Tools}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Medtronic\+Stealthlink\+::\+Reset\+All\+Tools (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_medtronic_stealthlink_ad4b03cca497d5cbb450a1cef93ac64d7}
+Mark all tool data as invalid \hypertarget{classmts_medtronic_stealthlink_adb65e0936975a36c6c1885925d63dcc6}{}\index{mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}!Run@{Run}}
+\index{Run@{Run}!mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}}
+\subsubsection[{Run}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Medtronic\+Stealthlink\+::\+Run (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_medtronic_stealthlink_adb65e0936975a36c6c1885925d63dcc6}
+Pure virtual method that gets overloaded to run the actual task. 
+
+Implements \hyperlink{classmts_task_a20e18c9479cb650792456c32ee689834}{mts\+Task}.
+
+\hypertarget{classmts_medtronic_stealthlink_adb65e0936975a36c6c1885925d63dcc6}{}\index{mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}!Run@{Run}}
+\index{Run@{Run}!mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}}
+\subsubsection[{Run}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Medtronic\+Stealthlink\+::\+Run (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_medtronic_stealthlink_adb65e0936975a36c6c1885925d63dcc6}
+Pure virtual method that gets overloaded to run the actual task. 
+
+Implements \hyperlink{classmts_task_a20e18c9479cb650792456c32ee689834}{mts\+Task}.
+
+\hypertarget{classmts_medtronic_stealthlink_a392b709d4b6bc9bd5907eeafe345623e}{}\index{mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}!Startup@{Startup}}
+\index{Startup@{Startup}!mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}}
+\subsubsection[{Startup}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Medtronic\+Stealthlink\+::\+Startup (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classmts_medtronic_stealthlink_a392b709d4b6bc9bd5907eeafe345623e}
+Virtual method that gets overloaded, and is run before the component is started. 
+
+Reimplemented from \hyperlink{classmts_component_aaf28f0262b44eb6866e10089a02fa6e4}{mts\+Component}.
+
+\hypertarget{classmts_medtronic_stealthlink_a392b709d4b6bc9bd5907eeafe345623e}{}\index{mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}!Startup@{Startup}}
+\index{Startup@{Startup}!mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}}
+\subsubsection[{Startup}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Medtronic\+Stealthlink\+::\+Startup (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_medtronic_stealthlink_a392b709d4b6bc9bd5907eeafe345623e}
+Virtual method that gets overloaded, and is run before the component is started. 
+
+Reimplemented from \hyperlink{classmts_component_aaf28f0262b44eb6866e10089a02fa6e4}{mts\+Component}.
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classmts_medtronic_stealthlink_a4366be00dfae3e97b5db855f73f8e36b}{}\index{mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}!M\+Nav\+Stealth\+Link\+::\+Subscription@{M\+Nav\+Stealth\+Link\+::\+Subscription}}
+\index{M\+Nav\+Stealth\+Link\+::\+Subscription@{M\+Nav\+Stealth\+Link\+::\+Subscription}!mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}}
+\subsubsection[{M\+Nav\+Stealth\+Link\+::\+Subscription}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ friend class {\bf M\+Nav\+Stealth\+Link\+::\+Subscription}\hspace{0.3cm}{\ttfamily [friend]}}\label{classmts_medtronic_stealthlink_a4366be00dfae3e97b5db855f73f8e36b}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classmts_medtronic_stealthlink_a1330ec37490335ecddccec758efd763c}{}\index{mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}!Client@{Client}}
+\index{Client@{Client}!mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}}
+\subsubsection[{Client}]{\setlength{\rightskip}{0pt plus 5cm}As\+C\+L\+\_\+\+Client$\ast$ mts\+Medtronic\+Stealthlink\+::\+Client\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_medtronic_stealthlink_a1330ec37490335ecddccec758efd763c}
+\hypertarget{classmts_medtronic_stealthlink_a49aa0c7078f417253999302e19b67c8d}{}\index{mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}!Current\+Frame@{Current\+Frame}}
+\index{Current\+Frame@{Current\+Frame}!mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}}
+\subsubsection[{Current\+Frame}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Tool} $\ast$ mts\+Medtronic\+Stealthlink\+::\+Current\+Frame\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_medtronic_stealthlink_a49aa0c7078f417253999302e19b67c8d}
+\hypertarget{classmts_medtronic_stealthlink_a4e1f3377976ce273c64305dcfdbfe8c4}{}\index{mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}!Current\+Mult\+Tool@{Current\+Mult\+Tool}}
+\index{Current\+Mult\+Tool@{Current\+Mult\+Tool}!mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}}
+\subsubsection[{Current\+Mult\+Tool}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Tool}$\ast$ mts\+Medtronic\+Stealthlink\+::\+Current\+Mult\+Tool\mbox{[}{\bf M\+A\+X\+\_\+\+M\+U\+L\+T\+\_\+\+T\+O\+O\+L\+S}\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_medtronic_stealthlink_a4e1f3377976ce273c64305dcfdbfe8c4}
+\hypertarget{classmts_medtronic_stealthlink_a4411bd7e0677a6acecedd426640ecbc8}{}\index{mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}!Current\+Tool@{Current\+Tool}}
+\index{Current\+Tool@{Current\+Tool}!mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}}
+\subsubsection[{Current\+Tool}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Tool}$\ast$ mts\+Medtronic\+Stealthlink\+::\+Current\+Tool\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_medtronic_stealthlink_a4411bd7e0677a6acecedd426640ecbc8}
+\hypertarget{classmts_medtronic_stealthlink_ab54f2ca3dd9279f65c616522695c43d3}{}\index{mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}!Exam\+Information\+Member@{Exam\+Information\+Member}}
+\index{Exam\+Information\+Member@{Exam\+Information\+Member}!mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}}
+\subsubsection[{Exam\+Information\+Member}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Exam\+Information} mts\+Medtronic\+Stealthlink\+::\+Exam\+Information\+Member\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_medtronic_stealthlink_ab54f2ca3dd9279f65c616522695c43d3}
+\hypertarget{classmts_medtronic_stealthlink_ae91000f8a40ee3468158a2b2bdd7ec5b}{}\index{mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}!exam\+Subscription@{exam\+Subscription}}
+\index{exam\+Subscription@{exam\+Subscription}!mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}}
+\subsubsection[{exam\+Subscription}]{\setlength{\rightskip}{0pt plus 5cm}{\bf M\+Nav\+Stealth\+Link\+::\+Subscription}$<$M\+Nav\+Stealth\+Link\+::\+Exam$>$$\ast$ mts\+Medtronic\+Stealthlink\+::exam\+Subscription\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_medtronic_stealthlink_ae91000f8a40ee3468158a2b2bdd7ec5b}
+\hypertarget{classmts_medtronic_stealthlink_a063e3d22d099f48291852d9f0557fcdf}{}\index{mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}!Frame\+Data@{Frame\+Data}}
+\index{Frame\+Data@{Frame\+Data}!mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}}
+\subsubsection[{Frame\+Data}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+Stealth\+Frame} mts\+Medtronic\+Stealthlink\+::\+Frame\+Data\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_medtronic_stealthlink_a063e3d22d099f48291852d9f0557fcdf}
+\hypertarget{classmts_medtronic_stealthlink_a7498531aa89d4481e690d6a964f0de1e}{}\index{mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}!frame\+Subscription@{frame\+Subscription}}
+\index{frame\+Subscription@{frame\+Subscription}!mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}}
+\subsubsection[{frame\+Subscription}]{\setlength{\rightskip}{0pt plus 5cm}{\bf M\+Nav\+Stealth\+Link\+::\+Subscription}$<$ M\+Nav\+Stealth\+Link\+::\+Frame $>$ $\ast$ mts\+Medtronic\+Stealthlink\+::frame\+Subscription\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_medtronic_stealthlink_a7498531aa89d4481e690d6a964f0de1e}
+\hypertarget{classmts_medtronic_stealthlink_a51d1dca84c09fff538413563f0bc3fd7}{}\index{mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}!instrument\+Subscription@{instrument\+Subscription}}
+\index{instrument\+Subscription@{instrument\+Subscription}!mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}}
+\subsubsection[{instrument\+Subscription}]{\setlength{\rightskip}{0pt plus 5cm}{\bf M\+Nav\+Stealth\+Link\+::\+Subscription}$<$ M\+Nav\+Stealth\+Link\+::\+Instrument $>$ $\ast$ mts\+Medtronic\+Stealthlink\+::instrument\+Subscription\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_medtronic_stealthlink_a51d1dca84c09fff538413563f0bc3fd7}
+\hypertarget{classmts_medtronic_stealthlink_ae9ec69cddab3fbe60851cdb37b77f1ad}{}\index{mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}!Mult\+Tool\+Data@{Mult\+Tool\+Data}}
+\index{Mult\+Tool\+Data@{Mult\+Tool\+Data}!mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}}
+\subsubsection[{Mult\+Tool\+Data}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+Stealth\+Tool} mts\+Medtronic\+Stealthlink\+::\+Mult\+Tool\+Data\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_medtronic_stealthlink_ae9ec69cddab3fbe60851cdb37b77f1ad}
+\hypertarget{classmts_medtronic_stealthlink_a0a1b2f32b469292811f9d1b8822c9c7b}{}\index{mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}!Probe\+Cal@{Probe\+Cal}}
+\index{Probe\+Cal@{Probe\+Cal}!mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}}
+\subsubsection[{Probe\+Cal}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+Stealth\+Probe\+Cal} mts\+Medtronic\+Stealthlink\+::\+Probe\+Cal\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_medtronic_stealthlink_a0a1b2f32b469292811f9d1b8822c9c7b}
+\hypertarget{classmts_medtronic_stealthlink_a199da265ece19f82bd552db08f0e1f6e}{}\index{mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}!Registration\+Data@{Registration\+Data}}
+\index{Registration\+Data@{Registration\+Data}!mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}}
+\subsubsection[{Registration\+Data}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+Stealth\+Registration} mts\+Medtronic\+Stealthlink\+::\+Registration\+Data\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_medtronic_stealthlink_a199da265ece19f82bd552db08f0e1f6e}
+\hypertarget{classmts_medtronic_stealthlink_af3f0000b5a3e54cd33d8e133644c24eb}{}\index{mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}!Registration\+Member@{Registration\+Member}}
+\index{Registration\+Member@{Registration\+Member}!mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}}
+\subsubsection[{Registration\+Member}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Registration} mts\+Medtronic\+Stealthlink\+::\+Registration\+Member\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_medtronic_stealthlink_af3f0000b5a3e54cd33d8e133644c24eb}
+\hypertarget{classmts_medtronic_stealthlink_a66aaac1496dacfa13dae52aec5b53be4}{}\index{mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}!registration\+Subscription@{registration\+Subscription}}
+\index{registration\+Subscription@{registration\+Subscription}!mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}}
+\subsubsection[{registration\+Subscription}]{\setlength{\rightskip}{0pt plus 5cm}{\bf M\+Nav\+Stealth\+Link\+::\+Subscription}$<$ M\+Nav\+Stealth\+Link\+::\+Registration $>$ $\ast$ mts\+Medtronic\+Stealthlink\+::registration\+Subscription\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_medtronic_stealthlink_a66aaac1496dacfa13dae52aec5b53be4}
+\hypertarget{classmts_medtronic_stealthlink_a42444da9be77b2b040660fea34bc9690}{}\index{mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}!Stealthlink\+Present@{Stealthlink\+Present}}
+\index{Stealthlink\+Present@{Stealthlink\+Present}!mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}}
+\subsubsection[{Stealthlink\+Present}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Medtronic\+Stealthlink\+::\+Stealthlink\+Present\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_medtronic_stealthlink_a42444da9be77b2b040660fea34bc9690}
+\hypertarget{classmts_medtronic_stealthlink_a8b38a61b23060e7f601e1736d7072804}{}\index{mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}!Stealth\+Server\+Proxy@{Stealth\+Server\+Proxy}}
+\index{Stealth\+Server\+Proxy@{Stealth\+Server\+Proxy}!mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}}
+\subsubsection[{Stealth\+Server\+Proxy}]{\setlength{\rightskip}{0pt plus 5cm}M\+Nav\+Stealth\+Link\+::\+Stealth\+Server $\ast$ mts\+Medtronic\+Stealthlink\+::\+Stealth\+Server\+Proxy\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_medtronic_stealthlink_a8b38a61b23060e7f601e1736d7072804}
+\hypertarget{classmts_medtronic_stealthlink_ae24546a408ca0acb2dc6ccd4c42578b0}{}\index{mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}!Surgical\+Plan@{Surgical\+Plan}}
+\index{Surgical\+Plan@{Surgical\+Plan}!mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}}
+\subsubsection[{Surgical\+Plan}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+Double\+Vec} mts\+Medtronic\+Stealthlink\+::\+Surgical\+Plan\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_medtronic_stealthlink_ae24546a408ca0acb2dc6ccd4c42578b0}
+\hypertarget{classmts_medtronic_stealthlink_a341c6bd05bb61053f5b6ce6dde68f0b3}{}\index{mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}!surgical\+Plan\+Subscription@{surgical\+Plan\+Subscription}}
+\index{surgical\+Plan\+Subscription@{surgical\+Plan\+Subscription}!mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}}
+\subsubsection[{surgical\+Plan\+Subscription}]{\setlength{\rightskip}{0pt plus 5cm}{\bf M\+Nav\+Stealth\+Link\+::\+Subscription}$<$ M\+Nav\+Stealth\+Link\+::\+Surgical\+Plan $>$ $\ast$ mts\+Medtronic\+Stealthlink\+::surgical\+Plan\+Subscription\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_medtronic_stealthlink_a341c6bd05bb61053f5b6ce6dde68f0b3}
+\hypertarget{classmts_medtronic_stealthlink_aacf8237d9bfdc92bda9296875469b23a}{}\index{mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}!Tool\+Data@{Tool\+Data}}
+\index{Tool\+Data@{Tool\+Data}!mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}}
+\subsubsection[{Tool\+Data}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+Stealth\+Tool} mts\+Medtronic\+Stealthlink\+::\+Tool\+Data\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_medtronic_stealthlink_aacf8237d9bfdc92bda9296875469b23a}
+\hypertarget{classmts_medtronic_stealthlink_acb4d5215e055c4c39c62d3a06259ccb4}{}\index{mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}!Tools@{Tools}}
+\index{Tools@{Tools}!mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}}
+\subsubsection[{Tools}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Tools\+Container} mts\+Medtronic\+Stealthlink\+::\+Tools\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_medtronic_stealthlink_acb4d5215e055c4c39c62d3a06259ccb4}
+\hypertarget{classmts_medtronic_stealthlink_ac483f650c9ed1942194dbccca2c306d5}{}\index{mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}!Track\+Mult\+Tools@{Track\+Mult\+Tools}}
+\index{Track\+Mult\+Tools@{Track\+Mult\+Tools}!mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}}
+\subsubsection[{Track\+Mult\+Tools}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Medtronic\+Stealthlink\+::\+Track\+Mult\+Tools\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_medtronic_stealthlink_ac483f650c9ed1942194dbccca2c306d5}
+\hypertarget{classmts_medtronic_stealthlink_ab6970edff3db4896a9cce824323f3c3e}{}\index{mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}!Utils@{Utils}}
+\index{Utils@{Utils}!mts\+Medtronic\+Stealthlink@{mts\+Medtronic\+Stealthlink}}
+\subsubsection[{Utils}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Medtronic\+Stealthlink\+\_\+\+As\+C\+L\+\_\+\+Utils$\ast$ mts\+Medtronic\+Stealthlink\+::\+Utils\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_medtronic_stealthlink_ab6970edff3db4896a9cce824323f3c3e}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/saw\+Medtronic\+Stealthlink/include/saw\+Medtronic\+Stealthlink/\hyperlink{mts_medtronic_stealthlink_8h}{mts\+Medtronic\+Stealthlink.\+h}\item 
+/\+Users/anton/devel/cisst-\/saw/saw\+Medtronic\+Stealthlink/include/saw\+Medtronic\+Stealthlink/\hyperlink{mts_medtronic_stealthlink2_8h}{mts\+Medtronic\+Stealthlink2.\+h}\end{DoxyCompactItemize}

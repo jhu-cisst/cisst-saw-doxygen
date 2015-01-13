@@ -1,0 +1,945 @@
+\hypertarget{classvct_quaternion_rotation3_base}{}\section{vct\+Quaternion\+Rotation3\+Base$<$ \+\_\+container\+Type $>$ Class Template Reference}
+\label{classvct_quaternion_rotation3_base}\index{vct\+Quaternion\+Rotation3\+Base$<$ \+\_\+container\+Type $>$@{vct\+Quaternion\+Rotation3\+Base$<$ \+\_\+container\+Type $>$}}
+
+
+Define a rotation quaternion for a space of dimension 3.  
+
+
+
+
+{\ttfamily \#include $<$vct\+Forward\+Declarations.\+h$>$}
+
+Inheritance diagram for vct\+Quaternion\+Rotation3\+Base$<$ \+\_\+container\+Type $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{db/d76/classvct_quaternion_rotation3_base}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \hyperlink{classvct_quaternion_rotation3_base_a6baf2fda4760908cbc94c53f79838804a42527344f7f8ba3f199c418756497bc1}{S\+I\+Z\+E} = 4
+ \}
+\item 
+enum \{ \hyperlink{classvct_quaternion_rotation3_base_a729ac03acdd5949ecf382629e563d2a0a9417132a8a6849e18439d903ae6a1f18}{D\+I\+M\+E\+N\+S\+I\+O\+N} = 3
+ \}
+\item 
+typedef \hyperlink{classvct_quaternion_base}{vct\+Quaternion\+Base}$<$ \+\_\+container\+Type $>$ \hyperlink{classvct_quaternion_rotation3_base_aec53a8354bebb034598fe2b02ffc8217}{Base\+Type}
+\item 
+typedef \+\_\+container\+Type \hyperlink{classvct_quaternion_rotation3_base_a41c3b08279a5560f43351c14666c9c6a}{Container\+Type}
+\item 
+typedef \hyperlink{classvct_quaternion_rotation3_base}{vct\+Quaternion\+Rotation3\+Base}$<$ \+\_\+container\+Type $>$ \hyperlink{classvct_quaternion_rotation3_base_aff1feb6ba01e2cbc6f455a140992e728}{This\+Type}
+\item 
+typedef \hyperlink{classcmn_type_traits}{cmn\+Type\+Traits}$<$ value\+\_\+type $>$ \hyperlink{classvct_quaternion_rotation3_base_a78f36636344dd97b9837f9b15aedd1f7}{Type\+Traits}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classvct_quaternion_rotation3_base_af57e4c02fd70dc7ec1d58e0b44a624fd}{V\+C\+T\+\_\+\+C\+O\+N\+T\+A\+I\+N\+E\+R\+\_\+\+T\+R\+A\+I\+T\+S\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+S} (typename Container\+Type\+::value\+\_\+type)
+\item 
+\hyperlink{classvct_quaternion_rotation3_base_a1dea4cd579703f66bf163b69bca5a96b}{vct\+Quaternion\+Rotation3\+Base} (void)
+\item 
+\hyperlink{classvct_quaternion_rotation3_base_a8376b96adbf771b1391074e1d2e58ad7}{vct\+Quaternion\+Rotation3\+Base} (const \hyperlink{classvct_quaternion_base_af28efdc38acf89acb7a67afada11408c}{This\+Type} \&quaternion\+Rotation)
+\item 
+\hyperlink{classvct_quaternion_base_af28efdc38acf89acb7a67afada11408c}{This\+Type} \& \hyperlink{classvct_quaternion_rotation3_base_a3a428d19b8f48077b8276997cfd60c93}{From} (const \hyperlink{classvct_quaternion_base_af28efdc38acf89acb7a67afada11408c}{This\+Type} \&other\+Rotation)
+\item 
+\hyperlink{classvct_quaternion_base_af28efdc38acf89acb7a67afada11408c}{This\+Type} \& \hyperlink{classvct_quaternion_rotation3_base_a2152103b5a4f8a92f397ba8aa2e9c3e1}{Normalized\+Of} (const \hyperlink{classvct_quaternion_base_af28efdc38acf89acb7a67afada11408c}{This\+Type} \&other\+Quaternion)
+\item 
+\hyperlink{classvct_quaternion_base_af28efdc38acf89acb7a67afada11408c}{This\+Type} \& \hyperlink{classvct_quaternion_rotation3_base_a83d65d4063a0bcd1db35fec895bb3793}{Normalized\+Self} (void)
+\item 
+\hyperlink{classvct_quaternion_base_af28efdc38acf89acb7a67afada11408c}{This\+Type} \hyperlink{classvct_quaternion_rotation3_base_a5eb2e79d6a9cd3993a847791760d0d7b}{Normalized} (void) const 
+\item 
+\hyperlink{classvct_quaternion_base_af28efdc38acf89acb7a67afada11408c}{This\+Type} \& \hyperlink{classvct_quaternion_rotation3_base_a0a94bc0c71fff5b80ae821faddbeaf4c}{Inverse\+Self} (void)
+\item 
+\hyperlink{classvct_quaternion_base_af28efdc38acf89acb7a67afada11408c}{This\+Type} \& \hyperlink{classvct_quaternion_rotation3_base_aa8b668cab41b415642137c6eb93508b9}{Inverse\+Of} (const \hyperlink{classvct_quaternion_base_af28efdc38acf89acb7a67afada11408c}{This\+Type} \&other\+Rotation)
+\item 
+\hyperlink{classvct_quaternion_base_af28efdc38acf89acb7a67afada11408c}{This\+Type} \hyperlink{classvct_quaternion_rotation3_base_af658926043f0deab6997881cd9fff822}{Inverse} (void) const 
+\item 
+{\footnotesize template$<$stride\+\_\+type \+\_\+\+\_\+stride1, class \+\_\+\+\_\+data\+Ptr\+Type1 , stride\+\_\+type \+\_\+\+\_\+stride2, class \+\_\+\+\_\+data\+Ptr\+Type2 $>$ }\\void \hyperlink{classvct_quaternion_rotation3_base_abd3b8ecd60488880c6dbeb7b614589ec}{Apply\+To} (const \hyperlink{classvct_fixed_size_const_vector_base}{vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \hyperlink{classvct_quaternion_rotation3_base_a729ac03acdd5949ecf382629e563d2a0a9417132a8a6849e18439d903ae6a1f18}{D\+I\+M\+E\+N\+S\+I\+O\+N}, \+\_\+\+\_\+stride1, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type1 $>$ \&input, \hyperlink{classvct_fixed_size_vector_base}{vct\+Fixed\+Size\+Vector\+Base}$<$ \hyperlink{classvct_quaternion_rotation3_base_a729ac03acdd5949ecf382629e563d2a0a9417132a8a6849e18439d903ae6a1f18}{D\+I\+M\+E\+N\+S\+I\+O\+N}, \+\_\+\+\_\+stride2, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type2 $>$ \&output) const 
+\item 
+{\footnotesize template$<$class \+\_\+\+\_\+vector\+Owner\+Type , stride\+\_\+type \+\_\+\+\_\+stride, class \+\_\+\+\_\+data\+Ptr\+Type $>$ }\\void \hyperlink{classvct_quaternion_rotation3_base_a2f9afc18f09f6b2d614121fbd65f16ae}{Apply\+To} (const \hyperlink{classvct_dynamic_const_vector_base}{vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type, value\+\_\+type $>$ \&input, \hyperlink{classvct_fixed_size_vector_base}{vct\+Fixed\+Size\+Vector\+Base}$<$ \hyperlink{classvct_quaternion_rotation3_base_a729ac03acdd5949ecf382629e563d2a0a9417132a8a6849e18439d903ae6a1f18}{D\+I\+M\+E\+N\+S\+I\+O\+N}, \+\_\+\+\_\+stride, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type $>$ \&output) const 
+\item 
+{\footnotesize template$<$stride\+\_\+type \+\_\+\+\_\+stride, class \+\_\+\+\_\+data\+Ptr\+Type $>$ }\\\hyperlink{classvct_fixed_size_vector}{vct\+Fixed\+Size\+Vector}$<$ value\+\_\+type, \hyperlink{classvct_quaternion_rotation3_base_a729ac03acdd5949ecf382629e563d2a0a9417132a8a6849e18439d903ae6a1f18}{D\+I\+M\+E\+N\+S\+I\+O\+N} $>$ \hyperlink{classvct_quaternion_rotation3_base_ae06cb9fb49e622bcfdf2e374a393cddd}{Apply\+To} (const \hyperlink{classvct_fixed_size_const_vector_base}{vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \hyperlink{classvct_quaternion_rotation3_base_a729ac03acdd5949ecf382629e563d2a0a9417132a8a6849e18439d903ae6a1f18}{D\+I\+M\+E\+N\+S\+I\+O\+N}, \+\_\+\+\_\+stride, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type $>$ \&input) const 
+\item 
+{\footnotesize template$<$class \+\_\+\+\_\+vector\+Owner\+Type $>$ }\\\hyperlink{classvct_fixed_size_vector}{vct\+Fixed\+Size\+Vector}$<$ value\+\_\+type, \hyperlink{classvct_quaternion_rotation3_base_a729ac03acdd5949ecf382629e563d2a0a9417132a8a6849e18439d903ae6a1f18}{D\+I\+M\+E\+N\+S\+I\+O\+N} $>$ \hyperlink{classvct_quaternion_rotation3_base_a325b9b7a00977944710e138d9f9fa672}{Apply\+To} (const \hyperlink{classvct_dynamic_const_vector_base}{vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type, value\+\_\+type $>$ \&input) const 
+\item 
+{\footnotesize template$<$size\+\_\+type \+\_\+\+\_\+cols, stride\+\_\+type \+\_\+\+\_\+row\+Stride1, stride\+\_\+type \+\_\+\+\_\+col\+Stride1, class \+\_\+\+\_\+data\+Ptr\+Type1 , stride\+\_\+type \+\_\+\+\_\+row\+Stride2, stride\+\_\+type \+\_\+\+\_\+col\+Stride2, class \+\_\+\+\_\+data\+Ptr\+Type2 $>$ }\\void \hyperlink{classvct_quaternion_rotation3_base_a9e7293a9906d19ad13033c32ba2a54e2}{Apply\+To} (const \hyperlink{classvct_fixed_size_const_matrix_base}{vct\+Fixed\+Size\+Const\+Matrix\+Base}$<$ \hyperlink{classvct_quaternion_rotation3_base_a729ac03acdd5949ecf382629e563d2a0a9417132a8a6849e18439d903ae6a1f18}{D\+I\+M\+E\+N\+S\+I\+O\+N}, \+\_\+\+\_\+cols, \+\_\+\+\_\+row\+Stride1, \+\_\+\+\_\+col\+Stride1, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type1 $>$ \&input, \hyperlink{classvct_fixed_size_matrix_base}{vct\+Fixed\+Size\+Matrix\+Base}$<$ \hyperlink{classvct_quaternion_rotation3_base_a729ac03acdd5949ecf382629e563d2a0a9417132a8a6849e18439d903ae6a1f18}{D\+I\+M\+E\+N\+S\+I\+O\+N}, \+\_\+\+\_\+cols, \+\_\+\+\_\+row\+Stride2, \+\_\+\+\_\+col\+Stride2, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type2 $>$ \&output) const 
+\item 
+{\footnotesize template$<$class \+\_\+\+\_\+matrix\+Owner\+Type1 , class \+\_\+\+\_\+matrix\+Owner\+Type2 $>$ }\\void \hyperlink{classvct_quaternion_rotation3_base_a1c2f9b5a6e94fd4fc1c29ab5e1d35802}{Apply\+To} (const \hyperlink{classvct_dynamic_const_matrix_base}{vct\+Dynamic\+Const\+Matrix\+Base}$<$ \+\_\+\+\_\+matrix\+Owner\+Type1, value\+\_\+type $>$ \&input, \hyperlink{classvct_dynamic_matrix_base}{vct\+Dynamic\+Matrix\+Base}$<$ \+\_\+\+\_\+matrix\+Owner\+Type2, value\+\_\+type $>$ \&output) const 
+\item 
+void \hyperlink{classvct_quaternion_rotation3_base_aca00b347c8b13aa531ee7e433a009494}{Apply\+To} (const \hyperlink{classvct_quaternion_base_af28efdc38acf89acb7a67afada11408c}{This\+Type} \&input, \hyperlink{classvct_quaternion_base_af28efdc38acf89acb7a67afada11408c}{This\+Type} \&output) const 
+\item 
+\hyperlink{classvct_quaternion_base_af28efdc38acf89acb7a67afada11408c}{This\+Type} \hyperlink{classvct_quaternion_rotation3_base_ab0bdd0eb7271055fbcbadaea2e2cddaa}{Apply\+To} (const \hyperlink{classvct_quaternion_base_af28efdc38acf89acb7a67afada11408c}{This\+Type} \&input) const 
+\item 
+{\footnotesize template$<$class \+\_\+vector\+Owner\+Type1 , class \+\_\+vector\+Owner\+Type2 $>$ }\\void \hyperlink{classvct_quaternion_rotation3_base_a818da0e1bd6791417dc16af9f4f55aa5}{Apply\+To} (const \hyperlink{classvct_dynamic_const_vector_base}{vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type1, value\+\_\+type $>$ \&input, \hyperlink{classvct_dynamic_vector_base}{vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type2, value\+\_\+type $>$ \&output) const 
+\item 
+{\footnotesize template$<$stride\+\_\+type \+\_\+\+\_\+stride1, class \+\_\+\+\_\+data\+Ptr\+Type1 , stride\+\_\+type \+\_\+\+\_\+stride2, class \+\_\+\+\_\+data\+Ptr\+Type2 $>$ }\\void \hyperlink{classvct_quaternion_rotation3_base_ac822156b1d72851cd10fa02726fb616e}{Apply\+Inverse\+To} (const \hyperlink{classvct_fixed_size_const_vector_base}{vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \hyperlink{classvct_quaternion_rotation3_base_a729ac03acdd5949ecf382629e563d2a0a9417132a8a6849e18439d903ae6a1f18}{D\+I\+M\+E\+N\+S\+I\+O\+N}, \+\_\+\+\_\+stride1, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type1 $>$ \&input, \hyperlink{classvct_fixed_size_vector_base}{vct\+Fixed\+Size\+Vector\+Base}$<$ \hyperlink{classvct_quaternion_rotation3_base_a729ac03acdd5949ecf382629e563d2a0a9417132a8a6849e18439d903ae6a1f18}{D\+I\+M\+E\+N\+S\+I\+O\+N}, \+\_\+\+\_\+stride2, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type2 $>$ \&output) const 
+\item 
+{\footnotesize template$<$class \+\_\+\+\_\+vector\+Owner\+Type , stride\+\_\+type \+\_\+\+\_\+stride, class \+\_\+\+\_\+data\+Ptr\+Type $>$ }\\void \hyperlink{classvct_quaternion_rotation3_base_a59b85aed1b88591dd44d0be6611a19a0}{Apply\+Inverse\+To} (const \hyperlink{classvct_dynamic_const_vector_base}{vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type, value\+\_\+type $>$ \&input, \hyperlink{classvct_fixed_size_vector_base}{vct\+Fixed\+Size\+Vector\+Base}$<$ \hyperlink{classvct_quaternion_rotation3_base_a729ac03acdd5949ecf382629e563d2a0a9417132a8a6849e18439d903ae6a1f18}{D\+I\+M\+E\+N\+S\+I\+O\+N}, \+\_\+\+\_\+stride, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type $>$ \&output) const 
+\item 
+{\footnotesize template$<$stride\+\_\+type \+\_\+\+\_\+stride, class \+\_\+\+\_\+data\+Ptr\+Type $>$ }\\\hyperlink{classvct_fixed_size_vector}{vct\+Fixed\+Size\+Vector}$<$ value\+\_\+type, \hyperlink{classvct_quaternion_rotation3_base_a729ac03acdd5949ecf382629e563d2a0a9417132a8a6849e18439d903ae6a1f18}{D\+I\+M\+E\+N\+S\+I\+O\+N} $>$ \hyperlink{classvct_quaternion_rotation3_base_a0b8f96ed4e769aab1d14769de116bf2b}{Apply\+Inverse\+To} (const \hyperlink{classvct_fixed_size_const_vector_base}{vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \hyperlink{classvct_quaternion_rotation3_base_a729ac03acdd5949ecf382629e563d2a0a9417132a8a6849e18439d903ae6a1f18}{D\+I\+M\+E\+N\+S\+I\+O\+N}, \+\_\+\+\_\+stride, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type $>$ \&input) const 
+\item 
+{\footnotesize template$<$class \+\_\+\+\_\+vector\+Owner\+Type $>$ }\\\hyperlink{classvct_fixed_size_vector}{vct\+Fixed\+Size\+Vector}$<$ value\+\_\+type, \hyperlink{classvct_quaternion_rotation3_base_a729ac03acdd5949ecf382629e563d2a0a9417132a8a6849e18439d903ae6a1f18}{D\+I\+M\+E\+N\+S\+I\+O\+N} $>$ \hyperlink{classvct_quaternion_rotation3_base_ae1df006c81b202fa7015879c8c91448a}{Apply\+Inverse\+To} (const \hyperlink{classvct_dynamic_const_vector_base}{vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type, value\+\_\+type $>$ \&input) const 
+\item 
+{\footnotesize template$<$size\+\_\+type \+\_\+\+\_\+cols, stride\+\_\+type \+\_\+\+\_\+row\+Stride1, stride\+\_\+type \+\_\+\+\_\+col\+Stride1, class \+\_\+\+\_\+data\+Ptr\+Type1 , stride\+\_\+type \+\_\+\+\_\+row\+Stride2, stride\+\_\+type \+\_\+\+\_\+col\+Stride2, class \+\_\+\+\_\+data\+Ptr\+Type2 $>$ }\\void \hyperlink{classvct_quaternion_rotation3_base_a50ed1dcc4a0a0b748bb0f17b481e4584}{Apply\+Inverse\+To} (const \hyperlink{classvct_fixed_size_const_matrix_base}{vct\+Fixed\+Size\+Const\+Matrix\+Base}$<$ \hyperlink{classvct_quaternion_rotation3_base_a729ac03acdd5949ecf382629e563d2a0a9417132a8a6849e18439d903ae6a1f18}{D\+I\+M\+E\+N\+S\+I\+O\+N}, \+\_\+\+\_\+cols, \+\_\+\+\_\+row\+Stride1, \+\_\+\+\_\+col\+Stride1, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type1 $>$ \&input, \hyperlink{classvct_fixed_size_matrix_base}{vct\+Fixed\+Size\+Matrix\+Base}$<$ \hyperlink{classvct_quaternion_rotation3_base_a729ac03acdd5949ecf382629e563d2a0a9417132a8a6849e18439d903ae6a1f18}{D\+I\+M\+E\+N\+S\+I\+O\+N}, \+\_\+\+\_\+cols, \+\_\+\+\_\+row\+Stride2, \+\_\+\+\_\+col\+Stride2, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type2 $>$ \&output) const 
+\item 
+void \hyperlink{classvct_quaternion_rotation3_base_afe92782ee4eb089405be71a71e52d9eb}{Apply\+Inverse\+To} (const \hyperlink{classvct_quaternion_base_af28efdc38acf89acb7a67afada11408c}{This\+Type} \&input, \hyperlink{classvct_quaternion_base_af28efdc38acf89acb7a67afada11408c}{This\+Type} \&output) const 
+\item 
+\hyperlink{classvct_quaternion_base_af28efdc38acf89acb7a67afada11408c}{This\+Type} \hyperlink{classvct_quaternion_rotation3_base_a71037e72bd6869d7773006c7bb77e04b}{Apply\+Inverse\+To} (const \hyperlink{classvct_quaternion_base_af28efdc38acf89acb7a67afada11408c}{This\+Type} \&input) const 
+\item 
+{\footnotesize template$<$class \+\_\+vector\+Owner\+Type1 , class \+\_\+vector\+Owner\+Type2 $>$ }\\void \hyperlink{classvct_quaternion_rotation3_base_a6febf7108436b0ae6935c8bb5557cfa7}{Apply\+Inverse\+To} (const \hyperlink{classvct_dynamic_const_vector_base}{vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type1, value\+\_\+type $>$ \&input, \hyperlink{classvct_dynamic_vector_base}{vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type2, value\+\_\+type $>$ \&output) const 
+\item 
+{\footnotesize template$<$class \+\_\+\+\_\+matrix\+Owner\+Type1 , class \+\_\+\+\_\+matrix\+Owner\+Type2 $>$ }\\void \hyperlink{classvct_quaternion_rotation3_base_a99017a2bf77db7f404eddfc6ac44e899}{Apply\+Inverse\+To} (const \hyperlink{classvct_dynamic_const_matrix_base}{vct\+Dynamic\+Const\+Matrix\+Base}$<$ \+\_\+\+\_\+matrix\+Owner\+Type1, value\+\_\+type $>$ \&input, \hyperlink{classvct_dynamic_matrix_base}{vct\+Dynamic\+Matrix\+Base}$<$ \+\_\+\+\_\+matrix\+Owner\+Type2, value\+\_\+type $>$ \&output) const 
+\item 
+bool \hyperlink{classvct_quaternion_rotation3_base_aa525dec7b10d16177b9e4b59685ba0b0}{Almost\+Equivalent} (const \hyperlink{classvct_quaternion_base_af28efdc38acf89acb7a67afada11408c}{This\+Type} \&other, value\+\_\+type tolerance=\hyperlink{classcmn_type_traits_adc129bf9867295b90d300768b780fa99}{Type\+Traits\+::\+Tolerance}()) const 
+\item 
+\hyperlink{classvct_quaternion_base_af28efdc38acf89acb7a67afada11408c}{This\+Type} \hyperlink{classvct_quaternion_rotation3_base_a227f3e3cdab401dd2270a70bdd925c0f}{operator$\ast$} (const \hyperlink{classvct_quaternion_base_af28efdc38acf89acb7a67afada11408c}{This\+Type} \&input) const 
+\end{DoxyCompactItemize}
+\begin{Indent}{\bf Constructors with normalization test.}\par
+{\em These constructors will check that the input is valid, i.\+e. normalized. If the input is not normalized, an exception (of type {\ttfamily std\+::runtime\+\_\+error}) will be thrown. Each constructor uses the corresponding \hyperlink{classvct_quaternion_rotation3_base_a24fb234e60ece7a6b04f6f53339f38fe}{From()} method based on the input type.
+
+\begin{DoxyNote}{Note}
+See the \hyperlink{_minimal_cmn_8h_ad50e82cf9c9dbd0e6443c13e0d1a6f1a}{cmn\+Throw()} function if an {\ttfamily abort} is better than an exception for your application. 
+\end{DoxyNote}
+}\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classvct_quaternion_rotation3_base_ae39ee6bfd8b77e8e6b6b9ed4018822d3}{vct\+Quaternion\+Rotation3\+Base} (const value\+\_\+type \&x, const value\+\_\+type \&y, const value\+\_\+type \&z, const value\+\_\+type \&r)  throw (std\+::runtime\+\_\+error)
+\item 
+{\footnotesize template$<$class \+\_\+\+\_\+container\+Type $>$ }\\\hyperlink{classvct_quaternion_rotation3_base_a505f35ee8b57e613635d603cda8fd2ef}{vct\+Quaternion\+Rotation3\+Base} (const \hyperlink{classvct_matrix_rotation3_base}{vct\+Matrix\+Rotation3\+Base}$<$ \+\_\+\+\_\+container\+Type $>$ \&matrix\+Rotation)  throw (std\+::runtime\+\_\+error)
+\item 
+\hyperlink{classvct_quaternion_rotation3_base_a2d5c41c767010bc9b7542841fdeb5dce}{vct\+Quaternion\+Rotation3\+Base} (const \hyperlink{classvct_axis_angle_rotation3}{vct\+Axis\+Angle\+Rotation3}$<$ value\+\_\+type $>$ \&axis\+Angle\+Rotation)  throw (std\+::runtime\+\_\+error)
+\item 
+{\footnotesize template$<$class \+\_\+\+\_\+container\+Type $>$ }\\\hyperlink{classvct_quaternion_rotation3_base_a1faf412df8da0e58bdf71ee5fd6047dd}{vct\+Quaternion\+Rotation3\+Base} (const \hyperlink{classvct_rodriguez_rotation3_base}{vct\+Rodriguez\+Rotation3\+Base}$<$ \+\_\+\+\_\+container\+Type $>$ \&rodriguez\+Rotation)  throw (std\+::runtime\+\_\+error)
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Constructors without normalization test}\par
+{\em These constructors will either assume that the input is normalized or normalize the input (a copy of it, if required) based on the last parameter provided.
+
+
+\begin{DoxyItemize}
+\item If the normalization flag is set to \hyperlink{vct_forward_declarations_8h_a6fd516b0c35fa9967b4da5f03a788985}{V\+C\+T\+\_\+\+D\+O\+\_\+\+N\+O\+T\+\_\+\+N\+O\+R\+M\+A\+L\+I\+Z\+E}, the input is considered already normalized and the constructor will not perform any sanity check. This can lead to numerical instabilities which have to be handled by the caller.
+
+
+\item If the normalization flag is set to \hyperlink{vct_forward_declarations_8h_ae54c682b919a7c5743ea498810518565}{V\+C\+T\+\_\+\+N\+O\+R\+M\+A\+L\+I\+Z\+E}, the input will be normalized. This option should be used whenever it is important to obtain a result as \char`\"{}normalized\char`\"{} as possible.
+
+
+\end{DoxyItemize}}\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classvct_quaternion_rotation3_base_ae8f0b3b79b368f80ea333f2bff792e79}{vct\+Quaternion\+Rotation3\+Base} (const \hyperlink{classvct_quaternion_base_af28efdc38acf89acb7a67afada11408c}{This\+Type} \&quaternion\+Rotation, bool normalize\+Input)
+\item 
+\hyperlink{classvct_quaternion_rotation3_base_a07d0b2ed8314011b0bb68f195df0fbef}{vct\+Quaternion\+Rotation3\+Base} (const value\+\_\+type \&x, const value\+\_\+type \&y, const value\+\_\+type \&z, const value\+\_\+type \&r, bool normalize\+Input)
+\item 
+{\footnotesize template$<$class \+\_\+\+\_\+container\+Type $>$ }\\\hyperlink{classvct_quaternion_rotation3_base_ac9035beb866ddfa729366b5098dab49d}{vct\+Quaternion\+Rotation3\+Base} (const \hyperlink{classvct_matrix_rotation3_base}{vct\+Matrix\+Rotation3\+Base}$<$ \+\_\+\+\_\+container\+Type $>$ \&matrix\+Rotation, bool normalize\+Input)
+\item 
+\hyperlink{classvct_quaternion_rotation3_base_a4dc7f240e97a06c7b8bac87b0aa7ed11}{vct\+Quaternion\+Rotation3\+Base} (const \hyperlink{classvct_axis_angle_rotation3}{vct\+Axis\+Angle\+Rotation3}$<$ value\+\_\+type $>$ \&axis\+Angle\+Rotation, bool normalize\+Input)
+\item 
+{\footnotesize template$<$class \+\_\+\+\_\+container\+Type $>$ }\\\hyperlink{classvct_quaternion_rotation3_base_af05d7939df2800a9a541ed9bac3698e0}{vct\+Quaternion\+Rotation3\+Base} (const \hyperlink{classvct_rodriguez_rotation3_base}{vct\+Rodriguez\+Rotation3\+Base}$<$ \+\_\+\+\_\+container\+Type $>$ \&rodriguez\+Rotation, bool normalize\+Input)
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Conversion from normalized input.}\par
+{\em These methods will check that the input is normalized. If the input is not normalized, an exception ({\ttfamily std\+::runtime\+\_\+error}) will be thrown using \hyperlink{_minimal_cmn_8h_ad50e82cf9c9dbd0e6443c13e0d1a6f1a}{cmn\+Throw()}.
+
+\begin{DoxyNote}{Note}
+Since all exceptions are thrown using \hyperlink{_minimal_cmn_8h_ad50e82cf9c9dbd0e6443c13e0d1a6f1a}{cmn\+Throw()}, it is possible to configure these methods to use {\ttfamily abort()} if the normalization requirements are not met (see \hyperlink{_minimal_cmn_8h_ad50e82cf9c9dbd0e6443c13e0d1a6f1a}{cmn\+Throw()}). 
+\end{DoxyNote}
+}\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classvct_quaternion_base_af28efdc38acf89acb7a67afada11408c}{This\+Type} \& \hyperlink{classvct_quaternion_rotation3_base_a24fb234e60ece7a6b04f6f53339f38fe}{From} (value\+\_\+type x, value\+\_\+type y, value\+\_\+type z, value\+\_\+type r)  throw (std\+::runtime\+\_\+error)
+\item 
+\hyperlink{classvct_quaternion_base_af28efdc38acf89acb7a67afada11408c}{This\+Type} \& \hyperlink{classvct_quaternion_rotation3_base_a1c2c3f6c860184f92ee7475a18b6f67e}{From} (const \hyperlink{classvct_axis_angle_rotation3}{vct\+Axis\+Angle\+Rotation3}$<$ value\+\_\+type $>$ axis\+Angle\+Rotation)  throw (std\+::runtime\+\_\+error)
+\item 
+{\footnotesize template$<$class \+\_\+\+\_\+container\+Type $>$ }\\\hyperlink{classvct_quaternion_base_af28efdc38acf89acb7a67afada11408c}{This\+Type} \& \hyperlink{classvct_quaternion_rotation3_base_a7f5cf5bd55cb472c1e18829123b61702}{From} (const \hyperlink{classvct_rodriguez_rotation3_base}{vct\+Rodriguez\+Rotation3\+Base}$<$ \+\_\+\+\_\+container\+Type $>$ \&rodriguez\+Rotation)  throw (std\+::runtime\+\_\+error)
+\item 
+{\footnotesize template$<$class \+\_\+\+\_\+container\+Type $>$ }\\\hyperlink{classvct_quaternion_base_af28efdc38acf89acb7a67afada11408c}{This\+Type} \& \hyperlink{classvct_quaternion_rotation3_base_ac18f7eca8d1c4cbe11352120ea21f8ef}{From} (const \hyperlink{classvct_matrix_rotation3_base}{vct\+Matrix\+Rotation3\+Base}$<$ \+\_\+\+\_\+container\+Type $>$ \&matrix\+Rotation)  throw (std\+::runtime\+\_\+error)
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Conversion and normalization.}\par
+{\em These method will accept any input and attempt to either normalize the input and then convert or convert and then normalize the quaternion itself.~\newline
+The order depends on the type of input. }\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class \+\_\+\+\_\+container\+Type $>$ }\\\hyperlink{classvct_quaternion_base_af28efdc38acf89acb7a67afada11408c}{This\+Type} \& \hyperlink{classvct_quaternion_rotation3_base_afd47a2757a43293b69825cc1d5a1d47c}{From\+Normalized} (const \hyperlink{classvct_quaternion_rotation3_base}{vct\+Quaternion\+Rotation3\+Base}$<$ \+\_\+\+\_\+container\+Type $>$ \&other)
+\item 
+\hyperlink{classvct_quaternion_base_af28efdc38acf89acb7a67afada11408c}{This\+Type} \& \hyperlink{classvct_quaternion_rotation3_base_a45b5b924af0ce4cffde44a71eb907448}{From\+Normalized} (value\+\_\+type x, value\+\_\+type y, value\+\_\+type z, value\+\_\+type r)
+\item 
+\hyperlink{classvct_quaternion_base_af28efdc38acf89acb7a67afada11408c}{This\+Type} \& \hyperlink{classvct_quaternion_rotation3_base_a8da7956fa2689bc098cd54aa8d876c50}{From\+Normalized} (const \hyperlink{classvct_axis_angle_rotation3}{vct\+Axis\+Angle\+Rotation3}$<$ value\+\_\+type $>$ axis\+Angle\+Rotation)
+\item 
+{\footnotesize template$<$class \+\_\+\+\_\+container\+Type $>$ }\\\hyperlink{classvct_quaternion_base_af28efdc38acf89acb7a67afada11408c}{This\+Type} \& \hyperlink{classvct_quaternion_rotation3_base_a4f5a76c0336a1c208d537c3f0e4d10ff}{From\+Normalized} (const \hyperlink{classvct_rodriguez_rotation3_base}{vct\+Rodriguez\+Rotation3\+Base}$<$ \+\_\+\+\_\+container\+Type $>$ \&rodriguez\+Rotation)
+\item 
+{\footnotesize template$<$class \+\_\+\+\_\+container\+Type $>$ }\\\hyperlink{classvct_quaternion_base_af28efdc38acf89acb7a67afada11408c}{This\+Type} \& \hyperlink{classvct_quaternion_rotation3_base_aca57ab3ef2841ef2c07a93018909fbad}{From\+Normalized} (const \hyperlink{classvct_matrix_rotation3_base}{vct\+Matrix\+Rotation3\+Base}$<$ \+\_\+\+\_\+container\+Type $>$ \&matrix\+Rotation)
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Conversion.}\par
+{\em These method don\textquotesingle{}t check if the input is normalized nor try to normalize the results. They should be used with caution since the resulting rotation (in this case a quaternion) might not be normalized. }\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class \+\_\+\+\_\+container\+Type $>$ }\\\hyperlink{classvct_quaternion_base_af28efdc38acf89acb7a67afada11408c}{This\+Type} \& \hyperlink{classvct_quaternion_rotation3_base_a6056404ea3fd12de1172be30ff2d5064}{From\+Raw} (const \hyperlink{classvct_quaternion_rotation3_base}{vct\+Quaternion\+Rotation3\+Base}$<$ \+\_\+\+\_\+container\+Type $>$ \&other)
+\item 
+\hyperlink{classvct_quaternion_base_af28efdc38acf89acb7a67afada11408c}{This\+Type} \& \hyperlink{classvct_quaternion_rotation3_base_aef7dd99f9111582ac3d9ccd6f6891c66}{From\+Raw} (value\+\_\+type x, value\+\_\+type y, value\+\_\+type z, value\+\_\+type r)
+\item 
+\hyperlink{classvct_quaternion_base_af28efdc38acf89acb7a67afada11408c}{This\+Type} \& \hyperlink{classvct_quaternion_rotation3_base_a6c8fa55dfd467386b467538d67916c41}{From\+Raw} (const \hyperlink{classvct_axis_angle_rotation3}{vct\+Axis\+Angle\+Rotation3}$<$ value\+\_\+type $>$ axis\+Angle\+Rotation)
+\item 
+{\footnotesize template$<$class \+\_\+\+\_\+container\+Type $>$ }\\\hyperlink{classvct_quaternion_base_af28efdc38acf89acb7a67afada11408c}{This\+Type} \& \hyperlink{classvct_quaternion_rotation3_base_ad820f69c1146537f1a2180008cff7905}{From\+Raw} (const \hyperlink{classvct_rodriguez_rotation3_base}{vct\+Rodriguez\+Rotation3\+Base}$<$ \+\_\+\+\_\+container\+Type $>$ \&rodriguez\+Rotation)
+\item 
+{\footnotesize template$<$class \+\_\+\+\_\+container\+Type $>$ }\\\hyperlink{classvct_quaternion_base_af28efdc38acf89acb7a67afada11408c}{This\+Type} \& \hyperlink{classvct_quaternion_rotation3_base_a477d0734a51969199fc5b781e64d9554}{From\+Raw} (const \hyperlink{classvct_matrix_rotation3_base}{vct\+Matrix\+Rotation3\+Base}$<$ \+\_\+\+\_\+container\+Type $>$ \&matrix\+Rotation)
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Deprecated methods}\par
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$stride\+\_\+type \+\_\+\+\_\+stride, class \+\_\+\+\_\+data\+Ptr\+Type $>$ }\\\hyperlink{cmn_portability_8h_a63da7164735f9501be651b1f2bbc0121}{C\+I\+S\+S\+T\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D} const \hyperlink{classvct_quaternion_base_af28efdc38acf89acb7a67afada11408c}{This\+Type} \& \hyperlink{classvct_quaternion_rotation3_base_a2a79d881d43dd7b77a1e428d80060dba}{From} (const \hyperlink{classvct_fixed_size_const_vector_base}{vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ 3, \+\_\+\+\_\+stride, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type $>$ \&axis, const Angle\+Type \&angle)
+\item 
+{\footnotesize template$<$stride\+\_\+type \+\_\+\+\_\+stride, class \+\_\+\+\_\+data\+Ptr\+Type $>$ }\\\hyperlink{cmn_portability_8h_a63da7164735f9501be651b1f2bbc0121}{C\+I\+S\+S\+T\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D} const \hyperlink{classvct_quaternion_base_af28efdc38acf89acb7a67afada11408c}{This\+Type} \& \hyperlink{classvct_quaternion_rotation3_base_a2e5b033f5656aed1877476b90b332ecb}{From} (const \hyperlink{classvct_fixed_size_const_vector_base}{vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ 3, \+\_\+\+\_\+stride, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type $>$ \&rodriguez\+Rotation)
+\item 
+{\footnotesize template$<$stride\+\_\+type \+\_\+\+\_\+stride, class \+\_\+\+\_\+data\+Ptr\+Type $>$ }\\\hyperlink{cmn_portability_8h_a63da7164735f9501be651b1f2bbc0121}{C\+I\+S\+S\+T\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D} void \hyperlink{classvct_quaternion_rotation3_base_a7b6a4ed8830ee9153e9c387f5ea9a35a}{Get\+Axis\+Angle} (\hyperlink{classvct_fixed_size_vector_base}{vct\+Fixed\+Size\+Vector\+Base}$<$ 3, \+\_\+\+\_\+stride, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type $>$ \&axis, value\+\_\+type \&angle)
+\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} const \hyperlink{classvct_quaternion_base_af28efdc38acf89acb7a67afada11408c}{This\+Type} \& \hyperlink{classvct_quaternion_rotation3_base_a9d08a3fdcfa011bd625af5e18f1e04d6}{Identity} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classvct_quaternion_rotation3_base_a1e995a36965cc79f5832b090023f3c20}{Throw\+Unless\+Is\+Normalized} (void) const   throw (std\+::runtime\+\_\+error)
+\item 
+{\footnotesize template$<$class \+\_\+input\+Type $>$ }\\void \hyperlink{classvct_quaternion_rotation3_base_a6a2860093d561d93d4afed3b1e191259}{Throw\+Unless\+Is\+Normalized} (const \+\_\+input\+Type \&input) const   throw (std\+::runtime\+\_\+error)
+\item 
+void \hyperlink{classvct_quaternion_rotation3_base_a4dec998672be04b84b933b608fa65df2}{Allocate} (void)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class \+\_\+container\+Type$>$class vct\+Quaternion\+Rotation3\+Base$<$ \+\_\+container\+Type $>$}
+
+Define a rotation quaternion for a space of dimension 3. 
+
+This class is templated by the element type. It is derived from \hyperlink{classvct_quaternion_base}{vct\+Quaternion\+Base}. This class is templated by the type of container used to store the quaternion. It is an \char`\"{}inner\char`\"{} class of the library, i.\+e. a regular user should use either the predefined type \hyperlink{vct_transformation_types_8h_a595c3c83888ed4fb8ae707126efd25e3}{vct\+Quat\+Rot3} or the class \hyperlink{classvct_quaternion_rotation3}{vct\+Quaternion\+Rotation3}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+container\+Type} & The type of container used for the quaternion.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classvct_quaternion_rotation3}{vct\+Quaternion\+Rotation3}, \hyperlink{classvct_quaternion_base}{vct\+Quaternion\+Base} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classvct_quaternion_rotation3_base_aec53a8354bebb034598fe2b02ffc8217}{}\index{vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}!Base\+Type@{Base\+Type}}
+\index{Base\+Type@{Base\+Type}!vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}}
+\subsubsection[{Base\+Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type$>$ typedef {\bf vct\+Quaternion\+Base}$<$\+\_\+container\+Type$>$ {\bf vct\+Quaternion\+Rotation3\+Base}$<$ \+\_\+container\+Type $>$\+::{\bf Base\+Type}}\label{classvct_quaternion_rotation3_base_aec53a8354bebb034598fe2b02ffc8217}
+Type of base class. \hypertarget{classvct_quaternion_rotation3_base_a41c3b08279a5560f43351c14666c9c6a}{}\index{vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}!Container\+Type@{Container\+Type}}
+\index{Container\+Type@{Container\+Type}!vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}}
+\subsubsection[{Container\+Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type$>$ typedef \+\_\+container\+Type {\bf vct\+Quaternion\+Rotation3\+Base}$<$ \+\_\+container\+Type $>$\+::{\bf Container\+Type}}\label{classvct_quaternion_rotation3_base_a41c3b08279a5560f43351c14666c9c6a}
+Type of container. This must be a vector of 4 elements (either fixed size or dynamic). In any case, this class should only be used by the library programmers. \hypertarget{classvct_quaternion_rotation3_base_aff1feb6ba01e2cbc6f455a140992e728}{}\index{vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}!This\+Type@{This\+Type}}
+\index{This\+Type@{This\+Type}!vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}}
+\subsubsection[{This\+Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type$>$ typedef {\bf vct\+Quaternion\+Rotation3\+Base}$<$\+\_\+container\+Type$>$ {\bf vct\+Quaternion\+Rotation3\+Base}$<$ \+\_\+container\+Type $>$\+::{\bf This\+Type}}\label{classvct_quaternion_rotation3_base_aff1feb6ba01e2cbc6f455a140992e728}
+\hypertarget{classvct_quaternion_rotation3_base_a78f36636344dd97b9837f9b15aedd1f7}{}\index{vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}!Type\+Traits@{Type\+Traits}}
+\index{Type\+Traits@{Type\+Traits}!vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}}
+\subsubsection[{Type\+Traits}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type$>$ typedef {\bf cmn\+Type\+Traits}$<$value\+\_\+type$>$ {\bf vct\+Quaternion\+Rotation3\+Base}$<$ \+\_\+container\+Type $>$\+::{\bf Type\+Traits}}\label{classvct_quaternion_rotation3_base_a78f36636344dd97b9837f9b15aedd1f7}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classvct_quaternion_rotation3_base_a6baf2fda4760908cbc94c53f79838804}{}\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type$>$ anonymous enum}\label{classvct_quaternion_rotation3_base_a6baf2fda4760908cbc94c53f79838804}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{S\+I\+Z\+E@{S\+I\+Z\+E}!vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}}\index{vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}!S\+I\+Z\+E@{S\+I\+Z\+E}}\item[{\em 
+\hypertarget{classvct_quaternion_rotation3_base_a6baf2fda4760908cbc94c53f79838804a42527344f7f8ba3f199c418756497bc1}{}S\+I\+Z\+E\label{classvct_quaternion_rotation3_base_a6baf2fda4760908cbc94c53f79838804a42527344f7f8ba3f199c418756497bc1}
+}]\end{description}
+\end{Desc}
+\hypertarget{classvct_quaternion_rotation3_base_a729ac03acdd5949ecf382629e563d2a0}{}\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type$>$ anonymous enum}\label{classvct_quaternion_rotation3_base_a729ac03acdd5949ecf382629e563d2a0}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{D\+I\+M\+E\+N\+S\+I\+O\+N@{D\+I\+M\+E\+N\+S\+I\+O\+N}!vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}}\index{vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}!D\+I\+M\+E\+N\+S\+I\+O\+N@{D\+I\+M\+E\+N\+S\+I\+O\+N}}\item[{\em 
+\hypertarget{classvct_quaternion_rotation3_base_a729ac03acdd5949ecf382629e563d2a0a9417132a8a6849e18439d903ae6a1f18}{}D\+I\+M\+E\+N\+S\+I\+O\+N\label{classvct_quaternion_rotation3_base_a729ac03acdd5949ecf382629e563d2a0a9417132a8a6849e18439d903ae6a1f18}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classvct_quaternion_rotation3_base_a1dea4cd579703f66bf163b69bca5a96b}{}\index{vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}!vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}}
+\index{vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}!vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}}
+\subsubsection[{vct\+Quaternion\+Rotation3\+Base}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type$>$ {\bf vct\+Quaternion\+Rotation3\+Base}$<$ \+\_\+container\+Type $>$\+::{\bf vct\+Quaternion\+Rotation3\+Base} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_quaternion_rotation3_base_a1dea4cd579703f66bf163b69bca5a96b}
+Default constructor. Sets the rotation quaternion to identity. \hypertarget{classvct_quaternion_rotation3_base_a8376b96adbf771b1391074e1d2e58ad7}{}\index{vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}!vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}}
+\index{vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}!vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}}
+\subsubsection[{vct\+Quaternion\+Rotation3\+Base}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type$>$ {\bf vct\+Quaternion\+Rotation3\+Base}$<$ \+\_\+container\+Type $>$\+::{\bf vct\+Quaternion\+Rotation3\+Base} (
+\begin{DoxyParamCaption}
+\item[{const {\bf This\+Type} \&}]{quaternion\+Rotation}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_quaternion_rotation3_base_a8376b96adbf771b1391074e1d2e58ad7}
+Copy constructor. 
+\begin{DoxyParams}{Parameters}
+{\em quaternion\+Rotation} & A rotation quaternion. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classvct_quaternion_rotation3_base_ae39ee6bfd8b77e8e6b6b9ed4018822d3}{}\index{vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}!vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}}
+\index{vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}!vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}}
+\subsubsection[{vct\+Quaternion\+Rotation3\+Base}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type$>$ {\bf vct\+Quaternion\+Rotation3\+Base}$<$ \+\_\+container\+Type $>$\+::{\bf vct\+Quaternion\+Rotation3\+Base} (
+\begin{DoxyParamCaption}
+\item[{const value\+\_\+type \&}]{x, }
+\item[{const value\+\_\+type \&}]{y, }
+\item[{const value\+\_\+type \&}]{z, }
+\item[{const value\+\_\+type \&}]{r}
+\end{DoxyParamCaption}
+) throw  std\+::runtime\+\_\+error) \hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_quaternion_rotation3_base_ae39ee6bfd8b77e8e6b6b9ed4018822d3}
+Constructor from 4 elements. 
+\begin{DoxyParams}{Parameters}
+{\em x} & First component of the real part. \\
+\hline
+{\em y} & Second component of the real part. \\
+\hline
+{\em z} & Third component of the real part. \\
+\hline
+{\em r} & The imaginary part. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classvct_quaternion_rotation3_base_a505f35ee8b57e613635d603cda8fd2ef}{}\index{vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}!vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}}
+\index{vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}!vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}}
+\subsubsection[{vct\+Quaternion\+Rotation3\+Base}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type$>$ template$<$class \+\_\+\+\_\+container\+Type $>$ {\bf vct\+Quaternion\+Rotation3\+Base}$<$ \+\_\+container\+Type $>$\+::{\bf vct\+Quaternion\+Rotation3\+Base} (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Matrix\+Rotation3\+Base}$<$ \+\_\+\+\_\+container\+Type $>$ \&}]{matrix\+Rotation}
+\end{DoxyParamCaption}
+) throw  std\+::runtime\+\_\+error) \hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}\label{classvct_quaternion_rotation3_base_a505f35ee8b57e613635d603cda8fd2ef}
+Constructor from a rotation matrix. 
+\begin{DoxyParams}{Parameters}
+{\em matrix\+Rotation} & A rotation matrix. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classvct_quaternion_rotation3_base_a2d5c41c767010bc9b7542841fdeb5dce}{}\index{vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}!vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}}
+\index{vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}!vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}}
+\subsubsection[{vct\+Quaternion\+Rotation3\+Base}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type$>$ {\bf vct\+Quaternion\+Rotation3\+Base}$<$ \+\_\+container\+Type $>$\+::{\bf vct\+Quaternion\+Rotation3\+Base} (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Axis\+Angle\+Rotation3}$<$ value\+\_\+type $>$ \&}]{axis\+Angle\+Rotation}
+\end{DoxyParamCaption}
+) throw  std\+::runtime\+\_\+error) \hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_quaternion_rotation3_base_a2d5c41c767010bc9b7542841fdeb5dce}
+Constructor from an axis and angle. 
+\begin{DoxyParams}{Parameters}
+{\em axis\+Angle\+Rotation} & An axis/angle rotation. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classvct_quaternion_rotation3_base_a1faf412df8da0e58bdf71ee5fd6047dd}{}\index{vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}!vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}}
+\index{vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}!vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}}
+\subsubsection[{vct\+Quaternion\+Rotation3\+Base}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type$>$ template$<$class \+\_\+\+\_\+container\+Type $>$ {\bf vct\+Quaternion\+Rotation3\+Base}$<$ \+\_\+container\+Type $>$\+::{\bf vct\+Quaternion\+Rotation3\+Base} (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Rodriguez\+Rotation3\+Base}$<$ \+\_\+\+\_\+container\+Type $>$ \&}]{rodriguez\+Rotation}
+\end{DoxyParamCaption}
+) throw  std\+::runtime\+\_\+error) \hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_quaternion_rotation3_base_a1faf412df8da0e58bdf71ee5fd6047dd}
+Constructor from a Rodriguez rotation. 
+\begin{DoxyParams}{Parameters}
+{\em rodriguez\+Rotation} & A Rodriguez rotation. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classvct_quaternion_rotation3_base_ae8f0b3b79b368f80ea333f2bff792e79}{}\index{vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}!vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}}
+\index{vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}!vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}}
+\subsubsection[{vct\+Quaternion\+Rotation3\+Base}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type$>$ {\bf vct\+Quaternion\+Rotation3\+Base}$<$ \+\_\+container\+Type $>$\+::{\bf vct\+Quaternion\+Rotation3\+Base} (
+\begin{DoxyParamCaption}
+\item[{const {\bf This\+Type} \&}]{quaternion\+Rotation, }
+\item[{bool}]{normalize\+Input}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_quaternion_rotation3_base_ae8f0b3b79b368f80ea333f2bff792e79}
+Copy constructor. 
+\begin{DoxyParams}{Parameters}
+{\em quaternion\+Rotation} & A rotation quaternion. \\
+\hline
+{\em normalize\+Input} & Force the input normalization. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classvct_quaternion_rotation3_base_a07d0b2ed8314011b0bb68f195df0fbef}{}\index{vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}!vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}}
+\index{vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}!vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}}
+\subsubsection[{vct\+Quaternion\+Rotation3\+Base}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type$>$ {\bf vct\+Quaternion\+Rotation3\+Base}$<$ \+\_\+container\+Type $>$\+::{\bf vct\+Quaternion\+Rotation3\+Base} (
+\begin{DoxyParamCaption}
+\item[{const value\+\_\+type \&}]{x, }
+\item[{const value\+\_\+type \&}]{y, }
+\item[{const value\+\_\+type \&}]{z, }
+\item[{const value\+\_\+type \&}]{r, }
+\item[{bool}]{normalize\+Input}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_quaternion_rotation3_base_a07d0b2ed8314011b0bb68f195df0fbef}
+Constructor from 4 elements. 
+\begin{DoxyParams}{Parameters}
+{\em x} & First component of the real part. \\
+\hline
+{\em y} & Second component of the real part. \\
+\hline
+{\em z} & Third component of the real part. \\
+\hline
+{\em r} & The imaginary part. \\
+\hline
+{\em normalize\+Input} & Force the input normalization. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classvct_quaternion_rotation3_base_ac9035beb866ddfa729366b5098dab49d}{}\index{vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}!vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}}
+\index{vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}!vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}}
+\subsubsection[{vct\+Quaternion\+Rotation3\+Base}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type$>$ template$<$class \+\_\+\+\_\+container\+Type $>$ {\bf vct\+Quaternion\+Rotation3\+Base}$<$ \+\_\+container\+Type $>$\+::{\bf vct\+Quaternion\+Rotation3\+Base} (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Matrix\+Rotation3\+Base}$<$ \+\_\+\+\_\+container\+Type $>$ \&}]{matrix\+Rotation, }
+\item[{bool}]{normalize\+Input}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}\label{classvct_quaternion_rotation3_base_ac9035beb866ddfa729366b5098dab49d}
+Constructor from a rotation matrix. 
+\begin{DoxyParams}{Parameters}
+{\em matrix\+Rotation} & A rotation matrix. \\
+\hline
+{\em normalize\+Input} & Force the input normalization. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classvct_quaternion_rotation3_base_a4dc7f240e97a06c7b8bac87b0aa7ed11}{}\index{vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}!vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}}
+\index{vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}!vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}}
+\subsubsection[{vct\+Quaternion\+Rotation3\+Base}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type$>$ {\bf vct\+Quaternion\+Rotation3\+Base}$<$ \+\_\+container\+Type $>$\+::{\bf vct\+Quaternion\+Rotation3\+Base} (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Axis\+Angle\+Rotation3}$<$ value\+\_\+type $>$ \&}]{axis\+Angle\+Rotation, }
+\item[{bool}]{normalize\+Input}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_quaternion_rotation3_base_a4dc7f240e97a06c7b8bac87b0aa7ed11}
+Constructor from an axis and angle. 
+\begin{DoxyParams}{Parameters}
+{\em axis\+Angle\+Rotation} & An axis/angle rotation. \\
+\hline
+{\em normalize\+Input} & Force the input normalization. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classvct_quaternion_rotation3_base_af05d7939df2800a9a541ed9bac3698e0}{}\index{vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}!vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}}
+\index{vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}!vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}}
+\subsubsection[{vct\+Quaternion\+Rotation3\+Base}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type$>$ template$<$class \+\_\+\+\_\+container\+Type $>$ {\bf vct\+Quaternion\+Rotation3\+Base}$<$ \+\_\+container\+Type $>$\+::{\bf vct\+Quaternion\+Rotation3\+Base} (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Rodriguez\+Rotation3\+Base}$<$ \+\_\+\+\_\+container\+Type $>$ \&}]{rodriguez\+Rotation, }
+\item[{bool}]{normalize\+Input}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_quaternion_rotation3_base_af05d7939df2800a9a541ed9bac3698e0}
+Constructor from a Rodriguez rotation. 
+\begin{DoxyParams}{Parameters}
+{\em rodriguez\+Rotation} & A Rodriguez rotation. \\
+\hline
+{\em normalize\+Input} & Force the input normalization. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classvct_quaternion_rotation3_base_a4dec998672be04b84b933b608fa65df2}{}\index{vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}!Allocate@{Allocate}}
+\index{Allocate@{Allocate}!vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}}
+\subsubsection[{Allocate}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type$>$ void {\bf vct\+Quaternion\+Rotation3\+Base}$<$ \+\_\+container\+Type $>$\+::Allocate (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\label{classvct_quaternion_rotation3_base_a4dec998672be04b84b933b608fa65df2}
+Allocate memory for the underlying container if needed. By default, this methods does nothing. For any container requiring a memory allocation, it is necessary to specialize this method. \hypertarget{classvct_quaternion_rotation3_base_aa525dec7b10d16177b9e4b59685ba0b0}{}\index{vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}!Almost\+Equivalent@{Almost\+Equivalent}}
+\index{Almost\+Equivalent@{Almost\+Equivalent}!vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}}
+\subsubsection[{Almost\+Equivalent}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type$>$ bool {\bf vct\+Quaternion\+Rotation3\+Base}$<$ \+\_\+container\+Type $>$\+::Almost\+Equivalent (
+\begin{DoxyParamCaption}
+\item[{const {\bf This\+Type} \&}]{other, }
+\item[{value\+\_\+type}]{tolerance = {\ttfamily {\bf Type\+Traits\+::\+Tolerance}()}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_quaternion_rotation3_base_aa525dec7b10d16177b9e4b59685ba0b0}
+Return true if this quaternion rotation is equivalent to the other quaternion rotation, up to the given tolerance. Quaternion rotation may be effectively equivalent if one is elementwise equal to the other, or if one is the negation of the other.
+
+The tolerance factor is used to compare each of the elements of the difference vector.
+
+\begin{DoxySeeAlso}{See also}
+Almost\+Equal 
+\end{DoxySeeAlso}
+\hypertarget{classvct_quaternion_rotation3_base_ac822156b1d72851cd10fa02726fb616e}{}\index{vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}!Apply\+Inverse\+To@{Apply\+Inverse\+To}}
+\index{Apply\+Inverse\+To@{Apply\+Inverse\+To}!vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}}
+\subsubsection[{Apply\+Inverse\+To}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type$>$ template$<$stride\+\_\+type \+\_\+\+\_\+stride1, class \+\_\+\+\_\+data\+Ptr\+Type1 , stride\+\_\+type \+\_\+\+\_\+stride2, class \+\_\+\+\_\+data\+Ptr\+Type2 $>$ void {\bf vct\+Quaternion\+Rotation3\+Base}$<$ \+\_\+container\+Type $>$\+::Apply\+Inverse\+To (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ {\bf D\+I\+M\+E\+N\+S\+I\+O\+N}, \+\_\+\+\_\+stride1, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type1 $>$ \&}]{input, }
+\item[{{\bf vct\+Fixed\+Size\+Vector\+Base}$<$ {\bf D\+I\+M\+E\+N\+S\+I\+O\+N}, \+\_\+\+\_\+stride2, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type2 $>$ \&}]{output}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_quaternion_rotation3_base_ac822156b1d72851cd10fa02726fb616e}
+Apply the inverse of the rotation to a vector of fixed size
+\begin{DoxyEnumerate}
+\item The result is stored into a vector of size 3 provided by the caller and passed by reference.
+\end{DoxyEnumerate}
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & The input vector \\
+\hline
+{\em output} & The output vector \\
+\hline
+\end{DoxyParams}
+\hypertarget{classvct_quaternion_rotation3_base_a59b85aed1b88591dd44d0be6611a19a0}{}\index{vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}!Apply\+Inverse\+To@{Apply\+Inverse\+To}}
+\index{Apply\+Inverse\+To@{Apply\+Inverse\+To}!vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}}
+\subsubsection[{Apply\+Inverse\+To}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type$>$ template$<$class \+\_\+\+\_\+vector\+Owner\+Type , stride\+\_\+type \+\_\+\+\_\+stride, class \+\_\+\+\_\+data\+Ptr\+Type $>$ void {\bf vct\+Quaternion\+Rotation3\+Base}$<$ \+\_\+container\+Type $>$\+::Apply\+Inverse\+To (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type, value\+\_\+type $>$ \&}]{input, }
+\item[{{\bf vct\+Fixed\+Size\+Vector\+Base}$<$ {\bf D\+I\+M\+E\+N\+S\+I\+O\+N}, \+\_\+\+\_\+stride, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type $>$ \&}]{output}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_quaternion_rotation3_base_a59b85aed1b88591dd44d0be6611a19a0}
+\hypertarget{classvct_quaternion_rotation3_base_a0b8f96ed4e769aab1d14769de116bf2b}{}\index{vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}!Apply\+Inverse\+To@{Apply\+Inverse\+To}}
+\index{Apply\+Inverse\+To@{Apply\+Inverse\+To}!vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}}
+\subsubsection[{Apply\+Inverse\+To}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type$>$ template$<$stride\+\_\+type \+\_\+\+\_\+stride, class \+\_\+\+\_\+data\+Ptr\+Type $>$ {\bf vct\+Fixed\+Size\+Vector}$<$value\+\_\+type, {\bf D\+I\+M\+E\+N\+S\+I\+O\+N}$>$ {\bf vct\+Quaternion\+Rotation3\+Base}$<$ \+\_\+container\+Type $>$\+::Apply\+Inverse\+To (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ {\bf D\+I\+M\+E\+N\+S\+I\+O\+N}, \+\_\+\+\_\+stride, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type $>$ \&}]{input}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_quaternion_rotation3_base_a0b8f96ed4e769aab1d14769de116bf2b}
+Apply the the inverse of the rotation to a vector of fixed size 3. The result is returned by copy. This interface might be more convenient for some but one should note that it is less efficient since it requires a copy.
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & The input vector \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The output vector 
+\end{DoxyReturn}
+\hypertarget{classvct_quaternion_rotation3_base_ae1df006c81b202fa7015879c8c91448a}{}\index{vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}!Apply\+Inverse\+To@{Apply\+Inverse\+To}}
+\index{Apply\+Inverse\+To@{Apply\+Inverse\+To}!vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}}
+\subsubsection[{Apply\+Inverse\+To}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type$>$ template$<$class \+\_\+\+\_\+vector\+Owner\+Type $>$ {\bf vct\+Fixed\+Size\+Vector}$<$value\+\_\+type, {\bf D\+I\+M\+E\+N\+S\+I\+O\+N}$>$ {\bf vct\+Quaternion\+Rotation3\+Base}$<$ \+\_\+container\+Type $>$\+::Apply\+Inverse\+To (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type, value\+\_\+type $>$ \&}]{input}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_quaternion_rotation3_base_ae1df006c81b202fa7015879c8c91448a}
+\hypertarget{classvct_quaternion_rotation3_base_a50ed1dcc4a0a0b748bb0f17b481e4584}{}\index{vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}!Apply\+Inverse\+To@{Apply\+Inverse\+To}}
+\index{Apply\+Inverse\+To@{Apply\+Inverse\+To}!vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}}
+\subsubsection[{Apply\+Inverse\+To}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type$>$ template$<$size\+\_\+type \+\_\+\+\_\+cols, stride\+\_\+type \+\_\+\+\_\+row\+Stride1, stride\+\_\+type \+\_\+\+\_\+col\+Stride1, class \+\_\+\+\_\+data\+Ptr\+Type1 , stride\+\_\+type \+\_\+\+\_\+row\+Stride2, stride\+\_\+type \+\_\+\+\_\+col\+Stride2, class \+\_\+\+\_\+data\+Ptr\+Type2 $>$ void {\bf vct\+Quaternion\+Rotation3\+Base}$<$ \+\_\+container\+Type $>$\+::Apply\+Inverse\+To (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Fixed\+Size\+Const\+Matrix\+Base}$<$ {\bf D\+I\+M\+E\+N\+S\+I\+O\+N}, \+\_\+\+\_\+cols, \+\_\+\+\_\+row\+Stride1, \+\_\+\+\_\+col\+Stride1, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type1 $>$ \&}]{input, }
+\item[{{\bf vct\+Fixed\+Size\+Matrix\+Base}$<$ {\bf D\+I\+M\+E\+N\+S\+I\+O\+N}, \+\_\+\+\_\+cols, \+\_\+\+\_\+row\+Stride2, \+\_\+\+\_\+col\+Stride2, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type2 $>$ \&}]{output}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_quaternion_rotation3_base_a50ed1dcc4a0a0b748bb0f17b481e4584}
+Apply this inverse rotation to a fixed size matrix with 3 rows. The result is stored in another fixed matrix. \hypertarget{classvct_quaternion_rotation3_base_afe92782ee4eb089405be71a71e52d9eb}{}\index{vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}!Apply\+Inverse\+To@{Apply\+Inverse\+To}}
+\index{Apply\+Inverse\+To@{Apply\+Inverse\+To}!vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}}
+\subsubsection[{Apply\+Inverse\+To}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type$>$ void {\bf vct\+Quaternion\+Rotation3\+Base}$<$ \+\_\+container\+Type $>$\+::Apply\+Inverse\+To (
+\begin{DoxyParamCaption}
+\item[{const {\bf This\+Type} \&}]{input, }
+\item[{{\bf This\+Type} \&}]{output}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_quaternion_rotation3_base_afe92782ee4eb089405be71a71e52d9eb}
+Apply the inverse of the rotation to another rotation. The result is stored into a \hyperlink{classvct_quaternion_rotation3_base}{vct\+Quaternion\+Rotation3\+Base} (This\+Type) provided by the caller and passed by reference.
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & The input rotation \\
+\hline
+{\em output} & The output rotation \\
+\hline
+\end{DoxyParams}
+\hypertarget{classvct_quaternion_rotation3_base_a71037e72bd6869d7773006c7bb77e04b}{}\index{vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}!Apply\+Inverse\+To@{Apply\+Inverse\+To}}
+\index{Apply\+Inverse\+To@{Apply\+Inverse\+To}!vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}}
+\subsubsection[{Apply\+Inverse\+To}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type$>$ {\bf This\+Type} {\bf vct\+Quaternion\+Rotation3\+Base}$<$ \+\_\+container\+Type $>$\+::Apply\+Inverse\+To (
+\begin{DoxyParamCaption}
+\item[{const {\bf This\+Type} \&}]{input}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_quaternion_rotation3_base_a71037e72bd6869d7773006c7bb77e04b}
+Apply the inverse of the rotation to another rotation. The result is returned by copy. This interface might be more convenient for some but one should note that it is less efficient since it requires a copy.
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & The input rotation \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The output rotation 
+\end{DoxyReturn}
+\hypertarget{classvct_quaternion_rotation3_base_a6febf7108436b0ae6935c8bb5557cfa7}{}\index{vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}!Apply\+Inverse\+To@{Apply\+Inverse\+To}}
+\index{Apply\+Inverse\+To@{Apply\+Inverse\+To}!vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}}
+\subsubsection[{Apply\+Inverse\+To}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type$>$ template$<$class \+\_\+vector\+Owner\+Type1 , class \+\_\+vector\+Owner\+Type2 $>$ void {\bf vct\+Quaternion\+Rotation3\+Base}$<$ \+\_\+container\+Type $>$\+::Apply\+Inverse\+To (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type1, value\+\_\+type $>$ \&}]{input, }
+\item[{{\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type2, value\+\_\+type $>$ \&}]{output}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_quaternion_rotation3_base_a6febf7108436b0ae6935c8bb5557cfa7}
+Apply the the inverse of the rotation to a dynamic vector. The result is stored into another dynamic vector passed by reference by the caller. It is assumed that both are of size 3. \hypertarget{classvct_quaternion_rotation3_base_a99017a2bf77db7f404eddfc6ac44e899}{}\index{vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}!Apply\+Inverse\+To@{Apply\+Inverse\+To}}
+\index{Apply\+Inverse\+To@{Apply\+Inverse\+To}!vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}}
+\subsubsection[{Apply\+Inverse\+To}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type$>$ template$<$class \+\_\+\+\_\+matrix\+Owner\+Type1 , class \+\_\+\+\_\+matrix\+Owner\+Type2 $>$ void {\bf vct\+Quaternion\+Rotation3\+Base}$<$ \+\_\+container\+Type $>$\+::Apply\+Inverse\+To (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Const\+Matrix\+Base}$<$ \+\_\+\+\_\+matrix\+Owner\+Type1, value\+\_\+type $>$ \&}]{input, }
+\item[{{\bf vct\+Dynamic\+Matrix\+Base}$<$ \+\_\+\+\_\+matrix\+Owner\+Type2, value\+\_\+type $>$ \&}]{output}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_quaternion_rotation3_base_a99017a2bf77db7f404eddfc6ac44e899}
+Apply this rotation inverse to a dynamic matrix with 3 rows. The result is stored in another dynamic matrix. \hypertarget{classvct_quaternion_rotation3_base_abd3b8ecd60488880c6dbeb7b614589ec}{}\index{vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}!Apply\+To@{Apply\+To}}
+\index{Apply\+To@{Apply\+To}!vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}}
+\subsubsection[{Apply\+To}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type$>$ template$<$stride\+\_\+type \+\_\+\+\_\+stride1, class \+\_\+\+\_\+data\+Ptr\+Type1 , stride\+\_\+type \+\_\+\+\_\+stride2, class \+\_\+\+\_\+data\+Ptr\+Type2 $>$ void {\bf vct\+Quaternion\+Rotation3\+Base}$<$ \+\_\+container\+Type $>$\+::Apply\+To (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ {\bf D\+I\+M\+E\+N\+S\+I\+O\+N}, \+\_\+\+\_\+stride1, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type1 $>$ \&}]{input, }
+\item[{{\bf vct\+Fixed\+Size\+Vector\+Base}$<$ {\bf D\+I\+M\+E\+N\+S\+I\+O\+N}, \+\_\+\+\_\+stride2, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type2 $>$ \&}]{output}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_quaternion_rotation3_base_abd3b8ecd60488880c6dbeb7b614589ec}
+Apply the rotation to a vector of fixed size 3. The result is stored into a vector of size 3 provided by the caller and passed by reference.
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & The input vector \\
+\hline
+{\em output} & The output vector \\
+\hline
+\end{DoxyParams}
+\hypertarget{classvct_quaternion_rotation3_base_a2f9afc18f09f6b2d614121fbd65f16ae}{}\index{vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}!Apply\+To@{Apply\+To}}
+\index{Apply\+To@{Apply\+To}!vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}}
+\subsubsection[{Apply\+To}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type$>$ template$<$class \+\_\+\+\_\+vector\+Owner\+Type , stride\+\_\+type \+\_\+\+\_\+stride, class \+\_\+\+\_\+data\+Ptr\+Type $>$ void {\bf vct\+Quaternion\+Rotation3\+Base}$<$ \+\_\+container\+Type $>$\+::Apply\+To (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type, value\+\_\+type $>$ \&}]{input, }
+\item[{{\bf vct\+Fixed\+Size\+Vector\+Base}$<$ {\bf D\+I\+M\+E\+N\+S\+I\+O\+N}, \+\_\+\+\_\+stride, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type $>$ \&}]{output}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_quaternion_rotation3_base_a2f9afc18f09f6b2d614121fbd65f16ae}
+\hypertarget{classvct_quaternion_rotation3_base_ae06cb9fb49e622bcfdf2e374a393cddd}{}\index{vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}!Apply\+To@{Apply\+To}}
+\index{Apply\+To@{Apply\+To}!vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}}
+\subsubsection[{Apply\+To}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type$>$ template$<$stride\+\_\+type \+\_\+\+\_\+stride, class \+\_\+\+\_\+data\+Ptr\+Type $>$ {\bf vct\+Fixed\+Size\+Vector}$<$value\+\_\+type, {\bf D\+I\+M\+E\+N\+S\+I\+O\+N}$>$ {\bf vct\+Quaternion\+Rotation3\+Base}$<$ \+\_\+container\+Type $>$\+::Apply\+To (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ {\bf D\+I\+M\+E\+N\+S\+I\+O\+N}, \+\_\+\+\_\+stride, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type $>$ \&}]{input}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_quaternion_rotation3_base_ae06cb9fb49e622bcfdf2e374a393cddd}
+Apply the rotation to a vector of fixed size 3. The result is returned by copy. This interface might be more convenient for some but one should note that it is less efficient since it requires a copy.
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & The input vector \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The output vector 
+\end{DoxyReturn}
+\hypertarget{classvct_quaternion_rotation3_base_a325b9b7a00977944710e138d9f9fa672}{}\index{vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}!Apply\+To@{Apply\+To}}
+\index{Apply\+To@{Apply\+To}!vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}}
+\subsubsection[{Apply\+To}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type$>$ template$<$class \+\_\+\+\_\+vector\+Owner\+Type $>$ {\bf vct\+Fixed\+Size\+Vector}$<$value\+\_\+type, {\bf D\+I\+M\+E\+N\+S\+I\+O\+N}$>$ {\bf vct\+Quaternion\+Rotation3\+Base}$<$ \+\_\+container\+Type $>$\+::Apply\+To (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type, value\+\_\+type $>$ \&}]{input}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_quaternion_rotation3_base_a325b9b7a00977944710e138d9f9fa672}
+\hypertarget{classvct_quaternion_rotation3_base_a9e7293a9906d19ad13033c32ba2a54e2}{}\index{vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}!Apply\+To@{Apply\+To}}
+\index{Apply\+To@{Apply\+To}!vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}}
+\subsubsection[{Apply\+To}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type$>$ template$<$size\+\_\+type \+\_\+\+\_\+cols, stride\+\_\+type \+\_\+\+\_\+row\+Stride1, stride\+\_\+type \+\_\+\+\_\+col\+Stride1, class \+\_\+\+\_\+data\+Ptr\+Type1 , stride\+\_\+type \+\_\+\+\_\+row\+Stride2, stride\+\_\+type \+\_\+\+\_\+col\+Stride2, class \+\_\+\+\_\+data\+Ptr\+Type2 $>$ void {\bf vct\+Quaternion\+Rotation3\+Base}$<$ \+\_\+container\+Type $>$\+::Apply\+To (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Fixed\+Size\+Const\+Matrix\+Base}$<$ {\bf D\+I\+M\+E\+N\+S\+I\+O\+N}, \+\_\+\+\_\+cols, \+\_\+\+\_\+row\+Stride1, \+\_\+\+\_\+col\+Stride1, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type1 $>$ \&}]{input, }
+\item[{{\bf vct\+Fixed\+Size\+Matrix\+Base}$<$ {\bf D\+I\+M\+E\+N\+S\+I\+O\+N}, \+\_\+\+\_\+cols, \+\_\+\+\_\+row\+Stride2, \+\_\+\+\_\+col\+Stride2, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type2 $>$ \&}]{output}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_quaternion_rotation3_base_a9e7293a9906d19ad13033c32ba2a54e2}
+Apply this rotation to a fixed size matrix with 3 rows. The result is stored in another fixed matrix. \hypertarget{classvct_quaternion_rotation3_base_a1c2f9b5a6e94fd4fc1c29ab5e1d35802}{}\index{vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}!Apply\+To@{Apply\+To}}
+\index{Apply\+To@{Apply\+To}!vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}}
+\subsubsection[{Apply\+To}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type$>$ template$<$class \+\_\+\+\_\+matrix\+Owner\+Type1 , class \+\_\+\+\_\+matrix\+Owner\+Type2 $>$ void {\bf vct\+Quaternion\+Rotation3\+Base}$<$ \+\_\+container\+Type $>$\+::Apply\+To (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Const\+Matrix\+Base}$<$ \+\_\+\+\_\+matrix\+Owner\+Type1, value\+\_\+type $>$ \&}]{input, }
+\item[{{\bf vct\+Dynamic\+Matrix\+Base}$<$ \+\_\+\+\_\+matrix\+Owner\+Type2, value\+\_\+type $>$ \&}]{output}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_quaternion_rotation3_base_a1c2f9b5a6e94fd4fc1c29ab5e1d35802}
+Apply this rotation to a dynamic matrix with 3 rows. The result is stored in another dynamic matrix. \hypertarget{classvct_quaternion_rotation3_base_aca00b347c8b13aa531ee7e433a009494}{}\index{vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}!Apply\+To@{Apply\+To}}
+\index{Apply\+To@{Apply\+To}!vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}}
+\subsubsection[{Apply\+To}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type$>$ void {\bf vct\+Quaternion\+Rotation3\+Base}$<$ \+\_\+container\+Type $>$\+::Apply\+To (
+\begin{DoxyParamCaption}
+\item[{const {\bf This\+Type} \&}]{input, }
+\item[{{\bf This\+Type} \&}]{output}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_quaternion_rotation3_base_aca00b347c8b13aa531ee7e433a009494}
+Apply the rotation to another rotation. The result is stored into a \hyperlink{classvct_quaternion_rotation3_base}{vct\+Quaternion\+Rotation3\+Base} (This\+Type) provided by the caller and passed by reference.
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & The input rotation \\
+\hline
+{\em output} & The output rotation \\
+\hline
+\end{DoxyParams}
+\hypertarget{classvct_quaternion_rotation3_base_ab0bdd0eb7271055fbcbadaea2e2cddaa}{}\index{vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}!Apply\+To@{Apply\+To}}
+\index{Apply\+To@{Apply\+To}!vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}}
+\subsubsection[{Apply\+To}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type$>$ {\bf This\+Type} {\bf vct\+Quaternion\+Rotation3\+Base}$<$ \+\_\+container\+Type $>$\+::Apply\+To (
+\begin{DoxyParamCaption}
+\item[{const {\bf This\+Type} \&}]{input}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_quaternion_rotation3_base_ab0bdd0eb7271055fbcbadaea2e2cddaa}
+Apply the rotation to another rotation. The result is returned by copy. This interface might be more convenient for some but one should note that it is less efficient since it requires a copy.
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & The input rotation \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The output rotation 
+\end{DoxyReturn}
+\hypertarget{classvct_quaternion_rotation3_base_a818da0e1bd6791417dc16af9f4f55aa5}{}\index{vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}!Apply\+To@{Apply\+To}}
+\index{Apply\+To@{Apply\+To}!vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}}
+\subsubsection[{Apply\+To}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type$>$ template$<$class \+\_\+vector\+Owner\+Type1 , class \+\_\+vector\+Owner\+Type2 $>$ void {\bf vct\+Quaternion\+Rotation3\+Base}$<$ \+\_\+container\+Type $>$\+::Apply\+To (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type1, value\+\_\+type $>$ \&}]{input, }
+\item[{{\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type2, value\+\_\+type $>$ \&}]{output}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_quaternion_rotation3_base_a818da0e1bd6791417dc16af9f4f55aa5}
+Apply the rotation to a dynamic vector. The result is stored into another dynamic vector passed by reference by the caller. It is assumed that both are of size 3. \hypertarget{classvct_quaternion_rotation3_base_a24fb234e60ece7a6b04f6f53339f38fe}{}\index{vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}!From@{From}}
+\index{From@{From}!vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}}
+\subsubsection[{From}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type$>$ {\bf This\+Type}\& {\bf vct\+Quaternion\+Rotation3\+Base}$<$ \+\_\+container\+Type $>$\+::From (
+\begin{DoxyParamCaption}
+\item[{value\+\_\+type}]{x, }
+\item[{value\+\_\+type}]{y, }
+\item[{value\+\_\+type}]{z, }
+\item[{value\+\_\+type}]{r}
+\end{DoxyParamCaption}
+) throw  std\+::runtime\+\_\+error) \hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_quaternion_rotation3_base_a24fb234e60ece7a6b04f6f53339f38fe}
+Conversion from 4 numbers. This method actually performs an assignement and then check that the result is normalized. \hypertarget{classvct_quaternion_rotation3_base_a1c2c3f6c860184f92ee7475a18b6f67e}{}\index{vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}!From@{From}}
+\index{From@{From}!vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}}
+\subsubsection[{From}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type$>$ {\bf This\+Type}\& {\bf vct\+Quaternion\+Rotation3\+Base}$<$ \+\_\+container\+Type $>$\+::From (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Axis\+Angle\+Rotation3}$<$ value\+\_\+type $>$}]{axis\+Angle\+Rotation}
+\end{DoxyParamCaption}
+) throw  std\+::runtime\+\_\+error) \hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_quaternion_rotation3_base_a1c2c3f6c860184f92ee7475a18b6f67e}
+Conversion from axis/angle. \hypertarget{classvct_quaternion_rotation3_base_a7f5cf5bd55cb472c1e18829123b61702}{}\index{vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}!From@{From}}
+\index{From@{From}!vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}}
+\subsubsection[{From}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type$>$ template$<$class \+\_\+\+\_\+container\+Type $>$ {\bf This\+Type}\& {\bf vct\+Quaternion\+Rotation3\+Base}$<$ \+\_\+container\+Type $>$\+::From (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Rodriguez\+Rotation3\+Base}$<$ \+\_\+\+\_\+container\+Type $>$ \&}]{rodriguez\+Rotation}
+\end{DoxyParamCaption}
+) throw  std\+::runtime\+\_\+error) \hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_quaternion_rotation3_base_a7f5cf5bd55cb472c1e18829123b61702}
+Conversion from a Rodriguez rotation. \hypertarget{classvct_quaternion_rotation3_base_ac18f7eca8d1c4cbe11352120ea21f8ef}{}\index{vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}!From@{From}}
+\index{From@{From}!vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}}
+\subsubsection[{From}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type$>$ template$<$class \+\_\+\+\_\+container\+Type $>$ {\bf This\+Type}\& {\bf vct\+Quaternion\+Rotation3\+Base}$<$ \+\_\+container\+Type $>$\+::From (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Matrix\+Rotation3\+Base}$<$ \+\_\+\+\_\+container\+Type $>$ \&}]{matrix\+Rotation}
+\end{DoxyParamCaption}
+) throw  std\+::runtime\+\_\+error) \hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_quaternion_rotation3_base_ac18f7eca8d1c4cbe11352120ea21f8ef}
+Conversion from a rotation matrix. \hypertarget{classvct_quaternion_rotation3_base_a3a428d19b8f48077b8276997cfd60c93}{}\index{vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}!From@{From}}
+\index{From@{From}!vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}}
+\subsubsection[{From}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type$>$ {\bf This\+Type}\& {\bf vct\+Quaternion\+Rotation3\+Base}$<$ \+\_\+container\+Type $>$\+::From (
+\begin{DoxyParamCaption}
+\item[{const {\bf This\+Type} \&}]{other\+Rotation}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_quaternion_rotation3_base_a3a428d19b8f48077b8276997cfd60c93}
+A complementary form of assigning one quaternion rotation to another. The method is provided mostly for generic programming interfaces, and for testing various operations on rotations \hypertarget{classvct_quaternion_rotation3_base_a2a79d881d43dd7b77a1e428d80060dba}{}\index{vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}!From@{From}}
+\index{From@{From}!vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}}
+\subsubsection[{From}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type$>$ template$<$stride\+\_\+type \+\_\+\+\_\+stride, class \+\_\+\+\_\+data\+Ptr\+Type $>$ {\bf C\+I\+S\+S\+T\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D} const {\bf This\+Type}\& {\bf vct\+Quaternion\+Rotation3\+Base}$<$ \+\_\+container\+Type $>$\+::From (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ 3, \+\_\+\+\_\+stride, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type $>$ \&}]{axis, }
+\item[{const Angle\+Type \&}]{angle}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_quaternion_rotation3_base_a2a79d881d43dd7b77a1e428d80060dba}
+Convert from a unit vector and an angle. It is important to note that this method doesn\textquotesingle{}t normalize the axis vector but asserts that it is normalized (in debug mode only).
+
+
+\begin{DoxyParams}{Parameters}
+{\em axis} & A unit vector of size 3. \\
+\hline
+{\em angle} & The angle in radian\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+This method is deprecated. Use From(vct\+Axis\+Angle\+Rotation3) instead. 
+\end{DoxyNote}
+\hypertarget{classvct_quaternion_rotation3_base_a2e5b033f5656aed1877476b90b332ecb}{}\index{vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}!From@{From}}
+\index{From@{From}!vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}}
+\subsubsection[{From}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type$>$ template$<$stride\+\_\+type \+\_\+\+\_\+stride, class \+\_\+\+\_\+data\+Ptr\+Type $>$ {\bf C\+I\+S\+S\+T\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D} const {\bf This\+Type}\& {\bf vct\+Quaternion\+Rotation3\+Base}$<$ \+\_\+container\+Type $>$\+::From (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ 3, \+\_\+\+\_\+stride, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type $>$ \&}]{rodriguez\+Rotation}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_quaternion_rotation3_base_a2e5b033f5656aed1877476b90b332ecb}
+Convert from ``\+Rodriguez rotation\textquotesingle{}\textquotesingle{} to rotation quaternion. A Rodriguez rotation is a 3-\/element vector whose direction is the rotation axis, and magnitude is the rotation angle in radians.
+
+
+\begin{DoxyParams}{Parameters}
+{\em rodriguez\+Rotation} & the Rodriguez rotation\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+For reasons of numerical stability, if the magnitude of the Rodriguez vector is less than \hyperlink{classcmn_type_traits_adc129bf9867295b90d300768b780fa99}{cmn\+Type\+Traits$<$value\+\_\+type$>$\+::\+Tolerance()}, it is regarded as zero.
+
+This method is deprecated. Use From(vct\+Rodriguez\+Rotation3\+Base) instead. 
+\end{DoxyNote}
+\hypertarget{classvct_quaternion_rotation3_base_afd47a2757a43293b69825cc1d5a1d47c}{}\index{vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}!From\+Normalized@{From\+Normalized}}
+\index{From\+Normalized@{From\+Normalized}!vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}}
+\subsubsection[{From\+Normalized}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type$>$ template$<$class \+\_\+\+\_\+container\+Type $>$ {\bf This\+Type}\& {\bf vct\+Quaternion\+Rotation3\+Base}$<$ \+\_\+container\+Type $>$\+::From\+Normalized (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Quaternion\+Rotation3\+Base}$<$ \+\_\+\+\_\+container\+Type $>$ \&}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_quaternion_rotation3_base_afd47a2757a43293b69825cc1d5a1d47c}
+Conversion from another quaternion. This method actually performs an assignement and then normalize the quaternion ({\ttfamily this}). \hypertarget{classvct_quaternion_rotation3_base_a45b5b924af0ce4cffde44a71eb907448}{}\index{vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}!From\+Normalized@{From\+Normalized}}
+\index{From\+Normalized@{From\+Normalized}!vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}}
+\subsubsection[{From\+Normalized}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type$>$ {\bf This\+Type}\& {\bf vct\+Quaternion\+Rotation3\+Base}$<$ \+\_\+container\+Type $>$\+::From\+Normalized (
+\begin{DoxyParamCaption}
+\item[{value\+\_\+type}]{x, }
+\item[{value\+\_\+type}]{y, }
+\item[{value\+\_\+type}]{z, }
+\item[{value\+\_\+type}]{r}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_quaternion_rotation3_base_a45b5b924af0ce4cffde44a71eb907448}
+Conversion from 4 numbers. This method actually performs an assignement and then normalize the quaternion ({\ttfamily this}). \hypertarget{classvct_quaternion_rotation3_base_a8da7956fa2689bc098cd54aa8d876c50}{}\index{vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}!From\+Normalized@{From\+Normalized}}
+\index{From\+Normalized@{From\+Normalized}!vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}}
+\subsubsection[{From\+Normalized}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type$>$ {\bf This\+Type}\& {\bf vct\+Quaternion\+Rotation3\+Base}$<$ \+\_\+container\+Type $>$\+::From\+Normalized (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Axis\+Angle\+Rotation3}$<$ value\+\_\+type $>$}]{axis\+Angle\+Rotation}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_quaternion_rotation3_base_a8da7956fa2689bc098cd54aa8d876c50}
+Conversion from axis/angle. \hypertarget{classvct_quaternion_rotation3_base_a4f5a76c0336a1c208d537c3f0e4d10ff}{}\index{vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}!From\+Normalized@{From\+Normalized}}
+\index{From\+Normalized@{From\+Normalized}!vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}}
+\subsubsection[{From\+Normalized}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type$>$ template$<$class \+\_\+\+\_\+container\+Type $>$ {\bf This\+Type}\& {\bf vct\+Quaternion\+Rotation3\+Base}$<$ \+\_\+container\+Type $>$\+::From\+Normalized (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Rodriguez\+Rotation3\+Base}$<$ \+\_\+\+\_\+container\+Type $>$ \&}]{rodriguez\+Rotation}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_quaternion_rotation3_base_a4f5a76c0336a1c208d537c3f0e4d10ff}
+Conversion from a Rodriguez rotation. \hypertarget{classvct_quaternion_rotation3_base_aca57ab3ef2841ef2c07a93018909fbad}{}\index{vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}!From\+Normalized@{From\+Normalized}}
+\index{From\+Normalized@{From\+Normalized}!vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}}
+\subsubsection[{From\+Normalized}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type$>$ template$<$class \+\_\+\+\_\+container\+Type $>$ {\bf This\+Type}\& {\bf vct\+Quaternion\+Rotation3\+Base}$<$ \+\_\+container\+Type $>$\+::From\+Normalized (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Matrix\+Rotation3\+Base}$<$ \+\_\+\+\_\+container\+Type $>$ \&}]{matrix\+Rotation}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_quaternion_rotation3_base_aca57ab3ef2841ef2c07a93018909fbad}
+Conversion from a rotation matrix.
+
+This method could normalize the input first, but the rotation matrix normalization relies on -\/1-\/ a conversion to quaternion, -\/2-\/ normalization and -\/3-\/ a conversion back to rotation matrix. Therefore it converts to quaternion and then normalizes the resulting quaternion ({\ttfamily this}). \hypertarget{classvct_quaternion_rotation3_base_a6056404ea3fd12de1172be30ff2d5064}{}\index{vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}!From\+Raw@{From\+Raw}}
+\index{From\+Raw@{From\+Raw}!vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}}
+\subsubsection[{From\+Raw}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type$>$ template$<$class \+\_\+\+\_\+container\+Type $>$ {\bf This\+Type}\& {\bf vct\+Quaternion\+Rotation3\+Base}$<$ \+\_\+container\+Type $>$\+::From\+Raw (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Quaternion\+Rotation3\+Base}$<$ \+\_\+\+\_\+container\+Type $>$ \&}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_quaternion_rotation3_base_a6056404ea3fd12de1172be30ff2d5064}
+\hypertarget{classvct_quaternion_rotation3_base_aef7dd99f9111582ac3d9ccd6f6891c66}{}\index{vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}!From\+Raw@{From\+Raw}}
+\index{From\+Raw@{From\+Raw}!vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}}
+\subsubsection[{From\+Raw}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type$>$ {\bf This\+Type}\& {\bf vct\+Quaternion\+Rotation3\+Base}$<$ \+\_\+container\+Type $>$\+::From\+Raw (
+\begin{DoxyParamCaption}
+\item[{value\+\_\+type}]{x, }
+\item[{value\+\_\+type}]{y, }
+\item[{value\+\_\+type}]{z, }
+\item[{value\+\_\+type}]{r}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_quaternion_rotation3_base_aef7dd99f9111582ac3d9ccd6f6891c66}
+\hypertarget{classvct_quaternion_rotation3_base_a6c8fa55dfd467386b467538d67916c41}{}\index{vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}!From\+Raw@{From\+Raw}}
+\index{From\+Raw@{From\+Raw}!vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}}
+\subsubsection[{From\+Raw}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type$>$ {\bf This\+Type}\& {\bf vct\+Quaternion\+Rotation3\+Base}$<$ \+\_\+container\+Type $>$\+::From\+Raw (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Axis\+Angle\+Rotation3}$<$ value\+\_\+type $>$}]{axis\+Angle\+Rotation}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_quaternion_rotation3_base_a6c8fa55dfd467386b467538d67916c41}
+\hypertarget{classvct_quaternion_rotation3_base_ad820f69c1146537f1a2180008cff7905}{}\index{vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}!From\+Raw@{From\+Raw}}
+\index{From\+Raw@{From\+Raw}!vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}}
+\subsubsection[{From\+Raw}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type$>$ template$<$class \+\_\+\+\_\+container\+Type $>$ {\bf This\+Type}\& {\bf vct\+Quaternion\+Rotation3\+Base}$<$ \+\_\+container\+Type $>$\+::From\+Raw (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Rodriguez\+Rotation3\+Base}$<$ \+\_\+\+\_\+container\+Type $>$ \&}]{rodriguez\+Rotation}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_quaternion_rotation3_base_ad820f69c1146537f1a2180008cff7905}
+Conversion from a Rodriguez rotation. \hypertarget{classvct_quaternion_rotation3_base_a477d0734a51969199fc5b781e64d9554}{}\index{vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}!From\+Raw@{From\+Raw}}
+\index{From\+Raw@{From\+Raw}!vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}}
+\subsubsection[{From\+Raw}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type$>$ template$<$class \+\_\+\+\_\+container\+Type $>$ {\bf This\+Type}\& {\bf vct\+Quaternion\+Rotation3\+Base}$<$ \+\_\+container\+Type $>$\+::From\+Raw (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Matrix\+Rotation3\+Base}$<$ \+\_\+\+\_\+container\+Type $>$ \&}]{matrix\+Rotation}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_quaternion_rotation3_base_a477d0734a51969199fc5b781e64d9554}
+Conversion from a rotation matrix. The algorithm is based on \href{http://www.j3d.org/matrix_faq/matrfaq_latest.html}{\tt http\+://www.\+j3d.\+org/matrix\+\_\+faq/matrfaq\+\_\+latest.\+html}. This method is important since we use it to convert a rotation matrix to a quaternion to normalize the matrix. The method From can not be used since it asserts that the input matrix is already normalized.
+
+
+\begin{DoxyParams}{Parameters}
+{\em matrix\+Rotation} & A rotation matrix \\
+\hline
+\end{DoxyParams}
+\hypertarget{classvct_quaternion_rotation3_base_a7b6a4ed8830ee9153e9c387f5ea9a35a}{}\index{vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}!Get\+Axis\+Angle@{Get\+Axis\+Angle}}
+\index{Get\+Axis\+Angle@{Get\+Axis\+Angle}!vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}}
+\subsubsection[{Get\+Axis\+Angle}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type$>$ template$<$stride\+\_\+type \+\_\+\+\_\+stride, class \+\_\+\+\_\+data\+Ptr\+Type $>$ {\bf C\+I\+S\+S\+T\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D} void {\bf vct\+Quaternion\+Rotation3\+Base}$<$ \+\_\+container\+Type $>$\+::Get\+Axis\+Angle (
+\begin{DoxyParamCaption}
+\item[{{\bf vct\+Fixed\+Size\+Vector\+Base}$<$ 3, \+\_\+\+\_\+stride, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type $>$ \&}]{axis, }
+\item[{value\+\_\+type \&}]{angle}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_quaternion_rotation3_base_a7b6a4ed8830ee9153e9c387f5ea9a35a}
+Convert to an axis and angle representation. It is important to note that this method doesn\textquotesingle{}t check if the rotation quaternion is normalized or not.
+
+
+\begin{DoxyParams}{Parameters}
+{\em axis} & The axis of the rotation\\
+\hline
+{\em angle} & The angle around the axis to match the rotation\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+This method is deprecated. Use \hyperlink{classvct_axis_angle_rotation3_a296f32cc8359a9b986f1d15dd1834aa0}{vct\+Axis\+Angle\+Rotation3.\+From()} instead. 
+\end{DoxyNote}
+\hypertarget{classvct_quaternion_rotation3_base_a9d08a3fdcfa011bd625af5e18f1e04d6}{}\index{vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}!Identity@{Identity}}
+\index{Identity@{Identity}!vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}}
+\subsubsection[{Identity}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type$>$ static {\bf C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} const {\bf This\+Type}\& {\bf vct\+Quaternion\+Rotation3\+Base}$<$ \+\_\+container\+Type $>$\+::Identity (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classvct_quaternion_rotation3_base_a9d08a3fdcfa011bd625af5e18f1e04d6}
+Const reference to the identity. In this case, {\ttfamily (0, 0, 0, 1)} \hypertarget{classvct_quaternion_rotation3_base_af658926043f0deab6997881cd9fff822}{}\index{vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}!Inverse@{Inverse}}
+\index{Inverse@{Inverse}!vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}}
+\subsubsection[{Inverse}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type$>$ {\bf This\+Type} {\bf vct\+Quaternion\+Rotation3\+Base}$<$ \+\_\+container\+Type $>$\+::Inverse (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_quaternion_rotation3_base_af658926043f0deab6997881cd9fff822}
+Create and return by copy the inverse of this matrix. This method is not the most efficient since it requires a copy. \hypertarget{classvct_quaternion_rotation3_base_aa8b668cab41b415642137c6eb93508b9}{}\index{vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}!Inverse\+Of@{Inverse\+Of}}
+\index{Inverse\+Of@{Inverse\+Of}!vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}}
+\subsubsection[{Inverse\+Of}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type$>$ {\bf This\+Type}\& {\bf vct\+Quaternion\+Rotation3\+Base}$<$ \+\_\+container\+Type $>$\+::Inverse\+Of (
+\begin{DoxyParamCaption}
+\item[{const {\bf This\+Type} \&}]{other\+Rotation}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_quaternion_rotation3_base_aa8b668cab41b415642137c6eb93508b9}
+Set this rotation as the inverse of another one. \hypertarget{classvct_quaternion_rotation3_base_a0a94bc0c71fff5b80ae821faddbeaf4c}{}\index{vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}!Inverse\+Self@{Inverse\+Self}}
+\index{Inverse\+Self@{Inverse\+Self}!vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}}
+\subsubsection[{Inverse\+Self}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type$>$ {\bf This\+Type}\& {\bf vct\+Quaternion\+Rotation3\+Base}$<$ \+\_\+container\+Type $>$\+::Inverse\+Self (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_quaternion_rotation3_base_a0a94bc0c71fff5b80ae821faddbeaf4c}
+Inverse this rotation quaternion. This methods assumes that the quaternion is normalized and sets this unit quaternion as its transposed. \hypertarget{classvct_quaternion_rotation3_base_a5eb2e79d6a9cd3993a847791760d0d7b}{}\index{vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}!Normalized@{Normalized}}
+\index{Normalized@{Normalized}!vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}}
+\subsubsection[{Normalized}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type$>$ {\bf This\+Type} {\bf vct\+Quaternion\+Rotation3\+Base}$<$ \+\_\+container\+Type $>$\+::Normalized (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_quaternion_rotation3_base_a5eb2e79d6a9cd3993a847791760d0d7b}
+Returns the normalized version of this quaternion rotation. This method returns a copy of the normalized version and does not modify this quaternion. \hypertarget{classvct_quaternion_rotation3_base_a2152103b5a4f8a92f397ba8aa2e9c3e1}{}\index{vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}!Normalized\+Of@{Normalized\+Of}}
+\index{Normalized\+Of@{Normalized\+Of}!vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}}
+\subsubsection[{Normalized\+Of}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type$>$ {\bf This\+Type}\& {\bf vct\+Quaternion\+Rotation3\+Base}$<$ \+\_\+container\+Type $>$\+::Normalized\+Of (
+\begin{DoxyParamCaption}
+\item[{const {\bf This\+Type} \&}]{other\+Quaternion}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_quaternion_rotation3_base_a2152103b5a4f8a92f397ba8aa2e9c3e1}
+Sets this rotation quaternion as the normalized version of another one. 
+\begin{DoxyParams}{Parameters}
+{\em other\+Quaternion} & rotation quaternion used to compute the normalized quaternion. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classvct_quaternion_rotation3_base_a83d65d4063a0bcd1db35fec895bb3793}{}\index{vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}!Normalized\+Self@{Normalized\+Self}}
+\index{Normalized\+Self@{Normalized\+Self}!vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}}
+\subsubsection[{Normalized\+Self}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type$>$ {\bf This\+Type}\& {\bf vct\+Quaternion\+Rotation3\+Base}$<$ \+\_\+container\+Type $>$\+::Normalized\+Self (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_quaternion_rotation3_base_a83d65d4063a0bcd1db35fec895bb3793}
+Normalizes this quaternion rotation. \hypertarget{classvct_quaternion_rotation3_base_a227f3e3cdab401dd2270a70bdd925c0f}{}\index{vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type$>$ {\bf This\+Type} {\bf vct\+Quaternion\+Rotation3\+Base}$<$ \+\_\+container\+Type $>$\+::operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf This\+Type} \&}]{input}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_quaternion_rotation3_base_a227f3e3cdab401dd2270a70bdd925c0f}
+Multiply two rotation quaternions and return the result as a normalized rotation quaternion. \begin{DoxyReturn}{Returns}
+($\ast$this) $\ast$ other 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+this function overrides and shadows the operator $\ast$ defined for basic quaternion type. The latter returns a \hyperlink{classvct_quaternion}{vct\+Quaternion}, while this version returns a specialized \hyperlink{classvct_quaternion_rotation3_base}{vct\+Quaternion\+Rotation3\+Base} 
+\end{DoxyNote}
+\hypertarget{classvct_quaternion_rotation3_base_a1e995a36965cc79f5832b090023f3c20}{}\index{vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}!Throw\+Unless\+Is\+Normalized@{Throw\+Unless\+Is\+Normalized}}
+\index{Throw\+Unless\+Is\+Normalized@{Throw\+Unless\+Is\+Normalized}!vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}}
+\subsubsection[{Throw\+Unless\+Is\+Normalized}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type$>$ void {\bf vct\+Quaternion\+Rotation3\+Base}$<$ \+\_\+container\+Type $>$\+::Throw\+Unless\+Is\+Normalized (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const throw  std\+::runtime\+\_\+error) \hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\label{classvct_quaternion_rotation3_base_a1e995a36965cc79f5832b090023f3c20}
+Throw an exception unless this rotation is normalized. \hypertarget{classvct_quaternion_rotation3_base_a6a2860093d561d93d4afed3b1e191259}{}\index{vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}!Throw\+Unless\+Is\+Normalized@{Throw\+Unless\+Is\+Normalized}}
+\index{Throw\+Unless\+Is\+Normalized@{Throw\+Unless\+Is\+Normalized}!vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}}
+\subsubsection[{Throw\+Unless\+Is\+Normalized}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type$>$ template$<$class \+\_\+input\+Type $>$ void {\bf vct\+Quaternion\+Rotation3\+Base}$<$ \+\_\+container\+Type $>$\+::Throw\+Unless\+Is\+Normalized (
+\begin{DoxyParamCaption}
+\item[{const \+\_\+input\+Type \&}]{input}
+\end{DoxyParamCaption}
+) const throw  std\+::runtime\+\_\+error) \hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\label{classvct_quaternion_rotation3_base_a6a2860093d561d93d4afed3b1e191259}
+Throw an exception unless the input is normalized. 
+\begin{DoxyParams}{Parameters}
+{\em input} & An object with {\ttfamily Is\+Normalized} method. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classvct_quaternion_rotation3_base_af57e4c02fd70dc7ec1d58e0b44a624fd}{}\index{vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}!V\+C\+T\+\_\+\+C\+O\+N\+T\+A\+I\+N\+E\+R\+\_\+\+T\+R\+A\+I\+T\+S\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+S@{V\+C\+T\+\_\+\+C\+O\+N\+T\+A\+I\+N\+E\+R\+\_\+\+T\+R\+A\+I\+T\+S\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+S}}
+\index{V\+C\+T\+\_\+\+C\+O\+N\+T\+A\+I\+N\+E\+R\+\_\+\+T\+R\+A\+I\+T\+S\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+S@{V\+C\+T\+\_\+\+C\+O\+N\+T\+A\+I\+N\+E\+R\+\_\+\+T\+R\+A\+I\+T\+S\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+S}!vct\+Quaternion\+Rotation3\+Base@{vct\+Quaternion\+Rotation3\+Base}}
+\subsubsection[{V\+C\+T\+\_\+\+C\+O\+N\+T\+A\+I\+N\+E\+R\+\_\+\+T\+R\+A\+I\+T\+S\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+S}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type$>$ {\bf vct\+Quaternion\+Rotation3\+Base}$<$ \+\_\+container\+Type $>$\+::V\+C\+T\+\_\+\+C\+O\+N\+T\+A\+I\+N\+E\+R\+\_\+\+T\+R\+A\+I\+T\+S\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+S (
+\begin{DoxyParamCaption}
+\item[{typename Container\+Type\+::value\+\_\+type}]{}
+\end{DoxyParamCaption}
+)}\label{classvct_quaternion_rotation3_base_af57e4c02fd70dc7ec1d58e0b44a624fd}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Vector/\hyperlink{vct_forward_declarations_8h}{vct\+Forward\+Declarations.\+h}\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Vector/\hyperlink{vct_quaternion_rotation3_base_8h}{vct\+Quaternion\+Rotation3\+Base.\+h}\end{DoxyCompactItemize}

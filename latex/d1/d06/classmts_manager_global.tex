@@ -1,0 +1,1253 @@
+\hypertarget{classmts_manager_global}{}\section{mts\+Manager\+Global Class Reference}
+\label{classmts_manager_global}\index{mts\+Manager\+Global@{mts\+Manager\+Global}}
+
+
+{\ttfamily \#include $<$mts\+Manager\+Global.\+h$>$}
+
+Inheritance diagram for mts\+Manager\+Global\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{d1/d06/classmts_manager_global}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structmts_manager_global_1_1_cleanup_element_type}{Cleanup\+Element\+Type}
+\item 
+struct \hyperlink{structmts_manager_global_1_1_interface_map_type}{Interface\+Map\+Type}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmts_manager_global_abd0f3829c71d3e3c1f29fc048d9047be}{mts\+Manager\+Global} ()
+\item 
+\hyperlink{classmts_manager_global_ac679e410e25ca54006e4893cb4feb9b5}{$\sim$mts\+Manager\+Global} ()
+\item 
+void \hyperlink{classmts_manager_global_a25180a6b4c13081af290de27cca9dc18}{Set\+M\+C\+S} (\hyperlink{classmts_manager_component_server}{mts\+Manager\+Component\+Server} $\ast$mcs)
+\item 
+bool \hyperlink{classmts_manager_global_ad2133b03d5c9cad83613cfd9f94b33c4}{Add\+Process} (const std\+::string \&process\+Name)
+\begin{DoxyCompactList}\small\item\em Register process. \end{DoxyCompactList}\item 
+bool \hyperlink{classmts_manager_global_a16df0096e52ff60e1dadafcde7a75fef}{Add\+Process\+Object} (\hyperlink{classmts_manager_local_interface}{mts\+Manager\+Local\+Interface} $\ast$local\+Manager\+Object, const bool is\+Manager\+Proxy\+Server=false)
+\item 
+bool \hyperlink{classmts_manager_global_a4a62c2854055d41938a6b8e65c0193da}{Find\+Process} (const std\+::string \&process\+Name) const 
+\begin{DoxyCompactList}\small\item\em Find process. \end{DoxyCompactList}\item 
+bool \hyperlink{classmts_manager_global_aabe689a2366312fb41e4f559241c34f4}{Remove\+Process} (const std\+::string \&process\+Name, const bool network\+Disconnect=false)
+\begin{DoxyCompactList}\small\item\em Remove process. \end{DoxyCompactList}\item 
+bool \hyperlink{classmts_manager_global_a7ea69577859e7ee2790adb4bc69c589c}{Add\+Component} (const std\+::string \&process\+Name, const std\+::string \&component\+Name)
+\begin{DoxyCompactList}\small\item\em Register component. \end{DoxyCompactList}\item 
+bool \hyperlink{classmts_manager_global_a9381aad00498adae5fdf9488b6a749bc}{Find\+Component} (const std\+::string \&process\+Name, const std\+::string \&component\+Name) const 
+\begin{DoxyCompactList}\small\item\em Find component using process name and component name. \end{DoxyCompactList}\item 
+bool \hyperlink{classmts_manager_global_ad54d697f17391d0bd203ec66f33ef47c}{Remove\+Component} (const std\+::string \&process\+Name, const std\+::string \&component\+Name, const bool lock=true)
+\begin{DoxyCompactList}\small\item\em Remove component. \end{DoxyCompactList}\item 
+bool \hyperlink{classmts_manager_global_a78430c06228bba8577979f6bec9b8301}{Add\+Interface\+Provided\+Or\+Output} (const std\+::string \&process\+Name, const std\+::string \&component\+Name, const std\+::string \&interface\+Name)
+\begin{DoxyCompactList}\small\item\em Register provided interface. Can be called at run-\/time. \end{DoxyCompactList}\item 
+bool \hyperlink{classmts_manager_global_a26ed00e3c915e50262f13fb21ec4e621}{Add\+Interface\+Required\+Or\+Input} (const std\+::string \&process\+Name, const std\+::string \&component\+Name, const std\+::string \&interface\+Name)
+\begin{DoxyCompactList}\small\item\em Register required interface. Can be called at run-\/time. \end{DoxyCompactList}\item 
+bool \hyperlink{classmts_manager_global_a117115d1bdee6acb13a307eb88e48e46}{Find\+Interface\+Provided\+Or\+Output} (const std\+::string \&process\+Name, const std\+::string \&component\+Name, const std\+::string \&interface\+Name) const 
+\begin{DoxyCompactList}\small\item\em Find provided interface using process name, component name, and interface name. \end{DoxyCompactList}\item 
+bool \hyperlink{classmts_manager_global_a801480ff0373d7637abc45ce194c3be8}{Find\+Interface\+Required\+Or\+Input} (const std\+::string \&process\+Name, const std\+::string \&component\+Name, const std\+::string \&interface\+Name) const 
+\begin{DoxyCompactList}\small\item\em Find required interface using process name, component name, and interface name. \end{DoxyCompactList}\item 
+bool \hyperlink{classmts_manager_global_ad997f307343ff4fb5533d2c6ba57596f}{Remove\+Interface\+Provided\+Or\+Output} (const std\+::string \&process\+Name, const std\+::string \&component\+Name, const std\+::string \&interface\+Name, const bool lock=true)
+\begin{DoxyCompactList}\small\item\em Remove provided interface. Can be called at run-\/time. \end{DoxyCompactList}\item 
+bool \hyperlink{classmts_manager_global_ae6f2ebe45dbea3f0a31b262398fc0907}{Remove\+Interface\+Required\+Or\+Input} (const std\+::string \&process\+Name, const std\+::string \&component\+Name, const std\+::string \&interface\+Name, const bool lock=true)
+\begin{DoxyCompactList}\small\item\em Remove required interface. Can be called at run-\/time. \end{DoxyCompactList}\item 
+\hyperlink{mts_forward_declarations_8h_ad3543bb11742e1766374ec96016d6547}{Connection\+I\+D\+Type} \hyperlink{classmts_manager_global_a69bc5cdc48aec855dadf46468312d7af}{Connect} (const std\+::string \&request\+Process\+Name, const std\+::string \&client\+Process\+Name, const std\+::string \&client\+Component\+Name, const std\+::string \&client\+Interface\+Name, const std\+::string \&server\+Process\+Name, const std\+::string \&server\+Component\+Name, const std\+::string \&server\+Interface\+Name)
+\begin{DoxyCompactList}\small\item\em Connect two interfaces. \end{DoxyCompactList}\item 
+bool \hyperlink{classmts_manager_global_a2fdffc2fa545afe88283def2ea1d7c63}{Connect\+Confirm} (const \hyperlink{mts_forward_declarations_8h_ad3543bb11742e1766374ec96016d6547}{Connection\+I\+D\+Type} connection\+I\+D)
+\begin{DoxyCompactList}\small\item\em Confirm that connection has been successfully established. \end{DoxyCompactList}\item 
+bool \hyperlink{classmts_manager_global_a76821bdfa173c602a1e2822abbd30207}{Disconnect} (const \hyperlink{mts_forward_declarations_8h_ad3543bb11742e1766374ec96016d6547}{Connection\+I\+D\+Type} connection\+I\+D)
+\begin{DoxyCompactList}\small\item\em Disconnect two interfaces. \end{DoxyCompactList}\item 
+bool \hyperlink{classmts_manager_global_a8f1aacccac9488a3ec0aeb4ecc547c7c}{Disconnect} (const mts\+Description\+Connection \&connection)
+\item 
+bool \hyperlink{classmts_manager_global_abfa53d9b4051f79c7b413ce1fa2b8cc9}{Disconnect} (const std\+::string \&client\+Process\+Name, const std\+::string \&client\+Component\+Name, const std\+::string \&client\+Interface\+Name, const std\+::string \&server\+Process\+Name, const std\+::string \&server\+Component\+Name, const std\+::string \&server\+Interface\+Name)
+\begin{DoxyCompactList}\small\item\em Disconnect two interfaces. \end{DoxyCompactList}\item 
+bool \hyperlink{classmts_manager_global_a395aea7f5f6c28d676bd9f2d05b72ff6}{Initiate\+Connect} (const \hyperlink{mts_forward_declarations_8h_ad3543bb11742e1766374ec96016d6547}{Connection\+I\+D\+Type} connection\+I\+D)
+\begin{DoxyCompactList}\small\item\em Initiate connection process. \end{DoxyCompactList}\item 
+bool \hyperlink{classmts_manager_global_acf0a8009a35013ec30c1fddda725eb20}{Connect\+Server\+Side\+Interface\+Request} (const \hyperlink{mts_forward_declarations_8h_ad3543bb11742e1766374ec96016d6547}{Connection\+I\+D\+Type} connection\+I\+D)
+\begin{DoxyCompactList}\small\item\em Request the global component manager to connect interfaces at server side. \end{DoxyCompactList}\item 
+void \hyperlink{classmts_manager_global_ab53df6ad67125ff7682e5a091287d2ec}{Get\+List\+Of\+Connections} (std\+::vector$<$ mts\+Description\+Connection $>$ \&list) const 
+\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{classmts_manager_global_a9a61d5f94f5cef7bb85b4184fbb971cd}{Get\+I\+P\+Address} (void) const 
+\item 
+void \hyperlink{classmts_manager_global_aabf5b3d4a303ea79fbd28d85721c7c13}{Get\+I\+P\+Address} (std\+::vector$<$ std\+::string $>$ \&ip\+Addresses) const 
+\item 
+void \hyperlink{classmts_manager_global_a79ff98c39ee4b67c0ae7d00c4381f18a}{Get\+Names\+Of\+Processes} (std\+::vector$<$ std\+::string $>$ \&names\+Of\+Processes) const 
+\item 
+void \hyperlink{classmts_manager_global_a5235e3495d9963069ed7ca53de040a31}{Get\+Names\+Of\+Components} (const std\+::string \&process\+Name, std\+::vector$<$ std\+::string $>$ \&names\+Of\+Components) const 
+\item 
+void \hyperlink{classmts_manager_global_a612adaf5ac9b1392b1ff467dcaa2f8b3}{Get\+Names\+Of\+Interfaces\+Provided\+Or\+Output} (const std\+::string \&process\+Name, const std\+::string \&component\+Name, std\+::vector$<$ std\+::string $>$ \&names\+Of\+Interfaces\+Provided) const 
+\item 
+void \hyperlink{classmts_manager_global_af83cc964e33db5d3b241239d922d8a82}{Get\+Names\+Of\+Interfaces\+Required\+Or\+Input} (const std\+::string \&process\+Name, const std\+::string \&component\+Name, std\+::vector$<$ std\+::string $>$ \&names\+Of\+Interfaces\+Required) const 
+\item 
+void \hyperlink{classmts_manager_global_a7d089967d11aa6e1b3786ea834b43fc5}{Get\+Names\+Of\+Commands} (const std\+::string \&process\+Name, const std\+::string \&component\+Name, const std\+::string \&provided\+Interface\+Name, std\+::vector$<$ std\+::string $>$ \&names\+Of\+Commands) const 
+\item 
+void \hyperlink{classmts_manager_global_a0cd6e7c9a0c3fdbbfdacdbdd03119a4b}{Get\+Names\+Of\+Event\+Generators} (const std\+::string \&process\+Name, const std\+::string \&component\+Name, const std\+::string \&provided\+Interface\+Name, std\+::vector$<$ std\+::string $>$ \&names\+Of\+Event\+Generators) const 
+\item 
+void \hyperlink{classmts_manager_global_ab8c6e3da89e4e76a3bdb29097e5d0a78}{Get\+Names\+Of\+Functions} (const std\+::string \&process\+Name, const std\+::string \&component\+Name, const std\+::string \&required\+Interface\+Name, std\+::vector$<$ std\+::string $>$ \&names\+Of\+Functions) const 
+\item 
+void \hyperlink{classmts_manager_global_a2d0ce773b7d8d71f775bec15ce5d9f1b}{Get\+Names\+Of\+Event\+Handlers} (const std\+::string \&process\+Name, const std\+::string \&component\+Name, const std\+::string \&required\+Interface\+Name, std\+::vector$<$ std\+::string $>$ \&names\+Of\+Event\+Handlers) const 
+\item 
+void \hyperlink{classmts_manager_global_a6ce2a921e276e66e7fa993a209eca493}{Get\+Description\+Of\+Command} (const std\+::string \&process\+Name, const std\+::string \&component\+Name, const std\+::string \&provided\+Interface\+Name, const std\+::string \&command\+Name, std\+::string \&description) const 
+\item 
+void \hyperlink{classmts_manager_global_a940ee93980abe9f06c3bff805c5b638a}{Get\+Description\+Of\+Event\+Generator} (const std\+::string \&process\+Name, const std\+::string \&component\+Name, const std\+::string \&provided\+Interface\+Name, const std\+::string \&event\+Generator\+Name, std\+::string \&description) const 
+\item 
+void \hyperlink{classmts_manager_global_ad69f9c7dba89ec7528bf4a1effbaaf92}{Get\+Description\+Of\+Function} (const std\+::string \&process\+Name, const std\+::string \&component\+Name, const std\+::string \&required\+Interface\+Name, const std\+::string \&function\+Name, std\+::string \&description) const 
+\item 
+void \hyperlink{classmts_manager_global_a6b01678cac68950588380cc576e8b856}{Get\+Description\+Of\+Event\+Handler} (const std\+::string \&process\+Name, const std\+::string \&component\+Name, const std\+::string \&required\+Interface\+Name, const std\+::string \&event\+Handler\+Name, std\+::string \&description) const 
+\item 
+\hyperlink{classmts_manager_local_interface}{mts\+Manager\+Local\+Interface} $\ast$ \hyperlink{classmts_manager_global_a345d1abcd9982e1ddf1c0dbb1e9a26c3}{Get\+Process\+Object} (const std\+::string \&process\+Name) const 
+\item 
+bool \hyperlink{classmts_manager_global_a6e0773b090ddded56d7bdb57ad61658d}{Start\+Server} (void)
+\item 
+bool \hyperlink{classmts_manager_global_a815cf7a0880ba63b00bd79a06a564601}{Stop\+Server} (void)
+\item 
+bool \hyperlink{classmts_manager_global_a27ab6be87f292f862b05551bf786bcfd}{Set\+Interface\+Provided\+Proxy\+Access\+Info} (const \hyperlink{mts_forward_declarations_8h_ad3543bb11742e1766374ec96016d6547}{Connection\+I\+D\+Type} connection\+I\+D, const std\+::string \&endpoint\+Info)
+\item 
+bool \hyperlink{classmts_manager_global_a5b746df511febca8caca1482341f1595}{Get\+Interface\+Provided\+Proxy\+Access\+Info} (const \hyperlink{mts_forward_declarations_8h_ad3543bb11742e1766374ec96016d6547}{Connection\+I\+D\+Type} connection\+I\+D, std\+::string \&endpoint\+Info)
+\item 
+bool \hyperlink{classmts_manager_global_ac56f876d73d6c494aa715d1081c9b720}{Get\+Interface\+Provided\+Proxy\+Access\+Info} (const std\+::string \&client\+Process\+Name, const std\+::string \&server\+Process\+Name, const std\+::string \&server\+Component\+Name, const std\+::string \&server\+Interface\+Name, std\+::string \&endpoint\+Info)
+\begin{DoxyCompactList}\small\item\em Get access information of the provided interface proxy. \end{DoxyCompactList}\item 
+void \hyperlink{classmts_manager_global_a9835ba6dae5a052c997cf5efedd10adc}{Check\+Connect\+Confirm\+Timeout} (void)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::string \hyperlink{classmts_manager_global_acd6653c4d0c6e49d7cbc890293d596e5}{Get\+Name} (void)
+\item 
+static bool \hyperlink{classmts_manager_global_a06739ca78771998b588fa3c3e686edff}{Is\+Proxy\+Component} (const std\+::string \&component\+Name)
+\item 
+static const std\+::string \hyperlink{classmts_manager_global_acfd4a5bfc428a23c5f0b1ae60bc3b39d}{Get\+Component\+Proxy\+Name} (const std\+::string \&process\+Name, const std\+::string \&component\+Name)
+\item 
+static const std\+::string \hyperlink{classmts_manager_global_ac5416bee759e773bb7d4bd9670db8291}{Get\+Interface\+U\+I\+D} (const std\+::string \&process\+Name, const std\+::string \&component\+Name, const std\+::string \&interface\+Name)
+\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::vector$<$ \hyperlink{mts_forward_declarations_8h_ad3543bb11742e1766374ec96016d6547}{Connection\+I\+D\+Type} $>$ \hyperlink{classmts_manager_global_a01bcfffc97f320cdd87425bd4bd5bbad}{Connection\+I\+D\+List\+Type}
+\item 
+typedef \hyperlink{classcmn_named_map}{cmn\+Named\+Map}$<$ \hyperlink{classmts_manager_global_a01bcfffc97f320cdd87425bd4bd5bbad}{Connection\+I\+D\+List\+Type} $>$ \hyperlink{classmts_manager_global_a3449158e2432ced5a21d4853a2ca59b6}{Interface\+Map\+Element\+Type}
+\item 
+typedef \hyperlink{classcmn_named_map}{cmn\+Named\+Map}$<$ \hyperlink{structmts_manager_global_1_1_interface_map_type}{Interface\+Map\+Type} $>$ \hyperlink{classmts_manager_global_ab954b59b5453e8c20301f3772bb1484f}{Component\+Map\+Type}
+\item 
+typedef \hyperlink{classcmn_named_map}{cmn\+Named\+Map}$<$ \hyperlink{classmts_manager_global_ab954b59b5453e8c20301f3772bb1484f}{Component\+Map\+Type} $>$ \hyperlink{classmts_manager_global_ab0257cb91cc9d4c59cf85706f65da9f1}{Process\+Map\+Type}
+\item 
+typedef std\+::map$<$ \hyperlink{mts_forward_declarations_8h_ad3543bb11742e1766374ec96016d6547}{Connection\+I\+D\+Type}, \hyperlink{classmts_connection}{mts\+Connection} $>$ \hyperlink{classmts_manager_global_abee7afe21ca1987b873dbfdc3ac2fbfb}{Connection\+Map\+Type}
+\item 
+typedef std\+::map$<$ \hyperlink{mts_forward_declarations_8h_ad3543bb11742e1766374ec96016d6547}{Connection\+I\+D\+Type}, \hyperlink{mts_forward_declarations_8h_ad3543bb11742e1766374ec96016d6547}{Connection\+I\+D\+Type} $>$ \hyperlink{classmts_manager_global_a2513c197a42becaff9d23272f4a7be4b}{Disconnect\+Queue\+Type}
+\item 
+typedef struct \hyperlink{structmts_manager_global_1_1_cleanup_element_type}{mts\+Manager\+Global\+::\+Cleanup\+Element\+Type} \hyperlink{classmts_manager_global_a52d8af643eef029ad83e5e430604261a}{Cleanup\+Element\+Type}
+\item 
+typedef std\+::list$<$ \hyperlink{structmts_manager_global_1_1_cleanup_element_type}{Cleanup\+Element\+Type} $>$ \hyperlink{classmts_manager_global_a2e81b6e4dd89cef56e621cac95944bfd}{Cleanup\+Element\+List\+Type}
+\item 
+typedef \hyperlink{classcmn_named_map}{cmn\+Named\+Map}$<$ \hyperlink{classmts_manager_global_a2e81b6e4dd89cef56e621cac95944bfd}{Cleanup\+Element\+List\+Type} $>$ \hyperlink{classmts_manager_global_a9df2055466c1e6a041ae3abc266fe507}{Disconnected\+Process\+Cleanup\+Map\+Type}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void $\ast$ \hyperlink{classmts_manager_global_a0f668467bf640bdae65ec86dea9d01b8}{Thread\+Disconnect\+Process} (void $\ast$arg)
+\item 
+void \hyperlink{classmts_manager_global_af027272981d69071395d21a3e0634418}{Show\+Internal\+Structure} (void)
+\item 
+void \hyperlink{classmts_manager_global_a2f527606d2fe5b67bbe7d7323f562e20}{Cleanup} (void)
+\item 
+\hyperlink{classmts_manager_global_a01bcfffc97f320cdd87425bd4bd5bbad}{Connection\+I\+D\+List\+Type} $\ast$ \hyperlink{classmts_manager_global_a2ddfed4e74f4dd60bd7994825604b2dd}{Get\+Connections\+Of\+Interface\+Provided\+Or\+Output} (const std\+::string \&server\+Process\+Name, const std\+::string \&server\+Component\+Name, const std\+::string \&interface\+Name) const 
+\item 
+\hyperlink{classmts_manager_global_a01bcfffc97f320cdd87425bd4bd5bbad}{Connection\+I\+D\+List\+Type} $\ast$ \hyperlink{classmts_manager_global_acdcea160cd8e70e14c692442b4b16849}{Get\+Connections\+Of\+Interface\+Provided\+Or\+Output} (const std\+::string \&server\+Process\+Name, const std\+::string \&server\+Component\+Name, const std\+::string \&interface\+Name, \hyperlink{structmts_manager_global_1_1_interface_map_type}{Interface\+Map\+Type} $\ast$$\ast$interface\+Map) const 
+\item 
+\hyperlink{classmts_manager_global_a01bcfffc97f320cdd87425bd4bd5bbad}{Connection\+I\+D\+List\+Type} $\ast$ \hyperlink{classmts_manager_global_a5d4b54accc2a9c1e98440966690ef85f}{Get\+Connections\+Of\+Interface\+Required\+Or\+Input} (const std\+::string \&client\+Process\+Name, const std\+::string \&client\+Component\+Name, const std\+::string \&interface\+Name) const 
+\item 
+\hyperlink{classmts_manager_global_a01bcfffc97f320cdd87425bd4bd5bbad}{Connection\+I\+D\+List\+Type} $\ast$ \hyperlink{classmts_manager_global_a1e0b2e1ca58062ee8993cccd0ade1cb9}{Get\+Connections\+Of\+Interface\+Required\+Or\+Input} (const std\+::string \&client\+Process\+Name, const std\+::string \&client\+Component\+Name, const std\+::string \&interface\+Name, \hyperlink{structmts_manager_global_1_1_interface_map_type}{Interface\+Map\+Type} $\ast$$\ast$interface\+Map) const 
+\item 
+bool \hyperlink{classmts_manager_global_ababac733270efb19c7aaecbe2334c96a}{Add\+Connection\+To\+Interface\+Provided\+Or\+Output} (const std\+::string \&server\+Process\+Name, const std\+::string \&server\+Component\+Name, const std\+::string \&interface\+Name, const \hyperlink{mts_forward_declarations_8h_ad3543bb11742e1766374ec96016d6547}{Connection\+I\+D\+Type} connection\+I\+D)
+\item 
+bool \hyperlink{classmts_manager_global_abbcbd4b173b16bb526bd6ac3381aa91b}{Add\+Connection\+To\+Interface\+Required\+Or\+Input} (const std\+::string \&client\+Process\+Name, const std\+::string \&client\+Component\+Name, const std\+::string \&interface\+Name, const \hyperlink{mts_forward_declarations_8h_ad3543bb11742e1766374ec96016d6547}{Connection\+I\+D\+Type} connection\+I\+D)
+\item 
+bool \hyperlink{classmts_manager_global_a81e63fe6a44457f8e867dfeb85a3247d}{Remove\+Connection\+Of\+Interface\+Provided\+Or\+Output} (const std\+::string \&server\+Process\+Name, const std\+::string \&server\+Component\+Name, const std\+::string \&interface\+Name, const \hyperlink{mts_forward_declarations_8h_ad3543bb11742e1766374ec96016d6547}{Connection\+I\+D\+Type} connection\+I\+D)
+\item 
+bool \hyperlink{classmts_manager_global_acaa9d8d96ff161094790ccfa9e6e3336}{Remove\+Connection\+Of\+Interface\+Required\+Or\+Input} (const std\+::string \&client\+Process\+Name, const std\+::string \&client\+Component\+Name, const std\+::string \&interface\+Name, const \hyperlink{mts_forward_declarations_8h_ad3543bb11742e1766374ec96016d6547}{Connection\+I\+D\+Type} connection\+I\+D)
+\item 
+bool \hyperlink{classmts_manager_global_a115d9b7e7e1b0125977ac0f737484537}{Cleanup\+Disconnected\+Process} (const std\+::string \&name\+Of\+Process\+Disconnected)
+\item 
+bool \hyperlink{classmts_manager_global_ab6db0d6f1e9d0717199bdbfdce5141e5}{Is\+Already\+Connected} (const mts\+Description\+Connection \&description) const 
+\item 
+int \hyperlink{classmts_manager_global_a0e3e1f31090dfa4288608b611bd5c723}{Get\+Number\+Of\+Interfaces} (const std\+::string \&process\+Name, const std\+::string \&component\+Name, const bool include\+Internal\+Interface=true) const 
+\item 
+\hyperlink{mts_forward_declarations_8h_ad3543bb11742e1766374ec96016d6547}{Connection\+I\+D\+Type} \hyperlink{classmts_manager_global_a1305debbb9848297d7f8079506c6ad75}{Get\+Connection\+I\+D} (const std\+::string \&client\+Process\+Name, const std\+::string \&client\+Component\+Name, const std\+::string \&interface\+Name) const 
+\item 
+\hyperlink{classmts_connection}{mts\+Connection} $\ast$ \hyperlink{classmts_manager_global_abd5b0c5b4f749c26628273f6adc92f9c}{Get\+Connection\+Information} (const \hyperlink{mts_forward_declarations_8h_ad3543bb11742e1766374ec96016d6547}{Connection\+I\+D\+Type} connection\+I\+D)
+\item 
+void \hyperlink{classmts_manager_global_ab3b98061820480cd58a6707adc549bd0}{Disconnect\+Internal} (void)
+\item 
+void \hyperlink{classmts_manager_global_a0404d7f1f8b8dba08ca0bc305251f851}{Add\+To\+Disconnected\+Process\+Cleanup} (const std\+::string \&source\+Process\+Name, const std\+::string \&target\+Process\+Name, const std\+::string \&target\+Component\+Proxy\+Name)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmts_manager_global_ab0257cb91cc9d4c59cf85706f65da9f1}{Process\+Map\+Type} \hyperlink{classmts_manager_global_a15ef83ea8929f672214f5ff8fcb9eefa}{Process\+Map}
+\item 
+\hyperlink{classmts_manager_global_abee7afe21ca1987b873dbfdc3ac2fbfb}{Connection\+Map\+Type} \hyperlink{classmts_manager_global_a9185c8440ca44dfc49b9b8151e8c8d64}{Connection\+Map}
+\item 
+\hyperlink{classmts_manager_local}{mts\+Manager\+Local} $\ast$ \hyperlink{classmts_manager_global_aedcd7068710cbb38fae05e62b5d57d10}{Local\+Manager}
+\item 
+\hyperlink{classmts_manager_local_interface}{mts\+Manager\+Local\+Interface} $\ast$ \hyperlink{classmts_manager_global_a3d6e45758c38a5b82664675f9f58fcc8}{Local\+Manager\+Connected}
+\item 
+\hyperlink{classosa_mutex}{osa\+Mutex} \hyperlink{classmts_manager_global_abd74e5301aa1eb337fe671e8cc4155b0}{Process\+Map\+Change}
+\item 
+\hyperlink{classosa_mutex}{osa\+Mutex} \hyperlink{classmts_manager_global_aea1c953ffed0463e90c176fd4ccf9059}{Connection\+Map\+Change}
+\item 
+\hyperlink{classosa_mutex}{osa\+Mutex} \hyperlink{classmts_manager_global_a925380427292023875478058d5d75842}{Connection\+Change}
+\item 
+\hyperlink{classosa_mutex}{osa\+Mutex} \hyperlink{classmts_manager_global_a91aa784dfa7f9a8ba3cc4f8964840032}{Disconnected\+Process\+Cleanup\+Map\+Change}
+\item 
+\hyperlink{mts_forward_declarations_8h_ad3543bb11742e1766374ec96016d6547}{Connection\+I\+D\+Type} \hyperlink{classmts_manager_global_a2cbe9ea56007794ec15dd0fbd10ee1a3}{Connection\+I\+D}
+\item 
+mts\+Manager\+Proxy\+Server $\ast$ \hyperlink{classmts_manager_global_af56265a22f5d3f13947f582ff5aa5809}{Proxy\+Server}
+\item 
+\hyperlink{classmts_manager_component_server}{mts\+Manager\+Component\+Server} $\ast$ \hyperlink{classmts_manager_global_af326d688537352e3106b819adfae11eb}{Manager\+Component\+Server}
+\item 
+\hyperlink{classmts_manager_global_a2513c197a42becaff9d23272f4a7be4b}{Disconnect\+Queue\+Type} \hyperlink{classmts_manager_global_aa3294d8f26a6bcd187db348931d788b9}{Queue\+Disconnect\+Waiting}
+\item 
+\hyperlink{classmts_manager_global_a2513c197a42becaff9d23272f4a7be4b}{Disconnect\+Queue\+Type} \hyperlink{classmts_manager_global_a5dfcf8a628460bfcfa9350e15f8f36de}{Queue\+Disconnected}
+\item 
+\hyperlink{classosa_mutex}{osa\+Mutex} \hyperlink{classmts_manager_global_a900d74d93bb72e9420cd6094104c4c4e}{Queue\+Disconnect\+Waiting\+Change}
+\item 
+\hyperlink{classosa_mutex}{osa\+Mutex} \hyperlink{classmts_manager_global_aa4f774cb03c179504e84c3e5a36452b9}{Queue\+Disconnected\+Change}
+\item 
+\hyperlink{classosa_thread}{osa\+Thread} \hyperlink{classmts_manager_global_ac2dfc08c1931e1128145317e2499112f}{Thread\+Disconnect}
+\item 
+\hyperlink{classosa_thread_signal}{osa\+Thread\+Signal} \hyperlink{classmts_manager_global_a97940aadb7eeb7697a4174a929483def}{Thread\+Disconnect\+Finished}
+\item 
+bool \hyperlink{classmts_manager_global_a37a0b3f81f160ab240bb99924f52bf26}{Thread\+Disconnect\+Running}
+\item 
+\hyperlink{classmts_manager_global_a9df2055466c1e6a041ae3abc266fe507}{Disconnected\+Process\+Cleanup\+Map\+Type} \hyperlink{classmts_manager_global_ac3feb6deab8ad8d30b35000c776f4a9e}{Disconnected\+Process\+Cleanup\+Map}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classmts_manager_global_aad203c194c05c2d9063ff2face4590be}{mts\+Manager\+Global\+Test}
+\item 
+class \hyperlink{classmts_manager_global_adc2ae8db48d5418c526f275aafa3d4a9}{mts\+Manager\+Local\+Test}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classmts_manager_global_a2e81b6e4dd89cef56e621cac95944bfd}{}\index{mts\+Manager\+Global@{mts\+Manager\+Global}!Cleanup\+Element\+List\+Type@{Cleanup\+Element\+List\+Type}}
+\index{Cleanup\+Element\+List\+Type@{Cleanup\+Element\+List\+Type}!mts\+Manager\+Global@{mts\+Manager\+Global}}
+\subsubsection[{Cleanup\+Element\+List\+Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::list$<${\bf Cleanup\+Element\+Type}$>$ {\bf mts\+Manager\+Global\+::\+Cleanup\+Element\+List\+Type}\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_manager_global_a2e81b6e4dd89cef56e621cac95944bfd}
+\hypertarget{classmts_manager_global_a52d8af643eef029ad83e5e430604261a}{}\index{mts\+Manager\+Global@{mts\+Manager\+Global}!Cleanup\+Element\+Type@{Cleanup\+Element\+Type}}
+\index{Cleanup\+Element\+Type@{Cleanup\+Element\+Type}!mts\+Manager\+Global@{mts\+Manager\+Global}}
+\subsubsection[{Cleanup\+Element\+Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf mts\+Manager\+Global\+::\+Cleanup\+Element\+Type}  {\bf mts\+Manager\+Global\+::\+Cleanup\+Element\+Type}\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_manager_global_a52d8af643eef029ad83e5e430604261a}
+To clean up disconnected process \hypertarget{classmts_manager_global_ab954b59b5453e8c20301f3772bb1484f}{}\index{mts\+Manager\+Global@{mts\+Manager\+Global}!Component\+Map\+Type@{Component\+Map\+Type}}
+\index{Component\+Map\+Type@{Component\+Map\+Type}!mts\+Manager\+Global@{mts\+Manager\+Global}}
+\subsubsection[{Component\+Map\+Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf cmn\+Named\+Map}$<${\bf Interface\+Map\+Type}$>$ {\bf mts\+Manager\+Global\+::\+Component\+Map\+Type}\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_manager_global_ab954b59b5453e8c20301f3772bb1484f}
+Component map\+: a map of registered components in a process key=(component name), value=(interface map) value can be null if a component does not have any interface. \hypertarget{classmts_manager_global_a01bcfffc97f320cdd87425bd4bd5bbad}{}\index{mts\+Manager\+Global@{mts\+Manager\+Global}!Connection\+I\+D\+List\+Type@{Connection\+I\+D\+List\+Type}}
+\index{Connection\+I\+D\+List\+Type@{Connection\+I\+D\+List\+Type}!mts\+Manager\+Global@{mts\+Manager\+Global}}
+\subsubsection[{Connection\+I\+D\+List\+Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::vector$<${\bf Connection\+I\+D\+Type}$>$ {\bf mts\+Manager\+Global\+::\+Connection\+I\+D\+List\+Type}\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_manager_global_a01bcfffc97f320cdd87425bd4bd5bbad}
+Typedef for connection map\+: key=(connected interface name), value=(list of connection ids) map name=(name of component that owns these interfaces. \hypertarget{classmts_manager_global_abee7afe21ca1987b873dbfdc3ac2fbfb}{}\index{mts\+Manager\+Global@{mts\+Manager\+Global}!Connection\+Map\+Type@{Connection\+Map\+Type}}
+\index{Connection\+Map\+Type@{Connection\+Map\+Type}!mts\+Manager\+Global@{mts\+Manager\+Global}}
+\subsubsection[{Connection\+Map\+Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::map$<${\bf Connection\+I\+D\+Type}, {\bf mts\+Connection}$>$ {\bf mts\+Manager\+Global\+::\+Connection\+Map\+Type}\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_manager_global_abee7afe21ca1987b873dbfdc3ac2fbfb}
+Connection element map\+: a map of strings that defines a connection key=(connection id), value=(an instance of Connection) When a local component manager requests estbalishing a connection, an element is created and added. If a connection is not established before timeout, the element is removed. When a local component manager notifies that a connection is successfully established, the element is marked as connected. \hypertarget{classmts_manager_global_a9df2055466c1e6a041ae3abc266fe507}{}\index{mts\+Manager\+Global@{mts\+Manager\+Global}!Disconnected\+Process\+Cleanup\+Map\+Type@{Disconnected\+Process\+Cleanup\+Map\+Type}}
+\index{Disconnected\+Process\+Cleanup\+Map\+Type@{Disconnected\+Process\+Cleanup\+Map\+Type}!mts\+Manager\+Global@{mts\+Manager\+Global}}
+\subsubsection[{Disconnected\+Process\+Cleanup\+Map\+Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf cmn\+Named\+Map}$<${\bf Cleanup\+Element\+List\+Type}$>$ {\bf mts\+Manager\+Global\+::\+Disconnected\+Process\+Cleanup\+Map\+Type}\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_manager_global_a9df2055466c1e6a041ae3abc266fe507}
+\hypertarget{classmts_manager_global_a2513c197a42becaff9d23272f4a7be4b}{}\index{mts\+Manager\+Global@{mts\+Manager\+Global}!Disconnect\+Queue\+Type@{Disconnect\+Queue\+Type}}
+\index{Disconnect\+Queue\+Type@{Disconnect\+Queue\+Type}!mts\+Manager\+Global@{mts\+Manager\+Global}}
+\subsubsection[{Disconnect\+Queue\+Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::map$<${\bf Connection\+I\+D\+Type}, {\bf Connection\+I\+D\+Type}$>$ {\bf mts\+Manager\+Global\+::\+Disconnect\+Queue\+Type}\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_manager_global_a2513c197a42becaff9d23272f4a7be4b}
+Queues, mutexes, and internal thread for thread-\/safe disconnection \hypertarget{classmts_manager_global_a3449158e2432ced5a21d4853a2ca59b6}{}\index{mts\+Manager\+Global@{mts\+Manager\+Global}!Interface\+Map\+Element\+Type@{Interface\+Map\+Element\+Type}}
+\index{Interface\+Map\+Element\+Type@{Interface\+Map\+Element\+Type}!mts\+Manager\+Global@{mts\+Manager\+Global}}
+\subsubsection[{Interface\+Map\+Element\+Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf cmn\+Named\+Map}$<${\bf Connection\+I\+D\+List\+Type}$>$ {\bf mts\+Manager\+Global\+::\+Interface\+Map\+Element\+Type}\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_manager_global_a3449158e2432ced5a21d4853a2ca59b6}
+Typedef for interface map element\+: key=(interface name), value=(connection id list type) \hypertarget{classmts_manager_global_ab0257cb91cc9d4c59cf85706f65da9f1}{}\index{mts\+Manager\+Global@{mts\+Manager\+Global}!Process\+Map\+Type@{Process\+Map\+Type}}
+\index{Process\+Map\+Type@{Process\+Map\+Type}!mts\+Manager\+Global@{mts\+Manager\+Global}}
+\subsubsection[{Process\+Map\+Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf cmn\+Named\+Map}$<${\bf Component\+Map\+Type}$>$ {\bf mts\+Manager\+Global\+::\+Process\+Map\+Type}\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_manager_global_ab0257cb91cc9d4c59cf85706f65da9f1}
+Process map\+: a map of registered processes (i.\+e., local component managers) key=(process name), value=(component map) value can be null if a process does not have any component. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmts_manager_global_abd0f3829c71d3e3c1f29fc048d9047be}{}\index{mts\+Manager\+Global@{mts\+Manager\+Global}!mts\+Manager\+Global@{mts\+Manager\+Global}}
+\index{mts\+Manager\+Global@{mts\+Manager\+Global}!mts\+Manager\+Global@{mts\+Manager\+Global}}
+\subsubsection[{mts\+Manager\+Global}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Manager\+Global\+::mts\+Manager\+Global (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classmts_manager_global_abd0f3829c71d3e3c1f29fc048d9047be}
+Constructor and destructor \hypertarget{classmts_manager_global_ac679e410e25ca54006e4893cb4feb9b5}{}\index{mts\+Manager\+Global@{mts\+Manager\+Global}!````~mts\+Manager\+Global@{$\sim$mts\+Manager\+Global}}
+\index{````~mts\+Manager\+Global@{$\sim$mts\+Manager\+Global}!mts\+Manager\+Global@{mts\+Manager\+Global}}
+\subsubsection[{$\sim$mts\+Manager\+Global}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Manager\+Global\+::$\sim$mts\+Manager\+Global (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classmts_manager_global_ac679e410e25ca54006e4893cb4feb9b5}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classmts_manager_global_a7ea69577859e7ee2790adb4bc69c589c}{}\index{mts\+Manager\+Global@{mts\+Manager\+Global}!Add\+Component@{Add\+Component}}
+\index{Add\+Component@{Add\+Component}!mts\+Manager\+Global@{mts\+Manager\+Global}}
+\subsubsection[{Add\+Component}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Manager\+Global\+::\+Add\+Component (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{process\+Name, }
+\item[{const std\+::string \&}]{component\+Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_manager_global_a7ea69577859e7ee2790adb4bc69c589c}
+
+
+Register component. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em process\+Name} & Name of process \\
+\hline
+{\em component\+Name} & Name of component \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classmts_manager_global_interface_a2f31e91de48706864619b22bf3aeb227}{mts\+Manager\+Global\+Interface}.
+
+\hypertarget{classmts_manager_global_ababac733270efb19c7aaecbe2334c96a}{}\index{mts\+Manager\+Global@{mts\+Manager\+Global}!Add\+Connection\+To\+Interface\+Provided\+Or\+Output@{Add\+Connection\+To\+Interface\+Provided\+Or\+Output}}
+\index{Add\+Connection\+To\+Interface\+Provided\+Or\+Output@{Add\+Connection\+To\+Interface\+Provided\+Or\+Output}!mts\+Manager\+Global@{mts\+Manager\+Global}}
+\subsubsection[{Add\+Connection\+To\+Interface\+Provided\+Or\+Output}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Manager\+Global\+::\+Add\+Connection\+To\+Interface\+Provided\+Or\+Output (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{server\+Process\+Name, }
+\item[{const std\+::string \&}]{server\+Component\+Name, }
+\item[{const std\+::string \&}]{interface\+Name, }
+\item[{const {\bf Connection\+I\+D\+Type}}]{connection\+I\+D}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_manager_global_ababac733270efb19c7aaecbe2334c96a}
+Add new connection id to specified interface \hypertarget{classmts_manager_global_abbcbd4b173b16bb526bd6ac3381aa91b}{}\index{mts\+Manager\+Global@{mts\+Manager\+Global}!Add\+Connection\+To\+Interface\+Required\+Or\+Input@{Add\+Connection\+To\+Interface\+Required\+Or\+Input}}
+\index{Add\+Connection\+To\+Interface\+Required\+Or\+Input@{Add\+Connection\+To\+Interface\+Required\+Or\+Input}!mts\+Manager\+Global@{mts\+Manager\+Global}}
+\subsubsection[{Add\+Connection\+To\+Interface\+Required\+Or\+Input}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Manager\+Global\+::\+Add\+Connection\+To\+Interface\+Required\+Or\+Input (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{client\+Process\+Name, }
+\item[{const std\+::string \&}]{client\+Component\+Name, }
+\item[{const std\+::string \&}]{interface\+Name, }
+\item[{const {\bf Connection\+I\+D\+Type}}]{connection\+I\+D}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_manager_global_abbcbd4b173b16bb526bd6ac3381aa91b}
+\hypertarget{classmts_manager_global_a78430c06228bba8577979f6bec9b8301}{}\index{mts\+Manager\+Global@{mts\+Manager\+Global}!Add\+Interface\+Provided\+Or\+Output@{Add\+Interface\+Provided\+Or\+Output}}
+\index{Add\+Interface\+Provided\+Or\+Output@{Add\+Interface\+Provided\+Or\+Output}!mts\+Manager\+Global@{mts\+Manager\+Global}}
+\subsubsection[{Add\+Interface\+Provided\+Or\+Output}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Manager\+Global\+::\+Add\+Interface\+Provided\+Or\+Output (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{process\+Name, }
+\item[{const std\+::string \&}]{component\+Name, }
+\item[{const std\+::string \&}]{interface\+Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_manager_global_a78430c06228bba8577979f6bec9b8301}
+
+
+Register provided interface. Can be called at run-\/time. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em process\+Name} & Name of process \\
+\hline
+{\em component\+Name} & Name of component \\
+\hline
+{\em interface\+Name} & Name of provided interface to be added \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classmts_manager_global_interface_a10365f3c2d04f36170c0551cad2281c5}{mts\+Manager\+Global\+Interface}.
+
+\hypertarget{classmts_manager_global_a26ed00e3c915e50262f13fb21ec4e621}{}\index{mts\+Manager\+Global@{mts\+Manager\+Global}!Add\+Interface\+Required\+Or\+Input@{Add\+Interface\+Required\+Or\+Input}}
+\index{Add\+Interface\+Required\+Or\+Input@{Add\+Interface\+Required\+Or\+Input}!mts\+Manager\+Global@{mts\+Manager\+Global}}
+\subsubsection[{Add\+Interface\+Required\+Or\+Input}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Manager\+Global\+::\+Add\+Interface\+Required\+Or\+Input (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{process\+Name, }
+\item[{const std\+::string \&}]{component\+Name, }
+\item[{const std\+::string \&}]{interface\+Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_manager_global_a26ed00e3c915e50262f13fb21ec4e621}
+
+
+Register required interface. Can be called at run-\/time. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em process\+Name} & Name of process \\
+\hline
+{\em component\+Name} & Name of component \\
+\hline
+{\em interface\+Name} & Name of required interface to be added \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classmts_manager_global_interface_abc65961f2d8d4344a79f40757bbb6e44}{mts\+Manager\+Global\+Interface}.
+
+\hypertarget{classmts_manager_global_ad2133b03d5c9cad83613cfd9f94b33c4}{}\index{mts\+Manager\+Global@{mts\+Manager\+Global}!Add\+Process@{Add\+Process}}
+\index{Add\+Process@{Add\+Process}!mts\+Manager\+Global@{mts\+Manager\+Global}}
+\subsubsection[{Add\+Process}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Manager\+Global\+::\+Add\+Process (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{process\+Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_manager_global_ad2133b03d5c9cad83613cfd9f94b33c4}
+
+
+Register process. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em process\+Name} & Name of process \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classmts_manager_global_interface_aab43e5975da509676e538ccea5a2612f}{mts\+Manager\+Global\+Interface}.
+
+\hypertarget{classmts_manager_global_a16df0096e52ff60e1dadafcde7a75fef}{}\index{mts\+Manager\+Global@{mts\+Manager\+Global}!Add\+Process\+Object@{Add\+Process\+Object}}
+\index{Add\+Process\+Object@{Add\+Process\+Object}!mts\+Manager\+Global@{mts\+Manager\+Global}}
+\subsubsection[{Add\+Process\+Object}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Manager\+Global\+::\+Add\+Process\+Object (
+\begin{DoxyParamCaption}
+\item[{{\bf mts\+Manager\+Local\+Interface} $\ast$}]{local\+Manager\+Object, }
+\item[{const bool}]{is\+Manager\+Proxy\+Server = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\label{classmts_manager_global_a16df0096e52ff60e1dadafcde7a75fef}
+\hypertarget{classmts_manager_global_a0404d7f1f8b8dba08ca0bc305251f851}{}\index{mts\+Manager\+Global@{mts\+Manager\+Global}!Add\+To\+Disconnected\+Process\+Cleanup@{Add\+To\+Disconnected\+Process\+Cleanup}}
+\index{Add\+To\+Disconnected\+Process\+Cleanup@{Add\+To\+Disconnected\+Process\+Cleanup}!mts\+Manager\+Global@{mts\+Manager\+Global}}
+\subsubsection[{Add\+To\+Disconnected\+Process\+Cleanup}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Manager\+Global\+::\+Add\+To\+Disconnected\+Process\+Cleanup (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{source\+Process\+Name, }
+\item[{const std\+::string \&}]{target\+Process\+Name, }
+\item[{const std\+::string \&}]{target\+Component\+Proxy\+Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_manager_global_a0404d7f1f8b8dba08ca0bc305251f851}
+Maintains information to clean up disconnected processes \hypertarget{classmts_manager_global_a9835ba6dae5a052c997cf5efedd10adc}{}\index{mts\+Manager\+Global@{mts\+Manager\+Global}!Check\+Connect\+Confirm\+Timeout@{Check\+Connect\+Confirm\+Timeout}}
+\index{Check\+Connect\+Confirm\+Timeout@{Check\+Connect\+Confirm\+Timeout}!mts\+Manager\+Global@{mts\+Manager\+Global}}
+\subsubsection[{Check\+Connect\+Confirm\+Timeout}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Manager\+Global\+::\+Check\+Connect\+Confirm\+Timeout (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classmts_manager_global_a9835ba6dae5a052c997cf5efedd10adc}
+Check if there is any pending connection. All new connections should be confirmed by the L\+C\+M within timeout after the G\+C\+M issues a new connection id. Otherwise, the G\+C\+M actively disconnects the pending connection. \hypertarget{classmts_manager_global_a2f527606d2fe5b67bbe7d7323f562e20}{}\index{mts\+Manager\+Global@{mts\+Manager\+Global}!Cleanup@{Cleanup}}
+\index{Cleanup@{Cleanup}!mts\+Manager\+Global@{mts\+Manager\+Global}}
+\subsubsection[{Cleanup}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Manager\+Global\+::\+Cleanup (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_manager_global_a2f527606d2fe5b67bbe7d7323f562e20}
+Reset internal data structures \hypertarget{classmts_manager_global_a115d9b7e7e1b0125977ac0f737484537}{}\index{mts\+Manager\+Global@{mts\+Manager\+Global}!Cleanup\+Disconnected\+Process@{Cleanup\+Disconnected\+Process}}
+\index{Cleanup\+Disconnected\+Process@{Cleanup\+Disconnected\+Process}!mts\+Manager\+Global@{mts\+Manager\+Global}}
+\subsubsection[{Cleanup\+Disconnected\+Process}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Manager\+Global\+::\+Cleanup\+Disconnected\+Process (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name\+Of\+Process\+Disconnected}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_manager_global_a115d9b7e7e1b0125977ac0f737484537}
+Remove component proxies and internal interfaces (Interface\+Component\+Required\+For\+X\+X\+X) that were created because of the disconnected process \hypertarget{classmts_manager_global_a69bc5cdc48aec855dadf46468312d7af}{}\index{mts\+Manager\+Global@{mts\+Manager\+Global}!Connect@{Connect}}
+\index{Connect@{Connect}!mts\+Manager\+Global@{mts\+Manager\+Global}}
+\subsubsection[{Connect}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Connection\+I\+D\+Type} mts\+Manager\+Global\+::\+Connect (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{request\+Process\+Name, }
+\item[{const std\+::string \&}]{client\+Process\+Name, }
+\item[{const std\+::string \&}]{client\+Component\+Name, }
+\item[{const std\+::string \&}]{client\+Interface\+Required\+Name, }
+\item[{const std\+::string \&}]{server\+Process\+Name, }
+\item[{const std\+::string \&}]{server\+Component\+Name, }
+\item[{const std\+::string \&}]{server\+Interface\+Provided\+Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_manager_global_a69bc5cdc48aec855dadf46468312d7af}
+
+
+Connect two interfaces. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em request\+Process\+Name} & Name of process that requests this connection \\
+\hline
+{\em client\+Process\+Name} & Name of client process \\
+\hline
+{\em client\+Component\+Name} & Name of client component \\
+\hline
+{\em client\+Interface\+Required\+Name} & Name of client\textquotesingle{}s required interface \\
+\hline
+{\em server\+Process\+Name} & Name of server process \\
+\hline
+{\em server\+Component\+Name} & Name of server component \\
+\hline
+{\em server\+Interface\+Provided\+Name} & Name of server\textquotesingle{}s provided interface \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Connect session id issued by the global component manager. Session id is used to clean up pending connections (which was requested but not yet established) after timeout. -\/1 if error occurs, zero or positive value if success 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classmts_manager_global_interface_abdbf8e5366fd04e2e4cd6cac2328854c}{mts\+Manager\+Global\+Interface}.
+
+\hypertarget{classmts_manager_global_a2fdffc2fa545afe88283def2ea1d7c63}{}\index{mts\+Manager\+Global@{mts\+Manager\+Global}!Connect\+Confirm@{Connect\+Confirm}}
+\index{Connect\+Confirm@{Connect\+Confirm}!mts\+Manager\+Global@{mts\+Manager\+Global}}
+\subsubsection[{Connect\+Confirm}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Manager\+Global\+::\+Connect\+Confirm (
+\begin{DoxyParamCaption}
+\item[{const {\bf Connection\+I\+D\+Type}}]{connection\+I\+D}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_manager_global_a2fdffc2fa545afe88283def2ea1d7c63}
+
+
+Confirm that connection has been successfully established. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em connection\+I\+D} & Connection id \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+False if connection id is invalid, true otherwise 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classmts_manager_global_interface_a23e374c9329421f7e7e8989c5d19dee1}{mts\+Manager\+Global\+Interface}.
+
+\hypertarget{classmts_manager_global_acf0a8009a35013ec30c1fddda725eb20}{}\index{mts\+Manager\+Global@{mts\+Manager\+Global}!Connect\+Server\+Side\+Interface\+Request@{Connect\+Server\+Side\+Interface\+Request}}
+\index{Connect\+Server\+Side\+Interface\+Request@{Connect\+Server\+Side\+Interface\+Request}!mts\+Manager\+Global@{mts\+Manager\+Global}}
+\subsubsection[{Connect\+Server\+Side\+Interface\+Request}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Manager\+Global\+::\+Connect\+Server\+Side\+Interface\+Request (
+\begin{DoxyParamCaption}
+\item[{const {\bf Connection\+I\+D\+Type}}]{connection\+I\+D}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_manager_global_acf0a8009a35013ec30c1fddda725eb20}
+
+
+Request the global component manager to connect interfaces at server side. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em connection\+I\+D} & Connection id issued by G\+C\+M \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if success, false otherwise 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classmts_manager_global_interface_a997fe786b674ece0eaf077040f170e08}{mts\+Manager\+Global\+Interface}.
+
+\hypertarget{classmts_manager_global_a76821bdfa173c602a1e2822abbd30207}{}\index{mts\+Manager\+Global@{mts\+Manager\+Global}!Disconnect@{Disconnect}}
+\index{Disconnect@{Disconnect}!mts\+Manager\+Global@{mts\+Manager\+Global}}
+\subsubsection[{Disconnect}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Manager\+Global\+::\+Disconnect (
+\begin{DoxyParamCaption}
+\item[{const {\bf Connection\+I\+D\+Type}}]{connection\+I\+D}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_manager_global_a76821bdfa173c602a1e2822abbd30207}
+
+
+Disconnect two interfaces. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em connection\+I\+D} & Connection id \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if disconnection request for connection id is accepted, false otherwise 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classmts_manager_global_interface_a343048a7887e629f95b340ba0e821d6f}{mts\+Manager\+Global\+Interface}.
+
+\hypertarget{classmts_manager_global_a8f1aacccac9488a3ec0aeb4ecc547c7c}{}\index{mts\+Manager\+Global@{mts\+Manager\+Global}!Disconnect@{Disconnect}}
+\index{Disconnect@{Disconnect}!mts\+Manager\+Global@{mts\+Manager\+Global}}
+\subsubsection[{Disconnect}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Manager\+Global\+::\+Disconnect (
+\begin{DoxyParamCaption}
+\item[{const mts\+Description\+Connection \&}]{connection}
+\end{DoxyParamCaption}
+)}\label{classmts_manager_global_a8f1aacccac9488a3ec0aeb4ecc547c7c}
+\hypertarget{classmts_manager_global_abfa53d9b4051f79c7b413ce1fa2b8cc9}{}\index{mts\+Manager\+Global@{mts\+Manager\+Global}!Disconnect@{Disconnect}}
+\index{Disconnect@{Disconnect}!mts\+Manager\+Global@{mts\+Manager\+Global}}
+\subsubsection[{Disconnect}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Manager\+Global\+::\+Disconnect (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{client\+Process\+Name, }
+\item[{const std\+::string \&}]{client\+Component\+Name, }
+\item[{const std\+::string \&}]{client\+Interface\+Required\+Name, }
+\item[{const std\+::string \&}]{server\+Process\+Name, }
+\item[{const std\+::string \&}]{server\+Component\+Name, }
+\item[{const std\+::string \&}]{server\+Interface\+Provided\+Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_manager_global_abfa53d9b4051f79c7b413ce1fa2b8cc9}
+
+
+Disconnect two interfaces. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em client\+Process\+Name} & Name of client process \\
+\hline
+{\em client\+Component\+Name} & Name of client component \\
+\hline
+{\em client\+Interface\+Required\+Name} & Name of required interface \\
+\hline
+{\em server\+Process\+Name} & Name of server process \\
+\hline
+{\em server\+Component\+Name} & Name of server component \\
+\hline
+{\em server\+Interface\+Provided\+Name} & Name of provided interface \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if success, false otherwise 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classmts_manager_global_interface_a634c44151f8ef120526bc2be0cc3eb9a}{mts\+Manager\+Global\+Interface}.
+
+\hypertarget{classmts_manager_global_ab3b98061820480cd58a6707adc549bd0}{}\index{mts\+Manager\+Global@{mts\+Manager\+Global}!Disconnect\+Internal@{Disconnect\+Internal}}
+\index{Disconnect\+Internal@{Disconnect\+Internal}!mts\+Manager\+Global@{mts\+Manager\+Global}}
+\subsubsection[{Disconnect\+Internal}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Manager\+Global\+::\+Disconnect\+Internal (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_manager_global_ab3b98061820480cd58a6707adc549bd0}
+Process disconnect waiting queue. This is periodically called by the internal processing thread. The connection id that is disconnected is dequeued from disconnect waiting queue and enqueued to disconnected queue. \hypertarget{classmts_manager_global_a9381aad00498adae5fdf9488b6a749bc}{}\index{mts\+Manager\+Global@{mts\+Manager\+Global}!Find\+Component@{Find\+Component}}
+\index{Find\+Component@{Find\+Component}!mts\+Manager\+Global@{mts\+Manager\+Global}}
+\subsubsection[{Find\+Component}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Manager\+Global\+::\+Find\+Component (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{process\+Name, }
+\item[{const std\+::string \&}]{component\+Name}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_manager_global_a9381aad00498adae5fdf9488b6a749bc}
+
+
+Find component using process name and component name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em process\+Name} & Name of process \\
+\hline
+{\em component\+Name} & Name of component \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classmts_manager_global_interface_a9f839e7759c4cea8e013af38ffcb4708}{mts\+Manager\+Global\+Interface}.
+
+\hypertarget{classmts_manager_global_a117115d1bdee6acb13a307eb88e48e46}{}\index{mts\+Manager\+Global@{mts\+Manager\+Global}!Find\+Interface\+Provided\+Or\+Output@{Find\+Interface\+Provided\+Or\+Output}}
+\index{Find\+Interface\+Provided\+Or\+Output@{Find\+Interface\+Provided\+Or\+Output}!mts\+Manager\+Global@{mts\+Manager\+Global}}
+\subsubsection[{Find\+Interface\+Provided\+Or\+Output}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Manager\+Global\+::\+Find\+Interface\+Provided\+Or\+Output (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{process\+Name, }
+\item[{const std\+::string \&}]{component\+Name, }
+\item[{const std\+::string \&}]{interface\+Name}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_manager_global_a117115d1bdee6acb13a307eb88e48e46}
+
+
+Find provided interface using process name, component name, and interface name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em process\+Name} & Name of process \\
+\hline
+{\em component\+Name} & Name of component \\
+\hline
+{\em interface\+Name} & Name of provided interface \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classmts_manager_global_interface_aa83816a7945e79c0bc1f52de965d7368}{mts\+Manager\+Global\+Interface}.
+
+\hypertarget{classmts_manager_global_a801480ff0373d7637abc45ce194c3be8}{}\index{mts\+Manager\+Global@{mts\+Manager\+Global}!Find\+Interface\+Required\+Or\+Input@{Find\+Interface\+Required\+Or\+Input}}
+\index{Find\+Interface\+Required\+Or\+Input@{Find\+Interface\+Required\+Or\+Input}!mts\+Manager\+Global@{mts\+Manager\+Global}}
+\subsubsection[{Find\+Interface\+Required\+Or\+Input}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Manager\+Global\+::\+Find\+Interface\+Required\+Or\+Input (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{process\+Name, }
+\item[{const std\+::string \&}]{component\+Name, }
+\item[{const std\+::string \&}]{interface\+Name}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_manager_global_a801480ff0373d7637abc45ce194c3be8}
+
+
+Find required interface using process name, component name, and interface name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em process\+Name} & Name of process \\
+\hline
+{\em component\+Name} & Name of component \\
+\hline
+{\em interface\+Name} & Name of required interface \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classmts_manager_global_interface_a9d8db8039ba51721068466ec815c92ea}{mts\+Manager\+Global\+Interface}.
+
+\hypertarget{classmts_manager_global_a4a62c2854055d41938a6b8e65c0193da}{}\index{mts\+Manager\+Global@{mts\+Manager\+Global}!Find\+Process@{Find\+Process}}
+\index{Find\+Process@{Find\+Process}!mts\+Manager\+Global@{mts\+Manager\+Global}}
+\subsubsection[{Find\+Process}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Manager\+Global\+::\+Find\+Process (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{process\+Name}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_manager_global_a4a62c2854055d41938a6b8e65c0193da}
+
+
+Find process. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em process\+Name} & Name of process \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classmts_manager_global_interface_ad13f404148109b90cd5ba6a886451e1a}{mts\+Manager\+Global\+Interface}.
+
+\hypertarget{classmts_manager_global_acfd4a5bfc428a23c5f0b1ae60bc3b39d}{}\index{mts\+Manager\+Global@{mts\+Manager\+Global}!Get\+Component\+Proxy\+Name@{Get\+Component\+Proxy\+Name}}
+\index{Get\+Component\+Proxy\+Name@{Get\+Component\+Proxy\+Name}!mts\+Manager\+Global@{mts\+Manager\+Global}}
+\subsubsection[{Get\+Component\+Proxy\+Name}]{\setlength{\rightskip}{0pt plus 5cm}static const std\+::string mts\+Manager\+Global\+::\+Get\+Component\+Proxy\+Name (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{process\+Name, }
+\item[{const std\+::string \&}]{component\+Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classmts_manager_global_acfd4a5bfc428a23c5f0b1ae60bc3b39d}
+Generate unique name of a proxy component \hypertarget{classmts_manager_global_a1305debbb9848297d7f8079506c6ad75}{}\index{mts\+Manager\+Global@{mts\+Manager\+Global}!Get\+Connection\+I\+D@{Get\+Connection\+I\+D}}
+\index{Get\+Connection\+I\+D@{Get\+Connection\+I\+D}!mts\+Manager\+Global@{mts\+Manager\+Global}}
+\subsubsection[{Get\+Connection\+I\+D}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Connection\+I\+D\+Type} mts\+Manager\+Global\+::\+Get\+Connection\+I\+D (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{client\+Process\+Name, }
+\item[{const std\+::string \&}]{client\+Component\+Name, }
+\item[{const std\+::string \&}]{interface\+Name}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_manager_global_a1305debbb9848297d7f8079506c6ad75}
+Get connection id that the required interface specified involves in \hypertarget{classmts_manager_global_abd5b0c5b4f749c26628273f6adc92f9c}{}\index{mts\+Manager\+Global@{mts\+Manager\+Global}!Get\+Connection\+Information@{Get\+Connection\+Information}}
+\index{Get\+Connection\+Information@{Get\+Connection\+Information}!mts\+Manager\+Global@{mts\+Manager\+Global}}
+\subsubsection[{Get\+Connection\+Information}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+Connection}$\ast$ mts\+Manager\+Global\+::\+Get\+Connection\+Information (
+\begin{DoxyParamCaption}
+\item[{const {\bf Connection\+I\+D\+Type}}]{connection\+I\+D}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_manager_global_abd5b0c5b4f749c26628273f6adc92f9c}
+Get connection information using connection id \hypertarget{classmts_manager_global_a2ddfed4e74f4dd60bd7994825604b2dd}{}\index{mts\+Manager\+Global@{mts\+Manager\+Global}!Get\+Connections\+Of\+Interface\+Provided\+Or\+Output@{Get\+Connections\+Of\+Interface\+Provided\+Or\+Output}}
+\index{Get\+Connections\+Of\+Interface\+Provided\+Or\+Output@{Get\+Connections\+Of\+Interface\+Provided\+Or\+Output}!mts\+Manager\+Global@{mts\+Manager\+Global}}
+\subsubsection[{Get\+Connections\+Of\+Interface\+Provided\+Or\+Output}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Connection\+I\+D\+List\+Type}$\ast$ mts\+Manager\+Global\+::\+Get\+Connections\+Of\+Interface\+Provided\+Or\+Output (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{server\+Process\+Name, }
+\item[{const std\+::string \&}]{server\+Component\+Name, }
+\item[{const std\+::string \&}]{interface\+Name}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_manager_global_a2ddfed4e74f4dd60bd7994825604b2dd}
+Get connection information about provided interface specified \hypertarget{classmts_manager_global_acdcea160cd8e70e14c692442b4b16849}{}\index{mts\+Manager\+Global@{mts\+Manager\+Global}!Get\+Connections\+Of\+Interface\+Provided\+Or\+Output@{Get\+Connections\+Of\+Interface\+Provided\+Or\+Output}}
+\index{Get\+Connections\+Of\+Interface\+Provided\+Or\+Output@{Get\+Connections\+Of\+Interface\+Provided\+Or\+Output}!mts\+Manager\+Global@{mts\+Manager\+Global}}
+\subsubsection[{Get\+Connections\+Of\+Interface\+Provided\+Or\+Output}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Connection\+I\+D\+List\+Type}$\ast$ mts\+Manager\+Global\+::\+Get\+Connections\+Of\+Interface\+Provided\+Or\+Output (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{server\+Process\+Name, }
+\item[{const std\+::string \&}]{server\+Component\+Name, }
+\item[{const std\+::string \&}]{interface\+Name, }
+\item[{{\bf Interface\+Map\+Type} $\ast$$\ast$}]{interface\+Map}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_manager_global_acdcea160cd8e70e14c692442b4b16849}
+\hypertarget{classmts_manager_global_a5d4b54accc2a9c1e98440966690ef85f}{}\index{mts\+Manager\+Global@{mts\+Manager\+Global}!Get\+Connections\+Of\+Interface\+Required\+Or\+Input@{Get\+Connections\+Of\+Interface\+Required\+Or\+Input}}
+\index{Get\+Connections\+Of\+Interface\+Required\+Or\+Input@{Get\+Connections\+Of\+Interface\+Required\+Or\+Input}!mts\+Manager\+Global@{mts\+Manager\+Global}}
+\subsubsection[{Get\+Connections\+Of\+Interface\+Required\+Or\+Input}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Connection\+I\+D\+List\+Type}$\ast$ mts\+Manager\+Global\+::\+Get\+Connections\+Of\+Interface\+Required\+Or\+Input (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{client\+Process\+Name, }
+\item[{const std\+::string \&}]{client\+Component\+Name, }
+\item[{const std\+::string \&}]{interface\+Name}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_manager_global_a5d4b54accc2a9c1e98440966690ef85f}
+Get connection information about required interface specified \hypertarget{classmts_manager_global_a1e0b2e1ca58062ee8993cccd0ade1cb9}{}\index{mts\+Manager\+Global@{mts\+Manager\+Global}!Get\+Connections\+Of\+Interface\+Required\+Or\+Input@{Get\+Connections\+Of\+Interface\+Required\+Or\+Input}}
+\index{Get\+Connections\+Of\+Interface\+Required\+Or\+Input@{Get\+Connections\+Of\+Interface\+Required\+Or\+Input}!mts\+Manager\+Global@{mts\+Manager\+Global}}
+\subsubsection[{Get\+Connections\+Of\+Interface\+Required\+Or\+Input}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Connection\+I\+D\+List\+Type}$\ast$ mts\+Manager\+Global\+::\+Get\+Connections\+Of\+Interface\+Required\+Or\+Input (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{client\+Process\+Name, }
+\item[{const std\+::string \&}]{client\+Component\+Name, }
+\item[{const std\+::string \&}]{interface\+Name, }
+\item[{{\bf Interface\+Map\+Type} $\ast$$\ast$}]{interface\+Map}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_manager_global_a1e0b2e1ca58062ee8993cccd0ade1cb9}
+\hypertarget{classmts_manager_global_a6ce2a921e276e66e7fa993a209eca493}{}\index{mts\+Manager\+Global@{mts\+Manager\+Global}!Get\+Description\+Of\+Command@{Get\+Description\+Of\+Command}}
+\index{Get\+Description\+Of\+Command@{Get\+Description\+Of\+Command}!mts\+Manager\+Global@{mts\+Manager\+Global}}
+\subsubsection[{Get\+Description\+Of\+Command}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Manager\+Global\+::\+Get\+Description\+Of\+Command (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{process\+Name, }
+\item[{const std\+::string \&}]{component\+Name, }
+\item[{const std\+::string \&}]{provided\+Interface\+Name, }
+\item[{const std\+::string \&}]{command\+Name, }
+\item[{std\+::string \&}]{description}
+\end{DoxyParamCaption}
+) const}\label{classmts_manager_global_a6ce2a921e276e66e7fa993a209eca493}
+Get description of a command in a provided interface \hypertarget{classmts_manager_global_a940ee93980abe9f06c3bff805c5b638a}{}\index{mts\+Manager\+Global@{mts\+Manager\+Global}!Get\+Description\+Of\+Event\+Generator@{Get\+Description\+Of\+Event\+Generator}}
+\index{Get\+Description\+Of\+Event\+Generator@{Get\+Description\+Of\+Event\+Generator}!mts\+Manager\+Global@{mts\+Manager\+Global}}
+\subsubsection[{Get\+Description\+Of\+Event\+Generator}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Manager\+Global\+::\+Get\+Description\+Of\+Event\+Generator (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{process\+Name, }
+\item[{const std\+::string \&}]{component\+Name, }
+\item[{const std\+::string \&}]{provided\+Interface\+Name, }
+\item[{const std\+::string \&}]{event\+Generator\+Name, }
+\item[{std\+::string \&}]{description}
+\end{DoxyParamCaption}
+) const}\label{classmts_manager_global_a940ee93980abe9f06c3bff805c5b638a}
+Get description of an event generator in a provided interface \hypertarget{classmts_manager_global_a6b01678cac68950588380cc576e8b856}{}\index{mts\+Manager\+Global@{mts\+Manager\+Global}!Get\+Description\+Of\+Event\+Handler@{Get\+Description\+Of\+Event\+Handler}}
+\index{Get\+Description\+Of\+Event\+Handler@{Get\+Description\+Of\+Event\+Handler}!mts\+Manager\+Global@{mts\+Manager\+Global}}
+\subsubsection[{Get\+Description\+Of\+Event\+Handler}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Manager\+Global\+::\+Get\+Description\+Of\+Event\+Handler (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{process\+Name, }
+\item[{const std\+::string \&}]{component\+Name, }
+\item[{const std\+::string \&}]{required\+Interface\+Name, }
+\item[{const std\+::string \&}]{event\+Handler\+Name, }
+\item[{std\+::string \&}]{description}
+\end{DoxyParamCaption}
+) const}\label{classmts_manager_global_a6b01678cac68950588380cc576e8b856}
+Get description of a function in a required interface \hypertarget{classmts_manager_global_ad69f9c7dba89ec7528bf4a1effbaaf92}{}\index{mts\+Manager\+Global@{mts\+Manager\+Global}!Get\+Description\+Of\+Function@{Get\+Description\+Of\+Function}}
+\index{Get\+Description\+Of\+Function@{Get\+Description\+Of\+Function}!mts\+Manager\+Global@{mts\+Manager\+Global}}
+\subsubsection[{Get\+Description\+Of\+Function}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Manager\+Global\+::\+Get\+Description\+Of\+Function (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{process\+Name, }
+\item[{const std\+::string \&}]{component\+Name, }
+\item[{const std\+::string \&}]{required\+Interface\+Name, }
+\item[{const std\+::string \&}]{function\+Name, }
+\item[{std\+::string \&}]{description}
+\end{DoxyParamCaption}
+) const}\label{classmts_manager_global_ad69f9c7dba89ec7528bf4a1effbaaf92}
+Get description of a function in a required interface \hypertarget{classmts_manager_global_a5b746df511febca8caca1482341f1595}{}\index{mts\+Manager\+Global@{mts\+Manager\+Global}!Get\+Interface\+Provided\+Proxy\+Access\+Info@{Get\+Interface\+Provided\+Proxy\+Access\+Info}}
+\index{Get\+Interface\+Provided\+Proxy\+Access\+Info@{Get\+Interface\+Provided\+Proxy\+Access\+Info}!mts\+Manager\+Global@{mts\+Manager\+Global}}
+\subsubsection[{Get\+Interface\+Provided\+Proxy\+Access\+Info}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Manager\+Global\+::\+Get\+Interface\+Provided\+Proxy\+Access\+Info (
+\begin{DoxyParamCaption}
+\item[{const {\bf Connection\+I\+D\+Type}}]{connection\+I\+D, }
+\item[{std\+::string \&}]{endpoint\+Info}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_manager_global_a5b746df511febca8caca1482341f1595}
+Get access information of interface proxy server 
+
+Implements \hyperlink{classmts_manager_global_interface_ade5d23408244c8bbecec7809419676c6}{mts\+Manager\+Global\+Interface}.
+
+\hypertarget{classmts_manager_global_ac56f876d73d6c494aa715d1081c9b720}{}\index{mts\+Manager\+Global@{mts\+Manager\+Global}!Get\+Interface\+Provided\+Proxy\+Access\+Info@{Get\+Interface\+Provided\+Proxy\+Access\+Info}}
+\index{Get\+Interface\+Provided\+Proxy\+Access\+Info@{Get\+Interface\+Provided\+Proxy\+Access\+Info}!mts\+Manager\+Global@{mts\+Manager\+Global}}
+\subsubsection[{Get\+Interface\+Provided\+Proxy\+Access\+Info}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Manager\+Global\+::\+Get\+Interface\+Provided\+Proxy\+Access\+Info (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{client\+Process\+Name, }
+\item[{const std\+::string \&}]{server\+Process\+Name, }
+\item[{const std\+::string \&}]{server\+Component\+Name, }
+\item[{const std\+::string \&}]{server\+Interface\+Provided\+Name, }
+\item[{std\+::string \&}]{endpoint\+Info}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_manager_global_ac56f876d73d6c494aa715d1081c9b720}
+
+
+Get access information of the provided interface proxy. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em client\+Process\+Name} & Name of client process \\
+\hline
+{\em server\+Process\+Name} & Name of server process \\
+\hline
+{\em server\+Component\+Name} & Name of server component \\
+\hline
+{\em server\+Interface\+Provided\+Name} & Name of server provided interface \\
+\hline
+{\em endpoint\+Info} & access information of provided interface proxy \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classmts_manager_global_interface_adf6aff66edd60a4336cf6258f1c4fb29}{mts\+Manager\+Global\+Interface}.
+
+\hypertarget{classmts_manager_global_ac5416bee759e773bb7d4bd9670db8291}{}\index{mts\+Manager\+Global@{mts\+Manager\+Global}!Get\+Interface\+U\+I\+D@{Get\+Interface\+U\+I\+D}}
+\index{Get\+Interface\+U\+I\+D@{Get\+Interface\+U\+I\+D}!mts\+Manager\+Global@{mts\+Manager\+Global}}
+\subsubsection[{Get\+Interface\+U\+I\+D}]{\setlength{\rightskip}{0pt plus 5cm}static const std\+::string mts\+Manager\+Global\+::\+Get\+Interface\+U\+I\+D (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{process\+Name, }
+\item[{const std\+::string \&}]{component\+Name, }
+\item[{const std\+::string \&}]{interface\+Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classmts_manager_global_ac5416bee759e773bb7d4bd9670db8291}
+Generate unique representation of interface as string \hypertarget{classmts_manager_global_a9a61d5f94f5cef7bb85b4184fbb971cd}{}\index{mts\+Manager\+Global@{mts\+Manager\+Global}!Get\+I\+P\+Address@{Get\+I\+P\+Address}}
+\index{Get\+I\+P\+Address@{Get\+I\+P\+Address}!mts\+Manager\+Global@{mts\+Manager\+Global}}
+\subsubsection[{Get\+I\+P\+Address}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$std\+::string$>$ mts\+Manager\+Global\+::\+Get\+I\+P\+Address (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classmts_manager_global_a9a61d5f94f5cef7bb85b4184fbb971cd}
+Return I\+P address of this machine. \hypertarget{classmts_manager_global_aabf5b3d4a303ea79fbd28d85721c7c13}{}\index{mts\+Manager\+Global@{mts\+Manager\+Global}!Get\+I\+P\+Address@{Get\+I\+P\+Address}}
+\index{Get\+I\+P\+Address@{Get\+I\+P\+Address}!mts\+Manager\+Global@{mts\+Manager\+Global}}
+\subsubsection[{Get\+I\+P\+Address}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Manager\+Global\+::\+Get\+I\+P\+Address (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ std\+::string $>$ \&}]{ip\+Addresses}
+\end{DoxyParamCaption}
+) const}\label{classmts_manager_global_aabf5b3d4a303ea79fbd28d85721c7c13}
+\hypertarget{classmts_manager_global_ab53df6ad67125ff7682e5a091287d2ec}{}\index{mts\+Manager\+Global@{mts\+Manager\+Global}!Get\+List\+Of\+Connections@{Get\+List\+Of\+Connections}}
+\index{Get\+List\+Of\+Connections@{Get\+List\+Of\+Connections}!mts\+Manager\+Global@{mts\+Manager\+Global}}
+\subsubsection[{Get\+List\+Of\+Connections}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Manager\+Global\+::\+Get\+List\+Of\+Connections (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ mts\+Description\+Connection $>$ \&}]{list}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_manager_global_ab53df6ad67125ff7682e5a091287d2ec}
+Get a list of all active connections represented by a set of strings 
+
+Implements \hyperlink{classmts_manager_global_interface_a95665a4a3b83ac9ca2e0e883832f657c}{mts\+Manager\+Global\+Interface}.
+
+\hypertarget{classmts_manager_global_acd6653c4d0c6e49d7cbc890293d596e5}{}\index{mts\+Manager\+Global@{mts\+Manager\+Global}!Get\+Name@{Get\+Name}}
+\index{Get\+Name@{Get\+Name}!mts\+Manager\+Global@{mts\+Manager\+Global}}
+\subsubsection[{Get\+Name}]{\setlength{\rightskip}{0pt plus 5cm}static std\+::string mts\+Manager\+Global\+::\+Get\+Name (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classmts_manager_global_acd6653c4d0c6e49d7cbc890293d596e5}
+Return the name of the global component manager (for mts\+Proxy\+Base\+Common.\+h) \hypertarget{classmts_manager_global_a7d089967d11aa6e1b3786ea834b43fc5}{}\index{mts\+Manager\+Global@{mts\+Manager\+Global}!Get\+Names\+Of\+Commands@{Get\+Names\+Of\+Commands}}
+\index{Get\+Names\+Of\+Commands@{Get\+Names\+Of\+Commands}!mts\+Manager\+Global@{mts\+Manager\+Global}}
+\subsubsection[{Get\+Names\+Of\+Commands}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Manager\+Global\+::\+Get\+Names\+Of\+Commands (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{process\+Name, }
+\item[{const std\+::string \&}]{component\+Name, }
+\item[{const std\+::string \&}]{provided\+Interface\+Name, }
+\item[{std\+::vector$<$ std\+::string $>$ \&}]{names\+Of\+Commands}
+\end{DoxyParamCaption}
+) const}\label{classmts_manager_global_a7d089967d11aa6e1b3786ea834b43fc5}
+Get names of all commands in a provided interface \hypertarget{classmts_manager_global_a5235e3495d9963069ed7ca53de040a31}{}\index{mts\+Manager\+Global@{mts\+Manager\+Global}!Get\+Names\+Of\+Components@{Get\+Names\+Of\+Components}}
+\index{Get\+Names\+Of\+Components@{Get\+Names\+Of\+Components}!mts\+Manager\+Global@{mts\+Manager\+Global}}
+\subsubsection[{Get\+Names\+Of\+Components}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Manager\+Global\+::\+Get\+Names\+Of\+Components (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{process\+Name, }
+\item[{std\+::vector$<$ std\+::string $>$ \&}]{names\+Of\+Components}
+\end{DoxyParamCaption}
+) const}\label{classmts_manager_global_a5235e3495d9963069ed7ca53de040a31}
+Get names of all components in a process \hypertarget{classmts_manager_global_a0cd6e7c9a0c3fdbbfdacdbdd03119a4b}{}\index{mts\+Manager\+Global@{mts\+Manager\+Global}!Get\+Names\+Of\+Event\+Generators@{Get\+Names\+Of\+Event\+Generators}}
+\index{Get\+Names\+Of\+Event\+Generators@{Get\+Names\+Of\+Event\+Generators}!mts\+Manager\+Global@{mts\+Manager\+Global}}
+\subsubsection[{Get\+Names\+Of\+Event\+Generators}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Manager\+Global\+::\+Get\+Names\+Of\+Event\+Generators (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{process\+Name, }
+\item[{const std\+::string \&}]{component\+Name, }
+\item[{const std\+::string \&}]{provided\+Interface\+Name, }
+\item[{std\+::vector$<$ std\+::string $>$ \&}]{names\+Of\+Event\+Generators}
+\end{DoxyParamCaption}
+) const}\label{classmts_manager_global_a0cd6e7c9a0c3fdbbfdacdbdd03119a4b}
+Get names of all event generators in a provided interface \hypertarget{classmts_manager_global_a2d0ce773b7d8d71f775bec15ce5d9f1b}{}\index{mts\+Manager\+Global@{mts\+Manager\+Global}!Get\+Names\+Of\+Event\+Handlers@{Get\+Names\+Of\+Event\+Handlers}}
+\index{Get\+Names\+Of\+Event\+Handlers@{Get\+Names\+Of\+Event\+Handlers}!mts\+Manager\+Global@{mts\+Manager\+Global}}
+\subsubsection[{Get\+Names\+Of\+Event\+Handlers}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Manager\+Global\+::\+Get\+Names\+Of\+Event\+Handlers (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{process\+Name, }
+\item[{const std\+::string \&}]{component\+Name, }
+\item[{const std\+::string \&}]{required\+Interface\+Name, }
+\item[{std\+::vector$<$ std\+::string $>$ \&}]{names\+Of\+Event\+Handlers}
+\end{DoxyParamCaption}
+) const}\label{classmts_manager_global_a2d0ce773b7d8d71f775bec15ce5d9f1b}
+Get names of all event handlers in a required interface \hypertarget{classmts_manager_global_ab8c6e3da89e4e76a3bdb29097e5d0a78}{}\index{mts\+Manager\+Global@{mts\+Manager\+Global}!Get\+Names\+Of\+Functions@{Get\+Names\+Of\+Functions}}
+\index{Get\+Names\+Of\+Functions@{Get\+Names\+Of\+Functions}!mts\+Manager\+Global@{mts\+Manager\+Global}}
+\subsubsection[{Get\+Names\+Of\+Functions}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Manager\+Global\+::\+Get\+Names\+Of\+Functions (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{process\+Name, }
+\item[{const std\+::string \&}]{component\+Name, }
+\item[{const std\+::string \&}]{required\+Interface\+Name, }
+\item[{std\+::vector$<$ std\+::string $>$ \&}]{names\+Of\+Functions}
+\end{DoxyParamCaption}
+) const}\label{classmts_manager_global_ab8c6e3da89e4e76a3bdb29097e5d0a78}
+Get names of all functions in a required interface \hypertarget{classmts_manager_global_a612adaf5ac9b1392b1ff467dcaa2f8b3}{}\index{mts\+Manager\+Global@{mts\+Manager\+Global}!Get\+Names\+Of\+Interfaces\+Provided\+Or\+Output@{Get\+Names\+Of\+Interfaces\+Provided\+Or\+Output}}
+\index{Get\+Names\+Of\+Interfaces\+Provided\+Or\+Output@{Get\+Names\+Of\+Interfaces\+Provided\+Or\+Output}!mts\+Manager\+Global@{mts\+Manager\+Global}}
+\subsubsection[{Get\+Names\+Of\+Interfaces\+Provided\+Or\+Output}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Manager\+Global\+::\+Get\+Names\+Of\+Interfaces\+Provided\+Or\+Output (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{process\+Name, }
+\item[{const std\+::string \&}]{component\+Name, }
+\item[{std\+::vector$<$ std\+::string $>$ \&}]{names\+Of\+Interfaces\+Provided}
+\end{DoxyParamCaption}
+) const}\label{classmts_manager_global_a612adaf5ac9b1392b1ff467dcaa2f8b3}
+Get names of all provided interfaces in a component \hypertarget{classmts_manager_global_af83cc964e33db5d3b241239d922d8a82}{}\index{mts\+Manager\+Global@{mts\+Manager\+Global}!Get\+Names\+Of\+Interfaces\+Required\+Or\+Input@{Get\+Names\+Of\+Interfaces\+Required\+Or\+Input}}
+\index{Get\+Names\+Of\+Interfaces\+Required\+Or\+Input@{Get\+Names\+Of\+Interfaces\+Required\+Or\+Input}!mts\+Manager\+Global@{mts\+Manager\+Global}}
+\subsubsection[{Get\+Names\+Of\+Interfaces\+Required\+Or\+Input}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Manager\+Global\+::\+Get\+Names\+Of\+Interfaces\+Required\+Or\+Input (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{process\+Name, }
+\item[{const std\+::string \&}]{component\+Name, }
+\item[{std\+::vector$<$ std\+::string $>$ \&}]{names\+Of\+Interfaces\+Required}
+\end{DoxyParamCaption}
+) const}\label{classmts_manager_global_af83cc964e33db5d3b241239d922d8a82}
+Get names of all required interfaces in a component \hypertarget{classmts_manager_global_a79ff98c39ee4b67c0ae7d00c4381f18a}{}\index{mts\+Manager\+Global@{mts\+Manager\+Global}!Get\+Names\+Of\+Processes@{Get\+Names\+Of\+Processes}}
+\index{Get\+Names\+Of\+Processes@{Get\+Names\+Of\+Processes}!mts\+Manager\+Global@{mts\+Manager\+Global}}
+\subsubsection[{Get\+Names\+Of\+Processes}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Manager\+Global\+::\+Get\+Names\+Of\+Processes (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ std\+::string $>$ \&}]{names\+Of\+Processes}
+\end{DoxyParamCaption}
+) const}\label{classmts_manager_global_a79ff98c39ee4b67c0ae7d00c4381f18a}
+Get names of all processes \hypertarget{classmts_manager_global_a0e3e1f31090dfa4288608b611bd5c723}{}\index{mts\+Manager\+Global@{mts\+Manager\+Global}!Get\+Number\+Of\+Interfaces@{Get\+Number\+Of\+Interfaces}}
+\index{Get\+Number\+Of\+Interfaces@{Get\+Number\+Of\+Interfaces}!mts\+Manager\+Global@{mts\+Manager\+Global}}
+\subsubsection[{Get\+Number\+Of\+Interfaces}]{\setlength{\rightskip}{0pt plus 5cm}int mts\+Manager\+Global\+::\+Get\+Number\+Of\+Interfaces (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{process\+Name, }
+\item[{const std\+::string \&}]{component\+Name, }
+\item[{const bool}]{include\+Internal\+Interface = {\ttfamily true}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_manager_global_a0e3e1f31090dfa4288608b611bd5c723}
+Get total number of interfaces a component manages \hypertarget{classmts_manager_global_a345d1abcd9982e1ddf1c0dbb1e9a26c3}{}\index{mts\+Manager\+Global@{mts\+Manager\+Global}!Get\+Process\+Object@{Get\+Process\+Object}}
+\index{Get\+Process\+Object@{Get\+Process\+Object}!mts\+Manager\+Global@{mts\+Manager\+Global}}
+\subsubsection[{Get\+Process\+Object}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+Manager\+Local\+Interface}$\ast$ mts\+Manager\+Global\+::\+Get\+Process\+Object (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{process\+Name}
+\end{DoxyParamCaption}
+) const}\label{classmts_manager_global_a345d1abcd9982e1ddf1c0dbb1e9a26c3}
+Get a process object (local component manager object) \hypertarget{classmts_manager_global_a395aea7f5f6c28d676bd9f2d05b72ff6}{}\index{mts\+Manager\+Global@{mts\+Manager\+Global}!Initiate\+Connect@{Initiate\+Connect}}
+\index{Initiate\+Connect@{Initiate\+Connect}!mts\+Manager\+Global@{mts\+Manager\+Global}}
+\subsubsection[{Initiate\+Connect}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Manager\+Global\+::\+Initiate\+Connect (
+\begin{DoxyParamCaption}
+\item[{const {\bf Connection\+I\+D\+Type}}]{connection\+I\+D}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_manager_global_a395aea7f5f6c28d676bd9f2d05b72ff6}
+
+
+Initiate connection process. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em connection\+I\+D} & Connection id issued by G\+C\+M\textquotesingle{}s \hyperlink{classmts_manager_global_a69bc5cdc48aec855dadf46468312d7af}{Connect()}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if success, false otherwise 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Let a client process initiate connection process. When mts\+Local\+Manager\+::\+Connect() is called at the server side, the server process internally calls this method to let the client process initiate connection process. 
+\end{DoxyNote}
+
+
+Implements \hyperlink{classmts_manager_global_interface_aa9e2d02acd143d1a3ec7b7cc50c394ef}{mts\+Manager\+Global\+Interface}.
+
+\hypertarget{classmts_manager_global_ab6db0d6f1e9d0717199bdbfdce5141e5}{}\index{mts\+Manager\+Global@{mts\+Manager\+Global}!Is\+Already\+Connected@{Is\+Already\+Connected}}
+\index{Is\+Already\+Connected@{Is\+Already\+Connected}!mts\+Manager\+Global@{mts\+Manager\+Global}}
+\subsubsection[{Is\+Already\+Connected}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Manager\+Global\+::\+Is\+Already\+Connected (
+\begin{DoxyParamCaption}
+\item[{const mts\+Description\+Connection \&}]{description}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_manager_global_ab6db0d6f1e9d0717199bdbfdce5141e5}
+Check if two interfaces are connected \hypertarget{classmts_manager_global_a06739ca78771998b588fa3c3e686edff}{}\index{mts\+Manager\+Global@{mts\+Manager\+Global}!Is\+Proxy\+Component@{Is\+Proxy\+Component}}
+\index{Is\+Proxy\+Component@{Is\+Proxy\+Component}!mts\+Manager\+Global@{mts\+Manager\+Global}}
+\subsubsection[{Is\+Proxy\+Component}]{\setlength{\rightskip}{0pt plus 5cm}static bool mts\+Manager\+Global\+::\+Is\+Proxy\+Component (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{component\+Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classmts_manager_global_a06739ca78771998b588fa3c3e686edff}
+Check if component is proxy based on its name \hypertarget{classmts_manager_global_ad54d697f17391d0bd203ec66f33ef47c}{}\index{mts\+Manager\+Global@{mts\+Manager\+Global}!Remove\+Component@{Remove\+Component}}
+\index{Remove\+Component@{Remove\+Component}!mts\+Manager\+Global@{mts\+Manager\+Global}}
+\subsubsection[{Remove\+Component}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Manager\+Global\+::\+Remove\+Component (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{process\+Name, }
+\item[{const std\+::string \&}]{component\+Name, }
+\item[{const bool}]{lock = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_manager_global_ad54d697f17391d0bd203ec66f33ef47c}
+
+
+Remove component. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em process\+Name} & Name of process \\
+\hline
+{\em component\+Name} & Name of component \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classmts_manager_global_interface_a21dd4efb05af38dc6a47fd9d57382ecb}{mts\+Manager\+Global\+Interface}.
+
+\hypertarget{classmts_manager_global_a81e63fe6a44457f8e867dfeb85a3247d}{}\index{mts\+Manager\+Global@{mts\+Manager\+Global}!Remove\+Connection\+Of\+Interface\+Provided\+Or\+Output@{Remove\+Connection\+Of\+Interface\+Provided\+Or\+Output}}
+\index{Remove\+Connection\+Of\+Interface\+Provided\+Or\+Output@{Remove\+Connection\+Of\+Interface\+Provided\+Or\+Output}!mts\+Manager\+Global@{mts\+Manager\+Global}}
+\subsubsection[{Remove\+Connection\+Of\+Interface\+Provided\+Or\+Output}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Manager\+Global\+::\+Remove\+Connection\+Of\+Interface\+Provided\+Or\+Output (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{server\+Process\+Name, }
+\item[{const std\+::string \&}]{server\+Component\+Name, }
+\item[{const std\+::string \&}]{interface\+Name, }
+\item[{const {\bf Connection\+I\+D\+Type}}]{connection\+I\+D}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_manager_global_a81e63fe6a44457f8e867dfeb85a3247d}
+Remove connection id from specified interface \hypertarget{classmts_manager_global_acaa9d8d96ff161094790ccfa9e6e3336}{}\index{mts\+Manager\+Global@{mts\+Manager\+Global}!Remove\+Connection\+Of\+Interface\+Required\+Or\+Input@{Remove\+Connection\+Of\+Interface\+Required\+Or\+Input}}
+\index{Remove\+Connection\+Of\+Interface\+Required\+Or\+Input@{Remove\+Connection\+Of\+Interface\+Required\+Or\+Input}!mts\+Manager\+Global@{mts\+Manager\+Global}}
+\subsubsection[{Remove\+Connection\+Of\+Interface\+Required\+Or\+Input}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Manager\+Global\+::\+Remove\+Connection\+Of\+Interface\+Required\+Or\+Input (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{client\+Process\+Name, }
+\item[{const std\+::string \&}]{client\+Component\+Name, }
+\item[{const std\+::string \&}]{interface\+Name, }
+\item[{const {\bf Connection\+I\+D\+Type}}]{connection\+I\+D}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_manager_global_acaa9d8d96ff161094790ccfa9e6e3336}
+\hypertarget{classmts_manager_global_ad997f307343ff4fb5533d2c6ba57596f}{}\index{mts\+Manager\+Global@{mts\+Manager\+Global}!Remove\+Interface\+Provided\+Or\+Output@{Remove\+Interface\+Provided\+Or\+Output}}
+\index{Remove\+Interface\+Provided\+Or\+Output@{Remove\+Interface\+Provided\+Or\+Output}!mts\+Manager\+Global@{mts\+Manager\+Global}}
+\subsubsection[{Remove\+Interface\+Provided\+Or\+Output}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Manager\+Global\+::\+Remove\+Interface\+Provided\+Or\+Output (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{process\+Name, }
+\item[{const std\+::string \&}]{component\+Name, }
+\item[{const std\+::string \&}]{interface\+Name, }
+\item[{const bool}]{lock = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_manager_global_ad997f307343ff4fb5533d2c6ba57596f}
+
+
+Remove provided interface. Can be called at run-\/time. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em process\+Name} & Name of process \\
+\hline
+{\em component\+Name} & Name of component \\
+\hline
+{\em interface\+Name} & Name of provided interface to be removed \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classmts_manager_global_interface_afe6b343e84ce4a259d3d6e7df4e750a4}{mts\+Manager\+Global\+Interface}.
+
+\hypertarget{classmts_manager_global_ae6f2ebe45dbea3f0a31b262398fc0907}{}\index{mts\+Manager\+Global@{mts\+Manager\+Global}!Remove\+Interface\+Required\+Or\+Input@{Remove\+Interface\+Required\+Or\+Input}}
+\index{Remove\+Interface\+Required\+Or\+Input@{Remove\+Interface\+Required\+Or\+Input}!mts\+Manager\+Global@{mts\+Manager\+Global}}
+\subsubsection[{Remove\+Interface\+Required\+Or\+Input}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Manager\+Global\+::\+Remove\+Interface\+Required\+Or\+Input (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{process\+Name, }
+\item[{const std\+::string \&}]{component\+Name, }
+\item[{const std\+::string \&}]{interface\+Name, }
+\item[{const bool}]{lock = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_manager_global_ae6f2ebe45dbea3f0a31b262398fc0907}
+
+
+Remove required interface. Can be called at run-\/time. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em process\+Name} & Name of process \\
+\hline
+{\em component\+Name} & Name of component \\
+\hline
+{\em interface\+Name} & Name of required interface to be removed \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classmts_manager_global_interface_a18793858afe244186f252669f7c6014a}{mts\+Manager\+Global\+Interface}.
+
+\hypertarget{classmts_manager_global_aabe689a2366312fb41e4f559241c34f4}{}\index{mts\+Manager\+Global@{mts\+Manager\+Global}!Remove\+Process@{Remove\+Process}}
+\index{Remove\+Process@{Remove\+Process}!mts\+Manager\+Global@{mts\+Manager\+Global}}
+\subsubsection[{Remove\+Process}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Manager\+Global\+::\+Remove\+Process (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{process\+Name, }
+\item[{const bool}]{network\+Disconnect = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_manager_global_aabe689a2366312fb41e4f559241c34f4}
+
+
+Remove process. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em process\+Name} & Name of process \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classmts_manager_global_interface_a7ae020b18faaf5e27e3be93a43341969}{mts\+Manager\+Global\+Interface}.
+
+\hypertarget{classmts_manager_global_a27ab6be87f292f862b05551bf786bcfd}{}\index{mts\+Manager\+Global@{mts\+Manager\+Global}!Set\+Interface\+Provided\+Proxy\+Access\+Info@{Set\+Interface\+Provided\+Proxy\+Access\+Info}}
+\index{Set\+Interface\+Provided\+Proxy\+Access\+Info@{Set\+Interface\+Provided\+Proxy\+Access\+Info}!mts\+Manager\+Global@{mts\+Manager\+Global}}
+\subsubsection[{Set\+Interface\+Provided\+Proxy\+Access\+Info}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Manager\+Global\+::\+Set\+Interface\+Provided\+Proxy\+Access\+Info (
+\begin{DoxyParamCaption}
+\item[{const {\bf Connection\+I\+D\+Type}}]{connection\+I\+D, }
+\item[{const std\+::string \&}]{endpoint\+Info}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_manager_global_a27ab6be87f292f862b05551bf786bcfd}
+Set access information of interface proxy server 
+
+Implements \hyperlink{classmts_manager_global_interface_a40dab0f138d6305055bda1ce2f852f6e}{mts\+Manager\+Global\+Interface}.
+
+\hypertarget{classmts_manager_global_a25180a6b4c13081af290de27cca9dc18}{}\index{mts\+Manager\+Global@{mts\+Manager\+Global}!Set\+M\+C\+S@{Set\+M\+C\+S}}
+\index{Set\+M\+C\+S@{Set\+M\+C\+S}!mts\+Manager\+Global@{mts\+Manager\+Global}}
+\subsubsection[{Set\+M\+C\+S}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Manager\+Global\+::\+Set\+M\+C\+S (
+\begin{DoxyParamCaption}
+\item[{{\bf mts\+Manager\+Component\+Server} $\ast$}]{mcs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_manager_global_a25180a6b4c13081af290de27cca9dc18}
+\hypertarget{classmts_manager_global_af027272981d69071395d21a3e0634418}{}\index{mts\+Manager\+Global@{mts\+Manager\+Global}!Show\+Internal\+Structure@{Show\+Internal\+Structure}}
+\index{Show\+Internal\+Structure@{Show\+Internal\+Structure}!mts\+Manager\+Global@{mts\+Manager\+Global}}
+\subsubsection[{Show\+Internal\+Structure}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Manager\+Global\+::\+Show\+Internal\+Structure (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_manager_global_af027272981d69071395d21a3e0634418}
+Prints out Process\+Map in human readable format \hypertarget{classmts_manager_global_a6e0773b090ddded56d7bdb57ad61658d}{}\index{mts\+Manager\+Global@{mts\+Manager\+Global}!Start\+Server@{Start\+Server}}
+\index{Start\+Server@{Start\+Server}!mts\+Manager\+Global@{mts\+Manager\+Global}}
+\subsubsection[{Start\+Server}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Manager\+Global\+::\+Start\+Server (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classmts_manager_global_a6e0773b090ddded56d7bdb57ad61658d}
+Start network proxy server. The server\textquotesingle{}s listening port number is fetched from config.\+server file (default port\+: 10705) \hypertarget{classmts_manager_global_a815cf7a0880ba63b00bd79a06a564601}{}\index{mts\+Manager\+Global@{mts\+Manager\+Global}!Stop\+Server@{Stop\+Server}}
+\index{Stop\+Server@{Stop\+Server}!mts\+Manager\+Global@{mts\+Manager\+Global}}
+\subsubsection[{Stop\+Server}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Manager\+Global\+::\+Stop\+Server (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classmts_manager_global_a815cf7a0880ba63b00bd79a06a564601}
+Stop network proxy server \hypertarget{classmts_manager_global_a0f668467bf640bdae65ec86dea9d01b8}{}\index{mts\+Manager\+Global@{mts\+Manager\+Global}!Thread\+Disconnect\+Process@{Thread\+Disconnect\+Process}}
+\index{Thread\+Disconnect\+Process@{Thread\+Disconnect\+Process}!mts\+Manager\+Global@{mts\+Manager\+Global}}
+\subsubsection[{Thread\+Disconnect\+Process}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ mts\+Manager\+Global\+::\+Thread\+Disconnect\+Process (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{arg}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_manager_global_a0f668467bf640bdae65ec86dea9d01b8}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classmts_manager_global_aad203c194c05c2d9063ff2face4590be}{}\index{mts\+Manager\+Global@{mts\+Manager\+Global}!mts\+Manager\+Global\+Test@{mts\+Manager\+Global\+Test}}
+\index{mts\+Manager\+Global\+Test@{mts\+Manager\+Global\+Test}!mts\+Manager\+Global@{mts\+Manager\+Global}}
+\subsubsection[{mts\+Manager\+Global\+Test}]{\setlength{\rightskip}{0pt plus 5cm}friend class mts\+Manager\+Global\+Test\hspace{0.3cm}{\ttfamily [friend]}}\label{classmts_manager_global_aad203c194c05c2d9063ff2face4590be}
+\hypertarget{classmts_manager_global_adc2ae8db48d5418c526f275aafa3d4a9}{}\index{mts\+Manager\+Global@{mts\+Manager\+Global}!mts\+Manager\+Local\+Test@{mts\+Manager\+Local\+Test}}
+\index{mts\+Manager\+Local\+Test@{mts\+Manager\+Local\+Test}!mts\+Manager\+Global@{mts\+Manager\+Global}}
+\subsubsection[{mts\+Manager\+Local\+Test}]{\setlength{\rightskip}{0pt plus 5cm}friend class mts\+Manager\+Local\+Test\hspace{0.3cm}{\ttfamily [friend]}}\label{classmts_manager_global_adc2ae8db48d5418c526f275aafa3d4a9}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classmts_manager_global_a925380427292023875478058d5d75842}{}\index{mts\+Manager\+Global@{mts\+Manager\+Global}!Connection\+Change@{Connection\+Change}}
+\index{Connection\+Change@{Connection\+Change}!mts\+Manager\+Global@{mts\+Manager\+Global}}
+\subsubsection[{Connection\+Change}]{\setlength{\rightskip}{0pt plus 5cm}{\bf osa\+Mutex} mts\+Manager\+Global\+::\+Connection\+Change\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_manager_global_a925380427292023875478058d5d75842}
+\hypertarget{classmts_manager_global_a2cbe9ea56007794ec15dd0fbd10ee1a3}{}\index{mts\+Manager\+Global@{mts\+Manager\+Global}!Connection\+I\+D@{Connection\+I\+D}}
+\index{Connection\+I\+D@{Connection\+I\+D}!mts\+Manager\+Global@{mts\+Manager\+Global}}
+\subsubsection[{Connection\+I\+D}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Connection\+I\+D\+Type} mts\+Manager\+Global\+::\+Connection\+I\+D\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_manager_global_a2cbe9ea56007794ec15dd0fbd10ee1a3}
+Counter to issue a new connection I\+D \hypertarget{classmts_manager_global_a9185c8440ca44dfc49b9b8151e8c8d64}{}\index{mts\+Manager\+Global@{mts\+Manager\+Global}!Connection\+Map@{Connection\+Map}}
+\index{Connection\+Map@{Connection\+Map}!mts\+Manager\+Global@{mts\+Manager\+Global}}
+\subsubsection[{Connection\+Map}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Connection\+Map\+Type} mts\+Manager\+Global\+::\+Connection\+Map\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_manager_global_a9185c8440ca44dfc49b9b8151e8c8d64}
+\hypertarget{classmts_manager_global_aea1c953ffed0463e90c176fd4ccf9059}{}\index{mts\+Manager\+Global@{mts\+Manager\+Global}!Connection\+Map\+Change@{Connection\+Map\+Change}}
+\index{Connection\+Map\+Change@{Connection\+Map\+Change}!mts\+Manager\+Global@{mts\+Manager\+Global}}
+\subsubsection[{Connection\+Map\+Change}]{\setlength{\rightskip}{0pt plus 5cm}{\bf osa\+Mutex} mts\+Manager\+Global\+::\+Connection\+Map\+Change\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_manager_global_aea1c953ffed0463e90c176fd4ccf9059}
+\hypertarget{classmts_manager_global_ac3feb6deab8ad8d30b35000c776f4a9e}{}\index{mts\+Manager\+Global@{mts\+Manager\+Global}!Disconnected\+Process\+Cleanup\+Map@{Disconnected\+Process\+Cleanup\+Map}}
+\index{Disconnected\+Process\+Cleanup\+Map@{Disconnected\+Process\+Cleanup\+Map}!mts\+Manager\+Global@{mts\+Manager\+Global}}
+\subsubsection[{Disconnected\+Process\+Cleanup\+Map}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Disconnected\+Process\+Cleanup\+Map\+Type} mts\+Manager\+Global\+::\+Disconnected\+Process\+Cleanup\+Map\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_manager_global_ac3feb6deab8ad8d30b35000c776f4a9e}
+\hypertarget{classmts_manager_global_a91aa784dfa7f9a8ba3cc4f8964840032}{}\index{mts\+Manager\+Global@{mts\+Manager\+Global}!Disconnected\+Process\+Cleanup\+Map\+Change@{Disconnected\+Process\+Cleanup\+Map\+Change}}
+\index{Disconnected\+Process\+Cleanup\+Map\+Change@{Disconnected\+Process\+Cleanup\+Map\+Change}!mts\+Manager\+Global@{mts\+Manager\+Global}}
+\subsubsection[{Disconnected\+Process\+Cleanup\+Map\+Change}]{\setlength{\rightskip}{0pt plus 5cm}{\bf osa\+Mutex} mts\+Manager\+Global\+::\+Disconnected\+Process\+Cleanup\+Map\+Change\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_manager_global_a91aa784dfa7f9a8ba3cc4f8964840032}
+\hypertarget{classmts_manager_global_aedcd7068710cbb38fae05e62b5d57d10}{}\index{mts\+Manager\+Global@{mts\+Manager\+Global}!Local\+Manager@{Local\+Manager}}
+\index{Local\+Manager@{Local\+Manager}!mts\+Manager\+Global@{mts\+Manager\+Global}}
+\subsubsection[{Local\+Manager}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+Manager\+Local}$\ast$ mts\+Manager\+Global\+::\+Local\+Manager\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_manager_global_aedcd7068710cbb38fae05e62b5d57d10}
+Instance of connected local component manager. Note that the global component manager communicates with the only one instance of \hyperlink{classmts_manager_local_interface}{mts\+Manager\+Local\+Interface} regardless of connection type (standalone or network mode)
+
+M\+J\+: (8/20/10) To support a local connection between the global component manager and a local component manager on the same process, this assumption is slightly modified such that the G\+C\+M can have two different types of connection with L\+C\+M -- local and remote. When the G\+C\+M executes commands, it checks if it has a local connection to the L\+C\+M on the same process and, if yes, it sends the command to the local L\+C\+M. If not, it delivers the command to a remote L\+C\+M same as before. \hypertarget{classmts_manager_global_a3d6e45758c38a5b82664675f9f58fcc8}{}\index{mts\+Manager\+Global@{mts\+Manager\+Global}!Local\+Manager\+Connected@{Local\+Manager\+Connected}}
+\index{Local\+Manager\+Connected@{Local\+Manager\+Connected}!mts\+Manager\+Global@{mts\+Manager\+Global}}
+\subsubsection[{Local\+Manager\+Connected}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+Manager\+Local\+Interface}$\ast$ mts\+Manager\+Global\+::\+Local\+Manager\+Connected\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_manager_global_a3d6e45758c38a5b82664675f9f58fcc8}
+\hypertarget{classmts_manager_global_af326d688537352e3106b819adfae11eb}{}\index{mts\+Manager\+Global@{mts\+Manager\+Global}!Manager\+Component\+Server@{Manager\+Component\+Server}}
+\index{Manager\+Component\+Server@{Manager\+Component\+Server}!mts\+Manager\+Global@{mts\+Manager\+Global}}
+\subsubsection[{Manager\+Component\+Server}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+Manager\+Component\+Server}$\ast$ mts\+Manager\+Global\+::\+Manager\+Component\+Server\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_manager_global_af326d688537352e3106b819adfae11eb}
+For dynamic component composition feature \hypertarget{classmts_manager_global_a15ef83ea8929f672214f5ff8fcb9eefa}{}\index{mts\+Manager\+Global@{mts\+Manager\+Global}!Process\+Map@{Process\+Map}}
+\index{Process\+Map@{Process\+Map}!mts\+Manager\+Global@{mts\+Manager\+Global}}
+\subsubsection[{Process\+Map}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Process\+Map\+Type} mts\+Manager\+Global\+::\+Process\+Map\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_manager_global_a15ef83ea8929f672214f5ff8fcb9eefa}
+\hypertarget{classmts_manager_global_abd74e5301aa1eb337fe671e8cc4155b0}{}\index{mts\+Manager\+Global@{mts\+Manager\+Global}!Process\+Map\+Change@{Process\+Map\+Change}}
+\index{Process\+Map\+Change@{Process\+Map\+Change}!mts\+Manager\+Global@{mts\+Manager\+Global}}
+\subsubsection[{Process\+Map\+Change}]{\setlength{\rightskip}{0pt plus 5cm}{\bf osa\+Mutex} mts\+Manager\+Global\+::\+Process\+Map\+Change\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_manager_global_abd74e5301aa1eb337fe671e8cc4155b0}
+Mutex for thread-\/safe processing \hypertarget{classmts_manager_global_af56265a22f5d3f13947f582ff5aa5809}{}\index{mts\+Manager\+Global@{mts\+Manager\+Global}!Proxy\+Server@{Proxy\+Server}}
+\index{Proxy\+Server@{Proxy\+Server}!mts\+Manager\+Global@{mts\+Manager\+Global}}
+\subsubsection[{Proxy\+Server}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Manager\+Proxy\+Server$\ast$ mts\+Manager\+Global\+::\+Proxy\+Server\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_manager_global_af56265a22f5d3f13947f582ff5aa5809}
+Network proxy server \hypertarget{classmts_manager_global_a5dfcf8a628460bfcfa9350e15f8f36de}{}\index{mts\+Manager\+Global@{mts\+Manager\+Global}!Queue\+Disconnected@{Queue\+Disconnected}}
+\index{Queue\+Disconnected@{Queue\+Disconnected}!mts\+Manager\+Global@{mts\+Manager\+Global}}
+\subsubsection[{Queue\+Disconnected}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Disconnect\+Queue\+Type} mts\+Manager\+Global\+::\+Queue\+Disconnected\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_manager_global_a5dfcf8a628460bfcfa9350e15f8f36de}
+\hypertarget{classmts_manager_global_aa4f774cb03c179504e84c3e5a36452b9}{}\index{mts\+Manager\+Global@{mts\+Manager\+Global}!Queue\+Disconnected\+Change@{Queue\+Disconnected\+Change}}
+\index{Queue\+Disconnected\+Change@{Queue\+Disconnected\+Change}!mts\+Manager\+Global@{mts\+Manager\+Global}}
+\subsubsection[{Queue\+Disconnected\+Change}]{\setlength{\rightskip}{0pt plus 5cm}{\bf osa\+Mutex} mts\+Manager\+Global\+::\+Queue\+Disconnected\+Change\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_manager_global_aa4f774cb03c179504e84c3e5a36452b9}
+\hypertarget{classmts_manager_global_aa3294d8f26a6bcd187db348931d788b9}{}\index{mts\+Manager\+Global@{mts\+Manager\+Global}!Queue\+Disconnect\+Waiting@{Queue\+Disconnect\+Waiting}}
+\index{Queue\+Disconnect\+Waiting@{Queue\+Disconnect\+Waiting}!mts\+Manager\+Global@{mts\+Manager\+Global}}
+\subsubsection[{Queue\+Disconnect\+Waiting}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Disconnect\+Queue\+Type} mts\+Manager\+Global\+::\+Queue\+Disconnect\+Waiting\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_manager_global_aa3294d8f26a6bcd187db348931d788b9}
+\hypertarget{classmts_manager_global_a900d74d93bb72e9420cd6094104c4c4e}{}\index{mts\+Manager\+Global@{mts\+Manager\+Global}!Queue\+Disconnect\+Waiting\+Change@{Queue\+Disconnect\+Waiting\+Change}}
+\index{Queue\+Disconnect\+Waiting\+Change@{Queue\+Disconnect\+Waiting\+Change}!mts\+Manager\+Global@{mts\+Manager\+Global}}
+\subsubsection[{Queue\+Disconnect\+Waiting\+Change}]{\setlength{\rightskip}{0pt plus 5cm}{\bf osa\+Mutex} mts\+Manager\+Global\+::\+Queue\+Disconnect\+Waiting\+Change\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_manager_global_a900d74d93bb72e9420cd6094104c4c4e}
+\hypertarget{classmts_manager_global_ac2dfc08c1931e1128145317e2499112f}{}\index{mts\+Manager\+Global@{mts\+Manager\+Global}!Thread\+Disconnect@{Thread\+Disconnect}}
+\index{Thread\+Disconnect@{Thread\+Disconnect}!mts\+Manager\+Global@{mts\+Manager\+Global}}
+\subsubsection[{Thread\+Disconnect}]{\setlength{\rightskip}{0pt plus 5cm}{\bf osa\+Thread} mts\+Manager\+Global\+::\+Thread\+Disconnect\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_manager_global_ac2dfc08c1931e1128145317e2499112f}
+\hypertarget{classmts_manager_global_a97940aadb7eeb7697a4174a929483def}{}\index{mts\+Manager\+Global@{mts\+Manager\+Global}!Thread\+Disconnect\+Finished@{Thread\+Disconnect\+Finished}}
+\index{Thread\+Disconnect\+Finished@{Thread\+Disconnect\+Finished}!mts\+Manager\+Global@{mts\+Manager\+Global}}
+\subsubsection[{Thread\+Disconnect\+Finished}]{\setlength{\rightskip}{0pt plus 5cm}{\bf osa\+Thread\+Signal} mts\+Manager\+Global\+::\+Thread\+Disconnect\+Finished\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_manager_global_a97940aadb7eeb7697a4174a929483def}
+\hypertarget{classmts_manager_global_a37a0b3f81f160ab240bb99924f52bf26}{}\index{mts\+Manager\+Global@{mts\+Manager\+Global}!Thread\+Disconnect\+Running@{Thread\+Disconnect\+Running}}
+\index{Thread\+Disconnect\+Running@{Thread\+Disconnect\+Running}!mts\+Manager\+Global@{mts\+Manager\+Global}}
+\subsubsection[{Thread\+Disconnect\+Running}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Manager\+Global\+::\+Thread\+Disconnect\+Running\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_manager_global_a37a0b3f81f160ab240bb99924f52bf26}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Multi\+Task/\hyperlink{mts_manager_global_8h}{mts\+Manager\+Global.\+h}\end{DoxyCompactItemize}

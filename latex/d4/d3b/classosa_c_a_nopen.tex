@@ -1,0 +1,115 @@
+\hypertarget{classosa_c_a_nopen}{}\section{osa\+C\+A\+Nopen Class Reference}
+\label{classosa_c_a_nopen}\index{osa\+C\+A\+Nopen@{osa\+C\+A\+Nopen}}
+
+
+{\ttfamily \#include $<$osa\+C\+A\+Nopen.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classosa_c_a_nopen_a5bf7839b2a382734c2f745e50ea7cfa0}{Errno} \{ \hyperlink{classosa_c_a_nopen_a5bf7839b2a382734c2f745e50ea7cfa0aa37f65c3e44df1d419cd94195bd39997}{E\+S\+U\+C\+C\+E\+S\+S} = 0x00, 
+\hyperlink{classosa_c_a_nopen_a5bf7839b2a382734c2f745e50ea7cfa0a5627101253d1bf51ea8a3ae69dbd869e}{E\+F\+A\+I\+L\+U\+R\+E} = 0x01
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classosa_c_a_nopen_a39228333ca59210a4d0eb3227b857adb}{osa\+C\+A\+Nopen} (\hyperlink{classosa_c_a_n_bus}{osa\+C\+A\+N\+Bus} $\ast$can)
+\item 
+\hyperlink{classosa_c_a_nopen_a2282ff320ac3d2149e517f296c43d161}{$\sim$osa\+C\+A\+Nopen} ()
+\item 
+\hyperlink{classosa_c_a_nopen_a5bf7839b2a382734c2f745e50ea7cfa0}{osa\+C\+A\+Nopen\+::\+Errno} \hyperlink{classosa_c_a_nopen_a051b423cffb19605b24deadba7e50eb2}{Open} (void)
+\item 
+\hyperlink{classosa_c_a_nopen_a5bf7839b2a382734c2f745e50ea7cfa0}{osa\+C\+A\+Nopen\+::\+Errno} \hyperlink{classosa_c_a_nopen_a35966647d08373baf0071864b79535ef}{Close} (void)
+\item 
+\hyperlink{classosa_c_a_nopen_a5bf7839b2a382734c2f745e50ea7cfa0}{osa\+C\+A\+Nopen\+::\+Errno} \hyperlink{classosa_c_a_nopen_afda6b68171e636e7b27abf1a7cc79aff}{Read} (\hyperlink{namespace_ci_a301_aec5b5dbb2b60d2837c60499f6f297aa7}{Ci\+A301\+::\+C\+O\+B\+I\+D} \&cobid, \hyperlink{struct_ci_a301_1_1_object}{Ci\+A301\+::\+Object} \&object)
+\begin{DoxyCompactList}\small\item\em Read C\+A\+N message from C\+A\+N driver. \end{DoxyCompactList}\item 
+\hyperlink{classosa_c_a_nopen_a5bf7839b2a382734c2f745e50ea7cfa0}{osa\+C\+A\+Nopen\+::\+Errno} \hyperlink{classosa_c_a_nopen_ae6e94cd07a1b12bb11158cc8936dd9b3}{Write} (\hyperlink{namespace_ci_a301_aec5b5dbb2b60d2837c60499f6f297aa7}{Ci\+A301\+::\+C\+O\+B\+I\+D} cobid, const \hyperlink{struct_ci_a301_1_1_object}{Ci\+A301\+::\+Object} \&object)
+\begin{DoxyCompactList}\small\item\em Write C\+A\+N frame. \end{DoxyCompactList}\item 
+bool \hyperlink{classosa_c_a_nopen_a34ad912ee7f24e4286c61caae295751a}{Is\+Open} (void) const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classosa_c_a_nopen_a5bf7839b2a382734c2f745e50ea7cfa0}{}\index{osa\+C\+A\+Nopen@{osa\+C\+A\+Nopen}!Errno@{Errno}}
+\index{Errno@{Errno}!osa\+C\+A\+Nopen@{osa\+C\+A\+Nopen}}
+\subsubsection[{Errno}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf osa\+C\+A\+Nopen\+::\+Errno}}\label{classosa_c_a_nopen_a5bf7839b2a382734c2f745e50ea7cfa0}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{E\+S\+U\+C\+C\+E\+S\+S@{E\+S\+U\+C\+C\+E\+S\+S}!osa\+C\+A\+Nopen@{osa\+C\+A\+Nopen}}\index{osa\+C\+A\+Nopen@{osa\+C\+A\+Nopen}!E\+S\+U\+C\+C\+E\+S\+S@{E\+S\+U\+C\+C\+E\+S\+S}}\item[{\em 
+\hypertarget{classosa_c_a_nopen_a5bf7839b2a382734c2f745e50ea7cfa0aa37f65c3e44df1d419cd94195bd39997}{}E\+S\+U\+C\+C\+E\+S\+S\label{classosa_c_a_nopen_a5bf7839b2a382734c2f745e50ea7cfa0aa37f65c3e44df1d419cd94195bd39997}
+}]\index{E\+F\+A\+I\+L\+U\+R\+E@{E\+F\+A\+I\+L\+U\+R\+E}!osa\+C\+A\+Nopen@{osa\+C\+A\+Nopen}}\index{osa\+C\+A\+Nopen@{osa\+C\+A\+Nopen}!E\+F\+A\+I\+L\+U\+R\+E@{E\+F\+A\+I\+L\+U\+R\+E}}\item[{\em 
+\hypertarget{classosa_c_a_nopen_a5bf7839b2a382734c2f745e50ea7cfa0a5627101253d1bf51ea8a3ae69dbd869e}{}E\+F\+A\+I\+L\+U\+R\+E\label{classosa_c_a_nopen_a5bf7839b2a382734c2f745e50ea7cfa0a5627101253d1bf51ea8a3ae69dbd869e}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classosa_c_a_nopen_a39228333ca59210a4d0eb3227b857adb}{}\index{osa\+C\+A\+Nopen@{osa\+C\+A\+Nopen}!osa\+C\+A\+Nopen@{osa\+C\+A\+Nopen}}
+\index{osa\+C\+A\+Nopen@{osa\+C\+A\+Nopen}!osa\+C\+A\+Nopen@{osa\+C\+A\+Nopen}}
+\subsubsection[{osa\+C\+A\+Nopen}]{\setlength{\rightskip}{0pt plus 5cm}osa\+C\+A\+Nopen\+::osa\+C\+A\+Nopen (
+\begin{DoxyParamCaption}
+\item[{{\bf osa\+C\+A\+N\+Bus} $\ast$}]{can}
+\end{DoxyParamCaption}
+)}\label{classosa_c_a_nopen_a39228333ca59210a4d0eb3227b857adb}
+\hypertarget{classosa_c_a_nopen_a2282ff320ac3d2149e517f296c43d161}{}\index{osa\+C\+A\+Nopen@{osa\+C\+A\+Nopen}!````~osa\+C\+A\+Nopen@{$\sim$osa\+C\+A\+Nopen}}
+\index{````~osa\+C\+A\+Nopen@{$\sim$osa\+C\+A\+Nopen}!osa\+C\+A\+Nopen@{osa\+C\+A\+Nopen}}
+\subsubsection[{$\sim$osa\+C\+A\+Nopen}]{\setlength{\rightskip}{0pt plus 5cm}osa\+C\+A\+Nopen\+::$\sim$osa\+C\+A\+Nopen (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classosa_c_a_nopen_a2282ff320ac3d2149e517f296c43d161}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classosa_c_a_nopen_a35966647d08373baf0071864b79535ef}{}\index{osa\+C\+A\+Nopen@{osa\+C\+A\+Nopen}!Close@{Close}}
+\index{Close@{Close}!osa\+C\+A\+Nopen@{osa\+C\+A\+Nopen}}
+\subsubsection[{Close}]{\setlength{\rightskip}{0pt plus 5cm}{\bf osa\+C\+A\+Nopen\+::\+Errno} osa\+C\+A\+Nopen\+::\+Close (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classosa_c_a_nopen_a35966647d08373baf0071864b79535ef}
+\hypertarget{classosa_c_a_nopen_a34ad912ee7f24e4286c61caae295751a}{}\index{osa\+C\+A\+Nopen@{osa\+C\+A\+Nopen}!Is\+Open@{Is\+Open}}
+\index{Is\+Open@{Is\+Open}!osa\+C\+A\+Nopen@{osa\+C\+A\+Nopen}}
+\subsubsection[{Is\+Open}]{\setlength{\rightskip}{0pt plus 5cm}bool osa\+C\+A\+Nopen\+::\+Is\+Open (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classosa_c_a_nopen_a34ad912ee7f24e4286c61caae295751a}
+\hypertarget{classosa_c_a_nopen_a051b423cffb19605b24deadba7e50eb2}{}\index{osa\+C\+A\+Nopen@{osa\+C\+A\+Nopen}!Open@{Open}}
+\index{Open@{Open}!osa\+C\+A\+Nopen@{osa\+C\+A\+Nopen}}
+\subsubsection[{Open}]{\setlength{\rightskip}{0pt plus 5cm}{\bf osa\+C\+A\+Nopen\+::\+Errno} osa\+C\+A\+Nopen\+::\+Open (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classosa_c_a_nopen_a051b423cffb19605b24deadba7e50eb2}
+\hypertarget{classosa_c_a_nopen_afda6b68171e636e7b27abf1a7cc79aff}{}\index{osa\+C\+A\+Nopen@{osa\+C\+A\+Nopen}!Read@{Read}}
+\index{Read@{Read}!osa\+C\+A\+Nopen@{osa\+C\+A\+Nopen}}
+\subsubsection[{Read}]{\setlength{\rightskip}{0pt plus 5cm}{\bf osa\+C\+A\+Nopen\+::\+Errno} osa\+C\+A\+Nopen\+::\+Read (
+\begin{DoxyParamCaption}
+\item[{{\bf Ci\+A301\+::\+C\+O\+B\+I\+D} \&}]{cobid, }
+\item[{{\bf Ci\+A301\+::\+Object} \&}]{object}
+\end{DoxyParamCaption}
+)}\label{classosa_c_a_nopen_afda6b68171e636e7b27abf1a7cc79aff}
+
+
+Read C\+A\+N message from C\+A\+N driver. 
+
+\hypertarget{classosa_c_a_nopen_ae6e94cd07a1b12bb11158cc8936dd9b3}{}\index{osa\+C\+A\+Nopen@{osa\+C\+A\+Nopen}!Write@{Write}}
+\index{Write@{Write}!osa\+C\+A\+Nopen@{osa\+C\+A\+Nopen}}
+\subsubsection[{Write}]{\setlength{\rightskip}{0pt plus 5cm}{\bf osa\+C\+A\+Nopen\+::\+Errno} osa\+C\+A\+Nopen\+::\+Write (
+\begin{DoxyParamCaption}
+\item[{{\bf Ci\+A301\+::\+C\+O\+B\+I\+D}}]{cobid, }
+\item[{const {\bf Ci\+A301\+::\+Object} \&}]{object}
+\end{DoxyParamCaption}
+)}\label{classosa_c_a_nopen_ae6e94cd07a1b12bb11158cc8936dd9b3}
+
+
+Write C\+A\+N frame. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/saw\+C\+A\+N\+Bus/include/saw\+C\+A\+N\+Bus/\hyperlink{osa_c_a_nopen_8h}{osa\+C\+A\+Nopen.\+h}\end{DoxyCompactItemize}

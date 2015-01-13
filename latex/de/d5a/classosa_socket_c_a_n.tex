@@ -1,0 +1,173 @@
+\hypertarget{classosa_socket_c_a_n}{}\section{osa\+Socket\+C\+A\+N Class Reference}
+\label{classosa_socket_c_a_n}\index{osa\+Socket\+C\+A\+N@{osa\+Socket\+C\+A\+N}}
+
+
+A Real Time Socket C\+A\+N device.  
+
+
+
+
+{\ttfamily \#include $<$osa\+Socket\+C\+A\+N.\+h$>$}
+
+Inheritance diagram for osa\+Socket\+C\+A\+N\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{de/d5a/classosa_socket_c_a_n}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classosa_socket_c_a_n_a3e7b2c117c7eea2007a36d3848ed0430}{osa\+Socket\+C\+A\+N} (const std\+::string \&devicename, \hyperlink{classosa_c_a_n_bus_ae977dbc0e1c16772395408c8e018fe6c}{osa\+C\+A\+N\+Bus\+::\+Rate} \hyperlink{classosa_c_a_n_bus_a4ff86a9ecf19161b1f34666888e0a331}{rate}, \hyperlink{classosa_c_a_n_bus_a992406c83a336e95fb4a09b0b13df786}{osa\+C\+A\+N\+Bus\+::\+Loopback} \hyperlink{classosa_c_a_n_bus_a724e9c478dd48908882e29f189d98968}{loopback}=\hyperlink{classosa_c_a_n_bus_a992406c83a336e95fb4a09b0b13df786ae2557509d0c1ac68029eeb6bdf6e703d}{osa\+C\+A\+N\+Bus\+::\+L\+O\+O\+P\+B\+A\+C\+K\+\_\+\+O\+F\+F})
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hyperlink{classosa_socket_c_a_n_ae0c2442fed8f94986b0729382c7e81bf}{$\sim$osa\+Socket\+C\+A\+N} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\hyperlink{classosa_c_a_n_bus_a6fa3e95ec4c36932d0640e40e0748fde}{osa\+C\+A\+N\+Bus\+::\+Errno} \hyperlink{classosa_socket_c_a_n_a5a8bb9db219c9f4072b5bcc357eeb847}{Open} ()
+\begin{DoxyCompactList}\small\item\em Open and configure the C\+A\+N socket. \end{DoxyCompactList}\item 
+\hyperlink{classosa_c_a_n_bus_a6fa3e95ec4c36932d0640e40e0748fde}{osa\+C\+A\+N\+Bus\+::\+Errno} \hyperlink{classosa_socket_c_a_n_a131308c6fa41ee200b5b1785f12c709b}{Close} ()
+\begin{DoxyCompactList}\small\item\em Close the C\+A\+N socket. \end{DoxyCompactList}\item 
+\hyperlink{classosa_c_a_n_bus_a6fa3e95ec4c36932d0640e40e0748fde}{osa\+C\+A\+N\+Bus\+::\+Errno} \hyperlink{classosa_socket_c_a_n_a59accc9278f0cbab72e578bb8d486a43}{Send} (const \hyperlink{classosa_c_a_n_bus_frame}{osa\+C\+A\+N\+Bus\+Frame} \&frame, \hyperlink{classosa_c_a_n_bus_a74fe35c6059237887431f3ccece7b21b}{osa\+C\+A\+N\+Bus\+::\+Flags} flags=\hyperlink{classosa_c_a_n_bus_a74fe35c6059237887431f3ccece7b21ba30f701fa6e0dba6e274540941ccd3978}{osa\+C\+A\+N\+Bus\+::\+M\+S\+G\+\_\+\+N\+O\+F\+L\+A\+G})
+\begin{DoxyCompactList}\small\item\em Send a C\+A\+N frame on the bus. \end{DoxyCompactList}\item 
+\hyperlink{classosa_c_a_n_bus_a6fa3e95ec4c36932d0640e40e0748fde}{osa\+C\+A\+N\+Bus\+::\+Errno} \hyperlink{classosa_socket_c_a_n_a919c1f68caffb33ddcca41797553be58}{Recv} (\hyperlink{classosa_c_a_n_bus_frame}{osa\+C\+A\+N\+Bus\+Frame} \&frame, \hyperlink{classosa_c_a_n_bus_a74fe35c6059237887431f3ccece7b21b}{osa\+C\+A\+N\+Bus\+::\+Flags} flags=\hyperlink{classosa_c_a_n_bus_a74fe35c6059237887431f3ccece7b21ba30f701fa6e0dba6e274540941ccd3978}{osa\+C\+A\+N\+Bus\+::\+M\+S\+G\+\_\+\+N\+O\+F\+L\+A\+G})
+\begin{DoxyCompactList}\small\item\em Receive a C\+A\+N frame. \end{DoxyCompactList}\item 
+\hyperlink{classosa_c_a_n_bus_a6fa3e95ec4c36932d0640e40e0748fde}{osa\+C\+A\+N\+Bus\+::\+Errno} \hyperlink{classosa_socket_c_a_n_a139052b40505443b7c82e9983b873508}{Add\+Filter} (const \hyperlink{classosa_c_a_n_bus_1_1_filter}{osa\+C\+A\+N\+Bus\+::\+Filter} \&filter)
+\begin{DoxyCompactList}\small\item\em Add a filter to the Socket\+C\+A\+N device. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A Real Time Socket C\+A\+N device. 
+
+Most harware in Linux use the /dev interface. Typically, your device (usb, serial port, ...) will be represented by a file in /dev. C\+A\+N hardware is no exception except for the socket C\+A\+N module. Socket\+C\+A\+N implements a C\+A\+N stack and extend the B\+S\+D sockets just like you have a ethernet stack and sockets. R\+T Socket\+C\+A\+N is the \char`\"{}real time\char`\"{} version for the Xenomai framework. To use \hyperlink{classosa_socket_c_a_n}{osa\+Socket\+C\+A\+N}, you must have a Xenomai patched Linux kernel with The R\+T C\+A\+N module enabled 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classosa_socket_c_a_n_a3e7b2c117c7eea2007a36d3848ed0430}{}\index{osa\+Socket\+C\+A\+N@{osa\+Socket\+C\+A\+N}!osa\+Socket\+C\+A\+N@{osa\+Socket\+C\+A\+N}}
+\index{osa\+Socket\+C\+A\+N@{osa\+Socket\+C\+A\+N}!osa\+Socket\+C\+A\+N@{osa\+Socket\+C\+A\+N}}
+\subsubsection[{osa\+Socket\+C\+A\+N}]{\setlength{\rightskip}{0pt plus 5cm}osa\+Socket\+C\+A\+N\+::osa\+Socket\+C\+A\+N (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{devicename, }
+\item[{{\bf osa\+C\+A\+N\+Bus\+::\+Rate}}]{rate, }
+\item[{{\bf osa\+C\+A\+N\+Bus\+::\+Loopback}}]{loopback = {\ttfamily {\bf osa\+C\+A\+N\+Bus\+::\+L\+O\+O\+P\+B\+A\+C\+K\+\_\+\+O\+F\+F}}}
+\end{DoxyParamCaption}
+)}\label{classosa_socket_c_a_n_a3e7b2c117c7eea2007a36d3848ed0430}
+
+
+Constructor. 
+
+Initialize the device name and the rate of the C\+A\+N device 
+\begin{DoxyParams}{Parameters}
+{\em devicename} & The name of the device (rtcan0, rtcan1, ...) \\
+\hline
+{\em rate} & The C\+A\+N rate (R\+A\+T\+E\+\_\+150, R\+A\+T\+E\+\_\+300, R\+A\+T\+E\+\_\+1000) \\
+\hline
+\end{DoxyParams}
+\hypertarget{classosa_socket_c_a_n_ae0c2442fed8f94986b0729382c7e81bf}{}\index{osa\+Socket\+C\+A\+N@{osa\+Socket\+C\+A\+N}!````~osa\+Socket\+C\+A\+N@{$\sim$osa\+Socket\+C\+A\+N}}
+\index{````~osa\+Socket\+C\+A\+N@{$\sim$osa\+Socket\+C\+A\+N}!osa\+Socket\+C\+A\+N@{osa\+Socket\+C\+A\+N}}
+\subsubsection[{$\sim$osa\+Socket\+C\+A\+N}]{\setlength{\rightskip}{0pt plus 5cm}osa\+Socket\+C\+A\+N\+::$\sim$osa\+Socket\+C\+A\+N (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classosa_socket_c_a_n_ae0c2442fed8f94986b0729382c7e81bf}
+
+
+Destructor. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classosa_socket_c_a_n_a139052b40505443b7c82e9983b873508}{}\index{osa\+Socket\+C\+A\+N@{osa\+Socket\+C\+A\+N}!Add\+Filter@{Add\+Filter}}
+\index{Add\+Filter@{Add\+Filter}!osa\+Socket\+C\+A\+N@{osa\+Socket\+C\+A\+N}}
+\subsubsection[{Add\+Filter}]{\setlength{\rightskip}{0pt plus 5cm}{\bf osa\+C\+A\+N\+Bus\+::\+Errno} osa\+Socket\+C\+A\+N\+::\+Add\+Filter (
+\begin{DoxyParamCaption}
+\item[{const {\bf osa\+C\+A\+N\+Bus\+::\+Filter} \&}]{filter}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classosa_socket_c_a_n_a139052b40505443b7c82e9983b873508}
+
+
+Add a filter to the Socket\+C\+A\+N device. 
+
+
+
+Implements \hyperlink{classosa_c_a_n_bus_abc63dc1654ae14c4e0705c01cd3a6405}{osa\+C\+A\+N\+Bus}.
+
+\hypertarget{classosa_socket_c_a_n_a131308c6fa41ee200b5b1785f12c709b}{}\index{osa\+Socket\+C\+A\+N@{osa\+Socket\+C\+A\+N}!Close@{Close}}
+\index{Close@{Close}!osa\+Socket\+C\+A\+N@{osa\+Socket\+C\+A\+N}}
+\subsubsection[{Close}]{\setlength{\rightskip}{0pt plus 5cm}{\bf osa\+C\+A\+N\+Bus\+::\+Errno} osa\+Socket\+C\+A\+N\+::\+Close (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classosa_socket_c_a_n_a131308c6fa41ee200b5b1785f12c709b}
+
+
+Close the C\+A\+N socket. 
+
+
+
+Implements \hyperlink{classosa_c_a_n_bus_aeabd3fe0c7db2c13978834f4bd2f08db}{osa\+C\+A\+N\+Bus}.
+
+\hypertarget{classosa_socket_c_a_n_a5a8bb9db219c9f4072b5bcc357eeb847}{}\index{osa\+Socket\+C\+A\+N@{osa\+Socket\+C\+A\+N}!Open@{Open}}
+\index{Open@{Open}!osa\+Socket\+C\+A\+N@{osa\+Socket\+C\+A\+N}}
+\subsubsection[{Open}]{\setlength{\rightskip}{0pt plus 5cm}{\bf osa\+C\+A\+N\+Bus\+::\+Errno} osa\+Socket\+C\+A\+N\+::\+Open (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classosa_socket_c_a_n_a5a8bb9db219c9f4072b5bcc357eeb847}
+
+
+Open and configure the C\+A\+N socket. 
+
+Creates and configure a R\+T C\+A\+N socket. 
+
+Implements \hyperlink{classosa_c_a_n_bus_a3471574c0625ff4ec43b2fa8a3a020af}{osa\+C\+A\+N\+Bus}.
+
+\hypertarget{classosa_socket_c_a_n_a919c1f68caffb33ddcca41797553be58}{}\index{osa\+Socket\+C\+A\+N@{osa\+Socket\+C\+A\+N}!Recv@{Recv}}
+\index{Recv@{Recv}!osa\+Socket\+C\+A\+N@{osa\+Socket\+C\+A\+N}}
+\subsubsection[{Recv}]{\setlength{\rightskip}{0pt plus 5cm}{\bf osa\+C\+A\+N\+Bus\+::\+Errno} osa\+Socket\+C\+A\+N\+::\+Recv (
+\begin{DoxyParamCaption}
+\item[{{\bf osa\+C\+A\+N\+Bus\+Frame} \&}]{frame, }
+\item[{{\bf osa\+C\+A\+N\+Bus\+::\+Flags}}]{flags = {\ttfamily {\bf osa\+C\+A\+N\+Bus\+::\+M\+S\+G\+\_\+\+N\+O\+F\+L\+A\+G}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classosa_socket_c_a_n_a919c1f68caffb33ddcca41797553be58}
+
+
+Receive a C\+A\+N frame. 
+
+Call this method to receive a C\+A\+N frame. 
+\begin{DoxyParams}{Parameters}
+{\em frame\mbox{[}out\mbox{]}} & The C\+A\+N frame received from the bus \\
+\hline
+{\em flags} & Block the device until a C\+A\+N frame is received. This parameter is irrelevant for \hyperlink{classosa_socket_c_a_n}{osa\+Socket\+C\+A\+N}. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classosa_c_a_n_bus_a8c095ec60f161eaf8f014b039f62faab}{osa\+C\+A\+N\+Bus}.
+
+\hypertarget{classosa_socket_c_a_n_a59accc9278f0cbab72e578bb8d486a43}{}\index{osa\+Socket\+C\+A\+N@{osa\+Socket\+C\+A\+N}!Send@{Send}}
+\index{Send@{Send}!osa\+Socket\+C\+A\+N@{osa\+Socket\+C\+A\+N}}
+\subsubsection[{Send}]{\setlength{\rightskip}{0pt plus 5cm}{\bf osa\+C\+A\+N\+Bus\+::\+Errno} osa\+Socket\+C\+A\+N\+::\+Send (
+\begin{DoxyParamCaption}
+\item[{const {\bf osa\+C\+A\+N\+Bus\+Frame} \&}]{frame, }
+\item[{{\bf osa\+C\+A\+N\+Bus\+::\+Flags}}]{flags = {\ttfamily {\bf osa\+C\+A\+N\+Bus\+::\+M\+S\+G\+\_\+\+N\+O\+F\+L\+A\+G}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classosa_socket_c_a_n_a59accc9278f0cbab72e578bb8d486a43}
+
+
+Send a C\+A\+N frame on the bus. 
+
+Call this method to send a C\+A\+N frame on the bus. 
+\begin{DoxyParams}{Parameters}
+{\em frame\mbox{[}in\mbox{]}} & The C\+A\+N frame to send on the bus \\
+\hline
+{\em flags} & Block the device until the operation is completed. This parameter is irrelevant for \hyperlink{classosa_socket_c_a_n}{osa\+Socket\+C\+A\+N}. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classosa_c_a_n_bus_a21b88fd2a857089845305d1e2eabb5b9}{osa\+C\+A\+N\+Bus}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/saw\+C\+A\+N\+Bus/include/saw\+C\+A\+N\+Bus/\hyperlink{osa_socket_c_a_n_8h}{osa\+Socket\+C\+A\+N.\+h}\end{DoxyCompactItemize}

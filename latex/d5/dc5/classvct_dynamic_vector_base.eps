@@ -1,0 +1,493 @@
+%!PS-Adobe-2.0 EPSF-2.0
+%%Title: ClassName
+%%Creator: Doxygen
+%%CreationDate: Time
+%%For: 
+%Magnification: 1.00
+%%Orientation: Portrait
+%%BoundingBox: 0 0 500 1831.683168
+%%Pages: 0
+%%BeginSetup
+%%EndSetup
+%%EndComments
+
+% ----- variables -----
+
+/boxwidth 0 def
+/boxheight 40 def
+/fontheight 24 def
+/marginwidth 10 def
+/distx 20 def
+/disty 40 def
+/boundaspect 0.272973 def  % aspect ratio of the BoundingBox (width/height)
+/boundx 500 def
+/boundy boundx boundaspect div def
+/xspacing 0 def
+/yspacing 0 def
+/rows 74 def
+/cols 2 def
+/scalefactor 0 def
+/boxfont /Times-Roman findfont fontheight scalefont def
+
+% ----- procedures -----
+
+/dotted { [1 4] 0 setdash } def
+/dashed { [5] 0 setdash } def
+/solid  { [] 0 setdash } def
+
+/max % result = MAX(arg1,arg2)
+{
+  /a exch def
+  /b exch def
+  a b gt {a} {b} ifelse
+} def
+
+/xoffset % result = MAX(0,(scalefactor-(boxwidth*cols+distx*(cols-1)))/2)
+{
+  0 scalefactor boxwidth cols mul distx cols 1 sub mul add sub 2 div max
+} def
+
+/cw % boxwidth = MAX(boxwidth, stringwidth(arg1))
+{
+  /str exch def
+  /boxwidth boxwidth str stringwidth pop max def
+} def
+
+/box % draws a box with text `arg1' at grid pos (arg2,arg3)
+{ gsave
+  2 setlinewidth
+  newpath
+  exch xspacing mul xoffset add
+  exch yspacing mul
+  moveto
+  boxwidth 0 rlineto 
+  0 boxheight rlineto 
+  boxwidth neg 0 rlineto 
+  0 boxheight neg rlineto 
+  closepath
+  dup stringwidth pop neg boxwidth add 2 div
+  boxheight fontheight 2 div sub 2 div
+  rmoveto show stroke
+  grestore
+} def  
+
+/mark
+{ newpath
+  exch xspacing mul xoffset add boxwidth add
+  exch yspacing mul
+  moveto
+  0 boxheight 4 div rlineto
+  boxheight neg 4 div boxheight neg 4 div rlineto
+  closepath
+  eofill
+  stroke
+} def
+
+/arrow
+{ newpath
+  moveto
+  3 -8 rlineto
+  -6 0 rlineto
+  3 8 rlineto
+  closepath
+  eofill
+  stroke
+} def
+
+/out % draws an output connector for the block at (arg1,arg2)
+{
+  newpath
+  exch xspacing mul xoffset add boxwidth 2 div add
+  exch yspacing mul boxheight add
+  /y exch def
+  /x exch def
+  x y moveto
+  0 disty 2 div rlineto 
+  stroke
+  1 eq { x y disty 2 div add arrow } if
+} def
+
+/in % draws an input connector for the block at (arg1,arg2)
+{
+  newpath
+  exch xspacing mul xoffset add boxwidth 2 div add
+  exch yspacing mul disty 2 div sub
+  /y exch def
+  /x exch def
+  x y moveto
+  0 disty 2 div rlineto
+  stroke
+  1 eq { x y disty 2 div add arrow } if
+} def
+
+/hedge
+{
+  exch xspacing mul xoffset add boxwidth 2 div add
+  exch yspacing mul boxheight 2 div sub
+  /y exch def
+  /x exch def
+  newpath
+  x y moveto
+  boxwidth 2 div distx add 0 rlineto
+  stroke
+  1 eq
+  { newpath x boxwidth 2 div distx add add y moveto
+    -8 3 rlineto
+    0 -6 rlineto
+    8 3 rlineto
+    closepath
+    eofill
+    stroke
+  } if
+} def
+
+/vedge
+{
+  /ye exch def
+  /ys exch def
+  /xs exch def
+  newpath
+  xs xspacing mul xoffset add boxwidth 2 div add dup
+  ys yspacing mul boxheight 2 div sub
+  moveto
+  ye yspacing mul boxheight 2 div sub
+  lineto
+  stroke
+} def
+
+/conn % connections the blocks from col `arg1' to `arg2' of row `arg3'
+{
+  /ys exch def
+  /xe exch def
+  /xs exch def
+  newpath
+  xs xspacing mul xoffset add boxwidth 2 div add
+  ys yspacing mul disty 2 div sub
+  moveto
+  xspacing xe xs sub mul 0
+  rlineto
+  stroke
+} def
+
+% ----- main ------
+
+boxfont setfont
+1 boundaspect scale
+(vctDynamicVectorBase< _vectorOwnerType, _elementType >) cw
+(vctDynamicConstVectorBase< _vectorOwnerType, _elementType >) cw
+(vctDynamicVector< bool >) cw
+(vctDynamicVector< char >) cw
+(vctDynamicVector< CiA301::Object::Data >) cw
+(vctDynamicVector< CISSTNETLIB_DOUBLE >) cw
+(vctDynamicVector< CISSTNETLIB_INTEGER >) cw
+(vctDynamicVector< cmnClassServicesBase * >) cw
+(vctDynamicVector< cmnGenericObject * >) cw
+(vctDynamicVector< CvHistogram * >) cw
+(vctDynamicVector< CvRect >) cw
+(vctDynamicVector< double >) cw
+(vctDynamicVector< float >) cw
+(vctDynamicVector< int >) cw
+(vctDynamicVector< mtsFunctionWrite * >) cw
+(vctDynamicVector< mtsNovintHDL::DeviceData * >) cw
+(vctDynamicVector< mtsNovintHDLHandle * >) cw
+(vctDynamicVector< mtsSensableHD::DeviceData * >) cw
+(vctDynamicVector< mtsSensableHDHandle * >) cw
+(vctDynamicVector< oniPlane >) cw
+(vctDynamicVector< osaThread * >) cw
+(vctDynamicVector< PlatformType >) cw
+(vctDynamicVector< prmJointType >) cw
+(vctDynamicVector< QListWidgetItem * >) cw
+(vctDynamicVector< short >) cw
+(vctDynamicVector< std::ifstream * >) cw
+(vctDynamicVector< std::string >) cw
+(vctDynamicVector< svlCameraGeometry::_Extrinsics >) cw
+(vctDynamicVector< svlCameraGeometry::_Intrinsics >) cw
+(vctDynamicVector< svlColorSpace >) cw
+(vctDynamicVector< svlDraw::Internals >) cw
+(vctDynamicVector< svlDraw::svlDraw::Internals >) cw
+(vctDynamicVector< svlEllipse >) cw
+(vctDynamicVector< svlFile * >) cw
+(vctDynamicVector< svlFilterImageCenterFinderInterface * >) cw
+(vctDynamicVector< svlFilterOutput * >) cw
+(vctDynamicVector< svlImageCodecBase * >) cw
+(vctDynamicVector< svlImageProcessing::DI_Algorithm >) cw
+(vctDynamicVector< svlImageProcessing::Internals >) cw
+(vctDynamicVector< svlImageTracker * >) cw
+(vctDynamicVector< svlOverlay * >) cw
+(vctDynamicVector< svlPoint2D >) cw
+(vctDynamicVector< svlQuad >) cw
+(vctDynamicVector< svlRect >) cw
+(vctDynamicVector< svlRenderTargetBase * >) cw
+(vctDynamicVector< svlSampleCameraGeometry::Extrinsics >) cw
+(vctDynamicVector< svlSampleCameraGeometry::Intrinsics >) cw
+(vctDynamicVector< svlStreamProc * >) cw
+(vctDynamicVector< svlStreamType >) cw
+(vctDynamicVector< svlTarget2D >) cw
+(vctDynamicVector< svlVidCapSrcBase * >) cw
+(vctDynamicVector< svlVideoCodecBase * >) cw
+(vctDynamicVector< svlVideoIO::Compression * >) cw
+(vctDynamicVector< unsigned char >) cw
+(vctDynamicVector< unsigned int >) cw
+(vctDynamicVector< value_type >) cw
+(vctDynamicVector< vctDynamicMatrix< int > >) cw
+(vctDynamicVector< vctDynamicMatrix< unsigned char > >) cw
+(vctDynamicVector< vctDynamicVector< bool > >) cw
+(vctDynamicVector< vctDynamicVector< int > >) cw
+(vctDynamicVector< vctDynamicVector< svlBlob > >) cw
+(vctDynamicVector< vctDynamicVector< svlImageCodecBase * > >) cw
+(vctDynamicVector< vctDynamicVector< svlVideoCodecBase * > >) cw
+(vctDynamicVector< vctDynamicVector< unsigned char > >) cw
+(vctDynamicVector< vctDynamicVector< unsigned int > >) cw
+(vctDynamicVector< vctDynamicVector< unsigned short > >) cw
+(vctDynamicVector< vctDynamicVector< vctFixedSizeVector > >) cw
+(vctDynamicVector< vctFixedSizeMatrix< double, 3, 3 > >) cw
+(vctDynamicVector< vctFixedSizeVector >) cw
+(vctDynamicVector< vctFixedSizeVector< double, 9 > >) cw
+(vctDynamicVector< vctFixedSizeVectorRef >) cw
+(vctDynamicVectorRef< CISSTNETLIB_DOUBLE >) cw
+(vctDynamicVectorRef< CISSTNETLIB_INTEGER >) cw
+(vctDynamicVectorRef< double >) cw
+/boxwidth boxwidth marginwidth 2 mul add def
+/xspacing boxwidth distx add def
+/yspacing boxheight disty add def
+/scalefactor 
+  boxwidth cols mul distx cols 1 sub mul add
+  boxheight rows mul disty rows 1 sub mul add boundaspect mul 
+  max def
+boundx scalefactor div boundy scalefactor div scale
+
+% ----- classes -----
+
+ (vctDynamicVectorBase< _vectorOwnerType, _elementType >) 0.000000 72.000000 box
+ (vctDynamicConstVectorBase< _vectorOwnerType, _elementType >) 0.000000 73.000000 box
+ (vctDynamicVector< bool >) 1.000000 71.000000 box
+1.000000 71.000000 mark
+ (vctDynamicVector< char >) 1.000000 70.000000 box
+ (vctDynamicVector< CiA301::Object::Data >) 1.000000 69.000000 box
+ (vctDynamicVector< CISSTNETLIB_DOUBLE >) 1.000000 68.000000 box
+ (vctDynamicVector< CISSTNETLIB_INTEGER >) 1.000000 67.000000 box
+ (vctDynamicVector< cmnClassServicesBase * >) 1.000000 66.000000 box
+ (vctDynamicVector< cmnGenericObject * >) 1.000000 65.000000 box
+ (vctDynamicVector< CvHistogram * >) 1.000000 64.000000 box
+ (vctDynamicVector< CvRect >) 1.000000 63.000000 box
+ (vctDynamicVector< double >) 1.000000 62.000000 box
+1.000000 62.000000 mark
+ (vctDynamicVector< float >) 1.000000 61.000000 box
+ (vctDynamicVector< int >) 1.000000 60.000000 box
+ (vctDynamicVector< mtsFunctionWrite * >) 1.000000 59.000000 box
+ (vctDynamicVector< mtsNovintHDL::DeviceData * >) 1.000000 58.000000 box
+ (vctDynamicVector< mtsNovintHDLHandle * >) 1.000000 57.000000 box
+ (vctDynamicVector< mtsSensableHD::DeviceData * >) 1.000000 56.000000 box
+ (vctDynamicVector< mtsSensableHDHandle * >) 1.000000 55.000000 box
+ (vctDynamicVector< oniPlane >) 1.000000 54.000000 box
+ (vctDynamicVector< osaThread * >) 1.000000 53.000000 box
+ (vctDynamicVector< PlatformType >) 1.000000 52.000000 box
+ (vctDynamicVector< prmJointType >) 1.000000 51.000000 box
+ (vctDynamicVector< QListWidgetItem * >) 1.000000 50.000000 box
+ (vctDynamicVector< short >) 1.000000 49.000000 box
+1.000000 49.000000 mark
+ (vctDynamicVector< std::ifstream * >) 1.000000 48.000000 box
+ (vctDynamicVector< std::string >) 1.000000 47.000000 box
+ (vctDynamicVector< svlCameraGeometry::_Extrinsics >) 1.000000 46.000000 box
+ (vctDynamicVector< svlCameraGeometry::_Intrinsics >) 1.000000 45.000000 box
+ (vctDynamicVector< svlColorSpace >) 1.000000 44.000000 box
+ (vctDynamicVector< svlDraw::Internals >) 1.000000 43.000000 box
+ (vctDynamicVector< svlDraw::svlDraw::Internals >) 1.000000 42.000000 box
+ (vctDynamicVector< svlEllipse >) 1.000000 41.000000 box
+ (vctDynamicVector< svlFile * >) 1.000000 40.000000 box
+ (vctDynamicVector< svlFilterImageCenterFinderInterface * >) 1.000000 39.000000 box
+ (vctDynamicVector< svlFilterOutput * >) 1.000000 38.000000 box
+ (vctDynamicVector< svlImageCodecBase * >) 1.000000 37.000000 box
+ (vctDynamicVector< svlImageProcessing::DI_Algorithm >) 1.000000 36.000000 box
+ (vctDynamicVector< svlImageProcessing::Internals >) 1.000000 35.000000 box
+ (vctDynamicVector< svlImageTracker * >) 1.000000 34.000000 box
+ (vctDynamicVector< svlOverlay * >) 1.000000 33.000000 box
+ (vctDynamicVector< svlPoint2D >) 1.000000 32.000000 box
+ (vctDynamicVector< svlQuad >) 1.000000 31.000000 box
+ (vctDynamicVector< svlRect >) 1.000000 30.000000 box
+ (vctDynamicVector< svlRenderTargetBase * >) 1.000000 29.000000 box
+ (vctDynamicVector< svlSampleCameraGeometry::Extrinsics >) 1.000000 28.000000 box
+ (vctDynamicVector< svlSampleCameraGeometry::Intrinsics >) 1.000000 27.000000 box
+ (vctDynamicVector< svlStreamProc * >) 1.000000 26.000000 box
+ (vctDynamicVector< svlStreamType >) 1.000000 25.000000 box
+ (vctDynamicVector< svlTarget2D >) 1.000000 24.000000 box
+ (vctDynamicVector< svlVidCapSrcBase * >) 1.000000 23.000000 box
+ (vctDynamicVector< svlVideoCodecBase * >) 1.000000 22.000000 box
+ (vctDynamicVector< svlVideoIO::Compression * >) 1.000000 21.000000 box
+ (vctDynamicVector< unsigned char >) 1.000000 20.000000 box
+1.000000 20.000000 mark
+ (vctDynamicVector< unsigned int >) 1.000000 19.000000 box
+ (vctDynamicVector< value_type >) 1.000000 18.000000 box
+ (vctDynamicVector< vctDynamicMatrix< int > >) 1.000000 17.000000 box
+ (vctDynamicVector< vctDynamicMatrix< unsigned char > >) 1.000000 16.000000 box
+ (vctDynamicVector< vctDynamicVector< bool > >) 1.000000 15.000000 box
+ (vctDynamicVector< vctDynamicVector< int > >) 1.000000 14.000000 box
+ (vctDynamicVector< vctDynamicVector< svlBlob > >) 1.000000 13.000000 box
+ (vctDynamicVector< vctDynamicVector< svlImageCodecBase * > >) 1.000000 12.000000 box
+ (vctDynamicVector< vctDynamicVector< svlVideoCodecBase * > >) 1.000000 11.000000 box
+ (vctDynamicVector< vctDynamicVector< unsigned char > >) 1.000000 10.000000 box
+ (vctDynamicVector< vctDynamicVector< unsigned int > >) 1.000000 9.000000 box
+ (vctDynamicVector< vctDynamicVector< unsigned short > >) 1.000000 8.000000 box
+ (vctDynamicVector< vctDynamicVector< vctFixedSizeVector > >) 1.000000 7.000000 box
+ (vctDynamicVector< vctFixedSizeMatrix< double, 3, 3 > >) 1.000000 6.000000 box
+ (vctDynamicVector< vctFixedSizeVector >) 1.000000 5.000000 box
+ (vctDynamicVector< vctFixedSizeVector< double, 9 > >) 1.000000 4.000000 box
+ (vctDynamicVector< vctFixedSizeVectorRef >) 1.000000 3.000000 box
+ (vctDynamicVectorRef< CISSTNETLIB_DOUBLE >) 1.000000 2.000000 box
+ (vctDynamicVectorRef< CISSTNETLIB_INTEGER >) 1.000000 1.000000 box
+ (vctDynamicVectorRef< double >) 1.000000 0.000000 box
+
+% ----- relations -----
+
+solid
+0 0.000000 72.000000 out
+solid
+1 0.000000 73.000000 in
+solid
+1 0.000000 71.250000 out
+solid
+0 0.000000 71.500000 hedge
+solid
+0 0.000000 70.500000 hedge
+solid
+0 0.000000 69.500000 hedge
+solid
+0 0.000000 68.500000 hedge
+solid
+0 0.000000 67.500000 hedge
+solid
+0 0.000000 66.500000 hedge
+solid
+0 0.000000 65.500000 hedge
+solid
+0 0.000000 64.500000 hedge
+solid
+0 0.000000 63.500000 hedge
+solid
+0 0.000000 62.500000 hedge
+solid
+0 0.000000 61.500000 hedge
+solid
+0 0.000000 60.500000 hedge
+solid
+0 0.000000 59.500000 hedge
+solid
+0 0.000000 58.500000 hedge
+solid
+0 0.000000 57.500000 hedge
+solid
+0 0.000000 56.500000 hedge
+solid
+0 0.000000 55.500000 hedge
+solid
+0 0.000000 54.500000 hedge
+solid
+0 0.000000 53.500000 hedge
+solid
+0 0.000000 52.500000 hedge
+solid
+0 0.000000 51.500000 hedge
+solid
+0 0.000000 50.500000 hedge
+solid
+0 0.000000 49.500000 hedge
+solid
+0 0.000000 48.500000 hedge
+solid
+0 0.000000 47.500000 hedge
+solid
+0 0.000000 46.500000 hedge
+solid
+0 0.000000 45.500000 hedge
+solid
+0 0.000000 44.500000 hedge
+solid
+0 0.000000 43.500000 hedge
+solid
+0 0.000000 42.500000 hedge
+solid
+0 0.000000 41.500000 hedge
+solid
+0 0.000000 40.500000 hedge
+solid
+0 0.000000 39.500000 hedge
+solid
+0 0.000000 38.500000 hedge
+solid
+0 0.000000 37.500000 hedge
+solid
+0 0.000000 36.500000 hedge
+solid
+0 0.000000 35.500000 hedge
+solid
+0 0.000000 34.500000 hedge
+solid
+0 0.000000 33.500000 hedge
+solid
+0 0.000000 32.500000 hedge
+solid
+0 0.000000 31.500000 hedge
+solid
+0 0.000000 30.500000 hedge
+solid
+0 0.000000 29.500000 hedge
+solid
+0 0.000000 28.500000 hedge
+solid
+0 0.000000 27.500000 hedge
+solid
+0 0.000000 26.500000 hedge
+solid
+0 0.000000 25.500000 hedge
+solid
+0 0.000000 24.500000 hedge
+solid
+0 0.000000 23.500000 hedge
+solid
+0 0.000000 22.500000 hedge
+solid
+0 0.000000 21.500000 hedge
+solid
+0 0.000000 20.500000 hedge
+solid
+0 0.000000 19.500000 hedge
+solid
+0 0.000000 18.500000 hedge
+solid
+0 0.000000 17.500000 hedge
+solid
+0 0.000000 16.500000 hedge
+solid
+0 0.000000 15.500000 hedge
+solid
+0 0.000000 14.500000 hedge
+solid
+0 0.000000 13.500000 hedge
+solid
+0 0.000000 12.500000 hedge
+solid
+0 0.000000 11.500000 hedge
+solid
+0 0.000000 10.500000 hedge
+solid
+0 0.000000 9.500000 hedge
+solid
+0 0.000000 8.500000 hedge
+solid
+0 0.000000 7.500000 hedge
+solid
+0 0.000000 6.500000 hedge
+solid
+0 0.000000 5.500000 hedge
+solid
+0 0.000000 4.500000 hedge
+solid
+0 0.000000 3.500000 hedge
+solid
+0 0.000000 2.500000 hedge
+solid
+0 0.000000 1.500000 hedge
+solid
+0 0.000000 0.500000 hedge
+solid
+0.000000 72.000000 0.500000 vedge

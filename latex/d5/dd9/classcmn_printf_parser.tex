@@ -1,0 +1,252 @@
+\hypertarget{classcmn_printf_parser}{}\section{cmn\+Printf\+Parser Class Reference}
+\label{classcmn_printf_parser}\index{cmn\+Printf\+Parser@{cmn\+Printf\+Parser}}
+
+
+Parser for \hyperlink{classcmn_printf}{cmn\+Printf}.  
+
+
+
+
+{\ttfamily \#include $<$cmn\+Printf.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \hyperlink{group__cisst_common_gga2dbb69cb7aa030799fad9b8d7a1857d5af9f1fd3238867d902ee69418278958a9}{B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+Z\+E} = 256
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcmn_printf_parser_ac1b7a21e87f67c2794d96b6396684605}{cmn\+Printf\+Parser} (std\+::ostream \&output, const \hyperlink{classcmn_printf}{cmn\+Printf} \&output\+Format)
+\item 
+void \hyperlink{classcmn_printf_parser_ae00c0714e7d6a40d948adea3f853831a}{Raw\+Output} (const char $\ast$text)
+\item 
+{\footnotesize template$<$class \+\_\+arg\+Type $>$ }\\\hyperlink{classcmn_printf_parser}{cmn\+Printf\+Parser} \& \hyperlink{classcmn_printf_parser_ac71563adac7e161bcdfd2818fd1d5223}{operator$<$$<$} (const \+\_\+arg\+Type \&data\+Out)
+\item 
+\hyperlink{classcmn_printf_parser}{cmn\+Printf\+Parser} \& \hyperlink{classcmn_printf_parser_a09d2d6905e95ed2be82b6818bf33bdf7}{operator$<$$<$} (const int data\+Out)
+\item 
+\hyperlink{classcmn_printf_parser}{cmn\+Printf\+Parser} \& \hyperlink{classcmn_printf_parser_a89b9cf7fb07f9515f36afc8d4615f51d}{operator$<$$<$} (const std\+::string \&data\+Out)
+\item 
+\hyperlink{classcmn_printf_parser_a5658260befa307892d4d0f5a8d64ede2}{operator bool} (void)
+\item 
+{\footnotesize template$<$typename \+\_\+output\+Type $>$ }\\bool \hyperlink{classcmn_printf_parser_a9f49769b75aac6b4ca6043d5f8f8067b}{Match\+Output\+With\+Format\+Char} (const \+\_\+output\+Type \&data)
+\item 
+bool \hyperlink{classcmn_printf_parser_a221dc91e102dcdb2f8cbd52054a4ab90}{Next\+Type\+Id\+Char\+Is\+One\+Of} (const char $\ast$type\+Id\+Charset) const 
+\item 
+void \hyperlink{classcmn_printf_parser_a0c353c4744a66855b1e276a21da5e46f}{Suspend\+Output} (void)
+\item 
+const char $\ast$ \hyperlink{classcmn_printf_parser_a2908968461a5524557ec1edbc08d244e}{Get\+Next\+Format\+Sequence} (void) const 
+\item 
+char \hyperlink{classcmn_printf_parser_aa27ed28b25589a5fd2d8719c2510f265}{Get\+Next\+Type\+Id\+Character} (void) const 
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static const char $\ast$ \hyperlink{classcmn_printf_parser_a4f993a50dd44170213634a69ddb6f506}{Type\+Id\+String} (double \hyperlink{cmn_portability_8h_a021894e2626935fa2305434b1e893ff6}{C\+M\+N\+\_\+\+U\+N\+U\+S\+E\+D}(value))
+\item 
+static const char $\ast$ \hyperlink{classcmn_printf_parser_a1ffb0e3946131318695e296f2fe9ae83}{Type\+Id\+String} (float \hyperlink{cmn_portability_8h_a021894e2626935fa2305434b1e893ff6}{C\+M\+N\+\_\+\+U\+N\+U\+S\+E\+D}(value))
+\item 
+static const char $\ast$ \hyperlink{classcmn_printf_parser_a918ecad4cd9d270e4c665708ac6d466e}{Type\+Id\+String} (int \hyperlink{cmn_portability_8h_a021894e2626935fa2305434b1e893ff6}{C\+M\+N\+\_\+\+U\+N\+U\+S\+E\+D}(value))
+\item 
+static const char $\ast$ \hyperlink{classcmn_printf_parser_a9e8bf01b132585801476d15b086998cf}{Type\+Id\+String} (unsigned int \hyperlink{cmn_portability_8h_a021894e2626935fa2305434b1e893ff6}{C\+M\+N\+\_\+\+U\+N\+U\+S\+E\+D}(value))
+\item 
+static const char $\ast$ \hyperlink{classcmn_printf_parser_a0dfe34db38bc6607765f799ce84a71a7}{Type\+Id\+String} (long \hyperlink{cmn_portability_8h_a021894e2626935fa2305434b1e893ff6}{C\+M\+N\+\_\+\+U\+N\+U\+S\+E\+D}(value))
+\item 
+static const char $\ast$ \hyperlink{classcmn_printf_parser_a195baec1618d776f4283fbdb43715862}{Type\+Id\+String} (unsigned long \hyperlink{cmn_portability_8h_a021894e2626935fa2305434b1e893ff6}{C\+M\+N\+\_\+\+U\+N\+U\+S\+E\+D}(value))
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const char $\ast$ \hyperlink{classcmn_printf_parser_aaa4ca685e67cabb8319f6c6e5b754517}{Type\+Id\+Charset}
+\item 
+static const char $\ast$ \hyperlink{classcmn_printf_parser_aa256066fc793a612014ac148e6f5c938}{Integer\+Type\+Ids}
+\item 
+static const char $\ast$ \hyperlink{classcmn_printf_parser_ad7f764cf8f7fbb64a10f1a817b417015}{Float\+Type\+Ids}
+\item 
+static const char $\ast$ \hyperlink{classcmn_printf_parser_a44131161d46cb41973c04e59722332f1}{String\+Type\+Ids}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Parser for \hyperlink{classcmn_printf}{cmn\+Printf}. 
+
+This class performs the actual formatting of the input. It communicates with a \hyperlink{classcmn_printf}{cmn\+Printf} object, parses the format string, and sends formatted inputs to the output. Normally, the user does not deal with this class.
+
+The user may use a \hyperlink{classcmn_printf_parser}{cmn\+Printf\+Parser} object to provide formatting for new types, such as user-\/defined classes. Note that the collection of `\textquotesingle{} sequences is specified through the C sprintf set of control characters, and cannot be changed. However, the user may override an existing `\textquotesingle{} sequence to format new types with that control. For example, the sequence \char`\"{}\%d\%\char`\"{} can be used to format a single integer or a vector of integers.
+
+To format new classes, the user should provide an overload of the global function cmn\+Type\+Printf, that takes the user\textquotesingle{}s class as an input. For example,
+
+
+\begin{DoxyCode}
+\textcolor{keywordtype}{bool} \hyperlink{cmn_printf_8h_ac406128072d3288a2fcb8654c6210b3b}{cmnTypePrintf}(\hyperlink{classcmn_printf_parser}{cmnPrintfParser} & outputParser, \textcolor{keyword}{const} MyClass data);
+\end{DoxyCode}
+
+
+The function should return true if the formatting is successful, and false otherwise, although in the current implementation we ignore the return value. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcmn_printf_parser_ac1b7a21e87f67c2794d96b6396684605}{}\index{cmn\+Printf\+Parser@{cmn\+Printf\+Parser}!cmn\+Printf\+Parser@{cmn\+Printf\+Parser}}
+\index{cmn\+Printf\+Parser@{cmn\+Printf\+Parser}!cmn\+Printf\+Parser@{cmn\+Printf\+Parser}}
+\subsubsection[{cmn\+Printf\+Parser}]{\setlength{\rightskip}{0pt plus 5cm}cmn\+Printf\+Parser\+::cmn\+Printf\+Parser (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{output, }
+\item[{const {\bf cmn\+Printf} \&}]{output\+Format}
+\end{DoxyParamCaption}
+)}\label{classcmn_printf_parser_ac1b7a21e87f67c2794d96b6396684605}
+Initialize a \hyperlink{classcmn_printf}{cmn\+Printf} object with the destination output stream and a format string. 
+\begin{DoxyParams}{Parameters}
+{\em output} & the actual output stream to which text will be printed \\
+\hline
+{\em output\+Format} & a \hyperlink{classcmn_printf}{cmn\+Printf} object that holds a copy of the format string \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcmn_printf_parser_a2908968461a5524557ec1edbc08d244e}{}\index{cmn\+Printf\+Parser@{cmn\+Printf\+Parser}!Get\+Next\+Format\+Sequence@{Get\+Next\+Format\+Sequence}}
+\index{Get\+Next\+Format\+Sequence@{Get\+Next\+Format\+Sequence}!cmn\+Printf\+Parser@{cmn\+Printf\+Parser}}
+\subsubsection[{Get\+Next\+Format\+Sequence}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ cmn\+Printf\+Parser\+::\+Get\+Next\+Format\+Sequence (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classcmn_printf_parser_a2908968461a5524557ec1edbc08d244e}
+Returns the next format sequence, i.\+e., \textquotesingle{}\textquotesingle{} sequence, which is to be processed next. \hypertarget{classcmn_printf_parser_aa27ed28b25589a5fd2d8719c2510f265}{}\index{cmn\+Printf\+Parser@{cmn\+Printf\+Parser}!Get\+Next\+Type\+Id\+Character@{Get\+Next\+Type\+Id\+Character}}
+\index{Get\+Next\+Type\+Id\+Character@{Get\+Next\+Type\+Id\+Character}!cmn\+Printf\+Parser@{cmn\+Printf\+Parser}}
+\subsubsection[{Get\+Next\+Type\+Id\+Character}]{\setlength{\rightskip}{0pt plus 5cm}char cmn\+Printf\+Parser\+::\+Get\+Next\+Type\+Id\+Character (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classcmn_printf_parser_aa27ed28b25589a5fd2d8719c2510f265}
+Returns the type identifying character to be processed next \hypertarget{classcmn_printf_parser_a9f49769b75aac6b4ca6043d5f8f8067b}{}\index{cmn\+Printf\+Parser@{cmn\+Printf\+Parser}!Match\+Output\+With\+Format\+Char@{Match\+Output\+With\+Format\+Char}}
+\index{Match\+Output\+With\+Format\+Char@{Match\+Output\+With\+Format\+Char}!cmn\+Printf\+Parser@{cmn\+Printf\+Parser}}
+\subsubsection[{Match\+Output\+With\+Format\+Char}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+output\+Type $>$ bool cmn\+Printf\+Parser\+::\+Match\+Output\+With\+Format\+Char (
+\begin{DoxyParamCaption}
+\item[{const \+\_\+output\+Type \&}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classcmn_printf_parser_a9f49769b75aac6b4ca6043d5f8f8067b}
+This function matches the \char`\"{}type\char`\"{} of the given data with the set of format characters for that type, by calling Type\+Id\+String for the type of the data. The function returns true of the next format character in the format string matches the type of the data, and false otherwise. For example, if the format text is \char`\"{}\%f\char`\"{} and the data is of type double, or float, the function returns true; but if the data is of type in the function returns false. \hypertarget{classcmn_printf_parser_a221dc91e102dcdb2f8cbd52054a4ab90}{}\index{cmn\+Printf\+Parser@{cmn\+Printf\+Parser}!Next\+Type\+Id\+Char\+Is\+One\+Of@{Next\+Type\+Id\+Char\+Is\+One\+Of}}
+\index{Next\+Type\+Id\+Char\+Is\+One\+Of@{Next\+Type\+Id\+Char\+Is\+One\+Of}!cmn\+Printf\+Parser@{cmn\+Printf\+Parser}}
+\subsubsection[{Next\+Type\+Id\+Char\+Is\+One\+Of}]{\setlength{\rightskip}{0pt plus 5cm}bool cmn\+Printf\+Parser\+::\+Next\+Type\+Id\+Char\+Is\+One\+Of (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{type\+Id\+Charset}
+\end{DoxyParamCaption}
+) const}\label{classcmn_printf_parser_a221dc91e102dcdb2f8cbd52054a4ab90}
+This function matches the next type character with the string of id characters given as argument. For example, if the argument is \char`\"{}dxci\char`\"{} and the next type id in the format string was taken from \char`\"{}\%10d\char`\"{} the function returns true; but if the next type id is taken from \char`\"{}\%7.\+2f\char`\"{} the function returns false. \hypertarget{classcmn_printf_parser_a5658260befa307892d4d0f5a8d64ede2}{}\index{cmn\+Printf\+Parser@{cmn\+Printf\+Parser}!operator bool@{operator bool}}
+\index{operator bool@{operator bool}!cmn\+Printf\+Parser@{cmn\+Printf\+Parser}}
+\subsubsection[{operator bool}]{\setlength{\rightskip}{0pt plus 5cm}cmn\+Printf\+Parser\+::operator bool (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classcmn_printf_parser_a5658260befa307892d4d0f5a8d64ede2}
+Overload operator void $\ast$ to allow similar evaluations of \char`\"{}success\char`\"{} as are available for ostream. E.\+g., 
+\begin{DoxyCode}
+\textcolor{keywordflow}{if} (!std::cout) \{
+\textcolor{comment}{// do something}
+\}
+\end{DoxyCode}
+
+
+A similar test can be performed for a \hyperlink{classcmn_printf_parser}{cmn\+Printf\+Parser} object, and tests the status of the output channel. \hypertarget{classcmn_printf_parser_ac71563adac7e161bcdfd2818fd1d5223}{}\index{cmn\+Printf\+Parser@{cmn\+Printf\+Parser}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!cmn\+Printf\+Parser@{cmn\+Printf\+Parser}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+arg\+Type $>$ {\bf cmn\+Printf\+Parser}\& cmn\+Printf\+Parser\+::operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{const \+\_\+arg\+Type \&}]{data\+Out}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classcmn_printf_parser_ac71563adac7e161bcdfd2818fd1d5223}
+This is the overloaded operator $<$$<$ that formates the currenct input element and advances to the next one. It calls cmn\+Type\+Printf for the given input type. \hypertarget{classcmn_printf_parser_a09d2d6905e95ed2be82b6818bf33bdf7}{}\index{cmn\+Printf\+Parser@{cmn\+Printf\+Parser}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!cmn\+Printf\+Parser@{cmn\+Printf\+Parser}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cmn\+Printf\+Parser}\& cmn\+Printf\+Parser\+::operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{const int}]{data\+Out}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classcmn_printf_parser_a09d2d6905e95ed2be82b6818bf33bdf7}
+Overloaded operator for integers. This operator is mostly a helper for compilers which won\textquotesingle{}t convert an anonymous enum as an integer to infer the type used in the templated operator.
+
+This solution works with gcc 4.\+0.\+2 but not with gcc 4.\+0.\+1. If you get a compilation error like\+: 
+\begin{DoxyCode}
+error: \textcolor{stringliteral}{'myClass::<anonymous enum>'} is/uses anonymous type
+\end{DoxyCode}
+ You should cast your enum value to int. \hypertarget{classcmn_printf_parser_a89b9cf7fb07f9515f36afc8d4615f51d}{}\index{cmn\+Printf\+Parser@{cmn\+Printf\+Parser}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!cmn\+Printf\+Parser@{cmn\+Printf\+Parser}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cmn\+Printf\+Parser}\& cmn\+Printf\+Parser\+::operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{data\+Out}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classcmn_printf_parser_a89b9cf7fb07f9515f36afc8d4615f51d}
+Overloaded operator for std\+::string. This operators is required since there is no implicit cast from std\+::string to const char pointer. \hypertarget{classcmn_printf_parser_ae00c0714e7d6a40d948adea3f853831a}{}\index{cmn\+Printf\+Parser@{cmn\+Printf\+Parser}!Raw\+Output@{Raw\+Output}}
+\index{Raw\+Output@{Raw\+Output}!cmn\+Printf\+Parser@{cmn\+Printf\+Parser}}
+\subsubsection[{Raw\+Output}]{\setlength{\rightskip}{0pt plus 5cm}void cmn\+Printf\+Parser\+::\+Raw\+Output (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{text}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classcmn_printf_parser_ae00c0714e7d6a40d948adea3f853831a}
+Dump raw text to the output stream. The user may call this function to output any text to the stream, without internal formatting. \hypertarget{classcmn_printf_parser_a0c353c4744a66855b1e276a21da5e46f}{}\index{cmn\+Printf\+Parser@{cmn\+Printf\+Parser}!Suspend\+Output@{Suspend\+Output}}
+\index{Suspend\+Output@{Suspend\+Output}!cmn\+Printf\+Parser@{cmn\+Printf\+Parser}}
+\subsubsection[{Suspend\+Output}]{\setlength{\rightskip}{0pt plus 5cm}void cmn\+Printf\+Parser\+::\+Suspend\+Output (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classcmn_printf_parser_a0c353c4744a66855b1e276a21da5e46f}
+\hypertarget{classcmn_printf_parser_a4f993a50dd44170213634a69ddb6f506}{}\index{cmn\+Printf\+Parser@{cmn\+Printf\+Parser}!Type\+Id\+String@{Type\+Id\+String}}
+\index{Type\+Id\+String@{Type\+Id\+String}!cmn\+Printf\+Parser@{cmn\+Printf\+Parser}}
+\subsubsection[{Type\+Id\+String}]{\setlength{\rightskip}{0pt plus 5cm}static const char$\ast$ cmn\+Printf\+Parser\+::\+Type\+Id\+String (
+\begin{DoxyParamCaption}
+\item[{double }]{C\+M\+N\+\_\+\+U\+N\+U\+S\+E\+Dvalue}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classcmn_printf_parser_a4f993a50dd44170213634a69ddb6f506}
+This auxiliary function returns the set of characters that identify a double variable in the \textquotesingle{}\textquotesingle{} sequence, such as \textquotesingle{}e\textquotesingle{}, \textquotesingle{}f\textquotesingle{}, \textquotesingle{}g\textquotesingle{}, etc. \hypertarget{classcmn_printf_parser_a1ffb0e3946131318695e296f2fe9ae83}{}\index{cmn\+Printf\+Parser@{cmn\+Printf\+Parser}!Type\+Id\+String@{Type\+Id\+String}}
+\index{Type\+Id\+String@{Type\+Id\+String}!cmn\+Printf\+Parser@{cmn\+Printf\+Parser}}
+\subsubsection[{Type\+Id\+String}]{\setlength{\rightskip}{0pt plus 5cm}static const char$\ast$ cmn\+Printf\+Parser\+::\+Type\+Id\+String (
+\begin{DoxyParamCaption}
+\item[{float }]{C\+M\+N\+\_\+\+U\+N\+U\+S\+E\+Dvalue}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classcmn_printf_parser_a1ffb0e3946131318695e296f2fe9ae83}
+This auxiliary function returns the set of characters that identify a float variable in the \textquotesingle{}\textquotesingle{} sequence, such as \textquotesingle{}e\textquotesingle{}, \textquotesingle{}f\textquotesingle{}, \textquotesingle{}g\textquotesingle{}, etc. \hypertarget{classcmn_printf_parser_a918ecad4cd9d270e4c665708ac6d466e}{}\index{cmn\+Printf\+Parser@{cmn\+Printf\+Parser}!Type\+Id\+String@{Type\+Id\+String}}
+\index{Type\+Id\+String@{Type\+Id\+String}!cmn\+Printf\+Parser@{cmn\+Printf\+Parser}}
+\subsubsection[{Type\+Id\+String}]{\setlength{\rightskip}{0pt plus 5cm}static const char$\ast$ cmn\+Printf\+Parser\+::\+Type\+Id\+String (
+\begin{DoxyParamCaption}
+\item[{int }]{C\+M\+N\+\_\+\+U\+N\+U\+S\+E\+Dvalue}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classcmn_printf_parser_a918ecad4cd9d270e4c665708ac6d466e}
+This auxiliary function returns the set of characters that identify an int variable in the \textquotesingle{}\textquotesingle{} sequence, such as \textquotesingle{}d\textquotesingle{}, \textquotesingle{}x\textquotesingle{}, \textquotesingle{}o\textquotesingle{}, etc. \hypertarget{classcmn_printf_parser_a9e8bf01b132585801476d15b086998cf}{}\index{cmn\+Printf\+Parser@{cmn\+Printf\+Parser}!Type\+Id\+String@{Type\+Id\+String}}
+\index{Type\+Id\+String@{Type\+Id\+String}!cmn\+Printf\+Parser@{cmn\+Printf\+Parser}}
+\subsubsection[{Type\+Id\+String}]{\setlength{\rightskip}{0pt plus 5cm}static const char$\ast$ cmn\+Printf\+Parser\+::\+Type\+Id\+String (
+\begin{DoxyParamCaption}
+\item[{unsigned int }]{C\+M\+N\+\_\+\+U\+N\+U\+S\+E\+Dvalue}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classcmn_printf_parser_a9e8bf01b132585801476d15b086998cf}
+This auxiliary function returns the set of characters that identify an int variable in the \textquotesingle{}\textquotesingle{} sequence, such as \textquotesingle{}d\textquotesingle{}, \textquotesingle{}x\textquotesingle{}, \textquotesingle{}o\textquotesingle{}, etc. \hypertarget{classcmn_printf_parser_a0dfe34db38bc6607765f799ce84a71a7}{}\index{cmn\+Printf\+Parser@{cmn\+Printf\+Parser}!Type\+Id\+String@{Type\+Id\+String}}
+\index{Type\+Id\+String@{Type\+Id\+String}!cmn\+Printf\+Parser@{cmn\+Printf\+Parser}}
+\subsubsection[{Type\+Id\+String}]{\setlength{\rightskip}{0pt plus 5cm}static const char$\ast$ cmn\+Printf\+Parser\+::\+Type\+Id\+String (
+\begin{DoxyParamCaption}
+\item[{long }]{C\+M\+N\+\_\+\+U\+N\+U\+S\+E\+Dvalue}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classcmn_printf_parser_a0dfe34db38bc6607765f799ce84a71a7}
+This auxiliary function returns the set of characters that identify a long variable in the \textquotesingle{}\textquotesingle{} sequence, such as \textquotesingle{}d\textquotesingle{}, \textquotesingle{}x\textquotesingle{}, \textquotesingle{}o\textquotesingle{}, etc. \hypertarget{classcmn_printf_parser_a195baec1618d776f4283fbdb43715862}{}\index{cmn\+Printf\+Parser@{cmn\+Printf\+Parser}!Type\+Id\+String@{Type\+Id\+String}}
+\index{Type\+Id\+String@{Type\+Id\+String}!cmn\+Printf\+Parser@{cmn\+Printf\+Parser}}
+\subsubsection[{Type\+Id\+String}]{\setlength{\rightskip}{0pt plus 5cm}static const char$\ast$ cmn\+Printf\+Parser\+::\+Type\+Id\+String (
+\begin{DoxyParamCaption}
+\item[{unsigned long }]{C\+M\+N\+\_\+\+U\+N\+U\+S\+E\+Dvalue}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classcmn_printf_parser_a195baec1618d776f4283fbdb43715862}
+This auxiliary function returns the set of characters that identify an unsigned long variable in the \textquotesingle{}\textquotesingle{} sequence, such as \textquotesingle{}d\textquotesingle{}, \textquotesingle{}x\textquotesingle{}, \textquotesingle{}o\textquotesingle{}, etc. 
+
+\subsection{Member Data Documentation}
+\hypertarget{classcmn_printf_parser_ad7f764cf8f7fbb64a10f1a817b417015}{}\index{cmn\+Printf\+Parser@{cmn\+Printf\+Parser}!Float\+Type\+Ids@{Float\+Type\+Ids}}
+\index{Float\+Type\+Ids@{Float\+Type\+Ids}!cmn\+Printf\+Parser@{cmn\+Printf\+Parser}}
+\subsubsection[{Float\+Type\+Ids}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ cmn\+Printf\+Parser\+::\+Float\+Type\+Ids\hspace{0.3cm}{\ttfamily [static]}}\label{classcmn_printf_parser_ad7f764cf8f7fbb64a10f1a817b417015}
+The collection of characters that identify floating-\/point output \hypertarget{classcmn_printf_parser_aa256066fc793a612014ac148e6f5c938}{}\index{cmn\+Printf\+Parser@{cmn\+Printf\+Parser}!Integer\+Type\+Ids@{Integer\+Type\+Ids}}
+\index{Integer\+Type\+Ids@{Integer\+Type\+Ids}!cmn\+Printf\+Parser@{cmn\+Printf\+Parser}}
+\subsubsection[{Integer\+Type\+Ids}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ cmn\+Printf\+Parser\+::\+Integer\+Type\+Ids\hspace{0.3cm}{\ttfamily [static]}}\label{classcmn_printf_parser_aa256066fc793a612014ac148e6f5c938}
+The collection of characters that identify integer output \hypertarget{classcmn_printf_parser_a44131161d46cb41973c04e59722332f1}{}\index{cmn\+Printf\+Parser@{cmn\+Printf\+Parser}!String\+Type\+Ids@{String\+Type\+Ids}}
+\index{String\+Type\+Ids@{String\+Type\+Ids}!cmn\+Printf\+Parser@{cmn\+Printf\+Parser}}
+\subsubsection[{String\+Type\+Ids}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ cmn\+Printf\+Parser\+::\+String\+Type\+Ids\hspace{0.3cm}{\ttfamily [static]}}\label{classcmn_printf_parser_a44131161d46cb41973c04e59722332f1}
+The collection of characters that identify strings, e.\+g., \textquotesingle{}s\textquotesingle{} \hypertarget{classcmn_printf_parser_aaa4ca685e67cabb8319f6c6e5b754517}{}\index{cmn\+Printf\+Parser@{cmn\+Printf\+Parser}!Type\+Id\+Charset@{Type\+Id\+Charset}}
+\index{Type\+Id\+Charset@{Type\+Id\+Charset}!cmn\+Printf\+Parser@{cmn\+Printf\+Parser}}
+\subsubsection[{Type\+Id\+Charset}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ cmn\+Printf\+Parser\+::\+Type\+Id\+Charset\hspace{0.3cm}{\ttfamily [static]}}\label{classcmn_printf_parser_aaa4ca685e67cabb8319f6c6e5b754517}
+The complete collection of type identifying characters which can be used in printf 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Common/\hyperlink{cmn_printf_8h}{cmn\+Printf.\+h}\end{DoxyCompactItemize}

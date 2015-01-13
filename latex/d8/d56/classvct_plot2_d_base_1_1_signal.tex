@@ -1,0 +1,381 @@
+\hypertarget{classvct_plot2_d_base_1_1_signal}{}\section{vct\+Plot2\+D\+Base\+:\+:Signal Class Reference}
+\label{classvct_plot2_d_base_1_1_signal}\index{vct\+Plot2\+D\+Base\+::\+Signal@{vct\+Plot2\+D\+Base\+::\+Signal}}
+
+
+{\ttfamily \#include $<$vct\+Plot2\+D\+Base.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classvct_plot2_d_base_1_1_signal_ab095234489c14783246b6037ea6c1820}{Signal} (const std\+::string \&name, size\+\_\+t number\+Of\+Points, size\+\_\+t point\+Dimension=2)
+\item 
+\hyperlink{classvct_plot2_d_base_1_1_signal_a74fd6d127a4f44cabf148f7b7267e036}{$\sim$\+Signal} ()
+\item 
+void \hyperlink{cmn_portability_8h_a63da7164735f9501be651b1f2bbc0121}{C\+I\+S\+S\+T\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D} \hyperlink{classvct_plot2_d_base_1_1_signal_a1f5b48d4843fef660afac788f09d20ab}{Add\+Point} (const \hyperlink{vct_fixed_size_vector_types_8h_afc0fdcc41cbe8b043747612501610812}{vct\+Double2} \&point)
+\item 
+void \hyperlink{classvct_plot2_d_base_1_1_signal_a05c35a4ab52fefa871268ef952d31e50}{Append\+Point} (const \hyperlink{vct_fixed_size_vector_types_8h_afc0fdcc41cbe8b043747612501610812}{vct\+Double2} \&point)
+\item 
+\hyperlink{vct_fixed_size_vector_types_8h_afc0fdcc41cbe8b043747612501610812}{vct\+Double2} \hyperlink{classvct_plot2_d_base_1_1_signal_a3d37044fdbd4cf336c04851a775be70c}{Get\+Point\+At} (size\+\_\+t index)  throw (std\+::runtime\+\_\+error)
+\item 
+void \hyperlink{classvct_plot2_d_base_1_1_signal_ae7234b9ab496f6af9713b34ecc80123a}{Set\+Point\+At} (size\+\_\+t index, const \hyperlink{vct_fixed_size_vector_types_8h_afc0fdcc41cbe8b043747612501610812}{vct\+Double2} \&point)  throw (std\+::runtime\+\_\+error)
+\item 
+void \hyperlink{classvct_plot2_d_base_1_1_signal_acac355be74456036634f204da1169c76}{Set\+Array\+At} (size\+\_\+t index, const double $\ast$point\+Array, size\+\_\+t array\+Size, size\+\_\+t point\+Dimension=2)  throw (std\+::runtime\+\_\+error)
+\item 
+bool \hyperlink{classvct_plot2_d_base_1_1_signal_a3a94c6565eb51445019fb41c4f1dc620}{Prepend\+Array} (const double $\ast$point\+Array, size\+\_\+t array\+Size, size\+\_\+t point\+Dimension=2)  throw (std\+::runtime\+\_\+error)
+\item 
+bool \hyperlink{classvct_plot2_d_base_1_1_signal_a3ca34a96793c8205973b5e21f6ccee83}{Append\+Array} (const double $\ast$point\+Array, size\+\_\+t array\+Size, size\+\_\+t point\+Dimension=2)  throw (std\+::runtime\+\_\+error)
+\item 
+void \hyperlink{classvct_plot2_d_base_1_1_signal_a64e25eabe599bfee8ce41e3bb413d10a}{Freeze} (bool freeze)
+\item 
+bool \hyperlink{classvct_plot2_d_base_1_1_signal_af589f83e274a70f465a700ddb33d95cd}{Get\+Freeze} (void) const 
+\item 
+void \hyperlink{cmn_portability_8h_a63da7164735f9501be651b1f2bbc0121}{C\+I\+S\+S\+T\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D} \hyperlink{classvct_plot2_d_base_1_1_signal_ac2bc150d895d678d753ac2dd3e99ce25}{Set\+Number\+Of\+Points} (size\+\_\+t number\+Of\+Points)
+\item 
+void \hyperlink{cmn_portability_8h_a63da7164735f9501be651b1f2bbc0121}{C\+I\+S\+S\+T\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D} \hyperlink{classvct_plot2_d_base_1_1_signal_aa85a26d0ae7863acb04f2d14cb5ed5a5}{Get\+Number\+Of\+Points} (size\+\_\+t \&number\+Of\+Points, size\+\_\+t \&buffer\+Size) const 
+\item 
+size\+\_\+t \hyperlink{classvct_plot2_d_base_1_1_signal_a3b291e4f8bcfe303086303cabea7ab1d}{Get\+Size} (void) const 
+\item 
+size\+\_\+t \hyperlink{classvct_plot2_d_base_1_1_signal_aae57a98944162e9eff828fcb35976ae5}{Get\+Number\+Of\+Points} (void) const 
+\item 
+void \hyperlink{classvct_plot2_d_base_1_1_signal_a0eae059cf46cd21594b8b30082a31a7c}{Set\+Color} (const \hyperlink{vct_fixed_size_vector_types_8h_a4a89122c9d7f72c3f31fe8126e17c3af}{vct\+Double3} \&color\+In\+Range0\+To1)
+\item 
+void \hyperlink{classvct_plot2_d_base_1_1_signal_ad3e1cca15d592cd22788ec4260da9de5}{Set\+Size} (size\+\_\+t number\+Of\+Points)
+\item 
+bool \hyperlink{classvct_plot2_d_base_1_1_signal_a106f7f6083ecde72ddbcfa923febc01f}{Is\+Visible} (void) const 
+\item 
+void \hyperlink{classvct_plot2_d_base_1_1_signal_ad20fd7a374f607e7ae5ddf632c58bc56}{Set\+Visible} (const bool visible)
+\item 
+void \hyperlink{classvct_plot2_d_base_1_1_signal_a2614ca9ee337428ef780788f94a50474}{Resize} (size\+\_\+t number\+Of\+Points, bool trim\+Older=true)
+\item 
+\hyperlink{classvct_plot2_d_base_1_1_signal}{vct\+Plot2\+D\+Base\+::\+Signal} $\ast$ \hyperlink{classvct_plot2_d_base_1_1_signal_ac3b25683c0fc73be0851daa0a8601693}{Add\+Signal} (const std\+::string \&name)
+\item 
+\hyperlink{classvct_plot2_d_base_1_1_scale}{vct\+Plot2\+D\+Base\+::\+Scale} $\ast$ \hyperlink{classvct_plot2_d_base_1_1_signal_ad5ad5a5ac33cbdb3d258260419a62af5}{Get\+Parent} (void)
+\item 
+const std\+::string \& \hyperlink{classvct_plot2_d_base_1_1_signal_a876661f9df487814fc833a76ec849606}{Get\+Name} (void) const 
+\end{DoxyCompactItemize}
+{\bf }\par
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classvct_plot2_d_base_1_1_signal_ad3c405fcaf31f7af60b4c0fdabc6006b}{Compute\+Data\+Range\+X} (double \&min, double \&max, bool assumes\+Data\+Sorted=false) const 
+\item 
+void \hyperlink{classvct_plot2_d_base_1_1_signal_a59133a2bee2795a8931bcc8f2cac96a1}{Compute\+Data\+Range\+Y} (double \&min, double \&max) const 
+\item 
+void \hyperlink{classvct_plot2_d_base_1_1_signal_a16f1ed79c4dde3cec730c324be029f42}{Compute\+Data\+Range\+X\+Y} (\hyperlink{vct_fixed_size_vector_types_8h_afc0fdcc41cbe8b043747612501610812}{vct\+Double2} \&min, \hyperlink{vct_fixed_size_vector_types_8h_afc0fdcc41cbe8b043747612501610812}{vct\+Double2} \&max) const 
+\end{DoxyCompactItemize}
+
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classvct_fixed_size_vector_ref}{vct\+Fixed\+Size\+Vector\+Ref}$<$ double, 2, 1 $>$ \hyperlink{classvct_plot2_d_base_1_1_signal_a81b636c91281333319b7f806b8432b92}{Point\+Ref}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classvct_plot2_d_base_1_1_scale}{Scale} $\ast$ \hyperlink{classvct_plot2_d_base_1_1_signal_ac96c27d6b67933a136845f700bc4e22c}{Parent}
+\item 
+std\+::string \hyperlink{classvct_plot2_d_base_1_1_signal_afbc80a39a5230239d4b8d55ea36586ea}{Name}
+\item 
+bool \hyperlink{classvct_plot2_d_base_1_1_signal_a6cb2569f99ffcc9a3cf4c4be60c94810}{Empty}
+\item 
+bool \hyperlink{classvct_plot2_d_base_1_1_signal_a7b4f18f8aef3c6353c64d86274c397bd}{Visible}
+\item 
+bool \hyperlink{classvct_plot2_d_base_1_1_signal_a3290add28cf7247ab5ca703b8b4ba9e7}{Frozen}
+\item 
+double $\ast$ \hyperlink{classvct_plot2_d_base_1_1_signal_a7b068b5ebd95f73ccafa04c5f7e10b28}{Buffer}
+\item 
+size\+\_\+t \hyperlink{classvct_plot2_d_base_1_1_signal_a3c18f2c69447f7e310510f9749f9000f}{Point\+Size}
+\item 
+\hyperlink{classvct_dynamic_vector}{vct\+Dynamic\+Vector}$<$ \hyperlink{classvct_plot2_d_base_1_1_signal_a81b636c91281333319b7f806b8432b92}{Point\+Ref} $>$ \hyperlink{classvct_plot2_d_base_1_1_signal_a67281dea46193aed681097745bb88c81}{Data}
+\item 
+size\+\_\+t \hyperlink{classvct_plot2_d_base_1_1_signal_ada6747545b67992a43f9b7670ec3be78}{Index\+First}
+\item 
+size\+\_\+t \hyperlink{classvct_plot2_d_base_1_1_signal_aa1abcd7a414b288732279f5e2868abcd}{Index\+Last}
+\item 
+\hyperlink{vct_fixed_size_vector_types_8h_a4a89122c9d7f72c3f31fe8126e17c3af}{vct\+Double3} \hyperlink{classvct_plot2_d_base_1_1_signal_a8c99562aebf260551eaf9444b25d7cc9}{Color}
+\item 
+double \hyperlink{classvct_plot2_d_base_1_1_signal_a9f7fa630a56b5168d0150c2079a40048}{Line\+Width}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classvct_plot2_d_base_1_1_signal_ab1e5a371f284a693f5624104a92ac684}{vct\+Plot2\+D\+Base}
+\item 
+class \hyperlink{classvct_plot2_d_base_1_1_signal_a2608173200dac970514b9c1d56379e99}{vct\+Plot2\+D\+Base\+::\+Scale}
+\item 
+class \hyperlink{classvct_plot2_d_base_1_1_signal_a2a04e9e21d2a68342a48b433ff25b7f7}{vct\+Plot2\+D\+Open\+G\+L}
+\item 
+class \hyperlink{classvct_plot2_d_base_1_1_signal_a61e8f9a436596e1195d2b34b7b5c6f2e}{vct\+Plot2\+D\+V\+T\+K}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Storage for a given signal. Each signal stores the data to display in a vector (\hyperlink{classvct_dynamic_vector}{vct\+Dynamic\+Vector}) of points (vct\+Double2). To prevent dynamic re-\/allocation, this class uses a \char`\"{}circular
+buffer\char`\"{}. 
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classvct_plot2_d_base_1_1_signal_a81b636c91281333319b7f806b8432b92}{}\index{vct\+Plot2\+D\+Base\+::\+Signal@{vct\+Plot2\+D\+Base\+::\+Signal}!Point\+Ref@{Point\+Ref}}
+\index{Point\+Ref@{Point\+Ref}!vct\+Plot2\+D\+Base\+::\+Signal@{vct\+Plot2\+D\+Base\+::\+Signal}}
+\subsubsection[{Point\+Ref}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf vct\+Fixed\+Size\+Vector\+Ref}$<$double, 2, 1$>$ {\bf vct\+Plot2\+D\+Base\+::\+Signal\+::\+Point\+Ref}\hspace{0.3cm}{\ttfamily [protected]}}\label{classvct_plot2_d_base_1_1_signal_a81b636c91281333319b7f806b8432b92}
+Vector of references to the data to add, compute min/max, ... 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classvct_plot2_d_base_1_1_signal_ab095234489c14783246b6037ea6c1820}{}\index{vct\+Plot2\+D\+Base\+::\+Signal@{vct\+Plot2\+D\+Base\+::\+Signal}!Signal@{Signal}}
+\index{Signal@{Signal}!vct\+Plot2\+D\+Base\+::\+Signal@{vct\+Plot2\+D\+Base\+::\+Signal}}
+\subsubsection[{Signal}]{\setlength{\rightskip}{0pt plus 5cm}vct\+Plot2\+D\+Base\+::\+Signal\+::\+Signal (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name, }
+\item[{size\+\_\+t}]{number\+Of\+Points, }
+\item[{size\+\_\+t}]{point\+Dimension = {\ttfamily 2}}
+\end{DoxyParamCaption}
+)}\label{classvct_plot2_d_base_1_1_signal_ab095234489c14783246b6037ea6c1820}
+\hypertarget{classvct_plot2_d_base_1_1_signal_a74fd6d127a4f44cabf148f7b7267e036}{}\index{vct\+Plot2\+D\+Base\+::\+Signal@{vct\+Plot2\+D\+Base\+::\+Signal}!````~Signal@{$\sim$\+Signal}}
+\index{````~Signal@{$\sim$\+Signal}!vct\+Plot2\+D\+Base\+::\+Signal@{vct\+Plot2\+D\+Base\+::\+Signal}}
+\subsubsection[{$\sim$\+Signal}]{\setlength{\rightskip}{0pt plus 5cm}vct\+Plot2\+D\+Base\+::\+Signal\+::$\sim$\+Signal (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classvct_plot2_d_base_1_1_signal_a74fd6d127a4f44cabf148f7b7267e036}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classvct_plot2_d_base_1_1_signal_a1f5b48d4843fef660afac788f09d20ab}{}\index{vct\+Plot2\+D\+Base\+::\+Signal@{vct\+Plot2\+D\+Base\+::\+Signal}!Add\+Point@{Add\+Point}}
+\index{Add\+Point@{Add\+Point}!vct\+Plot2\+D\+Base\+::\+Signal@{vct\+Plot2\+D\+Base\+::\+Signal}}
+\subsubsection[{Add\+Point}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf C\+I\+S\+S\+T\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D} vct\+Plot2\+D\+Base\+::\+Signal\+::\+Add\+Point (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Double2} \&}]{point}
+\end{DoxyParamCaption}
+)}\label{classvct_plot2_d_base_1_1_signal_a1f5b48d4843fef660afac788f09d20ab}
+\hypertarget{classvct_plot2_d_base_1_1_signal_ac3b25683c0fc73be0851daa0a8601693}{}\index{vct\+Plot2\+D\+Base\+::\+Signal@{vct\+Plot2\+D\+Base\+::\+Signal}!Add\+Signal@{Add\+Signal}}
+\index{Add\+Signal@{Add\+Signal}!vct\+Plot2\+D\+Base\+::\+Signal@{vct\+Plot2\+D\+Base\+::\+Signal}}
+\subsubsection[{Add\+Signal}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Plot2\+D\+Base\+::\+Signal}$\ast$ vct\+Plot2\+D\+Base\+::\+Signal\+::\+Add\+Signal (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name}
+\end{DoxyParamCaption}
+)}\label{classvct_plot2_d_base_1_1_signal_ac3b25683c0fc73be0851daa0a8601693}
+\hypertarget{classvct_plot2_d_base_1_1_signal_a3ca34a96793c8205973b5e21f6ccee83}{}\index{vct\+Plot2\+D\+Base\+::\+Signal@{vct\+Plot2\+D\+Base\+::\+Signal}!Append\+Array@{Append\+Array}}
+\index{Append\+Array@{Append\+Array}!vct\+Plot2\+D\+Base\+::\+Signal@{vct\+Plot2\+D\+Base\+::\+Signal}}
+\subsubsection[{Append\+Array}]{\setlength{\rightskip}{0pt plus 5cm}bool vct\+Plot2\+D\+Base\+::\+Signal\+::\+Append\+Array (
+\begin{DoxyParamCaption}
+\item[{const double $\ast$}]{point\+Array, }
+\item[{size\+\_\+t}]{array\+Size, }
+\item[{size\+\_\+t}]{point\+Dimension = {\ttfamily 2}}
+\end{DoxyParamCaption}
+) throw  std\+::runtime\+\_\+error) }\label{classvct_plot2_d_base_1_1_signal_a3ca34a96793c8205973b5e21f6ccee83}
+Append user provided data at the end of the circular buffer. If the buffer is full or doesn\textquotesingle{}t have enough free space, data will be overwritten at the beginning of buffer. This method will throw an exception if either the array size or index is invalid. \hypertarget{classvct_plot2_d_base_1_1_signal_a05c35a4ab52fefa871268ef952d31e50}{}\index{vct\+Plot2\+D\+Base\+::\+Signal@{vct\+Plot2\+D\+Base\+::\+Signal}!Append\+Point@{Append\+Point}}
+\index{Append\+Point@{Append\+Point}!vct\+Plot2\+D\+Base\+::\+Signal@{vct\+Plot2\+D\+Base\+::\+Signal}}
+\subsubsection[{Append\+Point}]{\setlength{\rightskip}{0pt plus 5cm}void vct\+Plot2\+D\+Base\+::\+Signal\+::\+Append\+Point (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Double2} \&}]{point}
+\end{DoxyParamCaption}
+)}\label{classvct_plot2_d_base_1_1_signal_a05c35a4ab52fefa871268ef952d31e50}
+Insert point at last position and move last position forward. If the circular buffer is full, this methods overwrite the first element. \hypertarget{classvct_plot2_d_base_1_1_signal_ad3c405fcaf31f7af60b4c0fdabc6006b}{}\index{vct\+Plot2\+D\+Base\+::\+Signal@{vct\+Plot2\+D\+Base\+::\+Signal}!Compute\+Data\+Range\+X@{Compute\+Data\+Range\+X}}
+\index{Compute\+Data\+Range\+X@{Compute\+Data\+Range\+X}!vct\+Plot2\+D\+Base\+::\+Signal@{vct\+Plot2\+D\+Base\+::\+Signal}}
+\subsubsection[{Compute\+Data\+Range\+X}]{\setlength{\rightskip}{0pt plus 5cm}void vct\+Plot2\+D\+Base\+::\+Signal\+::\+Compute\+Data\+Range\+X (
+\begin{DoxyParamCaption}
+\item[{double \&}]{min, }
+\item[{double \&}]{max, }
+\item[{bool}]{assumes\+Data\+Sorted = {\ttfamily false}}
+\end{DoxyParamCaption}
+) const}\label{classvct_plot2_d_base_1_1_signal_ad3c405fcaf31f7af60b4c0fdabc6006b}
+Compute min and max over all points to recenter display. If the buffer contains no point, returns 0. \hypertarget{classvct_plot2_d_base_1_1_signal_a16f1ed79c4dde3cec730c324be029f42}{}\index{vct\+Plot2\+D\+Base\+::\+Signal@{vct\+Plot2\+D\+Base\+::\+Signal}!Compute\+Data\+Range\+X\+Y@{Compute\+Data\+Range\+X\+Y}}
+\index{Compute\+Data\+Range\+X\+Y@{Compute\+Data\+Range\+X\+Y}!vct\+Plot2\+D\+Base\+::\+Signal@{vct\+Plot2\+D\+Base\+::\+Signal}}
+\subsubsection[{Compute\+Data\+Range\+X\+Y}]{\setlength{\rightskip}{0pt plus 5cm}void vct\+Plot2\+D\+Base\+::\+Signal\+::\+Compute\+Data\+Range\+X\+Y (
+\begin{DoxyParamCaption}
+\item[{{\bf vct\+Double2} \&}]{min, }
+\item[{{\bf vct\+Double2} \&}]{max}
+\end{DoxyParamCaption}
+) const}\label{classvct_plot2_d_base_1_1_signal_a16f1ed79c4dde3cec730c324be029f42}
+\hypertarget{classvct_plot2_d_base_1_1_signal_a59133a2bee2795a8931bcc8f2cac96a1}{}\index{vct\+Plot2\+D\+Base\+::\+Signal@{vct\+Plot2\+D\+Base\+::\+Signal}!Compute\+Data\+Range\+Y@{Compute\+Data\+Range\+Y}}
+\index{Compute\+Data\+Range\+Y@{Compute\+Data\+Range\+Y}!vct\+Plot2\+D\+Base\+::\+Signal@{vct\+Plot2\+D\+Base\+::\+Signal}}
+\subsubsection[{Compute\+Data\+Range\+Y}]{\setlength{\rightskip}{0pt plus 5cm}void vct\+Plot2\+D\+Base\+::\+Signal\+::\+Compute\+Data\+Range\+Y (
+\begin{DoxyParamCaption}
+\item[{double \&}]{min, }
+\item[{double \&}]{max}
+\end{DoxyParamCaption}
+) const}\label{classvct_plot2_d_base_1_1_signal_a59133a2bee2795a8931bcc8f2cac96a1}
+\hypertarget{classvct_plot2_d_base_1_1_signal_a64e25eabe599bfee8ce41e3bb413d10a}{}\index{vct\+Plot2\+D\+Base\+::\+Signal@{vct\+Plot2\+D\+Base\+::\+Signal}!Freeze@{Freeze}}
+\index{Freeze@{Freeze}!vct\+Plot2\+D\+Base\+::\+Signal@{vct\+Plot2\+D\+Base\+::\+Signal}}
+\subsubsection[{Freeze}]{\setlength{\rightskip}{0pt plus 5cm}void vct\+Plot2\+D\+Base\+::\+Signal\+::\+Freeze (
+\begin{DoxyParamCaption}
+\item[{bool}]{freeze}
+\end{DoxyParamCaption}
+)}\label{classvct_plot2_d_base_1_1_signal_a64e25eabe599bfee8ce41e3bb413d10a}
+\hypertarget{classvct_plot2_d_base_1_1_signal_af589f83e274a70f465a700ddb33d95cd}{}\index{vct\+Plot2\+D\+Base\+::\+Signal@{vct\+Plot2\+D\+Base\+::\+Signal}!Get\+Freeze@{Get\+Freeze}}
+\index{Get\+Freeze@{Get\+Freeze}!vct\+Plot2\+D\+Base\+::\+Signal@{vct\+Plot2\+D\+Base\+::\+Signal}}
+\subsubsection[{Get\+Freeze}]{\setlength{\rightskip}{0pt plus 5cm}bool vct\+Plot2\+D\+Base\+::\+Signal\+::\+Get\+Freeze (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classvct_plot2_d_base_1_1_signal_af589f83e274a70f465a700ddb33d95cd}
+\hypertarget{classvct_plot2_d_base_1_1_signal_a876661f9df487814fc833a76ec849606}{}\index{vct\+Plot2\+D\+Base\+::\+Signal@{vct\+Plot2\+D\+Base\+::\+Signal}!Get\+Name@{Get\+Name}}
+\index{Get\+Name@{Get\+Name}!vct\+Plot2\+D\+Base\+::\+Signal@{vct\+Plot2\+D\+Base\+::\+Signal}}
+\subsubsection[{Get\+Name}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string\& vct\+Plot2\+D\+Base\+::\+Signal\+::\+Get\+Name (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classvct_plot2_d_base_1_1_signal_a876661f9df487814fc833a76ec849606}
+\hypertarget{classvct_plot2_d_base_1_1_signal_aa85a26d0ae7863acb04f2d14cb5ed5a5}{}\index{vct\+Plot2\+D\+Base\+::\+Signal@{vct\+Plot2\+D\+Base\+::\+Signal}!Get\+Number\+Of\+Points@{Get\+Number\+Of\+Points}}
+\index{Get\+Number\+Of\+Points@{Get\+Number\+Of\+Points}!vct\+Plot2\+D\+Base\+::\+Signal@{vct\+Plot2\+D\+Base\+::\+Signal}}
+\subsubsection[{Get\+Number\+Of\+Points}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf C\+I\+S\+S\+T\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D} vct\+Plot2\+D\+Base\+::\+Signal\+::\+Get\+Number\+Of\+Points (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t \&}]{number\+Of\+Points, }
+\item[{size\+\_\+t \&}]{buffer\+Size}
+\end{DoxyParamCaption}
+) const}\label{classvct_plot2_d_base_1_1_signal_aa85a26d0ae7863acb04f2d14cb5ed5a5}
+\hypertarget{classvct_plot2_d_base_1_1_signal_aae57a98944162e9eff828fcb35976ae5}{}\index{vct\+Plot2\+D\+Base\+::\+Signal@{vct\+Plot2\+D\+Base\+::\+Signal}!Get\+Number\+Of\+Points@{Get\+Number\+Of\+Points}}
+\index{Get\+Number\+Of\+Points@{Get\+Number\+Of\+Points}!vct\+Plot2\+D\+Base\+::\+Signal@{vct\+Plot2\+D\+Base\+::\+Signal}}
+\subsubsection[{Get\+Number\+Of\+Points}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t vct\+Plot2\+D\+Base\+::\+Signal\+::\+Get\+Number\+Of\+Points (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classvct_plot2_d_base_1_1_signal_aae57a98944162e9eff828fcb35976ae5}
+Get number of points. \hypertarget{classvct_plot2_d_base_1_1_signal_ad5ad5a5ac33cbdb3d258260419a62af5}{}\index{vct\+Plot2\+D\+Base\+::\+Signal@{vct\+Plot2\+D\+Base\+::\+Signal}!Get\+Parent@{Get\+Parent}}
+\index{Get\+Parent@{Get\+Parent}!vct\+Plot2\+D\+Base\+::\+Signal@{vct\+Plot2\+D\+Base\+::\+Signal}}
+\subsubsection[{Get\+Parent}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Plot2\+D\+Base\+::\+Scale}$\ast$ vct\+Plot2\+D\+Base\+::\+Signal\+::\+Get\+Parent (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classvct_plot2_d_base_1_1_signal_ad5ad5a5ac33cbdb3d258260419a62af5}
+\hypertarget{classvct_plot2_d_base_1_1_signal_a3d37044fdbd4cf336c04851a775be70c}{}\index{vct\+Plot2\+D\+Base\+::\+Signal@{vct\+Plot2\+D\+Base\+::\+Signal}!Get\+Point\+At@{Get\+Point\+At}}
+\index{Get\+Point\+At@{Get\+Point\+At}!vct\+Plot2\+D\+Base\+::\+Signal@{vct\+Plot2\+D\+Base\+::\+Signal}}
+\subsubsection[{Get\+Point\+At}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Double2} vct\+Plot2\+D\+Base\+::\+Signal\+::\+Get\+Point\+At (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{index}
+\end{DoxyParamCaption}
+) throw  std\+::runtime\+\_\+error) }\label{classvct_plot2_d_base_1_1_signal_a3d37044fdbd4cf336c04851a775be70c}
+Get point value in the buffer relative to first element. This method will throw an std\+::runtime\+\_\+error if the index is invalid, i.\+e. greater than the buffer size. \hypertarget{classvct_plot2_d_base_1_1_signal_a3b291e4f8bcfe303086303cabea7ab1d}{}\index{vct\+Plot2\+D\+Base\+::\+Signal@{vct\+Plot2\+D\+Base\+::\+Signal}!Get\+Size@{Get\+Size}}
+\index{Get\+Size@{Get\+Size}!vct\+Plot2\+D\+Base\+::\+Signal@{vct\+Plot2\+D\+Base\+::\+Signal}}
+\subsubsection[{Get\+Size}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t vct\+Plot2\+D\+Base\+::\+Signal\+::\+Get\+Size (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classvct_plot2_d_base_1_1_signal_a3b291e4f8bcfe303086303cabea7ab1d}
+Get size of circular buffer. \hypertarget{classvct_plot2_d_base_1_1_signal_a106f7f6083ecde72ddbcfa923febc01f}{}\index{vct\+Plot2\+D\+Base\+::\+Signal@{vct\+Plot2\+D\+Base\+::\+Signal}!Is\+Visible@{Is\+Visible}}
+\index{Is\+Visible@{Is\+Visible}!vct\+Plot2\+D\+Base\+::\+Signal@{vct\+Plot2\+D\+Base\+::\+Signal}}
+\subsubsection[{Is\+Visible}]{\setlength{\rightskip}{0pt plus 5cm}bool vct\+Plot2\+D\+Base\+::\+Signal\+::\+Is\+Visible (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classvct_plot2_d_base_1_1_signal_a106f7f6083ecde72ddbcfa923febc01f}
+\hypertarget{classvct_plot2_d_base_1_1_signal_a3a94c6565eb51445019fb41c4f1dc620}{}\index{vct\+Plot2\+D\+Base\+::\+Signal@{vct\+Plot2\+D\+Base\+::\+Signal}!Prepend\+Array@{Prepend\+Array}}
+\index{Prepend\+Array@{Prepend\+Array}!vct\+Plot2\+D\+Base\+::\+Signal@{vct\+Plot2\+D\+Base\+::\+Signal}}
+\subsubsection[{Prepend\+Array}]{\setlength{\rightskip}{0pt plus 5cm}bool vct\+Plot2\+D\+Base\+::\+Signal\+::\+Prepend\+Array (
+\begin{DoxyParamCaption}
+\item[{const double $\ast$}]{point\+Array, }
+\item[{size\+\_\+t}]{array\+Size, }
+\item[{size\+\_\+t}]{point\+Dimension = {\ttfamily 2}}
+\end{DoxyParamCaption}
+) throw  std\+::runtime\+\_\+error) }\label{classvct_plot2_d_base_1_1_signal_a3a94c6565eb51445019fb41c4f1dc620}
+Prepend user provided data at the beginning of the circular buffer. If the buffer is full or doesn\textquotesingle{}t have enough free space, data will be overwritten at the end of buffer. This method will throw an exception if either the array size or index is invalid. \hypertarget{classvct_plot2_d_base_1_1_signal_a2614ca9ee337428ef780788f94a50474}{}\index{vct\+Plot2\+D\+Base\+::\+Signal@{vct\+Plot2\+D\+Base\+::\+Signal}!Resize@{Resize}}
+\index{Resize@{Resize}!vct\+Plot2\+D\+Base\+::\+Signal@{vct\+Plot2\+D\+Base\+::\+Signal}}
+\subsubsection[{Resize}]{\setlength{\rightskip}{0pt plus 5cm}void vct\+Plot2\+D\+Base\+::\+Signal\+::\+Resize (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{number\+Of\+Points, }
+\item[{bool}]{trim\+Older = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}\label{classvct_plot2_d_base_1_1_signal_a2614ca9ee337428ef780788f94a50474}
+Non destructive resize. If the new buffer is bigger, preserves all points. If the new buffer is smaller, preserves the data at the end by default. \hypertarget{classvct_plot2_d_base_1_1_signal_acac355be74456036634f204da1169c76}{}\index{vct\+Plot2\+D\+Base\+::\+Signal@{vct\+Plot2\+D\+Base\+::\+Signal}!Set\+Array\+At@{Set\+Array\+At}}
+\index{Set\+Array\+At@{Set\+Array\+At}!vct\+Plot2\+D\+Base\+::\+Signal@{vct\+Plot2\+D\+Base\+::\+Signal}}
+\subsubsection[{Set\+Array\+At}]{\setlength{\rightskip}{0pt plus 5cm}void vct\+Plot2\+D\+Base\+::\+Signal\+::\+Set\+Array\+At (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{index, }
+\item[{const double $\ast$}]{point\+Array, }
+\item[{size\+\_\+t}]{array\+Size, }
+\item[{size\+\_\+t}]{point\+Dimension = {\ttfamily 2}}
+\end{DoxyParamCaption}
+) throw  std\+::runtime\+\_\+error) }\label{classvct_plot2_d_base_1_1_signal_acac355be74456036634f204da1169c76}
+Replaces \char`\"{}size\char`\"{} points data starting at \char`\"{}index\char`\"{}. This methods assumes that the point size of the user provided buffer matches the internal buffer. If either the point size, index or size of user provided data is incorrect, an exception is thrown. \hypertarget{classvct_plot2_d_base_1_1_signal_a0eae059cf46cd21594b8b30082a31a7c}{}\index{vct\+Plot2\+D\+Base\+::\+Signal@{vct\+Plot2\+D\+Base\+::\+Signal}!Set\+Color@{Set\+Color}}
+\index{Set\+Color@{Set\+Color}!vct\+Plot2\+D\+Base\+::\+Signal@{vct\+Plot2\+D\+Base\+::\+Signal}}
+\subsubsection[{Set\+Color}]{\setlength{\rightskip}{0pt plus 5cm}void vct\+Plot2\+D\+Base\+::\+Signal\+::\+Set\+Color (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Double3} \&}]{color\+In\+Range0\+To1}
+\end{DoxyParamCaption}
+)}\label{classvct_plot2_d_base_1_1_signal_a0eae059cf46cd21594b8b30082a31a7c}
+\hypertarget{classvct_plot2_d_base_1_1_signal_ac2bc150d895d678d753ac2dd3e99ce25}{}\index{vct\+Plot2\+D\+Base\+::\+Signal@{vct\+Plot2\+D\+Base\+::\+Signal}!Set\+Number\+Of\+Points@{Set\+Number\+Of\+Points}}
+\index{Set\+Number\+Of\+Points@{Set\+Number\+Of\+Points}!vct\+Plot2\+D\+Base\+::\+Signal@{vct\+Plot2\+D\+Base\+::\+Signal}}
+\subsubsection[{Set\+Number\+Of\+Points}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf C\+I\+S\+S\+T\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D} vct\+Plot2\+D\+Base\+::\+Signal\+::\+Set\+Number\+Of\+Points (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{number\+Of\+Points}
+\end{DoxyParamCaption}
+)}\label{classvct_plot2_d_base_1_1_signal_ac2bc150d895d678d753ac2dd3e99ce25}
+\hypertarget{classvct_plot2_d_base_1_1_signal_ae7234b9ab496f6af9713b34ecc80123a}{}\index{vct\+Plot2\+D\+Base\+::\+Signal@{vct\+Plot2\+D\+Base\+::\+Signal}!Set\+Point\+At@{Set\+Point\+At}}
+\index{Set\+Point\+At@{Set\+Point\+At}!vct\+Plot2\+D\+Base\+::\+Signal@{vct\+Plot2\+D\+Base\+::\+Signal}}
+\subsubsection[{Set\+Point\+At}]{\setlength{\rightskip}{0pt plus 5cm}void vct\+Plot2\+D\+Base\+::\+Signal\+::\+Set\+Point\+At (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{index, }
+\item[{const {\bf vct\+Double2} \&}]{point}
+\end{DoxyParamCaption}
+) throw  std\+::runtime\+\_\+error) }\label{classvct_plot2_d_base_1_1_signal_ae7234b9ab496f6af9713b34ecc80123a}
+Set point value at a given position, relative to first element. This method will throw an std\+::runtime\+\_\+error if the index is invalid, i.\+e. greater than the buffer size. \hypertarget{classvct_plot2_d_base_1_1_signal_ad3e1cca15d592cd22788ec4260da9de5}{}\index{vct\+Plot2\+D\+Base\+::\+Signal@{vct\+Plot2\+D\+Base\+::\+Signal}!Set\+Size@{Set\+Size}}
+\index{Set\+Size@{Set\+Size}!vct\+Plot2\+D\+Base\+::\+Signal@{vct\+Plot2\+D\+Base\+::\+Signal}}
+\subsubsection[{Set\+Size}]{\setlength{\rightskip}{0pt plus 5cm}void vct\+Plot2\+D\+Base\+::\+Signal\+::\+Set\+Size (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{number\+Of\+Points}
+\end{DoxyParamCaption}
+)}\label{classvct_plot2_d_base_1_1_signal_ad3e1cca15d592cd22788ec4260da9de5}
+Destructive resize, this method resize the circular buffer and sets the first and last pointers to the buffer\textquotesingle{}s beginning. \hypertarget{classvct_plot2_d_base_1_1_signal_ad20fd7a374f607e7ae5ddf632c58bc56}{}\index{vct\+Plot2\+D\+Base\+::\+Signal@{vct\+Plot2\+D\+Base\+::\+Signal}!Set\+Visible@{Set\+Visible}}
+\index{Set\+Visible@{Set\+Visible}!vct\+Plot2\+D\+Base\+::\+Signal@{vct\+Plot2\+D\+Base\+::\+Signal}}
+\subsubsection[{Set\+Visible}]{\setlength{\rightskip}{0pt plus 5cm}void vct\+Plot2\+D\+Base\+::\+Signal\+::\+Set\+Visible (
+\begin{DoxyParamCaption}
+\item[{const bool}]{visible}
+\end{DoxyParamCaption}
+)}\label{classvct_plot2_d_base_1_1_signal_ad20fd7a374f607e7ae5ddf632c58bc56}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classvct_plot2_d_base_1_1_signal_ab1e5a371f284a693f5624104a92ac684}{}\index{vct\+Plot2\+D\+Base\+::\+Signal@{vct\+Plot2\+D\+Base\+::\+Signal}!vct\+Plot2\+D\+Base@{vct\+Plot2\+D\+Base}}
+\index{vct\+Plot2\+D\+Base@{vct\+Plot2\+D\+Base}!vct\+Plot2\+D\+Base\+::\+Signal@{vct\+Plot2\+D\+Base\+::\+Signal}}
+\subsubsection[{vct\+Plot2\+D\+Base}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf vct\+Plot2\+D\+Base}\hspace{0.3cm}{\ttfamily [friend]}}\label{classvct_plot2_d_base_1_1_signal_ab1e5a371f284a693f5624104a92ac684}
+\hypertarget{classvct_plot2_d_base_1_1_signal_a2608173200dac970514b9c1d56379e99}{}\index{vct\+Plot2\+D\+Base\+::\+Signal@{vct\+Plot2\+D\+Base\+::\+Signal}!vct\+Plot2\+D\+Base\+::\+Scale@{vct\+Plot2\+D\+Base\+::\+Scale}}
+\index{vct\+Plot2\+D\+Base\+::\+Scale@{vct\+Plot2\+D\+Base\+::\+Scale}!vct\+Plot2\+D\+Base\+::\+Signal@{vct\+Plot2\+D\+Base\+::\+Signal}}
+\subsubsection[{vct\+Plot2\+D\+Base\+::\+Scale}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf vct\+Plot2\+D\+Base\+::\+Scale}\hspace{0.3cm}{\ttfamily [friend]}}\label{classvct_plot2_d_base_1_1_signal_a2608173200dac970514b9c1d56379e99}
+\hypertarget{classvct_plot2_d_base_1_1_signal_a2a04e9e21d2a68342a48b433ff25b7f7}{}\index{vct\+Plot2\+D\+Base\+::\+Signal@{vct\+Plot2\+D\+Base\+::\+Signal}!vct\+Plot2\+D\+Open\+G\+L@{vct\+Plot2\+D\+Open\+G\+L}}
+\index{vct\+Plot2\+D\+Open\+G\+L@{vct\+Plot2\+D\+Open\+G\+L}!vct\+Plot2\+D\+Base\+::\+Signal@{vct\+Plot2\+D\+Base\+::\+Signal}}
+\subsubsection[{vct\+Plot2\+D\+Open\+G\+L}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf vct\+Plot2\+D\+Open\+G\+L}\hspace{0.3cm}{\ttfamily [friend]}}\label{classvct_plot2_d_base_1_1_signal_a2a04e9e21d2a68342a48b433ff25b7f7}
+\hypertarget{classvct_plot2_d_base_1_1_signal_a61e8f9a436596e1195d2b34b7b5c6f2e}{}\index{vct\+Plot2\+D\+Base\+::\+Signal@{vct\+Plot2\+D\+Base\+::\+Signal}!vct\+Plot2\+D\+V\+T\+K@{vct\+Plot2\+D\+V\+T\+K}}
+\index{vct\+Plot2\+D\+V\+T\+K@{vct\+Plot2\+D\+V\+T\+K}!vct\+Plot2\+D\+Base\+::\+Signal@{vct\+Plot2\+D\+Base\+::\+Signal}}
+\subsubsection[{vct\+Plot2\+D\+V\+T\+K}]{\setlength{\rightskip}{0pt plus 5cm}friend class vct\+Plot2\+D\+V\+T\+K\hspace{0.3cm}{\ttfamily [friend]}}\label{classvct_plot2_d_base_1_1_signal_a61e8f9a436596e1195d2b34b7b5c6f2e}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classvct_plot2_d_base_1_1_signal_a7b068b5ebd95f73ccafa04c5f7e10b28}{}\index{vct\+Plot2\+D\+Base\+::\+Signal@{vct\+Plot2\+D\+Base\+::\+Signal}!Buffer@{Buffer}}
+\index{Buffer@{Buffer}!vct\+Plot2\+D\+Base\+::\+Signal@{vct\+Plot2\+D\+Base\+::\+Signal}}
+\subsubsection[{Buffer}]{\setlength{\rightskip}{0pt plus 5cm}double$\ast$ vct\+Plot2\+D\+Base\+::\+Signal\+::\+Buffer\hspace{0.3cm}{\ttfamily [protected]}}\label{classvct_plot2_d_base_1_1_signal_a7b068b5ebd95f73ccafa04c5f7e10b28}
+Actual buffer containing the data, contiguous for rendering \hypertarget{classvct_plot2_d_base_1_1_signal_a8c99562aebf260551eaf9444b25d7cc9}{}\index{vct\+Plot2\+D\+Base\+::\+Signal@{vct\+Plot2\+D\+Base\+::\+Signal}!Color@{Color}}
+\index{Color@{Color}!vct\+Plot2\+D\+Base\+::\+Signal@{vct\+Plot2\+D\+Base\+::\+Signal}}
+\subsubsection[{Color}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Double3} vct\+Plot2\+D\+Base\+::\+Signal\+::\+Color\hspace{0.3cm}{\ttfamily [protected]}}\label{classvct_plot2_d_base_1_1_signal_a8c99562aebf260551eaf9444b25d7cc9}
+\hypertarget{classvct_plot2_d_base_1_1_signal_a67281dea46193aed681097745bb88c81}{}\index{vct\+Plot2\+D\+Base\+::\+Signal@{vct\+Plot2\+D\+Base\+::\+Signal}!Data@{Data}}
+\index{Data@{Data}!vct\+Plot2\+D\+Base\+::\+Signal@{vct\+Plot2\+D\+Base\+::\+Signal}}
+\subsubsection[{Data}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Dynamic\+Vector}$<${\bf Point\+Ref}$>$ vct\+Plot2\+D\+Base\+::\+Signal\+::\+Data\hspace{0.3cm}{\ttfamily [protected]}}\label{classvct_plot2_d_base_1_1_signal_a67281dea46193aed681097745bb88c81}
+\hypertarget{classvct_plot2_d_base_1_1_signal_a6cb2569f99ffcc9a3cf4c4be60c94810}{}\index{vct\+Plot2\+D\+Base\+::\+Signal@{vct\+Plot2\+D\+Base\+::\+Signal}!Empty@{Empty}}
+\index{Empty@{Empty}!vct\+Plot2\+D\+Base\+::\+Signal@{vct\+Plot2\+D\+Base\+::\+Signal}}
+\subsubsection[{Empty}]{\setlength{\rightskip}{0pt plus 5cm}bool vct\+Plot2\+D\+Base\+::\+Signal\+::\+Empty\hspace{0.3cm}{\ttfamily [protected]}}\label{classvct_plot2_d_base_1_1_signal_a6cb2569f99ffcc9a3cf4c4be60c94810}
+\hypertarget{classvct_plot2_d_base_1_1_signal_a3290add28cf7247ab5ca703b8b4ba9e7}{}\index{vct\+Plot2\+D\+Base\+::\+Signal@{vct\+Plot2\+D\+Base\+::\+Signal}!Frozen@{Frozen}}
+\index{Frozen@{Frozen}!vct\+Plot2\+D\+Base\+::\+Signal@{vct\+Plot2\+D\+Base\+::\+Signal}}
+\subsubsection[{Frozen}]{\setlength{\rightskip}{0pt plus 5cm}bool vct\+Plot2\+D\+Base\+::\+Signal\+::\+Frozen\hspace{0.3cm}{\ttfamily [protected]}}\label{classvct_plot2_d_base_1_1_signal_a3290add28cf7247ab5ca703b8b4ba9e7}
+\hypertarget{classvct_plot2_d_base_1_1_signal_ada6747545b67992a43f9b7670ec3be78}{}\index{vct\+Plot2\+D\+Base\+::\+Signal@{vct\+Plot2\+D\+Base\+::\+Signal}!Index\+First@{Index\+First}}
+\index{Index\+First@{Index\+First}!vct\+Plot2\+D\+Base\+::\+Signal@{vct\+Plot2\+D\+Base\+::\+Signal}}
+\subsubsection[{Index\+First}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t vct\+Plot2\+D\+Base\+::\+Signal\+::\+Index\+First\hspace{0.3cm}{\ttfamily [protected]}}\label{classvct_plot2_d_base_1_1_signal_ada6747545b67992a43f9b7670ec3be78}
+\hypertarget{classvct_plot2_d_base_1_1_signal_aa1abcd7a414b288732279f5e2868abcd}{}\index{vct\+Plot2\+D\+Base\+::\+Signal@{vct\+Plot2\+D\+Base\+::\+Signal}!Index\+Last@{Index\+Last}}
+\index{Index\+Last@{Index\+Last}!vct\+Plot2\+D\+Base\+::\+Signal@{vct\+Plot2\+D\+Base\+::\+Signal}}
+\subsubsection[{Index\+Last}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t vct\+Plot2\+D\+Base\+::\+Signal\+::\+Index\+Last\hspace{0.3cm}{\ttfamily [protected]}}\label{classvct_plot2_d_base_1_1_signal_aa1abcd7a414b288732279f5e2868abcd}
+\hypertarget{classvct_plot2_d_base_1_1_signal_a9f7fa630a56b5168d0150c2079a40048}{}\index{vct\+Plot2\+D\+Base\+::\+Signal@{vct\+Plot2\+D\+Base\+::\+Signal}!Line\+Width@{Line\+Width}}
+\index{Line\+Width@{Line\+Width}!vct\+Plot2\+D\+Base\+::\+Signal@{vct\+Plot2\+D\+Base\+::\+Signal}}
+\subsubsection[{Line\+Width}]{\setlength{\rightskip}{0pt plus 5cm}double vct\+Plot2\+D\+Base\+::\+Signal\+::\+Line\+Width\hspace{0.3cm}{\ttfamily [protected]}}\label{classvct_plot2_d_base_1_1_signal_a9f7fa630a56b5168d0150c2079a40048}
+\hypertarget{classvct_plot2_d_base_1_1_signal_afbc80a39a5230239d4b8d55ea36586ea}{}\index{vct\+Plot2\+D\+Base\+::\+Signal@{vct\+Plot2\+D\+Base\+::\+Signal}!Name@{Name}}
+\index{Name@{Name}!vct\+Plot2\+D\+Base\+::\+Signal@{vct\+Plot2\+D\+Base\+::\+Signal}}
+\subsubsection[{Name}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string vct\+Plot2\+D\+Base\+::\+Signal\+::\+Name\hspace{0.3cm}{\ttfamily [protected]}}\label{classvct_plot2_d_base_1_1_signal_afbc80a39a5230239d4b8d55ea36586ea}
+\hyperlink{classvct_plot2_d_base_1_1_signal}{Signal} name, used for G\+U\+I \hypertarget{classvct_plot2_d_base_1_1_signal_ac96c27d6b67933a136845f700bc4e22c}{}\index{vct\+Plot2\+D\+Base\+::\+Signal@{vct\+Plot2\+D\+Base\+::\+Signal}!Parent@{Parent}}
+\index{Parent@{Parent}!vct\+Plot2\+D\+Base\+::\+Signal@{vct\+Plot2\+D\+Base\+::\+Signal}}
+\subsubsection[{Parent}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Scale}$\ast$ vct\+Plot2\+D\+Base\+::\+Signal\+::\+Parent\hspace{0.3cm}{\ttfamily [protected]}}\label{classvct_plot2_d_base_1_1_signal_ac96c27d6b67933a136845f700bc4e22c}
+\hypertarget{classvct_plot2_d_base_1_1_signal_a3c18f2c69447f7e310510f9749f9000f}{}\index{vct\+Plot2\+D\+Base\+::\+Signal@{vct\+Plot2\+D\+Base\+::\+Signal}!Point\+Size@{Point\+Size}}
+\index{Point\+Size@{Point\+Size}!vct\+Plot2\+D\+Base\+::\+Signal@{vct\+Plot2\+D\+Base\+::\+Signal}}
+\subsubsection[{Point\+Size}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t vct\+Plot2\+D\+Base\+::\+Signal\+::\+Point\+Size\hspace{0.3cm}{\ttfamily [protected]}}\label{classvct_plot2_d_base_1_1_signal_a3c18f2c69447f7e310510f9749f9000f}
+\hypertarget{classvct_plot2_d_base_1_1_signal_a7b4f18f8aef3c6353c64d86274c397bd}{}\index{vct\+Plot2\+D\+Base\+::\+Signal@{vct\+Plot2\+D\+Base\+::\+Signal}!Visible@{Visible}}
+\index{Visible@{Visible}!vct\+Plot2\+D\+Base\+::\+Signal@{vct\+Plot2\+D\+Base\+::\+Signal}}
+\subsubsection[{Visible}]{\setlength{\rightskip}{0pt plus 5cm}bool vct\+Plot2\+D\+Base\+::\+Signal\+::\+Visible\hspace{0.3cm}{\ttfamily [protected]}}\label{classvct_plot2_d_base_1_1_signal_a7b4f18f8aef3c6353c64d86274c397bd}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Vector/\hyperlink{vct_plot2_d_base_8h}{vct\+Plot2\+D\+Base.\+h}\end{DoxyCompactItemize}

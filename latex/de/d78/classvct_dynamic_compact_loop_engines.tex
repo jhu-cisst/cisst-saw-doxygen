@@ -1,0 +1,62 @@
+\hypertarget{classvct_dynamic_compact_loop_engines}{}\section{vct\+Dynamic\+Compact\+Loop\+Engines Class Reference}
+\label{classvct_dynamic_compact_loop_engines}\index{vct\+Dynamic\+Compact\+Loop\+Engines@{vct\+Dynamic\+Compact\+Loop\+Engines}}
+
+
+Container class for the loop based engines for compact containers.  
+
+
+
+
+{\ttfamily \#include $<$vct\+Dynamic\+Compact\+Loop\+Engines.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classvct_dynamic_compact_loop_engines_1_1_cio}{Cio}
+\begin{DoxyCompactList}\small\item\em Implement operation of the form $v_{io} = op(v_{io})$ for compact containers. \end{DoxyCompactList}\item 
+class \hyperlink{classvct_dynamic_compact_loop_engines_1_1_cio_ci}{Cio\+Ci}
+\begin{DoxyCompactList}\small\item\em Implement operation of the form $v_{io} = op(v_{io}, v_i)$ for compact containers. \end{DoxyCompactList}\item 
+class \hyperlink{classvct_dynamic_compact_loop_engines_1_1_cio_ci_ci}{Cio\+Ci\+Ci}
+\begin{DoxyCompactList}\small\item\em Implement operation of the form $v_{io} = op_{io}(v_{io}, op_{vv}(v_{i1}, v_{i2}))$ for compact containers. \end{DoxyCompactList}\item 
+class \hyperlink{classvct_dynamic_compact_loop_engines_1_1_cio_cio}{Cio\+Cio}
+\begin{DoxyCompactList}\small\item\em Implement operation of the form $(v_{1}, v_{2}) = op(v_{1}, v_{2})$ for compact containers. \end{DoxyCompactList}\item 
+class \hyperlink{classvct_dynamic_compact_loop_engines_1_1_cio_si}{Cio\+Si}
+\begin{DoxyCompactList}\small\item\em Implement operation of the form $ v_{io} = op(v_{io}, s_i)$ for compact containers. \end{DoxyCompactList}\item 
+class \hyperlink{classvct_dynamic_compact_loop_engines_1_1_cio_si_ci}{Cio\+Si\+Ci}
+\begin{DoxyCompactList}\small\item\em Implement operation of the form $v_{io} = op_{io}(v_{io}, op_{sv}(s, v_i))$ for compact containers. \end{DoxyCompactList}\item 
+class \hyperlink{classvct_dynamic_compact_loop_engines_1_1_co_ci}{Co\+Ci}
+\begin{DoxyCompactList}\small\item\em Implement operation of the form $v_o = op(v_i)$ for compact containers. \end{DoxyCompactList}\item 
+class \hyperlink{classvct_dynamic_compact_loop_engines_1_1_co_ci_ci}{Co\+Ci\+Ci}
+\begin{DoxyCompactList}\small\item\em Implement operation of the form $v_o = op(v_{i1}, v_{i2})$ for compact containers. \end{DoxyCompactList}\item 
+class \hyperlink{classvct_dynamic_compact_loop_engines_1_1_co_ci_si}{Co\+Ci\+Si}
+\begin{DoxyCompactList}\small\item\em Implement operation of the form $vo = op(vi, si)$ for compact containers. \end{DoxyCompactList}\item 
+class \hyperlink{classvct_dynamic_compact_loop_engines_1_1_co_si_ci}{Co\+Si\+Ci}
+\begin{DoxyCompactList}\small\item\em Implement operation of the form $vo = op(si, vi)$ for compact containers. \end{DoxyCompactList}\item 
+class \hyperlink{classvct_dynamic_compact_loop_engines_1_1_min_and_max}{Min\+And\+Max}
+\item 
+class \hyperlink{classvct_dynamic_compact_loop_engines_1_1_so_ci}{So\+Ci}
+\begin{DoxyCompactList}\small\item\em Implement operation of the form $s_o = op_{incr}(op(v_i))$ for compact containers. \end{DoxyCompactList}\item 
+class \hyperlink{classvct_dynamic_compact_loop_engines_1_1_so_ci_ci}{So\+Ci\+Ci}
+\begin{DoxyCompactList}\small\item\em Implement operation of the form $s_o = op_{incr}(op(v_{i1}, v_{i2}))$ for compact containers. \end{DoxyCompactList}\item 
+class \hyperlink{classvct_dynamic_compact_loop_engines_1_1_so_ci_si}{So\+Ci\+Si}
+\begin{DoxyCompactList}\small\item\em Implement operation of the form $s_o = op_{incr}(op(v_i, s_i))$ for compact containers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Container class for the loop based engines for compact containers. 
+
+These engines are a simplified version of those found in \hyperlink{classvct_dynamic_vector_loop_engines}{vct\+Dynamic\+Vector\+Loop\+Engines}, \hyperlink{classvct_dynamic_matrix_loop_engines}{vct\+Dynamic\+Matrix\+Loop\+Engines} and \hyperlink{classvct_dynamic_n_array_loop_engines}{vct\+Dynamic\+N\+Array\+Loop\+Engines}. They can only operate on compact containers and provided that all parameters have the same memory layout, i.\+e. the same strides. In this specific cases, a single loop can be used to operate on all the elements as opposed to nested loops or more complicated structures (as for N\+Arrays). This results on a significant speed gain. Furthermore, as the stride is always \char`\"{}one\char`\"{}, the operator \char`\"{}++\char`\"{} can be used which in some compilation mode can provide a slight speed boost.
+
+\begin{DoxyNote}{Note}
+These engines don\textquotesingle{}t perform any layout check as this is done by the other engines.
+
+These engines operate directly on the owners as the engines calling them already a pointer on the owner.
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classvct_dynamic_vector_loop_engines}{vct\+Dynamic\+Vector\+Loop\+Engines}, \hyperlink{classvct_dynamic_matrix_loop_engines}{vct\+Dynamic\+Matrix\+Loop\+Engines}, \hyperlink{classvct_dynamic_n_array_loop_engines}{vct\+Dynamic\+N\+Array\+Loop\+Engines}. 
+\end{DoxySeeAlso}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Vector/\hyperlink{vct_dynamic_compact_loop_engines_8h}{vct\+Dynamic\+Compact\+Loop\+Engines.\+h}\end{DoxyCompactItemize}

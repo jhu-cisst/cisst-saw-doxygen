@@ -1,0 +1,158 @@
+\hypertarget{classsvl_web_publisher}{}\section{svl\+Web\+Publisher Class Reference}
+\label{classsvl_web_publisher}\index{svl\+Web\+Publisher@{svl\+Web\+Publisher}}
+
+
+{\ttfamily \#include $<$svl\+Web\+Publisher.\+h$>$}
+
+Inheritance diagram for svl\+Web\+Publisher\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{d5/df7/classsvl_web_publisher}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classsvl_web_publisher_a88f1268e9e8fc3b535e90fc8132643fd}{Request\+Type} \{ \hyperlink{classsvl_web_publisher_a88f1268e9e8fc3b535e90fc8132643fda7af1429896d3bb9288257d80d75622ad}{G\+E\+T}, 
+\hyperlink{classsvl_web_publisher_a88f1268e9e8fc3b535e90fc8132643fda805c133e89e47b0be407fd34d3f9188b}{P\+O\+S\+T}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsvl_web_publisher_a5e3a0b9676e602ded1e24a2ee7d55f3d}{svl\+Web\+Publisher} (unsigned int port, bool fileserver)
+\item 
+\hyperlink{classsvl_web_publisher_a3ff9e3e258cef5489d00b62c5b58afde}{$\sim$svl\+Web\+Publisher} ()
+\item 
+unsigned int \hyperlink{classsvl_web_publisher_a7eb47e2305909509848a8d00a769dfc4}{Get\+Port} ()
+\item 
+bool \hyperlink{classsvl_web_publisher_a21d7d1cff2a2c5a06172c5f0c20a0b18}{Is\+File\+Server} ()
+\item 
+int \hyperlink{classsvl_web_publisher_a96c4c669dfde84cb6c53b09c9b017d86}{Start} ()
+\item 
+void \hyperlink{classsvl_web_publisher_ababd2877a25c15590c3361fec7dedad8}{Stop} ()
+\item 
+int \hyperlink{classsvl_web_publisher_a34610d8e3c419130f3edc8dc74c28d1a}{Add\+Object} (\hyperlink{classsvl_web_object_base}{svl\+Web\+Object\+Base} $\ast$object)
+\item 
+int \hyperlink{classsvl_web_publisher_abe521dc2134384e6ce1b01b3816df5ed}{Remove\+Object} (\hyperlink{classsvl_web_object_base}{svl\+Web\+Object\+Base} $\ast$object)
+\item 
+int \hyperlink{classsvl_web_publisher_aaef372cedb9416b869d64a7b708e9f3a}{Remove\+Object} (const std\+::string \&objectname)
+\item 
+\hyperlink{classsvl_web_object_base}{svl\+Web\+Object\+Base} $\ast$ \hyperlink{classsvl_web_publisher_a62d6a013066d06aaab56bf4b979d5269}{Get\+Object} (const std\+::string \&objectname, \hyperlink{classsvl_web_publisher_a88f1268e9e8fc3b535e90fc8132643fd}{Request\+Type} request)
+\item 
+void \hyperlink{classsvl_web_publisher_afabb19c0d42fc41bd03e88ce0a366d4b}{Release\+Object} (\hyperlink{classsvl_web_object_base}{svl\+Web\+Object\+Base} $\ast$object)
+\item 
+void $\ast$ \hyperlink{classsvl_web_publisher_a1307a7c5aaac23d369be4725808ed63d}{Proc} (int param)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classsvl_web_publisher_a88f1268e9e8fc3b535e90fc8132643fd}{}\index{svl\+Web\+Publisher@{svl\+Web\+Publisher}!Request\+Type@{Request\+Type}}
+\index{Request\+Type@{Request\+Type}!svl\+Web\+Publisher@{svl\+Web\+Publisher}}
+\subsubsection[{Request\+Type}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf svl\+Web\+Publisher\+::\+Request\+Type}}\label{classsvl_web_publisher_a88f1268e9e8fc3b535e90fc8132643fd}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{G\+E\+T@{G\+E\+T}!svl\+Web\+Publisher@{svl\+Web\+Publisher}}\index{svl\+Web\+Publisher@{svl\+Web\+Publisher}!G\+E\+T@{G\+E\+T}}\item[{\em 
+\hypertarget{classsvl_web_publisher_a88f1268e9e8fc3b535e90fc8132643fda7af1429896d3bb9288257d80d75622ad}{}G\+E\+T\label{classsvl_web_publisher_a88f1268e9e8fc3b535e90fc8132643fda7af1429896d3bb9288257d80d75622ad}
+}]\index{P\+O\+S\+T@{P\+O\+S\+T}!svl\+Web\+Publisher@{svl\+Web\+Publisher}}\index{svl\+Web\+Publisher@{svl\+Web\+Publisher}!P\+O\+S\+T@{P\+O\+S\+T}}\item[{\em 
+\hypertarget{classsvl_web_publisher_a88f1268e9e8fc3b535e90fc8132643fda805c133e89e47b0be407fd34d3f9188b}{}P\+O\+S\+T\label{classsvl_web_publisher_a88f1268e9e8fc3b535e90fc8132643fda805c133e89e47b0be407fd34d3f9188b}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classsvl_web_publisher_a5e3a0b9676e602ded1e24a2ee7d55f3d}{}\index{svl\+Web\+Publisher@{svl\+Web\+Publisher}!svl\+Web\+Publisher@{svl\+Web\+Publisher}}
+\index{svl\+Web\+Publisher@{svl\+Web\+Publisher}!svl\+Web\+Publisher@{svl\+Web\+Publisher}}
+\subsubsection[{svl\+Web\+Publisher}]{\setlength{\rightskip}{0pt plus 5cm}svl\+Web\+Publisher\+::svl\+Web\+Publisher (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{port, }
+\item[{bool}]{fileserver}
+\end{DoxyParamCaption}
+)}\label{classsvl_web_publisher_a5e3a0b9676e602ded1e24a2ee7d55f3d}
+\hypertarget{classsvl_web_publisher_a3ff9e3e258cef5489d00b62c5b58afde}{}\index{svl\+Web\+Publisher@{svl\+Web\+Publisher}!````~svl\+Web\+Publisher@{$\sim$svl\+Web\+Publisher}}
+\index{````~svl\+Web\+Publisher@{$\sim$svl\+Web\+Publisher}!svl\+Web\+Publisher@{svl\+Web\+Publisher}}
+\subsubsection[{$\sim$svl\+Web\+Publisher}]{\setlength{\rightskip}{0pt plus 5cm}svl\+Web\+Publisher\+::$\sim$svl\+Web\+Publisher (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classsvl_web_publisher_a3ff9e3e258cef5489d00b62c5b58afde}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classsvl_web_publisher_a34610d8e3c419130f3edc8dc74c28d1a}{}\index{svl\+Web\+Publisher@{svl\+Web\+Publisher}!Add\+Object@{Add\+Object}}
+\index{Add\+Object@{Add\+Object}!svl\+Web\+Publisher@{svl\+Web\+Publisher}}
+\subsubsection[{Add\+Object}]{\setlength{\rightskip}{0pt plus 5cm}int svl\+Web\+Publisher\+::\+Add\+Object (
+\begin{DoxyParamCaption}
+\item[{{\bf svl\+Web\+Object\+Base} $\ast$}]{object}
+\end{DoxyParamCaption}
+)}\label{classsvl_web_publisher_a34610d8e3c419130f3edc8dc74c28d1a}
+\hypertarget{classsvl_web_publisher_a62d6a013066d06aaab56bf4b979d5269}{}\index{svl\+Web\+Publisher@{svl\+Web\+Publisher}!Get\+Object@{Get\+Object}}
+\index{Get\+Object@{Get\+Object}!svl\+Web\+Publisher@{svl\+Web\+Publisher}}
+\subsubsection[{Get\+Object}]{\setlength{\rightskip}{0pt plus 5cm}{\bf svl\+Web\+Object\+Base}$\ast$ svl\+Web\+Publisher\+::\+Get\+Object (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{objectname, }
+\item[{{\bf Request\+Type}}]{request}
+\end{DoxyParamCaption}
+)}\label{classsvl_web_publisher_a62d6a013066d06aaab56bf4b979d5269}
+\hypertarget{classsvl_web_publisher_a7eb47e2305909509848a8d00a769dfc4}{}\index{svl\+Web\+Publisher@{svl\+Web\+Publisher}!Get\+Port@{Get\+Port}}
+\index{Get\+Port@{Get\+Port}!svl\+Web\+Publisher@{svl\+Web\+Publisher}}
+\subsubsection[{Get\+Port}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int svl\+Web\+Publisher\+::\+Get\+Port (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classsvl_web_publisher_a7eb47e2305909509848a8d00a769dfc4}
+\hypertarget{classsvl_web_publisher_a21d7d1cff2a2c5a06172c5f0c20a0b18}{}\index{svl\+Web\+Publisher@{svl\+Web\+Publisher}!Is\+File\+Server@{Is\+File\+Server}}
+\index{Is\+File\+Server@{Is\+File\+Server}!svl\+Web\+Publisher@{svl\+Web\+Publisher}}
+\subsubsection[{Is\+File\+Server}]{\setlength{\rightskip}{0pt plus 5cm}bool svl\+Web\+Publisher\+::\+Is\+File\+Server (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classsvl_web_publisher_a21d7d1cff2a2c5a06172c5f0c20a0b18}
+\hypertarget{classsvl_web_publisher_a1307a7c5aaac23d369be4725808ed63d}{}\index{svl\+Web\+Publisher@{svl\+Web\+Publisher}!Proc@{Proc}}
+\index{Proc@{Proc}!svl\+Web\+Publisher@{svl\+Web\+Publisher}}
+\subsubsection[{Proc}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ svl\+Web\+Publisher\+::\+Proc (
+\begin{DoxyParamCaption}
+\item[{int}]{param}
+\end{DoxyParamCaption}
+)}\label{classsvl_web_publisher_a1307a7c5aaac23d369be4725808ed63d}
+\hypertarget{classsvl_web_publisher_afabb19c0d42fc41bd03e88ce0a366d4b}{}\index{svl\+Web\+Publisher@{svl\+Web\+Publisher}!Release\+Object@{Release\+Object}}
+\index{Release\+Object@{Release\+Object}!svl\+Web\+Publisher@{svl\+Web\+Publisher}}
+\subsubsection[{Release\+Object}]{\setlength{\rightskip}{0pt plus 5cm}void svl\+Web\+Publisher\+::\+Release\+Object (
+\begin{DoxyParamCaption}
+\item[{{\bf svl\+Web\+Object\+Base} $\ast$}]{object}
+\end{DoxyParamCaption}
+)}\label{classsvl_web_publisher_afabb19c0d42fc41bd03e88ce0a366d4b}
+\hypertarget{classsvl_web_publisher_abe521dc2134384e6ce1b01b3816df5ed}{}\index{svl\+Web\+Publisher@{svl\+Web\+Publisher}!Remove\+Object@{Remove\+Object}}
+\index{Remove\+Object@{Remove\+Object}!svl\+Web\+Publisher@{svl\+Web\+Publisher}}
+\subsubsection[{Remove\+Object}]{\setlength{\rightskip}{0pt plus 5cm}int svl\+Web\+Publisher\+::\+Remove\+Object (
+\begin{DoxyParamCaption}
+\item[{{\bf svl\+Web\+Object\+Base} $\ast$}]{object}
+\end{DoxyParamCaption}
+)}\label{classsvl_web_publisher_abe521dc2134384e6ce1b01b3816df5ed}
+\hypertarget{classsvl_web_publisher_aaef372cedb9416b869d64a7b708e9f3a}{}\index{svl\+Web\+Publisher@{svl\+Web\+Publisher}!Remove\+Object@{Remove\+Object}}
+\index{Remove\+Object@{Remove\+Object}!svl\+Web\+Publisher@{svl\+Web\+Publisher}}
+\subsubsection[{Remove\+Object}]{\setlength{\rightskip}{0pt plus 5cm}int svl\+Web\+Publisher\+::\+Remove\+Object (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{objectname}
+\end{DoxyParamCaption}
+)}\label{classsvl_web_publisher_aaef372cedb9416b869d64a7b708e9f3a}
+\hypertarget{classsvl_web_publisher_a96c4c669dfde84cb6c53b09c9b017d86}{}\index{svl\+Web\+Publisher@{svl\+Web\+Publisher}!Start@{Start}}
+\index{Start@{Start}!svl\+Web\+Publisher@{svl\+Web\+Publisher}}
+\subsubsection[{Start}]{\setlength{\rightskip}{0pt plus 5cm}int svl\+Web\+Publisher\+::\+Start (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classsvl_web_publisher_a96c4c669dfde84cb6c53b09c9b017d86}
+\hypertarget{classsvl_web_publisher_ababd2877a25c15590c3361fec7dedad8}{}\index{svl\+Web\+Publisher@{svl\+Web\+Publisher}!Stop@{Stop}}
+\index{Stop@{Stop}!svl\+Web\+Publisher@{svl\+Web\+Publisher}}
+\subsubsection[{Stop}]{\setlength{\rightskip}{0pt plus 5cm}void svl\+Web\+Publisher\+::\+Stop (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classsvl_web_publisher_ababd2877a25c15590c3361fec7dedad8}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Stereo\+Vision/\hyperlink{svl_web_publisher_8h}{svl\+Web\+Publisher.\+h}\end{DoxyCompactItemize}

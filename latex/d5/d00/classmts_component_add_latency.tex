@@ -1,0 +1,260 @@
+\hypertarget{classmts_component_add_latency}{}\section{mts\+Component\+Add\+Latency Class Reference}
+\label{classmts_component_add_latency}\index{mts\+Component\+Add\+Latency@{mts\+Component\+Add\+Latency}}
+
+
+{\ttfamily \#include $<$mts\+Component\+Add\+Latency.\+h$>$}
+
+Inheritance diagram for mts\+Component\+Add\+Latency\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=6.000000cm]{d5/d00/classmts_component_add_latency}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmts_component_add_latency_a5e9722e59155cf09209eafccbd263632}{mts\+Component\+Add\+Latency} (const std\+::string \&component\+Name, double period\+In\+Seconds)
+\item 
+\hyperlink{classmts_component_add_latency_a56dfb464eba7d24819479e05b7323e53}{mts\+Component\+Add\+Latency} (const \hyperlink{classmts_task_periodic_constructor_arg}{mts\+Task\+Periodic\+Constructor\+Arg} \&arg)
+\item 
+virtual \hyperlink{classmts_component_add_latency_a345ba0d0ee9b30281f93f2c631a25664}{$\sim$mts\+Component\+Add\+Latency} ()
+\item 
+void \hyperlink{classmts_component_add_latency_aa1c5b4df35aa09a667383bd53ef22518}{Configure} (const std\+::string \&filename)
+\item 
+void \hyperlink{classmts_component_add_latency_ad854921041145afcf9b88d8802b16095}{Startup} (void)
+\item 
+void \hyperlink{classmts_component_add_latency_a0991c25360c716a374fc8c2543840688}{Run} (void)
+\item 
+void \hyperlink{classmts_component_add_latency_a4cfe3d9a65d29a7a601eb508bf50076c}{Cleanup} (void)
+\item 
+double \hyperlink{classmts_component_add_latency_aa3d6d2e75bb2a37627a61f22cc68ac06}{Set\+Latency} (double latency\+In\+Seconds)
+\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::list$<$ mts\+Component\+Add\+Latency\+Delayed\+Read $\ast$ $>$ \hyperlink{classmts_component_add_latency_a527c29b91f407598cb31a8113d453610}{Delayed\+Read\+List}
+\item 
+typedef std\+::list$<$ mts\+Component\+Add\+Latency\+Delayed\+Qualified\+Read $\ast$ $>$ \hyperlink{classmts_component_add_latency_a00e005acc3d0af37d43abee413e92d1e}{Delayed\+Qualified\+Read\+List}
+\item 
+typedef std\+::list$<$ mts\+Component\+Add\+Latency\+Delayed\+Void $\ast$ $>$ \hyperlink{classmts_component_add_latency_a693394372f8f73601e8f46ab5a5a1780}{Delayed\+Void\+List}
+\item 
+typedef std\+::list$<$ mts\+Component\+Add\+Latency\+Delayed\+Write $\ast$ $>$ \hyperlink{classmts_component_add_latency_a050cbf3819eb668c8098a78257e22236}{Delayed\+Write\+List}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class \+\_\+element\+Type $>$ }\\bool \hyperlink{classmts_component_add_latency_ac6dee3c262dba3445e4ba73c5e1b9b4f}{Add\+Command\+Read\+Delayed} (\hyperlink{classmts_interface_required}{mts\+Interface\+Required} $\ast$interface\+Required, const std\+::string \&command\+Required\+Name, \hyperlink{classmts_interface_provided}{mts\+Interface\+Provided} $\ast$interface\+Provided, const std\+::string \&command\+Provided\+Name=\char`\"{}\char`\"{})
+\item 
+{\footnotesize template$<$class \+\_\+element1\+Type , class \+\_\+element2\+Type $>$ }\\bool \hyperlink{classmts_component_add_latency_acacec8748b88ec97306699676c5afdf9}{Add\+Command\+Qualified\+Read\+Delayed} (\hyperlink{classmts_interface_required}{mts\+Interface\+Required} $\ast$interface\+Required, const std\+::string \&command\+Required\+Name, \hyperlink{classmts_interface_provided}{mts\+Interface\+Provided} $\ast$interface\+Provided, const std\+::string \&command\+Provided\+Name=\char`\"{}\char`\"{})
+\item 
+bool \hyperlink{classmts_component_add_latency_a07896e9c13691b24e03a4be8850eb73b}{Add\+Command\+Void\+Delayed} (\hyperlink{classmts_interface_required}{mts\+Interface\+Required} $\ast$interface\+Required, const std\+::string \&command\+Required\+Name, \hyperlink{classmts_interface_provided}{mts\+Interface\+Provided} $\ast$interface\+Provided, const std\+::string \&command\+Provided\+Name=\char`\"{}\char`\"{})
+\item 
+{\footnotesize template$<$class \+\_\+element\+Type $>$ }\\bool \hyperlink{classmts_component_add_latency_aa9ab4ddcf79bcb8497f9af24a3af99c7}{Add\+Command\+Write\+Delayed} (\hyperlink{classmts_interface_required}{mts\+Interface\+Required} $\ast$interface\+Required, const std\+::string \&command\+Required\+Name, \hyperlink{classmts_interface_provided}{mts\+Interface\+Provided} $\ast$interface\+Provided, const std\+::string \&command\+Provided\+Name=\char`\"{}\char`\"{})
+\item 
+bool \hyperlink{classmts_component_add_latency_aeee9bc6dc807fb6cb6b3354ddc2883d2}{Add\+Event\+Void\+Delayed} (\hyperlink{classmts_interface_required}{mts\+Interface\+Required} $\ast$interface\+Required, const std\+::string \&event\+Required\+Name, \hyperlink{classmts_interface_provided}{mts\+Interface\+Provided} $\ast$interface\+Provided, const std\+::string \&event\+Provided\+Name=\char`\"{}\char`\"{})
+\item 
+{\footnotesize template$<$class \+\_\+element\+Type $>$ }\\bool \hyperlink{classmts_component_add_latency_a49448643a64f9fe5572df35852df3846}{Add\+Event\+Write\+Delayed} (\hyperlink{classmts_interface_required}{mts\+Interface\+Required} $\ast$interface\+Required, const std\+::string \&event\+Required\+Name, \hyperlink{classmts_interface_provided}{mts\+Interface\+Provided} $\ast$interface\+Provided, const std\+::string \&event\+Provided\+Name=\char`\"{}\char`\"{})
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmts_component_add_latency_a527c29b91f407598cb31a8113d453610}{Delayed\+Read\+List} \hyperlink{classmts_component_add_latency_afca7e020994bba8b9672a34d1a75c5e6}{Delayed\+Reads}
+\item 
+\hyperlink{classmts_component_add_latency_a00e005acc3d0af37d43abee413e92d1e}{Delayed\+Qualified\+Read\+List} \hyperlink{classmts_component_add_latency_aba7fcf1beb1dfda8f5bc34b3e6c0d3c5}{Delayed\+Qualified\+Reads}
+\item 
+\hyperlink{classmts_component_add_latency_a693394372f8f73601e8f46ab5a5a1780}{Delayed\+Void\+List} \hyperlink{classmts_component_add_latency_a68571be7ff2288ac2e8ecd534c521eec}{Delayed\+Voids}
+\item 
+\hyperlink{classmts_component_add_latency_a050cbf3819eb668c8098a78257e22236}{Delayed\+Write\+List} \hyperlink{classmts_component_add_latency_af9d25ccc41677dbf2b56070c803467bd}{Delayed\+Writes}
+\item 
+double \hyperlink{classmts_component_add_latency_a39ff64ef2a5151a991f7173613136747}{Latency}
+\item 
+\hyperlink{classmts_state_table}{mts\+State\+Table} \hyperlink{classmts_component_add_latency_a41d4fcc2b22bd8bb53b2a99159f7b667}{Latency\+State\+Table}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Base class for component with latency. This class can be used to create a component that delays all commands and events. For example, one might want to simulate the latency introduced by the network between a master and a slave for a tele-\/operation task. The delay component can then be inserted between the client and server. It must replicate the server provided interface(s) so that the client will connect its required interface(s) as if it was the server itself. Let Cs the server component, Cc the client component and Cd the delay component. Cd will need to be created with the same provided interfaces as Cs. Then, instead of connecting Cc to Cs, we will connect Cc to Cd and Cd to Cs.
+
+The derived component needs to create its required and provided interfaces using the methods Add\+Interface\+Required and Add\+Interface\+Provided. Once the interfaces are created, commands can be added using Add\+Command\+Void\+Delayed, Add\+Command\+Read\+Delayed, ...
+
+At runtime, the delay component will continuously read from the server and buffer the results in a state table. It is important to set the periodicity of the delay component so that enough data is collected but make sure the frequency is not too high either. For void and write commands as well as events, the component buffers all requests and periodically checks which commands/events should be forwarded. Therefore the actual latency will be impacted by the period used by the delay component. 
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classmts_component_add_latency_a00e005acc3d0af37d43abee413e92d1e}{}\index{mts\+Component\+Add\+Latency@{mts\+Component\+Add\+Latency}!Delayed\+Qualified\+Read\+List@{Delayed\+Qualified\+Read\+List}}
+\index{Delayed\+Qualified\+Read\+List@{Delayed\+Qualified\+Read\+List}!mts\+Component\+Add\+Latency@{mts\+Component\+Add\+Latency}}
+\subsubsection[{Delayed\+Qualified\+Read\+List}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::list$<$mts\+Component\+Add\+Latency\+Delayed\+Qualified\+Read $\ast$$>$ {\bf mts\+Component\+Add\+Latency\+::\+Delayed\+Qualified\+Read\+List}\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_component_add_latency_a00e005acc3d0af37d43abee413e92d1e}
+\hypertarget{classmts_component_add_latency_a527c29b91f407598cb31a8113d453610}{}\index{mts\+Component\+Add\+Latency@{mts\+Component\+Add\+Latency}!Delayed\+Read\+List@{Delayed\+Read\+List}}
+\index{Delayed\+Read\+List@{Delayed\+Read\+List}!mts\+Component\+Add\+Latency@{mts\+Component\+Add\+Latency}}
+\subsubsection[{Delayed\+Read\+List}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::list$<$mts\+Component\+Add\+Latency\+Delayed\+Read $\ast$$>$ {\bf mts\+Component\+Add\+Latency\+::\+Delayed\+Read\+List}\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_component_add_latency_a527c29b91f407598cb31a8113d453610}
+\hypertarget{classmts_component_add_latency_a693394372f8f73601e8f46ab5a5a1780}{}\index{mts\+Component\+Add\+Latency@{mts\+Component\+Add\+Latency}!Delayed\+Void\+List@{Delayed\+Void\+List}}
+\index{Delayed\+Void\+List@{Delayed\+Void\+List}!mts\+Component\+Add\+Latency@{mts\+Component\+Add\+Latency}}
+\subsubsection[{Delayed\+Void\+List}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::list$<$mts\+Component\+Add\+Latency\+Delayed\+Void $\ast$$>$ {\bf mts\+Component\+Add\+Latency\+::\+Delayed\+Void\+List}\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_component_add_latency_a693394372f8f73601e8f46ab5a5a1780}
+\hypertarget{classmts_component_add_latency_a050cbf3819eb668c8098a78257e22236}{}\index{mts\+Component\+Add\+Latency@{mts\+Component\+Add\+Latency}!Delayed\+Write\+List@{Delayed\+Write\+List}}
+\index{Delayed\+Write\+List@{Delayed\+Write\+List}!mts\+Component\+Add\+Latency@{mts\+Component\+Add\+Latency}}
+\subsubsection[{Delayed\+Write\+List}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::list$<$mts\+Component\+Add\+Latency\+Delayed\+Write $\ast$$>$ {\bf mts\+Component\+Add\+Latency\+::\+Delayed\+Write\+List}\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_component_add_latency_a050cbf3819eb668c8098a78257e22236}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmts_component_add_latency_a5e9722e59155cf09209eafccbd263632}{}\index{mts\+Component\+Add\+Latency@{mts\+Component\+Add\+Latency}!mts\+Component\+Add\+Latency@{mts\+Component\+Add\+Latency}}
+\index{mts\+Component\+Add\+Latency@{mts\+Component\+Add\+Latency}!mts\+Component\+Add\+Latency@{mts\+Component\+Add\+Latency}}
+\subsubsection[{mts\+Component\+Add\+Latency}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Component\+Add\+Latency\+::mts\+Component\+Add\+Latency (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{component\+Name, }
+\item[{double}]{period\+In\+Seconds}
+\end{DoxyParamCaption}
+)}\label{classmts_component_add_latency_a5e9722e59155cf09209eafccbd263632}
+\hypertarget{classmts_component_add_latency_a56dfb464eba7d24819479e05b7323e53}{}\index{mts\+Component\+Add\+Latency@{mts\+Component\+Add\+Latency}!mts\+Component\+Add\+Latency@{mts\+Component\+Add\+Latency}}
+\index{mts\+Component\+Add\+Latency@{mts\+Component\+Add\+Latency}!mts\+Component\+Add\+Latency@{mts\+Component\+Add\+Latency}}
+\subsubsection[{mts\+Component\+Add\+Latency}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Component\+Add\+Latency\+::mts\+Component\+Add\+Latency (
+\begin{DoxyParamCaption}
+\item[{const {\bf mts\+Task\+Periodic\+Constructor\+Arg} \&}]{arg}
+\end{DoxyParamCaption}
+)}\label{classmts_component_add_latency_a56dfb464eba7d24819479e05b7323e53}
+\hypertarget{classmts_component_add_latency_a345ba0d0ee9b30281f93f2c631a25664}{}\index{mts\+Component\+Add\+Latency@{mts\+Component\+Add\+Latency}!````~mts\+Component\+Add\+Latency@{$\sim$mts\+Component\+Add\+Latency}}
+\index{````~mts\+Component\+Add\+Latency@{$\sim$mts\+Component\+Add\+Latency}!mts\+Component\+Add\+Latency@{mts\+Component\+Add\+Latency}}
+\subsubsection[{$\sim$mts\+Component\+Add\+Latency}]{\setlength{\rightskip}{0pt plus 5cm}virtual mts\+Component\+Add\+Latency\+::$\sim$mts\+Component\+Add\+Latency (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_component_add_latency_a345ba0d0ee9b30281f93f2c631a25664}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classmts_component_add_latency_acacec8748b88ec97306699676c5afdf9}{}\index{mts\+Component\+Add\+Latency@{mts\+Component\+Add\+Latency}!Add\+Command\+Qualified\+Read\+Delayed@{Add\+Command\+Qualified\+Read\+Delayed}}
+\index{Add\+Command\+Qualified\+Read\+Delayed@{Add\+Command\+Qualified\+Read\+Delayed}!mts\+Component\+Add\+Latency@{mts\+Component\+Add\+Latency}}
+\subsubsection[{Add\+Command\+Qualified\+Read\+Delayed}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element1\+Type , class \+\_\+element2\+Type $>$ bool mts\+Component\+Add\+Latency\+::\+Add\+Command\+Qualified\+Read\+Delayed (
+\begin{DoxyParamCaption}
+\item[{{\bf mts\+Interface\+Required} $\ast$}]{interface\+Required, }
+\item[{const std\+::string \&}]{command\+Required\+Name, }
+\item[{{\bf mts\+Interface\+Provided} $\ast$}]{interface\+Provided, }
+\item[{const std\+::string \&}]{command\+Provided\+Name = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_component_add_latency_acacec8748b88ec97306699676c5afdf9}
+\hypertarget{classmts_component_add_latency_ac6dee3c262dba3445e4ba73c5e1b9b4f}{}\index{mts\+Component\+Add\+Latency@{mts\+Component\+Add\+Latency}!Add\+Command\+Read\+Delayed@{Add\+Command\+Read\+Delayed}}
+\index{Add\+Command\+Read\+Delayed@{Add\+Command\+Read\+Delayed}!mts\+Component\+Add\+Latency@{mts\+Component\+Add\+Latency}}
+\subsubsection[{Add\+Command\+Read\+Delayed}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type $>$ bool mts\+Component\+Add\+Latency\+::\+Add\+Command\+Read\+Delayed (
+\begin{DoxyParamCaption}
+\item[{{\bf mts\+Interface\+Required} $\ast$}]{interface\+Required, }
+\item[{const std\+::string \&}]{command\+Required\+Name, }
+\item[{{\bf mts\+Interface\+Provided} $\ast$}]{interface\+Provided, }
+\item[{const std\+::string \&}]{command\+Provided\+Name = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_component_add_latency_ac6dee3c262dba3445e4ba73c5e1b9b4f}
+Add a read command with latency. The provided and required interfaces must be created before using the methods Add\+Interface\+Required and Add\+Interface\+Provided. The command name should match the command name from the source component provided interface. By default the provided interface with delay will use the same command name. \hypertarget{classmts_component_add_latency_a07896e9c13691b24e03a4be8850eb73b}{}\index{mts\+Component\+Add\+Latency@{mts\+Component\+Add\+Latency}!Add\+Command\+Void\+Delayed@{Add\+Command\+Void\+Delayed}}
+\index{Add\+Command\+Void\+Delayed@{Add\+Command\+Void\+Delayed}!mts\+Component\+Add\+Latency@{mts\+Component\+Add\+Latency}}
+\subsubsection[{Add\+Command\+Void\+Delayed}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Component\+Add\+Latency\+::\+Add\+Command\+Void\+Delayed (
+\begin{DoxyParamCaption}
+\item[{{\bf mts\+Interface\+Required} $\ast$}]{interface\+Required, }
+\item[{const std\+::string \&}]{command\+Required\+Name, }
+\item[{{\bf mts\+Interface\+Provided} $\ast$}]{interface\+Provided, }
+\item[{const std\+::string \&}]{command\+Provided\+Name = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_component_add_latency_a07896e9c13691b24e03a4be8850eb73b}
+\hypertarget{classmts_component_add_latency_aa9ab4ddcf79bcb8497f9af24a3af99c7}{}\index{mts\+Component\+Add\+Latency@{mts\+Component\+Add\+Latency}!Add\+Command\+Write\+Delayed@{Add\+Command\+Write\+Delayed}}
+\index{Add\+Command\+Write\+Delayed@{Add\+Command\+Write\+Delayed}!mts\+Component\+Add\+Latency@{mts\+Component\+Add\+Latency}}
+\subsubsection[{Add\+Command\+Write\+Delayed}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type $>$ bool mts\+Component\+Add\+Latency\+::\+Add\+Command\+Write\+Delayed (
+\begin{DoxyParamCaption}
+\item[{{\bf mts\+Interface\+Required} $\ast$}]{interface\+Required, }
+\item[{const std\+::string \&}]{command\+Required\+Name, }
+\item[{{\bf mts\+Interface\+Provided} $\ast$}]{interface\+Provided, }
+\item[{const std\+::string \&}]{command\+Provided\+Name = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_component_add_latency_aa9ab4ddcf79bcb8497f9af24a3af99c7}
+\hypertarget{classmts_component_add_latency_aeee9bc6dc807fb6cb6b3354ddc2883d2}{}\index{mts\+Component\+Add\+Latency@{mts\+Component\+Add\+Latency}!Add\+Event\+Void\+Delayed@{Add\+Event\+Void\+Delayed}}
+\index{Add\+Event\+Void\+Delayed@{Add\+Event\+Void\+Delayed}!mts\+Component\+Add\+Latency@{mts\+Component\+Add\+Latency}}
+\subsubsection[{Add\+Event\+Void\+Delayed}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Component\+Add\+Latency\+::\+Add\+Event\+Void\+Delayed (
+\begin{DoxyParamCaption}
+\item[{{\bf mts\+Interface\+Required} $\ast$}]{interface\+Required, }
+\item[{const std\+::string \&}]{event\+Required\+Name, }
+\item[{{\bf mts\+Interface\+Provided} $\ast$}]{interface\+Provided, }
+\item[{const std\+::string \&}]{event\+Provided\+Name = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_component_add_latency_aeee9bc6dc807fb6cb6b3354ddc2883d2}
+\hypertarget{classmts_component_add_latency_a49448643a64f9fe5572df35852df3846}{}\index{mts\+Component\+Add\+Latency@{mts\+Component\+Add\+Latency}!Add\+Event\+Write\+Delayed@{Add\+Event\+Write\+Delayed}}
+\index{Add\+Event\+Write\+Delayed@{Add\+Event\+Write\+Delayed}!mts\+Component\+Add\+Latency@{mts\+Component\+Add\+Latency}}
+\subsubsection[{Add\+Event\+Write\+Delayed}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type $>$ bool mts\+Component\+Add\+Latency\+::\+Add\+Event\+Write\+Delayed (
+\begin{DoxyParamCaption}
+\item[{{\bf mts\+Interface\+Required} $\ast$}]{interface\+Required, }
+\item[{const std\+::string \&}]{event\+Required\+Name, }
+\item[{{\bf mts\+Interface\+Provided} $\ast$}]{interface\+Provided, }
+\item[{const std\+::string \&}]{event\+Provided\+Name = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_component_add_latency_a49448643a64f9fe5572df35852df3846}
+\hypertarget{classmts_component_add_latency_a4cfe3d9a65d29a7a601eb508bf50076c}{}\index{mts\+Component\+Add\+Latency@{mts\+Component\+Add\+Latency}!Cleanup@{Cleanup}}
+\index{Cleanup@{Cleanup}!mts\+Component\+Add\+Latency@{mts\+Component\+Add\+Latency}}
+\subsubsection[{Cleanup}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Component\+Add\+Latency\+::\+Cleanup (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_component_add_latency_a4cfe3d9a65d29a7a601eb508bf50076c}
+Virtual method that gets overloaded, and is run after the component gets killed using \hyperlink{classmts_task_continuous_ad1f8145306e074fbea8baab3beef4c5b}{Kill()} method. 
+
+Reimplemented from \hyperlink{classmts_component_a891f330f4fde7d831dcf7dc537dc5e81}{mts\+Component}.
+
+\hypertarget{classmts_component_add_latency_aa1c5b4df35aa09a667383bd53ef22518}{}\index{mts\+Component\+Add\+Latency@{mts\+Component\+Add\+Latency}!Configure@{Configure}}
+\index{Configure@{Configure}!mts\+Component\+Add\+Latency@{mts\+Component\+Add\+Latency}}
+\subsubsection[{Configure}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Component\+Add\+Latency\+::\+Configure (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{filename}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_component_add_latency_aa1c5b4df35aa09a667383bd53ef22518}
+The virtual method so that the interface or tasks can configure themselves 
+
+Reimplemented from \hyperlink{classmts_component_ad872432876de7879dc96c232b411c146}{mts\+Component}.
+
+\hypertarget{classmts_component_add_latency_a0991c25360c716a374fc8c2543840688}{}\index{mts\+Component\+Add\+Latency@{mts\+Component\+Add\+Latency}!Run@{Run}}
+\index{Run@{Run}!mts\+Component\+Add\+Latency@{mts\+Component\+Add\+Latency}}
+\subsubsection[{Run}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Component\+Add\+Latency\+::\+Run (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_component_add_latency_a0991c25360c716a374fc8c2543840688}
+Pure virtual method that gets overloaded to run the actual task. 
+
+Implements \hyperlink{classmts_task_a20e18c9479cb650792456c32ee689834}{mts\+Task}.
+
+\hypertarget{classmts_component_add_latency_aa3d6d2e75bb2a37627a61f22cc68ac06}{}\index{mts\+Component\+Add\+Latency@{mts\+Component\+Add\+Latency}!Set\+Latency@{Set\+Latency}}
+\index{Set\+Latency@{Set\+Latency}!mts\+Component\+Add\+Latency@{mts\+Component\+Add\+Latency}}
+\subsubsection[{Set\+Latency}]{\setlength{\rightskip}{0pt plus 5cm}double mts\+Component\+Add\+Latency\+::\+Set\+Latency (
+\begin{DoxyParamCaption}
+\item[{double}]{latency\+In\+Seconds}
+\end{DoxyParamCaption}
+)}\label{classmts_component_add_latency_aa3d6d2e75bb2a37627a61f22cc68ac06}
+\hypertarget{classmts_component_add_latency_ad854921041145afcf9b88d8802b16095}{}\index{mts\+Component\+Add\+Latency@{mts\+Component\+Add\+Latency}!Startup@{Startup}}
+\index{Startup@{Startup}!mts\+Component\+Add\+Latency@{mts\+Component\+Add\+Latency}}
+\subsubsection[{Startup}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Component\+Add\+Latency\+::\+Startup (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_component_add_latency_ad854921041145afcf9b88d8802b16095}
+Virtual method that gets overloaded, and is run before the component is started. 
+
+Reimplemented from \hyperlink{classmts_component_aaf28f0262b44eb6866e10089a02fa6e4}{mts\+Component}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classmts_component_add_latency_aba7fcf1beb1dfda8f5bc34b3e6c0d3c5}{}\index{mts\+Component\+Add\+Latency@{mts\+Component\+Add\+Latency}!Delayed\+Qualified\+Reads@{Delayed\+Qualified\+Reads}}
+\index{Delayed\+Qualified\+Reads@{Delayed\+Qualified\+Reads}!mts\+Component\+Add\+Latency@{mts\+Component\+Add\+Latency}}
+\subsubsection[{Delayed\+Qualified\+Reads}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Delayed\+Qualified\+Read\+List} mts\+Component\+Add\+Latency\+::\+Delayed\+Qualified\+Reads\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_component_add_latency_aba7fcf1beb1dfda8f5bc34b3e6c0d3c5}
+\hypertarget{classmts_component_add_latency_afca7e020994bba8b9672a34d1a75c5e6}{}\index{mts\+Component\+Add\+Latency@{mts\+Component\+Add\+Latency}!Delayed\+Reads@{Delayed\+Reads}}
+\index{Delayed\+Reads@{Delayed\+Reads}!mts\+Component\+Add\+Latency@{mts\+Component\+Add\+Latency}}
+\subsubsection[{Delayed\+Reads}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Delayed\+Read\+List} mts\+Component\+Add\+Latency\+::\+Delayed\+Reads\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_component_add_latency_afca7e020994bba8b9672a34d1a75c5e6}
+\hypertarget{classmts_component_add_latency_a68571be7ff2288ac2e8ecd534c521eec}{}\index{mts\+Component\+Add\+Latency@{mts\+Component\+Add\+Latency}!Delayed\+Voids@{Delayed\+Voids}}
+\index{Delayed\+Voids@{Delayed\+Voids}!mts\+Component\+Add\+Latency@{mts\+Component\+Add\+Latency}}
+\subsubsection[{Delayed\+Voids}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Delayed\+Void\+List} mts\+Component\+Add\+Latency\+::\+Delayed\+Voids\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_component_add_latency_a68571be7ff2288ac2e8ecd534c521eec}
+\hypertarget{classmts_component_add_latency_af9d25ccc41677dbf2b56070c803467bd}{}\index{mts\+Component\+Add\+Latency@{mts\+Component\+Add\+Latency}!Delayed\+Writes@{Delayed\+Writes}}
+\index{Delayed\+Writes@{Delayed\+Writes}!mts\+Component\+Add\+Latency@{mts\+Component\+Add\+Latency}}
+\subsubsection[{Delayed\+Writes}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Delayed\+Write\+List} mts\+Component\+Add\+Latency\+::\+Delayed\+Writes\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_component_add_latency_af9d25ccc41677dbf2b56070c803467bd}
+\hypertarget{classmts_component_add_latency_a39ff64ef2a5151a991f7173613136747}{}\index{mts\+Component\+Add\+Latency@{mts\+Component\+Add\+Latency}!Latency@{Latency}}
+\index{Latency@{Latency}!mts\+Component\+Add\+Latency@{mts\+Component\+Add\+Latency}}
+\subsubsection[{Latency}]{\setlength{\rightskip}{0pt plus 5cm}double mts\+Component\+Add\+Latency\+::\+Latency\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_component_add_latency_a39ff64ef2a5151a991f7173613136747}
+\hypertarget{classmts_component_add_latency_a41d4fcc2b22bd8bb53b2a99159f7b667}{}\index{mts\+Component\+Add\+Latency@{mts\+Component\+Add\+Latency}!Latency\+State\+Table@{Latency\+State\+Table}}
+\index{Latency\+State\+Table@{Latency\+State\+Table}!mts\+Component\+Add\+Latency@{mts\+Component\+Add\+Latency}}
+\subsubsection[{Latency\+State\+Table}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+State\+Table} mts\+Component\+Add\+Latency\+::\+Latency\+State\+Table\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_component_add_latency_a41d4fcc2b22bd8bb53b2a99159f7b667}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Multi\+Task/\hyperlink{mts_component_add_latency_8h}{mts\+Component\+Add\+Latency.\+h}\end{DoxyCompactItemize}

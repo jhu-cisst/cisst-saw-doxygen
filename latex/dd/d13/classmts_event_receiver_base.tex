@@ -1,0 +1,214 @@
+\hypertarget{classmts_event_receiver_base}{}\section{mts\+Event\+Receiver\+Base Class Reference}
+\label{classmts_event_receiver_base}\index{mts\+Event\+Receiver\+Base@{mts\+Event\+Receiver\+Base}}
+
+
+{\ttfamily \#include $<$mts\+Event\+Receiver.\+h$>$}
+
+Inheritance diagram for mts\+Event\+Receiver\+Base\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{dd/d13/classmts_event_receiver_base}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmts_event_receiver_base_ab314727db9aa9d80b01613de9a1a42d2}{mts\+Event\+Receiver\+Base} ()
+\item 
+virtual \hyperlink{classmts_event_receiver_base_ae60b84761a92809602795db3926b6c8e}{$\sim$mts\+Event\+Receiver\+Base} ()
+\item 
+void \hyperlink{classmts_event_receiver_base_a39498e4110e83c9b56a4906f1bac0995}{Set\+Name} (const std\+::string \&name)
+\item 
+virtual std\+::string \hyperlink{classmts_event_receiver_base_ae2e86b90ec87705a2555a6527db7750d}{Get\+Name} () const 
+\item 
+virtual void \hyperlink{classmts_event_receiver_base_a4665b40af0624b4b0a7c6d68b48b48d2}{Set\+Required} (const std\+::string \&name, \hyperlink{classmts_interface_required}{mts\+Interface\+Required} $\ast$req)
+\item 
+virtual void \hyperlink{classmts_event_receiver_base_a4f25888766923d3817be765ec69732ea}{Set\+Thread\+Signal} (\hyperlink{classosa_thread_signal}{osa\+Thread\+Signal} $\ast$signal)
+\item 
+virtual bool \hyperlink{classmts_event_receiver_base_aa866c97b0b386de71abf81fa5d11af4e}{Wait} ()
+\item 
+virtual bool \hyperlink{classmts_event_receiver_base_a07beefc75c0793e2c7b4255d10e4a3b9}{Wait\+With\+Timeout} (double timeout\+In\+Sec)
+\item 
+virtual void \hyperlink{classmts_event_receiver_base_ad8144eb2b093d1675755080af1e117ef}{Detach} ()
+\item 
+virtual void \hyperlink{classmts_event_receiver_base_a6c967920dab912f8126448c28f7e6c44}{To\+Stream} (std\+::ostream \&output\+Stream) const =0
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classmts_event_receiver_base_a3578c0b05513decabb747292174d0d5f}{Check\+Required} () const 
+\item 
+bool \hyperlink{classmts_event_receiver_base_acf7025608786335eb2113e8a81a9d2dc}{Wait\+Common} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{classmts_event_receiver_base_adfb7eb58f27a2db2bb9bd6b43d50e851}{Name}
+\item 
+\hyperlink{classmts_interface_required}{mts\+Interface\+Required} $\ast$ \hyperlink{classmts_event_receiver_base_aa614f14ccef40af5bde25c37226d0000}{Required}
+\item 
+\hyperlink{classosa_thread_signal}{osa\+Thread\+Signal} $\ast$ \hyperlink{classmts_event_receiver_base_a23854ba0cf04b73df856a7f405f30229}{Event\+Signal}
+\item 
+bool \hyperlink{classmts_event_receiver_base_a962d76302ff233185a6797fed4f7052b}{Waiting}
+\item 
+bool \hyperlink{classmts_event_receiver_base_a11a6911351875c41dce67ea5b3fb59fd}{Own\+Event\+Signal}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class implements event receivers for void and write events. The idea is similar to the mts\+Function classes (e.\+g., \hyperlink{classmts_function_void}{mts\+Function\+Void}, \hyperlink{classmts_function_read}{mts\+Function\+Read}) -- these event receivers should be added to a required interface and will be bound to the corresponding event generators in the connected provided interface. Then, it is possible for the component to specify an event handler at any time (see Set\+Handler method), or to wait for the event to occur (see Wait method).
+
+Previously, it was only possible to add event handlers to a required interface (see \hyperlink{classmts_interface_required_a195ee62f3fa85dbfd1ce92cb1f745603}{mts\+Interface\+Required\+::\+Add\+Event\+Handler\+Void}, \hyperlink{classmts_interface_required_a5259260a2f54575de9bbe8b2636430b8}{mts\+Interface\+Required\+::\+Add\+Event\+Handler\+Write}). For backward compatibility, this design continues to support direct addition of an event handler to a required interface. Thus, the following three blocks of code can all be used to set an event handler\+:
+
+
+\begin{DoxyCode}
+\hyperlink{classmts_interface_required}{mtsInterfaceRequired} required;
+
+\textcolor{comment}{// Method 1: Add event handler directly to required interface (no event receiver)}
+required->\hyperlink{classmts_interface_required_a195ee62f3fa85dbfd1ce92cb1f745603}{AddEventHandlerVoid}(&MyClass::Handler, \textcolor{keyword}{this}, \textcolor{stringliteral}{"EventName"});
+
+\textcolor{comment}{// Method 2: Add event handler via event receiver}
+\hyperlink{classmts_event_receiver_void}{mtsEventReceiverVoid} MyReceiver;
+required->\hyperlink{classmts_interface_required_aa9146d63a8b06974615f36e01151e143}{AddEventReceiver}(MyReceiver, \textcolor{stringliteral}{"EventName"});
+MyReceiver.\hyperlink{classmts_event_receiver_void_afe4089691c2e13f94b76f595976552fb}{SetHandler}(&MyClass::Handler, \textcolor{keyword}{this});
+
+\textcolor{comment}{// Method 3: Add event handler and event receiver to required interface}
+\textcolor{comment}{//           (although this works, Method 2 is the preferred implementation)}
+\hyperlink{classmts_event_receiver_void}{mtsEventReceiverVoid} MyReceiver;
+required->\hyperlink{classmts_interface_required_aa9146d63a8b06974615f36e01151e143}{AddEventReceiver}(MyReceiver, \textcolor{stringliteral}{"EventName"});
+required->\hyperlink{classmts_interface_required_a195ee62f3fa85dbfd1ce92cb1f745603}{AddEventHandlerVoid}(&MyClass::Handler, \textcolor{keyword}{this}, \textcolor{stringliteral}{"EventName"});
+\end{DoxyCode}
+
+
+One thing to note about an event receiver is that, by default, it is considered required (i.\+e., \hyperlink{mts_forward_declarations_8h_a9ef1ce54724afde7802db326ff8606f3ae01fd85391b60e546bbb1be9716c4ec9}{M\+T\+S\+\_\+\+R\+E\+Q\+U\+I\+R\+E\+D}) when added to a required interface, whereas event handlers are not.
+
+There are two main reasons for the introduction of event handlers\+:
+\begin{DoxyEnumerate}
+\item They allow the component to wait for an event.
+\item They allow event handlers to be added at any time. Previously, if an event handler was added to a required interface A\+F\+T\+E\+R that interface was connected, it was ignored (i.\+e., it was not added as an observer to the event generator in the provided interface).
+\end{DoxyEnumerate}
+
+The implementation of the event receiver class requires an \hyperlink{classosa_thread_signal}{osa\+Thread\+Signal} to block the component when the Wait method is called. This design uses the Thread\+Signal member of the required interface mailbox, which is present for any component derived from \hyperlink{classmts_task}{mts\+Task}. If the required interface does not have a mailbox, the event receiver will create its own instance of \hyperlink{classosa_thread_signal}{osa\+Thread\+Signal}. This is done to support use of event receivers by low-\/level components that do not have their own thread of execution (e.\+g., \hyperlink{classmts_component}{mts\+Component}), as long as the Wait method is only called from a single thread. Note that the Wait method returns a bool; a false return indicates that the Wait failed for some reason (such as being called from more than one thread). An alternate implementation would be to introduce an \hyperlink{classosa_thread_signal}{osa\+Thread\+Signal} member to \hyperlink{classmts_component}{mts\+Component} and use that instead of the one in the required interface mailbox. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmts_event_receiver_base_ab314727db9aa9d80b01613de9a1a42d2}{}\index{mts\+Event\+Receiver\+Base@{mts\+Event\+Receiver\+Base}!mts\+Event\+Receiver\+Base@{mts\+Event\+Receiver\+Base}}
+\index{mts\+Event\+Receiver\+Base@{mts\+Event\+Receiver\+Base}!mts\+Event\+Receiver\+Base@{mts\+Event\+Receiver\+Base}}
+\subsubsection[{mts\+Event\+Receiver\+Base}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Event\+Receiver\+Base\+::mts\+Event\+Receiver\+Base (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classmts_event_receiver_base_ab314727db9aa9d80b01613de9a1a42d2}
+\hypertarget{classmts_event_receiver_base_ae60b84761a92809602795db3926b6c8e}{}\index{mts\+Event\+Receiver\+Base@{mts\+Event\+Receiver\+Base}!````~mts\+Event\+Receiver\+Base@{$\sim$mts\+Event\+Receiver\+Base}}
+\index{````~mts\+Event\+Receiver\+Base@{$\sim$mts\+Event\+Receiver\+Base}!mts\+Event\+Receiver\+Base@{mts\+Event\+Receiver\+Base}}
+\subsubsection[{$\sim$mts\+Event\+Receiver\+Base}]{\setlength{\rightskip}{0pt plus 5cm}virtual mts\+Event\+Receiver\+Base\+::$\sim$mts\+Event\+Receiver\+Base (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_event_receiver_base_ae60b84761a92809602795db3926b6c8e}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classmts_event_receiver_base_a3578c0b05513decabb747292174d0d5f}{}\index{mts\+Event\+Receiver\+Base@{mts\+Event\+Receiver\+Base}!Check\+Required@{Check\+Required}}
+\index{Check\+Required@{Check\+Required}!mts\+Event\+Receiver\+Base@{mts\+Event\+Receiver\+Base}}
+\subsubsection[{Check\+Required}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Event\+Receiver\+Base\+::\+Check\+Required (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_event_receiver_base_a3578c0b05513decabb747292174d0d5f}
+\hypertarget{classmts_event_receiver_base_ad8144eb2b093d1675755080af1e117ef}{}\index{mts\+Event\+Receiver\+Base@{mts\+Event\+Receiver\+Base}!Detach@{Detach}}
+\index{Detach@{Detach}!mts\+Event\+Receiver\+Base@{mts\+Event\+Receiver\+Base}}
+\subsubsection[{Detach}]{\setlength{\rightskip}{0pt plus 5cm}virtual void mts\+Event\+Receiver\+Base\+::\+Detach (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_event_receiver_base_ad8144eb2b093d1675755080af1e117ef}
+\hypertarget{classmts_event_receiver_base_ae2e86b90ec87705a2555a6527db7750d}{}\index{mts\+Event\+Receiver\+Base@{mts\+Event\+Receiver\+Base}!Get\+Name@{Get\+Name}}
+\index{Get\+Name@{Get\+Name}!mts\+Event\+Receiver\+Base@{mts\+Event\+Receiver\+Base}}
+\subsubsection[{Get\+Name}]{\setlength{\rightskip}{0pt plus 5cm}virtual std\+::string mts\+Event\+Receiver\+Base\+::\+Get\+Name (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classmts_event_receiver_base_ae2e86b90ec87705a2555a6527db7750d}
+\hypertarget{classmts_event_receiver_base_a39498e4110e83c9b56a4906f1bac0995}{}\index{mts\+Event\+Receiver\+Base@{mts\+Event\+Receiver\+Base}!Set\+Name@{Set\+Name}}
+\index{Set\+Name@{Set\+Name}!mts\+Event\+Receiver\+Base@{mts\+Event\+Receiver\+Base}}
+\subsubsection[{Set\+Name}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Event\+Receiver\+Base\+::\+Set\+Name (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_event_receiver_base_a39498e4110e83c9b56a4906f1bac0995}
+\hypertarget{classmts_event_receiver_base_a4665b40af0624b4b0a7c6d68b48b48d2}{}\index{mts\+Event\+Receiver\+Base@{mts\+Event\+Receiver\+Base}!Set\+Required@{Set\+Required}}
+\index{Set\+Required@{Set\+Required}!mts\+Event\+Receiver\+Base@{mts\+Event\+Receiver\+Base}}
+\subsubsection[{Set\+Required}]{\setlength{\rightskip}{0pt plus 5cm}virtual void mts\+Event\+Receiver\+Base\+::\+Set\+Required (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name, }
+\item[{{\bf mts\+Interface\+Required} $\ast$}]{req}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_event_receiver_base_a4665b40af0624b4b0a7c6d68b48b48d2}
+Called from \hyperlink{classmts_interface_required_aa9146d63a8b06974615f36e01151e143}{mts\+Interface\+Required\+::\+Add\+Event\+Receiver} \hypertarget{classmts_event_receiver_base_a4f25888766923d3817be765ec69732ea}{}\index{mts\+Event\+Receiver\+Base@{mts\+Event\+Receiver\+Base}!Set\+Thread\+Signal@{Set\+Thread\+Signal}}
+\index{Set\+Thread\+Signal@{Set\+Thread\+Signal}!mts\+Event\+Receiver\+Base@{mts\+Event\+Receiver\+Base}}
+\subsubsection[{Set\+Thread\+Signal}]{\setlength{\rightskip}{0pt plus 5cm}virtual void mts\+Event\+Receiver\+Base\+::\+Set\+Thread\+Signal (
+\begin{DoxyParamCaption}
+\item[{{\bf osa\+Thread\+Signal} $\ast$}]{signal}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_event_receiver_base_a4f25888766923d3817be765ec69732ea}
+\hypertarget{classmts_event_receiver_base_a6c967920dab912f8126448c28f7e6c44}{}\index{mts\+Event\+Receiver\+Base@{mts\+Event\+Receiver\+Base}!To\+Stream@{To\+Stream}}
+\index{To\+Stream@{To\+Stream}!mts\+Event\+Receiver\+Base@{mts\+Event\+Receiver\+Base}}
+\subsubsection[{To\+Stream}]{\setlength{\rightskip}{0pt plus 5cm}virtual void mts\+Event\+Receiver\+Base\+::\+To\+Stream (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{output\+Stream}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classmts_event_receiver_base_a6c967920dab912f8126448c28f7e6c44}
+Human readable output to stream. 
+
+Implemented in \hyperlink{classmts_event_receiver_write_a2a00fee6e19110e1e041f5ca498d14dc}{mts\+Event\+Receiver\+Write}, and \hyperlink{classmts_event_receiver_void_a81b10b35b461cd995f6cf8e15fd1e1f1}{mts\+Event\+Receiver\+Void}.
+
+\hypertarget{classmts_event_receiver_base_aa866c97b0b386de71abf81fa5d11af4e}{}\index{mts\+Event\+Receiver\+Base@{mts\+Event\+Receiver\+Base}!Wait@{Wait}}
+\index{Wait@{Wait}!mts\+Event\+Receiver\+Base@{mts\+Event\+Receiver\+Base}}
+\subsubsection[{Wait}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool mts\+Event\+Receiver\+Base\+::\+Wait (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_event_receiver_base_aa866c97b0b386de71abf81fa5d11af4e}
+Wait for event to be issued. \begin{DoxyReturn}{Returns}
+true if successful, false if failed. 
+\end{DoxyReturn}
+\hypertarget{classmts_event_receiver_base_acf7025608786335eb2113e8a81a9d2dc}{}\index{mts\+Event\+Receiver\+Base@{mts\+Event\+Receiver\+Base}!Wait\+Common@{Wait\+Common}}
+\index{Wait\+Common@{Wait\+Common}!mts\+Event\+Receiver\+Base@{mts\+Event\+Receiver\+Base}}
+\subsubsection[{Wait\+Common}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Event\+Receiver\+Base\+::\+Wait\+Common (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_event_receiver_base_acf7025608786335eb2113e8a81a9d2dc}
+\hypertarget{classmts_event_receiver_base_a07beefc75c0793e2c7b4255d10e4a3b9}{}\index{mts\+Event\+Receiver\+Base@{mts\+Event\+Receiver\+Base}!Wait\+With\+Timeout@{Wait\+With\+Timeout}}
+\index{Wait\+With\+Timeout@{Wait\+With\+Timeout}!mts\+Event\+Receiver\+Base@{mts\+Event\+Receiver\+Base}}
+\subsubsection[{Wait\+With\+Timeout}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool mts\+Event\+Receiver\+Base\+::\+Wait\+With\+Timeout (
+\begin{DoxyParamCaption}
+\item[{double}]{timeout\+In\+Sec}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_event_receiver_base_a07beefc75c0793e2c7b4255d10e4a3b9}
+Wait for event to be issued, up to specified timeout. \begin{DoxyReturn}{Returns}
+true if successful, false if failed or timeout occurred. 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classmts_event_receiver_base_a23854ba0cf04b73df856a7f405f30229}{}\index{mts\+Event\+Receiver\+Base@{mts\+Event\+Receiver\+Base}!Event\+Signal@{Event\+Signal}}
+\index{Event\+Signal@{Event\+Signal}!mts\+Event\+Receiver\+Base@{mts\+Event\+Receiver\+Base}}
+\subsubsection[{Event\+Signal}]{\setlength{\rightskip}{0pt plus 5cm}{\bf osa\+Thread\+Signal}$\ast$ mts\+Event\+Receiver\+Base\+::\+Event\+Signal\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_event_receiver_base_a23854ba0cf04b73df856a7f405f30229}
+\hypertarget{classmts_event_receiver_base_adfb7eb58f27a2db2bb9bd6b43d50e851}{}\index{mts\+Event\+Receiver\+Base@{mts\+Event\+Receiver\+Base}!Name@{Name}}
+\index{Name@{Name}!mts\+Event\+Receiver\+Base@{mts\+Event\+Receiver\+Base}}
+\subsubsection[{Name}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string mts\+Event\+Receiver\+Base\+::\+Name\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_event_receiver_base_adfb7eb58f27a2db2bb9bd6b43d50e851}
+\hypertarget{classmts_event_receiver_base_a11a6911351875c41dce67ea5b3fb59fd}{}\index{mts\+Event\+Receiver\+Base@{mts\+Event\+Receiver\+Base}!Own\+Event\+Signal@{Own\+Event\+Signal}}
+\index{Own\+Event\+Signal@{Own\+Event\+Signal}!mts\+Event\+Receiver\+Base@{mts\+Event\+Receiver\+Base}}
+\subsubsection[{Own\+Event\+Signal}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Event\+Receiver\+Base\+::\+Own\+Event\+Signal\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_event_receiver_base_a11a6911351875c41dce67ea5b3fb59fd}
+\hypertarget{classmts_event_receiver_base_aa614f14ccef40af5bde25c37226d0000}{}\index{mts\+Event\+Receiver\+Base@{mts\+Event\+Receiver\+Base}!Required@{Required}}
+\index{Required@{Required}!mts\+Event\+Receiver\+Base@{mts\+Event\+Receiver\+Base}}
+\subsubsection[{Required}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+Interface\+Required}$\ast$ mts\+Event\+Receiver\+Base\+::\+Required\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_event_receiver_base_aa614f14ccef40af5bde25c37226d0000}
+\hypertarget{classmts_event_receiver_base_a962d76302ff233185a6797fed4f7052b}{}\index{mts\+Event\+Receiver\+Base@{mts\+Event\+Receiver\+Base}!Waiting@{Waiting}}
+\index{Waiting@{Waiting}!mts\+Event\+Receiver\+Base@{mts\+Event\+Receiver\+Base}}
+\subsubsection[{Waiting}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Event\+Receiver\+Base\+::\+Waiting\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_event_receiver_base_a962d76302ff233185a6797fed4f7052b}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Multi\+Task/\hyperlink{mts_event_receiver_8h}{mts\+Event\+Receiver.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,61 @@
+\hypertarget{classvct_dynamic_compact_loop_engines_1_1_so_ci_ci}{}\section{vct\+Dynamic\+Compact\+Loop\+Engines\+:\+:So\+Ci\+Ci$<$ \+\_\+incremental\+Operation\+Type, \+\_\+element\+Operation\+Type $>$ Class Template Reference}
+\label{classvct_dynamic_compact_loop_engines_1_1_so_ci_ci}\index{vct\+Dynamic\+Compact\+Loop\+Engines\+::\+So\+Ci\+Ci$<$ \+\_\+incremental\+Operation\+Type, \+\_\+element\+Operation\+Type $>$@{vct\+Dynamic\+Compact\+Loop\+Engines\+::\+So\+Ci\+Ci$<$ \+\_\+incremental\+Operation\+Type, \+\_\+element\+Operation\+Type $>$}}
+
+
+Implement operation of the form $s_o = op_{incr}(op(v_{i1}, v_{i2}))$ for compact containers.  
+
+
+
+
+{\ttfamily \#include $<$vct\+Dynamic\+Compact\+Loop\+Engines.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \+\_\+incremental\+Operation\+Type\+::\+Output\+Type \hyperlink{classvct_dynamic_compact_loop_engines_1_1_so_ci_ci_ab00f75cd43ad2aa4ca177a1522f73fe2}{Output\+Type}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class \+\_\+input1\+Owner\+Type , class \+\_\+input2\+Owner\+Type $>$ }\\static \hyperlink{classvct_dynamic_compact_loop_engines_1_1_so_ci_ci_ab00f75cd43ad2aa4ca177a1522f73fe2}{Output\+Type} \hyperlink{classvct_dynamic_compact_loop_engines_1_1_so_ci_ci_af8e68cdb182a4db1edcdcc4fa00c545c}{Run} (const \+\_\+input1\+Owner\+Type \&input1\+Owner, const \+\_\+input2\+Owner\+Type \&input2\+Owner)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class \+\_\+incremental\+Operation\+Type, class \+\_\+element\+Operation\+Type$>$class vct\+Dynamic\+Compact\+Loop\+Engines\+::\+So\+Ci\+Ci$<$ \+\_\+incremental\+Operation\+Type, \+\_\+element\+Operation\+Type $>$}
+
+Implement operation of the form $s_o = op_{incr}(op(v_{i1}, v_{i2}))$ for compact containers. 
+
+This class uses a loop to perform incremental binary vector operations of the form
+
+\[ s_o = \mathrm{op_{incr}(\mathrm{op}(v_{i1}, v_{i2}))} \]
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+incremental\+Operation\+Type} & The type of the incremental operation.\\
+\hline
+{\em \+\_\+element\+Operation\+Type} & The type of the unary operation. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classvct_dynamic_compact_loop_engines_1_1_so_ci_ci_ab00f75cd43ad2aa4ca177a1522f73fe2}{}\index{vct\+Dynamic\+Compact\+Loop\+Engines\+::\+So\+Ci\+Ci@{vct\+Dynamic\+Compact\+Loop\+Engines\+::\+So\+Ci\+Ci}!Output\+Type@{Output\+Type}}
+\index{Output\+Type@{Output\+Type}!vct\+Dynamic\+Compact\+Loop\+Engines\+::\+So\+Ci\+Ci@{vct\+Dynamic\+Compact\+Loop\+Engines\+::\+So\+Ci\+Ci}}
+\subsubsection[{Output\+Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+incremental\+Operation\+Type , class \+\_\+element\+Operation\+Type $>$ typedef \+\_\+incremental\+Operation\+Type\+::\+Output\+Type {\bf vct\+Dynamic\+Compact\+Loop\+Engines\+::\+So\+Ci\+Ci}$<$ \+\_\+incremental\+Operation\+Type, \+\_\+element\+Operation\+Type $>$\+::{\bf Output\+Type}}\label{classvct_dynamic_compact_loop_engines_1_1_so_ci_ci_ab00f75cd43ad2aa4ca177a1522f73fe2}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classvct_dynamic_compact_loop_engines_1_1_so_ci_ci_af8e68cdb182a4db1edcdcc4fa00c545c}{}\index{vct\+Dynamic\+Compact\+Loop\+Engines\+::\+So\+Ci\+Ci@{vct\+Dynamic\+Compact\+Loop\+Engines\+::\+So\+Ci\+Ci}!Run@{Run}}
+\index{Run@{Run}!vct\+Dynamic\+Compact\+Loop\+Engines\+::\+So\+Ci\+Ci@{vct\+Dynamic\+Compact\+Loop\+Engines\+::\+So\+Ci\+Ci}}
+\subsubsection[{Run}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+incremental\+Operation\+Type , class \+\_\+element\+Operation\+Type $>$ template$<$class \+\_\+input1\+Owner\+Type , class \+\_\+input2\+Owner\+Type $>$ static {\bf Output\+Type} {\bf vct\+Dynamic\+Compact\+Loop\+Engines\+::\+So\+Ci\+Ci}$<$ \+\_\+incremental\+Operation\+Type, \+\_\+element\+Operation\+Type $>$\+::Run (
+\begin{DoxyParamCaption}
+\item[{const \+\_\+input1\+Owner\+Type \&}]{input1\+Owner, }
+\item[{const \+\_\+input2\+Owner\+Type \&}]{input2\+Owner}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classvct_dynamic_compact_loop_engines_1_1_so_ci_ci_af8e68cdb182a4db1edcdcc4fa00c545c}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Vector/\hyperlink{vct_dynamic_compact_loop_engines_8h}{vct\+Dynamic\+Compact\+Loop\+Engines.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,203 @@
+\hypertarget{classmts_command_read}{}\section{mts\+Command\+Read Class Reference}
+\label{classmts_command_read}\index{mts\+Command\+Read@{mts\+Command\+Read}}
+
+
+{\ttfamily \#include $<$mts\+Command\+Read.\+h$>$}
+
+Inheritance diagram for mts\+Command\+Read\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{d5/d90/classmts_command_read}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classmts_command_base}{mts\+Command\+Base} \hyperlink{classmts_command_read_a40bc517108c9ab125caf8477013eda34}{Base\+Type}
+\item 
+typedef \hyperlink{classmts_command_read}{mts\+Command\+Read} \hyperlink{classmts_command_read_aec958a1f6afb4ec00138f7867a1e25b9}{This\+Type}
+\item 
+typedef \hyperlink{classmts_callable_read_base}{mts\+Callable\+Read\+Base} \hyperlink{classmts_command_read_a5949311ea142c1c13cb29242c5151da6}{Callable\+Type}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmts_command_read_ab7638c37f1324419aecfd630c1956242}{mts\+Command\+Read} (void)
+\item 
+\hyperlink{classmts_command_read_a3284698af9e589017a99d01c106d134f}{mts\+Command\+Read} (const std\+::string \&name)
+\item 
+\hyperlink{classmts_command_read_ad1fd48cbf7eef09ec6b6ac949cf07266}{mts\+Command\+Read} (\hyperlink{classmts_callable_read_base}{mts\+Callable\+Read\+Base} $\ast$callable, const std\+::string \&name, const \hyperlink{classmts_generic_object}{mts\+Generic\+Object} $\ast$argument\+Prototype)
+\item 
+\hyperlink{classmts_command_read_a0bec5b8aab94dc7bc4bd0334592b773a}{$\sim$mts\+Command\+Read} ()
+\item 
+virtual mts\+Execution\+Result \hyperlink{classmts_command_read_ac7186f6e12418c551c483105719a8a38}{Execute} (\hyperlink{classmts_generic_object}{mts\+Generic\+Object} \&argument)
+\item 
+virtual mts\+Execution\+Result \hyperlink{classmts_command_read_ae5df5d5a093d4c465b3a6d3092755305}{Execute} (\hyperlink{classmts_generic_object}{mts\+Generic\+Object} \&argument, \hyperlink{classmts_command_write_base}{mts\+Command\+Write\+Base} $\ast$\hyperlink{cmn_portability_8h_a021894e2626935fa2305434b1e893ff6}{C\+M\+N\+\_\+\+U\+N\+U\+S\+E\+D}(finished\+Event\+Handler))
+\item 
+\hyperlink{classmts_callable_read_base}{mts\+Callable\+Read\+Base} $\ast$ \hyperlink{classmts_command_read_a0787cf1a8fa82d5bef0e904fce8a1b94}{Get\+Callable} (void) const 
+\item 
+virtual const \hyperlink{classmts_generic_object}{mts\+Generic\+Object} $\ast$ \hyperlink{classmts_command_read_af68b3e7a6e6a32759affbbd6a6715a72}{Get\+Argument\+Prototype} (void) const 
+\item 
+virtual const \hyperlink{classmts_generic_object}{mts\+Generic\+Object} $\ast$ \hyperlink{classmts_command_read_a799a502c2c5bfa07a1eb65bd69c72ed7}{Get\+Result\+Prototype} (void) const 
+\item 
+size\+\_\+t \hyperlink{classmts_command_read_ae3cd3d0b3aded18cc412ba2727ba1d65}{Number\+Of\+Arguments} (void) const 
+\item 
+bool \hyperlink{classmts_command_read_a375ea296870810376b01474297efff64}{Returns} (void) const 
+\item 
+void \hyperlink{classmts_command_read_a7790e415f816894d2a97ba1358848f19}{To\+Stream} (std\+::ostream \&output\+Stream) const 
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmts_callable_read_base}{mts\+Callable\+Read\+Base} $\ast$ \hyperlink{classmts_command_read_aa99a8b6be2493dfffc746078347ae0c8}{Callable}
+\item 
+const \hyperlink{classmts_generic_object}{mts\+Generic\+Object} $\ast$ \hyperlink{classmts_command_read_ab99241122421dce8a29351f19b97e8c0}{Argument\+Prototype}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A templated version of command object with one argument for execute. The template argument is the interface type whose method is contained in the command object. 
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classmts_command_read_a40bc517108c9ab125caf8477013eda34}{}\index{mts\+Command\+Read@{mts\+Command\+Read}!Base\+Type@{Base\+Type}}
+\index{Base\+Type@{Base\+Type}!mts\+Command\+Read@{mts\+Command\+Read}}
+\subsubsection[{Base\+Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf mts\+Command\+Base} {\bf mts\+Command\+Read\+::\+Base\+Type}}\label{classmts_command_read_a40bc517108c9ab125caf8477013eda34}
+Base type \hypertarget{classmts_command_read_a5949311ea142c1c13cb29242c5151da6}{}\index{mts\+Command\+Read@{mts\+Command\+Read}!Callable\+Type@{Callable\+Type}}
+\index{Callable\+Type@{Callable\+Type}!mts\+Command\+Read@{mts\+Command\+Read}}
+\subsubsection[{Callable\+Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf mts\+Callable\+Read\+Base} {\bf mts\+Command\+Read\+::\+Callable\+Type}}\label{classmts_command_read_a5949311ea142c1c13cb29242c5151da6}
+Callable type \hypertarget{classmts_command_read_aec958a1f6afb4ec00138f7867a1e25b9}{}\index{mts\+Command\+Read@{mts\+Command\+Read}!This\+Type@{This\+Type}}
+\index{This\+Type@{This\+Type}!mts\+Command\+Read@{mts\+Command\+Read}}
+\subsubsection[{This\+Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf mts\+Command\+Read} {\bf mts\+Command\+Read\+::\+This\+Type}}\label{classmts_command_read_aec958a1f6afb4ec00138f7867a1e25b9}
+This type. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmts_command_read_ab7638c37f1324419aecfd630c1956242}{}\index{mts\+Command\+Read@{mts\+Command\+Read}!mts\+Command\+Read@{mts\+Command\+Read}}
+\index{mts\+Command\+Read@{mts\+Command\+Read}!mts\+Command\+Read@{mts\+Command\+Read}}
+\subsubsection[{mts\+Command\+Read}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Command\+Read\+::mts\+Command\+Read (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classmts_command_read_ab7638c37f1324419aecfd630c1956242}
+The constructor. Does nothing \hypertarget{classmts_command_read_a3284698af9e589017a99d01c106d134f}{}\index{mts\+Command\+Read@{mts\+Command\+Read}!mts\+Command\+Read@{mts\+Command\+Read}}
+\index{mts\+Command\+Read@{mts\+Command\+Read}!mts\+Command\+Read@{mts\+Command\+Read}}
+\subsubsection[{mts\+Command\+Read}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Command\+Read\+::mts\+Command\+Read (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name}
+\end{DoxyParamCaption}
+)}\label{classmts_command_read_a3284698af9e589017a99d01c106d134f}
+\hypertarget{classmts_command_read_ad1fd48cbf7eef09ec6b6ac949cf07266}{}\index{mts\+Command\+Read@{mts\+Command\+Read}!mts\+Command\+Read@{mts\+Command\+Read}}
+\index{mts\+Command\+Read@{mts\+Command\+Read}!mts\+Command\+Read@{mts\+Command\+Read}}
+\subsubsection[{mts\+Command\+Read}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Command\+Read\+::mts\+Command\+Read (
+\begin{DoxyParamCaption}
+\item[{{\bf mts\+Callable\+Read\+Base} $\ast$}]{callable, }
+\item[{const std\+::string \&}]{name, }
+\item[{const {\bf mts\+Generic\+Object} $\ast$}]{argument\+Prototype}
+\end{DoxyParamCaption}
+)}\label{classmts_command_read_ad1fd48cbf7eef09ec6b6ac949cf07266}
+The constructor. 
+\begin{DoxyParams}{Parameters}
+{\em action} & Pointer to the member function that is to be called by the invoker of the command \\
+\hline
+{\em name} & A string to identify the command \\
+\hline
+{\em argument\+Prototype} & An instance of the argument being used \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmts_command_read_a0bec5b8aab94dc7bc4bd0334592b773a}{}\index{mts\+Command\+Read@{mts\+Command\+Read}!````~mts\+Command\+Read@{$\sim$mts\+Command\+Read}}
+\index{````~mts\+Command\+Read@{$\sim$mts\+Command\+Read}!mts\+Command\+Read@{mts\+Command\+Read}}
+\subsubsection[{$\sim$mts\+Command\+Read}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Command\+Read\+::$\sim$mts\+Command\+Read (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classmts_command_read_a0bec5b8aab94dc7bc4bd0334592b773a}
+The destructor. Does nothing 
+
+\subsection{Member Function Documentation}
+\hypertarget{classmts_command_read_ac7186f6e12418c551c483105719a8a38}{}\index{mts\+Command\+Read@{mts\+Command\+Read}!Execute@{Execute}}
+\index{Execute@{Execute}!mts\+Command\+Read@{mts\+Command\+Read}}
+\subsubsection[{Execute}]{\setlength{\rightskip}{0pt plus 5cm}virtual mts\+Execution\+Result mts\+Command\+Read\+::\+Execute (
+\begin{DoxyParamCaption}
+\item[{{\bf mts\+Generic\+Object} \&}]{argument}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_command_read_ac7186f6e12418c551c483105719a8a38}
+The execute method. Calling the execute method from the invoker applies the operation on the receiver. 
+\begin{DoxyParams}{Parameters}
+{\em obj} & The data passed to the operation method \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmts_command_read_ae5df5d5a093d4c465b3a6d3092755305}{}\index{mts\+Command\+Read@{mts\+Command\+Read}!Execute@{Execute}}
+\index{Execute@{Execute}!mts\+Command\+Read@{mts\+Command\+Read}}
+\subsubsection[{Execute}]{\setlength{\rightskip}{0pt plus 5cm}virtual mts\+Execution\+Result mts\+Command\+Read\+::\+Execute (
+\begin{DoxyParamCaption}
+\item[{{\bf mts\+Generic\+Object} \&}]{argument, }
+\item[{{\bf mts\+Command\+Write\+Base} $\ast$}]{C\+M\+N\+\_\+\+U\+N\+U\+S\+E\+Dfinished\+Event\+Handler}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classmts_command_read_ae5df5d5a093d4c465b3a6d3092755305}
+Execute method that includes a pointer to a handler for the finished event. This is intended for derived classes (e.\+g., mts\+Command\+Queued\+Read). \hypertarget{classmts_command_read_af68b3e7a6e6a32759affbbd6a6715a72}{}\index{mts\+Command\+Read@{mts\+Command\+Read}!Get\+Argument\+Prototype@{Get\+Argument\+Prototype}}
+\index{Get\+Argument\+Prototype@{Get\+Argument\+Prototype}!mts\+Command\+Read@{mts\+Command\+Read}}
+\subsubsection[{Get\+Argument\+Prototype}]{\setlength{\rightskip}{0pt plus 5cm}virtual const {\bf mts\+Generic\+Object}$\ast$ mts\+Command\+Read\+::\+Get\+Argument\+Prototype (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_command_read_af68b3e7a6e6a32759affbbd6a6715a72}
+\hypertarget{classmts_command_read_a0787cf1a8fa82d5bef0e904fce8a1b94}{}\index{mts\+Command\+Read@{mts\+Command\+Read}!Get\+Callable@{Get\+Callable}}
+\index{Get\+Callable@{Get\+Callable}!mts\+Command\+Read@{mts\+Command\+Read}}
+\subsubsection[{Get\+Callable}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+Callable\+Read\+Base}$\ast$ mts\+Command\+Read\+::\+Get\+Callable (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classmts_command_read_a0787cf1a8fa82d5bef0e904fce8a1b94}
+Get a direct pointer to the callable object. This method is used for queued commands. The caller should still use the Execute method which will queue the command. When the command is de-\/queued, one needs access to the callable object to call the final method or function. \hypertarget{classmts_command_read_a799a502c2c5bfa07a1eb65bd69c72ed7}{}\index{mts\+Command\+Read@{mts\+Command\+Read}!Get\+Result\+Prototype@{Get\+Result\+Prototype}}
+\index{Get\+Result\+Prototype@{Get\+Result\+Prototype}!mts\+Command\+Read@{mts\+Command\+Read}}
+\subsubsection[{Get\+Result\+Prototype}]{\setlength{\rightskip}{0pt plus 5cm}virtual const {\bf mts\+Generic\+Object}$\ast$ mts\+Command\+Read\+::\+Get\+Result\+Prototype (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_command_read_a799a502c2c5bfa07a1eb65bd69c72ed7}
+\hypertarget{classmts_command_read_ae3cd3d0b3aded18cc412ba2727ba1d65}{}\index{mts\+Command\+Read@{mts\+Command\+Read}!Number\+Of\+Arguments@{Number\+Of\+Arguments}}
+\index{Number\+Of\+Arguments@{Number\+Of\+Arguments}!mts\+Command\+Read@{mts\+Command\+Read}}
+\subsubsection[{Number\+Of\+Arguments}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t mts\+Command\+Read\+::\+Number\+Of\+Arguments (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_command_read_ae3cd3d0b3aded18cc412ba2727ba1d65}
+Returns number of arguments (parameters) expected by Execute method. Must be overloaded in derived classes. 
+
+Implements \hyperlink{classmts_command_base_abde89dfcf0078294f634c232b7537cc3}{mts\+Command\+Base}.
+
+\hypertarget{classmts_command_read_a375ea296870810376b01474297efff64}{}\index{mts\+Command\+Read@{mts\+Command\+Read}!Returns@{Returns}}
+\index{Returns@{Returns}!mts\+Command\+Read@{mts\+Command\+Read}}
+\subsubsection[{Returns}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Command\+Read\+::\+Returns (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_command_read_a375ea296870810376b01474297efff64}
+
+
+Implements \hyperlink{classmts_command_base_a0217171a8e7bead32766e94748e11658}{mts\+Command\+Base}.
+
+\hypertarget{classmts_command_read_a7790e415f816894d2a97ba1358848f19}{}\index{mts\+Command\+Read@{mts\+Command\+Read}!To\+Stream@{To\+Stream}}
+\index{To\+Stream@{To\+Stream}!mts\+Command\+Read@{mts\+Command\+Read}}
+\subsubsection[{To\+Stream}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Command\+Read\+::\+To\+Stream (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{output\+Stream}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_command_read_a7790e415f816894d2a97ba1358848f19}
+
+
+Implements \hyperlink{classmts_command_base_a0885ce7a5321d7b672694ade780b9d64}{mts\+Command\+Base}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classmts_command_read_ab99241122421dce8a29351f19b97e8c0}{}\index{mts\+Command\+Read@{mts\+Command\+Read}!Argument\+Prototype@{Argument\+Prototype}}
+\index{Argument\+Prototype@{Argument\+Prototype}!mts\+Command\+Read@{mts\+Command\+Read}}
+\subsubsection[{Argument\+Prototype}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf mts\+Generic\+Object}$\ast$ mts\+Command\+Read\+::\+Argument\+Prototype\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_command_read_ab99241122421dce8a29351f19b97e8c0}
+\hypertarget{classmts_command_read_aa99a8b6be2493dfffc746078347ae0c8}{}\index{mts\+Command\+Read@{mts\+Command\+Read}!Callable@{Callable}}
+\index{Callable@{Callable}!mts\+Command\+Read@{mts\+Command\+Read}}
+\subsubsection[{Callable}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+Callable\+Read\+Base}$\ast$ mts\+Command\+Read\+::\+Callable\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_command_read_aa99a8b6be2493dfffc746078347ae0c8}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Multi\+Task/\hyperlink{mts_command_read_8h}{mts\+Command\+Read.\+h}\end{DoxyCompactItemize}

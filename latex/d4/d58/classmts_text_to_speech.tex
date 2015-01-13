@@ -1,0 +1,207 @@
+\hypertarget{classmts_text_to_speech}{}\section{mts\+Text\+To\+Speech Class Reference}
+\label{classmts_text_to_speech}\index{mts\+Text\+To\+Speech@{mts\+Text\+To\+Speech}}
+
+
+{\ttfamily \#include $<$mts\+Text\+To\+Speech.\+h$>$}
+
+Inheritance diagram for mts\+Text\+To\+Speech\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=6.000000cm]{d4/d58/classmts_text_to_speech}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmts_text_to_speech_a9522af18806f0a7db41b744a3fca01be}{mts\+Text\+To\+Speech} (void)
+\item 
+\hyperlink{classmts_text_to_speech_a8640f37ee556b1de2ec39e5b99acbeb7}{$\sim$mts\+Text\+To\+Speech} (void)
+\item 
+void \hyperlink{classmts_text_to_speech_a7ac4d804f9e043bf877ea37138867687}{Configure} (const std\+::string \&\hyperlink{cmn_portability_8h_a021894e2626935fa2305434b1e893ff6}{C\+M\+N\+\_\+\+U\+N\+U\+S\+E\+D}(filename)=\char`\"{}\char`\"{})
+\item 
+void \hyperlink{classmts_text_to_speech_a68ada4f3cb8b578dcd535ae485fd576c}{Startup} (void)
+\item 
+void \hyperlink{classmts_text_to_speech_a9c724a185cfff331ccb781e16e4ed5b5}{Run} (void)
+\item 
+void \hyperlink{classmts_text_to_speech_ad8cedd061a3c8de77984d1e4f92acbcb}{Cleanup} (void)
+\item 
+void \hyperlink{classmts_text_to_speech_ab7d9d96da97ae6efe79be8be8c016514}{Add\+Interface\+Required\+For\+Event\+String} (const std\+::string \&interface\+Name, const std\+::string \&event\+Name)
+\item 
+void \hyperlink{classmts_text_to_speech_a1b9cc162cb293515534462dbeae0e164}{Add\+Interface\+Required\+For\+Event\+Character} (const std\+::string \&interface\+Name, const std\+::string \&event\+Name)
+\item 
+void \hyperlink{classmts_text_to_speech_a94cc67298b5ac7c6c9f739deb2c34f0a}{Add\+Interface\+Required\+For\+Event\+Button} (const std\+::string \&interface\+Name)
+\item 
+void \hyperlink{classmts_text_to_speech_af64ec5a504b4172cff06208f8c1e5553}{Set\+Preemptive} (const bool \&preemptive)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classmts_text_to_speech_a853ce06b633030fd9f8d1aba3fbd6a8a}{String\+To\+Speech} (const std\+::string \&text)
+\item 
+void \hyperlink{classmts_text_to_speech_afb7bc9e687ccf8057e0ecf8b16e1c829}{String\+To\+Speech\+Internal} (const std\+::string \&text)
+\item 
+void \hyperlink{classmts_text_to_speech_a75f1f94a974a3c7cfe84c74b9a07c857}{Character\+To\+Speech} (const char \&character)
+\item 
+void \hyperlink{classmts_text_to_speech_aa9376ca24fd38dce907df77a61c15753}{Button\+To\+Speech} (const \hyperlink{classprm_event_button}{prm\+Event\+Button} \&button)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+mts\+Text\+To\+Speech\+Internal $\ast$ \hyperlink{classmts_text_to_speech_a3ef89e41ddb760539b723b6c46f1b463}{Internals}
+\item 
+std\+::string \hyperlink{classmts_text_to_speech_aadd1b9d1f241afe95b2f2b7fa34422a8}{String\+To\+Speech\+Command}
+\item 
+bool \hyperlink{classmts_text_to_speech_a78a3e0004193dbd080e027c3b7a97fa8}{Preemptive}
+\item 
+std\+::string \hyperlink{classmts_text_to_speech_a8b6a91cf728698b9bd49ac8d888bbc48}{Last\+String}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Provides a simple component to convert text to speech. The current implementation uses command lines tools on Mac O\+S (say) and Linux (flite). On Windows, this component uses the native A\+P\+I.
+
+The component has two default provided interfaces. The \char`\"{}\+Configuration\char`\"{} interface provides the command \char`\"{}\+Set\+Preemptive\char`\"{} (see method with same name). The interface \char`\"{}\+Commands\char`\"{} provides the commands \char`\"{}\+String\+To\+Speech\char`\"{} and \char`\"{}\+Character\+To\+Speech\char`\"{}.
+
+This component can also be configured by adding required interface with event observers, see methods Add\+Interface\+Required\+For\+Event\+String, Add\+Interface\+Required\+For\+Event\+Character and Add\+Interface\+Required\+For\+Event\+Button. All these methods add a required interface (unless said interface already exists) and an event handler. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmts_text_to_speech_a9522af18806f0a7db41b744a3fca01be}{}\index{mts\+Text\+To\+Speech@{mts\+Text\+To\+Speech}!mts\+Text\+To\+Speech@{mts\+Text\+To\+Speech}}
+\index{mts\+Text\+To\+Speech@{mts\+Text\+To\+Speech}!mts\+Text\+To\+Speech@{mts\+Text\+To\+Speech}}
+\subsubsection[{mts\+Text\+To\+Speech}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Text\+To\+Speech\+::mts\+Text\+To\+Speech (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classmts_text_to_speech_a9522af18806f0a7db41b744a3fca01be}
+\hypertarget{classmts_text_to_speech_a8640f37ee556b1de2ec39e5b99acbeb7}{}\index{mts\+Text\+To\+Speech@{mts\+Text\+To\+Speech}!````~mts\+Text\+To\+Speech@{$\sim$mts\+Text\+To\+Speech}}
+\index{````~mts\+Text\+To\+Speech@{$\sim$mts\+Text\+To\+Speech}!mts\+Text\+To\+Speech@{mts\+Text\+To\+Speech}}
+\subsubsection[{$\sim$mts\+Text\+To\+Speech}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Text\+To\+Speech\+::$\sim$mts\+Text\+To\+Speech (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classmts_text_to_speech_a8640f37ee556b1de2ec39e5b99acbeb7}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classmts_text_to_speech_a94cc67298b5ac7c6c9f739deb2c34f0a}{}\index{mts\+Text\+To\+Speech@{mts\+Text\+To\+Speech}!Add\+Interface\+Required\+For\+Event\+Button@{Add\+Interface\+Required\+For\+Event\+Button}}
+\index{Add\+Interface\+Required\+For\+Event\+Button@{Add\+Interface\+Required\+For\+Event\+Button}!mts\+Text\+To\+Speech@{mts\+Text\+To\+Speech}}
+\subsubsection[{Add\+Interface\+Required\+For\+Event\+Button}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Text\+To\+Speech\+::\+Add\+Interface\+Required\+For\+Event\+Button (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{interface\+Name}
+\end{DoxyParamCaption}
+)}\label{classmts_text_to_speech_a94cc67298b5ac7c6c9f739deb2c34f0a}
+Add a required interface with an event observer using a \hyperlink{classprm_event_button}{prm\+Event\+Button} payload. If the interface already exists, the event is added to the existing interface. \hypertarget{classmts_text_to_speech_a1b9cc162cb293515534462dbeae0e164}{}\index{mts\+Text\+To\+Speech@{mts\+Text\+To\+Speech}!Add\+Interface\+Required\+For\+Event\+Character@{Add\+Interface\+Required\+For\+Event\+Character}}
+\index{Add\+Interface\+Required\+For\+Event\+Character@{Add\+Interface\+Required\+For\+Event\+Character}!mts\+Text\+To\+Speech@{mts\+Text\+To\+Speech}}
+\subsubsection[{Add\+Interface\+Required\+For\+Event\+Character}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Text\+To\+Speech\+::\+Add\+Interface\+Required\+For\+Event\+Character (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{interface\+Name, }
+\item[{const std\+::string \&}]{event\+Name}
+\end{DoxyParamCaption}
+)}\label{classmts_text_to_speech_a1b9cc162cb293515534462dbeae0e164}
+Add a required interface with an event observer using a character as payload. If the interface already exists, the event is added to the existing interface. \hypertarget{classmts_text_to_speech_ab7d9d96da97ae6efe79be8be8c016514}{}\index{mts\+Text\+To\+Speech@{mts\+Text\+To\+Speech}!Add\+Interface\+Required\+For\+Event\+String@{Add\+Interface\+Required\+For\+Event\+String}}
+\index{Add\+Interface\+Required\+For\+Event\+String@{Add\+Interface\+Required\+For\+Event\+String}!mts\+Text\+To\+Speech@{mts\+Text\+To\+Speech}}
+\subsubsection[{Add\+Interface\+Required\+For\+Event\+String}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Text\+To\+Speech\+::\+Add\+Interface\+Required\+For\+Event\+String (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{interface\+Name, }
+\item[{const std\+::string \&}]{event\+Name}
+\end{DoxyParamCaption}
+)}\label{classmts_text_to_speech_ab7d9d96da97ae6efe79be8be8c016514}
+Add a required interface with an event observer using a string as payload. If the interface already exists, the event is added to the existing interface. \hypertarget{classmts_text_to_speech_aa9376ca24fd38dce907df77a61c15753}{}\index{mts\+Text\+To\+Speech@{mts\+Text\+To\+Speech}!Button\+To\+Speech@{Button\+To\+Speech}}
+\index{Button\+To\+Speech@{Button\+To\+Speech}!mts\+Text\+To\+Speech@{mts\+Text\+To\+Speech}}
+\subsubsection[{Button\+To\+Speech}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Text\+To\+Speech\+::\+Button\+To\+Speech (
+\begin{DoxyParamCaption}
+\item[{const {\bf prm\+Event\+Button} \&}]{button}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_text_to_speech_aa9376ca24fd38dce907df77a61c15753}
+\hypertarget{classmts_text_to_speech_a75f1f94a974a3c7cfe84c74b9a07c857}{}\index{mts\+Text\+To\+Speech@{mts\+Text\+To\+Speech}!Character\+To\+Speech@{Character\+To\+Speech}}
+\index{Character\+To\+Speech@{Character\+To\+Speech}!mts\+Text\+To\+Speech@{mts\+Text\+To\+Speech}}
+\subsubsection[{Character\+To\+Speech}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Text\+To\+Speech\+::\+Character\+To\+Speech (
+\begin{DoxyParamCaption}
+\item[{const char \&}]{character}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_text_to_speech_a75f1f94a974a3c7cfe84c74b9a07c857}
+\hypertarget{classmts_text_to_speech_ad8cedd061a3c8de77984d1e4f92acbcb}{}\index{mts\+Text\+To\+Speech@{mts\+Text\+To\+Speech}!Cleanup@{Cleanup}}
+\index{Cleanup@{Cleanup}!mts\+Text\+To\+Speech@{mts\+Text\+To\+Speech}}
+\subsubsection[{Cleanup}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Text\+To\+Speech\+::\+Cleanup (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_text_to_speech_ad8cedd061a3c8de77984d1e4f92acbcb}
+Virtual method that gets overloaded, and is run after the component gets killed using \hyperlink{classmts_task_from_signal_a9a1b6e7c80ca2c2fdc14de78e3635922}{Kill()} method. 
+
+Reimplemented from \hyperlink{classmts_component_a891f330f4fde7d831dcf7dc537dc5e81}{mts\+Component}.
+
+\hypertarget{classmts_text_to_speech_a7ac4d804f9e043bf877ea37138867687}{}\index{mts\+Text\+To\+Speech@{mts\+Text\+To\+Speech}!Configure@{Configure}}
+\index{Configure@{Configure}!mts\+Text\+To\+Speech@{mts\+Text\+To\+Speech}}
+\subsubsection[{Configure}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Text\+To\+Speech\+::\+Configure (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{C\+M\+N\+\_\+\+U\+N\+U\+S\+E\+Dfilename = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classmts_text_to_speech_a7ac4d804f9e043bf877ea37138867687}
+Virtual method that gets called when the task/interface needs to be configured. Should it take X\+M\+L info?? 
+
+Reimplemented from \hyperlink{classmts_task_a52c822f34f12a0eb14f3d02de9ddd6f6}{mts\+Task}.
+
+\hypertarget{classmts_text_to_speech_a9c724a185cfff331ccb781e16e4ed5b5}{}\index{mts\+Text\+To\+Speech@{mts\+Text\+To\+Speech}!Run@{Run}}
+\index{Run@{Run}!mts\+Text\+To\+Speech@{mts\+Text\+To\+Speech}}
+\subsubsection[{Run}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Text\+To\+Speech\+::\+Run (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_text_to_speech_a9c724a185cfff331ccb781e16e4ed5b5}
+Pure virtual method that gets overloaded to run the actual task. 
+
+Implements \hyperlink{classmts_task_a20e18c9479cb650792456c32ee689834}{mts\+Task}.
+
+\hypertarget{classmts_text_to_speech_af64ec5a504b4172cff06208f8c1e5553}{}\index{mts\+Text\+To\+Speech@{mts\+Text\+To\+Speech}!Set\+Preemptive@{Set\+Preemptive}}
+\index{Set\+Preemptive@{Set\+Preemptive}!mts\+Text\+To\+Speech@{mts\+Text\+To\+Speech}}
+\subsubsection[{Set\+Preemptive}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Text\+To\+Speech\+::\+Set\+Preemptive (
+\begin{DoxyParamCaption}
+\item[{const bool \&}]{preemptive}
+\end{DoxyParamCaption}
+)}\label{classmts_text_to_speech_af64ec5a504b4172cff06208f8c1e5553}
+Turn on or off the preemptive mode, i.\+e. at each Run execution, all messages received are dequeued and only the last one is used for text to speech. \hypertarget{classmts_text_to_speech_a68ada4f3cb8b578dcd535ae485fd576c}{}\index{mts\+Text\+To\+Speech@{mts\+Text\+To\+Speech}!Startup@{Startup}}
+\index{Startup@{Startup}!mts\+Text\+To\+Speech@{mts\+Text\+To\+Speech}}
+\subsubsection[{Startup}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Text\+To\+Speech\+::\+Startup (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_text_to_speech_a68ada4f3cb8b578dcd535ae485fd576c}
+Virtual method that gets overloaded, and is run before the component is started. 
+
+Reimplemented from \hyperlink{classmts_component_aaf28f0262b44eb6866e10089a02fa6e4}{mts\+Component}.
+
+\hypertarget{classmts_text_to_speech_a853ce06b633030fd9f8d1aba3fbd6a8a}{}\index{mts\+Text\+To\+Speech@{mts\+Text\+To\+Speech}!String\+To\+Speech@{String\+To\+Speech}}
+\index{String\+To\+Speech@{String\+To\+Speech}!mts\+Text\+To\+Speech@{mts\+Text\+To\+Speech}}
+\subsubsection[{String\+To\+Speech}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Text\+To\+Speech\+::\+String\+To\+Speech (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{text}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_text_to_speech_a853ce06b633030fd9f8d1aba3fbd6a8a}
+\hypertarget{classmts_text_to_speech_afb7bc9e687ccf8057e0ecf8b16e1c829}{}\index{mts\+Text\+To\+Speech@{mts\+Text\+To\+Speech}!String\+To\+Speech\+Internal@{String\+To\+Speech\+Internal}}
+\index{String\+To\+Speech\+Internal@{String\+To\+Speech\+Internal}!mts\+Text\+To\+Speech@{mts\+Text\+To\+Speech}}
+\subsubsection[{String\+To\+Speech\+Internal}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Text\+To\+Speech\+::\+String\+To\+Speech\+Internal (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{text}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_text_to_speech_afb7bc9e687ccf8057e0ecf8b16e1c829}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classmts_text_to_speech_a3ef89e41ddb760539b723b6c46f1b463}{}\index{mts\+Text\+To\+Speech@{mts\+Text\+To\+Speech}!Internals@{Internals}}
+\index{Internals@{Internals}!mts\+Text\+To\+Speech@{mts\+Text\+To\+Speech}}
+\subsubsection[{Internals}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Text\+To\+Speech\+Internal$\ast$ mts\+Text\+To\+Speech\+::\+Internals\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_text_to_speech_a3ef89e41ddb760539b723b6c46f1b463}
+\hypertarget{classmts_text_to_speech_a8b6a91cf728698b9bd49ac8d888bbc48}{}\index{mts\+Text\+To\+Speech@{mts\+Text\+To\+Speech}!Last\+String@{Last\+String}}
+\index{Last\+String@{Last\+String}!mts\+Text\+To\+Speech@{mts\+Text\+To\+Speech}}
+\subsubsection[{Last\+String}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string mts\+Text\+To\+Speech\+::\+Last\+String\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_text_to_speech_a8b6a91cf728698b9bd49ac8d888bbc48}
+\hypertarget{classmts_text_to_speech_a78a3e0004193dbd080e027c3b7a97fa8}{}\index{mts\+Text\+To\+Speech@{mts\+Text\+To\+Speech}!Preemptive@{Preemptive}}
+\index{Preemptive@{Preemptive}!mts\+Text\+To\+Speech@{mts\+Text\+To\+Speech}}
+\subsubsection[{Preemptive}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Text\+To\+Speech\+::\+Preemptive\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_text_to_speech_a78a3e0004193dbd080e027c3b7a97fa8}
+\hypertarget{classmts_text_to_speech_aadd1b9d1f241afe95b2f2b7fa34422a8}{}\index{mts\+Text\+To\+Speech@{mts\+Text\+To\+Speech}!String\+To\+Speech\+Command@{String\+To\+Speech\+Command}}
+\index{String\+To\+Speech\+Command@{String\+To\+Speech\+Command}!mts\+Text\+To\+Speech@{mts\+Text\+To\+Speech}}
+\subsubsection[{String\+To\+Speech\+Command}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string mts\+Text\+To\+Speech\+::\+String\+To\+Speech\+Command\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_text_to_speech_aadd1b9d1f241afe95b2f2b7fa34422a8}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/saw\+Text\+To\+Speech/include/saw\+Text\+To\+Speech/\hyperlink{mts_text_to_speech_8h}{mts\+Text\+To\+Speech.\+h}\end{DoxyCompactItemize}

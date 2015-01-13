@@ -1,0 +1,62 @@
+\hypertarget{classvct_dynamic_vector_loop_engines_1_1_vio_si}{}\section{vct\+Dynamic\+Vector\+Loop\+Engines\+:\+:Vio\+Si$<$ \+\_\+element\+Operation\+Type $>$ Class Template Reference}
+\label{classvct_dynamic_vector_loop_engines_1_1_vio_si}\index{vct\+Dynamic\+Vector\+Loop\+Engines\+::\+Vio\+Si$<$ \+\_\+element\+Operation\+Type $>$@{vct\+Dynamic\+Vector\+Loop\+Engines\+::\+Vio\+Si$<$ \+\_\+element\+Operation\+Type $>$}}
+
+
+Implement operation of the form $ v_{io} = op(v_{io}, s_i)$ for dynamic vectors.  
+
+
+
+
+{\ttfamily \#include $<$vct\+Dynamic\+Vector\+Loop\+Engines.\+h$>$}
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class \+\_\+input\+Output\+Vector\+Type , class \+\_\+input\+Scalar\+Type $>$ }\\static void \hyperlink{classvct_dynamic_vector_loop_engines_1_1_vio_si_af3d43b7dd840e50ee26aa953c1312971}{Run} (\+\_\+input\+Output\+Vector\+Type \&input\+Output\+Vector, const \+\_\+input\+Scalar\+Type input\+Scalar)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class \+\_\+element\+Operation\+Type$>$class vct\+Dynamic\+Vector\+Loop\+Engines\+::\+Vio\+Si$<$ \+\_\+element\+Operation\+Type $>$}
+
+Implement operation of the form $ v_{io} = op(v_{io}, s_i)$ for dynamic vectors. 
+
+This class uses a loop to perform binary vector operations of the form
+
+\[ v_{io} = \mathrm{op}(v_{io}, s_{i}) \]
+
+where $v_{io}$ is the input output vector, and $s_{i}$ is the scalar input. {\itshape op} stands for the binary operation performed elementwise between $v_{io}[index]$ and $s_{i}$, and whose result is stored elementwise into $v_{io}[index]$.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+element\+Operation\+Type} & the type of the binary operation\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classvct_dynamic_vector_loop_engines}{vct\+Dynamic\+Vector\+Loop\+Engines} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classvct_dynamic_vector_loop_engines_1_1_vio_si_af3d43b7dd840e50ee26aa953c1312971}{}\index{vct\+Dynamic\+Vector\+Loop\+Engines\+::\+Vio\+Si@{vct\+Dynamic\+Vector\+Loop\+Engines\+::\+Vio\+Si}!Run@{Run}}
+\index{Run@{Run}!vct\+Dynamic\+Vector\+Loop\+Engines\+::\+Vio\+Si@{vct\+Dynamic\+Vector\+Loop\+Engines\+::\+Vio\+Si}}
+\subsubsection[{Run}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Operation\+Type $>$ template$<$class \+\_\+input\+Output\+Vector\+Type , class \+\_\+input\+Scalar\+Type $>$ static void {\bf vct\+Dynamic\+Vector\+Loop\+Engines\+::\+Vio\+Si}$<$ \+\_\+element\+Operation\+Type $>$\+::Run (
+\begin{DoxyParamCaption}
+\item[{\+\_\+input\+Output\+Vector\+Type \&}]{input\+Output\+Vector, }
+\item[{const \+\_\+input\+Scalar\+Type}]{input\+Scalar}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classvct_dynamic_vector_loop_engines_1_1_vio_si_af3d43b7dd840e50ee26aa953c1312971}
+Unroll the loop
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+Output\+Vector} & The input output vector (first operand). \\
+\hline
+{\em input\+Scalar} & The input scalar (second operand). \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Vector/\hyperlink{vct_dynamic_vector_loop_engines_8h}{vct\+Dynamic\+Vector\+Loop\+Engines.\+h}\end{DoxyCompactItemize}

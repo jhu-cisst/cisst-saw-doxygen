@@ -1,0 +1,265 @@
+\hypertarget{classsaw_robot_i_o1394_1_1osa_port1394}{}\section{saw\+Robot\+I\+O1394\+:\+:osa\+Port1394 Class Reference}
+\label{classsaw_robot_i_o1394_1_1osa_port1394}\index{saw\+Robot\+I\+O1394\+::osa\+Port1394@{saw\+Robot\+I\+O1394\+::osa\+Port1394}}
+
+
+{\ttfamily \#include $<$osa\+Port1394.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsaw_robot_i_o1394_1_1osa_port1394_a41274223831e4ba37ce3adf64994dd53}{osa\+Port1394} (int port\+Number, std\+::ostream \&message\+Stream=std\+::cerr)
+\item 
+\hyperlink{classsaw_robot_i_o1394_1_1osa_port1394_a47707c30b344f6a37b83c2d5fe01a22c}{$\sim$osa\+Port1394} ()
+\item 
+void \hyperlink{classsaw_robot_i_o1394_1_1osa_port1394_af26490a8bda08a0af924edd6ae6849a2}{Configure} (const \hyperlink{structsaw_robot_i_o1394_1_1osa_port1394_configuration}{osa\+Port1394\+Configuration} \&config)
+\begin{DoxyCompactList}\small\item\em Configure the port using the specified configuration file. This method is not. \end{DoxyCompactList}\item 
+void \hyperlink{classsaw_robot_i_o1394_1_1osa_port1394_a66c47cf88533156dad37561fa2956fd8}{Add\+Robot} (\hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394}{osa\+Robot1394} $\ast$\hyperlink{classsaw_robot_i_o1394_1_1osa_port1394_af2f6610aeec705984041bcc435bc5dda}{Robot})
+\begin{DoxyCompactList}\small\item\em Add a robot to this port. This method is used by the \hyperlink{classmts_robot_i_o1394}{mts\+Robot\+I\+O1394} S\+A\+W component,. \end{DoxyCompactList}\item 
+void \hyperlink{classsaw_robot_i_o1394_1_1osa_port1394_a54744cb8a813ad6b35b66ec277e45b70}{Add\+Digital\+Input} (\hyperlink{classsaw_robot_i_o1394_1_1osa_digital_input1394}{osa\+Digital\+Input1394} $\ast$digital\+\_\+input)
+\begin{DoxyCompactList}\small\item\em Add a digital input to this port. This method is used by the \hyperlink{classmts_robot_i_o1394}{mts\+Robot\+I\+O1394} S\+A\+W component,. \end{DoxyCompactList}\item 
+\hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394}{osa\+Robot1394} $\ast$ \hyperlink{classsaw_robot_i_o1394_1_1osa_port1394_af2f6610aeec705984041bcc435bc5dda}{Robot} (const std\+::string \&name)
+\begin{DoxyCompactList}\small\item\em Robot Accessors. \end{DoxyCompactList}\item 
+const \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394}{osa\+Robot1394} $\ast$ \hyperlink{classsaw_robot_i_o1394_1_1osa_port1394_abf75669ed82aabf5820c24de301fc868}{Robot} (const std\+::string \&name) const 
+\item 
+\hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394}{osa\+Robot1394} $\ast$ \hyperlink{classsaw_robot_i_o1394_1_1osa_port1394_a9e2096e401adb5565a3314b1090c4be8}{Robot} (const int index)
+\item 
+const \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394}{osa\+Robot1394} $\ast$ \hyperlink{classsaw_robot_i_o1394_1_1osa_port1394_aca859be1603e6b7bf476177eec73e8d3}{Robot} (const int index) const 
+\item 
+void \hyperlink{classsaw_robot_i_o1394_1_1osa_port1394_a485394fb1a256776d088ced3eaa7fe73}{Get\+Robot\+Names} (std\+::vector$<$ std\+::string $>$ \&names) const 
+\item 
+void \hyperlink{classsaw_robot_i_o1394_1_1osa_port1394_ae38f23f3b69d049933cb56a10eb22cb2}{Get\+Digital\+Input\+Names} (std\+::vector$<$ std\+::string $>$ \&names) const 
+\item 
+void \hyperlink{classsaw_robot_i_o1394_1_1osa_port1394_a9426141a8a2a0e6392d9991cf331d8a9}{Read} (void)
+\begin{DoxyCompactList}\small\item\em Input/\+Ouput. \end{DoxyCompactList}\item 
+void \hyperlink{classsaw_robot_i_o1394_1_1osa_port1394_a184cfc9bef655e767a5e435bf68ae3a1}{Write} (void)
+\item 
+int \hyperlink{classsaw_robot_i_o1394_1_1osa_port1394_adec1e0b7a0699abc8a309412bf174e61}{Number\+Of\+Boards} (void) const 
+\item 
+int \hyperlink{classsaw_robot_i_o1394_1_1osa_port1394_a6618de9e761633e735240598f6cb46ee}{Number\+Of\+Robots} (void) const 
+\item 
+int \hyperlink{classsaw_robot_i_o1394_1_1osa_port1394_a2841337671c67505f15776cef83c127d}{Number\+Of\+Digital\+Inputs} (void) const 
+\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::map$<$ int, Amp\+I\+O $\ast$ $>$\+::iterator \hyperlink{classsaw_robot_i_o1394_1_1osa_port1394_ab2ec914caff42e3180aff52b41643292}{board\+\_\+iterator}
+\item 
+typedef std\+::map$<$ int, Amp\+I\+O $\ast$ $>$\+::const\+\_\+iterator \hyperlink{classsaw_robot_i_o1394_1_1osa_port1394_a31632fbc6a8e493a8a1e0e48208f43d0}{board\+\_\+const\+\_\+iterator}
+\item 
+typedef std\+::vector$<$ \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394}{osa\+Robot1394} $\ast$ $>$\+::iterator \hyperlink{classsaw_robot_i_o1394_1_1osa_port1394_a2e6156bdb43167b1dc7d3ff98fdb1761}{robot\+\_\+iterator}
+\item 
+typedef std\+::vector$<$ \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394}{osa\+Robot1394} $\ast$ $>$\+::const\+\_\+iterator \hyperlink{classsaw_robot_i_o1394_1_1osa_port1394_a2cfdedd5dac44343f9b00f40aeff218c}{robot\+\_\+const\+\_\+iterator}
+\item 
+typedef std\+::vector$<$ \hyperlink{classsaw_robot_i_o1394_1_1osa_digital_input1394}{osa\+Digital\+Input1394} $\ast$ $>$\+::iterator \hyperlink{classsaw_robot_i_o1394_1_1osa_port1394_a4915e713bba71fecf60a3a761a932485}{digital\+\_\+input\+\_\+iterator}
+\item 
+typedef std\+::vector$<$ \hyperlink{classsaw_robot_i_o1394_1_1osa_digital_input1394}{osa\+Digital\+Input1394} $\ast$ $>$\+::const\+\_\+iterator \hyperlink{classsaw_robot_i_o1394_1_1osa_port1394_ad95ebd8e21bd3394aaa54a24ba424d7c}{digital\+\_\+input\+\_\+const\+\_\+iterator}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Firewire\+Port $\ast$ \hyperlink{classsaw_robot_i_o1394_1_1osa_port1394_aa0d8a2385466f6861d9b999f2c73406c}{m\+Port}
+\begin{DoxyCompactList}\small\item\em Board Objects. \end{DoxyCompactList}\item 
+std\+::map$<$ int, Amp\+I\+O $\ast$ $>$ \hyperlink{classsaw_robot_i_o1394_1_1osa_port1394_ad9af20aea070a26638199c54a9bc1d83}{m\+Boards}
+\item 
+std\+::vector$<$ \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394}{osa\+Robot1394} $\ast$ $>$ \hyperlink{classsaw_robot_i_o1394_1_1osa_port1394_a3cb60cf6a18b8e0b91576636cb231ea3}{m\+Robots}
+\begin{DoxyCompactList}\small\item\em Robot Objects. \end{DoxyCompactList}\item 
+std\+::map$<$ std\+::string, \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394}{osa\+Robot1394} $\ast$ $>$ \hyperlink{classsaw_robot_i_o1394_1_1osa_port1394_a43429f6b99e3a27ba60a626d3ab83367}{m\+Robots\+By\+Name}
+\item 
+std\+::vector$<$ \hyperlink{classsaw_robot_i_o1394_1_1osa_digital_input1394}{osa\+Digital\+Input1394} $\ast$ $>$ \hyperlink{classsaw_robot_i_o1394_1_1osa_port1394_ad654d5d0706677161e40b7eb723ed976}{m\+Digital\+Inputs}
+\item 
+std\+::map$<$ std\+::string, \hyperlink{classsaw_robot_i_o1394_1_1osa_digital_input1394}{osa\+Digital\+Input1394} $\ast$ $>$ \hyperlink{classsaw_robot_i_o1394_1_1osa_port1394_a02b4d9862a4db5568382fc665d365820}{m\+Digital\+Inputs\+By\+Name}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_port1394_a31632fbc6a8e493a8a1e0e48208f43d0}{}\index{saw\+Robot\+I\+O1394\+::osa\+Port1394@{saw\+Robot\+I\+O1394\+::osa\+Port1394}!board\+\_\+const\+\_\+iterator@{board\+\_\+const\+\_\+iterator}}
+\index{board\+\_\+const\+\_\+iterator@{board\+\_\+const\+\_\+iterator}!saw\+Robot\+I\+O1394\+::osa\+Port1394@{saw\+Robot\+I\+O1394\+::osa\+Port1394}}
+\subsubsection[{board\+\_\+const\+\_\+iterator}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::map$<$int, Amp\+I\+O$\ast$$>$\+::const\+\_\+iterator {\bf saw\+Robot\+I\+O1394\+::osa\+Port1394\+::board\+\_\+const\+\_\+iterator}\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_port1394_a31632fbc6a8e493a8a1e0e48208f43d0}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_port1394_ab2ec914caff42e3180aff52b41643292}{}\index{saw\+Robot\+I\+O1394\+::osa\+Port1394@{saw\+Robot\+I\+O1394\+::osa\+Port1394}!board\+\_\+iterator@{board\+\_\+iterator}}
+\index{board\+\_\+iterator@{board\+\_\+iterator}!saw\+Robot\+I\+O1394\+::osa\+Port1394@{saw\+Robot\+I\+O1394\+::osa\+Port1394}}
+\subsubsection[{board\+\_\+iterator}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::map$<$int, Amp\+I\+O$\ast$$>$\+::iterator {\bf saw\+Robot\+I\+O1394\+::osa\+Port1394\+::board\+\_\+iterator}\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_port1394_ab2ec914caff42e3180aff52b41643292}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_port1394_ad95ebd8e21bd3394aaa54a24ba424d7c}{}\index{saw\+Robot\+I\+O1394\+::osa\+Port1394@{saw\+Robot\+I\+O1394\+::osa\+Port1394}!digital\+\_\+input\+\_\+const\+\_\+iterator@{digital\+\_\+input\+\_\+const\+\_\+iterator}}
+\index{digital\+\_\+input\+\_\+const\+\_\+iterator@{digital\+\_\+input\+\_\+const\+\_\+iterator}!saw\+Robot\+I\+O1394\+::osa\+Port1394@{saw\+Robot\+I\+O1394\+::osa\+Port1394}}
+\subsubsection[{digital\+\_\+input\+\_\+const\+\_\+iterator}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::vector$<${\bf osa\+Digital\+Input1394}$\ast$$>$\+::const\+\_\+iterator {\bf saw\+Robot\+I\+O1394\+::osa\+Port1394\+::digital\+\_\+input\+\_\+const\+\_\+iterator}\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_port1394_ad95ebd8e21bd3394aaa54a24ba424d7c}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_port1394_a4915e713bba71fecf60a3a761a932485}{}\index{saw\+Robot\+I\+O1394\+::osa\+Port1394@{saw\+Robot\+I\+O1394\+::osa\+Port1394}!digital\+\_\+input\+\_\+iterator@{digital\+\_\+input\+\_\+iterator}}
+\index{digital\+\_\+input\+\_\+iterator@{digital\+\_\+input\+\_\+iterator}!saw\+Robot\+I\+O1394\+::osa\+Port1394@{saw\+Robot\+I\+O1394\+::osa\+Port1394}}
+\subsubsection[{digital\+\_\+input\+\_\+iterator}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::vector$<${\bf osa\+Digital\+Input1394}$\ast$$>$\+::iterator {\bf saw\+Robot\+I\+O1394\+::osa\+Port1394\+::digital\+\_\+input\+\_\+iterator}\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_port1394_a4915e713bba71fecf60a3a761a932485}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_port1394_a2cfdedd5dac44343f9b00f40aeff218c}{}\index{saw\+Robot\+I\+O1394\+::osa\+Port1394@{saw\+Robot\+I\+O1394\+::osa\+Port1394}!robot\+\_\+const\+\_\+iterator@{robot\+\_\+const\+\_\+iterator}}
+\index{robot\+\_\+const\+\_\+iterator@{robot\+\_\+const\+\_\+iterator}!saw\+Robot\+I\+O1394\+::osa\+Port1394@{saw\+Robot\+I\+O1394\+::osa\+Port1394}}
+\subsubsection[{robot\+\_\+const\+\_\+iterator}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::vector$<${\bf osa\+Robot1394}$\ast$$>$\+::const\+\_\+iterator {\bf saw\+Robot\+I\+O1394\+::osa\+Port1394\+::robot\+\_\+const\+\_\+iterator}\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_port1394_a2cfdedd5dac44343f9b00f40aeff218c}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_port1394_a2e6156bdb43167b1dc7d3ff98fdb1761}{}\index{saw\+Robot\+I\+O1394\+::osa\+Port1394@{saw\+Robot\+I\+O1394\+::osa\+Port1394}!robot\+\_\+iterator@{robot\+\_\+iterator}}
+\index{robot\+\_\+iterator@{robot\+\_\+iterator}!saw\+Robot\+I\+O1394\+::osa\+Port1394@{saw\+Robot\+I\+O1394\+::osa\+Port1394}}
+\subsubsection[{robot\+\_\+iterator}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::vector$<${\bf osa\+Robot1394}$\ast$$>$\+::iterator {\bf saw\+Robot\+I\+O1394\+::osa\+Port1394\+::robot\+\_\+iterator}\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_port1394_a2e6156bdb43167b1dc7d3ff98fdb1761}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_port1394_a41274223831e4ba37ce3adf64994dd53}{}\index{saw\+Robot\+I\+O1394\+::osa\+Port1394@{saw\+Robot\+I\+O1394\+::osa\+Port1394}!osa\+Port1394@{osa\+Port1394}}
+\index{osa\+Port1394@{osa\+Port1394}!saw\+Robot\+I\+O1394\+::osa\+Port1394@{saw\+Robot\+I\+O1394\+::osa\+Port1394}}
+\subsubsection[{osa\+Port1394}]{\setlength{\rightskip}{0pt plus 5cm}saw\+Robot\+I\+O1394\+::osa\+Port1394\+::osa\+Port1394 (
+\begin{DoxyParamCaption}
+\item[{int}]{port\+Number, }
+\item[{std\+::ostream \&}]{message\+Stream = {\ttfamily std\+:\+:cerr}}
+\end{DoxyParamCaption}
+)}\label{classsaw_robot_i_o1394_1_1osa_port1394_a41274223831e4ba37ce3adf64994dd53}
+I\+O1394 Port Abstraction Layer This class handles allocation, interfacing, and power-\/control for the Q\+L\+A robot control architecture. It is also responsible for some low-\/level error handling. \hypertarget{classsaw_robot_i_o1394_1_1osa_port1394_a47707c30b344f6a37b83c2d5fe01a22c}{}\index{saw\+Robot\+I\+O1394\+::osa\+Port1394@{saw\+Robot\+I\+O1394\+::osa\+Port1394}!````~osa\+Port1394@{$\sim$osa\+Port1394}}
+\index{````~osa\+Port1394@{$\sim$osa\+Port1394}!saw\+Robot\+I\+O1394\+::osa\+Port1394@{saw\+Robot\+I\+O1394\+::osa\+Port1394}}
+\subsubsection[{$\sim$osa\+Port1394}]{\setlength{\rightskip}{0pt plus 5cm}saw\+Robot\+I\+O1394\+::osa\+Port1394\+::$\sim$osa\+Port1394 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classsaw_robot_i_o1394_1_1osa_port1394_a47707c30b344f6a37b83c2d5fe01a22c}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_port1394_a54744cb8a813ad6b35b66ec277e45b70}{}\index{saw\+Robot\+I\+O1394\+::osa\+Port1394@{saw\+Robot\+I\+O1394\+::osa\+Port1394}!Add\+Digital\+Input@{Add\+Digital\+Input}}
+\index{Add\+Digital\+Input@{Add\+Digital\+Input}!saw\+Robot\+I\+O1394\+::osa\+Port1394@{saw\+Robot\+I\+O1394\+::osa\+Port1394}}
+\subsubsection[{Add\+Digital\+Input}]{\setlength{\rightskip}{0pt plus 5cm}void saw\+Robot\+I\+O1394\+::osa\+Port1394\+::\+Add\+Digital\+Input (
+\begin{DoxyParamCaption}
+\item[{{\bf osa\+Digital\+Input1394} $\ast$}]{digital\+\_\+input}
+\end{DoxyParamCaption}
+)}\label{classsaw_robot_i_o1394_1_1osa_port1394_a54744cb8a813ad6b35b66ec277e45b70}
+
+
+Add a digital input to this port. This method is used by the \hyperlink{classmts_robot_i_o1394}{mts\+Robot\+I\+O1394} S\+A\+W component,. 
+
+\hypertarget{classsaw_robot_i_o1394_1_1osa_port1394_a66c47cf88533156dad37561fa2956fd8}{}\index{saw\+Robot\+I\+O1394\+::osa\+Port1394@{saw\+Robot\+I\+O1394\+::osa\+Port1394}!Add\+Robot@{Add\+Robot}}
+\index{Add\+Robot@{Add\+Robot}!saw\+Robot\+I\+O1394\+::osa\+Port1394@{saw\+Robot\+I\+O1394\+::osa\+Port1394}}
+\subsubsection[{Add\+Robot}]{\setlength{\rightskip}{0pt plus 5cm}void saw\+Robot\+I\+O1394\+::osa\+Port1394\+::\+Add\+Robot (
+\begin{DoxyParamCaption}
+\item[{{\bf osa\+Robot1394} $\ast$}]{Robot}
+\end{DoxyParamCaption}
+)}\label{classsaw_robot_i_o1394_1_1osa_port1394_a66c47cf88533156dad37561fa2956fd8}
+
+
+Add a robot to this port. This method is used by the \hyperlink{classmts_robot_i_o1394}{mts\+Robot\+I\+O1394} S\+A\+W component,. 
+
+\hypertarget{classsaw_robot_i_o1394_1_1osa_port1394_af26490a8bda08a0af924edd6ae6849a2}{}\index{saw\+Robot\+I\+O1394\+::osa\+Port1394@{saw\+Robot\+I\+O1394\+::osa\+Port1394}!Configure@{Configure}}
+\index{Configure@{Configure}!saw\+Robot\+I\+O1394\+::osa\+Port1394@{saw\+Robot\+I\+O1394\+::osa\+Port1394}}
+\subsubsection[{Configure}]{\setlength{\rightskip}{0pt plus 5cm}void saw\+Robot\+I\+O1394\+::osa\+Port1394\+::\+Configure (
+\begin{DoxyParamCaption}
+\item[{const {\bf osa\+Port1394\+Configuration} \&}]{config}
+\end{DoxyParamCaption}
+)}\label{classsaw_robot_i_o1394_1_1osa_port1394_af26490a8bda08a0af924edd6ae6849a2}
+
+
+Configure the port using the specified configuration file. This method is not. 
+
+\hypertarget{classsaw_robot_i_o1394_1_1osa_port1394_ae38f23f3b69d049933cb56a10eb22cb2}{}\index{saw\+Robot\+I\+O1394\+::osa\+Port1394@{saw\+Robot\+I\+O1394\+::osa\+Port1394}!Get\+Digital\+Input\+Names@{Get\+Digital\+Input\+Names}}
+\index{Get\+Digital\+Input\+Names@{Get\+Digital\+Input\+Names}!saw\+Robot\+I\+O1394\+::osa\+Port1394@{saw\+Robot\+I\+O1394\+::osa\+Port1394}}
+\subsubsection[{Get\+Digital\+Input\+Names}]{\setlength{\rightskip}{0pt plus 5cm}void saw\+Robot\+I\+O1394\+::osa\+Port1394\+::\+Get\+Digital\+Input\+Names (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ std\+::string $>$ \&}]{names}
+\end{DoxyParamCaption}
+) const}\label{classsaw_robot_i_o1394_1_1osa_port1394_ae38f23f3b69d049933cb56a10eb22cb2}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_port1394_a485394fb1a256776d088ced3eaa7fe73}{}\index{saw\+Robot\+I\+O1394\+::osa\+Port1394@{saw\+Robot\+I\+O1394\+::osa\+Port1394}!Get\+Robot\+Names@{Get\+Robot\+Names}}
+\index{Get\+Robot\+Names@{Get\+Robot\+Names}!saw\+Robot\+I\+O1394\+::osa\+Port1394@{saw\+Robot\+I\+O1394\+::osa\+Port1394}}
+\subsubsection[{Get\+Robot\+Names}]{\setlength{\rightskip}{0pt plus 5cm}void saw\+Robot\+I\+O1394\+::osa\+Port1394\+::\+Get\+Robot\+Names (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ std\+::string $>$ \&}]{names}
+\end{DoxyParamCaption}
+) const}\label{classsaw_robot_i_o1394_1_1osa_port1394_a485394fb1a256776d088ced3eaa7fe73}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_port1394_adec1e0b7a0699abc8a309412bf174e61}{}\index{saw\+Robot\+I\+O1394\+::osa\+Port1394@{saw\+Robot\+I\+O1394\+::osa\+Port1394}!Number\+Of\+Boards@{Number\+Of\+Boards}}
+\index{Number\+Of\+Boards@{Number\+Of\+Boards}!saw\+Robot\+I\+O1394\+::osa\+Port1394@{saw\+Robot\+I\+O1394\+::osa\+Port1394}}
+\subsubsection[{Number\+Of\+Boards}]{\setlength{\rightskip}{0pt plus 5cm}int saw\+Robot\+I\+O1394\+::osa\+Port1394\+::\+Number\+Of\+Boards (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classsaw_robot_i_o1394_1_1osa_port1394_adec1e0b7a0699abc8a309412bf174e61}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_port1394_a2841337671c67505f15776cef83c127d}{}\index{saw\+Robot\+I\+O1394\+::osa\+Port1394@{saw\+Robot\+I\+O1394\+::osa\+Port1394}!Number\+Of\+Digital\+Inputs@{Number\+Of\+Digital\+Inputs}}
+\index{Number\+Of\+Digital\+Inputs@{Number\+Of\+Digital\+Inputs}!saw\+Robot\+I\+O1394\+::osa\+Port1394@{saw\+Robot\+I\+O1394\+::osa\+Port1394}}
+\subsubsection[{Number\+Of\+Digital\+Inputs}]{\setlength{\rightskip}{0pt plus 5cm}int saw\+Robot\+I\+O1394\+::osa\+Port1394\+::\+Number\+Of\+Digital\+Inputs (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classsaw_robot_i_o1394_1_1osa_port1394_a2841337671c67505f15776cef83c127d}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_port1394_a6618de9e761633e735240598f6cb46ee}{}\index{saw\+Robot\+I\+O1394\+::osa\+Port1394@{saw\+Robot\+I\+O1394\+::osa\+Port1394}!Number\+Of\+Robots@{Number\+Of\+Robots}}
+\index{Number\+Of\+Robots@{Number\+Of\+Robots}!saw\+Robot\+I\+O1394\+::osa\+Port1394@{saw\+Robot\+I\+O1394\+::osa\+Port1394}}
+\subsubsection[{Number\+Of\+Robots}]{\setlength{\rightskip}{0pt plus 5cm}int saw\+Robot\+I\+O1394\+::osa\+Port1394\+::\+Number\+Of\+Robots (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classsaw_robot_i_o1394_1_1osa_port1394_a6618de9e761633e735240598f6cb46ee}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_port1394_a9426141a8a2a0e6392d9991cf331d8a9}{}\index{saw\+Robot\+I\+O1394\+::osa\+Port1394@{saw\+Robot\+I\+O1394\+::osa\+Port1394}!Read@{Read}}
+\index{Read@{Read}!saw\+Robot\+I\+O1394\+::osa\+Port1394@{saw\+Robot\+I\+O1394\+::osa\+Port1394}}
+\subsubsection[{Read}]{\setlength{\rightskip}{0pt plus 5cm}void saw\+Robot\+I\+O1394\+::osa\+Port1394\+::\+Read (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classsaw_robot_i_o1394_1_1osa_port1394_a9426141a8a2a0e6392d9991cf331d8a9}
+
+
+Input/\+Ouput. 
+
+\hypertarget{classsaw_robot_i_o1394_1_1osa_port1394_af2f6610aeec705984041bcc435bc5dda}{}\index{saw\+Robot\+I\+O1394\+::osa\+Port1394@{saw\+Robot\+I\+O1394\+::osa\+Port1394}!Robot@{Robot}}
+\index{Robot@{Robot}!saw\+Robot\+I\+O1394\+::osa\+Port1394@{saw\+Robot\+I\+O1394\+::osa\+Port1394}}
+\subsubsection[{Robot}]{\setlength{\rightskip}{0pt plus 5cm}{\bf osa\+Robot1394}$\ast$ saw\+Robot\+I\+O1394\+::osa\+Port1394\+::\+Robot (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name}
+\end{DoxyParamCaption}
+)}\label{classsaw_robot_i_o1394_1_1osa_port1394_af2f6610aeec705984041bcc435bc5dda}
+
+
+Robot Accessors. 
+
+\hypertarget{classsaw_robot_i_o1394_1_1osa_port1394_abf75669ed82aabf5820c24de301fc868}{}\index{saw\+Robot\+I\+O1394\+::osa\+Port1394@{saw\+Robot\+I\+O1394\+::osa\+Port1394}!Robot@{Robot}}
+\index{Robot@{Robot}!saw\+Robot\+I\+O1394\+::osa\+Port1394@{saw\+Robot\+I\+O1394\+::osa\+Port1394}}
+\subsubsection[{Robot}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf osa\+Robot1394}$\ast$ saw\+Robot\+I\+O1394\+::osa\+Port1394\+::\+Robot (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name}
+\end{DoxyParamCaption}
+) const}\label{classsaw_robot_i_o1394_1_1osa_port1394_abf75669ed82aabf5820c24de301fc868}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_port1394_a9e2096e401adb5565a3314b1090c4be8}{}\index{saw\+Robot\+I\+O1394\+::osa\+Port1394@{saw\+Robot\+I\+O1394\+::osa\+Port1394}!Robot@{Robot}}
+\index{Robot@{Robot}!saw\+Robot\+I\+O1394\+::osa\+Port1394@{saw\+Robot\+I\+O1394\+::osa\+Port1394}}
+\subsubsection[{Robot}]{\setlength{\rightskip}{0pt plus 5cm}{\bf osa\+Robot1394}$\ast$ saw\+Robot\+I\+O1394\+::osa\+Port1394\+::\+Robot (
+\begin{DoxyParamCaption}
+\item[{const int}]{index}
+\end{DoxyParamCaption}
+)}\label{classsaw_robot_i_o1394_1_1osa_port1394_a9e2096e401adb5565a3314b1090c4be8}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_port1394_aca859be1603e6b7bf476177eec73e8d3}{}\index{saw\+Robot\+I\+O1394\+::osa\+Port1394@{saw\+Robot\+I\+O1394\+::osa\+Port1394}!Robot@{Robot}}
+\index{Robot@{Robot}!saw\+Robot\+I\+O1394\+::osa\+Port1394@{saw\+Robot\+I\+O1394\+::osa\+Port1394}}
+\subsubsection[{Robot}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf osa\+Robot1394}$\ast$ saw\+Robot\+I\+O1394\+::osa\+Port1394\+::\+Robot (
+\begin{DoxyParamCaption}
+\item[{const int}]{index}
+\end{DoxyParamCaption}
+) const}\label{classsaw_robot_i_o1394_1_1osa_port1394_aca859be1603e6b7bf476177eec73e8d3}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_port1394_a184cfc9bef655e767a5e435bf68ae3a1}{}\index{saw\+Robot\+I\+O1394\+::osa\+Port1394@{saw\+Robot\+I\+O1394\+::osa\+Port1394}!Write@{Write}}
+\index{Write@{Write}!saw\+Robot\+I\+O1394\+::osa\+Port1394@{saw\+Robot\+I\+O1394\+::osa\+Port1394}}
+\subsubsection[{Write}]{\setlength{\rightskip}{0pt plus 5cm}void saw\+Robot\+I\+O1394\+::osa\+Port1394\+::\+Write (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classsaw_robot_i_o1394_1_1osa_port1394_a184cfc9bef655e767a5e435bf68ae3a1}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_port1394_ad9af20aea070a26638199c54a9bc1d83}{}\index{saw\+Robot\+I\+O1394\+::osa\+Port1394@{saw\+Robot\+I\+O1394\+::osa\+Port1394}!m\+Boards@{m\+Boards}}
+\index{m\+Boards@{m\+Boards}!saw\+Robot\+I\+O1394\+::osa\+Port1394@{saw\+Robot\+I\+O1394\+::osa\+Port1394}}
+\subsubsection[{m\+Boards}]{\setlength{\rightskip}{0pt plus 5cm}std\+::map$<$int, Amp\+I\+O$\ast$$>$ saw\+Robot\+I\+O1394\+::osa\+Port1394\+::m\+Boards\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_port1394_ad9af20aea070a26638199c54a9bc1d83}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_port1394_ad654d5d0706677161e40b7eb723ed976}{}\index{saw\+Robot\+I\+O1394\+::osa\+Port1394@{saw\+Robot\+I\+O1394\+::osa\+Port1394}!m\+Digital\+Inputs@{m\+Digital\+Inputs}}
+\index{m\+Digital\+Inputs@{m\+Digital\+Inputs}!saw\+Robot\+I\+O1394\+::osa\+Port1394@{saw\+Robot\+I\+O1394\+::osa\+Port1394}}
+\subsubsection[{m\+Digital\+Inputs}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf osa\+Digital\+Input1394}$\ast$$>$ saw\+Robot\+I\+O1394\+::osa\+Port1394\+::m\+Digital\+Inputs\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_port1394_ad654d5d0706677161e40b7eb723ed976}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_port1394_a02b4d9862a4db5568382fc665d365820}{}\index{saw\+Robot\+I\+O1394\+::osa\+Port1394@{saw\+Robot\+I\+O1394\+::osa\+Port1394}!m\+Digital\+Inputs\+By\+Name@{m\+Digital\+Inputs\+By\+Name}}
+\index{m\+Digital\+Inputs\+By\+Name@{m\+Digital\+Inputs\+By\+Name}!saw\+Robot\+I\+O1394\+::osa\+Port1394@{saw\+Robot\+I\+O1394\+::osa\+Port1394}}
+\subsubsection[{m\+Digital\+Inputs\+By\+Name}]{\setlength{\rightskip}{0pt plus 5cm}std\+::map$<$std\+::string, {\bf osa\+Digital\+Input1394}$\ast$$>$ saw\+Robot\+I\+O1394\+::osa\+Port1394\+::m\+Digital\+Inputs\+By\+Name\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_port1394_a02b4d9862a4db5568382fc665d365820}
+\hypertarget{classsaw_robot_i_o1394_1_1osa_port1394_aa0d8a2385466f6861d9b999f2c73406c}{}\index{saw\+Robot\+I\+O1394\+::osa\+Port1394@{saw\+Robot\+I\+O1394\+::osa\+Port1394}!m\+Port@{m\+Port}}
+\index{m\+Port@{m\+Port}!saw\+Robot\+I\+O1394\+::osa\+Port1394@{saw\+Robot\+I\+O1394\+::osa\+Port1394}}
+\subsubsection[{m\+Port}]{\setlength{\rightskip}{0pt plus 5cm}Firewire\+Port$\ast$ saw\+Robot\+I\+O1394\+::osa\+Port1394\+::m\+Port\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_port1394_aa0d8a2385466f6861d9b999f2c73406c}
+
+
+Board Objects. 
+
+\hypertarget{classsaw_robot_i_o1394_1_1osa_port1394_a3cb60cf6a18b8e0b91576636cb231ea3}{}\index{saw\+Robot\+I\+O1394\+::osa\+Port1394@{saw\+Robot\+I\+O1394\+::osa\+Port1394}!m\+Robots@{m\+Robots}}
+\index{m\+Robots@{m\+Robots}!saw\+Robot\+I\+O1394\+::osa\+Port1394@{saw\+Robot\+I\+O1394\+::osa\+Port1394}}
+\subsubsection[{m\+Robots}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf osa\+Robot1394}$\ast$$>$ saw\+Robot\+I\+O1394\+::osa\+Port1394\+::m\+Robots\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_port1394_a3cb60cf6a18b8e0b91576636cb231ea3}
+
+
+Robot Objects. 
+
+\hypertarget{classsaw_robot_i_o1394_1_1osa_port1394_a43429f6b99e3a27ba60a626d3ab83367}{}\index{saw\+Robot\+I\+O1394\+::osa\+Port1394@{saw\+Robot\+I\+O1394\+::osa\+Port1394}!m\+Robots\+By\+Name@{m\+Robots\+By\+Name}}
+\index{m\+Robots\+By\+Name@{m\+Robots\+By\+Name}!saw\+Robot\+I\+O1394\+::osa\+Port1394@{saw\+Robot\+I\+O1394\+::osa\+Port1394}}
+\subsubsection[{m\+Robots\+By\+Name}]{\setlength{\rightskip}{0pt plus 5cm}std\+::map$<$std\+::string, {\bf osa\+Robot1394}$\ast$$>$ saw\+Robot\+I\+O1394\+::osa\+Port1394\+::m\+Robots\+By\+Name\hspace{0.3cm}{\ttfamily [protected]}}\label{classsaw_robot_i_o1394_1_1osa_port1394_a43429f6b99e3a27ba60a626d3ab83367}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/saw\+Robot\+I\+O1394/include/saw\+Robot\+I\+O1394/\hyperlink{osa_port1394_8h}{osa\+Port1394.\+h}\end{DoxyCompactItemize}

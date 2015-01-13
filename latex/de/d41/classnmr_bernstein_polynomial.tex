@@ -1,0 +1,317 @@
+\hypertarget{classnmr_bernstein_polynomial}{}\section{nmr\+Bernstein\+Polynomial Class Reference}
+\label{classnmr_bernstein_polynomial}\index{nmr\+Bernstein\+Polynomial@{nmr\+Bernstein\+Polynomial}}
+
+
+{\ttfamily \#include $<$nmr\+Bernstein\+Polynomial.\+h$>$}
+
+Inheritance diagram for nmr\+Bernstein\+Polynomial\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{de/d41/classnmr_bernstein_polynomial}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classnmr_dyn_alloc_polynomial_container}{nmr\+Dyn\+Alloc\+Polynomial\+Container} \hyperlink{classnmr_bernstein_polynomial_a8a0eb11ca4ee788e0f3714dd0e1f2e53}{Base\+Type}
+\item 
+typedef std\+::pair$<$ \hyperlink{classnmr_polynomial_base_a8693efdfc8585ccb49abea69f74f3eef}{nmr\+Polynomial\+Base\+::\+Coefficient\+Type}, \hyperlink{classnmr_polynomial_term_power_index_a09f482da776cfb829e26ad1fb381ab94}{nmr\+Polynomial\+Term\+Power\+Index\+::\+Multinomial\+Coefficient\+Type} $>$ \hyperlink{classnmr_bernstein_polynomial_ad8d87d00b90dcd2de08a43e90c07a0a6}{Bernstein\+Term\+Info}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classnmr_bernstein_polynomial_a7ef25e6984df6f2c6b4dbfc1ea2273cc}{nmr\+Bernstein\+Polynomial} (\hyperlink{classnmr_polynomial_base_aae95477e451ddc7d3ee3f41cbdaadde2}{Variable\+Index\+Type} num\+Variables, \hyperlink{classnmr_polynomial_base_a58607c884bf2e6725a77ed4d9e14ba26}{Power\+Type} degree)
+\item 
+virtual \hyperlink{classnmr_polynomial_base_ac3b6b28653104ea70419279a35580940}{Insert\+Status} \hyperlink{classnmr_bernstein_polynomial_ada942e63869c140436d7b9706b2b5199}{Set\+Coefficient} (const \hyperlink{classnmr_polynomial_term_power_index}{nmr\+Polynomial\+Term\+Power\+Index} \&where, \hyperlink{classnmr_polynomial_base_a8693efdfc8585ccb49abea69f74f3eef}{Coefficient\+Type} coefficient)
+\item 
+virtual \hyperlink{classnmr_polynomial_base_ac3b6b28653104ea70419279a35580940}{Insert\+Status} \hyperlink{classnmr_bernstein_polynomial_a39bb0e94db9696628401d9e6f5e74b1e}{Set\+Coefficient} (\hyperlink{classnmr_polynomial_container_a276e57445d038e8a16462f47b85719a3}{Term\+Iterator\+Type} \&where, \hyperlink{classnmr_polynomial_base_a8693efdfc8585ccb49abea69f74f3eef}{Coefficient\+Type} coefficient)
+\item 
+virtual \hyperlink{classnmr_polynomial_base_a8693efdfc8585ccb49abea69f74f3eef}{Coefficient\+Type} \hyperlink{classnmr_bernstein_polynomial_a658ac3ee28fcc0ee072a83c79eaf2489}{Get\+Coefficient} (const \hyperlink{classnmr_polynomial_term_power_index}{nmr\+Polynomial\+Term\+Power\+Index} \&where) const 
+\item 
+virtual \hyperlink{classnmr_polynomial_base_a8693efdfc8585ccb49abea69f74f3eef}{Coefficient\+Type} \hyperlink{classnmr_bernstein_polynomial_aff3c634b10989a7ac81272eb06e5f5a8}{Get\+Coefficient} (const \hyperlink{classnmr_polynomial_container_aba8d31506ab6a487fdc4fe2815469442}{Term\+Const\+Iterator\+Type} \&where) const 
+\item 
+virtual \hyperlink{classnmr_polynomial_base_a8693efdfc8585ccb49abea69f74f3eef}{Coefficient\+Type} \hyperlink{classnmr_bernstein_polynomial_a989595e97345a8dbfab7c77c637dc9fb}{Get\+Coefficient} (const \hyperlink{classnmr_polynomial_container_a276e57445d038e8a16462f47b85719a3}{Term\+Iterator\+Type} \&where) const 
+\item 
+virtual void \hyperlink{classnmr_bernstein_polynomial_a615e825f6b2c453fa48bf50b387af9bb}{Remove\+Term} (\hyperlink{classnmr_polynomial_container_a276e57445d038e8a16462f47b85719a3}{Term\+Iterator\+Type} \&where)
+\item 
+virtual void \hyperlink{classnmr_bernstein_polynomial_a7987a19a4cccb2dac54ffee7b77492fb}{Clear} ()
+\item 
+virtual \hyperlink{classnmr_polynomial_base_a72f0bc16b225e4708bcf15a77ba206e3}{Value\+Type} \hyperlink{classnmr_bernstein_polynomial_a2e259ce60fe4ba4e18649a366e4f90a9}{Evaluate\+Basis} (const \hyperlink{classnmr_polynomial_term_power_index}{nmr\+Polynomial\+Term\+Power\+Index} \&where, const \hyperlink{classnmr_multi_variable_power_basis}{nmr\+Multi\+Variable\+Power\+Basis} \&variables) const 
+\item 
+virtual \hyperlink{classnmr_polynomial_base_a72f0bc16b225e4708bcf15a77ba206e3}{Value\+Type} \hyperlink{classnmr_bernstein_polynomial_aa47f112a93af89b894da0808171fe168}{Evaluate\+Basis} (const \hyperlink{classnmr_polynomial_container_aba8d31506ab6a487fdc4fe2815469442}{Term\+Const\+Iterator\+Type} \&where, const \hyperlink{classnmr_multi_variable_power_basis}{nmr\+Multi\+Variable\+Power\+Basis} \&variables) const 
+\item 
+virtual \hyperlink{classnmr_polynomial_base_a72f0bc16b225e4708bcf15a77ba206e3}{Value\+Type} \hyperlink{classnmr_bernstein_polynomial_a655a3b41ac928510914e202332fe54b2}{Evaluate\+Basis} (const \hyperlink{classnmr_polynomial_container_a276e57445d038e8a16462f47b85719a3}{Term\+Iterator\+Type} \&where, const \hyperlink{classnmr_multi_variable_power_basis}{nmr\+Multi\+Variable\+Power\+Basis} \&variables) const 
+\item 
+virtual void \hyperlink{classnmr_bernstein_polynomial_ab8846bb7223b02b87c366672d4a07a4f}{Serialize\+Term\+Info} (std\+::ostream \&output, const \hyperlink{classnmr_polynomial_container_aba8d31506ab6a487fdc4fe2815469442}{Term\+Const\+Iterator\+Type} \&term\+Iterator) const 
+\item 
+virtual void \hyperlink{classnmr_bernstein_polynomial_a457024b5819f590ef4a9feb1b803a796}{Deserialize\+Term\+Info} (std\+::istream \&input, \hyperlink{classnmr_polynomial_container_a276e57445d038e8a16462f47b85719a3}{Term\+Iterator\+Type} \&term\+Iterator)
+\item 
+virtual void \hyperlink{classnmr_bernstein_polynomial_aea0de386d6fba42e5ff2c36d5412b25e}{Add\+Constant} (\hyperlink{classnmr_polynomial_base_a8693efdfc8585ccb49abea69f74f3eef}{Coefficient\+Type} shift\+Amount)
+\item 
+virtual void \hyperlink{classnmr_bernstein_polynomial_a02c6714afc14c2138054e6b27ab8375b}{Add\+Constant\+To\+Coefficients} (\hyperlink{classnmr_polynomial_base_a8693efdfc8585ccb49abea69f74f3eef}{Coefficient\+Type} coefficients\mbox{[}$\,$\mbox{]}, \hyperlink{classnmr_polynomial_base_a8693efdfc8585ccb49abea69f74f3eef}{Coefficient\+Type} shift\+Amount) const 
+\item 
+const \hyperlink{classnmr_polynomial_term_power_index_a09f482da776cfb829e26ad1fb381ab94}{nmr\+Polynomial\+Term\+Power\+Index\+::\+Multinomial\+Coefficient\+Type} \& \hyperlink{classnmr_bernstein_polynomial_a934b948b27ef035ef62aa43c635ae784}{Get\+Multinomial\+Coefficient} (const \hyperlink{classnmr_polynomial_container_a276e57445d038e8a16462f47b85719a3}{Term\+Iterator\+Type} \&where) const 
+\item 
+const \hyperlink{classnmr_polynomial_term_power_index_a09f482da776cfb829e26ad1fb381ab94}{nmr\+Polynomial\+Term\+Power\+Index\+::\+Multinomial\+Coefficient\+Type} \& \hyperlink{classnmr_bernstein_polynomial_a30b33638e9343cec80cea704f364dde2}{Get\+Multinomial\+Coefficient} (const \hyperlink{classnmr_polynomial_container_aba8d31506ab6a487fdc4fe2815469442}{Term\+Const\+Iterator\+Type} \&where) const 
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classnmr_polynomial_term_power_index_a09f482da776cfb829e26ad1fb381ab94}{nmr\+Polynomial\+Term\+Power\+Index\+::\+Multinomial\+Coefficient\+Type} \& \hyperlink{classnmr_bernstein_polynomial_ab72225000d4462b8ce1c941a29245268}{Ref\+Multinomial\+Coefficient} (const \hyperlink{classnmr_polynomial_container_a276e57445d038e8a16462f47b85719a3}{Term\+Iterator\+Type} \&where)
+\item 
+const \hyperlink{classnmr_polynomial_base_a8693efdfc8585ccb49abea69f74f3eef}{Coefficient\+Type} \& \hyperlink{classnmr_bernstein_polynomial_ad19aadc8aee129cc1201f638f9340c28}{Get\+Term\+Coefficient} (const \hyperlink{classnmr_polynomial_container_aba8d31506ab6a487fdc4fe2815469442}{Term\+Const\+Iterator\+Type} \&where) const 
+\item 
+const \hyperlink{classnmr_polynomial_base_a8693efdfc8585ccb49abea69f74f3eef}{Coefficient\+Type} \& \hyperlink{classnmr_bernstein_polynomial_a15e4932f2013e9157706fce26d34d5d0}{Get\+Term\+Coefficient} (const \hyperlink{classnmr_polynomial_container_a276e57445d038e8a16462f47b85719a3}{Term\+Iterator\+Type} \&where) const 
+\item 
+\hyperlink{classnmr_polynomial_base_a8693efdfc8585ccb49abea69f74f3eef}{Coefficient\+Type} \& \hyperlink{classnmr_bernstein_polynomial_a991fafd8dcb73e118ad9f7a046bc59a5}{Ref\+Term\+Coefficient} (const \hyperlink{classnmr_polynomial_container_a276e57445d038e8a16462f47b85719a3}{Term\+Iterator\+Type} \&where)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+class \hyperlink{classnmr_bernstein_polynomial}{nmr\+Bernstein\+Polynomial} defines a polynomial in Bernstein basis. In a Bernstein polynomial, all the terms are of equal degree (that is, the sum of powers is a constant), and the variables sum up to a unity. Each term is associated with a scalar coefficient and with a multinomial factor, which reflects the relative weight of the term in the expression\+:
+
+$1 = (x_0 + ... + x_{n-1}) ^ d = \sum_{(p_0 + ... + p_{n-1}) = d} \choose{d}{p_0 p_1 ... p_{n-1}} x_0^{p_0} ... x_{n-1}^{p_{n-1}}$
+
+To make repeated evaluations quicker, we cache the multinomial factor along with the coefficient of the term in a Bernstein\+Term\+Info object. Appropriate accessors are defined.
+
+Since the sum of the variables is 1, one of the variables depends on the others. Typically, it is either the last or the first, but the user can choose any variable to be the ``implicit\textquotesingle{}\textquotesingle{} variable. Once the implicit variable has been determined, its value cannot be updated directly, and instead it is reassigned every time one of the other variables is set. However, the user of the class still has the flexibility to replace the choice of the implicit variable at any time. The only thing that matters is that the variables sum to 1.
+
+Note\+: We use dynamic allocation for the term information (Bernstein\+Term\+Info), which is separate from the S\+T\+L provided dynamic allocation for the container elements. We store the pointer to the dynamically allocated term info in the container. Therefore\+:
+
+
+\begin{DoxyEnumerate}
+\item We had to override the base-\/class\textquotesingle{}s \hyperlink{classnmr_bernstein_polynomial_a615e825f6b2c453fa48bf50b387af9bb}{Remove\+Term()} and \hyperlink{classnmr_bernstein_polynomial_a7987a19a4cccb2dac54ffee7b77492fb}{Clear()} methods.
+\item Do not even try to make a copy of a \hyperlink{classnmr_bernstein_polynomial}{nmr\+Bernstein\+Polynomial} using copy-\/ctor or operator= (yeah, like you would). Just for safety, we declare these operations protected, and do not provide implementation.
+\item A better solution may be to define a common base type for Term\+Info, and have it declare a virtual dtor. Go for it, if you have time. 
+\end{DoxyEnumerate}
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classnmr_bernstein_polynomial_a8a0eb11ca4ee788e0f3714dd0e1f2e53}{}\index{nmr\+Bernstein\+Polynomial@{nmr\+Bernstein\+Polynomial}!Base\+Type@{Base\+Type}}
+\index{Base\+Type@{Base\+Type}!nmr\+Bernstein\+Polynomial@{nmr\+Bernstein\+Polynomial}}
+\subsubsection[{Base\+Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf nmr\+Dyn\+Alloc\+Polynomial\+Container} {\bf nmr\+Bernstein\+Polynomial\+::\+Base\+Type}}\label{classnmr_bernstein_polynomial_a8a0eb11ca4ee788e0f3714dd0e1f2e53}
+\hypertarget{classnmr_bernstein_polynomial_ad8d87d00b90dcd2de08a43e90c07a0a6}{}\index{nmr\+Bernstein\+Polynomial@{nmr\+Bernstein\+Polynomial}!Bernstein\+Term\+Info@{Bernstein\+Term\+Info}}
+\index{Bernstein\+Term\+Info@{Bernstein\+Term\+Info}!nmr\+Bernstein\+Polynomial@{nmr\+Bernstein\+Polynomial}}
+\subsubsection[{Bernstein\+Term\+Info}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::pair$<${\bf nmr\+Polynomial\+Base\+::\+Coefficient\+Type}, {\bf nmr\+Polynomial\+Term\+Power\+Index\+::\+Multinomial\+Coefficient\+Type}$>$ {\bf nmr\+Bernstein\+Polynomial\+::\+Bernstein\+Term\+Info}}\label{classnmr_bernstein_polynomial_ad8d87d00b90dcd2de08a43e90c07a0a6}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classnmr_bernstein_polynomial_a7ef25e6984df6f2c6b4dbfc1ea2273cc}{}\index{nmr\+Bernstein\+Polynomial@{nmr\+Bernstein\+Polynomial}!nmr\+Bernstein\+Polynomial@{nmr\+Bernstein\+Polynomial}}
+\index{nmr\+Bernstein\+Polynomial@{nmr\+Bernstein\+Polynomial}!nmr\+Bernstein\+Polynomial@{nmr\+Bernstein\+Polynomial}}
+\subsubsection[{nmr\+Bernstein\+Polynomial}]{\setlength{\rightskip}{0pt plus 5cm}nmr\+Bernstein\+Polynomial\+::nmr\+Bernstein\+Polynomial (
+\begin{DoxyParamCaption}
+\item[{{\bf Variable\+Index\+Type}}]{num\+Variables, }
+\item[{{\bf Power\+Type}}]{degree}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classnmr_bernstein_polynomial_a7ef25e6984df6f2c6b4dbfc1ea2273cc}
+Constructor determines the number of variables and the degree of the polynomial. Note that Bernstein polynomial contains an additional implicit variable. The argument num\+Variables must include the implicit variable, since we want to be consistent with the \hyperlink{classnmr_polynomial_base_a28d1473098dd14dd2463581ed65c8c6c}{Get\+Num\+Variables()} method. The degree defines both maximum and minimum degrees for the terms, as all terms are of equal degree. The constructor initializes the free variables to zero, and the implicit variable to 1, so that they all sum up to
+\begin{DoxyEnumerate}
+\item The constructor sets the implicit variable to be the last one (the num\+Variable -\/ 1) by default. The user can change this setting by calling Set\+Implicit\+Var\+Index(). 
+\end{DoxyEnumerate}
+
+\subsection{Member Function Documentation}
+\hypertarget{classnmr_bernstein_polynomial_aea0de386d6fba42e5ff2c36d5412b25e}{}\index{nmr\+Bernstein\+Polynomial@{nmr\+Bernstein\+Polynomial}!Add\+Constant@{Add\+Constant}}
+\index{Add\+Constant@{Add\+Constant}!nmr\+Bernstein\+Polynomial@{nmr\+Bernstein\+Polynomial}}
+\subsubsection[{Add\+Constant}]{\setlength{\rightskip}{0pt plus 5cm}virtual void nmr\+Bernstein\+Polynomial\+::\+Add\+Constant (
+\begin{DoxyParamCaption}
+\item[{{\bf Coefficient\+Type}}]{shift\+Amount}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classnmr_bernstein_polynomial_aea0de386d6fba42e5ff2c36d5412b25e}
+Overloaded from \hyperlink{classnmr_polynomial_base}{nmr\+Polynomial\+Base}. This implementation goes over all the possible for this polynomial, reads their current coefficient (which may be zero if the term is not included so far) then adds the given shift amount. It may not be the most efficient method, but it should not be called too many times. 
+
+Implements \hyperlink{classnmr_polynomial_container_a883f221d9a4428feaa207f98470f721a}{nmr\+Polynomial\+Container$<$ void $\ast$ $>$}.
+
+\hypertarget{classnmr_bernstein_polynomial_a02c6714afc14c2138054e6b27ab8375b}{}\index{nmr\+Bernstein\+Polynomial@{nmr\+Bernstein\+Polynomial}!Add\+Constant\+To\+Coefficients@{Add\+Constant\+To\+Coefficients}}
+\index{Add\+Constant\+To\+Coefficients@{Add\+Constant\+To\+Coefficients}!nmr\+Bernstein\+Polynomial@{nmr\+Bernstein\+Polynomial}}
+\subsubsection[{Add\+Constant\+To\+Coefficients}]{\setlength{\rightskip}{0pt plus 5cm}virtual void nmr\+Bernstein\+Polynomial\+::\+Add\+Constant\+To\+Coefficients (
+\begin{DoxyParamCaption}
+\item[{{\bf Coefficient\+Type}}]{coefficients\mbox{[}$\,$\mbox{]}, }
+\item[{{\bf Coefficient\+Type}}]{shift\+Amount}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{classnmr_bernstein_polynomial_a02c6714afc14c2138054e6b27ab8375b}
+Overloaded from \hyperlink{classnmr_polynomial_base}{nmr\+Polynomial\+Base}. This implementation asserts that this polynomial contains all the possible terms, and then iterates on all the terms and adds the shift amount to the corresponding external coefficient. 
+
+Implements \hyperlink{classnmr_polynomial_container_a8495f9383c2168896c693bc954238845}{nmr\+Polynomial\+Container$<$ void $\ast$ $>$}.
+
+\hypertarget{classnmr_bernstein_polynomial_a7987a19a4cccb2dac54ffee7b77492fb}{}\index{nmr\+Bernstein\+Polynomial@{nmr\+Bernstein\+Polynomial}!Clear@{Clear}}
+\index{Clear@{Clear}!nmr\+Bernstein\+Polynomial@{nmr\+Bernstein\+Polynomial}}
+\subsubsection[{Clear}]{\setlength{\rightskip}{0pt plus 5cm}virtual void nmr\+Bernstein\+Polynomial\+::\+Clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classnmr_bernstein_polynomial_a7987a19a4cccb2dac54ffee7b77492fb}
+Remove all the terms to make an empty (zero) polynomial We cannot use \hyperlink{classnmr_polynomial_container_a0d62bc3c08f01936868cbed1b32abeda}{nmr\+Polynomial\+Container\+::\+Clear()}, since it does not reclaim the space allocated for the term. This implementation does. 
+
+Reimplemented from \hyperlink{classnmr_polynomial_container_a0d62bc3c08f01936868cbed1b32abeda}{nmr\+Polynomial\+Container$<$ void $\ast$ $>$}.
+
+\hypertarget{classnmr_bernstein_polynomial_a457024b5819f590ef4a9feb1b803a796}{}\index{nmr\+Bernstein\+Polynomial@{nmr\+Bernstein\+Polynomial}!Deserialize\+Term\+Info@{Deserialize\+Term\+Info}}
+\index{Deserialize\+Term\+Info@{Deserialize\+Term\+Info}!nmr\+Bernstein\+Polynomial@{nmr\+Bernstein\+Polynomial}}
+\subsubsection[{Deserialize\+Term\+Info}]{\setlength{\rightskip}{0pt plus 5cm}virtual void nmr\+Bernstein\+Polynomial\+::\+Deserialize\+Term\+Info (
+\begin{DoxyParamCaption}
+\item[{std\+::istream \&}]{input, }
+\item[{{\bf Term\+Iterator\+Type} \&}]{term\+Iterator}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classnmr_bernstein_polynomial_a457024b5819f590ef4a9feb1b803a796}
+This function is overridden to allocate memory for the multinomial factor and the term coefficient, read the latter from the stream and calculate the former from the term power index. It is called from \hyperlink{classnmr_polynomial_container_a2a166a5b7f970b2fec4a374fcfc1de44}{nmr\+Polynomial\+Container\+::\+Deserialize\+Raw()}. 
+
+Implements \hyperlink{classnmr_dyn_alloc_polynomial_container_a166383324b0c1392e5faf798d7c5a622}{nmr\+Dyn\+Alloc\+Polynomial\+Container}.
+
+\hypertarget{classnmr_bernstein_polynomial_a2e259ce60fe4ba4e18649a366e4f90a9}{}\index{nmr\+Bernstein\+Polynomial@{nmr\+Bernstein\+Polynomial}!Evaluate\+Basis@{Evaluate\+Basis}}
+\index{Evaluate\+Basis@{Evaluate\+Basis}!nmr\+Bernstein\+Polynomial@{nmr\+Bernstein\+Polynomial}}
+\subsubsection[{Evaluate\+Basis}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Value\+Type} nmr\+Bernstein\+Polynomial\+::\+Evaluate\+Basis (
+\begin{DoxyParamCaption}
+\item[{const {\bf nmr\+Polynomial\+Term\+Power\+Index} \&}]{where, }
+\item[{const {\bf nmr\+Multi\+Variable\+Power\+Basis} \&}]{variables}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{classnmr_bernstein_polynomial_a2e259ce60fe4ba4e18649a366e4f90a9}
+Evaluate the basis function for a term. This D\+O\+E\+S N\+O\+T include the term\textquotesingle{}s coefficient, but D\+O\+E\+S include the multinomial factor. 
+
+Implements \hyperlink{classnmr_polynomial_base_aee2e7c15f20165c2961a82f8eb0a2dc6}{nmr\+Polynomial\+Base}.
+
+\hypertarget{classnmr_bernstein_polynomial_aa47f112a93af89b894da0808171fe168}{}\index{nmr\+Bernstein\+Polynomial@{nmr\+Bernstein\+Polynomial}!Evaluate\+Basis@{Evaluate\+Basis}}
+\index{Evaluate\+Basis@{Evaluate\+Basis}!nmr\+Bernstein\+Polynomial@{nmr\+Bernstein\+Polynomial}}
+\subsubsection[{Evaluate\+Basis}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Value\+Type} nmr\+Bernstein\+Polynomial\+::\+Evaluate\+Basis (
+\begin{DoxyParamCaption}
+\item[{const {\bf Term\+Const\+Iterator\+Type} \&}]{where, }
+\item[{const {\bf nmr\+Multi\+Variable\+Power\+Basis} \&}]{variables}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{classnmr_bernstein_polynomial_aa47f112a93af89b894da0808171fe168}
+
+
+Implements \hyperlink{classnmr_polynomial_container_ace5c179e6031133fed7602405f0eb56e}{nmr\+Polynomial\+Container$<$ void $\ast$ $>$}.
+
+\hypertarget{classnmr_bernstein_polynomial_a655a3b41ac928510914e202332fe54b2}{}\index{nmr\+Bernstein\+Polynomial@{nmr\+Bernstein\+Polynomial}!Evaluate\+Basis@{Evaluate\+Basis}}
+\index{Evaluate\+Basis@{Evaluate\+Basis}!nmr\+Bernstein\+Polynomial@{nmr\+Bernstein\+Polynomial}}
+\subsubsection[{Evaluate\+Basis}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Value\+Type} nmr\+Bernstein\+Polynomial\+::\+Evaluate\+Basis (
+\begin{DoxyParamCaption}
+\item[{const {\bf Term\+Iterator\+Type} \&}]{where, }
+\item[{const {\bf nmr\+Multi\+Variable\+Power\+Basis} \&}]{variables}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{classnmr_bernstein_polynomial_a655a3b41ac928510914e202332fe54b2}
+
+
+Implements \hyperlink{classnmr_polynomial_container_a36281b8ecdc51dfcdac7a373c01ba234}{nmr\+Polynomial\+Container$<$ void $\ast$ $>$}.
+
+\hypertarget{classnmr_bernstein_polynomial_a658ac3ee28fcc0ee072a83c79eaf2489}{}\index{nmr\+Bernstein\+Polynomial@{nmr\+Bernstein\+Polynomial}!Get\+Coefficient@{Get\+Coefficient}}
+\index{Get\+Coefficient@{Get\+Coefficient}!nmr\+Bernstein\+Polynomial@{nmr\+Bernstein\+Polynomial}}
+\subsubsection[{Get\+Coefficient}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Coefficient\+Type} nmr\+Bernstein\+Polynomial\+::\+Get\+Coefficient (
+\begin{DoxyParamCaption}
+\item[{const {\bf nmr\+Polynomial\+Term\+Power\+Index} \&}]{where}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{classnmr_bernstein_polynomial_a658ac3ee28fcc0ee072a83c79eaf2489}
+Retrieve the value of the user defined coefficient for a given term. \hypertarget{classnmr_bernstein_polynomial_aff3c634b10989a7ac81272eb06e5f5a8}{}\index{nmr\+Bernstein\+Polynomial@{nmr\+Bernstein\+Polynomial}!Get\+Coefficient@{Get\+Coefficient}}
+\index{Get\+Coefficient@{Get\+Coefficient}!nmr\+Bernstein\+Polynomial@{nmr\+Bernstein\+Polynomial}}
+\subsubsection[{Get\+Coefficient}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Coefficient\+Type} nmr\+Bernstein\+Polynomial\+::\+Get\+Coefficient (
+\begin{DoxyParamCaption}
+\item[{const {\bf Term\+Const\+Iterator\+Type} \&}]{where}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classnmr_bernstein_polynomial_aff3c634b10989a7ac81272eb06e5f5a8}
+Retrieve the value of the user defined coefficient for a term given by iterator. 
+
+Implements \hyperlink{classnmr_polynomial_container_ae2526acacd3b7d957524818a87619a65}{nmr\+Polynomial\+Container$<$ void $\ast$ $>$}.
+
+\hypertarget{classnmr_bernstein_polynomial_a989595e97345a8dbfab7c77c637dc9fb}{}\index{nmr\+Bernstein\+Polynomial@{nmr\+Bernstein\+Polynomial}!Get\+Coefficient@{Get\+Coefficient}}
+\index{Get\+Coefficient@{Get\+Coefficient}!nmr\+Bernstein\+Polynomial@{nmr\+Bernstein\+Polynomial}}
+\subsubsection[{Get\+Coefficient}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Coefficient\+Type} nmr\+Bernstein\+Polynomial\+::\+Get\+Coefficient (
+\begin{DoxyParamCaption}
+\item[{const {\bf Term\+Iterator\+Type} \&}]{where}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classnmr_bernstein_polynomial_a989595e97345a8dbfab7c77c637dc9fb}
+
+
+Implements \hyperlink{classnmr_polynomial_container_ae92f218f650f44ec1c22528cc19d6790}{nmr\+Polynomial\+Container$<$ void $\ast$ $>$}.
+
+\hypertarget{classnmr_bernstein_polynomial_a934b948b27ef035ef62aa43c635ae784}{}\index{nmr\+Bernstein\+Polynomial@{nmr\+Bernstein\+Polynomial}!Get\+Multinomial\+Coefficient@{Get\+Multinomial\+Coefficient}}
+\index{Get\+Multinomial\+Coefficient@{Get\+Multinomial\+Coefficient}!nmr\+Bernstein\+Polynomial@{nmr\+Bernstein\+Polynomial}}
+\subsubsection[{Get\+Multinomial\+Coefficient}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf nmr\+Polynomial\+Term\+Power\+Index\+::\+Multinomial\+Coefficient\+Type}\& nmr\+Bernstein\+Polynomial\+::\+Get\+Multinomial\+Coefficient (
+\begin{DoxyParamCaption}
+\item[{const {\bf Term\+Iterator\+Type} \&}]{where}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classnmr_bernstein_polynomial_a934b948b27ef035ef62aa43c635ae784}
+\hypertarget{classnmr_bernstein_polynomial_a30b33638e9343cec80cea704f364dde2}{}\index{nmr\+Bernstein\+Polynomial@{nmr\+Bernstein\+Polynomial}!Get\+Multinomial\+Coefficient@{Get\+Multinomial\+Coefficient}}
+\index{Get\+Multinomial\+Coefficient@{Get\+Multinomial\+Coefficient}!nmr\+Bernstein\+Polynomial@{nmr\+Bernstein\+Polynomial}}
+\subsubsection[{Get\+Multinomial\+Coefficient}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf nmr\+Polynomial\+Term\+Power\+Index\+::\+Multinomial\+Coefficient\+Type}\& nmr\+Bernstein\+Polynomial\+::\+Get\+Multinomial\+Coefficient (
+\begin{DoxyParamCaption}
+\item[{const {\bf Term\+Const\+Iterator\+Type} \&}]{where}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classnmr_bernstein_polynomial_a30b33638e9343cec80cea704f364dde2}
+\hypertarget{classnmr_bernstein_polynomial_ad19aadc8aee129cc1201f638f9340c28}{}\index{nmr\+Bernstein\+Polynomial@{nmr\+Bernstein\+Polynomial}!Get\+Term\+Coefficient@{Get\+Term\+Coefficient}}
+\index{Get\+Term\+Coefficient@{Get\+Term\+Coefficient}!nmr\+Bernstein\+Polynomial@{nmr\+Bernstein\+Polynomial}}
+\subsubsection[{Get\+Term\+Coefficient}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Coefficient\+Type}\& nmr\+Bernstein\+Polynomial\+::\+Get\+Term\+Coefficient (
+\begin{DoxyParamCaption}
+\item[{const {\bf Term\+Const\+Iterator\+Type} \&}]{where}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\label{classnmr_bernstein_polynomial_ad19aadc8aee129cc1201f638f9340c28}
+\hypertarget{classnmr_bernstein_polynomial_a15e4932f2013e9157706fce26d34d5d0}{}\index{nmr\+Bernstein\+Polynomial@{nmr\+Bernstein\+Polynomial}!Get\+Term\+Coefficient@{Get\+Term\+Coefficient}}
+\index{Get\+Term\+Coefficient@{Get\+Term\+Coefficient}!nmr\+Bernstein\+Polynomial@{nmr\+Bernstein\+Polynomial}}
+\subsubsection[{Get\+Term\+Coefficient}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Coefficient\+Type}\& nmr\+Bernstein\+Polynomial\+::\+Get\+Term\+Coefficient (
+\begin{DoxyParamCaption}
+\item[{const {\bf Term\+Iterator\+Type} \&}]{where}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\label{classnmr_bernstein_polynomial_a15e4932f2013e9157706fce26d34d5d0}
+\hypertarget{classnmr_bernstein_polynomial_ab72225000d4462b8ce1c941a29245268}{}\index{nmr\+Bernstein\+Polynomial@{nmr\+Bernstein\+Polynomial}!Ref\+Multinomial\+Coefficient@{Ref\+Multinomial\+Coefficient}}
+\index{Ref\+Multinomial\+Coefficient@{Ref\+Multinomial\+Coefficient}!nmr\+Bernstein\+Polynomial@{nmr\+Bernstein\+Polynomial}}
+\subsubsection[{Ref\+Multinomial\+Coefficient}]{\setlength{\rightskip}{0pt plus 5cm}{\bf nmr\+Polynomial\+Term\+Power\+Index\+::\+Multinomial\+Coefficient\+Type}\& nmr\+Bernstein\+Polynomial\+::\+Ref\+Multinomial\+Coefficient (
+\begin{DoxyParamCaption}
+\item[{const {\bf Term\+Iterator\+Type} \&}]{where}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\label{classnmr_bernstein_polynomial_ab72225000d4462b8ce1c941a29245268}
+\hypertarget{classnmr_bernstein_polynomial_a991fafd8dcb73e118ad9f7a046bc59a5}{}\index{nmr\+Bernstein\+Polynomial@{nmr\+Bernstein\+Polynomial}!Ref\+Term\+Coefficient@{Ref\+Term\+Coefficient}}
+\index{Ref\+Term\+Coefficient@{Ref\+Term\+Coefficient}!nmr\+Bernstein\+Polynomial@{nmr\+Bernstein\+Polynomial}}
+\subsubsection[{Ref\+Term\+Coefficient}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Coefficient\+Type}\& nmr\+Bernstein\+Polynomial\+::\+Ref\+Term\+Coefficient (
+\begin{DoxyParamCaption}
+\item[{const {\bf Term\+Iterator\+Type} \&}]{where}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\label{classnmr_bernstein_polynomial_a991fafd8dcb73e118ad9f7a046bc59a5}
+\hypertarget{classnmr_bernstein_polynomial_a615e825f6b2c453fa48bf50b387af9bb}{}\index{nmr\+Bernstein\+Polynomial@{nmr\+Bernstein\+Polynomial}!Remove\+Term@{Remove\+Term}}
+\index{Remove\+Term@{Remove\+Term}!nmr\+Bernstein\+Polynomial@{nmr\+Bernstein\+Polynomial}}
+\subsubsection[{Remove\+Term}]{\setlength{\rightskip}{0pt plus 5cm}virtual void nmr\+Bernstein\+Polynomial\+::\+Remove\+Term (
+\begin{DoxyParamCaption}
+\item[{{\bf Term\+Iterator\+Type} \&}]{where}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classnmr_bernstein_polynomial_a615e825f6b2c453fa48bf50b387af9bb}
+Remove a term from the polynomial. The term is given by iterator. The function also reclaims the space allocated for the term. 
+
+Reimplemented from \hyperlink{classnmr_polynomial_container_a9fc6e6c406c10d615d3cf5a97926720f}{nmr\+Polynomial\+Container$<$ void $\ast$ $>$}.
+
+\hypertarget{classnmr_bernstein_polynomial_ab8846bb7223b02b87c366672d4a07a4f}{}\index{nmr\+Bernstein\+Polynomial@{nmr\+Bernstein\+Polynomial}!Serialize\+Term\+Info@{Serialize\+Term\+Info}}
+\index{Serialize\+Term\+Info@{Serialize\+Term\+Info}!nmr\+Bernstein\+Polynomial@{nmr\+Bernstein\+Polynomial}}
+\subsubsection[{Serialize\+Term\+Info}]{\setlength{\rightskip}{0pt plus 5cm}virtual void nmr\+Bernstein\+Polynomial\+::\+Serialize\+Term\+Info (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{output, }
+\item[{const {\bf Term\+Const\+Iterator\+Type} \&}]{term\+Iterator}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{classnmr_bernstein_polynomial_ab8846bb7223b02b87c366672d4a07a4f}
+This function is overridden to store the term coefficient to the stream. It is called from \hyperlink{classnmr_polynomial_container_a1fb16b0f2382343c1313b5fb2c6d5e6e}{nmr\+Polynomial\+Container\+::\+Serialize\+Raw()}. 
+
+Implements \hyperlink{classnmr_dyn_alloc_polynomial_container_a523aa33f3b5729a4cd9500fa278e56c6}{nmr\+Dyn\+Alloc\+Polynomial\+Container}.
+
+\hypertarget{classnmr_bernstein_polynomial_ada942e63869c140436d7b9706b2b5199}{}\index{nmr\+Bernstein\+Polynomial@{nmr\+Bernstein\+Polynomial}!Set\+Coefficient@{Set\+Coefficient}}
+\index{Set\+Coefficient@{Set\+Coefficient}!nmr\+Bernstein\+Polynomial@{nmr\+Bernstein\+Polynomial}}
+\subsubsection[{Set\+Coefficient}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Insert\+Status} nmr\+Bernstein\+Polynomial\+::\+Set\+Coefficient (
+\begin{DoxyParamCaption}
+\item[{const {\bf nmr\+Polynomial\+Term\+Power\+Index} \&}]{where, }
+\item[{{\bf Coefficient\+Type}}]{coefficient}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classnmr_bernstein_polynomial_ada942e63869c140436d7b9706b2b5199}
+Overriding nmr\+Polynomial\+::\+Set\+Coefficient(). This implementation computes the multinomial factor for the term. 
+
+Implements \hyperlink{classnmr_polynomial_container_a4ac9b1833ec593f10d54baaa7a2ebe81}{nmr\+Polynomial\+Container$<$ void $\ast$ $>$}.
+
+\hypertarget{classnmr_bernstein_polynomial_a39bb0e94db9696628401d9e6f5e74b1e}{}\index{nmr\+Bernstein\+Polynomial@{nmr\+Bernstein\+Polynomial}!Set\+Coefficient@{Set\+Coefficient}}
+\index{Set\+Coefficient@{Set\+Coefficient}!nmr\+Bernstein\+Polynomial@{nmr\+Bernstein\+Polynomial}}
+\subsubsection[{Set\+Coefficient}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Insert\+Status} nmr\+Bernstein\+Polynomial\+::\+Set\+Coefficient (
+\begin{DoxyParamCaption}
+\item[{{\bf Term\+Iterator\+Type} \&}]{where, }
+\item[{{\bf Coefficient\+Type}}]{coefficient}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classnmr_bernstein_polynomial_a39bb0e94db9696628401d9e6f5e74b1e}
+Set a coefficient for the given term iterator. Implemented from \hyperlink{classnmr_polynomial_container}{nmr\+Polynomial\+Container}. 
+
+Implements \hyperlink{classnmr_polynomial_container_a5b1188598da1993c8a1497a403af2b18}{nmr\+Polynomial\+Container$<$ void $\ast$ $>$}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Numerical/\hyperlink{nmr_bernstein_polynomial_8h}{nmr\+Bernstein\+Polynomial.\+h}\end{DoxyCompactItemize}

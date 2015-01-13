@@ -1,0 +1,101 @@
+\hypertarget{classrob_cubic_s_o3}{}\section{rob\+Cubic\+S\+O3 Class Reference}
+\label{classrob_cubic_s_o3}\index{rob\+Cubic\+S\+O3@{rob\+Cubic\+S\+O3}}
+
+
+{\ttfamily \#include $<$rob\+Cubic\+S\+O3.\+h$>$}
+
+Inheritance diagram for rob\+Cubic\+S\+O3\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{d4/dc8/classrob_cubic_s_o3}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classrob_cubic_s_o3_aab3d72bf7bebf11c4840820b972382ea}{rob\+Cubic\+S\+O3} (const \hyperlink{classvct_matrix_rotation3}{vct\+Matrix\+Rotation3}$<$ double $>$ \&Rw0, const \hyperlink{classvct_matrix_rotation3}{vct\+Matrix\+Rotation3}$<$ double $>$ \&Rw1, const \hyperlink{classvct_matrix_rotation3}{vct\+Matrix\+Rotation3}$<$ double $>$ \&Rw2, double wmax, double \hyperlink{classrob_function_a9a4b408a3a5a8ae927caec3b6bac36ef}{t1}=0.\+0)
+\begin{DoxyCompactList}\small\item\em Interpolate between 3 orientation using Cubic\textquotesingle{}s algorithm. \end{DoxyCompactList}\item 
+\hyperlink{classrob_cubic_s_o3_a3e972a72fb39186a29d5e0acb39be2e5}{rob\+Cubic\+S\+O3} (const \hyperlink{classvct_quaternion_rotation3}{vct\+Quaternion\+Rotation3}$<$ double $>$ \&qw0, const \hyperlink{classvct_quaternion_rotation3}{vct\+Quaternion\+Rotation3}$<$ double $>$ \&qwmid, const \hyperlink{classvct_quaternion_rotation3}{vct\+Quaternion\+Rotation3}$<$ double $>$ \&\hyperlink{classrob_function_s_o3_ae8f7673ef36c4dcf8af771af852b974d}{qw2}, double wmax, double \hyperlink{classrob_function_a9a4b408a3a5a8ae927caec3b6bac36ef}{t1}=0.\+0)
+\item 
+void \hyperlink{classrob_cubic_s_o3_a75610e9d7a275e76782a7202d82c5142}{Evaluate} (double t, \hyperlink{classvct_quaternion_rotation3}{vct\+Quaternion\+Rotation3}$<$ double $>$ \&q, \hyperlink{classvct_fixed_size_vector}{vct\+Fixed\+Size\+Vector}$<$ double, 3 $>$ \&w, \hyperlink{classvct_fixed_size_vector}{vct\+Fixed\+Size\+Vector}$<$ double, 3 $>$ \&wd)
+\begin{DoxyCompactList}\small\item\em Evaluate the function. \end{DoxyCompactList}\item 
+void \hyperlink{classrob_cubic_s_o3_a2848a0e589ac6d9f098d0ec40835177b}{Blend} (\hyperlink{classrob_function}{rob\+Function} $\ast$function, double wmax, double wdmax)
+\item 
+void \hyperlink{classrob_cubic_s_o3_accc4251725d4adde202a252b5f841d0f}{Intermediate\+State} (\hyperlink{classvct_quaternion_rotation3}{vct\+Quaternion\+Rotation3}$<$ double $>$ \&q)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classrob_cubic_s_o3_aab3d72bf7bebf11c4840820b972382ea}{}\index{rob\+Cubic\+S\+O3@{rob\+Cubic\+S\+O3}!rob\+Cubic\+S\+O3@{rob\+Cubic\+S\+O3}}
+\index{rob\+Cubic\+S\+O3@{rob\+Cubic\+S\+O3}!rob\+Cubic\+S\+O3@{rob\+Cubic\+S\+O3}}
+\subsubsection[{rob\+Cubic\+S\+O3}]{\setlength{\rightskip}{0pt plus 5cm}rob\+Cubic\+S\+O3\+::rob\+Cubic\+S\+O3 (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Matrix\+Rotation3}$<$ double $>$ \&}]{Rw0, }
+\item[{const {\bf vct\+Matrix\+Rotation3}$<$ double $>$ \&}]{Rw1, }
+\item[{const {\bf vct\+Matrix\+Rotation3}$<$ double $>$ \&}]{Rw2, }
+\item[{double}]{wmax, }
+\item[{double}]{t1 = {\ttfamily 0.0}}
+\end{DoxyParamCaption}
+)}\label{classrob_cubic_s_o3_aab3d72bf7bebf11c4840820b972382ea}
+
+
+Interpolate between 3 orientation using Cubic\textquotesingle{}s algorithm. 
+
+\hypertarget{classrob_cubic_s_o3_a3e972a72fb39186a29d5e0acb39be2e5}{}\index{rob\+Cubic\+S\+O3@{rob\+Cubic\+S\+O3}!rob\+Cubic\+S\+O3@{rob\+Cubic\+S\+O3}}
+\index{rob\+Cubic\+S\+O3@{rob\+Cubic\+S\+O3}!rob\+Cubic\+S\+O3@{rob\+Cubic\+S\+O3}}
+\subsubsection[{rob\+Cubic\+S\+O3}]{\setlength{\rightskip}{0pt plus 5cm}rob\+Cubic\+S\+O3\+::rob\+Cubic\+S\+O3 (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Quaternion\+Rotation3}$<$ double $>$ \&}]{qw0, }
+\item[{const {\bf vct\+Quaternion\+Rotation3}$<$ double $>$ \&}]{qwmid, }
+\item[{const {\bf vct\+Quaternion\+Rotation3}$<$ double $>$ \&}]{qw2, }
+\item[{double}]{wmax, }
+\item[{double}]{t1 = {\ttfamily 0.0}}
+\end{DoxyParamCaption}
+)}\label{classrob_cubic_s_o3_a3e972a72fb39186a29d5e0acb39be2e5}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classrob_cubic_s_o3_a2848a0e589ac6d9f098d0ec40835177b}{}\index{rob\+Cubic\+S\+O3@{rob\+Cubic\+S\+O3}!Blend@{Blend}}
+\index{Blend@{Blend}!rob\+Cubic\+S\+O3@{rob\+Cubic\+S\+O3}}
+\subsubsection[{Blend}]{\setlength{\rightskip}{0pt plus 5cm}void rob\+Cubic\+S\+O3\+::\+Blend (
+\begin{DoxyParamCaption}
+\item[{{\bf rob\+Function} $\ast$}]{function, }
+\item[{double}]{wmax, }
+\item[{double}]{wdmax}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classrob_cubic_s_o3_a2848a0e589ac6d9f098d0ec40835177b}
+
+
+Implements \hyperlink{classrob_function_s_o3_a490d756026b0030048f084baf97ee34b}{rob\+Function\+S\+O3}.
+
+\hypertarget{classrob_cubic_s_o3_a75610e9d7a275e76782a7202d82c5142}{}\index{rob\+Cubic\+S\+O3@{rob\+Cubic\+S\+O3}!Evaluate@{Evaluate}}
+\index{Evaluate@{Evaluate}!rob\+Cubic\+S\+O3@{rob\+Cubic\+S\+O3}}
+\subsubsection[{Evaluate}]{\setlength{\rightskip}{0pt plus 5cm}void rob\+Cubic\+S\+O3\+::\+Evaluate (
+\begin{DoxyParamCaption}
+\item[{double}]{t, }
+\item[{{\bf vct\+Quaternion\+Rotation3}$<$ double $>$ \&}]{q, }
+\item[{{\bf vct\+Fixed\+Size\+Vector}$<$ double, 3 $>$ \&}]{w, }
+\item[{{\bf vct\+Fixed\+Size\+Vector}$<$ double, 3 $>$ \&}]{wd}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classrob_cubic_s_o3_a75610e9d7a275e76782a7202d82c5142}
+
+
+Evaluate the function. 
+
+
+
+Reimplemented from \hyperlink{classrob_function_s_o3_a1c7d71ed0dbd9fb669af528372dd49ca}{rob\+Function\+S\+O3}.
+
+\hypertarget{classrob_cubic_s_o3_accc4251725d4adde202a252b5f841d0f}{}\index{rob\+Cubic\+S\+O3@{rob\+Cubic\+S\+O3}!Intermediate\+State@{Intermediate\+State}}
+\index{Intermediate\+State@{Intermediate\+State}!rob\+Cubic\+S\+O3@{rob\+Cubic\+S\+O3}}
+\subsubsection[{Intermediate\+State}]{\setlength{\rightskip}{0pt plus 5cm}void rob\+Cubic\+S\+O3\+::\+Intermediate\+State (
+\begin{DoxyParamCaption}
+\item[{{\bf vct\+Quaternion\+Rotation3}$<$ double $>$ \&}]{q}
+\end{DoxyParamCaption}
+)}\label{classrob_cubic_s_o3_accc4251725d4adde202a252b5f841d0f}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Robot/\hyperlink{rob_cubic_s_o3_8h}{rob\+Cubic\+S\+O3.\+h}\end{DoxyCompactItemize}

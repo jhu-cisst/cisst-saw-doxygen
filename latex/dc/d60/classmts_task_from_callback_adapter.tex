@@ -1,0 +1,121 @@
+\hypertarget{classmts_task_from_callback_adapter}{}\section{mts\+Task\+From\+Callback\+Adapter Class Reference}
+\label{classmts_task_from_callback_adapter}\index{mts\+Task\+From\+Callback\+Adapter@{mts\+Task\+From\+Callback\+Adapter}}
+
+
+{\ttfamily \#include $<$mts\+Task\+From\+Callback.\+h$>$}
+
+Inheritance diagram for mts\+Task\+From\+Callback\+Adapter\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=6.000000cm]{dc/d60/classmts_task_from_callback_adapter}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structmts_task_from_callback_adapter_1_1_callback_data}{Callback\+Data}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmts_task_from_callback_adapter_a947196044b8b4849a0ab79fa054dae80}{mts\+Task\+From\+Callback\+Adapter} (const std\+::string \&name, unsigned int size\+State\+Table=256)
+\item 
+\hyperlink{classmts_task_from_callback_adapter_ac6a5ae13c1e7c75002a77cac3a8c481a}{$\sim$mts\+Task\+From\+Callback\+Adapter} ()
+\item 
+virtual void $\ast$ \hyperlink{classmts_task_from_callback_adapter_ae601440d7960f78f80a633e84176bfac}{Get\+Callback\+Parameter} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class \+\_\+callback\+Return\+Type $>$ }\\static \+\_\+callback\+Return\+Type \hyperlink{mts_task_from_callback_8h_a7501f94bb1b37dc8d295bd2f2c800084}{M\+T\+S\+\_\+\+T\+A\+S\+K\+\_\+\+C\+A\+L\+L\+B\+A\+C\+K\+\_\+\+C\+O\+N\+V\+E\+N\+T\+I\+O\+N} \hyperlink{classmts_task_from_callback_adapter_aabe621b924092e85d4729bda7cbfce06}{Callback\+Adapter} (void $\ast$obj)
+\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classmts_task_from_callback_adapter_aa81f29d07e560c1b9f5a9f004e49df97}{Signature\+Type} \{ \hyperlink{classmts_task_from_callback_adapter_aa81f29d07e560c1b9f5a9f004e49df97a7c9a9db9f50a953eb0a559f305bf6f80}{I\+N\+V\+A\+L\+I\+D} = 0, 
+\hyperlink{classmts_task_from_callback_adapter_aa81f29d07e560c1b9f5a9f004e49df97aed556e2efeed6c0fb3d38d53fefb5d08}{V\+A\+L\+I\+D} = 0x3242
+ \}
+\item 
+typedef \hyperlink{classmts_task_from_callback}{mts\+Task\+From\+Callback} \hyperlink{classmts_task_from_callback_adapter_a1f50853b13e0014ad9c64ac6b11f3216}{Base\+Type}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structmts_task_from_callback_adapter_1_1_callback_data}{Callback\+Data} \hyperlink{classmts_task_from_callback_adapter_aa7f1cc998e5366d8c3eebc802f9d7652}{callback\+Data}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This class provides a callback adapter that can be used for systems that accept a user-\/supplied \textquotesingle{}void $\ast$\textquotesingle{} that gets passed to the user-\/supplied callback. This enables the standard trick of passing the \char`\"{}this\char`\"{} pointer to the callback function. To be safe, we put the \char`\"{}this\char`\"{} pointer in a data structure that has a magic number (signature) that we can test. 
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classmts_task_from_callback_adapter_a1f50853b13e0014ad9c64ac6b11f3216}{}\index{mts\+Task\+From\+Callback\+Adapter@{mts\+Task\+From\+Callback\+Adapter}!Base\+Type@{Base\+Type}}
+\index{Base\+Type@{Base\+Type}!mts\+Task\+From\+Callback\+Adapter@{mts\+Task\+From\+Callback\+Adapter}}
+\subsubsection[{Base\+Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf mts\+Task\+From\+Callback} {\bf mts\+Task\+From\+Callback\+Adapter\+::\+Base\+Type}\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_task_from_callback_adapter_a1f50853b13e0014ad9c64ac6b11f3216}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classmts_task_from_callback_adapter_aa81f29d07e560c1b9f5a9f004e49df97}{}\index{mts\+Task\+From\+Callback\+Adapter@{mts\+Task\+From\+Callback\+Adapter}!Signature\+Type@{Signature\+Type}}
+\index{Signature\+Type@{Signature\+Type}!mts\+Task\+From\+Callback\+Adapter@{mts\+Task\+From\+Callback\+Adapter}}
+\subsubsection[{Signature\+Type}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf mts\+Task\+From\+Callback\+Adapter\+::\+Signature\+Type}\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_task_from_callback_adapter_aa81f29d07e560c1b9f5a9f004e49df97}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{I\+N\+V\+A\+L\+I\+D@{I\+N\+V\+A\+L\+I\+D}!mts\+Task\+From\+Callback\+Adapter@{mts\+Task\+From\+Callback\+Adapter}}\index{mts\+Task\+From\+Callback\+Adapter@{mts\+Task\+From\+Callback\+Adapter}!I\+N\+V\+A\+L\+I\+D@{I\+N\+V\+A\+L\+I\+D}}\item[{\em 
+\hypertarget{classmts_task_from_callback_adapter_aa81f29d07e560c1b9f5a9f004e49df97a7c9a9db9f50a953eb0a559f305bf6f80}{}I\+N\+V\+A\+L\+I\+D\label{classmts_task_from_callback_adapter_aa81f29d07e560c1b9f5a9f004e49df97a7c9a9db9f50a953eb0a559f305bf6f80}
+}]\index{V\+A\+L\+I\+D@{V\+A\+L\+I\+D}!mts\+Task\+From\+Callback\+Adapter@{mts\+Task\+From\+Callback\+Adapter}}\index{mts\+Task\+From\+Callback\+Adapter@{mts\+Task\+From\+Callback\+Adapter}!V\+A\+L\+I\+D@{V\+A\+L\+I\+D}}\item[{\em 
+\hypertarget{classmts_task_from_callback_adapter_aa81f29d07e560c1b9f5a9f004e49df97aed556e2efeed6c0fb3d38d53fefb5d08}{}V\+A\+L\+I\+D\label{classmts_task_from_callback_adapter_aa81f29d07e560c1b9f5a9f004e49df97aed556e2efeed6c0fb3d38d53fefb5d08}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmts_task_from_callback_adapter_a947196044b8b4849a0ab79fa054dae80}{}\index{mts\+Task\+From\+Callback\+Adapter@{mts\+Task\+From\+Callback\+Adapter}!mts\+Task\+From\+Callback\+Adapter@{mts\+Task\+From\+Callback\+Adapter}}
+\index{mts\+Task\+From\+Callback\+Adapter@{mts\+Task\+From\+Callback\+Adapter}!mts\+Task\+From\+Callback\+Adapter@{mts\+Task\+From\+Callback\+Adapter}}
+\subsubsection[{mts\+Task\+From\+Callback\+Adapter}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Task\+From\+Callback\+Adapter\+::mts\+Task\+From\+Callback\+Adapter (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name, }
+\item[{unsigned int}]{size\+State\+Table = {\ttfamily 256}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_task_from_callback_adapter_a947196044b8b4849a0ab79fa054dae80}
+\hypertarget{classmts_task_from_callback_adapter_ac6a5ae13c1e7c75002a77cac3a8c481a}{}\index{mts\+Task\+From\+Callback\+Adapter@{mts\+Task\+From\+Callback\+Adapter}!````~mts\+Task\+From\+Callback\+Adapter@{$\sim$mts\+Task\+From\+Callback\+Adapter}}
+\index{````~mts\+Task\+From\+Callback\+Adapter@{$\sim$mts\+Task\+From\+Callback\+Adapter}!mts\+Task\+From\+Callback\+Adapter@{mts\+Task\+From\+Callback\+Adapter}}
+\subsubsection[{$\sim$mts\+Task\+From\+Callback\+Adapter}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Task\+From\+Callback\+Adapter\+::$\sim$mts\+Task\+From\+Callback\+Adapter (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_task_from_callback_adapter_ac6a5ae13c1e7c75002a77cac3a8c481a}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classmts_task_from_callback_adapter_aabe621b924092e85d4729bda7cbfce06}{}\index{mts\+Task\+From\+Callback\+Adapter@{mts\+Task\+From\+Callback\+Adapter}!Callback\+Adapter@{Callback\+Adapter}}
+\index{Callback\+Adapter@{Callback\+Adapter}!mts\+Task\+From\+Callback\+Adapter@{mts\+Task\+From\+Callback\+Adapter}}
+\subsubsection[{Callback\+Adapter}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+callback\+Return\+Type $>$ \+\_\+callback\+Return\+Type {\bf M\+T\+S\+\_\+\+T\+A\+S\+K\+\_\+\+C\+A\+L\+L\+B\+A\+C\+K\+\_\+\+C\+O\+N\+V\+E\+N\+T\+I\+O\+N} mts\+Task\+From\+Callback\+Adapter\+::\+Callback\+Adapter (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{obj}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classmts_task_from_callback_adapter_aabe621b924092e85d4729bda7cbfce06}
+This is a callback function that can be used with the external package, assuming that the package accepts a user-\/supplied \textquotesingle{}void $\ast$\textquotesingle{} as the first parameter. This parameter must be obtained by calling Get\+Callback\+Parameter.
+
+\begin{DoxyNote}{Note}
+The M\+T\+S\+\_\+\+T\+A\+S\+K\+\_\+\+C\+A\+L\+L\+B\+A\+C\+K\+\_\+\+C\+O\+N\+V\+E\+N\+T\+I\+O\+N is a hack to allow the calling convention to be specified (e.\+g., \+\_\+\+\_\+stdcall) by defining this in the source code before including this header file. Perhaps there is a better way! 
+\end{DoxyNote}
+\hypertarget{classmts_task_from_callback_adapter_ae601440d7960f78f80a633e84176bfac}{}\index{mts\+Task\+From\+Callback\+Adapter@{mts\+Task\+From\+Callback\+Adapter}!Get\+Callback\+Parameter@{Get\+Callback\+Parameter}}
+\index{Get\+Callback\+Parameter@{Get\+Callback\+Parameter}!mts\+Task\+From\+Callback\+Adapter@{mts\+Task\+From\+Callback\+Adapter}}
+\subsubsection[{Get\+Callback\+Parameter}]{\setlength{\rightskip}{0pt plus 5cm}virtual void$\ast$ mts\+Task\+From\+Callback\+Adapter\+::\+Get\+Callback\+Parameter (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classmts_task_from_callback_adapter_ae601440d7960f78f80a633e84176bfac}
+This returns a callback parameter (as a \textquotesingle{}void $\ast$\textquotesingle{}) that can be supplied to an external package as the user data for the callback. The external package should pass this back as the first parameter to the callback function. 
+
+\subsection{Member Data Documentation}
+\hypertarget{classmts_task_from_callback_adapter_aa7f1cc998e5366d8c3eebc802f9d7652}{}\index{mts\+Task\+From\+Callback\+Adapter@{mts\+Task\+From\+Callback\+Adapter}!callback\+Data@{callback\+Data}}
+\index{callback\+Data@{callback\+Data}!mts\+Task\+From\+Callback\+Adapter@{mts\+Task\+From\+Callback\+Adapter}}
+\subsubsection[{callback\+Data}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Callback\+Data} mts\+Task\+From\+Callback\+Adapter\+::callback\+Data\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_task_from_callback_adapter_aa7f1cc998e5366d8c3eebc802f9d7652}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Multi\+Task/\hyperlink{mts_task_from_callback_8h}{mts\+Task\+From\+Callback.\+h}\end{DoxyCompactItemize}

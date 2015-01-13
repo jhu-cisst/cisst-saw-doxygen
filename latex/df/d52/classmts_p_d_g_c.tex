@@ -1,0 +1,127 @@
+\hypertarget{classmts_p_d_g_c}{}\section{mts\+P\+D\+G\+C Class Reference}
+\label{classmts_p_d_g_c}\index{mts\+P\+D\+G\+C@{mts\+P\+D\+G\+C}}
+
+
+{\ttfamily \#include $<$mts\+P\+D\+G\+C.\+h$>$}
+
+Inheritance diagram for mts\+P\+D\+G\+C\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=7.000000cm]{df/d52/classmts_p_d_g_c}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmts_p_d_g_c_a468cda6c0b0e19dd3fdcd6666a88db79}{mts\+P\+D\+G\+C} (const std\+::string \&taskname, double period, const std\+::string \&robfile, const \hyperlink{classvct_frame4x4}{vct\+Frame4x4}$<$ double $>$ \&Rtwb, const \hyperlink{classvct_dynamic_matrix}{vct\+Dynamic\+Matrix}$<$ double $>$ \&K, const \hyperlink{classvct_dynamic_matrix}{vct\+Dynamic\+Matrix}$<$ double $>$ \&Kd, const \hyperlink{classvct_dynamic_vector}{vct\+Dynamic\+Vector}$<$ double $>$ \&qinit, \hyperlink{osa_c_p_u_affinity_8h_aaec7cdd7797e5e6eb5438c15fee5477a}{osa\+C\+P\+U\+Mask} \hyperlink{classmts_controller_a3125e5e9b65dc2347725215e8af73c9f}{cpumask}=\hyperlink{osa_c_p_u_affinity_8h_a2ae5ea257830cff2814d81ce526ada35}{O\+S\+A\+\_\+\+C\+P\+U\+A\+N\+Y})
+\begin{DoxyCompactList}\small\item\em Main constructor. \end{DoxyCompactList}\item 
+\hyperlink{classmts_p_d_g_c_adf227449e5ac7d32ebdbaa56b30c9072}{$\sim$mts\+P\+D\+G\+C} ()
+\item 
+void \hyperlink{classmts_p_d_g_c_a29675ad41f14e32e3c236625b91dfbea}{Configure} (const std\+::string \&argv)
+\item 
+void \hyperlink{classmts_p_d_g_c_ac14839761b21dcca78e0823b32942b9c}{Startup} ()
+\item 
+void \hyperlink{classmts_p_d_g_c_a443cbb3ccb3ae69415b22db66d20c466}{Run} ()
+\item 
+void \hyperlink{classmts_p_d_g_c_abce1b8e375c7996d32e37054cdd3da3d}{Cleanup} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmts_p_d_g_c_a468cda6c0b0e19dd3fdcd6666a88db79}{}\index{mts\+P\+D\+G\+C@{mts\+P\+D\+G\+C}!mts\+P\+D\+G\+C@{mts\+P\+D\+G\+C}}
+\index{mts\+P\+D\+G\+C@{mts\+P\+D\+G\+C}!mts\+P\+D\+G\+C@{mts\+P\+D\+G\+C}}
+\subsubsection[{mts\+P\+D\+G\+C}]{\setlength{\rightskip}{0pt plus 5cm}mts\+P\+D\+G\+C\+::mts\+P\+D\+G\+C (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{taskname, }
+\item[{double}]{period, }
+\item[{const std\+::string \&}]{robfile, }
+\item[{const {\bf vct\+Frame4x4}$<$ double $>$ \&}]{Rtwb, }
+\item[{const {\bf vct\+Dynamic\+Matrix}$<$ double $>$ \&}]{K, }
+\item[{const {\bf vct\+Dynamic\+Matrix}$<$ double $>$ \&}]{Kd, }
+\item[{const {\bf vct\+Dynamic\+Vector}$<$ double $>$ \&}]{qinit, }
+\item[{{\bf osa\+C\+P\+U\+Mask}}]{cpumask = {\ttfamily {\bf O\+S\+A\+\_\+\+C\+P\+U\+A\+N\+Y}}}
+\end{DoxyParamCaption}
+)}\label{classmts_p_d_g_c_a468cda6c0b0e19dd3fdcd6666a88db79}
+
+
+Main constructor. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em taskname} & The name of the M\+T\+S periodic task \\
+\hline
+ & {\em period} & The period of the task \\
+\hline
+\mbox{\tt in}  & {\em robfilename} & File containing the kinematics and dynamics parameters \\
+\hline
+\mbox{\tt in}  & {\em Rtwb} & Position and orientation of the robot with resepct to world frame \\
+\hline
+\mbox{\tt in}  & {\em Kp} & Nx\+N matrix of proportional gains \\
+\hline
+\mbox{\tt in}  & {\em Kd} & Nx\+N matrix of derivative gains \\
+\hline
+\mbox{\tt in}  & {\em qinit} & Initial joint positions \\
+\hline
+ & {\em cpumask} & The mask of the allowed C\+P\+U for the task \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmts_p_d_g_c_adf227449e5ac7d32ebdbaa56b30c9072}{}\index{mts\+P\+D\+G\+C@{mts\+P\+D\+G\+C}!````~mts\+P\+D\+G\+C@{$\sim$mts\+P\+D\+G\+C}}
+\index{````~mts\+P\+D\+G\+C@{$\sim$mts\+P\+D\+G\+C}!mts\+P\+D\+G\+C@{mts\+P\+D\+G\+C}}
+\subsubsection[{$\sim$mts\+P\+D\+G\+C}]{\setlength{\rightskip}{0pt plus 5cm}mts\+P\+D\+G\+C\+::$\sim$mts\+P\+D\+G\+C (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classmts_p_d_g_c_adf227449e5ac7d32ebdbaa56b30c9072}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classmts_p_d_g_c_abce1b8e375c7996d32e37054cdd3da3d}{}\index{mts\+P\+D\+G\+C@{mts\+P\+D\+G\+C}!Cleanup@{Cleanup}}
+\index{Cleanup@{Cleanup}!mts\+P\+D\+G\+C@{mts\+P\+D\+G\+C}}
+\subsubsection[{Cleanup}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+P\+D\+G\+C\+::\+Cleanup (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_p_d_g_c_abce1b8e375c7996d32e37054cdd3da3d}
+Virtual method that gets overloaded, and is run after the component gets killed using \hyperlink{classmts_task_continuous_ad1f8145306e074fbea8baab3beef4c5b}{Kill()} method. 
+
+Reimplemented from \hyperlink{classmts_component_a891f330f4fde7d831dcf7dc537dc5e81}{mts\+Component}.
+
+\hypertarget{classmts_p_d_g_c_a29675ad41f14e32e3c236625b91dfbea}{}\index{mts\+P\+D\+G\+C@{mts\+P\+D\+G\+C}!Configure@{Configure}}
+\index{Configure@{Configure}!mts\+P\+D\+G\+C@{mts\+P\+D\+G\+C}}
+\subsubsection[{Configure}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+P\+D\+G\+C\+::\+Configure (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{filename}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_p_d_g_c_a29675ad41f14e32e3c236625b91dfbea}
+The virtual method so that the interface or tasks can configure themselves 
+
+Reimplemented from \hyperlink{classmts_component_ad872432876de7879dc96c232b411c146}{mts\+Component}.
+
+\hypertarget{classmts_p_d_g_c_a443cbb3ccb3ae69415b22db66d20c466}{}\index{mts\+P\+D\+G\+C@{mts\+P\+D\+G\+C}!Run@{Run}}
+\index{Run@{Run}!mts\+P\+D\+G\+C@{mts\+P\+D\+G\+C}}
+\subsubsection[{Run}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+P\+D\+G\+C\+::\+Run (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_p_d_g_c_a443cbb3ccb3ae69415b22db66d20c466}
+Pure virtual method that gets overloaded to run the actual task. 
+
+Implements \hyperlink{classmts_task_a20e18c9479cb650792456c32ee689834}{mts\+Task}.
+
+\hypertarget{classmts_p_d_g_c_ac14839761b21dcca78e0823b32942b9c}{}\index{mts\+P\+D\+G\+C@{mts\+P\+D\+G\+C}!Startup@{Startup}}
+\index{Startup@{Startup}!mts\+P\+D\+G\+C@{mts\+P\+D\+G\+C}}
+\subsubsection[{Startup}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+P\+D\+G\+C\+::\+Startup (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_p_d_g_c_ac14839761b21dcca78e0823b32942b9c}
+Virtual method that gets overloaded, and is run before the component is started. 
+
+Reimplemented from \hyperlink{classmts_component_aaf28f0262b44eb6866e10089a02fa6e4}{mts\+Component}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/saw\+Controllers/include/saw\+Controllers/\hyperlink{mts_p_d_g_c_8h}{mts\+P\+D\+G\+C.\+h}\end{DoxyCompactItemize}

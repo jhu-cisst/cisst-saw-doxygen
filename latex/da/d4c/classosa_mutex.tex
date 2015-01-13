@@ -1,0 +1,105 @@
+\hypertarget{classosa_mutex}{}\section{osa\+Mutex Class Reference}
+\label{classosa_mutex}\index{osa\+Mutex@{osa\+Mutex}}
+
+
+Define a Mutex object.  
+
+
+
+
+{\ttfamily \#include $<$osa\+Mutex.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{group__cisst_o_s_abstraction_ga1331d5ff33336e89fc504125ddbc41a6}{Timeout\+Type} \{ \hyperlink{group__cisst_o_s_abstraction_gga1331d5ff33336e89fc504125ddbc41a6a0fa63ec436bd067c5fa29a458799ed8e}{W\+A\+I\+T\+\_\+\+F\+O\+R\+E\+V\+E\+R} = -\/1, 
+\hyperlink{group__cisst_o_s_abstraction_gga1331d5ff33336e89fc504125ddbc41a6a8de433eae9ef48be38321f282630a923}{N\+O\+\_\+\+W\+A\+I\+T} = 0
+ \}
+\item 
+enum \hyperlink{group__cisst_o_s_abstraction_gad75274806c7433f960e8ff0c8c9d7470}{Lock\+State\+Type} \{ \hyperlink{group__cisst_o_s_abstraction_ggad75274806c7433f960e8ff0c8c9d7470a9a1066b23b0fa8c5ede7400b850dbd5a}{L\+O\+C\+K\+E\+D}, 
+\hyperlink{group__cisst_o_s_abstraction_ggad75274806c7433f960e8ff0c8c9d7470a4173bfeaab7cd673588015a5529022fa}{U\+N\+L\+O\+C\+K\+E\+D}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classosa_mutex_a81d988c657bbdb869840154492175c06}{osa\+Mutex} (void)
+\item 
+\hyperlink{classosa_mutex_abc1633a5825ebe4d247aa28e9ff250f8}{$\sim$osa\+Mutex} (void)
+\item 
+void \hyperlink{classosa_mutex_ae4cd451e30227c406bd0ffd38595ea2f}{Lock} (void)
+\item 
+void \hyperlink{classosa_mutex_a22e3e6d7583ec492b3560fad23d31cbc}{Unlock} (void)
+\item 
+bool \hyperlink{classosa_mutex_a46ee7fc86b7670322ea2db737cbc72ee}{Is\+Locker} (void) const 
+\item 
+\hyperlink{group__cisst_o_s_abstraction_gad75274806c7433f960e8ff0c8c9d7470}{Lock\+State\+Type} \hyperlink{classosa_mutex_a6ece8ae92f2105358ca56f55536002e0}{Get\+Lock\+State} (void) const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Define a Mutex object. 
+
+Mutex class provided to create mutual exclusion around critical sections. This class relies on Posix threads mutex when possible. On Windows, it uses an actual Mutex which provides a locking mechanism between threads as well as processes. It doesn\textquotesingle{}t rely on the more specialized Critical\+Section type (between threads only). 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classosa_mutex_a81d988c657bbdb869840154492175c06}{}\index{osa\+Mutex@{osa\+Mutex}!osa\+Mutex@{osa\+Mutex}}
+\index{osa\+Mutex@{osa\+Mutex}!osa\+Mutex@{osa\+Mutex}}
+\subsubsection[{osa\+Mutex}]{\setlength{\rightskip}{0pt plus 5cm}osa\+Mutex\+::osa\+Mutex (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classosa_mutex_a81d988c657bbdb869840154492175c06}
+Default constructor. Initialize the underlying mutex. \hypertarget{classosa_mutex_abc1633a5825ebe4d247aa28e9ff250f8}{}\index{osa\+Mutex@{osa\+Mutex}!````~osa\+Mutex@{$\sim$osa\+Mutex}}
+\index{````~osa\+Mutex@{$\sim$osa\+Mutex}!osa\+Mutex@{osa\+Mutex}}
+\subsubsection[{$\sim$osa\+Mutex}]{\setlength{\rightskip}{0pt plus 5cm}osa\+Mutex\+::$\sim$osa\+Mutex (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classosa_mutex_abc1633a5825ebe4d247aa28e9ff250f8}
+Default destructor. Cleanup the underlying mutex. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classosa_mutex_a6ece8ae92f2105358ca56f55536002e0}{}\index{osa\+Mutex@{osa\+Mutex}!Get\+Lock\+State@{Get\+Lock\+State}}
+\index{Get\+Lock\+State@{Get\+Lock\+State}!osa\+Mutex@{osa\+Mutex}}
+\subsubsection[{Get\+Lock\+State}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Lock\+State\+Type} osa\+Mutex\+::\+Get\+Lock\+State (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classosa_mutex_a6ece8ae92f2105358ca56f55536002e0}
+Get current lock state \hypertarget{classosa_mutex_a46ee7fc86b7670322ea2db737cbc72ee}{}\index{osa\+Mutex@{osa\+Mutex}!Is\+Locker@{Is\+Locker}}
+\index{Is\+Locker@{Is\+Locker}!osa\+Mutex@{osa\+Mutex}}
+\subsubsection[{Is\+Locker}]{\setlength{\rightskip}{0pt plus 5cm}bool osa\+Mutex\+::\+Is\+Locker (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classosa_mutex_a46ee7fc86b7670322ea2db737cbc72ee}
+Mutex lock operation with timeout
+
+
+\begin{DoxyParams}{Parameters}
+{\em timeout} & If timeout == W\+A\+I\+T\+\_\+\+F\+O\+R\+E\+V\+E\+R then the calling thread is blocked (this is same as calling \hyperlink{classosa_mutex_ae4cd451e30227c406bd0ffd38595ea2f}{Lock()}). If timeout == N\+O\+\_\+\+W\+A\+I\+T then the function returns after checking if the mutex can be locked or not. If timeout $>$ 0 then the function waits for the specified amount of time (units to be specified later) before returning.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An enumerated type representing if a lock was obtained, or operation timed out or lock failed
+\end{DoxyReturn}
+Check if the current thread locked this mutex earlier \hypertarget{classosa_mutex_ae4cd451e30227c406bd0ffd38595ea2f}{}\index{osa\+Mutex@{osa\+Mutex}!Lock@{Lock}}
+\index{Lock@{Lock}!osa\+Mutex@{osa\+Mutex}}
+\subsubsection[{Lock}]{\setlength{\rightskip}{0pt plus 5cm}void osa\+Mutex\+::\+Lock (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classosa_mutex_ae4cd451e30227c406bd0ffd38595ea2f}
+Mutex lock operation. This class doesn\textquotesingle{}t use recursive mutexes therefore you must make sure the mutex is not already locked. Locking the same mutex twice from the same threads leads to undefined results. \hypertarget{classosa_mutex_a22e3e6d7583ec492b3560fad23d31cbc}{}\index{osa\+Mutex@{osa\+Mutex}!Unlock@{Unlock}}
+\index{Unlock@{Unlock}!osa\+Mutex@{osa\+Mutex}}
+\subsubsection[{Unlock}]{\setlength{\rightskip}{0pt plus 5cm}void osa\+Mutex\+::\+Unlock (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classosa_mutex_a22e3e6d7583ec492b3560fad23d31cbc}
+Mutex unlock operation. Be careful, one should never unlock an already unlocked mutex, this would lead to undefined results. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+O\+S\+Abstraction/\hyperlink{osa_mutex_8h}{osa\+Mutex.\+h}\end{DoxyCompactItemize}

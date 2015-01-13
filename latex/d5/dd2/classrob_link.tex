@@ -1,0 +1,273 @@
+\hypertarget{classrob_link}{}\section{rob\+Link Class Reference}
+\label{classrob_link}\index{rob\+Link@{rob\+Link}}
+
+
+A robot link.  
+
+
+
+
+{\ttfamily \#include $<$rob\+Link.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classrob_link_aeafaa7aaa6cb47af0db3b746606c0bd0}{Errno} \{ \hyperlink{classrob_link_aeafaa7aaa6cb47af0db3b746606c0bd0a50ca3684acd35bf81c30fbb7d9fe5652}{E\+S\+U\+C\+C\+E\+S\+S}, 
+\hyperlink{classrob_link_aeafaa7aaa6cb47af0db3b746606c0bd0a0506973f35ceab0b466f40856a327ca7}{E\+F\+A\+I\+L\+U\+R\+E}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classrob_link_a5c9bf326ac6a5cdbb3d81298542d8b2a}{rob\+Link} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{classrob_link_af121e250141aed290d0032ca9ede0b97}{rob\+Link} (const \hyperlink{classrob_link}{rob\+Link} \&link)
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\hyperlink{classrob_link_a7ab7ea35f349edacca6168040b2bd5a9}{rob\+Link} (\hyperlink{classrob_kinematics}{rob\+Kinematics} $\ast$\hyperlink{classrob_link_a4aa26f90307b406c336f9b7fae00b905}{kinematics}, const \hyperlink{classrob_mass}{rob\+Mass} \&\hyperlink{classrob_link_a7b524ebf9d101bc369749585db1ba66d}{mass})
+\begin{DoxyCompactList}\small\item\em Overloaded constructor. \end{DoxyCompactList}\item 
+\hyperlink{classrob_link_accaf7612af8696ae8188013b4acfcd9a}{$\sim$rob\+Link} ()
+\begin{DoxyCompactList}\small\item\em Default destructor. \end{DoxyCompactList}\item 
+\hyperlink{classrob_link_aeafaa7aaa6cb47af0db3b746606c0bd0}{rob\+Link\+::\+Errno} \hyperlink{classrob_link_a9b3945e5c8efca7c331a6d9f560ec4ff}{Read} (std\+::istream \&is)
+\begin{DoxyCompactList}\small\item\em Read the D\+H and body parameters. \end{DoxyCompactList}\item 
+\hyperlink{classrob_link_aeafaa7aaa6cb47af0db3b746606c0bd0}{rob\+Link\+::\+Errno} \hyperlink{classrob_link_afb16c58fe303d6aaeab579b86f65c00b}{Write} (std\+::ostream \&os) const 
+\begin{DoxyCompactList}\small\item\em Write the D\+H and body parameters. \end{DoxyCompactList}\item 
+\hyperlink{classvct_frame4x4}{vct\+Frame4x4}$<$ double $>$ \hyperlink{classrob_link_a1dc4dfce2a402d934f9c7e355c94e458}{Forward\+Kinematics} (double q) const 
+\item 
+\hyperlink{classvct_fixed_size_vector}{vct\+Fixed\+Size\+Vector}$<$ double, 3 $>$ \hyperlink{classrob_link_acd240f7a9609e54400811940131814da}{P\+Star} () const 
+\item 
+\hyperlink{classvct_matrix_rotation3}{vct\+Matrix\+Rotation3}$<$ double $>$ \hyperlink{classrob_link_a94ed71cb4c204e3fa29cd868891e626d}{Orientation} (double q) const 
+\item 
+\hyperlink{classrob_kinematics}{rob\+Kinematics} $\ast$ \hyperlink{classrob_link_aad5e8b2c6ecbc2203c77774517ec5afe}{Get\+Kinematics} () const 
+\item 
+\hyperlink{classrob_mass}{rob\+Mass} \hyperlink{classrob_link_a43269c243616e27131e91adc0a0251f2}{Get\+Mass} () const 
+\item 
+\hyperlink{classrob_kinematics_a298703e920da583d1f6aa60c8f65ca78}{rob\+Kinematics\+::\+Convention} \hyperlink{classrob_link_aa382b84e5e3fa242ffb67860002096bd}{Get\+Convention} () const 
+\item 
+\hyperlink{classrob_joint_a558d78a642cf2101aceddce0d82379b6}{rob\+Joint\+::\+Type} \hyperlink{classrob_link_a0053248e96d0b42e170bbee51e9e0606}{Get\+Type} () const 
+\item 
+double \hyperlink{classrob_link_a9c19539fa0f402dc8c496faf2632713a}{Mass} () const 
+\item 
+\hyperlink{classvct_fixed_size_vector}{vct\+Fixed\+Size\+Vector}$<$ double, 3 $>$ \hyperlink{classrob_link_aef245c56c6275da91a17ec04844c4f7c}{Center\+Of\+Mass} () const 
+\item 
+\hyperlink{classvct_fixed_size_matrix}{vct\+Fixed\+Size\+Matrix}$<$ double, 3, 3 $>$ \hyperlink{classrob_link_a7a2448af5a1fce4293c9b6ad801ea461}{Moment\+Of\+Inertia\+At\+C\+O\+M} () const 
+\item 
+\hyperlink{classvct_fixed_size_matrix}{vct\+Fixed\+Size\+Matrix}$<$ double, 3, 3 $>$ \hyperlink{classrob_link_a7a490ea913361ad155fa698080f1501f}{Moment\+Of\+Inertia} () const 
+\item 
+double \hyperlink{classrob_link_a95eb30b91371aab58976d2af316385d5}{Position\+Min} () const 
+\item 
+double \hyperlink{classrob_link_a0ac05c903c18d1e8db3ccbdec9312349}{Position\+Max} () const 
+\item 
+double \hyperlink{classrob_link_a09d91b44253f90a14442cc0ade0cb687}{Force\+Torque\+Max} () const 
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classrob_kinematics}{rob\+Kinematics} $\ast$ \hyperlink{classrob_link_a4aa26f90307b406c336f9b7fae00b905}{kinematics}
+\item 
+\hyperlink{classrob_mass}{rob\+Mass} \hyperlink{classrob_link_a7b524ebf9d101bc369749585db1ba66d}{mass}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A robot link. 
+
+\hyperlink{classrob_link}{rob\+Link} implements the methods necessary to model a robot link. The class is derived from rob\+Body to store the dynamics parameters of the body and the link\textquotesingle{}s position and orientation. The link is also derived from \hyperlink{classrob_d_h}{rob\+D\+H} to determine the link\textquotesingle{}s position and orientation from joint values 
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classrob_link_aeafaa7aaa6cb47af0db3b746606c0bd0}{}\index{rob\+Link@{rob\+Link}!Errno@{Errno}}
+\index{Errno@{Errno}!rob\+Link@{rob\+Link}}
+\subsubsection[{Errno}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf rob\+Link\+::\+Errno}}\label{classrob_link_aeafaa7aaa6cb47af0db3b746606c0bd0}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{E\+S\+U\+C\+C\+E\+S\+S@{E\+S\+U\+C\+C\+E\+S\+S}!rob\+Link@{rob\+Link}}\index{rob\+Link@{rob\+Link}!E\+S\+U\+C\+C\+E\+S\+S@{E\+S\+U\+C\+C\+E\+S\+S}}\item[{\em 
+\hypertarget{classrob_link_aeafaa7aaa6cb47af0db3b746606c0bd0a50ca3684acd35bf81c30fbb7d9fe5652}{}E\+S\+U\+C\+C\+E\+S\+S\label{classrob_link_aeafaa7aaa6cb47af0db3b746606c0bd0a50ca3684acd35bf81c30fbb7d9fe5652}
+}]\index{E\+F\+A\+I\+L\+U\+R\+E@{E\+F\+A\+I\+L\+U\+R\+E}!rob\+Link@{rob\+Link}}\index{rob\+Link@{rob\+Link}!E\+F\+A\+I\+L\+U\+R\+E@{E\+F\+A\+I\+L\+U\+R\+E}}\item[{\em 
+\hypertarget{classrob_link_aeafaa7aaa6cb47af0db3b746606c0bd0a0506973f35ceab0b466f40856a327ca7}{}E\+F\+A\+I\+L\+U\+R\+E\label{classrob_link_aeafaa7aaa6cb47af0db3b746606c0bd0a0506973f35ceab0b466f40856a327ca7}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classrob_link_a5c9bf326ac6a5cdbb3d81298542d8b2a}{}\index{rob\+Link@{rob\+Link}!rob\+Link@{rob\+Link}}
+\index{rob\+Link@{rob\+Link}!rob\+Link@{rob\+Link}}
+\subsubsection[{rob\+Link}]{\setlength{\rightskip}{0pt plus 5cm}rob\+Link\+::rob\+Link (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classrob_link_a5c9bf326ac6a5cdbb3d81298542d8b2a}
+
+
+Default constructor. 
+
+\hypertarget{classrob_link_af121e250141aed290d0032ca9ede0b97}{}\index{rob\+Link@{rob\+Link}!rob\+Link@{rob\+Link}}
+\index{rob\+Link@{rob\+Link}!rob\+Link@{rob\+Link}}
+\subsubsection[{rob\+Link}]{\setlength{\rightskip}{0pt plus 5cm}rob\+Link\+::rob\+Link (
+\begin{DoxyParamCaption}
+\item[{const {\bf rob\+Link} \&}]{link}
+\end{DoxyParamCaption}
+)}\label{classrob_link_af121e250141aed290d0032ca9ede0b97}
+
+
+Copy constructor. 
+
+\hypertarget{classrob_link_a7ab7ea35f349edacca6168040b2bd5a9}{}\index{rob\+Link@{rob\+Link}!rob\+Link@{rob\+Link}}
+\index{rob\+Link@{rob\+Link}!rob\+Link@{rob\+Link}}
+\subsubsection[{rob\+Link}]{\setlength{\rightskip}{0pt plus 5cm}rob\+Link\+::rob\+Link (
+\begin{DoxyParamCaption}
+\item[{{\bf rob\+Kinematics} $\ast$}]{kinematics, }
+\item[{const {\bf rob\+Mass} \&}]{mass}
+\end{DoxyParamCaption}
+)}\label{classrob_link_a7ab7ea35f349edacca6168040b2bd5a9}
+
+
+Overloaded constructor. 
+
+\hypertarget{classrob_link_accaf7612af8696ae8188013b4acfcd9a}{}\index{rob\+Link@{rob\+Link}!````~rob\+Link@{$\sim$rob\+Link}}
+\index{````~rob\+Link@{$\sim$rob\+Link}!rob\+Link@{rob\+Link}}
+\subsubsection[{$\sim$rob\+Link}]{\setlength{\rightskip}{0pt plus 5cm}rob\+Link\+::$\sim$rob\+Link (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classrob_link_accaf7612af8696ae8188013b4acfcd9a}
+
+
+Default destructor. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classrob_link_aef245c56c6275da91a17ec04844c4f7c}{}\index{rob\+Link@{rob\+Link}!Center\+Of\+Mass@{Center\+Of\+Mass}}
+\index{Center\+Of\+Mass@{Center\+Of\+Mass}!rob\+Link@{rob\+Link}}
+\subsubsection[{Center\+Of\+Mass}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Fixed\+Size\+Vector}$<$double,3$>$ rob\+Link\+::\+Center\+Of\+Mass (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classrob_link_aef245c56c6275da91a17ec04844c4f7c}
+\hypertarget{classrob_link_a09d91b44253f90a14442cc0ade0cb687}{}\index{rob\+Link@{rob\+Link}!Force\+Torque\+Max@{Force\+Torque\+Max}}
+\index{Force\+Torque\+Max@{Force\+Torque\+Max}!rob\+Link@{rob\+Link}}
+\subsubsection[{Force\+Torque\+Max}]{\setlength{\rightskip}{0pt plus 5cm}double rob\+Link\+::\+Force\+Torque\+Max (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classrob_link_a09d91b44253f90a14442cc0ade0cb687}
+\hypertarget{classrob_link_a1dc4dfce2a402d934f9c7e355c94e458}{}\index{rob\+Link@{rob\+Link}!Forward\+Kinematics@{Forward\+Kinematics}}
+\index{Forward\+Kinematics@{Forward\+Kinematics}!rob\+Link@{rob\+Link}}
+\subsubsection[{Forward\+Kinematics}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Frame4x4}$<$double$>$ rob\+Link\+::\+Forward\+Kinematics (
+\begin{DoxyParamCaption}
+\item[{double}]{q}
+\end{DoxyParamCaption}
+) const}\label{classrob_link_a1dc4dfce2a402d934f9c7e355c94e458}
+\hypertarget{classrob_link_aa382b84e5e3fa242ffb67860002096bd}{}\index{rob\+Link@{rob\+Link}!Get\+Convention@{Get\+Convention}}
+\index{Get\+Convention@{Get\+Convention}!rob\+Link@{rob\+Link}}
+\subsubsection[{Get\+Convention}]{\setlength{\rightskip}{0pt plus 5cm}{\bf rob\+Kinematics\+::\+Convention} rob\+Link\+::\+Get\+Convention (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classrob_link_aa382b84e5e3fa242ffb67860002096bd}
+\hypertarget{classrob_link_aad5e8b2c6ecbc2203c77774517ec5afe}{}\index{rob\+Link@{rob\+Link}!Get\+Kinematics@{Get\+Kinematics}}
+\index{Get\+Kinematics@{Get\+Kinematics}!rob\+Link@{rob\+Link}}
+\subsubsection[{Get\+Kinematics}]{\setlength{\rightskip}{0pt plus 5cm}{\bf rob\+Kinematics}$\ast$ rob\+Link\+::\+Get\+Kinematics (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classrob_link_aad5e8b2c6ecbc2203c77774517ec5afe}
+\hypertarget{classrob_link_a43269c243616e27131e91adc0a0251f2}{}\index{rob\+Link@{rob\+Link}!Get\+Mass@{Get\+Mass}}
+\index{Get\+Mass@{Get\+Mass}!rob\+Link@{rob\+Link}}
+\subsubsection[{Get\+Mass}]{\setlength{\rightskip}{0pt plus 5cm}{\bf rob\+Mass} rob\+Link\+::\+Get\+Mass (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classrob_link_a43269c243616e27131e91adc0a0251f2}
+\hypertarget{classrob_link_a0053248e96d0b42e170bbee51e9e0606}{}\index{rob\+Link@{rob\+Link}!Get\+Type@{Get\+Type}}
+\index{Get\+Type@{Get\+Type}!rob\+Link@{rob\+Link}}
+\subsubsection[{Get\+Type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf rob\+Joint\+::\+Type} rob\+Link\+::\+Get\+Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classrob_link_a0053248e96d0b42e170bbee51e9e0606}
+\hypertarget{classrob_link_a9c19539fa0f402dc8c496faf2632713a}{}\index{rob\+Link@{rob\+Link}!Mass@{Mass}}
+\index{Mass@{Mass}!rob\+Link@{rob\+Link}}
+\subsubsection[{Mass}]{\setlength{\rightskip}{0pt plus 5cm}double rob\+Link\+::\+Mass (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classrob_link_a9c19539fa0f402dc8c496faf2632713a}
+\hypertarget{classrob_link_a7a490ea913361ad155fa698080f1501f}{}\index{rob\+Link@{rob\+Link}!Moment\+Of\+Inertia@{Moment\+Of\+Inertia}}
+\index{Moment\+Of\+Inertia@{Moment\+Of\+Inertia}!rob\+Link@{rob\+Link}}
+\subsubsection[{Moment\+Of\+Inertia}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Fixed\+Size\+Matrix}$<$double,3,3$>$ rob\+Link\+::\+Moment\+Of\+Inertia (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classrob_link_a7a490ea913361ad155fa698080f1501f}
+\hypertarget{classrob_link_a7a2448af5a1fce4293c9b6ad801ea461}{}\index{rob\+Link@{rob\+Link}!Moment\+Of\+Inertia\+At\+C\+O\+M@{Moment\+Of\+Inertia\+At\+C\+O\+M}}
+\index{Moment\+Of\+Inertia\+At\+C\+O\+M@{Moment\+Of\+Inertia\+At\+C\+O\+M}!rob\+Link@{rob\+Link}}
+\subsubsection[{Moment\+Of\+Inertia\+At\+C\+O\+M}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Fixed\+Size\+Matrix}$<$double,3,3$>$ rob\+Link\+::\+Moment\+Of\+Inertia\+At\+C\+O\+M (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classrob_link_a7a2448af5a1fce4293c9b6ad801ea461}
+\hypertarget{classrob_link_a94ed71cb4c204e3fa29cd868891e626d}{}\index{rob\+Link@{rob\+Link}!Orientation@{Orientation}}
+\index{Orientation@{Orientation}!rob\+Link@{rob\+Link}}
+\subsubsection[{Orientation}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Matrix\+Rotation3}$<$double$>$ rob\+Link\+::\+Orientation (
+\begin{DoxyParamCaption}
+\item[{double}]{q}
+\end{DoxyParamCaption}
+) const}\label{classrob_link_a94ed71cb4c204e3fa29cd868891e626d}
+\hypertarget{classrob_link_a0ac05c903c18d1e8db3ccbdec9312349}{}\index{rob\+Link@{rob\+Link}!Position\+Max@{Position\+Max}}
+\index{Position\+Max@{Position\+Max}!rob\+Link@{rob\+Link}}
+\subsubsection[{Position\+Max}]{\setlength{\rightskip}{0pt plus 5cm}double rob\+Link\+::\+Position\+Max (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classrob_link_a0ac05c903c18d1e8db3ccbdec9312349}
+\hypertarget{classrob_link_a95eb30b91371aab58976d2af316385d5}{}\index{rob\+Link@{rob\+Link}!Position\+Min@{Position\+Min}}
+\index{Position\+Min@{Position\+Min}!rob\+Link@{rob\+Link}}
+\subsubsection[{Position\+Min}]{\setlength{\rightskip}{0pt plus 5cm}double rob\+Link\+::\+Position\+Min (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classrob_link_a95eb30b91371aab58976d2af316385d5}
+\hypertarget{classrob_link_acd240f7a9609e54400811940131814da}{}\index{rob\+Link@{rob\+Link}!P\+Star@{P\+Star}}
+\index{P\+Star@{P\+Star}!rob\+Link@{rob\+Link}}
+\subsubsection[{P\+Star}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Fixed\+Size\+Vector}$<$double,3$>$ rob\+Link\+::\+P\+Star (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classrob_link_acd240f7a9609e54400811940131814da}
+\hypertarget{classrob_link_a9b3945e5c8efca7c331a6d9f560ec4ff}{}\index{rob\+Link@{rob\+Link}!Read@{Read}}
+\index{Read@{Read}!rob\+Link@{rob\+Link}}
+\subsubsection[{Read}]{\setlength{\rightskip}{0pt plus 5cm}{\bf rob\+Link\+::\+Errno} rob\+Link\+::\+Read (
+\begin{DoxyParamCaption}
+\item[{std\+::istream \&}]{is}
+\end{DoxyParamCaption}
+)}\label{classrob_link_a9b3945e5c8efca7c331a6d9f560ec4ff}
+
+
+Read the D\+H and body parameters. 
+
+First read the D\+H parameters and then the body\textquotesingle{}s parameters. At the end of the day, the parameters must be in the following order D\+H convention (string)\+: modified or standard $ \alpha $ (1 double)\+: D\+H parameter $ a $ (1 double)\+: D\+H parameter $ \theta $ (1 double)\+: D\+H parameter $ d $ (1 double)\+: D\+H parameter joint type (string)\+: revolute/hinge or prismatic/slider joint mode (string)\+: active or passive joint offset position (1 double)\+: value added to each joint value joint minimum position (1 double)\+: lower joint limit joint maximum position (1 double)\+: upper joint limit joint maximum force/torque (1 double)\+: absolute force/torque limit mass (1 double)\+: The mass of the body center of mass (3 double)\+: $ \matrix{x & y & z} $ principal moment of inertia (3 double)\+: $ \matrix{I_{xx} & I_{yy} & I_{zz}} $ body principal axis (9 double)\+: \hypertarget{classrob_link_afb16c58fe303d6aaeab579b86f65c00b}{}\index{rob\+Link@{rob\+Link}!Write@{Write}}
+\index{Write@{Write}!rob\+Link@{rob\+Link}}
+\subsubsection[{Write}]{\setlength{\rightskip}{0pt plus 5cm}{\bf rob\+Link\+::\+Errno} rob\+Link\+::\+Write (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{os}
+\end{DoxyParamCaption}
+) const}\label{classrob_link_afb16c58fe303d6aaeab579b86f65c00b}
+
+
+Write the D\+H and body parameters. 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classrob_link_a4aa26f90307b406c336f9b7fae00b905}{}\index{rob\+Link@{rob\+Link}!kinematics@{kinematics}}
+\index{kinematics@{kinematics}!rob\+Link@{rob\+Link}}
+\subsubsection[{kinematics}]{\setlength{\rightskip}{0pt plus 5cm}{\bf rob\+Kinematics}$\ast$ rob\+Link\+::kinematics\hspace{0.3cm}{\ttfamily [protected]}}\label{classrob_link_a4aa26f90307b406c336f9b7fae00b905}
+\hypertarget{classrob_link_a7b524ebf9d101bc369749585db1ba66d}{}\index{rob\+Link@{rob\+Link}!mass@{mass}}
+\index{mass@{mass}!rob\+Link@{rob\+Link}}
+\subsubsection[{mass}]{\setlength{\rightskip}{0pt plus 5cm}{\bf rob\+Mass} rob\+Link\+::mass\hspace{0.3cm}{\ttfamily [protected]}}\label{classrob_link_a7b524ebf9d101bc369749585db1ba66d}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Robot/\hyperlink{rob_link_8h}{rob\+Link.\+h}\end{DoxyCompactItemize}

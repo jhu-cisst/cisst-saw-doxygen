@@ -1,0 +1,129 @@
+\hypertarget{classsvl_filter_stereo_image_optimizer}{}\section{svl\+Filter\+Stereo\+Image\+Optimizer Class Reference}
+\label{classsvl_filter_stereo_image_optimizer}\index{svl\+Filter\+Stereo\+Image\+Optimizer@{svl\+Filter\+Stereo\+Image\+Optimizer}}
+
+
+{\ttfamily \#include $<$svl\+Filter\+Stereo\+Image\+Optimizer.\+h$>$}
+
+Inheritance diagram for svl\+Filter\+Stereo\+Image\+Optimizer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{d6/d9d/classsvl_filter_stereo_image_optimizer}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsvl_filter_stereo_image_optimizer_a260d8b3099640f3a6f122348a5e22f51}{svl\+Filter\+Stereo\+Image\+Optimizer} ()
+\item 
+virtual \hyperlink{classsvl_filter_stereo_image_optimizer_a64c9ab2ed17454c5d97ec866d0fd0e1a}{$\sim$svl\+Filter\+Stereo\+Image\+Optimizer} ()
+\item 
+int \hyperlink{classsvl_filter_stereo_image_optimizer_a894d73594bef3b793f2c009ad061f137}{Set\+Disparity} (int disparity)
+\item 
+int \hyperlink{classsvl_filter_stereo_image_optimizer_acbf21f003860de77abbbdecf5bf96be5}{Set\+Region\+Of\+Interest} (const \hyperlink{structsvl_rect}{svl\+Rect} \&roi)
+\item 
+int \hyperlink{classsvl_filter_stereo_image_optimizer_acb681399e8cad49db480daa06f81dd14}{Set\+Region\+Of\+Interest} (unsigned int left, unsigned int top, unsigned int right, unsigned int bottom)
+\item 
+void \hyperlink{classsvl_filter_stereo_image_optimizer_ad303db544f6e95fbbdd64639cadc0762}{Recompute\+Color\+Balance} (bool always=false)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual int \hyperlink{classsvl_filter_stereo_image_optimizer_a4b400bc944054262daa96de14fa1fd37}{Initialize} (\hyperlink{classsvl_sample}{svl\+Sample} $\ast$sync\+Input, \hyperlink{classsvl_sample}{svl\+Sample} $\ast$\&sync\+Output)
+\item 
+virtual int \hyperlink{classsvl_filter_stereo_image_optimizer_a57f20e5eba1eb6196154c7c36360073f}{Process} (\hyperlink{structsvl_proc_info}{svl\+Proc\+Info} $\ast$proc\+Info, \hyperlink{classsvl_sample}{svl\+Sample} $\ast$sync\+Input, \hyperlink{classsvl_sample}{svl\+Sample} $\ast$\&sync\+Output)
+\item 
+virtual int \hyperlink{classsvl_filter_stereo_image_optimizer_a42b9e69d268a317e0fb92d2932c4530c}{Release} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classsvl_filter_stereo_image_optimizer_a260d8b3099640f3a6f122348a5e22f51}{}\index{svl\+Filter\+Stereo\+Image\+Optimizer@{svl\+Filter\+Stereo\+Image\+Optimizer}!svl\+Filter\+Stereo\+Image\+Optimizer@{svl\+Filter\+Stereo\+Image\+Optimizer}}
+\index{svl\+Filter\+Stereo\+Image\+Optimizer@{svl\+Filter\+Stereo\+Image\+Optimizer}!svl\+Filter\+Stereo\+Image\+Optimizer@{svl\+Filter\+Stereo\+Image\+Optimizer}}
+\subsubsection[{svl\+Filter\+Stereo\+Image\+Optimizer}]{\setlength{\rightskip}{0pt plus 5cm}svl\+Filter\+Stereo\+Image\+Optimizer\+::svl\+Filter\+Stereo\+Image\+Optimizer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classsvl_filter_stereo_image_optimizer_a260d8b3099640f3a6f122348a5e22f51}
+\hypertarget{classsvl_filter_stereo_image_optimizer_a64c9ab2ed17454c5d97ec866d0fd0e1a}{}\index{svl\+Filter\+Stereo\+Image\+Optimizer@{svl\+Filter\+Stereo\+Image\+Optimizer}!````~svl\+Filter\+Stereo\+Image\+Optimizer@{$\sim$svl\+Filter\+Stereo\+Image\+Optimizer}}
+\index{````~svl\+Filter\+Stereo\+Image\+Optimizer@{$\sim$svl\+Filter\+Stereo\+Image\+Optimizer}!svl\+Filter\+Stereo\+Image\+Optimizer@{svl\+Filter\+Stereo\+Image\+Optimizer}}
+\subsubsection[{$\sim$svl\+Filter\+Stereo\+Image\+Optimizer}]{\setlength{\rightskip}{0pt plus 5cm}virtual svl\+Filter\+Stereo\+Image\+Optimizer\+::$\sim$svl\+Filter\+Stereo\+Image\+Optimizer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classsvl_filter_stereo_image_optimizer_a64c9ab2ed17454c5d97ec866d0fd0e1a}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classsvl_filter_stereo_image_optimizer_a4b400bc944054262daa96de14fa1fd37}{}\index{svl\+Filter\+Stereo\+Image\+Optimizer@{svl\+Filter\+Stereo\+Image\+Optimizer}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!svl\+Filter\+Stereo\+Image\+Optimizer@{svl\+Filter\+Stereo\+Image\+Optimizer}}
+\subsubsection[{Initialize}]{\setlength{\rightskip}{0pt plus 5cm}virtual int svl\+Filter\+Stereo\+Image\+Optimizer\+::\+Initialize (
+\begin{DoxyParamCaption}
+\item[{{\bf svl\+Sample} $\ast$}]{sync\+Input, }
+\item[{{\bf svl\+Sample} $\ast$\&}]{sync\+Output}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classsvl_filter_stereo_image_optimizer_a4b400bc944054262daa96de14fa1fd37}
+
+
+Implements \hyperlink{classsvl_filter_base_ac8eddcd9336c2b381facc8fb372e3bfb}{svl\+Filter\+Base}.
+
+\hypertarget{classsvl_filter_stereo_image_optimizer_a57f20e5eba1eb6196154c7c36360073f}{}\index{svl\+Filter\+Stereo\+Image\+Optimizer@{svl\+Filter\+Stereo\+Image\+Optimizer}!Process@{Process}}
+\index{Process@{Process}!svl\+Filter\+Stereo\+Image\+Optimizer@{svl\+Filter\+Stereo\+Image\+Optimizer}}
+\subsubsection[{Process}]{\setlength{\rightskip}{0pt plus 5cm}virtual int svl\+Filter\+Stereo\+Image\+Optimizer\+::\+Process (
+\begin{DoxyParamCaption}
+\item[{{\bf svl\+Proc\+Info} $\ast$}]{proc\+Info, }
+\item[{{\bf svl\+Sample} $\ast$}]{sync\+Input, }
+\item[{{\bf svl\+Sample} $\ast$\&}]{sync\+Output}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classsvl_filter_stereo_image_optimizer_a57f20e5eba1eb6196154c7c36360073f}
+
+
+Implements \hyperlink{classsvl_filter_base_aaff77d711088384d00e717fb4ec88aab}{svl\+Filter\+Base}.
+
+\hypertarget{classsvl_filter_stereo_image_optimizer_ad303db544f6e95fbbdd64639cadc0762}{}\index{svl\+Filter\+Stereo\+Image\+Optimizer@{svl\+Filter\+Stereo\+Image\+Optimizer}!Recompute\+Color\+Balance@{Recompute\+Color\+Balance}}
+\index{Recompute\+Color\+Balance@{Recompute\+Color\+Balance}!svl\+Filter\+Stereo\+Image\+Optimizer@{svl\+Filter\+Stereo\+Image\+Optimizer}}
+\subsubsection[{Recompute\+Color\+Balance}]{\setlength{\rightskip}{0pt plus 5cm}void svl\+Filter\+Stereo\+Image\+Optimizer\+::\+Recompute\+Color\+Balance (
+\begin{DoxyParamCaption}
+\item[{bool}]{always = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\label{classsvl_filter_stereo_image_optimizer_ad303db544f6e95fbbdd64639cadc0762}
+\hypertarget{classsvl_filter_stereo_image_optimizer_a42b9e69d268a317e0fb92d2932c4530c}{}\index{svl\+Filter\+Stereo\+Image\+Optimizer@{svl\+Filter\+Stereo\+Image\+Optimizer}!Release@{Release}}
+\index{Release@{Release}!svl\+Filter\+Stereo\+Image\+Optimizer@{svl\+Filter\+Stereo\+Image\+Optimizer}}
+\subsubsection[{Release}]{\setlength{\rightskip}{0pt plus 5cm}virtual int svl\+Filter\+Stereo\+Image\+Optimizer\+::\+Release (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classsvl_filter_stereo_image_optimizer_a42b9e69d268a317e0fb92d2932c4530c}
+
+
+Reimplemented from \hyperlink{classsvl_filter_base_ab689b852e2cee497fcd0ca6708105e17}{svl\+Filter\+Base}.
+
+\hypertarget{classsvl_filter_stereo_image_optimizer_a894d73594bef3b793f2c009ad061f137}{}\index{svl\+Filter\+Stereo\+Image\+Optimizer@{svl\+Filter\+Stereo\+Image\+Optimizer}!Set\+Disparity@{Set\+Disparity}}
+\index{Set\+Disparity@{Set\+Disparity}!svl\+Filter\+Stereo\+Image\+Optimizer@{svl\+Filter\+Stereo\+Image\+Optimizer}}
+\subsubsection[{Set\+Disparity}]{\setlength{\rightskip}{0pt plus 5cm}int svl\+Filter\+Stereo\+Image\+Optimizer\+::\+Set\+Disparity (
+\begin{DoxyParamCaption}
+\item[{int}]{disparity}
+\end{DoxyParamCaption}
+)}\label{classsvl_filter_stereo_image_optimizer_a894d73594bef3b793f2c009ad061f137}
+\hypertarget{classsvl_filter_stereo_image_optimizer_acbf21f003860de77abbbdecf5bf96be5}{}\index{svl\+Filter\+Stereo\+Image\+Optimizer@{svl\+Filter\+Stereo\+Image\+Optimizer}!Set\+Region\+Of\+Interest@{Set\+Region\+Of\+Interest}}
+\index{Set\+Region\+Of\+Interest@{Set\+Region\+Of\+Interest}!svl\+Filter\+Stereo\+Image\+Optimizer@{svl\+Filter\+Stereo\+Image\+Optimizer}}
+\subsubsection[{Set\+Region\+Of\+Interest}]{\setlength{\rightskip}{0pt plus 5cm}int svl\+Filter\+Stereo\+Image\+Optimizer\+::\+Set\+Region\+Of\+Interest (
+\begin{DoxyParamCaption}
+\item[{const {\bf svl\+Rect} \&}]{roi}
+\end{DoxyParamCaption}
+)}\label{classsvl_filter_stereo_image_optimizer_acbf21f003860de77abbbdecf5bf96be5}
+\hypertarget{classsvl_filter_stereo_image_optimizer_acb681399e8cad49db480daa06f81dd14}{}\index{svl\+Filter\+Stereo\+Image\+Optimizer@{svl\+Filter\+Stereo\+Image\+Optimizer}!Set\+Region\+Of\+Interest@{Set\+Region\+Of\+Interest}}
+\index{Set\+Region\+Of\+Interest@{Set\+Region\+Of\+Interest}!svl\+Filter\+Stereo\+Image\+Optimizer@{svl\+Filter\+Stereo\+Image\+Optimizer}}
+\subsubsection[{Set\+Region\+Of\+Interest}]{\setlength{\rightskip}{0pt plus 5cm}int svl\+Filter\+Stereo\+Image\+Optimizer\+::\+Set\+Region\+Of\+Interest (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{left, }
+\item[{unsigned int}]{top, }
+\item[{unsigned int}]{right, }
+\item[{unsigned int}]{bottom}
+\end{DoxyParamCaption}
+)}\label{classsvl_filter_stereo_image_optimizer_acb681399e8cad49db480daa06f81dd14}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Stereo\+Vision/\hyperlink{svl_filter_stereo_image_optimizer_8h}{svl\+Filter\+Stereo\+Image\+Optimizer.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,169 @@
+\hypertarget{classmts_command_queued_void_return_base}{}\section{mts\+Command\+Queued\+Void\+Return\+Base$<$ \+\_\+\+Base $>$ Class Template Reference}
+\label{classmts_command_queued_void_return_base}\index{mts\+Command\+Queued\+Void\+Return\+Base$<$ \+\_\+\+Base $>$@{mts\+Command\+Queued\+Void\+Return\+Base$<$ \+\_\+\+Base $>$}}
+
+
+{\ttfamily \#include $<$mts\+Command\+Queued\+Void\+Return.\+h$>$}
+
+Inheritance diagram for mts\+Command\+Queued\+Void\+Return\+Base$<$ \+\_\+\+Base $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{d4/d6e/classmts_command_queued_void_return_base}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \+\_\+\+Base \hyperlink{classmts_command_queued_void_return_base_a29c68cf6ce656cb59012c2e8086c8f8d}{Base\+Type}
+\item 
+typedef \hyperlink{classmts_command_queued_void_return_base}{mts\+Command\+Queued\+Void\+Return\+Base}$<$ \+\_\+\+Base $>$ \hyperlink{classmts_command_queued_void_return_base_a336bb46e1c968dc3003f9dc163c9f82c}{This\+Type}
+\item 
+typedef \+\_\+\+Base\+::\+Callable\+Type \hyperlink{classmts_command_queued_void_return_base_a66e6a106a0c17625d9f0ec9a33ff634a}{Callable\+Type}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmts_command_queued_void_return_base_a9bbf129db24fd5d75684bc14d81535e6}{mts\+Command\+Queued\+Void\+Return\+Base} (\hyperlink{classmts_command_queued_void_return_base_a66e6a106a0c17625d9f0ec9a33ff634a}{Callable\+Type} $\ast$callable, const std\+::string \&name, const \hyperlink{classmts_generic_object}{mts\+Generic\+Object} $\ast$result\+Prototype, \hyperlink{classmts_mail_box}{mts\+Mail\+Box} $\ast$mail\+Box, size\+\_\+t size)
+\item 
+virtual \hyperlink{classmts_command_queued_void_return_base_ad2a3070b78c5bac00e8d6d7c798944f3}{$\sim$mts\+Command\+Queued\+Void\+Return\+Base} ()
+\item 
+virtual std\+::string \hyperlink{classmts_command_queued_void_return_base_acfdaaf157d65cf3b30a97fcfa6c01950}{Get\+Class\+Name} (void) const 
+\item 
+virtual \hyperlink{classmts_command_queued_void_return_base_a336bb46e1c968dc3003f9dc163c9f82c}{This\+Type} $\ast$ \hyperlink{classmts_command_queued_void_return_base_a21cc45ebaff3f83c0c39d264467dff4f}{Clone} (\hyperlink{classmts_mail_box}{mts\+Mail\+Box} $\ast$mail\+Box, size\+\_\+t size) const 
+\item 
+mts\+Execution\+Result \hyperlink{classmts_command_queued_void_return_base_a3a98e0b06cb0e7793d1ebccaad83bec9}{Execute} (\hyperlink{classmts_generic_object}{mts\+Generic\+Object} \&result)
+\item 
+mts\+Execution\+Result \hyperlink{classmts_command_queued_void_return_base_aceea05da6017b3b8fd3d6b1b7d34dd8e}{Execute} (\hyperlink{classmts_generic_object}{mts\+Generic\+Object} \&result, \hyperlink{classmts_command_write_base}{mts\+Command\+Write\+Base} $\ast$finished\+Event\+Handler)
+\item 
+std\+::string \hyperlink{classmts_command_queued_void_return_base_a599785ddb2248dc937215a3c6579df68}{Get\+Mail\+Box\+Name} (void) const 
+\item 
+virtual \hyperlink{classmts_generic_object}{mts\+Generic\+Object} $\ast$ \hyperlink{classmts_command_queued_void_return_base_ae92644324ed045effc08e0b6b2318660}{Return\+Get} (void)
+\item 
+virtual \hyperlink{classmts_command_write_base}{mts\+Command\+Write\+Base} $\ast$ \hyperlink{classmts_command_queued_void_return_base_abf2ce97d829469ae426a23f164a8364e}{Finished\+Event\+Get} (void)
+\item 
+void \hyperlink{classmts_command_queued_void_return_base_a7b6e745feb4966a04279f2a2ab12d481}{To\+Stream} (std\+::ostream \&output\+Stream) const 
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmts_mail_box}{mts\+Mail\+Box} $\ast$ \hyperlink{classmts_command_queued_void_return_base_a5e0f1804f0fe7a3aa22cf92eb013cc54}{Mail\+Box}
+\item 
+size\+\_\+t \hyperlink{classmts_command_queued_void_return_base_a3afbf01037322b73778768074d95c9c7}{Argument\+Queue\+Size}
+\item 
+\hyperlink{classmts_queue}{mts\+Queue}$<$ \hyperlink{classmts_generic_object}{mts\+Generic\+Object} $\ast$ $>$ \hyperlink{classmts_command_queued_void_return_base_a9926c9d6613de0a461be38fcb5739be5}{Returns\+Queue}
+\item 
+\hyperlink{classmts_queue}{mts\+Queue}$<$ \hyperlink{classmts_command_write_base}{mts\+Command\+Write\+Base} $\ast$ $>$ \hyperlink{classmts_command_queued_void_return_base_a465d5cf2576bc4c931ee7f436846051e}{Finished\+Event\+Queue}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classmts_command_queued_void_return_base_a29c68cf6ce656cb59012c2e8086c8f8d}{}\index{mts\+Command\+Queued\+Void\+Return\+Base@{mts\+Command\+Queued\+Void\+Return\+Base}!Base\+Type@{Base\+Type}}
+\index{Base\+Type@{Base\+Type}!mts\+Command\+Queued\+Void\+Return\+Base@{mts\+Command\+Queued\+Void\+Return\+Base}}
+\subsubsection[{Base\+Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Base $>$ typedef \+\_\+\+Base {\bf mts\+Command\+Queued\+Void\+Return\+Base}$<$ \+\_\+\+Base $>$\+::{\bf Base\+Type}}\label{classmts_command_queued_void_return_base_a29c68cf6ce656cb59012c2e8086c8f8d}
+\hypertarget{classmts_command_queued_void_return_base_a66e6a106a0c17625d9f0ec9a33ff634a}{}\index{mts\+Command\+Queued\+Void\+Return\+Base@{mts\+Command\+Queued\+Void\+Return\+Base}!Callable\+Type@{Callable\+Type}}
+\index{Callable\+Type@{Callable\+Type}!mts\+Command\+Queued\+Void\+Return\+Base@{mts\+Command\+Queued\+Void\+Return\+Base}}
+\subsubsection[{Callable\+Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Base $>$ typedef \+\_\+\+Base\+::\+Callable\+Type {\bf mts\+Command\+Queued\+Void\+Return\+Base}$<$ \+\_\+\+Base $>$\+::{\bf Callable\+Type}}\label{classmts_command_queued_void_return_base_a66e6a106a0c17625d9f0ec9a33ff634a}
+\hypertarget{classmts_command_queued_void_return_base_a336bb46e1c968dc3003f9dc163c9f82c}{}\index{mts\+Command\+Queued\+Void\+Return\+Base@{mts\+Command\+Queued\+Void\+Return\+Base}!This\+Type@{This\+Type}}
+\index{This\+Type@{This\+Type}!mts\+Command\+Queued\+Void\+Return\+Base@{mts\+Command\+Queued\+Void\+Return\+Base}}
+\subsubsection[{This\+Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Base $>$ typedef {\bf mts\+Command\+Queued\+Void\+Return\+Base}$<$\+\_\+\+Base$>$ {\bf mts\+Command\+Queued\+Void\+Return\+Base}$<$ \+\_\+\+Base $>$\+::{\bf This\+Type}}\label{classmts_command_queued_void_return_base_a336bb46e1c968dc3003f9dc163c9f82c}
+This type. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmts_command_queued_void_return_base_a9bbf129db24fd5d75684bc14d81535e6}{}\index{mts\+Command\+Queued\+Void\+Return\+Base@{mts\+Command\+Queued\+Void\+Return\+Base}!mts\+Command\+Queued\+Void\+Return\+Base@{mts\+Command\+Queued\+Void\+Return\+Base}}
+\index{mts\+Command\+Queued\+Void\+Return\+Base@{mts\+Command\+Queued\+Void\+Return\+Base}!mts\+Command\+Queued\+Void\+Return\+Base@{mts\+Command\+Queued\+Void\+Return\+Base}}
+\subsubsection[{mts\+Command\+Queued\+Void\+Return\+Base}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Base $>$ {\bf mts\+Command\+Queued\+Void\+Return\+Base}$<$ \+\_\+\+Base $>$\+::{\bf mts\+Command\+Queued\+Void\+Return\+Base} (
+\begin{DoxyParamCaption}
+\item[{{\bf Callable\+Type} $\ast$}]{callable, }
+\item[{const std\+::string \&}]{name, }
+\item[{const {\bf mts\+Generic\+Object} $\ast$}]{result\+Prototype, }
+\item[{{\bf mts\+Mail\+Box} $\ast$}]{mail\+Box, }
+\item[{size\+\_\+t}]{size}
+\end{DoxyParamCaption}
+)}\label{classmts_command_queued_void_return_base_a9bbf129db24fd5d75684bc14d81535e6}
+\hypertarget{classmts_command_queued_void_return_base_ad2a3070b78c5bac00e8d6d7c798944f3}{}\index{mts\+Command\+Queued\+Void\+Return\+Base@{mts\+Command\+Queued\+Void\+Return\+Base}!````~mts\+Command\+Queued\+Void\+Return\+Base@{$\sim$mts\+Command\+Queued\+Void\+Return\+Base}}
+\index{````~mts\+Command\+Queued\+Void\+Return\+Base@{$\sim$mts\+Command\+Queued\+Void\+Return\+Base}!mts\+Command\+Queued\+Void\+Return\+Base@{mts\+Command\+Queued\+Void\+Return\+Base}}
+\subsubsection[{$\sim$mts\+Command\+Queued\+Void\+Return\+Base}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Base $>$ virtual {\bf mts\+Command\+Queued\+Void\+Return\+Base}$<$ \+\_\+\+Base $>$\+::$\sim${\bf mts\+Command\+Queued\+Void\+Return\+Base} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_command_queued_void_return_base_ad2a3070b78c5bac00e8d6d7c798944f3}
+Destructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classmts_command_queued_void_return_base_a21cc45ebaff3f83c0c39d264467dff4f}{}\index{mts\+Command\+Queued\+Void\+Return\+Base@{mts\+Command\+Queued\+Void\+Return\+Base}!Clone@{Clone}}
+\index{Clone@{Clone}!mts\+Command\+Queued\+Void\+Return\+Base@{mts\+Command\+Queued\+Void\+Return\+Base}}
+\subsubsection[{Clone}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Base $>$ virtual {\bf This\+Type}$\ast$ {\bf mts\+Command\+Queued\+Void\+Return\+Base}$<$ \+\_\+\+Base $>$\+::Clone (
+\begin{DoxyParamCaption}
+\item[{{\bf mts\+Mail\+Box} $\ast$}]{mail\+Box, }
+\item[{size\+\_\+t}]{size}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_command_queued_void_return_base_a21cc45ebaff3f83c0c39d264467dff4f}
+\hypertarget{classmts_command_queued_void_return_base_a3a98e0b06cb0e7793d1ebccaad83bec9}{}\index{mts\+Command\+Queued\+Void\+Return\+Base@{mts\+Command\+Queued\+Void\+Return\+Base}!Execute@{Execute}}
+\index{Execute@{Execute}!mts\+Command\+Queued\+Void\+Return\+Base@{mts\+Command\+Queued\+Void\+Return\+Base}}
+\subsubsection[{Execute}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Base $>$ mts\+Execution\+Result {\bf mts\+Command\+Queued\+Void\+Return\+Base}$<$ \+\_\+\+Base $>$\+::Execute (
+\begin{DoxyParamCaption}
+\item[{{\bf mts\+Generic\+Object} \&}]{result}
+\end{DoxyParamCaption}
+)}\label{classmts_command_queued_void_return_base_a3a98e0b06cb0e7793d1ebccaad83bec9}
+\hypertarget{classmts_command_queued_void_return_base_aceea05da6017b3b8fd3d6b1b7d34dd8e}{}\index{mts\+Command\+Queued\+Void\+Return\+Base@{mts\+Command\+Queued\+Void\+Return\+Base}!Execute@{Execute}}
+\index{Execute@{Execute}!mts\+Command\+Queued\+Void\+Return\+Base@{mts\+Command\+Queued\+Void\+Return\+Base}}
+\subsubsection[{Execute}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Base $>$ mts\+Execution\+Result {\bf mts\+Command\+Queued\+Void\+Return\+Base}$<$ \+\_\+\+Base $>$\+::Execute (
+\begin{DoxyParamCaption}
+\item[{{\bf mts\+Generic\+Object} \&}]{result, }
+\item[{{\bf mts\+Command\+Write\+Base} $\ast$}]{finished\+Event\+Handler}
+\end{DoxyParamCaption}
+)}\label{classmts_command_queued_void_return_base_aceea05da6017b3b8fd3d6b1b7d34dd8e}
+\hypertarget{classmts_command_queued_void_return_base_abf2ce97d829469ae426a23f164a8364e}{}\index{mts\+Command\+Queued\+Void\+Return\+Base@{mts\+Command\+Queued\+Void\+Return\+Base}!Finished\+Event\+Get@{Finished\+Event\+Get}}
+\index{Finished\+Event\+Get@{Finished\+Event\+Get}!mts\+Command\+Queued\+Void\+Return\+Base@{mts\+Command\+Queued\+Void\+Return\+Base}}
+\subsubsection[{Finished\+Event\+Get}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Base $>$ virtual {\bf mts\+Command\+Write\+Base}$\ast$ {\bf mts\+Command\+Queued\+Void\+Return\+Base}$<$ \+\_\+\+Base $>$\+::Finished\+Event\+Get (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classmts_command_queued_void_return_base_abf2ce97d829469ae426a23f164a8364e}
+\hypertarget{classmts_command_queued_void_return_base_acfdaaf157d65cf3b30a97fcfa6c01950}{}\index{mts\+Command\+Queued\+Void\+Return\+Base@{mts\+Command\+Queued\+Void\+Return\+Base}!Get\+Class\+Name@{Get\+Class\+Name}}
+\index{Get\+Class\+Name@{Get\+Class\+Name}!mts\+Command\+Queued\+Void\+Return\+Base@{mts\+Command\+Queued\+Void\+Return\+Base}}
+\subsubsection[{Get\+Class\+Name}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Base $>$ virtual std\+::string {\bf mts\+Command\+Queued\+Void\+Return\+Base}$<$ \+\_\+\+Base $>$\+::Get\+Class\+Name (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_command_queued_void_return_base_acfdaaf157d65cf3b30a97fcfa6c01950}
+\hypertarget{classmts_command_queued_void_return_base_a599785ddb2248dc937215a3c6579df68}{}\index{mts\+Command\+Queued\+Void\+Return\+Base@{mts\+Command\+Queued\+Void\+Return\+Base}!Get\+Mail\+Box\+Name@{Get\+Mail\+Box\+Name}}
+\index{Get\+Mail\+Box\+Name@{Get\+Mail\+Box\+Name}!mts\+Command\+Queued\+Void\+Return\+Base@{mts\+Command\+Queued\+Void\+Return\+Base}}
+\subsubsection[{Get\+Mail\+Box\+Name}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Base $>$ std\+::string {\bf mts\+Command\+Queued\+Void\+Return\+Base}$<$ \+\_\+\+Base $>$\+::Get\+Mail\+Box\+Name (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classmts_command_queued_void_return_base_a599785ddb2248dc937215a3c6579df68}
+\hypertarget{classmts_command_queued_void_return_base_ae92644324ed045effc08e0b6b2318660}{}\index{mts\+Command\+Queued\+Void\+Return\+Base@{mts\+Command\+Queued\+Void\+Return\+Base}!Return\+Get@{Return\+Get}}
+\index{Return\+Get@{Return\+Get}!mts\+Command\+Queued\+Void\+Return\+Base@{mts\+Command\+Queued\+Void\+Return\+Base}}
+\subsubsection[{Return\+Get}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Base $>$ virtual {\bf mts\+Generic\+Object}$\ast$ {\bf mts\+Command\+Queued\+Void\+Return\+Base}$<$ \+\_\+\+Base $>$\+::Return\+Get (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classmts_command_queued_void_return_base_ae92644324ed045effc08e0b6b2318660}
+\hypertarget{classmts_command_queued_void_return_base_a7b6e745feb4966a04279f2a2ab12d481}{}\index{mts\+Command\+Queued\+Void\+Return\+Base@{mts\+Command\+Queued\+Void\+Return\+Base}!To\+Stream@{To\+Stream}}
+\index{To\+Stream@{To\+Stream}!mts\+Command\+Queued\+Void\+Return\+Base@{mts\+Command\+Queued\+Void\+Return\+Base}}
+\subsubsection[{To\+Stream}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Base $>$ void {\bf mts\+Command\+Queued\+Void\+Return\+Base}$<$ \+\_\+\+Base $>$\+::To\+Stream (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{output\+Stream}
+\end{DoxyParamCaption}
+) const}\label{classmts_command_queued_void_return_base_a7b6e745feb4966a04279f2a2ab12d481}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classmts_command_queued_void_return_base_a3afbf01037322b73778768074d95c9c7}{}\index{mts\+Command\+Queued\+Void\+Return\+Base@{mts\+Command\+Queued\+Void\+Return\+Base}!Argument\+Queue\+Size@{Argument\+Queue\+Size}}
+\index{Argument\+Queue\+Size@{Argument\+Queue\+Size}!mts\+Command\+Queued\+Void\+Return\+Base@{mts\+Command\+Queued\+Void\+Return\+Base}}
+\subsubsection[{Argument\+Queue\+Size}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Base $>$ size\+\_\+t {\bf mts\+Command\+Queued\+Void\+Return\+Base}$<$ \+\_\+\+Base $>$\+::Argument\+Queue\+Size\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_command_queued_void_return_base_a3afbf01037322b73778768074d95c9c7}
+\hypertarget{classmts_command_queued_void_return_base_a465d5cf2576bc4c931ee7f436846051e}{}\index{mts\+Command\+Queued\+Void\+Return\+Base@{mts\+Command\+Queued\+Void\+Return\+Base}!Finished\+Event\+Queue@{Finished\+Event\+Queue}}
+\index{Finished\+Event\+Queue@{Finished\+Event\+Queue}!mts\+Command\+Queued\+Void\+Return\+Base@{mts\+Command\+Queued\+Void\+Return\+Base}}
+\subsubsection[{Finished\+Event\+Queue}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Base $>$ {\bf mts\+Queue}$<${\bf mts\+Command\+Write\+Base} $\ast$$>$ {\bf mts\+Command\+Queued\+Void\+Return\+Base}$<$ \+\_\+\+Base $>$\+::Finished\+Event\+Queue\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_command_queued_void_return_base_a465d5cf2576bc4c931ee7f436846051e}
+Queue for return events (to send result to caller) \hypertarget{classmts_command_queued_void_return_base_a5e0f1804f0fe7a3aa22cf92eb013cc54}{}\index{mts\+Command\+Queued\+Void\+Return\+Base@{mts\+Command\+Queued\+Void\+Return\+Base}!Mail\+Box@{Mail\+Box}}
+\index{Mail\+Box@{Mail\+Box}!mts\+Command\+Queued\+Void\+Return\+Base@{mts\+Command\+Queued\+Void\+Return\+Base}}
+\subsubsection[{Mail\+Box}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Base $>$ {\bf mts\+Mail\+Box}$\ast$ {\bf mts\+Command\+Queued\+Void\+Return\+Base}$<$ \+\_\+\+Base $>$\+::Mail\+Box\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_command_queued_void_return_base_a5e0f1804f0fe7a3aa22cf92eb013cc54}
+Mailbox used to queue the commands \hypertarget{classmts_command_queued_void_return_base_a9926c9d6613de0a461be38fcb5739be5}{}\index{mts\+Command\+Queued\+Void\+Return\+Base@{mts\+Command\+Queued\+Void\+Return\+Base}!Returns\+Queue@{Returns\+Queue}}
+\index{Returns\+Queue@{Returns\+Queue}!mts\+Command\+Queued\+Void\+Return\+Base@{mts\+Command\+Queued\+Void\+Return\+Base}}
+\subsubsection[{Returns\+Queue}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Base $>$ {\bf mts\+Queue}$<${\bf mts\+Generic\+Object} $\ast$$>$ {\bf mts\+Command\+Queued\+Void\+Return\+Base}$<$ \+\_\+\+Base $>$\+::Returns\+Queue\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_command_queued_void_return_base_a9926c9d6613de0a461be38fcb5739be5}
+Queue to store pointer to return value 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Multi\+Task/\hyperlink{mts_command_queued_void_return_8h}{mts\+Command\+Queued\+Void\+Return.\+h}\end{DoxyCompactItemize}

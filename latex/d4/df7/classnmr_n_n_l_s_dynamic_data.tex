@@ -1,0 +1,539 @@
+\hypertarget{classnmr_n_n_l_s_dynamic_data}{}\section{nmr\+N\+N\+L\+S\+Dynamic\+Data Class Reference}
+\label{classnmr_n_n_l_s_dynamic_data}\index{nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}}
+
+
+Data for N\+N\+L\+S problem (Dynamic).  
+
+
+
+
+{\ttfamily \#include $<$nmr\+N\+N\+L\+S.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classnmr_n_n_l_s_dynamic_data_1_1_friend}{Friend}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef unsigned int \hyperlink{classnmr_n_n_l_s_dynamic_data_aff3aaadfea66b14eac2e3e022e41b35b}{size\+\_\+type}
+\item 
+typedef \hyperlink{classvct_fixed_size_vector}{vct\+Fixed\+Size\+Vector}$<$ \hyperlink{classnmr_n_n_l_s_dynamic_data_aff3aaadfea66b14eac2e3e022e41b35b}{size\+\_\+type}, 2 $>$ \hyperlink{classnmr_n_n_l_s_dynamic_data_ab99da17071a513448294ee9a420eb4e0}{Matrix\+Size\+Type}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classnmr_n_n_l_s_dynamic_data_af5be3bf2d38fe8b32fa7a477e6cd3bff}{nmr\+N\+N\+L\+S\+Dynamic\+Data} ()
+\item 
+const \hyperlink{classvct_dynamic_vector_ref}{vct\+Dynamic\+Vector\+Ref}$<$ C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \& \hyperlink{classnmr_n_n_l_s_dynamic_data_a2c67d4c5f9eff20ae015e60f85718f02}{X} (void) const 
+\item 
+const \hyperlink{classvct_dynamic_vector_ref}{vct\+Dynamic\+Vector\+Ref}$<$ C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \& \hyperlink{classnmr_n_n_l_s_dynamic_data_ae3204dc027313115b092088253dc4bb0}{W} (void) const 
+\end{DoxyCompactItemize}
+{\bf }\par
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class \+\_\+matrix\+Owner\+Type\+Ab $>$ }\\\hyperlink{classnmr_n_n_l_s_dynamic_data_ab5e89d385747b087c4861b927bf5bd43}{nmr\+N\+N\+L\+S\+Dynamic\+Data} (const \hyperlink{classvct_dynamic_matrix_base}{vct\+Dynamic\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type\+Ab, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&Ab)
+\item 
+{\footnotesize template$<$class \+\_\+matrix\+Owner\+Type\+A , class \+\_\+vector\+Owner\+Type\+B $>$ }\\\hyperlink{classnmr_n_n_l_s_dynamic_data_a7232702cec6f3a6a49061a14ceac7554}{nmr\+N\+N\+L\+S\+Dynamic\+Data} (const \hyperlink{classvct_dynamic_matrix_base}{vct\+Dynamic\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type\+A, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&A, const \hyperlink{classvct_dynamic_vector_base}{vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+B, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&b)
+\end{DoxyCompactItemize}
+
+{\bf }\par
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class \+\_\+matrix\+Owner\+Type\+Ab , class \+\_\+vector\+Owner\+Type\+Workspace , class \+\_\+vector\+Owner\+Type\+Workspace\+Int $>$ }\\\hyperlink{classnmr_n_n_l_s_dynamic_data_a01fdee60583ad42b751200b63afa2831}{nmr\+N\+N\+L\+S\+Dynamic\+Data} (const \hyperlink{classvct_dynamic_matrix_base}{vct\+Dynamic\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type\+Ab, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&Ab, \hyperlink{classvct_dynamic_vector_base}{vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+Workspace, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&workspace, \hyperlink{classvct_dynamic_vector_base}{vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+Workspace\+Int, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R $>$ \&workspace\+Int)
+\item 
+{\footnotesize template$<$class \+\_\+matrix\+Owner\+Type\+A , class \+\_\+vector\+Owner\+Type\+B , class \+\_\+vector\+Owner\+Type\+Workspace , class \+\_\+vector\+Owner\+Type\+Workspace\+Int $>$ }\\\hyperlink{classnmr_n_n_l_s_dynamic_data_a906564c7fe53d1ff270d30252892b47d}{nmr\+N\+N\+L\+S\+Dynamic\+Data} (const \hyperlink{classvct_dynamic_matrix_base}{vct\+Dynamic\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type\+A, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&A, const \hyperlink{classvct_dynamic_vector_base}{vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+B, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&b, \hyperlink{classvct_dynamic_vector_base}{vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+Workspace, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&workspace, \hyperlink{classvct_dynamic_vector_base}{vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+Workspace\+Int, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R $>$ \&workspace\+Int)
+\end{DoxyCompactItemize}
+
+{\bf }\par
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class \+\_\+matrix\+Owner\+Type\+Ab , class \+\_\+vector\+Owner\+Type\+X , class \+\_\+vector\+Owner\+Type\+W , class \+\_\+vector\+Owner\+Type\+Workspace , class \+\_\+vector\+Owner\+Type\+Workspace\+Int $>$ }\\\hyperlink{classnmr_n_n_l_s_dynamic_data_ab690598d21ef11158587d4aeac609bd5}{nmr\+N\+N\+L\+S\+Dynamic\+Data} (const \hyperlink{classvct_dynamic_matrix_base}{vct\+Dynamic\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type\+Ab, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&Ab, \hyperlink{classvct_dynamic_vector_base}{vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+X, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&\hyperlink{classnmr_n_n_l_s_dynamic_data_a2c67d4c5f9eff20ae015e60f85718f02}{X}, \hyperlink{classvct_dynamic_vector_base}{vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+W, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&\hyperlink{classnmr_n_n_l_s_dynamic_data_ae3204dc027313115b092088253dc4bb0}{W}, \hyperlink{classvct_dynamic_vector_base}{vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+Workspace, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&workspace, \hyperlink{classvct_dynamic_vector_base}{vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+Workspace\+Int, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R $>$ \&workspace\+Int)
+\item 
+{\footnotesize template$<$class \+\_\+matrix\+Owner\+Type\+A , class \+\_\+vector\+Owner\+Type\+B , class \+\_\+vector\+Owner\+Type\+X , class \+\_\+vector\+Owner\+Type\+W , class \+\_\+vector\+Owner\+Type\+Workspace , class \+\_\+vector\+Owner\+Type\+Workspace\+Int $>$ }\\\hyperlink{classnmr_n_n_l_s_dynamic_data_afb70abf940637543bccb9911440286c0}{nmr\+N\+N\+L\+S\+Dynamic\+Data} (const \hyperlink{classvct_dynamic_matrix_base}{vct\+Dynamic\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type\+A, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&A, const \hyperlink{classvct_dynamic_vector_base}{vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+B, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&b, \hyperlink{classvct_dynamic_vector_base}{vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+X, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&\hyperlink{classnmr_n_n_l_s_dynamic_data_a2c67d4c5f9eff20ae015e60f85718f02}{X}, \hyperlink{classvct_dynamic_vector_base}{vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+W, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&\hyperlink{classnmr_n_n_l_s_dynamic_data_ae3204dc027313115b092088253dc4bb0}{W}, \hyperlink{classvct_dynamic_vector_base}{vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+Workspace, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&workspace, \hyperlink{classvct_dynamic_vector_base}{vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+Workspace\+Int, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R $>$ \&workspace\+Int)
+\end{DoxyCompactItemize}
+
+{\bf }\par
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class \+\_\+matrix\+Owner\+Type\+Ab , class \+\_\+vector\+Owner\+Type\+X , class \+\_\+vector\+Owner\+Type\+W $>$ }\\\hyperlink{classnmr_n_n_l_s_dynamic_data_a5247373fa1b76245d661934f5b8410e7}{nmr\+N\+N\+L\+S\+Dynamic\+Data} (const \hyperlink{classvct_dynamic_matrix_base}{vct\+Dynamic\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type\+Ab, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&Ab, \hyperlink{classvct_dynamic_vector_base}{vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+X, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&\hyperlink{classnmr_n_n_l_s_dynamic_data_a2c67d4c5f9eff20ae015e60f85718f02}{X}, \hyperlink{classvct_dynamic_vector_base}{vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+W, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&\hyperlink{classnmr_n_n_l_s_dynamic_data_ae3204dc027313115b092088253dc4bb0}{W})
+\item 
+{\footnotesize template$<$class \+\_\+matrix\+Owner\+Type\+A , class \+\_\+vector\+Owner\+Type\+B , class \+\_\+vector\+Owner\+Type\+X , class \+\_\+vector\+Owner\+Type\+W $>$ }\\\hyperlink{classnmr_n_n_l_s_dynamic_data_a2fbb6dd98b0daec60d16fb32700d5a5c}{nmr\+N\+N\+L\+S\+Dynamic\+Data} (const \hyperlink{classvct_dynamic_matrix_base}{vct\+Dynamic\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type\+A, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&A, const \hyperlink{classvct_dynamic_vector_base}{vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+B, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&b, \hyperlink{classvct_dynamic_vector_base}{vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+X, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&\hyperlink{classnmr_n_n_l_s_dynamic_data_a2c67d4c5f9eff20ae015e60f85718f02}{X}, \hyperlink{classvct_dynamic_vector_base}{vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+W, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&\hyperlink{classnmr_n_n_l_s_dynamic_data_ae3204dc027313115b092088253dc4bb0}{W})
+\end{DoxyCompactItemize}
+
+{\bf }\par
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class \+\_\+matrix\+Owner\+Type\+Ab $>$ }\\void \hyperlink{classnmr_n_n_l_s_dynamic_data_aea2d755741d076fbcf78b3a67670af77}{Allocate} (const \hyperlink{classvct_dynamic_matrix_base}{vct\+Dynamic\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type\+Ab, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&Ab)
+\item 
+{\footnotesize template$<$class \+\_\+matrix\+Owner\+Type\+A , class \+\_\+vector\+Owner\+Type\+B $>$ }\\void \hyperlink{classnmr_n_n_l_s_dynamic_data_afc1c5ac57bc98058442ed98561b17f6c}{Allocate} (const \hyperlink{classvct_dynamic_matrix_base}{vct\+Dynamic\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type\+A, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&A, const \hyperlink{classvct_dynamic_vector_base}{vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+B, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&b)
+\end{DoxyCompactItemize}
+
+{\bf }\par
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class \+\_\+matrix\+Owner\+Type\+Ab , class \+\_\+vector\+Owner\+Type\+Workspace , class \+\_\+vector\+Owner\+Type\+Workspace\+Int $>$ }\\void \hyperlink{classnmr_n_n_l_s_dynamic_data_aeb25b4cee0bfbbb2dacafa03fe1b8792}{Set\+Ref\+Workspaces} (const \hyperlink{classvct_dynamic_matrix_base}{vct\+Dynamic\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type\+Ab, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&Ab, \hyperlink{classvct_dynamic_vector_base}{vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+Workspace, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&workspace, \hyperlink{classvct_dynamic_vector_base}{vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+Workspace\+Int, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R $>$ \&workspace\+Int)
+\item 
+{\footnotesize template$<$class \+\_\+matrix\+Owner\+Type\+A , class \+\_\+vector\+Owner\+Type\+B , class \+\_\+vector\+Owner\+Type\+Workspace , class \+\_\+vector\+Owner\+Type\+Workspace\+Int $>$ }\\void \hyperlink{classnmr_n_n_l_s_dynamic_data_a7e6d209d11bb6be20c6c4293679b3350}{Set\+Ref\+Workspaces} (const \hyperlink{classvct_dynamic_matrix_base}{vct\+Dynamic\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type\+A, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&A, const \hyperlink{classvct_dynamic_vector_base}{vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+B, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&b, \hyperlink{classvct_dynamic_vector_base}{vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+Workspace, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&workspace, \hyperlink{classvct_dynamic_vector_base}{vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+Workspace\+Int, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R $>$ \&workspace\+Int)
+\end{DoxyCompactItemize}
+
+{\bf }\par
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class \+\_\+matrix\+Owner\+Type\+Ab , class \+\_\+vector\+Owner\+Type\+X , class \+\_\+vector\+Owner\+Type\+W , class \+\_\+vector\+Owner\+Type\+Workspace , class \+\_\+vector\+Owner\+Type\+Workspace\+Int $>$ }\\void \hyperlink{classnmr_n_n_l_s_dynamic_data_ab32c899922b96030616bf83d5e741c55}{Set\+Ref} (const \hyperlink{classvct_dynamic_matrix_base}{vct\+Dynamic\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type\+Ab, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&Ab, \hyperlink{classvct_dynamic_vector_base}{vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+X, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&\hyperlink{classnmr_n_n_l_s_dynamic_data_a2c67d4c5f9eff20ae015e60f85718f02}{X}, \hyperlink{classvct_dynamic_vector_base}{vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+W, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&\hyperlink{classnmr_n_n_l_s_dynamic_data_ae3204dc027313115b092088253dc4bb0}{W}, \hyperlink{classvct_dynamic_vector_base}{vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+Workspace, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&workspace, \hyperlink{classvct_dynamic_vector_base}{vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+Workspace\+Int, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R $>$ \&workspace\+Int)  throw (std\+::runtime\+\_\+error)
+\item 
+{\footnotesize template$<$class \+\_\+matrix\+Owner\+Type\+A , class \+\_\+vector\+Owner\+Type\+B , class \+\_\+vector\+Owner\+Type\+X , class \+\_\+vector\+Owner\+Type\+W , class \+\_\+vector\+Owner\+Type\+Workspace , class \+\_\+vector\+Owner\+Type\+Workspace\+Int $>$ }\\void \hyperlink{classnmr_n_n_l_s_dynamic_data_a516a78c9781f58b7da602c8a4355fd97}{Set\+Ref} (const \hyperlink{classvct_dynamic_matrix_base}{vct\+Dynamic\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type\+A, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&A, const \hyperlink{classvct_dynamic_vector_base}{vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+B, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&b, \hyperlink{classvct_dynamic_vector_base}{vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+X, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&\hyperlink{classnmr_n_n_l_s_dynamic_data_a2c67d4c5f9eff20ae015e60f85718f02}{X}, \hyperlink{classvct_dynamic_vector_base}{vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+W, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&\hyperlink{classnmr_n_n_l_s_dynamic_data_ae3204dc027313115b092088253dc4bb0}{W}, \hyperlink{classvct_dynamic_vector_base}{vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+Workspace, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&workspace, \hyperlink{classvct_dynamic_vector_base}{vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+Workspace\+Int, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R $>$ \&workspace\+Int)  throw (std\+::runtime\+\_\+error)
+\end{DoxyCompactItemize}
+
+{\bf }\par
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class \+\_\+matrix\+Owner\+Type\+Ab , class \+\_\+vector\+Owner\+Type\+X , class \+\_\+vector\+Owner\+Type\+W $>$ }\\void \hyperlink{classnmr_n_n_l_s_dynamic_data_a8b4529a38e1b16bbe5f805e11a2f5560}{Set\+Ref\+Output} (const \hyperlink{classvct_dynamic_matrix_base}{vct\+Dynamic\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type\+Ab, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&Ab, \hyperlink{classvct_dynamic_vector_base}{vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+X, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&\hyperlink{classnmr_n_n_l_s_dynamic_data_a2c67d4c5f9eff20ae015e60f85718f02}{X}, \hyperlink{classvct_dynamic_vector_base}{vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+W, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&\hyperlink{classnmr_n_n_l_s_dynamic_data_ae3204dc027313115b092088253dc4bb0}{W})  throw (std\+::runtime\+\_\+error)
+\item 
+{\footnotesize template$<$class \+\_\+matrix\+Owner\+Type\+A , class \+\_\+vector\+Owner\+Type\+B , class \+\_\+vector\+Owner\+Type\+X , class \+\_\+vector\+Owner\+Type\+W $>$ }\\void \hyperlink{classnmr_n_n_l_s_dynamic_data_aa959977e6c2fc5125cdbd0947f918630}{Set\+Ref\+Output} (const \hyperlink{classvct_dynamic_matrix_base}{vct\+Dynamic\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type\+A, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&A, const \hyperlink{classvct_dynamic_matrix_base}{vct\+Dynamic\+Matrix\+Base}$<$ \+\_\+vector\+Owner\+Type\+B, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&b, \hyperlink{classvct_dynamic_vector_base}{vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+X, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&\hyperlink{classnmr_n_n_l_s_dynamic_data_a2c67d4c5f9eff20ae015e60f85718f02}{X}, \hyperlink{classvct_dynamic_vector_base}{vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+W, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&\hyperlink{classnmr_n_n_l_s_dynamic_data_ae3204dc027313115b092088253dc4bb0}{W})  throw (std\+::runtime\+\_\+error)
+\end{DoxyCompactItemize}
+
+\subsection*{Static Public Member Functions}
+{\bf }\par
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class \+\_\+matrix\+Owner\+Type\+Ab $>$ }\\static \hyperlink{classnmr_n_n_l_s_dynamic_data_aff3aaadfea66b14eac2e3e022e41b35b}{size\+\_\+type} \hyperlink{classnmr_n_n_l_s_dynamic_data_acdb443c5bfa9547c2a4f76ae90a472dc}{Workspace\+Size} (const \hyperlink{classvct_dynamic_matrix_base}{vct\+Dynamic\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type\+Ab, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&Ab)
+\item 
+{\footnotesize template$<$class \+\_\+matrix\+Owner\+Type\+A , class \+\_\+vector\+Owner\+Type\+B $>$ }\\static \hyperlink{classnmr_n_n_l_s_dynamic_data_aff3aaadfea66b14eac2e3e022e41b35b}{size\+\_\+type} \hyperlink{classnmr_n_n_l_s_dynamic_data_ae3913fd6284552bbbb4cb9503dc3effa}{Workspace\+Size} (const \hyperlink{classvct_dynamic_matrix_base}{vct\+Dynamic\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type\+A, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&A, const \hyperlink{classvct_dynamic_vector_base}{vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+B, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&b)
+\end{DoxyCompactItemize}
+
+{\bf }\par
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class \+\_\+matrix\+Owner\+Type\+Ab $>$ }\\static \hyperlink{classnmr_n_n_l_s_dynamic_data_aff3aaadfea66b14eac2e3e022e41b35b}{size\+\_\+type} \hyperlink{classnmr_n_n_l_s_dynamic_data_ae36de3c64a18859d6c2372a8749b11ca}{Workspace\+Int\+Size} (const \hyperlink{classvct_dynamic_matrix_base}{vct\+Dynamic\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type\+Ab, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&Ab)
+\item 
+{\footnotesize template$<$class \+\_\+matrix\+Owner\+Type\+A , class \+\_\+vector\+Owner\+Type\+B $>$ }\\static \hyperlink{classnmr_n_n_l_s_dynamic_data_aff3aaadfea66b14eac2e3e022e41b35b}{size\+\_\+type} \hyperlink{classnmr_n_n_l_s_dynamic_data_a56e4be818f6b6e6b63d6e97dc0a2c573}{Workspace\+Int\+Size} (const \hyperlink{classvct_dynamic_matrix_base}{vct\+Dynamic\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type\+A, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&A, const \hyperlink{classvct_dynamic_vector_base}{vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+B, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&b)
+\end{DoxyCompactItemize}
+
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classnmr_n_n_l_s_dynamic_data_a0f066c5d2f1e0e4ce62e6a3939f717fa}{Set\+Dimension} (\hyperlink{classnmr_n_n_l_s_dynamic_data_aff3aaadfea66b14eac2e3e022e41b35b}{size\+\_\+type} m, \hyperlink{classnmr_n_n_l_s_dynamic_data_aff3aaadfea66b14eac2e3e022e41b35b}{size\+\_\+type} n)
+\item 
+void \hyperlink{classnmr_n_n_l_s_dynamic_data_ad8f5bb3b4bf519c90c0de301ebb4446c}{Allocate\+Output\+Workspaces} (bool allocate\+Output, bool allocate\+Workspaces)
+\item 
+{\footnotesize template$<$class \+\_\+vector\+Owner\+Type\+X , class \+\_\+vector\+Owner\+Type\+W $>$ }\\void \hyperlink{classnmr_n_n_l_s_dynamic_data_a9afd52addff4968713a7bef19c3d2ee9}{Throw\+Unless\+Output\+Size\+Is\+Correct} (const \hyperlink{classvct_dynamic_vector_base}{vct\+Dynamic\+Vector\+Base}$<$ \+\_\+matrix\+Owner\+Type\+X, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&in\+X, const \hyperlink{classvct_dynamic_vector_base}{vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+W, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&in\+W) const   throw (std\+::runtime\+\_\+error)
+\item 
+{\footnotesize template$<$class \+\_\+vector\+Owner\+Type\+Workspace , class \+\_\+vector\+Owner\+Type\+Workspace\+Int $>$ }\\void \hyperlink{classnmr_n_n_l_s_dynamic_data_af7cbdc8ad11b1f78d967b259ca45e2b3}{Throw\+Unless\+Workspaces\+Size\+Is\+Correct} (const \hyperlink{classvct_dynamic_vector_base}{vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+Workspace, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&in\+Workspace, const \hyperlink{classvct_dynamic_vector_base}{vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+Workspace\+Int, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R $>$ \&in\+Workspace\+Int) const   throw (std\+::runtime\+\_\+error)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classvct_dynamic_vector}{vct\+Dynamic\+Vector}$<$ C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \hyperlink{classnmr_n_n_l_s_dynamic_data_ae6d19a42064425d263b7c9d06a53a9d3}{Output\+Memory}
+\item 
+\hyperlink{classvct_dynamic_matrix}{vct\+Dynamic\+Matrix}$<$ C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \hyperlink{classnmr_n_n_l_s_dynamic_data_a56c98eb38d44c00e991ada79bf44126c}{Ab\+Memory}
+\end{DoxyCompactItemize}
+{\bf }\par
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classvct_dynamic_vector}{vct\+Dynamic\+Vector}$<$ C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \hyperlink{classnmr_n_n_l_s_dynamic_data_ac03cc6fe1d222824ec55376cd45e74bb}{Workspace\+Memory}
+\item 
+\hyperlink{classvct_dynamic_vector}{vct\+Dynamic\+Vector}$<$ C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R $>$ \hyperlink{classnmr_n_n_l_s_dynamic_data_a940c5f36f32ed750f145c40d9f505444}{Workspace\+Int\+Memory}
+\end{DoxyCompactItemize}
+
+{\bf }\par
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classvct_dynamic_matrix_ref}{vct\+Dynamic\+Matrix\+Ref}$<$ C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \hyperlink{classnmr_n_n_l_s_dynamic_data_a4f8101cf60688294e18942fc6cfc697a}{Ab\+Reference}
+\item 
+\hyperlink{classvct_dynamic_matrix_ref}{vct\+Dynamic\+Matrix\+Ref}$<$ C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \hyperlink{classnmr_n_n_l_s_dynamic_data_a84ad800513b0b1b9a910aeac150742d5}{X\+Reference}
+\item 
+\hyperlink{classvct_dynamic_matrix_ref}{vct\+Dynamic\+Matrix\+Ref}$<$ C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \hyperlink{classnmr_n_n_l_s_dynamic_data_a0ba32ad64499bf28a292b08d49ee3210}{W\+Reference}
+\item 
+\hyperlink{classvct_dynamic_vector_ref}{vct\+Dynamic\+Vector\+Ref}$<$ C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \hyperlink{classnmr_n_n_l_s_dynamic_data_a1fb3e39d83099e79b997175d044f2115}{Workspace\+Reference}
+\item 
+\hyperlink{classvct_dynamic_vector_ref}{vct\+Dynamic\+Vector\+Ref}$<$ C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R $>$ \hyperlink{classnmr_n_n_l_s_dynamic_data_a34490c368a52327edc883f2dbe1a0ad5}{Workspace\+Int\+Reference}
+\end{DoxyCompactItemize}
+
+{\bf }\par
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classnmr_n_n_l_s_dynamic_data_aff3aaadfea66b14eac2e3e022e41b35b}{size\+\_\+type} \hyperlink{classnmr_n_n_l_s_dynamic_data_a764d62f5392d4ef010be7bf8b3fbcc4e}{M\+Member}
+\item 
+\hyperlink{classnmr_n_n_l_s_dynamic_data_aff3aaadfea66b14eac2e3e022e41b35b}{size\+\_\+type} \hyperlink{classnmr_n_n_l_s_dynamic_data_ab6f716705212d11032677f958736a570}{N\+Member}
+\end{DoxyCompactItemize}
+
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classnmr_n_n_l_s_dynamic_data_a7f8321d57e81bc613d5dbef3410ba70e}{Friend}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Data for N\+N\+L\+S problem (Dynamic). 
+
+--- description of problem here ---
+
+The sizes of these components must match exactly the input matrix A. To ease the use of the N\+N\+L\+S routine, the user can rely on the \hyperlink{classnmr_n_n_l_s_dynamic_data}{nmr\+N\+N\+L\+S\+Dynamic\+Data} class to perform the required memory allocation. Furthermore, the underlying Fortran routine from L\+A\+P\+A\+C\+K requires a workspace (aka a scratch space). This workspace can also be allocated by the \hyperlink{classnmr_n_n_l_s_dynamic_data}{nmr\+N\+N\+L\+S\+Dynamic\+Data}.
+
+Another good reason to use a \char`\"{}data\char`\"{} object is that the memory allocation can be performed once during an initialization phase while the function nmr\+N\+N\+L\+S can be called numerous times later on without any new dynamic memory allocation. This is crucial for such things as real time tasks.
+
+The N\+N\+L\+S routine must be used with matrices allocated column first, i.\+e. using \hyperlink{vct_forward_declarations_8h_a432cdf8923afaf82f551450ad4034746}{V\+C\+T\+\_\+\+C\+O\+L\+\_\+\+M\+A\+J\+O\+R}. Matrices and vectors must also be compact, i.\+e. use a contiguous block of memory.
+
+Any size or storage order mismatch will lead to an exception thrown (std\+::runtime\+\_\+error). Since we are using cmn\+Throw, it is possible to configure cisst (at compilation time) to abort the program instead of throwing an exception.
+
+Contrary to most \char`\"{}data\char`\"{} objects of cisst\+Numerical (see \hyperlink{classnmr_s_v_d_dynamic_data}{nmr\+S\+V\+D\+Dynamic\+Data} or \hyperlink{classnmr_l_u_dynamic_data}{nmr\+L\+U\+Dynamic\+Data}), the \char`\"{}data\char`\"{} object for N\+N\+L\+S can also be used to allocate memory for the input. So far, we have referred to the input as the couple (A, b). For efficiency reasons, the underlying Fortran routine actually bundles the matrix A and the vector b in one single matrix Ab. The class \hyperlink{classnmr_n_n_l_s_dynamic_data}{nmr\+N\+N\+L\+S\+Dynamic\+Data} allows to use either a single matrix Ab or the matrix A and the vector b separately. If one prefers to use (A, b) instead of Ab, this is possible. The programmer just has to be consistent, i.\+e. use the same input for all the \hyperlink{classnmr_n_n_l_s_dynamic_data}{nmr\+N\+N\+L\+S\+Dynamic\+Data} methods and the function \hyperlink{nmr_n_n_l_s_8h_afd1108e6bc3e5d308f34bc7b31fd3278}{nmr\+N\+N\+L\+S}. The only drawback of this approach is that everytime the function \hyperlink{nmr_n_n_l_s_8h_afd1108e6bc3e5d308f34bc7b31fd3278}{nmr\+N\+N\+L\+S} will be called, the content of A and b will be copied to a single matrix Ab compatible with the Fortran routine.
+
+The \hyperlink{classnmr_n_n_l_s_dynamic_data}{nmr\+N\+N\+L\+S\+Dynamic\+Data} class allows 4 different configurations, for each of these, Ab can be replaced by A, b\+:
+
+
+\begin{DoxyItemize}
+\item Allocate automatically everything, i.\+e. the output (X, W) as well as the workspace. This can be performed using either the constructor from input matrix (i.\+e. \hyperlink{classnmr_n_n_l_s_dynamic_data}{nmr\+N\+N\+L\+S\+Dynamic\+Data(\+Ab)}) or using the method Allocate(\+Ab).
+\item Automatically allocate the workspace but rely on user allocated X and W. The input matrix A is required to find the size of the problem. This can be performed using either the constructor from Ab, X and W (i.\+e. \hyperlink{classnmr_n_n_l_s_dynamic_data}{nmr\+N\+N\+L\+S\+Dynamic\+Data(\+Ab, X, W)}) or the method Set\+Ref\+Output(\+Ab, X, W).
+\item Automatically allocate the output but rely on user allocated workspaces. This can be useful if the user decides to create a large workspace for multiple numerical routines. The user will have to make sure his program is thread-\/safe. This can be performed using either the constructor from Ab and the workspaces (i.\+e. \hyperlink{classnmr_n_n_l_s_dynamic_data}{nmr\+N\+N\+L\+S\+Dynamic\+Data(\+Ab, workspace, workspace\+Int)}) or the method Set\+Ref\+Workspace(\+Ab, workspace, workspace\+Int). Please note that the matrix Ab is required to compute the dimension of the problem since the only requirement on the workspaces is that they must be large enough.
+\item Don\textquotesingle{}t allocate anything. The user has to provide the containers he wants to use for X, W and the workspaces. In this case, the \char`\"{}data\char`\"{} is used mostly to check that all the containers are valid in terms of size and storage order. This can be performed using either the constructor from X, W and workspaces (i.\+e. \hyperlink{classnmr_n_n_l_s_dynamic_data}{nmr\+N\+N\+L\+S\+Dynamic\+Data(\+Ab, X, W, workspace, workspace\+Int)}) or the method Set\+Ref(\+Ab, X, W, workspace, workspace\+Int).
+\end{DoxyItemize}
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{nmr_n_n_l_s_8h_afd1108e6bc3e5d308f34bc7b31fd3278}{nmr\+N\+N\+L\+S} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classnmr_n_n_l_s_dynamic_data_ab99da17071a513448294ee9a420eb4e0}{}\index{nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}!Matrix\+Size\+Type@{Matrix\+Size\+Type}}
+\index{Matrix\+Size\+Type@{Matrix\+Size\+Type}!nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}}
+\subsubsection[{Matrix\+Size\+Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf vct\+Fixed\+Size\+Vector}$<${\bf size\+\_\+type}, 2$>$ {\bf nmr\+N\+N\+L\+S\+Dynamic\+Data\+::\+Matrix\+Size\+Type}}\label{classnmr_n_n_l_s_dynamic_data_ab99da17071a513448294ee9a420eb4e0}
+\hypertarget{classnmr_n_n_l_s_dynamic_data_aff3aaadfea66b14eac2e3e022e41b35b}{}\index{nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}!size\+\_\+type@{size\+\_\+type}}
+\index{size\+\_\+type@{size\+\_\+type}!nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}}
+\subsubsection[{size\+\_\+type}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned int {\bf nmr\+N\+N\+L\+S\+Dynamic\+Data\+::size\+\_\+type}}\label{classnmr_n_n_l_s_dynamic_data_aff3aaadfea66b14eac2e3e022e41b35b}
+Type used for sizes within \hyperlink{classnmr_n_n_l_s_dynamic_data}{nmr\+N\+N\+L\+S\+Dynamic\+Data}. This type is compatible with the cisst\+Vector containers such as \hyperlink{classvct_dynamic_matrix}{vct\+Dynamic\+Matrix} and \hyperlink{classvct_dynamic_vector}{vct\+Dynamic\+Vector} (unsigned int). To call the Fortran based routines, these values must be cast to \#\+C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classnmr_n_n_l_s_dynamic_data_af5be3bf2d38fe8b32fa7a477e6cd3bff}{}\index{nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}!nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}}
+\index{nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}!nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}}
+\subsubsection[{nmr\+N\+N\+L\+S\+Dynamic\+Data}]{\setlength{\rightskip}{0pt plus 5cm}nmr\+N\+N\+L\+S\+Dynamic\+Data\+::nmr\+N\+N\+L\+S\+Dynamic\+Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classnmr_n_n_l_s_dynamic_data_af5be3bf2d38fe8b32fa7a477e6cd3bff}
+The default constuctor. For dynamic size, there are assigned default values, i.\+e. sets all the dimensions to zero. These M\+U\+S\+T be changed by calling the appropriate method.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classnmr_n_n_l_s_dynamic_data_aea2d755741d076fbcf78b3a67670af77}{nmr\+N\+N\+L\+S\+Dynamic\+Data\+::\+Allocate} \hyperlink{classnmr_n_n_l_s_dynamic_data_a8b4529a38e1b16bbe5f805e11a2f5560}{nmr\+N\+N\+L\+S\+Dynamic\+Data\+::\+Set\+Ref\+Output} nmr\+N\+N\+L\+S\+Dynamic\+Data\+::\+Set\+Ref\+Workspace \hyperlink{classnmr_n_n_l_s_dynamic_data_ab32c899922b96030616bf83d5e741c55}{nmr\+N\+N\+L\+S\+Dynamic\+Data\+::\+Set\+Ref} 
+\end{DoxySeeAlso}
+\hypertarget{classnmr_n_n_l_s_dynamic_data_ab5e89d385747b087c4861b927bf5bd43}{}\index{nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}!nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}}
+\index{nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}!nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}}
+\subsubsection[{nmr\+N\+N\+L\+S\+Dynamic\+Data}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+matrix\+Owner\+Type\+Ab $>$ nmr\+N\+N\+L\+S\+Dynamic\+Data\+::nmr\+N\+N\+L\+S\+Dynamic\+Data (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type\+Ab, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&}]{Ab}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classnmr_n_n_l_s_dynamic_data_ab5e89d385747b087c4861b927bf5bd43}
+Constructor where the user provides the input matrix to specify the size and storage order. Memory allocation is performed for the output matrices and vectors as well as workspaces. This should be used when the user doesn\textquotesingle{}t care much about where the output should be stored and doesn\textquotesingle{}t need to share the workspace between different algorithms.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classnmr_n_n_l_s_dynamic_data_aea2d755741d076fbcf78b3a67670af77}{nmr\+N\+N\+L\+S\+Dynamic\+Data\+::\+Allocate} 
+\end{DoxySeeAlso}
+\hypertarget{classnmr_n_n_l_s_dynamic_data_a7232702cec6f3a6a49061a14ceac7554}{}\index{nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}!nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}}
+\index{nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}!nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}}
+\subsubsection[{nmr\+N\+N\+L\+S\+Dynamic\+Data}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+matrix\+Owner\+Type\+A , class \+\_\+vector\+Owner\+Type\+B $>$ nmr\+N\+N\+L\+S\+Dynamic\+Data\+::nmr\+N\+N\+L\+S\+Dynamic\+Data (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type\+A, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&}]{A, }
+\item[{const {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+B, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classnmr_n_n_l_s_dynamic_data_a7232702cec6f3a6a49061a14ceac7554}
+\hypertarget{classnmr_n_n_l_s_dynamic_data_a01fdee60583ad42b751200b63afa2831}{}\index{nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}!nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}}
+\index{nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}!nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}}
+\subsubsection[{nmr\+N\+N\+L\+S\+Dynamic\+Data}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+matrix\+Owner\+Type\+Ab , class \+\_\+vector\+Owner\+Type\+Workspace , class \+\_\+vector\+Owner\+Type\+Workspace\+Int $>$ nmr\+N\+N\+L\+S\+Dynamic\+Data\+::nmr\+N\+N\+L\+S\+Dynamic\+Data (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type\+Ab, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&}]{Ab, }
+\item[{{\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+Workspace, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&}]{workspace, }
+\item[{{\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+Workspace\+Int, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R $>$ \&}]{workspace\+Int}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classnmr_n_n_l_s_dynamic_data_a01fdee60583ad42b751200b63afa2831}
+Constructor where the user provides the input matrix to specify the size and storage order. Memory allocation is performed for the output matrices and vectors only. This constructor should be used when the user cares wants to avoid allocating different workspaces for different numerical routines. Please note that since multiple routines can share the workspace, these routines must be called in a thread safe manner.
+
+\begin{DoxySeeAlso}{See also}
+nmr\+N\+N\+L\+S\+Dynamic\+Data\+::\+Set\+Ref\+Workspace 
+\end{DoxySeeAlso}
+\hypertarget{classnmr_n_n_l_s_dynamic_data_a906564c7fe53d1ff270d30252892b47d}{}\index{nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}!nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}}
+\index{nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}!nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}}
+\subsubsection[{nmr\+N\+N\+L\+S\+Dynamic\+Data}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+matrix\+Owner\+Type\+A , class \+\_\+vector\+Owner\+Type\+B , class \+\_\+vector\+Owner\+Type\+Workspace , class \+\_\+vector\+Owner\+Type\+Workspace\+Int $>$ nmr\+N\+N\+L\+S\+Dynamic\+Data\+::nmr\+N\+N\+L\+S\+Dynamic\+Data (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type\+A, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&}]{A, }
+\item[{const {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+B, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&}]{b, }
+\item[{{\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+Workspace, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&}]{workspace, }
+\item[{{\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+Workspace\+Int, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R $>$ \&}]{workspace\+Int}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classnmr_n_n_l_s_dynamic_data_a906564c7fe53d1ff270d30252892b47d}
+\hypertarget{classnmr_n_n_l_s_dynamic_data_ab690598d21ef11158587d4aeac609bd5}{}\index{nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}!nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}}
+\index{nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}!nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}}
+\subsubsection[{nmr\+N\+N\+L\+S\+Dynamic\+Data}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+matrix\+Owner\+Type\+Ab , class \+\_\+vector\+Owner\+Type\+X , class \+\_\+vector\+Owner\+Type\+W , class \+\_\+vector\+Owner\+Type\+Workspace , class \+\_\+vector\+Owner\+Type\+Workspace\+Int $>$ nmr\+N\+N\+L\+S\+Dynamic\+Data\+::nmr\+N\+N\+L\+S\+Dynamic\+Data (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type\+Ab, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&}]{Ab, }
+\item[{{\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+X, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&}]{X, }
+\item[{{\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+W, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&}]{W, }
+\item[{{\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+Workspace, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&}]{workspace, }
+\item[{{\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+Workspace\+Int, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R $>$ \&}]{workspace\+Int}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classnmr_n_n_l_s_dynamic_data_ab690598d21ef11158587d4aeac609bd5}
+Constructor where the user provides the vectors X and W as well as the workspaces. The data object now acts as a composite container to hold, pass and manipulate a convenient storage for N\+N\+L\+S algorithm. Checks are made on the validity of the input and its consitency in terms of size. Please note that since the workspace and the input are now created by the user, special attention must be given to thread safety issues.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classnmr_n_n_l_s_dynamic_data_ab32c899922b96030616bf83d5e741c55}{nmr\+N\+N\+L\+S\+Dynamic\+Data\+::\+Set\+Ref} 
+\end{DoxySeeAlso}
+\hypertarget{classnmr_n_n_l_s_dynamic_data_afb70abf940637543bccb9911440286c0}{}\index{nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}!nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}}
+\index{nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}!nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}}
+\subsubsection[{nmr\+N\+N\+L\+S\+Dynamic\+Data}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+matrix\+Owner\+Type\+A , class \+\_\+vector\+Owner\+Type\+B , class \+\_\+vector\+Owner\+Type\+X , class \+\_\+vector\+Owner\+Type\+W , class \+\_\+vector\+Owner\+Type\+Workspace , class \+\_\+vector\+Owner\+Type\+Workspace\+Int $>$ nmr\+N\+N\+L\+S\+Dynamic\+Data\+::nmr\+N\+N\+L\+S\+Dynamic\+Data (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type\+A, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&}]{A, }
+\item[{const {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+B, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&}]{b, }
+\item[{{\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+X, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&}]{X, }
+\item[{{\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+W, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&}]{W, }
+\item[{{\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+Workspace, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&}]{workspace, }
+\item[{{\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+Workspace\+Int, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R $>$ \&}]{workspace\+Int}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classnmr_n_n_l_s_dynamic_data_afb70abf940637543bccb9911440286c0}
+\hypertarget{classnmr_n_n_l_s_dynamic_data_a5247373fa1b76245d661934f5b8410e7}{}\index{nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}!nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}}
+\index{nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}!nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}}
+\subsubsection[{nmr\+N\+N\+L\+S\+Dynamic\+Data}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+matrix\+Owner\+Type\+Ab , class \+\_\+vector\+Owner\+Type\+X , class \+\_\+vector\+Owner\+Type\+W $>$ nmr\+N\+N\+L\+S\+Dynamic\+Data\+::nmr\+N\+N\+L\+S\+Dynamic\+Data (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type\+Ab, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&}]{Ab, }
+\item[{{\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+X, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&}]{X, }
+\item[{{\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+W, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&}]{W}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classnmr_n_n_l_s_dynamic_data_a5247373fa1b76245d661934f5b8410e7}
+Constructor where the user provides the vectors X and W. The workspaces will be allocated and managed by the \char`\"{}data\char`\"{}. This constructor should be used when the user already has a storage for the data but doesn\textquotesingle{}t care much about the workspace.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classnmr_n_n_l_s_dynamic_data_a8b4529a38e1b16bbe5f805e11a2f5560}{nmr\+N\+N\+L\+S\+Dynamic\+Data\+::\+Set\+Ref\+Output} 
+\end{DoxySeeAlso}
+\hypertarget{classnmr_n_n_l_s_dynamic_data_a2fbb6dd98b0daec60d16fb32700d5a5c}{}\index{nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}!nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}}
+\index{nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}!nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}}
+\subsubsection[{nmr\+N\+N\+L\+S\+Dynamic\+Data}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+matrix\+Owner\+Type\+A , class \+\_\+vector\+Owner\+Type\+B , class \+\_\+vector\+Owner\+Type\+X , class \+\_\+vector\+Owner\+Type\+W $>$ nmr\+N\+N\+L\+S\+Dynamic\+Data\+::nmr\+N\+N\+L\+S\+Dynamic\+Data (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type\+A, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&}]{A, }
+\item[{const {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+B, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&}]{b, }
+\item[{{\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+X, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&}]{X, }
+\item[{{\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+W, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&}]{W}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classnmr_n_n_l_s_dynamic_data_a2fbb6dd98b0daec60d16fb32700d5a5c}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classnmr_n_n_l_s_dynamic_data_aea2d755741d076fbcf78b3a67670af77}{}\index{nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}!Allocate@{Allocate}}
+\index{Allocate@{Allocate}!nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}}
+\subsubsection[{Allocate}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+matrix\+Owner\+Type\+Ab $>$ void nmr\+N\+N\+L\+S\+Dynamic\+Data\+::\+Allocate (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type\+Ab, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&}]{Ab}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classnmr_n_n_l_s_dynamic_data_aea2d755741d076fbcf78b3a67670af77}
+This method allocates memory for the output vectors as well as the workspace. The input matrix is used only to determine the size of the problem.
+
+This method should be called before the \hyperlink{classnmr_n_n_l_s_dynamic_data}{nmr\+N\+N\+L\+S\+Dynamic\+Data} object is passed on to nmr\+N\+N\+L\+S function. \hypertarget{classnmr_n_n_l_s_dynamic_data_afc1c5ac57bc98058442ed98561b17f6c}{}\index{nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}!Allocate@{Allocate}}
+\index{Allocate@{Allocate}!nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}}
+\subsubsection[{Allocate}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+matrix\+Owner\+Type\+A , class \+\_\+vector\+Owner\+Type\+B $>$ void nmr\+N\+N\+L\+S\+Dynamic\+Data\+::\+Allocate (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type\+A, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&}]{A, }
+\item[{const {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+B, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classnmr_n_n_l_s_dynamic_data_afc1c5ac57bc98058442ed98561b17f6c}
+\hypertarget{classnmr_n_n_l_s_dynamic_data_ad8f5bb3b4bf519c90c0de301ebb4446c}{}\index{nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}!Allocate\+Output\+Workspaces@{Allocate\+Output\+Workspaces}}
+\index{Allocate\+Output\+Workspaces@{Allocate\+Output\+Workspaces}!nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}}
+\subsubsection[{Allocate\+Output\+Workspaces}]{\setlength{\rightskip}{0pt plus 5cm}void nmr\+N\+N\+L\+S\+Dynamic\+Data\+::\+Allocate\+Output\+Workspaces (
+\begin{DoxyParamCaption}
+\item[{bool}]{allocate\+Output, }
+\item[{bool}]{allocate\+Workspaces}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\label{classnmr_n_n_l_s_dynamic_data_ad8f5bb3b4bf519c90c0de301ebb4446c}
+Private method to allocate memory for the output and the workspaces if needed. This method assumes that the dimension m and n are already set. It is important to use this method in all the methods provided in the user A\+P\+I, even if all the memory is provided by the user since this method will ensure that the \char`\"{}data\char`\"{} (\hyperlink{classnmr_n_n_l_s_dynamic_data}{nmr\+N\+N\+L\+S\+Dynamic\+Data}) does not keep any memory allocated. This is for the case where a single \char`\"{}data\char`\"{} is used first to allocate everything and, later on, used with user allocated memory (for either the workspace or the output).
+
+\begin{DoxyNote}{Note}
+The method Set\+Dimension must have been called before. 
+\end{DoxyNote}
+\hypertarget{classnmr_n_n_l_s_dynamic_data_a0f066c5d2f1e0e4ce62e6a3939f717fa}{}\index{nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}!Set\+Dimension@{Set\+Dimension}}
+\index{Set\+Dimension@{Set\+Dimension}!nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}}
+\subsubsection[{Set\+Dimension}]{\setlength{\rightskip}{0pt plus 5cm}void nmr\+N\+N\+L\+S\+Dynamic\+Data\+::\+Set\+Dimension (
+\begin{DoxyParamCaption}
+\item[{{\bf size\+\_\+type}}]{m, }
+\item[{{\bf size\+\_\+type}}]{n}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\label{classnmr_n_n_l_s_dynamic_data_a0f066c5d2f1e0e4ce62e6a3939f717fa}
+Private method to set the data members M\+Member and N\+Member. This method must be called before Allocate\+Output\+Workspace, Throw\+Unless\+Output\+Size\+Is\+Correct or Throw\+Unless\+Workspace\+Size\+Is\+Correct. \hypertarget{classnmr_n_n_l_s_dynamic_data_ab32c899922b96030616bf83d5e741c55}{}\index{nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}!Set\+Ref@{Set\+Ref}}
+\index{Set\+Ref@{Set\+Ref}!nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}}
+\subsubsection[{Set\+Ref}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+matrix\+Owner\+Type\+Ab , class \+\_\+vector\+Owner\+Type\+X , class \+\_\+vector\+Owner\+Type\+W , class \+\_\+vector\+Owner\+Type\+Workspace , class \+\_\+vector\+Owner\+Type\+Workspace\+Int $>$ void nmr\+N\+N\+L\+S\+Dynamic\+Data\+::\+Set\+Ref (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type\+Ab, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&}]{Ab, }
+\item[{{\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+X, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&}]{X, }
+\item[{{\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+W, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&}]{W, }
+\item[{{\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+Workspace, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&}]{workspace, }
+\item[{{\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+Workspace\+Int, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R $>$ \&}]{workspace\+Int}
+\end{DoxyParamCaption}
+) throw  std\+::runtime\+\_\+error) \hspace{0.3cm}{\ttfamily [inline]}}\label{classnmr_n_n_l_s_dynamic_data_ab32c899922b96030616bf83d5e741c55}
+This method doesn\textquotesingle{}t allocate any memory as it relies on user provided vectors for the output as well as the workspaces.
+
+The data object now acts as a composite container to hold, pass and manipulate a convenient storage for N\+N\+L\+S algorithm. The method tests that all the containers provided by the user have the correct size and are compact. \hypertarget{classnmr_n_n_l_s_dynamic_data_a516a78c9781f58b7da602c8a4355fd97}{}\index{nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}!Set\+Ref@{Set\+Ref}}
+\index{Set\+Ref@{Set\+Ref}!nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}}
+\subsubsection[{Set\+Ref}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+matrix\+Owner\+Type\+A , class \+\_\+vector\+Owner\+Type\+B , class \+\_\+vector\+Owner\+Type\+X , class \+\_\+vector\+Owner\+Type\+W , class \+\_\+vector\+Owner\+Type\+Workspace , class \+\_\+vector\+Owner\+Type\+Workspace\+Int $>$ void nmr\+N\+N\+L\+S\+Dynamic\+Data\+::\+Set\+Ref (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type\+A, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&}]{A, }
+\item[{const {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+B, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&}]{b, }
+\item[{{\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+X, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&}]{X, }
+\item[{{\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+W, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&}]{W, }
+\item[{{\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+Workspace, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&}]{workspace, }
+\item[{{\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+Workspace\+Int, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R $>$ \&}]{workspace\+Int}
+\end{DoxyParamCaption}
+) throw  std\+::runtime\+\_\+error) \hspace{0.3cm}{\ttfamily [inline]}}\label{classnmr_n_n_l_s_dynamic_data_a516a78c9781f58b7da602c8a4355fd97}
+\hypertarget{classnmr_n_n_l_s_dynamic_data_a8b4529a38e1b16bbe5f805e11a2f5560}{}\index{nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}!Set\+Ref\+Output@{Set\+Ref\+Output}}
+\index{Set\+Ref\+Output@{Set\+Ref\+Output}!nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}}
+\subsubsection[{Set\+Ref\+Output}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+matrix\+Owner\+Type\+Ab , class \+\_\+vector\+Owner\+Type\+X , class \+\_\+vector\+Owner\+Type\+W $>$ void nmr\+N\+N\+L\+S\+Dynamic\+Data\+::\+Set\+Ref\+Output (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type\+Ab, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&}]{Ab, }
+\item[{{\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+X, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&}]{X, }
+\item[{{\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+W, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&}]{W}
+\end{DoxyParamCaption}
+) throw  std\+::runtime\+\_\+error) \hspace{0.3cm}{\ttfamily [inline]}}\label{classnmr_n_n_l_s_dynamic_data_a8b4529a38e1b16bbe5f805e11a2f5560}
+This method allocates the memory for the workspaces. The output memory is provided by the user. The method computes the size of the problem based on the user provided output and verifies that the output components (X and W) are consistent with respect to their size. \hypertarget{classnmr_n_n_l_s_dynamic_data_aa959977e6c2fc5125cdbd0947f918630}{}\index{nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}!Set\+Ref\+Output@{Set\+Ref\+Output}}
+\index{Set\+Ref\+Output@{Set\+Ref\+Output}!nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}}
+\subsubsection[{Set\+Ref\+Output}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+matrix\+Owner\+Type\+A , class \+\_\+vector\+Owner\+Type\+B , class \+\_\+vector\+Owner\+Type\+X , class \+\_\+vector\+Owner\+Type\+W $>$ void nmr\+N\+N\+L\+S\+Dynamic\+Data\+::\+Set\+Ref\+Output (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type\+A, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&}]{A, }
+\item[{const {\bf vct\+Dynamic\+Matrix\+Base}$<$ \+\_\+vector\+Owner\+Type\+B, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&}]{b, }
+\item[{{\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+X, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&}]{X, }
+\item[{{\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+W, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&}]{W}
+\end{DoxyParamCaption}
+) throw  std\+::runtime\+\_\+error) \hspace{0.3cm}{\ttfamily [inline]}}\label{classnmr_n_n_l_s_dynamic_data_aa959977e6c2fc5125cdbd0947f918630}
+\hypertarget{classnmr_n_n_l_s_dynamic_data_aeb25b4cee0bfbbb2dacafa03fe1b8792}{}\index{nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}!Set\+Ref\+Workspaces@{Set\+Ref\+Workspaces}}
+\index{Set\+Ref\+Workspaces@{Set\+Ref\+Workspaces}!nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}}
+\subsubsection[{Set\+Ref\+Workspaces}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+matrix\+Owner\+Type\+Ab , class \+\_\+vector\+Owner\+Type\+Workspace , class \+\_\+vector\+Owner\+Type\+Workspace\+Int $>$ void nmr\+N\+N\+L\+S\+Dynamic\+Data\+::\+Set\+Ref\+Workspaces (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type\+Ab, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&}]{Ab, }
+\item[{{\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+Workspace, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&}]{workspace, }
+\item[{{\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+Workspace\+Int, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R $>$ \&}]{workspace\+Int}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classnmr_n_n_l_s_dynamic_data_aeb25b4cee0bfbbb2dacafa03fe1b8792}
+This method allocates the memory for the output vectors and uses the memory provided by user for workspaces. The input matrix A is used to determine the size of the problem.
+
+This method verifies that the workspaces provided by the user is large enough and is compact. \hypertarget{classnmr_n_n_l_s_dynamic_data_a7e6d209d11bb6be20c6c4293679b3350}{}\index{nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}!Set\+Ref\+Workspaces@{Set\+Ref\+Workspaces}}
+\index{Set\+Ref\+Workspaces@{Set\+Ref\+Workspaces}!nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}}
+\subsubsection[{Set\+Ref\+Workspaces}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+matrix\+Owner\+Type\+A , class \+\_\+vector\+Owner\+Type\+B , class \+\_\+vector\+Owner\+Type\+Workspace , class \+\_\+vector\+Owner\+Type\+Workspace\+Int $>$ void nmr\+N\+N\+L\+S\+Dynamic\+Data\+::\+Set\+Ref\+Workspaces (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type\+A, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&}]{A, }
+\item[{const {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+B, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&}]{b, }
+\item[{{\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+Workspace, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&}]{workspace, }
+\item[{{\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+Workspace\+Int, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R $>$ \&}]{workspace\+Int}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classnmr_n_n_l_s_dynamic_data_a7e6d209d11bb6be20c6c4293679b3350}
+\hypertarget{classnmr_n_n_l_s_dynamic_data_a9afd52addff4968713a7bef19c3d2ee9}{}\index{nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}!Throw\+Unless\+Output\+Size\+Is\+Correct@{Throw\+Unless\+Output\+Size\+Is\+Correct}}
+\index{Throw\+Unless\+Output\+Size\+Is\+Correct@{Throw\+Unless\+Output\+Size\+Is\+Correct}!nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}}
+\subsubsection[{Throw\+Unless\+Output\+Size\+Is\+Correct}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type\+X , class \+\_\+vector\+Owner\+Type\+W $>$ void nmr\+N\+N\+L\+S\+Dynamic\+Data\+::\+Throw\+Unless\+Output\+Size\+Is\+Correct (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+matrix\+Owner\+Type\+X, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&}]{in\+X, }
+\item[{const {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+W, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&}]{in\+W}
+\end{DoxyParamCaption}
+) const throw  std\+::runtime\+\_\+error) \hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\label{classnmr_n_n_l_s_dynamic_data_a9afd52addff4968713a7bef19c3d2ee9}
+Verifies that the user provided references for the output match the size of the \char`\"{}data\char`\"{} as set by Set\+Dimension. This method also checks that the storage orders are consistent across the provided matrices and that all containers are compact.
+
+\begin{DoxyNote}{Note}
+The method Set\+Dimension must have been called before. 
+\end{DoxyNote}
+\hypertarget{classnmr_n_n_l_s_dynamic_data_af7cbdc8ad11b1f78d967b259ca45e2b3}{}\index{nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}!Throw\+Unless\+Workspaces\+Size\+Is\+Correct@{Throw\+Unless\+Workspaces\+Size\+Is\+Correct}}
+\index{Throw\+Unless\+Workspaces\+Size\+Is\+Correct@{Throw\+Unless\+Workspaces\+Size\+Is\+Correct}!nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}}
+\subsubsection[{Throw\+Unless\+Workspaces\+Size\+Is\+Correct}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type\+Workspace , class \+\_\+vector\+Owner\+Type\+Workspace\+Int $>$ void nmr\+N\+N\+L\+S\+Dynamic\+Data\+::\+Throw\+Unless\+Workspaces\+Size\+Is\+Correct (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+Workspace, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&}]{in\+Workspace, }
+\item[{const {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+Workspace\+Int, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R $>$ \&}]{in\+Workspace\+Int}
+\end{DoxyParamCaption}
+) const throw  std\+::runtime\+\_\+error) \hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\label{classnmr_n_n_l_s_dynamic_data_af7cbdc8ad11b1f78d967b259ca45e2b3}
+Verifies that the user provided references for the workspaces match (or is greated than) the size of the \char`\"{}data\char`\"{} as set by Set\+Dimension. This method also checks that the workspaces are compact.
+
+\begin{DoxyNote}{Note}
+The method Set\+Dimension must have been called before. 
+\end{DoxyNote}
+\hypertarget{classnmr_n_n_l_s_dynamic_data_ae3204dc027313115b092088253dc4bb0}{}\index{nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}!W@{W}}
+\index{W@{W}!nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}}
+\subsubsection[{W}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf vct\+Dynamic\+Vector\+Ref}$<$C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E$>$\& nmr\+N\+N\+L\+S\+Dynamic\+Data\+::\+W (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classnmr_n_n_l_s_dynamic_data_ae3204dc027313115b092088253dc4bb0}
+Const reference to the result vector W (dual). This method must be called after the data has been computed by the nmr\+N\+N\+L\+S function. \hypertarget{classnmr_n_n_l_s_dynamic_data_ae36de3c64a18859d6c2372a8749b11ca}{}\index{nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}!Workspace\+Int\+Size@{Workspace\+Int\+Size}}
+\index{Workspace\+Int\+Size@{Workspace\+Int\+Size}!nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}}
+\subsubsection[{Workspace\+Int\+Size}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+matrix\+Owner\+Type\+Ab $>$ static {\bf size\+\_\+type} nmr\+N\+N\+L\+S\+Dynamic\+Data\+::\+Workspace\+Int\+Size (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type\+Ab, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&}]{Ab}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classnmr_n_n_l_s_dynamic_data_ae36de3c64a18859d6c2372a8749b11ca}
+Helper method to determine the minimum integer working space required by N\+N\+L\+S routine. \hypertarget{classnmr_n_n_l_s_dynamic_data_a56e4be818f6b6e6b63d6e97dc0a2c573}{}\index{nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}!Workspace\+Int\+Size@{Workspace\+Int\+Size}}
+\index{Workspace\+Int\+Size@{Workspace\+Int\+Size}!nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}}
+\subsubsection[{Workspace\+Int\+Size}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+matrix\+Owner\+Type\+A , class \+\_\+vector\+Owner\+Type\+B $>$ static {\bf size\+\_\+type} nmr\+N\+N\+L\+S\+Dynamic\+Data\+::\+Workspace\+Int\+Size (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type\+A, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&}]{A, }
+\item[{const {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+B, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classnmr_n_n_l_s_dynamic_data_a56e4be818f6b6e6b63d6e97dc0a2c573}
+\hypertarget{classnmr_n_n_l_s_dynamic_data_acdb443c5bfa9547c2a4f76ae90a472dc}{}\index{nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}!Workspace\+Size@{Workspace\+Size}}
+\index{Workspace\+Size@{Workspace\+Size}!nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}}
+\subsubsection[{Workspace\+Size}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+matrix\+Owner\+Type\+Ab $>$ static {\bf size\+\_\+type} nmr\+N\+N\+L\+S\+Dynamic\+Data\+::\+Workspace\+Size (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type\+Ab, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&}]{Ab}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classnmr_n_n_l_s_dynamic_data_acdb443c5bfa9547c2a4f76ae90a472dc}
+Helper method to determine the minimum working space required by N\+N\+L\+S routine. \hypertarget{classnmr_n_n_l_s_dynamic_data_ae3913fd6284552bbbb4cb9503dc3effa}{}\index{nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}!Workspace\+Size@{Workspace\+Size}}
+\index{Workspace\+Size@{Workspace\+Size}!nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}}
+\subsubsection[{Workspace\+Size}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+matrix\+Owner\+Type\+A , class \+\_\+vector\+Owner\+Type\+B $>$ static {\bf size\+\_\+type} nmr\+N\+N\+L\+S\+Dynamic\+Data\+::\+Workspace\+Size (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type\+A, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&}]{A, }
+\item[{const {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+B, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classnmr_n_n_l_s_dynamic_data_ae3913fd6284552bbbb4cb9503dc3effa}
+\hypertarget{classnmr_n_n_l_s_dynamic_data_a2c67d4c5f9eff20ae015e60f85718f02}{}\index{nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}!X@{X}}
+\index{X@{X}!nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}}
+\subsubsection[{X}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf vct\+Dynamic\+Vector\+Ref}$<$C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E$>$\& nmr\+N\+N\+L\+S\+Dynamic\+Data\+::\+X (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classnmr_n_n_l_s_dynamic_data_a2c67d4c5f9eff20ae015e60f85718f02}
+Const reference to the result vector X. This method must be called after the data has been computed by the nmr\+N\+N\+L\+S function. 
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classnmr_n_n_l_s_dynamic_data_a7f8321d57e81bc613d5dbef3410ba70e}{}\index{nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}!Friend@{Friend}}
+\index{Friend@{Friend}!nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}}
+\subsubsection[{Friend}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf Friend}\hspace{0.3cm}{\ttfamily [friend]}}\label{classnmr_n_n_l_s_dynamic_data_a7f8321d57e81bc613d5dbef3410ba70e}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classnmr_n_n_l_s_dynamic_data_a56c98eb38d44c00e991ada79bf44126c}{}\index{nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}!Ab\+Memory@{Ab\+Memory}}
+\index{Ab\+Memory@{Ab\+Memory}!nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}}
+\subsubsection[{Ab\+Memory}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Dynamic\+Matrix}$<$C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E$>$ nmr\+N\+N\+L\+S\+Dynamic\+Data\+::\+Ab\+Memory\hspace{0.3cm}{\ttfamily [protected]}}\label{classnmr_n_n_l_s_dynamic_data_a56c98eb38d44c00e991ada79bf44126c}
+Memory allocated for the input. This is used only if the user provides separate A and b and the class needs to copy them in the single matrix Ab. \hypertarget{classnmr_n_n_l_s_dynamic_data_a4f8101cf60688294e18942fc6cfc697a}{}\index{nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}!Ab\+Reference@{Ab\+Reference}}
+\index{Ab\+Reference@{Ab\+Reference}!nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}}
+\subsubsection[{Ab\+Reference}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Dynamic\+Matrix\+Ref}$<$C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E$>$ nmr\+N\+N\+L\+S\+Dynamic\+Data\+::\+Ab\+Reference\hspace{0.3cm}{\ttfamily [protected]}}\label{classnmr_n_n_l_s_dynamic_data_a4f8101cf60688294e18942fc6cfc697a}
+References to workspaces or return containers, these point either to user allocated memory or our memory chunks if needed. \hypertarget{classnmr_n_n_l_s_dynamic_data_a764d62f5392d4ef010be7bf8b3fbcc4e}{}\index{nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}!M\+Member@{M\+Member}}
+\index{M\+Member@{M\+Member}!nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}}
+\subsubsection[{M\+Member}]{\setlength{\rightskip}{0pt plus 5cm}{\bf size\+\_\+type} nmr\+N\+N\+L\+S\+Dynamic\+Data\+::\+M\+Member\hspace{0.3cm}{\ttfamily [protected]}}\label{classnmr_n_n_l_s_dynamic_data_a764d62f5392d4ef010be7bf8b3fbcc4e}
+Store M, N which are needed to check if input matrix passed to solve method matches the allocated size. \hypertarget{classnmr_n_n_l_s_dynamic_data_ab6f716705212d11032677f958736a570}{}\index{nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}!N\+Member@{N\+Member}}
+\index{N\+Member@{N\+Member}!nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}}
+\subsubsection[{N\+Member}]{\setlength{\rightskip}{0pt plus 5cm}{\bf size\+\_\+type} nmr\+N\+N\+L\+S\+Dynamic\+Data\+::\+N\+Member\hspace{0.3cm}{\ttfamily [protected]}}\label{classnmr_n_n_l_s_dynamic_data_ab6f716705212d11032677f958736a570}
+\hypertarget{classnmr_n_n_l_s_dynamic_data_ae6d19a42064425d263b7c9d06a53a9d3}{}\index{nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}!Output\+Memory@{Output\+Memory}}
+\index{Output\+Memory@{Output\+Memory}!nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}}
+\subsubsection[{Output\+Memory}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Dynamic\+Vector}$<$C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E$>$ nmr\+N\+N\+L\+S\+Dynamic\+Data\+::\+Output\+Memory\hspace{0.3cm}{\ttfamily [protected]}}\label{classnmr_n_n_l_s_dynamic_data_ae6d19a42064425d263b7c9d06a53a9d3}
+Memory allocated for vector X and W if needed. This method allocates a single block of memory for these 2 containers; m elements of X followed by n elements of W. \hypertarget{classnmr_n_n_l_s_dynamic_data_a940c5f36f32ed750f145c40d9f505444}{}\index{nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}!Workspace\+Int\+Memory@{Workspace\+Int\+Memory}}
+\index{Workspace\+Int\+Memory@{Workspace\+Int\+Memory}!nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}}
+\subsubsection[{Workspace\+Int\+Memory}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Dynamic\+Vector}$<$C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R$>$ nmr\+N\+N\+L\+S\+Dynamic\+Data\+::\+Workspace\+Int\+Memory\hspace{0.3cm}{\ttfamily [protected]}}\label{classnmr_n_n_l_s_dynamic_data_a940c5f36f32ed750f145c40d9f505444}
+\hypertarget{classnmr_n_n_l_s_dynamic_data_a34490c368a52327edc883f2dbe1a0ad5}{}\index{nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}!Workspace\+Int\+Reference@{Workspace\+Int\+Reference}}
+\index{Workspace\+Int\+Reference@{Workspace\+Int\+Reference}!nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}}
+\subsubsection[{Workspace\+Int\+Reference}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Dynamic\+Vector\+Ref}$<$C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R$>$ nmr\+N\+N\+L\+S\+Dynamic\+Data\+::\+Workspace\+Int\+Reference\hspace{0.3cm}{\ttfamily [protected]}}\label{classnmr_n_n_l_s_dynamic_data_a34490c368a52327edc883f2dbe1a0ad5}
+\hypertarget{classnmr_n_n_l_s_dynamic_data_ac03cc6fe1d222824ec55376cd45e74bb}{}\index{nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}!Workspace\+Memory@{Workspace\+Memory}}
+\index{Workspace\+Memory@{Workspace\+Memory}!nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}}
+\subsubsection[{Workspace\+Memory}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Dynamic\+Vector}$<$C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E$>$ nmr\+N\+N\+L\+S\+Dynamic\+Data\+::\+Workspace\+Memory\hspace{0.3cm}{\ttfamily [protected]}}\label{classnmr_n_n_l_s_dynamic_data_ac03cc6fe1d222824ec55376cd45e74bb}
+Memory allocated for Workspace vectors if needed. \hypertarget{classnmr_n_n_l_s_dynamic_data_a1fb3e39d83099e79b997175d044f2115}{}\index{nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}!Workspace\+Reference@{Workspace\+Reference}}
+\index{Workspace\+Reference@{Workspace\+Reference}!nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}}
+\subsubsection[{Workspace\+Reference}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Dynamic\+Vector\+Ref}$<$C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E$>$ nmr\+N\+N\+L\+S\+Dynamic\+Data\+::\+Workspace\+Reference\hspace{0.3cm}{\ttfamily [protected]}}\label{classnmr_n_n_l_s_dynamic_data_a1fb3e39d83099e79b997175d044f2115}
+\hypertarget{classnmr_n_n_l_s_dynamic_data_a0ba32ad64499bf28a292b08d49ee3210}{}\index{nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}!W\+Reference@{W\+Reference}}
+\index{W\+Reference@{W\+Reference}!nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}}
+\subsubsection[{W\+Reference}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Dynamic\+Matrix\+Ref}$<$C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E$>$ nmr\+N\+N\+L\+S\+Dynamic\+Data\+::\+W\+Reference\hspace{0.3cm}{\ttfamily [protected]}}\label{classnmr_n_n_l_s_dynamic_data_a0ba32ad64499bf28a292b08d49ee3210}
+\hypertarget{classnmr_n_n_l_s_dynamic_data_a84ad800513b0b1b9a910aeac150742d5}{}\index{nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}!X\+Reference@{X\+Reference}}
+\index{X\+Reference@{X\+Reference}!nmr\+N\+N\+L\+S\+Dynamic\+Data@{nmr\+N\+N\+L\+S\+Dynamic\+Data}}
+\subsubsection[{X\+Reference}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Dynamic\+Matrix\+Ref}$<$C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E$>$ nmr\+N\+N\+L\+S\+Dynamic\+Data\+::\+X\+Reference\hspace{0.3cm}{\ttfamily [protected]}}\label{classnmr_n_n_l_s_dynamic_data_a84ad800513b0b1b9a910aeac150742d5}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Numerical/\hyperlink{nmr_n_n_l_s_8h}{nmr\+N\+N\+L\+S.\+h}\end{DoxyCompactItemize}

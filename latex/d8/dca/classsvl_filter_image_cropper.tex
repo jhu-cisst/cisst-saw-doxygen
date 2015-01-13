@@ -1,0 +1,173 @@
+\hypertarget{classsvl_filter_image_cropper}{}\section{svl\+Filter\+Image\+Cropper Class Reference}
+\label{classsvl_filter_image_cropper}\index{svl\+Filter\+Image\+Cropper@{svl\+Filter\+Image\+Cropper}}
+
+
+{\ttfamily \#include $<$svl\+Filter\+Image\+Cropper.\+h$>$}
+
+Inheritance diagram for svl\+Filter\+Image\+Cropper\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{d8/dca/classsvl_filter_image_cropper}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsvl_filter_image_cropper_a6dd807a3fbbe812f87378965fe3dd957}{svl\+Filter\+Image\+Cropper} ()
+\item 
+virtual \hyperlink{classsvl_filter_image_cropper_a37e10afabb4b758c7e0c91ac7b90fe49}{$\sim$svl\+Filter\+Image\+Cropper} ()
+\item 
+int \hyperlink{classsvl_filter_image_cropper_af00bdbf2b6638453aeeefa41b58bdba1}{Set\+Rectangle} (int left, int top, int right, int bottom, unsigned int videoch=\hyperlink{svl_definitions_8h_ab9fec7615f19c8df2919eebcab0b187f}{S\+V\+L\+\_\+\+L\+E\+F\+T})
+\item 
+int \hyperlink{classsvl_filter_image_cropper_af26e9acc8c27b2835c0e28cc4dee4278}{Set\+Rectangle} (const \hyperlink{structsvl_rect}{svl\+Rect} \&rect, unsigned int videoch=\hyperlink{svl_definitions_8h_ab9fec7615f19c8df2919eebcab0b187f}{S\+V\+L\+\_\+\+L\+E\+F\+T})
+\item 
+int \hyperlink{classsvl_filter_image_cropper_a05b129a4e6aca2c476e02cf7ca94eaca}{Set\+Corner} (int x, int y, unsigned int videoch=\hyperlink{svl_definitions_8h_ab9fec7615f19c8df2919eebcab0b187f}{S\+V\+L\+\_\+\+L\+E\+F\+T})
+\item 
+int \hyperlink{classsvl_filter_image_cropper_a18b59d8470e71f016ec46fbc1e688ecc}{Set\+Center} (int x, int y, unsigned int videoch=\hyperlink{svl_definitions_8h_ab9fec7615f19c8df2919eebcab0b187f}{S\+V\+L\+\_\+\+L\+E\+F\+T})
+\item 
+\hyperlink{structsvl_rect}{svl\+Rect} \hyperlink{classsvl_filter_image_cropper_a208c25e5185018761ba7412eaa67a876}{Get\+Rectangle} (unsigned int videoch=\hyperlink{svl_definitions_8h_ab9fec7615f19c8df2919eebcab0b187f}{S\+V\+L\+\_\+\+L\+E\+F\+T})
+\item 
+virtual int \hyperlink{classsvl_filter_image_cropper_a77e4d5b382b25768300adb7d4ed139d7}{On\+Change\+Center} (int x, int y, unsigned int videoch=\hyperlink{svl_definitions_8h_ab9fec7615f19c8df2919eebcab0b187f}{S\+V\+L\+\_\+\+L\+E\+F\+T})
+\item 
+virtual int \hyperlink{classsvl_filter_image_cropper_a637afb41415c13dfe6c5a8fdebc7656f}{On\+Change\+Center\+Rect} (const \hyperlink{structsvl_rect}{svl\+Rect} \&rect, unsigned int videoch=\hyperlink{svl_definitions_8h_ab9fec7615f19c8df2919eebcab0b187f}{S\+V\+L\+\_\+\+L\+E\+F\+T})
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual int \hyperlink{classsvl_filter_image_cropper_a02a3cffd12fb0348dce6ffb8a29a631d}{Initialize} (\hyperlink{classsvl_sample}{svl\+Sample} $\ast$sync\+Input, \hyperlink{classsvl_sample}{svl\+Sample} $\ast$\&sync\+Output)
+\item 
+virtual int \hyperlink{classsvl_filter_image_cropper_a50511201c4984c5f646c25571617f034}{Process} (\hyperlink{structsvl_proc_info}{svl\+Proc\+Info} $\ast$proc\+Info, \hyperlink{classsvl_sample}{svl\+Sample} $\ast$sync\+Input, \hyperlink{classsvl_sample}{svl\+Sample} $\ast$\&sync\+Output)
+\item 
+virtual int \hyperlink{classsvl_filter_image_cropper_ad9d95cf465b4c837a1a99b738a11949b}{Release} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classsvl_filter_image_cropper_a6dd807a3fbbe812f87378965fe3dd957}{}\index{svl\+Filter\+Image\+Cropper@{svl\+Filter\+Image\+Cropper}!svl\+Filter\+Image\+Cropper@{svl\+Filter\+Image\+Cropper}}
+\index{svl\+Filter\+Image\+Cropper@{svl\+Filter\+Image\+Cropper}!svl\+Filter\+Image\+Cropper@{svl\+Filter\+Image\+Cropper}}
+\subsubsection[{svl\+Filter\+Image\+Cropper}]{\setlength{\rightskip}{0pt plus 5cm}svl\+Filter\+Image\+Cropper\+::svl\+Filter\+Image\+Cropper (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classsvl_filter_image_cropper_a6dd807a3fbbe812f87378965fe3dd957}
+\hypertarget{classsvl_filter_image_cropper_a37e10afabb4b758c7e0c91ac7b90fe49}{}\index{svl\+Filter\+Image\+Cropper@{svl\+Filter\+Image\+Cropper}!````~svl\+Filter\+Image\+Cropper@{$\sim$svl\+Filter\+Image\+Cropper}}
+\index{````~svl\+Filter\+Image\+Cropper@{$\sim$svl\+Filter\+Image\+Cropper}!svl\+Filter\+Image\+Cropper@{svl\+Filter\+Image\+Cropper}}
+\subsubsection[{$\sim$svl\+Filter\+Image\+Cropper}]{\setlength{\rightskip}{0pt plus 5cm}virtual svl\+Filter\+Image\+Cropper\+::$\sim$svl\+Filter\+Image\+Cropper (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classsvl_filter_image_cropper_a37e10afabb4b758c7e0c91ac7b90fe49}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classsvl_filter_image_cropper_a208c25e5185018761ba7412eaa67a876}{}\index{svl\+Filter\+Image\+Cropper@{svl\+Filter\+Image\+Cropper}!Get\+Rectangle@{Get\+Rectangle}}
+\index{Get\+Rectangle@{Get\+Rectangle}!svl\+Filter\+Image\+Cropper@{svl\+Filter\+Image\+Cropper}}
+\subsubsection[{Get\+Rectangle}]{\setlength{\rightskip}{0pt plus 5cm}{\bf svl\+Rect} svl\+Filter\+Image\+Cropper\+::\+Get\+Rectangle (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{videoch = {\ttfamily {\bf S\+V\+L\+\_\+\+L\+E\+F\+T}}}
+\end{DoxyParamCaption}
+)}\label{classsvl_filter_image_cropper_a208c25e5185018761ba7412eaa67a876}
+\hypertarget{classsvl_filter_image_cropper_a02a3cffd12fb0348dce6ffb8a29a631d}{}\index{svl\+Filter\+Image\+Cropper@{svl\+Filter\+Image\+Cropper}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!svl\+Filter\+Image\+Cropper@{svl\+Filter\+Image\+Cropper}}
+\subsubsection[{Initialize}]{\setlength{\rightskip}{0pt plus 5cm}virtual int svl\+Filter\+Image\+Cropper\+::\+Initialize (
+\begin{DoxyParamCaption}
+\item[{{\bf svl\+Sample} $\ast$}]{sync\+Input, }
+\item[{{\bf svl\+Sample} $\ast$\&}]{sync\+Output}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classsvl_filter_image_cropper_a02a3cffd12fb0348dce6ffb8a29a631d}
+
+
+Implements \hyperlink{classsvl_filter_base_ac8eddcd9336c2b381facc8fb372e3bfb}{svl\+Filter\+Base}.
+
+\hypertarget{classsvl_filter_image_cropper_a77e4d5b382b25768300adb7d4ed139d7}{}\index{svl\+Filter\+Image\+Cropper@{svl\+Filter\+Image\+Cropper}!On\+Change\+Center@{On\+Change\+Center}}
+\index{On\+Change\+Center@{On\+Change\+Center}!svl\+Filter\+Image\+Cropper@{svl\+Filter\+Image\+Cropper}}
+\subsubsection[{On\+Change\+Center}]{\setlength{\rightskip}{0pt plus 5cm}virtual int svl\+Filter\+Image\+Cropper\+::\+On\+Change\+Center (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y, }
+\item[{unsigned int}]{videoch = {\ttfamily {\bf S\+V\+L\+\_\+\+L\+E\+F\+T}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classsvl_filter_image_cropper_a77e4d5b382b25768300adb7d4ed139d7}
+
+
+Reimplemented from \hyperlink{classsvl_filter_image_center_finder_interface_a1033c4b107100b8cb6565922442db2f1}{svl\+Filter\+Image\+Center\+Finder\+Interface}.
+
+\hypertarget{classsvl_filter_image_cropper_a637afb41415c13dfe6c5a8fdebc7656f}{}\index{svl\+Filter\+Image\+Cropper@{svl\+Filter\+Image\+Cropper}!On\+Change\+Center\+Rect@{On\+Change\+Center\+Rect}}
+\index{On\+Change\+Center\+Rect@{On\+Change\+Center\+Rect}!svl\+Filter\+Image\+Cropper@{svl\+Filter\+Image\+Cropper}}
+\subsubsection[{On\+Change\+Center\+Rect}]{\setlength{\rightskip}{0pt plus 5cm}virtual int svl\+Filter\+Image\+Cropper\+::\+On\+Change\+Center\+Rect (
+\begin{DoxyParamCaption}
+\item[{const {\bf svl\+Rect} \&}]{rect, }
+\item[{unsigned int}]{videoch = {\ttfamily {\bf S\+V\+L\+\_\+\+L\+E\+F\+T}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classsvl_filter_image_cropper_a637afb41415c13dfe6c5a8fdebc7656f}
+
+
+Reimplemented from \hyperlink{classsvl_filter_image_center_finder_interface_a8c8d6d68ad9180bd9480c2575b668b5c}{svl\+Filter\+Image\+Center\+Finder\+Interface}.
+
+\hypertarget{classsvl_filter_image_cropper_a50511201c4984c5f646c25571617f034}{}\index{svl\+Filter\+Image\+Cropper@{svl\+Filter\+Image\+Cropper}!Process@{Process}}
+\index{Process@{Process}!svl\+Filter\+Image\+Cropper@{svl\+Filter\+Image\+Cropper}}
+\subsubsection[{Process}]{\setlength{\rightskip}{0pt plus 5cm}virtual int svl\+Filter\+Image\+Cropper\+::\+Process (
+\begin{DoxyParamCaption}
+\item[{{\bf svl\+Proc\+Info} $\ast$}]{proc\+Info, }
+\item[{{\bf svl\+Sample} $\ast$}]{sync\+Input, }
+\item[{{\bf svl\+Sample} $\ast$\&}]{sync\+Output}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classsvl_filter_image_cropper_a50511201c4984c5f646c25571617f034}
+
+
+Implements \hyperlink{classsvl_filter_base_aaff77d711088384d00e717fb4ec88aab}{svl\+Filter\+Base}.
+
+\hypertarget{classsvl_filter_image_cropper_ad9d95cf465b4c837a1a99b738a11949b}{}\index{svl\+Filter\+Image\+Cropper@{svl\+Filter\+Image\+Cropper}!Release@{Release}}
+\index{Release@{Release}!svl\+Filter\+Image\+Cropper@{svl\+Filter\+Image\+Cropper}}
+\subsubsection[{Release}]{\setlength{\rightskip}{0pt plus 5cm}virtual int svl\+Filter\+Image\+Cropper\+::\+Release (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classsvl_filter_image_cropper_ad9d95cf465b4c837a1a99b738a11949b}
+
+
+Reimplemented from \hyperlink{classsvl_filter_base_ab689b852e2cee497fcd0ca6708105e17}{svl\+Filter\+Base}.
+
+\hypertarget{classsvl_filter_image_cropper_a18b59d8470e71f016ec46fbc1e688ecc}{}\index{svl\+Filter\+Image\+Cropper@{svl\+Filter\+Image\+Cropper}!Set\+Center@{Set\+Center}}
+\index{Set\+Center@{Set\+Center}!svl\+Filter\+Image\+Cropper@{svl\+Filter\+Image\+Cropper}}
+\subsubsection[{Set\+Center}]{\setlength{\rightskip}{0pt plus 5cm}int svl\+Filter\+Image\+Cropper\+::\+Set\+Center (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y, }
+\item[{unsigned int}]{videoch = {\ttfamily {\bf S\+V\+L\+\_\+\+L\+E\+F\+T}}}
+\end{DoxyParamCaption}
+)}\label{classsvl_filter_image_cropper_a18b59d8470e71f016ec46fbc1e688ecc}
+\hypertarget{classsvl_filter_image_cropper_a05b129a4e6aca2c476e02cf7ca94eaca}{}\index{svl\+Filter\+Image\+Cropper@{svl\+Filter\+Image\+Cropper}!Set\+Corner@{Set\+Corner}}
+\index{Set\+Corner@{Set\+Corner}!svl\+Filter\+Image\+Cropper@{svl\+Filter\+Image\+Cropper}}
+\subsubsection[{Set\+Corner}]{\setlength{\rightskip}{0pt plus 5cm}int svl\+Filter\+Image\+Cropper\+::\+Set\+Corner (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y, }
+\item[{unsigned int}]{videoch = {\ttfamily {\bf S\+V\+L\+\_\+\+L\+E\+F\+T}}}
+\end{DoxyParamCaption}
+)}\label{classsvl_filter_image_cropper_a05b129a4e6aca2c476e02cf7ca94eaca}
+\hypertarget{classsvl_filter_image_cropper_af00bdbf2b6638453aeeefa41b58bdba1}{}\index{svl\+Filter\+Image\+Cropper@{svl\+Filter\+Image\+Cropper}!Set\+Rectangle@{Set\+Rectangle}}
+\index{Set\+Rectangle@{Set\+Rectangle}!svl\+Filter\+Image\+Cropper@{svl\+Filter\+Image\+Cropper}}
+\subsubsection[{Set\+Rectangle}]{\setlength{\rightskip}{0pt plus 5cm}int svl\+Filter\+Image\+Cropper\+::\+Set\+Rectangle (
+\begin{DoxyParamCaption}
+\item[{int}]{left, }
+\item[{int}]{top, }
+\item[{int}]{right, }
+\item[{int}]{bottom, }
+\item[{unsigned int}]{videoch = {\ttfamily {\bf S\+V\+L\+\_\+\+L\+E\+F\+T}}}
+\end{DoxyParamCaption}
+)}\label{classsvl_filter_image_cropper_af00bdbf2b6638453aeeefa41b58bdba1}
+\hypertarget{classsvl_filter_image_cropper_af26e9acc8c27b2835c0e28cc4dee4278}{}\index{svl\+Filter\+Image\+Cropper@{svl\+Filter\+Image\+Cropper}!Set\+Rectangle@{Set\+Rectangle}}
+\index{Set\+Rectangle@{Set\+Rectangle}!svl\+Filter\+Image\+Cropper@{svl\+Filter\+Image\+Cropper}}
+\subsubsection[{Set\+Rectangle}]{\setlength{\rightskip}{0pt plus 5cm}int svl\+Filter\+Image\+Cropper\+::\+Set\+Rectangle (
+\begin{DoxyParamCaption}
+\item[{const {\bf svl\+Rect} \&}]{rect, }
+\item[{unsigned int}]{videoch = {\ttfamily {\bf S\+V\+L\+\_\+\+L\+E\+F\+T}}}
+\end{DoxyParamCaption}
+)}\label{classsvl_filter_image_cropper_af26e9acc8c27b2835c0e28cc4dee4278}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Stereo\+Vision/\hyperlink{svl_filter_image_cropper_8h}{svl\+Filter\+Image\+Cropper.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,122 @@
+\hypertarget{classsvl_filter_image_rectifier}{}\section{svl\+Filter\+Image\+Rectifier Class Reference}
+\label{classsvl_filter_image_rectifier}\index{svl\+Filter\+Image\+Rectifier@{svl\+Filter\+Image\+Rectifier}}
+
+
+{\ttfamily \#include $<$svl\+Filter\+Image\+Rectifier.\+h$>$}
+
+Inheritance diagram for svl\+Filter\+Image\+Rectifier\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{d2/db6/classsvl_filter_image_rectifier}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsvl_filter_image_rectifier_a635a7336fbc13c83da32005df7dc3204}{svl\+Filter\+Image\+Rectifier} ()
+\item 
+virtual \hyperlink{classsvl_filter_image_rectifier_ae1cd3da5b7b5e1c1386dbc3ef37a51c3}{$\sim$svl\+Filter\+Image\+Rectifier} ()
+\item 
+int \hyperlink{classsvl_filter_image_rectifier_a76d556231102310b84f15516fd6284f0}{Load\+Table} (const std\+::string \&filepath, unsigned int videoch=\hyperlink{svl_definitions_8h_ab9fec7615f19c8df2919eebcab0b187f}{S\+V\+L\+\_\+\+L\+E\+F\+T}, int exponentlen=3)
+\item 
+int \hyperlink{classsvl_filter_image_rectifier_a66fac44ec059b58fcff75f9199610075}{Set\+Table\+From\+Camera\+Calibration} (unsigned int height, unsigned int width, \hyperlink{vct_fixed_size_matrix_types_8h_aac4a419dacf9282410675d42ebc86a7c}{vct3x3} R, \hyperlink{vct_fixed_size_vector_types_8h_a88481ac3c794867ba5e4e92624f0d958}{vct2} f, \hyperlink{vct_fixed_size_vector_types_8h_a88481ac3c794867ba5e4e92624f0d958}{vct2} c, \hyperlink{classvct_fixed_size_vector}{vct\+Fixed\+Size\+Vector}$<$ double, 7 $>$ k, double alpha, unsigned int videoch)
+\item 
+\hyperlink{classvct_fixed_size_vector}{vct\+Fixed\+Size\+Vector}$<$ \hyperlink{classsvl_image_processing_1_1_internals}{svl\+Image\+Processing\+::\+Internals}, \hyperlink{svl_definitions_8h_aa33455b98ecb4e82d81ebcb7e87f3c01}{S\+V\+L\+\_\+\+M\+A\+X\+\_\+\+C\+H\+A\+N\+N\+E\+L\+S} $>$ \hyperlink{classsvl_filter_image_rectifier_a7c3793303f463aca87c1140099fcdafc}{Get\+Tables} ()
+\item 
+void \hyperlink{classsvl_filter_image_rectifier_a14166cfe052c64b365af6d63a343f8bc}{Enable\+Interpolation} (bool enable=true)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual int \hyperlink{classsvl_filter_image_rectifier_a33e7cf150398b3a7448a6147b7130ff3}{Initialize} (\hyperlink{classsvl_sample}{svl\+Sample} $\ast$sync\+Input, \hyperlink{classsvl_sample}{svl\+Sample} $\ast$\&sync\+Output)
+\item 
+virtual int \hyperlink{classsvl_filter_image_rectifier_ac1b25ed9782f75d8a6011d18152843f6}{Process} (\hyperlink{structsvl_proc_info}{svl\+Proc\+Info} $\ast$proc\+Info, \hyperlink{classsvl_sample}{svl\+Sample} $\ast$sync\+Input, \hyperlink{classsvl_sample}{svl\+Sample} $\ast$\&sync\+Output)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classsvl_filter_image_rectifier_a635a7336fbc13c83da32005df7dc3204}{}\index{svl\+Filter\+Image\+Rectifier@{svl\+Filter\+Image\+Rectifier}!svl\+Filter\+Image\+Rectifier@{svl\+Filter\+Image\+Rectifier}}
+\index{svl\+Filter\+Image\+Rectifier@{svl\+Filter\+Image\+Rectifier}!svl\+Filter\+Image\+Rectifier@{svl\+Filter\+Image\+Rectifier}}
+\subsubsection[{svl\+Filter\+Image\+Rectifier}]{\setlength{\rightskip}{0pt plus 5cm}svl\+Filter\+Image\+Rectifier\+::svl\+Filter\+Image\+Rectifier (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classsvl_filter_image_rectifier_a635a7336fbc13c83da32005df7dc3204}
+\hypertarget{classsvl_filter_image_rectifier_ae1cd3da5b7b5e1c1386dbc3ef37a51c3}{}\index{svl\+Filter\+Image\+Rectifier@{svl\+Filter\+Image\+Rectifier}!````~svl\+Filter\+Image\+Rectifier@{$\sim$svl\+Filter\+Image\+Rectifier}}
+\index{````~svl\+Filter\+Image\+Rectifier@{$\sim$svl\+Filter\+Image\+Rectifier}!svl\+Filter\+Image\+Rectifier@{svl\+Filter\+Image\+Rectifier}}
+\subsubsection[{$\sim$svl\+Filter\+Image\+Rectifier}]{\setlength{\rightskip}{0pt plus 5cm}virtual svl\+Filter\+Image\+Rectifier\+::$\sim$svl\+Filter\+Image\+Rectifier (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classsvl_filter_image_rectifier_ae1cd3da5b7b5e1c1386dbc3ef37a51c3}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classsvl_filter_image_rectifier_a14166cfe052c64b365af6d63a343f8bc}{}\index{svl\+Filter\+Image\+Rectifier@{svl\+Filter\+Image\+Rectifier}!Enable\+Interpolation@{Enable\+Interpolation}}
+\index{Enable\+Interpolation@{Enable\+Interpolation}!svl\+Filter\+Image\+Rectifier@{svl\+Filter\+Image\+Rectifier}}
+\subsubsection[{Enable\+Interpolation}]{\setlength{\rightskip}{0pt plus 5cm}void svl\+Filter\+Image\+Rectifier\+::\+Enable\+Interpolation (
+\begin{DoxyParamCaption}
+\item[{bool}]{enable = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}\label{classsvl_filter_image_rectifier_a14166cfe052c64b365af6d63a343f8bc}
+\hypertarget{classsvl_filter_image_rectifier_a7c3793303f463aca87c1140099fcdafc}{}\index{svl\+Filter\+Image\+Rectifier@{svl\+Filter\+Image\+Rectifier}!Get\+Tables@{Get\+Tables}}
+\index{Get\+Tables@{Get\+Tables}!svl\+Filter\+Image\+Rectifier@{svl\+Filter\+Image\+Rectifier}}
+\subsubsection[{Get\+Tables}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Fixed\+Size\+Vector}$<${\bf svl\+Image\+Processing\+::\+Internals}, {\bf S\+V\+L\+\_\+\+M\+A\+X\+\_\+\+C\+H\+A\+N\+N\+E\+L\+S}$>$ svl\+Filter\+Image\+Rectifier\+::\+Get\+Tables (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classsvl_filter_image_rectifier_a7c3793303f463aca87c1140099fcdafc}
+\hypertarget{classsvl_filter_image_rectifier_a33e7cf150398b3a7448a6147b7130ff3}{}\index{svl\+Filter\+Image\+Rectifier@{svl\+Filter\+Image\+Rectifier}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!svl\+Filter\+Image\+Rectifier@{svl\+Filter\+Image\+Rectifier}}
+\subsubsection[{Initialize}]{\setlength{\rightskip}{0pt plus 5cm}virtual int svl\+Filter\+Image\+Rectifier\+::\+Initialize (
+\begin{DoxyParamCaption}
+\item[{{\bf svl\+Sample} $\ast$}]{sync\+Input, }
+\item[{{\bf svl\+Sample} $\ast$\&}]{sync\+Output}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classsvl_filter_image_rectifier_a33e7cf150398b3a7448a6147b7130ff3}
+
+
+Implements \hyperlink{classsvl_filter_base_ac8eddcd9336c2b381facc8fb372e3bfb}{svl\+Filter\+Base}.
+
+\hypertarget{classsvl_filter_image_rectifier_a76d556231102310b84f15516fd6284f0}{}\index{svl\+Filter\+Image\+Rectifier@{svl\+Filter\+Image\+Rectifier}!Load\+Table@{Load\+Table}}
+\index{Load\+Table@{Load\+Table}!svl\+Filter\+Image\+Rectifier@{svl\+Filter\+Image\+Rectifier}}
+\subsubsection[{Load\+Table}]{\setlength{\rightskip}{0pt plus 5cm}int svl\+Filter\+Image\+Rectifier\+::\+Load\+Table (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{filepath, }
+\item[{unsigned int}]{videoch = {\ttfamily {\bf S\+V\+L\+\_\+\+L\+E\+F\+T}}, }
+\item[{int}]{exponentlen = {\ttfamily 3}}
+\end{DoxyParamCaption}
+)}\label{classsvl_filter_image_rectifier_a76d556231102310b84f15516fd6284f0}
+\hypertarget{classsvl_filter_image_rectifier_ac1b25ed9782f75d8a6011d18152843f6}{}\index{svl\+Filter\+Image\+Rectifier@{svl\+Filter\+Image\+Rectifier}!Process@{Process}}
+\index{Process@{Process}!svl\+Filter\+Image\+Rectifier@{svl\+Filter\+Image\+Rectifier}}
+\subsubsection[{Process}]{\setlength{\rightskip}{0pt plus 5cm}virtual int svl\+Filter\+Image\+Rectifier\+::\+Process (
+\begin{DoxyParamCaption}
+\item[{{\bf svl\+Proc\+Info} $\ast$}]{proc\+Info, }
+\item[{{\bf svl\+Sample} $\ast$}]{sync\+Input, }
+\item[{{\bf svl\+Sample} $\ast$\&}]{sync\+Output}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classsvl_filter_image_rectifier_ac1b25ed9782f75d8a6011d18152843f6}
+
+
+Implements \hyperlink{classsvl_filter_base_aaff77d711088384d00e717fb4ec88aab}{svl\+Filter\+Base}.
+
+\hypertarget{classsvl_filter_image_rectifier_a66fac44ec059b58fcff75f9199610075}{}\index{svl\+Filter\+Image\+Rectifier@{svl\+Filter\+Image\+Rectifier}!Set\+Table\+From\+Camera\+Calibration@{Set\+Table\+From\+Camera\+Calibration}}
+\index{Set\+Table\+From\+Camera\+Calibration@{Set\+Table\+From\+Camera\+Calibration}!svl\+Filter\+Image\+Rectifier@{svl\+Filter\+Image\+Rectifier}}
+\subsubsection[{Set\+Table\+From\+Camera\+Calibration}]{\setlength{\rightskip}{0pt plus 5cm}int svl\+Filter\+Image\+Rectifier\+::\+Set\+Table\+From\+Camera\+Calibration (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{height, }
+\item[{unsigned int}]{width, }
+\item[{{\bf vct3x3}}]{R, }
+\item[{{\bf vct2}}]{f, }
+\item[{{\bf vct2}}]{c, }
+\item[{{\bf vct\+Fixed\+Size\+Vector}$<$ double, 7 $>$}]{k, }
+\item[{double}]{alpha, }
+\item[{unsigned int}]{videoch}
+\end{DoxyParamCaption}
+)}\label{classsvl_filter_image_rectifier_a66fac44ec059b58fcff75f9199610075}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Stereo\+Vision/\hyperlink{svl_filter_image_rectifier_8h}{svl\+Filter\+Image\+Rectifier.\+h}\end{DoxyCompactItemize}

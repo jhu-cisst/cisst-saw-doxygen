@@ -1,0 +1,207 @@
+\hypertarget{mts_forward_declarations_8h}{}\section{/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Multi\+Task/mts\+Forward\+Declarations.h File Reference}
+\label{mts_forward_declarations_8h}\index{/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Multi\+Task/mts\+Forward\+Declarations.\+h@{/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Multi\+Task/mts\+Forward\+Declarations.\+h}}
+
+
+Forward declarations and \#define for cisst\+Multi\+Task.  
+
+
+{\ttfamily \#include $<$cisst\+Common/cmn\+Class\+Services.\+h$>$}\\*
+{\ttfamily \#include $<$cisst\+Multi\+Task/mts\+Generic\+Object.\+h$>$}\\*
+{\ttfamily \#include $<$limits$>$}\\*
+{\ttfamily \#include $<$cisst\+Multi\+Task/mts\+Config.\+h$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classmts_callable_void_method}{mts\+Callable\+Void\+Method$<$ \+\_\+class\+Type $>$}
+\item 
+class \hyperlink{classmts_callable_void_return_method}{mts\+Callable\+Void\+Return\+Method$<$ \+\_\+class\+Type, \+\_\+result\+Type $>$}
+\item 
+class \hyperlink{classmts_command_queued_void_return_base}{mts\+Command\+Queued\+Void\+Return\+Base$<$ \+\_\+\+Base $>$}
+\item 
+class \hyperlink{classmts_callable_read_method}{mts\+Callable\+Read\+Method$<$ \+\_\+class\+Type, \+\_\+result\+Type $>$}
+\item 
+class \hyperlink{classmts_callable_read_return_void_method}{mts\+Callable\+Read\+Return\+Void\+Method$<$ \+\_\+class\+Type, \+\_\+return\+Type $>$}
+\item 
+class \hyperlink{classmts_command_write}{mts\+Command\+Write$<$ \+\_\+class\+Type, \+\_\+argument\+Type $>$}
+\item 
+class \hyperlink{classmts_callable_write_return_method}{mts\+Callable\+Write\+Return\+Method$<$ \+\_\+class\+Type, \+\_\+argument\+Type, \+\_\+result\+Type $>$}
+\item 
+class \hyperlink{classmts_command_queued_write_return_base}{mts\+Command\+Queued\+Write\+Return\+Base$<$ \+\_\+\+Base $>$}
+\item 
+class \hyperlink{classmts_callable_qualified_read_method}{mts\+Callable\+Qualified\+Read\+Method$<$ \+\_\+class\+Type, \+\_\+argument\+Type, \+\_\+result\+Type $>$}
+\item 
+class \hyperlink{classmts_callable_qualified_read_return_void_method}{mts\+Callable\+Qualified\+Read\+Return\+Void\+Method$<$ \+\_\+class\+Type, \+\_\+argument\+Type, \+\_\+result\+Type $>$}
+\item 
+class \hyperlink{classmts_multicast_command_write}{mts\+Multicast\+Command\+Write$<$ \+\_\+argument\+Type $>$}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classmts_command_queued_void_return_base}{mts\+Command\+Queued\+Void\+Return\+Base}$<$ \hyperlink{classmts_command_void_return}{mts\+Command\+Void\+Return} $>$ \hyperlink{mts_forward_declarations_8h_a91b545c2169ea86afa861fac5420802a}{mts\+Command\+Queued\+Void\+Return}
+\item 
+typedef \hyperlink{classmts_command_queued_void_return_base}{mts\+Command\+Queued\+Void\+Return\+Base}$<$ \hyperlink{classmts_command_read}{mts\+Command\+Read} $>$ \hyperlink{mts_forward_declarations_8h_aea636b7cb91e701dbe6f243ecf42a774}{mts\+Command\+Queued\+Read}
+\item 
+typedef \hyperlink{classmts_command_queued_write_return_base}{mts\+Command\+Queued\+Write\+Return\+Base}$<$ \hyperlink{classmts_command_write_return}{mts\+Command\+Write\+Return} $>$ \hyperlink{mts_forward_declarations_8h_a4fe00fe506a92a1cc8b52ea79e7f2200}{mts\+Command\+Queued\+Write\+Return}
+\item 
+typedef \hyperlink{classmts_command_queued_write_return_base}{mts\+Command\+Queued\+Write\+Return\+Base}$<$ \hyperlink{classmts_command_qualified_read}{mts\+Command\+Qualified\+Read} $>$ \hyperlink{mts_forward_declarations_8h_ac58d98501d0f2ba0337f1593f6dbee54}{mts\+Command\+Queued\+Qualified\+Read}
+\item 
+typedef \hyperlink{classmts_component}{mts\+Component} \hyperlink{mts_forward_declarations_8h_ae17dec496b2bacfe57b5949e3ca91a82}{mts\+Device}
+\item 
+typedef unsigned int \hyperlink{mts_forward_declarations_8h_ad3543bb11742e1766374ec96016d6547}{Connection\+I\+D\+Type}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{mts_forward_declarations_8h_abedfb5c45b329a89b0fb647a96a7c938}{mts\+Interface\+Queueing\+Policy} \{ \hyperlink{mts_forward_declarations_8h_abedfb5c45b329a89b0fb647a96a7c938aff70a768b1fb65f10206583efbad12bb}{M\+T\+S\+\_\+\+C\+O\+M\+P\+O\+N\+E\+N\+T\+\_\+\+P\+O\+L\+I\+C\+Y}, 
+\hyperlink{mts_forward_declarations_8h_abedfb5c45b329a89b0fb647a96a7c938aaecf24d4a6387ec2f93865ac170fb685}{M\+T\+S\+\_\+\+C\+O\+M\+M\+A\+N\+D\+S\+\_\+\+S\+H\+O\+U\+L\+D\+\_\+\+N\+O\+T\+\_\+\+B\+E\+\_\+\+Q\+U\+E\+U\+E\+D}, 
+\hyperlink{mts_forward_declarations_8h_abedfb5c45b329a89b0fb647a96a7c938acd322c7ec23f3409de291ddaa8960324}{M\+T\+S\+\_\+\+C\+O\+M\+M\+A\+N\+D\+S\+\_\+\+S\+H\+O\+U\+L\+D\+\_\+\+B\+E\+\_\+\+Q\+U\+E\+U\+E\+D}
+ \}
+\item 
+enum \hyperlink{mts_forward_declarations_8h_aa2ac24035e136fa1689dcc2854c63fc7}{mts\+Command\+Queueing\+Policy} \{ \hyperlink{mts_forward_declarations_8h_aa2ac24035e136fa1689dcc2854c63fc7a4f444b4120a5e2efd084e2e5a214f5c8}{M\+T\+S\+\_\+\+I\+N\+T\+E\+R\+F\+A\+C\+E\+\_\+\+C\+O\+M\+M\+A\+N\+D\+\_\+\+P\+O\+L\+I\+C\+Y}, 
+\hyperlink{mts_forward_declarations_8h_aa2ac24035e136fa1689dcc2854c63fc7a458c344e3699f5924e7fafe7f90df9c7}{M\+T\+S\+\_\+\+C\+O\+M\+M\+A\+N\+D\+\_\+\+Q\+U\+E\+U\+E\+D}, 
+\hyperlink{mts_forward_declarations_8h_aa2ac24035e136fa1689dcc2854c63fc7aae676c52959272cda82e643c5b3ec1c1}{M\+T\+S\+\_\+\+C\+O\+M\+M\+A\+N\+D\+\_\+\+N\+O\+T\+\_\+\+Q\+U\+E\+U\+E\+D}
+ \}
+\item 
+enum \hyperlink{mts_forward_declarations_8h_a9286ac2ca46e5bcd57059550faa96916}{mts\+Event\+Queueing\+Policy} \{ \hyperlink{mts_forward_declarations_8h_a9286ac2ca46e5bcd57059550faa96916a3d4338e85690d50e9ab167be77cdefa0}{M\+T\+S\+\_\+\+I\+N\+T\+E\+R\+F\+A\+C\+E\+\_\+\+E\+V\+E\+N\+T\+\_\+\+P\+O\+L\+I\+C\+Y}, 
+\hyperlink{mts_forward_declarations_8h_a9286ac2ca46e5bcd57059550faa96916ad90413102ed2ba703860b1e13a196ee6}{M\+T\+S\+\_\+\+E\+V\+E\+N\+T\+\_\+\+Q\+U\+E\+U\+E\+D}, 
+\hyperlink{mts_forward_declarations_8h_a9286ac2ca46e5bcd57059550faa96916af27011d1cdea8e347d3cb7641a1db9fd}{M\+T\+S\+\_\+\+E\+V\+E\+N\+T\+\_\+\+N\+O\+T\+\_\+\+Q\+U\+E\+U\+E\+D}
+ \}
+\item 
+enum \hyperlink{mts_forward_declarations_8h_a9ef1ce54724afde7802db326ff8606f3}{mts\+Required\+Type} \{ \hyperlink{mts_forward_declarations_8h_a9ef1ce54724afde7802db326ff8606f3a77b50ae7108c63abd100fe57d63a0f71}{M\+T\+S\+\_\+\+O\+P\+T\+I\+O\+N\+A\+L}, 
+\hyperlink{mts_forward_declarations_8h_a9ef1ce54724afde7802db326ff8606f3ae01fd85391b60e546bbb1be9716c4ec9}{M\+T\+S\+\_\+\+R\+E\+Q\+U\+I\+R\+E\+D}
+ \}
+\item 
+enum \hyperlink{mts_forward_declarations_8h_ad7426ccb6c883bc780d0ee197dddcbe7}{mts\+Blocking\+Type} \{ \hyperlink{mts_forward_declarations_8h_ad7426ccb6c883bc780d0ee197dddcbe7a2ecf9f666b53a5f16d573aa560757f1f}{M\+T\+S\+\_\+\+B\+L\+O\+C\+K\+I\+N\+G}, 
+\hyperlink{mts_forward_declarations_8h_ad7426ccb6c883bc780d0ee197dddcbe7a0f9ac6fd7e27eab93451abea4fda0492}{M\+T\+S\+\_\+\+N\+O\+T\+\_\+\+B\+L\+O\+C\+K\+I\+N\+G}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{mts_forward_declarations_8h_a84644fa994faefd7a9fa845ce442a479}{mts\+Object\+Name} (const void $\ast$\hyperlink{cmn_portability_8h_a021894e2626935fa2305434b1e893ff6}{C\+M\+N\+\_\+\+U\+N\+U\+S\+E\+D}(object))
+\item 
+std\+::string \hyperlink{mts_forward_declarations_8h_a6c14333cd80b02d7af3e8ff8dd75ec69}{mts\+Object\+Name} (const \hyperlink{classmts_generic_object}{mts\+Generic\+Object} $\ast$object)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const \hyperlink{mts_forward_declarations_8h_ad3543bb11742e1766374ec96016d6547}{Connection\+I\+D\+Type} \hyperlink{mts_forward_declarations_8h_afa0f9196284a3cea6a91094a0f45209e}{Invalid\+Connection\+I\+D} = (\hyperlink{mts_forward_declarations_8h_ad3543bb11742e1766374ec96016d6547}{Connection\+I\+D\+Type}) std\+::numeric\+\_\+limits$<$int$>$\+::max()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Forward declarations and \#define for cisst\+Multi\+Task. 
+
+
+
+\subsection{Typedef Documentation}
+\hypertarget{mts_forward_declarations_8h_ad3543bb11742e1766374ec96016d6547}{}\index{mts\+Forward\+Declarations.\+h@{mts\+Forward\+Declarations.\+h}!Connection\+I\+D\+Type@{Connection\+I\+D\+Type}}
+\index{Connection\+I\+D\+Type@{Connection\+I\+D\+Type}!mts\+Forward\+Declarations.\+h@{mts\+Forward\+Declarations.\+h}}
+\subsubsection[{Connection\+I\+D\+Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned int {\bf Connection\+I\+D\+Type}}\label{mts_forward_declarations_8h_ad3543bb11742e1766374ec96016d6547}
+\hypertarget{mts_forward_declarations_8h_ac58d98501d0f2ba0337f1593f6dbee54}{}\index{mts\+Forward\+Declarations.\+h@{mts\+Forward\+Declarations.\+h}!mts\+Command\+Queued\+Qualified\+Read@{mts\+Command\+Queued\+Qualified\+Read}}
+\index{mts\+Command\+Queued\+Qualified\+Read@{mts\+Command\+Queued\+Qualified\+Read}!mts\+Forward\+Declarations.\+h@{mts\+Forward\+Declarations.\+h}}
+\subsubsection[{mts\+Command\+Queued\+Qualified\+Read}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf mts\+Command\+Queued\+Write\+Return\+Base}$<${\bf mts\+Command\+Qualified\+Read}$>$ {\bf mts\+Command\+Queued\+Qualified\+Read}}\label{mts_forward_declarations_8h_ac58d98501d0f2ba0337f1593f6dbee54}
+\hypertarget{mts_forward_declarations_8h_aea636b7cb91e701dbe6f243ecf42a774}{}\index{mts\+Forward\+Declarations.\+h@{mts\+Forward\+Declarations.\+h}!mts\+Command\+Queued\+Read@{mts\+Command\+Queued\+Read}}
+\index{mts\+Command\+Queued\+Read@{mts\+Command\+Queued\+Read}!mts\+Forward\+Declarations.\+h@{mts\+Forward\+Declarations.\+h}}
+\subsubsection[{mts\+Command\+Queued\+Read}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf mts\+Command\+Queued\+Void\+Return\+Base}$<${\bf mts\+Command\+Read}$>$ {\bf mts\+Command\+Queued\+Read}}\label{mts_forward_declarations_8h_aea636b7cb91e701dbe6f243ecf42a774}
+\hypertarget{mts_forward_declarations_8h_a91b545c2169ea86afa861fac5420802a}{}\index{mts\+Forward\+Declarations.\+h@{mts\+Forward\+Declarations.\+h}!mts\+Command\+Queued\+Void\+Return@{mts\+Command\+Queued\+Void\+Return}}
+\index{mts\+Command\+Queued\+Void\+Return@{mts\+Command\+Queued\+Void\+Return}!mts\+Forward\+Declarations.\+h@{mts\+Forward\+Declarations.\+h}}
+\subsubsection[{mts\+Command\+Queued\+Void\+Return}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf mts\+Command\+Queued\+Void\+Return\+Base}$<${\bf mts\+Command\+Void\+Return}$>$ {\bf mts\+Command\+Queued\+Void\+Return}}\label{mts_forward_declarations_8h_a91b545c2169ea86afa861fac5420802a}
+\hypertarget{mts_forward_declarations_8h_a4fe00fe506a92a1cc8b52ea79e7f2200}{}\index{mts\+Forward\+Declarations.\+h@{mts\+Forward\+Declarations.\+h}!mts\+Command\+Queued\+Write\+Return@{mts\+Command\+Queued\+Write\+Return}}
+\index{mts\+Command\+Queued\+Write\+Return@{mts\+Command\+Queued\+Write\+Return}!mts\+Forward\+Declarations.\+h@{mts\+Forward\+Declarations.\+h}}
+\subsubsection[{mts\+Command\+Queued\+Write\+Return}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf mts\+Command\+Queued\+Write\+Return\+Base}$<${\bf mts\+Command\+Write\+Return}$>$ {\bf mts\+Command\+Queued\+Write\+Return}}\label{mts_forward_declarations_8h_a4fe00fe506a92a1cc8b52ea79e7f2200}
+\hypertarget{mts_forward_declarations_8h_ae17dec496b2bacfe57b5949e3ca91a82}{}\index{mts\+Forward\+Declarations.\+h@{mts\+Forward\+Declarations.\+h}!mts\+Device@{mts\+Device}}
+\index{mts\+Device@{mts\+Device}!mts\+Forward\+Declarations.\+h@{mts\+Forward\+Declarations.\+h}}
+\subsubsection[{mts\+Device}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf mts\+Component} {\bf mts\+Device}}\label{mts_forward_declarations_8h_ae17dec496b2bacfe57b5949e3ca91a82}
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{mts_forward_declarations_8h_ad7426ccb6c883bc780d0ee197dddcbe7}{}\index{mts\+Forward\+Declarations.\+h@{mts\+Forward\+Declarations.\+h}!mts\+Blocking\+Type@{mts\+Blocking\+Type}}
+\index{mts\+Blocking\+Type@{mts\+Blocking\+Type}!mts\+Forward\+Declarations.\+h@{mts\+Forward\+Declarations.\+h}}
+\subsubsection[{mts\+Blocking\+Type}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf mts\+Blocking\+Type}}\label{mts_forward_declarations_8h_ad7426ccb6c883bc780d0ee197dddcbe7}
+Type to define is a command is blocking or not \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{M\+T\+S\+\_\+\+B\+L\+O\+C\+K\+I\+N\+G@{M\+T\+S\+\_\+\+B\+L\+O\+C\+K\+I\+N\+G}!mts\+Forward\+Declarations.\+h@{mts\+Forward\+Declarations.\+h}}\index{mts\+Forward\+Declarations.\+h@{mts\+Forward\+Declarations.\+h}!M\+T\+S\+\_\+\+B\+L\+O\+C\+K\+I\+N\+G@{M\+T\+S\+\_\+\+B\+L\+O\+C\+K\+I\+N\+G}}\item[{\em 
+\hypertarget{mts_forward_declarations_8h_ad7426ccb6c883bc780d0ee197dddcbe7a2ecf9f666b53a5f16d573aa560757f1f}{}M\+T\+S\+\_\+\+B\+L\+O\+C\+K\+I\+N\+G\label{mts_forward_declarations_8h_ad7426ccb6c883bc780d0ee197dddcbe7a2ecf9f666b53a5f16d573aa560757f1f}
+}]\index{M\+T\+S\+\_\+\+N\+O\+T\+\_\+\+B\+L\+O\+C\+K\+I\+N\+G@{M\+T\+S\+\_\+\+N\+O\+T\+\_\+\+B\+L\+O\+C\+K\+I\+N\+G}!mts\+Forward\+Declarations.\+h@{mts\+Forward\+Declarations.\+h}}\index{mts\+Forward\+Declarations.\+h@{mts\+Forward\+Declarations.\+h}!M\+T\+S\+\_\+\+N\+O\+T\+\_\+\+B\+L\+O\+C\+K\+I\+N\+G@{M\+T\+S\+\_\+\+N\+O\+T\+\_\+\+B\+L\+O\+C\+K\+I\+N\+G}}\item[{\em 
+\hypertarget{mts_forward_declarations_8h_ad7426ccb6c883bc780d0ee197dddcbe7a0f9ac6fd7e27eab93451abea4fda0492}{}M\+T\+S\+\_\+\+N\+O\+T\+\_\+\+B\+L\+O\+C\+K\+I\+N\+G\label{mts_forward_declarations_8h_ad7426ccb6c883bc780d0ee197dddcbe7a0f9ac6fd7e27eab93451abea4fda0492}
+}]\end{description}
+\end{Desc}
+\hypertarget{mts_forward_declarations_8h_aa2ac24035e136fa1689dcc2854c63fc7}{}\index{mts\+Forward\+Declarations.\+h@{mts\+Forward\+Declarations.\+h}!mts\+Command\+Queueing\+Policy@{mts\+Command\+Queueing\+Policy}}
+\index{mts\+Command\+Queueing\+Policy@{mts\+Command\+Queueing\+Policy}!mts\+Forward\+Declarations.\+h@{mts\+Forward\+Declarations.\+h}}
+\subsubsection[{mts\+Command\+Queueing\+Policy}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf mts\+Command\+Queueing\+Policy}}\label{mts_forward_declarations_8h_aa2ac24035e136fa1689dcc2854c63fc7}
+Queueing policy, i.\+e. what the user would like to do for individual commands added using Add\+Command\+Void or Add\+Command\+Write as well as event handlers \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{M\+T\+S\+\_\+\+I\+N\+T\+E\+R\+F\+A\+C\+E\+\_\+\+C\+O\+M\+M\+A\+N\+D\+\_\+\+P\+O\+L\+I\+C\+Y@{M\+T\+S\+\_\+\+I\+N\+T\+E\+R\+F\+A\+C\+E\+\_\+\+C\+O\+M\+M\+A\+N\+D\+\_\+\+P\+O\+L\+I\+C\+Y}!mts\+Forward\+Declarations.\+h@{mts\+Forward\+Declarations.\+h}}\index{mts\+Forward\+Declarations.\+h@{mts\+Forward\+Declarations.\+h}!M\+T\+S\+\_\+\+I\+N\+T\+E\+R\+F\+A\+C\+E\+\_\+\+C\+O\+M\+M\+A\+N\+D\+\_\+\+P\+O\+L\+I\+C\+Y@{M\+T\+S\+\_\+\+I\+N\+T\+E\+R\+F\+A\+C\+E\+\_\+\+C\+O\+M\+M\+A\+N\+D\+\_\+\+P\+O\+L\+I\+C\+Y}}\item[{\em 
+\hypertarget{mts_forward_declarations_8h_aa2ac24035e136fa1689dcc2854c63fc7a4f444b4120a5e2efd084e2e5a214f5c8}{}M\+T\+S\+\_\+\+I\+N\+T\+E\+R\+F\+A\+C\+E\+\_\+\+C\+O\+M\+M\+A\+N\+D\+\_\+\+P\+O\+L\+I\+C\+Y\label{mts_forward_declarations_8h_aa2ac24035e136fa1689dcc2854c63fc7a4f444b4120a5e2efd084e2e5a214f5c8}
+}]\index{M\+T\+S\+\_\+\+C\+O\+M\+M\+A\+N\+D\+\_\+\+Q\+U\+E\+U\+E\+D@{M\+T\+S\+\_\+\+C\+O\+M\+M\+A\+N\+D\+\_\+\+Q\+U\+E\+U\+E\+D}!mts\+Forward\+Declarations.\+h@{mts\+Forward\+Declarations.\+h}}\index{mts\+Forward\+Declarations.\+h@{mts\+Forward\+Declarations.\+h}!M\+T\+S\+\_\+\+C\+O\+M\+M\+A\+N\+D\+\_\+\+Q\+U\+E\+U\+E\+D@{M\+T\+S\+\_\+\+C\+O\+M\+M\+A\+N\+D\+\_\+\+Q\+U\+E\+U\+E\+D}}\item[{\em 
+\hypertarget{mts_forward_declarations_8h_aa2ac24035e136fa1689dcc2854c63fc7a458c344e3699f5924e7fafe7f90df9c7}{}M\+T\+S\+\_\+\+C\+O\+M\+M\+A\+N\+D\+\_\+\+Q\+U\+E\+U\+E\+D\label{mts_forward_declarations_8h_aa2ac24035e136fa1689dcc2854c63fc7a458c344e3699f5924e7fafe7f90df9c7}
+}]\index{M\+T\+S\+\_\+\+C\+O\+M\+M\+A\+N\+D\+\_\+\+N\+O\+T\+\_\+\+Q\+U\+E\+U\+E\+D@{M\+T\+S\+\_\+\+C\+O\+M\+M\+A\+N\+D\+\_\+\+N\+O\+T\+\_\+\+Q\+U\+E\+U\+E\+D}!mts\+Forward\+Declarations.\+h@{mts\+Forward\+Declarations.\+h}}\index{mts\+Forward\+Declarations.\+h@{mts\+Forward\+Declarations.\+h}!M\+T\+S\+\_\+\+C\+O\+M\+M\+A\+N\+D\+\_\+\+N\+O\+T\+\_\+\+Q\+U\+E\+U\+E\+D@{M\+T\+S\+\_\+\+C\+O\+M\+M\+A\+N\+D\+\_\+\+N\+O\+T\+\_\+\+Q\+U\+E\+U\+E\+D}}\item[{\em 
+\hypertarget{mts_forward_declarations_8h_aa2ac24035e136fa1689dcc2854c63fc7aae676c52959272cda82e643c5b3ec1c1}{}M\+T\+S\+\_\+\+C\+O\+M\+M\+A\+N\+D\+\_\+\+N\+O\+T\+\_\+\+Q\+U\+E\+U\+E\+D\label{mts_forward_declarations_8h_aa2ac24035e136fa1689dcc2854c63fc7aae676c52959272cda82e643c5b3ec1c1}
+}]\end{description}
+\end{Desc}
+\hypertarget{mts_forward_declarations_8h_a9286ac2ca46e5bcd57059550faa96916}{}\index{mts\+Forward\+Declarations.\+h@{mts\+Forward\+Declarations.\+h}!mts\+Event\+Queueing\+Policy@{mts\+Event\+Queueing\+Policy}}
+\index{mts\+Event\+Queueing\+Policy@{mts\+Event\+Queueing\+Policy}!mts\+Forward\+Declarations.\+h@{mts\+Forward\+Declarations.\+h}}
+\subsubsection[{mts\+Event\+Queueing\+Policy}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf mts\+Event\+Queueing\+Policy}}\label{mts_forward_declarations_8h_a9286ac2ca46e5bcd57059550faa96916}
+Queueing policy, i.\+e. what the user would like to do for individual event handlers added using Add\+Event\+Handler\+Void or Add\+Event\+Handler\+Write. \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{M\+T\+S\+\_\+\+I\+N\+T\+E\+R\+F\+A\+C\+E\+\_\+\+E\+V\+E\+N\+T\+\_\+\+P\+O\+L\+I\+C\+Y@{M\+T\+S\+\_\+\+I\+N\+T\+E\+R\+F\+A\+C\+E\+\_\+\+E\+V\+E\+N\+T\+\_\+\+P\+O\+L\+I\+C\+Y}!mts\+Forward\+Declarations.\+h@{mts\+Forward\+Declarations.\+h}}\index{mts\+Forward\+Declarations.\+h@{mts\+Forward\+Declarations.\+h}!M\+T\+S\+\_\+\+I\+N\+T\+E\+R\+F\+A\+C\+E\+\_\+\+E\+V\+E\+N\+T\+\_\+\+P\+O\+L\+I\+C\+Y@{M\+T\+S\+\_\+\+I\+N\+T\+E\+R\+F\+A\+C\+E\+\_\+\+E\+V\+E\+N\+T\+\_\+\+P\+O\+L\+I\+C\+Y}}\item[{\em 
+\hypertarget{mts_forward_declarations_8h_a9286ac2ca46e5bcd57059550faa96916a3d4338e85690d50e9ab167be77cdefa0}{}M\+T\+S\+\_\+\+I\+N\+T\+E\+R\+F\+A\+C\+E\+\_\+\+E\+V\+E\+N\+T\+\_\+\+P\+O\+L\+I\+C\+Y\label{mts_forward_declarations_8h_a9286ac2ca46e5bcd57059550faa96916a3d4338e85690d50e9ab167be77cdefa0}
+}]\index{M\+T\+S\+\_\+\+E\+V\+E\+N\+T\+\_\+\+Q\+U\+E\+U\+E\+D@{M\+T\+S\+\_\+\+E\+V\+E\+N\+T\+\_\+\+Q\+U\+E\+U\+E\+D}!mts\+Forward\+Declarations.\+h@{mts\+Forward\+Declarations.\+h}}\index{mts\+Forward\+Declarations.\+h@{mts\+Forward\+Declarations.\+h}!M\+T\+S\+\_\+\+E\+V\+E\+N\+T\+\_\+\+Q\+U\+E\+U\+E\+D@{M\+T\+S\+\_\+\+E\+V\+E\+N\+T\+\_\+\+Q\+U\+E\+U\+E\+D}}\item[{\em 
+\hypertarget{mts_forward_declarations_8h_a9286ac2ca46e5bcd57059550faa96916ad90413102ed2ba703860b1e13a196ee6}{}M\+T\+S\+\_\+\+E\+V\+E\+N\+T\+\_\+\+Q\+U\+E\+U\+E\+D\label{mts_forward_declarations_8h_a9286ac2ca46e5bcd57059550faa96916ad90413102ed2ba703860b1e13a196ee6}
+}]\index{M\+T\+S\+\_\+\+E\+V\+E\+N\+T\+\_\+\+N\+O\+T\+\_\+\+Q\+U\+E\+U\+E\+D@{M\+T\+S\+\_\+\+E\+V\+E\+N\+T\+\_\+\+N\+O\+T\+\_\+\+Q\+U\+E\+U\+E\+D}!mts\+Forward\+Declarations.\+h@{mts\+Forward\+Declarations.\+h}}\index{mts\+Forward\+Declarations.\+h@{mts\+Forward\+Declarations.\+h}!M\+T\+S\+\_\+\+E\+V\+E\+N\+T\+\_\+\+N\+O\+T\+\_\+\+Q\+U\+E\+U\+E\+D@{M\+T\+S\+\_\+\+E\+V\+E\+N\+T\+\_\+\+N\+O\+T\+\_\+\+Q\+U\+E\+U\+E\+D}}\item[{\em 
+\hypertarget{mts_forward_declarations_8h_a9286ac2ca46e5bcd57059550faa96916af27011d1cdea8e347d3cb7641a1db9fd}{}M\+T\+S\+\_\+\+E\+V\+E\+N\+T\+\_\+\+N\+O\+T\+\_\+\+Q\+U\+E\+U\+E\+D\label{mts_forward_declarations_8h_a9286ac2ca46e5bcd57059550faa96916af27011d1cdea8e347d3cb7641a1db9fd}
+}]\end{description}
+\end{Desc}
+\hypertarget{mts_forward_declarations_8h_abedfb5c45b329a89b0fb647a96a7c938}{}\index{mts\+Forward\+Declarations.\+h@{mts\+Forward\+Declarations.\+h}!mts\+Interface\+Queueing\+Policy@{mts\+Interface\+Queueing\+Policy}}
+\index{mts\+Interface\+Queueing\+Policy@{mts\+Interface\+Queueing\+Policy}!mts\+Forward\+Declarations.\+h@{mts\+Forward\+Declarations.\+h}}
+\subsubsection[{mts\+Interface\+Queueing\+Policy}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf mts\+Interface\+Queueing\+Policy}}\label{mts_forward_declarations_8h_abedfb5c45b329a89b0fb647a96a7c938}
+Queueing policy for the interface \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{M\+T\+S\+\_\+\+C\+O\+M\+P\+O\+N\+E\+N\+T\+\_\+\+P\+O\+L\+I\+C\+Y@{M\+T\+S\+\_\+\+C\+O\+M\+P\+O\+N\+E\+N\+T\+\_\+\+P\+O\+L\+I\+C\+Y}!mts\+Forward\+Declarations.\+h@{mts\+Forward\+Declarations.\+h}}\index{mts\+Forward\+Declarations.\+h@{mts\+Forward\+Declarations.\+h}!M\+T\+S\+\_\+\+C\+O\+M\+P\+O\+N\+E\+N\+T\+\_\+\+P\+O\+L\+I\+C\+Y@{M\+T\+S\+\_\+\+C\+O\+M\+P\+O\+N\+E\+N\+T\+\_\+\+P\+O\+L\+I\+C\+Y}}\item[{\em 
+\hypertarget{mts_forward_declarations_8h_abedfb5c45b329a89b0fb647a96a7c938aff70a768b1fb65f10206583efbad12bb}{}M\+T\+S\+\_\+\+C\+O\+M\+P\+O\+N\+E\+N\+T\+\_\+\+P\+O\+L\+I\+C\+Y\label{mts_forward_declarations_8h_abedfb5c45b329a89b0fb647a96a7c938aff70a768b1fb65f10206583efbad12bb}
+}]\index{M\+T\+S\+\_\+\+C\+O\+M\+M\+A\+N\+D\+S\+\_\+\+S\+H\+O\+U\+L\+D\+\_\+\+N\+O\+T\+\_\+\+B\+E\+\_\+\+Q\+U\+E\+U\+E\+D@{M\+T\+S\+\_\+\+C\+O\+M\+M\+A\+N\+D\+S\+\_\+\+S\+H\+O\+U\+L\+D\+\_\+\+N\+O\+T\+\_\+\+B\+E\+\_\+\+Q\+U\+E\+U\+E\+D}!mts\+Forward\+Declarations.\+h@{mts\+Forward\+Declarations.\+h}}\index{mts\+Forward\+Declarations.\+h@{mts\+Forward\+Declarations.\+h}!M\+T\+S\+\_\+\+C\+O\+M\+M\+A\+N\+D\+S\+\_\+\+S\+H\+O\+U\+L\+D\+\_\+\+N\+O\+T\+\_\+\+B\+E\+\_\+\+Q\+U\+E\+U\+E\+D@{M\+T\+S\+\_\+\+C\+O\+M\+M\+A\+N\+D\+S\+\_\+\+S\+H\+O\+U\+L\+D\+\_\+\+N\+O\+T\+\_\+\+B\+E\+\_\+\+Q\+U\+E\+U\+E\+D}}\item[{\em 
+\hypertarget{mts_forward_declarations_8h_abedfb5c45b329a89b0fb647a96a7c938aaecf24d4a6387ec2f93865ac170fb685}{}M\+T\+S\+\_\+\+C\+O\+M\+M\+A\+N\+D\+S\+\_\+\+S\+H\+O\+U\+L\+D\+\_\+\+N\+O\+T\+\_\+\+B\+E\+\_\+\+Q\+U\+E\+U\+E\+D\label{mts_forward_declarations_8h_abedfb5c45b329a89b0fb647a96a7c938aaecf24d4a6387ec2f93865ac170fb685}
+}]\index{M\+T\+S\+\_\+\+C\+O\+M\+M\+A\+N\+D\+S\+\_\+\+S\+H\+O\+U\+L\+D\+\_\+\+B\+E\+\_\+\+Q\+U\+E\+U\+E\+D@{M\+T\+S\+\_\+\+C\+O\+M\+M\+A\+N\+D\+S\+\_\+\+S\+H\+O\+U\+L\+D\+\_\+\+B\+E\+\_\+\+Q\+U\+E\+U\+E\+D}!mts\+Forward\+Declarations.\+h@{mts\+Forward\+Declarations.\+h}}\index{mts\+Forward\+Declarations.\+h@{mts\+Forward\+Declarations.\+h}!M\+T\+S\+\_\+\+C\+O\+M\+M\+A\+N\+D\+S\+\_\+\+S\+H\+O\+U\+L\+D\+\_\+\+B\+E\+\_\+\+Q\+U\+E\+U\+E\+D@{M\+T\+S\+\_\+\+C\+O\+M\+M\+A\+N\+D\+S\+\_\+\+S\+H\+O\+U\+L\+D\+\_\+\+B\+E\+\_\+\+Q\+U\+E\+U\+E\+D}}\item[{\em 
+\hypertarget{mts_forward_declarations_8h_abedfb5c45b329a89b0fb647a96a7c938acd322c7ec23f3409de291ddaa8960324}{}M\+T\+S\+\_\+\+C\+O\+M\+M\+A\+N\+D\+S\+\_\+\+S\+H\+O\+U\+L\+D\+\_\+\+B\+E\+\_\+\+Q\+U\+E\+U\+E\+D\label{mts_forward_declarations_8h_abedfb5c45b329a89b0fb647a96a7c938acd322c7ec23f3409de291ddaa8960324}
+}]\end{description}
+\end{Desc}
+\hypertarget{mts_forward_declarations_8h_a9ef1ce54724afde7802db326ff8606f3}{}\index{mts\+Forward\+Declarations.\+h@{mts\+Forward\+Declarations.\+h}!mts\+Required\+Type@{mts\+Required\+Type}}
+\index{mts\+Required\+Type@{mts\+Required\+Type}!mts\+Forward\+Declarations.\+h@{mts\+Forward\+Declarations.\+h}}
+\subsubsection[{mts\+Required\+Type}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf mts\+Required\+Type}}\label{mts_forward_declarations_8h_a9ef1ce54724afde7802db326ff8606f3}
+Type for optional functions and interfaces \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{M\+T\+S\+\_\+\+O\+P\+T\+I\+O\+N\+A\+L@{M\+T\+S\+\_\+\+O\+P\+T\+I\+O\+N\+A\+L}!mts\+Forward\+Declarations.\+h@{mts\+Forward\+Declarations.\+h}}\index{mts\+Forward\+Declarations.\+h@{mts\+Forward\+Declarations.\+h}!M\+T\+S\+\_\+\+O\+P\+T\+I\+O\+N\+A\+L@{M\+T\+S\+\_\+\+O\+P\+T\+I\+O\+N\+A\+L}}\item[{\em 
+\hypertarget{mts_forward_declarations_8h_a9ef1ce54724afde7802db326ff8606f3a77b50ae7108c63abd100fe57d63a0f71}{}M\+T\+S\+\_\+\+O\+P\+T\+I\+O\+N\+A\+L\label{mts_forward_declarations_8h_a9ef1ce54724afde7802db326ff8606f3a77b50ae7108c63abd100fe57d63a0f71}
+}]\index{M\+T\+S\+\_\+\+R\+E\+Q\+U\+I\+R\+E\+D@{M\+T\+S\+\_\+\+R\+E\+Q\+U\+I\+R\+E\+D}!mts\+Forward\+Declarations.\+h@{mts\+Forward\+Declarations.\+h}}\index{mts\+Forward\+Declarations.\+h@{mts\+Forward\+Declarations.\+h}!M\+T\+S\+\_\+\+R\+E\+Q\+U\+I\+R\+E\+D@{M\+T\+S\+\_\+\+R\+E\+Q\+U\+I\+R\+E\+D}}\item[{\em 
+\hypertarget{mts_forward_declarations_8h_a9ef1ce54724afde7802db326ff8606f3ae01fd85391b60e546bbb1be9716c4ec9}{}M\+T\+S\+\_\+\+R\+E\+Q\+U\+I\+R\+E\+D\label{mts_forward_declarations_8h_a9ef1ce54724afde7802db326ff8606f3ae01fd85391b60e546bbb1be9716c4ec9}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Function Documentation}
+\hypertarget{mts_forward_declarations_8h_a84644fa994faefd7a9fa845ce442a479}{}\index{mts\+Forward\+Declarations.\+h@{mts\+Forward\+Declarations.\+h}!mts\+Object\+Name@{mts\+Object\+Name}}
+\index{mts\+Object\+Name@{mts\+Object\+Name}!mts\+Forward\+Declarations.\+h@{mts\+Forward\+Declarations.\+h}}
+\subsubsection[{mts\+Object\+Name}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string mts\+Object\+Name (
+\begin{DoxyParamCaption}
+\item[{const void $\ast$}]{C\+M\+N\+\_\+\+U\+N\+U\+S\+E\+Dobject}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{mts_forward_declarations_8h_a84644fa994faefd7a9fa845ce442a479}
+\hypertarget{mts_forward_declarations_8h_a6c14333cd80b02d7af3e8ff8dd75ec69}{}\index{mts\+Forward\+Declarations.\+h@{mts\+Forward\+Declarations.\+h}!mts\+Object\+Name@{mts\+Object\+Name}}
+\index{mts\+Object\+Name@{mts\+Object\+Name}!mts\+Forward\+Declarations.\+h@{mts\+Forward\+Declarations.\+h}}
+\subsubsection[{mts\+Object\+Name}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string mts\+Object\+Name (
+\begin{DoxyParamCaption}
+\item[{const {\bf mts\+Generic\+Object} $\ast$}]{object}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{mts_forward_declarations_8h_a6c14333cd80b02d7af3e8ff8dd75ec69}
+
+
+\subsection{Variable Documentation}
+\hypertarget{mts_forward_declarations_8h_afa0f9196284a3cea6a91094a0f45209e}{}\index{mts\+Forward\+Declarations.\+h@{mts\+Forward\+Declarations.\+h}!Invalid\+Connection\+I\+D@{Invalid\+Connection\+I\+D}}
+\index{Invalid\+Connection\+I\+D@{Invalid\+Connection\+I\+D}!mts\+Forward\+Declarations.\+h@{mts\+Forward\+Declarations.\+h}}
+\subsubsection[{Invalid\+Connection\+I\+D}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Connection\+I\+D\+Type} Invalid\+Connection\+I\+D = ({\bf Connection\+I\+D\+Type}) std\+::numeric\+\_\+limits$<$int$>$\+::max()}\label{mts_forward_declarations_8h_afa0f9196284a3cea6a91094a0f45209e}

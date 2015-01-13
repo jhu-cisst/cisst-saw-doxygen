@@ -1,0 +1,75 @@
+\hypertarget{classmts_c_a_n_bus}{}\section{mts\+C\+A\+N\+Bus Class Reference}
+\label{classmts_c_a_n_bus}\index{mts\+C\+A\+N\+Bus@{mts\+C\+A\+N\+Bus}}
+
+
+M\+T\+S interfaces for a saw\+C\+A\+N\+Bus device.  
+
+
+
+
+{\ttfamily \#include $<$mts\+C\+A\+N\+Bus.\+h$>$}
+
+Inheritance diagram for mts\+C\+A\+N\+Bus\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{db/de1/classmts_c_a_n_bus}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmts_c_a_n_bus_aee41c73121b347bf181bf51ff0cfa3ae}{mts\+C\+A\+N\+Bus} (const std\+::string \&componentname, \hyperlink{classosa_c_a_n_bus}{osa\+C\+A\+N\+Bus} $\ast$can)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmts_interface_provided}{mts\+Interface\+Provided} $\ast$ \hyperlink{classmts_c_a_n_bus_a273a160e43d6b59b9f451c7ef8c1f93e}{io}
+\begin{DoxyCompactList}\small\item\em The input/output interface. \end{DoxyCompactList}\item 
+\hyperlink{classmts_interface_provided}{mts\+Interface\+Provided} $\ast$ \hyperlink{classmts_c_a_n_bus_ae87e117a52479bae3ec4464f2448e8c2}{ctl}
+\begin{DoxyCompactList}\small\item\em The control interface. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+M\+T\+S interfaces for a saw\+C\+A\+N\+Bus device. 
+
+This class implements 2 M\+T\+S interfaces that can be attached to any saw\+C\+A\+N\+Bus device. The first interface is for I\+O (read/write) and the second interface (C\+T\+L) is for controlling the device. The I\+O interface provides two methods for reading/writing to the C\+A\+N device. The C\+T\+L interface provides Open/\+Close methods. Both methods use the mts\+C\+A\+N\+Frame type. This class is not intended to be used by itself but to be \char`\"{}attached\char`\"{} to a saw\+C\+A\+N\+Bus device (i.\+e. multiple inheritance). 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmts_c_a_n_bus_aee41c73121b347bf181bf51ff0cfa3ae}{}\index{mts\+C\+A\+N\+Bus@{mts\+C\+A\+N\+Bus}!mts\+C\+A\+N\+Bus@{mts\+C\+A\+N\+Bus}}
+\index{mts\+C\+A\+N\+Bus@{mts\+C\+A\+N\+Bus}!mts\+C\+A\+N\+Bus@{mts\+C\+A\+N\+Bus}}
+\subsubsection[{mts\+C\+A\+N\+Bus}]{\setlength{\rightskip}{0pt plus 5cm}mts\+C\+A\+N\+Bus\+::mts\+C\+A\+N\+Bus (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{componentname, }
+\item[{{\bf osa\+C\+A\+N\+Bus} $\ast$}]{can}
+\end{DoxyParamCaption}
+)}\label{classmts_c_a_n_bus_aee41c73121b347bf181bf51ff0cfa3ae}
+Creates the M\+T\+S interfaces for the C\+A\+N device and add read/write commands. 
+\begin{DoxyParams}{Parameters}
+{\em componentname} & The M\+T\+S name of the component \\
+\hline
+{\em can} & The C\+A\+N device to attach to the M\+T\+S interfaces \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classmts_c_a_n_bus_ae87e117a52479bae3ec4464f2448e8c2}{}\index{mts\+C\+A\+N\+Bus@{mts\+C\+A\+N\+Bus}!ctl@{ctl}}
+\index{ctl@{ctl}!mts\+C\+A\+N\+Bus@{mts\+C\+A\+N\+Bus}}
+\subsubsection[{ctl}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+Interface\+Provided}$\ast$ mts\+C\+A\+N\+Bus\+::ctl\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_c_a_n_bus_ae87e117a52479bae3ec4464f2448e8c2}
+
+
+The control interface. 
+
+\hypertarget{classmts_c_a_n_bus_a273a160e43d6b59b9f451c7ef8c1f93e}{}\index{mts\+C\+A\+N\+Bus@{mts\+C\+A\+N\+Bus}!io@{io}}
+\index{io@{io}!mts\+C\+A\+N\+Bus@{mts\+C\+A\+N\+Bus}}
+\subsubsection[{io}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+Interface\+Provided}$\ast$ mts\+C\+A\+N\+Bus\+::io\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_c_a_n_bus_a273a160e43d6b59b9f451c7ef8c1f93e}
+
+
+The input/output interface. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/saw\+C\+A\+N\+Bus/include/saw\+C\+A\+N\+Bus/\hyperlink{mts_c_a_n_bus_8h}{mts\+C\+A\+N\+Bus.\+h}\end{DoxyCompactItemize}

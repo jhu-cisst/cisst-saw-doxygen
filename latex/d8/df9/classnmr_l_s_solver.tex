@@ -1,0 +1,215 @@
+\hypertarget{classnmr_l_s_solver}{}\section{nmr\+L\+S\+Solver Class Reference}
+\label{classnmr_l_s_solver}\index{nmr\+L\+S\+Solver@{nmr\+L\+S\+Solver}}
+
+
+{\ttfamily \#include $<$nmr\+L\+S\+Solver.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classnmr_l_s_solver_a1f0d69b7a362dab5edb72af3ecf00527}{nmr\+L\+S\+Solver} (void)
+\item 
+\hyperlink{classnmr_l_s_solver_ac462b55b1440d64521aa9e8ee4f4d222}{nmr\+L\+S\+Solver} (C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R m, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R n, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R nrhs, bool storage\+Order)
+\item 
+void \hyperlink{classnmr_l_s_solver_a0ee08c078dcb9256504a06d3c77ac102}{Allocate} (C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R m, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R n, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R nrhs, bool storage\+Order)
+\end{DoxyCompactItemize}
+{\bf }\par
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classnmr_l_s_solver_a341c5d3ce07e36febb3ff1136d739638}{nmr\+L\+S\+Solver} (\hyperlink{classvct_dynamic_matrix}{vct\+Dynamic\+Matrix}$<$ double $>$ \&A, \hyperlink{classvct_dynamic_matrix}{vct\+Dynamic\+Matrix}$<$ double $>$ \&B)
+\end{DoxyCompactItemize}
+
+{\bf }\par
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classnmr_l_s_solver_a6bde52519284ac538466e6608f78a72d}{Allocate} (\hyperlink{classvct_dynamic_matrix}{vct\+Dynamic\+Matrix}$<$ double $>$ \&A, \hyperlink{classvct_dynamic_matrix}{vct\+Dynamic\+Matrix}$<$ double $>$ \&B)
+\end{DoxyCompactItemize}
+
+{\bf }\par
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class \+\_\+matrix\+Owner\+Type $>$ }\\void \hyperlink{classnmr_l_s_solver_acdb3f0210b607660f85804cfce5981b9}{Solve} (\hyperlink{classvct_dynamic_matrix_base}{vct\+Dynamic\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type, double $>$ \&A, \hyperlink{classvct_dynamic_matrix_base}{vct\+Dynamic\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type, double $>$ \&B)  throw (std\+::runtime\+\_\+error)
+\end{DoxyCompactItemize}
+
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R \hyperlink{classnmr_l_s_solver_a8911bae5a933a6479875c0b3e600ad33}{M}
+\item 
+C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R \hyperlink{classnmr_l_s_solver_a06ea8b9ad9abd90f794cdeb74c25b8f8}{N}
+\item 
+C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R \hyperlink{classnmr_l_s_solver_a01d9ecf148cd5d9e59906b5e665af2ca}{N\+R\+H\+S}
+\item 
+C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R \hyperlink{classnmr_l_s_solver_a91f013fd3848b399838934e9944a8b03}{Lda}
+\item 
+C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R \hyperlink{classnmr_l_s_solver_a18e45725c1e373bccc3201e20a483fcb}{Ldb}
+\item 
+C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R \hyperlink{classnmr_l_s_solver_a495b9cb5c8c3b62b1d12a0ba6f4e1690}{Lwork}
+\item 
+char \hyperlink{classnmr_l_s_solver_a55e24be3fab77ab196c264948a7e6616}{Trans}
+\item 
+\hyperlink{classvct_dynamic_matrix}{vct\+Dynamic\+Matrix}$<$ double $>$ \hyperlink{classnmr_l_s_solver_a4b87766126014f24e3a2dbc2c3ab3d31}{Work}
+\item 
+C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R \hyperlink{classnmr_l_s_solver_a6d0d69c4ff841404a6be897dc17f41aa}{Info}
+\item 
+bool \hyperlink{classnmr_l_s_solver_a86082a8fc8b55dee2d677af9222fc7e6}{Storage\+Order}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Algorithm L\+S\+: Least Squares by Q\+R or L\+Q decomposition This solves overdetermined or underdetermined real linear systems involving an M-\/by-\/\+N matrix A, or its transpose, using a Q\+R or L\+Q factorization of A. It is assumed that A has full rank.
+
+The following options are provided\+:
+
+
+\begin{DoxyEnumerate}
+\item If m $>$= n\+: find the least squares solution of an overdetermined system, i.\+e., solve the least squares problem $ \mbox {minimize} \| B - A*X \| $
+\item If m $<$ n\+: find the minimum norm solution of an underdetermined system $ A * X = B $
+\end{DoxyEnumerate}
+
+The data members of this class are\+:
+
+
+\begin{DoxyItemize}
+\item M\+: The number of rows of the input matrix A. $ M >= 0 $.
+\item N\+: The number of columns of the input matrix A. $ N >= 0 $.
+\item N\+R\+H\+S\+: The number of right hand sides, i.\+e., the number of columns of the matrices B and X. $ NRHS >=0 $.
+\item Lda\+: The leading dimension of the array A. $ Lda \geq \mbox{max}(1,M) $.
+\item Ldb\+: The leading dimension of the array B. $ Ldb \geq \mbox{max}(1,M,N). $.
+\item Lwork\+: The dimension of the matrix Work. $ Lwork \geq \mbox{max}( 1, MN + max( MN, NRHS ) )$. For optimal performance, $ Lwork \geq \mbox{max}( 1, MN + max( MN, NRHS )*NB )$. where $ MN = \mbox{min}(M,N) $ and $ NB $ is the optimum block size.
+\item Info\+: = 0\+: successful exit $<$ 0\+: argument had an illegal value
+\item Work\+: Working matrix of dimenstion $ Lwork \times 1 $.
+\end{DoxyItemize}
+
+The input/output from this class is\+:
+\begin{DoxyItemize}
+\item A\+: On entry, the $ M \times N $ matrix A. On exit, if M $>$= N, A is overwritten by details of its Q\+R factorization if M $<$ N, A is overwritten by details of its L\+Q factorization
+\item B\+: On entry, the matrix B of right hand side vectors, stored columnwise; B is M-\/by-\/\+N\+R\+H\+S On exit, B is overwritten by the solution vectors, stored columnwise\+: if m $>$= n, rows 1 to n of B contain the least squares solution vectors; the residual sum of squares for the solution in each column is given by the sum of squares of elements N+1 to M in that column; if m $<$ n, rows 1 to N of B contain the minimum norm solution vectors;
+\end{DoxyItemize}
+
+\begin{DoxyNote}{Note}
+The input matrix must be compact (see \hyperlink{classvct_dynamic_const_matrix_base_ac061c634b765bbd24e2772375c4578a1}{vct\+Dynamic\+Matrix\+::\+Is\+Compact()} or vct\+Fixed\+Size\+Matrix\+::\+Is\+Compact()).
+
+This code relies on the E\+R\+C C\+I\+S\+S\+T cnetlib library. Since cnetlib is optional, make sure that C\+I\+S\+S\+T\+\_\+\+H\+A\+S\+\_\+\+C\+N\+E\+T\+L\+I\+B has been turned O\+N during the configuration with C\+Make. 
+\end{DoxyNote}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classnmr_l_s_solver_a1f0d69b7a362dab5edb72af3ecf00527}{}\index{nmr\+L\+S\+Solver@{nmr\+L\+S\+Solver}!nmr\+L\+S\+Solver@{nmr\+L\+S\+Solver}}
+\index{nmr\+L\+S\+Solver@{nmr\+L\+S\+Solver}!nmr\+L\+S\+Solver@{nmr\+L\+S\+Solver}}
+\subsubsection[{nmr\+L\+S\+Solver}]{\setlength{\rightskip}{0pt plus 5cm}nmr\+L\+S\+Solver\+::nmr\+L\+S\+Solver (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classnmr_l_s_solver_a1f0d69b7a362dab5edb72af3ecf00527}
+Default constructor. This constructor doesn\textquotesingle{}t allocate any memory. If you use this constructor, you will need to use one of the \hyperlink{classnmr_l_s_solver_a0ee08c078dcb9256504a06d3c77ac102}{Allocate()} methods before you can use the Solve method. \hypertarget{classnmr_l_s_solver_ac462b55b1440d64521aa9e8ee4f4d222}{}\index{nmr\+L\+S\+Solver@{nmr\+L\+S\+Solver}!nmr\+L\+S\+Solver@{nmr\+L\+S\+Solver}}
+\index{nmr\+L\+S\+Solver@{nmr\+L\+S\+Solver}!nmr\+L\+S\+Solver@{nmr\+L\+S\+Solver}}
+\subsubsection[{nmr\+L\+S\+Solver}]{\setlength{\rightskip}{0pt plus 5cm}nmr\+L\+S\+Solver\+::nmr\+L\+S\+Solver (
+\begin{DoxyParamCaption}
+\item[{C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R}]{m, }
+\item[{C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R}]{n, }
+\item[{C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R}]{nrhs, }
+\item[{bool}]{storage\+Order}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classnmr_l_s_solver_ac462b55b1440d64521aa9e8ee4f4d222}
+Constructor with memory allocation. This constructor allocates the memory based on M and N. It relies on the method \hyperlink{classnmr_l_s_solver_a0ee08c078dcb9256504a06d3c77ac102}{Allocate()}. The next call to the \hyperlink{classnmr_l_s_solver_acdb3f0210b607660f85804cfce5981b9}{Solve()} method will check that the parameters match the dimension.
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & Number of rows of A \\
+\hline
+{\em n} & Number of columns of A \\
+\hline
+{\em nrhs} & Number of columns of B \\
+\hline
+{\em storage\+Order} & Storage order used for the input matrix. This order will be used for the output as well. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classnmr_l_s_solver_a341c5d3ce07e36febb3ff1136d739638}{}\index{nmr\+L\+S\+Solver@{nmr\+L\+S\+Solver}!nmr\+L\+S\+Solver@{nmr\+L\+S\+Solver}}
+\index{nmr\+L\+S\+Solver@{nmr\+L\+S\+Solver}!nmr\+L\+S\+Solver@{nmr\+L\+S\+Solver}}
+\subsubsection[{nmr\+L\+S\+Solver}]{\setlength{\rightskip}{0pt plus 5cm}nmr\+L\+S\+Solver\+::nmr\+L\+S\+Solver (
+\begin{DoxyParamCaption}
+\item[{{\bf vct\+Dynamic\+Matrix}$<$ double $>$ \&}]{A, }
+\item[{{\bf vct\+Dynamic\+Matrix}$<$ double $>$ \&}]{B}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classnmr_l_s_solver_a341c5d3ce07e36febb3ff1136d739638}
+Constructor with memory allocation. This constructor allocates the memory based on the actual input of the \hyperlink{classnmr_l_s_solver_acdb3f0210b607660f85804cfce5981b9}{Solve()} method. It relies on the method \hyperlink{classnmr_l_s_solver_a0ee08c078dcb9256504a06d3c77ac102}{Allocate()}. The next call to the \hyperlink{classnmr_l_s_solver_acdb3f0210b607660f85804cfce5981b9}{Solve()} method will check that the parameters match the dimension and storage order. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classnmr_l_s_solver_a0ee08c078dcb9256504a06d3c77ac102}{}\index{nmr\+L\+S\+Solver@{nmr\+L\+S\+Solver}!Allocate@{Allocate}}
+\index{Allocate@{Allocate}!nmr\+L\+S\+Solver@{nmr\+L\+S\+Solver}}
+\subsubsection[{Allocate}]{\setlength{\rightskip}{0pt plus 5cm}void nmr\+L\+S\+Solver\+::\+Allocate (
+\begin{DoxyParamCaption}
+\item[{C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R}]{m, }
+\item[{C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R}]{n, }
+\item[{C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R}]{nrhs, }
+\item[{bool}]{storage\+Order}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classnmr_l_s_solver_a0ee08c078dcb9256504a06d3c77ac102}
+This method allocates the memory based on M and N. The next call to the \hyperlink{classnmr_l_s_solver_acdb3f0210b607660f85804cfce5981b9}{Solve()} method will check that the parameters match the dimension.
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & Number of rows of A \\
+\hline
+{\em n} & Number of columns of A \\
+\hline
+{\em nrhs} & Number of columns of B \\
+\hline
+{\em storage\+Order} & Storage order used for all the matrices \\
+\hline
+\end{DoxyParams}
+\hypertarget{classnmr_l_s_solver_a6bde52519284ac538466e6608f78a72d}{}\index{nmr\+L\+S\+Solver@{nmr\+L\+S\+Solver}!Allocate@{Allocate}}
+\index{Allocate@{Allocate}!nmr\+L\+S\+Solver@{nmr\+L\+S\+Solver}}
+\subsubsection[{Allocate}]{\setlength{\rightskip}{0pt plus 5cm}void nmr\+L\+S\+Solver\+::\+Allocate (
+\begin{DoxyParamCaption}
+\item[{{\bf vct\+Dynamic\+Matrix}$<$ double $>$ \&}]{A, }
+\item[{{\bf vct\+Dynamic\+Matrix}$<$ double $>$ \&}]{B}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classnmr_l_s_solver_a6bde52519284ac538466e6608f78a72d}
+Allocate memory to solve this problem. This method provides a convenient way to extract the required sizes from the input containers. The next call to the \hyperlink{classnmr_l_s_solver_acdb3f0210b607660f85804cfce5981b9}{Solve()} method will check that the parameters match the dimension. \hypertarget{classnmr_l_s_solver_acdb3f0210b607660f85804cfce5981b9}{}\index{nmr\+L\+S\+Solver@{nmr\+L\+S\+Solver}!Solve@{Solve}}
+\index{Solve@{Solve}!nmr\+L\+S\+Solver@{nmr\+L\+S\+Solver}}
+\subsubsection[{Solve}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+matrix\+Owner\+Type $>$ void nmr\+L\+S\+Solver\+::\+Solve (
+\begin{DoxyParamCaption}
+\item[{{\bf vct\+Dynamic\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type, double $>$ \&}]{A, }
+\item[{{\bf vct\+Dynamic\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type, double $>$ \&}]{B}
+\end{DoxyParamCaption}
+) throw  std\+::runtime\+\_\+error) \hspace{0.3cm}{\ttfamily [inline]}}\label{classnmr_l_s_solver_acdb3f0210b607660f85804cfce5981b9}
+This computes the solves overdetermined or underdetermined real linear systems involving an M-\/by-\/\+N matrix A, using the right hand side M-\/by-\/\+N\+R\+H\+S matrix B. 
+
+\subsection{Member Data Documentation}
+\hypertarget{classnmr_l_s_solver_a6d0d69c4ff841404a6be897dc17f41aa}{}\index{nmr\+L\+S\+Solver@{nmr\+L\+S\+Solver}!Info@{Info}}
+\index{Info@{Info}!nmr\+L\+S\+Solver@{nmr\+L\+S\+Solver}}
+\subsubsection[{Info}]{\setlength{\rightskip}{0pt plus 5cm}C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R nmr\+L\+S\+Solver\+::\+Info\hspace{0.3cm}{\ttfamily [protected]}}\label{classnmr_l_s_solver_a6d0d69c4ff841404a6be897dc17f41aa}
+\hypertarget{classnmr_l_s_solver_a91f013fd3848b399838934e9944a8b03}{}\index{nmr\+L\+S\+Solver@{nmr\+L\+S\+Solver}!Lda@{Lda}}
+\index{Lda@{Lda}!nmr\+L\+S\+Solver@{nmr\+L\+S\+Solver}}
+\subsubsection[{Lda}]{\setlength{\rightskip}{0pt plus 5cm}C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R nmr\+L\+S\+Solver\+::\+Lda\hspace{0.3cm}{\ttfamily [protected]}}\label{classnmr_l_s_solver_a91f013fd3848b399838934e9944a8b03}
+\hypertarget{classnmr_l_s_solver_a18e45725c1e373bccc3201e20a483fcb}{}\index{nmr\+L\+S\+Solver@{nmr\+L\+S\+Solver}!Ldb@{Ldb}}
+\index{Ldb@{Ldb}!nmr\+L\+S\+Solver@{nmr\+L\+S\+Solver}}
+\subsubsection[{Ldb}]{\setlength{\rightskip}{0pt plus 5cm}C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R nmr\+L\+S\+Solver\+::\+Ldb\hspace{0.3cm}{\ttfamily [protected]}}\label{classnmr_l_s_solver_a18e45725c1e373bccc3201e20a483fcb}
+\hypertarget{classnmr_l_s_solver_a495b9cb5c8c3b62b1d12a0ba6f4e1690}{}\index{nmr\+L\+S\+Solver@{nmr\+L\+S\+Solver}!Lwork@{Lwork}}
+\index{Lwork@{Lwork}!nmr\+L\+S\+Solver@{nmr\+L\+S\+Solver}}
+\subsubsection[{Lwork}]{\setlength{\rightskip}{0pt plus 5cm}C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R nmr\+L\+S\+Solver\+::\+Lwork\hspace{0.3cm}{\ttfamily [protected]}}\label{classnmr_l_s_solver_a495b9cb5c8c3b62b1d12a0ba6f4e1690}
+\hypertarget{classnmr_l_s_solver_a8911bae5a933a6479875c0b3e600ad33}{}\index{nmr\+L\+S\+Solver@{nmr\+L\+S\+Solver}!M@{M}}
+\index{M@{M}!nmr\+L\+S\+Solver@{nmr\+L\+S\+Solver}}
+\subsubsection[{M}]{\setlength{\rightskip}{0pt plus 5cm}C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R nmr\+L\+S\+Solver\+::\+M\hspace{0.3cm}{\ttfamily [protected]}}\label{classnmr_l_s_solver_a8911bae5a933a6479875c0b3e600ad33}
+\hypertarget{classnmr_l_s_solver_a06ea8b9ad9abd90f794cdeb74c25b8f8}{}\index{nmr\+L\+S\+Solver@{nmr\+L\+S\+Solver}!N@{N}}
+\index{N@{N}!nmr\+L\+S\+Solver@{nmr\+L\+S\+Solver}}
+\subsubsection[{N}]{\setlength{\rightskip}{0pt plus 5cm}C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R nmr\+L\+S\+Solver\+::\+N\hspace{0.3cm}{\ttfamily [protected]}}\label{classnmr_l_s_solver_a06ea8b9ad9abd90f794cdeb74c25b8f8}
+\hypertarget{classnmr_l_s_solver_a01d9ecf148cd5d9e59906b5e665af2ca}{}\index{nmr\+L\+S\+Solver@{nmr\+L\+S\+Solver}!N\+R\+H\+S@{N\+R\+H\+S}}
+\index{N\+R\+H\+S@{N\+R\+H\+S}!nmr\+L\+S\+Solver@{nmr\+L\+S\+Solver}}
+\subsubsection[{N\+R\+H\+S}]{\setlength{\rightskip}{0pt plus 5cm}C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R nmr\+L\+S\+Solver\+::\+N\+R\+H\+S\hspace{0.3cm}{\ttfamily [protected]}}\label{classnmr_l_s_solver_a01d9ecf148cd5d9e59906b5e665af2ca}
+\hypertarget{classnmr_l_s_solver_a86082a8fc8b55dee2d677af9222fc7e6}{}\index{nmr\+L\+S\+Solver@{nmr\+L\+S\+Solver}!Storage\+Order@{Storage\+Order}}
+\index{Storage\+Order@{Storage\+Order}!nmr\+L\+S\+Solver@{nmr\+L\+S\+Solver}}
+\subsubsection[{Storage\+Order}]{\setlength{\rightskip}{0pt plus 5cm}bool nmr\+L\+S\+Solver\+::\+Storage\+Order\hspace{0.3cm}{\ttfamily [protected]}}\label{classnmr_l_s_solver_a86082a8fc8b55dee2d677af9222fc7e6}
+\hypertarget{classnmr_l_s_solver_a55e24be3fab77ab196c264948a7e6616}{}\index{nmr\+L\+S\+Solver@{nmr\+L\+S\+Solver}!Trans@{Trans}}
+\index{Trans@{Trans}!nmr\+L\+S\+Solver@{nmr\+L\+S\+Solver}}
+\subsubsection[{Trans}]{\setlength{\rightskip}{0pt plus 5cm}char nmr\+L\+S\+Solver\+::\+Trans\hspace{0.3cm}{\ttfamily [protected]}}\label{classnmr_l_s_solver_a55e24be3fab77ab196c264948a7e6616}
+\hypertarget{classnmr_l_s_solver_a4b87766126014f24e3a2dbc2c3ab3d31}{}\index{nmr\+L\+S\+Solver@{nmr\+L\+S\+Solver}!Work@{Work}}
+\index{Work@{Work}!nmr\+L\+S\+Solver@{nmr\+L\+S\+Solver}}
+\subsubsection[{Work}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Dynamic\+Matrix}$<$double$>$ nmr\+L\+S\+Solver\+::\+Work\hspace{0.3cm}{\ttfamily [protected]}}\label{classnmr_l_s_solver_a4b87766126014f24e3a2dbc2c3ab3d31}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Numerical/\hyperlink{nmr_l_s_solver_8h}{nmr\+L\+S\+Solver.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,83 @@
+\hypertarget{classosa_o_d_e_barrett_hand}{}\section{osa\+O\+D\+E\+Barrett\+Hand Class Reference}
+\label{classosa_o_d_e_barrett_hand}\index{osa\+O\+D\+E\+Barrett\+Hand@{osa\+O\+D\+E\+Barrett\+Hand}}
+
+
+O\+D\+E \hyperlink{struct_barrett}{Barrett} Hand.  
+
+
+
+
+{\ttfamily \#include $<$osa\+O\+D\+E\+Barrett\+Hand.\+h$>$}
+
+Inheritance diagram for osa\+O\+D\+E\+Barrett\+Hand\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{d5/d72/classosa_o_d_e_barrett_hand}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classosa_o_d_e_barrett_hand_ae526bb3fca40d83bbc14b4f999186c47}{osa\+O\+D\+E\+Barrett\+Hand} (const std\+::string \&palmmodel, const std\+::string \&metacarpalmodel, const std\+::string \&proximalmodel, const std\+::string \&intermediatemodel, \hyperlink{classosa_o_d_e_world}{osa\+O\+D\+E\+World} $\ast$world, const \hyperlink{classvct_frame4x4}{vct\+Frame4x4}$<$ double $>$ \&\hyperlink{classrob_manipulator_ab48d9d9a166bf252698bc35788ca6ad6}{Rtw0}, const std\+::string \&f1f2filename, const std\+::string \&f3filename)
+\begin{DoxyCompactList}\small\item\em \hyperlink{struct_barrett}{Barrett} Hand constructor. \end{DoxyCompactList}\item 
+\hyperlink{classosa_o_d_e_barrett_hand_a79240e785e4b44d74f789513e1f90678}{osa\+O\+D\+E\+Barrett\+Hand} (const std\+::string \&palmmodel, const std\+::string \&metacarpalmodel, const std\+::string \&proximalmodel, const std\+::string \&intermediatemodel, \hyperlink{classosa_o_d_e_world}{osa\+O\+D\+E\+World} $\ast$world, const \hyperlink{vct_transformation_types_8h_a81feda0a02c2d1bc26e5553f409fed20}{vct\+Frm3} \&\hyperlink{classrob_manipulator_ab48d9d9a166bf252698bc35788ca6ad6}{Rtw0}, const std\+::string \&f1f2filename, const std\+::string \&f3filename)
+\begin{DoxyCompactList}\small\item\em \hyperlink{struct_barrett}{Barrett} Hand constructor. \end{DoxyCompactList}\item 
+\hyperlink{classosa_o_d_e_barrett_hand_acd1a9835c1ce44d9944927f6ca045714}{$\sim$osa\+O\+D\+E\+Barrett\+Hand} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+O\+D\+E \hyperlink{struct_barrett}{Barrett} Hand. 
+
+This class implements a \hyperlink{struct_barrett}{Barrett} hand device for O\+D\+E simulation. The class is derived from \hyperlink{classosa_o_d_e_manipulator}{osa\+O\+D\+E\+Manipulator} yet it reimplements most of the virtual methods due to the parallel and underactuated architecture. The hand creates 3 fingers, themselves O\+D\+E manipulators devices and dispatches the I/\+O to each finger. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classosa_o_d_e_barrett_hand_ae526bb3fca40d83bbc14b4f999186c47}{}\index{osa\+O\+D\+E\+Barrett\+Hand@{osa\+O\+D\+E\+Barrett\+Hand}!osa\+O\+D\+E\+Barrett\+Hand@{osa\+O\+D\+E\+Barrett\+Hand}}
+\index{osa\+O\+D\+E\+Barrett\+Hand@{osa\+O\+D\+E\+Barrett\+Hand}!osa\+O\+D\+E\+Barrett\+Hand@{osa\+O\+D\+E\+Barrett\+Hand}}
+\subsubsection[{osa\+O\+D\+E\+Barrett\+Hand}]{\setlength{\rightskip}{0pt plus 5cm}osa\+O\+D\+E\+Barrett\+Hand\+::osa\+O\+D\+E\+Barrett\+Hand (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{palmmodel, }
+\item[{const std\+::string \&}]{metacarpalmodel, }
+\item[{const std\+::string \&}]{proximalmodel, }
+\item[{const std\+::string \&}]{intermediatemodel, }
+\item[{{\bf osa\+O\+D\+E\+World} $\ast$}]{world, }
+\item[{const {\bf vct\+Frame4x4}$<$ double $>$ \&}]{Rtw0, }
+\item[{const std\+::string \&}]{f1f2filename, }
+\item[{const std\+::string \&}]{f3filename}
+\end{DoxyParamCaption}
+)}\label{classosa_o_d_e_barrett_hand_ae526bb3fca40d83bbc14b4f999186c47}
+
+
+\hyperlink{struct_barrett}{Barrett} Hand constructor. 
+
+\hypertarget{classosa_o_d_e_barrett_hand_a79240e785e4b44d74f789513e1f90678}{}\index{osa\+O\+D\+E\+Barrett\+Hand@{osa\+O\+D\+E\+Barrett\+Hand}!osa\+O\+D\+E\+Barrett\+Hand@{osa\+O\+D\+E\+Barrett\+Hand}}
+\index{osa\+O\+D\+E\+Barrett\+Hand@{osa\+O\+D\+E\+Barrett\+Hand}!osa\+O\+D\+E\+Barrett\+Hand@{osa\+O\+D\+E\+Barrett\+Hand}}
+\subsubsection[{osa\+O\+D\+E\+Barrett\+Hand}]{\setlength{\rightskip}{0pt plus 5cm}osa\+O\+D\+E\+Barrett\+Hand\+::osa\+O\+D\+E\+Barrett\+Hand (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{palmmodel, }
+\item[{const std\+::string \&}]{metacarpalmodel, }
+\item[{const std\+::string \&}]{proximalmodel, }
+\item[{const std\+::string \&}]{intermediatemodel, }
+\item[{{\bf osa\+O\+D\+E\+World} $\ast$}]{world, }
+\item[{const {\bf vct\+Frm3} \&}]{Rtw0, }
+\item[{const std\+::string \&}]{f1f2filename, }
+\item[{const std\+::string \&}]{f3filename}
+\end{DoxyParamCaption}
+)}\label{classosa_o_d_e_barrett_hand_a79240e785e4b44d74f789513e1f90678}
+
+
+\hyperlink{struct_barrett}{Barrett} Hand constructor. 
+
+\hypertarget{classosa_o_d_e_barrett_hand_acd1a9835c1ce44d9944927f6ca045714}{}\index{osa\+O\+D\+E\+Barrett\+Hand@{osa\+O\+D\+E\+Barrett\+Hand}!````~osa\+O\+D\+E\+Barrett\+Hand@{$\sim$osa\+O\+D\+E\+Barrett\+Hand}}
+\index{````~osa\+O\+D\+E\+Barrett\+Hand@{$\sim$osa\+O\+D\+E\+Barrett\+Hand}!osa\+O\+D\+E\+Barrett\+Hand@{osa\+O\+D\+E\+Barrett\+Hand}}
+\subsubsection[{$\sim$osa\+O\+D\+E\+Barrett\+Hand}]{\setlength{\rightskip}{0pt plus 5cm}osa\+O\+D\+E\+Barrett\+Hand\+::$\sim$osa\+O\+D\+E\+Barrett\+Hand (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classosa_o_d_e_barrett_hand_acd1a9835c1ce44d9944927f6ca045714}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/saw\+Open\+Dynamics\+Engine/include/saw\+Open\+Dynamics\+Engine/\hyperlink{osa_o_d_e_barrett_hand_8h}{osa\+O\+D\+E\+Barrett\+Hand.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,220 @@
+\hypertarget{classsvl_stream_manager}{}\section{svl\+Stream\+Manager Class Reference}
+\label{classsvl_stream_manager}\index{svl\+Stream\+Manager@{svl\+Stream\+Manager}}
+
+
+{\ttfamily \#include $<$svl\+Stream\+Manager.\+h$>$}
+
+Inheritance diagram for svl\+Stream\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{d1/dd6/classsvl_stream_manager}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsvl_stream_manager_a68ff7a941266f0906331aa3afccb778c}{svl\+Stream\+Manager} ()
+\item 
+\hyperlink{classsvl_stream_manager_a5d1b8134aa11537f167b51fc37d04b6d}{svl\+Stream\+Manager} (unsigned int threadcount)
+\item 
+\hyperlink{classsvl_stream_manager_a6bcc10c3012b0dd0d8a0fdb6c28cc46d}{$\sim$svl\+Stream\+Manager} ()
+\item 
+int \hyperlink{classsvl_stream_manager_aedd7f5b0f3f9542bf9d36b5b4848bffd}{Set\+Source\+Filter} (\hyperlink{classsvl_filter_source_base}{svl\+Filter\+Source\+Base} $\ast$source)
+\item 
+int \hyperlink{classsvl_stream_manager_a63d7780527caa9d39ab02a87cf736025}{Initialize} (void)
+\item 
+void \hyperlink{classsvl_stream_manager_a965dd0cc4055c77af739aa4c590a4e3f}{Release} (void)
+\item 
+bool \hyperlink{classsvl_stream_manager_aee755c1e0a31caf0390ab556919ced91}{Is\+Initialized} (void) const 
+\item 
+int \hyperlink{classsvl_stream_manager_a45adcd750e21702136ee31a990961fa8}{Play} (void)
+\item 
+void \hyperlink{classsvl_stream_manager_a291907660704e8c6baf1364933a1b09a}{Stop} (void)
+\item 
+bool \hyperlink{classsvl_stream_manager_a18b7bab00b796854ef65bc250217a4c4}{Is\+Running} (void) const 
+\item 
+int \hyperlink{classsvl_stream_manager_a974d869b5b117d7ea87f7e4fa59c5a5c}{Wait\+For\+Stop} (double timeout=-\/1.\+0)
+\item 
+int \hyperlink{classsvl_stream_manager_a2fa049bd09f47b1d1449be7998e279ab}{Get\+Stream\+Status} (void) const 
+\item 
+void \hyperlink{classsvl_stream_manager_aedf2a8db4ac9fe6e87be13f9f99fe14d}{Disconnect\+All} (void)
+\item 
+void \hyperlink{classsvl_stream_manager_ad058664024ee544c2cd79338dc5592b7}{Start} (void)
+\item 
+void \hyperlink{classsvl_stream_manager_a5cc3d23d1cb765fed83376908ec5a30a}{Suspend} (void)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classsvl_stream_manager_ab10a3b3ef0c290a0c455f7f6aaef91ba}{Create\+Interfaces} (void)
+\item 
+virtual void \hyperlink{classsvl_stream_manager_a530c56aceb9cd1d93fddd75715ece8fc}{Play\+Command} (void)
+\item 
+virtual void \hyperlink{classsvl_stream_manager_ad58ece1ed1cb4149024ee7b605f8ae17}{Initialize\+Command} (void)
+\item 
+virtual void \hyperlink{classsvl_stream_manager_af89d94646fba67c06df3aa7a72cf09af}{Set\+Source\+Filter\+Command} (const \hyperlink{mts_generic_object_proxy_8h_adbc21bfbf98367e582bf8a263b7e711f}{mts\+Std\+String} \&source)
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classsvl_stream_manager_a6a9ee1dec5ca263793dca09411295245}{svl\+Stream\+Proc}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classsvl_stream_manager_a68ff7a941266f0906331aa3afccb778c}{}\index{svl\+Stream\+Manager@{svl\+Stream\+Manager}!svl\+Stream\+Manager@{svl\+Stream\+Manager}}
+\index{svl\+Stream\+Manager@{svl\+Stream\+Manager}!svl\+Stream\+Manager@{svl\+Stream\+Manager}}
+\subsubsection[{svl\+Stream\+Manager}]{\setlength{\rightskip}{0pt plus 5cm}svl\+Stream\+Manager\+::svl\+Stream\+Manager (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classsvl_stream_manager_a68ff7a941266f0906331aa3afccb778c}
+\hypertarget{classsvl_stream_manager_a5d1b8134aa11537f167b51fc37d04b6d}{}\index{svl\+Stream\+Manager@{svl\+Stream\+Manager}!svl\+Stream\+Manager@{svl\+Stream\+Manager}}
+\index{svl\+Stream\+Manager@{svl\+Stream\+Manager}!svl\+Stream\+Manager@{svl\+Stream\+Manager}}
+\subsubsection[{svl\+Stream\+Manager}]{\setlength{\rightskip}{0pt plus 5cm}svl\+Stream\+Manager\+::svl\+Stream\+Manager (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{threadcount}
+\end{DoxyParamCaption}
+)}\label{classsvl_stream_manager_a5d1b8134aa11537f167b51fc37d04b6d}
+\hypertarget{classsvl_stream_manager_a6bcc10c3012b0dd0d8a0fdb6c28cc46d}{}\index{svl\+Stream\+Manager@{svl\+Stream\+Manager}!````~svl\+Stream\+Manager@{$\sim$svl\+Stream\+Manager}}
+\index{````~svl\+Stream\+Manager@{$\sim$svl\+Stream\+Manager}!svl\+Stream\+Manager@{svl\+Stream\+Manager}}
+\subsubsection[{$\sim$svl\+Stream\+Manager}]{\setlength{\rightskip}{0pt plus 5cm}svl\+Stream\+Manager\+::$\sim$svl\+Stream\+Manager (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classsvl_stream_manager_a6bcc10c3012b0dd0d8a0fdb6c28cc46d}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classsvl_stream_manager_ab10a3b3ef0c290a0c455f7f6aaef91ba}{}\index{svl\+Stream\+Manager@{svl\+Stream\+Manager}!Create\+Interfaces@{Create\+Interfaces}}
+\index{Create\+Interfaces@{Create\+Interfaces}!svl\+Stream\+Manager@{svl\+Stream\+Manager}}
+\subsubsection[{Create\+Interfaces}]{\setlength{\rightskip}{0pt plus 5cm}virtual void svl\+Stream\+Manager\+::\+Create\+Interfaces (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classsvl_stream_manager_ab10a3b3ef0c290a0c455f7f6aaef91ba}
+\hypertarget{classsvl_stream_manager_aedf2a8db4ac9fe6e87be13f9f99fe14d}{}\index{svl\+Stream\+Manager@{svl\+Stream\+Manager}!Disconnect\+All@{Disconnect\+All}}
+\index{Disconnect\+All@{Disconnect\+All}!svl\+Stream\+Manager@{svl\+Stream\+Manager}}
+\subsubsection[{Disconnect\+All}]{\setlength{\rightskip}{0pt plus 5cm}void svl\+Stream\+Manager\+::\+Disconnect\+All (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classsvl_stream_manager_aedf2a8db4ac9fe6e87be13f9f99fe14d}
+\hypertarget{classsvl_stream_manager_a2fa049bd09f47b1d1449be7998e279ab}{}\index{svl\+Stream\+Manager@{svl\+Stream\+Manager}!Get\+Stream\+Status@{Get\+Stream\+Status}}
+\index{Get\+Stream\+Status@{Get\+Stream\+Status}!svl\+Stream\+Manager@{svl\+Stream\+Manager}}
+\subsubsection[{Get\+Stream\+Status}]{\setlength{\rightskip}{0pt plus 5cm}int svl\+Stream\+Manager\+::\+Get\+Stream\+Status (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classsvl_stream_manager_a2fa049bd09f47b1d1449be7998e279ab}
+\hypertarget{classsvl_stream_manager_a63d7780527caa9d39ab02a87cf736025}{}\index{svl\+Stream\+Manager@{svl\+Stream\+Manager}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!svl\+Stream\+Manager@{svl\+Stream\+Manager}}
+\subsubsection[{Initialize}]{\setlength{\rightskip}{0pt plus 5cm}int svl\+Stream\+Manager\+::\+Initialize (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classsvl_stream_manager_a63d7780527caa9d39ab02a87cf736025}
+\hypertarget{classsvl_stream_manager_ad58ece1ed1cb4149024ee7b605f8ae17}{}\index{svl\+Stream\+Manager@{svl\+Stream\+Manager}!Initialize\+Command@{Initialize\+Command}}
+\index{Initialize\+Command@{Initialize\+Command}!svl\+Stream\+Manager@{svl\+Stream\+Manager}}
+\subsubsection[{Initialize\+Command}]{\setlength{\rightskip}{0pt plus 5cm}virtual void svl\+Stream\+Manager\+::\+Initialize\+Command (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classsvl_stream_manager_ad58ece1ed1cb4149024ee7b605f8ae17}
+\hypertarget{classsvl_stream_manager_aee755c1e0a31caf0390ab556919ced91}{}\index{svl\+Stream\+Manager@{svl\+Stream\+Manager}!Is\+Initialized@{Is\+Initialized}}
+\index{Is\+Initialized@{Is\+Initialized}!svl\+Stream\+Manager@{svl\+Stream\+Manager}}
+\subsubsection[{Is\+Initialized}]{\setlength{\rightskip}{0pt plus 5cm}bool svl\+Stream\+Manager\+::\+Is\+Initialized (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classsvl_stream_manager_aee755c1e0a31caf0390ab556919ced91}
+\hypertarget{classsvl_stream_manager_a18b7bab00b796854ef65bc250217a4c4}{}\index{svl\+Stream\+Manager@{svl\+Stream\+Manager}!Is\+Running@{Is\+Running}}
+\index{Is\+Running@{Is\+Running}!svl\+Stream\+Manager@{svl\+Stream\+Manager}}
+\subsubsection[{Is\+Running}]{\setlength{\rightskip}{0pt plus 5cm}bool svl\+Stream\+Manager\+::\+Is\+Running (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classsvl_stream_manager_a18b7bab00b796854ef65bc250217a4c4}
+\hypertarget{classsvl_stream_manager_a45adcd750e21702136ee31a990961fa8}{}\index{svl\+Stream\+Manager@{svl\+Stream\+Manager}!Play@{Play}}
+\index{Play@{Play}!svl\+Stream\+Manager@{svl\+Stream\+Manager}}
+\subsubsection[{Play}]{\setlength{\rightskip}{0pt plus 5cm}int svl\+Stream\+Manager\+::\+Play (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classsvl_stream_manager_a45adcd750e21702136ee31a990961fa8}
+\hypertarget{classsvl_stream_manager_a530c56aceb9cd1d93fddd75715ece8fc}{}\index{svl\+Stream\+Manager@{svl\+Stream\+Manager}!Play\+Command@{Play\+Command}}
+\index{Play\+Command@{Play\+Command}!svl\+Stream\+Manager@{svl\+Stream\+Manager}}
+\subsubsection[{Play\+Command}]{\setlength{\rightskip}{0pt plus 5cm}virtual void svl\+Stream\+Manager\+::\+Play\+Command (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classsvl_stream_manager_a530c56aceb9cd1d93fddd75715ece8fc}
+\hypertarget{classsvl_stream_manager_a965dd0cc4055c77af739aa4c590a4e3f}{}\index{svl\+Stream\+Manager@{svl\+Stream\+Manager}!Release@{Release}}
+\index{Release@{Release}!svl\+Stream\+Manager@{svl\+Stream\+Manager}}
+\subsubsection[{Release}]{\setlength{\rightskip}{0pt plus 5cm}void svl\+Stream\+Manager\+::\+Release (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classsvl_stream_manager_a965dd0cc4055c77af739aa4c590a4e3f}
+\hypertarget{classsvl_stream_manager_aedd7f5b0f3f9542bf9d36b5b4848bffd}{}\index{svl\+Stream\+Manager@{svl\+Stream\+Manager}!Set\+Source\+Filter@{Set\+Source\+Filter}}
+\index{Set\+Source\+Filter@{Set\+Source\+Filter}!svl\+Stream\+Manager@{svl\+Stream\+Manager}}
+\subsubsection[{Set\+Source\+Filter}]{\setlength{\rightskip}{0pt plus 5cm}int svl\+Stream\+Manager\+::\+Set\+Source\+Filter (
+\begin{DoxyParamCaption}
+\item[{{\bf svl\+Filter\+Source\+Base} $\ast$}]{source}
+\end{DoxyParamCaption}
+)}\label{classsvl_stream_manager_aedd7f5b0f3f9542bf9d36b5b4848bffd}
+\hypertarget{classsvl_stream_manager_af89d94646fba67c06df3aa7a72cf09af}{}\index{svl\+Stream\+Manager@{svl\+Stream\+Manager}!Set\+Source\+Filter\+Command@{Set\+Source\+Filter\+Command}}
+\index{Set\+Source\+Filter\+Command@{Set\+Source\+Filter\+Command}!svl\+Stream\+Manager@{svl\+Stream\+Manager}}
+\subsubsection[{Set\+Source\+Filter\+Command}]{\setlength{\rightskip}{0pt plus 5cm}virtual void svl\+Stream\+Manager\+::\+Set\+Source\+Filter\+Command (
+\begin{DoxyParamCaption}
+\item[{const {\bf mts\+Std\+String} \&}]{source}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classsvl_stream_manager_af89d94646fba67c06df3aa7a72cf09af}
+\hypertarget{classsvl_stream_manager_ad058664024ee544c2cd79338dc5592b7}{}\index{svl\+Stream\+Manager@{svl\+Stream\+Manager}!Start@{Start}}
+\index{Start@{Start}!svl\+Stream\+Manager@{svl\+Stream\+Manager}}
+\subsubsection[{Start}]{\setlength{\rightskip}{0pt plus 5cm}void svl\+Stream\+Manager\+::\+Start (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classsvl_stream_manager_ad058664024ee544c2cd79338dc5592b7}
+Virtual method called after components are connected to start the computations and message processing. 
+
+Reimplemented from \hyperlink{classmts_component_abfb4a63739ec45a9cdb91e3363db7c5c}{mts\+Component}.
+
+\hypertarget{classsvl_stream_manager_a291907660704e8c6baf1364933a1b09a}{}\index{svl\+Stream\+Manager@{svl\+Stream\+Manager}!Stop@{Stop}}
+\index{Stop@{Stop}!svl\+Stream\+Manager@{svl\+Stream\+Manager}}
+\subsubsection[{Stop}]{\setlength{\rightskip}{0pt plus 5cm}void svl\+Stream\+Manager\+::\+Stop (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classsvl_stream_manager_a291907660704e8c6baf1364933a1b09a}
+\hypertarget{classsvl_stream_manager_a5cc3d23d1cb765fed83376908ec5a30a}{}\index{svl\+Stream\+Manager@{svl\+Stream\+Manager}!Suspend@{Suspend}}
+\index{Suspend@{Suspend}!svl\+Stream\+Manager@{svl\+Stream\+Manager}}
+\subsubsection[{Suspend}]{\setlength{\rightskip}{0pt plus 5cm}void svl\+Stream\+Manager\+::\+Suspend (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classsvl_stream_manager_a5cc3d23d1cb765fed83376908ec5a30a}
+Virtual method to suspend the component (same as Stop). 
+
+Reimplemented from \hyperlink{classmts_component_a7264642eb5c56729d1f80263e0e1152b}{mts\+Component}.
+
+\hypertarget{classsvl_stream_manager_a974d869b5b117d7ea87f7e4fa59c5a5c}{}\index{svl\+Stream\+Manager@{svl\+Stream\+Manager}!Wait\+For\+Stop@{Wait\+For\+Stop}}
+\index{Wait\+For\+Stop@{Wait\+For\+Stop}!svl\+Stream\+Manager@{svl\+Stream\+Manager}}
+\subsubsection[{Wait\+For\+Stop}]{\setlength{\rightskip}{0pt plus 5cm}int svl\+Stream\+Manager\+::\+Wait\+For\+Stop (
+\begin{DoxyParamCaption}
+\item[{double}]{timeout = {\ttfamily -\/1.0}}
+\end{DoxyParamCaption}
+)}\label{classsvl_stream_manager_a974d869b5b117d7ea87f7e4fa59c5a5c}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classsvl_stream_manager_a6a9ee1dec5ca263793dca09411295245}{}\index{svl\+Stream\+Manager@{svl\+Stream\+Manager}!svl\+Stream\+Proc@{svl\+Stream\+Proc}}
+\index{svl\+Stream\+Proc@{svl\+Stream\+Proc}!svl\+Stream\+Manager@{svl\+Stream\+Manager}}
+\subsubsection[{svl\+Stream\+Proc}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf svl\+Stream\+Proc}\hspace{0.3cm}{\ttfamily [friend]}}\label{classsvl_stream_manager_a6a9ee1dec5ca263793dca09411295245}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Stereo\+Vision/\hyperlink{svl_stream_manager_8h}{svl\+Stream\+Manager.\+h}\end{DoxyCompactItemize}

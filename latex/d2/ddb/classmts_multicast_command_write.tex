@@ -1,0 +1,112 @@
+\hypertarget{classmts_multicast_command_write}{}\section{mts\+Multicast\+Command\+Write$<$ \+\_\+argument\+Type $>$ Class Template Reference}
+\label{classmts_multicast_command_write}\index{mts\+Multicast\+Command\+Write$<$ \+\_\+argument\+Type $>$@{mts\+Multicast\+Command\+Write$<$ \+\_\+argument\+Type $>$}}
+
+
+{\ttfamily \#include $<$mts\+Forward\+Declarations.\+h$>$}
+
+Inheritance diagram for mts\+Multicast\+Command\+Write$<$ \+\_\+argument\+Type $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{d2/ddb/classmts_multicast_command_write}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classmts_multicast_command_write_base}{mts\+Multicast\+Command\+Write\+Base} \hyperlink{classmts_multicast_command_write_aa950168043db4770666c31d84145a37a}{Base\+Type}
+\item 
+typedef \+\_\+argument\+Type \hyperlink{classmts_multicast_command_write_a064ab3c37be15f5f41dc6fd39595f207}{Argument\+Type}
+\item 
+typedef \hyperlink{classmts_generic_types}{mts\+Generic\+Types}$<$ \hyperlink{classmts_multicast_command_write_a064ab3c37be15f5f41dc6fd39595f207}{Argument\+Type} $>$\+::Final\+Base\+Type \hyperlink{classmts_multicast_command_write_a6a53ad6556ef466ffc58b8800ca81f46}{Argument\+Final\+Type}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmts_multicast_command_write_af6df9513f0bbc9dccd2775429db99bb9}{mts\+Multicast\+Command\+Write} (const std\+::string \&name, const \hyperlink{classmts_multicast_command_write_a064ab3c37be15f5f41dc6fd39595f207}{Argument\+Type} \&argument\+Prototype)
+\item 
+\hyperlink{classmts_multicast_command_write_ae364a240cfc90e4c0cfa2316fc8471f8}{$\sim$mts\+Multicast\+Command\+Write} ()
+\item 
+virtual mts\+Execution\+Result \hyperlink{classmts_multicast_command_write_a791d2a0dd7453735f3c5859107f855fb}{Execute} (const \hyperlink{classmts_generic_object}{mts\+Generic\+Object} \&argument, \hyperlink{mts_forward_declarations_8h_ad7426ccb6c883bc780d0ee197dddcbe7}{mts\+Blocking\+Type} \hyperlink{cmn_portability_8h_a021894e2626935fa2305434b1e893ff6}{C\+M\+N\+\_\+\+U\+N\+U\+S\+E\+D}(blocking))
+\item 
+mts\+Execution\+Result \hyperlink{classmts_multicast_command_write_abdd5968cb00cca869eb59be2ff83cc1c}{Execute} (const \hyperlink{classmts_generic_object}{mts\+Generic\+Object} \&argument, \hyperlink{mts_forward_declarations_8h_ad7426ccb6c883bc780d0ee197dddcbe7}{mts\+Blocking\+Type} blocking, \hyperlink{classmts_command_write_base}{mts\+Command\+Write\+Base} $\ast$\hyperlink{cmn_portability_8h_a021894e2626935fa2305434b1e893ff6}{C\+M\+N\+\_\+\+U\+N\+U\+S\+E\+D}(finished\+Event\+Handler))
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class \+\_\+argument\+Type$>$class mts\+Multicast\+Command\+Write$<$ \+\_\+argument\+Type $>$}
+
+This class contains a vector of two or more command objects. The primary use of this class is to send events to all observers. 
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classmts_multicast_command_write_a6a53ad6556ef466ffc58b8800ca81f46}{}\index{mts\+Multicast\+Command\+Write@{mts\+Multicast\+Command\+Write}!Argument\+Final\+Type@{Argument\+Final\+Type}}
+\index{Argument\+Final\+Type@{Argument\+Final\+Type}!mts\+Multicast\+Command\+Write@{mts\+Multicast\+Command\+Write}}
+\subsubsection[{Argument\+Final\+Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+argument\+Type$>$ typedef {\bf mts\+Generic\+Types}$<${\bf Argument\+Type}$>$\+::Final\+Base\+Type {\bf mts\+Multicast\+Command\+Write}$<$ \+\_\+argument\+Type $>$\+::{\bf Argument\+Final\+Type}}\label{classmts_multicast_command_write_a6a53ad6556ef466ffc58b8800ca81f46}
+\hypertarget{classmts_multicast_command_write_a064ab3c37be15f5f41dc6fd39595f207}{}\index{mts\+Multicast\+Command\+Write@{mts\+Multicast\+Command\+Write}!Argument\+Type@{Argument\+Type}}
+\index{Argument\+Type@{Argument\+Type}!mts\+Multicast\+Command\+Write@{mts\+Multicast\+Command\+Write}}
+\subsubsection[{Argument\+Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+argument\+Type$>$ typedef \+\_\+argument\+Type {\bf mts\+Multicast\+Command\+Write}$<$ \+\_\+argument\+Type $>$\+::{\bf Argument\+Type}}\label{classmts_multicast_command_write_a064ab3c37be15f5f41dc6fd39595f207}
+\hypertarget{classmts_multicast_command_write_aa950168043db4770666c31d84145a37a}{}\index{mts\+Multicast\+Command\+Write@{mts\+Multicast\+Command\+Write}!Base\+Type@{Base\+Type}}
+\index{Base\+Type@{Base\+Type}!mts\+Multicast\+Command\+Write@{mts\+Multicast\+Command\+Write}}
+\subsubsection[{Base\+Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+argument\+Type$>$ typedef {\bf mts\+Multicast\+Command\+Write\+Base} {\bf mts\+Multicast\+Command\+Write}$<$ \+\_\+argument\+Type $>$\+::{\bf Base\+Type}}\label{classmts_multicast_command_write_aa950168043db4770666c31d84145a37a}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmts_multicast_command_write_af6df9513f0bbc9dccd2775429db99bb9}{}\index{mts\+Multicast\+Command\+Write@{mts\+Multicast\+Command\+Write}!mts\+Multicast\+Command\+Write@{mts\+Multicast\+Command\+Write}}
+\index{mts\+Multicast\+Command\+Write@{mts\+Multicast\+Command\+Write}!mts\+Multicast\+Command\+Write@{mts\+Multicast\+Command\+Write}}
+\subsubsection[{mts\+Multicast\+Command\+Write}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+argument\+Type$>$ {\bf mts\+Multicast\+Command\+Write}$<$ \+\_\+argument\+Type $>$\+::{\bf mts\+Multicast\+Command\+Write} (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name, }
+\item[{const {\bf Argument\+Type} \&}]{argument\+Prototype}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_multicast_command_write_af6df9513f0bbc9dccd2775429db99bb9}
+Default constructor. Does nothing. \hypertarget{classmts_multicast_command_write_ae364a240cfc90e4c0cfa2316fc8471f8}{}\index{mts\+Multicast\+Command\+Write@{mts\+Multicast\+Command\+Write}!````~mts\+Multicast\+Command\+Write@{$\sim$mts\+Multicast\+Command\+Write}}
+\index{````~mts\+Multicast\+Command\+Write@{$\sim$mts\+Multicast\+Command\+Write}!mts\+Multicast\+Command\+Write@{mts\+Multicast\+Command\+Write}}
+\subsubsection[{$\sim$mts\+Multicast\+Command\+Write}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+argument\+Type$>$ {\bf mts\+Multicast\+Command\+Write}$<$ \+\_\+argument\+Type $>$\+::$\sim${\bf mts\+Multicast\+Command\+Write} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_multicast_command_write_ae364a240cfc90e4c0cfa2316fc8471f8}
+Default destructor. Does nothing. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classmts_multicast_command_write_a791d2a0dd7453735f3c5859107f855fb}{}\index{mts\+Multicast\+Command\+Write@{mts\+Multicast\+Command\+Write}!Execute@{Execute}}
+\index{Execute@{Execute}!mts\+Multicast\+Command\+Write@{mts\+Multicast\+Command\+Write}}
+\subsubsection[{Execute}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+argument\+Type$>$ virtual mts\+Execution\+Result {\bf mts\+Multicast\+Command\+Write}$<$ \+\_\+argument\+Type $>$\+::Execute (
+\begin{DoxyParamCaption}
+\item[{const {\bf mts\+Generic\+Object} \&}]{argument, }
+\item[{{\bf mts\+Blocking\+Type} }]{C\+M\+N\+\_\+\+U\+N\+U\+S\+E\+Dblocking}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classmts_multicast_command_write_a791d2a0dd7453735f3c5859107f855fb}
+Execute all the commands in the composite. \hypertarget{classmts_multicast_command_write_abdd5968cb00cca869eb59be2ff83cc1c}{}\index{mts\+Multicast\+Command\+Write@{mts\+Multicast\+Command\+Write}!Execute@{Execute}}
+\index{Execute@{Execute}!mts\+Multicast\+Command\+Write@{mts\+Multicast\+Command\+Write}}
+\subsubsection[{Execute}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+argument\+Type$>$ mts\+Execution\+Result {\bf mts\+Multicast\+Command\+Write}$<$ \+\_\+argument\+Type $>$\+::Execute (
+\begin{DoxyParamCaption}
+\item[{const {\bf mts\+Generic\+Object} \&}]{argument, }
+\item[{{\bf mts\+Blocking\+Type}}]{blocking, }
+\item[{{\bf mts\+Command\+Write\+Base} $\ast$}]{C\+M\+N\+\_\+\+U\+N\+U\+S\+E\+Dfinished\+Event\+Handler}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classmts_multicast_command_write_abdd5968cb00cca869eb59be2ff83cc1c}
+The execute method. Method may be implemented by derived classes to run the actual operation on the receiver
+
+
+\begin{DoxyParams}{Parameters}
+{\em argument} & The data passed to the operation method \\
+\hline
+{\em blocking} & Indicates whether caller wishes to block until command finishes \\
+\hline
+{\em finished\+Event\+Handler} & Command object to invoke when blocking command is finished\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the execution result (mts\+Execution\+Result) 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classmts_command_write_base_a2bf3f188291d690478be5452ba5ba42d}{mts\+Command\+Write\+Base}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Multi\+Task/\hyperlink{mts_forward_declarations_8h}{mts\+Forward\+Declarations.\+h}\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Multi\+Task/\hyperlink{mts_multicast_command_write_8h}{mts\+Multicast\+Command\+Write.\+h}\end{DoxyCompactItemize}

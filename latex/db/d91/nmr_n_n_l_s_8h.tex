@@ -1,0 +1,202 @@
+\hypertarget{nmr_n_n_l_s_8h}{}\section{/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Numerical/nmr\+N\+N\+L\+S.h File Reference}
+\label{nmr_n_n_l_s_8h}\index{/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Numerical/nmr\+N\+N\+L\+S.\+h@{/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Numerical/nmr\+N\+N\+L\+S.\+h}}
+
+
+Declaration of nmr\+N\+N\+L\+S.  
+
+
+{\ttfamily \#include $<$cisst\+Common/cmn\+Throw.\+h$>$}\\*
+{\ttfamily \#include $<$cisst\+Vector/vct\+Dynamic\+Matrix.\+h$>$}\\*
+{\ttfamily \#include $<$cisst\+Numerical/nmr\+Netlib.\+h$>$}\\*
+{\ttfamily \#include $<$cisst\+Numerical/nmr\+Export.\+h$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classnmr_n_n_l_s_dynamic_data}{nmr\+N\+N\+L\+S\+Dynamic\+Data}
+\begin{DoxyCompactList}\small\item\em Data for N\+N\+L\+S problem (Dynamic). \end{DoxyCompactList}\item 
+class \hyperlink{classnmr_n_n_l_s_dynamic_data_1_1_friend}{nmr\+N\+N\+L\+S\+Dynamic\+Data\+::\+Friend}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{Indent}{\bf Algorithm N\+N\+L\+S\+:}\par
+{\em --- update this doc ---
+
+These functions are wrappers around the L\+A\+P\+A\+C\+K routine dgesvd, therefore they share some features with the L\+A\+P\+A\+C\+K routine\+: 
+\begin{DoxyEnumerate}
+\item They return $ V^{T} $, not $ V $. 
+\item On exit, the content of A is altered. 
+\item The vectors and matrices must be compact, i.\+e. use a contiguous block of memory. 
+\end{DoxyEnumerate}
+
+The \hyperlink{nmr_n_n_l_s_8h_afd1108e6bc3e5d308f34bc7b31fd3278}{nmr\+N\+N\+L\+S} functions add the following features\+: 
+\begin{DoxyEnumerate}
+\item A simplified interface to the cisst\+Vector dynamic matrices. 
+\item The possibility to use any storage order, i.\+e. \hyperlink{vct_forward_declarations_8h_a45ba752f741240bf765417ebc8130d62}{V\+C\+T\+\_\+\+R\+O\+W\+\_\+\+M\+A\+J\+O\+R} or \hyperlink{vct_forward_declarations_8h_a432cdf8923afaf82f551450ad4034746}{V\+C\+T\+\_\+\+C\+O\+L\+\_\+\+M\+A\+J\+O\+R}. In the specific case of N\+N\+L\+S, the storage order can be treated as a transpose and the properties of the decomposition are preserved (\hyperlink{nmr_n_n_l_s_8h_afd1108e6bc3e5d308f34bc7b31fd3278}{nmr\+N\+N\+L\+S} will swap U and Vt pointers). This is performed at no extra cost, i.\+e. no copy back and forth of the elements nor extra memory allocation. 
+\item Input validation checks are performed, i.\+e. an std\+::runtime\+\_\+error exception will be thrown if the sizes or storage order don\textquotesingle{}t match or if the containers are not compact. 
+\item Helper classes to allocate memory for the output and workspace\+: nmr\+N\+N\+L\+S\+Fixed\+Size\+Data and \hyperlink{classnmr_n_n_l_s_dynamic_data}{nmr\+N\+N\+L\+S\+Dynamic\+Data}. 
+\end{DoxyEnumerate}
+
+There are different ways to call this function to compute the N\+N\+L\+S of the matrix A. These correspond to different overloaded \hyperlink{nmr_n_n_l_s_8h_afd1108e6bc3e5d308f34bc7b31fd3278}{nmr\+N\+N\+L\+S} functions\+: 
+\begin{DoxyEnumerate}
+\item Using a preallocated data object.
+
+The user creates the input matrix A\+: 
+\begin{DoxyCode}
+\hyperlink{classvct_dynamic_matrix}{vctDynamicMatrix<CISSTNETLIB\_DOUBLE>} A(12, 24 , 
+      \hyperlink{vct_forward_declarations_8h_a45ba752f741240bf765417ebc8130d62}{VCT\_ROW\_MAJOR}); \textcolor{comment}{// 12 x 24 matrix}
+\hyperlink{group__cisst_vector_ga0d25660a2dc6ef9c093f6f6b2804d2d0}{vctRandom}(A, -10.0, 10.0);
+\end{DoxyCode}
+ The user allocates a data object which could be of type nmr\+N\+N\+L\+S\+Fixed\+Size\+Data or \hyperlink{classnmr_n_n_l_s_dynamic_data}{nmr\+N\+N\+L\+S\+Dynamic\+Data}. corresponding to fixed size or dynamic matrix A\+: 
+\begin{DoxyCode}
+\hyperlink{classnmr_n_n_l_s_dynamic_data}{nmrNNLSDynamicData} data(A);
+\end{DoxyCode}
+ Call the nmr\+N\+N\+L\+S function\+: 
+\begin{DoxyCode}
+\hyperlink{nmr_n_n_l_s_8h_a66392d56623e80ae0b6962a40d6da77c}{nmrNNLS}(A, data);
+\end{DoxyCode}
+ The content of input matrix A is modified by this routine. The matrices U, Vt and vector S are available through the following methods 
+\begin{DoxyCode}
+std::cout << \textcolor{stringliteral}{"U: "} << data.U() << std::endl
+          << \textcolor{stringliteral}{"S: "} << data.S() << std::endl
+          << \textcolor{stringliteral}{"V: "} << data.Vt().Transpose() << std::endl;
+\end{DoxyCode}
+
+
+
+\item The user provides the matrices U, Vt, and vector S.
+
+The User allocates memory for these matrices and vector\+: 
+\begin{DoxyCode}
+\hyperlink{classvct_dynamic_matrix}{vctDynamicMatrix<CISSTNETLIB\_DOUBLE>} A(5, 4);
+\hyperlink{group__cisst_vector_ga0d25660a2dc6ef9c093f6f6b2804d2d0}{vctRandom}(A, -10.0, 10.0);
+\hyperlink{classvct_dynamic_matrix}{vctDynamicMatrix<CISSTNETLIB\_DOUBLE>} U(5, 5);
+\hyperlink{classvct_dynamic_matrix}{vctDynamicMatrix<CISSTNETLIB\_DOUBLE>} Vt(4, 4);
+\hyperlink{classvct_dynamic_vector}{vctDynamicVector<CISSTNETLIB\_DOUBLE>} S(4);
+\end{DoxyCode}
+ Call the N\+N\+L\+S routine\+: 
+\begin{DoxyCode}
+\hyperlink{nmr_n_n_l_s_8h_a66392d56623e80ae0b6962a40d6da77c}{nmrNNLS}(A, U, S, Vt);
+\end{DoxyCode}
+ The N\+N\+L\+S function verifies that the size of the data objects matches the input, and allocates workspace memory, which is deallocated when the function ends.
+
+
+\item The user provides the matrices U, Vt, and vector S along with workspace required by N\+N\+L\+S routine of L\+A\+P\+A\+C\+K.
+
+Create matrices and vector\+: 
+\begin{DoxyCode}
+\hyperlink{classvct_dynamic_matrix}{vctDynamicMatrix<CISSTNETLIB\_DOUBLE>} A(5, 4);
+\hyperlink{group__cisst_vector_ga0d25660a2dc6ef9c093f6f6b2804d2d0}{vctRandom}(A, -10.0, 10.0);
+\hyperlink{classvct_dynamic_matrix}{vctDynamicMatrix<CISSTNETLIB\_DOUBLE>} U(5, 5);
+\hyperlink{classvct_dynamic_matrix}{vctDynamicMatrix<CISSTNETLIB\_DOUBLE>} Vt(4, 4);
+\hyperlink{classvct_dynamic_vector}{vctDynamicVector<CISSTNETLIB\_DOUBLE>} S(4);
+\end{DoxyCode}
+ One also needs to allocate memory the for workspace. This approach is particularly useful when the user is using more than one numerical method from the library and is willing or need to share the workspace between them. In such as case, the user can allocate a block of memory greater than the minimum required by different methods. To help the user determine the minimum workspace required the library provides the helper function \hyperlink{classnmr_n_n_l_s_dynamic_data_acdb443c5bfa9547c2a4f76ae90a472dc}{nmr\+N\+N\+L\+S\+Dynamic\+Data\+::\+Workspace\+Size()}. 
+\begin{DoxyCode}
+\hyperlink{classvct_dynamic_vector}{vctDynamicVector<CISSTNETLIB\_DOUBLE>} workspace(
+      \hyperlink{classnmr_n_n_l_s_dynamic_data_acdb443c5bfa9547c2a4f76ae90a472dc}{nmrNNLSDynamicData::WorkspaceSize}(A));
+\end{DoxyCode}
+ Call the N\+N\+L\+S function\+: 
+\begin{DoxyCode}
+\hyperlink{nmr_n_n_l_s_8h_a66392d56623e80ae0b6962a40d6da77c}{nmrNNLS}(A, U, S, Vt, workspace);
+\end{DoxyCode}
+ 
+\end{DoxyEnumerate}
+
+\begin{DoxyNote}{Note}
+The N\+N\+L\+S functions make use of L\+A\+P\+A\+C\+K routines. To activate this code, set the C\+I\+S\+S\+T\+\_\+\+H\+A\+S\+\_\+\+C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B flag to O\+N during the configuration of cisst with C\+Make.
+
+The general rule for numerical functions which depend on L\+A\+P\+A\+C\+K is that column major matrices should be used everywhere, and that all matrices should be compact. In this case, both row major and column major are allowed but they must not be mixed in a data object. 
+\end{DoxyNote}
+}\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class \+\_\+matrix\+Owner\+Type $>$ }\\C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R \hyperlink{nmr_n_n_l_s_8h_a66392d56623e80ae0b6962a40d6da77c}{nmr\+N\+N\+L\+S} (\hyperlink{classvct_dynamic_matrix_base}{vct\+Dynamic\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&A, \hyperlink{classnmr_n_n_l_s_dynamic_data}{nmr\+N\+N\+L\+S\+Dynamic\+Data} \&data)  throw (std\+::runtime\+\_\+error)
+\item 
+{\footnotesize template$<$class \+\_\+matrix\+Owner\+Type\+A , class \+\_\+matrix\+Owner\+Type\+U , class \+\_\+vector\+Owner\+Type\+S , class \+\_\+matrix\+Owner\+Type\+Vt , class \+\_\+vector\+Owner\+Type\+Workspace $>$ }\\C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R \hyperlink{nmr_n_n_l_s_8h_a716228881cd6386b2ed8d00eba3fe8c4}{nmr\+N\+N\+L\+S} (\hyperlink{classvct_dynamic_matrix_base}{vct\+Dynamic\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type\+A, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&A, \hyperlink{classvct_dynamic_matrix_base}{vct\+Dynamic\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type\+U, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&U, \hyperlink{classvct_dynamic_vector_base}{vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+S, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&S, \hyperlink{classvct_dynamic_matrix_base}{vct\+Dynamic\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type\+Vt, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&Vt, \hyperlink{classvct_dynamic_vector_base}{vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+Workspace, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&Workspace)
+\item 
+{\footnotesize template$<$class \+\_\+matrix\+Owner\+Type\+A , class \+\_\+matrix\+Owner\+Type\+U , class \+\_\+vector\+Owner\+Type\+S , class \+\_\+matrix\+Owner\+Type\+Vt $>$ }\\C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R \hyperlink{nmr_n_n_l_s_8h_afd1108e6bc3e5d308f34bc7b31fd3278}{nmr\+N\+N\+L\+S} (\hyperlink{classvct_dynamic_matrix_base}{vct\+Dynamic\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type\+A, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&A, \hyperlink{classvct_dynamic_matrix_base}{vct\+Dynamic\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type\+U, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&U, \hyperlink{classvct_dynamic_vector_base}{vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+S, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&S, \hyperlink{classvct_dynamic_matrix_base}{vct\+Dynamic\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type\+Vt, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&Vt)
+\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\subsection{Detailed Description}
+Declaration of nmr\+N\+N\+L\+S. 
+
+
+
+\subsection{Function Documentation}
+\hypertarget{nmr_n_n_l_s_8h_a66392d56623e80ae0b6962a40d6da77c}{}\index{nmr\+N\+N\+L\+S.\+h@{nmr\+N\+N\+L\+S.\+h}!nmr\+N\+N\+L\+S@{nmr\+N\+N\+L\+S}}
+\index{nmr\+N\+N\+L\+S@{nmr\+N\+N\+L\+S}!nmr\+N\+N\+L\+S.\+h@{nmr\+N\+N\+L\+S.\+h}}
+\subsubsection[{nmr\+N\+N\+L\+S}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+matrix\+Owner\+Type $>$ C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R nmr\+N\+N\+L\+S (
+\begin{DoxyParamCaption}
+\item[{{\bf vct\+Dynamic\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&}]{A, }
+\item[{{\bf nmr\+N\+N\+L\+S\+Dynamic\+Data} \&}]{data}
+\end{DoxyParamCaption}
+) throw  std\+::runtime\+\_\+error) \hspace{0.3cm}{\ttfamily [inline]}}\label{nmr_n_n_l_s_8h_a66392d56623e80ae0b6962a40d6da77c}
+This function solves the N\+N\+L\+S problem for a dynamic matrix using an \hyperlink{classnmr_n_n_l_s_dynamic_data}{nmr\+N\+N\+L\+S\+Dynamic\+Data}.
+
+This function checks for valid input (size, storage order and compact) and calls the L\+A\+P\+A\+C\+K function. If the input doesn\textquotesingle{}t match the data, an exception is thrown ({\ttfamily std\+::runtime\+\_\+error}).
+
+This function modifies the input matrix A and stores the results in the data. Each component of the result can be obtained via the const methods nmr\+N\+N\+L\+S\+Dynamic\+Data\+::\+U(), nmr\+N\+N\+L\+S\+Dynamic\+Data\+::\+S() and nmr\+N\+N\+L\+S\+Dynamic\+Data\+::\+Vt().
+
+
+\begin{DoxyParams}{Parameters}
+{\em A} & A matrix of size Mx\+N, either \hyperlink{classvct_dynamic_matrix}{vct\+Dynamic\+Matrix} or \hyperlink{classvct_dynamic_matrix_ref}{vct\+Dynamic\+Matrix\+Ref}. \\
+\hline
+{\em data} & A data object corresponding to the input matrix.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Test}
+\item[\hyperlink{test__test000009}{Test}]nmr\+N\+N\+L\+S\+Test\+::\+Test\+Dynamic\+Column\+Major nmr\+N\+N\+L\+S\+Test\+::\+Test\+Dynamic\+Row\+Major nmr\+N\+N\+L\+S\+Test\+::\+Test\+Dynamic\+Column\+Major\+User\+Alloc nmr\+N\+N\+L\+S\+Test\+::\+Test\+Dynamic\+Row\+Major\+User\+Alloc \end{DoxyRefDesc}
+\hypertarget{nmr_n_n_l_s_8h_a716228881cd6386b2ed8d00eba3fe8c4}{}\index{nmr\+N\+N\+L\+S.\+h@{nmr\+N\+N\+L\+S.\+h}!nmr\+N\+N\+L\+S@{nmr\+N\+N\+L\+S}}
+\index{nmr\+N\+N\+L\+S@{nmr\+N\+N\+L\+S}!nmr\+N\+N\+L\+S.\+h@{nmr\+N\+N\+L\+S.\+h}}
+\subsubsection[{nmr\+N\+N\+L\+S}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+matrix\+Owner\+Type\+A , class \+\_\+matrix\+Owner\+Type\+U , class \+\_\+vector\+Owner\+Type\+S , class \+\_\+matrix\+Owner\+Type\+Vt , class \+\_\+vector\+Owner\+Type\+Workspace $>$ C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R nmr\+N\+N\+L\+S (
+\begin{DoxyParamCaption}
+\item[{{\bf vct\+Dynamic\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type\+A, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&}]{A, }
+\item[{{\bf vct\+Dynamic\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type\+U, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&}]{U, }
+\item[{{\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+S, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&}]{S, }
+\item[{{\bf vct\+Dynamic\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type\+Vt, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&}]{Vt, }
+\item[{{\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+Workspace, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&}]{Workspace}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{nmr_n_n_l_s_8h_a716228881cd6386b2ed8d00eba3fe8c4}
+This function solves the N\+N\+L\+S problem for a dynamic matrix using the storage provided by the user for both the output (U, S, Vt) and the workspace.
+
+Internally, a data is created using the storage provided by the user (see \hyperlink{classnmr_n_n_l_s_dynamic_data_ab32c899922b96030616bf83d5e741c55}{nmr\+N\+N\+L\+S\+Dynamic\+Data\+::\+Set\+Ref}). While the data is being build, the consistency of the output and workspace is checked. Then, the nmr\+N\+N\+L\+S(\+A, data) function can be used safely.
+
+
+\begin{DoxyParams}{Parameters}
+{\em A} & is a reference to a dynamic matrix of size Mx\+N \\
+\hline
+{\em U,S,Vt} & The output matrices and vector for N\+N\+L\+S \\
+\hline
+{\em Workspace} & The workspace for L\+A\+P\+A\+C\+K.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Test}
+\item[\hyperlink{test__test000010}{Test}]nmr\+N\+N\+L\+S\+Test\+::\+Test\+Dynamic\+Column\+Major\+User\+Alloc nmr\+N\+N\+L\+S\+Test\+::\+Test\+Dynamic\+Row\+Major\+User\+Alloc \end{DoxyRefDesc}
+\hypertarget{nmr_n_n_l_s_8h_afd1108e6bc3e5d308f34bc7b31fd3278}{}\index{nmr\+N\+N\+L\+S.\+h@{nmr\+N\+N\+L\+S.\+h}!nmr\+N\+N\+L\+S@{nmr\+N\+N\+L\+S}}
+\index{nmr\+N\+N\+L\+S@{nmr\+N\+N\+L\+S}!nmr\+N\+N\+L\+S.\+h@{nmr\+N\+N\+L\+S.\+h}}
+\subsubsection[{nmr\+N\+N\+L\+S}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+matrix\+Owner\+Type\+A , class \+\_\+matrix\+Owner\+Type\+U , class \+\_\+vector\+Owner\+Type\+S , class \+\_\+matrix\+Owner\+Type\+Vt $>$ C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R nmr\+N\+N\+L\+S (
+\begin{DoxyParamCaption}
+\item[{{\bf vct\+Dynamic\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type\+A, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&}]{A, }
+\item[{{\bf vct\+Dynamic\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type\+U, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&}]{U, }
+\item[{{\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+S, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&}]{S, }
+\item[{{\bf vct\+Dynamic\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type\+Vt, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&}]{Vt}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{nmr_n_n_l_s_8h_afd1108e6bc3e5d308f34bc7b31fd3278}
+This function solves the N\+N\+L\+S problem for a dynamic matrix using the storage provided by the user for the output (U, S, Vt). A workspace will be dynamically allocated.
+
+Internally, a data is created using the storage provided by the user (see \hyperlink{classnmr_n_n_l_s_dynamic_data_a8b4529a38e1b16bbe5f805e11a2f5560}{nmr\+N\+N\+L\+S\+Dynamic\+Data\+::\+Set\+Ref\+Output}). While the data is being build, the consistency of the output is checked. Then, the nmr\+N\+N\+L\+S(\+A, data) function can be used safely.
+
+
+\begin{DoxyParams}{Parameters}
+{\em A} & is a reference to a dynamic matrix of size Mx\+N \\
+\hline
+{\em U,S,Vt} & The output matrices and vector for N\+N\+L\+S\\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Test}
+\item[\hyperlink{test__test000011}{Test}]nmr\+N\+N\+L\+S\+Test\+::\+Test\+Dynamic\+Column\+Major\+User\+Alloc nmr\+N\+N\+L\+S\+Test\+::\+Test\+Dynamic\+Row\+Major\+User\+Alloc\end{DoxyRefDesc}
+
+
+\begin{DoxyWarning}{Warning}
+Again, this method will dynamically allocate a workspace at each call. This is somewhat inefficient if the method is to be called many times. For a real-\/time task, the dynamic allocation might even break your application. 
+\end{DoxyWarning}

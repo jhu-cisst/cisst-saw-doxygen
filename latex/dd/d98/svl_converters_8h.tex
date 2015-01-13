@@ -1,0 +1,112 @@
+\hypertarget{svl_converters_8h}{}\section{/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Stereo\+Vision/svl\+Converters.h File Reference}
+\label{svl_converters_8h}\index{/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Stereo\+Vision/svl\+Converters.\+h@{/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Stereo\+Vision/svl\+Converters.\+h}}
+{\ttfamily \#include $<$cisst\+Stereo\+Vision/svl\+Types.\+h$>$}\\*
+{\ttfamily \#include $<$cisst\+Stereo\+Vision/svl\+Export.\+h$>$}\\*
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacesvl_converter}{svl\+Converter}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} int \hyperlink{namespacesvl_converter_a9f5ced81829331b45c476d7172e9a92b}{svl\+Converter\+::\+Convert\+Sample} (const \hyperlink{classsvl_sample}{svl\+Sample} $\ast$inimage, \hyperlink{classsvl_sample}{svl\+Sample} $\ast$outimage, unsigned int threads=1, unsigned int threadid=0)
+\item 
+\hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} int \hyperlink{namespacesvl_converter_a154cc93cbcea8a81917ba9018bcceae2}{svl\+Converter\+::\+Convert\+Image} (const \hyperlink{classsvl_sample_image}{svl\+Sample\+Image} $\ast$inimage, \hyperlink{classsvl_sample_image}{svl\+Sample\+Image} $\ast$outimage, int param=0, unsigned int threads=1, unsigned int threadid=0)
+\item 
+\hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} int \hyperlink{namespacesvl_converter_aea0e346b7e486f28816daeebc3d9c5cd}{svl\+Converter\+::\+Convert\+Image} (const \hyperlink{classsvl_sample_image}{svl\+Sample\+Image} $\ast$inimage, const unsigned int inchannel, \hyperlink{classsvl_sample_image}{svl\+Sample\+Image} $\ast$outimage, const unsigned int outchannel, int param=0, unsigned int threads=1, unsigned int threadid=0)
+\item 
+\hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} void \hyperlink{namespacesvl_converter_a7ae77af4245103cabc708474150364b4}{svl\+Converter\+::\+Gray8to\+R\+G\+B24} (unsigned char $\ast$input, unsigned char $\ast$output, const unsigned int pixelcount)
+\item 
+\hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} void \hyperlink{namespacesvl_converter_a7bd97b67111fd8ff6457031deec5306c}{svl\+Converter\+::\+Gray8to\+R\+G\+B\+A32} (unsigned char $\ast$input, unsigned char $\ast$output, const unsigned int pixelcount)
+\item 
+\hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} void \hyperlink{namespacesvl_converter_a8179b3679c6f8f856a5cf68b9250a5bc}{svl\+Converter\+::\+Gray8to\+Gray16} (unsigned char $\ast$input, unsigned short $\ast$output, const unsigned int pixelcount)
+\item 
+\hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} void \hyperlink{namespacesvl_converter_abec323b659f86ba48c507d95725ca0d7}{svl\+Converter\+::\+Gray8to\+Gray32} (unsigned char $\ast$input, unsigned int $\ast$output, const unsigned int pixelcount)
+\item 
+\hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} void \hyperlink{namespacesvl_converter_a49ca4a2723e884f1bda2fced5696e7a3}{svl\+Converter\+::\+Gray16to\+R\+G\+B24} (unsigned short $\ast$input, unsigned char $\ast$output, const unsigned int pixelcount, const unsigned int shiftdown=0)
+\item 
+\hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} void \hyperlink{namespacesvl_converter_a7e6ba97ccd5bcf36ff38ba60ca259172}{svl\+Converter\+::\+Gray16to\+R\+G\+B\+A32} (unsigned short $\ast$input, unsigned char $\ast$output, const unsigned int pixelcount, const unsigned int shiftdown=0)
+\item 
+\hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} void \hyperlink{namespacesvl_converter_a364d33a0a33a01927317032234bae11d}{svl\+Converter\+::\+Gray16to\+Gray8} (unsigned short $\ast$input, unsigned char $\ast$output, const unsigned int pixelcount, const unsigned int shiftdown=0)
+\item 
+\hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} void \hyperlink{namespacesvl_converter_a90d96aa37f01587bd37866dab12c6faf}{svl\+Converter\+::\+Gray16to\+Gray32} (unsigned short $\ast$input, unsigned int $\ast$output, const unsigned int pixelcount)
+\item 
+\hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} void \hyperlink{namespacesvl_converter_ac6222bc8c15797f692e195de1e94ce3b}{svl\+Converter\+::\+Gray32to\+R\+G\+B24} (unsigned int $\ast$input, unsigned char $\ast$output, const unsigned int pixelcount, const unsigned int shiftdown=0)
+\item 
+\hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} void \hyperlink{namespacesvl_converter_aecfb8bb13ca78fb42e807265c7b18dc6}{svl\+Converter\+::\+Gray32to\+R\+G\+B\+A32} (unsigned int $\ast$input, unsigned char $\ast$output, const unsigned int pixelcount, const unsigned int shiftdown=0)
+\item 
+\hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} void \hyperlink{namespacesvl_converter_ae99214e89a1b6e46cbe528763adcb19f}{svl\+Converter\+::\+Gray32to\+Gray8} (unsigned int $\ast$input, unsigned char $\ast$output, const unsigned int pixelcount, const unsigned int shiftdown=0)
+\item 
+\hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} void \hyperlink{namespacesvl_converter_a99f79c3fccd8441e34cdfad39014dad8}{svl\+Converter\+::\+Gray32to\+Gray16} (unsigned int $\ast$input, unsigned short $\ast$output, const unsigned int pixelcount, const unsigned int shiftdown=0)
+\item 
+\hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} void \hyperlink{namespacesvl_converter_a3211679e1d1d7be6d1557b0aa1d3d779}{svl\+Converter\+::int32to\+R\+G\+B24} (int $\ast$input, unsigned char $\ast$output, const unsigned int pixelcount, const int maxinputvalue=-\/1)
+\item 
+\hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} void \hyperlink{namespacesvl_converter_ac3ca2f47eb7716449255c4c7974d5878}{svl\+Converter\+::int32to\+R\+G\+B\+A32} (int $\ast$input, unsigned char $\ast$output, const unsigned int pixelcount, const int maxinputvalue=-\/1)
+\item 
+\hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} void \hyperlink{namespacesvl_converter_a1580d5d542d6f54bc898be8a395c0f14}{svl\+Converter\+::int32to\+Gray8} (int $\ast$input, unsigned char $\ast$output, const unsigned int pixelcount, const int maxinputvalue=-\/1)
+\item 
+\hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} void \hyperlink{namespacesvl_converter_ad912afac82a226820a273026e5670717}{svl\+Converter\+::int32to\+Gray16} (int $\ast$input, unsigned short $\ast$output, const unsigned int pixelcount, const int maxinputvalue=-\/1)
+\item 
+\hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} void \hyperlink{namespacesvl_converter_aa0d1a923946a169960afe1d3b077bd68}{svl\+Converter\+::int32to\+Gray32} (int $\ast$input, unsigned int $\ast$output, const unsigned int pixelcount)
+\item 
+\hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} void \hyperlink{namespacesvl_converter_a3e66066016ffa0ae6029f46d48ab578b}{svl\+Converter\+::float32to\+R\+G\+B24} (float $\ast$input, unsigned char $\ast$output, const unsigned int pixelcount, const float scalingratio=1.\+0f, const int elementstride=1)
+\item 
+\hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} void \hyperlink{namespacesvl_converter_a104731e2060e728361a80461b82c09ab}{svl\+Converter\+::float32to\+R\+G\+B\+A32} (float $\ast$input, unsigned char $\ast$output, const unsigned int pixelcount, const float scalingratio=1.\+0f, const int elementstride=1)
+\item 
+\hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} void \hyperlink{namespacesvl_converter_a66e448744c9ea94d05b30ec84c394a3e}{svl\+Converter\+::float32to\+Gray8} (float $\ast$input, unsigned char $\ast$output, const unsigned int pixelcount, const float scalingratio=1.\+0f, const int elementstride=1)
+\item 
+\hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} void \hyperlink{namespacesvl_converter_a7da024e110184a47aa479de560d97281}{svl\+Converter\+::float32to\+Gray16} (float $\ast$input, unsigned short $\ast$output, const unsigned int pixelcount, const float scalingratio=1.\+0f, const int elementstride=1)
+\item 
+\hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} void \hyperlink{namespacesvl_converter_a7436757981689049508c417b721a5f58}{svl\+Converter\+::float32to\+Gray32} (float $\ast$input, unsigned int $\ast$output, const unsigned int pixelcount, const float scalingratio=1.\+0f, const int elementstride=1)
+\item 
+\hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} void \hyperlink{namespacesvl_converter_a6bb8dfadfd1afdfce623f2b5c452b945}{svl\+Converter\+::\+R\+G\+B16to\+R\+G\+B24} (unsigned char $\ast$input, unsigned char $\ast$output, const unsigned int pixelcount, bool ch1=true, bool ch2=true, bool ch3=true)
+\item 
+\hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} void \hyperlink{namespacesvl_converter_ac83ca60b2d7928b474ac25b906be8e41}{svl\+Converter\+::\+R\+G\+B24to\+R\+G\+B\+A32} (unsigned char $\ast$input, unsigned char $\ast$output, const unsigned int pixelcount)
+\item 
+\hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} void \hyperlink{namespacesvl_converter_aea475d02307f7b6bd0a4c3b109c2371f}{svl\+Converter\+::\+R\+G\+B24to\+Gray8} (unsigned char $\ast$input, unsigned char $\ast$output, const unsigned int pixelcount, bool accurate=false, bool bgr=false)
+\item 
+\hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} void \hyperlink{namespacesvl_converter_abf6e775d4d85227bca12d93a28040bd0}{svl\+Converter\+::\+R\+G\+B24to\+Gray16} (unsigned char $\ast$input, unsigned short $\ast$output, const unsigned int pixelcount, bool accurate=false, bool bgr=false)
+\item 
+\hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} void \hyperlink{namespacesvl_converter_a6db9feff4a905fa89f7029fe43c2b469}{svl\+Converter\+::\+R\+G\+B24to\+Gray32} (unsigned char $\ast$input, unsigned int $\ast$output, const unsigned int pixelcount, bool accurate=false, bool bgr=false)
+\item 
+\hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} void \hyperlink{namespacesvl_converter_a542ef242e36659b60aca4479902d9cc5}{svl\+Converter\+::\+R\+G\+B24to\+Y\+U\+V444} (unsigned char $\ast$input, unsigned char $\ast$output, const unsigned int pixelcount, bool ch1=true, bool ch2=true, bool ch3=true)
+\item 
+\hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} void \hyperlink{namespacesvl_converter_a645ff539cbb8bc5af41fbde1ae339c38}{svl\+Converter\+::\+R\+G\+B24to\+Y\+U\+V444\+P} (unsigned char $\ast$input, unsigned char $\ast$output, const unsigned int pixelcount, bool ch1=true, bool ch2=true, bool ch3=true)
+\item 
+\hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} void \hyperlink{namespacesvl_converter_a749dd58d1642cb7c3ffd5f395b07cbe1}{svl\+Converter\+::\+B\+G\+R24to\+Y\+U\+V422} (unsigned char $\ast$input, unsigned char $\ast$output, const unsigned int pixelcount, bool ch1=true, bool ch2=true, bool ch3=true)
+\item 
+\hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} void \hyperlink{namespacesvl_converter_a075ff677fa0c08ea9a6985c066f5fd6c}{svl\+Converter\+::\+R\+G\+B24to\+Y\+U\+V422} (unsigned char $\ast$input, unsigned char $\ast$output, const unsigned int pixelcount, bool ch1=true, bool ch2=true, bool ch3=true)
+\item 
+\hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} void \hyperlink{namespacesvl_converter_a91b8e9ef5654edf30dbef536b7921457}{svl\+Converter\+::\+R\+G\+B24to\+Y\+U\+V422\+P} (unsigned char $\ast$input, unsigned char $\ast$output, const unsigned int pixelcount, bool ch1=true, bool ch2=true, bool ch3=true)
+\item 
+\hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} void \hyperlink{namespacesvl_converter_a8438f6d1c5c4f952bcb74ca713cc3e92}{svl\+Converter\+::\+R\+G\+B24to\+H\+S\+V24} (unsigned char $\ast$input, unsigned char $\ast$output, const unsigned int pixelcount, bool ch1=true, bool ch2=true, bool ch3=true)
+\item 
+\hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} void \hyperlink{namespacesvl_converter_ac698913e63b8eb4e52ee68c04136d371}{svl\+Converter\+::\+R\+G\+B24to\+H\+S\+V24\+P} (unsigned char $\ast$input, unsigned char $\ast$output, const unsigned int pixelcount, bool ch1=true, bool ch2=true, bool ch3=true)
+\item 
+\hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} void \hyperlink{namespacesvl_converter_ad4b71b99c952b6cf243780117d0b0b7b}{svl\+Converter\+::\+R\+G\+B24to\+H\+S\+L24} (unsigned char $\ast$input, unsigned char $\ast$output, const unsigned int pixelcount, bool ch1=true, bool ch2=true, bool ch3=true)
+\item 
+\hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} void \hyperlink{namespacesvl_converter_a9636254f31fb58640d0dbb23f68851c6}{svl\+Converter\+::\+R\+G\+B24to\+H\+S\+L24\+P} (unsigned char $\ast$input, unsigned char $\ast$output, const unsigned int pixelcount, bool ch1=true, bool ch2=true, bool ch3=true)
+\item 
+\hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} void \hyperlink{namespacesvl_converter_a7b53edede43334f9f9af1a332b5546ca}{svl\+Converter\+::\+R\+G\+B\+A32to\+R\+G\+B24} (unsigned char $\ast$input, unsigned char $\ast$output, const unsigned int pixelcount)
+\item 
+\hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} void \hyperlink{namespacesvl_converter_a65628ee6d10da68b6ad3133e3fb19ee6}{svl\+Converter\+::\+R\+G\+B\+A32to\+Gray8} (unsigned char $\ast$input, unsigned char $\ast$output, const unsigned int pixelcount, bool accurate=false, bool bgr=false)
+\item 
+\hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} void \hyperlink{namespacesvl_converter_a8dd1e673db19a4027e3f7112ffc59928}{svl\+Converter\+::\+R\+G\+B\+A32to\+Gray16} (unsigned char $\ast$input, unsigned short $\ast$output, const unsigned int pixelcount, bool accurate=false, bool bgr=false)
+\item 
+\hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} void \hyperlink{namespacesvl_converter_af5b67f08a4b804d5204d98bb0ee5557f}{svl\+Converter\+::\+R\+G\+B\+A32to\+Gray32} (unsigned char $\ast$input, unsigned int $\ast$output, const unsigned int pixelcount, bool accurate=false, bool bgr=false)
+\item 
+\hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} void \hyperlink{namespacesvl_converter_ad344ee1b5377e0ef400da695584ebd53}{svl\+Converter\+::\+Y\+U\+V444to\+R\+G\+B24} (unsigned char $\ast$input, unsigned char $\ast$output, const unsigned int pixelcount, bool ch1=true, bool ch2=true, bool ch3=true)
+\item 
+\hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} void \hyperlink{namespacesvl_converter_adaf832870c71537af4542ae677d7c1ad}{svl\+Converter\+::\+Y\+U\+V444\+Pto\+R\+G\+B24} (unsigned char $\ast$input, unsigned char $\ast$output, const unsigned int pixelcount, bool ch1=true, bool ch2=true, bool ch3=true)
+\item 
+\hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} void \hyperlink{namespacesvl_converter_aa50bea9710e0c790d0966fad98376319}{svl\+Converter\+::\+Y\+U\+V422to\+R\+G\+B24} (unsigned char $\ast$input, unsigned char $\ast$output, const unsigned int pixelcount, bool ch1=true, bool ch2=true, bool ch3=true)
+\item 
+\hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} void \hyperlink{namespacesvl_converter_a223a6406dbb0d166db1daacd95d64dea}{svl\+Converter\+::\+Y\+U\+V422\+Pto\+R\+G\+B24} (unsigned char $\ast$input, unsigned char $\ast$output, const unsigned int pixelcount, bool ch1=true, bool ch2=true, bool ch3=true)
+\item 
+\hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} void \hyperlink{namespacesvl_converter_a29fb7339f7fa53fae9745d2575a724ba}{svl\+Converter\+::\+N\+V21to\+R\+G\+B24} (unsigned char $\ast$input, unsigned char $\ast$output, const unsigned int width, const unsigned int height)
+\item 
+\hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} void \hyperlink{namespacesvl_converter_acc95903b2333fce1161aac393bee5288}{svl\+Converter\+::\+U\+Y\+V\+Yto\+R\+G\+B24} (unsigned char $\ast$input, unsigned char $\ast$output, const unsigned int pixelcount, bool ch1=true, bool ch2=true, bool ch3=true)
+\item 
+\hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} void \hyperlink{namespacesvl_converter_aefe398f1f6c73774eaf685b9c2fe3aeb}{svl\+Converter\+::\+H\+S\+V24to\+R\+G\+B24} (unsigned char $\ast$input, unsigned char $\ast$output, const unsigned int pixelcount, bool ch1=true, bool ch2=true, bool ch3=true)
+\end{DoxyCompactItemize}

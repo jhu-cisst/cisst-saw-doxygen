@@ -1,0 +1,129 @@
+\hypertarget{classosa_socket_server}{}\section{osa\+Socket\+Server Class Reference}
+\label{classosa_socket_server}\index{osa\+Socket\+Server@{osa\+Socket\+Server}}
+
+
+{\ttfamily \#include $<$osa\+Socket\+Server.\+h$>$}
+
+Inheritance diagram for osa\+Socket\+Server\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{dd/d83/classosa_socket_server}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classosa_socket_server_a95442e75d0234966550256b8591fca55}{osa\+Socket\+Server} (void)
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{classosa_socket_server_a0e5b5e34967cd0bfe3ee80ba98f62fe5}{$\sim$osa\+Socket\+Server} (void)
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+bool \hyperlink{classosa_socket_server_a983f8c04e9683324095f6440d022e7fb}{Assign\+Port} (unsigned short port)
+\begin{DoxyCompactList}\small\item\em Set the port for receiving data. \end{DoxyCompactList}\item 
+bool \hyperlink{classosa_socket_server_a8a9d065ea83b82acdce8568d0e87610a}{Listen} (int backlog=5)
+\begin{DoxyCompactList}\small\item\em Listen for incoming connections. \end{DoxyCompactList}\item 
+\hyperlink{classosa_socket}{osa\+Socket} $\ast$ \hyperlink{classosa_socket_server_afb7c054b984fe086617dd17b65b20979}{Accept} (void)
+\begin{DoxyCompactList}\small\item\em Accept an incoming connection. \end{DoxyCompactList}\item 
+void \hyperlink{classosa_socket_server_aa3540c4c8fccdddde8b1b922bbb4dbba}{Close} (void)
+\begin{DoxyCompactList}\small\item\em Close the listening socket. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classosa_socket_server_ad540b1c7de4c8d402ea98c937a7d8832}{Server\+Socket\+F\+D}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classosa_socket_server_a95442e75d0234966550256b8591fca55}{}\index{osa\+Socket\+Server@{osa\+Socket\+Server}!osa\+Socket\+Server@{osa\+Socket\+Server}}
+\index{osa\+Socket\+Server@{osa\+Socket\+Server}!osa\+Socket\+Server@{osa\+Socket\+Server}}
+\subsubsection[{osa\+Socket\+Server}]{\setlength{\rightskip}{0pt plus 5cm}osa\+Socket\+Server\+::osa\+Socket\+Server (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classosa_socket_server_a95442e75d0234966550256b8591fca55}
+
+
+Default constructor. 
+
+\hypertarget{classosa_socket_server_a0e5b5e34967cd0bfe3ee80ba98f62fe5}{}\index{osa\+Socket\+Server@{osa\+Socket\+Server}!````~osa\+Socket\+Server@{$\sim$osa\+Socket\+Server}}
+\index{````~osa\+Socket\+Server@{$\sim$osa\+Socket\+Server}!osa\+Socket\+Server@{osa\+Socket\+Server}}
+\subsubsection[{$\sim$osa\+Socket\+Server}]{\setlength{\rightskip}{0pt plus 5cm}osa\+Socket\+Server\+::$\sim$osa\+Socket\+Server (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classosa_socket_server_a0e5b5e34967cd0bfe3ee80ba98f62fe5}
+
+
+Destructor. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classosa_socket_server_afb7c054b984fe086617dd17b65b20979}{}\index{osa\+Socket\+Server@{osa\+Socket\+Server}!Accept@{Accept}}
+\index{Accept@{Accept}!osa\+Socket\+Server@{osa\+Socket\+Server}}
+\subsubsection[{Accept}]{\setlength{\rightskip}{0pt plus 5cm}{\bf osa\+Socket}$\ast$ osa\+Socket\+Server\+::\+Accept (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classosa_socket_server_afb7c054b984fe086617dd17b65b20979}
+
+
+Accept an incoming connection. 
+
+\begin{DoxyReturn}{Returns}
+Pointer to the accepted socket or 0 on failure 
+\end{DoxyReturn}
+\hypertarget{classosa_socket_server_a983f8c04e9683324095f6440d022e7fb}{}\index{osa\+Socket\+Server@{osa\+Socket\+Server}!Assign\+Port@{Assign\+Port}}
+\index{Assign\+Port@{Assign\+Port}!osa\+Socket\+Server@{osa\+Socket\+Server}}
+\subsubsection[{Assign\+Port}]{\setlength{\rightskip}{0pt plus 5cm}bool osa\+Socket\+Server\+::\+Assign\+Port (
+\begin{DoxyParamCaption}
+\item[{unsigned short}]{port}
+\end{DoxyParamCaption}
+)}\label{classosa_socket_server_a983f8c04e9683324095f6440d022e7fb}
+
+
+Set the port for receiving data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em port} & The port number \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true on success 
+\end{DoxyReturn}
+\hypertarget{classosa_socket_server_aa3540c4c8fccdddde8b1b922bbb4dbba}{}\index{osa\+Socket\+Server@{osa\+Socket\+Server}!Close@{Close}}
+\index{Close@{Close}!osa\+Socket\+Server@{osa\+Socket\+Server}}
+\subsubsection[{Close}]{\setlength{\rightskip}{0pt plus 5cm}void osa\+Socket\+Server\+::\+Close (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classosa_socket_server_aa3540c4c8fccdddde8b1b922bbb4dbba}
+
+
+Close the listening socket. 
+
+\hypertarget{classosa_socket_server_a8a9d065ea83b82acdce8568d0e87610a}{}\index{osa\+Socket\+Server@{osa\+Socket\+Server}!Listen@{Listen}}
+\index{Listen@{Listen}!osa\+Socket\+Server@{osa\+Socket\+Server}}
+\subsubsection[{Listen}]{\setlength{\rightskip}{0pt plus 5cm}bool osa\+Socket\+Server\+::\+Listen (
+\begin{DoxyParamCaption}
+\item[{int}]{backlog = {\ttfamily 5}}
+\end{DoxyParamCaption}
+)}\label{classosa_socket_server_a8a9d065ea83b82acdce8568d0e87610a}
+
+
+Listen for incoming connections. 
+
+\begin{DoxyReturn}{Returns}
+true on success 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classosa_socket_server_ad540b1c7de4c8d402ea98c937a7d8832}{}\index{osa\+Socket\+Server@{osa\+Socket\+Server}!Server\+Socket\+F\+D@{Server\+Socket\+F\+D}}
+\index{Server\+Socket\+F\+D@{Server\+Socket\+F\+D}!osa\+Socket\+Server@{osa\+Socket\+Server}}
+\subsubsection[{Server\+Socket\+F\+D}]{\setlength{\rightskip}{0pt plus 5cm}int osa\+Socket\+Server\+::\+Server\+Socket\+F\+D\hspace{0.3cm}{\ttfamily [protected]}}\label{classosa_socket_server_ad540b1c7de4c8d402ea98c937a7d8832}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+O\+S\+Abstraction/\hyperlink{osa_socket_server_8h}{osa\+Socket\+Server.\+h}\end{DoxyCompactItemize}

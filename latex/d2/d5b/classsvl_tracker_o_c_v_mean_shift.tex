@@ -1,0 +1,226 @@
+\hypertarget{classsvl_tracker_o_c_v_mean_shift}{}\section{svl\+Tracker\+O\+C\+V\+Mean\+Shift Class Reference}
+\label{classsvl_tracker_o_c_v_mean_shift}\index{svl\+Tracker\+O\+C\+V\+Mean\+Shift@{svl\+Tracker\+O\+C\+V\+Mean\+Shift}}
+
+
+{\ttfamily \#include $<$svl\+Tracker\+O\+C\+V\+Mean\+Shift.\+h$>$}
+
+Inheritance diagram for svl\+Tracker\+O\+C\+V\+Mean\+Shift\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{d2/d5b/classsvl_tracker_o_c_v_mean_shift}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsvl_tracker_o_c_v_mean_shift_a3d3446eced3addc41fca298f43703e15}{svl\+Tracker\+O\+C\+V\+Mean\+Shift} ()
+\item 
+virtual \hyperlink{classsvl_tracker_o_c_v_mean_shift_a7ea83fe3b1d9bfbee4358dc97067eaea}{$\sim$svl\+Tracker\+O\+C\+V\+Mean\+Shift} ()
+\item 
+virtual void \hyperlink{classsvl_tracker_o_c_v_mean_shift_aef31184a9ab91ca20bc329a4af22ce9a}{Set\+Parameters} (int winrad, int vmin, int vmax, int smin, int hdims, int maxiter, double maxerror)
+\item 
+virtual int \hyperlink{classsvl_tracker_o_c_v_mean_shift_a323dbe231d319def26e8ce46b734e375}{Set\+Target\+Count} (unsigned int targetcount)
+\item 
+virtual int \hyperlink{classsvl_tracker_o_c_v_mean_shift_a681e10fbccb458b343bbb3b873a88cab}{Set\+Target} (unsigned int targetid, const \hyperlink{structsvl_target2_d}{svl\+Target2\+D} \&target)
+\item 
+virtual int \hyperlink{classsvl_tracker_o_c_v_mean_shift_a87583574f4821796798cb340df2b2133}{Initialize} ()
+\item 
+virtual int \hyperlink{classsvl_tracker_o_c_v_mean_shift_a7a0b8229b75ef85b5aff257df2fcb2cd}{Pre\+Process\+Image} (\hyperlink{classsvl_sample_image}{svl\+Sample\+Image} \&image, unsigned int videoch=\hyperlink{svl_definitions_8h_ab9fec7615f19c8df2919eebcab0b187f}{S\+V\+L\+\_\+\+L\+E\+F\+T})
+\item 
+virtual int \hyperlink{classsvl_tracker_o_c_v_mean_shift_a35c6c70d76bd53e08fd023e45c8aafe8}{Track} (\hyperlink{classsvl_sample_image}{svl\+Sample\+Image} \&image, unsigned int videoch=\hyperlink{svl_definitions_8h_ab9fec7615f19c8df2919eebcab0b187f}{S\+V\+L\+\_\+\+L\+E\+F\+T})
+\item 
+virtual void \hyperlink{classsvl_tracker_o_c_v_mean_shift_ae2cf254b0fab604a2d5384a4aa9b97c3}{Release} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classsvl_tracker_o_c_v_mean_shift_a2054ed2ac9e61dc68e1c8d5733452e38}{Targets\+Added}
+\item 
+int \hyperlink{classsvl_tracker_o_c_v_mean_shift_a33e7390d7ed52a9a2f784ac7bf6a7c56}{Win\+Radius}
+\item 
+int \hyperlink{classsvl_tracker_o_c_v_mean_shift_a819979074decd36baa5f75e0db95764b}{Vmin}
+\item 
+int \hyperlink{classsvl_tracker_o_c_v_mean_shift_aa30ea527e09f1642723f72b8052c4128}{Vmax}
+\item 
+int \hyperlink{classsvl_tracker_o_c_v_mean_shift_ac9580a13deb4e3ccaa171070a09b6b95}{Smin}
+\item 
+int \hyperlink{classsvl_tracker_o_c_v_mean_shift_a9a31cf37921c221d9aa82f0d5aeaaece}{Hist\+Dims}
+\item 
+int \hyperlink{classsvl_tracker_o_c_v_mean_shift_a72ce057b765f9a1f38d79651659b12fd}{Max\+Iter}
+\item 
+double \hyperlink{classsvl_tracker_o_c_v_mean_shift_a088ba363e76d5e1129a3db18f17d8a1e}{Max\+Error}
+\item 
+\hyperlink{classvct_dynamic_vector}{vct\+Dynamic\+Vector}$<$ Cv\+Histogram $\ast$ $>$ \hyperlink{classsvl_tracker_o_c_v_mean_shift_a91f614062a5d81f7baa035168705ee56}{ocv\+Hist}
+\item 
+\hyperlink{classvct_dynamic_vector}{vct\+Dynamic\+Vector}$<$ Cv\+Rect $>$ \hyperlink{classsvl_tracker_o_c_v_mean_shift_aef4078c2bb25bf33cbf01d1f1525545f}{ocv\+Rect}
+\item 
+Cv\+Connected\+Comp \hyperlink{classsvl_tracker_o_c_v_mean_shift_afbd5ec234b24bf1b561ebf0c66761d79}{ocv\+Conn\+Comp}
+\item 
+Cv\+Box2\+D \hyperlink{classsvl_tracker_o_c_v_mean_shift_af704a1f15a4ff13d0c1b052b74589ffe}{ocv\+Box}
+\item 
+\hyperlink{svl_types_8h_aa5a40a13021ba9708bfe921e18fdfa53}{Ipl\+Image} $\ast$ \hyperlink{classsvl_tracker_o_c_v_mean_shift_a84665b7a5ea0d434fda0555c01456bb7}{ocv\+Hue}
+\item 
+\hyperlink{svl_types_8h_aa5a40a13021ba9708bfe921e18fdfa53}{Ipl\+Image} $\ast$ \hyperlink{classsvl_tracker_o_c_v_mean_shift_aea791761a2b3163716626b33ac3965cd}{ocv\+Hsv}
+\item 
+\hyperlink{svl_types_8h_aa5a40a13021ba9708bfe921e18fdfa53}{Ipl\+Image} $\ast$ \hyperlink{classsvl_tracker_o_c_v_mean_shift_ad5f62155accaa1529eca7ee87bf2df54}{ocv\+Mask}
+\item 
+\hyperlink{svl_types_8h_aa5a40a13021ba9708bfe921e18fdfa53}{Ipl\+Image} $\ast$ \hyperlink{classsvl_tracker_o_c_v_mean_shift_a4d006bede9016ce5596552d3c3b118b9}{ocv\+Back\+Proj}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classsvl_tracker_o_c_v_mean_shift_a3d3446eced3addc41fca298f43703e15}{}\index{svl\+Tracker\+O\+C\+V\+Mean\+Shift@{svl\+Tracker\+O\+C\+V\+Mean\+Shift}!svl\+Tracker\+O\+C\+V\+Mean\+Shift@{svl\+Tracker\+O\+C\+V\+Mean\+Shift}}
+\index{svl\+Tracker\+O\+C\+V\+Mean\+Shift@{svl\+Tracker\+O\+C\+V\+Mean\+Shift}!svl\+Tracker\+O\+C\+V\+Mean\+Shift@{svl\+Tracker\+O\+C\+V\+Mean\+Shift}}
+\subsubsection[{svl\+Tracker\+O\+C\+V\+Mean\+Shift}]{\setlength{\rightskip}{0pt plus 5cm}svl\+Tracker\+O\+C\+V\+Mean\+Shift\+::svl\+Tracker\+O\+C\+V\+Mean\+Shift (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classsvl_tracker_o_c_v_mean_shift_a3d3446eced3addc41fca298f43703e15}
+\hypertarget{classsvl_tracker_o_c_v_mean_shift_a7ea83fe3b1d9bfbee4358dc97067eaea}{}\index{svl\+Tracker\+O\+C\+V\+Mean\+Shift@{svl\+Tracker\+O\+C\+V\+Mean\+Shift}!````~svl\+Tracker\+O\+C\+V\+Mean\+Shift@{$\sim$svl\+Tracker\+O\+C\+V\+Mean\+Shift}}
+\index{````~svl\+Tracker\+O\+C\+V\+Mean\+Shift@{$\sim$svl\+Tracker\+O\+C\+V\+Mean\+Shift}!svl\+Tracker\+O\+C\+V\+Mean\+Shift@{svl\+Tracker\+O\+C\+V\+Mean\+Shift}}
+\subsubsection[{$\sim$svl\+Tracker\+O\+C\+V\+Mean\+Shift}]{\setlength{\rightskip}{0pt plus 5cm}virtual svl\+Tracker\+O\+C\+V\+Mean\+Shift\+::$\sim$svl\+Tracker\+O\+C\+V\+Mean\+Shift (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classsvl_tracker_o_c_v_mean_shift_a7ea83fe3b1d9bfbee4358dc97067eaea}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classsvl_tracker_o_c_v_mean_shift_a87583574f4821796798cb340df2b2133}{}\index{svl\+Tracker\+O\+C\+V\+Mean\+Shift@{svl\+Tracker\+O\+C\+V\+Mean\+Shift}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!svl\+Tracker\+O\+C\+V\+Mean\+Shift@{svl\+Tracker\+O\+C\+V\+Mean\+Shift}}
+\subsubsection[{Initialize}]{\setlength{\rightskip}{0pt plus 5cm}virtual int svl\+Tracker\+O\+C\+V\+Mean\+Shift\+::\+Initialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classsvl_tracker_o_c_v_mean_shift_a87583574f4821796798cb340df2b2133}
+
+
+Reimplemented from \hyperlink{classsvl_image_tracker_a530ac429c83a63e48e00eac848d4d2ec}{svl\+Image\+Tracker}.
+
+\hypertarget{classsvl_tracker_o_c_v_mean_shift_a7a0b8229b75ef85b5aff257df2fcb2cd}{}\index{svl\+Tracker\+O\+C\+V\+Mean\+Shift@{svl\+Tracker\+O\+C\+V\+Mean\+Shift}!Pre\+Process\+Image@{Pre\+Process\+Image}}
+\index{Pre\+Process\+Image@{Pre\+Process\+Image}!svl\+Tracker\+O\+C\+V\+Mean\+Shift@{svl\+Tracker\+O\+C\+V\+Mean\+Shift}}
+\subsubsection[{Pre\+Process\+Image}]{\setlength{\rightskip}{0pt plus 5cm}virtual int svl\+Tracker\+O\+C\+V\+Mean\+Shift\+::\+Pre\+Process\+Image (
+\begin{DoxyParamCaption}
+\item[{{\bf svl\+Sample\+Image} \&}]{image, }
+\item[{unsigned int}]{videoch = {\ttfamily {\bf S\+V\+L\+\_\+\+L\+E\+F\+T}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classsvl_tracker_o_c_v_mean_shift_a7a0b8229b75ef85b5aff257df2fcb2cd}
+
+
+Reimplemented from \hyperlink{classsvl_image_tracker_a817d28eaf0a20c73273e7c9060c03ebf}{svl\+Image\+Tracker}.
+
+\hypertarget{classsvl_tracker_o_c_v_mean_shift_ae2cf254b0fab604a2d5384a4aa9b97c3}{}\index{svl\+Tracker\+O\+C\+V\+Mean\+Shift@{svl\+Tracker\+O\+C\+V\+Mean\+Shift}!Release@{Release}}
+\index{Release@{Release}!svl\+Tracker\+O\+C\+V\+Mean\+Shift@{svl\+Tracker\+O\+C\+V\+Mean\+Shift}}
+\subsubsection[{Release}]{\setlength{\rightskip}{0pt plus 5cm}virtual void svl\+Tracker\+O\+C\+V\+Mean\+Shift\+::\+Release (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classsvl_tracker_o_c_v_mean_shift_ae2cf254b0fab604a2d5384a4aa9b97c3}
+
+
+Reimplemented from \hyperlink{classsvl_image_tracker_a08ca47278e9d55b83f081c10e1159340}{svl\+Image\+Tracker}.
+
+\hypertarget{classsvl_tracker_o_c_v_mean_shift_aef31184a9ab91ca20bc329a4af22ce9a}{}\index{svl\+Tracker\+O\+C\+V\+Mean\+Shift@{svl\+Tracker\+O\+C\+V\+Mean\+Shift}!Set\+Parameters@{Set\+Parameters}}
+\index{Set\+Parameters@{Set\+Parameters}!svl\+Tracker\+O\+C\+V\+Mean\+Shift@{svl\+Tracker\+O\+C\+V\+Mean\+Shift}}
+\subsubsection[{Set\+Parameters}]{\setlength{\rightskip}{0pt plus 5cm}virtual void svl\+Tracker\+O\+C\+V\+Mean\+Shift\+::\+Set\+Parameters (
+\begin{DoxyParamCaption}
+\item[{int}]{winrad, }
+\item[{int}]{vmin, }
+\item[{int}]{vmax, }
+\item[{int}]{smin, }
+\item[{int}]{hdims, }
+\item[{int}]{maxiter, }
+\item[{double}]{maxerror}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classsvl_tracker_o_c_v_mean_shift_aef31184a9ab91ca20bc329a4af22ce9a}
+\hypertarget{classsvl_tracker_o_c_v_mean_shift_a681e10fbccb458b343bbb3b873a88cab}{}\index{svl\+Tracker\+O\+C\+V\+Mean\+Shift@{svl\+Tracker\+O\+C\+V\+Mean\+Shift}!Set\+Target@{Set\+Target}}
+\index{Set\+Target@{Set\+Target}!svl\+Tracker\+O\+C\+V\+Mean\+Shift@{svl\+Tracker\+O\+C\+V\+Mean\+Shift}}
+\subsubsection[{Set\+Target}]{\setlength{\rightskip}{0pt plus 5cm}virtual int svl\+Tracker\+O\+C\+V\+Mean\+Shift\+::\+Set\+Target (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{targetid, }
+\item[{const {\bf svl\+Target2\+D} \&}]{target}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classsvl_tracker_o_c_v_mean_shift_a681e10fbccb458b343bbb3b873a88cab}
+
+
+Reimplemented from \hyperlink{classsvl_image_tracker_a33dbddc5e274df467a2f459652fa620f}{svl\+Image\+Tracker}.
+
+\hypertarget{classsvl_tracker_o_c_v_mean_shift_a323dbe231d319def26e8ce46b734e375}{}\index{svl\+Tracker\+O\+C\+V\+Mean\+Shift@{svl\+Tracker\+O\+C\+V\+Mean\+Shift}!Set\+Target\+Count@{Set\+Target\+Count}}
+\index{Set\+Target\+Count@{Set\+Target\+Count}!svl\+Tracker\+O\+C\+V\+Mean\+Shift@{svl\+Tracker\+O\+C\+V\+Mean\+Shift}}
+\subsubsection[{Set\+Target\+Count}]{\setlength{\rightskip}{0pt plus 5cm}virtual int svl\+Tracker\+O\+C\+V\+Mean\+Shift\+::\+Set\+Target\+Count (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{targetcount}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classsvl_tracker_o_c_v_mean_shift_a323dbe231d319def26e8ce46b734e375}
+
+
+Reimplemented from \hyperlink{classsvl_image_tracker_a37dd0dd1b30ce96784258bb359a790d6}{svl\+Image\+Tracker}.
+
+\hypertarget{classsvl_tracker_o_c_v_mean_shift_a35c6c70d76bd53e08fd023e45c8aafe8}{}\index{svl\+Tracker\+O\+C\+V\+Mean\+Shift@{svl\+Tracker\+O\+C\+V\+Mean\+Shift}!Track@{Track}}
+\index{Track@{Track}!svl\+Tracker\+O\+C\+V\+Mean\+Shift@{svl\+Tracker\+O\+C\+V\+Mean\+Shift}}
+\subsubsection[{Track}]{\setlength{\rightskip}{0pt plus 5cm}virtual int svl\+Tracker\+O\+C\+V\+Mean\+Shift\+::\+Track (
+\begin{DoxyParamCaption}
+\item[{{\bf svl\+Sample\+Image} \&}]{image, }
+\item[{unsigned int}]{videoch = {\ttfamily {\bf S\+V\+L\+\_\+\+L\+E\+F\+T}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classsvl_tracker_o_c_v_mean_shift_a35c6c70d76bd53e08fd023e45c8aafe8}
+
+
+Implements \hyperlink{classsvl_image_tracker_aa806fe1fe56828124a85cb81e0d7bd7f}{svl\+Image\+Tracker}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classsvl_tracker_o_c_v_mean_shift_a9a31cf37921c221d9aa82f0d5aeaaece}{}\index{svl\+Tracker\+O\+C\+V\+Mean\+Shift@{svl\+Tracker\+O\+C\+V\+Mean\+Shift}!Hist\+Dims@{Hist\+Dims}}
+\index{Hist\+Dims@{Hist\+Dims}!svl\+Tracker\+O\+C\+V\+Mean\+Shift@{svl\+Tracker\+O\+C\+V\+Mean\+Shift}}
+\subsubsection[{Hist\+Dims}]{\setlength{\rightskip}{0pt plus 5cm}int svl\+Tracker\+O\+C\+V\+Mean\+Shift\+::\+Hist\+Dims\hspace{0.3cm}{\ttfamily [protected]}}\label{classsvl_tracker_o_c_v_mean_shift_a9a31cf37921c221d9aa82f0d5aeaaece}
+\hypertarget{classsvl_tracker_o_c_v_mean_shift_a088ba363e76d5e1129a3db18f17d8a1e}{}\index{svl\+Tracker\+O\+C\+V\+Mean\+Shift@{svl\+Tracker\+O\+C\+V\+Mean\+Shift}!Max\+Error@{Max\+Error}}
+\index{Max\+Error@{Max\+Error}!svl\+Tracker\+O\+C\+V\+Mean\+Shift@{svl\+Tracker\+O\+C\+V\+Mean\+Shift}}
+\subsubsection[{Max\+Error}]{\setlength{\rightskip}{0pt plus 5cm}double svl\+Tracker\+O\+C\+V\+Mean\+Shift\+::\+Max\+Error\hspace{0.3cm}{\ttfamily [protected]}}\label{classsvl_tracker_o_c_v_mean_shift_a088ba363e76d5e1129a3db18f17d8a1e}
+\hypertarget{classsvl_tracker_o_c_v_mean_shift_a72ce057b765f9a1f38d79651659b12fd}{}\index{svl\+Tracker\+O\+C\+V\+Mean\+Shift@{svl\+Tracker\+O\+C\+V\+Mean\+Shift}!Max\+Iter@{Max\+Iter}}
+\index{Max\+Iter@{Max\+Iter}!svl\+Tracker\+O\+C\+V\+Mean\+Shift@{svl\+Tracker\+O\+C\+V\+Mean\+Shift}}
+\subsubsection[{Max\+Iter}]{\setlength{\rightskip}{0pt plus 5cm}int svl\+Tracker\+O\+C\+V\+Mean\+Shift\+::\+Max\+Iter\hspace{0.3cm}{\ttfamily [protected]}}\label{classsvl_tracker_o_c_v_mean_shift_a72ce057b765f9a1f38d79651659b12fd}
+\hypertarget{classsvl_tracker_o_c_v_mean_shift_a4d006bede9016ce5596552d3c3b118b9}{}\index{svl\+Tracker\+O\+C\+V\+Mean\+Shift@{svl\+Tracker\+O\+C\+V\+Mean\+Shift}!ocv\+Back\+Proj@{ocv\+Back\+Proj}}
+\index{ocv\+Back\+Proj@{ocv\+Back\+Proj}!svl\+Tracker\+O\+C\+V\+Mean\+Shift@{svl\+Tracker\+O\+C\+V\+Mean\+Shift}}
+\subsubsection[{ocv\+Back\+Proj}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ipl\+Image}$\ast$ svl\+Tracker\+O\+C\+V\+Mean\+Shift\+::ocv\+Back\+Proj\hspace{0.3cm}{\ttfamily [protected]}}\label{classsvl_tracker_o_c_v_mean_shift_a4d006bede9016ce5596552d3c3b118b9}
+\hypertarget{classsvl_tracker_o_c_v_mean_shift_af704a1f15a4ff13d0c1b052b74589ffe}{}\index{svl\+Tracker\+O\+C\+V\+Mean\+Shift@{svl\+Tracker\+O\+C\+V\+Mean\+Shift}!ocv\+Box@{ocv\+Box}}
+\index{ocv\+Box@{ocv\+Box}!svl\+Tracker\+O\+C\+V\+Mean\+Shift@{svl\+Tracker\+O\+C\+V\+Mean\+Shift}}
+\subsubsection[{ocv\+Box}]{\setlength{\rightskip}{0pt plus 5cm}Cv\+Box2\+D svl\+Tracker\+O\+C\+V\+Mean\+Shift\+::ocv\+Box\hspace{0.3cm}{\ttfamily [protected]}}\label{classsvl_tracker_o_c_v_mean_shift_af704a1f15a4ff13d0c1b052b74589ffe}
+\hypertarget{classsvl_tracker_o_c_v_mean_shift_afbd5ec234b24bf1b561ebf0c66761d79}{}\index{svl\+Tracker\+O\+C\+V\+Mean\+Shift@{svl\+Tracker\+O\+C\+V\+Mean\+Shift}!ocv\+Conn\+Comp@{ocv\+Conn\+Comp}}
+\index{ocv\+Conn\+Comp@{ocv\+Conn\+Comp}!svl\+Tracker\+O\+C\+V\+Mean\+Shift@{svl\+Tracker\+O\+C\+V\+Mean\+Shift}}
+\subsubsection[{ocv\+Conn\+Comp}]{\setlength{\rightskip}{0pt plus 5cm}Cv\+Connected\+Comp svl\+Tracker\+O\+C\+V\+Mean\+Shift\+::ocv\+Conn\+Comp\hspace{0.3cm}{\ttfamily [protected]}}\label{classsvl_tracker_o_c_v_mean_shift_afbd5ec234b24bf1b561ebf0c66761d79}
+\hypertarget{classsvl_tracker_o_c_v_mean_shift_a91f614062a5d81f7baa035168705ee56}{}\index{svl\+Tracker\+O\+C\+V\+Mean\+Shift@{svl\+Tracker\+O\+C\+V\+Mean\+Shift}!ocv\+Hist@{ocv\+Hist}}
+\index{ocv\+Hist@{ocv\+Hist}!svl\+Tracker\+O\+C\+V\+Mean\+Shift@{svl\+Tracker\+O\+C\+V\+Mean\+Shift}}
+\subsubsection[{ocv\+Hist}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Dynamic\+Vector}$<$Cv\+Histogram$\ast$$>$ svl\+Tracker\+O\+C\+V\+Mean\+Shift\+::ocv\+Hist\hspace{0.3cm}{\ttfamily [protected]}}\label{classsvl_tracker_o_c_v_mean_shift_a91f614062a5d81f7baa035168705ee56}
+\hypertarget{classsvl_tracker_o_c_v_mean_shift_aea791761a2b3163716626b33ac3965cd}{}\index{svl\+Tracker\+O\+C\+V\+Mean\+Shift@{svl\+Tracker\+O\+C\+V\+Mean\+Shift}!ocv\+Hsv@{ocv\+Hsv}}
+\index{ocv\+Hsv@{ocv\+Hsv}!svl\+Tracker\+O\+C\+V\+Mean\+Shift@{svl\+Tracker\+O\+C\+V\+Mean\+Shift}}
+\subsubsection[{ocv\+Hsv}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ipl\+Image}$\ast$ svl\+Tracker\+O\+C\+V\+Mean\+Shift\+::ocv\+Hsv\hspace{0.3cm}{\ttfamily [protected]}}\label{classsvl_tracker_o_c_v_mean_shift_aea791761a2b3163716626b33ac3965cd}
+\hypertarget{classsvl_tracker_o_c_v_mean_shift_a84665b7a5ea0d434fda0555c01456bb7}{}\index{svl\+Tracker\+O\+C\+V\+Mean\+Shift@{svl\+Tracker\+O\+C\+V\+Mean\+Shift}!ocv\+Hue@{ocv\+Hue}}
+\index{ocv\+Hue@{ocv\+Hue}!svl\+Tracker\+O\+C\+V\+Mean\+Shift@{svl\+Tracker\+O\+C\+V\+Mean\+Shift}}
+\subsubsection[{ocv\+Hue}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ipl\+Image}$\ast$ svl\+Tracker\+O\+C\+V\+Mean\+Shift\+::ocv\+Hue\hspace{0.3cm}{\ttfamily [protected]}}\label{classsvl_tracker_o_c_v_mean_shift_a84665b7a5ea0d434fda0555c01456bb7}
+\hypertarget{classsvl_tracker_o_c_v_mean_shift_ad5f62155accaa1529eca7ee87bf2df54}{}\index{svl\+Tracker\+O\+C\+V\+Mean\+Shift@{svl\+Tracker\+O\+C\+V\+Mean\+Shift}!ocv\+Mask@{ocv\+Mask}}
+\index{ocv\+Mask@{ocv\+Mask}!svl\+Tracker\+O\+C\+V\+Mean\+Shift@{svl\+Tracker\+O\+C\+V\+Mean\+Shift}}
+\subsubsection[{ocv\+Mask}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ipl\+Image}$\ast$ svl\+Tracker\+O\+C\+V\+Mean\+Shift\+::ocv\+Mask\hspace{0.3cm}{\ttfamily [protected]}}\label{classsvl_tracker_o_c_v_mean_shift_ad5f62155accaa1529eca7ee87bf2df54}
+\hypertarget{classsvl_tracker_o_c_v_mean_shift_aef4078c2bb25bf33cbf01d1f1525545f}{}\index{svl\+Tracker\+O\+C\+V\+Mean\+Shift@{svl\+Tracker\+O\+C\+V\+Mean\+Shift}!ocv\+Rect@{ocv\+Rect}}
+\index{ocv\+Rect@{ocv\+Rect}!svl\+Tracker\+O\+C\+V\+Mean\+Shift@{svl\+Tracker\+O\+C\+V\+Mean\+Shift}}
+\subsubsection[{ocv\+Rect}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Dynamic\+Vector}$<$Cv\+Rect$>$ svl\+Tracker\+O\+C\+V\+Mean\+Shift\+::ocv\+Rect\hspace{0.3cm}{\ttfamily [protected]}}\label{classsvl_tracker_o_c_v_mean_shift_aef4078c2bb25bf33cbf01d1f1525545f}
+\hypertarget{classsvl_tracker_o_c_v_mean_shift_ac9580a13deb4e3ccaa171070a09b6b95}{}\index{svl\+Tracker\+O\+C\+V\+Mean\+Shift@{svl\+Tracker\+O\+C\+V\+Mean\+Shift}!Smin@{Smin}}
+\index{Smin@{Smin}!svl\+Tracker\+O\+C\+V\+Mean\+Shift@{svl\+Tracker\+O\+C\+V\+Mean\+Shift}}
+\subsubsection[{Smin}]{\setlength{\rightskip}{0pt plus 5cm}int svl\+Tracker\+O\+C\+V\+Mean\+Shift\+::\+Smin\hspace{0.3cm}{\ttfamily [protected]}}\label{classsvl_tracker_o_c_v_mean_shift_ac9580a13deb4e3ccaa171070a09b6b95}
+\hypertarget{classsvl_tracker_o_c_v_mean_shift_a2054ed2ac9e61dc68e1c8d5733452e38}{}\index{svl\+Tracker\+O\+C\+V\+Mean\+Shift@{svl\+Tracker\+O\+C\+V\+Mean\+Shift}!Targets\+Added@{Targets\+Added}}
+\index{Targets\+Added@{Targets\+Added}!svl\+Tracker\+O\+C\+V\+Mean\+Shift@{svl\+Tracker\+O\+C\+V\+Mean\+Shift}}
+\subsubsection[{Targets\+Added}]{\setlength{\rightskip}{0pt plus 5cm}bool svl\+Tracker\+O\+C\+V\+Mean\+Shift\+::\+Targets\+Added\hspace{0.3cm}{\ttfamily [protected]}}\label{classsvl_tracker_o_c_v_mean_shift_a2054ed2ac9e61dc68e1c8d5733452e38}
+\hypertarget{classsvl_tracker_o_c_v_mean_shift_aa30ea527e09f1642723f72b8052c4128}{}\index{svl\+Tracker\+O\+C\+V\+Mean\+Shift@{svl\+Tracker\+O\+C\+V\+Mean\+Shift}!Vmax@{Vmax}}
+\index{Vmax@{Vmax}!svl\+Tracker\+O\+C\+V\+Mean\+Shift@{svl\+Tracker\+O\+C\+V\+Mean\+Shift}}
+\subsubsection[{Vmax}]{\setlength{\rightskip}{0pt plus 5cm}int svl\+Tracker\+O\+C\+V\+Mean\+Shift\+::\+Vmax\hspace{0.3cm}{\ttfamily [protected]}}\label{classsvl_tracker_o_c_v_mean_shift_aa30ea527e09f1642723f72b8052c4128}
+\hypertarget{classsvl_tracker_o_c_v_mean_shift_a819979074decd36baa5f75e0db95764b}{}\index{svl\+Tracker\+O\+C\+V\+Mean\+Shift@{svl\+Tracker\+O\+C\+V\+Mean\+Shift}!Vmin@{Vmin}}
+\index{Vmin@{Vmin}!svl\+Tracker\+O\+C\+V\+Mean\+Shift@{svl\+Tracker\+O\+C\+V\+Mean\+Shift}}
+\subsubsection[{Vmin}]{\setlength{\rightskip}{0pt plus 5cm}int svl\+Tracker\+O\+C\+V\+Mean\+Shift\+::\+Vmin\hspace{0.3cm}{\ttfamily [protected]}}\label{classsvl_tracker_o_c_v_mean_shift_a819979074decd36baa5f75e0db95764b}
+\hypertarget{classsvl_tracker_o_c_v_mean_shift_a33e7390d7ed52a9a2f784ac7bf6a7c56}{}\index{svl\+Tracker\+O\+C\+V\+Mean\+Shift@{svl\+Tracker\+O\+C\+V\+Mean\+Shift}!Win\+Radius@{Win\+Radius}}
+\index{Win\+Radius@{Win\+Radius}!svl\+Tracker\+O\+C\+V\+Mean\+Shift@{svl\+Tracker\+O\+C\+V\+Mean\+Shift}}
+\subsubsection[{Win\+Radius}]{\setlength{\rightskip}{0pt plus 5cm}int svl\+Tracker\+O\+C\+V\+Mean\+Shift\+::\+Win\+Radius\hspace{0.3cm}{\ttfamily [protected]}}\label{classsvl_tracker_o_c_v_mean_shift_a33e7390d7ed52a9a2f784ac7bf6a7c56}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Stereo\+Vision/\hyperlink{svl_tracker_o_c_v_mean_shift_8h}{svl\+Tracker\+O\+C\+V\+Mean\+Shift.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,440 @@
+\hypertarget{classosa_open_a_l}{}\section{osa\+Open\+A\+L Class Reference}
+\label{classosa_open_a_l}\index{osa\+Open\+A\+L@{osa\+Open\+A\+L}}
+
+
+{\ttfamily \#include $<$osa\+Open\+A\+L.\+h$>$}
+
+Inheritance diagram for osa\+Open\+A\+L\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{d9/df2/classosa_open_a_l}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classosa_open_a_l_a81e53573c5d1e8cdcba2cc00784228f2}{Sound\+Format} \{ \hyperlink{classosa_open_a_l_a81e53573c5d1e8cdcba2cc00784228f2ab1e23fa51394321d18b4d36466a74af3}{M\+O\+N\+O8}, 
+\hyperlink{classosa_open_a_l_a81e53573c5d1e8cdcba2cc00784228f2ac4ac9b5df84b02ac608e9bceef1e63c7}{M\+O\+N\+O16}, 
+\hyperlink{classosa_open_a_l_a81e53573c5d1e8cdcba2cc00784228f2a7f430aef18c2591cd1e88c2d997b9e63}{S\+T\+E\+R\+E\+O8}, 
+\hyperlink{classosa_open_a_l_a81e53573c5d1e8cdcba2cc00784228f2a5df4300053eb0ae431ce08e932032ffa}{S\+T\+E\+R\+E\+O16}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classosa_open_a_l_a6dcad24149586594c8e0c61e6f0ec3da}{osa\+Open\+A\+L} ()
+\item 
+\hyperlink{classosa_open_a_l_a9945100e88e0a032d3d7d75e3e7f2489}{$\sim$osa\+Open\+A\+L} ()
+\item 
+void \hyperlink{classosa_open_a_l_afc5082b0168b07d0476801d1f6cb94cf}{Configure} (const std\+::string \&\hyperlink{cmn_portability_8h_a021894e2626935fa2305434b1e893ff6}{C\+M\+N\+\_\+\+U\+N\+U\+S\+E\+D}(filename))
+\item 
+void \hyperlink{classosa_open_a_l_ac9437555735a6dbc7503927558b07171}{Startup} (void)
+\item 
+void \hyperlink{classosa_open_a_l_a7a54efebb58461d129afa38b92040c5b}{Play} (void)
+\item 
+void \hyperlink{classosa_open_a_l_a900c4a3484d73df01c5d9fcd1ef7fc1b}{Pause} (void)
+\item 
+void \hyperlink{classosa_open_a_l_a599124840c7c9f602f478eeb6d306907}{Stop} (void)
+\item 
+void \hyperlink{classosa_open_a_l_a4a84c989bb02d989b834b8d0ac1b4a9c}{Run} (void)
+\item 
+void \hyperlink{classosa_open_a_l_a861dc93ae29ea94b062f903b8c696354}{Open\+File} (const \hyperlink{mts_generic_object_proxy_8h_adbc21bfbf98367e582bf8a263b7e711f}{mts\+Std\+String} \&f\+Name)
+\item 
+void \hyperlink{classosa_open_a_l_a971e4d95c754d4a32e32151a08473512}{Seek} (const \hyperlink{mts_generic_object_proxy_8h_a31e76b0190a8d3f9838626cd7b47bd75}{mts\+Double} \&time)
+\item 
+void \hyperlink{classosa_open_a_l_aa3a4cd3fca80e59381fb7b145e762952}{Set\+Volume} (const \hyperlink{mts_generic_object_proxy_8h_a31e76b0190a8d3f9838626cd7b47bd75}{mts\+Double} \&volume)
+\item 
+int \hyperlink{classosa_open_a_l_adaacda1e33da3799d8b565e2518a00be}{Calc\+Stream\+Pos} (double time)
+\item 
+double \hyperlink{classosa_open_a_l_a6db32eb47965e8be33ee3c8dce52f8da}{Get\+Start\+Time} ()
+\item 
+double \hyperlink{classosa_open_a_l_a2abb80021e9a6a25c6e4ad993174f120}{Get\+End\+Time} ()
+\item 
+\hyperlink{mts_generic_object_proxy_8h_ae2e26261f1874d4aa4ee374ece7646bd}{mts\+Bool} \hyperlink{classosa_open_a_l_a83801e2797eb2ca44d22f7a20a4b88fe}{Get\+Is\+Playing} ()
+\item 
+\hyperlink{mts_generic_object_proxy_8h_a31e76b0190a8d3f9838626cd7b47bd75}{mts\+Double} \hyperlink{classosa_open_a_l_a0c5ab11c0646b2a83e09c13d2864f2b1}{Get\+Time} ()
+\item 
+void \hyperlink{classosa_open_a_l_a3df1f6f29e0825f6a32fd7da064945b1}{Get\+Stream\+Volume} (\hyperlink{mts_generic_object_proxy_8h_a31e76b0190a8d3f9838626cd7b47bd75}{mts\+Double} \&volume)
+\item 
+void \hyperlink{classosa_open_a_l_a2a030267d360056f17373fc1f6a074e9}{Save\+Clip} (const std\+::string \&file\+Path\+Prefix, double start\+Time, double end\+Time)
+\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classosa_open_a_l_a909b566bfee85658c0108a38937545aa}{File\+Type} \{ \hyperlink{classosa_open_a_l_a909b566bfee85658c0108a38937545aaa3087f4cea2491d4626699ede1d7a1fa5}{C\+A\+I}, 
+\hyperlink{classosa_open_a_l_a909b566bfee85658c0108a38937545aaa01e3105cb505f689685114c4dd4ab37c}{W\+A\+V}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{classosa_open_a_l_aafcdcb9c9fcdc92d343582c108aa66eb}{Calc\+Stream\+Volume} (int sample\+Pos)
+\item 
+double \hyperlink{classosa_open_a_l_a0095fb1596752895e4616f0168078d26}{Calc\+Stream\+Time} (int sample\+Pos)
+\item 
+std\+::string \hyperlink{classosa_open_a_l_a581d019748f2a432dd3ba23fe5b7e8e2}{Get\+A\+L\+Error\+String} (A\+Lenum err)
+\item 
+bool \hyperlink{classosa_open_a_l_a8670f1f18f578d02e20c5d00d3b178fb}{Check\+A\+L\+Error} (std\+::string \&error)
+\item 
+bool \hyperlink{classosa_open_a_l_aaa5c8eba0f816c4aa0aa611856de0b44}{Init\+Open\+A\+L} (void)
+\item 
+bool \hyperlink{classosa_open_a_l_a4684d1c78bbb60c515b50ea3d9d37716}{Close\+Open\+A\+L} (void)
+\item 
+void \hyperlink{classosa_open_a_l_ab4e68f4189456499ad8c8a8346558f17}{Open\+Header\+File} (const std\+::string \&filename, std\+::ofstream \&stream)
+\item 
+void \hyperlink{classosa_open_a_l_aa771d6956d738469013098842d9bd8ae}{Close\+Header\+File} (std\+::ofstream \&stream)
+\item 
+void \hyperlink{classosa_open_a_l_ac7a1e852e98fb8e4a677707c09f6d066}{Write\+To\+Header\+File} (const double \&timestamp, const int bytes, std\+::ofstream \&stream)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{mts_generic_object_proxy_8h_adbc21bfbf98367e582bf8a263b7e711f}{mts\+Std\+String} \hyperlink{classosa_open_a_l_a5dcf035120eff9b4747e392795bb674a}{File\+Name}
+\item 
+F\+I\+L\+E $\ast$ \hyperlink{classosa_open_a_l_ad40ecd04c4a4635dfc2bbe94b06d026a}{Sound\+File}
+\item 
+\hyperlink{classosa_open_a_l_a909b566bfee85658c0108a38937545aa}{File\+Type} \hyperlink{classosa_open_a_l_adbb1b614a3b279c676b68be93dec3dd2}{F\+Type}
+\item 
+char $\ast$ \hyperlink{classosa_open_a_l_a375d9b094eca4f4544ecdc6f6a26ca8a}{Data}
+\item 
+unsigned int \hyperlink{classosa_open_a_l_add6024ce4fa2775d0240e35de2d60b28}{Num\+Data\+Bytes}
+\item 
+\hyperlink{structosa_open_a_l_c_a_i_header}{osa\+Open\+A\+L\+C\+A\+I\+Header} $\ast$ \hyperlink{classosa_open_a_l_a2f56685041b72f0338a27e6409f52387}{Sound\+Settings}
+\item 
+A\+Luint \hyperlink{classosa_open_a_l_ac6e799e37b8a7558bd5e292fa58d3c3c}{Sound\+Buffer} \mbox{[}1\mbox{]}
+\item 
+A\+Luint \hyperlink{classosa_open_a_l_a6576f5499b534447b0e0e11ee0edb2e6}{Sound\+Source} \mbox{[}1\mbox{]}
+\item 
+\hyperlink{structosa_open_a_l_c_a_i_header}{osa\+Open\+A\+L\+C\+A\+I\+Header} $\ast$ \hyperlink{classosa_open_a_l_a0c2d98bbfd8875b6862387f48d7cdd95}{C\+A\+I\+Header}
+\item 
+\hyperlink{structosa_open_a_l_w_a_v_header}{osa\+Open\+A\+L\+W\+A\+V\+Header} $\ast$ \hyperlink{classosa_open_a_l_af8c26f914553075852638d829c06a74d}{W\+A\+V\+Header}
+\item 
+\hyperlink{mts_generic_object_proxy_8h_a31e76b0190a8d3f9838626cd7b47bd75}{mts\+Double} \hyperlink{classosa_open_a_l_ac05f5e95b537c4e726045bc6c3d3cf54}{Time}
+\item 
+\hyperlink{mts_generic_object_proxy_8h_a31e76b0190a8d3f9838626cd7b47bd75}{mts\+Double} \hyperlink{classosa_open_a_l_a430c4555162c38305ad9ca474ace7211}{Start\+Time\+Absolute}
+\item 
+\hyperlink{mts_generic_object_proxy_8h_a31e76b0190a8d3f9838626cd7b47bd75}{mts\+Double} \hyperlink{classosa_open_a_l_a7ea64a0eaf28113a86b304ecc5ab4ede}{Length\+In\+Sec}
+\item 
+\hyperlink{mts_generic_object_proxy_8h_ae2e26261f1874d4aa4ee374ece7646bd}{mts\+Bool} \hyperlink{classosa_open_a_l_a83e535cc470a05a2031c35f4a549ec74}{Is\+Playing}
+\item 
+\hyperlink{mts_generic_object_proxy_8h_a31e76b0190a8d3f9838626cd7b47bd75}{mts\+Double} \hyperlink{classosa_open_a_l_a37e986d3fd52a05679b555fff97910c7}{Volume}
+\item 
+\hyperlink{mts_generic_object_proxy_8h_a31e76b0190a8d3f9838626cd7b47bd75}{mts\+Double} \hyperlink{classosa_open_a_l_aac985710448fc31ea8b31240a1f5a2e1}{Stream\+Volume}
+\item 
+const \hyperlink{classosa_time_server}{osa\+Time\+Server} $\ast$ \hyperlink{classosa_open_a_l_a7b9cfbdfb0f92f71c39a223392a34f11}{Time\+Server}
+\item 
+A\+L\+Cdevice $\ast$ \hyperlink{classosa_open_a_l_ac256dbad70ce7706711a7138cb883ef1}{Device}
+\item 
+A\+L\+Ccontext $\ast$ \hyperlink{classosa_open_a_l_a55912d0e1beccbc92573ca8a554158f7}{Context}
+\item 
+\hyperlink{classmts_function_void}{mts\+Function\+Void} \hyperlink{classosa_open_a_l_a77e891d189f6d4a1ef963e7920a95cbd}{Range\+Changed\+Event}
+\item 
+std\+::vector$<$ double $>$ \hyperlink{classosa_open_a_l_aa8fcaf462af83212a65784a5d46ff592}{Time\+Stamps}
+\item 
+std\+::vector$<$ double $>$ \hyperlink{classosa_open_a_l_a91923ec0ba88fb79b905e16436e6b788}{Sample\+Pos\+In\+Bytes}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classosa_open_a_l_a909b566bfee85658c0108a38937545aa}{}\index{osa\+Open\+A\+L@{osa\+Open\+A\+L}!File\+Type@{File\+Type}}
+\index{File\+Type@{File\+Type}!osa\+Open\+A\+L@{osa\+Open\+A\+L}}
+\subsubsection[{File\+Type}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf osa\+Open\+A\+L\+::\+File\+Type}\hspace{0.3cm}{\ttfamily [protected]}}\label{classosa_open_a_l_a909b566bfee85658c0108a38937545aa}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{C\+A\+I@{C\+A\+I}!osa\+Open\+A\+L@{osa\+Open\+A\+L}}\index{osa\+Open\+A\+L@{osa\+Open\+A\+L}!C\+A\+I@{C\+A\+I}}\item[{\em 
+\hypertarget{classosa_open_a_l_a909b566bfee85658c0108a38937545aaa3087f4cea2491d4626699ede1d7a1fa5}{}C\+A\+I\label{classosa_open_a_l_a909b566bfee85658c0108a38937545aaa3087f4cea2491d4626699ede1d7a1fa5}
+}]\index{W\+A\+V@{W\+A\+V}!osa\+Open\+A\+L@{osa\+Open\+A\+L}}\index{osa\+Open\+A\+L@{osa\+Open\+A\+L}!W\+A\+V@{W\+A\+V}}\item[{\em 
+\hypertarget{classosa_open_a_l_a909b566bfee85658c0108a38937545aaa01e3105cb505f689685114c4dd4ab37c}{}W\+A\+V\label{classosa_open_a_l_a909b566bfee85658c0108a38937545aaa01e3105cb505f689685114c4dd4ab37c}
+}]\end{description}
+\end{Desc}
+\hypertarget{classosa_open_a_l_a81e53573c5d1e8cdcba2cc00784228f2}{}\index{osa\+Open\+A\+L@{osa\+Open\+A\+L}!Sound\+Format@{Sound\+Format}}
+\index{Sound\+Format@{Sound\+Format}!osa\+Open\+A\+L@{osa\+Open\+A\+L}}
+\subsubsection[{Sound\+Format}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf osa\+Open\+A\+L\+::\+Sound\+Format}}\label{classosa_open_a_l_a81e53573c5d1e8cdcba2cc00784228f2}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{M\+O\+N\+O8@{M\+O\+N\+O8}!osa\+Open\+A\+L@{osa\+Open\+A\+L}}\index{osa\+Open\+A\+L@{osa\+Open\+A\+L}!M\+O\+N\+O8@{M\+O\+N\+O8}}\item[{\em 
+\hypertarget{classosa_open_a_l_a81e53573c5d1e8cdcba2cc00784228f2ab1e23fa51394321d18b4d36466a74af3}{}M\+O\+N\+O8\label{classosa_open_a_l_a81e53573c5d1e8cdcba2cc00784228f2ab1e23fa51394321d18b4d36466a74af3}
+}]\index{M\+O\+N\+O16@{M\+O\+N\+O16}!osa\+Open\+A\+L@{osa\+Open\+A\+L}}\index{osa\+Open\+A\+L@{osa\+Open\+A\+L}!M\+O\+N\+O16@{M\+O\+N\+O16}}\item[{\em 
+\hypertarget{classosa_open_a_l_a81e53573c5d1e8cdcba2cc00784228f2ac4ac9b5df84b02ac608e9bceef1e63c7}{}M\+O\+N\+O16\label{classosa_open_a_l_a81e53573c5d1e8cdcba2cc00784228f2ac4ac9b5df84b02ac608e9bceef1e63c7}
+}]\index{S\+T\+E\+R\+E\+O8@{S\+T\+E\+R\+E\+O8}!osa\+Open\+A\+L@{osa\+Open\+A\+L}}\index{osa\+Open\+A\+L@{osa\+Open\+A\+L}!S\+T\+E\+R\+E\+O8@{S\+T\+E\+R\+E\+O8}}\item[{\em 
+\hypertarget{classosa_open_a_l_a81e53573c5d1e8cdcba2cc00784228f2a7f430aef18c2591cd1e88c2d997b9e63}{}S\+T\+E\+R\+E\+O8\label{classosa_open_a_l_a81e53573c5d1e8cdcba2cc00784228f2a7f430aef18c2591cd1e88c2d997b9e63}
+}]\index{S\+T\+E\+R\+E\+O16@{S\+T\+E\+R\+E\+O16}!osa\+Open\+A\+L@{osa\+Open\+A\+L}}\index{osa\+Open\+A\+L@{osa\+Open\+A\+L}!S\+T\+E\+R\+E\+O16@{S\+T\+E\+R\+E\+O16}}\item[{\em 
+\hypertarget{classosa_open_a_l_a81e53573c5d1e8cdcba2cc00784228f2a5df4300053eb0ae431ce08e932032ffa}{}S\+T\+E\+R\+E\+O16\label{classosa_open_a_l_a81e53573c5d1e8cdcba2cc00784228f2a5df4300053eb0ae431ce08e932032ffa}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classosa_open_a_l_a6dcad24149586594c8e0c61e6f0ec3da}{}\index{osa\+Open\+A\+L@{osa\+Open\+A\+L}!osa\+Open\+A\+L@{osa\+Open\+A\+L}}
+\index{osa\+Open\+A\+L@{osa\+Open\+A\+L}!osa\+Open\+A\+L@{osa\+Open\+A\+L}}
+\subsubsection[{osa\+Open\+A\+L}]{\setlength{\rightskip}{0pt plus 5cm}osa\+Open\+A\+L\+::osa\+Open\+A\+L (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classosa_open_a_l_a6dcad24149586594c8e0c61e6f0ec3da}
+\hypertarget{classosa_open_a_l_a9945100e88e0a032d3d7d75e3e7f2489}{}\index{osa\+Open\+A\+L@{osa\+Open\+A\+L}!````~osa\+Open\+A\+L@{$\sim$osa\+Open\+A\+L}}
+\index{````~osa\+Open\+A\+L@{$\sim$osa\+Open\+A\+L}!osa\+Open\+A\+L@{osa\+Open\+A\+L}}
+\subsubsection[{$\sim$osa\+Open\+A\+L}]{\setlength{\rightskip}{0pt plus 5cm}osa\+Open\+A\+L\+::$\sim$osa\+Open\+A\+L (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classosa_open_a_l_a9945100e88e0a032d3d7d75e3e7f2489}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classosa_open_a_l_adaacda1e33da3799d8b565e2518a00be}{}\index{osa\+Open\+A\+L@{osa\+Open\+A\+L}!Calc\+Stream\+Pos@{Calc\+Stream\+Pos}}
+\index{Calc\+Stream\+Pos@{Calc\+Stream\+Pos}!osa\+Open\+A\+L@{osa\+Open\+A\+L}}
+\subsubsection[{Calc\+Stream\+Pos}]{\setlength{\rightskip}{0pt plus 5cm}int osa\+Open\+A\+L\+::\+Calc\+Stream\+Pos (
+\begin{DoxyParamCaption}
+\item[{double}]{time}
+\end{DoxyParamCaption}
+)}\label{classosa_open_a_l_adaacda1e33da3799d8b565e2518a00be}
+\hypertarget{classosa_open_a_l_a0095fb1596752895e4616f0168078d26}{}\index{osa\+Open\+A\+L@{osa\+Open\+A\+L}!Calc\+Stream\+Time@{Calc\+Stream\+Time}}
+\index{Calc\+Stream\+Time@{Calc\+Stream\+Time}!osa\+Open\+A\+L@{osa\+Open\+A\+L}}
+\subsubsection[{Calc\+Stream\+Time}]{\setlength{\rightskip}{0pt plus 5cm}double osa\+Open\+A\+L\+::\+Calc\+Stream\+Time (
+\begin{DoxyParamCaption}
+\item[{int}]{sample\+Pos}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classosa_open_a_l_a0095fb1596752895e4616f0168078d26}
+\hypertarget{classosa_open_a_l_aafcdcb9c9fcdc92d343582c108aa66eb}{}\index{osa\+Open\+A\+L@{osa\+Open\+A\+L}!Calc\+Stream\+Volume@{Calc\+Stream\+Volume}}
+\index{Calc\+Stream\+Volume@{Calc\+Stream\+Volume}!osa\+Open\+A\+L@{osa\+Open\+A\+L}}
+\subsubsection[{Calc\+Stream\+Volume}]{\setlength{\rightskip}{0pt plus 5cm}double osa\+Open\+A\+L\+::\+Calc\+Stream\+Volume (
+\begin{DoxyParamCaption}
+\item[{int}]{sample\+Pos}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classosa_open_a_l_aafcdcb9c9fcdc92d343582c108aa66eb}
+\hypertarget{classosa_open_a_l_a8670f1f18f578d02e20c5d00d3b178fb}{}\index{osa\+Open\+A\+L@{osa\+Open\+A\+L}!Check\+A\+L\+Error@{Check\+A\+L\+Error}}
+\index{Check\+A\+L\+Error@{Check\+A\+L\+Error}!osa\+Open\+A\+L@{osa\+Open\+A\+L}}
+\subsubsection[{Check\+A\+L\+Error}]{\setlength{\rightskip}{0pt plus 5cm}bool osa\+Open\+A\+L\+::\+Check\+A\+L\+Error (
+\begin{DoxyParamCaption}
+\item[{std\+::string \&}]{error}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classosa_open_a_l_a8670f1f18f578d02e20c5d00d3b178fb}
+\hypertarget{classosa_open_a_l_aa771d6956d738469013098842d9bd8ae}{}\index{osa\+Open\+A\+L@{osa\+Open\+A\+L}!Close\+Header\+File@{Close\+Header\+File}}
+\index{Close\+Header\+File@{Close\+Header\+File}!osa\+Open\+A\+L@{osa\+Open\+A\+L}}
+\subsubsection[{Close\+Header\+File}]{\setlength{\rightskip}{0pt plus 5cm}void osa\+Open\+A\+L\+::\+Close\+Header\+File (
+\begin{DoxyParamCaption}
+\item[{std\+::ofstream \&}]{stream}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classosa_open_a_l_aa771d6956d738469013098842d9bd8ae}
+\hypertarget{classosa_open_a_l_a4684d1c78bbb60c515b50ea3d9d37716}{}\index{osa\+Open\+A\+L@{osa\+Open\+A\+L}!Close\+Open\+A\+L@{Close\+Open\+A\+L}}
+\index{Close\+Open\+A\+L@{Close\+Open\+A\+L}!osa\+Open\+A\+L@{osa\+Open\+A\+L}}
+\subsubsection[{Close\+Open\+A\+L}]{\setlength{\rightskip}{0pt plus 5cm}bool osa\+Open\+A\+L\+::\+Close\+Open\+A\+L (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classosa_open_a_l_a4684d1c78bbb60c515b50ea3d9d37716}
+\hypertarget{classosa_open_a_l_afc5082b0168b07d0476801d1f6cb94cf}{}\index{osa\+Open\+A\+L@{osa\+Open\+A\+L}!Configure@{Configure}}
+\index{Configure@{Configure}!osa\+Open\+A\+L@{osa\+Open\+A\+L}}
+\subsubsection[{Configure}]{\setlength{\rightskip}{0pt plus 5cm}void osa\+Open\+A\+L\+::\+Configure (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{C\+M\+N\+\_\+\+U\+N\+U\+S\+E\+Dfilename}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classosa_open_a_l_afc5082b0168b07d0476801d1f6cb94cf}
+\hypertarget{classosa_open_a_l_a581d019748f2a432dd3ba23fe5b7e8e2}{}\index{osa\+Open\+A\+L@{osa\+Open\+A\+L}!Get\+A\+L\+Error\+String@{Get\+A\+L\+Error\+String}}
+\index{Get\+A\+L\+Error\+String@{Get\+A\+L\+Error\+String}!osa\+Open\+A\+L@{osa\+Open\+A\+L}}
+\subsubsection[{Get\+A\+L\+Error\+String}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string osa\+Open\+A\+L\+::\+Get\+A\+L\+Error\+String (
+\begin{DoxyParamCaption}
+\item[{A\+Lenum}]{err}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classosa_open_a_l_a581d019748f2a432dd3ba23fe5b7e8e2}
+\hypertarget{classosa_open_a_l_a2abb80021e9a6a25c6e4ad993174f120}{}\index{osa\+Open\+A\+L@{osa\+Open\+A\+L}!Get\+End\+Time@{Get\+End\+Time}}
+\index{Get\+End\+Time@{Get\+End\+Time}!osa\+Open\+A\+L@{osa\+Open\+A\+L}}
+\subsubsection[{Get\+End\+Time}]{\setlength{\rightskip}{0pt plus 5cm}double osa\+Open\+A\+L\+::\+Get\+End\+Time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classosa_open_a_l_a2abb80021e9a6a25c6e4ad993174f120}
+\hypertarget{classosa_open_a_l_a83801e2797eb2ca44d22f7a20a4b88fe}{}\index{osa\+Open\+A\+L@{osa\+Open\+A\+L}!Get\+Is\+Playing@{Get\+Is\+Playing}}
+\index{Get\+Is\+Playing@{Get\+Is\+Playing}!osa\+Open\+A\+L@{osa\+Open\+A\+L}}
+\subsubsection[{Get\+Is\+Playing}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+Bool} osa\+Open\+A\+L\+::\+Get\+Is\+Playing (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classosa_open_a_l_a83801e2797eb2ca44d22f7a20a4b88fe}
+\hypertarget{classosa_open_a_l_a6db32eb47965e8be33ee3c8dce52f8da}{}\index{osa\+Open\+A\+L@{osa\+Open\+A\+L}!Get\+Start\+Time@{Get\+Start\+Time}}
+\index{Get\+Start\+Time@{Get\+Start\+Time}!osa\+Open\+A\+L@{osa\+Open\+A\+L}}
+\subsubsection[{Get\+Start\+Time}]{\setlength{\rightskip}{0pt plus 5cm}double osa\+Open\+A\+L\+::\+Get\+Start\+Time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classosa_open_a_l_a6db32eb47965e8be33ee3c8dce52f8da}
+\hypertarget{classosa_open_a_l_a3df1f6f29e0825f6a32fd7da064945b1}{}\index{osa\+Open\+A\+L@{osa\+Open\+A\+L}!Get\+Stream\+Volume@{Get\+Stream\+Volume}}
+\index{Get\+Stream\+Volume@{Get\+Stream\+Volume}!osa\+Open\+A\+L@{osa\+Open\+A\+L}}
+\subsubsection[{Get\+Stream\+Volume}]{\setlength{\rightskip}{0pt plus 5cm}void osa\+Open\+A\+L\+::\+Get\+Stream\+Volume (
+\begin{DoxyParamCaption}
+\item[{{\bf mts\+Double} \&}]{volume}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classosa_open_a_l_a3df1f6f29e0825f6a32fd7da064945b1}
+\hypertarget{classosa_open_a_l_a0c5ab11c0646b2a83e09c13d2864f2b1}{}\index{osa\+Open\+A\+L@{osa\+Open\+A\+L}!Get\+Time@{Get\+Time}}
+\index{Get\+Time@{Get\+Time}!osa\+Open\+A\+L@{osa\+Open\+A\+L}}
+\subsubsection[{Get\+Time}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+Double} osa\+Open\+A\+L\+::\+Get\+Time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classosa_open_a_l_a0c5ab11c0646b2a83e09c13d2864f2b1}
+\hypertarget{classosa_open_a_l_aaa5c8eba0f816c4aa0aa611856de0b44}{}\index{osa\+Open\+A\+L@{osa\+Open\+A\+L}!Init\+Open\+A\+L@{Init\+Open\+A\+L}}
+\index{Init\+Open\+A\+L@{Init\+Open\+A\+L}!osa\+Open\+A\+L@{osa\+Open\+A\+L}}
+\subsubsection[{Init\+Open\+A\+L}]{\setlength{\rightskip}{0pt plus 5cm}bool osa\+Open\+A\+L\+::\+Init\+Open\+A\+L (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classosa_open_a_l_aaa5c8eba0f816c4aa0aa611856de0b44}
+\hypertarget{classosa_open_a_l_a861dc93ae29ea94b062f903b8c696354}{}\index{osa\+Open\+A\+L@{osa\+Open\+A\+L}!Open\+File@{Open\+File}}
+\index{Open\+File@{Open\+File}!osa\+Open\+A\+L@{osa\+Open\+A\+L}}
+\subsubsection[{Open\+File}]{\setlength{\rightskip}{0pt plus 5cm}void osa\+Open\+A\+L\+::\+Open\+File (
+\begin{DoxyParamCaption}
+\item[{const {\bf mts\+Std\+String} \&}]{f\+Name}
+\end{DoxyParamCaption}
+)}\label{classosa_open_a_l_a861dc93ae29ea94b062f903b8c696354}
+\hypertarget{classosa_open_a_l_ab4e68f4189456499ad8c8a8346558f17}{}\index{osa\+Open\+A\+L@{osa\+Open\+A\+L}!Open\+Header\+File@{Open\+Header\+File}}
+\index{Open\+Header\+File@{Open\+Header\+File}!osa\+Open\+A\+L@{osa\+Open\+A\+L}}
+\subsubsection[{Open\+Header\+File}]{\setlength{\rightskip}{0pt plus 5cm}void osa\+Open\+A\+L\+::\+Open\+Header\+File (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{filename, }
+\item[{std\+::ofstream \&}]{stream}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classosa_open_a_l_ab4e68f4189456499ad8c8a8346558f17}
+\hypertarget{classosa_open_a_l_a900c4a3484d73df01c5d9fcd1ef7fc1b}{}\index{osa\+Open\+A\+L@{osa\+Open\+A\+L}!Pause@{Pause}}
+\index{Pause@{Pause}!osa\+Open\+A\+L@{osa\+Open\+A\+L}}
+\subsubsection[{Pause}]{\setlength{\rightskip}{0pt plus 5cm}void osa\+Open\+A\+L\+::\+Pause (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classosa_open_a_l_a900c4a3484d73df01c5d9fcd1ef7fc1b}
+\hypertarget{classosa_open_a_l_a7a54efebb58461d129afa38b92040c5b}{}\index{osa\+Open\+A\+L@{osa\+Open\+A\+L}!Play@{Play}}
+\index{Play@{Play}!osa\+Open\+A\+L@{osa\+Open\+A\+L}}
+\subsubsection[{Play}]{\setlength{\rightskip}{0pt plus 5cm}void osa\+Open\+A\+L\+::\+Play (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classosa_open_a_l_a7a54efebb58461d129afa38b92040c5b}
+\hypertarget{classosa_open_a_l_a4a84c989bb02d989b834b8d0ac1b4a9c}{}\index{osa\+Open\+A\+L@{osa\+Open\+A\+L}!Run@{Run}}
+\index{Run@{Run}!osa\+Open\+A\+L@{osa\+Open\+A\+L}}
+\subsubsection[{Run}]{\setlength{\rightskip}{0pt plus 5cm}void osa\+Open\+A\+L\+::\+Run (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classosa_open_a_l_a4a84c989bb02d989b834b8d0ac1b4a9c}
+\hypertarget{classosa_open_a_l_a2a030267d360056f17373fc1f6a074e9}{}\index{osa\+Open\+A\+L@{osa\+Open\+A\+L}!Save\+Clip@{Save\+Clip}}
+\index{Save\+Clip@{Save\+Clip}!osa\+Open\+A\+L@{osa\+Open\+A\+L}}
+\subsubsection[{Save\+Clip}]{\setlength{\rightskip}{0pt plus 5cm}void osa\+Open\+A\+L\+::\+Save\+Clip (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{file\+Path\+Prefix, }
+\item[{double}]{start\+Time, }
+\item[{double}]{end\+Time}
+\end{DoxyParamCaption}
+)}\label{classosa_open_a_l_a2a030267d360056f17373fc1f6a074e9}
+\hypertarget{classosa_open_a_l_a971e4d95c754d4a32e32151a08473512}{}\index{osa\+Open\+A\+L@{osa\+Open\+A\+L}!Seek@{Seek}}
+\index{Seek@{Seek}!osa\+Open\+A\+L@{osa\+Open\+A\+L}}
+\subsubsection[{Seek}]{\setlength{\rightskip}{0pt plus 5cm}void osa\+Open\+A\+L\+::\+Seek (
+\begin{DoxyParamCaption}
+\item[{const {\bf mts\+Double} \&}]{time}
+\end{DoxyParamCaption}
+)}\label{classosa_open_a_l_a971e4d95c754d4a32e32151a08473512}
+\hypertarget{classosa_open_a_l_aa3a4cd3fca80e59381fb7b145e762952}{}\index{osa\+Open\+A\+L@{osa\+Open\+A\+L}!Set\+Volume@{Set\+Volume}}
+\index{Set\+Volume@{Set\+Volume}!osa\+Open\+A\+L@{osa\+Open\+A\+L}}
+\subsubsection[{Set\+Volume}]{\setlength{\rightskip}{0pt plus 5cm}void osa\+Open\+A\+L\+::\+Set\+Volume (
+\begin{DoxyParamCaption}
+\item[{const {\bf mts\+Double} \&}]{volume}
+\end{DoxyParamCaption}
+)}\label{classosa_open_a_l_aa3a4cd3fca80e59381fb7b145e762952}
+\hypertarget{classosa_open_a_l_ac9437555735a6dbc7503927558b07171}{}\index{osa\+Open\+A\+L@{osa\+Open\+A\+L}!Startup@{Startup}}
+\index{Startup@{Startup}!osa\+Open\+A\+L@{osa\+Open\+A\+L}}
+\subsubsection[{Startup}]{\setlength{\rightskip}{0pt plus 5cm}void osa\+Open\+A\+L\+::\+Startup (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classosa_open_a_l_ac9437555735a6dbc7503927558b07171}
+\hypertarget{classosa_open_a_l_a599124840c7c9f602f478eeb6d306907}{}\index{osa\+Open\+A\+L@{osa\+Open\+A\+L}!Stop@{Stop}}
+\index{Stop@{Stop}!osa\+Open\+A\+L@{osa\+Open\+A\+L}}
+\subsubsection[{Stop}]{\setlength{\rightskip}{0pt plus 5cm}void osa\+Open\+A\+L\+::\+Stop (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classosa_open_a_l_a599124840c7c9f602f478eeb6d306907}
+\hypertarget{classosa_open_a_l_ac7a1e852e98fb8e4a677707c09f6d066}{}\index{osa\+Open\+A\+L@{osa\+Open\+A\+L}!Write\+To\+Header\+File@{Write\+To\+Header\+File}}
+\index{Write\+To\+Header\+File@{Write\+To\+Header\+File}!osa\+Open\+A\+L@{osa\+Open\+A\+L}}
+\subsubsection[{Write\+To\+Header\+File}]{\setlength{\rightskip}{0pt plus 5cm}void osa\+Open\+A\+L\+::\+Write\+To\+Header\+File (
+\begin{DoxyParamCaption}
+\item[{const double \&}]{timestamp, }
+\item[{const int}]{bytes, }
+\item[{std\+::ofstream \&}]{stream}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classosa_open_a_l_ac7a1e852e98fb8e4a677707c09f6d066}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classosa_open_a_l_a0c2d98bbfd8875b6862387f48d7cdd95}{}\index{osa\+Open\+A\+L@{osa\+Open\+A\+L}!C\+A\+I\+Header@{C\+A\+I\+Header}}
+\index{C\+A\+I\+Header@{C\+A\+I\+Header}!osa\+Open\+A\+L@{osa\+Open\+A\+L}}
+\subsubsection[{C\+A\+I\+Header}]{\setlength{\rightskip}{0pt plus 5cm}{\bf osa\+Open\+A\+L\+C\+A\+I\+Header}$\ast$ osa\+Open\+A\+L\+::\+C\+A\+I\+Header\hspace{0.3cm}{\ttfamily [protected]}}\label{classosa_open_a_l_a0c2d98bbfd8875b6862387f48d7cdd95}
+\hypertarget{classosa_open_a_l_a55912d0e1beccbc92573ca8a554158f7}{}\index{osa\+Open\+A\+L@{osa\+Open\+A\+L}!Context@{Context}}
+\index{Context@{Context}!osa\+Open\+A\+L@{osa\+Open\+A\+L}}
+\subsubsection[{Context}]{\setlength{\rightskip}{0pt plus 5cm}A\+L\+Ccontext$\ast$ osa\+Open\+A\+L\+::\+Context\hspace{0.3cm}{\ttfamily [protected]}}\label{classosa_open_a_l_a55912d0e1beccbc92573ca8a554158f7}
+\hypertarget{classosa_open_a_l_a375d9b094eca4f4544ecdc6f6a26ca8a}{}\index{osa\+Open\+A\+L@{osa\+Open\+A\+L}!Data@{Data}}
+\index{Data@{Data}!osa\+Open\+A\+L@{osa\+Open\+A\+L}}
+\subsubsection[{Data}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ osa\+Open\+A\+L\+::\+Data\hspace{0.3cm}{\ttfamily [protected]}}\label{classosa_open_a_l_a375d9b094eca4f4544ecdc6f6a26ca8a}
+\hypertarget{classosa_open_a_l_ac256dbad70ce7706711a7138cb883ef1}{}\index{osa\+Open\+A\+L@{osa\+Open\+A\+L}!Device@{Device}}
+\index{Device@{Device}!osa\+Open\+A\+L@{osa\+Open\+A\+L}}
+\subsubsection[{Device}]{\setlength{\rightskip}{0pt plus 5cm}A\+L\+Cdevice$\ast$ osa\+Open\+A\+L\+::\+Device\hspace{0.3cm}{\ttfamily [protected]}}\label{classosa_open_a_l_ac256dbad70ce7706711a7138cb883ef1}
+\hypertarget{classosa_open_a_l_a5dcf035120eff9b4747e392795bb674a}{}\index{osa\+Open\+A\+L@{osa\+Open\+A\+L}!File\+Name@{File\+Name}}
+\index{File\+Name@{File\+Name}!osa\+Open\+A\+L@{osa\+Open\+A\+L}}
+\subsubsection[{File\+Name}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+Std\+String} osa\+Open\+A\+L\+::\+File\+Name\hspace{0.3cm}{\ttfamily [protected]}}\label{classosa_open_a_l_a5dcf035120eff9b4747e392795bb674a}
+\hypertarget{classosa_open_a_l_adbb1b614a3b279c676b68be93dec3dd2}{}\index{osa\+Open\+A\+L@{osa\+Open\+A\+L}!F\+Type@{F\+Type}}
+\index{F\+Type@{F\+Type}!osa\+Open\+A\+L@{osa\+Open\+A\+L}}
+\subsubsection[{F\+Type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf File\+Type} osa\+Open\+A\+L\+::\+F\+Type\hspace{0.3cm}{\ttfamily [protected]}}\label{classosa_open_a_l_adbb1b614a3b279c676b68be93dec3dd2}
+\hypertarget{classosa_open_a_l_a83e535cc470a05a2031c35f4a549ec74}{}\index{osa\+Open\+A\+L@{osa\+Open\+A\+L}!Is\+Playing@{Is\+Playing}}
+\index{Is\+Playing@{Is\+Playing}!osa\+Open\+A\+L@{osa\+Open\+A\+L}}
+\subsubsection[{Is\+Playing}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+Bool} osa\+Open\+A\+L\+::\+Is\+Playing\hspace{0.3cm}{\ttfamily [protected]}}\label{classosa_open_a_l_a83e535cc470a05a2031c35f4a549ec74}
+\hypertarget{classosa_open_a_l_a7ea64a0eaf28113a86b304ecc5ab4ede}{}\index{osa\+Open\+A\+L@{osa\+Open\+A\+L}!Length\+In\+Sec@{Length\+In\+Sec}}
+\index{Length\+In\+Sec@{Length\+In\+Sec}!osa\+Open\+A\+L@{osa\+Open\+A\+L}}
+\subsubsection[{Length\+In\+Sec}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+Double} osa\+Open\+A\+L\+::\+Length\+In\+Sec\hspace{0.3cm}{\ttfamily [protected]}}\label{classosa_open_a_l_a7ea64a0eaf28113a86b304ecc5ab4ede}
+\hypertarget{classosa_open_a_l_add6024ce4fa2775d0240e35de2d60b28}{}\index{osa\+Open\+A\+L@{osa\+Open\+A\+L}!Num\+Data\+Bytes@{Num\+Data\+Bytes}}
+\index{Num\+Data\+Bytes@{Num\+Data\+Bytes}!osa\+Open\+A\+L@{osa\+Open\+A\+L}}
+\subsubsection[{Num\+Data\+Bytes}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int osa\+Open\+A\+L\+::\+Num\+Data\+Bytes\hspace{0.3cm}{\ttfamily [protected]}}\label{classosa_open_a_l_add6024ce4fa2775d0240e35de2d60b28}
+\hypertarget{classosa_open_a_l_a77e891d189f6d4a1ef963e7920a95cbd}{}\index{osa\+Open\+A\+L@{osa\+Open\+A\+L}!Range\+Changed\+Event@{Range\+Changed\+Event}}
+\index{Range\+Changed\+Event@{Range\+Changed\+Event}!osa\+Open\+A\+L@{osa\+Open\+A\+L}}
+\subsubsection[{Range\+Changed\+Event}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+Function\+Void} osa\+Open\+A\+L\+::\+Range\+Changed\+Event\hspace{0.3cm}{\ttfamily [protected]}}\label{classosa_open_a_l_a77e891d189f6d4a1ef963e7920a95cbd}
+\hypertarget{classosa_open_a_l_a91923ec0ba88fb79b905e16436e6b788}{}\index{osa\+Open\+A\+L@{osa\+Open\+A\+L}!Sample\+Pos\+In\+Bytes@{Sample\+Pos\+In\+Bytes}}
+\index{Sample\+Pos\+In\+Bytes@{Sample\+Pos\+In\+Bytes}!osa\+Open\+A\+L@{osa\+Open\+A\+L}}
+\subsubsection[{Sample\+Pos\+In\+Bytes}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$double$>$ osa\+Open\+A\+L\+::\+Sample\+Pos\+In\+Bytes\hspace{0.3cm}{\ttfamily [protected]}}\label{classosa_open_a_l_a91923ec0ba88fb79b905e16436e6b788}
+\hypertarget{classosa_open_a_l_ac6e799e37b8a7558bd5e292fa58d3c3c}{}\index{osa\+Open\+A\+L@{osa\+Open\+A\+L}!Sound\+Buffer@{Sound\+Buffer}}
+\index{Sound\+Buffer@{Sound\+Buffer}!osa\+Open\+A\+L@{osa\+Open\+A\+L}}
+\subsubsection[{Sound\+Buffer}]{\setlength{\rightskip}{0pt plus 5cm}A\+Luint osa\+Open\+A\+L\+::\+Sound\+Buffer\mbox{[}1\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}\label{classosa_open_a_l_ac6e799e37b8a7558bd5e292fa58d3c3c}
+\hypertarget{classosa_open_a_l_ad40ecd04c4a4635dfc2bbe94b06d026a}{}\index{osa\+Open\+A\+L@{osa\+Open\+A\+L}!Sound\+File@{Sound\+File}}
+\index{Sound\+File@{Sound\+File}!osa\+Open\+A\+L@{osa\+Open\+A\+L}}
+\subsubsection[{Sound\+File}]{\setlength{\rightskip}{0pt plus 5cm}F\+I\+L\+E$\ast$ osa\+Open\+A\+L\+::\+Sound\+File\hspace{0.3cm}{\ttfamily [protected]}}\label{classosa_open_a_l_ad40ecd04c4a4635dfc2bbe94b06d026a}
+\hypertarget{classosa_open_a_l_a2f56685041b72f0338a27e6409f52387}{}\index{osa\+Open\+A\+L@{osa\+Open\+A\+L}!Sound\+Settings@{Sound\+Settings}}
+\index{Sound\+Settings@{Sound\+Settings}!osa\+Open\+A\+L@{osa\+Open\+A\+L}}
+\subsubsection[{Sound\+Settings}]{\setlength{\rightskip}{0pt plus 5cm}{\bf osa\+Open\+A\+L\+C\+A\+I\+Header}$\ast$ osa\+Open\+A\+L\+::\+Sound\+Settings\hspace{0.3cm}{\ttfamily [protected]}}\label{classosa_open_a_l_a2f56685041b72f0338a27e6409f52387}
+\hypertarget{classosa_open_a_l_a6576f5499b534447b0e0e11ee0edb2e6}{}\index{osa\+Open\+A\+L@{osa\+Open\+A\+L}!Sound\+Source@{Sound\+Source}}
+\index{Sound\+Source@{Sound\+Source}!osa\+Open\+A\+L@{osa\+Open\+A\+L}}
+\subsubsection[{Sound\+Source}]{\setlength{\rightskip}{0pt plus 5cm}A\+Luint osa\+Open\+A\+L\+::\+Sound\+Source\mbox{[}1\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}\label{classosa_open_a_l_a6576f5499b534447b0e0e11ee0edb2e6}
+\hypertarget{classosa_open_a_l_a430c4555162c38305ad9ca474ace7211}{}\index{osa\+Open\+A\+L@{osa\+Open\+A\+L}!Start\+Time\+Absolute@{Start\+Time\+Absolute}}
+\index{Start\+Time\+Absolute@{Start\+Time\+Absolute}!osa\+Open\+A\+L@{osa\+Open\+A\+L}}
+\subsubsection[{Start\+Time\+Absolute}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+Double} osa\+Open\+A\+L\+::\+Start\+Time\+Absolute\hspace{0.3cm}{\ttfamily [protected]}}\label{classosa_open_a_l_a430c4555162c38305ad9ca474ace7211}
+\hypertarget{classosa_open_a_l_aac985710448fc31ea8b31240a1f5a2e1}{}\index{osa\+Open\+A\+L@{osa\+Open\+A\+L}!Stream\+Volume@{Stream\+Volume}}
+\index{Stream\+Volume@{Stream\+Volume}!osa\+Open\+A\+L@{osa\+Open\+A\+L}}
+\subsubsection[{Stream\+Volume}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+Double} osa\+Open\+A\+L\+::\+Stream\+Volume\hspace{0.3cm}{\ttfamily [protected]}}\label{classosa_open_a_l_aac985710448fc31ea8b31240a1f5a2e1}
+\hypertarget{classosa_open_a_l_ac05f5e95b537c4e726045bc6c3d3cf54}{}\index{osa\+Open\+A\+L@{osa\+Open\+A\+L}!Time@{Time}}
+\index{Time@{Time}!osa\+Open\+A\+L@{osa\+Open\+A\+L}}
+\subsubsection[{Time}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+Double} osa\+Open\+A\+L\+::\+Time\hspace{0.3cm}{\ttfamily [protected]}}\label{classosa_open_a_l_ac05f5e95b537c4e726045bc6c3d3cf54}
+\hypertarget{classosa_open_a_l_a7b9cfbdfb0f92f71c39a223392a34f11}{}\index{osa\+Open\+A\+L@{osa\+Open\+A\+L}!Time\+Server@{Time\+Server}}
+\index{Time\+Server@{Time\+Server}!osa\+Open\+A\+L@{osa\+Open\+A\+L}}
+\subsubsection[{Time\+Server}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf osa\+Time\+Server}$\ast$ osa\+Open\+A\+L\+::\+Time\+Server\hspace{0.3cm}{\ttfamily [protected]}}\label{classosa_open_a_l_a7b9cfbdfb0f92f71c39a223392a34f11}
+\hypertarget{classosa_open_a_l_aa8fcaf462af83212a65784a5d46ff592}{}\index{osa\+Open\+A\+L@{osa\+Open\+A\+L}!Time\+Stamps@{Time\+Stamps}}
+\index{Time\+Stamps@{Time\+Stamps}!osa\+Open\+A\+L@{osa\+Open\+A\+L}}
+\subsubsection[{Time\+Stamps}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$double$>$ osa\+Open\+A\+L\+::\+Time\+Stamps\hspace{0.3cm}{\ttfamily [protected]}}\label{classosa_open_a_l_aa8fcaf462af83212a65784a5d46ff592}
+\hypertarget{classosa_open_a_l_a37e986d3fd52a05679b555fff97910c7}{}\index{osa\+Open\+A\+L@{osa\+Open\+A\+L}!Volume@{Volume}}
+\index{Volume@{Volume}!osa\+Open\+A\+L@{osa\+Open\+A\+L}}
+\subsubsection[{Volume}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+Double} osa\+Open\+A\+L\+::\+Volume\hspace{0.3cm}{\ttfamily [protected]}}\label{classosa_open_a_l_a37e986d3fd52a05679b555fff97910c7}
+\hypertarget{classosa_open_a_l_af8c26f914553075852638d829c06a74d}{}\index{osa\+Open\+A\+L@{osa\+Open\+A\+L}!W\+A\+V\+Header@{W\+A\+V\+Header}}
+\index{W\+A\+V\+Header@{W\+A\+V\+Header}!osa\+Open\+A\+L@{osa\+Open\+A\+L}}
+\subsubsection[{W\+A\+V\+Header}]{\setlength{\rightskip}{0pt plus 5cm}{\bf osa\+Open\+A\+L\+W\+A\+V\+Header}$\ast$ osa\+Open\+A\+L\+::\+W\+A\+V\+Header\hspace{0.3cm}{\ttfamily [protected]}}\label{classosa_open_a_l_af8c26f914553075852638d829c06a74d}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/saw\+Open\+A\+L/include/saw\+Open\+A\+L/\hyperlink{osa_open_a_l_8h}{osa\+Open\+A\+L.\+h}\end{DoxyCompactItemize}

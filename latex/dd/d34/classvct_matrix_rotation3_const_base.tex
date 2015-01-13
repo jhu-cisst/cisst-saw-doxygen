@@ -1,0 +1,477 @@
+\hypertarget{classvct_matrix_rotation3_const_base}{}\section{vct\+Matrix\+Rotation3\+Const\+Base$<$ \+\_\+container\+Type $>$ Class Template Reference}
+\label{classvct_matrix_rotation3_const_base}\index{vct\+Matrix\+Rotation3\+Const\+Base$<$ \+\_\+container\+Type $>$@{vct\+Matrix\+Rotation3\+Const\+Base$<$ \+\_\+container\+Type $>$}}
+
+
+Define a rotation matrix for a space of dimension 3.  
+
+
+
+
+{\ttfamily \#include $<$vct\+Forward\+Declarations.\+h$>$}
+
+Inheritance diagram for vct\+Matrix\+Rotation3\+Const\+Base$<$ \+\_\+container\+Type $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{dd/d34/classvct_matrix_rotation3_const_base}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \hyperlink{classvct_matrix_rotation3_const_base_a559a478b4507d44a75aab17fcc1c6277a24a90e4fecc47d3868084e10241213b5}{R\+O\+W\+S} = 3, 
+\hyperlink{classvct_matrix_rotation3_const_base_a559a478b4507d44a75aab17fcc1c6277a4e0ad6e4f34b6d668a5db06227afa293}{C\+O\+L\+S} = 3
+ \}
+\item 
+enum \{ \hyperlink{classvct_matrix_rotation3_const_base_a6bc9712dde55ee3fca0d7880feb6a903afdf02f4ad230d81f0ca2539c7feb61f3}{D\+I\+M\+E\+N\+S\+I\+O\+N} = 3
+ \}
+\item 
+typedef \+\_\+container\+Type \hyperlink{classvct_matrix_rotation3_const_base_a1f40b2353fc88d70bf853d4557eaae99}{Base\+Type}
+\item 
+typedef \+\_\+container\+Type \hyperlink{classvct_matrix_rotation3_const_base_a59e670b3a79131c32fa5ce28a9275509}{Container\+Type}
+\item 
+typedef \hyperlink{classvct_matrix_rotation3_const_base}{vct\+Matrix\+Rotation3\+Const\+Base}$<$ \hyperlink{classvct_matrix_rotation3_const_base_a59e670b3a79131c32fa5ce28a9275509}{Container\+Type} $>$ \hyperlink{classvct_matrix_rotation3_const_base_ad26bf016ce37ea0532e1ce0aa7bba8a0}{This\+Type}
+\item 
+typedef \hyperlink{classvct_matrix_rotation3}{vct\+Matrix\+Rotation3}$<$ value\+\_\+type $>$ \hyperlink{classvct_matrix_rotation3_const_base_a913ecee79856db867ac6d45d27cfe362}{Rotation\+Value\+Type}
+\item 
+typedef \hyperlink{classcmn_type_traits}{cmn\+Type\+Traits}$<$ value\+\_\+type $>$ \hyperlink{classvct_matrix_rotation3_const_base_af73335dedec5af83c5715335bbc8fce1}{Type\+Traits}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classvct_matrix_rotation3_const_base_a8a5964653bd5a2d8e5b7577acbd973ff}{V\+C\+T\+\_\+\+C\+O\+N\+T\+A\+I\+N\+E\+R\+\_\+\+T\+R\+A\+I\+T\+S\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+S} (typename Container\+Type\+::value\+\_\+type)
+\item 
+\hyperlink{classvct_matrix_rotation3_const_base_a913ecee79856db867ac6d45d27cfe362}{Rotation\+Value\+Type} \hyperlink{classvct_matrix_rotation3_const_base_ae3f3d95e7d9cd505300b230094b29318}{Normalized} (void) const 
+\item 
+bool \hyperlink{classvct_matrix_rotation3_const_base_a629632e3539b899f3b4d7d9e4f662e1c}{Is\+Normalized} (value\+\_\+type tolerance=\hyperlink{classcmn_type_traits_adc129bf9867295b90d300768b780fa99}{Type\+Traits\+::\+Tolerance}()) const 
+\item 
+\hyperlink{classvct_matrix_rotation3_const_base_a913ecee79856db867ac6d45d27cfe362}{Rotation\+Value\+Type} \hyperlink{classvct_matrix_rotation3_const_base_aef160dbf59345611986482d9b9e192eb}{Inverse} (void) const 
+\item 
+{\footnotesize template$<$stride\+\_\+type \+\_\+\+\_\+stride1, class \+\_\+\+\_\+data\+Ptr\+Type1 , stride\+\_\+type \+\_\+\+\_\+stride2, class \+\_\+\+\_\+data\+Ptr\+Type2 $>$ }\\void \hyperlink{classvct_matrix_rotation3_const_base_a832251356c47c892cfaf45846f8dd13d}{Apply\+To} (const \hyperlink{classvct_fixed_size_const_vector_base}{vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \hyperlink{classvct_matrix_rotation3_const_base_a6bc9712dde55ee3fca0d7880feb6a903afdf02f4ad230d81f0ca2539c7feb61f3}{D\+I\+M\+E\+N\+S\+I\+O\+N}, \+\_\+\+\_\+stride1, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type1 $>$ \&input, \hyperlink{classvct_fixed_size_vector_base}{vct\+Fixed\+Size\+Vector\+Base}$<$ \hyperlink{classvct_matrix_rotation3_const_base_a6bc9712dde55ee3fca0d7880feb6a903afdf02f4ad230d81f0ca2539c7feb61f3}{D\+I\+M\+E\+N\+S\+I\+O\+N}, \+\_\+\+\_\+stride2, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type2 $>$ \&output) const 
+\item 
+{\footnotesize template$<$stride\+\_\+type \+\_\+\+\_\+stride, class \+\_\+\+\_\+data\+Ptr\+Type $>$ }\\\hyperlink{classvct_fixed_size_vector}{vct\+Fixed\+Size\+Vector}$<$ value\+\_\+type, \hyperlink{classvct_matrix_rotation3_const_base_a6bc9712dde55ee3fca0d7880feb6a903afdf02f4ad230d81f0ca2539c7feb61f3}{D\+I\+M\+E\+N\+S\+I\+O\+N} $>$ \hyperlink{classvct_matrix_rotation3_const_base_a2e6655de4bc25d980cabef0f4ef945a5}{Apply\+To} (const \hyperlink{classvct_fixed_size_const_vector_base}{vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \hyperlink{classvct_matrix_rotation3_const_base_a6bc9712dde55ee3fca0d7880feb6a903afdf02f4ad230d81f0ca2539c7feb61f3}{D\+I\+M\+E\+N\+S\+I\+O\+N}, \+\_\+\+\_\+stride, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type $>$ \&input) const 
+\item 
+\hyperlink{classvct_matrix_rotation3_const_base_ad26bf016ce37ea0532e1ce0aa7bba8a0}{This\+Type} \hyperlink{classvct_matrix_rotation3_const_base_a9a85987ac0bfca124f712bfab3be3ea5}{Apply\+To} (const \hyperlink{classvct_matrix_rotation3_const_base_ad26bf016ce37ea0532e1ce0aa7bba8a0}{This\+Type} \&input) const 
+\item 
+{\footnotesize template$<$class \+\_\+\+\_\+vector\+Owner\+Type1 , class \+\_\+\+\_\+vector\+Owner\+Type2 $>$ }\\void \hyperlink{classvct_matrix_rotation3_const_base_a517c1c190581dfe39a9565fdcf5a0d44}{Apply\+To} (const \hyperlink{classvct_dynamic_const_vector_base}{vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type1, value\+\_\+type $>$ \&input, \hyperlink{classvct_dynamic_vector_base}{vct\+Dynamic\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type2, value\+\_\+type $>$ \&output) const   throw (std\+::runtime\+\_\+error)
+\item 
+{\footnotesize template$<$class \+\_\+\+\_\+vector\+Owner\+Type , stride\+\_\+type \+\_\+\+\_\+stride, class \+\_\+\+\_\+data\+Ptr\+Type $>$ }\\void \hyperlink{classvct_matrix_rotation3_const_base_a422584ee6e316eb5d2dc607728130d24}{Apply\+To} (const \hyperlink{classvct_dynamic_const_vector_base}{vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type, value\+\_\+type $>$ \&input, \hyperlink{classvct_fixed_size_vector_base}{vct\+Fixed\+Size\+Vector\+Base}$<$ \hyperlink{classvct_matrix_rotation3_const_base_a6bc9712dde55ee3fca0d7880feb6a903afdf02f4ad230d81f0ca2539c7feb61f3}{D\+I\+M\+E\+N\+S\+I\+O\+N}, \+\_\+\+\_\+stride, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type $>$ \&output) const   throw (std\+::runtime\+\_\+error)
+\item 
+{\footnotesize template$<$class \+\_\+\+\_\+vector\+Owner\+Type $>$ }\\\hyperlink{classvct_fixed_size_vector}{vct\+Fixed\+Size\+Vector}$<$ value\+\_\+type, \hyperlink{classvct_matrix_rotation3_const_base_a6bc9712dde55ee3fca0d7880feb6a903afdf02f4ad230d81f0ca2539c7feb61f3}{D\+I\+M\+E\+N\+S\+I\+O\+N} $>$ \hyperlink{classvct_matrix_rotation3_const_base_a97666c7b686e6a3c632aace4611a4e0e}{Apply\+To} (const \hyperlink{classvct_dynamic_const_vector_base}{vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type, value\+\_\+type $>$ \&input) const 
+\item 
+{\footnotesize template$<$stride\+\_\+type \+\_\+\+\_\+stride1, class \+\_\+\+\_\+data\+Ptr\+Type1 , stride\+\_\+type \+\_\+\+\_\+stride2, class \+\_\+\+\_\+data\+Ptr\+Type2 $>$ }\\void \hyperlink{classvct_matrix_rotation3_const_base_ac93acb8c499f807f4983fd8f5a024329}{Apply\+Inverse\+To} (const \hyperlink{classvct_fixed_size_const_vector_base}{vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \hyperlink{classvct_matrix_rotation3_const_base_a6bc9712dde55ee3fca0d7880feb6a903afdf02f4ad230d81f0ca2539c7feb61f3}{D\+I\+M\+E\+N\+S\+I\+O\+N}, \+\_\+\+\_\+stride1, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type1 $>$ \&input, \hyperlink{classvct_fixed_size_vector_base}{vct\+Fixed\+Size\+Vector\+Base}$<$ \hyperlink{classvct_matrix_rotation3_const_base_a6bc9712dde55ee3fca0d7880feb6a903afdf02f4ad230d81f0ca2539c7feb61f3}{D\+I\+M\+E\+N\+S\+I\+O\+N}, \+\_\+\+\_\+stride2, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type2 $>$ \&output) const 
+\item 
+{\footnotesize template$<$stride\+\_\+type \+\_\+\+\_\+stride, class \+\_\+\+\_\+data\+Ptr\+Type $>$ }\\\hyperlink{classvct_fixed_size_vector}{vct\+Fixed\+Size\+Vector}$<$ value\+\_\+type, \hyperlink{classvct_matrix_rotation3_const_base_a6bc9712dde55ee3fca0d7880feb6a903afdf02f4ad230d81f0ca2539c7feb61f3}{D\+I\+M\+E\+N\+S\+I\+O\+N} $>$ \hyperlink{classvct_matrix_rotation3_const_base_a30a4e8383a9a979d80edf0d8765d3e86}{Apply\+Inverse\+To} (const \hyperlink{classvct_fixed_size_const_vector_base}{vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \hyperlink{classvct_matrix_rotation3_const_base_a6bc9712dde55ee3fca0d7880feb6a903afdf02f4ad230d81f0ca2539c7feb61f3}{D\+I\+M\+E\+N\+S\+I\+O\+N}, \+\_\+\+\_\+stride, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type $>$ \&input) const 
+\item 
+{\footnotesize template$<$class \+\_\+\+\_\+vector\+Owner\+Type $>$ }\\\hyperlink{classvct_fixed_size_vector}{vct\+Fixed\+Size\+Vector}$<$ value\+\_\+type, \hyperlink{classvct_matrix_rotation3_const_base_a6bc9712dde55ee3fca0d7880feb6a903afdf02f4ad230d81f0ca2539c7feb61f3}{D\+I\+M\+E\+N\+S\+I\+O\+N} $>$ \hyperlink{classvct_matrix_rotation3_const_base_a31ede991797a7d64c2e53e5580a50a58}{Apply\+Inverse\+To} (const \hyperlink{classvct_dynamic_const_vector_base}{vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type, value\+\_\+type $>$ \&input) const 
+\item 
+void \hyperlink{classvct_matrix_rotation3_const_base_a90a8b49af7a9689a7f3a1917702d59fc}{Apply\+Inverse\+To} (const \hyperlink{classvct_matrix_rotation3_const_base_ad26bf016ce37ea0532e1ce0aa7bba8a0}{This\+Type} \&input, \hyperlink{classvct_matrix_rotation3_const_base_ad26bf016ce37ea0532e1ce0aa7bba8a0}{This\+Type} \&output) const 
+\item 
+\hyperlink{classvct_matrix_rotation3_const_base_ad26bf016ce37ea0532e1ce0aa7bba8a0}{This\+Type} \hyperlink{classvct_matrix_rotation3_const_base_a800f192ecd7bc5c5b6d2930b2546ab84}{Apply\+Inverse\+To} (const \hyperlink{classvct_matrix_rotation3_const_base_ad26bf016ce37ea0532e1ce0aa7bba8a0}{This\+Type} \&input) const 
+\item 
+{\footnotesize template$<$class \+\_\+\+\_\+vector\+Owner\+Type1 , class \+\_\+\+\_\+vector\+Owner\+Type2 $>$ }\\void \hyperlink{classvct_matrix_rotation3_const_base_a397a9e47a592fdd1249fa2f577f8fc17}{Apply\+Inverse\+To} (const \hyperlink{classvct_dynamic_const_vector_base}{vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type1, value\+\_\+type $>$ \&input, \hyperlink{classvct_dynamic_vector_base}{vct\+Dynamic\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type2, value\+\_\+type $>$ \&output) const 
+\item 
+{\footnotesize template$<$class \+\_\+\+\_\+vector\+Owner\+Type , stride\+\_\+type \+\_\+\+\_\+stride, class \+\_\+\+\_\+data\+Ptr\+Type $>$ }\\void \hyperlink{classvct_matrix_rotation3_const_base_af1252a1e416a9b633d1eea893a5b92a9}{Apply\+Inverse\+To} (const \hyperlink{classvct_dynamic_const_vector_base}{vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type, value\+\_\+type $>$ \&input, \hyperlink{classvct_fixed_size_vector_base}{vct\+Fixed\+Size\+Vector\+Base}$<$ \hyperlink{classvct_matrix_rotation3_const_base_a6bc9712dde55ee3fca0d7880feb6a903afdf02f4ad230d81f0ca2539c7feb61f3}{D\+I\+M\+E\+N\+S\+I\+O\+N}, \+\_\+\+\_\+stride, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type $>$ \&output) const 
+\item 
+{\footnotesize template$<$size\+\_\+type \+\_\+\+\_\+cols, stride\+\_\+type \+\_\+\+\_\+row\+Stride1, stride\+\_\+type \+\_\+\+\_\+col\+Stride1, class \+\_\+\+\_\+data\+Ptr\+Type1 , stride\+\_\+type \+\_\+\+\_\+row\+Stride2, stride\+\_\+type \+\_\+\+\_\+col\+Stride2, class \+\_\+\+\_\+data\+Ptr\+Type2 $>$ }\\void \hyperlink{classvct_matrix_rotation3_const_base_ab3872110e5cc432dbf0592d4af58854d}{Apply\+To} (const \hyperlink{classvct_fixed_size_const_matrix_base}{vct\+Fixed\+Size\+Const\+Matrix\+Base}$<$ \hyperlink{classvct_matrix_rotation3_const_base_a6bc9712dde55ee3fca0d7880feb6a903afdf02f4ad230d81f0ca2539c7feb61f3}{D\+I\+M\+E\+N\+S\+I\+O\+N}, \+\_\+\+\_\+cols, \+\_\+\+\_\+row\+Stride1, \+\_\+\+\_\+col\+Stride1, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type1 $>$ \&input, \hyperlink{classvct_fixed_size_matrix_base}{vct\+Fixed\+Size\+Matrix\+Base}$<$ \hyperlink{classvct_matrix_rotation3_const_base_a6bc9712dde55ee3fca0d7880feb6a903afdf02f4ad230d81f0ca2539c7feb61f3}{D\+I\+M\+E\+N\+S\+I\+O\+N}, \+\_\+\+\_\+cols, \+\_\+\+\_\+row\+Stride2, \+\_\+\+\_\+col\+Stride2, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type2 $>$ \&output) const 
+\item 
+{\footnotesize template$<$class \+\_\+\+\_\+matrix\+Owner\+Type1 , class \+\_\+\+\_\+matrix\+Owner\+Type2 $>$ }\\void \hyperlink{classvct_matrix_rotation3_const_base_adf7e3f5c1e4428e72e4ca671eef6447c}{Apply\+To} (const \hyperlink{classvct_dynamic_const_matrix_base}{vct\+Dynamic\+Const\+Matrix\+Base}$<$ \+\_\+\+\_\+matrix\+Owner\+Type1, value\+\_\+type $>$ \&input, \hyperlink{classvct_dynamic_matrix_base}{vct\+Dynamic\+Matrix\+Base}$<$ \+\_\+\+\_\+matrix\+Owner\+Type2, value\+\_\+type $>$ \&output) const 
+\item 
+{\footnotesize template$<$size\+\_\+type \+\_\+\+\_\+cols, stride\+\_\+type \+\_\+\+\_\+row\+Stride1, stride\+\_\+type \+\_\+\+\_\+col\+Stride1, class \+\_\+\+\_\+data\+Ptr\+Type1 , stride\+\_\+type \+\_\+\+\_\+row\+Stride2, stride\+\_\+type \+\_\+\+\_\+col\+Stride2, class \+\_\+\+\_\+data\+Ptr\+Type2 $>$ }\\void \hyperlink{classvct_matrix_rotation3_const_base_afd13fe59769456b1e904434344f17b4c}{Apply\+Inverse\+To} (const \hyperlink{classvct_fixed_size_const_matrix_base}{vct\+Fixed\+Size\+Const\+Matrix\+Base}$<$ \hyperlink{classvct_matrix_rotation3_const_base_a6bc9712dde55ee3fca0d7880feb6a903afdf02f4ad230d81f0ca2539c7feb61f3}{D\+I\+M\+E\+N\+S\+I\+O\+N}, \+\_\+\+\_\+cols, \+\_\+\+\_\+row\+Stride1, \+\_\+\+\_\+col\+Stride1, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type1 $>$ \&input, \hyperlink{classvct_fixed_size_matrix_base}{vct\+Fixed\+Size\+Matrix\+Base}$<$ \hyperlink{classvct_matrix_rotation3_const_base_a6bc9712dde55ee3fca0d7880feb6a903afdf02f4ad230d81f0ca2539c7feb61f3}{D\+I\+M\+E\+N\+S\+I\+O\+N}, \+\_\+\+\_\+cols, \+\_\+\+\_\+row\+Stride2, \+\_\+\+\_\+col\+Stride2, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type2 $>$ \&output) const 
+\item 
+{\footnotesize template$<$class \+\_\+\+\_\+matrix\+Owner\+Type1 , class \+\_\+\+\_\+matrix\+Owner\+Type2 $>$ }\\void \hyperlink{classvct_matrix_rotation3_const_base_a9bf0d05680ea22c07d7906813f515c39}{Apply\+Inverse\+To} (const \hyperlink{classvct_dynamic_const_matrix_base}{vct\+Dynamic\+Const\+Matrix\+Base}$<$ \+\_\+\+\_\+matrix\+Owner\+Type1, value\+\_\+type $>$ \&input, \hyperlink{classvct_dynamic_matrix_base}{vct\+Dynamic\+Matrix\+Base}$<$ \+\_\+\+\_\+matrix\+Owner\+Type2, value\+\_\+type $>$ \&output) const 
+\item 
+\hyperlink{classvct_matrix_rotation3_const_base_ad26bf016ce37ea0532e1ce0aa7bba8a0}{This\+Type} \hyperlink{classvct_matrix_rotation3_const_base_a9c381ea7eb0be99b27c142afbbbd559d}{operator$\ast$} (const \hyperlink{classvct_matrix_rotation3_const_base_ad26bf016ce37ea0532e1ce0aa7bba8a0}{This\+Type} \&input) const 
+\item 
+{\footnotesize template$<$stride\+\_\+type \+\_\+\+\_\+stride, class \+\_\+\+\_\+data\+Ptr\+Type $>$ }\\\hyperlink{classvct_fixed_size_vector}{vct\+Fixed\+Size\+Vector}$<$ value\+\_\+type, \hyperlink{classvct_matrix_rotation3_const_base_a6bc9712dde55ee3fca0d7880feb6a903afdf02f4ad230d81f0ca2539c7feb61f3}{D\+I\+M\+E\+N\+S\+I\+O\+N} $>$ \hyperlink{classvct_matrix_rotation3_const_base_a185793b48e2be35f46bd0855cbec8b03}{operator$\ast$} (const \hyperlink{classvct_fixed_size_const_vector_base}{vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \hyperlink{classvct_matrix_rotation3_const_base_a6bc9712dde55ee3fca0d7880feb6a903afdf02f4ad230d81f0ca2539c7feb61f3}{D\+I\+M\+E\+N\+S\+I\+O\+N}, \+\_\+\+\_\+stride, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type $>$ \&input) const 
+\item 
+{\footnotesize template$<$class \+\_\+\+\_\+vector\+Owner\+Type1 $>$ }\\\hyperlink{classvct_fixed_size_vector}{vct\+Fixed\+Size\+Vector}$<$ value\+\_\+type, \hyperlink{classvct_matrix_rotation3_const_base_a6bc9712dde55ee3fca0d7880feb6a903afdf02f4ad230d81f0ca2539c7feb61f3}{D\+I\+M\+E\+N\+S\+I\+O\+N} $>$ \hyperlink{classvct_matrix_rotation3_const_base_a8ee7706c66f346505d81e3cdd0f8eaca}{operator$\ast$} (const \hyperlink{classvct_dynamic_const_vector_base}{vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type1, value\+\_\+type $>$ \&input) const 
+\item 
+bool \hyperlink{classvct_matrix_rotation3_const_base_ad321ab64b8b9b8aa51230fedb0ab2ea3}{Almost\+Equivalent} (const \hyperlink{classvct_matrix_rotation3_const_base_ad26bf016ce37ea0532e1ce0aa7bba8a0}{This\+Type} \&other, value\+\_\+type tolerance=\hyperlink{classcmn_type_traits_adc129bf9867295b90d300768b780fa99}{Type\+Traits\+::\+Tolerance}()) const 
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} const \hyperlink{classvct_matrix_rotation3_const_base_a913ecee79856db867ac6d45d27cfe362}{Rotation\+Value\+Type} \& \hyperlink{classvct_matrix_rotation3_const_base_addc1008b40782a836ca101f16b6f9de8}{Identity} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classvct_matrix_rotation3_const_base_aee8cc510b855f90a37ff8c670d6b0557}{Throw\+Unless\+Is\+Normalized} (void) const   throw (std\+::runtime\+\_\+error)
+\item 
+{\footnotesize template$<$class \+\_\+input\+Type $>$ }\\void \hyperlink{classvct_matrix_rotation3_const_base_aea7676e36ddcb2600bd6283debf47634}{Throw\+Unless\+Is\+Normalized} (const \+\_\+input\+Type \&input) const   throw (std\+::runtime\+\_\+error)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class \+\_\+container\+Type$>$class vct\+Matrix\+Rotation3\+Const\+Base$<$ \+\_\+container\+Type $>$}
+
+Define a rotation matrix for a space of dimension 3. 
+
+This class is templated by the type of container used to store the rotation matrix. This class is an internal class, i.\+e. it is not intended for the end-\/user. The class which should be used by most is vct\+Mat\+Rot3 (eventually vct\+Matrix\+Rotation3$<$\+\_\+element\+Type$>$).
+
+The main goal of this meta rotation matrix class is to ease the interface with Python. For a native Python object, a matrix rotation can be defined based on a \hyperlink{classvct_dynamic_matrix}{vct\+Dynamic\+Matrix} which is much easier to wrap than a \hyperlink{classvct_fixed_size_matrix}{vct\+Fixed\+Size\+Matrix}. For a C++ object accessed from Python, the rotation matrix will be defined using \hyperlink{classvct_matrix_rotation3_base}{vct\+Matrix\+Rotation3\+Base}$<$\hyperlink{classvct_dynamic_matrix_ref}{vct\+Dynamic\+Matrix\+Ref$<$double$>$} $>$, referring to the C++ \hyperlink{classvct_matrix_rotation3_base}{vct\+Matrix\+Rotation3\+Base}$<$\hyperlink{classvct_fixed_size_matrix}{vct\+Fixed\+Size\+Matrix$<$double, 3, 3$>$} $>$.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+container\+Type} & The type of the matrix.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classvct_fixed_size_matrix}{vct\+Fixed\+Size\+Matrix} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classvct_matrix_rotation3_const_base_a1f40b2353fc88d70bf853d4557eaae99}{}\index{vct\+Matrix\+Rotation3\+Const\+Base@{vct\+Matrix\+Rotation3\+Const\+Base}!Base\+Type@{Base\+Type}}
+\index{Base\+Type@{Base\+Type}!vct\+Matrix\+Rotation3\+Const\+Base@{vct\+Matrix\+Rotation3\+Const\+Base}}
+\subsubsection[{Base\+Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type$>$ typedef \+\_\+container\+Type {\bf vct\+Matrix\+Rotation3\+Const\+Base}$<$ \+\_\+container\+Type $>$\+::{\bf Base\+Type}}\label{classvct_matrix_rotation3_const_base_a1f40b2353fc88d70bf853d4557eaae99}
+\hypertarget{classvct_matrix_rotation3_const_base_a59e670b3a79131c32fa5ce28a9275509}{}\index{vct\+Matrix\+Rotation3\+Const\+Base@{vct\+Matrix\+Rotation3\+Const\+Base}!Container\+Type@{Container\+Type}}
+\index{Container\+Type@{Container\+Type}!vct\+Matrix\+Rotation3\+Const\+Base@{vct\+Matrix\+Rotation3\+Const\+Base}}
+\subsubsection[{Container\+Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type$>$ typedef \+\_\+container\+Type {\bf vct\+Matrix\+Rotation3\+Const\+Base}$<$ \+\_\+container\+Type $>$\+::{\bf Container\+Type}}\label{classvct_matrix_rotation3_const_base_a59e670b3a79131c32fa5ce28a9275509}
+\hypertarget{classvct_matrix_rotation3_const_base_a913ecee79856db867ac6d45d27cfe362}{}\index{vct\+Matrix\+Rotation3\+Const\+Base@{vct\+Matrix\+Rotation3\+Const\+Base}!Rotation\+Value\+Type@{Rotation\+Value\+Type}}
+\index{Rotation\+Value\+Type@{Rotation\+Value\+Type}!vct\+Matrix\+Rotation3\+Const\+Base@{vct\+Matrix\+Rotation3\+Const\+Base}}
+\subsubsection[{Rotation\+Value\+Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type$>$ typedef {\bf vct\+Matrix\+Rotation3}$<$value\+\_\+type$>$ {\bf vct\+Matrix\+Rotation3\+Const\+Base}$<$ \+\_\+container\+Type $>$\+::{\bf Rotation\+Value\+Type}}\label{classvct_matrix_rotation3_const_base_a913ecee79856db867ac6d45d27cfe362}
+Type used to return by copy \hypertarget{classvct_matrix_rotation3_const_base_ad26bf016ce37ea0532e1ce0aa7bba8a0}{}\index{vct\+Matrix\+Rotation3\+Const\+Base@{vct\+Matrix\+Rotation3\+Const\+Base}!This\+Type@{This\+Type}}
+\index{This\+Type@{This\+Type}!vct\+Matrix\+Rotation3\+Const\+Base@{vct\+Matrix\+Rotation3\+Const\+Base}}
+\subsubsection[{This\+Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type$>$ typedef {\bf vct\+Matrix\+Rotation3\+Const\+Base}$<${\bf Container\+Type}$>$ {\bf vct\+Matrix\+Rotation3\+Const\+Base}$<$ \+\_\+container\+Type $>$\+::{\bf This\+Type}}\label{classvct_matrix_rotation3_const_base_ad26bf016ce37ea0532e1ce0aa7bba8a0}
+\hypertarget{classvct_matrix_rotation3_const_base_af73335dedec5af83c5715335bbc8fce1}{}\index{vct\+Matrix\+Rotation3\+Const\+Base@{vct\+Matrix\+Rotation3\+Const\+Base}!Type\+Traits@{Type\+Traits}}
+\index{Type\+Traits@{Type\+Traits}!vct\+Matrix\+Rotation3\+Const\+Base@{vct\+Matrix\+Rotation3\+Const\+Base}}
+\subsubsection[{Type\+Traits}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type$>$ typedef {\bf cmn\+Type\+Traits}$<$value\+\_\+type$>$ {\bf vct\+Matrix\+Rotation3\+Const\+Base}$<$ \+\_\+container\+Type $>$\+::{\bf Type\+Traits}}\label{classvct_matrix_rotation3_const_base_af73335dedec5af83c5715335bbc8fce1}
+Traits used for all useful types and values related to the element type. 
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classvct_matrix_rotation3_const_base_a559a478b4507d44a75aab17fcc1c6277}{}\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type$>$ anonymous enum}\label{classvct_matrix_rotation3_const_base_a559a478b4507d44a75aab17fcc1c6277}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{R\+O\+W\+S@{R\+O\+W\+S}!vct\+Matrix\+Rotation3\+Const\+Base@{vct\+Matrix\+Rotation3\+Const\+Base}}\index{vct\+Matrix\+Rotation3\+Const\+Base@{vct\+Matrix\+Rotation3\+Const\+Base}!R\+O\+W\+S@{R\+O\+W\+S}}\item[{\em 
+\hypertarget{classvct_matrix_rotation3_const_base_a559a478b4507d44a75aab17fcc1c6277a24a90e4fecc47d3868084e10241213b5}{}R\+O\+W\+S\label{classvct_matrix_rotation3_const_base_a559a478b4507d44a75aab17fcc1c6277a24a90e4fecc47d3868084e10241213b5}
+}]\index{C\+O\+L\+S@{C\+O\+L\+S}!vct\+Matrix\+Rotation3\+Const\+Base@{vct\+Matrix\+Rotation3\+Const\+Base}}\index{vct\+Matrix\+Rotation3\+Const\+Base@{vct\+Matrix\+Rotation3\+Const\+Base}!C\+O\+L\+S@{C\+O\+L\+S}}\item[{\em 
+\hypertarget{classvct_matrix_rotation3_const_base_a559a478b4507d44a75aab17fcc1c6277a4e0ad6e4f34b6d668a5db06227afa293}{}C\+O\+L\+S\label{classvct_matrix_rotation3_const_base_a559a478b4507d44a75aab17fcc1c6277a4e0ad6e4f34b6d668a5db06227afa293}
+}]\end{description}
+\end{Desc}
+\hypertarget{classvct_matrix_rotation3_const_base_a6bc9712dde55ee3fca0d7880feb6a903}{}\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type$>$ anonymous enum}\label{classvct_matrix_rotation3_const_base_a6bc9712dde55ee3fca0d7880feb6a903}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{D\+I\+M\+E\+N\+S\+I\+O\+N@{D\+I\+M\+E\+N\+S\+I\+O\+N}!vct\+Matrix\+Rotation3\+Const\+Base@{vct\+Matrix\+Rotation3\+Const\+Base}}\index{vct\+Matrix\+Rotation3\+Const\+Base@{vct\+Matrix\+Rotation3\+Const\+Base}!D\+I\+M\+E\+N\+S\+I\+O\+N@{D\+I\+M\+E\+N\+S\+I\+O\+N}}\item[{\em 
+\hypertarget{classvct_matrix_rotation3_const_base_a6bc9712dde55ee3fca0d7880feb6a903afdf02f4ad230d81f0ca2539c7feb61f3}{}D\+I\+M\+E\+N\+S\+I\+O\+N\label{classvct_matrix_rotation3_const_base_a6bc9712dde55ee3fca0d7880feb6a903afdf02f4ad230d81f0ca2539c7feb61f3}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classvct_matrix_rotation3_const_base_ad321ab64b8b9b8aa51230fedb0ab2ea3}{}\index{vct\+Matrix\+Rotation3\+Const\+Base@{vct\+Matrix\+Rotation3\+Const\+Base}!Almost\+Equivalent@{Almost\+Equivalent}}
+\index{Almost\+Equivalent@{Almost\+Equivalent}!vct\+Matrix\+Rotation3\+Const\+Base@{vct\+Matrix\+Rotation3\+Const\+Base}}
+\subsubsection[{Almost\+Equivalent}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type$>$ bool {\bf vct\+Matrix\+Rotation3\+Const\+Base}$<$ \+\_\+container\+Type $>$\+::Almost\+Equivalent (
+\begin{DoxyParamCaption}
+\item[{const {\bf This\+Type} \&}]{other, }
+\item[{value\+\_\+type}]{tolerance = {\ttfamily {\bf Type\+Traits\+::\+Tolerance}()}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_matrix_rotation3_const_base_ad321ab64b8b9b8aa51230fedb0ab2ea3}
+Return true if this rotation is effectively equivalent to the other rotation, up to the given tolerance. For a rotation matrix, this method is strictly the same as Almost\+Equal.
+
+\begin{DoxySeeAlso}{See also}
+Almost\+Equal 
+\end{DoxySeeAlso}
+\hypertarget{classvct_matrix_rotation3_const_base_ac93acb8c499f807f4983fd8f5a024329}{}\index{vct\+Matrix\+Rotation3\+Const\+Base@{vct\+Matrix\+Rotation3\+Const\+Base}!Apply\+Inverse\+To@{Apply\+Inverse\+To}}
+\index{Apply\+Inverse\+To@{Apply\+Inverse\+To}!vct\+Matrix\+Rotation3\+Const\+Base@{vct\+Matrix\+Rotation3\+Const\+Base}}
+\subsubsection[{Apply\+Inverse\+To}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type$>$ template$<$stride\+\_\+type \+\_\+\+\_\+stride1, class \+\_\+\+\_\+data\+Ptr\+Type1 , stride\+\_\+type \+\_\+\+\_\+stride2, class \+\_\+\+\_\+data\+Ptr\+Type2 $>$ void {\bf vct\+Matrix\+Rotation3\+Const\+Base}$<$ \+\_\+container\+Type $>$\+::Apply\+Inverse\+To (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ {\bf D\+I\+M\+E\+N\+S\+I\+O\+N}, \+\_\+\+\_\+stride1, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type1 $>$ \&}]{input, }
+\item[{{\bf vct\+Fixed\+Size\+Vector\+Base}$<$ {\bf D\+I\+M\+E\+N\+S\+I\+O\+N}, \+\_\+\+\_\+stride2, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type2 $>$ \&}]{output}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_matrix_rotation3_const_base_ac93acb8c499f807f4983fd8f5a024329}
+Apply the inverse of the rotation to a vector of fixed size
+\begin{DoxyEnumerate}
+\item The result is stored into a vector of size 3 provided by the caller and passed by reference.
+\end{DoxyEnumerate}
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & The input vector \\
+\hline
+{\em output} & The output vector \\
+\hline
+\end{DoxyParams}
+\hypertarget{classvct_matrix_rotation3_const_base_a30a4e8383a9a979d80edf0d8765d3e86}{}\index{vct\+Matrix\+Rotation3\+Const\+Base@{vct\+Matrix\+Rotation3\+Const\+Base}!Apply\+Inverse\+To@{Apply\+Inverse\+To}}
+\index{Apply\+Inverse\+To@{Apply\+Inverse\+To}!vct\+Matrix\+Rotation3\+Const\+Base@{vct\+Matrix\+Rotation3\+Const\+Base}}
+\subsubsection[{Apply\+Inverse\+To}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type$>$ template$<$stride\+\_\+type \+\_\+\+\_\+stride, class \+\_\+\+\_\+data\+Ptr\+Type $>$ {\bf vct\+Fixed\+Size\+Vector}$<$value\+\_\+type, {\bf D\+I\+M\+E\+N\+S\+I\+O\+N}$>$ {\bf vct\+Matrix\+Rotation3\+Const\+Base}$<$ \+\_\+container\+Type $>$\+::Apply\+Inverse\+To (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ {\bf D\+I\+M\+E\+N\+S\+I\+O\+N}, \+\_\+\+\_\+stride, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type $>$ \&}]{input}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_matrix_rotation3_const_base_a30a4e8383a9a979d80edf0d8765d3e86}
+Apply the the inverse of the rotation to a vector of fixed size 3. The result is returned by copy. This interface might be more convenient for some but one should note that it is less efficient since it requires a copy.
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & The input vector \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The output vector 
+\end{DoxyReturn}
+\hypertarget{classvct_matrix_rotation3_const_base_a31ede991797a7d64c2e53e5580a50a58}{}\index{vct\+Matrix\+Rotation3\+Const\+Base@{vct\+Matrix\+Rotation3\+Const\+Base}!Apply\+Inverse\+To@{Apply\+Inverse\+To}}
+\index{Apply\+Inverse\+To@{Apply\+Inverse\+To}!vct\+Matrix\+Rotation3\+Const\+Base@{vct\+Matrix\+Rotation3\+Const\+Base}}
+\subsubsection[{Apply\+Inverse\+To}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type$>$ template$<$class \+\_\+\+\_\+vector\+Owner\+Type $>$ {\bf vct\+Fixed\+Size\+Vector}$<$value\+\_\+type, {\bf D\+I\+M\+E\+N\+S\+I\+O\+N}$>$ {\bf vct\+Matrix\+Rotation3\+Const\+Base}$<$ \+\_\+container\+Type $>$\+::Apply\+Inverse\+To (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type, value\+\_\+type $>$ \&}]{input}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_matrix_rotation3_const_base_a31ede991797a7d64c2e53e5580a50a58}
+Apply the inverse rotation to a dynamic vector of length 3. The result is returned by value. \hypertarget{classvct_matrix_rotation3_const_base_a90a8b49af7a9689a7f3a1917702d59fc}{}\index{vct\+Matrix\+Rotation3\+Const\+Base@{vct\+Matrix\+Rotation3\+Const\+Base}!Apply\+Inverse\+To@{Apply\+Inverse\+To}}
+\index{Apply\+Inverse\+To@{Apply\+Inverse\+To}!vct\+Matrix\+Rotation3\+Const\+Base@{vct\+Matrix\+Rotation3\+Const\+Base}}
+\subsubsection[{Apply\+Inverse\+To}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type$>$ void {\bf vct\+Matrix\+Rotation3\+Const\+Base}$<$ \+\_\+container\+Type $>$\+::Apply\+Inverse\+To (
+\begin{DoxyParamCaption}
+\item[{const {\bf This\+Type} \&}]{input, }
+\item[{{\bf This\+Type} \&}]{output}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_matrix_rotation3_const_base_a90a8b49af7a9689a7f3a1917702d59fc}
+Apply the inverse of the rotation to another rotation. The result is stored into a \hyperlink{classvct_matrix_rotation3_base}{vct\+Matrix\+Rotation3\+Base} (This\+Type) provided by the caller and passed by reference.
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & The input rotation \\
+\hline
+{\em output} & The output rotation \\
+\hline
+\end{DoxyParams}
+\hypertarget{classvct_matrix_rotation3_const_base_a800f192ecd7bc5c5b6d2930b2546ab84}{}\index{vct\+Matrix\+Rotation3\+Const\+Base@{vct\+Matrix\+Rotation3\+Const\+Base}!Apply\+Inverse\+To@{Apply\+Inverse\+To}}
+\index{Apply\+Inverse\+To@{Apply\+Inverse\+To}!vct\+Matrix\+Rotation3\+Const\+Base@{vct\+Matrix\+Rotation3\+Const\+Base}}
+\subsubsection[{Apply\+Inverse\+To}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type$>$ {\bf This\+Type} {\bf vct\+Matrix\+Rotation3\+Const\+Base}$<$ \+\_\+container\+Type $>$\+::Apply\+Inverse\+To (
+\begin{DoxyParamCaption}
+\item[{const {\bf This\+Type} \&}]{input}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_matrix_rotation3_const_base_a800f192ecd7bc5c5b6d2930b2546ab84}
+Apply the inverse of the rotation to another rotation. The result is returned by copy. This interface might be more convenient for some but one should note that it is less efficient since it requires a copy.
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & The input rotation \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The output rotation 
+\end{DoxyReturn}
+\hypertarget{classvct_matrix_rotation3_const_base_a397a9e47a592fdd1249fa2f577f8fc17}{}\index{vct\+Matrix\+Rotation3\+Const\+Base@{vct\+Matrix\+Rotation3\+Const\+Base}!Apply\+Inverse\+To@{Apply\+Inverse\+To}}
+\index{Apply\+Inverse\+To@{Apply\+Inverse\+To}!vct\+Matrix\+Rotation3\+Const\+Base@{vct\+Matrix\+Rotation3\+Const\+Base}}
+\subsubsection[{Apply\+Inverse\+To}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type$>$ template$<$class \+\_\+\+\_\+vector\+Owner\+Type1 , class \+\_\+\+\_\+vector\+Owner\+Type2 $>$ void {\bf vct\+Matrix\+Rotation3\+Const\+Base}$<$ \+\_\+container\+Type $>$\+::Apply\+Inverse\+To (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type1, value\+\_\+type $>$ \&}]{input, }
+\item[{{\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type2, value\+\_\+type $>$ \&}]{output}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_matrix_rotation3_const_base_a397a9e47a592fdd1249fa2f577f8fc17}
+Apply the the inverse of the rotation to a dynamic vector. The result is stored into another dynamic vector passed by reference by the caller. It is assumed that both are of size 3. \hypertarget{classvct_matrix_rotation3_const_base_af1252a1e416a9b633d1eea893a5b92a9}{}\index{vct\+Matrix\+Rotation3\+Const\+Base@{vct\+Matrix\+Rotation3\+Const\+Base}!Apply\+Inverse\+To@{Apply\+Inverse\+To}}
+\index{Apply\+Inverse\+To@{Apply\+Inverse\+To}!vct\+Matrix\+Rotation3\+Const\+Base@{vct\+Matrix\+Rotation3\+Const\+Base}}
+\subsubsection[{Apply\+Inverse\+To}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type$>$ template$<$class \+\_\+\+\_\+vector\+Owner\+Type , stride\+\_\+type \+\_\+\+\_\+stride, class \+\_\+\+\_\+data\+Ptr\+Type $>$ void {\bf vct\+Matrix\+Rotation3\+Const\+Base}$<$ \+\_\+container\+Type $>$\+::Apply\+Inverse\+To (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type, value\+\_\+type $>$ \&}]{input, }
+\item[{{\bf vct\+Fixed\+Size\+Vector\+Base}$<$ {\bf D\+I\+M\+E\+N\+S\+I\+O\+N}, \+\_\+\+\_\+stride, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type $>$ \&}]{output}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_matrix_rotation3_const_base_af1252a1e416a9b633d1eea893a5b92a9}
+Apply the the inverse of the rotation to a dynamic vector. The result is stored into a fixed-\/size vector passed by reference by the caller. It is assumed that both are of size 3. \hypertarget{classvct_matrix_rotation3_const_base_afd13fe59769456b1e904434344f17b4c}{}\index{vct\+Matrix\+Rotation3\+Const\+Base@{vct\+Matrix\+Rotation3\+Const\+Base}!Apply\+Inverse\+To@{Apply\+Inverse\+To}}
+\index{Apply\+Inverse\+To@{Apply\+Inverse\+To}!vct\+Matrix\+Rotation3\+Const\+Base@{vct\+Matrix\+Rotation3\+Const\+Base}}
+\subsubsection[{Apply\+Inverse\+To}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type$>$ template$<$size\+\_\+type \+\_\+\+\_\+cols, stride\+\_\+type \+\_\+\+\_\+row\+Stride1, stride\+\_\+type \+\_\+\+\_\+col\+Stride1, class \+\_\+\+\_\+data\+Ptr\+Type1 , stride\+\_\+type \+\_\+\+\_\+row\+Stride2, stride\+\_\+type \+\_\+\+\_\+col\+Stride2, class \+\_\+\+\_\+data\+Ptr\+Type2 $>$ void {\bf vct\+Matrix\+Rotation3\+Const\+Base}$<$ \+\_\+container\+Type $>$\+::Apply\+Inverse\+To (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Fixed\+Size\+Const\+Matrix\+Base}$<$ {\bf D\+I\+M\+E\+N\+S\+I\+O\+N}, \+\_\+\+\_\+cols, \+\_\+\+\_\+row\+Stride1, \+\_\+\+\_\+col\+Stride1, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type1 $>$ \&}]{input, }
+\item[{{\bf vct\+Fixed\+Size\+Matrix\+Base}$<$ {\bf D\+I\+M\+E\+N\+S\+I\+O\+N}, \+\_\+\+\_\+cols, \+\_\+\+\_\+row\+Stride2, \+\_\+\+\_\+col\+Stride2, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type2 $>$ \&}]{output}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_matrix_rotation3_const_base_afd13fe59769456b1e904434344f17b4c}
+Apply the inverse rotation to a fixed-\/size matrix with 3 rows. The result is stored in another fixed-\/size matrix \hypertarget{classvct_matrix_rotation3_const_base_a9bf0d05680ea22c07d7906813f515c39}{}\index{vct\+Matrix\+Rotation3\+Const\+Base@{vct\+Matrix\+Rotation3\+Const\+Base}!Apply\+Inverse\+To@{Apply\+Inverse\+To}}
+\index{Apply\+Inverse\+To@{Apply\+Inverse\+To}!vct\+Matrix\+Rotation3\+Const\+Base@{vct\+Matrix\+Rotation3\+Const\+Base}}
+\subsubsection[{Apply\+Inverse\+To}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type$>$ template$<$class \+\_\+\+\_\+matrix\+Owner\+Type1 , class \+\_\+\+\_\+matrix\+Owner\+Type2 $>$ void {\bf vct\+Matrix\+Rotation3\+Const\+Base}$<$ \+\_\+container\+Type $>$\+::Apply\+Inverse\+To (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Const\+Matrix\+Base}$<$ \+\_\+\+\_\+matrix\+Owner\+Type1, value\+\_\+type $>$ \&}]{input, }
+\item[{{\bf vct\+Dynamic\+Matrix\+Base}$<$ \+\_\+\+\_\+matrix\+Owner\+Type2, value\+\_\+type $>$ \&}]{output}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_matrix_rotation3_const_base_a9bf0d05680ea22c07d7906813f515c39}
+Apply this rotation inverse to a dynamic matrix with 3 rows. The result is stored in another dynamic matrix. \hypertarget{classvct_matrix_rotation3_const_base_a832251356c47c892cfaf45846f8dd13d}{}\index{vct\+Matrix\+Rotation3\+Const\+Base@{vct\+Matrix\+Rotation3\+Const\+Base}!Apply\+To@{Apply\+To}}
+\index{Apply\+To@{Apply\+To}!vct\+Matrix\+Rotation3\+Const\+Base@{vct\+Matrix\+Rotation3\+Const\+Base}}
+\subsubsection[{Apply\+To}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type$>$ template$<$stride\+\_\+type \+\_\+\+\_\+stride1, class \+\_\+\+\_\+data\+Ptr\+Type1 , stride\+\_\+type \+\_\+\+\_\+stride2, class \+\_\+\+\_\+data\+Ptr\+Type2 $>$ void {\bf vct\+Matrix\+Rotation3\+Const\+Base}$<$ \+\_\+container\+Type $>$\+::Apply\+To (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ {\bf D\+I\+M\+E\+N\+S\+I\+O\+N}, \+\_\+\+\_\+stride1, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type1 $>$ \&}]{input, }
+\item[{{\bf vct\+Fixed\+Size\+Vector\+Base}$<$ {\bf D\+I\+M\+E\+N\+S\+I\+O\+N}, \+\_\+\+\_\+stride2, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type2 $>$ \&}]{output}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_matrix_rotation3_const_base_a832251356c47c892cfaf45846f8dd13d}
+Apply the rotation to a vector of fixed size 3. The result is stored into a vector of size 3 provided by the caller and passed by reference.
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & The input vector \\
+\hline
+{\em output} & The output vector \\
+\hline
+\end{DoxyParams}
+\hypertarget{classvct_matrix_rotation3_const_base_a2e6655de4bc25d980cabef0f4ef945a5}{}\index{vct\+Matrix\+Rotation3\+Const\+Base@{vct\+Matrix\+Rotation3\+Const\+Base}!Apply\+To@{Apply\+To}}
+\index{Apply\+To@{Apply\+To}!vct\+Matrix\+Rotation3\+Const\+Base@{vct\+Matrix\+Rotation3\+Const\+Base}}
+\subsubsection[{Apply\+To}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type$>$ template$<$stride\+\_\+type \+\_\+\+\_\+stride, class \+\_\+\+\_\+data\+Ptr\+Type $>$ {\bf vct\+Fixed\+Size\+Vector}$<$value\+\_\+type, {\bf D\+I\+M\+E\+N\+S\+I\+O\+N}$>$ {\bf vct\+Matrix\+Rotation3\+Const\+Base}$<$ \+\_\+container\+Type $>$\+::Apply\+To (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ {\bf D\+I\+M\+E\+N\+S\+I\+O\+N}, \+\_\+\+\_\+stride, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type $>$ \&}]{input}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_matrix_rotation3_const_base_a2e6655de4bc25d980cabef0f4ef945a5}
+Apply the rotation to a vector of fixed size 3. The result is returned by copy. This interface might be more convenient for some but one should note that it is less efficient since it requires a copy.
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & The input vector \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The output vector 
+\end{DoxyReturn}
+\hypertarget{classvct_matrix_rotation3_const_base_a9a85987ac0bfca124f712bfab3be3ea5}{}\index{vct\+Matrix\+Rotation3\+Const\+Base@{vct\+Matrix\+Rotation3\+Const\+Base}!Apply\+To@{Apply\+To}}
+\index{Apply\+To@{Apply\+To}!vct\+Matrix\+Rotation3\+Const\+Base@{vct\+Matrix\+Rotation3\+Const\+Base}}
+\subsubsection[{Apply\+To}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type$>$ {\bf This\+Type} {\bf vct\+Matrix\+Rotation3\+Const\+Base}$<$ \+\_\+container\+Type $>$\+::Apply\+To (
+\begin{DoxyParamCaption}
+\item[{const {\bf This\+Type} \&}]{input}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_matrix_rotation3_const_base_a9a85987ac0bfca124f712bfab3be3ea5}
+Apply the rotation to another rotation. The result is returned by copy. This interface might be more convenient for some but one should note that it is less efficient since it requires a copy.
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & The input rotation \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The output rotation 
+\end{DoxyReturn}
+\hypertarget{classvct_matrix_rotation3_const_base_a517c1c190581dfe39a9565fdcf5a0d44}{}\index{vct\+Matrix\+Rotation3\+Const\+Base@{vct\+Matrix\+Rotation3\+Const\+Base}!Apply\+To@{Apply\+To}}
+\index{Apply\+To@{Apply\+To}!vct\+Matrix\+Rotation3\+Const\+Base@{vct\+Matrix\+Rotation3\+Const\+Base}}
+\subsubsection[{Apply\+To}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type$>$ template$<$class \+\_\+\+\_\+vector\+Owner\+Type1 , class \+\_\+\+\_\+vector\+Owner\+Type2 $>$ void {\bf vct\+Matrix\+Rotation3\+Const\+Base}$<$ \+\_\+container\+Type $>$\+::Apply\+To (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type1, value\+\_\+type $>$ \&}]{input, }
+\item[{{\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type2, value\+\_\+type $>$ \&}]{output}
+\end{DoxyParamCaption}
+) const throw  std\+::runtime\+\_\+error) \hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_matrix_rotation3_const_base_a517c1c190581dfe39a9565fdcf5a0d44}
+Apply the rotation to a dynamic vector. The result is stored into another dynamic vector passed by reference by the caller. It is assumed that both are of size 3. \hypertarget{classvct_matrix_rotation3_const_base_a422584ee6e316eb5d2dc607728130d24}{}\index{vct\+Matrix\+Rotation3\+Const\+Base@{vct\+Matrix\+Rotation3\+Const\+Base}!Apply\+To@{Apply\+To}}
+\index{Apply\+To@{Apply\+To}!vct\+Matrix\+Rotation3\+Const\+Base@{vct\+Matrix\+Rotation3\+Const\+Base}}
+\subsubsection[{Apply\+To}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type$>$ template$<$class \+\_\+\+\_\+vector\+Owner\+Type , stride\+\_\+type \+\_\+\+\_\+stride, class \+\_\+\+\_\+data\+Ptr\+Type $>$ void {\bf vct\+Matrix\+Rotation3\+Const\+Base}$<$ \+\_\+container\+Type $>$\+::Apply\+To (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type, value\+\_\+type $>$ \&}]{input, }
+\item[{{\bf vct\+Fixed\+Size\+Vector\+Base}$<$ {\bf D\+I\+M\+E\+N\+S\+I\+O\+N}, \+\_\+\+\_\+stride, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type $>$ \&}]{output}
+\end{DoxyParamCaption}
+) const throw  std\+::runtime\+\_\+error) \hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_matrix_rotation3_const_base_a422584ee6e316eb5d2dc607728130d24}
+\hypertarget{classvct_matrix_rotation3_const_base_a97666c7b686e6a3c632aace4611a4e0e}{}\index{vct\+Matrix\+Rotation3\+Const\+Base@{vct\+Matrix\+Rotation3\+Const\+Base}!Apply\+To@{Apply\+To}}
+\index{Apply\+To@{Apply\+To}!vct\+Matrix\+Rotation3\+Const\+Base@{vct\+Matrix\+Rotation3\+Const\+Base}}
+\subsubsection[{Apply\+To}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type$>$ template$<$class \+\_\+\+\_\+vector\+Owner\+Type $>$ {\bf vct\+Fixed\+Size\+Vector}$<$value\+\_\+type, {\bf D\+I\+M\+E\+N\+S\+I\+O\+N}$>$ {\bf vct\+Matrix\+Rotation3\+Const\+Base}$<$ \+\_\+container\+Type $>$\+::Apply\+To (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type, value\+\_\+type $>$ \&}]{input}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_matrix_rotation3_const_base_a97666c7b686e6a3c632aace4611a4e0e}
+Apply the rotation to a dynamic vector of length 3. The result is returned by value. \hypertarget{classvct_matrix_rotation3_const_base_ab3872110e5cc432dbf0592d4af58854d}{}\index{vct\+Matrix\+Rotation3\+Const\+Base@{vct\+Matrix\+Rotation3\+Const\+Base}!Apply\+To@{Apply\+To}}
+\index{Apply\+To@{Apply\+To}!vct\+Matrix\+Rotation3\+Const\+Base@{vct\+Matrix\+Rotation3\+Const\+Base}}
+\subsubsection[{Apply\+To}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type$>$ template$<$size\+\_\+type \+\_\+\+\_\+cols, stride\+\_\+type \+\_\+\+\_\+row\+Stride1, stride\+\_\+type \+\_\+\+\_\+col\+Stride1, class \+\_\+\+\_\+data\+Ptr\+Type1 , stride\+\_\+type \+\_\+\+\_\+row\+Stride2, stride\+\_\+type \+\_\+\+\_\+col\+Stride2, class \+\_\+\+\_\+data\+Ptr\+Type2 $>$ void {\bf vct\+Matrix\+Rotation3\+Const\+Base}$<$ \+\_\+container\+Type $>$\+::Apply\+To (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Fixed\+Size\+Const\+Matrix\+Base}$<$ {\bf D\+I\+M\+E\+N\+S\+I\+O\+N}, \+\_\+\+\_\+cols, \+\_\+\+\_\+row\+Stride1, \+\_\+\+\_\+col\+Stride1, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type1 $>$ \&}]{input, }
+\item[{{\bf vct\+Fixed\+Size\+Matrix\+Base}$<$ {\bf D\+I\+M\+E\+N\+S\+I\+O\+N}, \+\_\+\+\_\+cols, \+\_\+\+\_\+row\+Stride2, \+\_\+\+\_\+col\+Stride2, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type2 $>$ \&}]{output}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_matrix_rotation3_const_base_ab3872110e5cc432dbf0592d4af58854d}
+Apply this rotation to a fixed-\/size matrix with 3 rows. The result is stored in another fixed-\/size matrix \hypertarget{classvct_matrix_rotation3_const_base_adf7e3f5c1e4428e72e4ca671eef6447c}{}\index{vct\+Matrix\+Rotation3\+Const\+Base@{vct\+Matrix\+Rotation3\+Const\+Base}!Apply\+To@{Apply\+To}}
+\index{Apply\+To@{Apply\+To}!vct\+Matrix\+Rotation3\+Const\+Base@{vct\+Matrix\+Rotation3\+Const\+Base}}
+\subsubsection[{Apply\+To}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type$>$ template$<$class \+\_\+\+\_\+matrix\+Owner\+Type1 , class \+\_\+\+\_\+matrix\+Owner\+Type2 $>$ void {\bf vct\+Matrix\+Rotation3\+Const\+Base}$<$ \+\_\+container\+Type $>$\+::Apply\+To (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Const\+Matrix\+Base}$<$ \+\_\+\+\_\+matrix\+Owner\+Type1, value\+\_\+type $>$ \&}]{input, }
+\item[{{\bf vct\+Dynamic\+Matrix\+Base}$<$ \+\_\+\+\_\+matrix\+Owner\+Type2, value\+\_\+type $>$ \&}]{output}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_matrix_rotation3_const_base_adf7e3f5c1e4428e72e4ca671eef6447c}
+Apply this rotation to a dynamic matrix with 3 rows. The result is stored in another dynamic matrix. \hypertarget{classvct_matrix_rotation3_const_base_addc1008b40782a836ca101f16b6f9de8}{}\index{vct\+Matrix\+Rotation3\+Const\+Base@{vct\+Matrix\+Rotation3\+Const\+Base}!Identity@{Identity}}
+\index{Identity@{Identity}!vct\+Matrix\+Rotation3\+Const\+Base@{vct\+Matrix\+Rotation3\+Const\+Base}}
+\subsubsection[{Identity}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type$>$ static {\bf C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} const {\bf Rotation\+Value\+Type}\& {\bf vct\+Matrix\+Rotation3\+Const\+Base}$<$ \+\_\+container\+Type $>$\+::Identity (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classvct_matrix_rotation3_const_base_addc1008b40782a836ca101f16b6f9de8}
+Const reference to the identity. In this case, the identity matrix\+: 
+\begin{DoxyPre}
+1 0 0
+0 1 0
+0 0 1
+\end{DoxyPre}
+ \hypertarget{classvct_matrix_rotation3_const_base_aef160dbf59345611986482d9b9e192eb}{}\index{vct\+Matrix\+Rotation3\+Const\+Base@{vct\+Matrix\+Rotation3\+Const\+Base}!Inverse@{Inverse}}
+\index{Inverse@{Inverse}!vct\+Matrix\+Rotation3\+Const\+Base@{vct\+Matrix\+Rotation3\+Const\+Base}}
+\subsubsection[{Inverse}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type $>$ {\bf vct\+Matrix\+Rotation3\+Const\+Base}$<$ \+\_\+container\+Type $>$\+::{\bf Rotation\+Value\+Type} {\bf vct\+Matrix\+Rotation3\+Const\+Base}$<$ \+\_\+container\+Type $>$\+::Inverse (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classvct_matrix_rotation3_const_base_aef160dbf59345611986482d9b9e192eb}
+Create and return by copy the inverse of this matrix. This method is not the most efficient since it requires a copy. See also Inverse\+Self(). \hypertarget{classvct_matrix_rotation3_const_base_a629632e3539b899f3b4d7d9e4f662e1c}{}\index{vct\+Matrix\+Rotation3\+Const\+Base@{vct\+Matrix\+Rotation3\+Const\+Base}!Is\+Normalized@{Is\+Normalized}}
+\index{Is\+Normalized@{Is\+Normalized}!vct\+Matrix\+Rotation3\+Const\+Base@{vct\+Matrix\+Rotation3\+Const\+Base}}
+\subsubsection[{Is\+Normalized}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type$>$ bool {\bf vct\+Matrix\+Rotation3\+Const\+Base}$<$ \+\_\+container\+Type $>$\+::Is\+Normalized (
+\begin{DoxyParamCaption}
+\item[{value\+\_\+type}]{tolerance = {\ttfamily {\bf Type\+Traits\+::\+Tolerance}()}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_matrix_rotation3_const_base_a629632e3539b899f3b4d7d9e4f662e1c}
+Test if this matrix is normalized. This methods checks that all the columns are normalized (within a margin of tolerance) and then checks that the three vectors are orthogonal to each other.
+
+
+\begin{DoxyParams}{Parameters}
+{\em tolerance} & Tolerance for the norm and scalar product tests. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classvct_matrix_rotation3_const_base_ae3f3d95e7d9cd505300b230094b29318}{}\index{vct\+Matrix\+Rotation3\+Const\+Base@{vct\+Matrix\+Rotation3\+Const\+Base}!Normalized@{Normalized}}
+\index{Normalized@{Normalized}!vct\+Matrix\+Rotation3\+Const\+Base@{vct\+Matrix\+Rotation3\+Const\+Base}}
+\subsubsection[{Normalized}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type $>$ {\bf vct\+Matrix\+Rotation3\+Const\+Base}$<$ \+\_\+container\+Type $>$\+::{\bf Rotation\+Value\+Type} {\bf vct\+Matrix\+Rotation3\+Const\+Base}$<$ \+\_\+container\+Type $>$\+::Normalized (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classvct_matrix_rotation3_const_base_ae3f3d95e7d9cd505300b230094b29318}
+Returns the normalized version of this rotation. This method returns a copy of the normalized rotation and does not modify this rotation. See also Normalized\+Self(). \hypertarget{classvct_matrix_rotation3_const_base_a9c381ea7eb0be99b27c142afbbbd559d}{}\index{vct\+Matrix\+Rotation3\+Const\+Base@{vct\+Matrix\+Rotation3\+Const\+Base}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!vct\+Matrix\+Rotation3\+Const\+Base@{vct\+Matrix\+Rotation3\+Const\+Base}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type$>$ {\bf This\+Type} {\bf vct\+Matrix\+Rotation3\+Const\+Base}$<$ \+\_\+container\+Type $>$\+::operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf This\+Type} \&}]{input}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_matrix_rotation3_const_base_a9c381ea7eb0be99b27c142afbbbd559d}
+Multiply two rotation matrices and return the result as a rotation matrix. \begin{DoxyReturn}{Returns}
+($\ast$this) $\ast$ other 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+this function overrides and shadows the operator $\ast$ defined for basic matrix type. The latter returns a \hyperlink{classvct_fixed_size_matrix}{vct\+Fixed\+Size\+Matrix}, while this version returns a specialized rotation matrix. 
+\end{DoxyNote}
+\hypertarget{classvct_matrix_rotation3_const_base_a185793b48e2be35f46bd0855cbec8b03}{}\index{vct\+Matrix\+Rotation3\+Const\+Base@{vct\+Matrix\+Rotation3\+Const\+Base}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!vct\+Matrix\+Rotation3\+Const\+Base@{vct\+Matrix\+Rotation3\+Const\+Base}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type$>$ template$<$stride\+\_\+type \+\_\+\+\_\+stride, class \+\_\+\+\_\+data\+Ptr\+Type $>$ {\bf vct\+Fixed\+Size\+Vector}$<$value\+\_\+type, {\bf D\+I\+M\+E\+N\+S\+I\+O\+N}$>$ {\bf vct\+Matrix\+Rotation3\+Const\+Base}$<$ \+\_\+container\+Type $>$\+::operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ {\bf D\+I\+M\+E\+N\+S\+I\+O\+N}, \+\_\+\+\_\+stride, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type $>$ \&}]{input}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_matrix_rotation3_const_base_a185793b48e2be35f46bd0855cbec8b03}
+Override the $\ast$ operator defined in the matrix base for matrix $\ast$ vector. This prevents compiler confusion between the overloaded Rot\+Mat$\ast$\+Rot\+Mat and the base-\/class Mat$\ast$\+Vec \hypertarget{classvct_matrix_rotation3_const_base_a8ee7706c66f346505d81e3cdd0f8eaca}{}\index{vct\+Matrix\+Rotation3\+Const\+Base@{vct\+Matrix\+Rotation3\+Const\+Base}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!vct\+Matrix\+Rotation3\+Const\+Base@{vct\+Matrix\+Rotation3\+Const\+Base}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type$>$ template$<$class \+\_\+\+\_\+vector\+Owner\+Type1 $>$ {\bf vct\+Fixed\+Size\+Vector}$<$value\+\_\+type, {\bf D\+I\+M\+E\+N\+S\+I\+O\+N}$>$ {\bf vct\+Matrix\+Rotation3\+Const\+Base}$<$ \+\_\+container\+Type $>$\+::operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+\+\_\+vector\+Owner\+Type1, value\+\_\+type $>$ \&}]{input}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_matrix_rotation3_const_base_a8ee7706c66f346505d81e3cdd0f8eaca}
+Implement operator $\ast$ for Matrix\+Rotatin $\ast$ Dynamic\+Vector. Return type is set to fixed-\/size vector of length 3. It is the caller\textquotesingle{}s responsibility to convert the return value to a dynamic vector, if so desired. \hypertarget{classvct_matrix_rotation3_const_base_aee8cc510b855f90a37ff8c670d6b0557}{}\index{vct\+Matrix\+Rotation3\+Const\+Base@{vct\+Matrix\+Rotation3\+Const\+Base}!Throw\+Unless\+Is\+Normalized@{Throw\+Unless\+Is\+Normalized}}
+\index{Throw\+Unless\+Is\+Normalized@{Throw\+Unless\+Is\+Normalized}!vct\+Matrix\+Rotation3\+Const\+Base@{vct\+Matrix\+Rotation3\+Const\+Base}}
+\subsubsection[{Throw\+Unless\+Is\+Normalized}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type$>$ void {\bf vct\+Matrix\+Rotation3\+Const\+Base}$<$ \+\_\+container\+Type $>$\+::Throw\+Unless\+Is\+Normalized (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const throw  std\+::runtime\+\_\+error) \hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\label{classvct_matrix_rotation3_const_base_aee8cc510b855f90a37ff8c670d6b0557}
+Throw an exception unless this rotation is normalized. \hypertarget{classvct_matrix_rotation3_const_base_aea7676e36ddcb2600bd6283debf47634}{}\index{vct\+Matrix\+Rotation3\+Const\+Base@{vct\+Matrix\+Rotation3\+Const\+Base}!Throw\+Unless\+Is\+Normalized@{Throw\+Unless\+Is\+Normalized}}
+\index{Throw\+Unless\+Is\+Normalized@{Throw\+Unless\+Is\+Normalized}!vct\+Matrix\+Rotation3\+Const\+Base@{vct\+Matrix\+Rotation3\+Const\+Base}}
+\subsubsection[{Throw\+Unless\+Is\+Normalized}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type$>$ template$<$class \+\_\+input\+Type $>$ void {\bf vct\+Matrix\+Rotation3\+Const\+Base}$<$ \+\_\+container\+Type $>$\+::Throw\+Unless\+Is\+Normalized (
+\begin{DoxyParamCaption}
+\item[{const \+\_\+input\+Type \&}]{input}
+\end{DoxyParamCaption}
+) const throw  std\+::runtime\+\_\+error) \hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\label{classvct_matrix_rotation3_const_base_aea7676e36ddcb2600bd6283debf47634}
+Throw an exception unless the input is normalized. 
+\begin{DoxyParams}{Parameters}
+{\em input} & An object with {\ttfamily Is\+Normalized} method. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classvct_matrix_rotation3_const_base_a8a5964653bd5a2d8e5b7577acbd973ff}{}\index{vct\+Matrix\+Rotation3\+Const\+Base@{vct\+Matrix\+Rotation3\+Const\+Base}!V\+C\+T\+\_\+\+C\+O\+N\+T\+A\+I\+N\+E\+R\+\_\+\+T\+R\+A\+I\+T\+S\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+S@{V\+C\+T\+\_\+\+C\+O\+N\+T\+A\+I\+N\+E\+R\+\_\+\+T\+R\+A\+I\+T\+S\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+S}}
+\index{V\+C\+T\+\_\+\+C\+O\+N\+T\+A\+I\+N\+E\+R\+\_\+\+T\+R\+A\+I\+T\+S\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+S@{V\+C\+T\+\_\+\+C\+O\+N\+T\+A\+I\+N\+E\+R\+\_\+\+T\+R\+A\+I\+T\+S\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+S}!vct\+Matrix\+Rotation3\+Const\+Base@{vct\+Matrix\+Rotation3\+Const\+Base}}
+\subsubsection[{V\+C\+T\+\_\+\+C\+O\+N\+T\+A\+I\+N\+E\+R\+\_\+\+T\+R\+A\+I\+T\+S\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+S}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+container\+Type$>$ {\bf vct\+Matrix\+Rotation3\+Const\+Base}$<$ \+\_\+container\+Type $>$\+::V\+C\+T\+\_\+\+C\+O\+N\+T\+A\+I\+N\+E\+R\+\_\+\+T\+R\+A\+I\+T\+S\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+S (
+\begin{DoxyParamCaption}
+\item[{typename Container\+Type\+::value\+\_\+type}]{}
+\end{DoxyParamCaption}
+)}\label{classvct_matrix_rotation3_const_base_a8a5964653bd5a2d8e5b7577acbd973ff}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Vector/\hyperlink{vct_forward_declarations_8h}{vct\+Forward\+Declarations.\+h}\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Vector/\hyperlink{vct_matrix_rotation3_const_base_8h}{vct\+Matrix\+Rotation3\+Const\+Base.\+h}\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Vector/\hyperlink{vct_matrix_rotation3_8h}{vct\+Matrix\+Rotation3.\+h}\end{DoxyCompactItemize}

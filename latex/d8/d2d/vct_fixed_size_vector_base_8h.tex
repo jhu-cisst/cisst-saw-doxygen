@@ -1,0 +1,71 @@
+\hypertarget{vct_fixed_size_vector_base_8h}{}\section{/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Vector/vct\+Fixed\+Size\+Vector\+Base.h File Reference}
+\label{vct_fixed_size_vector_base_8h}\index{/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Vector/vct\+Fixed\+Size\+Vector\+Base.\+h@{/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Vector/vct\+Fixed\+Size\+Vector\+Base.\+h}}
+
+
+Declaration of \hyperlink{classvct_fixed_size_vector_base}{vct\+Fixed\+Size\+Vector\+Base}.  
+
+
+{\ttfamily \#include $<$cisst\+Common/cmn\+De\+Serializer.\+h$>$}\\*
+{\ttfamily \#include $<$cisst\+Vector/vct\+Fixed\+Size\+Const\+Vector\+Base.\+h$>$}\\*
+{\ttfamily \#include $<$cstdarg$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classvct_fixed_size_vector_base}{vct\+Fixed\+Size\+Vector\+Base$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$}
+\begin{DoxyCompactList}\small\item\em A template for a fixed length vector with fixed spacing in memory. \end{DoxyCompactList}\item 
+class \hyperlink{classvct_fixed_size_vector_base_1_1_subvector}{vct\+Fixed\+Size\+Vector\+Base$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::\+Subvector$<$ \+\_\+sub\+Size $>$}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{vct_fixed_size_vector_base_8h_a9579113a4cd3a1dbbb528ed0cbff257a}{\+\_\+vct\+Fixed\+Size\+Vector\+Base\+\_\+h}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$vct\+::size\+\_\+type \+\_\+result\+Size, vct\+::stride\+\_\+type \+\_\+result\+Stride, class \+\_\+result\+Element\+Type , class \+\_\+result\+Data\+Ptr\+Type , vct\+::size\+\_\+type \+\_\+matrix\+Cols, vct\+::stride\+\_\+type \+\_\+matrix\+Row\+Stride, vct\+::stride\+\_\+type \+\_\+matrix\+Col\+Stride, class \+\_\+matrix\+Data\+Ptr\+Type , vct\+::stride\+\_\+type \+\_\+vector\+Stride, class \+\_\+vector\+Data\+Ptr\+Type $>$ }\\void \hyperlink{vct_fixed_size_vector_base_8h_ac2a536eada7df55d7a228efb2862267b}{Multiply\+Matrix\+Vector} (\hyperlink{classvct_fixed_size_vector_base}{vct\+Fixed\+Size\+Vector\+Base}$<$ \+\_\+result\+Size, \+\_\+result\+Stride, \+\_\+result\+Element\+Type, \+\_\+result\+Data\+Ptr\+Type $>$ \&result, const \hyperlink{classvct_fixed_size_const_matrix_base}{vct\+Fixed\+Size\+Const\+Matrix\+Base}$<$ \+\_\+result\+Size, \+\_\+matrix\+Cols, \+\_\+matrix\+Row\+Stride, \+\_\+matrix\+Col\+Stride, \+\_\+result\+Element\+Type, \+\_\+matrix\+Data\+Ptr\+Type $>$ \&matrix, const \hyperlink{classvct_fixed_size_const_vector_base}{vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+matrix\+Cols, \+\_\+vector\+Stride, \+\_\+result\+Element\+Type, \+\_\+vector\+Data\+Ptr\+Type $>$ \&vector)
+\item 
+{\footnotesize template$<$vct\+::size\+\_\+type \+\_\+result\+Size, vct\+::stride\+\_\+type \+\_\+result\+Stride, class \+\_\+result\+Element\+Type , class \+\_\+result\+Data\+Ptr\+Type , vct\+::size\+\_\+type \+\_\+vector\+Size, vct\+::stride\+\_\+type \+\_\+vector\+Stride, class \+\_\+vector\+Data\+Ptr\+Type , vct\+::stride\+\_\+type \+\_\+matrix\+Row\+Stride, vct\+::stride\+\_\+type \+\_\+matrix\+Col\+Stride, class \+\_\+matrix\+Data\+Ptr\+Type $>$ }\\void \hyperlink{vct_fixed_size_vector_base_8h_a8dae85d28c09261661b8793b87d6a230}{Multiply\+Vector\+Matrix} (\hyperlink{classvct_fixed_size_vector_base}{vct\+Fixed\+Size\+Vector\+Base}$<$ \+\_\+result\+Size, \+\_\+result\+Stride, \+\_\+result\+Element\+Type, \+\_\+result\+Data\+Ptr\+Type $>$ \&result, const \hyperlink{classvct_fixed_size_const_vector_base}{vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+vector\+Size, \+\_\+vector\+Stride, \+\_\+result\+Element\+Type, \+\_\+vector\+Data\+Ptr\+Type $>$ \&vector, const \hyperlink{classvct_fixed_size_const_matrix_base}{vct\+Fixed\+Size\+Const\+Matrix\+Base}$<$ \+\_\+vector\+Size, \+\_\+result\+Size, \+\_\+matrix\+Row\+Stride, \+\_\+matrix\+Col\+Stride, \+\_\+result\+Element\+Type, \+\_\+matrix\+Data\+Ptr\+Type $>$ \&matrix)
+\item 
+{\footnotesize template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type , class \+\_\+data\+Ptr\+Type , class \+\_\+vector\+Owner\+Type $>$ }\\void \hyperlink{vct_fixed_size_vector_base_8h_a00538cf6ee7d474bcc5b31f2f124d993}{vct\+Fixed\+Size\+Vector\+Base\+Assign\+Dynamic\+Const\+Vector\+Base} (\hyperlink{classvct_fixed_size_vector_base}{vct\+Fixed\+Size\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$ \&fixed\+Size\+Vector, const \hyperlink{classvct_dynamic_const_vector_base}{vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$ \&dynamic\+Vector)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Declaration of \hyperlink{classvct_fixed_size_vector_base}{vct\+Fixed\+Size\+Vector\+Base}. 
+
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{vct_fixed_size_vector_base_8h_a9579113a4cd3a1dbbb528ed0cbff257a}{}\index{vct\+Fixed\+Size\+Vector\+Base.\+h@{vct\+Fixed\+Size\+Vector\+Base.\+h}!\+\_\+vct\+Fixed\+Size\+Vector\+Base\+\_\+h@{\+\_\+vct\+Fixed\+Size\+Vector\+Base\+\_\+h}}
+\index{\+\_\+vct\+Fixed\+Size\+Vector\+Base\+\_\+h@{\+\_\+vct\+Fixed\+Size\+Vector\+Base\+\_\+h}!vct\+Fixed\+Size\+Vector\+Base.\+h@{vct\+Fixed\+Size\+Vector\+Base.\+h}}
+\subsubsection[{\+\_\+vct\+Fixed\+Size\+Vector\+Base\+\_\+h}]{\setlength{\rightskip}{0pt plus 5cm}\#define \+\_\+vct\+Fixed\+Size\+Vector\+Base\+\_\+h}\label{vct_fixed_size_vector_base_8h_a9579113a4cd3a1dbbb528ed0cbff257a}
+
+
+\subsection{Function Documentation}
+\hypertarget{vct_fixed_size_vector_base_8h_ac2a536eada7df55d7a228efb2862267b}{}\index{vct\+Fixed\+Size\+Vector\+Base.\+h@{vct\+Fixed\+Size\+Vector\+Base.\+h}!Multiply\+Matrix\+Vector@{Multiply\+Matrix\+Vector}}
+\index{Multiply\+Matrix\+Vector@{Multiply\+Matrix\+Vector}!vct\+Fixed\+Size\+Vector\+Base.\+h@{vct\+Fixed\+Size\+Vector\+Base.\+h}}
+\subsubsection[{Multiply\+Matrix\+Vector}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+result\+Size, vct\+::stride\+\_\+type \+\_\+result\+Stride, class \+\_\+result\+Element\+Type , class \+\_\+result\+Data\+Ptr\+Type , vct\+::size\+\_\+type \+\_\+matrix\+Cols, vct\+::stride\+\_\+type \+\_\+matrix\+Row\+Stride, vct\+::stride\+\_\+type \+\_\+matrix\+Col\+Stride, class \+\_\+matrix\+Data\+Ptr\+Type , vct\+::stride\+\_\+type \+\_\+vector\+Stride, class \+\_\+vector\+Data\+Ptr\+Type $>$ void Multiply\+Matrix\+Vector (
+\begin{DoxyParamCaption}
+\item[{{\bf vct\+Fixed\+Size\+Vector\+Base}$<$ \+\_\+result\+Size, \+\_\+result\+Stride, \+\_\+result\+Element\+Type, \+\_\+result\+Data\+Ptr\+Type $>$ \&}]{result, }
+\item[{const {\bf vct\+Fixed\+Size\+Const\+Matrix\+Base}$<$ \+\_\+result\+Size, \+\_\+matrix\+Cols, \+\_\+matrix\+Row\+Stride, \+\_\+matrix\+Col\+Stride, \+\_\+result\+Element\+Type, \+\_\+matrix\+Data\+Ptr\+Type $>$ \&}]{matrix, }
+\item[{const {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+matrix\+Cols, \+\_\+vector\+Stride, \+\_\+result\+Element\+Type, \+\_\+vector\+Data\+Ptr\+Type $>$ \&}]{vector}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{vct_fixed_size_vector_base_8h_ac2a536eada7df55d7a228efb2862267b}
+\hypertarget{vct_fixed_size_vector_base_8h_a8dae85d28c09261661b8793b87d6a230}{}\index{vct\+Fixed\+Size\+Vector\+Base.\+h@{vct\+Fixed\+Size\+Vector\+Base.\+h}!Multiply\+Vector\+Matrix@{Multiply\+Vector\+Matrix}}
+\index{Multiply\+Vector\+Matrix@{Multiply\+Vector\+Matrix}!vct\+Fixed\+Size\+Vector\+Base.\+h@{vct\+Fixed\+Size\+Vector\+Base.\+h}}
+\subsubsection[{Multiply\+Vector\+Matrix}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+result\+Size, vct\+::stride\+\_\+type \+\_\+result\+Stride, class \+\_\+result\+Element\+Type , class \+\_\+result\+Data\+Ptr\+Type , vct\+::size\+\_\+type \+\_\+vector\+Size, vct\+::stride\+\_\+type \+\_\+vector\+Stride, class \+\_\+vector\+Data\+Ptr\+Type , vct\+::stride\+\_\+type \+\_\+matrix\+Row\+Stride, vct\+::stride\+\_\+type \+\_\+matrix\+Col\+Stride, class \+\_\+matrix\+Data\+Ptr\+Type $>$ void Multiply\+Vector\+Matrix (
+\begin{DoxyParamCaption}
+\item[{{\bf vct\+Fixed\+Size\+Vector\+Base}$<$ \+\_\+result\+Size, \+\_\+result\+Stride, \+\_\+result\+Element\+Type, \+\_\+result\+Data\+Ptr\+Type $>$ \&}]{result, }
+\item[{const {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+vector\+Size, \+\_\+vector\+Stride, \+\_\+result\+Element\+Type, \+\_\+vector\+Data\+Ptr\+Type $>$ \&}]{vector, }
+\item[{const {\bf vct\+Fixed\+Size\+Const\+Matrix\+Base}$<$ \+\_\+vector\+Size, \+\_\+result\+Size, \+\_\+matrix\+Row\+Stride, \+\_\+matrix\+Col\+Stride, \+\_\+result\+Element\+Type, \+\_\+matrix\+Data\+Ptr\+Type $>$ \&}]{matrix}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{vct_fixed_size_vector_base_8h_a8dae85d28c09261661b8793b87d6a230}
+\hypertarget{vct_fixed_size_vector_base_8h_a00538cf6ee7d474bcc5b31f2f124d993}{}\index{vct\+Fixed\+Size\+Vector\+Base.\+h@{vct\+Fixed\+Size\+Vector\+Base.\+h}!vct\+Fixed\+Size\+Vector\+Base\+Assign\+Dynamic\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Vector\+Base\+Assign\+Dynamic\+Const\+Vector\+Base}}
+\index{vct\+Fixed\+Size\+Vector\+Base\+Assign\+Dynamic\+Const\+Vector\+Base@{vct\+Fixed\+Size\+Vector\+Base\+Assign\+Dynamic\+Const\+Vector\+Base}!vct\+Fixed\+Size\+Vector\+Base.\+h@{vct\+Fixed\+Size\+Vector\+Base.\+h}}
+\subsubsection[{vct\+Fixed\+Size\+Vector\+Base\+Assign\+Dynamic\+Const\+Vector\+Base}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type , class \+\_\+data\+Ptr\+Type , class \+\_\+vector\+Owner\+Type $>$ void vct\+Fixed\+Size\+Vector\+Base\+Assign\+Dynamic\+Const\+Vector\+Base (
+\begin{DoxyParamCaption}
+\item[{{\bf vct\+Fixed\+Size\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$ \&}]{fixed\+Size\+Vector, }
+\item[{const {\bf vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$ \&}]{dynamic\+Vector}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{vct_fixed_size_vector_base_8h_a00538cf6ee7d474bcc5b31f2f124d993}

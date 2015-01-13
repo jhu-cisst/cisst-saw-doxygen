@@ -1,0 +1,327 @@
+\hypertarget{classmts_component_viewer}{}\section{mts\+Component\+Viewer Class Reference}
+\label{classmts_component_viewer}\index{mts\+Component\+Viewer@{mts\+Component\+Viewer}}
+
+
+{\ttfamily \#include $<$mts\+Component\+Viewer.\+h$>$}
+
+Inheritance diagram for mts\+Component\+Viewer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=6.000000cm]{d0/d6a/classmts_component_viewer}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmts_component_viewer_a0b50fd33fa1fcad2b06ad69cfa5450cb}{mts\+Component\+Viewer} (const std\+::string \&name)
+\item 
+virtual \hyperlink{classmts_component_viewer_a6bc182a4d81ab4c55b9a9ed7a2b50666}{$\sim$mts\+Component\+Viewer} ()
+\item 
+virtual void \hyperlink{classmts_component_viewer_af3c34464ddff5a8b5728fb414543a144}{Configure} (const std\+::string \&\hyperlink{cmn_portability_8h_a021894e2626935fa2305434b1e893ff6}{C\+M\+N\+\_\+\+U\+N\+U\+S\+E\+D}(filename))
+\item 
+virtual void \hyperlink{classmts_component_viewer_a425bc56d337aca711e8834126939762a}{Startup} (void)
+\item 
+virtual void \hyperlink{classmts_component_viewer_a4c3d8d11e6e2f187c1b8fdaef3b3c561}{Run} (void)
+\item 
+virtual void \hyperlink{classmts_component_viewer_aff0098569266c8804e07377551f627f9}{Cleanup} (void)
+\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classmts_component_viewer_a2bd239a01fe3124526c4322e7305b99f}{Border\+Type} \{ \hyperlink{classmts_component_viewer_a2bd239a01fe3124526c4322e7305b99fa052b7b827ea4321a586d118000c4a552}{B\+O\+R\+D\+E\+R\+\_\+\+N\+O\+N\+E}, 
+\hyperlink{classmts_component_viewer_a2bd239a01fe3124526c4322e7305b99faf0a34a78342afbf7f576922058838128}{B\+O\+R\+D\+E\+R\+\_\+\+S\+I\+N\+G\+L\+E}, 
+\hyperlink{classmts_component_viewer_a2bd239a01fe3124526c4322e7305b99fab167f9fc9c912e6defea2768f25305b9}{B\+O\+R\+D\+E\+R\+\_\+\+D\+O\+U\+B\+L\+E}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void $\ast$ \hyperlink{classmts_component_viewer_aa5dd9cbc4a1d8408158e88311d3b447b}{Read\+From\+U\+Draw\+Graph} (int)
+\item 
+virtual void \hyperlink{classmts_component_viewer_a5adcc3b205fdb2d3b391929222137457}{Process\+Response} (void)
+\item 
+bool \hyperlink{classmts_component_viewer_a5ede805581fd5650f323f57ebb53eee6}{Connect\+To\+U\+Draw\+Graph} (void)
+\item 
+virtual void \hyperlink{classmts_component_viewer_adce96720fed764a7fc1cc9598c74b524}{Send\+All\+Info} (void)
+\item 
+void \hyperlink{classmts_component_viewer_ab8a3016cf3b814fff4132646c8545401}{Activate\+Menu\+Items} (void)
+\item 
+std\+::string \hyperlink{classmts_component_viewer_a94496c56f20040de1e87a0c36df1925a}{Get\+Component\+In\+U\+Draw\+Graph\+Format} (const std\+::string \&process\+Name, const std\+::string \&component\+Name, const mts\+Component\+State \&component\+State) const 
+\item 
+std\+::string \hyperlink{classmts_component_viewer_a3c1f904308cac38bf80a506eece45e8f}{Get\+State\+In\+U\+Draw\+Graph\+Format} (const mts\+Component\+State \&component\+State) const 
+\item 
+std\+::string \hyperlink{classmts_component_viewer_a3f1d129888db918924b042da0d84eebd}{Get\+Connection\+In\+U\+Draw\+Graph\+Format} (const mts\+Description\+Connection \&connection) const 
+\item 
+void \hyperlink{classmts_component_viewer_a4d5ea188a34cac5faa644618b1c55e2c}{Change\+Component\+Border} (const std\+::string \&process\+Name, const std\+::string \&component\+Name, \hyperlink{classmts_component_viewer_a2bd239a01fe3124526c4322e7305b99f}{Border\+Type} border)
+\item 
+virtual void \hyperlink{classmts_component_viewer_a119208a52ff869e4d7d687a04e8e1c08}{Add\+Component\+Handler} (const mts\+Description\+Component \&component\+Info)
+\item 
+virtual void \hyperlink{classmts_component_viewer_a1efc788ff4196c270e6e2d185b8c6104}{Change\+State\+Handler} (const mts\+Component\+State\+Change \&component\+State\+Change)
+\item 
+virtual void \hyperlink{classmts_component_viewer_ad9a2f2ba75fa8f47d4540ee448ba3983}{Add\+Connection\+Handler} (const mts\+Description\+Connection \&connection\+Info)
+\item 
+virtual void \hyperlink{classmts_component_viewer_a8ccf7105c4fa2b28f3f38fe9ea671806}{Remove\+Connection\+Handler} (const mts\+Description\+Connection \&connection\+Info)
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{classmts_component_viewer_a514501a010d6f9cde03032d7853cde39}{Parse\+Args} (const std\+::string \&input, std\+::string \&arg1, std\+::string \&arg2)
+\item 
+static bool \hyperlink{classmts_component_viewer_aaaa3f74701e2fc95e7a26939dccee4b1}{Parse\+Process\+And\+Component} (const std\+::string \&input, std\+::string \&process\+Name, std\+::string \&component\+Name)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classosa_pipe_exec}{osa\+Pipe\+Exec} \hyperlink{classmts_component_viewer_a4f2747dc20890be285fa6b031516c6dc}{U\+Draw\+Pipe}
+\item 
+bool \hyperlink{classmts_component_viewer_a7590f5f827427231d8fe2bd813feb22e}{U\+Draw\+Pipe\+Connected}
+\item 
+std\+::string \hyperlink{classmts_component_viewer_acae080559e0ab6cbb24070743348d9aa}{U\+Draw\+Response}
+\item 
+bool \hyperlink{classmts_component_viewer_a3e3249972f2cd16f18ea84aa0df92218}{Show\+Proxies}
+\item 
+bool \hyperlink{classmts_component_viewer_aa6617f20137e55bf8fe983d8587a22d2}{Connection\+Started}
+\item 
+mts\+Description\+Connection \hyperlink{classmts_component_viewer_ab4e2905d1679386f9a8d15d0bcaaf996}{Connection\+Request}
+\item 
+\hyperlink{classosa_thread}{osa\+Thread} \hyperlink{classmts_component_viewer_a5b608706d9dec221cd4ca599a165fec7}{Reader\+Thread}
+\item 
+\hyperlink{classosa_thread_signal}{osa\+Thread\+Signal} \hyperlink{classmts_component_viewer_a2b172a1000cad46b886f92073ca3a650}{Ready\+To\+Read}
+\item 
+bool \hyperlink{classmts_component_viewer_ab5cfa733f00890d5ee7ef44eac6624cf}{Reader\+Thread\+Finished}
+\item 
+bool \hyperlink{classmts_component_viewer_ad0d7132119ce154a8e7b646153ae0cc0}{Waiting\+For\+Response}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classmts_component_viewer_a2bd239a01fe3124526c4322e7305b99f}{}\index{mts\+Component\+Viewer@{mts\+Component\+Viewer}!Border\+Type@{Border\+Type}}
+\index{Border\+Type@{Border\+Type}!mts\+Component\+Viewer@{mts\+Component\+Viewer}}
+\subsubsection[{Border\+Type}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf mts\+Component\+Viewer\+::\+Border\+Type}\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_component_viewer_a2bd239a01fe3124526c4322e7305b99f}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{B\+O\+R\+D\+E\+R\+\_\+\+N\+O\+N\+E@{B\+O\+R\+D\+E\+R\+\_\+\+N\+O\+N\+E}!mts\+Component\+Viewer@{mts\+Component\+Viewer}}\index{mts\+Component\+Viewer@{mts\+Component\+Viewer}!B\+O\+R\+D\+E\+R\+\_\+\+N\+O\+N\+E@{B\+O\+R\+D\+E\+R\+\_\+\+N\+O\+N\+E}}\item[{\em 
+\hypertarget{classmts_component_viewer_a2bd239a01fe3124526c4322e7305b99fa052b7b827ea4321a586d118000c4a552}{}B\+O\+R\+D\+E\+R\+\_\+\+N\+O\+N\+E\label{classmts_component_viewer_a2bd239a01fe3124526c4322e7305b99fa052b7b827ea4321a586d118000c4a552}
+}]\index{B\+O\+R\+D\+E\+R\+\_\+\+S\+I\+N\+G\+L\+E@{B\+O\+R\+D\+E\+R\+\_\+\+S\+I\+N\+G\+L\+E}!mts\+Component\+Viewer@{mts\+Component\+Viewer}}\index{mts\+Component\+Viewer@{mts\+Component\+Viewer}!B\+O\+R\+D\+E\+R\+\_\+\+S\+I\+N\+G\+L\+E@{B\+O\+R\+D\+E\+R\+\_\+\+S\+I\+N\+G\+L\+E}}\item[{\em 
+\hypertarget{classmts_component_viewer_a2bd239a01fe3124526c4322e7305b99faf0a34a78342afbf7f576922058838128}{}B\+O\+R\+D\+E\+R\+\_\+\+S\+I\+N\+G\+L\+E\label{classmts_component_viewer_a2bd239a01fe3124526c4322e7305b99faf0a34a78342afbf7f576922058838128}
+}]\index{B\+O\+R\+D\+E\+R\+\_\+\+D\+O\+U\+B\+L\+E@{B\+O\+R\+D\+E\+R\+\_\+\+D\+O\+U\+B\+L\+E}!mts\+Component\+Viewer@{mts\+Component\+Viewer}}\index{mts\+Component\+Viewer@{mts\+Component\+Viewer}!B\+O\+R\+D\+E\+R\+\_\+\+D\+O\+U\+B\+L\+E@{B\+O\+R\+D\+E\+R\+\_\+\+D\+O\+U\+B\+L\+E}}\item[{\em 
+\hypertarget{classmts_component_viewer_a2bd239a01fe3124526c4322e7305b99fab167f9fc9c912e6defea2768f25305b9}{}B\+O\+R\+D\+E\+R\+\_\+\+D\+O\+U\+B\+L\+E\label{classmts_component_viewer_a2bd239a01fe3124526c4322e7305b99fab167f9fc9c912e6defea2768f25305b9}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmts_component_viewer_a0b50fd33fa1fcad2b06ad69cfa5450cb}{}\index{mts\+Component\+Viewer@{mts\+Component\+Viewer}!mts\+Component\+Viewer@{mts\+Component\+Viewer}}
+\index{mts\+Component\+Viewer@{mts\+Component\+Viewer}!mts\+Component\+Viewer@{mts\+Component\+Viewer}}
+\subsubsection[{mts\+Component\+Viewer}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Component\+Viewer\+::mts\+Component\+Viewer (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name}
+\end{DoxyParamCaption}
+)}\label{classmts_component_viewer_a0b50fd33fa1fcad2b06ad69cfa5450cb}
+\hypertarget{classmts_component_viewer_a6bc182a4d81ab4c55b9a9ed7a2b50666}{}\index{mts\+Component\+Viewer@{mts\+Component\+Viewer}!````~mts\+Component\+Viewer@{$\sim$mts\+Component\+Viewer}}
+\index{````~mts\+Component\+Viewer@{$\sim$mts\+Component\+Viewer}!mts\+Component\+Viewer@{mts\+Component\+Viewer}}
+\subsubsection[{$\sim$mts\+Component\+Viewer}]{\setlength{\rightskip}{0pt plus 5cm}virtual mts\+Component\+Viewer\+::$\sim$mts\+Component\+Viewer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_component_viewer_a6bc182a4d81ab4c55b9a9ed7a2b50666}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classmts_component_viewer_ab8a3016cf3b814fff4132646c8545401}{}\index{mts\+Component\+Viewer@{mts\+Component\+Viewer}!Activate\+Menu\+Items@{Activate\+Menu\+Items}}
+\index{Activate\+Menu\+Items@{Activate\+Menu\+Items}!mts\+Component\+Viewer@{mts\+Component\+Viewer}}
+\subsubsection[{Activate\+Menu\+Items}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Component\+Viewer\+::\+Activate\+Menu\+Items (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_component_viewer_ab8a3016cf3b814fff4132646c8545401}
+\hypertarget{classmts_component_viewer_a119208a52ff869e4d7d687a04e8e1c08}{}\index{mts\+Component\+Viewer@{mts\+Component\+Viewer}!Add\+Component\+Handler@{Add\+Component\+Handler}}
+\index{Add\+Component\+Handler@{Add\+Component\+Handler}!mts\+Component\+Viewer@{mts\+Component\+Viewer}}
+\subsubsection[{Add\+Component\+Handler}]{\setlength{\rightskip}{0pt plus 5cm}virtual void mts\+Component\+Viewer\+::\+Add\+Component\+Handler (
+\begin{DoxyParamCaption}
+\item[{const mts\+Description\+Component \&}]{component\+Info}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classmts_component_viewer_a119208a52ff869e4d7d687a04e8e1c08}
+\hypertarget{classmts_component_viewer_ad9a2f2ba75fa8f47d4540ee448ba3983}{}\index{mts\+Component\+Viewer@{mts\+Component\+Viewer}!Add\+Connection\+Handler@{Add\+Connection\+Handler}}
+\index{Add\+Connection\+Handler@{Add\+Connection\+Handler}!mts\+Component\+Viewer@{mts\+Component\+Viewer}}
+\subsubsection[{Add\+Connection\+Handler}]{\setlength{\rightskip}{0pt plus 5cm}virtual void mts\+Component\+Viewer\+::\+Add\+Connection\+Handler (
+\begin{DoxyParamCaption}
+\item[{const mts\+Description\+Connection \&}]{connection\+Info}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classmts_component_viewer_ad9a2f2ba75fa8f47d4540ee448ba3983}
+\hypertarget{classmts_component_viewer_a4d5ea188a34cac5faa644618b1c55e2c}{}\index{mts\+Component\+Viewer@{mts\+Component\+Viewer}!Change\+Component\+Border@{Change\+Component\+Border}}
+\index{Change\+Component\+Border@{Change\+Component\+Border}!mts\+Component\+Viewer@{mts\+Component\+Viewer}}
+\subsubsection[{Change\+Component\+Border}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Component\+Viewer\+::\+Change\+Component\+Border (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{process\+Name, }
+\item[{const std\+::string \&}]{component\+Name, }
+\item[{{\bf Border\+Type}}]{border}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_component_viewer_a4d5ea188a34cac5faa644618b1c55e2c}
+\hypertarget{classmts_component_viewer_a1efc788ff4196c270e6e2d185b8c6104}{}\index{mts\+Component\+Viewer@{mts\+Component\+Viewer}!Change\+State\+Handler@{Change\+State\+Handler}}
+\index{Change\+State\+Handler@{Change\+State\+Handler}!mts\+Component\+Viewer@{mts\+Component\+Viewer}}
+\subsubsection[{Change\+State\+Handler}]{\setlength{\rightskip}{0pt plus 5cm}virtual void mts\+Component\+Viewer\+::\+Change\+State\+Handler (
+\begin{DoxyParamCaption}
+\item[{const mts\+Component\+State\+Change \&}]{component\+State\+Change}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classmts_component_viewer_a1efc788ff4196c270e6e2d185b8c6104}
+\hypertarget{classmts_component_viewer_aff0098569266c8804e07377551f627f9}{}\index{mts\+Component\+Viewer@{mts\+Component\+Viewer}!Cleanup@{Cleanup}}
+\index{Cleanup@{Cleanup}!mts\+Component\+Viewer@{mts\+Component\+Viewer}}
+\subsubsection[{Cleanup}]{\setlength{\rightskip}{0pt plus 5cm}virtual void mts\+Component\+Viewer\+::\+Cleanup (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_component_viewer_aff0098569266c8804e07377551f627f9}
+Virtual method that gets overloaded, and is run after the component gets killed using \hyperlink{classmts_task_from_signal_a9a1b6e7c80ca2c2fdc14de78e3635922}{Kill()} method. 
+
+Reimplemented from \hyperlink{classmts_component_a891f330f4fde7d831dcf7dc537dc5e81}{mts\+Component}.
+
+\hypertarget{classmts_component_viewer_af3c34464ddff5a8b5728fb414543a144}{}\index{mts\+Component\+Viewer@{mts\+Component\+Viewer}!Configure@{Configure}}
+\index{Configure@{Configure}!mts\+Component\+Viewer@{mts\+Component\+Viewer}}
+\subsubsection[{Configure}]{\setlength{\rightskip}{0pt plus 5cm}virtual void mts\+Component\+Viewer\+::\+Configure (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{C\+M\+N\+\_\+\+U\+N\+U\+S\+E\+Dfilename}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classmts_component_viewer_af3c34464ddff5a8b5728fb414543a144}
+Virtual method that gets called when the task/interface needs to be configured. Should it take X\+M\+L info?? 
+
+Reimplemented from \hyperlink{classmts_task_a52c822f34f12a0eb14f3d02de9ddd6f6}{mts\+Task}.
+
+\hypertarget{classmts_component_viewer_a5ede805581fd5650f323f57ebb53eee6}{}\index{mts\+Component\+Viewer@{mts\+Component\+Viewer}!Connect\+To\+U\+Draw\+Graph@{Connect\+To\+U\+Draw\+Graph}}
+\index{Connect\+To\+U\+Draw\+Graph@{Connect\+To\+U\+Draw\+Graph}!mts\+Component\+Viewer@{mts\+Component\+Viewer}}
+\subsubsection[{Connect\+To\+U\+Draw\+Graph}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Component\+Viewer\+::\+Connect\+To\+U\+Draw\+Graph (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_component_viewer_a5ede805581fd5650f323f57ebb53eee6}
+\hypertarget{classmts_component_viewer_a94496c56f20040de1e87a0c36df1925a}{}\index{mts\+Component\+Viewer@{mts\+Component\+Viewer}!Get\+Component\+In\+U\+Draw\+Graph\+Format@{Get\+Component\+In\+U\+Draw\+Graph\+Format}}
+\index{Get\+Component\+In\+U\+Draw\+Graph\+Format@{Get\+Component\+In\+U\+Draw\+Graph\+Format}!mts\+Component\+Viewer@{mts\+Component\+Viewer}}
+\subsubsection[{Get\+Component\+In\+U\+Draw\+Graph\+Format}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string mts\+Component\+Viewer\+::\+Get\+Component\+In\+U\+Draw\+Graph\+Format (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{process\+Name, }
+\item[{const std\+::string \&}]{component\+Name, }
+\item[{const mts\+Component\+State \&}]{component\+State}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_component_viewer_a94496c56f20040de1e87a0c36df1925a}
+\hypertarget{classmts_component_viewer_a3f1d129888db918924b042da0d84eebd}{}\index{mts\+Component\+Viewer@{mts\+Component\+Viewer}!Get\+Connection\+In\+U\+Draw\+Graph\+Format@{Get\+Connection\+In\+U\+Draw\+Graph\+Format}}
+\index{Get\+Connection\+In\+U\+Draw\+Graph\+Format@{Get\+Connection\+In\+U\+Draw\+Graph\+Format}!mts\+Component\+Viewer@{mts\+Component\+Viewer}}
+\subsubsection[{Get\+Connection\+In\+U\+Draw\+Graph\+Format}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string mts\+Component\+Viewer\+::\+Get\+Connection\+In\+U\+Draw\+Graph\+Format (
+\begin{DoxyParamCaption}
+\item[{const mts\+Description\+Connection \&}]{connection}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_component_viewer_a3f1d129888db918924b042da0d84eebd}
+\hypertarget{classmts_component_viewer_a3c1f904308cac38bf80a506eece45e8f}{}\index{mts\+Component\+Viewer@{mts\+Component\+Viewer}!Get\+State\+In\+U\+Draw\+Graph\+Format@{Get\+State\+In\+U\+Draw\+Graph\+Format}}
+\index{Get\+State\+In\+U\+Draw\+Graph\+Format@{Get\+State\+In\+U\+Draw\+Graph\+Format}!mts\+Component\+Viewer@{mts\+Component\+Viewer}}
+\subsubsection[{Get\+State\+In\+U\+Draw\+Graph\+Format}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string mts\+Component\+Viewer\+::\+Get\+State\+In\+U\+Draw\+Graph\+Format (
+\begin{DoxyParamCaption}
+\item[{const mts\+Component\+State \&}]{component\+State}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_component_viewer_a3c1f904308cac38bf80a506eece45e8f}
+\hypertarget{classmts_component_viewer_a514501a010d6f9cde03032d7853cde39}{}\index{mts\+Component\+Viewer@{mts\+Component\+Viewer}!Parse\+Args@{Parse\+Args}}
+\index{Parse\+Args@{Parse\+Args}!mts\+Component\+Viewer@{mts\+Component\+Viewer}}
+\subsubsection[{Parse\+Args}]{\setlength{\rightskip}{0pt plus 5cm}static void mts\+Component\+Viewer\+::\+Parse\+Args (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{input, }
+\item[{std\+::string \&}]{arg1, }
+\item[{std\+::string \&}]{arg2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}\label{classmts_component_viewer_a514501a010d6f9cde03032d7853cde39}
+\hypertarget{classmts_component_viewer_aaaa3f74701e2fc95e7a26939dccee4b1}{}\index{mts\+Component\+Viewer@{mts\+Component\+Viewer}!Parse\+Process\+And\+Component@{Parse\+Process\+And\+Component}}
+\index{Parse\+Process\+And\+Component@{Parse\+Process\+And\+Component}!mts\+Component\+Viewer@{mts\+Component\+Viewer}}
+\subsubsection[{Parse\+Process\+And\+Component}]{\setlength{\rightskip}{0pt plus 5cm}static bool mts\+Component\+Viewer\+::\+Parse\+Process\+And\+Component (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{input, }
+\item[{std\+::string \&}]{process\+Name, }
+\item[{std\+::string \&}]{component\+Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}\label{classmts_component_viewer_aaaa3f74701e2fc95e7a26939dccee4b1}
+\hypertarget{classmts_component_viewer_a5adcc3b205fdb2d3b391929222137457}{}\index{mts\+Component\+Viewer@{mts\+Component\+Viewer}!Process\+Response@{Process\+Response}}
+\index{Process\+Response@{Process\+Response}!mts\+Component\+Viewer@{mts\+Component\+Viewer}}
+\subsubsection[{Process\+Response}]{\setlength{\rightskip}{0pt plus 5cm}virtual void mts\+Component\+Viewer\+::\+Process\+Response (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classmts_component_viewer_a5adcc3b205fdb2d3b391929222137457}
+\hypertarget{classmts_component_viewer_aa5dd9cbc4a1d8408158e88311d3b447b}{}\index{mts\+Component\+Viewer@{mts\+Component\+Viewer}!Read\+From\+U\+Draw\+Graph@{Read\+From\+U\+Draw\+Graph}}
+\index{Read\+From\+U\+Draw\+Graph@{Read\+From\+U\+Draw\+Graph}!mts\+Component\+Viewer@{mts\+Component\+Viewer}}
+\subsubsection[{Read\+From\+U\+Draw\+Graph}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ mts\+Component\+Viewer\+::\+Read\+From\+U\+Draw\+Graph (
+\begin{DoxyParamCaption}
+\item[{int}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_component_viewer_aa5dd9cbc4a1d8408158e88311d3b447b}
+\hypertarget{classmts_component_viewer_a8ccf7105c4fa2b28f3f38fe9ea671806}{}\index{mts\+Component\+Viewer@{mts\+Component\+Viewer}!Remove\+Connection\+Handler@{Remove\+Connection\+Handler}}
+\index{Remove\+Connection\+Handler@{Remove\+Connection\+Handler}!mts\+Component\+Viewer@{mts\+Component\+Viewer}}
+\subsubsection[{Remove\+Connection\+Handler}]{\setlength{\rightskip}{0pt plus 5cm}virtual void mts\+Component\+Viewer\+::\+Remove\+Connection\+Handler (
+\begin{DoxyParamCaption}
+\item[{const mts\+Description\+Connection \&}]{connection\+Info}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classmts_component_viewer_a8ccf7105c4fa2b28f3f38fe9ea671806}
+\hypertarget{classmts_component_viewer_a4c3d8d11e6e2f187c1b8fdaef3b3c561}{}\index{mts\+Component\+Viewer@{mts\+Component\+Viewer}!Run@{Run}}
+\index{Run@{Run}!mts\+Component\+Viewer@{mts\+Component\+Viewer}}
+\subsubsection[{Run}]{\setlength{\rightskip}{0pt plus 5cm}virtual void mts\+Component\+Viewer\+::\+Run (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_component_viewer_a4c3d8d11e6e2f187c1b8fdaef3b3c561}
+Pure virtual method that gets overloaded to run the actual task. 
+
+Implements \hyperlink{classmts_task_a20e18c9479cb650792456c32ee689834}{mts\+Task}.
+
+\hypertarget{classmts_component_viewer_adce96720fed764a7fc1cc9598c74b524}{}\index{mts\+Component\+Viewer@{mts\+Component\+Viewer}!Send\+All\+Info@{Send\+All\+Info}}
+\index{Send\+All\+Info@{Send\+All\+Info}!mts\+Component\+Viewer@{mts\+Component\+Viewer}}
+\subsubsection[{Send\+All\+Info}]{\setlength{\rightskip}{0pt plus 5cm}virtual void mts\+Component\+Viewer\+::\+Send\+All\+Info (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classmts_component_viewer_adce96720fed764a7fc1cc9598c74b524}
+\hypertarget{classmts_component_viewer_a425bc56d337aca711e8834126939762a}{}\index{mts\+Component\+Viewer@{mts\+Component\+Viewer}!Startup@{Startup}}
+\index{Startup@{Startup}!mts\+Component\+Viewer@{mts\+Component\+Viewer}}
+\subsubsection[{Startup}]{\setlength{\rightskip}{0pt plus 5cm}virtual void mts\+Component\+Viewer\+::\+Startup (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_component_viewer_a425bc56d337aca711e8834126939762a}
+Virtual method that gets overloaded, and is run before the component is started. 
+
+Reimplemented from \hyperlink{classmts_component_aaf28f0262b44eb6866e10089a02fa6e4}{mts\+Component}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classmts_component_viewer_ab4e2905d1679386f9a8d15d0bcaaf996}{}\index{mts\+Component\+Viewer@{mts\+Component\+Viewer}!Connection\+Request@{Connection\+Request}}
+\index{Connection\+Request@{Connection\+Request}!mts\+Component\+Viewer@{mts\+Component\+Viewer}}
+\subsubsection[{Connection\+Request}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Description\+Connection mts\+Component\+Viewer\+::\+Connection\+Request\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_component_viewer_ab4e2905d1679386f9a8d15d0bcaaf996}
+\hypertarget{classmts_component_viewer_aa6617f20137e55bf8fe983d8587a22d2}{}\index{mts\+Component\+Viewer@{mts\+Component\+Viewer}!Connection\+Started@{Connection\+Started}}
+\index{Connection\+Started@{Connection\+Started}!mts\+Component\+Viewer@{mts\+Component\+Viewer}}
+\subsubsection[{Connection\+Started}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Component\+Viewer\+::\+Connection\+Started\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_component_viewer_aa6617f20137e55bf8fe983d8587a22d2}
+\hypertarget{classmts_component_viewer_a5b608706d9dec221cd4ca599a165fec7}{}\index{mts\+Component\+Viewer@{mts\+Component\+Viewer}!Reader\+Thread@{Reader\+Thread}}
+\index{Reader\+Thread@{Reader\+Thread}!mts\+Component\+Viewer@{mts\+Component\+Viewer}}
+\subsubsection[{Reader\+Thread}]{\setlength{\rightskip}{0pt plus 5cm}{\bf osa\+Thread} mts\+Component\+Viewer\+::\+Reader\+Thread\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_component_viewer_a5b608706d9dec221cd4ca599a165fec7}
+\hypertarget{classmts_component_viewer_ab5cfa733f00890d5ee7ef44eac6624cf}{}\index{mts\+Component\+Viewer@{mts\+Component\+Viewer}!Reader\+Thread\+Finished@{Reader\+Thread\+Finished}}
+\index{Reader\+Thread\+Finished@{Reader\+Thread\+Finished}!mts\+Component\+Viewer@{mts\+Component\+Viewer}}
+\subsubsection[{Reader\+Thread\+Finished}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Component\+Viewer\+::\+Reader\+Thread\+Finished\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_component_viewer_ab5cfa733f00890d5ee7ef44eac6624cf}
+\hypertarget{classmts_component_viewer_a2b172a1000cad46b886f92073ca3a650}{}\index{mts\+Component\+Viewer@{mts\+Component\+Viewer}!Ready\+To\+Read@{Ready\+To\+Read}}
+\index{Ready\+To\+Read@{Ready\+To\+Read}!mts\+Component\+Viewer@{mts\+Component\+Viewer}}
+\subsubsection[{Ready\+To\+Read}]{\setlength{\rightskip}{0pt plus 5cm}{\bf osa\+Thread\+Signal} mts\+Component\+Viewer\+::\+Ready\+To\+Read\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_component_viewer_a2b172a1000cad46b886f92073ca3a650}
+\hypertarget{classmts_component_viewer_a3e3249972f2cd16f18ea84aa0df92218}{}\index{mts\+Component\+Viewer@{mts\+Component\+Viewer}!Show\+Proxies@{Show\+Proxies}}
+\index{Show\+Proxies@{Show\+Proxies}!mts\+Component\+Viewer@{mts\+Component\+Viewer}}
+\subsubsection[{Show\+Proxies}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Component\+Viewer\+::\+Show\+Proxies\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_component_viewer_a3e3249972f2cd16f18ea84aa0df92218}
+\hypertarget{classmts_component_viewer_a4f2747dc20890be285fa6b031516c6dc}{}\index{mts\+Component\+Viewer@{mts\+Component\+Viewer}!U\+Draw\+Pipe@{U\+Draw\+Pipe}}
+\index{U\+Draw\+Pipe@{U\+Draw\+Pipe}!mts\+Component\+Viewer@{mts\+Component\+Viewer}}
+\subsubsection[{U\+Draw\+Pipe}]{\setlength{\rightskip}{0pt plus 5cm}{\bf osa\+Pipe\+Exec} mts\+Component\+Viewer\+::\+U\+Draw\+Pipe\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_component_viewer_a4f2747dc20890be285fa6b031516c6dc}
+\hypertarget{classmts_component_viewer_a7590f5f827427231d8fe2bd813feb22e}{}\index{mts\+Component\+Viewer@{mts\+Component\+Viewer}!U\+Draw\+Pipe\+Connected@{U\+Draw\+Pipe\+Connected}}
+\index{U\+Draw\+Pipe\+Connected@{U\+Draw\+Pipe\+Connected}!mts\+Component\+Viewer@{mts\+Component\+Viewer}}
+\subsubsection[{U\+Draw\+Pipe\+Connected}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Component\+Viewer\+::\+U\+Draw\+Pipe\+Connected\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_component_viewer_a7590f5f827427231d8fe2bd813feb22e}
+\hypertarget{classmts_component_viewer_acae080559e0ab6cbb24070743348d9aa}{}\index{mts\+Component\+Viewer@{mts\+Component\+Viewer}!U\+Draw\+Response@{U\+Draw\+Response}}
+\index{U\+Draw\+Response@{U\+Draw\+Response}!mts\+Component\+Viewer@{mts\+Component\+Viewer}}
+\subsubsection[{U\+Draw\+Response}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string mts\+Component\+Viewer\+::\+U\+Draw\+Response\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_component_viewer_acae080559e0ab6cbb24070743348d9aa}
+\hypertarget{classmts_component_viewer_ad0d7132119ce154a8e7b646153ae0cc0}{}\index{mts\+Component\+Viewer@{mts\+Component\+Viewer}!Waiting\+For\+Response@{Waiting\+For\+Response}}
+\index{Waiting\+For\+Response@{Waiting\+For\+Response}!mts\+Component\+Viewer@{mts\+Component\+Viewer}}
+\subsubsection[{Waiting\+For\+Response}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Component\+Viewer\+::\+Waiting\+For\+Response\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_component_viewer_ad0d7132119ce154a8e7b646153ae0cc0}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Multi\+Task/\hyperlink{mts_component_viewer_8h}{mts\+Component\+Viewer.\+h}\end{DoxyCompactItemize}

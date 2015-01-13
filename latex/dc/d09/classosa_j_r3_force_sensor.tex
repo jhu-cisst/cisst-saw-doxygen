@@ -1,0 +1,318 @@
+\hypertarget{classosa_j_r3_force_sensor}{}\section{osa\+J\+R3\+Force\+Sensor Class Reference}
+\label{classosa_j_r3_force_sensor}\index{osa\+J\+R3\+Force\+Sensor@{osa\+J\+R3\+Force\+Sensor}}
+
+
+{\ttfamily \#include $<$osa\+J\+R3\+Force\+Sensor.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classosa_j_r3_force_sensor_a6b27d3a601fae1547fb13d2a4ef97e4a}{Errno} \{ \hyperlink{classosa_j_r3_force_sensor_a6b27d3a601fae1547fb13d2a4ef97e4aa003231bdd29312cc03b4c91a8688201c}{E\+S\+U\+C\+C\+E\+S\+S}, 
+\hyperlink{classosa_j_r3_force_sensor_a6b27d3a601fae1547fb13d2a4ef97e4aaa68c1cf87ef1d6c95b7603f393187218}{E\+F\+A\+I\+L\+U\+R\+E}
+ \}
+\item 
+enum \hyperlink{classosa_j_r3_force_sensor_ac94f1969d4d2089487b912dd0ef7592f}{Units} \{ \hyperlink{classosa_j_r3_force_sensor_ac94f1969d4d2089487b912dd0ef7592faf9d1cb83e02904b93520796fff2d9161}{M\+E\+T\+R\+I\+C}
+ \}
+\item 
+typedef \hyperlink{classvct_fixed_size_vector}{vct\+Fixed\+Size\+Vector}$<$ double, 6 $>$ \hyperlink{classosa_j_r3_force_sensor_afcfc2ba175b2e7ef9f86c6394c8966d2}{Wrench}
+\item 
+typedef \hyperlink{classvct_fixed_size_matrix}{vct\+Fixed\+Size\+Matrix}$<$ double, 6, 6 $>$ \hyperlink{classosa_j_r3_force_sensor_af769666ad69e4db31c2891ddf67d2abd}{vct\+Adjoint}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classosa_j_r3_force_sensor_adc56ae890dde03da65343e7b8618b75b}{osa\+J\+R3\+Force\+Sensor} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{classosa_j_r3_force_sensor_ad076a77e94576d3946147709a0d2b28f}{osa\+J\+R3\+Force\+Sensor} (const std\+::string \&name, \hyperlink{classosa_j_r3_force_sensor_ac94f1969d4d2089487b912dd0ef7592f}{Units} u=\hyperlink{classosa_j_r3_force_sensor_ac94f1969d4d2089487b912dd0ef7592faf9d1cb83e02904b93520796fff2d9161}{M\+E\+T\+R\+I\+C}, const \hyperlink{classosa_j_r3_force_sensor_afcfc2ba175b2e7ef9f86c6394c8966d2}{osa\+J\+R3\+Force\+Sensor\+::\+Wrench} \&bias=\hyperlink{classosa_j_r3_force_sensor_afcfc2ba175b2e7ef9f86c6394c8966d2}{Wrench}(0.\+0), const \hyperlink{classvct_frame4x4}{vct\+Frame4x4}$<$ double $>$ \&Rtst=\hyperlink{classvct_frame4x4}{vct\+Frame4x4}$<$ double $>$(), double mass=0.\+0, const \hyperlink{classvct_fixed_size_vector}{vct\+Fixed\+Size\+Vector}$<$ double, 3 $>$ \&com=\hyperlink{classvct_fixed_size_vector}{vct\+Fixed\+Size\+Vector}$<$ double, 3 $>$(0.\+0))
+\begin{DoxyCompactList}\small\item\em Constructors. \end{DoxyCompactList}\item 
+\hyperlink{classosa_j_r3_force_sensor_abf994dcb084fab254ebe1bd5e90660dc}{$\sim$osa\+J\+R3\+Force\+Sensor} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\hyperlink{classosa_j_r3_force_sensor_a6b27d3a601fae1547fb13d2a4ef97e4a}{osa\+J\+R3\+Force\+Sensor\+::\+Errno} \hyperlink{classosa_j_r3_force_sensor_a87d5fcf202b615b380fc2ca07377b447}{Open} ()
+\begin{DoxyCompactList}\small\item\em Open. \end{DoxyCompactList}\item 
+\hyperlink{classosa_j_r3_force_sensor_a6b27d3a601fae1547fb13d2a4ef97e4a}{osa\+J\+R3\+Force\+Sensor\+::\+Errno} \hyperlink{classosa_j_r3_force_sensor_a90e05e652d0cff51df2d065b28eb4d70}{Close} ()
+\begin{DoxyCompactList}\small\item\em Close. \end{DoxyCompactList}\item 
+\hyperlink{classosa_j_r3_force_sensor_a6b27d3a601fae1547fb13d2a4ef97e4a}{osa\+J\+R3\+Force\+Sensor\+::\+Errno} \hyperlink{classosa_j_r3_force_sensor_a8041232529b96e4e6c14a8d342767e12}{Read} (\hyperlink{classosa_j_r3_force_sensor_afcfc2ba175b2e7ef9f86c6394c8966d2}{osa\+J\+R3\+Force\+Sensor\+::\+Wrench} \&wrench, const \hyperlink{classvct_matrix_rotation3}{vct\+Matrix\+Rotation3}$<$ double $>$ \&R, bool transform=true, int filter\+Id=0) const 
+\begin{DoxyCompactList}\small\item\em Read with tool compenstation. \end{DoxyCompactList}\item 
+\hyperlink{classosa_j_r3_force_sensor_a6b27d3a601fae1547fb13d2a4ef97e4a}{osa\+J\+R3\+Force\+Sensor\+::\+Errno} \hyperlink{classosa_j_r3_force_sensor_a8069da1821ef785d814e23fada35de30}{Read} (\hyperlink{classosa_j_r3_force_sensor_afcfc2ba175b2e7ef9f86c6394c8966d2}{osa\+J\+R3\+Force\+Sensor\+::\+Wrench} \&wrench, bool transform=true, int filter\+Id=0) const 
+\begin{DoxyCompactList}\small\item\em Read without tool compenstation. \end{DoxyCompactList}\item 
+void \hyperlink{classosa_j_r3_force_sensor_ad80028c63a3b07cb6fea44cc69807f57}{Set\+Mass} (double m)
+\begin{DoxyCompactList}\small\item\em Set tool mass. \end{DoxyCompactList}\item 
+void \hyperlink{classosa_j_r3_force_sensor_adcd3aac623182a94868d24c93a7b3354}{Set\+C\+O\+M} (const \hyperlink{classvct_fixed_size_vector}{vct\+Fixed\+Size\+Vector}$<$ double, 3 $>$ \&xyz)
+\begin{DoxyCompactList}\small\item\em Set tool center of mass. \end{DoxyCompactList}\item 
+void \hyperlink{classosa_j_r3_force_sensor_a88981a59351ff9f5f17d14e489b0ed04}{Set\+Bias} (const \hyperlink{classosa_j_r3_force_sensor_afcfc2ba175b2e7ef9f86c6394c8966d2}{Wrench} \&vw)
+\begin{DoxyCompactList}\small\item\em Set bias. \end{DoxyCompactList}\item 
+void \hyperlink{classosa_j_r3_force_sensor_aaaca311243f3906a23acfa1422981a71}{Zero} (const \hyperlink{classvct_frame4x4}{vct\+Frame4x4}$<$ double $>$ \&Rtws)
+\begin{DoxyCompactList}\small\item\em Set bias. \end{DoxyCompactList}\item 
+void \hyperlink{classosa_j_r3_force_sensor_a91ce3f4e0c5b2a8293abf85a7e75afbd}{Set\+Transform} (const \hyperlink{classvct_frame4x4}{vct\+Frame4x4}$<$ double $>$ \&Rt)
+\begin{DoxyCompactList}\small\item\em Set frame transformation. \end{DoxyCompactList}\item 
+\hyperlink{classosa_j_r3_force_sensor_afcfc2ba175b2e7ef9f86c6394c8966d2}{Wrench} \hyperlink{classosa_j_r3_force_sensor_aa76b7cf966facceaa220f46bd7c71265}{U\+S2\+S\+I} (const \hyperlink{classosa_j_r3_force_sensor_afcfc2ba175b2e7ef9f86c6394c8966d2}{Wrench} \&wus) const 
+\begin{DoxyCompactList}\small\item\em Convert U\+S to S\+I. \end{DoxyCompactList}\item 
+\hyperlink{classosa_j_r3_force_sensor_afcfc2ba175b2e7ef9f86c6394c8966d2}{Wrench} \hyperlink{classosa_j_r3_force_sensor_a25e6c9de5e0e7c948dea2bc0d2a0231e}{Compensate\+Tool\+Mass} (const \hyperlink{classvct_matrix_rotation3}{vct\+Matrix\+Rotation3}$<$ double $>$ \&R) const 
+\begin{DoxyCompactList}\small\item\em Compensate for tool mass. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classosa_j_r3_force_sensor_af769666ad69e4db31c2891ddf67d2abd}{vct\+Adjoint} \hyperlink{classosa_j_r3_force_sensor_ab8639c1152c6002572eb8339c045982d}{Adjoint} (const \hyperlink{classvct_frame4x4}{vct\+Frame4x4}$<$ double $>$ \&Rt)
+\begin{DoxyCompactList}\small\item\em Compute adjoint matrix of Rt. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classosa_j_r3_force_sensor_af769666ad69e4db31c2891ddf67d2abd}{}\index{osa\+J\+R3\+Force\+Sensor@{osa\+J\+R3\+Force\+Sensor}!vct\+Adjoint@{vct\+Adjoint}}
+\index{vct\+Adjoint@{vct\+Adjoint}!osa\+J\+R3\+Force\+Sensor@{osa\+J\+R3\+Force\+Sensor}}
+\subsubsection[{vct\+Adjoint}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf vct\+Fixed\+Size\+Matrix}$<$ double, 6, 6 $>$ {\bf osa\+J\+R3\+Force\+Sensor\+::vct\+Adjoint}}\label{classosa_j_r3_force_sensor_af769666ad69e4db31c2891ddf67d2abd}
+\hypertarget{classosa_j_r3_force_sensor_afcfc2ba175b2e7ef9f86c6394c8966d2}{}\index{osa\+J\+R3\+Force\+Sensor@{osa\+J\+R3\+Force\+Sensor}!Wrench@{Wrench}}
+\index{Wrench@{Wrench}!osa\+J\+R3\+Force\+Sensor@{osa\+J\+R3\+Force\+Sensor}}
+\subsubsection[{Wrench}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf vct\+Fixed\+Size\+Vector}$<$ double, 6 $>$ {\bf osa\+J\+R3\+Force\+Sensor\+::\+Wrench}}\label{classosa_j_r3_force_sensor_afcfc2ba175b2e7ef9f86c6394c8966d2}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classosa_j_r3_force_sensor_a6b27d3a601fae1547fb13d2a4ef97e4a}{}\index{osa\+J\+R3\+Force\+Sensor@{osa\+J\+R3\+Force\+Sensor}!Errno@{Errno}}
+\index{Errno@{Errno}!osa\+J\+R3\+Force\+Sensor@{osa\+J\+R3\+Force\+Sensor}}
+\subsubsection[{Errno}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf osa\+J\+R3\+Force\+Sensor\+::\+Errno}}\label{classosa_j_r3_force_sensor_a6b27d3a601fae1547fb13d2a4ef97e4a}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{E\+S\+U\+C\+C\+E\+S\+S@{E\+S\+U\+C\+C\+E\+S\+S}!osa\+J\+R3\+Force\+Sensor@{osa\+J\+R3\+Force\+Sensor}}\index{osa\+J\+R3\+Force\+Sensor@{osa\+J\+R3\+Force\+Sensor}!E\+S\+U\+C\+C\+E\+S\+S@{E\+S\+U\+C\+C\+E\+S\+S}}\item[{\em 
+\hypertarget{classosa_j_r3_force_sensor_a6b27d3a601fae1547fb13d2a4ef97e4aa003231bdd29312cc03b4c91a8688201c}{}E\+S\+U\+C\+C\+E\+S\+S\label{classosa_j_r3_force_sensor_a6b27d3a601fae1547fb13d2a4ef97e4aa003231bdd29312cc03b4c91a8688201c}
+}]\index{E\+F\+A\+I\+L\+U\+R\+E@{E\+F\+A\+I\+L\+U\+R\+E}!osa\+J\+R3\+Force\+Sensor@{osa\+J\+R3\+Force\+Sensor}}\index{osa\+J\+R3\+Force\+Sensor@{osa\+J\+R3\+Force\+Sensor}!E\+F\+A\+I\+L\+U\+R\+E@{E\+F\+A\+I\+L\+U\+R\+E}}\item[{\em 
+\hypertarget{classosa_j_r3_force_sensor_a6b27d3a601fae1547fb13d2a4ef97e4aaa68c1cf87ef1d6c95b7603f393187218}{}E\+F\+A\+I\+L\+U\+R\+E\label{classosa_j_r3_force_sensor_a6b27d3a601fae1547fb13d2a4ef97e4aaa68c1cf87ef1d6c95b7603f393187218}
+}]\end{description}
+\end{Desc}
+\hypertarget{classosa_j_r3_force_sensor_ac94f1969d4d2089487b912dd0ef7592f}{}\index{osa\+J\+R3\+Force\+Sensor@{osa\+J\+R3\+Force\+Sensor}!Units@{Units}}
+\index{Units@{Units}!osa\+J\+R3\+Force\+Sensor@{osa\+J\+R3\+Force\+Sensor}}
+\subsubsection[{Units}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf osa\+J\+R3\+Force\+Sensor\+::\+Units}}\label{classosa_j_r3_force_sensor_ac94f1969d4d2089487b912dd0ef7592f}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{M\+E\+T\+R\+I\+C@{M\+E\+T\+R\+I\+C}!osa\+J\+R3\+Force\+Sensor@{osa\+J\+R3\+Force\+Sensor}}\index{osa\+J\+R3\+Force\+Sensor@{osa\+J\+R3\+Force\+Sensor}!M\+E\+T\+R\+I\+C@{M\+E\+T\+R\+I\+C}}\item[{\em 
+\hypertarget{classosa_j_r3_force_sensor_ac94f1969d4d2089487b912dd0ef7592faf9d1cb83e02904b93520796fff2d9161}{}M\+E\+T\+R\+I\+C\label{classosa_j_r3_force_sensor_ac94f1969d4d2089487b912dd0ef7592faf9d1cb83e02904b93520796fff2d9161}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classosa_j_r3_force_sensor_adc56ae890dde03da65343e7b8618b75b}{}\index{osa\+J\+R3\+Force\+Sensor@{osa\+J\+R3\+Force\+Sensor}!osa\+J\+R3\+Force\+Sensor@{osa\+J\+R3\+Force\+Sensor}}
+\index{osa\+J\+R3\+Force\+Sensor@{osa\+J\+R3\+Force\+Sensor}!osa\+J\+R3\+Force\+Sensor@{osa\+J\+R3\+Force\+Sensor}}
+\subsubsection[{osa\+J\+R3\+Force\+Sensor}]{\setlength{\rightskip}{0pt plus 5cm}osa\+J\+R3\+Force\+Sensor\+::osa\+J\+R3\+Force\+Sensor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classosa_j_r3_force_sensor_adc56ae890dde03da65343e7b8618b75b}
+
+
+Default constructor. 
+
+\hypertarget{classosa_j_r3_force_sensor_ad076a77e94576d3946147709a0d2b28f}{}\index{osa\+J\+R3\+Force\+Sensor@{osa\+J\+R3\+Force\+Sensor}!osa\+J\+R3\+Force\+Sensor@{osa\+J\+R3\+Force\+Sensor}}
+\index{osa\+J\+R3\+Force\+Sensor@{osa\+J\+R3\+Force\+Sensor}!osa\+J\+R3\+Force\+Sensor@{osa\+J\+R3\+Force\+Sensor}}
+\subsubsection[{osa\+J\+R3\+Force\+Sensor}]{\setlength{\rightskip}{0pt plus 5cm}osa\+J\+R3\+Force\+Sensor\+::osa\+J\+R3\+Force\+Sensor (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name, }
+\item[{{\bf Units}}]{u = {\ttfamily {\bf M\+E\+T\+R\+I\+C}}, }
+\item[{const {\bf osa\+J\+R3\+Force\+Sensor\+::\+Wrench} \&}]{bias = {\ttfamily {\bf Wrench}(0.0)}, }
+\item[{const {\bf vct\+Frame4x4}$<$ double $>$ \&}]{Rtst = {\ttfamily {\bf vct\+Frame4x4}$<$~double~$>$()}, }
+\item[{double}]{mass = {\ttfamily 0.0}, }
+\item[{const {\bf vct\+Fixed\+Size\+Vector}$<$ double, 3 $>$ \&}]{com = {\ttfamily {\bf vct\+Fixed\+Size\+Vector}$<$~double,~3~$>$(0.0)}}
+\end{DoxyParamCaption}
+)}\label{classosa_j_r3_force_sensor_ad076a77e94576d3946147709a0d2b28f}
+
+
+Constructors. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & device name e.\+g. /dev/comedi0 \\
+\hline
+{\em u} & unit standard, default metric \\
+\hline
+{\em bias} & bias wrenchw \\
+\hline
+{\em Rtst} & \\
+\hline
+{\em mass} & tool mass \\
+\hline
+{\em com} & tool center of mass \\
+\hline
+\end{DoxyParams}
+\hypertarget{classosa_j_r3_force_sensor_abf994dcb084fab254ebe1bd5e90660dc}{}\index{osa\+J\+R3\+Force\+Sensor@{osa\+J\+R3\+Force\+Sensor}!````~osa\+J\+R3\+Force\+Sensor@{$\sim$osa\+J\+R3\+Force\+Sensor}}
+\index{````~osa\+J\+R3\+Force\+Sensor@{$\sim$osa\+J\+R3\+Force\+Sensor}!osa\+J\+R3\+Force\+Sensor@{osa\+J\+R3\+Force\+Sensor}}
+\subsubsection[{$\sim$osa\+J\+R3\+Force\+Sensor}]{\setlength{\rightskip}{0pt plus 5cm}osa\+J\+R3\+Force\+Sensor\+::$\sim$osa\+J\+R3\+Force\+Sensor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classosa_j_r3_force_sensor_abf994dcb084fab254ebe1bd5e90660dc}
+
+
+Destructor. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classosa_j_r3_force_sensor_ab8639c1152c6002572eb8339c045982d}{}\index{osa\+J\+R3\+Force\+Sensor@{osa\+J\+R3\+Force\+Sensor}!Adjoint@{Adjoint}}
+\index{Adjoint@{Adjoint}!osa\+J\+R3\+Force\+Sensor@{osa\+J\+R3\+Force\+Sensor}}
+\subsubsection[{Adjoint}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf vct\+Adjoint} osa\+J\+R3\+Force\+Sensor\+::\+Adjoint (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Frame4x4}$<$ double $>$ \&}]{Rt}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classosa_j_r3_force_sensor_ab8639c1152c6002572eb8339c045982d}
+
+
+Compute adjoint matrix of Rt. 
+
+\hypertarget{classosa_j_r3_force_sensor_a90e05e652d0cff51df2d065b28eb4d70}{}\index{osa\+J\+R3\+Force\+Sensor@{osa\+J\+R3\+Force\+Sensor}!Close@{Close}}
+\index{Close@{Close}!osa\+J\+R3\+Force\+Sensor@{osa\+J\+R3\+Force\+Sensor}}
+\subsubsection[{Close}]{\setlength{\rightskip}{0pt plus 5cm}{\bf osa\+J\+R3\+Force\+Sensor\+::\+Errno} osa\+J\+R3\+Force\+Sensor\+::\+Close (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classosa_j_r3_force_sensor_a90e05e652d0cff51df2d065b28eb4d70}
+
+
+Close. 
+
+\hypertarget{classosa_j_r3_force_sensor_a25e6c9de5e0e7c948dea2bc0d2a0231e}{}\index{osa\+J\+R3\+Force\+Sensor@{osa\+J\+R3\+Force\+Sensor}!Compensate\+Tool\+Mass@{Compensate\+Tool\+Mass}}
+\index{Compensate\+Tool\+Mass@{Compensate\+Tool\+Mass}!osa\+J\+R3\+Force\+Sensor@{osa\+J\+R3\+Force\+Sensor}}
+\subsubsection[{Compensate\+Tool\+Mass}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Wrench} osa\+J\+R3\+Force\+Sensor\+::\+Compensate\+Tool\+Mass (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Matrix\+Rotation3}$<$ double $>$ \&}]{R}
+\end{DoxyParamCaption}
+) const}\label{classosa_j_r3_force_sensor_a25e6c9de5e0e7c948dea2bc0d2a0231e}
+
+
+Compensate for tool mass. 
+
+\hypertarget{classosa_j_r3_force_sensor_a87d5fcf202b615b380fc2ca07377b447}{}\index{osa\+J\+R3\+Force\+Sensor@{osa\+J\+R3\+Force\+Sensor}!Open@{Open}}
+\index{Open@{Open}!osa\+J\+R3\+Force\+Sensor@{osa\+J\+R3\+Force\+Sensor}}
+\subsubsection[{Open}]{\setlength{\rightskip}{0pt plus 5cm}{\bf osa\+J\+R3\+Force\+Sensor\+::\+Errno} osa\+J\+R3\+Force\+Sensor\+::\+Open (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classosa_j_r3_force_sensor_a87d5fcf202b615b380fc2ca07377b447}
+
+
+Open. 
+
+\hypertarget{classosa_j_r3_force_sensor_a8041232529b96e4e6c14a8d342767e12}{}\index{osa\+J\+R3\+Force\+Sensor@{osa\+J\+R3\+Force\+Sensor}!Read@{Read}}
+\index{Read@{Read}!osa\+J\+R3\+Force\+Sensor@{osa\+J\+R3\+Force\+Sensor}}
+\subsubsection[{Read}]{\setlength{\rightskip}{0pt plus 5cm}{\bf osa\+J\+R3\+Force\+Sensor\+::\+Errno} osa\+J\+R3\+Force\+Sensor\+::\+Read (
+\begin{DoxyParamCaption}
+\item[{{\bf osa\+J\+R3\+Force\+Sensor\+::\+Wrench} \&}]{wrench, }
+\item[{const {\bf vct\+Matrix\+Rotation3}$<$ double $>$ \&}]{R, }
+\item[{bool}]{transform = {\ttfamily true}, }
+\item[{int}]{filter\+Id = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const}\label{classosa_j_r3_force_sensor_a8041232529b96e4e6c14a8d342767e12}
+
+
+Read with tool compenstation. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em wrench} & wrench data from sensor \\
+\hline
+ & {\em R} & tool orientation \\
+\hline
+ & {\em transform} & tranform wrench data to tip if set to true \\
+\hline
+ & {\em filter\+Id} & comedi filter I\+D \\
+\hline
+\end{DoxyParams}
+\hypertarget{classosa_j_r3_force_sensor_a8069da1821ef785d814e23fada35de30}{}\index{osa\+J\+R3\+Force\+Sensor@{osa\+J\+R3\+Force\+Sensor}!Read@{Read}}
+\index{Read@{Read}!osa\+J\+R3\+Force\+Sensor@{osa\+J\+R3\+Force\+Sensor}}
+\subsubsection[{Read}]{\setlength{\rightskip}{0pt plus 5cm}{\bf osa\+J\+R3\+Force\+Sensor\+::\+Errno} osa\+J\+R3\+Force\+Sensor\+::\+Read (
+\begin{DoxyParamCaption}
+\item[{{\bf osa\+J\+R3\+Force\+Sensor\+::\+Wrench} \&}]{wrench, }
+\item[{bool}]{transform = {\ttfamily true}, }
+\item[{int}]{filter\+Id = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const}\label{classosa_j_r3_force_sensor_a8069da1821ef785d814e23fada35de30}
+
+
+Read without tool compenstation. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em wrench} & wrench data from sensor \\
+\hline
+ & {\em transform} & tranform wrench data to tip if set to true \\
+\hline
+ & {\em filter\+Id} & comedi filter I\+D \\
+\hline
+\end{DoxyParams}
+\hypertarget{classosa_j_r3_force_sensor_a88981a59351ff9f5f17d14e489b0ed04}{}\index{osa\+J\+R3\+Force\+Sensor@{osa\+J\+R3\+Force\+Sensor}!Set\+Bias@{Set\+Bias}}
+\index{Set\+Bias@{Set\+Bias}!osa\+J\+R3\+Force\+Sensor@{osa\+J\+R3\+Force\+Sensor}}
+\subsubsection[{Set\+Bias}]{\setlength{\rightskip}{0pt plus 5cm}void osa\+J\+R3\+Force\+Sensor\+::\+Set\+Bias (
+\begin{DoxyParamCaption}
+\item[{const {\bf Wrench} \&}]{vw}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classosa_j_r3_force_sensor_a88981a59351ff9f5f17d14e489b0ed04}
+
+
+Set bias. 
+
+\hypertarget{classosa_j_r3_force_sensor_adcd3aac623182a94868d24c93a7b3354}{}\index{osa\+J\+R3\+Force\+Sensor@{osa\+J\+R3\+Force\+Sensor}!Set\+C\+O\+M@{Set\+C\+O\+M}}
+\index{Set\+C\+O\+M@{Set\+C\+O\+M}!osa\+J\+R3\+Force\+Sensor@{osa\+J\+R3\+Force\+Sensor}}
+\subsubsection[{Set\+C\+O\+M}]{\setlength{\rightskip}{0pt plus 5cm}void osa\+J\+R3\+Force\+Sensor\+::\+Set\+C\+O\+M (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Fixed\+Size\+Vector}$<$ double, 3 $>$ \&}]{xyz}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classosa_j_r3_force_sensor_adcd3aac623182a94868d24c93a7b3354}
+
+
+Set tool center of mass. 
+
+\hypertarget{classosa_j_r3_force_sensor_ad80028c63a3b07cb6fea44cc69807f57}{}\index{osa\+J\+R3\+Force\+Sensor@{osa\+J\+R3\+Force\+Sensor}!Set\+Mass@{Set\+Mass}}
+\index{Set\+Mass@{Set\+Mass}!osa\+J\+R3\+Force\+Sensor@{osa\+J\+R3\+Force\+Sensor}}
+\subsubsection[{Set\+Mass}]{\setlength{\rightskip}{0pt plus 5cm}void osa\+J\+R3\+Force\+Sensor\+::\+Set\+Mass (
+\begin{DoxyParamCaption}
+\item[{double}]{m}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classosa_j_r3_force_sensor_ad80028c63a3b07cb6fea44cc69807f57}
+
+
+Set tool mass. 
+
+\hypertarget{classosa_j_r3_force_sensor_a91ce3f4e0c5b2a8293abf85a7e75afbd}{}\index{osa\+J\+R3\+Force\+Sensor@{osa\+J\+R3\+Force\+Sensor}!Set\+Transform@{Set\+Transform}}
+\index{Set\+Transform@{Set\+Transform}!osa\+J\+R3\+Force\+Sensor@{osa\+J\+R3\+Force\+Sensor}}
+\subsubsection[{Set\+Transform}]{\setlength{\rightskip}{0pt plus 5cm}void osa\+J\+R3\+Force\+Sensor\+::\+Set\+Transform (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Frame4x4}$<$ double $>$ \&}]{Rt}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classosa_j_r3_force_sensor_a91ce3f4e0c5b2a8293abf85a7e75afbd}
+
+
+Set frame transformation. 
+
+\hypertarget{classosa_j_r3_force_sensor_aa76b7cf966facceaa220f46bd7c71265}{}\index{osa\+J\+R3\+Force\+Sensor@{osa\+J\+R3\+Force\+Sensor}!U\+S2\+S\+I@{U\+S2\+S\+I}}
+\index{U\+S2\+S\+I@{U\+S2\+S\+I}!osa\+J\+R3\+Force\+Sensor@{osa\+J\+R3\+Force\+Sensor}}
+\subsubsection[{U\+S2\+S\+I}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Wrench} osa\+J\+R3\+Force\+Sensor\+::\+U\+S2\+S\+I (
+\begin{DoxyParamCaption}
+\item[{const {\bf Wrench} \&}]{wus}
+\end{DoxyParamCaption}
+) const}\label{classosa_j_r3_force_sensor_aa76b7cf966facceaa220f46bd7c71265}
+
+
+Convert U\+S to S\+I. 
+
+\hypertarget{classosa_j_r3_force_sensor_aaaca311243f3906a23acfa1422981a71}{}\index{osa\+J\+R3\+Force\+Sensor@{osa\+J\+R3\+Force\+Sensor}!Zero@{Zero}}
+\index{Zero@{Zero}!osa\+J\+R3\+Force\+Sensor@{osa\+J\+R3\+Force\+Sensor}}
+\subsubsection[{Zero}]{\setlength{\rightskip}{0pt plus 5cm}void osa\+J\+R3\+Force\+Sensor\+::\+Zero (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Frame4x4}$<$ double $>$ \&}]{Rtws}
+\end{DoxyParamCaption}
+)}\label{classosa_j_r3_force_sensor_aaaca311243f3906a23acfa1422981a71}
+
+
+Set bias. 
+
+This method computes bias wrench and updates bias value. It compensates tool mass, thus need tool transform.
+
+
+\begin{DoxyParams}{Parameters}
+{\em Rtws} & current tool transform \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/saw\+J\+R3\+Force\+Sensor/include/saw\+J\+R3\+Force\+Sensor/\hyperlink{osa_j_r3_force_sensor_8h}{osa\+J\+R3\+Force\+Sensor.\+h}\end{DoxyCompactItemize}

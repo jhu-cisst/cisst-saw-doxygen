@@ -1,0 +1,168 @@
+\hypertarget{classmts_intuitive_research_kit_console_1_1_arm}{}\section{mts\+Intuitive\+Research\+Kit\+Console\+:\+:Arm Class Reference}
+\label{classmts_intuitive_research_kit_console_1_1_arm}\index{mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm@{mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm}}
+
+
+{\ttfamily \#include $<$mts\+Intuitive\+Research\+Kit\+Console.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classmts_intuitive_research_kit_console_1_1_arm_acb898ba65d323f59ffd0885a47ef6cec}{Arm\+Type} \{ \\*
+\hyperlink{classmts_intuitive_research_kit_console_1_1_arm_acb898ba65d323f59ffd0885a47ef6ceca925a57962bd2e8f0d5c69149ede508c8}{A\+R\+M\+\_\+\+M\+T\+M}, 
+\hyperlink{classmts_intuitive_research_kit_console_1_1_arm_acb898ba65d323f59ffd0885a47ef6ceca209dc5ec65dd5a23a2792dea8d951daf}{A\+R\+M\+\_\+\+P\+S\+M}, 
+\hyperlink{classmts_intuitive_research_kit_console_1_1_arm_acb898ba65d323f59ffd0885a47ef6cecaf2778d3b94620ba8ca327ad7c04babd3}{A\+R\+M\+\_\+\+E\+C\+M}, 
+\hyperlink{classmts_intuitive_research_kit_console_1_1_arm_acb898ba65d323f59ffd0885a47ef6ceca6c2d93bfad70b962325393b347fa01dc}{A\+R\+M\+\_\+\+G\+E\+N\+E\+R\+I\+C\+\_\+\+M\+T\+M}, 
+\\*
+\hyperlink{classmts_intuitive_research_kit_console_1_1_arm_acb898ba65d323f59ffd0885a47ef6ceca522dcd62e40a468a089d7a884df12f90}{A\+R\+M\+\_\+\+G\+E\+N\+E\+R\+I\+C\+\_\+\+P\+S\+M}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmts_intuitive_research_kit_console_1_1_arm_a197d262a8567790b4e1fb1ffa453b1ea}{Arm} (const std\+::string \&name, const std\+::string \&io\+Component\+Name)
+\item 
+void \hyperlink{classmts_intuitive_research_kit_console_1_1_arm_a46e2678902e140a5cffdfda6257b8c5e}{Configure\+P\+I\+D} (const std\+::string \&config\+File, const double \&period\+In\+Seconds=0.\+0 $\ast$\hyperlink{cmn_units_8h_aaf4d3f2fafb9b4a95606544b9d876b4a}{cmn\+\_\+ms})
+\item 
+void \hyperlink{classmts_intuitive_research_kit_console_1_1_arm_a7e6830efb231e90cbbae68d294ba1a16}{Configure\+Arm} (const \hyperlink{classmts_intuitive_research_kit_console_1_1_arm_acb898ba65d323f59ffd0885a47ef6cec}{Arm\+Type} arm\+Type, const std\+::string \&config\+File, const double \&period\+In\+Seconds=0.\+0 $\ast$\hyperlink{cmn_units_8h_aaf4d3f2fafb9b4a95606544b9d876b4a}{cmn\+\_\+ms})
+\item 
+const std\+::string \& \hyperlink{classmts_intuitive_research_kit_console_1_1_arm_a23ae87d2f48b0d547537e9e1b38b4df6}{Name} (void) const 
+\item 
+const std\+::string \& \hyperlink{classmts_intuitive_research_kit_console_1_1_arm_ab148bb76eba17d89fabec9b472495e08}{I\+O\+Component\+Name} (void) const 
+\item 
+const std\+::string \& \hyperlink{classmts_intuitive_research_kit_console_1_1_arm_a2621f6e1b41173a0d76fcfeb0387f98c}{P\+I\+D\+Component\+Name} (void) const 
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{classmts_intuitive_research_kit_console_1_1_arm_a5693697a8b14ebd601b1d1ff18b22d94}{m\+Name}
+\item 
+std\+::string \hyperlink{classmts_intuitive_research_kit_console_1_1_arm_ac5010e0fdd71d2f87c123ef1931e3f62}{m\+I\+O\+Component\+Name}
+\item 
+std\+::string \hyperlink{classmts_intuitive_research_kit_console_1_1_arm_a14ea7da9b455d326f2458f4b27d062d0}{m\+I\+O\+Configuration\+File}
+\item 
+std\+::string \hyperlink{classmts_intuitive_research_kit_console_1_1_arm_a03dbe96c5a71a8ce46bb37177bf22351}{m\+P\+I\+D\+Component\+Name}
+\item 
+std\+::string \hyperlink{classmts_intuitive_research_kit_console_1_1_arm_a380c1811ecda360d324a14a3de57b4b8}{m\+P\+I\+D\+Configuration\+File}
+\item 
+std\+::string \hyperlink{classmts_intuitive_research_kit_console_1_1_arm_aa0d61e31bc02be631a22f052df1d7c69}{m\+Arm\+Configuration\+File}
+\item 
+\hyperlink{classmts_function_write}{mts\+Function\+Write} \hyperlink{classmts_intuitive_research_kit_console_1_1_arm_a84684b49b9b5a5773a6761d08086c9bf}{Set\+Robot\+Control\+State}
+\item 
+\hyperlink{classmts_interface_required}{mts\+Interface\+Required} $\ast$ \hyperlink{classmts_intuitive_research_kit_console_1_1_arm_a19bf350b32efd2c9fd612676f3772c5a}{Interface\+Required}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classmts_intuitive_research_kit_console_1_1_arm_a6e35490bedd0064dfeec97d358594b90}{mts\+Intuitive\+Research\+Kit\+Console}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classmts_intuitive_research_kit_console_1_1_arm_acb898ba65d323f59ffd0885a47ef6cec}{}\index{mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm@{mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm}!Arm\+Type@{Arm\+Type}}
+\index{Arm\+Type@{Arm\+Type}!mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm@{mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm}}
+\subsubsection[{Arm\+Type}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm\+::\+Arm\+Type}}\label{classmts_intuitive_research_kit_console_1_1_arm_acb898ba65d323f59ffd0885a47ef6cec}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{A\+R\+M\+\_\+\+M\+T\+M@{A\+R\+M\+\_\+\+M\+T\+M}!mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm@{mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm}}\index{mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm@{mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm}!A\+R\+M\+\_\+\+M\+T\+M@{A\+R\+M\+\_\+\+M\+T\+M}}\item[{\em 
+\hypertarget{classmts_intuitive_research_kit_console_1_1_arm_acb898ba65d323f59ffd0885a47ef6ceca925a57962bd2e8f0d5c69149ede508c8}{}A\+R\+M\+\_\+\+M\+T\+M\label{classmts_intuitive_research_kit_console_1_1_arm_acb898ba65d323f59ffd0885a47ef6ceca925a57962bd2e8f0d5c69149ede508c8}
+}]\index{A\+R\+M\+\_\+\+P\+S\+M@{A\+R\+M\+\_\+\+P\+S\+M}!mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm@{mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm}}\index{mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm@{mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm}!A\+R\+M\+\_\+\+P\+S\+M@{A\+R\+M\+\_\+\+P\+S\+M}}\item[{\em 
+\hypertarget{classmts_intuitive_research_kit_console_1_1_arm_acb898ba65d323f59ffd0885a47ef6ceca209dc5ec65dd5a23a2792dea8d951daf}{}A\+R\+M\+\_\+\+P\+S\+M\label{classmts_intuitive_research_kit_console_1_1_arm_acb898ba65d323f59ffd0885a47ef6ceca209dc5ec65dd5a23a2792dea8d951daf}
+}]\index{A\+R\+M\+\_\+\+E\+C\+M@{A\+R\+M\+\_\+\+E\+C\+M}!mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm@{mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm}}\index{mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm@{mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm}!A\+R\+M\+\_\+\+E\+C\+M@{A\+R\+M\+\_\+\+E\+C\+M}}\item[{\em 
+\hypertarget{classmts_intuitive_research_kit_console_1_1_arm_acb898ba65d323f59ffd0885a47ef6cecaf2778d3b94620ba8ca327ad7c04babd3}{}A\+R\+M\+\_\+\+E\+C\+M\label{classmts_intuitive_research_kit_console_1_1_arm_acb898ba65d323f59ffd0885a47ef6cecaf2778d3b94620ba8ca327ad7c04babd3}
+}]\index{A\+R\+M\+\_\+\+G\+E\+N\+E\+R\+I\+C\+\_\+\+M\+T\+M@{A\+R\+M\+\_\+\+G\+E\+N\+E\+R\+I\+C\+\_\+\+M\+T\+M}!mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm@{mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm}}\index{mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm@{mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm}!A\+R\+M\+\_\+\+G\+E\+N\+E\+R\+I\+C\+\_\+\+M\+T\+M@{A\+R\+M\+\_\+\+G\+E\+N\+E\+R\+I\+C\+\_\+\+M\+T\+M}}\item[{\em 
+\hypertarget{classmts_intuitive_research_kit_console_1_1_arm_acb898ba65d323f59ffd0885a47ef6ceca6c2d93bfad70b962325393b347fa01dc}{}A\+R\+M\+\_\+\+G\+E\+N\+E\+R\+I\+C\+\_\+\+M\+T\+M\label{classmts_intuitive_research_kit_console_1_1_arm_acb898ba65d323f59ffd0885a47ef6ceca6c2d93bfad70b962325393b347fa01dc}
+}]\index{A\+R\+M\+\_\+\+G\+E\+N\+E\+R\+I\+C\+\_\+\+P\+S\+M@{A\+R\+M\+\_\+\+G\+E\+N\+E\+R\+I\+C\+\_\+\+P\+S\+M}!mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm@{mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm}}\index{mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm@{mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm}!A\+R\+M\+\_\+\+G\+E\+N\+E\+R\+I\+C\+\_\+\+P\+S\+M@{A\+R\+M\+\_\+\+G\+E\+N\+E\+R\+I\+C\+\_\+\+P\+S\+M}}\item[{\em 
+\hypertarget{classmts_intuitive_research_kit_console_1_1_arm_acb898ba65d323f59ffd0885a47ef6ceca522dcd62e40a468a089d7a884df12f90}{}A\+R\+M\+\_\+\+G\+E\+N\+E\+R\+I\+C\+\_\+\+P\+S\+M\label{classmts_intuitive_research_kit_console_1_1_arm_acb898ba65d323f59ffd0885a47ef6ceca522dcd62e40a468a089d7a884df12f90}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmts_intuitive_research_kit_console_1_1_arm_a197d262a8567790b4e1fb1ffa453b1ea}{}\index{mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm@{mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm}!Arm@{Arm}}
+\index{Arm@{Arm}!mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm@{mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm}}
+\subsubsection[{Arm}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm\+::\+Arm (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name, }
+\item[{const std\+::string \&}]{io\+Component\+Name}
+\end{DoxyParamCaption}
+)}\label{classmts_intuitive_research_kit_console_1_1_arm_a197d262a8567790b4e1fb1ffa453b1ea}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classmts_intuitive_research_kit_console_1_1_arm_a7e6830efb231e90cbbae68d294ba1a16}{}\index{mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm@{mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm}!Configure\+Arm@{Configure\+Arm}}
+\index{Configure\+Arm@{Configure\+Arm}!mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm@{mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm}}
+\subsubsection[{Configure\+Arm}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm\+::\+Configure\+Arm (
+\begin{DoxyParamCaption}
+\item[{const {\bf Arm\+Type}}]{arm\+Type, }
+\item[{const std\+::string \&}]{config\+File, }
+\item[{const double \&}]{period\+In\+Seconds = {\ttfamily 0.0~$\ast${\bf cmn\+\_\+ms}}}
+\end{DoxyParamCaption}
+)}\label{classmts_intuitive_research_kit_console_1_1_arm_a7e6830efb231e90cbbae68d294ba1a16}
+Create and configure the robot arm. \hypertarget{classmts_intuitive_research_kit_console_1_1_arm_a46e2678902e140a5cffdfda6257b8c5e}{}\index{mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm@{mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm}!Configure\+P\+I\+D@{Configure\+P\+I\+D}}
+\index{Configure\+P\+I\+D@{Configure\+P\+I\+D}!mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm@{mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm}}
+\subsubsection[{Configure\+P\+I\+D}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm\+::\+Configure\+P\+I\+D (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{config\+File, }
+\item[{const double \&}]{period\+In\+Seconds = {\ttfamily 0.0~$\ast${\bf cmn\+\_\+ms}}}
+\end{DoxyParamCaption}
+)}\label{classmts_intuitive_research_kit_console_1_1_arm_a46e2678902e140a5cffdfda6257b8c5e}
+Create a new P\+I\+D component and connect it to the proper Robot\+I\+O interface. If the period in seconds is zero, the P\+I\+D will be tied to I\+O using the Exec\+In/\+Exec\+Out interfaces. \hypertarget{classmts_intuitive_research_kit_console_1_1_arm_ab148bb76eba17d89fabec9b472495e08}{}\index{mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm@{mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm}!I\+O\+Component\+Name@{I\+O\+Component\+Name}}
+\index{I\+O\+Component\+Name@{I\+O\+Component\+Name}!mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm@{mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm}}
+\subsubsection[{I\+O\+Component\+Name}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string\& mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm\+::\+I\+O\+Component\+Name (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classmts_intuitive_research_kit_console_1_1_arm_ab148bb76eba17d89fabec9b472495e08}
+\hypertarget{classmts_intuitive_research_kit_console_1_1_arm_a23ae87d2f48b0d547537e9e1b38b4df6}{}\index{mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm@{mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm}!Name@{Name}}
+\index{Name@{Name}!mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm@{mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm}}
+\subsubsection[{Name}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string\& mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm\+::\+Name (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classmts_intuitive_research_kit_console_1_1_arm_a23ae87d2f48b0d547537e9e1b38b4df6}
+Accessors \hypertarget{classmts_intuitive_research_kit_console_1_1_arm_a2621f6e1b41173a0d76fcfeb0387f98c}{}\index{mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm@{mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm}!P\+I\+D\+Component\+Name@{P\+I\+D\+Component\+Name}}
+\index{P\+I\+D\+Component\+Name@{P\+I\+D\+Component\+Name}!mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm@{mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm}}
+\subsubsection[{P\+I\+D\+Component\+Name}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string\& mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm\+::\+P\+I\+D\+Component\+Name (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classmts_intuitive_research_kit_console_1_1_arm_a2621f6e1b41173a0d76fcfeb0387f98c}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classmts_intuitive_research_kit_console_1_1_arm_a6e35490bedd0064dfeec97d358594b90}{}\index{mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm@{mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm}!mts\+Intuitive\+Research\+Kit\+Console@{mts\+Intuitive\+Research\+Kit\+Console}}
+\index{mts\+Intuitive\+Research\+Kit\+Console@{mts\+Intuitive\+Research\+Kit\+Console}!mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm@{mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm}}
+\subsubsection[{mts\+Intuitive\+Research\+Kit\+Console}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf mts\+Intuitive\+Research\+Kit\+Console}\hspace{0.3cm}{\ttfamily [friend]}}\label{classmts_intuitive_research_kit_console_1_1_arm_a6e35490bedd0064dfeec97d358594b90}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classmts_intuitive_research_kit_console_1_1_arm_a19bf350b32efd2c9fd612676f3772c5a}{}\index{mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm@{mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm}!Interface\+Required@{Interface\+Required}}
+\index{Interface\+Required@{Interface\+Required}!mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm@{mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm}}
+\subsubsection[{Interface\+Required}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+Interface\+Required}$\ast$ mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm\+::\+Interface\+Required\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_intuitive_research_kit_console_1_1_arm_a19bf350b32efd2c9fd612676f3772c5a}
+\hypertarget{classmts_intuitive_research_kit_console_1_1_arm_aa0d61e31bc02be631a22f052df1d7c69}{}\index{mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm@{mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm}!m\+Arm\+Configuration\+File@{m\+Arm\+Configuration\+File}}
+\index{m\+Arm\+Configuration\+File@{m\+Arm\+Configuration\+File}!mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm@{mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm}}
+\subsubsection[{m\+Arm\+Configuration\+File}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm\+::m\+Arm\+Configuration\+File\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_intuitive_research_kit_console_1_1_arm_aa0d61e31bc02be631a22f052df1d7c69}
+\hypertarget{classmts_intuitive_research_kit_console_1_1_arm_ac5010e0fdd71d2f87c123ef1931e3f62}{}\index{mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm@{mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm}!m\+I\+O\+Component\+Name@{m\+I\+O\+Component\+Name}}
+\index{m\+I\+O\+Component\+Name@{m\+I\+O\+Component\+Name}!mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm@{mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm}}
+\subsubsection[{m\+I\+O\+Component\+Name}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm\+::m\+I\+O\+Component\+Name\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_intuitive_research_kit_console_1_1_arm_ac5010e0fdd71d2f87c123ef1931e3f62}
+\hypertarget{classmts_intuitive_research_kit_console_1_1_arm_a14ea7da9b455d326f2458f4b27d062d0}{}\index{mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm@{mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm}!m\+I\+O\+Configuration\+File@{m\+I\+O\+Configuration\+File}}
+\index{m\+I\+O\+Configuration\+File@{m\+I\+O\+Configuration\+File}!mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm@{mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm}}
+\subsubsection[{m\+I\+O\+Configuration\+File}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm\+::m\+I\+O\+Configuration\+File\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_intuitive_research_kit_console_1_1_arm_a14ea7da9b455d326f2458f4b27d062d0}
+\hypertarget{classmts_intuitive_research_kit_console_1_1_arm_a5693697a8b14ebd601b1d1ff18b22d94}{}\index{mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm@{mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm}!m\+Name@{m\+Name}}
+\index{m\+Name@{m\+Name}!mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm@{mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm}}
+\subsubsection[{m\+Name}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm\+::m\+Name\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_intuitive_research_kit_console_1_1_arm_a5693697a8b14ebd601b1d1ff18b22d94}
+\hypertarget{classmts_intuitive_research_kit_console_1_1_arm_a03dbe96c5a71a8ce46bb37177bf22351}{}\index{mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm@{mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm}!m\+P\+I\+D\+Component\+Name@{m\+P\+I\+D\+Component\+Name}}
+\index{m\+P\+I\+D\+Component\+Name@{m\+P\+I\+D\+Component\+Name}!mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm@{mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm}}
+\subsubsection[{m\+P\+I\+D\+Component\+Name}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm\+::m\+P\+I\+D\+Component\+Name\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_intuitive_research_kit_console_1_1_arm_a03dbe96c5a71a8ce46bb37177bf22351}
+\hypertarget{classmts_intuitive_research_kit_console_1_1_arm_a380c1811ecda360d324a14a3de57b4b8}{}\index{mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm@{mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm}!m\+P\+I\+D\+Configuration\+File@{m\+P\+I\+D\+Configuration\+File}}
+\index{m\+P\+I\+D\+Configuration\+File@{m\+P\+I\+D\+Configuration\+File}!mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm@{mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm}}
+\subsubsection[{m\+P\+I\+D\+Configuration\+File}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm\+::m\+P\+I\+D\+Configuration\+File\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_intuitive_research_kit_console_1_1_arm_a380c1811ecda360d324a14a3de57b4b8}
+\hypertarget{classmts_intuitive_research_kit_console_1_1_arm_a84684b49b9b5a5773a6761d08086c9bf}{}\index{mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm@{mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm}!Set\+Robot\+Control\+State@{Set\+Robot\+Control\+State}}
+\index{Set\+Robot\+Control\+State@{Set\+Robot\+Control\+State}!mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm@{mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm}}
+\subsubsection[{Set\+Robot\+Control\+State}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+Function\+Write} mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm\+::\+Set\+Robot\+Control\+State\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_intuitive_research_kit_console_1_1_arm_a84684b49b9b5a5773a6761d08086c9bf}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/saw\+Intuitive\+Research\+Kit/include/saw\+Intuitive\+Research\+Kit/\hyperlink{mts_intuitive_research_kit_console_8h}{mts\+Intuitive\+Research\+Kit\+Console.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,186 @@
+\hypertarget{classmts_state_array_base}{}\section{mts\+State\+Array\+Base Class Reference}
+\label{classmts_state_array_base}\index{mts\+State\+Array\+Base@{mts\+State\+Array\+Base}}
+
+
+{\ttfamily \#include $<$mts\+State\+Array\+Base.\+h$>$}
+
+Inheritance diagram for mts\+State\+Array\+Base\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{db/d25/classmts_state_array_base}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef size\+\_\+t \hyperlink{classmts_state_array_base_a22ecbf65a907a7550951d12970f3df1d}{index\+\_\+type}
+\item 
+typedef size\+\_\+t \hyperlink{classmts_state_array_base_a2a29f8b24a48620f67c907fc5592fc17}{size\+\_\+type}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classmts_state_array_base_af6d2d84f3e93345b75c271e25a8d780a}{$\sim$mts\+State\+Array\+Base} (void)
+\item 
+virtual \hyperlink{classmts_generic_object}{mts\+Generic\+Object} \& \hyperlink{classmts_state_array_base_aa1da8c13184f5ebc5103e372d4a65ab5}{operator\mbox{[}$\,$\mbox{]}} (\hyperlink{classmts_state_array_base_a22ecbf65a907a7550951d12970f3df1d}{index\+\_\+type} index)=0
+\item 
+virtual const \hyperlink{classmts_generic_object}{mts\+Generic\+Object} \& \hyperlink{classmts_state_array_base_a7d8819d496a67a85e5288e5a4e1491a4}{operator\mbox{[}$\,$\mbox{]}} (\hyperlink{classmts_state_array_base_a22ecbf65a907a7550951d12970f3df1d}{index\+\_\+type} index) const =0
+\item 
+virtual \hyperlink{classmts_state_array_base}{mts\+State\+Array\+Base} $\ast$ \hyperlink{classmts_state_array_base_aedac123668b3ea43e5424de91bf2e03e}{Create} (const \hyperlink{classmts_generic_object}{mts\+Generic\+Object} $\ast$object\+Example, \hyperlink{classmts_state_array_base_a2a29f8b24a48620f67c907fc5592fc17}{size\+\_\+type} size)=0
+\item 
+virtual void \hyperlink{classmts_state_array_base_a257fc51f0fbe520338b6c6f301a9915f}{Copy} (\hyperlink{classmts_state_array_base_a22ecbf65a907a7550951d12970f3df1d}{index\+\_\+type} index\+To, \hyperlink{classmts_state_array_base_a22ecbf65a907a7550951d12970f3df1d}{index\+\_\+type} index\+From)=0
+\item 
+virtual bool \hyperlink{classmts_state_array_base_af325b729f2cd0e98372e5a3470734dc9}{Get} (\hyperlink{classmts_state_array_base_a22ecbf65a907a7550951d12970f3df1d}{index\+\_\+type} index, \hyperlink{classmts_generic_object}{mts\+Generic\+Object} \&data) const =0
+\item 
+virtual bool \hyperlink{classmts_state_array_base_a11b367be89abbbb96ed506764d0e676d}{Set} (\hyperlink{classmts_state_array_base_a22ecbf65a907a7550951d12970f3df1d}{index\+\_\+type} index, const \hyperlink{classmts_generic_object}{mts\+Generic\+Object} \&data)=0
+\item 
+virtual bool \hyperlink{classmts_state_array_base_a7a1ebd2697cdf0f4c709816a496ca3a8}{Set\+Data\+Size} (const size\+\_\+t size)=0
+\item 
+bool \hyperlink{classmts_state_array_base_ab4d09a9e4d7f6aa3d8703c1ce57b1b48}{Set\+Size} (const size\+\_\+t size)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmts_state_array_base_aa00e3667f9cc11adf351d6d7cb09fea7}{mts\+State\+Array\+Base} (void)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \hyperlink{classcmn_class_services_base}{cmn\+Class\+Services\+Base} $\ast$ \hyperlink{classmts_state_array_base_abd3be9ad51f2cb1930cddd78cc6f1216}{Data\+Class\+Services}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Abstract base class for state data arrays. This class is mostly pure virtual and is used as a base class for \hyperlink{classmts_state_array}{mts\+State\+Array} which is templated. Using a base class allows to keep all the state arrays in an homogenous container of pointers on different types of state arrays.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classmts_state_array}{mts\+State\+Array} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classmts_state_array_base_a22ecbf65a907a7550951d12970f3df1d}{}\index{mts\+State\+Array\+Base@{mts\+State\+Array\+Base}!index\+\_\+type@{index\+\_\+type}}
+\index{index\+\_\+type@{index\+\_\+type}!mts\+State\+Array\+Base@{mts\+State\+Array\+Base}}
+\subsubsection[{index\+\_\+type}]{\setlength{\rightskip}{0pt plus 5cm}typedef size\+\_\+t {\bf mts\+State\+Array\+Base\+::index\+\_\+type}}\label{classmts_state_array_base_a22ecbf65a907a7550951d12970f3df1d}
+\hypertarget{classmts_state_array_base_a2a29f8b24a48620f67c907fc5592fc17}{}\index{mts\+State\+Array\+Base@{mts\+State\+Array\+Base}!size\+\_\+type@{size\+\_\+type}}
+\index{size\+\_\+type@{size\+\_\+type}!mts\+State\+Array\+Base@{mts\+State\+Array\+Base}}
+\subsubsection[{size\+\_\+type}]{\setlength{\rightskip}{0pt plus 5cm}typedef size\+\_\+t {\bf mts\+State\+Array\+Base\+::size\+\_\+type}}\label{classmts_state_array_base_a2a29f8b24a48620f67c907fc5592fc17}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmts_state_array_base_aa00e3667f9cc11adf351d6d7cb09fea7}{}\index{mts\+State\+Array\+Base@{mts\+State\+Array\+Base}!mts\+State\+Array\+Base@{mts\+State\+Array\+Base}}
+\index{mts\+State\+Array\+Base@{mts\+State\+Array\+Base}!mts\+State\+Array\+Base@{mts\+State\+Array\+Base}}
+\subsubsection[{mts\+State\+Array\+Base}]{\setlength{\rightskip}{0pt plus 5cm}mts\+State\+Array\+Base\+::mts\+State\+Array\+Base (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\label{classmts_state_array_base_aa00e3667f9cc11adf351d6d7cb09fea7}
+Protected constructor. Does nothing. \hypertarget{classmts_state_array_base_af6d2d84f3e93345b75c271e25a8d780a}{}\index{mts\+State\+Array\+Base@{mts\+State\+Array\+Base}!````~mts\+State\+Array\+Base@{$\sim$mts\+State\+Array\+Base}}
+\index{````~mts\+State\+Array\+Base@{$\sim$mts\+State\+Array\+Base}!mts\+State\+Array\+Base@{mts\+State\+Array\+Base}}
+\subsubsection[{$\sim$mts\+State\+Array\+Base}]{\setlength{\rightskip}{0pt plus 5cm}virtual mts\+State\+Array\+Base\+::$\sim$mts\+State\+Array\+Base (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classmts_state_array_base_af6d2d84f3e93345b75c271e25a8d780a}
+Default destructor. Does nothing. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classmts_state_array_base_a257fc51f0fbe520338b6c6f301a9915f}{}\index{mts\+State\+Array\+Base@{mts\+State\+Array\+Base}!Copy@{Copy}}
+\index{Copy@{Copy}!mts\+State\+Array\+Base@{mts\+State\+Array\+Base}}
+\subsubsection[{Copy}]{\setlength{\rightskip}{0pt plus 5cm}virtual void mts\+State\+Array\+Base\+::\+Copy (
+\begin{DoxyParamCaption}
+\item[{{\bf index\+\_\+type}}]{index\+To, }
+\item[{{\bf index\+\_\+type}}]{index\+From}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classmts_state_array_base_a257fc51f0fbe520338b6c6f301a9915f}
+Copy data from one index to another. 
+
+Implemented in \hyperlink{classmts_state_array_afca557827cf934c90381a27704f0f064}{mts\+State\+Array$<$ \+\_\+element\+Type $>$}, and \hyperlink{classmts_state_array_afca557827cf934c90381a27704f0f064}{mts\+State\+Array$<$ mts\+Generic\+Object\+Proxy $>$}.
+
+\hypertarget{classmts_state_array_base_aedac123668b3ea43e5424de91bf2e03e}{}\index{mts\+State\+Array\+Base@{mts\+State\+Array\+Base}!Create@{Create}}
+\index{Create@{Create}!mts\+State\+Array\+Base@{mts\+State\+Array\+Base}}
+\subsubsection[{Create}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf mts\+State\+Array\+Base}$\ast$ mts\+State\+Array\+Base\+::\+Create (
+\begin{DoxyParamCaption}
+\item[{const {\bf mts\+Generic\+Object} $\ast$}]{object\+Example, }
+\item[{{\bf size\+\_\+type}}]{size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classmts_state_array_base_aedac123668b3ea43e5424de91bf2e03e}
+Create the array of data. This is currently unused. 
+
+Implemented in \hyperlink{classmts_state_array_ac82b7151bf8a7e733a043555d3312378}{mts\+State\+Array$<$ \+\_\+element\+Type $>$}, and \hyperlink{classmts_state_array_ac82b7151bf8a7e733a043555d3312378}{mts\+State\+Array$<$ mts\+Generic\+Object\+Proxy $>$}.
+
+\hypertarget{classmts_state_array_base_af325b729f2cd0e98372e5a3470734dc9}{}\index{mts\+State\+Array\+Base@{mts\+State\+Array\+Base}!Get@{Get}}
+\index{Get@{Get}!mts\+State\+Array\+Base@{mts\+State\+Array\+Base}}
+\subsubsection[{Get}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool mts\+State\+Array\+Base\+::\+Get (
+\begin{DoxyParamCaption}
+\item[{{\bf index\+\_\+type}}]{index, }
+\item[{{\bf mts\+Generic\+Object} \&}]{data}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classmts_state_array_base_af325b729f2cd0e98372e5a3470734dc9}
+Get data from array. 
+
+Implemented in \hyperlink{classmts_state_array_a8995237a36530f1d5e8704f8f30622e4}{mts\+State\+Array$<$ \+\_\+element\+Type $>$}, and \hyperlink{classmts_state_array_a8995237a36530f1d5e8704f8f30622e4}{mts\+State\+Array$<$ mts\+Generic\+Object\+Proxy $>$}.
+
+\hypertarget{classmts_state_array_base_aa1da8c13184f5ebc5103e372d4a65ab5}{}\index{mts\+State\+Array\+Base@{mts\+State\+Array\+Base}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!mts\+State\+Array\+Base@{mts\+State\+Array\+Base}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf mts\+Generic\+Object}\& mts\+State\+Array\+Base\+::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{{\bf index\+\_\+type}}]{index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classmts_state_array_base_aa1da8c13184f5ebc5103e372d4a65ab5}
+Overloaded subscript operator. 
+
+Implemented in \hyperlink{classmts_state_array_a3ce4d9065a8807833d7ff85c00c66449}{mts\+State\+Array$<$ \+\_\+element\+Type $>$}, and \hyperlink{classmts_state_array_a3ce4d9065a8807833d7ff85c00c66449}{mts\+State\+Array$<$ mts\+Generic\+Object\+Proxy $>$}.
+
+\hypertarget{classmts_state_array_base_a7d8819d496a67a85e5288e5a4e1491a4}{}\index{mts\+State\+Array\+Base@{mts\+State\+Array\+Base}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!mts\+State\+Array\+Base@{mts\+State\+Array\+Base}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}virtual const {\bf mts\+Generic\+Object}\& mts\+State\+Array\+Base\+::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{{\bf index\+\_\+type}}]{index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classmts_state_array_base_a7d8819d496a67a85e5288e5a4e1491a4}
+Overloaded subscript operator. 
+
+Implemented in \hyperlink{classmts_state_array_a0c002191085699eaaa3fab8d1f8b753e}{mts\+State\+Array$<$ \+\_\+element\+Type $>$}, and \hyperlink{classmts_state_array_a0c002191085699eaaa3fab8d1f8b753e}{mts\+State\+Array$<$ mts\+Generic\+Object\+Proxy $>$}.
+
+\hypertarget{classmts_state_array_base_a11b367be89abbbb96ed506764d0e676d}{}\index{mts\+State\+Array\+Base@{mts\+State\+Array\+Base}!Set@{Set}}
+\index{Set@{Set}!mts\+State\+Array\+Base@{mts\+State\+Array\+Base}}
+\subsubsection[{Set}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool mts\+State\+Array\+Base\+::\+Set (
+\begin{DoxyParamCaption}
+\item[{{\bf index\+\_\+type}}]{index, }
+\item[{const {\bf mts\+Generic\+Object} \&}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classmts_state_array_base_a11b367be89abbbb96ed506764d0e676d}
+Set data in array. 
+
+Implemented in \hyperlink{classmts_state_array_a0375f515039b5904a33c535318bc9101}{mts\+State\+Array$<$ \+\_\+element\+Type $>$}, and \hyperlink{classmts_state_array_a0375f515039b5904a33c535318bc9101}{mts\+State\+Array$<$ mts\+Generic\+Object\+Proxy $>$}.
+
+\hypertarget{classmts_state_array_base_a7a1ebd2697cdf0f4c709816a496ca3a8}{}\index{mts\+State\+Array\+Base@{mts\+State\+Array\+Base}!Set\+Data\+Size@{Set\+Data\+Size}}
+\index{Set\+Data\+Size@{Set\+Data\+Size}!mts\+State\+Array\+Base@{mts\+State\+Array\+Base}}
+\subsubsection[{Set\+Data\+Size}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool mts\+State\+Array\+Base\+::\+Set\+Data\+Size (
+\begin{DoxyParamCaption}
+\item[{const size\+\_\+t}]{size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classmts_state_array_base_a7a1ebd2697cdf0f4c709816a496ca3a8}
+
+
+Implemented in \hyperlink{classmts_state_array_a3864cab02bda42e0e04712423c72ac16}{mts\+State\+Array$<$ \+\_\+element\+Type $>$}, and \hyperlink{classmts_state_array_a3864cab02bda42e0e04712423c72ac16}{mts\+State\+Array$<$ mts\+Generic\+Object\+Proxy $>$}.
+
+\hypertarget{classmts_state_array_base_ab4d09a9e4d7f6aa3d8703c1ce57b1b48}{}\index{mts\+State\+Array\+Base@{mts\+State\+Array\+Base}!Set\+Size@{Set\+Size}}
+\index{Set\+Size@{Set\+Size}!mts\+State\+Array\+Base@{mts\+State\+Array\+Base}}
+\subsubsection[{Set\+Size}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+State\+Array\+Base\+::\+Set\+Size (
+\begin{DoxyParamCaption}
+\item[{const size\+\_\+t}]{size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_state_array_base_ab4d09a9e4d7f6aa3d8703c1ce57b1b48}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classmts_state_array_base_abd3be9ad51f2cb1930cddd78cc6f1216}{}\index{mts\+State\+Array\+Base@{mts\+State\+Array\+Base}!Data\+Class\+Services@{Data\+Class\+Services}}
+\index{Data\+Class\+Services@{Data\+Class\+Services}!mts\+State\+Array\+Base@{mts\+State\+Array\+Base}}
+\subsubsection[{Data\+Class\+Services}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf cmn\+Class\+Services\+Base}$\ast$ mts\+State\+Array\+Base\+::\+Data\+Class\+Services\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_state_array_base_abd3be9ad51f2cb1930cddd78cc6f1216}
+Class services associated to the element contained 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Multi\+Task/\hyperlink{mts_state_array_base_8h}{mts\+State\+Array\+Base.\+h}\end{DoxyCompactItemize}

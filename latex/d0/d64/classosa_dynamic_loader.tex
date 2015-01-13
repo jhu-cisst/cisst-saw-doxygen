@@ -1,0 +1,103 @@
+\hypertarget{classosa_dynamic_loader}{}\section{osa\+Dynamic\+Loader Class Reference}
+\label{classosa_dynamic_loader}\index{osa\+Dynamic\+Loader@{osa\+Dynamic\+Loader}}
+
+
+Dynamically load a shared library file.  
+
+
+
+
+{\ttfamily \#include $<$osa\+Dynamic\+Loader.\+h$>$}
+
+Inheritance diagram for osa\+Dynamic\+Loader\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{d0/d64/classosa_dynamic_loader}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classosa_dynamic_loader_aa4236a44f81ed4c9c6574de805819f39}{osa\+Dynamic\+Loader} ()
+\item 
+virtual \hyperlink{classosa_dynamic_loader_ac65cff54806c2d304f018cb04938298c}{$\sim$osa\+Dynamic\+Loader} ()
+\item 
+bool \hyperlink{classosa_dynamic_loader_a1a09c14de452798d15c2a7647c604fa7}{Load} (const char $\ast$file, const char $\ast$path=0)
+\item 
+void \hyperlink{classosa_dynamic_loader_ae1bc384582b840846f81768a7c1adbed}{Un\+Load} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+void $\ast$ \hyperlink{classosa_dynamic_loader_aeee1ea1770407bfd73e49f3fb822d7ac}{handle}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Dynamically load a shared library file. 
+
+This class is used to dynamically load a shared library file. If a path is specified, the library file must exist on that path; otherwise, the \char`\"{}standard\char`\"{} library paths are used.
+
+This class should be used to dynamically load a library file if it contains classes that are derived from {\itshape \hyperlink{classcmn_generic_object}{cmn\+Generic\+Object}}, assuming that they are set up for dynamic creation (e.\+g., {\itshape C\+M\+N\+\_\+\+D\+Y\+N\+A\+M\+I\+C\+\_\+\+C\+R\+E\+A\+T\+I\+O\+N} flag used with {\itshape C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S}). For example, if the class \char`\"{}derived\+Class\char`\"{} exists in a library file with the same name, the file can be dynamically loaded and a new instance created as follows\+: 
+\begin{DoxyCode}
+\hyperlink{classosa_dynamic_loader}{osaDynamicLoader} dload;
+dload.\hyperlink{classosa_dynamic_loader_a1a09c14de452798d15c2a7647c604fa7}{Load}(\textcolor{stringliteral}{"derivedClass"});
+\hyperlink{classcmn_generic_object}{cmnGenericObject} *obj = \hyperlink{classcmn_object_register_a12ce3c182ea66df7bebf73f784c5770f}{cmnObjectRegister::Instance}()->Create(\textcolor{stringliteral}{"
+      derivedClass"});
+\end{DoxyCode}
+ Note that {\ttfamily dynamic\+\_\+cast} can be used to cast {\itshape obj} up the hierarchy. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classosa_dynamic_loader_aa4236a44f81ed4c9c6574de805819f39}{}\index{osa\+Dynamic\+Loader@{osa\+Dynamic\+Loader}!osa\+Dynamic\+Loader@{osa\+Dynamic\+Loader}}
+\index{osa\+Dynamic\+Loader@{osa\+Dynamic\+Loader}!osa\+Dynamic\+Loader@{osa\+Dynamic\+Loader}}
+\subsubsection[{osa\+Dynamic\+Loader}]{\setlength{\rightskip}{0pt plus 5cm}osa\+Dynamic\+Loader\+::osa\+Dynamic\+Loader (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classosa_dynamic_loader_aa4236a44f81ed4c9c6574de805819f39}
+Default constructor. Does nothing. \hypertarget{classosa_dynamic_loader_ac65cff54806c2d304f018cb04938298c}{}\index{osa\+Dynamic\+Loader@{osa\+Dynamic\+Loader}!````~osa\+Dynamic\+Loader@{$\sim$osa\+Dynamic\+Loader}}
+\index{````~osa\+Dynamic\+Loader@{$\sim$osa\+Dynamic\+Loader}!osa\+Dynamic\+Loader@{osa\+Dynamic\+Loader}}
+\subsubsection[{$\sim$osa\+Dynamic\+Loader}]{\setlength{\rightskip}{0pt plus 5cm}virtual osa\+Dynamic\+Loader\+::$\sim$osa\+Dynamic\+Loader (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classosa_dynamic_loader_ac65cff54806c2d304f018cb04938298c}
+Destructor. Does not unload library in case any objects created from within the library still exist. To unload library, call Unload(). 
+
+\subsection{Member Function Documentation}
+\hypertarget{classosa_dynamic_loader_a1a09c14de452798d15c2a7647c604fa7}{}\index{osa\+Dynamic\+Loader@{osa\+Dynamic\+Loader}!Load@{Load}}
+\index{Load@{Load}!osa\+Dynamic\+Loader@{osa\+Dynamic\+Loader}}
+\subsubsection[{Load}]{\setlength{\rightskip}{0pt plus 5cm}bool osa\+Dynamic\+Loader\+::\+Load (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{file, }
+\item[{const char $\ast$}]{path = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\label{classosa_dynamic_loader_a1a09c14de452798d15c2a7647c604fa7}
+Dynamically load the specified shared library. 
+\begin{DoxyParams}{Parameters}
+{\em file} & Name of shared library file to load (do not include extension) \\
+\hline
+{\em path} & Path to file (0 -\/$>$ use default library load paths) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if file successfully loaded; false otherwise 
+\end{DoxyReturn}
+\hypertarget{classosa_dynamic_loader_ae1bc384582b840846f81768a7c1adbed}{}\index{osa\+Dynamic\+Loader@{osa\+Dynamic\+Loader}!Un\+Load@{Un\+Load}}
+\index{Un\+Load@{Un\+Load}!osa\+Dynamic\+Loader@{osa\+Dynamic\+Loader}}
+\subsubsection[{Un\+Load}]{\setlength{\rightskip}{0pt plus 5cm}void osa\+Dynamic\+Loader\+::\+Un\+Load (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classosa_dynamic_loader_ae1bc384582b840846f81768a7c1adbed}
+Unload the shared library file (if supported by operating system). 
+
+\subsection{Member Data Documentation}
+\hypertarget{classosa_dynamic_loader_aeee1ea1770407bfd73e49f3fb822d7ac}{}\index{osa\+Dynamic\+Loader@{osa\+Dynamic\+Loader}!handle@{handle}}
+\index{handle@{handle}!osa\+Dynamic\+Loader@{osa\+Dynamic\+Loader}}
+\subsubsection[{handle}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ osa\+Dynamic\+Loader\+::handle\hspace{0.3cm}{\ttfamily [protected]}}\label{classosa_dynamic_loader_aeee1ea1770407bfd73e49f3fb822d7ac}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+O\+S\+Abstraction/\hyperlink{osa_dynamic_loader_8h}{osa\+Dynamic\+Loader.\+h}\end{DoxyCompactItemize}

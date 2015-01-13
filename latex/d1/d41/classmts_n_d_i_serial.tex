@@ -1,0 +1,480 @@
+\hypertarget{classmts_n_d_i_serial}{}\section{mts\+N\+D\+I\+Serial Class Reference}
+\label{classmts_n_d_i_serial}\index{mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}}
+
+
+{\ttfamily \#include $<$mts\+N\+D\+I\+Serial.\+h$>$}
+
+Inheritance diagram for mts\+N\+D\+I\+Serial\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=6.000000cm]{d1/d41/classmts_n_d_i_serial}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classmts_n_d_i_serial_1_1_tool}{Tool}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmts_n_d_i_serial_a3ecbc6380a7f6b50b826b797fe4c3b56}{mts\+N\+D\+I\+Serial} (const std\+::string \&task\+Name, const double period)
+\item 
+\hyperlink{classmts_n_d_i_serial_a5263cb07bf47fa816c500c3edd4d75da}{mts\+N\+D\+I\+Serial} (const \hyperlink{classmts_task_periodic_constructor_arg}{mts\+Task\+Periodic\+Constructor\+Arg} \&arg)
+\item 
+\hyperlink{classmts_n_d_i_serial_a3fd41ef271317aa18975694349345251}{$\sim$mts\+N\+D\+I\+Serial} (void)
+\item 
+void \hyperlink{classmts_n_d_i_serial_a55ed13bb299039b71fc05393588ffd0e}{Construct} (void)
+\item 
+void \hyperlink{classmts_n_d_i_serial_a5e0f4bd8a0b80e7c2e64dae6f0dd8d93}{Configure} (const std\+::string \&filename=\char`\"{}\char`\"{})
+\item 
+void \hyperlink{classmts_n_d_i_serial_a5a398ff09fd191621c849e527b1809ed}{Startup} (void)
+\item 
+void \hyperlink{classmts_n_d_i_serial_a72e2d58128b11e5d376db3ec8b3b81cb}{Run} (void)
+\item 
+void \hyperlink{classmts_n_d_i_serial_adbc7806bbb9185b34d28933441665440}{Cleanup} (void)
+\item 
+size\+\_\+t \hyperlink{classmts_n_d_i_serial_a6289bff93113fd59d316094848370212}{Get\+Number\+Of\+Tools} (void) const 
+\item 
+std\+::string \hyperlink{classmts_n_d_i_serial_a31848367d054d35027d2d4d8dae73bb9}{Get\+Tool\+Name} (const unsigned int index) const 
+\item 
+void \hyperlink{classmts_n_d_i_serial_abd97ea132bdac2d4698445529f878027}{Port\+Handles\+Initialize} (void)
+\item 
+void \hyperlink{classmts_n_d_i_serial_a01fdad2bcde8d45ecae952fccb3b5750}{Port\+Handles\+Query} (void)
+\item 
+void \hyperlink{classmts_n_d_i_serial_a984ba3c4655830850f78dd27311ff8b2}{Port\+Handles\+Enable} (void)
+\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \hyperlink{classmts_n_d_i_serial_a10d136b08ef709839e26c8ba9c0b2a1aa5a2ba9c836a108b8648fa0887336f5cd}{M\+A\+X\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+Z\+E} = 512
+ \}
+\item 
+enum \{ \hyperlink{classmts_n_d_i_serial_ac9a66e1b84813b6faf88aff391286ecba13f55e2fb8846527ee41fa22690a8749}{C\+R\+C\+\_\+\+S\+I\+Z\+E} = 4
+ \}
+\item 
+typedef \hyperlink{classcmn_named_map}{cmn\+Named\+Map}$<$ \hyperlink{classmts_n_d_i_serial_1_1_tool}{Tool} $>$ \hyperlink{classmts_n_d_i_serial_aa7927ca6826aae84f89df0ca800fe6bd}{Tools\+Type}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+size\+\_\+t \hyperlink{classmts_n_d_i_serial_ac8a27a2d361d54e18f42bbb781579f89}{Get\+Serial\+Buffer\+Size} (void) const 
+\item 
+size\+\_\+t \hyperlink{classmts_n_d_i_serial_ab92f85026b083a1fcdf9d922b3ab68f7}{Get\+Serial\+Buffer\+Available\+Size} (void) const 
+\item 
+size\+\_\+t \hyperlink{classmts_n_d_i_serial_a9f357b1e5da8c03386bb4dc2f1542bd1}{Get\+Serial\+Buffer\+String\+Size} (void) const 
+\item 
+void \hyperlink{classmts_n_d_i_serial_a8a6ba78f9b80fdb24fd189422da7e4b5}{Command\+Initialize} (void)
+\item 
+void \hyperlink{classmts_n_d_i_serial_a9366654f3d449d347c6a14b9b8252a9a}{Command\+Append} (const char command)
+\item 
+void \hyperlink{classmts_n_d_i_serial_a2e12dd893750b4e5e64082f5b8993a05}{Command\+Append} (const char $\ast$command)
+\item 
+void \hyperlink{classmts_n_d_i_serial_af1cc056933ad733c71f816f5b72085cb}{Command\+Append} (const int command)
+\item 
+bool \hyperlink{classmts_n_d_i_serial_a2c67f959ae4cf47b2046395d2e8c2104}{Command\+Send} (void)
+\item 
+bool \hyperlink{classmts_n_d_i_serial_aa69c858f9e2d77de24f60d001aaf8d1b}{Command\+Send} (const char $\ast$command)
+\item 
+bool \hyperlink{classmts_n_d_i_serial_ae12efe6d7a99785ff11d5957ecf7bc9d}{Response\+Read} (void)
+\item 
+bool \hyperlink{classmts_n_d_i_serial_a843967c21008da12c0cef308560111dc}{Response\+Read} (const char $\ast$expected\+Message)
+\item 
+unsigned int \hyperlink{classmts_n_d_i_serial_a0687fdfd5546056b54ccb0d823349810}{Compute\+C\+R\+C} (const char $\ast$data)
+\item 
+bool \hyperlink{classmts_n_d_i_serial_a69f428347e1556446792be003d9acbc7}{Response\+Check\+C\+R\+C} (void)
+\item 
+bool \hyperlink{classmts_n_d_i_serial_ae710bd6959672cf21a126b8d1dcaae0d}{Reset\+Serial\+Port} (void)
+\item 
+bool \hyperlink{classmts_n_d_i_serial_a23de00ad1b5a7008917998252c8b0b05}{Set\+Serial\+Port\+Settings} (\hyperlink{group__cisst_o_s_abstraction_ga3fd8e997892088f924754f9cc11c78a4}{osa\+Serial\+Port\+::\+Baud\+Rate\+Type} baud\+Rate, \hyperlink{group__cisst_o_s_abstraction_ga9b6b558d8e4327ca921d9c010bec0462}{osa\+Serial\+Port\+::\+Character\+Size\+Type} character\+Size, \hyperlink{group__cisst_o_s_abstraction_ga5a7547284e891eed488992c6a7204bfa}{osa\+Serial\+Port\+::\+Parity\+Checking\+Type} parity\+Checking, \hyperlink{group__cisst_o_s_abstraction_gaaa561ff95e10634b7ffa9ebf0ff164b5}{osa\+Serial\+Port\+::\+Stop\+Bits\+Type} stop\+Bits, \hyperlink{group__cisst_o_s_abstraction_ga006138c4626520d3c2c1e5a78b279435}{osa\+Serial\+Port\+::\+Flow\+Control\+Type} flow\+Control)
+\item 
+void \hyperlink{classmts_n_d_i_serial_a25982a00da395910da9515daf846c83e}{Beep} (const int \&number\+Of\+Beeps)
+\item 
+void \hyperlink{classmts_n_d_i_serial_a9e8848fd10c1eedf29ce83553c79f3fb}{Load\+Tool\+Definition\+File} (const char $\ast$port\+Handle, const char $\ast$file\+Path)
+\item 
+\hyperlink{classmts_n_d_i_serial_1_1_tool}{Tool} $\ast$ \hyperlink{classmts_n_d_i_serial_a3b62c56eb465069a75c2597cdf0da592}{Check\+Tool} (const char $\ast$serial\+Number)
+\item 
+\hyperlink{classmts_n_d_i_serial_1_1_tool}{Tool} $\ast$ \hyperlink{classmts_n_d_i_serial_a8229beb26f46444a747af55b003b50ff}{Add\+Tool} (const std\+::string \&name, const char $\ast$serial\+Number)
+\item 
+\hyperlink{classmts_n_d_i_serial_1_1_tool}{Tool} $\ast$ \hyperlink{classmts_n_d_i_serial_abfc2742f954c63b8b88464ced4c8c72e}{Add\+Tool} (const std\+::string \&name, const char $\ast$serial\+Number, const char $\ast$tool\+Definition\+File)
+\item 
+void \hyperlink{classmts_n_d_i_serial_ad75c633cc225f9c2b9a22ba7916d734f}{Toggle\+Tracking} (const bool \&track)
+\item 
+void \hyperlink{classmts_n_d_i_serial_a77daeb77f8acf7a18d062eaa7c400d76}{Track} (void)
+\item 
+void \hyperlink{classmts_n_d_i_serial_a8e8407248f820a59572c4057783d492b}{Calibrate\+Pivot} (const std\+::string \&tool\+Name)
+\item 
+void \hyperlink{classmts_n_d_i_serial_ad6ad01c2825a54df61bd248d53a14266}{Report\+Stray\+Markers} (void)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classosa_serial_port}{osa\+Serial\+Port} \hyperlink{classmts_n_d_i_serial_a76b386e7f977b85ee1e48f7126063aa7}{Serial\+Port}
+\item 
+char \hyperlink{classmts_n_d_i_serial_ae5b23b322f963e10ebcc04902864eebf}{Serial\+Buffer} \mbox{[}\hyperlink{classmts_n_d_i_serial_a10d136b08ef709839e26c8ba9c0b2a1aa5a2ba9c836a108b8648fa0887336f5cd}{M\+A\+X\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+Z\+E}\mbox{]}
+\item 
+char $\ast$ \hyperlink{classmts_n_d_i_serial_a7017ac2bda0bd5a4aa0d8dc8e4aaf2f8}{Serial\+Buffer\+Pointer}
+\item 
+\hyperlink{classmts_n_d_i_serial_aa7927ca6826aae84f89df0ca800fe6bd}{Tools\+Type} \hyperlink{classmts_n_d_i_serial_adae8811079b92709d39a1818eba867c1}{Tools}
+\item 
+\hyperlink{classcmn_named_map}{cmn\+Named\+Map}$<$ \hyperlink{classmts_n_d_i_serial_1_1_tool}{Tool} $>$ \hyperlink{classmts_n_d_i_serial_a9e780c436ba6d57152ef11c722771034}{Port\+To\+Tool}
+\item 
+bool \hyperlink{classmts_n_d_i_serial_a9908b1079e158ad8d708d5ff00bd953f}{Is\+Tracking}
+\item 
+\hyperlink{classmts_matrix}{mts\+Matrix}$<$ double $>$ \hyperlink{classmts_n_d_i_serial_a061167330c608d025a0d6a6c9782b552}{Stray\+Markers}
+\item 
+double \hyperlink{classmts_n_d_i_serial_a09bb13f36457efa0528f4ca880ce1891}{Read\+Timeout}
+\item 
+\hyperlink{classosa_stopwatch}{osa\+Stopwatch} \hyperlink{classmts_n_d_i_serial_a78f53a7d4b1caa4fca9ee1a835ed16be}{Response\+Timer}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classmts_n_d_i_serial_aa7927ca6826aae84f89df0ca800fe6bd}{}\index{mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}!Tools\+Type@{Tools\+Type}}
+\index{Tools\+Type@{Tools\+Type}!mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}}
+\subsubsection[{Tools\+Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf cmn\+Named\+Map}$<${\bf Tool}$>$ {\bf mts\+N\+D\+I\+Serial\+::\+Tools\+Type}\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_n_d_i_serial_aa7927ca6826aae84f89df0ca800fe6bd}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classmts_n_d_i_serial_a10d136b08ef709839e26c8ba9c0b2a1a}{}\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_n_d_i_serial_a10d136b08ef709839e26c8ba9c0b2a1a}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{M\+A\+X\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+Z\+E@{M\+A\+X\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+Z\+E}!mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}}\index{mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}!M\+A\+X\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+Z\+E@{M\+A\+X\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+Z\+E}}\item[{\em 
+\hypertarget{classmts_n_d_i_serial_a10d136b08ef709839e26c8ba9c0b2a1aa5a2ba9c836a108b8648fa0887336f5cd}{}M\+A\+X\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+Z\+E\label{classmts_n_d_i_serial_a10d136b08ef709839e26c8ba9c0b2a1aa5a2ba9c836a108b8648fa0887336f5cd}
+}]\end{description}
+\end{Desc}
+\hypertarget{classmts_n_d_i_serial_ac9a66e1b84813b6faf88aff391286ecb}{}\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_n_d_i_serial_ac9a66e1b84813b6faf88aff391286ecb}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{C\+R\+C\+\_\+\+S\+I\+Z\+E@{C\+R\+C\+\_\+\+S\+I\+Z\+E}!mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}}\index{mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}!C\+R\+C\+\_\+\+S\+I\+Z\+E@{C\+R\+C\+\_\+\+S\+I\+Z\+E}}\item[{\em 
+\hypertarget{classmts_n_d_i_serial_ac9a66e1b84813b6faf88aff391286ecba13f55e2fb8846527ee41fa22690a8749}{}C\+R\+C\+\_\+\+S\+I\+Z\+E\label{classmts_n_d_i_serial_ac9a66e1b84813b6faf88aff391286ecba13f55e2fb8846527ee41fa22690a8749}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmts_n_d_i_serial_a3ecbc6380a7f6b50b826b797fe4c3b56}{}\index{mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}!mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}}
+\index{mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}!mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}}
+\subsubsection[{mts\+N\+D\+I\+Serial}]{\setlength{\rightskip}{0pt plus 5cm}mts\+N\+D\+I\+Serial\+::mts\+N\+D\+I\+Serial (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{task\+Name, }
+\item[{const double}]{period}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_n_d_i_serial_a3ecbc6380a7f6b50b826b797fe4c3b56}
+\hypertarget{classmts_n_d_i_serial_a5263cb07bf47fa816c500c3edd4d75da}{}\index{mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}!mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}}
+\index{mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}!mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}}
+\subsubsection[{mts\+N\+D\+I\+Serial}]{\setlength{\rightskip}{0pt plus 5cm}mts\+N\+D\+I\+Serial\+::mts\+N\+D\+I\+Serial (
+\begin{DoxyParamCaption}
+\item[{const {\bf mts\+Task\+Periodic\+Constructor\+Arg} \&}]{arg}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_n_d_i_serial_a5263cb07bf47fa816c500c3edd4d75da}
+\hypertarget{classmts_n_d_i_serial_a3fd41ef271317aa18975694349345251}{}\index{mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}!````~mts\+N\+D\+I\+Serial@{$\sim$mts\+N\+D\+I\+Serial}}
+\index{````~mts\+N\+D\+I\+Serial@{$\sim$mts\+N\+D\+I\+Serial}!mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}}
+\subsubsection[{$\sim$mts\+N\+D\+I\+Serial}]{\setlength{\rightskip}{0pt plus 5cm}mts\+N\+D\+I\+Serial\+::$\sim$mts\+N\+D\+I\+Serial (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_n_d_i_serial_a3fd41ef271317aa18975694349345251}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classmts_n_d_i_serial_a8229beb26f46444a747af55b003b50ff}{}\index{mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}!Add\+Tool@{Add\+Tool}}
+\index{Add\+Tool@{Add\+Tool}!mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}}
+\subsubsection[{Add\+Tool}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Tool}$\ast$ mts\+N\+D\+I\+Serial\+::\+Add\+Tool (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name, }
+\item[{const char $\ast$}]{serial\+Number}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_n_d_i_serial_a8229beb26f46444a747af55b003b50ff}
+\hypertarget{classmts_n_d_i_serial_abfc2742f954c63b8b88464ced4c8c72e}{}\index{mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}!Add\+Tool@{Add\+Tool}}
+\index{Add\+Tool@{Add\+Tool}!mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}}
+\subsubsection[{Add\+Tool}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Tool}$\ast$ mts\+N\+D\+I\+Serial\+::\+Add\+Tool (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name, }
+\item[{const char $\ast$}]{serial\+Number, }
+\item[{const char $\ast$}]{tool\+Definition\+File}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_n_d_i_serial_abfc2742f954c63b8b88464ced4c8c72e}
+\hypertarget{classmts_n_d_i_serial_a25982a00da395910da9515daf846c83e}{}\index{mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}!Beep@{Beep}}
+\index{Beep@{Beep}!mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}}
+\subsubsection[{Beep}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+N\+D\+I\+Serial\+::\+Beep (
+\begin{DoxyParamCaption}
+\item[{const int \&}]{number\+Of\+Beeps}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_n_d_i_serial_a25982a00da395910da9515daf846c83e}
+\hypertarget{classmts_n_d_i_serial_a8e8407248f820a59572c4057783d492b}{}\index{mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}!Calibrate\+Pivot@{Calibrate\+Pivot}}
+\index{Calibrate\+Pivot@{Calibrate\+Pivot}!mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}}
+\subsubsection[{Calibrate\+Pivot}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+N\+D\+I\+Serial\+::\+Calibrate\+Pivot (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{tool\+Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_n_d_i_serial_a8e8407248f820a59572c4057783d492b}
+\hypertarget{classmts_n_d_i_serial_a3b62c56eb465069a75c2597cdf0da592}{}\index{mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}!Check\+Tool@{Check\+Tool}}
+\index{Check\+Tool@{Check\+Tool}!mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}}
+\subsubsection[{Check\+Tool}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Tool}$\ast$ mts\+N\+D\+I\+Serial\+::\+Check\+Tool (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{serial\+Number}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_n_d_i_serial_a3b62c56eb465069a75c2597cdf0da592}
+\hypertarget{classmts_n_d_i_serial_adbc7806bbb9185b34d28933441665440}{}\index{mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}!Cleanup@{Cleanup}}
+\index{Cleanup@{Cleanup}!mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}}
+\subsubsection[{Cleanup}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+N\+D\+I\+Serial\+::\+Cleanup (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_n_d_i_serial_adbc7806bbb9185b34d28933441665440}
+Virtual method that gets overloaded, and is run after the component gets killed using \hyperlink{classmts_task_continuous_ad1f8145306e074fbea8baab3beef4c5b}{Kill()} method. 
+
+Reimplemented from \hyperlink{classmts_component_a891f330f4fde7d831dcf7dc537dc5e81}{mts\+Component}.
+
+\hypertarget{classmts_n_d_i_serial_a9366654f3d449d347c6a14b9b8252a9a}{}\index{mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}!Command\+Append@{Command\+Append}}
+\index{Command\+Append@{Command\+Append}!mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}}
+\subsubsection[{Command\+Append}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+N\+D\+I\+Serial\+::\+Command\+Append (
+\begin{DoxyParamCaption}
+\item[{const char}]{command}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_n_d_i_serial_a9366654f3d449d347c6a14b9b8252a9a}
+\hypertarget{classmts_n_d_i_serial_a2e12dd893750b4e5e64082f5b8993a05}{}\index{mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}!Command\+Append@{Command\+Append}}
+\index{Command\+Append@{Command\+Append}!mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}}
+\subsubsection[{Command\+Append}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+N\+D\+I\+Serial\+::\+Command\+Append (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{command}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_n_d_i_serial_a2e12dd893750b4e5e64082f5b8993a05}
+\hypertarget{classmts_n_d_i_serial_af1cc056933ad733c71f816f5b72085cb}{}\index{mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}!Command\+Append@{Command\+Append}}
+\index{Command\+Append@{Command\+Append}!mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}}
+\subsubsection[{Command\+Append}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+N\+D\+I\+Serial\+::\+Command\+Append (
+\begin{DoxyParamCaption}
+\item[{const int}]{command}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_n_d_i_serial_af1cc056933ad733c71f816f5b72085cb}
+\hypertarget{classmts_n_d_i_serial_a8a6ba78f9b80fdb24fd189422da7e4b5}{}\index{mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}!Command\+Initialize@{Command\+Initialize}}
+\index{Command\+Initialize@{Command\+Initialize}!mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}}
+\subsubsection[{Command\+Initialize}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+N\+D\+I\+Serial\+::\+Command\+Initialize (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_n_d_i_serial_a8a6ba78f9b80fdb24fd189422da7e4b5}
+\hypertarget{classmts_n_d_i_serial_a2c67f959ae4cf47b2046395d2e8c2104}{}\index{mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}!Command\+Send@{Command\+Send}}
+\index{Command\+Send@{Command\+Send}!mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}}
+\subsubsection[{Command\+Send}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+N\+D\+I\+Serial\+::\+Command\+Send (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_n_d_i_serial_a2c67f959ae4cf47b2046395d2e8c2104}
+\hypertarget{classmts_n_d_i_serial_aa69c858f9e2d77de24f60d001aaf8d1b}{}\index{mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}!Command\+Send@{Command\+Send}}
+\index{Command\+Send@{Command\+Send}!mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}}
+\subsubsection[{Command\+Send}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+N\+D\+I\+Serial\+::\+Command\+Send (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{command}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\label{classmts_n_d_i_serial_aa69c858f9e2d77de24f60d001aaf8d1b}
+\hypertarget{classmts_n_d_i_serial_a0687fdfd5546056b54ccb0d823349810}{}\index{mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}!Compute\+C\+R\+C@{Compute\+C\+R\+C}}
+\index{Compute\+C\+R\+C@{Compute\+C\+R\+C}!mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}}
+\subsubsection[{Compute\+C\+R\+C}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int mts\+N\+D\+I\+Serial\+::\+Compute\+C\+R\+C (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_n_d_i_serial_a0687fdfd5546056b54ccb0d823349810}
+\hypertarget{classmts_n_d_i_serial_a5e0f4bd8a0b80e7c2e64dae6f0dd8d93}{}\index{mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}!Configure@{Configure}}
+\index{Configure@{Configure}!mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}}
+\subsubsection[{Configure}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+N\+D\+I\+Serial\+::\+Configure (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{filename = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_n_d_i_serial_a5e0f4bd8a0b80e7c2e64dae6f0dd8d93}
+The virtual method so that the interface or tasks can configure themselves 
+
+Reimplemented from \hyperlink{classmts_component_ad872432876de7879dc96c232b411c146}{mts\+Component}.
+
+\hypertarget{classmts_n_d_i_serial_a55ed13bb299039b71fc05393588ffd0e}{}\index{mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}!Construct@{Construct}}
+\index{Construct@{Construct}!mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}}
+\subsubsection[{Construct}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+N\+D\+I\+Serial\+::\+Construct (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classmts_n_d_i_serial_a55ed13bb299039b71fc05393588ffd0e}
+\hypertarget{classmts_n_d_i_serial_a6289bff93113fd59d316094848370212}{}\index{mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}!Get\+Number\+Of\+Tools@{Get\+Number\+Of\+Tools}}
+\index{Get\+Number\+Of\+Tools@{Get\+Number\+Of\+Tools}!mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}}
+\subsubsection[{Get\+Number\+Of\+Tools}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t mts\+N\+D\+I\+Serial\+::\+Get\+Number\+Of\+Tools (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_n_d_i_serial_a6289bff93113fd59d316094848370212}
+\hypertarget{classmts_n_d_i_serial_ab92f85026b083a1fcdf9d922b3ab68f7}{}\index{mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}!Get\+Serial\+Buffer\+Available\+Size@{Get\+Serial\+Buffer\+Available\+Size}}
+\index{Get\+Serial\+Buffer\+Available\+Size@{Get\+Serial\+Buffer\+Available\+Size}!mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}}
+\subsubsection[{Get\+Serial\+Buffer\+Available\+Size}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t mts\+N\+D\+I\+Serial\+::\+Get\+Serial\+Buffer\+Available\+Size (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\label{classmts_n_d_i_serial_ab92f85026b083a1fcdf9d922b3ab68f7}
+\hypertarget{classmts_n_d_i_serial_ac8a27a2d361d54e18f42bbb781579f89}{}\index{mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}!Get\+Serial\+Buffer\+Size@{Get\+Serial\+Buffer\+Size}}
+\index{Get\+Serial\+Buffer\+Size@{Get\+Serial\+Buffer\+Size}!mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}}
+\subsubsection[{Get\+Serial\+Buffer\+Size}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t mts\+N\+D\+I\+Serial\+::\+Get\+Serial\+Buffer\+Size (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\label{classmts_n_d_i_serial_ac8a27a2d361d54e18f42bbb781579f89}
+\hypertarget{classmts_n_d_i_serial_a9f357b1e5da8c03386bb4dc2f1542bd1}{}\index{mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}!Get\+Serial\+Buffer\+String\+Size@{Get\+Serial\+Buffer\+String\+Size}}
+\index{Get\+Serial\+Buffer\+String\+Size@{Get\+Serial\+Buffer\+String\+Size}!mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}}
+\subsubsection[{Get\+Serial\+Buffer\+String\+Size}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t mts\+N\+D\+I\+Serial\+::\+Get\+Serial\+Buffer\+String\+Size (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\label{classmts_n_d_i_serial_a9f357b1e5da8c03386bb4dc2f1542bd1}
+\hypertarget{classmts_n_d_i_serial_a31848367d054d35027d2d4d8dae73bb9}{}\index{mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}!Get\+Tool\+Name@{Get\+Tool\+Name}}
+\index{Get\+Tool\+Name@{Get\+Tool\+Name}!mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}}
+\subsubsection[{Get\+Tool\+Name}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string mts\+N\+D\+I\+Serial\+::\+Get\+Tool\+Name (
+\begin{DoxyParamCaption}
+\item[{const unsigned int}]{index}
+\end{DoxyParamCaption}
+) const}\label{classmts_n_d_i_serial_a31848367d054d35027d2d4d8dae73bb9}
+\hypertarget{classmts_n_d_i_serial_a9e8848fd10c1eedf29ce83553c79f3fb}{}\index{mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}!Load\+Tool\+Definition\+File@{Load\+Tool\+Definition\+File}}
+\index{Load\+Tool\+Definition\+File@{Load\+Tool\+Definition\+File}!mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}}
+\subsubsection[{Load\+Tool\+Definition\+File}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+N\+D\+I\+Serial\+::\+Load\+Tool\+Definition\+File (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{port\+Handle, }
+\item[{const char $\ast$}]{file\+Path}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_n_d_i_serial_a9e8848fd10c1eedf29ce83553c79f3fb}
+\hypertarget{classmts_n_d_i_serial_a984ba3c4655830850f78dd27311ff8b2}{}\index{mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}!Port\+Handles\+Enable@{Port\+Handles\+Enable}}
+\index{Port\+Handles\+Enable@{Port\+Handles\+Enable}!mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}}
+\subsubsection[{Port\+Handles\+Enable}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+N\+D\+I\+Serial\+::\+Port\+Handles\+Enable (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classmts_n_d_i_serial_a984ba3c4655830850f78dd27311ff8b2}
+\hypertarget{classmts_n_d_i_serial_abd97ea132bdac2d4698445529f878027}{}\index{mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}!Port\+Handles\+Initialize@{Port\+Handles\+Initialize}}
+\index{Port\+Handles\+Initialize@{Port\+Handles\+Initialize}!mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}}
+\subsubsection[{Port\+Handles\+Initialize}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+N\+D\+I\+Serial\+::\+Port\+Handles\+Initialize (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classmts_n_d_i_serial_abd97ea132bdac2d4698445529f878027}
+\hypertarget{classmts_n_d_i_serial_a01fdad2bcde8d45ecae952fccb3b5750}{}\index{mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}!Port\+Handles\+Query@{Port\+Handles\+Query}}
+\index{Port\+Handles\+Query@{Port\+Handles\+Query}!mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}}
+\subsubsection[{Port\+Handles\+Query}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+N\+D\+I\+Serial\+::\+Port\+Handles\+Query (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classmts_n_d_i_serial_a01fdad2bcde8d45ecae952fccb3b5750}
+\hypertarget{classmts_n_d_i_serial_ad6ad01c2825a54df61bd248d53a14266}{}\index{mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}!Report\+Stray\+Markers@{Report\+Stray\+Markers}}
+\index{Report\+Stray\+Markers@{Report\+Stray\+Markers}!mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}}
+\subsubsection[{Report\+Stray\+Markers}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+N\+D\+I\+Serial\+::\+Report\+Stray\+Markers (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_n_d_i_serial_ad6ad01c2825a54df61bd248d53a14266}
+\hypertarget{classmts_n_d_i_serial_ae710bd6959672cf21a126b8d1dcaae0d}{}\index{mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}!Reset\+Serial\+Port@{Reset\+Serial\+Port}}
+\index{Reset\+Serial\+Port@{Reset\+Serial\+Port}!mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}}
+\subsubsection[{Reset\+Serial\+Port}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+N\+D\+I\+Serial\+::\+Reset\+Serial\+Port (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_n_d_i_serial_ae710bd6959672cf21a126b8d1dcaae0d}
+\hypertarget{classmts_n_d_i_serial_a69f428347e1556446792be003d9acbc7}{}\index{mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}!Response\+Check\+C\+R\+C@{Response\+Check\+C\+R\+C}}
+\index{Response\+Check\+C\+R\+C@{Response\+Check\+C\+R\+C}!mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}}
+\subsubsection[{Response\+Check\+C\+R\+C}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+N\+D\+I\+Serial\+::\+Response\+Check\+C\+R\+C (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_n_d_i_serial_a69f428347e1556446792be003d9acbc7}
+\hypertarget{classmts_n_d_i_serial_ae12efe6d7a99785ff11d5957ecf7bc9d}{}\index{mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}!Response\+Read@{Response\+Read}}
+\index{Response\+Read@{Response\+Read}!mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}}
+\subsubsection[{Response\+Read}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+N\+D\+I\+Serial\+::\+Response\+Read (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_n_d_i_serial_ae12efe6d7a99785ff11d5957ecf7bc9d}
+\hypertarget{classmts_n_d_i_serial_a843967c21008da12c0cef308560111dc}{}\index{mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}!Response\+Read@{Response\+Read}}
+\index{Response\+Read@{Response\+Read}!mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}}
+\subsubsection[{Response\+Read}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+N\+D\+I\+Serial\+::\+Response\+Read (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{expected\+Message}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_n_d_i_serial_a843967c21008da12c0cef308560111dc}
+\hypertarget{classmts_n_d_i_serial_a72e2d58128b11e5d376db3ec8b3b81cb}{}\index{mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}!Run@{Run}}
+\index{Run@{Run}!mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}}
+\subsubsection[{Run}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+N\+D\+I\+Serial\+::\+Run (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_n_d_i_serial_a72e2d58128b11e5d376db3ec8b3b81cb}
+Pure virtual method that gets overloaded to run the actual task. 
+
+Implements \hyperlink{classmts_task_a20e18c9479cb650792456c32ee689834}{mts\+Task}.
+
+\hypertarget{classmts_n_d_i_serial_a23de00ad1b5a7008917998252c8b0b05}{}\index{mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}!Set\+Serial\+Port\+Settings@{Set\+Serial\+Port\+Settings}}
+\index{Set\+Serial\+Port\+Settings@{Set\+Serial\+Port\+Settings}!mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}}
+\subsubsection[{Set\+Serial\+Port\+Settings}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+N\+D\+I\+Serial\+::\+Set\+Serial\+Port\+Settings (
+\begin{DoxyParamCaption}
+\item[{{\bf osa\+Serial\+Port\+::\+Baud\+Rate\+Type}}]{baud\+Rate, }
+\item[{{\bf osa\+Serial\+Port\+::\+Character\+Size\+Type}}]{character\+Size, }
+\item[{{\bf osa\+Serial\+Port\+::\+Parity\+Checking\+Type}}]{parity\+Checking, }
+\item[{{\bf osa\+Serial\+Port\+::\+Stop\+Bits\+Type}}]{stop\+Bits, }
+\item[{{\bf osa\+Serial\+Port\+::\+Flow\+Control\+Type}}]{flow\+Control}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_n_d_i_serial_a23de00ad1b5a7008917998252c8b0b05}
+\hypertarget{classmts_n_d_i_serial_a5a398ff09fd191621c849e527b1809ed}{}\index{mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}!Startup@{Startup}}
+\index{Startup@{Startup}!mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}}
+\subsubsection[{Startup}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+N\+D\+I\+Serial\+::\+Startup (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classmts_n_d_i_serial_a5a398ff09fd191621c849e527b1809ed}
+Virtual method that gets overloaded, and is run before the component is started. 
+
+Reimplemented from \hyperlink{classmts_component_aaf28f0262b44eb6866e10089a02fa6e4}{mts\+Component}.
+
+\hypertarget{classmts_n_d_i_serial_ad75c633cc225f9c2b9a22ba7916d734f}{}\index{mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}!Toggle\+Tracking@{Toggle\+Tracking}}
+\index{Toggle\+Tracking@{Toggle\+Tracking}!mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}}
+\subsubsection[{Toggle\+Tracking}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+N\+D\+I\+Serial\+::\+Toggle\+Tracking (
+\begin{DoxyParamCaption}
+\item[{const bool \&}]{track}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_n_d_i_serial_ad75c633cc225f9c2b9a22ba7916d734f}
+\hypertarget{classmts_n_d_i_serial_a77daeb77f8acf7a18d062eaa7c400d76}{}\index{mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}!Track@{Track}}
+\index{Track@{Track}!mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}}
+\subsubsection[{Track}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+N\+D\+I\+Serial\+::\+Track (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_n_d_i_serial_a77daeb77f8acf7a18d062eaa7c400d76}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classmts_n_d_i_serial_a9908b1079e158ad8d708d5ff00bd953f}{}\index{mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}!Is\+Tracking@{Is\+Tracking}}
+\index{Is\+Tracking@{Is\+Tracking}!mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}}
+\subsubsection[{Is\+Tracking}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+N\+D\+I\+Serial\+::\+Is\+Tracking\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_n_d_i_serial_a9908b1079e158ad8d708d5ff00bd953f}
+\hypertarget{classmts_n_d_i_serial_a9e780c436ba6d57152ef11c722771034}{}\index{mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}!Port\+To\+Tool@{Port\+To\+Tool}}
+\index{Port\+To\+Tool@{Port\+To\+Tool}!mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}}
+\subsubsection[{Port\+To\+Tool}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cmn\+Named\+Map}$<${\bf Tool}$>$ mts\+N\+D\+I\+Serial\+::\+Port\+To\+Tool\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_n_d_i_serial_a9e780c436ba6d57152ef11c722771034}
+\hypertarget{classmts_n_d_i_serial_a09bb13f36457efa0528f4ca880ce1891}{}\index{mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}!Read\+Timeout@{Read\+Timeout}}
+\index{Read\+Timeout@{Read\+Timeout}!mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}}
+\subsubsection[{Read\+Timeout}]{\setlength{\rightskip}{0pt plus 5cm}double mts\+N\+D\+I\+Serial\+::\+Read\+Timeout\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_n_d_i_serial_a09bb13f36457efa0528f4ca880ce1891}
+\hypertarget{classmts_n_d_i_serial_a78f53a7d4b1caa4fca9ee1a835ed16be}{}\index{mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}!Response\+Timer@{Response\+Timer}}
+\index{Response\+Timer@{Response\+Timer}!mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}}
+\subsubsection[{Response\+Timer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf osa\+Stopwatch} mts\+N\+D\+I\+Serial\+::\+Response\+Timer\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_n_d_i_serial_a78f53a7d4b1caa4fca9ee1a835ed16be}
+\hypertarget{classmts_n_d_i_serial_ae5b23b322f963e10ebcc04902864eebf}{}\index{mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}!Serial\+Buffer@{Serial\+Buffer}}
+\index{Serial\+Buffer@{Serial\+Buffer}!mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}}
+\subsubsection[{Serial\+Buffer}]{\setlength{\rightskip}{0pt plus 5cm}char mts\+N\+D\+I\+Serial\+::\+Serial\+Buffer\mbox{[}{\bf M\+A\+X\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+Z\+E}\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_n_d_i_serial_ae5b23b322f963e10ebcc04902864eebf}
+\hypertarget{classmts_n_d_i_serial_a7017ac2bda0bd5a4aa0d8dc8e4aaf2f8}{}\index{mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}!Serial\+Buffer\+Pointer@{Serial\+Buffer\+Pointer}}
+\index{Serial\+Buffer\+Pointer@{Serial\+Buffer\+Pointer}!mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}}
+\subsubsection[{Serial\+Buffer\+Pointer}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ mts\+N\+D\+I\+Serial\+::\+Serial\+Buffer\+Pointer\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_n_d_i_serial_a7017ac2bda0bd5a4aa0d8dc8e4aaf2f8}
+\hypertarget{classmts_n_d_i_serial_a76b386e7f977b85ee1e48f7126063aa7}{}\index{mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}!Serial\+Port@{Serial\+Port}}
+\index{Serial\+Port@{Serial\+Port}!mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}}
+\subsubsection[{Serial\+Port}]{\setlength{\rightskip}{0pt plus 5cm}{\bf osa\+Serial\+Port} mts\+N\+D\+I\+Serial\+::\+Serial\+Port\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_n_d_i_serial_a76b386e7f977b85ee1e48f7126063aa7}
+\hypertarget{classmts_n_d_i_serial_a061167330c608d025a0d6a6c9782b552}{}\index{mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}!Stray\+Markers@{Stray\+Markers}}
+\index{Stray\+Markers@{Stray\+Markers}!mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}}
+\subsubsection[{Stray\+Markers}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+Matrix}$<$double$>$ mts\+N\+D\+I\+Serial\+::\+Stray\+Markers\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_n_d_i_serial_a061167330c608d025a0d6a6c9782b552}
+\hypertarget{classmts_n_d_i_serial_adae8811079b92709d39a1818eba867c1}{}\index{mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}!Tools@{Tools}}
+\index{Tools@{Tools}!mts\+N\+D\+I\+Serial@{mts\+N\+D\+I\+Serial}}
+\subsubsection[{Tools}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Tools\+Type} mts\+N\+D\+I\+Serial\+::\+Tools\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_n_d_i_serial_adae8811079b92709d39a1818eba867c1}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/saw\+N\+D\+I\+Tracker/include/saw\+N\+D\+I\+Tracker/\hyperlink{mts_n_d_i_serial_8h}{mts\+N\+D\+I\+Serial.\+h}\end{DoxyCompactItemize}

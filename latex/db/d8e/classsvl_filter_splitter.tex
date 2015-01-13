@@ -1,0 +1,122 @@
+\hypertarget{classsvl_filter_splitter}{}\section{svl\+Filter\+Splitter Class Reference}
+\label{classsvl_filter_splitter}\index{svl\+Filter\+Splitter@{svl\+Filter\+Splitter}}
+
+
+{\ttfamily \#include $<$svl\+Filter\+Splitter.\+h$>$}
+
+Inheritance diagram for svl\+Filter\+Splitter\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{db/d8e/classsvl_filter_splitter}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef svl\+Filter\+Splitter\+Types\+::\+Output\+Info \hyperlink{classsvl_filter_splitter_a21cb33e85d6f3ebafae8b753210a9ff9}{Output\+Info}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsvl_filter_splitter_a50e97bbd5a557965a57c9886db15e262}{svl\+Filter\+Splitter} ()
+\item 
+int \hyperlink{classsvl_filter_splitter_aed61ad571ff07d744e0252435620b10e}{Add\+Output} (const std\+::string \&name, const unsigned int threadcount=1, const unsigned int buffersize=1)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual int \hyperlink{classsvl_filter_splitter_aae74dd944065c9bcc5c24b84afd9d156}{On\+Connect\+Input} (\hyperlink{classsvl_filter_input}{svl\+Filter\+Input} \&input, \hyperlink{svl_definitions_8h_aa00696d338a58db361335a01fd11e122}{svl\+Stream\+Type} type)
+\item 
+virtual int \hyperlink{classsvl_filter_splitter_a2394a3bdc2bf89f6c2a9ae8e54c313cb}{Initialize} (\hyperlink{classsvl_sample}{svl\+Sample} $\ast$sync\+Input, \hyperlink{classsvl_sample}{svl\+Sample} $\ast$\&sync\+Output)
+\item 
+virtual int \hyperlink{classsvl_filter_splitter_a9bafc13fca5bae8c84e60c3319232e5f}{Process} (\hyperlink{structsvl_proc_info}{svl\+Proc\+Info} $\ast$proc\+Info, \hyperlink{classsvl_sample}{svl\+Sample} $\ast$sync\+Input, \hyperlink{classsvl_sample}{svl\+Sample} $\ast$\&sync\+Output)
+\item 
+virtual void \hyperlink{classsvl_filter_splitter_ad5d0d60919252239a27aede398836a41}{Create\+Interfaces} ()
+\item 
+virtual void \hyperlink{classsvl_filter_splitter_a3e856c49e9b665b788aca465b027a3fb}{Add\+Output\+Command} (const \hyperlink{classsvl_filter_splitter_a21cb33e85d6f3ebafae8b753210a9ff9}{Output\+Info} \&output)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classsvl_filter_splitter_a21cb33e85d6f3ebafae8b753210a9ff9}{}\index{svl\+Filter\+Splitter@{svl\+Filter\+Splitter}!Output\+Info@{Output\+Info}}
+\index{Output\+Info@{Output\+Info}!svl\+Filter\+Splitter@{svl\+Filter\+Splitter}}
+\subsubsection[{Output\+Info}]{\setlength{\rightskip}{0pt plus 5cm}typedef svl\+Filter\+Splitter\+Types\+::\+Output\+Info {\bf svl\+Filter\+Splitter\+::\+Output\+Info}}\label{classsvl_filter_splitter_a21cb33e85d6f3ebafae8b753210a9ff9}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classsvl_filter_splitter_a50e97bbd5a557965a57c9886db15e262}{}\index{svl\+Filter\+Splitter@{svl\+Filter\+Splitter}!svl\+Filter\+Splitter@{svl\+Filter\+Splitter}}
+\index{svl\+Filter\+Splitter@{svl\+Filter\+Splitter}!svl\+Filter\+Splitter@{svl\+Filter\+Splitter}}
+\subsubsection[{svl\+Filter\+Splitter}]{\setlength{\rightskip}{0pt plus 5cm}svl\+Filter\+Splitter\+::svl\+Filter\+Splitter (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classsvl_filter_splitter_a50e97bbd5a557965a57c9886db15e262}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classsvl_filter_splitter_aed61ad571ff07d744e0252435620b10e}{}\index{svl\+Filter\+Splitter@{svl\+Filter\+Splitter}!Add\+Output@{Add\+Output}}
+\index{Add\+Output@{Add\+Output}!svl\+Filter\+Splitter@{svl\+Filter\+Splitter}}
+\subsubsection[{Add\+Output}]{\setlength{\rightskip}{0pt plus 5cm}int svl\+Filter\+Splitter\+::\+Add\+Output (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name, }
+\item[{const unsigned int}]{threadcount = {\ttfamily 1}, }
+\item[{const unsigned int}]{buffersize = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)}\label{classsvl_filter_splitter_aed61ad571ff07d744e0252435620b10e}
+\hypertarget{classsvl_filter_splitter_a3e856c49e9b665b788aca465b027a3fb}{}\index{svl\+Filter\+Splitter@{svl\+Filter\+Splitter}!Add\+Output\+Command@{Add\+Output\+Command}}
+\index{Add\+Output\+Command@{Add\+Output\+Command}!svl\+Filter\+Splitter@{svl\+Filter\+Splitter}}
+\subsubsection[{Add\+Output\+Command}]{\setlength{\rightskip}{0pt plus 5cm}virtual void svl\+Filter\+Splitter\+::\+Add\+Output\+Command (
+\begin{DoxyParamCaption}
+\item[{const {\bf Output\+Info} \&}]{output}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classsvl_filter_splitter_a3e856c49e9b665b788aca465b027a3fb}
+\hypertarget{classsvl_filter_splitter_ad5d0d60919252239a27aede398836a41}{}\index{svl\+Filter\+Splitter@{svl\+Filter\+Splitter}!Create\+Interfaces@{Create\+Interfaces}}
+\index{Create\+Interfaces@{Create\+Interfaces}!svl\+Filter\+Splitter@{svl\+Filter\+Splitter}}
+\subsubsection[{Create\+Interfaces}]{\setlength{\rightskip}{0pt plus 5cm}virtual void svl\+Filter\+Splitter\+::\+Create\+Interfaces (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classsvl_filter_splitter_ad5d0d60919252239a27aede398836a41}
+\hypertarget{classsvl_filter_splitter_a2394a3bdc2bf89f6c2a9ae8e54c313cb}{}\index{svl\+Filter\+Splitter@{svl\+Filter\+Splitter}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!svl\+Filter\+Splitter@{svl\+Filter\+Splitter}}
+\subsubsection[{Initialize}]{\setlength{\rightskip}{0pt plus 5cm}virtual int svl\+Filter\+Splitter\+::\+Initialize (
+\begin{DoxyParamCaption}
+\item[{{\bf svl\+Sample} $\ast$}]{sync\+Input, }
+\item[{{\bf svl\+Sample} $\ast$\&}]{sync\+Output}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classsvl_filter_splitter_a2394a3bdc2bf89f6c2a9ae8e54c313cb}
+
+
+Implements \hyperlink{classsvl_filter_base_ac8eddcd9336c2b381facc8fb372e3bfb}{svl\+Filter\+Base}.
+
+\hypertarget{classsvl_filter_splitter_aae74dd944065c9bcc5c24b84afd9d156}{}\index{svl\+Filter\+Splitter@{svl\+Filter\+Splitter}!On\+Connect\+Input@{On\+Connect\+Input}}
+\index{On\+Connect\+Input@{On\+Connect\+Input}!svl\+Filter\+Splitter@{svl\+Filter\+Splitter}}
+\subsubsection[{On\+Connect\+Input}]{\setlength{\rightskip}{0pt plus 5cm}virtual int svl\+Filter\+Splitter\+::\+On\+Connect\+Input (
+\begin{DoxyParamCaption}
+\item[{{\bf svl\+Filter\+Input} \&}]{input, }
+\item[{{\bf svl\+Stream\+Type}}]{type}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classsvl_filter_splitter_aae74dd944065c9bcc5c24b84afd9d156}
+
+
+Reimplemented from \hyperlink{classsvl_filter_base_a7716e657fb8b592cbf31ad78cdb4c0e7}{svl\+Filter\+Base}.
+
+\hypertarget{classsvl_filter_splitter_a9bafc13fca5bae8c84e60c3319232e5f}{}\index{svl\+Filter\+Splitter@{svl\+Filter\+Splitter}!Process@{Process}}
+\index{Process@{Process}!svl\+Filter\+Splitter@{svl\+Filter\+Splitter}}
+\subsubsection[{Process}]{\setlength{\rightskip}{0pt plus 5cm}virtual int svl\+Filter\+Splitter\+::\+Process (
+\begin{DoxyParamCaption}
+\item[{{\bf svl\+Proc\+Info} $\ast$}]{proc\+Info, }
+\item[{{\bf svl\+Sample} $\ast$}]{sync\+Input, }
+\item[{{\bf svl\+Sample} $\ast$\&}]{sync\+Output}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classsvl_filter_splitter_a9bafc13fca5bae8c84e60c3319232e5f}
+
+
+Implements \hyperlink{classsvl_filter_base_aaff77d711088384d00e717fb4ec88aab}{svl\+Filter\+Base}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Stereo\+Vision/\hyperlink{svl_filter_splitter_8h}{svl\+Filter\+Splitter.\+h}\end{DoxyCompactItemize}

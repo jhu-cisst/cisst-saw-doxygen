@@ -1,0 +1,176 @@
+\hypertarget{classosa_g_l_u_t_manipulator}{}\section{osa\+G\+L\+U\+T\+Manipulator Class Reference}
+\label{classosa_g_l_u_t_manipulator}\index{osa\+G\+L\+U\+T\+Manipulator@{osa\+G\+L\+U\+T\+Manipulator}}
+
+
+{\ttfamily \#include $<$osa\+G\+L\+U\+T\+Manipulator.\+h$>$}
+
+Inheritance diagram for osa\+G\+L\+U\+T\+Manipulator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{dd/dfc/classosa_g_l_u_t_manipulator}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classosa_g_l_u_t_manipulator_a5789dc8cc50d56e9fdf515bb56a7267a}{osa\+G\+L\+U\+T\+Manipulator} (const std\+::vector$<$ std\+::string $>$ \&geomfiles, const \hyperlink{classvct_frame4x4}{vct\+Frame4x4}$<$ double $>$ \&\hyperlink{classrob_manipulator_ab48d9d9a166bf252698bc35788ca6ad6}{Rtw0}, const std\+::string \&robotfn, const \hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \&qinit, const std\+::string \&basefile, bool rotate\+X90=false)
+\begin{DoxyCompactList}\small\item\em G\+L\+U\+T Manipulator generic constructor. \end{DoxyCompactList}\item 
+\hyperlink{classosa_g_l_u_t_manipulator_acee9eac89fd7f17ed04c3b4eaa77186b}{osa\+G\+L\+U\+T\+Manipulator} (const std\+::vector$<$ std\+::string $>$ \&geomfiles, const \hyperlink{vct_transformation_types_8h_a81feda0a02c2d1bc26e5553f409fed20}{vct\+Frm3} \&\hyperlink{classrob_manipulator_ab48d9d9a166bf252698bc35788ca6ad6}{Rtw0}, const std\+::string \&robotfn, const \hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \&qinit, const std\+::string \&basefile, bool rotate\+X90=false)
+\begin{DoxyCompactList}\small\item\em G\+L\+U\+T Manipulator generic constructor. \end{DoxyCompactList}\item 
+\hyperlink{classosa_g_l_u_t_manipulator_a59a1dcf9af4835767f8f4d162c6d5f49}{$\sim$osa\+G\+L\+U\+T\+Manipulator} ()
+\item 
+void \hyperlink{classosa_g_l_u_t_manipulator_a430da0b6621741e41f396bb0910988ba}{Initialize} (const std\+::vector$<$ std\+::string $>$ \&geomfiles, const std\+::string \&basefile, bool rotate\+X90)
+\item 
+virtual bool \hyperlink{classosa_g_l_u_t_manipulator_a7ac591a4bd3a3c85ca6e69f8c24af9b6}{Get\+Positions} (\hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \&\hyperlink{classosa_g_l_u_t_manipulator_aaa03cdd6825dd64f23586ab753579ffa}{q}) const 
+\begin{DoxyCompactList}\small\item\em Return the joints positions. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classosa_g_l_u_t_manipulator_aab0829d6d76165db89b2d8e0d50d5a4d}{Set\+Positions} (const \hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \&\hyperlink{classosa_g_l_u_t_manipulator_aaa03cdd6825dd64f23586ab753579ffa}{q})
+\begin{DoxyCompactList}\small\item\em Set the joint position. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \hyperlink{classosa_g_l_u_t_manipulator_aaa03cdd6825dd64f23586ab753579ffa}{q}
+\begin{DoxyCompactList}\small\item\em Store the current joints values. \end{DoxyCompactList}\item 
+osa\+Mesh\+Triangular $\ast$ \hyperlink{classosa_g_l_u_t_manipulator_a35862797c40d1a7bf6bf98cb3cec86a8}{base}
+\item 
+std\+::vector$<$ osa\+Mesh\+Triangular $\ast$ $>$ \hyperlink{classosa_g_l_u_t_manipulator_a72841d530b9d0d41cb22cbad04087e34}{meshes}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classosa_g_l_u_t_manipulator_a5789dc8cc50d56e9fdf515bb56a7267a}{}\index{osa\+G\+L\+U\+T\+Manipulator@{osa\+G\+L\+U\+T\+Manipulator}!osa\+G\+L\+U\+T\+Manipulator@{osa\+G\+L\+U\+T\+Manipulator}}
+\index{osa\+G\+L\+U\+T\+Manipulator@{osa\+G\+L\+U\+T\+Manipulator}!osa\+G\+L\+U\+T\+Manipulator@{osa\+G\+L\+U\+T\+Manipulator}}
+\subsubsection[{osa\+G\+L\+U\+T\+Manipulator}]{\setlength{\rightskip}{0pt plus 5cm}osa\+G\+L\+U\+T\+Manipulator\+::osa\+G\+L\+U\+T\+Manipulator (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ std\+::string $>$ \&}]{geomfiles, }
+\item[{const {\bf vct\+Frame4x4}$<$ double $>$ \&}]{Rtw0, }
+\item[{const std\+::string \&}]{robotfn, }
+\item[{const {\bf vct\+Double\+Vec} \&}]{qinit, }
+\item[{const std\+::string \&}]{basefile, }
+\item[{bool}]{rotate\+X90 = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\label{classosa_g_l_u_t_manipulator_a5789dc8cc50d56e9fdf515bb56a7267a}
+
+
+G\+L\+U\+T Manipulator generic constructor. 
+
+This constructor initializes a G\+L\+U\+T manipulator with the kinematics and dynamics contained in a file. Plus it initializes the G\+L\+U\+T elements of the manipulators (bodies and joints) for the engine. 
+\begin{DoxyParams}{Parameters}
+{\em geomfiles} & A vector of 3\+D model file names \\
+\hline
+{\em Rtw0} & The offset transformation of the robot base \\
+\hline
+{\em robotfn} & The file with the kinematics and dynamics parameters \\
+\hline
+{\em qinit} & The initial joint angles \\
+\hline
+{\em basefile} & The file name of the base 3\+D model \\
+\hline
+\end{DoxyParams}
+\hypertarget{classosa_g_l_u_t_manipulator_acee9eac89fd7f17ed04c3b4eaa77186b}{}\index{osa\+G\+L\+U\+T\+Manipulator@{osa\+G\+L\+U\+T\+Manipulator}!osa\+G\+L\+U\+T\+Manipulator@{osa\+G\+L\+U\+T\+Manipulator}}
+\index{osa\+G\+L\+U\+T\+Manipulator@{osa\+G\+L\+U\+T\+Manipulator}!osa\+G\+L\+U\+T\+Manipulator@{osa\+G\+L\+U\+T\+Manipulator}}
+\subsubsection[{osa\+G\+L\+U\+T\+Manipulator}]{\setlength{\rightskip}{0pt plus 5cm}osa\+G\+L\+U\+T\+Manipulator\+::osa\+G\+L\+U\+T\+Manipulator (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ std\+::string $>$ \&}]{geomfiles, }
+\item[{const {\bf vct\+Frm3} \&}]{Rtw0, }
+\item[{const std\+::string \&}]{robotfn, }
+\item[{const {\bf vct\+Double\+Vec} \&}]{qinit, }
+\item[{const std\+::string \&}]{basefile, }
+\item[{bool}]{rotate\+X90 = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\label{classosa_g_l_u_t_manipulator_acee9eac89fd7f17ed04c3b4eaa77186b}
+
+
+G\+L\+U\+T Manipulator generic constructor. 
+
+This constructor initializes a G\+L\+U\+T manipulator with the kinematics and dynamics contained in a file. Plus it initializes the G\+L\+U\+T elements of the manipulators (bodies and joints) for the engine. 
+\begin{DoxyParams}{Parameters}
+{\em geomfiles} & A vector of 3\+D model file names \\
+\hline
+{\em Rtw0} & The offset transformation of the robot base \\
+\hline
+{\em robotfn} & The file with the kinematics and dynamics parameters \\
+\hline
+{\em qinit} & The initial joint angles \\
+\hline
+{\em basefile} & The file name of the base 3\+D model \\
+\hline
+\end{DoxyParams}
+\hypertarget{classosa_g_l_u_t_manipulator_a59a1dcf9af4835767f8f4d162c6d5f49}{}\index{osa\+G\+L\+U\+T\+Manipulator@{osa\+G\+L\+U\+T\+Manipulator}!````~osa\+G\+L\+U\+T\+Manipulator@{$\sim$osa\+G\+L\+U\+T\+Manipulator}}
+\index{````~osa\+G\+L\+U\+T\+Manipulator@{$\sim$osa\+G\+L\+U\+T\+Manipulator}!osa\+G\+L\+U\+T\+Manipulator@{osa\+G\+L\+U\+T\+Manipulator}}
+\subsubsection[{$\sim$osa\+G\+L\+U\+T\+Manipulator}]{\setlength{\rightskip}{0pt plus 5cm}osa\+G\+L\+U\+T\+Manipulator\+::$\sim$osa\+G\+L\+U\+T\+Manipulator (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classosa_g_l_u_t_manipulator_a59a1dcf9af4835767f8f4d162c6d5f49}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classosa_g_l_u_t_manipulator_a7ac591a4bd3a3c85ca6e69f8c24af9b6}{}\index{osa\+G\+L\+U\+T\+Manipulator@{osa\+G\+L\+U\+T\+Manipulator}!Get\+Positions@{Get\+Positions}}
+\index{Get\+Positions@{Get\+Positions}!osa\+G\+L\+U\+T\+Manipulator@{osa\+G\+L\+U\+T\+Manipulator}}
+\subsubsection[{Get\+Positions}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool osa\+G\+L\+U\+T\+Manipulator\+::\+Get\+Positions (
+\begin{DoxyParamCaption}
+\item[{{\bf vct\+Double\+Vec} \&}]{q}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{classosa_g_l_u_t_manipulator_a7ac591a4bd3a3c85ca6e69f8c24af9b6}
+
+
+Return the joints positions. 
+
+Query each joint and return the joint positions 
+\begin{DoxyParams}{Parameters}
+{\em q\mbox{[}in\mbox{]}} & A vector of joints positions \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if successfull. false otherwise. 
+\end{DoxyReturn}
+\hypertarget{classosa_g_l_u_t_manipulator_a430da0b6621741e41f396bb0910988ba}{}\index{osa\+G\+L\+U\+T\+Manipulator@{osa\+G\+L\+U\+T\+Manipulator}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!osa\+G\+L\+U\+T\+Manipulator@{osa\+G\+L\+U\+T\+Manipulator}}
+\subsubsection[{Initialize}]{\setlength{\rightskip}{0pt plus 5cm}void osa\+G\+L\+U\+T\+Manipulator\+::\+Initialize (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ std\+::string $>$ \&}]{geomfiles, }
+\item[{const std\+::string \&}]{basefile, }
+\item[{bool}]{rotate\+X90}
+\end{DoxyParamCaption}
+)}\label{classosa_g_l_u_t_manipulator_a430da0b6621741e41f396bb0910988ba}
+\hypertarget{classosa_g_l_u_t_manipulator_aab0829d6d76165db89b2d8e0d50d5a4d}{}\index{osa\+G\+L\+U\+T\+Manipulator@{osa\+G\+L\+U\+T\+Manipulator}!Set\+Positions@{Set\+Positions}}
+\index{Set\+Positions@{Set\+Positions}!osa\+G\+L\+U\+T\+Manipulator@{osa\+G\+L\+U\+T\+Manipulator}}
+\subsubsection[{Set\+Positions}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool osa\+G\+L\+U\+T\+Manipulator\+::\+Set\+Positions (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Double\+Vec} \&}]{q}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classosa_g_l_u_t_manipulator_aab0829d6d76165db89b2d8e0d50d5a4d}
+
+
+Set the joint position. 
+
+This sets the position command and stores a local copy 
+\begin{DoxyParams}{Parameters}
+{\em q} & A vector of joint positions \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if successfull. false otherwise. 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classosa_g_l_u_t_manipulator_a35862797c40d1a7bf6bf98cb3cec86a8}{}\index{osa\+G\+L\+U\+T\+Manipulator@{osa\+G\+L\+U\+T\+Manipulator}!base@{base}}
+\index{base@{base}!osa\+G\+L\+U\+T\+Manipulator@{osa\+G\+L\+U\+T\+Manipulator}}
+\subsubsection[{base}]{\setlength{\rightskip}{0pt plus 5cm}osa\+Mesh\+Triangular$\ast$ osa\+G\+L\+U\+T\+Manipulator\+::base\hspace{0.3cm}{\ttfamily [protected]}}\label{classosa_g_l_u_t_manipulator_a35862797c40d1a7bf6bf98cb3cec86a8}
+\hypertarget{classosa_g_l_u_t_manipulator_a72841d530b9d0d41cb22cbad04087e34}{}\index{osa\+G\+L\+U\+T\+Manipulator@{osa\+G\+L\+U\+T\+Manipulator}!meshes@{meshes}}
+\index{meshes@{meshes}!osa\+G\+L\+U\+T\+Manipulator@{osa\+G\+L\+U\+T\+Manipulator}}
+\subsubsection[{meshes}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ osa\+Mesh\+Triangular$\ast$ $>$ osa\+G\+L\+U\+T\+Manipulator\+::meshes\hspace{0.3cm}{\ttfamily [protected]}}\label{classosa_g_l_u_t_manipulator_a72841d530b9d0d41cb22cbad04087e34}
+\hypertarget{classosa_g_l_u_t_manipulator_aaa03cdd6825dd64f23586ab753579ffa}{}\index{osa\+G\+L\+U\+T\+Manipulator@{osa\+G\+L\+U\+T\+Manipulator}!q@{q}}
+\index{q@{q}!osa\+G\+L\+U\+T\+Manipulator@{osa\+G\+L\+U\+T\+Manipulator}}
+\subsubsection[{q}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Double\+Vec} osa\+G\+L\+U\+T\+Manipulator\+::q\hspace{0.3cm}{\ttfamily [protected]}}\label{classosa_g_l_u_t_manipulator_aaa03cdd6825dd64f23586ab753579ffa}
+
+
+Store the current joints values. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/saw\+G\+L\+U\+T\+Simulator/include/saw\+G\+L\+U\+T\+Simulator/\hyperlink{osa_g_l_u_t_manipulator_8h}{osa\+G\+L\+U\+T\+Manipulator.\+h}\end{DoxyCompactItemize}

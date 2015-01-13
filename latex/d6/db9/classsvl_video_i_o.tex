@@ -1,0 +1,139 @@
+\hypertarget{classsvl_video_i_o}{}\section{svl\+Video\+I\+O Class Reference}
+\label{classsvl_video_i_o}\index{svl\+Video\+I\+O@{svl\+Video\+I\+O}}
+
+
+{\ttfamily \#include $<$svl\+Video\+I\+O.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structsvl_video_i_o_1_1___compression}{\+\_\+\+Compression}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structsvl_video_i_o_1_1___compression}{svl\+Video\+I\+O\+::\+\_\+\+Compression} \hyperlink{classsvl_video_i_o_a932d071ec9be4fefde824ab9b9125282}{Compression}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsvl_video_i_o_af736c01b3a1a65156b0669850be83979}{$\sim$svl\+Video\+I\+O} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \hyperlink{classsvl_video_i_o_aafee8df80c7830e8af4801d150799f87}{Dialog\+Codec} (const std\+::string \&filename, \hyperlink{classsvl_video_i_o_a932d071ec9be4fefde824ab9b9125282}{Compression} $\ast$$\ast$compression)
+\item 
+static int \hyperlink{classsvl_video_i_o_a18e44abea35da502f090ac595d04e30e}{Dialog\+File\+Path} (bool save, const std\+::string \&title, std\+::string \&filename)
+\item 
+static int \hyperlink{classsvl_video_i_o_aca352855266bbea4ea91f373dfe18a3d}{Get\+Format\+List} (std\+::string \&formatlist)
+\item 
+static int \hyperlink{classsvl_video_i_o_a8c47774e2f28ce0dbcf84092e5b79387}{Get\+Windows\+Extension\+Filter} (std\+::string \&filter)
+\item 
+static int \hyperlink{classsvl_video_i_o_afdf17eb75f0134fd6a2c76bd63dcd92e}{Get\+Extension} (const std\+::string \&filename, std\+::string \&extension)
+\item 
+static \hyperlink{classsvl_video_codec_base}{svl\+Video\+Codec\+Base} $\ast$ \hyperlink{classsvl_video_i_o_a4d73c788b036ed84b2ff64908bfc7824}{Get\+Codec} (const std\+::string \&filename)
+\item 
+static void \hyperlink{classsvl_video_i_o_a7963cfd278c6270427de8360d53c828b}{Release\+Codec} (\hyperlink{classsvl_video_codec_base}{svl\+Video\+Codec\+Base} $\ast$codec)
+\item 
+static int \hyperlink{classsvl_video_i_o_a8f7f857fa7d45c9ea24b1d632c9bb4f9}{Release\+Compression} (\hyperlink{classsvl_video_i_o_a932d071ec9be4fefde824ab9b9125282}{Compression} $\ast$compression)
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classsvl_video_i_o_a56ef4f6bb06b1dd81e565ac7bc110cbf}{svl\+Initialize\+Video\+Codecs} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classsvl_video_i_o_a932d071ec9be4fefde824ab9b9125282}{}\index{svl\+Video\+I\+O@{svl\+Video\+I\+O}!Compression@{Compression}}
+\index{Compression@{Compression}!svl\+Video\+I\+O@{svl\+Video\+I\+O}}
+\subsubsection[{Compression}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf svl\+Video\+I\+O\+::\+\_\+\+Compression}  {\bf svl\+Video\+I\+O\+::\+Compression}}\label{classsvl_video_i_o_a932d071ec9be4fefde824ab9b9125282}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classsvl_video_i_o_af736c01b3a1a65156b0669850be83979}{}\index{svl\+Video\+I\+O@{svl\+Video\+I\+O}!````~svl\+Video\+I\+O@{$\sim$svl\+Video\+I\+O}}
+\index{````~svl\+Video\+I\+O@{$\sim$svl\+Video\+I\+O}!svl\+Video\+I\+O@{svl\+Video\+I\+O}}
+\subsubsection[{$\sim$svl\+Video\+I\+O}]{\setlength{\rightskip}{0pt plus 5cm}svl\+Video\+I\+O\+::$\sim$svl\+Video\+I\+O (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classsvl_video_i_o_af736c01b3a1a65156b0669850be83979}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classsvl_video_i_o_aafee8df80c7830e8af4801d150799f87}{}\index{svl\+Video\+I\+O@{svl\+Video\+I\+O}!Dialog\+Codec@{Dialog\+Codec}}
+\index{Dialog\+Codec@{Dialog\+Codec}!svl\+Video\+I\+O@{svl\+Video\+I\+O}}
+\subsubsection[{Dialog\+Codec}]{\setlength{\rightskip}{0pt plus 5cm}static int svl\+Video\+I\+O\+::\+Dialog\+Codec (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{filename, }
+\item[{{\bf Compression} $\ast$$\ast$}]{compression}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classsvl_video_i_o_aafee8df80c7830e8af4801d150799f87}
+\hypertarget{classsvl_video_i_o_a18e44abea35da502f090ac595d04e30e}{}\index{svl\+Video\+I\+O@{svl\+Video\+I\+O}!Dialog\+File\+Path@{Dialog\+File\+Path}}
+\index{Dialog\+File\+Path@{Dialog\+File\+Path}!svl\+Video\+I\+O@{svl\+Video\+I\+O}}
+\subsubsection[{Dialog\+File\+Path}]{\setlength{\rightskip}{0pt plus 5cm}static int svl\+Video\+I\+O\+::\+Dialog\+File\+Path (
+\begin{DoxyParamCaption}
+\item[{bool}]{save, }
+\item[{const std\+::string \&}]{title, }
+\item[{std\+::string \&}]{filename}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classsvl_video_i_o_a18e44abea35da502f090ac595d04e30e}
+\hypertarget{classsvl_video_i_o_a4d73c788b036ed84b2ff64908bfc7824}{}\index{svl\+Video\+I\+O@{svl\+Video\+I\+O}!Get\+Codec@{Get\+Codec}}
+\index{Get\+Codec@{Get\+Codec}!svl\+Video\+I\+O@{svl\+Video\+I\+O}}
+\subsubsection[{Get\+Codec}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf svl\+Video\+Codec\+Base}$\ast$ svl\+Video\+I\+O\+::\+Get\+Codec (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{filename}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classsvl_video_i_o_a4d73c788b036ed84b2ff64908bfc7824}
+\hypertarget{classsvl_video_i_o_afdf17eb75f0134fd6a2c76bd63dcd92e}{}\index{svl\+Video\+I\+O@{svl\+Video\+I\+O}!Get\+Extension@{Get\+Extension}}
+\index{Get\+Extension@{Get\+Extension}!svl\+Video\+I\+O@{svl\+Video\+I\+O}}
+\subsubsection[{Get\+Extension}]{\setlength{\rightskip}{0pt plus 5cm}static int svl\+Video\+I\+O\+::\+Get\+Extension (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{filename, }
+\item[{std\+::string \&}]{extension}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classsvl_video_i_o_afdf17eb75f0134fd6a2c76bd63dcd92e}
+\hypertarget{classsvl_video_i_o_aca352855266bbea4ea91f373dfe18a3d}{}\index{svl\+Video\+I\+O@{svl\+Video\+I\+O}!Get\+Format\+List@{Get\+Format\+List}}
+\index{Get\+Format\+List@{Get\+Format\+List}!svl\+Video\+I\+O@{svl\+Video\+I\+O}}
+\subsubsection[{Get\+Format\+List}]{\setlength{\rightskip}{0pt plus 5cm}static int svl\+Video\+I\+O\+::\+Get\+Format\+List (
+\begin{DoxyParamCaption}
+\item[{std\+::string \&}]{formatlist}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classsvl_video_i_o_aca352855266bbea4ea91f373dfe18a3d}
+\hypertarget{classsvl_video_i_o_a8c47774e2f28ce0dbcf84092e5b79387}{}\index{svl\+Video\+I\+O@{svl\+Video\+I\+O}!Get\+Windows\+Extension\+Filter@{Get\+Windows\+Extension\+Filter}}
+\index{Get\+Windows\+Extension\+Filter@{Get\+Windows\+Extension\+Filter}!svl\+Video\+I\+O@{svl\+Video\+I\+O}}
+\subsubsection[{Get\+Windows\+Extension\+Filter}]{\setlength{\rightskip}{0pt plus 5cm}static int svl\+Video\+I\+O\+::\+Get\+Windows\+Extension\+Filter (
+\begin{DoxyParamCaption}
+\item[{std\+::string \&}]{filter}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classsvl_video_i_o_a8c47774e2f28ce0dbcf84092e5b79387}
+\hypertarget{classsvl_video_i_o_a7963cfd278c6270427de8360d53c828b}{}\index{svl\+Video\+I\+O@{svl\+Video\+I\+O}!Release\+Codec@{Release\+Codec}}
+\index{Release\+Codec@{Release\+Codec}!svl\+Video\+I\+O@{svl\+Video\+I\+O}}
+\subsubsection[{Release\+Codec}]{\setlength{\rightskip}{0pt plus 5cm}static void svl\+Video\+I\+O\+::\+Release\+Codec (
+\begin{DoxyParamCaption}
+\item[{{\bf svl\+Video\+Codec\+Base} $\ast$}]{codec}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classsvl_video_i_o_a7963cfd278c6270427de8360d53c828b}
+\hypertarget{classsvl_video_i_o_a8f7f857fa7d45c9ea24b1d632c9bb4f9}{}\index{svl\+Video\+I\+O@{svl\+Video\+I\+O}!Release\+Compression@{Release\+Compression}}
+\index{Release\+Compression@{Release\+Compression}!svl\+Video\+I\+O@{svl\+Video\+I\+O}}
+\subsubsection[{Release\+Compression}]{\setlength{\rightskip}{0pt plus 5cm}static int svl\+Video\+I\+O\+::\+Release\+Compression (
+\begin{DoxyParamCaption}
+\item[{{\bf Compression} $\ast$}]{compression}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classsvl_video_i_o_a8f7f857fa7d45c9ea24b1d632c9bb4f9}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classsvl_video_i_o_a56ef4f6bb06b1dd81e565ac7bc110cbf}{}\index{svl\+Video\+I\+O@{svl\+Video\+I\+O}!svl\+Initialize\+Video\+Codecs@{svl\+Initialize\+Video\+Codecs}}
+\index{svl\+Initialize\+Video\+Codecs@{svl\+Initialize\+Video\+Codecs}!svl\+Video\+I\+O@{svl\+Video\+I\+O}}
+\subsubsection[{svl\+Initialize\+Video\+Codecs}]{\setlength{\rightskip}{0pt plus 5cm}void svl\+Initialize\+Video\+Codecs (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\label{classsvl_video_i_o_a56ef4f6bb06b1dd81e565ac7bc110cbf}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Stereo\+Vision/\hyperlink{svl_video_i_o_8h}{svl\+Video\+I\+O.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,66 @@
+\hypertarget{mts_open_i_g_t_link_8h}{}\section{/\+Users/anton/devel/cisst-\/saw/saw\+Open\+I\+G\+T\+Link/include/saw\+Open\+I\+G\+T\+Link/mts\+Open\+I\+G\+T\+Link.h File Reference}
+\label{mts_open_i_g_t_link_8h}\index{/\+Users/anton/devel/cisst-\/saw/saw\+Open\+I\+G\+T\+Link/include/saw\+Open\+I\+G\+T\+Link/mts\+Open\+I\+G\+T\+Link.\+h@{/\+Users/anton/devel/cisst-\/saw/saw\+Open\+I\+G\+T\+Link/include/saw\+Open\+I\+G\+T\+Link/mts\+Open\+I\+G\+T\+Link.\+h}}
+
+
+S\+A\+W component for establishing a network connection via Open\+I\+G\+T\+Link protocol.
+
+The component may be configured as a server by providing a target hostname/\+I\+P and a port number (delimited by \char`\"{}\+:\char`\"{}), or as a client by simply omitting the host.  
+
+
+{\ttfamily \#include $<$cisst\+O\+S\+Abstraction/osa\+Socket.\+h$>$}\\*
+{\ttfamily \#include $<$cisst\+O\+S\+Abstraction/osa\+Socket\+Server.\+h$>$}\\*
+{\ttfamily \#include $<$cisst\+Multi\+Task/mts\+Task\+Periodic.\+h$>$}\\*
+{\ttfamily \#include $<$cisst\+Parameter\+Types/prm\+Position\+Cartesian\+Get.\+h$>$}\\*
+{\ttfamily \#include $<$saw\+Open\+I\+G\+T\+Link/saw\+Open\+I\+G\+T\+Link\+Export.\+h$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classmts_open_i_g_t_link}{mts\+Open\+I\+G\+T\+Link}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{mts_open_i_g_t_link_8h_a96730a54959af05c84f09d1ecb0e435a}{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+I\+N\+S\+T\+A\+N\+T\+I\+A\+T\+I\+O\+N} (\hyperlink{classmts_open_i_g_t_link}{mts\+Open\+I\+G\+T\+Link})
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+S\+A\+W component for establishing a network connection via Open\+I\+G\+T\+Link protocol.
+
+The component may be configured as a server by providing a target hostname/\+I\+P and a port number (delimited by \char`\"{}\+:\char`\"{}), or as a client by simply omitting the host. 
+
+
+\begin{DoxyCode}
+\hyperlink{classmts_open_i_g_t_link}{mtsOpenIGTLink} server(\textcolor{stringliteral}{"trackerServer"}, 50.0 * \hyperlink{cmn_units_8h_aaf4d3f2fafb9b4a95606544b9d876b4a}{cmn\_ms});
+server.Configure(\textcolor{stringliteral}{"18944"});
+\hyperlink{classmts_open_i_g_t_link}{mtsOpenIGTLink} client(\textcolor{stringliteral}{"trackerClient"}, 50.0 * \hyperlink{cmn_units_8h_aaf4d3f2fafb9b4a95606544b9d876b4a}{cmn\_ms});
+client.Configure(\textcolor{stringliteral}{"localhost:18944"});
+\end{DoxyCode}
+
+
+igtlutil library is required to compile and run the examples.
+
+S\+V\+N repository of the source code\+: \href{http://svn.na-mic.org/NAMICSandBox/trunk/OpenIGTLink}{\tt http\+://svn.\+na-\/mic.\+org/\+N\+A\+M\+I\+C\+Sand\+Box/trunk/\+Open\+I\+G\+T\+Link}
+
+Build instructions for various platforms\+: \href{http://www.na-mic.org/Wiki/index.php/OpenIGTLink/Library/Build}{\tt http\+://www.\+na-\/mic.\+org/\+Wiki/index.\+php/\+Open\+I\+G\+T\+Link/\+Library/\+Build}
+
+\begin{DoxyRefDesc}{Bug}
+\item[\hyperlink{bug__bug000002}{Bug}]Server is set up to handle a single client (\hyperlink{classosa_socket_server}{osa\+Socket\+Server} has support for multiple clients).\end{DoxyRefDesc}
+
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000017}{Todo}]Handle multiple connections by storing the returned socket pointer in an array. 
+
+Check for cyclic redundancy (C\+R\+C). 
+
+Handle message types besides T\+R\+A\+N\+S\+F\+O\+R\+M. \end{DoxyRefDesc}
+
+
+\subsection{Function Documentation}
+\hypertarget{mts_open_i_g_t_link_8h_a96730a54959af05c84f09d1ecb0e435a}{}\index{mts\+Open\+I\+G\+T\+Link.\+h@{mts\+Open\+I\+G\+T\+Link.\+h}!C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+I\+N\+S\+T\+A\+N\+T\+I\+A\+T\+I\+O\+N@{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+I\+N\+S\+T\+A\+N\+T\+I\+A\+T\+I\+O\+N}}
+\index{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+I\+N\+S\+T\+A\+N\+T\+I\+A\+T\+I\+O\+N@{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+I\+N\+S\+T\+A\+N\+T\+I\+A\+T\+I\+O\+N}!mts\+Open\+I\+G\+T\+Link.\+h@{mts\+Open\+I\+G\+T\+Link.\+h}}
+\subsubsection[{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+I\+N\+S\+T\+A\+N\+T\+I\+A\+T\+I\+O\+N}]{\setlength{\rightskip}{0pt plus 5cm}C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+I\+N\+S\+T\+A\+N\+T\+I\+A\+T\+I\+O\+N (
+\begin{DoxyParamCaption}
+\item[{{\bf mts\+Open\+I\+G\+T\+Link}}]{}
+\end{DoxyParamCaption}
+)}\label{mts_open_i_g_t_link_8h_a96730a54959af05c84f09d1ecb0e435a}

@@ -1,0 +1,165 @@
+\hypertarget{struct_command_handle}{}\section{Command\+Handle Struct Reference}
+\label{struct_command_handle}\index{Command\+Handle@{Command\+Handle}}
+
+
+{\ttfamily \#include $<$mts\+Socket\+Proxy\+Common.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \hyperlink{struct_command_handle_ae7573bd1432bee45409e244c2a5c0306a6366cbf15fab40b0bb3c9f783a961759}{C\+O\+M\+M\+A\+N\+D\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+S\+I\+Z\+E} = sizeof(long long int) + 2$\ast$sizeof(char)
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_command_handle_afe92d99aeb12a03cf4bcc68e10ae7755}{Command\+Handle} (char cmd, void $\ast$ptr)
+\item 
+\hyperlink{struct_command_handle_a6834384d05849cd823a4800e037f576f}{Command\+Handle} (const char $\ast$str)
+\item 
+\hyperlink{struct_command_handle_a6ea9a05d7df317f12eeabda23b051e9c}{Command\+Handle} (const std\+::string \&str)
+\item 
+\hyperlink{struct_command_handle_a2be1bbbf272ac00eaa8dba55cbd1e837}{$\sim$\+Command\+Handle} ()
+\item 
+bool \hyperlink{struct_command_handle_a95261a336ebfec3c66c9656f34060f08}{Is\+Valid} (void) const 
+\item 
+int \hyperlink{struct_command_handle_ad5d4150dfc87df30d372fcd2f8f56d3e}{To\+String} (char $\ast$str) const 
+\item 
+int \hyperlink{struct_command_handle_a42c25bb50e8d35e07c1d746f2707bf99}{To\+String} (std\+::string \&str) const 
+\item 
+int \hyperlink{struct_command_handle_a0b88bdf1322192759bf2f717e5dc5e36}{From\+String} (const char $\ast$str)
+\item 
+int \hyperlink{struct_command_handle_ae531510469527795717ef58694bd1ff9}{From\+String} (const std\+::string \&str)
+\item 
+bool \hyperlink{struct_command_handle_acfa0adeeb7df7faa3f8ab87bf79dd0b1}{operator==} (const \hyperlink{struct_command_handle}{Command\+Handle} \&other) const 
+\item 
+bool \hyperlink{struct_command_handle_ae0b3e737d9902ac018058e059255e95a}{operator!=} (const \hyperlink{struct_command_handle}{Command\+Handle} \&other) const 
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \hyperlink{struct_command_handle_ae9c941507829c47c46d9aa59259ae367}{Is\+Valid\+Type} (char cmd\+\_\+type)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+char \hyperlink{struct_command_handle_af84aa02e5b71b4ad1b1ede730d2a7a01}{cmd\+Type}
+\item 
+long long int \hyperlink{struct_command_handle_ae2114818d86a40414c7ab7045cc7dbf5}{addr}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{struct_command_handle_ae7573bd1432bee45409e244c2a5c0306}{}\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}\label{struct_command_handle_ae7573bd1432bee45409e244c2a5c0306}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{C\+O\+M\+M\+A\+N\+D\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+S\+I\+Z\+E@{C\+O\+M\+M\+A\+N\+D\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+S\+I\+Z\+E}!Command\+Handle@{Command\+Handle}}\index{Command\+Handle@{Command\+Handle}!C\+O\+M\+M\+A\+N\+D\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+S\+I\+Z\+E@{C\+O\+M\+M\+A\+N\+D\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+S\+I\+Z\+E}}\item[{\em 
+\hypertarget{struct_command_handle_ae7573bd1432bee45409e244c2a5c0306a6366cbf15fab40b0bb3c9f783a961759}{}C\+O\+M\+M\+A\+N\+D\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+S\+I\+Z\+E\label{struct_command_handle_ae7573bd1432bee45409e244c2a5c0306a6366cbf15fab40b0bb3c9f783a961759}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{struct_command_handle_afe92d99aeb12a03cf4bcc68e10ae7755}{}\index{Command\+Handle@{Command\+Handle}!Command\+Handle@{Command\+Handle}}
+\index{Command\+Handle@{Command\+Handle}!Command\+Handle@{Command\+Handle}}
+\subsubsection[{Command\+Handle}]{\setlength{\rightskip}{0pt plus 5cm}Command\+Handle\+::\+Command\+Handle (
+\begin{DoxyParamCaption}
+\item[{char}]{cmd, }
+\item[{void $\ast$}]{ptr}
+\end{DoxyParamCaption}
+)}\label{struct_command_handle_afe92d99aeb12a03cf4bcc68e10ae7755}
+\hypertarget{struct_command_handle_a6834384d05849cd823a4800e037f576f}{}\index{Command\+Handle@{Command\+Handle}!Command\+Handle@{Command\+Handle}}
+\index{Command\+Handle@{Command\+Handle}!Command\+Handle@{Command\+Handle}}
+\subsubsection[{Command\+Handle}]{\setlength{\rightskip}{0pt plus 5cm}Command\+Handle\+::\+Command\+Handle (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{str}
+\end{DoxyParamCaption}
+)}\label{struct_command_handle_a6834384d05849cd823a4800e037f576f}
+\hypertarget{struct_command_handle_a6ea9a05d7df317f12eeabda23b051e9c}{}\index{Command\+Handle@{Command\+Handle}!Command\+Handle@{Command\+Handle}}
+\index{Command\+Handle@{Command\+Handle}!Command\+Handle@{Command\+Handle}}
+\subsubsection[{Command\+Handle}]{\setlength{\rightskip}{0pt plus 5cm}Command\+Handle\+::\+Command\+Handle (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{str}
+\end{DoxyParamCaption}
+)}\label{struct_command_handle_a6ea9a05d7df317f12eeabda23b051e9c}
+\hypertarget{struct_command_handle_a2be1bbbf272ac00eaa8dba55cbd1e837}{}\index{Command\+Handle@{Command\+Handle}!````~Command\+Handle@{$\sim$\+Command\+Handle}}
+\index{````~Command\+Handle@{$\sim$\+Command\+Handle}!Command\+Handle@{Command\+Handle}}
+\subsubsection[{$\sim$\+Command\+Handle}]{\setlength{\rightskip}{0pt plus 5cm}Command\+Handle\+::$\sim$\+Command\+Handle (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{struct_command_handle_a2be1bbbf272ac00eaa8dba55cbd1e837}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{struct_command_handle_a0b88bdf1322192759bf2f717e5dc5e36}{}\index{Command\+Handle@{Command\+Handle}!From\+String@{From\+String}}
+\index{From\+String@{From\+String}!Command\+Handle@{Command\+Handle}}
+\subsubsection[{From\+String}]{\setlength{\rightskip}{0pt plus 5cm}int Command\+Handle\+::\+From\+String (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{str}
+\end{DoxyParamCaption}
+)}\label{struct_command_handle_a0b88bdf1322192759bf2f717e5dc5e36}
+\hypertarget{struct_command_handle_ae531510469527795717ef58694bd1ff9}{}\index{Command\+Handle@{Command\+Handle}!From\+String@{From\+String}}
+\index{From\+String@{From\+String}!Command\+Handle@{Command\+Handle}}
+\subsubsection[{From\+String}]{\setlength{\rightskip}{0pt plus 5cm}int Command\+Handle\+::\+From\+String (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{str}
+\end{DoxyParamCaption}
+)}\label{struct_command_handle_ae531510469527795717ef58694bd1ff9}
+\hypertarget{struct_command_handle_a95261a336ebfec3c66c9656f34060f08}{}\index{Command\+Handle@{Command\+Handle}!Is\+Valid@{Is\+Valid}}
+\index{Is\+Valid@{Is\+Valid}!Command\+Handle@{Command\+Handle}}
+\subsubsection[{Is\+Valid}]{\setlength{\rightskip}{0pt plus 5cm}bool Command\+Handle\+::\+Is\+Valid (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{struct_command_handle_a95261a336ebfec3c66c9656f34060f08}
+\hypertarget{struct_command_handle_ae9c941507829c47c46d9aa59259ae367}{}\index{Command\+Handle@{Command\+Handle}!Is\+Valid\+Type@{Is\+Valid\+Type}}
+\index{Is\+Valid\+Type@{Is\+Valid\+Type}!Command\+Handle@{Command\+Handle}}
+\subsubsection[{Is\+Valid\+Type}]{\setlength{\rightskip}{0pt plus 5cm}static bool Command\+Handle\+::\+Is\+Valid\+Type (
+\begin{DoxyParamCaption}
+\item[{char}]{cmd\+\_\+type}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{struct_command_handle_ae9c941507829c47c46d9aa59259ae367}
+\hypertarget{struct_command_handle_ae0b3e737d9902ac018058e059255e95a}{}\index{Command\+Handle@{Command\+Handle}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Command\+Handle@{Command\+Handle}}
+\subsubsection[{operator"!=}]{\setlength{\rightskip}{0pt plus 5cm}bool Command\+Handle\+::operator!= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Command\+Handle} \&}]{other}
+\end{DoxyParamCaption}
+) const}\label{struct_command_handle_ae0b3e737d9902ac018058e059255e95a}
+\hypertarget{struct_command_handle_acfa0adeeb7df7faa3f8ab87bf79dd0b1}{}\index{Command\+Handle@{Command\+Handle}!operator==@{operator==}}
+\index{operator==@{operator==}!Command\+Handle@{Command\+Handle}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}bool Command\+Handle\+::operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf Command\+Handle} \&}]{other}
+\end{DoxyParamCaption}
+) const}\label{struct_command_handle_acfa0adeeb7df7faa3f8ab87bf79dd0b1}
+\hypertarget{struct_command_handle_ad5d4150dfc87df30d372fcd2f8f56d3e}{}\index{Command\+Handle@{Command\+Handle}!To\+String@{To\+String}}
+\index{To\+String@{To\+String}!Command\+Handle@{Command\+Handle}}
+\subsubsection[{To\+String}]{\setlength{\rightskip}{0pt plus 5cm}int Command\+Handle\+::\+To\+String (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{str}
+\end{DoxyParamCaption}
+) const}\label{struct_command_handle_ad5d4150dfc87df30d372fcd2f8f56d3e}
+\hypertarget{struct_command_handle_a42c25bb50e8d35e07c1d746f2707bf99}{}\index{Command\+Handle@{Command\+Handle}!To\+String@{To\+String}}
+\index{To\+String@{To\+String}!Command\+Handle@{Command\+Handle}}
+\subsubsection[{To\+String}]{\setlength{\rightskip}{0pt plus 5cm}int Command\+Handle\+::\+To\+String (
+\begin{DoxyParamCaption}
+\item[{std\+::string \&}]{str}
+\end{DoxyParamCaption}
+) const}\label{struct_command_handle_a42c25bb50e8d35e07c1d746f2707bf99}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{struct_command_handle_ae2114818d86a40414c7ab7045cc7dbf5}{}\index{Command\+Handle@{Command\+Handle}!addr@{addr}}
+\index{addr@{addr}!Command\+Handle@{Command\+Handle}}
+\subsubsection[{addr}]{\setlength{\rightskip}{0pt plus 5cm}long long int Command\+Handle\+::addr}\label{struct_command_handle_ae2114818d86a40414c7ab7045cc7dbf5}
+\hypertarget{struct_command_handle_af84aa02e5b71b4ad1b1ede730d2a7a01}{}\index{Command\+Handle@{Command\+Handle}!cmd\+Type@{cmd\+Type}}
+\index{cmd\+Type@{cmd\+Type}!Command\+Handle@{Command\+Handle}}
+\subsubsection[{cmd\+Type}]{\setlength{\rightskip}{0pt plus 5cm}char Command\+Handle\+::cmd\+Type}\label{struct_command_handle_af84aa02e5b71b4ad1b1ede730d2a7a01}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Multi\+Task/\hyperlink{mts_socket_proxy_common_8h}{mts\+Socket\+Proxy\+Common.\+h}\end{DoxyCompactItemize}

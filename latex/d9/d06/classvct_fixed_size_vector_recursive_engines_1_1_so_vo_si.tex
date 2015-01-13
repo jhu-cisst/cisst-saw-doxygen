@@ -1,0 +1,80 @@
+\hypertarget{classvct_fixed_size_vector_recursive_engines_1_1_so_vo_si}{}\section{vct\+Fixed\+Size\+Vector\+Recursive\+Engines$<$ \+\_\+size $>$\+:\+:So\+Vo\+Si$<$ \+\_\+incremental\+Operation\+Type $>$ Class Template Reference}
+\label{classvct_fixed_size_vector_recursive_engines_1_1_so_vo_si}\index{vct\+Fixed\+Size\+Vector\+Recursive\+Engines$<$ \+\_\+size $>$\+::\+So\+Vo\+Si$<$ \+\_\+incremental\+Operation\+Type $>$@{vct\+Fixed\+Size\+Vector\+Recursive\+Engines$<$ \+\_\+size $>$\+::\+So\+Vo\+Si$<$ \+\_\+incremental\+Operation\+Type $>$}}
+
+
+Implement operation of the form $s_o = op_{incr}(op(v_o, s_i)$ for fixed size vectors.  
+
+
+
+
+{\ttfamily \#include $<$vct\+Fixed\+Size\+Vector\+Recursive\+Engines.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classvct_fixed_size_vector_recursive_engines}{vct\+Fixed\+Size\+Vector\+Recursive\+Engines}$<$ \+\_\+size-\/1 $>$\+::template \hyperlink{classvct_fixed_size_vector_recursive_engines_1_1_so_vo_si}{So\+Vo\+Si}$<$ \+\_\+incremental\+Operation\+Type $>$ \hyperlink{classvct_fixed_size_vector_recursive_engines_1_1_so_vo_si_ab2cd530a2ba5ab1e525322aa03a14620}{Recursive\+Step}
+\item 
+typedef \+\_\+incremental\+Operation\+Type\+::\+Output\+Type \hyperlink{classvct_fixed_size_vector_recursive_engines_1_1_so_vo_si_abbe36310e19f37465a117598a680abe5}{Output\+Type}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class \+\_\+output\+Vector\+Type , class \+\_\+input\+Scalar\+Type $>$ }\\static \hyperlink{classvct_fixed_size_vector_recursive_engines_1_1_so_vo_si_abbe36310e19f37465a117598a680abe5}{Output\+Type} \hyperlink{classvct_fixed_size_vector_recursive_engines_1_1_so_vo_si_a053a9f378611c29bc9b339addcae401f}{Unfold} (\+\_\+output\+Vector\+Type \&output\+Vector, const \+\_\+input\+Scalar\+Type \&input\+Scalar)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$vct\+::size\+\_\+type \+\_\+size$>$template$<$class \+\_\+incremental\+Operation\+Type$>$class vct\+Fixed\+Size\+Vector\+Recursive\+Engines$<$ \+\_\+size $>$\+::\+So\+Vo\+Si$<$ \+\_\+incremental\+Operation\+Type $>$}
+
+Implement operation of the form $s_o = op_{incr}(op(v_o, s_i)$ for fixed size vectors. 
+
+This class uses template specialization to perform incremental binary vector operations of the form
+
+\[ s_o = \mathrm{op_{incr}(v_{o}, s_i)} \]
+
+where $v_{o}$ is the output vector and $s_o$ and $s_i$ are the scalar output and input. The vector has a fixed size, determined at compilation time. $op_{incr}$ is the incremental operation using $v_{o}[i]$ and $s_i$. For a vector of size 3, the result is $s_o = op_{incr}(op_{incr}(v_o[2], op_{incr}(v_o[1], op_{incr}(v_o[0], s_i))))$.
+
+This engines is currently used by \hyperlink{classvct_fixed_size_vector_base_ae0659dd664fd0be5b5c4ff9c2d13c64e}{vct\+Fixed\+Size\+Vector\+::\+Set\+All} with \hyperlink{classvct_binary_operations_1_1_second_operand}{vct\+Binary\+Operations\+::\+Second\+Operand}. For a vector of size 3, the result is\+: $s_o = v_o[2] = v_o[1] = v_o[0] = s_i$.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+incremental\+Operation\+Type} & The type of the incremental operation.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classvct_fixed_size_vector_recursive_engines}{vct\+Fixed\+Size\+Vector\+Recursive\+Engines} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classvct_fixed_size_vector_recursive_engines_1_1_so_vo_si_abbe36310e19f37465a117598a680abe5}{}\index{vct\+Fixed\+Size\+Vector\+Recursive\+Engines\+::\+So\+Vo\+Si@{vct\+Fixed\+Size\+Vector\+Recursive\+Engines\+::\+So\+Vo\+Si}!Output\+Type@{Output\+Type}}
+\index{Output\+Type@{Output\+Type}!vct\+Fixed\+Size\+Vector\+Recursive\+Engines\+::\+So\+Vo\+Si@{vct\+Fixed\+Size\+Vector\+Recursive\+Engines\+::\+So\+Vo\+Si}}
+\subsubsection[{Output\+Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size$>$ template$<$class \+\_\+incremental\+Operation\+Type $>$ typedef \+\_\+incremental\+Operation\+Type\+::\+Output\+Type {\bf vct\+Fixed\+Size\+Vector\+Recursive\+Engines}$<$ \+\_\+size $>$\+::{\bf So\+Vo\+Si}$<$ \+\_\+incremental\+Operation\+Type $>$\+::{\bf Output\+Type}}\label{classvct_fixed_size_vector_recursive_engines_1_1_so_vo_si_abbe36310e19f37465a117598a680abe5}
+\hypertarget{classvct_fixed_size_vector_recursive_engines_1_1_so_vo_si_ab2cd530a2ba5ab1e525322aa03a14620}{}\index{vct\+Fixed\+Size\+Vector\+Recursive\+Engines\+::\+So\+Vo\+Si@{vct\+Fixed\+Size\+Vector\+Recursive\+Engines\+::\+So\+Vo\+Si}!Recursive\+Step@{Recursive\+Step}}
+\index{Recursive\+Step@{Recursive\+Step}!vct\+Fixed\+Size\+Vector\+Recursive\+Engines\+::\+So\+Vo\+Si@{vct\+Fixed\+Size\+Vector\+Recursive\+Engines\+::\+So\+Vo\+Si}}
+\subsubsection[{Recursive\+Step}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size$>$ template$<$class \+\_\+incremental\+Operation\+Type $>$ typedef {\bf vct\+Fixed\+Size\+Vector\+Recursive\+Engines}$<$\+\_\+size-\/1$>$\+::template {\bf So\+Vo\+Si}$<$\+\_\+incremental\+Operation\+Type$>$ {\bf vct\+Fixed\+Size\+Vector\+Recursive\+Engines}$<$ \+\_\+size $>$\+::{\bf So\+Vo\+Si}$<$ \+\_\+incremental\+Operation\+Type $>$\+::{\bf Recursive\+Step}}\label{classvct_fixed_size_vector_recursive_engines_1_1_so_vo_si_ab2cd530a2ba5ab1e525322aa03a14620}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classvct_fixed_size_vector_recursive_engines_1_1_so_vo_si_a053a9f378611c29bc9b339addcae401f}{}\index{vct\+Fixed\+Size\+Vector\+Recursive\+Engines\+::\+So\+Vo\+Si@{vct\+Fixed\+Size\+Vector\+Recursive\+Engines\+::\+So\+Vo\+Si}!Unfold@{Unfold}}
+\index{Unfold@{Unfold}!vct\+Fixed\+Size\+Vector\+Recursive\+Engines\+::\+So\+Vo\+Si@{vct\+Fixed\+Size\+Vector\+Recursive\+Engines\+::\+So\+Vo\+Si}}
+\subsubsection[{Unfold}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size$>$ template$<$class \+\_\+incremental\+Operation\+Type $>$ template$<$class \+\_\+output\+Vector\+Type , class \+\_\+input\+Scalar\+Type $>$ static {\bf Output\+Type} {\bf vct\+Fixed\+Size\+Vector\+Recursive\+Engines}$<$ \+\_\+size $>$\+::{\bf So\+Vo\+Si}$<$ \+\_\+incremental\+Operation\+Type $>$\+::Unfold (
+\begin{DoxyParamCaption}
+\item[{\+\_\+output\+Vector\+Type \&}]{output\+Vector, }
+\item[{const \+\_\+input\+Scalar\+Type \&}]{input\+Scalar}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classvct_fixed_size_vector_recursive_engines_1_1_so_vo_si_a053a9f378611c29bc9b339addcae401f}
+Unfold the recursion. The incremental operation is applied to the result of the recursive Unfold call and the result of \+\_\+incremental\+Operation\+Type(output\+Vector\mbox{[}\+\_\+size\mbox{]}, input\+Scalar).
+
+
+\begin{DoxyParams}{Parameters}
+{\em output\+Vector} & The output vector (first operation of the incremental operation).\\
+\hline
+{\em input\+Scalar} & The input scalar (second operand of the incremental operation). \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Vector/\hyperlink{vct_fixed_size_vector_recursive_engines_8h}{vct\+Fixed\+Size\+Vector\+Recursive\+Engines.\+h}\end{DoxyCompactItemize}

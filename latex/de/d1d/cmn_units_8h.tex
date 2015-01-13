@@ -1,0 +1,289 @@
+\hypertarget{cmn_units_8h}{}\section{/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Common/cmn\+Units.h File Reference}
+\label{cmn_units_8h}\index{/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Common/cmn\+Units.\+h@{/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Common/cmn\+Units.\+h}}
+
+
+Declaration of units and unit conversion methods
+
+This file include the definition and implementation of constants and global functions used to defines measuring units in the cisst libraries. The internal units of the cisst libraries are meters, grams, seconds and radians.  
+
+
+{\ttfamily \#include $<$cisst\+Common/cmn\+Export.\+h$>$}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{cmn_units_8h_a3fce264bcd976355028d0876ba57b28d}{\+\_\+cmn\+Units\+\_\+h}
+\end{DoxyCompactItemize}
+\subsection*{Length units. The internal unit is millimeter.}
+\begin{DoxyCompactItemize}
+\item 
+const double \hyperlink{cmn_units_8h_ad3c24f0183bebd958206e5f4f60f4d6a}{cmn\+\_\+mm} = 0.\+001
+\item 
+const double \hyperlink{cmn_units_8h_aabfcf3879e60354f843273b9cd6ea756}{cmn\+\_\+um} = \hyperlink{cmn_units_8h_ad3c24f0183bebd958206e5f4f60f4d6a}{cmn\+\_\+mm} / 1000.\+0
+\item 
+const double \hyperlink{cmn_units_8h_a69edd8a57675a681949828d85597f7bd}{cmn\+\_\+cm} = 10.\+0 $\ast$ \hyperlink{cmn_units_8h_ad3c24f0183bebd958206e5f4f60f4d6a}{cmn\+\_\+mm}
+\item 
+const double \hyperlink{cmn_units_8h_aaee377c39a5990afc094e3e4af40118b}{cmn\+\_\+m} = 1.\+0
+\item 
+const double \hyperlink{cmn_units_8h_a45560ad6da430c3fa36ab39c03efbcdb}{cmn\+\_\+km} = 1000.\+0 $\ast$ \hyperlink{cmn_units_8h_aaee377c39a5990afc094e3e4af40118b}{cmn\+\_\+m}
+\item 
+double \hyperlink{cmn_units_8h_a1a7f3d719ee1a43dadf187e1311b9b19}{cmn\+Internal\+To\+\_\+mm} (double value\+Internal\+Units)
+\item 
+double \hyperlink{cmn_units_8h_aabb6dee150c2002de28f808e422a0e1e}{cmn\+Internal\+To\+\_\+um} (double value\+Internal\+Units)
+\item 
+double \hyperlink{cmn_units_8h_afd089de6d42528a6484c4333784e7c59}{cmn\+Internal\+To\+\_\+cm} (double value\+Internal\+Units)
+\item 
+double \hyperlink{cmn_units_8h_a71183ceadd5b65bcc74cde52b72ea7a0}{cmn\+Internal\+To\+\_\+m} (double value\+Internal\+Units)
+\item 
+double \hyperlink{cmn_units_8h_a39ad74cd34ed33b027e7ac80b927352a}{cmn\+Internal\+To\+\_\+km} (double value\+Internal\+Units)
+\end{DoxyCompactItemize}
+\subsection*{Mass units. The internal unit is grams.}
+\begin{DoxyCompactItemize}
+\item 
+const double \hyperlink{cmn_units_8h_a5fcb904ca2a780ac66ac315d394ae740}{cmn\+\_\+g} = 1.\+0
+\item 
+const double \hyperlink{cmn_units_8h_a2d47f418d288a62cb0fdc8df7556788e}{cmn\+\_\+mg} = \hyperlink{cmn_units_8h_a5fcb904ca2a780ac66ac315d394ae740}{cmn\+\_\+g} / 1000.\+0
+\item 
+const double \hyperlink{cmn_units_8h_a73dbe5a394cc400101c085510858b85b}{cmn\+\_\+ug} = \hyperlink{cmn_units_8h_a2d47f418d288a62cb0fdc8df7556788e}{cmn\+\_\+mg} / 1000.\+0
+\item 
+const double \hyperlink{cmn_units_8h_aee02653a94840aa7f3844effeb31ac05}{cmn\+\_\+cg} = \hyperlink{cmn_units_8h_a5fcb904ca2a780ac66ac315d394ae740}{cmn\+\_\+g} / 100.\+0
+\item 
+const double \hyperlink{cmn_units_8h_a2114d0ebabfdff34da59552b3f148cb6}{cmn\+\_\+kg} = 1000.\+0 $\ast$ \hyperlink{cmn_units_8h_a5fcb904ca2a780ac66ac315d394ae740}{cmn\+\_\+g}
+\item 
+double \hyperlink{cmn_units_8h_ad1730c376d6de934fb8e1edb6bf96788}{cmn\+Internal\+To\+\_\+g} (double value\+Internal\+Units)
+\item 
+double \hyperlink{cmn_units_8h_af819fd1c77fb742311c695d7e6cda258}{cmn\+Internal\+To\+\_\+mg} (double value\+Internal\+Units)
+\item 
+double \hyperlink{cmn_units_8h_aa00724fb2969d129d2ee294a75f6d975}{cmn\+Internal\+To\+\_\+ug} (double value\+Internal\+Units)
+\item 
+double \hyperlink{cmn_units_8h_acc97e7a2f6dc15abb3d3697b0c918115}{cmn\+Internal\+To\+\_\+cg} (double value\+Internal\+Units)
+\item 
+double \hyperlink{cmn_units_8h_a4e5ec23539a45439660e06f437d34288}{cmn\+Internal\+To\+\_\+kg} (double value\+Internal\+Units)
+\end{DoxyCompactItemize}
+\subsection*{Time units. The internal unit is seconds.}
+\begin{DoxyCompactItemize}
+\item 
+const double \hyperlink{cmn_units_8h_aa0876c8c1aa92a3bbe6a5d1c3fd2c919}{cmn\+\_\+s} = 1.\+0
+\item 
+const double \hyperlink{cmn_units_8h_aaf4d3f2fafb9b4a95606544b9d876b4a}{cmn\+\_\+ms} = \hyperlink{cmn_units_8h_aa0876c8c1aa92a3bbe6a5d1c3fd2c919}{cmn\+\_\+s} / 1000.\+0
+\item 
+const double \hyperlink{cmn_units_8h_adebee4b65112a68f8078db12621500bd}{cmn\+\_\+us} = \hyperlink{cmn_units_8h_aaf4d3f2fafb9b4a95606544b9d876b4a}{cmn\+\_\+ms} / 1000.\+0
+\item 
+const double \hyperlink{cmn_units_8h_a47ef9f50867258b1ed4b0e8c8f0c6468}{cmn\+\_\+ns} = \hyperlink{cmn_units_8h_adebee4b65112a68f8078db12621500bd}{cmn\+\_\+us} / 1000.\+0
+\item 
+const double \hyperlink{cmn_units_8h_a212c64aa2bb4e6ff3d78943569e1b58c}{cmn\+\_\+minute} = 60.\+0 $\ast$ \hyperlink{cmn_units_8h_aa0876c8c1aa92a3bbe6a5d1c3fd2c919}{cmn\+\_\+s}
+\item 
+const double \hyperlink{cmn_units_8h_af99a6a6194f3e0e4800bc2db64686f8f}{cmn\+\_\+hour} = 60.\+0 $\ast$ \hyperlink{cmn_units_8h_a212c64aa2bb4e6ff3d78943569e1b58c}{cmn\+\_\+minute}
+\item 
+const double \hyperlink{cmn_units_8h_adb129548d403f4c45868376f8afa63ed}{cmn\+\_\+day} = 24.\+0 $\ast$ \hyperlink{cmn_units_8h_af99a6a6194f3e0e4800bc2db64686f8f}{cmn\+\_\+hour}
+\item 
+double \hyperlink{cmn_units_8h_a33d4a46e186cef18cd33f3c4786a7883}{cmn\+Internal\+To\+\_\+s} (double value\+Internal\+Units)
+\item 
+double \hyperlink{cmn_units_8h_a3ca61653a5f87fb8665b0b92117acbc6}{cmn\+Internal\+To\+\_\+ms} (double value\+Internal\+Units)
+\item 
+double \hyperlink{cmn_units_8h_a382ffb63ddf4d4a3db0498d02f052228}{cmn\+Internal\+To\+\_\+us} (double value\+Internal\+Units)
+\item 
+double \hyperlink{cmn_units_8h_ace1cda297b60167d27f3126c7f9b57c7}{cmn\+Internal\+To\+\_\+ns} (double value\+Internal\+Units)
+\item 
+double \hyperlink{cmn_units_8h_a6e59be950c807ce1df26f490d2a7b605}{cmn\+Internal\+To\+\_\+minute} (double value\+Internal\+Units)
+\item 
+double \hyperlink{cmn_units_8h_a7a9bd4f6e09b502f149372fa9b3df390}{cmn\+Internal\+To\+\_\+hour} (double value\+Internal\+Units)
+\item 
+double \hyperlink{cmn_units_8h_aad0a941e07fbf5c339f3eae2d794748e}{cmn\+Internal\+To\+\_\+day} (double value\+Internal\+Units)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Declaration of units and unit conversion methods
+
+This file include the definition and implementation of constants and global functions used to defines measuring units in the cisst libraries. The internal units of the cisst libraries are meters, grams, seconds and radians. 
+
+For all units, the cisst libraries provide a constant as well as a global function to convert from the internal units to other representations.
+
+{\ttfamily  double distance = 5000 $\ast$ cmn\+\_\+m; // 5000 meters, distance is actually in mm An\+Example\+Of\+Function(50 $\ast$ cmn\+\_\+mm); // 50 millimeters std\+::cout $<$$<$ \char`\"{}distance in cm\+: \char`\"{} $<$$<$ cmn\+Internal\+To\+\_\+cm(distance) $<$$<$ std\+::endl; }
+
+\begin{DoxyNote}{Note}
+The use of underscore in symbol names is an exception to the cisst naming conventions. 
+\end{DoxyNote}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{cmn_units_8h_a3fce264bcd976355028d0876ba57b28d}{}\index{cmn\+Units.\+h@{cmn\+Units.\+h}!\+\_\+cmn\+Units\+\_\+h@{\+\_\+cmn\+Units\+\_\+h}}
+\index{\+\_\+cmn\+Units\+\_\+h@{\+\_\+cmn\+Units\+\_\+h}!cmn\+Units.\+h@{cmn\+Units.\+h}}
+\subsubsection[{\+\_\+cmn\+Units\+\_\+h}]{\setlength{\rightskip}{0pt plus 5cm}\#define \+\_\+cmn\+Units\+\_\+h}\label{cmn_units_8h_a3fce264bcd976355028d0876ba57b28d}
+
+
+\subsection{Function Documentation}
+\hypertarget{cmn_units_8h_acc97e7a2f6dc15abb3d3697b0c918115}{}\index{cmn\+Units.\+h@{cmn\+Units.\+h}!cmn\+Internal\+To\+\_\+cg@{cmn\+Internal\+To\+\_\+cg}}
+\index{cmn\+Internal\+To\+\_\+cg@{cmn\+Internal\+To\+\_\+cg}!cmn\+Units.\+h@{cmn\+Units.\+h}}
+\subsubsection[{cmn\+Internal\+To\+\_\+cg}]{\setlength{\rightskip}{0pt plus 5cm}double cmn\+Internal\+To\+\_\+cg (
+\begin{DoxyParamCaption}
+\item[{double}]{value\+Internal\+Units}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{cmn_units_8h_acc97e7a2f6dc15abb3d3697b0c918115}
+Convert a mass in internal units to centigrams \hypertarget{cmn_units_8h_afd089de6d42528a6484c4333784e7c59}{}\index{cmn\+Units.\+h@{cmn\+Units.\+h}!cmn\+Internal\+To\+\_\+cm@{cmn\+Internal\+To\+\_\+cm}}
+\index{cmn\+Internal\+To\+\_\+cm@{cmn\+Internal\+To\+\_\+cm}!cmn\+Units.\+h@{cmn\+Units.\+h}}
+\subsubsection[{cmn\+Internal\+To\+\_\+cm}]{\setlength{\rightskip}{0pt plus 5cm}double cmn\+Internal\+To\+\_\+cm (
+\begin{DoxyParamCaption}
+\item[{double}]{value\+Internal\+Units}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{cmn_units_8h_afd089de6d42528a6484c4333784e7c59}
+Convert a length in internal units to centimeters \hypertarget{cmn_units_8h_aad0a941e07fbf5c339f3eae2d794748e}{}\index{cmn\+Units.\+h@{cmn\+Units.\+h}!cmn\+Internal\+To\+\_\+day@{cmn\+Internal\+To\+\_\+day}}
+\index{cmn\+Internal\+To\+\_\+day@{cmn\+Internal\+To\+\_\+day}!cmn\+Units.\+h@{cmn\+Units.\+h}}
+\subsubsection[{cmn\+Internal\+To\+\_\+day}]{\setlength{\rightskip}{0pt plus 5cm}double cmn\+Internal\+To\+\_\+day (
+\begin{DoxyParamCaption}
+\item[{double}]{value\+Internal\+Units}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{cmn_units_8h_aad0a941e07fbf5c339f3eae2d794748e}
+Convert a time in internal units to days \hypertarget{cmn_units_8h_ad1730c376d6de934fb8e1edb6bf96788}{}\index{cmn\+Units.\+h@{cmn\+Units.\+h}!cmn\+Internal\+To\+\_\+g@{cmn\+Internal\+To\+\_\+g}}
+\index{cmn\+Internal\+To\+\_\+g@{cmn\+Internal\+To\+\_\+g}!cmn\+Units.\+h@{cmn\+Units.\+h}}
+\subsubsection[{cmn\+Internal\+To\+\_\+g}]{\setlength{\rightskip}{0pt plus 5cm}double cmn\+Internal\+To\+\_\+g (
+\begin{DoxyParamCaption}
+\item[{double}]{value\+Internal\+Units}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{cmn_units_8h_ad1730c376d6de934fb8e1edb6bf96788}
+Convert a mass in internal units to grams \hypertarget{cmn_units_8h_a7a9bd4f6e09b502f149372fa9b3df390}{}\index{cmn\+Units.\+h@{cmn\+Units.\+h}!cmn\+Internal\+To\+\_\+hour@{cmn\+Internal\+To\+\_\+hour}}
+\index{cmn\+Internal\+To\+\_\+hour@{cmn\+Internal\+To\+\_\+hour}!cmn\+Units.\+h@{cmn\+Units.\+h}}
+\subsubsection[{cmn\+Internal\+To\+\_\+hour}]{\setlength{\rightskip}{0pt plus 5cm}double cmn\+Internal\+To\+\_\+hour (
+\begin{DoxyParamCaption}
+\item[{double}]{value\+Internal\+Units}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{cmn_units_8h_a7a9bd4f6e09b502f149372fa9b3df390}
+Convert a time in internal units to hours \hypertarget{cmn_units_8h_a4e5ec23539a45439660e06f437d34288}{}\index{cmn\+Units.\+h@{cmn\+Units.\+h}!cmn\+Internal\+To\+\_\+kg@{cmn\+Internal\+To\+\_\+kg}}
+\index{cmn\+Internal\+To\+\_\+kg@{cmn\+Internal\+To\+\_\+kg}!cmn\+Units.\+h@{cmn\+Units.\+h}}
+\subsubsection[{cmn\+Internal\+To\+\_\+kg}]{\setlength{\rightskip}{0pt plus 5cm}double cmn\+Internal\+To\+\_\+kg (
+\begin{DoxyParamCaption}
+\item[{double}]{value\+Internal\+Units}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{cmn_units_8h_a4e5ec23539a45439660e06f437d34288}
+Convert a mass in internal units to kilograms \hypertarget{cmn_units_8h_a39ad74cd34ed33b027e7ac80b927352a}{}\index{cmn\+Units.\+h@{cmn\+Units.\+h}!cmn\+Internal\+To\+\_\+km@{cmn\+Internal\+To\+\_\+km}}
+\index{cmn\+Internal\+To\+\_\+km@{cmn\+Internal\+To\+\_\+km}!cmn\+Units.\+h@{cmn\+Units.\+h}}
+\subsubsection[{cmn\+Internal\+To\+\_\+km}]{\setlength{\rightskip}{0pt plus 5cm}double cmn\+Internal\+To\+\_\+km (
+\begin{DoxyParamCaption}
+\item[{double}]{value\+Internal\+Units}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{cmn_units_8h_a39ad74cd34ed33b027e7ac80b927352a}
+Convert a length in internal units to kilometers \hypertarget{cmn_units_8h_a71183ceadd5b65bcc74cde52b72ea7a0}{}\index{cmn\+Units.\+h@{cmn\+Units.\+h}!cmn\+Internal\+To\+\_\+m@{cmn\+Internal\+To\+\_\+m}}
+\index{cmn\+Internal\+To\+\_\+m@{cmn\+Internal\+To\+\_\+m}!cmn\+Units.\+h@{cmn\+Units.\+h}}
+\subsubsection[{cmn\+Internal\+To\+\_\+m}]{\setlength{\rightskip}{0pt plus 5cm}double cmn\+Internal\+To\+\_\+m (
+\begin{DoxyParamCaption}
+\item[{double}]{value\+Internal\+Units}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{cmn_units_8h_a71183ceadd5b65bcc74cde52b72ea7a0}
+Convert a length in internal units to meters \hypertarget{cmn_units_8h_af819fd1c77fb742311c695d7e6cda258}{}\index{cmn\+Units.\+h@{cmn\+Units.\+h}!cmn\+Internal\+To\+\_\+mg@{cmn\+Internal\+To\+\_\+mg}}
+\index{cmn\+Internal\+To\+\_\+mg@{cmn\+Internal\+To\+\_\+mg}!cmn\+Units.\+h@{cmn\+Units.\+h}}
+\subsubsection[{cmn\+Internal\+To\+\_\+mg}]{\setlength{\rightskip}{0pt plus 5cm}double cmn\+Internal\+To\+\_\+mg (
+\begin{DoxyParamCaption}
+\item[{double}]{value\+Internal\+Units}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{cmn_units_8h_af819fd1c77fb742311c695d7e6cda258}
+Convert a mass in internal units to milligrams \hypertarget{cmn_units_8h_a6e59be950c807ce1df26f490d2a7b605}{}\index{cmn\+Units.\+h@{cmn\+Units.\+h}!cmn\+Internal\+To\+\_\+minute@{cmn\+Internal\+To\+\_\+minute}}
+\index{cmn\+Internal\+To\+\_\+minute@{cmn\+Internal\+To\+\_\+minute}!cmn\+Units.\+h@{cmn\+Units.\+h}}
+\subsubsection[{cmn\+Internal\+To\+\_\+minute}]{\setlength{\rightskip}{0pt plus 5cm}double cmn\+Internal\+To\+\_\+minute (
+\begin{DoxyParamCaption}
+\item[{double}]{value\+Internal\+Units}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{cmn_units_8h_a6e59be950c807ce1df26f490d2a7b605}
+Convert a time in internal units to minutes \hypertarget{cmn_units_8h_a1a7f3d719ee1a43dadf187e1311b9b19}{}\index{cmn\+Units.\+h@{cmn\+Units.\+h}!cmn\+Internal\+To\+\_\+mm@{cmn\+Internal\+To\+\_\+mm}}
+\index{cmn\+Internal\+To\+\_\+mm@{cmn\+Internal\+To\+\_\+mm}!cmn\+Units.\+h@{cmn\+Units.\+h}}
+\subsubsection[{cmn\+Internal\+To\+\_\+mm}]{\setlength{\rightskip}{0pt plus 5cm}double cmn\+Internal\+To\+\_\+mm (
+\begin{DoxyParamCaption}
+\item[{double}]{value\+Internal\+Units}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{cmn_units_8h_a1a7f3d719ee1a43dadf187e1311b9b19}
+Convert a length in internal units to millimeters \hypertarget{cmn_units_8h_a3ca61653a5f87fb8665b0b92117acbc6}{}\index{cmn\+Units.\+h@{cmn\+Units.\+h}!cmn\+Internal\+To\+\_\+ms@{cmn\+Internal\+To\+\_\+ms}}
+\index{cmn\+Internal\+To\+\_\+ms@{cmn\+Internal\+To\+\_\+ms}!cmn\+Units.\+h@{cmn\+Units.\+h}}
+\subsubsection[{cmn\+Internal\+To\+\_\+ms}]{\setlength{\rightskip}{0pt plus 5cm}double cmn\+Internal\+To\+\_\+ms (
+\begin{DoxyParamCaption}
+\item[{double}]{value\+Internal\+Units}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{cmn_units_8h_a3ca61653a5f87fb8665b0b92117acbc6}
+Convert a time in internal units to milliseconds \hypertarget{cmn_units_8h_ace1cda297b60167d27f3126c7f9b57c7}{}\index{cmn\+Units.\+h@{cmn\+Units.\+h}!cmn\+Internal\+To\+\_\+ns@{cmn\+Internal\+To\+\_\+ns}}
+\index{cmn\+Internal\+To\+\_\+ns@{cmn\+Internal\+To\+\_\+ns}!cmn\+Units.\+h@{cmn\+Units.\+h}}
+\subsubsection[{cmn\+Internal\+To\+\_\+ns}]{\setlength{\rightskip}{0pt plus 5cm}double cmn\+Internal\+To\+\_\+ns (
+\begin{DoxyParamCaption}
+\item[{double}]{value\+Internal\+Units}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{cmn_units_8h_ace1cda297b60167d27f3126c7f9b57c7}
+Convert a time in internal units to nanoseconds \hypertarget{cmn_units_8h_a33d4a46e186cef18cd33f3c4786a7883}{}\index{cmn\+Units.\+h@{cmn\+Units.\+h}!cmn\+Internal\+To\+\_\+s@{cmn\+Internal\+To\+\_\+s}}
+\index{cmn\+Internal\+To\+\_\+s@{cmn\+Internal\+To\+\_\+s}!cmn\+Units.\+h@{cmn\+Units.\+h}}
+\subsubsection[{cmn\+Internal\+To\+\_\+s}]{\setlength{\rightskip}{0pt plus 5cm}double cmn\+Internal\+To\+\_\+s (
+\begin{DoxyParamCaption}
+\item[{double}]{value\+Internal\+Units}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{cmn_units_8h_a33d4a46e186cef18cd33f3c4786a7883}
+Convert a time in internal units to seconds \hypertarget{cmn_units_8h_aa00724fb2969d129d2ee294a75f6d975}{}\index{cmn\+Units.\+h@{cmn\+Units.\+h}!cmn\+Internal\+To\+\_\+ug@{cmn\+Internal\+To\+\_\+ug}}
+\index{cmn\+Internal\+To\+\_\+ug@{cmn\+Internal\+To\+\_\+ug}!cmn\+Units.\+h@{cmn\+Units.\+h}}
+\subsubsection[{cmn\+Internal\+To\+\_\+ug}]{\setlength{\rightskip}{0pt plus 5cm}double cmn\+Internal\+To\+\_\+ug (
+\begin{DoxyParamCaption}
+\item[{double}]{value\+Internal\+Units}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{cmn_units_8h_aa00724fb2969d129d2ee294a75f6d975}
+Convert a mass in internal units to micrograms \hypertarget{cmn_units_8h_aabb6dee150c2002de28f808e422a0e1e}{}\index{cmn\+Units.\+h@{cmn\+Units.\+h}!cmn\+Internal\+To\+\_\+um@{cmn\+Internal\+To\+\_\+um}}
+\index{cmn\+Internal\+To\+\_\+um@{cmn\+Internal\+To\+\_\+um}!cmn\+Units.\+h@{cmn\+Units.\+h}}
+\subsubsection[{cmn\+Internal\+To\+\_\+um}]{\setlength{\rightskip}{0pt plus 5cm}double cmn\+Internal\+To\+\_\+um (
+\begin{DoxyParamCaption}
+\item[{double}]{value\+Internal\+Units}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{cmn_units_8h_aabb6dee150c2002de28f808e422a0e1e}
+Convert a length in internal units to micrometers \hypertarget{cmn_units_8h_a382ffb63ddf4d4a3db0498d02f052228}{}\index{cmn\+Units.\+h@{cmn\+Units.\+h}!cmn\+Internal\+To\+\_\+us@{cmn\+Internal\+To\+\_\+us}}
+\index{cmn\+Internal\+To\+\_\+us@{cmn\+Internal\+To\+\_\+us}!cmn\+Units.\+h@{cmn\+Units.\+h}}
+\subsubsection[{cmn\+Internal\+To\+\_\+us}]{\setlength{\rightskip}{0pt plus 5cm}double cmn\+Internal\+To\+\_\+us (
+\begin{DoxyParamCaption}
+\item[{double}]{value\+Internal\+Units}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{cmn_units_8h_a382ffb63ddf4d4a3db0498d02f052228}
+Convert a time in internal units to microseconds 
+
+\subsection{Variable Documentation}
+\hypertarget{cmn_units_8h_aee02653a94840aa7f3844effeb31ac05}{}\index{cmn\+Units.\+h@{cmn\+Units.\+h}!cmn\+\_\+cg@{cmn\+\_\+cg}}
+\index{cmn\+\_\+cg@{cmn\+\_\+cg}!cmn\+Units.\+h@{cmn\+Units.\+h}}
+\subsubsection[{cmn\+\_\+cg}]{\setlength{\rightskip}{0pt plus 5cm}const double cmn\+\_\+cg = {\bf cmn\+\_\+g} / 100.\+0}\label{cmn_units_8h_aee02653a94840aa7f3844effeb31ac05}
+Centigram constant, use to convert a mass in centigrams to internal units. \hypertarget{cmn_units_8h_a69edd8a57675a681949828d85597f7bd}{}\index{cmn\+Units.\+h@{cmn\+Units.\+h}!cmn\+\_\+cm@{cmn\+\_\+cm}}
+\index{cmn\+\_\+cm@{cmn\+\_\+cm}!cmn\+Units.\+h@{cmn\+Units.\+h}}
+\subsubsection[{cmn\+\_\+cm}]{\setlength{\rightskip}{0pt plus 5cm}const double cmn\+\_\+cm = 10.\+0 $\ast$ {\bf cmn\+\_\+mm}}\label{cmn_units_8h_a69edd8a57675a681949828d85597f7bd}
+Centimeter constant, use to convert a length in centimeters to internal units. \hypertarget{cmn_units_8h_adb129548d403f4c45868376f8afa63ed}{}\index{cmn\+Units.\+h@{cmn\+Units.\+h}!cmn\+\_\+day@{cmn\+\_\+day}}
+\index{cmn\+\_\+day@{cmn\+\_\+day}!cmn\+Units.\+h@{cmn\+Units.\+h}}
+\subsubsection[{cmn\+\_\+day}]{\setlength{\rightskip}{0pt plus 5cm}const double cmn\+\_\+day = 24.\+0 $\ast$ {\bf cmn\+\_\+hour}}\label{cmn_units_8h_adb129548d403f4c45868376f8afa63ed}
+Days constant, use to convert a time in days to internal units. \hypertarget{cmn_units_8h_a5fcb904ca2a780ac66ac315d394ae740}{}\index{cmn\+Units.\+h@{cmn\+Units.\+h}!cmn\+\_\+g@{cmn\+\_\+g}}
+\index{cmn\+\_\+g@{cmn\+\_\+g}!cmn\+Units.\+h@{cmn\+Units.\+h}}
+\subsubsection[{cmn\+\_\+g}]{\setlength{\rightskip}{0pt plus 5cm}const double cmn\+\_\+g = 1.\+0}\label{cmn_units_8h_a5fcb904ca2a780ac66ac315d394ae740}
+Gram constant, use to convert a mass in grams to internal units. \hypertarget{cmn_units_8h_af99a6a6194f3e0e4800bc2db64686f8f}{}\index{cmn\+Units.\+h@{cmn\+Units.\+h}!cmn\+\_\+hour@{cmn\+\_\+hour}}
+\index{cmn\+\_\+hour@{cmn\+\_\+hour}!cmn\+Units.\+h@{cmn\+Units.\+h}}
+\subsubsection[{cmn\+\_\+hour}]{\setlength{\rightskip}{0pt plus 5cm}const double cmn\+\_\+hour = 60.\+0 $\ast$ {\bf cmn\+\_\+minute}}\label{cmn_units_8h_af99a6a6194f3e0e4800bc2db64686f8f}
+Hours constant, use to convert a time in hours to internal units. \hypertarget{cmn_units_8h_a2114d0ebabfdff34da59552b3f148cb6}{}\index{cmn\+Units.\+h@{cmn\+Units.\+h}!cmn\+\_\+kg@{cmn\+\_\+kg}}
+\index{cmn\+\_\+kg@{cmn\+\_\+kg}!cmn\+Units.\+h@{cmn\+Units.\+h}}
+\subsubsection[{cmn\+\_\+kg}]{\setlength{\rightskip}{0pt plus 5cm}const double cmn\+\_\+kg = 1000.\+0 $\ast$ {\bf cmn\+\_\+g}}\label{cmn_units_8h_a2114d0ebabfdff34da59552b3f148cb6}
+Kilogram constant, use to convert a mass in kilograms to internal units. \hypertarget{cmn_units_8h_a45560ad6da430c3fa36ab39c03efbcdb}{}\index{cmn\+Units.\+h@{cmn\+Units.\+h}!cmn\+\_\+km@{cmn\+\_\+km}}
+\index{cmn\+\_\+km@{cmn\+\_\+km}!cmn\+Units.\+h@{cmn\+Units.\+h}}
+\subsubsection[{cmn\+\_\+km}]{\setlength{\rightskip}{0pt plus 5cm}const double cmn\+\_\+km = 1000.\+0 $\ast$ {\bf cmn\+\_\+m}}\label{cmn_units_8h_a45560ad6da430c3fa36ab39c03efbcdb}
+Kilometer constant, use to convert a length in kilometers to internal units. \hypertarget{cmn_units_8h_aaee377c39a5990afc094e3e4af40118b}{}\index{cmn\+Units.\+h@{cmn\+Units.\+h}!cmn\+\_\+m@{cmn\+\_\+m}}
+\index{cmn\+\_\+m@{cmn\+\_\+m}!cmn\+Units.\+h@{cmn\+Units.\+h}}
+\subsubsection[{cmn\+\_\+m}]{\setlength{\rightskip}{0pt plus 5cm}const double cmn\+\_\+m = 1.\+0}\label{cmn_units_8h_aaee377c39a5990afc094e3e4af40118b}
+Meter constant, use to convert a length in meters to internal units. \hypertarget{cmn_units_8h_a2d47f418d288a62cb0fdc8df7556788e}{}\index{cmn\+Units.\+h@{cmn\+Units.\+h}!cmn\+\_\+mg@{cmn\+\_\+mg}}
+\index{cmn\+\_\+mg@{cmn\+\_\+mg}!cmn\+Units.\+h@{cmn\+Units.\+h}}
+\subsubsection[{cmn\+\_\+mg}]{\setlength{\rightskip}{0pt plus 5cm}const double cmn\+\_\+mg = {\bf cmn\+\_\+g} / 1000.\+0}\label{cmn_units_8h_a2d47f418d288a62cb0fdc8df7556788e}
+Milligrams constant, use to convert a mass in milligrams to internal units. \hypertarget{cmn_units_8h_a212c64aa2bb4e6ff3d78943569e1b58c}{}\index{cmn\+Units.\+h@{cmn\+Units.\+h}!cmn\+\_\+minute@{cmn\+\_\+minute}}
+\index{cmn\+\_\+minute@{cmn\+\_\+minute}!cmn\+Units.\+h@{cmn\+Units.\+h}}
+\subsubsection[{cmn\+\_\+minute}]{\setlength{\rightskip}{0pt plus 5cm}const double cmn\+\_\+minute = 60.\+0 $\ast$ {\bf cmn\+\_\+s}}\label{cmn_units_8h_a212c64aa2bb4e6ff3d78943569e1b58c}
+Minutes constant, use to convert a time in minutes to internal units. \hypertarget{cmn_units_8h_ad3c24f0183bebd958206e5f4f60f4d6a}{}\index{cmn\+Units.\+h@{cmn\+Units.\+h}!cmn\+\_\+mm@{cmn\+\_\+mm}}
+\index{cmn\+\_\+mm@{cmn\+\_\+mm}!cmn\+Units.\+h@{cmn\+Units.\+h}}
+\subsubsection[{cmn\+\_\+mm}]{\setlength{\rightskip}{0pt plus 5cm}const double cmn\+\_\+mm = 0.\+001}\label{cmn_units_8h_ad3c24f0183bebd958206e5f4f60f4d6a}
+Millimeter constant, use to convert a length in millimeters to internal units. \hypertarget{cmn_units_8h_aaf4d3f2fafb9b4a95606544b9d876b4a}{}\index{cmn\+Units.\+h@{cmn\+Units.\+h}!cmn\+\_\+ms@{cmn\+\_\+ms}}
+\index{cmn\+\_\+ms@{cmn\+\_\+ms}!cmn\+Units.\+h@{cmn\+Units.\+h}}
+\subsubsection[{cmn\+\_\+ms}]{\setlength{\rightskip}{0pt plus 5cm}const double cmn\+\_\+ms = {\bf cmn\+\_\+s} / 1000.\+0}\label{cmn_units_8h_aaf4d3f2fafb9b4a95606544b9d876b4a}
+Milliseconds constant, use to convert a time in milliseconds to internal units. \hypertarget{cmn_units_8h_a47ef9f50867258b1ed4b0e8c8f0c6468}{}\index{cmn\+Units.\+h@{cmn\+Units.\+h}!cmn\+\_\+ns@{cmn\+\_\+ns}}
+\index{cmn\+\_\+ns@{cmn\+\_\+ns}!cmn\+Units.\+h@{cmn\+Units.\+h}}
+\subsubsection[{cmn\+\_\+ns}]{\setlength{\rightskip}{0pt plus 5cm}const double cmn\+\_\+ns = {\bf cmn\+\_\+us} / 1000.\+0}\label{cmn_units_8h_a47ef9f50867258b1ed4b0e8c8f0c6468}
+Nanosecond constant, use to convert a time in nanoseconds to internal units. \hypertarget{cmn_units_8h_aa0876c8c1aa92a3bbe6a5d1c3fd2c919}{}\index{cmn\+Units.\+h@{cmn\+Units.\+h}!cmn\+\_\+s@{cmn\+\_\+s}}
+\index{cmn\+\_\+s@{cmn\+\_\+s}!cmn\+Units.\+h@{cmn\+Units.\+h}}
+\subsubsection[{cmn\+\_\+s}]{\setlength{\rightskip}{0pt plus 5cm}const double cmn\+\_\+s = 1.\+0}\label{cmn_units_8h_aa0876c8c1aa92a3bbe6a5d1c3fd2c919}
+Second constant, use to convert a time in seconds to internal units. \hypertarget{cmn_units_8h_a73dbe5a394cc400101c085510858b85b}{}\index{cmn\+Units.\+h@{cmn\+Units.\+h}!cmn\+\_\+ug@{cmn\+\_\+ug}}
+\index{cmn\+\_\+ug@{cmn\+\_\+ug}!cmn\+Units.\+h@{cmn\+Units.\+h}}
+\subsubsection[{cmn\+\_\+ug}]{\setlength{\rightskip}{0pt plus 5cm}const double cmn\+\_\+ug = {\bf cmn\+\_\+mg} / 1000.\+0}\label{cmn_units_8h_a73dbe5a394cc400101c085510858b85b}
+Microgram constant, use to convert a mass in micrograms to internal units. \hypertarget{cmn_units_8h_aabfcf3879e60354f843273b9cd6ea756}{}\index{cmn\+Units.\+h@{cmn\+Units.\+h}!cmn\+\_\+um@{cmn\+\_\+um}}
+\index{cmn\+\_\+um@{cmn\+\_\+um}!cmn\+Units.\+h@{cmn\+Units.\+h}}
+\subsubsection[{cmn\+\_\+um}]{\setlength{\rightskip}{0pt plus 5cm}const double cmn\+\_\+um = {\bf cmn\+\_\+mm} / 1000.\+0}\label{cmn_units_8h_aabfcf3879e60354f843273b9cd6ea756}
+Micrometer constant, use to convert a length in micrometers to internal units. \hypertarget{cmn_units_8h_adebee4b65112a68f8078db12621500bd}{}\index{cmn\+Units.\+h@{cmn\+Units.\+h}!cmn\+\_\+us@{cmn\+\_\+us}}
+\index{cmn\+\_\+us@{cmn\+\_\+us}!cmn\+Units.\+h@{cmn\+Units.\+h}}
+\subsubsection[{cmn\+\_\+us}]{\setlength{\rightskip}{0pt plus 5cm}const double cmn\+\_\+us = {\bf cmn\+\_\+ms} / 1000.\+0}\label{cmn_units_8h_adebee4b65112a68f8078db12621500bd}
+Microsecond constant, use to convert a time in microseconds to internal units. 

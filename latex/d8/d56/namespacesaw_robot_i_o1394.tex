@@ -1,0 +1,141 @@
+\hypertarget{namespacesaw_robot_i_o1394}{}\section{saw\+Robot\+I\+O1394 Namespace Reference}
+\label{namespacesaw_robot_i_o1394}\index{saw\+Robot\+I\+O1394@{saw\+Robot\+I\+O1394}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structsaw_robot_i_o1394_1_1osa_actuator1394_configuration}{osa\+Actuator1394\+Configuration}
+\item 
+struct \hyperlink{structsaw_robot_i_o1394_1_1osa_actuator_mapping}{osa\+Actuator\+Mapping}
+\item 
+struct \hyperlink{structsaw_robot_i_o1394_1_1osa_analog_brake1394_configuration}{osa\+Analog\+Brake1394\+Configuration}
+\item 
+struct \hyperlink{structsaw_robot_i_o1394_1_1osa_brake_mapping}{osa\+Brake\+Mapping}
+\item 
+class \hyperlink{classsaw_robot_i_o1394_1_1osa_digital_input1394}{osa\+Digital\+Input1394}
+\item 
+struct \hyperlink{structsaw_robot_i_o1394_1_1osa_digital_input1394_configuration}{osa\+Digital\+Input1394\+Configuration}
+\item 
+struct \hyperlink{structsaw_robot_i_o1394_1_1osa_drive1394_configuration}{osa\+Drive1394\+Configuration}
+\item 
+struct \hyperlink{structsaw_robot_i_o1394_1_1osa_encoder1394_configuration}{osa\+Encoder1394\+Configuration}
+\item 
+class \hyperlink{classsaw_robot_i_o1394_1_1osa_port1394}{osa\+Port1394}
+\item 
+struct \hyperlink{structsaw_robot_i_o1394_1_1osa_port1394_configuration}{osa\+Port1394\+Configuration}
+\item 
+struct \hyperlink{structsaw_robot_i_o1394_1_1osa_pot1394_configuration}{osa\+Pot1394\+Configuration}
+\item 
+class \hyperlink{classsaw_robot_i_o1394_1_1osa_robot1394}{osa\+Robot1394}
+\item 
+struct \hyperlink{structsaw_robot_i_o1394_1_1osa_robot1394_configuration}{osa\+Robot1394\+Configuration}
+\item 
+class \hyperlink{classsaw_robot_i_o1394_1_1osa_runtime_error1394}{osa\+Runtime\+Error1394}
+\begin{DoxyCompactList}\small\item\em Exceptions for error handling. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{namespacesaw_robot_i_o1394_a9d63d89648f679b6af5cf3f16576bde9}{osa\+Pot1394\+Location} \{ \hyperlink{namespacesaw_robot_i_o1394_a9d63d89648f679b6af5cf3f16576bde9a7b7ee7cf7008c6c75526a64b7c7e7ed2}{P\+O\+T\+E\+N\+T\+I\+O\+M\+E\+T\+E\+R\+\_\+\+U\+N\+D\+E\+F\+I\+N\+E\+D}, 
+\hyperlink{namespacesaw_robot_i_o1394_a9d63d89648f679b6af5cf3f16576bde9a608b055081dce70b7bdd2aaa970b2f9a}{P\+O\+T\+E\+N\+T\+I\+O\+M\+E\+T\+E\+R\+\_\+\+O\+N\+\_\+\+A\+C\+T\+U\+A\+T\+O\+R\+S}, 
+\hyperlink{namespacesaw_robot_i_o1394_a9d63d89648f679b6af5cf3f16576bde9a03bb052c9f73c37f3112cbc6af250398}{P\+O\+T\+E\+N\+T\+I\+O\+M\+E\+T\+E\+R\+\_\+\+O\+N\+\_\+\+J\+O\+I\+N\+T\+S}
+ \}
+\begin{DoxyCompactList}\small\item\em Defines where the potentiometers are positioned, if any. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{namespacesaw_robot_i_o1394_a8b63d179d862acce1acc0c70eb9fc57b}{osa\+X\+M\+L1394\+Configure\+Port} (const std\+::string \&filename, \hyperlink{structsaw_robot_i_o1394_1_1osa_port1394_configuration}{osa\+Port1394\+Configuration} \&config)
+\item 
+bool \hyperlink{namespacesaw_robot_i_o1394_a0c7d844d6fc4e4a9b24b96e1062fe055}{osa\+X\+M\+L1394\+Configure\+Robot} (cmn\+X\+M\+L\+Path \&xml\+Config, const int robot\+Index, \hyperlink{structsaw_robot_i_o1394_1_1osa_robot1394_configuration}{osa\+Robot1394\+Configuration} \&robot)
+\item 
+bool \hyperlink{namespacesaw_robot_i_o1394_ad2d50cafd06a531000af16cc21244ec9}{osa\+X\+M\+L1394\+Configure\+Coupling} (cmn\+X\+M\+L\+Path \&xml\+Config, const int robot\+Index, \hyperlink{structsaw_robot_i_o1394_1_1osa_robot1394_configuration}{osa\+Robot1394\+Configuration} \&robot)
+\item 
+bool \hyperlink{namespacesaw_robot_i_o1394_a0449ee65c8c8bc66d6091a7ea81d05d4}{osa\+X\+M\+L1394\+Configure\+Coupling\+Matrix} (cmn\+X\+M\+L\+Path \&xml\+Config, const int robot\+Index, const char $\ast$coupling\+String, int num\+Rows, int num\+Cols, \hyperlink{vct_dynamic_matrix_types_8h_a48f1eb2461d20a99e824ee5753a37c84}{vct\+Double\+Mat} \&result\+Matrix)
+\item 
+bool \hyperlink{namespacesaw_robot_i_o1394_ab3de8ee2619a30a56d58662cef87e0c8}{osa\+X\+M\+L1394\+Configure\+Digital\+Input} (cmn\+X\+M\+L\+Path \&xml\+Config, const int tag\+Index, \hyperlink{structsaw_robot_i_o1394_1_1osa_digital_input1394_configuration}{osa\+Digital\+Input1394\+Configuration} \&digital\+Input)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const size\+\_\+t \hyperlink{namespacesaw_robot_i_o1394_a2ea4cc88435b1ca85b6c633ba6360af4}{M\+A\+X\+\_\+\+B\+O\+A\+R\+D\+S} = 16
+\item 
+const size\+\_\+t \hyperlink{namespacesaw_robot_i_o1394_a397b95aa9a72ba9aaf6cf10c9ef6a37a}{M\+A\+X\+\_\+\+A\+X\+E\+S} = 4
+\end{DoxyCompactItemize}
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{namespacesaw_robot_i_o1394_a9d63d89648f679b6af5cf3f16576bde9}{}\index{saw\+Robot\+I\+O1394@{saw\+Robot\+I\+O1394}!osa\+Pot1394\+Location@{osa\+Pot1394\+Location}}
+\index{osa\+Pot1394\+Location@{osa\+Pot1394\+Location}!saw\+Robot\+I\+O1394@{saw\+Robot\+I\+O1394}}
+\subsubsection[{osa\+Pot1394\+Location}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf saw\+Robot\+I\+O1394\+::osa\+Pot1394\+Location}}\label{namespacesaw_robot_i_o1394_a9d63d89648f679b6af5cf3f16576bde9}
+
+
+Defines where the potentiometers are positioned, if any. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{P\+O\+T\+E\+N\+T\+I\+O\+M\+E\+T\+E\+R\+\_\+\+U\+N\+D\+E\+F\+I\+N\+E\+D@{P\+O\+T\+E\+N\+T\+I\+O\+M\+E\+T\+E\+R\+\_\+\+U\+N\+D\+E\+F\+I\+N\+E\+D}!saw\+Robot\+I\+O1394@{saw\+Robot\+I\+O1394}}\index{saw\+Robot\+I\+O1394@{saw\+Robot\+I\+O1394}!P\+O\+T\+E\+N\+T\+I\+O\+M\+E\+T\+E\+R\+\_\+\+U\+N\+D\+E\+F\+I\+N\+E\+D@{P\+O\+T\+E\+N\+T\+I\+O\+M\+E\+T\+E\+R\+\_\+\+U\+N\+D\+E\+F\+I\+N\+E\+D}}\item[{\em 
+\hypertarget{namespacesaw_robot_i_o1394_a9d63d89648f679b6af5cf3f16576bde9a7b7ee7cf7008c6c75526a64b7c7e7ed2}{}P\+O\+T\+E\+N\+T\+I\+O\+M\+E\+T\+E\+R\+\_\+\+U\+N\+D\+E\+F\+I\+N\+E\+D\label{namespacesaw_robot_i_o1394_a9d63d89648f679b6af5cf3f16576bde9a7b7ee7cf7008c6c75526a64b7c7e7ed2}
+}]\index{P\+O\+T\+E\+N\+T\+I\+O\+M\+E\+T\+E\+R\+\_\+\+O\+N\+\_\+\+A\+C\+T\+U\+A\+T\+O\+R\+S@{P\+O\+T\+E\+N\+T\+I\+O\+M\+E\+T\+E\+R\+\_\+\+O\+N\+\_\+\+A\+C\+T\+U\+A\+T\+O\+R\+S}!saw\+Robot\+I\+O1394@{saw\+Robot\+I\+O1394}}\index{saw\+Robot\+I\+O1394@{saw\+Robot\+I\+O1394}!P\+O\+T\+E\+N\+T\+I\+O\+M\+E\+T\+E\+R\+\_\+\+O\+N\+\_\+\+A\+C\+T\+U\+A\+T\+O\+R\+S@{P\+O\+T\+E\+N\+T\+I\+O\+M\+E\+T\+E\+R\+\_\+\+O\+N\+\_\+\+A\+C\+T\+U\+A\+T\+O\+R\+S}}\item[{\em 
+\hypertarget{namespacesaw_robot_i_o1394_a9d63d89648f679b6af5cf3f16576bde9a608b055081dce70b7bdd2aaa970b2f9a}{}P\+O\+T\+E\+N\+T\+I\+O\+M\+E\+T\+E\+R\+\_\+\+O\+N\+\_\+\+A\+C\+T\+U\+A\+T\+O\+R\+S\label{namespacesaw_robot_i_o1394_a9d63d89648f679b6af5cf3f16576bde9a608b055081dce70b7bdd2aaa970b2f9a}
+}]\index{P\+O\+T\+E\+N\+T\+I\+O\+M\+E\+T\+E\+R\+\_\+\+O\+N\+\_\+\+J\+O\+I\+N\+T\+S@{P\+O\+T\+E\+N\+T\+I\+O\+M\+E\+T\+E\+R\+\_\+\+O\+N\+\_\+\+J\+O\+I\+N\+T\+S}!saw\+Robot\+I\+O1394@{saw\+Robot\+I\+O1394}}\index{saw\+Robot\+I\+O1394@{saw\+Robot\+I\+O1394}!P\+O\+T\+E\+N\+T\+I\+O\+M\+E\+T\+E\+R\+\_\+\+O\+N\+\_\+\+J\+O\+I\+N\+T\+S@{P\+O\+T\+E\+N\+T\+I\+O\+M\+E\+T\+E\+R\+\_\+\+O\+N\+\_\+\+J\+O\+I\+N\+T\+S}}\item[{\em 
+\hypertarget{namespacesaw_robot_i_o1394_a9d63d89648f679b6af5cf3f16576bde9a03bb052c9f73c37f3112cbc6af250398}{}P\+O\+T\+E\+N\+T\+I\+O\+M\+E\+T\+E\+R\+\_\+\+O\+N\+\_\+\+J\+O\+I\+N\+T\+S\label{namespacesaw_robot_i_o1394_a9d63d89648f679b6af5cf3f16576bde9a03bb052c9f73c37f3112cbc6af250398}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Function Documentation}
+\hypertarget{namespacesaw_robot_i_o1394_ad2d50cafd06a531000af16cc21244ec9}{}\index{saw\+Robot\+I\+O1394@{saw\+Robot\+I\+O1394}!osa\+X\+M\+L1394\+Configure\+Coupling@{osa\+X\+M\+L1394\+Configure\+Coupling}}
+\index{osa\+X\+M\+L1394\+Configure\+Coupling@{osa\+X\+M\+L1394\+Configure\+Coupling}!saw\+Robot\+I\+O1394@{saw\+Robot\+I\+O1394}}
+\subsubsection[{osa\+X\+M\+L1394\+Configure\+Coupling}]{\setlength{\rightskip}{0pt plus 5cm}bool saw\+Robot\+I\+O1394\+::osa\+X\+M\+L1394\+Configure\+Coupling (
+\begin{DoxyParamCaption}
+\item[{cmn\+X\+M\+L\+Path \&}]{xml\+Config, }
+\item[{const int}]{robot\+Index, }
+\item[{{\bf osa\+Robot1394\+Configuration} \&}]{robot}
+\end{DoxyParamCaption}
+)}\label{namespacesaw_robot_i_o1394_ad2d50cafd06a531000af16cc21244ec9}
+\hypertarget{namespacesaw_robot_i_o1394_a0449ee65c8c8bc66d6091a7ea81d05d4}{}\index{saw\+Robot\+I\+O1394@{saw\+Robot\+I\+O1394}!osa\+X\+M\+L1394\+Configure\+Coupling\+Matrix@{osa\+X\+M\+L1394\+Configure\+Coupling\+Matrix}}
+\index{osa\+X\+M\+L1394\+Configure\+Coupling\+Matrix@{osa\+X\+M\+L1394\+Configure\+Coupling\+Matrix}!saw\+Robot\+I\+O1394@{saw\+Robot\+I\+O1394}}
+\subsubsection[{osa\+X\+M\+L1394\+Configure\+Coupling\+Matrix}]{\setlength{\rightskip}{0pt plus 5cm}bool saw\+Robot\+I\+O1394\+::osa\+X\+M\+L1394\+Configure\+Coupling\+Matrix (
+\begin{DoxyParamCaption}
+\item[{cmn\+X\+M\+L\+Path \&}]{xml\+Config, }
+\item[{const int}]{robot\+Index, }
+\item[{const char $\ast$}]{coupling\+String, }
+\item[{int}]{num\+Rows, }
+\item[{int}]{num\+Cols, }
+\item[{{\bf vct\+Double\+Mat} \&}]{result\+Matrix}
+\end{DoxyParamCaption}
+)}\label{namespacesaw_robot_i_o1394_a0449ee65c8c8bc66d6091a7ea81d05d4}
+\hypertarget{namespacesaw_robot_i_o1394_ab3de8ee2619a30a56d58662cef87e0c8}{}\index{saw\+Robot\+I\+O1394@{saw\+Robot\+I\+O1394}!osa\+X\+M\+L1394\+Configure\+Digital\+Input@{osa\+X\+M\+L1394\+Configure\+Digital\+Input}}
+\index{osa\+X\+M\+L1394\+Configure\+Digital\+Input@{osa\+X\+M\+L1394\+Configure\+Digital\+Input}!saw\+Robot\+I\+O1394@{saw\+Robot\+I\+O1394}}
+\subsubsection[{osa\+X\+M\+L1394\+Configure\+Digital\+Input}]{\setlength{\rightskip}{0pt plus 5cm}bool saw\+Robot\+I\+O1394\+::osa\+X\+M\+L1394\+Configure\+Digital\+Input (
+\begin{DoxyParamCaption}
+\item[{cmn\+X\+M\+L\+Path \&}]{xml\+Config, }
+\item[{const int}]{tag\+Index, }
+\item[{{\bf osa\+Digital\+Input1394\+Configuration} \&}]{digital\+Input}
+\end{DoxyParamCaption}
+)}\label{namespacesaw_robot_i_o1394_ab3de8ee2619a30a56d58662cef87e0c8}
+\hypertarget{namespacesaw_robot_i_o1394_a8b63d179d862acce1acc0c70eb9fc57b}{}\index{saw\+Robot\+I\+O1394@{saw\+Robot\+I\+O1394}!osa\+X\+M\+L1394\+Configure\+Port@{osa\+X\+M\+L1394\+Configure\+Port}}
+\index{osa\+X\+M\+L1394\+Configure\+Port@{osa\+X\+M\+L1394\+Configure\+Port}!saw\+Robot\+I\+O1394@{saw\+Robot\+I\+O1394}}
+\subsubsection[{osa\+X\+M\+L1394\+Configure\+Port}]{\setlength{\rightskip}{0pt plus 5cm}void saw\+Robot\+I\+O1394\+::osa\+X\+M\+L1394\+Configure\+Port (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{filename, }
+\item[{{\bf osa\+Port1394\+Configuration} \&}]{config}
+\end{DoxyParamCaption}
+)}\label{namespacesaw_robot_i_o1394_a8b63d179d862acce1acc0c70eb9fc57b}
+\hypertarget{namespacesaw_robot_i_o1394_a0c7d844d6fc4e4a9b24b96e1062fe055}{}\index{saw\+Robot\+I\+O1394@{saw\+Robot\+I\+O1394}!osa\+X\+M\+L1394\+Configure\+Robot@{osa\+X\+M\+L1394\+Configure\+Robot}}
+\index{osa\+X\+M\+L1394\+Configure\+Robot@{osa\+X\+M\+L1394\+Configure\+Robot}!saw\+Robot\+I\+O1394@{saw\+Robot\+I\+O1394}}
+\subsubsection[{osa\+X\+M\+L1394\+Configure\+Robot}]{\setlength{\rightskip}{0pt plus 5cm}bool saw\+Robot\+I\+O1394\+::osa\+X\+M\+L1394\+Configure\+Robot (
+\begin{DoxyParamCaption}
+\item[{cmn\+X\+M\+L\+Path \&}]{xml\+Config, }
+\item[{const int}]{robot\+Index, }
+\item[{{\bf osa\+Robot1394\+Configuration} \&}]{robot}
+\end{DoxyParamCaption}
+)}\label{namespacesaw_robot_i_o1394_a0c7d844d6fc4e4a9b24b96e1062fe055}
+
+
+\subsection{Variable Documentation}
+\hypertarget{namespacesaw_robot_i_o1394_a397b95aa9a72ba9aaf6cf10c9ef6a37a}{}\index{saw\+Robot\+I\+O1394@{saw\+Robot\+I\+O1394}!M\+A\+X\+\_\+\+A\+X\+E\+S@{M\+A\+X\+\_\+\+A\+X\+E\+S}}
+\index{M\+A\+X\+\_\+\+A\+X\+E\+S@{M\+A\+X\+\_\+\+A\+X\+E\+S}!saw\+Robot\+I\+O1394@{saw\+Robot\+I\+O1394}}
+\subsubsection[{M\+A\+X\+\_\+\+A\+X\+E\+S}]{\setlength{\rightskip}{0pt plus 5cm}const size\+\_\+t saw\+Robot\+I\+O1394\+::\+M\+A\+X\+\_\+\+A\+X\+E\+S = 4}\label{namespacesaw_robot_i_o1394_a397b95aa9a72ba9aaf6cf10c9ef6a37a}
+\hypertarget{namespacesaw_robot_i_o1394_a2ea4cc88435b1ca85b6c633ba6360af4}{}\index{saw\+Robot\+I\+O1394@{saw\+Robot\+I\+O1394}!M\+A\+X\+\_\+\+B\+O\+A\+R\+D\+S@{M\+A\+X\+\_\+\+B\+O\+A\+R\+D\+S}}
+\index{M\+A\+X\+\_\+\+B\+O\+A\+R\+D\+S@{M\+A\+X\+\_\+\+B\+O\+A\+R\+D\+S}!saw\+Robot\+I\+O1394@{saw\+Robot\+I\+O1394}}
+\subsubsection[{M\+A\+X\+\_\+\+B\+O\+A\+R\+D\+S}]{\setlength{\rightskip}{0pt plus 5cm}const size\+\_\+t saw\+Robot\+I\+O1394\+::\+M\+A\+X\+\_\+\+B\+O\+A\+R\+D\+S = 16}\label{namespacesaw_robot_i_o1394_a2ea4cc88435b1ca85b6c633ba6360af4}

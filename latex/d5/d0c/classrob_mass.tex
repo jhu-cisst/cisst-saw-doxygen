@@ -1,0 +1,165 @@
+\hypertarget{classrob_mass}{}\section{rob\+Mass Class Reference}
+\label{classrob_mass}\index{rob\+Mass@{rob\+Mass}}
+
+
+{\ttfamily \#include $<$rob\+Mass.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classrob_mass_a85e715c568a7c8b1fff957b046164649}{Errno} \{ \hyperlink{classrob_mass_a85e715c568a7c8b1fff957b046164649add68e16ef430713d59f0adb01b14b94e}{E\+S\+U\+C\+C\+E\+S\+S}, 
+\hyperlink{classrob_mass_a85e715c568a7c8b1fff957b046164649a73f4b04ad9d26f8bd81f6bdc9cee9a66}{E\+F\+A\+I\+L\+U\+R\+E}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classvct_fixed_size_matrix}{vct\+Fixed\+Size\+Matrix}$<$ double, 3, 3 $>$ \hyperlink{classrob_mass_a331a838101e66963b804b79ec03a7590}{Parallel\+Axis} (double m, const \hyperlink{classvct_fixed_size_vector}{vct\+Fixed\+Size\+Vector}$<$ double, 3 $>$ \&t, const \hyperlink{classvct_fixed_size_matrix}{vct\+Fixed\+Size\+Matrix}$<$ double, 3, 3 $>$ \&I) const 
+\begin{DoxyCompactList}\small\item\em Parallel Axis Theorem. \end{DoxyCompactList}\item 
+\hyperlink{classrob_mass_a2a6672b130620ef278f190db9ea8f916}{rob\+Mass} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{classrob_mass_aecd46b1f11cf00af8f238a07018ecce1}{rob\+Mass} (double m, const \hyperlink{classvct_fixed_size_vector}{vct\+Fixed\+Size\+Vector}$<$ double, 3 $>$ \&com, const \hyperlink{classvct_fixed_size_matrix}{vct\+Fixed\+Size\+Matrix}$<$ double, 3, 3 $>$ \&D, const \hyperlink{classvct_fixed_size_matrix}{vct\+Fixed\+Size\+Matrix}$<$ double, 3, 3 $>$ \&V)
+\item 
+double \hyperlink{classrob_mass_a02b79738d557ca3959e047ce9e72d028}{Mass} () const 
+\begin{DoxyCompactList}\small\item\em Return the mass. \end{DoxyCompactList}\item 
+\hyperlink{classvct_fixed_size_vector}{vct\+Fixed\+Size\+Vector}$<$ double, 3 $>$ \hyperlink{classrob_mass_a96ba906f78fa4b0fbf3418b2c58af666}{Center\+Of\+Mass} () const 
+\begin{DoxyCompactList}\small\item\em Return the center of mass. \end{DoxyCompactList}\item 
+\hyperlink{classvct_fixed_size_matrix}{vct\+Fixed\+Size\+Matrix}$<$ double, 3, 3 $>$ \hyperlink{classrob_mass_af2696ac482e6385f11e7a39be637a57d}{Moment\+Of\+Inertia} () const 
+\begin{DoxyCompactList}\small\item\em Return the moment of inertia tensor in the body frame. \end{DoxyCompactList}\item 
+\hyperlink{classvct_fixed_size_matrix}{vct\+Fixed\+Size\+Matrix}$<$ double, 3, 3 $>$ \hyperlink{classrob_mass_aae2190ef44e17e969f3265129b0ca093}{Moment\+Of\+Inertia\+At\+C\+O\+M} () const 
+\item 
+\hyperlink{classrob_mass_a85e715c568a7c8b1fff957b046164649}{rob\+Mass\+::\+Errno} \hyperlink{classrob_mass_a148ed4305b5291bc764cb9be17584d33}{Read\+Mass} (std\+::istream \&is)
+\begin{DoxyCompactList}\small\item\em Read the mass from a input stream. \end{DoxyCompactList}\item 
+\hyperlink{classrob_mass_a85e715c568a7c8b1fff957b046164649}{rob\+Mass\+::\+Errno} \hyperlink{classrob_mass_a6b11b3b2725686b58a91a441b809cec4}{Write\+Mass} (std\+::ostream \&os) const 
+\begin{DoxyCompactList}\small\item\em Write the mass from a output stream. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classrob_mass_a85e715c568a7c8b1fff957b046164649}{}\index{rob\+Mass@{rob\+Mass}!Errno@{Errno}}
+\index{Errno@{Errno}!rob\+Mass@{rob\+Mass}}
+\subsubsection[{Errno}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf rob\+Mass\+::\+Errno}}\label{classrob_mass_a85e715c568a7c8b1fff957b046164649}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{E\+S\+U\+C\+C\+E\+S\+S@{E\+S\+U\+C\+C\+E\+S\+S}!rob\+Mass@{rob\+Mass}}\index{rob\+Mass@{rob\+Mass}!E\+S\+U\+C\+C\+E\+S\+S@{E\+S\+U\+C\+C\+E\+S\+S}}\item[{\em 
+\hypertarget{classrob_mass_a85e715c568a7c8b1fff957b046164649add68e16ef430713d59f0adb01b14b94e}{}E\+S\+U\+C\+C\+E\+S\+S\label{classrob_mass_a85e715c568a7c8b1fff957b046164649add68e16ef430713d59f0adb01b14b94e}
+}]\index{E\+F\+A\+I\+L\+U\+R\+E@{E\+F\+A\+I\+L\+U\+R\+E}!rob\+Mass@{rob\+Mass}}\index{rob\+Mass@{rob\+Mass}!E\+F\+A\+I\+L\+U\+R\+E@{E\+F\+A\+I\+L\+U\+R\+E}}\item[{\em 
+\hypertarget{classrob_mass_a85e715c568a7c8b1fff957b046164649a73f4b04ad9d26f8bd81f6bdc9cee9a66}{}E\+F\+A\+I\+L\+U\+R\+E\label{classrob_mass_a85e715c568a7c8b1fff957b046164649a73f4b04ad9d26f8bd81f6bdc9cee9a66}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classrob_mass_a2a6672b130620ef278f190db9ea8f916}{}\index{rob\+Mass@{rob\+Mass}!rob\+Mass@{rob\+Mass}}
+\index{rob\+Mass@{rob\+Mass}!rob\+Mass@{rob\+Mass}}
+\subsubsection[{rob\+Mass}]{\setlength{\rightskip}{0pt plus 5cm}rob\+Mass\+::rob\+Mass (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classrob_mass_a2a6672b130620ef278f190db9ea8f916}
+
+
+Default constructor. 
+
+Set the mass, center of mass and inertia to zero \hypertarget{classrob_mass_aecd46b1f11cf00af8f238a07018ecce1}{}\index{rob\+Mass@{rob\+Mass}!rob\+Mass@{rob\+Mass}}
+\index{rob\+Mass@{rob\+Mass}!rob\+Mass@{rob\+Mass}}
+\subsubsection[{rob\+Mass}]{\setlength{\rightskip}{0pt plus 5cm}rob\+Mass\+::rob\+Mass (
+\begin{DoxyParamCaption}
+\item[{double}]{m, }
+\item[{const {\bf vct\+Fixed\+Size\+Vector}$<$ double, 3 $>$ \&}]{com, }
+\item[{const {\bf vct\+Fixed\+Size\+Matrix}$<$ double, 3, 3 $>$ \&}]{D, }
+\item[{const {\bf vct\+Fixed\+Size\+Matrix}$<$ double, 3, 3 $>$ \&}]{V}
+\end{DoxyParamCaption}
+)}\label{classrob_mass_aecd46b1f11cf00af8f238a07018ecce1}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classrob_mass_a96ba906f78fa4b0fbf3418b2c58af666}{}\index{rob\+Mass@{rob\+Mass}!Center\+Of\+Mass@{Center\+Of\+Mass}}
+\index{Center\+Of\+Mass@{Center\+Of\+Mass}!rob\+Mass@{rob\+Mass}}
+\subsubsection[{Center\+Of\+Mass}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Fixed\+Size\+Vector}$<$double,3$>$ rob\+Mass\+::\+Center\+Of\+Mass (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classrob_mass_a96ba906f78fa4b0fbf3418b2c58af666}
+
+
+Return the center of mass. 
+
+Return the center of mass. The center of mass is expressed in the coordinate frame of the body. \begin{DoxyReturn}{Returns}
+A 3\+D vector representing the center of mass 
+\end{DoxyReturn}
+\hypertarget{classrob_mass_a02b79738d557ca3959e047ce9e72d028}{}\index{rob\+Mass@{rob\+Mass}!Mass@{Mass}}
+\index{Mass@{Mass}!rob\+Mass@{rob\+Mass}}
+\subsubsection[{Mass}]{\setlength{\rightskip}{0pt plus 5cm}double rob\+Mass\+::\+Mass (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classrob_mass_a02b79738d557ca3959e047ce9e72d028}
+
+
+Return the mass. 
+
+\begin{DoxyReturn}{Returns}
+The mass of the body 
+\end{DoxyReturn}
+\hypertarget{classrob_mass_af2696ac482e6385f11e7a39be637a57d}{}\index{rob\+Mass@{rob\+Mass}!Moment\+Of\+Inertia@{Moment\+Of\+Inertia}}
+\index{Moment\+Of\+Inertia@{Moment\+Of\+Inertia}!rob\+Mass@{rob\+Mass}}
+\subsubsection[{Moment\+Of\+Inertia}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Fixed\+Size\+Matrix}$<$double,3,3$>$ rob\+Mass\+::\+Moment\+Of\+Inertia (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classrob_mass_af2696ac482e6385f11e7a39be637a57d}
+
+
+Return the moment of inertia tensor in the body frame. 
+
+Return the moment of inertia tensor. The tensor is with respect to the coordinate frame of the body which does not necessarily coincide with the center of mass of the body and the principal axes. \begin{DoxyReturn}{Returns}
+A 3x3 moment of inertia tensor 
+\end{DoxyReturn}
+\hypertarget{classrob_mass_aae2190ef44e17e969f3265129b0ca093}{}\index{rob\+Mass@{rob\+Mass}!Moment\+Of\+Inertia\+At\+C\+O\+M@{Moment\+Of\+Inertia\+At\+C\+O\+M}}
+\index{Moment\+Of\+Inertia\+At\+C\+O\+M@{Moment\+Of\+Inertia\+At\+C\+O\+M}!rob\+Mass@{rob\+Mass}}
+\subsubsection[{Moment\+Of\+Inertia\+At\+C\+O\+M}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Fixed\+Size\+Matrix}$<$double,3,3$>$ rob\+Mass\+::\+Moment\+Of\+Inertia\+At\+C\+O\+M (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classrob_mass_aae2190ef44e17e969f3265129b0ca093}
+\hypertarget{classrob_mass_a331a838101e66963b804b79ec03a7590}{}\index{rob\+Mass@{rob\+Mass}!Parallel\+Axis@{Parallel\+Axis}}
+\index{Parallel\+Axis@{Parallel\+Axis}!rob\+Mass@{rob\+Mass}}
+\subsubsection[{Parallel\+Axis}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Fixed\+Size\+Matrix}$<$double,3,3$>$ rob\+Mass\+::\+Parallel\+Axis (
+\begin{DoxyParamCaption}
+\item[{double}]{m, }
+\item[{const {\bf vct\+Fixed\+Size\+Vector}$<$ double, 3 $>$ \&}]{t, }
+\item[{const {\bf vct\+Fixed\+Size\+Matrix}$<$ double, 3, 3 $>$ \&}]{I}
+\end{DoxyParamCaption}
+) const}\label{classrob_mass_a331a838101e66963b804b79ec03a7590}
+
+
+Parallel Axis Theorem. 
+
+Finds the moment of inertia with respect to a parallel axis \hypertarget{classrob_mass_a148ed4305b5291bc764cb9be17584d33}{}\index{rob\+Mass@{rob\+Mass}!Read\+Mass@{Read\+Mass}}
+\index{Read\+Mass@{Read\+Mass}!rob\+Mass@{rob\+Mass}}
+\subsubsection[{Read\+Mass}]{\setlength{\rightskip}{0pt plus 5cm}{\bf rob\+Mass\+::\+Errno} rob\+Mass\+::\+Read\+Mass (
+\begin{DoxyParamCaption}
+\item[{std\+::istream \&}]{is}
+\end{DoxyParamCaption}
+)}\label{classrob_mass_a148ed4305b5291bc764cb9be17584d33}
+
+
+Read the mass from a input stream. 
+
+\hypertarget{classrob_mass_a6b11b3b2725686b58a91a441b809cec4}{}\index{rob\+Mass@{rob\+Mass}!Write\+Mass@{Write\+Mass}}
+\index{Write\+Mass@{Write\+Mass}!rob\+Mass@{rob\+Mass}}
+\subsubsection[{Write\+Mass}]{\setlength{\rightskip}{0pt plus 5cm}{\bf rob\+Mass\+::\+Errno} rob\+Mass\+::\+Write\+Mass (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{os}
+\end{DoxyParamCaption}
+) const}\label{classrob_mass_a6b11b3b2725686b58a91a441b809cec4}
+
+
+Write the mass from a output stream. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Robot/\hyperlink{rob_mass_8h}{rob\+Mass.\+h}\end{DoxyCompactItemize}

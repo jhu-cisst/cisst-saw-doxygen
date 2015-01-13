@@ -1,0 +1,36 @@
+\hypertarget{classvct_dynamic_vector_base_1_1_subvector}{}\section{vct\+Dynamic\+Vector\+Base$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+:\+:Subvector Class Reference}
+\label{classvct_dynamic_vector_base_1_1_subvector}\index{vct\+Dynamic\+Vector\+Base$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::\+Subvector@{vct\+Dynamic\+Vector\+Base$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::\+Subvector}}
+
+
+{\ttfamily \#include $<$vct\+Dynamic\+Vector\+Base.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classvct_dynamic_vector_ref}{vct\+Dynamic\+Vector\+Ref}$<$ value\+\_\+type $>$ \hyperlink{classvct_dynamic_vector_base_1_1_subvector_a39712115ee3599cf1d241395f1ec645a}{Type}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$class vct\+Dynamic\+Vector\+Base$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::\+Subvector}
+
+Define a \hyperlink{classvct_dynamic_vector_base_1_1_subvector}{Subvector} class for compatibility with the fixed size vectors. A subvector has the same stride as the parent container.
+
+Example\+:
+
+typedef \hyperlink{classvct_dynamic_vector}{vct\+Dynamic\+Vector$<$double$>$} Vector\+Type; Vector\+Type v(9); Vector\+Type\+::\+Subvector\+::\+Type first4(v, 0, 4); Vector\+Type\+::\+Subvector\+::\+Type last5(v, 4, 5);
+
+\begin{DoxyNote}{Note}
+There is no straightforward way to define a fixed-\/size subvector of a dynamic vector, because the stride of the dynamic vector is not known in compilation time. A way to do it is\+:
+\end{DoxyNote}
+\hyperlink{classvct_fixed_size_vector_ref}{vct\+Fixed\+Size\+Vector\+Ref}$<$double, 3 /( add stride here if necessary )/$>$ first\+Three(v, 0); \hyperlink{classvct_fixed_size_vector_ref}{vct\+Fixed\+Size\+Vector\+Ref}$<$double, 3 /( add stride here if necessary )/$>$ last\+Three(v, 6); 
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classvct_dynamic_vector_base_1_1_subvector_a39712115ee3599cf1d241395f1ec645a}{}\index{vct\+Dynamic\+Vector\+Base\+::\+Subvector@{vct\+Dynamic\+Vector\+Base\+::\+Subvector}!Type@{Type}}
+\index{Type@{Type}!vct\+Dynamic\+Vector\+Base\+::\+Subvector@{vct\+Dynamic\+Vector\+Base\+::\+Subvector}}
+\subsubsection[{Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ typedef {\bf vct\+Dynamic\+Vector\+Ref}$<$value\+\_\+type$>$ {\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::{\bf Subvector\+::\+Type}}\label{classvct_dynamic_vector_base_1_1_subvector_a39712115ee3599cf1d241395f1ec645a}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Vector/\hyperlink{vct_dynamic_vector_base_8h}{vct\+Dynamic\+Vector\+Base.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,133 @@
+\hypertarget{classcmn_printf}{}\section{cmn\+Printf Class Reference}
+\label{classcmn_printf}\index{cmn\+Printf@{cmn\+Printf}}
+
+
+printf-\/like formatted output for streams  
+
+
+
+
+{\ttfamily \#include $<$cmn\+Printf.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcmn_printf_af834e91520896f203bf74171a852e38f}{cmn\+Printf} (const std\+::string \&format\+Str)
+\item 
+\hyperlink{classcmn_printf_a90b02799c58a696eeef7e3ecc2772834}{$\sim$cmn\+Printf} ()
+\item 
+\hyperlink{classcmn_printf_a22f12554c865b206fb5cac761a3cd0db}{cmn\+Printf} (const \hyperlink{classcmn_printf}{cmn\+Printf} \&other)
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classcmn_printf_a73ad898e5a1725bb1c99d1bccadf68b2}{cmn\+Printf\+Parser}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+printf-\/like formatted output for streams 
+
+This is the user interface for output formatting with C++ streams after the fashion of printf.
+
+A usage example\+:
+
+
+\begin{DoxyCode}
+std::cout << \hyperlink{classcmn_printf_af834e91520896f203bf74171a852e38f}{cmnPrintf}(\textcolor{stringliteral}{"Hello %.4f World\(\backslash\)n"}) << 12.345;
+\end{DoxyCode}
+
+
+prints the text (followed by a ~\newline
+ newline)
+
+\begin{DoxyVerb}Hello 12.3450 World
+\end{DoxyVerb}
+
+
+\hyperlink{classcmn_printf}{cmn\+Printf} can be \char`\"{}streamed\char`\"{} into any object derived from the std\+::ostream base class. The formatting rules are the same as in the standard C routines printf, sprintf, etc. Note that if a \hyperlink{classcmn_printf}{cmn\+Printf} object is streamed out, the rest of the expression no longer behaves like an ordinary \char`\"{}ostream $<$$<$\char`\"{}, but the \hyperlink{classcmn_printf}{cmn\+Printf} object takes precedence.
+
+In behavior, the format string is parsed and whenever a \textquotesingle{}\textquotesingle{} sequence is encountered, a single object is fetched from the corresponding \textquotesingle{}$<$$<$\textquotesingle{}. That object is formatted and printed. If there are more inputs in the \textquotesingle{}$<$$<$\textquotesingle{} sequence than `\textquotesingle{} sequences in the format string, then only the objects that correspond to \textquotesingle{}\textquotesingle{} sequences are printed, and the rest are ignored. For example,
+
+
+\begin{DoxyCode}
+std::cout << \hyperlink{classcmn_printf_af834e91520896f203bf74171a852e38f}{cmnPrintf}(\textcolor{stringliteral}{"One (%d), two and a half (%f), text (%s)"})
+          << 1 << 2.5 << \textcolor{stringliteral}{"text-input"} << 10;
+\end{DoxyCode}
+
+
+will print\+:
+
+\begin{DoxyVerb}One (1), two and a half (2.5), text (text-input)
+\end{DoxyVerb}
+
+
+and ignore the input 10.
+
+If there are fewer inputs in the \textquotesingle{}$<$$<$\textquotesingle{} sequence, then the formatting occurs until the \textquotesingle{}\textquotesingle{} sequence that follows the last input object, and stops there. For example,
+
+
+\begin{DoxyCode}
+std::cout << \hyperlink{classcmn_printf_af834e91520896f203bf74171a852e38f}{cmnPrintf}(\textcolor{stringliteral}{"One (%d), two and a half (%f), text (%s)"})
+          << 1 << 2.5;
+\end{DoxyCode}
+
+
+will print\+:
+
+\begin{DoxyVerb}One (1), two and a half (2.5), text(
+\end{DoxyVerb}
+
+
+Default formatting is provided for the types double (\char`\"{}\%f\char`\"{}), int (\char`\"{}\%d\char`\"{}) and const char $\ast$ (\char`\"{}\%s\char`\"{}). Other basic types are automatically converted by the compiler to one of these and printed. However, the model can be extended to include more output types. See the documentation of \hyperlink{classcmn_printf_parser}{cmn\+Printf\+Parser} for more information.
+
+Note that special ios manipulators and functions, such as endl, flush, setw, setprecision, etc., have no \textquotesingle{}\textquotesingle{} sequence, and therefore C\+A\+N\+N\+O\+T be used with with \hyperlink{classcmn_printf}{cmn\+Printf}. To print a newline (without flush), one may, for example, include a \textquotesingle{}~\newline
+\textquotesingle{} character in the format stream, as done with the C printf function. To flush, a flush method must be called outside of the \hyperlink{classcmn_printf}{cmn\+Printf} expression.
+
+\hyperlink{classcmn_printf}{cmn\+Printf} is stateless, which means that it does not affect any of the state variables in the output stream, such as width, precision, etc. All the output is done through conversion to character strings.
+
+The allocated space for each output element is defined in {\ttfamily \hyperlink{group__cisst_common_gga2dbb69cb7aa030799fad9b8d7a1857d5af9f1fd3238867d902ee69418278958a9}{cmn\+Printf\+Parser\+::\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+Z\+E}}. If the length of the formatted element is larger than this number, then the output is truncated, and the text \textquotesingle{}(truncated)\textquotesingle{} is appended following the first B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+Z\+E characters. Unfortunately, there is no standard way to compute the length of a formatted string (snprintf is not portable to Visual Studio), and hence to way for our code to know how much memory to allocate for the result of the formatting.
+
+Implementation-\/wise, this is a dummy class that just stores a copy of the format string. The real work is done by a \hyperlink{classcmn_printf_parser}{cmn\+Printf\+Parser} object which is returned from operator $<$$<$.
+
+The expression 
+\begin{DoxyCode}
+std::cout << \hyperlink{classcmn_printf_af834e91520896f203bf74171a852e38f}{cmnPrintf}(\textcolor{stringliteral}{"something"})
+\end{DoxyCode}
+
+
+creates a \hyperlink{classcmn_printf}{cmn\+Printf} object, which is streamed into std\+::cout. The result of the expression is an invisible \hyperlink{classcmn_printf_parser}{cmn\+Printf\+Parser} object, into which all the following elements are streamed. The \hyperlink{classcmn_printf_parser}{cmn\+Printf\+Parser} object parses the format string, formats the streamed objects, and forwards the formatted result to std\+::cout. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcmn_printf_af834e91520896f203bf74171a852e38f}{}\index{cmn\+Printf@{cmn\+Printf}!cmn\+Printf@{cmn\+Printf}}
+\index{cmn\+Printf@{cmn\+Printf}!cmn\+Printf@{cmn\+Printf}}
+\subsubsection[{cmn\+Printf}]{\setlength{\rightskip}{0pt plus 5cm}cmn\+Printf\+::cmn\+Printf (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{format\+Str}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classcmn_printf_af834e91520896f203bf74171a852e38f}
+Create a \hyperlink{classcmn_printf}{cmn\+Printf} object and provide a format string following the printf specification. The \hyperlink{classcmn_printf}{cmn\+Printf} object stores a copy of the format string. \hypertarget{classcmn_printf_a90b02799c58a696eeef7e3ecc2772834}{}\index{cmn\+Printf@{cmn\+Printf}!````~cmn\+Printf@{$\sim$cmn\+Printf}}
+\index{````~cmn\+Printf@{$\sim$cmn\+Printf}!cmn\+Printf@{cmn\+Printf}}
+\subsubsection[{$\sim$cmn\+Printf}]{\setlength{\rightskip}{0pt plus 5cm}cmn\+Printf\+::$\sim$cmn\+Printf (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classcmn_printf_a90b02799c58a696eeef7e3ecc2772834}
+Destructor. Delete any internally allocated memory \hypertarget{classcmn_printf_a22f12554c865b206fb5cac761a3cd0db}{}\index{cmn\+Printf@{cmn\+Printf}!cmn\+Printf@{cmn\+Printf}}
+\index{cmn\+Printf@{cmn\+Printf}!cmn\+Printf@{cmn\+Printf}}
+\subsubsection[{cmn\+Printf}]{\setlength{\rightskip}{0pt plus 5cm}cmn\+Printf\+::cmn\+Printf (
+\begin{DoxyParamCaption}
+\item[{const {\bf cmn\+Printf} \&}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classcmn_printf_a22f12554c865b206fb5cac761a3cd0db}
+Copy constructor. We would like to have this constructor private but gcc-\/4.\+0.\+2 complains if it is private even thought is doesn\textquotesingle{}t use it. 
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classcmn_printf_a73ad898e5a1725bb1c99d1bccadf68b2}{}\index{cmn\+Printf@{cmn\+Printf}!cmn\+Printf\+Parser@{cmn\+Printf\+Parser}}
+\index{cmn\+Printf\+Parser@{cmn\+Printf\+Parser}!cmn\+Printf@{cmn\+Printf}}
+\subsubsection[{cmn\+Printf\+Parser}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf cmn\+Printf\+Parser}\hspace{0.3cm}{\ttfamily [friend]}}\label{classcmn_printf_a73ad898e5a1725bb1c99d1bccadf68b2}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Common/\hyperlink{cmn_printf_8h}{cmn\+Printf.\+h}\end{DoxyCompactItemize}

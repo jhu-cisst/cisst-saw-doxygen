@@ -1,0 +1,103 @@
+\hypertarget{classnmr_dyn_alloc_polynomial_container}{}\section{nmr\+Dyn\+Alloc\+Polynomial\+Container Class Reference}
+\label{classnmr_dyn_alloc_polynomial_container}\index{nmr\+Dyn\+Alloc\+Polynomial\+Container@{nmr\+Dyn\+Alloc\+Polynomial\+Container}}
+
+
+{\ttfamily \#include $<$nmr\+Dyn\+Alloc\+Polynomial\+Container.\+h$>$}
+
+Inheritance diagram for nmr\+Dyn\+Alloc\+Polynomial\+Container\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{dc/d85/classnmr_dyn_alloc_polynomial_container}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classnmr_polynomial_container}{nmr\+Polynomial\+Container}$<$ void $\ast$ $>$ \hyperlink{classnmr_dyn_alloc_polynomial_container_a237c3e90961020b060ad1118206f4079}{Base\+Type}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classnmr_dyn_alloc_polynomial_container_a31ea4b22ad8d90980ec372d8ba666b41}{nmr\+Dyn\+Alloc\+Polynomial\+Container} (unsigned int num\+Variables, unsigned int min\+Degree, unsigned int max\+Degree)
+\item 
+virtual void \hyperlink{classnmr_dyn_alloc_polynomial_container_a523aa33f3b5729a4cd9500fa278e56c6}{Serialize\+Term\+Info} (std\+::ostream \&output, const \hyperlink{classnmr_polynomial_container_aba8d31506ab6a487fdc4fe2815469442}{Term\+Const\+Iterator\+Type} \&term\+Iterator) const =0
+\item 
+virtual void \hyperlink{classnmr_dyn_alloc_polynomial_container_a166383324b0c1392e5faf798d7c5a622}{Deserialize\+Term\+Info} (std\+::istream \&input, \hyperlink{classnmr_polynomial_container_a276e57445d038e8a16462f47b85719a3}{Term\+Iterator\+Type} \&term\+Iterator)=0
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classnmr_dyn_alloc_polynomial_container_a237c3e90961020b060ad1118206f4079}{}\index{nmr\+Dyn\+Alloc\+Polynomial\+Container@{nmr\+Dyn\+Alloc\+Polynomial\+Container}!Base\+Type@{Base\+Type}}
+\index{Base\+Type@{Base\+Type}!nmr\+Dyn\+Alloc\+Polynomial\+Container@{nmr\+Dyn\+Alloc\+Polynomial\+Container}}
+\subsubsection[{Base\+Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf nmr\+Polynomial\+Container}$<$void $\ast$$>$ {\bf nmr\+Dyn\+Alloc\+Polynomial\+Container\+::\+Base\+Type}}\label{classnmr_dyn_alloc_polynomial_container_a237c3e90961020b060ad1118206f4079}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classnmr_dyn_alloc_polynomial_container_a31ea4b22ad8d90980ec372d8ba666b41}{}\index{nmr\+Dyn\+Alloc\+Polynomial\+Container@{nmr\+Dyn\+Alloc\+Polynomial\+Container}!nmr\+Dyn\+Alloc\+Polynomial\+Container@{nmr\+Dyn\+Alloc\+Polynomial\+Container}}
+\index{nmr\+Dyn\+Alloc\+Polynomial\+Container@{nmr\+Dyn\+Alloc\+Polynomial\+Container}!nmr\+Dyn\+Alloc\+Polynomial\+Container@{nmr\+Dyn\+Alloc\+Polynomial\+Container}}
+\subsubsection[{nmr\+Dyn\+Alloc\+Polynomial\+Container}]{\setlength{\rightskip}{0pt plus 5cm}nmr\+Dyn\+Alloc\+Polynomial\+Container\+::nmr\+Dyn\+Alloc\+Polynomial\+Container (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{num\+Variables, }
+\item[{unsigned int}]{min\+Degree, }
+\item[{unsigned int}]{max\+Degree}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classnmr_dyn_alloc_polynomial_container_a31ea4b22ad8d90980ec372d8ba666b41}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classnmr_dyn_alloc_polynomial_container_a166383324b0c1392e5faf798d7c5a622}{}\index{nmr\+Dyn\+Alloc\+Polynomial\+Container@{nmr\+Dyn\+Alloc\+Polynomial\+Container}!Deserialize\+Term\+Info@{Deserialize\+Term\+Info}}
+\index{Deserialize\+Term\+Info@{Deserialize\+Term\+Info}!nmr\+Dyn\+Alloc\+Polynomial\+Container@{nmr\+Dyn\+Alloc\+Polynomial\+Container}}
+\subsubsection[{Deserialize\+Term\+Info}]{\setlength{\rightskip}{0pt plus 5cm}virtual void nmr\+Dyn\+Alloc\+Polynomial\+Container\+::\+Deserialize\+Term\+Info (
+\begin{DoxyParamCaption}
+\item[{std\+::istream \&}]{input, }
+\item[{{\bf Term\+Iterator\+Type} \&}]{term\+Iterator}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classnmr_dyn_alloc_polynomial_container_a166383324b0c1392e5faf798d7c5a622}
+Deserialize and do other necessary initializations for the Term\+Info\+Member associated with the power index of a term. This function should be complementart to Serialize\+Term\+Info.
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & the input deserialization stream \\
+\hline
+{\em term\+Iterator} & an iterator referreing to the term whose contents are being deserialized. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classnmr_polynomial_container_aa1d8ad137c0dce9e4d3b4f576ca4c0e8}{nmr\+Polynomial\+Container$<$ void $\ast$ $>$}.
+
+
+
+Implemented in \hyperlink{classnmr_bernstein_polynomial_a457024b5819f590ef4a9feb1b803a796}{nmr\+Bernstein\+Polynomial}, and \hyperlink{classnmr_standard_polynomial_ac4e1ca13a07cf587db161710a09f5fcb}{nmr\+Standard\+Polynomial}.
+
+\hypertarget{classnmr_dyn_alloc_polynomial_container_a523aa33f3b5729a4cd9500fa278e56c6}{}\index{nmr\+Dyn\+Alloc\+Polynomial\+Container@{nmr\+Dyn\+Alloc\+Polynomial\+Container}!Serialize\+Term\+Info@{Serialize\+Term\+Info}}
+\index{Serialize\+Term\+Info@{Serialize\+Term\+Info}!nmr\+Dyn\+Alloc\+Polynomial\+Container@{nmr\+Dyn\+Alloc\+Polynomial\+Container}}
+\subsubsection[{Serialize\+Term\+Info}]{\setlength{\rightskip}{0pt plus 5cm}virtual void nmr\+Dyn\+Alloc\+Polynomial\+Container\+::\+Serialize\+Term\+Info (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{output, }
+\item[{const {\bf Term\+Const\+Iterator\+Type} \&}]{term\+Iterator}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classnmr_dyn_alloc_polynomial_container_a523aa33f3b5729a4cd9500fa278e56c6}
+Serialize the Term\+Info member associated with the power index of a term. The implementation of this function is to be specific per Term\+Info concrete type, and so it should be overridden in the derived classes. This function is called from \hyperlink{classnmr_polynomial_container_a1fb16b0f2382343c1313b5fb2c6d5e6e}{Serialize\+Raw()}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em output} & the output serializetion stream \\
+\hline
+{\em term\+Iterator} & an iterator referring to the term whose contents are being serialized. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classnmr_polynomial_container_aa8d77ebaccb2e9849b8921cf4a7408a8}{nmr\+Polynomial\+Container$<$ void $\ast$ $>$}.
+
+
+
+Implemented in \hyperlink{classnmr_bernstein_polynomial_ab8846bb7223b02b87c366672d4a07a4f}{nmr\+Bernstein\+Polynomial}, and \hyperlink{classnmr_standard_polynomial_a5867b0d1cba13066228b8a8862feebfa}{nmr\+Standard\+Polynomial}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Numerical/\hyperlink{nmr_dyn_alloc_polynomial_container_8h}{nmr\+Dyn\+Alloc\+Polynomial\+Container.\+h}\end{DoxyCompactItemize}

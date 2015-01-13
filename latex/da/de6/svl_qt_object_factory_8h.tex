@@ -1,0 +1,50 @@
+\hypertarget{svl_qt_object_factory_8h}{}\section{/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Stereo\+Vision/svl\+Qt\+Object\+Factory.h File Reference}
+\label{svl_qt_object_factory_8h}\index{/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Stereo\+Vision/svl\+Qt\+Object\+Factory.\+h@{/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Stereo\+Vision/svl\+Qt\+Object\+Factory.\+h}}
+{\ttfamily \#include $<$cisst\+O\+S\+Abstraction/osa\+Thread.\+h$>$}\\*
+{\ttfamily \#include $<$Q\+Application$>$}\\*
+{\ttfamily \#include $<$Q\+Object$>$}\\*
+{\ttfamily \#include $<$cisst\+Stereo\+Vision/svl\+Export\+Qt.\+h$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classsvl_qt_object_factory}{svl\+Qt\+Object\+Factory}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{svl_qt_object_factory_8h_aba8a0543be33df517284823ae450f694}{S\+E\+T\+U\+P\+\_\+\+Q\+T\+\_\+\+E\+N\+V\+I\+R\+O\+N\+M\+E\+N\+T}(F)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{svl_qt_object_factory_8h_aba8a0543be33df517284823ae450f694}{}\index{svl\+Qt\+Object\+Factory.\+h@{svl\+Qt\+Object\+Factory.\+h}!S\+E\+T\+U\+P\+\_\+\+Q\+T\+\_\+\+E\+N\+V\+I\+R\+O\+N\+M\+E\+N\+T@{S\+E\+T\+U\+P\+\_\+\+Q\+T\+\_\+\+E\+N\+V\+I\+R\+O\+N\+M\+E\+N\+T}}
+\index{S\+E\+T\+U\+P\+\_\+\+Q\+T\+\_\+\+E\+N\+V\+I\+R\+O\+N\+M\+E\+N\+T@{S\+E\+T\+U\+P\+\_\+\+Q\+T\+\_\+\+E\+N\+V\+I\+R\+O\+N\+M\+E\+N\+T}!svl\+Qt\+Object\+Factory.\+h@{svl\+Qt\+Object\+Factory.\+h}}
+\subsubsection[{S\+E\+T\+U\+P\+\_\+\+Q\+T\+\_\+\+E\+N\+V\+I\+R\+O\+N\+M\+E\+N\+T}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+E\+T\+U\+P\+\_\+\+Q\+T\+\_\+\+E\+N\+V\+I\+R\+O\+N\+M\+E\+N\+T(
+\begin{DoxyParamCaption}
+\item[{}]{F}
+\end{DoxyParamCaption}
+)}\label{svl_qt_object_factory_8h_aba8a0543be33df517284823ae450f694}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+int (*\_cisst\_qt\_main\_funct\_)(\textcolor{keywordtype}{int} argc, \textcolor{keywordtype}{char}** argv); \(\backslash\)
+    int \_cisst\_qt\_main\_funct\_argc\_; \(\backslash\)
+    char** \_cisst\_qt\_main\_funct\_argv\_; \(\backslash\)
+    void* \_cisst\_qt\_main\_thread\_proc\_() \{ \(\backslash\)
+        \_cisst\_qt\_main\_funct\_(\_cisst\_qt\_main\_funct\_argc\_, \_cisst\_qt\_main\_funct\_argv\_); \(\backslash\)
+        QApplication::instance()->exit(0); \(\backslash\)
+        return 0; \(\backslash\)
+    \} \(\backslash\)
+    int main(\textcolor{keywordtype}{int} argc, \textcolor{keywordtype}{char}** argv) \(\backslash\)
+    \{ \(\backslash\)
+        QApplication app(argc, argv); \(\backslash\)
+        app.setQuitOnLastWindowClosed(\textcolor{keyword}{false}); \hyperlink{classsvl_qt_object_factory_afabcc9b0e574b2b1954260de26e35027}{\(\backslash\)}
+\hyperlink{classsvl_qt_object_factory_afabcc9b0e574b2b1954260de26e35027}{        svlQtObjectFactory::Init}(); \(\backslash\)
+        \_cisst\_qt\_main\_funct\_ = F; \(\backslash\)
+        \_cisst\_qt\_main\_funct\_argc\_ = argc; \(\backslash\)
+        \_cisst\_qt\_main\_funct\_argv\_ = argv; \(\backslash\)
+        osaThread thread; \(\backslash\)
+        thread.Create(\_cisst\_qt\_main\_thread\_proc\_); \(\backslash\)
+        app.exec(); \(\backslash\)
+        return 0; \(\backslash\)
+    \}
+\end{DoxyCode}

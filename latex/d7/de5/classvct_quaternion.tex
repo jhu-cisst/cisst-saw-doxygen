@@ -1,0 +1,123 @@
+\hypertarget{classvct_quaternion}{}\section{vct\+Quaternion$<$ \+\_\+element\+Type $>$ Class Template Reference}
+\label{classvct_quaternion}\index{vct\+Quaternion$<$ \+\_\+element\+Type $>$@{vct\+Quaternion$<$ \+\_\+element\+Type $>$}}
+
+
+Define a quaternion container.  
+
+
+
+
+{\ttfamily \#include $<$vct\+Quaternion.\+h$>$}
+
+Inheritance diagram for vct\+Quaternion$<$ \+\_\+element\+Type $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.888889cm]{d7/de5/classvct_quaternion}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \hyperlink{group__cisst_vector_ggafa19be877555ceeedba0f4e910b22e51a12aabd231905465cec7ef73c8b4c043f}{S\+I\+Z\+E} = 4
+ \}
+\item 
+typedef \hyperlink{classvct_quaternion}{vct\+Quaternion}$<$ value\+\_\+type $>$ \hyperlink{classvct_quaternion_a07e736b9769c53c9261fd2f4c79bf4c1}{This\+Type}
+\item 
+typedef \hyperlink{classvct_fixed_size_vector}{vct\+Fixed\+Size\+Vector}$<$ value\+\_\+type, \hyperlink{group__cisst_vector_ggafa19be877555ceeedba0f4e910b22e51a12aabd231905465cec7ef73c8b4c043f}{S\+I\+Z\+E} $>$ \hyperlink{classvct_quaternion_ac536cb4b97d3759e26fd33094a3630fa}{Container\+Type}
+\item 
+typedef \hyperlink{classvct_quaternion_base}{vct\+Quaternion\+Base}$<$ \hyperlink{classvct_quaternion_ac536cb4b97d3759e26fd33094a3630fa}{Container\+Type} $>$ \hyperlink{classvct_quaternion_a6904ddafc9719f3ba49ffd08dc0b0702}{Base\+Type}
+\item 
+typedef \hyperlink{classcmn_type_traits}{cmn\+Type\+Traits}$<$ value\+\_\+type $>$ \hyperlink{classvct_quaternion_a7a67c4eef1358c2853db271c468a1c03}{Type\+Traits}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classvct_quaternion_a8c9965ff5b6602b3d068797fe456dc78}{V\+C\+T\+\_\+\+C\+O\+N\+T\+A\+I\+N\+E\+R\+\_\+\+T\+R\+A\+I\+T\+S\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+S} (\+\_\+element\+Type)
+\item 
+\hyperlink{classvct_quaternion_a2c37773efff24117e5209fa58dce02f4}{vct\+Quaternion} ()
+\item 
+\hyperlink{classvct_quaternion_a6987919ed544903ff0f3d075738d4908}{vct\+Quaternion} (const value\+\_\+type \&x, const value\+\_\+type \&y, const value\+\_\+type \&z, const value\+\_\+type \&r)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class \+\_\+element\+Type$>$class vct\+Quaternion$<$ \+\_\+element\+Type $>$}
+
+Define a quaternion container. 
+
+This class is templated by the element type. It is derived from \hyperlink{classvct_quaternion_base}{vct\+Quaternion\+Base} and uses a \hyperlink{classvct_fixed_size_vector}{vct\+Fixed\+Size\+Vector} as underlying container. It provides a more humain interface for programmers only interested in templating by \+\_\+element\+Type.
+
+It is important to note that the class \hyperlink{classvct_quaternion}{vct\+Quaternion} is for any quaternion, i.\+e. it does not necessary represent a unit quaternion.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+element\+Type} & The type of elements of the vector.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classvct_quaternion_base}{vct\+Quaternion\+Base} \hyperlink{classvct_fixed_size_vector}{vct\+Fixed\+Size\+Vector} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classvct_quaternion_a6904ddafc9719f3ba49ffd08dc0b0702}{}\index{vct\+Quaternion@{vct\+Quaternion}!Base\+Type@{Base\+Type}}
+\index{Base\+Type@{Base\+Type}!vct\+Quaternion@{vct\+Quaternion}}
+\subsubsection[{Base\+Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type $>$ typedef {\bf vct\+Quaternion\+Base}$<${\bf Container\+Type}$>$ {\bf vct\+Quaternion}$<$ \+\_\+element\+Type $>$\+::{\bf Base\+Type}}\label{classvct_quaternion_a6904ddafc9719f3ba49ffd08dc0b0702}
+\hypertarget{classvct_quaternion_ac536cb4b97d3759e26fd33094a3630fa}{}\index{vct\+Quaternion@{vct\+Quaternion}!Container\+Type@{Container\+Type}}
+\index{Container\+Type@{Container\+Type}!vct\+Quaternion@{vct\+Quaternion}}
+\subsubsection[{Container\+Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type $>$ typedef {\bf vct\+Fixed\+Size\+Vector}$<$value\+\_\+type, {\bf S\+I\+Z\+E}$>$ {\bf vct\+Quaternion}$<$ \+\_\+element\+Type $>$\+::{\bf Container\+Type}}\label{classvct_quaternion_ac536cb4b97d3759e26fd33094a3630fa}
+\hypertarget{classvct_quaternion_a07e736b9769c53c9261fd2f4c79bf4c1}{}\index{vct\+Quaternion@{vct\+Quaternion}!This\+Type@{This\+Type}}
+\index{This\+Type@{This\+Type}!vct\+Quaternion@{vct\+Quaternion}}
+\subsubsection[{This\+Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type $>$ typedef {\bf vct\+Quaternion}$<$value\+\_\+type$>$ {\bf vct\+Quaternion}$<$ \+\_\+element\+Type $>$\+::{\bf This\+Type}}\label{classvct_quaternion_a07e736b9769c53c9261fd2f4c79bf4c1}
+\hypertarget{classvct_quaternion_a7a67c4eef1358c2853db271c468a1c03}{}\index{vct\+Quaternion@{vct\+Quaternion}!Type\+Traits@{Type\+Traits}}
+\index{Type\+Traits@{Type\+Traits}!vct\+Quaternion@{vct\+Quaternion}}
+\subsubsection[{Type\+Traits}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type $>$ typedef {\bf cmn\+Type\+Traits}$<$value\+\_\+type$>$ {\bf vct\+Quaternion}$<$ \+\_\+element\+Type $>$\+::{\bf Type\+Traits}}\label{classvct_quaternion_a7a67c4eef1358c2853db271c468a1c03}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classvct_quaternion_a2c37773efff24117e5209fa58dce02f4}{}\index{vct\+Quaternion@{vct\+Quaternion}!vct\+Quaternion@{vct\+Quaternion}}
+\index{vct\+Quaternion@{vct\+Quaternion}!vct\+Quaternion@{vct\+Quaternion}}
+\subsubsection[{vct\+Quaternion}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type $>$ {\bf vct\+Quaternion}$<$ \+\_\+element\+Type $>$\+::{\bf vct\+Quaternion} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_quaternion_a2c37773efff24117e5209fa58dce02f4}
+Default constructor. Does nothing. \hypertarget{classvct_quaternion_a6987919ed544903ff0f3d075738d4908}{}\index{vct\+Quaternion@{vct\+Quaternion}!vct\+Quaternion@{vct\+Quaternion}}
+\index{vct\+Quaternion@{vct\+Quaternion}!vct\+Quaternion@{vct\+Quaternion}}
+\subsubsection[{vct\+Quaternion}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type $>$ {\bf vct\+Quaternion}$<$ \+\_\+element\+Type $>$\+::{\bf vct\+Quaternion} (
+\begin{DoxyParamCaption}
+\item[{const value\+\_\+type \&}]{x, }
+\item[{const value\+\_\+type \&}]{y, }
+\item[{const value\+\_\+type \&}]{z, }
+\item[{const value\+\_\+type \&}]{r}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_quaternion_a6987919ed544903ff0f3d075738d4908}
+Constructor from 4 elements.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The first imaginary component \\
+\hline
+{\em y} & The second imaginary component \\
+\hline
+{\em z} & The third imaginary component \\
+\hline
+{\em r} & The real component \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classvct_quaternion_a8c9965ff5b6602b3d068797fe456dc78}{}\index{vct\+Quaternion@{vct\+Quaternion}!V\+C\+T\+\_\+\+C\+O\+N\+T\+A\+I\+N\+E\+R\+\_\+\+T\+R\+A\+I\+T\+S\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+S@{V\+C\+T\+\_\+\+C\+O\+N\+T\+A\+I\+N\+E\+R\+\_\+\+T\+R\+A\+I\+T\+S\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+S}}
+\index{V\+C\+T\+\_\+\+C\+O\+N\+T\+A\+I\+N\+E\+R\+\_\+\+T\+R\+A\+I\+T\+S\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+S@{V\+C\+T\+\_\+\+C\+O\+N\+T\+A\+I\+N\+E\+R\+\_\+\+T\+R\+A\+I\+T\+S\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+S}!vct\+Quaternion@{vct\+Quaternion}}
+\subsubsection[{V\+C\+T\+\_\+\+C\+O\+N\+T\+A\+I\+N\+E\+R\+\_\+\+T\+R\+A\+I\+T\+S\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+S}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type $>$ {\bf vct\+Quaternion}$<$ \+\_\+element\+Type $>$\+::V\+C\+T\+\_\+\+C\+O\+N\+T\+A\+I\+N\+E\+R\+\_\+\+T\+R\+A\+I\+T\+S\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+S (
+\begin{DoxyParamCaption}
+\item[{\+\_\+element\+Type}]{}
+\end{DoxyParamCaption}
+)}\label{classvct_quaternion_a8c9965ff5b6602b3d068797fe456dc78}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Vector/\hyperlink{vct_quaternion_8h}{vct\+Quaternion.\+h}\end{DoxyCompactItemize}

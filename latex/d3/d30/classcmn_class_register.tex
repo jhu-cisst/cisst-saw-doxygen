@@ -1,0 +1,467 @@
+\hypertarget{classcmn_class_register}{}\section{cmn\+Class\+Register Class Reference}
+\label{classcmn_class_register}\index{cmn\+Class\+Register@{cmn\+Class\+Register}}
+
+
+Main register for classes.  
+
+
+
+
+{\ttfamily \#include $<$cmn\+Class\+Register.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcmn_class_services_base}{cmn\+Class\+Services\+Base} $\ast$ \hyperlink{classcmn_class_register_a371f6f08b984969a6baf01405fe64301}{Find\+Class\+Services\+Instance} (const std\+::string \&class\+Name)
+\item 
+\hyperlink{classcmn_class_services_base}{cmn\+Class\+Services\+Base} $\ast$ \hyperlink{classcmn_class_register_a292c354f15d6308ec8ca7a8ca5393a48}{Find\+Class\+Services\+Instance} (const std\+::type\+\_\+info \&type\+Info)
+\item 
+const std\+::string $\ast$ \hyperlink{classcmn_class_register_a99073eb83fbe6d43abf70a8d00ad82e2}{Register\+Instance} (\hyperlink{classcmn_class_services_base}{cmn\+Class\+Services\+Base} $\ast$class\+Services\+Pointer, const std\+::string \&class\+Name)
+\item 
+bool \hyperlink{classcmn_class_register_afb45f0c62c3ae291136b54946d804d84}{Set\+Log\+Mask\+Class\+All\+Instance} (\hyperlink{cmn_log_lo_d_8h_a44b6ef7560b0d204460b0a54f1a5d702}{cmn\+Log\+Mask} mask)
+\item 
+bool \hyperlink{classcmn_class_register_a53cf9c570bc4a85a5e556702e07fa41d}{Set\+Log\+Mask\+Class\+Matching\+Instance} (const std\+::string \&string\+To\+Match, \hyperlink{cmn_log_lo_d_8h_a44b6ef7560b0d204460b0a54f1a5d702}{cmn\+Log\+Mask} mask)
+\item 
+std\+::string \hyperlink{classcmn_class_register_a25fde8d61752440d7d643e56173f2a7b}{To\+String\+Instance} (void) const 
+\item 
+void \hyperlink{classcmn_class_register_a8fc3ce4e51acecb0dc1192e1f805da1f}{To\+Stream\+Instance} (std\+::ostream \&output\+Stream) const 
+\item 
+\hyperlink{classcmn_class_register_ac90771194c85a9fff753d9d623071b01}{size\+\_\+type} \hyperlink{classcmn_class_register_a56096ffe39a5a4eee0ce6d8bf015184f}{size\+Instance} (void) const 
+\item 
+\hyperlink{classcmn_class_register_aacfef62640c83b00064eba6c1f667e26}{const\+\_\+iterator} \hyperlink{classcmn_class_register_ae18fd6eeb8f39168624bbc50a7c88e43}{begin\+Instance} (void) const 
+\item 
+\hyperlink{classcmn_class_register_aacfef62640c83b00064eba6c1f667e26}{const\+\_\+iterator} \hyperlink{classcmn_class_register_abaa15f6524d4c6ca44cadb161a2f14bf}{end\+Instance} (void) const 
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classcmn_class_register}{cmn\+Class\+Register} $\ast$ \hyperlink{classcmn_class_register_a086f22c4834c690b93f24704d4cfd936}{Instance} (void)
+\item 
+static const std\+::string $\ast$ \hyperlink{classcmn_class_register_ac4d2419b95d57656282fcc33dad76f31}{Register} (\hyperlink{classcmn_class_services_base}{cmn\+Class\+Services\+Base} $\ast$class\+Services\+Pointer, const std\+::string \&class\+Name)
+\item 
+static bool \hyperlink{classcmn_class_register_a9bbfe2c4a0d388c508d3db7e5ce87375}{Set\+Log\+Mask\+Class} (const std\+::string \&class\+Name, \hyperlink{cmn_log_lo_d_8h_a44b6ef7560b0d204460b0a54f1a5d702}{cmn\+Log\+Mask} mask)
+\item 
+static bool \hyperlink{cmn_portability_8h_a63da7164735f9501be651b1f2bbc0121}{C\+I\+S\+S\+T\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D} \hyperlink{classcmn_class_register_ad2190c286fb8d1b52d7b2a8483df1551}{Set\+Lo\+D} (const std\+::string \&class\+Name, \hyperlink{cmn_log_lo_d_8h_a44b6ef7560b0d204460b0a54f1a5d702}{cmn\+Log\+Mask} mask)
+\item 
+static bool \hyperlink{classcmn_class_register_ab84a1a900a54b94c4c6d512acf152ebe}{Set\+Log\+Mask\+Class\+All} (\hyperlink{cmn_log_lo_d_8h_a44b6ef7560b0d204460b0a54f1a5d702}{cmn\+Log\+Mask} mask)
+\item 
+static bool \hyperlink{cmn_portability_8h_a63da7164735f9501be651b1f2bbc0121}{C\+I\+S\+S\+T\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D} \hyperlink{classcmn_class_register_aa6781144fc60198e69ecd54afdc02afd}{Set\+Lo\+D\+For\+All\+Classes} (\hyperlink{cmn_log_lo_d_8h_a44b6ef7560b0d204460b0a54f1a5d702}{cmn\+Log\+Mask} mask)
+\item 
+static bool \hyperlink{classcmn_class_register_afc0d014a73ac6cdbc8f3f9b490cafcd9}{Set\+Log\+Mask\+Class\+Matching} (const std\+::string \&string\+To\+Match, \hyperlink{cmn_log_lo_d_8h_a44b6ef7560b0d204460b0a54f1a5d702}{cmn\+Log\+Mask} mask)
+\item 
+static bool \hyperlink{cmn_portability_8h_a63da7164735f9501be651b1f2bbc0121}{C\+I\+S\+S\+T\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D} \hyperlink{classcmn_class_register_a1b46cd31e03253c910612c6d73eb5d60}{Set\+Lo\+D\+For\+Matching\+Classes} (const std\+::string \&string\+To\+Match, \hyperlink{cmn_log_lo_d_8h_a44b6ef7560b0d204460b0a54f1a5d702}{cmn\+Log\+Mask} mask)
+\item 
+static \hyperlink{classcmn_class_services_base}{cmn\+Class\+Services\+Base} $\ast$ \hyperlink{classcmn_class_register_a670426c761d6ef43df9bd67f4041b3da}{Find\+Class\+Services} (const std\+::string \&class\+Name)
+\item 
+static \hyperlink{classcmn_class_services_base}{cmn\+Class\+Services\+Base} $\ast$ \hyperlink{classcmn_class_register_a6ded0119eaa6ba31df685530ccf87d25}{Find\+Class\+Services} (const std\+::type\+\_\+info \&type\+Info)
+\item 
+static \hyperlink{classcmn_generic_object}{cmn\+Generic\+Object} $\ast$ \hyperlink{classcmn_class_register_af08b9d1e930098b7e760a3e13bd50cb0}{Create} (const std\+::string \&class\+Name)
+\item 
+static \hyperlink{classcmn_generic_object}{cmn\+Generic\+Object} $\ast$ \hyperlink{classcmn_class_register_ac96330fa28b74d90fb7625784fdbdee0}{Create} (const std\+::string \&class\+Name, const \hyperlink{classcmn_generic_object}{cmn\+Generic\+Object} \&other)
+\item 
+static std\+::string \hyperlink{classcmn_class_register_a29fdd14acb31a4fe05ce7fdbd463a31f}{To\+String} (void)
+\item 
+static void \hyperlink{classcmn_class_register_af25661aaf81242eae572112fc95b5b33}{To\+Stream} (std\+::ostream \&output\+Stream)
+\item 
+static \hyperlink{classcmn_class_register_ac90771194c85a9fff753d9d623071b01}{size\+\_\+type} \hyperlink{classcmn_class_register_a45356688a8fe87798fd8e2143d6f768c}{size} (void)
+\item 
+static \hyperlink{classcmn_class_register_aacfef62640c83b00064eba6c1f667e26}{const\+\_\+iterator} \hyperlink{classcmn_class_register_a97b89ca18a8fa10f083c000d259e8b82}{begin} (void)
+\item 
+static \hyperlink{classcmn_class_register_aacfef62640c83b00064eba6c1f667e26}{const\+\_\+iterator} \hyperlink{classcmn_class_register_afa8cb2f94da62294a96d7bfd1ba1185f}{end} (void)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcmn_class_register_a7dfc2396cd035f150c84d7f2aa1286b8}{cmn\+Class\+Register} (void)
+\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::map$<$ std\+::string, \hyperlink{classcmn_class_services_base}{cmn\+Class\+Services\+Base} $\ast$ $>$ \hyperlink{classcmn_class_register_afad21d7d550eea4f0e0ce5209e7fc437}{Services\+Container\+Type}
+\item 
+typedef Services\+Container\+Type\+::value\+\_\+type \hyperlink{classcmn_class_register_ac19a6e242b59d7f0336be30be97fabaf}{Entry\+Type}
+\item 
+typedef Services\+Container\+Type\+::const\+\_\+iterator \hyperlink{classcmn_class_register_aacfef62640c83b00064eba6c1f667e26}{const\+\_\+iterator}
+\item 
+typedef Services\+Container\+Type\+::const\+\_\+reverse\+\_\+iterator \hyperlink{classcmn_class_register_afdce6482c138fc3c4cb611f0ef7c7a08}{const\+\_\+reverse\+\_\+iterator}
+\item 
+typedef Services\+Container\+Type\+::size\+\_\+type \hyperlink{classcmn_class_register_ac90771194c85a9fff753d9d623071b01}{size\+\_\+type}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Main register for classes. 
+
+This class handles the registration of classes. The registration process allows to retrieve by name some information about a specific class from a centralized point. The current version of the class register allows to\+:
+
+
+\begin{DoxyItemize}
+\item Create dynamically an object based on a name provided as a string. This feature is required for the deserialization process (from a buffer and a name, create a new object of a given type defined by a string).
+\item Modify the logging level of detail for a given class. See \hyperlink{classcmn_logger}{cmn\+Logger} for more details regarding the logging in cisst.
+\end{DoxyItemize}
+
+Since the dynamic creation requires a base class, we have introduced the \hyperlink{classcmn_generic_object}{cmn\+Generic\+Object} class in cisst\+Common. One can only register classes derived from \hyperlink{classcmn_generic_object}{cmn\+Generic\+Object}. The registration requires the use of \hyperlink{cmn_class_register_macros_8h_a7fbab4cbcdfbf35062de4f734e697034}{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S} (or \hyperlink{cmn_class_register_macros_8h_a3dcd7732deee3f450741f0eb099ff778}{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+E\+X\+P\+O\+R\+T}), \hyperlink{mts_text_to_speech_8h_aae5c71840342a68c45d71caab531fec2}{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+I\+N\+S\+T\+A\+N\+T\+I\+A\+T\+I\+O\+N} (or \hyperlink{svl_filter_splitter_8h_ad1a0b59b6425e7aa5f3a61f12d7f0da2}{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+I\+N\+S\+T\+A\+N\+T\+I\+A\+T\+I\+O\+N\+\_\+\+E\+X\+P\+O\+R\+T}) and \hyperlink{cmn_class_register_macros_8h_a59997edde1868f5ce515ff85dfeaf2f8}{C\+M\+N\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S} (or \hyperlink{cmn_class_register_macros_8h_a6d3e8cb412f66ff7e73f3ab52290f471}{C\+M\+N\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+D}).
+
+Here are the details of the implementation. The macro \hyperlink{cmn_class_register_macros_8h_a7fbab4cbcdfbf35062de4f734e697034}{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S} defines a method called Services() for each registered class. This method returns a pointer on a static data member of type \hyperlink{classcmn_class_services}{cmn\+Class\+Services}. This \hyperlink{classcmn_class_services}{cmn\+Class\+Services} object is unique for that class. While the reasons for writing a method which returns a pointer on a static data member might seem confusing, they are actually quite simple. This method is used to ensure that the data member is initialized the first time it is used. This is done to avoid problems related to the order of instantiation of the static data members when used before {\ttfamily main()}.
+
+When the Services() method defined in the \hyperlink{cmn_class_register_macros_8h_a59997edde1868f5ce515ff85dfeaf2f8}{C\+M\+N\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S} macro is called, the \hyperlink{classcmn_class_services}{cmn\+Class\+Services} object registers itself within static class register. This allows us to keep a single list of all the classes that exist in a particular program. The register is implemented as a map of pointers to the \hyperlink{classcmn_class_services}{cmn\+Class\+Services} objects that exist.
+
+It is important to note that all classes to be registered will be registered by the time the {\ttfamily main()} function is called. Since we rely on the creation of global static objects for the registration and the order of instantiation of these objects before {\ttfamily main()} is unknown, classes might be register or not before the {\ttfamily main()} execution. 
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classcmn_class_register_aacfef62640c83b00064eba6c1f667e26}{}\index{cmn\+Class\+Register@{cmn\+Class\+Register}!const\+\_\+iterator@{const\+\_\+iterator}}
+\index{const\+\_\+iterator@{const\+\_\+iterator}!cmn\+Class\+Register@{cmn\+Class\+Register}}
+\subsubsection[{const\+\_\+iterator}]{\setlength{\rightskip}{0pt plus 5cm}typedef Services\+Container\+Type\+::const\+\_\+iterator {\bf cmn\+Class\+Register\+::const\+\_\+iterator}}\label{classcmn_class_register_aacfef62640c83b00064eba6c1f667e26}
+\hypertarget{classcmn_class_register_afdce6482c138fc3c4cb611f0ef7c7a08}{}\index{cmn\+Class\+Register@{cmn\+Class\+Register}!const\+\_\+reverse\+\_\+iterator@{const\+\_\+reverse\+\_\+iterator}}
+\index{const\+\_\+reverse\+\_\+iterator@{const\+\_\+reverse\+\_\+iterator}!cmn\+Class\+Register@{cmn\+Class\+Register}}
+\subsubsection[{const\+\_\+reverse\+\_\+iterator}]{\setlength{\rightskip}{0pt plus 5cm}typedef Services\+Container\+Type\+::const\+\_\+reverse\+\_\+iterator {\bf cmn\+Class\+Register\+::const\+\_\+reverse\+\_\+iterator}}\label{classcmn_class_register_afdce6482c138fc3c4cb611f0ef7c7a08}
+\hypertarget{classcmn_class_register_ac19a6e242b59d7f0336be30be97fabaf}{}\index{cmn\+Class\+Register@{cmn\+Class\+Register}!Entry\+Type@{Entry\+Type}}
+\index{Entry\+Type@{Entry\+Type}!cmn\+Class\+Register@{cmn\+Class\+Register}}
+\subsubsection[{Entry\+Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef Services\+Container\+Type\+::value\+\_\+type {\bf cmn\+Class\+Register\+::\+Entry\+Type}}\label{classcmn_class_register_ac19a6e242b59d7f0336be30be97fabaf}
+\hypertarget{classcmn_class_register_afad21d7d550eea4f0e0ce5209e7fc437}{}\index{cmn\+Class\+Register@{cmn\+Class\+Register}!Services\+Container\+Type@{Services\+Container\+Type}}
+\index{Services\+Container\+Type@{Services\+Container\+Type}!cmn\+Class\+Register@{cmn\+Class\+Register}}
+\subsubsection[{Services\+Container\+Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::map$<$std\+::string, {\bf cmn\+Class\+Services\+Base}$\ast$$>$ {\bf cmn\+Class\+Register\+::\+Services\+Container\+Type}}\label{classcmn_class_register_afad21d7d550eea4f0e0ce5209e7fc437}
+Simple typedefs to ease the declaration of iterators \hypertarget{classcmn_class_register_ac90771194c85a9fff753d9d623071b01}{}\index{cmn\+Class\+Register@{cmn\+Class\+Register}!size\+\_\+type@{size\+\_\+type}}
+\index{size\+\_\+type@{size\+\_\+type}!cmn\+Class\+Register@{cmn\+Class\+Register}}
+\subsubsection[{size\+\_\+type}]{\setlength{\rightskip}{0pt plus 5cm}typedef Services\+Container\+Type\+::size\+\_\+type {\bf cmn\+Class\+Register\+::size\+\_\+type}}\label{classcmn_class_register_ac90771194c85a9fff753d9d623071b01}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcmn_class_register_a7dfc2396cd035f150c84d7f2aa1286b8}{}\index{cmn\+Class\+Register@{cmn\+Class\+Register}!cmn\+Class\+Register@{cmn\+Class\+Register}}
+\index{cmn\+Class\+Register@{cmn\+Class\+Register}!cmn\+Class\+Register@{cmn\+Class\+Register}}
+\subsubsection[{cmn\+Class\+Register}]{\setlength{\rightskip}{0pt plus 5cm}cmn\+Class\+Register\+::cmn\+Class\+Register (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\label{classcmn_class_register_a7dfc2396cd035f150c84d7f2aa1286b8}
+Constructor. The only constructor must be private in order to ensure that the class register is a singleton. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classcmn_class_register_a97b89ca18a8fa10f083c000d259e8b82}{}\index{cmn\+Class\+Register@{cmn\+Class\+Register}!begin@{begin}}
+\index{begin@{begin}!cmn\+Class\+Register@{cmn\+Class\+Register}}
+\subsubsection[{begin}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf const\+\_\+iterator} cmn\+Class\+Register\+::begin (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classcmn_class_register_a97b89ca18a8fa10f083c000d259e8b82}
+Begin const iterator. \hypertarget{classcmn_class_register_ae18fd6eeb8f39168624bbc50a7c88e43}{}\index{cmn\+Class\+Register@{cmn\+Class\+Register}!begin\+Instance@{begin\+Instance}}
+\index{begin\+Instance@{begin\+Instance}!cmn\+Class\+Register@{cmn\+Class\+Register}}
+\subsubsection[{begin\+Instance}]{\setlength{\rightskip}{0pt plus 5cm}{\bf const\+\_\+iterator} cmn\+Class\+Register\+::begin\+Instance (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classcmn_class_register_ae18fd6eeb8f39168624bbc50a7c88e43}
+Instance specific implementation of begin. \begin{DoxySeeAlso}{See also}
+\hyperlink{classcmn_class_register_a97b89ca18a8fa10f083c000d259e8b82}{begin} 
+\end{DoxySeeAlso}
+\hypertarget{classcmn_class_register_af08b9d1e930098b7e760a3e13bd50cb0}{}\index{cmn\+Class\+Register@{cmn\+Class\+Register}!Create@{Create}}
+\index{Create@{Create}!cmn\+Class\+Register@{cmn\+Class\+Register}}
+\subsubsection[{Create}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf cmn\+Generic\+Object}$\ast$ cmn\+Class\+Register\+::\+Create (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{class\+Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classcmn_class_register_af08b9d1e930098b7e760a3e13bd50cb0}
+Dynamic creation of objects using the default constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em class\+Name} & The name of the class of the object to be created.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer on \hyperlink{classcmn_generic_object}{cmn\+Generic\+Object}, N\+U\+L\+L if the register doesn\textquotesingle{}t have this class registered. 
+\end{DoxyReturn}
+\hypertarget{classcmn_class_register_ac96330fa28b74d90fb7625784fdbdee0}{}\index{cmn\+Class\+Register@{cmn\+Class\+Register}!Create@{Create}}
+\index{Create@{Create}!cmn\+Class\+Register@{cmn\+Class\+Register}}
+\subsubsection[{Create}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf cmn\+Generic\+Object}$\ast$ cmn\+Class\+Register\+::\+Create (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{class\+Name, }
+\item[{const {\bf cmn\+Generic\+Object} \&}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classcmn_class_register_ac96330fa28b74d90fb7625784fdbdee0}
+Dynamic creation of objects using copy constructor
+
+
+\begin{DoxyParams}{Parameters}
+{\em class\+Name} & The name of the class of the object to be created. \\
+\hline
+{\em other} & The object to be copied\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer on \hyperlink{classcmn_generic_object}{cmn\+Generic\+Object}, N\+U\+L\+L if the register doesn\textquotesingle{}t have this class registered or if the object provided is not of the right class type. 
+\end{DoxyReturn}
+\hypertarget{classcmn_class_register_afa8cb2f94da62294a96d7bfd1ba1185f}{}\index{cmn\+Class\+Register@{cmn\+Class\+Register}!end@{end}}
+\index{end@{end}!cmn\+Class\+Register@{cmn\+Class\+Register}}
+\subsubsection[{end}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf const\+\_\+iterator} cmn\+Class\+Register\+::end (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classcmn_class_register_afa8cb2f94da62294a96d7bfd1ba1185f}
+End const iterator. \hypertarget{classcmn_class_register_abaa15f6524d4c6ca44cadb161a2f14bf}{}\index{cmn\+Class\+Register@{cmn\+Class\+Register}!end\+Instance@{end\+Instance}}
+\index{end\+Instance@{end\+Instance}!cmn\+Class\+Register@{cmn\+Class\+Register}}
+\subsubsection[{end\+Instance}]{\setlength{\rightskip}{0pt plus 5cm}{\bf const\+\_\+iterator} cmn\+Class\+Register\+::end\+Instance (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classcmn_class_register_abaa15f6524d4c6ca44cadb161a2f14bf}
+Instance specific implementation of end. \begin{DoxySeeAlso}{See also}
+\hyperlink{classcmn_class_register_afa8cb2f94da62294a96d7bfd1ba1185f}{end} 
+\end{DoxySeeAlso}
+\hypertarget{classcmn_class_register_a670426c761d6ef43df9bd67f4041b3da}{}\index{cmn\+Class\+Register@{cmn\+Class\+Register}!Find\+Class\+Services@{Find\+Class\+Services}}
+\index{Find\+Class\+Services@{Find\+Class\+Services}!cmn\+Class\+Register@{cmn\+Class\+Register}}
+\subsubsection[{Find\+Class\+Services}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf cmn\+Class\+Services\+Base}$\ast$ cmn\+Class\+Register\+::\+Find\+Class\+Services (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{class\+Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classcmn_class_register_a670426c761d6ef43df9bd67f4041b3da}
+Get the class services by name. Returns null if the class is not registered.
+
+
+\begin{DoxyParams}{Parameters}
+{\em class\+Name} & The name to look up.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The pointer to the \hyperlink{classcmn_class_services_base}{cmn\+Class\+Services\+Base} object corresponding to the class\+Name, or null if not registered. 
+\end{DoxyReturn}
+\hypertarget{classcmn_class_register_a6ded0119eaa6ba31df685530ccf87d25}{}\index{cmn\+Class\+Register@{cmn\+Class\+Register}!Find\+Class\+Services@{Find\+Class\+Services}}
+\index{Find\+Class\+Services@{Find\+Class\+Services}!cmn\+Class\+Register@{cmn\+Class\+Register}}
+\subsubsection[{Find\+Class\+Services}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf cmn\+Class\+Services\+Base}$\ast$ cmn\+Class\+Register\+::\+Find\+Class\+Services (
+\begin{DoxyParamCaption}
+\item[{const std\+::type\+\_\+info \&}]{type\+Info}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classcmn_class_register_a6ded0119eaa6ba31df685530ccf87d25}
+Get the class services by std\+::type\+\_\+info. This allows to find a registered class base on its C++ R\+T\+T\+I type\+\_\+info, as defined by the standard function {\ttfamily typeid()}. Returns null if the class is not registered.
+
+
+\begin{DoxyParams}{Parameters}
+{\em type\+Info} & The std\+::type\+\_\+info to look up.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The pointer to the \hyperlink{classcmn_class_services_base}{cmn\+Class\+Services\+Base} object corresponding to the type info, or null if not registered. 
+\end{DoxyReturn}
+\hypertarget{classcmn_class_register_a371f6f08b984969a6baf01405fe64301}{}\index{cmn\+Class\+Register@{cmn\+Class\+Register}!Find\+Class\+Services\+Instance@{Find\+Class\+Services\+Instance}}
+\index{Find\+Class\+Services\+Instance@{Find\+Class\+Services\+Instance}!cmn\+Class\+Register@{cmn\+Class\+Register}}
+\subsubsection[{Find\+Class\+Services\+Instance}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cmn\+Class\+Services\+Base}$\ast$ cmn\+Class\+Register\+::\+Find\+Class\+Services\+Instance (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{class\+Name}
+\end{DoxyParamCaption}
+)}\label{classcmn_class_register_a371f6f08b984969a6baf01405fe64301}
+Instance specific implementation of Find\+Class\+Services.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classcmn_class_register_a670426c761d6ef43df9bd67f4041b3da}{Find\+Class\+Services} 
+\end{DoxySeeAlso}
+\hypertarget{classcmn_class_register_a292c354f15d6308ec8ca7a8ca5393a48}{}\index{cmn\+Class\+Register@{cmn\+Class\+Register}!Find\+Class\+Services\+Instance@{Find\+Class\+Services\+Instance}}
+\index{Find\+Class\+Services\+Instance@{Find\+Class\+Services\+Instance}!cmn\+Class\+Register@{cmn\+Class\+Register}}
+\subsubsection[{Find\+Class\+Services\+Instance}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cmn\+Class\+Services\+Base}$\ast$ cmn\+Class\+Register\+::\+Find\+Class\+Services\+Instance (
+\begin{DoxyParamCaption}
+\item[{const std\+::type\+\_\+info \&}]{type\+Info}
+\end{DoxyParamCaption}
+)}\label{classcmn_class_register_a292c354f15d6308ec8ca7a8ca5393a48}
+Instance specific implementation of Find\+Class\+Services.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classcmn_class_register_a670426c761d6ef43df9bd67f4041b3da}{Find\+Class\+Services} 
+\end{DoxySeeAlso}
+\hypertarget{classcmn_class_register_a086f22c4834c690b93f24704d4cfd936}{}\index{cmn\+Class\+Register@{cmn\+Class\+Register}!Instance@{Instance}}
+\index{Instance@{Instance}!cmn\+Class\+Register@{cmn\+Class\+Register}}
+\subsubsection[{Instance}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf cmn\+Class\+Register}$\ast$ cmn\+Class\+Register\+::\+Instance (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classcmn_class_register_a086f22c4834c690b93f24704d4cfd936}
+The class register is instantiated as a singleton. To access the unique instantiation, one needs to use this static method. The instantiated class register is created at the first call of this method since it is a static variable declared in this method\textquotesingle{}s scope.
+
+\begin{DoxyReturn}{Returns}
+A pointer to the class register. 
+\end{DoxyReturn}
+\hypertarget{classcmn_class_register_ac4d2419b95d57656282fcc33dad76f31}{}\index{cmn\+Class\+Register@{cmn\+Class\+Register}!Register@{Register}}
+\index{Register@{Register}!cmn\+Class\+Register@{cmn\+Class\+Register}}
+\subsubsection[{Register}]{\setlength{\rightskip}{0pt plus 5cm}static const std\+::string$\ast$ cmn\+Class\+Register\+::\+Register (
+\begin{DoxyParamCaption}
+\item[{{\bf cmn\+Class\+Services\+Base} $\ast$}]{class\+Services\+Pointer, }
+\item[{const std\+::string \&}]{class\+Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classcmn_class_register_ac4d2419b95d57656282fcc33dad76f31}
+The Register method registers a class pointer in the static register. It M\+U\+S\+T N\+O\+T be used directly. It is used by the \hyperlink{cmn_class_register_macros_8h_a7fbab4cbcdfbf35062de4f734e697034}{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S} macro.
+
+
+\begin{DoxyParams}{Parameters}
+{\em class\+Services\+Pointer} & The pointer to the \hyperlink{classcmn_class_services}{cmn\+Class\+Services} object.\\
+\hline
+{\em class\+Name} & The name given to the class as a string. To enforce the consistency, we use the macro string conversion (\#).\\
+\hline
+\end{DoxyParams}
+P\+K\+: F\+I\+X T\+H\+I\+S \begin{DoxyReturn}{Returns}
+bool True if successful, false if the class has not been registered (e.\+g. one can not register twice). This might happen if a programmer doesn\textquotesingle{}t give the right string name for the class to be registered with the macros \hyperlink{cmn_class_register_macros_8h_a7fbab4cbcdfbf35062de4f734e697034}{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S}, \hyperlink{mts_text_to_speech_8h_aae5c71840342a68c45d71caab531fec2}{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+I\+N\+S\+T\+A\+N\+T\+I\+A\+T\+I\+O\+N} and \hyperlink{cmn_class_register_macros_8h_a59997edde1868f5ce515ff85dfeaf2f8}{C\+M\+N\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S}. 
+\end{DoxyReturn}
+\hypertarget{classcmn_class_register_a99073eb83fbe6d43abf70a8d00ad82e2}{}\index{cmn\+Class\+Register@{cmn\+Class\+Register}!Register\+Instance@{Register\+Instance}}
+\index{Register\+Instance@{Register\+Instance}!cmn\+Class\+Register@{cmn\+Class\+Register}}
+\subsubsection[{Register\+Instance}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string$\ast$ cmn\+Class\+Register\+::\+Register\+Instance (
+\begin{DoxyParamCaption}
+\item[{{\bf cmn\+Class\+Services\+Base} $\ast$}]{class\+Services\+Pointer, }
+\item[{const std\+::string \&}]{class\+Name}
+\end{DoxyParamCaption}
+)}\label{classcmn_class_register_a99073eb83fbe6d43abf70a8d00ad82e2}
+Instance specific implementation of Register. \begin{DoxySeeAlso}{See also}
+\hyperlink{classcmn_class_register_ac4d2419b95d57656282fcc33dad76f31}{Register} 
+\end{DoxySeeAlso}
+\hypertarget{classcmn_class_register_ad2190c286fb8d1b52d7b2a8483df1551}{}\index{cmn\+Class\+Register@{cmn\+Class\+Register}!Set\+Lo\+D@{Set\+Lo\+D}}
+\index{Set\+Lo\+D@{Set\+Lo\+D}!cmn\+Class\+Register@{cmn\+Class\+Register}}
+\subsubsection[{Set\+Lo\+D}]{\setlength{\rightskip}{0pt plus 5cm}static bool {\bf C\+I\+S\+S\+T\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D} cmn\+Class\+Register\+::\+Set\+Lo\+D (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{class\+Name, }
+\item[{{\bf cmn\+Log\+Mask}}]{mask}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classcmn_class_register_ad2190c286fb8d1b52d7b2a8483df1551}
+\hypertarget{classcmn_class_register_aa6781144fc60198e69ecd54afdc02afd}{}\index{cmn\+Class\+Register@{cmn\+Class\+Register}!Set\+Lo\+D\+For\+All\+Classes@{Set\+Lo\+D\+For\+All\+Classes}}
+\index{Set\+Lo\+D\+For\+All\+Classes@{Set\+Lo\+D\+For\+All\+Classes}!cmn\+Class\+Register@{cmn\+Class\+Register}}
+\subsubsection[{Set\+Lo\+D\+For\+All\+Classes}]{\setlength{\rightskip}{0pt plus 5cm}static bool {\bf C\+I\+S\+S\+T\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D} cmn\+Class\+Register\+::\+Set\+Lo\+D\+For\+All\+Classes (
+\begin{DoxyParamCaption}
+\item[{{\bf cmn\+Log\+Mask}}]{mask}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classcmn_class_register_aa6781144fc60198e69ecd54afdc02afd}
+\hypertarget{classcmn_class_register_a1b46cd31e03253c910612c6d73eb5d60}{}\index{cmn\+Class\+Register@{cmn\+Class\+Register}!Set\+Lo\+D\+For\+Matching\+Classes@{Set\+Lo\+D\+For\+Matching\+Classes}}
+\index{Set\+Lo\+D\+For\+Matching\+Classes@{Set\+Lo\+D\+For\+Matching\+Classes}!cmn\+Class\+Register@{cmn\+Class\+Register}}
+\subsubsection[{Set\+Lo\+D\+For\+Matching\+Classes}]{\setlength{\rightskip}{0pt plus 5cm}static bool {\bf C\+I\+S\+S\+T\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D} cmn\+Class\+Register\+::\+Set\+Lo\+D\+For\+Matching\+Classes (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{string\+To\+Match, }
+\item[{{\bf cmn\+Log\+Mask}}]{mask}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classcmn_class_register_a1b46cd31e03253c910612c6d73eb5d60}
+\hypertarget{classcmn_class_register_a9bbfe2c4a0d388c508d3db7e5ce87375}{}\index{cmn\+Class\+Register@{cmn\+Class\+Register}!Set\+Log\+Mask\+Class@{Set\+Log\+Mask\+Class}}
+\index{Set\+Log\+Mask\+Class@{Set\+Log\+Mask\+Class}!cmn\+Class\+Register@{cmn\+Class\+Register}}
+\subsubsection[{Set\+Log\+Mask\+Class}]{\setlength{\rightskip}{0pt plus 5cm}static bool cmn\+Class\+Register\+::\+Set\+Log\+Mask\+Class (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{class\+Name, }
+\item[{{\bf cmn\+Log\+Mask}}]{mask}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classcmn_class_register_a9bbfe2c4a0d388c508d3db7e5ce87375}
+The Set\+Log\+Mask\+Class method allows the user to specify the log mask for a specific class. It checks to see if the class is registered. If so, it updates the \hyperlink{classcmn_class_services}{cmn\+Class\+Services} object directly. Otherwise, it log a warning message.
+
+
+\begin{DoxyParams}{Parameters}
+{\em class\+Name} & The name of the class \\
+\hline
+{\em mask} & The log mask to be applied\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool True if the class is registered. 
+\end{DoxyReturn}
+\hypertarget{classcmn_class_register_ab84a1a900a54b94c4c6d512acf152ebe}{}\index{cmn\+Class\+Register@{cmn\+Class\+Register}!Set\+Log\+Mask\+Class\+All@{Set\+Log\+Mask\+Class\+All}}
+\index{Set\+Log\+Mask\+Class\+All@{Set\+Log\+Mask\+Class\+All}!cmn\+Class\+Register@{cmn\+Class\+Register}}
+\subsubsection[{Set\+Log\+Mask\+Class\+All}]{\setlength{\rightskip}{0pt plus 5cm}static bool cmn\+Class\+Register\+::\+Set\+Log\+Mask\+Class\+All (
+\begin{DoxyParamCaption}
+\item[{{\bf cmn\+Log\+Mask}}]{mask}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classcmn_class_register_ab84a1a900a54b94c4c6d512acf152ebe}
+The Set\+Log\+Mask\+Class\+All method allows the user to specify the log mask for all registered classes.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mask} & The log mask to be applied\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool True if there is at least one class log mask was modified 
+\end{DoxyReturn}
+\hypertarget{classcmn_class_register_afb45f0c62c3ae291136b54946d804d84}{}\index{cmn\+Class\+Register@{cmn\+Class\+Register}!Set\+Log\+Mask\+Class\+All\+Instance@{Set\+Log\+Mask\+Class\+All\+Instance}}
+\index{Set\+Log\+Mask\+Class\+All\+Instance@{Set\+Log\+Mask\+Class\+All\+Instance}!cmn\+Class\+Register@{cmn\+Class\+Register}}
+\subsubsection[{Set\+Log\+Mask\+Class\+All\+Instance}]{\setlength{\rightskip}{0pt plus 5cm}bool cmn\+Class\+Register\+::\+Set\+Log\+Mask\+Class\+All\+Instance (
+\begin{DoxyParamCaption}
+\item[{{\bf cmn\+Log\+Mask}}]{mask}
+\end{DoxyParamCaption}
+)}\label{classcmn_class_register_afb45f0c62c3ae291136b54946d804d84}
+Instance specific implementation of Set\+Log\+Mask\+Class\+All \begin{DoxySeeAlso}{See also}
+\hyperlink{classcmn_class_register_ab84a1a900a54b94c4c6d512acf152ebe}{Set\+Log\+Mask\+Class\+All} 
+\end{DoxySeeAlso}
+\hypertarget{classcmn_class_register_afc0d014a73ac6cdbc8f3f9b490cafcd9}{}\index{cmn\+Class\+Register@{cmn\+Class\+Register}!Set\+Log\+Mask\+Class\+Matching@{Set\+Log\+Mask\+Class\+Matching}}
+\index{Set\+Log\+Mask\+Class\+Matching@{Set\+Log\+Mask\+Class\+Matching}!cmn\+Class\+Register@{cmn\+Class\+Register}}
+\subsubsection[{Set\+Log\+Mask\+Class\+Matching}]{\setlength{\rightskip}{0pt plus 5cm}static bool cmn\+Class\+Register\+::\+Set\+Log\+Mask\+Class\+Matching (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{string\+To\+Match, }
+\item[{{\bf cmn\+Log\+Mask}}]{mask}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classcmn_class_register_afc0d014a73ac6cdbc8f3f9b490cafcd9}
+The Set\+Log\+Mask\+Class\+Matching method allows the user to specify the log mask for all classes with a name matching a given string. The string matching is case sensitive (exact match).
+
+
+\begin{DoxyParams}{Parameters}
+{\em string\+To\+Match} & A string found in class names (e.\+g. \char`\"{}cmn\char`\"{}) \\
+\hline
+{\em mask} & The log mask to be applied\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool True if there is at least one class log mask was modified 
+\end{DoxyReturn}
+\hypertarget{classcmn_class_register_a53cf9c570bc4a85a5e556702e07fa41d}{}\index{cmn\+Class\+Register@{cmn\+Class\+Register}!Set\+Log\+Mask\+Class\+Matching\+Instance@{Set\+Log\+Mask\+Class\+Matching\+Instance}}
+\index{Set\+Log\+Mask\+Class\+Matching\+Instance@{Set\+Log\+Mask\+Class\+Matching\+Instance}!cmn\+Class\+Register@{cmn\+Class\+Register}}
+\subsubsection[{Set\+Log\+Mask\+Class\+Matching\+Instance}]{\setlength{\rightskip}{0pt plus 5cm}bool cmn\+Class\+Register\+::\+Set\+Log\+Mask\+Class\+Matching\+Instance (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{string\+To\+Match, }
+\item[{{\bf cmn\+Log\+Mask}}]{mask}
+\end{DoxyParamCaption}
+)}\label{classcmn_class_register_a53cf9c570bc4a85a5e556702e07fa41d}
+Instance specific implementation of Set\+Log\+Mask\+Class\+Matching. \begin{DoxySeeAlso}{See also}
+\hyperlink{classcmn_class_register_afc0d014a73ac6cdbc8f3f9b490cafcd9}{Set\+Log\+Mask\+Class\+Matching} 
+\end{DoxySeeAlso}
+\hypertarget{classcmn_class_register_a45356688a8fe87798fd8e2143d6f768c}{}\index{cmn\+Class\+Register@{cmn\+Class\+Register}!size@{size}}
+\index{size@{size}!cmn\+Class\+Register@{cmn\+Class\+Register}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf size\+\_\+type} cmn\+Class\+Register\+::size (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classcmn_class_register_a45356688a8fe87798fd8e2143d6f768c}
+Size of class register, i.\+e. number of classes. \hypertarget{classcmn_class_register_a56096ffe39a5a4eee0ce6d8bf015184f}{}\index{cmn\+Class\+Register@{cmn\+Class\+Register}!size\+Instance@{size\+Instance}}
+\index{size\+Instance@{size\+Instance}!cmn\+Class\+Register@{cmn\+Class\+Register}}
+\subsubsection[{size\+Instance}]{\setlength{\rightskip}{0pt plus 5cm}{\bf size\+\_\+type} cmn\+Class\+Register\+::size\+Instance (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classcmn_class_register_a56096ffe39a5a4eee0ce6d8bf015184f}
+Instance specific implementation of size. \begin{DoxySeeAlso}{See also}
+\hyperlink{classcmn_class_register_a45356688a8fe87798fd8e2143d6f768c}{size} 
+\end{DoxySeeAlso}
+\hypertarget{classcmn_class_register_af25661aaf81242eae572112fc95b5b33}{}\index{cmn\+Class\+Register@{cmn\+Class\+Register}!To\+Stream@{To\+Stream}}
+\index{To\+Stream@{To\+Stream}!cmn\+Class\+Register@{cmn\+Class\+Register}}
+\subsubsection[{To\+Stream}]{\setlength{\rightskip}{0pt plus 5cm}static void cmn\+Class\+Register\+::\+To\+Stream (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{output\+Stream}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classcmn_class_register_af25661aaf81242eae572112fc95b5b33}
+Print the register content to a text stream. \hypertarget{classcmn_class_register_a8fc3ce4e51acecb0dc1192e1f805da1f}{}\index{cmn\+Class\+Register@{cmn\+Class\+Register}!To\+Stream\+Instance@{To\+Stream\+Instance}}
+\index{To\+Stream\+Instance@{To\+Stream\+Instance}!cmn\+Class\+Register@{cmn\+Class\+Register}}
+\subsubsection[{To\+Stream\+Instance}]{\setlength{\rightskip}{0pt plus 5cm}void cmn\+Class\+Register\+::\+To\+Stream\+Instance (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{output\+Stream}
+\end{DoxyParamCaption}
+) const}\label{classcmn_class_register_a8fc3ce4e51acecb0dc1192e1f805da1f}
+Instance specific implementation of To\+Stream. \begin{DoxySeeAlso}{See also}
+\hyperlink{classcmn_class_register_af25661aaf81242eae572112fc95b5b33}{To\+Stream}. 
+\end{DoxySeeAlso}
+\hypertarget{classcmn_class_register_a29fdd14acb31a4fe05ce7fdbd463a31f}{}\index{cmn\+Class\+Register@{cmn\+Class\+Register}!To\+String@{To\+String}}
+\index{To\+String@{To\+String}!cmn\+Class\+Register@{cmn\+Class\+Register}}
+\subsubsection[{To\+String}]{\setlength{\rightskip}{0pt plus 5cm}static std\+::string cmn\+Class\+Register\+::\+To\+String (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classcmn_class_register_a29fdd14acb31a4fe05ce7fdbd463a31f}
+Print the register content to an S\+T\+L string and returns a copy of this string. \hypertarget{classcmn_class_register_a25fde8d61752440d7d643e56173f2a7b}{}\index{cmn\+Class\+Register@{cmn\+Class\+Register}!To\+String\+Instance@{To\+String\+Instance}}
+\index{To\+String\+Instance@{To\+String\+Instance}!cmn\+Class\+Register@{cmn\+Class\+Register}}
+\subsubsection[{To\+String\+Instance}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string cmn\+Class\+Register\+::\+To\+String\+Instance (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classcmn_class_register_a25fde8d61752440d7d643e56173f2a7b}
+Instance specific implementation of To\+String. \begin{DoxySeeAlso}{See also}
+\hyperlink{classcmn_class_register_a29fdd14acb31a4fe05ce7fdbd463a31f}{To\+String} 
+\end{DoxySeeAlso}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Common/\hyperlink{cmn_class_register_8h}{cmn\+Class\+Register.\+h}\end{DoxyCompactItemize}

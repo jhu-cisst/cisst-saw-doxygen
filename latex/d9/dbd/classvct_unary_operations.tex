@@ -1,0 +1,89 @@
+\hypertarget{classvct_unary_operations}{}\section{vct\+Unary\+Operations$<$ \+\_\+output\+Element\+Type, \+\_\+input\+Element\+Type $>$ Class Template Reference}
+\label{classvct_unary_operations}\index{vct\+Unary\+Operations$<$ \+\_\+output\+Element\+Type, \+\_\+input\+Element\+Type $>$@{vct\+Unary\+Operations$<$ \+\_\+output\+Element\+Type, \+\_\+input\+Element\+Type $>$}}
+
+
+Define unary operations on an object as classes.  
+
+
+
+
+{\ttfamily \#include $<$vct\+Unary\+Operations.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classvct_unary_operations_1_1_abs_value}{Abs\+Value}
+\begin{DoxyCompactList}\small\item\em Returns the absolute value of the input as an Output\+Type object. \end{DoxyCompactList}\item 
+class \hyperlink{classvct_unary_operations_1_1_ceil}{Ceil}
+\begin{DoxyCompactList}\small\item\em Returns the ceiling of the input, that is, the smallest integer greater-\/than or equal to the input, as an Output\+Type object. \end{DoxyCompactList}\item 
+class \hyperlink{classvct_unary_operations_1_1_floor}{Floor}
+\begin{DoxyCompactList}\small\item\em Returns the floor of the input, that is, the largest integer less-\/than or equal to the input, as an Output\+Type object. \end{DoxyCompactList}\item 
+class \hyperlink{classvct_unary_operations_1_1_identity}{Identity}
+\begin{DoxyCompactList}\small\item\em Returns the input as an Output\+Type object. \end{DoxyCompactList}\item 
+class \hyperlink{classvct_unary_operations_1_1_is_finite}{Is\+Finite}
+\item 
+class \hyperlink{classvct_unary_operations_1_1_is_na_n}{Is\+Na\+N}
+\item 
+class \hyperlink{classvct_unary_operations_1_1_is_negative}{Is\+Negative}
+\item 
+class \hyperlink{classvct_unary_operations_1_1_is_non_negative}{Is\+Non\+Negative}
+\item 
+class \hyperlink{classvct_unary_operations_1_1_is_non_positive}{Is\+Non\+Positive}
+\item 
+class \hyperlink{classvct_unary_operations_1_1_is_nonzero}{Is\+Nonzero}
+\item 
+class \hyperlink{classvct_unary_operations_1_1_is_positive}{Is\+Positive}
+\item 
+class \hyperlink{classvct_unary_operations_1_1_negation}{Negation}
+\begin{DoxyCompactList}\small\item\em Returns the negative of the input as an Output\+Type object. \end{DoxyCompactList}\item 
+class \hyperlink{classvct_unary_operations_1_1_square}{Square}
+\begin{DoxyCompactList}\small\item\em Returns the square of the input as an Output\+Type object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \+\_\+output\+Element\+Type \hyperlink{classvct_unary_operations_a42306ac3dd20d32c6d6c66ac3fa2e7b9}{Output\+Element\+Type}
+\item 
+typedef \+\_\+input\+Element\+Type \hyperlink{classvct_unary_operations_abf3b77bb7b8abd7ba72a6a45a65696a7}{Input\+Element\+Type}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class \+\_\+output\+Element\+Type, class \+\_\+input\+Element\+Type = \+\_\+output\+Element\+Type$>$class vct\+Unary\+Operations$<$ \+\_\+output\+Element\+Type, \+\_\+input\+Element\+Type $>$}
+
+Define unary operations on an object as classes. 
+
+Class \hyperlink{classvct_unary_operations}{vct\+Unary\+Operations} is an envelope that wraps unary operations on an object as classes. \hyperlink{classvct_unary_operations}{vct\+Unary\+Operations} defines internal classes such as \hyperlink{classvct_unary_operations_1_1_identity}{Identity}, \hyperlink{classvct_unary_operations_1_1_abs_value}{Abs\+Value}, etc., and each of the internal classes has one static function named Operate(), which wraps the corresponding operation. The signature of a typical Operate() is
+
+
+\begin{DoxyPre} static inline OutputType Operate(const InputType & input)
+\end{DoxyPre}
+
+
+Where Output\+Type, Input\+Type, are the types of the result and the operand.
+
+By abstracting very simple operations as inline functions, we can plug the \hyperlink{classvct_unary_operations}{vct\+Unary\+Operations} internal classes into templated vector operation engines. See an example of such engine in \hyperlink{vct_fixed_size_vector_recursive_engines_8h}{vct\+Fixed\+Size\+Vector\+Recursive\+Engines.\+h} , and an example of plugging an operation into the engine in vct\+Fixed\+Size\+Vector\+Operations.\+h .
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+Element\+Type} & the type of the first (left-\/side) operand \\
+\hline
+{\em output\+Element\+Type} & the type of the result\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classvct_unary_operations_1_1_identity}{Identity} \hyperlink{classvct_unary_operations_1_1_abs_value}{Abs\+Value} \hyperlink{classvct_unary_operations_1_1_square}{Square} \hyperlink{classvct_unary_operations_1_1_negation}{Negation} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classvct_unary_operations_abf3b77bb7b8abd7ba72a6a45a65696a7}{}\index{vct\+Unary\+Operations@{vct\+Unary\+Operations}!Input\+Element\+Type@{Input\+Element\+Type}}
+\index{Input\+Element\+Type@{Input\+Element\+Type}!vct\+Unary\+Operations@{vct\+Unary\+Operations}}
+\subsubsection[{Input\+Element\+Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+output\+Element\+Type , class \+\_\+input\+Element\+Type  = \+\_\+output\+Element\+Type$>$ typedef \+\_\+input\+Element\+Type {\bf vct\+Unary\+Operations}$<$ \+\_\+output\+Element\+Type, \+\_\+input\+Element\+Type $>$\+::{\bf Input\+Element\+Type}}\label{classvct_unary_operations_abf3b77bb7b8abd7ba72a6a45a65696a7}
+\hypertarget{classvct_unary_operations_a42306ac3dd20d32c6d6c66ac3fa2e7b9}{}\index{vct\+Unary\+Operations@{vct\+Unary\+Operations}!Output\+Element\+Type@{Output\+Element\+Type}}
+\index{Output\+Element\+Type@{Output\+Element\+Type}!vct\+Unary\+Operations@{vct\+Unary\+Operations}}
+\subsubsection[{Output\+Element\+Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+output\+Element\+Type , class \+\_\+input\+Element\+Type  = \+\_\+output\+Element\+Type$>$ typedef \+\_\+output\+Element\+Type {\bf vct\+Unary\+Operations}$<$ \+\_\+output\+Element\+Type, \+\_\+input\+Element\+Type $>$\+::{\bf Output\+Element\+Type}}\label{classvct_unary_operations_a42306ac3dd20d32c6d6c66ac3fa2e7b9}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Vector/\hyperlink{vct_unary_operations_8h}{vct\+Unary\+Operations.\+h}\end{DoxyCompactItemize}

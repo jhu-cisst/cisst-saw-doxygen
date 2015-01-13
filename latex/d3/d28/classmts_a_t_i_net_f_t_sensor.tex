@@ -1,0 +1,199 @@
+\hypertarget{classmts_a_t_i_net_f_t_sensor}{}\section{mts\+A\+T\+I\+Net\+F\+T\+Sensor Class Reference}
+\label{classmts_a_t_i_net_f_t_sensor}\index{mts\+A\+T\+I\+Net\+F\+T\+Sensor@{mts\+A\+T\+I\+Net\+F\+T\+Sensor}}
+
+
+{\ttfamily \#include $<$mts\+A\+T\+I\+Net\+F\+T\+Sensor.\+h$>$}
+
+Inheritance diagram for mts\+A\+T\+I\+Net\+F\+T\+Sensor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{d3/d28/classmts_a_t_i_net_f_t_sensor}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classmts_a_t_i_net_f_t_sensor_ac0b6761b0eee98b4413c5a153865c2ea}{Filter\+Type} \{ \hyperlink{classmts_a_t_i_net_f_t_sensor_ac0b6761b0eee98b4413c5a153865c2eaab52493358557bae4766830c60064eec9}{N\+O\+\_\+\+F\+I\+L\+T\+E\+R} = 0
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmts_a_t_i_net_f_t_sensor_adf30efbe6a448cb9ca74dc734312f4b1}{mts\+A\+T\+I\+Net\+F\+T\+Sensor} (const std\+::string \&component\+Name)
+\item 
+\hyperlink{classmts_a_t_i_net_f_t_sensor_a10444ec7ab68c31dcbf0119756900920}{$\sim$mts\+A\+T\+I\+Net\+F\+T\+Sensor} ()
+\item 
+void \hyperlink{classmts_a_t_i_net_f_t_sensor_a0c0eb0990258a415063f5630c057489e}{Startup} (void)
+\item 
+void \hyperlink{classmts_a_t_i_net_f_t_sensor_a91e4aba10538d0e42c27748a8730cc20}{Run} (void)
+\item 
+void \hyperlink{classmts_a_t_i_net_f_t_sensor_a85035cf7e54de1a0924dad9ee70e3c73}{Cleanup} (void)
+\item 
+void \hyperlink{classmts_a_t_i_net_f_t_sensor_a51667a1895aa9427d4ac2b2204aac5ec}{Close\+Socket} (void)
+\item 
+void \hyperlink{classmts_a_t_i_net_f_t_sensor_a9b4e699e0de10d44d910ea5ae33cb346}{Set\+I\+P\+Address} (const std\+::string \&ip)
+\item 
+void \hyperlink{classmts_a_t_i_net_f_t_sensor_ac1340f0afc56a0b020c5fc4b4ab96cb0}{Configure} (const std\+::string \&filename)
+\item 
+void \hyperlink{classmts_a_t_i_net_f_t_sensor_a5b63083511d398a195992b3b1fae8893}{Apply\+Filter} (const \hyperlink{mts_vector_8h_af69167a5dc2ad33eb93965b9387d8403}{mts\+Double\+Vec} \&raw\+F\+T, \hyperlink{mts_vector_8h_af69167a5dc2ad33eb93965b9387d8403}{mts\+Double\+Vec} \&filtered\+F\+T, const \hyperlink{classmts_a_t_i_net_f_t_sensor_ac0b6761b0eee98b4413c5a153865c2ea}{Filter\+Type} \&filter)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classmts_a_t_i_net_f_t_sensor_a391a74b9c0e746c8014df3df7958a7b2}{Connect\+To\+Socket} (void)
+\item 
+void \hyperlink{classmts_a_t_i_net_f_t_sensor_adbf21a545ccd22da52a765e93d469f1c}{Get\+Readings} (void)
+\item 
+void \hyperlink{classmts_a_t_i_net_f_t_sensor_a849f04c5faa61544bd1dc44546d65513}{Rebias} (void)
+\item 
+bool \hyperlink{classmts_a_t_i_net_f_t_sensor_a92d9acb0ae995a44ce904b84c055fabe}{Check\+Saturation} (const unsigned int status)
+\item 
+void \hyperlink{classmts_a_t_i_net_f_t_sensor_a15930377aaa14ba83a03dc94f193e943}{Set\+Filter} (const std\+::string \&filter\+Name)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classmts_a_t_i_net_f_t_sensor_ac0b6761b0eee98b4413c5a153865c2ea}{}\index{mts\+A\+T\+I\+Net\+F\+T\+Sensor@{mts\+A\+T\+I\+Net\+F\+T\+Sensor}!Filter\+Type@{Filter\+Type}}
+\index{Filter\+Type@{Filter\+Type}!mts\+A\+T\+I\+Net\+F\+T\+Sensor@{mts\+A\+T\+I\+Net\+F\+T\+Sensor}}
+\subsubsection[{Filter\+Type}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf mts\+A\+T\+I\+Net\+F\+T\+Sensor\+::\+Filter\+Type}}\label{classmts_a_t_i_net_f_t_sensor_ac0b6761b0eee98b4413c5a153865c2ea}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{N\+O\+\_\+\+F\+I\+L\+T\+E\+R@{N\+O\+\_\+\+F\+I\+L\+T\+E\+R}!mts\+A\+T\+I\+Net\+F\+T\+Sensor@{mts\+A\+T\+I\+Net\+F\+T\+Sensor}}\index{mts\+A\+T\+I\+Net\+F\+T\+Sensor@{mts\+A\+T\+I\+Net\+F\+T\+Sensor}!N\+O\+\_\+\+F\+I\+L\+T\+E\+R@{N\+O\+\_\+\+F\+I\+L\+T\+E\+R}}\item[{\em 
+\hypertarget{classmts_a_t_i_net_f_t_sensor_ac0b6761b0eee98b4413c5a153865c2eaab52493358557bae4766830c60064eec9}{}N\+O\+\_\+\+F\+I\+L\+T\+E\+R\label{classmts_a_t_i_net_f_t_sensor_ac0b6761b0eee98b4413c5a153865c2eaab52493358557bae4766830c60064eec9}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmts_a_t_i_net_f_t_sensor_adf30efbe6a448cb9ca74dc734312f4b1}{}\index{mts\+A\+T\+I\+Net\+F\+T\+Sensor@{mts\+A\+T\+I\+Net\+F\+T\+Sensor}!mts\+A\+T\+I\+Net\+F\+T\+Sensor@{mts\+A\+T\+I\+Net\+F\+T\+Sensor}}
+\index{mts\+A\+T\+I\+Net\+F\+T\+Sensor@{mts\+A\+T\+I\+Net\+F\+T\+Sensor}!mts\+A\+T\+I\+Net\+F\+T\+Sensor@{mts\+A\+T\+I\+Net\+F\+T\+Sensor}}
+\subsubsection[{mts\+A\+T\+I\+Net\+F\+T\+Sensor}]{\setlength{\rightskip}{0pt plus 5cm}mts\+A\+T\+I\+Net\+F\+T\+Sensor\+::mts\+A\+T\+I\+Net\+F\+T\+Sensor (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{component\+Name}
+\end{DoxyParamCaption}
+)}\label{classmts_a_t_i_net_f_t_sensor_adf30efbe6a448cb9ca74dc734312f4b1}
+\hypertarget{classmts_a_t_i_net_f_t_sensor_a10444ec7ab68c31dcbf0119756900920}{}\index{mts\+A\+T\+I\+Net\+F\+T\+Sensor@{mts\+A\+T\+I\+Net\+F\+T\+Sensor}!````~mts\+A\+T\+I\+Net\+F\+T\+Sensor@{$\sim$mts\+A\+T\+I\+Net\+F\+T\+Sensor}}
+\index{````~mts\+A\+T\+I\+Net\+F\+T\+Sensor@{$\sim$mts\+A\+T\+I\+Net\+F\+T\+Sensor}!mts\+A\+T\+I\+Net\+F\+T\+Sensor@{mts\+A\+T\+I\+Net\+F\+T\+Sensor}}
+\subsubsection[{$\sim$mts\+A\+T\+I\+Net\+F\+T\+Sensor}]{\setlength{\rightskip}{0pt plus 5cm}mts\+A\+T\+I\+Net\+F\+T\+Sensor\+::$\sim$mts\+A\+T\+I\+Net\+F\+T\+Sensor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_a_t_i_net_f_t_sensor_a10444ec7ab68c31dcbf0119756900920}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classmts_a_t_i_net_f_t_sensor_a5b63083511d398a195992b3b1fae8893}{}\index{mts\+A\+T\+I\+Net\+F\+T\+Sensor@{mts\+A\+T\+I\+Net\+F\+T\+Sensor}!Apply\+Filter@{Apply\+Filter}}
+\index{Apply\+Filter@{Apply\+Filter}!mts\+A\+T\+I\+Net\+F\+T\+Sensor@{mts\+A\+T\+I\+Net\+F\+T\+Sensor}}
+\subsubsection[{Apply\+Filter}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+A\+T\+I\+Net\+F\+T\+Sensor\+::\+Apply\+Filter (
+\begin{DoxyParamCaption}
+\item[{const {\bf mts\+Double\+Vec} \&}]{raw\+F\+T, }
+\item[{{\bf mts\+Double\+Vec} \&}]{filtered\+F\+T, }
+\item[{const {\bf Filter\+Type} \&}]{filter}
+\end{DoxyParamCaption}
+)}\label{classmts_a_t_i_net_f_t_sensor_a5b63083511d398a195992b3b1fae8893}
+\hypertarget{classmts_a_t_i_net_f_t_sensor_a92d9acb0ae995a44ce904b84c055fabe}{}\index{mts\+A\+T\+I\+Net\+F\+T\+Sensor@{mts\+A\+T\+I\+Net\+F\+T\+Sensor}!Check\+Saturation@{Check\+Saturation}}
+\index{Check\+Saturation@{Check\+Saturation}!mts\+A\+T\+I\+Net\+F\+T\+Sensor@{mts\+A\+T\+I\+Net\+F\+T\+Sensor}}
+\subsubsection[{Check\+Saturation}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+A\+T\+I\+Net\+F\+T\+Sensor\+::\+Check\+Saturation (
+\begin{DoxyParamCaption}
+\item[{const unsigned int}]{status}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_a_t_i_net_f_t_sensor_a92d9acb0ae995a44ce904b84c055fabe}
+\hypertarget{classmts_a_t_i_net_f_t_sensor_a85035cf7e54de1a0924dad9ee70e3c73}{}\index{mts\+A\+T\+I\+Net\+F\+T\+Sensor@{mts\+A\+T\+I\+Net\+F\+T\+Sensor}!Cleanup@{Cleanup}}
+\index{Cleanup@{Cleanup}!mts\+A\+T\+I\+Net\+F\+T\+Sensor@{mts\+A\+T\+I\+Net\+F\+T\+Sensor}}
+\subsubsection[{Cleanup}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+A\+T\+I\+Net\+F\+T\+Sensor\+::\+Cleanup (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_a_t_i_net_f_t_sensor_a85035cf7e54de1a0924dad9ee70e3c73}
+Virtual method that gets overloaded, and is run after the component gets killed using \hyperlink{classmts_task_continuous_ad1f8145306e074fbea8baab3beef4c5b}{Kill()} method. 
+
+Reimplemented from \hyperlink{classmts_component_a891f330f4fde7d831dcf7dc537dc5e81}{mts\+Component}.
+
+\hypertarget{classmts_a_t_i_net_f_t_sensor_a51667a1895aa9427d4ac2b2204aac5ec}{}\index{mts\+A\+T\+I\+Net\+F\+T\+Sensor@{mts\+A\+T\+I\+Net\+F\+T\+Sensor}!Close\+Socket@{Close\+Socket}}
+\index{Close\+Socket@{Close\+Socket}!mts\+A\+T\+I\+Net\+F\+T\+Sensor@{mts\+A\+T\+I\+Net\+F\+T\+Sensor}}
+\subsubsection[{Close\+Socket}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+A\+T\+I\+Net\+F\+T\+Sensor\+::\+Close\+Socket (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classmts_a_t_i_net_f_t_sensor_a51667a1895aa9427d4ac2b2204aac5ec}
+\hypertarget{classmts_a_t_i_net_f_t_sensor_ac1340f0afc56a0b020c5fc4b4ab96cb0}{}\index{mts\+A\+T\+I\+Net\+F\+T\+Sensor@{mts\+A\+T\+I\+Net\+F\+T\+Sensor}!Configure@{Configure}}
+\index{Configure@{Configure}!mts\+A\+T\+I\+Net\+F\+T\+Sensor@{mts\+A\+T\+I\+Net\+F\+T\+Sensor}}
+\subsubsection[{Configure}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+A\+T\+I\+Net\+F\+T\+Sensor\+::\+Configure (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{filename}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_a_t_i_net_f_t_sensor_ac1340f0afc56a0b020c5fc4b4ab96cb0}
+The virtual method so that the interface or tasks can configure themselves 
+
+Reimplemented from \hyperlink{classmts_component_ad872432876de7879dc96c232b411c146}{mts\+Component}.
+
+\hypertarget{classmts_a_t_i_net_f_t_sensor_a391a74b9c0e746c8014df3df7958a7b2}{}\index{mts\+A\+T\+I\+Net\+F\+T\+Sensor@{mts\+A\+T\+I\+Net\+F\+T\+Sensor}!Connect\+To\+Socket@{Connect\+To\+Socket}}
+\index{Connect\+To\+Socket@{Connect\+To\+Socket}!mts\+A\+T\+I\+Net\+F\+T\+Sensor@{mts\+A\+T\+I\+Net\+F\+T\+Sensor}}
+\subsubsection[{Connect\+To\+Socket}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+A\+T\+I\+Net\+F\+T\+Sensor\+::\+Connect\+To\+Socket (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_a_t_i_net_f_t_sensor_a391a74b9c0e746c8014df3df7958a7b2}
+\hypertarget{classmts_a_t_i_net_f_t_sensor_adbf21a545ccd22da52a765e93d469f1c}{}\index{mts\+A\+T\+I\+Net\+F\+T\+Sensor@{mts\+A\+T\+I\+Net\+F\+T\+Sensor}!Get\+Readings@{Get\+Readings}}
+\index{Get\+Readings@{Get\+Readings}!mts\+A\+T\+I\+Net\+F\+T\+Sensor@{mts\+A\+T\+I\+Net\+F\+T\+Sensor}}
+\subsubsection[{Get\+Readings}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+A\+T\+I\+Net\+F\+T\+Sensor\+::\+Get\+Readings (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_a_t_i_net_f_t_sensor_adbf21a545ccd22da52a765e93d469f1c}
+\hypertarget{classmts_a_t_i_net_f_t_sensor_a849f04c5faa61544bd1dc44546d65513}{}\index{mts\+A\+T\+I\+Net\+F\+T\+Sensor@{mts\+A\+T\+I\+Net\+F\+T\+Sensor}!Rebias@{Rebias}}
+\index{Rebias@{Rebias}!mts\+A\+T\+I\+Net\+F\+T\+Sensor@{mts\+A\+T\+I\+Net\+F\+T\+Sensor}}
+\subsubsection[{Rebias}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+A\+T\+I\+Net\+F\+T\+Sensor\+::\+Rebias (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_a_t_i_net_f_t_sensor_a849f04c5faa61544bd1dc44546d65513}
+\hypertarget{classmts_a_t_i_net_f_t_sensor_a91e4aba10538d0e42c27748a8730cc20}{}\index{mts\+A\+T\+I\+Net\+F\+T\+Sensor@{mts\+A\+T\+I\+Net\+F\+T\+Sensor}!Run@{Run}}
+\index{Run@{Run}!mts\+A\+T\+I\+Net\+F\+T\+Sensor@{mts\+A\+T\+I\+Net\+F\+T\+Sensor}}
+\subsubsection[{Run}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+A\+T\+I\+Net\+F\+T\+Sensor\+::\+Run (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_a_t_i_net_f_t_sensor_a91e4aba10538d0e42c27748a8730cc20}
+Pure virtual method that gets overloaded to run the actual task. 
+
+Implements \hyperlink{classmts_task_a20e18c9479cb650792456c32ee689834}{mts\+Task}.
+
+\hypertarget{classmts_a_t_i_net_f_t_sensor_a15930377aaa14ba83a03dc94f193e943}{}\index{mts\+A\+T\+I\+Net\+F\+T\+Sensor@{mts\+A\+T\+I\+Net\+F\+T\+Sensor}!Set\+Filter@{Set\+Filter}}
+\index{Set\+Filter@{Set\+Filter}!mts\+A\+T\+I\+Net\+F\+T\+Sensor@{mts\+A\+T\+I\+Net\+F\+T\+Sensor}}
+\subsubsection[{Set\+Filter}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+A\+T\+I\+Net\+F\+T\+Sensor\+::\+Set\+Filter (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{filter\+Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_a_t_i_net_f_t_sensor_a15930377aaa14ba83a03dc94f193e943}
+\hypertarget{classmts_a_t_i_net_f_t_sensor_a9b4e699e0de10d44d910ea5ae33cb346}{}\index{mts\+A\+T\+I\+Net\+F\+T\+Sensor@{mts\+A\+T\+I\+Net\+F\+T\+Sensor}!Set\+I\+P\+Address@{Set\+I\+P\+Address}}
+\index{Set\+I\+P\+Address@{Set\+I\+P\+Address}!mts\+A\+T\+I\+Net\+F\+T\+Sensor@{mts\+A\+T\+I\+Net\+F\+T\+Sensor}}
+\subsubsection[{Set\+I\+P\+Address}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+A\+T\+I\+Net\+F\+T\+Sensor\+::\+Set\+I\+P\+Address (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{ip}
+\end{DoxyParamCaption}
+)}\label{classmts_a_t_i_net_f_t_sensor_a9b4e699e0de10d44d910ea5ae33cb346}
+\hypertarget{classmts_a_t_i_net_f_t_sensor_a0c0eb0990258a415063f5630c057489e}{}\index{mts\+A\+T\+I\+Net\+F\+T\+Sensor@{mts\+A\+T\+I\+Net\+F\+T\+Sensor}!Startup@{Startup}}
+\index{Startup@{Startup}!mts\+A\+T\+I\+Net\+F\+T\+Sensor@{mts\+A\+T\+I\+Net\+F\+T\+Sensor}}
+\subsubsection[{Startup}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+A\+T\+I\+Net\+F\+T\+Sensor\+::\+Startup (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_a_t_i_net_f_t_sensor_a0c0eb0990258a415063f5630c057489e}
+Virtual method that gets overloaded, and is run before the component is started. 
+
+Reimplemented from \hyperlink{classmts_component_aaf28f0262b44eb6866e10089a02fa6e4}{mts\+Component}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classmts_a_t_i_net_f_t_sensor_a1fa47a15ff38ba74dfad51fce4d504bf}{}\index{mts\+A\+T\+I\+Net\+F\+T\+Sensor@{mts\+A\+T\+I\+Net\+F\+T\+Sensor}!Error\+Msg@{Error\+Msg}}
+\index{Error\+Msg@{Error\+Msg}!mts\+A\+T\+I\+Net\+F\+T\+Sensor@{mts\+A\+T\+I\+Net\+F\+T\+Sensor}}
+\subsubsection[{Error\+Msg}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+Function\+Write} mts\+A\+T\+I\+Net\+F\+T\+Sensor\+::\+Error\+Msg}\label{classmts_a_t_i_net_f_t_sensor_a1fa47a15ff38ba74dfad51fce4d504bf}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/saw\+A\+T\+I\+Force\+Sensor/include/saw\+A\+T\+I\+Force\+Sensor/\hyperlink{mts_a_t_i_net_f_t_sensor_8h}{mts\+A\+T\+I\+Net\+F\+T\+Sensor.\+h}\end{DoxyCompactItemize}

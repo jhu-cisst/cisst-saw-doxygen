@@ -1,0 +1,332 @@
+\hypertarget{classcmn_logger}{}\section{cmn\+Logger Class Reference}
+\label{classcmn_logger}\index{cmn\+Logger@{cmn\+Logger}}
+
+
+Class to glue the class register, the output multiplexer and the message level of detail to form the logging entity of cisst.  
+
+
+
+
+{\ttfamily \#include $<$cmn\+Logger.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classcmn_l_o_d_multiplexer_streambuf}{cmn\+L\+O\+D\+Multiplexer\+Streambuf}$<$ char $>$ \hyperlink{classcmn_logger_a7d192777882d1dc6bb48ceac0b4e65bb}{Stream\+Buf\+Type}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classcmn_logger}{cmn\+Logger} $\ast$ \hyperlink{classcmn_logger_af147d525d01803626e171c328bc28530}{Instance} (void)
+\item 
+static void \hyperlink{classcmn_logger_aa1b05cddbe0f496c381453656a21af7d}{Set\+Mask} (\hyperlink{cmn_log_lo_d_8h_a44b6ef7560b0d204460b0a54f1a5d702}{cmn\+Log\+Mask} mask)
+\item 
+static void \hyperlink{cmn_portability_8h_a63da7164735f9501be651b1f2bbc0121}{C\+I\+S\+S\+T\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D} \hyperlink{classcmn_logger_af1c8a409a0667a9abb6003c3e89a82c4}{Set\+Lo\+D} (\hyperlink{cmn_log_lo_d_8h_a44b6ef7560b0d204460b0a54f1a5d702}{cmn\+Log\+Mask} mask)
+\item 
+static \hyperlink{cmn_log_lo_d_8h_a44b6ef7560b0d204460b0a54f1a5d702}{cmn\+Log\+Mask} \hyperlink{classcmn_logger_a96c349facac6bbc27220b091ff26a838}{Get\+Mask} (void)
+\item 
+static \hyperlink{cmn_log_lo_d_8h_a44b6ef7560b0d204460b0a54f1a5d702}{cmn\+Log\+Mask} \hyperlink{cmn_portability_8h_a63da7164735f9501be651b1f2bbc0121}{C\+I\+S\+S\+T\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D} \hyperlink{classcmn_logger_aa971af396f5e242a175d9b54be9064c5}{Get\+Lo\+D} (void)
+\item 
+static void \hyperlink{classcmn_logger_afa246173cc26b1fa0bac407842dfd31c}{Set\+Mask\+Function} (\hyperlink{cmn_log_lo_d_8h_a44b6ef7560b0d204460b0a54f1a5d702}{cmn\+Log\+Mask} mask)
+\item 
+static \hyperlink{cmn_log_lo_d_8h_a44b6ef7560b0d204460b0a54f1a5d702}{cmn\+Log\+Mask} \hyperlink{classcmn_logger_ac9a9ba32485a733c51bc7927f76b2355}{Get\+Mask\+Function} (void)
+\item 
+static bool \hyperlink{classcmn_logger_ac02d8a05e26687bf66951aab021adad7}{Set\+Mask\+Class} (const std\+::string \&class\+Name, \hyperlink{cmn_log_lo_d_8h_a44b6ef7560b0d204460b0a54f1a5d702}{cmn\+Log\+Mask} mask)
+\item 
+static bool \hyperlink{classcmn_logger_a88413527ca33537b0d13d1a9645c46a4}{Set\+Mask\+Class\+All} (\hyperlink{cmn_log_lo_d_8h_a44b6ef7560b0d204460b0a54f1a5d702}{cmn\+Log\+Mask} mask)
+\item 
+static bool \hyperlink{classcmn_logger_ae835d053611487f98a3d216ca8ca6f28}{Set\+Mask\+Class\+Matching} (const std\+::string \&string\+To\+Match, \hyperlink{cmn_log_lo_d_8h_a44b6ef7560b0d204460b0a54f1a5d702}{cmn\+Log\+Mask} mask)
+\item 
+static \hyperlink{classcmn_logger_a7d192777882d1dc6bb48ceac0b4e65bb}{Stream\+Buf\+Type} $\ast$ \hyperlink{classcmn_logger_aa9a44af4d1640661d784d1da92c9d394}{Get\+Multiplexer} (void)
+\item 
+static void \hyperlink{classcmn_logger_ac776c83953b0b6fc8797928dbdd88692}{Halt\+Default\+Log} (void)
+\item 
+static void \hyperlink{classcmn_logger_adbfa3e3002c704d689674f77c9deb525}{Resume\+Default\+Log} (\hyperlink{cmn_log_lo_d_8h_a44b6ef7560b0d204460b0a54f1a5d702}{cmn\+Log\+Mask} new\+Lo\+D=\hyperlink{cmn_log_lo_d_8h_a941e5ff3075571f0ad1e53e1204bd856}{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+A\+L\+L\+O\+W\+\_\+\+D\+E\+F\+A\+U\+L\+T})
+\item 
+static void \hyperlink{classcmn_logger_a1382ea96a6eb493c5aff86256b1f5fc7}{Set\+Mask\+Default\+Log} (\hyperlink{cmn_log_lo_d_8h_a44b6ef7560b0d204460b0a54f1a5d702}{cmn\+Log\+Mask} new\+Lo\+D=\hyperlink{cmn_log_lo_d_8h_a941e5ff3075571f0ad1e53e1204bd856}{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+A\+L\+L\+O\+W\+\_\+\+D\+E\+F\+A\+U\+L\+T})
+\item 
+static void \hyperlink{classcmn_logger_aa051a07e639b507c0db05af0aafd266e}{Add\+Channel} (std\+::ostream \&output\+Stream, \hyperlink{cmn_log_lo_d_8h_a44b6ef7560b0d204460b0a54f1a5d702}{cmn\+Log\+Mask} mask=\hyperlink{cmn_log_lo_d_8h_acf03c43c8a0fbe1c13b2aa4ac3b0a856}{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+A\+L\+L\+O\+W\+\_\+\+A\+L\+L})
+\item 
+static void \hyperlink{classcmn_logger_a3dc3179f73e32ba953e6c54f04e7e2a8}{Add\+Channel\+To\+Std\+Out} (\hyperlink{cmn_log_lo_d_8h_a44b6ef7560b0d204460b0a54f1a5d702}{cmn\+Log\+Mask} mask=\hyperlink{cmn_log_lo_d_8h_a4414b84b0d7c28e5df5728224b987125}{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+A\+L\+L\+O\+W\+\_\+\+E\+R\+R\+O\+R\+S\+\_\+\+A\+N\+D\+\_\+\+W\+A\+R\+N\+I\+N\+G\+S})
+\item 
+static void \hyperlink{classcmn_logger_a987bfb4a959245edb504f34392f16904}{Add\+Channel\+To\+Std\+Err} (\hyperlink{cmn_log_lo_d_8h_a44b6ef7560b0d204460b0a54f1a5d702}{cmn\+Log\+Mask} mask=\hyperlink{cmn_log_lo_d_8h_a4414b84b0d7c28e5df5728224b987125}{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+A\+L\+L\+O\+W\+\_\+\+E\+R\+R\+O\+R\+S\+\_\+\+A\+N\+D\+\_\+\+W\+A\+R\+N\+I\+N\+G\+S})
+\item 
+static void \hyperlink{classcmn_logger_a684d64bb96e292d9ef2eda7914545f09}{Remove\+Channel} (std\+::ostream \&output\+Stream)
+\item 
+static const char $\ast$ \hyperlink{classcmn_logger_a9467522ba63faf595dc3f2358102081a}{Extract\+File\+Name} (const char $\ast$file)
+\item 
+static void \hyperlink{classcmn_logger_a9c7aec5075fdb12cc8df86bfe306e073}{Kill} (void)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcmn_logger_a5069a284c0793277466a6aa967ff41f8}{cmn\+Logger} (const std\+::string \&default\+Log\+File\+Name=\char`\"{}cisst\+Log.\+txt\char`\"{})
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class to glue the class register, the output multiplexer and the message level of detail to form the logging entity of cisst. 
+
+\hyperlink{classcmn_logger}{cmn\+Logger} is defined as a singleton, i.\+e. there is only one instance of \hyperlink{classcmn_logger}{cmn\+Logger}. This unique object maintains the data required for the cisst logging system. The design of the logging system relies on\+:
+
+
+\begin{DoxyItemize}
+\item Human readable messages are associated to a Level of Detail.
+\item The messages are sent and filtered based on their level of detail. The macros used to send the messages actually check if the message is to be sent or not before creating them in order to improve performances (see \hyperlink{cmn_logger_8h_a3fa9ee12c1a4d138c2594449aaf23729}{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S} and \hyperlink{cmn_logger_8h_a2eb3b40558ec17c9ae45197777aca7b2}{C\+M\+N\+\_\+\+L\+O\+G}).
+\item The messages are sent to a multiplexer owned by \hyperlink{classcmn_logger}{cmn\+Logger}. This multiplexer allows to send the message (along with their level of detail) to multiple output streams.
+\end{DoxyItemize}
+
+To filter the messages, the user can use\+:
+
+
+\begin{DoxyItemize}
+\item The global log mask defined in \hyperlink{classcmn_logger}{cmn\+Logger}. Any message with a level of detail incompatible with overall log mask will be ignored (at minimal execution time cost). This mask is used by \hyperlink{cmn_logger_8h_a3fa9ee12c1a4d138c2594449aaf23729}{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S} and \hyperlink{cmn_logger_8h_a2eb3b40558ec17c9ae45197777aca7b2}{C\+M\+N\+\_\+\+L\+O\+G}. To modify the overall mask, use cmn\+Logger\+::\+Set\+Mask(new\+Mask).
+\item Each class relies on its own log mask. This allows to tune the log based on the user\textquotesingle{}s needs. One can for example allow all the messages (from errors to debug) from a given class and block all the messages from every other class. As for the overall log mask, if a message\textquotesingle{}s level of detail is incompatible with the class mask, it will be ignored (at minimal execution time cost). This log mask is used only be \hyperlink{cmn_logger_8h_a3fa9ee12c1a4d138c2594449aaf23729}{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S}. To modify a class log mask, use either the logger with \hyperlink{classcmn_logger_ac02d8a05e26687bf66951aab021adad7}{cmn\+Logger\+::\+Set\+Mask\+Class}(\char`\"{}class\+Name\char`\"{}, new\+Mask), \hyperlink{classcmn_logger_ae835d053611487f98a3d216ca8ca6f28}{cmn\+Logger\+::\+Set\+Mask\+Class\+Matching}(\char`\"{}cmn\char`\"{}, new\+Mask), cmn\+Logger\+::\+Set\+Mask\+Class\+All(new\+Mask) or the class services with object.\+Services()-\/$>$Set\+Log\+Mask(new\+Mask).
+\item The output streams masks. Each output stream has its own log mask and will stream only the messages with a compatible level of detail. This allows for example to log everything to a file while printing only the high priority ones to std\+::cout. To set the level of detail of an output stream, use cmn\+Logger\+::\+Add\+Channel(new\+Stream, new\+Mask).
+\end{DoxyItemize}
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classcmn_class_register}{cmn\+Class\+Register} \hyperlink{classcmn_class_services_base}{cmn\+Class\+Services\+Base} \hyperlink{classcmn_l_o_d_output_multiplexer}{cmn\+L\+O\+D\+Output\+Multiplexer} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classcmn_logger_a7d192777882d1dc6bb48ceac0b4e65bb}{}\index{cmn\+Logger@{cmn\+Logger}!Stream\+Buf\+Type@{Stream\+Buf\+Type}}
+\index{Stream\+Buf\+Type@{Stream\+Buf\+Type}!cmn\+Logger@{cmn\+Logger}}
+\subsubsection[{Stream\+Buf\+Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf cmn\+L\+O\+D\+Multiplexer\+Streambuf}$<$char$>$ {\bf cmn\+Logger\+::\+Stream\+Buf\+Type}}\label{classcmn_logger_a7d192777882d1dc6bb48ceac0b4e65bb}
+Type used to define the logging level of detail. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcmn_logger_a5069a284c0793277466a6aa967ff41f8}{}\index{cmn\+Logger@{cmn\+Logger}!cmn\+Logger@{cmn\+Logger}}
+\index{cmn\+Logger@{cmn\+Logger}!cmn\+Logger@{cmn\+Logger}}
+\subsubsection[{cmn\+Logger}]{\setlength{\rightskip}{0pt plus 5cm}cmn\+Logger\+::cmn\+Logger (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{default\+Log\+File\+Name = {\ttfamily \char`\"{}cisstLog.txt\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classcmn_logger_a5069a284c0793277466a6aa967ff41f8}
+Constructor. The only constructor must be private in order to ensure that the class register is a singleton. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classcmn_logger_aa051a07e639b507c0db05af0aafd266e}{}\index{cmn\+Logger@{cmn\+Logger}!Add\+Channel@{Add\+Channel}}
+\index{Add\+Channel@{Add\+Channel}!cmn\+Logger@{cmn\+Logger}}
+\subsubsection[{Add\+Channel}]{\setlength{\rightskip}{0pt plus 5cm}static void cmn\+Logger\+::\+Add\+Channel (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{output\+Stream, }
+\item[{{\bf cmn\+Log\+Mask}}]{mask = {\ttfamily {\bf C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+A\+L\+L\+O\+W\+\_\+\+A\+L\+L}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classcmn_logger_aa051a07e639b507c0db05af0aafd266e}
+Add an output stream to the logger. The level of detail provided is used to filter the messages, i.\+e. any message with a level of detail higher than the level associated to the output stream will not be streamed. \hypertarget{classcmn_logger_a987bfb4a959245edb504f34392f16904}{}\index{cmn\+Logger@{cmn\+Logger}!Add\+Channel\+To\+Std\+Err@{Add\+Channel\+To\+Std\+Err}}
+\index{Add\+Channel\+To\+Std\+Err@{Add\+Channel\+To\+Std\+Err}!cmn\+Logger@{cmn\+Logger}}
+\subsubsection[{Add\+Channel\+To\+Std\+Err}]{\setlength{\rightskip}{0pt plus 5cm}static void cmn\+Logger\+::\+Add\+Channel\+To\+Std\+Err (
+\begin{DoxyParamCaption}
+\item[{{\bf cmn\+Log\+Mask}}]{mask = {\ttfamily {\bf C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+A\+L\+L\+O\+W\+\_\+\+E\+R\+R\+O\+R\+S\+\_\+\+A\+N\+D\+\_\+\+W\+A\+R\+N\+I\+N\+G\+S}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classcmn_logger_a987bfb4a959245edb504f34392f16904}
+Add std\+::cerr output stream to the logger. Useful when calling from Python, where redirecting sys.\+stderr to std\+::cerr is nontrivial. \hypertarget{classcmn_logger_a3dc3179f73e32ba953e6c54f04e7e2a8}{}\index{cmn\+Logger@{cmn\+Logger}!Add\+Channel\+To\+Std\+Out@{Add\+Channel\+To\+Std\+Out}}
+\index{Add\+Channel\+To\+Std\+Out@{Add\+Channel\+To\+Std\+Out}!cmn\+Logger@{cmn\+Logger}}
+\subsubsection[{Add\+Channel\+To\+Std\+Out}]{\setlength{\rightskip}{0pt plus 5cm}static void cmn\+Logger\+::\+Add\+Channel\+To\+Std\+Out (
+\begin{DoxyParamCaption}
+\item[{{\bf cmn\+Log\+Mask}}]{mask = {\ttfamily {\bf C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+A\+L\+L\+O\+W\+\_\+\+E\+R\+R\+O\+R\+S\+\_\+\+A\+N\+D\+\_\+\+W\+A\+R\+N\+I\+N\+G\+S}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classcmn_logger_a3dc3179f73e32ba953e6c54f04e7e2a8}
+Add std\+::cout output stream to the logger. Useful when calling from Python, where redirecting sys.\+stdout to std\+::cout is nontrivial. \hypertarget{classcmn_logger_a9467522ba63faf595dc3f2358102081a}{}\index{cmn\+Logger@{cmn\+Logger}!Extract\+File\+Name@{Extract\+File\+Name}}
+\index{Extract\+File\+Name@{Extract\+File\+Name}!cmn\+Logger@{cmn\+Logger}}
+\subsubsection[{Extract\+File\+Name}]{\setlength{\rightskip}{0pt plus 5cm}static const char$\ast$ cmn\+Logger\+::\+Extract\+File\+Name (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{file}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classcmn_logger_a9467522ba63faf595dc3f2358102081a}
+\hypertarget{classcmn_logger_aa971af396f5e242a175d9b54be9064c5}{}\index{cmn\+Logger@{cmn\+Logger}!Get\+Lo\+D@{Get\+Lo\+D}}
+\index{Get\+Lo\+D@{Get\+Lo\+D}!cmn\+Logger@{cmn\+Logger}}
+\subsubsection[{Get\+Lo\+D}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf cmn\+Log\+Mask} {\bf C\+I\+S\+S\+T\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D} cmn\+Logger\+::\+Get\+Lo\+D (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classcmn_logger_aa971af396f5e242a175d9b54be9064c5}
+\hypertarget{classcmn_logger_a96c349facac6bbc27220b091ff26a838}{}\index{cmn\+Logger@{cmn\+Logger}!Get\+Mask@{Get\+Mask}}
+\index{Get\+Mask@{Get\+Mask}!cmn\+Logger@{cmn\+Logger}}
+\subsubsection[{Get\+Mask}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf cmn\+Log\+Mask} cmn\+Logger\+::\+Get\+Mask (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classcmn_logger_a96c349facac6bbc27220b091ff26a838}
+Get the global mask used to filter the log messages. \begin{DoxyReturn}{Returns}
+The global mask used to filter the log. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+Get\+Mask\+Instance 
+\end{DoxySeeAlso}
+\hypertarget{classcmn_logger_ac9a9ba32485a733c51bc7927f76b2355}{}\index{cmn\+Logger@{cmn\+Logger}!Get\+Mask\+Function@{Get\+Mask\+Function}}
+\index{Get\+Mask\+Function@{Get\+Mask\+Function}!cmn\+Logger@{cmn\+Logger}}
+\subsubsection[{Get\+Mask\+Function}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf cmn\+Log\+Mask} cmn\+Logger\+::\+Get\+Mask\+Function (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classcmn_logger_ac9a9ba32485a733c51bc7927f76b2355}
+Get the function mask used to filter the log messages. \begin{DoxyReturn}{Returns}
+The function mask used to filter the log. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+Get\+Mask\+Instance 
+\end{DoxySeeAlso}
+\hypertarget{classcmn_logger_aa9a44af4d1640661d784d1da92c9d394}{}\index{cmn\+Logger@{cmn\+Logger}!Get\+Multiplexer@{Get\+Multiplexer}}
+\index{Get\+Multiplexer@{Get\+Multiplexer}!cmn\+Logger@{cmn\+Logger}}
+\subsubsection[{Get\+Multiplexer}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Stream\+Buf\+Type}$\ast$ cmn\+Logger\+::\+Get\+Multiplexer (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classcmn_logger_aa9a44af4d1640661d784d1da92c9d394}
+Returns the \hyperlink{classcmn_l_o_d_multiplexer_streambuf}{cmn\+L\+O\+D\+Multiplexer\+Streambuf} directly. This allows manipulation of the streambuffer for operations such as adding or deleting channels for the stream..
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{classcmn_l_o_d_multiplexer_streambuf}{cmn\+L\+O\+D\+Multiplexer\+Streambuf$<$char$>$}$\ast$ The Streambuffer.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+Get\+Multiplexer\+Instance 
+\end{DoxySeeAlso}
+\hypertarget{classcmn_logger_ac776c83953b0b6fc8797928dbdd88692}{}\index{cmn\+Logger@{cmn\+Logger}!Halt\+Default\+Log@{Halt\+Default\+Log}}
+\index{Halt\+Default\+Log@{Halt\+Default\+Log}!cmn\+Logger@{cmn\+Logger}}
+\subsubsection[{Halt\+Default\+Log}]{\setlength{\rightskip}{0pt plus 5cm}static void cmn\+Logger\+::\+Halt\+Default\+Log (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classcmn_logger_ac776c83953b0b6fc8797928dbdd88692}
+Disable the default log file \char`\"{}cisst\+Log.\+txt\char`\"{}. This method removes the default log from the output list of the multiplexer but doesn\textquotesingle{}t close the default log file. \hypertarget{classcmn_logger_af147d525d01803626e171c328bc28530}{}\index{cmn\+Logger@{cmn\+Logger}!Instance@{Instance}}
+\index{Instance@{Instance}!cmn\+Logger@{cmn\+Logger}}
+\subsubsection[{Instance}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf cmn\+Logger}$\ast$ cmn\+Logger\+::\+Instance (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classcmn_logger_af147d525d01803626e171c328bc28530}
+The log is instantiated as a singleton. To access the unique instantiation, one needs to use this static method. The instantiated log is created at the first call of this method since it is a static variable declared in this method\textquotesingle{}s scope.
+
+\begin{DoxyReturn}{Returns}
+A pointer to the logger. 
+\end{DoxyReturn}
+\hypertarget{classcmn_logger_a9c7aec5075fdb12cc8df86bfe306e073}{}\index{cmn\+Logger@{cmn\+Logger}!Kill@{Kill}}
+\index{Kill@{Kill}!cmn\+Logger@{cmn\+Logger}}
+\subsubsection[{Kill}]{\setlength{\rightskip}{0pt plus 5cm}static void cmn\+Logger\+::\+Kill (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classcmn_logger_a9c7aec5075fdb12cc8df86bfe306e073}
+Kill the logger. Set all masks to disable logs and remove all output streams. \hypertarget{classcmn_logger_a684d64bb96e292d9ef2eda7914545f09}{}\index{cmn\+Logger@{cmn\+Logger}!Remove\+Channel@{Remove\+Channel}}
+\index{Remove\+Channel@{Remove\+Channel}!cmn\+Logger@{cmn\+Logger}}
+\subsubsection[{Remove\+Channel}]{\setlength{\rightskip}{0pt plus 5cm}static void cmn\+Logger\+::\+Remove\+Channel (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{output\+Stream}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classcmn_logger_a684d64bb96e292d9ef2eda7914545f09}
+\hypertarget{classcmn_logger_adbfa3e3002c704d689674f77c9deb525}{}\index{cmn\+Logger@{cmn\+Logger}!Resume\+Default\+Log@{Resume\+Default\+Log}}
+\index{Resume\+Default\+Log@{Resume\+Default\+Log}!cmn\+Logger@{cmn\+Logger}}
+\subsubsection[{Resume\+Default\+Log}]{\setlength{\rightskip}{0pt plus 5cm}static void cmn\+Logger\+::\+Resume\+Default\+Log (
+\begin{DoxyParamCaption}
+\item[{{\bf cmn\+Log\+Mask}}]{new\+Lo\+D = {\ttfamily {\bf C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+A\+L\+L\+O\+W\+\_\+\+D\+E\+F\+A\+U\+L\+T}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classcmn_logger_adbfa3e3002c704d689674f77c9deb525}
+Resume the default log file. By default, the log is enabled (this is the default behavior of the \hyperlink{classcmn_logger}{cmn\+Logger} constructor) but this can be halted by using \hyperlink{classcmn_logger_ac776c83953b0b6fc8797928dbdd88692}{Halt\+Default\+Log()}. Using \hyperlink{classcmn_logger_adbfa3e3002c704d689674f77c9deb525}{Resume\+Default\+Log()} allows to resume the log to \char`\"{}cisst\+Log.\+txt\char`\"{} without losing previous logs. \hypertarget{classcmn_logger_af1c8a409a0667a9abb6003c3e89a82c4}{}\index{cmn\+Logger@{cmn\+Logger}!Set\+Lo\+D@{Set\+Lo\+D}}
+\index{Set\+Lo\+D@{Set\+Lo\+D}!cmn\+Logger@{cmn\+Logger}}
+\subsubsection[{Set\+Lo\+D}]{\setlength{\rightskip}{0pt plus 5cm}static void {\bf C\+I\+S\+S\+T\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D} cmn\+Logger\+::\+Set\+Lo\+D (
+\begin{DoxyParamCaption}
+\item[{{\bf cmn\+Log\+Mask}}]{mask}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classcmn_logger_af1c8a409a0667a9abb6003c3e89a82c4}
+\hypertarget{classcmn_logger_aa1b05cddbe0f496c381453656a21af7d}{}\index{cmn\+Logger@{cmn\+Logger}!Set\+Mask@{Set\+Mask}}
+\index{Set\+Mask@{Set\+Mask}!cmn\+Logger@{cmn\+Logger}}
+\subsubsection[{Set\+Mask}]{\setlength{\rightskip}{0pt plus 5cm}static void cmn\+Logger\+::\+Set\+Mask (
+\begin{DoxyParamCaption}
+\item[{{\bf cmn\+Log\+Mask}}]{mask}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classcmn_logger_aa1b05cddbe0f496c381453656a21af7d}
+Set the global mask used to filter the log messages. 
+\begin{DoxyParams}{Parameters}
+{\em mask} & The overall mask used to filter the log. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+Set\+Mask\+Instance 
+\end{DoxySeeAlso}
+\hypertarget{classcmn_logger_ac02d8a05e26687bf66951aab021adad7}{}\index{cmn\+Logger@{cmn\+Logger}!Set\+Mask\+Class@{Set\+Mask\+Class}}
+\index{Set\+Mask\+Class@{Set\+Mask\+Class}!cmn\+Logger@{cmn\+Logger}}
+\subsubsection[{Set\+Mask\+Class}]{\setlength{\rightskip}{0pt plus 5cm}static bool cmn\+Logger\+::\+Set\+Mask\+Class (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{class\+Name, }
+\item[{{\bf cmn\+Log\+Mask}}]{mask}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classcmn_logger_ac02d8a05e26687bf66951aab021adad7}
+Specify the log mask for a specific class. See \hyperlink{classcmn_class_register_a9bbfe2c4a0d388c508d3db7e5ce87375}{cmn\+Class\+Register\+::\+Set\+Log\+Mask\+Class}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em class\+Name} & The name of the class \\
+\hline
+{\em mask} & The log mask to be applied\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool True if the class is registered. 
+\end{DoxyReturn}
+\hypertarget{classcmn_logger_a88413527ca33537b0d13d1a9645c46a4}{}\index{cmn\+Logger@{cmn\+Logger}!Set\+Mask\+Class\+All@{Set\+Mask\+Class\+All}}
+\index{Set\+Mask\+Class\+All@{Set\+Mask\+Class\+All}!cmn\+Logger@{cmn\+Logger}}
+\subsubsection[{Set\+Mask\+Class\+All}]{\setlength{\rightskip}{0pt plus 5cm}static bool cmn\+Logger\+::\+Set\+Mask\+Class\+All (
+\begin{DoxyParamCaption}
+\item[{{\bf cmn\+Log\+Mask}}]{mask}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classcmn_logger_a88413527ca33537b0d13d1a9645c46a4}
+Specify the log mask for all registered classes. See \hyperlink{classcmn_class_register_ab84a1a900a54b94c4c6d512acf152ebe}{cmn\+Class\+Register\+::\+Set\+Log\+Mask\+Class\+All}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mask} & The log mask to be applied\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool True if there is at least one class mask was modified 
+\end{DoxyReturn}
+\hypertarget{classcmn_logger_ae835d053611487f98a3d216ca8ca6f28}{}\index{cmn\+Logger@{cmn\+Logger}!Set\+Mask\+Class\+Matching@{Set\+Mask\+Class\+Matching}}
+\index{Set\+Mask\+Class\+Matching@{Set\+Mask\+Class\+Matching}!cmn\+Logger@{cmn\+Logger}}
+\subsubsection[{Set\+Mask\+Class\+Matching}]{\setlength{\rightskip}{0pt plus 5cm}static bool cmn\+Logger\+::\+Set\+Mask\+Class\+Matching (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{string\+To\+Match, }
+\item[{{\bf cmn\+Log\+Mask}}]{mask}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classcmn_logger_ae835d053611487f98a3d216ca8ca6f28}
+Specify the log mask for all classes with a name matching a given string. See \hyperlink{classcmn_class_register_afc0d014a73ac6cdbc8f3f9b490cafcd9}{cmn\+Class\+Register\+::\+Set\+Log\+Mask\+Class\+Matching}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em string\+To\+Match} & A string found in class names (e.\+g. \char`\"{}cmn\char`\"{}) \\
+\hline
+{\em mask} & The log mask to be applied\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool True if there is at least one class Lo\+D was modified 
+\end{DoxyReturn}
+\hypertarget{classcmn_logger_a1382ea96a6eb493c5aff86256b1f5fc7}{}\index{cmn\+Logger@{cmn\+Logger}!Set\+Mask\+Default\+Log@{Set\+Mask\+Default\+Log}}
+\index{Set\+Mask\+Default\+Log@{Set\+Mask\+Default\+Log}!cmn\+Logger@{cmn\+Logger}}
+\subsubsection[{Set\+Mask\+Default\+Log}]{\setlength{\rightskip}{0pt plus 5cm}static void cmn\+Logger\+::\+Set\+Mask\+Default\+Log (
+\begin{DoxyParamCaption}
+\item[{{\bf cmn\+Log\+Mask}}]{new\+Lo\+D = {\ttfamily {\bf C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+A\+L\+L\+O\+W\+\_\+\+D\+E\+F\+A\+U\+L\+T}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classcmn_logger_a1382ea96a6eb493c5aff86256b1f5fc7}
+Set a new mask for the default log file. This method uses Halt\+Default\+Log followed by Resume\+Default\+Log. \hypertarget{classcmn_logger_afa246173cc26b1fa0bac407842dfd31c}{}\index{cmn\+Logger@{cmn\+Logger}!Set\+Mask\+Function@{Set\+Mask\+Function}}
+\index{Set\+Mask\+Function@{Set\+Mask\+Function}!cmn\+Logger@{cmn\+Logger}}
+\subsubsection[{Set\+Mask\+Function}]{\setlength{\rightskip}{0pt plus 5cm}static void cmn\+Logger\+::\+Set\+Mask\+Function (
+\begin{DoxyParamCaption}
+\item[{{\bf cmn\+Log\+Mask}}]{mask}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classcmn_logger_afa246173cc26b1fa0bac407842dfd31c}
+Set the \char`\"{}function\char`\"{} mask used to filter the log messages. 
+\begin{DoxyParams}{Parameters}
+{\em mask} & The function mask used to filter the log. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+Set\+Mask\+Function\+Instance 
+\end{DoxySeeAlso}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Common/\hyperlink{cmn_logger_8h}{cmn\+Logger.\+h}\end{DoxyCompactItemize}

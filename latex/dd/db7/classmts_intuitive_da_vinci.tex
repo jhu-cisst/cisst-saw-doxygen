@@ -1,0 +1,591 @@
+\hypertarget{classmts_intuitive_da_vinci}{}\section{mts\+Intuitive\+Da\+Vinci Class Reference}
+\label{classmts_intuitive_da_vinci}\index{mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}}
+
+
+{\ttfamily \#include $<$mts\+Intuitive\+Da\+Vinci.\+h$>$}
+
+Inheritance diagram for mts\+Intuitive\+Da\+Vinci\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=6.000000cm]{dd/db7/classmts_intuitive_da_vinci}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classmts_intuitive_da_vinci_1_1_arm_data}{Arm\+Data}
+\item 
+class \hyperlink{classmts_intuitive_da_vinci_1_1_console_data}{Console\+Data}
+\item 
+class \hyperlink{classmts_intuitive_da_vinci_1_1_event_data}{Event\+Data}
+\item 
+class \hyperlink{classmts_intuitive_da_vinci_1_1_master_arm_data}{Master\+Arm\+Data}
+\item 
+class \hyperlink{classmts_intuitive_da_vinci_1_1_slave_arm_data}{Slave\+Arm\+Data}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classmts_intuitive_da_vinci_a32a63e2057b2c00c8f08685f8f5736f4}{Manipulator\+Index\+Type} \{ \\*
+\hyperlink{classmts_intuitive_da_vinci_a32a63e2057b2c00c8f08685f8f5736f4a0d158d8374c3fd113e13943c66f22edc}{M\+T\+M\+L1} = 0, 
+\hyperlink{classmts_intuitive_da_vinci_a32a63e2057b2c00c8f08685f8f5736f4a5f65f1a1b8d05b3897c63e6341aff0d8}{M\+T\+M\+R1}, 
+\hyperlink{classmts_intuitive_da_vinci_a32a63e2057b2c00c8f08685f8f5736f4aea43dc4f2c0203a7787893dee83e9e36}{M\+T\+M\+L2}, 
+\hyperlink{classmts_intuitive_da_vinci_a32a63e2057b2c00c8f08685f8f5736f4a912a70c4003ec1f7e70bdaa656c476bd}{M\+T\+M\+R2}, 
+\\*
+\hyperlink{classmts_intuitive_da_vinci_a32a63e2057b2c00c8f08685f8f5736f4a7f7e605860966d2955f1b1d191a0ea60}{P\+S\+M1}, 
+\hyperlink{classmts_intuitive_da_vinci_a32a63e2057b2c00c8f08685f8f5736f4ae0c4aff71a66bc815a317fe7e394526a}{P\+S\+M2}, 
+\hyperlink{classmts_intuitive_da_vinci_a32a63e2057b2c00c8f08685f8f5736f4a9cabe1d4b9c589c14b099d8cfc63d9ae}{P\+S\+M3}, 
+\hyperlink{classmts_intuitive_da_vinci_a32a63e2057b2c00c8f08685f8f5736f4a28d184b18083d111c357c69c8e89455d}{E\+C\+M1}, 
+\\*
+\hyperlink{classmts_intuitive_da_vinci_a32a63e2057b2c00c8f08685f8f5736f4a13d681869e8b80f0886c9821c14b1e11}{C\+O\+N\+S\+O\+L\+E1}, 
+\hyperlink{classmts_intuitive_da_vinci_a32a63e2057b2c00c8f08685f8f5736f4af5f8741eae26c3a80757f85142d89013}{C\+O\+N\+S\+O\+L\+E2}, 
+\hyperlink{classmts_intuitive_da_vinci_a32a63e2057b2c00c8f08685f8f5736f4a0468cbc0f07a23a1323a158f0700fb38}{C\+O\+R\+E}, 
+\hyperlink{classmts_intuitive_da_vinci_a32a63e2057b2c00c8f08685f8f5736f4a1f5a7d408a1b072ed999f76dc0b85627}{N\+U\+M\+B\+E\+R\+\_\+\+M\+A\+N\+I\+P\+U\+L\+A\+T\+O\+R\+S}
+ \}
+\item 
+enum \hyperlink{classmts_intuitive_da_vinci_a7a5cc061071f2996eeb0bf812f8b1fb5}{Manipulator\+Type} \{ \\*
+\hyperlink{classmts_intuitive_da_vinci_a7a5cc061071f2996eeb0bf812f8b1fb5ad8a2612865503c2c8ade5c8d25a2e86a}{M\+T\+M\+\_\+\+T\+Y\+P\+E} = 0, 
+\hyperlink{classmts_intuitive_da_vinci_a7a5cc061071f2996eeb0bf812f8b1fb5ad3c43cf405e7e7c914746b82acc50799}{P\+S\+M\+\_\+\+T\+Y\+P\+E}, 
+\hyperlink{classmts_intuitive_da_vinci_a7a5cc061071f2996eeb0bf812f8b1fb5a46ffb295a4ffd807dd4cfffdb79b01df}{E\+C\+M\+\_\+\+T\+Y\+P\+E}, 
+\hyperlink{classmts_intuitive_da_vinci_a7a5cc061071f2996eeb0bf812f8b1fb5abc23249dbc5ece012a3243b0e4e8fe5f}{C\+O\+N\+S\+O\+L\+E\+\_\+\+T\+Y\+P\+E}, 
+\\*
+\hyperlink{classmts_intuitive_da_vinci_a7a5cc061071f2996eeb0bf812f8b1fb5a10e1c219392891c6ed8db44a2a3e6f73}{N\+U\+M\+B\+E\+R\+\_\+\+M\+A\+N\+I\+P\+U\+L\+A\+T\+O\+R\+\_\+\+T\+Y\+P\+E\+S}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmts_intuitive_da_vinci_a8d26d40fcc5c8051b78d9f3492444124}{mts\+Intuitive\+Da\+Vinci} (const std\+::string \&name, unsigned int rate\+In\+Hz)
+\item 
+\hyperlink{classmts_intuitive_da_vinci_abd5651fd920d3b747c45e77f2fb6ddfd}{$\sim$mts\+Intuitive\+Da\+Vinci} ()
+\item 
+void \hyperlink{classmts_intuitive_da_vinci_aee33ea9b82f51a020f8be32fe9f07368}{Set\+Source\+Host} (const std\+::string \+\_\+ipaddress, const unsigned int \+\_\+port=5002, const unsigned int \+\_\+password=0x1111)
+\item 
+void \hyperlink{classmts_intuitive_da_vinci_afbf403f4b19fb9151d442d509390a7f3}{Set\+Source\+Log\+File} (const std\+::string \+\_\+filename)
+\item 
+void \hyperlink{classmts_intuitive_da_vinci_ae00f71b53c921f5640b5d9612f493d7e}{Set\+Output\+Log\+File} (const std\+::string filename)
+\item 
+void \hyperlink{classmts_intuitive_da_vinci_a0c4255c252999d91d3d983e7c9e01e6f}{Start\+Logging} (void)
+\item 
+void \hyperlink{classmts_intuitive_da_vinci_a55c2ab4b4af7da54bc185149a1884795}{Stop\+Logging} (void)
+\item 
+void \hyperlink{classmts_intuitive_da_vinci_a98409faa6d3f51b2bd153df262b4db59}{Configure} (const std\+::string \&\hyperlink{cmn_portability_8h_a021894e2626935fa2305434b1e893ff6}{C\+M\+N\+\_\+\+U\+N\+U\+S\+E\+D}(filename)=\char`\"{}\char`\"{})
+\item 
+void \hyperlink{classmts_intuitive_da_vinci_a47328f5b6d6bfc477d9d53e1d829f144}{Startup} (void)
+\item 
+void \hyperlink{classmts_intuitive_da_vinci_a8b6c9c77958c2726d1e7ae46d0e34ee2}{Run} (void)
+\item 
+void \hyperlink{classmts_intuitive_da_vinci_ac9c5b49157176eee514f74585a88d994}{Cleanup} (void)
+\item 
+bool \hyperlink{classmts_intuitive_da_vinci_a55eab0998d7da801e07b0cf4f5f36701}{Is\+A\+P\+I\+Connected} (void) const 
+\item 
+\hyperlink{classvct_dynamic_vector}{vct\+Dynamic\+Vector}$<$ std\+::string $>$ \hyperlink{classmts_intuitive_da_vinci_a3ba221cd74097609b03a8061b50361ee}{Get\+Event\+Names} (void)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static const std\+::string \& \hyperlink{classmts_intuitive_da_vinci_aefc78edaad6191f59d720d0b1b344e89}{Manipulator\+Index\+To\+String} (\hyperlink{classmts_intuitive_da_vinci_a32a63e2057b2c00c8f08685f8f5736f4}{Manipulator\+Index\+Type} manipulator\+Index)
+\item 
+static size\+\_\+t \hyperlink{classmts_intuitive_da_vinci_a72124ccf78759573acc23db8729eb060}{Get\+Number\+Of\+Joints} (\hyperlink{classmts_intuitive_da_vinci_a32a63e2057b2c00c8f08685f8f5736f4}{Manipulator\+Index\+Type} manipulator\+Index)
+\item 
+static size\+\_\+t \hyperlink{classmts_intuitive_da_vinci_a4f8cc264ea95312f0592b5fc40caa4a8}{Get\+Number\+Of\+Setup\+Joints} (\hyperlink{classmts_intuitive_da_vinci_a32a63e2057b2c00c8f08685f8f5736f4}{Manipulator\+Index\+Type} manipulator\+Index)
+\item 
+static \hyperlink{classmts_intuitive_da_vinci_a7a5cc061071f2996eeb0bf812f8b1fb5}{Manipulator\+Type} \hyperlink{classmts_intuitive_da_vinci_aca5d3a34f4bf98b51716ce27c0cd2984}{Get\+Manipulator\+Type} (\hyperlink{classmts_intuitive_da_vinci_a32a63e2057b2c00c8f08685f8f5736f4}{Manipulator\+Index\+Type} manipulator\+Index)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classmts_intuitive_da_vinci_a1c7a11d91811719e85d07e69bbb36bb3}{Connect} (void)
+\item 
+bool \hyperlink{classmts_intuitive_da_vinci_aed9a190c4308a6d2d3b2beb8a33e797b}{Disconnect} (void)
+\item 
+bool \hyperlink{classmts_intuitive_da_vinci_a57cf6b0b4b903a23b1a24fe94da730e2}{Configure\+Stream} (void)
+\item 
+void \hyperlink{classmts_intuitive_da_vinci_ad78560093b99be66a0f40502145f2c38}{Stream\+Callback} (void)
+\item 
+bool \hyperlink{classmts_intuitive_da_vinci_a16c2a6008fbd486878aa6774a4d49d5f}{Configure\+Events} (void)
+\item 
+void \hyperlink{classmts_intuitive_da_vinci_a0e5df412e4b6fc1f9752942626d10f1e}{Event\+Callback} (\hyperlink{classmts_intuitive_da_vinci_a32a63e2057b2c00c8f08685f8f5736f4}{Manipulator\+Index\+Type} index, int event\+Id, int $\ast$event\+Args)
+\item 
+bool \hyperlink{classmts_intuitive_da_vinci_a5f080d90e55a9ed84c21800f8f49dbce}{Start\+Stream} (void)
+\item 
+void \hyperlink{classmts_intuitive_da_vinci_a220ac807e83874eff2f243ee881ab4c8}{Stop\+Stream} (void)
+\item 
+void \hyperlink{classmts_intuitive_da_vinci_a085407a34a4d45778710482d3edba3e7}{Log\+System\+Configuration} (\hyperlink{cmn_log_lo_d_8h_a70c67165c37a0971e0dd1a85d4edaaae}{cmn\+Log\+Level} log\+Level=\hyperlink{cmn_log_lo_d_8h_ae0fcf22a2f3faaba0c5bf49a237e3f3e}{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+I\+N\+I\+T\+\_\+\+V\+E\+R\+B\+O\+S\+E}) const 
+\item 
+void \hyperlink{classmts_intuitive_da_vinci_a0c7d45062de8ee765c912897c67922ad}{Log\+Manipulator\+Configuration} (\hyperlink{classmts_intuitive_da_vinci_a32a63e2057b2c00c8f08685f8f5736f4}{Manipulator\+Index\+Type} index, \hyperlink{cmn_log_lo_d_8h_a70c67165c37a0971e0dd1a85d4edaaae}{cmn\+Log\+Level} log\+Level=\hyperlink{cmn_log_lo_d_8h_ae0fcf22a2f3faaba0c5bf49a237e3f3e}{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+I\+N\+I\+T\+\_\+\+V\+E\+R\+B\+O\+S\+E}) const 
+\item 
+void \hyperlink{classmts_intuitive_da_vinci_a5c70042fc47eb53118c1a9b489c8052b}{Log\+Tool\+Configuration} (\hyperlink{classmts_intuitive_da_vinci_a32a63e2057b2c00c8f08685f8f5736f4}{Manipulator\+Index\+Type} index, \hyperlink{cmn_log_lo_d_8h_a70c67165c37a0971e0dd1a85d4edaaae}{cmn\+Log\+Level} log\+Level=\hyperlink{cmn_log_lo_d_8h_a019ecc9e1487050d540772de22800f44}{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+L\+O\+D\+\_\+\+I\+N\+I\+T\+\_\+\+V\+E\+R\+B\+O\+S\+E}) const 
+\item 
+void \hyperlink{classmts_intuitive_da_vinci_a82c5afa2ac835b951fbd9bccdece5e7d}{Log\+Manipulators\+And\+Tools\+Configuration} (\hyperlink{cmn_log_lo_d_8h_a70c67165c37a0971e0dd1a85d4edaaae}{cmn\+Log\+Level} log\+Level=\hyperlink{cmn_log_lo_d_8h_a019ecc9e1487050d540772de22800f44}{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+L\+O\+D\+\_\+\+I\+N\+I\+T\+\_\+\+V\+E\+R\+B\+O\+S\+E}) const 
+\end{DoxyCompactItemize}
+{\bf }\par
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classmts_intuitive_da_vinci_a054e0b8026c6b3dd5687a4fee483e90c}{Setup\+Event\+Interfaces} (void)
+\item 
+void \hyperlink{classmts_intuitive_da_vinci_a8aeffb95c89efb86cd572f44017f7ae7}{Setup\+Arms\+Interfaces} (void)
+\item 
+void \hyperlink{classmts_intuitive_da_vinci_acb63524cb2eb5b30b43316ab5afe03af}{Setup\+Masters\+Interfaces} (void)
+\item 
+void \hyperlink{classmts_intuitive_da_vinci_acf772730a5e12199341cbf1a369e7fb9}{Setup\+Slaves\+Interfaces} (void)
+\item 
+void \hyperlink{classmts_intuitive_da_vinci_ad9912a22c4eea6d1bac867728e0c492f}{Setup\+Camera\+Interfaces} (void)
+\item 
+void \hyperlink{classmts_intuitive_da_vinci_a5481bd6861ce379fa3d81a2c71812d89}{Setup\+Console\+Interfaces} (void)
+\item 
+void \hyperlink{classmts_intuitive_da_vinci_ac2945537490e01f890dd3496c21129ab}{Setup\+All\+Interfaces} (void)
+\end{DoxyCompactItemize}
+
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmts_intuitive_da_vinci_1_1_arm_data}{Arm\+Data} $\ast$ \hyperlink{classmts_intuitive_da_vinci_a66c7aafdf43dc2172bc4b7e7e880046a}{Arms} \mbox{[}(\hyperlink{classmts_intuitive_da_vinci_a32a63e2057b2c00c8f08685f8f5736f4a28d184b18083d111c357c69c8e89455d}{E\+C\+M1}-\/\hyperlink{classmts_intuitive_da_vinci_a32a63e2057b2c00c8f08685f8f5736f4a0d158d8374c3fd113e13943c66f22edc}{M\+T\+M\+L1})+1\mbox{]}
+\item 
+\hyperlink{classmts_intuitive_da_vinci_1_1_master_arm_data}{Master\+Arm\+Data} $\ast$ \hyperlink{classmts_intuitive_da_vinci_aca2410ba38bf0ad7fce1481f8701c1da}{Master\+Arms} \mbox{[}(\hyperlink{classmts_intuitive_da_vinci_a32a63e2057b2c00c8f08685f8f5736f4a912a70c4003ec1f7e70bdaa656c476bd}{M\+T\+M\+R2}-\/\hyperlink{classmts_intuitive_da_vinci_a32a63e2057b2c00c8f08685f8f5736f4a0d158d8374c3fd113e13943c66f22edc}{M\+T\+M\+L1})+1\mbox{]}
+\item 
+\hyperlink{classmts_intuitive_da_vinci_1_1_slave_arm_data}{Slave\+Arm\+Data} $\ast$ \hyperlink{classmts_intuitive_da_vinci_ad974917d88b89bca109656a8e1ab7238}{Slave\+Arms} \mbox{[}(\hyperlink{classmts_intuitive_da_vinci_a32a63e2057b2c00c8f08685f8f5736f4a28d184b18083d111c357c69c8e89455d}{E\+C\+M1}-\/\hyperlink{classmts_intuitive_da_vinci_a32a63e2057b2c00c8f08685f8f5736f4a7f7e605860966d2955f1b1d191a0ea60}{P\+S\+M1})+1\mbox{]}
+\item 
+\hyperlink{classmts_intuitive_da_vinci_1_1_slave_arm_data}{Slave\+Arm\+Data} $\ast$ \hyperlink{classmts_intuitive_da_vinci_a3b0838b5bce0e66ac94c4e9425f55001}{Camera\+Arms} \mbox{[}(\hyperlink{classmts_intuitive_da_vinci_a32a63e2057b2c00c8f08685f8f5736f4a28d184b18083d111c357c69c8e89455d}{E\+C\+M1}-\/\hyperlink{classmts_intuitive_da_vinci_a32a63e2057b2c00c8f08685f8f5736f4a28d184b18083d111c357c69c8e89455d}{E\+C\+M1})+1\mbox{]}
+\item 
+\hyperlink{classmts_intuitive_da_vinci_1_1_console_data}{Console\+Data} \hyperlink{classmts_intuitive_da_vinci_a653cc20fc11e9d3717a825fa1d4bebb7}{Console}
+\item 
+\hyperlink{classmts_intuitive_da_vinci_1_1_console_data}{Console\+Data} $\ast$ \hyperlink{classmts_intuitive_da_vinci_a54227f36bb8c45e2eac7c3e4eaf1d8ad}{Consoles} \mbox{[}(\hyperlink{classmts_intuitive_da_vinci_a32a63e2057b2c00c8f08685f8f5736f4af5f8741eae26c3a80757f85142d89013}{C\+O\+N\+S\+O\+L\+E2}-\/\hyperlink{classmts_intuitive_da_vinci_a32a63e2057b2c00c8f08685f8f5736f4a13d681869e8b80f0886c9821c14b1e11}{C\+O\+N\+S\+O\+L\+E1})+1\mbox{]}
+\item 
+\hyperlink{classmts_intuitive_da_vinci_1_1_event_data}{Event\+Data} \hyperlink{classmts_intuitive_da_vinci_adbe39e510898b80b04aac001722dc6fd}{Events}
+\item 
+bool \hyperlink{classmts_intuitive_da_vinci_a92486c3be7e1f07ef72df2f00556a5c7}{Connected}
+\item 
+unsigned int \hyperlink{classmts_intuitive_da_vinci_a1780b24f6582c60ff94f2e1d03ef7060}{Rate\+In\+Hz}
+\item 
+std\+::string \hyperlink{classmts_intuitive_da_vinci_aa5fb5d66628f24155b54300b3b3ed2b2}{I\+P\+Address}
+\item 
+unsigned int \hyperlink{classmts_intuitive_da_vinci_a62f779011990ec7e02ddc7800d933e23}{Port}
+\item 
+unsigned int \hyperlink{classmts_intuitive_da_vinci_a91a1a1c9fd5b0e0717257aa00c29c687}{Password}
+\item 
+std\+::string \hyperlink{classmts_intuitive_da_vinci_abd697468b4bd68e40664e73ca6af5692}{Source\+Log\+File\+Name}
+\item 
+bool \hyperlink{classmts_intuitive_da_vinci_a19a2398dbc1a8369da7295119fb8abbc}{Use\+Log\+File}
+\item 
+std\+::string \hyperlink{classmts_intuitive_da_vinci_a15ff830a81df5f1a4567de780f88e929}{Output\+Log\+File\+Name}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classmts_intuitive_da_vinci_ad910bb121d5d461c63287b041e77cae0}{mts\+Intuitive\+Da\+Vinci\+Utilities\+::\+Stream\+Callback\+Internal} (void $\ast$user\+Data)
+\item 
+void \hyperlink{classmts_intuitive_da_vinci_ac72f3d23f2cccf30b98148161cda75e5}{mts\+Intuitive\+Da\+Vinci\+Utilities\+::\+Event\+Callback\+Internal} (int manipulator\+Id, int event\+Id, int $\ast$arguments, void $\ast$user\+Data)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classmts_intuitive_da_vinci_a32a63e2057b2c00c8f08685f8f5736f4}{}\index{mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}!Manipulator\+Index\+Type@{Manipulator\+Index\+Type}}
+\index{Manipulator\+Index\+Type@{Manipulator\+Index\+Type}!mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}}
+\subsubsection[{Manipulator\+Index\+Type}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf mts\+Intuitive\+Da\+Vinci\+::\+Manipulator\+Index\+Type}}\label{classmts_intuitive_da_vinci_a32a63e2057b2c00c8f08685f8f5736f4}
+Type of manipulator. Note that indices are contiguous by type of manipulator. \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{M\+T\+M\+L1@{M\+T\+M\+L1}!mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}}\index{mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}!M\+T\+M\+L1@{M\+T\+M\+L1}}\item[{\em 
+\hypertarget{classmts_intuitive_da_vinci_a32a63e2057b2c00c8f08685f8f5736f4a0d158d8374c3fd113e13943c66f22edc}{}M\+T\+M\+L1\label{classmts_intuitive_da_vinci_a32a63e2057b2c00c8f08685f8f5736f4a0d158d8374c3fd113e13943c66f22edc}
+}]\index{M\+T\+M\+R1@{M\+T\+M\+R1}!mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}}\index{mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}!M\+T\+M\+R1@{M\+T\+M\+R1}}\item[{\em 
+\hypertarget{classmts_intuitive_da_vinci_a32a63e2057b2c00c8f08685f8f5736f4a5f65f1a1b8d05b3897c63e6341aff0d8}{}M\+T\+M\+R1\label{classmts_intuitive_da_vinci_a32a63e2057b2c00c8f08685f8f5736f4a5f65f1a1b8d05b3897c63e6341aff0d8}
+}]Master Left 1 \index{M\+T\+M\+L2@{M\+T\+M\+L2}!mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}}\index{mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}!M\+T\+M\+L2@{M\+T\+M\+L2}}\item[{\em 
+\hypertarget{classmts_intuitive_da_vinci_a32a63e2057b2c00c8f08685f8f5736f4aea43dc4f2c0203a7787893dee83e9e36}{}M\+T\+M\+L2\label{classmts_intuitive_da_vinci_a32a63e2057b2c00c8f08685f8f5736f4aea43dc4f2c0203a7787893dee83e9e36}
+}]Master Right 1 \index{M\+T\+M\+R2@{M\+T\+M\+R2}!mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}}\index{mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}!M\+T\+M\+R2@{M\+T\+M\+R2}}\item[{\em 
+\hypertarget{classmts_intuitive_da_vinci_a32a63e2057b2c00c8f08685f8f5736f4a912a70c4003ec1f7e70bdaa656c476bd}{}M\+T\+M\+R2\label{classmts_intuitive_da_vinci_a32a63e2057b2c00c8f08685f8f5736f4a912a70c4003ec1f7e70bdaa656c476bd}
+}]Master Left 2 \index{P\+S\+M1@{P\+S\+M1}!mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}}\index{mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}!P\+S\+M1@{P\+S\+M1}}\item[{\em 
+\hypertarget{classmts_intuitive_da_vinci_a32a63e2057b2c00c8f08685f8f5736f4a7f7e605860966d2955f1b1d191a0ea60}{}P\+S\+M1\label{classmts_intuitive_da_vinci_a32a63e2057b2c00c8f08685f8f5736f4a7f7e605860966d2955f1b1d191a0ea60}
+}]Master Right 2 \index{P\+S\+M2@{P\+S\+M2}!mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}}\index{mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}!P\+S\+M2@{P\+S\+M2}}\item[{\em 
+\hypertarget{classmts_intuitive_da_vinci_a32a63e2057b2c00c8f08685f8f5736f4ae0c4aff71a66bc815a317fe7e394526a}{}P\+S\+M2\label{classmts_intuitive_da_vinci_a32a63e2057b2c00c8f08685f8f5736f4ae0c4aff71a66bc815a317fe7e394526a}
+}]Patient side 1 \index{P\+S\+M3@{P\+S\+M3}!mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}}\index{mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}!P\+S\+M3@{P\+S\+M3}}\item[{\em 
+\hypertarget{classmts_intuitive_da_vinci_a32a63e2057b2c00c8f08685f8f5736f4a9cabe1d4b9c589c14b099d8cfc63d9ae}{}P\+S\+M3\label{classmts_intuitive_da_vinci_a32a63e2057b2c00c8f08685f8f5736f4a9cabe1d4b9c589c14b099d8cfc63d9ae}
+}]Patient side 2 \index{E\+C\+M1@{E\+C\+M1}!mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}}\index{mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}!E\+C\+M1@{E\+C\+M1}}\item[{\em 
+\hypertarget{classmts_intuitive_da_vinci_a32a63e2057b2c00c8f08685f8f5736f4a28d184b18083d111c357c69c8e89455d}{}E\+C\+M1\label{classmts_intuitive_da_vinci_a32a63e2057b2c00c8f08685f8f5736f4a28d184b18083d111c357c69c8e89455d}
+}]Patient side 3 \index{C\+O\+N\+S\+O\+L\+E1@{C\+O\+N\+S\+O\+L\+E1}!mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}}\index{mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}!C\+O\+N\+S\+O\+L\+E1@{C\+O\+N\+S\+O\+L\+E1}}\item[{\em 
+\hypertarget{classmts_intuitive_da_vinci_a32a63e2057b2c00c8f08685f8f5736f4a13d681869e8b80f0886c9821c14b1e11}{}C\+O\+N\+S\+O\+L\+E1\label{classmts_intuitive_da_vinci_a32a63e2057b2c00c8f08685f8f5736f4a13d681869e8b80f0886c9821c14b1e11}
+}]Endoscopic camera \index{C\+O\+N\+S\+O\+L\+E2@{C\+O\+N\+S\+O\+L\+E2}!mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}}\index{mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}!C\+O\+N\+S\+O\+L\+E2@{C\+O\+N\+S\+O\+L\+E2}}\item[{\em 
+\hypertarget{classmts_intuitive_da_vinci_a32a63e2057b2c00c8f08685f8f5736f4af5f8741eae26c3a80757f85142d89013}{}C\+O\+N\+S\+O\+L\+E2\label{classmts_intuitive_da_vinci_a32a63e2057b2c00c8f08685f8f5736f4af5f8741eae26c3a80757f85142d89013}
+}]Console \index{C\+O\+R\+E@{C\+O\+R\+E}!mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}}\index{mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}!C\+O\+R\+E@{C\+O\+R\+E}}\item[{\em 
+\hypertarget{classmts_intuitive_da_vinci_a32a63e2057b2c00c8f08685f8f5736f4a0468cbc0f07a23a1323a158f0700fb38}{}C\+O\+R\+E\label{classmts_intuitive_da_vinci_a32a63e2057b2c00c8f08685f8f5736f4a0468cbc0f07a23a1323a158f0700fb38}
+}]Dual Console \index{N\+U\+M\+B\+E\+R\+\_\+\+M\+A\+N\+I\+P\+U\+L\+A\+T\+O\+R\+S@{N\+U\+M\+B\+E\+R\+\_\+\+M\+A\+N\+I\+P\+U\+L\+A\+T\+O\+R\+S}!mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}}\index{mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}!N\+U\+M\+B\+E\+R\+\_\+\+M\+A\+N\+I\+P\+U\+L\+A\+T\+O\+R\+S@{N\+U\+M\+B\+E\+R\+\_\+\+M\+A\+N\+I\+P\+U\+L\+A\+T\+O\+R\+S}}\item[{\em 
+\hypertarget{classmts_intuitive_da_vinci_a32a63e2057b2c00c8f08685f8f5736f4a1f5a7d408a1b072ed999f76dc0b85627}{}N\+U\+M\+B\+E\+R\+\_\+\+M\+A\+N\+I\+P\+U\+L\+A\+T\+O\+R\+S\label{classmts_intuitive_da_vinci_a32a63e2057b2c00c8f08685f8f5736f4a1f5a7d408a1b072ed999f76dc0b85627}
+}]In Si system events are generated from Core as well
+
+Number of manipulators \end{description}
+\end{Desc}
+\hypertarget{classmts_intuitive_da_vinci_a7a5cc061071f2996eeb0bf812f8b1fb5}{}\index{mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}!Manipulator\+Type@{Manipulator\+Type}}
+\index{Manipulator\+Type@{Manipulator\+Type}!mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}}
+\subsubsection[{Manipulator\+Type}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf mts\+Intuitive\+Da\+Vinci\+::\+Manipulator\+Type}}\label{classmts_intuitive_da_vinci_a7a5cc061071f2996eeb0bf812f8b1fb5}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{M\+T\+M\+\_\+\+T\+Y\+P\+E@{M\+T\+M\+\_\+\+T\+Y\+P\+E}!mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}}\index{mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}!M\+T\+M\+\_\+\+T\+Y\+P\+E@{M\+T\+M\+\_\+\+T\+Y\+P\+E}}\item[{\em 
+\hypertarget{classmts_intuitive_da_vinci_a7a5cc061071f2996eeb0bf812f8b1fb5ad8a2612865503c2c8ade5c8d25a2e86a}{}M\+T\+M\+\_\+\+T\+Y\+P\+E\label{classmts_intuitive_da_vinci_a7a5cc061071f2996eeb0bf812f8b1fb5ad8a2612865503c2c8ade5c8d25a2e86a}
+}]\index{P\+S\+M\+\_\+\+T\+Y\+P\+E@{P\+S\+M\+\_\+\+T\+Y\+P\+E}!mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}}\index{mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}!P\+S\+M\+\_\+\+T\+Y\+P\+E@{P\+S\+M\+\_\+\+T\+Y\+P\+E}}\item[{\em 
+\hypertarget{classmts_intuitive_da_vinci_a7a5cc061071f2996eeb0bf812f8b1fb5ad3c43cf405e7e7c914746b82acc50799}{}P\+S\+M\+\_\+\+T\+Y\+P\+E\label{classmts_intuitive_da_vinci_a7a5cc061071f2996eeb0bf812f8b1fb5ad3c43cf405e7e7c914746b82acc50799}
+}]Master Tool Manipulator \index{E\+C\+M\+\_\+\+T\+Y\+P\+E@{E\+C\+M\+\_\+\+T\+Y\+P\+E}!mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}}\index{mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}!E\+C\+M\+\_\+\+T\+Y\+P\+E@{E\+C\+M\+\_\+\+T\+Y\+P\+E}}\item[{\em 
+\hypertarget{classmts_intuitive_da_vinci_a7a5cc061071f2996eeb0bf812f8b1fb5a46ffb295a4ffd807dd4cfffdb79b01df}{}E\+C\+M\+\_\+\+T\+Y\+P\+E\label{classmts_intuitive_da_vinci_a7a5cc061071f2996eeb0bf812f8b1fb5a46ffb295a4ffd807dd4cfffdb79b01df}
+}]Patient Side Manipulator \index{C\+O\+N\+S\+O\+L\+E\+\_\+\+T\+Y\+P\+E@{C\+O\+N\+S\+O\+L\+E\+\_\+\+T\+Y\+P\+E}!mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}}\index{mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}!C\+O\+N\+S\+O\+L\+E\+\_\+\+T\+Y\+P\+E@{C\+O\+N\+S\+O\+L\+E\+\_\+\+T\+Y\+P\+E}}\item[{\em 
+\hypertarget{classmts_intuitive_da_vinci_a7a5cc061071f2996eeb0bf812f8b1fb5abc23249dbc5ece012a3243b0e4e8fe5f}{}C\+O\+N\+S\+O\+L\+E\+\_\+\+T\+Y\+P\+E\label{classmts_intuitive_da_vinci_a7a5cc061071f2996eeb0bf812f8b1fb5abc23249dbc5ece012a3243b0e4e8fe5f}
+}]Endoscopic Camera Manipulator \index{N\+U\+M\+B\+E\+R\+\_\+\+M\+A\+N\+I\+P\+U\+L\+A\+T\+O\+R\+\_\+\+T\+Y\+P\+E\+S@{N\+U\+M\+B\+E\+R\+\_\+\+M\+A\+N\+I\+P\+U\+L\+A\+T\+O\+R\+\_\+\+T\+Y\+P\+E\+S}!mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}}\index{mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}!N\+U\+M\+B\+E\+R\+\_\+\+M\+A\+N\+I\+P\+U\+L\+A\+T\+O\+R\+\_\+\+T\+Y\+P\+E\+S@{N\+U\+M\+B\+E\+R\+\_\+\+M\+A\+N\+I\+P\+U\+L\+A\+T\+O\+R\+\_\+\+T\+Y\+P\+E\+S}}\item[{\em 
+\hypertarget{classmts_intuitive_da_vinci_a7a5cc061071f2996eeb0bf812f8b1fb5a10e1c219392891c6ed8db44a2a3e6f73}{}N\+U\+M\+B\+E\+R\+\_\+\+M\+A\+N\+I\+P\+U\+L\+A\+T\+O\+R\+\_\+\+T\+Y\+P\+E\+S\label{classmts_intuitive_da_vinci_a7a5cc061071f2996eeb0bf812f8b1fb5a10e1c219392891c6ed8db44a2a3e6f73}
+}]Surgeon-\/\+Side Console
+
+Number of manipulator types \end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmts_intuitive_da_vinci_a8d26d40fcc5c8051b78d9f3492444124}{}\index{mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}!mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}}
+\index{mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}!mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}}
+\subsubsection[{mts\+Intuitive\+Da\+Vinci}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Intuitive\+Da\+Vinci\+::mts\+Intuitive\+Da\+Vinci (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name, }
+\item[{unsigned int}]{rate\+In\+Hz}
+\end{DoxyParamCaption}
+)}\label{classmts_intuitive_da_vinci_a8d26d40fcc5c8051b78d9f3492444124}
+Constructor. \hypertarget{classmts_intuitive_da_vinci_abd5651fd920d3b747c45e77f2fb6ddfd}{}\index{mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}!````~mts\+Intuitive\+Da\+Vinci@{$\sim$mts\+Intuitive\+Da\+Vinci}}
+\index{````~mts\+Intuitive\+Da\+Vinci@{$\sim$mts\+Intuitive\+Da\+Vinci}!mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}}
+\subsubsection[{$\sim$mts\+Intuitive\+Da\+Vinci}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Intuitive\+Da\+Vinci\+::$\sim$mts\+Intuitive\+Da\+Vinci (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classmts_intuitive_da_vinci_abd5651fd920d3b747c45e77f2fb6ddfd}
+Default destructor. Does nothing. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classmts_intuitive_da_vinci_ac9c5b49157176eee514f74585a88d994}{}\index{mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}!Cleanup@{Cleanup}}
+\index{Cleanup@{Cleanup}!mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}}
+\subsubsection[{Cleanup}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Intuitive\+Da\+Vinci\+::\+Cleanup (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_intuitive_da_vinci_ac9c5b49157176eee514f74585a88d994}
+Virtual method that gets overloaded, and is run after the component gets killed using \hyperlink{classmts_task_continuous_ad1f8145306e074fbea8baab3beef4c5b}{Kill()} method. 
+
+Reimplemented from \hyperlink{classmts_component_a891f330f4fde7d831dcf7dc537dc5e81}{mts\+Component}.
+
+\hypertarget{classmts_intuitive_da_vinci_a98409faa6d3f51b2bd153df262b4db59}{}\index{mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}!Configure@{Configure}}
+\index{Configure@{Configure}!mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}}
+\subsubsection[{Configure}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Intuitive\+Da\+Vinci\+::\+Configure (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{C\+M\+N\+\_\+\+U\+N\+U\+S\+E\+Dfilename = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classmts_intuitive_da_vinci_a98409faa6d3f51b2bd153df262b4db59}
+Virtual method that gets called when the task/interface needs to be configured. Should it take X\+M\+L info?? 
+
+Reimplemented from \hyperlink{classmts_task_a52c822f34f12a0eb14f3d02de9ddd6f6}{mts\+Task}.
+
+\hypertarget{classmts_intuitive_da_vinci_a16c2a6008fbd486878aa6774a4d49d5f}{}\index{mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}!Configure\+Events@{Configure\+Events}}
+\index{Configure\+Events@{Configure\+Events}!mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}}
+\subsubsection[{Configure\+Events}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Intuitive\+Da\+Vinci\+::\+Configure\+Events (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_intuitive_da_vinci_a16c2a6008fbd486878aa6774a4d49d5f}
+\hypertarget{classmts_intuitive_da_vinci_a57cf6b0b4b903a23b1a24fe94da730e2}{}\index{mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}!Configure\+Stream@{Configure\+Stream}}
+\index{Configure\+Stream@{Configure\+Stream}!mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}}
+\subsubsection[{Configure\+Stream}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Intuitive\+Da\+Vinci\+::\+Configure\+Stream (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_intuitive_da_vinci_a57cf6b0b4b903a23b1a24fe94da730e2}
+\hypertarget{classmts_intuitive_da_vinci_a1c7a11d91811719e85d07e69bbb36bb3}{}\index{mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}!Connect@{Connect}}
+\index{Connect@{Connect}!mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}}
+\subsubsection[{Connect}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Intuitive\+Da\+Vinci\+::\+Connect (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_intuitive_da_vinci_a1c7a11d91811719e85d07e69bbb36bb3}
+Connect to the da\+Vinci system. \hypertarget{classmts_intuitive_da_vinci_aed9a190c4308a6d2d3b2beb8a33e797b}{}\index{mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}!Disconnect@{Disconnect}}
+\index{Disconnect@{Disconnect}!mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}}
+\subsubsection[{Disconnect}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Intuitive\+Da\+Vinci\+::\+Disconnect (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_intuitive_da_vinci_aed9a190c4308a6d2d3b2beb8a33e797b}
+Disconnect from the da\+Vinci system. \hypertarget{classmts_intuitive_da_vinci_a0e5df412e4b6fc1f9752942626d10f1e}{}\index{mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}!Event\+Callback@{Event\+Callback}}
+\index{Event\+Callback@{Event\+Callback}!mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}}
+\subsubsection[{Event\+Callback}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Intuitive\+Da\+Vinci\+::\+Event\+Callback (
+\begin{DoxyParamCaption}
+\item[{{\bf Manipulator\+Index\+Type}}]{index, }
+\item[{int}]{event\+Id, }
+\item[{int $\ast$}]{event\+Args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_intuitive_da_vinci_a0e5df412e4b6fc1f9752942626d10f1e}
+\hypertarget{classmts_intuitive_da_vinci_a3ba221cd74097609b03a8061b50361ee}{}\index{mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}!Get\+Event\+Names@{Get\+Event\+Names}}
+\index{Get\+Event\+Names@{Get\+Event\+Names}!mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}}
+\subsubsection[{Get\+Event\+Names}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Dynamic\+Vector}$<$std\+::string$>$ mts\+Intuitive\+Da\+Vinci\+::\+Get\+Event\+Names (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_intuitive_da_vinci_a3ba221cd74097609b03a8061b50361ee}
+\hypertarget{classmts_intuitive_da_vinci_aca5d3a34f4bf98b51716ce27c0cd2984}{}\index{mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}!Get\+Manipulator\+Type@{Get\+Manipulator\+Type}}
+\index{Get\+Manipulator\+Type@{Get\+Manipulator\+Type}!mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}}
+\subsubsection[{Get\+Manipulator\+Type}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Manipulator\+Type} mts\+Intuitive\+Da\+Vinci\+::\+Get\+Manipulator\+Type (
+\begin{DoxyParamCaption}
+\item[{{\bf Manipulator\+Index\+Type}}]{manipulator\+Index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classmts_intuitive_da_vinci_aca5d3a34f4bf98b51716ce27c0cd2984}
+Get manipulator type from manipulator index \hypertarget{classmts_intuitive_da_vinci_a72124ccf78759573acc23db8729eb060}{}\index{mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}!Get\+Number\+Of\+Joints@{Get\+Number\+Of\+Joints}}
+\index{Get\+Number\+Of\+Joints@{Get\+Number\+Of\+Joints}!mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}}
+\subsubsection[{Get\+Number\+Of\+Joints}]{\setlength{\rightskip}{0pt plus 5cm}static size\+\_\+t mts\+Intuitive\+Da\+Vinci\+::\+Get\+Number\+Of\+Joints (
+\begin{DoxyParamCaption}
+\item[{{\bf Manipulator\+Index\+Type}}]{manipulator\+Index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classmts_intuitive_da_vinci_a72124ccf78759573acc23db8729eb060}
+Get number of joints per arm \hypertarget{classmts_intuitive_da_vinci_a4f8cc264ea95312f0592b5fc40caa4a8}{}\index{mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}!Get\+Number\+Of\+Setup\+Joints@{Get\+Number\+Of\+Setup\+Joints}}
+\index{Get\+Number\+Of\+Setup\+Joints@{Get\+Number\+Of\+Setup\+Joints}!mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}}
+\subsubsection[{Get\+Number\+Of\+Setup\+Joints}]{\setlength{\rightskip}{0pt plus 5cm}static size\+\_\+t mts\+Intuitive\+Da\+Vinci\+::\+Get\+Number\+Of\+Setup\+Joints (
+\begin{DoxyParamCaption}
+\item[{{\bf Manipulator\+Index\+Type}}]{manipulator\+Index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classmts_intuitive_da_vinci_a4f8cc264ea95312f0592b5fc40caa4a8}
+Get number of setup joints for the specified manipulator index \hypertarget{classmts_intuitive_da_vinci_a55eab0998d7da801e07b0cf4f5f36701}{}\index{mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}!Is\+A\+P\+I\+Connected@{Is\+A\+P\+I\+Connected}}
+\index{Is\+A\+P\+I\+Connected@{Is\+A\+P\+I\+Connected}!mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}}
+\subsubsection[{Is\+A\+P\+I\+Connected}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Intuitive\+Da\+Vinci\+::\+Is\+A\+P\+I\+Connected (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_intuitive_da_vinci_a55eab0998d7da801e07b0cf4f5f36701}
+Provided for compatibility with \hyperlink{classmts_intuitive_da_vinci}{mts\+Intuitive\+Da\+Vinci} and C example \hypertarget{classmts_intuitive_da_vinci_a0c7d45062de8ee765c912897c67922ad}{}\index{mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}!Log\+Manipulator\+Configuration@{Log\+Manipulator\+Configuration}}
+\index{Log\+Manipulator\+Configuration@{Log\+Manipulator\+Configuration}!mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}}
+\subsubsection[{Log\+Manipulator\+Configuration}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Intuitive\+Da\+Vinci\+::\+Log\+Manipulator\+Configuration (
+\begin{DoxyParamCaption}
+\item[{{\bf Manipulator\+Index\+Type}}]{index, }
+\item[{{\bf cmn\+Log\+Level}}]{log\+Level = {\ttfamily {\bf C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+I\+N\+I\+T\+\_\+\+V\+E\+R\+B\+O\+S\+E}}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_intuitive_da_vinci_a0c7d45062de8ee765c912897c67922ad}
+\hypertarget{classmts_intuitive_da_vinci_a82c5afa2ac835b951fbd9bccdece5e7d}{}\index{mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}!Log\+Manipulators\+And\+Tools\+Configuration@{Log\+Manipulators\+And\+Tools\+Configuration}}
+\index{Log\+Manipulators\+And\+Tools\+Configuration@{Log\+Manipulators\+And\+Tools\+Configuration}!mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}}
+\subsubsection[{Log\+Manipulators\+And\+Tools\+Configuration}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Intuitive\+Da\+Vinci\+::\+Log\+Manipulators\+And\+Tools\+Configuration (
+\begin{DoxyParamCaption}
+\item[{{\bf cmn\+Log\+Level}}]{log\+Level = {\ttfamily {\bf C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+L\+O\+D\+\_\+\+I\+N\+I\+T\+\_\+\+V\+E\+R\+B\+O\+S\+E}}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_intuitive_da_vinci_a82c5afa2ac835b951fbd9bccdece5e7d}
+\hypertarget{classmts_intuitive_da_vinci_a085407a34a4d45778710482d3edba3e7}{}\index{mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}!Log\+System\+Configuration@{Log\+System\+Configuration}}
+\index{Log\+System\+Configuration@{Log\+System\+Configuration}!mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}}
+\subsubsection[{Log\+System\+Configuration}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Intuitive\+Da\+Vinci\+::\+Log\+System\+Configuration (
+\begin{DoxyParamCaption}
+\item[{{\bf cmn\+Log\+Level}}]{log\+Level = {\ttfamily {\bf C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+I\+N\+I\+T\+\_\+\+V\+E\+R\+B\+O\+S\+E}}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_intuitive_da_vinci_a085407a34a4d45778710482d3edba3e7}
+Log system information \hypertarget{classmts_intuitive_da_vinci_a5c70042fc47eb53118c1a9b489c8052b}{}\index{mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}!Log\+Tool\+Configuration@{Log\+Tool\+Configuration}}
+\index{Log\+Tool\+Configuration@{Log\+Tool\+Configuration}!mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}}
+\subsubsection[{Log\+Tool\+Configuration}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Intuitive\+Da\+Vinci\+::\+Log\+Tool\+Configuration (
+\begin{DoxyParamCaption}
+\item[{{\bf Manipulator\+Index\+Type}}]{index, }
+\item[{{\bf cmn\+Log\+Level}}]{log\+Level = {\ttfamily {\bf C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+L\+O\+D\+\_\+\+I\+N\+I\+T\+\_\+\+V\+E\+R\+B\+O\+S\+E}}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_intuitive_da_vinci_a5c70042fc47eb53118c1a9b489c8052b}
+\hypertarget{classmts_intuitive_da_vinci_aefc78edaad6191f59d720d0b1b344e89}{}\index{mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}!Manipulator\+Index\+To\+String@{Manipulator\+Index\+To\+String}}
+\index{Manipulator\+Index\+To\+String@{Manipulator\+Index\+To\+String}!mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}}
+\subsubsection[{Manipulator\+Index\+To\+String}]{\setlength{\rightskip}{0pt plus 5cm}static const std\+::string\& mts\+Intuitive\+Da\+Vinci\+::\+Manipulator\+Index\+To\+String (
+\begin{DoxyParamCaption}
+\item[{{\bf Manipulator\+Index\+Type}}]{manipulator\+Index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classmts_intuitive_da_vinci_aefc78edaad6191f59d720d0b1b344e89}
+Conversion from manipulator index to string \hypertarget{classmts_intuitive_da_vinci_a8b6c9c77958c2726d1e7ae46d0e34ee2}{}\index{mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}!Run@{Run}}
+\index{Run@{Run}!mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}}
+\subsubsection[{Run}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Intuitive\+Da\+Vinci\+::\+Run (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_intuitive_da_vinci_a8b6c9c77958c2726d1e7ae46d0e34ee2}
+Pure virtual method that gets overloaded to run the actual task. 
+
+Implements \hyperlink{classmts_task_a20e18c9479cb650792456c32ee689834}{mts\+Task}.
+
+\hypertarget{classmts_intuitive_da_vinci_ae00f71b53c921f5640b5d9612f493d7e}{}\index{mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}!Set\+Output\+Log\+File@{Set\+Output\+Log\+File}}
+\index{Set\+Output\+Log\+File@{Set\+Output\+Log\+File}!mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}}
+\subsubsection[{Set\+Output\+Log\+File}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Intuitive\+Da\+Vinci\+::\+Set\+Output\+Log\+File (
+\begin{DoxyParamCaption}
+\item[{const std\+::string}]{filename}
+\end{DoxyParamCaption}
+)}\label{classmts_intuitive_da_vinci_ae00f71b53c921f5640b5d9612f493d7e}
+Set filename to log the A\+P\+I to in the bin format \hypertarget{classmts_intuitive_da_vinci_aee33ea9b82f51a020f8be32fe9f07368}{}\index{mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}!Set\+Source\+Host@{Set\+Source\+Host}}
+\index{Set\+Source\+Host@{Set\+Source\+Host}!mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}}
+\subsubsection[{Set\+Source\+Host}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Intuitive\+Da\+Vinci\+::\+Set\+Source\+Host (
+\begin{DoxyParamCaption}
+\item[{const std\+::string}]{\+\_\+ipaddress, }
+\item[{const unsigned int}]{\+\_\+port = {\ttfamily 5002}, }
+\item[{const unsigned int}]{\+\_\+password = {\ttfamily 0x1111}}
+\end{DoxyParamCaption}
+)}\label{classmts_intuitive_da_vinci_aee33ea9b82f51a020f8be32fe9f07368}
+\hypertarget{classmts_intuitive_da_vinci_afbf403f4b19fb9151d442d509390a7f3}{}\index{mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}!Set\+Source\+Log\+File@{Set\+Source\+Log\+File}}
+\index{Set\+Source\+Log\+File@{Set\+Source\+Log\+File}!mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}}
+\subsubsection[{Set\+Source\+Log\+File}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Intuitive\+Da\+Vinci\+::\+Set\+Source\+Log\+File (
+\begin{DoxyParamCaption}
+\item[{const std\+::string}]{\+\_\+filename}
+\end{DoxyParamCaption}
+)}\label{classmts_intuitive_da_vinci_afbf403f4b19fb9151d442d509390a7f3}
+\hypertarget{classmts_intuitive_da_vinci_ac2945537490e01f890dd3496c21129ab}{}\index{mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}!Setup\+All\+Interfaces@{Setup\+All\+Interfaces}}
+\index{Setup\+All\+Interfaces@{Setup\+All\+Interfaces}!mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}}
+\subsubsection[{Setup\+All\+Interfaces}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Intuitive\+Da\+Vinci\+::\+Setup\+All\+Interfaces (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_intuitive_da_vinci_ac2945537490e01f890dd3496c21129ab}
+\hypertarget{classmts_intuitive_da_vinci_a8aeffb95c89efb86cd572f44017f7ae7}{}\index{mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}!Setup\+Arms\+Interfaces@{Setup\+Arms\+Interfaces}}
+\index{Setup\+Arms\+Interfaces@{Setup\+Arms\+Interfaces}!mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}}
+\subsubsection[{Setup\+Arms\+Interfaces}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Intuitive\+Da\+Vinci\+::\+Setup\+Arms\+Interfaces (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_intuitive_da_vinci_a8aeffb95c89efb86cd572f44017f7ae7}
+\hypertarget{classmts_intuitive_da_vinci_ad9912a22c4eea6d1bac867728e0c492f}{}\index{mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}!Setup\+Camera\+Interfaces@{Setup\+Camera\+Interfaces}}
+\index{Setup\+Camera\+Interfaces@{Setup\+Camera\+Interfaces}!mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}}
+\subsubsection[{Setup\+Camera\+Interfaces}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Intuitive\+Da\+Vinci\+::\+Setup\+Camera\+Interfaces (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_intuitive_da_vinci_ad9912a22c4eea6d1bac867728e0c492f}
+\hypertarget{classmts_intuitive_da_vinci_a5481bd6861ce379fa3d81a2c71812d89}{}\index{mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}!Setup\+Console\+Interfaces@{Setup\+Console\+Interfaces}}
+\index{Setup\+Console\+Interfaces@{Setup\+Console\+Interfaces}!mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}}
+\subsubsection[{Setup\+Console\+Interfaces}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Intuitive\+Da\+Vinci\+::\+Setup\+Console\+Interfaces (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_intuitive_da_vinci_a5481bd6861ce379fa3d81a2c71812d89}
+\hypertarget{classmts_intuitive_da_vinci_a054e0b8026c6b3dd5687a4fee483e90c}{}\index{mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}!Setup\+Event\+Interfaces@{Setup\+Event\+Interfaces}}
+\index{Setup\+Event\+Interfaces@{Setup\+Event\+Interfaces}!mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}}
+\subsubsection[{Setup\+Event\+Interfaces}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Intuitive\+Da\+Vinci\+::\+Setup\+Event\+Interfaces (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_intuitive_da_vinci_a054e0b8026c6b3dd5687a4fee483e90c}
+Setup all interfaces and populate them with commands and events \hypertarget{classmts_intuitive_da_vinci_acb63524cb2eb5b30b43316ab5afe03af}{}\index{mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}!Setup\+Masters\+Interfaces@{Setup\+Masters\+Interfaces}}
+\index{Setup\+Masters\+Interfaces@{Setup\+Masters\+Interfaces}!mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}}
+\subsubsection[{Setup\+Masters\+Interfaces}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Intuitive\+Da\+Vinci\+::\+Setup\+Masters\+Interfaces (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_intuitive_da_vinci_acb63524cb2eb5b30b43316ab5afe03af}
+\hypertarget{classmts_intuitive_da_vinci_acf772730a5e12199341cbf1a369e7fb9}{}\index{mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}!Setup\+Slaves\+Interfaces@{Setup\+Slaves\+Interfaces}}
+\index{Setup\+Slaves\+Interfaces@{Setup\+Slaves\+Interfaces}!mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}}
+\subsubsection[{Setup\+Slaves\+Interfaces}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Intuitive\+Da\+Vinci\+::\+Setup\+Slaves\+Interfaces (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_intuitive_da_vinci_acf772730a5e12199341cbf1a369e7fb9}
+\hypertarget{classmts_intuitive_da_vinci_a0c4255c252999d91d3d983e7c9e01e6f}{}\index{mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}!Start\+Logging@{Start\+Logging}}
+\index{Start\+Logging@{Start\+Logging}!mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}}
+\subsubsection[{Start\+Logging}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Intuitive\+Da\+Vinci\+::\+Start\+Logging (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classmts_intuitive_da_vinci_a0c4255c252999d91d3d983e7c9e01e6f}
+Start logging to bin file. \hypertarget{classmts_intuitive_da_vinci_a5f080d90e55a9ed84c21800f8f49dbce}{}\index{mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}!Start\+Stream@{Start\+Stream}}
+\index{Start\+Stream@{Start\+Stream}!mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}}
+\subsubsection[{Start\+Stream}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Intuitive\+Da\+Vinci\+::\+Start\+Stream (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_intuitive_da_vinci_a5f080d90e55a9ed84c21800f8f49dbce}
+\hypertarget{classmts_intuitive_da_vinci_a47328f5b6d6bfc477d9d53e1d829f144}{}\index{mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}!Startup@{Startup}}
+\index{Startup@{Startup}!mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}}
+\subsubsection[{Startup}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Intuitive\+Da\+Vinci\+::\+Startup (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_intuitive_da_vinci_a47328f5b6d6bfc477d9d53e1d829f144}
+Virtual method that gets overloaded, and is run before the component is started. 
+
+Reimplemented from \hyperlink{classmts_component_aaf28f0262b44eb6866e10089a02fa6e4}{mts\+Component}.
+
+\hypertarget{classmts_intuitive_da_vinci_a55c2ab4b4af7da54bc185149a1884795}{}\index{mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}!Stop\+Logging@{Stop\+Logging}}
+\index{Stop\+Logging@{Stop\+Logging}!mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}}
+\subsubsection[{Stop\+Logging}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Intuitive\+Da\+Vinci\+::\+Stop\+Logging (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classmts_intuitive_da_vinci_a55c2ab4b4af7da54bc185149a1884795}
+Stop logging to bin file. \hypertarget{classmts_intuitive_da_vinci_a220ac807e83874eff2f243ee881ab4c8}{}\index{mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}!Stop\+Stream@{Stop\+Stream}}
+\index{Stop\+Stream@{Stop\+Stream}!mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}}
+\subsubsection[{Stop\+Stream}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Intuitive\+Da\+Vinci\+::\+Stop\+Stream (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_intuitive_da_vinci_a220ac807e83874eff2f243ee881ab4c8}
+\hypertarget{classmts_intuitive_da_vinci_ad78560093b99be66a0f40502145f2c38}{}\index{mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}!Stream\+Callback@{Stream\+Callback}}
+\index{Stream\+Callback@{Stream\+Callback}!mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}}
+\subsubsection[{Stream\+Callback}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Intuitive\+Da\+Vinci\+::\+Stream\+Callback (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_intuitive_da_vinci_ad78560093b99be66a0f40502145f2c38}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classmts_intuitive_da_vinci_ac72f3d23f2cccf30b98148161cda75e5}{}\index{mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}!mts\+Intuitive\+Da\+Vinci\+Utilities\+::\+Event\+Callback\+Internal@{mts\+Intuitive\+Da\+Vinci\+Utilities\+::\+Event\+Callback\+Internal}}
+\index{mts\+Intuitive\+Da\+Vinci\+Utilities\+::\+Event\+Callback\+Internal@{mts\+Intuitive\+Da\+Vinci\+Utilities\+::\+Event\+Callback\+Internal}!mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}}
+\subsubsection[{mts\+Intuitive\+Da\+Vinci\+Utilities\+::\+Event\+Callback\+Internal}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf mts\+Intuitive\+Da\+Vinci\+Utilities\+::\+Event\+Callback\+Internal} (
+\begin{DoxyParamCaption}
+\item[{int}]{manipulator\+Id, }
+\item[{int}]{event\+Id, }
+\item[{int $\ast$}]{arguments, }
+\item[{void $\ast$}]{user\+Data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\label{classmts_intuitive_da_vinci_ac72f3d23f2cccf30b98148161cda75e5}
+\hypertarget{classmts_intuitive_da_vinci_ad910bb121d5d461c63287b041e77cae0}{}\index{mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}!mts\+Intuitive\+Da\+Vinci\+Utilities\+::\+Stream\+Callback\+Internal@{mts\+Intuitive\+Da\+Vinci\+Utilities\+::\+Stream\+Callback\+Internal}}
+\index{mts\+Intuitive\+Da\+Vinci\+Utilities\+::\+Stream\+Callback\+Internal@{mts\+Intuitive\+Da\+Vinci\+Utilities\+::\+Stream\+Callback\+Internal}!mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}}
+\subsubsection[{mts\+Intuitive\+Da\+Vinci\+Utilities\+::\+Stream\+Callback\+Internal}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf mts\+Intuitive\+Da\+Vinci\+Utilities\+::\+Stream\+Callback\+Internal} (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{user\+Data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\label{classmts_intuitive_da_vinci_ad910bb121d5d461c63287b041e77cae0}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classmts_intuitive_da_vinci_a66c7aafdf43dc2172bc4b7e7e880046a}{}\index{mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}!Arms@{Arms}}
+\index{Arms@{Arms}!mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}}
+\subsubsection[{Arms}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Arm\+Data}$\ast$ mts\+Intuitive\+Da\+Vinci\+::\+Arms\mbox{[}({\bf E\+C\+M1}-\/{\bf M\+T\+M\+L1})+1\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_intuitive_da_vinci_a66c7aafdf43dc2172bc4b7e7e880046a}
+Info for all arms, this container is the primary one \hypertarget{classmts_intuitive_da_vinci_a3b0838b5bce0e66ac94c4e9425f55001}{}\index{mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}!Camera\+Arms@{Camera\+Arms}}
+\index{Camera\+Arms@{Camera\+Arms}!mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}}
+\subsubsection[{Camera\+Arms}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Slave\+Arm\+Data}$\ast$ mts\+Intuitive\+Da\+Vinci\+::\+Camera\+Arms\mbox{[}({\bf E\+C\+M1}-\/{\bf E\+C\+M1})+1\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_intuitive_da_vinci_a3b0838b5bce0e66ac94c4e9425f55001}
+Camera arm E\+C\+M1 \hypertarget{classmts_intuitive_da_vinci_a92486c3be7e1f07ef72df2f00556a5c7}{}\index{mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}!Connected@{Connected}}
+\index{Connected@{Connected}!mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}}
+\subsubsection[{Connected}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Intuitive\+Da\+Vinci\+::\+Connected\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_intuitive_da_vinci_a92486c3be7e1f07ef72df2f00556a5c7}
+\hypertarget{classmts_intuitive_da_vinci_a653cc20fc11e9d3717a825fa1d4bebb7}{}\index{mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}!Console@{Console}}
+\index{Console@{Console}!mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}}
+\subsubsection[{Console}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Console\+Data} mts\+Intuitive\+Da\+Vinci\+::\+Console\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_intuitive_da_vinci_a653cc20fc11e9d3717a825fa1d4bebb7}
+Console data \hypertarget{classmts_intuitive_da_vinci_a54227f36bb8c45e2eac7c3e4eaf1d8ad}{}\index{mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}!Consoles@{Consoles}}
+\index{Consoles@{Consoles}!mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}}
+\subsubsection[{Consoles}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Console\+Data}$\ast$ mts\+Intuitive\+Da\+Vinci\+::\+Consoles\mbox{[}({\bf C\+O\+N\+S\+O\+L\+E2}-\/{\bf C\+O\+N\+S\+O\+L\+E1})+1\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_intuitive_da_vinci_a54227f36bb8c45e2eac7c3e4eaf1d8ad}
+\hypertarget{classmts_intuitive_da_vinci_adbe39e510898b80b04aac001722dc6fd}{}\index{mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}!Events@{Events}}
+\index{Events@{Events}!mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}}
+\subsubsection[{Events}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Event\+Data} mts\+Intuitive\+Da\+Vinci\+::\+Events\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_intuitive_da_vinci_adbe39e510898b80b04aac001722dc6fd}
+Event data \hypertarget{classmts_intuitive_da_vinci_aa5fb5d66628f24155b54300b3b3ed2b2}{}\index{mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}!I\+P\+Address@{I\+P\+Address}}
+\index{I\+P\+Address@{I\+P\+Address}!mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}}
+\subsubsection[{I\+P\+Address}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string mts\+Intuitive\+Da\+Vinci\+::\+I\+P\+Address\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_intuitive_da_vinci_aa5fb5d66628f24155b54300b3b3ed2b2}
+\hypertarget{classmts_intuitive_da_vinci_aca2410ba38bf0ad7fce1481f8701c1da}{}\index{mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}!Master\+Arms@{Master\+Arms}}
+\index{Master\+Arms@{Master\+Arms}!mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}}
+\subsubsection[{Master\+Arms}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Master\+Arm\+Data}$\ast$ mts\+Intuitive\+Da\+Vinci\+::\+Master\+Arms\mbox{[}({\bf M\+T\+M\+R2}-\/{\bf M\+T\+M\+L1})+1\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_intuitive_da_vinci_aca2410ba38bf0ad7fce1481f8701c1da}
+Info for all master arms, different way to access masters only \hypertarget{classmts_intuitive_da_vinci_a15ff830a81df5f1a4567de780f88e929}{}\index{mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}!Output\+Log\+File\+Name@{Output\+Log\+File\+Name}}
+\index{Output\+Log\+File\+Name@{Output\+Log\+File\+Name}!mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}}
+\subsubsection[{Output\+Log\+File\+Name}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string mts\+Intuitive\+Da\+Vinci\+::\+Output\+Log\+File\+Name\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_intuitive_da_vinci_a15ff830a81df5f1a4567de780f88e929}
+\hypertarget{classmts_intuitive_da_vinci_a91a1a1c9fd5b0e0717257aa00c29c687}{}\index{mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}!Password@{Password}}
+\index{Password@{Password}!mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}}
+\subsubsection[{Password}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int mts\+Intuitive\+Da\+Vinci\+::\+Password\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_intuitive_da_vinci_a91a1a1c9fd5b0e0717257aa00c29c687}
+\hypertarget{classmts_intuitive_da_vinci_a62f779011990ec7e02ddc7800d933e23}{}\index{mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}!Port@{Port}}
+\index{Port@{Port}!mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}}
+\subsubsection[{Port}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int mts\+Intuitive\+Da\+Vinci\+::\+Port\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_intuitive_da_vinci_a62f779011990ec7e02ddc7800d933e23}
+\hypertarget{classmts_intuitive_da_vinci_a1780b24f6582c60ff94f2e1d03ef7060}{}\index{mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}!Rate\+In\+Hz@{Rate\+In\+Hz}}
+\index{Rate\+In\+Hz@{Rate\+In\+Hz}!mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}}
+\subsubsection[{Rate\+In\+Hz}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int mts\+Intuitive\+Da\+Vinci\+::\+Rate\+In\+Hz\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_intuitive_da_vinci_a1780b24f6582c60ff94f2e1d03ef7060}
+\hypertarget{classmts_intuitive_da_vinci_ad974917d88b89bca109656a8e1ab7238}{}\index{mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}!Slave\+Arms@{Slave\+Arms}}
+\index{Slave\+Arms@{Slave\+Arms}!mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}}
+\subsubsection[{Slave\+Arms}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Slave\+Arm\+Data}$\ast$ mts\+Intuitive\+Da\+Vinci\+::\+Slave\+Arms\mbox{[}({\bf E\+C\+M1}-\/{\bf P\+S\+M1})+1\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_intuitive_da_vinci_ad974917d88b89bca109656a8e1ab7238}
+Info for all slave arms, including camera \hypertarget{classmts_intuitive_da_vinci_abd697468b4bd68e40664e73ca6af5692}{}\index{mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}!Source\+Log\+File\+Name@{Source\+Log\+File\+Name}}
+\index{Source\+Log\+File\+Name@{Source\+Log\+File\+Name}!mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}}
+\subsubsection[{Source\+Log\+File\+Name}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string mts\+Intuitive\+Da\+Vinci\+::\+Source\+Log\+File\+Name\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_intuitive_da_vinci_abd697468b4bd68e40664e73ca6af5692}
+\hypertarget{classmts_intuitive_da_vinci_a19a2398dbc1a8369da7295119fb8abbc}{}\index{mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}!Use\+Log\+File@{Use\+Log\+File}}
+\index{Use\+Log\+File@{Use\+Log\+File}!mts\+Intuitive\+Da\+Vinci@{mts\+Intuitive\+Da\+Vinci}}
+\subsubsection[{Use\+Log\+File}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Intuitive\+Da\+Vinci\+::\+Use\+Log\+File\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_intuitive_da_vinci_a19a2398dbc1a8369da7295119fb8abbc}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/saw\+Intuitive\+Da\+Vinci/include/saw\+Intuitive\+Da\+Vinci/\hyperlink{mts_intuitive_da_vinci_8h}{mts\+Intuitive\+Da\+Vinci.\+h}\end{DoxyCompactItemize}

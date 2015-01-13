@@ -1,0 +1,253 @@
+\hypertarget{vct_dynamic_matrix_8h}{}\section{/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Vector/vct\+Dynamic\+Matrix.h File Reference}
+\label{vct_dynamic_matrix_8h}\index{/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Vector/vct\+Dynamic\+Matrix.\+h@{/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Vector/vct\+Dynamic\+Matrix.\+h}}
+
+
+Declaration of \hyperlink{classvct_dynamic_matrix}{vct\+Dynamic\+Matrix}.  
+
+
+{\ttfamily \#include $<$cisst\+Vector/vct\+Dynamic\+Vector.\+h$>$}\\*
+{\ttfamily \#include $<$cisst\+Vector/vct\+Dynamic\+Matrix\+Base.\+h$>$}\\*
+{\ttfamily \#include $<$cisst\+Vector/vct\+Dynamic\+Matrix\+Ref.\+h$>$}\\*
+{\ttfamily \#include $<$cisst\+Vector/vct\+Dynamic\+Matrix\+Owner.\+h$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classvct_dynamic_matrix}{vct\+Dynamic\+Matrix$<$ \+\_\+element\+Type $>$}
+\begin{DoxyCompactList}\small\item\em A matrix object of dynamic size. \end{DoxyCompactList}\item 
+class \hyperlink{classvct_return_dynamic_matrix}{vct\+Return\+Dynamic\+Matrix$<$ \+\_\+element\+Type $>$}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{vct_dynamic_matrix_8h_abd3126ce855648aebf07cc61bd659ea6}{\+\_\+vct\+Dynamic\+Matrix\+\_\+h}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class \+\_\+matrix\+Owner\+Type1 , class \+\_\+matrix\+Owner\+Type2 , class \+\_\+element\+Type $>$ }\\\hyperlink{classvct_return_dynamic_matrix}{vct\+Return\+Dynamic\+Matrix}$<$ \+\_\+element\+Type $>$ \hyperlink{vct_dynamic_matrix_8h_a5b049ff2f9db001ca0f5c0e7b281fb5a}{operator$\ast$} (const \hyperlink{classvct_dynamic_const_matrix_base}{vct\+Dynamic\+Const\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type1, \+\_\+element\+Type $>$ \&input\+Matrix1, const \hyperlink{classvct_dynamic_const_matrix_base}{vct\+Dynamic\+Const\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type2, \+\_\+element\+Type $>$ \&input\+Matrix2)
+\item 
+{\footnotesize template$<$class \+\_\+matrix\+Owner\+Type , class \+\_\+vector\+Owner\+Type , class \+\_\+element\+Type $>$ }\\\hyperlink{classvct_return_dynamic_vector}{vct\+Return\+Dynamic\+Vector}$<$ \+\_\+element\+Type $>$ \hyperlink{vct_dynamic_matrix_8h_ab74de4d7ad542bfca06a96d8adc83794}{operator$\ast$} (const \hyperlink{classvct_dynamic_const_matrix_base}{vct\+Dynamic\+Const\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type, \+\_\+element\+Type $>$ \&input\+Matrix, const \hyperlink{classvct_dynamic_const_vector_base}{vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$ \&input\+Vector)
+\item 
+{\footnotesize template$<$class \+\_\+vector\+Owner\+Type , class \+\_\+matrix\+Owner\+Type , class \+\_\+element\+Type $>$ }\\\hyperlink{classvct_return_dynamic_vector}{vct\+Return\+Dynamic\+Vector}$<$ \+\_\+element\+Type $>$ \hyperlink{vct_dynamic_matrix_8h_a3538d3f986a0671b3374de9fa1096fee}{operator$\ast$} (const \hyperlink{classvct_dynamic_const_vector_base}{vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$ \&input\+Vector, const \hyperlink{classvct_dynamic_const_matrix_base}{vct\+Dynamic\+Const\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type, \+\_\+element\+Type $>$ \&input\+Matrix)
+\item 
+{\footnotesize template$<$class \+\_\+matrix\+Owner\+Type , class \+\_\+\+\_\+matrix\+Owner\+Type , class \+\_\+element\+Type , class \+\_\+element\+Operation\+Type $>$ }\\\hyperlink{classvct_return_dynamic_matrix}{vct\+Return\+Dynamic\+Matrix}$<$ bool $>$ \hyperlink{vct_dynamic_matrix_8h_af86be24d67eec5e6e3163e3065aaa089}{vct\+Dynamic\+Matrix\+Elementwise\+Compare\+Matrix} (const \hyperlink{classvct_dynamic_const_matrix_base}{vct\+Dynamic\+Const\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type, \+\_\+element\+Type $>$ \&matrix1, const \hyperlink{classvct_dynamic_const_matrix_base}{vct\+Dynamic\+Const\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type, \+\_\+element\+Type $>$ \&matrix2)
+\item 
+{\footnotesize template$<$class \+\_\+matrix\+Owner\+Type , class \+\_\+element\+Type , class \+\_\+element\+Operation\+Type $>$ }\\\hyperlink{classvct_return_dynamic_matrix}{vct\+Return\+Dynamic\+Matrix}$<$ bool $>$ \hyperlink{vct_dynamic_matrix_8h_a6f923b4cc763983003b14731e5b74311}{vct\+Dynamic\+Matrix\+Elementwise\+Compare\+Scalar} (const \hyperlink{classvct_dynamic_const_matrix_base}{vct\+Dynamic\+Const\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type, \+\_\+element\+Type $>$ \&matrix, const \+\_\+element\+Type \&scalar)
+\end{DoxyCompactItemize}
+\begin{Indent}{\bf Elementwise operations between dynamic matrices.}\par
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class \+\_\+matrix\+Owner\+Type1 , class \+\_\+matrix\+Owner\+Type2 , class \+\_\+element\+Type $>$ }\\\hyperlink{classvct_return_dynamic_matrix}{vct\+Return\+Dynamic\+Matrix}$<$ \+\_\+element\+Type $>$ \hyperlink{vct_dynamic_matrix_8h_a4ea1ceb18b57fd6c4d8dc6f8c2907254}{operator+} (const \hyperlink{classvct_dynamic_const_matrix_base}{vct\+Dynamic\+Const\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type1, \+\_\+element\+Type $>$ \&input\+Matrix1, const \hyperlink{classvct_dynamic_const_matrix_base}{vct\+Dynamic\+Const\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type2, \+\_\+element\+Type $>$ \&input\+Matrix2)
+\item 
+{\footnotesize template$<$class \+\_\+matrix\+Owner\+Type1 , class \+\_\+matrix\+Owner\+Type2 , class \+\_\+element\+Type $>$ }\\\hyperlink{classvct_return_dynamic_matrix}{vct\+Return\+Dynamic\+Matrix}$<$ \+\_\+element\+Type $>$ \hyperlink{vct_dynamic_matrix_8h_a73ac31d572f0150de5a0740949e5206f}{operator-\/} (const \hyperlink{classvct_dynamic_const_matrix_base}{vct\+Dynamic\+Const\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type1, \+\_\+element\+Type $>$ \&input\+Matrix1, const \hyperlink{classvct_dynamic_const_matrix_base}{vct\+Dynamic\+Const\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type2, \+\_\+element\+Type $>$ \&input\+Matrix2)
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Elementwise operations between a dynamic matrix and a}\par
+{\em scalar. }\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class \+\_\+matrix\+Owner\+Type , class \+\_\+element\+Type $>$ }\\\hyperlink{classvct_return_dynamic_matrix}{vct\+Return\+Dynamic\+Matrix}$<$ \+\_\+element\+Type $>$ \hyperlink{vct_dynamic_matrix_8h_acea727d0643b4e8cc121c2963f6dae1e}{operator+} (const \hyperlink{classvct_dynamic_const_matrix_base}{vct\+Dynamic\+Const\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type, \+\_\+element\+Type $>$ \&input\+Matrix, const \+\_\+element\+Type \&input\+Scalar)
+\item 
+{\footnotesize template$<$class \+\_\+matrix\+Owner\+Type , class \+\_\+element\+Type $>$ }\\\hyperlink{classvct_return_dynamic_matrix}{vct\+Return\+Dynamic\+Matrix}$<$ \+\_\+element\+Type $>$ \hyperlink{vct_dynamic_matrix_8h_a6375f4fc00e4aa60341cee7252c0ed99}{operator-\/} (const \hyperlink{classvct_dynamic_const_matrix_base}{vct\+Dynamic\+Const\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type, \+\_\+element\+Type $>$ \&input\+Matrix, const \+\_\+element\+Type \&input\+Scalar)
+\item 
+{\footnotesize template$<$class \+\_\+matrix\+Owner\+Type , class \+\_\+element\+Type $>$ }\\\hyperlink{classvct_return_dynamic_matrix}{vct\+Return\+Dynamic\+Matrix}$<$ \+\_\+element\+Type $>$ \hyperlink{vct_dynamic_matrix_8h_a34a1b53e4a8420dadc63b557fae122cd}{operator$\ast$} (const \hyperlink{classvct_dynamic_const_matrix_base}{vct\+Dynamic\+Const\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type, \+\_\+element\+Type $>$ \&input\+Matrix, const \+\_\+element\+Type \&input\+Scalar)
+\item 
+{\footnotesize template$<$class \+\_\+matrix\+Owner\+Type , class \+\_\+element\+Type $>$ }\\\hyperlink{classvct_return_dynamic_matrix}{vct\+Return\+Dynamic\+Matrix}$<$ \+\_\+element\+Type $>$ \hyperlink{vct_dynamic_matrix_8h_a9d32aa9c338888815b19d1522c226b78}{operator/} (const \hyperlink{classvct_dynamic_const_matrix_base}{vct\+Dynamic\+Const\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type, \+\_\+element\+Type $>$ \&input\+Matrix, const \+\_\+element\+Type \&input\+Scalar)
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Elementwise operations between a scalar and a dynamic}\par
+{\em matrix. }\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class \+\_\+matrix\+Owner\+Type , class \+\_\+element\+Type $>$ }\\\hyperlink{classvct_return_dynamic_matrix}{vct\+Return\+Dynamic\+Matrix}$<$ \+\_\+element\+Type $>$ \hyperlink{vct_dynamic_matrix_8h_af5dcd5efde9eeeb1cd3e8c0479d68477}{operator+} (const \+\_\+element\+Type \&input\+Scalar, const \hyperlink{classvct_dynamic_const_matrix_base}{vct\+Dynamic\+Const\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type, \+\_\+element\+Type $>$ \&input\+Matrix)
+\item 
+{\footnotesize template$<$class \+\_\+matrix\+Owner\+Type , class \+\_\+element\+Type $>$ }\\\hyperlink{classvct_return_dynamic_matrix}{vct\+Return\+Dynamic\+Matrix}$<$ \+\_\+element\+Type $>$ \hyperlink{vct_dynamic_matrix_8h_aaa3b760b584f5fbaedeea3a7b79408f1}{operator-\/} (const \+\_\+element\+Type \&input\+Scalar, const \hyperlink{classvct_dynamic_const_matrix_base}{vct\+Dynamic\+Const\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type, \+\_\+element\+Type $>$ \&input\+Matrix)
+\item 
+{\footnotesize template$<$class \+\_\+matrix\+Owner\+Type , class \+\_\+element\+Type $>$ }\\\hyperlink{classvct_return_dynamic_matrix}{vct\+Return\+Dynamic\+Matrix}$<$ \+\_\+element\+Type $>$ \hyperlink{vct_dynamic_matrix_8h_a9029d06db4b8d2bb7a79364fadde5a84}{operator$\ast$} (const \+\_\+element\+Type \&input\+Scalar, const \hyperlink{classvct_dynamic_const_matrix_base}{vct\+Dynamic\+Const\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type, \+\_\+element\+Type $>$ \&input\+Matrix)
+\item 
+{\footnotesize template$<$class \+\_\+matrix\+Owner\+Type , class \+\_\+element\+Type $>$ }\\\hyperlink{classvct_return_dynamic_matrix}{vct\+Return\+Dynamic\+Matrix}$<$ \+\_\+element\+Type $>$ \hyperlink{vct_dynamic_matrix_8h_ab39d1448b821811cd07ba11d034bdf22}{operator/} (const \+\_\+element\+Type \&input\+Scalar, const \hyperlink{classvct_dynamic_const_matrix_base}{vct\+Dynamic\+Const\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type, \+\_\+element\+Type $>$ \&input\+Matrix)
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Elementwise operations on a dynamic matrix.}\par
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class \+\_\+matrix\+Owner\+Type , class \+\_\+element\+Type $>$ }\\\hyperlink{classvct_return_dynamic_matrix}{vct\+Return\+Dynamic\+Matrix}$<$ \+\_\+element\+Type $>$ \hyperlink{vct_dynamic_matrix_8h_a950c49d6becc3181ac1bc84ec41d9d8d}{operator-\/} (const \hyperlink{classvct_dynamic_const_matrix_base}{vct\+Dynamic\+Const\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type, \+\_\+element\+Type $>$ \&input\+Matrix)
+\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\subsection{Detailed Description}
+Declaration of \hyperlink{classvct_dynamic_matrix}{vct\+Dynamic\+Matrix}. 
+
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{vct_dynamic_matrix_8h_abd3126ce855648aebf07cc61bd659ea6}{}\index{vct\+Dynamic\+Matrix.\+h@{vct\+Dynamic\+Matrix.\+h}!\+\_\+vct\+Dynamic\+Matrix\+\_\+h@{\+\_\+vct\+Dynamic\+Matrix\+\_\+h}}
+\index{\+\_\+vct\+Dynamic\+Matrix\+\_\+h@{\+\_\+vct\+Dynamic\+Matrix\+\_\+h}!vct\+Dynamic\+Matrix.\+h@{vct\+Dynamic\+Matrix.\+h}}
+\subsubsection[{\+\_\+vct\+Dynamic\+Matrix\+\_\+h}]{\setlength{\rightskip}{0pt plus 5cm}\#define \+\_\+vct\+Dynamic\+Matrix\+\_\+h}\label{vct_dynamic_matrix_8h_abd3126ce855648aebf07cc61bd659ea6}
+
+
+\subsection{Function Documentation}
+\hypertarget{vct_dynamic_matrix_8h_a34a1b53e4a8420dadc63b557fae122cd}{}\index{vct\+Dynamic\+Matrix.\+h@{vct\+Dynamic\+Matrix.\+h}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!vct\+Dynamic\+Matrix.\+h@{vct\+Dynamic\+Matrix.\+h}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+matrix\+Owner\+Type , class \+\_\+element\+Type $>$ {\bf vct\+Return\+Dynamic\+Matrix}$<$\+\_\+element\+Type$>$ operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Const\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type, \+\_\+element\+Type $>$ \&}]{input\+Matrix, }
+\item[{const \+\_\+element\+Type \&}]{input\+Scalar}
+\end{DoxyParamCaption}
+)}\label{vct_dynamic_matrix_8h_a34a1b53e4a8420dadc63b557fae122cd}
+\hypertarget{vct_dynamic_matrix_8h_a9029d06db4b8d2bb7a79364fadde5a84}{}\index{vct\+Dynamic\+Matrix.\+h@{vct\+Dynamic\+Matrix.\+h}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!vct\+Dynamic\+Matrix.\+h@{vct\+Dynamic\+Matrix.\+h}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+matrix\+Owner\+Type , class \+\_\+element\+Type $>$ {\bf vct\+Return\+Dynamic\+Matrix}$<$\+\_\+element\+Type$>$ operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{const \+\_\+element\+Type \&}]{input\+Scalar, }
+\item[{const {\bf vct\+Dynamic\+Const\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type, \+\_\+element\+Type $>$ \&}]{input\+Matrix}
+\end{DoxyParamCaption}
+)}\label{vct_dynamic_matrix_8h_a9029d06db4b8d2bb7a79364fadde5a84}
+\hypertarget{vct_dynamic_matrix_8h_a5b049ff2f9db001ca0f5c0e7b281fb5a}{}\index{vct\+Dynamic\+Matrix.\+h@{vct\+Dynamic\+Matrix.\+h}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!vct\+Dynamic\+Matrix.\+h@{vct\+Dynamic\+Matrix.\+h}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+matrix\+Owner\+Type1 , class \+\_\+matrix\+Owner\+Type2 , class \+\_\+element\+Type $>$ {\bf vct\+Return\+Dynamic\+Matrix}$<$\+\_\+element\+Type$>$ operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Const\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type1, \+\_\+element\+Type $>$ \&}]{input\+Matrix1, }
+\item[{const {\bf vct\+Dynamic\+Const\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type2, \+\_\+element\+Type $>$ \&}]{input\+Matrix2}
+\end{DoxyParamCaption}
+)}\label{vct_dynamic_matrix_8h_a5b049ff2f9db001ca0f5c0e7b281fb5a}
+\hypertarget{vct_dynamic_matrix_8h_ab74de4d7ad542bfca06a96d8adc83794}{}\index{vct\+Dynamic\+Matrix.\+h@{vct\+Dynamic\+Matrix.\+h}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!vct\+Dynamic\+Matrix.\+h@{vct\+Dynamic\+Matrix.\+h}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+matrix\+Owner\+Type , class \+\_\+vector\+Owner\+Type , class \+\_\+element\+Type $>$ {\bf vct\+Return\+Dynamic\+Vector}$<$\+\_\+element\+Type$>$ operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Const\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type, \+\_\+element\+Type $>$ \&}]{input\+Matrix, }
+\item[{const {\bf vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$ \&}]{input\+Vector}
+\end{DoxyParamCaption}
+)}\label{vct_dynamic_matrix_8h_ab74de4d7ad542bfca06a96d8adc83794}
+\hypertarget{vct_dynamic_matrix_8h_a3538d3f986a0671b3374de9fa1096fee}{}\index{vct\+Dynamic\+Matrix.\+h@{vct\+Dynamic\+Matrix.\+h}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!vct\+Dynamic\+Matrix.\+h@{vct\+Dynamic\+Matrix.\+h}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type , class \+\_\+matrix\+Owner\+Type , class \+\_\+element\+Type $>$ {\bf vct\+Return\+Dynamic\+Vector}$<$\+\_\+element\+Type$>$ operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$ \&}]{input\+Vector, }
+\item[{const {\bf vct\+Dynamic\+Const\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type, \+\_\+element\+Type $>$ \&}]{input\+Matrix}
+\end{DoxyParamCaption}
+)}\label{vct_dynamic_matrix_8h_a3538d3f986a0671b3374de9fa1096fee}
+\hypertarget{vct_dynamic_matrix_8h_a4ea1ceb18b57fd6c4d8dc6f8c2907254}{}\index{vct\+Dynamic\+Matrix.\+h@{vct\+Dynamic\+Matrix.\+h}!operator+@{operator+}}
+\index{operator+@{operator+}!vct\+Dynamic\+Matrix.\+h@{vct\+Dynamic\+Matrix.\+h}}
+\subsubsection[{operator+}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+matrix\+Owner\+Type1 , class \+\_\+matrix\+Owner\+Type2 , class \+\_\+element\+Type $>$ {\bf vct\+Return\+Dynamic\+Matrix}$<$\+\_\+element\+Type$>$ operator+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Const\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type1, \+\_\+element\+Type $>$ \&}]{input\+Matrix1, }
+\item[{const {\bf vct\+Dynamic\+Const\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type2, \+\_\+element\+Type $>$ \&}]{input\+Matrix2}
+\end{DoxyParamCaption}
+)}\label{vct_dynamic_matrix_8h_a4ea1ceb18b57fd6c4d8dc6f8c2907254}
+Operation between dynamic matrices (same size). 
+\begin{DoxyParams}{Parameters}
+{\em input\+Matrix1} & The first operand of the binary operation. \\
+\hline
+{\em input\+Matrix2} & The second operand of the binary operation. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The matrix result of $op(matrix1, matrix2)$. 
+\end{DoxyReturn}
+\hypertarget{vct_dynamic_matrix_8h_acea727d0643b4e8cc121c2963f6dae1e}{}\index{vct\+Dynamic\+Matrix.\+h@{vct\+Dynamic\+Matrix.\+h}!operator+@{operator+}}
+\index{operator+@{operator+}!vct\+Dynamic\+Matrix.\+h@{vct\+Dynamic\+Matrix.\+h}}
+\subsubsection[{operator+}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+matrix\+Owner\+Type , class \+\_\+element\+Type $>$ {\bf vct\+Return\+Dynamic\+Matrix}$<$\+\_\+element\+Type$>$ operator+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Const\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type, \+\_\+element\+Type $>$ \&}]{input\+Matrix, }
+\item[{const \+\_\+element\+Type \&}]{input\+Scalar}
+\end{DoxyParamCaption}
+)}\label{vct_dynamic_matrix_8h_acea727d0643b4e8cc121c2963f6dae1e}
+Operation between a dynamic matrix and a scalar. 
+\begin{DoxyParams}{Parameters}
+{\em input\+Matrix} & The first operand of the binary operation. \\
+\hline
+{\em input\+Scalar} & The second operand of the binary operation. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The matrix result of $op(matrix, scalar)$. 
+\end{DoxyReturn}
+\hypertarget{vct_dynamic_matrix_8h_af5dcd5efde9eeeb1cd3e8c0479d68477}{}\index{vct\+Dynamic\+Matrix.\+h@{vct\+Dynamic\+Matrix.\+h}!operator+@{operator+}}
+\index{operator+@{operator+}!vct\+Dynamic\+Matrix.\+h@{vct\+Dynamic\+Matrix.\+h}}
+\subsubsection[{operator+}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+matrix\+Owner\+Type , class \+\_\+element\+Type $>$ {\bf vct\+Return\+Dynamic\+Matrix}$<$\+\_\+element\+Type$>$ operator+ (
+\begin{DoxyParamCaption}
+\item[{const \+\_\+element\+Type \&}]{input\+Scalar, }
+\item[{const {\bf vct\+Dynamic\+Const\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type, \+\_\+element\+Type $>$ \&}]{input\+Matrix}
+\end{DoxyParamCaption}
+)}\label{vct_dynamic_matrix_8h_af5dcd5efde9eeeb1cd3e8c0479d68477}
+Operation between a scalar and a dynamic matrix. 
+\begin{DoxyParams}{Parameters}
+{\em input\+Scalar} & The first operand of the binary operation. \\
+\hline
+{\em input\+Matrix} & The second operand of the binary operation. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The matrix result of $op(scalar, matrix)$. 
+\end{DoxyReturn}
+\hypertarget{vct_dynamic_matrix_8h_a73ac31d572f0150de5a0740949e5206f}{}\index{vct\+Dynamic\+Matrix.\+h@{vct\+Dynamic\+Matrix.\+h}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!vct\+Dynamic\+Matrix.\+h@{vct\+Dynamic\+Matrix.\+h}}
+\subsubsection[{operator-\/}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+matrix\+Owner\+Type1 , class \+\_\+matrix\+Owner\+Type2 , class \+\_\+element\+Type $>$ {\bf vct\+Return\+Dynamic\+Matrix}$<$\+\_\+element\+Type$>$ operator-\/ (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Const\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type1, \+\_\+element\+Type $>$ \&}]{input\+Matrix1, }
+\item[{const {\bf vct\+Dynamic\+Const\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type2, \+\_\+element\+Type $>$ \&}]{input\+Matrix2}
+\end{DoxyParamCaption}
+)}\label{vct_dynamic_matrix_8h_a73ac31d572f0150de5a0740949e5206f}
+\hypertarget{vct_dynamic_matrix_8h_a6375f4fc00e4aa60341cee7252c0ed99}{}\index{vct\+Dynamic\+Matrix.\+h@{vct\+Dynamic\+Matrix.\+h}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!vct\+Dynamic\+Matrix.\+h@{vct\+Dynamic\+Matrix.\+h}}
+\subsubsection[{operator-\/}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+matrix\+Owner\+Type , class \+\_\+element\+Type $>$ {\bf vct\+Return\+Dynamic\+Matrix}$<$\+\_\+element\+Type$>$ operator-\/ (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Const\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type, \+\_\+element\+Type $>$ \&}]{input\+Matrix, }
+\item[{const \+\_\+element\+Type \&}]{input\+Scalar}
+\end{DoxyParamCaption}
+)}\label{vct_dynamic_matrix_8h_a6375f4fc00e4aa60341cee7252c0ed99}
+\hypertarget{vct_dynamic_matrix_8h_aaa3b760b584f5fbaedeea3a7b79408f1}{}\index{vct\+Dynamic\+Matrix.\+h@{vct\+Dynamic\+Matrix.\+h}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!vct\+Dynamic\+Matrix.\+h@{vct\+Dynamic\+Matrix.\+h}}
+\subsubsection[{operator-\/}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+matrix\+Owner\+Type , class \+\_\+element\+Type $>$ {\bf vct\+Return\+Dynamic\+Matrix}$<$\+\_\+element\+Type$>$ operator-\/ (
+\begin{DoxyParamCaption}
+\item[{const \+\_\+element\+Type \&}]{input\+Scalar, }
+\item[{const {\bf vct\+Dynamic\+Const\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type, \+\_\+element\+Type $>$ \&}]{input\+Matrix}
+\end{DoxyParamCaption}
+)}\label{vct_dynamic_matrix_8h_aaa3b760b584f5fbaedeea3a7b79408f1}
+\hypertarget{vct_dynamic_matrix_8h_a950c49d6becc3181ac1bc84ec41d9d8d}{}\index{vct\+Dynamic\+Matrix.\+h@{vct\+Dynamic\+Matrix.\+h}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!vct\+Dynamic\+Matrix.\+h@{vct\+Dynamic\+Matrix.\+h}}
+\subsubsection[{operator-\/}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+matrix\+Owner\+Type , class \+\_\+element\+Type $>$ {\bf vct\+Return\+Dynamic\+Matrix}$<$\+\_\+element\+Type$>$ operator-\/ (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Const\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type, \+\_\+element\+Type $>$ \&}]{input\+Matrix}
+\end{DoxyParamCaption}
+)}\label{vct_dynamic_matrix_8h_a950c49d6becc3181ac1bc84ec41d9d8d}
+Unary operation on a dynamic matrix. 
+\begin{DoxyParams}{Parameters}
+{\em input\+Matrix} & The operand of the unary operation \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The matrix result of $op(matrix)$. 
+\end{DoxyReturn}
+\hypertarget{vct_dynamic_matrix_8h_a9d32aa9c338888815b19d1522c226b78}{}\index{vct\+Dynamic\+Matrix.\+h@{vct\+Dynamic\+Matrix.\+h}!operator/@{operator/}}
+\index{operator/@{operator/}!vct\+Dynamic\+Matrix.\+h@{vct\+Dynamic\+Matrix.\+h}}
+\subsubsection[{operator/}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+matrix\+Owner\+Type , class \+\_\+element\+Type $>$ {\bf vct\+Return\+Dynamic\+Matrix}$<$\+\_\+element\+Type$>$ operator/ (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Const\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type, \+\_\+element\+Type $>$ \&}]{input\+Matrix, }
+\item[{const \+\_\+element\+Type \&}]{input\+Scalar}
+\end{DoxyParamCaption}
+)}\label{vct_dynamic_matrix_8h_a9d32aa9c338888815b19d1522c226b78}
+\hypertarget{vct_dynamic_matrix_8h_ab39d1448b821811cd07ba11d034bdf22}{}\index{vct\+Dynamic\+Matrix.\+h@{vct\+Dynamic\+Matrix.\+h}!operator/@{operator/}}
+\index{operator/@{operator/}!vct\+Dynamic\+Matrix.\+h@{vct\+Dynamic\+Matrix.\+h}}
+\subsubsection[{operator/}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+matrix\+Owner\+Type , class \+\_\+element\+Type $>$ {\bf vct\+Return\+Dynamic\+Matrix}$<$\+\_\+element\+Type$>$ operator/ (
+\begin{DoxyParamCaption}
+\item[{const \+\_\+element\+Type \&}]{input\+Scalar, }
+\item[{const {\bf vct\+Dynamic\+Const\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type, \+\_\+element\+Type $>$ \&}]{input\+Matrix}
+\end{DoxyParamCaption}
+)}\label{vct_dynamic_matrix_8h_ab39d1448b821811cd07ba11d034bdf22}
+\hypertarget{vct_dynamic_matrix_8h_af86be24d67eec5e6e3163e3065aaa089}{}\index{vct\+Dynamic\+Matrix.\+h@{vct\+Dynamic\+Matrix.\+h}!vct\+Dynamic\+Matrix\+Elementwise\+Compare\+Matrix@{vct\+Dynamic\+Matrix\+Elementwise\+Compare\+Matrix}}
+\index{vct\+Dynamic\+Matrix\+Elementwise\+Compare\+Matrix@{vct\+Dynamic\+Matrix\+Elementwise\+Compare\+Matrix}!vct\+Dynamic\+Matrix.\+h@{vct\+Dynamic\+Matrix.\+h}}
+\subsubsection[{vct\+Dynamic\+Matrix\+Elementwise\+Compare\+Matrix}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+matrix\+Owner\+Type , class \+\_\+\+\_\+matrix\+Owner\+Type , class \+\_\+element\+Type , class \+\_\+element\+Operation\+Type $>$ {\bf vct\+Return\+Dynamic\+Matrix}$<$bool$>$ vct\+Dynamic\+Matrix\+Elementwise\+Compare\+Matrix (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Const\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type, \+\_\+element\+Type $>$ \&}]{matrix1, }
+\item[{const {\bf vct\+Dynamic\+Const\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type, \+\_\+element\+Type $>$ \&}]{matrix2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{vct_dynamic_matrix_8h_af86be24d67eec5e6e3163e3065aaa089}
+\hypertarget{vct_dynamic_matrix_8h_a6f923b4cc763983003b14731e5b74311}{}\index{vct\+Dynamic\+Matrix.\+h@{vct\+Dynamic\+Matrix.\+h}!vct\+Dynamic\+Matrix\+Elementwise\+Compare\+Scalar@{vct\+Dynamic\+Matrix\+Elementwise\+Compare\+Scalar}}
+\index{vct\+Dynamic\+Matrix\+Elementwise\+Compare\+Scalar@{vct\+Dynamic\+Matrix\+Elementwise\+Compare\+Scalar}!vct\+Dynamic\+Matrix.\+h@{vct\+Dynamic\+Matrix.\+h}}
+\subsubsection[{vct\+Dynamic\+Matrix\+Elementwise\+Compare\+Scalar}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+matrix\+Owner\+Type , class \+\_\+element\+Type , class \+\_\+element\+Operation\+Type $>$ {\bf vct\+Return\+Dynamic\+Matrix}$<$bool$>$ vct\+Dynamic\+Matrix\+Elementwise\+Compare\+Scalar (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Const\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type, \+\_\+element\+Type $>$ \&}]{matrix, }
+\item[{const \+\_\+element\+Type \&}]{scalar}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{vct_dynamic_matrix_8h_a6f923b4cc763983003b14731e5b74311}

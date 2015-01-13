@@ -1,0 +1,109 @@
+\hypertarget{classvct_binary_operations}{}\section{vct\+Binary\+Operations$<$ \+\_\+output\+Type, \+\_\+input1\+Type, \+\_\+input2\+Type $>$ Class Template Reference}
+\label{classvct_binary_operations}\index{vct\+Binary\+Operations$<$ \+\_\+output\+Type, \+\_\+input1\+Type, \+\_\+input2\+Type $>$@{vct\+Binary\+Operations$<$ \+\_\+output\+Type, \+\_\+input1\+Type, \+\_\+input2\+Type $>$}}
+
+
+Define binary operations between objects as classes.  
+
+
+
+
+{\ttfamily \#include $<$vct\+Binary\+Operations.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classvct_binary_operations_1_1_addition}{Addition}
+\begin{DoxyCompactList}\small\item\em Returns the sum of the two Input\+Type object. \end{DoxyCompactList}\item 
+class \hyperlink{classvct_binary_operations_1_1_and}{And}
+\begin{DoxyCompactList}\small\item\em Logical \hyperlink{classvct_binary_operations_1_1_and}{And} operator between input1 and input2. \end{DoxyCompactList}\item 
+class \hyperlink{classvct_binary_operations_1_1_bound}{Bound}
+\begin{DoxyCompactList}\small\item\em Test if the first argument is bound by the second argument. \end{DoxyCompactList}\item 
+class \hyperlink{classvct_binary_operations_1_1_clip_in}{Clip\+In}
+\begin{DoxyCompactList}\small\item\em Return the -\/input2 in input1 is lesser than -\/input2, input2 if input 1 is greater than input2 and input1 otherwise. The operator doesn\textquotesingle{}t test if input2 is negative. \end{DoxyCompactList}\item 
+class \hyperlink{classvct_binary_operations_1_1_division}{Division}
+\begin{DoxyCompactList}\small\item\em Returns the ratio of the two Input\+Type object. \end{DoxyCompactList}\item 
+class \hyperlink{classvct_binary_operations_1_1_dot_product}{Dot\+Product}
+\begin{DoxyCompactList}\small\item\em Dot product. \end{DoxyCompactList}\item 
+class \hyperlink{classvct_binary_operations_1_1_equal}{Equal}
+\begin{DoxyCompactList}\small\item\em Test for equality between input1 and input2. \end{DoxyCompactList}\item 
+class \hyperlink{classvct_binary_operations_1_1_first_operand}{First\+Operand}
+\begin{DoxyCompactList}\small\item\em Return the first operand of (input1, input2), i.\+e., input1. \end{DoxyCompactList}\item 
+class \hyperlink{classvct_binary_operations_1_1_greater}{Greater}
+\begin{DoxyCompactList}\small\item\em Test if input1 is greater than input2. \end{DoxyCompactList}\item 
+class \hyperlink{classvct_binary_operations_1_1_greater_or_equal}{Greater\+Or\+Equal}
+\begin{DoxyCompactList}\small\item\em Test if input1 is greater than or equal to input2. \end{DoxyCompactList}\item 
+class \hyperlink{classvct_binary_operations_1_1_lesser}{Lesser}
+\begin{DoxyCompactList}\small\item\em Test if input1 is lesser than input2. \end{DoxyCompactList}\item 
+class \hyperlink{classvct_binary_operations_1_1_lesser_or_equal}{Lesser\+Or\+Equal}
+\begin{DoxyCompactList}\small\item\em Test if input1 is lesser than or equal to input2. \end{DoxyCompactList}\item 
+class \hyperlink{classvct_binary_operations_1_1_maximum}{Maximum}
+\begin{DoxyCompactList}\small\item\em Return the greater of (input1, input2). \end{DoxyCompactList}\item 
+class \hyperlink{classvct_binary_operations_1_1_minimum}{Minimum}
+\begin{DoxyCompactList}\small\item\em Return the lesser of (input1, input2). \end{DoxyCompactList}\item 
+class \hyperlink{classvct_binary_operations_1_1_multiplication}{Multiplication}
+\begin{DoxyCompactList}\small\item\em Returns the product of the two Input\+Type object. \end{DoxyCompactList}\item 
+class \hyperlink{classvct_binary_operations_1_1_not_equal}{Not\+Equal}
+\begin{DoxyCompactList}\small\item\em Test for non equality between input1 and input2. \end{DoxyCompactList}\item 
+class \hyperlink{classvct_binary_operations_1_1_or}{Or}
+\begin{DoxyCompactList}\small\item\em Logical \hyperlink{classvct_binary_operations_1_1_or}{Or} operator between input1 and input2. \end{DoxyCompactList}\item 
+class \hyperlink{classvct_binary_operations_1_1_second_operand}{Second\+Operand}
+\begin{DoxyCompactList}\small\item\em Return the second operand of (input1, input2), i.\+e., input2. \end{DoxyCompactList}\item 
+class \hyperlink{classvct_binary_operations_1_1_subtraction}{Subtraction}
+\begin{DoxyCompactList}\small\item\em Returns the difference of the two Input\+Type object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \+\_\+output\+Type \hyperlink{classvct_binary_operations_afbfa2d453460e6ab5b67c26e2d3fc4b1}{Output\+Type}
+\item 
+typedef \+\_\+input1\+Type \hyperlink{classvct_binary_operations_a5e56a66a012d6a28c539a08a0021c45e}{Input1\+Type}
+\item 
+typedef \+\_\+input2\+Type \hyperlink{classvct_binary_operations_a929119af557a04a16b4d854981e49e1b}{Input2\+Type}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class \+\_\+output\+Type, class \+\_\+input1\+Type = \+\_\+output\+Type, class \+\_\+input2\+Type = \+\_\+output\+Type$>$class vct\+Binary\+Operations$<$ \+\_\+output\+Type, \+\_\+input1\+Type, \+\_\+input2\+Type $>$}
+
+Define binary operations between objects as classes. 
+
+Class \hyperlink{classvct_binary_operations}{vct\+Binary\+Operations} is an envelope that wraps binary operations between objects as classes. Binary\+Operations defines internal classes such as \hyperlink{classvct_binary_operations_1_1_addition}{Addition}, \hyperlink{classvct_binary_operations_1_1_subtraction}{Subtraction}, etc., and each of the internal classes has one static function named Operate(), which wraps the corresponding operation. The signature of a typical Operate() is
+
+
+\begin{DoxyPre}
+static inline OutputType Operate(const Input1Type & input1, const Input2Type & input2)
+\end{DoxyPre}
+
+
+Where Output\+Type, Input1\+Type, Input2\+Type are the types of the result and the two operands.
+
+By abstracting very simple operations as inline functions, we can plug the Binary\+Operations internal classes into templated vector operation engines. See an example of such engine in \hyperlink{vct_fixed_size_vector_recursive_engines_8h}{vct\+Fixed\+Size\+Vector\+Recursive\+Engines.\+h} , and an example of plugging an operation into the engine in vct\+Fixed\+Size\+Vector\+Operations.\+h .
+
+
+\begin{DoxyParams}{Parameters}
+{\em output\+Type} & the type of the result \\
+\hline
+{\em input1\+Type} & the type of the first (left-\/side) operand \\
+\hline
+{\em input2\+Type} & the type of the second (right-\/side) operand)\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classvct_binary_operations_1_1_addition}{Addition} \hyperlink{classvct_binary_operations_1_1_subtraction}{Subtraction} \hyperlink{classvct_binary_operations_1_1_multiplication}{Multiplication} \hyperlink{classvct_binary_operations_1_1_division}{Division} \hyperlink{classvct_binary_operations_1_1_first_operand}{First\+Operand} \hyperlink{classvct_binary_operations_1_1_second_operand}{Second\+Operand} \hyperlink{classvct_binary_operations_1_1_maximum}{Maximum} \hyperlink{classvct_binary_operations_1_1_minimum}{Minimum} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classvct_binary_operations_a5e56a66a012d6a28c539a08a0021c45e}{}\index{vct\+Binary\+Operations@{vct\+Binary\+Operations}!Input1\+Type@{Input1\+Type}}
+\index{Input1\+Type@{Input1\+Type}!vct\+Binary\+Operations@{vct\+Binary\+Operations}}
+\subsubsection[{Input1\+Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+output\+Type , class \+\_\+input1\+Type  = \+\_\+output\+Type, class \+\_\+input2\+Type  = \+\_\+output\+Type$>$ typedef \+\_\+input1\+Type {\bf vct\+Binary\+Operations}$<$ \+\_\+output\+Type, \+\_\+input1\+Type, \+\_\+input2\+Type $>$\+::{\bf Input1\+Type}}\label{classvct_binary_operations_a5e56a66a012d6a28c539a08a0021c45e}
+\hypertarget{classvct_binary_operations_a929119af557a04a16b4d854981e49e1b}{}\index{vct\+Binary\+Operations@{vct\+Binary\+Operations}!Input2\+Type@{Input2\+Type}}
+\index{Input2\+Type@{Input2\+Type}!vct\+Binary\+Operations@{vct\+Binary\+Operations}}
+\subsubsection[{Input2\+Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+output\+Type , class \+\_\+input1\+Type  = \+\_\+output\+Type, class \+\_\+input2\+Type  = \+\_\+output\+Type$>$ typedef \+\_\+input2\+Type {\bf vct\+Binary\+Operations}$<$ \+\_\+output\+Type, \+\_\+input1\+Type, \+\_\+input2\+Type $>$\+::{\bf Input2\+Type}}\label{classvct_binary_operations_a929119af557a04a16b4d854981e49e1b}
+\hypertarget{classvct_binary_operations_afbfa2d453460e6ab5b67c26e2d3fc4b1}{}\index{vct\+Binary\+Operations@{vct\+Binary\+Operations}!Output\+Type@{Output\+Type}}
+\index{Output\+Type@{Output\+Type}!vct\+Binary\+Operations@{vct\+Binary\+Operations}}
+\subsubsection[{Output\+Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+output\+Type , class \+\_\+input1\+Type  = \+\_\+output\+Type, class \+\_\+input2\+Type  = \+\_\+output\+Type$>$ typedef \+\_\+output\+Type {\bf vct\+Binary\+Operations}$<$ \+\_\+output\+Type, \+\_\+input1\+Type, \+\_\+input2\+Type $>$\+::{\bf Output\+Type}}\label{classvct_binary_operations_afbfa2d453460e6ab5b67c26e2d3fc4b1}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Vector/\hyperlink{vct_binary_operations_8h}{vct\+Binary\+Operations.\+h}\end{DoxyCompactItemize}

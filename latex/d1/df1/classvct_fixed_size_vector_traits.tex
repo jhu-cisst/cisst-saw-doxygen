@@ -1,0 +1,101 @@
+\hypertarget{classvct_fixed_size_vector_traits}{}\section{vct\+Fixed\+Size\+Vector\+Traits$<$ \+\_\+element\+Type, \+\_\+size, \+\_\+stride $>$ Class Template Reference}
+\label{classvct_fixed_size_vector_traits}\index{vct\+Fixed\+Size\+Vector\+Traits$<$ \+\_\+element\+Type, \+\_\+size, \+\_\+stride $>$@{vct\+Fixed\+Size\+Vector\+Traits$<$ \+\_\+element\+Type, \+\_\+size, \+\_\+stride $>$}}
+
+
+Define common container related types based on the properties of a fixed size container.  
+
+
+
+
+{\ttfamily \#include $<$vct\+Fixed\+Size\+Vector\+Traits.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \hyperlink{classvct_fixed_size_vector_traits_a47888b1140c58261aa5df8f3440b527eac93e9bcd3ebe92f3bc7d9f34e8a47b94}{S\+I\+Z\+E} = \+\_\+size
+ \}
+\item 
+enum \{ \hyperlink{classvct_fixed_size_vector_traits_ac698cfb1928dc4e54893e2cb1f658afba4be4dfff5fff04a513ed92c80f0201e9}{S\+T\+R\+I\+D\+E} = \+\_\+stride
+ \}
+\item 
+typedef \hyperlink{classvct_fixed_stride_vector_iterator}{vct\+Fixed\+Stride\+Vector\+Iterator}$<$ \+\_\+element\+Type, \+\_\+stride $>$ \hyperlink{classvct_fixed_size_vector_traits_a4c4cff693ac7f81edfb240a208506309}{iterator}
+\item 
+typedef \hyperlink{classvct_fixed_stride_vector_const_iterator}{vct\+Fixed\+Stride\+Vector\+Const\+Iterator}$<$ \+\_\+element\+Type, \+\_\+stride $>$ \hyperlink{classvct_fixed_size_vector_traits_a9c7e38590e4a27350095e89a84dc0d09}{const\+\_\+iterator}
+\item 
+typedef \hyperlink{classvct_fixed_stride_vector_iterator}{vct\+Fixed\+Stride\+Vector\+Iterator}$<$ \+\_\+element\+Type,-\/\+\_\+stride $>$ \hyperlink{classvct_fixed_size_vector_traits_a46a61657ee7bece7277e0b59c4e0ea41}{reverse\+\_\+iterator}
+\item 
+typedef \hyperlink{classvct_fixed_stride_vector_const_iterator}{vct\+Fixed\+Stride\+Vector\+Const\+Iterator}$<$ \+\_\+element\+Type,-\/\+\_\+stride $>$ \hyperlink{classvct_fixed_size_vector_traits_a66365350e5fae26c9cf29a3ce0bb4a60}{const\+\_\+reverse\+\_\+iterator}
+\item 
+typedef value\+\_\+type \hyperlink{classvct_fixed_size_vector_traits_ab86355023bee9fbca9ee14640c6b7f4e}{array}\mbox{[}\hyperlink{classvct_fixed_size_vector_traits_a47888b1140c58261aa5df8f3440b527eac93e9bcd3ebe92f3bc7d9f34e8a47b94}{S\+I\+Z\+E}\mbox{]}
+\item 
+typedef const value\+\_\+type \hyperlink{classvct_fixed_size_vector_traits_acb808c545eef4de1bdcd7b8c4f71b1ce}{const\+\_\+array}\mbox{[}\hyperlink{classvct_fixed_size_vector_traits_a47888b1140c58261aa5df8f3440b527eac93e9bcd3ebe92f3bc7d9f34e8a47b94}{S\+I\+Z\+E}\mbox{]}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classvct_fixed_size_vector_traits_a20cd9e1a643c4047776b3720eff1a722}{V\+C\+T\+\_\+\+C\+O\+N\+T\+A\+I\+N\+E\+R\+\_\+\+T\+R\+A\+I\+T\+S\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+S} (\+\_\+element\+Type)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class \+\_\+element\+Type, vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride$>$class vct\+Fixed\+Size\+Vector\+Traits$<$ \+\_\+element\+Type, \+\_\+size, \+\_\+stride $>$}
+
+Define common container related types based on the properties of a fixed size container. 
+
+The types are declared according to the S\+T\+L requirements for the types declared by a container object. This class is used as a trait to declare the actual containers.
+
+In addition to the S\+T\+L required types, we declare a few more types for completeness. 
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classvct_fixed_size_vector_traits_ab86355023bee9fbca9ee14640c6b7f4e}{}\index{vct\+Fixed\+Size\+Vector\+Traits@{vct\+Fixed\+Size\+Vector\+Traits}!array@{array}}
+\index{array@{array}!vct\+Fixed\+Size\+Vector\+Traits@{vct\+Fixed\+Size\+Vector\+Traits}}
+\subsubsection[{array}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type , vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride$>$ typedef value\+\_\+type {\bf vct\+Fixed\+Size\+Vector\+Traits}$<$ \+\_\+element\+Type, \+\_\+size, \+\_\+stride $>$\+::array\mbox{[}{\bf S\+I\+Z\+E}\mbox{]}}\label{classvct_fixed_size_vector_traits_ab86355023bee9fbca9ee14640c6b7f4e}
+Declared for completeness. \hypertarget{classvct_fixed_size_vector_traits_acb808c545eef4de1bdcd7b8c4f71b1ce}{}\index{vct\+Fixed\+Size\+Vector\+Traits@{vct\+Fixed\+Size\+Vector\+Traits}!const\+\_\+array@{const\+\_\+array}}
+\index{const\+\_\+array@{const\+\_\+array}!vct\+Fixed\+Size\+Vector\+Traits@{vct\+Fixed\+Size\+Vector\+Traits}}
+\subsubsection[{const\+\_\+array}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type , vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride$>$ typedef const value\+\_\+type {\bf vct\+Fixed\+Size\+Vector\+Traits}$<$ \+\_\+element\+Type, \+\_\+size, \+\_\+stride $>$\+::const\+\_\+array\mbox{[}{\bf S\+I\+Z\+E}\mbox{]}}\label{classvct_fixed_size_vector_traits_acb808c545eef4de1bdcd7b8c4f71b1ce}
+Declared for completeness. \hypertarget{classvct_fixed_size_vector_traits_a9c7e38590e4a27350095e89a84dc0d09}{}\index{vct\+Fixed\+Size\+Vector\+Traits@{vct\+Fixed\+Size\+Vector\+Traits}!const\+\_\+iterator@{const\+\_\+iterator}}
+\index{const\+\_\+iterator@{const\+\_\+iterator}!vct\+Fixed\+Size\+Vector\+Traits@{vct\+Fixed\+Size\+Vector\+Traits}}
+\subsubsection[{const\+\_\+iterator}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type , vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride$>$ typedef {\bf vct\+Fixed\+Stride\+Vector\+Const\+Iterator}$<$\+\_\+element\+Type, \+\_\+stride$>$ {\bf vct\+Fixed\+Size\+Vector\+Traits}$<$ \+\_\+element\+Type, \+\_\+size, \+\_\+stride $>$\+::{\bf const\+\_\+iterator}}\label{classvct_fixed_size_vector_traits_a9c7e38590e4a27350095e89a84dc0d09}
+Const iterator, follows the S\+T\+L naming convention. \hypertarget{classvct_fixed_size_vector_traits_a66365350e5fae26c9cf29a3ce0bb4a60}{}\index{vct\+Fixed\+Size\+Vector\+Traits@{vct\+Fixed\+Size\+Vector\+Traits}!const\+\_\+reverse\+\_\+iterator@{const\+\_\+reverse\+\_\+iterator}}
+\index{const\+\_\+reverse\+\_\+iterator@{const\+\_\+reverse\+\_\+iterator}!vct\+Fixed\+Size\+Vector\+Traits@{vct\+Fixed\+Size\+Vector\+Traits}}
+\subsubsection[{const\+\_\+reverse\+\_\+iterator}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type , vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride$>$ typedef {\bf vct\+Fixed\+Stride\+Vector\+Const\+Iterator}$<$\+\_\+element\+Type, -\/\+\_\+stride$>$ {\bf vct\+Fixed\+Size\+Vector\+Traits}$<$ \+\_\+element\+Type, \+\_\+size, \+\_\+stride $>$\+::{\bf const\+\_\+reverse\+\_\+iterator}}\label{classvct_fixed_size_vector_traits_a66365350e5fae26c9cf29a3ce0bb4a60}
+Const reverse iterator, follows the S\+T\+L naming convention. \hypertarget{classvct_fixed_size_vector_traits_a4c4cff693ac7f81edfb240a208506309}{}\index{vct\+Fixed\+Size\+Vector\+Traits@{vct\+Fixed\+Size\+Vector\+Traits}!iterator@{iterator}}
+\index{iterator@{iterator}!vct\+Fixed\+Size\+Vector\+Traits@{vct\+Fixed\+Size\+Vector\+Traits}}
+\subsubsection[{iterator}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type , vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride$>$ typedef {\bf vct\+Fixed\+Stride\+Vector\+Iterator}$<$\+\_\+element\+Type, \+\_\+stride$>$ {\bf vct\+Fixed\+Size\+Vector\+Traits}$<$ \+\_\+element\+Type, \+\_\+size, \+\_\+stride $>$\+::{\bf iterator}}\label{classvct_fixed_size_vector_traits_a4c4cff693ac7f81edfb240a208506309}
+Iterator, follows the S\+T\+L naming convention. \hypertarget{classvct_fixed_size_vector_traits_a46a61657ee7bece7277e0b59c4e0ea41}{}\index{vct\+Fixed\+Size\+Vector\+Traits@{vct\+Fixed\+Size\+Vector\+Traits}!reverse\+\_\+iterator@{reverse\+\_\+iterator}}
+\index{reverse\+\_\+iterator@{reverse\+\_\+iterator}!vct\+Fixed\+Size\+Vector\+Traits@{vct\+Fixed\+Size\+Vector\+Traits}}
+\subsubsection[{reverse\+\_\+iterator}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type , vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride$>$ typedef {\bf vct\+Fixed\+Stride\+Vector\+Iterator}$<$\+\_\+element\+Type, -\/\+\_\+stride$>$ {\bf vct\+Fixed\+Size\+Vector\+Traits}$<$ \+\_\+element\+Type, \+\_\+size, \+\_\+stride $>$\+::{\bf reverse\+\_\+iterator}}\label{classvct_fixed_size_vector_traits_a46a61657ee7bece7277e0b59c4e0ea41}
+Reverse iterator, follows the S\+T\+L naming convention. 
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classvct_fixed_size_vector_traits_a47888b1140c58261aa5df8f3440b527e}{}\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type , vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride$>$ anonymous enum}\label{classvct_fixed_size_vector_traits_a47888b1140c58261aa5df8f3440b527e}
+Declared to enable inference of the size of the container. \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{S\+I\+Z\+E@{S\+I\+Z\+E}!vct\+Fixed\+Size\+Vector\+Traits@{vct\+Fixed\+Size\+Vector\+Traits}}\index{vct\+Fixed\+Size\+Vector\+Traits@{vct\+Fixed\+Size\+Vector\+Traits}!S\+I\+Z\+E@{S\+I\+Z\+E}}\item[{\em 
+\hypertarget{classvct_fixed_size_vector_traits_a47888b1140c58261aa5df8f3440b527eac93e9bcd3ebe92f3bc7d9f34e8a47b94}{}S\+I\+Z\+E\label{classvct_fixed_size_vector_traits_a47888b1140c58261aa5df8f3440b527eac93e9bcd3ebe92f3bc7d9f34e8a47b94}
+}]\end{description}
+\end{Desc}
+\hypertarget{classvct_fixed_size_vector_traits_ac698cfb1928dc4e54893e2cb1f658afb}{}\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type , vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride$>$ anonymous enum}\label{classvct_fixed_size_vector_traits_ac698cfb1928dc4e54893e2cb1f658afb}
+Declared to enable inference of the stride of the container. \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{S\+T\+R\+I\+D\+E@{S\+T\+R\+I\+D\+E}!vct\+Fixed\+Size\+Vector\+Traits@{vct\+Fixed\+Size\+Vector\+Traits}}\index{vct\+Fixed\+Size\+Vector\+Traits@{vct\+Fixed\+Size\+Vector\+Traits}!S\+T\+R\+I\+D\+E@{S\+T\+R\+I\+D\+E}}\item[{\em 
+\hypertarget{classvct_fixed_size_vector_traits_ac698cfb1928dc4e54893e2cb1f658afba4be4dfff5fff04a513ed92c80f0201e9}{}S\+T\+R\+I\+D\+E\label{classvct_fixed_size_vector_traits_ac698cfb1928dc4e54893e2cb1f658afba4be4dfff5fff04a513ed92c80f0201e9}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classvct_fixed_size_vector_traits_a20cd9e1a643c4047776b3720eff1a722}{}\index{vct\+Fixed\+Size\+Vector\+Traits@{vct\+Fixed\+Size\+Vector\+Traits}!V\+C\+T\+\_\+\+C\+O\+N\+T\+A\+I\+N\+E\+R\+\_\+\+T\+R\+A\+I\+T\+S\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+S@{V\+C\+T\+\_\+\+C\+O\+N\+T\+A\+I\+N\+E\+R\+\_\+\+T\+R\+A\+I\+T\+S\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+S}}
+\index{V\+C\+T\+\_\+\+C\+O\+N\+T\+A\+I\+N\+E\+R\+\_\+\+T\+R\+A\+I\+T\+S\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+S@{V\+C\+T\+\_\+\+C\+O\+N\+T\+A\+I\+N\+E\+R\+\_\+\+T\+R\+A\+I\+T\+S\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+S}!vct\+Fixed\+Size\+Vector\+Traits@{vct\+Fixed\+Size\+Vector\+Traits}}
+\subsubsection[{V\+C\+T\+\_\+\+C\+O\+N\+T\+A\+I\+N\+E\+R\+\_\+\+T\+R\+A\+I\+T\+S\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+S}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type , vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride$>$ {\bf vct\+Fixed\+Size\+Vector\+Traits}$<$ \+\_\+element\+Type, \+\_\+size, \+\_\+stride $>$\+::V\+C\+T\+\_\+\+C\+O\+N\+T\+A\+I\+N\+E\+R\+\_\+\+T\+R\+A\+I\+T\+S\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+S (
+\begin{DoxyParamCaption}
+\item[{\+\_\+element\+Type}]{}
+\end{DoxyParamCaption}
+)}\label{classvct_fixed_size_vector_traits_a20cd9e1a643c4047776b3720eff1a722}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Vector/\hyperlink{vct_fixed_size_vector_traits_8h}{vct\+Fixed\+Size\+Vector\+Traits.\+h}\end{DoxyCompactItemize}

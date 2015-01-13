@@ -1,0 +1,450 @@
+\hypertarget{classnmr_polynomial_term_power_index}{}\section{nmr\+Polynomial\+Term\+Power\+Index Class Reference}
+\label{classnmr_polynomial_term_power_index}\index{nmr\+Polynomial\+Term\+Power\+Index@{nmr\+Polynomial\+Term\+Power\+Index}}
+
+
+Represents the power index of a single term in a multi-\/variable polynomial.  
+
+
+
+
+{\ttfamily \#include $<$nmr\+Polynomial\+Term\+Power\+Index.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef int \hyperlink{classnmr_polynomial_term_power_index_ac982d5f82c3a95968e92d54c92cbc3e0}{Variable\+Index\+Type}
+\item 
+typedef int \hyperlink{classnmr_polynomial_term_power_index_a2eec01c3a2c3f56f47982ceffd8e36ed}{Power\+Type}
+\item 
+typedef unsigned long \hyperlink{classnmr_polynomial_term_power_index_a09f482da776cfb829e26ad1fb381ab94}{Multinomial\+Coefficient\+Type}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classnmr_polynomial_term_power_index_a228f57fb006939574201fda8ca3237c3}{nmr\+Polynomial\+Term\+Power\+Index} (\hyperlink{classnmr_polynomial_term_power_index_ac982d5f82c3a95968e92d54c92cbc3e0}{Variable\+Index\+Type} num\+Variables=1, \hyperlink{classnmr_polynomial_term_power_index_a2eec01c3a2c3f56f47982ceffd8e36ed}{Power\+Type} min\+Degree=0, \hyperlink{classnmr_polynomial_term_power_index_a2eec01c3a2c3f56f47982ceffd8e36ed}{Power\+Type} max\+Degree=4)
+\item 
+\hyperlink{classnmr_polynomial_term_power_index_aa4a8ecd01e40b76a4fd20d58773ac375}{nmr\+Polynomial\+Term\+Power\+Index} (const \hyperlink{classnmr_polynomial_base}{nmr\+Polynomial\+Base} \&p)
+\item 
+int \hyperlink{classnmr_polynomial_term_power_index_ad74e09241ad425d80c7c4ccbe9e8d7dd}{Get\+Degree} () const 
+\item 
+\hyperlink{classnmr_polynomial_term_power_index_a2eec01c3a2c3f56f47982ceffd8e36ed}{Power\+Type} \hyperlink{classnmr_polynomial_term_power_index_ad8e4cb46dab70a93b56c4ce42f9eded1}{Get\+Max\+Degree} () const 
+\item 
+\hyperlink{classnmr_polynomial_term_power_index_a2eec01c3a2c3f56f47982ceffd8e36ed}{Power\+Type} \hyperlink{classnmr_polynomial_term_power_index_a0474a1274dbedfe5ff5b4830f4e6c47f}{Get\+Min\+Degree} () const 
+\item 
+void \hyperlink{classnmr_polynomial_term_power_index_a7258a386411761862e9ab455cc107e23}{Set\+Max\+Degree} (\hyperlink{classnmr_polynomial_term_power_index_a2eec01c3a2c3f56f47982ceffd8e36ed}{Power\+Type} new\+Max)  throw (std\+::runtime\+\_\+error)
+\item 
+void \hyperlink{classnmr_polynomial_term_power_index_a484a45cda96657835b5137b18c13ae0b}{Set\+Min\+Degree} (\hyperlink{classnmr_polynomial_term_power_index_a2eec01c3a2c3f56f47982ceffd8e36ed}{Power\+Type} new\+Min)  throw (std\+::runtime\+\_\+error)
+\item 
+bool \hyperlink{classnmr_polynomial_term_power_index_afe6a8231affbcb38890f7e33cabdb59c}{Is\+Valid} () const 
+\item 
+\hyperlink{classnmr_polynomial_term_power_index_ac982d5f82c3a95968e92d54c92cbc3e0}{Variable\+Index\+Type} \hyperlink{classnmr_polynomial_term_power_index_a7b3cc89f51a30def066491115af27737}{Get\+Num\+Variables} () const 
+\item 
+\hyperlink{classnmr_polynomial_term_power_index_a2eec01c3a2c3f56f47982ceffd8e36ed}{Power\+Type} \hyperlink{classnmr_polynomial_term_power_index_ab551abf59fae5d46713430225fa5fa1c}{Get\+Power} (\hyperlink{classnmr_polynomial_term_power_index_ac982d5f82c3a95968e92d54c92cbc3e0}{Variable\+Index\+Type} variable) const 
+\item 
+const \hyperlink{classnmr_polynomial_term_power_index_a2eec01c3a2c3f56f47982ceffd8e36ed}{Power\+Type} $\ast$ \hyperlink{classnmr_polynomial_term_power_index_aff45ac28cb382e285968f4c478627e89}{Get\+Powers} () const 
+\item 
+const int $\ast$ \hyperlink{classnmr_polynomial_term_power_index_a252fcc296daeacda9430437c54b87f82}{Get\+Powers\+As\+Signed} () const 
+\item 
+void \hyperlink{classnmr_polynomial_term_power_index_aab9b0abdffba39e0f140755e0c3aee4f}{Set\+Power} (\hyperlink{classnmr_polynomial_term_power_index_ac982d5f82c3a95968e92d54c92cbc3e0}{Variable\+Index\+Type} variable, \hyperlink{classnmr_polynomial_term_power_index_a2eec01c3a2c3f56f47982ceffd8e36ed}{Power\+Type} power)
+\item 
+void \hyperlink{classnmr_polynomial_term_power_index_ab18ca045931640884b78d4fa5bddeaca}{Set\+Powers} (const \hyperlink{classnmr_polynomial_term_power_index_a2eec01c3a2c3f56f47982ceffd8e36ed}{Power\+Type} powers\mbox{[}$\,$\mbox{]})
+\item 
+void \hyperlink{classnmr_polynomial_term_power_index_abe622c25cb62d06d99727a78bf085f7a}{Copy\+Powers} (const \hyperlink{classnmr_polynomial_term_power_index}{nmr\+Polynomial\+Term\+Power\+Index} \&other)
+\item 
+void \hyperlink{classnmr_polynomial_term_power_index_ae2a29b1eecbedc0ae21af60aff06f7b2}{Set\+Degree} (\hyperlink{classnmr_polynomial_term_power_index_a2eec01c3a2c3f56f47982ceffd8e36ed}{Power\+Type} degree)
+\item 
+void \hyperlink{classnmr_polynomial_term_power_index_a6644ffd886be51df4361fc1362f93b7e}{Go\+Begin} ()
+\item 
+void \hyperlink{classnmr_polynomial_term_power_index_a5ad06505e6e054c055912ae8f08dadb3}{Go\+End} ()
+\item 
+void \hyperlink{classnmr_polynomial_term_power_index_a30575b4e4da50952d9ec9159fe6c4d86}{Increment} ()
+\item 
+void \hyperlink{classnmr_polynomial_term_power_index_a5a690b17245bc85b3dafa91575240110}{Decrement} ()
+\item 
+bool \hyperlink{classnmr_polynomial_term_power_index_a898e4b569333933b7240d0b0208d4e0c}{Is\+Begin} () const 
+\item 
+bool \hyperlink{classnmr_polynomial_term_power_index_a4e645bdb125cd8bf1492147164f6df1e}{Is\+End} () const 
+\item 
+int \hyperlink{classnmr_polynomial_term_power_index_ab2d0e6ddf4ba6552fe41a7f6f36060cf}{Compare} (const \hyperlink{classnmr_polynomial_term_power_index}{nmr\+Polynomial\+Term\+Power\+Index} \&other) const 
+\item 
+bool \hyperlink{classnmr_polynomial_term_power_index_a86ec950f835100c801b962fab881bdbd}{operator$<$} (const \hyperlink{classnmr_polynomial_term_power_index}{nmr\+Polynomial\+Term\+Power\+Index} \&other) const 
+\item 
+bool \hyperlink{classnmr_polynomial_term_power_index_a8ddbd08d3ddbbb43c8d2b2560154d878}{operator$>$} (const \hyperlink{classnmr_polynomial_term_power_index}{nmr\+Polynomial\+Term\+Power\+Index} \&other) const 
+\item 
+bool \hyperlink{classnmr_polynomial_term_power_index_a0c0fc225dd6207be4425830de51ce3bb}{operator$<$=} (const \hyperlink{classnmr_polynomial_term_power_index}{nmr\+Polynomial\+Term\+Power\+Index} \&other) const 
+\item 
+bool \hyperlink{classnmr_polynomial_term_power_index_aea1064e73eda5c33686077ec34e174fb}{operator$>$=} (const \hyperlink{classnmr_polynomial_term_power_index}{nmr\+Polynomial\+Term\+Power\+Index} \&other) const 
+\item 
+bool \hyperlink{classnmr_polynomial_term_power_index_a5ec82dca98263dabd273d8b98d0f5920}{operator==} (const \hyperlink{classnmr_polynomial_term_power_index}{nmr\+Polynomial\+Term\+Power\+Index} \&other) const 
+\item 
+\hyperlink{classnmr_polynomial_term_power_index_a09f482da776cfb829e26ad1fb381ab94}{Multinomial\+Coefficient\+Type} \hyperlink{classnmr_polynomial_term_power_index_a7757268634207837173fee2e7c0bf8eb}{Get\+Multinomial\+Coefficient} () const 
+\item 
+\hyperlink{classnmr_polynomial_term_power_index_a09f482da776cfb829e26ad1fb381ab94}{Multinomial\+Coefficient\+Type} \hyperlink{classnmr_polynomial_term_power_index_a2f3e9788d333f91ae184a3d3018762af}{Get\+Multinomial\+Coefficient} (\hyperlink{classnmr_polynomial_term_power_index_a2eec01c3a2c3f56f47982ceffd8e36ed}{Power\+Type} d) const 
+\item 
+\hyperlink{classnmr_polynomial_term_power_index_a09f482da776cfb829e26ad1fb381ab94}{Multinomial\+Coefficient\+Type} \hyperlink{classnmr_polynomial_term_power_index_a23ab097c4291a51ac2ed67913ceb0e09}{Count\+Power\+Combinations} () const 
+\item 
+\hyperlink{classnmr_polynomial_term_power_index_a09f482da776cfb829e26ad1fb381ab94}{Multinomial\+Coefficient\+Type} \hyperlink{classnmr_polynomial_term_power_index_a00c963b24985cd807343d187d6eb06c1}{Count\+Lower\+Order\+Terms} () const 
+\item 
+void \hyperlink{classnmr_polynomial_term_power_index_a5030f6067b58ac04f22153df1361e5db}{Serialize\+Raw} (std\+::ostream \&output) const 
+\item 
+void \hyperlink{classnmr_polynomial_term_power_index_a613c587165babcaf39d0b1258d57a226}{Deserialize\+Raw} (std\+::istream \&input)
+\item 
+void \hyperlink{classnmr_polynomial_term_power_index_ad70d8491c72c723c52d6ee09d54755b8}{Serialize\+Index\+Raw} (std\+::ostream \&output) const 
+\item 
+void \hyperlink{classnmr_polynomial_term_power_index_ae80206421efe7d48c9b7a63c3e29c477}{Deserialize\+Index\+Raw} (std\+::istream \&input)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classnmr_polynomial_term_power_index_a09f482da776cfb829e26ad1fb381ab94}{Multinomial\+Coefficient\+Type} \hyperlink{classnmr_polynomial_term_power_index_a827051ab88ffb5305c6090ace6988a4f}{Evaluate\+Multinomial\+Coefficient} (\hyperlink{classnmr_polynomial_term_power_index_ac982d5f82c3a95968e92d54c92cbc3e0}{Variable\+Index\+Type} num\+Indices, \hyperlink{classnmr_polynomial_term_power_index_a2eec01c3a2c3f56f47982ceffd8e36ed}{Power\+Type} choose\+From, const \hyperlink{classnmr_polynomial_term_power_index_a2eec01c3a2c3f56f47982ceffd8e36ed}{Power\+Type} indices\mbox{[}$\,$\mbox{]})
+\item 
+static \hyperlink{classnmr_polynomial_term_power_index_a09f482da776cfb829e26ad1fb381ab94}{Multinomial\+Coefficient\+Type} \hyperlink{classnmr_polynomial_term_power_index_af9e1b36b14be507248d9c47571508c20}{Evaluate\+Multinomial\+Coefficient} (\hyperlink{classnmr_polynomial_term_power_index_ac982d5f82c3a95968e92d54c92cbc3e0}{Variable\+Index\+Type} num\+Indices, const \hyperlink{classnmr_polynomial_term_power_index_a2eec01c3a2c3f56f47982ceffd8e36ed}{Power\+Type} indices\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \hyperlink{classnmr_polynomial_term_power_index_a2eec01c3a2c3f56f47982ceffd8e36ed}{Power\+Type} $>$ \hyperlink{classnmr_polynomial_term_power_index_a05f4d771e733168086d285e1cf0e1d1e}{Powers}
+\item 
+\hyperlink{classnmr_polynomial_term_power_index_a2eec01c3a2c3f56f47982ceffd8e36ed}{Power\+Type} \hyperlink{classnmr_polynomial_term_power_index_a16ac64643c0802d0efb4bf3f617d0964}{Min\+Degree}
+\item 
+\hyperlink{classnmr_polynomial_term_power_index_a2eec01c3a2c3f56f47982ceffd8e36ed}{Power\+Type} \hyperlink{classnmr_polynomial_term_power_index_a9b831b9f652cd6053941aff903ddb024}{Max\+Degree}
+\item 
+int \hyperlink{classnmr_polynomial_term_power_index_a2794eed1b12205604c2d2d5806279368}{Degree}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represents the power index of a single term in a multi-\/variable polynomial. 
+
+Represents the power index of a single term in a multi-\/variable polynomial. For example, if the polynomial has four variables, then the power index of the term $c * (x0^2)*(x1)*(x2^3)*(x3)$ is (2, 1, 3, 1). The power index of the term $d * (x1^2)*(x2)$ is (0, 2, 1, 0), and so on.
+
+A power index can be used to reference a term in a polynomial, and can also be used as an iterator. We define increment and decrement rules for a power index and they are described in the \hyperlink{classnmr_polynomial_term_power_index_ab2d0e6ddf4ba6552fe41a7f6f36060cf}{Compare()} method.
+
+To define a complete term in a polynomial, you need at least a pair consisting of a scalar coefficient and a power index. For other forms of polynomials, more parameters are used. For example, for Bernstein basis polynomials, you need a term coefficient, a multinomial coefficient, and the power index.
+
+We define the term power index by the number of variables, the minimal degree, and the maximal degree. This way we can iterate over power indexes within a certain range of degrees. This becomes handy, for example, with Bernstein basis polynomials, where all the terms are of an equal degree. To define a Bernstein term index for n variables of degree d, just create \hyperlink{classnmr_polynomial_term_power_index}{nmr\+Polynomial\+Term\+Power\+Index} term\+Index(n, d, d);
+
+\begin{DoxyNote}{Note}
+for runtime efficiency reasons, the current implementation of \hyperlink{classnmr_polynomial_term_power_index}{nmr\+Polynomial\+Term\+Power\+Index} caches the degree of the term, that is, the sum of all powers. This means that whenever the index is modified, the sum needs to be updated. Fortunately, this takes a constant number of steps, regardless of the size (number of variables) of the term. Just add the difference between the new variable degree and the old variable degree to the total. Degree comparison is essential to establish the order relation between terms, which later determines where a term is inserted in the polynomial. Therefore we do not want to re-\/evaluate the degree every time we compare terms for order. 
+\end{DoxyNote}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classnmr_polynomial_term_power_index_a09f482da776cfb829e26ad1fb381ab94}{}\index{nmr\+Polynomial\+Term\+Power\+Index@{nmr\+Polynomial\+Term\+Power\+Index}!Multinomial\+Coefficient\+Type@{Multinomial\+Coefficient\+Type}}
+\index{Multinomial\+Coefficient\+Type@{Multinomial\+Coefficient\+Type}!nmr\+Polynomial\+Term\+Power\+Index@{nmr\+Polynomial\+Term\+Power\+Index}}
+\subsubsection[{Multinomial\+Coefficient\+Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned long {\bf nmr\+Polynomial\+Term\+Power\+Index\+::\+Multinomial\+Coefficient\+Type}}\label{classnmr_polynomial_term_power_index_a09f482da776cfb829e26ad1fb381ab94}
+type of a combinatorial result, such as multinomial factor \hypertarget{classnmr_polynomial_term_power_index_a2eec01c3a2c3f56f47982ceffd8e36ed}{}\index{nmr\+Polynomial\+Term\+Power\+Index@{nmr\+Polynomial\+Term\+Power\+Index}!Power\+Type@{Power\+Type}}
+\index{Power\+Type@{Power\+Type}!nmr\+Polynomial\+Term\+Power\+Index@{nmr\+Polynomial\+Term\+Power\+Index}}
+\subsubsection[{Power\+Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef int {\bf nmr\+Polynomial\+Term\+Power\+Index\+::\+Power\+Type}}\label{classnmr_polynomial_term_power_index_a2eec01c3a2c3f56f47982ceffd8e36ed}
+type of a power of a varible -- a non-\/negative integer \hypertarget{classnmr_polynomial_term_power_index_ac982d5f82c3a95968e92d54c92cbc3e0}{}\index{nmr\+Polynomial\+Term\+Power\+Index@{nmr\+Polynomial\+Term\+Power\+Index}!Variable\+Index\+Type@{Variable\+Index\+Type}}
+\index{Variable\+Index\+Type@{Variable\+Index\+Type}!nmr\+Polynomial\+Term\+Power\+Index@{nmr\+Polynomial\+Term\+Power\+Index}}
+\subsubsection[{Variable\+Index\+Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef int {\bf nmr\+Polynomial\+Term\+Power\+Index\+::\+Variable\+Index\+Type}}\label{classnmr_polynomial_term_power_index_ac982d5f82c3a95968e92d54c92cbc3e0}
+type of an index to a variable. A variable is x0, x1, x2, ... and the corresponding index is 0, 1, 2, ... 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classnmr_polynomial_term_power_index_a228f57fb006939574201fda8ca3237c3}{}\index{nmr\+Polynomial\+Term\+Power\+Index@{nmr\+Polynomial\+Term\+Power\+Index}!nmr\+Polynomial\+Term\+Power\+Index@{nmr\+Polynomial\+Term\+Power\+Index}}
+\index{nmr\+Polynomial\+Term\+Power\+Index@{nmr\+Polynomial\+Term\+Power\+Index}!nmr\+Polynomial\+Term\+Power\+Index@{nmr\+Polynomial\+Term\+Power\+Index}}
+\subsubsection[{nmr\+Polynomial\+Term\+Power\+Index}]{\setlength{\rightskip}{0pt plus 5cm}nmr\+Polynomial\+Term\+Power\+Index\+::nmr\+Polynomial\+Term\+Power\+Index (
+\begin{DoxyParamCaption}
+\item[{{\bf Variable\+Index\+Type}}]{num\+Variables = {\ttfamily 1}, }
+\item[{{\bf Power\+Type}}]{min\+Degree = {\ttfamily 0}, }
+\item[{{\bf Power\+Type}}]{max\+Degree = {\ttfamily 4}}
+\end{DoxyParamCaption}
+)}\label{classnmr_polynomial_term_power_index_a228f57fb006939574201fda8ca3237c3}
+Ctor\+: construct a term, defining the number of variables, the minimal degree and the maximal degree. The default values for the parameter are only to enable constructing a default object. Be especially careful with the max\+Degree argument, whose default value is arbitrary. \hypertarget{classnmr_polynomial_term_power_index_aa4a8ecd01e40b76a4fd20d58773ac375}{}\index{nmr\+Polynomial\+Term\+Power\+Index@{nmr\+Polynomial\+Term\+Power\+Index}!nmr\+Polynomial\+Term\+Power\+Index@{nmr\+Polynomial\+Term\+Power\+Index}}
+\index{nmr\+Polynomial\+Term\+Power\+Index@{nmr\+Polynomial\+Term\+Power\+Index}!nmr\+Polynomial\+Term\+Power\+Index@{nmr\+Polynomial\+Term\+Power\+Index}}
+\subsubsection[{nmr\+Polynomial\+Term\+Power\+Index}]{\setlength{\rightskip}{0pt plus 5cm}nmr\+Polynomial\+Term\+Power\+Index\+::nmr\+Polynomial\+Term\+Power\+Index (
+\begin{DoxyParamCaption}
+\item[{const {\bf nmr\+Polynomial\+Base} \&}]{p}
+\end{DoxyParamCaption}
+)}\label{classnmr_polynomial_term_power_index_aa4a8ecd01e40b76a4fd20d58773ac375}
+Construct a term valid for a specific Polynomial object 
+
+\subsection{Member Function Documentation}
+\hypertarget{classnmr_polynomial_term_power_index_ab2d0e6ddf4ba6552fe41a7f6f36060cf}{}\index{nmr\+Polynomial\+Term\+Power\+Index@{nmr\+Polynomial\+Term\+Power\+Index}!Compare@{Compare}}
+\index{Compare@{Compare}!nmr\+Polynomial\+Term\+Power\+Index@{nmr\+Polynomial\+Term\+Power\+Index}}
+\subsubsection[{Compare}]{\setlength{\rightskip}{0pt plus 5cm}int nmr\+Polynomial\+Term\+Power\+Index\+::\+Compare (
+\begin{DoxyParamCaption}
+\item[{const {\bf nmr\+Polynomial\+Term\+Power\+Index} \&}]{other}
+\end{DoxyParamCaption}
+) const}\label{classnmr_polynomial_term_power_index_ab2d0e6ddf4ba6552fe41a7f6f36060cf}
+compare terms according to the order set by the successor function \hyperlink{classnmr_polynomial_term_power_index_a30575b4e4da50952d9ec9159fe6c4d86}{Increment()} return zero if the terms are equal, negative value if this term is before the other, and positive value if this term is after the other.
+
+The order relation is quasi-\/lexicographic. Number of variables is compared first, the greater number of variables has greater term index. Degree is compared next. The greater degree has greater term index. If the degree and number of variables are equal, we compare the individual powers from left to right. The first occurence of unequal powers makes the term index with lower (first different) power greater. That is because the \hyperlink{classnmr_polynomial_term_power_index_a30575b4e4da50952d9ec9159fe6c4d86}{Increment()} function \char`\"{}pushes\char`\"{} the power to the right. Then, if term index a has lower power on a left variable than term index b, it means that power was pushed to the left from a to obtain b. That is, b is greater than a. \hypertarget{classnmr_polynomial_term_power_index_abe622c25cb62d06d99727a78bf085f7a}{}\index{nmr\+Polynomial\+Term\+Power\+Index@{nmr\+Polynomial\+Term\+Power\+Index}!Copy\+Powers@{Copy\+Powers}}
+\index{Copy\+Powers@{Copy\+Powers}!nmr\+Polynomial\+Term\+Power\+Index@{nmr\+Polynomial\+Term\+Power\+Index}}
+\subsubsection[{Copy\+Powers}]{\setlength{\rightskip}{0pt plus 5cm}void nmr\+Polynomial\+Term\+Power\+Index\+::\+Copy\+Powers (
+\begin{DoxyParamCaption}
+\item[{const {\bf nmr\+Polynomial\+Term\+Power\+Index} \&}]{other}
+\end{DoxyParamCaption}
+)}\label{classnmr_polynomial_term_power_index_abe622c25cb62d06d99727a78bf085f7a}
+copy the powers from another term into this one. This operation is valid only if the other term has the same number of variables as this one \hypertarget{classnmr_polynomial_term_power_index_a00c963b24985cd807343d187d6eb06c1}{}\index{nmr\+Polynomial\+Term\+Power\+Index@{nmr\+Polynomial\+Term\+Power\+Index}!Count\+Lower\+Order\+Terms@{Count\+Lower\+Order\+Terms}}
+\index{Count\+Lower\+Order\+Terms@{Count\+Lower\+Order\+Terms}!nmr\+Polynomial\+Term\+Power\+Index@{nmr\+Polynomial\+Term\+Power\+Index}}
+\subsubsection[{Count\+Lower\+Order\+Terms}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Multinomial\+Coefficient\+Type} nmr\+Polynomial\+Term\+Power\+Index\+::\+Count\+Lower\+Order\+Terms (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classnmr_polynomial_term_power_index_a00c963b24985cd807343d187d6eb06c1}
+Return the number of possible term indices whose corresponding powers are less than or equal to the powers in this term index. The result is the product of all the powers in this term index, adding one to each. \hypertarget{classnmr_polynomial_term_power_index_a23ab097c4291a51ac2ed67913ceb0e09}{}\index{nmr\+Polynomial\+Term\+Power\+Index@{nmr\+Polynomial\+Term\+Power\+Index}!Count\+Power\+Combinations@{Count\+Power\+Combinations}}
+\index{Count\+Power\+Combinations@{Count\+Power\+Combinations}!nmr\+Polynomial\+Term\+Power\+Index@{nmr\+Polynomial\+Term\+Power\+Index}}
+\subsubsection[{Count\+Power\+Combinations}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Multinomial\+Coefficient\+Type} nmr\+Polynomial\+Term\+Power\+Index\+::\+Count\+Power\+Combinations (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classnmr_polynomial_term_power_index_a23ab097c4291a51ac2ed67913ceb0e09}
+\hypertarget{classnmr_polynomial_term_power_index_a5a690b17245bc85b3dafa91575240110}{}\index{nmr\+Polynomial\+Term\+Power\+Index@{nmr\+Polynomial\+Term\+Power\+Index}!Decrement@{Decrement}}
+\index{Decrement@{Decrement}!nmr\+Polynomial\+Term\+Power\+Index@{nmr\+Polynomial\+Term\+Power\+Index}}
+\subsubsection[{Decrement}]{\setlength{\rightskip}{0pt plus 5cm}void nmr\+Polynomial\+Term\+Power\+Index\+::\+Decrement (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classnmr_polynomial_term_power_index_a5a690b17245bc85b3dafa91575240110}
+Move to the previous possible term. The rules are the reverse of the \hyperlink{classnmr_polynomial_term_power_index_a30575b4e4da50952d9ec9159fe6c4d86}{Increment()} process. That is\+: 1) Remove all the power from the rightmost positive power, and store it in p. 2) Add 1 to the power of the variable just left of where power was removed. 3) Add (p-\/1) to the last variable.
+
+For more details, see the \hyperlink{classnmr_polynomial_term_power_index_a30575b4e4da50952d9ec9159fe6c4d86}{Increment()} method. \hypertarget{classnmr_polynomial_term_power_index_ae80206421efe7d48c9b7a63c3e29c477}{}\index{nmr\+Polynomial\+Term\+Power\+Index@{nmr\+Polynomial\+Term\+Power\+Index}!Deserialize\+Index\+Raw@{Deserialize\+Index\+Raw}}
+\index{Deserialize\+Index\+Raw@{Deserialize\+Index\+Raw}!nmr\+Polynomial\+Term\+Power\+Index@{nmr\+Polynomial\+Term\+Power\+Index}}
+\subsubsection[{Deserialize\+Index\+Raw}]{\setlength{\rightskip}{0pt plus 5cm}void nmr\+Polynomial\+Term\+Power\+Index\+::\+Deserialize\+Index\+Raw (
+\begin{DoxyParamCaption}
+\item[{std\+::istream \&}]{input}
+\end{DoxyParamCaption}
+)}\label{classnmr_polynomial_term_power_index_ae80206421efe7d48c9b7a63c3e29c477}
+Deserialize only the power index. \begin{DoxySeeAlso}{See also}
+\hyperlink{classnmr_polynomial_term_power_index_ad70d8491c72c723c52d6ee09d54755b8}{Serialize\+Index\+Raw()}. 
+\end{DoxySeeAlso}
+\hypertarget{classnmr_polynomial_term_power_index_a613c587165babcaf39d0b1258d57a226}{}\index{nmr\+Polynomial\+Term\+Power\+Index@{nmr\+Polynomial\+Term\+Power\+Index}!Deserialize\+Raw@{Deserialize\+Raw}}
+\index{Deserialize\+Raw@{Deserialize\+Raw}!nmr\+Polynomial\+Term\+Power\+Index@{nmr\+Polynomial\+Term\+Power\+Index}}
+\subsubsection[{Deserialize\+Raw}]{\setlength{\rightskip}{0pt plus 5cm}void nmr\+Polynomial\+Term\+Power\+Index\+::\+Deserialize\+Raw (
+\begin{DoxyParamCaption}
+\item[{std\+::istream \&}]{input}
+\end{DoxyParamCaption}
+)}\label{classnmr_polynomial_term_power_index_a613c587165babcaf39d0b1258d57a226}
+Deserialize a power index from a stream. The function should work as the opposite of \hyperlink{classnmr_polynomial_term_power_index_a5030f6067b58ac04f22153df1361e5db}{Serialize\+Raw()}. \hypertarget{classnmr_polynomial_term_power_index_a827051ab88ffb5305c6090ace6988a4f}{}\index{nmr\+Polynomial\+Term\+Power\+Index@{nmr\+Polynomial\+Term\+Power\+Index}!Evaluate\+Multinomial\+Coefficient@{Evaluate\+Multinomial\+Coefficient}}
+\index{Evaluate\+Multinomial\+Coefficient@{Evaluate\+Multinomial\+Coefficient}!nmr\+Polynomial\+Term\+Power\+Index@{nmr\+Polynomial\+Term\+Power\+Index}}
+\subsubsection[{Evaluate\+Multinomial\+Coefficient}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Multinomial\+Coefficient\+Type} nmr\+Polynomial\+Term\+Power\+Index\+::\+Evaluate\+Multinomial\+Coefficient (
+\begin{DoxyParamCaption}
+\item[{{\bf Variable\+Index\+Type}}]{num\+Indices, }
+\item[{{\bf Power\+Type}}]{choose\+From, }
+\item[{const {\bf Power\+Type}}]{indices\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classnmr_polynomial_term_power_index_a827051ab88ffb5305c6090ace6988a4f}
+\hypertarget{classnmr_polynomial_term_power_index_af9e1b36b14be507248d9c47571508c20}{}\index{nmr\+Polynomial\+Term\+Power\+Index@{nmr\+Polynomial\+Term\+Power\+Index}!Evaluate\+Multinomial\+Coefficient@{Evaluate\+Multinomial\+Coefficient}}
+\index{Evaluate\+Multinomial\+Coefficient@{Evaluate\+Multinomial\+Coefficient}!nmr\+Polynomial\+Term\+Power\+Index@{nmr\+Polynomial\+Term\+Power\+Index}}
+\subsubsection[{Evaluate\+Multinomial\+Coefficient}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Multinomial\+Coefficient\+Type} nmr\+Polynomial\+Term\+Power\+Index\+::\+Evaluate\+Multinomial\+Coefficient (
+\begin{DoxyParamCaption}
+\item[{{\bf Variable\+Index\+Type}}]{num\+Indices, }
+\item[{const {\bf Power\+Type}}]{indices\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classnmr_polynomial_term_power_index_af9e1b36b14be507248d9c47571508c20}
+\hypertarget{classnmr_polynomial_term_power_index_ad74e09241ad425d80c7c4ccbe9e8d7dd}{}\index{nmr\+Polynomial\+Term\+Power\+Index@{nmr\+Polynomial\+Term\+Power\+Index}!Get\+Degree@{Get\+Degree}}
+\index{Get\+Degree@{Get\+Degree}!nmr\+Polynomial\+Term\+Power\+Index@{nmr\+Polynomial\+Term\+Power\+Index}}
+\subsubsection[{Get\+Degree}]{\setlength{\rightskip}{0pt plus 5cm}int nmr\+Polynomial\+Term\+Power\+Index\+::\+Get\+Degree (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classnmr_polynomial_term_power_index_ad74e09241ad425d80c7c4ccbe9e8d7dd}
+retrieve the degree of the term (sum of all powers). May be negative (!) when the term is invalid \hypertarget{classnmr_polynomial_term_power_index_ad8e4cb46dab70a93b56c4ce42f9eded1}{}\index{nmr\+Polynomial\+Term\+Power\+Index@{nmr\+Polynomial\+Term\+Power\+Index}!Get\+Max\+Degree@{Get\+Max\+Degree}}
+\index{Get\+Max\+Degree@{Get\+Max\+Degree}!nmr\+Polynomial\+Term\+Power\+Index@{nmr\+Polynomial\+Term\+Power\+Index}}
+\subsubsection[{Get\+Max\+Degree}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Power\+Type} nmr\+Polynomial\+Term\+Power\+Index\+::\+Get\+Max\+Degree (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classnmr_polynomial_term_power_index_ad8e4cb46dab70a93b56c4ce42f9eded1}
+\hypertarget{classnmr_polynomial_term_power_index_a0474a1274dbedfe5ff5b4830f4e6c47f}{}\index{nmr\+Polynomial\+Term\+Power\+Index@{nmr\+Polynomial\+Term\+Power\+Index}!Get\+Min\+Degree@{Get\+Min\+Degree}}
+\index{Get\+Min\+Degree@{Get\+Min\+Degree}!nmr\+Polynomial\+Term\+Power\+Index@{nmr\+Polynomial\+Term\+Power\+Index}}
+\subsubsection[{Get\+Min\+Degree}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Power\+Type} nmr\+Polynomial\+Term\+Power\+Index\+::\+Get\+Min\+Degree (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classnmr_polynomial_term_power_index_a0474a1274dbedfe5ff5b4830f4e6c47f}
+\hypertarget{classnmr_polynomial_term_power_index_a7757268634207837173fee2e7c0bf8eb}{}\index{nmr\+Polynomial\+Term\+Power\+Index@{nmr\+Polynomial\+Term\+Power\+Index}!Get\+Multinomial\+Coefficient@{Get\+Multinomial\+Coefficient}}
+\index{Get\+Multinomial\+Coefficient@{Get\+Multinomial\+Coefficient}!nmr\+Polynomial\+Term\+Power\+Index@{nmr\+Polynomial\+Term\+Power\+Index}}
+\subsubsection[{Get\+Multinomial\+Coefficient}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Multinomial\+Coefficient\+Type} nmr\+Polynomial\+Term\+Power\+Index\+::\+Get\+Multinomial\+Coefficient (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classnmr_polynomial_term_power_index_a7757268634207837173fee2e7c0bf8eb}
+\hypertarget{classnmr_polynomial_term_power_index_a2f3e9788d333f91ae184a3d3018762af}{}\index{nmr\+Polynomial\+Term\+Power\+Index@{nmr\+Polynomial\+Term\+Power\+Index}!Get\+Multinomial\+Coefficient@{Get\+Multinomial\+Coefficient}}
+\index{Get\+Multinomial\+Coefficient@{Get\+Multinomial\+Coefficient}!nmr\+Polynomial\+Term\+Power\+Index@{nmr\+Polynomial\+Term\+Power\+Index}}
+\subsubsection[{Get\+Multinomial\+Coefficient}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Multinomial\+Coefficient\+Type} nmr\+Polynomial\+Term\+Power\+Index\+::\+Get\+Multinomial\+Coefficient (
+\begin{DoxyParamCaption}
+\item[{{\bf Power\+Type}}]{d}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classnmr_polynomial_term_power_index_a2f3e9788d333f91ae184a3d3018762af}
+\hypertarget{classnmr_polynomial_term_power_index_a7b3cc89f51a30def066491115af27737}{}\index{nmr\+Polynomial\+Term\+Power\+Index@{nmr\+Polynomial\+Term\+Power\+Index}!Get\+Num\+Variables@{Get\+Num\+Variables}}
+\index{Get\+Num\+Variables@{Get\+Num\+Variables}!nmr\+Polynomial\+Term\+Power\+Index@{nmr\+Polynomial\+Term\+Power\+Index}}
+\subsubsection[{Get\+Num\+Variables}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Variable\+Index\+Type} nmr\+Polynomial\+Term\+Power\+Index\+::\+Get\+Num\+Variables (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classnmr_polynomial_term_power_index_a7b3cc89f51a30def066491115af27737}
+\hypertarget{classnmr_polynomial_term_power_index_ab551abf59fae5d46713430225fa5fa1c}{}\index{nmr\+Polynomial\+Term\+Power\+Index@{nmr\+Polynomial\+Term\+Power\+Index}!Get\+Power@{Get\+Power}}
+\index{Get\+Power@{Get\+Power}!nmr\+Polynomial\+Term\+Power\+Index@{nmr\+Polynomial\+Term\+Power\+Index}}
+\subsubsection[{Get\+Power}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Power\+Type} nmr\+Polynomial\+Term\+Power\+Index\+::\+Get\+Power (
+\begin{DoxyParamCaption}
+\item[{{\bf Variable\+Index\+Type}}]{variable}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classnmr_polynomial_term_power_index_ab551abf59fae5d46713430225fa5fa1c}
+retrieve the power of one variable in the current term. the variable index is zero based! \hypertarget{classnmr_polynomial_term_power_index_aff45ac28cb382e285968f4c478627e89}{}\index{nmr\+Polynomial\+Term\+Power\+Index@{nmr\+Polynomial\+Term\+Power\+Index}!Get\+Powers@{Get\+Powers}}
+\index{Get\+Powers@{Get\+Powers}!nmr\+Polynomial\+Term\+Power\+Index@{nmr\+Polynomial\+Term\+Power\+Index}}
+\subsubsection[{Get\+Powers}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Power\+Type}$\ast$ nmr\+Polynomial\+Term\+Power\+Index\+::\+Get\+Powers (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classnmr_polynomial_term_power_index_aff45ac28cb382e285968f4c478627e89}
+return a pointer to the array of all powers. \hypertarget{classnmr_polynomial_term_power_index_a252fcc296daeacda9430437c54b87f82}{}\index{nmr\+Polynomial\+Term\+Power\+Index@{nmr\+Polynomial\+Term\+Power\+Index}!Get\+Powers\+As\+Signed@{Get\+Powers\+As\+Signed}}
+\index{Get\+Powers\+As\+Signed@{Get\+Powers\+As\+Signed}!nmr\+Polynomial\+Term\+Power\+Index@{nmr\+Polynomial\+Term\+Power\+Index}}
+\subsubsection[{Get\+Powers\+As\+Signed}]{\setlength{\rightskip}{0pt plus 5cm}const int$\ast$ nmr\+Polynomial\+Term\+Power\+Index\+::\+Get\+Powers\+As\+Signed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classnmr_polynomial_term_power_index_a252fcc296daeacda9430437c54b87f82}
+return the same pointer as \hyperlink{classnmr_polynomial_term_power_index_aff45ac28cb382e285968f4c478627e89}{Get\+Powers()}, but pointing signed int. \hypertarget{classnmr_polynomial_term_power_index_a6644ffd886be51df4361fc1362f93b7e}{}\index{nmr\+Polynomial\+Term\+Power\+Index@{nmr\+Polynomial\+Term\+Power\+Index}!Go\+Begin@{Go\+Begin}}
+\index{Go\+Begin@{Go\+Begin}!nmr\+Polynomial\+Term\+Power\+Index@{nmr\+Polynomial\+Term\+Power\+Index}}
+\subsubsection[{Go\+Begin}]{\setlength{\rightskip}{0pt plus 5cm}void nmr\+Polynomial\+Term\+Power\+Index\+::\+Go\+Begin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classnmr_polynomial_term_power_index_a6644ffd886be51df4361fc1362f93b7e}
+Move to the first possible term of degree Min\+Degree \hypertarget{classnmr_polynomial_term_power_index_a5ad06505e6e054c055912ae8f08dadb3}{}\index{nmr\+Polynomial\+Term\+Power\+Index@{nmr\+Polynomial\+Term\+Power\+Index}!Go\+End@{Go\+End}}
+\index{Go\+End@{Go\+End}!nmr\+Polynomial\+Term\+Power\+Index@{nmr\+Polynomial\+Term\+Power\+Index}}
+\subsubsection[{Go\+End}]{\setlength{\rightskip}{0pt plus 5cm}void nmr\+Polynomial\+Term\+Power\+Index\+::\+Go\+End (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classnmr_polynomial_term_power_index_a5ad06505e6e054c055912ae8f08dadb3}
+Move to the last possible term of degree Max\+Degree \hypertarget{classnmr_polynomial_term_power_index_a30575b4e4da50952d9ec9159fe6c4d86}{}\index{nmr\+Polynomial\+Term\+Power\+Index@{nmr\+Polynomial\+Term\+Power\+Index}!Increment@{Increment}}
+\index{Increment@{Increment}!nmr\+Polynomial\+Term\+Power\+Index@{nmr\+Polynomial\+Term\+Power\+Index}}
+\subsubsection[{Increment}]{\setlength{\rightskip}{0pt plus 5cm}void nmr\+Polynomial\+Term\+Power\+Index\+::\+Increment (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classnmr_polynomial_term_power_index_a30575b4e4da50952d9ec9159fe6c4d86}
+Move to the next possible term. The rule is\+: 1) Remove all the power from the last variable (index n-\/1), and store it. 2) Find the rightmost positive power in the remaining term. 3) Move one power from the right of the remaining term to the variable just after. 4) Return the powers from the last variable to the new rightmost positive power.
+
+For example, if we had a term (3, 3, 0, 2) 1) have (3, 3, 0, 0), store 2 2) the last positive degree is of variable \#1 (zero based index) 3) change to (3, 2, 1, 0) 4) return the stored 2\+: (3, 2, 3, 0)
+
+The process is identical if the last power is zero. If in step (2) we are left with no positive powers, we skip the removal of power from the right of the term, and step (3) becomes making the term (1, 0, ..., 0). \hypertarget{classnmr_polynomial_term_power_index_a898e4b569333933b7240d0b0208d4e0c}{}\index{nmr\+Polynomial\+Term\+Power\+Index@{nmr\+Polynomial\+Term\+Power\+Index}!Is\+Begin@{Is\+Begin}}
+\index{Is\+Begin@{Is\+Begin}!nmr\+Polynomial\+Term\+Power\+Index@{nmr\+Polynomial\+Term\+Power\+Index}}
+\subsubsection[{Is\+Begin}]{\setlength{\rightskip}{0pt plus 5cm}bool nmr\+Polynomial\+Term\+Power\+Index\+::\+Is\+Begin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classnmr_polynomial_term_power_index_a898e4b569333933b7240d0b0208d4e0c}
+tells if this is the first possible term for the given degree limits. \hypertarget{classnmr_polynomial_term_power_index_a4e645bdb125cd8bf1492147164f6df1e}{}\index{nmr\+Polynomial\+Term\+Power\+Index@{nmr\+Polynomial\+Term\+Power\+Index}!Is\+End@{Is\+End}}
+\index{Is\+End@{Is\+End}!nmr\+Polynomial\+Term\+Power\+Index@{nmr\+Polynomial\+Term\+Power\+Index}}
+\subsubsection[{Is\+End}]{\setlength{\rightskip}{0pt plus 5cm}bool nmr\+Polynomial\+Term\+Power\+Index\+::\+Is\+End (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classnmr_polynomial_term_power_index_a4e645bdb125cd8bf1492147164f6df1e}
+tells if this is the last possible term for the given degree limits. \hypertarget{classnmr_polynomial_term_power_index_afe6a8231affbcb38890f7e33cabdb59c}{}\index{nmr\+Polynomial\+Term\+Power\+Index@{nmr\+Polynomial\+Term\+Power\+Index}!Is\+Valid@{Is\+Valid}}
+\index{Is\+Valid@{Is\+Valid}!nmr\+Polynomial\+Term\+Power\+Index@{nmr\+Polynomial\+Term\+Power\+Index}}
+\subsubsection[{Is\+Valid}]{\setlength{\rightskip}{0pt plus 5cm}bool nmr\+Polynomial\+Term\+Power\+Index\+::\+Is\+Valid (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classnmr_polynomial_term_power_index_afe6a8231affbcb38890f7e33cabdb59c}
+return true if the degree of this term is valid, i.\+e., in the range min\+Degree..max\+Degree \hypertarget{classnmr_polynomial_term_power_index_a86ec950f835100c801b962fab881bdbd}{}\index{nmr\+Polynomial\+Term\+Power\+Index@{nmr\+Polynomial\+Term\+Power\+Index}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!nmr\+Polynomial\+Term\+Power\+Index@{nmr\+Polynomial\+Term\+Power\+Index}}
+\subsubsection[{operator$<$}]{\setlength{\rightskip}{0pt plus 5cm}bool nmr\+Polynomial\+Term\+Power\+Index\+::operator$<$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf nmr\+Polynomial\+Term\+Power\+Index} \&}]{other}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classnmr_polynomial_term_power_index_a86ec950f835100c801b962fab881bdbd}
+decide if this index is before the other according to the successor function \hyperlink{classnmr_polynomial_term_power_index_a30575b4e4da50952d9ec9159fe6c4d86}{Increment()}. \hypertarget{classnmr_polynomial_term_power_index_a0c0fc225dd6207be4425830de51ce3bb}{}\index{nmr\+Polynomial\+Term\+Power\+Index@{nmr\+Polynomial\+Term\+Power\+Index}!operator$<$=@{operator$<$=}}
+\index{operator$<$=@{operator$<$=}!nmr\+Polynomial\+Term\+Power\+Index@{nmr\+Polynomial\+Term\+Power\+Index}}
+\subsubsection[{operator$<$=}]{\setlength{\rightskip}{0pt plus 5cm}bool nmr\+Polynomial\+Term\+Power\+Index\+::operator$<$= (
+\begin{DoxyParamCaption}
+\item[{const {\bf nmr\+Polynomial\+Term\+Power\+Index} \&}]{other}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classnmr_polynomial_term_power_index_a0c0fc225dd6207be4425830de51ce3bb}
+\hypertarget{classnmr_polynomial_term_power_index_a5ec82dca98263dabd273d8b98d0f5920}{}\index{nmr\+Polynomial\+Term\+Power\+Index@{nmr\+Polynomial\+Term\+Power\+Index}!operator==@{operator==}}
+\index{operator==@{operator==}!nmr\+Polynomial\+Term\+Power\+Index@{nmr\+Polynomial\+Term\+Power\+Index}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}bool nmr\+Polynomial\+Term\+Power\+Index\+::operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf nmr\+Polynomial\+Term\+Power\+Index} \&}]{other}
+\end{DoxyParamCaption}
+) const}\label{classnmr_polynomial_term_power_index_a5ec82dca98263dabd273d8b98d0f5920}
+decide if this index is equal to the other. Currently, the operation is not implemented, as it was not needed and its semantics is questionable. Does == mean identity, or does it mean equivalence of index? \hypertarget{classnmr_polynomial_term_power_index_a8ddbd08d3ddbbb43c8d2b2560154d878}{}\index{nmr\+Polynomial\+Term\+Power\+Index@{nmr\+Polynomial\+Term\+Power\+Index}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!nmr\+Polynomial\+Term\+Power\+Index@{nmr\+Polynomial\+Term\+Power\+Index}}
+\subsubsection[{operator$>$}]{\setlength{\rightskip}{0pt plus 5cm}bool nmr\+Polynomial\+Term\+Power\+Index\+::operator$>$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf nmr\+Polynomial\+Term\+Power\+Index} \&}]{other}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classnmr_polynomial_term_power_index_a8ddbd08d3ddbbb43c8d2b2560154d878}
+decide if this index is after the other according to the successor function \hyperlink{classnmr_polynomial_term_power_index_a30575b4e4da50952d9ec9159fe6c4d86}{Increment()}. \hypertarget{classnmr_polynomial_term_power_index_aea1064e73eda5c33686077ec34e174fb}{}\index{nmr\+Polynomial\+Term\+Power\+Index@{nmr\+Polynomial\+Term\+Power\+Index}!operator$>$=@{operator$>$=}}
+\index{operator$>$=@{operator$>$=}!nmr\+Polynomial\+Term\+Power\+Index@{nmr\+Polynomial\+Term\+Power\+Index}}
+\subsubsection[{operator$>$=}]{\setlength{\rightskip}{0pt plus 5cm}bool nmr\+Polynomial\+Term\+Power\+Index\+::operator$>$= (
+\begin{DoxyParamCaption}
+\item[{const {\bf nmr\+Polynomial\+Term\+Power\+Index} \&}]{other}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classnmr_polynomial_term_power_index_aea1064e73eda5c33686077ec34e174fb}
+\hypertarget{classnmr_polynomial_term_power_index_ad70d8491c72c723c52d6ee09d54755b8}{}\index{nmr\+Polynomial\+Term\+Power\+Index@{nmr\+Polynomial\+Term\+Power\+Index}!Serialize\+Index\+Raw@{Serialize\+Index\+Raw}}
+\index{Serialize\+Index\+Raw@{Serialize\+Index\+Raw}!nmr\+Polynomial\+Term\+Power\+Index@{nmr\+Polynomial\+Term\+Power\+Index}}
+\subsubsection[{Serialize\+Index\+Raw}]{\setlength{\rightskip}{0pt plus 5cm}void nmr\+Polynomial\+Term\+Power\+Index\+::\+Serialize\+Index\+Raw (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{output}
+\end{DoxyParamCaption}
+) const}\label{classnmr_polynomial_term_power_index_ad70d8491c72c723c52d6ee09d54755b8}
+Serialize only the power index, without degree limits or number of variables. This function is declared public so that we can save space by calling this one instead of Serialize\+Raw when serializing a whole polynomial. \hypertarget{classnmr_polynomial_term_power_index_a5030f6067b58ac04f22153df1361e5db}{}\index{nmr\+Polynomial\+Term\+Power\+Index@{nmr\+Polynomial\+Term\+Power\+Index}!Serialize\+Raw@{Serialize\+Raw}}
+\index{Serialize\+Raw@{Serialize\+Raw}!nmr\+Polynomial\+Term\+Power\+Index@{nmr\+Polynomial\+Term\+Power\+Index}}
+\subsubsection[{Serialize\+Raw}]{\setlength{\rightskip}{0pt plus 5cm}void nmr\+Polynomial\+Term\+Power\+Index\+::\+Serialize\+Raw (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{output}
+\end{DoxyParamCaption}
+) const}\label{classnmr_polynomial_term_power_index_a5030f6067b58ac04f22153df1361e5db}
+Serialize the power-\/index object into a stream. This function is not completely standardized, as the output is in machine-\/dependent format. Output order is similar to member order. \hypertarget{classnmr_polynomial_term_power_index_ae2a29b1eecbedc0ae21af60aff06f7b2}{}\index{nmr\+Polynomial\+Term\+Power\+Index@{nmr\+Polynomial\+Term\+Power\+Index}!Set\+Degree@{Set\+Degree}}
+\index{Set\+Degree@{Set\+Degree}!nmr\+Polynomial\+Term\+Power\+Index@{nmr\+Polynomial\+Term\+Power\+Index}}
+\subsubsection[{Set\+Degree}]{\setlength{\rightskip}{0pt plus 5cm}void nmr\+Polynomial\+Term\+Power\+Index\+::\+Set\+Degree (
+\begin{DoxyParamCaption}
+\item[{{\bf Power\+Type}}]{degree}
+\end{DoxyParamCaption}
+)}\label{classnmr_polynomial_term_power_index_ae2a29b1eecbedc0ae21af60aff06f7b2}
+Move to the first possible term of the given degree. That is, (degree, 0, 0, ..., 0) \hypertarget{classnmr_polynomial_term_power_index_a7258a386411761862e9ab455cc107e23}{}\index{nmr\+Polynomial\+Term\+Power\+Index@{nmr\+Polynomial\+Term\+Power\+Index}!Set\+Max\+Degree@{Set\+Max\+Degree}}
+\index{Set\+Max\+Degree@{Set\+Max\+Degree}!nmr\+Polynomial\+Term\+Power\+Index@{nmr\+Polynomial\+Term\+Power\+Index}}
+\subsubsection[{Set\+Max\+Degree}]{\setlength{\rightskip}{0pt plus 5cm}void nmr\+Polynomial\+Term\+Power\+Index\+::\+Set\+Max\+Degree (
+\begin{DoxyParamCaption}
+\item[{{\bf Power\+Type}}]{new\+Max}
+\end{DoxyParamCaption}
+) throw  std\+::runtime\+\_\+error) \hspace{0.3cm}{\ttfamily [inline]}}\label{classnmr_polynomial_term_power_index_a7258a386411761862e9ab455cc107e23}
+\hypertarget{classnmr_polynomial_term_power_index_a484a45cda96657835b5137b18c13ae0b}{}\index{nmr\+Polynomial\+Term\+Power\+Index@{nmr\+Polynomial\+Term\+Power\+Index}!Set\+Min\+Degree@{Set\+Min\+Degree}}
+\index{Set\+Min\+Degree@{Set\+Min\+Degree}!nmr\+Polynomial\+Term\+Power\+Index@{nmr\+Polynomial\+Term\+Power\+Index}}
+\subsubsection[{Set\+Min\+Degree}]{\setlength{\rightskip}{0pt plus 5cm}void nmr\+Polynomial\+Term\+Power\+Index\+::\+Set\+Min\+Degree (
+\begin{DoxyParamCaption}
+\item[{{\bf Power\+Type}}]{new\+Min}
+\end{DoxyParamCaption}
+) throw  std\+::runtime\+\_\+error) \hspace{0.3cm}{\ttfamily [inline]}}\label{classnmr_polynomial_term_power_index_a484a45cda96657835b5137b18c13ae0b}
+\hypertarget{classnmr_polynomial_term_power_index_aab9b0abdffba39e0f140755e0c3aee4f}{}\index{nmr\+Polynomial\+Term\+Power\+Index@{nmr\+Polynomial\+Term\+Power\+Index}!Set\+Power@{Set\+Power}}
+\index{Set\+Power@{Set\+Power}!nmr\+Polynomial\+Term\+Power\+Index@{nmr\+Polynomial\+Term\+Power\+Index}}
+\subsubsection[{Set\+Power}]{\setlength{\rightskip}{0pt plus 5cm}void nmr\+Polynomial\+Term\+Power\+Index\+::\+Set\+Power (
+\begin{DoxyParamCaption}
+\item[{{\bf Variable\+Index\+Type}}]{variable, }
+\item[{{\bf Power\+Type}}]{power}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classnmr_polynomial_term_power_index_aab9b0abdffba39e0f140755e0c3aee4f}
+set the power of one variable in the current term. the variable index is zero based! \hypertarget{classnmr_polynomial_term_power_index_ab18ca045931640884b78d4fa5bddeaca}{}\index{nmr\+Polynomial\+Term\+Power\+Index@{nmr\+Polynomial\+Term\+Power\+Index}!Set\+Powers@{Set\+Powers}}
+\index{Set\+Powers@{Set\+Powers}!nmr\+Polynomial\+Term\+Power\+Index@{nmr\+Polynomial\+Term\+Power\+Index}}
+\subsubsection[{Set\+Powers}]{\setlength{\rightskip}{0pt plus 5cm}void nmr\+Polynomial\+Term\+Power\+Index\+::\+Set\+Powers (
+\begin{DoxyParamCaption}
+\item[{const {\bf Power\+Type}}]{powers\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classnmr_polynomial_term_power_index_ab18ca045931640884b78d4fa5bddeaca}
+set all the powers of the term using an array of powers. 
+
+\subsection{Member Data Documentation}
+\hypertarget{classnmr_polynomial_term_power_index_a2794eed1b12205604c2d2d5806279368}{}\index{nmr\+Polynomial\+Term\+Power\+Index@{nmr\+Polynomial\+Term\+Power\+Index}!Degree@{Degree}}
+\index{Degree@{Degree}!nmr\+Polynomial\+Term\+Power\+Index@{nmr\+Polynomial\+Term\+Power\+Index}}
+\subsubsection[{Degree}]{\setlength{\rightskip}{0pt plus 5cm}int nmr\+Polynomial\+Term\+Power\+Index\+::\+Degree\hspace{0.3cm}{\ttfamily [protected]}}\label{classnmr_polynomial_term_power_index_a2794eed1b12205604c2d2d5806279368}
+\hypertarget{classnmr_polynomial_term_power_index_a9b831b9f652cd6053941aff903ddb024}{}\index{nmr\+Polynomial\+Term\+Power\+Index@{nmr\+Polynomial\+Term\+Power\+Index}!Max\+Degree@{Max\+Degree}}
+\index{Max\+Degree@{Max\+Degree}!nmr\+Polynomial\+Term\+Power\+Index@{nmr\+Polynomial\+Term\+Power\+Index}}
+\subsubsection[{Max\+Degree}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Power\+Type} nmr\+Polynomial\+Term\+Power\+Index\+::\+Max\+Degree\hspace{0.3cm}{\ttfamily [protected]}}\label{classnmr_polynomial_term_power_index_a9b831b9f652cd6053941aff903ddb024}
+\hypertarget{classnmr_polynomial_term_power_index_a16ac64643c0802d0efb4bf3f617d0964}{}\index{nmr\+Polynomial\+Term\+Power\+Index@{nmr\+Polynomial\+Term\+Power\+Index}!Min\+Degree@{Min\+Degree}}
+\index{Min\+Degree@{Min\+Degree}!nmr\+Polynomial\+Term\+Power\+Index@{nmr\+Polynomial\+Term\+Power\+Index}}
+\subsubsection[{Min\+Degree}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Power\+Type} nmr\+Polynomial\+Term\+Power\+Index\+::\+Min\+Degree\hspace{0.3cm}{\ttfamily [protected]}}\label{classnmr_polynomial_term_power_index_a16ac64643c0802d0efb4bf3f617d0964}
+\hypertarget{classnmr_polynomial_term_power_index_a05f4d771e733168086d285e1cf0e1d1e}{}\index{nmr\+Polynomial\+Term\+Power\+Index@{nmr\+Polynomial\+Term\+Power\+Index}!Powers@{Powers}}
+\index{Powers@{Powers}!nmr\+Polynomial\+Term\+Power\+Index@{nmr\+Polynomial\+Term\+Power\+Index}}
+\subsubsection[{Powers}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Power\+Type}$>$ nmr\+Polynomial\+Term\+Power\+Index\+::\+Powers\hspace{0.3cm}{\ttfamily [protected]}}\label{classnmr_polynomial_term_power_index_a05f4d771e733168086d285e1cf0e1d1e}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Numerical/\hyperlink{nmr_polynomial_term_power_index_8h}{nmr\+Polynomial\+Term\+Power\+Index.\+h}\end{DoxyCompactItemize}

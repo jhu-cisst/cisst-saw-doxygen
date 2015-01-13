@@ -1,0 +1,65 @@
+\hypertarget{vct_printf_8h}{}\section{/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Vector/vct\+Printf.h File Reference}
+\label{vct_printf_8h}\index{/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Vector/vct\+Printf.\+h@{/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Vector/vct\+Printf.\+h}}
+{\ttfamily \#include $<$cisst\+Common/cmn\+Portability.\+h$>$}\\*
+{\ttfamily \#include $<$cisst\+Common/cmn\+Printf.\+h$>$}\\*
+{\ttfamily \#include $<$cisst\+Vector/vct\+Fixed\+Size\+Const\+Vector\+Base.\+h$>$}\\*
+{\ttfamily \#include $<$cisst\+Vector/vct\+Fixed\+Size\+Const\+Matrix\+Base.\+h$>$}\\*
+{\ttfamily \#include $<$cisst\+Vector/vct\+Dynamic\+Const\+Vector\+Base.\+h$>$}\\*
+{\ttfamily \#include $<$cisst\+Vector/vct\+Dynamic\+Const\+Matrix\+Base.\+h$>$}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{vct_printf_8h_a01278e75a3e7adea4827ab5fa234c05c}{\+\_\+vct\+Printf\+\_\+h}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type , class \+\_\+data\+Ptr\+Type $>$ }\\bool \hyperlink{vct_printf_8h_afed84a5dc227ddfeaea96566f7e15073}{cmn\+Type\+Printf} (\hyperlink{classcmn_printf_parser}{cmn\+Printf\+Parser} \&parser, const \hyperlink{classvct_fixed_size_const_vector_base}{vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$ \&vector)
+\item 
+{\footnotesize template$<$class \+\_\+vector\+Owner\+Type , class \+\_\+element\+Type $>$ }\\bool \hyperlink{vct_printf_8h_a732a70aa72bb022528e42b2ae79f153f}{cmn\+Type\+Printf} (\hyperlink{classcmn_printf_parser}{cmn\+Printf\+Parser} \&parser, const \hyperlink{classvct_dynamic_const_vector_base}{vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$ \&vector)
+\item 
+{\footnotesize template$<$vct\+::size\+\_\+type \+\_\+rows, vct\+::size\+\_\+type \+\_\+cols, vct\+::stride\+\_\+type \+\_\+row\+Stride, vct\+::stride\+\_\+type \+\_\+col\+Stride, class \+\_\+element\+Type , class \+\_\+data\+Ptr\+Type $>$ }\\bool \hyperlink{vct_printf_8h_a3b3443538adf36928625ff815794d42c}{cmn\+Type\+Printf} (\hyperlink{classcmn_printf_parser}{cmn\+Printf\+Parser} \&parser, const \hyperlink{classvct_fixed_size_const_matrix_base}{vct\+Fixed\+Size\+Const\+Matrix\+Base}$<$ \+\_\+rows, \+\_\+cols, \+\_\+row\+Stride, \+\_\+col\+Stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$ \&matrix)
+\item 
+{\footnotesize template$<$class \+\_\+matrix\+Owner\+Type , class \+\_\+element\+Type $>$ }\\bool \hyperlink{vct_printf_8h_ad8c92e1883b745e2a859a8e09b85ad83}{cmn\+Type\+Printf} (\hyperlink{classcmn_printf_parser}{cmn\+Printf\+Parser} \&parser, const \hyperlink{classvct_dynamic_const_matrix_base}{vct\+Dynamic\+Const\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type, \+\_\+element\+Type $>$ \&matrix)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{vct_printf_8h_a01278e75a3e7adea4827ab5fa234c05c}{}\index{vct\+Printf.\+h@{vct\+Printf.\+h}!\+\_\+vct\+Printf\+\_\+h@{\+\_\+vct\+Printf\+\_\+h}}
+\index{\+\_\+vct\+Printf\+\_\+h@{\+\_\+vct\+Printf\+\_\+h}!vct\+Printf.\+h@{vct\+Printf.\+h}}
+\subsubsection[{\+\_\+vct\+Printf\+\_\+h}]{\setlength{\rightskip}{0pt plus 5cm}\#define \+\_\+vct\+Printf\+\_\+h}\label{vct_printf_8h_a01278e75a3e7adea4827ab5fa234c05c}
+
+
+\subsection{Function Documentation}
+\hypertarget{vct_printf_8h_afed84a5dc227ddfeaea96566f7e15073}{}\index{vct\+Printf.\+h@{vct\+Printf.\+h}!cmn\+Type\+Printf@{cmn\+Type\+Printf}}
+\index{cmn\+Type\+Printf@{cmn\+Type\+Printf}!vct\+Printf.\+h@{vct\+Printf.\+h}}
+\subsubsection[{cmn\+Type\+Printf}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type , class \+\_\+data\+Ptr\+Type $>$ bool cmn\+Type\+Printf (
+\begin{DoxyParamCaption}
+\item[{{\bf cmn\+Printf\+Parser} \&}]{parser, }
+\item[{const {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$ \&}]{vector}
+\end{DoxyParamCaption}
+)}\label{vct_printf_8h_afed84a5dc227ddfeaea96566f7e15073}
+\hypertarget{vct_printf_8h_a732a70aa72bb022528e42b2ae79f153f}{}\index{vct\+Printf.\+h@{vct\+Printf.\+h}!cmn\+Type\+Printf@{cmn\+Type\+Printf}}
+\index{cmn\+Type\+Printf@{cmn\+Type\+Printf}!vct\+Printf.\+h@{vct\+Printf.\+h}}
+\subsubsection[{cmn\+Type\+Printf}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type , class \+\_\+element\+Type $>$ bool cmn\+Type\+Printf (
+\begin{DoxyParamCaption}
+\item[{{\bf cmn\+Printf\+Parser} \&}]{parser, }
+\item[{const {\bf vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$ \&}]{vector}
+\end{DoxyParamCaption}
+)}\label{vct_printf_8h_a732a70aa72bb022528e42b2ae79f153f}
+\hypertarget{vct_printf_8h_a3b3443538adf36928625ff815794d42c}{}\index{vct\+Printf.\+h@{vct\+Printf.\+h}!cmn\+Type\+Printf@{cmn\+Type\+Printf}}
+\index{cmn\+Type\+Printf@{cmn\+Type\+Printf}!vct\+Printf.\+h@{vct\+Printf.\+h}}
+\subsubsection[{cmn\+Type\+Printf}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+rows, vct\+::size\+\_\+type \+\_\+cols, vct\+::stride\+\_\+type \+\_\+row\+Stride, vct\+::stride\+\_\+type \+\_\+col\+Stride, class \+\_\+element\+Type , class \+\_\+data\+Ptr\+Type $>$ bool cmn\+Type\+Printf (
+\begin{DoxyParamCaption}
+\item[{{\bf cmn\+Printf\+Parser} \&}]{parser, }
+\item[{const {\bf vct\+Fixed\+Size\+Const\+Matrix\+Base}$<$ \+\_\+rows, \+\_\+cols, \+\_\+row\+Stride, \+\_\+col\+Stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$ \&}]{matrix}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{vct_printf_8h_a3b3443538adf36928625ff815794d42c}
+\hypertarget{vct_printf_8h_ad8c92e1883b745e2a859a8e09b85ad83}{}\index{vct\+Printf.\+h@{vct\+Printf.\+h}!cmn\+Type\+Printf@{cmn\+Type\+Printf}}
+\index{cmn\+Type\+Printf@{cmn\+Type\+Printf}!vct\+Printf.\+h@{vct\+Printf.\+h}}
+\subsubsection[{cmn\+Type\+Printf}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+matrix\+Owner\+Type , class \+\_\+element\+Type $>$ bool cmn\+Type\+Printf (
+\begin{DoxyParamCaption}
+\item[{{\bf cmn\+Printf\+Parser} \&}]{parser, }
+\item[{const {\bf vct\+Dynamic\+Const\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type, \+\_\+element\+Type $>$ \&}]{matrix}
+\end{DoxyParamCaption}
+)}\label{vct_printf_8h_ad8c92e1883b745e2a859a8e09b85ad83}

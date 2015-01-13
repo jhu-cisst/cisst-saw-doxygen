@@ -1,0 +1,432 @@
+\hypertarget{classvct_plot2_d_base_1_1_scale}{}\section{vct\+Plot2\+D\+Base\+:\+:Scale Class Reference}
+\label{classvct_plot2_d_base_1_1_scale}\index{vct\+Plot2\+D\+Base\+::\+Scale@{vct\+Plot2\+D\+Base\+::\+Scale}}
+
+
+{\ttfamily \#include $<$vct\+Plot2\+D\+Base.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::map$<$ std\+::string, \hyperlink{classvct_plot2_d_base_1_1_signal}{Signal} $\ast$ $>$ \hyperlink{classvct_plot2_d_base_1_1_scale_aecdc247557c6ec3b7976596b42a4bc27}{Signals\+Type}
+\item 
+typedef std\+::map$<$ std\+::string, \hyperlink{classvct_plot2_d_base_1_1_vertical_line}{Vertical\+Line} $\ast$ $>$ \hyperlink{classvct_plot2_d_base_1_1_scale_acd4d4d528f1381dfd1145ceec34b25ba}{Vertical\+Lines\+Type}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classvct_plot2_d_base_1_1_scale_a1383daa58c4c2ce603a751ff9258558c}{Scale} (const std\+::string \&name, size\+\_\+t point\+Dimension=2)
+\item 
+\hyperlink{classvct_plot2_d_base_1_1_scale_ab718b2816c31e7a78093c198cd4aeefe}{$\sim$\+Scale} ()
+\item 
+const std\+::string \& \hyperlink{classvct_plot2_d_base_1_1_scale_a4b1a356d22ebfe5f277db5022f0219a6}{Get\+Name} (void) const 
+\item 
+\hyperlink{classvct_plot2_d_base_1_1_signal}{vct\+Plot2\+D\+Base\+::\+Signal} $\ast$ \hyperlink{classvct_plot2_d_base_1_1_scale_a67005ed4b0e8bd8c89a6b186f56fb212}{Add\+Signal} (const std\+::string \&name)
+\item 
+bool \hyperlink{classvct_plot2_d_base_1_1_scale_aaf43fbe7999fd1baba8fc8517fb4895b}{Remove\+Signal} (const std\+::string \&name)
+\item 
+bool \hyperlink{classvct_plot2_d_base_1_1_scale_a1126d671423cec3ae36a603ef3a92671}{Remove\+Signal} (const \hyperlink{classvct_plot2_d_base_1_1_signal}{Signal} $\ast$signal)
+\item 
+const \hyperlink{classvct_plot2_d_base_1_1_scale_aecdc247557c6ec3b7976596b42a4bc27}{Signals\+Type} \& \hyperlink{classvct_plot2_d_base_1_1_scale_a5e87d8b79805fa93432db0b84d428277}{Get\+Signals} (void) const 
+\item 
+\hyperlink{classvct_plot2_d_base_1_1_vertical_line}{vct\+Plot2\+D\+Base\+::\+Vertical\+Line} $\ast$ \hyperlink{classvct_plot2_d_base_1_1_scale_a84606196b9fb60404ea6cba5737b6e9f}{Add\+Vertical\+Line} (const std\+::string \&name)
+\item 
+void \hyperlink{classvct_plot2_d_base_1_1_scale_af435cf974388b55c8f044c3fc0d795c8}{Set\+Color} (const \hyperlink{vct_fixed_size_vector_types_8h_a4a89122c9d7f72c3f31fe8126e17c3af}{vct\+Double3} \&color\+In\+Range0\+To1)
+\item 
+void \hyperlink{classvct_plot2_d_base_1_1_scale_a396bd19c150f3a7542442b7afd8403a3}{Freeze} (bool freeze)
+\item 
+bool \hyperlink{classvct_plot2_d_base_1_1_scale_a70b4900ca146f2c700c0d7b800c8be98}{Get\+Freeze} (void) const 
+\item 
+void \hyperlink{classvct_plot2_d_base_1_1_scale_aecac590af41e0fd998fe7d8b6c91492e}{Continuous\+Update} (void)
+\end{DoxyCompactItemize}
+{\bf }\par
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classvct_plot2_d_base_1_1_scale_aea5c908466465711922ceaa8245bb96f}{Set\+Continuous\+Fit\+X} (bool fit)
+\item 
+void \hyperlink{classvct_plot2_d_base_1_1_scale_a860a6e558da6149c743e6fc60f90f744}{Set\+Continuous\+Fit\+Y} (bool fit)
+\item 
+void \hyperlink{classvct_plot2_d_base_1_1_scale_a0a1358c1d3f86a3e07edc4f2ee5264bf}{Set\+Continuous\+Expand\+Y} (bool expand)
+\end{DoxyCompactItemize}
+
+{\bf }\par
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classvct_plot2_d_base_1_1_scale_adcc4dbccfa311a0c353dfdab8be300a9}{Get\+Continuous\+Fit\+X} (void) const 
+\item 
+bool \hyperlink{classvct_plot2_d_base_1_1_scale_a1834c8b58a055af01b0dc3cf416f0e3a}{Get\+Continuous\+Fit\+Y} (void) const 
+\item 
+bool \hyperlink{classvct_plot2_d_base_1_1_scale_aa776dec8e6ab48ea4e750d5087b51e2f}{Get\+Continuous\+Expand\+Y} (void) const 
+\item 
+const \hyperlink{vct_fixed_size_vector_types_8h_afc0fdcc41cbe8b043747612501610812}{vct\+Double2} \& \hyperlink{classvct_plot2_d_base_1_1_scale_ae94065727370a80270300269cf80f79f}{Get\+Viewing\+Range\+X} (void)
+\item 
+const \hyperlink{vct_fixed_size_vector_types_8h_afc0fdcc41cbe8b043747612501610812}{vct\+Double2} \& \hyperlink{classvct_plot2_d_base_1_1_scale_a3b2b5ab13e443cc3020e251a8a039214}{Get\+Viewing\+Range\+Y} (void)
+\end{DoxyCompactItemize}
+
+{\bf }\par
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classvct_plot2_d_base_1_1_scale_a084a67fb1d9f2e88b5f112420ac67ff1}{Compute\+Data\+Range\+X} (double \&min, double \&max, bool assumes\+Data\+Sorted=false) const 
+\item 
+bool \hyperlink{classvct_plot2_d_base_1_1_scale_a9f3e0aac2072a067b34af58353f9c58f}{Compute\+Data\+Range\+Y} (double \&min, double \&max)
+\item 
+bool \hyperlink{classvct_plot2_d_base_1_1_scale_a6112d224229d6dadf22f4185cc6b3f0d}{Compute\+Data\+Range\+X\+Y} (\hyperlink{vct_fixed_size_vector_types_8h_afc0fdcc41cbe8b043747612501610812}{vct\+Double2} \&min, \hyperlink{vct_fixed_size_vector_types_8h_afc0fdcc41cbe8b043747612501610812}{vct\+Double2} \&max)
+\end{DoxyCompactItemize}
+
+{\bf }\par
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classvct_plot2_d_base_1_1_scale_ae59a2d3e1f34b425c488308a98744cf6}{Auto\+Fit\+X} (double padding=0.\+0)
+\item 
+void \hyperlink{classvct_plot2_d_base_1_1_scale_a21172ea983325a8e9234b3766d36af25}{Fit\+X} (double min, double max, double padding=0.\+0)
+\item 
+void \hyperlink{classvct_plot2_d_base_1_1_scale_aee7ab703d38626e8f9ec1071c291180e}{Auto\+Fit\+Y} (double padding=0.\+1)
+\item 
+void \hyperlink{classvct_plot2_d_base_1_1_scale_a3e2087e860cd0a3529d99c27fd8d4b52}{Auto\+Expand\+Y} (double padding=0.\+1)
+\item 
+void \hyperlink{classvct_plot2_d_base_1_1_scale_a1653c8301f2b869b07b862b97c66558f}{Fit\+Y} (double min, double max, double padding=0.\+1)
+\item 
+void \hyperlink{classvct_plot2_d_base_1_1_scale_ab8fe8d00ed232507fdb75815d34b98bd}{Auto\+Fit\+X\+Y} (const \hyperlink{vct_fixed_size_vector_types_8h_afc0fdcc41cbe8b043747612501610812}{vct\+Double2} \&padding=\hyperlink{vct_fixed_size_vector_types_8h_afc0fdcc41cbe8b043747612501610812}{vct\+Double2}(0.\+0, 0.\+1))
+\item 
+void \hyperlink{classvct_plot2_d_base_1_1_scale_a03dcf9af74b2c77604707595ae00acf8}{Auto\+Fit\+X\+Expand\+Y} (const \hyperlink{vct_fixed_size_vector_types_8h_afc0fdcc41cbe8b043747612501610812}{vct\+Double2} \&padding=\hyperlink{vct_fixed_size_vector_types_8h_afc0fdcc41cbe8b043747612501610812}{vct\+Double2}(0.\+0, 0.\+1))
+\item 
+void \hyperlink{classvct_plot2_d_base_1_1_scale_ac598d8ba71af64d422a46a3dea22bb25}{Fit\+X\+Y} (\hyperlink{vct_fixed_size_vector_types_8h_afc0fdcc41cbe8b043747612501610812}{vct\+Double2} min, \hyperlink{vct_fixed_size_vector_types_8h_afc0fdcc41cbe8b043747612501610812}{vct\+Double2} max, const \hyperlink{vct_fixed_size_vector_types_8h_afc0fdcc41cbe8b043747612501610812}{vct\+Double2} \&padding=\hyperlink{vct_fixed_size_vector_types_8h_afc0fdcc41cbe8b043747612501610812}{vct\+Double2}(0.\+0, 0.\+1))
+\end{DoxyCompactItemize}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classvct_plot2_d_base_1_1_scale_aecdc247557c6ec3b7976596b42a4bc27}{Signals\+Type} \hyperlink{classvct_plot2_d_base_1_1_scale_aaf49bb6b91be117e05da71e7aa19fdc0}{Signals}
+\item 
+\hyperlink{classvct_plot2_d_base_1_1_scale_acd4d4d528f1381dfd1145ceec34b25ba}{Vertical\+Lines\+Type} \hyperlink{classvct_plot2_d_base_1_1_scale_abf66269635d563e367c3afeba8334053}{Vertical\+Lines}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classvct_plot2_d_base_1_1_scale_af427cb10aa8954351e39f21ad9b03b31}{Continuous\+Fit\+X}
+\item 
+bool \hyperlink{classvct_plot2_d_base_1_1_scale_a2458a3a97a0362e8abbb253bffaf1e02}{Continuous\+Fit\+Y}
+\item 
+bool \hyperlink{classvct_plot2_d_base_1_1_scale_a46c3d6f50988f6f4e9ca584b2162b79a}{Continuous\+Expand\+Y}
+\item 
+double \hyperlink{classvct_plot2_d_base_1_1_scale_a8c14c31f9f79bddb29f2e5708712e3ab}{Expand\+Y\+Min}
+\item 
+double \hyperlink{classvct_plot2_d_base_1_1_scale_a21b8fd5b223a8aacf1f0dffe9858c286}{Expand\+Y\+Max}
+\item 
+\hyperlink{vct_fixed_size_vector_types_8h_afc0fdcc41cbe8b043747612501610812}{vct\+Double2} \hyperlink{classvct_plot2_d_base_1_1_scale_a3ad0dc662565feaa26046ab15b40efb1}{Viewport}
+\item 
+\hyperlink{vct_fixed_size_vector_types_8h_afc0fdcc41cbe8b043747612501610812}{vct\+Double2} \hyperlink{classvct_plot2_d_base_1_1_scale_a9d017bf27e0f5cef7a916acb0c5b9638}{Viewing\+Range\+X}
+\item 
+\hyperlink{vct_fixed_size_vector_types_8h_afc0fdcc41cbe8b043747612501610812}{vct\+Double2} \hyperlink{classvct_plot2_d_base_1_1_scale_accd0d96ac002b90cabd39bcd3bcc4ee4}{Viewing\+Range\+Y}
+\item 
+\hyperlink{vct_fixed_size_vector_types_8h_afc0fdcc41cbe8b043747612501610812}{vct\+Double2} \hyperlink{classvct_plot2_d_base_1_1_scale_a3155819b99d706351348e96ab827665c}{Translation}
+\item 
+\hyperlink{vct_fixed_size_vector_types_8h_afc0fdcc41cbe8b043747612501610812}{vct\+Double2} \hyperlink{classvct_plot2_d_base_1_1_scale_ad947e7d58e45f838430c34d70c0ec401}{Scale\+Value}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classvct_plot2_d_base_1_1_scale_ab1e5a371f284a693f5624104a92ac684}{vct\+Plot2\+D\+Base}
+\item 
+class \hyperlink{classvct_plot2_d_base_1_1_scale_a2a04e9e21d2a68342a48b433ff25b7f7}{vct\+Plot2\+D\+Open\+G\+L}
+\item 
+class \hyperlink{classvct_plot2_d_base_1_1_scale_a61e8f9a436596e1195d2b34b7b5c6f2e}{vct\+Plot2\+D\+V\+T\+K}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classvct_plot2_d_base_1_1_scale_aecdc247557c6ec3b7976596b42a4bc27}{}\index{vct\+Plot2\+D\+Base\+::\+Scale@{vct\+Plot2\+D\+Base\+::\+Scale}!Signals\+Type@{Signals\+Type}}
+\index{Signals\+Type@{Signals\+Type}!vct\+Plot2\+D\+Base\+::\+Scale@{vct\+Plot2\+D\+Base\+::\+Scale}}
+\subsubsection[{Signals\+Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::map$<$std\+::string, {\bf Signal} $\ast$$>$ {\bf vct\+Plot2\+D\+Base\+::\+Scale\+::\+Signals\+Type}}\label{classvct_plot2_d_base_1_1_scale_aecdc247557c6ec3b7976596b42a4bc27}
+\hypertarget{classvct_plot2_d_base_1_1_scale_acd4d4d528f1381dfd1145ceec34b25ba}{}\index{vct\+Plot2\+D\+Base\+::\+Scale@{vct\+Plot2\+D\+Base\+::\+Scale}!Vertical\+Lines\+Type@{Vertical\+Lines\+Type}}
+\index{Vertical\+Lines\+Type@{Vertical\+Lines\+Type}!vct\+Plot2\+D\+Base\+::\+Scale@{vct\+Plot2\+D\+Base\+::\+Scale}}
+\subsubsection[{Vertical\+Lines\+Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::map$<$std\+::string, {\bf Vertical\+Line} $\ast$$>$ {\bf vct\+Plot2\+D\+Base\+::\+Scale\+::\+Vertical\+Lines\+Type}}\label{classvct_plot2_d_base_1_1_scale_acd4d4d528f1381dfd1145ceec34b25ba}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classvct_plot2_d_base_1_1_scale_a1383daa58c4c2ce603a751ff9258558c}{}\index{vct\+Plot2\+D\+Base\+::\+Scale@{vct\+Plot2\+D\+Base\+::\+Scale}!Scale@{Scale}}
+\index{Scale@{Scale}!vct\+Plot2\+D\+Base\+::\+Scale@{vct\+Plot2\+D\+Base\+::\+Scale}}
+\subsubsection[{Scale}]{\setlength{\rightskip}{0pt plus 5cm}vct\+Plot2\+D\+Base\+::\+Scale\+::\+Scale (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name, }
+\item[{size\+\_\+t}]{point\+Dimension = {\ttfamily 2}}
+\end{DoxyParamCaption}
+)}\label{classvct_plot2_d_base_1_1_scale_a1383daa58c4c2ce603a751ff9258558c}
+\hypertarget{classvct_plot2_d_base_1_1_scale_ab718b2816c31e7a78093c198cd4aeefe}{}\index{vct\+Plot2\+D\+Base\+::\+Scale@{vct\+Plot2\+D\+Base\+::\+Scale}!````~Scale@{$\sim$\+Scale}}
+\index{````~Scale@{$\sim$\+Scale}!vct\+Plot2\+D\+Base\+::\+Scale@{vct\+Plot2\+D\+Base\+::\+Scale}}
+\subsubsection[{$\sim$\+Scale}]{\setlength{\rightskip}{0pt plus 5cm}vct\+Plot2\+D\+Base\+::\+Scale\+::$\sim$\+Scale (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classvct_plot2_d_base_1_1_scale_ab718b2816c31e7a78093c198cd4aeefe}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classvct_plot2_d_base_1_1_scale_a67005ed4b0e8bd8c89a6b186f56fb212}{}\index{vct\+Plot2\+D\+Base\+::\+Scale@{vct\+Plot2\+D\+Base\+::\+Scale}!Add\+Signal@{Add\+Signal}}
+\index{Add\+Signal@{Add\+Signal}!vct\+Plot2\+D\+Base\+::\+Scale@{vct\+Plot2\+D\+Base\+::\+Scale}}
+\subsubsection[{Add\+Signal}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Plot2\+D\+Base\+::\+Signal}$\ast$ vct\+Plot2\+D\+Base\+::\+Scale\+::\+Add\+Signal (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name}
+\end{DoxyParamCaption}
+)}\label{classvct_plot2_d_base_1_1_scale_a67005ed4b0e8bd8c89a6b186f56fb212}
+\hypertarget{classvct_plot2_d_base_1_1_scale_a84606196b9fb60404ea6cba5737b6e9f}{}\index{vct\+Plot2\+D\+Base\+::\+Scale@{vct\+Plot2\+D\+Base\+::\+Scale}!Add\+Vertical\+Line@{Add\+Vertical\+Line}}
+\index{Add\+Vertical\+Line@{Add\+Vertical\+Line}!vct\+Plot2\+D\+Base\+::\+Scale@{vct\+Plot2\+D\+Base\+::\+Scale}}
+\subsubsection[{Add\+Vertical\+Line}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Plot2\+D\+Base\+::\+Vertical\+Line}$\ast$ vct\+Plot2\+D\+Base\+::\+Scale\+::\+Add\+Vertical\+Line (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name}
+\end{DoxyParamCaption}
+)}\label{classvct_plot2_d_base_1_1_scale_a84606196b9fb60404ea6cba5737b6e9f}
+\hypertarget{classvct_plot2_d_base_1_1_scale_a3e2087e860cd0a3529d99c27fd8d4b52}{}\index{vct\+Plot2\+D\+Base\+::\+Scale@{vct\+Plot2\+D\+Base\+::\+Scale}!Auto\+Expand\+Y@{Auto\+Expand\+Y}}
+\index{Auto\+Expand\+Y@{Auto\+Expand\+Y}!vct\+Plot2\+D\+Base\+::\+Scale@{vct\+Plot2\+D\+Base\+::\+Scale}}
+\subsubsection[{Auto\+Expand\+Y}]{\setlength{\rightskip}{0pt plus 5cm}void vct\+Plot2\+D\+Base\+::\+Scale\+::\+Auto\+Expand\+Y (
+\begin{DoxyParamCaption}
+\item[{double}]{padding = {\ttfamily 0.1}}
+\end{DoxyParamCaption}
+)}\label{classvct_plot2_d_base_1_1_scale_a3e2087e860cd0a3529d99c27fd8d4b52}
+\hypertarget{classvct_plot2_d_base_1_1_scale_ae59a2d3e1f34b425c488308a98744cf6}{}\index{vct\+Plot2\+D\+Base\+::\+Scale@{vct\+Plot2\+D\+Base\+::\+Scale}!Auto\+Fit\+X@{Auto\+Fit\+X}}
+\index{Auto\+Fit\+X@{Auto\+Fit\+X}!vct\+Plot2\+D\+Base\+::\+Scale@{vct\+Plot2\+D\+Base\+::\+Scale}}
+\subsubsection[{Auto\+Fit\+X}]{\setlength{\rightskip}{0pt plus 5cm}void vct\+Plot2\+D\+Base\+::\+Scale\+::\+Auto\+Fit\+X (
+\begin{DoxyParamCaption}
+\item[{double}]{padding = {\ttfamily 0.0}}
+\end{DoxyParamCaption}
+)}\label{classvct_plot2_d_base_1_1_scale_ae59a2d3e1f34b425c488308a98744cf6}
+Data recentering, these methods re-\/align the data once only, based on all signals. Padding is used to make sure the data is not plotted at the extreme edges of the window. The padding parameter indicates the percentage of space that should be left empty. For example, a 200 pixel window with a padding of 0.\+1 (10\%) will leave a band of 10 pixels empty on each side of the window. By default, the padding in X (horizontal) is null and 10\% (0.\+1) in Y (vertical). \hypertarget{classvct_plot2_d_base_1_1_scale_a03dcf9af74b2c77604707595ae00acf8}{}\index{vct\+Plot2\+D\+Base\+::\+Scale@{vct\+Plot2\+D\+Base\+::\+Scale}!Auto\+Fit\+X\+Expand\+Y@{Auto\+Fit\+X\+Expand\+Y}}
+\index{Auto\+Fit\+X\+Expand\+Y@{Auto\+Fit\+X\+Expand\+Y}!vct\+Plot2\+D\+Base\+::\+Scale@{vct\+Plot2\+D\+Base\+::\+Scale}}
+\subsubsection[{Auto\+Fit\+X\+Expand\+Y}]{\setlength{\rightskip}{0pt plus 5cm}void vct\+Plot2\+D\+Base\+::\+Scale\+::\+Auto\+Fit\+X\+Expand\+Y (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Double2} \&}]{padding = {\ttfamily {\bf vct\+Double2}(0.0,~0.1)}}
+\end{DoxyParamCaption}
+)}\label{classvct_plot2_d_base_1_1_scale_a03dcf9af74b2c77604707595ae00acf8}
+\hypertarget{classvct_plot2_d_base_1_1_scale_ab8fe8d00ed232507fdb75815d34b98bd}{}\index{vct\+Plot2\+D\+Base\+::\+Scale@{vct\+Plot2\+D\+Base\+::\+Scale}!Auto\+Fit\+X\+Y@{Auto\+Fit\+X\+Y}}
+\index{Auto\+Fit\+X\+Y@{Auto\+Fit\+X\+Y}!vct\+Plot2\+D\+Base\+::\+Scale@{vct\+Plot2\+D\+Base\+::\+Scale}}
+\subsubsection[{Auto\+Fit\+X\+Y}]{\setlength{\rightskip}{0pt plus 5cm}void vct\+Plot2\+D\+Base\+::\+Scale\+::\+Auto\+Fit\+X\+Y (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Double2} \&}]{padding = {\ttfamily {\bf vct\+Double2}(0.0,~0.1)}}
+\end{DoxyParamCaption}
+)}\label{classvct_plot2_d_base_1_1_scale_ab8fe8d00ed232507fdb75815d34b98bd}
+\hypertarget{classvct_plot2_d_base_1_1_scale_aee7ab703d38626e8f9ec1071c291180e}{}\index{vct\+Plot2\+D\+Base\+::\+Scale@{vct\+Plot2\+D\+Base\+::\+Scale}!Auto\+Fit\+Y@{Auto\+Fit\+Y}}
+\index{Auto\+Fit\+Y@{Auto\+Fit\+Y}!vct\+Plot2\+D\+Base\+::\+Scale@{vct\+Plot2\+D\+Base\+::\+Scale}}
+\subsubsection[{Auto\+Fit\+Y}]{\setlength{\rightskip}{0pt plus 5cm}void vct\+Plot2\+D\+Base\+::\+Scale\+::\+Auto\+Fit\+Y (
+\begin{DoxyParamCaption}
+\item[{double}]{padding = {\ttfamily 0.1}}
+\end{DoxyParamCaption}
+)}\label{classvct_plot2_d_base_1_1_scale_aee7ab703d38626e8f9ec1071c291180e}
+\hypertarget{classvct_plot2_d_base_1_1_scale_a084a67fb1d9f2e88b5f112420ac67ff1}{}\index{vct\+Plot2\+D\+Base\+::\+Scale@{vct\+Plot2\+D\+Base\+::\+Scale}!Compute\+Data\+Range\+X@{Compute\+Data\+Range\+X}}
+\index{Compute\+Data\+Range\+X@{Compute\+Data\+Range\+X}!vct\+Plot2\+D\+Base\+::\+Scale@{vct\+Plot2\+D\+Base\+::\+Scale}}
+\subsubsection[{Compute\+Data\+Range\+X}]{\setlength{\rightskip}{0pt plus 5cm}bool vct\+Plot2\+D\+Base\+::\+Scale\+::\+Compute\+Data\+Range\+X (
+\begin{DoxyParamCaption}
+\item[{double \&}]{min, }
+\item[{double \&}]{max, }
+\item[{bool}]{assumes\+Data\+Sorted = {\ttfamily false}}
+\end{DoxyParamCaption}
+) const}\label{classvct_plot2_d_base_1_1_scale_a084a67fb1d9f2e88b5f112420ac67ff1}
+To fit the data in the viewport we need to compute the range for all signals. To reduce the number of computations, three methods are provided, one that compute the X range only, one for the Y range only and one for both X and Y. Each method calls the corresponding compute data range for all signals in the scale. \hypertarget{classvct_plot2_d_base_1_1_scale_a6112d224229d6dadf22f4185cc6b3f0d}{}\index{vct\+Plot2\+D\+Base\+::\+Scale@{vct\+Plot2\+D\+Base\+::\+Scale}!Compute\+Data\+Range\+X\+Y@{Compute\+Data\+Range\+X\+Y}}
+\index{Compute\+Data\+Range\+X\+Y@{Compute\+Data\+Range\+X\+Y}!vct\+Plot2\+D\+Base\+::\+Scale@{vct\+Plot2\+D\+Base\+::\+Scale}}
+\subsubsection[{Compute\+Data\+Range\+X\+Y}]{\setlength{\rightskip}{0pt plus 5cm}bool vct\+Plot2\+D\+Base\+::\+Scale\+::\+Compute\+Data\+Range\+X\+Y (
+\begin{DoxyParamCaption}
+\item[{{\bf vct\+Double2} \&}]{min, }
+\item[{{\bf vct\+Double2} \&}]{max}
+\end{DoxyParamCaption}
+)}\label{classvct_plot2_d_base_1_1_scale_a6112d224229d6dadf22f4185cc6b3f0d}
+\hypertarget{classvct_plot2_d_base_1_1_scale_a9f3e0aac2072a067b34af58353f9c58f}{}\index{vct\+Plot2\+D\+Base\+::\+Scale@{vct\+Plot2\+D\+Base\+::\+Scale}!Compute\+Data\+Range\+Y@{Compute\+Data\+Range\+Y}}
+\index{Compute\+Data\+Range\+Y@{Compute\+Data\+Range\+Y}!vct\+Plot2\+D\+Base\+::\+Scale@{vct\+Plot2\+D\+Base\+::\+Scale}}
+\subsubsection[{Compute\+Data\+Range\+Y}]{\setlength{\rightskip}{0pt plus 5cm}bool vct\+Plot2\+D\+Base\+::\+Scale\+::\+Compute\+Data\+Range\+Y (
+\begin{DoxyParamCaption}
+\item[{double \&}]{min, }
+\item[{double \&}]{max}
+\end{DoxyParamCaption}
+)}\label{classvct_plot2_d_base_1_1_scale_a9f3e0aac2072a067b34af58353f9c58f}
+\hypertarget{classvct_plot2_d_base_1_1_scale_aecac590af41e0fd998fe7d8b6c91492e}{}\index{vct\+Plot2\+D\+Base\+::\+Scale@{vct\+Plot2\+D\+Base\+::\+Scale}!Continuous\+Update@{Continuous\+Update}}
+\index{Continuous\+Update@{Continuous\+Update}!vct\+Plot2\+D\+Base\+::\+Scale@{vct\+Plot2\+D\+Base\+::\+Scale}}
+\subsubsection[{Continuous\+Update}]{\setlength{\rightskip}{0pt plus 5cm}void vct\+Plot2\+D\+Base\+::\+Scale\+::\+Continuous\+Update (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classvct_plot2_d_base_1_1_scale_aecac590af41e0fd998fe7d8b6c91492e}
+\hypertarget{classvct_plot2_d_base_1_1_scale_a21172ea983325a8e9234b3766d36af25}{}\index{vct\+Plot2\+D\+Base\+::\+Scale@{vct\+Plot2\+D\+Base\+::\+Scale}!Fit\+X@{Fit\+X}}
+\index{Fit\+X@{Fit\+X}!vct\+Plot2\+D\+Base\+::\+Scale@{vct\+Plot2\+D\+Base\+::\+Scale}}
+\subsubsection[{Fit\+X}]{\setlength{\rightskip}{0pt plus 5cm}void vct\+Plot2\+D\+Base\+::\+Scale\+::\+Fit\+X (
+\begin{DoxyParamCaption}
+\item[{double}]{min, }
+\item[{double}]{max, }
+\item[{double}]{padding = {\ttfamily 0.0}}
+\end{DoxyParamCaption}
+)}\label{classvct_plot2_d_base_1_1_scale_a21172ea983325a8e9234b3766d36af25}
+\hypertarget{classvct_plot2_d_base_1_1_scale_ac598d8ba71af64d422a46a3dea22bb25}{}\index{vct\+Plot2\+D\+Base\+::\+Scale@{vct\+Plot2\+D\+Base\+::\+Scale}!Fit\+X\+Y@{Fit\+X\+Y}}
+\index{Fit\+X\+Y@{Fit\+X\+Y}!vct\+Plot2\+D\+Base\+::\+Scale@{vct\+Plot2\+D\+Base\+::\+Scale}}
+\subsubsection[{Fit\+X\+Y}]{\setlength{\rightskip}{0pt plus 5cm}void vct\+Plot2\+D\+Base\+::\+Scale\+::\+Fit\+X\+Y (
+\begin{DoxyParamCaption}
+\item[{{\bf vct\+Double2}}]{min, }
+\item[{{\bf vct\+Double2}}]{max, }
+\item[{const {\bf vct\+Double2} \&}]{padding = {\ttfamily {\bf vct\+Double2}(0.0,~0.1)}}
+\end{DoxyParamCaption}
+)}\label{classvct_plot2_d_base_1_1_scale_ac598d8ba71af64d422a46a3dea22bb25}
+\hypertarget{classvct_plot2_d_base_1_1_scale_a1653c8301f2b869b07b862b97c66558f}{}\index{vct\+Plot2\+D\+Base\+::\+Scale@{vct\+Plot2\+D\+Base\+::\+Scale}!Fit\+Y@{Fit\+Y}}
+\index{Fit\+Y@{Fit\+Y}!vct\+Plot2\+D\+Base\+::\+Scale@{vct\+Plot2\+D\+Base\+::\+Scale}}
+\subsubsection[{Fit\+Y}]{\setlength{\rightskip}{0pt plus 5cm}void vct\+Plot2\+D\+Base\+::\+Scale\+::\+Fit\+Y (
+\begin{DoxyParamCaption}
+\item[{double}]{min, }
+\item[{double}]{max, }
+\item[{double}]{padding = {\ttfamily 0.1}}
+\end{DoxyParamCaption}
+)}\label{classvct_plot2_d_base_1_1_scale_a1653c8301f2b869b07b862b97c66558f}
+\hypertarget{classvct_plot2_d_base_1_1_scale_a396bd19c150f3a7542442b7afd8403a3}{}\index{vct\+Plot2\+D\+Base\+::\+Scale@{vct\+Plot2\+D\+Base\+::\+Scale}!Freeze@{Freeze}}
+\index{Freeze@{Freeze}!vct\+Plot2\+D\+Base\+::\+Scale@{vct\+Plot2\+D\+Base\+::\+Scale}}
+\subsubsection[{Freeze}]{\setlength{\rightskip}{0pt plus 5cm}void vct\+Plot2\+D\+Base\+::\+Scale\+::\+Freeze (
+\begin{DoxyParamCaption}
+\item[{bool}]{freeze}
+\end{DoxyParamCaption}
+)}\label{classvct_plot2_d_base_1_1_scale_a396bd19c150f3a7542442b7afd8403a3}
+\hypertarget{classvct_plot2_d_base_1_1_scale_aa776dec8e6ab48ea4e750d5087b51e2f}{}\index{vct\+Plot2\+D\+Base\+::\+Scale@{vct\+Plot2\+D\+Base\+::\+Scale}!Get\+Continuous\+Expand\+Y@{Get\+Continuous\+Expand\+Y}}
+\index{Get\+Continuous\+Expand\+Y@{Get\+Continuous\+Expand\+Y}!vct\+Plot2\+D\+Base\+::\+Scale@{vct\+Plot2\+D\+Base\+::\+Scale}}
+\subsubsection[{Get\+Continuous\+Expand\+Y}]{\setlength{\rightskip}{0pt plus 5cm}bool vct\+Plot2\+D\+Base\+::\+Scale\+::\+Get\+Continuous\+Expand\+Y (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_plot2_d_base_1_1_scale_aa776dec8e6ab48ea4e750d5087b51e2f}
+\hypertarget{classvct_plot2_d_base_1_1_scale_adcc4dbccfa311a0c353dfdab8be300a9}{}\index{vct\+Plot2\+D\+Base\+::\+Scale@{vct\+Plot2\+D\+Base\+::\+Scale}!Get\+Continuous\+Fit\+X@{Get\+Continuous\+Fit\+X}}
+\index{Get\+Continuous\+Fit\+X@{Get\+Continuous\+Fit\+X}!vct\+Plot2\+D\+Base\+::\+Scale@{vct\+Plot2\+D\+Base\+::\+Scale}}
+\subsubsection[{Get\+Continuous\+Fit\+X}]{\setlength{\rightskip}{0pt plus 5cm}bool vct\+Plot2\+D\+Base\+::\+Scale\+::\+Get\+Continuous\+Fit\+X (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_plot2_d_base_1_1_scale_adcc4dbccfa311a0c353dfdab8be300a9}
+Query automatic recentering settings. \hypertarget{classvct_plot2_d_base_1_1_scale_a1834c8b58a055af01b0dc3cf416f0e3a}{}\index{vct\+Plot2\+D\+Base\+::\+Scale@{vct\+Plot2\+D\+Base\+::\+Scale}!Get\+Continuous\+Fit\+Y@{Get\+Continuous\+Fit\+Y}}
+\index{Get\+Continuous\+Fit\+Y@{Get\+Continuous\+Fit\+Y}!vct\+Plot2\+D\+Base\+::\+Scale@{vct\+Plot2\+D\+Base\+::\+Scale}}
+\subsubsection[{Get\+Continuous\+Fit\+Y}]{\setlength{\rightskip}{0pt plus 5cm}bool vct\+Plot2\+D\+Base\+::\+Scale\+::\+Get\+Continuous\+Fit\+Y (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_plot2_d_base_1_1_scale_a1834c8b58a055af01b0dc3cf416f0e3a}
+\hypertarget{classvct_plot2_d_base_1_1_scale_a70b4900ca146f2c700c0d7b800c8be98}{}\index{vct\+Plot2\+D\+Base\+::\+Scale@{vct\+Plot2\+D\+Base\+::\+Scale}!Get\+Freeze@{Get\+Freeze}}
+\index{Get\+Freeze@{Get\+Freeze}!vct\+Plot2\+D\+Base\+::\+Scale@{vct\+Plot2\+D\+Base\+::\+Scale}}
+\subsubsection[{Get\+Freeze}]{\setlength{\rightskip}{0pt plus 5cm}bool vct\+Plot2\+D\+Base\+::\+Scale\+::\+Get\+Freeze (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classvct_plot2_d_base_1_1_scale_a70b4900ca146f2c700c0d7b800c8be98}
+\hypertarget{classvct_plot2_d_base_1_1_scale_a4b1a356d22ebfe5f277db5022f0219a6}{}\index{vct\+Plot2\+D\+Base\+::\+Scale@{vct\+Plot2\+D\+Base\+::\+Scale}!Get\+Name@{Get\+Name}}
+\index{Get\+Name@{Get\+Name}!vct\+Plot2\+D\+Base\+::\+Scale@{vct\+Plot2\+D\+Base\+::\+Scale}}
+\subsubsection[{Get\+Name}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string\& vct\+Plot2\+D\+Base\+::\+Scale\+::\+Get\+Name (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classvct_plot2_d_base_1_1_scale_a4b1a356d22ebfe5f277db5022f0219a6}
+\hypertarget{classvct_plot2_d_base_1_1_scale_a5e87d8b79805fa93432db0b84d428277}{}\index{vct\+Plot2\+D\+Base\+::\+Scale@{vct\+Plot2\+D\+Base\+::\+Scale}!Get\+Signals@{Get\+Signals}}
+\index{Get\+Signals@{Get\+Signals}!vct\+Plot2\+D\+Base\+::\+Scale@{vct\+Plot2\+D\+Base\+::\+Scale}}
+\subsubsection[{Get\+Signals}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Signals\+Type}\& vct\+Plot2\+D\+Base\+::\+Scale\+::\+Get\+Signals (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_plot2_d_base_1_1_scale_a5e87d8b79805fa93432db0b84d428277}
+\hypertarget{classvct_plot2_d_base_1_1_scale_ae94065727370a80270300269cf80f79f}{}\index{vct\+Plot2\+D\+Base\+::\+Scale@{vct\+Plot2\+D\+Base\+::\+Scale}!Get\+Viewing\+Range\+X@{Get\+Viewing\+Range\+X}}
+\index{Get\+Viewing\+Range\+X@{Get\+Viewing\+Range\+X}!vct\+Plot2\+D\+Base\+::\+Scale@{vct\+Plot2\+D\+Base\+::\+Scale}}
+\subsubsection[{Get\+Viewing\+Range\+X}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf vct\+Double2}\& vct\+Plot2\+D\+Base\+::\+Scale\+::\+Get\+Viewing\+Range\+X (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_plot2_d_base_1_1_scale_ae94065727370a80270300269cf80f79f}
+\hypertarget{classvct_plot2_d_base_1_1_scale_a3b2b5ab13e443cc3020e251a8a039214}{}\index{vct\+Plot2\+D\+Base\+::\+Scale@{vct\+Plot2\+D\+Base\+::\+Scale}!Get\+Viewing\+Range\+Y@{Get\+Viewing\+Range\+Y}}
+\index{Get\+Viewing\+Range\+Y@{Get\+Viewing\+Range\+Y}!vct\+Plot2\+D\+Base\+::\+Scale@{vct\+Plot2\+D\+Base\+::\+Scale}}
+\subsubsection[{Get\+Viewing\+Range\+Y}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf vct\+Double2}\& vct\+Plot2\+D\+Base\+::\+Scale\+::\+Get\+Viewing\+Range\+Y (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_plot2_d_base_1_1_scale_a3b2b5ab13e443cc3020e251a8a039214}
+\hypertarget{classvct_plot2_d_base_1_1_scale_aaf43fbe7999fd1baba8fc8517fb4895b}{}\index{vct\+Plot2\+D\+Base\+::\+Scale@{vct\+Plot2\+D\+Base\+::\+Scale}!Remove\+Signal@{Remove\+Signal}}
+\index{Remove\+Signal@{Remove\+Signal}!vct\+Plot2\+D\+Base\+::\+Scale@{vct\+Plot2\+D\+Base\+::\+Scale}}
+\subsubsection[{Remove\+Signal}]{\setlength{\rightskip}{0pt plus 5cm}bool vct\+Plot2\+D\+Base\+::\+Scale\+::\+Remove\+Signal (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name}
+\end{DoxyParamCaption}
+)}\label{classvct_plot2_d_base_1_1_scale_aaf43fbe7999fd1baba8fc8517fb4895b}
+\hypertarget{classvct_plot2_d_base_1_1_scale_a1126d671423cec3ae36a603ef3a92671}{}\index{vct\+Plot2\+D\+Base\+::\+Scale@{vct\+Plot2\+D\+Base\+::\+Scale}!Remove\+Signal@{Remove\+Signal}}
+\index{Remove\+Signal@{Remove\+Signal}!vct\+Plot2\+D\+Base\+::\+Scale@{vct\+Plot2\+D\+Base\+::\+Scale}}
+\subsubsection[{Remove\+Signal}]{\setlength{\rightskip}{0pt plus 5cm}bool vct\+Plot2\+D\+Base\+::\+Scale\+::\+Remove\+Signal (
+\begin{DoxyParamCaption}
+\item[{const {\bf Signal} $\ast$}]{signal}
+\end{DoxyParamCaption}
+)}\label{classvct_plot2_d_base_1_1_scale_a1126d671423cec3ae36a603ef3a92671}
+\hypertarget{classvct_plot2_d_base_1_1_scale_af435cf974388b55c8f044c3fc0d795c8}{}\index{vct\+Plot2\+D\+Base\+::\+Scale@{vct\+Plot2\+D\+Base\+::\+Scale}!Set\+Color@{Set\+Color}}
+\index{Set\+Color@{Set\+Color}!vct\+Plot2\+D\+Base\+::\+Scale@{vct\+Plot2\+D\+Base\+::\+Scale}}
+\subsubsection[{Set\+Color}]{\setlength{\rightskip}{0pt plus 5cm}void vct\+Plot2\+D\+Base\+::\+Scale\+::\+Set\+Color (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Double3} \&}]{color\+In\+Range0\+To1}
+\end{DoxyParamCaption}
+)}\label{classvct_plot2_d_base_1_1_scale_af435cf974388b55c8f044c3fc0d795c8}
+\hypertarget{classvct_plot2_d_base_1_1_scale_a0a1358c1d3f86a3e07edc4f2ee5264bf}{}\index{vct\+Plot2\+D\+Base\+::\+Scale@{vct\+Plot2\+D\+Base\+::\+Scale}!Set\+Continuous\+Expand\+Y@{Set\+Continuous\+Expand\+Y}}
+\index{Set\+Continuous\+Expand\+Y@{Set\+Continuous\+Expand\+Y}!vct\+Plot2\+D\+Base\+::\+Scale@{vct\+Plot2\+D\+Base\+::\+Scale}}
+\subsubsection[{Set\+Continuous\+Expand\+Y}]{\setlength{\rightskip}{0pt plus 5cm}void vct\+Plot2\+D\+Base\+::\+Scale\+::\+Set\+Continuous\+Expand\+Y (
+\begin{DoxyParamCaption}
+\item[{bool}]{expand}
+\end{DoxyParamCaption}
+)}\label{classvct_plot2_d_base_1_1_scale_a0a1358c1d3f86a3e07edc4f2ee5264bf}
+\hypertarget{classvct_plot2_d_base_1_1_scale_aea5c908466465711922ceaa8245bb96f}{}\index{vct\+Plot2\+D\+Base\+::\+Scale@{vct\+Plot2\+D\+Base\+::\+Scale}!Set\+Continuous\+Fit\+X@{Set\+Continuous\+Fit\+X}}
+\index{Set\+Continuous\+Fit\+X@{Set\+Continuous\+Fit\+X}!vct\+Plot2\+D\+Base\+::\+Scale@{vct\+Plot2\+D\+Base\+::\+Scale}}
+\subsubsection[{Set\+Continuous\+Fit\+X}]{\setlength{\rightskip}{0pt plus 5cm}void vct\+Plot2\+D\+Base\+::\+Scale\+::\+Set\+Continuous\+Fit\+X (
+\begin{DoxyParamCaption}
+\item[{bool}]{fit}
+\end{DoxyParamCaption}
+)}\label{classvct_plot2_d_base_1_1_scale_aea5c908466465711922ceaa8245bb96f}
+Set options to tell Continuous update how to recenter the scale based on the signals. \hypertarget{classvct_plot2_d_base_1_1_scale_a860a6e558da6149c743e6fc60f90f744}{}\index{vct\+Plot2\+D\+Base\+::\+Scale@{vct\+Plot2\+D\+Base\+::\+Scale}!Set\+Continuous\+Fit\+Y@{Set\+Continuous\+Fit\+Y}}
+\index{Set\+Continuous\+Fit\+Y@{Set\+Continuous\+Fit\+Y}!vct\+Plot2\+D\+Base\+::\+Scale@{vct\+Plot2\+D\+Base\+::\+Scale}}
+\subsubsection[{Set\+Continuous\+Fit\+Y}]{\setlength{\rightskip}{0pt plus 5cm}void vct\+Plot2\+D\+Base\+::\+Scale\+::\+Set\+Continuous\+Fit\+Y (
+\begin{DoxyParamCaption}
+\item[{bool}]{fit}
+\end{DoxyParamCaption}
+)}\label{classvct_plot2_d_base_1_1_scale_a860a6e558da6149c743e6fc60f90f744}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classvct_plot2_d_base_1_1_scale_ab1e5a371f284a693f5624104a92ac684}{}\index{vct\+Plot2\+D\+Base\+::\+Scale@{vct\+Plot2\+D\+Base\+::\+Scale}!vct\+Plot2\+D\+Base@{vct\+Plot2\+D\+Base}}
+\index{vct\+Plot2\+D\+Base@{vct\+Plot2\+D\+Base}!vct\+Plot2\+D\+Base\+::\+Scale@{vct\+Plot2\+D\+Base\+::\+Scale}}
+\subsubsection[{vct\+Plot2\+D\+Base}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf vct\+Plot2\+D\+Base}\hspace{0.3cm}{\ttfamily [friend]}}\label{classvct_plot2_d_base_1_1_scale_ab1e5a371f284a693f5624104a92ac684}
+\hypertarget{classvct_plot2_d_base_1_1_scale_a2a04e9e21d2a68342a48b433ff25b7f7}{}\index{vct\+Plot2\+D\+Base\+::\+Scale@{vct\+Plot2\+D\+Base\+::\+Scale}!vct\+Plot2\+D\+Open\+G\+L@{vct\+Plot2\+D\+Open\+G\+L}}
+\index{vct\+Plot2\+D\+Open\+G\+L@{vct\+Plot2\+D\+Open\+G\+L}!vct\+Plot2\+D\+Base\+::\+Scale@{vct\+Plot2\+D\+Base\+::\+Scale}}
+\subsubsection[{vct\+Plot2\+D\+Open\+G\+L}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf vct\+Plot2\+D\+Open\+G\+L}\hspace{0.3cm}{\ttfamily [friend]}}\label{classvct_plot2_d_base_1_1_scale_a2a04e9e21d2a68342a48b433ff25b7f7}
+\hypertarget{classvct_plot2_d_base_1_1_scale_a61e8f9a436596e1195d2b34b7b5c6f2e}{}\index{vct\+Plot2\+D\+Base\+::\+Scale@{vct\+Plot2\+D\+Base\+::\+Scale}!vct\+Plot2\+D\+V\+T\+K@{vct\+Plot2\+D\+V\+T\+K}}
+\index{vct\+Plot2\+D\+V\+T\+K@{vct\+Plot2\+D\+V\+T\+K}!vct\+Plot2\+D\+Base\+::\+Scale@{vct\+Plot2\+D\+Base\+::\+Scale}}
+\subsubsection[{vct\+Plot2\+D\+V\+T\+K}]{\setlength{\rightskip}{0pt plus 5cm}friend class vct\+Plot2\+D\+V\+T\+K\hspace{0.3cm}{\ttfamily [friend]}}\label{classvct_plot2_d_base_1_1_scale_a61e8f9a436596e1195d2b34b7b5c6f2e}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classvct_plot2_d_base_1_1_scale_a46c3d6f50988f6f4e9ca584b2162b79a}{}\index{vct\+Plot2\+D\+Base\+::\+Scale@{vct\+Plot2\+D\+Base\+::\+Scale}!Continuous\+Expand\+Y@{Continuous\+Expand\+Y}}
+\index{Continuous\+Expand\+Y@{Continuous\+Expand\+Y}!vct\+Plot2\+D\+Base\+::\+Scale@{vct\+Plot2\+D\+Base\+::\+Scale}}
+\subsubsection[{Continuous\+Expand\+Y}]{\setlength{\rightskip}{0pt plus 5cm}bool vct\+Plot2\+D\+Base\+::\+Scale\+::\+Continuous\+Expand\+Y\hspace{0.3cm}{\ttfamily [protected]}}\label{classvct_plot2_d_base_1_1_scale_a46c3d6f50988f6f4e9ca584b2162b79a}
+\hypertarget{classvct_plot2_d_base_1_1_scale_af427cb10aa8954351e39f21ad9b03b31}{}\index{vct\+Plot2\+D\+Base\+::\+Scale@{vct\+Plot2\+D\+Base\+::\+Scale}!Continuous\+Fit\+X@{Continuous\+Fit\+X}}
+\index{Continuous\+Fit\+X@{Continuous\+Fit\+X}!vct\+Plot2\+D\+Base\+::\+Scale@{vct\+Plot2\+D\+Base\+::\+Scale}}
+\subsubsection[{Continuous\+Fit\+X}]{\setlength{\rightskip}{0pt plus 5cm}bool vct\+Plot2\+D\+Base\+::\+Scale\+::\+Continuous\+Fit\+X\hspace{0.3cm}{\ttfamily [protected]}}\label{classvct_plot2_d_base_1_1_scale_af427cb10aa8954351e39f21ad9b03b31}
+\hypertarget{classvct_plot2_d_base_1_1_scale_a2458a3a97a0362e8abbb253bffaf1e02}{}\index{vct\+Plot2\+D\+Base\+::\+Scale@{vct\+Plot2\+D\+Base\+::\+Scale}!Continuous\+Fit\+Y@{Continuous\+Fit\+Y}}
+\index{Continuous\+Fit\+Y@{Continuous\+Fit\+Y}!vct\+Plot2\+D\+Base\+::\+Scale@{vct\+Plot2\+D\+Base\+::\+Scale}}
+\subsubsection[{Continuous\+Fit\+Y}]{\setlength{\rightskip}{0pt plus 5cm}bool vct\+Plot2\+D\+Base\+::\+Scale\+::\+Continuous\+Fit\+Y\hspace{0.3cm}{\ttfamily [protected]}}\label{classvct_plot2_d_base_1_1_scale_a2458a3a97a0362e8abbb253bffaf1e02}
+\hypertarget{classvct_plot2_d_base_1_1_scale_a21b8fd5b223a8aacf1f0dffe9858c286}{}\index{vct\+Plot2\+D\+Base\+::\+Scale@{vct\+Plot2\+D\+Base\+::\+Scale}!Expand\+Y\+Max@{Expand\+Y\+Max}}
+\index{Expand\+Y\+Max@{Expand\+Y\+Max}!vct\+Plot2\+D\+Base\+::\+Scale@{vct\+Plot2\+D\+Base\+::\+Scale}}
+\subsubsection[{Expand\+Y\+Max}]{\setlength{\rightskip}{0pt plus 5cm}double vct\+Plot2\+D\+Base\+::\+Scale\+::\+Expand\+Y\+Max\hspace{0.3cm}{\ttfamily [protected]}}\label{classvct_plot2_d_base_1_1_scale_a21b8fd5b223a8aacf1f0dffe9858c286}
+\hypertarget{classvct_plot2_d_base_1_1_scale_a8c14c31f9f79bddb29f2e5708712e3ab}{}\index{vct\+Plot2\+D\+Base\+::\+Scale@{vct\+Plot2\+D\+Base\+::\+Scale}!Expand\+Y\+Min@{Expand\+Y\+Min}}
+\index{Expand\+Y\+Min@{Expand\+Y\+Min}!vct\+Plot2\+D\+Base\+::\+Scale@{vct\+Plot2\+D\+Base\+::\+Scale}}
+\subsubsection[{Expand\+Y\+Min}]{\setlength{\rightskip}{0pt plus 5cm}double vct\+Plot2\+D\+Base\+::\+Scale\+::\+Expand\+Y\+Min\hspace{0.3cm}{\ttfamily [protected]}}\label{classvct_plot2_d_base_1_1_scale_a8c14c31f9f79bddb29f2e5708712e3ab}
+\hypertarget{classvct_plot2_d_base_1_1_scale_ad947e7d58e45f838430c34d70c0ec401}{}\index{vct\+Plot2\+D\+Base\+::\+Scale@{vct\+Plot2\+D\+Base\+::\+Scale}!Scale\+Value@{Scale\+Value}}
+\index{Scale\+Value@{Scale\+Value}!vct\+Plot2\+D\+Base\+::\+Scale@{vct\+Plot2\+D\+Base\+::\+Scale}}
+\subsubsection[{Scale\+Value}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Double2} vct\+Plot2\+D\+Base\+::\+Scale\+::\+Scale\+Value\hspace{0.3cm}{\ttfamily [protected]}}\label{classvct_plot2_d_base_1_1_scale_ad947e7d58e45f838430c34d70c0ec401}
+\hypertarget{classvct_plot2_d_base_1_1_scale_aaf49bb6b91be117e05da71e7aa19fdc0}{}\index{vct\+Plot2\+D\+Base\+::\+Scale@{vct\+Plot2\+D\+Base\+::\+Scale}!Signals@{Signals}}
+\index{Signals@{Signals}!vct\+Plot2\+D\+Base\+::\+Scale@{vct\+Plot2\+D\+Base\+::\+Scale}}
+\subsubsection[{Signals}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Signals\+Type} vct\+Plot2\+D\+Base\+::\+Scale\+::\+Signals}\label{classvct_plot2_d_base_1_1_scale_aaf49bb6b91be117e05da71e7aa19fdc0}
+\hypertarget{classvct_plot2_d_base_1_1_scale_a3155819b99d706351348e96ab827665c}{}\index{vct\+Plot2\+D\+Base\+::\+Scale@{vct\+Plot2\+D\+Base\+::\+Scale}!Translation@{Translation}}
+\index{Translation@{Translation}!vct\+Plot2\+D\+Base\+::\+Scale@{vct\+Plot2\+D\+Base\+::\+Scale}}
+\subsubsection[{Translation}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Double2} vct\+Plot2\+D\+Base\+::\+Scale\+::\+Translation\hspace{0.3cm}{\ttfamily [protected]}}\label{classvct_plot2_d_base_1_1_scale_a3155819b99d706351348e96ab827665c}
+\hypertarget{classvct_plot2_d_base_1_1_scale_abf66269635d563e367c3afeba8334053}{}\index{vct\+Plot2\+D\+Base\+::\+Scale@{vct\+Plot2\+D\+Base\+::\+Scale}!Vertical\+Lines@{Vertical\+Lines}}
+\index{Vertical\+Lines@{Vertical\+Lines}!vct\+Plot2\+D\+Base\+::\+Scale@{vct\+Plot2\+D\+Base\+::\+Scale}}
+\subsubsection[{Vertical\+Lines}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vertical\+Lines\+Type} vct\+Plot2\+D\+Base\+::\+Scale\+::\+Vertical\+Lines}\label{classvct_plot2_d_base_1_1_scale_abf66269635d563e367c3afeba8334053}
+\hypertarget{classvct_plot2_d_base_1_1_scale_a9d017bf27e0f5cef7a916acb0c5b9638}{}\index{vct\+Plot2\+D\+Base\+::\+Scale@{vct\+Plot2\+D\+Base\+::\+Scale}!Viewing\+Range\+X@{Viewing\+Range\+X}}
+\index{Viewing\+Range\+X@{Viewing\+Range\+X}!vct\+Plot2\+D\+Base\+::\+Scale@{vct\+Plot2\+D\+Base\+::\+Scale}}
+\subsubsection[{Viewing\+Range\+X}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Double2} vct\+Plot2\+D\+Base\+::\+Scale\+::\+Viewing\+Range\+X\hspace{0.3cm}{\ttfamily [protected]}}\label{classvct_plot2_d_base_1_1_scale_a9d017bf27e0f5cef7a916acb0c5b9638}
+\hypertarget{classvct_plot2_d_base_1_1_scale_accd0d96ac002b90cabd39bcd3bcc4ee4}{}\index{vct\+Plot2\+D\+Base\+::\+Scale@{vct\+Plot2\+D\+Base\+::\+Scale}!Viewing\+Range\+Y@{Viewing\+Range\+Y}}
+\index{Viewing\+Range\+Y@{Viewing\+Range\+Y}!vct\+Plot2\+D\+Base\+::\+Scale@{vct\+Plot2\+D\+Base\+::\+Scale}}
+\subsubsection[{Viewing\+Range\+Y}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Double2} vct\+Plot2\+D\+Base\+::\+Scale\+::\+Viewing\+Range\+Y\hspace{0.3cm}{\ttfamily [protected]}}\label{classvct_plot2_d_base_1_1_scale_accd0d96ac002b90cabd39bcd3bcc4ee4}
+\hypertarget{classvct_plot2_d_base_1_1_scale_a3ad0dc662565feaa26046ab15b40efb1}{}\index{vct\+Plot2\+D\+Base\+::\+Scale@{vct\+Plot2\+D\+Base\+::\+Scale}!Viewport@{Viewport}}
+\index{Viewport@{Viewport}!vct\+Plot2\+D\+Base\+::\+Scale@{vct\+Plot2\+D\+Base\+::\+Scale}}
+\subsubsection[{Viewport}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Double2} vct\+Plot2\+D\+Base\+::\+Scale\+::\+Viewport\hspace{0.3cm}{\ttfamily [protected]}}\label{classvct_plot2_d_base_1_1_scale_a3ad0dc662565feaa26046ab15b40efb1}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Vector/\hyperlink{vct_plot2_d_base_8h}{vct\+Plot2\+D\+Base.\+h}\end{DoxyCompactItemize}

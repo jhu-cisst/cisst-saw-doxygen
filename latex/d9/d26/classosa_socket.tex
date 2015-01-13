@@ -1,0 +1,551 @@
+\hypertarget{classosa_socket}{}\section{osa\+Socket Class Reference}
+\label{classosa_socket}\index{osa\+Socket@{osa\+Socket}}
+
+
+{\ttfamily \#include $<$osa\+Socket.\+h$>$}
+
+Inheritance diagram for osa\+Socket\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{d9/d26/classosa_socket}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classosa_socket_adeb99e6a5b2d4e503e0308ccb9677a00}{Socket\+Types} \{ \hyperlink{classosa_socket_adeb99e6a5b2d4e503e0308ccb9677a00a30ff2c2d5d46158f56ac6d521629612a}{U\+D\+P}, 
+\hyperlink{classosa_socket_adeb99e6a5b2d4e503e0308ccb9677a00a285ce3d0ac4094f708fa3f7b2f222430}{T\+C\+P}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classosa_socket_a978ed4ba465032ca6061fa6486464840}{osa\+Socket} (\hyperlink{classosa_socket_adeb99e6a5b2d4e503e0308ccb9677a00}{Socket\+Types} type=\hyperlink{classosa_socket_adeb99e6a5b2d4e503e0308ccb9677a00a285ce3d0ac4094f708fa3f7b2f222430}{T\+C\+P})
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{classosa_socket_a78099904ded5203835307eac712c4a14}{$\sim$osa\+Socket} (void)
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+int \hyperlink{classosa_socket_a109a21812219017a15fea0e38aa0c3c6}{Get\+Identifier} (void) const 
+\item 
+bool \hyperlink{classosa_socket_ac057f23deeeb355089a5f0b36b82c1eb}{Assign\+Port} (unsigned short port)
+\begin{DoxyCompactList}\small\item\em Sets the port of a U\+D\+P server. \end{DoxyCompactList}\item 
+void \hyperlink{classosa_socket_a5a02b283355bf2beff6217bb2e01c03a}{Set\+Destination} (const std\+::string \&host, unsigned short port)
+\begin{DoxyCompactList}\small\item\em Set the destination address for U\+D\+P or T\+C\+P socket. \end{DoxyCompactList}\item 
+void \hyperlink{classosa_socket_ac86d6d1c9c1155aa3f6fb5fd396fb2c9}{Set\+Destination} (const \hyperlink{structosa_i_pand_port}{osa\+I\+Pand\+Port} \&ip\+\_\+port)
+\begin{DoxyCompactList}\small\item\em Set the destination address for U\+D\+P or T\+C\+P socket. \end{DoxyCompactList}\item 
+bool \hyperlink{classosa_socket_a1f354c34c89fbbd12f3dee0be6787596}{Get\+Destination} (std\+::string \&host, unsigned short \&port) const 
+\begin{DoxyCompactList}\small\item\em Get the destination address for U\+D\+P or T\+C\+P socket. This is particularly useful for programs using U\+D\+P because the the Receive method automatically updates the destination based on the address from which the packet was received. Thus, subsequent Send commands will send to this address. \end{DoxyCompactList}\item 
+bool \hyperlink{classosa_socket_aa8030ca721b7d095cf26ca40e6d237a3}{Get\+Destination} (\hyperlink{structosa_i_pand_port}{osa\+I\+Pand\+Port} \&ip\+\_\+port) const 
+\begin{DoxyCompactList}\small\item\em Get the destination address for U\+D\+P or T\+C\+P socket. This is particularly useful for programs using U\+D\+P because the the Receive method automatically updates the destination based on the address from which the packet was received. Thus, subsequent Send commands will send to this address. \end{DoxyCompactList}\item 
+bool \hyperlink{classosa_socket_a26e1010cd5c499ed8b0b3ab6a43a50cd}{Connect} (void)
+\begin{DoxyCompactList}\small\item\em Connect to the server; required for T\+C\+P sockets and should be used after \hyperlink{classosa_socket_a5a02b283355bf2beff6217bb2e01c03a}{Set\+Destination()} \end{DoxyCompactList}\item 
+bool \hyperlink{classosa_socket_a003dbb8706ca2a332b8f2a8187626847}{Connect} (const std\+::string \&host, unsigned short port)
+\begin{DoxyCompactList}\small\item\em Connect to the server; required for T\+C\+P sockets; includes call to \hyperlink{classosa_socket_a5a02b283355bf2beff6217bb2e01c03a}{Set\+Destination()} \end{DoxyCompactList}\item 
+bool \hyperlink{classosa_socket_a90a8bc0002ea1bcdd3c1a48c9f7c1252}{Connect} (const \hyperlink{structosa_i_pand_port}{osa\+I\+Pand\+Port} \&ip\+\_\+port)
+\begin{DoxyCompactList}\small\item\em Connect to the server; required for T\+C\+P sockets; includes call to \hyperlink{classosa_socket_a5a02b283355bf2beff6217bb2e01c03a}{Set\+Destination()} \end{DoxyCompactList}\item 
+int \hyperlink{classosa_socket_abf9a255ce888e52f7be1098f651acacd}{Send} (const char $\ast$bufsend, unsigned int msglen, double timeout\+Sec=0.\+0)
+\begin{DoxyCompactList}\small\item\em Send a byte array via the socket. \end{DoxyCompactList}\item 
+int \hyperlink{classosa_socket_ae0e52036f8cf0a4896e1631696ab8001}{Send} (const std\+::string \&bufsend, double timeout\+Sec=0.\+0)
+\begin{DoxyCompactList}\small\item\em Send a string via the socket. \end{DoxyCompactList}\item 
+int \hyperlink{classosa_socket_a734960e3f31352ecce882c55638e219b}{Send\+As\+Packets} (const char $\ast$bufsend, unsigned int msglen, unsigned int packet\+Size, double timeout\+Sec=0.\+0)
+\begin{DoxyCompactList}\small\item\em Send a byte array via the socket, possibly in multiple packets based on the specified maximum packet\+\_\+size. This method can be used with both U\+D\+P and T\+C\+P, though it is intended for U\+D\+P. \end{DoxyCompactList}\item 
+int \hyperlink{classosa_socket_ac13c453c4f62e562e38a391725992232}{Send\+As\+Packets} (const std\+::string \&bufsend, unsigned int packet\+Size, double timeout\+Sec=0.\+0)
+\begin{DoxyCompactList}\small\item\em Send a string via the socket, possibly in multiple packets based on the specified maximum packet\+\_\+size. This method can be used with both U\+D\+P and T\+C\+P, though it is intended for U\+D\+P (only for reliable U\+D\+P connections, since there is no check for missing or out of sequence packets). \end{DoxyCompactList}\item 
+int \hyperlink{classosa_socket_a76241adc0e7a67b5dfae17f81e2728ac}{Receive} (char $\ast$bufrecv, unsigned int maxlen, double timeout\+Sec=0.\+0)
+\begin{DoxyCompactList}\small\item\em Receive a byte array via the socket. \end{DoxyCompactList}\item 
+int \hyperlink{classosa_socket_afcbcb441431d78b8887c8c6af9998f7e}{Receive\+As\+Packets} (std\+::string \&bufrecv, char $\ast$packet\+Buffer, unsigned int packet\+Size, double timeout\+Start\+Sec=0.\+0, double timeout\+Next\+Sec=0.\+0)
+\begin{DoxyCompactList}\small\item\em Receive a string via the socket, possibly in multiple packets. This method can be used with both U\+D\+P and T\+C\+P, though it is intended for U\+D\+P (only for reliable U\+D\+P connections, since there is no check for missing or out of sequence packets). \end{DoxyCompactList}\item 
+bool \hyperlink{classosa_socket_acaf1869eba7f202d3955bdd58de79503}{Close} (void)
+\begin{DoxyCompactList}\small\item\em Close the socket. \end{DoxyCompactList}\item 
+bool \hyperlink{classosa_socket_aabe0c123217596854f4f912b04d4e2f2}{Is\+Connected} (void)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::string \hyperlink{classosa_socket_a733e1bbf1236424b9345c56d4436b9f4}{Get\+Localhost\+I\+P} (void)
+\item 
+static int \hyperlink{classosa_socket_a4819601ae4e72f6695dc61781b4fc73c}{Get\+Localhost\+I\+P} (std\+::vector$<$ std\+::string $>$ \&I\+Paddress)
+\begin{DoxyCompactList}\small\item\em Retrieve I\+P address of the localhost as string from each network interface (which may be more than two) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classosa_socket_ad52fa55231168bf731ed495cc89405ff}{osa\+Socket} (void $\ast$socket\+F\+D\+Ptr)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classosa_socket_server}{osa\+Socket\+Server} constructor (for use by \hyperlink{classosa_socket_server}{osa\+Socket\+Server}) \end{DoxyCompactList}\item 
+unsigned long \hyperlink{classosa_socket_a98e6b0d1fe72490b6163fa439c27a10b}{Get\+I\+P} (const std\+::string \&host) const 
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classosa_socket_adeb99e6a5b2d4e503e0308ccb9677a00}{Socket\+Types} \hyperlink{classosa_socket_ac893ce4c18feac9b627df95993156482}{Socket\+Type}
+\item 
+int \hyperlink{classosa_socket_aa2b18a862994f6498868186a44d28793}{Socket\+F\+D}
+\item 
+bool \hyperlink{classosa_socket_ab44f88953d932cd97a9c772155d21e37}{Connected}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classosa_socket_abe48006d88cc6ef49f926f1eab169439}{osa\+Socket\+Server}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classosa_socket_adeb99e6a5b2d4e503e0308ccb9677a00}{}\index{osa\+Socket@{osa\+Socket}!Socket\+Types@{Socket\+Types}}
+\index{Socket\+Types@{Socket\+Types}!osa\+Socket@{osa\+Socket}}
+\subsubsection[{Socket\+Types}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf osa\+Socket\+::\+Socket\+Types}}\label{classosa_socket_adeb99e6a5b2d4e503e0308ccb9677a00}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{U\+D\+P@{U\+D\+P}!osa\+Socket@{osa\+Socket}}\index{osa\+Socket@{osa\+Socket}!U\+D\+P@{U\+D\+P}}\item[{\em 
+\hypertarget{classosa_socket_adeb99e6a5b2d4e503e0308ccb9677a00a30ff2c2d5d46158f56ac6d521629612a}{}U\+D\+P\label{classosa_socket_adeb99e6a5b2d4e503e0308ccb9677a00a30ff2c2d5d46158f56ac6d521629612a}
+}]\index{T\+C\+P@{T\+C\+P}!osa\+Socket@{osa\+Socket}}\index{osa\+Socket@{osa\+Socket}!T\+C\+P@{T\+C\+P}}\item[{\em 
+\hypertarget{classosa_socket_adeb99e6a5b2d4e503e0308ccb9677a00a285ce3d0ac4094f708fa3f7b2f222430}{}T\+C\+P\label{classosa_socket_adeb99e6a5b2d4e503e0308ccb9677a00a285ce3d0ac4094f708fa3f7b2f222430}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classosa_socket_a978ed4ba465032ca6061fa6486464840}{}\index{osa\+Socket@{osa\+Socket}!osa\+Socket@{osa\+Socket}}
+\index{osa\+Socket@{osa\+Socket}!osa\+Socket@{osa\+Socket}}
+\subsubsection[{osa\+Socket}]{\setlength{\rightskip}{0pt plus 5cm}osa\+Socket\+::osa\+Socket (
+\begin{DoxyParamCaption}
+\item[{{\bf Socket\+Types}}]{type = {\ttfamily {\bf T\+C\+P}}}
+\end{DoxyParamCaption}
+)}\label{classosa_socket_a978ed4ba465032ca6061fa6486464840}
+
+
+Default constructor. 
+
+\hypertarget{classosa_socket_a78099904ded5203835307eac712c4a14}{}\index{osa\+Socket@{osa\+Socket}!````~osa\+Socket@{$\sim$osa\+Socket}}
+\index{````~osa\+Socket@{$\sim$osa\+Socket}!osa\+Socket@{osa\+Socket}}
+\subsubsection[{$\sim$osa\+Socket}]{\setlength{\rightskip}{0pt plus 5cm}osa\+Socket\+::$\sim$osa\+Socket (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classosa_socket_a78099904ded5203835307eac712c4a14}
+
+
+Destructor. 
+
+\hypertarget{classosa_socket_ad52fa55231168bf731ed495cc89405ff}{}\index{osa\+Socket@{osa\+Socket}!osa\+Socket@{osa\+Socket}}
+\index{osa\+Socket@{osa\+Socket}!osa\+Socket@{osa\+Socket}}
+\subsubsection[{osa\+Socket}]{\setlength{\rightskip}{0pt plus 5cm}osa\+Socket\+::osa\+Socket (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{socket\+F\+D\+Ptr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classosa_socket_ad52fa55231168bf731ed495cc89405ff}
+
+
+\hyperlink{classosa_socket_server}{osa\+Socket\+Server} constructor (for use by \hyperlink{classosa_socket_server}{osa\+Socket\+Server}) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Void} & pointer is used to her avoid including Win\+Sock2.\+h, the pointer is cast to proper socket in cpp file. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classosa_socket_ac057f23deeeb355089a5f0b36b82c1eb}{}\index{osa\+Socket@{osa\+Socket}!Assign\+Port@{Assign\+Port}}
+\index{Assign\+Port@{Assign\+Port}!osa\+Socket@{osa\+Socket}}
+\subsubsection[{Assign\+Port}]{\setlength{\rightskip}{0pt plus 5cm}bool osa\+Socket\+::\+Assign\+Port (
+\begin{DoxyParamCaption}
+\item[{unsigned short}]{port}
+\end{DoxyParamCaption}
+)}\label{classosa_socket_ac057f23deeeb355089a5f0b36b82c1eb}
+
+
+Sets the port of a U\+D\+P server. 
+
+\hypertarget{classosa_socket_acaf1869eba7f202d3955bdd58de79503}{}\index{osa\+Socket@{osa\+Socket}!Close@{Close}}
+\index{Close@{Close}!osa\+Socket@{osa\+Socket}}
+\subsubsection[{Close}]{\setlength{\rightskip}{0pt plus 5cm}bool osa\+Socket\+::\+Close (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classosa_socket_acaf1869eba7f202d3955bdd58de79503}
+
+
+Close the socket. 
+
+\begin{DoxyReturn}{Returns}
+False if close fails 
+\end{DoxyReturn}
+\hypertarget{classosa_socket_a26e1010cd5c499ed8b0b3ab6a43a50cd}{}\index{osa\+Socket@{osa\+Socket}!Connect@{Connect}}
+\index{Connect@{Connect}!osa\+Socket@{osa\+Socket}}
+\subsubsection[{Connect}]{\setlength{\rightskip}{0pt plus 5cm}bool osa\+Socket\+::\+Connect (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classosa_socket_a26e1010cd5c499ed8b0b3ab6a43a50cd}
+
+
+Connect to the server; required for T\+C\+P sockets and should be used after \hyperlink{classosa_socket_a5a02b283355bf2beff6217bb2e01c03a}{Set\+Destination()} 
+
+\begin{DoxyReturn}{Returns}
+true if the connection was successful 
+\end{DoxyReturn}
+\hypertarget{classosa_socket_a003dbb8706ca2a332b8f2a8187626847}{}\index{osa\+Socket@{osa\+Socket}!Connect@{Connect}}
+\index{Connect@{Connect}!osa\+Socket@{osa\+Socket}}
+\subsubsection[{Connect}]{\setlength{\rightskip}{0pt plus 5cm}bool osa\+Socket\+::\+Connect (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{host, }
+\item[{unsigned short}]{port}
+\end{DoxyParamCaption}
+)}\label{classosa_socket_a003dbb8706ca2a332b8f2a8187626847}
+
+
+Connect to the server; required for T\+C\+P sockets; includes call to \hyperlink{classosa_socket_a5a02b283355bf2beff6217bb2e01c03a}{Set\+Destination()} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em host} & Server\textquotesingle{}s hostname or I\+P address (e.\+g. localhost, 127.\+0.\+0.\+1) \\
+\hline
+{\em port} & Server\textquotesingle{}s port number \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the connection was successful 
+\end{DoxyReturn}
+\hypertarget{classosa_socket_a90a8bc0002ea1bcdd3c1a48c9f7c1252}{}\index{osa\+Socket@{osa\+Socket}!Connect@{Connect}}
+\index{Connect@{Connect}!osa\+Socket@{osa\+Socket}}
+\subsubsection[{Connect}]{\setlength{\rightskip}{0pt plus 5cm}bool osa\+Socket\+::\+Connect (
+\begin{DoxyParamCaption}
+\item[{const {\bf osa\+I\+Pand\+Port} \&}]{ip\+\_\+port}
+\end{DoxyParamCaption}
+)}\label{classosa_socket_a90a8bc0002ea1bcdd3c1a48c9f7c1252}
+
+
+Connect to the server; required for T\+C\+P sockets; includes call to \hyperlink{classosa_socket_a5a02b283355bf2beff6217bb2e01c03a}{Set\+Destination()} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ip\+\_\+port} & Server\textquotesingle{}s hostname or I\+P address (e.\+g. localhost, 127.\+0.\+0.\+1) and port number \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the connection was successful 
+\end{DoxyReturn}
+\hypertarget{classosa_socket_a1f354c34c89fbbd12f3dee0be6787596}{}\index{osa\+Socket@{osa\+Socket}!Get\+Destination@{Get\+Destination}}
+\index{Get\+Destination@{Get\+Destination}!osa\+Socket@{osa\+Socket}}
+\subsubsection[{Get\+Destination}]{\setlength{\rightskip}{0pt plus 5cm}bool osa\+Socket\+::\+Get\+Destination (
+\begin{DoxyParamCaption}
+\item[{std\+::string \&}]{host, }
+\item[{unsigned short \&}]{port}
+\end{DoxyParamCaption}
+) const}\label{classosa_socket_a1f354c34c89fbbd12f3dee0be6787596}
+
+
+Get the destination address for U\+D\+P or T\+C\+P socket. This is particularly useful for programs using U\+D\+P because the the Receive method automatically updates the destination based on the address from which the packet was received. Thus, subsequent Send commands will send to this address. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em host} & Reference for returning server\textquotesingle{}s I\+P address (e.\+g. \char`\"{}127.\+0.\+0.\+1\char`\"{}) \\
+\hline
+{\em port} & Reference for returning server\textquotesingle{}s port number \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if destination address was returned 
+\end{DoxyReturn}
+\hypertarget{classosa_socket_aa8030ca721b7d095cf26ca40e6d237a3}{}\index{osa\+Socket@{osa\+Socket}!Get\+Destination@{Get\+Destination}}
+\index{Get\+Destination@{Get\+Destination}!osa\+Socket@{osa\+Socket}}
+\subsubsection[{Get\+Destination}]{\setlength{\rightskip}{0pt plus 5cm}bool osa\+Socket\+::\+Get\+Destination (
+\begin{DoxyParamCaption}
+\item[{{\bf osa\+I\+Pand\+Port} \&}]{ip\+\_\+port}
+\end{DoxyParamCaption}
+) const}\label{classosa_socket_aa8030ca721b7d095cf26ca40e6d237a3}
+
+
+Get the destination address for U\+D\+P or T\+C\+P socket. This is particularly useful for programs using U\+D\+P because the the Receive method automatically updates the destination based on the address from which the packet was received. Thus, subsequent Send commands will send to this address. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ip\+\_\+port} & Reference for returning server\textquotesingle{}s I\+P address (e.\+g. \char`\"{}127.\+0.\+0.\+1\char`\"{}) and port number \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if destination address was returned 
+\end{DoxyReturn}
+\hypertarget{classosa_socket_a109a21812219017a15fea0e38aa0c3c6}{}\index{osa\+Socket@{osa\+Socket}!Get\+Identifier@{Get\+Identifier}}
+\index{Get\+Identifier@{Get\+Identifier}!osa\+Socket@{osa\+Socket}}
+\subsubsection[{Get\+Identifier}]{\setlength{\rightskip}{0pt plus 5cm}int osa\+Socket\+::\+Get\+Identifier (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classosa_socket_a109a21812219017a15fea0e38aa0c3c6}
+\begin{DoxyReturn}{Returns}
+Socket file descriptor 
+\end{DoxyReturn}
+\hypertarget{classosa_socket_a98e6b0d1fe72490b6163fa439c27a10b}{}\index{osa\+Socket@{osa\+Socket}!Get\+I\+P@{Get\+I\+P}}
+\index{Get\+I\+P@{Get\+I\+P}!osa\+Socket@{osa\+Socket}}
+\subsubsection[{Get\+I\+P}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long osa\+Socket\+::\+Get\+I\+P (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{host}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}\label{classosa_socket_a98e6b0d1fe72490b6163fa439c27a10b}
+\begin{DoxyReturn}{Returns}
+I\+P address (as a number) for the given host 
+\end{DoxyReturn}
+\hypertarget{classosa_socket_a733e1bbf1236424b9345c56d4436b9f4}{}\index{osa\+Socket@{osa\+Socket}!Get\+Localhost\+I\+P@{Get\+Localhost\+I\+P}}
+\index{Get\+Localhost\+I\+P@{Get\+Localhost\+I\+P}!osa\+Socket@{osa\+Socket}}
+\subsubsection[{Get\+Localhost\+I\+P}]{\setlength{\rightskip}{0pt plus 5cm}static std\+::string osa\+Socket\+::\+Get\+Localhost\+I\+P (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classosa_socket_a733e1bbf1236424b9345c56d4436b9f4}
+\begin{DoxyReturn}{Returns}
+The first I\+P address of the localhost as a string 
+\end{DoxyReturn}
+\hypertarget{classosa_socket_a4819601ae4e72f6695dc61781b4fc73c}{}\index{osa\+Socket@{osa\+Socket}!Get\+Localhost\+I\+P@{Get\+Localhost\+I\+P}}
+\index{Get\+Localhost\+I\+P@{Get\+Localhost\+I\+P}!osa\+Socket@{osa\+Socket}}
+\subsubsection[{Get\+Localhost\+I\+P}]{\setlength{\rightskip}{0pt plus 5cm}static int osa\+Socket\+::\+Get\+Localhost\+I\+P (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ std\+::string $>$ \&}]{I\+Paddress}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classosa_socket_a4819601ae4e72f6695dc61781b4fc73c}
+
+
+Retrieve I\+P address of the localhost as string from each network interface (which may be more than two) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em I\+Paddresses} & container for I\+P address as string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number of I\+P address retrieved with I\+Paddresses filled 
+\end{DoxyReturn}
+\hypertarget{classosa_socket_aabe0c123217596854f4f912b04d4e2f2}{}\index{osa\+Socket@{osa\+Socket}!Is\+Connected@{Is\+Connected}}
+\index{Is\+Connected@{Is\+Connected}!osa\+Socket@{osa\+Socket}}
+\subsubsection[{Is\+Connected}]{\setlength{\rightskip}{0pt plus 5cm}bool osa\+Socket\+::\+Is\+Connected (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classosa_socket_aabe0c123217596854f4f912b04d4e2f2}
+\textbackslash{} brief Connection state (only works for T\+C\+P) \begin{DoxyReturn}{Returns}
+Returns true if the socket thinks it is connected 
+\end{DoxyReturn}
+\hypertarget{classosa_socket_a76241adc0e7a67b5dfae17f81e2728ac}{}\index{osa\+Socket@{osa\+Socket}!Receive@{Receive}}
+\index{Receive@{Receive}!osa\+Socket@{osa\+Socket}}
+\subsubsection[{Receive}]{\setlength{\rightskip}{0pt plus 5cm}int osa\+Socket\+::\+Receive (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{bufrecv, }
+\item[{unsigned int}]{maxlen, }
+\item[{double}]{timeout\+Sec = {\ttfamily 0.0}}
+\end{DoxyParamCaption}
+)}\label{classosa_socket_a76241adc0e7a67b5dfae17f81e2728ac}
+
+
+Receive a byte array via the socket. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bufrecv} & Buffer to store received data \\
+\hline
+{\em maxlen} & Maximum number of bytes to receive \\
+\hline
+{\em timeout\+Sec} & Timeout in seconds \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number of bytes received. 0 if timeout is reached and/or no data is received. 
+\end{DoxyReturn}
+\hypertarget{classosa_socket_afcbcb441431d78b8887c8c6af9998f7e}{}\index{osa\+Socket@{osa\+Socket}!Receive\+As\+Packets@{Receive\+As\+Packets}}
+\index{Receive\+As\+Packets@{Receive\+As\+Packets}!osa\+Socket@{osa\+Socket}}
+\subsubsection[{Receive\+As\+Packets}]{\setlength{\rightskip}{0pt plus 5cm}int osa\+Socket\+::\+Receive\+As\+Packets (
+\begin{DoxyParamCaption}
+\item[{std\+::string \&}]{bufrecv, }
+\item[{char $\ast$}]{packet\+Buffer, }
+\item[{unsigned int}]{packet\+Size, }
+\item[{double}]{timeout\+Start\+Sec = {\ttfamily 0.0}, }
+\item[{double}]{timeout\+Next\+Sec = {\ttfamily 0.0}}
+\end{DoxyParamCaption}
+)}\label{classosa_socket_afcbcb441431d78b8887c8c6af9998f7e}
+
+
+Receive a string via the socket, possibly in multiple packets. This method can be used with both U\+D\+P and T\+C\+P, though it is intended for U\+D\+P (only for reliable U\+D\+P connections, since there is no check for missing or out of sequence packets). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bufrecv} & String to store received data \\
+\hline
+{\em packet\+Buffer} & Buffer to store one packet \\
+\hline
+{\em packet\+Size} & Maximum packet size, should equal sizeof(packet\+Buffer) \\
+\hline
+{\em timeout\+Start\+Sec} & Timeout for receiving first packet, in seconds \\
+\hline
+{\em timeout\+Next\+Sec} & Timeout for receiving subsequent packets (after first), in seconds \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number of bytes received. 0 if timeout is reached and/or no data is received. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+It can be difficult to determine when a complete set of packets has been received. This function is intended primarily to receive the packet stream produced by Send\+As\+Packets, so it terminates reception in the following cases\+: (1) when a received packet is smaller than the specified packet\+Size, (2) on any socket error, and (3) when a timeout occurs. The first condition is best, since it avoids the possibility of appending data from an unrelated packet. Thus, the caller can ensure that the total number of bytes transmitted is not a multiple of the packet\+Size (e.\+g., by appending an extra byte). 
+\end{DoxyNote}
+\hypertarget{classosa_socket_abf9a255ce888e52f7be1098f651acacd}{}\index{osa\+Socket@{osa\+Socket}!Send@{Send}}
+\index{Send@{Send}!osa\+Socket@{osa\+Socket}}
+\subsubsection[{Send}]{\setlength{\rightskip}{0pt plus 5cm}int osa\+Socket\+::\+Send (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{bufsend, }
+\item[{unsigned int}]{msglen, }
+\item[{double}]{timeout\+Sec = {\ttfamily 0.0}}
+\end{DoxyParamCaption}
+)}\label{classosa_socket_abf9a255ce888e52f7be1098f651acacd}
+
+
+Send a byte array via the socket. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bufsend} & Buffer holding bytes to be sent \\
+\hline
+{\em msglen} & Number of bytes to send \\
+\hline
+{\em timeout\+Sec} & is the longest time we should wait to send something \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number of bytes sent (-\/1 if error) 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Since this is a nonblocking call the socket might not be ready to send right away so a short timeout will help in cases when large amount of data is sent around. If the socket is not ready within the timeout then the connection will be closed 
+\end{DoxyNote}
+\hypertarget{classosa_socket_ae0e52036f8cf0a4896e1631696ab8001}{}\index{osa\+Socket@{osa\+Socket}!Send@{Send}}
+\index{Send@{Send}!osa\+Socket@{osa\+Socket}}
+\subsubsection[{Send}]{\setlength{\rightskip}{0pt plus 5cm}int osa\+Socket\+::\+Send (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{bufsend, }
+\item[{double}]{timeout\+Sec = {\ttfamily 0.0}}
+\end{DoxyParamCaption}
+)}\label{classosa_socket_ae0e52036f8cf0a4896e1631696ab8001}
+
+
+Send a string via the socket. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bufsend} & String to be sent \\
+\hline
+{\em timeout\+Sec} & is the longest time we should wait to send something \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number of bytes sent (-\/1 if error) 
+\end{DoxyReturn}
+\hypertarget{classosa_socket_a734960e3f31352ecce882c55638e219b}{}\index{osa\+Socket@{osa\+Socket}!Send\+As\+Packets@{Send\+As\+Packets}}
+\index{Send\+As\+Packets@{Send\+As\+Packets}!osa\+Socket@{osa\+Socket}}
+\subsubsection[{Send\+As\+Packets}]{\setlength{\rightskip}{0pt plus 5cm}int osa\+Socket\+::\+Send\+As\+Packets (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{bufsend, }
+\item[{unsigned int}]{msglen, }
+\item[{unsigned int}]{packet\+Size, }
+\item[{double}]{timeout\+Sec = {\ttfamily 0.0}}
+\end{DoxyParamCaption}
+)}\label{classosa_socket_a734960e3f31352ecce882c55638e219b}
+
+
+Send a byte array via the socket, possibly in multiple packets based on the specified maximum packet\+\_\+size. This method can be used with both U\+D\+P and T\+C\+P, though it is intended for U\+D\+P. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bufsend} & Buffer holding bytes to be sent \\
+\hline
+{\em packet\+Size} & Maximum packet size \\
+\hline
+{\em timeout\+Sec} & is the longest time we should wait to send something \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number of bytes sent (-\/1 if error) 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+This function aborts if any error occurs and returns the number of bytes actually sent (if any). 
+\end{DoxyNote}
+\hypertarget{classosa_socket_ac13c453c4f62e562e38a391725992232}{}\index{osa\+Socket@{osa\+Socket}!Send\+As\+Packets@{Send\+As\+Packets}}
+\index{Send\+As\+Packets@{Send\+As\+Packets}!osa\+Socket@{osa\+Socket}}
+\subsubsection[{Send\+As\+Packets}]{\setlength{\rightskip}{0pt plus 5cm}int osa\+Socket\+::\+Send\+As\+Packets (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{bufsend, }
+\item[{unsigned int}]{packet\+Size, }
+\item[{double}]{timeout\+Sec = {\ttfamily 0.0}}
+\end{DoxyParamCaption}
+)}\label{classosa_socket_ac13c453c4f62e562e38a391725992232}
+
+
+Send a string via the socket, possibly in multiple packets based on the specified maximum packet\+\_\+size. This method can be used with both U\+D\+P and T\+C\+P, though it is intended for U\+D\+P (only for reliable U\+D\+P connections, since there is no check for missing or out of sequence packets). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bufsend} & String to be sent \\
+\hline
+{\em packet\+Size} & Maximum packet size \\
+\hline
+{\em timeout\+Sec} & is the longest time we should wait to send something \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number of bytes sent (-\/1 if error) 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+This function aborts if any error occurs and returns the number of bytes actually sent (if any). 
+\end{DoxyNote}
+\hypertarget{classosa_socket_a5a02b283355bf2beff6217bb2e01c03a}{}\index{osa\+Socket@{osa\+Socket}!Set\+Destination@{Set\+Destination}}
+\index{Set\+Destination@{Set\+Destination}!osa\+Socket@{osa\+Socket}}
+\subsubsection[{Set\+Destination}]{\setlength{\rightskip}{0pt plus 5cm}void osa\+Socket\+::\+Set\+Destination (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{host, }
+\item[{unsigned short}]{port}
+\end{DoxyParamCaption}
+)}\label{classosa_socket_a5a02b283355bf2beff6217bb2e01c03a}
+
+
+Set the destination address for U\+D\+P or T\+C\+P socket. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em host} & Server\textquotesingle{}s hostname or I\+P address (e.\+g. localhost, 127.\+0.\+0.\+1) \\
+\hline
+{\em port} & Server\textquotesingle{}s port number \\
+\hline
+\end{DoxyParams}
+\hypertarget{classosa_socket_ac86d6d1c9c1155aa3f6fb5fd396fb2c9}{}\index{osa\+Socket@{osa\+Socket}!Set\+Destination@{Set\+Destination}}
+\index{Set\+Destination@{Set\+Destination}!osa\+Socket@{osa\+Socket}}
+\subsubsection[{Set\+Destination}]{\setlength{\rightskip}{0pt plus 5cm}void osa\+Socket\+::\+Set\+Destination (
+\begin{DoxyParamCaption}
+\item[{const {\bf osa\+I\+Pand\+Port} \&}]{ip\+\_\+port}
+\end{DoxyParamCaption}
+)}\label{classosa_socket_ac86d6d1c9c1155aa3f6fb5fd396fb2c9}
+
+
+Set the destination address for U\+D\+P or T\+C\+P socket. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ip\+\_\+port} & Server\textquotesingle{}s hostname or I\+P address (e.\+g. localhost, 127.\+0.\+0.\+1) and port number \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classosa_socket_abe48006d88cc6ef49f926f1eab169439}{}\index{osa\+Socket@{osa\+Socket}!osa\+Socket\+Server@{osa\+Socket\+Server}}
+\index{osa\+Socket\+Server@{osa\+Socket\+Server}!osa\+Socket@{osa\+Socket}}
+\subsubsection[{osa\+Socket\+Server}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf osa\+Socket\+Server}\hspace{0.3cm}{\ttfamily [friend]}}\label{classosa_socket_abe48006d88cc6ef49f926f1eab169439}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classosa_socket_ab44f88953d932cd97a9c772155d21e37}{}\index{osa\+Socket@{osa\+Socket}!Connected@{Connected}}
+\index{Connected@{Connected}!osa\+Socket@{osa\+Socket}}
+\subsubsection[{Connected}]{\setlength{\rightskip}{0pt plus 5cm}bool osa\+Socket\+::\+Connected\hspace{0.3cm}{\ttfamily [protected]}}\label{classosa_socket_ab44f88953d932cd97a9c772155d21e37}
+\hypertarget{classosa_socket_aa2b18a862994f6498868186a44d28793}{}\index{osa\+Socket@{osa\+Socket}!Socket\+F\+D@{Socket\+F\+D}}
+\index{Socket\+F\+D@{Socket\+F\+D}!osa\+Socket@{osa\+Socket}}
+\subsubsection[{Socket\+F\+D}]{\setlength{\rightskip}{0pt plus 5cm}int osa\+Socket\+::\+Socket\+F\+D\hspace{0.3cm}{\ttfamily [protected]}}\label{classosa_socket_aa2b18a862994f6498868186a44d28793}
+\hypertarget{classosa_socket_ac893ce4c18feac9b627df95993156482}{}\index{osa\+Socket@{osa\+Socket}!Socket\+Type@{Socket\+Type}}
+\index{Socket\+Type@{Socket\+Type}!osa\+Socket@{osa\+Socket}}
+\subsubsection[{Socket\+Type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Socket\+Types} osa\+Socket\+::\+Socket\+Type\hspace{0.3cm}{\ttfamily [protected]}}\label{classosa_socket_ac893ce4c18feac9b627df95993156482}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+O\+S\+Abstraction/\hyperlink{osa_socket_8h}{osa\+Socket.\+h}\end{DoxyCompactItemize}

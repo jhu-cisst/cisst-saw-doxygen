@@ -1,0 +1,354 @@
+\hypertarget{classmts_v_f_controller}{}\section{mts\+V\+F\+Controller Class Reference}
+\label{classmts_v_f_controller}\index{mts\+V\+F\+Controller@{mts\+V\+F\+Controller}}
+
+
+\hyperlink{classmts_v_f_controller}{mts\+V\+F\+Controller}\+: A class that is responsible for managing the virtual fixtures, relevant state data, and the control optimizer  
+
+
+
+
+{\ttfamily \#include $<$mts\+V\+F\+Controller.\+h$>$}
+
+Inheritance diagram for mts\+V\+F\+Controller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{d7/d50/classmts_v_f_controller}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmts_v_f_controller_a4852cd5a49f4053999790a3c9fb05b3d}{mts\+V\+F\+Controller} ()
+\item 
+\hyperlink{classmts_v_f_controller_a6c9766a12eaafd7126ee59f2606d3451}{mts\+V\+F\+Controller} (size\+\_\+t num\+\_\+joints, \hyperlink{classmts_v_f_base_a742dd08f8b70bafeb746cec14d9ee974}{mts\+V\+F\+Base\+::\+C\+O\+N\+T\+R\+O\+L\+L\+E\+R\+M\+O\+D\+E} cm)
+\item 
+\hyperlink{classnmr_constraint_optimizer}{nmr\+Constraint\+Optimizer} \hyperlink{classmts_v_f_controller_a1e6ca19fdd65c028e1fd78b6f82ea084}{Get\+Optimizer} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classmts_v_f_controller_ae70b46834ff034559ce9b3686e5491d5}{Add\+V\+F\+Joint\+Velocity} (const mts\+V\+F\+Data\+Base \&vf)
+\begin{DoxyCompactList}\small\item\em Adds/\+Updates a vf data object. \end{DoxyCompactList}\item 
+void \hyperlink{classmts_v_f_controller_a4602b21dbc406f5da5d57ccad53f3528}{Add\+V\+F\+Joint\+Position} (const mts\+V\+F\+Data\+Base \&vf)
+\begin{DoxyCompactList}\small\item\em Adds/\+Updates a vf data object. \end{DoxyCompactList}\item 
+void \hyperlink{classmts_v_f_controller_a4f8136fca2b4840412a52ef9a679500b}{Add\+V\+F\+Cartesian\+Translation} (const mts\+V\+F\+Data\+Base \&vf)
+\begin{DoxyCompactList}\small\item\em Adds/\+Updates a vf data object. \end{DoxyCompactList}\item 
+void \hyperlink{classmts_v_f_controller_ac02fa25858e0e7305f07663a69636fe9}{Add\+V\+F\+Cartesian\+Orientation} (const mts\+V\+F\+Data\+Base \&vf)
+\begin{DoxyCompactList}\small\item\em Adds/\+Updates a vf data object. \end{DoxyCompactList}\item 
+void \hyperlink{classmts_v_f_controller_a7d4ca819b6e68d9b33b5ef02172fffff}{Add\+V\+F\+Sensor\+Compliance} (const mts\+V\+F\+Data\+Sensor\+Compliance \&vf)
+\begin{DoxyCompactList}\small\item\em Adds/\+Updates a vf data object. \end{DoxyCompactList}\item 
+void \hyperlink{classmts_v_f_controller_afa5a3424cc0d16e49728edd375aaedc4}{Add\+V\+F\+Plane} (const mts\+V\+F\+Data\+Plane \&vf)
+\begin{DoxyCompactList}\small\item\em Adds/\+Updates a vf plane object. \end{DoxyCompactList}\item 
+void \hyperlink{classmts_v_f_controller_a4bc9686480a583054ca0615a4bbc8b46}{Set\+Sensor} (const prm\+Sensor\+State \&sen)
+\begin{DoxyCompactList}\small\item\em Adds/\+Updates a sensor to the map. \end{DoxyCompactList}\item 
+void \hyperlink{classmts_v_f_controller_a7da3be1c2a5cd3e2f94fa13adecbdffc}{Set\+Sensor\+Offset} (const prm\+Offset\+State \&sen)
+\begin{DoxyCompactList}\small\item\em Adds/\+Updates a sensor to the map. \end{DoxyCompactList}\item 
+void \hyperlink{classmts_v_f_controller_a3c00912ec4d7055cc61bd6cf61b51c2c}{Remove\+Sensor\+From\+Map} (const std\+::string \&sen\+Name)
+\begin{DoxyCompactList}\small\item\em Removes a sensor from the map. \end{DoxyCompactList}\item 
+void \hyperlink{classmts_v_f_controller_a9b2a191244f649c4648a1f3e555ceaae}{Set\+Mode} (const \hyperlink{classmts_v_f_base_a742dd08f8b70bafeb746cec14d9ee974}{mts\+V\+F\+Base\+::\+C\+O\+N\+T\+R\+O\+L\+L\+E\+R\+M\+O\+D\+E} \&m)
+\begin{DoxyCompactList}\small\item\em Changes the variable the optimizer is solving for. \end{DoxyCompactList}\item 
+void \hyperlink{classmts_v_f_controller_a84f09db2d388d29d5224a30bdb68d76f}{Lookup\+Base\+Data} (void)
+\begin{DoxyCompactList}\small\item\em Finds the \char`\"{}base\char`\"{} object for kinematics and sensor data that has an offset. \end{DoxyCompactList}\item 
+void \hyperlink{classmts_v_f_controller_af32d53c8bc0cdb3db21c9887cd759c7a}{Set\+Kinematics} (const prm\+Kinematics\+State \&kin)
+\begin{DoxyCompactList}\small\item\em Adds/\+Updates a kinematics object to the map. \end{DoxyCompactList}\item 
+void \hyperlink{classmts_v_f_controller_a742a86f34faf0b1416939bf21ddf366b}{Remove\+Kinematics\+From\+Map} (const std\+::string \&kin\+Name)
+\begin{DoxyCompactList}\small\item\em Removes a kinematics object from the map. \end{DoxyCompactList}\item 
+void \hyperlink{classmts_v_f_controller_a9ea569dcf499c4a086ef9e9751c9e55e}{Update\+Optimizer} (double Tick\+Time)
+\begin{DoxyCompactList}\small\item\em Updates the robot state data and control optimizer. \end{DoxyCompactList}\item 
+\hyperlink{classnmr_constraint_optimizer_ad46bf972892431d2c0a43a7099aec898}{nmr\+Constraint\+Optimizer\+::\+S\+T\+A\+T\+U\+S} \hyperlink{classmts_v_f_controller_a8f672fd70223794ef98ecf237589cc44}{Solve} (\hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \&dq)
+\begin{DoxyCompactList}\small\item\em Solves the constraint optimization problem and fills the result into the parameter. \end{DoxyCompactList}\item 
+void \hyperlink{classmts_v_f_controller_a0a0eb21d7cad2a07000411e0bb82d34a}{Increment\+Users} (const std\+::vector$<$ std\+::string $>$ kin\+\_\+names, const std\+::vector$<$ std\+::string $>$ sensor\+\_\+names)
+\begin{DoxyCompactList}\small\item\em Helper function that increments users of new vf. \end{DoxyCompactList}\item 
+void \hyperlink{classmts_v_f_controller_aecb932995a8b1fb3cdfa57ba38947d85}{Decrement\+Users} (const std\+::vector$<$ std\+::string $>$ kin\+\_\+names, const std\+::vector$<$ std\+::string $>$ sensor\+\_\+names)
+\begin{DoxyCompactList}\small\item\em Helper function that decrements users of new data in an old vf. \end{DoxyCompactList}\item 
+bool \hyperlink{classmts_v_f_controller_a9440eb1cf7cf204da43730bfcbe00ca8}{Set\+V\+F\+Data} (const mts\+V\+F\+Data\+Base \&data, const std\+::type\+\_\+info \&type)
+\item 
+bool \hyperlink{classmts_v_f_controller_a81a83b84ce61fab4563e344579e6a37a}{Set\+V\+F\+Data\+Sensor\+Compliance} (const mts\+V\+F\+Data\+Sensor\+Compliance \&data, const std\+::type\+\_\+info \&type)
+\item 
+bool \hyperlink{classmts_v_f_controller_accdcc21711fac674914793949bd02bb1}{Set\+V\+F\+Data\+Plane} (const mts\+V\+F\+Data\+Plane \&data, const std\+::type\+\_\+info \&type)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::map$<$ std\+::string, \hyperlink{classmts_v_f_base}{mts\+V\+F\+Base} $\ast$ $>$ \hyperlink{classmts_v_f_controller_acf1cfa87ed1c4903f9b4e3c0b4885fa3}{V\+F\+Map}
+\item 
+std\+::map$<$ std\+::string, prm\+Kinematics\+State $\ast$ $>$ \hyperlink{classmts_v_f_controller_af130251a32e9663507ab4d0ecf2c1ebe}{Kinematics}
+\item 
+std\+::map$<$ std\+::string, prm\+Sensor\+State $\ast$ $>$ \hyperlink{classmts_v_f_controller_aaac004c01f9e1b4af5c64292c68d523e}{Sensors}
+\item 
+prm\+Joint\+State \hyperlink{classmts_v_f_controller_a1894d5892686513258336a288615a234}{Joint\+State}
+\item 
+\hyperlink{classnmr_constraint_optimizer}{nmr\+Constraint\+Optimizer} \hyperlink{classmts_v_f_controller_a434d49f47dff20bbe715be76221a98ba}{Optimizer}
+\item 
+\hyperlink{classmts_v_f_base_a742dd08f8b70bafeb746cec14d9ee974}{mts\+V\+F\+Base\+::\+C\+O\+N\+T\+R\+O\+L\+L\+E\+R\+M\+O\+D\+E} \hyperlink{classmts_v_f_controller_ad5340ab1ebdc9c7c0b1f66180ce70227}{Controller\+Mode}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classmts_v_f_controller}{mts\+V\+F\+Controller}\+: A class that is responsible for managing the virtual fixtures, relevant state data, and the control optimizer 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmts_v_f_controller_a4852cd5a49f4053999790a3c9fb05b3d}{}\index{mts\+V\+F\+Controller@{mts\+V\+F\+Controller}!mts\+V\+F\+Controller@{mts\+V\+F\+Controller}}
+\index{mts\+V\+F\+Controller@{mts\+V\+F\+Controller}!mts\+V\+F\+Controller@{mts\+V\+F\+Controller}}
+\subsubsection[{mts\+V\+F\+Controller}]{\setlength{\rightskip}{0pt plus 5cm}mts\+V\+F\+Controller\+::mts\+V\+F\+Controller (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_v_f_controller_a4852cd5a49f4053999790a3c9fb05b3d}
+Constructor \hypertarget{classmts_v_f_controller_a6c9766a12eaafd7126ee59f2606d3451}{}\index{mts\+V\+F\+Controller@{mts\+V\+F\+Controller}!mts\+V\+F\+Controller@{mts\+V\+F\+Controller}}
+\index{mts\+V\+F\+Controller@{mts\+V\+F\+Controller}!mts\+V\+F\+Controller@{mts\+V\+F\+Controller}}
+\subsubsection[{mts\+V\+F\+Controller}]{\setlength{\rightskip}{0pt plus 5cm}mts\+V\+F\+Controller\+::mts\+V\+F\+Controller (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{num\+\_\+joints, }
+\item[{{\bf mts\+V\+F\+Base\+::\+C\+O\+N\+T\+R\+O\+L\+L\+E\+R\+M\+O\+D\+E}}]{cm}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_v_f_controller_a6c9766a12eaafd7126ee59f2606d3451}
+Constructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classmts_v_f_controller_ac02fa25858e0e7305f07663a69636fe9}{}\index{mts\+V\+F\+Controller@{mts\+V\+F\+Controller}!Add\+V\+F\+Cartesian\+Orientation@{Add\+V\+F\+Cartesian\+Orientation}}
+\index{Add\+V\+F\+Cartesian\+Orientation@{Add\+V\+F\+Cartesian\+Orientation}!mts\+V\+F\+Controller@{mts\+V\+F\+Controller}}
+\subsubsection[{Add\+V\+F\+Cartesian\+Orientation}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+V\+F\+Controller\+::\+Add\+V\+F\+Cartesian\+Orientation (
+\begin{DoxyParamCaption}
+\item[{const mts\+V\+F\+Data\+Base \&}]{vf}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_v_f_controller_ac02fa25858e0e7305f07663a69636fe9}
+
+
+Adds/\+Updates a vf data object. 
+
+\hypertarget{classmts_v_f_controller_a4f8136fca2b4840412a52ef9a679500b}{}\index{mts\+V\+F\+Controller@{mts\+V\+F\+Controller}!Add\+V\+F\+Cartesian\+Translation@{Add\+V\+F\+Cartesian\+Translation}}
+\index{Add\+V\+F\+Cartesian\+Translation@{Add\+V\+F\+Cartesian\+Translation}!mts\+V\+F\+Controller@{mts\+V\+F\+Controller}}
+\subsubsection[{Add\+V\+F\+Cartesian\+Translation}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+V\+F\+Controller\+::\+Add\+V\+F\+Cartesian\+Translation (
+\begin{DoxyParamCaption}
+\item[{const mts\+V\+F\+Data\+Base \&}]{vf}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_v_f_controller_a4f8136fca2b4840412a52ef9a679500b}
+
+
+Adds/\+Updates a vf data object. 
+
+\hypertarget{classmts_v_f_controller_a4602b21dbc406f5da5d57ccad53f3528}{}\index{mts\+V\+F\+Controller@{mts\+V\+F\+Controller}!Add\+V\+F\+Joint\+Position@{Add\+V\+F\+Joint\+Position}}
+\index{Add\+V\+F\+Joint\+Position@{Add\+V\+F\+Joint\+Position}!mts\+V\+F\+Controller@{mts\+V\+F\+Controller}}
+\subsubsection[{Add\+V\+F\+Joint\+Position}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+V\+F\+Controller\+::\+Add\+V\+F\+Joint\+Position (
+\begin{DoxyParamCaption}
+\item[{const mts\+V\+F\+Data\+Base \&}]{vf}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_v_f_controller_a4602b21dbc406f5da5d57ccad53f3528}
+
+
+Adds/\+Updates a vf data object. 
+
+\hypertarget{classmts_v_f_controller_ae70b46834ff034559ce9b3686e5491d5}{}\index{mts\+V\+F\+Controller@{mts\+V\+F\+Controller}!Add\+V\+F\+Joint\+Velocity@{Add\+V\+F\+Joint\+Velocity}}
+\index{Add\+V\+F\+Joint\+Velocity@{Add\+V\+F\+Joint\+Velocity}!mts\+V\+F\+Controller@{mts\+V\+F\+Controller}}
+\subsubsection[{Add\+V\+F\+Joint\+Velocity}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+V\+F\+Controller\+::\+Add\+V\+F\+Joint\+Velocity (
+\begin{DoxyParamCaption}
+\item[{const mts\+V\+F\+Data\+Base \&}]{vf}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_v_f_controller_ae70b46834ff034559ce9b3686e5491d5}
+
+
+Adds/\+Updates a vf data object. 
+
+\hypertarget{classmts_v_f_controller_afa5a3424cc0d16e49728edd375aaedc4}{}\index{mts\+V\+F\+Controller@{mts\+V\+F\+Controller}!Add\+V\+F\+Plane@{Add\+V\+F\+Plane}}
+\index{Add\+V\+F\+Plane@{Add\+V\+F\+Plane}!mts\+V\+F\+Controller@{mts\+V\+F\+Controller}}
+\subsubsection[{Add\+V\+F\+Plane}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+V\+F\+Controller\+::\+Add\+V\+F\+Plane (
+\begin{DoxyParamCaption}
+\item[{const mts\+V\+F\+Data\+Plane \&}]{vf}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_v_f_controller_afa5a3424cc0d16e49728edd375aaedc4}
+
+
+Adds/\+Updates a vf plane object. 
+
+\hypertarget{classmts_v_f_controller_a7d4ca819b6e68d9b33b5ef02172fffff}{}\index{mts\+V\+F\+Controller@{mts\+V\+F\+Controller}!Add\+V\+F\+Sensor\+Compliance@{Add\+V\+F\+Sensor\+Compliance}}
+\index{Add\+V\+F\+Sensor\+Compliance@{Add\+V\+F\+Sensor\+Compliance}!mts\+V\+F\+Controller@{mts\+V\+F\+Controller}}
+\subsubsection[{Add\+V\+F\+Sensor\+Compliance}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+V\+F\+Controller\+::\+Add\+V\+F\+Sensor\+Compliance (
+\begin{DoxyParamCaption}
+\item[{const mts\+V\+F\+Data\+Sensor\+Compliance \&}]{vf}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_v_f_controller_a7d4ca819b6e68d9b33b5ef02172fffff}
+
+
+Adds/\+Updates a vf data object. 
+
+\hypertarget{classmts_v_f_controller_aecb932995a8b1fb3cdfa57ba38947d85}{}\index{mts\+V\+F\+Controller@{mts\+V\+F\+Controller}!Decrement\+Users@{Decrement\+Users}}
+\index{Decrement\+Users@{Decrement\+Users}!mts\+V\+F\+Controller@{mts\+V\+F\+Controller}}
+\subsubsection[{Decrement\+Users}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+V\+F\+Controller\+::\+Decrement\+Users (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ std\+::string $>$}]{kin\+\_\+names, }
+\item[{const std\+::vector$<$ std\+::string $>$}]{sensor\+\_\+names}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_v_f_controller_aecb932995a8b1fb3cdfa57ba38947d85}
+
+
+Helper function that decrements users of new data in an old vf. 
+
+\hypertarget{classmts_v_f_controller_a1e6ca19fdd65c028e1fd78b6f82ea084}{}\index{mts\+V\+F\+Controller@{mts\+V\+F\+Controller}!Get\+Optimizer@{Get\+Optimizer}}
+\index{Get\+Optimizer@{Get\+Optimizer}!mts\+V\+F\+Controller@{mts\+V\+F\+Controller}}
+\subsubsection[{Get\+Optimizer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf nmr\+Constraint\+Optimizer} mts\+V\+F\+Controller\+::\+Get\+Optimizer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_v_f_controller_a1e6ca19fdd65c028e1fd78b6f82ea084}
+\hypertarget{classmts_v_f_controller_a0a0eb21d7cad2a07000411e0bb82d34a}{}\index{mts\+V\+F\+Controller@{mts\+V\+F\+Controller}!Increment\+Users@{Increment\+Users}}
+\index{Increment\+Users@{Increment\+Users}!mts\+V\+F\+Controller@{mts\+V\+F\+Controller}}
+\subsubsection[{Increment\+Users}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+V\+F\+Controller\+::\+Increment\+Users (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ std\+::string $>$}]{kin\+\_\+names, }
+\item[{const std\+::vector$<$ std\+::string $>$}]{sensor\+\_\+names}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_v_f_controller_a0a0eb21d7cad2a07000411e0bb82d34a}
+
+
+Helper function that increments users of new vf. 
+
+\hypertarget{classmts_v_f_controller_a84f09db2d388d29d5224a30bdb68d76f}{}\index{mts\+V\+F\+Controller@{mts\+V\+F\+Controller}!Lookup\+Base\+Data@{Lookup\+Base\+Data}}
+\index{Lookup\+Base\+Data@{Lookup\+Base\+Data}!mts\+V\+F\+Controller@{mts\+V\+F\+Controller}}
+\subsubsection[{Lookup\+Base\+Data}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+V\+F\+Controller\+::\+Lookup\+Base\+Data (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_v_f_controller_a84f09db2d388d29d5224a30bdb68d76f}
+
+
+Finds the \char`\"{}base\char`\"{} object for kinematics and sensor data that has an offset. 
+
+\hypertarget{classmts_v_f_controller_a742a86f34faf0b1416939bf21ddf366b}{}\index{mts\+V\+F\+Controller@{mts\+V\+F\+Controller}!Remove\+Kinematics\+From\+Map@{Remove\+Kinematics\+From\+Map}}
+\index{Remove\+Kinematics\+From\+Map@{Remove\+Kinematics\+From\+Map}!mts\+V\+F\+Controller@{mts\+V\+F\+Controller}}
+\subsubsection[{Remove\+Kinematics\+From\+Map}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+V\+F\+Controller\+::\+Remove\+Kinematics\+From\+Map (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{kin\+Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_v_f_controller_a742a86f34faf0b1416939bf21ddf366b}
+
+
+Removes a kinematics object from the map. 
+
+\hypertarget{classmts_v_f_controller_a3c00912ec4d7055cc61bd6cf61b51c2c}{}\index{mts\+V\+F\+Controller@{mts\+V\+F\+Controller}!Remove\+Sensor\+From\+Map@{Remove\+Sensor\+From\+Map}}
+\index{Remove\+Sensor\+From\+Map@{Remove\+Sensor\+From\+Map}!mts\+V\+F\+Controller@{mts\+V\+F\+Controller}}
+\subsubsection[{Remove\+Sensor\+From\+Map}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+V\+F\+Controller\+::\+Remove\+Sensor\+From\+Map (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{sen\+Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_v_f_controller_a3c00912ec4d7055cc61bd6cf61b51c2c}
+
+
+Removes a sensor from the map. 
+
+\hypertarget{classmts_v_f_controller_af32d53c8bc0cdb3db21c9887cd759c7a}{}\index{mts\+V\+F\+Controller@{mts\+V\+F\+Controller}!Set\+Kinematics@{Set\+Kinematics}}
+\index{Set\+Kinematics@{Set\+Kinematics}!mts\+V\+F\+Controller@{mts\+V\+F\+Controller}}
+\subsubsection[{Set\+Kinematics}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+V\+F\+Controller\+::\+Set\+Kinematics (
+\begin{DoxyParamCaption}
+\item[{const prm\+Kinematics\+State \&}]{kin}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_v_f_controller_af32d53c8bc0cdb3db21c9887cd759c7a}
+
+
+Adds/\+Updates a kinematics object to the map. 
+
+\hypertarget{classmts_v_f_controller_a9b2a191244f649c4648a1f3e555ceaae}{}\index{mts\+V\+F\+Controller@{mts\+V\+F\+Controller}!Set\+Mode@{Set\+Mode}}
+\index{Set\+Mode@{Set\+Mode}!mts\+V\+F\+Controller@{mts\+V\+F\+Controller}}
+\subsubsection[{Set\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+V\+F\+Controller\+::\+Set\+Mode (
+\begin{DoxyParamCaption}
+\item[{const {\bf mts\+V\+F\+Base\+::\+C\+O\+N\+T\+R\+O\+L\+L\+E\+R\+M\+O\+D\+E} \&}]{m}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_v_f_controller_a9b2a191244f649c4648a1f3e555ceaae}
+
+
+Changes the variable the optimizer is solving for. 
+
+\hypertarget{classmts_v_f_controller_a4bc9686480a583054ca0615a4bbc8b46}{}\index{mts\+V\+F\+Controller@{mts\+V\+F\+Controller}!Set\+Sensor@{Set\+Sensor}}
+\index{Set\+Sensor@{Set\+Sensor}!mts\+V\+F\+Controller@{mts\+V\+F\+Controller}}
+\subsubsection[{Set\+Sensor}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+V\+F\+Controller\+::\+Set\+Sensor (
+\begin{DoxyParamCaption}
+\item[{const prm\+Sensor\+State \&}]{sen}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_v_f_controller_a4bc9686480a583054ca0615a4bbc8b46}
+
+
+Adds/\+Updates a sensor to the map. 
+
+\hypertarget{classmts_v_f_controller_a7da3be1c2a5cd3e2f94fa13adecbdffc}{}\index{mts\+V\+F\+Controller@{mts\+V\+F\+Controller}!Set\+Sensor\+Offset@{Set\+Sensor\+Offset}}
+\index{Set\+Sensor\+Offset@{Set\+Sensor\+Offset}!mts\+V\+F\+Controller@{mts\+V\+F\+Controller}}
+\subsubsection[{Set\+Sensor\+Offset}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+V\+F\+Controller\+::\+Set\+Sensor\+Offset (
+\begin{DoxyParamCaption}
+\item[{const prm\+Offset\+State \&}]{sen}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_v_f_controller_a7da3be1c2a5cd3e2f94fa13adecbdffc}
+
+
+Adds/\+Updates a sensor to the map. 
+
+\hypertarget{classmts_v_f_controller_a9440eb1cf7cf204da43730bfcbe00ca8}{}\index{mts\+V\+F\+Controller@{mts\+V\+F\+Controller}!Set\+V\+F\+Data@{Set\+V\+F\+Data}}
+\index{Set\+V\+F\+Data@{Set\+V\+F\+Data}!mts\+V\+F\+Controller@{mts\+V\+F\+Controller}}
+\subsubsection[{Set\+V\+F\+Data}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+V\+F\+Controller\+::\+Set\+V\+F\+Data (
+\begin{DoxyParamCaption}
+\item[{const mts\+V\+F\+Data\+Base \&}]{data, }
+\item[{const std\+::type\+\_\+info \&}]{type}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_v_f_controller_a9440eb1cf7cf204da43730bfcbe00ca8}
+\hypertarget{classmts_v_f_controller_accdcc21711fac674914793949bd02bb1}{}\index{mts\+V\+F\+Controller@{mts\+V\+F\+Controller}!Set\+V\+F\+Data\+Plane@{Set\+V\+F\+Data\+Plane}}
+\index{Set\+V\+F\+Data\+Plane@{Set\+V\+F\+Data\+Plane}!mts\+V\+F\+Controller@{mts\+V\+F\+Controller}}
+\subsubsection[{Set\+V\+F\+Data\+Plane}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+V\+F\+Controller\+::\+Set\+V\+F\+Data\+Plane (
+\begin{DoxyParamCaption}
+\item[{const mts\+V\+F\+Data\+Plane \&}]{data, }
+\item[{const std\+::type\+\_\+info \&}]{type}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_v_f_controller_accdcc21711fac674914793949bd02bb1}
+\hypertarget{classmts_v_f_controller_a81a83b84ce61fab4563e344579e6a37a}{}\index{mts\+V\+F\+Controller@{mts\+V\+F\+Controller}!Set\+V\+F\+Data\+Sensor\+Compliance@{Set\+V\+F\+Data\+Sensor\+Compliance}}
+\index{Set\+V\+F\+Data\+Sensor\+Compliance@{Set\+V\+F\+Data\+Sensor\+Compliance}!mts\+V\+F\+Controller@{mts\+V\+F\+Controller}}
+\subsubsection[{Set\+V\+F\+Data\+Sensor\+Compliance}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+V\+F\+Controller\+::\+Set\+V\+F\+Data\+Sensor\+Compliance (
+\begin{DoxyParamCaption}
+\item[{const mts\+V\+F\+Data\+Sensor\+Compliance \&}]{data, }
+\item[{const std\+::type\+\_\+info \&}]{type}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_v_f_controller_a81a83b84ce61fab4563e344579e6a37a}
+\hypertarget{classmts_v_f_controller_a8f672fd70223794ef98ecf237589cc44}{}\index{mts\+V\+F\+Controller@{mts\+V\+F\+Controller}!Solve@{Solve}}
+\index{Solve@{Solve}!mts\+V\+F\+Controller@{mts\+V\+F\+Controller}}
+\subsubsection[{Solve}]{\setlength{\rightskip}{0pt plus 5cm}{\bf nmr\+Constraint\+Optimizer\+::\+S\+T\+A\+T\+U\+S} mts\+V\+F\+Controller\+::\+Solve (
+\begin{DoxyParamCaption}
+\item[{{\bf vct\+Double\+Vec} \&}]{dq}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_v_f_controller_a8f672fd70223794ef98ecf237589cc44}
+
+
+Solves the constraint optimization problem and fills the result into the parameter. 
+
+\hypertarget{classmts_v_f_controller_a9ea569dcf499c4a086ef9e9751c9e55e}{}\index{mts\+V\+F\+Controller@{mts\+V\+F\+Controller}!Update\+Optimizer@{Update\+Optimizer}}
+\index{Update\+Optimizer@{Update\+Optimizer}!mts\+V\+F\+Controller@{mts\+V\+F\+Controller}}
+\subsubsection[{Update\+Optimizer}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+V\+F\+Controller\+::\+Update\+Optimizer (
+\begin{DoxyParamCaption}
+\item[{double}]{Tick\+Time}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_v_f_controller_a9ea569dcf499c4a086ef9e9751c9e55e}
+
+
+Updates the robot state data and control optimizer. 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classmts_v_f_controller_ad5340ab1ebdc9c7c0b1f66180ce70227}{}\index{mts\+V\+F\+Controller@{mts\+V\+F\+Controller}!Controller\+Mode@{Controller\+Mode}}
+\index{Controller\+Mode@{Controller\+Mode}!mts\+V\+F\+Controller@{mts\+V\+F\+Controller}}
+\subsubsection[{Controller\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+V\+F\+Base\+::\+C\+O\+N\+T\+R\+O\+L\+L\+E\+R\+M\+O\+D\+E} mts\+V\+F\+Controller\+::\+Controller\+Mode\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_v_f_controller_ad5340ab1ebdc9c7c0b1f66180ce70227}
+\hypertarget{classmts_v_f_controller_a1894d5892686513258336a288615a234}{}\index{mts\+V\+F\+Controller@{mts\+V\+F\+Controller}!Joint\+State@{Joint\+State}}
+\index{Joint\+State@{Joint\+State}!mts\+V\+F\+Controller@{mts\+V\+F\+Controller}}
+\subsubsection[{Joint\+State}]{\setlength{\rightskip}{0pt plus 5cm}prm\+Joint\+State mts\+V\+F\+Controller\+::\+Joint\+State\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_v_f_controller_a1894d5892686513258336a288615a234}
+\hypertarget{classmts_v_f_controller_af130251a32e9663507ab4d0ecf2c1ebe}{}\index{mts\+V\+F\+Controller@{mts\+V\+F\+Controller}!Kinematics@{Kinematics}}
+\index{Kinematics@{Kinematics}!mts\+V\+F\+Controller@{mts\+V\+F\+Controller}}
+\subsubsection[{Kinematics}]{\setlength{\rightskip}{0pt plus 5cm}std\+::map$<$std\+::string, prm\+Kinematics\+State $\ast$$>$ mts\+V\+F\+Controller\+::\+Kinematics\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_v_f_controller_af130251a32e9663507ab4d0ecf2c1ebe}
+\hypertarget{classmts_v_f_controller_a434d49f47dff20bbe715be76221a98ba}{}\index{mts\+V\+F\+Controller@{mts\+V\+F\+Controller}!Optimizer@{Optimizer}}
+\index{Optimizer@{Optimizer}!mts\+V\+F\+Controller@{mts\+V\+F\+Controller}}
+\subsubsection[{Optimizer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf nmr\+Constraint\+Optimizer} mts\+V\+F\+Controller\+::\+Optimizer\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_v_f_controller_a434d49f47dff20bbe715be76221a98ba}
+\hypertarget{classmts_v_f_controller_aaac004c01f9e1b4af5c64292c68d523e}{}\index{mts\+V\+F\+Controller@{mts\+V\+F\+Controller}!Sensors@{Sensors}}
+\index{Sensors@{Sensors}!mts\+V\+F\+Controller@{mts\+V\+F\+Controller}}
+\subsubsection[{Sensors}]{\setlength{\rightskip}{0pt plus 5cm}std\+::map$<$std\+::string, prm\+Sensor\+State $\ast$$>$ mts\+V\+F\+Controller\+::\+Sensors\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_v_f_controller_aaac004c01f9e1b4af5c64292c68d523e}
+\hypertarget{classmts_v_f_controller_acf1cfa87ed1c4903f9b4e3c0b4885fa3}{}\index{mts\+V\+F\+Controller@{mts\+V\+F\+Controller}!V\+F\+Map@{V\+F\+Map}}
+\index{V\+F\+Map@{V\+F\+Map}!mts\+V\+F\+Controller@{mts\+V\+F\+Controller}}
+\subsubsection[{V\+F\+Map}]{\setlength{\rightskip}{0pt plus 5cm}std\+::map$<$std\+::string, {\bf mts\+V\+F\+Base} $\ast$$>$ mts\+V\+F\+Controller\+::\+V\+F\+Map\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_v_f_controller_acf1cfa87ed1c4903f9b4e3c0b4885fa3}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/saw\+Constraint\+Controller/include/saw\+Constraint\+Controller/\hyperlink{mts_v_f_controller_8h}{mts\+V\+F\+Controller.\+h}\end{DoxyCompactItemize}

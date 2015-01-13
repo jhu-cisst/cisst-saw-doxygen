@@ -1,0 +1,165 @@
+\hypertarget{classmts_collector_state}{}\section{mts\+Collector\+State Class Reference}
+\label{classmts_collector_state}\index{mts\+Collector\+State@{mts\+Collector\+State}}
+
+
+{\ttfamily \#include $<$mts\+Collector\+State.\+h$>$}
+
+Inheritance diagram for mts\+Collector\+State\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=7.000000cm]{dd/dde/classmts_collector_state}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmts_collector_state_a34e1c33ed253cea0354e789c821ce68f}{mts\+Collector\+State} (const std\+::string \&collector\+Name)
+\item 
+\hyperlink{classmts_collector_state_a32fc978a0d303bad899e0f7c6927d41c}{mts\+Collector\+State} (const std\+::string \&target\+Component\+Name, const std\+::string \&target\+State\+Table\+Name, const \hyperlink{group__cisst_multi_task_gaa228bed8144053d0bfa316f9ac9d0901}{Collector\+File\+Format} file\+Format)
+\item 
+\hyperlink{classmts_collector_state_a8cf49acf351f722426e9702661041d7e}{$\sim$mts\+Collector\+State} (void)
+\item 
+bool \hyperlink{classmts_collector_state_a984a05c6362c5e9e9bf87da923f67893}{Set\+State\+Table} (const std\+::string \&component\+Name, const std\+::string \&state\+Table\+Name=\char`\"{}\char`\"{})
+\item 
+bool \hyperlink{classmts_collector_state_ad040a83bd440b0b9b26f513a418cdad9}{Add\+Signal} (const std\+::string \&signal\+Name=\char`\"{}\char`\"{})
+\item 
+void \hyperlink{classmts_collector_state_a167a95911da734754db0abeeacaa15cc}{Set\+Sampling\+Interval} (const unsigned int sampling\+Interval)
+\item 
+bool \hyperlink{classmts_collector_state_aff201d6644d0b997961833e9ef025343}{Connect} (void)
+\item 
+bool \hyperlink{classmts_collector_state_ac1d62769aedb2fab6cec2eca161eb06c}{Disconnect} (void)
+\end{DoxyCompactItemize}
+{\bf }\par
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classmts_collector_state_a4337bf2b019fb0516abfe5faadbac5f5}{Start\+Collection} (const \hyperlink{mts_generic_object_proxy_8h_a31e76b0190a8d3f9838626cd7b47bd75}{mts\+Double} \&delay\+In\+Seconds)
+\item 
+void \hyperlink{classmts_collector_state_a8da41d4b23bbb42f9f74ee32fecf36ec}{Stop\+Collection} (const \hyperlink{mts_generic_object_proxy_8h_a31e76b0190a8d3f9838626cd7b47bd75}{mts\+Double} \&delay\+In\+Seconds)
+\end{DoxyCompactItemize}
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \hyperlink{classmts_collector_state_ade0730c3367348b548d8cf56384269e7}{Convert\+Binary\+To\+Text} (const std\+::string source\+Binary\+Log\+File\+Name, const std\+::string target\+Plain\+Text\+Log\+File\+Name, const char delimiter= \textquotesingle{},\textquotesingle{})
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classmts_collector_state_a9e2828100f64238c027a54e6a38b8307}{mts\+Collector\+State\+Test}
+\item 
+class \hyperlink{classmts_collector_state_af4d045a97beae5ceb1642100f69e82c9}{mts\+State\+Table}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This class provides a way to collect data in the state table without loss and make a log file. The type of a log file can be plain text (ascii), csv, or binary. A state table of which data is to be collected can be specified in the constructor. This is intended for future usage where a task can have more than two state tables. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmts_collector_state_a34e1c33ed253cea0354e789c821ce68f}{}\index{mts\+Collector\+State@{mts\+Collector\+State}!mts\+Collector\+State@{mts\+Collector\+State}}
+\index{mts\+Collector\+State@{mts\+Collector\+State}!mts\+Collector\+State@{mts\+Collector\+State}}
+\subsubsection[{mts\+Collector\+State}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Collector\+State\+::mts\+Collector\+State (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{collector\+Name}
+\end{DoxyParamCaption}
+)}\label{classmts_collector_state_a34e1c33ed253cea0354e789c821ce68f}
+Constructor using the component name and table name. \hypertarget{classmts_collector_state_a32fc978a0d303bad899e0f7c6927d41c}{}\index{mts\+Collector\+State@{mts\+Collector\+State}!mts\+Collector\+State@{mts\+Collector\+State}}
+\index{mts\+Collector\+State@{mts\+Collector\+State}!mts\+Collector\+State@{mts\+Collector\+State}}
+\subsubsection[{mts\+Collector\+State}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Collector\+State\+::mts\+Collector\+State (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{target\+Component\+Name, }
+\item[{const std\+::string \&}]{target\+State\+Table\+Name, }
+\item[{const {\bf Collector\+File\+Format}}]{file\+Format}
+\end{DoxyParamCaption}
+)}\label{classmts_collector_state_a32fc978a0d303bad899e0f7c6927d41c}
+Constructor using a component pointer and table name. \hypertarget{classmts_collector_state_a8cf49acf351f722426e9702661041d7e}{}\index{mts\+Collector\+State@{mts\+Collector\+State}!````~mts\+Collector\+State@{$\sim$mts\+Collector\+State}}
+\index{````~mts\+Collector\+State@{$\sim$mts\+Collector\+State}!mts\+Collector\+State@{mts\+Collector\+State}}
+\subsubsection[{$\sim$mts\+Collector\+State}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Collector\+State\+::$\sim$mts\+Collector\+State (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classmts_collector_state_a8cf49acf351f722426e9702661041d7e}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classmts_collector_state_ad040a83bd440b0b9b26f513a418cdad9}{}\index{mts\+Collector\+State@{mts\+Collector\+State}!Add\+Signal@{Add\+Signal}}
+\index{Add\+Signal@{Add\+Signal}!mts\+Collector\+State@{mts\+Collector\+State}}
+\subsubsection[{Add\+Signal}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Collector\+State\+::\+Add\+Signal (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{signal\+Name = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)}\label{classmts_collector_state_ad040a83bd440b0b9b26f513a418cdad9}
+Add the signal specified to a list of registered signals. \hypertarget{classmts_collector_state_aff201d6644d0b997961833e9ef025343}{}\index{mts\+Collector\+State@{mts\+Collector\+State}!Connect@{Connect}}
+\index{Connect@{Connect}!mts\+Collector\+State@{mts\+Collector\+State}}
+\subsubsection[{Connect}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Collector\+State\+::\+Connect (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classmts_collector_state_aff201d6644d0b997961833e9ef025343}
+Connect. Once the state collector has been configured, i.\+e. the methods Set\+State\+Table and Set\+Output have been use, the collector should be added to the manager and then the Connect method should be called. \hypertarget{classmts_collector_state_ade0730c3367348b548d8cf56384269e7}{}\index{mts\+Collector\+State@{mts\+Collector\+State}!Convert\+Binary\+To\+Text@{Convert\+Binary\+To\+Text}}
+\index{Convert\+Binary\+To\+Text@{Convert\+Binary\+To\+Text}!mts\+Collector\+State@{mts\+Collector\+State}}
+\subsubsection[{Convert\+Binary\+To\+Text}]{\setlength{\rightskip}{0pt plus 5cm}static bool mts\+Collector\+State\+::\+Convert\+Binary\+To\+Text (
+\begin{DoxyParamCaption}
+\item[{const std\+::string}]{source\+Binary\+Log\+File\+Name, }
+\item[{const std\+::string}]{target\+Plain\+Text\+Log\+File\+Name, }
+\item[{const char}]{delimiter = {\ttfamily \textquotesingle{},\textquotesingle{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classmts_collector_state_ade0730c3367348b548d8cf56384269e7}
+Convert a binary log file into a plain text one. \hypertarget{classmts_collector_state_ac1d62769aedb2fab6cec2eca161eb06c}{}\index{mts\+Collector\+State@{mts\+Collector\+State}!Disconnect@{Disconnect}}
+\index{Disconnect@{Disconnect}!mts\+Collector\+State@{mts\+Collector\+State}}
+\subsubsection[{Disconnect}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Collector\+State\+::\+Disconnect (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classmts_collector_state_ac1d62769aedb2fab6cec2eca161eb06c}
+Disconnect. Attempt to disconnect from the observed component. \hypertarget{classmts_collector_state_a167a95911da734754db0abeeacaa15cc}{}\index{mts\+Collector\+State@{mts\+Collector\+State}!Set\+Sampling\+Interval@{Set\+Sampling\+Interval}}
+\index{Set\+Sampling\+Interval@{Set\+Sampling\+Interval}!mts\+Collector\+State@{mts\+Collector\+State}}
+\subsubsection[{Set\+Sampling\+Interval}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Collector\+State\+::\+Set\+Sampling\+Interval (
+\begin{DoxyParamCaption}
+\item[{const unsigned int}]{sampling\+Interval}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_collector_state_a167a95911da734754db0abeeacaa15cc}
+Set a sampling interval so that data collector can skip several values. This is useful when a frequency of the component is somewhat high and you don\textquotesingle{}t want to collect A\+L\+L data from it. \hypertarget{classmts_collector_state_a984a05c6362c5e9e9bf87da923f67893}{}\index{mts\+Collector\+State@{mts\+Collector\+State}!Set\+State\+Table@{Set\+State\+Table}}
+\index{Set\+State\+Table@{Set\+State\+Table}!mts\+Collector\+State@{mts\+Collector\+State}}
+\subsubsection[{Set\+State\+Table}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Collector\+State\+::\+Set\+State\+Table (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{component\+Name, }
+\item[{const std\+::string \&}]{state\+Table\+Name = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)}\label{classmts_collector_state_a984a05c6362c5e9e9bf87da923f67893}
+Defines which table to collect data from. This is defined by the component name and the table name. If the table name is not provided, the collector will use the default component\textquotesingle{}s state table. \hypertarget{classmts_collector_state_a4337bf2b019fb0516abfe5faadbac5f5}{}\index{mts\+Collector\+State@{mts\+Collector\+State}!Start\+Collection@{Start\+Collection}}
+\index{Start\+Collection@{Start\+Collection}!mts\+Collector\+State@{mts\+Collector\+State}}
+\subsubsection[{Start\+Collection}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Collector\+State\+::\+Start\+Collection (
+\begin{DoxyParamCaption}
+\item[{const {\bf mts\+Double} \&}]{delay\+In\+Seconds}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_collector_state_a4337bf2b019fb0516abfe5faadbac5f5}
+Methods defined as virtual in base class to control stop/start collection with delay. For the state table collection, these methods are mainly pass through, i.\+e. they call the corresponding commands from the state table component. 
+
+Implements \hyperlink{classmts_collector_base_a2fde70b19fbe88b049e8a8d19320f2c2}{mts\+Collector\+Base}.
+
+\hypertarget{classmts_collector_state_a8da41d4b23bbb42f9f74ee32fecf36ec}{}\index{mts\+Collector\+State@{mts\+Collector\+State}!Stop\+Collection@{Stop\+Collection}}
+\index{Stop\+Collection@{Stop\+Collection}!mts\+Collector\+State@{mts\+Collector\+State}}
+\subsubsection[{Stop\+Collection}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Collector\+State\+::\+Stop\+Collection (
+\begin{DoxyParamCaption}
+\item[{const {\bf mts\+Double} \&}]{delay\+In\+Seconds}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_collector_state_a8da41d4b23bbb42f9f74ee32fecf36ec}
+End collecting data. Data collection will end after delayed\+Stop second(s). If it is zero (by default), it means \textquotesingle{}stop now\textquotesingle{}. 
+
+Implements \hyperlink{classmts_collector_base_a56f67fc120a7088b8d5904a3a785d5dd}{mts\+Collector\+Base}.
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classmts_collector_state_a9e2828100f64238c027a54e6a38b8307}{}\index{mts\+Collector\+State@{mts\+Collector\+State}!mts\+Collector\+State\+Test@{mts\+Collector\+State\+Test}}
+\index{mts\+Collector\+State\+Test@{mts\+Collector\+State\+Test}!mts\+Collector\+State@{mts\+Collector\+State}}
+\subsubsection[{mts\+Collector\+State\+Test}]{\setlength{\rightskip}{0pt plus 5cm}friend class mts\+Collector\+State\+Test\hspace{0.3cm}{\ttfamily [friend]}}\label{classmts_collector_state_a9e2828100f64238c027a54e6a38b8307}
+\hypertarget{classmts_collector_state_af4d045a97beae5ceb1642100f69e82c9}{}\index{mts\+Collector\+State@{mts\+Collector\+State}!mts\+State\+Table@{mts\+State\+Table}}
+\index{mts\+State\+Table@{mts\+State\+Table}!mts\+Collector\+State@{mts\+Collector\+State}}
+\subsubsection[{mts\+State\+Table}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf mts\+State\+Table}\hspace{0.3cm}{\ttfamily [friend]}}\label{classmts_collector_state_af4d045a97beae5ceb1642100f69e82c9}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Multi\+Task/\hyperlink{mts_collector_state_8h}{mts\+Collector\+State.\+h}\end{DoxyCompactItemize}

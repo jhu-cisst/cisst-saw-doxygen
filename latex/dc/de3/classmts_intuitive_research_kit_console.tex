@@ -1,0 +1,183 @@
+\hypertarget{classmts_intuitive_research_kit_console}{}\section{mts\+Intuitive\+Research\+Kit\+Console Class Reference}
+\label{classmts_intuitive_research_kit_console}\index{mts\+Intuitive\+Research\+Kit\+Console@{mts\+Intuitive\+Research\+Kit\+Console}}
+
+
+{\ttfamily \#include $<$mts\+Intuitive\+Research\+Kit\+Console.\+h$>$}
+
+Inheritance diagram for mts\+Intuitive\+Research\+Kit\+Console\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=6.000000cm]{dc/de3/classmts_intuitive_research_kit_console}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classmts_intuitive_research_kit_console_1_1_arm}{Arm}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmts_intuitive_research_kit_console_ac35e521263fc5019b4fe0d2540bc4688}{mts\+Intuitive\+Research\+Kit\+Console} (const std\+::string \&component\+Name)
+\item 
+virtual \hyperlink{classmts_intuitive_research_kit_console_ad4ccebcacb7c58f67408a320f7806087}{$\sim$mts\+Intuitive\+Research\+Kit\+Console} ()
+\item 
+void \hyperlink{classmts_intuitive_research_kit_console_a9c424612ad46c323f1d620c85d4b2cb6}{Configure} (const std\+::string \&filename=\char`\"{}\char`\"{})
+\item 
+void \hyperlink{classmts_intuitive_research_kit_console_a15a0d6dd7789ea68f27f431c02b7567d}{Startup} (void)
+\item 
+void \hyperlink{classmts_intuitive_research_kit_console_ad43239998cb5751d31491cdcf5330ba1}{Run} (void)
+\item 
+void \hyperlink{classmts_intuitive_research_kit_console_a7e2319e21dc925a67d43945abad7cf6b}{Cleanup} (void)
+\item 
+bool \hyperlink{classmts_intuitive_research_kit_console_a2b43a402a2dba09c55701c2f957aee85}{Add\+Arm} (\hyperlink{classmts_intuitive_research_kit_console_1_1_arm}{Arm} $\ast$new\+M\+T\+M)
+\item 
+bool \hyperlink{classmts_intuitive_research_kit_console_a27e2a757cfc2e6420bdaf8bc4f0e7adf}{Add\+Arm} (\hyperlink{classmts_component}{mts\+Component} $\ast$generic\+Arm, const \hyperlink{classmts_intuitive_research_kit_console_1_1_arm_acb898ba65d323f59ffd0885a47ef6cec}{Arm\+::\+Arm\+Type} arm\+Type)
+\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::list$<$ \hyperlink{classmts_intuitive_research_kit_console_1_1_arm}{Arm} $\ast$ $>$ \hyperlink{classmts_intuitive_research_kit_console_af9f8efcf17fe738d0143b3ea418198dd}{Arm\+List}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classmts_intuitive_research_kit_console_a4d5d15ae77cdbb43066355d5a47fe0f7}{Set\+Robot\+Control\+State} (const std\+::string \&new\+State)
+\item 
+void \hyperlink{classmts_intuitive_research_kit_console_aad9cc3bbef2cc78d521c4e121b89cab7}{Error\+Message\+Event\+Handler} (const std\+::string \&message)
+\item 
+void \hyperlink{classmts_intuitive_research_kit_console_aa82918dfe2041afb8b66545df2c6b3e0}{Status\+Message\+Event\+Handler} (const std\+::string \&message)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmts_intuitive_research_kit_console_af9f8efcf17fe738d0143b3ea418198dd}{Arm\+List} \hyperlink{classmts_intuitive_research_kit_console_abe94e9e6282e5d7f50aa033aa04bc015}{m\+Arms}
+\item 
+\hyperlink{classmts_function_write}{mts\+Function\+Write} \hyperlink{classmts_intuitive_research_kit_console_aa9fe5ce6eead7feb87d4f5770e4f7a05}{Error\+Message\+Event\+Trigger}
+\item 
+\hyperlink{classmts_function_write}{mts\+Function\+Write} \hyperlink{classmts_intuitive_research_kit_console_ab15f69349bf2c5bc8fecd2fcb4de2107}{Status\+Message\+Event\+Trigger}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classmts_intuitive_research_kit_console_af9f8efcf17fe738d0143b3ea418198dd}{}\index{mts\+Intuitive\+Research\+Kit\+Console@{mts\+Intuitive\+Research\+Kit\+Console}!Arm\+List@{Arm\+List}}
+\index{Arm\+List@{Arm\+List}!mts\+Intuitive\+Research\+Kit\+Console@{mts\+Intuitive\+Research\+Kit\+Console}}
+\subsubsection[{Arm\+List}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::list$<${\bf Arm} $\ast$$>$ {\bf mts\+Intuitive\+Research\+Kit\+Console\+::\+Arm\+List}\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_intuitive_research_kit_console_af9f8efcf17fe738d0143b3ea418198dd}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmts_intuitive_research_kit_console_ac35e521263fc5019b4fe0d2540bc4688}{}\index{mts\+Intuitive\+Research\+Kit\+Console@{mts\+Intuitive\+Research\+Kit\+Console}!mts\+Intuitive\+Research\+Kit\+Console@{mts\+Intuitive\+Research\+Kit\+Console}}
+\index{mts\+Intuitive\+Research\+Kit\+Console@{mts\+Intuitive\+Research\+Kit\+Console}!mts\+Intuitive\+Research\+Kit\+Console@{mts\+Intuitive\+Research\+Kit\+Console}}
+\subsubsection[{mts\+Intuitive\+Research\+Kit\+Console}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Intuitive\+Research\+Kit\+Console\+::mts\+Intuitive\+Research\+Kit\+Console (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{component\+Name}
+\end{DoxyParamCaption}
+)}\label{classmts_intuitive_research_kit_console_ac35e521263fc5019b4fe0d2540bc4688}
+\hypertarget{classmts_intuitive_research_kit_console_ad4ccebcacb7c58f67408a320f7806087}{}\index{mts\+Intuitive\+Research\+Kit\+Console@{mts\+Intuitive\+Research\+Kit\+Console}!````~mts\+Intuitive\+Research\+Kit\+Console@{$\sim$mts\+Intuitive\+Research\+Kit\+Console}}
+\index{````~mts\+Intuitive\+Research\+Kit\+Console@{$\sim$mts\+Intuitive\+Research\+Kit\+Console}!mts\+Intuitive\+Research\+Kit\+Console@{mts\+Intuitive\+Research\+Kit\+Console}}
+\subsubsection[{$\sim$mts\+Intuitive\+Research\+Kit\+Console}]{\setlength{\rightskip}{0pt plus 5cm}virtual mts\+Intuitive\+Research\+Kit\+Console\+::$\sim$mts\+Intuitive\+Research\+Kit\+Console (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classmts_intuitive_research_kit_console_ad4ccebcacb7c58f67408a320f7806087}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classmts_intuitive_research_kit_console_a2b43a402a2dba09c55701c2f957aee85}{}\index{mts\+Intuitive\+Research\+Kit\+Console@{mts\+Intuitive\+Research\+Kit\+Console}!Add\+Arm@{Add\+Arm}}
+\index{Add\+Arm@{Add\+Arm}!mts\+Intuitive\+Research\+Kit\+Console@{mts\+Intuitive\+Research\+Kit\+Console}}
+\subsubsection[{Add\+Arm}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Intuitive\+Research\+Kit\+Console\+::\+Add\+Arm (
+\begin{DoxyParamCaption}
+\item[{{\bf Arm} $\ast$}]{new\+M\+T\+M}
+\end{DoxyParamCaption}
+)}\label{classmts_intuitive_research_kit_console_a2b43a402a2dba09c55701c2f957aee85}
+\hypertarget{classmts_intuitive_research_kit_console_a27e2a757cfc2e6420bdaf8bc4f0e7adf}{}\index{mts\+Intuitive\+Research\+Kit\+Console@{mts\+Intuitive\+Research\+Kit\+Console}!Add\+Arm@{Add\+Arm}}
+\index{Add\+Arm@{Add\+Arm}!mts\+Intuitive\+Research\+Kit\+Console@{mts\+Intuitive\+Research\+Kit\+Console}}
+\subsubsection[{Add\+Arm}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Intuitive\+Research\+Kit\+Console\+::\+Add\+Arm (
+\begin{DoxyParamCaption}
+\item[{{\bf mts\+Component} $\ast$}]{generic\+Arm, }
+\item[{const {\bf Arm\+::\+Arm\+Type}}]{arm\+Type}
+\end{DoxyParamCaption}
+)}\label{classmts_intuitive_research_kit_console_a27e2a757cfc2e6420bdaf8bc4f0e7adf}
+\hypertarget{classmts_intuitive_research_kit_console_a7e2319e21dc925a67d43945abad7cf6b}{}\index{mts\+Intuitive\+Research\+Kit\+Console@{mts\+Intuitive\+Research\+Kit\+Console}!Cleanup@{Cleanup}}
+\index{Cleanup@{Cleanup}!mts\+Intuitive\+Research\+Kit\+Console@{mts\+Intuitive\+Research\+Kit\+Console}}
+\subsubsection[{Cleanup}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Intuitive\+Research\+Kit\+Console\+::\+Cleanup (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_intuitive_research_kit_console_a7e2319e21dc925a67d43945abad7cf6b}
+Virtual method that gets overloaded, and is run after the component gets killed using \hyperlink{classmts_task_from_signal_a9a1b6e7c80ca2c2fdc14de78e3635922}{Kill()} method. 
+
+Reimplemented from \hyperlink{classmts_component_a891f330f4fde7d831dcf7dc537dc5e81}{mts\+Component}.
+
+\hypertarget{classmts_intuitive_research_kit_console_a9c424612ad46c323f1d620c85d4b2cb6}{}\index{mts\+Intuitive\+Research\+Kit\+Console@{mts\+Intuitive\+Research\+Kit\+Console}!Configure@{Configure}}
+\index{Configure@{Configure}!mts\+Intuitive\+Research\+Kit\+Console@{mts\+Intuitive\+Research\+Kit\+Console}}
+\subsubsection[{Configure}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Intuitive\+Research\+Kit\+Console\+::\+Configure (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{filename = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_intuitive_research_kit_console_a9c424612ad46c323f1d620c85d4b2cb6}
+The virtual method so that the interface or tasks can configure themselves 
+
+Reimplemented from \hyperlink{classmts_component_ad872432876de7879dc96c232b411c146}{mts\+Component}.
+
+\hypertarget{classmts_intuitive_research_kit_console_aad9cc3bbef2cc78d521c4e121b89cab7}{}\index{mts\+Intuitive\+Research\+Kit\+Console@{mts\+Intuitive\+Research\+Kit\+Console}!Error\+Message\+Event\+Handler@{Error\+Message\+Event\+Handler}}
+\index{Error\+Message\+Event\+Handler@{Error\+Message\+Event\+Handler}!mts\+Intuitive\+Research\+Kit\+Console@{mts\+Intuitive\+Research\+Kit\+Console}}
+\subsubsection[{Error\+Message\+Event\+Handler}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Intuitive\+Research\+Kit\+Console\+::\+Error\+Message\+Event\+Handler (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{message}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_intuitive_research_kit_console_aad9cc3bbef2cc78d521c4e121b89cab7}
+\hypertarget{classmts_intuitive_research_kit_console_ad43239998cb5751d31491cdcf5330ba1}{}\index{mts\+Intuitive\+Research\+Kit\+Console@{mts\+Intuitive\+Research\+Kit\+Console}!Run@{Run}}
+\index{Run@{Run}!mts\+Intuitive\+Research\+Kit\+Console@{mts\+Intuitive\+Research\+Kit\+Console}}
+\subsubsection[{Run}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Intuitive\+Research\+Kit\+Console\+::\+Run (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_intuitive_research_kit_console_ad43239998cb5751d31491cdcf5330ba1}
+Pure virtual method that gets overloaded to run the actual task. 
+
+Implements \hyperlink{classmts_task_a20e18c9479cb650792456c32ee689834}{mts\+Task}.
+
+\hypertarget{classmts_intuitive_research_kit_console_a4d5d15ae77cdbb43066355d5a47fe0f7}{}\index{mts\+Intuitive\+Research\+Kit\+Console@{mts\+Intuitive\+Research\+Kit\+Console}!Set\+Robot\+Control\+State@{Set\+Robot\+Control\+State}}
+\index{Set\+Robot\+Control\+State@{Set\+Robot\+Control\+State}!mts\+Intuitive\+Research\+Kit\+Console@{mts\+Intuitive\+Research\+Kit\+Console}}
+\subsubsection[{Set\+Robot\+Control\+State}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Intuitive\+Research\+Kit\+Console\+::\+Set\+Robot\+Control\+State (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{new\+State}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_intuitive_research_kit_console_a4d5d15ae77cdbb43066355d5a47fe0f7}
+\hypertarget{classmts_intuitive_research_kit_console_a15a0d6dd7789ea68f27f431c02b7567d}{}\index{mts\+Intuitive\+Research\+Kit\+Console@{mts\+Intuitive\+Research\+Kit\+Console}!Startup@{Startup}}
+\index{Startup@{Startup}!mts\+Intuitive\+Research\+Kit\+Console@{mts\+Intuitive\+Research\+Kit\+Console}}
+\subsubsection[{Startup}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Intuitive\+Research\+Kit\+Console\+::\+Startup (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_intuitive_research_kit_console_a15a0d6dd7789ea68f27f431c02b7567d}
+Virtual method that gets overloaded, and is run before the component is started. 
+
+Reimplemented from \hyperlink{classmts_component_aaf28f0262b44eb6866e10089a02fa6e4}{mts\+Component}.
+
+\hypertarget{classmts_intuitive_research_kit_console_aa82918dfe2041afb8b66545df2c6b3e0}{}\index{mts\+Intuitive\+Research\+Kit\+Console@{mts\+Intuitive\+Research\+Kit\+Console}!Status\+Message\+Event\+Handler@{Status\+Message\+Event\+Handler}}
+\index{Status\+Message\+Event\+Handler@{Status\+Message\+Event\+Handler}!mts\+Intuitive\+Research\+Kit\+Console@{mts\+Intuitive\+Research\+Kit\+Console}}
+\subsubsection[{Status\+Message\+Event\+Handler}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Intuitive\+Research\+Kit\+Console\+::\+Status\+Message\+Event\+Handler (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{message}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_intuitive_research_kit_console_aa82918dfe2041afb8b66545df2c6b3e0}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classmts_intuitive_research_kit_console_aa9fe5ce6eead7feb87d4f5770e4f7a05}{}\index{mts\+Intuitive\+Research\+Kit\+Console@{mts\+Intuitive\+Research\+Kit\+Console}!Error\+Message\+Event\+Trigger@{Error\+Message\+Event\+Trigger}}
+\index{Error\+Message\+Event\+Trigger@{Error\+Message\+Event\+Trigger}!mts\+Intuitive\+Research\+Kit\+Console@{mts\+Intuitive\+Research\+Kit\+Console}}
+\subsubsection[{Error\+Message\+Event\+Trigger}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+Function\+Write} mts\+Intuitive\+Research\+Kit\+Console\+::\+Error\+Message\+Event\+Trigger\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_intuitive_research_kit_console_aa9fe5ce6eead7feb87d4f5770e4f7a05}
+\hypertarget{classmts_intuitive_research_kit_console_abe94e9e6282e5d7f50aa033aa04bc015}{}\index{mts\+Intuitive\+Research\+Kit\+Console@{mts\+Intuitive\+Research\+Kit\+Console}!m\+Arms@{m\+Arms}}
+\index{m\+Arms@{m\+Arms}!mts\+Intuitive\+Research\+Kit\+Console@{mts\+Intuitive\+Research\+Kit\+Console}}
+\subsubsection[{m\+Arms}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Arm\+List} mts\+Intuitive\+Research\+Kit\+Console\+::m\+Arms\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_intuitive_research_kit_console_abe94e9e6282e5d7f50aa033aa04bc015}
+\hypertarget{classmts_intuitive_research_kit_console_ab15f69349bf2c5bc8fecd2fcb4de2107}{}\index{mts\+Intuitive\+Research\+Kit\+Console@{mts\+Intuitive\+Research\+Kit\+Console}!Status\+Message\+Event\+Trigger@{Status\+Message\+Event\+Trigger}}
+\index{Status\+Message\+Event\+Trigger@{Status\+Message\+Event\+Trigger}!mts\+Intuitive\+Research\+Kit\+Console@{mts\+Intuitive\+Research\+Kit\+Console}}
+\subsubsection[{Status\+Message\+Event\+Trigger}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+Function\+Write} mts\+Intuitive\+Research\+Kit\+Console\+::\+Status\+Message\+Event\+Trigger\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_intuitive_research_kit_console_ab15f69349bf2c5bc8fecd2fcb4de2107}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/saw\+Intuitive\+Research\+Kit/include/saw\+Intuitive\+Research\+Kit/\hyperlink{mts_intuitive_research_kit_console_8h}{mts\+Intuitive\+Research\+Kit\+Console.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,261 @@
+\hypertarget{classvct_rodriguez_rotation3}{}\section{vct\+Rodriguez\+Rotation3$<$ \+\_\+element\+Type $>$ Class Template Reference}
+\label{classvct_rodriguez_rotation3}\index{vct\+Rodriguez\+Rotation3$<$ \+\_\+element\+Type $>$@{vct\+Rodriguez\+Rotation3$<$ \+\_\+element\+Type $>$}}
+
+
+Define a rotation based on the rodriguez representation for a space of dimension 3. This representation is based on a vector. The direction of the vector determines the axis of rotation and its norm defines the amplitude of the rotation.  
+
+
+
+
+{\ttfamily \#include $<$vct\+Forward\+Declarations.\+h$>$}
+
+Inheritance diagram for vct\+Rodriguez\+Rotation3$<$ \+\_\+element\+Type $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.888889cm]{dd/dc9/classvct_rodriguez_rotation3}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \hyperlink{group__cisst_vector_gga7a58a7aa413585bc569bcf1f22656ae3a8bdaaaae91a14fa58479067f59ed9145}{D\+I\+M\+E\+N\+S\+I\+O\+N} = 3
+ \}
+\item 
+typedef \hyperlink{classvct_fixed_size_vector}{vct\+Fixed\+Size\+Vector}$<$ value\+\_\+type, 3 $>$ \hyperlink{classvct_rodriguez_rotation3_a14522bb406d3c5c520025d6f1c5f0a82}{Container\+Type}
+\item 
+typedef \hyperlink{classvct_rodriguez_rotation3_base}{vct\+Rodriguez\+Rotation3\+Base}$<$ \hyperlink{classvct_rodriguez_rotation3_a14522bb406d3c5c520025d6f1c5f0a82}{Container\+Type} $>$ \hyperlink{classvct_rodriguez_rotation3_a9808e8703a58127607921c08914bda40}{Base\+Type}
+\item 
+typedef \hyperlink{classvct_rodriguez_rotation3}{vct\+Rodriguez\+Rotation3}$<$ value\+\_\+type $>$ \hyperlink{classvct_rodriguez_rotation3_ae212ce4b566eec4c0083226a64ffd0de}{This\+Type}
+\item 
+typedef \hyperlink{classcmn_type_traits}{cmn\+Type\+Traits}$<$ value\+\_\+type $>$ \hyperlink{classvct_rodriguez_rotation3_a3b8344626fa072324c1dd4e2384f254f}{Type\+Traits}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classvct_rodriguez_rotation3_a86c5c86fe5004b192d12ff055a9e9988}{V\+C\+T\+\_\+\+C\+O\+N\+T\+A\+I\+N\+E\+R\+\_\+\+T\+R\+A\+I\+T\+S\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+S} (\+\_\+element\+Type)
+\item 
+\hyperlink{classvct_rodriguez_rotation3_ab90c65541c05e3d783e268baf27dd5fe}{vct\+Rodriguez\+Rotation3} ()
+\item 
+\hyperlink{classvct_rodriguez_rotation3_a58058554210923e3a3925edfa9bf0f7a}{vct\+Rodriguez\+Rotation3} (const \hyperlink{classvct_fixed_size_const_vector_base_a071063bc4fa43112cc287b2dbef53180}{This\+Type} \&other)
+\item 
+\hyperlink{classvct_rodriguez_rotation3_ad9ca29e5e8e49ffcce8d7af44e812c6d}{vct\+Rodriguez\+Rotation3} (const \hyperlink{classvct_rodriguez_rotation3_a9808e8703a58127607921c08914bda40}{Base\+Type} \&other)
+\end{DoxyCompactItemize}
+\begin{Indent}{\bf Constructors with normalization test.}\par
+{\em These constructors will check that the input is valid, i.\+e. normalized. If the input is not normalized, an exception (of type {\ttfamily std\+::runtime\+\_\+error}) will be thrown. Each constructor uses the corresponding \hyperlink{classvct_rodriguez_rotation3_base_aff389cf931841e2766d345425de672ea}{From()} method based on the input type.
+
+\begin{DoxyNote}{Note}
+See the \hyperlink{_minimal_cmn_8h_ad50e82cf9c9dbd0e6443c13e0d1a6f1a}{cmn\+Throw()} function if an {\ttfamily abort} is better than an exception for your application. 
+\end{DoxyNote}
+}\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$stride\+\_\+type \+\_\+\+\_\+stride, class \+\_\+\+\_\+data\+Ptr\+Type $>$ }\\\hyperlink{classvct_rodriguez_rotation3_a0fd3d7d1006135d82e8e729542c4009f}{vct\+Rodriguez\+Rotation3} (const \hyperlink{classvct_fixed_size_const_vector_base}{vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \hyperlink{group__cisst_vector_gga7a58a7aa413585bc569bcf1f22656ae3a8bdaaaae91a14fa58479067f59ed9145}{D\+I\+M\+E\+N\+S\+I\+O\+N}, \+\_\+\+\_\+stride, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type $>$ \&axis)  throw (std\+::runtime\+\_\+error)
+\item 
+\hyperlink{classvct_rodriguez_rotation3_a63755a8e0e70b1ebe0e96a06481052f1}{vct\+Rodriguez\+Rotation3} (value\+\_\+type x, value\+\_\+type y, value\+\_\+type z)  throw (std\+::runtime\+\_\+error)
+\item 
+{\footnotesize template$<$class \+\_\+\+\_\+container\+Type $>$ }\\\hyperlink{classvct_rodriguez_rotation3_abd497e6d94f792ba40805716af2e2a08}{vct\+Rodriguez\+Rotation3} (const \hyperlink{classvct_quaternion_rotation3_base}{vct\+Quaternion\+Rotation3\+Base}$<$ \+\_\+\+\_\+container\+Type $>$ \&quaternion\+Rotation)  throw (std\+::runtime\+\_\+error)
+\item 
+{\footnotesize template$<$class \+\_\+\+\_\+container\+Type $>$ }\\\hyperlink{classvct_rodriguez_rotation3_a553610f7175091ae74bae7a211bef8e9}{vct\+Rodriguez\+Rotation3} (const \hyperlink{classvct_matrix_rotation3_base}{vct\+Matrix\+Rotation3\+Base}$<$ \+\_\+\+\_\+container\+Type $>$ \&matrix\+Rotation)  throw (std\+::runtime\+\_\+error)
+\item 
+\hyperlink{classvct_rodriguez_rotation3_a7cc0047e4f2d7b35548d742deed11b6a}{vct\+Rodriguez\+Rotation3} (const \hyperlink{classvct_axis_angle_rotation3}{vct\+Axis\+Angle\+Rotation3}$<$ value\+\_\+type $>$ \&axis\+Angle\+Rotation)  throw (std\+::runtime\+\_\+error)
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Constructors without normalization test}\par
+{\em These constructors will either assume that the input is normalized or normalize the input (a copy of it, if required) based on the last parameter provided.
+
+
+\begin{DoxyItemize}
+\item If the normalization flag is set to \hyperlink{vct_forward_declarations_8h_a6fd516b0c35fa9967b4da5f03a788985}{V\+C\+T\+\_\+\+D\+O\+\_\+\+N\+O\+T\+\_\+\+N\+O\+R\+M\+A\+L\+I\+Z\+E}, the input is considered already normalized and the constructor will not perform any sanity check. This can lead to numerical instabilities which have to be handled by the caller.
+
+
+\item If the normalization flag is set to \hyperlink{vct_forward_declarations_8h_ae54c682b919a7c5743ea498810518565}{V\+C\+T\+\_\+\+N\+O\+R\+M\+A\+L\+I\+Z\+E}, the input will be normalized. This option should be used whenever it is important to obtain a result as \char`\"{}normalized\char`\"{} as possible.
+
+
+\end{DoxyItemize}}\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$stride\+\_\+type \+\_\+\+\_\+stride, class \+\_\+\+\_\+data\+Ptr\+Type $>$ }\\\hyperlink{classvct_rodriguez_rotation3_a9d9bc07dcca5a5a11d07c04e2438750e}{vct\+Rodriguez\+Rotation3} (const \hyperlink{classvct_fixed_size_const_vector_base}{vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ \hyperlink{group__cisst_vector_gga7a58a7aa413585bc569bcf1f22656ae3a8bdaaaae91a14fa58479067f59ed9145}{D\+I\+M\+E\+N\+S\+I\+O\+N}, \+\_\+\+\_\+stride, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type $>$ \&axis, bool normalize\+Input)
+\item 
+\hyperlink{classvct_rodriguez_rotation3_a7d27c72e51b6e646bc59bb4dab64b0e3}{vct\+Rodriguez\+Rotation3} (value\+\_\+type x, value\+\_\+type y, value\+\_\+type z, bool normalize\+Input)
+\item 
+{\footnotesize template$<$class \+\_\+\+\_\+container\+Type $>$ }\\\hyperlink{classvct_rodriguez_rotation3_aea99f0057e9249cf2ce11745ef70ce32}{vct\+Rodriguez\+Rotation3} (const \hyperlink{classvct_quaternion_rotation3_base}{vct\+Quaternion\+Rotation3\+Base}$<$ \+\_\+\+\_\+container\+Type $>$ \&quaternion\+Rotation, bool normalize\+Input)
+\item 
+{\footnotesize template$<$class \+\_\+\+\_\+container\+Type $>$ }\\\hyperlink{classvct_rodriguez_rotation3_a7a20e70d05cb83743a38f483f6cd26f7}{vct\+Rodriguez\+Rotation3} (const \hyperlink{classvct_matrix_rotation3_base}{vct\+Matrix\+Rotation3\+Base}$<$ \+\_\+\+\_\+container\+Type $>$ \&matrix\+Rotation, bool normalize\+Input)
+\item 
+\hyperlink{classvct_rodriguez_rotation3_a7c6a9382f2e3547ee7e740bfb105d05e}{vct\+Rodriguez\+Rotation3} (const \hyperlink{classvct_axis_angle_rotation3}{vct\+Axis\+Angle\+Rotation3}$<$ value\+\_\+type $>$ \&axis\+Angle\+Rotation, bool normalize\+Input)
+\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class \+\_\+element\+Type$>$class vct\+Rodriguez\+Rotation3$<$ \+\_\+element\+Type $>$}
+
+Define a rotation based on the rodriguez representation for a space of dimension 3. This representation is based on a vector. The direction of the vector determines the axis of rotation and its norm defines the amplitude of the rotation. 
+
+This class is templated by the element type.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+element\+Type} & The type of elements.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classvct_quaternion}{vct\+Quaternion} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classvct_rodriguez_rotation3_a9808e8703a58127607921c08914bda40}{}\index{vct\+Rodriguez\+Rotation3@{vct\+Rodriguez\+Rotation3}!Base\+Type@{Base\+Type}}
+\index{Base\+Type@{Base\+Type}!vct\+Rodriguez\+Rotation3@{vct\+Rodriguez\+Rotation3}}
+\subsubsection[{Base\+Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ typedef {\bf vct\+Rodriguez\+Rotation3\+Base}$<${\bf Container\+Type}$>$ {\bf vct\+Rodriguez\+Rotation3}$<$ \+\_\+element\+Type $>$\+::{\bf Base\+Type}}\label{classvct_rodriguez_rotation3_a9808e8703a58127607921c08914bda40}
+\hypertarget{classvct_rodriguez_rotation3_a14522bb406d3c5c520025d6f1c5f0a82}{}\index{vct\+Rodriguez\+Rotation3@{vct\+Rodriguez\+Rotation3}!Container\+Type@{Container\+Type}}
+\index{Container\+Type@{Container\+Type}!vct\+Rodriguez\+Rotation3@{vct\+Rodriguez\+Rotation3}}
+\subsubsection[{Container\+Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ typedef {\bf vct\+Fixed\+Size\+Vector}$<$value\+\_\+type, 3$>$ {\bf vct\+Rodriguez\+Rotation3}$<$ \+\_\+element\+Type $>$\+::{\bf Container\+Type}}\label{classvct_rodriguez_rotation3_a14522bb406d3c5c520025d6f1c5f0a82}
+\hypertarget{classvct_rodriguez_rotation3_ae212ce4b566eec4c0083226a64ffd0de}{}\index{vct\+Rodriguez\+Rotation3@{vct\+Rodriguez\+Rotation3}!This\+Type@{This\+Type}}
+\index{This\+Type@{This\+Type}!vct\+Rodriguez\+Rotation3@{vct\+Rodriguez\+Rotation3}}
+\subsubsection[{This\+Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ typedef {\bf vct\+Rodriguez\+Rotation3}$<$value\+\_\+type$>$ {\bf vct\+Rodriguez\+Rotation3}$<$ \+\_\+element\+Type $>$\+::{\bf This\+Type}}\label{classvct_rodriguez_rotation3_ae212ce4b566eec4c0083226a64ffd0de}
+\hypertarget{classvct_rodriguez_rotation3_a3b8344626fa072324c1dd4e2384f254f}{}\index{vct\+Rodriguez\+Rotation3@{vct\+Rodriguez\+Rotation3}!Type\+Traits@{Type\+Traits}}
+\index{Type\+Traits@{Type\+Traits}!vct\+Rodriguez\+Rotation3@{vct\+Rodriguez\+Rotation3}}
+\subsubsection[{Type\+Traits}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ typedef {\bf cmn\+Type\+Traits}$<$value\+\_\+type$>$ {\bf vct\+Rodriguez\+Rotation3}$<$ \+\_\+element\+Type $>$\+::{\bf Type\+Traits}}\label{classvct_rodriguez_rotation3_a3b8344626fa072324c1dd4e2384f254f}
+Traits used for all useful types and values related to the element type. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classvct_rodriguez_rotation3_ab90c65541c05e3d783e268baf27dd5fe}{}\index{vct\+Rodriguez\+Rotation3@{vct\+Rodriguez\+Rotation3}!vct\+Rodriguez\+Rotation3@{vct\+Rodriguez\+Rotation3}}
+\index{vct\+Rodriguez\+Rotation3@{vct\+Rodriguez\+Rotation3}!vct\+Rodriguez\+Rotation3@{vct\+Rodriguez\+Rotation3}}
+\subsubsection[{vct\+Rodriguez\+Rotation3}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ {\bf vct\+Rodriguez\+Rotation3}$<$ \+\_\+element\+Type $>$\+::{\bf vct\+Rodriguez\+Rotation3} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_rodriguez_rotation3_ab90c65541c05e3d783e268baf27dd5fe}
+Default constructor. Sets the rotation to (0, 0, 0). \hypertarget{classvct_rodriguez_rotation3_a58058554210923e3a3925edfa9bf0f7a}{}\index{vct\+Rodriguez\+Rotation3@{vct\+Rodriguez\+Rotation3}!vct\+Rodriguez\+Rotation3@{vct\+Rodriguez\+Rotation3}}
+\index{vct\+Rodriguez\+Rotation3@{vct\+Rodriguez\+Rotation3}!vct\+Rodriguez\+Rotation3@{vct\+Rodriguez\+Rotation3}}
+\subsubsection[{vct\+Rodriguez\+Rotation3}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ {\bf vct\+Rodriguez\+Rotation3}$<$ \+\_\+element\+Type $>$\+::{\bf vct\+Rodriguez\+Rotation3} (
+\begin{DoxyParamCaption}
+\item[{const {\bf This\+Type} \&}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_rodriguez_rotation3_a58058554210923e3a3925edfa9bf0f7a}
+\hypertarget{classvct_rodriguez_rotation3_ad9ca29e5e8e49ffcce8d7af44e812c6d}{}\index{vct\+Rodriguez\+Rotation3@{vct\+Rodriguez\+Rotation3}!vct\+Rodriguez\+Rotation3@{vct\+Rodriguez\+Rotation3}}
+\index{vct\+Rodriguez\+Rotation3@{vct\+Rodriguez\+Rotation3}!vct\+Rodriguez\+Rotation3@{vct\+Rodriguez\+Rotation3}}
+\subsubsection[{vct\+Rodriguez\+Rotation3}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ {\bf vct\+Rodriguez\+Rotation3}$<$ \+\_\+element\+Type $>$\+::{\bf vct\+Rodriguez\+Rotation3} (
+\begin{DoxyParamCaption}
+\item[{const {\bf Base\+Type} \&}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_rodriguez_rotation3_ad9ca29e5e8e49ffcce8d7af44e812c6d}
+\hypertarget{classvct_rodriguez_rotation3_a0fd3d7d1006135d82e8e729542c4009f}{}\index{vct\+Rodriguez\+Rotation3@{vct\+Rodriguez\+Rotation3}!vct\+Rodriguez\+Rotation3@{vct\+Rodriguez\+Rotation3}}
+\index{vct\+Rodriguez\+Rotation3@{vct\+Rodriguez\+Rotation3}!vct\+Rodriguez\+Rotation3@{vct\+Rodriguez\+Rotation3}}
+\subsubsection[{vct\+Rodriguez\+Rotation3}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ template$<$stride\+\_\+type \+\_\+\+\_\+stride, class \+\_\+\+\_\+data\+Ptr\+Type $>$ {\bf vct\+Rodriguez\+Rotation3}$<$ \+\_\+element\+Type $>$\+::{\bf vct\+Rodriguez\+Rotation3} (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ {\bf D\+I\+M\+E\+N\+S\+I\+O\+N}, \+\_\+\+\_\+stride, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type $>$ \&}]{axis}
+\end{DoxyParamCaption}
+) throw  std\+::runtime\+\_\+error) \hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}\label{classvct_rodriguez_rotation3_a0fd3d7d1006135d82e8e729542c4009f}
+Constructor from a 3\+D vector. 
+\begin{DoxyParams}{Parameters}
+{\em axis} & A vector of size 3, its norm represents the angle. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classvct_rodriguez_rotation3_a63755a8e0e70b1ebe0e96a06481052f1}{}\index{vct\+Rodriguez\+Rotation3@{vct\+Rodriguez\+Rotation3}!vct\+Rodriguez\+Rotation3@{vct\+Rodriguez\+Rotation3}}
+\index{vct\+Rodriguez\+Rotation3@{vct\+Rodriguez\+Rotation3}!vct\+Rodriguez\+Rotation3@{vct\+Rodriguez\+Rotation3}}
+\subsubsection[{vct\+Rodriguez\+Rotation3}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ {\bf vct\+Rodriguez\+Rotation3}$<$ \+\_\+element\+Type $>$\+::{\bf vct\+Rodriguez\+Rotation3} (
+\begin{DoxyParamCaption}
+\item[{value\+\_\+type}]{x, }
+\item[{value\+\_\+type}]{y, }
+\item[{value\+\_\+type}]{z}
+\end{DoxyParamCaption}
+) throw  std\+::runtime\+\_\+error) \hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_rodriguez_rotation3_a63755a8e0e70b1ebe0e96a06481052f1}
+Constructor from a elements representing a 3\+D vector. 
+\begin{DoxyParams}{Parameters}
+{\em x,y,z} & A vector of size 3, its norm represents the angle. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classvct_rodriguez_rotation3_abd497e6d94f792ba40805716af2e2a08}{}\index{vct\+Rodriguez\+Rotation3@{vct\+Rodriguez\+Rotation3}!vct\+Rodriguez\+Rotation3@{vct\+Rodriguez\+Rotation3}}
+\index{vct\+Rodriguez\+Rotation3@{vct\+Rodriguez\+Rotation3}!vct\+Rodriguez\+Rotation3@{vct\+Rodriguez\+Rotation3}}
+\subsubsection[{vct\+Rodriguez\+Rotation3}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ template$<$class \+\_\+\+\_\+container\+Type $>$ {\bf vct\+Rodriguez\+Rotation3}$<$ \+\_\+element\+Type $>$\+::{\bf vct\+Rodriguez\+Rotation3} (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Quaternion\+Rotation3\+Base}$<$ \+\_\+\+\_\+container\+Type $>$ \&}]{quaternion\+Rotation}
+\end{DoxyParamCaption}
+) throw  std\+::runtime\+\_\+error) \hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}\label{classvct_rodriguez_rotation3_abd497e6d94f792ba40805716af2e2a08}
+Constructor from a \hyperlink{classvct_quaternion_rotation3}{vct\+Quaternion\+Rotation3}. \hypertarget{classvct_rodriguez_rotation3_a553610f7175091ae74bae7a211bef8e9}{}\index{vct\+Rodriguez\+Rotation3@{vct\+Rodriguez\+Rotation3}!vct\+Rodriguez\+Rotation3@{vct\+Rodriguez\+Rotation3}}
+\index{vct\+Rodriguez\+Rotation3@{vct\+Rodriguez\+Rotation3}!vct\+Rodriguez\+Rotation3@{vct\+Rodriguez\+Rotation3}}
+\subsubsection[{vct\+Rodriguez\+Rotation3}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ template$<$class \+\_\+\+\_\+container\+Type $>$ {\bf vct\+Rodriguez\+Rotation3}$<$ \+\_\+element\+Type $>$\+::{\bf vct\+Rodriguez\+Rotation3} (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Matrix\+Rotation3\+Base}$<$ \+\_\+\+\_\+container\+Type $>$ \&}]{matrix\+Rotation}
+\end{DoxyParamCaption}
+) throw  std\+::runtime\+\_\+error) \hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}\label{classvct_rodriguez_rotation3_a553610f7175091ae74bae7a211bef8e9}
+Constructor from a \hyperlink{classvct_matrix_rotation3}{vct\+Matrix\+Rotation3}. \hypertarget{classvct_rodriguez_rotation3_a7cc0047e4f2d7b35548d742deed11b6a}{}\index{vct\+Rodriguez\+Rotation3@{vct\+Rodriguez\+Rotation3}!vct\+Rodriguez\+Rotation3@{vct\+Rodriguez\+Rotation3}}
+\index{vct\+Rodriguez\+Rotation3@{vct\+Rodriguez\+Rotation3}!vct\+Rodriguez\+Rotation3@{vct\+Rodriguez\+Rotation3}}
+\subsubsection[{vct\+Rodriguez\+Rotation3}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ {\bf vct\+Rodriguez\+Rotation3}$<$ \+\_\+element\+Type $>$\+::{\bf vct\+Rodriguez\+Rotation3} (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Axis\+Angle\+Rotation3}$<$ value\+\_\+type $>$ \&}]{axis\+Angle\+Rotation}
+\end{DoxyParamCaption}
+) throw  std\+::runtime\+\_\+error) \hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}\label{classvct_rodriguez_rotation3_a7cc0047e4f2d7b35548d742deed11b6a}
+Constructor from a \hyperlink{classvct_axis_angle_rotation3}{vct\+Axis\+Angle\+Rotation3}. \hypertarget{classvct_rodriguez_rotation3_a9d9bc07dcca5a5a11d07c04e2438750e}{}\index{vct\+Rodriguez\+Rotation3@{vct\+Rodriguez\+Rotation3}!vct\+Rodriguez\+Rotation3@{vct\+Rodriguez\+Rotation3}}
+\index{vct\+Rodriguez\+Rotation3@{vct\+Rodriguez\+Rotation3}!vct\+Rodriguez\+Rotation3@{vct\+Rodriguez\+Rotation3}}
+\subsubsection[{vct\+Rodriguez\+Rotation3}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ template$<$stride\+\_\+type \+\_\+\+\_\+stride, class \+\_\+\+\_\+data\+Ptr\+Type $>$ {\bf vct\+Rodriguez\+Rotation3}$<$ \+\_\+element\+Type $>$\+::{\bf vct\+Rodriguez\+Rotation3} (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Fixed\+Size\+Const\+Vector\+Base}$<$ {\bf D\+I\+M\+E\+N\+S\+I\+O\+N}, \+\_\+\+\_\+stride, value\+\_\+type, \+\_\+\+\_\+data\+Ptr\+Type $>$ \&}]{axis, }
+\item[{bool}]{normalize\+Input}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_rodriguez_rotation3_a9d9bc07dcca5a5a11d07c04e2438750e}
+Constructor from a 3\+D vector. 
+\begin{DoxyParams}{Parameters}
+{\em axis} & A vector of size 3, its norm represents the angle. \\
+\hline
+{\em normalize\+Input} & Normalize the input or convert as is (\hyperlink{vct_forward_declarations_8h_ae54c682b919a7c5743ea498810518565}{V\+C\+T\+\_\+\+N\+O\+R\+M\+A\+L\+I\+Z\+E} or \hyperlink{vct_forward_declarations_8h_a6fd516b0c35fa9967b4da5f03a788985}{V\+C\+T\+\_\+\+D\+O\+\_\+\+N\+O\+T\+\_\+\+N\+O\+R\+M\+A\+L\+I\+Z\+E}) \\
+\hline
+\end{DoxyParams}
+\hypertarget{classvct_rodriguez_rotation3_a7d27c72e51b6e646bc59bb4dab64b0e3}{}\index{vct\+Rodriguez\+Rotation3@{vct\+Rodriguez\+Rotation3}!vct\+Rodriguez\+Rotation3@{vct\+Rodriguez\+Rotation3}}
+\index{vct\+Rodriguez\+Rotation3@{vct\+Rodriguez\+Rotation3}!vct\+Rodriguez\+Rotation3@{vct\+Rodriguez\+Rotation3}}
+\subsubsection[{vct\+Rodriguez\+Rotation3}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ {\bf vct\+Rodriguez\+Rotation3}$<$ \+\_\+element\+Type $>$\+::{\bf vct\+Rodriguez\+Rotation3} (
+\begin{DoxyParamCaption}
+\item[{value\+\_\+type}]{x, }
+\item[{value\+\_\+type}]{y, }
+\item[{value\+\_\+type}]{z, }
+\item[{bool}]{normalize\+Input}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_rodriguez_rotation3_a7d27c72e51b6e646bc59bb4dab64b0e3}
+Constructor from 3 elements representing a 3\+D vector. 
+\begin{DoxyParams}{Parameters}
+{\em x,y,z} & A vector of size 3, its norm represents the angle. \\
+\hline
+{\em normalize\+Input} & Normalize the input or convert as is (\hyperlink{vct_forward_declarations_8h_ae54c682b919a7c5743ea498810518565}{V\+C\+T\+\_\+\+N\+O\+R\+M\+A\+L\+I\+Z\+E} or \hyperlink{vct_forward_declarations_8h_a6fd516b0c35fa9967b4da5f03a788985}{V\+C\+T\+\_\+\+D\+O\+\_\+\+N\+O\+T\+\_\+\+N\+O\+R\+M\+A\+L\+I\+Z\+E}) \\
+\hline
+\end{DoxyParams}
+\hypertarget{classvct_rodriguez_rotation3_aea99f0057e9249cf2ce11745ef70ce32}{}\index{vct\+Rodriguez\+Rotation3@{vct\+Rodriguez\+Rotation3}!vct\+Rodriguez\+Rotation3@{vct\+Rodriguez\+Rotation3}}
+\index{vct\+Rodriguez\+Rotation3@{vct\+Rodriguez\+Rotation3}!vct\+Rodriguez\+Rotation3@{vct\+Rodriguez\+Rotation3}}
+\subsubsection[{vct\+Rodriguez\+Rotation3}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ template$<$class \+\_\+\+\_\+container\+Type $>$ {\bf vct\+Rodriguez\+Rotation3}$<$ \+\_\+element\+Type $>$\+::{\bf vct\+Rodriguez\+Rotation3} (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Quaternion\+Rotation3\+Base}$<$ \+\_\+\+\_\+container\+Type $>$ \&}]{quaternion\+Rotation, }
+\item[{bool}]{normalize\+Input}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_rodriguez_rotation3_aea99f0057e9249cf2ce11745ef70ce32}
+Constructor from a \hyperlink{classvct_quaternion_rotation3}{vct\+Quaternion\+Rotation3}. \hypertarget{classvct_rodriguez_rotation3_a7a20e70d05cb83743a38f483f6cd26f7}{}\index{vct\+Rodriguez\+Rotation3@{vct\+Rodriguez\+Rotation3}!vct\+Rodriguez\+Rotation3@{vct\+Rodriguez\+Rotation3}}
+\index{vct\+Rodriguez\+Rotation3@{vct\+Rodriguez\+Rotation3}!vct\+Rodriguez\+Rotation3@{vct\+Rodriguez\+Rotation3}}
+\subsubsection[{vct\+Rodriguez\+Rotation3}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ template$<$class \+\_\+\+\_\+container\+Type $>$ {\bf vct\+Rodriguez\+Rotation3}$<$ \+\_\+element\+Type $>$\+::{\bf vct\+Rodriguez\+Rotation3} (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Matrix\+Rotation3\+Base}$<$ \+\_\+\+\_\+container\+Type $>$ \&}]{matrix\+Rotation, }
+\item[{bool}]{normalize\+Input}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_rodriguez_rotation3_a7a20e70d05cb83743a38f483f6cd26f7}
+Constructor from a \hyperlink{classvct_matrix_rotation3}{vct\+Matrix\+Rotation3}. \hypertarget{classvct_rodriguez_rotation3_a7c6a9382f2e3547ee7e740bfb105d05e}{}\index{vct\+Rodriguez\+Rotation3@{vct\+Rodriguez\+Rotation3}!vct\+Rodriguez\+Rotation3@{vct\+Rodriguez\+Rotation3}}
+\index{vct\+Rodriguez\+Rotation3@{vct\+Rodriguez\+Rotation3}!vct\+Rodriguez\+Rotation3@{vct\+Rodriguez\+Rotation3}}
+\subsubsection[{vct\+Rodriguez\+Rotation3}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ {\bf vct\+Rodriguez\+Rotation3}$<$ \+\_\+element\+Type $>$\+::{\bf vct\+Rodriguez\+Rotation3} (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Axis\+Angle\+Rotation3}$<$ value\+\_\+type $>$ \&}]{axis\+Angle\+Rotation, }
+\item[{bool}]{normalize\+Input}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classvct_rodriguez_rotation3_a7c6a9382f2e3547ee7e740bfb105d05e}
+Constructor from a \hyperlink{classvct_axis_angle_rotation3}{vct\+Axis\+Angle\+Rotation3}. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classvct_rodriguez_rotation3_a86c5c86fe5004b192d12ff055a9e9988}{}\index{vct\+Rodriguez\+Rotation3@{vct\+Rodriguez\+Rotation3}!V\+C\+T\+\_\+\+C\+O\+N\+T\+A\+I\+N\+E\+R\+\_\+\+T\+R\+A\+I\+T\+S\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+S@{V\+C\+T\+\_\+\+C\+O\+N\+T\+A\+I\+N\+E\+R\+\_\+\+T\+R\+A\+I\+T\+S\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+S}}
+\index{V\+C\+T\+\_\+\+C\+O\+N\+T\+A\+I\+N\+E\+R\+\_\+\+T\+R\+A\+I\+T\+S\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+S@{V\+C\+T\+\_\+\+C\+O\+N\+T\+A\+I\+N\+E\+R\+\_\+\+T\+R\+A\+I\+T\+S\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+S}!vct\+Rodriguez\+Rotation3@{vct\+Rodriguez\+Rotation3}}
+\subsubsection[{V\+C\+T\+\_\+\+C\+O\+N\+T\+A\+I\+N\+E\+R\+\_\+\+T\+R\+A\+I\+T\+S\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+S}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ {\bf vct\+Rodriguez\+Rotation3}$<$ \+\_\+element\+Type $>$\+::V\+C\+T\+\_\+\+C\+O\+N\+T\+A\+I\+N\+E\+R\+\_\+\+T\+R\+A\+I\+T\+S\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+S (
+\begin{DoxyParamCaption}
+\item[{\+\_\+element\+Type}]{}
+\end{DoxyParamCaption}
+)}\label{classvct_rodriguez_rotation3_a86c5c86fe5004b192d12ff055a9e9988}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Vector/\hyperlink{vct_forward_declarations_8h}{vct\+Forward\+Declarations.\+h}\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Vector/\hyperlink{vct_rodriguez_rotation3_8h}{vct\+Rodriguez\+Rotation3.\+h}\end{DoxyCompactItemize}

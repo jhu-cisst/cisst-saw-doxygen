@@ -1,0 +1,51 @@
+\hypertarget{cmn_class_services_base_8h}{}\section{/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Common/cmn\+Class\+Services\+Base.h File Reference}
+\label{cmn_class_services_base_8h}\index{/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Common/cmn\+Class\+Services\+Base.\+h@{/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Common/cmn\+Class\+Services\+Base.\+h}}
+
+
+Defines the \hyperlink{classcmn_class_services_base}{cmn\+Class\+Services\+Base}.  
+
+
+{\ttfamily \#include $<$cisst\+Common/cmn\+Forward\+Declarations.\+h$>$}\\*
+{\ttfamily \#include $<$cisst\+Common/cmn\+Log\+Lo\+D.\+h$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include $<$typeinfo$>$}\\*
+{\ttfamily \#include $<$cisst\+Common/cmn\+Export.\+h$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classcmn_class_services_base}{cmn\+Class\+Services\+Base}
+\begin{DoxyCompactList}\small\item\em Base class for class services. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{cmn_class_services_base_8h_a66ff92ae8dc5ec077a2d7f1108161ea4}{\+\_\+cmn\+Class\+Services\+Base\+\_\+h}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class \+\_\+class $>$ }\\\hyperlink{classcmn_class_services_base}{cmn\+Class\+Services\+Base} $\ast$ \hyperlink{cmn_class_services_base_8h_a0e3ab6348e720299b1e1fd5cb7910db9}{cmn\+Class\+Services\+Instantiate} (void)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Defines the \hyperlink{classcmn_class_services_base}{cmn\+Class\+Services\+Base}. 
+
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{cmn_class_services_base_8h_a66ff92ae8dc5ec077a2d7f1108161ea4}{}\index{cmn\+Class\+Services\+Base.\+h@{cmn\+Class\+Services\+Base.\+h}!\+\_\+cmn\+Class\+Services\+Base\+\_\+h@{\+\_\+cmn\+Class\+Services\+Base\+\_\+h}}
+\index{\+\_\+cmn\+Class\+Services\+Base\+\_\+h@{\+\_\+cmn\+Class\+Services\+Base\+\_\+h}!cmn\+Class\+Services\+Base.\+h@{cmn\+Class\+Services\+Base.\+h}}
+\subsubsection[{\+\_\+cmn\+Class\+Services\+Base\+\_\+h}]{\setlength{\rightskip}{0pt plus 5cm}\#define \+\_\+cmn\+Class\+Services\+Base\+\_\+h}\label{cmn_class_services_base_8h_a66ff92ae8dc5ec077a2d7f1108161ea4}
+
+
+\subsection{Function Documentation}
+\hypertarget{cmn_class_services_base_8h_a0e3ab6348e720299b1e1fd5cb7910db9}{}\index{cmn\+Class\+Services\+Base.\+h@{cmn\+Class\+Services\+Base.\+h}!cmn\+Class\+Services\+Instantiate@{cmn\+Class\+Services\+Instantiate}}
+\index{cmn\+Class\+Services\+Instantiate@{cmn\+Class\+Services\+Instantiate}!cmn\+Class\+Services\+Base.\+h@{cmn\+Class\+Services\+Base.\+h}}
+\subsubsection[{cmn\+Class\+Services\+Instantiate}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+class $>$ {\bf cmn\+Class\+Services\+Base}$\ast$ cmn\+Class\+Services\+Instantiate (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{cmn_class_services_base_8h_a0e3ab6348e720299b1e1fd5cb7910db9}
+Class services instantiation.
+
+This function is templated by the type of the class to be registered. Its implementation is defined by the macro \hyperlink{cmn_class_register_macros_8h_a59997edde1868f5ce515ff85dfeaf2f8}{C\+M\+N\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S} or C\+M\+N\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+D. In both case, the function creates the class services (\hyperlink{classcmn_class_services}{cmn\+Class\+Services}) and registers it within the class register (\hyperlink{classcmn_class_register}{cmn\+Class\+Register}) based on its std\+::type\+\_\+info (see typeid and C++\+R\+T\+T\+I for more details) to ensure its uniqueness. 

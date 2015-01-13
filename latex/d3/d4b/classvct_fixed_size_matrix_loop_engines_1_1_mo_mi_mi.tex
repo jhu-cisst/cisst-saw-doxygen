@@ -1,0 +1,58 @@
+\hypertarget{classvct_fixed_size_matrix_loop_engines_1_1_mo_mi_mi}{}\section{vct\+Fixed\+Size\+Matrix\+Loop\+Engines\+:\+:Mo\+Mi\+Mi$<$ \+\_\+element\+Operation\+Type $>$ Class Template Reference}
+\label{classvct_fixed_size_matrix_loop_engines_1_1_mo_mi_mi}\index{vct\+Fixed\+Size\+Matrix\+Loop\+Engines\+::\+Mo\+Mi\+Mi$<$ \+\_\+element\+Operation\+Type $>$@{vct\+Fixed\+Size\+Matrix\+Loop\+Engines\+::\+Mo\+Mi\+Mi$<$ \+\_\+element\+Operation\+Type $>$}}
+
+
+{\ttfamily \#include $<$vct\+Fixed\+Size\+Matrix\+Loop\+Engines.\+h$>$}
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class \+\_\+output\+Matrix\+Type , class \+\_\+input1\+Matrix\+Type , class \+\_\+input2\+Matrix\+Type $>$ }\\static void \hyperlink{classvct_fixed_size_matrix_loop_engines_1_1_mo_mi_mi_ad29d9351a16c8b34d3aa7e8b71969b6e}{Run} (\+\_\+output\+Matrix\+Type \&output\+Matrix, const \+\_\+input1\+Matrix\+Type \&input1\+Matrix, const \+\_\+input2\+Matrix\+Type \&input2\+Matrix)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class \+\_\+element\+Operation\+Type$>$class vct\+Fixed\+Size\+Matrix\+Loop\+Engines\+::\+Mo\+Mi\+Mi$<$ \+\_\+element\+Operation\+Type $>$}
+
+Perform elementwise operation between matrices of identical size and element type. The operation semantics is 
+\begin{DoxyCode}
+output[row][column] = op(input1[row][column], input2[row][column]);
+\end{DoxyCode}
+
+
+This is a similar semantics to the \hyperlink{classvct_fixed_size_vector_recursive_engines_1_1_vo_vi_vi}{vct\+Fixed\+Size\+Vector\+Recursive\+Engines\+::\+Vo\+Vi\+Vi} engine. However, for matrice we implement the operation using a loop instead of recursion.
+
+The engine is declared as a protected class. This enables us to use softer declaration of the template arguments, as opposed to the functions calling this engine, which have to declare their arguments as matrices templated over stride etc.
+
+To use the engine, assume that Mout, Mi1, and Mi2 are matrix types; that mout, mi1, and mi2 are objects of corresponding types; and that O\+P is a valid operation in the form \[ value\_type \times value\_type \rightarrow value\_type \] Then write 
+\begin{DoxyCode}
+\hyperlink{classvct_fixed_size_matrix_loop_engines_1_1_mo_mi_mi_ad29d9351a16c8b34d3aa7e8b71969b6e}{MoMiMi<OP>::Run}(mout, mi1, mi2);
+\end{DoxyCode}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+element\+Operation\+Type} & a binary operation class. \+\_\+element\+Operation\+Type must have a static method with the signature 
+\begin{DoxyCode}
+\_elementOperationType::Operate(\_elementType, \_elementType)
+\end{DoxyCode}
+ \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classvct_fixed_size_matrix_loop_engines_1_1_mo_mi_mi_ad29d9351a16c8b34d3aa7e8b71969b6e}{}\index{vct\+Fixed\+Size\+Matrix\+Loop\+Engines\+::\+Mo\+Mi\+Mi@{vct\+Fixed\+Size\+Matrix\+Loop\+Engines\+::\+Mo\+Mi\+Mi}!Run@{Run}}
+\index{Run@{Run}!vct\+Fixed\+Size\+Matrix\+Loop\+Engines\+::\+Mo\+Mi\+Mi@{vct\+Fixed\+Size\+Matrix\+Loop\+Engines\+::\+Mo\+Mi\+Mi}}
+\subsubsection[{Run}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Operation\+Type$>$ template$<$class \+\_\+output\+Matrix\+Type , class \+\_\+input1\+Matrix\+Type , class \+\_\+input2\+Matrix\+Type $>$ static void {\bf vct\+Fixed\+Size\+Matrix\+Loop\+Engines\+::\+Mo\+Mi\+Mi}$<$ \+\_\+element\+Operation\+Type $>$\+::Run (
+\begin{DoxyParamCaption}
+\item[{\+\_\+output\+Matrix\+Type \&}]{output\+Matrix, }
+\item[{const \+\_\+input1\+Matrix\+Type \&}]{input1\+Matrix, }
+\item[{const \+\_\+input2\+Matrix\+Type \&}]{input2\+Matrix}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classvct_fixed_size_matrix_loop_engines_1_1_mo_mi_mi_ad29d9351a16c8b34d3aa7e8b71969b6e}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Vector/\hyperlink{vct_fixed_size_matrix_loop_engines_8h}{vct\+Fixed\+Size\+Matrix\+Loop\+Engines.\+h}\end{DoxyCompactItemize}

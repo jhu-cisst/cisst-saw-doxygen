@@ -1,0 +1,386 @@
+\hypertarget{classmts_intuitive_research_kit_p_s_m}{}\section{mts\+Intuitive\+Research\+Kit\+P\+S\+M Class Reference}
+\label{classmts_intuitive_research_kit_p_s_m}\index{mts\+Intuitive\+Research\+Kit\+P\+S\+M@{mts\+Intuitive\+Research\+Kit\+P\+S\+M}}
+
+
+{\ttfamily \#include $<$mts\+Intuitive\+Research\+Kit\+P\+S\+M.\+h$>$}
+
+Inheritance diagram for mts\+Intuitive\+Research\+Kit\+P\+S\+M\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=7.000000cm]{df/d79/classmts_intuitive_research_kit_p_s_m}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmts_intuitive_research_kit_p_s_m_abef5e73e7971661533b1c3c35a7daae7}{mts\+Intuitive\+Research\+Kit\+P\+S\+M} (const std\+::string \&component\+Name, const double period\+In\+Seconds)
+\item 
+\hyperlink{classmts_intuitive_research_kit_p_s_m_abdb3056c2b2bfda1c686969feba67809}{mts\+Intuitive\+Research\+Kit\+P\+S\+M} (const \hyperlink{classmts_task_periodic_constructor_arg}{mts\+Task\+Periodic\+Constructor\+Arg} \&arg)
+\item 
+\hyperlink{classmts_intuitive_research_kit_p_s_m_a06c160ea5e424740296d597fab60ad36}{$\sim$mts\+Intuitive\+Research\+Kit\+P\+S\+M} ()
+\item 
+void \hyperlink{classmts_intuitive_research_kit_p_s_m_a91fa93ae27dc0d525e7fac2afbe1ff95}{Configure} (const std\+::string \&filename)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+size\+\_\+t \hyperlink{classmts_intuitive_research_kit_p_s_m_a658ddc12e7550eba51f7752a071fdec8}{Number\+Of\+Joints} (void) const 
+\item 
+size\+\_\+t \hyperlink{classmts_intuitive_research_kit_p_s_m_aed9503acb416c319c5d3b7e016dc28d9}{Number\+Of\+Axes} (void) const 
+\item 
+size\+\_\+t \hyperlink{classmts_intuitive_research_kit_p_s_m_ac1e54884506cb71ebd758705505bcd04}{Number\+Of\+Brakes} (void) const 
+\item 
+bool \hyperlink{classmts_intuitive_research_kit_p_s_m_aafcc1c6ba32a21cccd3c575130c4844a}{Use\+P\+I\+D\+Tracking\+Error} (void) const 
+\item 
+void \hyperlink{classmts_intuitive_research_kit_p_s_m_aedd95487ba1a9f92188b628b8d6cc6f2}{Init} (void)
+\item 
+void \hyperlink{classmts_intuitive_research_kit_p_s_m_a0149b1fd141ad034d0e2169859a003bf}{Set\+State} (const mts\+Intuitive\+Research\+Kit\+Arm\+Types\+::\+Robot\+State\+Type \&new\+State)
+\item 
+void \hyperlink{classmts_intuitive_research_kit_p_s_m_a8e0988ba33c89dd6cf9f4a02daa25820}{Set\+Robot\+Control\+State} (const std\+::string \&state)
+\item 
+void \hyperlink{classmts_intuitive_research_kit_p_s_m_a342233d48e38ff7d1141e7e8412b9d2a}{Run\+Arm\+Specific} (void)
+\item 
+void \hyperlink{classmts_intuitive_research_kit_p_s_m_a78cb115da7d404effea18992c1514222}{Run\+Homing\+Calibrate\+Arm} (void)
+\item 
+void \hyperlink{classmts_intuitive_research_kit_p_s_m_adca90ab2aaf26196a0826a3ab877c471}{Run\+Engaging\+Adapter} (void)
+\item 
+void \hyperlink{classmts_intuitive_research_kit_p_s_m_a0c692ca79bf331140654b3f44d51abe3}{Run\+Engaging\+Tool} (void)
+\item 
+void \hyperlink{classmts_intuitive_research_kit_p_s_m_a88eaa498fe7cf4b26c8759a9c3aa1b01}{Run\+Constraint\+Controller\+Cartesian} (void)
+\item 
+void \hyperlink{classmts_intuitive_research_kit_p_s_m_ad7c79ae76ae7dce4feee27722b809bb5}{Set\+Position\+Joint\+Local} (const \hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \&new\+Position)
+\item 
+void \hyperlink{classmts_intuitive_research_kit_p_s_m_a3416ba243d970650e66064bbef2ef8ac}{Event\+Handler\+Adapter} (const \hyperlink{classprm_event_button}{prm\+Event\+Button} \&button)
+\item 
+void \hyperlink{classmts_intuitive_research_kit_p_s_m_a7f74e9da087a2c7b138b04aa42783a49}{Event\+Handler\+Tool} (const \hyperlink{classprm_event_button}{prm\+Event\+Button} \&button)
+\item 
+void \hyperlink{classmts_intuitive_research_kit_p_s_m_ac4b7ad0ac81d86b6203da137033d6fef}{Event\+Handler\+Manip\+Clutch} (const \hyperlink{classprm_event_button}{prm\+Event\+Button} \&button)
+\item 
+void \hyperlink{classmts_intuitive_research_kit_p_s_m_abac993df2c49f0bfbd6fd25d357d5ba2}{Set\+Position\+Cartesian} (const \hyperlink{classprm_position_cartesian_set}{prm\+Position\+Cartesian\+Set} \&new\+Position)
+\item 
+void \hyperlink{classmts_intuitive_research_kit_p_s_m_a93771d004cedc6c6f94b6ac5f91bff91}{Set\+Open\+Angle} (const double \&open\+Angle)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmts_intuitive_research_kit_optimizer}{mts\+Intuitive\+Research\+Kit\+Optimizer} $\ast$ \hyperlink{classmts_intuitive_research_kit_p_s_m_a3ca72df1e884e0d754b6ac688f0715f0}{Optimizer}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>\hyperlink{classmts_function_read}{mtsFunctionRead} \hyperlink{classmts_intuitive_research_kit_p_s_m_aa4f1aaa075c8c71a96ddcba9336d0e0a}{GetButton}\\
+\>bool \hyperlink{classmts_intuitive_research_kit_p_s_m_a78a247dc70ea5b9a26a2bd40be409e16}{IsPressed}\\
+\} \hyperlink{classmts_intuitive_research_kit_p_s_m_a211549ce3f5e8b7562cc80b3cc0508db}{ManipClutch}\\
+
+\end{tabbing}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>\hyperlink{classmts_function_write}{mtsFunctionWrite} \hyperlink{classmts_intuitive_research_kit_p_s_m_a02491aec085bb8e079ea0ec2dc11b278}{ManipClutch}\\
+\>mtsIntuitiveResearchKitArmTypes::RobotStateType \hyperlink{classmts_intuitive_research_kit_p_s_m_ab4a9f5daf47990c0b59c433775aba897}{ManipClutchPreviousState}\\
+\} \hyperlink{classmts_intuitive_research_kit_p_s_m_a76d7e00af4cc4e687101adaa00a8f670}{ClutchEvents}\\
+
+\end{tabbing}\item 
+\hyperlink{classrob_manipulator}{rob\+Manipulator} $\ast$ \hyperlink{classmts_intuitive_research_kit_p_s_m_ab07541283bf0eee9126789cc3391f46b}{Tool\+Offset}
+\item 
+\hyperlink{vct_transformation_types_8h_a33da47f4deb2556b37a69a2c44b29d75}{vct\+Frm4x4} \hyperlink{classmts_intuitive_research_kit_p_s_m_ac57150a5c372984cffcc8e4f4c8c1203}{Tool\+Offset\+Transformation}
+\item 
+double \hyperlink{classmts_intuitive_research_kit_p_s_m_af12ea8e7bb8c8ece39b92804e3b71ee7}{Desired\+Open\+Angle}
+\item 
+bool \hyperlink{classmts_intuitive_research_kit_p_s_m_a40572bf4e0ae1c3b9a5085982c4f6887}{Engaging\+Adapter\+Started}
+\item 
+bool \hyperlink{classmts_intuitive_research_kit_p_s_m_a50f8d217f7b667f6c06d95ae9287f4a6}{Engaging\+Tool\+Started}
+\item 
+\hyperlink{classosa_stopwatch}{osa\+Stopwatch} \hyperlink{classmts_intuitive_research_kit_p_s_m_a8c83ae174dd75444a8d47255dfbb96a1}{Engaging\+Stopwatch}
+\item 
+\hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \hyperlink{classmts_intuitive_research_kit_p_s_m_a6fa3319edb299cfbca1aed10ae681385}{Engaging\+Joint\+Set}
+\end{DoxyCompactItemize}
+{\bf }\par
+\begin{DoxyCompactItemize}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>\hyperlink{classmts_function_read}{mtsFunctionRead} \hyperlink{classmts_intuitive_research_kit_p_s_m_aa4f1aaa075c8c71a96ddcba9336d0e0a}{GetButton}\\
+\>bool \hyperlink{classmts_intuitive_research_kit_p_s_m_a199ab540aff093a65dc386575a0198f3}{IsPresent}\\
+\} \hyperlink{classmts_intuitive_research_kit_p_s_m_a4dbabb2ab4bc31ddc1a25a62fb98b73f}{Adapter}\\
+
+\end{tabbing}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>\hyperlink{classmts_function_read}{mtsFunctionRead} \hyperlink{classmts_intuitive_research_kit_p_s_m_aa4f1aaa075c8c71a96ddcba9336d0e0a}{GetButton}\\
+\>bool \hyperlink{classmts_intuitive_research_kit_p_s_m_a199ab540aff093a65dc386575a0198f3}{IsPresent}\\
+\} \hyperlink{classmts_intuitive_research_kit_p_s_m_ae73205ef14fdb6f97874a85fe1552ff2}{Tool}\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmts_intuitive_research_kit_p_s_m_abef5e73e7971661533b1c3c35a7daae7}{}\index{mts\+Intuitive\+Research\+Kit\+P\+S\+M@{mts\+Intuitive\+Research\+Kit\+P\+S\+M}!mts\+Intuitive\+Research\+Kit\+P\+S\+M@{mts\+Intuitive\+Research\+Kit\+P\+S\+M}}
+\index{mts\+Intuitive\+Research\+Kit\+P\+S\+M@{mts\+Intuitive\+Research\+Kit\+P\+S\+M}!mts\+Intuitive\+Research\+Kit\+P\+S\+M@{mts\+Intuitive\+Research\+Kit\+P\+S\+M}}
+\subsubsection[{mts\+Intuitive\+Research\+Kit\+P\+S\+M}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Intuitive\+Research\+Kit\+P\+S\+M\+::mts\+Intuitive\+Research\+Kit\+P\+S\+M (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{component\+Name, }
+\item[{const double}]{period\+In\+Seconds}
+\end{DoxyParamCaption}
+)}\label{classmts_intuitive_research_kit_p_s_m_abef5e73e7971661533b1c3c35a7daae7}
+\hypertarget{classmts_intuitive_research_kit_p_s_m_abdb3056c2b2bfda1c686969feba67809}{}\index{mts\+Intuitive\+Research\+Kit\+P\+S\+M@{mts\+Intuitive\+Research\+Kit\+P\+S\+M}!mts\+Intuitive\+Research\+Kit\+P\+S\+M@{mts\+Intuitive\+Research\+Kit\+P\+S\+M}}
+\index{mts\+Intuitive\+Research\+Kit\+P\+S\+M@{mts\+Intuitive\+Research\+Kit\+P\+S\+M}!mts\+Intuitive\+Research\+Kit\+P\+S\+M@{mts\+Intuitive\+Research\+Kit\+P\+S\+M}}
+\subsubsection[{mts\+Intuitive\+Research\+Kit\+P\+S\+M}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Intuitive\+Research\+Kit\+P\+S\+M\+::mts\+Intuitive\+Research\+Kit\+P\+S\+M (
+\begin{DoxyParamCaption}
+\item[{const {\bf mts\+Task\+Periodic\+Constructor\+Arg} \&}]{arg}
+\end{DoxyParamCaption}
+)}\label{classmts_intuitive_research_kit_p_s_m_abdb3056c2b2bfda1c686969feba67809}
+\hypertarget{classmts_intuitive_research_kit_p_s_m_a06c160ea5e424740296d597fab60ad36}{}\index{mts\+Intuitive\+Research\+Kit\+P\+S\+M@{mts\+Intuitive\+Research\+Kit\+P\+S\+M}!````~mts\+Intuitive\+Research\+Kit\+P\+S\+M@{$\sim$mts\+Intuitive\+Research\+Kit\+P\+S\+M}}
+\index{````~mts\+Intuitive\+Research\+Kit\+P\+S\+M@{$\sim$mts\+Intuitive\+Research\+Kit\+P\+S\+M}!mts\+Intuitive\+Research\+Kit\+P\+S\+M@{mts\+Intuitive\+Research\+Kit\+P\+S\+M}}
+\subsubsection[{$\sim$mts\+Intuitive\+Research\+Kit\+P\+S\+M}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Intuitive\+Research\+Kit\+P\+S\+M\+::$\sim$mts\+Intuitive\+Research\+Kit\+P\+S\+M (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_intuitive_research_kit_p_s_m_a06c160ea5e424740296d597fab60ad36}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classmts_intuitive_research_kit_p_s_m_a91fa93ae27dc0d525e7fac2afbe1ff95}{}\index{mts\+Intuitive\+Research\+Kit\+P\+S\+M@{mts\+Intuitive\+Research\+Kit\+P\+S\+M}!Configure@{Configure}}
+\index{Configure@{Configure}!mts\+Intuitive\+Research\+Kit\+P\+S\+M@{mts\+Intuitive\+Research\+Kit\+P\+S\+M}}
+\subsubsection[{Configure}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Intuitive\+Research\+Kit\+P\+S\+M\+::\+Configure (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{filename}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_intuitive_research_kit_p_s_m_a91fa93ae27dc0d525e7fac2afbe1ff95}
+The virtual method so that the interface or tasks can configure themselves 
+
+Reimplemented from \hyperlink{classmts_intuitive_research_kit_arm_a0f878813b53d9bd84a00c856d929c4a2}{mts\+Intuitive\+Research\+Kit\+Arm}.
+
+\hypertarget{classmts_intuitive_research_kit_p_s_m_a3416ba243d970650e66064bbef2ef8ac}{}\index{mts\+Intuitive\+Research\+Kit\+P\+S\+M@{mts\+Intuitive\+Research\+Kit\+P\+S\+M}!Event\+Handler\+Adapter@{Event\+Handler\+Adapter}}
+\index{Event\+Handler\+Adapter@{Event\+Handler\+Adapter}!mts\+Intuitive\+Research\+Kit\+P\+S\+M@{mts\+Intuitive\+Research\+Kit\+P\+S\+M}}
+\subsubsection[{Event\+Handler\+Adapter}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Intuitive\+Research\+Kit\+P\+S\+M\+::\+Event\+Handler\+Adapter (
+\begin{DoxyParamCaption}
+\item[{const {\bf prm\+Event\+Button} \&}]{button}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_intuitive_research_kit_p_s_m_a3416ba243d970650e66064bbef2ef8ac}
+\hypertarget{classmts_intuitive_research_kit_p_s_m_ac4b7ad0ac81d86b6203da137033d6fef}{}\index{mts\+Intuitive\+Research\+Kit\+P\+S\+M@{mts\+Intuitive\+Research\+Kit\+P\+S\+M}!Event\+Handler\+Manip\+Clutch@{Event\+Handler\+Manip\+Clutch}}
+\index{Event\+Handler\+Manip\+Clutch@{Event\+Handler\+Manip\+Clutch}!mts\+Intuitive\+Research\+Kit\+P\+S\+M@{mts\+Intuitive\+Research\+Kit\+P\+S\+M}}
+\subsubsection[{Event\+Handler\+Manip\+Clutch}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Intuitive\+Research\+Kit\+P\+S\+M\+::\+Event\+Handler\+Manip\+Clutch (
+\begin{DoxyParamCaption}
+\item[{const {\bf prm\+Event\+Button} \&}]{button}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_intuitive_research_kit_p_s_m_ac4b7ad0ac81d86b6203da137033d6fef}
+\hypertarget{classmts_intuitive_research_kit_p_s_m_a7f74e9da087a2c7b138b04aa42783a49}{}\index{mts\+Intuitive\+Research\+Kit\+P\+S\+M@{mts\+Intuitive\+Research\+Kit\+P\+S\+M}!Event\+Handler\+Tool@{Event\+Handler\+Tool}}
+\index{Event\+Handler\+Tool@{Event\+Handler\+Tool}!mts\+Intuitive\+Research\+Kit\+P\+S\+M@{mts\+Intuitive\+Research\+Kit\+P\+S\+M}}
+\subsubsection[{Event\+Handler\+Tool}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Intuitive\+Research\+Kit\+P\+S\+M\+::\+Event\+Handler\+Tool (
+\begin{DoxyParamCaption}
+\item[{const {\bf prm\+Event\+Button} \&}]{button}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_intuitive_research_kit_p_s_m_a7f74e9da087a2c7b138b04aa42783a49}
+\hypertarget{classmts_intuitive_research_kit_p_s_m_aedd95487ba1a9f92188b628b8d6cc6f2}{}\index{mts\+Intuitive\+Research\+Kit\+P\+S\+M@{mts\+Intuitive\+Research\+Kit\+P\+S\+M}!Init@{Init}}
+\index{Init@{Init}!mts\+Intuitive\+Research\+Kit\+P\+S\+M@{mts\+Intuitive\+Research\+Kit\+P\+S\+M}}
+\subsubsection[{Init}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Intuitive\+Research\+Kit\+P\+S\+M\+::\+Init (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classmts_intuitive_research_kit_p_s_m_aedd95487ba1a9f92188b628b8d6cc6f2}
+Initialization, including resizing data members and setting up cisst/\+S\+A\+W interfaces 
+
+Reimplemented from \hyperlink{classmts_intuitive_research_kit_arm_a0ca9419383cc357218f1ab25b9da5405}{mts\+Intuitive\+Research\+Kit\+Arm}.
+
+\hypertarget{classmts_intuitive_research_kit_p_s_m_aed9503acb416c319c5d3b7e016dc28d9}{}\index{mts\+Intuitive\+Research\+Kit\+P\+S\+M@{mts\+Intuitive\+Research\+Kit\+P\+S\+M}!Number\+Of\+Axes@{Number\+Of\+Axes}}
+\index{Number\+Of\+Axes@{Number\+Of\+Axes}!mts\+Intuitive\+Research\+Kit\+P\+S\+M@{mts\+Intuitive\+Research\+Kit\+P\+S\+M}}
+\subsubsection[{Number\+Of\+Axes}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t mts\+Intuitive\+Research\+Kit\+P\+S\+M\+::\+Number\+Of\+Axes (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classmts_intuitive_research_kit_p_s_m_aed9503acb416c319c5d3b7e016dc28d9}
+
+
+Implements \hyperlink{classmts_intuitive_research_kit_arm_ac4e94a3b87e5995946667faeaac171df}{mts\+Intuitive\+Research\+Kit\+Arm}.
+
+\hypertarget{classmts_intuitive_research_kit_p_s_m_ac1e54884506cb71ebd758705505bcd04}{}\index{mts\+Intuitive\+Research\+Kit\+P\+S\+M@{mts\+Intuitive\+Research\+Kit\+P\+S\+M}!Number\+Of\+Brakes@{Number\+Of\+Brakes}}
+\index{Number\+Of\+Brakes@{Number\+Of\+Brakes}!mts\+Intuitive\+Research\+Kit\+P\+S\+M@{mts\+Intuitive\+Research\+Kit\+P\+S\+M}}
+\subsubsection[{Number\+Of\+Brakes}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t mts\+Intuitive\+Research\+Kit\+P\+S\+M\+::\+Number\+Of\+Brakes (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classmts_intuitive_research_kit_p_s_m_ac1e54884506cb71ebd758705505bcd04}
+
+
+Implements \hyperlink{classmts_intuitive_research_kit_arm_af5aeb301791a6d88509deb924d63c37d}{mts\+Intuitive\+Research\+Kit\+Arm}.
+
+\hypertarget{classmts_intuitive_research_kit_p_s_m_a658ddc12e7550eba51f7752a071fdec8}{}\index{mts\+Intuitive\+Research\+Kit\+P\+S\+M@{mts\+Intuitive\+Research\+Kit\+P\+S\+M}!Number\+Of\+Joints@{Number\+Of\+Joints}}
+\index{Number\+Of\+Joints@{Number\+Of\+Joints}!mts\+Intuitive\+Research\+Kit\+P\+S\+M@{mts\+Intuitive\+Research\+Kit\+P\+S\+M}}
+\subsubsection[{Number\+Of\+Joints}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t mts\+Intuitive\+Research\+Kit\+P\+S\+M\+::\+Number\+Of\+Joints (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classmts_intuitive_research_kit_p_s_m_a658ddc12e7550eba51f7752a071fdec8}
+Configuration methods 
+
+Implements \hyperlink{classmts_intuitive_research_kit_arm_a28cd357b9b185b2611348f770e9226c1}{mts\+Intuitive\+Research\+Kit\+Arm}.
+
+\hypertarget{classmts_intuitive_research_kit_p_s_m_a342233d48e38ff7d1141e7e8412b9d2a}{}\index{mts\+Intuitive\+Research\+Kit\+P\+S\+M@{mts\+Intuitive\+Research\+Kit\+P\+S\+M}!Run\+Arm\+Specific@{Run\+Arm\+Specific}}
+\index{Run\+Arm\+Specific@{Run\+Arm\+Specific}!mts\+Intuitive\+Research\+Kit\+P\+S\+M@{mts\+Intuitive\+Research\+Kit\+P\+S\+M}}
+\subsubsection[{Run\+Arm\+Specific}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Intuitive\+Research\+Kit\+P\+S\+M\+::\+Run\+Arm\+Specific (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classmts_intuitive_research_kit_p_s_m_a342233d48e38ff7d1141e7e8412b9d2a}
+Switch case for user mode. 
+
+Reimplemented from \hyperlink{classmts_intuitive_research_kit_arm_a178322f557694c5f9363047f84560504}{mts\+Intuitive\+Research\+Kit\+Arm}.
+
+\hypertarget{classmts_intuitive_research_kit_p_s_m_a88eaa498fe7cf4b26c8759a9c3aa1b01}{}\index{mts\+Intuitive\+Research\+Kit\+P\+S\+M@{mts\+Intuitive\+Research\+Kit\+P\+S\+M}!Run\+Constraint\+Controller\+Cartesian@{Run\+Constraint\+Controller\+Cartesian}}
+\index{Run\+Constraint\+Controller\+Cartesian@{Run\+Constraint\+Controller\+Cartesian}!mts\+Intuitive\+Research\+Kit\+P\+S\+M@{mts\+Intuitive\+Research\+Kit\+P\+S\+M}}
+\subsubsection[{Run\+Constraint\+Controller\+Cartesian}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Intuitive\+Research\+Kit\+P\+S\+M\+::\+Run\+Constraint\+Controller\+Cartesian (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_intuitive_research_kit_p_s_m_a88eaa498fe7cf4b26c8759a9c3aa1b01}
+Cartesian constraint controller. \hypertarget{classmts_intuitive_research_kit_p_s_m_adca90ab2aaf26196a0826a3ab877c471}{}\index{mts\+Intuitive\+Research\+Kit\+P\+S\+M@{mts\+Intuitive\+Research\+Kit\+P\+S\+M}!Run\+Engaging\+Adapter@{Run\+Engaging\+Adapter}}
+\index{Run\+Engaging\+Adapter@{Run\+Engaging\+Adapter}!mts\+Intuitive\+Research\+Kit\+P\+S\+M@{mts\+Intuitive\+Research\+Kit\+P\+S\+M}}
+\subsubsection[{Run\+Engaging\+Adapter}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Intuitive\+Research\+Kit\+P\+S\+M\+::\+Run\+Engaging\+Adapter (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_intuitive_research_kit_p_s_m_adca90ab2aaf26196a0826a3ab877c471}
+Engaging adapter procedure. \hypertarget{classmts_intuitive_research_kit_p_s_m_a0c692ca79bf331140654b3f44d51abe3}{}\index{mts\+Intuitive\+Research\+Kit\+P\+S\+M@{mts\+Intuitive\+Research\+Kit\+P\+S\+M}!Run\+Engaging\+Tool@{Run\+Engaging\+Tool}}
+\index{Run\+Engaging\+Tool@{Run\+Engaging\+Tool}!mts\+Intuitive\+Research\+Kit\+P\+S\+M@{mts\+Intuitive\+Research\+Kit\+P\+S\+M}}
+\subsubsection[{Run\+Engaging\+Tool}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Intuitive\+Research\+Kit\+P\+S\+M\+::\+Run\+Engaging\+Tool (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_intuitive_research_kit_p_s_m_a0c692ca79bf331140654b3f44d51abe3}
+Engaging tool procedure. \hypertarget{classmts_intuitive_research_kit_p_s_m_a78cb115da7d404effea18992c1514222}{}\index{mts\+Intuitive\+Research\+Kit\+P\+S\+M@{mts\+Intuitive\+Research\+Kit\+P\+S\+M}!Run\+Homing\+Calibrate\+Arm@{Run\+Homing\+Calibrate\+Arm}}
+\index{Run\+Homing\+Calibrate\+Arm@{Run\+Homing\+Calibrate\+Arm}!mts\+Intuitive\+Research\+Kit\+P\+S\+M@{mts\+Intuitive\+Research\+Kit\+P\+S\+M}}
+\subsubsection[{Run\+Homing\+Calibrate\+Arm}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Intuitive\+Research\+Kit\+P\+S\+M\+::\+Run\+Homing\+Calibrate\+Arm (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classmts_intuitive_research_kit_p_s_m_a78cb115da7d404effea18992c1514222}
+Homing procedure, home all joints except last one using potentiometers as reference. 
+
+Implements \hyperlink{classmts_intuitive_research_kit_arm_ab61f28ceeede413541382e49ae092600}{mts\+Intuitive\+Research\+Kit\+Arm}.
+
+\hypertarget{classmts_intuitive_research_kit_p_s_m_a93771d004cedc6c6f94b6ac5f91bff91}{}\index{mts\+Intuitive\+Research\+Kit\+P\+S\+M@{mts\+Intuitive\+Research\+Kit\+P\+S\+M}!Set\+Open\+Angle@{Set\+Open\+Angle}}
+\index{Set\+Open\+Angle@{Set\+Open\+Angle}!mts\+Intuitive\+Research\+Kit\+P\+S\+M@{mts\+Intuitive\+Research\+Kit\+P\+S\+M}}
+\subsubsection[{Set\+Open\+Angle}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Intuitive\+Research\+Kit\+P\+S\+M\+::\+Set\+Open\+Angle (
+\begin{DoxyParamCaption}
+\item[{const double \&}]{open\+Angle}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_intuitive_research_kit_p_s_m_a93771d004cedc6c6f94b6ac5f91bff91}
+\hypertarget{classmts_intuitive_research_kit_p_s_m_abac993df2c49f0bfbd6fd25d357d5ba2}{}\index{mts\+Intuitive\+Research\+Kit\+P\+S\+M@{mts\+Intuitive\+Research\+Kit\+P\+S\+M}!Set\+Position\+Cartesian@{Set\+Position\+Cartesian}}
+\index{Set\+Position\+Cartesian@{Set\+Position\+Cartesian}!mts\+Intuitive\+Research\+Kit\+P\+S\+M@{mts\+Intuitive\+Research\+Kit\+P\+S\+M}}
+\subsubsection[{Set\+Position\+Cartesian}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Intuitive\+Research\+Kit\+P\+S\+M\+::\+Set\+Position\+Cartesian (
+\begin{DoxyParamCaption}
+\item[{const {\bf prm\+Position\+Cartesian\+Set} \&}]{new\+Position}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classmts_intuitive_research_kit_p_s_m_abac993df2c49f0bfbd6fd25d357d5ba2}
+
+
+Reimplemented from \hyperlink{classmts_intuitive_research_kit_arm_aa9bc859d4db6717fc7de986c62cb59d4}{mts\+Intuitive\+Research\+Kit\+Arm}.
+
+\hypertarget{classmts_intuitive_research_kit_p_s_m_ad7c79ae76ae7dce4feee27722b809bb5}{}\index{mts\+Intuitive\+Research\+Kit\+P\+S\+M@{mts\+Intuitive\+Research\+Kit\+P\+S\+M}!Set\+Position\+Joint\+Local@{Set\+Position\+Joint\+Local}}
+\index{Set\+Position\+Joint\+Local@{Set\+Position\+Joint\+Local}!mts\+Intuitive\+Research\+Kit\+P\+S\+M@{mts\+Intuitive\+Research\+Kit\+P\+S\+M}}
+\subsubsection[{Set\+Position\+Joint\+Local}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Intuitive\+Research\+Kit\+P\+S\+M\+::\+Set\+Position\+Joint\+Local (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Double\+Vec} \&}]{new\+Position}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classmts_intuitive_research_kit_p_s_m_ad7c79ae76ae7dce4feee27722b809bb5}
+Wrapper to convert vector of 7 values to \hyperlink{classprm_position_joint_set}{prm\+Position\+Joint\+Set} and send to P\+I\+D 
+
+Reimplemented from \hyperlink{classmts_intuitive_research_kit_arm_a5064bc188dcba4345248689f0770b479}{mts\+Intuitive\+Research\+Kit\+Arm}.
+
+\hypertarget{classmts_intuitive_research_kit_p_s_m_a8e0988ba33c89dd6cf9f4a02daa25820}{}\index{mts\+Intuitive\+Research\+Kit\+P\+S\+M@{mts\+Intuitive\+Research\+Kit\+P\+S\+M}!Set\+Robot\+Control\+State@{Set\+Robot\+Control\+State}}
+\index{Set\+Robot\+Control\+State@{Set\+Robot\+Control\+State}!mts\+Intuitive\+Research\+Kit\+P\+S\+M@{mts\+Intuitive\+Research\+Kit\+P\+S\+M}}
+\subsubsection[{Set\+Robot\+Control\+State}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Intuitive\+Research\+Kit\+P\+S\+M\+::\+Set\+Robot\+Control\+State (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{state}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classmts_intuitive_research_kit_p_s_m_a8e0988ba33c89dd6cf9f4a02daa25820}
+
+
+Implements \hyperlink{classmts_intuitive_research_kit_arm_ae2e2808687bca1fcd58d6a3495d9820d}{mts\+Intuitive\+Research\+Kit\+Arm}.
+
+\hypertarget{classmts_intuitive_research_kit_p_s_m_a0149b1fd141ad034d0e2169859a003bf}{}\index{mts\+Intuitive\+Research\+Kit\+P\+S\+M@{mts\+Intuitive\+Research\+Kit\+P\+S\+M}!Set\+State@{Set\+State}}
+\index{Set\+State@{Set\+State}!mts\+Intuitive\+Research\+Kit\+P\+S\+M@{mts\+Intuitive\+Research\+Kit\+P\+S\+M}}
+\subsubsection[{Set\+State}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Intuitive\+Research\+Kit\+P\+S\+M\+::\+Set\+State (
+\begin{DoxyParamCaption}
+\item[{const mts\+Intuitive\+Research\+Kit\+Arm\+Types\+::\+Robot\+State\+Type \&}]{new\+State}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classmts_intuitive_research_kit_p_s_m_a0149b1fd141ad034d0e2169859a003bf}
+Verify that the state transition is possible, initialize global variables for the desired state and finally set the state. 
+
+Implements \hyperlink{classmts_intuitive_research_kit_arm_a71ac45020e7a77ce3892e4dc312adec3}{mts\+Intuitive\+Research\+Kit\+Arm}.
+
+\hypertarget{classmts_intuitive_research_kit_p_s_m_aafcc1c6ba32a21cccd3c575130c4844a}{}\index{mts\+Intuitive\+Research\+Kit\+P\+S\+M@{mts\+Intuitive\+Research\+Kit\+P\+S\+M}!Use\+P\+I\+D\+Tracking\+Error@{Use\+P\+I\+D\+Tracking\+Error}}
+\index{Use\+P\+I\+D\+Tracking\+Error@{Use\+P\+I\+D\+Tracking\+Error}!mts\+Intuitive\+Research\+Kit\+P\+S\+M@{mts\+Intuitive\+Research\+Kit\+P\+S\+M}}
+\subsubsection[{Use\+P\+I\+D\+Tracking\+Error}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Intuitive\+Research\+Kit\+P\+S\+M\+::\+Use\+P\+I\+D\+Tracking\+Error (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classmts_intuitive_research_kit_p_s_m_aafcc1c6ba32a21cccd3c575130c4844a}
+
+
+Implements \hyperlink{classmts_intuitive_research_kit_arm_ac070e316cba6d7bfedc2ac1b461b7aa7}{mts\+Intuitive\+Research\+Kit\+Arm}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classmts_intuitive_research_kit_p_s_m_a4dbabb2ab4bc31ddc1a25a62fb98b73f}{}\index{mts\+Intuitive\+Research\+Kit\+P\+S\+M@{mts\+Intuitive\+Research\+Kit\+P\+S\+M}!Adapter@{Adapter}}
+\index{Adapter@{Adapter}!mts\+Intuitive\+Research\+Kit\+P\+S\+M@{mts\+Intuitive\+Research\+Kit\+P\+S\+M}}
+\subsubsection[{Adapter}]{\setlength{\rightskip}{0pt plus 5cm}struct \{ ... \}   mts\+Intuitive\+Research\+Kit\+P\+S\+M\+::\+Adapter\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_intuitive_research_kit_p_s_m_a4dbabb2ab4bc31ddc1a25a62fb98b73f}
+Event handlers for tools \hypertarget{classmts_intuitive_research_kit_p_s_m_a76d7e00af4cc4e687101adaa00a8f670}{}\index{mts\+Intuitive\+Research\+Kit\+P\+S\+M@{mts\+Intuitive\+Research\+Kit\+P\+S\+M}!Clutch\+Events@{Clutch\+Events}}
+\index{Clutch\+Events@{Clutch\+Events}!mts\+Intuitive\+Research\+Kit\+P\+S\+M@{mts\+Intuitive\+Research\+Kit\+P\+S\+M}}
+\subsubsection[{Clutch\+Events}]{\setlength{\rightskip}{0pt plus 5cm}struct \{ ... \}   mts\+Intuitive\+Research\+Kit\+P\+S\+M\+::\+Clutch\+Events\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_intuitive_research_kit_p_s_m_a76d7e00af4cc4e687101adaa00a8f670}
+\hypertarget{classmts_intuitive_research_kit_p_s_m_af12ea8e7bb8c8ece39b92804e3b71ee7}{}\index{mts\+Intuitive\+Research\+Kit\+P\+S\+M@{mts\+Intuitive\+Research\+Kit\+P\+S\+M}!Desired\+Open\+Angle@{Desired\+Open\+Angle}}
+\index{Desired\+Open\+Angle@{Desired\+Open\+Angle}!mts\+Intuitive\+Research\+Kit\+P\+S\+M@{mts\+Intuitive\+Research\+Kit\+P\+S\+M}}
+\subsubsection[{Desired\+Open\+Angle}]{\setlength{\rightskip}{0pt plus 5cm}double mts\+Intuitive\+Research\+Kit\+P\+S\+M\+::\+Desired\+Open\+Angle\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_intuitive_research_kit_p_s_m_af12ea8e7bb8c8ece39b92804e3b71ee7}
+\hypertarget{classmts_intuitive_research_kit_p_s_m_a40572bf4e0ae1c3b9a5085982c4f6887}{}\index{mts\+Intuitive\+Research\+Kit\+P\+S\+M@{mts\+Intuitive\+Research\+Kit\+P\+S\+M}!Engaging\+Adapter\+Started@{Engaging\+Adapter\+Started}}
+\index{Engaging\+Adapter\+Started@{Engaging\+Adapter\+Started}!mts\+Intuitive\+Research\+Kit\+P\+S\+M@{mts\+Intuitive\+Research\+Kit\+P\+S\+M}}
+\subsubsection[{Engaging\+Adapter\+Started}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Intuitive\+Research\+Kit\+P\+S\+M\+::\+Engaging\+Adapter\+Started\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_intuitive_research_kit_p_s_m_a40572bf4e0ae1c3b9a5085982c4f6887}
+\hypertarget{classmts_intuitive_research_kit_p_s_m_a6fa3319edb299cfbca1aed10ae681385}{}\index{mts\+Intuitive\+Research\+Kit\+P\+S\+M@{mts\+Intuitive\+Research\+Kit\+P\+S\+M}!Engaging\+Joint\+Set@{Engaging\+Joint\+Set}}
+\index{Engaging\+Joint\+Set@{Engaging\+Joint\+Set}!mts\+Intuitive\+Research\+Kit\+P\+S\+M@{mts\+Intuitive\+Research\+Kit\+P\+S\+M}}
+\subsubsection[{Engaging\+Joint\+Set}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Double\+Vec} mts\+Intuitive\+Research\+Kit\+P\+S\+M\+::\+Engaging\+Joint\+Set\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_intuitive_research_kit_p_s_m_a6fa3319edb299cfbca1aed10ae681385}
+\hypertarget{classmts_intuitive_research_kit_p_s_m_a8c83ae174dd75444a8d47255dfbb96a1}{}\index{mts\+Intuitive\+Research\+Kit\+P\+S\+M@{mts\+Intuitive\+Research\+Kit\+P\+S\+M}!Engaging\+Stopwatch@{Engaging\+Stopwatch}}
+\index{Engaging\+Stopwatch@{Engaging\+Stopwatch}!mts\+Intuitive\+Research\+Kit\+P\+S\+M@{mts\+Intuitive\+Research\+Kit\+P\+S\+M}}
+\subsubsection[{Engaging\+Stopwatch}]{\setlength{\rightskip}{0pt plus 5cm}{\bf osa\+Stopwatch} mts\+Intuitive\+Research\+Kit\+P\+S\+M\+::\+Engaging\+Stopwatch\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_intuitive_research_kit_p_s_m_a8c83ae174dd75444a8d47255dfbb96a1}
+\hypertarget{classmts_intuitive_research_kit_p_s_m_a50f8d217f7b667f6c06d95ae9287f4a6}{}\index{mts\+Intuitive\+Research\+Kit\+P\+S\+M@{mts\+Intuitive\+Research\+Kit\+P\+S\+M}!Engaging\+Tool\+Started@{Engaging\+Tool\+Started}}
+\index{Engaging\+Tool\+Started@{Engaging\+Tool\+Started}!mts\+Intuitive\+Research\+Kit\+P\+S\+M@{mts\+Intuitive\+Research\+Kit\+P\+S\+M}}
+\subsubsection[{Engaging\+Tool\+Started}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Intuitive\+Research\+Kit\+P\+S\+M\+::\+Engaging\+Tool\+Started\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_intuitive_research_kit_p_s_m_a50f8d217f7b667f6c06d95ae9287f4a6}
+\hypertarget{classmts_intuitive_research_kit_p_s_m_aa4f1aaa075c8c71a96ddcba9336d0e0a}{}\index{mts\+Intuitive\+Research\+Kit\+P\+S\+M@{mts\+Intuitive\+Research\+Kit\+P\+S\+M}!Get\+Button@{Get\+Button}}
+\index{Get\+Button@{Get\+Button}!mts\+Intuitive\+Research\+Kit\+P\+S\+M@{mts\+Intuitive\+Research\+Kit\+P\+S\+M}}
+\subsubsection[{Get\+Button}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+Function\+Read} mts\+Intuitive\+Research\+Kit\+P\+S\+M\+::\+Get\+Button}\label{classmts_intuitive_research_kit_p_s_m_aa4f1aaa075c8c71a96ddcba9336d0e0a}
+\hypertarget{classmts_intuitive_research_kit_p_s_m_a199ab540aff093a65dc386575a0198f3}{}\index{mts\+Intuitive\+Research\+Kit\+P\+S\+M@{mts\+Intuitive\+Research\+Kit\+P\+S\+M}!Is\+Present@{Is\+Present}}
+\index{Is\+Present@{Is\+Present}!mts\+Intuitive\+Research\+Kit\+P\+S\+M@{mts\+Intuitive\+Research\+Kit\+P\+S\+M}}
+\subsubsection[{Is\+Present}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Intuitive\+Research\+Kit\+P\+S\+M\+::\+Is\+Present}\label{classmts_intuitive_research_kit_p_s_m_a199ab540aff093a65dc386575a0198f3}
+\hypertarget{classmts_intuitive_research_kit_p_s_m_a78a247dc70ea5b9a26a2bd40be409e16}{}\index{mts\+Intuitive\+Research\+Kit\+P\+S\+M@{mts\+Intuitive\+Research\+Kit\+P\+S\+M}!Is\+Pressed@{Is\+Pressed}}
+\index{Is\+Pressed@{Is\+Pressed}!mts\+Intuitive\+Research\+Kit\+P\+S\+M@{mts\+Intuitive\+Research\+Kit\+P\+S\+M}}
+\subsubsection[{Is\+Pressed}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Intuitive\+Research\+Kit\+P\+S\+M\+::\+Is\+Pressed}\label{classmts_intuitive_research_kit_p_s_m_a78a247dc70ea5b9a26a2bd40be409e16}
+\hypertarget{classmts_intuitive_research_kit_p_s_m_a211549ce3f5e8b7562cc80b3cc0508db}{}\index{mts\+Intuitive\+Research\+Kit\+P\+S\+M@{mts\+Intuitive\+Research\+Kit\+P\+S\+M}!Manip\+Clutch@{Manip\+Clutch}}
+\index{Manip\+Clutch@{Manip\+Clutch}!mts\+Intuitive\+Research\+Kit\+P\+S\+M@{mts\+Intuitive\+Research\+Kit\+P\+S\+M}}
+\subsubsection[{Manip\+Clutch}]{\setlength{\rightskip}{0pt plus 5cm}struct \{ ... \}   mts\+Intuitive\+Research\+Kit\+P\+S\+M\+::\+Manip\+Clutch\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_intuitive_research_kit_p_s_m_a211549ce3f5e8b7562cc80b3cc0508db}
+\hypertarget{classmts_intuitive_research_kit_p_s_m_a02491aec085bb8e079ea0ec2dc11b278}{}\index{mts\+Intuitive\+Research\+Kit\+P\+S\+M@{mts\+Intuitive\+Research\+Kit\+P\+S\+M}!Manip\+Clutch@{Manip\+Clutch}}
+\index{Manip\+Clutch@{Manip\+Clutch}!mts\+Intuitive\+Research\+Kit\+P\+S\+M@{mts\+Intuitive\+Research\+Kit\+P\+S\+M}}
+\subsubsection[{Manip\+Clutch}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+Function\+Write} mts\+Intuitive\+Research\+Kit\+P\+S\+M\+::\+Manip\+Clutch}\label{classmts_intuitive_research_kit_p_s_m_a02491aec085bb8e079ea0ec2dc11b278}
+\hypertarget{classmts_intuitive_research_kit_p_s_m_ab4a9f5daf47990c0b59c433775aba897}{}\index{mts\+Intuitive\+Research\+Kit\+P\+S\+M@{mts\+Intuitive\+Research\+Kit\+P\+S\+M}!Manip\+Clutch\+Previous\+State@{Manip\+Clutch\+Previous\+State}}
+\index{Manip\+Clutch\+Previous\+State@{Manip\+Clutch\+Previous\+State}!mts\+Intuitive\+Research\+Kit\+P\+S\+M@{mts\+Intuitive\+Research\+Kit\+P\+S\+M}}
+\subsubsection[{Manip\+Clutch\+Previous\+State}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Intuitive\+Research\+Kit\+Arm\+Types\+::\+Robot\+State\+Type mts\+Intuitive\+Research\+Kit\+P\+S\+M\+::\+Manip\+Clutch\+Previous\+State}\label{classmts_intuitive_research_kit_p_s_m_ab4a9f5daf47990c0b59c433775aba897}
+\hypertarget{classmts_intuitive_research_kit_p_s_m_a3ca72df1e884e0d754b6ac688f0715f0}{}\index{mts\+Intuitive\+Research\+Kit\+P\+S\+M@{mts\+Intuitive\+Research\+Kit\+P\+S\+M}!Optimizer@{Optimizer}}
+\index{Optimizer@{Optimizer}!mts\+Intuitive\+Research\+Kit\+P\+S\+M@{mts\+Intuitive\+Research\+Kit\+P\+S\+M}}
+\subsubsection[{Optimizer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+Intuitive\+Research\+Kit\+Optimizer}$\ast$ mts\+Intuitive\+Research\+Kit\+P\+S\+M\+::\+Optimizer\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_intuitive_research_kit_p_s_m_a3ca72df1e884e0d754b6ac688f0715f0}
+\hypertarget{classmts_intuitive_research_kit_p_s_m_ae73205ef14fdb6f97874a85fe1552ff2}{}\index{mts\+Intuitive\+Research\+Kit\+P\+S\+M@{mts\+Intuitive\+Research\+Kit\+P\+S\+M}!Tool@{Tool}}
+\index{Tool@{Tool}!mts\+Intuitive\+Research\+Kit\+P\+S\+M@{mts\+Intuitive\+Research\+Kit\+P\+S\+M}}
+\subsubsection[{Tool}]{\setlength{\rightskip}{0pt plus 5cm}struct \{ ... \}   mts\+Intuitive\+Research\+Kit\+P\+S\+M\+::\+Tool\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_intuitive_research_kit_p_s_m_ae73205ef14fdb6f97874a85fe1552ff2}
+\hypertarget{classmts_intuitive_research_kit_p_s_m_ab07541283bf0eee9126789cc3391f46b}{}\index{mts\+Intuitive\+Research\+Kit\+P\+S\+M@{mts\+Intuitive\+Research\+Kit\+P\+S\+M}!Tool\+Offset@{Tool\+Offset}}
+\index{Tool\+Offset@{Tool\+Offset}!mts\+Intuitive\+Research\+Kit\+P\+S\+M@{mts\+Intuitive\+Research\+Kit\+P\+S\+M}}
+\subsubsection[{Tool\+Offset}]{\setlength{\rightskip}{0pt plus 5cm}{\bf rob\+Manipulator}$\ast$ mts\+Intuitive\+Research\+Kit\+P\+S\+M\+::\+Tool\+Offset\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_intuitive_research_kit_p_s_m_ab07541283bf0eee9126789cc3391f46b}
+\hypertarget{classmts_intuitive_research_kit_p_s_m_ac57150a5c372984cffcc8e4f4c8c1203}{}\index{mts\+Intuitive\+Research\+Kit\+P\+S\+M@{mts\+Intuitive\+Research\+Kit\+P\+S\+M}!Tool\+Offset\+Transformation@{Tool\+Offset\+Transformation}}
+\index{Tool\+Offset\+Transformation@{Tool\+Offset\+Transformation}!mts\+Intuitive\+Research\+Kit\+P\+S\+M@{mts\+Intuitive\+Research\+Kit\+P\+S\+M}}
+\subsubsection[{Tool\+Offset\+Transformation}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Frm4x4} mts\+Intuitive\+Research\+Kit\+P\+S\+M\+::\+Tool\+Offset\+Transformation\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_intuitive_research_kit_p_s_m_ac57150a5c372984cffcc8e4f4c8c1203}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/saw\+Intuitive\+Research\+Kit/include/saw\+Intuitive\+Research\+Kit/\hyperlink{mts_intuitive_research_kit_p_s_m_8h}{mts\+Intuitive\+Research\+Kit\+P\+S\+M.\+h}\end{DoxyCompactItemize}

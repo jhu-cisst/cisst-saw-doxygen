@@ -1,0 +1,130 @@
+\hypertarget{classmts_mail_box}{}\section{mts\+Mail\+Box Class Reference}
+\label{classmts_mail_box}\index{mts\+Mail\+Box@{mts\+Mail\+Box}}
+
+
+{\ttfamily \#include $<$mts\+Mail\+Box.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmts_mail_box_a06a0abec903ca41c875d0bcdb8c53ebc}{mts\+Mail\+Box} (const std\+::string \&name, size\+\_\+t size, \hyperlink{classmts_callable_void_base}{mts\+Callable\+Void\+Base} $\ast$post\+Command\+Queued\+Callable=0)
+\item 
+\hyperlink{classmts_mail_box_ab20b400d82db33fd56a285771ac03ec2}{$\sim$mts\+Mail\+Box} (void)
+\item 
+const std\+::string \& \hyperlink{classmts_mail_box_aadf082bf9196ca93576599fd23cab55c}{Get\+Name} (void) const 
+\item 
+bool \hyperlink{classmts_mail_box_abcaf2f8760c31ced98abbbff0f9374e4}{Write} (\hyperlink{classmts_command_base}{mts\+Command\+Base} $\ast$command)
+\item 
+bool \hyperlink{classmts_mail_box_ab6a23137faacef309d53a0b3ffc985a8}{Execute\+Next} (void)
+\item 
+void \hyperlink{classmts_mail_box_a1224e07589e01a5a1c80f3dcc5f3c14a}{Set\+Size} (size\+\_\+t size)
+\item 
+bool \hyperlink{classmts_mail_box_aabf221528804d0ff287eb3b1ffe78b20}{Is\+Empty} (void) const 
+\item 
+bool \hyperlink{classmts_mail_box_ab5c7ee34e956c7c79288018a353b1ce6}{Is\+Full} (void) const 
+\item 
+void \hyperlink{classmts_mail_box_a12272c44ebcb68cfcfaf59f18cda21d3}{Set\+Post\+Command\+Dequeued\+Command} (\hyperlink{classmts_command_void}{mts\+Command\+Void} $\ast$command)
+\item 
+\hyperlink{classmts_command_void}{mts\+Command\+Void} $\ast$ \hyperlink{classmts_mail_box_af703607d2b078aadcfb079027b2221cf}{Get\+Post\+Command\+Dequeued\+Command} (void) const 
+\item 
+void \hyperlink{classmts_mail_box_a8a2d79ee98f9d4d87d595bc070a2b465}{Set\+Post\+Command\+Return\+Dequeued\+Command} (\hyperlink{classmts_command_void}{mts\+Command\+Void} $\ast$command)
+\item 
+\hyperlink{classmts_command_void}{mts\+Command\+Void} $\ast$ \hyperlink{classmts_mail_box_a6951651caf769035f266ba409f369579}{Get\+Post\+Command\+Return\+Dequeued\+Command} (void) const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmts_mail_box_a06a0abec903ca41c875d0bcdb8c53ebc}{}\index{mts\+Mail\+Box@{mts\+Mail\+Box}!mts\+Mail\+Box@{mts\+Mail\+Box}}
+\index{mts\+Mail\+Box@{mts\+Mail\+Box}!mts\+Mail\+Box@{mts\+Mail\+Box}}
+\subsubsection[{mts\+Mail\+Box}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Mail\+Box\+::mts\+Mail\+Box (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name, }
+\item[{size\+\_\+t}]{size, }
+\item[{{\bf mts\+Callable\+Void\+Base} $\ast$}]{post\+Command\+Queued\+Callable = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\label{classmts_mail_box_a06a0abec903ca41c875d0bcdb8c53ebc}
+\hypertarget{classmts_mail_box_ab20b400d82db33fd56a285771ac03ec2}{}\index{mts\+Mail\+Box@{mts\+Mail\+Box}!````~mts\+Mail\+Box@{$\sim$mts\+Mail\+Box}}
+\index{````~mts\+Mail\+Box@{$\sim$mts\+Mail\+Box}!mts\+Mail\+Box@{mts\+Mail\+Box}}
+\subsubsection[{$\sim$mts\+Mail\+Box}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Mail\+Box\+::$\sim$mts\+Mail\+Box (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classmts_mail_box_ab20b400d82db33fd56a285771ac03ec2}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classmts_mail_box_ab6a23137faacef309d53a0b3ffc985a8}{}\index{mts\+Mail\+Box@{mts\+Mail\+Box}!Execute\+Next@{Execute\+Next}}
+\index{Execute\+Next@{Execute\+Next}!mts\+Mail\+Box@{mts\+Mail\+Box}}
+\subsubsection[{Execute\+Next}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Mail\+Box\+::\+Execute\+Next (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classmts_mail_box_ab6a23137faacef309d53a0b3ffc985a8}
+Execute the oldest command queued. \hypertarget{classmts_mail_box_aadf082bf9196ca93576599fd23cab55c}{}\index{mts\+Mail\+Box@{mts\+Mail\+Box}!Get\+Name@{Get\+Name}}
+\index{Get\+Name@{Get\+Name}!mts\+Mail\+Box@{mts\+Mail\+Box}}
+\subsubsection[{Get\+Name}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string\& mts\+Mail\+Box\+::\+Get\+Name (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classmts_mail_box_aadf082bf9196ca93576599fd23cab55c}
+Get the mailbox\textquotesingle{}s name \hypertarget{classmts_mail_box_af703607d2b078aadcfb079027b2221cf}{}\index{mts\+Mail\+Box@{mts\+Mail\+Box}!Get\+Post\+Command\+Dequeued\+Command@{Get\+Post\+Command\+Dequeued\+Command}}
+\index{Get\+Post\+Command\+Dequeued\+Command@{Get\+Post\+Command\+Dequeued\+Command}!mts\+Mail\+Box@{mts\+Mail\+Box}}
+\subsubsection[{Get\+Post\+Command\+Dequeued\+Command}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+Command\+Void}$\ast$ mts\+Mail\+Box\+::\+Get\+Post\+Command\+Dequeued\+Command (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classmts_mail_box_af703607d2b078aadcfb079027b2221cf}
+\hypertarget{classmts_mail_box_a6951651caf769035f266ba409f369579}{}\index{mts\+Mail\+Box@{mts\+Mail\+Box}!Get\+Post\+Command\+Return\+Dequeued\+Command@{Get\+Post\+Command\+Return\+Dequeued\+Command}}
+\index{Get\+Post\+Command\+Return\+Dequeued\+Command@{Get\+Post\+Command\+Return\+Dequeued\+Command}!mts\+Mail\+Box@{mts\+Mail\+Box}}
+\subsubsection[{Get\+Post\+Command\+Return\+Dequeued\+Command}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+Command\+Void}$\ast$ mts\+Mail\+Box\+::\+Get\+Post\+Command\+Return\+Dequeued\+Command (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classmts_mail_box_a6951651caf769035f266ba409f369579}
+\hypertarget{classmts_mail_box_aabf221528804d0ff287eb3b1ffe78b20}{}\index{mts\+Mail\+Box@{mts\+Mail\+Box}!Is\+Empty@{Is\+Empty}}
+\index{Is\+Empty@{Is\+Empty}!mts\+Mail\+Box@{mts\+Mail\+Box}}
+\subsubsection[{Is\+Empty}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Mail\+Box\+::\+Is\+Empty (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classmts_mail_box_aabf221528804d0ff287eb3b1ffe78b20}
+Returns true if mailbox is empty. \hypertarget{classmts_mail_box_ab5c7ee34e956c7c79288018a353b1ce6}{}\index{mts\+Mail\+Box@{mts\+Mail\+Box}!Is\+Full@{Is\+Full}}
+\index{Is\+Full@{Is\+Full}!mts\+Mail\+Box@{mts\+Mail\+Box}}
+\subsubsection[{Is\+Full}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Mail\+Box\+::\+Is\+Full (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classmts_mail_box_ab5c7ee34e956c7c79288018a353b1ce6}
+Returns true if mailbox is full. \hypertarget{classmts_mail_box_a12272c44ebcb68cfcfaf59f18cda21d3}{}\index{mts\+Mail\+Box@{mts\+Mail\+Box}!Set\+Post\+Command\+Dequeued\+Command@{Set\+Post\+Command\+Dequeued\+Command}}
+\index{Set\+Post\+Command\+Dequeued\+Command@{Set\+Post\+Command\+Dequeued\+Command}!mts\+Mail\+Box@{mts\+Mail\+Box}}
+\subsubsection[{Set\+Post\+Command\+Dequeued\+Command}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Mail\+Box\+::\+Set\+Post\+Command\+Dequeued\+Command (
+\begin{DoxyParamCaption}
+\item[{{\bf mts\+Command\+Void} $\ast$}]{command}
+\end{DoxyParamCaption}
+)}\label{classmts_mail_box_a12272c44ebcb68cfcfaf59f18cda21d3}
+Set the command to be called after a blocking command is de-\/queued and executed. This can be used to call a trigger for event. The event handler on the client site can then raise a thread signal. \hypertarget{classmts_mail_box_a8a2d79ee98f9d4d87d595bc070a2b465}{}\index{mts\+Mail\+Box@{mts\+Mail\+Box}!Set\+Post\+Command\+Return\+Dequeued\+Command@{Set\+Post\+Command\+Return\+Dequeued\+Command}}
+\index{Set\+Post\+Command\+Return\+Dequeued\+Command@{Set\+Post\+Command\+Return\+Dequeued\+Command}!mts\+Mail\+Box@{mts\+Mail\+Box}}
+\subsubsection[{Set\+Post\+Command\+Return\+Dequeued\+Command}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Mail\+Box\+::\+Set\+Post\+Command\+Return\+Dequeued\+Command (
+\begin{DoxyParamCaption}
+\item[{{\bf mts\+Command\+Void} $\ast$}]{command}
+\end{DoxyParamCaption}
+)}\label{classmts_mail_box_a8a2d79ee98f9d4d87d595bc070a2b465}
+Set the command to be called after a blocking command with return value is de-\/queued and executed. This can be used to call a trigger for event. The event handler on the client site can then raise a thread signal. \hypertarget{classmts_mail_box_a1224e07589e01a5a1c80f3dcc5f3c14a}{}\index{mts\+Mail\+Box@{mts\+Mail\+Box}!Set\+Size@{Set\+Size}}
+\index{Set\+Size@{Set\+Size}!mts\+Mail\+Box@{mts\+Mail\+Box}}
+\subsubsection[{Set\+Size}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Mail\+Box\+::\+Set\+Size (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{size}
+\end{DoxyParamCaption}
+)}\label{classmts_mail_box_a1224e07589e01a5a1c80f3dcc5f3c14a}
+Resize the mailbox, i.\+e. resizes the underlying queue of commands. This command is not thread safe and shouldn\textquotesingle{}t be used if commands are already queued or can be queued. The Set\+Size methods deletes whatever command has been queued. \hypertarget{classmts_mail_box_abcaf2f8760c31ced98abbbff0f9374e4}{}\index{mts\+Mail\+Box@{mts\+Mail\+Box}!Write@{Write}}
+\index{Write@{Write}!mts\+Mail\+Box@{mts\+Mail\+Box}}
+\subsubsection[{Write}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Mail\+Box\+::\+Write (
+\begin{DoxyParamCaption}
+\item[{{\bf mts\+Command\+Base} $\ast$}]{command}
+\end{DoxyParamCaption}
+)}\label{classmts_mail_box_abcaf2f8760c31ced98abbbff0f9374e4}
+Write a command to the mailbox. If a post command queued command has been provided, the command is executed. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Multi\+Task/\hyperlink{mts_mail_box_8h}{mts\+Mail\+Box.\+h}\end{DoxyCompactItemize}

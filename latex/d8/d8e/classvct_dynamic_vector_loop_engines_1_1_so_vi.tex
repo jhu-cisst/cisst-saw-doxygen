@@ -1,0 +1,70 @@
+\hypertarget{classvct_dynamic_vector_loop_engines_1_1_so_vi}{}\section{vct\+Dynamic\+Vector\+Loop\+Engines\+:\+:So\+Vi$<$ \+\_\+incremental\+Operation\+Type, \+\_\+element\+Operation\+Type $>$ Class Template Reference}
+\label{classvct_dynamic_vector_loop_engines_1_1_so_vi}\index{vct\+Dynamic\+Vector\+Loop\+Engines\+::\+So\+Vi$<$ \+\_\+incremental\+Operation\+Type, \+\_\+element\+Operation\+Type $>$@{vct\+Dynamic\+Vector\+Loop\+Engines\+::\+So\+Vi$<$ \+\_\+incremental\+Operation\+Type, \+\_\+element\+Operation\+Type $>$}}
+
+
+Implement operation of the form $s_o = op_{incr}(op(v_i))$ for dynamic vectors.  
+
+
+
+
+{\ttfamily \#include $<$vct\+Dynamic\+Vector\+Loop\+Engines.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \+\_\+incremental\+Operation\+Type\+::\+Output\+Type \hyperlink{classvct_dynamic_vector_loop_engines_1_1_so_vi_a0e42560add0a15a5c8722aee8a9aa78c}{Output\+Type}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class \+\_\+input\+Vector\+Type $>$ }\\static \hyperlink{classvct_dynamic_vector_loop_engines_1_1_so_vi_a0e42560add0a15a5c8722aee8a9aa78c}{Output\+Type} \hyperlink{classvct_dynamic_vector_loop_engines_1_1_so_vi_af025608cd64ae1471ffeb1ef6f842631}{Run} (const \+\_\+input\+Vector\+Type \&input\+Vector)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class \+\_\+incremental\+Operation\+Type, class \+\_\+element\+Operation\+Type$>$class vct\+Dynamic\+Vector\+Loop\+Engines\+::\+So\+Vi$<$ \+\_\+incremental\+Operation\+Type, \+\_\+element\+Operation\+Type $>$}
+
+Implement operation of the form $s_o = op_{incr}(op(v_i))$ for dynamic vectors. 
+
+This class uses a loop to perform incremental unary vector operations of the form
+
+\[ s_o = \mathrm{op_{incr}(\mathrm{op}(v_i))} \]
+
+where $v_i$ is the input vector and $s_o$ is the scalar output. {\itshape op} stands for the unary operation performed elementwise on $v_i$ and whose result are used incrementally as input for $op_{incr}$. For a vector of size 3, the result is $s_o = op_{incr}(op_{incr}(op(v[1]), op(v[0])), op(v[2])) $.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+element\+Operation\+Type} & The type of the unary operation.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classvct_dynamic_vector_loop_engines}{vct\+Dynamic\+Vector\+Loop\+Engines} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classvct_dynamic_vector_loop_engines_1_1_so_vi_a0e42560add0a15a5c8722aee8a9aa78c}{}\index{vct\+Dynamic\+Vector\+Loop\+Engines\+::\+So\+Vi@{vct\+Dynamic\+Vector\+Loop\+Engines\+::\+So\+Vi}!Output\+Type@{Output\+Type}}
+\index{Output\+Type@{Output\+Type}!vct\+Dynamic\+Vector\+Loop\+Engines\+::\+So\+Vi@{vct\+Dynamic\+Vector\+Loop\+Engines\+::\+So\+Vi}}
+\subsubsection[{Output\+Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+incremental\+Operation\+Type , class \+\_\+element\+Operation\+Type $>$ typedef \+\_\+incremental\+Operation\+Type\+::\+Output\+Type {\bf vct\+Dynamic\+Vector\+Loop\+Engines\+::\+So\+Vi}$<$ \+\_\+incremental\+Operation\+Type, \+\_\+element\+Operation\+Type $>$\+::{\bf Output\+Type}}\label{classvct_dynamic_vector_loop_engines_1_1_so_vi_a0e42560add0a15a5c8722aee8a9aa78c}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classvct_dynamic_vector_loop_engines_1_1_so_vi_af025608cd64ae1471ffeb1ef6f842631}{}\index{vct\+Dynamic\+Vector\+Loop\+Engines\+::\+So\+Vi@{vct\+Dynamic\+Vector\+Loop\+Engines\+::\+So\+Vi}!Run@{Run}}
+\index{Run@{Run}!vct\+Dynamic\+Vector\+Loop\+Engines\+::\+So\+Vi@{vct\+Dynamic\+Vector\+Loop\+Engines\+::\+So\+Vi}}
+\subsubsection[{Run}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+incremental\+Operation\+Type , class \+\_\+element\+Operation\+Type $>$ template$<$class \+\_\+input\+Vector\+Type $>$ static {\bf Output\+Type} {\bf vct\+Dynamic\+Vector\+Loop\+Engines\+::\+So\+Vi}$<$ \+\_\+incremental\+Operation\+Type, \+\_\+element\+Operation\+Type $>$\+::Run (
+\begin{DoxyParamCaption}
+\item[{const \+\_\+input\+Vector\+Type \&}]{input\+Vector}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classvct_dynamic_vector_loop_engines_1_1_so_vi_af025608cd64ae1471ffeb1ef6f842631}
+Unroll the loop
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+Vector} & The input vector. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Vector/\hyperlink{vct_dynamic_vector_loop_engines_8h}{vct\+Dynamic\+Vector\+Loop\+Engines.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,98 @@
+\hypertarget{classsvl_filter_disparity_map_to_surface}{}\section{svl\+Filter\+Disparity\+Map\+To\+Surface Class Reference}
+\label{classsvl_filter_disparity_map_to_surface}\index{svl\+Filter\+Disparity\+Map\+To\+Surface@{svl\+Filter\+Disparity\+Map\+To\+Surface}}
+
+
+{\ttfamily \#include $<$svl\+Filter\+Disparity\+Map\+To\+Surface.\+h$>$}
+
+Inheritance diagram for svl\+Filter\+Disparity\+Map\+To\+Surface\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{dc/df1/classsvl_filter_disparity_map_to_surface}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsvl_filter_disparity_map_to_surface_af0416e86b3cdf61170a11ee63968bb28}{svl\+Filter\+Disparity\+Map\+To\+Surface} ()
+\item 
+int \hyperlink{classsvl_filter_disparity_map_to_surface_a21180672d1dc7fcf7eaef2656c0a56c0}{Set\+Camera\+Geometry} (const \hyperlink{classsvl_camera_geometry}{svl\+Camera\+Geometry} \&geometry)
+\item 
+int \hyperlink{classsvl_filter_disparity_map_to_surface_adcf2a1aaac3f0810de11ba63d3655326}{Set\+R\+O\+I} (const \hyperlink{structsvl_rect}{svl\+Rect} \&rect)
+\item 
+int \hyperlink{classsvl_filter_disparity_map_to_surface_a86d309b8caa98415ca8017a4938e8d4e}{Set\+R\+O\+I} (int left, int top, int right, int bottom)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual int \hyperlink{classsvl_filter_disparity_map_to_surface_a33074af25e31cb2cd65764ad3bb8c0a5}{Initialize} (\hyperlink{classsvl_sample}{svl\+Sample} $\ast$sync\+Input, \hyperlink{classsvl_sample}{svl\+Sample} $\ast$\&sync\+Output)
+\item 
+virtual int \hyperlink{classsvl_filter_disparity_map_to_surface_adf9e185752aab6378d4d0e9836232dd8}{Process} (\hyperlink{structsvl_proc_info}{svl\+Proc\+Info} $\ast$proc\+Info, \hyperlink{classsvl_sample}{svl\+Sample} $\ast$sync\+Input, \hyperlink{classsvl_sample}{svl\+Sample} $\ast$\&sync\+Output)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classsvl_filter_disparity_map_to_surface_af0416e86b3cdf61170a11ee63968bb28}{}\index{svl\+Filter\+Disparity\+Map\+To\+Surface@{svl\+Filter\+Disparity\+Map\+To\+Surface}!svl\+Filter\+Disparity\+Map\+To\+Surface@{svl\+Filter\+Disparity\+Map\+To\+Surface}}
+\index{svl\+Filter\+Disparity\+Map\+To\+Surface@{svl\+Filter\+Disparity\+Map\+To\+Surface}!svl\+Filter\+Disparity\+Map\+To\+Surface@{svl\+Filter\+Disparity\+Map\+To\+Surface}}
+\subsubsection[{svl\+Filter\+Disparity\+Map\+To\+Surface}]{\setlength{\rightskip}{0pt plus 5cm}svl\+Filter\+Disparity\+Map\+To\+Surface\+::svl\+Filter\+Disparity\+Map\+To\+Surface (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classsvl_filter_disparity_map_to_surface_af0416e86b3cdf61170a11ee63968bb28}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classsvl_filter_disparity_map_to_surface_a33074af25e31cb2cd65764ad3bb8c0a5}{}\index{svl\+Filter\+Disparity\+Map\+To\+Surface@{svl\+Filter\+Disparity\+Map\+To\+Surface}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!svl\+Filter\+Disparity\+Map\+To\+Surface@{svl\+Filter\+Disparity\+Map\+To\+Surface}}
+\subsubsection[{Initialize}]{\setlength{\rightskip}{0pt plus 5cm}virtual int svl\+Filter\+Disparity\+Map\+To\+Surface\+::\+Initialize (
+\begin{DoxyParamCaption}
+\item[{{\bf svl\+Sample} $\ast$}]{sync\+Input, }
+\item[{{\bf svl\+Sample} $\ast$\&}]{sync\+Output}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classsvl_filter_disparity_map_to_surface_a33074af25e31cb2cd65764ad3bb8c0a5}
+
+
+Implements \hyperlink{classsvl_filter_base_ac8eddcd9336c2b381facc8fb372e3bfb}{svl\+Filter\+Base}.
+
+\hypertarget{classsvl_filter_disparity_map_to_surface_adf9e185752aab6378d4d0e9836232dd8}{}\index{svl\+Filter\+Disparity\+Map\+To\+Surface@{svl\+Filter\+Disparity\+Map\+To\+Surface}!Process@{Process}}
+\index{Process@{Process}!svl\+Filter\+Disparity\+Map\+To\+Surface@{svl\+Filter\+Disparity\+Map\+To\+Surface}}
+\subsubsection[{Process}]{\setlength{\rightskip}{0pt plus 5cm}virtual int svl\+Filter\+Disparity\+Map\+To\+Surface\+::\+Process (
+\begin{DoxyParamCaption}
+\item[{{\bf svl\+Proc\+Info} $\ast$}]{proc\+Info, }
+\item[{{\bf svl\+Sample} $\ast$}]{sync\+Input, }
+\item[{{\bf svl\+Sample} $\ast$\&}]{sync\+Output}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classsvl_filter_disparity_map_to_surface_adf9e185752aab6378d4d0e9836232dd8}
+
+
+Implements \hyperlink{classsvl_filter_base_aaff77d711088384d00e717fb4ec88aab}{svl\+Filter\+Base}.
+
+\hypertarget{classsvl_filter_disparity_map_to_surface_a21180672d1dc7fcf7eaef2656c0a56c0}{}\index{svl\+Filter\+Disparity\+Map\+To\+Surface@{svl\+Filter\+Disparity\+Map\+To\+Surface}!Set\+Camera\+Geometry@{Set\+Camera\+Geometry}}
+\index{Set\+Camera\+Geometry@{Set\+Camera\+Geometry}!svl\+Filter\+Disparity\+Map\+To\+Surface@{svl\+Filter\+Disparity\+Map\+To\+Surface}}
+\subsubsection[{Set\+Camera\+Geometry}]{\setlength{\rightskip}{0pt plus 5cm}int svl\+Filter\+Disparity\+Map\+To\+Surface\+::\+Set\+Camera\+Geometry (
+\begin{DoxyParamCaption}
+\item[{const {\bf svl\+Camera\+Geometry} \&}]{geometry}
+\end{DoxyParamCaption}
+)}\label{classsvl_filter_disparity_map_to_surface_a21180672d1dc7fcf7eaef2656c0a56c0}
+\hypertarget{classsvl_filter_disparity_map_to_surface_adcf2a1aaac3f0810de11ba63d3655326}{}\index{svl\+Filter\+Disparity\+Map\+To\+Surface@{svl\+Filter\+Disparity\+Map\+To\+Surface}!Set\+R\+O\+I@{Set\+R\+O\+I}}
+\index{Set\+R\+O\+I@{Set\+R\+O\+I}!svl\+Filter\+Disparity\+Map\+To\+Surface@{svl\+Filter\+Disparity\+Map\+To\+Surface}}
+\subsubsection[{Set\+R\+O\+I}]{\setlength{\rightskip}{0pt plus 5cm}int svl\+Filter\+Disparity\+Map\+To\+Surface\+::\+Set\+R\+O\+I (
+\begin{DoxyParamCaption}
+\item[{const {\bf svl\+Rect} \&}]{rect}
+\end{DoxyParamCaption}
+)}\label{classsvl_filter_disparity_map_to_surface_adcf2a1aaac3f0810de11ba63d3655326}
+\hypertarget{classsvl_filter_disparity_map_to_surface_a86d309b8caa98415ca8017a4938e8d4e}{}\index{svl\+Filter\+Disparity\+Map\+To\+Surface@{svl\+Filter\+Disparity\+Map\+To\+Surface}!Set\+R\+O\+I@{Set\+R\+O\+I}}
+\index{Set\+R\+O\+I@{Set\+R\+O\+I}!svl\+Filter\+Disparity\+Map\+To\+Surface@{svl\+Filter\+Disparity\+Map\+To\+Surface}}
+\subsubsection[{Set\+R\+O\+I}]{\setlength{\rightskip}{0pt plus 5cm}int svl\+Filter\+Disparity\+Map\+To\+Surface\+::\+Set\+R\+O\+I (
+\begin{DoxyParamCaption}
+\item[{int}]{left, }
+\item[{int}]{top, }
+\item[{int}]{right, }
+\item[{int}]{bottom}
+\end{DoxyParamCaption}
+)}\label{classsvl_filter_disparity_map_to_surface_a86d309b8caa98415ca8017a4938e8d4e}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Stereo\+Vision/\hyperlink{svl_filter_disparity_map_to_surface_8h}{svl\+Filter\+Disparity\+Map\+To\+Surface.\+h}\end{DoxyCompactItemize}

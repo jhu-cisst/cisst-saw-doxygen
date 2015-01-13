@@ -1,0 +1,41 @@
+\hypertarget{nmr_registration_rigid_8h}{}\section{/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Numerical/nmr\+Registration\+Rigid.h File Reference}
+\label{nmr_registration_rigid_8h}\index{/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Numerical/nmr\+Registration\+Rigid.\+h@{/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Numerical/nmr\+Registration\+Rigid.\+h}}
+{\ttfamily \#include $<$cisst\+Vector/vct\+Types.\+h$>$}\\*
+{\ttfamily \#include $<$cisst\+Numerical/nmr\+Export.\+h$>$}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class \+\_\+vector\+Owner\+Type $>$ }\\bool \hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} \hyperlink{nmr_registration_rigid_8h_a63e248fb5cbfec128c77671c15d73a64}{nmr\+Registration\+Rigid} (\hyperlink{classvct_dynamic_const_vector_base}{vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \hyperlink{vct_fixed_size_vector_types_8h_a3af82acdbf4eeb73c551909240b106ea}{vct3} $>$ \&data\+Set1, \hyperlink{classvct_dynamic_const_vector_base}{vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \hyperlink{vct_fixed_size_vector_types_8h_a3af82acdbf4eeb73c551909240b106ea}{vct3} $>$ \&data\+Set2, \hyperlink{vct_transformation_types_8h_a81feda0a02c2d1bc26e5553f409fed20}{vct\+Frm3} \&transform, double $\ast$fre=0)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{nmr_registration_rigid_8h_a63e248fb5cbfec128c77671c15d73a64}{}\index{nmr\+Registration\+Rigid.\+h@{nmr\+Registration\+Rigid.\+h}!nmr\+Registration\+Rigid@{nmr\+Registration\+Rigid}}
+\index{nmr\+Registration\+Rigid@{nmr\+Registration\+Rigid}!nmr\+Registration\+Rigid.\+h@{nmr\+Registration\+Rigid.\+h}}
+\subsubsection[{nmr\+Registration\+Rigid}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type $>$ bool {\bf C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} nmr\+Registration\+Rigid (
+\begin{DoxyParamCaption}
+\item[{{\bf vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, {\bf vct3} $>$ \&}]{data\+Set1, }
+\item[{{\bf vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, {\bf vct3} $>$ \&}]{data\+Set2, }
+\item[{{\bf vct\+Frm3} \&}]{transform, }
+\item[{double $\ast$}]{fre = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\label{nmr_registration_rigid_8h_a63e248fb5cbfec128c77671c15d73a64}
+Perform a paired-\/point rigid registration using the S\+V\+D method proposed by Arun(1987) and modified by Umeyama(1991).
+
+
+\begin{DoxyParams}{Parameters}
+{\em data\+Set1} & The first set of fiducial points \\
+\hline
+{\em data\+Set2} & The second set of fiducial points \\
+\hline
+{\em transform} & The computed transformation from data\+Set1 to data\+Set2 \\
+\hline
+{\em fre} & Pointer to location to store Fiducial Registration Error (F\+R\+E), if not 0. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if registration successful
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+This function is templated so that it will work when the data sets are of type \hyperlink{classvct_dynamic_const_vector_ref}{vct\+Dynamic\+Const\+Vector\+Ref} or vct\+Dynamic\+Const\+Vector. The explicit template instantiations are in the cpp file. 
+\end{DoxyNote}

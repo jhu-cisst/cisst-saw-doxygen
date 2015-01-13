@@ -1,0 +1,289 @@
+\hypertarget{classrob_kinematics}{}\section{rob\+Kinematics Class Reference}
+\label{classrob_kinematics}\index{rob\+Kinematics@{rob\+Kinematics}}
+
+
+{\ttfamily \#include $<$rob\+Kinematics.\+h$>$}
+
+Inheritance diagram for rob\+Kinematics\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{db/d3c/classrob_kinematics}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classrob_kinematics_a298703e920da583d1f6aa60c8f65ca78}{Convention} \{ \\*
+\hyperlink{classrob_kinematics_a298703e920da583d1f6aa60c8f65ca78ac39fd63d5dfdc5944393f75571e92ddc}{U\+N\+D\+E\+F\+I\+N\+E\+D}, 
+\hyperlink{classrob_kinematics_a298703e920da583d1f6aa60c8f65ca78ade9e8907f05b769643a03cab1090c630}{S\+T\+A\+N\+D\+A\+R\+D\+\_\+\+D\+H}, 
+\hyperlink{classrob_kinematics_a298703e920da583d1f6aa60c8f65ca78a4b835a1beb57c12542c4d946dfc33f85}{M\+O\+D\+I\+F\+I\+E\+D\+\_\+\+D\+H}, 
+\hyperlink{classrob_kinematics_a298703e920da583d1f6aa60c8f65ca78a0d17a6e253b23bdcc3f7867e43e2917a}{H\+A\+Y\+A\+T\+I}, 
+\\*
+\hyperlink{classrob_kinematics_a298703e920da583d1f6aa60c8f65ca78a983c7e2782aebd4085826955c16e1a2e}{M\+O\+D\+I\+F\+I\+E\+D\+\_\+\+H\+A\+Y\+A\+T\+I}
+ \}
+\begin{DoxyCompactList}\small\item\em Kinematics convention. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classrob_kinematics_a0f56a8fda948108fb7e3319d9f252264}{rob\+Kinematics} (\hyperlink{classrob_kinematics_a298703e920da583d1f6aa60c8f65ca78}{rob\+Kinematics\+::\+Convention} convention)
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{classrob_kinematics_a958b1b337dd1dfc9529af6756803f1a5}{rob\+Kinematics} (const \hyperlink{classrob_joint}{rob\+Joint} \&joint, \hyperlink{classrob_kinematics_a298703e920da583d1f6aa60c8f65ca78}{rob\+Kinematics\+::\+Convention} convention)
+\begin{DoxyCompactList}\small\item\em Overloaded constructor. \end{DoxyCompactList}\item 
+virtual \hyperlink{classrob_kinematics_aecaa7ea272fa769c80e322a4e85d9e52}{$\sim$rob\+Kinematics} ()
+\item 
+\hyperlink{classrob_kinematics_a298703e920da583d1f6aa60c8f65ca78}{rob\+Kinematics\+::\+Convention} \hyperlink{classrob_kinematics_a9f60e9d388339a67afda4ea108e58b0b}{Get\+Convention} () const 
+\begin{DoxyCompactList}\small\item\em Return the kinematics convention. \end{DoxyCompactList}\item 
+\hyperlink{classrob_joint_a6656cb0c2f8c9aadf0c446abd6bebed7}{rob\+Kinematics\+::\+Errno} \hyperlink{classrob_kinematics_a914647c840e02cc10eaa1fe90dc29ac9}{Read} (std\+::istream \&is)
+\begin{DoxyCompactList}\small\item\em Read the kinematics parameters and joints parameters. \end{DoxyCompactList}\item 
+\hyperlink{classrob_joint_a6656cb0c2f8c9aadf0c446abd6bebed7}{rob\+Kinematics\+::\+Errno} \hyperlink{classrob_kinematics_a0d286834b4f10f80da0af230aadaf154}{Write} (std\+::ostream \&os) const 
+\begin{DoxyCompactList}\small\item\em Write the kinematics parameters and joints parameters. \end{DoxyCompactList}\item 
+virtual \hyperlink{classvct_frame4x4}{vct\+Frame4x4}$<$ double $>$ \hyperlink{classrob_kinematics_a1307677fa8f4846a62da3bf934efb9d6}{Forward\+Kinematics} (double q) const =0
+\begin{DoxyCompactList}\small\item\em Get the position and orientation of the link. \end{DoxyCompactList}\item 
+virtual \hyperlink{classvct_matrix_rotation3}{vct\+Matrix\+Rotation3}$<$ double $>$ \hyperlink{classrob_kinematics_ada1e684fd3b33fb8c0cfbf32f4099e83}{Orientation} (double q) const =0
+\begin{DoxyCompactList}\small\item\em Get the orientation of the link. \end{DoxyCompactList}\item 
+virtual \hyperlink{classvct_fixed_size_vector}{vct\+Fixed\+Size\+Vector}$<$ double, 3 $>$ \hyperlink{classrob_kinematics_a29ea3c6823445630d7d84cc38887fb3a}{P\+Star} () const =0
+\begin{DoxyCompactList}\small\item\em Return the position of the next (distal) link coordinate frame. \end{DoxyCompactList}\item 
+virtual \hyperlink{classrob_kinematics}{rob\+Kinematics} $\ast$ \hyperlink{classrob_kinematics_a01c1be909edee0615544e081da5ee721}{Clone} () const =0
+\begin{DoxyCompactList}\small\item\em Kinematics objects must be able to clone themselves. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classrob_kinematics}{rob\+Kinematics} $\ast$ \hyperlink{classrob_kinematics_ab9d416cf2f00db0c67d107b9ecc28623}{Instantiate} (const std\+::string \&type)
+\begin{DoxyCompactList}\small\item\em Instantiate a kinematic convention by name. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classrob_kinematics_a0bcf44445361f6c764cd0565c8f6b3c0}{Read\+Parameters} (std\+::istream \&is)=0
+\begin{DoxyCompactList}\small\item\em Read the parameters of the kinematics convention. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classrob_kinematics_afbfe67b8baaed6fdee85bef681f195e1}{Write\+Parameters} (std\+::ostream \&os) const =0
+\begin{DoxyCompactList}\small\item\em Write the parameters of the kinematics convention. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classrob_kinematics_a298703e920da583d1f6aa60c8f65ca78}{}\index{rob\+Kinematics@{rob\+Kinematics}!Convention@{Convention}}
+\index{Convention@{Convention}!rob\+Kinematics@{rob\+Kinematics}}
+\subsubsection[{Convention}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf rob\+Kinematics\+::\+Convention}}\label{classrob_kinematics_a298703e920da583d1f6aa60c8f65ca78}
+
+
+Kinematics convention. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{U\+N\+D\+E\+F\+I\+N\+E\+D@{U\+N\+D\+E\+F\+I\+N\+E\+D}!rob\+Kinematics@{rob\+Kinematics}}\index{rob\+Kinematics@{rob\+Kinematics}!U\+N\+D\+E\+F\+I\+N\+E\+D@{U\+N\+D\+E\+F\+I\+N\+E\+D}}\item[{\em 
+\hypertarget{classrob_kinematics_a298703e920da583d1f6aa60c8f65ca78ac39fd63d5dfdc5944393f75571e92ddc}{}U\+N\+D\+E\+F\+I\+N\+E\+D\label{classrob_kinematics_a298703e920da583d1f6aa60c8f65ca78ac39fd63d5dfdc5944393f75571e92ddc}
+}]\index{S\+T\+A\+N\+D\+A\+R\+D\+\_\+\+D\+H@{S\+T\+A\+N\+D\+A\+R\+D\+\_\+\+D\+H}!rob\+Kinematics@{rob\+Kinematics}}\index{rob\+Kinematics@{rob\+Kinematics}!S\+T\+A\+N\+D\+A\+R\+D\+\_\+\+D\+H@{S\+T\+A\+N\+D\+A\+R\+D\+\_\+\+D\+H}}\item[{\em 
+\hypertarget{classrob_kinematics_a298703e920da583d1f6aa60c8f65ca78ade9e8907f05b769643a03cab1090c630}{}S\+T\+A\+N\+D\+A\+R\+D\+\_\+\+D\+H\label{classrob_kinematics_a298703e920da583d1f6aa60c8f65ca78ade9e8907f05b769643a03cab1090c630}
+}]\index{M\+O\+D\+I\+F\+I\+E\+D\+\_\+\+D\+H@{M\+O\+D\+I\+F\+I\+E\+D\+\_\+\+D\+H}!rob\+Kinematics@{rob\+Kinematics}}\index{rob\+Kinematics@{rob\+Kinematics}!M\+O\+D\+I\+F\+I\+E\+D\+\_\+\+D\+H@{M\+O\+D\+I\+F\+I\+E\+D\+\_\+\+D\+H}}\item[{\em 
+\hypertarget{classrob_kinematics_a298703e920da583d1f6aa60c8f65ca78a4b835a1beb57c12542c4d946dfc33f85}{}M\+O\+D\+I\+F\+I\+E\+D\+\_\+\+D\+H\label{classrob_kinematics_a298703e920da583d1f6aa60c8f65ca78a4b835a1beb57c12542c4d946dfc33f85}
+}]\index{H\+A\+Y\+A\+T\+I@{H\+A\+Y\+A\+T\+I}!rob\+Kinematics@{rob\+Kinematics}}\index{rob\+Kinematics@{rob\+Kinematics}!H\+A\+Y\+A\+T\+I@{H\+A\+Y\+A\+T\+I}}\item[{\em 
+\hypertarget{classrob_kinematics_a298703e920da583d1f6aa60c8f65ca78a0d17a6e253b23bdcc3f7867e43e2917a}{}H\+A\+Y\+A\+T\+I\label{classrob_kinematics_a298703e920da583d1f6aa60c8f65ca78a0d17a6e253b23bdcc3f7867e43e2917a}
+}]\index{M\+O\+D\+I\+F\+I\+E\+D\+\_\+\+H\+A\+Y\+A\+T\+I@{M\+O\+D\+I\+F\+I\+E\+D\+\_\+\+H\+A\+Y\+A\+T\+I}!rob\+Kinematics@{rob\+Kinematics}}\index{rob\+Kinematics@{rob\+Kinematics}!M\+O\+D\+I\+F\+I\+E\+D\+\_\+\+H\+A\+Y\+A\+T\+I@{M\+O\+D\+I\+F\+I\+E\+D\+\_\+\+H\+A\+Y\+A\+T\+I}}\item[{\em 
+\hypertarget{classrob_kinematics_a298703e920da583d1f6aa60c8f65ca78a983c7e2782aebd4085826955c16e1a2e}{}M\+O\+D\+I\+F\+I\+E\+D\+\_\+\+H\+A\+Y\+A\+T\+I\label{classrob_kinematics_a298703e920da583d1f6aa60c8f65ca78a983c7e2782aebd4085826955c16e1a2e}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classrob_kinematics_a0f56a8fda948108fb7e3319d9f252264}{}\index{rob\+Kinematics@{rob\+Kinematics}!rob\+Kinematics@{rob\+Kinematics}}
+\index{rob\+Kinematics@{rob\+Kinematics}!rob\+Kinematics@{rob\+Kinematics}}
+\subsubsection[{rob\+Kinematics}]{\setlength{\rightskip}{0pt plus 5cm}rob\+Kinematics\+::rob\+Kinematics (
+\begin{DoxyParamCaption}
+\item[{{\bf rob\+Kinematics\+::\+Convention}}]{convention}
+\end{DoxyParamCaption}
+)}\label{classrob_kinematics_a0f56a8fda948108fb7e3319d9f252264}
+
+
+Default constructor. 
+
+\hypertarget{classrob_kinematics_a958b1b337dd1dfc9529af6756803f1a5}{}\index{rob\+Kinematics@{rob\+Kinematics}!rob\+Kinematics@{rob\+Kinematics}}
+\index{rob\+Kinematics@{rob\+Kinematics}!rob\+Kinematics@{rob\+Kinematics}}
+\subsubsection[{rob\+Kinematics}]{\setlength{\rightskip}{0pt plus 5cm}rob\+Kinematics\+::rob\+Kinematics (
+\begin{DoxyParamCaption}
+\item[{const {\bf rob\+Joint} \&}]{joint, }
+\item[{{\bf rob\+Kinematics\+::\+Convention}}]{convention}
+\end{DoxyParamCaption}
+)}\label{classrob_kinematics_a958b1b337dd1dfc9529af6756803f1a5}
+
+
+Overloaded constructor. 
+
+\hypertarget{classrob_kinematics_aecaa7ea272fa769c80e322a4e85d9e52}{}\index{rob\+Kinematics@{rob\+Kinematics}!````~rob\+Kinematics@{$\sim$rob\+Kinematics}}
+\index{````~rob\+Kinematics@{$\sim$rob\+Kinematics}!rob\+Kinematics@{rob\+Kinematics}}
+\subsubsection[{$\sim$rob\+Kinematics}]{\setlength{\rightskip}{0pt plus 5cm}virtual rob\+Kinematics\+::$\sim$rob\+Kinematics (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classrob_kinematics_aecaa7ea272fa769c80e322a4e85d9e52}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classrob_kinematics_a01c1be909edee0615544e081da5ee721}{}\index{rob\+Kinematics@{rob\+Kinematics}!Clone@{Clone}}
+\index{Clone@{Clone}!rob\+Kinematics@{rob\+Kinematics}}
+\subsubsection[{Clone}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf rob\+Kinematics}$\ast$ rob\+Kinematics\+::\+Clone (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classrob_kinematics_a01c1be909edee0615544e081da5ee721}
+
+
+Kinematics objects must be able to clone themselves. 
+
+
+
+Implemented in \hyperlink{classrob_modified_hayati_ab90f7548fb3995ef41a0c2349ef9f7db}{rob\+Modified\+Hayati}, \hyperlink{classrob_hayati_a46b84e898c3df017074375c90cdac82b}{rob\+Hayati}, \hyperlink{classrob_d_h_ad172e4bc1d42a4298d9ee3ccd1c8169f}{rob\+D\+H}, and \hyperlink{classrob_modified_d_h_adfb8970548ddb3e3e4842c4f9bfbdb3a}{rob\+Modified\+D\+H}.
+
+\hypertarget{classrob_kinematics_a1307677fa8f4846a62da3bf934efb9d6}{}\index{rob\+Kinematics@{rob\+Kinematics}!Forward\+Kinematics@{Forward\+Kinematics}}
+\index{Forward\+Kinematics@{Forward\+Kinematics}!rob\+Kinematics@{rob\+Kinematics}}
+\subsubsection[{Forward\+Kinematics}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf vct\+Frame4x4}$<$double$>$ rob\+Kinematics\+::\+Forward\+Kinematics (
+\begin{DoxyParamCaption}
+\item[{double}]{q}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classrob_kinematics_a1307677fa8f4846a62da3bf934efb9d6}
+
+
+Get the position and orientation of the link. 
+
+Returns the position and orientation of the link with respect to the proximal link for a given joint vale. 
+\begin{DoxyParams}{Parameters}
+{\em joint} & The joint associated with the link \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The position and orientation associated with the D\+H parameters 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classrob_modified_hayati_abca1919e45c034490e890649cadbf1da}{rob\+Modified\+Hayati}, \hyperlink{classrob_hayati_ae29971dc55363ca5a80d68cfde5b12a1}{rob\+Hayati}, \hyperlink{classrob_d_h_a9af5ef66e5269ce07b75a892428cabdd}{rob\+D\+H}, and \hyperlink{classrob_modified_d_h_a05b59134f01d068b6e03c54443efa0f9}{rob\+Modified\+D\+H}.
+
+\hypertarget{classrob_kinematics_a9f60e9d388339a67afda4ea108e58b0b}{}\index{rob\+Kinematics@{rob\+Kinematics}!Get\+Convention@{Get\+Convention}}
+\index{Get\+Convention@{Get\+Convention}!rob\+Kinematics@{rob\+Kinematics}}
+\subsubsection[{Get\+Convention}]{\setlength{\rightskip}{0pt plus 5cm}{\bf rob\+Kinematics\+::\+Convention} rob\+Kinematics\+::\+Get\+Convention (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classrob_kinematics_a9f60e9d388339a67afda4ea108e58b0b}
+
+
+Return the kinematics convention. 
+
+\begin{DoxyReturn}{Returns}
+The D\+H convention\+: rob\+D\+H\+Standard or rob\+D\+H\+Modified 
+\end{DoxyReturn}
+\hypertarget{classrob_kinematics_ab9d416cf2f00db0c67d107b9ecc28623}{}\index{rob\+Kinematics@{rob\+Kinematics}!Instantiate@{Instantiate}}
+\index{Instantiate@{Instantiate}!rob\+Kinematics@{rob\+Kinematics}}
+\subsubsection[{Instantiate}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf rob\+Kinematics}$\ast$ rob\+Kinematics\+::\+Instantiate (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{type}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classrob_kinematics_ab9d416cf2f00db0c67d107b9ecc28623}
+
+
+Instantiate a kinematic convention by name. 
+
+\hypertarget{classrob_kinematics_ada1e684fd3b33fb8c0cfbf32f4099e83}{}\index{rob\+Kinematics@{rob\+Kinematics}!Orientation@{Orientation}}
+\index{Orientation@{Orientation}!rob\+Kinematics@{rob\+Kinematics}}
+\subsubsection[{Orientation}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf vct\+Matrix\+Rotation3}$<$double$>$ rob\+Kinematics\+::\+Orientation (
+\begin{DoxyParamCaption}
+\item[{double}]{q}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classrob_kinematics_ada1e684fd3b33fb8c0cfbf32f4099e83}
+
+
+Get the orientation of the link. 
+
+Returns the orientation of the link with respect to the proximal link for a given joint vale. 
+\begin{DoxyParams}{Parameters}
+{\em joint} & The joint associated with the link \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The orientation associated with the D\+H parameters 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classrob_modified_hayati_a53b44af7773748bf087062dec775acb9}{rob\+Modified\+Hayati}, \hyperlink{classrob_hayati_a1b06807f8d4ba90684e683ca361497b5}{rob\+Hayati}, \hyperlink{classrob_d_h_adcd73e6facecdcf4ba1972aaa93994a6}{rob\+D\+H}, and \hyperlink{classrob_modified_d_h_ae93da4e3532ede4f828053e6a19ddd8a}{rob\+Modified\+D\+H}.
+
+\hypertarget{classrob_kinematics_a29ea3c6823445630d7d84cc38887fb3a}{}\index{rob\+Kinematics@{rob\+Kinematics}!P\+Star@{P\+Star}}
+\index{P\+Star@{P\+Star}!rob\+Kinematics@{rob\+Kinematics}}
+\subsubsection[{P\+Star}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf vct\+Fixed\+Size\+Vector}$<$double,3$>$ rob\+Kinematics\+::\+P\+Star (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classrob_kinematics_a29ea3c6823445630d7d84cc38887fb3a}
+
+
+Return the position of the next (distal) link coordinate frame. 
+
+This method returns the \$X\+Y\+Z\$ coordinates of the origin of the distal link in the coordinate frame of the proximal link. \char`\"{}\+P\+Star\char`\"{} is not a good name for this but the literature uses \$ \{p\}$^\wedge$$\ast$ \$ to denote this value. \begin{DoxyReturn}{Returns}
+The position of the next coordinate frame wrt to the current frame 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classrob_modified_hayati_afb9d219d3eab91f0273d133368480153}{rob\+Modified\+Hayati}, \hyperlink{classrob_hayati_af306b60415e866f652784edd0bc5b944}{rob\+Hayati}, \hyperlink{classrob_d_h_ace414bb1d30d48e9d1d239e597921b65}{rob\+D\+H}, and \hyperlink{classrob_modified_d_h_a9cc8c123b2a4274181f15356875aea9e}{rob\+Modified\+D\+H}.
+
+\hypertarget{classrob_kinematics_a914647c840e02cc10eaa1fe90dc29ac9}{}\index{rob\+Kinematics@{rob\+Kinematics}!Read@{Read}}
+\index{Read@{Read}!rob\+Kinematics@{rob\+Kinematics}}
+\subsubsection[{Read}]{\setlength{\rightskip}{0pt plus 5cm}{\bf rob\+Kinematics\+::\+Errno} rob\+Kinematics\+::\+Read (
+\begin{DoxyParamCaption}
+\item[{std\+::istream \&}]{is}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classrob_kinematics_a914647c840e02cc10eaa1fe90dc29ac9}
+
+
+Read the kinematics parameters and joints parameters. 
+
+
+
+Reimplemented from \hyperlink{classrob_joint_a254cec6739e7d0c9233d46064870944a}{rob\+Joint}.
+
+\hypertarget{classrob_kinematics_a0bcf44445361f6c764cd0565c8f6b3c0}{}\index{rob\+Kinematics@{rob\+Kinematics}!Read\+Parameters@{Read\+Parameters}}
+\index{Read\+Parameters@{Read\+Parameters}!rob\+Kinematics@{rob\+Kinematics}}
+\subsubsection[{Read\+Parameters}]{\setlength{\rightskip}{0pt plus 5cm}virtual void rob\+Kinematics\+::\+Read\+Parameters (
+\begin{DoxyParamCaption}
+\item[{std\+::istream \&}]{is}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}\label{classrob_kinematics_a0bcf44445361f6c764cd0565c8f6b3c0}
+
+
+Read the parameters of the kinematics convention. 
+
+
+
+Implemented in \hyperlink{classrob_modified_hayati_aabe09b18ecd7bf23a466d9855f17a431}{rob\+Modified\+Hayati}, \hyperlink{classrob_hayati_affd3856ec8770008d0757ddc1f9ce40d}{rob\+Hayati}, \hyperlink{classrob_d_h_a3abbc9203457b81907fae00e28807bd4}{rob\+D\+H}, and \hyperlink{classrob_modified_d_h_a3c20511f3e17ef9e0f444fa1081eeb5b}{rob\+Modified\+D\+H}.
+
+\hypertarget{classrob_kinematics_a0d286834b4f10f80da0af230aadaf154}{}\index{rob\+Kinematics@{rob\+Kinematics}!Write@{Write}}
+\index{Write@{Write}!rob\+Kinematics@{rob\+Kinematics}}
+\subsubsection[{Write}]{\setlength{\rightskip}{0pt plus 5cm}{\bf rob\+Kinematics\+::\+Errno} rob\+Kinematics\+::\+Write (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{os}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{classrob_kinematics_a0d286834b4f10f80da0af230aadaf154}
+
+
+Write the kinematics parameters and joints parameters. 
+
+
+
+Reimplemented from \hyperlink{classrob_joint_ab15a6e370553cf232a4d49ca40bca0b2}{rob\+Joint}.
+
+\hypertarget{classrob_kinematics_afbfe67b8baaed6fdee85bef681f195e1}{}\index{rob\+Kinematics@{rob\+Kinematics}!Write\+Parameters@{Write\+Parameters}}
+\index{Write\+Parameters@{Write\+Parameters}!rob\+Kinematics@{rob\+Kinematics}}
+\subsubsection[{Write\+Parameters}]{\setlength{\rightskip}{0pt plus 5cm}virtual void rob\+Kinematics\+::\+Write\+Parameters (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{os}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}\label{classrob_kinematics_afbfe67b8baaed6fdee85bef681f195e1}
+
+
+Write the parameters of the kinematics convention. 
+
+
+
+Implemented in \hyperlink{classrob_modified_hayati_a3e487aaa0708be391310862b0579d282}{rob\+Modified\+Hayati}, \hyperlink{classrob_hayati_afe4cc7030ab2d8a249269afc4b7822c9}{rob\+Hayati}, \hyperlink{classrob_d_h_abb1b7454fcbe0b2ac14de4fd9d5a842f}{rob\+D\+H}, and \hyperlink{classrob_modified_d_h_a915ba9c48ba16f44b0745e5be810a993}{rob\+Modified\+D\+H}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Robot/\hyperlink{rob_kinematics_8h}{rob\+Kinematics.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,714 @@
+\hypertarget{classmts_p_i_d}{}\section{mts\+P\+I\+D Class Reference}
+\label{classmts_p_i_d}\index{mts\+P\+I\+D@{mts\+P\+I\+D}}
+
+
+Always include last.  
+
+
+
+
+{\ttfamily \#include $<$mts\+P\+I\+D.\+h$>$}
+
+Inheritance diagram for mts\+P\+I\+D\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=6.000000cm]{de/d85/classmts_p_i_d}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structmts_p_i_d_1_1_interface_robot_torque}{Interface\+Robot\+Torque}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmts_p_i_d_ae6dfe083c5e5a696a6b005fda4d6cca6}{mts\+P\+I\+D} (const std\+::string \&taskname, double period)
+\begin{DoxyCompactList}\small\item\em Main constructor. \end{DoxyCompactList}\item 
+\hyperlink{classmts_p_i_d_a5382b49f6fbf4bdf80eae85e23b92abf}{mts\+P\+I\+D} (const \hyperlink{classmts_task_periodic_constructor_arg}{mts\+Task\+Periodic\+Constructor\+Arg} \&arg)
+\item 
+\hyperlink{classmts_p_i_d_abf4c7e2ceab5df1303764568d7234c5b}{$\sim$mts\+P\+I\+D} ()
+\item 
+void \hyperlink{classmts_p_i_d_a5a41aeb520a9007ecc12a2abded5bac5}{Configure} (const std\+::string \&filename)
+\begin{DoxyCompactList}\small\item\em Configure P\+I\+D gains \& params. \end{DoxyCompactList}\item 
+void \hyperlink{classmts_p_i_d_a2cea3d1dbc3ab7218ee00d67216a3c95}{Startup} (void)
+\item 
+void \hyperlink{classmts_p_i_d_a43f5e34d7a45a19fb9f2fa8685303e2e}{Run} (void)
+\item 
+void \hyperlink{classmts_p_i_d_acfd09cc46b2def93f7df99f2bd68bb49}{Cleanup} (void)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classmts_p_i_d_a3030a3b45b3705758cd6eb48d9983167}{Reset\+Controller} (void)
+\begin{DoxyCompactList}\small\item\em Reset encoder, clear e/ed/ei value. \end{DoxyCompactList}\item 
+void \hyperlink{classmts_p_i_d_a1fd56ab7aabfbf9e3d5a37bf3cda48b9}{Set\+Desired\+Positions} (const \hyperlink{classprm_position_joint_set}{prm\+Position\+Joint\+Set} \&prm\+Pos)
+\begin{DoxyCompactList}\small\item\em Set desired joint position. \end{DoxyCompactList}\item 
+void \hyperlink{classmts_p_i_d_a760420b20627be81350ef7cd096efe70}{Set\+Desired\+Torques} (const \hyperlink{classprm_force_torque_joint_set}{prm\+Force\+Torque\+Joint\+Set} \&prm\+Trq)
+\item 
+void \hyperlink{classmts_p_i_d_a8d6efcccfaa3a7a27dcb0a319c02723d}{Setup\+Interfaces} (void)
+\item 
+void \hyperlink{classmts_p_i_d_a0f04c1c727087cc07110a1d45c4e8d08}{Enable} (const bool \&enable)
+\item 
+void \hyperlink{classmts_p_i_d_a075d4b5fa191ff9a50b5bd0b54155428}{Enable\+Torque\+Mode} (const \hyperlink{vct_dynamic_vector_types_8h_aeb2237c134aee3769198bd9d55c8a9e0}{vct\+Bool\+Vec} \&enable)
+\item 
+void \hyperlink{classmts_p_i_d_a492f7d1e52d94f8b42ddf727482f489c}{Set\+Tracking\+Error\+Tolerances} (const \hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \&tolerances)
+\item 
+void \hyperlink{classmts_p_i_d_a31ffe826ec92dd565bc33f797567e371}{Set\+P\+Gain} (const \hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \&pgain)
+\begin{DoxyCompactList}\small\item\em Set controller P gains. \end{DoxyCompactList}\item 
+void \hyperlink{classmts_p_i_d_afadd530f96fa2d69c8140482680f3b61}{Set\+D\+Gain} (const \hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \&dgain)
+\begin{DoxyCompactList}\small\item\em Set controller D gains. \end{DoxyCompactList}\item 
+void \hyperlink{classmts_p_i_d_a286f0cdbc59708eac21f8635105f0dd0}{Set\+I\+Gain} (const \hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \&igain)
+\begin{DoxyCompactList}\small\item\em Set controller I gains. \end{DoxyCompactList}\item 
+void \hyperlink{classmts_p_i_d_a15bba897773af7b17971ddbddfa4c8f4}{Set\+Joint\+Lower\+Limit} (const \hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \&lower\+Limit)
+\begin{DoxyCompactList}\small\item\em Set joint lower limit. \end{DoxyCompactList}\item 
+void \hyperlink{classmts_p_i_d_abfb71b1931f3664e87729f2e2b22be55}{Set\+Joint\+Upper\+Limit} (const \hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \&upper\+Limit)
+\begin{DoxyCompactList}\small\item\em Set joint upper limit. \end{DoxyCompactList}\item 
+void \hyperlink{classmts_p_i_d_a93201139fc34fbcb71046ed27e618d34}{Set\+Min\+I\+Error\+Limit} (const \hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \&iminlim)
+\begin{DoxyCompactList}\small\item\em Set minimum i\+Error limit. \end{DoxyCompactList}\item 
+void \hyperlink{classmts_p_i_d_a742fd6c148873f962b28661fb448b81d}{Set\+Max\+I\+Error\+Limit} (const \hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \&imaxlim)
+\begin{DoxyCompactList}\small\item\em Set maximum i\+Error limit. \end{DoxyCompactList}\item 
+void \hyperlink{classmts_p_i_d_a1fd0c497970ebd8f20147e7087abccc1}{Set\+Forget\+I\+Error} (const double \&forget)
+\begin{DoxyCompactList}\small\item\em Set error integral forgetting factor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structmts_p_i_d_1_1_interface_robot_torque}{mts\+P\+I\+D\+::\+Interface\+Robot\+Torque} \hyperlink{classmts_p_i_d_a17e9ab759f0051e59244d3a211ba6791}{Robot}
+\item 
+int \hyperlink{classmts_p_i_d_a7a1c2963d1d2b65a210464b9ef0d775f}{Counter}
+\begin{DoxyCompactList}\small\item\em Counter for internal use. \end{DoxyCompactList}\item 
+\hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \hyperlink{classmts_p_i_d_a0aa502158f417e137495a5c2ded4c5d0}{Kp}
+\begin{DoxyCompactList}\small\item\em Proportional gains. \end{DoxyCompactList}\item 
+\hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \hyperlink{classmts_p_i_d_a4d288bb566a2c45834c1f028cad03b3f}{Kd}
+\begin{DoxyCompactList}\small\item\em Derivative gains. \end{DoxyCompactList}\item 
+\hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \hyperlink{classmts_p_i_d_a979243fca1ea255c49b241658246d964}{Ki}
+\begin{DoxyCompactList}\small\item\em Integral gains. \end{DoxyCompactList}\item 
+\hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \hyperlink{classmts_p_i_d_a34993725f4bc1309971924b62549376c}{Offset}
+\begin{DoxyCompactList}\small\item\em Offset. \end{DoxyCompactList}\item 
+\hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \hyperlink{classmts_p_i_d_a4156fdfac35c3175ad1731dbcdcba8f2}{Joint\+Lower\+Limit}
+\begin{DoxyCompactList}\small\item\em Joint lower limit. \end{DoxyCompactList}\item 
+\hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \hyperlink{classmts_p_i_d_a6a6f2a5123f6816f47d5c752ba7020d5}{Joint\+Upper\+Limit}
+\begin{DoxyCompactList}\small\item\em Joint upper limit. \end{DoxyCompactList}\item 
+bool \hyperlink{classmts_p_i_d_a951636db1802cb277a716bd8ee8aea45}{Check\+Joint\+Limit}
+\begin{DoxyCompactList}\small\item\em Flag whether check joint limit. \end{DoxyCompactList}\item 
+\hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \hyperlink{classmts_p_i_d_a52a65fa9afc1f295b483dcd4522244c3}{Feedback\+Position}
+\begin{DoxyCompactList}\small\item\em Feedback joint positions. \end{DoxyCompactList}\item 
+\hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \hyperlink{classmts_p_i_d_a261ceede64958a11dc2f2b58207a83e7}{Desired\+Position}
+\begin{DoxyCompactList}\small\item\em Desired joint positions. \end{DoxyCompactList}\item 
+\hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \hyperlink{classmts_p_i_d_a70a6622da968b22d790eebbbfa584c26}{Feedback\+Torque}
+\begin{DoxyCompactList}\small\item\em Feedback joint positions. \end{DoxyCompactList}\item 
+\hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \hyperlink{classmts_p_i_d_a7756c43c46391cfc929a46c0e99b12a0}{Desired\+Torque}
+\begin{DoxyCompactList}\small\item\em Desired joint positions. \end{DoxyCompactList}\item 
+\hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \hyperlink{classmts_p_i_d_ad881aba30dc205f26ce1ce69763bf9a6}{Feedback\+Velocity}
+\begin{DoxyCompactList}\small\item\em Feedback joint velocities. \end{DoxyCompactList}\item 
+\hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \hyperlink{classmts_p_i_d_aacc1516bf1b22d2c0e0b184fe7928b42}{Desired\+Velocity}
+\begin{DoxyCompactList}\small\item\em Desired joint velocities. \end{DoxyCompactList}\item 
+\hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \hyperlink{classmts_p_i_d_a928a19f9bc0b311ec5743a108b2f8534}{Torque}
+\begin{DoxyCompactList}\small\item\em Torque set to robot. \end{DoxyCompactList}\item 
+\hyperlink{prm_joint_type_8h_a3a21392b4484e2e24aa0b73d553f940e}{prm\+Joint\+Type\+Vec} \hyperlink{classmts_p_i_d_ae108b12c62723774cee553f7e76213f6}{Joint\+Type}
+\begin{DoxyCompactList}\small\item\em prm type joint type \end{DoxyCompactList}\item 
+prm\+Position\+Joint\+Get \hyperlink{classmts_p_i_d_ab504e84dce2591651f13dde667e34497}{Feedback\+Position\+Param}
+\begin{DoxyCompactList}\small\item\em prm type feedback positoin \end{DoxyCompactList}\item 
+prm\+Position\+Joint\+Get \hyperlink{classmts_p_i_d_a28b48c75d2a18ae085e903a4d2668527}{Feedback\+Position\+Previous\+Param}
+\item 
+\hyperlink{classprm_position_joint_set}{prm\+Position\+Joint\+Set} \hyperlink{classmts_p_i_d_a7ef37febb5f1248dcccfa6a0e857b7a9}{Desired\+Position\+Param}
+\begin{DoxyCompactList}\small\item\em prm type desired position \end{DoxyCompactList}\item 
+\hyperlink{classprm_force_torque_joint_set}{prm\+Force\+Torque\+Joint\+Set} \hyperlink{classmts_p_i_d_a6be58279848adac1f3612c320cf182ea}{prm\+Desired\+Trq}
+\begin{DoxyCompactList}\small\item\em prm type desired torque \end{DoxyCompactList}\item 
+\hyperlink{classprm_velocity_joint_get}{prm\+Velocity\+Joint\+Get} \hyperlink{classmts_p_i_d_aeeab33b51fd3b843ac969d8e15ec0d8a}{Feedback\+Velocity\+Param}
+\begin{DoxyCompactList}\small\item\em prm type feedback velocity \end{DoxyCompactList}\item 
+\hyperlink{classprm_force_torque_joint_set}{prm\+Force\+Torque\+Joint\+Set} \hyperlink{classmts_p_i_d_a5aab0504bce1d2293bfbbc2eeec3f1f9}{Torque\+Param}
+\begin{DoxyCompactList}\small\item\em prm type set torque \end{DoxyCompactList}\item 
+\hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \hyperlink{classmts_p_i_d_a48747e1fcd6e96164d925b8803105697}{Error}
+\begin{DoxyCompactList}\small\item\em Error. \end{DoxyCompactList}\item 
+\hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \hyperlink{classmts_p_i_d_abeb97a2bb603ecbe4636063effb6bf90}{Error\+Absolute}
+\item 
+\hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \hyperlink{classmts_p_i_d_ae171fb161398be9d69e7e647625c6cd6}{d\+Error}
+\begin{DoxyCompactList}\small\item\em Error derivative. \end{DoxyCompactList}\item 
+\hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \hyperlink{classmts_p_i_d_a89f471bbc0cb21cc9c64552a087c1a2c}{i\+Error}
+\begin{DoxyCompactList}\small\item\em Error integral. \end{DoxyCompactList}\item 
+\hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \hyperlink{classmts_p_i_d_ad9b05536756b06bd08374606fa615dc6}{old\+Error}
+\begin{DoxyCompactList}\small\item\em Previous error. \end{DoxyCompactList}\item 
+\hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \hyperlink{classmts_p_i_d_a9bd5876d1e7062eafd4dde4e2914adab}{old\+Desired\+Pos}
+\begin{DoxyCompactList}\small\item\em Previous desired\+Pos. \end{DoxyCompactList}\item 
+\hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \hyperlink{classmts_p_i_d_af87166f1f4a9f13c732be381f000d32a}{min\+I\+Error\+Limit}
+\begin{DoxyCompactList}\small\item\em Min i\+Error. \end{DoxyCompactList}\item 
+\hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \hyperlink{classmts_p_i_d_a15180d5531a92d2bd2d9ced43496165e}{max\+I\+Error\+Limit}
+\begin{DoxyCompactList}\small\item\em Max i\+Error. \end{DoxyCompactList}\item 
+\hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \hyperlink{classmts_p_i_d_a030332a1f4dead8460baeb6693c76195}{forget\+I\+Error}
+\begin{DoxyCompactList}\small\item\em i\+Error forgetting factor \end{DoxyCompactList}\item 
+\hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \hyperlink{classmts_p_i_d_a999fa0d68f5e49a7d26a9cf60ee738c7}{nonlinear}
+\begin{DoxyCompactList}\small\item\em If 0, use regular P\+I\+D, else use as nonlinear factor. \end{DoxyCompactList}\item 
+\hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \hyperlink{classmts_p_i_d_a1af99beeae2d49d92974919056a62c48}{Dead\+Band}
+\begin{DoxyCompactList}\small\item\em Deadband (errors less than this are set to 0) \end{DoxyCompactList}\item 
+bool \hyperlink{classmts_p_i_d_afc7cfa0ce58391af303c8efc4430e427}{Enabled}
+\begin{DoxyCompactList}\small\item\em Enable \hyperlink{classmts_p_i_d}{mts\+P\+I\+D} controller. \end{DoxyCompactList}\item 
+\hyperlink{vct_dynamic_vector_types_8h_aeb2237c134aee3769198bd9d55c8a9e0}{vct\+Bool\+Vec} \hyperlink{classmts_p_i_d_a7bd7ccfcdc69d5d5b91087f019c01c63}{Torque\+Mode}
+\begin{DoxyCompactList}\small\item\em Enable \hyperlink{classmts_p_i_d}{mts\+P\+I\+D} controller. \end{DoxyCompactList}\item 
+bool \hyperlink{classmts_p_i_d_aa6fc2821554893e5dfe885094fde8017}{m\+Enable\+Tracking\+Error}
+\item 
+\hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\+Double\+Vec} \hyperlink{classmts_p_i_d_aad179eaa7eaf2157c2afb60a3d2c4f5d}{m\+Tracking\+Error\+Tolerances}
+\item 
+\hyperlink{classmts_state_table}{mts\+State\+Table} \hyperlink{classmts_p_i_d_a06df8f0f65fe6954383297ead5a689e8}{Configuration\+State\+Table}
+\begin{DoxyCompactList}\small\item\em Configuration state table. \end{DoxyCompactList}\item 
+\hyperlink{classmts_function_write}{mts\+Function\+Write} \hyperlink{classmts_p_i_d_a8fa9fc299b55b042978a0487780441d1}{Event\+P\+I\+D\+Enable}
+\begin{DoxyCompactList}\small\item\em Enable event. \end{DoxyCompactList}\item 
+\hyperlink{classmts_function_void}{mts\+Function\+Void} \hyperlink{classmts_p_i_d_abac293831162277a7c3934a1efbe97dc}{Event\+Tracking\+Error}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Always include last. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmts_p_i_d_ae6dfe083c5e5a696a6b005fda4d6cca6}{}\index{mts\+P\+I\+D@{mts\+P\+I\+D}!mts\+P\+I\+D@{mts\+P\+I\+D}}
+\index{mts\+P\+I\+D@{mts\+P\+I\+D}!mts\+P\+I\+D@{mts\+P\+I\+D}}
+\subsubsection[{mts\+P\+I\+D}]{\setlength{\rightskip}{0pt plus 5cm}mts\+P\+I\+D\+::mts\+P\+I\+D (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{taskname, }
+\item[{double}]{period}
+\end{DoxyParamCaption}
+)}\label{classmts_p_i_d_ae6dfe083c5e5a696a6b005fda4d6cca6}
+
+
+Main constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em taskname} & The name of the M\+T\+S periodic task \\
+\hline
+{\em period} & The period of the task \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmts_p_i_d_a5382b49f6fbf4bdf80eae85e23b92abf}{}\index{mts\+P\+I\+D@{mts\+P\+I\+D}!mts\+P\+I\+D@{mts\+P\+I\+D}}
+\index{mts\+P\+I\+D@{mts\+P\+I\+D}!mts\+P\+I\+D@{mts\+P\+I\+D}}
+\subsubsection[{mts\+P\+I\+D}]{\setlength{\rightskip}{0pt plus 5cm}mts\+P\+I\+D\+::mts\+P\+I\+D (
+\begin{DoxyParamCaption}
+\item[{const {\bf mts\+Task\+Periodic\+Constructor\+Arg} \&}]{arg}
+\end{DoxyParamCaption}
+)}\label{classmts_p_i_d_a5382b49f6fbf4bdf80eae85e23b92abf}
+\hypertarget{classmts_p_i_d_abf4c7e2ceab5df1303764568d7234c5b}{}\index{mts\+P\+I\+D@{mts\+P\+I\+D}!````~mts\+P\+I\+D@{$\sim$mts\+P\+I\+D}}
+\index{````~mts\+P\+I\+D@{$\sim$mts\+P\+I\+D}!mts\+P\+I\+D@{mts\+P\+I\+D}}
+\subsubsection[{$\sim$mts\+P\+I\+D}]{\setlength{\rightskip}{0pt plus 5cm}mts\+P\+I\+D\+::$\sim$mts\+P\+I\+D (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_p_i_d_abf4c7e2ceab5df1303764568d7234c5b}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classmts_p_i_d_acfd09cc46b2def93f7df99f2bd68bb49}{}\index{mts\+P\+I\+D@{mts\+P\+I\+D}!Cleanup@{Cleanup}}
+\index{Cleanup@{Cleanup}!mts\+P\+I\+D@{mts\+P\+I\+D}}
+\subsubsection[{Cleanup}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+P\+I\+D\+::\+Cleanup (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_p_i_d_acfd09cc46b2def93f7df99f2bd68bb49}
+Virtual method that gets overloaded, and is run after the component gets killed using \hyperlink{classmts_task_continuous_ad1f8145306e074fbea8baab3beef4c5b}{Kill()} method. 
+
+Reimplemented from \hyperlink{classmts_component_a891f330f4fde7d831dcf7dc537dc5e81}{mts\+Component}.
+
+\hypertarget{classmts_p_i_d_a5a41aeb520a9007ecc12a2abded5bac5}{}\index{mts\+P\+I\+D@{mts\+P\+I\+D}!Configure@{Configure}}
+\index{Configure@{Configure}!mts\+P\+I\+D@{mts\+P\+I\+D}}
+\subsubsection[{Configure}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+P\+I\+D\+::\+Configure (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{filename}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_p_i_d_a5a41aeb520a9007ecc12a2abded5bac5}
+
+
+Configure P\+I\+D gains \& params. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & The name of the configuration file \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classmts_component_ad872432876de7879dc96c232b411c146}{mts\+Component}.
+
+\hypertarget{classmts_p_i_d_a0f04c1c727087cc07110a1d45c4e8d08}{}\index{mts\+P\+I\+D@{mts\+P\+I\+D}!Enable@{Enable}}
+\index{Enable@{Enable}!mts\+P\+I\+D@{mts\+P\+I\+D}}
+\subsubsection[{Enable}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+P\+I\+D\+::\+Enable (
+\begin{DoxyParamCaption}
+\item[{const bool \&}]{enable}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_p_i_d_a0f04c1c727087cc07110a1d45c4e8d08}
+\hypertarget{classmts_p_i_d_a075d4b5fa191ff9a50b5bd0b54155428}{}\index{mts\+P\+I\+D@{mts\+P\+I\+D}!Enable\+Torque\+Mode@{Enable\+Torque\+Mode}}
+\index{Enable\+Torque\+Mode@{Enable\+Torque\+Mode}!mts\+P\+I\+D@{mts\+P\+I\+D}}
+\subsubsection[{Enable\+Torque\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+P\+I\+D\+::\+Enable\+Torque\+Mode (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Bool\+Vec} \&}]{enable}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_p_i_d_a075d4b5fa191ff9a50b5bd0b54155428}
+\hypertarget{classmts_p_i_d_a3030a3b45b3705758cd6eb48d9983167}{}\index{mts\+P\+I\+D@{mts\+P\+I\+D}!Reset\+Controller@{Reset\+Controller}}
+\index{Reset\+Controller@{Reset\+Controller}!mts\+P\+I\+D@{mts\+P\+I\+D}}
+\subsubsection[{Reset\+Controller}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+P\+I\+D\+::\+Reset\+Controller (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_p_i_d_a3030a3b45b3705758cd6eb48d9983167}
+
+
+Reset encoder, clear e/ed/ei value. 
+
+\hypertarget{classmts_p_i_d_a43f5e34d7a45a19fb9f2fa8685303e2e}{}\index{mts\+P\+I\+D@{mts\+P\+I\+D}!Run@{Run}}
+\index{Run@{Run}!mts\+P\+I\+D@{mts\+P\+I\+D}}
+\subsubsection[{Run}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+P\+I\+D\+::\+Run (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_p_i_d_a43f5e34d7a45a19fb9f2fa8685303e2e}
+Pure virtual method that gets overloaded to run the actual task. 
+
+Implements \hyperlink{classmts_task_a20e18c9479cb650792456c32ee689834}{mts\+Task}.
+
+\hypertarget{classmts_p_i_d_a1fd56ab7aabfbf9e3d5a37bf3cda48b9}{}\index{mts\+P\+I\+D@{mts\+P\+I\+D}!Set\+Desired\+Positions@{Set\+Desired\+Positions}}
+\index{Set\+Desired\+Positions@{Set\+Desired\+Positions}!mts\+P\+I\+D@{mts\+P\+I\+D}}
+\subsubsection[{Set\+Desired\+Positions}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+P\+I\+D\+::\+Set\+Desired\+Positions (
+\begin{DoxyParamCaption}
+\item[{const {\bf prm\+Position\+Joint\+Set} \&}]{prm\+Pos}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_p_i_d_a1fd56ab7aabfbf9e3d5a37bf3cda48b9}
+
+
+Set desired joint position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em prm\+Pos} & The desired position \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmts_p_i_d_a760420b20627be81350ef7cd096efe70}{}\index{mts\+P\+I\+D@{mts\+P\+I\+D}!Set\+Desired\+Torques@{Set\+Desired\+Torques}}
+\index{Set\+Desired\+Torques@{Set\+Desired\+Torques}!mts\+P\+I\+D@{mts\+P\+I\+D}}
+\subsubsection[{Set\+Desired\+Torques}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+P\+I\+D\+::\+Set\+Desired\+Torques (
+\begin{DoxyParamCaption}
+\item[{const {\bf prm\+Force\+Torque\+Joint\+Set} \&}]{prm\+Trq}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_p_i_d_a760420b20627be81350ef7cd096efe70}
+\hypertarget{classmts_p_i_d_afadd530f96fa2d69c8140482680f3b61}{}\index{mts\+P\+I\+D@{mts\+P\+I\+D}!Set\+D\+Gain@{Set\+D\+Gain}}
+\index{Set\+D\+Gain@{Set\+D\+Gain}!mts\+P\+I\+D@{mts\+P\+I\+D}}
+\subsubsection[{Set\+D\+Gain}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+P\+I\+D\+::\+Set\+D\+Gain (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Double\+Vec} \&}]{dgain}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_p_i_d_afadd530f96fa2d69c8140482680f3b61}
+
+
+Set controller D gains. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dgain} & new D gains \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmts_p_i_d_a1fd0c497970ebd8f20147e7087abccc1}{}\index{mts\+P\+I\+D@{mts\+P\+I\+D}!Set\+Forget\+I\+Error@{Set\+Forget\+I\+Error}}
+\index{Set\+Forget\+I\+Error@{Set\+Forget\+I\+Error}!mts\+P\+I\+D@{mts\+P\+I\+D}}
+\subsubsection[{Set\+Forget\+I\+Error}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+P\+I\+D\+::\+Set\+Forget\+I\+Error (
+\begin{DoxyParamCaption}
+\item[{const double \&}]{forget}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_p_i_d_a1fd0c497970ebd8f20147e7087abccc1}
+
+
+Set error integral forgetting factor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em forget} & i\+Error forgetting factor \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmts_p_i_d_a286f0cdbc59708eac21f8635105f0dd0}{}\index{mts\+P\+I\+D@{mts\+P\+I\+D}!Set\+I\+Gain@{Set\+I\+Gain}}
+\index{Set\+I\+Gain@{Set\+I\+Gain}!mts\+P\+I\+D@{mts\+P\+I\+D}}
+\subsubsection[{Set\+I\+Gain}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+P\+I\+D\+::\+Set\+I\+Gain (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Double\+Vec} \&}]{igain}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_p_i_d_a286f0cdbc59708eac21f8635105f0dd0}
+
+
+Set controller I gains. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em igain} & new I gains \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmts_p_i_d_a15bba897773af7b17971ddbddfa4c8f4}{}\index{mts\+P\+I\+D@{mts\+P\+I\+D}!Set\+Joint\+Lower\+Limit@{Set\+Joint\+Lower\+Limit}}
+\index{Set\+Joint\+Lower\+Limit@{Set\+Joint\+Lower\+Limit}!mts\+P\+I\+D@{mts\+P\+I\+D}}
+\subsubsection[{Set\+Joint\+Lower\+Limit}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+P\+I\+D\+::\+Set\+Joint\+Lower\+Limit (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Double\+Vec} \&}]{lower\+Limit}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_p_i_d_a15bba897773af7b17971ddbddfa4c8f4}
+
+
+Set joint lower limit. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lower\+Limit} & new joint lower limit \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmts_p_i_d_abfb71b1931f3664e87729f2e2b22be55}{}\index{mts\+P\+I\+D@{mts\+P\+I\+D}!Set\+Joint\+Upper\+Limit@{Set\+Joint\+Upper\+Limit}}
+\index{Set\+Joint\+Upper\+Limit@{Set\+Joint\+Upper\+Limit}!mts\+P\+I\+D@{mts\+P\+I\+D}}
+\subsubsection[{Set\+Joint\+Upper\+Limit}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+P\+I\+D\+::\+Set\+Joint\+Upper\+Limit (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Double\+Vec} \&}]{upper\+Limit}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_p_i_d_abfb71b1931f3664e87729f2e2b22be55}
+
+
+Set joint upper limit. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em upper\+Limit} & new joint upper limit \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmts_p_i_d_a742fd6c148873f962b28661fb448b81d}{}\index{mts\+P\+I\+D@{mts\+P\+I\+D}!Set\+Max\+I\+Error\+Limit@{Set\+Max\+I\+Error\+Limit}}
+\index{Set\+Max\+I\+Error\+Limit@{Set\+Max\+I\+Error\+Limit}!mts\+P\+I\+D@{mts\+P\+I\+D}}
+\subsubsection[{Set\+Max\+I\+Error\+Limit}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+P\+I\+D\+::\+Set\+Max\+I\+Error\+Limit (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Double\+Vec} \&}]{imaxlim}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_p_i_d_a742fd6c148873f962b28661fb448b81d}
+
+
+Set maximum i\+Error limit. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em imaxlim} & maximum i\+Error limit \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmts_p_i_d_a93201139fc34fbcb71046ed27e618d34}{}\index{mts\+P\+I\+D@{mts\+P\+I\+D}!Set\+Min\+I\+Error\+Limit@{Set\+Min\+I\+Error\+Limit}}
+\index{Set\+Min\+I\+Error\+Limit@{Set\+Min\+I\+Error\+Limit}!mts\+P\+I\+D@{mts\+P\+I\+D}}
+\subsubsection[{Set\+Min\+I\+Error\+Limit}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+P\+I\+D\+::\+Set\+Min\+I\+Error\+Limit (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Double\+Vec} \&}]{iminlim}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_p_i_d_a93201139fc34fbcb71046ed27e618d34}
+
+
+Set minimum i\+Error limit. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em iminlim} & minmum i\+Error limit \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmts_p_i_d_a31ffe826ec92dd565bc33f797567e371}{}\index{mts\+P\+I\+D@{mts\+P\+I\+D}!Set\+P\+Gain@{Set\+P\+Gain}}
+\index{Set\+P\+Gain@{Set\+P\+Gain}!mts\+P\+I\+D@{mts\+P\+I\+D}}
+\subsubsection[{Set\+P\+Gain}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+P\+I\+D\+::\+Set\+P\+Gain (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Double\+Vec} \&}]{pgain}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_p_i_d_a31ffe826ec92dd565bc33f797567e371}
+
+
+Set controller P gains. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pgain} & new P gains \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmts_p_i_d_a492f7d1e52d94f8b42ddf727482f489c}{}\index{mts\+P\+I\+D@{mts\+P\+I\+D}!Set\+Tracking\+Error\+Tolerances@{Set\+Tracking\+Error\+Tolerances}}
+\index{Set\+Tracking\+Error\+Tolerances@{Set\+Tracking\+Error\+Tolerances}!mts\+P\+I\+D@{mts\+P\+I\+D}}
+\subsubsection[{Set\+Tracking\+Error\+Tolerances}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+P\+I\+D\+::\+Set\+Tracking\+Error\+Tolerances (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Double\+Vec} \&}]{tolerances}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_p_i_d_a492f7d1e52d94f8b42ddf727482f489c}
+\hypertarget{classmts_p_i_d_a8d6efcccfaa3a7a27dcb0a319c02723d}{}\index{mts\+P\+I\+D@{mts\+P\+I\+D}!Setup\+Interfaces@{Setup\+Interfaces}}
+\index{Setup\+Interfaces@{Setup\+Interfaces}!mts\+P\+I\+D@{mts\+P\+I\+D}}
+\subsubsection[{Setup\+Interfaces}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+P\+I\+D\+::\+Setup\+Interfaces (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_p_i_d_a8d6efcccfaa3a7a27dcb0a319c02723d}
+\hypertarget{classmts_p_i_d_a2cea3d1dbc3ab7218ee00d67216a3c95}{}\index{mts\+P\+I\+D@{mts\+P\+I\+D}!Startup@{Startup}}
+\index{Startup@{Startup}!mts\+P\+I\+D@{mts\+P\+I\+D}}
+\subsubsection[{Startup}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+P\+I\+D\+::\+Startup (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_p_i_d_a2cea3d1dbc3ab7218ee00d67216a3c95}
+Virtual method that gets overloaded, and is run before the component is started. 
+
+Reimplemented from \hyperlink{classmts_component_aaf28f0262b44eb6866e10089a02fa6e4}{mts\+Component}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classmts_p_i_d_a951636db1802cb277a716bd8ee8aea45}{}\index{mts\+P\+I\+D@{mts\+P\+I\+D}!Check\+Joint\+Limit@{Check\+Joint\+Limit}}
+\index{Check\+Joint\+Limit@{Check\+Joint\+Limit}!mts\+P\+I\+D@{mts\+P\+I\+D}}
+\subsubsection[{Check\+Joint\+Limit}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+P\+I\+D\+::\+Check\+Joint\+Limit\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_p_i_d_a951636db1802cb277a716bd8ee8aea45}
+
+
+Flag whether check joint limit. 
+
+\hypertarget{classmts_p_i_d_a06df8f0f65fe6954383297ead5a689e8}{}\index{mts\+P\+I\+D@{mts\+P\+I\+D}!Configuration\+State\+Table@{Configuration\+State\+Table}}
+\index{Configuration\+State\+Table@{Configuration\+State\+Table}!mts\+P\+I\+D@{mts\+P\+I\+D}}
+\subsubsection[{Configuration\+State\+Table}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+State\+Table} mts\+P\+I\+D\+::\+Configuration\+State\+Table\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_p_i_d_a06df8f0f65fe6954383297ead5a689e8}
+
+
+Configuration state table. 
+
+\hypertarget{classmts_p_i_d_a7a1c2963d1d2b65a210464b9ef0d775f}{}\index{mts\+P\+I\+D@{mts\+P\+I\+D}!Counter@{Counter}}
+\index{Counter@{Counter}!mts\+P\+I\+D@{mts\+P\+I\+D}}
+\subsubsection[{Counter}]{\setlength{\rightskip}{0pt plus 5cm}int mts\+P\+I\+D\+::\+Counter\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_p_i_d_a7a1c2963d1d2b65a210464b9ef0d775f}
+
+
+Counter for internal use. 
+
+\hypertarget{classmts_p_i_d_a1af99beeae2d49d92974919056a62c48}{}\index{mts\+P\+I\+D@{mts\+P\+I\+D}!Dead\+Band@{Dead\+Band}}
+\index{Dead\+Band@{Dead\+Band}!mts\+P\+I\+D@{mts\+P\+I\+D}}
+\subsubsection[{Dead\+Band}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Double\+Vec} mts\+P\+I\+D\+::\+Dead\+Band\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_p_i_d_a1af99beeae2d49d92974919056a62c48}
+
+
+Deadband (errors less than this are set to 0) 
+
+\hypertarget{classmts_p_i_d_ae171fb161398be9d69e7e647625c6cd6}{}\index{mts\+P\+I\+D@{mts\+P\+I\+D}!d\+Error@{d\+Error}}
+\index{d\+Error@{d\+Error}!mts\+P\+I\+D@{mts\+P\+I\+D}}
+\subsubsection[{d\+Error}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Double\+Vec} mts\+P\+I\+D\+::d\+Error\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_p_i_d_ae171fb161398be9d69e7e647625c6cd6}
+
+
+Error derivative. 
+
+\hypertarget{classmts_p_i_d_a261ceede64958a11dc2f2b58207a83e7}{}\index{mts\+P\+I\+D@{mts\+P\+I\+D}!Desired\+Position@{Desired\+Position}}
+\index{Desired\+Position@{Desired\+Position}!mts\+P\+I\+D@{mts\+P\+I\+D}}
+\subsubsection[{Desired\+Position}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Double\+Vec} mts\+P\+I\+D\+::\+Desired\+Position\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_p_i_d_a261ceede64958a11dc2f2b58207a83e7}
+
+
+Desired joint positions. 
+
+\hypertarget{classmts_p_i_d_a7ef37febb5f1248dcccfa6a0e857b7a9}{}\index{mts\+P\+I\+D@{mts\+P\+I\+D}!Desired\+Position\+Param@{Desired\+Position\+Param}}
+\index{Desired\+Position\+Param@{Desired\+Position\+Param}!mts\+P\+I\+D@{mts\+P\+I\+D}}
+\subsubsection[{Desired\+Position\+Param}]{\setlength{\rightskip}{0pt plus 5cm}{\bf prm\+Position\+Joint\+Set} mts\+P\+I\+D\+::\+Desired\+Position\+Param\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_p_i_d_a7ef37febb5f1248dcccfa6a0e857b7a9}
+
+
+prm type desired position 
+
+\hypertarget{classmts_p_i_d_a7756c43c46391cfc929a46c0e99b12a0}{}\index{mts\+P\+I\+D@{mts\+P\+I\+D}!Desired\+Torque@{Desired\+Torque}}
+\index{Desired\+Torque@{Desired\+Torque}!mts\+P\+I\+D@{mts\+P\+I\+D}}
+\subsubsection[{Desired\+Torque}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Double\+Vec} mts\+P\+I\+D\+::\+Desired\+Torque\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_p_i_d_a7756c43c46391cfc929a46c0e99b12a0}
+
+
+Desired joint positions. 
+
+\hypertarget{classmts_p_i_d_aacc1516bf1b22d2c0e0b184fe7928b42}{}\index{mts\+P\+I\+D@{mts\+P\+I\+D}!Desired\+Velocity@{Desired\+Velocity}}
+\index{Desired\+Velocity@{Desired\+Velocity}!mts\+P\+I\+D@{mts\+P\+I\+D}}
+\subsubsection[{Desired\+Velocity}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Double\+Vec} mts\+P\+I\+D\+::\+Desired\+Velocity\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_p_i_d_aacc1516bf1b22d2c0e0b184fe7928b42}
+
+
+Desired joint velocities. 
+
+\hypertarget{classmts_p_i_d_afc7cfa0ce58391af303c8efc4430e427}{}\index{mts\+P\+I\+D@{mts\+P\+I\+D}!Enabled@{Enabled}}
+\index{Enabled@{Enabled}!mts\+P\+I\+D@{mts\+P\+I\+D}}
+\subsubsection[{Enabled}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+P\+I\+D\+::\+Enabled\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_p_i_d_afc7cfa0ce58391af303c8efc4430e427}
+
+
+Enable \hyperlink{classmts_p_i_d}{mts\+P\+I\+D} controller. 
+
+\hypertarget{classmts_p_i_d_a48747e1fcd6e96164d925b8803105697}{}\index{mts\+P\+I\+D@{mts\+P\+I\+D}!Error@{Error}}
+\index{Error@{Error}!mts\+P\+I\+D@{mts\+P\+I\+D}}
+\subsubsection[{Error}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Double\+Vec} mts\+P\+I\+D\+::\+Error\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_p_i_d_a48747e1fcd6e96164d925b8803105697}
+
+
+Error. 
+
+\hypertarget{classmts_p_i_d_abeb97a2bb603ecbe4636063effb6bf90}{}\index{mts\+P\+I\+D@{mts\+P\+I\+D}!Error\+Absolute@{Error\+Absolute}}
+\index{Error\+Absolute@{Error\+Absolute}!mts\+P\+I\+D@{mts\+P\+I\+D}}
+\subsubsection[{Error\+Absolute}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Double\+Vec} mts\+P\+I\+D\+::\+Error\+Absolute\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_p_i_d_abeb97a2bb603ecbe4636063effb6bf90}
+\hypertarget{classmts_p_i_d_a8fa9fc299b55b042978a0487780441d1}{}\index{mts\+P\+I\+D@{mts\+P\+I\+D}!Event\+P\+I\+D\+Enable@{Event\+P\+I\+D\+Enable}}
+\index{Event\+P\+I\+D\+Enable@{Event\+P\+I\+D\+Enable}!mts\+P\+I\+D@{mts\+P\+I\+D}}
+\subsubsection[{Event\+P\+I\+D\+Enable}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+Function\+Write} mts\+P\+I\+D\+::\+Event\+P\+I\+D\+Enable\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_p_i_d_a8fa9fc299b55b042978a0487780441d1}
+
+
+Enable event. 
+
+\hypertarget{classmts_p_i_d_abac293831162277a7c3934a1efbe97dc}{}\index{mts\+P\+I\+D@{mts\+P\+I\+D}!Event\+Tracking\+Error@{Event\+Tracking\+Error}}
+\index{Event\+Tracking\+Error@{Event\+Tracking\+Error}!mts\+P\+I\+D@{mts\+P\+I\+D}}
+\subsubsection[{Event\+Tracking\+Error}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+Function\+Void} mts\+P\+I\+D\+::\+Event\+Tracking\+Error\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_p_i_d_abac293831162277a7c3934a1efbe97dc}
+\hypertarget{classmts_p_i_d_a52a65fa9afc1f295b483dcd4522244c3}{}\index{mts\+P\+I\+D@{mts\+P\+I\+D}!Feedback\+Position@{Feedback\+Position}}
+\index{Feedback\+Position@{Feedback\+Position}!mts\+P\+I\+D@{mts\+P\+I\+D}}
+\subsubsection[{Feedback\+Position}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Double\+Vec} mts\+P\+I\+D\+::\+Feedback\+Position\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_p_i_d_a52a65fa9afc1f295b483dcd4522244c3}
+
+
+Feedback joint positions. 
+
+\hypertarget{classmts_p_i_d_ab504e84dce2591651f13dde667e34497}{}\index{mts\+P\+I\+D@{mts\+P\+I\+D}!Feedback\+Position\+Param@{Feedback\+Position\+Param}}
+\index{Feedback\+Position\+Param@{Feedback\+Position\+Param}!mts\+P\+I\+D@{mts\+P\+I\+D}}
+\subsubsection[{Feedback\+Position\+Param}]{\setlength{\rightskip}{0pt plus 5cm}prm\+Position\+Joint\+Get mts\+P\+I\+D\+::\+Feedback\+Position\+Param\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_p_i_d_ab504e84dce2591651f13dde667e34497}
+
+
+prm type feedback positoin 
+
+\hypertarget{classmts_p_i_d_a28b48c75d2a18ae085e903a4d2668527}{}\index{mts\+P\+I\+D@{mts\+P\+I\+D}!Feedback\+Position\+Previous\+Param@{Feedback\+Position\+Previous\+Param}}
+\index{Feedback\+Position\+Previous\+Param@{Feedback\+Position\+Previous\+Param}!mts\+P\+I\+D@{mts\+P\+I\+D}}
+\subsubsection[{Feedback\+Position\+Previous\+Param}]{\setlength{\rightskip}{0pt plus 5cm}prm\+Position\+Joint\+Get mts\+P\+I\+D\+::\+Feedback\+Position\+Previous\+Param\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_p_i_d_a28b48c75d2a18ae085e903a4d2668527}
+\hypertarget{classmts_p_i_d_a70a6622da968b22d790eebbbfa584c26}{}\index{mts\+P\+I\+D@{mts\+P\+I\+D}!Feedback\+Torque@{Feedback\+Torque}}
+\index{Feedback\+Torque@{Feedback\+Torque}!mts\+P\+I\+D@{mts\+P\+I\+D}}
+\subsubsection[{Feedback\+Torque}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Double\+Vec} mts\+P\+I\+D\+::\+Feedback\+Torque\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_p_i_d_a70a6622da968b22d790eebbbfa584c26}
+
+
+Feedback joint positions. 
+
+\hypertarget{classmts_p_i_d_ad881aba30dc205f26ce1ce69763bf9a6}{}\index{mts\+P\+I\+D@{mts\+P\+I\+D}!Feedback\+Velocity@{Feedback\+Velocity}}
+\index{Feedback\+Velocity@{Feedback\+Velocity}!mts\+P\+I\+D@{mts\+P\+I\+D}}
+\subsubsection[{Feedback\+Velocity}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Double\+Vec} mts\+P\+I\+D\+::\+Feedback\+Velocity\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_p_i_d_ad881aba30dc205f26ce1ce69763bf9a6}
+
+
+Feedback joint velocities. 
+
+\hypertarget{classmts_p_i_d_aeeab33b51fd3b843ac969d8e15ec0d8a}{}\index{mts\+P\+I\+D@{mts\+P\+I\+D}!Feedback\+Velocity\+Param@{Feedback\+Velocity\+Param}}
+\index{Feedback\+Velocity\+Param@{Feedback\+Velocity\+Param}!mts\+P\+I\+D@{mts\+P\+I\+D}}
+\subsubsection[{Feedback\+Velocity\+Param}]{\setlength{\rightskip}{0pt plus 5cm}{\bf prm\+Velocity\+Joint\+Get} mts\+P\+I\+D\+::\+Feedback\+Velocity\+Param\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_p_i_d_aeeab33b51fd3b843ac969d8e15ec0d8a}
+
+
+prm type feedback velocity 
+
+\hypertarget{classmts_p_i_d_a030332a1f4dead8460baeb6693c76195}{}\index{mts\+P\+I\+D@{mts\+P\+I\+D}!forget\+I\+Error@{forget\+I\+Error}}
+\index{forget\+I\+Error@{forget\+I\+Error}!mts\+P\+I\+D@{mts\+P\+I\+D}}
+\subsubsection[{forget\+I\+Error}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Double\+Vec} mts\+P\+I\+D\+::forget\+I\+Error\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_p_i_d_a030332a1f4dead8460baeb6693c76195}
+
+
+i\+Error forgetting factor 
+
+\hypertarget{classmts_p_i_d_a89f471bbc0cb21cc9c64552a087c1a2c}{}\index{mts\+P\+I\+D@{mts\+P\+I\+D}!i\+Error@{i\+Error}}
+\index{i\+Error@{i\+Error}!mts\+P\+I\+D@{mts\+P\+I\+D}}
+\subsubsection[{i\+Error}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Double\+Vec} mts\+P\+I\+D\+::i\+Error\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_p_i_d_a89f471bbc0cb21cc9c64552a087c1a2c}
+
+
+Error integral. 
+
+\hypertarget{classmts_p_i_d_a4156fdfac35c3175ad1731dbcdcba8f2}{}\index{mts\+P\+I\+D@{mts\+P\+I\+D}!Joint\+Lower\+Limit@{Joint\+Lower\+Limit}}
+\index{Joint\+Lower\+Limit@{Joint\+Lower\+Limit}!mts\+P\+I\+D@{mts\+P\+I\+D}}
+\subsubsection[{Joint\+Lower\+Limit}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Double\+Vec} mts\+P\+I\+D\+::\+Joint\+Lower\+Limit\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_p_i_d_a4156fdfac35c3175ad1731dbcdcba8f2}
+
+
+Joint lower limit. 
+
+\hypertarget{classmts_p_i_d_ae108b12c62723774cee553f7e76213f6}{}\index{mts\+P\+I\+D@{mts\+P\+I\+D}!Joint\+Type@{Joint\+Type}}
+\index{Joint\+Type@{Joint\+Type}!mts\+P\+I\+D@{mts\+P\+I\+D}}
+\subsubsection[{Joint\+Type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf prm\+Joint\+Type\+Vec} mts\+P\+I\+D\+::\+Joint\+Type\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_p_i_d_ae108b12c62723774cee553f7e76213f6}
+
+
+prm type joint type 
+
+\hypertarget{classmts_p_i_d_a6a6f2a5123f6816f47d5c752ba7020d5}{}\index{mts\+P\+I\+D@{mts\+P\+I\+D}!Joint\+Upper\+Limit@{Joint\+Upper\+Limit}}
+\index{Joint\+Upper\+Limit@{Joint\+Upper\+Limit}!mts\+P\+I\+D@{mts\+P\+I\+D}}
+\subsubsection[{Joint\+Upper\+Limit}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Double\+Vec} mts\+P\+I\+D\+::\+Joint\+Upper\+Limit\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_p_i_d_a6a6f2a5123f6816f47d5c752ba7020d5}
+
+
+Joint upper limit. 
+
+\hypertarget{classmts_p_i_d_a4d288bb566a2c45834c1f028cad03b3f}{}\index{mts\+P\+I\+D@{mts\+P\+I\+D}!Kd@{Kd}}
+\index{Kd@{Kd}!mts\+P\+I\+D@{mts\+P\+I\+D}}
+\subsubsection[{Kd}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Double\+Vec} mts\+P\+I\+D\+::\+Kd\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_p_i_d_a4d288bb566a2c45834c1f028cad03b3f}
+
+
+Derivative gains. 
+
+\hypertarget{classmts_p_i_d_a979243fca1ea255c49b241658246d964}{}\index{mts\+P\+I\+D@{mts\+P\+I\+D}!Ki@{Ki}}
+\index{Ki@{Ki}!mts\+P\+I\+D@{mts\+P\+I\+D}}
+\subsubsection[{Ki}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Double\+Vec} mts\+P\+I\+D\+::\+Ki\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_p_i_d_a979243fca1ea255c49b241658246d964}
+
+
+Integral gains. 
+
+\hypertarget{classmts_p_i_d_a0aa502158f417e137495a5c2ded4c5d0}{}\index{mts\+P\+I\+D@{mts\+P\+I\+D}!Kp@{Kp}}
+\index{Kp@{Kp}!mts\+P\+I\+D@{mts\+P\+I\+D}}
+\subsubsection[{Kp}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Double\+Vec} mts\+P\+I\+D\+::\+Kp\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_p_i_d_a0aa502158f417e137495a5c2ded4c5d0}
+
+
+Proportional gains. 
+
+\hypertarget{classmts_p_i_d_a15180d5531a92d2bd2d9ced43496165e}{}\index{mts\+P\+I\+D@{mts\+P\+I\+D}!max\+I\+Error\+Limit@{max\+I\+Error\+Limit}}
+\index{max\+I\+Error\+Limit@{max\+I\+Error\+Limit}!mts\+P\+I\+D@{mts\+P\+I\+D}}
+\subsubsection[{max\+I\+Error\+Limit}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Double\+Vec} mts\+P\+I\+D\+::max\+I\+Error\+Limit\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_p_i_d_a15180d5531a92d2bd2d9ced43496165e}
+
+
+Max i\+Error. 
+
+\hypertarget{classmts_p_i_d_aa6fc2821554893e5dfe885094fde8017}{}\index{mts\+P\+I\+D@{mts\+P\+I\+D}!m\+Enable\+Tracking\+Error@{m\+Enable\+Tracking\+Error}}
+\index{m\+Enable\+Tracking\+Error@{m\+Enable\+Tracking\+Error}!mts\+P\+I\+D@{mts\+P\+I\+D}}
+\subsubsection[{m\+Enable\+Tracking\+Error}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+P\+I\+D\+::m\+Enable\+Tracking\+Error\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_p_i_d_aa6fc2821554893e5dfe885094fde8017}
+\hypertarget{classmts_p_i_d_af87166f1f4a9f13c732be381f000d32a}{}\index{mts\+P\+I\+D@{mts\+P\+I\+D}!min\+I\+Error\+Limit@{min\+I\+Error\+Limit}}
+\index{min\+I\+Error\+Limit@{min\+I\+Error\+Limit}!mts\+P\+I\+D@{mts\+P\+I\+D}}
+\subsubsection[{min\+I\+Error\+Limit}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Double\+Vec} mts\+P\+I\+D\+::min\+I\+Error\+Limit\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_p_i_d_af87166f1f4a9f13c732be381f000d32a}
+
+
+Min i\+Error. 
+
+\hypertarget{classmts_p_i_d_aad179eaa7eaf2157c2afb60a3d2c4f5d}{}\index{mts\+P\+I\+D@{mts\+P\+I\+D}!m\+Tracking\+Error\+Tolerances@{m\+Tracking\+Error\+Tolerances}}
+\index{m\+Tracking\+Error\+Tolerances@{m\+Tracking\+Error\+Tolerances}!mts\+P\+I\+D@{mts\+P\+I\+D}}
+\subsubsection[{m\+Tracking\+Error\+Tolerances}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Double\+Vec} mts\+P\+I\+D\+::m\+Tracking\+Error\+Tolerances\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_p_i_d_aad179eaa7eaf2157c2afb60a3d2c4f5d}
+\hypertarget{classmts_p_i_d_a999fa0d68f5e49a7d26a9cf60ee738c7}{}\index{mts\+P\+I\+D@{mts\+P\+I\+D}!nonlinear@{nonlinear}}
+\index{nonlinear@{nonlinear}!mts\+P\+I\+D@{mts\+P\+I\+D}}
+\subsubsection[{nonlinear}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Double\+Vec} mts\+P\+I\+D\+::nonlinear\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_p_i_d_a999fa0d68f5e49a7d26a9cf60ee738c7}
+
+
+If 0, use regular P\+I\+D, else use as nonlinear factor. 
+
+\hypertarget{classmts_p_i_d_a34993725f4bc1309971924b62549376c}{}\index{mts\+P\+I\+D@{mts\+P\+I\+D}!Offset@{Offset}}
+\index{Offset@{Offset}!mts\+P\+I\+D@{mts\+P\+I\+D}}
+\subsubsection[{Offset}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Double\+Vec} mts\+P\+I\+D\+::\+Offset\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_p_i_d_a34993725f4bc1309971924b62549376c}
+
+
+Offset. 
+
+\hypertarget{classmts_p_i_d_a9bd5876d1e7062eafd4dde4e2914adab}{}\index{mts\+P\+I\+D@{mts\+P\+I\+D}!old\+Desired\+Pos@{old\+Desired\+Pos}}
+\index{old\+Desired\+Pos@{old\+Desired\+Pos}!mts\+P\+I\+D@{mts\+P\+I\+D}}
+\subsubsection[{old\+Desired\+Pos}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Double\+Vec} mts\+P\+I\+D\+::old\+Desired\+Pos\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_p_i_d_a9bd5876d1e7062eafd4dde4e2914adab}
+
+
+Previous desired\+Pos. 
+
+\hypertarget{classmts_p_i_d_ad9b05536756b06bd08374606fa615dc6}{}\index{mts\+P\+I\+D@{mts\+P\+I\+D}!old\+Error@{old\+Error}}
+\index{old\+Error@{old\+Error}!mts\+P\+I\+D@{mts\+P\+I\+D}}
+\subsubsection[{old\+Error}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Double\+Vec} mts\+P\+I\+D\+::old\+Error\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_p_i_d_ad9b05536756b06bd08374606fa615dc6}
+
+
+Previous error. 
+
+\hypertarget{classmts_p_i_d_a6be58279848adac1f3612c320cf182ea}{}\index{mts\+P\+I\+D@{mts\+P\+I\+D}!prm\+Desired\+Trq@{prm\+Desired\+Trq}}
+\index{prm\+Desired\+Trq@{prm\+Desired\+Trq}!mts\+P\+I\+D@{mts\+P\+I\+D}}
+\subsubsection[{prm\+Desired\+Trq}]{\setlength{\rightskip}{0pt plus 5cm}{\bf prm\+Force\+Torque\+Joint\+Set} mts\+P\+I\+D\+::prm\+Desired\+Trq\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_p_i_d_a6be58279848adac1f3612c320cf182ea}
+
+
+prm type desired torque 
+
+\hypertarget{classmts_p_i_d_a17e9ab759f0051e59244d3a211ba6791}{}\index{mts\+P\+I\+D@{mts\+P\+I\+D}!Robot@{Robot}}
+\index{Robot@{Robot}!mts\+P\+I\+D@{mts\+P\+I\+D}}
+\subsubsection[{Robot}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf mts\+P\+I\+D\+::\+Interface\+Robot\+Torque}  mts\+P\+I\+D\+::\+Robot\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_p_i_d_a17e9ab759f0051e59244d3a211ba6791}
+\hypertarget{classmts_p_i_d_a928a19f9bc0b311ec5743a108b2f8534}{}\index{mts\+P\+I\+D@{mts\+P\+I\+D}!Torque@{Torque}}
+\index{Torque@{Torque}!mts\+P\+I\+D@{mts\+P\+I\+D}}
+\subsubsection[{Torque}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Double\+Vec} mts\+P\+I\+D\+::\+Torque\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_p_i_d_a928a19f9bc0b311ec5743a108b2f8534}
+
+
+Torque set to robot. 
+
+\hypertarget{classmts_p_i_d_a7bd7ccfcdc69d5d5b91087f019c01c63}{}\index{mts\+P\+I\+D@{mts\+P\+I\+D}!Torque\+Mode@{Torque\+Mode}}
+\index{Torque\+Mode@{Torque\+Mode}!mts\+P\+I\+D@{mts\+P\+I\+D}}
+\subsubsection[{Torque\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Bool\+Vec} mts\+P\+I\+D\+::\+Torque\+Mode\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_p_i_d_a7bd7ccfcdc69d5d5b91087f019c01c63}
+
+
+Enable \hyperlink{classmts_p_i_d}{mts\+P\+I\+D} controller. 
+
+\hypertarget{classmts_p_i_d_a5aab0504bce1d2293bfbbc2eeec3f1f9}{}\index{mts\+P\+I\+D@{mts\+P\+I\+D}!Torque\+Param@{Torque\+Param}}
+\index{Torque\+Param@{Torque\+Param}!mts\+P\+I\+D@{mts\+P\+I\+D}}
+\subsubsection[{Torque\+Param}]{\setlength{\rightskip}{0pt plus 5cm}{\bf prm\+Force\+Torque\+Joint\+Set} mts\+P\+I\+D\+::\+Torque\+Param\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_p_i_d_a5aab0504bce1d2293bfbbc2eeec3f1f9}
+
+
+prm type set torque 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/saw\+Controllers/include/saw\+Controllers/\hyperlink{mts_p_i_d_8h}{mts\+P\+I\+D.\+h}\end{DoxyCompactItemize}

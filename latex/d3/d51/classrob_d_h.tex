@@ -1,0 +1,299 @@
+\hypertarget{classrob_d_h}{}\section{rob\+D\+H Class Reference}
+\label{classrob_d_h}\index{rob\+D\+H@{rob\+D\+H}}
+
+
+Standard D\+H parameters of a coordinate frame.  
+
+
+
+
+{\ttfamily \#include $<$rob\+D\+H.\+h$>$}
+
+Inheritance diagram for rob\+D\+H\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{d3/d51/classrob_d_h}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classrob_d_h_af53c2219f28c3c3d76dfcec27693d8d7}{rob\+D\+H} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{classrob_d_h_ae7919ad5cd95f4bf5aefeb7d7515a95f}{rob\+D\+H} (double alpha, double a, double theta, double d, const \hyperlink{classrob_joint}{rob\+Joint} \&joint)
+\begin{DoxyCompactList}\small\item\em Overloaded constructor. \end{DoxyCompactList}\item 
+\hyperlink{classrob_d_h_a8d612b9672a85a282d49dd07e151fdcf}{$\sim$rob\+D\+H} ()
+\begin{DoxyCompactList}\small\item\em Default destructor. \end{DoxyCompactList}\item 
+\hyperlink{classvct_frame4x4}{vct\+Frame4x4}$<$ double $>$ \hyperlink{classrob_d_h_a9af5ef66e5269ce07b75a892428cabdd}{Forward\+Kinematics} (double q) const 
+\begin{DoxyCompactList}\small\item\em Get the position and orientation of the coordinate frame. \end{DoxyCompactList}\item 
+\hyperlink{classvct_matrix_rotation3}{vct\+Matrix\+Rotation3}$<$ double $>$ \hyperlink{classrob_d_h_adcd73e6facecdcf4ba1972aaa93994a6}{Orientation} (double q) const 
+\begin{DoxyCompactList}\small\item\em Get the orientation of the link. \end{DoxyCompactList}\item 
+\hyperlink{classvct_fixed_size_vector}{vct\+Fixed\+Size\+Vector}$<$ double, 3 $>$ \hyperlink{classrob_d_h_ace414bb1d30d48e9d1d239e597921b65}{P\+Star} () const 
+\begin{DoxyCompactList}\small\item\em Return the position of the next (distal) link coordinate frame. \end{DoxyCompactList}\item 
+\hyperlink{classrob_kinematics}{rob\+Kinematics} $\ast$ \hyperlink{classrob_d_h_ad172e4bc1d42a4298d9ee3ccd1c8169f}{Clone} () const 
+\begin{DoxyCompactList}\small\item\em Clone. \end{DoxyCompactList}\item 
+double \hyperlink{classrob_d_h_aa44ae0d43942d0a2744bb38d33b23356}{Get\+Rotation\+X} () const 
+\item 
+double \hyperlink{classrob_d_h_acd6dd8a0db076e5f72af6b629b20b3b9}{Get\+Rotation\+Z} () const 
+\item 
+double \hyperlink{classrob_d_h_a540e8752caf7ca571ed3bc612128600a}{Get\+Translation\+X} () const 
+\item 
+double \hyperlink{classrob_d_h_ab7f09a20f155df79ed13271f26498d68}{Get\+Translation\+Z} () const 
+\item 
+void \hyperlink{classrob_d_h_a5da39e73845d1c6f88f82954e7c1baf3}{Set\+Rotation\+X} (double x)
+\item 
+void \hyperlink{classrob_d_h_a6472acada14c7c4e20c7c81d3840fb29}{Set\+Rotation\+Z} (double x)
+\item 
+void \hyperlink{classrob_d_h_a5b9b2e2052e3de782c88a7240fac5431}{Set\+Translation\+X} (double x)
+\item 
+void \hyperlink{classrob_d_h_ab6a72521527e668ba073193ed14bac50}{Set\+Translation\+Z} (double x)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classrob_d_h_a3abbc9203457b81907fae00e28807bd4}{Read\+Parameters} (std\+::istream \&is)
+\begin{DoxyCompactList}\small\item\em Read the parameters from an input stream. \end{DoxyCompactList}\item 
+void \hyperlink{classrob_d_h_abb1b7454fcbe0b2ac14de4fd9d5a842f}{Write\+Parameters} (std\+::ostream \&os) const 
+\begin{DoxyCompactList}\small\item\em Write the parameters to an output stream. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Standard D\+H parameters of a coordinate frame. 
+
+The D\+H class is used for kinematics parameters. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classrob_d_h_af53c2219f28c3c3d76dfcec27693d8d7}{}\index{rob\+D\+H@{rob\+D\+H}!rob\+D\+H@{rob\+D\+H}}
+\index{rob\+D\+H@{rob\+D\+H}!rob\+D\+H@{rob\+D\+H}}
+\subsubsection[{rob\+D\+H}]{\setlength{\rightskip}{0pt plus 5cm}rob\+D\+H\+::rob\+D\+H (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classrob_d_h_af53c2219f28c3c3d76dfcec27693d8d7}
+
+
+Default constructor. 
+
+\hypertarget{classrob_d_h_ae7919ad5cd95f4bf5aefeb7d7515a95f}{}\index{rob\+D\+H@{rob\+D\+H}!rob\+D\+H@{rob\+D\+H}}
+\index{rob\+D\+H@{rob\+D\+H}!rob\+D\+H@{rob\+D\+H}}
+\subsubsection[{rob\+D\+H}]{\setlength{\rightskip}{0pt plus 5cm}rob\+D\+H\+::rob\+D\+H (
+\begin{DoxyParamCaption}
+\item[{double}]{alpha, }
+\item[{double}]{a, }
+\item[{double}]{theta, }
+\item[{double}]{d, }
+\item[{const {\bf rob\+Joint} \&}]{joint}
+\end{DoxyParamCaption}
+)}\label{classrob_d_h_ae7919ad5cd95f4bf5aefeb7d7515a95f}
+
+
+Overloaded constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alpha} & \\
+\hline
+{\em a} & \\
+\hline
+{\em theta} & \\
+\hline
+{\em d} & \\
+\hline
+{\em joint} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classrob_d_h_a8d612b9672a85a282d49dd07e151fdcf}{}\index{rob\+D\+H@{rob\+D\+H}!````~rob\+D\+H@{$\sim$rob\+D\+H}}
+\index{````~rob\+D\+H@{$\sim$rob\+D\+H}!rob\+D\+H@{rob\+D\+H}}
+\subsubsection[{$\sim$rob\+D\+H}]{\setlength{\rightskip}{0pt plus 5cm}rob\+D\+H\+::$\sim$rob\+D\+H (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classrob_d_h_a8d612b9672a85a282d49dd07e151fdcf}
+
+
+Default destructor. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classrob_d_h_ad172e4bc1d42a4298d9ee3ccd1c8169f}{}\index{rob\+D\+H@{rob\+D\+H}!Clone@{Clone}}
+\index{Clone@{Clone}!rob\+D\+H@{rob\+D\+H}}
+\subsubsection[{Clone}]{\setlength{\rightskip}{0pt plus 5cm}{\bf rob\+Kinematics}$\ast$ rob\+D\+H\+::\+Clone (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{classrob_d_h_ad172e4bc1d42a4298d9ee3ccd1c8169f}
+
+
+Clone. 
+
+
+
+Implements \hyperlink{classrob_kinematics_a01c1be909edee0615544e081da5ee721}{rob\+Kinematics}.
+
+\hypertarget{classrob_d_h_a9af5ef66e5269ce07b75a892428cabdd}{}\index{rob\+D\+H@{rob\+D\+H}!Forward\+Kinematics@{Forward\+Kinematics}}
+\index{Forward\+Kinematics@{Forward\+Kinematics}!rob\+D\+H@{rob\+D\+H}}
+\subsubsection[{Forward\+Kinematics}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Frame4x4}$<$double$>$ rob\+D\+H\+::\+Forward\+Kinematics (
+\begin{DoxyParamCaption}
+\item[{double}]{q}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{classrob_d_h_a9af5ef66e5269ce07b75a892428cabdd}
+
+
+Get the position and orientation of the coordinate frame. 
+
+Returns the position and orientation of the coordinate frame. 
+\begin{DoxyParams}{Parameters}
+{\em joint} & The joint value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The position and orientation of the coordinate frame 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classrob_kinematics_a1307677fa8f4846a62da3bf934efb9d6}{rob\+Kinematics}.
+
+\hypertarget{classrob_d_h_aa44ae0d43942d0a2744bb38d33b23356}{}\index{rob\+D\+H@{rob\+D\+H}!Get\+Rotation\+X@{Get\+Rotation\+X}}
+\index{Get\+Rotation\+X@{Get\+Rotation\+X}!rob\+D\+H@{rob\+D\+H}}
+\subsubsection[{Get\+Rotation\+X}]{\setlength{\rightskip}{0pt plus 5cm}double rob\+D\+H\+::\+Get\+Rotation\+X (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classrob_d_h_aa44ae0d43942d0a2744bb38d33b23356}
+\hypertarget{classrob_d_h_acd6dd8a0db076e5f72af6b629b20b3b9}{}\index{rob\+D\+H@{rob\+D\+H}!Get\+Rotation\+Z@{Get\+Rotation\+Z}}
+\index{Get\+Rotation\+Z@{Get\+Rotation\+Z}!rob\+D\+H@{rob\+D\+H}}
+\subsubsection[{Get\+Rotation\+Z}]{\setlength{\rightskip}{0pt plus 5cm}double rob\+D\+H\+::\+Get\+Rotation\+Z (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classrob_d_h_acd6dd8a0db076e5f72af6b629b20b3b9}
+\hypertarget{classrob_d_h_a540e8752caf7ca571ed3bc612128600a}{}\index{rob\+D\+H@{rob\+D\+H}!Get\+Translation\+X@{Get\+Translation\+X}}
+\index{Get\+Translation\+X@{Get\+Translation\+X}!rob\+D\+H@{rob\+D\+H}}
+\subsubsection[{Get\+Translation\+X}]{\setlength{\rightskip}{0pt plus 5cm}double rob\+D\+H\+::\+Get\+Translation\+X (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classrob_d_h_a540e8752caf7ca571ed3bc612128600a}
+\hypertarget{classrob_d_h_ab7f09a20f155df79ed13271f26498d68}{}\index{rob\+D\+H@{rob\+D\+H}!Get\+Translation\+Z@{Get\+Translation\+Z}}
+\index{Get\+Translation\+Z@{Get\+Translation\+Z}!rob\+D\+H@{rob\+D\+H}}
+\subsubsection[{Get\+Translation\+Z}]{\setlength{\rightskip}{0pt plus 5cm}double rob\+D\+H\+::\+Get\+Translation\+Z (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classrob_d_h_ab7f09a20f155df79ed13271f26498d68}
+\hypertarget{classrob_d_h_adcd73e6facecdcf4ba1972aaa93994a6}{}\index{rob\+D\+H@{rob\+D\+H}!Orientation@{Orientation}}
+\index{Orientation@{Orientation}!rob\+D\+H@{rob\+D\+H}}
+\subsubsection[{Orientation}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Matrix\+Rotation3}$<$double$>$ rob\+D\+H\+::\+Orientation (
+\begin{DoxyParamCaption}
+\item[{double}]{q}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{classrob_d_h_adcd73e6facecdcf4ba1972aaa93994a6}
+
+
+Get the orientation of the link. 
+
+Returns the orientation of the coordinate frame. 
+\begin{DoxyParams}{Parameters}
+{\em joint} & The joint associated with the link \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The orientation of the frame 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classrob_kinematics_ada1e684fd3b33fb8c0cfbf32f4099e83}{rob\+Kinematics}.
+
+\hypertarget{classrob_d_h_ace414bb1d30d48e9d1d239e597921b65}{}\index{rob\+D\+H@{rob\+D\+H}!P\+Star@{P\+Star}}
+\index{P\+Star@{P\+Star}!rob\+D\+H@{rob\+D\+H}}
+\subsubsection[{P\+Star}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Fixed\+Size\+Vector}$<$double,3$>$ rob\+D\+H\+::\+P\+Star (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{classrob_d_h_ace414bb1d30d48e9d1d239e597921b65}
+
+
+Return the position of the next (distal) link coordinate frame. 
+
+This method returns the \$X\+Y\+Z\$ coordinates of the origin of the distal link in the coordinate frame of the proximal link. \char`\"{}\+P\+Star\char`\"{} is not a good name for this but the literature uses \$ \{p\}$^\wedge$$\ast$ \$ to denote this value. \begin{DoxyReturn}{Returns}
+The position of the next coordinate frame wrt to the current frame 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classrob_kinematics_a29ea3c6823445630d7d84cc38887fb3a}{rob\+Kinematics}.
+
+\hypertarget{classrob_d_h_a3abbc9203457b81907fae00e28807bd4}{}\index{rob\+D\+H@{rob\+D\+H}!Read\+Parameters@{Read\+Parameters}}
+\index{Read\+Parameters@{Read\+Parameters}!rob\+D\+H@{rob\+D\+H}}
+\subsubsection[{Read\+Parameters}]{\setlength{\rightskip}{0pt plus 5cm}void rob\+D\+H\+::\+Read\+Parameters (
+\begin{DoxyParamCaption}
+\item[{std\+::istream \&}]{is}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classrob_d_h_a3abbc9203457b81907fae00e28807bd4}
+
+
+Read the parameters from an input stream. 
+
+Read the parameters from an input stream. The parameters are in the following order\+: convention, $\alpha$, a, $\theta$, d, $<$joint$>$ 
+\begin{DoxyParams}{Parameters}
+{\em is} & The input stream \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classrob_kinematics_a0bcf44445361f6c764cd0565c8f6b3c0}{rob\+Kinematics}.
+
+\hypertarget{classrob_d_h_a5da39e73845d1c6f88f82954e7c1baf3}{}\index{rob\+D\+H@{rob\+D\+H}!Set\+Rotation\+X@{Set\+Rotation\+X}}
+\index{Set\+Rotation\+X@{Set\+Rotation\+X}!rob\+D\+H@{rob\+D\+H}}
+\subsubsection[{Set\+Rotation\+X}]{\setlength{\rightskip}{0pt plus 5cm}void rob\+D\+H\+::\+Set\+Rotation\+X (
+\begin{DoxyParamCaption}
+\item[{double}]{x}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classrob_d_h_a5da39e73845d1c6f88f82954e7c1baf3}
+\hypertarget{classrob_d_h_a6472acada14c7c4e20c7c81d3840fb29}{}\index{rob\+D\+H@{rob\+D\+H}!Set\+Rotation\+Z@{Set\+Rotation\+Z}}
+\index{Set\+Rotation\+Z@{Set\+Rotation\+Z}!rob\+D\+H@{rob\+D\+H}}
+\subsubsection[{Set\+Rotation\+Z}]{\setlength{\rightskip}{0pt plus 5cm}void rob\+D\+H\+::\+Set\+Rotation\+Z (
+\begin{DoxyParamCaption}
+\item[{double}]{x}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classrob_d_h_a6472acada14c7c4e20c7c81d3840fb29}
+\hypertarget{classrob_d_h_a5b9b2e2052e3de782c88a7240fac5431}{}\index{rob\+D\+H@{rob\+D\+H}!Set\+Translation\+X@{Set\+Translation\+X}}
+\index{Set\+Translation\+X@{Set\+Translation\+X}!rob\+D\+H@{rob\+D\+H}}
+\subsubsection[{Set\+Translation\+X}]{\setlength{\rightskip}{0pt plus 5cm}void rob\+D\+H\+::\+Set\+Translation\+X (
+\begin{DoxyParamCaption}
+\item[{double}]{x}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classrob_d_h_a5b9b2e2052e3de782c88a7240fac5431}
+\hypertarget{classrob_d_h_ab6a72521527e668ba073193ed14bac50}{}\index{rob\+D\+H@{rob\+D\+H}!Set\+Translation\+Z@{Set\+Translation\+Z}}
+\index{Set\+Translation\+Z@{Set\+Translation\+Z}!rob\+D\+H@{rob\+D\+H}}
+\subsubsection[{Set\+Translation\+Z}]{\setlength{\rightskip}{0pt plus 5cm}void rob\+D\+H\+::\+Set\+Translation\+Z (
+\begin{DoxyParamCaption}
+\item[{double}]{x}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classrob_d_h_ab6a72521527e668ba073193ed14bac50}
+\hypertarget{classrob_d_h_abb1b7454fcbe0b2ac14de4fd9d5a842f}{}\index{rob\+D\+H@{rob\+D\+H}!Write\+Parameters@{Write\+Parameters}}
+\index{Write\+Parameters@{Write\+Parameters}!rob\+D\+H@{rob\+D\+H}}
+\subsubsection[{Write\+Parameters}]{\setlength{\rightskip}{0pt plus 5cm}void rob\+D\+H\+::\+Write\+Parameters (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{os}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classrob_d_h_abb1b7454fcbe0b2ac14de4fd9d5a842f}
+
+
+Write the parameters to an output stream. 
+
+Write the parameters to an output stream. The parameters are in the following order\+: $\alpha$, a, $\theta$, d 
+\begin{DoxyParams}{Parameters}
+{\em os} & The output stream \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classrob_kinematics_afbfe67b8baaed6fdee85bef681f195e1}{rob\+Kinematics}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Robot/\hyperlink{rob_d_h_8h}{rob\+D\+H.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,91 @@
+\hypertarget{classvct_store_back_binary_operations}{}\section{vct\+Store\+Back\+Binary\+Operations$<$ \+\_\+input\+Output\+Type, \+\_\+input2\+Type $>$ Class Template Reference}
+\label{classvct_store_back_binary_operations}\index{vct\+Store\+Back\+Binary\+Operations$<$ \+\_\+input\+Output\+Type, \+\_\+input2\+Type $>$@{vct\+Store\+Back\+Binary\+Operations$<$ \+\_\+input\+Output\+Type, \+\_\+input2\+Type $>$}}
+
+
+Define binary operations between objects as classes.  
+
+
+
+
+{\ttfamily \#include $<$vct\+Store\+Back\+Binary\+Operations.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classvct_store_back_binary_operations_1_1_addition}{Addition}
+\begin{DoxyCompactList}\small\item\em Returns the sum of the two Input\+Type object. \end{DoxyCompactList}\item 
+class \hyperlink{classvct_store_back_binary_operations_1_1_clip_in}{Clip\+In}
+\item 
+class \hyperlink{classvct_store_back_binary_operations_1_1_division}{Division}
+\begin{DoxyCompactList}\small\item\em Returns the ratio of the two Input\+Type object. \end{DoxyCompactList}\item 
+class \hyperlink{classvct_store_back_binary_operations_1_1_first_operand}{First\+Operand}
+\begin{DoxyCompactList}\small\item\em Return the first operand of (input1, input2), i.\+e., input1. \end{DoxyCompactList}\item 
+class \hyperlink{classvct_store_back_binary_operations_1_1_maximum}{Maximum}
+\begin{DoxyCompactList}\small\item\em Return the greater of (input1, input2). \end{DoxyCompactList}\item 
+class \hyperlink{classvct_store_back_binary_operations_1_1_minimum}{Minimum}
+\begin{DoxyCompactList}\small\item\em Return the of lesser (input1, input2). \end{DoxyCompactList}\item 
+class \hyperlink{classvct_store_back_binary_operations_1_1_multiplication}{Multiplication}
+\begin{DoxyCompactList}\small\item\em Returns the product of the two Input\+Type object. \end{DoxyCompactList}\item 
+class \hyperlink{classvct_store_back_binary_operations_1_1_second_operand}{Second\+Operand}
+\begin{DoxyCompactList}\small\item\em Return the first operand of (input1, input2), i.\+e., input2. \end{DoxyCompactList}\item 
+class \hyperlink{classvct_store_back_binary_operations_1_1_subtraction}{Subtraction}
+\begin{DoxyCompactList}\small\item\em Returns the difference of the two Input\+Type object. \end{DoxyCompactList}\item 
+class \hyperlink{classvct_store_back_binary_operations_1_1_swap}{Swap}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classvct_store_back_binary_operations_1_1_swap}{Swap} the values of input1, input2. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \+\_\+input\+Output\+Type \hyperlink{classvct_store_back_binary_operations_a9dc481d9e1345541dd5d833d5e5688f3}{Input\+Output\+Type}
+\item 
+typedef \+\_\+input2\+Type \hyperlink{classvct_store_back_binary_operations_a65a7197563c794a879fb50a406e70c8f}{Input2\+Type}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class \+\_\+input\+Output\+Type, class \+\_\+input2\+Type = \+\_\+input\+Output\+Type$>$class vct\+Store\+Back\+Binary\+Operations$<$ \+\_\+input\+Output\+Type, \+\_\+input2\+Type $>$}
+
+Define binary operations between objects as classes. 
+
+Class \hyperlink{classvct_store_back_binary_operations}{vct\+Store\+Back\+Binary\+Operations} is an envelope that wraps binary store back operations between objects as classes. Store\+Back\+Operations defines internal classes such as \hyperlink{classvct_store_back_binary_operations_1_1_addition}{Addition}, \hyperlink{classvct_store_back_binary_operations_1_1_subtraction}{Subtraction}, etc., and each of the internal classes has one static function named Operate(), which wraps the corresponding operation. The signature of a typical Operate() is
+
+
+\begin{DoxyPre}
+static inline OutputType \& Operate(Input1Type & input1, const Input2Type & input2)
+\end{DoxyPre}
+
+
+Where Output\+Type, Input1\+Type, Input2\+Type are the types of the result and the two operands.
+
+By abstracting very simple operations as inline functions, we can plug the Store\+Back\+Operations internal classes into templated vector operation engines. See an example of such engine in \hyperlink{vct_fixed_size_vector_recursive_engines_8h}{vct\+Fixed\+Size\+Vector\+Recursive\+Engines.\+h} , and an example of plugging an operation into the engine in vct\+Fixed\+Size\+Vector\+Operations.\+h .
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+Output\+Type} & the type of the first (left-\/side) operand, which is an input output \\
+\hline
+{\em input2\+Type} & the type of the second (right-\/side) operand)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+This class contains the binary operation \hyperlink{classvct_store_back_binary_operations_1_1_swap}{Swap}, whose operation signature is 
+\begin{DoxyPre}
+static inline void Operate(Input1Type & input1, Input2Type & input2)
+\end{DoxyPre}
+ with no const or return type. It was included here since we didn\textquotesingle{}t want to have a special file for just one operation.
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classvct_store_back_binary_operations_1_1_addition}{Addition} \hyperlink{classvct_store_back_binary_operations_1_1_subtraction}{Subtraction} \hyperlink{classvct_store_back_binary_operations_1_1_multiplication}{Multiplication} \hyperlink{classvct_store_back_binary_operations_1_1_division}{Division} \hyperlink{classvct_store_back_binary_operations_1_1_first_operand}{First\+Operand} \hyperlink{classvct_store_back_binary_operations_1_1_second_operand}{Second\+Operand} \hyperlink{classvct_store_back_binary_operations_1_1_maximum}{Maximum} \hyperlink{classvct_store_back_binary_operations_1_1_minimum}{Minimum} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classvct_store_back_binary_operations_a65a7197563c794a879fb50a406e70c8f}{}\index{vct\+Store\+Back\+Binary\+Operations@{vct\+Store\+Back\+Binary\+Operations}!Input2\+Type@{Input2\+Type}}
+\index{Input2\+Type@{Input2\+Type}!vct\+Store\+Back\+Binary\+Operations@{vct\+Store\+Back\+Binary\+Operations}}
+\subsubsection[{Input2\+Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+input\+Output\+Type , class \+\_\+input2\+Type  = \+\_\+input\+Output\+Type$>$ typedef \+\_\+input2\+Type {\bf vct\+Store\+Back\+Binary\+Operations}$<$ \+\_\+input\+Output\+Type, \+\_\+input2\+Type $>$\+::{\bf Input2\+Type}}\label{classvct_store_back_binary_operations_a65a7197563c794a879fb50a406e70c8f}
+\hypertarget{classvct_store_back_binary_operations_a9dc481d9e1345541dd5d833d5e5688f3}{}\index{vct\+Store\+Back\+Binary\+Operations@{vct\+Store\+Back\+Binary\+Operations}!Input\+Output\+Type@{Input\+Output\+Type}}
+\index{Input\+Output\+Type@{Input\+Output\+Type}!vct\+Store\+Back\+Binary\+Operations@{vct\+Store\+Back\+Binary\+Operations}}
+\subsubsection[{Input\+Output\+Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+input\+Output\+Type , class \+\_\+input2\+Type  = \+\_\+input\+Output\+Type$>$ typedef \+\_\+input\+Output\+Type {\bf vct\+Store\+Back\+Binary\+Operations}$<$ \+\_\+input\+Output\+Type, \+\_\+input2\+Type $>$\+::{\bf Input\+Output\+Type}}\label{classvct_store_back_binary_operations_a9dc481d9e1345541dd5d833d5e5688f3}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Vector/\hyperlink{vct_store_back_binary_operations_8h}{vct\+Store\+Back\+Binary\+Operations.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,108 @@
+\hypertarget{classmts_o_d_e_world}{}\section{mts\+O\+D\+E\+World Class Reference}
+\label{classmts_o_d_e_world}\index{mts\+O\+D\+E\+World@{mts\+O\+D\+E\+World}}
+
+
+{\ttfamily \#include $<$mts\+O\+D\+E\+World.\+h$>$}
+
+Inheritance diagram for mts\+O\+D\+E\+World\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=6.000000cm]{da/d87/classmts_o_d_e_world}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmts_o_d_e_world_ad49af19a2073e37869cd814f49ef18de}{mts\+O\+D\+E\+World} (const std\+::string \&name, double period, const \hyperlink{classvct_fixed_size_vector}{vct\+Fixed\+Size\+Vector}$<$ double, 3 $>$ \&gravity=\hyperlink{classosa_o_d_e_world_ae1d291977a1d6305cea26a6bd87fa320}{G\+R\+A\+V\+I\+T\+Y})
+\begin{DoxyCompactList}\small\item\em Create a new world. \end{DoxyCompactList}\item 
+\hyperlink{classmts_o_d_e_world_a0258d0476537a288b9c8e1338c6ed308}{$\sim$mts\+O\+D\+E\+World} ()
+\begin{DoxyCompactList}\small\item\em Destroy the world! \end{DoxyCompactList}\item 
+void \hyperlink{classmts_o_d_e_world_a5dc51ea0cb5cfb120a9edbf67d2f0fa7}{Configure} (const std\+::string \&\hyperlink{cmn_portability_8h_a021894e2626935fa2305434b1e893ff6}{C\+M\+N\+\_\+\+U\+N\+U\+S\+E\+D}(argv))
+\item 
+void \hyperlink{classmts_o_d_e_world_aad2cbd02cb84d5bce6b9f04488d64b85}{Startup} ()
+\item 
+void \hyperlink{classmts_o_d_e_world_a9a5287b71830a7c814642c7c23448412}{Run} ()
+\item 
+void \hyperlink{classmts_o_d_e_world_a550824ddd1a7f7ade6f7d18b5b66b931}{Cleanup} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmts_o_d_e_world_ad49af19a2073e37869cd814f49ef18de}{}\index{mts\+O\+D\+E\+World@{mts\+O\+D\+E\+World}!mts\+O\+D\+E\+World@{mts\+O\+D\+E\+World}}
+\index{mts\+O\+D\+E\+World@{mts\+O\+D\+E\+World}!mts\+O\+D\+E\+World@{mts\+O\+D\+E\+World}}
+\subsubsection[{mts\+O\+D\+E\+World}]{\setlength{\rightskip}{0pt plus 5cm}mts\+O\+D\+E\+World\+::mts\+O\+D\+E\+World (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name, }
+\item[{double}]{period, }
+\item[{const {\bf vct\+Fixed\+Size\+Vector}$<$ double, 3 $>$ \&}]{gravity = {\ttfamily {\bf G\+R\+A\+V\+I\+T\+Y}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_o_d_e_world_ad49af19a2073e37869cd814f49ef18de}
+
+
+Create a new world. 
+
+Create a new O\+D\+E world. This initializes the O\+D\+E engine and create a new world and a new top level space. It also sets simulation parameters such as error reduction parameter (E\+R\+P) and constraint force mixing (C\+F\+M) 
+\begin{DoxyParams}{Parameters}
+{\em gravity} & A gravity vector. The defalt value is \$\{bmatrix\} 0 \& 0 \& -\/9.\+81 \{bmatrix\}\$. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmts_o_d_e_world_a0258d0476537a288b9c8e1338c6ed308}{}\index{mts\+O\+D\+E\+World@{mts\+O\+D\+E\+World}!````~mts\+O\+D\+E\+World@{$\sim$mts\+O\+D\+E\+World}}
+\index{````~mts\+O\+D\+E\+World@{$\sim$mts\+O\+D\+E\+World}!mts\+O\+D\+E\+World@{mts\+O\+D\+E\+World}}
+\subsubsection[{$\sim$mts\+O\+D\+E\+World}]{\setlength{\rightskip}{0pt plus 5cm}mts\+O\+D\+E\+World\+::$\sim$mts\+O\+D\+E\+World (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_o_d_e_world_a0258d0476537a288b9c8e1338c6ed308}
+
+
+Destroy the world! 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classmts_o_d_e_world_a550824ddd1a7f7ade6f7d18b5b66b931}{}\index{mts\+O\+D\+E\+World@{mts\+O\+D\+E\+World}!Cleanup@{Cleanup}}
+\index{Cleanup@{Cleanup}!mts\+O\+D\+E\+World@{mts\+O\+D\+E\+World}}
+\subsubsection[{Cleanup}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+O\+D\+E\+World\+::\+Cleanup (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classmts_o_d_e_world_a550824ddd1a7f7ade6f7d18b5b66b931}
+Virtual method that gets overloaded, and is run after the component gets killed using \hyperlink{classmts_task_continuous_ad1f8145306e074fbea8baab3beef4c5b}{Kill()} method. 
+
+Reimplemented from \hyperlink{classmts_component_a891f330f4fde7d831dcf7dc537dc5e81}{mts\+Component}.
+
+\hypertarget{classmts_o_d_e_world_a5dc51ea0cb5cfb120a9edbf67d2f0fa7}{}\index{mts\+O\+D\+E\+World@{mts\+O\+D\+E\+World}!Configure@{Configure}}
+\index{Configure@{Configure}!mts\+O\+D\+E\+World@{mts\+O\+D\+E\+World}}
+\subsubsection[{Configure}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+O\+D\+E\+World\+::\+Configure (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{C\+M\+N\+\_\+\+U\+N\+U\+S\+E\+Dargv}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_o_d_e_world_a5dc51ea0cb5cfb120a9edbf67d2f0fa7}
+\hypertarget{classmts_o_d_e_world_a9a5287b71830a7c814642c7c23448412}{}\index{mts\+O\+D\+E\+World@{mts\+O\+D\+E\+World}!Run@{Run}}
+\index{Run@{Run}!mts\+O\+D\+E\+World@{mts\+O\+D\+E\+World}}
+\subsubsection[{Run}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+O\+D\+E\+World\+::\+Run (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classmts_o_d_e_world_a9a5287b71830a7c814642c7c23448412}
+Pure virtual method that gets overloaded to run the actual task. 
+
+Implements \hyperlink{classmts_task_a20e18c9479cb650792456c32ee689834}{mts\+Task}.
+
+\hypertarget{classmts_o_d_e_world_aad2cbd02cb84d5bce6b9f04488d64b85}{}\index{mts\+O\+D\+E\+World@{mts\+O\+D\+E\+World}!Startup@{Startup}}
+\index{Startup@{Startup}!mts\+O\+D\+E\+World@{mts\+O\+D\+E\+World}}
+\subsubsection[{Startup}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+O\+D\+E\+World\+::\+Startup (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classmts_o_d_e_world_aad2cbd02cb84d5bce6b9f04488d64b85}
+Virtual method that gets overloaded, and is run before the component is started. 
+
+Reimplemented from \hyperlink{classmts_component_aaf28f0262b44eb6866e10089a02fa6e4}{mts\+Component}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/saw\+Open\+Dynamics\+Engine/include/saw\+Open\+Dynamics\+Engine/\hyperlink{mts_o_d_e_world_8h}{mts\+O\+D\+E\+World.\+h}\end{DoxyCompactItemize}

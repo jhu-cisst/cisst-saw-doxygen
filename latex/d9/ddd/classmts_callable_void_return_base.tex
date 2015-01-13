@@ -1,0 +1,73 @@
+\hypertarget{classmts_callable_void_return_base}{}\section{mts\+Callable\+Void\+Return\+Base Class Reference}
+\label{classmts_callable_void_return_base}\index{mts\+Callable\+Void\+Return\+Base@{mts\+Callable\+Void\+Return\+Base}}
+
+
+{\ttfamily \#include $<$mts\+Callable\+Void\+Return\+Base.\+h$>$}
+
+Inheritance diagram for mts\+Callable\+Void\+Return\+Base\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.590909cm]{d9/ddd/classmts_callable_void_return_base}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmts_callable_void_return_base_ac353432b81aacb59a0fa3707fa15fcfc}{mts\+Callable\+Void\+Return\+Base} (void)
+\item 
+virtual \hyperlink{classmts_callable_void_return_base_a528fa7ce7713010f7c054d5a346bd802}{$\sim$mts\+Callable\+Void\+Return\+Base} ()
+\item 
+virtual mts\+Execution\+Result \hyperlink{classmts_callable_void_return_base_a7f0fe84a7078bad40663aa86cd455fc2}{Execute} (\hyperlink{classmts_generic_object}{mts\+Generic\+Object} \&result)=0
+\item 
+virtual void \hyperlink{classmts_callable_void_return_base_ab5c0d1c688e1996c31260e95525f8f6d}{To\+Stream} (std\+::ostream \&output\+Stream) const =0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A base class command object with an execute method that takes no arguments but returns a result. This pure virtual base class is derived to support either global functions or methods with the signature \char`\"{}void method(\+\_\+result\+Type \& result)\char`\"{} (non const) 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmts_callable_void_return_base_ac353432b81aacb59a0fa3707fa15fcfc}{}\index{mts\+Callable\+Void\+Return\+Base@{mts\+Callable\+Void\+Return\+Base}!mts\+Callable\+Void\+Return\+Base@{mts\+Callable\+Void\+Return\+Base}}
+\index{mts\+Callable\+Void\+Return\+Base@{mts\+Callable\+Void\+Return\+Base}!mts\+Callable\+Void\+Return\+Base@{mts\+Callable\+Void\+Return\+Base}}
+\subsubsection[{mts\+Callable\+Void\+Return\+Base}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Callable\+Void\+Return\+Base\+::mts\+Callable\+Void\+Return\+Base (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_callable_void_return_base_ac353432b81aacb59a0fa3707fa15fcfc}
+The constructor. Does nothing \hypertarget{classmts_callable_void_return_base_a528fa7ce7713010f7c054d5a346bd802}{}\index{mts\+Callable\+Void\+Return\+Base@{mts\+Callable\+Void\+Return\+Base}!````~mts\+Callable\+Void\+Return\+Base@{$\sim$mts\+Callable\+Void\+Return\+Base}}
+\index{````~mts\+Callable\+Void\+Return\+Base@{$\sim$mts\+Callable\+Void\+Return\+Base}!mts\+Callable\+Void\+Return\+Base@{mts\+Callable\+Void\+Return\+Base}}
+\subsubsection[{$\sim$mts\+Callable\+Void\+Return\+Base}]{\setlength{\rightskip}{0pt plus 5cm}virtual mts\+Callable\+Void\+Return\+Base\+::$\sim$mts\+Callable\+Void\+Return\+Base (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classmts_callable_void_return_base_a528fa7ce7713010f7c054d5a346bd802}
+The destructor. Does nothing 
+
+\subsection{Member Function Documentation}
+\hypertarget{classmts_callable_void_return_base_a7f0fe84a7078bad40663aa86cd455fc2}{}\index{mts\+Callable\+Void\+Return\+Base@{mts\+Callable\+Void\+Return\+Base}!Execute@{Execute}}
+\index{Execute@{Execute}!mts\+Callable\+Void\+Return\+Base@{mts\+Callable\+Void\+Return\+Base}}
+\subsubsection[{Execute}]{\setlength{\rightskip}{0pt plus 5cm}virtual mts\+Execution\+Result mts\+Callable\+Void\+Return\+Base\+::\+Execute (
+\begin{DoxyParamCaption}
+\item[{{\bf mts\+Generic\+Object} \&}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classmts_callable_void_return_base_a7f0fe84a7078bad40663aa86cd455fc2}
+The execute method. Abstract method to be implemented by derived classes to run the actual operation on the receiver. 
+
+Implemented in \hyperlink{classmts_callable_void_return_method_generic_a91f3095091379fafba6adea4676d4019}{mts\+Callable\+Void\+Return\+Method\+Generic$<$ \+\_\+class\+Type $>$}, and \hyperlink{classmts_callable_void_return_method_a815dd28e94497e91cb0ed1e891a35dad}{mts\+Callable\+Void\+Return\+Method$<$ \+\_\+class\+Type, \+\_\+result\+Type $>$}.
+
+\hypertarget{classmts_callable_void_return_base_ab5c0d1c688e1996c31260e95525f8f6d}{}\index{mts\+Callable\+Void\+Return\+Base@{mts\+Callable\+Void\+Return\+Base}!To\+Stream@{To\+Stream}}
+\index{To\+Stream@{To\+Stream}!mts\+Callable\+Void\+Return\+Base@{mts\+Callable\+Void\+Return\+Base}}
+\subsubsection[{To\+Stream}]{\setlength{\rightskip}{0pt plus 5cm}virtual void mts\+Callable\+Void\+Return\+Base\+::\+To\+Stream (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{output\+Stream}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classmts_callable_void_return_base_ab5c0d1c688e1996c31260e95525f8f6d}
+Human readable description 
+
+Implemented in \hyperlink{classmts_callable_void_return_method_generic_aac08fdc349e9cea779f98809fa77ba44}{mts\+Callable\+Void\+Return\+Method\+Generic$<$ \+\_\+class\+Type $>$}, and \hyperlink{classmts_callable_void_return_method_a2ca736ce45432c5cd746227795253ea3}{mts\+Callable\+Void\+Return\+Method$<$ \+\_\+class\+Type, \+\_\+result\+Type $>$}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Multi\+Task/\hyperlink{mts_callable_void_return_base_8h}{mts\+Callable\+Void\+Return\+Base.\+h}\end{DoxyCompactItemize}

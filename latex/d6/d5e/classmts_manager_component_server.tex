@@ -1,0 +1,451 @@
+\hypertarget{classmts_manager_component_server}{}\section{mts\+Manager\+Component\+Server Class Reference}
+\label{classmts_manager_component_server}\index{mts\+Manager\+Component\+Server@{mts\+Manager\+Component\+Server}}
+
+
+{\ttfamily \#include $<$mts\+Manager\+Component\+Server.\+h$>$}
+
+Inheritance diagram for mts\+Manager\+Component\+Server\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=7.000000cm]{d6/d5e/classmts_manager_component_server}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structmts_manager_component_server_1_1_interface_g_c_m_function_type}{Interface\+G\+C\+M\+Function\+Type}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classmts_manager_component_server_ab4a7ff516bbe04b439039a2342e48455}{Startup} (void)
+\item 
+void \hyperlink{classmts_manager_component_server_a18c682506c92fd6e0523e3925f1e637b}{Run} (void)
+\item 
+void \hyperlink{classmts_manager_component_server_a3cd58f066e7023e2bc000232b178ee55}{Cleanup} (void)
+\item 
+bool \hyperlink{classmts_manager_component_server_a89c2c3df2989610b4ae2fecb70d3184f}{Add\+New\+Client\+Process} (const std\+::string \&client\+Process\+Name)
+\item 
+void \hyperlink{classmts_manager_component_server_a51717169473ba879ea40f671dd5f5d27}{Add\+Component\+Event} (const mts\+Description\+Component \&component)
+\item 
+void \hyperlink{classmts_manager_component_server_a8db723af6b218fa2a0c648664d06da1f}{Add\+Connection\+Event} (const mts\+Description\+Connection \&connection)
+\item 
+void \hyperlink{classmts_manager_component_server_a77c2a4abdf23b89b842615fa50c0cf3c}{Remove\+Connection\+Event} (const mts\+Description\+Connection \&connection)
+\item 
+bool \hyperlink{classmts_manager_component_server_a033499e692bea2a893927d637841c1c4}{Disconnect\+Cleanup} (const std\+::string \&process\+Name)
+\item 
+void \hyperlink{classmts_manager_component_server_a1dcd5082d9a306e6a47b1b22aec218f3}{Component\+Disconnect} (const std\+::string \&process\+Name, const mts\+Description\+Connection \&arg)
+\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classcmn_named_map}{cmn\+Named\+Map}$<$ \hyperlink{structmts_manager_component_server_1_1_interface_g_c_m_function_type}{Interface\+G\+C\+M\+Function\+Type} $>$ \hyperlink{classmts_manager_component_server_a9b456473c566d9993274d3de0f124f7c}{Interface\+G\+C\+M\+Function\+Map\+Type}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classmts_manager_component_server_a3384159cec50ef6169f8c8b38dcee9bd}{Add\+Interface\+G\+C\+M} (void)
+\item 
+void \hyperlink{classmts_manager_component_server_a12a96063cacc87c1d9d808fefbae6ac0}{Get\+Names\+Of\+Processes} (std\+::vector$<$ std\+::string $>$ \&process\+List) const 
+\item 
+void \hyperlink{classmts_manager_component_server_aaed93e634c3edb8108f6211bd409a05b}{Interface\+G\+C\+M\+Commands\+\_\+\+Component\+Create} (const mts\+Description\+Component \&component\+Description, bool \&result)
+\item 
+void \hyperlink{classmts_manager_component_server_ac1a005492dde62b258eadcdc5ec20232}{Interface\+G\+C\+M\+Commands\+\_\+\+Component\+Configure} (const mts\+Description\+Component \&arg)
+\item 
+void \hyperlink{classmts_manager_component_server_ae635792d3cd3fb4d84167e4ee149c664}{Interface\+G\+C\+M\+Commands\+\_\+\+Component\+Connect} (const mts\+Description\+Connection \&connection\+Description)
+\item 
+void \hyperlink{classmts_manager_component_server_a734eefb7e18ba05156a9ca1443a77b39}{Interface\+G\+C\+M\+Commands\+\_\+\+Component\+Disconnect} (const mts\+Description\+Connection \&arg)
+\item 
+void \hyperlink{classmts_manager_component_server_afe4917628e2e91dfe20fffafc43fe746}{Interface\+G\+C\+M\+Commands\+\_\+\+Component\+Start} (const mts\+Component\+Status\+Control \&arg)
+\item 
+void \hyperlink{classmts_manager_component_server_af2f4fc96e195cc1a7d5811a3fdb8e379}{Interface\+G\+C\+M\+Commands\+\_\+\+Component\+Stop} (const mts\+Component\+Status\+Control \&arg)
+\item 
+void \hyperlink{classmts_manager_component_server_a9029510ae1992a36feb9388dbceb098b}{Interface\+G\+C\+M\+Commands\+\_\+\+Component\+Resume} (const mts\+Component\+Status\+Control \&arg)
+\item 
+void \hyperlink{classmts_manager_component_server_ae42ed223d038117a5588bcc640d162ab}{Interface\+G\+C\+M\+Commands\+\_\+\+Component\+Get\+State} (const mts\+Description\+Component \&component, mts\+Component\+State \&state) const 
+\item 
+void \hyperlink{classmts_manager_component_server_a82166415703899c3a250869bf8adbd59}{Interface\+G\+C\+M\+Commands\+\_\+\+Get\+Names\+Of\+Processes} (std\+::vector$<$ std\+::string $>$ \&names) const 
+\item 
+void \hyperlink{classmts_manager_component_server_abd512edd1f98f42ada757d78a113e57a}{Interface\+G\+C\+M\+Commands\+\_\+\+Get\+Names\+Of\+Components} (const std\+::string \&process\+Name, std\+::vector$<$ std\+::string $>$ \&names) const 
+\item 
+void \hyperlink{classmts_manager_component_server_ac67fcc9dd6ecc7205a783e2b5d31709c}{Interface\+G\+C\+M\+Commands\+\_\+\+Get\+Names\+Of\+Interfaces} (const mts\+Description\+Component \&component, mts\+Description\+Interface \&interfaces) const 
+\item 
+void \hyperlink{classmts_manager_component_server_a343cbce6cf3d4e2af99e95af0ef0a9d7}{Interface\+G\+C\+M\+Commands\+\_\+\+Get\+List\+Of\+Connections} (std\+::vector$<$ mts\+Description\+Connection $>$ \&list\+Of\+Connections) const 
+\item 
+void \hyperlink{classmts_manager_component_server_a28987b940123ebebf65ede751021a6ec}{Interface\+G\+C\+M\+Commands\+\_\+\+Get\+Interface\+Provided\+Description} (const mts\+Description\+Interface \&intfc, mts\+Interface\+Provided\+Description \&description) const 
+\item 
+void \hyperlink{classmts_manager_component_server_a44e58ed09a6b9c7b2caa977923ca9b1a}{Interface\+G\+C\+M\+Commands\+\_\+\+Get\+Interface\+Required\+Description} (const mts\+Description\+Interface \&intfc, mts\+Interface\+Required\+Description \&description) const 
+\item 
+void \hyperlink{classmts_manager_component_server_a973ef27b54522196c93567c11a4f4bf9}{Interface\+G\+C\+M\+Commands\+\_\+\+Load\+Library} (const mts\+Description\+Load\+Library \&lib, bool \&result) const 
+\item 
+void \hyperlink{classmts_manager_component_server_ab839a8bfcec131ad95a3211c81189913}{Interface\+G\+C\+M\+Commands\+\_\+\+Print\+Log} (const \hyperlink{classmts_log_message}{mts\+Log\+Message} \&log)
+\item 
+void \hyperlink{classmts_manager_component_server_ae577ba00e3227d38951469ee52a94bb9}{Interface\+G\+C\+M\+Commands\+\_\+\+Set\+Log\+Forwarding} (const std\+::vector$<$ std\+::string $>$ \&process\+Names, bool state)
+\item 
+void \hyperlink{classmts_manager_component_server_a1019aae9f1b57584d6bd6aebaf04f46b}{Interface\+G\+C\+M\+Commands\+\_\+\+Enable\+Log\+Forwarding} (const std\+::vector$<$ std\+::string $>$ \&process\+Names)
+\item 
+void \hyperlink{classmts_manager_component_server_a1bef6d6b8723f33d15a78f98e3f3fad9}{Interface\+G\+C\+M\+Commands\+\_\+\+Disable\+Log\+Forwarding} (const std\+::vector$<$ std\+::string $>$ \&process\+Names)
+\item 
+void \hyperlink{classmts_manager_component_server_a27c2f1fbf13c43eb3baad98eed4ad610}{Interface\+G\+C\+M\+Commands\+\_\+\+Get\+Log\+Forwarding\+States} (const \hyperlink{mts_generic_object_proxy_8h_ae2238149254430b4959aa4e16892fc07}{std\+String\+Vec} \&process\+Names, \hyperlink{mts_generic_object_proxy_8h_a3fcb43cabc338a5aee6772138bee2416}{std\+Char\+Vec} \&states) const 
+\item 
+void \hyperlink{classmts_manager_component_server_aac8ecf77336d288fb014924dd8637e47}{Interface\+G\+C\+M\+Commands\+\_\+\+Get\+Absolute\+Time\+Diffs} (const std\+::vector$<$ std\+::string $>$ \&process\+Names, std\+::vector$<$ double $>$ \&process\+Times) const 
+\item 
+void \hyperlink{classmts_manager_component_server_ac4192696d711afd1a13ae5097b4f2148}{Interface\+G\+C\+M\+Commands\+\_\+\+Get\+List\+Of\+Component\+Classes} (const std\+::string \&process\+Name, std\+::vector$<$ mts\+Description\+Component\+Class $>$ \&list\+Of\+Component\+Classes) const 
+\item 
+void \hyperlink{classmts_manager_component_server_ae94bfdf1bd661f6e9ae08f60ab064e6f}{Handle\+Change\+State\+Event} (const mts\+Component\+State\+Change \&state\+Change)
+\item 
+\hyperlink{classmts_manager_component_server_a76de83e83abbedecc53b7bcbe296d849}{mts\+Manager\+Component\+Server} (\hyperlink{classmts_manager_global}{mts\+Manager\+Global} $\ast$gcm)
+\item 
+\hyperlink{classmts_manager_component_server_af4ffa495025cd7f60b992f29edb71543}{$\sim$mts\+Manager\+Component\+Server} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmts_manager_global}{mts\+Manager\+Global} $\ast$ \hyperlink{classmts_manager_component_server_a59e64d383adcaa04d1e89e4596864209}{G\+C\+M}
+\item 
+\hyperlink{classmts_manager_component_server_a9b456473c566d9993274d3de0f124f7c}{Interface\+G\+C\+M\+Function\+Map\+Type} \hyperlink{classmts_manager_component_server_aba31458f9efbd9bd8f3ffc9335f56c9e}{Interface\+G\+C\+M\+Function\+Map}
+\item 
+\hyperlink{classmts_function_write}{mts\+Function\+Write} \hyperlink{classmts_manager_component_server_a183cc63d73da8ba811bab26d4c7ce2d7}{Event\+Print\+Log}
+\item 
+\hyperlink{classmts_function_write}{mts\+Function\+Write} \hyperlink{classmts_manager_component_server_a5ba7772f5e8d7da177f8280f61ca8610}{Interface\+G\+C\+M\+Events\+\_\+\+Add\+Component}
+\item 
+\hyperlink{classmts_function_write}{mts\+Function\+Write} \hyperlink{classmts_manager_component_server_a45cc7ef85a7b47f504cecfe23d40590f}{Interface\+G\+C\+M\+Events\+\_\+\+Add\+Connection}
+\item 
+\hyperlink{classmts_function_write}{mts\+Function\+Write} \hyperlink{classmts_manager_component_server_a11a899e797a81a3e84bd4bc7c2025344}{Interface\+G\+C\+M\+Events\+\_\+\+Remove\+Connection}
+\item 
+\hyperlink{classmts_function_write}{mts\+Function\+Write} \hyperlink{classmts_manager_component_server_a169604bf1d8337dc3b4a4d7017d61982}{Interface\+G\+C\+M\+Events\+\_\+\+Change\+State}
+\item 
+\hyperlink{classmts_function_void}{mts\+Function\+Void} \hyperlink{classmts_manager_component_server_a3c150e5ac5a8a4b7b68d30874e8daf73}{Interface\+G\+C\+M\+Events\+\_\+\+M\+C\+S\+Ready}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classmts_manager_component_server_a31c1c611dbb103ac58ed40d84960baa0}{mts\+Manager\+Local}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classmts_manager_component_server_a9b456473c566d9993274d3de0f124f7c}{}\index{mts\+Manager\+Component\+Server@{mts\+Manager\+Component\+Server}!Interface\+G\+C\+M\+Function\+Map\+Type@{Interface\+G\+C\+M\+Function\+Map\+Type}}
+\index{Interface\+G\+C\+M\+Function\+Map\+Type@{Interface\+G\+C\+M\+Function\+Map\+Type}!mts\+Manager\+Component\+Server@{mts\+Manager\+Component\+Server}}
+\subsubsection[{Interface\+G\+C\+M\+Function\+Map\+Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf cmn\+Named\+Map}$<${\bf Interface\+G\+C\+M\+Function\+Type}$>$ {\bf mts\+Manager\+Component\+Server\+::\+Interface\+G\+C\+M\+Function\+Map\+Type}\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_manager_component_server_a9b456473c566d9993274d3de0f124f7c}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmts_manager_component_server_a76de83e83abbedecc53b7bcbe296d849}{}\index{mts\+Manager\+Component\+Server@{mts\+Manager\+Component\+Server}!mts\+Manager\+Component\+Server@{mts\+Manager\+Component\+Server}}
+\index{mts\+Manager\+Component\+Server@{mts\+Manager\+Component\+Server}!mts\+Manager\+Component\+Server@{mts\+Manager\+Component\+Server}}
+\subsubsection[{mts\+Manager\+Component\+Server}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Manager\+Component\+Server\+::mts\+Manager\+Component\+Server (
+\begin{DoxyParamCaption}
+\item[{{\bf mts\+Manager\+Global} $\ast$}]{gcm}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_manager_component_server_a76de83e83abbedecc53b7bcbe296d849}
+Protected constructor to prevent users from createing this component \hypertarget{classmts_manager_component_server_af4ffa495025cd7f60b992f29edb71543}{}\index{mts\+Manager\+Component\+Server@{mts\+Manager\+Component\+Server}!````~mts\+Manager\+Component\+Server@{$\sim$mts\+Manager\+Component\+Server}}
+\index{````~mts\+Manager\+Component\+Server@{$\sim$mts\+Manager\+Component\+Server}!mts\+Manager\+Component\+Server@{mts\+Manager\+Component\+Server}}
+\subsubsection[{$\sim$mts\+Manager\+Component\+Server}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Manager\+Component\+Server\+::$\sim$mts\+Manager\+Component\+Server (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_manager_component_server_af4ffa495025cd7f60b992f29edb71543}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classmts_manager_component_server_a51717169473ba879ea40f671dd5f5d27}{}\index{mts\+Manager\+Component\+Server@{mts\+Manager\+Component\+Server}!Add\+Component\+Event@{Add\+Component\+Event}}
+\index{Add\+Component\+Event@{Add\+Component\+Event}!mts\+Manager\+Component\+Server@{mts\+Manager\+Component\+Server}}
+\subsubsection[{Add\+Component\+Event}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Manager\+Component\+Server\+::\+Add\+Component\+Event (
+\begin{DoxyParamCaption}
+\item[{const mts\+Description\+Component \&}]{component}
+\end{DoxyParamCaption}
+)}\label{classmts_manager_component_server_a51717169473ba879ea40f671dd5f5d27}
+Methods for global component manager (G\+C\+M) \hypertarget{classmts_manager_component_server_a8db723af6b218fa2a0c648664d06da1f}{}\index{mts\+Manager\+Component\+Server@{mts\+Manager\+Component\+Server}!Add\+Connection\+Event@{Add\+Connection\+Event}}
+\index{Add\+Connection\+Event@{Add\+Connection\+Event}!mts\+Manager\+Component\+Server@{mts\+Manager\+Component\+Server}}
+\subsubsection[{Add\+Connection\+Event}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Manager\+Component\+Server\+::\+Add\+Connection\+Event (
+\begin{DoxyParamCaption}
+\item[{const mts\+Description\+Connection \&}]{connection}
+\end{DoxyParamCaption}
+)}\label{classmts_manager_component_server_a8db723af6b218fa2a0c648664d06da1f}
+\hypertarget{classmts_manager_component_server_a3384159cec50ef6169f8c8b38dcee9bd}{}\index{mts\+Manager\+Component\+Server@{mts\+Manager\+Component\+Server}!Add\+Interface\+G\+C\+M@{Add\+Interface\+G\+C\+M}}
+\index{Add\+Interface\+G\+C\+M@{Add\+Interface\+G\+C\+M}!mts\+Manager\+Component\+Server@{mts\+Manager\+Component\+Server}}
+\subsubsection[{Add\+Interface\+G\+C\+M}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Manager\+Component\+Server\+::\+Add\+Interface\+G\+C\+M (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_manager_component_server_a3384159cec50ef6169f8c8b38dcee9bd}
+Add Interface\+G\+C\+M \hypertarget{classmts_manager_component_server_a89c2c3df2989610b4ae2fecb70d3184f}{}\index{mts\+Manager\+Component\+Server@{mts\+Manager\+Component\+Server}!Add\+New\+Client\+Process@{Add\+New\+Client\+Process}}
+\index{Add\+New\+Client\+Process@{Add\+New\+Client\+Process}!mts\+Manager\+Component\+Server@{mts\+Manager\+Component\+Server}}
+\subsubsection[{Add\+New\+Client\+Process}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Manager\+Component\+Server\+::\+Add\+New\+Client\+Process (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{client\+Process\+Name}
+\end{DoxyParamCaption}
+)}\label{classmts_manager_component_server_a89c2c3df2989610b4ae2fecb70d3184f}
+Create a new set of function objects, add Interface\+G\+C\+M\textquotesingle{}s required interface to this component, and connect it to Interface\+L\+C\+M\textquotesingle{}s provided interface \hypertarget{classmts_manager_component_server_a3cd58f066e7023e2bc000232b178ee55}{}\index{mts\+Manager\+Component\+Server@{mts\+Manager\+Component\+Server}!Cleanup@{Cleanup}}
+\index{Cleanup@{Cleanup}!mts\+Manager\+Component\+Server@{mts\+Manager\+Component\+Server}}
+\subsubsection[{Cleanup}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Manager\+Component\+Server\+::\+Cleanup (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_manager_component_server_a3cd58f066e7023e2bc000232b178ee55}
+Virtual method that gets overloaded, and is run after the component gets killed using \hyperlink{classmts_task_from_signal_a9a1b6e7c80ca2c2fdc14de78e3635922}{Kill()} method. 
+
+Reimplemented from \hyperlink{classmts_manager_component_base_ae893671d98413773200cae361eac2071}{mts\+Manager\+Component\+Base}.
+
+\hypertarget{classmts_manager_component_server_a1dcd5082d9a306e6a47b1b22aec218f3}{}\index{mts\+Manager\+Component\+Server@{mts\+Manager\+Component\+Server}!Component\+Disconnect@{Component\+Disconnect}}
+\index{Component\+Disconnect@{Component\+Disconnect}!mts\+Manager\+Component\+Server@{mts\+Manager\+Component\+Server}}
+\subsubsection[{Component\+Disconnect}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Manager\+Component\+Server\+::\+Component\+Disconnect (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{process\+Name, }
+\item[{const mts\+Description\+Connection \&}]{arg}
+\end{DoxyParamCaption}
+)}\label{classmts_manager_component_server_a1dcd5082d9a306e6a47b1b22aec218f3}
+\hypertarget{classmts_manager_component_server_a033499e692bea2a893927d637841c1c4}{}\index{mts\+Manager\+Component\+Server@{mts\+Manager\+Component\+Server}!Disconnect\+Cleanup@{Disconnect\+Cleanup}}
+\index{Disconnect\+Cleanup@{Disconnect\+Cleanup}!mts\+Manager\+Component\+Server@{mts\+Manager\+Component\+Server}}
+\subsubsection[{Disconnect\+Cleanup}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Manager\+Component\+Server\+::\+Disconnect\+Cleanup (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{process\+Name}
+\end{DoxyParamCaption}
+)}\label{classmts_manager_component_server_a033499e692bea2a893927d637841c1c4}
+\hypertarget{classmts_manager_component_server_a12a96063cacc87c1d9d808fefbae6ac0}{}\index{mts\+Manager\+Component\+Server@{mts\+Manager\+Component\+Server}!Get\+Names\+Of\+Processes@{Get\+Names\+Of\+Processes}}
+\index{Get\+Names\+Of\+Processes@{Get\+Names\+Of\+Processes}!mts\+Manager\+Component\+Server@{mts\+Manager\+Component\+Server}}
+\subsubsection[{Get\+Names\+Of\+Processes}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Manager\+Component\+Server\+::\+Get\+Names\+Of\+Processes (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ std\+::string $>$ \&}]{process\+List}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_manager_component_server_a12a96063cacc87c1d9d808fefbae6ac0}
+Getters for G\+C\+M service provider \hypertarget{classmts_manager_component_server_ae94bfdf1bd661f6e9ae08f60ab064e6f}{}\index{mts\+Manager\+Component\+Server@{mts\+Manager\+Component\+Server}!Handle\+Change\+State\+Event@{Handle\+Change\+State\+Event}}
+\index{Handle\+Change\+State\+Event@{Handle\+Change\+State\+Event}!mts\+Manager\+Component\+Server@{mts\+Manager\+Component\+Server}}
+\subsubsection[{Handle\+Change\+State\+Event}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Manager\+Component\+Server\+::\+Handle\+Change\+State\+Event (
+\begin{DoxyParamCaption}
+\item[{const mts\+Component\+State\+Change \&}]{state\+Change}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_manager_component_server_ae94bfdf1bd661f6e9ae08f60ab064e6f}
+\hypertarget{classmts_manager_component_server_ac1a005492dde62b258eadcdc5ec20232}{}\index{mts\+Manager\+Component\+Server@{mts\+Manager\+Component\+Server}!Interface\+G\+C\+M\+Commands\+\_\+\+Component\+Configure@{Interface\+G\+C\+M\+Commands\+\_\+\+Component\+Configure}}
+\index{Interface\+G\+C\+M\+Commands\+\_\+\+Component\+Configure@{Interface\+G\+C\+M\+Commands\+\_\+\+Component\+Configure}!mts\+Manager\+Component\+Server@{mts\+Manager\+Component\+Server}}
+\subsubsection[{Interface\+G\+C\+M\+Commands\+\_\+\+Component\+Configure}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Manager\+Component\+Server\+::\+Interface\+G\+C\+M\+Commands\+\_\+\+Component\+Configure (
+\begin{DoxyParamCaption}
+\item[{const mts\+Description\+Component \&}]{arg}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_manager_component_server_ac1a005492dde62b258eadcdc5ec20232}
+\hypertarget{classmts_manager_component_server_ae635792d3cd3fb4d84167e4ee149c664}{}\index{mts\+Manager\+Component\+Server@{mts\+Manager\+Component\+Server}!Interface\+G\+C\+M\+Commands\+\_\+\+Component\+Connect@{Interface\+G\+C\+M\+Commands\+\_\+\+Component\+Connect}}
+\index{Interface\+G\+C\+M\+Commands\+\_\+\+Component\+Connect@{Interface\+G\+C\+M\+Commands\+\_\+\+Component\+Connect}!mts\+Manager\+Component\+Server@{mts\+Manager\+Component\+Server}}
+\subsubsection[{Interface\+G\+C\+M\+Commands\+\_\+\+Component\+Connect}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Manager\+Component\+Server\+::\+Interface\+G\+C\+M\+Commands\+\_\+\+Component\+Connect (
+\begin{DoxyParamCaption}
+\item[{const mts\+Description\+Connection \&}]{connection\+Description}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_manager_component_server_ae635792d3cd3fb4d84167e4ee149c664}
+\hypertarget{classmts_manager_component_server_aaed93e634c3edb8108f6211bd409a05b}{}\index{mts\+Manager\+Component\+Server@{mts\+Manager\+Component\+Server}!Interface\+G\+C\+M\+Commands\+\_\+\+Component\+Create@{Interface\+G\+C\+M\+Commands\+\_\+\+Component\+Create}}
+\index{Interface\+G\+C\+M\+Commands\+\_\+\+Component\+Create@{Interface\+G\+C\+M\+Commands\+\_\+\+Component\+Create}!mts\+Manager\+Component\+Server@{mts\+Manager\+Component\+Server}}
+\subsubsection[{Interface\+G\+C\+M\+Commands\+\_\+\+Component\+Create}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Manager\+Component\+Server\+::\+Interface\+G\+C\+M\+Commands\+\_\+\+Component\+Create (
+\begin{DoxyParamCaption}
+\item[{const mts\+Description\+Component \&}]{component\+Description, }
+\item[{bool \&}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_manager_component_server_aaed93e634c3edb8108f6211bd409a05b}
+Commands \hypertarget{classmts_manager_component_server_a734eefb7e18ba05156a9ca1443a77b39}{}\index{mts\+Manager\+Component\+Server@{mts\+Manager\+Component\+Server}!Interface\+G\+C\+M\+Commands\+\_\+\+Component\+Disconnect@{Interface\+G\+C\+M\+Commands\+\_\+\+Component\+Disconnect}}
+\index{Interface\+G\+C\+M\+Commands\+\_\+\+Component\+Disconnect@{Interface\+G\+C\+M\+Commands\+\_\+\+Component\+Disconnect}!mts\+Manager\+Component\+Server@{mts\+Manager\+Component\+Server}}
+\subsubsection[{Interface\+G\+C\+M\+Commands\+\_\+\+Component\+Disconnect}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Manager\+Component\+Server\+::\+Interface\+G\+C\+M\+Commands\+\_\+\+Component\+Disconnect (
+\begin{DoxyParamCaption}
+\item[{const mts\+Description\+Connection \&}]{arg}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_manager_component_server_a734eefb7e18ba05156a9ca1443a77b39}
+\hypertarget{classmts_manager_component_server_ae42ed223d038117a5588bcc640d162ab}{}\index{mts\+Manager\+Component\+Server@{mts\+Manager\+Component\+Server}!Interface\+G\+C\+M\+Commands\+\_\+\+Component\+Get\+State@{Interface\+G\+C\+M\+Commands\+\_\+\+Component\+Get\+State}}
+\index{Interface\+G\+C\+M\+Commands\+\_\+\+Component\+Get\+State@{Interface\+G\+C\+M\+Commands\+\_\+\+Component\+Get\+State}!mts\+Manager\+Component\+Server@{mts\+Manager\+Component\+Server}}
+\subsubsection[{Interface\+G\+C\+M\+Commands\+\_\+\+Component\+Get\+State}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Manager\+Component\+Server\+::\+Interface\+G\+C\+M\+Commands\+\_\+\+Component\+Get\+State (
+\begin{DoxyParamCaption}
+\item[{const mts\+Description\+Component \&}]{component, }
+\item[{mts\+Component\+State \&}]{state}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_manager_component_server_ae42ed223d038117a5588bcc640d162ab}
+\hypertarget{classmts_manager_component_server_a9029510ae1992a36feb9388dbceb098b}{}\index{mts\+Manager\+Component\+Server@{mts\+Manager\+Component\+Server}!Interface\+G\+C\+M\+Commands\+\_\+\+Component\+Resume@{Interface\+G\+C\+M\+Commands\+\_\+\+Component\+Resume}}
+\index{Interface\+G\+C\+M\+Commands\+\_\+\+Component\+Resume@{Interface\+G\+C\+M\+Commands\+\_\+\+Component\+Resume}!mts\+Manager\+Component\+Server@{mts\+Manager\+Component\+Server}}
+\subsubsection[{Interface\+G\+C\+M\+Commands\+\_\+\+Component\+Resume}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Manager\+Component\+Server\+::\+Interface\+G\+C\+M\+Commands\+\_\+\+Component\+Resume (
+\begin{DoxyParamCaption}
+\item[{const mts\+Component\+Status\+Control \&}]{arg}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_manager_component_server_a9029510ae1992a36feb9388dbceb098b}
+\hypertarget{classmts_manager_component_server_afe4917628e2e91dfe20fffafc43fe746}{}\index{mts\+Manager\+Component\+Server@{mts\+Manager\+Component\+Server}!Interface\+G\+C\+M\+Commands\+\_\+\+Component\+Start@{Interface\+G\+C\+M\+Commands\+\_\+\+Component\+Start}}
+\index{Interface\+G\+C\+M\+Commands\+\_\+\+Component\+Start@{Interface\+G\+C\+M\+Commands\+\_\+\+Component\+Start}!mts\+Manager\+Component\+Server@{mts\+Manager\+Component\+Server}}
+\subsubsection[{Interface\+G\+C\+M\+Commands\+\_\+\+Component\+Start}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Manager\+Component\+Server\+::\+Interface\+G\+C\+M\+Commands\+\_\+\+Component\+Start (
+\begin{DoxyParamCaption}
+\item[{const mts\+Component\+Status\+Control \&}]{arg}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_manager_component_server_afe4917628e2e91dfe20fffafc43fe746}
+\hypertarget{classmts_manager_component_server_af2f4fc96e195cc1a7d5811a3fdb8e379}{}\index{mts\+Manager\+Component\+Server@{mts\+Manager\+Component\+Server}!Interface\+G\+C\+M\+Commands\+\_\+\+Component\+Stop@{Interface\+G\+C\+M\+Commands\+\_\+\+Component\+Stop}}
+\index{Interface\+G\+C\+M\+Commands\+\_\+\+Component\+Stop@{Interface\+G\+C\+M\+Commands\+\_\+\+Component\+Stop}!mts\+Manager\+Component\+Server@{mts\+Manager\+Component\+Server}}
+\subsubsection[{Interface\+G\+C\+M\+Commands\+\_\+\+Component\+Stop}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Manager\+Component\+Server\+::\+Interface\+G\+C\+M\+Commands\+\_\+\+Component\+Stop (
+\begin{DoxyParamCaption}
+\item[{const mts\+Component\+Status\+Control \&}]{arg}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_manager_component_server_af2f4fc96e195cc1a7d5811a3fdb8e379}
+\hypertarget{classmts_manager_component_server_a1bef6d6b8723f33d15a78f98e3f3fad9}{}\index{mts\+Manager\+Component\+Server@{mts\+Manager\+Component\+Server}!Interface\+G\+C\+M\+Commands\+\_\+\+Disable\+Log\+Forwarding@{Interface\+G\+C\+M\+Commands\+\_\+\+Disable\+Log\+Forwarding}}
+\index{Interface\+G\+C\+M\+Commands\+\_\+\+Disable\+Log\+Forwarding@{Interface\+G\+C\+M\+Commands\+\_\+\+Disable\+Log\+Forwarding}!mts\+Manager\+Component\+Server@{mts\+Manager\+Component\+Server}}
+\subsubsection[{Interface\+G\+C\+M\+Commands\+\_\+\+Disable\+Log\+Forwarding}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Manager\+Component\+Server\+::\+Interface\+G\+C\+M\+Commands\+\_\+\+Disable\+Log\+Forwarding (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ std\+::string $>$ \&}]{process\+Names}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_manager_component_server_a1bef6d6b8723f33d15a78f98e3f3fad9}
+\hypertarget{classmts_manager_component_server_a1019aae9f1b57584d6bd6aebaf04f46b}{}\index{mts\+Manager\+Component\+Server@{mts\+Manager\+Component\+Server}!Interface\+G\+C\+M\+Commands\+\_\+\+Enable\+Log\+Forwarding@{Interface\+G\+C\+M\+Commands\+\_\+\+Enable\+Log\+Forwarding}}
+\index{Interface\+G\+C\+M\+Commands\+\_\+\+Enable\+Log\+Forwarding@{Interface\+G\+C\+M\+Commands\+\_\+\+Enable\+Log\+Forwarding}!mts\+Manager\+Component\+Server@{mts\+Manager\+Component\+Server}}
+\subsubsection[{Interface\+G\+C\+M\+Commands\+\_\+\+Enable\+Log\+Forwarding}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Manager\+Component\+Server\+::\+Interface\+G\+C\+M\+Commands\+\_\+\+Enable\+Log\+Forwarding (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ std\+::string $>$ \&}]{process\+Names}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_manager_component_server_a1019aae9f1b57584d6bd6aebaf04f46b}
+\hypertarget{classmts_manager_component_server_aac8ecf77336d288fb014924dd8637e47}{}\index{mts\+Manager\+Component\+Server@{mts\+Manager\+Component\+Server}!Interface\+G\+C\+M\+Commands\+\_\+\+Get\+Absolute\+Time\+Diffs@{Interface\+G\+C\+M\+Commands\+\_\+\+Get\+Absolute\+Time\+Diffs}}
+\index{Interface\+G\+C\+M\+Commands\+\_\+\+Get\+Absolute\+Time\+Diffs@{Interface\+G\+C\+M\+Commands\+\_\+\+Get\+Absolute\+Time\+Diffs}!mts\+Manager\+Component\+Server@{mts\+Manager\+Component\+Server}}
+\subsubsection[{Interface\+G\+C\+M\+Commands\+\_\+\+Get\+Absolute\+Time\+Diffs}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Manager\+Component\+Server\+::\+Interface\+G\+C\+M\+Commands\+\_\+\+Get\+Absolute\+Time\+Diffs (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ std\+::string $>$ \&}]{process\+Names, }
+\item[{std\+::vector$<$ double $>$ \&}]{process\+Times}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_manager_component_server_aac8ecf77336d288fb014924dd8637e47}
+\hypertarget{classmts_manager_component_server_a28987b940123ebebf65ede751021a6ec}{}\index{mts\+Manager\+Component\+Server@{mts\+Manager\+Component\+Server}!Interface\+G\+C\+M\+Commands\+\_\+\+Get\+Interface\+Provided\+Description@{Interface\+G\+C\+M\+Commands\+\_\+\+Get\+Interface\+Provided\+Description}}
+\index{Interface\+G\+C\+M\+Commands\+\_\+\+Get\+Interface\+Provided\+Description@{Interface\+G\+C\+M\+Commands\+\_\+\+Get\+Interface\+Provided\+Description}!mts\+Manager\+Component\+Server@{mts\+Manager\+Component\+Server}}
+\subsubsection[{Interface\+G\+C\+M\+Commands\+\_\+\+Get\+Interface\+Provided\+Description}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Manager\+Component\+Server\+::\+Interface\+G\+C\+M\+Commands\+\_\+\+Get\+Interface\+Provided\+Description (
+\begin{DoxyParamCaption}
+\item[{const mts\+Description\+Interface \&}]{intfc, }
+\item[{mts\+Interface\+Provided\+Description \&}]{description}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_manager_component_server_a28987b940123ebebf65ede751021a6ec}
+\hypertarget{classmts_manager_component_server_a44e58ed09a6b9c7b2caa977923ca9b1a}{}\index{mts\+Manager\+Component\+Server@{mts\+Manager\+Component\+Server}!Interface\+G\+C\+M\+Commands\+\_\+\+Get\+Interface\+Required\+Description@{Interface\+G\+C\+M\+Commands\+\_\+\+Get\+Interface\+Required\+Description}}
+\index{Interface\+G\+C\+M\+Commands\+\_\+\+Get\+Interface\+Required\+Description@{Interface\+G\+C\+M\+Commands\+\_\+\+Get\+Interface\+Required\+Description}!mts\+Manager\+Component\+Server@{mts\+Manager\+Component\+Server}}
+\subsubsection[{Interface\+G\+C\+M\+Commands\+\_\+\+Get\+Interface\+Required\+Description}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Manager\+Component\+Server\+::\+Interface\+G\+C\+M\+Commands\+\_\+\+Get\+Interface\+Required\+Description (
+\begin{DoxyParamCaption}
+\item[{const mts\+Description\+Interface \&}]{intfc, }
+\item[{mts\+Interface\+Required\+Description \&}]{description}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_manager_component_server_a44e58ed09a6b9c7b2caa977923ca9b1a}
+\hypertarget{classmts_manager_component_server_ac4192696d711afd1a13ae5097b4f2148}{}\index{mts\+Manager\+Component\+Server@{mts\+Manager\+Component\+Server}!Interface\+G\+C\+M\+Commands\+\_\+\+Get\+List\+Of\+Component\+Classes@{Interface\+G\+C\+M\+Commands\+\_\+\+Get\+List\+Of\+Component\+Classes}}
+\index{Interface\+G\+C\+M\+Commands\+\_\+\+Get\+List\+Of\+Component\+Classes@{Interface\+G\+C\+M\+Commands\+\_\+\+Get\+List\+Of\+Component\+Classes}!mts\+Manager\+Component\+Server@{mts\+Manager\+Component\+Server}}
+\subsubsection[{Interface\+G\+C\+M\+Commands\+\_\+\+Get\+List\+Of\+Component\+Classes}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Manager\+Component\+Server\+::\+Interface\+G\+C\+M\+Commands\+\_\+\+Get\+List\+Of\+Component\+Classes (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{process\+Name, }
+\item[{std\+::vector$<$ mts\+Description\+Component\+Class $>$ \&}]{list\+Of\+Component\+Classes}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_manager_component_server_ac4192696d711afd1a13ae5097b4f2148}
+\hypertarget{classmts_manager_component_server_a343cbce6cf3d4e2af99e95af0ef0a9d7}{}\index{mts\+Manager\+Component\+Server@{mts\+Manager\+Component\+Server}!Interface\+G\+C\+M\+Commands\+\_\+\+Get\+List\+Of\+Connections@{Interface\+G\+C\+M\+Commands\+\_\+\+Get\+List\+Of\+Connections}}
+\index{Interface\+G\+C\+M\+Commands\+\_\+\+Get\+List\+Of\+Connections@{Interface\+G\+C\+M\+Commands\+\_\+\+Get\+List\+Of\+Connections}!mts\+Manager\+Component\+Server@{mts\+Manager\+Component\+Server}}
+\subsubsection[{Interface\+G\+C\+M\+Commands\+\_\+\+Get\+List\+Of\+Connections}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Manager\+Component\+Server\+::\+Interface\+G\+C\+M\+Commands\+\_\+\+Get\+List\+Of\+Connections (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ mts\+Description\+Connection $>$ \&}]{list\+Of\+Connections}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_manager_component_server_a343cbce6cf3d4e2af99e95af0ef0a9d7}
+\hypertarget{classmts_manager_component_server_a27c2f1fbf13c43eb3baad98eed4ad610}{}\index{mts\+Manager\+Component\+Server@{mts\+Manager\+Component\+Server}!Interface\+G\+C\+M\+Commands\+\_\+\+Get\+Log\+Forwarding\+States@{Interface\+G\+C\+M\+Commands\+\_\+\+Get\+Log\+Forwarding\+States}}
+\index{Interface\+G\+C\+M\+Commands\+\_\+\+Get\+Log\+Forwarding\+States@{Interface\+G\+C\+M\+Commands\+\_\+\+Get\+Log\+Forwarding\+States}!mts\+Manager\+Component\+Server@{mts\+Manager\+Component\+Server}}
+\subsubsection[{Interface\+G\+C\+M\+Commands\+\_\+\+Get\+Log\+Forwarding\+States}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Manager\+Component\+Server\+::\+Interface\+G\+C\+M\+Commands\+\_\+\+Get\+Log\+Forwarding\+States (
+\begin{DoxyParamCaption}
+\item[{const {\bf std\+String\+Vec} \&}]{process\+Names, }
+\item[{{\bf std\+Char\+Vec} \&}]{states}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_manager_component_server_a27c2f1fbf13c43eb3baad98eed4ad610}
+\hypertarget{classmts_manager_component_server_abd512edd1f98f42ada757d78a113e57a}{}\index{mts\+Manager\+Component\+Server@{mts\+Manager\+Component\+Server}!Interface\+G\+C\+M\+Commands\+\_\+\+Get\+Names\+Of\+Components@{Interface\+G\+C\+M\+Commands\+\_\+\+Get\+Names\+Of\+Components}}
+\index{Interface\+G\+C\+M\+Commands\+\_\+\+Get\+Names\+Of\+Components@{Interface\+G\+C\+M\+Commands\+\_\+\+Get\+Names\+Of\+Components}!mts\+Manager\+Component\+Server@{mts\+Manager\+Component\+Server}}
+\subsubsection[{Interface\+G\+C\+M\+Commands\+\_\+\+Get\+Names\+Of\+Components}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Manager\+Component\+Server\+::\+Interface\+G\+C\+M\+Commands\+\_\+\+Get\+Names\+Of\+Components (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{process\+Name, }
+\item[{std\+::vector$<$ std\+::string $>$ \&}]{names}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_manager_component_server_abd512edd1f98f42ada757d78a113e57a}
+\hypertarget{classmts_manager_component_server_ac67fcc9dd6ecc7205a783e2b5d31709c}{}\index{mts\+Manager\+Component\+Server@{mts\+Manager\+Component\+Server}!Interface\+G\+C\+M\+Commands\+\_\+\+Get\+Names\+Of\+Interfaces@{Interface\+G\+C\+M\+Commands\+\_\+\+Get\+Names\+Of\+Interfaces}}
+\index{Interface\+G\+C\+M\+Commands\+\_\+\+Get\+Names\+Of\+Interfaces@{Interface\+G\+C\+M\+Commands\+\_\+\+Get\+Names\+Of\+Interfaces}!mts\+Manager\+Component\+Server@{mts\+Manager\+Component\+Server}}
+\subsubsection[{Interface\+G\+C\+M\+Commands\+\_\+\+Get\+Names\+Of\+Interfaces}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Manager\+Component\+Server\+::\+Interface\+G\+C\+M\+Commands\+\_\+\+Get\+Names\+Of\+Interfaces (
+\begin{DoxyParamCaption}
+\item[{const mts\+Description\+Component \&}]{component, }
+\item[{mts\+Description\+Interface \&}]{interfaces}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_manager_component_server_ac67fcc9dd6ecc7205a783e2b5d31709c}
+\hypertarget{classmts_manager_component_server_a82166415703899c3a250869bf8adbd59}{}\index{mts\+Manager\+Component\+Server@{mts\+Manager\+Component\+Server}!Interface\+G\+C\+M\+Commands\+\_\+\+Get\+Names\+Of\+Processes@{Interface\+G\+C\+M\+Commands\+\_\+\+Get\+Names\+Of\+Processes}}
+\index{Interface\+G\+C\+M\+Commands\+\_\+\+Get\+Names\+Of\+Processes@{Interface\+G\+C\+M\+Commands\+\_\+\+Get\+Names\+Of\+Processes}!mts\+Manager\+Component\+Server@{mts\+Manager\+Component\+Server}}
+\subsubsection[{Interface\+G\+C\+M\+Commands\+\_\+\+Get\+Names\+Of\+Processes}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Manager\+Component\+Server\+::\+Interface\+G\+C\+M\+Commands\+\_\+\+Get\+Names\+Of\+Processes (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ std\+::string $>$ \&}]{names}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_manager_component_server_a82166415703899c3a250869bf8adbd59}
+\hypertarget{classmts_manager_component_server_a973ef27b54522196c93567c11a4f4bf9}{}\index{mts\+Manager\+Component\+Server@{mts\+Manager\+Component\+Server}!Interface\+G\+C\+M\+Commands\+\_\+\+Load\+Library@{Interface\+G\+C\+M\+Commands\+\_\+\+Load\+Library}}
+\index{Interface\+G\+C\+M\+Commands\+\_\+\+Load\+Library@{Interface\+G\+C\+M\+Commands\+\_\+\+Load\+Library}!mts\+Manager\+Component\+Server@{mts\+Manager\+Component\+Server}}
+\subsubsection[{Interface\+G\+C\+M\+Commands\+\_\+\+Load\+Library}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Manager\+Component\+Server\+::\+Interface\+G\+C\+M\+Commands\+\_\+\+Load\+Library (
+\begin{DoxyParamCaption}
+\item[{const mts\+Description\+Load\+Library \&}]{lib, }
+\item[{bool \&}]{result}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_manager_component_server_a973ef27b54522196c93567c11a4f4bf9}
+\hypertarget{classmts_manager_component_server_ab839a8bfcec131ad95a3211c81189913}{}\index{mts\+Manager\+Component\+Server@{mts\+Manager\+Component\+Server}!Interface\+G\+C\+M\+Commands\+\_\+\+Print\+Log@{Interface\+G\+C\+M\+Commands\+\_\+\+Print\+Log}}
+\index{Interface\+G\+C\+M\+Commands\+\_\+\+Print\+Log@{Interface\+G\+C\+M\+Commands\+\_\+\+Print\+Log}!mts\+Manager\+Component\+Server@{mts\+Manager\+Component\+Server}}
+\subsubsection[{Interface\+G\+C\+M\+Commands\+\_\+\+Print\+Log}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Manager\+Component\+Server\+::\+Interface\+G\+C\+M\+Commands\+\_\+\+Print\+Log (
+\begin{DoxyParamCaption}
+\item[{const {\bf mts\+Log\+Message} \&}]{log}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_manager_component_server_ab839a8bfcec131ad95a3211c81189913}
+\hypertarget{classmts_manager_component_server_ae577ba00e3227d38951469ee52a94bb9}{}\index{mts\+Manager\+Component\+Server@{mts\+Manager\+Component\+Server}!Interface\+G\+C\+M\+Commands\+\_\+\+Set\+Log\+Forwarding@{Interface\+G\+C\+M\+Commands\+\_\+\+Set\+Log\+Forwarding}}
+\index{Interface\+G\+C\+M\+Commands\+\_\+\+Set\+Log\+Forwarding@{Interface\+G\+C\+M\+Commands\+\_\+\+Set\+Log\+Forwarding}!mts\+Manager\+Component\+Server@{mts\+Manager\+Component\+Server}}
+\subsubsection[{Interface\+G\+C\+M\+Commands\+\_\+\+Set\+Log\+Forwarding}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Manager\+Component\+Server\+::\+Interface\+G\+C\+M\+Commands\+\_\+\+Set\+Log\+Forwarding (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ std\+::string $>$ \&}]{process\+Names, }
+\item[{bool}]{state}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_manager_component_server_ae577ba00e3227d38951469ee52a94bb9}
+\hypertarget{classmts_manager_component_server_a77c2a4abdf23b89b842615fa50c0cf3c}{}\index{mts\+Manager\+Component\+Server@{mts\+Manager\+Component\+Server}!Remove\+Connection\+Event@{Remove\+Connection\+Event}}
+\index{Remove\+Connection\+Event@{Remove\+Connection\+Event}!mts\+Manager\+Component\+Server@{mts\+Manager\+Component\+Server}}
+\subsubsection[{Remove\+Connection\+Event}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Manager\+Component\+Server\+::\+Remove\+Connection\+Event (
+\begin{DoxyParamCaption}
+\item[{const mts\+Description\+Connection \&}]{connection}
+\end{DoxyParamCaption}
+)}\label{classmts_manager_component_server_a77c2a4abdf23b89b842615fa50c0cf3c}
+\hypertarget{classmts_manager_component_server_a18c682506c92fd6e0523e3925f1e637b}{}\index{mts\+Manager\+Component\+Server@{mts\+Manager\+Component\+Server}!Run@{Run}}
+\index{Run@{Run}!mts\+Manager\+Component\+Server@{mts\+Manager\+Component\+Server}}
+\subsubsection[{Run}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Manager\+Component\+Server\+::\+Run (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_manager_component_server_a18c682506c92fd6e0523e3925f1e637b}
+Pure virtual method that gets overloaded to run the actual task. 
+
+Reimplemented from \hyperlink{classmts_manager_component_base_a833777d244564494fbfaed685e2b543d}{mts\+Manager\+Component\+Base}.
+
+\hypertarget{classmts_manager_component_server_ab4a7ff516bbe04b439039a2342e48455}{}\index{mts\+Manager\+Component\+Server@{mts\+Manager\+Component\+Server}!Startup@{Startup}}
+\index{Startup@{Startup}!mts\+Manager\+Component\+Server@{mts\+Manager\+Component\+Server}}
+\subsubsection[{Startup}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Manager\+Component\+Server\+::\+Startup (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_manager_component_server_ab4a7ff516bbe04b439039a2342e48455}
+Virtual method that gets overloaded, and is run before the component is started. 
+
+Implements \hyperlink{classmts_manager_component_base_ab5602d8195e8431db97805055032fa1b}{mts\+Manager\+Component\+Base}.
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classmts_manager_component_server_a31c1c611dbb103ac58ed40d84960baa0}{}\index{mts\+Manager\+Component\+Server@{mts\+Manager\+Component\+Server}!mts\+Manager\+Local@{mts\+Manager\+Local}}
+\index{mts\+Manager\+Local@{mts\+Manager\+Local}!mts\+Manager\+Component\+Server@{mts\+Manager\+Component\+Server}}
+\subsubsection[{mts\+Manager\+Local}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf mts\+Manager\+Local}\hspace{0.3cm}{\ttfamily [friend]}}\label{classmts_manager_component_server_a31c1c611dbb103ac58ed40d84960baa0}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classmts_manager_component_server_a183cc63d73da8ba811bab26d4c7ce2d7}{}\index{mts\+Manager\+Component\+Server@{mts\+Manager\+Component\+Server}!Event\+Print\+Log@{Event\+Print\+Log}}
+\index{Event\+Print\+Log@{Event\+Print\+Log}!mts\+Manager\+Component\+Server@{mts\+Manager\+Component\+Server}}
+\subsubsection[{Event\+Print\+Log}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+Function\+Write} mts\+Manager\+Component\+Server\+::\+Event\+Print\+Log\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_manager_component_server_a183cc63d73da8ba811bab26d4c7ce2d7}
+Event generator for system-\/wide thread-\/safe logging \hypertarget{classmts_manager_component_server_a59e64d383adcaa04d1e89e4596864209}{}\index{mts\+Manager\+Component\+Server@{mts\+Manager\+Component\+Server}!G\+C\+M@{G\+C\+M}}
+\index{G\+C\+M@{G\+C\+M}!mts\+Manager\+Component\+Server@{mts\+Manager\+Component\+Server}}
+\subsubsection[{G\+C\+M}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+Manager\+Global}$\ast$ mts\+Manager\+Component\+Server\+::\+G\+C\+M\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_manager_component_server_a59e64d383adcaa04d1e89e4596864209}
+Global component manager instance to directly use the services it provides \hypertarget{classmts_manager_component_server_a5ba7772f5e8d7da177f8280f61ca8610}{}\index{mts\+Manager\+Component\+Server@{mts\+Manager\+Component\+Server}!Interface\+G\+C\+M\+Events\+\_\+\+Add\+Component@{Interface\+G\+C\+M\+Events\+\_\+\+Add\+Component}}
+\index{Interface\+G\+C\+M\+Events\+\_\+\+Add\+Component@{Interface\+G\+C\+M\+Events\+\_\+\+Add\+Component}!mts\+Manager\+Component\+Server@{mts\+Manager\+Component\+Server}}
+\subsubsection[{Interface\+G\+C\+M\+Events\+\_\+\+Add\+Component}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+Function\+Write} mts\+Manager\+Component\+Server\+::\+Interface\+G\+C\+M\+Events\+\_\+\+Add\+Component\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_manager_component_server_a5ba7772f5e8d7da177f8280f61ca8610}
+Event generators \hypertarget{classmts_manager_component_server_a45cc7ef85a7b47f504cecfe23d40590f}{}\index{mts\+Manager\+Component\+Server@{mts\+Manager\+Component\+Server}!Interface\+G\+C\+M\+Events\+\_\+\+Add\+Connection@{Interface\+G\+C\+M\+Events\+\_\+\+Add\+Connection}}
+\index{Interface\+G\+C\+M\+Events\+\_\+\+Add\+Connection@{Interface\+G\+C\+M\+Events\+\_\+\+Add\+Connection}!mts\+Manager\+Component\+Server@{mts\+Manager\+Component\+Server}}
+\subsubsection[{Interface\+G\+C\+M\+Events\+\_\+\+Add\+Connection}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+Function\+Write} mts\+Manager\+Component\+Server\+::\+Interface\+G\+C\+M\+Events\+\_\+\+Add\+Connection\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_manager_component_server_a45cc7ef85a7b47f504cecfe23d40590f}
+\hypertarget{classmts_manager_component_server_a169604bf1d8337dc3b4a4d7017d61982}{}\index{mts\+Manager\+Component\+Server@{mts\+Manager\+Component\+Server}!Interface\+G\+C\+M\+Events\+\_\+\+Change\+State@{Interface\+G\+C\+M\+Events\+\_\+\+Change\+State}}
+\index{Interface\+G\+C\+M\+Events\+\_\+\+Change\+State@{Interface\+G\+C\+M\+Events\+\_\+\+Change\+State}!mts\+Manager\+Component\+Server@{mts\+Manager\+Component\+Server}}
+\subsubsection[{Interface\+G\+C\+M\+Events\+\_\+\+Change\+State}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+Function\+Write} mts\+Manager\+Component\+Server\+::\+Interface\+G\+C\+M\+Events\+\_\+\+Change\+State\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_manager_component_server_a169604bf1d8337dc3b4a4d7017d61982}
+\hypertarget{classmts_manager_component_server_a3c150e5ac5a8a4b7b68d30874e8daf73}{}\index{mts\+Manager\+Component\+Server@{mts\+Manager\+Component\+Server}!Interface\+G\+C\+M\+Events\+\_\+\+M\+C\+S\+Ready@{Interface\+G\+C\+M\+Events\+\_\+\+M\+C\+S\+Ready}}
+\index{Interface\+G\+C\+M\+Events\+\_\+\+M\+C\+S\+Ready@{Interface\+G\+C\+M\+Events\+\_\+\+M\+C\+S\+Ready}!mts\+Manager\+Component\+Server@{mts\+Manager\+Component\+Server}}
+\subsubsection[{Interface\+G\+C\+M\+Events\+\_\+\+M\+C\+S\+Ready}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+Function\+Void} mts\+Manager\+Component\+Server\+::\+Interface\+G\+C\+M\+Events\+\_\+\+M\+C\+S\+Ready\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_manager_component_server_a3c150e5ac5a8a4b7b68d30874e8daf73}
+\hypertarget{classmts_manager_component_server_a11a899e797a81a3e84bd4bc7c2025344}{}\index{mts\+Manager\+Component\+Server@{mts\+Manager\+Component\+Server}!Interface\+G\+C\+M\+Events\+\_\+\+Remove\+Connection@{Interface\+G\+C\+M\+Events\+\_\+\+Remove\+Connection}}
+\index{Interface\+G\+C\+M\+Events\+\_\+\+Remove\+Connection@{Interface\+G\+C\+M\+Events\+\_\+\+Remove\+Connection}!mts\+Manager\+Component\+Server@{mts\+Manager\+Component\+Server}}
+\subsubsection[{Interface\+G\+C\+M\+Events\+\_\+\+Remove\+Connection}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+Function\+Write} mts\+Manager\+Component\+Server\+::\+Interface\+G\+C\+M\+Events\+\_\+\+Remove\+Connection\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_manager_component_server_a11a899e797a81a3e84bd4bc7c2025344}
+\hypertarget{classmts_manager_component_server_aba31458f9efbd9bd8f3ffc9335f56c9e}{}\index{mts\+Manager\+Component\+Server@{mts\+Manager\+Component\+Server}!Interface\+G\+C\+M\+Function\+Map@{Interface\+G\+C\+M\+Function\+Map}}
+\index{Interface\+G\+C\+M\+Function\+Map@{Interface\+G\+C\+M\+Function\+Map}!mts\+Manager\+Component\+Server@{mts\+Manager\+Component\+Server}}
+\subsubsection[{Interface\+G\+C\+M\+Function\+Map}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Interface\+G\+C\+M\+Function\+Map\+Type} mts\+Manager\+Component\+Server\+::\+Interface\+G\+C\+M\+Function\+Map\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_manager_component_server_aba31458f9efbd9bd8f3ffc9335f56c9e}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Multi\+Task/\hyperlink{mts_manager_component_server_8h}{mts\+Manager\+Component\+Server.\+h}\end{DoxyCompactItemize}

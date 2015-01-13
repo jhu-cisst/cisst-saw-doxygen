@@ -1,0 +1,203 @@
+\hypertarget{classmts_matrix}{}\section{mts\+Matrix$<$ \+\_\+element\+Type $>$ Class Template Reference}
+\label{classmts_matrix}\index{mts\+Matrix$<$ \+\_\+element\+Type $>$@{mts\+Matrix$<$ \+\_\+element\+Type $>$}}
+
+
+{\ttfamily \#include $<$mts\+Matrix.\+h$>$}
+
+Inheritance diagram for mts\+Matrix$<$ \+\_\+element\+Type $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.101313cm]{de/d36/classmts_matrix}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \hyperlink{classmts_matrix_ae82a0a7b77148177bfd8988bbdda882aa6aacbb86e5a9e8a2865163a7182717de}{D\+I\+M\+E\+N\+S\+I\+O\+N} = 2
+ \}
+\item 
+typedef \hyperlink{classmts_matrix}{mts\+Matrix}$<$ value\+\_\+type $>$ \hyperlink{classmts_matrix_abebbde6e54b4a6e574c42a99bc015524}{This\+Type}
+\item 
+typedef \hyperlink{classvct_dynamic_matrix}{vct\+Dynamic\+Matrix}$<$ value\+\_\+type $>$ \hyperlink{classmts_matrix_af0f57fd565d954a7485dcb26a384d64a}{Matrix\+Type}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmts_matrix_a05a9dba88445c911845d9d506d8ecd6a}{V\+C\+T\+\_\+\+C\+O\+N\+T\+A\+I\+N\+E\+R\+\_\+\+T\+R\+A\+I\+T\+S\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+S} (\+\_\+element\+Type)
+\item 
+\hyperlink{classmts_matrix_a14f876cfd90b0b87c5e3d2df7035061e}{V\+C\+T\+\_\+\+N\+A\+R\+R\+A\+Y\+\_\+\+T\+R\+A\+I\+T\+S\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+S} (\hyperlink{classmts_matrix_ae82a0a7b77148177bfd8988bbdda882aa6aacbb86e5a9e8a2865163a7182717de}{D\+I\+M\+E\+N\+S\+I\+O\+N})
+\item 
+\hyperlink{classmts_matrix_ac9cad72e00bd8c2b19aea2b7559532e5}{mts\+Matrix} (void)
+\item 
+\hyperlink{classmts_matrix_a276c20a3bd53e9a3e0cdb9abaf6636e2}{mts\+Matrix} (size\+\_\+type \hyperlink{classvct_dynamic_const_matrix_base_a5eac13be2207ebeb8766cde379d73438}{rows}, size\+\_\+type \hyperlink{classvct_dynamic_const_matrix_base_aa6c51d41a100da49a7e7ac7edb20ecd9}{cols})
+\item 
+\hyperlink{classmts_matrix_a2a8541b2558c067d47018cea68dba8a3}{mts\+Matrix} (const nsize\+\_\+type \&\hyperlink{classvct_dynamic_const_matrix_base_ab9d484f83471aee6512ea614aa54bd0b}{size})
+\item 
+\hyperlink{classvct_dynamic_const_matrix_base_ac4ff48cbe4d9de3fdef5a02447ffb9db}{This\+Type} \& \hyperlink{classmts_matrix_a5f1bbdf2ee3d0c9be6ecc30115f3e461}{operator=} (const \hyperlink{classmts_matrix_af0f57fd565d954a7485dcb26a384d64a}{Matrix\+Type} \&data)
+\item 
+\hyperlink{classmts_matrix_af147e5f3289b076ba9d8ef120a4f8c08}{mts\+Matrix} (const \hyperlink{classvct_dynamic_const_matrix_base_ac4ff48cbe4d9de3fdef5a02447ffb9db}{This\+Type} \&other\+Matrix)
+\item 
+\hyperlink{classmts_matrix_a6db0506bfc1dffb488508c4d86afa934}{mts\+Matrix} (const \hyperlink{classmts_matrix_af0f57fd565d954a7485dcb26a384d64a}{Matrix\+Type} \&other\+Matrix)
+\item 
+\hyperlink{classmts_matrix_ae546daa42fa4de05f058b0920bcde8fa}{$\sim$mts\+Matrix} ()
+\item 
+virtual std\+::string \hyperlink{classmts_matrix_a87c946054830a85e05c76c8599759725}{To\+String} (void) const 
+\item 
+virtual void \hyperlink{classmts_matrix_a87c2e010df3ccede587046196fa716fc}{To\+Stream} (std\+::ostream \&output\+Stream) const 
+\item 
+virtual void \hyperlink{classmts_matrix_a89f5816f6a704ffe48adc00edb8b3ef9}{To\+Stream\+Raw} (std\+::ostream \&output\+Stream, const char delimiter= \textquotesingle{} \textquotesingle{}, bool header\+Only=false, const std\+::string \&header\+Prefix=\char`\"{}\char`\"{}) const 
+\item 
+void \hyperlink{classmts_matrix_a49484e70fcf5261d86f962c6b1f2ce71}{Serialize\+Raw} (std\+::ostream \&output\+Stream) const 
+\item 
+void \hyperlink{classmts_matrix_aa079b220e4b5b4578c324a16e02d0eeb}{De\+Serialize\+Raw} (std\+::istream \&input\+Stream)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classmts_matrix_af0f57fd565d954a7485dcb26a384d64a}{}\index{mts\+Matrix@{mts\+Matrix}!Matrix\+Type@{Matrix\+Type}}
+\index{Matrix\+Type@{Matrix\+Type}!mts\+Matrix@{mts\+Matrix}}
+\subsubsection[{Matrix\+Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ typedef {\bf vct\+Dynamic\+Matrix}$<$value\+\_\+type$>$ {\bf mts\+Matrix}$<$ \+\_\+element\+Type $>$\+::{\bf Matrix\+Type}}\label{classmts_matrix_af0f57fd565d954a7485dcb26a384d64a}
+Type of matrix used to store the elements. \hypertarget{classmts_matrix_abebbde6e54b4a6e574c42a99bc015524}{}\index{mts\+Matrix@{mts\+Matrix}!This\+Type@{This\+Type}}
+\index{This\+Type@{This\+Type}!mts\+Matrix@{mts\+Matrix}}
+\subsubsection[{This\+Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ typedef {\bf mts\+Matrix}$<$value\+\_\+type$>$ {\bf mts\+Matrix}$<$ \+\_\+element\+Type $>$\+::{\bf This\+Type}}\label{classmts_matrix_abebbde6e54b4a6e574c42a99bc015524}
+This type. 
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classmts_matrix_ae82a0a7b77148177bfd8988bbdda882a}{}\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ anonymous enum}\label{classmts_matrix_ae82a0a7b77148177bfd8988bbdda882a}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{D\+I\+M\+E\+N\+S\+I\+O\+N@{D\+I\+M\+E\+N\+S\+I\+O\+N}!mts\+Matrix@{mts\+Matrix}}\index{mts\+Matrix@{mts\+Matrix}!D\+I\+M\+E\+N\+S\+I\+O\+N@{D\+I\+M\+E\+N\+S\+I\+O\+N}}\item[{\em 
+\hypertarget{classmts_matrix_ae82a0a7b77148177bfd8988bbdda882aa6aacbb86e5a9e8a2865163a7182717de}{}D\+I\+M\+E\+N\+S\+I\+O\+N\label{classmts_matrix_ae82a0a7b77148177bfd8988bbdda882aa6aacbb86e5a9e8a2865163a7182717de}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmts_matrix_ac9cad72e00bd8c2b19aea2b7559532e5}{}\index{mts\+Matrix@{mts\+Matrix}!mts\+Matrix@{mts\+Matrix}}
+\index{mts\+Matrix@{mts\+Matrix}!mts\+Matrix@{mts\+Matrix}}
+\subsubsection[{mts\+Matrix}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ {\bf mts\+Matrix}$<$ \+\_\+element\+Type $>$\+::{\bf mts\+Matrix} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_matrix_ac9cad72e00bd8c2b19aea2b7559532e5}
+Default constructor. \hypertarget{classmts_matrix_a276c20a3bd53e9a3e0cdb9abaf6636e2}{}\index{mts\+Matrix@{mts\+Matrix}!mts\+Matrix@{mts\+Matrix}}
+\index{mts\+Matrix@{mts\+Matrix}!mts\+Matrix@{mts\+Matrix}}
+\subsubsection[{mts\+Matrix}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ {\bf mts\+Matrix}$<$ \+\_\+element\+Type $>$\+::{\bf mts\+Matrix} (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+type}]{rows, }
+\item[{size\+\_\+type}]{cols}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_matrix_a276c20a3bd53e9a3e0cdb9abaf6636e2}
+Constructor with memory allocation for a given size. \hypertarget{classmts_matrix_a2a8541b2558c067d47018cea68dba8a3}{}\index{mts\+Matrix@{mts\+Matrix}!mts\+Matrix@{mts\+Matrix}}
+\index{mts\+Matrix@{mts\+Matrix}!mts\+Matrix@{mts\+Matrix}}
+\subsubsection[{mts\+Matrix}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ {\bf mts\+Matrix}$<$ \+\_\+element\+Type $>$\+::{\bf mts\+Matrix} (
+\begin{DoxyParamCaption}
+\item[{const nsize\+\_\+type \&}]{size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_matrix_a2a8541b2558c067d47018cea68dba8a3}
+\hypertarget{classmts_matrix_af147e5f3289b076ba9d8ef120a4f8c08}{}\index{mts\+Matrix@{mts\+Matrix}!mts\+Matrix@{mts\+Matrix}}
+\index{mts\+Matrix@{mts\+Matrix}!mts\+Matrix@{mts\+Matrix}}
+\subsubsection[{mts\+Matrix}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ {\bf mts\+Matrix}$<$ \+\_\+element\+Type $>$\+::{\bf mts\+Matrix} (
+\begin{DoxyParamCaption}
+\item[{const {\bf This\+Type} \&}]{other\+Matrix}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_matrix_af147e5f3289b076ba9d8ef120a4f8c08}
+Copy constructor. \hypertarget{classmts_matrix_a6db0506bfc1dffb488508c4d86afa934}{}\index{mts\+Matrix@{mts\+Matrix}!mts\+Matrix@{mts\+Matrix}}
+\index{mts\+Matrix@{mts\+Matrix}!mts\+Matrix@{mts\+Matrix}}
+\subsubsection[{mts\+Matrix}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ {\bf mts\+Matrix}$<$ \+\_\+element\+Type $>$\+::{\bf mts\+Matrix} (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix\+Type} \&}]{other\+Matrix}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_matrix_a6db0506bfc1dffb488508c4d86afa934}
+Pseudo copy constructor from matrix type. \hypertarget{classmts_matrix_ae546daa42fa4de05f058b0920bcde8fa}{}\index{mts\+Matrix@{mts\+Matrix}!````~mts\+Matrix@{$\sim$mts\+Matrix}}
+\index{````~mts\+Matrix@{$\sim$mts\+Matrix}!mts\+Matrix@{mts\+Matrix}}
+\subsubsection[{$\sim$mts\+Matrix}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ {\bf mts\+Matrix}$<$ \+\_\+element\+Type $>$\+::$\sim${\bf mts\+Matrix} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_matrix_ae546daa42fa4de05f058b0920bcde8fa}
+Default destructor, will call the destructor of the contained vector and free the memory. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classmts_matrix_aa079b220e4b5b4578c324a16e02d0eeb}{}\index{mts\+Matrix@{mts\+Matrix}!De\+Serialize\+Raw@{De\+Serialize\+Raw}}
+\index{De\+Serialize\+Raw@{De\+Serialize\+Raw}!mts\+Matrix@{mts\+Matrix}}
+\subsubsection[{De\+Serialize\+Raw}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ void {\bf mts\+Matrix}$<$ \+\_\+element\+Type $>$\+::De\+Serialize\+Raw (
+\begin{DoxyParamCaption}
+\item[{std\+::istream \&}]{input\+Stream}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classmts_matrix_aa079b220e4b5b4578c324a16e02d0eeb}
+Binary deserialization 
+
+Reimplemented from \hyperlink{classmts_generic_object_af83ae8622a742a5b94bf72e53d20a1cd}{mts\+Generic\+Object}.
+
+\hypertarget{classmts_matrix_a5f1bbdf2ee3d0c9be6ecc30115f3e461}{}\index{mts\+Matrix@{mts\+Matrix}!operator=@{operator=}}
+\index{operator=@{operator=}!mts\+Matrix@{mts\+Matrix}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ {\bf This\+Type}\& {\bf mts\+Matrix}$<$ \+\_\+element\+Type $>$\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix\+Type} \&}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_matrix_a5f1bbdf2ee3d0c9be6ecc30115f3e461}
+Assignment from vector base class. This operator assign the data from one vector to another, it doesn\textquotesingle{}t replace the object itself, i.\+e. it doesn\textquotesingle{}t release and allocate any new memory. \hypertarget{classmts_matrix_a49484e70fcf5261d86f962c6b1f2ce71}{}\index{mts\+Matrix@{mts\+Matrix}!Serialize\+Raw@{Serialize\+Raw}}
+\index{Serialize\+Raw@{Serialize\+Raw}!mts\+Matrix@{mts\+Matrix}}
+\subsubsection[{Serialize\+Raw}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ void {\bf mts\+Matrix}$<$ \+\_\+element\+Type $>$\+::Serialize\+Raw (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{output\+Stream}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classmts_matrix_a49484e70fcf5261d86f962c6b1f2ce71}
+Binary serialization 
+
+Reimplemented from \hyperlink{classmts_generic_object_a33d4404a50a87243ca5a1e2b1913dd3b}{mts\+Generic\+Object}.
+
+\hypertarget{classmts_matrix_a87c2e010df3ccede587046196fa716fc}{}\index{mts\+Matrix@{mts\+Matrix}!To\+Stream@{To\+Stream}}
+\index{To\+Stream@{To\+Stream}!mts\+Matrix@{mts\+Matrix}}
+\subsubsection[{To\+Stream}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ virtual void {\bf mts\+Matrix}$<$ \+\_\+element\+Type $>$\+::To\+Stream (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{output\+Stream}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classmts_matrix_a87c2e010df3ccede587046196fa716fc}
+To stream human readable output 
+
+Reimplemented from \hyperlink{classmts_generic_object_a2030aaa58bc215eccce1dc8d20dd0fdc}{mts\+Generic\+Object}.
+
+\hypertarget{classmts_matrix_a89f5816f6a704ffe48adc00edb8b3ef9}{}\index{mts\+Matrix@{mts\+Matrix}!To\+Stream\+Raw@{To\+Stream\+Raw}}
+\index{To\+Stream\+Raw@{To\+Stream\+Raw}!mts\+Matrix@{mts\+Matrix}}
+\subsubsection[{To\+Stream\+Raw}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ virtual void {\bf mts\+Matrix}$<$ \+\_\+element\+Type $>$\+::To\+Stream\+Raw (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{output\+Stream, }
+\item[{const char}]{delimiter = {\ttfamily \textquotesingle{}~\textquotesingle{}}, }
+\item[{bool}]{header\+Only = {\ttfamily false}, }
+\item[{const std\+::string \&}]{header\+Prefix = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classmts_matrix_a89f5816f6a704ffe48adc00edb8b3ef9}
+To stream raw data. 
+
+Reimplemented from \hyperlink{classmts_generic_object_a4916a6c62ee5b167d7c93c88ab72523a}{mts\+Generic\+Object}.
+
+\hypertarget{classmts_matrix_a87c946054830a85e05c76c8599759725}{}\index{mts\+Matrix@{mts\+Matrix}!To\+String@{To\+String}}
+\index{To\+String@{To\+String}!mts\+Matrix@{mts\+Matrix}}
+\subsubsection[{To\+String}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ virtual std\+::string {\bf mts\+Matrix}$<$ \+\_\+element\+Type $>$\+::To\+String (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classmts_matrix_a87c946054830a85e05c76c8599759725}
+To stream human readable output \hypertarget{classmts_matrix_a05a9dba88445c911845d9d506d8ecd6a}{}\index{mts\+Matrix@{mts\+Matrix}!V\+C\+T\+\_\+\+C\+O\+N\+T\+A\+I\+N\+E\+R\+\_\+\+T\+R\+A\+I\+T\+S\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+S@{V\+C\+T\+\_\+\+C\+O\+N\+T\+A\+I\+N\+E\+R\+\_\+\+T\+R\+A\+I\+T\+S\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+S}}
+\index{V\+C\+T\+\_\+\+C\+O\+N\+T\+A\+I\+N\+E\+R\+\_\+\+T\+R\+A\+I\+T\+S\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+S@{V\+C\+T\+\_\+\+C\+O\+N\+T\+A\+I\+N\+E\+R\+\_\+\+T\+R\+A\+I\+T\+S\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+S}!mts\+Matrix@{mts\+Matrix}}
+\subsubsection[{V\+C\+T\+\_\+\+C\+O\+N\+T\+A\+I\+N\+E\+R\+\_\+\+T\+R\+A\+I\+T\+S\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+S}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ {\bf mts\+Matrix}$<$ \+\_\+element\+Type $>$\+::V\+C\+T\+\_\+\+C\+O\+N\+T\+A\+I\+N\+E\+R\+\_\+\+T\+R\+A\+I\+T\+S\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+S (
+\begin{DoxyParamCaption}
+\item[{\+\_\+element\+Type}]{}
+\end{DoxyParamCaption}
+)}\label{classmts_matrix_a05a9dba88445c911845d9d506d8ecd6a}
+\hypertarget{classmts_matrix_a14f876cfd90b0b87c5e3d2df7035061e}{}\index{mts\+Matrix@{mts\+Matrix}!V\+C\+T\+\_\+\+N\+A\+R\+R\+A\+Y\+\_\+\+T\+R\+A\+I\+T\+S\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+S@{V\+C\+T\+\_\+\+N\+A\+R\+R\+A\+Y\+\_\+\+T\+R\+A\+I\+T\+S\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+S}}
+\index{V\+C\+T\+\_\+\+N\+A\+R\+R\+A\+Y\+\_\+\+T\+R\+A\+I\+T\+S\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+S@{V\+C\+T\+\_\+\+N\+A\+R\+R\+A\+Y\+\_\+\+T\+R\+A\+I\+T\+S\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+S}!mts\+Matrix@{mts\+Matrix}}
+\subsubsection[{V\+C\+T\+\_\+\+N\+A\+R\+R\+A\+Y\+\_\+\+T\+R\+A\+I\+T\+S\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+S}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ {\bf mts\+Matrix}$<$ \+\_\+element\+Type $>$\+::V\+C\+T\+\_\+\+N\+A\+R\+R\+A\+Y\+\_\+\+T\+R\+A\+I\+T\+S\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+S (
+\begin{DoxyParamCaption}
+\item[{{\bf D\+I\+M\+E\+N\+S\+I\+O\+N}}]{}
+\end{DoxyParamCaption}
+)}\label{classmts_matrix_a14f876cfd90b0b87c5e3d2df7035061e}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Multi\+Task/\hyperlink{mts_matrix_8h}{mts\+Matrix.\+h}\end{DoxyCompactItemize}

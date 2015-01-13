@@ -1,0 +1,223 @@
+\hypertarget{classrob_linear_rn}{}\section{rob\+Linear\+Rn Class Reference}
+\label{classrob_linear_rn}\index{rob\+Linear\+Rn@{rob\+Linear\+Rn}}
+
+
+A linear function (as in Ax=b)  
+
+
+
+
+{\ttfamily \#include $<$rob\+Linear\+Rn.\+h$>$}
+
+Inheritance diagram for rob\+Linear\+Rn\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{da/d3b/classrob_linear_rn}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classrob_linear_rn_a85534f130d03d7b490b56248a661621e}{rob\+Linear\+Rn} (const \hyperlink{classvct_fixed_size_vector}{vct\+Fixed\+Size\+Vector}$<$ double, 3 $>$ \&\hyperlink{classrob_function_rn_aadf26230a697fedca000dac29ae27129}{y1}, const \hyperlink{classvct_fixed_size_vector}{vct\+Fixed\+Size\+Vector}$<$ double, 3 $>$ \&\hyperlink{classrob_function_rn_a982a35e7e6f235da34765d3ceeb91109}{y2}, double vmax, double \hyperlink{classrob_function_a9a4b408a3a5a8ae927caec3b6bac36ef}{t1}=0.\+0)
+\begin{DoxyCompactList}\small\item\em Define a linear function $L: R^1\rightarrow R^3 $. \end{DoxyCompactList}\item 
+\hyperlink{classrob_linear_rn_ab78451ca7c06ad11af49d7fb2e5fadc3}{rob\+Linear\+Rn} (const \hyperlink{classvct_dynamic_vector}{vct\+Dynamic\+Vector}$<$ double $>$ \&\hyperlink{classrob_function_rn_aadf26230a697fedca000dac29ae27129}{y1}, const \hyperlink{classvct_dynamic_vector}{vct\+Dynamic\+Vector}$<$ double $>$ \&\hyperlink{classrob_function_rn_a982a35e7e6f235da34765d3ceeb91109}{y2}, const \hyperlink{classvct_dynamic_vector}{vct\+Dynamic\+Vector}$<$ double $>$ \&ydmax, double \hyperlink{classrob_function_a9a4b408a3a5a8ae927caec3b6bac36ef}{t1}=0.\+0)
+\begin{DoxyCompactList}\small\item\em Define a linear function $L: R^1\rightarrow R^n $. \end{DoxyCompactList}\item 
+void \hyperlink{classrob_linear_rn_a7d73424d71bc54c111e7a178b66dcd6a}{Evaluate} (double t, double \&y, double \&yd, double \&ydd)
+\begin{DoxyCompactList}\small\item\em Evaluate the function. \end{DoxyCompactList}\item 
+void \hyperlink{classrob_linear_rn_a1a7e3eddb0068e2d0beaff9c270d3f7d}{Evaluate} (double t, \hyperlink{classvct_fixed_size_vector}{vct\+Fixed\+Size\+Vector}$<$ double, 3 $>$ \&p, \hyperlink{classvct_fixed_size_vector}{vct\+Fixed\+Size\+Vector}$<$ double, 3 $>$ \&v, \hyperlink{classvct_fixed_size_vector}{vct\+Fixed\+Size\+Vector}$<$ double, 3 $>$ \&vd)
+\begin{DoxyCompactList}\small\item\em Evaluate the function. \end{DoxyCompactList}\item 
+void \hyperlink{classrob_linear_rn_a44d7200fe3a9a71640c3fbbaf6e597bf}{Evaluate} (double t, \hyperlink{classvct_dynamic_vector}{vct\+Dynamic\+Vector}$<$ double $>$ \&y, \hyperlink{classvct_dynamic_vector}{vct\+Dynamic\+Vector}$<$ double $>$ \&yd, \hyperlink{classvct_dynamic_vector}{vct\+Dynamic\+Vector}$<$ double $>$ \&ydd)
+\begin{DoxyCompactList}\small\item\em Evaluate the function. \end{DoxyCompactList}\item 
+void \hyperlink{classrob_linear_rn_a9ae5c744e72423e4140f6138bb3a6123}{Blend} (\hyperlink{classrob_function}{rob\+Function} $\ast$function, const \hyperlink{classvct_dynamic_vector}{vct\+Dynamic\+Vector}$<$ double $>$ \&qd, const \hyperlink{classvct_dynamic_vector}{vct\+Dynamic\+Vector}$<$ double $>$ \&qdd)
+\item 
+void \hyperlink{classrob_linear_rn_a445a28f3de29309411ed11546b02841a}{Blend} (\hyperlink{classrob_function}{rob\+Function} $\ast$function, double vmax, double vdmax)
+\item 
+\hyperlink{classvct_dynamic_vector}{vct\+Dynamic\+Vector}$<$ double $>$ \hyperlink{classrob_linear_rn_aa1edb8aba4f443ad31771a9f1cba0d86}{Slope} () const 
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A linear function (as in Ax=b) 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classrob_linear_rn_a85534f130d03d7b490b56248a661621e}{}\index{rob\+Linear\+Rn@{rob\+Linear\+Rn}!rob\+Linear\+Rn@{rob\+Linear\+Rn}}
+\index{rob\+Linear\+Rn@{rob\+Linear\+Rn}!rob\+Linear\+Rn@{rob\+Linear\+Rn}}
+\subsubsection[{rob\+Linear\+Rn}]{\setlength{\rightskip}{0pt plus 5cm}rob\+Linear\+Rn\+::rob\+Linear\+Rn (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Fixed\+Size\+Vector}$<$ double, 3 $>$ \&}]{y1, }
+\item[{const {\bf vct\+Fixed\+Size\+Vector}$<$ double, 3 $>$ \&}]{y2, }
+\item[{double}]{vmax, }
+\item[{double}]{t1 = {\ttfamily 0.0}}
+\end{DoxyParamCaption}
+)}\label{classrob_linear_rn_a85534f130d03d7b490b56248a661621e}
+
+
+Define a linear function $L: R^1\rightarrow R^3 $. 
+
+Define a line passing throuh $(t_1,\mathbf{y}_1)$ and $(t_2,\mathbf{y}_2)$. The final time $t_2$ is determined by the maximum velocities. The function is bounded by $[t_1, t_2]$. 
+\begin{DoxyParams}{Parameters}
+{\em t1} & The initial time \\
+\hline
+{\em y1} & The value $\mathbf{y}_1 = L(t_1)$ \\
+\hline
+{\em y2} & The value $\mathbf{y}_2 = L(t_2)$ \\
+\hline
+{\em vmax} & The magnitude of the maximum linear velocity \\
+\hline
+\end{DoxyParams}
+\hypertarget{classrob_linear_rn_ab78451ca7c06ad11af49d7fb2e5fadc3}{}\index{rob\+Linear\+Rn@{rob\+Linear\+Rn}!rob\+Linear\+Rn@{rob\+Linear\+Rn}}
+\index{rob\+Linear\+Rn@{rob\+Linear\+Rn}!rob\+Linear\+Rn@{rob\+Linear\+Rn}}
+\subsubsection[{rob\+Linear\+Rn}]{\setlength{\rightskip}{0pt plus 5cm}rob\+Linear\+Rn\+::rob\+Linear\+Rn (
+\begin{DoxyParamCaption}
+\item[{const {\bf vct\+Dynamic\+Vector}$<$ double $>$ \&}]{y1, }
+\item[{const {\bf vct\+Dynamic\+Vector}$<$ double $>$ \&}]{y2, }
+\item[{const {\bf vct\+Dynamic\+Vector}$<$ double $>$ \&}]{ydmax, }
+\item[{double}]{t1 = {\ttfamily 0.0}}
+\end{DoxyParamCaption}
+)}\label{classrob_linear_rn_ab78451ca7c06ad11af49d7fb2e5fadc3}
+
+
+Define a linear function $L: R^1\rightarrow R^n $. 
+
+Define a line passing throuh $(t_1,\mathbf{y}_1)$ and $(t_2,\mathbf{y}_2)$. The final time $t_2$ is determined by the maximum velocities. The function is bounded by $[t_1, t_2]$. 
+\begin{DoxyParams}{Parameters}
+{\em t1} & The initial time \\
+\hline
+{\em y1} & The value $\mathbf{y}_1 = L(t_1)$ \\
+\hline
+{\em y2} & The value $\mathbf{y}_2 = L(t_2)$ \\
+\hline
+{\em ydmax} & The maximum velocity for each dimension \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classrob_linear_rn_a9ae5c744e72423e4140f6138bb3a6123}{}\index{rob\+Linear\+Rn@{rob\+Linear\+Rn}!Blend@{Blend}}
+\index{Blend@{Blend}!rob\+Linear\+Rn@{rob\+Linear\+Rn}}
+\subsubsection[{Blend}]{\setlength{\rightskip}{0pt plus 5cm}void rob\+Linear\+Rn\+::\+Blend (
+\begin{DoxyParamCaption}
+\item[{{\bf rob\+Function} $\ast$}]{function, }
+\item[{const {\bf vct\+Dynamic\+Vector}$<$ double $>$ \&}]{qd, }
+\item[{const {\bf vct\+Dynamic\+Vector}$<$ double $>$ \&}]{qdd}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classrob_linear_rn_a9ae5c744e72423e4140f6138bb3a6123}
+
+
+Implements \hyperlink{classrob_function_rn_a199dc12ec208c84ef820257fa0c1679c}{rob\+Function\+Rn}.
+
+\hypertarget{classrob_linear_rn_a445a28f3de29309411ed11546b02841a}{}\index{rob\+Linear\+Rn@{rob\+Linear\+Rn}!Blend@{Blend}}
+\index{Blend@{Blend}!rob\+Linear\+Rn@{rob\+Linear\+Rn}}
+\subsubsection[{Blend}]{\setlength{\rightskip}{0pt plus 5cm}void rob\+Linear\+Rn\+::\+Blend (
+\begin{DoxyParamCaption}
+\item[{{\bf rob\+Function} $\ast$}]{function, }
+\item[{double}]{vmax, }
+\item[{double}]{vdmax}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classrob_linear_rn_a445a28f3de29309411ed11546b02841a}
+
+
+Implements \hyperlink{classrob_function_rn_abb99f0170122c5554d3e336e8548c2a7}{rob\+Function\+Rn}.
+
+\hypertarget{classrob_linear_rn_a7d73424d71bc54c111e7a178b66dcd6a}{}\index{rob\+Linear\+Rn@{rob\+Linear\+Rn}!Evaluate@{Evaluate}}
+\index{Evaluate@{Evaluate}!rob\+Linear\+Rn@{rob\+Linear\+Rn}}
+\subsubsection[{Evaluate}]{\setlength{\rightskip}{0pt plus 5cm}void rob\+Linear\+Rn\+::\+Evaluate (
+\begin{DoxyParamCaption}
+\item[{double}]{t, }
+\item[{double \&}]{y, }
+\item[{double \&}]{yd, }
+\item[{double \&}]{ydd}
+\end{DoxyParamCaption}
+)}\label{classrob_linear_rn_a7d73424d71bc54c111e7a178b66dcd6a}
+
+
+Evaluate the function. 
+
+Evaluate the linear function for the given input. The domain of the input 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em input} & The input to the function. The input domain must be rob\+Space\+::\+T\+I\+M\+E \\
+\hline
+ & {\em t} & The time \\
+\hline
+\mbox{\tt out}  & {\em y} & The linear function at time t \\
+\hline
+\mbox{\tt out}  & {\em yd} & The 1st order time derivative at time t \\
+\hline
+\mbox{\tt out}  & {\em ydd} & The 2nd order time derivative at time t (always zero) \\
+\hline
+\end{DoxyParams}
+\hypertarget{classrob_linear_rn_a1a7e3eddb0068e2d0beaff9c270d3f7d}{}\index{rob\+Linear\+Rn@{rob\+Linear\+Rn}!Evaluate@{Evaluate}}
+\index{Evaluate@{Evaluate}!rob\+Linear\+Rn@{rob\+Linear\+Rn}}
+\subsubsection[{Evaluate}]{\setlength{\rightskip}{0pt plus 5cm}void rob\+Linear\+Rn\+::\+Evaluate (
+\begin{DoxyParamCaption}
+\item[{double}]{t, }
+\item[{{\bf vct\+Fixed\+Size\+Vector}$<$ double, 3 $>$ \&}]{p, }
+\item[{{\bf vct\+Fixed\+Size\+Vector}$<$ double, 3 $>$ \&}]{v, }
+\item[{{\bf vct\+Fixed\+Size\+Vector}$<$ double, 3 $>$ \&}]{vd}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classrob_linear_rn_a1a7e3eddb0068e2d0beaff9c270d3f7d}
+
+
+Evaluate the function. 
+
+Evaluate the linear function for the given input. The domain of the input 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em input} & The input to the function. The input domain must be rob\+Space\+::\+T\+I\+M\+E \\
+\hline
+ & {\em t} & The time \\
+\hline
+\mbox{\tt out}  & {\em p} & The linear function at time t \\
+\hline
+\mbox{\tt out}  & {\em v} & The linear velocity \\
+\hline
+\mbox{\tt out}  & {\em vd} & The linear acceleration \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classrob_function_rn_a62b0cdb6474fb0ec9ae0e6ce286d3df0}{rob\+Function\+Rn}.
+
+\hypertarget{classrob_linear_rn_a44d7200fe3a9a71640c3fbbaf6e597bf}{}\index{rob\+Linear\+Rn@{rob\+Linear\+Rn}!Evaluate@{Evaluate}}
+\index{Evaluate@{Evaluate}!rob\+Linear\+Rn@{rob\+Linear\+Rn}}
+\subsubsection[{Evaluate}]{\setlength{\rightskip}{0pt plus 5cm}void rob\+Linear\+Rn\+::\+Evaluate (
+\begin{DoxyParamCaption}
+\item[{double}]{t, }
+\item[{{\bf vct\+Dynamic\+Vector}$<$ double $>$ \&}]{y, }
+\item[{{\bf vct\+Dynamic\+Vector}$<$ double $>$ \&}]{yd, }
+\item[{{\bf vct\+Dynamic\+Vector}$<$ double $>$ \&}]{ydd}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classrob_linear_rn_a44d7200fe3a9a71640c3fbbaf6e597bf}
+
+
+Evaluate the function. 
+
+Evaluate the linear function for the given input. The domain of the input 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em input} & The input to the function. The input domain must be rob\+Space\+::\+T\+I\+M\+E \\
+\hline
+ & {\em t} & The time \\
+\hline
+\mbox{\tt out}  & {\em y} & The linear function at time t \\
+\hline
+\mbox{\tt out}  & {\em yd} & The 1st order time derivative at time t \\
+\hline
+\mbox{\tt out}  & {\em ydd} & The 2nd order time derivative at time t (always zero) \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classrob_function_rn_a921fc7a6fb6e2ad96631964b7c691ad2}{rob\+Function\+Rn}.
+
+\hypertarget{classrob_linear_rn_aa1edb8aba4f443ad31771a9f1cba0d86}{}\index{rob\+Linear\+Rn@{rob\+Linear\+Rn}!Slope@{Slope}}
+\index{Slope@{Slope}!rob\+Linear\+Rn@{rob\+Linear\+Rn}}
+\subsubsection[{Slope}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Dynamic\+Vector}$<$double$>$ rob\+Linear\+Rn\+::\+Slope (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classrob_linear_rn_aa1edb8aba4f443ad31771a9f1cba0d86}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Robot/\hyperlink{rob_linear_rn_8h}{rob\+Linear\+Rn.\+h}\end{DoxyCompactItemize}
