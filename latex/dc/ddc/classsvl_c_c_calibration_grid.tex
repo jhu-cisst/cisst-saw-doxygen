@@ -1,243 +1,244 @@
-\hypertarget{classsvl_c_c_calibration_grid}{}\section{svl\+C\+C\+Calibration\+Grid Class Reference}
-\label{classsvl_c_c_calibration_grid}\index{svl\+C\+C\+Calibration\+Grid@{svl\+C\+C\+Calibration\+Grid}}
+\hypertarget{classsvl_c_c_calibration_grid}{\section{svl\-C\-C\-Calibration\-Grid Class Reference}
+\label{classsvl_c_c_calibration_grid}\index{svl\-C\-C\-Calibration\-Grid@{svl\-C\-C\-Calibration\-Grid}}
+}
 
 
-{\ttfamily \#include $<$svl\+C\+C\+Calibration\+Grid.\+h$>$}
+{\ttfamily \#include $<$svl\-C\-C\-Calibration\-Grid.\-h$>$}
 
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classsvl_c_c_calibration_grid_a30f35f3fa081d9aef26ddd14ea7768a4}{svl\+C\+C\+Calibration\+Grid} (\hyperlink{svl_types_8h_aa5a40a13021ba9708bfe921e18fdfa53}{Ipl\+Image} $\ast$ipl\+Image, cv\+::\+Size \hyperlink{classsvl_c_c_calibration_grid_a0c584283648c8d63a0c33646d35a60f2}{board\+Size}, float size)
+\hyperlink{classsvl_c_c_calibration_grid_a30f35f3fa081d9aef26ddd14ea7768a4}{svl\-C\-C\-Calibration\-Grid} (\hyperlink{svl_types_8h_aa5a40a13021ba9708bfe921e18fdfa53}{Ipl\-Image} $\ast$ipl\-Image, cv\-::\-Size \hyperlink{classsvl_c_c_calibration_grid_a0c584283648c8d63a0c33646d35a60f2}{board\-Size}, float size)
 \item 
-void \hyperlink{classsvl_c_c_calibration_grid_a751a80c36e0d1d094a41cb8204b0658e}{correlate} (\hyperlink{classsvl_c_c_origin_detector}{svl\+C\+C\+Origin\+Detector} $\ast$origin\+Detector, \hyperlink{classsvl_c_c_corner_detector}{svl\+C\+C\+Corner\+Detector} $\ast$corner\+Detector)
+void \hyperlink{classsvl_c_c_calibration_grid_a751a80c36e0d1d094a41cb8204b0658e}{correlate} (\hyperlink{classsvl_c_c_origin_detector}{svl\-C\-C\-Origin\-Detector} $\ast$origin\-Detector, \hyperlink{classsvl_c_c_corner_detector}{svl\-C\-C\-Corner\-Detector} $\ast$corner\-Detector)
 \item 
-double \hyperlink{classsvl_c_c_calibration_grid_a4f0a7daef69595eed5cf2b23eb94132f}{refine} (const \hyperlink{namespacecv_a60d81b54f4914bec4cc4a72ab77eb444}{cv\+::\+Mat} \&local\+Rvec, const \hyperlink{namespacecv_a60d81b54f4914bec4cc4a72ab77eb444}{cv\+::\+Mat} \&local\+Tvec, const \hyperlink{namespacecv_a60d81b54f4914bec4cc4a72ab77eb444}{cv\+::\+Mat} \&local\+Camera\+Matrix, const \hyperlink{namespacecv_a60d81b54f4914bec4cc4a72ab77eb444}{cv\+::\+Mat} \&local\+Dist\+Coeffs, float threshold, bool run\+Homography)
+double \hyperlink{classsvl_c_c_calibration_grid_a4f0a7daef69595eed5cf2b23eb94132f}{refine} (const \hyperlink{namespacecv_a60d81b54f4914bec4cc4a72ab77eb444}{cv\-::\-Mat} \&local\-Rvec, const \hyperlink{namespacecv_a60d81b54f4914bec4cc4a72ab77eb444}{cv\-::\-Mat} \&local\-Tvec, const \hyperlink{namespacecv_a60d81b54f4914bec4cc4a72ab77eb444}{cv\-::\-Mat} \&local\-Camera\-Matrix, const \hyperlink{namespacecv_a60d81b54f4914bec4cc4a72ab77eb444}{cv\-::\-Mat} \&local\-Dist\-Coeffs, float threshold, bool run\-Homography)
 \item 
-std\+::vector$<$ cv\+::\+Point2f $>$ \hyperlink{classsvl_c_c_calibration_grid_a752883125648639e89eb05d66d19a5d4}{get\+Good\+Image\+Points} ()
+std\-::vector$<$ cv\-::\-Point2f $>$ \hyperlink{classsvl_c_c_calibration_grid_a752883125648639e89eb05d66d19a5d4}{get\-Good\-Image\-Points} ()
 \item 
-std\+::vector$<$ cv\+::\+Point3f $>$ \hyperlink{classsvl_c_c_calibration_grid_a32c98cacf6d5961cfce2cef58fa03586}{get\+Good\+Calibration\+Grid\+Points3\+D} ()
+std\-::vector$<$ cv\-::\-Point3f $>$ \hyperlink{classsvl_c_c_calibration_grid_a32c98cacf6d5961cfce2cef58fa03586}{get\-Good\-Calibration\-Grid\-Points3\-D} ()
 \item 
-std\+::vector$<$ cv\+::\+Point2f $>$ \hyperlink{classsvl_c_c_calibration_grid_aeea914d2140f4cbb5064272ce3d82ab0}{get\+Good\+Projected\+Image\+Points} ()
+std\-::vector$<$ cv\-::\-Point2f $>$ \hyperlink{classsvl_c_c_calibration_grid_aeea914d2140f4cbb5064272ce3d82ab0}{get\-Good\-Projected\-Image\-Points} ()
 \item 
-void \hyperlink{classsvl_c_c_calibration_grid_ac92fde3ddfa68b36159a6a69d64f2d0f}{optimize\+Calibration} ()
+void \hyperlink{classsvl_c_c_calibration_grid_ac92fde3ddfa68b36159a6a69d64f2d0f}{optimize\-Calibration} ()
 \item 
-void \hyperlink{classsvl_c_c_calibration_grid_a2b38609fe50a0de989d81fdfbac12839}{set\+Ground\+Truth\+Transformation} (Cv\+Mat $\ast$ground\+Truth\+Camera\+Transformation)
+void \hyperlink{classsvl_c_c_calibration_grid_a2b38609fe50a0de989d81fdfbac12839}{set\-Ground\-Truth\-Transformation} (Cv\-Mat $\ast$ground\-Truth\-Camera\-Transformation)
 \item 
-void \hyperlink{classsvl_c_c_calibration_grid_a24446cf287b96d1b8dabe3a5561f9db3}{compare\+Ground\+Truth} ()
+void \hyperlink{classsvl_c_c_calibration_grid_a24446cf287b96d1b8dabe3a5561f9db3}{compare\-Ground\-Truth} ()
 \item 
-void \hyperlink{classsvl_c_c_calibration_grid_a92d222b6bcb5b747b343d8c35e2994ce}{print\+Calibration\+Parameters} ()
+void \hyperlink{classsvl_c_c_calibration_grid_a92d222b6bcb5b747b343d8c35e2994ce}{print\-Calibration\-Parameters} ()
 \item 
-\hyperlink{classsvl_sample_camera_geometry}{svl\+Sample\+Camera\+Geometry} $\ast$ \hyperlink{classsvl_c_c_calibration_grid_af638b388dc77d852572e574bcf43a09c}{Get\+Camera\+Geometry} ()
+\hyperlink{classsvl_sample_camera_geometry}{svl\-Sample\-Camera\-Geometry} $\ast$ \hyperlink{classsvl_c_c_calibration_grid_af638b388dc77d852572e574bcf43a09c}{Get\-Camera\-Geometry} ()
 \end{DoxyCompactItemize}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-cv\+::\+Point2f $\ast$$\ast$ \hyperlink{classsvl_c_c_calibration_grid_a16c87e7174d1ebadad02bb2f00374f20}{calibration\+Grid\+Points}
+cv\-::\-Point2f $\ast$$\ast$ \hyperlink{classsvl_c_c_calibration_grid_a16c87e7174d1ebadad02bb2f00374f20}{calibration\-Grid\-Points}
 \item 
-cv\+::\+Point2f $\ast$$\ast$ \hyperlink{classsvl_c_c_calibration_grid_af7379a6c73a59f86c73d299137455ac5}{image\+Points}
+cv\-::\-Point2f $\ast$$\ast$ \hyperlink{classsvl_c_c_calibration_grid_af7379a6c73a59f86c73d299137455ac5}{image\-Points}
 \item 
 bool $\ast$$\ast$ \hyperlink{classsvl_c_c_calibration_grid_a7022b0856e07b5004a767fdd80d78e4a}{visibility}
 \item 
-float \hyperlink{classsvl_c_c_calibration_grid_ab80850211d593053f9742680204ad68d}{grid\+Size}
+float \hyperlink{classsvl_c_c_calibration_grid_ab80850211d593053f9742680204ad68d}{grid\-Size}
 \item 
-cv\+::\+Size \hyperlink{classsvl_c_c_calibration_grid_a0c584283648c8d63a0c33646d35a60f2}{board\+Size}
+cv\-::\-Size \hyperlink{classsvl_c_c_calibration_grid_a0c584283648c8d63a0c33646d35a60f2}{board\-Size}
 \item 
-float \hyperlink{classsvl_c_c_calibration_grid_a6bc5a200e85665be8811614a3abe470b}{grid\+Size\+Pixel}
+float \hyperlink{classsvl_c_c_calibration_grid_a6bc5a200e85665be8811614a3abe470b}{grid\-Size\-Pixel}
 \item 
-std\+::vector$<$ cv\+::\+Point2f $>$ \hyperlink{classsvl_c_c_calibration_grid_a1956cef695c8327984c5ba89b20b562b}{ground\+Truth\+Image\+Points}
+std\-::vector$<$ cv\-::\-Point2f $>$ \hyperlink{classsvl_c_c_calibration_grid_a1956cef695c8327984c5ba89b20b562b}{ground\-Truth\-Image\-Points}
 \item 
-std\+::vector$<$ cv\+::\+Point3f $>$ \hyperlink{classsvl_c_c_calibration_grid_a999d324f40227be7e33c7549f217bced}{ground\+Truth\+Calibration\+Grid\+Points}
+std\-::vector$<$ cv\-::\-Point3f $>$ \hyperlink{classsvl_c_c_calibration_grid_a999d324f40227be7e33c7549f217bced}{ground\-Truth\-Calibration\-Grid\-Points}
 \item 
-\hyperlink{namespacecv_a60d81b54f4914bec4cc4a72ab77eb444}{cv\+::\+Mat} \hyperlink{classsvl_c_c_calibration_grid_a7a2116179fd17b6225c5fbeab19d99a0}{camera\+Matrix}
+\hyperlink{namespacecv_a60d81b54f4914bec4cc4a72ab77eb444}{cv\-::\-Mat} \hyperlink{classsvl_c_c_calibration_grid_a7a2116179fd17b6225c5fbeab19d99a0}{camera\-Matrix}
 \item 
-\hyperlink{namespacecv_a60d81b54f4914bec4cc4a72ab77eb444}{cv\+::\+Mat} \hyperlink{classsvl_c_c_calibration_grid_aa4eae79ebad278af9e217a647af596d9}{ground\+Truth\+Rvec}
+\hyperlink{namespacecv_a60d81b54f4914bec4cc4a72ab77eb444}{cv\-::\-Mat} \hyperlink{classsvl_c_c_calibration_grid_aa4eae79ebad278af9e217a647af596d9}{ground\-Truth\-Rvec}
 \item 
-Cv\+Mat $\ast$ \hyperlink{classsvl_c_c_calibration_grid_afce9a2410faf4d8bcd8a44fa7e6aab22}{ground\+Truth\+Rmatrix}
+Cv\-Mat $\ast$ \hyperlink{classsvl_c_c_calibration_grid_afce9a2410faf4d8bcd8a44fa7e6aab22}{ground\-Truth\-Rmatrix}
 \item 
-\hyperlink{namespacecv_a60d81b54f4914bec4cc4a72ab77eb444}{cv\+::\+Mat} \hyperlink{classsvl_c_c_calibration_grid_a76d4c8a5a30be5afc085db95aeae4505}{ground\+Truth\+Tvec}
+\hyperlink{namespacecv_a60d81b54f4914bec4cc4a72ab77eb444}{cv\-::\-Mat} \hyperlink{classsvl_c_c_calibration_grid_a76d4c8a5a30be5afc085db95aeae4505}{ground\-Truth\-Tvec}
 \item 
-Cv\+Mat $\ast$ \hyperlink{classsvl_c_c_calibration_grid_a76795dc4a6916d8c4cc6c2eec54bf049}{world\+To\+T\+C\+P}
+Cv\-Mat $\ast$ \hyperlink{classsvl_c_c_calibration_grid_a76795dc4a6916d8c4cc6c2eec54bf049}{world\-To\-T\-C\-P}
 \item 
-\hyperlink{namespacecv_a60d81b54f4914bec4cc4a72ab77eb444}{cv\+::\+Mat} \hyperlink{classsvl_c_c_calibration_grid_a24635710953d9ad967caed593db745cf}{dist\+Coeffs}
+\hyperlink{namespacecv_a60d81b54f4914bec4cc4a72ab77eb444}{cv\-::\-Mat} \hyperlink{classsvl_c_c_calibration_grid_a24635710953d9ad967caed593db745cf}{dist\-Coeffs}
 \item 
-\hyperlink{namespacecv_a60d81b54f4914bec4cc4a72ab77eb444}{cv\+::\+Mat} \hyperlink{classsvl_c_c_calibration_grid_a06257e79aa088b560387dbf6b21ec589}{rvec}
+\hyperlink{namespacecv_a60d81b54f4914bec4cc4a72ab77eb444}{cv\-::\-Mat} \hyperlink{classsvl_c_c_calibration_grid_a06257e79aa088b560387dbf6b21ec589}{rvec}
 \item 
-\hyperlink{namespacecv_a60d81b54f4914bec4cc4a72ab77eb444}{cv\+::\+Mat} \hyperlink{classsvl_c_c_calibration_grid_a08c42ea2dfe94cc29e5a18148d21448e}{tvec}
+\hyperlink{namespacecv_a60d81b54f4914bec4cc4a72ab77eb444}{cv\-::\-Mat} \hyperlink{classsvl_c_c_calibration_grid_a08c42ea2dfe94cc29e5a18148d21448e}{tvec}
 \item 
-\hyperlink{namespacecv_a60d81b54f4914bec4cc4a72ab77eb444}{cv\+::\+Mat} \hyperlink{classsvl_c_c_calibration_grid_abf2bca134330551d15f8410b9db6af90}{rmatrix}
+\hyperlink{namespacecv_a60d81b54f4914bec4cc4a72ab77eb444}{cv\-::\-Mat} \hyperlink{classsvl_c_c_calibration_grid_abf2bca134330551d15f8410b9db6af90}{rmatrix}
 \item 
 bool \hyperlink{classsvl_c_c_calibration_grid_a9d5cd80c8a24be914db2dcfb4535de01}{valid}
 \item 
-bool \hyperlink{classsvl_c_c_calibration_grid_a2edf34681f2c5476af187de836ddbb79}{valid\+Ground\+Truth}
+bool \hyperlink{classsvl_c_c_calibration_grid_a2edf34681f2c5476af187de836ddbb79}{valid\-Ground\-Truth}
 \item 
-bool \hyperlink{classsvl_c_c_calibration_grid_aef49aedc791dda4cb83338a9762a0a91}{has\+Tracking}
+bool \hyperlink{classsvl_c_c_calibration_grid_aef49aedc791dda4cb83338a9762a0a91}{has\-Tracking}
 \item 
-float \hyperlink{classsvl_c_c_calibration_grid_ac82abbf0e84938e8ef15b686f90c9bcd}{refine\+Threshold}
+float \hyperlink{classsvl_c_c_calibration_grid_ac82abbf0e84938e8ef15b686f90c9bcd}{refine\-Threshold}
 \item 
-int \hyperlink{classsvl_c_c_calibration_grid_ac2b807269572258ab5a21e6ba7fec32a}{min\+Grid\+Points}
+int \hyperlink{classsvl_c_c_calibration_grid_ac2b807269572258ab5a21e6ba7fec32a}{min\-Grid\-Points}
 \end{DoxyCompactItemize}
 
 
 \subsection{Constructor \& Destructor Documentation}
-\hypertarget{classsvl_c_c_calibration_grid_a30f35f3fa081d9aef26ddd14ea7768a4}{}\index{svl\+C\+C\+Calibration\+Grid@{svl\+C\+C\+Calibration\+Grid}!svl\+C\+C\+Calibration\+Grid@{svl\+C\+C\+Calibration\+Grid}}
-\index{svl\+C\+C\+Calibration\+Grid@{svl\+C\+C\+Calibration\+Grid}!svl\+C\+C\+Calibration\+Grid@{svl\+C\+C\+Calibration\+Grid}}
-\subsubsection[{svl\+C\+C\+Calibration\+Grid}]{\setlength{\rightskip}{0pt plus 5cm}svl\+C\+C\+Calibration\+Grid\+::svl\+C\+C\+Calibration\+Grid (
+\hypertarget{classsvl_c_c_calibration_grid_a30f35f3fa081d9aef26ddd14ea7768a4}{\index{svl\-C\-C\-Calibration\-Grid@{svl\-C\-C\-Calibration\-Grid}!svl\-C\-C\-Calibration\-Grid@{svl\-C\-C\-Calibration\-Grid}}
+\index{svl\-C\-C\-Calibration\-Grid@{svl\-C\-C\-Calibration\-Grid}!svlCCCalibrationGrid@{svl\-C\-C\-Calibration\-Grid}}
+\subsubsection[{svl\-C\-C\-Calibration\-Grid}]{\setlength{\rightskip}{0pt plus 5cm}svl\-C\-C\-Calibration\-Grid\-::svl\-C\-C\-Calibration\-Grid (
 \begin{DoxyParamCaption}
-\item[{{\bf Ipl\+Image} $\ast$}]{ipl\+Image, }
-\item[{cv\+::\+Size}]{board\+Size, }
+\item[{{\bf Ipl\-Image} $\ast$}]{ipl\-Image, }
+\item[{cv\-::\-Size}]{board\-Size, }
 \item[{float}]{size}
 \end{DoxyParamCaption}
-)}\label{classsvl_c_c_calibration_grid_a30f35f3fa081d9aef26ddd14ea7768a4}
+)}}\label{classsvl_c_c_calibration_grid_a30f35f3fa081d9aef26ddd14ea7768a4}
 
 
 \subsection{Member Function Documentation}
-\hypertarget{classsvl_c_c_calibration_grid_a24446cf287b96d1b8dabe3a5561f9db3}{}\index{svl\+C\+C\+Calibration\+Grid@{svl\+C\+C\+Calibration\+Grid}!compare\+Ground\+Truth@{compare\+Ground\+Truth}}
-\index{compare\+Ground\+Truth@{compare\+Ground\+Truth}!svl\+C\+C\+Calibration\+Grid@{svl\+C\+C\+Calibration\+Grid}}
-\subsubsection[{compare\+Ground\+Truth}]{\setlength{\rightskip}{0pt plus 5cm}void svl\+C\+C\+Calibration\+Grid\+::compare\+Ground\+Truth (
+\hypertarget{classsvl_c_c_calibration_grid_a24446cf287b96d1b8dabe3a5561f9db3}{\index{svl\-C\-C\-Calibration\-Grid@{svl\-C\-C\-Calibration\-Grid}!compare\-Ground\-Truth@{compare\-Ground\-Truth}}
+\index{compare\-Ground\-Truth@{compare\-Ground\-Truth}!svlCCCalibrationGrid@{svl\-C\-C\-Calibration\-Grid}}
+\subsubsection[{compare\-Ground\-Truth}]{\setlength{\rightskip}{0pt plus 5cm}void svl\-C\-C\-Calibration\-Grid\-::compare\-Ground\-Truth (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}\label{classsvl_c_c_calibration_grid_a24446cf287b96d1b8dabe3a5561f9db3}
-\hypertarget{classsvl_c_c_calibration_grid_a751a80c36e0d1d094a41cb8204b0658e}{}\index{svl\+C\+C\+Calibration\+Grid@{svl\+C\+C\+Calibration\+Grid}!correlate@{correlate}}
-\index{correlate@{correlate}!svl\+C\+C\+Calibration\+Grid@{svl\+C\+C\+Calibration\+Grid}}
-\subsubsection[{correlate}]{\setlength{\rightskip}{0pt plus 5cm}void svl\+C\+C\+Calibration\+Grid\+::correlate (
+)}}\label{classsvl_c_c_calibration_grid_a24446cf287b96d1b8dabe3a5561f9db3}
+\hypertarget{classsvl_c_c_calibration_grid_a751a80c36e0d1d094a41cb8204b0658e}{\index{svl\-C\-C\-Calibration\-Grid@{svl\-C\-C\-Calibration\-Grid}!correlate@{correlate}}
+\index{correlate@{correlate}!svlCCCalibrationGrid@{svl\-C\-C\-Calibration\-Grid}}
+\subsubsection[{correlate}]{\setlength{\rightskip}{0pt plus 5cm}void svl\-C\-C\-Calibration\-Grid\-::correlate (
 \begin{DoxyParamCaption}
-\item[{{\bf svl\+C\+C\+Origin\+Detector} $\ast$}]{origin\+Detector, }
-\item[{{\bf svl\+C\+C\+Corner\+Detector} $\ast$}]{corner\+Detector}
+\item[{{\bf svl\-C\-C\-Origin\-Detector} $\ast$}]{origin\-Detector, }
+\item[{{\bf svl\-C\-C\-Corner\-Detector} $\ast$}]{corner\-Detector}
 \end{DoxyParamCaption}
-)}\label{classsvl_c_c_calibration_grid_a751a80c36e0d1d094a41cb8204b0658e}
-\hypertarget{classsvl_c_c_calibration_grid_af638b388dc77d852572e574bcf43a09c}{}\index{svl\+C\+C\+Calibration\+Grid@{svl\+C\+C\+Calibration\+Grid}!Get\+Camera\+Geometry@{Get\+Camera\+Geometry}}
-\index{Get\+Camera\+Geometry@{Get\+Camera\+Geometry}!svl\+C\+C\+Calibration\+Grid@{svl\+C\+C\+Calibration\+Grid}}
-\subsubsection[{Get\+Camera\+Geometry}]{\setlength{\rightskip}{0pt plus 5cm}{\bf svl\+Sample\+Camera\+Geometry}$\ast$ svl\+C\+C\+Calibration\+Grid\+::\+Get\+Camera\+Geometry (
+)}}\label{classsvl_c_c_calibration_grid_a751a80c36e0d1d094a41cb8204b0658e}
+\hypertarget{classsvl_c_c_calibration_grid_af638b388dc77d852572e574bcf43a09c}{\index{svl\-C\-C\-Calibration\-Grid@{svl\-C\-C\-Calibration\-Grid}!Get\-Camera\-Geometry@{Get\-Camera\-Geometry}}
+\index{Get\-Camera\-Geometry@{Get\-Camera\-Geometry}!svlCCCalibrationGrid@{svl\-C\-C\-Calibration\-Grid}}
+\subsubsection[{Get\-Camera\-Geometry}]{\setlength{\rightskip}{0pt plus 5cm}{\bf svl\-Sample\-Camera\-Geometry}$\ast$ svl\-C\-C\-Calibration\-Grid\-::\-Get\-Camera\-Geometry (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}\label{classsvl_c_c_calibration_grid_af638b388dc77d852572e574bcf43a09c}
-\hypertarget{classsvl_c_c_calibration_grid_a32c98cacf6d5961cfce2cef58fa03586}{}\index{svl\+C\+C\+Calibration\+Grid@{svl\+C\+C\+Calibration\+Grid}!get\+Good\+Calibration\+Grid\+Points3\+D@{get\+Good\+Calibration\+Grid\+Points3\+D}}
-\index{get\+Good\+Calibration\+Grid\+Points3\+D@{get\+Good\+Calibration\+Grid\+Points3\+D}!svl\+C\+C\+Calibration\+Grid@{svl\+C\+C\+Calibration\+Grid}}
-\subsubsection[{get\+Good\+Calibration\+Grid\+Points3\+D}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$cv\+::\+Point3f$>$ svl\+C\+C\+Calibration\+Grid\+::get\+Good\+Calibration\+Grid\+Points3\+D (
+)}}\label{classsvl_c_c_calibration_grid_af638b388dc77d852572e574bcf43a09c}
+\hypertarget{classsvl_c_c_calibration_grid_a32c98cacf6d5961cfce2cef58fa03586}{\index{svl\-C\-C\-Calibration\-Grid@{svl\-C\-C\-Calibration\-Grid}!get\-Good\-Calibration\-Grid\-Points3\-D@{get\-Good\-Calibration\-Grid\-Points3\-D}}
+\index{get\-Good\-Calibration\-Grid\-Points3\-D@{get\-Good\-Calibration\-Grid\-Points3\-D}!svlCCCalibrationGrid@{svl\-C\-C\-Calibration\-Grid}}
+\subsubsection[{get\-Good\-Calibration\-Grid\-Points3\-D}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$cv\-::\-Point3f$>$ svl\-C\-C\-Calibration\-Grid\-::get\-Good\-Calibration\-Grid\-Points3\-D (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}\label{classsvl_c_c_calibration_grid_a32c98cacf6d5961cfce2cef58fa03586}
-\hypertarget{classsvl_c_c_calibration_grid_a752883125648639e89eb05d66d19a5d4}{}\index{svl\+C\+C\+Calibration\+Grid@{svl\+C\+C\+Calibration\+Grid}!get\+Good\+Image\+Points@{get\+Good\+Image\+Points}}
-\index{get\+Good\+Image\+Points@{get\+Good\+Image\+Points}!svl\+C\+C\+Calibration\+Grid@{svl\+C\+C\+Calibration\+Grid}}
-\subsubsection[{get\+Good\+Image\+Points}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$cv\+::\+Point2f$>$ svl\+C\+C\+Calibration\+Grid\+::get\+Good\+Image\+Points (
+)}}\label{classsvl_c_c_calibration_grid_a32c98cacf6d5961cfce2cef58fa03586}
+\hypertarget{classsvl_c_c_calibration_grid_a752883125648639e89eb05d66d19a5d4}{\index{svl\-C\-C\-Calibration\-Grid@{svl\-C\-C\-Calibration\-Grid}!get\-Good\-Image\-Points@{get\-Good\-Image\-Points}}
+\index{get\-Good\-Image\-Points@{get\-Good\-Image\-Points}!svlCCCalibrationGrid@{svl\-C\-C\-Calibration\-Grid}}
+\subsubsection[{get\-Good\-Image\-Points}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$cv\-::\-Point2f$>$ svl\-C\-C\-Calibration\-Grid\-::get\-Good\-Image\-Points (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}\label{classsvl_c_c_calibration_grid_a752883125648639e89eb05d66d19a5d4}
-\hypertarget{classsvl_c_c_calibration_grid_aeea914d2140f4cbb5064272ce3d82ab0}{}\index{svl\+C\+C\+Calibration\+Grid@{svl\+C\+C\+Calibration\+Grid}!get\+Good\+Projected\+Image\+Points@{get\+Good\+Projected\+Image\+Points}}
-\index{get\+Good\+Projected\+Image\+Points@{get\+Good\+Projected\+Image\+Points}!svl\+C\+C\+Calibration\+Grid@{svl\+C\+C\+Calibration\+Grid}}
-\subsubsection[{get\+Good\+Projected\+Image\+Points}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$cv\+::\+Point2f$>$ svl\+C\+C\+Calibration\+Grid\+::get\+Good\+Projected\+Image\+Points (
+)}}\label{classsvl_c_c_calibration_grid_a752883125648639e89eb05d66d19a5d4}
+\hypertarget{classsvl_c_c_calibration_grid_aeea914d2140f4cbb5064272ce3d82ab0}{\index{svl\-C\-C\-Calibration\-Grid@{svl\-C\-C\-Calibration\-Grid}!get\-Good\-Projected\-Image\-Points@{get\-Good\-Projected\-Image\-Points}}
+\index{get\-Good\-Projected\-Image\-Points@{get\-Good\-Projected\-Image\-Points}!svlCCCalibrationGrid@{svl\-C\-C\-Calibration\-Grid}}
+\subsubsection[{get\-Good\-Projected\-Image\-Points}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$cv\-::\-Point2f$>$ svl\-C\-C\-Calibration\-Grid\-::get\-Good\-Projected\-Image\-Points (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}\label{classsvl_c_c_calibration_grid_aeea914d2140f4cbb5064272ce3d82ab0}
-\hypertarget{classsvl_c_c_calibration_grid_ac92fde3ddfa68b36159a6a69d64f2d0f}{}\index{svl\+C\+C\+Calibration\+Grid@{svl\+C\+C\+Calibration\+Grid}!optimize\+Calibration@{optimize\+Calibration}}
-\index{optimize\+Calibration@{optimize\+Calibration}!svl\+C\+C\+Calibration\+Grid@{svl\+C\+C\+Calibration\+Grid}}
-\subsubsection[{optimize\+Calibration}]{\setlength{\rightskip}{0pt plus 5cm}void svl\+C\+C\+Calibration\+Grid\+::optimize\+Calibration (
+)}}\label{classsvl_c_c_calibration_grid_aeea914d2140f4cbb5064272ce3d82ab0}
+\hypertarget{classsvl_c_c_calibration_grid_ac92fde3ddfa68b36159a6a69d64f2d0f}{\index{svl\-C\-C\-Calibration\-Grid@{svl\-C\-C\-Calibration\-Grid}!optimize\-Calibration@{optimize\-Calibration}}
+\index{optimize\-Calibration@{optimize\-Calibration}!svlCCCalibrationGrid@{svl\-C\-C\-Calibration\-Grid}}
+\subsubsection[{optimize\-Calibration}]{\setlength{\rightskip}{0pt plus 5cm}void svl\-C\-C\-Calibration\-Grid\-::optimize\-Calibration (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}\label{classsvl_c_c_calibration_grid_ac92fde3ddfa68b36159a6a69d64f2d0f}
-\hypertarget{classsvl_c_c_calibration_grid_a92d222b6bcb5b747b343d8c35e2994ce}{}\index{svl\+C\+C\+Calibration\+Grid@{svl\+C\+C\+Calibration\+Grid}!print\+Calibration\+Parameters@{print\+Calibration\+Parameters}}
-\index{print\+Calibration\+Parameters@{print\+Calibration\+Parameters}!svl\+C\+C\+Calibration\+Grid@{svl\+C\+C\+Calibration\+Grid}}
-\subsubsection[{print\+Calibration\+Parameters}]{\setlength{\rightskip}{0pt plus 5cm}void svl\+C\+C\+Calibration\+Grid\+::print\+Calibration\+Parameters (
+)}}\label{classsvl_c_c_calibration_grid_ac92fde3ddfa68b36159a6a69d64f2d0f}
+\hypertarget{classsvl_c_c_calibration_grid_a92d222b6bcb5b747b343d8c35e2994ce}{\index{svl\-C\-C\-Calibration\-Grid@{svl\-C\-C\-Calibration\-Grid}!print\-Calibration\-Parameters@{print\-Calibration\-Parameters}}
+\index{print\-Calibration\-Parameters@{print\-Calibration\-Parameters}!svlCCCalibrationGrid@{svl\-C\-C\-Calibration\-Grid}}
+\subsubsection[{print\-Calibration\-Parameters}]{\setlength{\rightskip}{0pt plus 5cm}void svl\-C\-C\-Calibration\-Grid\-::print\-Calibration\-Parameters (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}\label{classsvl_c_c_calibration_grid_a92d222b6bcb5b747b343d8c35e2994ce}
-\hypertarget{classsvl_c_c_calibration_grid_a4f0a7daef69595eed5cf2b23eb94132f}{}\index{svl\+C\+C\+Calibration\+Grid@{svl\+C\+C\+Calibration\+Grid}!refine@{refine}}
-\index{refine@{refine}!svl\+C\+C\+Calibration\+Grid@{svl\+C\+C\+Calibration\+Grid}}
-\subsubsection[{refine}]{\setlength{\rightskip}{0pt plus 5cm}double svl\+C\+C\+Calibration\+Grid\+::refine (
+)}}\label{classsvl_c_c_calibration_grid_a92d222b6bcb5b747b343d8c35e2994ce}
+\hypertarget{classsvl_c_c_calibration_grid_a4f0a7daef69595eed5cf2b23eb94132f}{\index{svl\-C\-C\-Calibration\-Grid@{svl\-C\-C\-Calibration\-Grid}!refine@{refine}}
+\index{refine@{refine}!svlCCCalibrationGrid@{svl\-C\-C\-Calibration\-Grid}}
+\subsubsection[{refine}]{\setlength{\rightskip}{0pt plus 5cm}double svl\-C\-C\-Calibration\-Grid\-::refine (
 \begin{DoxyParamCaption}
-\item[{const {\bf cv\+::\+Mat} \&}]{local\+Rvec, }
-\item[{const {\bf cv\+::\+Mat} \&}]{local\+Tvec, }
-\item[{const {\bf cv\+::\+Mat} \&}]{local\+Camera\+Matrix, }
-\item[{const {\bf cv\+::\+Mat} \&}]{local\+Dist\+Coeffs, }
+\item[{const {\bf cv\-::\-Mat} \&}]{local\-Rvec, }
+\item[{const {\bf cv\-::\-Mat} \&}]{local\-Tvec, }
+\item[{const {\bf cv\-::\-Mat} \&}]{local\-Camera\-Matrix, }
+\item[{const {\bf cv\-::\-Mat} \&}]{local\-Dist\-Coeffs, }
 \item[{float}]{threshold, }
-\item[{bool}]{run\+Homography}
+\item[{bool}]{run\-Homography}
 \end{DoxyParamCaption}
-)}\label{classsvl_c_c_calibration_grid_a4f0a7daef69595eed5cf2b23eb94132f}
-\hypertarget{classsvl_c_c_calibration_grid_a2b38609fe50a0de989d81fdfbac12839}{}\index{svl\+C\+C\+Calibration\+Grid@{svl\+C\+C\+Calibration\+Grid}!set\+Ground\+Truth\+Transformation@{set\+Ground\+Truth\+Transformation}}
-\index{set\+Ground\+Truth\+Transformation@{set\+Ground\+Truth\+Transformation}!svl\+C\+C\+Calibration\+Grid@{svl\+C\+C\+Calibration\+Grid}}
-\subsubsection[{set\+Ground\+Truth\+Transformation}]{\setlength{\rightskip}{0pt plus 5cm}void svl\+C\+C\+Calibration\+Grid\+::set\+Ground\+Truth\+Transformation (
+)}}\label{classsvl_c_c_calibration_grid_a4f0a7daef69595eed5cf2b23eb94132f}
+\hypertarget{classsvl_c_c_calibration_grid_a2b38609fe50a0de989d81fdfbac12839}{\index{svl\-C\-C\-Calibration\-Grid@{svl\-C\-C\-Calibration\-Grid}!set\-Ground\-Truth\-Transformation@{set\-Ground\-Truth\-Transformation}}
+\index{set\-Ground\-Truth\-Transformation@{set\-Ground\-Truth\-Transformation}!svlCCCalibrationGrid@{svl\-C\-C\-Calibration\-Grid}}
+\subsubsection[{set\-Ground\-Truth\-Transformation}]{\setlength{\rightskip}{0pt plus 5cm}void svl\-C\-C\-Calibration\-Grid\-::set\-Ground\-Truth\-Transformation (
 \begin{DoxyParamCaption}
-\item[{Cv\+Mat $\ast$}]{ground\+Truth\+Camera\+Transformation}
+\item[{Cv\-Mat $\ast$}]{ground\-Truth\-Camera\-Transformation}
 \end{DoxyParamCaption}
-)}\label{classsvl_c_c_calibration_grid_a2b38609fe50a0de989d81fdfbac12839}
+)}}\label{classsvl_c_c_calibration_grid_a2b38609fe50a0de989d81fdfbac12839}
 
 
 \subsection{Member Data Documentation}
-\hypertarget{classsvl_c_c_calibration_grid_a0c584283648c8d63a0c33646d35a60f2}{}\index{svl\+C\+C\+Calibration\+Grid@{svl\+C\+C\+Calibration\+Grid}!board\+Size@{board\+Size}}
-\index{board\+Size@{board\+Size}!svl\+C\+C\+Calibration\+Grid@{svl\+C\+C\+Calibration\+Grid}}
-\subsubsection[{board\+Size}]{\setlength{\rightskip}{0pt plus 5cm}cv\+::\+Size svl\+C\+C\+Calibration\+Grid\+::board\+Size}\label{classsvl_c_c_calibration_grid_a0c584283648c8d63a0c33646d35a60f2}
-\hypertarget{classsvl_c_c_calibration_grid_a16c87e7174d1ebadad02bb2f00374f20}{}\index{svl\+C\+C\+Calibration\+Grid@{svl\+C\+C\+Calibration\+Grid}!calibration\+Grid\+Points@{calibration\+Grid\+Points}}
-\index{calibration\+Grid\+Points@{calibration\+Grid\+Points}!svl\+C\+C\+Calibration\+Grid@{svl\+C\+C\+Calibration\+Grid}}
-\subsubsection[{calibration\+Grid\+Points}]{\setlength{\rightskip}{0pt plus 5cm}cv\+::\+Point2f$\ast$$\ast$ svl\+C\+C\+Calibration\+Grid\+::calibration\+Grid\+Points}\label{classsvl_c_c_calibration_grid_a16c87e7174d1ebadad02bb2f00374f20}
-\hypertarget{classsvl_c_c_calibration_grid_a7a2116179fd17b6225c5fbeab19d99a0}{}\index{svl\+C\+C\+Calibration\+Grid@{svl\+C\+C\+Calibration\+Grid}!camera\+Matrix@{camera\+Matrix}}
-\index{camera\+Matrix@{camera\+Matrix}!svl\+C\+C\+Calibration\+Grid@{svl\+C\+C\+Calibration\+Grid}}
-\subsubsection[{camera\+Matrix}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cv\+::\+Mat} svl\+C\+C\+Calibration\+Grid\+::camera\+Matrix}\label{classsvl_c_c_calibration_grid_a7a2116179fd17b6225c5fbeab19d99a0}
-\hypertarget{classsvl_c_c_calibration_grid_a24635710953d9ad967caed593db745cf}{}\index{svl\+C\+C\+Calibration\+Grid@{svl\+C\+C\+Calibration\+Grid}!dist\+Coeffs@{dist\+Coeffs}}
-\index{dist\+Coeffs@{dist\+Coeffs}!svl\+C\+C\+Calibration\+Grid@{svl\+C\+C\+Calibration\+Grid}}
-\subsubsection[{dist\+Coeffs}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cv\+::\+Mat} svl\+C\+C\+Calibration\+Grid\+::dist\+Coeffs}\label{classsvl_c_c_calibration_grid_a24635710953d9ad967caed593db745cf}
-\hypertarget{classsvl_c_c_calibration_grid_ab80850211d593053f9742680204ad68d}{}\index{svl\+C\+C\+Calibration\+Grid@{svl\+C\+C\+Calibration\+Grid}!grid\+Size@{grid\+Size}}
-\index{grid\+Size@{grid\+Size}!svl\+C\+C\+Calibration\+Grid@{svl\+C\+C\+Calibration\+Grid}}
-\subsubsection[{grid\+Size}]{\setlength{\rightskip}{0pt plus 5cm}float svl\+C\+C\+Calibration\+Grid\+::grid\+Size}\label{classsvl_c_c_calibration_grid_ab80850211d593053f9742680204ad68d}
-\hypertarget{classsvl_c_c_calibration_grid_a6bc5a200e85665be8811614a3abe470b}{}\index{svl\+C\+C\+Calibration\+Grid@{svl\+C\+C\+Calibration\+Grid}!grid\+Size\+Pixel@{grid\+Size\+Pixel}}
-\index{grid\+Size\+Pixel@{grid\+Size\+Pixel}!svl\+C\+C\+Calibration\+Grid@{svl\+C\+C\+Calibration\+Grid}}
-\subsubsection[{grid\+Size\+Pixel}]{\setlength{\rightskip}{0pt plus 5cm}float svl\+C\+C\+Calibration\+Grid\+::grid\+Size\+Pixel}\label{classsvl_c_c_calibration_grid_a6bc5a200e85665be8811614a3abe470b}
-\hypertarget{classsvl_c_c_calibration_grid_a999d324f40227be7e33c7549f217bced}{}\index{svl\+C\+C\+Calibration\+Grid@{svl\+C\+C\+Calibration\+Grid}!ground\+Truth\+Calibration\+Grid\+Points@{ground\+Truth\+Calibration\+Grid\+Points}}
-\index{ground\+Truth\+Calibration\+Grid\+Points@{ground\+Truth\+Calibration\+Grid\+Points}!svl\+C\+C\+Calibration\+Grid@{svl\+C\+C\+Calibration\+Grid}}
-\subsubsection[{ground\+Truth\+Calibration\+Grid\+Points}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$cv\+::\+Point3f$>$ svl\+C\+C\+Calibration\+Grid\+::ground\+Truth\+Calibration\+Grid\+Points}\label{classsvl_c_c_calibration_grid_a999d324f40227be7e33c7549f217bced}
-\hypertarget{classsvl_c_c_calibration_grid_a1956cef695c8327984c5ba89b20b562b}{}\index{svl\+C\+C\+Calibration\+Grid@{svl\+C\+C\+Calibration\+Grid}!ground\+Truth\+Image\+Points@{ground\+Truth\+Image\+Points}}
-\index{ground\+Truth\+Image\+Points@{ground\+Truth\+Image\+Points}!svl\+C\+C\+Calibration\+Grid@{svl\+C\+C\+Calibration\+Grid}}
-\subsubsection[{ground\+Truth\+Image\+Points}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$cv\+::\+Point2f$>$ svl\+C\+C\+Calibration\+Grid\+::ground\+Truth\+Image\+Points}\label{classsvl_c_c_calibration_grid_a1956cef695c8327984c5ba89b20b562b}
-\hypertarget{classsvl_c_c_calibration_grid_afce9a2410faf4d8bcd8a44fa7e6aab22}{}\index{svl\+C\+C\+Calibration\+Grid@{svl\+C\+C\+Calibration\+Grid}!ground\+Truth\+Rmatrix@{ground\+Truth\+Rmatrix}}
-\index{ground\+Truth\+Rmatrix@{ground\+Truth\+Rmatrix}!svl\+C\+C\+Calibration\+Grid@{svl\+C\+C\+Calibration\+Grid}}
-\subsubsection[{ground\+Truth\+Rmatrix}]{\setlength{\rightskip}{0pt plus 5cm}Cv\+Mat$\ast$ svl\+C\+C\+Calibration\+Grid\+::ground\+Truth\+Rmatrix}\label{classsvl_c_c_calibration_grid_afce9a2410faf4d8bcd8a44fa7e6aab22}
-\hypertarget{classsvl_c_c_calibration_grid_aa4eae79ebad278af9e217a647af596d9}{}\index{svl\+C\+C\+Calibration\+Grid@{svl\+C\+C\+Calibration\+Grid}!ground\+Truth\+Rvec@{ground\+Truth\+Rvec}}
-\index{ground\+Truth\+Rvec@{ground\+Truth\+Rvec}!svl\+C\+C\+Calibration\+Grid@{svl\+C\+C\+Calibration\+Grid}}
-\subsubsection[{ground\+Truth\+Rvec}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cv\+::\+Mat} svl\+C\+C\+Calibration\+Grid\+::ground\+Truth\+Rvec}\label{classsvl_c_c_calibration_grid_aa4eae79ebad278af9e217a647af596d9}
-\hypertarget{classsvl_c_c_calibration_grid_a76d4c8a5a30be5afc085db95aeae4505}{}\index{svl\+C\+C\+Calibration\+Grid@{svl\+C\+C\+Calibration\+Grid}!ground\+Truth\+Tvec@{ground\+Truth\+Tvec}}
-\index{ground\+Truth\+Tvec@{ground\+Truth\+Tvec}!svl\+C\+C\+Calibration\+Grid@{svl\+C\+C\+Calibration\+Grid}}
-\subsubsection[{ground\+Truth\+Tvec}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cv\+::\+Mat} svl\+C\+C\+Calibration\+Grid\+::ground\+Truth\+Tvec}\label{classsvl_c_c_calibration_grid_a76d4c8a5a30be5afc085db95aeae4505}
-\hypertarget{classsvl_c_c_calibration_grid_aef49aedc791dda4cb83338a9762a0a91}{}\index{svl\+C\+C\+Calibration\+Grid@{svl\+C\+C\+Calibration\+Grid}!has\+Tracking@{has\+Tracking}}
-\index{has\+Tracking@{has\+Tracking}!svl\+C\+C\+Calibration\+Grid@{svl\+C\+C\+Calibration\+Grid}}
-\subsubsection[{has\+Tracking}]{\setlength{\rightskip}{0pt plus 5cm}bool svl\+C\+C\+Calibration\+Grid\+::has\+Tracking}\label{classsvl_c_c_calibration_grid_aef49aedc791dda4cb83338a9762a0a91}
-\hypertarget{classsvl_c_c_calibration_grid_af7379a6c73a59f86c73d299137455ac5}{}\index{svl\+C\+C\+Calibration\+Grid@{svl\+C\+C\+Calibration\+Grid}!image\+Points@{image\+Points}}
-\index{image\+Points@{image\+Points}!svl\+C\+C\+Calibration\+Grid@{svl\+C\+C\+Calibration\+Grid}}
-\subsubsection[{image\+Points}]{\setlength{\rightskip}{0pt plus 5cm}cv\+::\+Point2f$\ast$$\ast$ svl\+C\+C\+Calibration\+Grid\+::image\+Points}\label{classsvl_c_c_calibration_grid_af7379a6c73a59f86c73d299137455ac5}
-\hypertarget{classsvl_c_c_calibration_grid_ac2b807269572258ab5a21e6ba7fec32a}{}\index{svl\+C\+C\+Calibration\+Grid@{svl\+C\+C\+Calibration\+Grid}!min\+Grid\+Points@{min\+Grid\+Points}}
-\index{min\+Grid\+Points@{min\+Grid\+Points}!svl\+C\+C\+Calibration\+Grid@{svl\+C\+C\+Calibration\+Grid}}
-\subsubsection[{min\+Grid\+Points}]{\setlength{\rightskip}{0pt plus 5cm}int svl\+C\+C\+Calibration\+Grid\+::min\+Grid\+Points}\label{classsvl_c_c_calibration_grid_ac2b807269572258ab5a21e6ba7fec32a}
-\hypertarget{classsvl_c_c_calibration_grid_ac82abbf0e84938e8ef15b686f90c9bcd}{}\index{svl\+C\+C\+Calibration\+Grid@{svl\+C\+C\+Calibration\+Grid}!refine\+Threshold@{refine\+Threshold}}
-\index{refine\+Threshold@{refine\+Threshold}!svl\+C\+C\+Calibration\+Grid@{svl\+C\+C\+Calibration\+Grid}}
-\subsubsection[{refine\+Threshold}]{\setlength{\rightskip}{0pt plus 5cm}float svl\+C\+C\+Calibration\+Grid\+::refine\+Threshold}\label{classsvl_c_c_calibration_grid_ac82abbf0e84938e8ef15b686f90c9bcd}
-\hypertarget{classsvl_c_c_calibration_grid_abf2bca134330551d15f8410b9db6af90}{}\index{svl\+C\+C\+Calibration\+Grid@{svl\+C\+C\+Calibration\+Grid}!rmatrix@{rmatrix}}
-\index{rmatrix@{rmatrix}!svl\+C\+C\+Calibration\+Grid@{svl\+C\+C\+Calibration\+Grid}}
-\subsubsection[{rmatrix}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cv\+::\+Mat} svl\+C\+C\+Calibration\+Grid\+::rmatrix}\label{classsvl_c_c_calibration_grid_abf2bca134330551d15f8410b9db6af90}
-\hypertarget{classsvl_c_c_calibration_grid_a06257e79aa088b560387dbf6b21ec589}{}\index{svl\+C\+C\+Calibration\+Grid@{svl\+C\+C\+Calibration\+Grid}!rvec@{rvec}}
-\index{rvec@{rvec}!svl\+C\+C\+Calibration\+Grid@{svl\+C\+C\+Calibration\+Grid}}
-\subsubsection[{rvec}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cv\+::\+Mat} svl\+C\+C\+Calibration\+Grid\+::rvec}\label{classsvl_c_c_calibration_grid_a06257e79aa088b560387dbf6b21ec589}
-\hypertarget{classsvl_c_c_calibration_grid_a08c42ea2dfe94cc29e5a18148d21448e}{}\index{svl\+C\+C\+Calibration\+Grid@{svl\+C\+C\+Calibration\+Grid}!tvec@{tvec}}
-\index{tvec@{tvec}!svl\+C\+C\+Calibration\+Grid@{svl\+C\+C\+Calibration\+Grid}}
-\subsubsection[{tvec}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cv\+::\+Mat} svl\+C\+C\+Calibration\+Grid\+::tvec}\label{classsvl_c_c_calibration_grid_a08c42ea2dfe94cc29e5a18148d21448e}
-\hypertarget{classsvl_c_c_calibration_grid_a9d5cd80c8a24be914db2dcfb4535de01}{}\index{svl\+C\+C\+Calibration\+Grid@{svl\+C\+C\+Calibration\+Grid}!valid@{valid}}
-\index{valid@{valid}!svl\+C\+C\+Calibration\+Grid@{svl\+C\+C\+Calibration\+Grid}}
-\subsubsection[{valid}]{\setlength{\rightskip}{0pt plus 5cm}bool svl\+C\+C\+Calibration\+Grid\+::valid}\label{classsvl_c_c_calibration_grid_a9d5cd80c8a24be914db2dcfb4535de01}
-\hypertarget{classsvl_c_c_calibration_grid_a2edf34681f2c5476af187de836ddbb79}{}\index{svl\+C\+C\+Calibration\+Grid@{svl\+C\+C\+Calibration\+Grid}!valid\+Ground\+Truth@{valid\+Ground\+Truth}}
-\index{valid\+Ground\+Truth@{valid\+Ground\+Truth}!svl\+C\+C\+Calibration\+Grid@{svl\+C\+C\+Calibration\+Grid}}
-\subsubsection[{valid\+Ground\+Truth}]{\setlength{\rightskip}{0pt plus 5cm}bool svl\+C\+C\+Calibration\+Grid\+::valid\+Ground\+Truth}\label{classsvl_c_c_calibration_grid_a2edf34681f2c5476af187de836ddbb79}
-\hypertarget{classsvl_c_c_calibration_grid_a7022b0856e07b5004a767fdd80d78e4a}{}\index{svl\+C\+C\+Calibration\+Grid@{svl\+C\+C\+Calibration\+Grid}!visibility@{visibility}}
-\index{visibility@{visibility}!svl\+C\+C\+Calibration\+Grid@{svl\+C\+C\+Calibration\+Grid}}
-\subsubsection[{visibility}]{\setlength{\rightskip}{0pt plus 5cm}bool$\ast$$\ast$ svl\+C\+C\+Calibration\+Grid\+::visibility}\label{classsvl_c_c_calibration_grid_a7022b0856e07b5004a767fdd80d78e4a}
-\hypertarget{classsvl_c_c_calibration_grid_a76795dc4a6916d8c4cc6c2eec54bf049}{}\index{svl\+C\+C\+Calibration\+Grid@{svl\+C\+C\+Calibration\+Grid}!world\+To\+T\+C\+P@{world\+To\+T\+C\+P}}
-\index{world\+To\+T\+C\+P@{world\+To\+T\+C\+P}!svl\+C\+C\+Calibration\+Grid@{svl\+C\+C\+Calibration\+Grid}}
-\subsubsection[{world\+To\+T\+C\+P}]{\setlength{\rightskip}{0pt plus 5cm}Cv\+Mat$\ast$ svl\+C\+C\+Calibration\+Grid\+::world\+To\+T\+C\+P}\label{classsvl_c_c_calibration_grid_a76795dc4a6916d8c4cc6c2eec54bf049}
+\hypertarget{classsvl_c_c_calibration_grid_a0c584283648c8d63a0c33646d35a60f2}{\index{svl\-C\-C\-Calibration\-Grid@{svl\-C\-C\-Calibration\-Grid}!board\-Size@{board\-Size}}
+\index{board\-Size@{board\-Size}!svlCCCalibrationGrid@{svl\-C\-C\-Calibration\-Grid}}
+\subsubsection[{board\-Size}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::\-Size svl\-C\-C\-Calibration\-Grid\-::board\-Size}}\label{classsvl_c_c_calibration_grid_a0c584283648c8d63a0c33646d35a60f2}
+\hypertarget{classsvl_c_c_calibration_grid_a16c87e7174d1ebadad02bb2f00374f20}{\index{svl\-C\-C\-Calibration\-Grid@{svl\-C\-C\-Calibration\-Grid}!calibration\-Grid\-Points@{calibration\-Grid\-Points}}
+\index{calibration\-Grid\-Points@{calibration\-Grid\-Points}!svlCCCalibrationGrid@{svl\-C\-C\-Calibration\-Grid}}
+\subsubsection[{calibration\-Grid\-Points}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::\-Point2f$\ast$$\ast$ svl\-C\-C\-Calibration\-Grid\-::calibration\-Grid\-Points}}\label{classsvl_c_c_calibration_grid_a16c87e7174d1ebadad02bb2f00374f20}
+\hypertarget{classsvl_c_c_calibration_grid_a7a2116179fd17b6225c5fbeab19d99a0}{\index{svl\-C\-C\-Calibration\-Grid@{svl\-C\-C\-Calibration\-Grid}!camera\-Matrix@{camera\-Matrix}}
+\index{camera\-Matrix@{camera\-Matrix}!svlCCCalibrationGrid@{svl\-C\-C\-Calibration\-Grid}}
+\subsubsection[{camera\-Matrix}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cv\-::\-Mat} svl\-C\-C\-Calibration\-Grid\-::camera\-Matrix}}\label{classsvl_c_c_calibration_grid_a7a2116179fd17b6225c5fbeab19d99a0}
+\hypertarget{classsvl_c_c_calibration_grid_a24635710953d9ad967caed593db745cf}{\index{svl\-C\-C\-Calibration\-Grid@{svl\-C\-C\-Calibration\-Grid}!dist\-Coeffs@{dist\-Coeffs}}
+\index{dist\-Coeffs@{dist\-Coeffs}!svlCCCalibrationGrid@{svl\-C\-C\-Calibration\-Grid}}
+\subsubsection[{dist\-Coeffs}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cv\-::\-Mat} svl\-C\-C\-Calibration\-Grid\-::dist\-Coeffs}}\label{classsvl_c_c_calibration_grid_a24635710953d9ad967caed593db745cf}
+\hypertarget{classsvl_c_c_calibration_grid_ab80850211d593053f9742680204ad68d}{\index{svl\-C\-C\-Calibration\-Grid@{svl\-C\-C\-Calibration\-Grid}!grid\-Size@{grid\-Size}}
+\index{grid\-Size@{grid\-Size}!svlCCCalibrationGrid@{svl\-C\-C\-Calibration\-Grid}}
+\subsubsection[{grid\-Size}]{\setlength{\rightskip}{0pt plus 5cm}float svl\-C\-C\-Calibration\-Grid\-::grid\-Size}}\label{classsvl_c_c_calibration_grid_ab80850211d593053f9742680204ad68d}
+\hypertarget{classsvl_c_c_calibration_grid_a6bc5a200e85665be8811614a3abe470b}{\index{svl\-C\-C\-Calibration\-Grid@{svl\-C\-C\-Calibration\-Grid}!grid\-Size\-Pixel@{grid\-Size\-Pixel}}
+\index{grid\-Size\-Pixel@{grid\-Size\-Pixel}!svlCCCalibrationGrid@{svl\-C\-C\-Calibration\-Grid}}
+\subsubsection[{grid\-Size\-Pixel}]{\setlength{\rightskip}{0pt plus 5cm}float svl\-C\-C\-Calibration\-Grid\-::grid\-Size\-Pixel}}\label{classsvl_c_c_calibration_grid_a6bc5a200e85665be8811614a3abe470b}
+\hypertarget{classsvl_c_c_calibration_grid_a999d324f40227be7e33c7549f217bced}{\index{svl\-C\-C\-Calibration\-Grid@{svl\-C\-C\-Calibration\-Grid}!ground\-Truth\-Calibration\-Grid\-Points@{ground\-Truth\-Calibration\-Grid\-Points}}
+\index{ground\-Truth\-Calibration\-Grid\-Points@{ground\-Truth\-Calibration\-Grid\-Points}!svlCCCalibrationGrid@{svl\-C\-C\-Calibration\-Grid}}
+\subsubsection[{ground\-Truth\-Calibration\-Grid\-Points}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$cv\-::\-Point3f$>$ svl\-C\-C\-Calibration\-Grid\-::ground\-Truth\-Calibration\-Grid\-Points}}\label{classsvl_c_c_calibration_grid_a999d324f40227be7e33c7549f217bced}
+\hypertarget{classsvl_c_c_calibration_grid_a1956cef695c8327984c5ba89b20b562b}{\index{svl\-C\-C\-Calibration\-Grid@{svl\-C\-C\-Calibration\-Grid}!ground\-Truth\-Image\-Points@{ground\-Truth\-Image\-Points}}
+\index{ground\-Truth\-Image\-Points@{ground\-Truth\-Image\-Points}!svlCCCalibrationGrid@{svl\-C\-C\-Calibration\-Grid}}
+\subsubsection[{ground\-Truth\-Image\-Points}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$cv\-::\-Point2f$>$ svl\-C\-C\-Calibration\-Grid\-::ground\-Truth\-Image\-Points}}\label{classsvl_c_c_calibration_grid_a1956cef695c8327984c5ba89b20b562b}
+\hypertarget{classsvl_c_c_calibration_grid_afce9a2410faf4d8bcd8a44fa7e6aab22}{\index{svl\-C\-C\-Calibration\-Grid@{svl\-C\-C\-Calibration\-Grid}!ground\-Truth\-Rmatrix@{ground\-Truth\-Rmatrix}}
+\index{ground\-Truth\-Rmatrix@{ground\-Truth\-Rmatrix}!svlCCCalibrationGrid@{svl\-C\-C\-Calibration\-Grid}}
+\subsubsection[{ground\-Truth\-Rmatrix}]{\setlength{\rightskip}{0pt plus 5cm}Cv\-Mat$\ast$ svl\-C\-C\-Calibration\-Grid\-::ground\-Truth\-Rmatrix}}\label{classsvl_c_c_calibration_grid_afce9a2410faf4d8bcd8a44fa7e6aab22}
+\hypertarget{classsvl_c_c_calibration_grid_aa4eae79ebad278af9e217a647af596d9}{\index{svl\-C\-C\-Calibration\-Grid@{svl\-C\-C\-Calibration\-Grid}!ground\-Truth\-Rvec@{ground\-Truth\-Rvec}}
+\index{ground\-Truth\-Rvec@{ground\-Truth\-Rvec}!svlCCCalibrationGrid@{svl\-C\-C\-Calibration\-Grid}}
+\subsubsection[{ground\-Truth\-Rvec}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cv\-::\-Mat} svl\-C\-C\-Calibration\-Grid\-::ground\-Truth\-Rvec}}\label{classsvl_c_c_calibration_grid_aa4eae79ebad278af9e217a647af596d9}
+\hypertarget{classsvl_c_c_calibration_grid_a76d4c8a5a30be5afc085db95aeae4505}{\index{svl\-C\-C\-Calibration\-Grid@{svl\-C\-C\-Calibration\-Grid}!ground\-Truth\-Tvec@{ground\-Truth\-Tvec}}
+\index{ground\-Truth\-Tvec@{ground\-Truth\-Tvec}!svlCCCalibrationGrid@{svl\-C\-C\-Calibration\-Grid}}
+\subsubsection[{ground\-Truth\-Tvec}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cv\-::\-Mat} svl\-C\-C\-Calibration\-Grid\-::ground\-Truth\-Tvec}}\label{classsvl_c_c_calibration_grid_a76d4c8a5a30be5afc085db95aeae4505}
+\hypertarget{classsvl_c_c_calibration_grid_aef49aedc791dda4cb83338a9762a0a91}{\index{svl\-C\-C\-Calibration\-Grid@{svl\-C\-C\-Calibration\-Grid}!has\-Tracking@{has\-Tracking}}
+\index{has\-Tracking@{has\-Tracking}!svlCCCalibrationGrid@{svl\-C\-C\-Calibration\-Grid}}
+\subsubsection[{has\-Tracking}]{\setlength{\rightskip}{0pt plus 5cm}bool svl\-C\-C\-Calibration\-Grid\-::has\-Tracking}}\label{classsvl_c_c_calibration_grid_aef49aedc791dda4cb83338a9762a0a91}
+\hypertarget{classsvl_c_c_calibration_grid_af7379a6c73a59f86c73d299137455ac5}{\index{svl\-C\-C\-Calibration\-Grid@{svl\-C\-C\-Calibration\-Grid}!image\-Points@{image\-Points}}
+\index{image\-Points@{image\-Points}!svlCCCalibrationGrid@{svl\-C\-C\-Calibration\-Grid}}
+\subsubsection[{image\-Points}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::\-Point2f$\ast$$\ast$ svl\-C\-C\-Calibration\-Grid\-::image\-Points}}\label{classsvl_c_c_calibration_grid_af7379a6c73a59f86c73d299137455ac5}
+\hypertarget{classsvl_c_c_calibration_grid_ac2b807269572258ab5a21e6ba7fec32a}{\index{svl\-C\-C\-Calibration\-Grid@{svl\-C\-C\-Calibration\-Grid}!min\-Grid\-Points@{min\-Grid\-Points}}
+\index{min\-Grid\-Points@{min\-Grid\-Points}!svlCCCalibrationGrid@{svl\-C\-C\-Calibration\-Grid}}
+\subsubsection[{min\-Grid\-Points}]{\setlength{\rightskip}{0pt plus 5cm}int svl\-C\-C\-Calibration\-Grid\-::min\-Grid\-Points}}\label{classsvl_c_c_calibration_grid_ac2b807269572258ab5a21e6ba7fec32a}
+\hypertarget{classsvl_c_c_calibration_grid_ac82abbf0e84938e8ef15b686f90c9bcd}{\index{svl\-C\-C\-Calibration\-Grid@{svl\-C\-C\-Calibration\-Grid}!refine\-Threshold@{refine\-Threshold}}
+\index{refine\-Threshold@{refine\-Threshold}!svlCCCalibrationGrid@{svl\-C\-C\-Calibration\-Grid}}
+\subsubsection[{refine\-Threshold}]{\setlength{\rightskip}{0pt plus 5cm}float svl\-C\-C\-Calibration\-Grid\-::refine\-Threshold}}\label{classsvl_c_c_calibration_grid_ac82abbf0e84938e8ef15b686f90c9bcd}
+\hypertarget{classsvl_c_c_calibration_grid_abf2bca134330551d15f8410b9db6af90}{\index{svl\-C\-C\-Calibration\-Grid@{svl\-C\-C\-Calibration\-Grid}!rmatrix@{rmatrix}}
+\index{rmatrix@{rmatrix}!svlCCCalibrationGrid@{svl\-C\-C\-Calibration\-Grid}}
+\subsubsection[{rmatrix}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cv\-::\-Mat} svl\-C\-C\-Calibration\-Grid\-::rmatrix}}\label{classsvl_c_c_calibration_grid_abf2bca134330551d15f8410b9db6af90}
+\hypertarget{classsvl_c_c_calibration_grid_a06257e79aa088b560387dbf6b21ec589}{\index{svl\-C\-C\-Calibration\-Grid@{svl\-C\-C\-Calibration\-Grid}!rvec@{rvec}}
+\index{rvec@{rvec}!svlCCCalibrationGrid@{svl\-C\-C\-Calibration\-Grid}}
+\subsubsection[{rvec}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cv\-::\-Mat} svl\-C\-C\-Calibration\-Grid\-::rvec}}\label{classsvl_c_c_calibration_grid_a06257e79aa088b560387dbf6b21ec589}
+\hypertarget{classsvl_c_c_calibration_grid_a08c42ea2dfe94cc29e5a18148d21448e}{\index{svl\-C\-C\-Calibration\-Grid@{svl\-C\-C\-Calibration\-Grid}!tvec@{tvec}}
+\index{tvec@{tvec}!svlCCCalibrationGrid@{svl\-C\-C\-Calibration\-Grid}}
+\subsubsection[{tvec}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cv\-::\-Mat} svl\-C\-C\-Calibration\-Grid\-::tvec}}\label{classsvl_c_c_calibration_grid_a08c42ea2dfe94cc29e5a18148d21448e}
+\hypertarget{classsvl_c_c_calibration_grid_a9d5cd80c8a24be914db2dcfb4535de01}{\index{svl\-C\-C\-Calibration\-Grid@{svl\-C\-C\-Calibration\-Grid}!valid@{valid}}
+\index{valid@{valid}!svlCCCalibrationGrid@{svl\-C\-C\-Calibration\-Grid}}
+\subsubsection[{valid}]{\setlength{\rightskip}{0pt plus 5cm}bool svl\-C\-C\-Calibration\-Grid\-::valid}}\label{classsvl_c_c_calibration_grid_a9d5cd80c8a24be914db2dcfb4535de01}
+\hypertarget{classsvl_c_c_calibration_grid_a2edf34681f2c5476af187de836ddbb79}{\index{svl\-C\-C\-Calibration\-Grid@{svl\-C\-C\-Calibration\-Grid}!valid\-Ground\-Truth@{valid\-Ground\-Truth}}
+\index{valid\-Ground\-Truth@{valid\-Ground\-Truth}!svlCCCalibrationGrid@{svl\-C\-C\-Calibration\-Grid}}
+\subsubsection[{valid\-Ground\-Truth}]{\setlength{\rightskip}{0pt plus 5cm}bool svl\-C\-C\-Calibration\-Grid\-::valid\-Ground\-Truth}}\label{classsvl_c_c_calibration_grid_a2edf34681f2c5476af187de836ddbb79}
+\hypertarget{classsvl_c_c_calibration_grid_a7022b0856e07b5004a767fdd80d78e4a}{\index{svl\-C\-C\-Calibration\-Grid@{svl\-C\-C\-Calibration\-Grid}!visibility@{visibility}}
+\index{visibility@{visibility}!svlCCCalibrationGrid@{svl\-C\-C\-Calibration\-Grid}}
+\subsubsection[{visibility}]{\setlength{\rightskip}{0pt plus 5cm}bool$\ast$$\ast$ svl\-C\-C\-Calibration\-Grid\-::visibility}}\label{classsvl_c_c_calibration_grid_a7022b0856e07b5004a767fdd80d78e4a}
+\hypertarget{classsvl_c_c_calibration_grid_a76795dc4a6916d8c4cc6c2eec54bf049}{\index{svl\-C\-C\-Calibration\-Grid@{svl\-C\-C\-Calibration\-Grid}!world\-To\-T\-C\-P@{world\-To\-T\-C\-P}}
+\index{world\-To\-T\-C\-P@{world\-To\-T\-C\-P}!svlCCCalibrationGrid@{svl\-C\-C\-Calibration\-Grid}}
+\subsubsection[{world\-To\-T\-C\-P}]{\setlength{\rightskip}{0pt plus 5cm}Cv\-Mat$\ast$ svl\-C\-C\-Calibration\-Grid\-::world\-To\-T\-C\-P}}\label{classsvl_c_c_calibration_grid_a76795dc4a6916d8c4cc6c2eec54bf049}
 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
 \item 
-/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Stereo\+Vision/\hyperlink{svl_c_c_calibration_grid_8h}{svl\+C\+C\+Calibration\+Grid.\+h}\end{DoxyCompactItemize}
+/home/adeguet1/catkin\-\_\-ws/src/cisst-\/saw/cisst/cisst\-Stereo\-Vision/\hyperlink{svl_c_c_calibration_grid_8h}{svl\-C\-C\-Calibration\-Grid.\-h}\end{DoxyCompactItemize}

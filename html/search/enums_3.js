@@ -1,11 +1,11 @@
 var searchData=
 [
   ['camera',['Camera',['../da/d8d/classosa_o_s_g_stereo.html#a6f3072fa8cc1d46fcedff6b2d497f396',1,'osaOSGStereo']]],
-  ['charactersizetype',['CharacterSizeType',['../d9/d0f/group__cisst_o_s_abstraction.html#ga9b6b558d8e4327ca921d9c010bec0462',1,'osaSerialPort']]],
+  ['charactersizetype',['CharacterSizeType',['../d3/d6d/classosa_serial_port.html#a9b6b558d8e4327ca921d9c010bec0462',1,'osaSerialPort']]],
   ['code',['Code',['../da/d8b/namespace_ci_a301_1_1_e_m_e_r_g_e_n_c_y.html#a5b4233d92eee286424fe45b52afacc07',1,'CiA301::EMERGENCY']]],
-  ['collectorfilefloatingnotation',['CollectorFileFloatingNotation',['../dd/d95/group__cisst_multi_task.html#gad5d486fde9f8105e4de551d00026ea93',1,'mtsCollectorBase']]],
-  ['collectorfileformat',['CollectorFileFormat',['../dd/d95/group__cisst_multi_task.html#gaa228bed8144053d0bfa316f9ac9d0901',1,'mtsCollectorBase']]],
-  ['collectorstatus',['CollectorStatus',['../dd/d95/group__cisst_multi_task.html#gadfbc058665584a56933a7997229c1fb6',1,'mtsCollectorBase']]],
+  ['collectorfilefloatingnotation',['CollectorFileFloatingNotation',['../d9/d5d/classmts_collector_base.html#ad5d486fde9f8105e4de551d00026ea93',1,'mtsCollectorBase']]],
+  ['collectorfileformat',['CollectorFileFormat',['../d9/d5d/classmts_collector_base.html#aa228bed8144053d0bfa316f9ac9d0901',1,'mtsCollectorBase']]],
+  ['collectorstatus',['CollectorStatus',['../d9/d5d/classmts_collector_base.html#adfbc058665584a56933a7997229c1fb6',1,'mtsCollectorBase']]],
   ['colorindexenum',['colorIndexEnum',['../dd/d2d/classsvl_c_c_origin_detector.html#a1e4dabe83f94a0b1b889ecf59b3c86e5',1,'svlCCOriginDetector']]],
   ['colormodeenum',['colorModeEnum',['../dd/d2d/classsvl_c_c_origin_detector.html#abc46027473187db71ca84294e3df9554',1,'svlCCOriginDetector']]],
   ['command',['Command',['../d9/d93/struct_barrett.html#abbf4a39cfafcb46bd73c64dc3c2fcd9c',1,'Barrett::Command()'],['../d5/d30/struct_ci_a301_1_1_s_d_o.html#a775f3ad0c6ad9894efd23092a37906ea',1,'CiA301::SDO::Command()']]],

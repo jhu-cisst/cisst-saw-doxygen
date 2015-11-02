@@ -1,5 +1,6 @@
-\hypertarget{classmts_tele_operation}{}\section{mts\+Tele\+Operation Class Reference}
-\label{classmts_tele_operation}\index{mts\+Tele\+Operation@{mts\+Tele\+Operation}}
+\hypertarget{classmts_tele_operation}{\section{mts\-Tele\-Operation Class Reference}
+\label{classmts_tele_operation}\index{mts\-Tele\-Operation@{mts\-Tele\-Operation}}
+}
 
 
 teleoperation component  
@@ -7,9 +8,9 @@ teleoperation component
 
 
 
-{\ttfamily \#include $<$mts\+Tele\+Operation.\+h$>$}
+{\ttfamily \#include $<$mts\-Tele\-Operation.\-h$>$}
 
-Inheritance diagram for mts\+Tele\+Operation\+:\begin{figure}[H]
+Inheritance diagram for mts\-Tele\-Operation\-:\begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[height=6.000000cm]{d0/d58/classmts_tele_operation}
@@ -18,20 +19,20 @@ Inheritance diagram for mts\+Tele\+Operation\+:\begin{figure}[H]
 \subsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
-class \hyperlink{classmts_tele_operation_1_1_robot_master}{Robot\+Master}
+class \hyperlink{classmts_tele_operation_1_1_robot_master}{Robot\-Master}
 \item 
-class \hyperlink{classmts_tele_operation_1_1_robot_slave}{Robot\+Slave}
+class \hyperlink{classmts_tele_operation_1_1_robot_slave}{Robot\-Slave}
 \end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classmts_tele_operation_a6547280de1e8cdcade16708da2cccc2a}{mts\+Tele\+Operation} (const std\+::string \&component\+Name, const double period\+In\+Seconds)
+\hyperlink{classmts_tele_operation_a6547280de1e8cdcade16708da2cccc2a}{mts\-Tele\-Operation} (const std\-::string \&component\-Name, const double period\-In\-Seconds)
 \item 
-\hyperlink{classmts_tele_operation_a4082b5b6eb45a3e05f9bce47e3de99d9}{mts\+Tele\+Operation} (const \hyperlink{classmts_task_periodic_constructor_arg}{mts\+Task\+Periodic\+Constructor\+Arg} \&arg)
+\hyperlink{classmts_tele_operation_a4082b5b6eb45a3e05f9bce47e3de99d9}{mts\-Tele\-Operation} (const \hyperlink{classmts_task_periodic_constructor_arg}{mts\-Task\-Periodic\-Constructor\-Arg} \&arg)
 \item 
-\hyperlink{classmts_tele_operation_aa433b36bc093a7a386fb8c39682b6f19}{$\sim$mts\+Tele\+Operation} ()
+\hyperlink{classmts_tele_operation_aa433b36bc093a7a386fb8c39682b6f19}{$\sim$mts\-Tele\-Operation} ()
 \item 
-void \hyperlink{classmts_tele_operation_a629c7e4761dc10f23f296b8110fa786f}{Configure} (const std\+::string \&filename=\char`\"{}\char`\"{})
+void \hyperlink{classmts_tele_operation_a629c7e4761dc10f23f296b8110fa786f}{Configure} (const std\-::string \&filename=\char`\"{}\char`\"{})
 \item 
 void \hyperlink{classmts_tele_operation_a1561a15caad99bdcb5560eab8e831da7}{Startup} (void)
 \item 
@@ -39,20 +40,24 @@ void \hyperlink{classmts_tele_operation_a9d7840b7ac88227c2b49cc83d98bdbb7}{Run} 
 \item 
 void \hyperlink{classmts_tele_operation_aa52d274db632fd939870d8cb0baaa7bf}{Cleanup} (void)
 \item 
-void \hyperlink{classmts_tele_operation_a32c09a7d07c963c2886abb789e3f875b}{Configure\+Master} (const std\+::string \&filename)
+void \hyperlink{classmts_tele_operation_a32c09a7d07c963c2886abb789e3f875b}{Configure\-Master} (const std\-::string \&filename)
 \item 
-void \hyperlink{classmts_tele_operation_a918b83728d22310cbe11cbb4489475ec}{Configure\+Slave} (const std\+::string \&filename)
+void \hyperlink{classmts_tele_operation_a918b83728d22310cbe11cbb4489475ec}{Configure\-Slave} (const std\-::string \&filename)
 \item 
-void \hyperlink{classmts_tele_operation_ae792bc5aa8b6787ba0ea60cad02dbca0}{Set\+Scale} (const \hyperlink{mts_generic_object_proxy_8h_a31e76b0190a8d3f9838626cd7b47bd75}{mts\+Double} \&scale)
+void \hyperlink{classmts_tele_operation_a9710c30ce3dd3b197028de6a7725bfbb}{Set\-Scale} (const double \&scale)
 \item 
-void \hyperlink{classmts_tele_operation_a96fba782881d350e064a2b1f1d982882}{Set\+Registration\+Rotation} (const \hyperlink{vct_transformation_types_8h_a30fe23c1d38748a9b8f2fb9bb2471382}{vct\+Mat\+Rot3} \&rot)
+void \hyperlink{classmts_tele_operation_af89b5f97f6971f7b81f2bded20851a91}{Set\-Registration\-Rotation} (const \hyperlink{vct_transformation_types_8h_a30fe23c1d38748a9b8f2fb9bb2471382}{vct\-Mat\-Rot3} \&rotation)
+\item 
+void \hyperlink{classmts_tele_operation_ac09c8dad8560ccaed337acf669c603a6}{Lock\-Rotation} (const bool \&lock)
+\item 
+void \hyperlink{classmts_tele_operation_a7baf2414839f24d93a966c464867e3e5}{Lock\-Translation} (const bool \&lock)
 \end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classmts_tele_operation_1_1_robot_master}{Robot\+Master} \hyperlink{classmts_tele_operation_ab6560f81ba718ab14e33e7e38cc33860}{Master}
+\hyperlink{classmts_tele_operation_1_1_robot_master}{Robot\-Master} \hyperlink{classmts_tele_operation_ab6560f81ba718ab14e33e7e38cc33860}{Master}
 \item 
-\hyperlink{classmts_tele_operation_1_1_robot_slave}{Robot\+Slave} \hyperlink{classmts_tele_operation_a7199e0f2fd813b121f3a5a84aa61ee7b}{Slave}
+\hyperlink{classmts_tele_operation_1_1_robot_slave}{Robot\-Slave} \hyperlink{classmts_tele_operation_a7199e0f2fd813b121f3a5a84aa61ee7b}{Slave}
 \end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
@@ -60,121 +65,156 @@ void \hyperlink{classmts_tele_operation_a96fba782881d350e064a2b1f1d982882}{Set\+
 \subsection{Detailed Description}
 teleoperation component 
 
-position\+: translation + rotation (vct\+Frm4x4) translation\+: 3\+D x,y,z (vct3) rotation\+: 3x3 rotation (vct\+Mat\+Rot3)
+position\-: translation + rotation (vct\-Frm4x4) translation\-: 3\-D x,y,z (vct3) rotation\-: 3x3 rotation (vct\-Mat\-Rot3)
 
 \begin{DoxyRefDesc}{Todo}
-\item[\hyperlink{todo__todo000016}{Todo}]\end{DoxyRefDesc}
+\item[\hyperlink{todo__todo000017}{Todo}]\end{DoxyRefDesc}
 
 
 \subsection{Constructor \& Destructor Documentation}
-\hypertarget{classmts_tele_operation_a6547280de1e8cdcade16708da2cccc2a}{}\index{mts\+Tele\+Operation@{mts\+Tele\+Operation}!mts\+Tele\+Operation@{mts\+Tele\+Operation}}
-\index{mts\+Tele\+Operation@{mts\+Tele\+Operation}!mts\+Tele\+Operation@{mts\+Tele\+Operation}}
-\subsubsection[{mts\+Tele\+Operation}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Tele\+Operation\+::mts\+Tele\+Operation (
+\hypertarget{classmts_tele_operation_a6547280de1e8cdcade16708da2cccc2a}{\index{mts\-Tele\-Operation@{mts\-Tele\-Operation}!mts\-Tele\-Operation@{mts\-Tele\-Operation}}
+\index{mts\-Tele\-Operation@{mts\-Tele\-Operation}!mtsTeleOperation@{mts\-Tele\-Operation}}
+\subsubsection[{mts\-Tele\-Operation}]{\setlength{\rightskip}{0pt plus 5cm}mts\-Tele\-Operation\-::mts\-Tele\-Operation (
 \begin{DoxyParamCaption}
-\item[{const std\+::string \&}]{component\+Name, }
-\item[{const double}]{period\+In\+Seconds}
+\item[{const std\-::string \&}]{component\-Name, }
+\item[{const double}]{period\-In\-Seconds}
 \end{DoxyParamCaption}
-)}\label{classmts_tele_operation_a6547280de1e8cdcade16708da2cccc2a}
-\hypertarget{classmts_tele_operation_a4082b5b6eb45a3e05f9bce47e3de99d9}{}\index{mts\+Tele\+Operation@{mts\+Tele\+Operation}!mts\+Tele\+Operation@{mts\+Tele\+Operation}}
-\index{mts\+Tele\+Operation@{mts\+Tele\+Operation}!mts\+Tele\+Operation@{mts\+Tele\+Operation}}
-\subsubsection[{mts\+Tele\+Operation}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Tele\+Operation\+::mts\+Tele\+Operation (
+)}}\label{classmts_tele_operation_a6547280de1e8cdcade16708da2cccc2a}
+\hypertarget{classmts_tele_operation_a4082b5b6eb45a3e05f9bce47e3de99d9}{\index{mts\-Tele\-Operation@{mts\-Tele\-Operation}!mts\-Tele\-Operation@{mts\-Tele\-Operation}}
+\index{mts\-Tele\-Operation@{mts\-Tele\-Operation}!mtsTeleOperation@{mts\-Tele\-Operation}}
+\subsubsection[{mts\-Tele\-Operation}]{\setlength{\rightskip}{0pt plus 5cm}mts\-Tele\-Operation\-::mts\-Tele\-Operation (
 \begin{DoxyParamCaption}
-\item[{const {\bf mts\+Task\+Periodic\+Constructor\+Arg} \&}]{arg}
+\item[{const {\bf mts\-Task\-Periodic\-Constructor\-Arg} \&}]{arg}
 \end{DoxyParamCaption}
-)}\label{classmts_tele_operation_a4082b5b6eb45a3e05f9bce47e3de99d9}
-\hypertarget{classmts_tele_operation_aa433b36bc093a7a386fb8c39682b6f19}{}\index{mts\+Tele\+Operation@{mts\+Tele\+Operation}!````~mts\+Tele\+Operation@{$\sim$mts\+Tele\+Operation}}
-\index{````~mts\+Tele\+Operation@{$\sim$mts\+Tele\+Operation}!mts\+Tele\+Operation@{mts\+Tele\+Operation}}
-\subsubsection[{$\sim$mts\+Tele\+Operation}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Tele\+Operation\+::$\sim$mts\+Tele\+Operation (
+)}}\label{classmts_tele_operation_a4082b5b6eb45a3e05f9bce47e3de99d9}
+\hypertarget{classmts_tele_operation_aa433b36bc093a7a386fb8c39682b6f19}{\index{mts\-Tele\-Operation@{mts\-Tele\-Operation}!$\sim$mts\-Tele\-Operation@{$\sim$mts\-Tele\-Operation}}
+\index{$\sim$mts\-Tele\-Operation@{$\sim$mts\-Tele\-Operation}!mtsTeleOperation@{mts\-Tele\-Operation}}
+\subsubsection[{$\sim$mts\-Tele\-Operation}]{\setlength{\rightskip}{0pt plus 5cm}mts\-Tele\-Operation\-::$\sim$mts\-Tele\-Operation (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_tele_operation_aa433b36bc093a7a386fb8c39682b6f19}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmts_tele_operation_aa433b36bc093a7a386fb8c39682b6f19}
 
 
 \subsection{Member Function Documentation}
-\hypertarget{classmts_tele_operation_aa52d274db632fd939870d8cb0baaa7bf}{}\index{mts\+Tele\+Operation@{mts\+Tele\+Operation}!Cleanup@{Cleanup}}
-\index{Cleanup@{Cleanup}!mts\+Tele\+Operation@{mts\+Tele\+Operation}}
-\subsubsection[{Cleanup}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Tele\+Operation\+::\+Cleanup (
+\hypertarget{classmts_tele_operation_aa52d274db632fd939870d8cb0baaa7bf}{\index{mts\-Tele\-Operation@{mts\-Tele\-Operation}!Cleanup@{Cleanup}}
+\index{Cleanup@{Cleanup}!mtsTeleOperation@{mts\-Tele\-Operation}}
+\subsubsection[{Cleanup}]{\setlength{\rightskip}{0pt plus 5cm}void mts\-Tele\-Operation\-::\-Cleanup (
 \begin{DoxyParamCaption}
 \item[{void}]{}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_tele_operation_aa52d274db632fd939870d8cb0baaa7bf}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classmts_tele_operation_aa52d274db632fd939870d8cb0baaa7bf}
 Virtual method that gets overloaded, and is run after the component gets killed using \hyperlink{classmts_task_continuous_ad1f8145306e074fbea8baab3beef4c5b}{Kill()} method. 
 
-Reimplemented from \hyperlink{classmts_component_a891f330f4fde7d831dcf7dc537dc5e81}{mts\+Component}.
+Reimplemented from \hyperlink{classmts_component_a891f330f4fde7d831dcf7dc537dc5e81}{mts\-Component}.
 
-\hypertarget{classmts_tele_operation_a629c7e4761dc10f23f296b8110fa786f}{}\index{mts\+Tele\+Operation@{mts\+Tele\+Operation}!Configure@{Configure}}
-\index{Configure@{Configure}!mts\+Tele\+Operation@{mts\+Tele\+Operation}}
-\subsubsection[{Configure}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Tele\+Operation\+::\+Configure (
+\hypertarget{classmts_tele_operation_a629c7e4761dc10f23f296b8110fa786f}{\index{mts\-Tele\-Operation@{mts\-Tele\-Operation}!Configure@{Configure}}
+\index{Configure@{Configure}!mtsTeleOperation@{mts\-Tele\-Operation}}
+\subsubsection[{Configure}]{\setlength{\rightskip}{0pt plus 5cm}void mts\-Tele\-Operation\-::\-Configure (
 \begin{DoxyParamCaption}
-\item[{const std\+::string \&}]{filename = {\ttfamily \char`\"{}\char`\"{}}}
+\item[{const std\-::string \&}]{filename = {\ttfamily \char`\"{}\char`\"{}}}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_tele_operation_a629c7e4761dc10f23f296b8110fa786f}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classmts_tele_operation_a629c7e4761dc10f23f296b8110fa786f}
 The virtual method so that the interface or tasks can configure themselves 
 
-Reimplemented from \hyperlink{classmts_component_ad872432876de7879dc96c232b411c146}{mts\+Component}.
+Reimplemented from \hyperlink{classmts_component_ad872432876de7879dc96c232b411c146}{mts\-Component}.
 
-\hypertarget{classmts_tele_operation_a32c09a7d07c963c2886abb789e3f875b}{}\index{mts\+Tele\+Operation@{mts\+Tele\+Operation}!Configure\+Master@{Configure\+Master}}
-\index{Configure\+Master@{Configure\+Master}!mts\+Tele\+Operation@{mts\+Tele\+Operation}}
-\subsubsection[{Configure\+Master}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Tele\+Operation\+::\+Configure\+Master (
+\hypertarget{classmts_tele_operation_a32c09a7d07c963c2886abb789e3f875b}{\index{mts\-Tele\-Operation@{mts\-Tele\-Operation}!Configure\-Master@{Configure\-Master}}
+\index{Configure\-Master@{Configure\-Master}!mtsTeleOperation@{mts\-Tele\-Operation}}
+\subsubsection[{Configure\-Master}]{\setlength{\rightskip}{0pt plus 5cm}void mts\-Tele\-Operation\-::\-Configure\-Master (
 \begin{DoxyParamCaption}
-\item[{const std\+::string \&}]{filename}
+\item[{const std\-::string \&}]{filename}
 \end{DoxyParamCaption}
-)}\label{classmts_tele_operation_a32c09a7d07c963c2886abb789e3f875b}
-\hypertarget{classmts_tele_operation_a918b83728d22310cbe11cbb4489475ec}{}\index{mts\+Tele\+Operation@{mts\+Tele\+Operation}!Configure\+Slave@{Configure\+Slave}}
-\index{Configure\+Slave@{Configure\+Slave}!mts\+Tele\+Operation@{mts\+Tele\+Operation}}
-\subsubsection[{Configure\+Slave}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Tele\+Operation\+::\+Configure\+Slave (
+)}}\label{classmts_tele_operation_a32c09a7d07c963c2886abb789e3f875b}
+\hypertarget{classmts_tele_operation_a918b83728d22310cbe11cbb4489475ec}{\index{mts\-Tele\-Operation@{mts\-Tele\-Operation}!Configure\-Slave@{Configure\-Slave}}
+\index{Configure\-Slave@{Configure\-Slave}!mtsTeleOperation@{mts\-Tele\-Operation}}
+\subsubsection[{Configure\-Slave}]{\setlength{\rightskip}{0pt plus 5cm}void mts\-Tele\-Operation\-::\-Configure\-Slave (
 \begin{DoxyParamCaption}
-\item[{const std\+::string \&}]{filename}
+\item[{const std\-::string \&}]{filename}
 \end{DoxyParamCaption}
-)}\label{classmts_tele_operation_a918b83728d22310cbe11cbb4489475ec}
-\hypertarget{classmts_tele_operation_a9d7840b7ac88227c2b49cc83d98bdbb7}{}\index{mts\+Tele\+Operation@{mts\+Tele\+Operation}!Run@{Run}}
-\index{Run@{Run}!mts\+Tele\+Operation@{mts\+Tele\+Operation}}
-\subsubsection[{Run}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Tele\+Operation\+::\+Run (
+)}}\label{classmts_tele_operation_a918b83728d22310cbe11cbb4489475ec}
+\hypertarget{classmts_tele_operation_ac09c8dad8560ccaed337acf669c603a6}{\index{mts\-Tele\-Operation@{mts\-Tele\-Operation}!Lock\-Rotation@{Lock\-Rotation}}
+\index{Lock\-Rotation@{Lock\-Rotation}!mtsTeleOperation@{mts\-Tele\-Operation}}
+\subsubsection[{Lock\-Rotation}]{\setlength{\rightskip}{0pt plus 5cm}void mts\-Tele\-Operation\-::\-Lock\-Rotation (
+\begin{DoxyParamCaption}
+\item[{const bool \&}]{lock}
+\end{DoxyParamCaption}
+)}}\label{classmts_tele_operation_ac09c8dad8560ccaed337acf669c603a6}
+\hypertarget{classmts_tele_operation_a7baf2414839f24d93a966c464867e3e5}{\index{mts\-Tele\-Operation@{mts\-Tele\-Operation}!Lock\-Translation@{Lock\-Translation}}
+\index{Lock\-Translation@{Lock\-Translation}!mtsTeleOperation@{mts\-Tele\-Operation}}
+\subsubsection[{Lock\-Translation}]{\setlength{\rightskip}{0pt plus 5cm}void mts\-Tele\-Operation\-::\-Lock\-Translation (
+\begin{DoxyParamCaption}
+\item[{const bool \&}]{lock}
+\end{DoxyParamCaption}
+)}}\label{classmts_tele_operation_a7baf2414839f24d93a966c464867e3e5}
+\hypertarget{classmts_tele_operation_a9d7840b7ac88227c2b49cc83d98bdbb7}{\index{mts\-Tele\-Operation@{mts\-Tele\-Operation}!Run@{Run}}
+\index{Run@{Run}!mtsTeleOperation@{mts\-Tele\-Operation}}
+\subsubsection[{Run}]{\setlength{\rightskip}{0pt plus 5cm}void mts\-Tele\-Operation\-::\-Run (
 \begin{DoxyParamCaption}
 \item[{void}]{}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_tele_operation_a9d7840b7ac88227c2b49cc83d98bdbb7}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classmts_tele_operation_a9d7840b7ac88227c2b49cc83d98bdbb7}
 Pure virtual method that gets overloaded to run the actual task. 
 
-Implements \hyperlink{classmts_task_a20e18c9479cb650792456c32ee689834}{mts\+Task}.
+Implements \hyperlink{classmts_task_a20e18c9479cb650792456c32ee689834}{mts\-Task}.
 
-\hypertarget{classmts_tele_operation_a96fba782881d350e064a2b1f1d982882}{}\index{mts\+Tele\+Operation@{mts\+Tele\+Operation}!Set\+Registration\+Rotation@{Set\+Registration\+Rotation}}
-\index{Set\+Registration\+Rotation@{Set\+Registration\+Rotation}!mts\+Tele\+Operation@{mts\+Tele\+Operation}}
-\subsubsection[{Set\+Registration\+Rotation}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Tele\+Operation\+::\+Set\+Registration\+Rotation (
+\hypertarget{classmts_tele_operation_af89b5f97f6971f7b81f2bded20851a91}{\index{mts\-Tele\-Operation@{mts\-Tele\-Operation}!Set\-Registration\-Rotation@{Set\-Registration\-Rotation}}
+\index{Set\-Registration\-Rotation@{Set\-Registration\-Rotation}!mtsTeleOperation@{mts\-Tele\-Operation}}
+\subsubsection[{Set\-Registration\-Rotation}]{\setlength{\rightskip}{0pt plus 5cm}void mts\-Tele\-Operation\-::\-Set\-Registration\-Rotation (
 \begin{DoxyParamCaption}
-\item[{const {\bf vct\+Mat\+Rot3} \&}]{rot}
+\item[{const {\bf vct\-Mat\-Rot3} \&}]{rotation}
 \end{DoxyParamCaption}
-)}\label{classmts_tele_operation_a96fba782881d350e064a2b1f1d982882}
-\hypertarget{classmts_tele_operation_ae792bc5aa8b6787ba0ea60cad02dbca0}{}\index{mts\+Tele\+Operation@{mts\+Tele\+Operation}!Set\+Scale@{Set\+Scale}}
-\index{Set\+Scale@{Set\+Scale}!mts\+Tele\+Operation@{mts\+Tele\+Operation}}
-\subsubsection[{Set\+Scale}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Tele\+Operation\+::\+Set\+Scale (
+)}}\label{classmts_tele_operation_af89b5f97f6971f7b81f2bded20851a91}
+\hypertarget{classmts_tele_operation_a9710c30ce3dd3b197028de6a7725bfbb}{\index{mts\-Tele\-Operation@{mts\-Tele\-Operation}!Set\-Scale@{Set\-Scale}}
+\index{Set\-Scale@{Set\-Scale}!mtsTeleOperation@{mts\-Tele\-Operation}}
+\subsubsection[{Set\-Scale}]{\setlength{\rightskip}{0pt plus 5cm}void mts\-Tele\-Operation\-::\-Set\-Scale (
 \begin{DoxyParamCaption}
-\item[{const {\bf mts\+Double} \&}]{scale}
+\item[{const double \&}]{scale}
 \end{DoxyParamCaption}
-)}\label{classmts_tele_operation_ae792bc5aa8b6787ba0ea60cad02dbca0}
-\hypertarget{classmts_tele_operation_a1561a15caad99bdcb5560eab8e831da7}{}\index{mts\+Tele\+Operation@{mts\+Tele\+Operation}!Startup@{Startup}}
-\index{Startup@{Startup}!mts\+Tele\+Operation@{mts\+Tele\+Operation}}
-\subsubsection[{Startup}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Tele\+Operation\+::\+Startup (
+)}}\label{classmts_tele_operation_a9710c30ce3dd3b197028de6a7725bfbb}
+\hypertarget{classmts_tele_operation_a1561a15caad99bdcb5560eab8e831da7}{\index{mts\-Tele\-Operation@{mts\-Tele\-Operation}!Startup@{Startup}}
+\index{Startup@{Startup}!mtsTeleOperation@{mts\-Tele\-Operation}}
+\subsubsection[{Startup}]{\setlength{\rightskip}{0pt plus 5cm}void mts\-Tele\-Operation\-::\-Startup (
 \begin{DoxyParamCaption}
 \item[{void}]{}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_tele_operation_a1561a15caad99bdcb5560eab8e831da7}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classmts_tele_operation_a1561a15caad99bdcb5560eab8e831da7}
 Virtual method that gets overloaded, and is run before the component is started. 
 
-Reimplemented from \hyperlink{classmts_component_aaf28f0262b44eb6866e10089a02fa6e4}{mts\+Component}.
+Reimplemented from \hyperlink{classmts_component_aaf28f0262b44eb6866e10089a02fa6e4}{mts\-Component}.
 
 
 
 \subsection{Member Data Documentation}
-\hypertarget{classmts_tele_operation_ab6560f81ba718ab14e33e7e38cc33860}{}\index{mts\+Tele\+Operation@{mts\+Tele\+Operation}!Master@{Master}}
-\index{Master@{Master}!mts\+Tele\+Operation@{mts\+Tele\+Operation}}
-\subsubsection[{Master}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Robot\+Master} mts\+Tele\+Operation\+::\+Master\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_tele_operation_ab6560f81ba718ab14e33e7e38cc33860}
-\hypertarget{classmts_tele_operation_a7199e0f2fd813b121f3a5a84aa61ee7b}{}\index{mts\+Tele\+Operation@{mts\+Tele\+Operation}!Slave@{Slave}}
-\index{Slave@{Slave}!mts\+Tele\+Operation@{mts\+Tele\+Operation}}
-\subsubsection[{Slave}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Robot\+Slave} mts\+Tele\+Operation\+::\+Slave\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_tele_operation_a7199e0f2fd813b121f3a5a84aa61ee7b}
+\hypertarget{classmts_tele_operation_a1ab998458da7b7e2c8ae0e8908778313}{\index{mts\-Tele\-Operation@{mts\-Tele\-Operation}!Enabled@{Enabled}}
+\index{Enabled@{Enabled}!mtsTeleOperation@{mts\-Tele\-Operation}}
+\subsubsection[{Enabled}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\-Function\-Write} mts\-Tele\-Operation\-::\-Enabled}}\label{classmts_tele_operation_a1ab998458da7b7e2c8ae0e8908778313}
+\hypertarget{classmts_tele_operation_a65652edbe24e6b9027cded01b1c83b90}{\index{mts\-Tele\-Operation@{mts\-Tele\-Operation}!Error@{Error}}
+\index{Error@{Error}!mtsTeleOperation@{mts\-Tele\-Operation}}
+\subsubsection[{Error}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\-Function\-Write} mts\-Tele\-Operation\-::\-Error}}\label{classmts_tele_operation_a65652edbe24e6b9027cded01b1c83b90}
+\hypertarget{classmts_tele_operation_ab6560f81ba718ab14e33e7e38cc33860}{\index{mts\-Tele\-Operation@{mts\-Tele\-Operation}!Master@{Master}}
+\index{Master@{Master}!mtsTeleOperation@{mts\-Tele\-Operation}}
+\subsubsection[{Master}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Robot\-Master} mts\-Tele\-Operation\-::\-Master\hspace{0.3cm}{\ttfamily [protected]}}}\label{classmts_tele_operation_ab6560f81ba718ab14e33e7e38cc33860}
+\hypertarget{classmts_tele_operation_afa40b49765f738cc6d7b34a427505ebd}{\index{mts\-Tele\-Operation@{mts\-Tele\-Operation}!Rotation\-Locked@{Rotation\-Locked}}
+\index{Rotation\-Locked@{Rotation\-Locked}!mtsTeleOperation@{mts\-Tele\-Operation}}
+\subsubsection[{Rotation\-Locked}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\-Function\-Write} mts\-Tele\-Operation\-::\-Rotation\-Locked}}\label{classmts_tele_operation_afa40b49765f738cc6d7b34a427505ebd}
+\hypertarget{classmts_tele_operation_a2dd98792346b82031a933a0ab8519c54}{\index{mts\-Tele\-Operation@{mts\-Tele\-Operation}!Scale@{Scale}}
+\index{Scale@{Scale}!mtsTeleOperation@{mts\-Tele\-Operation}}
+\subsubsection[{Scale}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\-Function\-Write} mts\-Tele\-Operation\-::\-Scale}}\label{classmts_tele_operation_a2dd98792346b82031a933a0ab8519c54}
+\hypertarget{classmts_tele_operation_a7199e0f2fd813b121f3a5a84aa61ee7b}{\index{mts\-Tele\-Operation@{mts\-Tele\-Operation}!Slave@{Slave}}
+\index{Slave@{Slave}!mtsTeleOperation@{mts\-Tele\-Operation}}
+\subsubsection[{Slave}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Robot\-Slave} mts\-Tele\-Operation\-::\-Slave\hspace{0.3cm}{\ttfamily [protected]}}}\label{classmts_tele_operation_a7199e0f2fd813b121f3a5a84aa61ee7b}
+\hypertarget{classmts_tele_operation_a905c68bfca5f949e50c436e81003944e}{\index{mts\-Tele\-Operation@{mts\-Tele\-Operation}!Status@{Status}}
+\index{Status@{Status}!mtsTeleOperation@{mts\-Tele\-Operation}}
+\subsubsection[{Status}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\-Function\-Write} mts\-Tele\-Operation\-::\-Status}}\label{classmts_tele_operation_a905c68bfca5f949e50c436e81003944e}
+\hypertarget{classmts_tele_operation_a7bebda6bf97eaa2f2b704021c579035c}{\index{mts\-Tele\-Operation@{mts\-Tele\-Operation}!Translation\-Locked@{Translation\-Locked}}
+\index{Translation\-Locked@{Translation\-Locked}!mtsTeleOperation@{mts\-Tele\-Operation}}
+\subsubsection[{Translation\-Locked}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\-Function\-Write} mts\-Tele\-Operation\-::\-Translation\-Locked}}\label{classmts_tele_operation_a7bebda6bf97eaa2f2b704021c579035c}
+\hypertarget{classmts_tele_operation_a0bb3b1d50dbb402fe291cb29d72ea333}{\index{mts\-Tele\-Operation@{mts\-Tele\-Operation}!Warning@{Warning}}
+\index{Warning@{Warning}!mtsTeleOperation@{mts\-Tele\-Operation}}
+\subsubsection[{Warning}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\-Function\-Write} mts\-Tele\-Operation\-::\-Warning}}\label{classmts_tele_operation_a0bb3b1d50dbb402fe291cb29d72ea333}
 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
 \item 
-/\+Users/anton/devel/cisst-\/saw/saw\+Controllers/include/saw\+Controllers/\hyperlink{mts_tele_operation_8h}{mts\+Tele\+Operation.\+h}\end{DoxyCompactItemize}
+/home/adeguet1/catkin\-\_\-ws/src/cisst-\/saw/saw\-Controllers/include/saw\-Controllers/\hyperlink{mts_tele_operation_8h}{mts\-Tele\-Operation.\-h}\end{DoxyCompactItemize}

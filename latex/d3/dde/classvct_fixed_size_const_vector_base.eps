@@ -5,7 +5,7 @@
 %%For: 
 %Magnification: 1.00
 %%Orientation: Portrait
-%%BoundingBox: 0 0 500 186.186186
+%%BoundingBox: 0 0 500 198.198198
 %%Pages: 0
 %%BeginSetup
 %%EndSetup
@@ -19,12 +19,12 @@
 /marginwidth 10 def
 /distx 20 def
 /disty 40 def
-/boundaspect 2.685484 def  % aspect ratio of the BoundingBox (width/height)
+/boundaspect 2.522727 def  % aspect ratio of the BoundingBox (width/height)
 /boundx 500 def
 /boundy boundx boundaspect div def
 /xspacing 0 def
 /yspacing 0 def
-/rows 31 def
+/rows 33 def
 /cols 5 def
 /scalefactor 0 def
 /boxfont /Times-Roman findfont fontheight scalefont def
@@ -194,7 +194,9 @@ boxfont setfont
 (vctFixedSizeVector< double, SVL_MAX_CHANNELS >) cw
 (vctFixedSizeVector< float, 4 >) cw
 (vctFixedSizeVector< int, 2 >) cw
+(vctFixedSizeVector< int, 6 >) cw
 (vctFixedSizeVector< int, SVL_MAX_CHANNELS >) cw
+(vctFixedSizeVector< mtsIntuitiveResearchKitSUJArmData *, 4 >) cw
 (vctFixedSizeVector< svlImageProcessing::Internals, SVL_MAX_CHANNELS >) cw
 (vctFixedSizeVector< svlPoint2D, SVL_MAX_CHANNELS >) cw
 (vctFixedSizeVector< svlRect, 2 >) cw
@@ -221,30 +223,32 @@ boundx scalefactor div boundy scalefactor div scale
 
 % ----- classes -----
 
- (vctFixedSizeConstVectorBase< _size, _stride, _elementType, _dataPtrType >) 1.000000 30.000000 box
- (vctFixedSizeConstVectorRef< double, 3, vctFixedSizeMatrix< double, 4, 4, VCT_COL_MAJOR >::ROWSTRIDE >) 0.000000 29.000000 box
- (vctFixedSizeVectorBase< _size, _stride, _elementType, _dataPtrType >) 1.000000 29.000000 box
- (vctFixedSizeVectorBase< _size, 1, _elementType, vctFixedSizeVectorTraits< _elementType, _size, 1 >::array >) 3.000000 29.000000 box
- (vctFixedSizeVector< bool, 2 >) 2.000000 28.000000 box
- (vctFixedSizeVector< bool, 6 >) 2.000000 27.000000 box
- (vctFixedSizeVector< CISSTNETLIB_DOUBLE, _ma+_me >) 2.000000 26.000000 box
- (vctFixedSizeVector< CISSTNETLIB_DOUBLE, _n >) 2.000000 25.000000 box
- (vctFixedSizeVector< CISSTNETLIB_DOUBLE, LWORK >) 2.000000 24.000000 box
- (vctFixedSizeVector< CISSTNETLIB_DOUBLE, MIN_MN >) 2.000000 23.000000 box
- (vctFixedSizeVector< CISSTNETLIB_INTEGER, LIWORK >) 2.000000 22.000000 box
- (vctFixedSizeVector< CISSTNETLIB_INTEGER, MAX_SIZE_1 >) 2.000000 21.000000 box
- (vctFixedSizeVector< CISSTNETLIB_INTEGER, MIN_MN >) 2.000000 20.000000 box
- (vctFixedSizeVector< double, 2 >) 2.000000 19.000000 box
- (vctFixedSizeVector< double, 3 >) 2.000000 18.000000 box
-2.000000 18.000000 mark
- (vctFixedSizeVector< double, 4 >) 2.000000 17.000000 box
-2.000000 17.000000 mark
- (vctFixedSizeVector< double, 6 >) 2.000000 16.000000 box
- (vctFixedSizeVector< double, 7 >) 2.000000 15.000000 box
- (vctFixedSizeVector< double, SVL_MAX_CHANNELS >) 2.000000 14.000000 box
- (vctFixedSizeVector< float, 4 >) 2.000000 13.000000 box
- (vctFixedSizeVector< int, 2 >) 2.000000 12.000000 box
- (vctFixedSizeVector< int, SVL_MAX_CHANNELS >) 2.000000 11.000000 box
+ (vctFixedSizeConstVectorBase< _size, _stride, _elementType, _dataPtrType >) 1.000000 32.000000 box
+ (vctFixedSizeConstVectorRef< double, 3, vctFixedSizeMatrix< double, 4, 4, VCT_COL_MAJOR >::ROWSTRIDE >) 0.000000 31.000000 box
+ (vctFixedSizeVectorBase< _size, _stride, _elementType, _dataPtrType >) 1.000000 31.000000 box
+ (vctFixedSizeVectorBase< _size, 1, _elementType, vctFixedSizeVectorTraits< _elementType, _size, 1 >::array >) 3.000000 31.000000 box
+ (vctFixedSizeVector< bool, 2 >) 2.000000 30.000000 box
+ (vctFixedSizeVector< bool, 6 >) 2.000000 29.000000 box
+ (vctFixedSizeVector< CISSTNETLIB_DOUBLE, _ma+_me >) 2.000000 28.000000 box
+ (vctFixedSizeVector< CISSTNETLIB_DOUBLE, _n >) 2.000000 27.000000 box
+ (vctFixedSizeVector< CISSTNETLIB_DOUBLE, LWORK >) 2.000000 26.000000 box
+ (vctFixedSizeVector< CISSTNETLIB_DOUBLE, MIN_MN >) 2.000000 25.000000 box
+ (vctFixedSizeVector< CISSTNETLIB_INTEGER, LIWORK >) 2.000000 24.000000 box
+ (vctFixedSizeVector< CISSTNETLIB_INTEGER, MAX_SIZE_1 >) 2.000000 23.000000 box
+ (vctFixedSizeVector< CISSTNETLIB_INTEGER, MIN_MN >) 2.000000 22.000000 box
+ (vctFixedSizeVector< double, 2 >) 2.000000 21.000000 box
+ (vctFixedSizeVector< double, 3 >) 2.000000 20.000000 box
+2.000000 20.000000 mark
+ (vctFixedSizeVector< double, 4 >) 2.000000 19.000000 box
+2.000000 19.000000 mark
+ (vctFixedSizeVector< double, 6 >) 2.000000 18.000000 box
+ (vctFixedSizeVector< double, 7 >) 2.000000 17.000000 box
+ (vctFixedSizeVector< double, SVL_MAX_CHANNELS >) 2.000000 16.000000 box
+ (vctFixedSizeVector< float, 4 >) 2.000000 15.000000 box
+ (vctFixedSizeVector< int, 2 >) 2.000000 14.000000 box
+ (vctFixedSizeVector< int, 6 >) 2.000000 13.000000 box
+ (vctFixedSizeVector< int, SVL_MAX_CHANNELS >) 2.000000 12.000000 box
+ (vctFixedSizeVector< mtsIntuitiveResearchKitSUJArmData *, 4 >) 2.000000 11.000000 box
  (vctFixedSizeVector< svlImageProcessing::Internals, SVL_MAX_CHANNELS >) 2.000000 10.000000 box
  (vctFixedSizeVector< svlPoint2D, SVL_MAX_CHANNELS >) 2.000000 9.000000 box
  (vctFixedSizeVector< svlRect, 2 >) 2.000000 8.000000 box
@@ -256,30 +260,34 @@ boundx scalefactor div boundy scalefactor div scale
  (vctFixedSizeVectorRef< CISSTNETLIB_DOUBLE, LWORK_3, 1 >) 2.000000 2.000000 box
  (vctFixedSizeVectorRef< CISSTNETLIB_DOUBLE, MIN_MN, 1 >) 2.000000 1.000000 box
  (vctFixedSizeVectorRef< CISSTNETLIB_DOUBLE,(_me==0)?1:_me, 1 >) 2.000000 0.000000 box
- (vctFixedSizeVector< _elementType, _size >) 4.000000 28.000000 box
+ (vctFixedSizeVector< _elementType, _size >) 4.000000 30.000000 box
+4.000000 30.000000 mark
+ (vctFixedSizeVector< _elementType, 3 >) 4.000000 29.000000 box
+4.000000 29.000000 mark
+ (vctFixedSizeVector< _elementType, 4 >) 4.000000 28.000000 box
 4.000000 28.000000 mark
- (vctFixedSizeVector< _elementType, 3 >) 4.000000 27.000000 box
-4.000000 27.000000 mark
- (vctFixedSizeVector< _elementType, 4 >) 4.000000 26.000000 box
-4.000000 26.000000 mark
- (vctFixedSizeVector< _elementType, SIZE >) 4.000000 25.000000 box
+ (vctFixedSizeVector< _elementType, SIZE >) 4.000000 27.000000 box
 
 % ----- relations -----
 
 solid
-1 1.000000 29.250000 out
+1 1.000000 31.250000 out
 solid
-0.000000 3.000000 30.000000 conn
+0.000000 3.000000 32.000000 conn
 solid
-0 0.000000 29.750000 in
+0 0.000000 31.750000 in
 solid
-0 1.000000 29.750000 in
+0 1.000000 31.750000 in
 solid
-1 1.000000 28.250000 out
+1 1.000000 30.250000 out
 solid
-0 3.000000 29.750000 in
+0 3.000000 31.750000 in
 solid
-1 3.000000 28.250000 out
+1 3.000000 30.250000 out
+solid
+0 1.000000 30.500000 hedge
+solid
+0 1.000000 29.500000 hedge
 solid
 0 1.000000 28.500000 hedge
 solid
@@ -339,14 +347,14 @@ solid
 solid
 0 1.000000 0.500000 hedge
 solid
-1.000000 29.000000 0.500000 vedge
+1.000000 31.000000 0.500000 vedge
+solid
+0 3.000000 30.500000 hedge
+solid
+0 3.000000 29.500000 hedge
 solid
 0 3.000000 28.500000 hedge
 solid
 0 3.000000 27.500000 hedge
 solid
-0 3.000000 26.500000 hedge
-solid
-0 3.000000 25.500000 hedge
-solid
-3.000000 29.000000 25.500000 vedge
+3.000000 31.000000 27.500000 vedge

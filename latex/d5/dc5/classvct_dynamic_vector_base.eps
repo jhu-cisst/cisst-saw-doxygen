@@ -5,7 +5,7 @@
 %%For: 
 %Magnification: 1.00
 %%Orientation: Portrait
-%%BoundingBox: 0 0 500 1831.683168
+%%BoundingBox: 0 0 500 1856.435644
 %%Pages: 0
 %%BeginSetup
 %%EndSetup
@@ -19,12 +19,12 @@
 /marginwidth 10 def
 /distx 20 def
 /disty 40 def
-/boundaspect 0.272973 def  % aspect ratio of the BoundingBox (width/height)
+/boundaspect 0.269333 def  % aspect ratio of the BoundingBox (width/height)
 /boundx 500 def
 /boundy boundx boundaspect div def
 /xspacing 0 def
 /yspacing 0 def
-/rows 74 def
+/rows 75 def
 /cols 2 def
 /scalefactor 0 def
 /boxfont /Times-Roman findfont fontheight scalefont def
@@ -232,6 +232,7 @@ boxfont setfont
 (vctDynamicVector< vctDynamicMatrix< int > >) cw
 (vctDynamicVector< vctDynamicMatrix< unsigned char > >) cw
 (vctDynamicVector< vctDynamicVector< bool > >) cw
+(vctDynamicVector< vctDynamicVector< double > >) cw
 (vctDynamicVector< vctDynamicVector< int > >) cw
 (vctDynamicVector< vctDynamicVector< svlBlob > >) cw
 (vctDynamicVector< vctDynamicVector< svlImageCodecBase * > >) cw
@@ -258,69 +259,70 @@ boundx scalefactor div boundy scalefactor div scale
 
 % ----- classes -----
 
- (vctDynamicVectorBase< _vectorOwnerType, _elementType >) 0.000000 72.000000 box
- (vctDynamicConstVectorBase< _vectorOwnerType, _elementType >) 0.000000 73.000000 box
- (vctDynamicVector< bool >) 1.000000 71.000000 box
-1.000000 71.000000 mark
- (vctDynamicVector< char >) 1.000000 70.000000 box
- (vctDynamicVector< CiA301::Object::Data >) 1.000000 69.000000 box
- (vctDynamicVector< CISSTNETLIB_DOUBLE >) 1.000000 68.000000 box
- (vctDynamicVector< CISSTNETLIB_INTEGER >) 1.000000 67.000000 box
- (vctDynamicVector< cmnClassServicesBase * >) 1.000000 66.000000 box
- (vctDynamicVector< cmnGenericObject * >) 1.000000 65.000000 box
- (vctDynamicVector< CvHistogram * >) 1.000000 64.000000 box
- (vctDynamicVector< CvRect >) 1.000000 63.000000 box
- (vctDynamicVector< double >) 1.000000 62.000000 box
-1.000000 62.000000 mark
- (vctDynamicVector< float >) 1.000000 61.000000 box
- (vctDynamicVector< int >) 1.000000 60.000000 box
- (vctDynamicVector< mtsFunctionWrite * >) 1.000000 59.000000 box
- (vctDynamicVector< mtsNovintHDL::DeviceData * >) 1.000000 58.000000 box
- (vctDynamicVector< mtsNovintHDLHandle * >) 1.000000 57.000000 box
- (vctDynamicVector< mtsSensableHD::DeviceData * >) 1.000000 56.000000 box
- (vctDynamicVector< mtsSensableHDHandle * >) 1.000000 55.000000 box
- (vctDynamicVector< oniPlane >) 1.000000 54.000000 box
- (vctDynamicVector< osaThread * >) 1.000000 53.000000 box
- (vctDynamicVector< PlatformType >) 1.000000 52.000000 box
- (vctDynamicVector< prmJointType >) 1.000000 51.000000 box
- (vctDynamicVector< QListWidgetItem * >) 1.000000 50.000000 box
- (vctDynamicVector< short >) 1.000000 49.000000 box
-1.000000 49.000000 mark
- (vctDynamicVector< std::ifstream * >) 1.000000 48.000000 box
- (vctDynamicVector< std::string >) 1.000000 47.000000 box
- (vctDynamicVector< svlCameraGeometry::_Extrinsics >) 1.000000 46.000000 box
- (vctDynamicVector< svlCameraGeometry::_Intrinsics >) 1.000000 45.000000 box
- (vctDynamicVector< svlColorSpace >) 1.000000 44.000000 box
- (vctDynamicVector< svlDraw::Internals >) 1.000000 43.000000 box
- (vctDynamicVector< svlDraw::svlDraw::Internals >) 1.000000 42.000000 box
- (vctDynamicVector< svlEllipse >) 1.000000 41.000000 box
- (vctDynamicVector< svlFile * >) 1.000000 40.000000 box
- (vctDynamicVector< svlFilterImageCenterFinderInterface * >) 1.000000 39.000000 box
- (vctDynamicVector< svlFilterOutput * >) 1.000000 38.000000 box
- (vctDynamicVector< svlImageCodecBase * >) 1.000000 37.000000 box
- (vctDynamicVector< svlImageProcessing::DI_Algorithm >) 1.000000 36.000000 box
- (vctDynamicVector< svlImageProcessing::Internals >) 1.000000 35.000000 box
- (vctDynamicVector< svlImageTracker * >) 1.000000 34.000000 box
- (vctDynamicVector< svlOverlay * >) 1.000000 33.000000 box
- (vctDynamicVector< svlPoint2D >) 1.000000 32.000000 box
- (vctDynamicVector< svlQuad >) 1.000000 31.000000 box
- (vctDynamicVector< svlRect >) 1.000000 30.000000 box
- (vctDynamicVector< svlRenderTargetBase * >) 1.000000 29.000000 box
- (vctDynamicVector< svlSampleCameraGeometry::Extrinsics >) 1.000000 28.000000 box
- (vctDynamicVector< svlSampleCameraGeometry::Intrinsics >) 1.000000 27.000000 box
- (vctDynamicVector< svlStreamProc * >) 1.000000 26.000000 box
- (vctDynamicVector< svlStreamType >) 1.000000 25.000000 box
- (vctDynamicVector< svlTarget2D >) 1.000000 24.000000 box
- (vctDynamicVector< svlVidCapSrcBase * >) 1.000000 23.000000 box
- (vctDynamicVector< svlVideoCodecBase * >) 1.000000 22.000000 box
- (vctDynamicVector< svlVideoIO::Compression * >) 1.000000 21.000000 box
- (vctDynamicVector< unsigned char >) 1.000000 20.000000 box
-1.000000 20.000000 mark
- (vctDynamicVector< unsigned int >) 1.000000 19.000000 box
- (vctDynamicVector< value_type >) 1.000000 18.000000 box
- (vctDynamicVector< vctDynamicMatrix< int > >) 1.000000 17.000000 box
- (vctDynamicVector< vctDynamicMatrix< unsigned char > >) 1.000000 16.000000 box
- (vctDynamicVector< vctDynamicVector< bool > >) 1.000000 15.000000 box
+ (vctDynamicVectorBase< _vectorOwnerType, _elementType >) 0.000000 73.000000 box
+ (vctDynamicConstVectorBase< _vectorOwnerType, _elementType >) 0.000000 74.000000 box
+ (vctDynamicVector< bool >) 1.000000 72.000000 box
+1.000000 72.000000 mark
+ (vctDynamicVector< char >) 1.000000 71.000000 box
+ (vctDynamicVector< CiA301::Object::Data >) 1.000000 70.000000 box
+ (vctDynamicVector< CISSTNETLIB_DOUBLE >) 1.000000 69.000000 box
+ (vctDynamicVector< CISSTNETLIB_INTEGER >) 1.000000 68.000000 box
+ (vctDynamicVector< cmnClassServicesBase * >) 1.000000 67.000000 box
+ (vctDynamicVector< cmnGenericObject * >) 1.000000 66.000000 box
+ (vctDynamicVector< CvHistogram * >) 1.000000 65.000000 box
+ (vctDynamicVector< CvRect >) 1.000000 64.000000 box
+ (vctDynamicVector< double >) 1.000000 63.000000 box
+1.000000 63.000000 mark
+ (vctDynamicVector< float >) 1.000000 62.000000 box
+ (vctDynamicVector< int >) 1.000000 61.000000 box
+ (vctDynamicVector< mtsFunctionWrite * >) 1.000000 60.000000 box
+ (vctDynamicVector< mtsNovintHDL::DeviceData * >) 1.000000 59.000000 box
+ (vctDynamicVector< mtsNovintHDLHandle * >) 1.000000 58.000000 box
+ (vctDynamicVector< mtsSensableHD::DeviceData * >) 1.000000 57.000000 box
+ (vctDynamicVector< mtsSensableHDHandle * >) 1.000000 56.000000 box
+ (vctDynamicVector< oniPlane >) 1.000000 55.000000 box
+ (vctDynamicVector< osaThread * >) 1.000000 54.000000 box
+ (vctDynamicVector< PlatformType >) 1.000000 53.000000 box
+ (vctDynamicVector< prmJointType >) 1.000000 52.000000 box
+ (vctDynamicVector< QListWidgetItem * >) 1.000000 51.000000 box
+ (vctDynamicVector< short >) 1.000000 50.000000 box
+1.000000 50.000000 mark
+ (vctDynamicVector< std::ifstream * >) 1.000000 49.000000 box
+ (vctDynamicVector< std::string >) 1.000000 48.000000 box
+ (vctDynamicVector< svlCameraGeometry::_Extrinsics >) 1.000000 47.000000 box
+ (vctDynamicVector< svlCameraGeometry::_Intrinsics >) 1.000000 46.000000 box
+ (vctDynamicVector< svlColorSpace >) 1.000000 45.000000 box
+ (vctDynamicVector< svlDraw::Internals >) 1.000000 44.000000 box
+ (vctDynamicVector< svlDraw::svlDraw::Internals >) 1.000000 43.000000 box
+ (vctDynamicVector< svlEllipse >) 1.000000 42.000000 box
+ (vctDynamicVector< svlFile * >) 1.000000 41.000000 box
+ (vctDynamicVector< svlFilterImageCenterFinderInterface * >) 1.000000 40.000000 box
+ (vctDynamicVector< svlFilterOutput * >) 1.000000 39.000000 box
+ (vctDynamicVector< svlImageCodecBase * >) 1.000000 38.000000 box
+ (vctDynamicVector< svlImageProcessing::DI_Algorithm >) 1.000000 37.000000 box
+ (vctDynamicVector< svlImageProcessing::Internals >) 1.000000 36.000000 box
+ (vctDynamicVector< svlImageTracker * >) 1.000000 35.000000 box
+ (vctDynamicVector< svlOverlay * >) 1.000000 34.000000 box
+ (vctDynamicVector< svlPoint2D >) 1.000000 33.000000 box
+ (vctDynamicVector< svlQuad >) 1.000000 32.000000 box
+ (vctDynamicVector< svlRect >) 1.000000 31.000000 box
+ (vctDynamicVector< svlRenderTargetBase * >) 1.000000 30.000000 box
+ (vctDynamicVector< svlSampleCameraGeometry::Extrinsics >) 1.000000 29.000000 box
+ (vctDynamicVector< svlSampleCameraGeometry::Intrinsics >) 1.000000 28.000000 box
+ (vctDynamicVector< svlStreamProc * >) 1.000000 27.000000 box
+ (vctDynamicVector< svlStreamType >) 1.000000 26.000000 box
+ (vctDynamicVector< svlTarget2D >) 1.000000 25.000000 box
+ (vctDynamicVector< svlVidCapSrcBase * >) 1.000000 24.000000 box
+ (vctDynamicVector< svlVideoCodecBase * >) 1.000000 23.000000 box
+ (vctDynamicVector< svlVideoIO::Compression * >) 1.000000 22.000000 box
+ (vctDynamicVector< unsigned char >) 1.000000 21.000000 box
+1.000000 21.000000 mark
+ (vctDynamicVector< unsigned int >) 1.000000 20.000000 box
+ (vctDynamicVector< value_type >) 1.000000 19.000000 box
+ (vctDynamicVector< vctDynamicMatrix< int > >) 1.000000 18.000000 box
+ (vctDynamicVector< vctDynamicMatrix< unsigned char > >) 1.000000 17.000000 box
+ (vctDynamicVector< vctDynamicVector< bool > >) 1.000000 16.000000 box
+ (vctDynamicVector< vctDynamicVector< double > >) 1.000000 15.000000 box
  (vctDynamicVector< vctDynamicVector< int > >) 1.000000 14.000000 box
  (vctDynamicVector< vctDynamicVector< svlBlob > >) 1.000000 13.000000 box
  (vctDynamicVector< vctDynamicVector< svlImageCodecBase * > >) 1.000000 12.000000 box
@@ -340,11 +342,13 @@ boundx scalefactor div boundy scalefactor div scale
 % ----- relations -----
 
 solid
-0 0.000000 72.000000 out
+0 0.000000 73.000000 out
 solid
-1 0.000000 73.000000 in
+1 0.000000 74.000000 in
 solid
-1 0.000000 71.250000 out
+1 0.000000 72.250000 out
+solid
+0 0.000000 72.500000 hedge
 solid
 0 0.000000 71.500000 hedge
 solid
@@ -490,4 +494,4 @@ solid
 solid
 0 0.000000 0.500000 hedge
 solid
-0.000000 72.000000 0.500000 vedge
+0.000000 73.000000 0.500000 vedge

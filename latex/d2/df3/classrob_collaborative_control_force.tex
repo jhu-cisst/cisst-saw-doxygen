@@ -1,258 +1,259 @@
-\hypertarget{classrob_collaborative_control_force}{}\section{rob\+Collaborative\+Control\+Force Class Reference}
-\label{classrob_collaborative_control_force}\index{rob\+Collaborative\+Control\+Force@{rob\+Collaborative\+Control\+Force}}
+\hypertarget{classrob_collaborative_control_force}{\section{rob\-Collaborative\-Control\-Force Class Reference}
+\label{classrob_collaborative_control_force}\index{rob\-Collaborative\-Control\-Force@{rob\-Collaborative\-Control\-Force}}
+}
 
 
-{\ttfamily \#include $<$rob\+Collaborative\+Control\+Force.\+h$>$}
+{\ttfamily \#include $<$rob\-Collaborative\-Control\-Force.\-h$>$}
 
 \subsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
-class \hyperlink{classrob_collaborative_control_force_1_1_parameter_type}{Parameter\+Type}
+class \hyperlink{classrob_collaborative_control_force_1_1_parameter_type}{Parameter\-Type}
 \end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classrob_collaborative_control_force_a1e7ed34f7df30aed3771083cdce02a95}{rob\+Collaborative\+Control\+Force} (void)
+\hyperlink{classrob_collaborative_control_force_a1e7ed34f7df30aed3771083cdce02a95}{rob\-Collaborative\-Control\-Force} (void)
 \item 
-\hyperlink{classrob_collaborative_control_force_ae09387a96e509acf75adda78f266fdc7}{rob\+Collaborative\+Control\+Force} (double linear\+Gain\+Master, double linear\+Gain\+Slave, double force\+Limit, \hyperlink{classrob_collaborative_control_force_1_1_parameter_type_ab4ec71e97ffffd412993ea4f307e9acf}{Parameter\+Type\+::\+Force\+Mode\+Type} force\+Mode, double master\+To\+Slave\+Scale, double force\+Feedback\+Ratio)
+\hyperlink{classrob_collaborative_control_force_ae09387a96e509acf75adda78f266fdc7}{rob\-Collaborative\-Control\-Force} (double linear\-Gain\-Master, double linear\-Gain\-Slave, double force\-Limit, \hyperlink{classrob_collaborative_control_force_1_1_parameter_type_ab4ec71e97ffffd412993ea4f307e9acf}{Parameter\-Type\-::\-Force\-Mode\-Type} force\-Mode, double master\-To\-Slave\-Scale, double force\-Feedback\-Ratio)
 \item 
-\hyperlink{classrob_collaborative_control_force_add898dc0e9b783f0659b3c1a455d7b16}{$\sim$rob\+Collaborative\+Control\+Force} (void)
+\hyperlink{classrob_collaborative_control_force_add898dc0e9b783f0659b3c1a455d7b16}{$\sim$rob\-Collaborative\-Control\-Force} (void)
 \item 
-void \hyperlink{classrob_collaborative_control_force_a8b6ee9968a8328b0de3588b9bc0143fc}{Set\+Parameters} (const \hyperlink{classrob_collaborative_control_force_1_1_parameter_type}{Parameter\+Type} \&commanded\+Parameter)
+void \hyperlink{classrob_collaborative_control_force_a8b6ee9968a8328b0de3588b9bc0143fc}{Set\-Parameters} (const \hyperlink{classrob_collaborative_control_force_1_1_parameter_type}{Parameter\-Type} \&commanded\-Parameter)
 \item 
-void \hyperlink{classrob_collaborative_control_force_a31bbb39e19d2fec0bebf83fd256d5394}{Update} (const \hyperlink{vct_fixed_size_vector_types_8h_a3af82acdbf4eeb73c551909240b106ea}{vct3} \&p1, const \hyperlink{vct_fixed_size_vector_types_8h_a3af82acdbf4eeb73c551909240b106ea}{vct3} \&p2, const bool Clutch\+Master, const bool Clutch\+Slave, \hyperlink{classvct_fixed_size_vector}{vct\+Fixed\+Size\+Vector}$<$ double, 6 $>$ \&Force\+Master, \hyperlink{classvct_fixed_size_vector}{vct\+Fixed\+Size\+Vector}$<$ double, 6 $>$ \&Force\+Slave)
+void \hyperlink{classrob_collaborative_control_force_a31bbb39e19d2fec0bebf83fd256d5394}{Update} (const \hyperlink{vct_fixed_size_vector_types_8h_a3af82acdbf4eeb73c551909240b106ea}{vct3} \&p1, const \hyperlink{vct_fixed_size_vector_types_8h_a3af82acdbf4eeb73c551909240b106ea}{vct3} \&p2, const bool Clutch\-Master, const bool Clutch\-Slave, \hyperlink{classvct_fixed_size_vector}{vct\-Fixed\-Size\-Vector}$<$ double, 6 $>$ \&Force\-Master, \hyperlink{classvct_fixed_size_vector}{vct\-Fixed\-Size\-Vector}$<$ double, 6 $>$ \&Force\-Slave)
 \end{DoxyCompactItemize}
 \subsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classrob_collaborative_control_force_a36739c1857854db3e7269fa7a66ad793}{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+M\+E\+M\+B\+E\+R\+\_\+\+A\+N\+D\+\_\+\+A\+C\+C\+E\+S\+S\+O\+R\+S} (bool, Application\+Master\+Clutch)
+\hyperlink{classrob_collaborative_control_force_a36739c1857854db3e7269fa7a66ad793}{C\-M\-N\-\_\-\-D\-E\-C\-L\-A\-R\-E\-\_\-\-M\-E\-M\-B\-E\-R\-\_\-\-A\-N\-D\-\_\-\-A\-C\-C\-E\-S\-S\-O\-R\-S} (bool, Application\-Master\-Clutch)
 \item 
-\hyperlink{classrob_collaborative_control_force_a7ac059710c9685998a1696b466af1a39}{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+M\+E\+M\+B\+E\+R\+\_\+\+A\+N\+D\+\_\+\+A\+C\+C\+E\+S\+S\+O\+R\+S} (bool, Application\+Slave\+Clutch)
+\hyperlink{classrob_collaborative_control_force_a7ac059710c9685998a1696b466af1a39}{C\-M\-N\-\_\-\-D\-E\-C\-L\-A\-R\-E\-\_\-\-M\-E\-M\-B\-E\-R\-\_\-\-A\-N\-D\-\_\-\-A\-C\-C\-E\-S\-S\-O\-R\-S} (bool, Application\-Slave\-Clutch)
 \item 
-\hyperlink{classrob_collaborative_control_force_a0f48335dfe86d69b7446cc78422cbd78}{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+M\+E\+M\+B\+E\+R\+\_\+\+A\+N\+D\+\_\+\+A\+C\+C\+E\+S\+S\+O\+R\+S} (bool, Application\+Master\+Slave\+Clutch)
+\hyperlink{classrob_collaborative_control_force_a0f48335dfe86d69b7446cc78422cbd78}{C\-M\-N\-\_\-\-D\-E\-C\-L\-A\-R\-E\-\_\-\-M\-E\-M\-B\-E\-R\-\_\-\-A\-N\-D\-\_\-\-A\-C\-C\-E\-S\-S\-O\-R\-S} (bool, Application\-Master\-Slave\-Clutch)
 \item 
-\hyperlink{classrob_collaborative_control_force_a3f47e2f6039e766e96f092675abe5ef7}{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+M\+E\+M\+B\+E\+R\+\_\+\+A\+N\+D\+\_\+\+A\+C\+C\+E\+S\+S\+O\+R\+S} (\hyperlink{classrob_collaborative_control_force_1_1_parameter_type}{Parameter\+Type}, Parameter)
+\hyperlink{classrob_collaborative_control_force_a3f47e2f6039e766e96f092675abe5ef7}{C\-M\-N\-\_\-\-D\-E\-C\-L\-A\-R\-E\-\_\-\-M\-E\-M\-B\-E\-R\-\_\-\-A\-N\-D\-\_\-\-A\-C\-C\-E\-S\-S\-O\-R\-S} (\hyperlink{classrob_collaborative_control_force_1_1_parameter_type}{Parameter\-Type}, Parameter)
 \end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{vct_fixed_size_vector_types_8h_a3af82acdbf4eeb73c551909240b106ea}{vct3} \hyperlink{classrob_collaborative_control_force_a1f62f6c5fdf922b8cc003bfb39e9880f}{Workspace\+Offset}
+\hyperlink{vct_fixed_size_vector_types_8h_a3af82acdbf4eeb73c551909240b106ea}{vct3} \hyperlink{classrob_collaborative_control_force_a1f62f6c5fdf922b8cc003bfb39e9880f}{Workspace\-Offset}
 \item 
-\hyperlink{vct_fixed_size_vector_types_8h_a3af82acdbf4eeb73c551909240b106ea}{vct3} \hyperlink{classrob_collaborative_control_force_a31a925bae363d4b09bf137dd19f87d83}{Clutch\+Offset}
+\hyperlink{vct_fixed_size_vector_types_8h_a3af82acdbf4eeb73c551909240b106ea}{vct3} \hyperlink{classrob_collaborative_control_force_a31a925bae363d4b09bf137dd19f87d83}{Clutch\-Offset}
 \item 
-\hyperlink{vct_fixed_size_vector_types_8h_a3af82acdbf4eeb73c551909240b106ea}{vct3} \hyperlink{classrob_collaborative_control_force_a082a71cfbe40c56643c1a5c424a842ef}{Left\+Clutch\+Offset}
+\hyperlink{vct_fixed_size_vector_types_8h_a3af82acdbf4eeb73c551909240b106ea}{vct3} \hyperlink{classrob_collaborative_control_force_a082a71cfbe40c56643c1a5c424a842ef}{Left\-Clutch\-Offset}
 \item 
-\hyperlink{vct_fixed_size_vector_types_8h_a3af82acdbf4eeb73c551909240b106ea}{vct3} \hyperlink{classrob_collaborative_control_force_a17768d9a818c61def6a361462b707cf6}{Right\+Clutch\+Offset}
+\hyperlink{vct_fixed_size_vector_types_8h_a3af82acdbf4eeb73c551909240b106ea}{vct3} \hyperlink{classrob_collaborative_control_force_a17768d9a818c61def6a361462b707cf6}{Right\-Clutch\-Offset}
 \item 
-\hyperlink{vct_fixed_size_vector_types_8h_a3af82acdbf4eeb73c551909240b106ea}{vct3} \hyperlink{classrob_collaborative_control_force_a27f8a903061bb6dc1ee9626ed9b75cd9}{Left\+Clutch\+M\+S\+Offset}
+\hyperlink{vct_fixed_size_vector_types_8h_a3af82acdbf4eeb73c551909240b106ea}{vct3} \hyperlink{classrob_collaborative_control_force_a27f8a903061bb6dc1ee9626ed9b75cd9}{Left\-Clutch\-M\-S\-Offset}
 \item 
-\hyperlink{vct_fixed_size_vector_types_8h_a3af82acdbf4eeb73c551909240b106ea}{vct3} \hyperlink{classrob_collaborative_control_force_a363c155f5ba571526aaccee56c2cde4d}{Right\+Clutch\+M\+S\+Offset}
+\hyperlink{vct_fixed_size_vector_types_8h_a3af82acdbf4eeb73c551909240b106ea}{vct3} \hyperlink{classrob_collaborative_control_force_a363c155f5ba571526aaccee56c2cde4d}{Right\-Clutch\-M\-S\-Offset}
 \item 
 \hyperlink{vct_fixed_size_vector_types_8h_a3af82acdbf4eeb73c551909240b106ea}{vct3} \hyperlink{classrob_collaborative_control_force_ab8c04f9f215c07c2ac5d94a781a0d4e8}{Error}
 \item 
-\hyperlink{vct_fixed_size_vector_types_8h_a3af82acdbf4eeb73c551909240b106ea}{vct3} \hyperlink{classrob_collaborative_control_force_ae2e27fde662926fb3fdbe13eb4fd5777}{p1\+Goal}
+\hyperlink{vct_fixed_size_vector_types_8h_a3af82acdbf4eeb73c551909240b106ea}{vct3} \hyperlink{classrob_collaborative_control_force_ae2e27fde662926fb3fdbe13eb4fd5777}{p1\-Goal}
 \item 
-\hyperlink{vct_fixed_size_vector_types_8h_a3af82acdbf4eeb73c551909240b106ea}{vct3} \hyperlink{classrob_collaborative_control_force_a4f7c687e483eaf6473ee291c43f4c883}{p2\+Goal}
+\hyperlink{vct_fixed_size_vector_types_8h_a3af82acdbf4eeb73c551909240b106ea}{vct3} \hyperlink{classrob_collaborative_control_force_a4f7c687e483eaf6473ee291c43f4c883}{p2\-Goal}
 \item 
-\hyperlink{vct_fixed_size_vector_types_8h_a3af82acdbf4eeb73c551909240b106ea}{vct3} \hyperlink{classrob_collaborative_control_force_a1c7db8dd89558a953705da01cedbd16a}{p1\+R\+Goal}
+\hyperlink{vct_fixed_size_vector_types_8h_a3af82acdbf4eeb73c551909240b106ea}{vct3} \hyperlink{classrob_collaborative_control_force_a1c7db8dd89558a953705da01cedbd16a}{p1\-R\-Goal}
 \item 
-\hyperlink{vct_fixed_size_vector_types_8h_a3af82acdbf4eeb73c551909240b106ea}{vct3} \hyperlink{classrob_collaborative_control_force_affe7e8f4fbf3714ff9a72df52048339e}{p2\+R\+Goal}
+\hyperlink{vct_fixed_size_vector_types_8h_a3af82acdbf4eeb73c551909240b106ea}{vct3} \hyperlink{classrob_collaborative_control_force_affe7e8f4fbf3714ff9a72df52048339e}{p2\-R\-Goal}
 \item 
-\hyperlink{vct_fixed_size_vector_types_8h_a3af82acdbf4eeb73c551909240b106ea}{vct3} \hyperlink{classrob_collaborative_control_force_a6bd0a1d18756a41a14f2e9323a515b53}{p1\+Clutched}
+\hyperlink{vct_fixed_size_vector_types_8h_a3af82acdbf4eeb73c551909240b106ea}{vct3} \hyperlink{classrob_collaborative_control_force_a6bd0a1d18756a41a14f2e9323a515b53}{p1\-Clutched}
 \item 
-\hyperlink{vct_fixed_size_vector_types_8h_a3af82acdbf4eeb73c551909240b106ea}{vct3} \hyperlink{classrob_collaborative_control_force_a302b53b70868cf70c561e8019e277132}{p2\+Clutched}
+\hyperlink{vct_fixed_size_vector_types_8h_a3af82acdbf4eeb73c551909240b106ea}{vct3} \hyperlink{classrob_collaborative_control_force_a302b53b70868cf70c561e8019e277132}{p2\-Clutched}
 \item 
-\hyperlink{vct_fixed_size_vector_types_8h_a3af82acdbf4eeb73c551909240b106ea}{vct3} \hyperlink{classrob_collaborative_control_force_a49860f4f2db44435dbbec541cef7e37e}{p1\+R}
+\hyperlink{vct_fixed_size_vector_types_8h_a3af82acdbf4eeb73c551909240b106ea}{vct3} \hyperlink{classrob_collaborative_control_force_a49860f4f2db44435dbbec541cef7e37e}{p1\-R}
 \item 
-\hyperlink{vct_fixed_size_vector_types_8h_a3af82acdbf4eeb73c551909240b106ea}{vct3} \hyperlink{classrob_collaborative_control_force_aa54560cb9b8c5921c8ba385a7776be8a}{p2\+R}
+\hyperlink{vct_fixed_size_vector_types_8h_a3af82acdbf4eeb73c551909240b106ea}{vct3} \hyperlink{classrob_collaborative_control_force_aa54560cb9b8c5921c8ba385a7776be8a}{p2\-R}
 \item 
-\hyperlink{vct_fixed_size_vector_types_8h_a3af82acdbf4eeb73c551909240b106ea}{vct3} \hyperlink{classrob_collaborative_control_force_a19965ecb3120c472087ff0278c75e154}{p1\+Last}
+\hyperlink{vct_fixed_size_vector_types_8h_a3af82acdbf4eeb73c551909240b106ea}{vct3} \hyperlink{classrob_collaborative_control_force_a19965ecb3120c472087ff0278c75e154}{p1\-Last}
 \item 
-\hyperlink{vct_fixed_size_vector_types_8h_a3af82acdbf4eeb73c551909240b106ea}{vct3} \hyperlink{classrob_collaborative_control_force_a8dbb8847a1145320e2a550370e993e23}{p2\+Last}
+\hyperlink{vct_fixed_size_vector_types_8h_a3af82acdbf4eeb73c551909240b106ea}{vct3} \hyperlink{classrob_collaborative_control_force_a8dbb8847a1145320e2a550370e993e23}{p2\-Last}
 \item 
-bool \hyperlink{classrob_collaborative_control_force_ace463af128cf21a3f87a25f6edc25966}{First\+Iteration}
+bool \hyperlink{classrob_collaborative_control_force_ace463af128cf21a3f87a25f6edc25966}{First\-Iteration}
 \item 
-bool \hyperlink{classrob_collaborative_control_force_aa808559bb22e7cd656ac4b68a65e5764}{Clutch\+Done}
+bool \hyperlink{classrob_collaborative_control_force_aa808559bb22e7cd656ac4b68a65e5764}{Clutch\-Done}
 \item 
-bool \hyperlink{classrob_collaborative_control_force_a13d552d3acfa1fabfe8abaf20a407296}{Both\+Clutched}
+bool \hyperlink{classrob_collaborative_control_force_a13d552d3acfa1fabfe8abaf20a407296}{Both\-Clutched}
 \item 
-bool \hyperlink{classrob_collaborative_control_force_a2d9cc27a4adca7e50fbc4758b01df8e2}{Clutch\+Offset\+Add}
+bool \hyperlink{classrob_collaborative_control_force_a2d9cc27a4adca7e50fbc4758b01df8e2}{Clutch\-Offset\-Add}
 \item 
-int \hyperlink{classrob_collaborative_control_force_a0279832f2f45d721454f5d996e2a9d59}{Clutch\+Mode}
+int \hyperlink{classrob_collaborative_control_force_a0279832f2f45d721454f5d996e2a9d59}{Clutch\-Mode}
 \item 
-double \hyperlink{classrob_collaborative_control_force_a94f22c40d72bff7775b4d3c913bdb3dc}{Force\+Feed\+Norm\+Master}
+double \hyperlink{classrob_collaborative_control_force_a94f22c40d72bff7775b4d3c913bdb3dc}{Force\-Feed\-Norm\-Master}
 \item 
-double \hyperlink{classrob_collaborative_control_force_aeebfddb252f5a065dd7ca46430ff5f0e}{Force\+Feed\+Norm\+Slave}
+double \hyperlink{classrob_collaborative_control_force_aeebfddb252f5a065dd7ca46430ff5f0e}{Force\-Feed\-Norm\-Slave}
 \item 
-\hyperlink{vct_transformation_types_8h_a81feda0a02c2d1bc26e5553f409fed20}{vct\+Frm3} \hyperlink{classrob_collaborative_control_force_a497fcbda37f091a9c818b8318777d03f}{Relative\+Transform}
+\hyperlink{vct_transformation_types_8h_a81feda0a02c2d1bc26e5553f409fed20}{vct\-Frm3} \hyperlink{classrob_collaborative_control_force_a497fcbda37f091a9c818b8318777d03f}{Relative\-Transform}
 \end{DoxyCompactItemize}
 
 
 \subsection{Constructor \& Destructor Documentation}
-\hypertarget{classrob_collaborative_control_force_a1e7ed34f7df30aed3771083cdce02a95}{}\index{rob\+Collaborative\+Control\+Force@{rob\+Collaborative\+Control\+Force}!rob\+Collaborative\+Control\+Force@{rob\+Collaborative\+Control\+Force}}
-\index{rob\+Collaborative\+Control\+Force@{rob\+Collaborative\+Control\+Force}!rob\+Collaborative\+Control\+Force@{rob\+Collaborative\+Control\+Force}}
-\subsubsection[{rob\+Collaborative\+Control\+Force}]{\setlength{\rightskip}{0pt plus 5cm}rob\+Collaborative\+Control\+Force\+::rob\+Collaborative\+Control\+Force (
+\hypertarget{classrob_collaborative_control_force_a1e7ed34f7df30aed3771083cdce02a95}{\index{rob\-Collaborative\-Control\-Force@{rob\-Collaborative\-Control\-Force}!rob\-Collaborative\-Control\-Force@{rob\-Collaborative\-Control\-Force}}
+\index{rob\-Collaborative\-Control\-Force@{rob\-Collaborative\-Control\-Force}!robCollaborativeControlForce@{rob\-Collaborative\-Control\-Force}}
+\subsubsection[{rob\-Collaborative\-Control\-Force}]{\setlength{\rightskip}{0pt plus 5cm}rob\-Collaborative\-Control\-Force\-::rob\-Collaborative\-Control\-Force (
 \begin{DoxyParamCaption}
 \item[{void}]{}
 \end{DoxyParamCaption}
-)}\label{classrob_collaborative_control_force_a1e7ed34f7df30aed3771083cdce02a95}
-\hypertarget{classrob_collaborative_control_force_ae09387a96e509acf75adda78f266fdc7}{}\index{rob\+Collaborative\+Control\+Force@{rob\+Collaborative\+Control\+Force}!rob\+Collaborative\+Control\+Force@{rob\+Collaborative\+Control\+Force}}
-\index{rob\+Collaborative\+Control\+Force@{rob\+Collaborative\+Control\+Force}!rob\+Collaborative\+Control\+Force@{rob\+Collaborative\+Control\+Force}}
-\subsubsection[{rob\+Collaborative\+Control\+Force}]{\setlength{\rightskip}{0pt plus 5cm}rob\+Collaborative\+Control\+Force\+::rob\+Collaborative\+Control\+Force (
+)}}\label{classrob_collaborative_control_force_a1e7ed34f7df30aed3771083cdce02a95}
+\hypertarget{classrob_collaborative_control_force_ae09387a96e509acf75adda78f266fdc7}{\index{rob\-Collaborative\-Control\-Force@{rob\-Collaborative\-Control\-Force}!rob\-Collaborative\-Control\-Force@{rob\-Collaborative\-Control\-Force}}
+\index{rob\-Collaborative\-Control\-Force@{rob\-Collaborative\-Control\-Force}!robCollaborativeControlForce@{rob\-Collaborative\-Control\-Force}}
+\subsubsection[{rob\-Collaborative\-Control\-Force}]{\setlength{\rightskip}{0pt plus 5cm}rob\-Collaborative\-Control\-Force\-::rob\-Collaborative\-Control\-Force (
 \begin{DoxyParamCaption}
-\item[{double}]{linear\+Gain\+Master, }
-\item[{double}]{linear\+Gain\+Slave, }
-\item[{double}]{force\+Limit, }
-\item[{{\bf Parameter\+Type\+::\+Force\+Mode\+Type}}]{force\+Mode, }
-\item[{double}]{master\+To\+Slave\+Scale, }
-\item[{double}]{force\+Feedback\+Ratio}
+\item[{double}]{linear\-Gain\-Master, }
+\item[{double}]{linear\-Gain\-Slave, }
+\item[{double}]{force\-Limit, }
+\item[{{\bf Parameter\-Type\-::\-Force\-Mode\-Type}}]{force\-Mode, }
+\item[{double}]{master\-To\-Slave\-Scale, }
+\item[{double}]{force\-Feedback\-Ratio}
 \end{DoxyParamCaption}
-)}\label{classrob_collaborative_control_force_ae09387a96e509acf75adda78f266fdc7}
-\hypertarget{classrob_collaborative_control_force_add898dc0e9b783f0659b3c1a455d7b16}{}\index{rob\+Collaborative\+Control\+Force@{rob\+Collaborative\+Control\+Force}!````~rob\+Collaborative\+Control\+Force@{$\sim$rob\+Collaborative\+Control\+Force}}
-\index{````~rob\+Collaborative\+Control\+Force@{$\sim$rob\+Collaborative\+Control\+Force}!rob\+Collaborative\+Control\+Force@{rob\+Collaborative\+Control\+Force}}
-\subsubsection[{$\sim$rob\+Collaborative\+Control\+Force}]{\setlength{\rightskip}{0pt plus 5cm}rob\+Collaborative\+Control\+Force\+::$\sim$rob\+Collaborative\+Control\+Force (
+)}}\label{classrob_collaborative_control_force_ae09387a96e509acf75adda78f266fdc7}
+\hypertarget{classrob_collaborative_control_force_add898dc0e9b783f0659b3c1a455d7b16}{\index{rob\-Collaborative\-Control\-Force@{rob\-Collaborative\-Control\-Force}!$\sim$rob\-Collaborative\-Control\-Force@{$\sim$rob\-Collaborative\-Control\-Force}}
+\index{$\sim$rob\-Collaborative\-Control\-Force@{$\sim$rob\-Collaborative\-Control\-Force}!robCollaborativeControlForce@{rob\-Collaborative\-Control\-Force}}
+\subsubsection[{$\sim$rob\-Collaborative\-Control\-Force}]{\setlength{\rightskip}{0pt plus 5cm}rob\-Collaborative\-Control\-Force\-::$\sim$rob\-Collaborative\-Control\-Force (
 \begin{DoxyParamCaption}
 \item[{void}]{}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\label{classrob_collaborative_control_force_add898dc0e9b783f0659b3c1a455d7b16}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classrob_collaborative_control_force_add898dc0e9b783f0659b3c1a455d7b16}
 
 
 \subsection{Member Function Documentation}
-\hypertarget{classrob_collaborative_control_force_a36739c1857854db3e7269fa7a66ad793}{}\index{rob\+Collaborative\+Control\+Force@{rob\+Collaborative\+Control\+Force}!C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+M\+E\+M\+B\+E\+R\+\_\+\+A\+N\+D\+\_\+\+A\+C\+C\+E\+S\+S\+O\+R\+S@{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+M\+E\+M\+B\+E\+R\+\_\+\+A\+N\+D\+\_\+\+A\+C\+C\+E\+S\+S\+O\+R\+S}}
-\index{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+M\+E\+M\+B\+E\+R\+\_\+\+A\+N\+D\+\_\+\+A\+C\+C\+E\+S\+S\+O\+R\+S@{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+M\+E\+M\+B\+E\+R\+\_\+\+A\+N\+D\+\_\+\+A\+C\+C\+E\+S\+S\+O\+R\+S}!rob\+Collaborative\+Control\+Force@{rob\+Collaborative\+Control\+Force}}
-\subsubsection[{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+M\+E\+M\+B\+E\+R\+\_\+\+A\+N\+D\+\_\+\+A\+C\+C\+E\+S\+S\+O\+R\+S}]{\setlength{\rightskip}{0pt plus 5cm}rob\+Collaborative\+Control\+Force\+::\+C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+M\+E\+M\+B\+E\+R\+\_\+\+A\+N\+D\+\_\+\+A\+C\+C\+E\+S\+S\+O\+R\+S (
+\hypertarget{classrob_collaborative_control_force_a36739c1857854db3e7269fa7a66ad793}{\index{rob\-Collaborative\-Control\-Force@{rob\-Collaborative\-Control\-Force}!C\-M\-N\-\_\-\-D\-E\-C\-L\-A\-R\-E\-\_\-\-M\-E\-M\-B\-E\-R\-\_\-\-A\-N\-D\-\_\-\-A\-C\-C\-E\-S\-S\-O\-R\-S@{C\-M\-N\-\_\-\-D\-E\-C\-L\-A\-R\-E\-\_\-\-M\-E\-M\-B\-E\-R\-\_\-\-A\-N\-D\-\_\-\-A\-C\-C\-E\-S\-S\-O\-R\-S}}
+\index{C\-M\-N\-\_\-\-D\-E\-C\-L\-A\-R\-E\-\_\-\-M\-E\-M\-B\-E\-R\-\_\-\-A\-N\-D\-\_\-\-A\-C\-C\-E\-S\-S\-O\-R\-S@{C\-M\-N\-\_\-\-D\-E\-C\-L\-A\-R\-E\-\_\-\-M\-E\-M\-B\-E\-R\-\_\-\-A\-N\-D\-\_\-\-A\-C\-C\-E\-S\-S\-O\-R\-S}!robCollaborativeControlForce@{rob\-Collaborative\-Control\-Force}}
+\subsubsection[{C\-M\-N\-\_\-\-D\-E\-C\-L\-A\-R\-E\-\_\-\-M\-E\-M\-B\-E\-R\-\_\-\-A\-N\-D\-\_\-\-A\-C\-C\-E\-S\-S\-O\-R\-S}]{\setlength{\rightskip}{0pt plus 5cm}rob\-Collaborative\-Control\-Force\-::\-C\-M\-N\-\_\-\-D\-E\-C\-L\-A\-R\-E\-\_\-\-M\-E\-M\-B\-E\-R\-\_\-\-A\-N\-D\-\_\-\-A\-C\-C\-E\-S\-S\-O\-R\-S (
 \begin{DoxyParamCaption}
 \item[{bool}]{, }
-\item[{Application\+Master\+Clutch}]{}
+\item[{Application\-Master\-Clutch}]{}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [protected]}}\label{classrob_collaborative_control_force_a36739c1857854db3e7269fa7a66ad793}
-\hypertarget{classrob_collaborative_control_force_a7ac059710c9685998a1696b466af1a39}{}\index{rob\+Collaborative\+Control\+Force@{rob\+Collaborative\+Control\+Force}!C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+M\+E\+M\+B\+E\+R\+\_\+\+A\+N\+D\+\_\+\+A\+C\+C\+E\+S\+S\+O\+R\+S@{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+M\+E\+M\+B\+E\+R\+\_\+\+A\+N\+D\+\_\+\+A\+C\+C\+E\+S\+S\+O\+R\+S}}
-\index{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+M\+E\+M\+B\+E\+R\+\_\+\+A\+N\+D\+\_\+\+A\+C\+C\+E\+S\+S\+O\+R\+S@{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+M\+E\+M\+B\+E\+R\+\_\+\+A\+N\+D\+\_\+\+A\+C\+C\+E\+S\+S\+O\+R\+S}!rob\+Collaborative\+Control\+Force@{rob\+Collaborative\+Control\+Force}}
-\subsubsection[{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+M\+E\+M\+B\+E\+R\+\_\+\+A\+N\+D\+\_\+\+A\+C\+C\+E\+S\+S\+O\+R\+S}]{\setlength{\rightskip}{0pt plus 5cm}rob\+Collaborative\+Control\+Force\+::\+C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+M\+E\+M\+B\+E\+R\+\_\+\+A\+N\+D\+\_\+\+A\+C\+C\+E\+S\+S\+O\+R\+S (
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classrob_collaborative_control_force_a36739c1857854db3e7269fa7a66ad793}
+\hypertarget{classrob_collaborative_control_force_a7ac059710c9685998a1696b466af1a39}{\index{rob\-Collaborative\-Control\-Force@{rob\-Collaborative\-Control\-Force}!C\-M\-N\-\_\-\-D\-E\-C\-L\-A\-R\-E\-\_\-\-M\-E\-M\-B\-E\-R\-\_\-\-A\-N\-D\-\_\-\-A\-C\-C\-E\-S\-S\-O\-R\-S@{C\-M\-N\-\_\-\-D\-E\-C\-L\-A\-R\-E\-\_\-\-M\-E\-M\-B\-E\-R\-\_\-\-A\-N\-D\-\_\-\-A\-C\-C\-E\-S\-S\-O\-R\-S}}
+\index{C\-M\-N\-\_\-\-D\-E\-C\-L\-A\-R\-E\-\_\-\-M\-E\-M\-B\-E\-R\-\_\-\-A\-N\-D\-\_\-\-A\-C\-C\-E\-S\-S\-O\-R\-S@{C\-M\-N\-\_\-\-D\-E\-C\-L\-A\-R\-E\-\_\-\-M\-E\-M\-B\-E\-R\-\_\-\-A\-N\-D\-\_\-\-A\-C\-C\-E\-S\-S\-O\-R\-S}!robCollaborativeControlForce@{rob\-Collaborative\-Control\-Force}}
+\subsubsection[{C\-M\-N\-\_\-\-D\-E\-C\-L\-A\-R\-E\-\_\-\-M\-E\-M\-B\-E\-R\-\_\-\-A\-N\-D\-\_\-\-A\-C\-C\-E\-S\-S\-O\-R\-S}]{\setlength{\rightskip}{0pt plus 5cm}rob\-Collaborative\-Control\-Force\-::\-C\-M\-N\-\_\-\-D\-E\-C\-L\-A\-R\-E\-\_\-\-M\-E\-M\-B\-E\-R\-\_\-\-A\-N\-D\-\_\-\-A\-C\-C\-E\-S\-S\-O\-R\-S (
 \begin{DoxyParamCaption}
 \item[{bool}]{, }
-\item[{Application\+Slave\+Clutch}]{}
+\item[{Application\-Slave\-Clutch}]{}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [protected]}}\label{classrob_collaborative_control_force_a7ac059710c9685998a1696b466af1a39}
-\hypertarget{classrob_collaborative_control_force_a0f48335dfe86d69b7446cc78422cbd78}{}\index{rob\+Collaborative\+Control\+Force@{rob\+Collaborative\+Control\+Force}!C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+M\+E\+M\+B\+E\+R\+\_\+\+A\+N\+D\+\_\+\+A\+C\+C\+E\+S\+S\+O\+R\+S@{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+M\+E\+M\+B\+E\+R\+\_\+\+A\+N\+D\+\_\+\+A\+C\+C\+E\+S\+S\+O\+R\+S}}
-\index{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+M\+E\+M\+B\+E\+R\+\_\+\+A\+N\+D\+\_\+\+A\+C\+C\+E\+S\+S\+O\+R\+S@{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+M\+E\+M\+B\+E\+R\+\_\+\+A\+N\+D\+\_\+\+A\+C\+C\+E\+S\+S\+O\+R\+S}!rob\+Collaborative\+Control\+Force@{rob\+Collaborative\+Control\+Force}}
-\subsubsection[{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+M\+E\+M\+B\+E\+R\+\_\+\+A\+N\+D\+\_\+\+A\+C\+C\+E\+S\+S\+O\+R\+S}]{\setlength{\rightskip}{0pt plus 5cm}rob\+Collaborative\+Control\+Force\+::\+C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+M\+E\+M\+B\+E\+R\+\_\+\+A\+N\+D\+\_\+\+A\+C\+C\+E\+S\+S\+O\+R\+S (
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classrob_collaborative_control_force_a7ac059710c9685998a1696b466af1a39}
+\hypertarget{classrob_collaborative_control_force_a0f48335dfe86d69b7446cc78422cbd78}{\index{rob\-Collaborative\-Control\-Force@{rob\-Collaborative\-Control\-Force}!C\-M\-N\-\_\-\-D\-E\-C\-L\-A\-R\-E\-\_\-\-M\-E\-M\-B\-E\-R\-\_\-\-A\-N\-D\-\_\-\-A\-C\-C\-E\-S\-S\-O\-R\-S@{C\-M\-N\-\_\-\-D\-E\-C\-L\-A\-R\-E\-\_\-\-M\-E\-M\-B\-E\-R\-\_\-\-A\-N\-D\-\_\-\-A\-C\-C\-E\-S\-S\-O\-R\-S}}
+\index{C\-M\-N\-\_\-\-D\-E\-C\-L\-A\-R\-E\-\_\-\-M\-E\-M\-B\-E\-R\-\_\-\-A\-N\-D\-\_\-\-A\-C\-C\-E\-S\-S\-O\-R\-S@{C\-M\-N\-\_\-\-D\-E\-C\-L\-A\-R\-E\-\_\-\-M\-E\-M\-B\-E\-R\-\_\-\-A\-N\-D\-\_\-\-A\-C\-C\-E\-S\-S\-O\-R\-S}!robCollaborativeControlForce@{rob\-Collaborative\-Control\-Force}}
+\subsubsection[{C\-M\-N\-\_\-\-D\-E\-C\-L\-A\-R\-E\-\_\-\-M\-E\-M\-B\-E\-R\-\_\-\-A\-N\-D\-\_\-\-A\-C\-C\-E\-S\-S\-O\-R\-S}]{\setlength{\rightskip}{0pt plus 5cm}rob\-Collaborative\-Control\-Force\-::\-C\-M\-N\-\_\-\-D\-E\-C\-L\-A\-R\-E\-\_\-\-M\-E\-M\-B\-E\-R\-\_\-\-A\-N\-D\-\_\-\-A\-C\-C\-E\-S\-S\-O\-R\-S (
 \begin{DoxyParamCaption}
 \item[{bool}]{, }
-\item[{Application\+Master\+Slave\+Clutch}]{}
+\item[{Application\-Master\-Slave\-Clutch}]{}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [protected]}}\label{classrob_collaborative_control_force_a0f48335dfe86d69b7446cc78422cbd78}
-\hypertarget{classrob_collaborative_control_force_a3f47e2f6039e766e96f092675abe5ef7}{}\index{rob\+Collaborative\+Control\+Force@{rob\+Collaborative\+Control\+Force}!C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+M\+E\+M\+B\+E\+R\+\_\+\+A\+N\+D\+\_\+\+A\+C\+C\+E\+S\+S\+O\+R\+S@{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+M\+E\+M\+B\+E\+R\+\_\+\+A\+N\+D\+\_\+\+A\+C\+C\+E\+S\+S\+O\+R\+S}}
-\index{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+M\+E\+M\+B\+E\+R\+\_\+\+A\+N\+D\+\_\+\+A\+C\+C\+E\+S\+S\+O\+R\+S@{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+M\+E\+M\+B\+E\+R\+\_\+\+A\+N\+D\+\_\+\+A\+C\+C\+E\+S\+S\+O\+R\+S}!rob\+Collaborative\+Control\+Force@{rob\+Collaborative\+Control\+Force}}
-\subsubsection[{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+M\+E\+M\+B\+E\+R\+\_\+\+A\+N\+D\+\_\+\+A\+C\+C\+E\+S\+S\+O\+R\+S}]{\setlength{\rightskip}{0pt plus 5cm}rob\+Collaborative\+Control\+Force\+::\+C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+M\+E\+M\+B\+E\+R\+\_\+\+A\+N\+D\+\_\+\+A\+C\+C\+E\+S\+S\+O\+R\+S (
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classrob_collaborative_control_force_a0f48335dfe86d69b7446cc78422cbd78}
+\hypertarget{classrob_collaborative_control_force_a3f47e2f6039e766e96f092675abe5ef7}{\index{rob\-Collaborative\-Control\-Force@{rob\-Collaborative\-Control\-Force}!C\-M\-N\-\_\-\-D\-E\-C\-L\-A\-R\-E\-\_\-\-M\-E\-M\-B\-E\-R\-\_\-\-A\-N\-D\-\_\-\-A\-C\-C\-E\-S\-S\-O\-R\-S@{C\-M\-N\-\_\-\-D\-E\-C\-L\-A\-R\-E\-\_\-\-M\-E\-M\-B\-E\-R\-\_\-\-A\-N\-D\-\_\-\-A\-C\-C\-E\-S\-S\-O\-R\-S}}
+\index{C\-M\-N\-\_\-\-D\-E\-C\-L\-A\-R\-E\-\_\-\-M\-E\-M\-B\-E\-R\-\_\-\-A\-N\-D\-\_\-\-A\-C\-C\-E\-S\-S\-O\-R\-S@{C\-M\-N\-\_\-\-D\-E\-C\-L\-A\-R\-E\-\_\-\-M\-E\-M\-B\-E\-R\-\_\-\-A\-N\-D\-\_\-\-A\-C\-C\-E\-S\-S\-O\-R\-S}!robCollaborativeControlForce@{rob\-Collaborative\-Control\-Force}}
+\subsubsection[{C\-M\-N\-\_\-\-D\-E\-C\-L\-A\-R\-E\-\_\-\-M\-E\-M\-B\-E\-R\-\_\-\-A\-N\-D\-\_\-\-A\-C\-C\-E\-S\-S\-O\-R\-S}]{\setlength{\rightskip}{0pt plus 5cm}rob\-Collaborative\-Control\-Force\-::\-C\-M\-N\-\_\-\-D\-E\-C\-L\-A\-R\-E\-\_\-\-M\-E\-M\-B\-E\-R\-\_\-\-A\-N\-D\-\_\-\-A\-C\-C\-E\-S\-S\-O\-R\-S (
 \begin{DoxyParamCaption}
-\item[{{\bf Parameter\+Type}}]{, }
+\item[{{\bf Parameter\-Type}}]{, }
 \item[{Parameter}]{}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [protected]}}\label{classrob_collaborative_control_force_a3f47e2f6039e766e96f092675abe5ef7}
-\hypertarget{classrob_collaborative_control_force_a8b6ee9968a8328b0de3588b9bc0143fc}{}\index{rob\+Collaborative\+Control\+Force@{rob\+Collaborative\+Control\+Force}!Set\+Parameters@{Set\+Parameters}}
-\index{Set\+Parameters@{Set\+Parameters}!rob\+Collaborative\+Control\+Force@{rob\+Collaborative\+Control\+Force}}
-\subsubsection[{Set\+Parameters}]{\setlength{\rightskip}{0pt plus 5cm}void rob\+Collaborative\+Control\+Force\+::\+Set\+Parameters (
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classrob_collaborative_control_force_a3f47e2f6039e766e96f092675abe5ef7}
+\hypertarget{classrob_collaborative_control_force_a8b6ee9968a8328b0de3588b9bc0143fc}{\index{rob\-Collaborative\-Control\-Force@{rob\-Collaborative\-Control\-Force}!Set\-Parameters@{Set\-Parameters}}
+\index{Set\-Parameters@{Set\-Parameters}!robCollaborativeControlForce@{rob\-Collaborative\-Control\-Force}}
+\subsubsection[{Set\-Parameters}]{\setlength{\rightskip}{0pt plus 5cm}void rob\-Collaborative\-Control\-Force\-::\-Set\-Parameters (
 \begin{DoxyParamCaption}
-\item[{const {\bf Parameter\+Type} \&}]{commanded\+Parameter}
+\item[{const {\bf Parameter\-Type} \&}]{commanded\-Parameter}
 \end{DoxyParamCaption}
-)}\label{classrob_collaborative_control_force_a8b6ee9968a8328b0de3588b9bc0143fc}
-Set Parameters function takes arguments from the parent class to mutate the values of; Force Limit, Scale Factor Force Coefficient, Force Mode. These values are currently being used by devices\+Tutorial\+Example3 G\+U\+I via dev\+Sensable\+H\+D\+Master\+Slave class. \hypertarget{classrob_collaborative_control_force_a31bbb39e19d2fec0bebf83fd256d5394}{}\index{rob\+Collaborative\+Control\+Force@{rob\+Collaborative\+Control\+Force}!Update@{Update}}
-\index{Update@{Update}!rob\+Collaborative\+Control\+Force@{rob\+Collaborative\+Control\+Force}}
-\subsubsection[{Update}]{\setlength{\rightskip}{0pt plus 5cm}void rob\+Collaborative\+Control\+Force\+::\+Update (
+)}}\label{classrob_collaborative_control_force_a8b6ee9968a8328b0de3588b9bc0143fc}
+Set Parameters function takes arguments from the parent class to mutate the values of; Force Limit, Scale Factor Force Coefficient, Force Mode. These values are currently being used by devices\-Tutorial\-Example3 G\-U\-I via dev\-Sensable\-H\-D\-Master\-Slave class. \hypertarget{classrob_collaborative_control_force_a31bbb39e19d2fec0bebf83fd256d5394}{\index{rob\-Collaborative\-Control\-Force@{rob\-Collaborative\-Control\-Force}!Update@{Update}}
+\index{Update@{Update}!robCollaborativeControlForce@{rob\-Collaborative\-Control\-Force}}
+\subsubsection[{Update}]{\setlength{\rightskip}{0pt plus 5cm}void rob\-Collaborative\-Control\-Force\-::\-Update (
 \begin{DoxyParamCaption}
 \item[{const {\bf vct3} \&}]{p1, }
 \item[{const {\bf vct3} \&}]{p2, }
-\item[{const bool}]{Clutch\+Master, }
-\item[{const bool}]{Clutch\+Slave, }
-\item[{{\bf vct\+Fixed\+Size\+Vector}$<$ double, 6 $>$ \&}]{Force\+Master, }
-\item[{{\bf vct\+Fixed\+Size\+Vector}$<$ double, 6 $>$ \&}]{Force\+Slave}
+\item[{const bool}]{Clutch\-Master, }
+\item[{const bool}]{Clutch\-Slave, }
+\item[{{\bf vct\-Fixed\-Size\-Vector}$<$ double, 6 $>$ \&}]{Force\-Master, }
+\item[{{\bf vct\-Fixed\-Size\-Vector}$<$ double, 6 $>$ \&}]{Force\-Slave}
 \end{DoxyParamCaption}
-)}\label{classrob_collaborative_control_force_a31bbb39e19d2fec0bebf83fd256d5394}
-Update function\textquotesingle{}s goal is to carry out position to force control. Two position parameters and two clutch parameters are provided by the parent class. This function uses those positions and the clutch parameters to calculate the desired force values for teleoperation. Designed for Phantom Omni teleoperation, has not been tested on other platforms. 
+)}}\label{classrob_collaborative_control_force_a31bbb39e19d2fec0bebf83fd256d5394}
+Update function's goal is to carry out position to force control. Two position parameters and two clutch parameters are provided by the parent class. This function uses those positions and the clutch parameters to calculate the desired force values for teleoperation. Designed for Phantom Omni teleoperation, has not been tested on other platforms. 
 
 \subsection{Member Data Documentation}
-\hypertarget{classrob_collaborative_control_force_a13d552d3acfa1fabfe8abaf20a407296}{}\index{rob\+Collaborative\+Control\+Force@{rob\+Collaborative\+Control\+Force}!Both\+Clutched@{Both\+Clutched}}
-\index{Both\+Clutched@{Both\+Clutched}!rob\+Collaborative\+Control\+Force@{rob\+Collaborative\+Control\+Force}}
-\subsubsection[{Both\+Clutched}]{\setlength{\rightskip}{0pt plus 5cm}bool rob\+Collaborative\+Control\+Force\+::\+Both\+Clutched\hspace{0.3cm}{\ttfamily [protected]}}\label{classrob_collaborative_control_force_a13d552d3acfa1fabfe8abaf20a407296}
-\hypertarget{classrob_collaborative_control_force_aa808559bb22e7cd656ac4b68a65e5764}{}\index{rob\+Collaborative\+Control\+Force@{rob\+Collaborative\+Control\+Force}!Clutch\+Done@{Clutch\+Done}}
-\index{Clutch\+Done@{Clutch\+Done}!rob\+Collaborative\+Control\+Force@{rob\+Collaborative\+Control\+Force}}
-\subsubsection[{Clutch\+Done}]{\setlength{\rightskip}{0pt plus 5cm}bool rob\+Collaborative\+Control\+Force\+::\+Clutch\+Done\hspace{0.3cm}{\ttfamily [protected]}}\label{classrob_collaborative_control_force_aa808559bb22e7cd656ac4b68a65e5764}
-\hypertarget{classrob_collaborative_control_force_a0279832f2f45d721454f5d996e2a9d59}{}\index{rob\+Collaborative\+Control\+Force@{rob\+Collaborative\+Control\+Force}!Clutch\+Mode@{Clutch\+Mode}}
-\index{Clutch\+Mode@{Clutch\+Mode}!rob\+Collaborative\+Control\+Force@{rob\+Collaborative\+Control\+Force}}
-\subsubsection[{Clutch\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}int rob\+Collaborative\+Control\+Force\+::\+Clutch\+Mode\hspace{0.3cm}{\ttfamily [protected]}}\label{classrob_collaborative_control_force_a0279832f2f45d721454f5d996e2a9d59}
-\hypertarget{classrob_collaborative_control_force_a31a925bae363d4b09bf137dd19f87d83}{}\index{rob\+Collaborative\+Control\+Force@{rob\+Collaborative\+Control\+Force}!Clutch\+Offset@{Clutch\+Offset}}
-\index{Clutch\+Offset@{Clutch\+Offset}!rob\+Collaborative\+Control\+Force@{rob\+Collaborative\+Control\+Force}}
-\subsubsection[{Clutch\+Offset}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct3} rob\+Collaborative\+Control\+Force\+::\+Clutch\+Offset\hspace{0.3cm}{\ttfamily [protected]}}\label{classrob_collaborative_control_force_a31a925bae363d4b09bf137dd19f87d83}
-\hypertarget{classrob_collaborative_control_force_a2d9cc27a4adca7e50fbc4758b01df8e2}{}\index{rob\+Collaborative\+Control\+Force@{rob\+Collaborative\+Control\+Force}!Clutch\+Offset\+Add@{Clutch\+Offset\+Add}}
-\index{Clutch\+Offset\+Add@{Clutch\+Offset\+Add}!rob\+Collaborative\+Control\+Force@{rob\+Collaborative\+Control\+Force}}
-\subsubsection[{Clutch\+Offset\+Add}]{\setlength{\rightskip}{0pt plus 5cm}bool rob\+Collaborative\+Control\+Force\+::\+Clutch\+Offset\+Add\hspace{0.3cm}{\ttfamily [protected]}}\label{classrob_collaborative_control_force_a2d9cc27a4adca7e50fbc4758b01df8e2}
-\hypertarget{classrob_collaborative_control_force_ab8c04f9f215c07c2ac5d94a781a0d4e8}{}\index{rob\+Collaborative\+Control\+Force@{rob\+Collaborative\+Control\+Force}!Error@{Error}}
-\index{Error@{Error}!rob\+Collaborative\+Control\+Force@{rob\+Collaborative\+Control\+Force}}
-\subsubsection[{Error}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct3} rob\+Collaborative\+Control\+Force\+::\+Error\hspace{0.3cm}{\ttfamily [protected]}}\label{classrob_collaborative_control_force_ab8c04f9f215c07c2ac5d94a781a0d4e8}
-\hypertarget{classrob_collaborative_control_force_ace463af128cf21a3f87a25f6edc25966}{}\index{rob\+Collaborative\+Control\+Force@{rob\+Collaborative\+Control\+Force}!First\+Iteration@{First\+Iteration}}
-\index{First\+Iteration@{First\+Iteration}!rob\+Collaborative\+Control\+Force@{rob\+Collaborative\+Control\+Force}}
-\subsubsection[{First\+Iteration}]{\setlength{\rightskip}{0pt plus 5cm}bool rob\+Collaborative\+Control\+Force\+::\+First\+Iteration\hspace{0.3cm}{\ttfamily [protected]}}\label{classrob_collaborative_control_force_ace463af128cf21a3f87a25f6edc25966}
-\hypertarget{classrob_collaborative_control_force_a94f22c40d72bff7775b4d3c913bdb3dc}{}\index{rob\+Collaborative\+Control\+Force@{rob\+Collaborative\+Control\+Force}!Force\+Feed\+Norm\+Master@{Force\+Feed\+Norm\+Master}}
-\index{Force\+Feed\+Norm\+Master@{Force\+Feed\+Norm\+Master}!rob\+Collaborative\+Control\+Force@{rob\+Collaborative\+Control\+Force}}
-\subsubsection[{Force\+Feed\+Norm\+Master}]{\setlength{\rightskip}{0pt plus 5cm}double rob\+Collaborative\+Control\+Force\+::\+Force\+Feed\+Norm\+Master\hspace{0.3cm}{\ttfamily [protected]}}\label{classrob_collaborative_control_force_a94f22c40d72bff7775b4d3c913bdb3dc}
-\hypertarget{classrob_collaborative_control_force_aeebfddb252f5a065dd7ca46430ff5f0e}{}\index{rob\+Collaborative\+Control\+Force@{rob\+Collaborative\+Control\+Force}!Force\+Feed\+Norm\+Slave@{Force\+Feed\+Norm\+Slave}}
-\index{Force\+Feed\+Norm\+Slave@{Force\+Feed\+Norm\+Slave}!rob\+Collaborative\+Control\+Force@{rob\+Collaborative\+Control\+Force}}
-\subsubsection[{Force\+Feed\+Norm\+Slave}]{\setlength{\rightskip}{0pt plus 5cm}double rob\+Collaborative\+Control\+Force\+::\+Force\+Feed\+Norm\+Slave\hspace{0.3cm}{\ttfamily [protected]}}\label{classrob_collaborative_control_force_aeebfddb252f5a065dd7ca46430ff5f0e}
-\hypertarget{classrob_collaborative_control_force_a27f8a903061bb6dc1ee9626ed9b75cd9}{}\index{rob\+Collaborative\+Control\+Force@{rob\+Collaborative\+Control\+Force}!Left\+Clutch\+M\+S\+Offset@{Left\+Clutch\+M\+S\+Offset}}
-\index{Left\+Clutch\+M\+S\+Offset@{Left\+Clutch\+M\+S\+Offset}!rob\+Collaborative\+Control\+Force@{rob\+Collaborative\+Control\+Force}}
-\subsubsection[{Left\+Clutch\+M\+S\+Offset}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct3} rob\+Collaborative\+Control\+Force\+::\+Left\+Clutch\+M\+S\+Offset\hspace{0.3cm}{\ttfamily [protected]}}\label{classrob_collaborative_control_force_a27f8a903061bb6dc1ee9626ed9b75cd9}
-\hypertarget{classrob_collaborative_control_force_a082a71cfbe40c56643c1a5c424a842ef}{}\index{rob\+Collaborative\+Control\+Force@{rob\+Collaborative\+Control\+Force}!Left\+Clutch\+Offset@{Left\+Clutch\+Offset}}
-\index{Left\+Clutch\+Offset@{Left\+Clutch\+Offset}!rob\+Collaborative\+Control\+Force@{rob\+Collaborative\+Control\+Force}}
-\subsubsection[{Left\+Clutch\+Offset}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct3} rob\+Collaborative\+Control\+Force\+::\+Left\+Clutch\+Offset\hspace{0.3cm}{\ttfamily [protected]}}\label{classrob_collaborative_control_force_a082a71cfbe40c56643c1a5c424a842ef}
-\hypertarget{classrob_collaborative_control_force_a6bd0a1d18756a41a14f2e9323a515b53}{}\index{rob\+Collaborative\+Control\+Force@{rob\+Collaborative\+Control\+Force}!p1\+Clutched@{p1\+Clutched}}
-\index{p1\+Clutched@{p1\+Clutched}!rob\+Collaborative\+Control\+Force@{rob\+Collaborative\+Control\+Force}}
-\subsubsection[{p1\+Clutched}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct3} rob\+Collaborative\+Control\+Force\+::p1\+Clutched\hspace{0.3cm}{\ttfamily [protected]}}\label{classrob_collaborative_control_force_a6bd0a1d18756a41a14f2e9323a515b53}
-\hypertarget{classrob_collaborative_control_force_ae2e27fde662926fb3fdbe13eb4fd5777}{}\index{rob\+Collaborative\+Control\+Force@{rob\+Collaborative\+Control\+Force}!p1\+Goal@{p1\+Goal}}
-\index{p1\+Goal@{p1\+Goal}!rob\+Collaborative\+Control\+Force@{rob\+Collaborative\+Control\+Force}}
-\subsubsection[{p1\+Goal}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct3} rob\+Collaborative\+Control\+Force\+::p1\+Goal\hspace{0.3cm}{\ttfamily [protected]}}\label{classrob_collaborative_control_force_ae2e27fde662926fb3fdbe13eb4fd5777}
-\hypertarget{classrob_collaborative_control_force_a19965ecb3120c472087ff0278c75e154}{}\index{rob\+Collaborative\+Control\+Force@{rob\+Collaborative\+Control\+Force}!p1\+Last@{p1\+Last}}
-\index{p1\+Last@{p1\+Last}!rob\+Collaborative\+Control\+Force@{rob\+Collaborative\+Control\+Force}}
-\subsubsection[{p1\+Last}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct3} rob\+Collaborative\+Control\+Force\+::p1\+Last\hspace{0.3cm}{\ttfamily [protected]}}\label{classrob_collaborative_control_force_a19965ecb3120c472087ff0278c75e154}
-\hypertarget{classrob_collaborative_control_force_a49860f4f2db44435dbbec541cef7e37e}{}\index{rob\+Collaborative\+Control\+Force@{rob\+Collaborative\+Control\+Force}!p1\+R@{p1\+R}}
-\index{p1\+R@{p1\+R}!rob\+Collaborative\+Control\+Force@{rob\+Collaborative\+Control\+Force}}
-\subsubsection[{p1\+R}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct3} rob\+Collaborative\+Control\+Force\+::p1\+R\hspace{0.3cm}{\ttfamily [protected]}}\label{classrob_collaborative_control_force_a49860f4f2db44435dbbec541cef7e37e}
-\hypertarget{classrob_collaborative_control_force_a1c7db8dd89558a953705da01cedbd16a}{}\index{rob\+Collaborative\+Control\+Force@{rob\+Collaborative\+Control\+Force}!p1\+R\+Goal@{p1\+R\+Goal}}
-\index{p1\+R\+Goal@{p1\+R\+Goal}!rob\+Collaborative\+Control\+Force@{rob\+Collaborative\+Control\+Force}}
-\subsubsection[{p1\+R\+Goal}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct3} rob\+Collaborative\+Control\+Force\+::p1\+R\+Goal\hspace{0.3cm}{\ttfamily [protected]}}\label{classrob_collaborative_control_force_a1c7db8dd89558a953705da01cedbd16a}
-\hypertarget{classrob_collaborative_control_force_a302b53b70868cf70c561e8019e277132}{}\index{rob\+Collaborative\+Control\+Force@{rob\+Collaborative\+Control\+Force}!p2\+Clutched@{p2\+Clutched}}
-\index{p2\+Clutched@{p2\+Clutched}!rob\+Collaborative\+Control\+Force@{rob\+Collaborative\+Control\+Force}}
-\subsubsection[{p2\+Clutched}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct3} rob\+Collaborative\+Control\+Force\+::p2\+Clutched\hspace{0.3cm}{\ttfamily [protected]}}\label{classrob_collaborative_control_force_a302b53b70868cf70c561e8019e277132}
-\hypertarget{classrob_collaborative_control_force_a4f7c687e483eaf6473ee291c43f4c883}{}\index{rob\+Collaborative\+Control\+Force@{rob\+Collaborative\+Control\+Force}!p2\+Goal@{p2\+Goal}}
-\index{p2\+Goal@{p2\+Goal}!rob\+Collaborative\+Control\+Force@{rob\+Collaborative\+Control\+Force}}
-\subsubsection[{p2\+Goal}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct3} rob\+Collaborative\+Control\+Force\+::p2\+Goal\hspace{0.3cm}{\ttfamily [protected]}}\label{classrob_collaborative_control_force_a4f7c687e483eaf6473ee291c43f4c883}
-\hypertarget{classrob_collaborative_control_force_a8dbb8847a1145320e2a550370e993e23}{}\index{rob\+Collaborative\+Control\+Force@{rob\+Collaborative\+Control\+Force}!p2\+Last@{p2\+Last}}
-\index{p2\+Last@{p2\+Last}!rob\+Collaborative\+Control\+Force@{rob\+Collaborative\+Control\+Force}}
-\subsubsection[{p2\+Last}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct3} rob\+Collaborative\+Control\+Force\+::p2\+Last\hspace{0.3cm}{\ttfamily [protected]}}\label{classrob_collaborative_control_force_a8dbb8847a1145320e2a550370e993e23}
-\hypertarget{classrob_collaborative_control_force_aa54560cb9b8c5921c8ba385a7776be8a}{}\index{rob\+Collaborative\+Control\+Force@{rob\+Collaborative\+Control\+Force}!p2\+R@{p2\+R}}
-\index{p2\+R@{p2\+R}!rob\+Collaborative\+Control\+Force@{rob\+Collaborative\+Control\+Force}}
-\subsubsection[{p2\+R}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct3} rob\+Collaborative\+Control\+Force\+::p2\+R\hspace{0.3cm}{\ttfamily [protected]}}\label{classrob_collaborative_control_force_aa54560cb9b8c5921c8ba385a7776be8a}
-\hypertarget{classrob_collaborative_control_force_affe7e8f4fbf3714ff9a72df52048339e}{}\index{rob\+Collaborative\+Control\+Force@{rob\+Collaborative\+Control\+Force}!p2\+R\+Goal@{p2\+R\+Goal}}
-\index{p2\+R\+Goal@{p2\+R\+Goal}!rob\+Collaborative\+Control\+Force@{rob\+Collaborative\+Control\+Force}}
-\subsubsection[{p2\+R\+Goal}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct3} rob\+Collaborative\+Control\+Force\+::p2\+R\+Goal\hspace{0.3cm}{\ttfamily [protected]}}\label{classrob_collaborative_control_force_affe7e8f4fbf3714ff9a72df52048339e}
-\hypertarget{classrob_collaborative_control_force_a497fcbda37f091a9c818b8318777d03f}{}\index{rob\+Collaborative\+Control\+Force@{rob\+Collaborative\+Control\+Force}!Relative\+Transform@{Relative\+Transform}}
-\index{Relative\+Transform@{Relative\+Transform}!rob\+Collaborative\+Control\+Force@{rob\+Collaborative\+Control\+Force}}
-\subsubsection[{Relative\+Transform}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\+Frm3} rob\+Collaborative\+Control\+Force\+::\+Relative\+Transform\hspace{0.3cm}{\ttfamily [protected]}}\label{classrob_collaborative_control_force_a497fcbda37f091a9c818b8318777d03f}
-\hypertarget{classrob_collaborative_control_force_a363c155f5ba571526aaccee56c2cde4d}{}\index{rob\+Collaborative\+Control\+Force@{rob\+Collaborative\+Control\+Force}!Right\+Clutch\+M\+S\+Offset@{Right\+Clutch\+M\+S\+Offset}}
-\index{Right\+Clutch\+M\+S\+Offset@{Right\+Clutch\+M\+S\+Offset}!rob\+Collaborative\+Control\+Force@{rob\+Collaborative\+Control\+Force}}
-\subsubsection[{Right\+Clutch\+M\+S\+Offset}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct3} rob\+Collaborative\+Control\+Force\+::\+Right\+Clutch\+M\+S\+Offset\hspace{0.3cm}{\ttfamily [protected]}}\label{classrob_collaborative_control_force_a363c155f5ba571526aaccee56c2cde4d}
-\hypertarget{classrob_collaborative_control_force_a17768d9a818c61def6a361462b707cf6}{}\index{rob\+Collaborative\+Control\+Force@{rob\+Collaborative\+Control\+Force}!Right\+Clutch\+Offset@{Right\+Clutch\+Offset}}
-\index{Right\+Clutch\+Offset@{Right\+Clutch\+Offset}!rob\+Collaborative\+Control\+Force@{rob\+Collaborative\+Control\+Force}}
-\subsubsection[{Right\+Clutch\+Offset}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct3} rob\+Collaborative\+Control\+Force\+::\+Right\+Clutch\+Offset\hspace{0.3cm}{\ttfamily [protected]}}\label{classrob_collaborative_control_force_a17768d9a818c61def6a361462b707cf6}
-\hypertarget{classrob_collaborative_control_force_a1f62f6c5fdf922b8cc003bfb39e9880f}{}\index{rob\+Collaborative\+Control\+Force@{rob\+Collaborative\+Control\+Force}!Workspace\+Offset@{Workspace\+Offset}}
-\index{Workspace\+Offset@{Workspace\+Offset}!rob\+Collaborative\+Control\+Force@{rob\+Collaborative\+Control\+Force}}
-\subsubsection[{Workspace\+Offset}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct3} rob\+Collaborative\+Control\+Force\+::\+Workspace\+Offset\hspace{0.3cm}{\ttfamily [protected]}}\label{classrob_collaborative_control_force_a1f62f6c5fdf922b8cc003bfb39e9880f}
+\hypertarget{classrob_collaborative_control_force_a13d552d3acfa1fabfe8abaf20a407296}{\index{rob\-Collaborative\-Control\-Force@{rob\-Collaborative\-Control\-Force}!Both\-Clutched@{Both\-Clutched}}
+\index{Both\-Clutched@{Both\-Clutched}!robCollaborativeControlForce@{rob\-Collaborative\-Control\-Force}}
+\subsubsection[{Both\-Clutched}]{\setlength{\rightskip}{0pt plus 5cm}bool rob\-Collaborative\-Control\-Force\-::\-Both\-Clutched\hspace{0.3cm}{\ttfamily [protected]}}}\label{classrob_collaborative_control_force_a13d552d3acfa1fabfe8abaf20a407296}
+\hypertarget{classrob_collaborative_control_force_aa808559bb22e7cd656ac4b68a65e5764}{\index{rob\-Collaborative\-Control\-Force@{rob\-Collaborative\-Control\-Force}!Clutch\-Done@{Clutch\-Done}}
+\index{Clutch\-Done@{Clutch\-Done}!robCollaborativeControlForce@{rob\-Collaborative\-Control\-Force}}
+\subsubsection[{Clutch\-Done}]{\setlength{\rightskip}{0pt plus 5cm}bool rob\-Collaborative\-Control\-Force\-::\-Clutch\-Done\hspace{0.3cm}{\ttfamily [protected]}}}\label{classrob_collaborative_control_force_aa808559bb22e7cd656ac4b68a65e5764}
+\hypertarget{classrob_collaborative_control_force_a0279832f2f45d721454f5d996e2a9d59}{\index{rob\-Collaborative\-Control\-Force@{rob\-Collaborative\-Control\-Force}!Clutch\-Mode@{Clutch\-Mode}}
+\index{Clutch\-Mode@{Clutch\-Mode}!robCollaborativeControlForce@{rob\-Collaborative\-Control\-Force}}
+\subsubsection[{Clutch\-Mode}]{\setlength{\rightskip}{0pt plus 5cm}int rob\-Collaborative\-Control\-Force\-::\-Clutch\-Mode\hspace{0.3cm}{\ttfamily [protected]}}}\label{classrob_collaborative_control_force_a0279832f2f45d721454f5d996e2a9d59}
+\hypertarget{classrob_collaborative_control_force_a31a925bae363d4b09bf137dd19f87d83}{\index{rob\-Collaborative\-Control\-Force@{rob\-Collaborative\-Control\-Force}!Clutch\-Offset@{Clutch\-Offset}}
+\index{Clutch\-Offset@{Clutch\-Offset}!robCollaborativeControlForce@{rob\-Collaborative\-Control\-Force}}
+\subsubsection[{Clutch\-Offset}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct3} rob\-Collaborative\-Control\-Force\-::\-Clutch\-Offset\hspace{0.3cm}{\ttfamily [protected]}}}\label{classrob_collaborative_control_force_a31a925bae363d4b09bf137dd19f87d83}
+\hypertarget{classrob_collaborative_control_force_a2d9cc27a4adca7e50fbc4758b01df8e2}{\index{rob\-Collaborative\-Control\-Force@{rob\-Collaborative\-Control\-Force}!Clutch\-Offset\-Add@{Clutch\-Offset\-Add}}
+\index{Clutch\-Offset\-Add@{Clutch\-Offset\-Add}!robCollaborativeControlForce@{rob\-Collaborative\-Control\-Force}}
+\subsubsection[{Clutch\-Offset\-Add}]{\setlength{\rightskip}{0pt plus 5cm}bool rob\-Collaborative\-Control\-Force\-::\-Clutch\-Offset\-Add\hspace{0.3cm}{\ttfamily [protected]}}}\label{classrob_collaborative_control_force_a2d9cc27a4adca7e50fbc4758b01df8e2}
+\hypertarget{classrob_collaborative_control_force_ab8c04f9f215c07c2ac5d94a781a0d4e8}{\index{rob\-Collaborative\-Control\-Force@{rob\-Collaborative\-Control\-Force}!Error@{Error}}
+\index{Error@{Error}!robCollaborativeControlForce@{rob\-Collaborative\-Control\-Force}}
+\subsubsection[{Error}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct3} rob\-Collaborative\-Control\-Force\-::\-Error\hspace{0.3cm}{\ttfamily [protected]}}}\label{classrob_collaborative_control_force_ab8c04f9f215c07c2ac5d94a781a0d4e8}
+\hypertarget{classrob_collaborative_control_force_ace463af128cf21a3f87a25f6edc25966}{\index{rob\-Collaborative\-Control\-Force@{rob\-Collaborative\-Control\-Force}!First\-Iteration@{First\-Iteration}}
+\index{First\-Iteration@{First\-Iteration}!robCollaborativeControlForce@{rob\-Collaborative\-Control\-Force}}
+\subsubsection[{First\-Iteration}]{\setlength{\rightskip}{0pt plus 5cm}bool rob\-Collaborative\-Control\-Force\-::\-First\-Iteration\hspace{0.3cm}{\ttfamily [protected]}}}\label{classrob_collaborative_control_force_ace463af128cf21a3f87a25f6edc25966}
+\hypertarget{classrob_collaborative_control_force_a94f22c40d72bff7775b4d3c913bdb3dc}{\index{rob\-Collaborative\-Control\-Force@{rob\-Collaborative\-Control\-Force}!Force\-Feed\-Norm\-Master@{Force\-Feed\-Norm\-Master}}
+\index{Force\-Feed\-Norm\-Master@{Force\-Feed\-Norm\-Master}!robCollaborativeControlForce@{rob\-Collaborative\-Control\-Force}}
+\subsubsection[{Force\-Feed\-Norm\-Master}]{\setlength{\rightskip}{0pt plus 5cm}double rob\-Collaborative\-Control\-Force\-::\-Force\-Feed\-Norm\-Master\hspace{0.3cm}{\ttfamily [protected]}}}\label{classrob_collaborative_control_force_a94f22c40d72bff7775b4d3c913bdb3dc}
+\hypertarget{classrob_collaborative_control_force_aeebfddb252f5a065dd7ca46430ff5f0e}{\index{rob\-Collaborative\-Control\-Force@{rob\-Collaborative\-Control\-Force}!Force\-Feed\-Norm\-Slave@{Force\-Feed\-Norm\-Slave}}
+\index{Force\-Feed\-Norm\-Slave@{Force\-Feed\-Norm\-Slave}!robCollaborativeControlForce@{rob\-Collaborative\-Control\-Force}}
+\subsubsection[{Force\-Feed\-Norm\-Slave}]{\setlength{\rightskip}{0pt plus 5cm}double rob\-Collaborative\-Control\-Force\-::\-Force\-Feed\-Norm\-Slave\hspace{0.3cm}{\ttfamily [protected]}}}\label{classrob_collaborative_control_force_aeebfddb252f5a065dd7ca46430ff5f0e}
+\hypertarget{classrob_collaborative_control_force_a27f8a903061bb6dc1ee9626ed9b75cd9}{\index{rob\-Collaborative\-Control\-Force@{rob\-Collaborative\-Control\-Force}!Left\-Clutch\-M\-S\-Offset@{Left\-Clutch\-M\-S\-Offset}}
+\index{Left\-Clutch\-M\-S\-Offset@{Left\-Clutch\-M\-S\-Offset}!robCollaborativeControlForce@{rob\-Collaborative\-Control\-Force}}
+\subsubsection[{Left\-Clutch\-M\-S\-Offset}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct3} rob\-Collaborative\-Control\-Force\-::\-Left\-Clutch\-M\-S\-Offset\hspace{0.3cm}{\ttfamily [protected]}}}\label{classrob_collaborative_control_force_a27f8a903061bb6dc1ee9626ed9b75cd9}
+\hypertarget{classrob_collaborative_control_force_a082a71cfbe40c56643c1a5c424a842ef}{\index{rob\-Collaborative\-Control\-Force@{rob\-Collaborative\-Control\-Force}!Left\-Clutch\-Offset@{Left\-Clutch\-Offset}}
+\index{Left\-Clutch\-Offset@{Left\-Clutch\-Offset}!robCollaborativeControlForce@{rob\-Collaborative\-Control\-Force}}
+\subsubsection[{Left\-Clutch\-Offset}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct3} rob\-Collaborative\-Control\-Force\-::\-Left\-Clutch\-Offset\hspace{0.3cm}{\ttfamily [protected]}}}\label{classrob_collaborative_control_force_a082a71cfbe40c56643c1a5c424a842ef}
+\hypertarget{classrob_collaborative_control_force_a6bd0a1d18756a41a14f2e9323a515b53}{\index{rob\-Collaborative\-Control\-Force@{rob\-Collaborative\-Control\-Force}!p1\-Clutched@{p1\-Clutched}}
+\index{p1\-Clutched@{p1\-Clutched}!robCollaborativeControlForce@{rob\-Collaborative\-Control\-Force}}
+\subsubsection[{p1\-Clutched}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct3} rob\-Collaborative\-Control\-Force\-::p1\-Clutched\hspace{0.3cm}{\ttfamily [protected]}}}\label{classrob_collaborative_control_force_a6bd0a1d18756a41a14f2e9323a515b53}
+\hypertarget{classrob_collaborative_control_force_ae2e27fde662926fb3fdbe13eb4fd5777}{\index{rob\-Collaborative\-Control\-Force@{rob\-Collaborative\-Control\-Force}!p1\-Goal@{p1\-Goal}}
+\index{p1\-Goal@{p1\-Goal}!robCollaborativeControlForce@{rob\-Collaborative\-Control\-Force}}
+\subsubsection[{p1\-Goal}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct3} rob\-Collaborative\-Control\-Force\-::p1\-Goal\hspace{0.3cm}{\ttfamily [protected]}}}\label{classrob_collaborative_control_force_ae2e27fde662926fb3fdbe13eb4fd5777}
+\hypertarget{classrob_collaborative_control_force_a19965ecb3120c472087ff0278c75e154}{\index{rob\-Collaborative\-Control\-Force@{rob\-Collaborative\-Control\-Force}!p1\-Last@{p1\-Last}}
+\index{p1\-Last@{p1\-Last}!robCollaborativeControlForce@{rob\-Collaborative\-Control\-Force}}
+\subsubsection[{p1\-Last}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct3} rob\-Collaborative\-Control\-Force\-::p1\-Last\hspace{0.3cm}{\ttfamily [protected]}}}\label{classrob_collaborative_control_force_a19965ecb3120c472087ff0278c75e154}
+\hypertarget{classrob_collaborative_control_force_a49860f4f2db44435dbbec541cef7e37e}{\index{rob\-Collaborative\-Control\-Force@{rob\-Collaborative\-Control\-Force}!p1\-R@{p1\-R}}
+\index{p1\-R@{p1\-R}!robCollaborativeControlForce@{rob\-Collaborative\-Control\-Force}}
+\subsubsection[{p1\-R}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct3} rob\-Collaborative\-Control\-Force\-::p1\-R\hspace{0.3cm}{\ttfamily [protected]}}}\label{classrob_collaborative_control_force_a49860f4f2db44435dbbec541cef7e37e}
+\hypertarget{classrob_collaborative_control_force_a1c7db8dd89558a953705da01cedbd16a}{\index{rob\-Collaborative\-Control\-Force@{rob\-Collaborative\-Control\-Force}!p1\-R\-Goal@{p1\-R\-Goal}}
+\index{p1\-R\-Goal@{p1\-R\-Goal}!robCollaborativeControlForce@{rob\-Collaborative\-Control\-Force}}
+\subsubsection[{p1\-R\-Goal}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct3} rob\-Collaborative\-Control\-Force\-::p1\-R\-Goal\hspace{0.3cm}{\ttfamily [protected]}}}\label{classrob_collaborative_control_force_a1c7db8dd89558a953705da01cedbd16a}
+\hypertarget{classrob_collaborative_control_force_a302b53b70868cf70c561e8019e277132}{\index{rob\-Collaborative\-Control\-Force@{rob\-Collaborative\-Control\-Force}!p2\-Clutched@{p2\-Clutched}}
+\index{p2\-Clutched@{p2\-Clutched}!robCollaborativeControlForce@{rob\-Collaborative\-Control\-Force}}
+\subsubsection[{p2\-Clutched}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct3} rob\-Collaborative\-Control\-Force\-::p2\-Clutched\hspace{0.3cm}{\ttfamily [protected]}}}\label{classrob_collaborative_control_force_a302b53b70868cf70c561e8019e277132}
+\hypertarget{classrob_collaborative_control_force_a4f7c687e483eaf6473ee291c43f4c883}{\index{rob\-Collaborative\-Control\-Force@{rob\-Collaborative\-Control\-Force}!p2\-Goal@{p2\-Goal}}
+\index{p2\-Goal@{p2\-Goal}!robCollaborativeControlForce@{rob\-Collaborative\-Control\-Force}}
+\subsubsection[{p2\-Goal}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct3} rob\-Collaborative\-Control\-Force\-::p2\-Goal\hspace{0.3cm}{\ttfamily [protected]}}}\label{classrob_collaborative_control_force_a4f7c687e483eaf6473ee291c43f4c883}
+\hypertarget{classrob_collaborative_control_force_a8dbb8847a1145320e2a550370e993e23}{\index{rob\-Collaborative\-Control\-Force@{rob\-Collaborative\-Control\-Force}!p2\-Last@{p2\-Last}}
+\index{p2\-Last@{p2\-Last}!robCollaborativeControlForce@{rob\-Collaborative\-Control\-Force}}
+\subsubsection[{p2\-Last}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct3} rob\-Collaborative\-Control\-Force\-::p2\-Last\hspace{0.3cm}{\ttfamily [protected]}}}\label{classrob_collaborative_control_force_a8dbb8847a1145320e2a550370e993e23}
+\hypertarget{classrob_collaborative_control_force_aa54560cb9b8c5921c8ba385a7776be8a}{\index{rob\-Collaborative\-Control\-Force@{rob\-Collaborative\-Control\-Force}!p2\-R@{p2\-R}}
+\index{p2\-R@{p2\-R}!robCollaborativeControlForce@{rob\-Collaborative\-Control\-Force}}
+\subsubsection[{p2\-R}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct3} rob\-Collaborative\-Control\-Force\-::p2\-R\hspace{0.3cm}{\ttfamily [protected]}}}\label{classrob_collaborative_control_force_aa54560cb9b8c5921c8ba385a7776be8a}
+\hypertarget{classrob_collaborative_control_force_affe7e8f4fbf3714ff9a72df52048339e}{\index{rob\-Collaborative\-Control\-Force@{rob\-Collaborative\-Control\-Force}!p2\-R\-Goal@{p2\-R\-Goal}}
+\index{p2\-R\-Goal@{p2\-R\-Goal}!robCollaborativeControlForce@{rob\-Collaborative\-Control\-Force}}
+\subsubsection[{p2\-R\-Goal}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct3} rob\-Collaborative\-Control\-Force\-::p2\-R\-Goal\hspace{0.3cm}{\ttfamily [protected]}}}\label{classrob_collaborative_control_force_affe7e8f4fbf3714ff9a72df52048339e}
+\hypertarget{classrob_collaborative_control_force_a497fcbda37f091a9c818b8318777d03f}{\index{rob\-Collaborative\-Control\-Force@{rob\-Collaborative\-Control\-Force}!Relative\-Transform@{Relative\-Transform}}
+\index{Relative\-Transform@{Relative\-Transform}!robCollaborativeControlForce@{rob\-Collaborative\-Control\-Force}}
+\subsubsection[{Relative\-Transform}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\-Frm3} rob\-Collaborative\-Control\-Force\-::\-Relative\-Transform\hspace{0.3cm}{\ttfamily [protected]}}}\label{classrob_collaborative_control_force_a497fcbda37f091a9c818b8318777d03f}
+\hypertarget{classrob_collaborative_control_force_a363c155f5ba571526aaccee56c2cde4d}{\index{rob\-Collaborative\-Control\-Force@{rob\-Collaborative\-Control\-Force}!Right\-Clutch\-M\-S\-Offset@{Right\-Clutch\-M\-S\-Offset}}
+\index{Right\-Clutch\-M\-S\-Offset@{Right\-Clutch\-M\-S\-Offset}!robCollaborativeControlForce@{rob\-Collaborative\-Control\-Force}}
+\subsubsection[{Right\-Clutch\-M\-S\-Offset}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct3} rob\-Collaborative\-Control\-Force\-::\-Right\-Clutch\-M\-S\-Offset\hspace{0.3cm}{\ttfamily [protected]}}}\label{classrob_collaborative_control_force_a363c155f5ba571526aaccee56c2cde4d}
+\hypertarget{classrob_collaborative_control_force_a17768d9a818c61def6a361462b707cf6}{\index{rob\-Collaborative\-Control\-Force@{rob\-Collaborative\-Control\-Force}!Right\-Clutch\-Offset@{Right\-Clutch\-Offset}}
+\index{Right\-Clutch\-Offset@{Right\-Clutch\-Offset}!robCollaborativeControlForce@{rob\-Collaborative\-Control\-Force}}
+\subsubsection[{Right\-Clutch\-Offset}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct3} rob\-Collaborative\-Control\-Force\-::\-Right\-Clutch\-Offset\hspace{0.3cm}{\ttfamily [protected]}}}\label{classrob_collaborative_control_force_a17768d9a818c61def6a361462b707cf6}
+\hypertarget{classrob_collaborative_control_force_a1f62f6c5fdf922b8cc003bfb39e9880f}{\index{rob\-Collaborative\-Control\-Force@{rob\-Collaborative\-Control\-Force}!Workspace\-Offset@{Workspace\-Offset}}
+\index{Workspace\-Offset@{Workspace\-Offset}!robCollaborativeControlForce@{rob\-Collaborative\-Control\-Force}}
+\subsubsection[{Workspace\-Offset}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct3} rob\-Collaborative\-Control\-Force\-::\-Workspace\-Offset\hspace{0.3cm}{\ttfamily [protected]}}}\label{classrob_collaborative_control_force_a1f62f6c5fdf922b8cc003bfb39e9880f}
 Parameters being used by the Update function for teleoperation
 
 vct3 declarations include the offsets for the workspace, clutch overall, clutch left and right, and the goals for first and second device.
 
 Other declarations(bool, double) are mostly used to manipulate the above mentioned data, such as temporary booleans, scale factor, force limit, etc. 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
 \item 
-/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Robot/\hyperlink{rob_collaborative_control_force_8h}{rob\+Collaborative\+Control\+Force.\+h}\end{DoxyCompactItemize}
+/home/adeguet1/catkin\-\_\-ws/src/cisst-\/saw/cisst/cisst\-Robot/\hyperlink{rob_collaborative_control_force_8h}{rob\-Collaborative\-Control\-Force.\-h}\end{DoxyCompactItemize}

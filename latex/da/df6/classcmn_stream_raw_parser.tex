@@ -1,32 +1,33 @@
-\hypertarget{classcmn_stream_raw_parser}{}\section{cmn\+Stream\+Raw\+Parser Class Reference}
-\label{classcmn_stream_raw_parser}\index{cmn\+Stream\+Raw\+Parser@{cmn\+Stream\+Raw\+Parser}}
+\hypertarget{classcmn_stream_raw_parser}{\section{cmn\-Stream\-Raw\-Parser Class Reference}
+\label{classcmn_stream_raw_parser}\index{cmn\-Stream\-Raw\-Parser@{cmn\-Stream\-Raw\-Parser}}
+}
 
 
-{\ttfamily \#include $<$cmn\+Stream\+Raw\+Parser.\+h$>$}
+{\ttfamily \#include $<$cmn\-Stream\-Raw\-Parser.\-h$>$}
 
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classcmn_stream_raw_parser_a17a4741c2c4b13d84549b7f182fc4858}{cmn\+Stream\+Raw\+Parser} ()
+\hyperlink{classcmn_stream_raw_parser_a17a4741c2c4b13d84549b7f182fc4858}{cmn\-Stream\-Raw\-Parser} ()
 \item 
-\hyperlink{classcmn_stream_raw_parser_afe4a08697751aa20fe0a7a91ce8cb917}{$\sim$cmn\+Stream\+Raw\+Parser} ()
+\hyperlink{classcmn_stream_raw_parser_afe4a08697751aa20fe0a7a91ce8cb917}{$\sim$cmn\-Stream\-Raw\-Parser} ()
 \item 
-{\footnotesize template$<$class \+\_\+element\+Type $>$ }\\bool \hyperlink{classcmn_stream_raw_parser_a85682f38234f9f9c9c452240511f52ba}{Add\+Entry} (const std\+::string \&name, \+\_\+element\+Type \&data, char delim= \textquotesingle{} \textquotesingle{}, bool req=true)
+{\footnotesize template$<$class \-\_\-element\-Type $>$ }\\bool \hyperlink{classcmn_stream_raw_parser_a85682f38234f9f9c9c452240511f52ba}{Add\-Entry} (const std\-::string \&name, \-\_\-element\-Type \&data, char delim= ' ', bool req=true)
 \item 
-{\footnotesize template$<$class \+\_\+element\+Type $>$ }\\bool \hyperlink{classcmn_stream_raw_parser_a6fd698505c5456edf6659d2eb3c7525c}{Add\+Entry\+Streamable} (const std\+::string \&name, \+\_\+element\+Type \&data, bool req=true)
+{\footnotesize template$<$class \-\_\-element\-Type $>$ }\\bool \hyperlink{classcmn_stream_raw_parser_a6fd698505c5456edf6659d2eb3c7525c}{Add\-Entry\-Streamable} (const std\-::string \&name, \-\_\-element\-Type \&data, bool req=true)
 \item 
-void \hyperlink{classcmn_stream_raw_parser_a88730a1b1051f68bf00fade19bef41cf}{Set\+All\+Valid} (bool val=true)
+void \hyperlink{classcmn_stream_raw_parser_a88730a1b1051f68bf00fade19bef41cf}{Set\-All\-Valid} (bool val=true)
 \item 
-bool \hyperlink{classcmn_stream_raw_parser_aa414a151c05b00e73c20d1ed13c94d7a}{Parse} (std\+::istream \&input\+Stream)
+bool \hyperlink{classcmn_stream_raw_parser_aa414a151c05b00e73c20d1ed13c94d7a}{Parse} (std\-::istream \&input\-Stream)
 \item 
-bool \hyperlink{classcmn_stream_raw_parser_a5fb2061460327342e5a9b772272bccec}{Is\+Valid} (const std\+::string \&name) const 
+bool \hyperlink{classcmn_stream_raw_parser_a5fb2061460327342e5a9b772272bccec}{Is\-Valid} (const std\-::string \&name) const 
 \item 
-void \hyperlink{classcmn_stream_raw_parser_a34cc22ae5fb87be3563dbce530bc6e1d}{To\+Stream} (std\+::ostream \&output\+Stream) const 
+void \hyperlink{classcmn_stream_raw_parser_a34cc22ae5fb87be3563dbce530bc6e1d}{To\-Stream} (std\-::ostream \&output\-Stream) const 
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-\hyperlink{classcmn_stream_raw_parser}{cmn\+Stream\+Raw\+Parser} provides the ability to parse \{keyword, value\} pairs from a stream. For example, consider the case where we have the following configuration variables\+:
+\hyperlink{classcmn_stream_raw_parser}{cmn\-Stream\-Raw\-Parser} provides the ability to parse \{keyword, value\} pairs from a stream. For example, consider the case where we have the following configuration variables\-:
 
 
 \begin{DoxyCode}
@@ -36,7 +37,7 @@ void \hyperlink{classcmn_stream_raw_parser_a34cc22ae5fb87be3563dbce530bc6e1d}{To
 \end{DoxyCode}
 
 
-These variables can be initialized from the following input file (called \char`\"{}test.\+txt\char`\"{})\+:
+These variables can be initialized from the following input file (called \char`\"{}test.\-txt\char`\"{})\-:
 
 
 \begin{DoxyCode}
@@ -47,7 +48,7 @@ V2 4,5,6
 \end{DoxyCode}
 
 
-The code to do this is as follows\+:
+The code to do this is as follows\-:
 
 
 \begin{DoxyCode}
@@ -63,7 +64,7 @@ std::ifstream file(\textcolor{stringliteral}{"test.txt"});
 
 If successful, the variables S, V1, V2, and D will be assigned the values from the file. Note that the variable names in the code do not have to be the same as the string names (in this example, the variables names are lower case and the strings are upper case).
 
-For debugging (or to recreate the text file) call\+:
+For debugging (or to recreate the text file) call\-:
 
 
 \begin{DoxyCode}
@@ -71,9 +72,9 @@ Config.\hyperlink{classcmn_stream_raw_parser_a34cc22ae5fb87be3563dbce530bc6e1d}{
 \end{DoxyCode}
 
 
-Note that the Add\+Entry method is templated, so that any data type can be used, as long as its \hyperlink{classcmn_data}{cmn\+Data} class is defined (for the De\+Serialize\+Text and Serialize\+Text methods). Similarly, the Add\+Entry\+Streamable method is templated, so that any data type can be used that defines the stream in ($>$$>$) and stream out ($<$$<$) operators.
+Note that the Add\-Entry method is templated, so that any data type can be used, as long as its \hyperlink{classcmn_data}{cmn\-Data} class is defined (for the De\-Serialize\-Text and Serialize\-Text methods). Similarly, the Add\-Entry\-Streamable method is templated, so that any data type can be used that defines the stream in ($>$$>$) and stream out ($<$$<$) operators.
 
-Current limitations\+:
+Current limitations\-:
 
 
 \begin{DoxyItemize}
@@ -82,33 +83,33 @@ Current limitations\+:
 \end{DoxyItemize}
 
 \subsection{Constructor \& Destructor Documentation}
-\hypertarget{classcmn_stream_raw_parser_a17a4741c2c4b13d84549b7f182fc4858}{}\index{cmn\+Stream\+Raw\+Parser@{cmn\+Stream\+Raw\+Parser}!cmn\+Stream\+Raw\+Parser@{cmn\+Stream\+Raw\+Parser}}
-\index{cmn\+Stream\+Raw\+Parser@{cmn\+Stream\+Raw\+Parser}!cmn\+Stream\+Raw\+Parser@{cmn\+Stream\+Raw\+Parser}}
-\subsubsection[{cmn\+Stream\+Raw\+Parser}]{\setlength{\rightskip}{0pt plus 5cm}cmn\+Stream\+Raw\+Parser\+::cmn\+Stream\+Raw\+Parser (
+\hypertarget{classcmn_stream_raw_parser_a17a4741c2c4b13d84549b7f182fc4858}{\index{cmn\-Stream\-Raw\-Parser@{cmn\-Stream\-Raw\-Parser}!cmn\-Stream\-Raw\-Parser@{cmn\-Stream\-Raw\-Parser}}
+\index{cmn\-Stream\-Raw\-Parser@{cmn\-Stream\-Raw\-Parser}!cmnStreamRawParser@{cmn\-Stream\-Raw\-Parser}}
+\subsubsection[{cmn\-Stream\-Raw\-Parser}]{\setlength{\rightskip}{0pt plus 5cm}cmn\-Stream\-Raw\-Parser\-::cmn\-Stream\-Raw\-Parser (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\label{classcmn_stream_raw_parser_a17a4741c2c4b13d84549b7f182fc4858}
-\hypertarget{classcmn_stream_raw_parser_afe4a08697751aa20fe0a7a91ce8cb917}{}\index{cmn\+Stream\+Raw\+Parser@{cmn\+Stream\+Raw\+Parser}!````~cmn\+Stream\+Raw\+Parser@{$\sim$cmn\+Stream\+Raw\+Parser}}
-\index{````~cmn\+Stream\+Raw\+Parser@{$\sim$cmn\+Stream\+Raw\+Parser}!cmn\+Stream\+Raw\+Parser@{cmn\+Stream\+Raw\+Parser}}
-\subsubsection[{$\sim$cmn\+Stream\+Raw\+Parser}]{\setlength{\rightskip}{0pt plus 5cm}cmn\+Stream\+Raw\+Parser\+::$\sim$cmn\+Stream\+Raw\+Parser (
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcmn_stream_raw_parser_a17a4741c2c4b13d84549b7f182fc4858}
+\hypertarget{classcmn_stream_raw_parser_afe4a08697751aa20fe0a7a91ce8cb917}{\index{cmn\-Stream\-Raw\-Parser@{cmn\-Stream\-Raw\-Parser}!$\sim$cmn\-Stream\-Raw\-Parser@{$\sim$cmn\-Stream\-Raw\-Parser}}
+\index{$\sim$cmn\-Stream\-Raw\-Parser@{$\sim$cmn\-Stream\-Raw\-Parser}!cmnStreamRawParser@{cmn\-Stream\-Raw\-Parser}}
+\subsubsection[{$\sim$cmn\-Stream\-Raw\-Parser}]{\setlength{\rightskip}{0pt plus 5cm}cmn\-Stream\-Raw\-Parser\-::$\sim$cmn\-Stream\-Raw\-Parser (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}\label{classcmn_stream_raw_parser_afe4a08697751aa20fe0a7a91ce8cb917}
+)}}\label{classcmn_stream_raw_parser_afe4a08697751aa20fe0a7a91ce8cb917}
 
 
 \subsection{Member Function Documentation}
-\hypertarget{classcmn_stream_raw_parser_a85682f38234f9f9c9c452240511f52ba}{}\index{cmn\+Stream\+Raw\+Parser@{cmn\+Stream\+Raw\+Parser}!Add\+Entry@{Add\+Entry}}
-\index{Add\+Entry@{Add\+Entry}!cmn\+Stream\+Raw\+Parser@{cmn\+Stream\+Raw\+Parser}}
-\subsubsection[{Add\+Entry}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type $>$ bool cmn\+Stream\+Raw\+Parser\+::\+Add\+Entry (
+\hypertarget{classcmn_stream_raw_parser_a85682f38234f9f9c9c452240511f52ba}{\index{cmn\-Stream\-Raw\-Parser@{cmn\-Stream\-Raw\-Parser}!Add\-Entry@{Add\-Entry}}
+\index{Add\-Entry@{Add\-Entry}!cmnStreamRawParser@{cmn\-Stream\-Raw\-Parser}}
+\subsubsection[{Add\-Entry}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-element\-Type $>$ bool cmn\-Stream\-Raw\-Parser\-::\-Add\-Entry (
 \begin{DoxyParamCaption}
-\item[{const std\+::string \&}]{name, }
-\item[{\+\_\+element\+Type \&}]{data, }
-\item[{char}]{delim = {\ttfamily \textquotesingle{}~\textquotesingle{}}, }
+\item[{const std\-::string \&}]{name, }
+\item[{\-\_\-element\-Type \&}]{data, }
+\item[{char}]{delim = {\ttfamily '~'}, }
 \item[{bool}]{req = {\ttfamily true}}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\label{classcmn_stream_raw_parser_a85682f38234f9f9c9c452240511f52ba}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcmn_stream_raw_parser_a85682f38234f9f9c9c452240511f52ba}
 Add a \{keyword,value\} pair to be parsed from the input stream. 
 \begin{DoxyParams}{Parameters}
 {\em name} & Variable name (key) \\
@@ -119,18 +120,18 @@ Add a \{keyword,value\} pair to be parsed from the input stream.
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-true if successful; false if not (e.\+g., duplicate entry) 
+true if successful; false if not (e.\-g., duplicate entry) 
 \end{DoxyReturn}
-\hypertarget{classcmn_stream_raw_parser_a6fd698505c5456edf6659d2eb3c7525c}{}\index{cmn\+Stream\+Raw\+Parser@{cmn\+Stream\+Raw\+Parser}!Add\+Entry\+Streamable@{Add\+Entry\+Streamable}}
-\index{Add\+Entry\+Streamable@{Add\+Entry\+Streamable}!cmn\+Stream\+Raw\+Parser@{cmn\+Stream\+Raw\+Parser}}
-\subsubsection[{Add\+Entry\+Streamable}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type $>$ bool cmn\+Stream\+Raw\+Parser\+::\+Add\+Entry\+Streamable (
+\hypertarget{classcmn_stream_raw_parser_a6fd698505c5456edf6659d2eb3c7525c}{\index{cmn\-Stream\-Raw\-Parser@{cmn\-Stream\-Raw\-Parser}!Add\-Entry\-Streamable@{Add\-Entry\-Streamable}}
+\index{Add\-Entry\-Streamable@{Add\-Entry\-Streamable}!cmnStreamRawParser@{cmn\-Stream\-Raw\-Parser}}
+\subsubsection[{Add\-Entry\-Streamable}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-element\-Type $>$ bool cmn\-Stream\-Raw\-Parser\-::\-Add\-Entry\-Streamable (
 \begin{DoxyParamCaption}
-\item[{const std\+::string \&}]{name, }
-\item[{\+\_\+element\+Type \&}]{data, }
+\item[{const std\-::string \&}]{name, }
+\item[{\-\_\-element\-Type \&}]{data, }
 \item[{bool}]{req = {\ttfamily true}}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\label{classcmn_stream_raw_parser_a6fd698505c5456edf6659d2eb3c7525c}
-Add a \{keyword,value\} pair to be parsed from the input stream. This method is for data types where the stream operators ($<$$<$ and $>$$>$) can be used; in particular, for primitive C data types (e.\+g., int, double) and std\+::string. 
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcmn_stream_raw_parser_a6fd698505c5456edf6659d2eb3c7525c}
+Add a \{keyword,value\} pair to be parsed from the input stream. This method is for data types where the stream operators ($<$$<$ and $>$$>$) can be used; in particular, for primitive C data types (e.\-g., int, double) and std\-::string. 
 \begin{DoxyParams}{Parameters}
 {\em name} & Variable name (key) \\
 \hline
@@ -138,38 +139,38 @@ Add a \{keyword,value\} pair to be parsed from the input stream. This method is 
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-true if successful; false if not (e.\+g., duplicate entry) 
+true if successful; false if not (e.\-g., duplicate entry) 
 \end{DoxyReturn}
-\hypertarget{classcmn_stream_raw_parser_a5fb2061460327342e5a9b772272bccec}{}\index{cmn\+Stream\+Raw\+Parser@{cmn\+Stream\+Raw\+Parser}!Is\+Valid@{Is\+Valid}}
-\index{Is\+Valid@{Is\+Valid}!cmn\+Stream\+Raw\+Parser@{cmn\+Stream\+Raw\+Parser}}
-\subsubsection[{Is\+Valid}]{\setlength{\rightskip}{0pt plus 5cm}bool cmn\+Stream\+Raw\+Parser\+::\+Is\+Valid (
+\hypertarget{classcmn_stream_raw_parser_a5fb2061460327342e5a9b772272bccec}{\index{cmn\-Stream\-Raw\-Parser@{cmn\-Stream\-Raw\-Parser}!Is\-Valid@{Is\-Valid}}
+\index{Is\-Valid@{Is\-Valid}!cmnStreamRawParser@{cmn\-Stream\-Raw\-Parser}}
+\subsubsection[{Is\-Valid}]{\setlength{\rightskip}{0pt plus 5cm}bool cmn\-Stream\-Raw\-Parser\-::\-Is\-Valid (
 \begin{DoxyParamCaption}
-\item[{const std\+::string \&}]{name}
+\item[{const std\-::string \&}]{name}
 \end{DoxyParamCaption}
-) const}\label{classcmn_stream_raw_parser_a5fb2061460327342e5a9b772272bccec}
-Returns true if valid data was parsed. \hypertarget{classcmn_stream_raw_parser_aa414a151c05b00e73c20d1ed13c94d7a}{}\index{cmn\+Stream\+Raw\+Parser@{cmn\+Stream\+Raw\+Parser}!Parse@{Parse}}
-\index{Parse@{Parse}!cmn\+Stream\+Raw\+Parser@{cmn\+Stream\+Raw\+Parser}}
-\subsubsection[{Parse}]{\setlength{\rightskip}{0pt plus 5cm}bool cmn\+Stream\+Raw\+Parser\+::\+Parse (
+) const}}\label{classcmn_stream_raw_parser_a5fb2061460327342e5a9b772272bccec}
+Returns true if valid data was parsed. \hypertarget{classcmn_stream_raw_parser_aa414a151c05b00e73c20d1ed13c94d7a}{\index{cmn\-Stream\-Raw\-Parser@{cmn\-Stream\-Raw\-Parser}!Parse@{Parse}}
+\index{Parse@{Parse}!cmnStreamRawParser@{cmn\-Stream\-Raw\-Parser}}
+\subsubsection[{Parse}]{\setlength{\rightskip}{0pt plus 5cm}bool cmn\-Stream\-Raw\-Parser\-::\-Parse (
 \begin{DoxyParamCaption}
-\item[{std\+::istream \&}]{input\+Stream}
+\item[{std\-::istream \&}]{input\-Stream}
 \end{DoxyParamCaption}
-)}\label{classcmn_stream_raw_parser_aa414a151c05b00e73c20d1ed13c94d7a}
-Parse the input stream, extracting the data for all keywords that are found. Returns true if valid data extracted for all required keywords. \hypertarget{classcmn_stream_raw_parser_a88730a1b1051f68bf00fade19bef41cf}{}\index{cmn\+Stream\+Raw\+Parser@{cmn\+Stream\+Raw\+Parser}!Set\+All\+Valid@{Set\+All\+Valid}}
-\index{Set\+All\+Valid@{Set\+All\+Valid}!cmn\+Stream\+Raw\+Parser@{cmn\+Stream\+Raw\+Parser}}
-\subsubsection[{Set\+All\+Valid}]{\setlength{\rightskip}{0pt plus 5cm}void cmn\+Stream\+Raw\+Parser\+::\+Set\+All\+Valid (
+)}}\label{classcmn_stream_raw_parser_aa414a151c05b00e73c20d1ed13c94d7a}
+Parse the input stream, extracting the data for all keywords that are found. Returns true if valid data extracted for all required keywords. \hypertarget{classcmn_stream_raw_parser_a88730a1b1051f68bf00fade19bef41cf}{\index{cmn\-Stream\-Raw\-Parser@{cmn\-Stream\-Raw\-Parser}!Set\-All\-Valid@{Set\-All\-Valid}}
+\index{Set\-All\-Valid@{Set\-All\-Valid}!cmnStreamRawParser@{cmn\-Stream\-Raw\-Parser}}
+\subsubsection[{Set\-All\-Valid}]{\setlength{\rightskip}{0pt plus 5cm}void cmn\-Stream\-Raw\-Parser\-::\-Set\-All\-Valid (
 \begin{DoxyParamCaption}
 \item[{bool}]{val = {\ttfamily true}}
 \end{DoxyParamCaption}
-)}\label{classcmn_stream_raw_parser_a88730a1b1051f68bf00fade19bef41cf}
-Set all entries valid or invalid. \hypertarget{classcmn_stream_raw_parser_a34cc22ae5fb87be3563dbce530bc6e1d}{}\index{cmn\+Stream\+Raw\+Parser@{cmn\+Stream\+Raw\+Parser}!To\+Stream@{To\+Stream}}
-\index{To\+Stream@{To\+Stream}!cmn\+Stream\+Raw\+Parser@{cmn\+Stream\+Raw\+Parser}}
-\subsubsection[{To\+Stream}]{\setlength{\rightskip}{0pt plus 5cm}void cmn\+Stream\+Raw\+Parser\+::\+To\+Stream (
+)}}\label{classcmn_stream_raw_parser_a88730a1b1051f68bf00fade19bef41cf}
+Set all entries valid or invalid. \hypertarget{classcmn_stream_raw_parser_a34cc22ae5fb87be3563dbce530bc6e1d}{\index{cmn\-Stream\-Raw\-Parser@{cmn\-Stream\-Raw\-Parser}!To\-Stream@{To\-Stream}}
+\index{To\-Stream@{To\-Stream}!cmnStreamRawParser@{cmn\-Stream\-Raw\-Parser}}
+\subsubsection[{To\-Stream}]{\setlength{\rightskip}{0pt plus 5cm}void cmn\-Stream\-Raw\-Parser\-::\-To\-Stream (
 \begin{DoxyParamCaption}
-\item[{std\+::ostream \&}]{output\+Stream}
+\item[{std\-::ostream \&}]{output\-Stream}
 \end{DoxyParamCaption}
-) const}\label{classcmn_stream_raw_parser_a34cc22ae5fb87be3563dbce530bc6e1d}
+) const}}\label{classcmn_stream_raw_parser_a34cc22ae5fb87be3563dbce530bc6e1d}
 Write all \{keyword,value\} pairs to the output stream. If valid data was not parsed, will write \char`\"{}(invalid)\char`\"{}. 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
 \item 
-/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Common/\hyperlink{cmn_stream_raw_parser_8h}{cmn\+Stream\+Raw\+Parser.\+h}\end{DoxyCompactItemize}
+/home/adeguet1/catkin\-\_\-ws/src/cisst-\/saw/cisst/cisst\-Common/\hyperlink{cmn_stream_raw_parser_8h}{cmn\-Stream\-Raw\-Parser.\-h}\end{DoxyCompactItemize}

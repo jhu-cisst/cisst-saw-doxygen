@@ -1,189 +1,190 @@
-\hypertarget{classsvl_image_i_o}{}\section{svl\+Image\+I\+O Class Reference}
-\label{classsvl_image_i_o}\index{svl\+Image\+I\+O@{svl\+Image\+I\+O}}
+\hypertarget{classsvl_image_i_o}{\section{svl\-Image\-I\-O Class Reference}
+\label{classsvl_image_i_o}\index{svl\-Image\-I\-O@{svl\-Image\-I\-O}}
+}
 
 
-{\ttfamily \#include $<$svl\+Image\+I\+O.\+h$>$}
+{\ttfamily \#include $<$svl\-Image\-I\-O.\-h$>$}
 
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classsvl_image_i_o_a37add86266f1dc348291619e3116efb9}{$\sim$svl\+Image\+I\+O} ()
+\hyperlink{classsvl_image_i_o_a37add86266f1dc348291619e3116efb9}{$\sim$svl\-Image\-I\-O} ()
 \end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static int \hyperlink{classsvl_image_i_o_abb7a293f4b39b2302ccba01657e4eec0}{Get\+Extension} (const std\+::string \&filename, std\+::string \&extension)
+static int \hyperlink{classsvl_image_i_o_abb7a293f4b39b2302ccba01657e4eec0}{Get\-Extension} (const std\-::string \&filename, std\-::string \&extension)
 \item 
-static \hyperlink{classsvl_image_codec_base}{svl\+Image\+Codec\+Base} $\ast$ \hyperlink{classsvl_image_i_o_ae36e26b8aa46650cc3ea3ca0655d70b7}{Get\+Codec} (const std\+::string \&filename)
+static \hyperlink{classsvl_image_codec_base}{svl\-Image\-Codec\-Base} $\ast$ \hyperlink{classsvl_image_i_o_ae36e26b8aa46650cc3ea3ca0655d70b7}{Get\-Codec} (const std\-::string \&filename)
 \item 
-static void \hyperlink{classsvl_image_i_o_a33543ab73efe1e2e330a7402a826b675}{Release\+Codec} (\hyperlink{classsvl_image_codec_base}{svl\+Image\+Codec\+Base} $\ast$codec)
+static void \hyperlink{classsvl_image_i_o_a33543ab73efe1e2e330a7402a826b675}{Release\-Codec} (\hyperlink{classsvl_image_codec_base}{svl\-Image\-Codec\-Base} $\ast$codec)
 \item 
-static int \hyperlink{classsvl_image_i_o_a9437d547489fe7a01f820fbdaa377431}{Read\+Dimensions} (const std\+::string \&filename, unsigned int \&width, unsigned int \&height)
+static int \hyperlink{classsvl_image_i_o_a9437d547489fe7a01f820fbdaa377431}{Read\-Dimensions} (const std\-::string \&filename, unsigned int \&width, unsigned int \&height)
 \item 
-static int \hyperlink{classsvl_image_i_o_a6341e68885499d632e34f89a8eeab21c}{Read\+Dimensions} (const std\+::string \&codec, std\+::istream \&stream, unsigned int \&width, unsigned int \&height)
+static int \hyperlink{classsvl_image_i_o_a6341e68885499d632e34f89a8eeab21c}{Read\-Dimensions} (const std\-::string \&codec, std\-::istream \&stream, unsigned int \&width, unsigned int \&height)
 \item 
-static int \hyperlink{classsvl_image_i_o_ae4e0217577a16c269f22e91254964275}{Read\+Dimensions} (const std\+::string \&codec, const unsigned char $\ast$buffer, const size\+\_\+t buffersize, unsigned int \&width, unsigned int \&height)
+static int \hyperlink{classsvl_image_i_o_ae4e0217577a16c269f22e91254964275}{Read\-Dimensions} (const std\-::string \&codec, const unsigned char $\ast$buffer, const size\-\_\-t buffersize, unsigned int \&width, unsigned int \&height)
 \item 
-static int \hyperlink{classsvl_image_i_o_a7b32537e65e950afa2c98779f6ea3aaa}{Read} (\hyperlink{classsvl_sample_image}{svl\+Sample\+Image} \&image, const unsigned int videoch, const std\+::string \&filename, bool noresize=false)
+static int \hyperlink{classsvl_image_i_o_a7b32537e65e950afa2c98779f6ea3aaa}{Read} (\hyperlink{classsvl_sample_image}{svl\-Sample\-Image} \&image, const unsigned int videoch, const std\-::string \&filename, bool noresize=false)
 \item 
-static int \hyperlink{classsvl_image_i_o_a19386cfa5b3627a925bacc2f1a437013}{Read} (\hyperlink{classsvl_sample_image}{svl\+Sample\+Image} \&image, const unsigned int videoch, const std\+::string \&codec, std\+::istream \&stream, bool noresize=false)
+static int \hyperlink{classsvl_image_i_o_a19386cfa5b3627a925bacc2f1a437013}{Read} (\hyperlink{classsvl_sample_image}{svl\-Sample\-Image} \&image, const unsigned int videoch, const std\-::string \&codec, std\-::istream \&stream, bool noresize=false)
 \item 
-static int \hyperlink{classsvl_image_i_o_a1c4689a1c91acb189a320cf5fa93cade}{Read} (\hyperlink{classsvl_sample_image}{svl\+Sample\+Image} \&image, const unsigned int videoch, const std\+::string \&codec, const unsigned char $\ast$buffer, const size\+\_\+t buffersize, bool noresize=false)
+static int \hyperlink{classsvl_image_i_o_a1c4689a1c91acb189a320cf5fa93cade}{Read} (\hyperlink{classsvl_sample_image}{svl\-Sample\-Image} \&image, const unsigned int videoch, const std\-::string \&codec, const unsigned char $\ast$buffer, const size\-\_\-t buffersize, bool noresize=false)
 \item 
-static int \hyperlink{classsvl_image_i_o_a10a8c32b1bd2dba044811171f11ba1e2}{Write} (const \hyperlink{classsvl_sample_image}{svl\+Sample\+Image} \&image, const unsigned int videoch, const std\+::string \&filename, const int compression=-\/1)
+static int \hyperlink{classsvl_image_i_o_a10a8c32b1bd2dba044811171f11ba1e2}{Write} (const \hyperlink{classsvl_sample_image}{svl\-Sample\-Image} \&image, const unsigned int videoch, const std\-::string \&filename, const int compression=-\/1)
 \item 
-static int \hyperlink{classsvl_image_i_o_a7b0ed9e59bff009b482d6f7335785366}{Write} (const \hyperlink{classsvl_sample_image}{svl\+Sample\+Image} \&image, const unsigned int videoch, const std\+::string \&codec, std\+::ostream \&stream, const int compression=-\/1)
+static int \hyperlink{classsvl_image_i_o_a7b0ed9e59bff009b482d6f7335785366}{Write} (const \hyperlink{classsvl_sample_image}{svl\-Sample\-Image} \&image, const unsigned int videoch, const std\-::string \&codec, std\-::ostream \&stream, const int compression=-\/1)
 \item 
-static int \hyperlink{classsvl_image_i_o_ab8c2f7f4cb7aa50983e80f2607c8890f}{Write} (const \hyperlink{classsvl_sample_image}{svl\+Sample\+Image} \&image, const unsigned int videoch, const std\+::string \&codec, unsigned char $\ast$buffer, size\+\_\+t \&buffersize, const int compression=-\/1)
+static int \hyperlink{classsvl_image_i_o_ab8c2f7f4cb7aa50983e80f2607c8890f}{Write} (const \hyperlink{classsvl_sample_image}{svl\-Sample\-Image} \&image, const unsigned int videoch, const std\-::string \&codec, unsigned char $\ast$buffer, size\-\_\-t \&buffersize, const int compression=-\/1)
 \end{DoxyCompactItemize}
 \subsection*{Friends}
 \begin{DoxyCompactItemize}
 \item 
-void \hyperlink{classsvl_image_i_o_a77c5681ffb5a774979546b6b9d84ca1a}{svl\+Initialize\+Image\+Codecs} ()
+void \hyperlink{classsvl_image_i_o_a77c5681ffb5a774979546b6b9d84ca1a}{svl\-Initialize\-Image\-Codecs} ()
 \end{DoxyCompactItemize}
 
 
 \subsection{Constructor \& Destructor Documentation}
-\hypertarget{classsvl_image_i_o_a37add86266f1dc348291619e3116efb9}{}\index{svl\+Image\+I\+O@{svl\+Image\+I\+O}!````~svl\+Image\+I\+O@{$\sim$svl\+Image\+I\+O}}
-\index{````~svl\+Image\+I\+O@{$\sim$svl\+Image\+I\+O}!svl\+Image\+I\+O@{svl\+Image\+I\+O}}
-\subsubsection[{$\sim$svl\+Image\+I\+O}]{\setlength{\rightskip}{0pt plus 5cm}svl\+Image\+I\+O\+::$\sim$svl\+Image\+I\+O (
+\hypertarget{classsvl_image_i_o_a37add86266f1dc348291619e3116efb9}{\index{svl\-Image\-I\-O@{svl\-Image\-I\-O}!$\sim$svl\-Image\-I\-O@{$\sim$svl\-Image\-I\-O}}
+\index{$\sim$svl\-Image\-I\-O@{$\sim$svl\-Image\-I\-O}!svlImageIO@{svl\-Image\-I\-O}}
+\subsubsection[{$\sim$svl\-Image\-I\-O}]{\setlength{\rightskip}{0pt plus 5cm}svl\-Image\-I\-O\-::$\sim$svl\-Image\-I\-O (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}\label{classsvl_image_i_o_a37add86266f1dc348291619e3116efb9}
+)}}\label{classsvl_image_i_o_a37add86266f1dc348291619e3116efb9}
 
 
 \subsection{Member Function Documentation}
-\hypertarget{classsvl_image_i_o_ae36e26b8aa46650cc3ea3ca0655d70b7}{}\index{svl\+Image\+I\+O@{svl\+Image\+I\+O}!Get\+Codec@{Get\+Codec}}
-\index{Get\+Codec@{Get\+Codec}!svl\+Image\+I\+O@{svl\+Image\+I\+O}}
-\subsubsection[{Get\+Codec}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf svl\+Image\+Codec\+Base}$\ast$ svl\+Image\+I\+O\+::\+Get\+Codec (
+\hypertarget{classsvl_image_i_o_ae36e26b8aa46650cc3ea3ca0655d70b7}{\index{svl\-Image\-I\-O@{svl\-Image\-I\-O}!Get\-Codec@{Get\-Codec}}
+\index{Get\-Codec@{Get\-Codec}!svlImageIO@{svl\-Image\-I\-O}}
+\subsubsection[{Get\-Codec}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf svl\-Image\-Codec\-Base}$\ast$ svl\-Image\-I\-O\-::\-Get\-Codec (
 \begin{DoxyParamCaption}
-\item[{const std\+::string \&}]{filename}
+\item[{const std\-::string \&}]{filename}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}}\label{classsvl_image_i_o_ae36e26b8aa46650cc3ea3ca0655d70b7}
-\hypertarget{classsvl_image_i_o_abb7a293f4b39b2302ccba01657e4eec0}{}\index{svl\+Image\+I\+O@{svl\+Image\+I\+O}!Get\+Extension@{Get\+Extension}}
-\index{Get\+Extension@{Get\+Extension}!svl\+Image\+I\+O@{svl\+Image\+I\+O}}
-\subsubsection[{Get\+Extension}]{\setlength{\rightskip}{0pt plus 5cm}static int svl\+Image\+I\+O\+::\+Get\+Extension (
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classsvl_image_i_o_ae36e26b8aa46650cc3ea3ca0655d70b7}
+\hypertarget{classsvl_image_i_o_abb7a293f4b39b2302ccba01657e4eec0}{\index{svl\-Image\-I\-O@{svl\-Image\-I\-O}!Get\-Extension@{Get\-Extension}}
+\index{Get\-Extension@{Get\-Extension}!svlImageIO@{svl\-Image\-I\-O}}
+\subsubsection[{Get\-Extension}]{\setlength{\rightskip}{0pt plus 5cm}static int svl\-Image\-I\-O\-::\-Get\-Extension (
 \begin{DoxyParamCaption}
-\item[{const std\+::string \&}]{filename, }
-\item[{std\+::string \&}]{extension}
+\item[{const std\-::string \&}]{filename, }
+\item[{std\-::string \&}]{extension}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}}\label{classsvl_image_i_o_abb7a293f4b39b2302ccba01657e4eec0}
-\hypertarget{classsvl_image_i_o_a7b32537e65e950afa2c98779f6ea3aaa}{}\index{svl\+Image\+I\+O@{svl\+Image\+I\+O}!Read@{Read}}
-\index{Read@{Read}!svl\+Image\+I\+O@{svl\+Image\+I\+O}}
-\subsubsection[{Read}]{\setlength{\rightskip}{0pt plus 5cm}static int svl\+Image\+I\+O\+::\+Read (
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classsvl_image_i_o_abb7a293f4b39b2302ccba01657e4eec0}
+\hypertarget{classsvl_image_i_o_a7b32537e65e950afa2c98779f6ea3aaa}{\index{svl\-Image\-I\-O@{svl\-Image\-I\-O}!Read@{Read}}
+\index{Read@{Read}!svlImageIO@{svl\-Image\-I\-O}}
+\subsubsection[{Read}]{\setlength{\rightskip}{0pt plus 5cm}static int svl\-Image\-I\-O\-::\-Read (
 \begin{DoxyParamCaption}
-\item[{{\bf svl\+Sample\+Image} \&}]{image, }
+\item[{{\bf svl\-Sample\-Image} \&}]{image, }
 \item[{const unsigned int}]{videoch, }
-\item[{const std\+::string \&}]{filename, }
+\item[{const std\-::string \&}]{filename, }
 \item[{bool}]{noresize = {\ttfamily false}}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}}\label{classsvl_image_i_o_a7b32537e65e950afa2c98779f6ea3aaa}
-\hypertarget{classsvl_image_i_o_a19386cfa5b3627a925bacc2f1a437013}{}\index{svl\+Image\+I\+O@{svl\+Image\+I\+O}!Read@{Read}}
-\index{Read@{Read}!svl\+Image\+I\+O@{svl\+Image\+I\+O}}
-\subsubsection[{Read}]{\setlength{\rightskip}{0pt plus 5cm}static int svl\+Image\+I\+O\+::\+Read (
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classsvl_image_i_o_a7b32537e65e950afa2c98779f6ea3aaa}
+\hypertarget{classsvl_image_i_o_a19386cfa5b3627a925bacc2f1a437013}{\index{svl\-Image\-I\-O@{svl\-Image\-I\-O}!Read@{Read}}
+\index{Read@{Read}!svlImageIO@{svl\-Image\-I\-O}}
+\subsubsection[{Read}]{\setlength{\rightskip}{0pt plus 5cm}static int svl\-Image\-I\-O\-::\-Read (
 \begin{DoxyParamCaption}
-\item[{{\bf svl\+Sample\+Image} \&}]{image, }
+\item[{{\bf svl\-Sample\-Image} \&}]{image, }
 \item[{const unsigned int}]{videoch, }
-\item[{const std\+::string \&}]{codec, }
-\item[{std\+::istream \&}]{stream, }
+\item[{const std\-::string \&}]{codec, }
+\item[{std\-::istream \&}]{stream, }
 \item[{bool}]{noresize = {\ttfamily false}}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}}\label{classsvl_image_i_o_a19386cfa5b3627a925bacc2f1a437013}
-\hypertarget{classsvl_image_i_o_a1c4689a1c91acb189a320cf5fa93cade}{}\index{svl\+Image\+I\+O@{svl\+Image\+I\+O}!Read@{Read}}
-\index{Read@{Read}!svl\+Image\+I\+O@{svl\+Image\+I\+O}}
-\subsubsection[{Read}]{\setlength{\rightskip}{0pt plus 5cm}static int svl\+Image\+I\+O\+::\+Read (
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classsvl_image_i_o_a19386cfa5b3627a925bacc2f1a437013}
+\hypertarget{classsvl_image_i_o_a1c4689a1c91acb189a320cf5fa93cade}{\index{svl\-Image\-I\-O@{svl\-Image\-I\-O}!Read@{Read}}
+\index{Read@{Read}!svlImageIO@{svl\-Image\-I\-O}}
+\subsubsection[{Read}]{\setlength{\rightskip}{0pt plus 5cm}static int svl\-Image\-I\-O\-::\-Read (
 \begin{DoxyParamCaption}
-\item[{{\bf svl\+Sample\+Image} \&}]{image, }
+\item[{{\bf svl\-Sample\-Image} \&}]{image, }
 \item[{const unsigned int}]{videoch, }
-\item[{const std\+::string \&}]{codec, }
+\item[{const std\-::string \&}]{codec, }
 \item[{const unsigned char $\ast$}]{buffer, }
-\item[{const size\+\_\+t}]{buffersize, }
+\item[{const size\-\_\-t}]{buffersize, }
 \item[{bool}]{noresize = {\ttfamily false}}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}}\label{classsvl_image_i_o_a1c4689a1c91acb189a320cf5fa93cade}
-\hypertarget{classsvl_image_i_o_a9437d547489fe7a01f820fbdaa377431}{}\index{svl\+Image\+I\+O@{svl\+Image\+I\+O}!Read\+Dimensions@{Read\+Dimensions}}
-\index{Read\+Dimensions@{Read\+Dimensions}!svl\+Image\+I\+O@{svl\+Image\+I\+O}}
-\subsubsection[{Read\+Dimensions}]{\setlength{\rightskip}{0pt plus 5cm}static int svl\+Image\+I\+O\+::\+Read\+Dimensions (
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classsvl_image_i_o_a1c4689a1c91acb189a320cf5fa93cade}
+\hypertarget{classsvl_image_i_o_a9437d547489fe7a01f820fbdaa377431}{\index{svl\-Image\-I\-O@{svl\-Image\-I\-O}!Read\-Dimensions@{Read\-Dimensions}}
+\index{Read\-Dimensions@{Read\-Dimensions}!svlImageIO@{svl\-Image\-I\-O}}
+\subsubsection[{Read\-Dimensions}]{\setlength{\rightskip}{0pt plus 5cm}static int svl\-Image\-I\-O\-::\-Read\-Dimensions (
 \begin{DoxyParamCaption}
-\item[{const std\+::string \&}]{filename, }
+\item[{const std\-::string \&}]{filename, }
 \item[{unsigned int \&}]{width, }
 \item[{unsigned int \&}]{height}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}}\label{classsvl_image_i_o_a9437d547489fe7a01f820fbdaa377431}
-\hypertarget{classsvl_image_i_o_a6341e68885499d632e34f89a8eeab21c}{}\index{svl\+Image\+I\+O@{svl\+Image\+I\+O}!Read\+Dimensions@{Read\+Dimensions}}
-\index{Read\+Dimensions@{Read\+Dimensions}!svl\+Image\+I\+O@{svl\+Image\+I\+O}}
-\subsubsection[{Read\+Dimensions}]{\setlength{\rightskip}{0pt plus 5cm}static int svl\+Image\+I\+O\+::\+Read\+Dimensions (
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classsvl_image_i_o_a9437d547489fe7a01f820fbdaa377431}
+\hypertarget{classsvl_image_i_o_a6341e68885499d632e34f89a8eeab21c}{\index{svl\-Image\-I\-O@{svl\-Image\-I\-O}!Read\-Dimensions@{Read\-Dimensions}}
+\index{Read\-Dimensions@{Read\-Dimensions}!svlImageIO@{svl\-Image\-I\-O}}
+\subsubsection[{Read\-Dimensions}]{\setlength{\rightskip}{0pt plus 5cm}static int svl\-Image\-I\-O\-::\-Read\-Dimensions (
 \begin{DoxyParamCaption}
-\item[{const std\+::string \&}]{codec, }
-\item[{std\+::istream \&}]{stream, }
+\item[{const std\-::string \&}]{codec, }
+\item[{std\-::istream \&}]{stream, }
 \item[{unsigned int \&}]{width, }
 \item[{unsigned int \&}]{height}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}}\label{classsvl_image_i_o_a6341e68885499d632e34f89a8eeab21c}
-\hypertarget{classsvl_image_i_o_ae4e0217577a16c269f22e91254964275}{}\index{svl\+Image\+I\+O@{svl\+Image\+I\+O}!Read\+Dimensions@{Read\+Dimensions}}
-\index{Read\+Dimensions@{Read\+Dimensions}!svl\+Image\+I\+O@{svl\+Image\+I\+O}}
-\subsubsection[{Read\+Dimensions}]{\setlength{\rightskip}{0pt plus 5cm}static int svl\+Image\+I\+O\+::\+Read\+Dimensions (
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classsvl_image_i_o_a6341e68885499d632e34f89a8eeab21c}
+\hypertarget{classsvl_image_i_o_ae4e0217577a16c269f22e91254964275}{\index{svl\-Image\-I\-O@{svl\-Image\-I\-O}!Read\-Dimensions@{Read\-Dimensions}}
+\index{Read\-Dimensions@{Read\-Dimensions}!svlImageIO@{svl\-Image\-I\-O}}
+\subsubsection[{Read\-Dimensions}]{\setlength{\rightskip}{0pt plus 5cm}static int svl\-Image\-I\-O\-::\-Read\-Dimensions (
 \begin{DoxyParamCaption}
-\item[{const std\+::string \&}]{codec, }
+\item[{const std\-::string \&}]{codec, }
 \item[{const unsigned char $\ast$}]{buffer, }
-\item[{const size\+\_\+t}]{buffersize, }
+\item[{const size\-\_\-t}]{buffersize, }
 \item[{unsigned int \&}]{width, }
 \item[{unsigned int \&}]{height}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}}\label{classsvl_image_i_o_ae4e0217577a16c269f22e91254964275}
-\hypertarget{classsvl_image_i_o_a33543ab73efe1e2e330a7402a826b675}{}\index{svl\+Image\+I\+O@{svl\+Image\+I\+O}!Release\+Codec@{Release\+Codec}}
-\index{Release\+Codec@{Release\+Codec}!svl\+Image\+I\+O@{svl\+Image\+I\+O}}
-\subsubsection[{Release\+Codec}]{\setlength{\rightskip}{0pt plus 5cm}static void svl\+Image\+I\+O\+::\+Release\+Codec (
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classsvl_image_i_o_ae4e0217577a16c269f22e91254964275}
+\hypertarget{classsvl_image_i_o_a33543ab73efe1e2e330a7402a826b675}{\index{svl\-Image\-I\-O@{svl\-Image\-I\-O}!Release\-Codec@{Release\-Codec}}
+\index{Release\-Codec@{Release\-Codec}!svlImageIO@{svl\-Image\-I\-O}}
+\subsubsection[{Release\-Codec}]{\setlength{\rightskip}{0pt plus 5cm}static void svl\-Image\-I\-O\-::\-Release\-Codec (
 \begin{DoxyParamCaption}
-\item[{{\bf svl\+Image\+Codec\+Base} $\ast$}]{codec}
+\item[{{\bf svl\-Image\-Codec\-Base} $\ast$}]{codec}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}}\label{classsvl_image_i_o_a33543ab73efe1e2e330a7402a826b675}
-\hypertarget{classsvl_image_i_o_a10a8c32b1bd2dba044811171f11ba1e2}{}\index{svl\+Image\+I\+O@{svl\+Image\+I\+O}!Write@{Write}}
-\index{Write@{Write}!svl\+Image\+I\+O@{svl\+Image\+I\+O}}
-\subsubsection[{Write}]{\setlength{\rightskip}{0pt plus 5cm}static int svl\+Image\+I\+O\+::\+Write (
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classsvl_image_i_o_a33543ab73efe1e2e330a7402a826b675}
+\hypertarget{classsvl_image_i_o_a10a8c32b1bd2dba044811171f11ba1e2}{\index{svl\-Image\-I\-O@{svl\-Image\-I\-O}!Write@{Write}}
+\index{Write@{Write}!svlImageIO@{svl\-Image\-I\-O}}
+\subsubsection[{Write}]{\setlength{\rightskip}{0pt plus 5cm}static int svl\-Image\-I\-O\-::\-Write (
 \begin{DoxyParamCaption}
-\item[{const {\bf svl\+Sample\+Image} \&}]{image, }
+\item[{const {\bf svl\-Sample\-Image} \&}]{image, }
 \item[{const unsigned int}]{videoch, }
-\item[{const std\+::string \&}]{filename, }
+\item[{const std\-::string \&}]{filename, }
 \item[{const int}]{compression = {\ttfamily -\/1}}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}}\label{classsvl_image_i_o_a10a8c32b1bd2dba044811171f11ba1e2}
-\hypertarget{classsvl_image_i_o_a7b0ed9e59bff009b482d6f7335785366}{}\index{svl\+Image\+I\+O@{svl\+Image\+I\+O}!Write@{Write}}
-\index{Write@{Write}!svl\+Image\+I\+O@{svl\+Image\+I\+O}}
-\subsubsection[{Write}]{\setlength{\rightskip}{0pt plus 5cm}static int svl\+Image\+I\+O\+::\+Write (
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classsvl_image_i_o_a10a8c32b1bd2dba044811171f11ba1e2}
+\hypertarget{classsvl_image_i_o_a7b0ed9e59bff009b482d6f7335785366}{\index{svl\-Image\-I\-O@{svl\-Image\-I\-O}!Write@{Write}}
+\index{Write@{Write}!svlImageIO@{svl\-Image\-I\-O}}
+\subsubsection[{Write}]{\setlength{\rightskip}{0pt plus 5cm}static int svl\-Image\-I\-O\-::\-Write (
 \begin{DoxyParamCaption}
-\item[{const {\bf svl\+Sample\+Image} \&}]{image, }
+\item[{const {\bf svl\-Sample\-Image} \&}]{image, }
 \item[{const unsigned int}]{videoch, }
-\item[{const std\+::string \&}]{codec, }
-\item[{std\+::ostream \&}]{stream, }
+\item[{const std\-::string \&}]{codec, }
+\item[{std\-::ostream \&}]{stream, }
 \item[{const int}]{compression = {\ttfamily -\/1}}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}}\label{classsvl_image_i_o_a7b0ed9e59bff009b482d6f7335785366}
-\hypertarget{classsvl_image_i_o_ab8c2f7f4cb7aa50983e80f2607c8890f}{}\index{svl\+Image\+I\+O@{svl\+Image\+I\+O}!Write@{Write}}
-\index{Write@{Write}!svl\+Image\+I\+O@{svl\+Image\+I\+O}}
-\subsubsection[{Write}]{\setlength{\rightskip}{0pt plus 5cm}static int svl\+Image\+I\+O\+::\+Write (
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classsvl_image_i_o_a7b0ed9e59bff009b482d6f7335785366}
+\hypertarget{classsvl_image_i_o_ab8c2f7f4cb7aa50983e80f2607c8890f}{\index{svl\-Image\-I\-O@{svl\-Image\-I\-O}!Write@{Write}}
+\index{Write@{Write}!svlImageIO@{svl\-Image\-I\-O}}
+\subsubsection[{Write}]{\setlength{\rightskip}{0pt plus 5cm}static int svl\-Image\-I\-O\-::\-Write (
 \begin{DoxyParamCaption}
-\item[{const {\bf svl\+Sample\+Image} \&}]{image, }
+\item[{const {\bf svl\-Sample\-Image} \&}]{image, }
 \item[{const unsigned int}]{videoch, }
-\item[{const std\+::string \&}]{codec, }
+\item[{const std\-::string \&}]{codec, }
 \item[{unsigned char $\ast$}]{buffer, }
-\item[{size\+\_\+t \&}]{buffersize, }
+\item[{size\-\_\-t \&}]{buffersize, }
 \item[{const int}]{compression = {\ttfamily -\/1}}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}}\label{classsvl_image_i_o_ab8c2f7f4cb7aa50983e80f2607c8890f}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classsvl_image_i_o_ab8c2f7f4cb7aa50983e80f2607c8890f}
 
 
 \subsection{Friends And Related Function Documentation}
-\hypertarget{classsvl_image_i_o_a77c5681ffb5a774979546b6b9d84ca1a}{}\index{svl\+Image\+I\+O@{svl\+Image\+I\+O}!svl\+Initialize\+Image\+Codecs@{svl\+Initialize\+Image\+Codecs}}
-\index{svl\+Initialize\+Image\+Codecs@{svl\+Initialize\+Image\+Codecs}!svl\+Image\+I\+O@{svl\+Image\+I\+O}}
-\subsubsection[{svl\+Initialize\+Image\+Codecs}]{\setlength{\rightskip}{0pt plus 5cm}void svl\+Initialize\+Image\+Codecs (
+\hypertarget{classsvl_image_i_o_a77c5681ffb5a774979546b6b9d84ca1a}{\index{svl\-Image\-I\-O@{svl\-Image\-I\-O}!svl\-Initialize\-Image\-Codecs@{svl\-Initialize\-Image\-Codecs}}
+\index{svl\-Initialize\-Image\-Codecs@{svl\-Initialize\-Image\-Codecs}!svlImageIO@{svl\-Image\-I\-O}}
+\subsubsection[{svl\-Initialize\-Image\-Codecs}]{\setlength{\rightskip}{0pt plus 5cm}void svl\-Initialize\-Image\-Codecs (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [friend]}}\label{classsvl_image_i_o_a77c5681ffb5a774979546b6b9d84ca1a}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{classsvl_image_i_o_a77c5681ffb5a774979546b6b9d84ca1a}
 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
 \item 
-/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Stereo\+Vision/\hyperlink{svl_image_i_o_8h}{svl\+Image\+I\+O.\+h}\end{DoxyCompactItemize}
+/home/adeguet1/catkin\-\_\-ws/src/cisst-\/saw/cisst/cisst\-Stereo\-Vision/\hyperlink{svl_image_i_o_8h}{svl\-Image\-I\-O.\-h}\end{DoxyCompactItemize}

@@ -1,10 +1,11 @@
-\hypertarget{classmts_component_f_l_t_k}{}\section{mts\+Component\+F\+L\+T\+K$<$ Base\+Class $>$ Class Template Reference}
-\label{classmts_component_f_l_t_k}\index{mts\+Component\+F\+L\+T\+K$<$ Base\+Class $>$@{mts\+Component\+F\+L\+T\+K$<$ Base\+Class $>$}}
+\hypertarget{classmts_component_f_l_t_k}{\section{mts\-Component\-F\-L\-T\-K$<$ Base\-Class $>$ Class Template Reference}
+\label{classmts_component_f_l_t_k}\index{mts\-Component\-F\-L\-T\-K$<$ Base\-Class $>$@{mts\-Component\-F\-L\-T\-K$<$ Base\-Class $>$}}
+}
 
 
-{\ttfamily \#include $<$mts\+Component\+F\+L\+T\+K.\+h$>$}
+{\ttfamily \#include $<$mts\-Component\-F\-L\-T\-K.\-h$>$}
 
-Inheritance diagram for mts\+Component\+F\+L\+T\+K$<$ Base\+Class $>$\+:\begin{figure}[H]
+Inheritance diagram for mts\-Component\-F\-L\-T\-K$<$ Base\-Class $>$\-:\begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[height=2.000000cm]{d3/d56/classmts_component_f_l_t_k}
@@ -13,9 +14,9 @@ Inheritance diagram for mts\+Component\+F\+L\+T\+K$<$ Base\+Class $>$\+:\begin{f
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classmts_component_f_l_t_k_a704219af0408a6490f6dd037dc875610}{mts\+Component\+F\+L\+T\+K} (const std\+::string \&name)
+\hyperlink{classmts_component_f_l_t_k_a704219af0408a6490f6dd037dc875610}{mts\-Component\-F\-L\-T\-K} (const std\-::string \&name)
 \item 
-\hyperlink{classmts_component_f_l_t_k_a431ee9a69494cf3d8edeedb9039f7ddd}{$\sim$mts\+Component\+F\+L\+T\+K} ()
+\hyperlink{classmts_component_f_l_t_k_a431ee9a69494cf3d8edeedb9039f7ddd}{$\sim$mts\-Component\-F\-L\-T\-K} ()
 \item 
 void \hyperlink{classmts_component_f_l_t_k_a1414000961f52e0ab76f141300e2fef1}{Startup} (void)
 \item 
@@ -26,65 +27,65 @@ void \hyperlink{classmts_component_f_l_t_k_a448f78d704dbd18ff4b678eb19f037db}{Cl
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static int \hyperlink{classmts_component_f_l_t_k_a0dca571982b439a230c32b38e1939da7}{Start\+Run\+Loop} (void)
+static int \hyperlink{classmts_component_f_l_t_k_a0dca571982b439a230c32b38e1939da7}{Start\-Run\-Loop} (void)
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-\subsubsection*{template$<$class Base\+Class$>$class mts\+Component\+F\+L\+T\+K$<$ Base\+Class $>$}
+\subsubsection*{template$<$class Base\-Class$>$class mts\-Component\-F\-L\-T\-K$<$ Base\-Class $>$}
 
-\hyperlink{classmts_component_f_l_t_k}{mts\+Component\+F\+L\+T\+K} is a templated class to facilitate creation of components that use F\+L\+T\+K. It is templated by a Base\+Class, which typically contains the F\+L\+T\+K G\+U\+I code. This class is not instantiated within the cisst\+Multi\+Task library, but is available for use by application components. For an example of use, see cisst\+Multi\+Task\+Periodic\+Task (F\+L\+T\+K implementation).
+\hyperlink{classmts_component_f_l_t_k}{mts\-Component\-F\-L\-T\-K} is a templated class to facilitate creation of components that use F\-L\-T\-K. It is templated by a Base\-Class, which typically contains the F\-L\-T\-K G\-U\-I code. This class is not instantiated within the cisst\-Multi\-Task library, but is available for use by application components. For an example of use, see cisst\-Multi\-Task\-Periodic\-Task (F\-L\-T\-K implementation).
 
-The use of a templated class to derive from the F\+L\+T\+K G\+U\+I class is a bit odd, as a more obvious solution would be for \hyperlink{classmts_component_f_l_t_k}{mts\+Component\+F\+L\+T\+K} to be a (non-\/templated) base class, and then to derive the F\+L\+T\+K G\+U\+I class from it. But, this solution does not require the F\+L\+T\+K G\+U\+I class to use C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T and C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S, which are a bit difficult to incorporate when using the F\+L\+T\+K fluid designer. An alternate design is to create a generic \char`\"{}wrapper\char`\"{} template (perhaps in cisst\+Common) to add the C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T and C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S to an existing class. Then, the rest of \hyperlink{classmts_component_f_l_t_k}{mts\+Component\+F\+L\+T\+K} can become a non-\/templated base class. 
+The use of a templated class to derive from the F\-L\-T\-K G\-U\-I class is a bit odd, as a more obvious solution would be for \hyperlink{classmts_component_f_l_t_k}{mts\-Component\-F\-L\-T\-K} to be a (non-\/templated) base class, and then to derive the F\-L\-T\-K G\-U\-I class from it. But, this solution does not require the F\-L\-T\-K G\-U\-I class to use C\-I\-S\-S\-T\-\_\-\-E\-X\-P\-O\-R\-T and C\-M\-N\-\_\-\-D\-E\-C\-L\-A\-R\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-S, which are a bit difficult to incorporate when using the F\-L\-T\-K fluid designer. An alternate design is to create a generic \char`\"{}wrapper\char`\"{} template (perhaps in cisst\-Common) to add the C\-I\-S\-S\-T\-\_\-\-E\-X\-P\-O\-R\-T and C\-M\-N\-\_\-\-D\-E\-C\-L\-A\-R\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-S to an existing class. Then, the rest of \hyperlink{classmts_component_f_l_t_k}{mts\-Component\-F\-L\-T\-K} can become a non-\/templated base class. 
 
 \subsection{Constructor \& Destructor Documentation}
-\hypertarget{classmts_component_f_l_t_k_a704219af0408a6490f6dd037dc875610}{}\index{mts\+Component\+F\+L\+T\+K@{mts\+Component\+F\+L\+T\+K}!mts\+Component\+F\+L\+T\+K@{mts\+Component\+F\+L\+T\+K}}
-\index{mts\+Component\+F\+L\+T\+K@{mts\+Component\+F\+L\+T\+K}!mts\+Component\+F\+L\+T\+K@{mts\+Component\+F\+L\+T\+K}}
-\subsubsection[{mts\+Component\+F\+L\+T\+K}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Base\+Class $>$ {\bf mts\+Component\+F\+L\+T\+K}$<$ Base\+Class $>$\+::{\bf mts\+Component\+F\+L\+T\+K} (
+\hypertarget{classmts_component_f_l_t_k_a704219af0408a6490f6dd037dc875610}{\index{mts\-Component\-F\-L\-T\-K@{mts\-Component\-F\-L\-T\-K}!mts\-Component\-F\-L\-T\-K@{mts\-Component\-F\-L\-T\-K}}
+\index{mts\-Component\-F\-L\-T\-K@{mts\-Component\-F\-L\-T\-K}!mtsComponentFLTK@{mts\-Component\-F\-L\-T\-K}}
+\subsubsection[{mts\-Component\-F\-L\-T\-K}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Base\-Class $>$ {\bf mts\-Component\-F\-L\-T\-K}$<$ Base\-Class $>$\-::{\bf mts\-Component\-F\-L\-T\-K} (
 \begin{DoxyParamCaption}
-\item[{const std\+::string \&}]{name}
+\item[{const std\-::string \&}]{name}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_component_f_l_t_k_a704219af0408a6490f6dd037dc875610}
-\hypertarget{classmts_component_f_l_t_k_a431ee9a69494cf3d8edeedb9039f7ddd}{}\index{mts\+Component\+F\+L\+T\+K@{mts\+Component\+F\+L\+T\+K}!````~mts\+Component\+F\+L\+T\+K@{$\sim$mts\+Component\+F\+L\+T\+K}}
-\index{````~mts\+Component\+F\+L\+T\+K@{$\sim$mts\+Component\+F\+L\+T\+K}!mts\+Component\+F\+L\+T\+K@{mts\+Component\+F\+L\+T\+K}}
-\subsubsection[{$\sim$mts\+Component\+F\+L\+T\+K}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Base\+Class $>$ {\bf mts\+Component\+F\+L\+T\+K}$<$ Base\+Class $>$\+::$\sim${\bf mts\+Component\+F\+L\+T\+K} (
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmts_component_f_l_t_k_a704219af0408a6490f6dd037dc875610}
+\hypertarget{classmts_component_f_l_t_k_a431ee9a69494cf3d8edeedb9039f7ddd}{\index{mts\-Component\-F\-L\-T\-K@{mts\-Component\-F\-L\-T\-K}!$\sim$mts\-Component\-F\-L\-T\-K@{$\sim$mts\-Component\-F\-L\-T\-K}}
+\index{$\sim$mts\-Component\-F\-L\-T\-K@{$\sim$mts\-Component\-F\-L\-T\-K}!mtsComponentFLTK@{mts\-Component\-F\-L\-T\-K}}
+\subsubsection[{$\sim$mts\-Component\-F\-L\-T\-K}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Base\-Class $>$ {\bf mts\-Component\-F\-L\-T\-K}$<$ Base\-Class $>$\-::$\sim${\bf mts\-Component\-F\-L\-T\-K} (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_component_f_l_t_k_a431ee9a69494cf3d8edeedb9039f7ddd}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmts_component_f_l_t_k_a431ee9a69494cf3d8edeedb9039f7ddd}
 
 
 \subsection{Member Function Documentation}
-\hypertarget{classmts_component_f_l_t_k_a448f78d704dbd18ff4b678eb19f037db}{}\index{mts\+Component\+F\+L\+T\+K@{mts\+Component\+F\+L\+T\+K}!Cleanup@{Cleanup}}
-\index{Cleanup@{Cleanup}!mts\+Component\+F\+L\+T\+K@{mts\+Component\+F\+L\+T\+K}}
-\subsubsection[{Cleanup}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Base\+Class $>$ void {\bf mts\+Component\+F\+L\+T\+K}$<$ Base\+Class $>$\+::Cleanup (
+\hypertarget{classmts_component_f_l_t_k_a448f78d704dbd18ff4b678eb19f037db}{\index{mts\-Component\-F\-L\-T\-K@{mts\-Component\-F\-L\-T\-K}!Cleanup@{Cleanup}}
+\index{Cleanup@{Cleanup}!mtsComponentFLTK@{mts\-Component\-F\-L\-T\-K}}
+\subsubsection[{Cleanup}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Base\-Class $>$ void {\bf mts\-Component\-F\-L\-T\-K}$<$ Base\-Class $>$\-::Cleanup (
 \begin{DoxyParamCaption}
 \item[{void}]{}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_component_f_l_t_k_a448f78d704dbd18ff4b678eb19f037db}
-\hypertarget{classmts_component_f_l_t_k_a80d9a8450d5f28207f644682a426b6b9}{}\index{mts\+Component\+F\+L\+T\+K@{mts\+Component\+F\+L\+T\+K}!Run@{Run}}
-\index{Run@{Run}!mts\+Component\+F\+L\+T\+K@{mts\+Component\+F\+L\+T\+K}}
-\subsubsection[{Run}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Base\+Class $>$ void {\bf mts\+Component\+F\+L\+T\+K}$<$ Base\+Class $>$\+::Run (
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmts_component_f_l_t_k_a448f78d704dbd18ff4b678eb19f037db}
+\hypertarget{classmts_component_f_l_t_k_a80d9a8450d5f28207f644682a426b6b9}{\index{mts\-Component\-F\-L\-T\-K@{mts\-Component\-F\-L\-T\-K}!Run@{Run}}
+\index{Run@{Run}!mtsComponentFLTK@{mts\-Component\-F\-L\-T\-K}}
+\subsubsection[{Run}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Base\-Class $>$ void {\bf mts\-Component\-F\-L\-T\-K}$<$ Base\-Class $>$\-::Run (
 \begin{DoxyParamCaption}
 \item[{void}]{}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_component_f_l_t_k_a80d9a8450d5f28207f644682a426b6b9}
-\hypertarget{classmts_component_f_l_t_k_a0dca571982b439a230c32b38e1939da7}{}\index{mts\+Component\+F\+L\+T\+K@{mts\+Component\+F\+L\+T\+K}!Start\+Run\+Loop@{Start\+Run\+Loop}}
-\index{Start\+Run\+Loop@{Start\+Run\+Loop}!mts\+Component\+F\+L\+T\+K@{mts\+Component\+F\+L\+T\+K}}
-\subsubsection[{Start\+Run\+Loop}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Base\+Class $>$ static int {\bf mts\+Component\+F\+L\+T\+K}$<$ Base\+Class $>$\+::Start\+Run\+Loop (
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmts_component_f_l_t_k_a80d9a8450d5f28207f644682a426b6b9}
+\hypertarget{classmts_component_f_l_t_k_a0dca571982b439a230c32b38e1939da7}{\index{mts\-Component\-F\-L\-T\-K@{mts\-Component\-F\-L\-T\-K}!Start\-Run\-Loop@{Start\-Run\-Loop}}
+\index{Start\-Run\-Loop@{Start\-Run\-Loop}!mtsComponentFLTK@{mts\-Component\-F\-L\-T\-K}}
+\subsubsection[{Start\-Run\-Loop}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Base\-Class $>$ static int {\bf mts\-Component\-F\-L\-T\-K}$<$ Base\-Class $>$\-::Start\-Run\-Loop (
 \begin{DoxyParamCaption}
 \item[{void}]{}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classmts_component_f_l_t_k_a0dca571982b439a230c32b38e1939da7}
-\hypertarget{classmts_component_f_l_t_k_a1414000961f52e0ab76f141300e2fef1}{}\index{mts\+Component\+F\+L\+T\+K@{mts\+Component\+F\+L\+T\+K}!Startup@{Startup}}
-\index{Startup@{Startup}!mts\+Component\+F\+L\+T\+K@{mts\+Component\+F\+L\+T\+K}}
-\subsubsection[{Startup}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Base\+Class $>$ void {\bf mts\+Component\+F\+L\+T\+K}$<$ Base\+Class $>$\+::Startup (
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classmts_component_f_l_t_k_a0dca571982b439a230c32b38e1939da7}
+\hypertarget{classmts_component_f_l_t_k_a1414000961f52e0ab76f141300e2fef1}{\index{mts\-Component\-F\-L\-T\-K@{mts\-Component\-F\-L\-T\-K}!Startup@{Startup}}
+\index{Startup@{Startup}!mtsComponentFLTK@{mts\-Component\-F\-L\-T\-K}}
+\subsubsection[{Startup}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Base\-Class $>$ void {\bf mts\-Component\-F\-L\-T\-K}$<$ Base\-Class $>$\-::Startup (
 \begin{DoxyParamCaption}
 \item[{void}]{}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_component_f_l_t_k_a1414000961f52e0ab76f141300e2fef1}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmts_component_f_l_t_k_a1414000961f52e0ab76f141300e2fef1}
 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
 \item 
-/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Multi\+Task/\hyperlink{mts_component_f_l_t_k_8h}{mts\+Component\+F\+L\+T\+K.\+h}\end{DoxyCompactItemize}
+/home/adeguet1/catkin\-\_\-ws/src/cisst-\/saw/cisst/cisst\-Multi\-Task/\hyperlink{mts_component_f_l_t_k_8h}{mts\-Component\-F\-L\-T\-K.\-h}\end{DoxyCompactItemize}

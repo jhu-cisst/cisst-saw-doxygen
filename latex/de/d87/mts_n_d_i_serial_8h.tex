@@ -1,76 +1,75 @@
-\hypertarget{mts_n_d_i_serial_8h}{}\section{/\+Users/anton/devel/cisst-\/saw/saw\+N\+D\+I\+Tracker/include/saw\+N\+D\+I\+Tracker/mts\+N\+D\+I\+Serial.h File Reference}
-\label{mts_n_d_i_serial_8h}\index{/\+Users/anton/devel/cisst-\/saw/saw\+N\+D\+I\+Tracker/include/saw\+N\+D\+I\+Tracker/mts\+N\+D\+I\+Serial.\+h@{/\+Users/anton/devel/cisst-\/saw/saw\+N\+D\+I\+Tracker/include/saw\+N\+D\+I\+Tracker/mts\+N\+D\+I\+Serial.\+h}}
+\hypertarget{mts_n_d_i_serial_8h}{\section{/home/adeguet1/catkin\-\_\-ws/src/cisst-\/saw/saw\-N\-D\-I\-Tracker/include/saw\-N\-D\-I\-Tracker/mts\-N\-D\-I\-Serial.h File Reference}
+\label{mts_n_d_i_serial_8h}\index{/home/adeguet1/catkin\-\_\-ws/src/cisst-\/saw/saw\-N\-D\-I\-Tracker/include/saw\-N\-D\-I\-Tracker/mts\-N\-D\-I\-Serial.\-h@{/home/adeguet1/catkin\-\_\-ws/src/cisst-\/saw/saw\-N\-D\-I\-Tracker/include/saw\-N\-D\-I\-Tracker/mts\-N\-D\-I\-Serial.\-h}}
+}
 
 
-S\+A\+W component for N\+D\+I surgical trackers with serial (R\+S-\/232) interface.  
+S\-A\-W component for N\-D\-I surgical trackers with serial (R\-S-\/232) interface.  
 
 
-{\ttfamily \#include $<$cisst\+Vector/vct\+Fixed\+Size\+Vector\+Types.\+h$>$}\\*
-{\ttfamily \#include $<$cisst\+O\+S\+Abstraction/osa\+Serial\+Port.\+h$>$}\\*
-{\ttfamily \#include $<$cisst\+O\+S\+Abstraction/osa\+Stopwatch.\+h$>$}\\*
-{\ttfamily \#include $<$cisst\+Multi\+Task/mts\+Matrix.\+h$>$}\\*
-{\ttfamily \#include $<$cisst\+Multi\+Task/mts\+Task\+Periodic.\+h$>$}\\*
-{\ttfamily \#include $<$cisst\+Parameter\+Types/prm\+Position\+Cartesian\+Get.\+h$>$}\\*
-{\ttfamily \#include $<$saw\+N\+D\+I\+Tracker/saw\+N\+D\+I\+Tracker\+Export.\+h$>$}\\*
+{\ttfamily \#include $<$cisst\-Vector/vct\-Fixed\-Size\-Vector\-Types.\-h$>$}\\*
+{\ttfamily \#include $<$cisst\-O\-S\-Abstraction/osa\-Serial\-Port.\-h$>$}\\*
+{\ttfamily \#include $<$cisst\-O\-S\-Abstraction/osa\-Stopwatch.\-h$>$}\\*
+{\ttfamily \#include $<$cisst\-Multi\-Task/mts\-Matrix.\-h$>$}\\*
+{\ttfamily \#include $<$cisst\-Multi\-Task/mts\-Task\-Periodic.\-h$>$}\\*
+{\ttfamily \#include $<$cisst\-Parameter\-Types/prm\-Position\-Cartesian\-Get.\-h$>$}\\*
+{\ttfamily \#include $<$saw\-N\-D\-I\-Tracker/saw\-N\-D\-I\-Tracker\-Export.\-h$>$}\\*
 \subsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
-class \hyperlink{classmts_n_d_i_serial}{mts\+N\+D\+I\+Serial}
+class \hyperlink{classmts_n_d_i_serial}{mts\-N\-D\-I\-Serial}
 \item 
-class \hyperlink{classmts_n_d_i_serial_1_1_tool}{mts\+N\+D\+I\+Serial\+::\+Tool}
+class \hyperlink{classmts_n_d_i_serial_1_1_tool}{mts\-N\-D\-I\-Serial\-::\-Tool}
 \end{DoxyCompactItemize}
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{mts_n_d_i_serial_8h_a33506a72d05bd179532e7061e2c7bb20}{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+I\+N\+S\+T\+A\+N\+T\+I\+A\+T\+I\+O\+N} (\hyperlink{classmts_n_d_i_serial}{mts\+N\+D\+I\+Serial})
+\hyperlink{mts_n_d_i_serial_8h_a33506a72d05bd179532e7061e2c7bb20}{C\-M\-N\-\_\-\-D\-E\-C\-L\-A\-R\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-S\-\_\-\-I\-N\-S\-T\-A\-N\-T\-I\-A\-T\-I\-O\-N} (\hyperlink{classmts_n_d_i_serial}{mts\-N\-D\-I\-Serial})
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-S\+A\+W component for N\+D\+I surgical trackers with serial (R\+S-\/232) interface. 
-
-\begin{DoxyWarning}{Warning}
-Missing support for 14400bps, 921600bps and 1228739bps baud rates in \hyperlink{classosa_serial_port}{osa\+Serial\+Port}.
+S\-A\-W component for N\-D\-I surgical trackers with serial (R\-S-\/232) interface. \begin{DoxyWarning}{Warning}
+Missing support for 14400bps, 921600bps and 1228739bps baud rates in \hyperlink{classosa_serial_port}{osa\-Serial\-Port}.
 \end{DoxyWarning}
 \begin{DoxyRefDesc}{Todo}
-\item[\hyperlink{todo__todo000017}{Todo}]Consider deriving from \hyperlink{classmts_task_continuous}{mts\+Task\+Continuous} using an \char`\"{}adaptive\char`\"{} sleep. 
+\item[\hyperlink{todo__todo000018}{Todo}]Consider deriving from \hyperlink{classmts_task_continuous}{mts\-Task\-Continuous} using an \char`\"{}adaptive\char`\"{} sleep. 
 
 Verify the need for existing sleep times. 
 
 Enable/disable individual tools on-\/the-\/fly (or dynamically disable their interfaces). 
 
-Move Calibrate\+Pivot to cisst\+Numerical? 
+Move Calibrate\-Pivot to cisst\-Numerical? 
 
 Handle other main types of tools (besides pointer, reference, etc.). 
 
 Parse port/system status, in order to get \char`\"{}partially out of volume\char`\"{}, etc.. 
 
-Refactor Compute\+C\+R\+C and implement a C\+R\+C check in Command\+Send (move C\+R\+C check to \hyperlink{classosa_serial_port}{osa\+Serial\+Port}?). 
+Refactor Compute\-C\-R\-C and implement a C\-R\-C check in Command\-Send (move C\-R\-C check to \hyperlink{classosa_serial_port}{osa\-Serial\-Port}?). 
 
 Every sscanf should check if valid number of items have been read (wrapper for sscanf?). 
 
 Error handling for all strncpy. 
 
-Check for buffer overflow in Command\+Append. 
+Check for buffer overflow in Command\-Append. 
 
 Support for the extra features of newer Polaris versions. 
 
-Pretty print for Serial\+Number, to extract date, etc.. 
+Pretty print for Serial\-Number, to extract date, etc.. 
 
 Overload Tool class to have a stream. 
 
 Use frame number to decide if timestamp should be refreshed. 
 
-Use a map to convert Tool\textquotesingle{}s Main\+Type to human readable text. 
+Use a map to convert Tool's Main\-Type to human readable text. 
 
-Strategies for error recovery, send an event with a human readable payload, implement in Check\+Response. \end{DoxyRefDesc}
+Strategies for error recovery, send an event with a human readable payload, implement in Check\-Response. \end{DoxyRefDesc}
 
 
 \subsection{Function Documentation}
-\hypertarget{mts_n_d_i_serial_8h_a33506a72d05bd179532e7061e2c7bb20}{}\index{mts\+N\+D\+I\+Serial.\+h@{mts\+N\+D\+I\+Serial.\+h}!C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+I\+N\+S\+T\+A\+N\+T\+I\+A\+T\+I\+O\+N@{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+I\+N\+S\+T\+A\+N\+T\+I\+A\+T\+I\+O\+N}}
-\index{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+I\+N\+S\+T\+A\+N\+T\+I\+A\+T\+I\+O\+N@{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+I\+N\+S\+T\+A\+N\+T\+I\+A\+T\+I\+O\+N}!mts\+N\+D\+I\+Serial.\+h@{mts\+N\+D\+I\+Serial.\+h}}
-\subsubsection[{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+I\+N\+S\+T\+A\+N\+T\+I\+A\+T\+I\+O\+N}]{\setlength{\rightskip}{0pt plus 5cm}C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+I\+N\+S\+T\+A\+N\+T\+I\+A\+T\+I\+O\+N (
+\hypertarget{mts_n_d_i_serial_8h_a33506a72d05bd179532e7061e2c7bb20}{\index{mts\-N\-D\-I\-Serial.\-h@{mts\-N\-D\-I\-Serial.\-h}!C\-M\-N\-\_\-\-D\-E\-C\-L\-A\-R\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-S\-\_\-\-I\-N\-S\-T\-A\-N\-T\-I\-A\-T\-I\-O\-N@{C\-M\-N\-\_\-\-D\-E\-C\-L\-A\-R\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-S\-\_\-\-I\-N\-S\-T\-A\-N\-T\-I\-A\-T\-I\-O\-N}}
+\index{C\-M\-N\-\_\-\-D\-E\-C\-L\-A\-R\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-S\-\_\-\-I\-N\-S\-T\-A\-N\-T\-I\-A\-T\-I\-O\-N@{C\-M\-N\-\_\-\-D\-E\-C\-L\-A\-R\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-S\-\_\-\-I\-N\-S\-T\-A\-N\-T\-I\-A\-T\-I\-O\-N}!mtsNDISerial.h@{mts\-N\-D\-I\-Serial.\-h}}
+\subsubsection[{C\-M\-N\-\_\-\-D\-E\-C\-L\-A\-R\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-S\-\_\-\-I\-N\-S\-T\-A\-N\-T\-I\-A\-T\-I\-O\-N}]{\setlength{\rightskip}{0pt plus 5cm}C\-M\-N\-\_\-\-D\-E\-C\-L\-A\-R\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-S\-\_\-\-I\-N\-S\-T\-A\-N\-T\-I\-A\-T\-I\-O\-N (
 \begin{DoxyParamCaption}
-\item[{{\bf mts\+N\+D\+I\+Serial}}]{}
+\item[{{\bf mts\-N\-D\-I\-Serial}}]{}
 \end{DoxyParamCaption}
-)}\label{mts_n_d_i_serial_8h_a33506a72d05bd179532e7061e2c7bb20}
+)}}\label{mts_n_d_i_serial_8h_a33506a72d05bd179532e7061e2c7bb20}

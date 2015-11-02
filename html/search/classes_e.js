@@ -28,6 +28,8 @@ var searchData=
   ['osacriticalsection',['osaCriticalSection',['../db/dd8/classosa_critical_section.html',1,'']]],
   ['osadigitalinput1394',['osaDigitalInput1394',['../d3/d27/classsaw_robot_i_o1394_1_1osa_digital_input1394.html',1,'sawRobotIO1394']]],
   ['osadigitalinput1394configuration',['osaDigitalInput1394Configuration',['../d1/d3e/structsaw_robot_i_o1394_1_1osa_digital_input1394_configuration.html',1,'sawRobotIO1394']]],
+  ['osadigitaloutput1394',['osaDigitalOutput1394',['../da/d64/classsaw_robot_i_o1394_1_1osa_digital_output1394.html',1,'sawRobotIO1394']]],
+  ['osadigitaloutput1394configuration',['osaDigitalOutput1394Configuration',['../d2/df7/structsaw_robot_i_o1394_1_1osa_digital_output1394_configuration.html',1,'sawRobotIO1394']]],
   ['osadrive1394configuration',['osaDrive1394Configuration',['../d8/da9/structsaw_robot_i_o1394_1_1osa_drive1394_configuration.html',1,'sawRobotIO1394']]],
   ['osadynamicloader',['osaDynamicLoader',['../d0/d64/classosa_dynamic_loader.html',1,'']]],
   ['osadynamicloaderandfactory',['osaDynamicLoaderAndFactory',['../da/d80/classosa_dynamic_loader_and_factory.html',1,'']]],

@@ -1,5 +1,6 @@
-\hypertarget{classvct_dynamic_vector_loop_engines_1_1_vio_si_vi}{}\section{vct\+Dynamic\+Vector\+Loop\+Engines\+:\+:Vio\+Si\+Vi$<$ \+\_\+io\+Element\+Operation\+Type, \+\_\+scalar\+Vector\+Element\+Operation\+Type $>$ Class Template Reference}
-\label{classvct_dynamic_vector_loop_engines_1_1_vio_si_vi}\index{vct\+Dynamic\+Vector\+Loop\+Engines\+::\+Vio\+Si\+Vi$<$ \+\_\+io\+Element\+Operation\+Type, \+\_\+scalar\+Vector\+Element\+Operation\+Type $>$@{vct\+Dynamic\+Vector\+Loop\+Engines\+::\+Vio\+Si\+Vi$<$ \+\_\+io\+Element\+Operation\+Type, \+\_\+scalar\+Vector\+Element\+Operation\+Type $>$}}
+\hypertarget{classvct_dynamic_vector_loop_engines_1_1_vio_si_vi}{\section{vct\-Dynamic\-Vector\-Loop\-Engines\-:\-:Vio\-Si\-Vi$<$ \-\_\-io\-Element\-Operation\-Type, \-\_\-scalar\-Vector\-Element\-Operation\-Type $>$ Class Template Reference}
+\label{classvct_dynamic_vector_loop_engines_1_1_vio_si_vi}\index{vct\-Dynamic\-Vector\-Loop\-Engines\-::\-Vio\-Si\-Vi$<$ \-\_\-io\-Element\-Operation\-Type, \-\_\-scalar\-Vector\-Element\-Operation\-Type $>$@{vct\-Dynamic\-Vector\-Loop\-Engines\-::\-Vio\-Si\-Vi$<$ \-\_\-io\-Element\-Operation\-Type, \-\_\-scalar\-Vector\-Element\-Operation\-Type $>$}}
+}
 
 
 Implement operation of the form $v_{io} = op_{io}(v_{io}, op_{sv}(s, v_i))$ for dynamic vectors.  
@@ -7,17 +8,17 @@ Implement operation of the form $v_{io} = op_{io}(v_{io}, op_{sv}(s, v_i))$ for 
 
 
 
-{\ttfamily \#include $<$vct\+Dynamic\+Vector\+Loop\+Engines.\+h$>$}
+{\ttfamily \#include $<$vct\-Dynamic\-Vector\-Loop\-Engines.\-h$>$}
 
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-{\footnotesize template$<$class \+\_\+io\+Vector\+Type , class \+\_\+input\+Scalar\+Type , class \+\_\+input\+Vector\+Type $>$ }\\static void \hyperlink{classvct_dynamic_vector_loop_engines_1_1_vio_si_vi_aa33d203e2e29f5b88729ccefd2e57af4}{Run} (\+\_\+io\+Vector\+Type \&io\+Vector, const \+\_\+input\+Scalar\+Type input\+Scalar, const \+\_\+input\+Vector\+Type \&input\+Vector)
+{\footnotesize template$<$class \-\_\-io\-Vector\-Type , class \-\_\-input\-Scalar\-Type , class \-\_\-input\-Vector\-Type $>$ }\\static void \hyperlink{classvct_dynamic_vector_loop_engines_1_1_vio_si_vi_aa33d203e2e29f5b88729ccefd2e57af4}{Run} (\-\_\-io\-Vector\-Type \&io\-Vector, const \-\_\-input\-Scalar\-Type input\-Scalar, const \-\_\-input\-Vector\-Type \&input\-Vector)
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-\subsubsection*{template$<$class \+\_\+io\+Element\+Operation\+Type, class \+\_\+scalar\+Vector\+Element\+Operation\+Type$>$class vct\+Dynamic\+Vector\+Loop\+Engines\+::\+Vio\+Si\+Vi$<$ \+\_\+io\+Element\+Operation\+Type, \+\_\+scalar\+Vector\+Element\+Operation\+Type $>$}
+\subsubsection*{template$<$class \-\_\-io\-Element\-Operation\-Type, class \-\_\-scalar\-Vector\-Element\-Operation\-Type$>$class vct\-Dynamic\-Vector\-Loop\-Engines\-::\-Vio\-Si\-Vi$<$ \-\_\-io\-Element\-Operation\-Type, \-\_\-scalar\-Vector\-Element\-Operation\-Type $>$}
 
 Implement operation of the form $v_{io} = op_{io}(v_{io}, op_{sv}(s, v_i))$ for dynamic vectors. 
 
@@ -25,29 +26,29 @@ This class uses template specialization to perform store-\/back vector-\/scalar-
 
 \[ v_{io} = \mathrm{op_{io}}(V_{io}, \mathrm{op_{sv}}(s, v_i)) \]
 
-where $v_{io}$ is an input-\/output (store-\/back) vector; $s$ is a scalar; and $v_i$ is an input vector. A typical example is\+: $v_{io} += s \cdot v_i$. $op_{sv}$ is an operation between $s$ and the elements of $v_i$; $op_{io}$ is an operation between the output of $op_{sv}$ and the elements of $v_{io}$.
+where $v_{io}$ is an input-\/output (store-\/back) vector; $s$ is a scalar; and $v_i$ is an input vector. A typical example is\-: $v_{io} += s \cdot v_i$. $op_{sv}$ is an operation between $s$ and the elements of $v_i$; $op_{io}$ is an operation between the output of $op_{sv}$ and the elements of $v_{io}$.
 
 
 \begin{DoxyParams}{Parameters}
-{\em \+\_\+io\+Operation\+Type} & The type of the store-\/back operation.\\
+{\em \-\_\-io\-Operation\-Type} & The type of the store-\/back operation.\\
 \hline
-{\em \+\_\+scalar\+Vector\+Element\+Operation\+Type} & The type of the operation between scalar and input vector. \\
+{\em \-\_\-scalar\-Vector\-Element\-Operation\-Type} & The type of the operation between scalar and input vector. \\
 \hline
 \end{DoxyParams}
 
 
 \subsection{Member Function Documentation}
-\hypertarget{classvct_dynamic_vector_loop_engines_1_1_vio_si_vi_aa33d203e2e29f5b88729ccefd2e57af4}{}\index{vct\+Dynamic\+Vector\+Loop\+Engines\+::\+Vio\+Si\+Vi@{vct\+Dynamic\+Vector\+Loop\+Engines\+::\+Vio\+Si\+Vi}!Run@{Run}}
-\index{Run@{Run}!vct\+Dynamic\+Vector\+Loop\+Engines\+::\+Vio\+Si\+Vi@{vct\+Dynamic\+Vector\+Loop\+Engines\+::\+Vio\+Si\+Vi}}
-\subsubsection[{Run}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+io\+Element\+Operation\+Type , class \+\_\+scalar\+Vector\+Element\+Operation\+Type $>$ template$<$class \+\_\+io\+Vector\+Type , class \+\_\+input\+Scalar\+Type , class \+\_\+input\+Vector\+Type $>$ static void {\bf vct\+Dynamic\+Vector\+Loop\+Engines\+::\+Vio\+Si\+Vi}$<$ \+\_\+io\+Element\+Operation\+Type, \+\_\+scalar\+Vector\+Element\+Operation\+Type $>$\+::Run (
+\hypertarget{classvct_dynamic_vector_loop_engines_1_1_vio_si_vi_aa33d203e2e29f5b88729ccefd2e57af4}{\index{vct\-Dynamic\-Vector\-Loop\-Engines\-::\-Vio\-Si\-Vi@{vct\-Dynamic\-Vector\-Loop\-Engines\-::\-Vio\-Si\-Vi}!Run@{Run}}
+\index{Run@{Run}!vctDynamicVectorLoopEngines::VioSiVi@{vct\-Dynamic\-Vector\-Loop\-Engines\-::\-Vio\-Si\-Vi}}
+\subsubsection[{Run}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-io\-Element\-Operation\-Type , class \-\_\-scalar\-Vector\-Element\-Operation\-Type $>$ template$<$class \-\_\-io\-Vector\-Type , class \-\_\-input\-Scalar\-Type , class \-\_\-input\-Vector\-Type $>$ static void {\bf vct\-Dynamic\-Vector\-Loop\-Engines\-::\-Vio\-Si\-Vi}$<$ \-\_\-io\-Element\-Operation\-Type, \-\_\-scalar\-Vector\-Element\-Operation\-Type $>$\-::Run (
 \begin{DoxyParamCaption}
-\item[{\+\_\+io\+Vector\+Type \&}]{io\+Vector, }
-\item[{const \+\_\+input\+Scalar\+Type}]{input\+Scalar, }
-\item[{const \+\_\+input\+Vector\+Type \&}]{input\+Vector}
+\item[{\-\_\-io\-Vector\-Type \&}]{io\-Vector, }
+\item[{const \-\_\-input\-Scalar\-Type}]{input\-Scalar, }
+\item[{const \-\_\-input\-Vector\-Type \&}]{input\-Vector}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classvct_dynamic_vector_loop_engines_1_1_vio_si_vi_aa33d203e2e29f5b88729ccefd2e57af4}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classvct_dynamic_vector_loop_engines_1_1_vio_si_vi_aa33d203e2e29f5b88729ccefd2e57af4}
 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
 \item 
-/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Vector/\hyperlink{vct_dynamic_vector_loop_engines_8h}{vct\+Dynamic\+Vector\+Loop\+Engines.\+h}\end{DoxyCompactItemize}
+/home/adeguet1/catkin\-\_\-ws/src/cisst-\/saw/cisst/cisst\-Vector/\hyperlink{vct_dynamic_vector_loop_engines_8h}{vct\-Dynamic\-Vector\-Loop\-Engines.\-h}\end{DoxyCompactItemize}

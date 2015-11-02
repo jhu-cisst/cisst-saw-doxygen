@@ -1,5 +1,6 @@
-\hypertarget{classosa_thread}{}\section{osa\+Thread Class Reference}
-\label{classosa_thread}\index{osa\+Thread@{osa\+Thread}}
+\hypertarget{classosa_thread}{\section{osa\-Thread Class Reference}
+\label{classosa_thread}\index{osa\-Thread@{osa\-Thread}}
+}
 
 
 Define a thread object.  
@@ -7,276 +8,276 @@ Define a thread object.
 
 
 
-{\ttfamily \#include $<$osa\+Thread.\+h$>$}
+{\ttfamily \#include $<$osa\-Thread.\-h$>$}
 
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classosa_thread_a07af4cb616252c49d88fe4af1c4dff0d}{osa\+Thread} ()
+\hyperlink{classosa_thread_a07af4cb616252c49d88fe4af1c4dff0d}{osa\-Thread} ()
 \item 
-\hyperlink{classosa_thread_ac3ecb3d70e403a025136b1b7b7512339}{$\sim$osa\+Thread} ()
+\hyperlink{classosa_thread_ac3ecb3d70e403a025136b1b7b7512339}{$\sim$osa\-Thread} ()
 \item 
-void \hyperlink{classosa_thread_acc044c7a382f6909d73464ee96654e9c}{Create} (void $\ast$($\ast$thread\+Start)(void), const char $\ast$name=0, int priority=0, int policy=\hyperlink{osa_thread_8h_ab998332c6538a029b4eed398b7a423da}{S\+C\+H\+E\+D\+\_\+\+F\+I\+F\+O})
+void \hyperlink{classosa_thread_acc044c7a382f6909d73464ee96654e9c}{Create} (void $\ast$($\ast$thread\-Start)(void), const char $\ast$name=0, int priority=0, int policy=\hyperlink{osa_thread_8h_ab998332c6538a029b4eed398b7a423da}{S\-C\-H\-E\-D\-\_\-\-F\-I\-F\-O})
 \item 
-{\footnotesize template$<$class \+\_\+user\+Data\+Type $>$ }\\void \hyperlink{classosa_thread_a8d4e564d8693fd3d58f2bf3c51e6ea2f}{Create} (void $\ast$($\ast$thread\+Start)(\+\_\+user\+Data\+Type), \+\_\+user\+Data\+Type user\+Data=\+\_\+user\+Data\+Type(), const char $\ast$name=0, int priority=0, int policy=\hyperlink{osa_thread_8h_ab998332c6538a029b4eed398b7a423da}{S\+C\+H\+E\+D\+\_\+\+F\+I\+F\+O})
+{\footnotesize template$<$class \-\_\-user\-Data\-Type $>$ }\\void \hyperlink{classosa_thread_a8d4e564d8693fd3d58f2bf3c51e6ea2f}{Create} (void $\ast$($\ast$thread\-Start)(\-\_\-user\-Data\-Type), \-\_\-user\-Data\-Type user\-Data=\-\_\-user\-Data\-Type(), const char $\ast$name=0, int priority=0, int policy=\hyperlink{osa_thread_8h_ab998332c6538a029b4eed398b7a423da}{S\-C\-H\-E\-D\-\_\-\-F\-I\-F\-O})
 \item 
-{\footnotesize template$<$class \+\_\+entry\+Type , class \+\_\+user\+Data\+Type $>$ }\\void \hyperlink{classosa_thread_a474ad4e267aacae8de7ee014a225dacf}{Create} (\+\_\+entry\+Type $\ast$obj, void $\ast$(\+\_\+entry\+Type\+::$\ast$thread\+Start)(\+\_\+user\+Data\+Type), \+\_\+user\+Data\+Type user\+Data=\+\_\+user\+Data\+Type(), const char $\ast$name=0, int priority=0, int policy=\hyperlink{osa_thread_8h_ab998332c6538a029b4eed398b7a423da}{S\+C\+H\+E\+D\+\_\+\+F\+I\+F\+O})
+{\footnotesize template$<$class \-\_\-entry\-Type , class \-\_\-user\-Data\-Type $>$ }\\void \hyperlink{classosa_thread_a474ad4e267aacae8de7ee014a225dacf}{Create} (\-\_\-entry\-Type $\ast$obj, void $\ast$(\-\_\-entry\-Type\-::$\ast$thread\-Start)(\-\_\-user\-Data\-Type), \-\_\-user\-Data\-Type user\-Data=\-\_\-user\-Data\-Type(), const char $\ast$name=0, int priority=0, int policy=\hyperlink{osa_thread_8h_ab998332c6538a029b4eed398b7a423da}{S\-C\-H\-E\-D\-\_\-\-F\-I\-F\-O})
 \item 
-void \hyperlink{classosa_thread_aa3e4a3f768b9642be4b3efa33ec4ab48}{Create\+From\+Current\+Thread} (const char $\ast$name=0, int priority=0, int policy=\hyperlink{osa_thread_8h_ab998332c6538a029b4eed398b7a423da}{S\+C\+H\+E\+D\+\_\+\+F\+I\+F\+O})
+void \hyperlink{classosa_thread_aa3e4a3f768b9642be4b3efa33ec4ab48}{Create\-From\-Current\-Thread} (const char $\ast$name=0, int priority=0, int policy=\hyperlink{osa_thread_8h_ab998332c6538a029b4eed398b7a423da}{S\-C\-H\-E\-D\-\_\-\-F\-I\-F\-O})
 \item 
-void \hyperlink{classosa_thread_a080f9dbe273fad070d94a411684b4ca2}{Create\+From\+Thread\+Id} (const \hyperlink{classosa_thread_id}{osa\+Thread\+Id} \&thread\+Id, const char $\ast$name=0, int priority=0, int policy=\hyperlink{osa_thread_8h_ab998332c6538a029b4eed398b7a423da}{S\+C\+H\+E\+D\+\_\+\+F\+I\+F\+O})
+void \hyperlink{classosa_thread_a080f9dbe273fad070d94a411684b4ca2}{Create\-From\-Thread\-Id} (const \hyperlink{classosa_thread_id}{osa\-Thread\-Id} \&thread\-Id, const char $\ast$name=0, int priority=0, int policy=\hyperlink{osa_thread_8h_ab998332c6538a029b4eed398b7a423da}{S\-C\-H\-E\-D\-\_\-\-F\-I\-F\-O})
 \item 
 void \hyperlink{classosa_thread_abc8c57e73e11e24c3b5203d520ecd877}{Delete} (void)
 \item 
 void \hyperlink{classosa_thread_a94895a862be656d41e113f64dfb6d274}{Wait} (void)
 \item 
-void \hyperlink{classosa_thread_adaa096f5ae24c775c7f3011affc251e2}{Wait\+For\+Wakeup} (void)
+void \hyperlink{classosa_thread_adaa096f5ae24c775c7f3011affc251e2}{Wait\-For\-Wakeup} (void)
 \item 
-void \hyperlink{classosa_thread_a9a82d911b12b9a111527f90ba3793d82}{Wait\+For\+Wakeup} (double timeout\+In\+Sec)
+void \hyperlink{classosa_thread_a9a82d911b12b9a111527f90ba3793d82}{Wait\-For\-Wakeup} (double timeout\-In\-Sec)
 \item 
 void \hyperlink{classosa_thread_a6bdb340d306cbecfca251d5f8dcd7d50}{Wakeup} (void)
 \item 
-const char $\ast$ \hyperlink{classosa_thread_aacbb9a3ec74bc5d3ee924f986dd681d6}{Get\+Name} (void) const 
+const char $\ast$ \hyperlink{classosa_thread_aacbb9a3ec74bc5d3ee924f986dd681d6}{Get\-Name} (void) const 
 \item 
-\hyperlink{classosa_thread_id}{osa\+Thread\+Id} \hyperlink{classosa_thread_a1700ab631890de1d6211eb9f635fc0cc}{Get\+Id} (void) const 
+\hyperlink{classosa_thread_id}{osa\-Thread\-Id} \hyperlink{classosa_thread_a1700ab631890de1d6211eb9f635fc0cc}{Get\-Id} (void) const 
 \item 
-\hyperlink{osa_thread_8h_a118e6f24bad4e18e7d179bb41166ae8c}{Priority\+Type} \hyperlink{classosa_thread_a814d2d55a2c028fa282a6ed99e3bb068}{Get\+Priority} (void) const 
+\hyperlink{osa_thread_8h_a118e6f24bad4e18e7d179bb41166ae8c}{Priority\-Type} \hyperlink{classosa_thread_a814d2d55a2c028fa282a6ed99e3bb068}{Get\-Priority} (void) const 
 \item 
-void \hyperlink{classosa_thread_afe4e333816d8d6c5765d61f03bd90a11}{Set\+Priority} (\hyperlink{osa_thread_8h_a118e6f24bad4e18e7d179bb41166ae8c}{Priority\+Type} priority)
+void \hyperlink{classosa_thread_afe4e333816d8d6c5765d61f03bd90a11}{Set\-Priority} (\hyperlink{osa_thread_8h_a118e6f24bad4e18e7d179bb41166ae8c}{Priority\-Type} priority)
 \item 
-\hyperlink{osa_thread_8h_a52b64f646398cfbb451b035825642724}{Scheduling\+Policy\+Type} \hyperlink{classosa_thread_a9e6f22030b4ef6c0c0eca6408696d3e0}{Get\+Scheduling\+Policy} (void)
+\hyperlink{osa_thread_8h_a52b64f646398cfbb451b035825642724}{Scheduling\-Policy\-Type} \hyperlink{classosa_thread_a9e6f22030b4ef6c0c0eca6408696d3e0}{Get\-Scheduling\-Policy} (void)
 \item 
-void \hyperlink{classosa_thread_a58f2be5f8b86d296fae2061a16803f26}{Set\+Scheduling\+Policy} (\hyperlink{osa_thread_8h_a52b64f646398cfbb451b035825642724}{Scheduling\+Policy\+Type} policy)
+void \hyperlink{classosa_thread_a58f2be5f8b86d296fae2061a16803f26}{Set\-Scheduling\-Policy} (\hyperlink{osa_thread_8h_a52b64f646398cfbb451b035825642724}{Scheduling\-Policy\-Type} policy)
 \item 
-void \hyperlink{classosa_thread_af7490cefd464c7ea87b287f70e4dc833}{Sleep} (double time\+In\+Seconds)
+void \hyperlink{classosa_thread_af7490cefd464c7ea87b287f70e4dc833}{Sleep} (double time\-In\-Seconds)
 \item 
-bool \hyperlink{classosa_thread_a3dbeece9c55c7730d229e715c3adf29f}{Is\+Running} (void) const 
+bool \hyperlink{classosa_thread_a3dbeece9c55c7730d229e715c3adf29f}{Is\-Running} (void) const 
 \item 
-bool \hyperlink{classosa_thread_ad0199fe60a017dac38be9b8211ea7206}{Is\+Valid} (void) const 
+bool \hyperlink{classosa_thread_ad0199fe60a017dac38be9b8211ea7206}{Is\-Valid} (void) const 
 \end{DoxyCompactItemize}
 \subsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \hyperlink{classosa_thread_acf3b3067cff63a6b43483518c71ff90d}{Create\+Internal} (const char $\ast$name, void $\ast$func, void $\ast$userdata)
+void \hyperlink{classosa_thread_acf3b3067cff63a6b43483518c71ff90d}{Create\-Internal} (const char $\ast$name, void $\ast$func, void $\ast$userdata)
 \item 
-void \hyperlink{classosa_thread_a739d50a6c6f7cc6c8fa44e79644cd922}{Set\+Thread\+Name} (const char $\ast$name)
+void \hyperlink{classosa_thread_a739d50a6c6f7cc6c8fa44e79644cd922}{Set\-Thread\-Name} (const char $\ast$name)
 \end{DoxyCompactItemize}
 \subsection*{Friends}
 \begin{DoxyCompactItemize}
 \item 
-class \hyperlink{classosa_thread_a542e7acdd9a832dddf65bf204d2df936}{osa\+Thread\+Test}
+class \hyperlink{classosa_thread_a542e7acdd9a832dddf65bf204d2df936}{osa\-Thread\-Test}
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
 Define a thread object. 
 
-The thread class is just a wrapper on the O\+S-\/specific thread management functions. For now, wraps functions such as Create\+Thread, Delete\+Thread, Get\+Thread\+Priority, Set\+Thread\+Priority and so on. Additional functionality, such as inter-\/thread communication, maintenance of state information, etc., are provided by the \hyperlink{classmts_task}{mts\+Task} class.
+The thread class is just a wrapper on the O\-S-\/specific thread management functions. For now, wraps functions such as Create\-Thread, Delete\-Thread, Get\-Thread\-Priority, Set\-Thread\-Priority and so on. Additional functionality, such as inter-\/thread communication, maintenance of state information, etc., are provided by the \hyperlink{classmts_task}{mts\-Task} class.
 
-\begin{DoxySeeAlso}{See also}
-\hyperlink{classmts_task}{mts\+Task} 
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classmts_task}{mts\-Task} 
 \end{DoxySeeAlso}
 
 
 \subsection{Constructor \& Destructor Documentation}
-\hypertarget{classosa_thread_a07af4cb616252c49d88fe4af1c4dff0d}{}\index{osa\+Thread@{osa\+Thread}!osa\+Thread@{osa\+Thread}}
-\index{osa\+Thread@{osa\+Thread}!osa\+Thread@{osa\+Thread}}
-\subsubsection[{osa\+Thread}]{\setlength{\rightskip}{0pt plus 5cm}osa\+Thread\+::osa\+Thread (
+\hypertarget{classosa_thread_a07af4cb616252c49d88fe4af1c4dff0d}{\index{osa\-Thread@{osa\-Thread}!osa\-Thread@{osa\-Thread}}
+\index{osa\-Thread@{osa\-Thread}!osaThread@{osa\-Thread}}
+\subsubsection[{osa\-Thread}]{\setlength{\rightskip}{0pt plus 5cm}osa\-Thread\-::osa\-Thread (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}\label{classosa_thread_a07af4cb616252c49d88fe4af1c4dff0d}
-Default constructor. Does nothing. \hypertarget{classosa_thread_ac3ecb3d70e403a025136b1b7b7512339}{}\index{osa\+Thread@{osa\+Thread}!````~osa\+Thread@{$\sim$osa\+Thread}}
-\index{````~osa\+Thread@{$\sim$osa\+Thread}!osa\+Thread@{osa\+Thread}}
-\subsubsection[{$\sim$osa\+Thread}]{\setlength{\rightskip}{0pt plus 5cm}osa\+Thread\+::$\sim$osa\+Thread (
+)}}\label{classosa_thread_a07af4cb616252c49d88fe4af1c4dff0d}
+Default constructor. Does nothing. \hypertarget{classosa_thread_ac3ecb3d70e403a025136b1b7b7512339}{\index{osa\-Thread@{osa\-Thread}!$\sim$osa\-Thread@{$\sim$osa\-Thread}}
+\index{$\sim$osa\-Thread@{$\sim$osa\-Thread}!osaThread@{osa\-Thread}}
+\subsubsection[{$\sim$osa\-Thread}]{\setlength{\rightskip}{0pt plus 5cm}osa\-Thread\-::$\sim$osa\-Thread (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}\label{classosa_thread_ac3ecb3d70e403a025136b1b7b7512339}
+)}}\label{classosa_thread_ac3ecb3d70e403a025136b1b7b7512339}
 Default destructor. Does nothing. 
 
 \subsection{Member Function Documentation}
-\hypertarget{classosa_thread_acc044c7a382f6909d73464ee96654e9c}{}\index{osa\+Thread@{osa\+Thread}!Create@{Create}}
-\index{Create@{Create}!osa\+Thread@{osa\+Thread}}
-\subsubsection[{Create}]{\setlength{\rightskip}{0pt plus 5cm}void osa\+Thread\+::\+Create (
+\hypertarget{classosa_thread_acc044c7a382f6909d73464ee96654e9c}{\index{osa\-Thread@{osa\-Thread}!Create@{Create}}
+\index{Create@{Create}!osaThread@{osa\-Thread}}
+\subsubsection[{Create}]{\setlength{\rightskip}{0pt plus 5cm}void osa\-Thread\-::\-Create (
 \begin{DoxyParamCaption}
-\item[{void $\ast$($\ast$)(void)}]{thread\+Start, }
+\item[{void $\ast$($\ast$)(void)}]{thread\-Start, }
 \item[{const char $\ast$}]{name = {\ttfamily 0}, }
 \item[{int}]{priority = {\ttfamily 0}, }
-\item[{int}]{policy = {\ttfamily {\bf S\+C\+H\+E\+D\+\_\+\+F\+I\+F\+O}}}
+\item[{int}]{policy = {\ttfamily {\bf S\-C\-H\-E\-D\-\_\-\-F\-I\-F\-O}}}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\label{classosa_thread_acc044c7a382f6909d73464ee96654e9c}
-Creates a new thread that will execute the specified function, with no parameters. \hypertarget{classosa_thread_a8d4e564d8693fd3d58f2bf3c51e6ea2f}{}\index{osa\+Thread@{osa\+Thread}!Create@{Create}}
-\index{Create@{Create}!osa\+Thread@{osa\+Thread}}
-\subsubsection[{Create}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+user\+Data\+Type $>$ void osa\+Thread\+::\+Create (
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classosa_thread_acc044c7a382f6909d73464ee96654e9c}
+Creates a new thread that will execute the specified function, with no parameters. \hypertarget{classosa_thread_a8d4e564d8693fd3d58f2bf3c51e6ea2f}{\index{osa\-Thread@{osa\-Thread}!Create@{Create}}
+\index{Create@{Create}!osaThread@{osa\-Thread}}
+\subsubsection[{Create}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-user\-Data\-Type $>$ void osa\-Thread\-::\-Create (
 \begin{DoxyParamCaption}
-\item[{void $\ast$($\ast$)(\+\_\+user\+Data\+Type)}]{thread\+Start, }
-\item[{\+\_\+user\+Data\+Type}]{user\+Data = {\ttfamily \+\_\+userDataType()}, }
+\item[{void $\ast$($\ast$)(\-\_\-user\-Data\-Type)}]{thread\-Start, }
+\item[{\-\_\-user\-Data\-Type}]{user\-Data = {\ttfamily \-\_\-userDataType()}, }
 \item[{const char $\ast$}]{name = {\ttfamily 0}, }
 \item[{int}]{priority = {\ttfamily 0}, }
-\item[{int}]{policy = {\ttfamily {\bf S\+C\+H\+E\+D\+\_\+\+F\+I\+F\+O}}}
+\item[{int}]{policy = {\ttfamily {\bf S\-C\-H\-E\-D\-\_\-\-F\-I\-F\-O}}}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\label{classosa_thread_a8d4e564d8693fd3d58f2bf3c51e6ea2f}
-Creates a new thread that will execute the specified function, taking a single parameter. \hypertarget{classosa_thread_a474ad4e267aacae8de7ee014a225dacf}{}\index{osa\+Thread@{osa\+Thread}!Create@{Create}}
-\index{Create@{Create}!osa\+Thread@{osa\+Thread}}
-\subsubsection[{Create}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+entry\+Type , class \+\_\+user\+Data\+Type $>$ void osa\+Thread\+::\+Create (
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classosa_thread_a8d4e564d8693fd3d58f2bf3c51e6ea2f}
+Creates a new thread that will execute the specified function, taking a single parameter. \hypertarget{classosa_thread_a474ad4e267aacae8de7ee014a225dacf}{\index{osa\-Thread@{osa\-Thread}!Create@{Create}}
+\index{Create@{Create}!osaThread@{osa\-Thread}}
+\subsubsection[{Create}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-entry\-Type , class \-\_\-user\-Data\-Type $>$ void osa\-Thread\-::\-Create (
 \begin{DoxyParamCaption}
-\item[{\+\_\+entry\+Type $\ast$}]{obj, }
-\item[{void $\ast$(\+\_\+entry\+Type\+::$\ast$)(\+\_\+user\+Data\+Type)}]{thread\+Start, }
-\item[{\+\_\+user\+Data\+Type}]{user\+Data = {\ttfamily \+\_\+userDataType()}, }
+\item[{\-\_\-entry\-Type $\ast$}]{obj, }
+\item[{void $\ast$(\-\_\-entry\-Type\-::$\ast$)(\-\_\-user\-Data\-Type)}]{thread\-Start, }
+\item[{\-\_\-user\-Data\-Type}]{user\-Data = {\ttfamily \-\_\-userDataType()}, }
 \item[{const char $\ast$}]{name = {\ttfamily 0}, }
 \item[{int}]{priority = {\ttfamily 0}, }
-\item[{int}]{policy = {\ttfamily {\bf S\+C\+H\+E\+D\+\_\+\+F\+I\+F\+O}}}
+\item[{int}]{policy = {\ttfamily {\bf S\-C\-H\-E\-D\-\_\-\-F\-I\-F\-O}}}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\label{classosa_thread_a474ad4e267aacae8de7ee014a225dacf}
-Creates a new thread that will execute the specified class member function. Note that the object is copied to the heap so it remains valid, even if the original object is destroyed. \hypertarget{classosa_thread_aa3e4a3f768b9642be4b3efa33ec4ab48}{}\index{osa\+Thread@{osa\+Thread}!Create\+From\+Current\+Thread@{Create\+From\+Current\+Thread}}
-\index{Create\+From\+Current\+Thread@{Create\+From\+Current\+Thread}!osa\+Thread@{osa\+Thread}}
-\subsubsection[{Create\+From\+Current\+Thread}]{\setlength{\rightskip}{0pt plus 5cm}void osa\+Thread\+::\+Create\+From\+Current\+Thread (
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classosa_thread_a474ad4e267aacae8de7ee014a225dacf}
+Creates a new thread that will execute the specified class member function. Note that the object is copied to the heap so it remains valid, even if the original object is destroyed. \hypertarget{classosa_thread_aa3e4a3f768b9642be4b3efa33ec4ab48}{\index{osa\-Thread@{osa\-Thread}!Create\-From\-Current\-Thread@{Create\-From\-Current\-Thread}}
+\index{Create\-From\-Current\-Thread@{Create\-From\-Current\-Thread}!osaThread@{osa\-Thread}}
+\subsubsection[{Create\-From\-Current\-Thread}]{\setlength{\rightskip}{0pt plus 5cm}void osa\-Thread\-::\-Create\-From\-Current\-Thread (
 \begin{DoxyParamCaption}
 \item[{const char $\ast$}]{name = {\ttfamily 0}, }
 \item[{int}]{priority = {\ttfamily 0}, }
-\item[{int}]{policy = {\ttfamily {\bf S\+C\+H\+E\+D\+\_\+\+F\+I\+F\+O}}}
+\item[{int}]{policy = {\ttfamily {\bf S\-C\-H\-E\-D\-\_\-\-F\-I\-F\-O}}}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\label{classosa_thread_aa3e4a3f768b9642be4b3efa33ec4ab48}
-Initialize the thread object so that it refers to the calling thread, rather than creating a new thread. This allows existing threads to intermix with newly created threads. \hypertarget{classosa_thread_a080f9dbe273fad070d94a411684b4ca2}{}\index{osa\+Thread@{osa\+Thread}!Create\+From\+Thread\+Id@{Create\+From\+Thread\+Id}}
-\index{Create\+From\+Thread\+Id@{Create\+From\+Thread\+Id}!osa\+Thread@{osa\+Thread}}
-\subsubsection[{Create\+From\+Thread\+Id}]{\setlength{\rightskip}{0pt plus 5cm}void osa\+Thread\+::\+Create\+From\+Thread\+Id (
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classosa_thread_aa3e4a3f768b9642be4b3efa33ec4ab48}
+Initialize the thread object so that it refers to the calling thread, rather than creating a new thread. This allows existing threads to intermix with newly created threads. \hypertarget{classosa_thread_a080f9dbe273fad070d94a411684b4ca2}{\index{osa\-Thread@{osa\-Thread}!Create\-From\-Thread\-Id@{Create\-From\-Thread\-Id}}
+\index{Create\-From\-Thread\-Id@{Create\-From\-Thread\-Id}!osaThread@{osa\-Thread}}
+\subsubsection[{Create\-From\-Thread\-Id}]{\setlength{\rightskip}{0pt plus 5cm}void osa\-Thread\-::\-Create\-From\-Thread\-Id (
 \begin{DoxyParamCaption}
-\item[{const {\bf osa\+Thread\+Id} \&}]{thread\+Id, }
+\item[{const {\bf osa\-Thread\-Id} \&}]{thread\-Id, }
 \item[{const char $\ast$}]{name = {\ttfamily 0}, }
 \item[{int}]{priority = {\ttfamily 0}, }
-\item[{int}]{policy = {\ttfamily {\bf S\+C\+H\+E\+D\+\_\+\+F\+I\+F\+O}}}
+\item[{int}]{policy = {\ttfamily {\bf S\-C\-H\-E\-D\-\_\-\-F\-I\-F\-O}}}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\label{classosa_thread_a080f9dbe273fad070d94a411684b4ca2}
-\hypertarget{classosa_thread_acf3b3067cff63a6b43483518c71ff90d}{}\index{osa\+Thread@{osa\+Thread}!Create\+Internal@{Create\+Internal}}
-\index{Create\+Internal@{Create\+Internal}!osa\+Thread@{osa\+Thread}}
-\subsubsection[{Create\+Internal}]{\setlength{\rightskip}{0pt plus 5cm}void osa\+Thread\+::\+Create\+Internal (
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classosa_thread_a080f9dbe273fad070d94a411684b4ca2}
+\hypertarget{classosa_thread_acf3b3067cff63a6b43483518c71ff90d}{\index{osa\-Thread@{osa\-Thread}!Create\-Internal@{Create\-Internal}}
+\index{Create\-Internal@{Create\-Internal}!osaThread@{osa\-Thread}}
+\subsubsection[{Create\-Internal}]{\setlength{\rightskip}{0pt plus 5cm}void osa\-Thread\-::\-Create\-Internal (
 \begin{DoxyParamCaption}
 \item[{const char $\ast$}]{name, }
 \item[{void $\ast$}]{func, }
 \item[{void $\ast$}]{userdata}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [protected]}}\label{classosa_thread_acf3b3067cff63a6b43483518c71ff90d}
-Creates a new thread. \hypertarget{classosa_thread_abc8c57e73e11e24c3b5203d520ecd877}{}\index{osa\+Thread@{osa\+Thread}!Delete@{Delete}}
-\index{Delete@{Delete}!osa\+Thread@{osa\+Thread}}
-\subsubsection[{Delete}]{\setlength{\rightskip}{0pt plus 5cm}void osa\+Thread\+::\+Delete (
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classosa_thread_acf3b3067cff63a6b43483518c71ff90d}
+Creates a new thread. \hypertarget{classosa_thread_abc8c57e73e11e24c3b5203d520ecd877}{\index{osa\-Thread@{osa\-Thread}!Delete@{Delete}}
+\index{Delete@{Delete}!osaThread@{osa\-Thread}}
+\subsubsection[{Delete}]{\setlength{\rightskip}{0pt plus 5cm}void osa\-Thread\-::\-Delete (
 \begin{DoxyParamCaption}
 \item[{void}]{}
 \end{DoxyParamCaption}
-)}\label{classosa_thread_abc8c57e73e11e24c3b5203d520ecd877}
-Deletes a thread. Deletes (removes from memory) everything associated with a thread, e.\+g. stack, local data, static variables. \hypertarget{classosa_thread_a1700ab631890de1d6211eb9f635fc0cc}{}\index{osa\+Thread@{osa\+Thread}!Get\+Id@{Get\+Id}}
-\index{Get\+Id@{Get\+Id}!osa\+Thread@{osa\+Thread}}
-\subsubsection[{Get\+Id}]{\setlength{\rightskip}{0pt plus 5cm}{\bf osa\+Thread\+Id} osa\+Thread\+::\+Get\+Id (
+)}}\label{classosa_thread_abc8c57e73e11e24c3b5203d520ecd877}
+Deletes a thread. Deletes (removes from memory) everything associated with a thread, e.\-g. stack, local data, static variables. \hypertarget{classosa_thread_a1700ab631890de1d6211eb9f635fc0cc}{\index{osa\-Thread@{osa\-Thread}!Get\-Id@{Get\-Id}}
+\index{Get\-Id@{Get\-Id}!osaThread@{osa\-Thread}}
+\subsubsection[{Get\-Id}]{\setlength{\rightskip}{0pt plus 5cm}{\bf osa\-Thread\-Id} osa\-Thread\-::\-Get\-Id (
 \begin{DoxyParamCaption}
 \item[{void}]{}
 \end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classosa_thread_a1700ab631890de1d6211eb9f635fc0cc}
-Return the thread id. \hypertarget{classosa_thread_aacbb9a3ec74bc5d3ee924f986dd681d6}{}\index{osa\+Thread@{osa\+Thread}!Get\+Name@{Get\+Name}}
-\index{Get\+Name@{Get\+Name}!osa\+Thread@{osa\+Thread}}
-\subsubsection[{Get\+Name}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ osa\+Thread\+::\+Get\+Name (
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classosa_thread_a1700ab631890de1d6211eb9f635fc0cc}
+Return the thread id. \hypertarget{classosa_thread_aacbb9a3ec74bc5d3ee924f986dd681d6}{\index{osa\-Thread@{osa\-Thread}!Get\-Name@{Get\-Name}}
+\index{Get\-Name@{Get\-Name}!osaThread@{osa\-Thread}}
+\subsubsection[{Get\-Name}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ osa\-Thread\-::\-Get\-Name (
 \begin{DoxyParamCaption}
 \item[{void}]{}
 \end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classosa_thread_aacbb9a3ec74bc5d3ee924f986dd681d6}
-Return the thread name. \hypertarget{classosa_thread_a814d2d55a2c028fa282a6ed99e3bb068}{}\index{osa\+Thread@{osa\+Thread}!Get\+Priority@{Get\+Priority}}
-\index{Get\+Priority@{Get\+Priority}!osa\+Thread@{osa\+Thread}}
-\subsubsection[{Get\+Priority}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Priority\+Type} osa\+Thread\+::\+Get\+Priority (
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classosa_thread_aacbb9a3ec74bc5d3ee924f986dd681d6}
+Return the thread name. \hypertarget{classosa_thread_a814d2d55a2c028fa282a6ed99e3bb068}{\index{osa\-Thread@{osa\-Thread}!Get\-Priority@{Get\-Priority}}
+\index{Get\-Priority@{Get\-Priority}!osaThread@{osa\-Thread}}
+\subsubsection[{Get\-Priority}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Priority\-Type} osa\-Thread\-::\-Get\-Priority (
 \begin{DoxyParamCaption}
 \item[{void}]{}
 \end{DoxyParamCaption}
-) const}\label{classosa_thread_a814d2d55a2c028fa282a6ed99e3bb068}
-Get the O\+S {\itshape independent} priority of the thread. \hypertarget{classosa_thread_a9e6f22030b4ef6c0c0eca6408696d3e0}{}\index{osa\+Thread@{osa\+Thread}!Get\+Scheduling\+Policy@{Get\+Scheduling\+Policy}}
-\index{Get\+Scheduling\+Policy@{Get\+Scheduling\+Policy}!osa\+Thread@{osa\+Thread}}
-\subsubsection[{Get\+Scheduling\+Policy}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Scheduling\+Policy\+Type} osa\+Thread\+::\+Get\+Scheduling\+Policy (
+) const}}\label{classosa_thread_a814d2d55a2c028fa282a6ed99e3bb068}
+Get the O\-S {\itshape independent} priority of the thread. \hypertarget{classosa_thread_a9e6f22030b4ef6c0c0eca6408696d3e0}{\index{osa\-Thread@{osa\-Thread}!Get\-Scheduling\-Policy@{Get\-Scheduling\-Policy}}
+\index{Get\-Scheduling\-Policy@{Get\-Scheduling\-Policy}!osaThread@{osa\-Thread}}
+\subsubsection[{Get\-Scheduling\-Policy}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Scheduling\-Policy\-Type} osa\-Thread\-::\-Get\-Scheduling\-Policy (
 \begin{DoxyParamCaption}
 \item[{void}]{}
 \end{DoxyParamCaption}
-)}\label{classosa_thread_a9e6f22030b4ef6c0c0eca6408696d3e0}
-Get the O\+S {\itshape independent} scheduling policy of the thread. Will not be available on all platforms or will return a constant. \hypertarget{classosa_thread_a3dbeece9c55c7730d229e715c3adf29f}{}\index{osa\+Thread@{osa\+Thread}!Is\+Running@{Is\+Running}}
-\index{Is\+Running@{Is\+Running}!osa\+Thread@{osa\+Thread}}
-\subsubsection[{Is\+Running}]{\setlength{\rightskip}{0pt plus 5cm}bool osa\+Thread\+::\+Is\+Running (
+)}}\label{classosa_thread_a9e6f22030b4ef6c0c0eca6408696d3e0}
+Get the O\-S {\itshape independent} scheduling policy of the thread. Will not be available on all platforms or will return a constant. \hypertarget{classosa_thread_a3dbeece9c55c7730d229e715c3adf29f}{\index{osa\-Thread@{osa\-Thread}!Is\-Running@{Is\-Running}}
+\index{Is\-Running@{Is\-Running}!osaThread@{osa\-Thread}}
+\subsubsection[{Is\-Running}]{\setlength{\rightskip}{0pt plus 5cm}bool osa\-Thread\-::\-Is\-Running (
 \begin{DoxyParamCaption}
 \item[{void}]{}
 \end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classosa_thread_a3dbeece9c55c7730d229e715c3adf29f}
-Returns if this thread is running. \hypertarget{classosa_thread_ad0199fe60a017dac38be9b8211ea7206}{}\index{osa\+Thread@{osa\+Thread}!Is\+Valid@{Is\+Valid}}
-\index{Is\+Valid@{Is\+Valid}!osa\+Thread@{osa\+Thread}}
-\subsubsection[{Is\+Valid}]{\setlength{\rightskip}{0pt plus 5cm}bool osa\+Thread\+::\+Is\+Valid (
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classosa_thread_a3dbeece9c55c7730d229e715c3adf29f}
+Returns if this thread is running. \hypertarget{classosa_thread_ad0199fe60a017dac38be9b8211ea7206}{\index{osa\-Thread@{osa\-Thread}!Is\-Valid@{Is\-Valid}}
+\index{Is\-Valid@{Is\-Valid}!osaThread@{osa\-Thread}}
+\subsubsection[{Is\-Valid}]{\setlength{\rightskip}{0pt plus 5cm}bool osa\-Thread\-::\-Is\-Valid (
 \begin{DoxyParamCaption}
 \item[{void}]{}
 \end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classosa_thread_ad0199fe60a017dac38be9b8211ea7206}
-Returns whether the thread exists (is valid). \hypertarget{classosa_thread_afe4e333816d8d6c5765d61f03bd90a11}{}\index{osa\+Thread@{osa\+Thread}!Set\+Priority@{Set\+Priority}}
-\index{Set\+Priority@{Set\+Priority}!osa\+Thread@{osa\+Thread}}
-\subsubsection[{Set\+Priority}]{\setlength{\rightskip}{0pt plus 5cm}void osa\+Thread\+::\+Set\+Priority (
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classosa_thread_ad0199fe60a017dac38be9b8211ea7206}
+Returns whether the thread exists (is valid). \hypertarget{classosa_thread_afe4e333816d8d6c5765d61f03bd90a11}{\index{osa\-Thread@{osa\-Thread}!Set\-Priority@{Set\-Priority}}
+\index{Set\-Priority@{Set\-Priority}!osaThread@{osa\-Thread}}
+\subsubsection[{Set\-Priority}]{\setlength{\rightskip}{0pt plus 5cm}void osa\-Thread\-::\-Set\-Priority (
 \begin{DoxyParamCaption}
-\item[{{\bf Priority\+Type}}]{priority}
+\item[{{\bf Priority\-Type}}]{priority}
 \end{DoxyParamCaption}
-)}\label{classosa_thread_afe4e333816d8d6c5765d61f03bd90a11}
-Set the O\+S {\itshape independent} priority of the thread. \hypertarget{classosa_thread_a58f2be5f8b86d296fae2061a16803f26}{}\index{osa\+Thread@{osa\+Thread}!Set\+Scheduling\+Policy@{Set\+Scheduling\+Policy}}
-\index{Set\+Scheduling\+Policy@{Set\+Scheduling\+Policy}!osa\+Thread@{osa\+Thread}}
-\subsubsection[{Set\+Scheduling\+Policy}]{\setlength{\rightskip}{0pt plus 5cm}void osa\+Thread\+::\+Set\+Scheduling\+Policy (
+)}}\label{classosa_thread_afe4e333816d8d6c5765d61f03bd90a11}
+Set the O\-S {\itshape independent} priority of the thread. \hypertarget{classosa_thread_a58f2be5f8b86d296fae2061a16803f26}{\index{osa\-Thread@{osa\-Thread}!Set\-Scheduling\-Policy@{Set\-Scheduling\-Policy}}
+\index{Set\-Scheduling\-Policy@{Set\-Scheduling\-Policy}!osaThread@{osa\-Thread}}
+\subsubsection[{Set\-Scheduling\-Policy}]{\setlength{\rightskip}{0pt plus 5cm}void osa\-Thread\-::\-Set\-Scheduling\-Policy (
 \begin{DoxyParamCaption}
-\item[{{\bf Scheduling\+Policy\+Type}}]{policy}
+\item[{{\bf Scheduling\-Policy\-Type}}]{policy}
 \end{DoxyParamCaption}
-)}\label{classosa_thread_a58f2be5f8b86d296fae2061a16803f26}
-Set the O\+S {\itshape independent} scheduling policy of the thread. Will not be available on all platforms. \hypertarget{classosa_thread_a739d50a6c6f7cc6c8fa44e79644cd922}{}\index{osa\+Thread@{osa\+Thread}!Set\+Thread\+Name@{Set\+Thread\+Name}}
-\index{Set\+Thread\+Name@{Set\+Thread\+Name}!osa\+Thread@{osa\+Thread}}
-\subsubsection[{Set\+Thread\+Name}]{\setlength{\rightskip}{0pt plus 5cm}void osa\+Thread\+::\+Set\+Thread\+Name (
+)}}\label{classosa_thread_a58f2be5f8b86d296fae2061a16803f26}
+Set the O\-S {\itshape independent} scheduling policy of the thread. Will not be available on all platforms. \hypertarget{classosa_thread_a739d50a6c6f7cc6c8fa44e79644cd922}{\index{osa\-Thread@{osa\-Thread}!Set\-Thread\-Name@{Set\-Thread\-Name}}
+\index{Set\-Thread\-Name@{Set\-Thread\-Name}!osaThread@{osa\-Thread}}
+\subsubsection[{Set\-Thread\-Name}]{\setlength{\rightskip}{0pt plus 5cm}void osa\-Thread\-::\-Set\-Thread\-Name (
 \begin{DoxyParamCaption}
 \item[{const char $\ast$}]{name}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [protected]}}\label{classosa_thread_a739d50a6c6f7cc6c8fa44e79644cd922}
-\hypertarget{classosa_thread_af7490cefd464c7ea87b287f70e4dc833}{}\index{osa\+Thread@{osa\+Thread}!Sleep@{Sleep}}
-\index{Sleep@{Sleep}!osa\+Thread@{osa\+Thread}}
-\subsubsection[{Sleep}]{\setlength{\rightskip}{0pt plus 5cm}void osa\+Thread\+::\+Sleep (
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classosa_thread_a739d50a6c6f7cc6c8fa44e79644cd922}
+\hypertarget{classosa_thread_af7490cefd464c7ea87b287f70e4dc833}{\index{osa\-Thread@{osa\-Thread}!Sleep@{Sleep}}
+\index{Sleep@{Sleep}!osaThread@{osa\-Thread}}
+\subsubsection[{Sleep}]{\setlength{\rightskip}{0pt plus 5cm}void osa\-Thread\-::\-Sleep (
 \begin{DoxyParamCaption}
-\item[{double}]{time\+In\+Seconds}
+\item[{double}]{time\-In\-Seconds}
 \end{DoxyParamCaption}
-)}\label{classosa_thread_af7490cefd464c7ea87b287f70e4dc833}
-Delay/suspend execution of the calling thread for the specified time. On some platforms, this method provides a better implementation of osa\+Sleep, provided that it is called from the thread associated with this instance of the class. In this case, the Sleep will also be terminated by any call to Wakeup. If called from a different thread, it just calls osa\+Sleep and is therefore not affected by any calls to Wakeup.
+)}}\label{classosa_thread_af7490cefd464c7ea87b287f70e4dc833}
+Delay/suspend execution of the calling thread for the specified time. On some platforms, this method provides a better implementation of osa\-Sleep, provided that it is called from the thread associated with this instance of the class. In this case, the Sleep will also be terminated by any call to Wakeup. If called from a different thread, it just calls osa\-Sleep and is therefore not affected by any calls to Wakeup.
 
 
 \begin{DoxyParams}{Parameters}
-{\em time\+In\+Seconds} & The amount of time the task is suspended (in seconds) \\
+{\em time\-In\-Seconds} & The amount of time the task is suspended (in seconds) \\
 \hline
 \end{DoxyParams}
-\hypertarget{classosa_thread_a94895a862be656d41e113f64dfb6d274}{}\index{osa\+Thread@{osa\+Thread}!Wait@{Wait}}
-\index{Wait@{Wait}!osa\+Thread@{osa\+Thread}}
-\subsubsection[{Wait}]{\setlength{\rightskip}{0pt plus 5cm}void osa\+Thread\+::\+Wait (
+\hypertarget{classosa_thread_a94895a862be656d41e113f64dfb6d274}{\index{osa\-Thread@{osa\-Thread}!Wait@{Wait}}
+\index{Wait@{Wait}!osaThread@{osa\-Thread}}
+\subsubsection[{Wait}]{\setlength{\rightskip}{0pt plus 5cm}void osa\-Thread\-::\-Wait (
 \begin{DoxyParamCaption}
 \item[{void}]{}
 \end{DoxyParamCaption}
-)}\label{classosa_thread_a94895a862be656d41e113f64dfb6d274}
-Wait for the thread to exit. \hypertarget{classosa_thread_adaa096f5ae24c775c7f3011affc251e2}{}\index{osa\+Thread@{osa\+Thread}!Wait\+For\+Wakeup@{Wait\+For\+Wakeup}}
-\index{Wait\+For\+Wakeup@{Wait\+For\+Wakeup}!osa\+Thread@{osa\+Thread}}
-\subsubsection[{Wait\+For\+Wakeup}]{\setlength{\rightskip}{0pt plus 5cm}void osa\+Thread\+::\+Wait\+For\+Wakeup (
+)}}\label{classosa_thread_a94895a862be656d41e113f64dfb6d274}
+Wait for the thread to exit. \hypertarget{classosa_thread_adaa096f5ae24c775c7f3011affc251e2}{\index{osa\-Thread@{osa\-Thread}!Wait\-For\-Wakeup@{Wait\-For\-Wakeup}}
+\index{Wait\-For\-Wakeup@{Wait\-For\-Wakeup}!osaThread@{osa\-Thread}}
+\subsubsection[{Wait\-For\-Wakeup}]{\setlength{\rightskip}{0pt plus 5cm}void osa\-Thread\-::\-Wait\-For\-Wakeup (
 \begin{DoxyParamCaption}
 \item[{void}]{}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\label{classosa_thread_adaa096f5ae24c775c7f3011affc251e2}
-Wait for thread to receive a \char`\"{}wakeup\char`\"{} signal/event. \hypertarget{classosa_thread_a9a82d911b12b9a111527f90ba3793d82}{}\index{osa\+Thread@{osa\+Thread}!Wait\+For\+Wakeup@{Wait\+For\+Wakeup}}
-\index{Wait\+For\+Wakeup@{Wait\+For\+Wakeup}!osa\+Thread@{osa\+Thread}}
-\subsubsection[{Wait\+For\+Wakeup}]{\setlength{\rightskip}{0pt plus 5cm}void osa\+Thread\+::\+Wait\+For\+Wakeup (
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classosa_thread_adaa096f5ae24c775c7f3011affc251e2}
+Wait for thread to receive a \char`\"{}wakeup\char`\"{} signal/event. \hypertarget{classosa_thread_a9a82d911b12b9a111527f90ba3793d82}{\index{osa\-Thread@{osa\-Thread}!Wait\-For\-Wakeup@{Wait\-For\-Wakeup}}
+\index{Wait\-For\-Wakeup@{Wait\-For\-Wakeup}!osaThread@{osa\-Thread}}
+\subsubsection[{Wait\-For\-Wakeup}]{\setlength{\rightskip}{0pt plus 5cm}void osa\-Thread\-::\-Wait\-For\-Wakeup (
 \begin{DoxyParamCaption}
-\item[{double}]{timeout\+In\+Sec}
+\item[{double}]{timeout\-In\-Sec}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\label{classosa_thread_a9a82d911b12b9a111527f90ba3793d82}
-Wait for thread to receive a \char`\"{}wakeup\char`\"{} signal/event. \hypertarget{classosa_thread_a6bdb340d306cbecfca251d5f8dcd7d50}{}\index{osa\+Thread@{osa\+Thread}!Wakeup@{Wakeup}}
-\index{Wakeup@{Wakeup}!osa\+Thread@{osa\+Thread}}
-\subsubsection[{Wakeup}]{\setlength{\rightskip}{0pt plus 5cm}void osa\+Thread\+::\+Wakeup (
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classosa_thread_a9a82d911b12b9a111527f90ba3793d82}
+Wait for thread to receive a \char`\"{}wakeup\char`\"{} signal/event. \hypertarget{classosa_thread_a6bdb340d306cbecfca251d5f8dcd7d50}{\index{osa\-Thread@{osa\-Thread}!Wakeup@{Wakeup}}
+\index{Wakeup@{Wakeup}!osaThread@{osa\-Thread}}
+\subsubsection[{Wakeup}]{\setlength{\rightskip}{0pt plus 5cm}void osa\-Thread\-::\-Wakeup (
 \begin{DoxyParamCaption}
 \item[{void}]{}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\label{classosa_thread_a6bdb340d306cbecfca251d5f8dcd7d50}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classosa_thread_a6bdb340d306cbecfca251d5f8dcd7d50}
 Signal the thread to wake up. 
 
 \subsection{Friends And Related Function Documentation}
-\hypertarget{classosa_thread_a542e7acdd9a832dddf65bf204d2df936}{}\index{osa\+Thread@{osa\+Thread}!osa\+Thread\+Test@{osa\+Thread\+Test}}
-\index{osa\+Thread\+Test@{osa\+Thread\+Test}!osa\+Thread@{osa\+Thread}}
-\subsubsection[{osa\+Thread\+Test}]{\setlength{\rightskip}{0pt plus 5cm}friend class osa\+Thread\+Test\hspace{0.3cm}{\ttfamily [friend]}}\label{classosa_thread_a542e7acdd9a832dddf65bf204d2df936}
+\hypertarget{classosa_thread_a542e7acdd9a832dddf65bf204d2df936}{\index{osa\-Thread@{osa\-Thread}!osa\-Thread\-Test@{osa\-Thread\-Test}}
+\index{osa\-Thread\-Test@{osa\-Thread\-Test}!osaThread@{osa\-Thread}}
+\subsubsection[{osa\-Thread\-Test}]{\setlength{\rightskip}{0pt plus 5cm}friend class osa\-Thread\-Test\hspace{0.3cm}{\ttfamily [friend]}}}\label{classosa_thread_a542e7acdd9a832dddf65bf204d2df936}
 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
 \item 
-/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+O\+S\+Abstraction/\hyperlink{osa_thread_8h}{osa\+Thread.\+h}\end{DoxyCompactItemize}
+/home/adeguet1/catkin\-\_\-ws/src/cisst-\/saw/cisst/cisst\-O\-S\-Abstraction/\hyperlink{osa_thread_8h}{osa\-Thread.\-h}\end{DoxyCompactItemize}

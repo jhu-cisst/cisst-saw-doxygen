@@ -1,80 +1,81 @@
-\hypertarget{classosa_thread_buddy}{}\section{osa\+Thread\+Buddy Class Reference}
-\label{classosa_thread_buddy}\index{osa\+Thread\+Buddy@{osa\+Thread\+Buddy}}
+\hypertarget{classosa_thread_buddy}{\section{osa\-Thread\-Buddy Class Reference}
+\label{classosa_thread_buddy}\index{osa\-Thread\-Buddy@{osa\-Thread\-Buddy}}
+}
 
 
-Implementation of the Thread Proxy object in an O\+S independent manner.  
+Implementation of the Thread Proxy object in an O\-S independent manner.  
 
 
 
 
-{\ttfamily \#include $<$osa\+Thread\+Buddy.\+h$>$}
+{\ttfamily \#include $<$osa\-Thread\-Buddy.\-h$>$}
 
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classosa_thread_buddy_a334d30a95ac595ef84fb35d69dc706a1}{osa\+Thread\+Buddy} ()
+\hyperlink{classosa_thread_buddy_a334d30a95ac595ef84fb35d69dc706a1}{osa\-Thread\-Buddy} ()
 \item 
-\hyperlink{classosa_thread_buddy_ace67a6e57c40840449f4c65931d947ee}{$\sim$osa\+Thread\+Buddy} ()
+\hyperlink{classosa_thread_buddy_ace67a6e57c40840449f4c65931d947ee}{$\sim$osa\-Thread\-Buddy} ()
 \item 
-void \hyperlink{classosa_thread_buddy_a15cdc68a68ba0555bd970b9f787f3129}{Create} (const char $\ast$name, double period, int stack\+\_\+size=1024 $\ast$256)
+void \hyperlink{classosa_thread_buddy_a15cdc68a68ba0555bd970b9f787f3129}{Create} (const char $\ast$name, double period, int stack\-\_\-size=1024 $\ast$256)
 \item 
-void \hyperlink{classosa_thread_buddy_ab7801bfa4574a2420a990b409e2b3be0}{Create} (const char $\ast$name, const \hyperlink{structosa_absolute_time}{osa\+Absolute\+Time} \&tv, int stack\+\_\+size=1024 $\ast$256)
+void \hyperlink{classosa_thread_buddy_ab7801bfa4574a2420a990b409e2b3be0}{Create} (const char $\ast$name, const \hyperlink{structosa_absolute_time}{osa\-Absolute\-Time} \&tv, int stack\-\_\-size=1024 $\ast$256)
 \item 
 void \hyperlink{classosa_thread_buddy_af3d06bec58fa682a95e05cf6e632507e}{Delete} ()
 \item 
-bool \hyperlink{classosa_thread_buddy_a7ebd43f0391370586abeb598e69e80f6}{Is\+Periodic} () const 
+bool \hyperlink{classosa_thread_buddy_a7ebd43f0391370586abeb598e69e80f6}{Is\-Periodic} () const 
 \item 
-void \hyperlink{classosa_thread_buddy_ab6f53e0d21b9dd672f4d6bde5d608b1e}{Wait\+For\+Period} (void)
+void \hyperlink{classosa_thread_buddy_ab6f53e0d21b9dd672f4d6bde5d608b1e}{Wait\-For\-Period} (void)
 \item 
-void \hyperlink{classosa_thread_buddy_aba8ca36b6029b10a13a8fe436c832658}{Wait\+For\+Remaining\+Period} (void)
+void \hyperlink{classosa_thread_buddy_aba8ca36b6029b10a13a8fe436c832658}{Wait\-For\-Remaining\-Period} (void)
 \item 
-void \hyperlink{classosa_thread_buddy_aea7ffe95f0837d4beedaa2037a4ff153}{Make\+Hard\+Real\+Time} (void)
+void \hyperlink{classosa_thread_buddy_aea7ffe95f0837d4beedaa2037a4ff153}{Make\-Hard\-Real\-Time} (void)
 \item 
-void \hyperlink{classosa_thread_buddy_aedee30367d430fb9e6333c2373ab00f3}{Make\+Soft\+Real\+Time} (void)
+void \hyperlink{classosa_thread_buddy_aedee30367d430fb9e6333c2373ab00f3}{Make\-Soft\-Real\-Time} (void)
 \item 
 void \hyperlink{classosa_thread_buddy_a9706080a6c83380927b36a31a70f2cc5}{Resume} (void)
 \item 
 void \hyperlink{classosa_thread_buddy_a01c2a24bcf816db413af39f980c44efc}{Suspend} (void)
 \item 
-void \hyperlink{classosa_thread_buddy_a31d77d59d74b0f1cfe5a060435c8e469}{Lock\+Stack} ()
+void \hyperlink{classosa_thread_buddy_a31d77d59d74b0f1cfe5a060435c8e469}{Lock\-Stack} ()
 \item 
-void \hyperlink{classosa_thread_buddy_af0a5bed1d246b660b80af3fd3b90ad1b}{Unlock\+Stack} ()
+void \hyperlink{classosa_thread_buddy_af0a5bed1d246b660b80af3fd3b90ad1b}{Unlock\-Stack} ()
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-Implementation of the Thread Proxy object in an O\+S independent manner. 
+Implementation of the Thread Proxy object in an O\-S independent manner. 
 
-R\+T\+A\+I provides \char`\"{}buddy\char`\"{} or proxy objects so that any thread created using pthread can be made real time. Our rts\+Task class uses this mechanism to provide real time abstract tasks that have a state and a mailbox. This class makes it possible to keep the rts\+Task class free from O\+S dependent stuff, which is moved here. This would also make it easy to provide Soft Real Time tasks in Vanila Linux flavor. 
+R\-T\-A\-I provides \char`\"{}buddy\char`\"{} or proxy objects so that any thread created using pthread can be made real time. Our rts\-Task class uses this mechanism to provide real time abstract tasks that have a state and a mailbox. This class makes it possible to keep the rts\-Task class free from O\-S dependent stuff, which is moved here. This would also make it easy to provide Soft Real Time tasks in Vanila Linux flavor. 
 
 \subsection{Constructor \& Destructor Documentation}
-\hypertarget{classosa_thread_buddy_a334d30a95ac595ef84fb35d69dc706a1}{}\index{osa\+Thread\+Buddy@{osa\+Thread\+Buddy}!osa\+Thread\+Buddy@{osa\+Thread\+Buddy}}
-\index{osa\+Thread\+Buddy@{osa\+Thread\+Buddy}!osa\+Thread\+Buddy@{osa\+Thread\+Buddy}}
-\subsubsection[{osa\+Thread\+Buddy}]{\setlength{\rightskip}{0pt plus 5cm}osa\+Thread\+Buddy\+::osa\+Thread\+Buddy (
+\hypertarget{classosa_thread_buddy_a334d30a95ac595ef84fb35d69dc706a1}{\index{osa\-Thread\-Buddy@{osa\-Thread\-Buddy}!osa\-Thread\-Buddy@{osa\-Thread\-Buddy}}
+\index{osa\-Thread\-Buddy@{osa\-Thread\-Buddy}!osaThreadBuddy@{osa\-Thread\-Buddy}}
+\subsubsection[{osa\-Thread\-Buddy}]{\setlength{\rightskip}{0pt plus 5cm}osa\-Thread\-Buddy\-::osa\-Thread\-Buddy (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}\label{classosa_thread_buddy_a334d30a95ac595ef84fb35d69dc706a1}
-Constructor. Allocates internal data. \hypertarget{classosa_thread_buddy_ace67a6e57c40840449f4c65931d947ee}{}\index{osa\+Thread\+Buddy@{osa\+Thread\+Buddy}!````~osa\+Thread\+Buddy@{$\sim$osa\+Thread\+Buddy}}
-\index{````~osa\+Thread\+Buddy@{$\sim$osa\+Thread\+Buddy}!osa\+Thread\+Buddy@{osa\+Thread\+Buddy}}
-\subsubsection[{$\sim$osa\+Thread\+Buddy}]{\setlength{\rightskip}{0pt plus 5cm}osa\+Thread\+Buddy\+::$\sim$osa\+Thread\+Buddy (
+)}}\label{classosa_thread_buddy_a334d30a95ac595ef84fb35d69dc706a1}
+Constructor. Allocates internal data. \hypertarget{classosa_thread_buddy_ace67a6e57c40840449f4c65931d947ee}{\index{osa\-Thread\-Buddy@{osa\-Thread\-Buddy}!$\sim$osa\-Thread\-Buddy@{$\sim$osa\-Thread\-Buddy}}
+\index{$\sim$osa\-Thread\-Buddy@{$\sim$osa\-Thread\-Buddy}!osaThreadBuddy@{osa\-Thread\-Buddy}}
+\subsubsection[{$\sim$osa\-Thread\-Buddy}]{\setlength{\rightskip}{0pt plus 5cm}osa\-Thread\-Buddy\-::$\sim$osa\-Thread\-Buddy (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}\label{classosa_thread_buddy_ace67a6e57c40840449f4c65931d947ee}
+)}}\label{classosa_thread_buddy_ace67a6e57c40840449f4c65931d947ee}
 Destructor. 
 
 \subsection{Member Function Documentation}
-\hypertarget{classosa_thread_buddy_a15cdc68a68ba0555bd970b9f787f3129}{}\index{osa\+Thread\+Buddy@{osa\+Thread\+Buddy}!Create@{Create}}
-\index{Create@{Create}!osa\+Thread\+Buddy@{osa\+Thread\+Buddy}}
-\subsubsection[{Create}]{\setlength{\rightskip}{0pt plus 5cm}void osa\+Thread\+Buddy\+::\+Create (
+\hypertarget{classosa_thread_buddy_a15cdc68a68ba0555bd970b9f787f3129}{\index{osa\-Thread\-Buddy@{osa\-Thread\-Buddy}!Create@{Create}}
+\index{Create@{Create}!osaThreadBuddy@{osa\-Thread\-Buddy}}
+\subsubsection[{Create}]{\setlength{\rightskip}{0pt plus 5cm}void osa\-Thread\-Buddy\-::\-Create (
 \begin{DoxyParamCaption}
 \item[{const char $\ast$}]{name, }
 \item[{double}]{period, }
-\item[{int}]{stack\+\_\+size = {\ttfamily 1024~$\ast$256}}
+\item[{int}]{stack\-\_\-size = {\ttfamily 1024~$\ast$256}}
 \end{DoxyParamCaption}
-)}\label{classosa_thread_buddy_a15cdc68a68ba0555bd970b9f787f3129}
-Create a thread buddy with a name \textquotesingle{}name\textquotesingle{}
+)}}\label{classosa_thread_buddy_a15cdc68a68ba0555bd970b9f787f3129}
+Create a thread buddy with a name 'name'
 
 
 \begin{DoxyParams}{Parameters}
@@ -82,90 +83,90 @@ Create a thread buddy with a name \textquotesingle{}name\textquotesingle{}
 \hline
 {\em period} & The period of the thread (in nanosecond)\\
 \hline
-{\em stack\+\_\+size} & The stack size allocated to the thread. A default value of 8\+Kb is used. \\
+{\em stack\-\_\-size} & The stack size allocated to the thread. A default value of 8\-Kb is used. \\
 \hline
 \end{DoxyParams}
-\hypertarget{classosa_thread_buddy_ab7801bfa4574a2420a990b409e2b3be0}{}\index{osa\+Thread\+Buddy@{osa\+Thread\+Buddy}!Create@{Create}}
-\index{Create@{Create}!osa\+Thread\+Buddy@{osa\+Thread\+Buddy}}
-\subsubsection[{Create}]{\setlength{\rightskip}{0pt plus 5cm}void osa\+Thread\+Buddy\+::\+Create (
+\hypertarget{classosa_thread_buddy_ab7801bfa4574a2420a990b409e2b3be0}{\index{osa\-Thread\-Buddy@{osa\-Thread\-Buddy}!Create@{Create}}
+\index{Create@{Create}!osaThreadBuddy@{osa\-Thread\-Buddy}}
+\subsubsection[{Create}]{\setlength{\rightskip}{0pt plus 5cm}void osa\-Thread\-Buddy\-::\-Create (
 \begin{DoxyParamCaption}
 \item[{const char $\ast$}]{name, }
-\item[{const {\bf osa\+Absolute\+Time} \&}]{tv, }
-\item[{int}]{stack\+\_\+size = {\ttfamily 1024~$\ast$256}}
+\item[{const {\bf osa\-Absolute\-Time} \&}]{tv, }
+\item[{int}]{stack\-\_\-size = {\ttfamily 1024~$\ast$256}}
 \end{DoxyParamCaption}
-)}\label{classosa_thread_buddy_ab7801bfa4574a2420a990b409e2b3be0}
-\hypertarget{classosa_thread_buddy_af3d06bec58fa682a95e05cf6e632507e}{}\index{osa\+Thread\+Buddy@{osa\+Thread\+Buddy}!Delete@{Delete}}
-\index{Delete@{Delete}!osa\+Thread\+Buddy@{osa\+Thread\+Buddy}}
-\subsubsection[{Delete}]{\setlength{\rightskip}{0pt plus 5cm}void osa\+Thread\+Buddy\+::\+Delete (
+)}}\label{classosa_thread_buddy_ab7801bfa4574a2420a990b409e2b3be0}
+\hypertarget{classosa_thread_buddy_af3d06bec58fa682a95e05cf6e632507e}{\index{osa\-Thread\-Buddy@{osa\-Thread\-Buddy}!Delete@{Delete}}
+\index{Delete@{Delete}!osaThreadBuddy@{osa\-Thread\-Buddy}}
+\subsubsection[{Delete}]{\setlength{\rightskip}{0pt plus 5cm}void osa\-Thread\-Buddy\-::\-Delete (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}\label{classosa_thread_buddy_af3d06bec58fa682a95e05cf6e632507e}
-Delete the thread buddy. \hypertarget{classosa_thread_buddy_a7ebd43f0391370586abeb598e69e80f6}{}\index{osa\+Thread\+Buddy@{osa\+Thread\+Buddy}!Is\+Periodic@{Is\+Periodic}}
-\index{Is\+Periodic@{Is\+Periodic}!osa\+Thread\+Buddy@{osa\+Thread\+Buddy}}
-\subsubsection[{Is\+Periodic}]{\setlength{\rightskip}{0pt plus 5cm}bool osa\+Thread\+Buddy\+::\+Is\+Periodic (
+)}}\label{classosa_thread_buddy_af3d06bec58fa682a95e05cf6e632507e}
+Delete the thread buddy. \hypertarget{classosa_thread_buddy_a7ebd43f0391370586abeb598e69e80f6}{\index{osa\-Thread\-Buddy@{osa\-Thread\-Buddy}!Is\-Periodic@{Is\-Periodic}}
+\index{Is\-Periodic@{Is\-Periodic}!osaThreadBuddy@{osa\-Thread\-Buddy}}
+\subsubsection[{Is\-Periodic}]{\setlength{\rightskip}{0pt plus 5cm}bool osa\-Thread\-Buddy\-::\-Is\-Periodic (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classosa_thread_buddy_a7ebd43f0391370586abeb598e69e80f6}
-Return true if thread is periodic. Currently, returns true if the thread was created with a period $>$ 0. \hypertarget{classosa_thread_buddy_a31d77d59d74b0f1cfe5a060435c8e469}{}\index{osa\+Thread\+Buddy@{osa\+Thread\+Buddy}!Lock\+Stack@{Lock\+Stack}}
-\index{Lock\+Stack@{Lock\+Stack}!osa\+Thread\+Buddy@{osa\+Thread\+Buddy}}
-\subsubsection[{Lock\+Stack}]{\setlength{\rightskip}{0pt plus 5cm}void osa\+Thread\+Buddy\+::\+Lock\+Stack (
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classosa_thread_buddy_a7ebd43f0391370586abeb598e69e80f6}
+Return true if thread is periodic. Currently, returns true if the thread was created with a period $>$ 0. \hypertarget{classosa_thread_buddy_a31d77d59d74b0f1cfe5a060435c8e469}{\index{osa\-Thread\-Buddy@{osa\-Thread\-Buddy}!Lock\-Stack@{Lock\-Stack}}
+\index{Lock\-Stack@{Lock\-Stack}!osaThreadBuddy@{osa\-Thread\-Buddy}}
+\subsubsection[{Lock\-Stack}]{\setlength{\rightskip}{0pt plus 5cm}void osa\-Thread\-Buddy\-::\-Lock\-Stack (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}\label{classosa_thread_buddy_a31d77d59d74b0f1cfe5a060435c8e469}
-Lock stack growth \hypertarget{classosa_thread_buddy_aea7ffe95f0837d4beedaa2037a4ff153}{}\index{osa\+Thread\+Buddy@{osa\+Thread\+Buddy}!Make\+Hard\+Real\+Time@{Make\+Hard\+Real\+Time}}
-\index{Make\+Hard\+Real\+Time@{Make\+Hard\+Real\+Time}!osa\+Thread\+Buddy@{osa\+Thread\+Buddy}}
-\subsubsection[{Make\+Hard\+Real\+Time}]{\setlength{\rightskip}{0pt plus 5cm}void osa\+Thread\+Buddy\+::\+Make\+Hard\+Real\+Time (
+)}}\label{classosa_thread_buddy_a31d77d59d74b0f1cfe5a060435c8e469}
+Lock stack growth \hypertarget{classosa_thread_buddy_aea7ffe95f0837d4beedaa2037a4ff153}{\index{osa\-Thread\-Buddy@{osa\-Thread\-Buddy}!Make\-Hard\-Real\-Time@{Make\-Hard\-Real\-Time}}
+\index{Make\-Hard\-Real\-Time@{Make\-Hard\-Real\-Time}!osaThreadBuddy@{osa\-Thread\-Buddy}}
+\subsubsection[{Make\-Hard\-Real\-Time}]{\setlength{\rightskip}{0pt plus 5cm}void osa\-Thread\-Buddy\-::\-Make\-Hard\-Real\-Time (
 \begin{DoxyParamCaption}
 \item[{void}]{}
 \end{DoxyParamCaption}
-)}\label{classosa_thread_buddy_aea7ffe95f0837d4beedaa2037a4ff153}
-Make a thread hard real time. \hypertarget{classosa_thread_buddy_aedee30367d430fb9e6333c2373ab00f3}{}\index{osa\+Thread\+Buddy@{osa\+Thread\+Buddy}!Make\+Soft\+Real\+Time@{Make\+Soft\+Real\+Time}}
-\index{Make\+Soft\+Real\+Time@{Make\+Soft\+Real\+Time}!osa\+Thread\+Buddy@{osa\+Thread\+Buddy}}
-\subsubsection[{Make\+Soft\+Real\+Time}]{\setlength{\rightskip}{0pt plus 5cm}void osa\+Thread\+Buddy\+::\+Make\+Soft\+Real\+Time (
+)}}\label{classosa_thread_buddy_aea7ffe95f0837d4beedaa2037a4ff153}
+Make a thread hard real time. \hypertarget{classosa_thread_buddy_aedee30367d430fb9e6333c2373ab00f3}{\index{osa\-Thread\-Buddy@{osa\-Thread\-Buddy}!Make\-Soft\-Real\-Time@{Make\-Soft\-Real\-Time}}
+\index{Make\-Soft\-Real\-Time@{Make\-Soft\-Real\-Time}!osaThreadBuddy@{osa\-Thread\-Buddy}}
+\subsubsection[{Make\-Soft\-Real\-Time}]{\setlength{\rightskip}{0pt plus 5cm}void osa\-Thread\-Buddy\-::\-Make\-Soft\-Real\-Time (
 \begin{DoxyParamCaption}
 \item[{void}]{}
 \end{DoxyParamCaption}
-)}\label{classosa_thread_buddy_aedee30367d430fb9e6333c2373ab00f3}
-Make a thread soft real time. \hypertarget{classosa_thread_buddy_a9706080a6c83380927b36a31a70f2cc5}{}\index{osa\+Thread\+Buddy@{osa\+Thread\+Buddy}!Resume@{Resume}}
-\index{Resume@{Resume}!osa\+Thread\+Buddy@{osa\+Thread\+Buddy}}
-\subsubsection[{Resume}]{\setlength{\rightskip}{0pt plus 5cm}void osa\+Thread\+Buddy\+::\+Resume (
+)}}\label{classosa_thread_buddy_aedee30367d430fb9e6333c2373ab00f3}
+Make a thread soft real time. \hypertarget{classosa_thread_buddy_a9706080a6c83380927b36a31a70f2cc5}{\index{osa\-Thread\-Buddy@{osa\-Thread\-Buddy}!Resume@{Resume}}
+\index{Resume@{Resume}!osaThreadBuddy@{osa\-Thread\-Buddy}}
+\subsubsection[{Resume}]{\setlength{\rightskip}{0pt plus 5cm}void osa\-Thread\-Buddy\-::\-Resume (
 \begin{DoxyParamCaption}
 \item[{void}]{}
 \end{DoxyParamCaption}
-)}\label{classosa_thread_buddy_a9706080a6c83380927b36a31a70f2cc5}
-Resume execution of the thread. \hypertarget{classosa_thread_buddy_a01c2a24bcf816db413af39f980c44efc}{}\index{osa\+Thread\+Buddy@{osa\+Thread\+Buddy}!Suspend@{Suspend}}
-\index{Suspend@{Suspend}!osa\+Thread\+Buddy@{osa\+Thread\+Buddy}}
-\subsubsection[{Suspend}]{\setlength{\rightskip}{0pt plus 5cm}void osa\+Thread\+Buddy\+::\+Suspend (
+)}}\label{classosa_thread_buddy_a9706080a6c83380927b36a31a70f2cc5}
+Resume execution of the thread. \hypertarget{classosa_thread_buddy_a01c2a24bcf816db413af39f980c44efc}{\index{osa\-Thread\-Buddy@{osa\-Thread\-Buddy}!Suspend@{Suspend}}
+\index{Suspend@{Suspend}!osaThreadBuddy@{osa\-Thread\-Buddy}}
+\subsubsection[{Suspend}]{\setlength{\rightskip}{0pt plus 5cm}void osa\-Thread\-Buddy\-::\-Suspend (
 \begin{DoxyParamCaption}
 \item[{void}]{}
 \end{DoxyParamCaption}
-)}\label{classosa_thread_buddy_a01c2a24bcf816db413af39f980c44efc}
-Suspend execution of the thread. \hypertarget{classosa_thread_buddy_af0a5bed1d246b660b80af3fd3b90ad1b}{}\index{osa\+Thread\+Buddy@{osa\+Thread\+Buddy}!Unlock\+Stack@{Unlock\+Stack}}
-\index{Unlock\+Stack@{Unlock\+Stack}!osa\+Thread\+Buddy@{osa\+Thread\+Buddy}}
-\subsubsection[{Unlock\+Stack}]{\setlength{\rightskip}{0pt plus 5cm}void osa\+Thread\+Buddy\+::\+Unlock\+Stack (
+)}}\label{classosa_thread_buddy_a01c2a24bcf816db413af39f980c44efc}
+Suspend execution of the thread. \hypertarget{classosa_thread_buddy_af0a5bed1d246b660b80af3fd3b90ad1b}{\index{osa\-Thread\-Buddy@{osa\-Thread\-Buddy}!Unlock\-Stack@{Unlock\-Stack}}
+\index{Unlock\-Stack@{Unlock\-Stack}!osaThreadBuddy@{osa\-Thread\-Buddy}}
+\subsubsection[{Unlock\-Stack}]{\setlength{\rightskip}{0pt plus 5cm}void osa\-Thread\-Buddy\-::\-Unlock\-Stack (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}\label{classosa_thread_buddy_af0a5bed1d246b660b80af3fd3b90ad1b}
-Unlock stack \hypertarget{classosa_thread_buddy_ab6f53e0d21b9dd672f4d6bde5d608b1e}{}\index{osa\+Thread\+Buddy@{osa\+Thread\+Buddy}!Wait\+For\+Period@{Wait\+For\+Period}}
-\index{Wait\+For\+Period@{Wait\+For\+Period}!osa\+Thread\+Buddy@{osa\+Thread\+Buddy}}
-\subsubsection[{Wait\+For\+Period}]{\setlength{\rightskip}{0pt plus 5cm}void osa\+Thread\+Buddy\+::\+Wait\+For\+Period (
+)}}\label{classosa_thread_buddy_af0a5bed1d246b660b80af3fd3b90ad1b}
+Unlock stack \hypertarget{classosa_thread_buddy_ab6f53e0d21b9dd672f4d6bde5d608b1e}{\index{osa\-Thread\-Buddy@{osa\-Thread\-Buddy}!Wait\-For\-Period@{Wait\-For\-Period}}
+\index{Wait\-For\-Period@{Wait\-For\-Period}!osaThreadBuddy@{osa\-Thread\-Buddy}}
+\subsubsection[{Wait\-For\-Period}]{\setlength{\rightskip}{0pt plus 5cm}void osa\-Thread\-Buddy\-::\-Wait\-For\-Period (
 \begin{DoxyParamCaption}
 \item[{void}]{}
 \end{DoxyParamCaption}
-)}\label{classosa_thread_buddy_ab6f53e0d21b9dd672f4d6bde5d608b1e}
-Suspend the execution of the real time thread until the next period is reached. \hypertarget{classosa_thread_buddy_aba8ca36b6029b10a13a8fe436c832658}{}\index{osa\+Thread\+Buddy@{osa\+Thread\+Buddy}!Wait\+For\+Remaining\+Period@{Wait\+For\+Remaining\+Period}}
-\index{Wait\+For\+Remaining\+Period@{Wait\+For\+Remaining\+Period}!osa\+Thread\+Buddy@{osa\+Thread\+Buddy}}
-\subsubsection[{Wait\+For\+Remaining\+Period}]{\setlength{\rightskip}{0pt plus 5cm}void osa\+Thread\+Buddy\+::\+Wait\+For\+Remaining\+Period (
+)}}\label{classosa_thread_buddy_ab6f53e0d21b9dd672f4d6bde5d608b1e}
+Suspend the execution of the real time thread until the next period is reached. \hypertarget{classosa_thread_buddy_aba8ca36b6029b10a13a8fe436c832658}{\index{osa\-Thread\-Buddy@{osa\-Thread\-Buddy}!Wait\-For\-Remaining\-Period@{Wait\-For\-Remaining\-Period}}
+\index{Wait\-For\-Remaining\-Period@{Wait\-For\-Remaining\-Period}!osaThreadBuddy@{osa\-Thread\-Buddy}}
+\subsubsection[{Wait\-For\-Remaining\-Period}]{\setlength{\rightskip}{0pt plus 5cm}void osa\-Thread\-Buddy\-::\-Wait\-For\-Remaining\-Period (
 \begin{DoxyParamCaption}
 \item[{void}]{}
 \end{DoxyParamCaption}
-)}\label{classosa_thread_buddy_aba8ca36b6029b10a13a8fe436c832658}
+)}}\label{classosa_thread_buddy_aba8ca36b6029b10a13a8fe436c832658}
 Suspend the execution of the real time thread for the remainder of the current period. 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
 \item 
-/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+O\+S\+Abstraction/\hyperlink{osa_thread_buddy_8h}{osa\+Thread\+Buddy.\+h}\end{DoxyCompactItemize}
+/home/adeguet1/catkin\-\_\-ws/src/cisst-\/saw/cisst/cisst\-O\-S\-Abstraction/\hyperlink{osa_thread_buddy_8h}{osa\-Thread\-Buddy.\-h}\end{DoxyCompactItemize}

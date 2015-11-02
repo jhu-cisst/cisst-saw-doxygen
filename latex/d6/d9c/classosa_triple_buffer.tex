@@ -1,172 +1,173 @@
-\hypertarget{classosa_triple_buffer}{}\section{osa\+Triple\+Buffer$<$ \+\_\+element\+Type $>$ Class Template Reference}
-\label{classosa_triple_buffer}\index{osa\+Triple\+Buffer$<$ \+\_\+element\+Type $>$@{osa\+Triple\+Buffer$<$ \+\_\+element\+Type $>$}}
+\hypertarget{classosa_triple_buffer}{\section{osa\-Triple\-Buffer$<$ \-\_\-element\-Type $>$ Class Template Reference}
+\label{classosa_triple_buffer}\index{osa\-Triple\-Buffer$<$ \-\_\-element\-Type $>$@{osa\-Triple\-Buffer$<$ \-\_\-element\-Type $>$}}
+}
 
 
-{\ttfamily \#include $<$osa\+Triple\+Buffer.\+h$>$}
+{\ttfamily \#include $<$osa\-Triple\-Buffer.\-h$>$}
 
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classosa_triple_buffer_af685c6dd30e1eb800ef6df3f8074ef1a}{osa\+Triple\+Buffer} (void)
+\hyperlink{classosa_triple_buffer_af685c6dd30e1eb800ef6df3f8074ef1a}{osa\-Triple\-Buffer} (void)
 \item 
-\hyperlink{classosa_triple_buffer_ad60e01d3bf64e9d400107dc6a173a1e3}{osa\+Triple\+Buffer} (const\+\_\+reference initial\+Value)
+\hyperlink{classosa_triple_buffer_ad60e01d3bf64e9d400107dc6a173a1e3}{osa\-Triple\-Buffer} (const\-\_\-reference initial\-Value)
 \item 
-\hyperlink{classosa_triple_buffer_a98293e4fbf7257c915c3cd349dd506b5}{osa\+Triple\+Buffer} (pointer pointer1, pointer pointer2, pointer pointer3)
+\hyperlink{classosa_triple_buffer_a98293e4fbf7257c915c3cd349dd506b5}{osa\-Triple\-Buffer} (pointer pointer1, pointer pointer2, pointer pointer3)
 \item 
-void \hyperlink{classosa_triple_buffer_acf53979aa3445d7a18060c8ba3facc58}{Setup\+Nodes} (pointer pointer1, pointer pointer2, pointer pointer3)
+void \hyperlink{classosa_triple_buffer_acf53979aa3445d7a18060c8ba3facc58}{Setup\-Nodes} (pointer pointer1, pointer pointer2, pointer pointer3)
 \item 
-\hyperlink{classosa_triple_buffer_a620796ad9891d61a53bc87c87a4796d7}{$\sim$osa\+Triple\+Buffer} ()
+\hyperlink{classosa_triple_buffer_a620796ad9891d61a53bc87c87a4796d7}{$\sim$osa\-Triple\-Buffer} ()
 \item 
-void \hyperlink{classosa_triple_buffer_a3f8542a0f8c276250f14411e85ff2d04}{Read} (reference place\+Holder)
+void \hyperlink{classosa_triple_buffer_a3f8542a0f8c276250f14411e85ff2d04}{Read} (reference place\-Holder)
 \item 
-void \hyperlink{classosa_triple_buffer_a9b988d139edf8aa2eb185917878b711c}{Write} (const\+\_\+reference new\+Value)
+void \hyperlink{classosa_triple_buffer_a9b988d139edf8aa2eb185917878b711c}{Write} (const\-\_\-reference new\-Value)
 \item 
-const\+\_\+pointer \hyperlink{classosa_triple_buffer_acce7b1e6b493242c69a7878ee2d2f255}{Get\+Read\+Pointer} (void) const 
+const\-\_\-pointer \hyperlink{classosa_triple_buffer_acce7b1e6b493242c69a7878ee2d2f255}{Get\-Read\-Pointer} (void) const 
 \item 
-pointer \hyperlink{classosa_triple_buffer_a883eb98a1b7416145c7f5c8081184ebe}{Get\+Write\+Pointer} (void) const 
+pointer \hyperlink{classosa_triple_buffer_a883eb98a1b7416145c7f5c8081184ebe}{Get\-Write\-Pointer} (void) const 
 \item 
-void \hyperlink{classosa_triple_buffer_a60ba16dfa7b74ed88998792c195af383}{Begin\+Read} (void)
+void \hyperlink{classosa_triple_buffer_a60ba16dfa7b74ed88998792c195af383}{Begin\-Read} (void)
 \item 
-void \hyperlink{classosa_triple_buffer_aeafc6d3ce30c02aabd1549cdeb4b21f6}{End\+Read} (void)
+void \hyperlink{classosa_triple_buffer_aeafc6d3ce30c02aabd1549cdeb4b21f6}{End\-Read} (void)
 \item 
-void \hyperlink{classosa_triple_buffer_a59c6f1c56ffac365adf0e219783c9091}{Begin\+Write} (void)
+void \hyperlink{classosa_triple_buffer_a59c6f1c56ffac365adf0e219783c9091}{Begin\-Write} (void)
 \item 
-void \hyperlink{classosa_triple_buffer_a1f71a564e41546875abae049db19dd54}{End\+Write} (void)
+void \hyperlink{classosa_triple_buffer_a1f71a564e41546875abae049db19dd54}{End\-Write} (void)
 \item 
-void \hyperlink{classosa_triple_buffer_ab6c93acaa40c01f845dc9f4556e571fa}{To\+Stream} (std\+::ostream \&output\+Stream) const 
+void \hyperlink{classosa_triple_buffer_ab6c93acaa40c01f845dc9f4556e571fa}{To\-Stream} (std\-::ostream \&output\-Stream) const 
 \end{DoxyCompactItemize}
 \subsection*{Friends}
 \begin{DoxyCompactItemize}
 \item 
-class \hyperlink{classosa_triple_buffer_aa5453762a45f68872c7b49a51f962e9c}{osa\+Triple\+Buffer\+Test}
+class \hyperlink{classosa_triple_buffer_aa5453762a45f68872c7b49a51f962e9c}{osa\-Triple\-Buffer\-Test}
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-\subsubsection*{template$<$class \+\_\+element\+Type$>$class osa\+Triple\+Buffer$<$ \+\_\+element\+Type $>$}
+\subsubsection*{template$<$class \-\_\-element\-Type$>$class osa\-Triple\-Buffer$<$ \-\_\-element\-Type $>$}
 
-Triple buffer to implement a thread safe, lock free, single reader single writer container. This relies on a L\+I\+F\+O circular buffer with only three slots, one to read the latest value and two to write (assuming the reading thread can be slow to read).
+Triple buffer to implement a thread safe, lock free, single reader single writer container. This relies on a L\-I\-F\-O circular buffer with only three slots, one to read the latest value and two to write (assuming the reading thread can be slow to read).
 
-This class assumes read and write operations are performed in two different threads. The reader must trigger the following calls to be safe\+: Begin\+Read, Get\+Read\+Pointer and finally End\+Read. Similarly, the writer must call Begin\+Write, Get\+Write\+Pointer and End\+Write. It is important to not cache the results of both Get\+Read\+Pointer and Get\+Write\+Pointer.
+This class assumes read and write operations are performed in two different threads. The reader must trigger the following calls to be safe\-: Begin\-Read, Get\-Read\-Pointer and finally End\-Read. Similarly, the writer must call Begin\-Write, Get\-Write\-Pointer and End\-Write. It is important to not cache the results of both Get\-Read\-Pointer and Get\-Write\-Pointer.
 
 The triple buffer can be constructed using three existing pointers on valid memory slots or allocate the memory itself (see constructors).
 
-The implementation relies on a mutex (using \hyperlink{classosa_mutex}{osa\+Mutex}) to make sure the Begin\+Read, End\+Read, Begin\+Write and End\+Write methods are thread safe. The mutex is used for very brief operations so there shouldn\textquotesingle{}t be any long wait times. 
+The implementation relies on a mutex (using \hyperlink{classosa_mutex}{osa\-Mutex}) to make sure the Begin\-Read, End\-Read, Begin\-Write and End\-Write methods are thread safe. The mutex is used for very brief operations so there shouldn't be any long wait times. 
 
 \subsection{Constructor \& Destructor Documentation}
-\hypertarget{classosa_triple_buffer_af685c6dd30e1eb800ef6df3f8074ef1a}{}\index{osa\+Triple\+Buffer@{osa\+Triple\+Buffer}!osa\+Triple\+Buffer@{osa\+Triple\+Buffer}}
-\index{osa\+Triple\+Buffer@{osa\+Triple\+Buffer}!osa\+Triple\+Buffer@{osa\+Triple\+Buffer}}
-\subsubsection[{osa\+Triple\+Buffer}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type $>$ {\bf osa\+Triple\+Buffer}$<$ \+\_\+element\+Type $>$\+::{\bf osa\+Triple\+Buffer} (
+\hypertarget{classosa_triple_buffer_af685c6dd30e1eb800ef6df3f8074ef1a}{\index{osa\-Triple\-Buffer@{osa\-Triple\-Buffer}!osa\-Triple\-Buffer@{osa\-Triple\-Buffer}}
+\index{osa\-Triple\-Buffer@{osa\-Triple\-Buffer}!osaTripleBuffer@{osa\-Triple\-Buffer}}
+\subsubsection[{osa\-Triple\-Buffer}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-element\-Type $>$ {\bf osa\-Triple\-Buffer}$<$ \-\_\-element\-Type $>$\-::{\bf osa\-Triple\-Buffer} (
 \begin{DoxyParamCaption}
 \item[{void}]{}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\label{classosa_triple_buffer_af685c6dd30e1eb800ef6df3f8074ef1a}
-Constructor that allocates memory for the triple buffer using the default constructor for each element. \hypertarget{classosa_triple_buffer_ad60e01d3bf64e9d400107dc6a173a1e3}{}\index{osa\+Triple\+Buffer@{osa\+Triple\+Buffer}!osa\+Triple\+Buffer@{osa\+Triple\+Buffer}}
-\index{osa\+Triple\+Buffer@{osa\+Triple\+Buffer}!osa\+Triple\+Buffer@{osa\+Triple\+Buffer}}
-\subsubsection[{osa\+Triple\+Buffer}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type $>$ {\bf osa\+Triple\+Buffer}$<$ \+\_\+element\+Type $>$\+::{\bf osa\+Triple\+Buffer} (
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classosa_triple_buffer_af685c6dd30e1eb800ef6df3f8074ef1a}
+Constructor that allocates memory for the triple buffer using the default constructor for each element. \hypertarget{classosa_triple_buffer_ad60e01d3bf64e9d400107dc6a173a1e3}{\index{osa\-Triple\-Buffer@{osa\-Triple\-Buffer}!osa\-Triple\-Buffer@{osa\-Triple\-Buffer}}
+\index{osa\-Triple\-Buffer@{osa\-Triple\-Buffer}!osaTripleBuffer@{osa\-Triple\-Buffer}}
+\subsubsection[{osa\-Triple\-Buffer}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-element\-Type $>$ {\bf osa\-Triple\-Buffer}$<$ \-\_\-element\-Type $>$\-::{\bf osa\-Triple\-Buffer} (
 \begin{DoxyParamCaption}
-\item[{const\+\_\+reference}]{initial\+Value}
+\item[{const\-\_\-reference}]{initial\-Value}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\label{classosa_triple_buffer_ad60e01d3bf64e9d400107dc6a173a1e3}
-Constructor that allocates memory for the triple buffer using the copy constructor for each element. User has to provide an value which will be used to initialize the buffer elements. \hypertarget{classosa_triple_buffer_a98293e4fbf7257c915c3cd349dd506b5}{}\index{osa\+Triple\+Buffer@{osa\+Triple\+Buffer}!osa\+Triple\+Buffer@{osa\+Triple\+Buffer}}
-\index{osa\+Triple\+Buffer@{osa\+Triple\+Buffer}!osa\+Triple\+Buffer@{osa\+Triple\+Buffer}}
-\subsubsection[{osa\+Triple\+Buffer}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type $>$ {\bf osa\+Triple\+Buffer}$<$ \+\_\+element\+Type $>$\+::{\bf osa\+Triple\+Buffer} (
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classosa_triple_buffer_ad60e01d3bf64e9d400107dc6a173a1e3}
+Constructor that allocates memory for the triple buffer using the copy constructor for each element. User has to provide an value which will be used to initialize the buffer elements. \hypertarget{classosa_triple_buffer_a98293e4fbf7257c915c3cd349dd506b5}{\index{osa\-Triple\-Buffer@{osa\-Triple\-Buffer}!osa\-Triple\-Buffer@{osa\-Triple\-Buffer}}
+\index{osa\-Triple\-Buffer@{osa\-Triple\-Buffer}!osaTripleBuffer@{osa\-Triple\-Buffer}}
+\subsubsection[{osa\-Triple\-Buffer}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-element\-Type $>$ {\bf osa\-Triple\-Buffer}$<$ \-\_\-element\-Type $>$\-::{\bf osa\-Triple\-Buffer} (
 \begin{DoxyParamCaption}
 \item[{pointer}]{pointer1, }
 \item[{pointer}]{pointer2, }
 \item[{pointer}]{pointer3}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\label{classosa_triple_buffer_a98293e4fbf7257c915c3cd349dd506b5}
-Constructor that doesn\textquotesingle{}t allocate any memory, user has to provide 3 valid pointers on 3 different pre-\/allocated objects. This can be used in combination with libraries such as V\+T\+K which have private constructors. \hypertarget{classosa_triple_buffer_a620796ad9891d61a53bc87c87a4796d7}{}\index{osa\+Triple\+Buffer@{osa\+Triple\+Buffer}!````~osa\+Triple\+Buffer@{$\sim$osa\+Triple\+Buffer}}
-\index{````~osa\+Triple\+Buffer@{$\sim$osa\+Triple\+Buffer}!osa\+Triple\+Buffer@{osa\+Triple\+Buffer}}
-\subsubsection[{$\sim$osa\+Triple\+Buffer}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type $>$ {\bf osa\+Triple\+Buffer}$<$ \+\_\+element\+Type $>$\+::$\sim${\bf osa\+Triple\+Buffer} (
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classosa_triple_buffer_a98293e4fbf7257c915c3cd349dd506b5}
+Constructor that doesn't allocate any memory, user has to provide 3 valid pointers on 3 different pre-\/allocated objects. This can be used in combination with libraries such as V\-T\-K which have private constructors. \hypertarget{classosa_triple_buffer_a620796ad9891d61a53bc87c87a4796d7}{\index{osa\-Triple\-Buffer@{osa\-Triple\-Buffer}!$\sim$osa\-Triple\-Buffer@{$\sim$osa\-Triple\-Buffer}}
+\index{$\sim$osa\-Triple\-Buffer@{$\sim$osa\-Triple\-Buffer}!osaTripleBuffer@{osa\-Triple\-Buffer}}
+\subsubsection[{$\sim$osa\-Triple\-Buffer}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-element\-Type $>$ {\bf osa\-Triple\-Buffer}$<$ \-\_\-element\-Type $>$\-::$\sim${\bf osa\-Triple\-Buffer} (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\label{classosa_triple_buffer_a620796ad9891d61a53bc87c87a4796d7}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classosa_triple_buffer_a620796ad9891d61a53bc87c87a4796d7}
 Destructor. If the memory is owned, it will delete the 3 objects allocated. All nodes get deleted. 
 
 \subsection{Member Function Documentation}
-\hypertarget{classosa_triple_buffer_a60ba16dfa7b74ed88998792c195af383}{}\index{osa\+Triple\+Buffer@{osa\+Triple\+Buffer}!Begin\+Read@{Begin\+Read}}
-\index{Begin\+Read@{Begin\+Read}!osa\+Triple\+Buffer@{osa\+Triple\+Buffer}}
-\subsubsection[{Begin\+Read}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type $>$ void {\bf osa\+Triple\+Buffer}$<$ \+\_\+element\+Type $>$\+::Begin\+Read (
+\hypertarget{classosa_triple_buffer_a60ba16dfa7b74ed88998792c195af383}{\index{osa\-Triple\-Buffer@{osa\-Triple\-Buffer}!Begin\-Read@{Begin\-Read}}
+\index{Begin\-Read@{Begin\-Read}!osaTripleBuffer@{osa\-Triple\-Buffer}}
+\subsubsection[{Begin\-Read}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-element\-Type $>$ void {\bf osa\-Triple\-Buffer}$<$ \-\_\-element\-Type $>$\-::Begin\-Read (
 \begin{DoxyParamCaption}
 \item[{void}]{}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\label{classosa_triple_buffer_a60ba16dfa7b74ed88998792c195af383}
-Method used to find and lock the read node in the triple buffer. To access the actual memory, use Get\+Read\+Pointer. \hypertarget{classosa_triple_buffer_a59c6f1c56ffac365adf0e219783c9091}{}\index{osa\+Triple\+Buffer@{osa\+Triple\+Buffer}!Begin\+Write@{Begin\+Write}}
-\index{Begin\+Write@{Begin\+Write}!osa\+Triple\+Buffer@{osa\+Triple\+Buffer}}
-\subsubsection[{Begin\+Write}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type $>$ void {\bf osa\+Triple\+Buffer}$<$ \+\_\+element\+Type $>$\+::Begin\+Write (
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classosa_triple_buffer_a60ba16dfa7b74ed88998792c195af383}
+Method used to find and lock the read node in the triple buffer. To access the actual memory, use Get\-Read\-Pointer. \hypertarget{classosa_triple_buffer_a59c6f1c56ffac365adf0e219783c9091}{\index{osa\-Triple\-Buffer@{osa\-Triple\-Buffer}!Begin\-Write@{Begin\-Write}}
+\index{Begin\-Write@{Begin\-Write}!osaTripleBuffer@{osa\-Triple\-Buffer}}
+\subsubsection[{Begin\-Write}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-element\-Type $>$ void {\bf osa\-Triple\-Buffer}$<$ \-\_\-element\-Type $>$\-::Begin\-Write (
 \begin{DoxyParamCaption}
 \item[{void}]{}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\label{classosa_triple_buffer_a59c6f1c56ffac365adf0e219783c9091}
-Method used to find and lock the write node in the triple buffer. To access the actual memory, use Get\+Read\+Pointer. \hypertarget{classosa_triple_buffer_aeafc6d3ce30c02aabd1549cdeb4b21f6}{}\index{osa\+Triple\+Buffer@{osa\+Triple\+Buffer}!End\+Read@{End\+Read}}
-\index{End\+Read@{End\+Read}!osa\+Triple\+Buffer@{osa\+Triple\+Buffer}}
-\subsubsection[{End\+Read}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type $>$ void {\bf osa\+Triple\+Buffer}$<$ \+\_\+element\+Type $>$\+::End\+Read (
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classosa_triple_buffer_a59c6f1c56ffac365adf0e219783c9091}
+Method used to find and lock the write node in the triple buffer. To access the actual memory, use Get\-Read\-Pointer. \hypertarget{classosa_triple_buffer_aeafc6d3ce30c02aabd1549cdeb4b21f6}{\index{osa\-Triple\-Buffer@{osa\-Triple\-Buffer}!End\-Read@{End\-Read}}
+\index{End\-Read@{End\-Read}!osaTripleBuffer@{osa\-Triple\-Buffer}}
+\subsubsection[{End\-Read}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-element\-Type $>$ void {\bf osa\-Triple\-Buffer}$<$ \-\_\-element\-Type $>$\-::End\-Read (
 \begin{DoxyParamCaption}
 \item[{void}]{}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\label{classosa_triple_buffer_aeafc6d3ce30c02aabd1549cdeb4b21f6}
-Method to unlock the read node. \hypertarget{classosa_triple_buffer_a1f71a564e41546875abae049db19dd54}{}\index{osa\+Triple\+Buffer@{osa\+Triple\+Buffer}!End\+Write@{End\+Write}}
-\index{End\+Write@{End\+Write}!osa\+Triple\+Buffer@{osa\+Triple\+Buffer}}
-\subsubsection[{End\+Write}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type $>$ void {\bf osa\+Triple\+Buffer}$<$ \+\_\+element\+Type $>$\+::End\+Write (
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classosa_triple_buffer_aeafc6d3ce30c02aabd1549cdeb4b21f6}
+Method to unlock the read node. \hypertarget{classosa_triple_buffer_a1f71a564e41546875abae049db19dd54}{\index{osa\-Triple\-Buffer@{osa\-Triple\-Buffer}!End\-Write@{End\-Write}}
+\index{End\-Write@{End\-Write}!osaTripleBuffer@{osa\-Triple\-Buffer}}
+\subsubsection[{End\-Write}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-element\-Type $>$ void {\bf osa\-Triple\-Buffer}$<$ \-\_\-element\-Type $>$\-::End\-Write (
 \begin{DoxyParamCaption}
 \item[{void}]{}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\label{classosa_triple_buffer_a1f71a564e41546875abae049db19dd54}
-Method to unlock the write node. \hypertarget{classosa_triple_buffer_acce7b1e6b493242c69a7878ee2d2f255}{}\index{osa\+Triple\+Buffer@{osa\+Triple\+Buffer}!Get\+Read\+Pointer@{Get\+Read\+Pointer}}
-\index{Get\+Read\+Pointer@{Get\+Read\+Pointer}!osa\+Triple\+Buffer@{osa\+Triple\+Buffer}}
-\subsubsection[{Get\+Read\+Pointer}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type $>$ const\+\_\+pointer {\bf osa\+Triple\+Buffer}$<$ \+\_\+element\+Type $>$\+::Get\+Read\+Pointer (
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classosa_triple_buffer_a1f71a564e41546875abae049db19dd54}
+Method to unlock the write node. \hypertarget{classosa_triple_buffer_acce7b1e6b493242c69a7878ee2d2f255}{\index{osa\-Triple\-Buffer@{osa\-Triple\-Buffer}!Get\-Read\-Pointer@{Get\-Read\-Pointer}}
+\index{Get\-Read\-Pointer@{Get\-Read\-Pointer}!osaTripleBuffer@{osa\-Triple\-Buffer}}
+\subsubsection[{Get\-Read\-Pointer}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-element\-Type $>$ const\-\_\-pointer {\bf osa\-Triple\-Buffer}$<$ \-\_\-element\-Type $>$\-::Get\-Read\-Pointer (
 \begin{DoxyParamCaption}
 \item[{void}]{}
 \end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classosa_triple_buffer_acce7b1e6b493242c69a7878ee2d2f255}
-Function to access the memory to read safely. This method call must be preceeded by a call to Begin\+Read and followed by a call to End\+Read. All three calls must be performed in the same thread space. \hypertarget{classosa_triple_buffer_a883eb98a1b7416145c7f5c8081184ebe}{}\index{osa\+Triple\+Buffer@{osa\+Triple\+Buffer}!Get\+Write\+Pointer@{Get\+Write\+Pointer}}
-\index{Get\+Write\+Pointer@{Get\+Write\+Pointer}!osa\+Triple\+Buffer@{osa\+Triple\+Buffer}}
-\subsubsection[{Get\+Write\+Pointer}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type $>$ pointer {\bf osa\+Triple\+Buffer}$<$ \+\_\+element\+Type $>$\+::Get\+Write\+Pointer (
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classosa_triple_buffer_acce7b1e6b493242c69a7878ee2d2f255}
+Function to access the memory to read safely. This method call must be preceeded by a call to Begin\-Read and followed by a call to End\-Read. All three calls must be performed in the same thread space. \hypertarget{classosa_triple_buffer_a883eb98a1b7416145c7f5c8081184ebe}{\index{osa\-Triple\-Buffer@{osa\-Triple\-Buffer}!Get\-Write\-Pointer@{Get\-Write\-Pointer}}
+\index{Get\-Write\-Pointer@{Get\-Write\-Pointer}!osaTripleBuffer@{osa\-Triple\-Buffer}}
+\subsubsection[{Get\-Write\-Pointer}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-element\-Type $>$ pointer {\bf osa\-Triple\-Buffer}$<$ \-\_\-element\-Type $>$\-::Get\-Write\-Pointer (
 \begin{DoxyParamCaption}
 \item[{void}]{}
 \end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classosa_triple_buffer_a883eb98a1b7416145c7f5c8081184ebe}
-Function to access the memory to write safely. This method call must be preceeded by a call to Begin\+Write and followed by a call to End\+Write. All three calls must be performed in the same thread space. \hypertarget{classosa_triple_buffer_a3f8542a0f8c276250f14411e85ff2d04}{}\index{osa\+Triple\+Buffer@{osa\+Triple\+Buffer}!Read@{Read}}
-\index{Read@{Read}!osa\+Triple\+Buffer@{osa\+Triple\+Buffer}}
-\subsubsection[{Read}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type $>$ void {\bf osa\+Triple\+Buffer}$<$ \+\_\+element\+Type $>$\+::Read (
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classosa_triple_buffer_a883eb98a1b7416145c7f5c8081184ebe}
+Function to access the memory to write safely. This method call must be preceeded by a call to Begin\-Write and followed by a call to End\-Write. All three calls must be performed in the same thread space. \hypertarget{classosa_triple_buffer_a3f8542a0f8c276250f14411e85ff2d04}{\index{osa\-Triple\-Buffer@{osa\-Triple\-Buffer}!Read@{Read}}
+\index{Read@{Read}!osaTripleBuffer@{osa\-Triple\-Buffer}}
+\subsubsection[{Read}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-element\-Type $>$ void {\bf osa\-Triple\-Buffer}$<$ \-\_\-element\-Type $>$\-::Read (
 \begin{DoxyParamCaption}
-\item[{reference}]{place\+Holder}
+\item[{reference}]{place\-Holder}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\label{classosa_triple_buffer_a3f8542a0f8c276250f14411e85ff2d04}
-Calls Begin\+Read, assign the last written value using the operator = and then calls End\+Read. \hypertarget{classosa_triple_buffer_acf53979aa3445d7a18060c8ba3facc58}{}\index{osa\+Triple\+Buffer@{osa\+Triple\+Buffer}!Setup\+Nodes@{Setup\+Nodes}}
-\index{Setup\+Nodes@{Setup\+Nodes}!osa\+Triple\+Buffer@{osa\+Triple\+Buffer}}
-\subsubsection[{Setup\+Nodes}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type $>$ void {\bf osa\+Triple\+Buffer}$<$ \+\_\+element\+Type $>$\+::Setup\+Nodes (
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classosa_triple_buffer_a3f8542a0f8c276250f14411e85ff2d04}
+Calls Begin\-Read, assign the last written value using the operator = and then calls End\-Read. \hypertarget{classosa_triple_buffer_acf53979aa3445d7a18060c8ba3facc58}{\index{osa\-Triple\-Buffer@{osa\-Triple\-Buffer}!Setup\-Nodes@{Setup\-Nodes}}
+\index{Setup\-Nodes@{Setup\-Nodes}!osaTripleBuffer@{osa\-Triple\-Buffer}}
+\subsubsection[{Setup\-Nodes}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-element\-Type $>$ void {\bf osa\-Triple\-Buffer}$<$ \-\_\-element\-Type $>$\-::Setup\-Nodes (
 \begin{DoxyParamCaption}
 \item[{pointer}]{pointer1, }
 \item[{pointer}]{pointer2, }
 \item[{pointer}]{pointer3}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\label{classosa_triple_buffer_acf53979aa3445d7a18060c8ba3facc58}
-Internal method to setup all nodes of the circular buffer. It requires 3 valid pointers. \hypertarget{classosa_triple_buffer_ab6c93acaa40c01f845dc9f4556e571fa}{}\index{osa\+Triple\+Buffer@{osa\+Triple\+Buffer}!To\+Stream@{To\+Stream}}
-\index{To\+Stream@{To\+Stream}!osa\+Triple\+Buffer@{osa\+Triple\+Buffer}}
-\subsubsection[{To\+Stream}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type $>$ void {\bf osa\+Triple\+Buffer}$<$ \+\_\+element\+Type $>$\+::To\+Stream (
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classosa_triple_buffer_acf53979aa3445d7a18060c8ba3facc58}
+Internal method to setup all nodes of the circular buffer. It requires 3 valid pointers. \hypertarget{classosa_triple_buffer_ab6c93acaa40c01f845dc9f4556e571fa}{\index{osa\-Triple\-Buffer@{osa\-Triple\-Buffer}!To\-Stream@{To\-Stream}}
+\index{To\-Stream@{To\-Stream}!osaTripleBuffer@{osa\-Triple\-Buffer}}
+\subsubsection[{To\-Stream}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-element\-Type $>$ void {\bf osa\-Triple\-Buffer}$<$ \-\_\-element\-Type $>$\-::To\-Stream (
 \begin{DoxyParamCaption}
-\item[{std\+::ostream \&}]{output\+Stream}
+\item[{std\-::ostream \&}]{output\-Stream}
 \end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classosa_triple_buffer_ab6c93acaa40c01f845dc9f4556e571fa}
-Method to display current state of triple buffer \hypertarget{classosa_triple_buffer_a9b988d139edf8aa2eb185917878b711c}{}\index{osa\+Triple\+Buffer@{osa\+Triple\+Buffer}!Write@{Write}}
-\index{Write@{Write}!osa\+Triple\+Buffer@{osa\+Triple\+Buffer}}
-\subsubsection[{Write}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type $>$ void {\bf osa\+Triple\+Buffer}$<$ \+\_\+element\+Type $>$\+::Write (
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classosa_triple_buffer_ab6c93acaa40c01f845dc9f4556e571fa}
+Method to display current state of triple buffer \hypertarget{classosa_triple_buffer_a9b988d139edf8aa2eb185917878b711c}{\index{osa\-Triple\-Buffer@{osa\-Triple\-Buffer}!Write@{Write}}
+\index{Write@{Write}!osaTripleBuffer@{osa\-Triple\-Buffer}}
+\subsubsection[{Write}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-element\-Type $>$ void {\bf osa\-Triple\-Buffer}$<$ \-\_\-element\-Type $>$\-::Write (
 \begin{DoxyParamCaption}
-\item[{const\+\_\+reference}]{new\+Value}
+\item[{const\-\_\-reference}]{new\-Value}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\label{classosa_triple_buffer_a9b988d139edf8aa2eb185917878b711c}
-Calls Begin\+Write, assign the new value to the current write location using the operator = and then calls End\+Write. 
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classosa_triple_buffer_a9b988d139edf8aa2eb185917878b711c}
+Calls Begin\-Write, assign the new value to the current write location using the operator = and then calls End\-Write. 
 
 \subsection{Friends And Related Function Documentation}
-\hypertarget{classosa_triple_buffer_aa5453762a45f68872c7b49a51f962e9c}{}\index{osa\+Triple\+Buffer@{osa\+Triple\+Buffer}!osa\+Triple\+Buffer\+Test@{osa\+Triple\+Buffer\+Test}}
-\index{osa\+Triple\+Buffer\+Test@{osa\+Triple\+Buffer\+Test}!osa\+Triple\+Buffer@{osa\+Triple\+Buffer}}
-\subsubsection[{osa\+Triple\+Buffer\+Test}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type $>$ friend class osa\+Triple\+Buffer\+Test\hspace{0.3cm}{\ttfamily [friend]}}\label{classosa_triple_buffer_aa5453762a45f68872c7b49a51f962e9c}
+\hypertarget{classosa_triple_buffer_aa5453762a45f68872c7b49a51f962e9c}{\index{osa\-Triple\-Buffer@{osa\-Triple\-Buffer}!osa\-Triple\-Buffer\-Test@{osa\-Triple\-Buffer\-Test}}
+\index{osa\-Triple\-Buffer\-Test@{osa\-Triple\-Buffer\-Test}!osaTripleBuffer@{osa\-Triple\-Buffer}}
+\subsubsection[{osa\-Triple\-Buffer\-Test}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-element\-Type $>$ friend class osa\-Triple\-Buffer\-Test\hspace{0.3cm}{\ttfamily [friend]}}}\label{classosa_triple_buffer_aa5453762a45f68872c7b49a51f962e9c}
 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
 \item 
-/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+O\+S\+Abstraction/\hyperlink{osa_triple_buffer_8h}{osa\+Triple\+Buffer.\+h}\end{DoxyCompactItemize}
+/home/adeguet1/catkin\-\_\-ws/src/cisst-\/saw/cisst/cisst\-O\-S\-Abstraction/\hyperlink{osa_triple_buffer_8h}{osa\-Triple\-Buffer.\-h}\end{DoxyCompactItemize}

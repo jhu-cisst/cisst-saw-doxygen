@@ -1,65 +1,66 @@
-\hypertarget{nmr_l_u_8h}{}\section{/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Numerical/nmr\+L\+U.h File Reference}
-\label{nmr_l_u_8h}\index{/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Numerical/nmr\+L\+U.\+h@{/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Numerical/nmr\+L\+U.\+h}}
+\hypertarget{nmr_l_u_8h}{\section{/home/adeguet1/catkin\-\_\-ws/src/cisst-\/saw/cisst/cisst\-Numerical/nmr\-L\-U.h File Reference}
+\label{nmr_l_u_8h}\index{/home/adeguet1/catkin\-\_\-ws/src/cisst-\/saw/cisst/cisst\-Numerical/nmr\-L\-U.\-h@{/home/adeguet1/catkin\-\_\-ws/src/cisst-\/saw/cisst/cisst\-Numerical/nmr\-L\-U.\-h}}
+}
 
 
-Declaration of nmr\+L\+U.  
+Declaration of nmr\-L\-U.  
 
 
-{\ttfamily \#include $<$cisst\+Common/cmn\+Throw.\+h$>$}\\*
-{\ttfamily \#include $<$cisst\+Vector/vct\+Fixed\+Size\+Matrix.\+h$>$}\\*
-{\ttfamily \#include $<$cisst\+Vector/vct\+Dynamic\+Matrix.\+h$>$}\\*
-{\ttfamily \#include $<$cisst\+Numerical/nmr\+Netlib.\+h$>$}\\*
-{\ttfamily \#include $<$cisst\+Numerical/nmr\+Export.\+h$>$}\\*
+{\ttfamily \#include $<$cisst\-Common/cmn\-Throw.\-h$>$}\\*
+{\ttfamily \#include $<$cisst\-Vector/vct\-Fixed\-Size\-Matrix.\-h$>$}\\*
+{\ttfamily \#include $<$cisst\-Vector/vct\-Dynamic\-Matrix.\-h$>$}\\*
+{\ttfamily \#include $<$cisst\-Numerical/nmr\-Netlib.\-h$>$}\\*
+{\ttfamily \#include $<$cisst\-Numerical/nmr\-Export.\-h$>$}\\*
 \subsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
-class \hyperlink{classnmr_l_u_dynamic_data}{nmr\+L\+U\+Dynamic\+Data}
-\begin{DoxyCompactList}\small\item\em Data of L\+U problem (Dynamic). \end{DoxyCompactList}\item 
-class \hyperlink{classnmr_l_u_dynamic_data_1_1_friend}{nmr\+L\+U\+Dynamic\+Data\+::\+Friend}
+class \hyperlink{classnmr_l_u_dynamic_data}{nmr\-L\-U\-Dynamic\-Data}
+\begin{DoxyCompactList}\small\item\em Data of L\-U problem (Dynamic). \end{DoxyCompactList}\item 
+class \hyperlink{classnmr_l_u_dynamic_data_1_1_friend}{nmr\-L\-U\-Dynamic\-Data\-::\-Friend}
 \item 
-class \hyperlink{classnmr_l_u_fixed_size_data}{nmr\+L\+U\+Fixed\+Size\+Data$<$ \+\_\+rows, \+\_\+cols $>$}
-\begin{DoxyCompactList}\small\item\em Data of L\+U problem (Fixed size). \end{DoxyCompactList}\item 
-class \hyperlink{classnmr_l_u_fixed_size_data_1_1_friend}{nmr\+L\+U\+Fixed\+Size\+Data$<$ \+\_\+rows, \+\_\+cols $>$\+::\+Friend}
+class \hyperlink{classnmr_l_u_fixed_size_data}{nmr\-L\-U\-Fixed\-Size\-Data$<$ \-\_\-rows, \-\_\-cols $>$}
+\begin{DoxyCompactList}\small\item\em Data of L\-U problem (Fixed size). \end{DoxyCompactList}\item 
+class \hyperlink{classnmr_l_u_fixed_size_data_1_1_friend}{nmr\-L\-U\-Fixed\-Size\-Data$<$ \-\_\-rows, \-\_\-cols $>$\-::\-Friend}
 \end{DoxyCompactItemize}
 \subsection*{Functions}
-\begin{Indent}{\bf Algorithm L\+U\+: Lower Upper Decomposition}\par
-{\em These functions are different wrappers for the L\+A\+P\+A\+C\+K function dgetrf. They compute an L\+U factorization of a general M-\/by-\/\+N matrix A using partial pivoting with row interchanges.
+\begin{Indent}{\bf Algorithm L\-U\-: Lower Upper Decomposition}\par
+{\em These functions are different wrappers for the L\-A\-P\-A\-C\-K function dgetrf. They compute an L\-U factorization of a general M-\/by-\/\-N matrix A using partial pivoting with row interchanges.
 
 The factorization has the form $ A = P * L * U $ where P is a permutation matrix, L is lower triangular with unit diagonal elements (lower trapezoidal if m $>$ n), and U is upper triangular (upper trapezoidal if m $<$ n).
 
-These functions are wrappers around the L\+A\+P\+A\+C\+K routine dgetrf, therefore they share some features with the L\+A\+P\+A\+C\+K routine\+: 
+These functions are wrappers around the L\-A\-P\-A\-C\-K routine dgetrf, therefore they share some features with the L\-A\-P\-A\-C\-K routine\-: 
 \begin{DoxyEnumerate}
 \item On exit, the content of A is altered. 
-\item The vectors and matrices must be compact, i.\+e. use a contiguous block of memory. 
+\item The vectors and matrices must be compact, i.\-e. use a contiguous block of memory. 
 \end{DoxyEnumerate}
 
-The \hyperlink{nmr_l_u_8h_a66bf403c705953a781e940cf1b674d5f}{nmr\+L\+U} functions add the following features\+: 
+The \hyperlink{nmr_l_u_8h_a66bf403c705953a781e940cf1b674d5f}{nmr\-L\-U} functions add the following features\-: 
 \begin{DoxyEnumerate}
-\item A simplified interface to the cisst\+Vector matrices, either \hyperlink{classvct_dynamic_matrix}{vct\+Dynamic\+Matrix} or \hyperlink{classvct_fixed_size_matrix}{vct\+Fixed\+Size\+Matrix}. 
-\item Input validation checks are performed, i.\+e. an std\+::runtime\+\_\+error exception will be thrown if the sizes or storage order don\textquotesingle{}t match or if the containers are not compact. 
-\item Helper classes to allocate memory for the output and workspace\+: \hyperlink{classnmr_l_u_fixed_size_data}{nmr\+L\+U\+Fixed\+Size\+Data} and \hyperlink{classnmr_l_u_dynamic_data}{nmr\+L\+U\+Dynamic\+Data}. 
+\item A simplified interface to the cisst\-Vector matrices, either \hyperlink{classvct_dynamic_matrix}{vct\-Dynamic\-Matrix} or \hyperlink{classvct_fixed_size_matrix}{vct\-Fixed\-Size\-Matrix}. 
+\item Input validation checks are performed, i.\-e. an std\-::runtime\-\_\-error exception will be thrown if the sizes or storage order don't match or if the containers are not compact. 
+\item Helper classes to allocate memory for the output and workspace\-: \hyperlink{classnmr_l_u_fixed_size_data}{nmr\-L\-U\-Fixed\-Size\-Data} and \hyperlink{classnmr_l_u_dynamic_data}{nmr\-L\-U\-Dynamic\-Data}. 
 \item Methods to create usable matrices P, L and U from the pivot indices and the resulting matrix A. 
 \end{DoxyEnumerate}
 
-There are different ways to call this function to compute the L\+U of the matrix A. These correspond to different overloaded \hyperlink{nmr_l_u_8h_a66bf403c705953a781e940cf1b674d5f}{nmr\+L\+U} functions\+: 
+There are different ways to call this function to compute the L\-U of the matrix A. These correspond to different overloaded \hyperlink{nmr_l_u_8h_a66bf403c705953a781e940cf1b674d5f}{nmr\-L\-U} functions\-: 
 \begin{DoxyEnumerate}
 \item Using a preallocated data object.
 
-The user creates the input matrix A\+: 
+The user creates the input matrix A\-: 
 \begin{DoxyCode}
 \hyperlink{classvct_dynamic_matrix}{vctDynamicMatrix<CISSTNETLIB\_DOUBLE>} A(12, 24 , 
       \hyperlink{vct_forward_declarations_8h_a432cdf8923afaf82f551450ad4034746}{VCT\_COL\_MAJOR}); \textcolor{comment}{// 12 x 24 matrix}
 \hyperlink{group__cisst_vector_ga0d25660a2dc6ef9c093f6f6b2804d2d0}{vctRandom}(A, -10.0, 10.0);
 \end{DoxyCode}
- The user allocates a data object which could be of type \hyperlink{classnmr_l_u_fixed_size_data}{nmr\+L\+U\+Fixed\+Size\+Data} or \hyperlink{classnmr_l_u_dynamic_data}{nmr\+L\+U\+Dynamic\+Data}. corresponding to fixed size or dynamic matrix A\+: 
+ The user allocates a data object which could be of type \hyperlink{classnmr_l_u_fixed_size_data}{nmr\-L\-U\-Fixed\-Size\-Data} or \hyperlink{classnmr_l_u_dynamic_data}{nmr\-L\-U\-Dynamic\-Data}. corresponding to fixed size or dynamic matrix A\-: 
 \begin{DoxyCode}
 \hyperlink{classnmr_l_u_dynamic_data}{nmrLUDynamicData} data(A);
 \end{DoxyCode}
- Call the nmr\+L\+U function\+: 
+ Call the nmr\-L\-U function\-: 
 \begin{DoxyCode}
 \hyperlink{nmr_l_u_8h_a1c368f088de9642bd4dc6f448e4b1e24}{nmrLU}(A, data);
 \end{DoxyCode}
- The content of input matrix A is modified by this routine and a vector the pivot indices has been updated. If the user needs the actual matrices P, L and U, he can use the different helper methods of the data\+: 
+ The content of input matrix A is modified by this routine and a vector the pivot indices has been updated. If the user needs the actual matrices P, L and U, he can use the different helper methods of the data\-: 
 \begin{DoxyCode}
 \hyperlink{classvct_dynamic_matrix}{vctDynamicMatrix<CISSTNETLIB\_DOUBLE>} P, L, U;
 nmrLUDynamicData::SetSizeP(A, P);
@@ -68,23 +69,23 @@ nmrLUDynamicData::SetSizeLU(A, L, U);
 \hyperlink{classnmr_l_u_dynamic_data_aa443b07fe53b5008e217350c86f4dd35}{nmrLUDynamicData::UpdateMatrixLU}(A, L, U);
 std::cout << P * L * U << std::endl;
 \end{DoxyCode}
- The matrices P, L and U can used any storage order since they are not used by L\+A\+P\+A\+C\+K.
+ The matrices P, L and U can used any storage order since they are not used by L\-A\-P\-A\-C\-K.
 
 
-\item The user provides the vector pivot\+Indices.
+\item The user provides the vector pivot\-Indices.
 
-The User allocates memory for this vector\+: 
+The User allocates memory for this vector\-: 
 \begin{DoxyCode}
 \hyperlink{classvct_dynamic_matrix}{vctDynamicMatrix<CISSTNETLIB\_DOUBLE>} A(5, 4, 
       \hyperlink{vct_forward_declarations_8h_a432cdf8923afaf82f551450ad4034746}{VCT\_COL\_MAJOR});
 \hyperlink{group__cisst_vector_ga0d25660a2dc6ef9c093f6f6b2804d2d0}{vctRandom}(A, -10.0, 10.0);
 \hyperlink{classvct_dynamic_vector}{vctDynamicVector<CISSTNETLIB\_INTEGER>} pivotIndices(4);
 \end{DoxyCode}
- Call the L\+U routine\+: 
+ Call the L\-U routine\-: 
 \begin{DoxyCode}
 \hyperlink{nmr_l_u_8h_a1c368f088de9642bd4dc6f448e4b1e24}{nmrLU}(A, pivotIndices);
 \end{DoxyCode}
- The L\+U function verifies that the size of the data objects matches the input.
+ The L\-U function verifies that the size of the data objects matches the input.
 
 
 \item Using a data for fixed size containers.
@@ -109,121 +110,120 @@ DataType::UpdateMatrixLU(A, L, U);
 \end{DoxyEnumerate}
 
 \begin{DoxyNote}{Note}
-The L\+U functions make use of L\+A\+P\+A\+C\+K routines. To activate this code, set the C\+I\+S\+S\+T\+\_\+\+H\+A\+S\+\_\+\+C\+N\+E\+T\+L\+I\+B or C\+I\+S\+S\+T\+\_\+\+H\+A\+S\+\_\+\+C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B flag to O\+N during the configuration of cisst with C\+Make. 
+The L\-U functions make use of L\-A\-P\-A\-C\-K routines. To activate this code, set the C\-I\-S\-S\-T\-\_\-\-H\-A\-S\-\_\-\-C\-N\-E\-T\-L\-I\-B or C\-I\-S\-S\-T\-\_\-\-H\-A\-S\-\_\-\-C\-I\-S\-S\-T\-N\-E\-T\-L\-I\-B flag to O\-N during the configuration of cisst with C\-Make. 
 \end{DoxyNote}
 }\begin{DoxyCompactItemize}
 \item 
-{\footnotesize template$<$class \+\_\+matrix\+Owner\+Type $>$ }\\C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R \hyperlink{nmr_l_u_8h_a1c368f088de9642bd4dc6f448e4b1e24}{nmr\+L\+U} (\hyperlink{classvct_dynamic_matrix_base}{vct\+Dynamic\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&A, \hyperlink{classnmr_l_u_dynamic_data}{nmr\+L\+U\+Dynamic\+Data} \&data)  throw (std\+::runtime\+\_\+error)
+{\footnotesize template$<$class \-\_\-matrix\-Owner\-Type $>$ }\\C\-I\-S\-S\-T\-N\-E\-T\-L\-I\-B\-\_\-\-I\-N\-T\-E\-G\-E\-R \hyperlink{nmr_l_u_8h_a1c368f088de9642bd4dc6f448e4b1e24}{nmr\-L\-U} (\hyperlink{classvct_dynamic_matrix_base}{vct\-Dynamic\-Matrix\-Base}$<$ \-\_\-matrix\-Owner\-Type, C\-I\-S\-S\-T\-N\-E\-T\-L\-I\-B\-\_\-\-D\-O\-U\-B\-L\-E $>$ \&A, \hyperlink{classnmr_l_u_dynamic_data}{nmr\-L\-U\-Dynamic\-Data} \&data)  throw (std\-::runtime\-\_\-error)
 \item 
-{\footnotesize template$<$class \+\_\+matrix\+Owner\+Type\+A , class \+\_\+vector\+Owner\+Type\+Pivot\+Indices $>$ }\\C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R \hyperlink{nmr_l_u_8h_aa10afc4fd0a4cbfea2fc0b5e9ae88a15}{nmr\+L\+U} (\hyperlink{classvct_dynamic_matrix_base}{vct\+Dynamic\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type\+A, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&A, \hyperlink{classvct_dynamic_vector_base}{vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+Pivot\+Indices, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R $>$ \&pivot\+Indices)
+{\footnotesize template$<$class \-\_\-matrix\-Owner\-Type\-A , class \-\_\-vector\-Owner\-Type\-Pivot\-Indices $>$ }\\C\-I\-S\-S\-T\-N\-E\-T\-L\-I\-B\-\_\-\-I\-N\-T\-E\-G\-E\-R \hyperlink{nmr_l_u_8h_aa10afc4fd0a4cbfea2fc0b5e9ae88a15}{nmr\-L\-U} (\hyperlink{classvct_dynamic_matrix_base}{vct\-Dynamic\-Matrix\-Base}$<$ \-\_\-matrix\-Owner\-Type\-A, C\-I\-S\-S\-T\-N\-E\-T\-L\-I\-B\-\_\-\-D\-O\-U\-B\-L\-E $>$ \&A, \hyperlink{classvct_dynamic_vector_base}{vct\-Dynamic\-Vector\-Base}$<$ \-\_\-vector\-Owner\-Type\-Pivot\-Indices, C\-I\-S\-S\-T\-N\-E\-T\-L\-I\-B\-\_\-\-I\-N\-T\-E\-G\-E\-R $>$ \&pivot\-Indices)
 \item 
-{\footnotesize template$<$vct\+::size\+\_\+type \+\_\+rows, vct\+::size\+\_\+type \+\_\+cols, vct\+::size\+\_\+type \+\_\+minmn$>$ }\\C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R \hyperlink{nmr_l_u_8h_a252973f76de9a91c9a583cf48e155bd5}{nmr\+L\+U} (\hyperlink{classvct_fixed_size_matrix}{vct\+Fixed\+Size\+Matrix}$<$ C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E, \+\_\+rows, \+\_\+cols, \hyperlink{vct_forward_declarations_8h_a432cdf8923afaf82f551450ad4034746}{V\+C\+T\+\_\+\+C\+O\+L\+\_\+\+M\+A\+J\+O\+R} $>$ \&A, \hyperlink{classvct_fixed_size_vector}{vct\+Fixed\+Size\+Vector}$<$ C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R, \+\_\+minmn $>$ \&pivot\+Indices)
+{\footnotesize template$<$vct\-::size\-\_\-type \-\_\-rows, vct\-::size\-\_\-type \-\_\-cols, vct\-::size\-\_\-type \-\_\-minmn$>$ }\\C\-I\-S\-S\-T\-N\-E\-T\-L\-I\-B\-\_\-\-I\-N\-T\-E\-G\-E\-R \hyperlink{nmr_l_u_8h_a252973f76de9a91c9a583cf48e155bd5}{nmr\-L\-U} (\hyperlink{classvct_fixed_size_matrix}{vct\-Fixed\-Size\-Matrix}$<$ C\-I\-S\-S\-T\-N\-E\-T\-L\-I\-B\-\_\-\-D\-O\-U\-B\-L\-E, \-\_\-rows, \-\_\-cols, \hyperlink{vct_forward_declarations_8h_a432cdf8923afaf82f551450ad4034746}{V\-C\-T\-\_\-\-C\-O\-L\-\_\-\-M\-A\-J\-O\-R} $>$ \&A, \hyperlink{classvct_fixed_size_vector}{vct\-Fixed\-Size\-Vector}$<$ C\-I\-S\-S\-T\-N\-E\-T\-L\-I\-B\-\_\-\-I\-N\-T\-E\-G\-E\-R, \-\_\-minmn $>$ \&pivot\-Indices)
 \item 
-{\footnotesize template$<$vct\+::size\+\_\+type \+\_\+rows, vct\+::size\+\_\+type \+\_\+cols$>$ }\\C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R \hyperlink{nmr_l_u_8h_a66bf403c705953a781e940cf1b674d5f}{nmr\+L\+U} (\hyperlink{classvct_fixed_size_matrix}{vct\+Fixed\+Size\+Matrix}$<$ C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E, \+\_\+rows, \+\_\+cols, \hyperlink{vct_forward_declarations_8h_a432cdf8923afaf82f551450ad4034746}{V\+C\+T\+\_\+\+C\+O\+L\+\_\+\+M\+A\+J\+O\+R} $>$ \&A, \hyperlink{classnmr_l_u_fixed_size_data}{nmr\+L\+U\+Fixed\+Size\+Data}$<$ \+\_\+rows, \+\_\+cols $>$ \&data)
+{\footnotesize template$<$vct\-::size\-\_\-type \-\_\-rows, vct\-::size\-\_\-type \-\_\-cols$>$ }\\C\-I\-S\-S\-T\-N\-E\-T\-L\-I\-B\-\_\-\-I\-N\-T\-E\-G\-E\-R \hyperlink{nmr_l_u_8h_a66bf403c705953a781e940cf1b674d5f}{nmr\-L\-U} (\hyperlink{classvct_fixed_size_matrix}{vct\-Fixed\-Size\-Matrix}$<$ C\-I\-S\-S\-T\-N\-E\-T\-L\-I\-B\-\_\-\-D\-O\-U\-B\-L\-E, \-\_\-rows, \-\_\-cols, \hyperlink{vct_forward_declarations_8h_a432cdf8923afaf82f551450ad4034746}{V\-C\-T\-\_\-\-C\-O\-L\-\_\-\-M\-A\-J\-O\-R} $>$ \&A, \hyperlink{classnmr_l_u_fixed_size_data}{nmr\-L\-U\-Fixed\-Size\-Data}$<$ \-\_\-rows, \-\_\-cols $>$ \&data)
 \end{DoxyCompactItemize}
 \end{Indent}
 
 
 \subsection{Detailed Description}
-Declaration of nmr\+L\+U. 
-
-
+Declaration of nmr\-L\-U. 
 
 \subsection{Function Documentation}
-\hypertarget{nmr_l_u_8h_a1c368f088de9642bd4dc6f448e4b1e24}{}\index{nmr\+L\+U.\+h@{nmr\+L\+U.\+h}!nmr\+L\+U@{nmr\+L\+U}}
-\index{nmr\+L\+U@{nmr\+L\+U}!nmr\+L\+U.\+h@{nmr\+L\+U.\+h}}
-\subsubsection[{nmr\+L\+U}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+matrix\+Owner\+Type $>$ C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R nmr\+L\+U (
+\hypertarget{nmr_l_u_8h_a1c368f088de9642bd4dc6f448e4b1e24}{\index{nmr\-L\-U.\-h@{nmr\-L\-U.\-h}!nmr\-L\-U@{nmr\-L\-U}}
+\index{nmr\-L\-U@{nmr\-L\-U}!nmrLU.h@{nmr\-L\-U.\-h}}
+\subsubsection[{nmr\-L\-U}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-matrix\-Owner\-Type $>$ C\-I\-S\-S\-T\-N\-E\-T\-L\-I\-B\-\_\-\-I\-N\-T\-E\-G\-E\-R nmr\-L\-U (
 \begin{DoxyParamCaption}
-\item[{{\bf vct\+Dynamic\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&}]{A, }
-\item[{{\bf nmr\+L\+U\+Dynamic\+Data} \&}]{data}
+\item[{{\bf vct\-Dynamic\-Matrix\-Base}$<$ \-\_\-matrix\-Owner\-Type, C\-I\-S\-S\-T\-N\-E\-T\-L\-I\-B\-\_\-\-D\-O\-U\-B\-L\-E $>$ \&}]{A, }
+\item[{{\bf nmr\-L\-U\-Dynamic\-Data} \&}]{data}
 \end{DoxyParamCaption}
-) throw  std\+::runtime\+\_\+error) \hspace{0.3cm}{\ttfamily [inline]}}\label{nmr_l_u_8h_a1c368f088de9642bd4dc6f448e4b1e24}
-This function solves the L\+U problem for a dynamic matrix using an \hyperlink{classnmr_l_u_dynamic_data}{nmr\+L\+U\+Dynamic\+Data}.
+) throw  std\-::runtime\-\_\-error) \hspace{0.3cm}{\ttfamily [inline]}}}\label{nmr_l_u_8h_a1c368f088de9642bd4dc6f448e4b1e24}
+This function solves the L\-U problem for a dynamic matrix using an \hyperlink{classnmr_l_u_dynamic_data}{nmr\-L\-U\-Dynamic\-Data}.
 
-This function checks for valid input (size and compact) and calls the L\+A\+P\+A\+C\+K function. If the input doesn\textquotesingle{}t match the data, an exception is thrown ({\ttfamily std\+::runtime\+\_\+error}).
+This function checks for valid input (size and compact) and calls the L\-A\-P\-A\-C\-K function. If the input doesn't match the data, an exception is thrown ({\ttfamily std\-::runtime\-\_\-error}).
 
-This function modifies the input matrix A and stores the results in the data. The result can be obtained via the const method \hyperlink{classnmr_l_u_dynamic_data_a97a173a0a54cfc4954dbef98fafda4f1}{nmr\+L\+U\+Dynamic\+Data\+::\+Pivot\+Indices()}.
+This function modifies the input matrix A and stores the results in the data. The result can be obtained via the const method \hyperlink{classnmr_l_u_dynamic_data_a97a173a0a54cfc4954dbef98fafda4f1}{nmr\-L\-U\-Dynamic\-Data\-::\-Pivot\-Indices()}.
 
 
 \begin{DoxyParams}{Parameters}
-{\em A} & A matrix of size Mx\+N, either \hyperlink{classvct_dynamic_matrix}{vct\+Dynamic\+Matrix} or \hyperlink{classvct_dynamic_matrix_ref}{vct\+Dynamic\+Matrix\+Ref}. \\
+{\em A} & A matrix of size Mx\-N, either \hyperlink{classvct_dynamic_matrix}{vct\-Dynamic\-Matrix} or \hyperlink{classvct_dynamic_matrix_ref}{vct\-Dynamic\-Matrix\-Ref}. \\
 \hline
 {\em data} & A data object corresponding to the input matrix.\\
 \hline
 \end{DoxyParams}
 \begin{DoxyRefDesc}{Test}
-\item[\hyperlink{test__test000005}{Test}]nmr\+L\+U\+Test\+::\+Test\+Dynamic\+Data\+Column\+Major nmr\+L\+U\+Test\+::\+Test\+Dynamic\+User\+Output\+Column\+Major\end{DoxyRefDesc}
-\hypertarget{nmr_l_u_8h_aa10afc4fd0a4cbfea2fc0b5e9ae88a15}{}\index{nmr\+L\+U.\+h@{nmr\+L\+U.\+h}!nmr\+L\+U@{nmr\+L\+U}}
-\index{nmr\+L\+U@{nmr\+L\+U}!nmr\+L\+U.\+h@{nmr\+L\+U.\+h}}
-\subsubsection[{nmr\+L\+U}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+matrix\+Owner\+Type\+A , class \+\_\+vector\+Owner\+Type\+Pivot\+Indices $>$ C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R nmr\+L\+U (
+\item[\hyperlink{test__test000005}{Test}]nmr\-L\-U\-Test\-::\-Test\-Dynamic\-Data\-Column\-Major nmr\-L\-U\-Test\-::\-Test\-Dynamic\-User\-Output\-Column\-Major\end{DoxyRefDesc}
+\hypertarget{nmr_l_u_8h_aa10afc4fd0a4cbfea2fc0b5e9ae88a15}{\index{nmr\-L\-U.\-h@{nmr\-L\-U.\-h}!nmr\-L\-U@{nmr\-L\-U}}
+\index{nmr\-L\-U@{nmr\-L\-U}!nmrLU.h@{nmr\-L\-U.\-h}}
+\subsubsection[{nmr\-L\-U}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-matrix\-Owner\-Type\-A , class \-\_\-vector\-Owner\-Type\-Pivot\-Indices $>$ C\-I\-S\-S\-T\-N\-E\-T\-L\-I\-B\-\_\-\-I\-N\-T\-E\-G\-E\-R nmr\-L\-U (
 \begin{DoxyParamCaption}
-\item[{{\bf vct\+Dynamic\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type\+A, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&}]{A, }
-\item[{{\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+Pivot\+Indices, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R $>$ \&}]{pivot\+Indices}
+\item[{{\bf vct\-Dynamic\-Matrix\-Base}$<$ \-\_\-matrix\-Owner\-Type\-A, C\-I\-S\-S\-T\-N\-E\-T\-L\-I\-B\-\_\-\-D\-O\-U\-B\-L\-E $>$ \&}]{A, }
+\item[{{\bf vct\-Dynamic\-Vector\-Base}$<$ \-\_\-vector\-Owner\-Type\-Pivot\-Indices, C\-I\-S\-S\-T\-N\-E\-T\-L\-I\-B\-\_\-\-I\-N\-T\-E\-G\-E\-R $>$ \&}]{pivot\-Indices}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\label{nmr_l_u_8h_aa10afc4fd0a4cbfea2fc0b5e9ae88a15}
-This function solves the L\+U problem for a dynamic matrix using the storage provided by the user for both the output (Pivot\+Indices).
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{nmr_l_u_8h_aa10afc4fd0a4cbfea2fc0b5e9ae88a15}
+This function solves the L\-U problem for a dynamic matrix using the storage provided by the user for both the output (Pivot\-Indices).
 
-Internally, a data is created using the storage provided by the user (see \hyperlink{classnmr_l_u_dynamic_data_ae456c133f5faeb23177a4a50fbb20eb7}{nmr\+L\+U\+Dynamic\+Data\+::\+Set\+Ref}). While the data is being build, the consistency of the output is checked. Then, the nmr\+L\+U(\+A, data) function can be used safely.
+Internally, a data is created using the storage provided by the user (see \hyperlink{classnmr_l_u_dynamic_data_ae456c133f5faeb23177a4a50fbb20eb7}{nmr\-L\-U\-Dynamic\-Data\-::\-Set\-Ref}). While the data is being build, the consistency of the output is checked. Then, the nmr\-L\-U(\-A, data) function can be used safely.
 
 
 \begin{DoxyParams}{Parameters}
-{\em A} & is a reference to a dynamic matrix of size Mx\+N \\
+{\em A} & is a reference to a dynamic matrix of size Mx\-N \\
 \hline
-{\em pivot\+Indices} & Vector created by the user to store the pivot indices.\\
+{\em pivot\-Indices} & Vector created by the user to store the pivot indices.\\
 \hline
 \end{DoxyParams}
 \begin{DoxyRefDesc}{Test}
-\item[\hyperlink{test__test000006}{Test}]nmr\+L\+U\+Test\+::\+Test\+Dynamic\+User\+Output\+Column\+Major \end{DoxyRefDesc}
-\hypertarget{nmr_l_u_8h_a252973f76de9a91c9a583cf48e155bd5}{}\index{nmr\+L\+U.\+h@{nmr\+L\+U.\+h}!nmr\+L\+U@{nmr\+L\+U}}
-\index{nmr\+L\+U@{nmr\+L\+U}!nmr\+L\+U.\+h@{nmr\+L\+U.\+h}}
-\subsubsection[{nmr\+L\+U}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+rows, vct\+::size\+\_\+type \+\_\+cols, vct\+::size\+\_\+type \+\_\+minmn$>$ C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R nmr\+L\+U (
+\item[\hyperlink{test__test000006}{Test}]nmr\-L\-U\-Test\-::\-Test\-Dynamic\-User\-Output\-Column\-Major \end{DoxyRefDesc}
+\hypertarget{nmr_l_u_8h_a252973f76de9a91c9a583cf48e155bd5}{\index{nmr\-L\-U.\-h@{nmr\-L\-U.\-h}!nmr\-L\-U@{nmr\-L\-U}}
+\index{nmr\-L\-U@{nmr\-L\-U}!nmrLU.h@{nmr\-L\-U.\-h}}
+\subsubsection[{nmr\-L\-U}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\-::size\-\_\-type \-\_\-rows, vct\-::size\-\_\-type \-\_\-cols, vct\-::size\-\_\-type \-\_\-minmn$>$ C\-I\-S\-S\-T\-N\-E\-T\-L\-I\-B\-\_\-\-I\-N\-T\-E\-G\-E\-R nmr\-L\-U (
 \begin{DoxyParamCaption}
-\item[{{\bf vct\+Fixed\+Size\+Matrix}$<$ C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E, \+\_\+rows, \+\_\+cols, {\bf V\+C\+T\+\_\+\+C\+O\+L\+\_\+\+M\+A\+J\+O\+R} $>$ \&}]{A, }
-\item[{{\bf vct\+Fixed\+Size\+Vector}$<$ C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R, \+\_\+minmn $>$ \&}]{pivot\+Indices}
+\item[{{\bf vct\-Fixed\-Size\-Matrix}$<$ C\-I\-S\-S\-T\-N\-E\-T\-L\-I\-B\-\_\-\-D\-O\-U\-B\-L\-E, \-\_\-rows, \-\_\-cols, {\bf V\-C\-T\-\_\-\-C\-O\-L\-\_\-\-M\-A\-J\-O\-R} $>$ \&}]{A, }
+\item[{{\bf vct\-Fixed\-Size\-Vector}$<$ C\-I\-S\-S\-T\-N\-E\-T\-L\-I\-B\-\_\-\-I\-N\-T\-E\-G\-E\-R, \-\_\-minmn $>$ \&}]{pivot\-Indices}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\label{nmr_l_u_8h_a252973f76de9a91c9a583cf48e155bd5}
-This function solves the L\+U problem for a fixed size matrix using the storage provided by the user for the output (Pivot\+Indices).
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{nmr_l_u_8h_a252973f76de9a91c9a583cf48e155bd5}
+This function solves the L\-U problem for a fixed size matrix using the storage provided by the user for the output (Pivot\-Indices).
 
-The sizes of the matrices must match at compilation time. This is enforced by the template parameters and matching problems will lead to compilation errors. Since there is no easy way to enforce the size of the vector Pivot\+Indices with template parameters, a runtime check is performed. The test uses C\+M\+N\+\_\+\+A\+S\+S\+E\+R\+T to determine what to do if the sizes don\textquotesingle{}t match. By default C\+M\+N\+\_\+\+A\+S\+S\+E\+R\+T calls {\ttfamily abort()} but it can be configured to be ignored or to throw an exception (see \hyperlink{group__cisst_common_ga6a12b7031ea38ac5bf5937b8633c97ff}{C\+M\+N\+\_\+\+A\+S\+S\+E\+R\+T} for details).
+The sizes of the matrices must match at compilation time. This is enforced by the template parameters and matching problems will lead to compilation errors. Since there is no easy way to enforce the size of the vector Pivot\-Indices with template parameters, a runtime check is performed. The test uses C\-M\-N\-\_\-\-A\-S\-S\-E\-R\-T to determine what to do if the sizes don't match. By default C\-M\-N\-\_\-\-A\-S\-S\-E\-R\-T calls {\ttfamily abort()} but it can be configured to be ignored or to throw an exception (see \hyperlink{group__cisst_common_ga6a12b7031ea38ac5bf5937b8633c97ff}{C\-M\-N\-\_\-\-A\-S\-S\-E\-R\-T} for details).
 
-This function modifies the input matrix A. It stores the result in pivot\+Indices and A which now contains the elements of both L and U. The methods Update\+Matrix\+L\+U and Update\+Matrix\+P can ease the creation of more convenient matrices.
+This function modifies the input matrix A. It stores the result in pivot\-Indices and A which now contains the elements of both L and U. The methods Update\-Matrix\-L\-U and Update\-Matrix\-P can ease the creation of more convenient matrices.
 
 
 \begin{DoxyParams}{Parameters}
-{\em A} & is a fixed size matrix of size Mx\+N. \\
+{\em A} & is a fixed size matrix of size Mx\-N. \\
 \hline
-{\em pivot\+Indices} & Vector to store the pivot indices.\\
+{\em pivot\-Indices} & Vector to store the pivot indices.\\
 \hline
 \end{DoxyParams}
 \begin{DoxyRefDesc}{Test}
-\item[\hyperlink{test__test000007}{Test}]nmr\+L\+U\+Test\+::\+Test\+Fixed\+Size\+Data\+Column\+Major\+M\+Leq\+N nmr\+L\+U\+Test\+::\+Test\+Fixed\+Size\+Data\+Column\+Major\+M\+Geq\+N nmr\+L\+U\+Test\+::\+Test\+Fixed\+Size\+User\+Output\+Column\+Major\+M\+Leq\+N nmr\+L\+U\+Test\+::\+Test\+Fixed\+Size\+User\+Output\+Column\+Major\+M\+Geq\+N \end{DoxyRefDesc}
-\hypertarget{nmr_l_u_8h_a66bf403c705953a781e940cf1b674d5f}{}\index{nmr\+L\+U.\+h@{nmr\+L\+U.\+h}!nmr\+L\+U@{nmr\+L\+U}}
-\index{nmr\+L\+U@{nmr\+L\+U}!nmr\+L\+U.\+h@{nmr\+L\+U.\+h}}
-\subsubsection[{nmr\+L\+U}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+rows, vct\+::size\+\_\+type \+\_\+cols$>$ C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R nmr\+L\+U (
+\item[\hyperlink{test__test000007}{Test}]nmr\-L\-U\-Test\-::\-Test\-Fixed\-Size\-Data\-Column\-Major\-M\-Leq\-N nmr\-L\-U\-Test\-::\-Test\-Fixed\-Size\-Data\-Column\-Major\-M\-Geq\-N nmr\-L\-U\-Test\-::\-Test\-Fixed\-Size\-User\-Output\-Column\-Major\-M\-Leq\-N nmr\-L\-U\-Test\-::\-Test\-Fixed\-Size\-User\-Output\-Column\-Major\-M\-Geq\-N \end{DoxyRefDesc}
+\hypertarget{nmr_l_u_8h_a66bf403c705953a781e940cf1b674d5f}{\index{nmr\-L\-U.\-h@{nmr\-L\-U.\-h}!nmr\-L\-U@{nmr\-L\-U}}
+\index{nmr\-L\-U@{nmr\-L\-U}!nmrLU.h@{nmr\-L\-U.\-h}}
+\subsubsection[{nmr\-L\-U}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\-::size\-\_\-type \-\_\-rows, vct\-::size\-\_\-type \-\_\-cols$>$ C\-I\-S\-S\-T\-N\-E\-T\-L\-I\-B\-\_\-\-I\-N\-T\-E\-G\-E\-R nmr\-L\-U (
 \begin{DoxyParamCaption}
-\item[{{\bf vct\+Fixed\+Size\+Matrix}$<$ C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E, \+\_\+rows, \+\_\+cols, {\bf V\+C\+T\+\_\+\+C\+O\+L\+\_\+\+M\+A\+J\+O\+R} $>$ \&}]{A, }
-\item[{{\bf nmr\+L\+U\+Fixed\+Size\+Data}$<$ \+\_\+rows, \+\_\+cols $>$ \&}]{data}
+\item[{{\bf vct\-Fixed\-Size\-Matrix}$<$ C\-I\-S\-S\-T\-N\-E\-T\-L\-I\-B\-\_\-\-D\-O\-U\-B\-L\-E, \-\_\-rows, \-\_\-cols, {\bf V\-C\-T\-\_\-\-C\-O\-L\-\_\-\-M\-A\-J\-O\-R} $>$ \&}]{A, }
+\item[{{\bf nmr\-L\-U\-Fixed\-Size\-Data}$<$ \-\_\-rows, \-\_\-cols $>$ \&}]{data}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\label{nmr_l_u_8h_a66bf403c705953a781e940cf1b674d5f}
-This function solves the L\+U problem for a fixed size matrix using \hyperlink{classnmr_l_u_fixed_size_data}{nmr\+L\+U\+Fixed\+Size\+Data} to allocate the memory required for the output\+: 
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{nmr_l_u_8h_a66bf403c705953a781e940cf1b674d5f}
+This function solves the L\-U problem for a fixed size matrix using \hyperlink{classnmr_l_u_fixed_size_data}{nmr\-L\-U\-Fixed\-Size\-Data} to allocate the memory required for the output\-: 
 \begin{DoxyCode}
-1 vctFixedSizeMatrix<CISSTNETLIB\_DOUBLE, 12, 7, VCT\_COL\_MAJOR> A;
-2 vctRandom(A, -10.0, 10.0);
-3 nmrLUFixedSizeData<12, 7> data;
-4 nmrLU(A, data);
-5 std::cout << "A: " << A << std::endl
-6           << "Pivot Indices: " << data.PivotIndices() << std::endl;
+\hyperlink{classvct_fixed_size_matrix}{vctFixedSizeMatrix<CISSTNETLIB\_DOUBLE, 12, 7, VCT\_COL\_MAJOR>}
+       A;
+\hyperlink{group__cisst_vector_ga0d25660a2dc6ef9c093f6f6b2804d2d0}{vctRandom}(A, -10.0, 10.0);
+\hyperlink{classnmr_l_u_fixed_size_data}{nmrLUFixedSizeData<12, 7>} data;
+\hyperlink{nmr_l_u_8h_a1c368f088de9642bd4dc6f448e4b1e24}{nmrLU}(A, data);
+std::cout << \textcolor{stringliteral}{"A: "} << A << std::endl
+          << \textcolor{stringliteral}{"Pivot Indices: "} << data.\hyperlink{classnmr_l_u_fixed_size_data_a450ee8a4007ec135b10d3885252f10ad}{PivotIndices}() << std::endl;
 \end{DoxyCode}
 
 
-This method calls nmr\+L\+U(\+A, pivot\+Indices).
+This method calls nmr\-L\-U(\-A, pivot\-Indices).
 
 
 \begin{DoxyParams}{Parameters}
-{\em A} & A fixed size matrix of size Mx\+N. \\
+{\em A} & A fixed size matrix of size Mx\-N. \\
 \hline
 {\em data} & A data object.\\
 \hline
 \end{DoxyParams}
 \begin{DoxyRefDesc}{Test}
-\item[\hyperlink{test__test000008}{Test}]nmr\+L\+U\+Test\+::\+Test\+Fixed\+Size\+Data\+Column\+Major\+M\+Leq\+N nmr\+L\+U\+Test\+::\+Test\+Fixed\+Size\+Data\+Column\+Major\+M\+Geq\+N nmr\+L\+U\+Test\+::\+Test\+Fixed\+Size\+User\+Output\+Column\+Major\+M\+Leq\+N nmr\+L\+U\+Test\+::\+Test\+Fixed\+Size\+User\+Output\+Column\+Major\+M\+Geq\+N \end{DoxyRefDesc}
+\item[\hyperlink{test__test000008}{Test}]nmr\-L\-U\-Test\-::\-Test\-Fixed\-Size\-Data\-Column\-Major\-M\-Leq\-N nmr\-L\-U\-Test\-::\-Test\-Fixed\-Size\-Data\-Column\-Major\-M\-Geq\-N nmr\-L\-U\-Test\-::\-Test\-Fixed\-Size\-User\-Output\-Column\-Major\-M\-Leq\-N nmr\-L\-U\-Test\-::\-Test\-Fixed\-Size\-User\-Output\-Column\-Major\-M\-Geq\-N \end{DoxyRefDesc}

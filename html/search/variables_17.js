@@ -9,6 +9,5 @@ var searchData=
   ['xpointsmaxnum',['XPointsMaxNum',['../d5/d86/classmts_micron_tracker.html#aec7b0fc645223abd56ea77aba3687df8',1,'mtsMicronTracker::XPointsMaxNum()'],['../d5/d03/classmts_micron_tracker_controller_qt_component.html#addf0cf9703d784ef7870b5b2d35024c4',1,'mtsMicronTrackerControllerQtComponent::XPointsMaxNum()']]],
   ['xpointsprojectionleft',['XPointsProjectionLeft',['../d5/d86/classmts_micron_tracker.html#a2e35c998885291f730e1a55f990b464d',1,'mtsMicronTracker::XPointsProjectionLeft()'],['../d5/d03/classmts_micron_tracker_controller_qt_component.html#ab4435aec94942d35c86ade1c60047405',1,'mtsMicronTrackerControllerQtComponent::XPointsProjectionLeft()']]],
   ['xpointsprojectionright',['XPointsProjectionRight',['../d5/d86/classmts_micron_tracker.html#a7e0cac34b4700293cd83d15e57ad057f',1,'mtsMicronTracker::XPointsProjectionRight()'],['../d5/d03/classmts_micron_tracker_controller_qt_component.html#a638d175869aa0a701bc334bfa7d03590',1,'mtsMicronTrackerControllerQtComponent::XPointsProjectionRight()']]],
-  ['xreference',['XReference',['../d4/df7/classnmr_n_n_l_s_dynamic_data.html#a84ad800513b0b1b9a910aeac150742d5',1,'nmrNNLSDynamicData']]],
   ['xyzprev',['xyzprev',['../d0/db1/classosa_o_s_g_pointer2_d.html#a182ee22feed750daa7d6ee2850e39631',1,'osaOSGPointer2D']]]
 ];

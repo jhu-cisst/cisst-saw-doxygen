@@ -1,10 +1,11 @@
-\hypertarget{classmts_watchdog_server}{}\section{mts\+Watchdog\+Server Class Reference}
-\label{classmts_watchdog_server}\index{mts\+Watchdog\+Server@{mts\+Watchdog\+Server}}
+\hypertarget{classmts_watchdog_server}{\section{mts\-Watchdog\-Server Class Reference}
+\label{classmts_watchdog_server}\index{mts\-Watchdog\-Server@{mts\-Watchdog\-Server}}
+}
 
 
-{\ttfamily \#include $<$mts\+Watchdog\+Server.\+h$>$}
+{\ttfamily \#include $<$mts\-Watchdog\-Server.\-h$>$}
 
-Inheritance diagram for mts\+Watchdog\+Server\+:\begin{figure}[H]
+Inheritance diagram for mts\-Watchdog\-Server\-:\begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[height=2.000000cm]{d8/d6b/classmts_watchdog_server}
@@ -13,119 +14,119 @@ Inheritance diagram for mts\+Watchdog\+Server\+:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classmts_watchdog_server_a9bc1b697c5232ce27b23e0b95d13dd87}{mts\+Watchdog\+Server} (void)
+\hyperlink{classmts_watchdog_server_a9bc1b697c5232ce27b23e0b95d13dd87}{mts\-Watchdog\-Server} (void)
 \item 
-\hyperlink{classmts_watchdog_server_a194412bb759ee19f6b6f62d225cc3aa8}{$\sim$mts\+Watchdog\+Server} ()
+\hyperlink{classmts_watchdog_server_a194412bb759ee19f6b6f62d225cc3aa8}{$\sim$mts\-Watchdog\-Server} ()
 \item 
-void \hyperlink{classmts_watchdog_server_a46c5ade74f1d78e88eb30bc701a71d51}{Add\+To\+Provided\+Interface} (\hyperlink{classmts_interface_provided}{mts\+Interface\+Provided} \&prov\+Int, \hyperlink{classmts_state_table}{mts\+State\+Table} \&state\+Table)
+void \hyperlink{classmts_watchdog_server_a46c5ade74f1d78e88eb30bc701a71d51}{Add\-To\-Provided\-Interface} (\hyperlink{classmts_interface_provided}{mts\-Interface\-Provided} \&prov\-Int, \hyperlink{classmts_state_table}{mts\-State\-Table} \&state\-Table)
 \item 
-void \hyperlink{classmts_watchdog_server_a4b7c34c079cdd8f7c5a934deb201f19c}{Set\+Timeout\+Period} (const double \&seconds)
+void \hyperlink{classmts_watchdog_server_a4b7c34c079cdd8f7c5a934deb201f19c}{Set\-Timeout\-Period} (const double \&seconds)
 \item 
 void \hyperlink{classmts_watchdog_server_a8d94906b47c0f6cdd0bb6bf96f7dac3d}{Start} (void)
 \item 
-bool \hyperlink{classmts_watchdog_server_a45a726d4c07743456fc860a91394e24d}{Check\+And\+Update} (void)
+bool \hyperlink{classmts_watchdog_server_a45a726d4c07743456fc860a91394e24d}{Check\-And\-Update} (void)
 \item 
 void \hyperlink{classmts_watchdog_server_a74fd0e35e3ffc32273fb705420634266}{Reset} (void)
 \end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classosa_stopwatch}{osa\+Stopwatch} \hyperlink{classmts_watchdog_server_a4146034e7300b9b8e57cc9afe0898a06}{Stop\+Watch}
+\hyperlink{classosa_stopwatch}{osa\-Stopwatch} \hyperlink{classmts_watchdog_server_a4146034e7300b9b8e57cc9afe0898a06}{Stop\-Watch}
 \item 
 double \hyperlink{classmts_watchdog_server_a57831b2480ac7446f722a4f3ae1b3b29}{Timeout}
 \item 
-\hyperlink{classmts_function_write}{mts\+Function\+Write} $\ast$ \hyperlink{classmts_watchdog_server_a76cde78867629a99328c62a05ff3e89f}{Watchdog\+Read\+Bool}
+\hyperlink{classmts_function_write}{mts\-Function\-Write} $\ast$ \hyperlink{classmts_watchdog_server_a76cde78867629a99328c62a05ff3e89f}{Watchdog\-Read\-Bool}
 \item 
-\hyperlink{classmts_function_write}{mts\+Function\+Write} $\ast$ \hyperlink{classmts_watchdog_server_a89fd0c0ada0929c6804b03a39971a2e3}{Watchdog\+Write\+Bool}
+\hyperlink{classmts_function_write}{mts\-Function\-Write} $\ast$ \hyperlink{classmts_watchdog_server_a89fd0c0ada0929c6804b03a39971a2e3}{Watchdog\-Write\-Bool}
 \item 
-bool \hyperlink{classmts_watchdog_server_aec30e3bb25866ace005d3f05bc847614}{Is\+O\+K}
+bool \hyperlink{classmts_watchdog_server_aec30e3bb25866ace005d3f05bc847614}{Is\-O\-K}
 \item 
-bool \hyperlink{classmts_watchdog_server_add9a62bd26805a1fe77314242d91efd6}{Watchdog\+State}
+bool \hyperlink{classmts_watchdog_server_add9a62bd26805a1fe77314242d91efd6}{Watchdog\-State}
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
 A tool for observing a connection between two components for a set amount of time. \begin{DoxyRefDesc}{Todo}
-\item[\hyperlink{todo__todo000009}{Todo}]Should be easy to merge server and client into a single object. Could integrate into standard component interfaces. \end{DoxyRefDesc}
+\item[\hyperlink{todo__todo000010}{Todo}]Should be easy to merge server and client into a single object. Could integrate into standard component interfaces. \end{DoxyRefDesc}
 
 
 \subsection{Constructor \& Destructor Documentation}
-\hypertarget{classmts_watchdog_server_a9bc1b697c5232ce27b23e0b95d13dd87}{}\index{mts\+Watchdog\+Server@{mts\+Watchdog\+Server}!mts\+Watchdog\+Server@{mts\+Watchdog\+Server}}
-\index{mts\+Watchdog\+Server@{mts\+Watchdog\+Server}!mts\+Watchdog\+Server@{mts\+Watchdog\+Server}}
-\subsubsection[{mts\+Watchdog\+Server}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Watchdog\+Server\+::mts\+Watchdog\+Server (
+\hypertarget{classmts_watchdog_server_a9bc1b697c5232ce27b23e0b95d13dd87}{\index{mts\-Watchdog\-Server@{mts\-Watchdog\-Server}!mts\-Watchdog\-Server@{mts\-Watchdog\-Server}}
+\index{mts\-Watchdog\-Server@{mts\-Watchdog\-Server}!mtsWatchdogServer@{mts\-Watchdog\-Server}}
+\subsubsection[{mts\-Watchdog\-Server}]{\setlength{\rightskip}{0pt plus 5cm}mts\-Watchdog\-Server\-::mts\-Watchdog\-Server (
 \begin{DoxyParamCaption}
 \item[{void}]{}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_watchdog_server_a9bc1b697c5232ce27b23e0b95d13dd87}
-\hypertarget{classmts_watchdog_server_a194412bb759ee19f6b6f62d225cc3aa8}{}\index{mts\+Watchdog\+Server@{mts\+Watchdog\+Server}!````~mts\+Watchdog\+Server@{$\sim$mts\+Watchdog\+Server}}
-\index{````~mts\+Watchdog\+Server@{$\sim$mts\+Watchdog\+Server}!mts\+Watchdog\+Server@{mts\+Watchdog\+Server}}
-\subsubsection[{$\sim$mts\+Watchdog\+Server}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Watchdog\+Server\+::$\sim$mts\+Watchdog\+Server (
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmts_watchdog_server_a9bc1b697c5232ce27b23e0b95d13dd87}
+\hypertarget{classmts_watchdog_server_a194412bb759ee19f6b6f62d225cc3aa8}{\index{mts\-Watchdog\-Server@{mts\-Watchdog\-Server}!$\sim$mts\-Watchdog\-Server@{$\sim$mts\-Watchdog\-Server}}
+\index{$\sim$mts\-Watchdog\-Server@{$\sim$mts\-Watchdog\-Server}!mtsWatchdogServer@{mts\-Watchdog\-Server}}
+\subsubsection[{$\sim$mts\-Watchdog\-Server}]{\setlength{\rightskip}{0pt plus 5cm}mts\-Watchdog\-Server\-::$\sim$mts\-Watchdog\-Server (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_watchdog_server_a194412bb759ee19f6b6f62d225cc3aa8}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmts_watchdog_server_a194412bb759ee19f6b6f62d225cc3aa8}
 
 
 \subsection{Member Function Documentation}
-\hypertarget{classmts_watchdog_server_a46c5ade74f1d78e88eb30bc701a71d51}{}\index{mts\+Watchdog\+Server@{mts\+Watchdog\+Server}!Add\+To\+Provided\+Interface@{Add\+To\+Provided\+Interface}}
-\index{Add\+To\+Provided\+Interface@{Add\+To\+Provided\+Interface}!mts\+Watchdog\+Server@{mts\+Watchdog\+Server}}
-\subsubsection[{Add\+To\+Provided\+Interface}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Watchdog\+Server\+::\+Add\+To\+Provided\+Interface (
+\hypertarget{classmts_watchdog_server_a46c5ade74f1d78e88eb30bc701a71d51}{\index{mts\-Watchdog\-Server@{mts\-Watchdog\-Server}!Add\-To\-Provided\-Interface@{Add\-To\-Provided\-Interface}}
+\index{Add\-To\-Provided\-Interface@{Add\-To\-Provided\-Interface}!mtsWatchdogServer@{mts\-Watchdog\-Server}}
+\subsubsection[{Add\-To\-Provided\-Interface}]{\setlength{\rightskip}{0pt plus 5cm}void mts\-Watchdog\-Server\-::\-Add\-To\-Provided\-Interface (
 \begin{DoxyParamCaption}
-\item[{{\bf mts\+Interface\+Provided} \&}]{prov\+Int, }
-\item[{{\bf mts\+State\+Table} \&}]{state\+Table}
+\item[{{\bf mts\-Interface\-Provided} \&}]{prov\-Int, }
+\item[{{\bf mts\-State\-Table} \&}]{state\-Table}
 \end{DoxyParamCaption}
-)}\label{classmts_watchdog_server_a46c5ade74f1d78e88eb30bc701a71d51}
-\hypertarget{classmts_watchdog_server_a45a726d4c07743456fc860a91394e24d}{}\index{mts\+Watchdog\+Server@{mts\+Watchdog\+Server}!Check\+And\+Update@{Check\+And\+Update}}
-\index{Check\+And\+Update@{Check\+And\+Update}!mts\+Watchdog\+Server@{mts\+Watchdog\+Server}}
-\subsubsection[{Check\+And\+Update}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Watchdog\+Server\+::\+Check\+And\+Update (
-\begin{DoxyParamCaption}
-\item[{void}]{}
-\end{DoxyParamCaption}
-)}\label{classmts_watchdog_server_a45a726d4c07743456fc860a91394e24d}
-\hypertarget{classmts_watchdog_server_a74fd0e35e3ffc32273fb705420634266}{}\index{mts\+Watchdog\+Server@{mts\+Watchdog\+Server}!Reset@{Reset}}
-\index{Reset@{Reset}!mts\+Watchdog\+Server@{mts\+Watchdog\+Server}}
-\subsubsection[{Reset}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Watchdog\+Server\+::\+Reset (
+)}}\label{classmts_watchdog_server_a46c5ade74f1d78e88eb30bc701a71d51}
+\hypertarget{classmts_watchdog_server_a45a726d4c07743456fc860a91394e24d}{\index{mts\-Watchdog\-Server@{mts\-Watchdog\-Server}!Check\-And\-Update@{Check\-And\-Update}}
+\index{Check\-And\-Update@{Check\-And\-Update}!mtsWatchdogServer@{mts\-Watchdog\-Server}}
+\subsubsection[{Check\-And\-Update}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\-Watchdog\-Server\-::\-Check\-And\-Update (
 \begin{DoxyParamCaption}
 \item[{void}]{}
 \end{DoxyParamCaption}
-)}\label{classmts_watchdog_server_a74fd0e35e3ffc32273fb705420634266}
-\hypertarget{classmts_watchdog_server_a4b7c34c079cdd8f7c5a934deb201f19c}{}\index{mts\+Watchdog\+Server@{mts\+Watchdog\+Server}!Set\+Timeout\+Period@{Set\+Timeout\+Period}}
-\index{Set\+Timeout\+Period@{Set\+Timeout\+Period}!mts\+Watchdog\+Server@{mts\+Watchdog\+Server}}
-\subsubsection[{Set\+Timeout\+Period}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Watchdog\+Server\+::\+Set\+Timeout\+Period (
+)}}\label{classmts_watchdog_server_a45a726d4c07743456fc860a91394e24d}
+\hypertarget{classmts_watchdog_server_a74fd0e35e3ffc32273fb705420634266}{\index{mts\-Watchdog\-Server@{mts\-Watchdog\-Server}!Reset@{Reset}}
+\index{Reset@{Reset}!mtsWatchdogServer@{mts\-Watchdog\-Server}}
+\subsubsection[{Reset}]{\setlength{\rightskip}{0pt plus 5cm}void mts\-Watchdog\-Server\-::\-Reset (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{classmts_watchdog_server_a74fd0e35e3ffc32273fb705420634266}
+\hypertarget{classmts_watchdog_server_a4b7c34c079cdd8f7c5a934deb201f19c}{\index{mts\-Watchdog\-Server@{mts\-Watchdog\-Server}!Set\-Timeout\-Period@{Set\-Timeout\-Period}}
+\index{Set\-Timeout\-Period@{Set\-Timeout\-Period}!mtsWatchdogServer@{mts\-Watchdog\-Server}}
+\subsubsection[{Set\-Timeout\-Period}]{\setlength{\rightskip}{0pt plus 5cm}void mts\-Watchdog\-Server\-::\-Set\-Timeout\-Period (
 \begin{DoxyParamCaption}
 \item[{const double \&}]{seconds}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_watchdog_server_a4b7c34c079cdd8f7c5a934deb201f19c}
-\hypertarget{classmts_watchdog_server_a8d94906b47c0f6cdd0bb6bf96f7dac3d}{}\index{mts\+Watchdog\+Server@{mts\+Watchdog\+Server}!Start@{Start}}
-\index{Start@{Start}!mts\+Watchdog\+Server@{mts\+Watchdog\+Server}}
-\subsubsection[{Start}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Watchdog\+Server\+::\+Start (
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmts_watchdog_server_a4b7c34c079cdd8f7c5a934deb201f19c}
+\hypertarget{classmts_watchdog_server_a8d94906b47c0f6cdd0bb6bf96f7dac3d}{\index{mts\-Watchdog\-Server@{mts\-Watchdog\-Server}!Start@{Start}}
+\index{Start@{Start}!mtsWatchdogServer@{mts\-Watchdog\-Server}}
+\subsubsection[{Start}]{\setlength{\rightskip}{0pt plus 5cm}void mts\-Watchdog\-Server\-::\-Start (
 \begin{DoxyParamCaption}
 \item[{void}]{}
 \end{DoxyParamCaption}
-)}\label{classmts_watchdog_server_a8d94906b47c0f6cdd0bb6bf96f7dac3d}
+)}}\label{classmts_watchdog_server_a8d94906b47c0f6cdd0bb6bf96f7dac3d}
 
 
 \subsection{Member Data Documentation}
-\hypertarget{classmts_watchdog_server_aec30e3bb25866ace005d3f05bc847614}{}\index{mts\+Watchdog\+Server@{mts\+Watchdog\+Server}!Is\+O\+K@{Is\+O\+K}}
-\index{Is\+O\+K@{Is\+O\+K}!mts\+Watchdog\+Server@{mts\+Watchdog\+Server}}
-\subsubsection[{Is\+O\+K}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Watchdog\+Server\+::\+Is\+O\+K\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_watchdog_server_aec30e3bb25866ace005d3f05bc847614}
-\hypertarget{classmts_watchdog_server_a4146034e7300b9b8e57cc9afe0898a06}{}\index{mts\+Watchdog\+Server@{mts\+Watchdog\+Server}!Stop\+Watch@{Stop\+Watch}}
-\index{Stop\+Watch@{Stop\+Watch}!mts\+Watchdog\+Server@{mts\+Watchdog\+Server}}
-\subsubsection[{Stop\+Watch}]{\setlength{\rightskip}{0pt plus 5cm}{\bf osa\+Stopwatch} mts\+Watchdog\+Server\+::\+Stop\+Watch\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_watchdog_server_a4146034e7300b9b8e57cc9afe0898a06}
-\hypertarget{classmts_watchdog_server_a57831b2480ac7446f722a4f3ae1b3b29}{}\index{mts\+Watchdog\+Server@{mts\+Watchdog\+Server}!Timeout@{Timeout}}
-\index{Timeout@{Timeout}!mts\+Watchdog\+Server@{mts\+Watchdog\+Server}}
-\subsubsection[{Timeout}]{\setlength{\rightskip}{0pt plus 5cm}double mts\+Watchdog\+Server\+::\+Timeout\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_watchdog_server_a57831b2480ac7446f722a4f3ae1b3b29}
-\hypertarget{classmts_watchdog_server_a76cde78867629a99328c62a05ff3e89f}{}\index{mts\+Watchdog\+Server@{mts\+Watchdog\+Server}!Watchdog\+Read\+Bool@{Watchdog\+Read\+Bool}}
-\index{Watchdog\+Read\+Bool@{Watchdog\+Read\+Bool}!mts\+Watchdog\+Server@{mts\+Watchdog\+Server}}
-\subsubsection[{Watchdog\+Read\+Bool}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+Function\+Write}$\ast$ mts\+Watchdog\+Server\+::\+Watchdog\+Read\+Bool\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_watchdog_server_a76cde78867629a99328c62a05ff3e89f}
-\hypertarget{classmts_watchdog_server_add9a62bd26805a1fe77314242d91efd6}{}\index{mts\+Watchdog\+Server@{mts\+Watchdog\+Server}!Watchdog\+State@{Watchdog\+State}}
-\index{Watchdog\+State@{Watchdog\+State}!mts\+Watchdog\+Server@{mts\+Watchdog\+Server}}
-\subsubsection[{Watchdog\+State}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Watchdog\+Server\+::\+Watchdog\+State\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_watchdog_server_add9a62bd26805a1fe77314242d91efd6}
-\hypertarget{classmts_watchdog_server_a89fd0c0ada0929c6804b03a39971a2e3}{}\index{mts\+Watchdog\+Server@{mts\+Watchdog\+Server}!Watchdog\+Write\+Bool@{Watchdog\+Write\+Bool}}
-\index{Watchdog\+Write\+Bool@{Watchdog\+Write\+Bool}!mts\+Watchdog\+Server@{mts\+Watchdog\+Server}}
-\subsubsection[{Watchdog\+Write\+Bool}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+Function\+Write}$\ast$ mts\+Watchdog\+Server\+::\+Watchdog\+Write\+Bool\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_watchdog_server_a89fd0c0ada0929c6804b03a39971a2e3}
+\hypertarget{classmts_watchdog_server_aec30e3bb25866ace005d3f05bc847614}{\index{mts\-Watchdog\-Server@{mts\-Watchdog\-Server}!Is\-O\-K@{Is\-O\-K}}
+\index{Is\-O\-K@{Is\-O\-K}!mtsWatchdogServer@{mts\-Watchdog\-Server}}
+\subsubsection[{Is\-O\-K}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\-Watchdog\-Server\-::\-Is\-O\-K\hspace{0.3cm}{\ttfamily [protected]}}}\label{classmts_watchdog_server_aec30e3bb25866ace005d3f05bc847614}
+\hypertarget{classmts_watchdog_server_a4146034e7300b9b8e57cc9afe0898a06}{\index{mts\-Watchdog\-Server@{mts\-Watchdog\-Server}!Stop\-Watch@{Stop\-Watch}}
+\index{Stop\-Watch@{Stop\-Watch}!mtsWatchdogServer@{mts\-Watchdog\-Server}}
+\subsubsection[{Stop\-Watch}]{\setlength{\rightskip}{0pt plus 5cm}{\bf osa\-Stopwatch} mts\-Watchdog\-Server\-::\-Stop\-Watch\hspace{0.3cm}{\ttfamily [protected]}}}\label{classmts_watchdog_server_a4146034e7300b9b8e57cc9afe0898a06}
+\hypertarget{classmts_watchdog_server_a57831b2480ac7446f722a4f3ae1b3b29}{\index{mts\-Watchdog\-Server@{mts\-Watchdog\-Server}!Timeout@{Timeout}}
+\index{Timeout@{Timeout}!mtsWatchdogServer@{mts\-Watchdog\-Server}}
+\subsubsection[{Timeout}]{\setlength{\rightskip}{0pt plus 5cm}double mts\-Watchdog\-Server\-::\-Timeout\hspace{0.3cm}{\ttfamily [protected]}}}\label{classmts_watchdog_server_a57831b2480ac7446f722a4f3ae1b3b29}
+\hypertarget{classmts_watchdog_server_a76cde78867629a99328c62a05ff3e89f}{\index{mts\-Watchdog\-Server@{mts\-Watchdog\-Server}!Watchdog\-Read\-Bool@{Watchdog\-Read\-Bool}}
+\index{Watchdog\-Read\-Bool@{Watchdog\-Read\-Bool}!mtsWatchdogServer@{mts\-Watchdog\-Server}}
+\subsubsection[{Watchdog\-Read\-Bool}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\-Function\-Write}$\ast$ mts\-Watchdog\-Server\-::\-Watchdog\-Read\-Bool\hspace{0.3cm}{\ttfamily [protected]}}}\label{classmts_watchdog_server_a76cde78867629a99328c62a05ff3e89f}
+\hypertarget{classmts_watchdog_server_add9a62bd26805a1fe77314242d91efd6}{\index{mts\-Watchdog\-Server@{mts\-Watchdog\-Server}!Watchdog\-State@{Watchdog\-State}}
+\index{Watchdog\-State@{Watchdog\-State}!mtsWatchdogServer@{mts\-Watchdog\-Server}}
+\subsubsection[{Watchdog\-State}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\-Watchdog\-Server\-::\-Watchdog\-State\hspace{0.3cm}{\ttfamily [protected]}}}\label{classmts_watchdog_server_add9a62bd26805a1fe77314242d91efd6}
+\hypertarget{classmts_watchdog_server_a89fd0c0ada0929c6804b03a39971a2e3}{\index{mts\-Watchdog\-Server@{mts\-Watchdog\-Server}!Watchdog\-Write\-Bool@{Watchdog\-Write\-Bool}}
+\index{Watchdog\-Write\-Bool@{Watchdog\-Write\-Bool}!mtsWatchdogServer@{mts\-Watchdog\-Server}}
+\subsubsection[{Watchdog\-Write\-Bool}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\-Function\-Write}$\ast$ mts\-Watchdog\-Server\-::\-Watchdog\-Write\-Bool\hspace{0.3cm}{\ttfamily [protected]}}}\label{classmts_watchdog_server_a89fd0c0ada0929c6804b03a39971a2e3}
 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
 \item 
-/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Multi\+Task/\hyperlink{mts_watchdog_server_8h}{mts\+Watchdog\+Server.\+h}\end{DoxyCompactItemize}
+/home/adeguet1/catkin\-\_\-ws/src/cisst-\/saw/cisst/cisst\-Multi\-Task/\hyperlink{mts_watchdog_server_8h}{mts\-Watchdog\-Server.\-h}\end{DoxyCompactItemize}

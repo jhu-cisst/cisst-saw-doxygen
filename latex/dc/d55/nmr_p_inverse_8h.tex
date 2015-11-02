@@ -1,30 +1,31 @@
-\hypertarget{nmr_p_inverse_8h}{}\section{/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Numerical/nmr\+P\+Inverse.h File Reference}
-\label{nmr_p_inverse_8h}\index{/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Numerical/nmr\+P\+Inverse.\+h@{/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Numerical/nmr\+P\+Inverse.\+h}}
+\hypertarget{nmr_p_inverse_8h}{\section{/home/adeguet1/catkin\-\_\-ws/src/cisst-\/saw/cisst/cisst\-Numerical/nmr\-P\-Inverse.h File Reference}
+\label{nmr_p_inverse_8h}\index{/home/adeguet1/catkin\-\_\-ws/src/cisst-\/saw/cisst/cisst\-Numerical/nmr\-P\-Inverse.\-h@{/home/adeguet1/catkin\-\_\-ws/src/cisst-\/saw/cisst/cisst\-Numerical/nmr\-P\-Inverse.\-h}}
+}
 
 
-Declaration of nmr\+P\+Inverse.  
+Declaration of nmr\-P\-Inverse.  
 
 
-{\ttfamily \#include $<$cisst\+Common/cmn\+Throw.\+h$>$}\\*
-{\ttfamily \#include $<$cisst\+Vector/vct\+Fixed\+Size\+Matrix.\+h$>$}\\*
-{\ttfamily \#include $<$cisst\+Vector/vct\+Dynamic\+Matrix.\+h$>$}\\*
-{\ttfamily \#include $<$cisst\+Numerical/nmr\+Netlib.\+h$>$}\\*
-{\ttfamily \#include $<$cisst\+Numerical/nmr\+S\+V\+D.\+h$>$}\\*
-{\ttfamily \#include $<$cisst\+Numerical/nmr\+Export.\+h$>$}\\*
+{\ttfamily \#include $<$cisst\-Common/cmn\-Throw.\-h$>$}\\*
+{\ttfamily \#include $<$cisst\-Vector/vct\-Fixed\-Size\-Matrix.\-h$>$}\\*
+{\ttfamily \#include $<$cisst\-Vector/vct\-Dynamic\-Matrix.\-h$>$}\\*
+{\ttfamily \#include $<$cisst\-Numerical/nmr\-Netlib.\-h$>$}\\*
+{\ttfamily \#include $<$cisst\-Numerical/nmr\-S\-V\-D.\-h$>$}\\*
+{\ttfamily \#include $<$cisst\-Numerical/nmr\-Export.\-h$>$}\\*
 \subsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
-class \hyperlink{classnmr_p_inverse_dynamic_data}{nmr\+P\+Inverse\+Dynamic\+Data}
+class \hyperlink{classnmr_p_inverse_dynamic_data}{nmr\-P\-Inverse\-Dynamic\-Data}
 \item 
-class \hyperlink{classnmr_p_inverse_dynamic_data_1_1_friend}{nmr\+P\+Inverse\+Dynamic\+Data\+::\+Friend}
+class \hyperlink{classnmr_p_inverse_dynamic_data_1_1_friend}{nmr\-P\-Inverse\-Dynamic\-Data\-::\-Friend}
 \item 
-class \hyperlink{classnmr_p_inverse_fixed_size_data}{nmr\+P\+Inverse\+Fixed\+Size\+Data$<$ \+\_\+rows, \+\_\+cols, \+\_\+storage\+Order $>$}
+class \hyperlink{classnmr_p_inverse_fixed_size_data}{nmr\-P\-Inverse\-Fixed\-Size\-Data$<$ \-\_\-rows, \-\_\-cols, \-\_\-storage\-Order $>$}
 \item 
-class \hyperlink{classnmr_p_inverse_fixed_size_data_1_1_friend}{nmr\+P\+Inverse\+Fixed\+Size\+Data$<$ \+\_\+rows, \+\_\+cols, \+\_\+storage\+Order $>$\+::\+Friend}
+class \hyperlink{classnmr_p_inverse_fixed_size_data_1_1_friend}{nmr\-P\-Inverse\-Fixed\-Size\-Data$<$ \-\_\-rows, \-\_\-cols, \-\_\-storage\-Order $>$\-::\-Friend}
 \end{DoxyCompactItemize}
 \subsection*{Functions}
-\begin{Indent}{\bf Algorithm P-\/\+Inverse\+: Moore-\/\+Penrose pseudo-\/inverse.}\par
-{\em Calculates the Moore-\/\+Penrose pseudo-\/inverse of the M by N matrix A, and stores the result in P\+Inverse. The singular values of A are returned in S. The left singular vectors are returned in U, and the right singular vectors are returned in V.
+\begin{Indent}{\bf Algorithm P-\/\-Inverse\-: Moore-\/\-Penrose pseudo-\/inverse.}\par
+{\em Calculates the Moore-\/\-Penrose pseudo-\/inverse of the M by N matrix A, and stores the result in P\-Inverse. The singular values of A are returned in S. The left singular vectors are returned in U, and the right singular vectors are returned in V.
 
 $ A^{+} = V * \Sigma^{+} * U^{T}$
 
@@ -46,7 +47,7 @@ There are three ways to call this method to compute the pseudo-\/inverse of the 
 \end{DoxyCode}
 
 
-The user can then call the P-\/\+Inverse routine
+The user can then call the P-\/\-Inverse routine
 
 
 \begin{DoxyCode}
@@ -54,7 +55,7 @@ The user can then call the P-\/\+Inverse routine
 \end{DoxyCode}
 
 
-The P\+Inverse method verifies that the size of the data objects matches the input, and allocates workspace memory, which is deallocated when the function ends. Remember that nmr\+P\+Inverse alters the content of matrix A. For fixed size the function call is templated by size and row/column major, e.\+g.
+The P\-Inverse method verifies that the size of the data objects matches the input, and allocates workspace memory, which is deallocated when the function ends. Remember that nmr\-P\-Inverse alters the content of matrix A. For fixed size the function call is templated by size and row/column major, e.\-g.
 
 
 \begin{DoxyCode}
@@ -72,7 +73,7 @@ nmrPInverse<4, 3, VCT\_COL\_MAJOR>(A, PInverse);
 \end{DoxyCode}
 
 
-The user creates a data object which could be of type \hyperlink{classnmr_p_inverse_fixed_size_data}{nmr\+P\+Inverse\+Fixed\+Size\+Data} or \hyperlink{classnmr_p_inverse_dynamic_data}{nmr\+P\+Inverse\+Dynamic\+Data} corresponding to fixed size, dynamic matrix.
+The user creates a data object which could be of type \hyperlink{classnmr_p_inverse_fixed_size_data}{nmr\-P\-Inverse\-Fixed\-Size\-Data} or \hyperlink{classnmr_p_inverse_dynamic_data}{nmr\-P\-Inverse\-Dynamic\-Data} corresponding to fixed size, dynamic matrix.
 
 
 \begin{DoxyCode}
@@ -80,7 +81,7 @@ The user creates a data object which could be of type \hyperlink{classnmr_p_inve
 \end{DoxyCode}
 
 
-Finally, call the nmr\+P\+Inverse function\+:
+Finally, call the nmr\-P\-Inverse function\-:
 
 
 \begin{DoxyCode}
@@ -88,7 +89,7 @@ Finally, call the nmr\+P\+Inverse function\+:
 \end{DoxyCode}
 
 
-The contents of input matrix is modified by this routine. The matrices U, Vt and vector S are available through the following methods\+:
+The contents of input matrix is modified by this routine. The matrices U, Vt and vector S are available through the following methods\-:
 
 
 \begin{DoxyCode}
@@ -101,7 +102,7 @@ std::cout << data.U()
 
 
 
-\item User provides matrix P\+Inverse with workspace required by pseudo-\/inverse routine of L\+A\+P\+A\+C\+K. User creates matrices\+:
+\item User provides matrix P\-Inverse with workspace required by pseudo-\/inverse routine of L\-A\-P\-A\-C\-K. User creates matrices\-:
 
 
 \begin{DoxyCode}
@@ -110,7 +111,7 @@ std::cout << data.U()
 \end{DoxyCode}
 
 
-User also needs to allocate memory for workspace. This method is particularly useful when the user is using more than one numerical methods from the library and is willing to share the workspace between them. In such as case, the user can allocate the a memory greater than the maximum required by different methods. To aid the user determine the minimum workspace required (and not spend time digging L\+A\+P\+A\+C\+K documentation) the library provides helper function nmr\+P\+Inverse\+Dynamic\+Data\+::\+Workspace\+Size(input).
+User also needs to allocate memory for workspace. This method is particularly useful when the user is using more than one numerical methods from the library and is willing to share the workspace between them. In such as case, the user can allocate the a memory greater than the maximum required by different methods. To aid the user determine the minimum workspace required (and not spend time digging L\-A\-P\-A\-C\-K documentation) the library provides helper function nmr\-P\-Inverse\-Dynamic\-Data\-::\-Workspace\-Size(input).
 
 
 \begin{DoxyCode}
@@ -119,7 +120,7 @@ User also needs to allocate memory for workspace. This method is particularly us
 \end{DoxyCode}
 
 
-Call the S\+V\+D function 
+Call the S\-V\-D function 
 \begin{DoxyCode}
 \hyperlink{nmr_p_inverse_8h_a1f68847a352d1889c52da964d07c3944}{nmrPInverse}(A, PInverse, Work);
 \end{DoxyCode}
@@ -136,155 +137,153 @@ nmrPInverse<4, 3, VCT\_COL\_MAJOR>(A, PInverse, Work);
 
 \end{DoxyEnumerate}
 
-nmr\+P\+Inverse uses \hyperlink{nmr_s_v_d_8h_a52115d0e7a485c4494aa20f4f3f4ebe7}{nmr\+S\+V\+D} and returns the error code of \hyperlink{nmr_s_v_d_8h_a52115d0e7a485c4494aa20f4f3f4ebe7}{nmr\+S\+V\+D}. See \hyperlink{nmr_s_v_d_8h_a52115d0e7a485c4494aa20f4f3f4ebe7}{nmr\+S\+V\+D} for further details.
+nmr\-P\-Inverse uses \hyperlink{nmr_s_v_d_8h_a52115d0e7a485c4494aa20f4f3f4ebe7}{nmr\-S\-V\-D} and returns the error code of \hyperlink{nmr_s_v_d_8h_a52115d0e7a485c4494aa20f4f3f4ebe7}{nmr\-S\-V\-D}. See \hyperlink{nmr_s_v_d_8h_a52115d0e7a485c4494aa20f4f3f4ebe7}{nmr\-S\-V\-D} for further details.
 
 \begin{DoxyNote}{Note}
-The P\+Inverse functions make use of L\+A\+P\+A\+C\+K routines. To activate this code, set the C\+I\+S\+S\+T\+\_\+\+H\+A\+S\+\_\+\+C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B flag to O\+N during the configuration of cisst with C\+Make.
+The P\-Inverse functions make use of L\-A\-P\-A\-C\-K routines. To activate this code, set the C\-I\-S\-S\-T\-\_\-\-H\-A\-S\-\_\-\-C\-I\-S\-S\-T\-N\-E\-T\-L\-I\-B flag to O\-N during the configuration of cisst with C\-Make.
 
-The general rule for numerical functions which depend on L\+A\+P\+A\+C\+K is that column-\/major matrices should be used everywhere, and that all matrices should be compact.
+The general rule for numerical functions which depend on L\-A\-P\-A\-C\-K is that column-\/major matrices should be used everywhere, and that all matrices should be compact.
 
-For the specific case of P\+Inverse, a valid result is also obtained if all the matrices are stored in row-\/major order. This is an exeption to the general rule. However, mixed-\/order is not tolerated. 
+For the specific case of P\-Inverse, a valid result is also obtained if all the matrices are stored in row-\/major order. This is an exeption to the general rule. However, mixed-\/order is not tolerated. 
 \end{DoxyNote}
 }\begin{DoxyCompactItemize}
 \item 
-{\footnotesize template$<$class \+\_\+matrix\+Owner\+Type $>$ }\\C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R \hyperlink{nmr_p_inverse_8h_a1f68847a352d1889c52da964d07c3944}{nmr\+P\+Inverse} (\hyperlink{classvct_dynamic_matrix_base}{vct\+Dynamic\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&A, \hyperlink{classnmr_p_inverse_dynamic_data}{nmr\+P\+Inverse\+Dynamic\+Data} \&data)  throw (std\+::runtime\+\_\+error)
+{\footnotesize template$<$class \-\_\-matrix\-Owner\-Type $>$ }\\C\-I\-S\-S\-T\-N\-E\-T\-L\-I\-B\-\_\-\-I\-N\-T\-E\-G\-E\-R \hyperlink{nmr_p_inverse_8h_a1f68847a352d1889c52da964d07c3944}{nmr\-P\-Inverse} (\hyperlink{classvct_dynamic_matrix_base}{vct\-Dynamic\-Matrix\-Base}$<$ \-\_\-matrix\-Owner\-Type, C\-I\-S\-S\-T\-N\-E\-T\-L\-I\-B\-\_\-\-D\-O\-U\-B\-L\-E $>$ \&A, \hyperlink{classnmr_p_inverse_dynamic_data}{nmr\-P\-Inverse\-Dynamic\-Data} \&data)  throw (std\-::runtime\-\_\-error)
 \item 
-{\footnotesize template$<$class \+\_\+matrix\+Owner\+Type\+A , class \+\_\+matrix\+Owner\+Type\+P\+Inverse , class \+\_\+vector\+Owner\+Type\+Workspace $>$ }\\C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R \hyperlink{nmr_p_inverse_8h_a8af6b318d2368e302c7284a889ea3ca8}{nmr\+P\+Inverse} (\hyperlink{classvct_dynamic_matrix_base}{vct\+Dynamic\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type\+A, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&A, \hyperlink{classvct_dynamic_matrix_base}{vct\+Dynamic\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type\+P\+Inverse, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&P\+Inverse, \hyperlink{classvct_dynamic_vector_base}{vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+Workspace, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&Workspace)
+{\footnotesize template$<$class \-\_\-matrix\-Owner\-Type\-A , class \-\_\-matrix\-Owner\-Type\-P\-Inverse , class \-\_\-vector\-Owner\-Type\-Workspace $>$ }\\C\-I\-S\-S\-T\-N\-E\-T\-L\-I\-B\-\_\-\-I\-N\-T\-E\-G\-E\-R \hyperlink{nmr_p_inverse_8h_a8af6b318d2368e302c7284a889ea3ca8}{nmr\-P\-Inverse} (\hyperlink{classvct_dynamic_matrix_base}{vct\-Dynamic\-Matrix\-Base}$<$ \-\_\-matrix\-Owner\-Type\-A, C\-I\-S\-S\-T\-N\-E\-T\-L\-I\-B\-\_\-\-D\-O\-U\-B\-L\-E $>$ \&A, \hyperlink{classvct_dynamic_matrix_base}{vct\-Dynamic\-Matrix\-Base}$<$ \-\_\-matrix\-Owner\-Type\-P\-Inverse, C\-I\-S\-S\-T\-N\-E\-T\-L\-I\-B\-\_\-\-D\-O\-U\-B\-L\-E $>$ \&P\-Inverse, \hyperlink{classvct_dynamic_vector_base}{vct\-Dynamic\-Vector\-Base}$<$ \-\_\-vector\-Owner\-Type\-Workspace, C\-I\-S\-S\-T\-N\-E\-T\-L\-I\-B\-\_\-\-D\-O\-U\-B\-L\-E $>$ \&Workspace)
 \item 
-{\footnotesize template$<$class \+\_\+matrix\+Owner\+Type\+A , class \+\_\+matrix\+Owner\+Type\+P\+Inverse $>$ }\\C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R \hyperlink{nmr_p_inverse_8h_ab79b0c76b7dbbd1b122f7b16fcd8d4f4}{nmr\+P\+Inverse} (\hyperlink{classvct_dynamic_matrix_base}{vct\+Dynamic\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type\+A, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&A, \hyperlink{classvct_dynamic_matrix_base}{vct\+Dynamic\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type\+P\+Inverse, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&P\+Inverse)
+{\footnotesize template$<$class \-\_\-matrix\-Owner\-Type\-A , class \-\_\-matrix\-Owner\-Type\-P\-Inverse $>$ }\\C\-I\-S\-S\-T\-N\-E\-T\-L\-I\-B\-\_\-\-I\-N\-T\-E\-G\-E\-R \hyperlink{nmr_p_inverse_8h_ab79b0c76b7dbbd1b122f7b16fcd8d4f4}{nmr\-P\-Inverse} (\hyperlink{classvct_dynamic_matrix_base}{vct\-Dynamic\-Matrix\-Base}$<$ \-\_\-matrix\-Owner\-Type\-A, C\-I\-S\-S\-T\-N\-E\-T\-L\-I\-B\-\_\-\-D\-O\-U\-B\-L\-E $>$ \&A, \hyperlink{classvct_dynamic_matrix_base}{vct\-Dynamic\-Matrix\-Base}$<$ \-\_\-matrix\-Owner\-Type\-P\-Inverse, C\-I\-S\-S\-T\-N\-E\-T\-L\-I\-B\-\_\-\-D\-O\-U\-B\-L\-E $>$ \&P\-Inverse)
 \item 
-{\footnotesize template$<$vct\+::size\+\_\+type \+\_\+rows, vct\+::size\+\_\+type \+\_\+cols, vct\+::size\+\_\+type \+\_\+work, bool \+\_\+storage\+Order, class \+\_\+data\+Ptr\+Type $>$ }\\C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R \hyperlink{nmr_p_inverse_8h_afa15e445e98843c37a5c4cba05e8749b}{nmr\+P\+Inverse} (\hyperlink{classvct_fixed_size_matrix}{vct\+Fixed\+Size\+Matrix}$<$ C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E, \+\_\+rows, \+\_\+cols, \+\_\+storage\+Order $>$ \&A, \hyperlink{classvct_fixed_size_matrix}{vct\+Fixed\+Size\+Matrix}$<$ C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E, \+\_\+cols, \+\_\+rows, \+\_\+storage\+Order $>$ \&p\+Inverse, \hyperlink{classvct_fixed_size_vector_base}{vct\+Fixed\+Size\+Vector\+Base}$<$ \+\_\+work, 1, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E, \+\_\+data\+Ptr\+Type $>$ \&workspace)
+{\footnotesize template$<$vct\-::size\-\_\-type \-\_\-rows, vct\-::size\-\_\-type \-\_\-cols, vct\-::size\-\_\-type \-\_\-work, bool \-\_\-storage\-Order, class \-\_\-data\-Ptr\-Type $>$ }\\C\-I\-S\-S\-T\-N\-E\-T\-L\-I\-B\-\_\-\-I\-N\-T\-E\-G\-E\-R \hyperlink{nmr_p_inverse_8h_afa15e445e98843c37a5c4cba05e8749b}{nmr\-P\-Inverse} (\hyperlink{classvct_fixed_size_matrix}{vct\-Fixed\-Size\-Matrix}$<$ C\-I\-S\-S\-T\-N\-E\-T\-L\-I\-B\-\_\-\-D\-O\-U\-B\-L\-E, \-\_\-rows, \-\_\-cols, \-\_\-storage\-Order $>$ \&A, \hyperlink{classvct_fixed_size_matrix}{vct\-Fixed\-Size\-Matrix}$<$ C\-I\-S\-S\-T\-N\-E\-T\-L\-I\-B\-\_\-\-D\-O\-U\-B\-L\-E, \-\_\-cols, \-\_\-rows, \-\_\-storage\-Order $>$ \&p\-Inverse, \hyperlink{classvct_fixed_size_vector_base}{vct\-Fixed\-Size\-Vector\-Base}$<$ \-\_\-work, 1, C\-I\-S\-S\-T\-N\-E\-T\-L\-I\-B\-\_\-\-D\-O\-U\-B\-L\-E, \-\_\-data\-Ptr\-Type $>$ \&workspace)
 \item 
-{\footnotesize template$<$vct\+::size\+\_\+type \+\_\+rows, vct\+::size\+\_\+type \+\_\+cols, bool \+\_\+storage\+Order$>$ }\\C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R \hyperlink{nmr_p_inverse_8h_a210ef8ec3c6b5fd2c774ec67af6c3949}{nmr\+P\+Inverse} (\hyperlink{classvct_fixed_size_matrix}{vct\+Fixed\+Size\+Matrix}$<$ C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E, \+\_\+rows, \+\_\+cols, \+\_\+storage\+Order $>$ \&A, \hyperlink{classvct_fixed_size_matrix}{vct\+Fixed\+Size\+Matrix}$<$ C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E, \+\_\+cols, \+\_\+rows, \+\_\+storage\+Order $>$ \&p\+Inverse)
+{\footnotesize template$<$vct\-::size\-\_\-type \-\_\-rows, vct\-::size\-\_\-type \-\_\-cols, bool \-\_\-storage\-Order$>$ }\\C\-I\-S\-S\-T\-N\-E\-T\-L\-I\-B\-\_\-\-I\-N\-T\-E\-G\-E\-R \hyperlink{nmr_p_inverse_8h_a210ef8ec3c6b5fd2c774ec67af6c3949}{nmr\-P\-Inverse} (\hyperlink{classvct_fixed_size_matrix}{vct\-Fixed\-Size\-Matrix}$<$ C\-I\-S\-S\-T\-N\-E\-T\-L\-I\-B\-\_\-\-D\-O\-U\-B\-L\-E, \-\_\-rows, \-\_\-cols, \-\_\-storage\-Order $>$ \&A, \hyperlink{classvct_fixed_size_matrix}{vct\-Fixed\-Size\-Matrix}$<$ C\-I\-S\-S\-T\-N\-E\-T\-L\-I\-B\-\_\-\-D\-O\-U\-B\-L\-E, \-\_\-cols, \-\_\-rows, \-\_\-storage\-Order $>$ \&p\-Inverse)
 \item 
-{\footnotesize template$<$vct\+::size\+\_\+type \+\_\+rows, vct\+::size\+\_\+type \+\_\+cols, bool \+\_\+storage\+Order$>$ }\\C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R \hyperlink{nmr_p_inverse_8h_a0694f8540c064c2aa6d8dbe488238462}{nmr\+P\+Inverse} (\hyperlink{classvct_fixed_size_matrix}{vct\+Fixed\+Size\+Matrix}$<$ C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E, \+\_\+rows, \+\_\+cols, \+\_\+storage\+Order $>$ \&A, \hyperlink{classnmr_p_inverse_fixed_size_data}{nmr\+P\+Inverse\+Fixed\+Size\+Data}$<$ \+\_\+rows, \+\_\+cols, \+\_\+storage\+Order $>$ \&data)
+{\footnotesize template$<$vct\-::size\-\_\-type \-\_\-rows, vct\-::size\-\_\-type \-\_\-cols, bool \-\_\-storage\-Order$>$ }\\C\-I\-S\-S\-T\-N\-E\-T\-L\-I\-B\-\_\-\-I\-N\-T\-E\-G\-E\-R \hyperlink{nmr_p_inverse_8h_a0694f8540c064c2aa6d8dbe488238462}{nmr\-P\-Inverse} (\hyperlink{classvct_fixed_size_matrix}{vct\-Fixed\-Size\-Matrix}$<$ C\-I\-S\-S\-T\-N\-E\-T\-L\-I\-B\-\_\-\-D\-O\-U\-B\-L\-E, \-\_\-rows, \-\_\-cols, \-\_\-storage\-Order $>$ \&A, \hyperlink{classnmr_p_inverse_fixed_size_data}{nmr\-P\-Inverse\-Fixed\-Size\-Data}$<$ \-\_\-rows, \-\_\-cols, \-\_\-storage\-Order $>$ \&data)
 \end{DoxyCompactItemize}
 \end{Indent}
 
 
 \subsection{Detailed Description}
-Declaration of nmr\+P\+Inverse. 
-
-
+Declaration of nmr\-P\-Inverse. 
 
 \subsection{Function Documentation}
-\hypertarget{nmr_p_inverse_8h_a1f68847a352d1889c52da964d07c3944}{}\index{nmr\+P\+Inverse.\+h@{nmr\+P\+Inverse.\+h}!nmr\+P\+Inverse@{nmr\+P\+Inverse}}
-\index{nmr\+P\+Inverse@{nmr\+P\+Inverse}!nmr\+P\+Inverse.\+h@{nmr\+P\+Inverse.\+h}}
-\subsubsection[{nmr\+P\+Inverse}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+matrix\+Owner\+Type $>$ C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R nmr\+P\+Inverse (
+\hypertarget{nmr_p_inverse_8h_a1f68847a352d1889c52da964d07c3944}{\index{nmr\-P\-Inverse.\-h@{nmr\-P\-Inverse.\-h}!nmr\-P\-Inverse@{nmr\-P\-Inverse}}
+\index{nmr\-P\-Inverse@{nmr\-P\-Inverse}!nmrPInverse.h@{nmr\-P\-Inverse.\-h}}
+\subsubsection[{nmr\-P\-Inverse}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-matrix\-Owner\-Type $>$ C\-I\-S\-S\-T\-N\-E\-T\-L\-I\-B\-\_\-\-I\-N\-T\-E\-G\-E\-R nmr\-P\-Inverse (
 \begin{DoxyParamCaption}
-\item[{{\bf vct\+Dynamic\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&}]{A, }
-\item[{{\bf nmr\+P\+Inverse\+Dynamic\+Data} \&}]{data}
+\item[{{\bf vct\-Dynamic\-Matrix\-Base}$<$ \-\_\-matrix\-Owner\-Type, C\-I\-S\-S\-T\-N\-E\-T\-L\-I\-B\-\_\-\-D\-O\-U\-B\-L\-E $>$ \&}]{A, }
+\item[{{\bf nmr\-P\-Inverse\-Dynamic\-Data} \&}]{data}
 \end{DoxyParamCaption}
-) throw  std\+::runtime\+\_\+error) \hspace{0.3cm}{\ttfamily [inline]}}\label{nmr_p_inverse_8h_a1f68847a352d1889c52da964d07c3944}
-This function checks for valid input and calls the L\+A\+P\+A\+C\+K function. The approach behind this defintion of the function is that the user creates a data object from a code wherein it is safe to do memory allocation. This data object is then passed on to this method along with the matrix whose P\+Inverse is to be computed. The data object has members S, U, Vt and P\+Inverse, which can be accessed through calls to method get$\ast$() along with adequate workspace for L\+A\+P\+A\+C\+K. This function modifies the contents of matrix A. For details about nature of the data matrices see text above.
+) throw  std\-::runtime\-\_\-error) \hspace{0.3cm}{\ttfamily [inline]}}}\label{nmr_p_inverse_8h_a1f68847a352d1889c52da964d07c3944}
+This function checks for valid input and calls the L\-A\-P\-A\-C\-K function. The approach behind this defintion of the function is that the user creates a data object from a code wherein it is safe to do memory allocation. This data object is then passed on to this method along with the matrix whose P\-Inverse is to be computed. The data object has members S, U, Vt and P\-Inverse, which can be accessed through calls to method get$\ast$() along with adequate workspace for L\-A\-P\-A\-C\-K. This function modifies the contents of matrix A. For details about nature of the data matrices see text above.
 
 
 \begin{DoxyParams}{Parameters}
-{\em A} & A matrix of size Mx\+N, of one of \hyperlink{classvct_dynamic_matrix}{vct\+Dynamic\+Matrix} or \hyperlink{classvct_dynamic_matrix_ref}{vct\+Dynamic\+Matrix\+Ref} \\
+{\em A} & A matrix of size Mx\-N, of one of \hyperlink{classvct_dynamic_matrix}{vct\-Dynamic\-Matrix} or \hyperlink{classvct_dynamic_matrix_ref}{vct\-Dynamic\-Matrix\-Ref} \\
 \hline
 {\em data} & A data object of one of the types corresponding to input matrix\\
 \hline
 \end{DoxyParams}
 \begin{DoxyRefDesc}{Test}
-\item[\hyperlink{test__test000012}{Test}]nmr\+P\+Inverse\+Test\+::\+Test\+Dynamic\+Column\+Major nmr\+P\+Inverse\+Test\+::\+Test\+Dynamic\+Row\+Major nmr\+P\+Inverse\+Test\+::\+Test\+Dynamic\+Column\+Major\+User\+Alloc nmr\+P\+Inverse\+Test\+::\+Test\+Dynamic\+Row\+Major\+User\+Alloc \end{DoxyRefDesc}
-\hypertarget{nmr_p_inverse_8h_a8af6b318d2368e302c7284a889ea3ca8}{}\index{nmr\+P\+Inverse.\+h@{nmr\+P\+Inverse.\+h}!nmr\+P\+Inverse@{nmr\+P\+Inverse}}
-\index{nmr\+P\+Inverse@{nmr\+P\+Inverse}!nmr\+P\+Inverse.\+h@{nmr\+P\+Inverse.\+h}}
-\subsubsection[{nmr\+P\+Inverse}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+matrix\+Owner\+Type\+A , class \+\_\+matrix\+Owner\+Type\+P\+Inverse , class \+\_\+vector\+Owner\+Type\+Workspace $>$ C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R nmr\+P\+Inverse (
+\item[\hyperlink{test__test000009}{Test}]nmr\-P\-Inverse\-Test\-::\-Test\-Dynamic\-Column\-Major nmr\-P\-Inverse\-Test\-::\-Test\-Dynamic\-Row\-Major nmr\-P\-Inverse\-Test\-::\-Test\-Dynamic\-Column\-Major\-User\-Alloc nmr\-P\-Inverse\-Test\-::\-Test\-Dynamic\-Row\-Major\-User\-Alloc \end{DoxyRefDesc}
+\hypertarget{nmr_p_inverse_8h_a8af6b318d2368e302c7284a889ea3ca8}{\index{nmr\-P\-Inverse.\-h@{nmr\-P\-Inverse.\-h}!nmr\-P\-Inverse@{nmr\-P\-Inverse}}
+\index{nmr\-P\-Inverse@{nmr\-P\-Inverse}!nmrPInverse.h@{nmr\-P\-Inverse.\-h}}
+\subsubsection[{nmr\-P\-Inverse}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-matrix\-Owner\-Type\-A , class \-\_\-matrix\-Owner\-Type\-P\-Inverse , class \-\_\-vector\-Owner\-Type\-Workspace $>$ C\-I\-S\-S\-T\-N\-E\-T\-L\-I\-B\-\_\-\-I\-N\-T\-E\-G\-E\-R nmr\-P\-Inverse (
 \begin{DoxyParamCaption}
-\item[{{\bf vct\+Dynamic\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type\+A, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&}]{A, }
-\item[{{\bf vct\+Dynamic\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type\+P\+Inverse, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&}]{P\+Inverse, }
-\item[{{\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+Workspace, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&}]{Workspace}
+\item[{{\bf vct\-Dynamic\-Matrix\-Base}$<$ \-\_\-matrix\-Owner\-Type\-A, C\-I\-S\-S\-T\-N\-E\-T\-L\-I\-B\-\_\-\-D\-O\-U\-B\-L\-E $>$ \&}]{A, }
+\item[{{\bf vct\-Dynamic\-Matrix\-Base}$<$ \-\_\-matrix\-Owner\-Type\-P\-Inverse, C\-I\-S\-S\-T\-N\-E\-T\-L\-I\-B\-\_\-\-D\-O\-U\-B\-L\-E $>$ \&}]{P\-Inverse, }
+\item[{{\bf vct\-Dynamic\-Vector\-Base}$<$ \-\_\-vector\-Owner\-Type\-Workspace, C\-I\-S\-S\-T\-N\-E\-T\-L\-I\-B\-\_\-\-D\-O\-U\-B\-L\-E $>$ \&}]{Workspace}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\label{nmr_p_inverse_8h_a8af6b318d2368e302c7284a889ea3ca8}
-Basic version of P\+Inverse where user provides the input matrix as well as storage for output and workspace needed by L\+A\+P\+A\+C\+K. No mem allocation is done in this function, user allocates everything inlcuding workspace. The P\+Inverse method verifies that the size of the data objects matchesc the input. See static methods in \hyperlink{classnmr_p_inverse_dynamic_data}{nmr\+P\+Inverse\+Dynamic\+Data} for helper functions that help determine the min workspace required. This function modifies the contents of matrix A. For sizes of other matrices see text above.
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{nmr_p_inverse_8h_a8af6b318d2368e302c7284a889ea3ca8}
+Basic version of P\-Inverse where user provides the input matrix as well as storage for output and workspace needed by L\-A\-P\-A\-C\-K. No mem allocation is done in this function, user allocates everything inlcuding workspace. The P\-Inverse method verifies that the size of the data objects matchesc the input. See static methods in \hyperlink{classnmr_p_inverse_dynamic_data}{nmr\-P\-Inverse\-Dynamic\-Data} for helper functions that help determine the min workspace required. This function modifies the contents of matrix A. For sizes of other matrices see text above.
 
 
 \begin{DoxyParams}{Parameters}
-{\em A} & is a reference to a dynamic matrix of size Mx\+N \\
+{\em A} & is a reference to a dynamic matrix of size Mx\-N \\
 \hline
-{\em P\+Inverse} & The output matrix for P\+Inverse \\
+{\em P\-Inverse} & The output matrix for P\-Inverse \\
 \hline
-{\em Workspace} & The workspace for L\+A\+P\+A\+C\+K.\\
+{\em Workspace} & The workspace for L\-A\-P\-A\-C\-K.\\
 \hline
 \end{DoxyParams}
 \begin{DoxyRefDesc}{Test}
-\item[\hyperlink{test__test000013}{Test}]nmr\+P\+Inverse\+Test\+::\+Test\+Dynamic\+Column\+Major\+User\+Alloc nmr\+P\+Inverse\+Test\+::\+Test\+Dynamic\+Row\+Major\+User\+Alloc \end{DoxyRefDesc}
-\hypertarget{nmr_p_inverse_8h_ab79b0c76b7dbbd1b122f7b16fcd8d4f4}{}\index{nmr\+P\+Inverse.\+h@{nmr\+P\+Inverse.\+h}!nmr\+P\+Inverse@{nmr\+P\+Inverse}}
-\index{nmr\+P\+Inverse@{nmr\+P\+Inverse}!nmr\+P\+Inverse.\+h@{nmr\+P\+Inverse.\+h}}
-\subsubsection[{nmr\+P\+Inverse}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+matrix\+Owner\+Type\+A , class \+\_\+matrix\+Owner\+Type\+P\+Inverse $>$ C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R nmr\+P\+Inverse (
+\item[\hyperlink{test__test000010}{Test}]nmr\-P\-Inverse\-Test\-::\-Test\-Dynamic\-Column\-Major\-User\-Alloc nmr\-P\-Inverse\-Test\-::\-Test\-Dynamic\-Row\-Major\-User\-Alloc \end{DoxyRefDesc}
+\hypertarget{nmr_p_inverse_8h_ab79b0c76b7dbbd1b122f7b16fcd8d4f4}{\index{nmr\-P\-Inverse.\-h@{nmr\-P\-Inverse.\-h}!nmr\-P\-Inverse@{nmr\-P\-Inverse}}
+\index{nmr\-P\-Inverse@{nmr\-P\-Inverse}!nmrPInverse.h@{nmr\-P\-Inverse.\-h}}
+\subsubsection[{nmr\-P\-Inverse}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-matrix\-Owner\-Type\-A , class \-\_\-matrix\-Owner\-Type\-P\-Inverse $>$ C\-I\-S\-S\-T\-N\-E\-T\-L\-I\-B\-\_\-\-I\-N\-T\-E\-G\-E\-R nmr\-P\-Inverse (
 \begin{DoxyParamCaption}
-\item[{{\bf vct\+Dynamic\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type\+A, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&}]{A, }
-\item[{{\bf vct\+Dynamic\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type\+P\+Inverse, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E $>$ \&}]{P\+Inverse}
+\item[{{\bf vct\-Dynamic\-Matrix\-Base}$<$ \-\_\-matrix\-Owner\-Type\-A, C\-I\-S\-S\-T\-N\-E\-T\-L\-I\-B\-\_\-\-D\-O\-U\-B\-L\-E $>$ \&}]{A, }
+\item[{{\bf vct\-Dynamic\-Matrix\-Base}$<$ \-\_\-matrix\-Owner\-Type\-P\-Inverse, C\-I\-S\-S\-T\-N\-E\-T\-L\-I\-B\-\_\-\-D\-O\-U\-B\-L\-E $>$ \&}]{P\-Inverse}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\label{nmr_p_inverse_8h_ab79b0c76b7dbbd1b122f7b16fcd8d4f4}
-Basic version of P\+Inverse where user provides the input matrix as well as storage for output. The P\+Inverse method verifies that the size of the data objects matches the input and allocates workspace memory, which is deallocated when the function ends. This function modifies the contents of matrix A. For sizes of other matrices see text above.
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{nmr_p_inverse_8h_ab79b0c76b7dbbd1b122f7b16fcd8d4f4}
+Basic version of P\-Inverse where user provides the input matrix as well as storage for output. The P\-Inverse method verifies that the size of the data objects matches the input and allocates workspace memory, which is deallocated when the function ends. This function modifies the contents of matrix A. For sizes of other matrices see text above.
 
 
 \begin{DoxyParams}{Parameters}
-{\em A} & is a reference to a dynamic matrix of size Mx\+N \\
+{\em A} & is a reference to a dynamic matrix of size Mx\-N \\
 \hline
-{\em P\+Inverse} & The output matrices and vector for P\+Inverse\\
+{\em P\-Inverse} & The output matrices and vector for P\-Inverse\\
 \hline
 \end{DoxyParams}
 \begin{DoxyRefDesc}{Test}
-\item[\hyperlink{test__test000014}{Test}]nmr\+P\+Inverse\+Test\+::\+Test\+Dynamic\+Column\+Major\+User\+Alloc nmr\+P\+Inverse\+Test\+::\+Test\+Dynamic\+Row\+Major\+User\+Alloc \end{DoxyRefDesc}
-\hypertarget{nmr_p_inverse_8h_afa15e445e98843c37a5c4cba05e8749b}{}\index{nmr\+P\+Inverse.\+h@{nmr\+P\+Inverse.\+h}!nmr\+P\+Inverse@{nmr\+P\+Inverse}}
-\index{nmr\+P\+Inverse@{nmr\+P\+Inverse}!nmr\+P\+Inverse.\+h@{nmr\+P\+Inverse.\+h}}
-\subsubsection[{nmr\+P\+Inverse}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+rows, vct\+::size\+\_\+type \+\_\+cols, vct\+::size\+\_\+type \+\_\+work, bool \+\_\+storage\+Order, class \+\_\+data\+Ptr\+Type $>$ C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R nmr\+P\+Inverse (
+\item[\hyperlink{test__test000011}{Test}]nmr\-P\-Inverse\-Test\-::\-Test\-Dynamic\-Column\-Major\-User\-Alloc nmr\-P\-Inverse\-Test\-::\-Test\-Dynamic\-Row\-Major\-User\-Alloc \end{DoxyRefDesc}
+\hypertarget{nmr_p_inverse_8h_afa15e445e98843c37a5c4cba05e8749b}{\index{nmr\-P\-Inverse.\-h@{nmr\-P\-Inverse.\-h}!nmr\-P\-Inverse@{nmr\-P\-Inverse}}
+\index{nmr\-P\-Inverse@{nmr\-P\-Inverse}!nmrPInverse.h@{nmr\-P\-Inverse.\-h}}
+\subsubsection[{nmr\-P\-Inverse}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\-::size\-\_\-type \-\_\-rows, vct\-::size\-\_\-type \-\_\-cols, vct\-::size\-\_\-type \-\_\-work, bool \-\_\-storage\-Order, class \-\_\-data\-Ptr\-Type $>$ C\-I\-S\-S\-T\-N\-E\-T\-L\-I\-B\-\_\-\-I\-N\-T\-E\-G\-E\-R nmr\-P\-Inverse (
 \begin{DoxyParamCaption}
-\item[{{\bf vct\+Fixed\+Size\+Matrix}$<$ C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E, \+\_\+rows, \+\_\+cols, \+\_\+storage\+Order $>$ \&}]{A, }
-\item[{{\bf vct\+Fixed\+Size\+Matrix}$<$ C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E, \+\_\+cols, \+\_\+rows, \+\_\+storage\+Order $>$ \&}]{p\+Inverse, }
-\item[{{\bf vct\+Fixed\+Size\+Vector\+Base}$<$ \+\_\+work, 1, C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E, \+\_\+data\+Ptr\+Type $>$ \&}]{workspace}
+\item[{{\bf vct\-Fixed\-Size\-Matrix}$<$ C\-I\-S\-S\-T\-N\-E\-T\-L\-I\-B\-\_\-\-D\-O\-U\-B\-L\-E, \-\_\-rows, \-\_\-cols, \-\_\-storage\-Order $>$ \&}]{A, }
+\item[{{\bf vct\-Fixed\-Size\-Matrix}$<$ C\-I\-S\-S\-T\-N\-E\-T\-L\-I\-B\-\_\-\-D\-O\-U\-B\-L\-E, \-\_\-cols, \-\_\-rows, \-\_\-storage\-Order $>$ \&}]{p\-Inverse, }
+\item[{{\bf vct\-Fixed\-Size\-Vector\-Base}$<$ \-\_\-work, 1, C\-I\-S\-S\-T\-N\-E\-T\-L\-I\-B\-\_\-\-D\-O\-U\-B\-L\-E, \-\_\-data\-Ptr\-Type $>$ \&}]{workspace}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\label{nmr_p_inverse_8h_afa15e445e98843c37a5c4cba05e8749b}
-Basic version of pseudo inverse where user provides the input matrix as well as storage for output and workspace needed by L\+A\+P\+A\+C\+K. No memory allocation is done in this function, user allocates everything including workspace. The nmr\+P\+Inverse function verifies that the size of the S and workspace vector objects match the input. This function modifies the contents of matrix A. For sizes of other matrices see text above.
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{nmr_p_inverse_8h_afa15e445e98843c37a5c4cba05e8749b}
+Basic version of pseudo inverse where user provides the input matrix as well as storage for output and workspace needed by L\-A\-P\-A\-C\-K. No memory allocation is done in this function, user allocates everything including workspace. The nmr\-P\-Inverse function verifies that the size of the S and workspace vector objects match the input. This function modifies the contents of matrix A. For sizes of other matrices see text above.
 
 
 \begin{DoxyParams}{Parameters}
-{\em A} & Fixed size matrix of size Mx\+N \\
+{\em A} & Fixed size matrix of size Mx\-N \\
 \hline
-{\em p\+Inverse} & The output matrix for pseudo inverse \\
+{\em p\-Inverse} & The output matrix for pseudo inverse \\
 \hline
-{\em workspace} & The workspace for L\+A\+P\+A\+C\+K.\\
+{\em workspace} & The workspace for L\-A\-P\-A\-C\-K.\\
 \hline
 \end{DoxyParams}
 \begin{DoxyRefDesc}{Test}
-\item[\hyperlink{test__test000015}{Test}]nmr\+P\+Inverse\+Test\+::\+Test\+Fixed\+Size\+Column\+Major\+M\+Leq\+N\+\_\+\+T2 nmr\+P\+Inverse\+Test\+::\+Test\+Fixed\+Size\+Row\+Major\+M\+Leq\+N\+\_\+\+T2 nmr\+P\+Inverse\+Test\+::\+Test\+Fixed\+Size\+Column\+Major\+M\+Geq\+N\+\_\+\+T2 nmr\+P\+Inverse\+Test\+::\+Test\+Fixed\+Size\+Row\+Major\+M\+Geq\+N\+\_\+\+T2 \end{DoxyRefDesc}
-\hypertarget{nmr_p_inverse_8h_a210ef8ec3c6b5fd2c774ec67af6c3949}{}\index{nmr\+P\+Inverse.\+h@{nmr\+P\+Inverse.\+h}!nmr\+P\+Inverse@{nmr\+P\+Inverse}}
-\index{nmr\+P\+Inverse@{nmr\+P\+Inverse}!nmr\+P\+Inverse.\+h@{nmr\+P\+Inverse.\+h}}
-\subsubsection[{nmr\+P\+Inverse}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+rows, vct\+::size\+\_\+type \+\_\+cols, bool \+\_\+storage\+Order$>$ C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R nmr\+P\+Inverse (
+\item[\hyperlink{test__test000012}{Test}]nmr\-P\-Inverse\-Test\-::\-Test\-Fixed\-Size\-Column\-Major\-M\-Leq\-N\-\_\-\-T2 nmr\-P\-Inverse\-Test\-::\-Test\-Fixed\-Size\-Row\-Major\-M\-Leq\-N\-\_\-\-T2 nmr\-P\-Inverse\-Test\-::\-Test\-Fixed\-Size\-Column\-Major\-M\-Geq\-N\-\_\-\-T2 nmr\-P\-Inverse\-Test\-::\-Test\-Fixed\-Size\-Row\-Major\-M\-Geq\-N\-\_\-\-T2 \end{DoxyRefDesc}
+\hypertarget{nmr_p_inverse_8h_a210ef8ec3c6b5fd2c774ec67af6c3949}{\index{nmr\-P\-Inverse.\-h@{nmr\-P\-Inverse.\-h}!nmr\-P\-Inverse@{nmr\-P\-Inverse}}
+\index{nmr\-P\-Inverse@{nmr\-P\-Inverse}!nmrPInverse.h@{nmr\-P\-Inverse.\-h}}
+\subsubsection[{nmr\-P\-Inverse}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\-::size\-\_\-type \-\_\-rows, vct\-::size\-\_\-type \-\_\-cols, bool \-\_\-storage\-Order$>$ C\-I\-S\-S\-T\-N\-E\-T\-L\-I\-B\-\_\-\-I\-N\-T\-E\-G\-E\-R nmr\-P\-Inverse (
 \begin{DoxyParamCaption}
-\item[{{\bf vct\+Fixed\+Size\+Matrix}$<$ C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E, \+\_\+rows, \+\_\+cols, \+\_\+storage\+Order $>$ \&}]{A, }
-\item[{{\bf vct\+Fixed\+Size\+Matrix}$<$ C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E, \+\_\+cols, \+\_\+rows, \+\_\+storage\+Order $>$ \&}]{p\+Inverse}
+\item[{{\bf vct\-Fixed\-Size\-Matrix}$<$ C\-I\-S\-S\-T\-N\-E\-T\-L\-I\-B\-\_\-\-D\-O\-U\-B\-L\-E, \-\_\-rows, \-\_\-cols, \-\_\-storage\-Order $>$ \&}]{A, }
+\item[{{\bf vct\-Fixed\-Size\-Matrix}$<$ C\-I\-S\-S\-T\-N\-E\-T\-L\-I\-B\-\_\-\-D\-O\-U\-B\-L\-E, \-\_\-cols, \-\_\-rows, \-\_\-storage\-Order $>$ \&}]{p\-Inverse}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\label{nmr_p_inverse_8h_a210ef8ec3c6b5fd2c774ec67af6c3949}
-Basic version of pseudo-\/inverse where user provides the input matrix as well as storage for output. The nmr\+P\+Inverse function verifies that the size of the S vector object matches the input and allocates workspace memory, which is deallocated when the function ends. This function modifies the contents of matrix A. For sizes of other matrices see text above.
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{nmr_p_inverse_8h_a210ef8ec3c6b5fd2c774ec67af6c3949}
+Basic version of pseudo-\/inverse where user provides the input matrix as well as storage for output. The nmr\-P\-Inverse function verifies that the size of the S vector object matches the input and allocates workspace memory, which is deallocated when the function ends. This function modifies the contents of matrix A. For sizes of other matrices see text above.
 
 
 \begin{DoxyParams}{Parameters}
-{\em A} & Fixed size matrix of size Mx\+N \\
+{\em A} & Fixed size matrix of size Mx\-N \\
 \hline
-{\em p\+Inverse} & The output matrix for pseudo inverse\\
+{\em p\-Inverse} & The output matrix for pseudo inverse\\
 \hline
 \end{DoxyParams}
 \begin{DoxyRefDesc}{Test}
-\item[\hyperlink{test__test000016}{Test}]nmr\+P\+Inverse\+Test\+::\+Test\+Fixed\+Size\+Column\+Major\+M\+Leq\+N\+\_\+\+T2 nmr\+P\+Inverse\+Test\+::\+Test\+Fixed\+Size\+Row\+Major\+M\+Leq\+N\+\_\+\+T2 nmr\+P\+Inverse\+Test\+::\+Test\+Fixed\+Size\+Column\+Major\+M\+Geq\+N\+\_\+\+T2 nmr\+P\+Inverse\+Test\+::\+Test\+Fixed\+Size\+Row\+Major\+M\+Geq\+N\+\_\+\+T2 \end{DoxyRefDesc}
-\hypertarget{nmr_p_inverse_8h_a0694f8540c064c2aa6d8dbe488238462}{}\index{nmr\+P\+Inverse.\+h@{nmr\+P\+Inverse.\+h}!nmr\+P\+Inverse@{nmr\+P\+Inverse}}
-\index{nmr\+P\+Inverse@{nmr\+P\+Inverse}!nmr\+P\+Inverse.\+h@{nmr\+P\+Inverse.\+h}}
-\subsubsection[{nmr\+P\+Inverse}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+rows, vct\+::size\+\_\+type \+\_\+cols, bool \+\_\+storage\+Order$>$ C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+I\+N\+T\+E\+G\+E\+R nmr\+P\+Inverse (
+\item[\hyperlink{test__test000013}{Test}]nmr\-P\-Inverse\-Test\-::\-Test\-Fixed\-Size\-Column\-Major\-M\-Leq\-N\-\_\-\-T2 nmr\-P\-Inverse\-Test\-::\-Test\-Fixed\-Size\-Row\-Major\-M\-Leq\-N\-\_\-\-T2 nmr\-P\-Inverse\-Test\-::\-Test\-Fixed\-Size\-Column\-Major\-M\-Geq\-N\-\_\-\-T2 nmr\-P\-Inverse\-Test\-::\-Test\-Fixed\-Size\-Row\-Major\-M\-Geq\-N\-\_\-\-T2 \end{DoxyRefDesc}
+\hypertarget{nmr_p_inverse_8h_a0694f8540c064c2aa6d8dbe488238462}{\index{nmr\-P\-Inverse.\-h@{nmr\-P\-Inverse.\-h}!nmr\-P\-Inverse@{nmr\-P\-Inverse}}
+\index{nmr\-P\-Inverse@{nmr\-P\-Inverse}!nmrPInverse.h@{nmr\-P\-Inverse.\-h}}
+\subsubsection[{nmr\-P\-Inverse}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\-::size\-\_\-type \-\_\-rows, vct\-::size\-\_\-type \-\_\-cols, bool \-\_\-storage\-Order$>$ C\-I\-S\-S\-T\-N\-E\-T\-L\-I\-B\-\_\-\-I\-N\-T\-E\-G\-E\-R nmr\-P\-Inverse (
 \begin{DoxyParamCaption}
-\item[{{\bf vct\+Fixed\+Size\+Matrix}$<$ C\+I\+S\+S\+T\+N\+E\+T\+L\+I\+B\+\_\+\+D\+O\+U\+B\+L\+E, \+\_\+rows, \+\_\+cols, \+\_\+storage\+Order $>$ \&}]{A, }
-\item[{{\bf nmr\+P\+Inverse\+Fixed\+Size\+Data}$<$ \+\_\+rows, \+\_\+cols, \+\_\+storage\+Order $>$ \&}]{data}
+\item[{{\bf vct\-Fixed\-Size\-Matrix}$<$ C\-I\-S\-S\-T\-N\-E\-T\-L\-I\-B\-\_\-\-D\-O\-U\-B\-L\-E, \-\_\-rows, \-\_\-cols, \-\_\-storage\-Order $>$ \&}]{A, }
+\item[{{\bf nmr\-P\-Inverse\-Fixed\-Size\-Data}$<$ \-\_\-rows, \-\_\-cols, \-\_\-storage\-Order $>$ \&}]{data}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\label{nmr_p_inverse_8h_a0694f8540c064c2aa6d8dbe488238462}
-Specialized version of pseudo-\/inverse for Fixed Size Matrix. since all error checking is done at compile time. The approach behind this defintion of the function is that the user creates a data object from a code wherein it is safe to do memory allocation. This data object is then passed on to this method along with the matrix whose S\+V\+D is to be computed. The data object has members S, U, and Vt, which can be accessed through calls to method get$\ast$() along with adequate workspace for L\+A\+P\+A\+C\+K. This function modifies the contents of matrix A. For details about nature of the data matrices see text above.
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{nmr_p_inverse_8h_a0694f8540c064c2aa6d8dbe488238462}
+Specialized version of pseudo-\/inverse for Fixed Size Matrix. since all error checking is done at compile time. The approach behind this defintion of the function is that the user creates a data object from a code wherein it is safe to do memory allocation. This data object is then passed on to this method along with the matrix whose S\-V\-D is to be computed. The data object has members S, U, and Vt, which can be accessed through calls to method get$\ast$() along with adequate workspace for L\-A\-P\-A\-C\-K. This function modifies the contents of matrix A. For details about nature of the data matrices see text above.
 
 
 \begin{DoxyParams}{Parameters}
-{\em A} & A matrix of size Mx\+N \\
+{\em A} & A matrix of size Mx\-N \\
 \hline
 {\em data} & A data object of one of the types corresponding to input matrix\\
 \hline
 \end{DoxyParams}
 \begin{DoxyRefDesc}{Test}
-\item[\hyperlink{test__test000017}{Test}]nmr\+P\+Inverse\+Test\+::\+Test\+Fixed\+Size\+Column\+Major\+M\+Leq\+N nmr\+P\+Inverse\+Test\+::\+Test\+Fixed\+Size\+Row\+Major\+M\+Leq\+N nmr\+P\+Inverse\+Test\+::\+Test\+Fixed\+Size\+Column\+Major\+M\+Geq\+N nmr\+P\+Inverse\+Test\+::\+Test\+Fixed\+Size\+Row\+Major\+M\+Geq\+N \end{DoxyRefDesc}
+\item[\hyperlink{test__test000014}{Test}]nmr\-P\-Inverse\-Test\-::\-Test\-Fixed\-Size\-Column\-Major\-M\-Leq\-N nmr\-P\-Inverse\-Test\-::\-Test\-Fixed\-Size\-Row\-Major\-M\-Leq\-N nmr\-P\-Inverse\-Test\-::\-Test\-Fixed\-Size\-Column\-Major\-M\-Geq\-N nmr\-P\-Inverse\-Test\-::\-Test\-Fixed\-Size\-Row\-Major\-M\-Geq\-N \end{DoxyRefDesc}

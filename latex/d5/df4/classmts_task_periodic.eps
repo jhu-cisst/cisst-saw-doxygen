@@ -5,7 +5,7 @@
 %%For: 
 %Magnification: 1.00
 %%Orientation: Portrait
-%%BoundingBox: 0 0 500 1155.555556
+%%BoundingBox: 0 0 500 1200.000000
 %%Pages: 0
 %%BeginSetup
 %%EndSetup
@@ -19,12 +19,12 @@
 /marginwidth 10 def
 /distx 20 def
 /disty 40 def
-/boundaspect 0.432692 def  % aspect ratio of the BoundingBox (width/height)
+/boundaspect 0.416667 def  % aspect ratio of the BoundingBox (width/height)
 /boundx 500 def
 /boundy boundx boundaspect div def
 /xspacing 0 def
 /yspacing 0 def
-/rows 26 def
+/rows 27 def
 /cols 2 def
 /scalefactor 0 def
 /boxfont /Times-Roman findfont fontheight scalefont def
@@ -184,6 +184,7 @@ boxfont setfont
 (mtsGLUTManipulator) cw
 (mtsIntuitiveDaVinci) cw
 (mtsIntuitiveResearchKitArm) cw
+(mtsIntuitiveResearchKitSUJ) cw
 (mtsIntuitiveResearchKitUDPStreamer) cw
 (mtsMedtronicStealthlink) cw
 (mtsMicronTracker) cw
@@ -210,19 +211,20 @@ boundx scalefactor div boundy scalefactor div scale
 
 % ----- classes -----
 
- (mtsTaskPeriodic) 0.000000 21.000000 box
- (mtsTaskContinuous) 0.000000 22.000000 box
- (mtsTask) 0.000000 23.000000 box
- (mtsComponent) 0.000000 24.000000 box
- (cmnGenericObject) 0.000000 25.000000 box
- (mts3Dconnexion) 1.000000 20.000000 box
- (mtsComponentAddLatency) 1.000000 19.000000 box
- (mtsController) 1.000000 18.000000 box
-1.000000 18.000000 mark
- (mtsGLUTManipulator) 1.000000 17.000000 box
- (mtsIntuitiveDaVinci) 1.000000 16.000000 box
- (mtsIntuitiveResearchKitArm) 1.000000 15.000000 box
-1.000000 15.000000 mark
+ (mtsTaskPeriodic) 0.000000 22.000000 box
+ (mtsTaskContinuous) 0.000000 23.000000 box
+ (mtsTask) 0.000000 24.000000 box
+ (mtsComponent) 0.000000 25.000000 box
+ (cmnGenericObject) 0.000000 26.000000 box
+ (mts3Dconnexion) 1.000000 21.000000 box
+ (mtsComponentAddLatency) 1.000000 20.000000 box
+ (mtsController) 1.000000 19.000000 box
+1.000000 19.000000 mark
+ (mtsGLUTManipulator) 1.000000 18.000000 box
+ (mtsIntuitiveDaVinci) 1.000000 17.000000 box
+ (mtsIntuitiveResearchKitArm) 1.000000 16.000000 box
+1.000000 16.000000 mark
+ (mtsIntuitiveResearchKitSUJ) 1.000000 15.000000 box
  (mtsIntuitiveResearchKitUDPStreamer) 1.000000 14.000000 box
  (mtsMedtronicStealthlink) 1.000000 13.000000 box
  (mtsMicronTracker) 1.000000 12.000000 box
@@ -244,10 +246,6 @@ boundx scalefactor div boundy scalefactor div scale
 % ----- relations -----
 
 solid
-0 0.000000 21.000000 out
-solid
-1 0.000000 22.000000 in
-solid
 0 0.000000 22.000000 out
 solid
 1 0.000000 23.000000 in
@@ -260,7 +258,13 @@ solid
 solid
 1 0.000000 25.000000 in
 solid
-1 0.000000 20.250000 out
+0 0.000000 25.000000 out
+solid
+1 0.000000 26.000000 in
+solid
+1 0.000000 21.250000 out
+solid
+0 0.000000 21.500000 hedge
 solid
 0 0.000000 20.500000 hedge
 solid
@@ -304,4 +308,4 @@ solid
 solid
 0 0.000000 0.500000 hedge
 solid
-0.000000 21.000000 0.500000 vedge
+0.000000 22.000000 0.500000 vedge

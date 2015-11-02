@@ -1,36 +1,39 @@
-\hypertarget{classvct_dynamic_const_vector_base_1_1_const_subvector}{}\section{vct\+Dynamic\+Const\+Vector\+Base$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+:\+:Const\+Subvector Class Reference}
-\label{classvct_dynamic_const_vector_base_1_1_const_subvector}\index{vct\+Dynamic\+Const\+Vector\+Base$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::\+Const\+Subvector@{vct\+Dynamic\+Const\+Vector\+Base$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::\+Const\+Subvector}}
+\hypertarget{classvct_dynamic_const_vector_base_1_1_const_subvector}{\section{vct\-Dynamic\-Const\-Vector\-Base$<$ \-\_\-vector\-Owner\-Type, \-\_\-element\-Type $>$\-:\-:Const\-Subvector Class Reference}
+\label{classvct_dynamic_const_vector_base_1_1_const_subvector}\index{vct\-Dynamic\-Const\-Vector\-Base$<$ \-\_\-vector\-Owner\-Type, \-\_\-element\-Type $>$\-::\-Const\-Subvector@{vct\-Dynamic\-Const\-Vector\-Base$<$ \-\_\-vector\-Owner\-Type, \-\_\-element\-Type $>$\-::\-Const\-Subvector}}
+}
 
 
-{\ttfamily \#include $<$vct\+Dynamic\+Const\+Vector\+Base.\+h$>$}
+{\ttfamily \#include $<$vct\-Dynamic\-Const\-Vector\-Base.\-h$>$}
 
 \subsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
-typedef \hyperlink{classvct_dynamic_const_vector_ref}{vct\+Dynamic\+Const\+Vector\+Ref}$<$ value\+\_\+type $>$ \hyperlink{classvct_dynamic_const_vector_base_1_1_const_subvector_adbf4a3fe950a5909deb939cffbb7d9a5}{Type}
+typedef \\*
+\hyperlink{classvct_dynamic_const_vector_ref}{vct\-Dynamic\-Const\-Vector\-Ref}\\*
+$<$ value\-\_\-type $>$ \hyperlink{classvct_dynamic_const_vector_base_1_1_const_subvector_adbf4a3fe950a5909deb939cffbb7d9a5}{Type}
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-\subsubsection*{template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$class vct\+Dynamic\+Const\+Vector\+Base$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::\+Const\+Subvector}
+\subsubsection*{template$<$class \-\_\-vector\-Owner\-Type, typename \-\_\-element\-Type$>$class vct\-Dynamic\-Const\-Vector\-Base$<$ \-\_\-vector\-Owner\-Type, \-\_\-element\-Type $>$\-::\-Const\-Subvector}
 
-Define a \hyperlink{classvct_dynamic_const_vector_base_1_1_const_subvector}{Const\+Subvector} class for compatibility with the fixed size vectors. A const subvector has the same stride as the parent container.
+Define a \hyperlink{classvct_dynamic_const_vector_base_1_1_const_subvector}{Const\-Subvector} class for compatibility with the fixed size vectors. A const subvector has the same stride as the parent container.
 
-Example\+:
+Example\-:
 
-typedef \hyperlink{classvct_dynamic_vector}{vct\+Dynamic\+Vector$<$double$>$} Vector\+Type; Vector\+Type v(9); Vector\+Type\+::\+Const\+Subvector\+::\+Type first4(v, 0, 4); Vector\+Type\+::\+Const\+Subvector\+::\+Type last5(v, 4, 5);
+typedef \hyperlink{classvct_dynamic_vector}{vct\-Dynamic\-Vector$<$double$>$} Vector\-Type; Vector\-Type v(9); Vector\-Type\-::\-Const\-Subvector\-::\-Type first4(v, 0, 4); Vector\-Type\-::\-Const\-Subvector\-::\-Type last5(v, 4, 5);
 
 \begin{DoxyNote}{Note}
-There is no straightforward way to define a fixed-\/size subvector of a dynamic vector, because the stride of the dynamic vector is not known in compilation time. A way to do it is\+:
+There is no straightforward way to define a fixed-\/size subvector of a dynamic vector, because the stride of the dynamic vector is not known in compilation time. A way to do it is\-:
 \end{DoxyNote}
-\hyperlink{classvct_fixed_size_const_vector_ref}{vct\+Fixed\+Size\+Const\+Vector\+Ref}$<$double, 3 /( add stride here if necessary )/$>$ first\+Three(v, 0); \hyperlink{classvct_fixed_size_const_vector_ref}{vct\+Fixed\+Size\+Const\+Vector\+Ref}$<$double, 3 /( add stride here if necessary )/$>$ last\+Three(v, 6); 
+\hyperlink{classvct_fixed_size_const_vector_ref}{vct\-Fixed\-Size\-Const\-Vector\-Ref}$<$double, 3 /( add stride here if necessary )/$>$ first\-Three(v, 0); \hyperlink{classvct_fixed_size_const_vector_ref}{vct\-Fixed\-Size\-Const\-Vector\-Ref}$<$double, 3 /( add stride here if necessary )/$>$ last\-Three(v, 6); 
 
 \subsection{Member Typedef Documentation}
-\hypertarget{classvct_dynamic_const_vector_base_1_1_const_subvector_adbf4a3fe950a5909deb939cffbb7d9a5}{}\index{vct\+Dynamic\+Const\+Vector\+Base\+::\+Const\+Subvector@{vct\+Dynamic\+Const\+Vector\+Base\+::\+Const\+Subvector}!Type@{Type}}
-\index{Type@{Type}!vct\+Dynamic\+Const\+Vector\+Base\+::\+Const\+Subvector@{vct\+Dynamic\+Const\+Vector\+Base\+::\+Const\+Subvector}}
-\subsubsection[{Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+vector\+Owner\+Type, typename \+\_\+element\+Type$>$ typedef {\bf vct\+Dynamic\+Const\+Vector\+Ref}$<$value\+\_\+type$>$ {\bf vct\+Dynamic\+Const\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type, \+\_\+element\+Type $>$\+::{\bf Const\+Subvector\+::\+Type}}\label{classvct_dynamic_const_vector_base_1_1_const_subvector_adbf4a3fe950a5909deb939cffbb7d9a5}
+\hypertarget{classvct_dynamic_const_vector_base_1_1_const_subvector_adbf4a3fe950a5909deb939cffbb7d9a5}{\index{vct\-Dynamic\-Const\-Vector\-Base\-::\-Const\-Subvector@{vct\-Dynamic\-Const\-Vector\-Base\-::\-Const\-Subvector}!Type@{Type}}
+\index{Type@{Type}!vctDynamicConstVectorBase::ConstSubvector@{vct\-Dynamic\-Const\-Vector\-Base\-::\-Const\-Subvector}}
+\subsubsection[{Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-vector\-Owner\-Type, typename \-\_\-element\-Type$>$ typedef {\bf vct\-Dynamic\-Const\-Vector\-Ref}$<$value\-\_\-type$>$ {\bf vct\-Dynamic\-Const\-Vector\-Base}$<$ \-\_\-vector\-Owner\-Type, \-\_\-element\-Type $>$\-::{\bf Const\-Subvector\-::\-Type}}}\label{classvct_dynamic_const_vector_base_1_1_const_subvector_adbf4a3fe950a5909deb939cffbb7d9a5}
 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
 \item 
-/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Vector/\hyperlink{vct_dynamic_const_vector_base_8h}{vct\+Dynamic\+Const\+Vector\+Base.\+h}\end{DoxyCompactItemize}
+/home/adeguet1/catkin\-\_\-ws/src/cisst-\/saw/cisst/cisst\-Vector/\hyperlink{vct_dynamic_const_vector_base_8h}{vct\-Dynamic\-Const\-Vector\-Base.\-h}\end{DoxyCompactItemize}

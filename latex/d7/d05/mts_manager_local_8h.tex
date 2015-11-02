@@ -1,67 +1,66 @@
-\hypertarget{mts_manager_local_8h}{}\section{/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Multi\+Task/mts\+Manager\+Local.h File Reference}
-\label{mts_manager_local_8h}\index{/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Multi\+Task/mts\+Manager\+Local.\+h@{/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Multi\+Task/mts\+Manager\+Local.\+h}}
+\hypertarget{mts_manager_local_8h}{\section{/home/adeguet1/catkin\-\_\-ws/src/cisst-\/saw/cisst/cisst\-Multi\-Task/mts\-Manager\-Local.h File Reference}
+\label{mts_manager_local_8h}\index{/home/adeguet1/catkin\-\_\-ws/src/cisst-\/saw/cisst/cisst\-Multi\-Task/mts\-Manager\-Local.\-h@{/home/adeguet1/catkin\-\_\-ws/src/cisst-\/saw/cisst/cisst\-Multi\-Task/mts\-Manager\-Local.\-h}}
+}
 
 
 Declaration of Local Component Manager
 
-This class defines the local component manager (L\+C\+M) that manages local components and is unique in a process. Since only one instance of L\+C\+M should exist in a process, this class is implemented as singleton. To get an instance of L\+C\+M, therefore, \hyperlink{classmts_manager_local_a025cb3746e1e69b07723066b562ac5cd}{mts\+Manager\+Local\+::\+Get\+Instance()} should be used (instead of constructor).  
+This class defines the local component manager (L\-C\-M) that manages local components and is unique in a process. Since only one instance of L\-C\-M should exist in a process, this class is implemented as singleton. To get an instance of L\-C\-M, therefore, \hyperlink{classmts_manager_local_a025cb3746e1e69b07723066b562ac5cd}{mts\-Manager\-Local\-::\-Get\-Instance()} should be used (instead of constructor).  
 
 
-{\ttfamily \#include $<$cisst\+Common/cmn\+Named\+Map.\+h$>$}\\*
-{\ttfamily \#include $<$cisst\+Common/cmn\+Units.\+h$>$}\\*
-{\ttfamily \#include $<$cisst\+O\+S\+Abstraction/osa\+Thread\+Buddy.\+h$>$}\\*
-{\ttfamily \#include $<$cisst\+O\+S\+Abstraction/osa\+Mutex.\+h$>$}\\*
-{\ttfamily \#include $<$cisst\+O\+S\+Abstraction/osa\+Thread.\+h$>$}\\*
-{\ttfamily \#include $<$cisst\+Multi\+Task/mts\+Forward\+Declarations.\+h$>$}\\*
-{\ttfamily \#include $<$cisst\+Multi\+Task/mts\+Component\+State.\+h$>$}\\*
-{\ttfamily \#include $<$cisst\+Multi\+Task/mts\+Manager\+Local\+Interface.\+h$>$}\\*
-{\ttfamily \#include $<$cisst\+Multi\+Task/mts\+Manager\+Global\+Interface.\+h$>$}\\*
+{\ttfamily \#include $<$cisst\-Common/cmn\-Named\-Map.\-h$>$}\\*
+{\ttfamily \#include $<$cisst\-Common/cmn\-Units.\-h$>$}\\*
+{\ttfamily \#include $<$cisst\-O\-S\-Abstraction/osa\-Thread\-Buddy.\-h$>$}\\*
+{\ttfamily \#include $<$cisst\-O\-S\-Abstraction/osa\-Mutex.\-h$>$}\\*
+{\ttfamily \#include $<$cisst\-O\-S\-Abstraction/osa\-Thread.\-h$>$}\\*
+{\ttfamily \#include $<$cisst\-Multi\-Task/mts\-Forward\-Declarations.\-h$>$}\\*
+{\ttfamily \#include $<$cisst\-Multi\-Task/mts\-Component\-State.\-h$>$}\\*
+{\ttfamily \#include $<$cisst\-Multi\-Task/mts\-Manager\-Local\-Interface.\-h$>$}\\*
+{\ttfamily \#include $<$cisst\-Multi\-Task/mts\-Manager\-Global\-Interface.\-h$>$}\\*
 {\ttfamily \#include $<$stack$>$}\\*
-{\ttfamily \#include $<$cisst\+Multi\+Task/mts\+Export.\+h$>$}\\*
+{\ttfamily \#include $<$cisst\-Multi\-Task/mts\-Export.\-h$>$}\\*
 \subsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
-class \hyperlink{classmts_manager_local}{mts\+Manager\+Local}
+class \hyperlink{classmts_manager_local}{mts\-Manager\-Local}
 \end{DoxyCompactItemize}
 \subsection*{Macros}
 \begin{DoxyCompactItemize}
 \item 
-\#define \hyperlink{mts_manager_local_8h_a3cc1150438dea8d8a77dfa4713b9de4f}{C\+O\+N\+N\+E\+C\+T\+\_\+\+L\+O\+C\+A\+L}(\+\_\+client\+Comp,  \+\_\+req\+Int,  \+\_\+server\+Comp,  \+\_\+prv\+Int)
+\#define \hyperlink{mts_manager_local_8h_a3cc1150438dea8d8a77dfa4713b9de4f}{C\-O\-N\-N\-E\-C\-T\-\_\-\-L\-O\-C\-A\-L}(\-\_\-client\-Comp, \-\_\-req\-Int, \-\_\-server\-Comp, \-\_\-prv\-Int)
 \item 
-\#define \hyperlink{mts_manager_local_8h_ad6e31aade17dd1e82e0db307c80d2c62}{C\+O\+N\+N\+E\+C\+T\+\_\+\+R\+E\+M\+O\+T\+E}(\+\_\+client\+Proc,  \+\_\+client\+Comp,  \+\_\+req\+Int,  \+\_\+server\+Proc,  \+\_\+server\+Comp,  \+\_\+prv\+Int)
+\#define \hyperlink{mts_manager_local_8h_ad6e31aade17dd1e82e0db307c80d2c62}{C\-O\-N\-N\-E\-C\-T\-\_\-\-R\-E\-M\-O\-T\-E}(\-\_\-client\-Proc, \-\_\-client\-Comp, \-\_\-req\-Int, \-\_\-server\-Proc, \-\_\-server\-Comp, \-\_\-prv\-Int)
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
 Declaration of Local Component Manager
 
-This class defines the local component manager (L\+C\+M) that manages local components and is unique in a process. Since only one instance of L\+C\+M should exist in a process, this class is implemented as singleton. To get an instance of L\+C\+M, therefore, \hyperlink{classmts_manager_local_a025cb3746e1e69b07723066b562ac5cd}{mts\+Manager\+Local\+::\+Get\+Instance()} should be used (instead of constructor). 
+This class defines the local component manager (L\-C\-M) that manages local components and is unique in a process. Since only one instance of L\-C\-M should exist in a process, this class is implemented as singleton. To get an instance of L\-C\-M, therefore, \hyperlink{classmts_manager_local_a025cb3746e1e69b07723066b562ac5cd}{mts\-Manager\-Local\-::\-Get\-Instance()} should be used (instead of constructor). The L\-C\-M replaces the previous task manager (mts\-Task\-Manager) which was similar to the L\-C\-M without networking support. Major differences between the two are\-:
 
-The L\+C\+M replaces the previous task manager (mts\+Task\+Manager) which was similar to the L\+C\+M without networking support. Major differences between the two are\+:
+1) The L\-C\-M manages tasks and components as a unified object--component--which is of type \hyperlink{classmts_component}{mts\-Component} and is stored in a single data structure--component map. That is, task map and device map in the previous task manager has been consolidated into the component map.
 
-1) The L\+C\+M manages tasks and components as a unified object--component--which is of type \hyperlink{classmts_component}{mts\+Component} and is stored in a single data structure--component map. That is, task map and device map in the previous task manager has been consolidated into the component map.
+2) While the previous task manager keeps all information about tasks (devices) and connections, the L\-C\-M only keeps information about local components; it does not keep any connection information. All connection information are now managed by the global component manager (G\-C\-M) and the L\-C\-M requests and retrieves such information as needed.
 
-2) While the previous task manager keeps all information about tasks (devices) and connections, the L\+C\+M only keeps information about local components; it does not keep any connection information. All connection information are now managed by the global component manager (G\+C\+M) and the L\+C\+M requests and retrieves such information as needed.
-
-Note that this class implements \hyperlink{classmts_manager_local_interface}{mts\+Manager\+Local\+Interface} class which defines common A\+P\+Is to communicate with the G\+C\+M and is declared as pure virtual. See mts\+Manager\+Proxy\+Server class as another example that implements the interface.
+Note that this class implements \hyperlink{classmts_manager_local_interface}{mts\-Manager\-Local\-Interface} class which defines common A\-P\-Is to communicate with the G\-C\-M and is declared as pure virtual. See mts\-Manager\-Proxy\-Server class as another example that implements the interface.
 
 \begin{DoxyNote}{Note}
-Related classes\+: \hyperlink{classmts_manager_local_interface}{mts\+Manager\+Local\+Interface}, \hyperlink{classmts_manager_global_interface}{mts\+Manager\+Global\+Interface}, \hyperlink{classmts_manager_global}{mts\+Manager\+Global}, mts\+Manager\+Proxy\+Server 
+Related classes\-: \hyperlink{classmts_manager_local_interface}{mts\-Manager\-Local\-Interface}, \hyperlink{classmts_manager_global_interface}{mts\-Manager\-Global\-Interface}, \hyperlink{classmts_manager_global}{mts\-Manager\-Global}, mts\-Manager\-Proxy\-Server 
 \end{DoxyNote}
 
 
 \subsection{Macro Definition Documentation}
-\hypertarget{mts_manager_local_8h_a3cc1150438dea8d8a77dfa4713b9de4f}{}\index{mts\+Manager\+Local.\+h@{mts\+Manager\+Local.\+h}!C\+O\+N\+N\+E\+C\+T\+\_\+\+L\+O\+C\+A\+L@{C\+O\+N\+N\+E\+C\+T\+\_\+\+L\+O\+C\+A\+L}}
-\index{C\+O\+N\+N\+E\+C\+T\+\_\+\+L\+O\+C\+A\+L@{C\+O\+N\+N\+E\+C\+T\+\_\+\+L\+O\+C\+A\+L}!mts\+Manager\+Local.\+h@{mts\+Manager\+Local.\+h}}
-\subsubsection[{C\+O\+N\+N\+E\+C\+T\+\_\+\+L\+O\+C\+A\+L}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+O\+N\+N\+E\+C\+T\+\_\+\+L\+O\+C\+A\+L(
+\hypertarget{mts_manager_local_8h_a3cc1150438dea8d8a77dfa4713b9de4f}{\index{mts\-Manager\-Local.\-h@{mts\-Manager\-Local.\-h}!C\-O\-N\-N\-E\-C\-T\-\_\-\-L\-O\-C\-A\-L@{C\-O\-N\-N\-E\-C\-T\-\_\-\-L\-O\-C\-A\-L}}
+\index{C\-O\-N\-N\-E\-C\-T\-\_\-\-L\-O\-C\-A\-L@{C\-O\-N\-N\-E\-C\-T\-\_\-\-L\-O\-C\-A\-L}!mtsManagerLocal.h@{mts\-Manager\-Local.\-h}}
+\subsubsection[{C\-O\-N\-N\-E\-C\-T\-\_\-\-L\-O\-C\-A\-L}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-O\-N\-N\-E\-C\-T\-\_\-\-L\-O\-C\-A\-L(
 \begin{DoxyParamCaption}
-\item[{}]{\+\_\+client\+Comp, }
-\item[{}]{\+\_\+req\+Int, }
-\item[{}]{\+\_\+server\+Comp, }
-\item[{}]{\+\_\+prv\+Int}
+\item[{}]{\-\_\-client\-Comp, }
+\item[{}]{\-\_\-req\-Int, }
+\item[{}]{\-\_\-server\-Comp, }
+\item[{}]{\-\_\-prv\-Int}
 \end{DoxyParamCaption}
-)}\label{mts_manager_local_8h_a3cc1150438dea8d8a77dfa4713b9de4f}
-{\bfseries Value\+:}
+)}}\label{mts_manager_local_8h_a3cc1150438dea8d8a77dfa4713b9de4f}
+{\bfseries Value\-:}
 \begin{DoxyCode}
 \textcolor{keywordflow}{if} (!\hyperlink{classmts_manager_local_a025cb3746e1e69b07723066b562ac5cd}{mtsManagerLocal::GetInstance}()->Connect(\_clientComp, \_reqInt, \_serverComp,
        \_prvInt)) \{\hyperlink{cmn_logger_8h_ad6bf31d204ebdfa9d018523c32ec5448}{\(\backslash\)}
@@ -71,19 +70,19 @@ Related classes\+: \hyperlink{classmts_manager_local_interface}{mts\+Manager\+Lo
         exit(1);\(\backslash\)
     \}
 \end{DoxyCode}
-\hypertarget{mts_manager_local_8h_ad6e31aade17dd1e82e0db307c80d2c62}{}\index{mts\+Manager\+Local.\+h@{mts\+Manager\+Local.\+h}!C\+O\+N\+N\+E\+C\+T\+\_\+\+R\+E\+M\+O\+T\+E@{C\+O\+N\+N\+E\+C\+T\+\_\+\+R\+E\+M\+O\+T\+E}}
-\index{C\+O\+N\+N\+E\+C\+T\+\_\+\+R\+E\+M\+O\+T\+E@{C\+O\+N\+N\+E\+C\+T\+\_\+\+R\+E\+M\+O\+T\+E}!mts\+Manager\+Local.\+h@{mts\+Manager\+Local.\+h}}
-\subsubsection[{C\+O\+N\+N\+E\+C\+T\+\_\+\+R\+E\+M\+O\+T\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+O\+N\+N\+E\+C\+T\+\_\+\+R\+E\+M\+O\+T\+E(
+\hypertarget{mts_manager_local_8h_ad6e31aade17dd1e82e0db307c80d2c62}{\index{mts\-Manager\-Local.\-h@{mts\-Manager\-Local.\-h}!C\-O\-N\-N\-E\-C\-T\-\_\-\-R\-E\-M\-O\-T\-E@{C\-O\-N\-N\-E\-C\-T\-\_\-\-R\-E\-M\-O\-T\-E}}
+\index{C\-O\-N\-N\-E\-C\-T\-\_\-\-R\-E\-M\-O\-T\-E@{C\-O\-N\-N\-E\-C\-T\-\_\-\-R\-E\-M\-O\-T\-E}!mtsManagerLocal.h@{mts\-Manager\-Local.\-h}}
+\subsubsection[{C\-O\-N\-N\-E\-C\-T\-\_\-\-R\-E\-M\-O\-T\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-O\-N\-N\-E\-C\-T\-\_\-\-R\-E\-M\-O\-T\-E(
 \begin{DoxyParamCaption}
-\item[{}]{\+\_\+client\+Proc, }
-\item[{}]{\+\_\+client\+Comp, }
-\item[{}]{\+\_\+req\+Int, }
-\item[{}]{\+\_\+server\+Proc, }
-\item[{}]{\+\_\+server\+Comp, }
-\item[{}]{\+\_\+prv\+Int}
+\item[{}]{\-\_\-client\-Proc, }
+\item[{}]{\-\_\-client\-Comp, }
+\item[{}]{\-\_\-req\-Int, }
+\item[{}]{\-\_\-server\-Proc, }
+\item[{}]{\-\_\-server\-Comp, }
+\item[{}]{\-\_\-prv\-Int}
 \end{DoxyParamCaption}
-)}\label{mts_manager_local_8h_ad6e31aade17dd1e82e0db307c80d2c62}
-{\bfseries Value\+:}
+)}}\label{mts_manager_local_8h_ad6e31aade17dd1e82e0db307c80d2c62}
+{\bfseries Value\-:}
 \begin{DoxyCode}
 \textcolor{keywordflow}{if} (!\hyperlink{classmts_manager_local_a025cb3746e1e69b07723066b562ac5cd}{mtsManagerLocal::GetInstance}()->Connect(\_clientProc, \_clientComp, \_reqInt,
        \_serverProc, \_serverComp, \_prvInt)) \{\hyperlink{cmn_logger_8h_ad6bf31d204ebdfa9d018523c32ec5448}{\(\backslash\)}

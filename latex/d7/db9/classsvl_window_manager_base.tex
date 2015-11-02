@@ -1,284 +1,285 @@
-\hypertarget{classsvl_window_manager_base}{}\section{svl\+Window\+Manager\+Base Class Reference}
-\label{classsvl_window_manager_base}\index{svl\+Window\+Manager\+Base@{svl\+Window\+Manager\+Base}}
+\hypertarget{classsvl_window_manager_base}{\section{svl\-Window\-Manager\-Base Class Reference}
+\label{classsvl_window_manager_base}\index{svl\-Window\-Manager\-Base@{svl\-Window\-Manager\-Base}}
+}
 
 
-{\ttfamily \#include $<$svl\+Window\+Manager\+Base.\+h$>$}
+{\ttfamily \#include $<$svl\-Window\-Manager\-Base.\-h$>$}
 
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classsvl_window_manager_base_a5087b4d9af2db708f81be376cf46b06b}{svl\+Window\+Manager\+Base} ()
+\hyperlink{classsvl_window_manager_base_a5087b4d9af2db708f81be376cf46b06b}{svl\-Window\-Manager\-Base} ()
 \item 
-\hyperlink{classsvl_window_manager_base_add84ebed327a1b2faa7e6a5d73f17d73}{svl\+Window\+Manager\+Base} (unsigned int numofwins)
+\hyperlink{classsvl_window_manager_base_add84ebed327a1b2faa7e6a5d73f17d73}{svl\-Window\-Manager\-Base} (unsigned int numofwins)
 \item 
-virtual \hyperlink{classsvl_window_manager_base_ac1c83fd91d1b3367303d39d886c6f885}{$\sim$svl\+Window\+Manager\+Base} ()
+virtual \hyperlink{classsvl_window_manager_base_ac1c83fd91d1b3367303d39d886c6f885}{$\sim$svl\-Window\-Manager\-Base} ()
 \item 
-void \hyperlink{classsvl_window_manager_base_a307227f63a55fd315fe759f3f1084740}{Set\+Number\+Of\+Windows} (unsigned int numofwins)
+void \hyperlink{classsvl_window_manager_base_a307227f63a55fd315fe759f3f1084740}{Set\-Number\-Of\-Windows} (unsigned int numofwins)
 \item 
-void \hyperlink{classsvl_window_manager_base_aeb586c4a222cd0818febff972f9be57b}{Set\+Event\+Handler} (\hyperlink{classsvl_window_event_handler_base}{svl\+Window\+Event\+Handler\+Base} $\ast$handler)
+void \hyperlink{classsvl_window_manager_base_aeb586c4a222cd0818febff972f9be57b}{Set\-Event\-Handler} (\hyperlink{classsvl_window_event_handler_base}{svl\-Window\-Event\-Handler\-Base} $\ast$handler)
 \item 
-void \hyperlink{classsvl_window_manager_base_a678c57c6ff692a26ef40dd8368cb9f2b}{Set\+Title\+Text} (const std\+::string title)
+void \hyperlink{classsvl_window_manager_base_a678c57c6ff692a26ef40dd8368cb9f2b}{Set\-Title\-Text} (const std\-::string title)
 \item 
-void \hyperlink{classsvl_window_manager_base_a5b7747b205fa459716743386bf4a5f2d}{Set\+Timestamp} (double timestamp)
+void \hyperlink{classsvl_window_manager_base_a5b7747b205fa459716743386bf4a5f2d}{Set\-Timestamp} (double timestamp)
 \item 
-int \hyperlink{classsvl_window_manager_base_ae03da24470c7298a5d8cec2877aed30c}{Set\+Client\+Size} (unsigned int width, unsigned int height, unsigned int winid)
+int \hyperlink{classsvl_window_manager_base_ae03da24470c7298a5d8cec2877aed30c}{Set\-Client\-Size} (unsigned int width, unsigned int height, unsigned int winid)
 \item 
-int \hyperlink{classsvl_window_manager_base_a2060e663694a740606e9c7ced951bf25}{Set\+Window\+Position} (int x, int y, unsigned int winid)
+int \hyperlink{classsvl_window_manager_base_a2060e663694a740606e9c7ced951bf25}{Set\-Window\-Position} (int x, int y, unsigned int winid)
 \item 
-void \hyperlink{classsvl_window_manager_base_aaf4f945998c257510fbc77c1d80f1648}{Reset\+Init\+Event} ()
+void \hyperlink{classsvl_window_manager_base_aaf4f945998c257510fbc77c1d80f1648}{Reset\-Init\-Event} ()
 \item 
-int \hyperlink{classsvl_window_manager_base_a2e6ea04ac4c4403c6f442ed80b308267}{Wait\+For\+Init\+Event} ()
+int \hyperlink{classsvl_window_manager_base_a2e6ea04ac4c4403c6f442ed80b308267}{Wait\-For\-Init\-Event} ()
 \item 
-virtual int \hyperlink{classsvl_window_manager_base_a74b90c01c71feb43abc912d0f85b24f3}{Do\+Modal} (bool show, bool fullscreen)=0
+virtual int \hyperlink{classsvl_window_manager_base_a74b90c01c71feb43abc912d0f85b24f3}{Do\-Modal} (bool show, bool fullscreen)=0
 \item 
 virtual void \hyperlink{classsvl_window_manager_base_adb4ef704308882625b8a9bd5b978f408}{Show} (bool show, int winid)=0
 \item 
-virtual void \hyperlink{classsvl_window_manager_base_afcb9c9ab6b483e25e6e4a6be44cee53a}{Lock\+Buffers} ()
+virtual void \hyperlink{classsvl_window_manager_base_afcb9c9ab6b483e25e6e4a6be44cee53a}{Lock\-Buffers} ()
 \item 
-virtual void \hyperlink{classsvl_window_manager_base_a3de36fded4442ddf69cf2c9e8b2a5cfe}{Unlock\+Buffers} ()
+virtual void \hyperlink{classsvl_window_manager_base_a3de36fded4442ddf69cf2c9e8b2a5cfe}{Unlock\-Buffers} ()
 \item 
-virtual void \hyperlink{classsvl_window_manager_base_a7c9f61a0101acb234df5f8f192bd62af}{Set\+Image\+Buffer} (unsigned char $\ast$buffer, unsigned int buffersize, unsigned int winid)=0
+virtual void \hyperlink{classsvl_window_manager_base_a7c9f61a0101acb234df5f8f192bd62af}{Set\-Image\-Buffer} (unsigned char $\ast$buffer, unsigned int buffersize, unsigned int winid)=0
 \item 
-virtual void \hyperlink{classsvl_window_manager_base_a5c285307a85fe67e084487041c82182b}{Draw\+Images} ()=0
+virtual void \hyperlink{classsvl_window_manager_base_a5c285307a85fe67e084487041c82182b}{Draw\-Images} ()=0
 \item 
-virtual void \hyperlink{classsvl_window_manager_base_ae21e9e1b5af8e735e711422f478d335f}{Destroy\+Thread\+Safe} ()=0
+virtual void \hyperlink{classsvl_window_manager_base_ae21e9e1b5af8e735e711422f478d335f}{Destroy\-Thread\-Safe} ()=0
 \end{DoxyCompactItemize}
 \subsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \hyperlink{classsvl_window_manager_base_a1b9065121a86c241cf9623822e9dc4bd}{On\+New\+Frame} (unsigned int frameid)
+void \hyperlink{classsvl_window_manager_base_a1b9065121a86c241cf9623822e9dc4bd}{On\-New\-Frame} (unsigned int frameid)
 \item 
-void \hyperlink{classsvl_window_manager_base_a097a2e68082683d3fb50eeb7e768b2f9}{On\+User\+Event} (unsigned int winid, bool ascii, unsigned int eventid)
+void \hyperlink{classsvl_window_manager_base_a097a2e68082683d3fb50eeb7e768b2f9}{On\-User\-Event} (unsigned int winid, bool ascii, unsigned int eventid)
 \item 
-void \hyperlink{classsvl_window_manager_base_a08423e6af5c56905c370f9d2949a6857}{Get\+Mouse\+Pos} (int \&x, int \&y)
+void \hyperlink{classsvl_window_manager_base_a08423e6af5c56905c370f9d2949a6857}{Get\-Mouse\-Pos} (int \&x, int \&y)
 \item 
-void \hyperlink{classsvl_window_manager_base_a73744dbd826d9b5edcb647bfd092d9a9}{Set\+Mouse\+Pos} (int x, int y)
+void \hyperlink{classsvl_window_manager_base_a73744dbd826d9b5edcb647bfd092d9a9}{Set\-Mouse\-Pos} (int x, int y)
 \end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
-std\+::string \hyperlink{classsvl_window_manager_base_a2af9d334546d02350f18778ad285bfc9}{Title}
+std\-::string \hyperlink{classsvl_window_manager_base_a2af9d334546d02350f18778ad285bfc9}{Title}
 \item 
 double \hyperlink{classsvl_window_manager_base_ab871436fe2017b584121cd703c6f5bed}{Timestamp}
 \item 
-unsigned int \hyperlink{classsvl_window_manager_base_aed1c8f66b156741ed6c14a7b6983cdc6}{Num\+Of\+Wins}
+unsigned int \hyperlink{classsvl_window_manager_base_aed1c8f66b156741ed6c14a7b6983cdc6}{Num\-Of\-Wins}
 \item 
 unsigned int $\ast$ \hyperlink{classsvl_window_manager_base_ab118e08eda56a7e8a3ecccf6e9fc68b7}{Width}
 \item 
 unsigned int $\ast$ \hyperlink{classsvl_window_manager_base_a69ad522db1adb6e2c36c774babca9349}{Height}
 \item 
-int $\ast$ \hyperlink{classsvl_window_manager_base_a51a3b510c6dbb08a8a400e0d539b864b}{Pos\+X}
+int $\ast$ \hyperlink{classsvl_window_manager_base_a51a3b510c6dbb08a8a400e0d539b864b}{Pos\-X}
 \item 
-int $\ast$ \hyperlink{classsvl_window_manager_base_aa256591f8f33a8ae99fac5cb296d8cb3}{Pos\+Y}
+int $\ast$ \hyperlink{classsvl_window_manager_base_aa256591f8f33a8ae99fac5cb296d8cb3}{Pos\-Y}
 \item 
-\hyperlink{classsvl_window_event_handler_base}{svl\+Window\+Event\+Handler\+Base} $\ast$ \hyperlink{classsvl_window_manager_base_a05b6711454ec8fc9b970e46bf79b9c67}{Event\+Handler}
+\hyperlink{classsvl_window_event_handler_base}{svl\-Window\-Event\-Handler\-Base} $\ast$ \hyperlink{classsvl_window_manager_base_a05b6711454ec8fc9b970e46bf79b9c67}{Event\-Handler}
 \item 
-\hyperlink{classosa_thread_signal}{osa\+Thread\+Signal} $\ast$ \hyperlink{classsvl_window_manager_base_a6f3f9fd7d3f9ee822d88131257272976}{Init\+Ready\+Signal}
+\hyperlink{classosa_thread_signal}{osa\-Thread\-Signal} $\ast$ \hyperlink{classsvl_window_manager_base_a6f3f9fd7d3f9ee822d88131257272976}{Init\-Ready\-Signal}
 \end{DoxyCompactItemize}
 
 
 \subsection{Constructor \& Destructor Documentation}
-\hypertarget{classsvl_window_manager_base_a5087b4d9af2db708f81be376cf46b06b}{}\index{svl\+Window\+Manager\+Base@{svl\+Window\+Manager\+Base}!svl\+Window\+Manager\+Base@{svl\+Window\+Manager\+Base}}
-\index{svl\+Window\+Manager\+Base@{svl\+Window\+Manager\+Base}!svl\+Window\+Manager\+Base@{svl\+Window\+Manager\+Base}}
-\subsubsection[{svl\+Window\+Manager\+Base}]{\setlength{\rightskip}{0pt plus 5cm}svl\+Window\+Manager\+Base\+::svl\+Window\+Manager\+Base (
+\hypertarget{classsvl_window_manager_base_a5087b4d9af2db708f81be376cf46b06b}{\index{svl\-Window\-Manager\-Base@{svl\-Window\-Manager\-Base}!svl\-Window\-Manager\-Base@{svl\-Window\-Manager\-Base}}
+\index{svl\-Window\-Manager\-Base@{svl\-Window\-Manager\-Base}!svlWindowManagerBase@{svl\-Window\-Manager\-Base}}
+\subsubsection[{svl\-Window\-Manager\-Base}]{\setlength{\rightskip}{0pt plus 5cm}svl\-Window\-Manager\-Base\-::svl\-Window\-Manager\-Base (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}\label{classsvl_window_manager_base_a5087b4d9af2db708f81be376cf46b06b}
-\hypertarget{classsvl_window_manager_base_add84ebed327a1b2faa7e6a5d73f17d73}{}\index{svl\+Window\+Manager\+Base@{svl\+Window\+Manager\+Base}!svl\+Window\+Manager\+Base@{svl\+Window\+Manager\+Base}}
-\index{svl\+Window\+Manager\+Base@{svl\+Window\+Manager\+Base}!svl\+Window\+Manager\+Base@{svl\+Window\+Manager\+Base}}
-\subsubsection[{svl\+Window\+Manager\+Base}]{\setlength{\rightskip}{0pt plus 5cm}svl\+Window\+Manager\+Base\+::svl\+Window\+Manager\+Base (
+)}}\label{classsvl_window_manager_base_a5087b4d9af2db708f81be376cf46b06b}
+\hypertarget{classsvl_window_manager_base_add84ebed327a1b2faa7e6a5d73f17d73}{\index{svl\-Window\-Manager\-Base@{svl\-Window\-Manager\-Base}!svl\-Window\-Manager\-Base@{svl\-Window\-Manager\-Base}}
+\index{svl\-Window\-Manager\-Base@{svl\-Window\-Manager\-Base}!svlWindowManagerBase@{svl\-Window\-Manager\-Base}}
+\subsubsection[{svl\-Window\-Manager\-Base}]{\setlength{\rightskip}{0pt plus 5cm}svl\-Window\-Manager\-Base\-::svl\-Window\-Manager\-Base (
 \begin{DoxyParamCaption}
 \item[{unsigned int}]{numofwins}
 \end{DoxyParamCaption}
-)}\label{classsvl_window_manager_base_add84ebed327a1b2faa7e6a5d73f17d73}
-\hypertarget{classsvl_window_manager_base_ac1c83fd91d1b3367303d39d886c6f885}{}\index{svl\+Window\+Manager\+Base@{svl\+Window\+Manager\+Base}!````~svl\+Window\+Manager\+Base@{$\sim$svl\+Window\+Manager\+Base}}
-\index{````~svl\+Window\+Manager\+Base@{$\sim$svl\+Window\+Manager\+Base}!svl\+Window\+Manager\+Base@{svl\+Window\+Manager\+Base}}
-\subsubsection[{$\sim$svl\+Window\+Manager\+Base}]{\setlength{\rightskip}{0pt plus 5cm}virtual svl\+Window\+Manager\+Base\+::$\sim$svl\+Window\+Manager\+Base (
+)}}\label{classsvl_window_manager_base_add84ebed327a1b2faa7e6a5d73f17d73}
+\hypertarget{classsvl_window_manager_base_ac1c83fd91d1b3367303d39d886c6f885}{\index{svl\-Window\-Manager\-Base@{svl\-Window\-Manager\-Base}!$\sim$svl\-Window\-Manager\-Base@{$\sim$svl\-Window\-Manager\-Base}}
+\index{$\sim$svl\-Window\-Manager\-Base@{$\sim$svl\-Window\-Manager\-Base}!svlWindowManagerBase@{svl\-Window\-Manager\-Base}}
+\subsubsection[{$\sim$svl\-Window\-Manager\-Base}]{\setlength{\rightskip}{0pt plus 5cm}virtual svl\-Window\-Manager\-Base\-::$\sim$svl\-Window\-Manager\-Base (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classsvl_window_manager_base_ac1c83fd91d1b3367303d39d886c6f885}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classsvl_window_manager_base_ac1c83fd91d1b3367303d39d886c6f885}
 
 
 \subsection{Member Function Documentation}
-\hypertarget{classsvl_window_manager_base_ae21e9e1b5af8e735e711422f478d335f}{}\index{svl\+Window\+Manager\+Base@{svl\+Window\+Manager\+Base}!Destroy\+Thread\+Safe@{Destroy\+Thread\+Safe}}
-\index{Destroy\+Thread\+Safe@{Destroy\+Thread\+Safe}!svl\+Window\+Manager\+Base@{svl\+Window\+Manager\+Base}}
-\subsubsection[{Destroy\+Thread\+Safe}]{\setlength{\rightskip}{0pt plus 5cm}virtual void svl\+Window\+Manager\+Base\+::\+Destroy\+Thread\+Safe (
+\hypertarget{classsvl_window_manager_base_ae21e9e1b5af8e735e711422f478d335f}{\index{svl\-Window\-Manager\-Base@{svl\-Window\-Manager\-Base}!Destroy\-Thread\-Safe@{Destroy\-Thread\-Safe}}
+\index{Destroy\-Thread\-Safe@{Destroy\-Thread\-Safe}!svlWindowManagerBase@{svl\-Window\-Manager\-Base}}
+\subsubsection[{Destroy\-Thread\-Safe}]{\setlength{\rightskip}{0pt plus 5cm}virtual void svl\-Window\-Manager\-Base\-::\-Destroy\-Thread\-Safe (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classsvl_window_manager_base_ae21e9e1b5af8e735e711422f478d335f}
-\hypertarget{classsvl_window_manager_base_a74b90c01c71feb43abc912d0f85b24f3}{}\index{svl\+Window\+Manager\+Base@{svl\+Window\+Manager\+Base}!Do\+Modal@{Do\+Modal}}
-\index{Do\+Modal@{Do\+Modal}!svl\+Window\+Manager\+Base@{svl\+Window\+Manager\+Base}}
-\subsubsection[{Do\+Modal}]{\setlength{\rightskip}{0pt plus 5cm}virtual int svl\+Window\+Manager\+Base\+::\+Do\+Modal (
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classsvl_window_manager_base_ae21e9e1b5af8e735e711422f478d335f}
+\hypertarget{classsvl_window_manager_base_a74b90c01c71feb43abc912d0f85b24f3}{\index{svl\-Window\-Manager\-Base@{svl\-Window\-Manager\-Base}!Do\-Modal@{Do\-Modal}}
+\index{Do\-Modal@{Do\-Modal}!svlWindowManagerBase@{svl\-Window\-Manager\-Base}}
+\subsubsection[{Do\-Modal}]{\setlength{\rightskip}{0pt plus 5cm}virtual int svl\-Window\-Manager\-Base\-::\-Do\-Modal (
 \begin{DoxyParamCaption}
 \item[{bool}]{show, }
 \item[{bool}]{fullscreen}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classsvl_window_manager_base_a74b90c01c71feb43abc912d0f85b24f3}
-\hypertarget{classsvl_window_manager_base_a5c285307a85fe67e084487041c82182b}{}\index{svl\+Window\+Manager\+Base@{svl\+Window\+Manager\+Base}!Draw\+Images@{Draw\+Images}}
-\index{Draw\+Images@{Draw\+Images}!svl\+Window\+Manager\+Base@{svl\+Window\+Manager\+Base}}
-\subsubsection[{Draw\+Images}]{\setlength{\rightskip}{0pt plus 5cm}virtual void svl\+Window\+Manager\+Base\+::\+Draw\+Images (
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classsvl_window_manager_base_a74b90c01c71feb43abc912d0f85b24f3}
+\hypertarget{classsvl_window_manager_base_a5c285307a85fe67e084487041c82182b}{\index{svl\-Window\-Manager\-Base@{svl\-Window\-Manager\-Base}!Draw\-Images@{Draw\-Images}}
+\index{Draw\-Images@{Draw\-Images}!svlWindowManagerBase@{svl\-Window\-Manager\-Base}}
+\subsubsection[{Draw\-Images}]{\setlength{\rightskip}{0pt plus 5cm}virtual void svl\-Window\-Manager\-Base\-::\-Draw\-Images (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classsvl_window_manager_base_a5c285307a85fe67e084487041c82182b}
-\hypertarget{classsvl_window_manager_base_a08423e6af5c56905c370f9d2949a6857}{}\index{svl\+Window\+Manager\+Base@{svl\+Window\+Manager\+Base}!Get\+Mouse\+Pos@{Get\+Mouse\+Pos}}
-\index{Get\+Mouse\+Pos@{Get\+Mouse\+Pos}!svl\+Window\+Manager\+Base@{svl\+Window\+Manager\+Base}}
-\subsubsection[{Get\+Mouse\+Pos}]{\setlength{\rightskip}{0pt plus 5cm}void svl\+Window\+Manager\+Base\+::\+Get\+Mouse\+Pos (
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classsvl_window_manager_base_a5c285307a85fe67e084487041c82182b}
+\hypertarget{classsvl_window_manager_base_a08423e6af5c56905c370f9d2949a6857}{\index{svl\-Window\-Manager\-Base@{svl\-Window\-Manager\-Base}!Get\-Mouse\-Pos@{Get\-Mouse\-Pos}}
+\index{Get\-Mouse\-Pos@{Get\-Mouse\-Pos}!svlWindowManagerBase@{svl\-Window\-Manager\-Base}}
+\subsubsection[{Get\-Mouse\-Pos}]{\setlength{\rightskip}{0pt plus 5cm}void svl\-Window\-Manager\-Base\-::\-Get\-Mouse\-Pos (
 \begin{DoxyParamCaption}
 \item[{int \&}]{x, }
 \item[{int \&}]{y}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [protected]}}\label{classsvl_window_manager_base_a08423e6af5c56905c370f9d2949a6857}
-\hypertarget{classsvl_window_manager_base_afcb9c9ab6b483e25e6e4a6be44cee53a}{}\index{svl\+Window\+Manager\+Base@{svl\+Window\+Manager\+Base}!Lock\+Buffers@{Lock\+Buffers}}
-\index{Lock\+Buffers@{Lock\+Buffers}!svl\+Window\+Manager\+Base@{svl\+Window\+Manager\+Base}}
-\subsubsection[{Lock\+Buffers}]{\setlength{\rightskip}{0pt plus 5cm}virtual void svl\+Window\+Manager\+Base\+::\+Lock\+Buffers (
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classsvl_window_manager_base_a08423e6af5c56905c370f9d2949a6857}
+\hypertarget{classsvl_window_manager_base_afcb9c9ab6b483e25e6e4a6be44cee53a}{\index{svl\-Window\-Manager\-Base@{svl\-Window\-Manager\-Base}!Lock\-Buffers@{Lock\-Buffers}}
+\index{Lock\-Buffers@{Lock\-Buffers}!svlWindowManagerBase@{svl\-Window\-Manager\-Base}}
+\subsubsection[{Lock\-Buffers}]{\setlength{\rightskip}{0pt plus 5cm}virtual void svl\-Window\-Manager\-Base\-::\-Lock\-Buffers (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classsvl_window_manager_base_afcb9c9ab6b483e25e6e4a6be44cee53a}
-\hypertarget{classsvl_window_manager_base_a1b9065121a86c241cf9623822e9dc4bd}{}\index{svl\+Window\+Manager\+Base@{svl\+Window\+Manager\+Base}!On\+New\+Frame@{On\+New\+Frame}}
-\index{On\+New\+Frame@{On\+New\+Frame}!svl\+Window\+Manager\+Base@{svl\+Window\+Manager\+Base}}
-\subsubsection[{On\+New\+Frame}]{\setlength{\rightskip}{0pt plus 5cm}void svl\+Window\+Manager\+Base\+::\+On\+New\+Frame (
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classsvl_window_manager_base_afcb9c9ab6b483e25e6e4a6be44cee53a}
+\hypertarget{classsvl_window_manager_base_a1b9065121a86c241cf9623822e9dc4bd}{\index{svl\-Window\-Manager\-Base@{svl\-Window\-Manager\-Base}!On\-New\-Frame@{On\-New\-Frame}}
+\index{On\-New\-Frame@{On\-New\-Frame}!svlWindowManagerBase@{svl\-Window\-Manager\-Base}}
+\subsubsection[{On\-New\-Frame}]{\setlength{\rightskip}{0pt plus 5cm}void svl\-Window\-Manager\-Base\-::\-On\-New\-Frame (
 \begin{DoxyParamCaption}
 \item[{unsigned int}]{frameid}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [protected]}}\label{classsvl_window_manager_base_a1b9065121a86c241cf9623822e9dc4bd}
-\hypertarget{classsvl_window_manager_base_a097a2e68082683d3fb50eeb7e768b2f9}{}\index{svl\+Window\+Manager\+Base@{svl\+Window\+Manager\+Base}!On\+User\+Event@{On\+User\+Event}}
-\index{On\+User\+Event@{On\+User\+Event}!svl\+Window\+Manager\+Base@{svl\+Window\+Manager\+Base}}
-\subsubsection[{On\+User\+Event}]{\setlength{\rightskip}{0pt plus 5cm}void svl\+Window\+Manager\+Base\+::\+On\+User\+Event (
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classsvl_window_manager_base_a1b9065121a86c241cf9623822e9dc4bd}
+\hypertarget{classsvl_window_manager_base_a097a2e68082683d3fb50eeb7e768b2f9}{\index{svl\-Window\-Manager\-Base@{svl\-Window\-Manager\-Base}!On\-User\-Event@{On\-User\-Event}}
+\index{On\-User\-Event@{On\-User\-Event}!svlWindowManagerBase@{svl\-Window\-Manager\-Base}}
+\subsubsection[{On\-User\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void svl\-Window\-Manager\-Base\-::\-On\-User\-Event (
 \begin{DoxyParamCaption}
 \item[{unsigned int}]{winid, }
 \item[{bool}]{ascii, }
 \item[{unsigned int}]{eventid}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [protected]}}\label{classsvl_window_manager_base_a097a2e68082683d3fb50eeb7e768b2f9}
-\hypertarget{classsvl_window_manager_base_aaf4f945998c257510fbc77c1d80f1648}{}\index{svl\+Window\+Manager\+Base@{svl\+Window\+Manager\+Base}!Reset\+Init\+Event@{Reset\+Init\+Event}}
-\index{Reset\+Init\+Event@{Reset\+Init\+Event}!svl\+Window\+Manager\+Base@{svl\+Window\+Manager\+Base}}
-\subsubsection[{Reset\+Init\+Event}]{\setlength{\rightskip}{0pt plus 5cm}void svl\+Window\+Manager\+Base\+::\+Reset\+Init\+Event (
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classsvl_window_manager_base_a097a2e68082683d3fb50eeb7e768b2f9}
+\hypertarget{classsvl_window_manager_base_aaf4f945998c257510fbc77c1d80f1648}{\index{svl\-Window\-Manager\-Base@{svl\-Window\-Manager\-Base}!Reset\-Init\-Event@{Reset\-Init\-Event}}
+\index{Reset\-Init\-Event@{Reset\-Init\-Event}!svlWindowManagerBase@{svl\-Window\-Manager\-Base}}
+\subsubsection[{Reset\-Init\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void svl\-Window\-Manager\-Base\-::\-Reset\-Init\-Event (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}\label{classsvl_window_manager_base_aaf4f945998c257510fbc77c1d80f1648}
-\hypertarget{classsvl_window_manager_base_ae03da24470c7298a5d8cec2877aed30c}{}\index{svl\+Window\+Manager\+Base@{svl\+Window\+Manager\+Base}!Set\+Client\+Size@{Set\+Client\+Size}}
-\index{Set\+Client\+Size@{Set\+Client\+Size}!svl\+Window\+Manager\+Base@{svl\+Window\+Manager\+Base}}
-\subsubsection[{Set\+Client\+Size}]{\setlength{\rightskip}{0pt plus 5cm}int svl\+Window\+Manager\+Base\+::\+Set\+Client\+Size (
+)}}\label{classsvl_window_manager_base_aaf4f945998c257510fbc77c1d80f1648}
+\hypertarget{classsvl_window_manager_base_ae03da24470c7298a5d8cec2877aed30c}{\index{svl\-Window\-Manager\-Base@{svl\-Window\-Manager\-Base}!Set\-Client\-Size@{Set\-Client\-Size}}
+\index{Set\-Client\-Size@{Set\-Client\-Size}!svlWindowManagerBase@{svl\-Window\-Manager\-Base}}
+\subsubsection[{Set\-Client\-Size}]{\setlength{\rightskip}{0pt plus 5cm}int svl\-Window\-Manager\-Base\-::\-Set\-Client\-Size (
 \begin{DoxyParamCaption}
 \item[{unsigned int}]{width, }
 \item[{unsigned int}]{height, }
 \item[{unsigned int}]{winid}
 \end{DoxyParamCaption}
-)}\label{classsvl_window_manager_base_ae03da24470c7298a5d8cec2877aed30c}
-\hypertarget{classsvl_window_manager_base_aeb586c4a222cd0818febff972f9be57b}{}\index{svl\+Window\+Manager\+Base@{svl\+Window\+Manager\+Base}!Set\+Event\+Handler@{Set\+Event\+Handler}}
-\index{Set\+Event\+Handler@{Set\+Event\+Handler}!svl\+Window\+Manager\+Base@{svl\+Window\+Manager\+Base}}
-\subsubsection[{Set\+Event\+Handler}]{\setlength{\rightskip}{0pt plus 5cm}void svl\+Window\+Manager\+Base\+::\+Set\+Event\+Handler (
+)}}\label{classsvl_window_manager_base_ae03da24470c7298a5d8cec2877aed30c}
+\hypertarget{classsvl_window_manager_base_aeb586c4a222cd0818febff972f9be57b}{\index{svl\-Window\-Manager\-Base@{svl\-Window\-Manager\-Base}!Set\-Event\-Handler@{Set\-Event\-Handler}}
+\index{Set\-Event\-Handler@{Set\-Event\-Handler}!svlWindowManagerBase@{svl\-Window\-Manager\-Base}}
+\subsubsection[{Set\-Event\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}void svl\-Window\-Manager\-Base\-::\-Set\-Event\-Handler (
 \begin{DoxyParamCaption}
-\item[{{\bf svl\+Window\+Event\+Handler\+Base} $\ast$}]{handler}
+\item[{{\bf svl\-Window\-Event\-Handler\-Base} $\ast$}]{handler}
 \end{DoxyParamCaption}
-)}\label{classsvl_window_manager_base_aeb586c4a222cd0818febff972f9be57b}
-\hypertarget{classsvl_window_manager_base_a7c9f61a0101acb234df5f8f192bd62af}{}\index{svl\+Window\+Manager\+Base@{svl\+Window\+Manager\+Base}!Set\+Image\+Buffer@{Set\+Image\+Buffer}}
-\index{Set\+Image\+Buffer@{Set\+Image\+Buffer}!svl\+Window\+Manager\+Base@{svl\+Window\+Manager\+Base}}
-\subsubsection[{Set\+Image\+Buffer}]{\setlength{\rightskip}{0pt plus 5cm}virtual void svl\+Window\+Manager\+Base\+::\+Set\+Image\+Buffer (
+)}}\label{classsvl_window_manager_base_aeb586c4a222cd0818febff972f9be57b}
+\hypertarget{classsvl_window_manager_base_a7c9f61a0101acb234df5f8f192bd62af}{\index{svl\-Window\-Manager\-Base@{svl\-Window\-Manager\-Base}!Set\-Image\-Buffer@{Set\-Image\-Buffer}}
+\index{Set\-Image\-Buffer@{Set\-Image\-Buffer}!svlWindowManagerBase@{svl\-Window\-Manager\-Base}}
+\subsubsection[{Set\-Image\-Buffer}]{\setlength{\rightskip}{0pt plus 5cm}virtual void svl\-Window\-Manager\-Base\-::\-Set\-Image\-Buffer (
 \begin{DoxyParamCaption}
 \item[{unsigned char $\ast$}]{buffer, }
 \item[{unsigned int}]{buffersize, }
 \item[{unsigned int}]{winid}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classsvl_window_manager_base_a7c9f61a0101acb234df5f8f192bd62af}
-\hypertarget{classsvl_window_manager_base_a73744dbd826d9b5edcb647bfd092d9a9}{}\index{svl\+Window\+Manager\+Base@{svl\+Window\+Manager\+Base}!Set\+Mouse\+Pos@{Set\+Mouse\+Pos}}
-\index{Set\+Mouse\+Pos@{Set\+Mouse\+Pos}!svl\+Window\+Manager\+Base@{svl\+Window\+Manager\+Base}}
-\subsubsection[{Set\+Mouse\+Pos}]{\setlength{\rightskip}{0pt plus 5cm}void svl\+Window\+Manager\+Base\+::\+Set\+Mouse\+Pos (
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classsvl_window_manager_base_a7c9f61a0101acb234df5f8f192bd62af}
+\hypertarget{classsvl_window_manager_base_a73744dbd826d9b5edcb647bfd092d9a9}{\index{svl\-Window\-Manager\-Base@{svl\-Window\-Manager\-Base}!Set\-Mouse\-Pos@{Set\-Mouse\-Pos}}
+\index{Set\-Mouse\-Pos@{Set\-Mouse\-Pos}!svlWindowManagerBase@{svl\-Window\-Manager\-Base}}
+\subsubsection[{Set\-Mouse\-Pos}]{\setlength{\rightskip}{0pt plus 5cm}void svl\-Window\-Manager\-Base\-::\-Set\-Mouse\-Pos (
 \begin{DoxyParamCaption}
 \item[{int}]{x, }
 \item[{int}]{y}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [protected]}}\label{classsvl_window_manager_base_a73744dbd826d9b5edcb647bfd092d9a9}
-\hypertarget{classsvl_window_manager_base_a307227f63a55fd315fe759f3f1084740}{}\index{svl\+Window\+Manager\+Base@{svl\+Window\+Manager\+Base}!Set\+Number\+Of\+Windows@{Set\+Number\+Of\+Windows}}
-\index{Set\+Number\+Of\+Windows@{Set\+Number\+Of\+Windows}!svl\+Window\+Manager\+Base@{svl\+Window\+Manager\+Base}}
-\subsubsection[{Set\+Number\+Of\+Windows}]{\setlength{\rightskip}{0pt plus 5cm}void svl\+Window\+Manager\+Base\+::\+Set\+Number\+Of\+Windows (
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classsvl_window_manager_base_a73744dbd826d9b5edcb647bfd092d9a9}
+\hypertarget{classsvl_window_manager_base_a307227f63a55fd315fe759f3f1084740}{\index{svl\-Window\-Manager\-Base@{svl\-Window\-Manager\-Base}!Set\-Number\-Of\-Windows@{Set\-Number\-Of\-Windows}}
+\index{Set\-Number\-Of\-Windows@{Set\-Number\-Of\-Windows}!svlWindowManagerBase@{svl\-Window\-Manager\-Base}}
+\subsubsection[{Set\-Number\-Of\-Windows}]{\setlength{\rightskip}{0pt plus 5cm}void svl\-Window\-Manager\-Base\-::\-Set\-Number\-Of\-Windows (
 \begin{DoxyParamCaption}
 \item[{unsigned int}]{numofwins}
 \end{DoxyParamCaption}
-)}\label{classsvl_window_manager_base_a307227f63a55fd315fe759f3f1084740}
-\hypertarget{classsvl_window_manager_base_a5b7747b205fa459716743386bf4a5f2d}{}\index{svl\+Window\+Manager\+Base@{svl\+Window\+Manager\+Base}!Set\+Timestamp@{Set\+Timestamp}}
-\index{Set\+Timestamp@{Set\+Timestamp}!svl\+Window\+Manager\+Base@{svl\+Window\+Manager\+Base}}
-\subsubsection[{Set\+Timestamp}]{\setlength{\rightskip}{0pt plus 5cm}void svl\+Window\+Manager\+Base\+::\+Set\+Timestamp (
+)}}\label{classsvl_window_manager_base_a307227f63a55fd315fe759f3f1084740}
+\hypertarget{classsvl_window_manager_base_a5b7747b205fa459716743386bf4a5f2d}{\index{svl\-Window\-Manager\-Base@{svl\-Window\-Manager\-Base}!Set\-Timestamp@{Set\-Timestamp}}
+\index{Set\-Timestamp@{Set\-Timestamp}!svlWindowManagerBase@{svl\-Window\-Manager\-Base}}
+\subsubsection[{Set\-Timestamp}]{\setlength{\rightskip}{0pt plus 5cm}void svl\-Window\-Manager\-Base\-::\-Set\-Timestamp (
 \begin{DoxyParamCaption}
 \item[{double}]{timestamp}
 \end{DoxyParamCaption}
-)}\label{classsvl_window_manager_base_a5b7747b205fa459716743386bf4a5f2d}
-\hypertarget{classsvl_window_manager_base_a678c57c6ff692a26ef40dd8368cb9f2b}{}\index{svl\+Window\+Manager\+Base@{svl\+Window\+Manager\+Base}!Set\+Title\+Text@{Set\+Title\+Text}}
-\index{Set\+Title\+Text@{Set\+Title\+Text}!svl\+Window\+Manager\+Base@{svl\+Window\+Manager\+Base}}
-\subsubsection[{Set\+Title\+Text}]{\setlength{\rightskip}{0pt plus 5cm}void svl\+Window\+Manager\+Base\+::\+Set\+Title\+Text (
+)}}\label{classsvl_window_manager_base_a5b7747b205fa459716743386bf4a5f2d}
+\hypertarget{classsvl_window_manager_base_a678c57c6ff692a26ef40dd8368cb9f2b}{\index{svl\-Window\-Manager\-Base@{svl\-Window\-Manager\-Base}!Set\-Title\-Text@{Set\-Title\-Text}}
+\index{Set\-Title\-Text@{Set\-Title\-Text}!svlWindowManagerBase@{svl\-Window\-Manager\-Base}}
+\subsubsection[{Set\-Title\-Text}]{\setlength{\rightskip}{0pt plus 5cm}void svl\-Window\-Manager\-Base\-::\-Set\-Title\-Text (
 \begin{DoxyParamCaption}
-\item[{const std\+::string}]{title}
+\item[{const std\-::string}]{title}
 \end{DoxyParamCaption}
-)}\label{classsvl_window_manager_base_a678c57c6ff692a26ef40dd8368cb9f2b}
-\hypertarget{classsvl_window_manager_base_a2060e663694a740606e9c7ced951bf25}{}\index{svl\+Window\+Manager\+Base@{svl\+Window\+Manager\+Base}!Set\+Window\+Position@{Set\+Window\+Position}}
-\index{Set\+Window\+Position@{Set\+Window\+Position}!svl\+Window\+Manager\+Base@{svl\+Window\+Manager\+Base}}
-\subsubsection[{Set\+Window\+Position}]{\setlength{\rightskip}{0pt plus 5cm}int svl\+Window\+Manager\+Base\+::\+Set\+Window\+Position (
+)}}\label{classsvl_window_manager_base_a678c57c6ff692a26ef40dd8368cb9f2b}
+\hypertarget{classsvl_window_manager_base_a2060e663694a740606e9c7ced951bf25}{\index{svl\-Window\-Manager\-Base@{svl\-Window\-Manager\-Base}!Set\-Window\-Position@{Set\-Window\-Position}}
+\index{Set\-Window\-Position@{Set\-Window\-Position}!svlWindowManagerBase@{svl\-Window\-Manager\-Base}}
+\subsubsection[{Set\-Window\-Position}]{\setlength{\rightskip}{0pt plus 5cm}int svl\-Window\-Manager\-Base\-::\-Set\-Window\-Position (
 \begin{DoxyParamCaption}
 \item[{int}]{x, }
 \item[{int}]{y, }
 \item[{unsigned int}]{winid}
 \end{DoxyParamCaption}
-)}\label{classsvl_window_manager_base_a2060e663694a740606e9c7ced951bf25}
-\hypertarget{classsvl_window_manager_base_adb4ef704308882625b8a9bd5b978f408}{}\index{svl\+Window\+Manager\+Base@{svl\+Window\+Manager\+Base}!Show@{Show}}
-\index{Show@{Show}!svl\+Window\+Manager\+Base@{svl\+Window\+Manager\+Base}}
-\subsubsection[{Show}]{\setlength{\rightskip}{0pt plus 5cm}virtual void svl\+Window\+Manager\+Base\+::\+Show (
+)}}\label{classsvl_window_manager_base_a2060e663694a740606e9c7ced951bf25}
+\hypertarget{classsvl_window_manager_base_adb4ef704308882625b8a9bd5b978f408}{\index{svl\-Window\-Manager\-Base@{svl\-Window\-Manager\-Base}!Show@{Show}}
+\index{Show@{Show}!svlWindowManagerBase@{svl\-Window\-Manager\-Base}}
+\subsubsection[{Show}]{\setlength{\rightskip}{0pt plus 5cm}virtual void svl\-Window\-Manager\-Base\-::\-Show (
 \begin{DoxyParamCaption}
 \item[{bool}]{show, }
 \item[{int}]{winid}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classsvl_window_manager_base_adb4ef704308882625b8a9bd5b978f408}
-\hypertarget{classsvl_window_manager_base_a3de36fded4442ddf69cf2c9e8b2a5cfe}{}\index{svl\+Window\+Manager\+Base@{svl\+Window\+Manager\+Base}!Unlock\+Buffers@{Unlock\+Buffers}}
-\index{Unlock\+Buffers@{Unlock\+Buffers}!svl\+Window\+Manager\+Base@{svl\+Window\+Manager\+Base}}
-\subsubsection[{Unlock\+Buffers}]{\setlength{\rightskip}{0pt plus 5cm}virtual void svl\+Window\+Manager\+Base\+::\+Unlock\+Buffers (
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classsvl_window_manager_base_adb4ef704308882625b8a9bd5b978f408}
+\hypertarget{classsvl_window_manager_base_a3de36fded4442ddf69cf2c9e8b2a5cfe}{\index{svl\-Window\-Manager\-Base@{svl\-Window\-Manager\-Base}!Unlock\-Buffers@{Unlock\-Buffers}}
+\index{Unlock\-Buffers@{Unlock\-Buffers}!svlWindowManagerBase@{svl\-Window\-Manager\-Base}}
+\subsubsection[{Unlock\-Buffers}]{\setlength{\rightskip}{0pt plus 5cm}virtual void svl\-Window\-Manager\-Base\-::\-Unlock\-Buffers (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classsvl_window_manager_base_a3de36fded4442ddf69cf2c9e8b2a5cfe}
-\hypertarget{classsvl_window_manager_base_a2e6ea04ac4c4403c6f442ed80b308267}{}\index{svl\+Window\+Manager\+Base@{svl\+Window\+Manager\+Base}!Wait\+For\+Init\+Event@{Wait\+For\+Init\+Event}}
-\index{Wait\+For\+Init\+Event@{Wait\+For\+Init\+Event}!svl\+Window\+Manager\+Base@{svl\+Window\+Manager\+Base}}
-\subsubsection[{Wait\+For\+Init\+Event}]{\setlength{\rightskip}{0pt plus 5cm}int svl\+Window\+Manager\+Base\+::\+Wait\+For\+Init\+Event (
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classsvl_window_manager_base_a3de36fded4442ddf69cf2c9e8b2a5cfe}
+\hypertarget{classsvl_window_manager_base_a2e6ea04ac4c4403c6f442ed80b308267}{\index{svl\-Window\-Manager\-Base@{svl\-Window\-Manager\-Base}!Wait\-For\-Init\-Event@{Wait\-For\-Init\-Event}}
+\index{Wait\-For\-Init\-Event@{Wait\-For\-Init\-Event}!svlWindowManagerBase@{svl\-Window\-Manager\-Base}}
+\subsubsection[{Wait\-For\-Init\-Event}]{\setlength{\rightskip}{0pt plus 5cm}int svl\-Window\-Manager\-Base\-::\-Wait\-For\-Init\-Event (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}\label{classsvl_window_manager_base_a2e6ea04ac4c4403c6f442ed80b308267}
+)}}\label{classsvl_window_manager_base_a2e6ea04ac4c4403c6f442ed80b308267}
 
 
 \subsection{Member Data Documentation}
-\hypertarget{classsvl_window_manager_base_a05b6711454ec8fc9b970e46bf79b9c67}{}\index{svl\+Window\+Manager\+Base@{svl\+Window\+Manager\+Base}!Event\+Handler@{Event\+Handler}}
-\index{Event\+Handler@{Event\+Handler}!svl\+Window\+Manager\+Base@{svl\+Window\+Manager\+Base}}
-\subsubsection[{Event\+Handler}]{\setlength{\rightskip}{0pt plus 5cm}{\bf svl\+Window\+Event\+Handler\+Base}$\ast$ svl\+Window\+Manager\+Base\+::\+Event\+Handler\hspace{0.3cm}{\ttfamily [protected]}}\label{classsvl_window_manager_base_a05b6711454ec8fc9b970e46bf79b9c67}
-\hypertarget{classsvl_window_manager_base_a69ad522db1adb6e2c36c774babca9349}{}\index{svl\+Window\+Manager\+Base@{svl\+Window\+Manager\+Base}!Height@{Height}}
-\index{Height@{Height}!svl\+Window\+Manager\+Base@{svl\+Window\+Manager\+Base}}
-\subsubsection[{Height}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int $\ast$ svl\+Window\+Manager\+Base\+::\+Height\hspace{0.3cm}{\ttfamily [protected]}}\label{classsvl_window_manager_base_a69ad522db1adb6e2c36c774babca9349}
-\hypertarget{classsvl_window_manager_base_a6f3f9fd7d3f9ee822d88131257272976}{}\index{svl\+Window\+Manager\+Base@{svl\+Window\+Manager\+Base}!Init\+Ready\+Signal@{Init\+Ready\+Signal}}
-\index{Init\+Ready\+Signal@{Init\+Ready\+Signal}!svl\+Window\+Manager\+Base@{svl\+Window\+Manager\+Base}}
-\subsubsection[{Init\+Ready\+Signal}]{\setlength{\rightskip}{0pt plus 5cm}{\bf osa\+Thread\+Signal}$\ast$ svl\+Window\+Manager\+Base\+::\+Init\+Ready\+Signal\hspace{0.3cm}{\ttfamily [protected]}}\label{classsvl_window_manager_base_a6f3f9fd7d3f9ee822d88131257272976}
-\hypertarget{classsvl_window_manager_base_aed1c8f66b156741ed6c14a7b6983cdc6}{}\index{svl\+Window\+Manager\+Base@{svl\+Window\+Manager\+Base}!Num\+Of\+Wins@{Num\+Of\+Wins}}
-\index{Num\+Of\+Wins@{Num\+Of\+Wins}!svl\+Window\+Manager\+Base@{svl\+Window\+Manager\+Base}}
-\subsubsection[{Num\+Of\+Wins}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int svl\+Window\+Manager\+Base\+::\+Num\+Of\+Wins\hspace{0.3cm}{\ttfamily [protected]}}\label{classsvl_window_manager_base_aed1c8f66b156741ed6c14a7b6983cdc6}
-\hypertarget{classsvl_window_manager_base_a51a3b510c6dbb08a8a400e0d539b864b}{}\index{svl\+Window\+Manager\+Base@{svl\+Window\+Manager\+Base}!Pos\+X@{Pos\+X}}
-\index{Pos\+X@{Pos\+X}!svl\+Window\+Manager\+Base@{svl\+Window\+Manager\+Base}}
-\subsubsection[{Pos\+X}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ svl\+Window\+Manager\+Base\+::\+Pos\+X\hspace{0.3cm}{\ttfamily [protected]}}\label{classsvl_window_manager_base_a51a3b510c6dbb08a8a400e0d539b864b}
-\hypertarget{classsvl_window_manager_base_aa256591f8f33a8ae99fac5cb296d8cb3}{}\index{svl\+Window\+Manager\+Base@{svl\+Window\+Manager\+Base}!Pos\+Y@{Pos\+Y}}
-\index{Pos\+Y@{Pos\+Y}!svl\+Window\+Manager\+Base@{svl\+Window\+Manager\+Base}}
-\subsubsection[{Pos\+Y}]{\setlength{\rightskip}{0pt plus 5cm}int $\ast$ svl\+Window\+Manager\+Base\+::\+Pos\+Y\hspace{0.3cm}{\ttfamily [protected]}}\label{classsvl_window_manager_base_aa256591f8f33a8ae99fac5cb296d8cb3}
-\hypertarget{classsvl_window_manager_base_ab871436fe2017b584121cd703c6f5bed}{}\index{svl\+Window\+Manager\+Base@{svl\+Window\+Manager\+Base}!Timestamp@{Timestamp}}
-\index{Timestamp@{Timestamp}!svl\+Window\+Manager\+Base@{svl\+Window\+Manager\+Base}}
-\subsubsection[{Timestamp}]{\setlength{\rightskip}{0pt plus 5cm}double svl\+Window\+Manager\+Base\+::\+Timestamp\hspace{0.3cm}{\ttfamily [protected]}}\label{classsvl_window_manager_base_ab871436fe2017b584121cd703c6f5bed}
-\hypertarget{classsvl_window_manager_base_a2af9d334546d02350f18778ad285bfc9}{}\index{svl\+Window\+Manager\+Base@{svl\+Window\+Manager\+Base}!Title@{Title}}
-\index{Title@{Title}!svl\+Window\+Manager\+Base@{svl\+Window\+Manager\+Base}}
-\subsubsection[{Title}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string svl\+Window\+Manager\+Base\+::\+Title\hspace{0.3cm}{\ttfamily [protected]}}\label{classsvl_window_manager_base_a2af9d334546d02350f18778ad285bfc9}
-\hypertarget{classsvl_window_manager_base_ab118e08eda56a7e8a3ecccf6e9fc68b7}{}\index{svl\+Window\+Manager\+Base@{svl\+Window\+Manager\+Base}!Width@{Width}}
-\index{Width@{Width}!svl\+Window\+Manager\+Base@{svl\+Window\+Manager\+Base}}
-\subsubsection[{Width}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int$\ast$ svl\+Window\+Manager\+Base\+::\+Width\hspace{0.3cm}{\ttfamily [protected]}}\label{classsvl_window_manager_base_ab118e08eda56a7e8a3ecccf6e9fc68b7}
+\hypertarget{classsvl_window_manager_base_a05b6711454ec8fc9b970e46bf79b9c67}{\index{svl\-Window\-Manager\-Base@{svl\-Window\-Manager\-Base}!Event\-Handler@{Event\-Handler}}
+\index{Event\-Handler@{Event\-Handler}!svlWindowManagerBase@{svl\-Window\-Manager\-Base}}
+\subsubsection[{Event\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}{\bf svl\-Window\-Event\-Handler\-Base}$\ast$ svl\-Window\-Manager\-Base\-::\-Event\-Handler\hspace{0.3cm}{\ttfamily [protected]}}}\label{classsvl_window_manager_base_a05b6711454ec8fc9b970e46bf79b9c67}
+\hypertarget{classsvl_window_manager_base_a69ad522db1adb6e2c36c774babca9349}{\index{svl\-Window\-Manager\-Base@{svl\-Window\-Manager\-Base}!Height@{Height}}
+\index{Height@{Height}!svlWindowManagerBase@{svl\-Window\-Manager\-Base}}
+\subsubsection[{Height}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int $\ast$ svl\-Window\-Manager\-Base\-::\-Height\hspace{0.3cm}{\ttfamily [protected]}}}\label{classsvl_window_manager_base_a69ad522db1adb6e2c36c774babca9349}
+\hypertarget{classsvl_window_manager_base_a6f3f9fd7d3f9ee822d88131257272976}{\index{svl\-Window\-Manager\-Base@{svl\-Window\-Manager\-Base}!Init\-Ready\-Signal@{Init\-Ready\-Signal}}
+\index{Init\-Ready\-Signal@{Init\-Ready\-Signal}!svlWindowManagerBase@{svl\-Window\-Manager\-Base}}
+\subsubsection[{Init\-Ready\-Signal}]{\setlength{\rightskip}{0pt plus 5cm}{\bf osa\-Thread\-Signal}$\ast$ svl\-Window\-Manager\-Base\-::\-Init\-Ready\-Signal\hspace{0.3cm}{\ttfamily [protected]}}}\label{classsvl_window_manager_base_a6f3f9fd7d3f9ee822d88131257272976}
+\hypertarget{classsvl_window_manager_base_aed1c8f66b156741ed6c14a7b6983cdc6}{\index{svl\-Window\-Manager\-Base@{svl\-Window\-Manager\-Base}!Num\-Of\-Wins@{Num\-Of\-Wins}}
+\index{Num\-Of\-Wins@{Num\-Of\-Wins}!svlWindowManagerBase@{svl\-Window\-Manager\-Base}}
+\subsubsection[{Num\-Of\-Wins}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int svl\-Window\-Manager\-Base\-::\-Num\-Of\-Wins\hspace{0.3cm}{\ttfamily [protected]}}}\label{classsvl_window_manager_base_aed1c8f66b156741ed6c14a7b6983cdc6}
+\hypertarget{classsvl_window_manager_base_a51a3b510c6dbb08a8a400e0d539b864b}{\index{svl\-Window\-Manager\-Base@{svl\-Window\-Manager\-Base}!Pos\-X@{Pos\-X}}
+\index{Pos\-X@{Pos\-X}!svlWindowManagerBase@{svl\-Window\-Manager\-Base}}
+\subsubsection[{Pos\-X}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ svl\-Window\-Manager\-Base\-::\-Pos\-X\hspace{0.3cm}{\ttfamily [protected]}}}\label{classsvl_window_manager_base_a51a3b510c6dbb08a8a400e0d539b864b}
+\hypertarget{classsvl_window_manager_base_aa256591f8f33a8ae99fac5cb296d8cb3}{\index{svl\-Window\-Manager\-Base@{svl\-Window\-Manager\-Base}!Pos\-Y@{Pos\-Y}}
+\index{Pos\-Y@{Pos\-Y}!svlWindowManagerBase@{svl\-Window\-Manager\-Base}}
+\subsubsection[{Pos\-Y}]{\setlength{\rightskip}{0pt plus 5cm}int $\ast$ svl\-Window\-Manager\-Base\-::\-Pos\-Y\hspace{0.3cm}{\ttfamily [protected]}}}\label{classsvl_window_manager_base_aa256591f8f33a8ae99fac5cb296d8cb3}
+\hypertarget{classsvl_window_manager_base_ab871436fe2017b584121cd703c6f5bed}{\index{svl\-Window\-Manager\-Base@{svl\-Window\-Manager\-Base}!Timestamp@{Timestamp}}
+\index{Timestamp@{Timestamp}!svlWindowManagerBase@{svl\-Window\-Manager\-Base}}
+\subsubsection[{Timestamp}]{\setlength{\rightskip}{0pt plus 5cm}double svl\-Window\-Manager\-Base\-::\-Timestamp\hspace{0.3cm}{\ttfamily [protected]}}}\label{classsvl_window_manager_base_ab871436fe2017b584121cd703c6f5bed}
+\hypertarget{classsvl_window_manager_base_a2af9d334546d02350f18778ad285bfc9}{\index{svl\-Window\-Manager\-Base@{svl\-Window\-Manager\-Base}!Title@{Title}}
+\index{Title@{Title}!svlWindowManagerBase@{svl\-Window\-Manager\-Base}}
+\subsubsection[{Title}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string svl\-Window\-Manager\-Base\-::\-Title\hspace{0.3cm}{\ttfamily [protected]}}}\label{classsvl_window_manager_base_a2af9d334546d02350f18778ad285bfc9}
+\hypertarget{classsvl_window_manager_base_ab118e08eda56a7e8a3ecccf6e9fc68b7}{\index{svl\-Window\-Manager\-Base@{svl\-Window\-Manager\-Base}!Width@{Width}}
+\index{Width@{Width}!svlWindowManagerBase@{svl\-Window\-Manager\-Base}}
+\subsubsection[{Width}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int$\ast$ svl\-Window\-Manager\-Base\-::\-Width\hspace{0.3cm}{\ttfamily [protected]}}}\label{classsvl_window_manager_base_ab118e08eda56a7e8a3ecccf6e9fc68b7}
 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
 \item 
-/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Stereo\+Vision/\hyperlink{svl_window_manager_base_8h}{svl\+Window\+Manager\+Base.\+h}\end{DoxyCompactItemize}
+/home/adeguet1/catkin\-\_\-ws/src/cisst-\/saw/cisst/cisst\-Stereo\-Vision/\hyperlink{svl_window_manager_base_8h}{svl\-Window\-Manager\-Base.\-h}\end{DoxyCompactItemize}

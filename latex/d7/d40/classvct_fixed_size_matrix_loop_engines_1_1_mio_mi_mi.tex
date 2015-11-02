@@ -1,5 +1,6 @@
-\hypertarget{classvct_fixed_size_matrix_loop_engines_1_1_mio_mi_mi}{}\section{vct\+Fixed\+Size\+Matrix\+Loop\+Engines\+:\+:Mio\+Mi\+Mi$<$ \+\_\+io\+Element\+Operation\+Type, \+\_\+matrix\+Element\+Operation\+Type $>$ Class Template Reference}
-\label{classvct_fixed_size_matrix_loop_engines_1_1_mio_mi_mi}\index{vct\+Fixed\+Size\+Matrix\+Loop\+Engines\+::\+Mio\+Mi\+Mi$<$ \+\_\+io\+Element\+Operation\+Type, \+\_\+matrix\+Element\+Operation\+Type $>$@{vct\+Fixed\+Size\+Matrix\+Loop\+Engines\+::\+Mio\+Mi\+Mi$<$ \+\_\+io\+Element\+Operation\+Type, \+\_\+matrix\+Element\+Operation\+Type $>$}}
+\hypertarget{classvct_fixed_size_matrix_loop_engines_1_1_mio_mi_mi}{\section{vct\-Fixed\-Size\-Matrix\-Loop\-Engines\-:\-:Mio\-Mi\-Mi$<$ \-\_\-io\-Element\-Operation\-Type, \-\_\-matrix\-Element\-Operation\-Type $>$ Class Template Reference}
+\label{classvct_fixed_size_matrix_loop_engines_1_1_mio_mi_mi}\index{vct\-Fixed\-Size\-Matrix\-Loop\-Engines\-::\-Mio\-Mi\-Mi$<$ \-\_\-io\-Element\-Operation\-Type, \-\_\-matrix\-Element\-Operation\-Type $>$@{vct\-Fixed\-Size\-Matrix\-Loop\-Engines\-::\-Mio\-Mi\-Mi$<$ \-\_\-io\-Element\-Operation\-Type, \-\_\-matrix\-Element\-Operation\-Type $>$}}
+}
 
 
 Implement operation of the form $m_{io} = op_{io}(m_{io}, op_{mm}(m_{i1}, m_{i2}))$ for fixed size matrices.  
@@ -7,17 +8,17 @@ Implement operation of the form $m_{io} = op_{io}(m_{io}, op_{mm}(m_{i1}, m_{i2}
 
 
 
-{\ttfamily \#include $<$vct\+Fixed\+Size\+Matrix\+Loop\+Engines.\+h$>$}
+{\ttfamily \#include $<$vct\-Fixed\-Size\-Matrix\-Loop\-Engines.\-h$>$}
 
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-{\footnotesize template$<$class \+\_\+io\+Matrix\+Type , class \+\_\+input1\+Matrix\+Type , class \+\_\+input2\+Matrix\+Type $>$ }\\static void \hyperlink{classvct_fixed_size_matrix_loop_engines_1_1_mio_mi_mi_ad9d63b36eab33db52502a841e4fc4463}{Run} (\+\_\+io\+Matrix\+Type \&io\+Matrix, const \+\_\+input1\+Matrix\+Type \&input1\+Matrix, const \+\_\+input2\+Matrix\+Type \&input2\+Matrix)
+{\footnotesize template$<$class \-\_\-io\-Matrix\-Type , class \-\_\-input1\-Matrix\-Type , class \-\_\-input2\-Matrix\-Type $>$ }\\static void \hyperlink{classvct_fixed_size_matrix_loop_engines_1_1_mio_mi_mi_ad9d63b36eab33db52502a841e4fc4463}{Run} (\-\_\-io\-Matrix\-Type \&io\-Matrix, const \-\_\-input1\-Matrix\-Type \&input1\-Matrix, const \-\_\-input2\-Matrix\-Type \&input2\-Matrix)
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-\subsubsection*{template$<$class \+\_\+io\+Element\+Operation\+Type, class \+\_\+matrix\+Element\+Operation\+Type$>$class vct\+Fixed\+Size\+Matrix\+Loop\+Engines\+::\+Mio\+Mi\+Mi$<$ \+\_\+io\+Element\+Operation\+Type, \+\_\+matrix\+Element\+Operation\+Type $>$}
+\subsubsection*{template$<$class \-\_\-io\-Element\-Operation\-Type, class \-\_\-matrix\-Element\-Operation\-Type$>$class vct\-Fixed\-Size\-Matrix\-Loop\-Engines\-::\-Mio\-Mi\-Mi$<$ \-\_\-io\-Element\-Operation\-Type, \-\_\-matrix\-Element\-Operation\-Type $>$}
 
 Implement operation of the form $m_{io} = op_{io}(m_{io}, op_{mm}(m_{i1}, m_{i2}))$ for fixed size matrices. 
 
@@ -25,32 +26,32 @@ This class uses template specialization to perform store-\/back matrix-\/matrix-
 
 \[ m_{io} = \mathrm{op_{io}}(m_{io}, \mathrm{op_{mm}}(m_{i1}, m_{i2})) \]
 
-where $m_{io}$ is an input-\/output (store-\/back) matrix; $m_{i1}$ and $m_{i2}$ are input matrices. A typical example is\+: $m_{io} += m_{i1} \cdot m_{i2}$. The matrices have a fixed size, determined at compilation time; $op_{,m}$ is an element wise operation between the elements of $m_{i1}$ and $m_{i2}$; $op_{io}$ is an operation between the output of $op_{mm}$ and the elements of $m_{io}$.
+where $m_{io}$ is an input-\/output (store-\/back) matrix; $m_{i1}$ and $m_{i2}$ are input matrices. A typical example is\-: $m_{io} += m_{i1} \cdot m_{i2}$. The matrices have a fixed size, determined at compilation time; $op_{,m}$ is an element wise operation between the elements of $m_{i1}$ and $m_{i2}$; $op_{io}$ is an operation between the output of $op_{mm}$ and the elements of $m_{io}$.
 
 
 \begin{DoxyParams}{Parameters}
-{\em \+\_\+io\+Operation\+Type} & The type of the store-\/back operation.\\
+{\em \-\_\-io\-Operation\-Type} & The type of the store-\/back operation.\\
 \hline
-{\em \+\_\+matrix\+Element\+Operation\+Type} & The type of the element wise operation between scalar and input matrix.\\
+{\em \-\_\-matrix\-Element\-Operation\-Type} & The type of the element wise operation between scalar and input matrix.\\
 \hline
 \end{DoxyParams}
-\begin{DoxySeeAlso}{See also}
-vct\+Fixed\+Size\+Matrix\+Recursive\+Engines 
+\begin{DoxySeeAlso}{See Also}
+vct\-Fixed\-Size\-Matrix\-Recursive\-Engines 
 \end{DoxySeeAlso}
 
 
 \subsection{Member Function Documentation}
-\hypertarget{classvct_fixed_size_matrix_loop_engines_1_1_mio_mi_mi_ad9d63b36eab33db52502a841e4fc4463}{}\index{vct\+Fixed\+Size\+Matrix\+Loop\+Engines\+::\+Mio\+Mi\+Mi@{vct\+Fixed\+Size\+Matrix\+Loop\+Engines\+::\+Mio\+Mi\+Mi}!Run@{Run}}
-\index{Run@{Run}!vct\+Fixed\+Size\+Matrix\+Loop\+Engines\+::\+Mio\+Mi\+Mi@{vct\+Fixed\+Size\+Matrix\+Loop\+Engines\+::\+Mio\+Mi\+Mi}}
-\subsubsection[{Run}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+io\+Element\+Operation\+Type , class \+\_\+matrix\+Element\+Operation\+Type $>$ template$<$class \+\_\+io\+Matrix\+Type , class \+\_\+input1\+Matrix\+Type , class \+\_\+input2\+Matrix\+Type $>$ static void {\bf vct\+Fixed\+Size\+Matrix\+Loop\+Engines\+::\+Mio\+Mi\+Mi}$<$ \+\_\+io\+Element\+Operation\+Type, \+\_\+matrix\+Element\+Operation\+Type $>$\+::Run (
+\hypertarget{classvct_fixed_size_matrix_loop_engines_1_1_mio_mi_mi_ad9d63b36eab33db52502a841e4fc4463}{\index{vct\-Fixed\-Size\-Matrix\-Loop\-Engines\-::\-Mio\-Mi\-Mi@{vct\-Fixed\-Size\-Matrix\-Loop\-Engines\-::\-Mio\-Mi\-Mi}!Run@{Run}}
+\index{Run@{Run}!vctFixedSizeMatrixLoopEngines::MioMiMi@{vct\-Fixed\-Size\-Matrix\-Loop\-Engines\-::\-Mio\-Mi\-Mi}}
+\subsubsection[{Run}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-io\-Element\-Operation\-Type , class \-\_\-matrix\-Element\-Operation\-Type $>$ template$<$class \-\_\-io\-Matrix\-Type , class \-\_\-input1\-Matrix\-Type , class \-\_\-input2\-Matrix\-Type $>$ static void {\bf vct\-Fixed\-Size\-Matrix\-Loop\-Engines\-::\-Mio\-Mi\-Mi}$<$ \-\_\-io\-Element\-Operation\-Type, \-\_\-matrix\-Element\-Operation\-Type $>$\-::Run (
 \begin{DoxyParamCaption}
-\item[{\+\_\+io\+Matrix\+Type \&}]{io\+Matrix, }
-\item[{const \+\_\+input1\+Matrix\+Type \&}]{input1\+Matrix, }
-\item[{const \+\_\+input2\+Matrix\+Type \&}]{input2\+Matrix}
+\item[{\-\_\-io\-Matrix\-Type \&}]{io\-Matrix, }
+\item[{const \-\_\-input1\-Matrix\-Type \&}]{input1\-Matrix, }
+\item[{const \-\_\-input2\-Matrix\-Type \&}]{input2\-Matrix}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classvct_fixed_size_matrix_loop_engines_1_1_mio_mi_mi_ad9d63b36eab33db52502a841e4fc4463}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classvct_fixed_size_matrix_loop_engines_1_1_mio_mi_mi_ad9d63b36eab33db52502a841e4fc4463}
 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
 \item 
-/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Vector/\hyperlink{vct_fixed_size_matrix_loop_engines_8h}{vct\+Fixed\+Size\+Matrix\+Loop\+Engines.\+h}\end{DoxyCompactItemize}
+/home/adeguet1/catkin\-\_\-ws/src/cisst-\/saw/cisst/cisst\-Vector/\hyperlink{vct_fixed_size_matrix_loop_engines_8h}{vct\-Fixed\-Size\-Matrix\-Loop\-Engines.\-h}\end{DoxyCompactItemize}

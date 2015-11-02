@@ -1,10 +1,11 @@
-\hypertarget{classmts_collector_base}{}\section{mts\+Collector\+Base Class Reference}
-\label{classmts_collector_base}\index{mts\+Collector\+Base@{mts\+Collector\+Base}}
+\hypertarget{classmts_collector_base}{\section{mts\-Collector\-Base Class Reference}
+\label{classmts_collector_base}\index{mts\-Collector\-Base@{mts\-Collector\-Base}}
+}
 
 
-{\ttfamily \#include $<$mts\+Collector\+Base.\+h$>$}
+{\ttfamily \#include $<$mts\-Collector\-Base.\-h$>$}
 
-Inheritance diagram for mts\+Collector\+Base\+:\begin{figure}[H]
+Inheritance diagram for mts\-Collector\-Base\-:\begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[height=7.000000cm]{d9/d5d/classmts_collector_base}
@@ -13,527 +14,578 @@ Inheritance diagram for mts\+Collector\+Base\+:\begin{figure}[H]
 \subsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
-class \hyperlink{classmts_collector_base_1_1_signal_map_element}{Signal\+Map\+Element}
+class \hyperlink{classmts_collector_base_1_1_signal_map_element}{Signal\-Map\-Element}
 \end{DoxyCompactItemize}
 \subsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
-enum \hyperlink{group__cisst_multi_task_gaa228bed8144053d0bfa316f9ac9d0901}{Collector\+File\+Format} \{ \hyperlink{group__cisst_multi_task_ggaa228bed8144053d0bfa316f9ac9d0901abbf072308b212f1331b566519d0c178d}{C\+O\+L\+L\+E\+C\+T\+O\+R\+\_\+\+F\+I\+L\+E\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+P\+L\+A\+I\+N\+\_\+\+T\+E\+X\+T}, 
-\hyperlink{group__cisst_multi_task_ggaa228bed8144053d0bfa316f9ac9d0901ab8cbb54e933107857df1a7745a95bf05}{C\+O\+L\+L\+E\+C\+T\+O\+R\+\_\+\+F\+I\+L\+E\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+B\+I\+N\+A\+R\+Y}, 
-\hyperlink{group__cisst_multi_task_ggaa228bed8144053d0bfa316f9ac9d0901a4ee4b02e555603aafc22593f28cc7841}{C\+O\+L\+L\+E\+C\+T\+O\+R\+\_\+\+F\+I\+L\+E\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+C\+S\+V}, 
-\hyperlink{group__cisst_multi_task_ggaa228bed8144053d0bfa316f9ac9d0901ae29b8a9aa7f007f9b5ef48824c0d34c5}{C\+O\+L\+L\+E\+C\+T\+O\+R\+\_\+\+F\+I\+L\+E\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+U\+N\+D\+E\+F\+I\+N\+E\+D}
+enum \hyperlink{classmts_collector_base_aa228bed8144053d0bfa316f9ac9d0901}{Collector\-File\-Format} \{ \hyperlink{classmts_collector_base_aa228bed8144053d0bfa316f9ac9d0901abbf072308b212f1331b566519d0c178d}{C\-O\-L\-L\-E\-C\-T\-O\-R\-\_\-\-F\-I\-L\-E\-\_\-\-F\-O\-R\-M\-A\-T\-\_\-\-P\-L\-A\-I\-N\-\_\-\-T\-E\-X\-T}, 
+\hyperlink{classmts_collector_base_aa228bed8144053d0bfa316f9ac9d0901ab8cbb54e933107857df1a7745a95bf05}{C\-O\-L\-L\-E\-C\-T\-O\-R\-\_\-\-F\-I\-L\-E\-\_\-\-F\-O\-R\-M\-A\-T\-\_\-\-B\-I\-N\-A\-R\-Y}, 
+\hyperlink{classmts_collector_base_aa228bed8144053d0bfa316f9ac9d0901a4ee4b02e555603aafc22593f28cc7841}{C\-O\-L\-L\-E\-C\-T\-O\-R\-\_\-\-F\-I\-L\-E\-\_\-\-F\-O\-R\-M\-A\-T\-\_\-\-C\-S\-V}, 
+\hyperlink{classmts_collector_base_aa228bed8144053d0bfa316f9ac9d0901ae29b8a9aa7f007f9b5ef48824c0d34c5}{C\-O\-L\-L\-E\-C\-T\-O\-R\-\_\-\-F\-I\-L\-E\-\_\-\-F\-O\-R\-M\-A\-T\-\_\-\-U\-N\-D\-E\-F\-I\-N\-E\-D}
  \}
 \item 
-enum \hyperlink{group__cisst_multi_task_gad5d486fde9f8105e4de551d00026ea93}{Collector\+File\+Floating\+Notation} \{ \hyperlink{group__cisst_multi_task_ggad5d486fde9f8105e4de551d00026ea93ad16b37e54a197f2279fa9bbb6671d05a}{C\+O\+L\+L\+E\+C\+T\+O\+R\+\_\+\+F\+I\+L\+E\+\_\+\+F\+L\+O\+A\+T\+I\+N\+G\+\_\+\+N\+O\+T\+A\+T\+I\+O\+N\+\_\+\+N\+O\+N\+E}, 
-\hyperlink{group__cisst_multi_task_ggad5d486fde9f8105e4de551d00026ea93a6a7b1140c5dcef2cbd16ba1198df1f6b}{C\+O\+L\+L\+E\+C\+T\+O\+R\+\_\+\+F\+I\+L\+E\+\_\+\+F\+L\+O\+A\+T\+I\+N\+G\+\_\+\+N\+O\+T\+A\+T\+I\+O\+N\+\_\+\+F\+I\+X\+E\+D}, 
-\hyperlink{group__cisst_multi_task_ggad5d486fde9f8105e4de551d00026ea93a9aa1dc07dd5f31c35bffc8c03c32e2c8}{C\+O\+L\+L\+E\+C\+T\+O\+R\+\_\+\+F\+I\+L\+E\+\_\+\+F\+L\+O\+A\+T\+I\+N\+G\+\_\+\+N\+O\+T\+A\+T\+I\+O\+N\+\_\+\+S\+C\+I\+E\+N\+T\+I\+F\+I\+C}
+enum \hyperlink{classmts_collector_base_ad5d486fde9f8105e4de551d00026ea93}{Collector\-File\-Floating\-Notation} \{ \hyperlink{classmts_collector_base_ad5d486fde9f8105e4de551d00026ea93ad16b37e54a197f2279fa9bbb6671d05a}{C\-O\-L\-L\-E\-C\-T\-O\-R\-\_\-\-F\-I\-L\-E\-\_\-\-F\-L\-O\-A\-T\-I\-N\-G\-\_\-\-N\-O\-T\-A\-T\-I\-O\-N\-\_\-\-N\-O\-N\-E}, 
+\hyperlink{classmts_collector_base_ad5d486fde9f8105e4de551d00026ea93a6a7b1140c5dcef2cbd16ba1198df1f6b}{C\-O\-L\-L\-E\-C\-T\-O\-R\-\_\-\-F\-I\-L\-E\-\_\-\-F\-L\-O\-A\-T\-I\-N\-G\-\_\-\-N\-O\-T\-A\-T\-I\-O\-N\-\_\-\-F\-I\-X\-E\-D}, 
+\hyperlink{classmts_collector_base_ad5d486fde9f8105e4de551d00026ea93a9aa1dc07dd5f31c35bffc8c03c32e2c8}{C\-O\-L\-L\-E\-C\-T\-O\-R\-\_\-\-F\-I\-L\-E\-\_\-\-F\-L\-O\-A\-T\-I\-N\-G\-\_\-\-N\-O\-T\-A\-T\-I\-O\-N\-\_\-\-S\-C\-I\-E\-N\-T\-I\-F\-I\-C}
  \}
 \end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classmts_collector_base_a60f7407181c031a8e8c57fdd48c4e6c7}{mts\+Collector\+Base} (const std\+::string \&collector\+Name, const \hyperlink{group__cisst_multi_task_gaa228bed8144053d0bfa316f9ac9d0901}{Collector\+File\+Format} file\+Format)
+\hyperlink{classmts_collector_base_a60f7407181c031a8e8c57fdd48c4e6c7}{mts\-Collector\-Base} (const std\-::string \&collector\-Name, const \hyperlink{classmts_collector_base_aa228bed8144053d0bfa316f9ac9d0901}{Collector\-File\-Format} file\-Format)
 \item 
-virtual \hyperlink{classmts_collector_base_a25a5386c1465c3bc95379d427729d0b5}{$\sim$mts\+Collector\+Base} (void)
+virtual \hyperlink{classmts_collector_base_a25a5386c1465c3bc95379d427729d0b5}{$\sim$mts\-Collector\-Base} (void)
 \item 
-virtual std\+::string \hyperlink{classmts_collector_base_a60da1298e1272b6af21a2eb94d4844f0}{Get\+Default\+Output\+Name} (void)=0
+virtual std\-::string \hyperlink{classmts_collector_base_a60da1298e1272b6af21a2eb94d4844f0}{Get\-Default\-Output\-Name} (void)=0
 \item 
-void \hyperlink{classmts_collector_base_a821b7d5be652daf529c461c7d3ba3f4e}{Set\+Output} (const std\+::string \&file\+Name, const \hyperlink{group__cisst_multi_task_gaa228bed8144053d0bfa316f9ac9d0901}{Collector\+File\+Format} file\+Format)
+void \hyperlink{classmts_collector_base_a821b7d5be652daf529c461c7d3ba3f4e}{Set\-Output} (const std\-::string \&file\-Name, const \hyperlink{classmts_collector_base_aa228bed8144053d0bfa316f9ac9d0901}{Collector\-File\-Format} file\-Format)
 \item 
-void \hyperlink{classmts_collector_base_aa3066c51680e52859f05db71a97bf9c1}{Set\+Output} (std\+::ostream \&output\+Stream, const \hyperlink{group__cisst_multi_task_gaa228bed8144053d0bfa316f9ac9d0901}{Collector\+File\+Format} file\+Format)
+void \hyperlink{classmts_collector_base_aa3066c51680e52859f05db71a97bf9c1}{Set\-Output} (std\-::ostream \&output\-Stream, const \hyperlink{classmts_collector_base_aa228bed8144053d0bfa316f9ac9d0901}{Collector\-File\-Format} file\-Format)
 \item 
-void \hyperlink{classmts_collector_base_ada2f3c5a80035350ae0d4c0a1f79d10f}{Set\+Output} (std\+::ostream \&output\+Stream)
+void \hyperlink{classmts_collector_base_ada2f3c5a80035350ae0d4c0a1f79d10f}{Set\-Output} (std\-::ostream \&output\-Stream)
 \item 
-void \hyperlink{classmts_collector_base_a3467807159d338a761a2e7b730a582ce}{Set\+Output\+To\+Default} (const \hyperlink{group__cisst_multi_task_gaa228bed8144053d0bfa316f9ac9d0901}{Collector\+File\+Format} file\+Format)
+void \hyperlink{classmts_collector_base_a3467807159d338a761a2e7b730a582ce}{Set\-Output\-To\-Default} (const \hyperlink{classmts_collector_base_aa228bed8144053d0bfa316f9ac9d0901}{Collector\-File\-Format} file\-Format)
 \item 
-void \hyperlink{classmts_collector_base_a6c951b134d74648c86d5b54d04238c50}{Set\+Output\+To\+Default} (void)
+void \hyperlink{classmts_collector_base_a6c951b134d74648c86d5b54d04238c50}{Set\-Output\-To\-Default} (void)
 \item 
-void \hyperlink{classmts_collector_base_aa9ba1bf118223c5cb9d5700a4cf6efaa}{Close\+Output} (void)
+void \hyperlink{classmts_collector_base_aa9ba1bf118223c5cb9d5700a4cf6efaa}{Close\-Output} (void)
 \item 
-const std\+::string \& \hyperlink{classmts_collector_base_ad28d8ad97ed6592efb1d4a388523773d}{Get\+Output\+File\+Name} (void) const 
+const std\-::string \& \hyperlink{classmts_collector_base_ad28d8ad97ed6592efb1d4a388523773d}{Get\-Output\-File\-Name} (void) const 
 \item 
-void \hyperlink{classmts_collector_base_a796db0258af6b2297ab530aaf509ba8f}{Open\+File\+If\+Needed} (void)
+void \hyperlink{classmts_collector_base_a796db0258af6b2297ab530aaf509ba8f}{Open\-File\-If\-Needed} (void)
 \item 
-virtual void \hyperlink{classmts_collector_base_a2fde70b19fbe88b049e8a8d19320f2c2}{Start\+Collection} (const \hyperlink{mts_generic_object_proxy_8h_a31e76b0190a8d3f9838626cd7b47bd75}{mts\+Double} \&delay\+In\+Seconds)=0
+virtual void \hyperlink{classmts_collector_base_a2fde70b19fbe88b049e8a8d19320f2c2}{Start\-Collection} (const \hyperlink{mts_generic_object_proxy_8h_a31e76b0190a8d3f9838626cd7b47bd75}{mts\-Double} \&delay\-In\-Seconds)=0
 \item 
-virtual void \hyperlink{classmts_collector_base_a56f67fc120a7088b8d5904a3a785d5dd}{Stop\+Collection} (const \hyperlink{mts_generic_object_proxy_8h_a31e76b0190a8d3f9838626cd7b47bd75}{mts\+Double} \&delay\+In\+Seconds)=0
+virtual void \hyperlink{classmts_collector_base_a56f67fc120a7088b8d5904a3a785d5dd}{Stop\-Collection} (const \hyperlink{mts_generic_object_proxy_8h_a31e76b0190a8d3f9838626cd7b47bd75}{mts\-Double} \&delay\-In\-Seconds)=0
 \item 
-void \hyperlink{classmts_collector_base_a6983e4ef85748d0f898f69975147d0c2}{Set\+Working\+Directory} (const \hyperlink{mts_generic_object_proxy_8h_adbc21bfbf98367e582bf8a263b7e711f}{mts\+Std\+String} \&directory)
+void \hyperlink{classmts_collector_base_a6983e4ef85748d0f898f69975147d0c2}{Set\-Working\-Directory} (const \hyperlink{mts_generic_object_proxy_8h_adbc21bfbf98367e582bf8a263b7e711f}{mts\-Std\-String} \&directory)
 \item 
-void \hyperlink{classmts_collector_base_ac53feb248d3ebd8056f7454855c1aba3}{Get\+Working\+Directory} (\hyperlink{mts_generic_object_proxy_8h_adbc21bfbf98367e582bf8a263b7e711f}{mts\+Std\+String} \&place\+Holder) const 
+void \hyperlink{classmts_collector_base_ac53feb248d3ebd8056f7454855c1aba3}{Get\-Working\-Directory} (\hyperlink{mts_generic_object_proxy_8h_adbc21bfbf98367e582bf8a263b7e711f}{mts\-Std\-String} \&place\-Holder) const 
 \item 
-void \hyperlink{classmts_collector_base_a2d1f0135da1bdfcf964adf5add3848b1}{Set\+Output\+Stream\+Floating\+Notation} (const \hyperlink{group__cisst_multi_task_gad5d486fde9f8105e4de551d00026ea93}{Collector\+File\+Floating\+Notation} floating\+Notation)
+void \hyperlink{classmts_collector_base_a2d1f0135da1bdfcf964adf5add3848b1}{Set\-Output\-Stream\-Floating\-Notation} (const \hyperlink{classmts_collector_base_ad5d486fde9f8105e4de551d00026ea93}{Collector\-File\-Floating\-Notation} floating\-Notation)
 \item 
-void \hyperlink{classmts_collector_base_a0d118b2d074a7466b6b659a16dc4612c}{Set\+Output\+Stream\+Precision} (const int precision)
+void \hyperlink{classmts_collector_base_a0d118b2d074a7466b6b659a16dc4612c}{Set\-Output\-Stream\-Precision} (const int precision)
 \item 
-void \hyperlink{classmts_collector_base_a8ae87596c1de63ee54ffade9e21f35ad}{Set\+Output\+Stream\+Width} (const int width)
+void \hyperlink{classmts_collector_base_a8ae87596c1de63ee54ffade9e21f35ad}{Set\-Output\-Stream\-Width} (const int width)
 \item 
-void \hyperlink{classmts_collector_base_a9e207050f00ef0132348e6f2321a451a}{Set\+Output\+Stream\+Fill} (const char fill\+Character)
+void \hyperlink{classmts_collector_base_a9e207050f00ef0132348e6f2321a451a}{Set\-Output\-Stream\-Fill} (const char fill\-Character)
 \end{DoxyCompactItemize}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classmts_function_void}{mts\+Function\+Void} \hyperlink{classmts_collector_base_aad959016aa62b9f20980c7cb61ccba8a}{Collection\+Started\+Event\+Trigger}
+\hyperlink{classmts_function_void}{mts\-Function\-Void} \hyperlink{classmts_collector_base_aad959016aa62b9f20980c7cb61ccba8a}{Collection\-Started\-Event\-Trigger}
 \item 
-\hyperlink{classmts_function_write}{mts\+Function\+Write} \hyperlink{classmts_collector_base_a8caa04305488581107b1ad19087079a2}{Collection\+Stopped\+Event\+Trigger}
+\hyperlink{classmts_function_write}{mts\-Function\-Write} \hyperlink{classmts_collector_base_a8caa04305488581107b1ad19087079a2}{Collection\-Stopped\-Event\-Trigger}
 \item 
-\hyperlink{classmts_function_write}{mts\+Function\+Write} \hyperlink{classmts_collector_base_a038835b577383fbc4b437ff60563b55b}{Progress\+Event\+Trigger}
+\hyperlink{classmts_function_write}{mts\-Function\-Write} \hyperlink{classmts_collector_base_a038835b577383fbc4b437ff60563b55b}{Progress\-Event\-Trigger}
 \end{DoxyCompactItemize}
 \subsection*{Protected Types}
 \begin{DoxyCompactItemize}
 \item 
-enum \hyperlink{group__cisst_multi_task_gadfbc058665584a56933a7997229c1fb6}{Collector\+Status} \{ \hyperlink{group__cisst_multi_task_ggadfbc058665584a56933a7997229c1fb6a2bf9d2e7c0bcf5aa734411dd6c969ff2}{C\+O\+L\+L\+E\+C\+T\+O\+R\+\_\+\+S\+T\+O\+P}, 
-\hyperlink{group__cisst_multi_task_ggadfbc058665584a56933a7997229c1fb6a67657229ff967c447ed3289c730bdf11}{C\+O\+L\+L\+E\+C\+T\+O\+R\+\_\+\+W\+A\+I\+T\+\_\+\+S\+T\+A\+R\+T}, 
-\hyperlink{group__cisst_multi_task_ggadfbc058665584a56933a7997229c1fb6a9162148874993d7a2bf7a40bd5b1ad24}{C\+O\+L\+L\+E\+C\+T\+O\+R\+\_\+\+C\+O\+L\+L\+E\+C\+T\+I\+N\+G}, 
-\hyperlink{group__cisst_multi_task_ggadfbc058665584a56933a7997229c1fb6a84e8e4233359e044e0f7db8ddc04f8c5}{C\+O\+L\+L\+E\+C\+T\+O\+R\+\_\+\+W\+A\+I\+T\+\_\+\+S\+T\+O\+P}
+enum \hyperlink{classmts_collector_base_adfbc058665584a56933a7997229c1fb6}{Collector\-Status} \{ \hyperlink{classmts_collector_base_adfbc058665584a56933a7997229c1fb6a2bf9d2e7c0bcf5aa734411dd6c969ff2}{C\-O\-L\-L\-E\-C\-T\-O\-R\-\_\-\-S\-T\-O\-P}, 
+\hyperlink{classmts_collector_base_adfbc058665584a56933a7997229c1fb6a67657229ff967c447ed3289c730bdf11}{C\-O\-L\-L\-E\-C\-T\-O\-R\-\_\-\-W\-A\-I\-T\-\_\-\-S\-T\-A\-R\-T}, 
+\hyperlink{classmts_collector_base_adfbc058665584a56933a7997229c1fb6a9162148874993d7a2bf7a40bd5b1ad24}{C\-O\-L\-L\-E\-C\-T\-O\-R\-\_\-\-C\-O\-L\-L\-E\-C\-T\-I\-N\-G}, 
+\hyperlink{classmts_collector_base_adfbc058665584a56933a7997229c1fb6a84e8e4233359e044e0f7db8ddc04f8c5}{C\-O\-L\-L\-E\-C\-T\-O\-R\-\_\-\-W\-A\-I\-T\-\_\-\-S\-T\-O\-P}
  \}
 \item 
-typedef \hyperlink{classcmn_named_map}{cmn\+Named\+Map}$<$ \hyperlink{classmts_collector_base_1_1_signal_map_element}{Signal\+Map\+Element} $>$ \hyperlink{classmts_collector_base_ad4d928af971d864065a9a6d9650a4050}{Signal\+Map\+Type}
+typedef \hyperlink{classcmn_named_map}{cmn\-Named\-Map}\\*
+$<$ \hyperlink{classmts_collector_base_1_1_signal_map_element}{Signal\-Map\-Element} $>$ \hyperlink{classmts_collector_base_ad4d928af971d864065a9a6d9650a4050}{Signal\-Map\-Type}
 \item 
-typedef \hyperlink{classcmn_named_map}{cmn\+Named\+Map}$<$ \hyperlink{classmts_collector_base_ad4d928af971d864065a9a6d9650a4050}{Signal\+Map\+Type} $>$ \hyperlink{classmts_collector_base_a6b47b3df8797f600ac9791640561f035}{Task\+Map\+Type}
+typedef \hyperlink{classcmn_named_map}{cmn\-Named\-Map}\\*
+$<$ \hyperlink{classmts_collector_base_ad4d928af971d864065a9a6d9650a4050}{Signal\-Map\-Type} $>$ \hyperlink{classmts_collector_base_a6b47b3df8797f600ac9791640561f035}{Task\-Map\-Type}
 \end{DoxyCompactItemize}
 \subsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \hyperlink{classmts_collector_base_a8f7a140dc2f96646b191680697fc341a}{Set\+Delimiter} (void)
+void \hyperlink{classmts_collector_base_a8f7a140dc2f96646b191680697fc341a}{Set\-Delimiter} (void)
 \item 
-void \hyperlink{classmts_collector_base_a12e7d75810e849d08f81b22ba15b2651}{Set\+Output\+Stream\+Params} (void)
+void \hyperlink{classmts_collector_base_a12e7d75810e849d08f81b22ba15b2651}{Set\-Output\-Stream\-Params} (void)
 \item 
-void \hyperlink{classmts_collector_base_a9710912f3c7a2a0e27210ec3e4031836}{Start\+Collection\+Command} (void)
+void \hyperlink{classmts_collector_base_a9710912f3c7a2a0e27210ec3e4031836}{Start\-Collection\-Command} (void)
 \item 
-void \hyperlink{classmts_collector_base_a52b9537fdb6632e1efa8dc5e17aad013}{Start\+Collection\+In\+Command} (const \hyperlink{mts_generic_object_proxy_8h_a31e76b0190a8d3f9838626cd7b47bd75}{mts\+Double} \&delay\+In\+Seconds)
+void \hyperlink{classmts_collector_base_a52b9537fdb6632e1efa8dc5e17aad013}{Start\-Collection\-In\-Command} (const \hyperlink{mts_generic_object_proxy_8h_a31e76b0190a8d3f9838626cd7b47bd75}{mts\-Double} \&delay\-In\-Seconds)
 \item 
-void \hyperlink{classmts_collector_base_ab1b32657c9ea39cc657d562c5b1be802}{Stop\+Collection\+Command} (void)
+void \hyperlink{classmts_collector_base_ab1b32657c9ea39cc657d562c5b1be802}{Stop\-Collection\-Command} (void)
 \item 
-void \hyperlink{classmts_collector_base_ab99c5d1e2cd381ead225ac57b2ec620d}{Stop\+Collection\+In\+Command} (const \hyperlink{mts_generic_object_proxy_8h_a31e76b0190a8d3f9838626cd7b47bd75}{mts\+Double} \&delay\+In\+Seconds)
+void \hyperlink{classmts_collector_base_ab99c5d1e2cd381ead225ac57b2ec620d}{Stop\-Collection\-In\-Command} (const \hyperlink{mts_generic_object_proxy_8h_a31e76b0190a8d3f9838626cd7b47bd75}{mts\-Double} \&delay\-In\-Seconds)
 \item 
 void \hyperlink{classmts_collector_base_a7faf69da541094f4ba045165e812b7df}{Init} (void)
 \item 
 void \hyperlink{classmts_collector_base_a1ec6f11c284cf013ab3cf7556cd04896}{Cleanup} (void)
 \item 
-void \hyperlink{classmts_collector_base_a9488170795470dd8ca10ae14179e9a6f}{Clear\+Task\+Map} (void)
+void \hyperlink{classmts_collector_base_a9488170795470dd8ca10ae14179e9a6f}{Clear\-Task\-Map} (void)
 \item 
 virtual void \hyperlink{classmts_collector_base_a7e3ca6f1f52519df43dc1d70202968f2}{Startup} (void)=0
 \item 
-void \hyperlink{classmts_collector_base_a8cec0a5fdf2aa587718f3dacd9e98572}{Setup\+Control\+Interface} (void)
+void \hyperlink{classmts_collector_base_a8cec0a5fdf2aa587718f3dacd9e98572}{Setup\-Control\-Interface} (void)
 \end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{group__cisst_multi_task_gadfbc058665584a56933a7997229c1fb6}{Collector\+Status} \hyperlink{classmts_collector_base_ae5b1e57c993774b77da77f1e1fc7d73c}{Status}
+\hyperlink{classmts_collector_base_adfbc058665584a56933a7997229c1fb6}{Collector\-Status} \hyperlink{classmts_collector_base_ae5b1e57c993774b77da77f1e1fc7d73c}{Status}
 \item 
-\hyperlink{group__cisst_multi_task_gaa228bed8144053d0bfa316f9ac9d0901}{Collector\+File\+Format} \hyperlink{classmts_collector_base_a5afbc705a454a6e1394ff4bfd1c17774}{File\+Format}
+\hyperlink{classmts_collector_base_aa228bed8144053d0bfa316f9ac9d0901}{Collector\-File\-Format} \hyperlink{classmts_collector_base_a5afbc705a454a6e1394ff4bfd1c17774}{File\-Format}
 \item 
-\hyperlink{classmts_collector_base_a6b47b3df8797f600ac9791640561f035}{Task\+Map\+Type} \hyperlink{classmts_collector_base_a4e9b221e6cdeb2fbddaf44ffbe9e3b0e}{Task\+Map}
+\hyperlink{classmts_collector_base_a6b47b3df8797f600ac9791640561f035}{Task\-Map\-Type} \hyperlink{classmts_collector_base_a4e9b221e6cdeb2fbddaf44ffbe9e3b0e}{Task\-Map}
 \item 
-bool \hyperlink{classmts_collector_base_a68e1ba8a88b403471103ad596fd3f002}{Connected\+Flag}
+bool \hyperlink{classmts_collector_base_a68e1ba8a88b403471103ad596fd3f002}{Connected\-Flag}
 \item 
-bool \hyperlink{classmts_collector_base_abed8163d5f91e30ac10344e82c405cd7}{First\+Running\+Flag}
+bool \hyperlink{classmts_collector_base_abed8163d5f91e30ac10344e82c405cd7}{First\-Running\-Flag}
 \item 
-unsigned int \hyperlink{classmts_collector_base_a08c8c1889a10cba359bc799bbf5d218b}{Sample\+Counter}
+unsigned int \hyperlink{classmts_collector_base_a08c8c1889a10cba359bc799bbf5d218b}{Sample\-Counter}
 \item 
-unsigned int \hyperlink{classmts_collector_base_a199b6fdd92f3a5912b6d7fd10af5b205}{Sample\+Counter\+For\+Event}
+unsigned int \hyperlink{classmts_collector_base_a199b6fdd92f3a5912b6d7fd10af5b205}{Sample\-Counter\-For\-Event}
 \item 
-double \hyperlink{classmts_collector_base_ab6c33b31e4651991098cd0963a575d24}{Time\+Interval\+For\+Progress\+Event}
+double \hyperlink{classmts_collector_base_ab6c33b31e4651991098cd0963a575d24}{Time\-Interval\-For\-Progress\-Event}
 \item 
-double \hyperlink{classmts_collector_base_aa33295c29dd9bc683cb95a9f57c5a09e}{Time\+Of\+Last\+Progress\+Event}
+double \hyperlink{classmts_collector_base_aa33295c29dd9bc683cb95a9f57c5a09e}{Time\-Of\-Last\-Progress\-Event}
 \item 
-std\+::string \hyperlink{classmts_collector_base_a86248c53c5807c8b9a21b232d89b26dd}{Output\+File\+Name}
+std\-::string \hyperlink{classmts_collector_base_a86248c53c5807c8b9a21b232d89b26dd}{Output\-File\-Name}
 \item 
-std\+::string \hyperlink{classmts_collector_base_adf377242f1cf745ccedf71f6505d1095}{Output\+Header\+File\+Name}
+std\-::string \hyperlink{classmts_collector_base_adf377242f1cf745ccedf71f6505d1095}{Output\-Header\-File\-Name}
 \item 
-\hyperlink{mts_generic_object_proxy_8h_adbc21bfbf98367e582bf8a263b7e711f}{mts\+Std\+String} \hyperlink{classmts_collector_base_a1af964c915eb2090cc72a8515dcbea6d}{Working\+Directory\+Member}
+\hyperlink{mts_generic_object_proxy_8h_adbc21bfbf98367e582bf8a263b7e711f}{mts\-Std\-String} \hyperlink{classmts_collector_base_a1af964c915eb2090cc72a8515dcbea6d}{Working\-Directory\-Member}
 \item 
-std\+::ostream $\ast$ \hyperlink{classmts_collector_base_a4901f9bf045081f0d79ada98fb06c57b}{Output\+Stream}
+std\-::ostream $\ast$ \hyperlink{classmts_collector_base_a4901f9bf045081f0d79ada98fb06c57b}{Output\-Stream}
 \item 
-std\+::ofstream $\ast$ \hyperlink{classmts_collector_base_a7072747db6ae6fb544364d8fe11f741d}{Output\+File}
+std\-::ofstream $\ast$ \hyperlink{classmts_collector_base_a7072747db6ae6fb544364d8fe11f741d}{Output\-File}
 \item 
-std\+::ostream $\ast$ \hyperlink{classmts_collector_base_aa58c68b0e196175b2f0b35f8a2877c54}{Output\+Header\+Stream}
+std\-::ostream $\ast$ \hyperlink{classmts_collector_base_aa58c68b0e196175b2f0b35f8a2877c54}{Output\-Header\-Stream}
 \item 
-std\+::ofstream $\ast$ \hyperlink{classmts_collector_base_ac11bfb1b9eceb30e20bb216454e8d067}{Output\+Header\+File}
+std\-::ofstream $\ast$ \hyperlink{classmts_collector_base_ac11bfb1b9eceb30e20bb216454e8d067}{Output\-Header\-File}
 \item 
-\hyperlink{group__cisst_multi_task_gad5d486fde9f8105e4de551d00026ea93}{Collector\+File\+Floating\+Notation} \hyperlink{classmts_collector_base_a1f80a8a534930afcbeade8a12f7d63e3}{Floating\+Notation}
+\hyperlink{classmts_collector_base_ad5d486fde9f8105e4de551d00026ea93}{Collector\-File\-Floating\-Notation} \hyperlink{classmts_collector_base_a1f80a8a534930afcbeade8a12f7d63e3}{Floating\-Notation}
 \item 
-std\+::streamsize \hyperlink{classmts_collector_base_a86d6b8c24e20957932325ce8183d0abf}{Precision}
+std\-::streamsize \hyperlink{classmts_collector_base_a86d6b8c24e20957932325ce8183d0abf}{Precision}
 \item 
-std\+::streamsize \hyperlink{classmts_collector_base_add0435d1bd0dfaed9f54bc82831ca3ea}{Width}
+std\-::streamsize \hyperlink{classmts_collector_base_add0435d1bd0dfaed9f54bc82831ca3ea}{Width}
 \item 
-char \hyperlink{classmts_collector_base_a7d28e7a5dc2c367f963a53f9b786776d}{Fill\+Character}
+char \hyperlink{classmts_collector_base_a7d28e7a5dc2c367f963a53f9b786776d}{Fill\-Character}
 \item 
-bool \hyperlink{classmts_collector_base_a051e5495fad8d0ade499d031e8d9ffbc}{File\+Opened}
+bool \hyperlink{classmts_collector_base_a051e5495fad8d0ade499d031e8d9ffbc}{File\-Opened}
 \item 
 char \hyperlink{classmts_collector_base_a7d711ebe23e8573509789daa9e7392e6}{Delimiter}
 \item 
-std\+::stringstream \hyperlink{classmts_collector_base_a782f339bd561cc62d195544fdb873834}{String\+Stream\+Buffer\+For\+Serialization}
+std\-::stringstream \hyperlink{classmts_collector_base_a782f339bd561cc62d195544fdb873834}{String\-Stream\-Buffer\-For\-Serialization}
 \item 
-\hyperlink{classcmn_serializer}{cmn\+Serializer} $\ast$ \hyperlink{classmts_collector_base_abf646aaaee11b73bf1fff9f31131fac1}{Serializer}
+\hyperlink{classcmn_serializer}{cmn\-Serializer} $\ast$ \hyperlink{classmts_collector_base_abf646aaaee11b73bf1fff9f31131fac1}{Serializer}
 \item 
-\hyperlink{classmts_interface_provided}{mts\+Interface\+Provided} $\ast$ \hyperlink{classmts_collector_base_abfd24852cb33dc25956b49ed2896ac10}{Control\+Interface}
+\hyperlink{classmts_interface_provided}{mts\-Interface\-Provided} $\ast$ \hyperlink{classmts_collector_base_abfd24852cb33dc25956b49ed2896ac10}{Control\-Interface}
 \end{DoxyCompactItemize}
 \subsection*{Static Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
-static \hyperlink{mts_task_manager_8h_aa743a07890f6b7715c62cc9384bf994b}{mts\+Component\+Manager} $\ast$ \hyperlink{classmts_collector_base_a5d4cca6b7e903dec79a349efc63ba8a0}{Component\+Manager}
+static \hyperlink{mts_task_manager_8h_aa743a07890f6b7715c62cc9384bf994b}{mts\-Component\-Manager} $\ast$ \hyperlink{classmts_collector_base_a5d4cca6b7e903dec79a349efc63ba8a0}{Component\-Manager}
 \end{DoxyCompactItemize}
 \subsection*{Friends}
 \begin{DoxyCompactItemize}
 \item 
-class \hyperlink{classmts_collector_base_a6743a1c340e3a1cc2078915e17f6678e}{mts\+Collector\+Base\+Test}
+class \hyperlink{classmts_collector_base_a6743a1c340e3a1cc2078915e17f6678e}{mts\-Collector\-Base\-Test}
 \end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
 
 \subsection{Detailed Description}
-This class provides a way to collect data from state table in real-\/time. Collected data can be either saved as a log file or displayed in G\+U\+I like an oscilloscope. 
+This class provides a way to collect data from state table in real-\/time. Collected data can be either saved as a log file or displayed in G\-U\-I like an oscilloscope. 
 
 \subsection{Member Typedef Documentation}
-\hypertarget{classmts_collector_base_ad4d928af971d864065a9a6d9650a4050}{}\index{mts\+Collector\+Base@{mts\+Collector\+Base}!Signal\+Map\+Type@{Signal\+Map\+Type}}
-\index{Signal\+Map\+Type@{Signal\+Map\+Type}!mts\+Collector\+Base@{mts\+Collector\+Base}}
-\subsubsection[{Signal\+Map\+Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf cmn\+Named\+Map}$<${\bf Signal\+Map\+Element}$>$ {\bf mts\+Collector\+Base\+::\+Signal\+Map\+Type}\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_collector_base_ad4d928af971d864065a9a6d9650a4050}
-Container definition for tasks and signals. Task\+Map\+: (task\+Name, Signal\+Map$\ast$) Signal\+Map\+: (Signal\+Name, \hyperlink{classmts_collector_base_1_1_signal_map_element}{Signal\+Map\+Element}) \hypertarget{classmts_collector_base_a6b47b3df8797f600ac9791640561f035}{}\index{mts\+Collector\+Base@{mts\+Collector\+Base}!Task\+Map\+Type@{Task\+Map\+Type}}
-\index{Task\+Map\+Type@{Task\+Map\+Type}!mts\+Collector\+Base@{mts\+Collector\+Base}}
-\subsubsection[{Task\+Map\+Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf cmn\+Named\+Map}$<${\bf Signal\+Map\+Type}$>$ {\bf mts\+Collector\+Base\+::\+Task\+Map\+Type}\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_collector_base_a6b47b3df8797f600ac9791640561f035}
+\hypertarget{classmts_collector_base_ad4d928af971d864065a9a6d9650a4050}{\index{mts\-Collector\-Base@{mts\-Collector\-Base}!Signal\-Map\-Type@{Signal\-Map\-Type}}
+\index{Signal\-Map\-Type@{Signal\-Map\-Type}!mtsCollectorBase@{mts\-Collector\-Base}}
+\subsubsection[{Signal\-Map\-Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf cmn\-Named\-Map}$<${\bf Signal\-Map\-Element}$>$ {\bf mts\-Collector\-Base\-::\-Signal\-Map\-Type}\hspace{0.3cm}{\ttfamily [protected]}}}\label{classmts_collector_base_ad4d928af971d864065a9a6d9650a4050}
+Container definition for tasks and signals. Task\-Map\-: (task\-Name, Signal\-Map$\ast$) Signal\-Map\-: (Signal\-Name, \hyperlink{classmts_collector_base_1_1_signal_map_element}{Signal\-Map\-Element}) \hypertarget{classmts_collector_base_a6b47b3df8797f600ac9791640561f035}{\index{mts\-Collector\-Base@{mts\-Collector\-Base}!Task\-Map\-Type@{Task\-Map\-Type}}
+\index{Task\-Map\-Type@{Task\-Map\-Type}!mtsCollectorBase@{mts\-Collector\-Base}}
+\subsubsection[{Task\-Map\-Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf cmn\-Named\-Map}$<${\bf Signal\-Map\-Type}$>$ {\bf mts\-Collector\-Base\-::\-Task\-Map\-Type}\hspace{0.3cm}{\ttfamily [protected]}}}\label{classmts_collector_base_a6b47b3df8797f600ac9791640561f035}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classmts_collector_base_ad5d486fde9f8105e4de551d00026ea93}{\index{mts\-Collector\-Base@{mts\-Collector\-Base}!Collector\-File\-Floating\-Notation@{Collector\-File\-Floating\-Notation}}
+\index{Collector\-File\-Floating\-Notation@{Collector\-File\-Floating\-Notation}!mtsCollectorBase@{mts\-Collector\-Base}}
+\subsubsection[{Collector\-File\-Floating\-Notation}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf mts\-Collector\-Base\-::\-Collector\-File\-Floating\-Notation}}}\label{classmts_collector_base_ad5d486fde9f8105e4de551d00026ea93}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{C\-O\-L\-L\-E\-C\-T\-O\-R\-\_\-\-F\-I\-L\-E\-\_\-\-F\-L\-O\-A\-T\-I\-N\-G\-\_\-\-N\-O\-T\-A\-T\-I\-O\-N\-\_\-\-N\-O\-N\-E@{C\-O\-L\-L\-E\-C\-T\-O\-R\-\_\-\-F\-I\-L\-E\-\_\-\-F\-L\-O\-A\-T\-I\-N\-G\-\_\-\-N\-O\-T\-A\-T\-I\-O\-N\-\_\-\-N\-O\-N\-E}!mts\-Collector\-Base@{mts\-Collector\-Base}}\index{mts\-Collector\-Base@{mts\-Collector\-Base}!C\-O\-L\-L\-E\-C\-T\-O\-R\-\_\-\-F\-I\-L\-E\-\_\-\-F\-L\-O\-A\-T\-I\-N\-G\-\_\-\-N\-O\-T\-A\-T\-I\-O\-N\-\_\-\-N\-O\-N\-E@{C\-O\-L\-L\-E\-C\-T\-O\-R\-\_\-\-F\-I\-L\-E\-\_\-\-F\-L\-O\-A\-T\-I\-N\-G\-\_\-\-N\-O\-T\-A\-T\-I\-O\-N\-\_\-\-N\-O\-N\-E}}\item[{\em 
+\hypertarget{classmts_collector_base_ad5d486fde9f8105e4de551d00026ea93ad16b37e54a197f2279fa9bbb6671d05a}{C\-O\-L\-L\-E\-C\-T\-O\-R\-\_\-\-F\-I\-L\-E\-\_\-\-F\-L\-O\-A\-T\-I\-N\-G\-\_\-\-N\-O\-T\-A\-T\-I\-O\-N\-\_\-\-N\-O\-N\-E}\label{classmts_collector_base_ad5d486fde9f8105e4de551d00026ea93ad16b37e54a197f2279fa9bbb6671d05a}
+}]\index{C\-O\-L\-L\-E\-C\-T\-O\-R\-\_\-\-F\-I\-L\-E\-\_\-\-F\-L\-O\-A\-T\-I\-N\-G\-\_\-\-N\-O\-T\-A\-T\-I\-O\-N\-\_\-\-F\-I\-X\-E\-D@{C\-O\-L\-L\-E\-C\-T\-O\-R\-\_\-\-F\-I\-L\-E\-\_\-\-F\-L\-O\-A\-T\-I\-N\-G\-\_\-\-N\-O\-T\-A\-T\-I\-O\-N\-\_\-\-F\-I\-X\-E\-D}!mts\-Collector\-Base@{mts\-Collector\-Base}}\index{mts\-Collector\-Base@{mts\-Collector\-Base}!C\-O\-L\-L\-E\-C\-T\-O\-R\-\_\-\-F\-I\-L\-E\-\_\-\-F\-L\-O\-A\-T\-I\-N\-G\-\_\-\-N\-O\-T\-A\-T\-I\-O\-N\-\_\-\-F\-I\-X\-E\-D@{C\-O\-L\-L\-E\-C\-T\-O\-R\-\_\-\-F\-I\-L\-E\-\_\-\-F\-L\-O\-A\-T\-I\-N\-G\-\_\-\-N\-O\-T\-A\-T\-I\-O\-N\-\_\-\-F\-I\-X\-E\-D}}\item[{\em 
+\hypertarget{classmts_collector_base_ad5d486fde9f8105e4de551d00026ea93a6a7b1140c5dcef2cbd16ba1198df1f6b}{C\-O\-L\-L\-E\-C\-T\-O\-R\-\_\-\-F\-I\-L\-E\-\_\-\-F\-L\-O\-A\-T\-I\-N\-G\-\_\-\-N\-O\-T\-A\-T\-I\-O\-N\-\_\-\-F\-I\-X\-E\-D}\label{classmts_collector_base_ad5d486fde9f8105e4de551d00026ea93a6a7b1140c5dcef2cbd16ba1198df1f6b}
+}]\index{C\-O\-L\-L\-E\-C\-T\-O\-R\-\_\-\-F\-I\-L\-E\-\_\-\-F\-L\-O\-A\-T\-I\-N\-G\-\_\-\-N\-O\-T\-A\-T\-I\-O\-N\-\_\-\-S\-C\-I\-E\-N\-T\-I\-F\-I\-C@{C\-O\-L\-L\-E\-C\-T\-O\-R\-\_\-\-F\-I\-L\-E\-\_\-\-F\-L\-O\-A\-T\-I\-N\-G\-\_\-\-N\-O\-T\-A\-T\-I\-O\-N\-\_\-\-S\-C\-I\-E\-N\-T\-I\-F\-I\-C}!mts\-Collector\-Base@{mts\-Collector\-Base}}\index{mts\-Collector\-Base@{mts\-Collector\-Base}!C\-O\-L\-L\-E\-C\-T\-O\-R\-\_\-\-F\-I\-L\-E\-\_\-\-F\-L\-O\-A\-T\-I\-N\-G\-\_\-\-N\-O\-T\-A\-T\-I\-O\-N\-\_\-\-S\-C\-I\-E\-N\-T\-I\-F\-I\-C@{C\-O\-L\-L\-E\-C\-T\-O\-R\-\_\-\-F\-I\-L\-E\-\_\-\-F\-L\-O\-A\-T\-I\-N\-G\-\_\-\-N\-O\-T\-A\-T\-I\-O\-N\-\_\-\-S\-C\-I\-E\-N\-T\-I\-F\-I\-C}}\item[{\em 
+\hypertarget{classmts_collector_base_ad5d486fde9f8105e4de551d00026ea93a9aa1dc07dd5f31c35bffc8c03c32e2c8}{C\-O\-L\-L\-E\-C\-T\-O\-R\-\_\-\-F\-I\-L\-E\-\_\-\-F\-L\-O\-A\-T\-I\-N\-G\-\_\-\-N\-O\-T\-A\-T\-I\-O\-N\-\_\-\-S\-C\-I\-E\-N\-T\-I\-F\-I\-C}\label{classmts_collector_base_ad5d486fde9f8105e4de551d00026ea93a9aa1dc07dd5f31c35bffc8c03c32e2c8}
+}]\end{description}
+\end{Desc}
+\hypertarget{classmts_collector_base_aa228bed8144053d0bfa316f9ac9d0901}{\index{mts\-Collector\-Base@{mts\-Collector\-Base}!Collector\-File\-Format@{Collector\-File\-Format}}
+\index{Collector\-File\-Format@{Collector\-File\-Format}!mtsCollectorBase@{mts\-Collector\-Base}}
+\subsubsection[{Collector\-File\-Format}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf mts\-Collector\-Base\-::\-Collector\-File\-Format}}}\label{classmts_collector_base_aa228bed8144053d0bfa316f9ac9d0901}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{C\-O\-L\-L\-E\-C\-T\-O\-R\-\_\-\-F\-I\-L\-E\-\_\-\-F\-O\-R\-M\-A\-T\-\_\-\-P\-L\-A\-I\-N\-\_\-\-T\-E\-X\-T@{C\-O\-L\-L\-E\-C\-T\-O\-R\-\_\-\-F\-I\-L\-E\-\_\-\-F\-O\-R\-M\-A\-T\-\_\-\-P\-L\-A\-I\-N\-\_\-\-T\-E\-X\-T}!mts\-Collector\-Base@{mts\-Collector\-Base}}\index{mts\-Collector\-Base@{mts\-Collector\-Base}!C\-O\-L\-L\-E\-C\-T\-O\-R\-\_\-\-F\-I\-L\-E\-\_\-\-F\-O\-R\-M\-A\-T\-\_\-\-P\-L\-A\-I\-N\-\_\-\-T\-E\-X\-T@{C\-O\-L\-L\-E\-C\-T\-O\-R\-\_\-\-F\-I\-L\-E\-\_\-\-F\-O\-R\-M\-A\-T\-\_\-\-P\-L\-A\-I\-N\-\_\-\-T\-E\-X\-T}}\item[{\em 
+\hypertarget{classmts_collector_base_aa228bed8144053d0bfa316f9ac9d0901abbf072308b212f1331b566519d0c178d}{C\-O\-L\-L\-E\-C\-T\-O\-R\-\_\-\-F\-I\-L\-E\-\_\-\-F\-O\-R\-M\-A\-T\-\_\-\-P\-L\-A\-I\-N\-\_\-\-T\-E\-X\-T}\label{classmts_collector_base_aa228bed8144053d0bfa316f9ac9d0901abbf072308b212f1331b566519d0c178d}
+}]\index{C\-O\-L\-L\-E\-C\-T\-O\-R\-\_\-\-F\-I\-L\-E\-\_\-\-F\-O\-R\-M\-A\-T\-\_\-\-B\-I\-N\-A\-R\-Y@{C\-O\-L\-L\-E\-C\-T\-O\-R\-\_\-\-F\-I\-L\-E\-\_\-\-F\-O\-R\-M\-A\-T\-\_\-\-B\-I\-N\-A\-R\-Y}!mts\-Collector\-Base@{mts\-Collector\-Base}}\index{mts\-Collector\-Base@{mts\-Collector\-Base}!C\-O\-L\-L\-E\-C\-T\-O\-R\-\_\-\-F\-I\-L\-E\-\_\-\-F\-O\-R\-M\-A\-T\-\_\-\-B\-I\-N\-A\-R\-Y@{C\-O\-L\-L\-E\-C\-T\-O\-R\-\_\-\-F\-I\-L\-E\-\_\-\-F\-O\-R\-M\-A\-T\-\_\-\-B\-I\-N\-A\-R\-Y}}\item[{\em 
+\hypertarget{classmts_collector_base_aa228bed8144053d0bfa316f9ac9d0901ab8cbb54e933107857df1a7745a95bf05}{C\-O\-L\-L\-E\-C\-T\-O\-R\-\_\-\-F\-I\-L\-E\-\_\-\-F\-O\-R\-M\-A\-T\-\_\-\-B\-I\-N\-A\-R\-Y}\label{classmts_collector_base_aa228bed8144053d0bfa316f9ac9d0901ab8cbb54e933107857df1a7745a95bf05}
+}]\index{C\-O\-L\-L\-E\-C\-T\-O\-R\-\_\-\-F\-I\-L\-E\-\_\-\-F\-O\-R\-M\-A\-T\-\_\-\-C\-S\-V@{C\-O\-L\-L\-E\-C\-T\-O\-R\-\_\-\-F\-I\-L\-E\-\_\-\-F\-O\-R\-M\-A\-T\-\_\-\-C\-S\-V}!mts\-Collector\-Base@{mts\-Collector\-Base}}\index{mts\-Collector\-Base@{mts\-Collector\-Base}!C\-O\-L\-L\-E\-C\-T\-O\-R\-\_\-\-F\-I\-L\-E\-\_\-\-F\-O\-R\-M\-A\-T\-\_\-\-C\-S\-V@{C\-O\-L\-L\-E\-C\-T\-O\-R\-\_\-\-F\-I\-L\-E\-\_\-\-F\-O\-R\-M\-A\-T\-\_\-\-C\-S\-V}}\item[{\em 
+\hypertarget{classmts_collector_base_aa228bed8144053d0bfa316f9ac9d0901a4ee4b02e555603aafc22593f28cc7841}{C\-O\-L\-L\-E\-C\-T\-O\-R\-\_\-\-F\-I\-L\-E\-\_\-\-F\-O\-R\-M\-A\-T\-\_\-\-C\-S\-V}\label{classmts_collector_base_aa228bed8144053d0bfa316f9ac9d0901a4ee4b02e555603aafc22593f28cc7841}
+}]\index{C\-O\-L\-L\-E\-C\-T\-O\-R\-\_\-\-F\-I\-L\-E\-\_\-\-F\-O\-R\-M\-A\-T\-\_\-\-U\-N\-D\-E\-F\-I\-N\-E\-D@{C\-O\-L\-L\-E\-C\-T\-O\-R\-\_\-\-F\-I\-L\-E\-\_\-\-F\-O\-R\-M\-A\-T\-\_\-\-U\-N\-D\-E\-F\-I\-N\-E\-D}!mts\-Collector\-Base@{mts\-Collector\-Base}}\index{mts\-Collector\-Base@{mts\-Collector\-Base}!C\-O\-L\-L\-E\-C\-T\-O\-R\-\_\-\-F\-I\-L\-E\-\_\-\-F\-O\-R\-M\-A\-T\-\_\-\-U\-N\-D\-E\-F\-I\-N\-E\-D@{C\-O\-L\-L\-E\-C\-T\-O\-R\-\_\-\-F\-I\-L\-E\-\_\-\-F\-O\-R\-M\-A\-T\-\_\-\-U\-N\-D\-E\-F\-I\-N\-E\-D}}\item[{\em 
+\hypertarget{classmts_collector_base_aa228bed8144053d0bfa316f9ac9d0901ae29b8a9aa7f007f9b5ef48824c0d34c5}{C\-O\-L\-L\-E\-C\-T\-O\-R\-\_\-\-F\-I\-L\-E\-\_\-\-F\-O\-R\-M\-A\-T\-\_\-\-U\-N\-D\-E\-F\-I\-N\-E\-D}\label{classmts_collector_base_aa228bed8144053d0bfa316f9ac9d0901ae29b8a9aa7f007f9b5ef48824c0d34c5}
+}]\end{description}
+\end{Desc}
+\hypertarget{classmts_collector_base_adfbc058665584a56933a7997229c1fb6}{\index{mts\-Collector\-Base@{mts\-Collector\-Base}!Collector\-Status@{Collector\-Status}}
+\index{Collector\-Status@{Collector\-Status}!mtsCollectorBase@{mts\-Collector\-Base}}
+\subsubsection[{Collector\-Status}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf mts\-Collector\-Base\-::\-Collector\-Status}\hspace{0.3cm}{\ttfamily [protected]}}}\label{classmts_collector_base_adfbc058665584a56933a7997229c1fb6}
+State definition of the collector \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{C\-O\-L\-L\-E\-C\-T\-O\-R\-\_\-\-S\-T\-O\-P@{C\-O\-L\-L\-E\-C\-T\-O\-R\-\_\-\-S\-T\-O\-P}!mts\-Collector\-Base@{mts\-Collector\-Base}}\index{mts\-Collector\-Base@{mts\-Collector\-Base}!C\-O\-L\-L\-E\-C\-T\-O\-R\-\_\-\-S\-T\-O\-P@{C\-O\-L\-L\-E\-C\-T\-O\-R\-\_\-\-S\-T\-O\-P}}\item[{\em 
+\hypertarget{classmts_collector_base_adfbc058665584a56933a7997229c1fb6a2bf9d2e7c0bcf5aa734411dd6c969ff2}{C\-O\-L\-L\-E\-C\-T\-O\-R\-\_\-\-S\-T\-O\-P}\label{classmts_collector_base_adfbc058665584a56933a7997229c1fb6a2bf9d2e7c0bcf5aa734411dd6c969ff2}
+}]\index{C\-O\-L\-L\-E\-C\-T\-O\-R\-\_\-\-W\-A\-I\-T\-\_\-\-S\-T\-A\-R\-T@{C\-O\-L\-L\-E\-C\-T\-O\-R\-\_\-\-W\-A\-I\-T\-\_\-\-S\-T\-A\-R\-T}!mts\-Collector\-Base@{mts\-Collector\-Base}}\index{mts\-Collector\-Base@{mts\-Collector\-Base}!C\-O\-L\-L\-E\-C\-T\-O\-R\-\_\-\-W\-A\-I\-T\-\_\-\-S\-T\-A\-R\-T@{C\-O\-L\-L\-E\-C\-T\-O\-R\-\_\-\-W\-A\-I\-T\-\_\-\-S\-T\-A\-R\-T}}\item[{\em 
+\hypertarget{classmts_collector_base_adfbc058665584a56933a7997229c1fb6a67657229ff967c447ed3289c730bdf11}{C\-O\-L\-L\-E\-C\-T\-O\-R\-\_\-\-W\-A\-I\-T\-\_\-\-S\-T\-A\-R\-T}\label{classmts_collector_base_adfbc058665584a56933a7997229c1fb6a67657229ff967c447ed3289c730bdf11}
+}]\index{C\-O\-L\-L\-E\-C\-T\-O\-R\-\_\-\-C\-O\-L\-L\-E\-C\-T\-I\-N\-G@{C\-O\-L\-L\-E\-C\-T\-O\-R\-\_\-\-C\-O\-L\-L\-E\-C\-T\-I\-N\-G}!mts\-Collector\-Base@{mts\-Collector\-Base}}\index{mts\-Collector\-Base@{mts\-Collector\-Base}!C\-O\-L\-L\-E\-C\-T\-O\-R\-\_\-\-C\-O\-L\-L\-E\-C\-T\-I\-N\-G@{C\-O\-L\-L\-E\-C\-T\-O\-R\-\_\-\-C\-O\-L\-L\-E\-C\-T\-I\-N\-G}}\item[{\em 
+\hypertarget{classmts_collector_base_adfbc058665584a56933a7997229c1fb6a9162148874993d7a2bf7a40bd5b1ad24}{C\-O\-L\-L\-E\-C\-T\-O\-R\-\_\-\-C\-O\-L\-L\-E\-C\-T\-I\-N\-G}\label{classmts_collector_base_adfbc058665584a56933a7997229c1fb6a9162148874993d7a2bf7a40bd5b1ad24}
+}]\index{C\-O\-L\-L\-E\-C\-T\-O\-R\-\_\-\-W\-A\-I\-T\-\_\-\-S\-T\-O\-P@{C\-O\-L\-L\-E\-C\-T\-O\-R\-\_\-\-W\-A\-I\-T\-\_\-\-S\-T\-O\-P}!mts\-Collector\-Base@{mts\-Collector\-Base}}\index{mts\-Collector\-Base@{mts\-Collector\-Base}!C\-O\-L\-L\-E\-C\-T\-O\-R\-\_\-\-W\-A\-I\-T\-\_\-\-S\-T\-O\-P@{C\-O\-L\-L\-E\-C\-T\-O\-R\-\_\-\-W\-A\-I\-T\-\_\-\-S\-T\-O\-P}}\item[{\em 
+\hypertarget{classmts_collector_base_adfbc058665584a56933a7997229c1fb6a84e8e4233359e044e0f7db8ddc04f8c5}{C\-O\-L\-L\-E\-C\-T\-O\-R\-\_\-\-W\-A\-I\-T\-\_\-\-S\-T\-O\-P}\label{classmts_collector_base_adfbc058665584a56933a7997229c1fb6a84e8e4233359e044e0f7db8ddc04f8c5}
+}]\end{description}
+\end{Desc}
 
 
 \subsection{Constructor \& Destructor Documentation}
-\hypertarget{classmts_collector_base_a60f7407181c031a8e8c57fdd48c4e6c7}{}\index{mts\+Collector\+Base@{mts\+Collector\+Base}!mts\+Collector\+Base@{mts\+Collector\+Base}}
-\index{mts\+Collector\+Base@{mts\+Collector\+Base}!mts\+Collector\+Base@{mts\+Collector\+Base}}
-\subsubsection[{mts\+Collector\+Base}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Collector\+Base\+::mts\+Collector\+Base (
+\hypertarget{classmts_collector_base_a60f7407181c031a8e8c57fdd48c4e6c7}{\index{mts\-Collector\-Base@{mts\-Collector\-Base}!mts\-Collector\-Base@{mts\-Collector\-Base}}
+\index{mts\-Collector\-Base@{mts\-Collector\-Base}!mtsCollectorBase@{mts\-Collector\-Base}}
+\subsubsection[{mts\-Collector\-Base}]{\setlength{\rightskip}{0pt plus 5cm}mts\-Collector\-Base\-::mts\-Collector\-Base (
 \begin{DoxyParamCaption}
-\item[{const std\+::string \&}]{collector\+Name, }
-\item[{const {\bf Collector\+File\+Format}}]{file\+Format}
+\item[{const std\-::string \&}]{collector\-Name, }
+\item[{const {\bf Collector\-File\-Format}}]{file\-Format}
 \end{DoxyParamCaption}
-)}\label{classmts_collector_base_a60f7407181c031a8e8c57fdd48c4e6c7}
-\hypertarget{classmts_collector_base_a25a5386c1465c3bc95379d427729d0b5}{}\index{mts\+Collector\+Base@{mts\+Collector\+Base}!````~mts\+Collector\+Base@{$\sim$mts\+Collector\+Base}}
-\index{````~mts\+Collector\+Base@{$\sim$mts\+Collector\+Base}!mts\+Collector\+Base@{mts\+Collector\+Base}}
-\subsubsection[{$\sim$mts\+Collector\+Base}]{\setlength{\rightskip}{0pt plus 5cm}virtual mts\+Collector\+Base\+::$\sim$mts\+Collector\+Base (
+)}}\label{classmts_collector_base_a60f7407181c031a8e8c57fdd48c4e6c7}
+\hypertarget{classmts_collector_base_a25a5386c1465c3bc95379d427729d0b5}{\index{mts\-Collector\-Base@{mts\-Collector\-Base}!$\sim$mts\-Collector\-Base@{$\sim$mts\-Collector\-Base}}
+\index{$\sim$mts\-Collector\-Base@{$\sim$mts\-Collector\-Base}!mtsCollectorBase@{mts\-Collector\-Base}}
+\subsubsection[{$\sim$mts\-Collector\-Base}]{\setlength{\rightskip}{0pt plus 5cm}virtual mts\-Collector\-Base\-::$\sim$mts\-Collector\-Base (
 \begin{DoxyParamCaption}
 \item[{void}]{}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_collector_base_a25a5386c1465c3bc95379d427729d0b5}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classmts_collector_base_a25a5386c1465c3bc95379d427729d0b5}
 
 
 \subsection{Member Function Documentation}
-\hypertarget{classmts_collector_base_a1ec6f11c284cf013ab3cf7556cd04896}{}\index{mts\+Collector\+Base@{mts\+Collector\+Base}!Cleanup@{Cleanup}}
-\index{Cleanup@{Cleanup}!mts\+Collector\+Base@{mts\+Collector\+Base}}
-\subsubsection[{Cleanup}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Collector\+Base\+::\+Cleanup (
+\hypertarget{classmts_collector_base_a1ec6f11c284cf013ab3cf7556cd04896}{\index{mts\-Collector\-Base@{mts\-Collector\-Base}!Cleanup@{Cleanup}}
+\index{Cleanup@{Cleanup}!mtsCollectorBase@{mts\-Collector\-Base}}
+\subsubsection[{Cleanup}]{\setlength{\rightskip}{0pt plus 5cm}void mts\-Collector\-Base\-::\-Cleanup (
 \begin{DoxyParamCaption}
 \item[{void}]{}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classmts_collector_base_a1ec6f11c284cf013ab3cf7556cd04896}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{classmts_collector_base_a1ec6f11c284cf013ab3cf7556cd04896}
 Clean up internal data. 
 
-Reimplemented from \hyperlink{classmts_component_a891f330f4fde7d831dcf7dc537dc5e81}{mts\+Component}.
+Reimplemented from \hyperlink{classmts_component_a891f330f4fde7d831dcf7dc537dc5e81}{mts\-Component}.
 
-\hypertarget{classmts_collector_base_a9488170795470dd8ca10ae14179e9a6f}{}\index{mts\+Collector\+Base@{mts\+Collector\+Base}!Clear\+Task\+Map@{Clear\+Task\+Map}}
-\index{Clear\+Task\+Map@{Clear\+Task\+Map}!mts\+Collector\+Base@{mts\+Collector\+Base}}
-\subsubsection[{Clear\+Task\+Map}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Collector\+Base\+::\+Clear\+Task\+Map (
+\hypertarget{classmts_collector_base_a9488170795470dd8ca10ae14179e9a6f}{\index{mts\-Collector\-Base@{mts\-Collector\-Base}!Clear\-Task\-Map@{Clear\-Task\-Map}}
+\index{Clear\-Task\-Map@{Clear\-Task\-Map}!mtsCollectorBase@{mts\-Collector\-Base}}
+\subsubsection[{Clear\-Task\-Map}]{\setlength{\rightskip}{0pt plus 5cm}void mts\-Collector\-Base\-::\-Clear\-Task\-Map (
 \begin{DoxyParamCaption}
 \item[{void}]{}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_collector_base_a9488170795470dd8ca10ae14179e9a6f}
-Clear Task\+Map \hypertarget{classmts_collector_base_aa9ba1bf118223c5cb9d5700a4cf6efaa}{}\index{mts\+Collector\+Base@{mts\+Collector\+Base}!Close\+Output@{Close\+Output}}
-\index{Close\+Output@{Close\+Output}!mts\+Collector\+Base@{mts\+Collector\+Base}}
-\subsubsection[{Close\+Output}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Collector\+Base\+::\+Close\+Output (
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classmts_collector_base_a9488170795470dd8ca10ae14179e9a6f}
+Clear Task\-Map \hypertarget{classmts_collector_base_aa9ba1bf118223c5cb9d5700a4cf6efaa}{\index{mts\-Collector\-Base@{mts\-Collector\-Base}!Close\-Output@{Close\-Output}}
+\index{Close\-Output@{Close\-Output}!mtsCollectorBase@{mts\-Collector\-Base}}
+\subsubsection[{Close\-Output}]{\setlength{\rightskip}{0pt plus 5cm}void mts\-Collector\-Base\-::\-Close\-Output (
 \begin{DoxyParamCaption}
 \item[{void}]{}
 \end{DoxyParamCaption}
-)}\label{classmts_collector_base_aa9ba1bf118223c5cb9d5700a4cf6efaa}
-Closes the output file stream \hypertarget{classmts_collector_base_a60da1298e1272b6af21a2eb94d4844f0}{}\index{mts\+Collector\+Base@{mts\+Collector\+Base}!Get\+Default\+Output\+Name@{Get\+Default\+Output\+Name}}
-\index{Get\+Default\+Output\+Name@{Get\+Default\+Output\+Name}!mts\+Collector\+Base@{mts\+Collector\+Base}}
-\subsubsection[{Get\+Default\+Output\+Name}]{\setlength{\rightskip}{0pt plus 5cm}virtual std\+::string mts\+Collector\+Base\+::\+Get\+Default\+Output\+Name (
+)}}\label{classmts_collector_base_aa9ba1bf118223c5cb9d5700a4cf6efaa}
+Closes the output file stream \hypertarget{classmts_collector_base_a60da1298e1272b6af21a2eb94d4844f0}{\index{mts\-Collector\-Base@{mts\-Collector\-Base}!Get\-Default\-Output\-Name@{Get\-Default\-Output\-Name}}
+\index{Get\-Default\-Output\-Name@{Get\-Default\-Output\-Name}!mtsCollectorBase@{mts\-Collector\-Base}}
+\subsubsection[{Get\-Default\-Output\-Name}]{\setlength{\rightskip}{0pt plus 5cm}virtual std\-::string mts\-Collector\-Base\-::\-Get\-Default\-Output\-Name (
 \begin{DoxyParamCaption}
 \item[{void}]{}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classmts_collector_base_a60da1298e1272b6af21a2eb94d4844f0}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classmts_collector_base_a60da1298e1272b6af21a2eb94d4844f0}
 Generate default file name, without the prefix (txt, csv, cdat) 
 
-Implemented in \hyperlink{classmts_collector_event_ab6cd1d40c968a7232be60db5e0757ea0}{mts\+Collector\+Event}.
+Implemented in \hyperlink{classmts_collector_event_ab6cd1d40c968a7232be60db5e0757ea0}{mts\-Collector\-Event}.
 
-\hypertarget{classmts_collector_base_ad28d8ad97ed6592efb1d4a388523773d}{}\index{mts\+Collector\+Base@{mts\+Collector\+Base}!Get\+Output\+File\+Name@{Get\+Output\+File\+Name}}
-\index{Get\+Output\+File\+Name@{Get\+Output\+File\+Name}!mts\+Collector\+Base@{mts\+Collector\+Base}}
-\subsubsection[{Get\+Output\+File\+Name}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string\& mts\+Collector\+Base\+::\+Get\+Output\+File\+Name (
+\hypertarget{classmts_collector_base_ad28d8ad97ed6592efb1d4a388523773d}{\index{mts\-Collector\-Base@{mts\-Collector\-Base}!Get\-Output\-File\-Name@{Get\-Output\-File\-Name}}
+\index{Get\-Output\-File\-Name@{Get\-Output\-File\-Name}!mtsCollectorBase@{mts\-Collector\-Base}}
+\subsubsection[{Get\-Output\-File\-Name}]{\setlength{\rightskip}{0pt plus 5cm}const std\-::string\& mts\-Collector\-Base\-::\-Get\-Output\-File\-Name (
 \begin{DoxyParamCaption}
 \item[{void}]{}
 \end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_collector_base_ad28d8ad97ed6592efb1d4a388523773d}
-Get the name of log file currently being written. \hypertarget{classmts_collector_base_ac53feb248d3ebd8056f7454855c1aba3}{}\index{mts\+Collector\+Base@{mts\+Collector\+Base}!Get\+Working\+Directory@{Get\+Working\+Directory}}
-\index{Get\+Working\+Directory@{Get\+Working\+Directory}!mts\+Collector\+Base@{mts\+Collector\+Base}}
-\subsubsection[{Get\+Working\+Directory}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Collector\+Base\+::\+Get\+Working\+Directory (
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmts_collector_base_ad28d8ad97ed6592efb1d4a388523773d}
+Get the name of log file currently being written. \hypertarget{classmts_collector_base_ac53feb248d3ebd8056f7454855c1aba3}{\index{mts\-Collector\-Base@{mts\-Collector\-Base}!Get\-Working\-Directory@{Get\-Working\-Directory}}
+\index{Get\-Working\-Directory@{Get\-Working\-Directory}!mtsCollectorBase@{mts\-Collector\-Base}}
+\subsubsection[{Get\-Working\-Directory}]{\setlength{\rightskip}{0pt plus 5cm}void mts\-Collector\-Base\-::\-Get\-Working\-Directory (
 \begin{DoxyParamCaption}
-\item[{{\bf mts\+Std\+String} \&}]{place\+Holder}
+\item[{{\bf mts\-Std\-String} \&}]{place\-Holder}
 \end{DoxyParamCaption}
-) const}\label{classmts_collector_base_ac53feb248d3ebd8056f7454855c1aba3}
-Get working directory, usable with commands as well \hypertarget{classmts_collector_base_a7faf69da541094f4ba045165e812b7df}{}\index{mts\+Collector\+Base@{mts\+Collector\+Base}!Init@{Init}}
-\index{Init@{Init}!mts\+Collector\+Base@{mts\+Collector\+Base}}
-\subsubsection[{Init}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Collector\+Base\+::\+Init (
-\begin{DoxyParamCaption}
-\item[{void}]{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_collector_base_a7faf69da541094f4ba045165e812b7df}
-Initialize this collector instance \hypertarget{classmts_collector_base_a796db0258af6b2297ab530aaf509ba8f}{}\index{mts\+Collector\+Base@{mts\+Collector\+Base}!Open\+File\+If\+Needed@{Open\+File\+If\+Needed}}
-\index{Open\+File\+If\+Needed@{Open\+File\+If\+Needed}!mts\+Collector\+Base@{mts\+Collector\+Base}}
-\subsubsection[{Open\+File\+If\+Needed}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Collector\+Base\+::\+Open\+File\+If\+Needed (
+) const}}\label{classmts_collector_base_ac53feb248d3ebd8056f7454855c1aba3}
+Get working directory, usable with commands as well \hypertarget{classmts_collector_base_a7faf69da541094f4ba045165e812b7df}{\index{mts\-Collector\-Base@{mts\-Collector\-Base}!Init@{Init}}
+\index{Init@{Init}!mtsCollectorBase@{mts\-Collector\-Base}}
+\subsubsection[{Init}]{\setlength{\rightskip}{0pt plus 5cm}void mts\-Collector\-Base\-::\-Init (
 \begin{DoxyParamCaption}
 \item[{void}]{}
 \end{DoxyParamCaption}
-)}\label{classmts_collector_base_a796db0258af6b2297ab530aaf509ba8f}
-Files are not created or opened when Set\+Output is called, this method will open the file if needed. \hypertarget{classmts_collector_base_a8f7a140dc2f96646b191680697fc341a}{}\index{mts\+Collector\+Base@{mts\+Collector\+Base}!Set\+Delimiter@{Set\+Delimiter}}
-\index{Set\+Delimiter@{Set\+Delimiter}!mts\+Collector\+Base@{mts\+Collector\+Base}}
-\subsubsection[{Set\+Delimiter}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Collector\+Base\+::\+Set\+Delimiter (
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classmts_collector_base_a7faf69da541094f4ba045165e812b7df}
+Initialize this collector instance \hypertarget{classmts_collector_base_a796db0258af6b2297ab530aaf509ba8f}{\index{mts\-Collector\-Base@{mts\-Collector\-Base}!Open\-File\-If\-Needed@{Open\-File\-If\-Needed}}
+\index{Open\-File\-If\-Needed@{Open\-File\-If\-Needed}!mtsCollectorBase@{mts\-Collector\-Base}}
+\subsubsection[{Open\-File\-If\-Needed}]{\setlength{\rightskip}{0pt plus 5cm}void mts\-Collector\-Base\-::\-Open\-File\-If\-Needed (
 \begin{DoxyParamCaption}
 \item[{void}]{}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_collector_base_a8f7a140dc2f96646b191680697fc341a}
-Update the delimiter used in output files based on file format. Should be used everytime File\+Format is set. \hypertarget{classmts_collector_base_a821b7d5be652daf529c461c7d3ba3f4e}{}\index{mts\+Collector\+Base@{mts\+Collector\+Base}!Set\+Output@{Set\+Output}}
-\index{Set\+Output@{Set\+Output}!mts\+Collector\+Base@{mts\+Collector\+Base}}
-\subsubsection[{Set\+Output}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Collector\+Base\+::\+Set\+Output (
-\begin{DoxyParamCaption}
-\item[{const std\+::string \&}]{file\+Name, }
-\item[{const {\bf Collector\+File\+Format}}]{file\+Format}
-\end{DoxyParamCaption}
-)}\label{classmts_collector_base_a821b7d5be652daf529c461c7d3ba3f4e}
-Define the output file and format. If a file is already in use, this method will close the current one. \hypertarget{classmts_collector_base_aa3066c51680e52859f05db71a97bf9c1}{}\index{mts\+Collector\+Base@{mts\+Collector\+Base}!Set\+Output@{Set\+Output}}
-\index{Set\+Output@{Set\+Output}!mts\+Collector\+Base@{mts\+Collector\+Base}}
-\subsubsection[{Set\+Output}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Collector\+Base\+::\+Set\+Output (
-\begin{DoxyParamCaption}
-\item[{std\+::ostream \&}]{output\+Stream, }
-\item[{const {\bf Collector\+File\+Format}}]{file\+Format}
-\end{DoxyParamCaption}
-)}\label{classmts_collector_base_aa3066c51680e52859f05db71a97bf9c1}
-Define the output using an existing ostream, the collector will not open nor close the stream. \hypertarget{classmts_collector_base_ada2f3c5a80035350ae0d4c0a1f79d10f}{}\index{mts\+Collector\+Base@{mts\+Collector\+Base}!Set\+Output@{Set\+Output}}
-\index{Set\+Output@{Set\+Output}!mts\+Collector\+Base@{mts\+Collector\+Base}}
-\subsubsection[{Set\+Output}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Collector\+Base\+::\+Set\+Output (
-\begin{DoxyParamCaption}
-\item[{std\+::ostream \&}]{output\+Stream}
-\end{DoxyParamCaption}
-)}\label{classmts_collector_base_ada2f3c5a80035350ae0d4c0a1f79d10f}
-Define the output using an existing ostream, the collector will not open nor close the stream. If this method is called for the first time, the format will be C\+O\+L\+L\+E\+C\+T\+O\+R\+\_\+\+F\+I\+L\+E\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+C\+S\+V, and the floating point notation will be C\+O\+L\+L\+E\+C\+T\+O\+R\+\_\+\+F\+I\+L\+E\+\_\+\+F\+L\+O\+A\+T\+I\+N\+G\+\_\+\+N\+O\+T\+A\+T\+I\+O\+N\+\_\+\+N\+O\+N\+E otherwise it will use the previously used format. \hypertarget{classmts_collector_base_a9e207050f00ef0132348e6f2321a451a}{}\index{mts\+Collector\+Base@{mts\+Collector\+Base}!Set\+Output\+Stream\+Fill@{Set\+Output\+Stream\+Fill}}
-\index{Set\+Output\+Stream\+Fill@{Set\+Output\+Stream\+Fill}!mts\+Collector\+Base@{mts\+Collector\+Base}}
-\subsubsection[{Set\+Output\+Stream\+Fill}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Collector\+Base\+::\+Set\+Output\+Stream\+Fill (
-\begin{DoxyParamCaption}
-\item[{const char}]{fill\+Character}
-\end{DoxyParamCaption}
-)}\label{classmts_collector_base_a9e207050f00ef0132348e6f2321a451a}
-Set fill character for the output file. This setting will apply to all future files. \hypertarget{classmts_collector_base_a2d1f0135da1bdfcf964adf5add3848b1}{}\index{mts\+Collector\+Base@{mts\+Collector\+Base}!Set\+Output\+Stream\+Floating\+Notation@{Set\+Output\+Stream\+Floating\+Notation}}
-\index{Set\+Output\+Stream\+Floating\+Notation@{Set\+Output\+Stream\+Floating\+Notation}!mts\+Collector\+Base@{mts\+Collector\+Base}}
-\subsubsection[{Set\+Output\+Stream\+Floating\+Notation}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Collector\+Base\+::\+Set\+Output\+Stream\+Floating\+Notation (
-\begin{DoxyParamCaption}
-\item[{const {\bf Collector\+File\+Floating\+Notation}}]{floating\+Notation}
-\end{DoxyParamCaption}
-)}\label{classmts_collector_base_a2d1f0135da1bdfcf964adf5add3848b1}
-Set floating point notation for the output stream. This setting will apply to all future files opened. \hypertarget{classmts_collector_base_a12e7d75810e849d08f81b22ba15b2651}{}\index{mts\+Collector\+Base@{mts\+Collector\+Base}!Set\+Output\+Stream\+Params@{Set\+Output\+Stream\+Params}}
-\index{Set\+Output\+Stream\+Params@{Set\+Output\+Stream\+Params}!mts\+Collector\+Base@{mts\+Collector\+Base}}
-\subsubsection[{Set\+Output\+Stream\+Params}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Collector\+Base\+::\+Set\+Output\+Stream\+Params (
+)}}\label{classmts_collector_base_a796db0258af6b2297ab530aaf509ba8f}
+Files are not created or opened when Set\-Output is called, this method will open the file if needed. \hypertarget{classmts_collector_base_a8f7a140dc2f96646b191680697fc341a}{\index{mts\-Collector\-Base@{mts\-Collector\-Base}!Set\-Delimiter@{Set\-Delimiter}}
+\index{Set\-Delimiter@{Set\-Delimiter}!mtsCollectorBase@{mts\-Collector\-Base}}
+\subsubsection[{Set\-Delimiter}]{\setlength{\rightskip}{0pt plus 5cm}void mts\-Collector\-Base\-::\-Set\-Delimiter (
 \begin{DoxyParamCaption}
 \item[{void}]{}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_collector_base_a12e7d75810e849d08f81b22ba15b2651}
-Setup the parameters for the collector output stream. \hypertarget{classmts_collector_base_a0d118b2d074a7466b6b659a16dc4612c}{}\index{mts\+Collector\+Base@{mts\+Collector\+Base}!Set\+Output\+Stream\+Precision@{Set\+Output\+Stream\+Precision}}
-\index{Set\+Output\+Stream\+Precision@{Set\+Output\+Stream\+Precision}!mts\+Collector\+Base@{mts\+Collector\+Base}}
-\subsubsection[{Set\+Output\+Stream\+Precision}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Collector\+Base\+::\+Set\+Output\+Stream\+Precision (
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classmts_collector_base_a8f7a140dc2f96646b191680697fc341a}
+Update the delimiter used in output files based on file format. Should be used everytime File\-Format is set. \hypertarget{classmts_collector_base_a821b7d5be652daf529c461c7d3ba3f4e}{\index{mts\-Collector\-Base@{mts\-Collector\-Base}!Set\-Output@{Set\-Output}}
+\index{Set\-Output@{Set\-Output}!mtsCollectorBase@{mts\-Collector\-Base}}
+\subsubsection[{Set\-Output}]{\setlength{\rightskip}{0pt plus 5cm}void mts\-Collector\-Base\-::\-Set\-Output (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{file\-Name, }
+\item[{const {\bf Collector\-File\-Format}}]{file\-Format}
+\end{DoxyParamCaption}
+)}}\label{classmts_collector_base_a821b7d5be652daf529c461c7d3ba3f4e}
+Define the output file and format. If a file is already in use, this method will close the current one. \hypertarget{classmts_collector_base_aa3066c51680e52859f05db71a97bf9c1}{\index{mts\-Collector\-Base@{mts\-Collector\-Base}!Set\-Output@{Set\-Output}}
+\index{Set\-Output@{Set\-Output}!mtsCollectorBase@{mts\-Collector\-Base}}
+\subsubsection[{Set\-Output}]{\setlength{\rightskip}{0pt plus 5cm}void mts\-Collector\-Base\-::\-Set\-Output (
+\begin{DoxyParamCaption}
+\item[{std\-::ostream \&}]{output\-Stream, }
+\item[{const {\bf Collector\-File\-Format}}]{file\-Format}
+\end{DoxyParamCaption}
+)}}\label{classmts_collector_base_aa3066c51680e52859f05db71a97bf9c1}
+Define the output using an existing ostream, the collector will not open nor close the stream. \hypertarget{classmts_collector_base_ada2f3c5a80035350ae0d4c0a1f79d10f}{\index{mts\-Collector\-Base@{mts\-Collector\-Base}!Set\-Output@{Set\-Output}}
+\index{Set\-Output@{Set\-Output}!mtsCollectorBase@{mts\-Collector\-Base}}
+\subsubsection[{Set\-Output}]{\setlength{\rightskip}{0pt plus 5cm}void mts\-Collector\-Base\-::\-Set\-Output (
+\begin{DoxyParamCaption}
+\item[{std\-::ostream \&}]{output\-Stream}
+\end{DoxyParamCaption}
+)}}\label{classmts_collector_base_ada2f3c5a80035350ae0d4c0a1f79d10f}
+Define the output using an existing ostream, the collector will not open nor close the stream. If this method is called for the first time, the format will be C\-O\-L\-L\-E\-C\-T\-O\-R\-\_\-\-F\-I\-L\-E\-\_\-\-F\-O\-R\-M\-A\-T\-\_\-\-C\-S\-V, and the floating point notation will be C\-O\-L\-L\-E\-C\-T\-O\-R\-\_\-\-F\-I\-L\-E\-\_\-\-F\-L\-O\-A\-T\-I\-N\-G\-\_\-\-N\-O\-T\-A\-T\-I\-O\-N\-\_\-\-N\-O\-N\-E otherwise it will use the previously used format. \hypertarget{classmts_collector_base_a9e207050f00ef0132348e6f2321a451a}{\index{mts\-Collector\-Base@{mts\-Collector\-Base}!Set\-Output\-Stream\-Fill@{Set\-Output\-Stream\-Fill}}
+\index{Set\-Output\-Stream\-Fill@{Set\-Output\-Stream\-Fill}!mtsCollectorBase@{mts\-Collector\-Base}}
+\subsubsection[{Set\-Output\-Stream\-Fill}]{\setlength{\rightskip}{0pt plus 5cm}void mts\-Collector\-Base\-::\-Set\-Output\-Stream\-Fill (
+\begin{DoxyParamCaption}
+\item[{const char}]{fill\-Character}
+\end{DoxyParamCaption}
+)}}\label{classmts_collector_base_a9e207050f00ef0132348e6f2321a451a}
+Set fill character for the output file. This setting will apply to all future files. \hypertarget{classmts_collector_base_a2d1f0135da1bdfcf964adf5add3848b1}{\index{mts\-Collector\-Base@{mts\-Collector\-Base}!Set\-Output\-Stream\-Floating\-Notation@{Set\-Output\-Stream\-Floating\-Notation}}
+\index{Set\-Output\-Stream\-Floating\-Notation@{Set\-Output\-Stream\-Floating\-Notation}!mtsCollectorBase@{mts\-Collector\-Base}}
+\subsubsection[{Set\-Output\-Stream\-Floating\-Notation}]{\setlength{\rightskip}{0pt plus 5cm}void mts\-Collector\-Base\-::\-Set\-Output\-Stream\-Floating\-Notation (
+\begin{DoxyParamCaption}
+\item[{const {\bf Collector\-File\-Floating\-Notation}}]{floating\-Notation}
+\end{DoxyParamCaption}
+)}}\label{classmts_collector_base_a2d1f0135da1bdfcf964adf5add3848b1}
+Set floating point notation for the output stream. This setting will apply to all future files opened. \hypertarget{classmts_collector_base_a12e7d75810e849d08f81b22ba15b2651}{\index{mts\-Collector\-Base@{mts\-Collector\-Base}!Set\-Output\-Stream\-Params@{Set\-Output\-Stream\-Params}}
+\index{Set\-Output\-Stream\-Params@{Set\-Output\-Stream\-Params}!mtsCollectorBase@{mts\-Collector\-Base}}
+\subsubsection[{Set\-Output\-Stream\-Params}]{\setlength{\rightskip}{0pt plus 5cm}void mts\-Collector\-Base\-::\-Set\-Output\-Stream\-Params (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classmts_collector_base_a12e7d75810e849d08f81b22ba15b2651}
+Setup the parameters for the collector output stream. \hypertarget{classmts_collector_base_a0d118b2d074a7466b6b659a16dc4612c}{\index{mts\-Collector\-Base@{mts\-Collector\-Base}!Set\-Output\-Stream\-Precision@{Set\-Output\-Stream\-Precision}}
+\index{Set\-Output\-Stream\-Precision@{Set\-Output\-Stream\-Precision}!mtsCollectorBase@{mts\-Collector\-Base}}
+\subsubsection[{Set\-Output\-Stream\-Precision}]{\setlength{\rightskip}{0pt plus 5cm}void mts\-Collector\-Base\-::\-Set\-Output\-Stream\-Precision (
 \begin{DoxyParamCaption}
 \item[{const int}]{precision}
 \end{DoxyParamCaption}
-)}\label{classmts_collector_base_a0d118b2d074a7466b6b659a16dc4612c}
-Set precision value for the output file. This setting will apply to all future files. \hypertarget{classmts_collector_base_a8ae87596c1de63ee54ffade9e21f35ad}{}\index{mts\+Collector\+Base@{mts\+Collector\+Base}!Set\+Output\+Stream\+Width@{Set\+Output\+Stream\+Width}}
-\index{Set\+Output\+Stream\+Width@{Set\+Output\+Stream\+Width}!mts\+Collector\+Base@{mts\+Collector\+Base}}
-\subsubsection[{Set\+Output\+Stream\+Width}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Collector\+Base\+::\+Set\+Output\+Stream\+Width (
+)}}\label{classmts_collector_base_a0d118b2d074a7466b6b659a16dc4612c}
+Set precision value for the output file. This setting will apply to all future files. \hypertarget{classmts_collector_base_a8ae87596c1de63ee54ffade9e21f35ad}{\index{mts\-Collector\-Base@{mts\-Collector\-Base}!Set\-Output\-Stream\-Width@{Set\-Output\-Stream\-Width}}
+\index{Set\-Output\-Stream\-Width@{Set\-Output\-Stream\-Width}!mtsCollectorBase@{mts\-Collector\-Base}}
+\subsubsection[{Set\-Output\-Stream\-Width}]{\setlength{\rightskip}{0pt plus 5cm}void mts\-Collector\-Base\-::\-Set\-Output\-Stream\-Width (
 \begin{DoxyParamCaption}
 \item[{const int}]{width}
 \end{DoxyParamCaption}
-)}\label{classmts_collector_base_a8ae87596c1de63ee54ffade9e21f35ad}
-Set width value for the output file. This setting will apply to all future files. \hypertarget{classmts_collector_base_a3467807159d338a761a2e7b730a582ce}{}\index{mts\+Collector\+Base@{mts\+Collector\+Base}!Set\+Output\+To\+Default@{Set\+Output\+To\+Default}}
-\index{Set\+Output\+To\+Default@{Set\+Output\+To\+Default}!mts\+Collector\+Base@{mts\+Collector\+Base}}
-\subsubsection[{Set\+Output\+To\+Default}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Collector\+Base\+::\+Set\+Output\+To\+Default (
+)}}\label{classmts_collector_base_a8ae87596c1de63ee54ffade9e21f35ad}
+Set width value for the output file. This setting will apply to all future files. \hypertarget{classmts_collector_base_a3467807159d338a761a2e7b730a582ce}{\index{mts\-Collector\-Base@{mts\-Collector\-Base}!Set\-Output\-To\-Default@{Set\-Output\-To\-Default}}
+\index{Set\-Output\-To\-Default@{Set\-Output\-To\-Default}!mtsCollectorBase@{mts\-Collector\-Base}}
+\subsubsection[{Set\-Output\-To\-Default}]{\setlength{\rightskip}{0pt plus 5cm}void mts\-Collector\-Base\-::\-Set\-Output\-To\-Default (
 \begin{DoxyParamCaption}
-\item[{const {\bf Collector\+File\+Format}}]{file\+Format}
+\item[{const {\bf Collector\-File\-Format}}]{file\-Format}
 \end{DoxyParamCaption}
-)}\label{classmts_collector_base_a3467807159d338a761a2e7b730a582ce}
-Creates a default file name using the task name, table name and date. The suffix depends on the file format. Uses the default floating point notation C\+O\+L\+L\+E\+C\+T\+O\+R\+\_\+\+F\+I\+L\+E\+\_\+\+F\+L\+O\+A\+T\+I\+N\+G\+\_\+\+N\+O\+T\+A\+T\+I\+O\+N\+\_\+\+N\+O\+N\+E \hypertarget{classmts_collector_base_a6c951b134d74648c86d5b54d04238c50}{}\index{mts\+Collector\+Base@{mts\+Collector\+Base}!Set\+Output\+To\+Default@{Set\+Output\+To\+Default}}
-\index{Set\+Output\+To\+Default@{Set\+Output\+To\+Default}!mts\+Collector\+Base@{mts\+Collector\+Base}}
-\subsubsection[{Set\+Output\+To\+Default}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Collector\+Base\+::\+Set\+Output\+To\+Default (
-\begin{DoxyParamCaption}
-\item[{void}]{}
-\end{DoxyParamCaption}
-)}\label{classmts_collector_base_a6c951b134d74648c86d5b54d04238c50}
-Creates a default file name using the task name, table name and date. If this method is called for the first time, the format will be C\+O\+L\+L\+E\+C\+T\+O\+R\+\_\+\+F\+I\+L\+E\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+C\+S\+V, and the floating point notation would be C\+O\+L\+L\+E\+C\+T\+O\+R\+\_\+\+F\+I\+L\+E\+\_\+\+F\+L\+O\+A\+T\+I\+N\+G\+\_\+\+N\+O\+T\+A\+T\+I\+O\+N\+\_\+\+N\+O\+N\+E, otherwise it will use the previously used format. \hypertarget{classmts_collector_base_a8cec0a5fdf2aa587718f3dacd9e98572}{}\index{mts\+Collector\+Base@{mts\+Collector\+Base}!Setup\+Control\+Interface@{Setup\+Control\+Interface}}
-\index{Setup\+Control\+Interface@{Setup\+Control\+Interface}!mts\+Collector\+Base@{mts\+Collector\+Base}}
-\subsubsection[{Setup\+Control\+Interface}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Collector\+Base\+::\+Setup\+Control\+Interface (
+)}}\label{classmts_collector_base_a3467807159d338a761a2e7b730a582ce}
+Creates a default file name using the task name, table name and date. The suffix depends on the file format. Uses the default floating point notation C\-O\-L\-L\-E\-C\-T\-O\-R\-\_\-\-F\-I\-L\-E\-\_\-\-F\-L\-O\-A\-T\-I\-N\-G\-\_\-\-N\-O\-T\-A\-T\-I\-O\-N\-\_\-\-N\-O\-N\-E \hypertarget{classmts_collector_base_a6c951b134d74648c86d5b54d04238c50}{\index{mts\-Collector\-Base@{mts\-Collector\-Base}!Set\-Output\-To\-Default@{Set\-Output\-To\-Default}}
+\index{Set\-Output\-To\-Default@{Set\-Output\-To\-Default}!mtsCollectorBase@{mts\-Collector\-Base}}
+\subsubsection[{Set\-Output\-To\-Default}]{\setlength{\rightskip}{0pt plus 5cm}void mts\-Collector\-Base\-::\-Set\-Output\-To\-Default (
 \begin{DoxyParamCaption}
 \item[{void}]{}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_collector_base_a8cec0a5fdf2aa587718f3dacd9e98572}
-Create the provided interface for control. \hypertarget{classmts_collector_base_a6983e4ef85748d0f898f69975147d0c2}{}\index{mts\+Collector\+Base@{mts\+Collector\+Base}!Set\+Working\+Directory@{Set\+Working\+Directory}}
-\index{Set\+Working\+Directory@{Set\+Working\+Directory}!mts\+Collector\+Base@{mts\+Collector\+Base}}
-\subsubsection[{Set\+Working\+Directory}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Collector\+Base\+::\+Set\+Working\+Directory (
+)}}\label{classmts_collector_base_a6c951b134d74648c86d5b54d04238c50}
+Creates a default file name using the task name, table name and date. If this method is called for the first time, the format will be C\-O\-L\-L\-E\-C\-T\-O\-R\-\_\-\-F\-I\-L\-E\-\_\-\-F\-O\-R\-M\-A\-T\-\_\-\-C\-S\-V, and the floating point notation would be C\-O\-L\-L\-E\-C\-T\-O\-R\-\_\-\-F\-I\-L\-E\-\_\-\-F\-L\-O\-A\-T\-I\-N\-G\-\_\-\-N\-O\-T\-A\-T\-I\-O\-N\-\_\-\-N\-O\-N\-E, otherwise it will use the previously used format. \hypertarget{classmts_collector_base_a8cec0a5fdf2aa587718f3dacd9e98572}{\index{mts\-Collector\-Base@{mts\-Collector\-Base}!Setup\-Control\-Interface@{Setup\-Control\-Interface}}
+\index{Setup\-Control\-Interface@{Setup\-Control\-Interface}!mtsCollectorBase@{mts\-Collector\-Base}}
+\subsubsection[{Setup\-Control\-Interface}]{\setlength{\rightskip}{0pt plus 5cm}void mts\-Collector\-Base\-::\-Setup\-Control\-Interface (
 \begin{DoxyParamCaption}
-\item[{const {\bf mts\+Std\+String} \&}]{directory}
+\item[{void}]{}
 \end{DoxyParamCaption}
-)}\label{classmts_collector_base_a6983e4ef85748d0f898f69975147d0c2}
-Set working directory, usable with commands as well \hypertarget{classmts_collector_base_a2fde70b19fbe88b049e8a8d19320f2c2}{}\index{mts\+Collector\+Base@{mts\+Collector\+Base}!Start\+Collection@{Start\+Collection}}
-\index{Start\+Collection@{Start\+Collection}!mts\+Collector\+Base@{mts\+Collector\+Base}}
-\subsubsection[{Start\+Collection}]{\setlength{\rightskip}{0pt plus 5cm}virtual void mts\+Collector\+Base\+::\+Start\+Collection (
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classmts_collector_base_a8cec0a5fdf2aa587718f3dacd9e98572}
+Create the provided interface for control. \hypertarget{classmts_collector_base_a6983e4ef85748d0f898f69975147d0c2}{\index{mts\-Collector\-Base@{mts\-Collector\-Base}!Set\-Working\-Directory@{Set\-Working\-Directory}}
+\index{Set\-Working\-Directory@{Set\-Working\-Directory}!mtsCollectorBase@{mts\-Collector\-Base}}
+\subsubsection[{Set\-Working\-Directory}]{\setlength{\rightskip}{0pt plus 5cm}void mts\-Collector\-Base\-::\-Set\-Working\-Directory (
 \begin{DoxyParamCaption}
-\item[{const {\bf mts\+Double} \&}]{delay\+In\+Seconds}
+\item[{const {\bf mts\-Std\-String} \&}]{directory}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classmts_collector_base_a2fde70b19fbe88b049e8a8d19320f2c2}
-Begin collecting data. Data collection will begin after delayed\+Start second(s). If it is zero (by default), it means \textquotesingle{}start now\textquotesingle{}. 
+)}}\label{classmts_collector_base_a6983e4ef85748d0f898f69975147d0c2}
+Set working directory, usable with commands as well \hypertarget{classmts_collector_base_a2fde70b19fbe88b049e8a8d19320f2c2}{\index{mts\-Collector\-Base@{mts\-Collector\-Base}!Start\-Collection@{Start\-Collection}}
+\index{Start\-Collection@{Start\-Collection}!mtsCollectorBase@{mts\-Collector\-Base}}
+\subsubsection[{Start\-Collection}]{\setlength{\rightskip}{0pt plus 5cm}virtual void mts\-Collector\-Base\-::\-Start\-Collection (
+\begin{DoxyParamCaption}
+\item[{const {\bf mts\-Double} \&}]{delay\-In\-Seconds}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classmts_collector_base_a2fde70b19fbe88b049e8a8d19320f2c2}
+Begin collecting data. Data collection will begin after delayed\-Start second(s). If it is zero (by default), it means 'start now'. 
 
-Implemented in \hyperlink{classmts_collector_event_aceb830acb6f06d952ca3c9f19e5d3dc3}{mts\+Collector\+Event}, and \hyperlink{classmts_collector_state_a4337bf2b019fb0516abfe5faadbac5f5}{mts\+Collector\+State}.
+Implemented in \hyperlink{classmts_collector_event_aceb830acb6f06d952ca3c9f19e5d3dc3}{mts\-Collector\-Event}, and \hyperlink{classmts_collector_state_a4337bf2b019fb0516abfe5faadbac5f5}{mts\-Collector\-State}.
 
-\hypertarget{classmts_collector_base_a9710912f3c7a2a0e27210ec3e4031836}{}\index{mts\+Collector\+Base@{mts\+Collector\+Base}!Start\+Collection\+Command@{Start\+Collection\+Command}}
-\index{Start\+Collection\+Command@{Start\+Collection\+Command}!mts\+Collector\+Base@{mts\+Collector\+Base}}
-\subsubsection[{Start\+Collection\+Command}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Collector\+Base\+::\+Start\+Collection\+Command (
+\hypertarget{classmts_collector_base_a9710912f3c7a2a0e27210ec3e4031836}{\index{mts\-Collector\-Base@{mts\-Collector\-Base}!Start\-Collection\-Command@{Start\-Collection\-Command}}
+\index{Start\-Collection\-Command@{Start\-Collection\-Command}!mtsCollectorBase@{mts\-Collector\-Base}}
+\subsubsection[{Start\-Collection\-Command}]{\setlength{\rightskip}{0pt plus 5cm}void mts\-Collector\-Base\-::\-Start\-Collection\-Command (
 \begin{DoxyParamCaption}
 \item[{void}]{}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\label{classmts_collector_base_a9710912f3c7a2a0e27210ec3e4031836}
-Methods used to populate the component provided interface. \hypertarget{classmts_collector_base_a52b9537fdb6632e1efa8dc5e17aad013}{}\index{mts\+Collector\+Base@{mts\+Collector\+Base}!Start\+Collection\+In\+Command@{Start\+Collection\+In\+Command}}
-\index{Start\+Collection\+In\+Command@{Start\+Collection\+In\+Command}!mts\+Collector\+Base@{mts\+Collector\+Base}}
-\subsubsection[{Start\+Collection\+In\+Command}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Collector\+Base\+::\+Start\+Collection\+In\+Command (
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{classmts_collector_base_a9710912f3c7a2a0e27210ec3e4031836}
+Methods used to populate the component provided interface. \hypertarget{classmts_collector_base_a52b9537fdb6632e1efa8dc5e17aad013}{\index{mts\-Collector\-Base@{mts\-Collector\-Base}!Start\-Collection\-In\-Command@{Start\-Collection\-In\-Command}}
+\index{Start\-Collection\-In\-Command@{Start\-Collection\-In\-Command}!mtsCollectorBase@{mts\-Collector\-Base}}
+\subsubsection[{Start\-Collection\-In\-Command}]{\setlength{\rightskip}{0pt plus 5cm}void mts\-Collector\-Base\-::\-Start\-Collection\-In\-Command (
 \begin{DoxyParamCaption}
-\item[{const {\bf mts\+Double} \&}]{delay\+In\+Seconds}
+\item[{const {\bf mts\-Double} \&}]{delay\-In\-Seconds}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\label{classmts_collector_base_a52b9537fdb6632e1efa8dc5e17aad013}
-\hypertarget{classmts_collector_base_a7e3ca6f1f52519df43dc1d70202968f2}{}\index{mts\+Collector\+Base@{mts\+Collector\+Base}!Startup@{Startup}}
-\index{Startup@{Startup}!mts\+Collector\+Base@{mts\+Collector\+Base}}
-\subsubsection[{Startup}]{\setlength{\rightskip}{0pt plus 5cm}virtual void mts\+Collector\+Base\+::\+Startup (
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{classmts_collector_base_a52b9537fdb6632e1efa8dc5e17aad013}
+\hypertarget{classmts_collector_base_a7e3ca6f1f52519df43dc1d70202968f2}{\index{mts\-Collector\-Base@{mts\-Collector\-Base}!Startup@{Startup}}
+\index{Startup@{Startup}!mtsCollectorBase@{mts\-Collector\-Base}}
+\subsubsection[{Startup}]{\setlength{\rightskip}{0pt plus 5cm}virtual void mts\-Collector\-Base\-::\-Startup (
 \begin{DoxyParamCaption}
 \item[{void}]{}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}\label{classmts_collector_base_a7e3ca6f1f52519df43dc1d70202968f2}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}}\label{classmts_collector_base_a7e3ca6f1f52519df43dc1d70202968f2}
 Set some initial values 
 
-Reimplemented from \hyperlink{classmts_component_aaf28f0262b44eb6866e10089a02fa6e4}{mts\+Component}.
+Reimplemented from \hyperlink{classmts_component_aaf28f0262b44eb6866e10089a02fa6e4}{mts\-Component}.
 
 
 
-Implemented in \hyperlink{classmts_collector_event_ab4ce892507f617fe27d1a38201c9e7b6}{mts\+Collector\+Event}.
+Implemented in \hyperlink{classmts_collector_event_ab4ce892507f617fe27d1a38201c9e7b6}{mts\-Collector\-Event}.
 
-\hypertarget{classmts_collector_base_a56f67fc120a7088b8d5904a3a785d5dd}{}\index{mts\+Collector\+Base@{mts\+Collector\+Base}!Stop\+Collection@{Stop\+Collection}}
-\index{Stop\+Collection@{Stop\+Collection}!mts\+Collector\+Base@{mts\+Collector\+Base}}
-\subsubsection[{Stop\+Collection}]{\setlength{\rightskip}{0pt plus 5cm}virtual void mts\+Collector\+Base\+::\+Stop\+Collection (
+\hypertarget{classmts_collector_base_a56f67fc120a7088b8d5904a3a785d5dd}{\index{mts\-Collector\-Base@{mts\-Collector\-Base}!Stop\-Collection@{Stop\-Collection}}
+\index{Stop\-Collection@{Stop\-Collection}!mtsCollectorBase@{mts\-Collector\-Base}}
+\subsubsection[{Stop\-Collection}]{\setlength{\rightskip}{0pt plus 5cm}virtual void mts\-Collector\-Base\-::\-Stop\-Collection (
 \begin{DoxyParamCaption}
-\item[{const {\bf mts\+Double} \&}]{delay\+In\+Seconds}
+\item[{const {\bf mts\-Double} \&}]{delay\-In\-Seconds}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classmts_collector_base_a56f67fc120a7088b8d5904a3a785d5dd}
-End collecting data. Data collection will end after delayed\+Stop second(s). If it is zero (by default), it means \textquotesingle{}stop now\textquotesingle{}. 
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classmts_collector_base_a56f67fc120a7088b8d5904a3a785d5dd}
+End collecting data. Data collection will end after delayed\-Stop second(s). If it is zero (by default), it means 'stop now'. 
 
-Implemented in \hyperlink{classmts_collector_event_afd6e55e376f1d008c6ba66ffd4353d18}{mts\+Collector\+Event}, and \hyperlink{classmts_collector_state_a8da41d4b23bbb42f9f74ee32fecf36ec}{mts\+Collector\+State}.
+Implemented in \hyperlink{classmts_collector_event_afd6e55e376f1d008c6ba66ffd4353d18}{mts\-Collector\-Event}, and \hyperlink{classmts_collector_state_a8da41d4b23bbb42f9f74ee32fecf36ec}{mts\-Collector\-State}.
 
-\hypertarget{classmts_collector_base_ab1b32657c9ea39cc657d562c5b1be802}{}\index{mts\+Collector\+Base@{mts\+Collector\+Base}!Stop\+Collection\+Command@{Stop\+Collection\+Command}}
-\index{Stop\+Collection\+Command@{Stop\+Collection\+Command}!mts\+Collector\+Base@{mts\+Collector\+Base}}
-\subsubsection[{Stop\+Collection\+Command}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Collector\+Base\+::\+Stop\+Collection\+Command (
+\hypertarget{classmts_collector_base_ab1b32657c9ea39cc657d562c5b1be802}{\index{mts\-Collector\-Base@{mts\-Collector\-Base}!Stop\-Collection\-Command@{Stop\-Collection\-Command}}
+\index{Stop\-Collection\-Command@{Stop\-Collection\-Command}!mtsCollectorBase@{mts\-Collector\-Base}}
+\subsubsection[{Stop\-Collection\-Command}]{\setlength{\rightskip}{0pt plus 5cm}void mts\-Collector\-Base\-::\-Stop\-Collection\-Command (
 \begin{DoxyParamCaption}
 \item[{void}]{}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\label{classmts_collector_base_ab1b32657c9ea39cc657d562c5b1be802}
-\hypertarget{classmts_collector_base_ab99c5d1e2cd381ead225ac57b2ec620d}{}\index{mts\+Collector\+Base@{mts\+Collector\+Base}!Stop\+Collection\+In\+Command@{Stop\+Collection\+In\+Command}}
-\index{Stop\+Collection\+In\+Command@{Stop\+Collection\+In\+Command}!mts\+Collector\+Base@{mts\+Collector\+Base}}
-\subsubsection[{Stop\+Collection\+In\+Command}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Collector\+Base\+::\+Stop\+Collection\+In\+Command (
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{classmts_collector_base_ab1b32657c9ea39cc657d562c5b1be802}
+\hypertarget{classmts_collector_base_ab99c5d1e2cd381ead225ac57b2ec620d}{\index{mts\-Collector\-Base@{mts\-Collector\-Base}!Stop\-Collection\-In\-Command@{Stop\-Collection\-In\-Command}}
+\index{Stop\-Collection\-In\-Command@{Stop\-Collection\-In\-Command}!mtsCollectorBase@{mts\-Collector\-Base}}
+\subsubsection[{Stop\-Collection\-In\-Command}]{\setlength{\rightskip}{0pt plus 5cm}void mts\-Collector\-Base\-::\-Stop\-Collection\-In\-Command (
 \begin{DoxyParamCaption}
-\item[{const {\bf mts\+Double} \&}]{delay\+In\+Seconds}
+\item[{const {\bf mts\-Double} \&}]{delay\-In\-Seconds}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\label{classmts_collector_base_ab99c5d1e2cd381ead225ac57b2ec620d}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{classmts_collector_base_ab99c5d1e2cd381ead225ac57b2ec620d}
 
 
 \subsection{Friends And Related Function Documentation}
-\hypertarget{classmts_collector_base_a6743a1c340e3a1cc2078915e17f6678e}{}\index{mts\+Collector\+Base@{mts\+Collector\+Base}!mts\+Collector\+Base\+Test@{mts\+Collector\+Base\+Test}}
-\index{mts\+Collector\+Base\+Test@{mts\+Collector\+Base\+Test}!mts\+Collector\+Base@{mts\+Collector\+Base}}
-\subsubsection[{mts\+Collector\+Base\+Test}]{\setlength{\rightskip}{0pt plus 5cm}friend class mts\+Collector\+Base\+Test\hspace{0.3cm}{\ttfamily [friend]}}\label{classmts_collector_base_a6743a1c340e3a1cc2078915e17f6678e}
+\hypertarget{classmts_collector_base_a6743a1c340e3a1cc2078915e17f6678e}{\index{mts\-Collector\-Base@{mts\-Collector\-Base}!mts\-Collector\-Base\-Test@{mts\-Collector\-Base\-Test}}
+\index{mts\-Collector\-Base\-Test@{mts\-Collector\-Base\-Test}!mtsCollectorBase@{mts\-Collector\-Base}}
+\subsubsection[{mts\-Collector\-Base\-Test}]{\setlength{\rightskip}{0pt plus 5cm}friend class mts\-Collector\-Base\-Test\hspace{0.3cm}{\ttfamily [friend]}}}\label{classmts_collector_base_a6743a1c340e3a1cc2078915e17f6678e}
 
 
 \subsection{Member Data Documentation}
-\hypertarget{classmts_collector_base_aad959016aa62b9f20980c7cb61ccba8a}{}\index{mts\+Collector\+Base@{mts\+Collector\+Base}!Collection\+Started\+Event\+Trigger@{Collection\+Started\+Event\+Trigger}}
-\index{Collection\+Started\+Event\+Trigger@{Collection\+Started\+Event\+Trigger}!mts\+Collector\+Base@{mts\+Collector\+Base}}
-\subsubsection[{Collection\+Started\+Event\+Trigger}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+Function\+Void} mts\+Collector\+Base\+::\+Collection\+Started\+Event\+Trigger}\label{classmts_collector_base_aad959016aa62b9f20980c7cb61ccba8a}
-Function used to trigger Collection Started event. \hypertarget{classmts_collector_base_a8caa04305488581107b1ad19087079a2}{}\index{mts\+Collector\+Base@{mts\+Collector\+Base}!Collection\+Stopped\+Event\+Trigger@{Collection\+Stopped\+Event\+Trigger}}
-\index{Collection\+Stopped\+Event\+Trigger@{Collection\+Stopped\+Event\+Trigger}!mts\+Collector\+Base@{mts\+Collector\+Base}}
-\subsubsection[{Collection\+Stopped\+Event\+Trigger}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+Function\+Write} mts\+Collector\+Base\+::\+Collection\+Stopped\+Event\+Trigger}\label{classmts_collector_base_a8caa04305488581107b1ad19087079a2}
-Function used to trigger Collection Started event. \hypertarget{classmts_collector_base_a5d4cca6b7e903dec79a349efc63ba8a0}{}\index{mts\+Collector\+Base@{mts\+Collector\+Base}!Component\+Manager@{Component\+Manager}}
-\index{Component\+Manager@{Component\+Manager}!mts\+Collector\+Base@{mts\+Collector\+Base}}
-\subsubsection[{Component\+Manager}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+Component\+Manager}$\ast$ mts\+Collector\+Base\+::\+Component\+Manager\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}\label{classmts_collector_base_a5d4cca6b7e903dec79a349efc63ba8a0}
-Static member variables \hypertarget{classmts_collector_base_a68e1ba8a88b403471103ad596fd3f002}{}\index{mts\+Collector\+Base@{mts\+Collector\+Base}!Connected\+Flag@{Connected\+Flag}}
-\index{Connected\+Flag@{Connected\+Flag}!mts\+Collector\+Base@{mts\+Collector\+Base}}
-\subsubsection[{Connected\+Flag}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Collector\+Base\+::\+Connected\+Flag\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_collector_base_a68e1ba8a88b403471103ad596fd3f002}
-Flag to determine if the collector is connected. Once the collector is connected, it becomes impossible to change the observed state table, components, ... \hypertarget{classmts_collector_base_abfd24852cb33dc25956b49ed2896ac10}{}\index{mts\+Collector\+Base@{mts\+Collector\+Base}!Control\+Interface@{Control\+Interface}}
-\index{Control\+Interface@{Control\+Interface}!mts\+Collector\+Base@{mts\+Collector\+Base}}
-\subsubsection[{Control\+Interface}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+Interface\+Provided}$\ast$ mts\+Collector\+Base\+::\+Control\+Interface\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_collector_base_abfd24852cb33dc25956b49ed2896ac10}
-Default control interface and methods used for the provided commands. \hypertarget{classmts_collector_base_a7d711ebe23e8573509789daa9e7392e6}{}\index{mts\+Collector\+Base@{mts\+Collector\+Base}!Delimiter@{Delimiter}}
-\index{Delimiter@{Delimiter}!mts\+Collector\+Base@{mts\+Collector\+Base}}
-\subsubsection[{Delimiter}]{\setlength{\rightskip}{0pt plus 5cm}char mts\+Collector\+Base\+::\+Delimiter\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_collector_base_a7d711ebe23e8573509789daa9e7392e6}
-Delimiter used in a log file. Set by the constructor according to mts\+Collector\+Base\+::\+Collector\+Log\+Format. \hypertarget{classmts_collector_base_a5afbc705a454a6e1394ff4bfd1c17774}{}\index{mts\+Collector\+Base@{mts\+Collector\+Base}!File\+Format@{File\+Format}}
-\index{File\+Format@{File\+Format}!mts\+Collector\+Base@{mts\+Collector\+Base}}
-\subsubsection[{File\+Format}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Collector\+File\+Format} mts\+Collector\+Base\+::\+File\+Format\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_collector_base_a5afbc705a454a6e1394ff4bfd1c17774}
-\hypertarget{classmts_collector_base_a051e5495fad8d0ade499d031e8d9ffbc}{}\index{mts\+Collector\+Base@{mts\+Collector\+Base}!File\+Opened@{File\+Opened}}
-\index{File\+Opened@{File\+Opened}!mts\+Collector\+Base@{mts\+Collector\+Base}}
-\subsubsection[{File\+Opened}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Collector\+Base\+::\+File\+Opened\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_collector_base_a051e5495fad8d0ade499d031e8d9ffbc}
-Check if the output file is already opened \hypertarget{classmts_collector_base_a7d28e7a5dc2c367f963a53f9b786776d}{}\index{mts\+Collector\+Base@{mts\+Collector\+Base}!Fill\+Character@{Fill\+Character}}
-\index{Fill\+Character@{Fill\+Character}!mts\+Collector\+Base@{mts\+Collector\+Base}}
-\subsubsection[{Fill\+Character}]{\setlength{\rightskip}{0pt plus 5cm}char mts\+Collector\+Base\+::\+Fill\+Character\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_collector_base_a7d28e7a5dc2c367f963a53f9b786776d}
-Collector File fill value \mbox{[}D\+E\+F\+A\+U\+L\+T = \textquotesingle{} \textquotesingle{}\mbox{]} \hypertarget{classmts_collector_base_abed8163d5f91e30ac10344e82c405cd7}{}\index{mts\+Collector\+Base@{mts\+Collector\+Base}!First\+Running\+Flag@{First\+Running\+Flag}}
-\index{First\+Running\+Flag@{First\+Running\+Flag}!mts\+Collector\+Base@{mts\+Collector\+Base}}
-\subsubsection[{First\+Running\+Flag}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Collector\+Base\+::\+First\+Running\+Flag\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_collector_base_abed8163d5f91e30ac10344e82c405cd7}
-Flag for Print\+Header() method. \hypertarget{classmts_collector_base_a1f80a8a534930afcbeade8a12f7d63e3}{}\index{mts\+Collector\+Base@{mts\+Collector\+Base}!Floating\+Notation@{Floating\+Notation}}
-\index{Floating\+Notation@{Floating\+Notation}!mts\+Collector\+Base@{mts\+Collector\+Base}}
-\subsubsection[{Floating\+Notation}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Collector\+File\+Floating\+Notation} mts\+Collector\+Base\+::\+Floating\+Notation\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_collector_base_a1f80a8a534930afcbeade8a12f7d63e3}
-Collector File floating notation enum, default is C\+O\+L\+L\+E\+C\+T\+O\+R\+\_\+\+F\+I\+L\+E\+\_\+\+F\+L\+O\+A\+T\+I\+N\+G\+\_\+\+N\+O\+T\+A\+T\+I\+O\+N\+\_\+\+N\+O\+N\+E \hypertarget{classmts_collector_base_a7072747db6ae6fb544364d8fe11f741d}{}\index{mts\+Collector\+Base@{mts\+Collector\+Base}!Output\+File@{Output\+File}}
-\index{Output\+File@{Output\+File}!mts\+Collector\+Base@{mts\+Collector\+Base}}
-\subsubsection[{Output\+File}]{\setlength{\rightskip}{0pt plus 5cm}std\+::ofstream$\ast$ mts\+Collector\+Base\+::\+Output\+File\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_collector_base_a7072747db6ae6fb544364d8fe11f741d}
-\hypertarget{classmts_collector_base_a86248c53c5807c8b9a21b232d89b26dd}{}\index{mts\+Collector\+Base@{mts\+Collector\+Base}!Output\+File\+Name@{Output\+File\+Name}}
-\index{Output\+File\+Name@{Output\+File\+Name}!mts\+Collector\+Base@{mts\+Collector\+Base}}
-\subsubsection[{Output\+File\+Name}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string mts\+Collector\+Base\+::\+Output\+File\+Name\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_collector_base_a86248c53c5807c8b9a21b232d89b26dd}
-Output file name, including working directory. \hypertarget{classmts_collector_base_ac11bfb1b9eceb30e20bb216454e8d067}{}\index{mts\+Collector\+Base@{mts\+Collector\+Base}!Output\+Header\+File@{Output\+Header\+File}}
-\index{Output\+Header\+File@{Output\+Header\+File}!mts\+Collector\+Base@{mts\+Collector\+Base}}
-\subsubsection[{Output\+Header\+File}]{\setlength{\rightskip}{0pt plus 5cm}std\+::ofstream$\ast$ mts\+Collector\+Base\+::\+Output\+Header\+File\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_collector_base_ac11bfb1b9eceb30e20bb216454e8d067}
-\hypertarget{classmts_collector_base_adf377242f1cf745ccedf71f6505d1095}{}\index{mts\+Collector\+Base@{mts\+Collector\+Base}!Output\+Header\+File\+Name@{Output\+Header\+File\+Name}}
-\index{Output\+Header\+File\+Name@{Output\+Header\+File\+Name}!mts\+Collector\+Base@{mts\+Collector\+Base}}
-\subsubsection[{Output\+Header\+File\+Name}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string mts\+Collector\+Base\+::\+Output\+Header\+File\+Name\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_collector_base_adf377242f1cf745ccedf71f6505d1095}
-\hypertarget{classmts_collector_base_aa58c68b0e196175b2f0b35f8a2877c54}{}\index{mts\+Collector\+Base@{mts\+Collector\+Base}!Output\+Header\+Stream@{Output\+Header\+Stream}}
-\index{Output\+Header\+Stream@{Output\+Header\+Stream}!mts\+Collector\+Base@{mts\+Collector\+Base}}
-\subsubsection[{Output\+Header\+Stream}]{\setlength{\rightskip}{0pt plus 5cm}std\+::ostream$\ast$ mts\+Collector\+Base\+::\+Output\+Header\+Stream\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_collector_base_aa58c68b0e196175b2f0b35f8a2877c54}
-\hypertarget{classmts_collector_base_a4901f9bf045081f0d79ada98fb06c57b}{}\index{mts\+Collector\+Base@{mts\+Collector\+Base}!Output\+Stream@{Output\+Stream}}
-\index{Output\+Stream@{Output\+Stream}!mts\+Collector\+Base@{mts\+Collector\+Base}}
-\subsubsection[{Output\+Stream}]{\setlength{\rightskip}{0pt plus 5cm}std\+::ostream$\ast$ mts\+Collector\+Base\+::\+Output\+Stream\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_collector_base_a4901f9bf045081f0d79ada98fb06c57b}
-Pointer on output stream, can be create and managed by this class or provided by a user. \hypertarget{classmts_collector_base_a86d6b8c24e20957932325ce8183d0abf}{}\index{mts\+Collector\+Base@{mts\+Collector\+Base}!Precision@{Precision}}
-\index{Precision@{Precision}!mts\+Collector\+Base@{mts\+Collector\+Base}}
-\subsubsection[{Precision}]{\setlength{\rightskip}{0pt plus 5cm}std\+::streamsize mts\+Collector\+Base\+::\+Precision\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_collector_base_a86d6b8c24e20957932325ce8183d0abf}
-Collector File precision \mbox{[}D\+E\+F\+A\+U\+L\+T = 10\mbox{]} This is the maximum number of characters used. \hypertarget{classmts_collector_base_a038835b577383fbc4b437ff60563b55b}{}\index{mts\+Collector\+Base@{mts\+Collector\+Base}!Progress\+Event\+Trigger@{Progress\+Event\+Trigger}}
-\index{Progress\+Event\+Trigger@{Progress\+Event\+Trigger}!mts\+Collector\+Base@{mts\+Collector\+Base}}
-\subsubsection[{Progress\+Event\+Trigger}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+Function\+Write} mts\+Collector\+Base\+::\+Progress\+Event\+Trigger}\label{classmts_collector_base_a038835b577383fbc4b437ff60563b55b}
-Function used to trigger Progress event. \hypertarget{classmts_collector_base_a08c8c1889a10cba359bc799bbf5d218b}{}\index{mts\+Collector\+Base@{mts\+Collector\+Base}!Sample\+Counter@{Sample\+Counter}}
-\index{Sample\+Counter@{Sample\+Counter}!mts\+Collector\+Base@{mts\+Collector\+Base}}
-\subsubsection[{Sample\+Counter}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int mts\+Collector\+Base\+::\+Sample\+Counter\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_collector_base_a08c8c1889a10cba359bc799bbf5d218b}
-Counter for number of samples since the output has been set. \hypertarget{classmts_collector_base_a199b6fdd92f3a5912b6d7fd10af5b205}{}\index{mts\+Collector\+Base@{mts\+Collector\+Base}!Sample\+Counter\+For\+Event@{Sample\+Counter\+For\+Event}}
-\index{Sample\+Counter\+For\+Event@{Sample\+Counter\+For\+Event}!mts\+Collector\+Base@{mts\+Collector\+Base}}
-\subsubsection[{Sample\+Counter\+For\+Event}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int mts\+Collector\+Base\+::\+Sample\+Counter\+For\+Event\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_collector_base_a199b6fdd92f3a5912b6d7fd10af5b205}
-Counter for number of sample since the last Collection\+Stopped event \hypertarget{classmts_collector_base_abf646aaaee11b73bf1fff9f31131fac1}{}\index{mts\+Collector\+Base@{mts\+Collector\+Base}!Serializer@{Serializer}}
-\index{Serializer@{Serializer}!mts\+Collector\+Base@{mts\+Collector\+Base}}
-\subsubsection[{Serializer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cmn\+Serializer}$\ast$ mts\+Collector\+Base\+::\+Serializer\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_collector_base_abf646aaaee11b73bf1fff9f31131fac1}
-Serializer for binary logging. De\+Serializer is used only at Convert\+Binary\+To\+Text() method so we don\textquotesingle{}t define it here. \hypertarget{classmts_collector_base_ae5b1e57c993774b77da77f1e1fc7d73c}{}\index{mts\+Collector\+Base@{mts\+Collector\+Base}!Status@{Status}}
-\index{Status@{Status}!mts\+Collector\+Base@{mts\+Collector\+Base}}
-\subsubsection[{Status}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Collector\+Status} mts\+Collector\+Base\+::\+Status\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_collector_base_ae5b1e57c993774b77da77f1e1fc7d73c}
-\hypertarget{classmts_collector_base_a782f339bd561cc62d195544fdb873834}{}\index{mts\+Collector\+Base@{mts\+Collector\+Base}!String\+Stream\+Buffer\+For\+Serialization@{String\+Stream\+Buffer\+For\+Serialization}}
-\index{String\+Stream\+Buffer\+For\+Serialization@{String\+Stream\+Buffer\+For\+Serialization}!mts\+Collector\+Base@{mts\+Collector\+Base}}
-\subsubsection[{String\+Stream\+Buffer\+For\+Serialization}]{\setlength{\rightskip}{0pt plus 5cm}std\+::stringstream mts\+Collector\+Base\+::\+String\+Stream\+Buffer\+For\+Serialization\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_collector_base_a782f339bd561cc62d195544fdb873834}
-String stream buffer for serialization. \hypertarget{classmts_collector_base_a4e9b221e6cdeb2fbddaf44ffbe9e3b0e}{}\index{mts\+Collector\+Base@{mts\+Collector\+Base}!Task\+Map@{Task\+Map}}
-\index{Task\+Map@{Task\+Map}!mts\+Collector\+Base@{mts\+Collector\+Base}}
-\subsubsection[{Task\+Map}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Task\+Map\+Type} mts\+Collector\+Base\+::\+Task\+Map\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_collector_base_a4e9b221e6cdeb2fbddaf44ffbe9e3b0e}
-\hypertarget{classmts_collector_base_ab6c33b31e4651991098cd0963a575d24}{}\index{mts\+Collector\+Base@{mts\+Collector\+Base}!Time\+Interval\+For\+Progress\+Event@{Time\+Interval\+For\+Progress\+Event}}
-\index{Time\+Interval\+For\+Progress\+Event@{Time\+Interval\+For\+Progress\+Event}!mts\+Collector\+Base@{mts\+Collector\+Base}}
-\subsubsection[{Time\+Interval\+For\+Progress\+Event}]{\setlength{\rightskip}{0pt plus 5cm}double mts\+Collector\+Base\+::\+Time\+Interval\+For\+Progress\+Event\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_collector_base_ab6c33b31e4651991098cd0963a575d24}
-Interval between two progress events (in seconds) \hypertarget{classmts_collector_base_aa33295c29dd9bc683cb95a9f57c5a09e}{}\index{mts\+Collector\+Base@{mts\+Collector\+Base}!Time\+Of\+Last\+Progress\+Event@{Time\+Of\+Last\+Progress\+Event}}
-\index{Time\+Of\+Last\+Progress\+Event@{Time\+Of\+Last\+Progress\+Event}!mts\+Collector\+Base@{mts\+Collector\+Base}}
-\subsubsection[{Time\+Of\+Last\+Progress\+Event}]{\setlength{\rightskip}{0pt plus 5cm}double mts\+Collector\+Base\+::\+Time\+Of\+Last\+Progress\+Event\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_collector_base_aa33295c29dd9bc683cb95a9f57c5a09e}
-Time of last progress event \hypertarget{classmts_collector_base_add0435d1bd0dfaed9f54bc82831ca3ea}{}\index{mts\+Collector\+Base@{mts\+Collector\+Base}!Width@{Width}}
-\index{Width@{Width}!mts\+Collector\+Base@{mts\+Collector\+Base}}
-\subsubsection[{Width}]{\setlength{\rightskip}{0pt plus 5cm}std\+::streamsize mts\+Collector\+Base\+::\+Width\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_collector_base_add0435d1bd0dfaed9f54bc82831ca3ea}
-Collector File width \mbox{[}D\+E\+F\+A\+U\+L\+T = 4\mbox{]} This is the minimum number of characters used. \hypertarget{classmts_collector_base_a1af964c915eb2090cc72a8515dcbea6d}{}\index{mts\+Collector\+Base@{mts\+Collector\+Base}!Working\+Directory\+Member@{Working\+Directory\+Member}}
-\index{Working\+Directory\+Member@{Working\+Directory\+Member}!mts\+Collector\+Base@{mts\+Collector\+Base}}
-\subsubsection[{Working\+Directory\+Member}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\+Std\+String} mts\+Collector\+Base\+::\+Working\+Directory\+Member\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_collector_base_a1af964c915eb2090cc72a8515dcbea6d}
+\hypertarget{classmts_collector_base_aad959016aa62b9f20980c7cb61ccba8a}{\index{mts\-Collector\-Base@{mts\-Collector\-Base}!Collection\-Started\-Event\-Trigger@{Collection\-Started\-Event\-Trigger}}
+\index{Collection\-Started\-Event\-Trigger@{Collection\-Started\-Event\-Trigger}!mtsCollectorBase@{mts\-Collector\-Base}}
+\subsubsection[{Collection\-Started\-Event\-Trigger}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\-Function\-Void} mts\-Collector\-Base\-::\-Collection\-Started\-Event\-Trigger}}\label{classmts_collector_base_aad959016aa62b9f20980c7cb61ccba8a}
+Function used to trigger Collection Started event. \hypertarget{classmts_collector_base_a8caa04305488581107b1ad19087079a2}{\index{mts\-Collector\-Base@{mts\-Collector\-Base}!Collection\-Stopped\-Event\-Trigger@{Collection\-Stopped\-Event\-Trigger}}
+\index{Collection\-Stopped\-Event\-Trigger@{Collection\-Stopped\-Event\-Trigger}!mtsCollectorBase@{mts\-Collector\-Base}}
+\subsubsection[{Collection\-Stopped\-Event\-Trigger}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\-Function\-Write} mts\-Collector\-Base\-::\-Collection\-Stopped\-Event\-Trigger}}\label{classmts_collector_base_a8caa04305488581107b1ad19087079a2}
+Function used to trigger Collection Started event. \hypertarget{classmts_collector_base_a5d4cca6b7e903dec79a349efc63ba8a0}{\index{mts\-Collector\-Base@{mts\-Collector\-Base}!Component\-Manager@{Component\-Manager}}
+\index{Component\-Manager@{Component\-Manager}!mtsCollectorBase@{mts\-Collector\-Base}}
+\subsubsection[{Component\-Manager}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\-Component\-Manager}$\ast$ mts\-Collector\-Base\-::\-Component\-Manager\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}}\label{classmts_collector_base_a5d4cca6b7e903dec79a349efc63ba8a0}
+Static member variables \hypertarget{classmts_collector_base_a68e1ba8a88b403471103ad596fd3f002}{\index{mts\-Collector\-Base@{mts\-Collector\-Base}!Connected\-Flag@{Connected\-Flag}}
+\index{Connected\-Flag@{Connected\-Flag}!mtsCollectorBase@{mts\-Collector\-Base}}
+\subsubsection[{Connected\-Flag}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\-Collector\-Base\-::\-Connected\-Flag\hspace{0.3cm}{\ttfamily [protected]}}}\label{classmts_collector_base_a68e1ba8a88b403471103ad596fd3f002}
+Flag to determine if the collector is connected. Once the collector is connected, it becomes impossible to change the observed state table, components, ... \hypertarget{classmts_collector_base_abfd24852cb33dc25956b49ed2896ac10}{\index{mts\-Collector\-Base@{mts\-Collector\-Base}!Control\-Interface@{Control\-Interface}}
+\index{Control\-Interface@{Control\-Interface}!mtsCollectorBase@{mts\-Collector\-Base}}
+\subsubsection[{Control\-Interface}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\-Interface\-Provided}$\ast$ mts\-Collector\-Base\-::\-Control\-Interface\hspace{0.3cm}{\ttfamily [protected]}}}\label{classmts_collector_base_abfd24852cb33dc25956b49ed2896ac10}
+Default control interface and methods used for the provided commands. \hypertarget{classmts_collector_base_a7d711ebe23e8573509789daa9e7392e6}{\index{mts\-Collector\-Base@{mts\-Collector\-Base}!Delimiter@{Delimiter}}
+\index{Delimiter@{Delimiter}!mtsCollectorBase@{mts\-Collector\-Base}}
+\subsubsection[{Delimiter}]{\setlength{\rightskip}{0pt plus 5cm}char mts\-Collector\-Base\-::\-Delimiter\hspace{0.3cm}{\ttfamily [protected]}}}\label{classmts_collector_base_a7d711ebe23e8573509789daa9e7392e6}
+Delimiter used in a log file. Set by the constructor according to mts\-Collector\-Base\-::\-Collector\-Log\-Format. \hypertarget{classmts_collector_base_a5afbc705a454a6e1394ff4bfd1c17774}{\index{mts\-Collector\-Base@{mts\-Collector\-Base}!File\-Format@{File\-Format}}
+\index{File\-Format@{File\-Format}!mtsCollectorBase@{mts\-Collector\-Base}}
+\subsubsection[{File\-Format}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Collector\-File\-Format} mts\-Collector\-Base\-::\-File\-Format\hspace{0.3cm}{\ttfamily [protected]}}}\label{classmts_collector_base_a5afbc705a454a6e1394ff4bfd1c17774}
+\hypertarget{classmts_collector_base_a051e5495fad8d0ade499d031e8d9ffbc}{\index{mts\-Collector\-Base@{mts\-Collector\-Base}!File\-Opened@{File\-Opened}}
+\index{File\-Opened@{File\-Opened}!mtsCollectorBase@{mts\-Collector\-Base}}
+\subsubsection[{File\-Opened}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\-Collector\-Base\-::\-File\-Opened\hspace{0.3cm}{\ttfamily [protected]}}}\label{classmts_collector_base_a051e5495fad8d0ade499d031e8d9ffbc}
+Check if the output file is already opened \hypertarget{classmts_collector_base_a7d28e7a5dc2c367f963a53f9b786776d}{\index{mts\-Collector\-Base@{mts\-Collector\-Base}!Fill\-Character@{Fill\-Character}}
+\index{Fill\-Character@{Fill\-Character}!mtsCollectorBase@{mts\-Collector\-Base}}
+\subsubsection[{Fill\-Character}]{\setlength{\rightskip}{0pt plus 5cm}char mts\-Collector\-Base\-::\-Fill\-Character\hspace{0.3cm}{\ttfamily [protected]}}}\label{classmts_collector_base_a7d28e7a5dc2c367f963a53f9b786776d}
+Collector File fill value \mbox{[}D\-E\-F\-A\-U\-L\-T = ' '\mbox{]} \hypertarget{classmts_collector_base_abed8163d5f91e30ac10344e82c405cd7}{\index{mts\-Collector\-Base@{mts\-Collector\-Base}!First\-Running\-Flag@{First\-Running\-Flag}}
+\index{First\-Running\-Flag@{First\-Running\-Flag}!mtsCollectorBase@{mts\-Collector\-Base}}
+\subsubsection[{First\-Running\-Flag}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\-Collector\-Base\-::\-First\-Running\-Flag\hspace{0.3cm}{\ttfamily [protected]}}}\label{classmts_collector_base_abed8163d5f91e30ac10344e82c405cd7}
+Flag for Print\-Header() method. \hypertarget{classmts_collector_base_a1f80a8a534930afcbeade8a12f7d63e3}{\index{mts\-Collector\-Base@{mts\-Collector\-Base}!Floating\-Notation@{Floating\-Notation}}
+\index{Floating\-Notation@{Floating\-Notation}!mtsCollectorBase@{mts\-Collector\-Base}}
+\subsubsection[{Floating\-Notation}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Collector\-File\-Floating\-Notation} mts\-Collector\-Base\-::\-Floating\-Notation\hspace{0.3cm}{\ttfamily [protected]}}}\label{classmts_collector_base_a1f80a8a534930afcbeade8a12f7d63e3}
+Collector File floating notation enum, default is C\-O\-L\-L\-E\-C\-T\-O\-R\-\_\-\-F\-I\-L\-E\-\_\-\-F\-L\-O\-A\-T\-I\-N\-G\-\_\-\-N\-O\-T\-A\-T\-I\-O\-N\-\_\-\-N\-O\-N\-E \hypertarget{classmts_collector_base_a7072747db6ae6fb544364d8fe11f741d}{\index{mts\-Collector\-Base@{mts\-Collector\-Base}!Output\-File@{Output\-File}}
+\index{Output\-File@{Output\-File}!mtsCollectorBase@{mts\-Collector\-Base}}
+\subsubsection[{Output\-File}]{\setlength{\rightskip}{0pt plus 5cm}std\-::ofstream$\ast$ mts\-Collector\-Base\-::\-Output\-File\hspace{0.3cm}{\ttfamily [protected]}}}\label{classmts_collector_base_a7072747db6ae6fb544364d8fe11f741d}
+\hypertarget{classmts_collector_base_a86248c53c5807c8b9a21b232d89b26dd}{\index{mts\-Collector\-Base@{mts\-Collector\-Base}!Output\-File\-Name@{Output\-File\-Name}}
+\index{Output\-File\-Name@{Output\-File\-Name}!mtsCollectorBase@{mts\-Collector\-Base}}
+\subsubsection[{Output\-File\-Name}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string mts\-Collector\-Base\-::\-Output\-File\-Name\hspace{0.3cm}{\ttfamily [protected]}}}\label{classmts_collector_base_a86248c53c5807c8b9a21b232d89b26dd}
+Output file name, including working directory. \hypertarget{classmts_collector_base_ac11bfb1b9eceb30e20bb216454e8d067}{\index{mts\-Collector\-Base@{mts\-Collector\-Base}!Output\-Header\-File@{Output\-Header\-File}}
+\index{Output\-Header\-File@{Output\-Header\-File}!mtsCollectorBase@{mts\-Collector\-Base}}
+\subsubsection[{Output\-Header\-File}]{\setlength{\rightskip}{0pt plus 5cm}std\-::ofstream$\ast$ mts\-Collector\-Base\-::\-Output\-Header\-File\hspace{0.3cm}{\ttfamily [protected]}}}\label{classmts_collector_base_ac11bfb1b9eceb30e20bb216454e8d067}
+\hypertarget{classmts_collector_base_adf377242f1cf745ccedf71f6505d1095}{\index{mts\-Collector\-Base@{mts\-Collector\-Base}!Output\-Header\-File\-Name@{Output\-Header\-File\-Name}}
+\index{Output\-Header\-File\-Name@{Output\-Header\-File\-Name}!mtsCollectorBase@{mts\-Collector\-Base}}
+\subsubsection[{Output\-Header\-File\-Name}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string mts\-Collector\-Base\-::\-Output\-Header\-File\-Name\hspace{0.3cm}{\ttfamily [protected]}}}\label{classmts_collector_base_adf377242f1cf745ccedf71f6505d1095}
+\hypertarget{classmts_collector_base_aa58c68b0e196175b2f0b35f8a2877c54}{\index{mts\-Collector\-Base@{mts\-Collector\-Base}!Output\-Header\-Stream@{Output\-Header\-Stream}}
+\index{Output\-Header\-Stream@{Output\-Header\-Stream}!mtsCollectorBase@{mts\-Collector\-Base}}
+\subsubsection[{Output\-Header\-Stream}]{\setlength{\rightskip}{0pt plus 5cm}std\-::ostream$\ast$ mts\-Collector\-Base\-::\-Output\-Header\-Stream\hspace{0.3cm}{\ttfamily [protected]}}}\label{classmts_collector_base_aa58c68b0e196175b2f0b35f8a2877c54}
+\hypertarget{classmts_collector_base_a4901f9bf045081f0d79ada98fb06c57b}{\index{mts\-Collector\-Base@{mts\-Collector\-Base}!Output\-Stream@{Output\-Stream}}
+\index{Output\-Stream@{Output\-Stream}!mtsCollectorBase@{mts\-Collector\-Base}}
+\subsubsection[{Output\-Stream}]{\setlength{\rightskip}{0pt plus 5cm}std\-::ostream$\ast$ mts\-Collector\-Base\-::\-Output\-Stream\hspace{0.3cm}{\ttfamily [protected]}}}\label{classmts_collector_base_a4901f9bf045081f0d79ada98fb06c57b}
+Pointer on output stream, can be create and managed by this class or provided by a user. \hypertarget{classmts_collector_base_a86d6b8c24e20957932325ce8183d0abf}{\index{mts\-Collector\-Base@{mts\-Collector\-Base}!Precision@{Precision}}
+\index{Precision@{Precision}!mtsCollectorBase@{mts\-Collector\-Base}}
+\subsubsection[{Precision}]{\setlength{\rightskip}{0pt plus 5cm}std\-::streamsize mts\-Collector\-Base\-::\-Precision\hspace{0.3cm}{\ttfamily [protected]}}}\label{classmts_collector_base_a86d6b8c24e20957932325ce8183d0abf}
+Collector File precision \mbox{[}D\-E\-F\-A\-U\-L\-T = 10\mbox{]} This is the maximum number of characters used. \hypertarget{classmts_collector_base_a038835b577383fbc4b437ff60563b55b}{\index{mts\-Collector\-Base@{mts\-Collector\-Base}!Progress\-Event\-Trigger@{Progress\-Event\-Trigger}}
+\index{Progress\-Event\-Trigger@{Progress\-Event\-Trigger}!mtsCollectorBase@{mts\-Collector\-Base}}
+\subsubsection[{Progress\-Event\-Trigger}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\-Function\-Write} mts\-Collector\-Base\-::\-Progress\-Event\-Trigger}}\label{classmts_collector_base_a038835b577383fbc4b437ff60563b55b}
+Function used to trigger Progress event. \hypertarget{classmts_collector_base_a08c8c1889a10cba359bc799bbf5d218b}{\index{mts\-Collector\-Base@{mts\-Collector\-Base}!Sample\-Counter@{Sample\-Counter}}
+\index{Sample\-Counter@{Sample\-Counter}!mtsCollectorBase@{mts\-Collector\-Base}}
+\subsubsection[{Sample\-Counter}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int mts\-Collector\-Base\-::\-Sample\-Counter\hspace{0.3cm}{\ttfamily [protected]}}}\label{classmts_collector_base_a08c8c1889a10cba359bc799bbf5d218b}
+Counter for number of samples since the output has been set. \hypertarget{classmts_collector_base_a199b6fdd92f3a5912b6d7fd10af5b205}{\index{mts\-Collector\-Base@{mts\-Collector\-Base}!Sample\-Counter\-For\-Event@{Sample\-Counter\-For\-Event}}
+\index{Sample\-Counter\-For\-Event@{Sample\-Counter\-For\-Event}!mtsCollectorBase@{mts\-Collector\-Base}}
+\subsubsection[{Sample\-Counter\-For\-Event}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int mts\-Collector\-Base\-::\-Sample\-Counter\-For\-Event\hspace{0.3cm}{\ttfamily [protected]}}}\label{classmts_collector_base_a199b6fdd92f3a5912b6d7fd10af5b205}
+Counter for number of sample since the last Collection\-Stopped event \hypertarget{classmts_collector_base_abf646aaaee11b73bf1fff9f31131fac1}{\index{mts\-Collector\-Base@{mts\-Collector\-Base}!Serializer@{Serializer}}
+\index{Serializer@{Serializer}!mtsCollectorBase@{mts\-Collector\-Base}}
+\subsubsection[{Serializer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cmn\-Serializer}$\ast$ mts\-Collector\-Base\-::\-Serializer\hspace{0.3cm}{\ttfamily [protected]}}}\label{classmts_collector_base_abf646aaaee11b73bf1fff9f31131fac1}
+Serializer for binary logging. De\-Serializer is used only at Convert\-Binary\-To\-Text() method so we don't define it here. \hypertarget{classmts_collector_base_ae5b1e57c993774b77da77f1e1fc7d73c}{\index{mts\-Collector\-Base@{mts\-Collector\-Base}!Status@{Status}}
+\index{Status@{Status}!mtsCollectorBase@{mts\-Collector\-Base}}
+\subsubsection[{Status}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Collector\-Status} mts\-Collector\-Base\-::\-Status\hspace{0.3cm}{\ttfamily [protected]}}}\label{classmts_collector_base_ae5b1e57c993774b77da77f1e1fc7d73c}
+\hypertarget{classmts_collector_base_a782f339bd561cc62d195544fdb873834}{\index{mts\-Collector\-Base@{mts\-Collector\-Base}!String\-Stream\-Buffer\-For\-Serialization@{String\-Stream\-Buffer\-For\-Serialization}}
+\index{String\-Stream\-Buffer\-For\-Serialization@{String\-Stream\-Buffer\-For\-Serialization}!mtsCollectorBase@{mts\-Collector\-Base}}
+\subsubsection[{String\-Stream\-Buffer\-For\-Serialization}]{\setlength{\rightskip}{0pt plus 5cm}std\-::stringstream mts\-Collector\-Base\-::\-String\-Stream\-Buffer\-For\-Serialization\hspace{0.3cm}{\ttfamily [protected]}}}\label{classmts_collector_base_a782f339bd561cc62d195544fdb873834}
+String stream buffer for serialization. \hypertarget{classmts_collector_base_a4e9b221e6cdeb2fbddaf44ffbe9e3b0e}{\index{mts\-Collector\-Base@{mts\-Collector\-Base}!Task\-Map@{Task\-Map}}
+\index{Task\-Map@{Task\-Map}!mtsCollectorBase@{mts\-Collector\-Base}}
+\subsubsection[{Task\-Map}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Task\-Map\-Type} mts\-Collector\-Base\-::\-Task\-Map\hspace{0.3cm}{\ttfamily [protected]}}}\label{classmts_collector_base_a4e9b221e6cdeb2fbddaf44ffbe9e3b0e}
+\hypertarget{classmts_collector_base_ab6c33b31e4651991098cd0963a575d24}{\index{mts\-Collector\-Base@{mts\-Collector\-Base}!Time\-Interval\-For\-Progress\-Event@{Time\-Interval\-For\-Progress\-Event}}
+\index{Time\-Interval\-For\-Progress\-Event@{Time\-Interval\-For\-Progress\-Event}!mtsCollectorBase@{mts\-Collector\-Base}}
+\subsubsection[{Time\-Interval\-For\-Progress\-Event}]{\setlength{\rightskip}{0pt plus 5cm}double mts\-Collector\-Base\-::\-Time\-Interval\-For\-Progress\-Event\hspace{0.3cm}{\ttfamily [protected]}}}\label{classmts_collector_base_ab6c33b31e4651991098cd0963a575d24}
+Interval between two progress events (in seconds) \hypertarget{classmts_collector_base_aa33295c29dd9bc683cb95a9f57c5a09e}{\index{mts\-Collector\-Base@{mts\-Collector\-Base}!Time\-Of\-Last\-Progress\-Event@{Time\-Of\-Last\-Progress\-Event}}
+\index{Time\-Of\-Last\-Progress\-Event@{Time\-Of\-Last\-Progress\-Event}!mtsCollectorBase@{mts\-Collector\-Base}}
+\subsubsection[{Time\-Of\-Last\-Progress\-Event}]{\setlength{\rightskip}{0pt plus 5cm}double mts\-Collector\-Base\-::\-Time\-Of\-Last\-Progress\-Event\hspace{0.3cm}{\ttfamily [protected]}}}\label{classmts_collector_base_aa33295c29dd9bc683cb95a9f57c5a09e}
+Time of last progress event \hypertarget{classmts_collector_base_add0435d1bd0dfaed9f54bc82831ca3ea}{\index{mts\-Collector\-Base@{mts\-Collector\-Base}!Width@{Width}}
+\index{Width@{Width}!mtsCollectorBase@{mts\-Collector\-Base}}
+\subsubsection[{Width}]{\setlength{\rightskip}{0pt plus 5cm}std\-::streamsize mts\-Collector\-Base\-::\-Width\hspace{0.3cm}{\ttfamily [protected]}}}\label{classmts_collector_base_add0435d1bd0dfaed9f54bc82831ca3ea}
+Collector File width \mbox{[}D\-E\-F\-A\-U\-L\-T = 4\mbox{]} This is the minimum number of characters used. \hypertarget{classmts_collector_base_a1af964c915eb2090cc72a8515dcbea6d}{\index{mts\-Collector\-Base@{mts\-Collector\-Base}!Working\-Directory\-Member@{Working\-Directory\-Member}}
+\index{Working\-Directory\-Member@{Working\-Directory\-Member}!mtsCollectorBase@{mts\-Collector\-Base}}
+\subsubsection[{Working\-Directory\-Member}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\-Std\-String} mts\-Collector\-Base\-::\-Working\-Directory\-Member\hspace{0.3cm}{\ttfamily [protected]}}}\label{classmts_collector_base_a1af964c915eb2090cc72a8515dcbea6d}
 Current directory to save data 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
 \item 
-/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Multi\+Task/\hyperlink{mts_collector_base_8h}{mts\+Collector\+Base.\+h}\end{DoxyCompactItemize}
+/home/adeguet1/catkin\-\_\-ws/src/cisst-\/saw/cisst/cisst\-Multi\-Task/\hyperlink{mts_collector_base_8h}{mts\-Collector\-Base.\-h}\end{DoxyCompactItemize}

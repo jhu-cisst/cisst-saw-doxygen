@@ -1,5 +1,6 @@
-\hypertarget{classvct_fixed_size_vector_recursive_engines_1_1_vo_vi_si}{}\section{vct\+Fixed\+Size\+Vector\+Recursive\+Engines$<$ \+\_\+size $>$\+:\+:Vo\+Vi\+Si$<$ \+\_\+element\+Operation\+Type $>$ Class Template Reference}
-\label{classvct_fixed_size_vector_recursive_engines_1_1_vo_vi_si}\index{vct\+Fixed\+Size\+Vector\+Recursive\+Engines$<$ \+\_\+size $>$\+::\+Vo\+Vi\+Si$<$ \+\_\+element\+Operation\+Type $>$@{vct\+Fixed\+Size\+Vector\+Recursive\+Engines$<$ \+\_\+size $>$\+::\+Vo\+Vi\+Si$<$ \+\_\+element\+Operation\+Type $>$}}
+\hypertarget{classvct_fixed_size_vector_recursive_engines_1_1_vo_vi_si}{\section{vct\-Fixed\-Size\-Vector\-Recursive\-Engines$<$ \-\_\-size $>$\-:\-:Vo\-Vi\-Si$<$ \-\_\-element\-Operation\-Type $>$ Class Template Reference}
+\label{classvct_fixed_size_vector_recursive_engines_1_1_vo_vi_si}\index{vct\-Fixed\-Size\-Vector\-Recursive\-Engines$<$ \-\_\-size $>$\-::\-Vo\-Vi\-Si$<$ \-\_\-element\-Operation\-Type $>$@{vct\-Fixed\-Size\-Vector\-Recursive\-Engines$<$ \-\_\-size $>$\-::\-Vo\-Vi\-Si$<$ \-\_\-element\-Operation\-Type $>$}}
+}
 
 
 Implement operation of the form $vo = op(vi, si)$ for fixed size vectors.  
@@ -7,22 +8,25 @@ Implement operation of the form $vo = op(vi, si)$ for fixed size vectors.
 
 
 
-{\ttfamily \#include $<$vct\+Fixed\+Size\+Vector\+Recursive\+Engines.\+h$>$}
+{\ttfamily \#include $<$vct\-Fixed\-Size\-Vector\-Recursive\-Engines.\-h$>$}
 
 \subsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
-typedef \hyperlink{classvct_fixed_size_vector_recursive_engines}{vct\+Fixed\+Size\+Vector\+Recursive\+Engines}$<$ \+\_\+size-\/1 $>$\+::template \hyperlink{classvct_fixed_size_vector_recursive_engines_1_1_vo_vi_si}{Vo\+Vi\+Si}$<$ \+\_\+element\+Operation\+Type $>$ \hyperlink{classvct_fixed_size_vector_recursive_engines_1_1_vo_vi_si_accec4105549a16640771c23dad79ac30}{Recursive\+Step}
+typedef \\*
+\hyperlink{classvct_fixed_size_vector_recursive_engines}{vct\-Fixed\-Size\-Vector\-Recursive\-Engines}\\*
+$<$ \-\_\-size-\/1 $>$\-::template \hyperlink{classvct_fixed_size_vector_recursive_engines_1_1_vo_vi_si}{Vo\-Vi\-Si}\\*
+$<$ \-\_\-element\-Operation\-Type $>$ \hyperlink{classvct_fixed_size_vector_recursive_engines_1_1_vo_vi_si_accec4105549a16640771c23dad79ac30}{Recursive\-Step}
 \end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-{\footnotesize template$<$class \+\_\+output\+Vector\+Type , class \+\_\+input\+Vector\+Type , class \+\_\+input\+Scalar\+Type $>$ }\\static void \hyperlink{classvct_fixed_size_vector_recursive_engines_1_1_vo_vi_si_a77d53351e3af513b9aab368e14ca65ea}{Unfold} (\+\_\+output\+Vector\+Type \&output, const \+\_\+input\+Vector\+Type \&input\+Vector, const \+\_\+input\+Scalar\+Type input\+Scalar)
+{\footnotesize template$<$class \-\_\-output\-Vector\-Type , class \-\_\-input\-Vector\-Type , class \-\_\-input\-Scalar\-Type $>$ }\\static void \hyperlink{classvct_fixed_size_vector_recursive_engines_1_1_vo_vi_si_a77d53351e3af513b9aab368e14ca65ea}{Unfold} (\-\_\-output\-Vector\-Type \&output, const \-\_\-input\-Vector\-Type \&input\-Vector, const \-\_\-input\-Scalar\-Type input\-Scalar)
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-\subsubsection*{template$<$vct\+::size\+\_\+type \+\_\+size$>$template$<$class \+\_\+element\+Operation\+Type$>$class vct\+Fixed\+Size\+Vector\+Recursive\+Engines$<$ \+\_\+size $>$\+::\+Vo\+Vi\+Si$<$ \+\_\+element\+Operation\+Type $>$}
+\subsubsection*{template$<$vct\-::size\-\_\-type \-\_\-size$>$template$<$class \-\_\-element\-Operation\-Type$>$class vct\-Fixed\-Size\-Vector\-Recursive\-Engines$<$ \-\_\-size $>$\-::\-Vo\-Vi\-Si$<$ \-\_\-element\-Operation\-Type $>$}
 
 Implement operation of the form $vo = op(vi, si)$ for fixed size vectors. 
 
@@ -30,7 +34,7 @@ This class uses template specialization to perform binary vector operations of t
 
 where $v_o$ is the output vector, and $v_i, s_i$ are input vector and scalar, all vectors are of an equal fixed size, determined at compilation time, {\itshape op} stands for the a binary operation performed elementwise between $v_i$ and $s_i$, and whose result is stored elementwise into $v_o$.
 
-The operation type operation\+Type must have a static method with the signature
+The operation type operation\-Type must have a static method with the signature
 
 
 \begin{DoxyPre}
@@ -38,11 +42,11 @@ static operationType Operation(const I1E & arg1, const I2E & arg2)
 \end{DoxyPre}
 
 
-where O\+E, I1\+E, I2\+E are the types of vector elements in $v_o, v_i s_i$ respectively. These types do not need to be defined explicitly for {\itshape \hyperlink{classvct_fixed_size_vector_recursive_engines}{vct\+Fixed\+Size\+Vector\+Recursive\+Engines}} class, as they are inferred from the signature of the corresponding operator\mbox{[}\mbox{]} for each of the vector types. However, they may need to be defined for the class operation\+Type.
+where O\-E, I1\-E, I2\-E are the types of vector elements in $v_o, v_i s_i$ respectively. These types do not need to be defined explicitly for {\itshape \hyperlink{classvct_fixed_size_vector_recursive_engines}{vct\-Fixed\-Size\-Vector\-Recursive\-Engines}} class, as they are inferred from the signature of the corresponding operator\mbox{[}\mbox{]} for each of the vector types. However, they may need to be defined for the class operation\-Type.
 
-For examples of binary operations, see \hyperlink{vct_binary_operations_8h}{vct\+Binary\+Operations.\+h} .
+For examples of binary operations, see \hyperlink{vct_binary_operations_8h}{vct\-Binary\-Operations.\-h} .
 
-Usage example for \hyperlink{classvct_fixed_size_vector_recursive_engines_1_1_vo_vi_si}{vct\+Fixed\+Size\+Vector\+Recursive\+Engines\+::\+Vo\+Vi\+Si}\+: 
+Usage example for \hyperlink{classvct_fixed_size_vector_recursive_engines_1_1_vo_vi_si}{vct\-Fixed\-Size\-Vector\-Recursive\-Engines\-::\-Vo\-Vi\-Si}\-: 
 \begin{DoxyPre}
 enum \{SIZE = 3\};
 int input1[SIZE];
@@ -57,43 +61,43 @@ double output[SIZE];\end{DoxyPre}
 
 
 \begin{DoxyParams}{Parameters}
-{\em \+\_\+element\+Operation\+Type} & The type of the binary operation.\\
+{\em \-\_\-element\-Operation\-Type} & The type of the binary operation.\\
 \hline
 \end{DoxyParams}
-\begin{DoxySeeAlso}{See also}
-\hyperlink{classvct_fixed_size_vector_recursive_engines}{vct\+Fixed\+Size\+Vector\+Recursive\+Engines} 
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classvct_fixed_size_vector_recursive_engines}{vct\-Fixed\-Size\-Vector\-Recursive\-Engines} 
 \end{DoxySeeAlso}
 
 
 \subsection{Member Typedef Documentation}
-\hypertarget{classvct_fixed_size_vector_recursive_engines_1_1_vo_vi_si_accec4105549a16640771c23dad79ac30}{}\index{vct\+Fixed\+Size\+Vector\+Recursive\+Engines\+::\+Vo\+Vi\+Si@{vct\+Fixed\+Size\+Vector\+Recursive\+Engines\+::\+Vo\+Vi\+Si}!Recursive\+Step@{Recursive\+Step}}
-\index{Recursive\+Step@{Recursive\+Step}!vct\+Fixed\+Size\+Vector\+Recursive\+Engines\+::\+Vo\+Vi\+Si@{vct\+Fixed\+Size\+Vector\+Recursive\+Engines\+::\+Vo\+Vi\+Si}}
-\subsubsection[{Recursive\+Step}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size$>$ template$<$class \+\_\+element\+Operation\+Type $>$ typedef {\bf vct\+Fixed\+Size\+Vector\+Recursive\+Engines}$<$\+\_\+size-\/1$>$\+::template {\bf Vo\+Vi\+Si}$<$\+\_\+element\+Operation\+Type$>$ {\bf vct\+Fixed\+Size\+Vector\+Recursive\+Engines}$<$ \+\_\+size $>$\+::{\bf Vo\+Vi\+Si}$<$ \+\_\+element\+Operation\+Type $>$\+::{\bf Recursive\+Step}}\label{classvct_fixed_size_vector_recursive_engines_1_1_vo_vi_si_accec4105549a16640771c23dad79ac30}
+\hypertarget{classvct_fixed_size_vector_recursive_engines_1_1_vo_vi_si_accec4105549a16640771c23dad79ac30}{\index{vct\-Fixed\-Size\-Vector\-Recursive\-Engines\-::\-Vo\-Vi\-Si@{vct\-Fixed\-Size\-Vector\-Recursive\-Engines\-::\-Vo\-Vi\-Si}!Recursive\-Step@{Recursive\-Step}}
+\index{Recursive\-Step@{Recursive\-Step}!vctFixedSizeVectorRecursiveEngines::VoViSi@{vct\-Fixed\-Size\-Vector\-Recursive\-Engines\-::\-Vo\-Vi\-Si}}
+\subsubsection[{Recursive\-Step}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\-::size\-\_\-type \-\_\-size$>$ template$<$class \-\_\-element\-Operation\-Type $>$ typedef {\bf vct\-Fixed\-Size\-Vector\-Recursive\-Engines}$<$\-\_\-size-\/1$>$\-::template {\bf Vo\-Vi\-Si}$<$\-\_\-element\-Operation\-Type$>$ {\bf vct\-Fixed\-Size\-Vector\-Recursive\-Engines}$<$ \-\_\-size $>$\-::{\bf Vo\-Vi\-Si}$<$ \-\_\-element\-Operation\-Type $>$\-::{\bf Recursive\-Step}}}\label{classvct_fixed_size_vector_recursive_engines_1_1_vo_vi_si_accec4105549a16640771c23dad79ac30}
 
 
 \subsection{Member Function Documentation}
-\hypertarget{classvct_fixed_size_vector_recursive_engines_1_1_vo_vi_si_a77d53351e3af513b9aab368e14ca65ea}{}\index{vct\+Fixed\+Size\+Vector\+Recursive\+Engines\+::\+Vo\+Vi\+Si@{vct\+Fixed\+Size\+Vector\+Recursive\+Engines\+::\+Vo\+Vi\+Si}!Unfold@{Unfold}}
-\index{Unfold@{Unfold}!vct\+Fixed\+Size\+Vector\+Recursive\+Engines\+::\+Vo\+Vi\+Si@{vct\+Fixed\+Size\+Vector\+Recursive\+Engines\+::\+Vo\+Vi\+Si}}
-\subsubsection[{Unfold}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size$>$ template$<$class \+\_\+element\+Operation\+Type $>$ template$<$class \+\_\+output\+Vector\+Type , class \+\_\+input\+Vector\+Type , class \+\_\+input\+Scalar\+Type $>$ static void {\bf vct\+Fixed\+Size\+Vector\+Recursive\+Engines}$<$ \+\_\+size $>$\+::{\bf Vo\+Vi\+Si}$<$ \+\_\+element\+Operation\+Type $>$\+::Unfold (
+\hypertarget{classvct_fixed_size_vector_recursive_engines_1_1_vo_vi_si_a77d53351e3af513b9aab368e14ca65ea}{\index{vct\-Fixed\-Size\-Vector\-Recursive\-Engines\-::\-Vo\-Vi\-Si@{vct\-Fixed\-Size\-Vector\-Recursive\-Engines\-::\-Vo\-Vi\-Si}!Unfold@{Unfold}}
+\index{Unfold@{Unfold}!vctFixedSizeVectorRecursiveEngines::VoViSi@{vct\-Fixed\-Size\-Vector\-Recursive\-Engines\-::\-Vo\-Vi\-Si}}
+\subsubsection[{Unfold}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\-::size\-\_\-type \-\_\-size$>$ template$<$class \-\_\-element\-Operation\-Type $>$ template$<$class \-\_\-output\-Vector\-Type , class \-\_\-input\-Vector\-Type , class \-\_\-input\-Scalar\-Type $>$ static void {\bf vct\-Fixed\-Size\-Vector\-Recursive\-Engines}$<$ \-\_\-size $>$\-::{\bf Vo\-Vi\-Si}$<$ \-\_\-element\-Operation\-Type $>$\-::Unfold (
 \begin{DoxyParamCaption}
-\item[{\+\_\+output\+Vector\+Type \&}]{output, }
-\item[{const \+\_\+input\+Vector\+Type \&}]{input\+Vector, }
-\item[{const \+\_\+input\+Scalar\+Type}]{input\+Scalar}
+\item[{\-\_\-output\-Vector\-Type \&}]{output, }
+\item[{const \-\_\-input\-Vector\-Type \&}]{input\-Vector, }
+\item[{const \-\_\-input\-Scalar\-Type}]{input\-Scalar}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classvct_fixed_size_vector_recursive_engines_1_1_vo_vi_si_a77d53351e3af513b9aab368e14ca65ea}
-Unfold the recursion. Performs the operation \+\_\+element\+Operation\+Type elementwise on the last elements of the input vector and scalar and call Unfold for the \+\_\+size -\/ 1 elements left (i.\+e. unfold the recursive calls).
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classvct_fixed_size_vector_recursive_engines_1_1_vo_vi_si_a77d53351e3af513b9aab368e14ca65ea}
+Unfold the recursion. Performs the operation \-\_\-element\-Operation\-Type elementwise on the last elements of the input vector and scalar and call Unfold for the \-\_\-size -\/ 1 elements left (i.\-e. unfold the recursive calls).
 
 
 \begin{DoxyParams}{Parameters}
 {\em output} & The output vector. \\
 \hline
-{\em input\+Vector} & The input vector (first operand). \\
+{\em input\-Vector} & The input vector (first operand). \\
 \hline
-{\em input\+Scalar} & The input scalar (second operand). \\
+{\em input\-Scalar} & The input scalar (second operand). \\
 \hline
 \end{DoxyParams}
 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
 \item 
-/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Vector/\hyperlink{vct_fixed_size_vector_recursive_engines_8h}{vct\+Fixed\+Size\+Vector\+Recursive\+Engines.\+h}\end{DoxyCompactItemize}
+/home/adeguet1/catkin\-\_\-ws/src/cisst-\/saw/cisst/cisst\-Vector/\hyperlink{vct_fixed_size_vector_recursive_engines_8h}{vct\-Fixed\-Size\-Vector\-Recursive\-Engines.\-h}\end{DoxyCompactItemize}

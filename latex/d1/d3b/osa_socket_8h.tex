@@ -1,68 +1,67 @@
-\hypertarget{osa_socket_8h}{}\section{/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+O\+S\+Abstraction/osa\+Socket.h File Reference}
-\label{osa_socket_8h}\index{/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+O\+S\+Abstraction/osa\+Socket.\+h@{/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+O\+S\+Abstraction/osa\+Socket.\+h}}
+\hypertarget{osa_socket_8h}{\section{/home/adeguet1/catkin\-\_\-ws/src/cisst-\/saw/cisst/cisst\-O\-S\-Abstraction/osa\-Socket.h File Reference}
+\label{osa_socket_8h}\index{/home/adeguet1/catkin\-\_\-ws/src/cisst-\/saw/cisst/cisst\-O\-S\-Abstraction/osa\-Socket.\-h@{/home/adeguet1/catkin\-\_\-ws/src/cisst-\/saw/cisst/cisst\-O\-S\-Abstraction/osa\-Socket.\-h}}
+}
 
 
-Declaration of \hyperlink{classosa_socket}{osa\+Socket}
+Declaration of \hyperlink{classosa_socket}{osa\-Socket}
 
-This is a cross-\/platform socket library with basic support for U\+D\+P (datagram) and T\+C\+P (stream) sockets. The B\+S\+D socket A\+P\+I is used on Unix-\/like systems, while the Winsock2 A\+P\+I is used on Windows.  
+This is a cross-\/platform socket library with basic support for U\-D\-P (datagram) and T\-C\-P (stream) sockets. The B\-S\-D socket A\-P\-I is used on Unix-\/like systems, while the Winsock2 A\-P\-I is used on Windows.  
 
 
-{\ttfamily \#include $<$cisst\+Common/cmn\+Assert.\+h$>$}\\*
-{\ttfamily \#include $<$cisst\+Common/cmn\+Generic\+Object.\+h$>$}\\*
-{\ttfamily \#include $<$cisst\+Common/cmn\+Logger.\+h$>$}\\*
-{\ttfamily \#include $<$cisst\+Common/cmn\+Portability.\+h$>$}\\*
-{\ttfamily \#include $<$cisst\+O\+S\+Abstraction/osa\+Export.\+h$>$}\\*
+{\ttfamily \#include $<$cisst\-Common/cmn\-Assert.\-h$>$}\\*
+{\ttfamily \#include $<$cisst\-Common/cmn\-Generic\-Object.\-h$>$}\\*
+{\ttfamily \#include $<$cisst\-Common/cmn\-Logger.\-h$>$}\\*
+{\ttfamily \#include $<$cisst\-Common/cmn\-Portability.\-h$>$}\\*
+{\ttfamily \#include $<$cisst\-O\-S\-Abstraction/osa\-Export.\-h$>$}\\*
 \subsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
-struct \hyperlink{structosa_i_pand_port}{osa\+I\+Pand\+Port}
+struct \hyperlink{structosa_i_pand_port}{osa\-I\-Pand\-Port}
 \item 
-class \hyperlink{classosa_socket}{osa\+Socket}
+class \hyperlink{classosa_socket}{osa\-Socket}
 \end{DoxyCompactItemize}
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{osa_socket_8h_a47ef065b0b9d2bb31adeb5f3cd0a1295}{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+I\+N\+S\+T\+A\+N\+T\+I\+A\+T\+I\+O\+N} (\hyperlink{classosa_socket}{osa\+Socket})
+\hyperlink{osa_socket_8h_a47ef065b0b9d2bb31adeb5f3cd0a1295}{C\-M\-N\-\_\-\-D\-E\-C\-L\-A\-R\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-S\-\_\-\-I\-N\-S\-T\-A\-N\-T\-I\-A\-T\-I\-O\-N} (\hyperlink{classosa_socket}{osa\-Socket})
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-Declaration of \hyperlink{classosa_socket}{osa\+Socket}
+Declaration of \hyperlink{classosa_socket}{osa\-Socket}
 
-This is a cross-\/platform socket library with basic support for U\+D\+P (datagram) and T\+C\+P (stream) sockets. The B\+S\+D socket A\+P\+I is used on Unix-\/like systems, while the Winsock2 A\+P\+I is used on Windows. 
-
-For U\+D\+P, both a server and client can be defined and set as follows\+: 
+This is a cross-\/platform socket library with basic support for U\-D\-P (datagram) and T\-C\-P (stream) sockets. The B\-S\-D socket A\-P\-I is used on Unix-\/like systems, while the Winsock2 A\-P\-I is used on Windows. For U\-D\-P, both a server and client can be defined and set as follows\-: 
 \begin{DoxyCode}
 server.AssignPort(serverPort);
 client.SetDestination(serverHost, serverPort);
 \end{DoxyCode}
- where server\+Host could either be the hostname or the I\+P address of the server. U\+D\+P sockets update their destination to the origin of the last message received.
+ where server\-Host could either be the hostname or the I\-P address of the server. U\-D\-P sockets update their destination to the origin of the last message received.
 
-For the T\+C\+P case, the client has to additionally call the Connect() method, while the server is created using the \hyperlink{classosa_socket_server}{osa\+Socket\+Server} class. 
+For the T\-C\-P case, the client has to additionally call the Connect() method, while the server is created using the \hyperlink{classosa_socket_server}{osa\-Socket\-Server} class. 
 \begin{DoxyCode}
 client.SetDestination(serverIP, serverPort);
 client.Connect();
 \textcolor{comment}{// or}
 client.Connect(serverIP, serverPort);
 \end{DoxyCode}
- The T\+C\+P server is defined using \hyperlink{classosa_socket_server}{osa\+Socket\+Server}, which calls an overloaded \hyperlink{classosa_socket}{osa\+Socket} constructor upon accepting a connection (see \hyperlink{classosa_socket_server}{osa\+Socket\+Server} class).
+ The T\-C\-P server is defined using \hyperlink{classosa_socket_server}{osa\-Socket\-Server}, which calls an overloaded \hyperlink{classosa_socket}{osa\-Socket} constructor upon accepting a connection (see \hyperlink{classosa_socket_server}{osa\-Socket\-Server} class).
 
 \begin{DoxyNote}{Note}
-Please refer to os\+Abstraction\+Tutorial/sockets for usage examples. 
+Please refer to os\-Abstraction\-Tutorial/sockets for usage examples. 
 
-Disconnection is detected when a socket attempts to write to another socket and does not received an A\+C\+K.
+Disconnection is detected when a socket attempts to write to another socket and does not received an A\-C\-K.
 \end{DoxyNote}
 \begin{DoxyRefDesc}{Todo}
-\item[\hyperlink{todo__todo000006}{Todo}]Get\+I\+P() could be static or external to the \hyperlink{classosa_socket}{osa\+Socket} class. 
+\item[\hyperlink{todo__todo000007}{Todo}]Get\-I\-P() could be static or external to the \hyperlink{classosa_socket}{osa\-Socket} class. 
 
-Perhaps Get\+Localhost\+I\+P() should be outside the class. \end{DoxyRefDesc}
+Perhaps Get\-Localhost\-I\-P() should be outside the class. \end{DoxyRefDesc}
 
 
 \subsection{Function Documentation}
-\hypertarget{osa_socket_8h_a47ef065b0b9d2bb31adeb5f3cd0a1295}{}\index{osa\+Socket.\+h@{osa\+Socket.\+h}!C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+I\+N\+S\+T\+A\+N\+T\+I\+A\+T\+I\+O\+N@{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+I\+N\+S\+T\+A\+N\+T\+I\+A\+T\+I\+O\+N}}
-\index{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+I\+N\+S\+T\+A\+N\+T\+I\+A\+T\+I\+O\+N@{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+I\+N\+S\+T\+A\+N\+T\+I\+A\+T\+I\+O\+N}!osa\+Socket.\+h@{osa\+Socket.\+h}}
-\subsubsection[{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+I\+N\+S\+T\+A\+N\+T\+I\+A\+T\+I\+O\+N}]{\setlength{\rightskip}{0pt plus 5cm}C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+I\+N\+S\+T\+A\+N\+T\+I\+A\+T\+I\+O\+N (
+\hypertarget{osa_socket_8h_a47ef065b0b9d2bb31adeb5f3cd0a1295}{\index{osa\-Socket.\-h@{osa\-Socket.\-h}!C\-M\-N\-\_\-\-D\-E\-C\-L\-A\-R\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-S\-\_\-\-I\-N\-S\-T\-A\-N\-T\-I\-A\-T\-I\-O\-N@{C\-M\-N\-\_\-\-D\-E\-C\-L\-A\-R\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-S\-\_\-\-I\-N\-S\-T\-A\-N\-T\-I\-A\-T\-I\-O\-N}}
+\index{C\-M\-N\-\_\-\-D\-E\-C\-L\-A\-R\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-S\-\_\-\-I\-N\-S\-T\-A\-N\-T\-I\-A\-T\-I\-O\-N@{C\-M\-N\-\_\-\-D\-E\-C\-L\-A\-R\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-S\-\_\-\-I\-N\-S\-T\-A\-N\-T\-I\-A\-T\-I\-O\-N}!osaSocket.h@{osa\-Socket.\-h}}
+\subsubsection[{C\-M\-N\-\_\-\-D\-E\-C\-L\-A\-R\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-S\-\_\-\-I\-N\-S\-T\-A\-N\-T\-I\-A\-T\-I\-O\-N}]{\setlength{\rightskip}{0pt plus 5cm}C\-M\-N\-\_\-\-D\-E\-C\-L\-A\-R\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-S\-\_\-\-I\-N\-S\-T\-A\-N\-T\-I\-A\-T\-I\-O\-N (
 \begin{DoxyParamCaption}
-\item[{{\bf osa\+Socket}}]{}
+\item[{{\bf osa\-Socket}}]{}
 \end{DoxyParamCaption}
-)}\label{osa_socket_8h_a47ef065b0b9d2bb31adeb5f3cd0a1295}
+)}}\label{osa_socket_8h_a47ef065b0b9d2bb31adeb5f3cd0a1295}

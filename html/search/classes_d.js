@@ -36,7 +36,6 @@ var searchData=
   ['nmrlusolver',['nmrLUSolver',['../d0/d9c/classnmr_l_u_solver.html',1,'']]],
   ['nmrmultiindexcounter',['nmrMultiIndexCounter',['../d0/dc0/classnmr_multi_index_counter.html',1,'']]],
   ['nmrmultivariablepowerbasis',['nmrMultiVariablePowerBasis',['../dc/d0d/classnmr_multi_variable_power_basis.html',1,'']]],
-  ['nmrnnlsdynamicdata',['nmrNNLSDynamicData',['../d4/df7/classnmr_n_n_l_s_dynamic_data.html',1,'']]],
   ['nmrnnlssolver',['nmrNNLSSolver',['../d8/dbd/classnmr_n_n_l_s_solver.html',1,'']]],
   ['nmrpinversedynamicdata',['nmrPInverseDynamicData',['../d6/d1b/classnmr_p_inverse_dynamic_data.html',1,'']]],
   ['nmrpinverseeconomydynamicdata',['nmrPInverseEconomyDynamicData',['../dd/d93/classnmr_p_inverse_economy_dynamic_data.html',1,'']]],

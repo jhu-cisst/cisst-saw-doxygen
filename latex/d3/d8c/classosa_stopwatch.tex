@@ -1,22 +1,23 @@
-\hypertarget{classosa_stopwatch}{}\section{osa\+Stopwatch Class Reference}
-\label{classosa_stopwatch}\index{osa\+Stopwatch@{osa\+Stopwatch}}
+\hypertarget{classosa_stopwatch}{\section{osa\-Stopwatch Class Reference}
+\label{classosa_stopwatch}\index{osa\-Stopwatch@{osa\-Stopwatch}}
+}
 
 
-{\ttfamily \#include $<$osa\+Stopwatch.\+h$>$}
+{\ttfamily \#include $<$osa\-Stopwatch.\-h$>$}
 
 \subsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
-typedef unsigned long \hyperlink{classosa_stopwatch_a1965d1eca46d883235a26d1ee2920c2f}{Milliseconds\+Counter}
+typedef unsigned long \hyperlink{classosa_stopwatch_a1965d1eca46d883235a26d1ee2920c2f}{Milliseconds\-Counter}
 \item 
-typedef double \hyperlink{classosa_stopwatch_af99ed194ad28f06f68aa66c81ae93517}{Seconds\+Counter}
+typedef double \hyperlink{classosa_stopwatch_af99ed194ad28f06f68aa66c81ae93517}{Seconds\-Counter}
 \end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classosa_stopwatch_ac84e6730acab9c10fdd183fbc570dd48}{osa\+Stopwatch} (void)
+\hyperlink{classosa_stopwatch_ac84e6730acab9c10fdd183fbc570dd48}{osa\-Stopwatch} (void)
 \item 
-double \hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} \hyperlink{classosa_stopwatch_aaeee3a1a11b82430e3deeab9e040ff7d}{Get\+Time\+Granularity} (void) const 
+double \hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{C\-I\-S\-S\-T\-\_\-\-E\-X\-P\-O\-R\-T} \hyperlink{classosa_stopwatch_aaeee3a1a11b82430e3deeab9e040ff7d}{Get\-Time\-Granularity} (void) const 
 \item 
 void \hyperlink{classosa_stopwatch_ab01ee43dc8f0aa7dc395952391abfa2c}{Reset} (void)
 \item 
@@ -24,92 +25,93 @@ void \hyperlink{classosa_stopwatch_aabe27a9580a1c91dd5f9af3fa8e43c76}{Start} (vo
 \item 
 void \hyperlink{classosa_stopwatch_abe78ec771bed0e97d42d51251f16046c}{Stop} (void)
 \item 
-bool \hyperlink{classosa_stopwatch_a30e67dba34aef8524473bd82a253aba1}{Is\+Running} (void) const 
+bool \hyperlink{classosa_stopwatch_a30e67dba34aef8524473bd82a253aba1}{Is\-Running} (void) const 
 \item 
-\hyperlink{classosa_stopwatch_a1965d1eca46d883235a26d1ee2920c2f}{Milliseconds\+Counter} \hyperlink{cmn_portability_8h_a63da7164735f9501be651b1f2bbc0121}{C\+I\+S\+S\+T\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D} \hyperlink{classosa_stopwatch_a874511bfee93600d9c47d43b3e5c3f9d}{Get\+Current\+Read} (void) const 
+\hyperlink{classosa_stopwatch_a1965d1eca46d883235a26d1ee2920c2f}{Milliseconds\-Counter} \\*
+\hyperlink{cmn_portability_8h_a63da7164735f9501be651b1f2bbc0121}{C\-I\-S\-S\-T\-\_\-\-D\-E\-P\-R\-E\-C\-A\-T\-E\-D} \hyperlink{classosa_stopwatch_a874511bfee93600d9c47d43b3e5c3f9d}{Get\-Current\-Read} (void) const 
 \item 
-\hyperlink{classosa_stopwatch_af99ed194ad28f06f68aa66c81ae93517}{Seconds\+Counter} \hyperlink{classosa_stopwatch_a437cf8dbddb7a176baa506ca4a882935}{Get\+Elapsed\+Time} (void) const 
+\hyperlink{classosa_stopwatch_af99ed194ad28f06f68aa66c81ae93517}{Seconds\-Counter} \hyperlink{classosa_stopwatch_a437cf8dbddb7a176baa506ca4a882935}{Get\-Elapsed\-Time} (void) const 
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
 Implement a simple stopwatch mechanism, which is helpful in profiling, debugging, and performance estimation.
 
-The \hyperlink{classosa_stopwatch}{osa\+Stopwatch} class uses system calls to obtain time at the finest granularity available in the system. Note that a system call may sometimes invoke a context switch, and use them only when needed to interfere the least with the normal performance of the program.
+The \hyperlink{classosa_stopwatch}{osa\-Stopwatch} class uses system calls to obtain time at the finest granularity available in the system. Note that a system call may sometimes invoke a context switch, and use them only when needed to interfere the least with the normal performance of the program.
 
 To reduce overhead (for more efficient time polling), all the methods are inlined. 
 
 \subsection{Member Typedef Documentation}
-\hypertarget{classosa_stopwatch_a1965d1eca46d883235a26d1ee2920c2f}{}\index{osa\+Stopwatch@{osa\+Stopwatch}!Milliseconds\+Counter@{Milliseconds\+Counter}}
-\index{Milliseconds\+Counter@{Milliseconds\+Counter}!osa\+Stopwatch@{osa\+Stopwatch}}
-\subsubsection[{Milliseconds\+Counter}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned long {\bf osa\+Stopwatch\+::\+Milliseconds\+Counter}}\label{classosa_stopwatch_a1965d1eca46d883235a26d1ee2920c2f}
-\hypertarget{classosa_stopwatch_af99ed194ad28f06f68aa66c81ae93517}{}\index{osa\+Stopwatch@{osa\+Stopwatch}!Seconds\+Counter@{Seconds\+Counter}}
-\index{Seconds\+Counter@{Seconds\+Counter}!osa\+Stopwatch@{osa\+Stopwatch}}
-\subsubsection[{Seconds\+Counter}]{\setlength{\rightskip}{0pt plus 5cm}typedef double {\bf osa\+Stopwatch\+::\+Seconds\+Counter}}\label{classosa_stopwatch_af99ed194ad28f06f68aa66c81ae93517}
+\hypertarget{classosa_stopwatch_a1965d1eca46d883235a26d1ee2920c2f}{\index{osa\-Stopwatch@{osa\-Stopwatch}!Milliseconds\-Counter@{Milliseconds\-Counter}}
+\index{Milliseconds\-Counter@{Milliseconds\-Counter}!osaStopwatch@{osa\-Stopwatch}}
+\subsubsection[{Milliseconds\-Counter}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned long {\bf osa\-Stopwatch\-::\-Milliseconds\-Counter}}}\label{classosa_stopwatch_a1965d1eca46d883235a26d1ee2920c2f}
+\hypertarget{classosa_stopwatch_af99ed194ad28f06f68aa66c81ae93517}{\index{osa\-Stopwatch@{osa\-Stopwatch}!Seconds\-Counter@{Seconds\-Counter}}
+\index{Seconds\-Counter@{Seconds\-Counter}!osaStopwatch@{osa\-Stopwatch}}
+\subsubsection[{Seconds\-Counter}]{\setlength{\rightskip}{0pt plus 5cm}typedef double {\bf osa\-Stopwatch\-::\-Seconds\-Counter}}}\label{classosa_stopwatch_af99ed194ad28f06f68aa66c81ae93517}
 
 
 \subsection{Constructor \& Destructor Documentation}
-\hypertarget{classosa_stopwatch_ac84e6730acab9c10fdd183fbc570dd48}{}\index{osa\+Stopwatch@{osa\+Stopwatch}!osa\+Stopwatch@{osa\+Stopwatch}}
-\index{osa\+Stopwatch@{osa\+Stopwatch}!osa\+Stopwatch@{osa\+Stopwatch}}
-\subsubsection[{osa\+Stopwatch}]{\setlength{\rightskip}{0pt plus 5cm}osa\+Stopwatch\+::osa\+Stopwatch (
+\hypertarget{classosa_stopwatch_ac84e6730acab9c10fdd183fbc570dd48}{\index{osa\-Stopwatch@{osa\-Stopwatch}!osa\-Stopwatch@{osa\-Stopwatch}}
+\index{osa\-Stopwatch@{osa\-Stopwatch}!osaStopwatch@{osa\-Stopwatch}}
+\subsubsection[{osa\-Stopwatch}]{\setlength{\rightskip}{0pt plus 5cm}osa\-Stopwatch\-::osa\-Stopwatch (
 \begin{DoxyParamCaption}
 \item[{void}]{}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\label{classosa_stopwatch_ac84e6730acab9c10fdd183fbc570dd48}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classosa_stopwatch_ac84e6730acab9c10fdd183fbc570dd48}
 
 
 \subsection{Member Function Documentation}
-\hypertarget{classosa_stopwatch_a874511bfee93600d9c47d43b3e5c3f9d}{}\index{osa\+Stopwatch@{osa\+Stopwatch}!Get\+Current\+Read@{Get\+Current\+Read}}
-\index{Get\+Current\+Read@{Get\+Current\+Read}!osa\+Stopwatch@{osa\+Stopwatch}}
-\subsubsection[{Get\+Current\+Read}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Milliseconds\+Counter} {\bf C\+I\+S\+S\+T\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D} osa\+Stopwatch\+::\+Get\+Current\+Read (
+\hypertarget{classosa_stopwatch_a874511bfee93600d9c47d43b3e5c3f9d}{\index{osa\-Stopwatch@{osa\-Stopwatch}!Get\-Current\-Read@{Get\-Current\-Read}}
+\index{Get\-Current\-Read@{Get\-Current\-Read}!osaStopwatch@{osa\-Stopwatch}}
+\subsubsection[{Get\-Current\-Read}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Milliseconds\-Counter} {\bf C\-I\-S\-S\-T\-\_\-\-D\-E\-P\-R\-E\-C\-A\-T\-E\-D} osa\-Stopwatch\-::\-Get\-Current\-Read (
 \begin{DoxyParamCaption}
 \item[{void}]{}
 \end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classosa_stopwatch_a874511bfee93600d9c47d43b3e5c3f9d}
-Return the current read of the stopwatch without changing the running state. This method is now deprecated as it returns a time interval in milliseconds (integer). Use \hyperlink{classosa_stopwatch_a437cf8dbddb7a176baa506ca4a882935}{Get\+Elapsed\+Time()} instead. \hypertarget{classosa_stopwatch_a437cf8dbddb7a176baa506ca4a882935}{}\index{osa\+Stopwatch@{osa\+Stopwatch}!Get\+Elapsed\+Time@{Get\+Elapsed\+Time}}
-\index{Get\+Elapsed\+Time@{Get\+Elapsed\+Time}!osa\+Stopwatch@{osa\+Stopwatch}}
-\subsubsection[{Get\+Elapsed\+Time}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Seconds\+Counter} osa\+Stopwatch\+::\+Get\+Elapsed\+Time (
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classosa_stopwatch_a874511bfee93600d9c47d43b3e5c3f9d}
+Return the current read of the stopwatch without changing the running state. This method is now deprecated as it returns a time interval in milliseconds (integer). Use \hyperlink{classosa_stopwatch_a437cf8dbddb7a176baa506ca4a882935}{Get\-Elapsed\-Time()} instead. \hypertarget{classosa_stopwatch_a437cf8dbddb7a176baa506ca4a882935}{\index{osa\-Stopwatch@{osa\-Stopwatch}!Get\-Elapsed\-Time@{Get\-Elapsed\-Time}}
+\index{Get\-Elapsed\-Time@{Get\-Elapsed\-Time}!osaStopwatch@{osa\-Stopwatch}}
+\subsubsection[{Get\-Elapsed\-Time}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Seconds\-Counter} osa\-Stopwatch\-::\-Get\-Elapsed\-Time (
 \begin{DoxyParamCaption}
 \item[{void}]{}
 \end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classosa_stopwatch_a437cf8dbddb7a176baa506ca4a882935}
-Return the current read of the stopwatch without changing the running state. Return a time interval in seconds using a \char`\"{}double\char`\"{} precision floating point number. \hypertarget{classosa_stopwatch_aaeee3a1a11b82430e3deeab9e040ff7d}{}\index{osa\+Stopwatch@{osa\+Stopwatch}!Get\+Time\+Granularity@{Get\+Time\+Granularity}}
-\index{Get\+Time\+Granularity@{Get\+Time\+Granularity}!osa\+Stopwatch@{osa\+Stopwatch}}
-\subsubsection[{Get\+Time\+Granularity}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} osa\+Stopwatch\+::\+Get\+Time\+Granularity (
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classosa_stopwatch_a437cf8dbddb7a176baa506ca4a882935}
+Return the current read of the stopwatch without changing the running state. Return a time interval in seconds using a \char`\"{}double\char`\"{} precision floating point number. \hypertarget{classosa_stopwatch_aaeee3a1a11b82430e3deeab9e040ff7d}{\index{osa\-Stopwatch@{osa\-Stopwatch}!Get\-Time\-Granularity@{Get\-Time\-Granularity}}
+\index{Get\-Time\-Granularity@{Get\-Time\-Granularity}!osaStopwatch@{osa\-Stopwatch}}
+\subsubsection[{Get\-Time\-Granularity}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf C\-I\-S\-S\-T\-\_\-\-E\-X\-P\-O\-R\-T} osa\-Stopwatch\-::\-Get\-Time\-Granularity (
 \begin{DoxyParamCaption}
 \item[{void}]{}
 \end{DoxyParamCaption}
-) const}\label{classosa_stopwatch_aaeee3a1a11b82430e3deeab9e040ff7d}
-Return the granularity of time in the system, in seconds. The fraction part is the fraction of second that the system time granularity supports \hypertarget{classosa_stopwatch_a30e67dba34aef8524473bd82a253aba1}{}\index{osa\+Stopwatch@{osa\+Stopwatch}!Is\+Running@{Is\+Running}}
-\index{Is\+Running@{Is\+Running}!osa\+Stopwatch@{osa\+Stopwatch}}
-\subsubsection[{Is\+Running}]{\setlength{\rightskip}{0pt plus 5cm}bool osa\+Stopwatch\+::\+Is\+Running (
+) const}}\label{classosa_stopwatch_aaeee3a1a11b82430e3deeab9e040ff7d}
+Return the granularity of time in the system, in seconds. The fraction part is the fraction of second that the system time granularity supports \hypertarget{classosa_stopwatch_a30e67dba34aef8524473bd82a253aba1}{\index{osa\-Stopwatch@{osa\-Stopwatch}!Is\-Running@{Is\-Running}}
+\index{Is\-Running@{Is\-Running}!osaStopwatch@{osa\-Stopwatch}}
+\subsubsection[{Is\-Running}]{\setlength{\rightskip}{0pt plus 5cm}bool osa\-Stopwatch\-::\-Is\-Running (
 \begin{DoxyParamCaption}
 \item[{void}]{}
 \end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classosa_stopwatch_a30e67dba34aef8524473bd82a253aba1}
-Returns true if the stopwatch is running and counting continues (i.\+e., if Start was called last). Returns false if the watch is stopped, i.\+e., if Stop or Reset was called last. \hypertarget{classosa_stopwatch_ab01ee43dc8f0aa7dc395952391abfa2c}{}\index{osa\+Stopwatch@{osa\+Stopwatch}!Reset@{Reset}}
-\index{Reset@{Reset}!osa\+Stopwatch@{osa\+Stopwatch}}
-\subsubsection[{Reset}]{\setlength{\rightskip}{0pt plus 5cm}void osa\+Stopwatch\+::\+Reset (
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classosa_stopwatch_a30e67dba34aef8524473bd82a253aba1}
+Returns true if the stopwatch is running and counting continues (i.\-e., if Start was called last). Returns false if the watch is stopped, i.\-e., if Stop or Reset was called last. \hypertarget{classosa_stopwatch_ab01ee43dc8f0aa7dc395952391abfa2c}{\index{osa\-Stopwatch@{osa\-Stopwatch}!Reset@{Reset}}
+\index{Reset@{Reset}!osaStopwatch@{osa\-Stopwatch}}
+\subsubsection[{Reset}]{\setlength{\rightskip}{0pt plus 5cm}void osa\-Stopwatch\-::\-Reset (
 \begin{DoxyParamCaption}
 \item[{void}]{}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\label{classosa_stopwatch_ab01ee43dc8f0aa7dc395952391abfa2c}
-Reset all the counters to zero, and stop the watch \hypertarget{classosa_stopwatch_aabe27a9580a1c91dd5f9af3fa8e43c76}{}\index{osa\+Stopwatch@{osa\+Stopwatch}!Start@{Start}}
-\index{Start@{Start}!osa\+Stopwatch@{osa\+Stopwatch}}
-\subsubsection[{Start}]{\setlength{\rightskip}{0pt plus 5cm}void osa\+Stopwatch\+::\+Start (
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classosa_stopwatch_ab01ee43dc8f0aa7dc395952391abfa2c}
+Reset all the counters to zero, and stop the watch \hypertarget{classosa_stopwatch_aabe27a9580a1c91dd5f9af3fa8e43c76}{\index{osa\-Stopwatch@{osa\-Stopwatch}!Start@{Start}}
+\index{Start@{Start}!osaStopwatch@{osa\-Stopwatch}}
+\subsubsection[{Start}]{\setlength{\rightskip}{0pt plus 5cm}void osa\-Stopwatch\-::\-Start (
 \begin{DoxyParamCaption}
 \item[{void}]{}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\label{classosa_stopwatch_aabe27a9580a1c91dd5f9af3fa8e43c76}
-Start the stopwatch from its current counter state. If the watch is already running, do nothing \hypertarget{classosa_stopwatch_abe78ec771bed0e97d42d51251f16046c}{}\index{osa\+Stopwatch@{osa\+Stopwatch}!Stop@{Stop}}
-\index{Stop@{Stop}!osa\+Stopwatch@{osa\+Stopwatch}}
-\subsubsection[{Stop}]{\setlength{\rightskip}{0pt plus 5cm}void osa\+Stopwatch\+::\+Stop (
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classosa_stopwatch_aabe27a9580a1c91dd5f9af3fa8e43c76}
+Start the stopwatch from its current counter state. If the watch is already running, do nothing \hypertarget{classosa_stopwatch_abe78ec771bed0e97d42d51251f16046c}{\index{osa\-Stopwatch@{osa\-Stopwatch}!Stop@{Stop}}
+\index{Stop@{Stop}!osaStopwatch@{osa\-Stopwatch}}
+\subsubsection[{Stop}]{\setlength{\rightskip}{0pt plus 5cm}void osa\-Stopwatch\-::\-Stop (
 \begin{DoxyParamCaption}
 \item[{void}]{}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\label{classosa_stopwatch_abe78ec771bed0e97d42d51251f16046c}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classosa_stopwatch_abe78ec771bed0e97d42d51251f16046c}
 Stop the stopwatch so that its counter state is kept until a Start or a Reset 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
 \item 
-/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+O\+S\+Abstraction/\hyperlink{osa_stopwatch_8h}{osa\+Stopwatch.\+h}\end{DoxyCompactItemize}
+/home/adeguet1/catkin\-\_\-ws/src/cisst-\/saw/cisst/cisst\-O\-S\-Abstraction/\hyperlink{osa_stopwatch_8h}{osa\-Stopwatch.\-h}\end{DoxyCompactItemize}

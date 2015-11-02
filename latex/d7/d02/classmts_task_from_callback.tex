@@ -1,10 +1,11 @@
-\hypertarget{classmts_task_from_callback}{}\section{mts\+Task\+From\+Callback Class Reference}
-\label{classmts_task_from_callback}\index{mts\+Task\+From\+Callback@{mts\+Task\+From\+Callback}}
+\hypertarget{classmts_task_from_callback}{\section{mts\-Task\-From\-Callback Class Reference}
+\label{classmts_task_from_callback}\index{mts\-Task\-From\-Callback@{mts\-Task\-From\-Callback}}
+}
 
 
-{\ttfamily \#include $<$mts\+Task\+From\+Callback.\+h$>$}
+{\ttfamily \#include $<$mts\-Task\-From\-Callback.\-h$>$}
 
-Inheritance diagram for mts\+Task\+From\+Callback\+:\begin{figure}[H]
+Inheritance diagram for mts\-Task\-From\-Callback\-:\begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[height=6.000000cm]{d7/d02/classmts_task_from_callback}
@@ -13,9 +14,9 @@ Inheritance diagram for mts\+Task\+From\+Callback\+:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classmts_task_from_callback_a42fde8ba0b610a7dde8edc540f2ac05e}{mts\+Task\+From\+Callback} (const std\+::string \&name, unsigned int size\+State\+Table=256)
+\hyperlink{classmts_task_from_callback_a42fde8ba0b610a7dde8edc540f2ac05e}{mts\-Task\-From\-Callback} (const std\-::string \&name, unsigned int size\-State\-Table=256)
 \item 
-virtual \hyperlink{classmts_task_from_callback_a6af1292436c5c06029742818a7be0eea}{$\sim$mts\+Task\+From\+Callback} ()
+virtual \hyperlink{classmts_task_from_callback_a6af1292436c5c06029742818a7be0eea}{$\sim$mts\-Task\-From\-Callback} ()
 \item 
 void \hyperlink{classmts_task_from_callback_ad167ac4fc56eb5559af44741cbc10600}{Create} (void $\ast$data=0)
 \item 
@@ -25,24 +26,24 @@ void \hyperlink{classmts_task_from_callback_af084a18079cb3bb5e63556222f626e06}{S
 \item 
 void \hyperlink{classmts_task_from_callback_ae5a5080d14be6175588bc98275070384}{Kill} (void)
 \item 
-virtual void $\ast$ \hyperlink{classmts_task_from_callback_ab2a10cb9dc0365bc2df219d5b702d9fc}{Do\+Callback} (void $\ast$data=0)
+virtual void $\ast$ \hyperlink{classmts_task_from_callback_ab2a10cb9dc0365bc2df219d5b702d9fc}{Do\-Callback} (void $\ast$data=0)
 \end{DoxyCompactItemize}
 \subsection*{Protected Types}
 \begin{DoxyCompactItemize}
 \item 
-typedef \hyperlink{classmts_task}{mts\+Task} \hyperlink{classmts_task_from_callback_ab3e56b62478363211e93e97548fcac6f}{Base\+Type}
+typedef \hyperlink{classmts_task}{mts\-Task} \hyperlink{classmts_task_from_callback_ab3e56b62478363211e93e97548fcac6f}{Base\-Type}
 \end{DoxyCompactItemize}
 \subsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-void $\ast$ \hyperlink{classmts_task_from_callback_a595282bbeeeb168f4f585bee75c92df2}{Run\+Internal} (void $\ast$argument)
+void $\ast$ \hyperlink{classmts_task_from_callback_a595282bbeeeb168f4f585bee75c92df2}{Run\-Internal} (void $\ast$argument)
 \item 
-void \hyperlink{classmts_task_from_callback_ae1369f0e11b6d87d833d32548b7caafe}{Startup\+Internal} (void)
+void \hyperlink{classmts_task_from_callback_ae1369f0e11b6d87d833d32548b7caafe}{Startup\-Internal} (void)
 \end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
-bool \hyperlink{classmts_task_from_callback_ab39ba4bafd286ab8fffbbee89de845f6}{in\+Run\+Internal}
+bool \hyperlink{classmts_task_from_callback_ab39ba4bafd286ab8fffbbee89de845f6}{in\-Run\-Internal}
 \end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
@@ -50,147 +51,147 @@ bool \hyperlink{classmts_task_from_callback_ab39ba4bafd286ab8fffbbee89de845f6}{i
 \subsection{Detailed Description}
 This is a task that has its thread provided by a callback from an external piece of software.
 
-If the external package accepts a user-\/supplied \textquotesingle{}void $\ast$\textquotesingle{} as the first parameter, then \hyperlink{classmts_task_from_callback_adapter}{mts\+Task\+From\+Callback\+Adapter} can be used; this class provides an adapter that expects the \textquotesingle{}void $\ast$\textquotesingle{} parameter to contain a pointer to an instance of the \hyperlink{classmts_task_from_callback_adapter}{mts\+Task\+From\+Callback\+Adapter} class.
+If the external package accepts a user-\/supplied 'void $\ast$' as the first parameter, then \hyperlink{classmts_task_from_callback_adapter}{mts\-Task\-From\-Callback\-Adapter} can be used; this class provides an adapter that expects the 'void $\ast$' parameter to contain a pointer to an instance of the \hyperlink{classmts_task_from_callback_adapter}{mts\-Task\-From\-Callback\-Adapter} class.
 
-The \hyperlink{classmts_task_from_callback}{mts\+Task\+From\+Callback} class can be used in all cases. The derived class must provide a callback function (e.\+g., a static function) and implement an alternate method to get the \textquotesingle{}this\textquotesingle{} pointer. The user-\/created callback function should call Run\+Internal and return the data (if any).
+The \hyperlink{classmts_task_from_callback}{mts\-Task\-From\-Callback} class can be used in all cases. The derived class must provide a callback function (e.\-g., a static function) and implement an alternate method to get the 'this' pointer. The user-\/created callback function should call Run\-Internal and return the data (if any).
 
-One suggestion is to make the derived class a Singleton. The derived class should contain a (static) Custom\+Callback\+Adapter function that has the correct signature. For example, if we create a derived class called My\+Callback\+Class\+:
+One suggestion is to make the derived class a Singleton. The derived class should contain a (static) Custom\-Callback\-Adapter function that has the correct signature. For example, if we create a derived class called My\-Callback\-Class\-:
 
-static int My\+Callback\+Class\+::\+Custom\+Callback\+Adapter(char $\ast$a, int b) \{ My\+Callback\+Class $\ast$obj = My\+Callback\+Class\+::\+Get\+Instance(); Avoid re-\/entrancy problems by creating a Callback\+Parms object on the stack and passing it to Run\+Internal, which already contains a software guard to prevent re-\/entrant calls. Alternatively, the data can be copied to class members, which can then be accessed inside the Run method. In this case, the Custom\+Callback\+Adapter should handle the re-\/entrancy problems (e.\+g., if Custom\+Callback\+Adapter is called again before the last call has finished, it could overwrite the previous values stored in the class members). My\+Callback\+Class\+::\+Callback\+Parms data(a,b); void $\ast$ret = Run\+Internal(static\+\_\+cast$<$void $\ast$$>$(data)); Run method can use data.\+a and data.\+b and set the return value by calling \hyperlink{classmts_task_a89f212237d9b7e453c91df8a1a6962d2}{mts\+Task\+::\+Set\+Thread\+Return\+Value}. return static\+\_\+cast$<$int$>$(ret); \} 
+static int My\-Callback\-Class\-::\-Custom\-Callback\-Adapter(char $\ast$a, int b) \{ My\-Callback\-Class $\ast$obj = My\-Callback\-Class\-::\-Get\-Instance(); Avoid re-\/entrancy problems by creating a Callback\-Parms object on the stack and passing it to Run\-Internal, which already contains a software guard to prevent re-\/entrant calls. Alternatively, the data can be copied to class members, which can then be accessed inside the Run method. In this case, the Custom\-Callback\-Adapter should handle the re-\/entrancy problems (e.\-g., if Custom\-Callback\-Adapter is called again before the last call has finished, it could overwrite the previous values stored in the class members). My\-Callback\-Class\-::\-Callback\-Parms data(a,b); void $\ast$ret = Run\-Internal(static\-\_\-cast$<$void $\ast$$>$(data)); Run method can use data.\-a and data.\-b and set the return value by calling \hyperlink{classmts_task_a89f212237d9b7e453c91df8a1a6962d2}{mts\-Task\-::\-Set\-Thread\-Return\-Value}. return static\-\_\-cast$<$int$>$(ret); \} 
 
 \subsection{Member Typedef Documentation}
-\hypertarget{classmts_task_from_callback_ab3e56b62478363211e93e97548fcac6f}{}\index{mts\+Task\+From\+Callback@{mts\+Task\+From\+Callback}!Base\+Type@{Base\+Type}}
-\index{Base\+Type@{Base\+Type}!mts\+Task\+From\+Callback@{mts\+Task\+From\+Callback}}
-\subsubsection[{Base\+Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf mts\+Task} {\bf mts\+Task\+From\+Callback\+::\+Base\+Type}\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_task_from_callback_ab3e56b62478363211e93e97548fcac6f}
+\hypertarget{classmts_task_from_callback_ab3e56b62478363211e93e97548fcac6f}{\index{mts\-Task\-From\-Callback@{mts\-Task\-From\-Callback}!Base\-Type@{Base\-Type}}
+\index{Base\-Type@{Base\-Type}!mtsTaskFromCallback@{mts\-Task\-From\-Callback}}
+\subsubsection[{Base\-Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf mts\-Task} {\bf mts\-Task\-From\-Callback\-::\-Base\-Type}\hspace{0.3cm}{\ttfamily [protected]}}}\label{classmts_task_from_callback_ab3e56b62478363211e93e97548fcac6f}
 
 
 \subsection{Constructor \& Destructor Documentation}
-\hypertarget{classmts_task_from_callback_a42fde8ba0b610a7dde8edc540f2ac05e}{}\index{mts\+Task\+From\+Callback@{mts\+Task\+From\+Callback}!mts\+Task\+From\+Callback@{mts\+Task\+From\+Callback}}
-\index{mts\+Task\+From\+Callback@{mts\+Task\+From\+Callback}!mts\+Task\+From\+Callback@{mts\+Task\+From\+Callback}}
-\subsubsection[{mts\+Task\+From\+Callback}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Task\+From\+Callback\+::mts\+Task\+From\+Callback (
+\hypertarget{classmts_task_from_callback_a42fde8ba0b610a7dde8edc540f2ac05e}{\index{mts\-Task\-From\-Callback@{mts\-Task\-From\-Callback}!mts\-Task\-From\-Callback@{mts\-Task\-From\-Callback}}
+\index{mts\-Task\-From\-Callback@{mts\-Task\-From\-Callback}!mtsTaskFromCallback@{mts\-Task\-From\-Callback}}
+\subsubsection[{mts\-Task\-From\-Callback}]{\setlength{\rightskip}{0pt plus 5cm}mts\-Task\-From\-Callback\-::mts\-Task\-From\-Callback (
 \begin{DoxyParamCaption}
-\item[{const std\+::string \&}]{name, }
-\item[{unsigned int}]{size\+State\+Table = {\ttfamily 256}}
+\item[{const std\-::string \&}]{name, }
+\item[{unsigned int}]{size\-State\-Table = {\ttfamily 256}}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_task_from_callback_a42fde8ba0b610a7dde8edc540f2ac05e}
-Create a task with name \textquotesingle{}name\textquotesingle{} and set the state table size. The execution of this task will rely on a callback from an external thread.
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmts_task_from_callback_a42fde8ba0b610a7dde8edc540f2ac05e}
+Create a task with name 'name' and set the state table size. The execution of this task will rely on a callback from an external thread.
 
 
 \begin{DoxyParams}{Parameters}
 {\em name} & The name of the task \\
 \hline
-{\em size\+State\+Table} & The history size of the state table\\
+{\em size\-State\-Table} & The history size of the state table\\
 \hline
 \end{DoxyParams}
 \begin{DoxyNote}{Note}
-See note in \hyperlink{classmts_task}{mts\+Task} regarding length of string name.
+See note in \hyperlink{classmts_task}{mts\-Task} regarding length of string name.
 \end{DoxyNote}
-\begin{DoxySeeAlso}{See also}
-\hyperlink{classmts_task}{mts\+Task}, \hyperlink{classmts_task_continuous}{mts\+Task\+Continuous}, \hyperlink{classmts_task_periodic}{mts\+Task\+Periodic}, \hyperlink{classmts_task_from_signal}{mts\+Task\+From\+Signal} 
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classmts_task}{mts\-Task}, \hyperlink{classmts_task_continuous}{mts\-Task\-Continuous}, \hyperlink{classmts_task_periodic}{mts\-Task\-Periodic}, \hyperlink{classmts_task_from_signal}{mts\-Task\-From\-Signal} 
 \end{DoxySeeAlso}
-\hypertarget{classmts_task_from_callback_a6af1292436c5c06029742818a7be0eea}{}\index{mts\+Task\+From\+Callback@{mts\+Task\+From\+Callback}!````~mts\+Task\+From\+Callback@{$\sim$mts\+Task\+From\+Callback}}
-\index{````~mts\+Task\+From\+Callback@{$\sim$mts\+Task\+From\+Callback}!mts\+Task\+From\+Callback@{mts\+Task\+From\+Callback}}
-\subsubsection[{$\sim$mts\+Task\+From\+Callback}]{\setlength{\rightskip}{0pt plus 5cm}virtual mts\+Task\+From\+Callback\+::$\sim$mts\+Task\+From\+Callback (
+\hypertarget{classmts_task_from_callback_a6af1292436c5c06029742818a7be0eea}{\index{mts\-Task\-From\-Callback@{mts\-Task\-From\-Callback}!$\sim$mts\-Task\-From\-Callback@{$\sim$mts\-Task\-From\-Callback}}
+\index{$\sim$mts\-Task\-From\-Callback@{$\sim$mts\-Task\-From\-Callback}!mtsTaskFromCallback@{mts\-Task\-From\-Callback}}
+\subsubsection[{$\sim$mts\-Task\-From\-Callback}]{\setlength{\rightskip}{0pt plus 5cm}virtual mts\-Task\-From\-Callback\-::$\sim$mts\-Task\-From\-Callback (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classmts_task_from_callback_a6af1292436c5c06029742818a7be0eea}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classmts_task_from_callback_a6af1292436c5c06029742818a7be0eea}
 Default Destructor. 
 
 \subsection{Member Function Documentation}
-\hypertarget{classmts_task_from_callback_ad167ac4fc56eb5559af44741cbc10600}{}\index{mts\+Task\+From\+Callback@{mts\+Task\+From\+Callback}!Create@{Create}}
-\index{Create@{Create}!mts\+Task\+From\+Callback@{mts\+Task\+From\+Callback}}
-\subsubsection[{Create}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Task\+From\+Callback\+::\+Create (
+\hypertarget{classmts_task_from_callback_ad167ac4fc56eb5559af44741cbc10600}{\index{mts\-Task\-From\-Callback@{mts\-Task\-From\-Callback}!Create@{Create}}
+\index{Create@{Create}!mtsTaskFromCallback@{mts\-Task\-From\-Callback}}
+\subsubsection[{Create}]{\setlength{\rightskip}{0pt plus 5cm}void mts\-Task\-From\-Callback\-::\-Create (
 \begin{DoxyParamCaption}
 \item[{void $\ast$}]{data = {\ttfamily 0}}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_task_from_callback_ad167ac4fc56eb5559af44741cbc10600}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classmts_task_from_callback_ad167ac4fc56eb5559af44741cbc10600}
 
 
-Implements \hyperlink{classmts_task_aa051581f8b5c35105d595d7a46ccbe17}{mts\+Task}.
+Implements \hyperlink{classmts_task_aa051581f8b5c35105d595d7a46ccbe17}{mts\-Task}.
 
 
 
-Reimplemented in \hyperlink{classmts_sensable_h_d_a842668ae5afc97ce4513ef6c619e0a3c}{mts\+Sensable\+H\+D}, and \hyperlink{classmts_novint_h_d_l_ab07ce6cde2e9b851c291f61a1332ca63}{mts\+Novint\+H\+D\+L}.
+Reimplemented in \hyperlink{classmts_sensable_h_d_a842668ae5afc97ce4513ef6c619e0a3c}{mts\-Sensable\-H\-D}, and \hyperlink{classmts_novint_h_d_l_ab07ce6cde2e9b851c291f61a1332ca63}{mts\-Novint\-H\-D\-L}.
 
-\hypertarget{classmts_task_from_callback_ab2a10cb9dc0365bc2df219d5b702d9fc}{}\index{mts\+Task\+From\+Callback@{mts\+Task\+From\+Callback}!Do\+Callback@{Do\+Callback}}
-\index{Do\+Callback@{Do\+Callback}!mts\+Task\+From\+Callback@{mts\+Task\+From\+Callback}}
-\subsubsection[{Do\+Callback}]{\setlength{\rightskip}{0pt plus 5cm}virtual void$\ast$ mts\+Task\+From\+Callback\+::\+Do\+Callback (
+\hypertarget{classmts_task_from_callback_ab2a10cb9dc0365bc2df219d5b702d9fc}{\index{mts\-Task\-From\-Callback@{mts\-Task\-From\-Callback}!Do\-Callback@{Do\-Callback}}
+\index{Do\-Callback@{Do\-Callback}!mtsTaskFromCallback@{mts\-Task\-From\-Callback}}
+\subsubsection[{Do\-Callback}]{\setlength{\rightskip}{0pt plus 5cm}virtual void$\ast$ mts\-Task\-From\-Callback\-::\-Do\-Callback (
 \begin{DoxyParamCaption}
 \item[{void $\ast$}]{data = {\ttfamily 0}}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classmts_task_from_callback_ab2a10cb9dc0365bc2df219d5b702d9fc}
-Hook for calling Run\+Internal \hypertarget{classmts_task_from_callback_ae5a5080d14be6175588bc98275070384}{}\index{mts\+Task\+From\+Callback@{mts\+Task\+From\+Callback}!Kill@{Kill}}
-\index{Kill@{Kill}!mts\+Task\+From\+Callback@{mts\+Task\+From\+Callback}}
-\subsubsection[{Kill}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Task\+From\+Callback\+::\+Kill (
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classmts_task_from_callback_ab2a10cb9dc0365bc2df219d5b702d9fc}
+Hook for calling Run\-Internal \hypertarget{classmts_task_from_callback_ae5a5080d14be6175588bc98275070384}{\index{mts\-Task\-From\-Callback@{mts\-Task\-From\-Callback}!Kill@{Kill}}
+\index{Kill@{Kill}!mtsTaskFromCallback@{mts\-Task\-From\-Callback}}
+\subsubsection[{Kill}]{\setlength{\rightskip}{0pt plus 5cm}void mts\-Task\-From\-Callback\-::\-Kill (
 \begin{DoxyParamCaption}
 \item[{void}]{}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_task_from_callback_ae5a5080d14be6175588bc98275070384}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classmts_task_from_callback_ae5a5080d14be6175588bc98275070384}
 End the task 
 
-Reimplemented from \hyperlink{classmts_task_a67a15d7fffef28708b813e2ea624e4f8}{mts\+Task}.
+Reimplemented from \hyperlink{classmts_task_a67a15d7fffef28708b813e2ea624e4f8}{mts\-Task}.
 
 
 
-Reimplemented in \hyperlink{classmts_sensable_h_d_a735f1a0600ddd91e112e92e520d07d46}{mts\+Sensable\+H\+D}, and \hyperlink{classmts_novint_h_d_l_a1a0ada52f3d96ed663e0f34ebbe0e629}{mts\+Novint\+H\+D\+L}.
+Reimplemented in \hyperlink{classmts_sensable_h_d_a735f1a0600ddd91e112e92e520d07d46}{mts\-Sensable\-H\-D}, and \hyperlink{classmts_novint_h_d_l_a1a0ada52f3d96ed663e0f34ebbe0e629}{mts\-Novint\-H\-D\-L}.
 
-\hypertarget{classmts_task_from_callback_a595282bbeeeb168f4f585bee75c92df2}{}\index{mts\+Task\+From\+Callback@{mts\+Task\+From\+Callback}!Run\+Internal@{Run\+Internal}}
-\index{Run\+Internal@{Run\+Internal}!mts\+Task\+From\+Callback@{mts\+Task\+From\+Callback}}
-\subsubsection[{Run\+Internal}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ mts\+Task\+From\+Callback\+::\+Run\+Internal (
+\hypertarget{classmts_task_from_callback_a595282bbeeeb168f4f585bee75c92df2}{\index{mts\-Task\-From\-Callback@{mts\-Task\-From\-Callback}!Run\-Internal@{Run\-Internal}}
+\index{Run\-Internal@{Run\-Internal}!mtsTaskFromCallback@{mts\-Task\-From\-Callback}}
+\subsubsection[{Run\-Internal}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ mts\-Task\-From\-Callback\-::\-Run\-Internal (
 \begin{DoxyParamCaption}
 \item[{void $\ast$}]{argument}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classmts_task_from_callback_a595282bbeeeb168f4f585bee75c92df2}
-The member function that is passed as \textquotesingle{}start routine\textquotesingle{} argument for thread creation. 
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{classmts_task_from_callback_a595282bbeeeb168f4f585bee75c92df2}
+The member function that is passed as 'start routine' argument for thread creation. 
 
-Implements \hyperlink{classmts_task_affcd896841ecfe785f898ef93a4202e9}{mts\+Task}.
+Implements \hyperlink{classmts_task_affcd896841ecfe785f898ef93a4202e9}{mts\-Task}.
 
-\hypertarget{classmts_task_from_callback_a420e3a65a5cb0bcd5adad46964a49892}{}\index{mts\+Task\+From\+Callback@{mts\+Task\+From\+Callback}!Start@{Start}}
-\index{Start@{Start}!mts\+Task\+From\+Callback@{mts\+Task\+From\+Callback}}
-\subsubsection[{Start}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Task\+From\+Callback\+::\+Start (
+\hypertarget{classmts_task_from_callback_a420e3a65a5cb0bcd5adad46964a49892}{\index{mts\-Task\-From\-Callback@{mts\-Task\-From\-Callback}!Start@{Start}}
+\index{Start@{Start}!mtsTaskFromCallback@{mts\-Task\-From\-Callback}}
+\subsubsection[{Start}]{\setlength{\rightskip}{0pt plus 5cm}void mts\-Task\-From\-Callback\-::\-Start (
 \begin{DoxyParamCaption}
 \item[{void}]{}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_task_from_callback_a420e3a65a5cb0bcd5adad46964a49892}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classmts_task_from_callback_a420e3a65a5cb0bcd5adad46964a49892}
 Start/resume execution of the task 
 
-Reimplemented from \hyperlink{classmts_component_abfb4a63739ec45a9cdb91e3363db7c5c}{mts\+Component}.
+Reimplemented from \hyperlink{classmts_component_abfb4a63739ec45a9cdb91e3363db7c5c}{mts\-Component}.
 
 
 
-Reimplemented in \hyperlink{classmts_sensable_h_d_a7541d19a105b37a06e943e503a6eea2f}{mts\+Sensable\+H\+D}, and \hyperlink{classmts_novint_h_d_l_afec4fe7476f0529bb9bb3c491e220f9c}{mts\+Novint\+H\+D\+L}.
+Reimplemented in \hyperlink{classmts_sensable_h_d_a7541d19a105b37a06e943e503a6eea2f}{mts\-Sensable\-H\-D}, and \hyperlink{classmts_novint_h_d_l_afec4fe7476f0529bb9bb3c491e220f9c}{mts\-Novint\-H\-D\-L}.
 
-\hypertarget{classmts_task_from_callback_ae1369f0e11b6d87d833d32548b7caafe}{}\index{mts\+Task\+From\+Callback@{mts\+Task\+From\+Callback}!Startup\+Internal@{Startup\+Internal}}
-\index{Startup\+Internal@{Startup\+Internal}!mts\+Task\+From\+Callback@{mts\+Task\+From\+Callback}}
-\subsubsection[{Startup\+Internal}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Task\+From\+Callback\+::\+Startup\+Internal (
+\hypertarget{classmts_task_from_callback_ae1369f0e11b6d87d833d32548b7caafe}{\index{mts\-Task\-From\-Callback@{mts\-Task\-From\-Callback}!Startup\-Internal@{Startup\-Internal}}
+\index{Startup\-Internal@{Startup\-Internal}!mtsTaskFromCallback@{mts\-Task\-From\-Callback}}
+\subsubsection[{Startup\-Internal}]{\setlength{\rightskip}{0pt plus 5cm}void mts\-Task\-From\-Callback\-::\-Startup\-Internal (
 \begin{DoxyParamCaption}
 \item[{void}]{}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classmts_task_from_callback_ae1369f0e11b6d87d833d32548b7caafe}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{classmts_task_from_callback_ae1369f0e11b6d87d833d32548b7caafe}
 The member funtion that is executed as soon as the thread gets created. It does some housekeeping before the user code can be executed. 
 
-Reimplemented from \hyperlink{classmts_task_a6816f8dfc6124376896318ebcdd4832b}{mts\+Task}.
+Reimplemented from \hyperlink{classmts_task_a6816f8dfc6124376896318ebcdd4832b}{mts\-Task}.
 
-\hypertarget{classmts_task_from_callback_af084a18079cb3bb5e63556222f626e06}{}\index{mts\+Task\+From\+Callback@{mts\+Task\+From\+Callback}!Suspend@{Suspend}}
-\index{Suspend@{Suspend}!mts\+Task\+From\+Callback@{mts\+Task\+From\+Callback}}
-\subsubsection[{Suspend}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Task\+From\+Callback\+::\+Suspend (
+\hypertarget{classmts_task_from_callback_af084a18079cb3bb5e63556222f626e06}{\index{mts\-Task\-From\-Callback@{mts\-Task\-From\-Callback}!Suspend@{Suspend}}
+\index{Suspend@{Suspend}!mtsTaskFromCallback@{mts\-Task\-From\-Callback}}
+\subsubsection[{Suspend}]{\setlength{\rightskip}{0pt plus 5cm}void mts\-Task\-From\-Callback\-::\-Suspend (
 \begin{DoxyParamCaption}
 \item[{void}]{}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_task_from_callback_af084a18079cb3bb5e63556222f626e06}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classmts_task_from_callback_af084a18079cb3bb5e63556222f626e06}
 Suspend the execution of the task 
 
-Reimplemented from \hyperlink{classmts_component_a7264642eb5c56729d1f80263e0e1152b}{mts\+Component}.
+Reimplemented from \hyperlink{classmts_component_a7264642eb5c56729d1f80263e0e1152b}{mts\-Component}.
 
 
 
 \subsection{Member Data Documentation}
-\hypertarget{classmts_task_from_callback_ab39ba4bafd286ab8fffbbee89de845f6}{}\index{mts\+Task\+From\+Callback@{mts\+Task\+From\+Callback}!in\+Run\+Internal@{in\+Run\+Internal}}
-\index{in\+Run\+Internal@{in\+Run\+Internal}!mts\+Task\+From\+Callback@{mts\+Task\+From\+Callback}}
-\subsubsection[{in\+Run\+Internal}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\+Task\+From\+Callback\+::in\+Run\+Internal\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_task_from_callback_ab39ba4bafd286ab8fffbbee89de845f6}
+\hypertarget{classmts_task_from_callback_ab39ba4bafd286ab8fffbbee89de845f6}{\index{mts\-Task\-From\-Callback@{mts\-Task\-From\-Callback}!in\-Run\-Internal@{in\-Run\-Internal}}
+\index{in\-Run\-Internal@{in\-Run\-Internal}!mtsTaskFromCallback@{mts\-Task\-From\-Callback}}
+\subsubsection[{in\-Run\-Internal}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\-Task\-From\-Callback\-::in\-Run\-Internal\hspace{0.3cm}{\ttfamily [protected]}}}\label{classmts_task_from_callback_ab39ba4bafd286ab8fffbbee89de845f6}
 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
 \item 
-/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Multi\+Task/\hyperlink{mts_task_from_callback_8h}{mts\+Task\+From\+Callback.\+h}\end{DoxyCompactItemize}
+/home/adeguet1/catkin\-\_\-ws/src/cisst-\/saw/cisst/cisst\-Multi\-Task/\hyperlink{mts_task_from_callback_8h}{mts\-Task\-From\-Callback.\-h}\end{DoxyCompactItemize}

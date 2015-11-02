@@ -1,0 +1,453 @@
+\hypertarget{classmts_intuitive_research_kit_s_u_j}{\section{mts\-Intuitive\-Research\-Kit\-S\-U\-J Class Reference}
+\label{classmts_intuitive_research_kit_s_u_j}\index{mts\-Intuitive\-Research\-Kit\-S\-U\-J@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}}
+}
+
+
+{\ttfamily \#include $<$mts\-Intuitive\-Research\-Kit\-S\-U\-J.\-h$>$}
+
+Inheritance diagram for mts\-Intuitive\-Research\-Kit\-S\-U\-J\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=6.000000cm]{de/d34/classmts_intuitive_research_kit_s_u_j}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmts_intuitive_research_kit_s_u_j_a5442ef3e165ecac9e239aee22a9b9185}{mts\-Intuitive\-Research\-Kit\-S\-U\-J} (const std\-::string \&component\-Name, const double period\-In\-Seconds)
+\item 
+\hyperlink{classmts_intuitive_research_kit_s_u_j_a636c2447b4eea551bb75876ceb03268e}{mts\-Intuitive\-Research\-Kit\-S\-U\-J} (const \hyperlink{classmts_task_periodic_constructor_arg}{mts\-Task\-Periodic\-Constructor\-Arg} \&arg)
+\item 
+\hyperlink{classmts_intuitive_research_kit_s_u_j_a52f16dc86c6df164b1628c0069356547}{$\sim$mts\-Intuitive\-Research\-Kit\-S\-U\-J} ()
+\item 
+void \hyperlink{classmts_intuitive_research_kit_s_u_j_a1e9fc9ecd3b04bafb202a838c280eeb9}{Configure} (const std\-::string \&filename)
+\item 
+void \hyperlink{classmts_intuitive_research_kit_s_u_j_a106a3ace31c8620eba8af50ca812686f}{Startup} (void)
+\item 
+void \hyperlink{classmts_intuitive_research_kit_s_u_j_a5650f1c2bd2e4d9456c3ebc9e2e07b7b}{Run} (void)
+\item 
+void \hyperlink{classmts_intuitive_research_kit_s_u_j_a693df9978ababe2acfe8beda53626eb5}{Cleanup} (void)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const size\-\_\-t \hyperlink{classmts_intuitive_research_kit_s_u_j_a0e6527f1c3b1aff5666599f060594c84}{Number\-Of\-Joints} = 4
+\item 
+static const size\-\_\-t \hyperlink{classmts_intuitive_research_kit_s_u_j_ad12679577b3110ffdb393341e793ff06}{Number\-Of\-Brakes} = 3
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classmts_intuitive_research_kit_s_u_j_a28854d3a0e85f9171aecbd6c71a3db84}{Init} (void)
+\item 
+void \hyperlink{classmts_intuitive_research_kit_s_u_j_ad21f3576b7317da777071190a1d14d5a}{Get\-Robot\-Data} (void)
+\item 
+void \hyperlink{classmts_intuitive_research_kit_s_u_j_a7c0edaae94e2f6ae0eb9954292e96a04}{Get\-And\-Convert\-Potentiometer\-Values} (void)
+\item 
+void \hyperlink{classmts_intuitive_research_kit_s_u_j_ac8045d25e35df425a735cb3d8d08dae7}{Set\-State} (const mts\-Intuitive\-Research\-Kit\-Arm\-Types\-::\-Robot\-State\-Type \&new\-State)
+\item 
+void \hyperlink{classmts_intuitive_research_kit_s_u_j_af3aa4ebbcb09e8c150a9f0fab2f1a319}{Run\-Homing} (void)
+\item 
+void \hyperlink{classmts_intuitive_research_kit_s_u_j_a131f33f5e5b6100de115c318d05ae598}{Run\-Homing\-Power} (void)
+\item 
+void \hyperlink{classmts_intuitive_research_kit_s_u_j_a131482e0f6383d5752f9b2300e64f282}{Run\-Ready} (void)
+\item 
+void \hyperlink{classmts_intuitive_research_kit_s_u_j_a81f15d4071f80ed9eab3712f9a957934}{Set\-Robot\-Control\-State} (const std\-::string \&state)
+\item 
+void \hyperlink{classmts_intuitive_research_kit_s_u_j_aea49904777eacf24c1c52215ad757cf6}{Get\-Robot\-Control\-State} (std\-::string \&state) const 
+\item 
+void \hyperlink{classmts_intuitive_research_kit_s_u_j_ae85ef3d4f7685492e25a665f0f8b873d}{Set\-Lift\-Velocity} (const double \&velocity)
+\item 
+void \hyperlink{classmts_intuitive_research_kit_s_u_j_a1d653fd48864f67a8133e1368feb0625}{Set\-Base\-Frame} (const \hyperlink{classprm_position_cartesian_get}{prm\-Position\-Cartesian\-Get} \&new\-Base\-Frame)
+\item 
+void \hyperlink{classmts_intuitive_research_kit_s_u_j_a36af5b0faebfffa611bced96dc6fee9e}{Error\-Event\-Handler} (const std\-::string \&message)
+\item 
+void \hyperlink{classmts_intuitive_research_kit_s_u_j_a9b0effa9a1671d84dd7592ea12bf42a0}{Motor\-Down\-Event\-Handler} (const \hyperlink{classprm_event_button}{prm\-Event\-Button} \&button)
+\item 
+void \hyperlink{classmts_intuitive_research_kit_s_u_j_a4ffc9f8537a4c2cca413d82f8fd8cfb9}{Motor\-Up\-Event\-Handler} (const \hyperlink{classprm_event_button}{prm\-Event\-Button} \&button)
+\item 
+void \hyperlink{classmts_intuitive_research_kit_s_u_j_a17e207fda7ff8900f54f539542897563}{Dispatch\-Error} (const std\-::string \&message)
+\item 
+void \hyperlink{classmts_intuitive_research_kit_s_u_j_a49551c2b529e585c395602fdc324a44b}{Dispatch\-Status} (const std\-::string \&message)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>\hyperlink{classmts_function_void}{mtsFunctionVoid} \hyperlink{classmts_intuitive_research_kit_s_u_j_a91ae8444818c2bc74f9a9cee43f7742d}{EnablePower}\\
+\>\>{\em Enable Robot Power. }\\
+\>\hyperlink{classmts_function_void}{mtsFunctionVoid} \hyperlink{classmts_intuitive_research_kit_s_u_j_aee844094a1a82335db75e306a0cb6bd3}{DisablePower}\\
+\>\hyperlink{classmts_function_read}{mtsFunctionRead} \hyperlink{classmts_intuitive_research_kit_s_u_j_af1cf7e77a99f34d30824a3febd31be3c}{GetEncoderChannelA}\\
+\>\hyperlink{classmts_function_read}{mtsFunctionRead} \hyperlink{classmts_intuitive_research_kit_s_u_j_a338536fc7a04c42c4be530bf2b00a5fc}{GetActuatorAmpStatus}\\
+\>\hyperlink{classmts_function_write}{mtsFunctionWrite} \hyperlink{classmts_intuitive_research_kit_s_u_j_a95563ce548cb99ed99507e9eadaaff41}{SetActuatorCurrent}\\
+\>\hyperlink{classmts_function_read}{mtsFunctionRead} \hyperlink{classmts_intuitive_research_kit_s_u_j_a49b5378a27060bc5e2ba8ab5bcc52d6b}{GetAnalogInputVolts}\\
+\} \hyperlink{classmts_intuitive_research_kit_s_u_j_a7e26dccf05597dfe554b175dfa796d3e}{RobotIO}\\
+
+\end{tabbing}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>\hyperlink{classmts_function_write}{mtsFunctionWrite} \hyperlink{classmts_intuitive_research_kit_s_u_j_a35450db73924ff02abc887bd597c29d7}{Status}\\
+\>\hyperlink{classmts_function_write}{mtsFunctionWrite} \hyperlink{classmts_intuitive_research_kit_s_u_j_aec08aca97c788326bc927601d98710fd}{Warning}\\
+\>\hyperlink{classmts_function_write}{mtsFunctionWrite} \hyperlink{classmts_intuitive_research_kit_s_u_j_aad46bfa48c539835a6eb036e9866476f}{Error}\\
+\>\hyperlink{classmts_function_write}{mtsFunctionWrite} \hyperlink{classmts_intuitive_research_kit_s_u_j_a9a41c27dd2f7a3d794fedc7104328849}{RobotState}\\
+\} \hyperlink{classmts_intuitive_research_kit_s_u_j_a41e585d03cd523ead0e8408348332f28}{MessageEvents}\\
+
+\end{tabbing}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>\hyperlink{classmts_function_read}{mtsFunctionRead} \hyperlink{classmts_intuitive_research_kit_s_u_j_aec8ddd7dda18d06f7492f7cf992e2169}{GetValue}\\
+\>\hyperlink{classmts_function_write}{mtsFunctionWrite} \hyperlink{classmts_intuitive_research_kit_s_u_j_acb13bb51445c7e3489b87632b0ef1b2a}{SetValue}\\
+\} \hyperlink{classmts_intuitive_research_kit_s_u_j_a570d00be2ab80066d790e748ddaa19f0}{MuxReset}\\
+
+\end{tabbing}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>\hyperlink{classmts_function_read}{mtsFunctionRead} \hyperlink{classmts_intuitive_research_kit_s_u_j_aec8ddd7dda18d06f7492f7cf992e2169}{GetValue}\\
+\>\hyperlink{classmts_function_write}{mtsFunctionWrite} \hyperlink{classmts_intuitive_research_kit_s_u_j_acb13bb51445c7e3489b87632b0ef1b2a}{SetValue}\\
+\} \hyperlink{classmts_intuitive_research_kit_s_u_j_aeac1a022c47dfc5666ceecfd4630bbe8}{MuxIncrement}\\
+
+\end{tabbing}\item 
+double \hyperlink{classmts_intuitive_research_kit_s_u_j_a4a72ef14532a1a203f3f3b508308419e}{m\-Mux\-Timer}
+\item 
+\hyperlink{vct_dynamic_vector_types_8h_aeb2237c134aee3769198bd9d55c8a9e0}{vct\-Bool\-Vec} \hyperlink{classmts_intuitive_research_kit_s_u_j_abb3c4881fcbaf666c2fe8b0b9a5bb545}{m\-Mux\-State}
+\item 
+size\-\_\-t \hyperlink{classmts_intuitive_research_kit_s_u_j_a74626be3d8dbedcf2a1f7d2e6d47f668}{m\-Mux\-Index}
+\item 
+size\-\_\-t \hyperlink{classmts_intuitive_research_kit_s_u_j_add84f0fa988969f519f27a9cc09743ee}{m\-Mux\-Index\-Expected}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>\hyperlink{classmts_function_write}{mtsFunctionWrite} \hyperlink{classmts_intuitive_research_kit_s_u_j_ad1080d86e10ab03538f61c526c158507}{EnablePWM}\\
+\>\hyperlink{classmts_function_write}{mtsFunctionWrite} \hyperlink{classmts_intuitive_research_kit_s_u_j_a0890ef11a70c40b4de112920950be4d0}{SetPWMDutyCycle}\\
+\} \hyperlink{classmts_intuitive_research_kit_s_u_j_ab3747f79a3a9c79aa8d04e85c227ace3}{PWM}\\
+
+\end{tabbing}\item 
+mts\-Intuitive\-Research\-Kit\-Arm\-Types\-::\-Robot\-State\-Type \hyperlink{classmts_intuitive_research_kit_s_u_j_a4d2e2f20f9c54ca3f9c730153d313b91}{m\-Robot\-State}
+\item 
+double \hyperlink{classmts_intuitive_research_kit_s_u_j_ad6634774bd3eea5b7a36ae956f957ddf}{m\-Homing\-Timer}
+\item 
+bool \hyperlink{classmts_intuitive_research_kit_s_u_j_a8b18a57060b73cac635569abc6f206b2}{m\-Homing\-Power\-Requested}
+\item 
+double \hyperlink{classmts_intuitive_research_kit_s_u_j_a2e436c23462977ad86c3650cb397aef1}{m\-Previous\-Tic}
+\item 
+\hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\-Double\-Vec} \hyperlink{classmts_intuitive_research_kit_s_u_j_aed67d646259d548e4739098cc0c266ba}{m\-Brake\-Currents}
+\item 
+\hyperlink{classvct_dynamic_vector}{vct\-Dynamic\-Vector}$<$ \hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\-Double\-Vec} $>$ \hyperlink{classmts_intuitive_research_kit_s_u_j_a55e04397c08ebcb436d250a780220740}{m\-Voltage\-Samples}
+\item 
+const size\-\_\-t \hyperlink{classmts_intuitive_research_kit_s_u_j_ae183ff25ef089caeca009b7e882c1bb8}{m\-Voltage\-Samples\-Number}
+\item 
+size\-\_\-t \hyperlink{classmts_intuitive_research_kit_s_u_j_ac64bd556f3656dc6b6a59a51198eac13}{m\-Voltage\-Samples\-Counter}
+\item 
+\hyperlink{vct_dynamic_vector_types_8h_ade4b3068c86fb88f41af2e5187e491c2}{vct\-Double\-Vec} \hyperlink{classmts_intuitive_research_kit_s_u_j_a1fdc3671d6faec7720cb374b171e05a1}{m\-Voltages}
+\item 
+\hyperlink{classvct_fixed_size_vector}{vct\-Fixed\-Size\-Vector}\\*
+$<$ mts\-Intuitive\-Research\-Kit\-S\-U\-J\-Arm\-Data $\ast$, 4 $>$ \hyperlink{classmts_intuitive_research_kit_s_u_j_abea003c7cf23ba8b1c58caf9d94ad455}{Arms}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmts_intuitive_research_kit_s_u_j_a5442ef3e165ecac9e239aee22a9b9185}{\index{mts\-Intuitive\-Research\-Kit\-S\-U\-J@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}!mts\-Intuitive\-Research\-Kit\-S\-U\-J@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}}
+\index{mts\-Intuitive\-Research\-Kit\-S\-U\-J@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}!mtsIntuitiveResearchKitSUJ@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}}
+\subsubsection[{mts\-Intuitive\-Research\-Kit\-S\-U\-J}]{\setlength{\rightskip}{0pt plus 5cm}mts\-Intuitive\-Research\-Kit\-S\-U\-J\-::mts\-Intuitive\-Research\-Kit\-S\-U\-J (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{component\-Name, }
+\item[{const double}]{period\-In\-Seconds}
+\end{DoxyParamCaption}
+)}}\label{classmts_intuitive_research_kit_s_u_j_a5442ef3e165ecac9e239aee22a9b9185}
+\hypertarget{classmts_intuitive_research_kit_s_u_j_a636c2447b4eea551bb75876ceb03268e}{\index{mts\-Intuitive\-Research\-Kit\-S\-U\-J@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}!mts\-Intuitive\-Research\-Kit\-S\-U\-J@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}}
+\index{mts\-Intuitive\-Research\-Kit\-S\-U\-J@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}!mtsIntuitiveResearchKitSUJ@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}}
+\subsubsection[{mts\-Intuitive\-Research\-Kit\-S\-U\-J}]{\setlength{\rightskip}{0pt plus 5cm}mts\-Intuitive\-Research\-Kit\-S\-U\-J\-::mts\-Intuitive\-Research\-Kit\-S\-U\-J (
+\begin{DoxyParamCaption}
+\item[{const {\bf mts\-Task\-Periodic\-Constructor\-Arg} \&}]{arg}
+\end{DoxyParamCaption}
+)}}\label{classmts_intuitive_research_kit_s_u_j_a636c2447b4eea551bb75876ceb03268e}
+\hypertarget{classmts_intuitive_research_kit_s_u_j_a52f16dc86c6df164b1628c0069356547}{\index{mts\-Intuitive\-Research\-Kit\-S\-U\-J@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}!$\sim$mts\-Intuitive\-Research\-Kit\-S\-U\-J@{$\sim$mts\-Intuitive\-Research\-Kit\-S\-U\-J}}
+\index{$\sim$mts\-Intuitive\-Research\-Kit\-S\-U\-J@{$\sim$mts\-Intuitive\-Research\-Kit\-S\-U\-J}!mtsIntuitiveResearchKitSUJ@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}}
+\subsubsection[{$\sim$mts\-Intuitive\-Research\-Kit\-S\-U\-J}]{\setlength{\rightskip}{0pt plus 5cm}mts\-Intuitive\-Research\-Kit\-S\-U\-J\-::$\sim$mts\-Intuitive\-Research\-Kit\-S\-U\-J (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmts_intuitive_research_kit_s_u_j_a52f16dc86c6df164b1628c0069356547}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classmts_intuitive_research_kit_s_u_j_a693df9978ababe2acfe8beda53626eb5}{\index{mts\-Intuitive\-Research\-Kit\-S\-U\-J@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}!Cleanup@{Cleanup}}
+\index{Cleanup@{Cleanup}!mtsIntuitiveResearchKitSUJ@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}}
+\subsubsection[{Cleanup}]{\setlength{\rightskip}{0pt plus 5cm}void mts\-Intuitive\-Research\-Kit\-S\-U\-J\-::\-Cleanup (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classmts_intuitive_research_kit_s_u_j_a693df9978ababe2acfe8beda53626eb5}
+Virtual method that gets overloaded, and is run after the component gets killed using \hyperlink{classmts_task_continuous_ad1f8145306e074fbea8baab3beef4c5b}{Kill()} method. 
+
+Reimplemented from \hyperlink{classmts_component_a891f330f4fde7d831dcf7dc537dc5e81}{mts\-Component}.
+
+\hypertarget{classmts_intuitive_research_kit_s_u_j_a1e9fc9ecd3b04bafb202a838c280eeb9}{\index{mts\-Intuitive\-Research\-Kit\-S\-U\-J@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}!Configure@{Configure}}
+\index{Configure@{Configure}!mtsIntuitiveResearchKitSUJ@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}}
+\subsubsection[{Configure}]{\setlength{\rightskip}{0pt plus 5cm}void mts\-Intuitive\-Research\-Kit\-S\-U\-J\-::\-Configure (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{filename}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classmts_intuitive_research_kit_s_u_j_a1e9fc9ecd3b04bafb202a838c280eeb9}
+The virtual method so that the interface or tasks can configure themselves 
+
+Reimplemented from \hyperlink{classmts_component_ad872432876de7879dc96c232b411c146}{mts\-Component}.
+
+\hypertarget{classmts_intuitive_research_kit_s_u_j_a17e207fda7ff8900f54f539542897563}{\index{mts\-Intuitive\-Research\-Kit\-S\-U\-J@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}!Dispatch\-Error@{Dispatch\-Error}}
+\index{Dispatch\-Error@{Dispatch\-Error}!mtsIntuitiveResearchKitSUJ@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}}
+\subsubsection[{Dispatch\-Error}]{\setlength{\rightskip}{0pt plus 5cm}void mts\-Intuitive\-Research\-Kit\-S\-U\-J\-::\-Dispatch\-Error (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{message}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classmts_intuitive_research_kit_s_u_j_a17e207fda7ff8900f54f539542897563}
+\hypertarget{classmts_intuitive_research_kit_s_u_j_a49551c2b529e585c395602fdc324a44b}{\index{mts\-Intuitive\-Research\-Kit\-S\-U\-J@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}!Dispatch\-Status@{Dispatch\-Status}}
+\index{Dispatch\-Status@{Dispatch\-Status}!mtsIntuitiveResearchKitSUJ@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}}
+\subsubsection[{Dispatch\-Status}]{\setlength{\rightskip}{0pt plus 5cm}void mts\-Intuitive\-Research\-Kit\-S\-U\-J\-::\-Dispatch\-Status (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{message}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classmts_intuitive_research_kit_s_u_j_a49551c2b529e585c395602fdc324a44b}
+\hypertarget{classmts_intuitive_research_kit_s_u_j_a36af5b0faebfffa611bced96dc6fee9e}{\index{mts\-Intuitive\-Research\-Kit\-S\-U\-J@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}!Error\-Event\-Handler@{Error\-Event\-Handler}}
+\index{Error\-Event\-Handler@{Error\-Event\-Handler}!mtsIntuitiveResearchKitSUJ@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}}
+\subsubsection[{Error\-Event\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}void mts\-Intuitive\-Research\-Kit\-S\-U\-J\-::\-Error\-Event\-Handler (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{message}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classmts_intuitive_research_kit_s_u_j_a36af5b0faebfffa611bced96dc6fee9e}
+Event handler for P\-I\-D errors. \hypertarget{classmts_intuitive_research_kit_s_u_j_a7c0edaae94e2f6ae0eb9954292e96a04}{\index{mts\-Intuitive\-Research\-Kit\-S\-U\-J@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}!Get\-And\-Convert\-Potentiometer\-Values@{Get\-And\-Convert\-Potentiometer\-Values}}
+\index{Get\-And\-Convert\-Potentiometer\-Values@{Get\-And\-Convert\-Potentiometer\-Values}!mtsIntuitiveResearchKitSUJ@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}}
+\subsubsection[{Get\-And\-Convert\-Potentiometer\-Values}]{\setlength{\rightskip}{0pt plus 5cm}void mts\-Intuitive\-Research\-Kit\-S\-U\-J\-::\-Get\-And\-Convert\-Potentiometer\-Values (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classmts_intuitive_research_kit_s_u_j_a7c0edaae94e2f6ae0eb9954292e96a04}
+Logic used to read the potentiometer values and updated the appropriate joint values based on the mux state. \hypertarget{classmts_intuitive_research_kit_s_u_j_aea49904777eacf24c1c52215ad757cf6}{\index{mts\-Intuitive\-Research\-Kit\-S\-U\-J@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}!Get\-Robot\-Control\-State@{Get\-Robot\-Control\-State}}
+\index{Get\-Robot\-Control\-State@{Get\-Robot\-Control\-State}!mtsIntuitiveResearchKitSUJ@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}}
+\subsubsection[{Get\-Robot\-Control\-State}]{\setlength{\rightskip}{0pt plus 5cm}void mts\-Intuitive\-Research\-Kit\-S\-U\-J\-::\-Get\-Robot\-Control\-State (
+\begin{DoxyParamCaption}
+\item[{std\-::string \&}]{state}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}}\label{classmts_intuitive_research_kit_s_u_j_aea49904777eacf24c1c52215ad757cf6}
+Convert enum to string using function provided by cisst\-Data\-Generator. \hypertarget{classmts_intuitive_research_kit_s_u_j_ad21f3576b7317da777071190a1d14d5a}{\index{mts\-Intuitive\-Research\-Kit\-S\-U\-J@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}!Get\-Robot\-Data@{Get\-Robot\-Data}}
+\index{Get\-Robot\-Data@{Get\-Robot\-Data}!mtsIntuitiveResearchKitSUJ@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}}
+\subsubsection[{Get\-Robot\-Data}]{\setlength{\rightskip}{0pt plus 5cm}void mts\-Intuitive\-Research\-Kit\-S\-U\-J\-::\-Get\-Robot\-Data (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classmts_intuitive_research_kit_s_u_j_ad21f3576b7317da777071190a1d14d5a}
+Get data from the P\-I\-D level based on current state. \hypertarget{classmts_intuitive_research_kit_s_u_j_a28854d3a0e85f9171aecbd6c71a3db84}{\index{mts\-Intuitive\-Research\-Kit\-S\-U\-J@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}!Init@{Init}}
+\index{Init@{Init}!mtsIntuitiveResearchKitSUJ@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}}
+\subsubsection[{Init}]{\setlength{\rightskip}{0pt plus 5cm}void mts\-Intuitive\-Research\-Kit\-S\-U\-J\-::\-Init (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classmts_intuitive_research_kit_s_u_j_a28854d3a0e85f9171aecbd6c71a3db84}
+\hypertarget{classmts_intuitive_research_kit_s_u_j_a9b0effa9a1671d84dd7592ea12bf42a0}{\index{mts\-Intuitive\-Research\-Kit\-S\-U\-J@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}!Motor\-Down\-Event\-Handler@{Motor\-Down\-Event\-Handler}}
+\index{Motor\-Down\-Event\-Handler@{Motor\-Down\-Event\-Handler}!mtsIntuitiveResearchKitSUJ@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}}
+\subsubsection[{Motor\-Down\-Event\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}void mts\-Intuitive\-Research\-Kit\-S\-U\-J\-::\-Motor\-Down\-Event\-Handler (
+\begin{DoxyParamCaption}
+\item[{const {\bf prm\-Event\-Button} \&}]{button}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classmts_intuitive_research_kit_s_u_j_a9b0effa9a1671d84dd7592ea12bf42a0}
+Motor down button. \hypertarget{classmts_intuitive_research_kit_s_u_j_a4ffc9f8537a4c2cca413d82f8fd8cfb9}{\index{mts\-Intuitive\-Research\-Kit\-S\-U\-J@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}!Motor\-Up\-Event\-Handler@{Motor\-Up\-Event\-Handler}}
+\index{Motor\-Up\-Event\-Handler@{Motor\-Up\-Event\-Handler}!mtsIntuitiveResearchKitSUJ@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}}
+\subsubsection[{Motor\-Up\-Event\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}void mts\-Intuitive\-Research\-Kit\-S\-U\-J\-::\-Motor\-Up\-Event\-Handler (
+\begin{DoxyParamCaption}
+\item[{const {\bf prm\-Event\-Button} \&}]{button}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classmts_intuitive_research_kit_s_u_j_a4ffc9f8537a4c2cca413d82f8fd8cfb9}
+Motor up button. \hypertarget{classmts_intuitive_research_kit_s_u_j_a5650f1c2bd2e4d9456c3ebc9e2e07b7b}{\index{mts\-Intuitive\-Research\-Kit\-S\-U\-J@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}!Run@{Run}}
+\index{Run@{Run}!mtsIntuitiveResearchKitSUJ@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}}
+\subsubsection[{Run}]{\setlength{\rightskip}{0pt plus 5cm}void mts\-Intuitive\-Research\-Kit\-S\-U\-J\-::\-Run (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classmts_intuitive_research_kit_s_u_j_a5650f1c2bd2e4d9456c3ebc9e2e07b7b}
+Pure virtual method that gets overloaded to run the actual task. 
+
+Implements \hyperlink{classmts_task_a20e18c9479cb650792456c32ee689834}{mts\-Task}.
+
+\hypertarget{classmts_intuitive_research_kit_s_u_j_af3aa4ebbcb09e8c150a9f0fab2f1a319}{\index{mts\-Intuitive\-Research\-Kit\-S\-U\-J@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}!Run\-Homing@{Run\-Homing}}
+\index{Run\-Homing@{Run\-Homing}!mtsIntuitiveResearchKitSUJ@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}}
+\subsubsection[{Run\-Homing}]{\setlength{\rightskip}{0pt plus 5cm}void mts\-Intuitive\-Research\-Kit\-S\-U\-J\-::\-Run\-Homing (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classmts_intuitive_research_kit_s_u_j_af3aa4ebbcb09e8c150a9f0fab2f1a319}
+Homing procedure, will check the homing state and call the required method. \hypertarget{classmts_intuitive_research_kit_s_u_j_a131f33f5e5b6100de115c318d05ae598}{\index{mts\-Intuitive\-Research\-Kit\-S\-U\-J@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}!Run\-Homing\-Power@{Run\-Homing\-Power}}
+\index{Run\-Homing\-Power@{Run\-Homing\-Power}!mtsIntuitiveResearchKitSUJ@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}}
+\subsubsection[{Run\-Homing\-Power}]{\setlength{\rightskip}{0pt plus 5cm}void mts\-Intuitive\-Research\-Kit\-S\-U\-J\-::\-Run\-Homing\-Power (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classmts_intuitive_research_kit_s_u_j_a131f33f5e5b6100de115c318d05ae598}
+Homing procedure, power the robot and initial current and encoder calibration. \hypertarget{classmts_intuitive_research_kit_s_u_j_a131482e0f6383d5752f9b2300e64f282}{\index{mts\-Intuitive\-Research\-Kit\-S\-U\-J@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}!Run\-Ready@{Run\-Ready}}
+\index{Run\-Ready@{Run\-Ready}!mtsIntuitiveResearchKitSUJ@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}}
+\subsubsection[{Run\-Ready}]{\setlength{\rightskip}{0pt plus 5cm}void mts\-Intuitive\-Research\-Kit\-S\-U\-J\-::\-Run\-Ready (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classmts_intuitive_research_kit_s_u_j_a131482e0f6383d5752f9b2300e64f282}
+Normal operations. \hypertarget{classmts_intuitive_research_kit_s_u_j_a1d653fd48864f67a8133e1368feb0625}{\index{mts\-Intuitive\-Research\-Kit\-S\-U\-J@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}!Set\-Base\-Frame@{Set\-Base\-Frame}}
+\index{Set\-Base\-Frame@{Set\-Base\-Frame}!mtsIntuitiveResearchKitSUJ@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}}
+\subsubsection[{Set\-Base\-Frame}]{\setlength{\rightskip}{0pt plus 5cm}void mts\-Intuitive\-Research\-Kit\-S\-U\-J\-::\-Set\-Base\-Frame (
+\begin{DoxyParamCaption}
+\item[{const {\bf prm\-Position\-Cartesian\-Get} \&}]{new\-Base\-Frame}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classmts_intuitive_research_kit_s_u_j_a1d653fd48864f67a8133e1368feb0625}
+Set base coordinate frame, this will be added to the kinematics of all S\-U\-Js except E\-C\-M. \hypertarget{classmts_intuitive_research_kit_s_u_j_ae85ef3d4f7685492e25a665f0f8b873d}{\index{mts\-Intuitive\-Research\-Kit\-S\-U\-J@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}!Set\-Lift\-Velocity@{Set\-Lift\-Velocity}}
+\index{Set\-Lift\-Velocity@{Set\-Lift\-Velocity}!mtsIntuitiveResearchKitSUJ@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}}
+\subsubsection[{Set\-Lift\-Velocity}]{\setlength{\rightskip}{0pt plus 5cm}void mts\-Intuitive\-Research\-Kit\-S\-U\-J\-::\-Set\-Lift\-Velocity (
+\begin{DoxyParamCaption}
+\item[{const double \&}]{velocity}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classmts_intuitive_research_kit_s_u_j_ae85ef3d4f7685492e25a665f0f8b873d}
+Set velocity for motorized P\-S\-M lift. normalized between -\/1.\-0 and 1.\-0. \hypertarget{classmts_intuitive_research_kit_s_u_j_a81f15d4071f80ed9eab3712f9a957934}{\index{mts\-Intuitive\-Research\-Kit\-S\-U\-J@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}!Set\-Robot\-Control\-State@{Set\-Robot\-Control\-State}}
+\index{Set\-Robot\-Control\-State@{Set\-Robot\-Control\-State}!mtsIntuitiveResearchKitSUJ@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}}
+\subsubsection[{Set\-Robot\-Control\-State}]{\setlength{\rightskip}{0pt plus 5cm}void mts\-Intuitive\-Research\-Kit\-S\-U\-J\-::\-Set\-Robot\-Control\-State (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{state}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classmts_intuitive_research_kit_s_u_j_a81f15d4071f80ed9eab3712f9a957934}
+\hypertarget{classmts_intuitive_research_kit_s_u_j_ac8045d25e35df425a735cb3d8d08dae7}{\index{mts\-Intuitive\-Research\-Kit\-S\-U\-J@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}!Set\-State@{Set\-State}}
+\index{Set\-State@{Set\-State}!mtsIntuitiveResearchKitSUJ@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}}
+\subsubsection[{Set\-State}]{\setlength{\rightskip}{0pt plus 5cm}void mts\-Intuitive\-Research\-Kit\-S\-U\-J\-::\-Set\-State (
+\begin{DoxyParamCaption}
+\item[{const mts\-Intuitive\-Research\-Kit\-Arm\-Types\-::\-Robot\-State\-Type \&}]{new\-State}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classmts_intuitive_research_kit_s_u_j_ac8045d25e35df425a735cb3d8d08dae7}
+Verify that the state transition is possible, initialize global variables for the desired state and finally set the state. \hypertarget{classmts_intuitive_research_kit_s_u_j_a106a3ace31c8620eba8af50ca812686f}{\index{mts\-Intuitive\-Research\-Kit\-S\-U\-J@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}!Startup@{Startup}}
+\index{Startup@{Startup}!mtsIntuitiveResearchKitSUJ@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}}
+\subsubsection[{Startup}]{\setlength{\rightskip}{0pt plus 5cm}void mts\-Intuitive\-Research\-Kit\-S\-U\-J\-::\-Startup (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classmts_intuitive_research_kit_s_u_j_a106a3ace31c8620eba8af50ca812686f}
+Virtual method that gets overloaded, and is run before the component is started. 
+
+Reimplemented from \hyperlink{classmts_component_aaf28f0262b44eb6866e10089a02fa6e4}{mts\-Component}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classmts_intuitive_research_kit_s_u_j_abea003c7cf23ba8b1c58caf9d94ad455}{\index{mts\-Intuitive\-Research\-Kit\-S\-U\-J@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}!Arms@{Arms}}
+\index{Arms@{Arms}!mtsIntuitiveResearchKitSUJ@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}}
+\subsubsection[{Arms}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\-Fixed\-Size\-Vector}$<$mts\-Intuitive\-Research\-Kit\-S\-U\-J\-Arm\-Data $\ast$, 4$>$ mts\-Intuitive\-Research\-Kit\-S\-U\-J\-::\-Arms\hspace{0.3cm}{\ttfamily [protected]}}}\label{classmts_intuitive_research_kit_s_u_j_abea003c7cf23ba8b1c58caf9d94ad455}
+\hypertarget{classmts_intuitive_research_kit_s_u_j_aee844094a1a82335db75e306a0cb6bd3}{\index{mts\-Intuitive\-Research\-Kit\-S\-U\-J@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}!Disable\-Power@{Disable\-Power}}
+\index{Disable\-Power@{Disable\-Power}!mtsIntuitiveResearchKitSUJ@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}}
+\subsubsection[{Disable\-Power}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\-Function\-Void} mts\-Intuitive\-Research\-Kit\-S\-U\-J\-::\-Disable\-Power}}\label{classmts_intuitive_research_kit_s_u_j_aee844094a1a82335db75e306a0cb6bd3}
+\hypertarget{classmts_intuitive_research_kit_s_u_j_a91ae8444818c2bc74f9a9cee43f7742d}{\index{mts\-Intuitive\-Research\-Kit\-S\-U\-J@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}!Enable\-Power@{Enable\-Power}}
+\index{Enable\-Power@{Enable\-Power}!mtsIntuitiveResearchKitSUJ@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}}
+\subsubsection[{Enable\-Power}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\-Function\-Void} mts\-Intuitive\-Research\-Kit\-S\-U\-J\-::\-Enable\-Power}}\label{classmts_intuitive_research_kit_s_u_j_a91ae8444818c2bc74f9a9cee43f7742d}
+
+
+Enable Robot Power. 
+
+\hypertarget{classmts_intuitive_research_kit_s_u_j_ad1080d86e10ab03538f61c526c158507}{\index{mts\-Intuitive\-Research\-Kit\-S\-U\-J@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}!Enable\-P\-W\-M@{Enable\-P\-W\-M}}
+\index{Enable\-P\-W\-M@{Enable\-P\-W\-M}!mtsIntuitiveResearchKitSUJ@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}}
+\subsubsection[{Enable\-P\-W\-M}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\-Function\-Write} mts\-Intuitive\-Research\-Kit\-S\-U\-J\-::\-Enable\-P\-W\-M}}\label{classmts_intuitive_research_kit_s_u_j_ad1080d86e10ab03538f61c526c158507}
+\hypertarget{classmts_intuitive_research_kit_s_u_j_aad46bfa48c539835a6eb036e9866476f}{\index{mts\-Intuitive\-Research\-Kit\-S\-U\-J@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}!Error@{Error}}
+\index{Error@{Error}!mtsIntuitiveResearchKitSUJ@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}}
+\subsubsection[{Error}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\-Function\-Write} mts\-Intuitive\-Research\-Kit\-S\-U\-J\-::\-Error}}\label{classmts_intuitive_research_kit_s_u_j_aad46bfa48c539835a6eb036e9866476f}
+\hypertarget{classmts_intuitive_research_kit_s_u_j_a338536fc7a04c42c4be530bf2b00a5fc}{\index{mts\-Intuitive\-Research\-Kit\-S\-U\-J@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}!Get\-Actuator\-Amp\-Status@{Get\-Actuator\-Amp\-Status}}
+\index{Get\-Actuator\-Amp\-Status@{Get\-Actuator\-Amp\-Status}!mtsIntuitiveResearchKitSUJ@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}}
+\subsubsection[{Get\-Actuator\-Amp\-Status}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\-Function\-Read} mts\-Intuitive\-Research\-Kit\-S\-U\-J\-::\-Get\-Actuator\-Amp\-Status}}\label{classmts_intuitive_research_kit_s_u_j_a338536fc7a04c42c4be530bf2b00a5fc}
+\hypertarget{classmts_intuitive_research_kit_s_u_j_a49b5378a27060bc5e2ba8ab5bcc52d6b}{\index{mts\-Intuitive\-Research\-Kit\-S\-U\-J@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}!Get\-Analog\-Input\-Volts@{Get\-Analog\-Input\-Volts}}
+\index{Get\-Analog\-Input\-Volts@{Get\-Analog\-Input\-Volts}!mtsIntuitiveResearchKitSUJ@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}}
+\subsubsection[{Get\-Analog\-Input\-Volts}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\-Function\-Read} mts\-Intuitive\-Research\-Kit\-S\-U\-J\-::\-Get\-Analog\-Input\-Volts}}\label{classmts_intuitive_research_kit_s_u_j_a49b5378a27060bc5e2ba8ab5bcc52d6b}
+\hypertarget{classmts_intuitive_research_kit_s_u_j_af1cf7e77a99f34d30824a3febd31be3c}{\index{mts\-Intuitive\-Research\-Kit\-S\-U\-J@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}!Get\-Encoder\-Channel\-A@{Get\-Encoder\-Channel\-A}}
+\index{Get\-Encoder\-Channel\-A@{Get\-Encoder\-Channel\-A}!mtsIntuitiveResearchKitSUJ@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}}
+\subsubsection[{Get\-Encoder\-Channel\-A}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\-Function\-Read} mts\-Intuitive\-Research\-Kit\-S\-U\-J\-::\-Get\-Encoder\-Channel\-A}}\label{classmts_intuitive_research_kit_s_u_j_af1cf7e77a99f34d30824a3febd31be3c}
+\hypertarget{classmts_intuitive_research_kit_s_u_j_aec8ddd7dda18d06f7492f7cf992e2169}{\index{mts\-Intuitive\-Research\-Kit\-S\-U\-J@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}!Get\-Value@{Get\-Value}}
+\index{Get\-Value@{Get\-Value}!mtsIntuitiveResearchKitSUJ@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}}
+\subsubsection[{Get\-Value}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\-Function\-Read} mts\-Intuitive\-Research\-Kit\-S\-U\-J\-::\-Get\-Value}}\label{classmts_intuitive_research_kit_s_u_j_aec8ddd7dda18d06f7492f7cf992e2169}
+\hypertarget{classmts_intuitive_research_kit_s_u_j_aed67d646259d548e4739098cc0c266ba}{\index{mts\-Intuitive\-Research\-Kit\-S\-U\-J@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}!m\-Brake\-Currents@{m\-Brake\-Currents}}
+\index{m\-Brake\-Currents@{m\-Brake\-Currents}!mtsIntuitiveResearchKitSUJ@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}}
+\subsubsection[{m\-Brake\-Currents}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\-Double\-Vec} mts\-Intuitive\-Research\-Kit\-S\-U\-J\-::m\-Brake\-Currents\hspace{0.3cm}{\ttfamily [protected]}}}\label{classmts_intuitive_research_kit_s_u_j_aed67d646259d548e4739098cc0c266ba}
+\hypertarget{classmts_intuitive_research_kit_s_u_j_a41e585d03cd523ead0e8408348332f28}{\index{mts\-Intuitive\-Research\-Kit\-S\-U\-J@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}!Message\-Events@{Message\-Events}}
+\index{Message\-Events@{Message\-Events}!mtsIntuitiveResearchKitSUJ@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}}
+\subsubsection[{Message\-Events}]{\setlength{\rightskip}{0pt plus 5cm}struct \{ ... \}   mts\-Intuitive\-Research\-Kit\-S\-U\-J\-::\-Message\-Events\hspace{0.3cm}{\ttfamily [protected]}}}\label{classmts_intuitive_research_kit_s_u_j_a41e585d03cd523ead0e8408348332f28}
+\hypertarget{classmts_intuitive_research_kit_s_u_j_a8b18a57060b73cac635569abc6f206b2}{\index{mts\-Intuitive\-Research\-Kit\-S\-U\-J@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}!m\-Homing\-Power\-Requested@{m\-Homing\-Power\-Requested}}
+\index{m\-Homing\-Power\-Requested@{m\-Homing\-Power\-Requested}!mtsIntuitiveResearchKitSUJ@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}}
+\subsubsection[{m\-Homing\-Power\-Requested}]{\setlength{\rightskip}{0pt plus 5cm}bool mts\-Intuitive\-Research\-Kit\-S\-U\-J\-::m\-Homing\-Power\-Requested\hspace{0.3cm}{\ttfamily [protected]}}}\label{classmts_intuitive_research_kit_s_u_j_a8b18a57060b73cac635569abc6f206b2}
+\hypertarget{classmts_intuitive_research_kit_s_u_j_ad6634774bd3eea5b7a36ae956f957ddf}{\index{mts\-Intuitive\-Research\-Kit\-S\-U\-J@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}!m\-Homing\-Timer@{m\-Homing\-Timer}}
+\index{m\-Homing\-Timer@{m\-Homing\-Timer}!mtsIntuitiveResearchKitSUJ@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}}
+\subsubsection[{m\-Homing\-Timer}]{\setlength{\rightskip}{0pt plus 5cm}double mts\-Intuitive\-Research\-Kit\-S\-U\-J\-::m\-Homing\-Timer\hspace{0.3cm}{\ttfamily [protected]}}}\label{classmts_intuitive_research_kit_s_u_j_ad6634774bd3eea5b7a36ae956f957ddf}
+\hypertarget{classmts_intuitive_research_kit_s_u_j_a74626be3d8dbedcf2a1f7d2e6d47f668}{\index{mts\-Intuitive\-Research\-Kit\-S\-U\-J@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}!m\-Mux\-Index@{m\-Mux\-Index}}
+\index{m\-Mux\-Index@{m\-Mux\-Index}!mtsIntuitiveResearchKitSUJ@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}}
+\subsubsection[{m\-Mux\-Index}]{\setlength{\rightskip}{0pt plus 5cm}size\-\_\-t mts\-Intuitive\-Research\-Kit\-S\-U\-J\-::m\-Mux\-Index\hspace{0.3cm}{\ttfamily [protected]}}}\label{classmts_intuitive_research_kit_s_u_j_a74626be3d8dbedcf2a1f7d2e6d47f668}
+\hypertarget{classmts_intuitive_research_kit_s_u_j_add84f0fa988969f519f27a9cc09743ee}{\index{mts\-Intuitive\-Research\-Kit\-S\-U\-J@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}!m\-Mux\-Index\-Expected@{m\-Mux\-Index\-Expected}}
+\index{m\-Mux\-Index\-Expected@{m\-Mux\-Index\-Expected}!mtsIntuitiveResearchKitSUJ@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}}
+\subsubsection[{m\-Mux\-Index\-Expected}]{\setlength{\rightskip}{0pt plus 5cm}size\-\_\-t mts\-Intuitive\-Research\-Kit\-S\-U\-J\-::m\-Mux\-Index\-Expected\hspace{0.3cm}{\ttfamily [protected]}}}\label{classmts_intuitive_research_kit_s_u_j_add84f0fa988969f519f27a9cc09743ee}
+\hypertarget{classmts_intuitive_research_kit_s_u_j_abb3c4881fcbaf666c2fe8b0b9a5bb545}{\index{mts\-Intuitive\-Research\-Kit\-S\-U\-J@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}!m\-Mux\-State@{m\-Mux\-State}}
+\index{m\-Mux\-State@{m\-Mux\-State}!mtsIntuitiveResearchKitSUJ@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}}
+\subsubsection[{m\-Mux\-State}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\-Bool\-Vec} mts\-Intuitive\-Research\-Kit\-S\-U\-J\-::m\-Mux\-State\hspace{0.3cm}{\ttfamily [protected]}}}\label{classmts_intuitive_research_kit_s_u_j_abb3c4881fcbaf666c2fe8b0b9a5bb545}
+\hypertarget{classmts_intuitive_research_kit_s_u_j_a4a72ef14532a1a203f3f3b508308419e}{\index{mts\-Intuitive\-Research\-Kit\-S\-U\-J@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}!m\-Mux\-Timer@{m\-Mux\-Timer}}
+\index{m\-Mux\-Timer@{m\-Mux\-Timer}!mtsIntuitiveResearchKitSUJ@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}}
+\subsubsection[{m\-Mux\-Timer}]{\setlength{\rightskip}{0pt plus 5cm}double mts\-Intuitive\-Research\-Kit\-S\-U\-J\-::m\-Mux\-Timer\hspace{0.3cm}{\ttfamily [protected]}}}\label{classmts_intuitive_research_kit_s_u_j_a4a72ef14532a1a203f3f3b508308419e}
+\hypertarget{classmts_intuitive_research_kit_s_u_j_a2e436c23462977ad86c3650cb397aef1}{\index{mts\-Intuitive\-Research\-Kit\-S\-U\-J@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}!m\-Previous\-Tic@{m\-Previous\-Tic}}
+\index{m\-Previous\-Tic@{m\-Previous\-Tic}!mtsIntuitiveResearchKitSUJ@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}}
+\subsubsection[{m\-Previous\-Tic}]{\setlength{\rightskip}{0pt plus 5cm}double mts\-Intuitive\-Research\-Kit\-S\-U\-J\-::m\-Previous\-Tic\hspace{0.3cm}{\ttfamily [protected]}}}\label{classmts_intuitive_research_kit_s_u_j_a2e436c23462977ad86c3650cb397aef1}
+\hypertarget{classmts_intuitive_research_kit_s_u_j_a4d2e2f20f9c54ca3f9c730153d313b91}{\index{mts\-Intuitive\-Research\-Kit\-S\-U\-J@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}!m\-Robot\-State@{m\-Robot\-State}}
+\index{m\-Robot\-State@{m\-Robot\-State}!mtsIntuitiveResearchKitSUJ@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}}
+\subsubsection[{m\-Robot\-State}]{\setlength{\rightskip}{0pt plus 5cm}mts\-Intuitive\-Research\-Kit\-Arm\-Types\-::\-Robot\-State\-Type mts\-Intuitive\-Research\-Kit\-S\-U\-J\-::m\-Robot\-State\hspace{0.3cm}{\ttfamily [protected]}}}\label{classmts_intuitive_research_kit_s_u_j_a4d2e2f20f9c54ca3f9c730153d313b91}
+\hypertarget{classmts_intuitive_research_kit_s_u_j_aeac1a022c47dfc5666ceecfd4630bbe8}{\index{mts\-Intuitive\-Research\-Kit\-S\-U\-J@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}!Mux\-Increment@{Mux\-Increment}}
+\index{Mux\-Increment@{Mux\-Increment}!mtsIntuitiveResearchKitSUJ@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}}
+\subsubsection[{Mux\-Increment}]{\setlength{\rightskip}{0pt plus 5cm}struct \{ ... \}   mts\-Intuitive\-Research\-Kit\-S\-U\-J\-::\-Mux\-Increment\hspace{0.3cm}{\ttfamily [protected]}}}\label{classmts_intuitive_research_kit_s_u_j_aeac1a022c47dfc5666ceecfd4630bbe8}
+\hypertarget{classmts_intuitive_research_kit_s_u_j_a570d00be2ab80066d790e748ddaa19f0}{\index{mts\-Intuitive\-Research\-Kit\-S\-U\-J@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}!Mux\-Reset@{Mux\-Reset}}
+\index{Mux\-Reset@{Mux\-Reset}!mtsIntuitiveResearchKitSUJ@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}}
+\subsubsection[{Mux\-Reset}]{\setlength{\rightskip}{0pt plus 5cm}struct \{ ... \}   mts\-Intuitive\-Research\-Kit\-S\-U\-J\-::\-Mux\-Reset\hspace{0.3cm}{\ttfamily [protected]}}}\label{classmts_intuitive_research_kit_s_u_j_a570d00be2ab80066d790e748ddaa19f0}
+\hypertarget{classmts_intuitive_research_kit_s_u_j_a1fdc3671d6faec7720cb374b171e05a1}{\index{mts\-Intuitive\-Research\-Kit\-S\-U\-J@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}!m\-Voltages@{m\-Voltages}}
+\index{m\-Voltages@{m\-Voltages}!mtsIntuitiveResearchKitSUJ@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}}
+\subsubsection[{m\-Voltages}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\-Double\-Vec} mts\-Intuitive\-Research\-Kit\-S\-U\-J\-::m\-Voltages\hspace{0.3cm}{\ttfamily [protected]}}}\label{classmts_intuitive_research_kit_s_u_j_a1fdc3671d6faec7720cb374b171e05a1}
+\hypertarget{classmts_intuitive_research_kit_s_u_j_a55e04397c08ebcb436d250a780220740}{\index{mts\-Intuitive\-Research\-Kit\-S\-U\-J@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}!m\-Voltage\-Samples@{m\-Voltage\-Samples}}
+\index{m\-Voltage\-Samples@{m\-Voltage\-Samples}!mtsIntuitiveResearchKitSUJ@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}}
+\subsubsection[{m\-Voltage\-Samples}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vct\-Dynamic\-Vector}$<${\bf vct\-Double\-Vec}$>$ mts\-Intuitive\-Research\-Kit\-S\-U\-J\-::m\-Voltage\-Samples\hspace{0.3cm}{\ttfamily [protected]}}}\label{classmts_intuitive_research_kit_s_u_j_a55e04397c08ebcb436d250a780220740}
+\hypertarget{classmts_intuitive_research_kit_s_u_j_ac64bd556f3656dc6b6a59a51198eac13}{\index{mts\-Intuitive\-Research\-Kit\-S\-U\-J@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}!m\-Voltage\-Samples\-Counter@{m\-Voltage\-Samples\-Counter}}
+\index{m\-Voltage\-Samples\-Counter@{m\-Voltage\-Samples\-Counter}!mtsIntuitiveResearchKitSUJ@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}}
+\subsubsection[{m\-Voltage\-Samples\-Counter}]{\setlength{\rightskip}{0pt plus 5cm}size\-\_\-t mts\-Intuitive\-Research\-Kit\-S\-U\-J\-::m\-Voltage\-Samples\-Counter\hspace{0.3cm}{\ttfamily [protected]}}}\label{classmts_intuitive_research_kit_s_u_j_ac64bd556f3656dc6b6a59a51198eac13}
+\hypertarget{classmts_intuitive_research_kit_s_u_j_ae183ff25ef089caeca009b7e882c1bb8}{\index{mts\-Intuitive\-Research\-Kit\-S\-U\-J@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}!m\-Voltage\-Samples\-Number@{m\-Voltage\-Samples\-Number}}
+\index{m\-Voltage\-Samples\-Number@{m\-Voltage\-Samples\-Number}!mtsIntuitiveResearchKitSUJ@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}}
+\subsubsection[{m\-Voltage\-Samples\-Number}]{\setlength{\rightskip}{0pt plus 5cm}const size\-\_\-t mts\-Intuitive\-Research\-Kit\-S\-U\-J\-::m\-Voltage\-Samples\-Number\hspace{0.3cm}{\ttfamily [protected]}}}\label{classmts_intuitive_research_kit_s_u_j_ae183ff25ef089caeca009b7e882c1bb8}
+\hypertarget{classmts_intuitive_research_kit_s_u_j_ad12679577b3110ffdb393341e793ff06}{\index{mts\-Intuitive\-Research\-Kit\-S\-U\-J@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}!Number\-Of\-Brakes@{Number\-Of\-Brakes}}
+\index{Number\-Of\-Brakes@{Number\-Of\-Brakes}!mtsIntuitiveResearchKitSUJ@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}}
+\subsubsection[{Number\-Of\-Brakes}]{\setlength{\rightskip}{0pt plus 5cm}const size\-\_\-t mts\-Intuitive\-Research\-Kit\-S\-U\-J\-::\-Number\-Of\-Brakes = 3\hspace{0.3cm}{\ttfamily [static]}}}\label{classmts_intuitive_research_kit_s_u_j_ad12679577b3110ffdb393341e793ff06}
+\hypertarget{classmts_intuitive_research_kit_s_u_j_a0e6527f1c3b1aff5666599f060594c84}{\index{mts\-Intuitive\-Research\-Kit\-S\-U\-J@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}!Number\-Of\-Joints@{Number\-Of\-Joints}}
+\index{Number\-Of\-Joints@{Number\-Of\-Joints}!mtsIntuitiveResearchKitSUJ@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}}
+\subsubsection[{Number\-Of\-Joints}]{\setlength{\rightskip}{0pt plus 5cm}const size\-\_\-t mts\-Intuitive\-Research\-Kit\-S\-U\-J\-::\-Number\-Of\-Joints = 4\hspace{0.3cm}{\ttfamily [static]}}}\label{classmts_intuitive_research_kit_s_u_j_a0e6527f1c3b1aff5666599f060594c84}
+\hypertarget{classmts_intuitive_research_kit_s_u_j_ab3747f79a3a9c79aa8d04e85c227ace3}{\index{mts\-Intuitive\-Research\-Kit\-S\-U\-J@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}!P\-W\-M@{P\-W\-M}}
+\index{P\-W\-M@{P\-W\-M}!mtsIntuitiveResearchKitSUJ@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}}
+\subsubsection[{P\-W\-M}]{\setlength{\rightskip}{0pt plus 5cm}struct \{ ... \}   mts\-Intuitive\-Research\-Kit\-S\-U\-J\-::\-P\-W\-M\hspace{0.3cm}{\ttfamily [protected]}}}\label{classmts_intuitive_research_kit_s_u_j_ab3747f79a3a9c79aa8d04e85c227ace3}
+\hypertarget{classmts_intuitive_research_kit_s_u_j_a7e26dccf05597dfe554b175dfa796d3e}{\index{mts\-Intuitive\-Research\-Kit\-S\-U\-J@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}!Robot\-I\-O@{Robot\-I\-O}}
+\index{Robot\-I\-O@{Robot\-I\-O}!mtsIntuitiveResearchKitSUJ@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}}
+\subsubsection[{Robot\-I\-O}]{\setlength{\rightskip}{0pt plus 5cm}struct \{ ... \}   mts\-Intuitive\-Research\-Kit\-S\-U\-J\-::\-Robot\-I\-O\hspace{0.3cm}{\ttfamily [protected]}}}\label{classmts_intuitive_research_kit_s_u_j_a7e26dccf05597dfe554b175dfa796d3e}
+\hypertarget{classmts_intuitive_research_kit_s_u_j_a9a41c27dd2f7a3d794fedc7104328849}{\index{mts\-Intuitive\-Research\-Kit\-S\-U\-J@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}!Robot\-State@{Robot\-State}}
+\index{Robot\-State@{Robot\-State}!mtsIntuitiveResearchKitSUJ@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}}
+\subsubsection[{Robot\-State}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\-Function\-Write} mts\-Intuitive\-Research\-Kit\-S\-U\-J\-::\-Robot\-State}}\label{classmts_intuitive_research_kit_s_u_j_a9a41c27dd2f7a3d794fedc7104328849}
+\hypertarget{classmts_intuitive_research_kit_s_u_j_a95563ce548cb99ed99507e9eadaaff41}{\index{mts\-Intuitive\-Research\-Kit\-S\-U\-J@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}!Set\-Actuator\-Current@{Set\-Actuator\-Current}}
+\index{Set\-Actuator\-Current@{Set\-Actuator\-Current}!mtsIntuitiveResearchKitSUJ@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}}
+\subsubsection[{Set\-Actuator\-Current}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\-Function\-Write} mts\-Intuitive\-Research\-Kit\-S\-U\-J\-::\-Set\-Actuator\-Current}}\label{classmts_intuitive_research_kit_s_u_j_a95563ce548cb99ed99507e9eadaaff41}
+\hypertarget{classmts_intuitive_research_kit_s_u_j_a0890ef11a70c40b4de112920950be4d0}{\index{mts\-Intuitive\-Research\-Kit\-S\-U\-J@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}!Set\-P\-W\-M\-Duty\-Cycle@{Set\-P\-W\-M\-Duty\-Cycle}}
+\index{Set\-P\-W\-M\-Duty\-Cycle@{Set\-P\-W\-M\-Duty\-Cycle}!mtsIntuitiveResearchKitSUJ@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}}
+\subsubsection[{Set\-P\-W\-M\-Duty\-Cycle}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\-Function\-Write} mts\-Intuitive\-Research\-Kit\-S\-U\-J\-::\-Set\-P\-W\-M\-Duty\-Cycle}}\label{classmts_intuitive_research_kit_s_u_j_a0890ef11a70c40b4de112920950be4d0}
+\hypertarget{classmts_intuitive_research_kit_s_u_j_acb13bb51445c7e3489b87632b0ef1b2a}{\index{mts\-Intuitive\-Research\-Kit\-S\-U\-J@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}!Set\-Value@{Set\-Value}}
+\index{Set\-Value@{Set\-Value}!mtsIntuitiveResearchKitSUJ@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}}
+\subsubsection[{Set\-Value}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\-Function\-Write} mts\-Intuitive\-Research\-Kit\-S\-U\-J\-::\-Set\-Value}}\label{classmts_intuitive_research_kit_s_u_j_acb13bb51445c7e3489b87632b0ef1b2a}
+\hypertarget{classmts_intuitive_research_kit_s_u_j_a35450db73924ff02abc887bd597c29d7}{\index{mts\-Intuitive\-Research\-Kit\-S\-U\-J@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}!Status@{Status}}
+\index{Status@{Status}!mtsIntuitiveResearchKitSUJ@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}}
+\subsubsection[{Status}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\-Function\-Write} mts\-Intuitive\-Research\-Kit\-S\-U\-J\-::\-Status}}\label{classmts_intuitive_research_kit_s_u_j_a35450db73924ff02abc887bd597c29d7}
+\hypertarget{classmts_intuitive_research_kit_s_u_j_aec08aca97c788326bc927601d98710fd}{\index{mts\-Intuitive\-Research\-Kit\-S\-U\-J@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}!Warning@{Warning}}
+\index{Warning@{Warning}!mtsIntuitiveResearchKitSUJ@{mts\-Intuitive\-Research\-Kit\-S\-U\-J}}
+\subsubsection[{Warning}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mts\-Function\-Write} mts\-Intuitive\-Research\-Kit\-S\-U\-J\-::\-Warning}}\label{classmts_intuitive_research_kit_s_u_j_aec08aca97c788326bc927601d98710fd}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/home/adeguet1/catkin\-\_\-ws/src/cisst-\/saw/saw\-Intuitive\-Research\-Kit/include/saw\-Intuitive\-Research\-Kit/\hyperlink{mts_intuitive_research_kit_s_u_j_8h}{mts\-Intuitive\-Research\-Kit\-S\-U\-J.\-h}\end{DoxyCompactItemize}

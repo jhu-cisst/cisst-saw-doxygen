@@ -1,30 +1,31 @@
-\hypertarget{nmr_is_orthonormal_8h}{}\section{/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Numerical/nmr\+Is\+Orthonormal.h File Reference}
-\label{nmr_is_orthonormal_8h}\index{/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Numerical/nmr\+Is\+Orthonormal.\+h@{/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Numerical/nmr\+Is\+Orthonormal.\+h}}
+\hypertarget{nmr_is_orthonormal_8h}{\section{/home/adeguet1/catkin\-\_\-ws/src/cisst-\/saw/cisst/cisst\-Numerical/nmr\-Is\-Orthonormal.h File Reference}
+\label{nmr_is_orthonormal_8h}\index{/home/adeguet1/catkin\-\_\-ws/src/cisst-\/saw/cisst/cisst\-Numerical/nmr\-Is\-Orthonormal.\-h@{/home/adeguet1/catkin\-\_\-ws/src/cisst-\/saw/cisst/cisst\-Numerical/nmr\-Is\-Orthonormal.\-h}}
+}
 
 
-Declaration of functions nmr\+Is\+Orthonormal.  
+Declaration of functions nmr\-Is\-Orthonormal.  
 
 
-{\ttfamily \#include $<$cisst\+Vector/vct\+Fixed\+Size\+Matrix.\+h$>$}\\*
-{\ttfamily \#include $<$cisst\+Vector/vct\+Dynamic\+Matrix.\+h$>$}\\*
+{\ttfamily \#include $<$cisst\-Vector/vct\-Fixed\-Size\-Matrix.\-h$>$}\\*
+{\ttfamily \#include $<$cisst\-Vector/vct\-Dynamic\-Matrix.\-h$>$}\\*
 \subsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
-class \hyperlink{classnmr_is_orthonormal_dynamic_data}{nmr\+Is\+Orthonormal\+Dynamic\+Data$<$ \+\_\+element\+Type $>$}
-\begin{DoxyCompactList}\small\item\em Data (workspace) for \hyperlink{nmr_is_orthonormal_8h_acf0ff1e2dbe0c988db04d9db1e2e7697}{nmr\+Is\+Orthonormal} (Dynamic). \end{DoxyCompactList}\item 
-class \hyperlink{classnmr_is_orthonormal_dynamic_data_1_1_friend}{nmr\+Is\+Orthonormal\+Dynamic\+Data$<$ \+\_\+element\+Type $>$\+::\+Friend}
+class \hyperlink{classnmr_is_orthonormal_dynamic_data}{nmr\-Is\-Orthonormal\-Dynamic\-Data$<$ \-\_\-element\-Type $>$}
+\begin{DoxyCompactList}\small\item\em Data (workspace) for \hyperlink{nmr_is_orthonormal_8h_acf0ff1e2dbe0c988db04d9db1e2e7697}{nmr\-Is\-Orthonormal} (Dynamic). \end{DoxyCompactList}\item 
+class \hyperlink{classnmr_is_orthonormal_dynamic_data_1_1_friend}{nmr\-Is\-Orthonormal\-Dynamic\-Data$<$ \-\_\-element\-Type $>$\-::\-Friend}
 \item 
-class \hyperlink{classnmr_is_orthonormal_fixed_size_data}{nmr\+Is\+Orthonormal\+Fixed\+Size\+Data$<$ \+\_\+element\+Type, \+\_\+rows $>$}
-\begin{DoxyCompactList}\small\item\em Data for \hyperlink{nmr_is_orthonormal_8h_acf0ff1e2dbe0c988db04d9db1e2e7697}{nmr\+Is\+Orthonormal} (Fixed size). \end{DoxyCompactList}\item 
-class \hyperlink{classnmr_is_orthonormal_fixed_size_data_1_1_friend}{nmr\+Is\+Orthonormal\+Fixed\+Size\+Data$<$ \+\_\+element\+Type, \+\_\+rows $>$\+::\+Friend}
+class \hyperlink{classnmr_is_orthonormal_fixed_size_data}{nmr\-Is\-Orthonormal\-Fixed\-Size\-Data$<$ \-\_\-element\-Type, \-\_\-rows $>$}
+\begin{DoxyCompactList}\small\item\em Data for \hyperlink{nmr_is_orthonormal_8h_acf0ff1e2dbe0c988db04d9db1e2e7697}{nmr\-Is\-Orthonormal} (Fixed size). \end{DoxyCompactList}\item 
+class \hyperlink{classnmr_is_orthonormal_fixed_size_data_1_1_friend}{nmr\-Is\-Orthonormal\-Fixed\-Size\-Data$<$ \-\_\-element\-Type, \-\_\-rows $>$\-::\-Friend}
 \end{DoxyCompactItemize}
 \subsection*{Functions}
-\begin{Indent}{\bf nmr\+Is\+Orthonormal\+: Check if a matrix is orthonormal}\par
+\begin{Indent}{\bf nmr\-Is\-Orthonormal\-: Check if a matrix is orthonormal}\par
 {\em This function computes the product of the matrix with its transpose then subtracts the identity and verifies that all elements are null within some tolerance.
 
-This function is overloaded to be used with either a fixed size or a dynamic matrix (see \hyperlink{classvct_fixed_size_matrix}{vct\+Fixed\+Size\+Matrix} and \hyperlink{classvct_dynamic_matrix}{vct\+Dynamic\+Matrix}). Furthermore, it is possible to provide a workspace to store the product of the matrix and its transpose and avoid any undesired memory allocation\+: 
+This function is overloaded to be used with either a fixed size or a dynamic matrix (see \hyperlink{classvct_fixed_size_matrix}{vct\-Fixed\-Size\-Matrix} and \hyperlink{classvct_dynamic_matrix}{vct\-Dynamic\-Matrix}). Furthermore, it is possible to provide a workspace to store the product of the matrix and its transpose and avoid any undesired memory allocation\-: 
 \begin{DoxyEnumerate}
-\item The workspace can be provided using the dedicated classes \hyperlink{classnmr_is_orthonormal_dynamic_data}{nmr\+Is\+Orthonormal\+Dynamic\+Data} and \hyperlink{classnmr_is_orthonormal_fixed_size_data}{nmr\+Is\+Orthonormal\+Fixed\+Size\+Data}. The user has to create the data based on the matrix to be tested and then pass it to nmr\+Is\+Orthonormal\+: 
+\item The workspace can be provided using the dedicated classes \hyperlink{classnmr_is_orthonormal_dynamic_data}{nmr\-Is\-Orthonormal\-Dynamic\-Data} and \hyperlink{classnmr_is_orthonormal_fixed_size_data}{nmr\-Is\-Orthonormal\-Fixed\-Size\-Data}. The user has to create the data based on the matrix to be tested and then pass it to nmr\-Is\-Orthonormal\-: 
 \begin{DoxyCode}
 \hyperlink{classvct_dynamic_matrix}{vctDynamicMatrix<double>} A(9, 9);
 \hyperlink{classnmr_is_orthonormal_dynamic_data}{nmrIsOrthonormalDynamicData<double>} data(A);
@@ -38,7 +39,7 @@ This function is overloaded to be used with either a fixed size or a dynamic mat
 
 
 
-\item The workspace can be provided as a dynamic vector (\hyperlink{classvct_dynamic_vector}{vct\+Dynamic\+Vector}) large enough to store the product of the matrix with its transpose\+: 
+\item The workspace can be provided as a dynamic vector (\hyperlink{classvct_dynamic_vector}{vct\-Dynamic\-Vector}) large enough to store the product of the matrix with its transpose\-: 
 \begin{DoxyCode}
 \hyperlink{classvct_dynamic_matrix}{vctDynamicMatrix<double>} A(12, 12); 
 \hyperlink{group__cisst_vector_ga0d25660a2dc6ef9c093f6f6b2804d2d0}{vctRandom}(A, -10.0, 10.0);
@@ -48,7 +49,7 @@ This function is overloaded to be used with either a fixed size or a dynamic mat
 
 
 
-\item If no workspace is provided the nmr\+Is\+Orthonormal function will allocate one for you. This might be more convenient for most users but one must be aware that a memory allocation has to be performed (stack allocation for fixed size matrices, dynamic allocation for dynamic matrices)\+: 
+\item If no workspace is provided the nmr\-Is\-Orthonormal function will allocate one for you. This might be more convenient for most users but one must be aware that a memory allocation has to be performed (stack allocation for fixed size matrices, dynamic allocation for dynamic matrices)\-: 
 \begin{DoxyCode}
 \hyperlink{classvct_fixed_size_matrix}{vctFixedSizeMatrix<double, 5, 5>} A;
 \hyperlink{group__cisst_vector_ga0d25660a2dc6ef9c093f6f6b2804d2d0}{vctRandom}(A, -10.0, 10.0);
@@ -58,44 +59,42 @@ This function is overloaded to be used with either a fixed size or a dynamic mat
 \end{DoxyEnumerate}
 
 \begin{DoxyNote}{Note}
-For a dynamic matrix, the function will throw an exception is the matrix is not square (std\+::runtime\+\_\+error).
+For a dynamic matrix, the function will throw an exception is the matrix is not square (std\-::runtime\-\_\-error).
 
-The workspace needs to be compact and large enough otherwise nmr\+Is\+Orthonormal will throw an exception (std\+::runtime\+\_\+error).
+The workspace needs to be compact and large enough otherwise nmr\-Is\-Orthonormal will throw an exception (std\-::runtime\-\_\-error).
 \end{DoxyNote}
-\begin{DoxySeeAlso}{See also}
-\hyperlink{classnmr_is_orthonormal_dynamic_data}{nmr\+Is\+Orthonormal\+Dynamic\+Data} \hyperlink{classnmr_is_orthonormal_fixed_size_data}{nmr\+Is\+Orthonormal\+Fixed\+Size\+Data} 
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classnmr_is_orthonormal_dynamic_data}{nmr\-Is\-Orthonormal\-Dynamic\-Data} \hyperlink{classnmr_is_orthonormal_fixed_size_data}{nmr\-Is\-Orthonormal\-Fixed\-Size\-Data} 
 \end{DoxySeeAlso}
 }\begin{DoxyCompactItemize}
 \item 
-{\footnotesize template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+row\+Stride, vct\+::stride\+\_\+type \+\_\+col\+Stride, typename \+\_\+element\+Type , class \+\_\+data\+Ptr\+Type $>$ }\\bool \hyperlink{nmr_is_orthonormal_8h_ace7b9ec172a0588caf5ac91fc03c8c75}{nmr\+Is\+Orthonormal} (const \hyperlink{classvct_fixed_size_const_matrix_base}{vct\+Fixed\+Size\+Const\+Matrix\+Base}$<$ \+\_\+size, \+\_\+size, \+\_\+row\+Stride, \+\_\+col\+Stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$ \&A, \hyperlink{classnmr_is_orthonormal_fixed_size_data}{nmr\+Is\+Orthonormal\+Fixed\+Size\+Data}$<$ \+\_\+element\+Type, \+\_\+size $>$ \&data, \+\_\+element\+Type tolerance=\hyperlink{classcmn_type_traits}{cmn\+Type\+Traits}$<$ \+\_\+element\+Type $>$\+::Tolerance())
+{\footnotesize template$<$vct\-::size\-\_\-type \-\_\-size, vct\-::stride\-\_\-type \-\_\-row\-Stride, vct\-::stride\-\_\-type \-\_\-col\-Stride, typename \-\_\-element\-Type , class \-\_\-data\-Ptr\-Type $>$ }\\bool \hyperlink{nmr_is_orthonormal_8h_ace7b9ec172a0588caf5ac91fc03c8c75}{nmr\-Is\-Orthonormal} (const \hyperlink{classvct_fixed_size_const_matrix_base}{vct\-Fixed\-Size\-Const\-Matrix\-Base}$<$ \-\_\-size, \-\_\-size, \-\_\-row\-Stride, \-\_\-col\-Stride, \-\_\-element\-Type, \-\_\-data\-Ptr\-Type $>$ \&A, \hyperlink{classnmr_is_orthonormal_fixed_size_data}{nmr\-Is\-Orthonormal\-Fixed\-Size\-Data}$<$ \-\_\-element\-Type, \-\_\-size $>$ \&data, \-\_\-element\-Type tolerance=\hyperlink{classcmn_type_traits}{cmn\-Type\-Traits}$<$ \-\_\-element\-Type $>$\-::Tolerance())
 \item 
-{\footnotesize template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+row\+Stride, vct\+::stride\+\_\+type \+\_\+col\+Stride, typename \+\_\+element\+Type , class \+\_\+data\+Ptr\+Type $>$ }\\bool \hyperlink{nmr_is_orthonormal_8h_ac4a9cb0ed66fa7854207e8aee30a8110}{nmr\+Is\+Orthonormal} (const \hyperlink{classvct_fixed_size_const_matrix_base}{vct\+Fixed\+Size\+Const\+Matrix\+Base}$<$ \+\_\+size, \+\_\+size, \+\_\+row\+Stride, \+\_\+col\+Stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$ \&A, \+\_\+element\+Type tolerance=\hyperlink{classcmn_type_traits}{cmn\+Type\+Traits}$<$ \+\_\+element\+Type $>$\+::Tolerance())
+{\footnotesize template$<$vct\-::size\-\_\-type \-\_\-size, vct\-::stride\-\_\-type \-\_\-row\-Stride, vct\-::stride\-\_\-type \-\_\-col\-Stride, typename \-\_\-element\-Type , class \-\_\-data\-Ptr\-Type $>$ }\\bool \hyperlink{nmr_is_orthonormal_8h_ac4a9cb0ed66fa7854207e8aee30a8110}{nmr\-Is\-Orthonormal} (const \hyperlink{classvct_fixed_size_const_matrix_base}{vct\-Fixed\-Size\-Const\-Matrix\-Base}$<$ \-\_\-size, \-\_\-size, \-\_\-row\-Stride, \-\_\-col\-Stride, \-\_\-element\-Type, \-\_\-data\-Ptr\-Type $>$ \&A, \-\_\-element\-Type tolerance=\hyperlink{classcmn_type_traits}{cmn\-Type\-Traits}$<$ \-\_\-element\-Type $>$\-::Tolerance())
 \item 
-{\footnotesize template$<$class \+\_\+matrix\+Owner\+Type\+A , class \+\_\+element\+Type $>$ }\\bool \hyperlink{nmr_is_orthonormal_8h_a434de35ea8148eec9b5491a781d28a47}{nmr\+Is\+Orthonormal} (const \hyperlink{classvct_dynamic_const_matrix_base}{vct\+Dynamic\+Const\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type\+A, \+\_\+element\+Type $>$ \&A, \hyperlink{classnmr_is_orthonormal_dynamic_data}{nmr\+Is\+Orthonormal\+Dynamic\+Data}$<$ \+\_\+element\+Type $>$ \&data, \+\_\+element\+Type tolerance=\hyperlink{classcmn_type_traits}{cmn\+Type\+Traits}$<$ \+\_\+element\+Type $>$\+::Tolerance())  throw (std\+::runtime\+\_\+error)
+{\footnotesize template$<$class \-\_\-matrix\-Owner\-Type\-A , class \-\_\-element\-Type $>$ }\\bool \hyperlink{nmr_is_orthonormal_8h_a434de35ea8148eec9b5491a781d28a47}{nmr\-Is\-Orthonormal} (const \hyperlink{classvct_dynamic_const_matrix_base}{vct\-Dynamic\-Const\-Matrix\-Base}$<$ \-\_\-matrix\-Owner\-Type\-A, \-\_\-element\-Type $>$ \&A, \hyperlink{classnmr_is_orthonormal_dynamic_data}{nmr\-Is\-Orthonormal\-Dynamic\-Data}$<$ \-\_\-element\-Type $>$ \&data, \-\_\-element\-Type tolerance=\hyperlink{classcmn_type_traits}{cmn\-Type\-Traits}$<$ \-\_\-element\-Type $>$\-::Tolerance())  throw (std\-::runtime\-\_\-error)
 \item 
-{\footnotesize template$<$class \+\_\+matrix\+Owner\+Type\+A , typename \+\_\+element\+Type $>$ }\\bool \hyperlink{nmr_is_orthonormal_8h_a66f4266954b8baee537154f2cc25f87f}{nmr\+Is\+Orthonormal} (const \hyperlink{classvct_dynamic_const_matrix_base}{vct\+Dynamic\+Const\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type\+A, \+\_\+element\+Type $>$ \&A, \+\_\+element\+Type tolerance=\hyperlink{classcmn_type_traits}{cmn\+Type\+Traits}$<$ \+\_\+element\+Type $>$\+::Tolerance())  throw (std\+::runtime\+\_\+error)
+{\footnotesize template$<$class \-\_\-matrix\-Owner\-Type\-A , typename \-\_\-element\-Type $>$ }\\bool \hyperlink{nmr_is_orthonormal_8h_a66f4266954b8baee537154f2cc25f87f}{nmr\-Is\-Orthonormal} (const \hyperlink{classvct_dynamic_const_matrix_base}{vct\-Dynamic\-Const\-Matrix\-Base}$<$ \-\_\-matrix\-Owner\-Type\-A, \-\_\-element\-Type $>$ \&A, \-\_\-element\-Type tolerance=\hyperlink{classcmn_type_traits}{cmn\-Type\-Traits}$<$ \-\_\-element\-Type $>$\-::Tolerance())  throw (std\-::runtime\-\_\-error)
 \item 
-{\footnotesize template$<$class \+\_\+matrix\+Owner\+Type\+A , class \+\_\+vector\+Owner\+Type\+Workspace , typename \+\_\+element\+Type $>$ }\\bool \hyperlink{nmr_is_orthonormal_8h_acf0ff1e2dbe0c988db04d9db1e2e7697}{nmr\+Is\+Orthonormal} (const \hyperlink{classvct_dynamic_const_matrix_base}{vct\+Dynamic\+Const\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type\+A, \+\_\+element\+Type $>$ \&A, \hyperlink{classvct_dynamic_vector_base}{vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+Workspace, \+\_\+element\+Type $>$ \&workspace, \+\_\+element\+Type tolerance=\hyperlink{classcmn_type_traits}{cmn\+Type\+Traits}$<$ \+\_\+element\+Type $>$\+::Tolerance())  throw (std\+::runtime\+\_\+error)
+{\footnotesize template$<$class \-\_\-matrix\-Owner\-Type\-A , class \-\_\-vector\-Owner\-Type\-Workspace , typename \-\_\-element\-Type $>$ }\\bool \hyperlink{nmr_is_orthonormal_8h_acf0ff1e2dbe0c988db04d9db1e2e7697}{nmr\-Is\-Orthonormal} (const \hyperlink{classvct_dynamic_const_matrix_base}{vct\-Dynamic\-Const\-Matrix\-Base}$<$ \-\_\-matrix\-Owner\-Type\-A, \-\_\-element\-Type $>$ \&A, \hyperlink{classvct_dynamic_vector_base}{vct\-Dynamic\-Vector\-Base}$<$ \-\_\-vector\-Owner\-Type\-Workspace, \-\_\-element\-Type $>$ \&workspace, \-\_\-element\-Type tolerance=\hyperlink{classcmn_type_traits}{cmn\-Type\-Traits}$<$ \-\_\-element\-Type $>$\-::Tolerance())  throw (std\-::runtime\-\_\-error)
 \end{DoxyCompactItemize}
 \end{Indent}
 
 
 \subsection{Detailed Description}
-Declaration of functions nmr\+Is\+Orthonormal. 
-
-
+Declaration of functions nmr\-Is\-Orthonormal. 
 
 \subsection{Function Documentation}
-\hypertarget{nmr_is_orthonormal_8h_ace7b9ec172a0588caf5ac91fc03c8c75}{}\index{nmr\+Is\+Orthonormal.\+h@{nmr\+Is\+Orthonormal.\+h}!nmr\+Is\+Orthonormal@{nmr\+Is\+Orthonormal}}
-\index{nmr\+Is\+Orthonormal@{nmr\+Is\+Orthonormal}!nmr\+Is\+Orthonormal.\+h@{nmr\+Is\+Orthonormal.\+h}}
-\subsubsection[{nmr\+Is\+Orthonormal}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+row\+Stride, vct\+::stride\+\_\+type \+\_\+col\+Stride, typename \+\_\+element\+Type , class \+\_\+data\+Ptr\+Type $>$ bool nmr\+Is\+Orthonormal (
+\hypertarget{nmr_is_orthonormal_8h_ace7b9ec172a0588caf5ac91fc03c8c75}{\index{nmr\-Is\-Orthonormal.\-h@{nmr\-Is\-Orthonormal.\-h}!nmr\-Is\-Orthonormal@{nmr\-Is\-Orthonormal}}
+\index{nmr\-Is\-Orthonormal@{nmr\-Is\-Orthonormal}!nmrIsOrthonormal.h@{nmr\-Is\-Orthonormal.\-h}}
+\subsubsection[{nmr\-Is\-Orthonormal}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\-::size\-\_\-type \-\_\-size, vct\-::stride\-\_\-type \-\_\-row\-Stride, vct\-::stride\-\_\-type \-\_\-col\-Stride, typename \-\_\-element\-Type , class \-\_\-data\-Ptr\-Type $>$ bool nmr\-Is\-Orthonormal (
 \begin{DoxyParamCaption}
-\item[{const {\bf vct\+Fixed\+Size\+Const\+Matrix\+Base}$<$ \+\_\+size, \+\_\+size, \+\_\+row\+Stride, \+\_\+col\+Stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$ \&}]{A, }
-\item[{{\bf nmr\+Is\+Orthonormal\+Fixed\+Size\+Data}$<$ \+\_\+element\+Type, \+\_\+size $>$ \&}]{data, }
-\item[{\+\_\+element\+Type}]{tolerance = {\ttfamily {\bf cmn\+Type\+Traits}$<$\+\_\+elementType$>$\+:\+:Tolerance()}}
+\item[{const {\bf vct\-Fixed\-Size\-Const\-Matrix\-Base}$<$ \-\_\-size, \-\_\-size, \-\_\-row\-Stride, \-\_\-col\-Stride, \-\_\-element\-Type, \-\_\-data\-Ptr\-Type $>$ \&}]{A, }
+\item[{{\bf nmr\-Is\-Orthonormal\-Fixed\-Size\-Data}$<$ \-\_\-element\-Type, \-\_\-size $>$ \&}]{data, }
+\item[{\-\_\-element\-Type}]{tolerance = {\ttfamily {\bf cmn\-Type\-Traits}$<$\-\_\-elementType$>$\-:\-:Tolerance()}}
 \end{DoxyParamCaption}
-)}\label{nmr_is_orthonormal_8h_ace7b9ec172a0588caf5ac91fc03c8c75}
-This function checks if a fixed size matrix is orthonormal. It uses a data (see \hyperlink{classnmr_is_orthonormal_fixed_size_data}{nmr\+Is\+Orthonormal\+Fixed\+Size\+Data}) to store the temporary product of the matrix with its transpose.
+)}}\label{nmr_is_orthonormal_8h_ace7b9ec172a0588caf5ac91fc03c8c75}
+This function checks if a fixed size matrix is orthonormal. It uses a data (see \hyperlink{classnmr_is_orthonormal_fixed_size_data}{nmr\-Is\-Orthonormal\-Fixed\-Size\-Data}) to store the temporary product of the matrix with its transpose.
 
 
 \begin{DoxyParams}{Parameters}
@@ -106,14 +105,14 @@ This function checks if a fixed size matrix is orthonormal. It uses a data (see 
 {\em tolerance} & Tolerance used to compare the product with identity \\
 \hline
 \end{DoxyParams}
-\hypertarget{nmr_is_orthonormal_8h_ac4a9cb0ed66fa7854207e8aee30a8110}{}\index{nmr\+Is\+Orthonormal.\+h@{nmr\+Is\+Orthonormal.\+h}!nmr\+Is\+Orthonormal@{nmr\+Is\+Orthonormal}}
-\index{nmr\+Is\+Orthonormal@{nmr\+Is\+Orthonormal}!nmr\+Is\+Orthonormal.\+h@{nmr\+Is\+Orthonormal.\+h}}
-\subsubsection[{nmr\+Is\+Orthonormal}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+row\+Stride, vct\+::stride\+\_\+type \+\_\+col\+Stride, typename \+\_\+element\+Type , class \+\_\+data\+Ptr\+Type $>$ bool nmr\+Is\+Orthonormal (
+\hypertarget{nmr_is_orthonormal_8h_ac4a9cb0ed66fa7854207e8aee30a8110}{\index{nmr\-Is\-Orthonormal.\-h@{nmr\-Is\-Orthonormal.\-h}!nmr\-Is\-Orthonormal@{nmr\-Is\-Orthonormal}}
+\index{nmr\-Is\-Orthonormal@{nmr\-Is\-Orthonormal}!nmrIsOrthonormal.h@{nmr\-Is\-Orthonormal.\-h}}
+\subsubsection[{nmr\-Is\-Orthonormal}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\-::size\-\_\-type \-\_\-size, vct\-::stride\-\_\-type \-\_\-row\-Stride, vct\-::stride\-\_\-type \-\_\-col\-Stride, typename \-\_\-element\-Type , class \-\_\-data\-Ptr\-Type $>$ bool nmr\-Is\-Orthonormal (
 \begin{DoxyParamCaption}
-\item[{const {\bf vct\+Fixed\+Size\+Const\+Matrix\+Base}$<$ \+\_\+size, \+\_\+size, \+\_\+row\+Stride, \+\_\+col\+Stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$ \&}]{A, }
-\item[{\+\_\+element\+Type}]{tolerance = {\ttfamily {\bf cmn\+Type\+Traits}$<$\+\_\+elementType$>$\+:\+:Tolerance()}}
+\item[{const {\bf vct\-Fixed\-Size\-Const\-Matrix\-Base}$<$ \-\_\-size, \-\_\-size, \-\_\-row\-Stride, \-\_\-col\-Stride, \-\_\-element\-Type, \-\_\-data\-Ptr\-Type $>$ \&}]{A, }
+\item[{\-\_\-element\-Type}]{tolerance = {\ttfamily {\bf cmn\-Type\-Traits}$<$\-\_\-elementType$>$\-:\-:Tolerance()}}
 \end{DoxyParamCaption}
-)}\label{nmr_is_orthonormal_8h_ac4a9cb0ed66fa7854207e8aee30a8110}
+)}}\label{nmr_is_orthonormal_8h_ac4a9cb0ed66fa7854207e8aee30a8110}
 This function checks if a fixed size matrix is orthonormal. It creates a data on the stack to store the temporary product of the matrix with its transpose.
 
 
@@ -123,16 +122,16 @@ This function checks if a fixed size matrix is orthonormal. It creates a data on
 {\em tolerance} & Tolerance used to compare the product with identity \\
 \hline
 \end{DoxyParams}
-\hypertarget{nmr_is_orthonormal_8h_a434de35ea8148eec9b5491a781d28a47}{}\index{nmr\+Is\+Orthonormal.\+h@{nmr\+Is\+Orthonormal.\+h}!nmr\+Is\+Orthonormal@{nmr\+Is\+Orthonormal}}
-\index{nmr\+Is\+Orthonormal@{nmr\+Is\+Orthonormal}!nmr\+Is\+Orthonormal.\+h@{nmr\+Is\+Orthonormal.\+h}}
-\subsubsection[{nmr\+Is\+Orthonormal}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+matrix\+Owner\+Type\+A , class \+\_\+element\+Type $>$ bool nmr\+Is\+Orthonormal (
+\hypertarget{nmr_is_orthonormal_8h_a434de35ea8148eec9b5491a781d28a47}{\index{nmr\-Is\-Orthonormal.\-h@{nmr\-Is\-Orthonormal.\-h}!nmr\-Is\-Orthonormal@{nmr\-Is\-Orthonormal}}
+\index{nmr\-Is\-Orthonormal@{nmr\-Is\-Orthonormal}!nmrIsOrthonormal.h@{nmr\-Is\-Orthonormal.\-h}}
+\subsubsection[{nmr\-Is\-Orthonormal}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-matrix\-Owner\-Type\-A , class \-\_\-element\-Type $>$ bool nmr\-Is\-Orthonormal (
 \begin{DoxyParamCaption}
-\item[{const {\bf vct\+Dynamic\+Const\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type\+A, \+\_\+element\+Type $>$ \&}]{A, }
-\item[{{\bf nmr\+Is\+Orthonormal\+Dynamic\+Data}$<$ \+\_\+element\+Type $>$ \&}]{data, }
-\item[{\+\_\+element\+Type}]{tolerance = {\ttfamily {\bf cmn\+Type\+Traits}$<$\+\_\+elementType$>$\+:\+:Tolerance()}}
+\item[{const {\bf vct\-Dynamic\-Const\-Matrix\-Base}$<$ \-\_\-matrix\-Owner\-Type\-A, \-\_\-element\-Type $>$ \&}]{A, }
+\item[{{\bf nmr\-Is\-Orthonormal\-Dynamic\-Data}$<$ \-\_\-element\-Type $>$ \&}]{data, }
+\item[{\-\_\-element\-Type}]{tolerance = {\ttfamily {\bf cmn\-Type\-Traits}$<$\-\_\-elementType$>$\-:\-:Tolerance()}}
 \end{DoxyParamCaption}
-) throw  std\+::runtime\+\_\+error) }\label{nmr_is_orthonormal_8h_a434de35ea8148eec9b5491a781d28a47}
-This function checks if a dynamic matrix is orthonormal. It uses a data (see \hyperlink{classnmr_is_orthonormal_dynamic_data}{nmr\+Is\+Orthonormal\+Dynamic\+Data}) to store the temporary product of the matrix with its transpose.
+) throw  std\-::runtime\-\_\-error) }}\label{nmr_is_orthonormal_8h_a434de35ea8148eec9b5491a781d28a47}
+This function checks if a dynamic matrix is orthonormal. It uses a data (see \hyperlink{classnmr_is_orthonormal_dynamic_data}{nmr\-Is\-Orthonormal\-Dynamic\-Data}) to store the temporary product of the matrix with its transpose.
 
 
 \begin{DoxyParams}{Parameters}
@@ -143,14 +142,14 @@ This function checks if a dynamic matrix is orthonormal. It uses a data (see \hy
 {\em tolerance} & Tolerance used to compare the product with identity \\
 \hline
 \end{DoxyParams}
-\hypertarget{nmr_is_orthonormal_8h_a66f4266954b8baee537154f2cc25f87f}{}\index{nmr\+Is\+Orthonormal.\+h@{nmr\+Is\+Orthonormal.\+h}!nmr\+Is\+Orthonormal@{nmr\+Is\+Orthonormal}}
-\index{nmr\+Is\+Orthonormal@{nmr\+Is\+Orthonormal}!nmr\+Is\+Orthonormal.\+h@{nmr\+Is\+Orthonormal.\+h}}
-\subsubsection[{nmr\+Is\+Orthonormal}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+matrix\+Owner\+Type\+A , typename \+\_\+element\+Type $>$ bool nmr\+Is\+Orthonormal (
+\hypertarget{nmr_is_orthonormal_8h_a66f4266954b8baee537154f2cc25f87f}{\index{nmr\-Is\-Orthonormal.\-h@{nmr\-Is\-Orthonormal.\-h}!nmr\-Is\-Orthonormal@{nmr\-Is\-Orthonormal}}
+\index{nmr\-Is\-Orthonormal@{nmr\-Is\-Orthonormal}!nmrIsOrthonormal.h@{nmr\-Is\-Orthonormal.\-h}}
+\subsubsection[{nmr\-Is\-Orthonormal}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-matrix\-Owner\-Type\-A , typename \-\_\-element\-Type $>$ bool nmr\-Is\-Orthonormal (
 \begin{DoxyParamCaption}
-\item[{const {\bf vct\+Dynamic\+Const\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type\+A, \+\_\+element\+Type $>$ \&}]{A, }
-\item[{\+\_\+element\+Type}]{tolerance = {\ttfamily {\bf cmn\+Type\+Traits}$<$\+\_\+elementType$>$\+:\+:Tolerance()}}
+\item[{const {\bf vct\-Dynamic\-Const\-Matrix\-Base}$<$ \-\_\-matrix\-Owner\-Type\-A, \-\_\-element\-Type $>$ \&}]{A, }
+\item[{\-\_\-element\-Type}]{tolerance = {\ttfamily {\bf cmn\-Type\-Traits}$<$\-\_\-elementType$>$\-:\-:Tolerance()}}
 \end{DoxyParamCaption}
-) throw  std\+::runtime\+\_\+error) }\label{nmr_is_orthonormal_8h_a66f4266954b8baee537154f2cc25f87f}
+) throw  std\-::runtime\-\_\-error) }}\label{nmr_is_orthonormal_8h_a66f4266954b8baee537154f2cc25f87f}
 This function checks if a dynamic matrix is orthonormal. It dynamically allocates a data to store the temporary product of the matrix with its transpose.
 
 
@@ -160,15 +159,15 @@ This function checks if a dynamic matrix is orthonormal. It dynamically allocate
 {\em tolerance} & Tolerance used to compare the product with identity \\
 \hline
 \end{DoxyParams}
-\hypertarget{nmr_is_orthonormal_8h_acf0ff1e2dbe0c988db04d9db1e2e7697}{}\index{nmr\+Is\+Orthonormal.\+h@{nmr\+Is\+Orthonormal.\+h}!nmr\+Is\+Orthonormal@{nmr\+Is\+Orthonormal}}
-\index{nmr\+Is\+Orthonormal@{nmr\+Is\+Orthonormal}!nmr\+Is\+Orthonormal.\+h@{nmr\+Is\+Orthonormal.\+h}}
-\subsubsection[{nmr\+Is\+Orthonormal}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+matrix\+Owner\+Type\+A , class \+\_\+vector\+Owner\+Type\+Workspace , typename \+\_\+element\+Type $>$ bool nmr\+Is\+Orthonormal (
+\hypertarget{nmr_is_orthonormal_8h_acf0ff1e2dbe0c988db04d9db1e2e7697}{\index{nmr\-Is\-Orthonormal.\-h@{nmr\-Is\-Orthonormal.\-h}!nmr\-Is\-Orthonormal@{nmr\-Is\-Orthonormal}}
+\index{nmr\-Is\-Orthonormal@{nmr\-Is\-Orthonormal}!nmrIsOrthonormal.h@{nmr\-Is\-Orthonormal.\-h}}
+\subsubsection[{nmr\-Is\-Orthonormal}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-matrix\-Owner\-Type\-A , class \-\_\-vector\-Owner\-Type\-Workspace , typename \-\_\-element\-Type $>$ bool nmr\-Is\-Orthonormal (
 \begin{DoxyParamCaption}
-\item[{const {\bf vct\+Dynamic\+Const\+Matrix\+Base}$<$ \+\_\+matrix\+Owner\+Type\+A, \+\_\+element\+Type $>$ \&}]{A, }
-\item[{{\bf vct\+Dynamic\+Vector\+Base}$<$ \+\_\+vector\+Owner\+Type\+Workspace, \+\_\+element\+Type $>$ \&}]{workspace, }
-\item[{\+\_\+element\+Type}]{tolerance = {\ttfamily {\bf cmn\+Type\+Traits}$<$\+\_\+elementType$>$\+:\+:Tolerance()}}
+\item[{const {\bf vct\-Dynamic\-Const\-Matrix\-Base}$<$ \-\_\-matrix\-Owner\-Type\-A, \-\_\-element\-Type $>$ \&}]{A, }
+\item[{{\bf vct\-Dynamic\-Vector\-Base}$<$ \-\_\-vector\-Owner\-Type\-Workspace, \-\_\-element\-Type $>$ \&}]{workspace, }
+\item[{\-\_\-element\-Type}]{tolerance = {\ttfamily {\bf cmn\-Type\-Traits}$<$\-\_\-elementType$>$\-:\-:Tolerance()}}
 \end{DoxyParamCaption}
-) throw  std\+::runtime\+\_\+error) }\label{nmr_is_orthonormal_8h_acf0ff1e2dbe0c988db04d9db1e2e7697}
+) throw  std\-::runtime\-\_\-error) }}\label{nmr_is_orthonormal_8h_acf0ff1e2dbe0c988db04d9db1e2e7697}
 This function checks if a dynamic matrix is orthonormal. It uses a user allocated workspace to store the temporary product of the matrix with its transpose.
 
 

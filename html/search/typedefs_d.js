@@ -33,6 +33,7 @@ var searchData=
   ['prmmaskedushortvec',['prmMaskedUShortVec',['../d0/d8f/prm_masked_vector_8h.html#aa7db812bea44aa998d6ec98b96bd02bb',1,'prmMaskedVector.h']]],
   ['prmpositioncartesiangetproxy',['prmPositionCartesianGetProxy',['../d8/d34/prm_position_cartesian_get_8h.html#aa0a0e2e195821bd0f9aa82524ed7194d',1,'prmPositionCartesianGet.h']]],
   ['prmpositionjointgetproxy',['prmPositionJointGetProxy',['../de/d62/prm_position_joint_get_8h.html#ae2bacf23cd273587133c3eed7f8ad852',1,'prmPositionJointGet.h']]],
+  ['prmstatejointproxy',['prmStateJointProxy',['../d6/d50/prm_state_joint_8h.html#af956263c12da3a7c5dde0e8474d81c98',1,'prmStateJoint.h']]],
   ['prmtransformationbaseptr',['prmTransformationBasePtr',['../db/de7/prm_transformation_base_8h.html#a881a6a7d2191474974cdf36d79e1df08',1,'prmTransformationBase.h']]],
   ['processmaptype',['ProcessMapType',['../d1/d06/classmts_manager_global.html#ab0257cb91cc9d4c59cf85706f65da9f1',1,'mtsManagerGlobal']]]
 ];

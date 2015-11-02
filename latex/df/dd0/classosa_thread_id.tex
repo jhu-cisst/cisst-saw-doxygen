@@ -1,135 +1,136 @@
-\hypertarget{classosa_thread_id}{}\section{osa\+Thread\+Id Class Reference}
-\label{classosa_thread_id}\index{osa\+Thread\+Id@{osa\+Thread\+Id}}
+\hypertarget{classosa_thread_id}{\section{osa\-Thread\-Id Class Reference}
+\label{classosa_thread_id}\index{osa\-Thread\-Id@{osa\-Thread\-Id}}
+}
 
 
-Thread\+Id type.  
+Thread\-Id type.  
 
 
 
 
-{\ttfamily \#include $<$osa\+Thread.\+h$>$}
+{\ttfamily \#include $<$osa\-Thread.\-h$>$}
 
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classosa_thread_id_aeb44a37d0492c197b9cb22b7b039d242}{osa\+Thread\+Id} (void)
+\hyperlink{classosa_thread_id_aeb44a37d0492c197b9cb22b7b039d242}{osa\-Thread\-Id} (void)
 \item 
-\hyperlink{classosa_thread_id_aea58cbec56c88f6546800ef9e59b70e8}{$\sim$osa\+Thread\+Id} ()
+\hyperlink{classosa_thread_id_aea58cbec56c88f6546800ef9e59b70e8}{$\sim$osa\-Thread\-Id} ()
 \item 
-bool \hyperlink{classosa_thread_id_a2fec44f6d2c93dd3df13d70a7bd4a8d4}{Equal} (const \hyperlink{classosa_thread_id}{osa\+Thread\+Id} \&other) const 
+bool \hyperlink{classosa_thread_id_a2fec44f6d2c93dd3df13d70a7bd4a8d4}{Equal} (const \hyperlink{classosa_thread_id}{osa\-Thread\-Id} \&other) const 
 \item 
-bool \hyperlink{classosa_thread_id_a93c9520bdd2ce99a76c22fe0e615b6d2}{operator==} (const \hyperlink{classosa_thread_id}{osa\+Thread\+Id} \&other) const 
+bool \hyperlink{classosa_thread_id_a93c9520bdd2ce99a76c22fe0e615b6d2}{operator==} (const \hyperlink{classosa_thread_id}{osa\-Thread\-Id} \&other) const 
 \item 
-bool \hyperlink{classosa_thread_id_a398145889ad5594d5a08a9f74ba1ec2b}{operator!=} (const \hyperlink{classosa_thread_id}{osa\+Thread\+Id} \&other) const 
+bool \hyperlink{classosa_thread_id_a398145889ad5594d5a08a9f74ba1ec2b}{operator!=} (const \hyperlink{classosa_thread_id}{osa\-Thread\-Id} \&other) const 
 \item 
-bool \hyperlink{classosa_thread_id_a37b34e88b38585f7f34ef043bf39e6dd}{operator()} (const \hyperlink{classosa_thread_id}{osa\+Thread\+Id} \&lhs, const \hyperlink{classosa_thread_id}{osa\+Thread\+Id} \&rhs) const 
+bool \hyperlink{classosa_thread_id_a37b34e88b38585f7f34ef043bf39e6dd}{operator()} (const \hyperlink{classosa_thread_id}{osa\-Thread\-Id} \&lhs, const \hyperlink{classosa_thread_id}{osa\-Thread\-Id} \&rhs) const 
 \item 
-void \hyperlink{classosa_thread_id_afb21803bee3dbe0d721a4c6b6737e2df}{To\+Stream} (std\+::ostream \&output\+Stream) const 
+void \hyperlink{classosa_thread_id_afb21803bee3dbe0d721a4c6b6737e2df}{To\-Stream} (std\-::ostream \&output\-Stream) const 
 \end{DoxyCompactItemize}
 \subsection*{Friends}
 \begin{DoxyCompactItemize}
 \item 
-class \hyperlink{classosa_thread_id_a35e7a1b0202c45103302d0073f377e57}{osa\+Thread}
+class \hyperlink{classosa_thread_id_a35e7a1b0202c45103302d0073f377e57}{osa\-Thread}
 \item 
-class \hyperlink{classosa_thread_id_a542e7acdd9a832dddf65bf204d2df936}{osa\+Thread\+Test}
+class \hyperlink{classosa_thread_id_a542e7acdd9a832dddf65bf204d2df936}{osa\-Thread\-Test}
 \item 
-\hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} \hyperlink{classosa_thread_id}{osa\+Thread\+Id} \hyperlink{classosa_thread_id_ab77759b2805dbd140c65481a68760ab5}{osa\+Get\+Current\+Thread\+Id} (void)
+\hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{C\-I\-S\-S\-T\-\_\-\-E\-X\-P\-O\-R\-T} \hyperlink{classosa_thread_id}{osa\-Thread\-Id} \hyperlink{classosa_thread_id_ab77759b2805dbd140c65481a68760ab5}{osa\-Get\-Current\-Thread\-Id} (void)
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-Thread\+Id type. 
+Thread\-Id type. 
 
-Abstract the thread Id based on the O\+S. Some O\+Ss use a native C type (e.\+g., unsigned long) to identify threads but others use more complex
+Abstract the thread Id based on the O\-S. Some O\-Ss use a native C type (e.\-g., unsigned long) to identify threads but others use more complex
 
 structs hence the need for a class to define the == and $<$$<$ operators.
 
-\begin{DoxySeeAlso}{See also}
-\hyperlink{classosa_thread_id_ab77759b2805dbd140c65481a68760ab5}{osa\+Get\+Current\+Thread\+Id} 
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classosa_thread_id_ab77759b2805dbd140c65481a68760ab5}{osa\-Get\-Current\-Thread\-Id} 
 \end{DoxySeeAlso}
 
 
 \subsection{Constructor \& Destructor Documentation}
-\hypertarget{classosa_thread_id_aeb44a37d0492c197b9cb22b7b039d242}{}\index{osa\+Thread\+Id@{osa\+Thread\+Id}!osa\+Thread\+Id@{osa\+Thread\+Id}}
-\index{osa\+Thread\+Id@{osa\+Thread\+Id}!osa\+Thread\+Id@{osa\+Thread\+Id}}
-\subsubsection[{osa\+Thread\+Id}]{\setlength{\rightskip}{0pt plus 5cm}osa\+Thread\+Id\+::osa\+Thread\+Id (
+\hypertarget{classosa_thread_id_aeb44a37d0492c197b9cb22b7b039d242}{\index{osa\-Thread\-Id@{osa\-Thread\-Id}!osa\-Thread\-Id@{osa\-Thread\-Id}}
+\index{osa\-Thread\-Id@{osa\-Thread\-Id}!osaThreadId@{osa\-Thread\-Id}}
+\subsubsection[{osa\-Thread\-Id}]{\setlength{\rightskip}{0pt plus 5cm}osa\-Thread\-Id\-::osa\-Thread\-Id (
 \begin{DoxyParamCaption}
 \item[{void}]{}
 \end{DoxyParamCaption}
-)}\label{classosa_thread_id_aeb44a37d0492c197b9cb22b7b039d242}
-Default constructor. Does nothing but checking that the internal structure use to store the O\+S specific information for \hyperlink{classosa_thread_id}{osa\+Thread\+Id} is large enough using C\+M\+N\+\_\+\+A\+S\+S\+E\+R\+T. \hypertarget{classosa_thread_id_aea58cbec56c88f6546800ef9e59b70e8}{}\index{osa\+Thread\+Id@{osa\+Thread\+Id}!````~osa\+Thread\+Id@{$\sim$osa\+Thread\+Id}}
-\index{````~osa\+Thread\+Id@{$\sim$osa\+Thread\+Id}!osa\+Thread\+Id@{osa\+Thread\+Id}}
-\subsubsection[{$\sim$osa\+Thread\+Id}]{\setlength{\rightskip}{0pt plus 5cm}osa\+Thread\+Id\+::$\sim$osa\+Thread\+Id (
+)}}\label{classosa_thread_id_aeb44a37d0492c197b9cb22b7b039d242}
+Default constructor. Does nothing but checking that the internal structure use to store the O\-S specific information for \hyperlink{classosa_thread_id}{osa\-Thread\-Id} is large enough using C\-M\-N\-\_\-\-A\-S\-S\-E\-R\-T. \hypertarget{classosa_thread_id_aea58cbec56c88f6546800ef9e59b70e8}{\index{osa\-Thread\-Id@{osa\-Thread\-Id}!$\sim$osa\-Thread\-Id@{$\sim$osa\-Thread\-Id}}
+\index{$\sim$osa\-Thread\-Id@{$\sim$osa\-Thread\-Id}!osaThreadId@{osa\-Thread\-Id}}
+\subsubsection[{$\sim$osa\-Thread\-Id}]{\setlength{\rightskip}{0pt plus 5cm}osa\-Thread\-Id\-::$\sim$osa\-Thread\-Id (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}\label{classosa_thread_id_aea58cbec56c88f6546800ef9e59b70e8}
+)}}\label{classosa_thread_id_aea58cbec56c88f6546800ef9e59b70e8}
 Default destructor. Does nothing. 
 
 \subsection{Member Function Documentation}
-\hypertarget{classosa_thread_id_a2fec44f6d2c93dd3df13d70a7bd4a8d4}{}\index{osa\+Thread\+Id@{osa\+Thread\+Id}!Equal@{Equal}}
-\index{Equal@{Equal}!osa\+Thread\+Id@{osa\+Thread\+Id}}
-\subsubsection[{Equal}]{\setlength{\rightskip}{0pt plus 5cm}bool osa\+Thread\+Id\+::\+Equal (
+\hypertarget{classosa_thread_id_a2fec44f6d2c93dd3df13d70a7bd4a8d4}{\index{osa\-Thread\-Id@{osa\-Thread\-Id}!Equal@{Equal}}
+\index{Equal@{Equal}!osaThreadId@{osa\-Thread\-Id}}
+\subsubsection[{Equal}]{\setlength{\rightskip}{0pt plus 5cm}bool osa\-Thread\-Id\-::\-Equal (
 \begin{DoxyParamCaption}
-\item[{const {\bf osa\+Thread\+Id} \&}]{other}
+\item[{const {\bf osa\-Thread\-Id} \&}]{other}
 \end{DoxyParamCaption}
-) const}\label{classosa_thread_id_a2fec44f6d2c93dd3df13d70a7bd4a8d4}
-Method to compare two thread Ids \hypertarget{classosa_thread_id_a398145889ad5594d5a08a9f74ba1ec2b}{}\index{osa\+Thread\+Id@{osa\+Thread\+Id}!operator"!=@{operator"!=}}
-\index{operator"!=@{operator"!=}!osa\+Thread\+Id@{osa\+Thread\+Id}}
-\subsubsection[{operator"!=}]{\setlength{\rightskip}{0pt plus 5cm}bool osa\+Thread\+Id\+::operator!= (
+) const}}\label{classosa_thread_id_a2fec44f6d2c93dd3df13d70a7bd4a8d4}
+Method to compare two thread Ids \hypertarget{classosa_thread_id_a398145889ad5594d5a08a9f74ba1ec2b}{\index{osa\-Thread\-Id@{osa\-Thread\-Id}!operator!=@{operator!=}}
+\index{operator!=@{operator!=}!osaThreadId@{osa\-Thread\-Id}}
+\subsubsection[{operator!=}]{\setlength{\rightskip}{0pt plus 5cm}bool osa\-Thread\-Id\-::operator!= (
 \begin{DoxyParamCaption}
-\item[{const {\bf osa\+Thread\+Id} \&}]{other}
+\item[{const {\bf osa\-Thread\-Id} \&}]{other}
 \end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classosa_thread_id_a398145889ad5594d5a08a9f74ba1ec2b}
-Operator to compare two thread Ids \hypertarget{classosa_thread_id_a37b34e88b38585f7f34ef043bf39e6dd}{}\index{osa\+Thread\+Id@{osa\+Thread\+Id}!operator()@{operator()}}
-\index{operator()@{operator()}!osa\+Thread\+Id@{osa\+Thread\+Id}}
-\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}bool osa\+Thread\+Id\+::operator() (
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classosa_thread_id_a398145889ad5594d5a08a9f74ba1ec2b}
+Operator to compare two thread Ids \hypertarget{classosa_thread_id_a37b34e88b38585f7f34ef043bf39e6dd}{\index{osa\-Thread\-Id@{osa\-Thread\-Id}!operator()@{operator()}}
+\index{operator()@{operator()}!osaThreadId@{osa\-Thread\-Id}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}bool osa\-Thread\-Id\-::operator() (
 \begin{DoxyParamCaption}
-\item[{const {\bf osa\+Thread\+Id} \&}]{lhs, }
-\item[{const {\bf osa\+Thread\+Id} \&}]{rhs}
+\item[{const {\bf osa\-Thread\-Id} \&}]{lhs, }
+\item[{const {\bf osa\-Thread\-Id} \&}]{rhs}
 \end{DoxyParamCaption}
-) const}\label{classosa_thread_id_a37b34e88b38585f7f34ef043bf39e6dd}
-Method to compare two thread Ids, used to sort in std\+::map. \hypertarget{classosa_thread_id_a93c9520bdd2ce99a76c22fe0e615b6d2}{}\index{osa\+Thread\+Id@{osa\+Thread\+Id}!operator==@{operator==}}
-\index{operator==@{operator==}!osa\+Thread\+Id@{osa\+Thread\+Id}}
-\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}bool osa\+Thread\+Id\+::operator== (
+) const}}\label{classosa_thread_id_a37b34e88b38585f7f34ef043bf39e6dd}
+Method to compare two thread Ids, used to sort in std\-::map. \hypertarget{classosa_thread_id_a93c9520bdd2ce99a76c22fe0e615b6d2}{\index{osa\-Thread\-Id@{osa\-Thread\-Id}!operator==@{operator==}}
+\index{operator==@{operator==}!osaThreadId@{osa\-Thread\-Id}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}bool osa\-Thread\-Id\-::operator== (
 \begin{DoxyParamCaption}
-\item[{const {\bf osa\+Thread\+Id} \&}]{other}
+\item[{const {\bf osa\-Thread\-Id} \&}]{other}
 \end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classosa_thread_id_a93c9520bdd2ce99a76c22fe0e615b6d2}
-Operator to compare two thread Ids \hypertarget{classosa_thread_id_afb21803bee3dbe0d721a4c6b6737e2df}{}\index{osa\+Thread\+Id@{osa\+Thread\+Id}!To\+Stream@{To\+Stream}}
-\index{To\+Stream@{To\+Stream}!osa\+Thread\+Id@{osa\+Thread\+Id}}
-\subsubsection[{To\+Stream}]{\setlength{\rightskip}{0pt plus 5cm}void osa\+Thread\+Id\+::\+To\+Stream (
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classosa_thread_id_a93c9520bdd2ce99a76c22fe0e615b6d2}
+Operator to compare two thread Ids \hypertarget{classosa_thread_id_afb21803bee3dbe0d721a4c6b6737e2df}{\index{osa\-Thread\-Id@{osa\-Thread\-Id}!To\-Stream@{To\-Stream}}
+\index{To\-Stream@{To\-Stream}!osaThreadId@{osa\-Thread\-Id}}
+\subsubsection[{To\-Stream}]{\setlength{\rightskip}{0pt plus 5cm}void osa\-Thread\-Id\-::\-To\-Stream (
 \begin{DoxyParamCaption}
-\item[{std\+::ostream \&}]{output\+Stream}
+\item[{std\-::ostream \&}]{output\-Stream}
 \end{DoxyParamCaption}
-) const}\label{classosa_thread_id_afb21803bee3dbe0d721a4c6b6737e2df}
-Method to compare two thread Ids, used to sort in std\+::map.
+) const}}\label{classosa_thread_id_afb21803bee3dbe0d721a4c6b6737e2df}
+Method to compare two thread Ids, used to sort in std\-::map.
 
-Operator to compare two thread Ids, used to sort in std\+::map.
+Operator to compare two thread Ids, used to sort in std\-::map.
 
 Print to stream 
 
 \subsection{Friends And Related Function Documentation}
-\hypertarget{classosa_thread_id_ab77759b2805dbd140c65481a68760ab5}{}\index{osa\+Thread\+Id@{osa\+Thread\+Id}!osa\+Get\+Current\+Thread\+Id@{osa\+Get\+Current\+Thread\+Id}}
-\index{osa\+Get\+Current\+Thread\+Id@{osa\+Get\+Current\+Thread\+Id}!osa\+Thread\+Id@{osa\+Thread\+Id}}
-\subsubsection[{osa\+Get\+Current\+Thread\+Id}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} {\bf osa\+Thread\+Id} osa\+Get\+Current\+Thread\+Id (
+\hypertarget{classosa_thread_id_ab77759b2805dbd140c65481a68760ab5}{\index{osa\-Thread\-Id@{osa\-Thread\-Id}!osa\-Get\-Current\-Thread\-Id@{osa\-Get\-Current\-Thread\-Id}}
+\index{osa\-Get\-Current\-Thread\-Id@{osa\-Get\-Current\-Thread\-Id}!osaThreadId@{osa\-Thread\-Id}}
+\subsubsection[{osa\-Get\-Current\-Thread\-Id}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-I\-S\-S\-T\-\_\-\-E\-X\-P\-O\-R\-T} {\bf osa\-Thread\-Id} osa\-Get\-Current\-Thread\-Id (
 \begin{DoxyParamCaption}
 \item[{void}]{}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [friend]}}\label{classosa_thread_id_ab77759b2805dbd140c65481a68760ab5}
-Get the I\+D of the currently executing thread.
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{classosa_thread_id_ab77759b2805dbd140c65481a68760ab5}
+Get the I\-D of the currently executing thread.
 
-\begin{DoxySeeAlso}{See also}
-\hyperlink{classosa_thread_id}{osa\+Thread\+Id} 
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classosa_thread_id}{osa\-Thread\-Id} 
 \end{DoxySeeAlso}
-\hypertarget{classosa_thread_id_a35e7a1b0202c45103302d0073f377e57}{}\index{osa\+Thread\+Id@{osa\+Thread\+Id}!osa\+Thread@{osa\+Thread}}
-\index{osa\+Thread@{osa\+Thread}!osa\+Thread\+Id@{osa\+Thread\+Id}}
-\subsubsection[{osa\+Thread}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf osa\+Thread}\hspace{0.3cm}{\ttfamily [friend]}}\label{classosa_thread_id_a35e7a1b0202c45103302d0073f377e57}
-\hypertarget{classosa_thread_id_a542e7acdd9a832dddf65bf204d2df936}{}\index{osa\+Thread\+Id@{osa\+Thread\+Id}!osa\+Thread\+Test@{osa\+Thread\+Test}}
-\index{osa\+Thread\+Test@{osa\+Thread\+Test}!osa\+Thread\+Id@{osa\+Thread\+Id}}
-\subsubsection[{osa\+Thread\+Test}]{\setlength{\rightskip}{0pt plus 5cm}friend class osa\+Thread\+Test\hspace{0.3cm}{\ttfamily [friend]}}\label{classosa_thread_id_a542e7acdd9a832dddf65bf204d2df936}
+\hypertarget{classosa_thread_id_a35e7a1b0202c45103302d0073f377e57}{\index{osa\-Thread\-Id@{osa\-Thread\-Id}!osa\-Thread@{osa\-Thread}}
+\index{osa\-Thread@{osa\-Thread}!osaThreadId@{osa\-Thread\-Id}}
+\subsubsection[{osa\-Thread}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf osa\-Thread}\hspace{0.3cm}{\ttfamily [friend]}}}\label{classosa_thread_id_a35e7a1b0202c45103302d0073f377e57}
+\hypertarget{classosa_thread_id_a542e7acdd9a832dddf65bf204d2df936}{\index{osa\-Thread\-Id@{osa\-Thread\-Id}!osa\-Thread\-Test@{osa\-Thread\-Test}}
+\index{osa\-Thread\-Test@{osa\-Thread\-Test}!osaThreadId@{osa\-Thread\-Id}}
+\subsubsection[{osa\-Thread\-Test}]{\setlength{\rightskip}{0pt plus 5cm}friend class osa\-Thread\-Test\hspace{0.3cm}{\ttfamily [friend]}}}\label{classosa_thread_id_a542e7acdd9a832dddf65bf204d2df936}
 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
 \item 
-/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+O\+S\+Abstraction/\hyperlink{osa_thread_8h}{osa\+Thread.\+h}\end{DoxyCompactItemize}
+/home/adeguet1/catkin\-\_\-ws/src/cisst-\/saw/cisst/cisst\-O\-S\-Abstraction/\hyperlink{osa_thread_8h}{osa\-Thread.\-h}\end{DoxyCompactItemize}

@@ -1,135 +1,136 @@
-\hypertarget{classsvl_c_c_origin_detector}{}\section{svl\+C\+C\+Origin\+Detector Class Reference}
-\label{classsvl_c_c_origin_detector}\index{svl\+C\+C\+Origin\+Detector@{svl\+C\+C\+Origin\+Detector}}
+\hypertarget{classsvl_c_c_origin_detector}{\section{svl\-C\-C\-Origin\-Detector Class Reference}
+\label{classsvl_c_c_origin_detector}\index{svl\-C\-C\-Origin\-Detector@{svl\-C\-C\-Origin\-Detector}}
+}
 
 
-{\ttfamily \#include $<$svl\+C\+C\+Origin\+Detector.\+h$>$}
+{\ttfamily \#include $<$svl\-C\-C\-Origin\-Detector.\-h$>$}
 
 \subsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
-enum \hyperlink{classsvl_c_c_origin_detector_a829919c0137fee858082813a13e4f1c9}{origin\+Detection\+Enum} \{ \hyperlink{classsvl_c_c_origin_detector_a829919c0137fee858082813a13e4f1c9a5220f69dc8766b2177ce9ab496d9de63}{N\+O\+\_\+\+O\+R\+I\+G\+I\+N}, 
-\hyperlink{classsvl_c_c_origin_detector_a829919c0137fee858082813a13e4f1c9a6fde1af1e5eeec03d469cec2b080475e}{C\+O\+L\+O\+R}
+enum \hyperlink{classsvl_c_c_origin_detector_a829919c0137fee858082813a13e4f1c9}{origin\-Detection\-Enum} \{ \hyperlink{classsvl_c_c_origin_detector_a829919c0137fee858082813a13e4f1c9a5220f69dc8766b2177ce9ab496d9de63}{N\-O\-\_\-\-O\-R\-I\-G\-I\-N}, 
+\hyperlink{classsvl_c_c_origin_detector_a829919c0137fee858082813a13e4f1c9a6fde1af1e5eeec03d469cec2b080475e}{C\-O\-L\-O\-R}
  \}
 \item 
-enum \hyperlink{classsvl_c_c_origin_detector_a1e4dabe83f94a0b1b889ecf59b3c86e5}{color\+Index\+Enum} \{ \hyperlink{classsvl_c_c_origin_detector_a1e4dabe83f94a0b1b889ecf59b3c86e5aaed058a0c0019238f8348aa1de10402d}{R\+E\+D\+\_\+\+I\+N\+D\+E\+X}, 
-\hyperlink{classsvl_c_c_origin_detector_a1e4dabe83f94a0b1b889ecf59b3c86e5a3b46564a343cde474a62d50161f7f2ac}{G\+R\+E\+E\+N\+\_\+\+I\+N\+D\+E\+X}, 
-\hyperlink{classsvl_c_c_origin_detector_a1e4dabe83f94a0b1b889ecf59b3c86e5a48b2b34325cf4da5422b6b94c9cf2664}{B\+L\+U\+E\+\_\+\+I\+N\+D\+E\+X}, 
-\hyperlink{classsvl_c_c_origin_detector_a1e4dabe83f94a0b1b889ecf59b3c86e5a53b8ba560b7d7695a23a1e9395fae7fa}{Y\+E\+L\+L\+O\+W\+\_\+\+I\+N\+D\+E\+X}
+enum \hyperlink{classsvl_c_c_origin_detector_a1e4dabe83f94a0b1b889ecf59b3c86e5}{color\-Index\-Enum} \{ \hyperlink{classsvl_c_c_origin_detector_a1e4dabe83f94a0b1b889ecf59b3c86e5aaed058a0c0019238f8348aa1de10402d}{R\-E\-D\-\_\-\-I\-N\-D\-E\-X}, 
+\hyperlink{classsvl_c_c_origin_detector_a1e4dabe83f94a0b1b889ecf59b3c86e5a3b46564a343cde474a62d50161f7f2ac}{G\-R\-E\-E\-N\-\_\-\-I\-N\-D\-E\-X}, 
+\hyperlink{classsvl_c_c_origin_detector_a1e4dabe83f94a0b1b889ecf59b3c86e5a48b2b34325cf4da5422b6b94c9cf2664}{B\-L\-U\-E\-\_\-\-I\-N\-D\-E\-X}, 
+\hyperlink{classsvl_c_c_origin_detector_a1e4dabe83f94a0b1b889ecf59b3c86e5a53b8ba560b7d7695a23a1e9395fae7fa}{Y\-E\-L\-L\-O\-W\-\_\-\-I\-N\-D\-E\-X}
  \}
 \item 
-enum \hyperlink{classsvl_c_c_origin_detector_abc46027473187db71ca84294e3df9554}{color\+Mode\+Enum} \{ \hyperlink{classsvl_c_c_origin_detector_abc46027473187db71ca84294e3df9554a6776e828a188248094522bf3420db2d2}{R\+G\+B}, 
-\hyperlink{classsvl_c_c_origin_detector_abc46027473187db71ca84294e3df9554a9cf1aba344d3244ebdbb4de099f3c181}{R\+G\+Y}
+enum \hyperlink{classsvl_c_c_origin_detector_abc46027473187db71ca84294e3df9554}{color\-Mode\-Enum} \{ \hyperlink{classsvl_c_c_origin_detector_abc46027473187db71ca84294e3df9554a6776e828a188248094522bf3420db2d2}{R\-G\-B}, 
+\hyperlink{classsvl_c_c_origin_detector_abc46027473187db71ca84294e3df9554a9cf1aba344d3244ebdbb4de099f3c181}{R\-G\-Y}
  \}
 \end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classsvl_c_c_origin_detector_adf123af9eee12c51438f516cd884fa34}{svl\+C\+C\+Origin\+Detector} (int color\+Mode\+Flag=\hyperlink{classsvl_c_c_origin_detector_abc46027473187db71ca84294e3df9554a9cf1aba344d3244ebdbb4de099f3c181}{R\+G\+Y})
+\hyperlink{classsvl_c_c_origin_detector_adf123af9eee12c51438f516cd884fa34}{svl\-C\-C\-Origin\-Detector} (int color\-Mode\-Flag=\hyperlink{classsvl_c_c_origin_detector_abc46027473187db71ca84294e3df9554a9cf1aba344d3244ebdbb4de099f3c181}{R\-G\-Y})
 \item 
-void \hyperlink{classsvl_c_c_origin_detector_a2b7715df60215e7dffe1dfafe9c055e5}{detect\+Origin} (\hyperlink{svl_types_8h_aa5a40a13021ba9708bfe921e18fdfa53}{Ipl\+Image} $\ast$ipl\+Image, \hyperlink{classvct_dynamic_vector}{vct\+Dynamic\+Vector}$<$ \hyperlink{vct_fixed_size_vector_types_8h_add8c88eb6a432b15f14b866b9c35325f}{vct\+Int2} $>$ input\+Blobs=\hyperlink{classvct_dynamic_vector}{vct\+Dynamic\+Vector}$<$ \hyperlink{vct_fixed_size_vector_types_8h_add8c88eb6a432b15f14b866b9c35325f}{vct\+Int2} $>$())
+void \hyperlink{classsvl_c_c_origin_detector_a2b7715df60215e7dffe1dfafe9c055e5}{detect\-Origin} (\hyperlink{svl_types_8h_aa5a40a13021ba9708bfe921e18fdfa53}{Ipl\-Image} $\ast$ipl\-Image, \hyperlink{classvct_dynamic_vector}{vct\-Dynamic\-Vector}$<$ \hyperlink{vct_fixed_size_vector_types_8h_add8c88eb6a432b15f14b866b9c35325f}{vct\-Int2} $>$ input\-Blobs=\hyperlink{classvct_dynamic_vector}{vct\-Dynamic\-Vector}$<$ \hyperlink{vct_fixed_size_vector_types_8h_add8c88eb6a432b15f14b866b9c35325f}{vct\-Int2} $>$())
 \item 
-int \hyperlink{classsvl_c_c_origin_detector_a44a4e5f3804483c913f272bdff7e58e5}{get\+Origin\+Detection\+Flag} ()
+int \hyperlink{classsvl_c_c_origin_detector_a44a4e5f3804483c913f272bdff7e58e5}{get\-Origin\-Detection\-Flag} ()
 \item 
-int \hyperlink{classsvl_c_c_origin_detector_ad8df87bea63619953140d015634325b6}{get\+Origin\+Color\+Mode\+Flag} ()
+int \hyperlink{classsvl_c_c_origin_detector_ad8df87bea63619953140d015634325b6}{get\-Origin\-Color\-Mode\-Flag} ()
 \item 
-std\+::vector$<$ cv\+::\+Point2f $>$ \hyperlink{classsvl_c_c_origin_detector_a332da38c8a61afd8a057ce4b0dba246c}{get\+Color\+Blobs} ()
+std\-::vector$<$ cv\-::\-Point2f $>$ \hyperlink{classsvl_c_c_origin_detector_a332da38c8a61afd8a057ce4b0dba246c}{get\-Color\-Blobs} ()
 \item 
-cv\+::\+Point2f \hyperlink{classsvl_c_c_origin_detector_a5c8741c7f39db88ae235766458eb8607}{get\+Origin} ()
+cv\-::\-Point2f \hyperlink{classsvl_c_c_origin_detector_a5c8741c7f39db88ae235766458eb8607}{get\-Origin} ()
 \end{DoxyCompactItemize}
 
 
 \subsection{Member Enumeration Documentation}
-\hypertarget{classsvl_c_c_origin_detector_a1e4dabe83f94a0b1b889ecf59b3c86e5}{}\index{svl\+C\+C\+Origin\+Detector@{svl\+C\+C\+Origin\+Detector}!color\+Index\+Enum@{color\+Index\+Enum}}
-\index{color\+Index\+Enum@{color\+Index\+Enum}!svl\+C\+C\+Origin\+Detector@{svl\+C\+C\+Origin\+Detector}}
-\subsubsection[{color\+Index\+Enum}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf svl\+C\+C\+Origin\+Detector\+::color\+Index\+Enum}}\label{classsvl_c_c_origin_detector_a1e4dabe83f94a0b1b889ecf59b3c86e5}
+\hypertarget{classsvl_c_c_origin_detector_a1e4dabe83f94a0b1b889ecf59b3c86e5}{\index{svl\-C\-C\-Origin\-Detector@{svl\-C\-C\-Origin\-Detector}!color\-Index\-Enum@{color\-Index\-Enum}}
+\index{color\-Index\-Enum@{color\-Index\-Enum}!svlCCOriginDetector@{svl\-C\-C\-Origin\-Detector}}
+\subsubsection[{color\-Index\-Enum}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf svl\-C\-C\-Origin\-Detector\-::color\-Index\-Enum}}}\label{classsvl_c_c_origin_detector_a1e4dabe83f94a0b1b889ecf59b3c86e5}
 \begin{Desc}
 \item[Enumerator]\par
 \begin{description}
-\index{R\+E\+D\+\_\+\+I\+N\+D\+E\+X@{R\+E\+D\+\_\+\+I\+N\+D\+E\+X}!svl\+C\+C\+Origin\+Detector@{svl\+C\+C\+Origin\+Detector}}\index{svl\+C\+C\+Origin\+Detector@{svl\+C\+C\+Origin\+Detector}!R\+E\+D\+\_\+\+I\+N\+D\+E\+X@{R\+E\+D\+\_\+\+I\+N\+D\+E\+X}}\item[{\em 
-\hypertarget{classsvl_c_c_origin_detector_a1e4dabe83f94a0b1b889ecf59b3c86e5aaed058a0c0019238f8348aa1de10402d}{}R\+E\+D\+\_\+\+I\+N\+D\+E\+X\label{classsvl_c_c_origin_detector_a1e4dabe83f94a0b1b889ecf59b3c86e5aaed058a0c0019238f8348aa1de10402d}
-}]\index{G\+R\+E\+E\+N\+\_\+\+I\+N\+D\+E\+X@{G\+R\+E\+E\+N\+\_\+\+I\+N\+D\+E\+X}!svl\+C\+C\+Origin\+Detector@{svl\+C\+C\+Origin\+Detector}}\index{svl\+C\+C\+Origin\+Detector@{svl\+C\+C\+Origin\+Detector}!G\+R\+E\+E\+N\+\_\+\+I\+N\+D\+E\+X@{G\+R\+E\+E\+N\+\_\+\+I\+N\+D\+E\+X}}\item[{\em 
-\hypertarget{classsvl_c_c_origin_detector_a1e4dabe83f94a0b1b889ecf59b3c86e5a3b46564a343cde474a62d50161f7f2ac}{}G\+R\+E\+E\+N\+\_\+\+I\+N\+D\+E\+X\label{classsvl_c_c_origin_detector_a1e4dabe83f94a0b1b889ecf59b3c86e5a3b46564a343cde474a62d50161f7f2ac}
-}]\index{B\+L\+U\+E\+\_\+\+I\+N\+D\+E\+X@{B\+L\+U\+E\+\_\+\+I\+N\+D\+E\+X}!svl\+C\+C\+Origin\+Detector@{svl\+C\+C\+Origin\+Detector}}\index{svl\+C\+C\+Origin\+Detector@{svl\+C\+C\+Origin\+Detector}!B\+L\+U\+E\+\_\+\+I\+N\+D\+E\+X@{B\+L\+U\+E\+\_\+\+I\+N\+D\+E\+X}}\item[{\em 
-\hypertarget{classsvl_c_c_origin_detector_a1e4dabe83f94a0b1b889ecf59b3c86e5a48b2b34325cf4da5422b6b94c9cf2664}{}B\+L\+U\+E\+\_\+\+I\+N\+D\+E\+X\label{classsvl_c_c_origin_detector_a1e4dabe83f94a0b1b889ecf59b3c86e5a48b2b34325cf4da5422b6b94c9cf2664}
-}]\index{Y\+E\+L\+L\+O\+W\+\_\+\+I\+N\+D\+E\+X@{Y\+E\+L\+L\+O\+W\+\_\+\+I\+N\+D\+E\+X}!svl\+C\+C\+Origin\+Detector@{svl\+C\+C\+Origin\+Detector}}\index{svl\+C\+C\+Origin\+Detector@{svl\+C\+C\+Origin\+Detector}!Y\+E\+L\+L\+O\+W\+\_\+\+I\+N\+D\+E\+X@{Y\+E\+L\+L\+O\+W\+\_\+\+I\+N\+D\+E\+X}}\item[{\em 
-\hypertarget{classsvl_c_c_origin_detector_a1e4dabe83f94a0b1b889ecf59b3c86e5a53b8ba560b7d7695a23a1e9395fae7fa}{}Y\+E\+L\+L\+O\+W\+\_\+\+I\+N\+D\+E\+X\label{classsvl_c_c_origin_detector_a1e4dabe83f94a0b1b889ecf59b3c86e5a53b8ba560b7d7695a23a1e9395fae7fa}
+\index{R\-E\-D\-\_\-\-I\-N\-D\-E\-X@{R\-E\-D\-\_\-\-I\-N\-D\-E\-X}!svl\-C\-C\-Origin\-Detector@{svl\-C\-C\-Origin\-Detector}}\index{svl\-C\-C\-Origin\-Detector@{svl\-C\-C\-Origin\-Detector}!R\-E\-D\-\_\-\-I\-N\-D\-E\-X@{R\-E\-D\-\_\-\-I\-N\-D\-E\-X}}\item[{\em 
+\hypertarget{classsvl_c_c_origin_detector_a1e4dabe83f94a0b1b889ecf59b3c86e5aaed058a0c0019238f8348aa1de10402d}{R\-E\-D\-\_\-\-I\-N\-D\-E\-X}\label{classsvl_c_c_origin_detector_a1e4dabe83f94a0b1b889ecf59b3c86e5aaed058a0c0019238f8348aa1de10402d}
+}]\index{G\-R\-E\-E\-N\-\_\-\-I\-N\-D\-E\-X@{G\-R\-E\-E\-N\-\_\-\-I\-N\-D\-E\-X}!svl\-C\-C\-Origin\-Detector@{svl\-C\-C\-Origin\-Detector}}\index{svl\-C\-C\-Origin\-Detector@{svl\-C\-C\-Origin\-Detector}!G\-R\-E\-E\-N\-\_\-\-I\-N\-D\-E\-X@{G\-R\-E\-E\-N\-\_\-\-I\-N\-D\-E\-X}}\item[{\em 
+\hypertarget{classsvl_c_c_origin_detector_a1e4dabe83f94a0b1b889ecf59b3c86e5a3b46564a343cde474a62d50161f7f2ac}{G\-R\-E\-E\-N\-\_\-\-I\-N\-D\-E\-X}\label{classsvl_c_c_origin_detector_a1e4dabe83f94a0b1b889ecf59b3c86e5a3b46564a343cde474a62d50161f7f2ac}
+}]\index{B\-L\-U\-E\-\_\-\-I\-N\-D\-E\-X@{B\-L\-U\-E\-\_\-\-I\-N\-D\-E\-X}!svl\-C\-C\-Origin\-Detector@{svl\-C\-C\-Origin\-Detector}}\index{svl\-C\-C\-Origin\-Detector@{svl\-C\-C\-Origin\-Detector}!B\-L\-U\-E\-\_\-\-I\-N\-D\-E\-X@{B\-L\-U\-E\-\_\-\-I\-N\-D\-E\-X}}\item[{\em 
+\hypertarget{classsvl_c_c_origin_detector_a1e4dabe83f94a0b1b889ecf59b3c86e5a48b2b34325cf4da5422b6b94c9cf2664}{B\-L\-U\-E\-\_\-\-I\-N\-D\-E\-X}\label{classsvl_c_c_origin_detector_a1e4dabe83f94a0b1b889ecf59b3c86e5a48b2b34325cf4da5422b6b94c9cf2664}
+}]\index{Y\-E\-L\-L\-O\-W\-\_\-\-I\-N\-D\-E\-X@{Y\-E\-L\-L\-O\-W\-\_\-\-I\-N\-D\-E\-X}!svl\-C\-C\-Origin\-Detector@{svl\-C\-C\-Origin\-Detector}}\index{svl\-C\-C\-Origin\-Detector@{svl\-C\-C\-Origin\-Detector}!Y\-E\-L\-L\-O\-W\-\_\-\-I\-N\-D\-E\-X@{Y\-E\-L\-L\-O\-W\-\_\-\-I\-N\-D\-E\-X}}\item[{\em 
+\hypertarget{classsvl_c_c_origin_detector_a1e4dabe83f94a0b1b889ecf59b3c86e5a53b8ba560b7d7695a23a1e9395fae7fa}{Y\-E\-L\-L\-O\-W\-\_\-\-I\-N\-D\-E\-X}\label{classsvl_c_c_origin_detector_a1e4dabe83f94a0b1b889ecf59b3c86e5a53b8ba560b7d7695a23a1e9395fae7fa}
 }]\end{description}
 \end{Desc}
-\hypertarget{classsvl_c_c_origin_detector_abc46027473187db71ca84294e3df9554}{}\index{svl\+C\+C\+Origin\+Detector@{svl\+C\+C\+Origin\+Detector}!color\+Mode\+Enum@{color\+Mode\+Enum}}
-\index{color\+Mode\+Enum@{color\+Mode\+Enum}!svl\+C\+C\+Origin\+Detector@{svl\+C\+C\+Origin\+Detector}}
-\subsubsection[{color\+Mode\+Enum}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf svl\+C\+C\+Origin\+Detector\+::color\+Mode\+Enum}}\label{classsvl_c_c_origin_detector_abc46027473187db71ca84294e3df9554}
+\hypertarget{classsvl_c_c_origin_detector_abc46027473187db71ca84294e3df9554}{\index{svl\-C\-C\-Origin\-Detector@{svl\-C\-C\-Origin\-Detector}!color\-Mode\-Enum@{color\-Mode\-Enum}}
+\index{color\-Mode\-Enum@{color\-Mode\-Enum}!svlCCOriginDetector@{svl\-C\-C\-Origin\-Detector}}
+\subsubsection[{color\-Mode\-Enum}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf svl\-C\-C\-Origin\-Detector\-::color\-Mode\-Enum}}}\label{classsvl_c_c_origin_detector_abc46027473187db71ca84294e3df9554}
 \begin{Desc}
 \item[Enumerator]\par
 \begin{description}
-\index{R\+G\+B@{R\+G\+B}!svl\+C\+C\+Origin\+Detector@{svl\+C\+C\+Origin\+Detector}}\index{svl\+C\+C\+Origin\+Detector@{svl\+C\+C\+Origin\+Detector}!R\+G\+B@{R\+G\+B}}\item[{\em 
-\hypertarget{classsvl_c_c_origin_detector_abc46027473187db71ca84294e3df9554a6776e828a188248094522bf3420db2d2}{}R\+G\+B\label{classsvl_c_c_origin_detector_abc46027473187db71ca84294e3df9554a6776e828a188248094522bf3420db2d2}
-}]\index{R\+G\+Y@{R\+G\+Y}!svl\+C\+C\+Origin\+Detector@{svl\+C\+C\+Origin\+Detector}}\index{svl\+C\+C\+Origin\+Detector@{svl\+C\+C\+Origin\+Detector}!R\+G\+Y@{R\+G\+Y}}\item[{\em 
-\hypertarget{classsvl_c_c_origin_detector_abc46027473187db71ca84294e3df9554a9cf1aba344d3244ebdbb4de099f3c181}{}R\+G\+Y\label{classsvl_c_c_origin_detector_abc46027473187db71ca84294e3df9554a9cf1aba344d3244ebdbb4de099f3c181}
+\index{R\-G\-B@{R\-G\-B}!svl\-C\-C\-Origin\-Detector@{svl\-C\-C\-Origin\-Detector}}\index{svl\-C\-C\-Origin\-Detector@{svl\-C\-C\-Origin\-Detector}!R\-G\-B@{R\-G\-B}}\item[{\em 
+\hypertarget{classsvl_c_c_origin_detector_abc46027473187db71ca84294e3df9554a6776e828a188248094522bf3420db2d2}{R\-G\-B}\label{classsvl_c_c_origin_detector_abc46027473187db71ca84294e3df9554a6776e828a188248094522bf3420db2d2}
+}]\index{R\-G\-Y@{R\-G\-Y}!svl\-C\-C\-Origin\-Detector@{svl\-C\-C\-Origin\-Detector}}\index{svl\-C\-C\-Origin\-Detector@{svl\-C\-C\-Origin\-Detector}!R\-G\-Y@{R\-G\-Y}}\item[{\em 
+\hypertarget{classsvl_c_c_origin_detector_abc46027473187db71ca84294e3df9554a9cf1aba344d3244ebdbb4de099f3c181}{R\-G\-Y}\label{classsvl_c_c_origin_detector_abc46027473187db71ca84294e3df9554a9cf1aba344d3244ebdbb4de099f3c181}
 }]\end{description}
 \end{Desc}
-\hypertarget{classsvl_c_c_origin_detector_a829919c0137fee858082813a13e4f1c9}{}\index{svl\+C\+C\+Origin\+Detector@{svl\+C\+C\+Origin\+Detector}!origin\+Detection\+Enum@{origin\+Detection\+Enum}}
-\index{origin\+Detection\+Enum@{origin\+Detection\+Enum}!svl\+C\+C\+Origin\+Detector@{svl\+C\+C\+Origin\+Detector}}
-\subsubsection[{origin\+Detection\+Enum}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf svl\+C\+C\+Origin\+Detector\+::origin\+Detection\+Enum}}\label{classsvl_c_c_origin_detector_a829919c0137fee858082813a13e4f1c9}
+\hypertarget{classsvl_c_c_origin_detector_a829919c0137fee858082813a13e4f1c9}{\index{svl\-C\-C\-Origin\-Detector@{svl\-C\-C\-Origin\-Detector}!origin\-Detection\-Enum@{origin\-Detection\-Enum}}
+\index{origin\-Detection\-Enum@{origin\-Detection\-Enum}!svlCCOriginDetector@{svl\-C\-C\-Origin\-Detector}}
+\subsubsection[{origin\-Detection\-Enum}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf svl\-C\-C\-Origin\-Detector\-::origin\-Detection\-Enum}}}\label{classsvl_c_c_origin_detector_a829919c0137fee858082813a13e4f1c9}
 \begin{Desc}
 \item[Enumerator]\par
 \begin{description}
-\index{N\+O\+\_\+\+O\+R\+I\+G\+I\+N@{N\+O\+\_\+\+O\+R\+I\+G\+I\+N}!svl\+C\+C\+Origin\+Detector@{svl\+C\+C\+Origin\+Detector}}\index{svl\+C\+C\+Origin\+Detector@{svl\+C\+C\+Origin\+Detector}!N\+O\+\_\+\+O\+R\+I\+G\+I\+N@{N\+O\+\_\+\+O\+R\+I\+G\+I\+N}}\item[{\em 
-\hypertarget{classsvl_c_c_origin_detector_a829919c0137fee858082813a13e4f1c9a5220f69dc8766b2177ce9ab496d9de63}{}N\+O\+\_\+\+O\+R\+I\+G\+I\+N\label{classsvl_c_c_origin_detector_a829919c0137fee858082813a13e4f1c9a5220f69dc8766b2177ce9ab496d9de63}
-}]\index{C\+O\+L\+O\+R@{C\+O\+L\+O\+R}!svl\+C\+C\+Origin\+Detector@{svl\+C\+C\+Origin\+Detector}}\index{svl\+C\+C\+Origin\+Detector@{svl\+C\+C\+Origin\+Detector}!C\+O\+L\+O\+R@{C\+O\+L\+O\+R}}\item[{\em 
-\hypertarget{classsvl_c_c_origin_detector_a829919c0137fee858082813a13e4f1c9a6fde1af1e5eeec03d469cec2b080475e}{}C\+O\+L\+O\+R\label{classsvl_c_c_origin_detector_a829919c0137fee858082813a13e4f1c9a6fde1af1e5eeec03d469cec2b080475e}
+\index{N\-O\-\_\-\-O\-R\-I\-G\-I\-N@{N\-O\-\_\-\-O\-R\-I\-G\-I\-N}!svl\-C\-C\-Origin\-Detector@{svl\-C\-C\-Origin\-Detector}}\index{svl\-C\-C\-Origin\-Detector@{svl\-C\-C\-Origin\-Detector}!N\-O\-\_\-\-O\-R\-I\-G\-I\-N@{N\-O\-\_\-\-O\-R\-I\-G\-I\-N}}\item[{\em 
+\hypertarget{classsvl_c_c_origin_detector_a829919c0137fee858082813a13e4f1c9a5220f69dc8766b2177ce9ab496d9de63}{N\-O\-\_\-\-O\-R\-I\-G\-I\-N}\label{classsvl_c_c_origin_detector_a829919c0137fee858082813a13e4f1c9a5220f69dc8766b2177ce9ab496d9de63}
+}]\index{C\-O\-L\-O\-R@{C\-O\-L\-O\-R}!svl\-C\-C\-Origin\-Detector@{svl\-C\-C\-Origin\-Detector}}\index{svl\-C\-C\-Origin\-Detector@{svl\-C\-C\-Origin\-Detector}!C\-O\-L\-O\-R@{C\-O\-L\-O\-R}}\item[{\em 
+\hypertarget{classsvl_c_c_origin_detector_a829919c0137fee858082813a13e4f1c9a6fde1af1e5eeec03d469cec2b080475e}{C\-O\-L\-O\-R}\label{classsvl_c_c_origin_detector_a829919c0137fee858082813a13e4f1c9a6fde1af1e5eeec03d469cec2b080475e}
 }]\end{description}
 \end{Desc}
 
 
 \subsection{Constructor \& Destructor Documentation}
-\hypertarget{classsvl_c_c_origin_detector_adf123af9eee12c51438f516cd884fa34}{}\index{svl\+C\+C\+Origin\+Detector@{svl\+C\+C\+Origin\+Detector}!svl\+C\+C\+Origin\+Detector@{svl\+C\+C\+Origin\+Detector}}
-\index{svl\+C\+C\+Origin\+Detector@{svl\+C\+C\+Origin\+Detector}!svl\+C\+C\+Origin\+Detector@{svl\+C\+C\+Origin\+Detector}}
-\subsubsection[{svl\+C\+C\+Origin\+Detector}]{\setlength{\rightskip}{0pt plus 5cm}svl\+C\+C\+Origin\+Detector\+::svl\+C\+C\+Origin\+Detector (
+\hypertarget{classsvl_c_c_origin_detector_adf123af9eee12c51438f516cd884fa34}{\index{svl\-C\-C\-Origin\-Detector@{svl\-C\-C\-Origin\-Detector}!svl\-C\-C\-Origin\-Detector@{svl\-C\-C\-Origin\-Detector}}
+\index{svl\-C\-C\-Origin\-Detector@{svl\-C\-C\-Origin\-Detector}!svlCCOriginDetector@{svl\-C\-C\-Origin\-Detector}}
+\subsubsection[{svl\-C\-C\-Origin\-Detector}]{\setlength{\rightskip}{0pt plus 5cm}svl\-C\-C\-Origin\-Detector\-::svl\-C\-C\-Origin\-Detector (
 \begin{DoxyParamCaption}
-\item[{int}]{color\+Mode\+Flag = {\ttfamily {\bf R\+G\+Y}}}
+\item[{int}]{color\-Mode\-Flag = {\ttfamily {\bf R\-G\-Y}}}
 \end{DoxyParamCaption}
-)}\label{classsvl_c_c_origin_detector_adf123af9eee12c51438f516cd884fa34}
+)}}\label{classsvl_c_c_origin_detector_adf123af9eee12c51438f516cd884fa34}
 
 
 \subsection{Member Function Documentation}
-\hypertarget{classsvl_c_c_origin_detector_a2b7715df60215e7dffe1dfafe9c055e5}{}\index{svl\+C\+C\+Origin\+Detector@{svl\+C\+C\+Origin\+Detector}!detect\+Origin@{detect\+Origin}}
-\index{detect\+Origin@{detect\+Origin}!svl\+C\+C\+Origin\+Detector@{svl\+C\+C\+Origin\+Detector}}
-\subsubsection[{detect\+Origin}]{\setlength{\rightskip}{0pt plus 5cm}void svl\+C\+C\+Origin\+Detector\+::detect\+Origin (
+\hypertarget{classsvl_c_c_origin_detector_a2b7715df60215e7dffe1dfafe9c055e5}{\index{svl\-C\-C\-Origin\-Detector@{svl\-C\-C\-Origin\-Detector}!detect\-Origin@{detect\-Origin}}
+\index{detect\-Origin@{detect\-Origin}!svlCCOriginDetector@{svl\-C\-C\-Origin\-Detector}}
+\subsubsection[{detect\-Origin}]{\setlength{\rightskip}{0pt plus 5cm}void svl\-C\-C\-Origin\-Detector\-::detect\-Origin (
 \begin{DoxyParamCaption}
-\item[{{\bf Ipl\+Image} $\ast$}]{ipl\+Image, }
-\item[{{\bf vct\+Dynamic\+Vector}$<$ {\bf vct\+Int2} $>$}]{input\+Blobs = {\ttfamily {\bf vct\+Dynamic\+Vector}$<$~{\bf vct\+Int2}~$>$()}}
+\item[{{\bf Ipl\-Image} $\ast$}]{ipl\-Image, }
+\item[{{\bf vct\-Dynamic\-Vector}$<$ {\bf vct\-Int2} $>$}]{input\-Blobs = {\ttfamily {\bf vct\-Dynamic\-Vector}$<$~{\bf vct\-Int2}~$>$()}}
 \end{DoxyParamCaption}
-)}\label{classsvl_c_c_origin_detector_a2b7715df60215e7dffe1dfafe9c055e5}
-\hypertarget{classsvl_c_c_origin_detector_a332da38c8a61afd8a057ce4b0dba246c}{}\index{svl\+C\+C\+Origin\+Detector@{svl\+C\+C\+Origin\+Detector}!get\+Color\+Blobs@{get\+Color\+Blobs}}
-\index{get\+Color\+Blobs@{get\+Color\+Blobs}!svl\+C\+C\+Origin\+Detector@{svl\+C\+C\+Origin\+Detector}}
-\subsubsection[{get\+Color\+Blobs}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$cv\+::\+Point2f$>$ svl\+C\+C\+Origin\+Detector\+::get\+Color\+Blobs (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\label{classsvl_c_c_origin_detector_a332da38c8a61afd8a057ce4b0dba246c}
-\hypertarget{classsvl_c_c_origin_detector_a5c8741c7f39db88ae235766458eb8607}{}\index{svl\+C\+C\+Origin\+Detector@{svl\+C\+C\+Origin\+Detector}!get\+Origin@{get\+Origin}}
-\index{get\+Origin@{get\+Origin}!svl\+C\+C\+Origin\+Detector@{svl\+C\+C\+Origin\+Detector}}
-\subsubsection[{get\+Origin}]{\setlength{\rightskip}{0pt plus 5cm}cv\+::\+Point2f svl\+C\+C\+Origin\+Detector\+::get\+Origin (
+)}}\label{classsvl_c_c_origin_detector_a2b7715df60215e7dffe1dfafe9c055e5}
+\hypertarget{classsvl_c_c_origin_detector_a332da38c8a61afd8a057ce4b0dba246c}{\index{svl\-C\-C\-Origin\-Detector@{svl\-C\-C\-Origin\-Detector}!get\-Color\-Blobs@{get\-Color\-Blobs}}
+\index{get\-Color\-Blobs@{get\-Color\-Blobs}!svlCCOriginDetector@{svl\-C\-C\-Origin\-Detector}}
+\subsubsection[{get\-Color\-Blobs}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$cv\-::\-Point2f$>$ svl\-C\-C\-Origin\-Detector\-::get\-Color\-Blobs (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\label{classsvl_c_c_origin_detector_a5c8741c7f39db88ae235766458eb8607}
-\hypertarget{classsvl_c_c_origin_detector_ad8df87bea63619953140d015634325b6}{}\index{svl\+C\+C\+Origin\+Detector@{svl\+C\+C\+Origin\+Detector}!get\+Origin\+Color\+Mode\+Flag@{get\+Origin\+Color\+Mode\+Flag}}
-\index{get\+Origin\+Color\+Mode\+Flag@{get\+Origin\+Color\+Mode\+Flag}!svl\+C\+C\+Origin\+Detector@{svl\+C\+C\+Origin\+Detector}}
-\subsubsection[{get\+Origin\+Color\+Mode\+Flag}]{\setlength{\rightskip}{0pt plus 5cm}int svl\+C\+C\+Origin\+Detector\+::get\+Origin\+Color\+Mode\+Flag (
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classsvl_c_c_origin_detector_a332da38c8a61afd8a057ce4b0dba246c}
+\hypertarget{classsvl_c_c_origin_detector_a5c8741c7f39db88ae235766458eb8607}{\index{svl\-C\-C\-Origin\-Detector@{svl\-C\-C\-Origin\-Detector}!get\-Origin@{get\-Origin}}
+\index{get\-Origin@{get\-Origin}!svlCCOriginDetector@{svl\-C\-C\-Origin\-Detector}}
+\subsubsection[{get\-Origin}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::\-Point2f svl\-C\-C\-Origin\-Detector\-::get\-Origin (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\label{classsvl_c_c_origin_detector_ad8df87bea63619953140d015634325b6}
-\hypertarget{classsvl_c_c_origin_detector_a44a4e5f3804483c913f272bdff7e58e5}{}\index{svl\+C\+C\+Origin\+Detector@{svl\+C\+C\+Origin\+Detector}!get\+Origin\+Detection\+Flag@{get\+Origin\+Detection\+Flag}}
-\index{get\+Origin\+Detection\+Flag@{get\+Origin\+Detection\+Flag}!svl\+C\+C\+Origin\+Detector@{svl\+C\+C\+Origin\+Detector}}
-\subsubsection[{get\+Origin\+Detection\+Flag}]{\setlength{\rightskip}{0pt plus 5cm}int svl\+C\+C\+Origin\+Detector\+::get\+Origin\+Detection\+Flag (
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classsvl_c_c_origin_detector_a5c8741c7f39db88ae235766458eb8607}
+\hypertarget{classsvl_c_c_origin_detector_ad8df87bea63619953140d015634325b6}{\index{svl\-C\-C\-Origin\-Detector@{svl\-C\-C\-Origin\-Detector}!get\-Origin\-Color\-Mode\-Flag@{get\-Origin\-Color\-Mode\-Flag}}
+\index{get\-Origin\-Color\-Mode\-Flag@{get\-Origin\-Color\-Mode\-Flag}!svlCCOriginDetector@{svl\-C\-C\-Origin\-Detector}}
+\subsubsection[{get\-Origin\-Color\-Mode\-Flag}]{\setlength{\rightskip}{0pt plus 5cm}int svl\-C\-C\-Origin\-Detector\-::get\-Origin\-Color\-Mode\-Flag (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\label{classsvl_c_c_origin_detector_a44a4e5f3804483c913f272bdff7e58e5}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classsvl_c_c_origin_detector_ad8df87bea63619953140d015634325b6}
+\hypertarget{classsvl_c_c_origin_detector_a44a4e5f3804483c913f272bdff7e58e5}{\index{svl\-C\-C\-Origin\-Detector@{svl\-C\-C\-Origin\-Detector}!get\-Origin\-Detection\-Flag@{get\-Origin\-Detection\-Flag}}
+\index{get\-Origin\-Detection\-Flag@{get\-Origin\-Detection\-Flag}!svlCCOriginDetector@{svl\-C\-C\-Origin\-Detector}}
+\subsubsection[{get\-Origin\-Detection\-Flag}]{\setlength{\rightskip}{0pt plus 5cm}int svl\-C\-C\-Origin\-Detector\-::get\-Origin\-Detection\-Flag (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classsvl_c_c_origin_detector_a44a4e5f3804483c913f272bdff7e58e5}
 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
 \item 
-/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Stereo\+Vision/\hyperlink{svl_c_c_origin_detector_8h}{svl\+C\+C\+Origin\+Detector.\+h}\end{DoxyCompactItemize}
+/home/adeguet1/catkin\-\_\-ws/src/cisst-\/saw/cisst/cisst\-Stereo\-Vision/\hyperlink{svl_c_c_origin_detector_8h}{svl\-C\-C\-Origin\-Detector.\-h}\end{DoxyCompactItemize}

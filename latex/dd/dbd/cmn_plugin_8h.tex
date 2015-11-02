@@ -1,46 +1,45 @@
-\hypertarget{cmn_plugin_8h}{}\section{/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Common/cmn\+Plugin.h File Reference}
-\label{cmn_plugin_8h}\index{/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Common/cmn\+Plugin.\+h@{/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Common/cmn\+Plugin.\+h}}
+\hypertarget{cmn_plugin_8h}{\section{/home/adeguet1/catkin\-\_\-ws/src/cisst-\/saw/cisst/cisst\-Common/cmn\-Plugin.h File Reference}
+\label{cmn_plugin_8h}\index{/home/adeguet1/catkin\-\_\-ws/src/cisst-\/saw/cisst/cisst\-Common/cmn\-Plugin.\-h@{/home/adeguet1/catkin\-\_\-ws/src/cisst-\/saw/cisst/cisst\-Common/cmn\-Plugin.\-h}}
+}
 
 
 Macro for generating plugin wrappers (factory methods).  
 
 
 {\ttfamily \#include $<$typeinfo$>$}\\*
-{\ttfamily \#include $<$cisst\+Common/cmn\+Export.\+h$>$}\\*
+{\ttfamily \#include $<$cisst\-Common/cmn\-Export.\-h$>$}\\*
 \subsection*{Macros}
 \begin{DoxyCompactItemize}
 \item 
-\#define \hyperlink{cmn_plugin_8h_a9ea1b269afd2ed3f3cc52be0c0ab27e4}{\+\_\+cmn\+Plugin\+\_\+h}
+\#define \hyperlink{cmn_plugin_8h_a9ea1b269afd2ed3f3cc52be0c0ab27e4}{\-\_\-cmn\-Plugin\-\_\-h}
 \item 
-\#define \hyperlink{cmn_plugin_8h_a2ed50110ed0bae89a84c8d50abc6f328}{C\+M\+N\+\_\+\+P\+L\+U\+G\+I\+N\+\_\+\+W\+R\+A\+P\+P\+E\+R\+S}(base,  derived)
+\#define \hyperlink{cmn_plugin_8h_a2ed50110ed0bae89a84c8d50abc6f328}{C\-M\-N\-\_\-\-P\-L\-U\-G\-I\-N\-\_\-\-W\-R\-A\-P\-P\-E\-R\-S}(base, derived)
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-Macro for generating plugin wrappers (factory methods). 
+Macro for generating plugin wrappers (factory methods). This macro should be used if the base class is N\-O\-T derived from {\itshape \hyperlink{classcmn_generic_object}{cmn\-Generic\-Object}}. In this case, the macro creates the factory methods and associated data to ensure safe creation of instances of the derived class. If this macro is used, the shared library should be loaded using the {\itshape \hyperlink{classosa_dynamic_loader_and_factory}{osa\-Dynamic\-Loader\-And\-Factory}} class. Note that this factory verifies the base class type and its version (to ensure that the shared library was compiled with the same version of the base class as the executable).
 
-This macro should be used if the base class is N\+O\+T derived from {\itshape \hyperlink{classcmn_generic_object}{cmn\+Generic\+Object}}. In this case, the macro creates the factory methods and associated data to ensure safe creation of instances of the derived class. If this macro is used, the shared library should be loaded using the {\itshape \hyperlink{classosa_dynamic_loader_and_factory}{osa\+Dynamic\+Loader\+And\+Factory}} class. Note that this factory verifies the base class type and its version (to ensure that the shared library was compiled with the same version of the base class as the executable).
+If the base class is (or is derived from) {\itshape \hyperlink{classcmn_generic_object}{cmn\-Generic\-Object}}, then this macro should not be used. Instead, it is better to use {\itshape \hyperlink{classosa_dynamic_loader}{osa\-Dynamic\-Loader}} to load the shared library and to use the class services ({\itshape \hyperlink{classcmn_class_register}{cmn\-Class\-Register}}) to create instances of the derived class.
 
-If the base class is (or is derived from) {\itshape \hyperlink{classcmn_generic_object}{cmn\+Generic\+Object}}, then this macro should not be used. Instead, it is better to use {\itshape \hyperlink{classosa_dynamic_loader}{osa\+Dynamic\+Loader}} to load the shared library and to use the class services ({\itshape \hyperlink{classcmn_class_register}{cmn\+Class\+Register}}) to create instances of the derived class.
-
-\begin{DoxySeeAlso}{See also}
-\hyperlink{classosa_dynamic_loader}{osa\+Dynamic\+Loader}, \hyperlink{classosa_dynamic_loader_and_factory}{osa\+Dynamic\+Loader\+And\+Factory} 
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classosa_dynamic_loader}{osa\-Dynamic\-Loader}, \hyperlink{classosa_dynamic_loader_and_factory}{osa\-Dynamic\-Loader\-And\-Factory} 
 \end{DoxySeeAlso}
 
 
 \subsection{Macro Definition Documentation}
-\hypertarget{cmn_plugin_8h_a9ea1b269afd2ed3f3cc52be0c0ab27e4}{}\index{cmn\+Plugin.\+h@{cmn\+Plugin.\+h}!\+\_\+cmn\+Plugin\+\_\+h@{\+\_\+cmn\+Plugin\+\_\+h}}
-\index{\+\_\+cmn\+Plugin\+\_\+h@{\+\_\+cmn\+Plugin\+\_\+h}!cmn\+Plugin.\+h@{cmn\+Plugin.\+h}}
-\subsubsection[{\+\_\+cmn\+Plugin\+\_\+h}]{\setlength{\rightskip}{0pt plus 5cm}\#define \+\_\+cmn\+Plugin\+\_\+h}\label{cmn_plugin_8h_a9ea1b269afd2ed3f3cc52be0c0ab27e4}
-\hypertarget{cmn_plugin_8h_a2ed50110ed0bae89a84c8d50abc6f328}{}\index{cmn\+Plugin.\+h@{cmn\+Plugin.\+h}!C\+M\+N\+\_\+\+P\+L\+U\+G\+I\+N\+\_\+\+W\+R\+A\+P\+P\+E\+R\+S@{C\+M\+N\+\_\+\+P\+L\+U\+G\+I\+N\+\_\+\+W\+R\+A\+P\+P\+E\+R\+S}}
-\index{C\+M\+N\+\_\+\+P\+L\+U\+G\+I\+N\+\_\+\+W\+R\+A\+P\+P\+E\+R\+S@{C\+M\+N\+\_\+\+P\+L\+U\+G\+I\+N\+\_\+\+W\+R\+A\+P\+P\+E\+R\+S}!cmn\+Plugin.\+h@{cmn\+Plugin.\+h}}
-\subsubsection[{C\+M\+N\+\_\+\+P\+L\+U\+G\+I\+N\+\_\+\+W\+R\+A\+P\+P\+E\+R\+S}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+M\+N\+\_\+\+P\+L\+U\+G\+I\+N\+\_\+\+W\+R\+A\+P\+P\+E\+R\+S(
+\hypertarget{cmn_plugin_8h_a9ea1b269afd2ed3f3cc52be0c0ab27e4}{\index{cmn\-Plugin.\-h@{cmn\-Plugin.\-h}!\-\_\-cmn\-Plugin\-\_\-h@{\-\_\-cmn\-Plugin\-\_\-h}}
+\index{\-\_\-cmn\-Plugin\-\_\-h@{\-\_\-cmn\-Plugin\-\_\-h}!cmnPlugin.h@{cmn\-Plugin.\-h}}
+\subsubsection[{\-\_\-cmn\-Plugin\-\_\-h}]{\setlength{\rightskip}{0pt plus 5cm}\#define \-\_\-cmn\-Plugin\-\_\-h}}\label{cmn_plugin_8h_a9ea1b269afd2ed3f3cc52be0c0ab27e4}
+\hypertarget{cmn_plugin_8h_a2ed50110ed0bae89a84c8d50abc6f328}{\index{cmn\-Plugin.\-h@{cmn\-Plugin.\-h}!C\-M\-N\-\_\-\-P\-L\-U\-G\-I\-N\-\_\-\-W\-R\-A\-P\-P\-E\-R\-S@{C\-M\-N\-\_\-\-P\-L\-U\-G\-I\-N\-\_\-\-W\-R\-A\-P\-P\-E\-R\-S}}
+\index{C\-M\-N\-\_\-\-P\-L\-U\-G\-I\-N\-\_\-\-W\-R\-A\-P\-P\-E\-R\-S@{C\-M\-N\-\_\-\-P\-L\-U\-G\-I\-N\-\_\-\-W\-R\-A\-P\-P\-E\-R\-S}!cmnPlugin.h@{cmn\-Plugin.\-h}}
+\subsubsection[{C\-M\-N\-\_\-\-P\-L\-U\-G\-I\-N\-\_\-\-W\-R\-A\-P\-P\-E\-R\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-M\-N\-\_\-\-P\-L\-U\-G\-I\-N\-\_\-\-W\-R\-A\-P\-P\-E\-R\-S(
 \begin{DoxyParamCaption}
 \item[{}]{base, }
 \item[{}]{derived}
 \end{DoxyParamCaption}
-)}\label{cmn_plugin_8h_a2ed50110ed0bae89a84c8d50abc6f328}
-{\bfseries Value\+:}
+)}}\label{cmn_plugin_8h_a2ed50110ed0bae89a84c8d50abc6f328}
+{\bfseries Value\-:}
 \begin{DoxyCode}
 \textcolor{keyword}{extern} \textcolor{stringliteral}{"C"} \hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{CISST\_EXPORT} base* derived##Create() \(\backslash\)
    \{ \textcolor{keywordflow}{return} \textcolor{keyword}{new} derived; \} \(\backslash\)
@@ -49,7 +48,7 @@ If the base class is (or is derived from) {\itshape \hyperlink{classcmn_generic_
    extern \textcolor{stringliteral}{"C"} \hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{CISST\_EXPORT} \textcolor{keyword}{const} std::type\_info &derived##BaseType = \textcolor{keyword}{typeid}(base); \(\backslash\)
    extern \textcolor{stringliteral}{"C"} \hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{CISST\_EXPORT} \textcolor{keyword}{const} \textcolor{keywordtype}{int} derived##Version = derived::VERSION;
 \end{DoxyCode}
-This macro creates the functions and data necessary to allow the derived class to be dynamically loaded (as a \char`\"{}plugin\char`\"{}) into a running application, using the {\itshape \hyperlink{classosa_dynamic_loader_and_factory}{osa\+Dynamic\+Loader\+And\+Factory}} class. The only requirement on the base class is that it define a public {\itshape V\+E\+R\+S\+I\+O\+N} enum that specifies its \char`\"{}interface version.\char`\"{} 
+This macro creates the functions and data necessary to allow the derived class to be dynamically loaded (as a \char`\"{}plugin\char`\"{}) into a running application, using the {\itshape \hyperlink{classosa_dynamic_loader_and_factory}{osa\-Dynamic\-Loader\-And\-Factory}} class. The only requirement on the base class is that it define a public {\itshape V\-E\-R\-S\-I\-O\-N} enum that specifies its \char`\"{}interface version.\char`\"{} 
 \begin{DoxyParams}{Parameters}
 {\em base} & Base class that defines the interface (usually abstract) \\
 \hline

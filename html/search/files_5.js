@@ -28,7 +28,6 @@ var searchData=
   ['nmrmultiindexcounter_2eh',['nmrMultiIndexCounter.h',['../d2/db8/nmr_multi_index_counter_8h.html',1,'']]],
   ['nmrmultivariablepowerbasis_2eh',['nmrMultiVariablePowerBasis.h',['../db/d90/nmr_multi_variable_power_basis_8h.html',1,'']]],
   ['nmrnetlib_2eh',['nmrNetlib.h',['../d7/d65/nmr_netlib_8h.html',1,'']]],
-  ['nmrnnls_2eh',['nmrNNLS.h',['../db/d91/nmr_n_n_l_s_8h.html',1,'']]],
   ['nmrnnlssolver_2eh',['nmrNNLSSolver.h',['../de/d23/nmr_n_n_l_s_solver_8h.html',1,'']]],
   ['nmrpinverse_2eh',['nmrPInverse.h',['../dc/d55/nmr_p_inverse_8h.html',1,'']]],
   ['nmrpinverseeconomy_2eh',['nmrPInverseEconomy.h',['../da/dca/nmr_p_inverse_economy_8h.html',1,'']]],

@@ -1,0 +1,91 @@
+\section*{1.\-0.\-5 (2015-\/10-\/18) }
+
+
+\begin{DoxyItemize}
+\item A\-P\-I changes\-:
+\begin{DoxyItemize}
+\item None
+\end{DoxyItemize}
+\item Deprecated features\-:
+\begin{DoxyItemize}
+\item None
+\end{DoxyItemize}
+\item New features\-:
+\begin{DoxyItemize}
+\item Added \hyperlink{classprm_state_joint}{prm\-State\-Joint} data type
+\item \hyperlink{classcmn_path}{cmn\-Path}
+\end{DoxyItemize}
+\item Bug fixes\-:
+\begin{DoxyItemize}
+\item C\-Make\-: added F\-O\-R\-C\-E\-\_\-\-C\-I\-S\-S\-T\-\_\-\-N\-E\-T\-L\-I\-B\-\_\-\-C\-O\-N\-F\-I\-G to force use of Cisst\-Netlib\-Config.\-cmake (see 47379dbb16024726963d799b6a7a1c8a04097ff0)
+\item C\-Make\-: now use github to download jsoncpp (see 9bd108a022585fdedf3bcccb0f1e0e37e3a1d62c)
+\item cisst\-Common\-: C\-M\-N\-\_\-\-L\-O\-G use if statement instead of ?\-: to support recent compilers (see \#34)
+\item cisst\-O\-S\-Abstraction\-: \hyperlink{classosa_socket}{osa\-Socket} updated to support latest O\-S\-X (see \#28, \#33)
+\item cisst\-Vector\-Qt\-: translation widget always converts to mm for display (see 946cb0341ec01b284f1ef41567dc43ae1465db51)
+\item cisst\-Multi\-Task\-: removed sleep on connect when manager is in standalone mode (i.\-e. not distributed)
+\item cisst\-Multi\-Task python\-: add optional argument to reconnect for \# of attempts to Add\-Interface\-Required\-And\-Connect() (see bbb69bc7bbdb7add304f3f2f36dd226540aea5ee)
+\item cisst\-Numerical\-: fixed nmr\-L\-Sq\-Lin, solver for underdetermined case (underconstrained) and added unit tests (see 8d736e626d8c8b8971699a7579787332ba24e796 and \#32)
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+\section*{1.\-0.\-4 (2015-\/04-\/28) }
+
+
+\begin{DoxyItemize}
+\item A\-P\-I changes\-:
+\begin{DoxyItemize}
+\item None
+\end{DoxyItemize}
+\item Deprecated features\-:
+\begin{DoxyItemize}
+\item None
+\end{DoxyItemize}
+\item New features\-:
+\begin{DoxyItemize}
+\item More libraries compiled for Travis, now run some unit tests
+\end{DoxyItemize}
+\item Bug fixes\-:
+\begin{DoxyItemize}
+\item cisst\-Vector\-: more types supported in Python
+\item cisst\-Multi\-Task\-: more proxy declared for cisst\-Vector types
+\item Fixed propagation of C\-Make settings for cisst\-Stereo\-Vision
+\item \hyperlink{classrob_manipulator}{rob\-Manipulator}\-: fixed normalization modulo 2 pi for rotations only, fixed memory allocation for under actuated robots
+\item \hyperlink{classrob_l_s_p_b}{rob\-L\-S\-P\-B}\-: only require non-\/zero velocity/accel when joint is moving
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+\section*{1.\-0.\-3 (2015-\/02-\/19) }
+
+
+\begin{DoxyItemize}
+\item A\-P\-I changes\-:
+\begin{DoxyItemize}
+\item None
+\end{DoxyItemize}
+\item Deprecated features\-:
+\begin{DoxyItemize}
+\item None
+\end{DoxyItemize}
+\item New features\-:
+\begin{DoxyItemize}
+\item Initial support to build using catkin/\-R\-O\-S (with catkin python build tools, doesn't work with catkin\-\_\-make)
+\item C\-Make option C\-I\-S\-S\-T\-\_\-\-U\-S\-E\-\_\-\-S\-I\-\_\-\-U\-N\-I\-T\-S (advanced option, default is O\-F\-F), see \hyperlink{cmn_units_8h}{cmn\-Units.\-h}. Log settings in cisst\-Log.\-txt
+\item Methods Ref for cisst\-Vector vectors and matrices, both fixed size and dynamic
+\item Added human readable cisst revision using git describe, see cisst\-Revision.\-h.\-in. Log full version in cisst\-Log.\-txt
+\end{DoxyItemize}
+\item Bug fixes\-:
+\begin{DoxyItemize}
+\item Memory leaks in \hyperlink{classcmn_command_line_options}{cmn\-Command\-Line\-Options}, cmn\-X\-M\-L\-Path, vct\-Plot2\-D
+\item Propagation of C\-Make flags -\/f\-P\-I\-C, -\/\-Wall, ... in cisst\-Settings.\-cmake to external projects
+\item C\-Make for cisst\-Common tests when X\-M\-L is found
+\item Shared directory improperly defined in \hyperlink{classcmn_path}{cmn\-Path} (was using major.\-minor.\-patch instead of major.\-minor)
+\item Fixed some La\-Te\-X math errors in documentation for Doxygen
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+\section*{1.\-0.\-2 (2015-\/01-\/02) }
+
+
+\begin{DoxyItemize}
+\item Change log file created 
+\end{DoxyItemize}

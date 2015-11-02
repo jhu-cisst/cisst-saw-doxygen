@@ -1,10 +1,11 @@
-\hypertarget{classmts_collector_factory}{}\section{mts\+Collector\+Factory Class Reference}
-\label{classmts_collector_factory}\index{mts\+Collector\+Factory@{mts\+Collector\+Factory}}
+\hypertarget{classmts_collector_factory}{\section{mts\-Collector\-Factory Class Reference}
+\label{classmts_collector_factory}\index{mts\-Collector\-Factory@{mts\-Collector\-Factory}}
+}
 
 
-{\ttfamily \#include $<$mts\+Collector\+Factory.\+h$>$}
+{\ttfamily \#include $<$mts\-Collector\-Factory.\-h$>$}
 
-Inheritance diagram for mts\+Collector\+Factory\+:\begin{figure}[H]
+Inheritance diagram for mts\-Collector\-Factory\-:\begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[height=6.000000cm]{dd/d72/classmts_collector_factory}
@@ -13,46 +14,50 @@ Inheritance diagram for mts\+Collector\+Factory\+:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classmts_collector_factory_a2f05af1940cf1262dccd05f274d2883a}{mts\+Collector\+Factory} (const std\+::string \&component\+Name)
+\hyperlink{classmts_collector_factory_a2f05af1940cf1262dccd05f274d2883a}{mts\-Collector\-Factory} (const std\-::string \&component\-Name)
 \item 
-\hyperlink{classmts_collector_factory_af68fd1ba191ef9de8d967a4830b15325}{$\sim$mts\+Collector\+Factory} ()
+\hyperlink{classmts_collector_factory_af68fd1ba191ef9de8d967a4830b15325}{$\sim$mts\-Collector\-Factory} ()
 \item 
-void \hyperlink{classmts_collector_factory_a83f9afdf222ce01c87e8708e1f9bbdf7}{Configure} (const std\+::string \&configuration)
+void \hyperlink{classmts_collector_factory_a83f9afdf222ce01c87e8708e1f9bbdf7}{Configure} (const std\-::string \&configuration)
 \item 
 void \hyperlink{classmts_collector_factory_a06d146dcb006904d4a3e7b6522451089}{Run} (void)
 \item 
 void \hyperlink{classmts_collector_factory_a951a135f4dcc361993a5ed432dafa24b}{Cleanup} (void)
 \item 
-void \hyperlink{classmts_collector_factory_aed70853447708f6655c49e85d5814381}{Add\+Signal} (const std\+::string \&component, const std\+::string \&table, const std\+::string \&signal)
+void \hyperlink{classmts_collector_factory_aed70853447708f6655c49e85d5814381}{Add\-Signal} (const std\-::string \&component, const std\-::string \&table, const std\-::string \&signal)
 \item 
-void \hyperlink{classmts_collector_factory_a6ffa178e43fb1d9e1cbcc5d63050c956}{Set\+Sampling} (const std\+::string \&component, const std\+::string \&table, const int sampling)
+void \hyperlink{classmts_collector_factory_a6ffa178e43fb1d9e1cbcc5d63050c956}{Set\-Sampling} (const std\-::string \&component, const std\-::string \&table, const int sampling)
 \item 
 void \hyperlink{classmts_collector_factory_ab9f06b99a65163c6cd67f27f878bdbb4}{Connect} (void) const 
 \item 
-void \hyperlink{classmts_collector_factory_a2934fa6732ae2bd36d384f834e00ffdd}{Get\+Collectors\+Names} (std\+::list$<$ std\+::string $>$ \&collectors) const 
+void \hyperlink{classmts_collector_factory_a2934fa6732ae2bd36d384f834e00ffdd}{Get\-Collectors\-Names} (std\-::list$<$ std\-::string $>$ \&collectors) const 
 \end{DoxyCompactItemize}
 \subsection*{Protected Types}
 \begin{DoxyCompactItemize}
 \item 
-typedef std\+::pair$<$ std\+::string, std\+::string $>$ \hyperlink{classmts_collector_factory_adaeb0ec5b7392f2a011eb478334e86b6}{Collector\+Id}
+typedef std\-::pair$<$ std\-::string, \\*
+std\-::string $>$ \hyperlink{classmts_collector_factory_adaeb0ec5b7392f2a011eb478334e86b6}{Collector\-Id}
 \item 
-typedef std\+::list$<$ std\+::string $>$ \hyperlink{classmts_collector_factory_a62e1c130f6074d6633efd23888e6b33f}{Signals}
+typedef std\-::list$<$ std\-::string $>$ \hyperlink{classmts_collector_factory_a62e1c130f6074d6633efd23888e6b33f}{Signals}
 \item 
-typedef std\+::pair$<$ std\+::string, \hyperlink{classmts_collector_factory_a62e1c130f6074d6633efd23888e6b33f}{Signals} $>$ \hyperlink{classmts_collector_factory_aca25b6c09f469fe168d3fc99ef7aec8d}{Collector\+Data}
+typedef std\-::pair$<$ std\-::string, \\*
+\hyperlink{classmts_collector_factory_a62e1c130f6074d6633efd23888e6b33f}{Signals} $>$ \hyperlink{classmts_collector_factory_aca25b6c09f469fe168d3fc99ef7aec8d}{Collector\-Data}
 \item 
-typedef std\+::pair$<$ \hyperlink{classmts_collector_factory_adaeb0ec5b7392f2a011eb478334e86b6}{Collector\+Id}, \hyperlink{classmts_collector_factory_aca25b6c09f469fe168d3fc99ef7aec8d}{Collector\+Data} $>$ \hyperlink{classmts_collector_factory_abe3e52266409a03bcf7ba68004ee08d2}{Collector}
+typedef std\-::pair$<$ \hyperlink{classmts_collector_factory_adaeb0ec5b7392f2a011eb478334e86b6}{Collector\-Id}, \\*
+\hyperlink{classmts_collector_factory_aca25b6c09f469fe168d3fc99ef7aec8d}{Collector\-Data} $>$ \hyperlink{classmts_collector_factory_abe3e52266409a03bcf7ba68004ee08d2}{Collector}
 \item 
-typedef std\+::map$<$ \hyperlink{classmts_collector_factory_adaeb0ec5b7392f2a011eb478334e86b6}{Collector\+Id}, \hyperlink{classmts_collector_factory_aca25b6c09f469fe168d3fc99ef7aec8d}{Collector\+Data} $>$ \hyperlink{classmts_collector_factory_ae977f45bdbb0d62035689490d5bf54ee}{Collectors\+Type}
+typedef std\-::map$<$ \hyperlink{classmts_collector_factory_adaeb0ec5b7392f2a011eb478334e86b6}{Collector\-Id}, \\*
+\hyperlink{classmts_collector_factory_aca25b6c09f469fe168d3fc99ef7aec8d}{Collector\-Data} $>$ \hyperlink{classmts_collector_factory_ae977f45bdbb0d62035689490d5bf54ee}{Collectors\-Type}
 \end{DoxyCompactItemize}
 \subsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \hyperlink{classmts_collector_factory_a6cf61433ca47519803c8b2db3bbf9cdd}{Add\+State\+Collector} (const std\+::string \&component, const std\+::string \&table)
+void \hyperlink{classmts_collector_factory_a6cf61433ca47519803c8b2db3bbf9cdd}{Add\-State\-Collector} (const std\-::string \&component, const std\-::string \&table)
 \end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classmts_collector_factory_ae977f45bdbb0d62035689490d5bf54ee}{Collectors\+Type} \hyperlink{classmts_collector_factory_a273acdf27438201813650b068c576d9b}{m\+Collectors}
+\hyperlink{classmts_collector_factory_ae977f45bdbb0d62035689490d5bf54ee}{Collectors\-Type} \hyperlink{classmts_collector_factory_a273acdf27438201813650b068c576d9b}{m\-Collectors}
 \end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
@@ -61,122 +66,122 @@ void \hyperlink{classmts_collector_factory_a6cf61433ca47519803c8b2db3bbf9cdd}{Ad
 Create collectors using the command pattern or configuration files. 
 
 \subsection{Member Typedef Documentation}
-\hypertarget{classmts_collector_factory_abe3e52266409a03bcf7ba68004ee08d2}{}\index{mts\+Collector\+Factory@{mts\+Collector\+Factory}!Collector@{Collector}}
-\index{Collector@{Collector}!mts\+Collector\+Factory@{mts\+Collector\+Factory}}
-\subsubsection[{Collector}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::pair$<${\bf Collector\+Id}, {\bf Collector\+Data} $>$ {\bf mts\+Collector\+Factory\+::\+Collector}\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_collector_factory_abe3e52266409a03bcf7ba68004ee08d2}
-\hypertarget{classmts_collector_factory_aca25b6c09f469fe168d3fc99ef7aec8d}{}\index{mts\+Collector\+Factory@{mts\+Collector\+Factory}!Collector\+Data@{Collector\+Data}}
-\index{Collector\+Data@{Collector\+Data}!mts\+Collector\+Factory@{mts\+Collector\+Factory}}
-\subsubsection[{Collector\+Data}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::pair$<$std\+::string, {\bf Signals}$>$ {\bf mts\+Collector\+Factory\+::\+Collector\+Data}\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_collector_factory_aca25b6c09f469fe168d3fc99ef7aec8d}
-\hypertarget{classmts_collector_factory_adaeb0ec5b7392f2a011eb478334e86b6}{}\index{mts\+Collector\+Factory@{mts\+Collector\+Factory}!Collector\+Id@{Collector\+Id}}
-\index{Collector\+Id@{Collector\+Id}!mts\+Collector\+Factory@{mts\+Collector\+Factory}}
-\subsubsection[{Collector\+Id}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::pair$<$std\+::string, std\+::string$>$ {\bf mts\+Collector\+Factory\+::\+Collector\+Id}\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_collector_factory_adaeb0ec5b7392f2a011eb478334e86b6}
-\hypertarget{classmts_collector_factory_ae977f45bdbb0d62035689490d5bf54ee}{}\index{mts\+Collector\+Factory@{mts\+Collector\+Factory}!Collectors\+Type@{Collectors\+Type}}
-\index{Collectors\+Type@{Collectors\+Type}!mts\+Collector\+Factory@{mts\+Collector\+Factory}}
-\subsubsection[{Collectors\+Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::map$<${\bf Collector\+Id}, {\bf Collector\+Data} $>$ {\bf mts\+Collector\+Factory\+::\+Collectors\+Type}\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_collector_factory_ae977f45bdbb0d62035689490d5bf54ee}
-\hypertarget{classmts_collector_factory_a62e1c130f6074d6633efd23888e6b33f}{}\index{mts\+Collector\+Factory@{mts\+Collector\+Factory}!Signals@{Signals}}
-\index{Signals@{Signals}!mts\+Collector\+Factory@{mts\+Collector\+Factory}}
-\subsubsection[{Signals}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::list$<$std\+::string$>$ {\bf mts\+Collector\+Factory\+::\+Signals}\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_collector_factory_a62e1c130f6074d6633efd23888e6b33f}
+\hypertarget{classmts_collector_factory_abe3e52266409a03bcf7ba68004ee08d2}{\index{mts\-Collector\-Factory@{mts\-Collector\-Factory}!Collector@{Collector}}
+\index{Collector@{Collector}!mtsCollectorFactory@{mts\-Collector\-Factory}}
+\subsubsection[{Collector}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\-::pair$<${\bf Collector\-Id}, {\bf Collector\-Data} $>$ {\bf mts\-Collector\-Factory\-::\-Collector}\hspace{0.3cm}{\ttfamily [protected]}}}\label{classmts_collector_factory_abe3e52266409a03bcf7ba68004ee08d2}
+\hypertarget{classmts_collector_factory_aca25b6c09f469fe168d3fc99ef7aec8d}{\index{mts\-Collector\-Factory@{mts\-Collector\-Factory}!Collector\-Data@{Collector\-Data}}
+\index{Collector\-Data@{Collector\-Data}!mtsCollectorFactory@{mts\-Collector\-Factory}}
+\subsubsection[{Collector\-Data}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\-::pair$<$std\-::string, {\bf Signals}$>$ {\bf mts\-Collector\-Factory\-::\-Collector\-Data}\hspace{0.3cm}{\ttfamily [protected]}}}\label{classmts_collector_factory_aca25b6c09f469fe168d3fc99ef7aec8d}
+\hypertarget{classmts_collector_factory_adaeb0ec5b7392f2a011eb478334e86b6}{\index{mts\-Collector\-Factory@{mts\-Collector\-Factory}!Collector\-Id@{Collector\-Id}}
+\index{Collector\-Id@{Collector\-Id}!mtsCollectorFactory@{mts\-Collector\-Factory}}
+\subsubsection[{Collector\-Id}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\-::pair$<$std\-::string, std\-::string$>$ {\bf mts\-Collector\-Factory\-::\-Collector\-Id}\hspace{0.3cm}{\ttfamily [protected]}}}\label{classmts_collector_factory_adaeb0ec5b7392f2a011eb478334e86b6}
+\hypertarget{classmts_collector_factory_ae977f45bdbb0d62035689490d5bf54ee}{\index{mts\-Collector\-Factory@{mts\-Collector\-Factory}!Collectors\-Type@{Collectors\-Type}}
+\index{Collectors\-Type@{Collectors\-Type}!mtsCollectorFactory@{mts\-Collector\-Factory}}
+\subsubsection[{Collectors\-Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\-::map$<${\bf Collector\-Id}, {\bf Collector\-Data} $>$ {\bf mts\-Collector\-Factory\-::\-Collectors\-Type}\hspace{0.3cm}{\ttfamily [protected]}}}\label{classmts_collector_factory_ae977f45bdbb0d62035689490d5bf54ee}
+\hypertarget{classmts_collector_factory_a62e1c130f6074d6633efd23888e6b33f}{\index{mts\-Collector\-Factory@{mts\-Collector\-Factory}!Signals@{Signals}}
+\index{Signals@{Signals}!mtsCollectorFactory@{mts\-Collector\-Factory}}
+\subsubsection[{Signals}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\-::list$<$std\-::string$>$ {\bf mts\-Collector\-Factory\-::\-Signals}\hspace{0.3cm}{\ttfamily [protected]}}}\label{classmts_collector_factory_a62e1c130f6074d6633efd23888e6b33f}
 
 
 \subsection{Constructor \& Destructor Documentation}
-\hypertarget{classmts_collector_factory_a2f05af1940cf1262dccd05f274d2883a}{}\index{mts\+Collector\+Factory@{mts\+Collector\+Factory}!mts\+Collector\+Factory@{mts\+Collector\+Factory}}
-\index{mts\+Collector\+Factory@{mts\+Collector\+Factory}!mts\+Collector\+Factory@{mts\+Collector\+Factory}}
-\subsubsection[{mts\+Collector\+Factory}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Collector\+Factory\+::mts\+Collector\+Factory (
+\hypertarget{classmts_collector_factory_a2f05af1940cf1262dccd05f274d2883a}{\index{mts\-Collector\-Factory@{mts\-Collector\-Factory}!mts\-Collector\-Factory@{mts\-Collector\-Factory}}
+\index{mts\-Collector\-Factory@{mts\-Collector\-Factory}!mtsCollectorFactory@{mts\-Collector\-Factory}}
+\subsubsection[{mts\-Collector\-Factory}]{\setlength{\rightskip}{0pt plus 5cm}mts\-Collector\-Factory\-::mts\-Collector\-Factory (
 \begin{DoxyParamCaption}
-\item[{const std\+::string \&}]{component\+Name}
+\item[{const std\-::string \&}]{component\-Name}
 \end{DoxyParamCaption}
-)}\label{classmts_collector_factory_a2f05af1940cf1262dccd05f274d2883a}
-\hypertarget{classmts_collector_factory_af68fd1ba191ef9de8d967a4830b15325}{}\index{mts\+Collector\+Factory@{mts\+Collector\+Factory}!````~mts\+Collector\+Factory@{$\sim$mts\+Collector\+Factory}}
-\index{````~mts\+Collector\+Factory@{$\sim$mts\+Collector\+Factory}!mts\+Collector\+Factory@{mts\+Collector\+Factory}}
-\subsubsection[{$\sim$mts\+Collector\+Factory}]{\setlength{\rightskip}{0pt plus 5cm}mts\+Collector\+Factory\+::$\sim$mts\+Collector\+Factory (
+)}}\label{classmts_collector_factory_a2f05af1940cf1262dccd05f274d2883a}
+\hypertarget{classmts_collector_factory_af68fd1ba191ef9de8d967a4830b15325}{\index{mts\-Collector\-Factory@{mts\-Collector\-Factory}!$\sim$mts\-Collector\-Factory@{$\sim$mts\-Collector\-Factory}}
+\index{$\sim$mts\-Collector\-Factory@{$\sim$mts\-Collector\-Factory}!mtsCollectorFactory@{mts\-Collector\-Factory}}
+\subsubsection[{$\sim$mts\-Collector\-Factory}]{\setlength{\rightskip}{0pt plus 5cm}mts\-Collector\-Factory\-::$\sim$mts\-Collector\-Factory (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_collector_factory_af68fd1ba191ef9de8d967a4830b15325}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmts_collector_factory_af68fd1ba191ef9de8d967a4830b15325}
 
 
 \subsection{Member Function Documentation}
-\hypertarget{classmts_collector_factory_aed70853447708f6655c49e85d5814381}{}\index{mts\+Collector\+Factory@{mts\+Collector\+Factory}!Add\+Signal@{Add\+Signal}}
-\index{Add\+Signal@{Add\+Signal}!mts\+Collector\+Factory@{mts\+Collector\+Factory}}
-\subsubsection[{Add\+Signal}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Collector\+Factory\+::\+Add\+Signal (
+\hypertarget{classmts_collector_factory_aed70853447708f6655c49e85d5814381}{\index{mts\-Collector\-Factory@{mts\-Collector\-Factory}!Add\-Signal@{Add\-Signal}}
+\index{Add\-Signal@{Add\-Signal}!mtsCollectorFactory@{mts\-Collector\-Factory}}
+\subsubsection[{Add\-Signal}]{\setlength{\rightskip}{0pt plus 5cm}void mts\-Collector\-Factory\-::\-Add\-Signal (
 \begin{DoxyParamCaption}
-\item[{const std\+::string \&}]{component, }
-\item[{const std\+::string \&}]{table, }
-\item[{const std\+::string \&}]{signal}
+\item[{const std\-::string \&}]{component, }
+\item[{const std\-::string \&}]{table, }
+\item[{const std\-::string \&}]{signal}
 \end{DoxyParamCaption}
-)}\label{classmts_collector_factory_aed70853447708f6655c49e85d5814381}
-Add a signal to collect. If needed, a new state collector will be created for each pair of component/state table. One can call this method multiple times with the same component and/or same component/state table. Attempts to register the same component/table/signal multiple times will be logged as errors using \hyperlink{classcmn_logger}{cmn\+Logger}. If an incorrect component, table or signal name is provided, an error message is sent to \hyperlink{classcmn_logger}{cmn\+Logger} (check the file cisst\+Log.\+txt). \hypertarget{classmts_collector_factory_a6cf61433ca47519803c8b2db3bbf9cdd}{}\index{mts\+Collector\+Factory@{mts\+Collector\+Factory}!Add\+State\+Collector@{Add\+State\+Collector}}
-\index{Add\+State\+Collector@{Add\+State\+Collector}!mts\+Collector\+Factory@{mts\+Collector\+Factory}}
-\subsubsection[{Add\+State\+Collector}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Collector\+Factory\+::\+Add\+State\+Collector (
+)}}\label{classmts_collector_factory_aed70853447708f6655c49e85d5814381}
+Add a signal to collect. If needed, a new state collector will be created for each pair of component/state table. One can call this method multiple times with the same component and/or same component/state table. Attempts to register the same component/table/signal multiple times will be logged as errors using \hyperlink{classcmn_logger}{cmn\-Logger}. If an incorrect component, table or signal name is provided, an error message is sent to \hyperlink{classcmn_logger}{cmn\-Logger} (check the file cisst\-Log.\-txt). \hypertarget{classmts_collector_factory_a6cf61433ca47519803c8b2db3bbf9cdd}{\index{mts\-Collector\-Factory@{mts\-Collector\-Factory}!Add\-State\-Collector@{Add\-State\-Collector}}
+\index{Add\-State\-Collector@{Add\-State\-Collector}!mtsCollectorFactory@{mts\-Collector\-Factory}}
+\subsubsection[{Add\-State\-Collector}]{\setlength{\rightskip}{0pt plus 5cm}void mts\-Collector\-Factory\-::\-Add\-State\-Collector (
 \begin{DoxyParamCaption}
-\item[{const std\+::string \&}]{component, }
-\item[{const std\+::string \&}]{table}
+\item[{const std\-::string \&}]{component, }
+\item[{const std\-::string \&}]{table}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_collector_factory_a6cf61433ca47519803c8b2db3bbf9cdd}
-\hypertarget{classmts_collector_factory_a951a135f4dcc361993a5ed432dafa24b}{}\index{mts\+Collector\+Factory@{mts\+Collector\+Factory}!Cleanup@{Cleanup}}
-\index{Cleanup@{Cleanup}!mts\+Collector\+Factory@{mts\+Collector\+Factory}}
-\subsubsection[{Cleanup}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Collector\+Factory\+::\+Cleanup (
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classmts_collector_factory_a6cf61433ca47519803c8b2db3bbf9cdd}
+\hypertarget{classmts_collector_factory_a951a135f4dcc361993a5ed432dafa24b}{\index{mts\-Collector\-Factory@{mts\-Collector\-Factory}!Cleanup@{Cleanup}}
+\index{Cleanup@{Cleanup}!mtsCollectorFactory@{mts\-Collector\-Factory}}
+\subsubsection[{Cleanup}]{\setlength{\rightskip}{0pt plus 5cm}void mts\-Collector\-Factory\-::\-Cleanup (
 \begin{DoxyParamCaption}
 \item[{void}]{}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_collector_factory_a951a135f4dcc361993a5ed432dafa24b}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classmts_collector_factory_a951a135f4dcc361993a5ed432dafa24b}
 Virtual method that gets overloaded, and is run after the component gets killed using \hyperlink{classmts_task_from_signal_a9a1b6e7c80ca2c2fdc14de78e3635922}{Kill()} method. 
 
-Reimplemented from \hyperlink{classmts_component_a891f330f4fde7d831dcf7dc537dc5e81}{mts\+Component}.
+Reimplemented from \hyperlink{classmts_component_a891f330f4fde7d831dcf7dc537dc5e81}{mts\-Component}.
 
-\hypertarget{classmts_collector_factory_a83f9afdf222ce01c87e8708e1f9bbdf7}{}\index{mts\+Collector\+Factory@{mts\+Collector\+Factory}!Configure@{Configure}}
-\index{Configure@{Configure}!mts\+Collector\+Factory@{mts\+Collector\+Factory}}
-\subsubsection[{Configure}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Collector\+Factory\+::\+Configure (
+\hypertarget{classmts_collector_factory_a83f9afdf222ce01c87e8708e1f9bbdf7}{\index{mts\-Collector\-Factory@{mts\-Collector\-Factory}!Configure@{Configure}}
+\index{Configure@{Configure}!mtsCollectorFactory@{mts\-Collector\-Factory}}
+\subsubsection[{Configure}]{\setlength{\rightskip}{0pt plus 5cm}void mts\-Collector\-Factory\-::\-Configure (
 \begin{DoxyParamCaption}
-\item[{const std\+::string \&}]{filename}
+\item[{const std\-::string \&}]{filename}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_collector_factory_a83f9afdf222ce01c87e8708e1f9bbdf7}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classmts_collector_factory_a83f9afdf222ce01c87e8708e1f9bbdf7}
 The virtual method so that the interface or tasks can configure themselves 
 
-Reimplemented from \hyperlink{classmts_component_ad872432876de7879dc96c232b411c146}{mts\+Component}.
+Reimplemented from \hyperlink{classmts_component_ad872432876de7879dc96c232b411c146}{mts\-Component}.
 
-\hypertarget{classmts_collector_factory_ab9f06b99a65163c6cd67f27f878bdbb4}{}\index{mts\+Collector\+Factory@{mts\+Collector\+Factory}!Connect@{Connect}}
-\index{Connect@{Connect}!mts\+Collector\+Factory@{mts\+Collector\+Factory}}
-\subsubsection[{Connect}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Collector\+Factory\+::\+Connect (
+\hypertarget{classmts_collector_factory_ab9f06b99a65163c6cd67f27f878bdbb4}{\index{mts\-Collector\-Factory@{mts\-Collector\-Factory}!Connect@{Connect}}
+\index{Connect@{Connect}!mtsCollectorFactory@{mts\-Collector\-Factory}}
+\subsubsection[{Connect}]{\setlength{\rightskip}{0pt plus 5cm}void mts\-Collector\-Factory\-::\-Connect (
 \begin{DoxyParamCaption}
 \item[{void}]{}
 \end{DoxyParamCaption}
-) const}\label{classmts_collector_factory_ab9f06b99a65163c6cd67f27f878bdbb4}
-Connect all the state collectors created using the Add\+State\+Collector. This method must be called after all calls to \hyperlink{classmts_collector_factory_aed70853447708f6655c49e85d5814381}{mts\+Collector\+Factory\+::\+Add\+Signal}. \hypertarget{classmts_collector_factory_a2934fa6732ae2bd36d384f834e00ffdd}{}\index{mts\+Collector\+Factory@{mts\+Collector\+Factory}!Get\+Collectors\+Names@{Get\+Collectors\+Names}}
-\index{Get\+Collectors\+Names@{Get\+Collectors\+Names}!mts\+Collector\+Factory@{mts\+Collector\+Factory}}
-\subsubsection[{Get\+Collectors\+Names}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Collector\+Factory\+::\+Get\+Collectors\+Names (
+) const}}\label{classmts_collector_factory_ab9f06b99a65163c6cd67f27f878bdbb4}
+Connect all the state collectors created using the Add\-State\-Collector. This method must be called after all calls to \hyperlink{classmts_collector_factory_aed70853447708f6655c49e85d5814381}{mts\-Collector\-Factory\-::\-Add\-Signal}. \hypertarget{classmts_collector_factory_a2934fa6732ae2bd36d384f834e00ffdd}{\index{mts\-Collector\-Factory@{mts\-Collector\-Factory}!Get\-Collectors\-Names@{Get\-Collectors\-Names}}
+\index{Get\-Collectors\-Names@{Get\-Collectors\-Names}!mtsCollectorFactory@{mts\-Collector\-Factory}}
+\subsubsection[{Get\-Collectors\-Names}]{\setlength{\rightskip}{0pt plus 5cm}void mts\-Collector\-Factory\-::\-Get\-Collectors\-Names (
 \begin{DoxyParamCaption}
-\item[{std\+::list$<$ std\+::string $>$ \&}]{collectors}
+\item[{std\-::list$<$ std\-::string $>$ \&}]{collectors}
 \end{DoxyParamCaption}
-) const}\label{classmts_collector_factory_a2934fa6732ae2bd36d384f834e00ffdd}
-Get a list of all collectors names created so far. \hypertarget{classmts_collector_factory_a06d146dcb006904d4a3e7b6522451089}{}\index{mts\+Collector\+Factory@{mts\+Collector\+Factory}!Run@{Run}}
-\index{Run@{Run}!mts\+Collector\+Factory@{mts\+Collector\+Factory}}
-\subsubsection[{Run}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Collector\+Factory\+::\+Run (
+) const}}\label{classmts_collector_factory_a2934fa6732ae2bd36d384f834e00ffdd}
+Get a list of all collectors names created so far. \hypertarget{classmts_collector_factory_a06d146dcb006904d4a3e7b6522451089}{\index{mts\-Collector\-Factory@{mts\-Collector\-Factory}!Run@{Run}}
+\index{Run@{Run}!mtsCollectorFactory@{mts\-Collector\-Factory}}
+\subsubsection[{Run}]{\setlength{\rightskip}{0pt plus 5cm}void mts\-Collector\-Factory\-::\-Run (
 \begin{DoxyParamCaption}
 \item[{void}]{}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_collector_factory_a06d146dcb006904d4a3e7b6522451089}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classmts_collector_factory_a06d146dcb006904d4a3e7b6522451089}
 Pure virtual method that gets overloaded to run the actual task. 
 
-Implements \hyperlink{classmts_task_a20e18c9479cb650792456c32ee689834}{mts\+Task}.
+Implements \hyperlink{classmts_task_a20e18c9479cb650792456c32ee689834}{mts\-Task}.
 
-\hypertarget{classmts_collector_factory_a6ffa178e43fb1d9e1cbcc5d63050c956}{}\index{mts\+Collector\+Factory@{mts\+Collector\+Factory}!Set\+Sampling@{Set\+Sampling}}
-\index{Set\+Sampling@{Set\+Sampling}!mts\+Collector\+Factory@{mts\+Collector\+Factory}}
-\subsubsection[{Set\+Sampling}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+Collector\+Factory\+::\+Set\+Sampling (
+\hypertarget{classmts_collector_factory_a6ffa178e43fb1d9e1cbcc5d63050c956}{\index{mts\-Collector\-Factory@{mts\-Collector\-Factory}!Set\-Sampling@{Set\-Sampling}}
+\index{Set\-Sampling@{Set\-Sampling}!mtsCollectorFactory@{mts\-Collector\-Factory}}
+\subsubsection[{Set\-Sampling}]{\setlength{\rightskip}{0pt plus 5cm}void mts\-Collector\-Factory\-::\-Set\-Sampling (
 \begin{DoxyParamCaption}
-\item[{const std\+::string \&}]{component, }
-\item[{const std\+::string \&}]{table, }
+\item[{const std\-::string \&}]{component, }
+\item[{const std\-::string \&}]{table, }
 \item[{const int}]{sampling}
 \end{DoxyParamCaption}
-)}\label{classmts_collector_factory_a6ffa178e43fb1d9e1cbcc5d63050c956}
+)}}\label{classmts_collector_factory_a6ffa178e43fb1d9e1cbcc5d63050c956}
 Set sub sampling for data collection. Collect 1 in n. 
 
 \subsection{Member Data Documentation}
-\hypertarget{classmts_collector_factory_a273acdf27438201813650b068c576d9b}{}\index{mts\+Collector\+Factory@{mts\+Collector\+Factory}!m\+Collectors@{m\+Collectors}}
-\index{m\+Collectors@{m\+Collectors}!mts\+Collector\+Factory@{mts\+Collector\+Factory}}
-\subsubsection[{m\+Collectors}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Collectors\+Type} mts\+Collector\+Factory\+::m\+Collectors\hspace{0.3cm}{\ttfamily [protected]}}\label{classmts_collector_factory_a273acdf27438201813650b068c576d9b}
+\hypertarget{classmts_collector_factory_a273acdf27438201813650b068c576d9b}{\index{mts\-Collector\-Factory@{mts\-Collector\-Factory}!m\-Collectors@{m\-Collectors}}
+\index{m\-Collectors@{m\-Collectors}!mtsCollectorFactory@{mts\-Collector\-Factory}}
+\subsubsection[{m\-Collectors}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Collectors\-Type} mts\-Collector\-Factory\-::m\-Collectors\hspace{0.3cm}{\ttfamily [protected]}}}\label{classmts_collector_factory_a273acdf27438201813650b068c576d9b}
 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
 \item 
-/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Multi\+Task/\hyperlink{mts_collector_factory_8h}{mts\+Collector\+Factory.\+h}\end{DoxyCompactItemize}
+/home/adeguet1/catkin\-\_\-ws/src/cisst-\/saw/cisst/cisst\-Multi\-Task/\hyperlink{mts_collector_factory_8h}{mts\-Collector\-Factory.\-h}\end{DoxyCompactItemize}

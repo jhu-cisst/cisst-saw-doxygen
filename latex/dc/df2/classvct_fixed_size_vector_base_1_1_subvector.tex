@@ -1,26 +1,28 @@
-\hypertarget{classvct_fixed_size_vector_base_1_1_subvector}{}\section{vct\+Fixed\+Size\+Vector\+Base$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+:\+:Subvector$<$ \+\_\+sub\+Size $>$ Class Template Reference}
-\label{classvct_fixed_size_vector_base_1_1_subvector}\index{vct\+Fixed\+Size\+Vector\+Base$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::\+Subvector$<$ \+\_\+sub\+Size $>$@{vct\+Fixed\+Size\+Vector\+Base$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::\+Subvector$<$ \+\_\+sub\+Size $>$}}
+\hypertarget{classvct_fixed_size_vector_base_1_1_subvector}{\section{vct\-Fixed\-Size\-Vector\-Base$<$ \-\_\-size, \-\_\-stride, \-\_\-element\-Type, \-\_\-data\-Ptr\-Type $>$\-:\-:Subvector$<$ \-\_\-sub\-Size $>$ Class Template Reference}
+\label{classvct_fixed_size_vector_base_1_1_subvector}\index{vct\-Fixed\-Size\-Vector\-Base$<$ \-\_\-size, \-\_\-stride, \-\_\-element\-Type, \-\_\-data\-Ptr\-Type $>$\-::\-Subvector$<$ \-\_\-sub\-Size $>$@{vct\-Fixed\-Size\-Vector\-Base$<$ \-\_\-size, \-\_\-stride, \-\_\-element\-Type, \-\_\-data\-Ptr\-Type $>$\-::\-Subvector$<$ \-\_\-sub\-Size $>$}}
+}
 
 
-{\ttfamily \#include $<$vct\+Fixed\+Size\+Vector\+Base.\+h$>$}
+{\ttfamily \#include $<$vct\-Fixed\-Size\-Vector\-Base.\-h$>$}
 
 \subsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
-typedef \hyperlink{classvct_fixed_size_vector_ref}{vct\+Fixed\+Size\+Vector\+Ref}$<$ value\+\_\+type, \+\_\+sub\+Size, \hyperlink{classvct_fixed_size_vector_base_ace3f97f061ae60acb29f9719787d18a3a953b66e9631c2c4ff134062e7e09a37d}{S\+T\+R\+I\+D\+E} $>$ \hyperlink{classvct_fixed_size_vector_base_1_1_subvector_a069ff7943ff217639b0dbb273d052647}{Type}
+typedef \hyperlink{classvct_fixed_size_vector_ref}{vct\-Fixed\-Size\-Vector\-Ref}\\*
+$<$ value\-\_\-type, \-\_\-sub\-Size, \hyperlink{classvct_fixed_size_vector_base_ace3f97f061ae60acb29f9719787d18a3a953b66e9631c2c4ff134062e7e09a37d}{S\-T\-R\-I\-D\-E} $>$ \hyperlink{classvct_fixed_size_vector_base_1_1_subvector_a069ff7943ff217639b0dbb273d052647}{Type}
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-\subsubsection*{template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$template$<$size\+\_\+type \+\_\+sub\+Size$>$class vct\+Fixed\+Size\+Vector\+Base$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::\+Subvector$<$ \+\_\+sub\+Size $>$}
+\subsubsection*{template$<$vct\-::size\-\_\-type \-\_\-size, vct\-::stride\-\_\-type \-\_\-stride, class \-\_\-element\-Type, class \-\_\-data\-Ptr\-Type$>$template$<$size\-\_\-type \-\_\-sub\-Size$>$class vct\-Fixed\-Size\-Vector\-Base$<$ \-\_\-size, \-\_\-stride, \-\_\-element\-Type, \-\_\-data\-Ptr\-Type $>$\-::\-Subvector$<$ \-\_\-sub\-Size $>$}
 
-``\+Syntactic sugar\textquotesingle{}\textquotesingle{} to simplify the creation of a reference to a subvector. This class declares a non-\/const subvector type. To declare a subvector object, here\textquotesingle{}s an example.
+``\-Syntactic sugar'' to simplify the creation of a reference to a subvector. This class declares a non-\/const subvector type. To declare a subvector object, here's an example.
 
-typedef vct\+Fixed\+Size\+Vector$<$double, 9$>$ Vector9; Vector9 v; Vector9\+::\+Subvector$<$3$>$\+::\+Type first3(v, 0); // first 3 elements of v Vector9\+::\+Subvector$<$3$>$\+::\+Type mid3(v, 0); // middle 3 elements of v Vector9\+::\+Subvector$<$3$>$\+::\+Type last3(v, 6); // last 3 elements of v
+typedef vct\-Fixed\-Size\-Vector$<$double, 9$>$ Vector9; Vector9 v; Vector9\-::\-Subvector$<$3$>$\-::\-Type first3(v, 0); // first 3 elements of v Vector9\-::\-Subvector$<$3$>$\-::\-Type mid3(v, 0); // middle 3 elements of v Vector9\-::\-Subvector$<$3$>$\-::\-Type last3(v, 6); // last 3 elements of v
 
 
 \begin{DoxyParams}{Parameters}
-{\em \+\_\+sub\+Size} & the size of the subvector\\
+{\em \-\_\-sub\-Size} & the size of the subvector\\
 \hline
 \end{DoxyParams}
 \begin{DoxyNote}{Note}
@@ -29,11 +31,11 @@ the stride of the subvector with respect to its parent container is always 1. Th
 
 
 \subsection{Member Typedef Documentation}
-\hypertarget{classvct_fixed_size_vector_base_1_1_subvector_a069ff7943ff217639b0dbb273d052647}{}\index{vct\+Fixed\+Size\+Vector\+Base\+::\+Subvector@{vct\+Fixed\+Size\+Vector\+Base\+::\+Subvector}!Type@{Type}}
-\index{Type@{Type}!vct\+Fixed\+Size\+Vector\+Base\+::\+Subvector@{vct\+Fixed\+Size\+Vector\+Base\+::\+Subvector}}
-\subsubsection[{Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\+::size\+\_\+type \+\_\+size, vct\+::stride\+\_\+type \+\_\+stride, class \+\_\+element\+Type, class \+\_\+data\+Ptr\+Type$>$ template$<$size\+\_\+type \+\_\+sub\+Size$>$ typedef {\bf vct\+Fixed\+Size\+Vector\+Ref}$<$value\+\_\+type, \+\_\+sub\+Size, {\bf S\+T\+R\+I\+D\+E}$>$ {\bf vct\+Fixed\+Size\+Vector\+Base}$<$ \+\_\+size, \+\_\+stride, \+\_\+element\+Type, \+\_\+data\+Ptr\+Type $>$\+::{\bf Subvector}$<$ \+\_\+sub\+Size $>$\+::{\bf Type}}\label{classvct_fixed_size_vector_base_1_1_subvector_a069ff7943ff217639b0dbb273d052647}
+\hypertarget{classvct_fixed_size_vector_base_1_1_subvector_a069ff7943ff217639b0dbb273d052647}{\index{vct\-Fixed\-Size\-Vector\-Base\-::\-Subvector@{vct\-Fixed\-Size\-Vector\-Base\-::\-Subvector}!Type@{Type}}
+\index{Type@{Type}!vctFixedSizeVectorBase::Subvector@{vct\-Fixed\-Size\-Vector\-Base\-::\-Subvector}}
+\subsubsection[{Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$vct\-::size\-\_\-type \-\_\-size, vct\-::stride\-\_\-type \-\_\-stride, class \-\_\-element\-Type, class \-\_\-data\-Ptr\-Type$>$ template$<$size\-\_\-type \-\_\-sub\-Size$>$ typedef {\bf vct\-Fixed\-Size\-Vector\-Ref}$<$value\-\_\-type, \-\_\-sub\-Size, {\bf S\-T\-R\-I\-D\-E}$>$ {\bf vct\-Fixed\-Size\-Vector\-Base}$<$ \-\_\-size, \-\_\-stride, \-\_\-element\-Type, \-\_\-data\-Ptr\-Type $>$\-::{\bf Subvector}$<$ \-\_\-sub\-Size $>$\-::{\bf Type}}}\label{classvct_fixed_size_vector_base_1_1_subvector_a069ff7943ff217639b0dbb273d052647}
 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
 \item 
-/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Vector/\hyperlink{vct_fixed_size_vector_base_8h}{vct\+Fixed\+Size\+Vector\+Base.\+h}\end{DoxyCompactItemize}
+/home/adeguet1/catkin\-\_\-ws/src/cisst-\/saw/cisst/cisst\-Vector/\hyperlink{vct_fixed_size_vector_base_8h}{vct\-Fixed\-Size\-Vector\-Base.\-h}\end{DoxyCompactItemize}

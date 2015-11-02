@@ -1,17 +1,18 @@
-\hypertarget{classcmn_de_serializer}{}\section{cmn\+De\+Serializer Class Reference}
-\label{classcmn_de_serializer}\index{cmn\+De\+Serializer@{cmn\+De\+Serializer}}
+\hypertarget{classcmn_de_serializer}{\section{cmn\-De\-Serializer Class Reference}
+\label{classcmn_de_serializer}\index{cmn\-De\-Serializer@{cmn\-De\-Serializer}}
+}
 
 
 De-\/serialization utility class.
 
-This class allows to deserialize objects previously serialized using \hyperlink{classcmn_serializer}{cmn\+Serializer}.  
+This class allows to deserialize objects previously serialized using \hyperlink{classcmn_serializer}{cmn\-Serializer}.  
 
 
 
 
-{\ttfamily \#include $<$cmn\+De\+Serializer.\+h$>$}
+{\ttfamily \#include $<$cmn\-De\-Serializer.\-h$>$}
 
-Inheritance diagram for cmn\+De\+Serializer\+:\begin{figure}[H]
+Inheritance diagram for cmn\-De\-Serializer\-:\begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[height=2.000000cm]{d5/ddd/classcmn_de_serializer}
@@ -20,109 +21,109 @@ Inheritance diagram for cmn\+De\+Serializer\+:\begin{figure}[H]
 \subsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
-typedef long long int \hyperlink{classcmn_de_serializer_aa4c89a09461da0a62a6cc4a29dfdd3c2}{Type\+Id}
+typedef long long int \hyperlink{classcmn_de_serializer_aa4c89a09461da0a62a6cc4a29dfdd3c2}{Type\-Id}
 \end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classcmn_de_serializer_adf60bd67f459b34a40ee529f4070a274}{cmn\+De\+Serializer} (std\+::istream \&input\+Stream)
+\hyperlink{classcmn_de_serializer_adf60bd67f459b34a40ee529f4070a274}{cmn\-De\-Serializer} (std\-::istream \&input\-Stream)
 \item 
-\hyperlink{classcmn_de_serializer_aa4685fa9d34c83c5f2e9e115396b956f}{$\sim$cmn\+De\+Serializer} ()
+\hyperlink{classcmn_de_serializer_aa4685fa9d34c83c5f2e9e115396b956f}{$\sim$cmn\-De\-Serializer} ()
 \item 
 void \hyperlink{classcmn_de_serializer_a601562de150fb39655137e1e7a12c1d1}{Reset} (void)
 \item 
-\hyperlink{classcmn_generic_object}{cmn\+Generic\+Object} $\ast$ \hyperlink{classcmn_de_serializer_a97972734ea443add8c55f1874c343bee}{De\+Serialize} (const bool serialize\+Object=true)
+\hyperlink{classcmn_generic_object}{cmn\-Generic\-Object} $\ast$ \hyperlink{classcmn_de_serializer_a97972734ea443add8c55f1874c343bee}{De\-Serialize} (const bool serialize\-Object=true)
 \item 
-{\footnotesize template$<$class \+\_\+element\+Type $>$ }\\void \hyperlink{classcmn_de_serializer_a4be6c703211fbe1c6b9e890d733d7fa7}{De\+Serialize} (\+\_\+element\+Type \&object, const bool serialize\+Object=true)
+{\footnotesize template$<$class \-\_\-element\-Type $>$ }\\void \hyperlink{classcmn_de_serializer_a4be6c703211fbe1c6b9e890d733d7fa7}{De\-Serialize} (\-\_\-element\-Type \&object, const bool serialize\-Object=true)
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
 De-\/serialization utility class.
 
-This class allows to deserialize objects previously serialized using \hyperlink{classcmn_serializer}{cmn\+Serializer}. 
+This class allows to deserialize objects previously serialized using \hyperlink{classcmn_serializer}{cmn\-Serializer}. 
 
-As each object serialized is identified by a unique class identifer defined at runtime (address of the object \hyperlink{classcmn_class_services}{cmn\+Class\+Services}), this class maintains a table of equivalence between the remote class identifiers and local class identifiers. This class can be used to read both the class information and objects in any order as long as the class information for a specific object has been received before the object itself.
+As each object serialized is identified by a unique class identifer defined at runtime (address of the object \hyperlink{classcmn_class_services}{cmn\-Class\-Services}), this class maintains a table of equivalence between the remote class identifiers and local class identifiers. This class can be used to read both the class information and objects in any order as long as the class information for a specific object has been received before the object itself.
 
-\begin{DoxySeeAlso}{See also}
-\hyperlink{classcmn_serializer}{cmn\+Serializer} \hyperlink{classcmn_generic_object}{cmn\+Generic\+Object} 
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classcmn_serializer}{cmn\-Serializer} \hyperlink{classcmn_generic_object}{cmn\-Generic\-Object} 
 \end{DoxySeeAlso}
 
 
 \subsection{Member Typedef Documentation}
-\hypertarget{classcmn_de_serializer_aa4c89a09461da0a62a6cc4a29dfdd3c2}{}\index{cmn\+De\+Serializer@{cmn\+De\+Serializer}!Type\+Id@{Type\+Id}}
-\index{Type\+Id@{Type\+Id}!cmn\+De\+Serializer@{cmn\+De\+Serializer}}
-\subsubsection[{Type\+Id}]{\setlength{\rightskip}{0pt plus 5cm}typedef long long int {\bf cmn\+De\+Serializer\+::\+Type\+Id}}\label{classcmn_de_serializer_aa4c89a09461da0a62a6cc4a29dfdd3c2}
-Type used to identify objects over the network. It uses the services pointer but as the sender or receiver could be a 32 or 64 bits O\+S, we use a data type that can handle both. 
+\hypertarget{classcmn_de_serializer_aa4c89a09461da0a62a6cc4a29dfdd3c2}{\index{cmn\-De\-Serializer@{cmn\-De\-Serializer}!Type\-Id@{Type\-Id}}
+\index{Type\-Id@{Type\-Id}!cmnDeSerializer@{cmn\-De\-Serializer}}
+\subsubsection[{Type\-Id}]{\setlength{\rightskip}{0pt plus 5cm}typedef long long int {\bf cmn\-De\-Serializer\-::\-Type\-Id}}}\label{classcmn_de_serializer_aa4c89a09461da0a62a6cc4a29dfdd3c2}
+Type used to identify objects over the network. It uses the services pointer but as the sender or receiver could be a 32 or 64 bits O\-S, we use a data type that can handle both. 
 
 \subsection{Constructor \& Destructor Documentation}
-\hypertarget{classcmn_de_serializer_adf60bd67f459b34a40ee529f4070a274}{}\index{cmn\+De\+Serializer@{cmn\+De\+Serializer}!cmn\+De\+Serializer@{cmn\+De\+Serializer}}
-\index{cmn\+De\+Serializer@{cmn\+De\+Serializer}!cmn\+De\+Serializer@{cmn\+De\+Serializer}}
-\subsubsection[{cmn\+De\+Serializer}]{\setlength{\rightskip}{0pt plus 5cm}cmn\+De\+Serializer\+::cmn\+De\+Serializer (
+\hypertarget{classcmn_de_serializer_adf60bd67f459b34a40ee529f4070a274}{\index{cmn\-De\-Serializer@{cmn\-De\-Serializer}!cmn\-De\-Serializer@{cmn\-De\-Serializer}}
+\index{cmn\-De\-Serializer@{cmn\-De\-Serializer}!cmnDeSerializer@{cmn\-De\-Serializer}}
+\subsubsection[{cmn\-De\-Serializer}]{\setlength{\rightskip}{0pt plus 5cm}cmn\-De\-Serializer\-::cmn\-De\-Serializer (
 \begin{DoxyParamCaption}
-\item[{std\+::istream \&}]{input\+Stream}
+\item[{std\-::istream \&}]{input\-Stream}
 \end{DoxyParamCaption}
-)}\label{classcmn_de_serializer_adf60bd67f459b34a40ee529f4070a274}
+)}}\label{classcmn_de_serializer_adf60bd67f459b34a40ee529f4070a274}
 Constructor.
 
 
 \begin{DoxyParams}{Parameters}
-{\em input\+Stream} & any stream derived from {\ttfamily std\+::istream}. The output stream must be created with the open flag {\ttfamily std\+::istream\+::binary}. \\
+{\em input\-Stream} & any stream derived from {\ttfamily std\-::istream}. The output stream must be created with the open flag {\ttfamily std\-::istream\-::binary}. \\
 \hline
 \end{DoxyParams}
-\hypertarget{classcmn_de_serializer_aa4685fa9d34c83c5f2e9e115396b956f}{}\index{cmn\+De\+Serializer@{cmn\+De\+Serializer}!````~cmn\+De\+Serializer@{$\sim$cmn\+De\+Serializer}}
-\index{````~cmn\+De\+Serializer@{$\sim$cmn\+De\+Serializer}!cmn\+De\+Serializer@{cmn\+De\+Serializer}}
-\subsubsection[{$\sim$cmn\+De\+Serializer}]{\setlength{\rightskip}{0pt plus 5cm}cmn\+De\+Serializer\+::$\sim$cmn\+De\+Serializer (
+\hypertarget{classcmn_de_serializer_aa4685fa9d34c83c5f2e9e115396b956f}{\index{cmn\-De\-Serializer@{cmn\-De\-Serializer}!$\sim$cmn\-De\-Serializer@{$\sim$cmn\-De\-Serializer}}
+\index{$\sim$cmn\-De\-Serializer@{$\sim$cmn\-De\-Serializer}!cmnDeSerializer@{cmn\-De\-Serializer}}
+\subsubsection[{$\sim$cmn\-De\-Serializer}]{\setlength{\rightskip}{0pt plus 5cm}cmn\-De\-Serializer\-::$\sim$cmn\-De\-Serializer (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}\label{classcmn_de_serializer_aa4685fa9d34c83c5f2e9e115396b956f}
+)}}\label{classcmn_de_serializer_aa4685fa9d34c83c5f2e9e115396b956f}
 Destructor 
 
 \subsection{Member Function Documentation}
-\hypertarget{classcmn_de_serializer_a97972734ea443add8c55f1874c343bee}{}\index{cmn\+De\+Serializer@{cmn\+De\+Serializer}!De\+Serialize@{De\+Serialize}}
-\index{De\+Serialize@{De\+Serialize}!cmn\+De\+Serializer@{cmn\+De\+Serializer}}
-\subsubsection[{De\+Serialize}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cmn\+Generic\+Object}$\ast$ cmn\+De\+Serializer\+::\+De\+Serialize (
+\hypertarget{classcmn_de_serializer_a97972734ea443add8c55f1874c343bee}{\index{cmn\-De\-Serializer@{cmn\-De\-Serializer}!De\-Serialize@{De\-Serialize}}
+\index{De\-Serialize@{De\-Serialize}!cmnDeSerializer@{cmn\-De\-Serializer}}
+\subsubsection[{De\-Serialize}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cmn\-Generic\-Object}$\ast$ cmn\-De\-Serializer\-::\-De\-Serialize (
 \begin{DoxyParamCaption}
-\item[{const bool}]{serialize\+Object = {\ttfamily true}}
+\item[{const bool}]{serialize\-Object = {\ttfamily true}}
 \end{DoxyParamCaption}
-)}\label{classcmn_de_serializer_a97972734ea443add8c55f1874c343bee}
-De-\/serialize an object from the input stream. This method will create an object dynamically therefore the class of the object serialized must have been registered using the flag \hyperlink{cmn_class_register_macros_8h_ae4935a070cfc17d287f22f52d5141b17}{C\+M\+N\+\_\+\+D\+Y\+N\+A\+M\+I\+C\+\_\+\+C\+R\+E\+A\+T\+I\+O\+N} (see \hyperlink{classcmn_class_services}{cmn\+Class\+Services} and \hyperlink{classcmn_class_register}{cmn\+Class\+Register}). This also requires to provide a default constructor for the given class.
+)}}\label{classcmn_de_serializer_a97972734ea443add8c55f1874c343bee}
+De-\/serialize an object from the input stream. This method will create an object dynamically therefore the class of the object serialized must have been registered using the flag \hyperlink{cmn_class_register_macros_8h_ae4935a070cfc17d287f22f52d5141b17}{C\-M\-N\-\_\-\-D\-Y\-N\-A\-M\-I\-C\-\_\-\-C\-R\-E\-A\-T\-I\-O\-N} (see \hyperlink{classcmn_class_services}{cmn\-Class\-Services} and \hyperlink{classcmn_class_register}{cmn\-Class\-Register}). This also requires to provide a default constructor for the given class.
 
 This method will deserialize one object only. If the stream contains some class identifiers (pair of class name, remote class identifer) it will read them all until an object is found.
 
 
 \begin{DoxyParams}{Parameters}
-{\em serialize\+Object} & If true, object content is serialized. If false, only class services is serialized and object content is not serialized. True by default.\\
+{\em serialize\-Object} & If true, object content is serialized. If false, only class services is serialized and object content is not serialized. True by default.\\
 \hline
 \end{DoxyParams}
 \begin{DoxyNote}{Note}
-As this method relies on cmn\+De\+Serialize\+Raw, it might throw an exception. 
+As this method relies on cmn\-De\-Serialize\-Raw, it might throw an exception. 
 \end{DoxyNote}
-\hypertarget{classcmn_de_serializer_a4be6c703211fbe1c6b9e890d733d7fa7}{}\index{cmn\+De\+Serializer@{cmn\+De\+Serializer}!De\+Serialize@{De\+Serialize}}
-\index{De\+Serialize@{De\+Serialize}!cmn\+De\+Serializer@{cmn\+De\+Serializer}}
-\subsubsection[{De\+Serialize}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type $>$ void cmn\+De\+Serializer\+::\+De\+Serialize (
+\hypertarget{classcmn_de_serializer_a4be6c703211fbe1c6b9e890d733d7fa7}{\index{cmn\-De\-Serializer@{cmn\-De\-Serializer}!De\-Serialize@{De\-Serialize}}
+\index{De\-Serialize@{De\-Serialize}!cmnDeSerializer@{cmn\-De\-Serializer}}
+\subsubsection[{De\-Serialize}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-element\-Type $>$ void cmn\-De\-Serializer\-::\-De\-Serialize (
 \begin{DoxyParamCaption}
-\item[{\+\_\+element\+Type \&}]{object, }
-\item[{const bool}]{serialize\+Object = {\ttfamily true}}
+\item[{\-\_\-element\-Type \&}]{object, }
+\item[{const bool}]{serialize\-Object = {\ttfamily true}}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\label{classcmn_de_serializer_a4be6c703211fbe1c6b9e890d733d7fa7}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcmn_de_serializer_a4be6c703211fbe1c6b9e890d733d7fa7}
 De-\/serialize an object from the input stream. This method will replace the object content by the data read from the input stream. There is no dynamic creation involved.
 
 This method will deserialize one object only. If the stream contains some class identifiers (pair of class name, remote class identifer) it will read them all until an object is found.
 
 \begin{DoxyNote}{Note}
-As this method relies on cmn\+De\+Serialize\+Raw, it might throw an exception. 
+As this method relies on cmn\-De\-Serialize\-Raw, it might throw an exception. 
 \end{DoxyNote}
-\hypertarget{classcmn_de_serializer_a601562de150fb39655137e1e7a12c1d1}{}\index{cmn\+De\+Serializer@{cmn\+De\+Serializer}!Reset@{Reset}}
-\index{Reset@{Reset}!cmn\+De\+Serializer@{cmn\+De\+Serializer}}
-\subsubsection[{Reset}]{\setlength{\rightskip}{0pt plus 5cm}void cmn\+De\+Serializer\+::\+Reset (
+\hypertarget{classcmn_de_serializer_a601562de150fb39655137e1e7a12c1d1}{\index{cmn\-De\-Serializer@{cmn\-De\-Serializer}!Reset@{Reset}}
+\index{Reset@{Reset}!cmnDeSerializer@{cmn\-De\-Serializer}}
+\subsubsection[{Reset}]{\setlength{\rightskip}{0pt plus 5cm}void cmn\-De\-Serializer\-::\-Reset (
 \begin{DoxyParamCaption}
 \item[{void}]{}
 \end{DoxyParamCaption}
-)}\label{classcmn_de_serializer_a601562de150fb39655137e1e7a12c1d1}
+)}}\label{classcmn_de_serializer_a601562de150fb39655137e1e7a12c1d1}
 Reset the list of types already received. 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
 \item 
-/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Common/\hyperlink{cmn_de_serializer_8h}{cmn\+De\+Serializer.\+h}\end{DoxyCompactItemize}
+/home/adeguet1/catkin\-\_\-ws/src/cisst-\/saw/cisst/cisst\-Common/\hyperlink{cmn_de_serializer_8h}{cmn\-De\-Serializer.\-h}\end{DoxyCompactItemize}

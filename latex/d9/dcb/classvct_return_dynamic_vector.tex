@@ -1,10 +1,11 @@
-\hypertarget{classvct_return_dynamic_vector}{}\section{vct\+Return\+Dynamic\+Vector$<$ \+\_\+element\+Type $>$ Class Template Reference}
-\label{classvct_return_dynamic_vector}\index{vct\+Return\+Dynamic\+Vector$<$ \+\_\+element\+Type $>$@{vct\+Return\+Dynamic\+Vector$<$ \+\_\+element\+Type $>$}}
+\hypertarget{classvct_return_dynamic_vector}{\section{vct\-Return\-Dynamic\-Vector$<$ \-\_\-element\-Type $>$ Class Template Reference}
+\label{classvct_return_dynamic_vector}\index{vct\-Return\-Dynamic\-Vector$<$ \-\_\-element\-Type $>$@{vct\-Return\-Dynamic\-Vector$<$ \-\_\-element\-Type $>$}}
+}
 
 
-{\ttfamily \#include $<$vct\+Dynamic\+Vector.\+h$>$}
+{\ttfamily \#include $<$vct\-Dynamic\-Vector.\-h$>$}
 
-Inheritance diagram for vct\+Return\+Dynamic\+Vector$<$ \+\_\+element\+Type $>$\+:\begin{figure}[H]
+Inheritance diagram for vct\-Return\-Dynamic\-Vector$<$ \-\_\-element\-Type $>$\-:\begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[height=4.000000cm]{d9/dcb/classvct_return_dynamic_vector}
@@ -13,39 +14,40 @@ Inheritance diagram for vct\+Return\+Dynamic\+Vector$<$ \+\_\+element\+Type $>$\
 \subsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
-typedef \hyperlink{classvct_dynamic_vector}{vct\+Dynamic\+Vector}$<$ \+\_\+element\+Type $>$ \hyperlink{classvct_return_dynamic_vector_aec5f994308da32f15af397a1f89ca23d}{Base\+Type}
+typedef \hyperlink{classvct_dynamic_vector}{vct\-Dynamic\-Vector}\\*
+$<$ \-\_\-element\-Type $>$ \hyperlink{classvct_return_dynamic_vector_aec5f994308da32f15af397a1f89ca23d}{Base\-Type}
 \end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classvct_return_dynamic_vector_a5df1d2e9fe43ee64b25125657618b8bd}{vct\+Return\+Dynamic\+Vector} (const \hyperlink{classvct_dynamic_vector_aab0ea4a1ec16f7694beb39869ab780bf}{Base\+Type} \&other)
+\hyperlink{classvct_return_dynamic_vector_a5df1d2e9fe43ee64b25125657618b8bd}{vct\-Return\-Dynamic\-Vector} (const \hyperlink{classvct_dynamic_vector_aab0ea4a1ec16f7694beb39869ab780bf}{Base\-Type} \&other)
 \end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
 
 \subsection{Detailed Description}
-\subsubsection*{template$<$class \+\_\+element\+Type$>$class vct\+Return\+Dynamic\+Vector$<$ \+\_\+element\+Type $>$}
+\subsubsection*{template$<$class \-\_\-element\-Type$>$class vct\-Return\-Dynamic\-Vector$<$ \-\_\-element\-Type $>$}
 
-Class \hyperlink{classvct_return_dynamic_vector}{vct\+Return\+Dynamic\+Vector} is specialized to store a temporary vector object by transfering ownership. An object of this class has all the methods inherited from \hyperlink{classvct_dynamic_vector}{vct\+Dynamic\+Vector}, but can only be constructed in one way -- taking the ownership from another \hyperlink{classvct_dynamic_vector}{vct\+Dynamic\+Vector} (or \hyperlink{classvct_return_dynamic_vector}{vct\+Return\+Dynamic\+Vector}) object. In turn, when an assignment occurs from a \hyperlink{classvct_return_dynamic_vector}{vct\+Return\+Dynamic\+Vector} to a \hyperlink{classvct_dynamic_vector}{vct\+Dynamic\+Vector} (or likewise construction), the lhs \hyperlink{classvct_dynamic_vector}{vct\+Dynamic\+Vector} strips this object from the ownership of the data.
+Class \hyperlink{classvct_return_dynamic_vector}{vct\-Return\-Dynamic\-Vector} is specialized to store a temporary vector object by transfering ownership. An object of this class has all the methods inherited from \hyperlink{classvct_dynamic_vector}{vct\-Dynamic\-Vector}, but can only be constructed in one way -- taking the ownership from another \hyperlink{classvct_dynamic_vector}{vct\-Dynamic\-Vector} (or \hyperlink{classvct_return_dynamic_vector}{vct\-Return\-Dynamic\-Vector}) object. In turn, when an assignment occurs from a \hyperlink{classvct_return_dynamic_vector}{vct\-Return\-Dynamic\-Vector} to a \hyperlink{classvct_dynamic_vector}{vct\-Dynamic\-Vector} (or likewise construction), the lhs \hyperlink{classvct_dynamic_vector}{vct\-Dynamic\-Vector} strips this object from the ownership of the data.
 
-Use this class only when you want to return a newly created dynamic vector from a function, without going through memory allocation and deallocation. Never use it on an object that is going to remain in scope after constructing the \hyperlink{classvct_return_dynamic_vector}{vct\+Return\+Dynamic\+Vector}. 
+Use this class only when you want to return a newly created dynamic vector from a function, without going through memory allocation and deallocation. Never use it on an object that is going to remain in scope after constructing the \hyperlink{classvct_return_dynamic_vector}{vct\-Return\-Dynamic\-Vector}. 
 
 \subsection{Member Typedef Documentation}
-\hypertarget{classvct_return_dynamic_vector_aec5f994308da32f15af397a1f89ca23d}{}\index{vct\+Return\+Dynamic\+Vector@{vct\+Return\+Dynamic\+Vector}!Base\+Type@{Base\+Type}}
-\index{Base\+Type@{Base\+Type}!vct\+Return\+Dynamic\+Vector@{vct\+Return\+Dynamic\+Vector}}
-\subsubsection[{Base\+Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ typedef {\bf vct\+Dynamic\+Vector}$<$\+\_\+element\+Type$>$ {\bf vct\+Return\+Dynamic\+Vector}$<$ \+\_\+element\+Type $>$\+::{\bf Base\+Type}}\label{classvct_return_dynamic_vector_aec5f994308da32f15af397a1f89ca23d}
-Base type of \hyperlink{classvct_return_dynamic_vector}{vct\+Return\+Dynamic\+Vector}. 
+\hypertarget{classvct_return_dynamic_vector_aec5f994308da32f15af397a1f89ca23d}{\index{vct\-Return\-Dynamic\-Vector@{vct\-Return\-Dynamic\-Vector}!Base\-Type@{Base\-Type}}
+\index{Base\-Type@{Base\-Type}!vctReturnDynamicVector@{vct\-Return\-Dynamic\-Vector}}
+\subsubsection[{Base\-Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-element\-Type$>$ typedef {\bf vct\-Dynamic\-Vector}$<$\-\_\-element\-Type$>$ {\bf vct\-Return\-Dynamic\-Vector}$<$ \-\_\-element\-Type $>$\-::{\bf Base\-Type}}}\label{classvct_return_dynamic_vector_aec5f994308da32f15af397a1f89ca23d}
+Base type of \hyperlink{classvct_return_dynamic_vector}{vct\-Return\-Dynamic\-Vector}. 
 
 \subsection{Constructor \& Destructor Documentation}
-\hypertarget{classvct_return_dynamic_vector_a5df1d2e9fe43ee64b25125657618b8bd}{}\index{vct\+Return\+Dynamic\+Vector@{vct\+Return\+Dynamic\+Vector}!vct\+Return\+Dynamic\+Vector@{vct\+Return\+Dynamic\+Vector}}
-\index{vct\+Return\+Dynamic\+Vector@{vct\+Return\+Dynamic\+Vector}!vct\+Return\+Dynamic\+Vector@{vct\+Return\+Dynamic\+Vector}}
-\subsubsection[{vct\+Return\+Dynamic\+Vector}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+element\+Type$>$ {\bf vct\+Return\+Dynamic\+Vector}$<$ \+\_\+element\+Type $>$\+::{\bf vct\+Return\+Dynamic\+Vector} (
+\hypertarget{classvct_return_dynamic_vector_a5df1d2e9fe43ee64b25125657618b8bd}{\index{vct\-Return\-Dynamic\-Vector@{vct\-Return\-Dynamic\-Vector}!vct\-Return\-Dynamic\-Vector@{vct\-Return\-Dynamic\-Vector}}
+\index{vct\-Return\-Dynamic\-Vector@{vct\-Return\-Dynamic\-Vector}!vctReturnDynamicVector@{vct\-Return\-Dynamic\-Vector}}
+\subsubsection[{vct\-Return\-Dynamic\-Vector}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-element\-Type$>$ {\bf vct\-Return\-Dynamic\-Vector}$<$ \-\_\-element\-Type $>$\-::{\bf vct\-Return\-Dynamic\-Vector} (
 \begin{DoxyParamCaption}
-\item[{const {\bf Base\+Type} \&}]{other}
+\item[{const {\bf Base\-Type} \&}]{other}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}\label{classvct_return_dynamic_vector_a5df1d2e9fe43ee64b25125657618b8bd}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}}\label{classvct_return_dynamic_vector_a5df1d2e9fe43ee64b25125657618b8bd}
 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
 \item 
-/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Vector/\hyperlink{vct_dynamic_vector_8h}{vct\+Dynamic\+Vector.\+h}\end{DoxyCompactItemize}
+/home/adeguet1/catkin\-\_\-ws/src/cisst-\/saw/cisst/cisst\-Vector/\hyperlink{vct_dynamic_vector_8h}{vct\-Dynamic\-Vector.\-h}\end{DoxyCompactItemize}

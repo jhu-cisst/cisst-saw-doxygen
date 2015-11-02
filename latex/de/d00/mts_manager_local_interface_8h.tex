@@ -1,31 +1,30 @@
-\hypertarget{mts_manager_local_interface_8h}{}\section{/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Multi\+Task/mts\+Manager\+Local\+Interface.h File Reference}
-\label{mts_manager_local_interface_8h}\index{/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Multi\+Task/mts\+Manager\+Local\+Interface.\+h@{/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Multi\+Task/mts\+Manager\+Local\+Interface.\+h}}
+\hypertarget{mts_manager_local_interface_8h}{\section{/home/adeguet1/catkin\-\_\-ws/src/cisst-\/saw/cisst/cisst\-Multi\-Task/mts\-Manager\-Local\-Interface.h File Reference}
+\label{mts_manager_local_interface_8h}\index{/home/adeguet1/catkin\-\_\-ws/src/cisst-\/saw/cisst/cisst\-Multi\-Task/mts\-Manager\-Local\-Interface.\-h@{/home/adeguet1/catkin\-\_\-ws/src/cisst-\/saw/cisst/cisst\-Multi\-Task/mts\-Manager\-Local\-Interface.\-h}}
+}
 
 
-Definition of \hyperlink{classmts_manager_local_interface}{mts\+Manager\+Local\+Interface}
+Definition of \hyperlink{classmts_manager_local_interface}{mts\-Manager\-Local\-Interface}
 
-This class defines an interface used by the global component manager to communicate with local component managers. The interface is defined as a pure abstract class to support two different configurations that this interface is used for\+:  
+This class defines an interface used by the global component manager to communicate with local component managers. The interface is defined as a pure abstract class to support two different configurations that this interface is used for\-:  
 
 
-{\ttfamily \#include $<$cisst\+Common/cmn\+Class\+Register.\+h$>$}\\*
-{\ttfamily \#include $<$cisst\+Common/cmn\+Generic\+Object.\+h$>$}\\*
-{\ttfamily \#include $<$cisst\+Multi\+Task/mts\+Config.\+h$>$}\\*
-{\ttfamily \#include $<$cisst\+Multi\+Task/mts\+Interface\+Common.\+h$>$}\\*
-{\ttfamily \#include $<$cisst\+Multi\+Task/mts\+Parameter\+Types.\+h$>$}\\*
-{\ttfamily \#include $<$cisst\+O\+S\+Abstraction/osa\+Time\+Server.\+h$>$}\\*
-{\ttfamily \#include $<$cisst\+Multi\+Task/mts\+Export.\+h$>$}\\*
+{\ttfamily \#include $<$cisst\-Common/cmn\-Class\-Register.\-h$>$}\\*
+{\ttfamily \#include $<$cisst\-Common/cmn\-Generic\-Object.\-h$>$}\\*
+{\ttfamily \#include $<$cisst\-Multi\-Task/mts\-Config.\-h$>$}\\*
+{\ttfamily \#include $<$cisst\-Multi\-Task/mts\-Interface\-Common.\-h$>$}\\*
+{\ttfamily \#include $<$cisst\-Multi\-Task/mts\-Parameter\-Types.\-h$>$}\\*
+{\ttfamily \#include $<$cisst\-O\-S\-Abstraction/osa\-Time\-Server.\-h$>$}\\*
+{\ttfamily \#include $<$cisst\-Multi\-Task/mts\-Export.\-h$>$}\\*
 \subsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
-class \hyperlink{classmts_manager_local_interface}{mts\+Manager\+Local\+Interface}
+class \hyperlink{classmts_manager_local_interface}{mts\-Manager\-Local\-Interface}
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-Definition of \hyperlink{classmts_manager_local_interface}{mts\+Manager\+Local\+Interface}
+Definition of \hyperlink{classmts_manager_local_interface}{mts\-Manager\-Local\-Interface}
 
-This class defines an interface used by the global component manager to communicate with local component managers. The interface is defined as a pure abstract class to support two different configurations that this interface is used for\+: 
+This class defines an interface used by the global component manager to communicate with local component managers. The interface is defined as a pure abstract class to support two different configurations that this interface is used for\-: Standalone mode\-: Inter-\/thread communication, no I\-C\-E. A local component manager directly connects to the global component manager that runs in the same process. In this case, the global component manager keeps an instance of type \hyperlink{classmts_manager_local}{mts\-Manager\-Local}.
 
-Standalone mode\+: Inter-\/thread communication, no I\+C\+E. A local component manager directly connects to the global component manager that runs in the same process. In this case, the global component manager keeps an instance of type \hyperlink{classmts_manager_local}{mts\+Manager\+Local}.
-
-Network mode\+: Inter-\/process communication, I\+C\+E enabled. Local component managers connect to the global component manager via a network proxy. In this case, the global component manager keeps an instance of type mts\+Manager\+Proxy\+Server. 
+Network mode\-: Inter-\/process communication, I\-C\-E enabled. Local component managers connect to the global component manager via a network proxy. In this case, the global component manager keeps an instance of type mts\-Manager\-Proxy\-Server. 

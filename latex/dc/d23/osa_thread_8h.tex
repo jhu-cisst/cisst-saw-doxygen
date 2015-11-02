@@ -1,98 +1,97 @@
-\hypertarget{osa_thread_8h}{}\section{/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+O\+S\+Abstraction/osa\+Thread.h File Reference}
-\label{osa_thread_8h}\index{/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+O\+S\+Abstraction/osa\+Thread.\+h@{/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+O\+S\+Abstraction/osa\+Thread.\+h}}
+\hypertarget{osa_thread_8h}{\section{/home/adeguet1/catkin\-\_\-ws/src/cisst-\/saw/cisst/cisst\-O\-S\-Abstraction/osa\-Thread.h File Reference}
+\label{osa_thread_8h}\index{/home/adeguet1/catkin\-\_\-ws/src/cisst-\/saw/cisst/cisst\-O\-S\-Abstraction/osa\-Thread.\-h@{/home/adeguet1/catkin\-\_\-ws/src/cisst-\/saw/cisst/cisst\-O\-S\-Abstraction/osa\-Thread.\-h}}
+}
 
 
-Declaration of \hyperlink{classosa_thread}{osa\+Thread}.  
+Declaration of \hyperlink{classosa_thread}{osa\-Thread}.  
 
 
-{\ttfamily \#include $<$cisst\+Common/cmn\+Portability.\+h$>$}\\*
-{\ttfamily \#include $<$cisst\+O\+S\+Abstraction/osa\+Thread\+Adapter.\+h$>$}\\*
-{\ttfamily \#include $<$cisst\+O\+S\+Abstraction/osa\+Thread\+Signal.\+h$>$}\\*
-{\ttfamily \#include $<$cisst\+O\+S\+Abstraction/osa\+Export.\+h$>$}\\*
-{\ttfamily \#include $<$pthread.\+h$>$}\\*
+{\ttfamily \#include $<$cisst\-Common/cmn\-Portability.\-h$>$}\\*
+{\ttfamily \#include $<$cisst\-O\-S\-Abstraction/osa\-Thread\-Adapter.\-h$>$}\\*
+{\ttfamily \#include $<$cisst\-O\-S\-Abstraction/osa\-Thread\-Signal.\-h$>$}\\*
+{\ttfamily \#include $<$cisst\-O\-S\-Abstraction/osa\-Export.\-h$>$}\\*
+{\ttfamily \#include $<$pthread.\-h$>$}\\*
 \subsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
-class \hyperlink{classosa_thread_id}{osa\+Thread\+Id}
-\begin{DoxyCompactList}\small\item\em Thread\+Id type. \end{DoxyCompactList}\item 
-class \hyperlink{classosa_thread}{osa\+Thread}
+class \hyperlink{classosa_thread_id}{osa\-Thread\-Id}
+\begin{DoxyCompactList}\small\item\em Thread\-Id type. \end{DoxyCompactList}\item 
+class \hyperlink{classosa_thread}{osa\-Thread}
 \begin{DoxyCompactList}\small\item\em Define a thread object. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Macros}
 \begin{DoxyCompactItemize}
 \item 
-\#define \hyperlink{osa_thread_8h_ab998332c6538a029b4eed398b7a423da}{S\+C\+H\+E\+D\+\_\+\+F\+I\+F\+O}~0   /$\ast$! No Scheduling Policy available in Windows $\ast$/
+\#define \hyperlink{osa_thread_8h_ab998332c6538a029b4eed398b7a423da}{S\-C\-H\-E\-D\-\_\-\-F\-I\-F\-O}~0   /$\ast$! No Scheduling Policy available in Windows $\ast$/
 \end{DoxyCompactItemize}
 \subsection*{Typedefs}
 \begin{DoxyCompactItemize}
 \item 
-typedef int \hyperlink{osa_thread_8h_a118e6f24bad4e18e7d179bb41166ae8c}{Priority\+Type}
-\begin{DoxyCompactList}\small\item\em Priority\+Type and Scheduling\+Policy\+Type. \end{DoxyCompactList}\item 
-typedef int \hyperlink{osa_thread_8h_a52b64f646398cfbb451b035825642724}{Scheduling\+Policy\+Type}
-\begin{DoxyCompactList}\small\item\em Scheduling\+Policy\+Type. For now Scheduling\+Policy is typedef\textquotesingle{}ed to int. \end{DoxyCompactList}\end{DoxyCompactItemize}
+typedef int \hyperlink{osa_thread_8h_a118e6f24bad4e18e7d179bb41166ae8c}{Priority\-Type}
+\begin{DoxyCompactList}\small\item\em Priority\-Type and Scheduling\-Policy\-Type. \end{DoxyCompactList}\item 
+typedef int \hyperlink{osa_thread_8h_a52b64f646398cfbb451b035825642724}{Scheduling\-Policy\-Type}
+\begin{DoxyCompactList}\small\item\em Scheduling\-Policy\-Type. For now Scheduling\-Policy is typedef'ed to int. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-std\+::ostream \& \hyperlink{osa_thread_8h_aa39f8f99e125edf630108e2631dddcb2}{operator$<$$<$} (std\+::ostream \&output, const \hyperlink{classosa_thread_id}{osa\+Thread\+Id} \&thread\+Id)
+std\-::ostream \& \hyperlink{osa_thread_8h_aa39f8f99e125edf630108e2631dddcb2}{operator$<$$<$} (std\-::ostream \&output, const \hyperlink{classosa_thread_id}{osa\-Thread\-Id} \&thread\-Id)
 \item 
-\hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} \hyperlink{classosa_thread_id}{osa\+Thread\+Id} \hyperlink{osa_thread_8h_ab77759b2805dbd140c65481a68760ab5}{osa\+Get\+Current\+Thread\+Id} (void)
+\hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{C\-I\-S\-S\-T\-\_\-\-E\-X\-P\-O\-R\-T} \hyperlink{classosa_thread_id}{osa\-Thread\-Id} \hyperlink{osa_thread_8h_ab77759b2805dbd140c65481a68760ab5}{osa\-Get\-Current\-Thread\-Id} (void)
 \item 
-\hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} void \hyperlink{osa_thread_8h_af4f2a70806dd16f373d27e5efdaad598}{osa\+Current\+Thread\+Yield} (void)
+\hyperlink{cmn_export_macros_8h_a99393e0c3ac434b2605235bbe20684f8}{C\-I\-S\-S\-T\-\_\-\-E\-X\-P\-O\-R\-T} void \hyperlink{osa_thread_8h_af4f2a70806dd16f373d27e5efdaad598}{osa\-Current\-Thread\-Yield} (void)
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-Declaration of \hyperlink{classosa_thread}{osa\+Thread}. 
-
-
+Declaration of \hyperlink{classosa_thread}{osa\-Thread}. 
 
 \subsection{Macro Definition Documentation}
-\hypertarget{osa_thread_8h_ab998332c6538a029b4eed398b7a423da}{}\index{osa\+Thread.\+h@{osa\+Thread.\+h}!S\+C\+H\+E\+D\+\_\+\+F\+I\+F\+O@{S\+C\+H\+E\+D\+\_\+\+F\+I\+F\+O}}
-\index{S\+C\+H\+E\+D\+\_\+\+F\+I\+F\+O@{S\+C\+H\+E\+D\+\_\+\+F\+I\+F\+O}!osa\+Thread.\+h@{osa\+Thread.\+h}}
-\subsubsection[{S\+C\+H\+E\+D\+\_\+\+F\+I\+F\+O}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+C\+H\+E\+D\+\_\+\+F\+I\+F\+O~0   /$\ast$! No Scheduling Policy available in Windows $\ast$/}\label{osa_thread_8h_ab998332c6538a029b4eed398b7a423da}
+\hypertarget{osa_thread_8h_ab998332c6538a029b4eed398b7a423da}{\index{osa\-Thread.\-h@{osa\-Thread.\-h}!S\-C\-H\-E\-D\-\_\-\-F\-I\-F\-O@{S\-C\-H\-E\-D\-\_\-\-F\-I\-F\-O}}
+\index{S\-C\-H\-E\-D\-\_\-\-F\-I\-F\-O@{S\-C\-H\-E\-D\-\_\-\-F\-I\-F\-O}!osaThread.h@{osa\-Thread.\-h}}
+\subsubsection[{S\-C\-H\-E\-D\-\_\-\-F\-I\-F\-O}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\-C\-H\-E\-D\-\_\-\-F\-I\-F\-O~0   /$\ast$! No Scheduling Policy available in Windows $\ast$/}}\label{osa_thread_8h_ab998332c6538a029b4eed398b7a423da}
 
 
 \subsection{Typedef Documentation}
-\hypertarget{osa_thread_8h_a118e6f24bad4e18e7d179bb41166ae8c}{}\index{osa\+Thread.\+h@{osa\+Thread.\+h}!Priority\+Type@{Priority\+Type}}
-\index{Priority\+Type@{Priority\+Type}!osa\+Thread.\+h@{osa\+Thread.\+h}}
-\subsubsection[{Priority\+Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef int {\bf Priority\+Type}}\label{osa_thread_8h_a118e6f24bad4e18e7d179bb41166ae8c}
+\hypertarget{osa_thread_8h_a118e6f24bad4e18e7d179bb41166ae8c}{\index{osa\-Thread.\-h@{osa\-Thread.\-h}!Priority\-Type@{Priority\-Type}}
+\index{Priority\-Type@{Priority\-Type}!osaThread.h@{osa\-Thread.\-h}}
+\subsubsection[{Priority\-Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef int {\bf Priority\-Type}}}\label{osa_thread_8h_a118e6f24bad4e18e7d179bb41166ae8c}
 
 
-Priority\+Type and Scheduling\+Policy\+Type. 
+Priority\-Type and Scheduling\-Policy\-Type. 
 
-For now these are just typedefs to integers. I would like to have a common return value for all O\+S. Maybe an enum, but the problem is that the granularity in any linux flavor is much much larger than windows. \hypertarget{osa_thread_8h_a52b64f646398cfbb451b035825642724}{}\index{osa\+Thread.\+h@{osa\+Thread.\+h}!Scheduling\+Policy\+Type@{Scheduling\+Policy\+Type}}
-\index{Scheduling\+Policy\+Type@{Scheduling\+Policy\+Type}!osa\+Thread.\+h@{osa\+Thread.\+h}}
-\subsubsection[{Scheduling\+Policy\+Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef int {\bf Scheduling\+Policy\+Type}}\label{osa_thread_8h_a52b64f646398cfbb451b035825642724}
+For now these are just typedefs to integers. I would like to have a common return value for all O\-S. Maybe an enum, but the problem is that the granularity in any linux flavor is much much larger than windows. \hypertarget{osa_thread_8h_a52b64f646398cfbb451b035825642724}{\index{osa\-Thread.\-h@{osa\-Thread.\-h}!Scheduling\-Policy\-Type@{Scheduling\-Policy\-Type}}
+\index{Scheduling\-Policy\-Type@{Scheduling\-Policy\-Type}!osaThread.h@{osa\-Thread.\-h}}
+\subsubsection[{Scheduling\-Policy\-Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef int {\bf Scheduling\-Policy\-Type}}}\label{osa_thread_8h_a52b64f646398cfbb451b035825642724}
 
 
-Scheduling\+Policy\+Type. For now Scheduling\+Policy is typedef\textquotesingle{}ed to int. 
+Scheduling\-Policy\-Type. For now Scheduling\-Policy is typedef'ed to int. 
 
 
 
 \subsection{Function Documentation}
-\hypertarget{osa_thread_8h_aa39f8f99e125edf630108e2631dddcb2}{}\index{osa\+Thread.\+h@{osa\+Thread.\+h}!operator$<$$<$@{operator$<$$<$}}
-\index{operator$<$$<$@{operator$<$$<$}!osa\+Thread.\+h@{osa\+Thread.\+h}}
-\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}std\+::ostream\& operator$<$$<$ (
+\hypertarget{osa_thread_8h_aa39f8f99e125edf630108e2631dddcb2}{\index{osa\-Thread.\-h@{osa\-Thread.\-h}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!osaThread.h@{osa\-Thread.\-h}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}std\-::ostream\& operator$<$$<$ (
 \begin{DoxyParamCaption}
-\item[{std\+::ostream \&}]{output, }
-\item[{const {\bf osa\+Thread\+Id} \&}]{thread\+Id}
+\item[{std\-::ostream \&}]{output, }
+\item[{const {\bf osa\-Thread\-Id} \&}]{thread\-Id}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\label{osa_thread_8h_aa39f8f99e125edf630108e2631dddcb2}
-Stream operator for a thread Id, see \hyperlink{classosa_thread_id}{osa\+Thread\+Id}. \hypertarget{osa_thread_8h_af4f2a70806dd16f373d27e5efdaad598}{}\index{osa\+Thread.\+h@{osa\+Thread.\+h}!osa\+Current\+Thread\+Yield@{osa\+Current\+Thread\+Yield}}
-\index{osa\+Current\+Thread\+Yield@{osa\+Current\+Thread\+Yield}!osa\+Thread.\+h@{osa\+Thread.\+h}}
-\subsubsection[{osa\+Current\+Thread\+Yield}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} void osa\+Current\+Thread\+Yield (
-\begin{DoxyParamCaption}
-\item[{void}]{}
-\end{DoxyParamCaption}
-)}\label{osa_thread_8h_af4f2a70806dd16f373d27e5efdaad598}
-Yield the current thread. Stops the current thread and takes it at the end of the list of ready threads having its same priority. The scheduler makes the next ready thread of the same priority active. \hypertarget{osa_thread_8h_ab77759b2805dbd140c65481a68760ab5}{}\index{osa\+Thread.\+h@{osa\+Thread.\+h}!osa\+Get\+Current\+Thread\+Id@{osa\+Get\+Current\+Thread\+Id}}
-\index{osa\+Get\+Current\+Thread\+Id@{osa\+Get\+Current\+Thread\+Id}!osa\+Thread.\+h@{osa\+Thread.\+h}}
-\subsubsection[{osa\+Get\+Current\+Thread\+Id}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+I\+S\+S\+T\+\_\+\+E\+X\+P\+O\+R\+T} {\bf osa\+Thread\+Id} osa\+Get\+Current\+Thread\+Id (
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{osa_thread_8h_aa39f8f99e125edf630108e2631dddcb2}
+Stream operator for a thread Id, see \hyperlink{classosa_thread_id}{osa\-Thread\-Id}. \hypertarget{osa_thread_8h_af4f2a70806dd16f373d27e5efdaad598}{\index{osa\-Thread.\-h@{osa\-Thread.\-h}!osa\-Current\-Thread\-Yield@{osa\-Current\-Thread\-Yield}}
+\index{osa\-Current\-Thread\-Yield@{osa\-Current\-Thread\-Yield}!osaThread.h@{osa\-Thread.\-h}}
+\subsubsection[{osa\-Current\-Thread\-Yield}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-I\-S\-S\-T\-\_\-\-E\-X\-P\-O\-R\-T} void osa\-Current\-Thread\-Yield (
 \begin{DoxyParamCaption}
 \item[{void}]{}
 \end{DoxyParamCaption}
-)}\label{osa_thread_8h_ab77759b2805dbd140c65481a68760ab5}
-Get the I\+D of the currently executing thread.
+)}}\label{osa_thread_8h_af4f2a70806dd16f373d27e5efdaad598}
+Yield the current thread. Stops the current thread and takes it at the end of the list of ready threads having its same priority. The scheduler makes the next ready thread of the same priority active. \hypertarget{osa_thread_8h_ab77759b2805dbd140c65481a68760ab5}{\index{osa\-Thread.\-h@{osa\-Thread.\-h}!osa\-Get\-Current\-Thread\-Id@{osa\-Get\-Current\-Thread\-Id}}
+\index{osa\-Get\-Current\-Thread\-Id@{osa\-Get\-Current\-Thread\-Id}!osaThread.h@{osa\-Thread.\-h}}
+\subsubsection[{osa\-Get\-Current\-Thread\-Id}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-I\-S\-S\-T\-\_\-\-E\-X\-P\-O\-R\-T} {\bf osa\-Thread\-Id} osa\-Get\-Current\-Thread\-Id (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{osa_thread_8h_ab77759b2805dbd140c65481a68760ab5}
+Get the I\-D of the currently executing thread.
 
-\begin{DoxySeeAlso}{See also}
-\hyperlink{classosa_thread_id}{osa\+Thread\+Id} 
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classosa_thread_id}{osa\-Thread\-Id} 
 \end{DoxySeeAlso}

@@ -1,15 +1,16 @@
-\hypertarget{classmts_w_a_m}{}\section{mts\+W\+A\+M Class Reference}
-\label{classmts_w_a_m}\index{mts\+W\+A\+M@{mts\+W\+A\+M}}
+\hypertarget{classmts_w_a_m}{\section{mts\-W\-A\-M Class Reference}
+\label{classmts_w_a_m}\index{mts\-W\-A\-M@{mts\-W\-A\-M}}
+}
 
 
-A clas for a W\+A\+M device.  
+A clas for a W\-A\-M device.  
 
 
 
 
-{\ttfamily \#include $<$mts\+W\+A\+M.\+h$>$}
+{\ttfamily \#include $<$mts\-W\-A\-M.\-h$>$}
 
-Inheritance diagram for mts\+W\+A\+M\+:\begin{figure}[H]
+Inheritance diagram for mts\-W\-A\-M\-:\begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[height=5.000000cm]{d9/d45/classmts_w_a_m}
@@ -18,9 +19,9 @@ Inheritance diagram for mts\+W\+A\+M\+:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classmts_w_a_m_a21fd1872a7f226ad67152896a5cb2909}{mts\+W\+A\+M} (const std\+::string \&name, \hyperlink{classosa_c_a_n_bus}{osa\+C\+A\+N\+Bus} $\ast$canbus, \hyperlink{classosa_w_a_m_ada0b00e10e6401b6b1801cd08f30748b}{osa\+W\+A\+M\+::\+Configuration} configuration=\hyperlink{classosa_w_a_m_ada0b00e10e6401b6b1801cd08f30748ba1bdf2662bd26c893783934b814db4ac3}{W\+A\+M\+\_\+7\+D\+O\+F}, \hyperlink{osa_c_p_u_affinity_8h_aaec7cdd7797e5e6eb5438c15fee5477a}{osa\+C\+P\+U\+Mask} cpumask=\hyperlink{osa_c_p_u_affinity_8h_a2ae5ea257830cff2814d81ce526ada35}{O\+S\+A\+\_\+\+C\+P\+U\+A\+N\+Y}, int priority=80)
+\hyperlink{classmts_w_a_m_a21fd1872a7f226ad67152896a5cb2909}{mts\-W\-A\-M} (const std\-::string \&name, \hyperlink{classosa_c_a_n_bus}{osa\-C\-A\-N\-Bus} $\ast$canbus, \hyperlink{classosa_w_a_m_ada0b00e10e6401b6b1801cd08f30748b}{osa\-W\-A\-M\-::\-Configuration} configuration=\hyperlink{classosa_w_a_m_ada0b00e10e6401b6b1801cd08f30748ba1bdf2662bd26c893783934b814db4ac3}{W\-A\-M\-\_\-7\-D\-O\-F}, \hyperlink{osa_c_p_u_affinity_8h_aaec7cdd7797e5e6eb5438c15fee5477a}{osa\-C\-P\-U\-Mask} cpumask=\hyperlink{osa_c_p_u_affinity_8h_a2ae5ea257830cff2814d81ce526ada35}{O\-S\-A\-\_\-\-C\-P\-U\-A\-N\-Y}, int priority=80)
 \item 
-void \hyperlink{classmts_w_a_m_a116d9eaaa932057699aab1fd4a8cd71e}{Configure} (const std\+::string \&\hyperlink{cmn_portability_8h_a021894e2626935fa2305434b1e893ff6}{C\+M\+N\+\_\+\+U\+N\+U\+S\+E\+D}(argv)=\char`\"{}\char`\"{})
+void \hyperlink{classmts_w_a_m_a116d9eaaa932057699aab1fd4a8cd71e}{Configure} (const std\-::string \&\hyperlink{cmn_portability_8h_a021894e2626935fa2305434b1e893ff6}{C\-M\-N\-\_\-\-U\-N\-U\-S\-E\-D}(argv)=\char`\"{}\char`\"{})
 \item 
 void \hyperlink{classmts_w_a_m_a30637b31116e47f42251b0c802257228}{Startup} ()
 \item 
@@ -32,67 +33,67 @@ void \hyperlink{classmts_w_a_m_a6271503261b6ff57b615fd78dd5bcc13}{Cleanup} ()
 
 
 \subsection{Detailed Description}
-A clas for a W\+A\+M device. 
+A clas for a W\-A\-M device. 
 
-Whole Arm Manipulator (W\+A\+M) is a 4-\/7\+D\+O\+F robot manufactured by \hyperlink{struct_barrett}{Barrett} Tech. From a device perspective the W\+A\+M can be interfaced from either an ethernet device (wired or wireless) or a C\+A\+N device. On the W\+A\+M, the ethernet device is connected to a P\+C104. Thus, when using ethernet you can communicate with the onboard computer through a shell or client/server. The downside of this is that the P\+C104 does all the (C\+A\+N) communication with the motors and much of the computation as well. The P\+C104 can be bypassed and the motor can be controlled by an external P\+C (see the documentation on how to configure the switches). For this, the external P\+C must have a C\+A\+N device and the communication with the hardware must be established and maintained. The \hyperlink{classmts_w_a_m}{mts\+W\+A\+M} class implements a W\+A\+M that can be controlled from an external P\+C. Thus it manages the C\+A\+N bus, the pucks present on the C\+A\+N bus and the W\+A\+M\textquotesingle{}s safety module. Operations are pretty basic\+: set motors torques, set motor positions and get motor positions. 
+Whole Arm Manipulator (W\-A\-M) is a 4-\/7\-D\-O\-F robot manufactured by \hyperlink{struct_barrett}{Barrett} Tech. From a device perspective the W\-A\-M can be interfaced from either an ethernet device (wired or wireless) or a C\-A\-N device. On the W\-A\-M, the ethernet device is connected to a P\-C104. Thus, when using ethernet you can communicate with the onboard computer through a shell or client/server. The downside of this is that the P\-C104 does all the (C\-A\-N) communication with the motors and much of the computation as well. The P\-C104 can be bypassed and the motor can be controlled by an external P\-C (see the documentation on how to configure the switches). For this, the external P\-C must have a C\-A\-N device and the communication with the hardware must be established and maintained. The \hyperlink{classmts_w_a_m}{mts\-W\-A\-M} class implements a W\-A\-M that can be controlled from an external P\-C. Thus it manages the C\-A\-N bus, the pucks present on the C\-A\-N bus and the W\-A\-M's safety module. Operations are pretty basic\-: set motors torques, set motor positions and get motor positions. 
 
 \subsection{Constructor \& Destructor Documentation}
-\hypertarget{classmts_w_a_m_a21fd1872a7f226ad67152896a5cb2909}{}\index{mts\+W\+A\+M@{mts\+W\+A\+M}!mts\+W\+A\+M@{mts\+W\+A\+M}}
-\index{mts\+W\+A\+M@{mts\+W\+A\+M}!mts\+W\+A\+M@{mts\+W\+A\+M}}
-\subsubsection[{mts\+W\+A\+M}]{\setlength{\rightskip}{0pt plus 5cm}mts\+W\+A\+M\+::mts\+W\+A\+M (
+\hypertarget{classmts_w_a_m_a21fd1872a7f226ad67152896a5cb2909}{\index{mts\-W\-A\-M@{mts\-W\-A\-M}!mts\-W\-A\-M@{mts\-W\-A\-M}}
+\index{mts\-W\-A\-M@{mts\-W\-A\-M}!mtsWAM@{mts\-W\-A\-M}}
+\subsubsection[{mts\-W\-A\-M}]{\setlength{\rightskip}{0pt plus 5cm}mts\-W\-A\-M\-::mts\-W\-A\-M (
 \begin{DoxyParamCaption}
-\item[{const std\+::string \&}]{name, }
-\item[{{\bf osa\+C\+A\+N\+Bus} $\ast$}]{canbus, }
-\item[{{\bf osa\+W\+A\+M\+::\+Configuration}}]{configuration = {\ttfamily {\bf W\+A\+M\+\_\+7\+D\+O\+F}}, }
-\item[{{\bf osa\+C\+P\+U\+Mask}}]{cpumask = {\ttfamily {\bf O\+S\+A\+\_\+\+C\+P\+U\+A\+N\+Y}}, }
+\item[{const std\-::string \&}]{name, }
+\item[{{\bf osa\-C\-A\-N\-Bus} $\ast$}]{canbus, }
+\item[{{\bf osa\-W\-A\-M\-::\-Configuration}}]{configuration = {\ttfamily {\bf W\-A\-M\-\_\-7\-D\-O\-F}}, }
+\item[{{\bf osa\-C\-P\-U\-Mask}}]{cpumask = {\ttfamily {\bf O\-S\-A\-\_\-\-C\-P\-U\-A\-N\-Y}}, }
 \item[{int}]{priority = {\ttfamily 80}}
 \end{DoxyParamCaption}
-)}\label{classmts_w_a_m_a21fd1872a7f226ad67152896a5cb2909}
+)}}\label{classmts_w_a_m_a21fd1872a7f226ad67152896a5cb2909}
 
 
 \subsection{Member Function Documentation}
-\hypertarget{classmts_w_a_m_a6271503261b6ff57b615fd78dd5bcc13}{}\index{mts\+W\+A\+M@{mts\+W\+A\+M}!Cleanup@{Cleanup}}
-\index{Cleanup@{Cleanup}!mts\+W\+A\+M@{mts\+W\+A\+M}}
-\subsubsection[{Cleanup}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+W\+A\+M\+::\+Cleanup (
+\hypertarget{classmts_w_a_m_a6271503261b6ff57b615fd78dd5bcc13}{\index{mts\-W\-A\-M@{mts\-W\-A\-M}!Cleanup@{Cleanup}}
+\index{Cleanup@{Cleanup}!mtsWAM@{mts\-W\-A\-M}}
+\subsubsection[{Cleanup}]{\setlength{\rightskip}{0pt plus 5cm}void mts\-W\-A\-M\-::\-Cleanup (
 \begin{DoxyParamCaption}
 \item[{void}]{}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classmts_w_a_m_a6271503261b6ff57b615fd78dd5bcc13}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classmts_w_a_m_a6271503261b6ff57b615fd78dd5bcc13}
 Virtual method that gets overloaded, and is run after the component gets killed using \hyperlink{classmts_task_continuous_ad1f8145306e074fbea8baab3beef4c5b}{Kill()} method. 
 
-Reimplemented from \hyperlink{classmts_component_a891f330f4fde7d831dcf7dc537dc5e81}{mts\+Component}.
+Reimplemented from \hyperlink{classmts_component_a891f330f4fde7d831dcf7dc537dc5e81}{mts\-Component}.
 
-\hypertarget{classmts_w_a_m_a116d9eaaa932057699aab1fd4a8cd71e}{}\index{mts\+W\+A\+M@{mts\+W\+A\+M}!Configure@{Configure}}
-\index{Configure@{Configure}!mts\+W\+A\+M@{mts\+W\+A\+M}}
-\subsubsection[{Configure}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+W\+A\+M\+::\+Configure (
+\hypertarget{classmts_w_a_m_a116d9eaaa932057699aab1fd4a8cd71e}{\index{mts\-W\-A\-M@{mts\-W\-A\-M}!Configure@{Configure}}
+\index{Configure@{Configure}!mtsWAM@{mts\-W\-A\-M}}
+\subsubsection[{Configure}]{\setlength{\rightskip}{0pt plus 5cm}void mts\-W\-A\-M\-::\-Configure (
 \begin{DoxyParamCaption}
-\item[{const std\+::string \&}]{C\+M\+N\+\_\+\+U\+N\+U\+S\+E\+Dargv = {\ttfamily \char`\"{}\char`\"{}}}
+\item[{const std\-::string \&}]{C\-M\-N\-\_\-\-U\-N\-U\-S\-E\-Dargv = {\ttfamily \char`\"{}\char`\"{}}}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\label{classmts_w_a_m_a116d9eaaa932057699aab1fd4a8cd71e}
-\hypertarget{classmts_w_a_m_a3e630eeac8155b8c6a61ef3abfb0d14f}{}\index{mts\+W\+A\+M@{mts\+W\+A\+M}!Run@{Run}}
-\index{Run@{Run}!mts\+W\+A\+M@{mts\+W\+A\+M}}
-\subsubsection[{Run}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+W\+A\+M\+::\+Run (
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmts_w_a_m_a116d9eaaa932057699aab1fd4a8cd71e}
+\hypertarget{classmts_w_a_m_a3e630eeac8155b8c6a61ef3abfb0d14f}{\index{mts\-W\-A\-M@{mts\-W\-A\-M}!Run@{Run}}
+\index{Run@{Run}!mtsWAM@{mts\-W\-A\-M}}
+\subsubsection[{Run}]{\setlength{\rightskip}{0pt plus 5cm}void mts\-W\-A\-M\-::\-Run (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_w_a_m_a3e630eeac8155b8c6a61ef3abfb0d14f}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classmts_w_a_m_a3e630eeac8155b8c6a61ef3abfb0d14f}
 Pure virtual method that gets overloaded to run the actual task. 
 
-Implements \hyperlink{classmts_task_a20e18c9479cb650792456c32ee689834}{mts\+Task}.
+Implements \hyperlink{classmts_task_a20e18c9479cb650792456c32ee689834}{mts\-Task}.
 
-\hypertarget{classmts_w_a_m_a30637b31116e47f42251b0c802257228}{}\index{mts\+W\+A\+M@{mts\+W\+A\+M}!Startup@{Startup}}
-\index{Startup@{Startup}!mts\+W\+A\+M@{mts\+W\+A\+M}}
-\subsubsection[{Startup}]{\setlength{\rightskip}{0pt plus 5cm}void mts\+W\+A\+M\+::\+Startup (
+\hypertarget{classmts_w_a_m_a30637b31116e47f42251b0c802257228}{\index{mts\-W\-A\-M@{mts\-W\-A\-M}!Startup@{Startup}}
+\index{Startup@{Startup}!mtsWAM@{mts\-W\-A\-M}}
+\subsubsection[{Startup}]{\setlength{\rightskip}{0pt plus 5cm}void mts\-W\-A\-M\-::\-Startup (
 \begin{DoxyParamCaption}
 \item[{void}]{}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmts_w_a_m_a30637b31116e47f42251b0c802257228}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classmts_w_a_m_a30637b31116e47f42251b0c802257228}
 Virtual method that gets overloaded, and is run before the component is started. 
 
-Reimplemented from \hyperlink{classmts_component_aaf28f0262b44eb6866e10089a02fa6e4}{mts\+Component}.
+Reimplemented from \hyperlink{classmts_component_aaf28f0262b44eb6866e10089a02fa6e4}{mts\-Component}.
 
 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
 \item 
-/\+Users/anton/devel/cisst-\/saw/saw\+Barrett/include/saw\+Barrett/\hyperlink{mts_w_a_m_8h}{mts\+W\+A\+M.\+h}\end{DoxyCompactItemize}
+/home/adeguet1/catkin\-\_\-ws/src/cisst-\/saw/saw\-Barrett/include/saw\-Barrett/\hyperlink{mts_w_a_m_8h}{mts\-W\-A\-M.\-h}\end{DoxyCompactItemize}

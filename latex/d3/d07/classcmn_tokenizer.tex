@@ -1,70 +1,71 @@
-\hypertarget{classcmn_tokenizer}{}\section{cmn\+Tokenizer Class Reference}
-\label{classcmn_tokenizer}\index{cmn\+Tokenizer@{cmn\+Tokenizer}}
+\hypertarget{classcmn_tokenizer}{\section{cmn\-Tokenizer Class Reference}
+\label{classcmn_tokenizer}\index{cmn\-Tokenizer@{cmn\-Tokenizer}}
+}
 
 
-{\ttfamily \#include $<$cmn\+Tokenizer.\+h$>$}
+{\ttfamily \#include $<$cmn\-Tokenizer.\-h$>$}
 
 \subsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
-typedef std\+::vector$<$ const char $\ast$ $>$ \hyperlink{classcmn_tokenizer_a6f2e13cc6f1f02a1692febd80eb7c0e2}{Tokens\+Container}
+typedef std\-::vector$<$ const char $\ast$ $>$ \hyperlink{classcmn_tokenizer_a6f2e13cc6f1f02a1692febd80eb7c0e2}{Tokens\-Container}
 \item 
-typedef Tokens\+Container\+::size\+\_\+type \hyperlink{classcmn_tokenizer_aa1b3819de936a3639e8ef5841f7fe762}{size\+\_\+type}
+typedef Tokens\-Container\-::size\-\_\-type \hyperlink{classcmn_tokenizer_aa1b3819de936a3639e8ef5841f7fe762}{size\-\_\-type}
 \end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classcmn_tokenizer_ad18f864eb2837d7d6c4f8f595bb28e12}{cmn\+Tokenizer} ()
+\hyperlink{classcmn_tokenizer_ad18f864eb2837d7d6c4f8f595bb28e12}{cmn\-Tokenizer} ()
 \item 
-\hyperlink{classcmn_tokenizer_a3590cb8c8426fdd6ff137bf80de4866c}{$\sim$cmn\+Tokenizer} ()
+\hyperlink{classcmn_tokenizer_a3590cb8c8426fdd6ff137bf80de4866c}{$\sim$cmn\-Tokenizer} ()
 \item 
-void \hyperlink{classcmn_tokenizer_aa5a30cc94732f312ed82370e218be236}{Set\+Delimiters} (const char $\ast$delimiters)
+void \hyperlink{classcmn_tokenizer_aa5a30cc94732f312ed82370e218be236}{Set\-Delimiters} (const char $\ast$delimiters)
 \item 
-void \hyperlink{classcmn_tokenizer_accde43d610ec450536f310e6f832eb3c}{Set\+Quote\+Markers} (const char $\ast$markers)
+void \hyperlink{classcmn_tokenizer_accde43d610ec450536f310e6f832eb3c}{Set\-Quote\-Markers} (const char $\ast$markers)
 \item 
-void \hyperlink{classcmn_tokenizer_a7bb0f1c5767837a9021898139956bee5}{Set\+Escape\+Markers} (const char $\ast$markers)
+void \hyperlink{classcmn_tokenizer_a7bb0f1c5767837a9021898139956bee5}{Set\-Escape\-Markers} (const char $\ast$markers)
 \item 
-const char $\ast$ \hyperlink{classcmn_tokenizer_a18d44606191cfdd4b9aba9683e5810a4}{Get\+Delimiters} (void) const 
+const char $\ast$ \hyperlink{classcmn_tokenizer_a18d44606191cfdd4b9aba9683e5810a4}{Get\-Delimiters} (void) const 
 \item 
-const char $\ast$ \hyperlink{classcmn_tokenizer_ab9ddd7ecb5f418b4cc11c049f7369581}{Get\+Quote\+Markers} (void) const 
+const char $\ast$ \hyperlink{classcmn_tokenizer_ab9ddd7ecb5f418b4cc11c049f7369581}{Get\-Quote\-Markers} (void) const 
 \item 
-const char $\ast$ \hyperlink{classcmn_tokenizer_a3656f9c6bdd738742111edfdc960360e}{Get\+Escape\+Markers} (void) const 
+const char $\ast$ \hyperlink{classcmn_tokenizer_a3656f9c6bdd738742111edfdc960360e}{Get\-Escape\-Markers} (void) const 
 \item 
-void \hyperlink{classcmn_tokenizer_a1c90fd9b013360f7de462e8bf546a663}{Parse} (const char $\ast$string)  throw (std\+::runtime\+\_\+error)
+void \hyperlink{classcmn_tokenizer_a1c90fd9b013360f7de462e8bf546a663}{Parse} (const char $\ast$string)  throw (std\-::runtime\-\_\-error)
 \item 
-void \hyperlink{classcmn_tokenizer_a73139aca8f34b41e94822b7a86095714}{Parse} (const std\+::string \&string)  throw (std\+::runtime\+\_\+error)
+void \hyperlink{classcmn_tokenizer_a73139aca8f34b41e94822b7a86095714}{Parse} (const std\-::string \&string)  throw (std\-::runtime\-\_\-error)
 \item 
-\hyperlink{classcmn_tokenizer_aa1b3819de936a3639e8ef5841f7fe762}{size\+\_\+type} \hyperlink{classcmn_tokenizer_a3a374f093c9e476458394a148c4f82da}{Get\+Num\+Tokens} (void) const 
+\hyperlink{classcmn_tokenizer_aa1b3819de936a3639e8ef5841f7fe762}{size\-\_\-type} \hyperlink{classcmn_tokenizer_a3a374f093c9e476458394a148c4f82da}{Get\-Num\-Tokens} (void) const 
 \item 
-const char $\ast$ \hyperlink{classcmn_tokenizer_aed48e923ab4b6b98fd284838cb5d0d49}{Get\+Token} (\hyperlink{classcmn_tokenizer_aa1b3819de936a3639e8ef5841f7fe762}{size\+\_\+type} num) const 
+const char $\ast$ \hyperlink{classcmn_tokenizer_aed48e923ab4b6b98fd284838cb5d0d49}{Get\-Token} (\hyperlink{classcmn_tokenizer_aa1b3819de936a3639e8ef5841f7fe762}{size\-\_\-type} num) const 
 \item 
-const char $\ast$const $\ast$ \hyperlink{classcmn_tokenizer_ae09e7f92f12ce54fa4116ba95f4af942}{Get\+Tokens\+Array} (void) const 
+const char $\ast$const $\ast$ \hyperlink{classcmn_tokenizer_ae09e7f92f12ce54fa4116ba95f4af942}{Get\-Tokens\-Array} (void) const 
 \item 
-void \hyperlink{classcmn_tokenizer_a2fe39c6751f33cf1b81c9461d47b1462}{Get\+Argv\+Tokens} (std\+::vector$<$ const char $\ast$ $>$ \&argv\+Tokens) const 
+void \hyperlink{classcmn_tokenizer_a2fe39c6751f33cf1b81c9461d47b1462}{Get\-Argv\-Tokens} (std\-::vector$<$ const char $\ast$ $>$ \&argv\-Tokens) const 
 \end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static const char $\ast$ \hyperlink{classcmn_tokenizer_aecd698f78bea30e2aa945378510080d9}{Get\+Default\+Delimiters} (void)
+static const char $\ast$ \hyperlink{classcmn_tokenizer_aecd698f78bea30e2aa945378510080d9}{Get\-Default\-Delimiters} (void)
 \item 
-static const char $\ast$ \hyperlink{classcmn_tokenizer_af5f444c9daae22083ecbbd28c3646425}{Get\+Default\+Quote\+Markers} (void)
+static const char $\ast$ \hyperlink{classcmn_tokenizer_af5f444c9daae22083ecbbd28c3646425}{Get\-Default\-Quote\-Markers} (void)
 \item 
-static const char $\ast$ \hyperlink{classcmn_tokenizer_aa9bdfbc4257afa5cab0793bb56823378}{Get\+Default\+Escape\+Markers} (void)
+static const char $\ast$ \hyperlink{classcmn_tokenizer_aa9bdfbc4257afa5cab0793bb56823378}{Get\-Default\-Escape\-Markers} (void)
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-\hyperlink{classcmn_tokenizer}{cmn\+Tokenizer} provides a convenient interface for parsing a string into a set of tokens. The parsing uses several sets of control characters\+:
+\hyperlink{classcmn_tokenizer}{cmn\-Tokenizer} provides a convenient interface for parsing a string into a set of tokens. The parsing uses several sets of control characters\-:
 
-Delimiters\+: Separate tokens. A sequence of delimiters which is not quoted or escaped is ignored, and a new token begins after it.
+Delimiters\-: Separate tokens. A sequence of delimiters which is not quoted or escaped is ignored, and a new token begins after it.
 
-Quote markers\+: Enclose parts of, or complete, tokens. Anything between a pair of identical quote markers is included in a token.
+Quote markers\-: Enclose parts of, or complete, tokens. Anything between a pair of identical quote markers is included in a token.
 
-Escape markers\+: Quote the character immediately following them.
+Escape markers\-: Quote the character immediately following them.
 
-The default values for delimiters is whitespace (space, tab, C\+R); for quote markers is the set of double and single quotation marks (",\textquotesingle{}); for escape markers is backslash (). But the user can override them by calling the appropriate method.
+The default values for delimiters is whitespace (space, tab, C\-R); for quote markers is the set of double and single quotation marks (",'); for escape markers is backslash (). But the user can override them by calling the appropriate method.
 
-A \hyperlink{classcmn_tokenizer}{cmn\+Tokenizer} object maintains an internal copy of the tokenized text, and can return a pointer to an array of pointer, after the fashion of argv.
+A \hyperlink{classcmn_tokenizer}{cmn\-Tokenizer} object maintains an internal copy of the tokenized text, and can return a pointer to an array of pointer, after the fashion of argv.
 
 \begin{DoxyNote}{Note}
 It is important to note that the stored tokens have the life span of the tokenizer. If the tokenizer is destroyed, the user cannot access any of the tokens. 
@@ -72,157 +73,157 @@ It is important to note that the stored tokens have the life span of the tokeniz
 
 
 \subsection{Member Typedef Documentation}
-\hypertarget{classcmn_tokenizer_aa1b3819de936a3639e8ef5841f7fe762}{}\index{cmn\+Tokenizer@{cmn\+Tokenizer}!size\+\_\+type@{size\+\_\+type}}
-\index{size\+\_\+type@{size\+\_\+type}!cmn\+Tokenizer@{cmn\+Tokenizer}}
-\subsubsection[{size\+\_\+type}]{\setlength{\rightskip}{0pt plus 5cm}typedef Tokens\+Container\+::size\+\_\+type {\bf cmn\+Tokenizer\+::size\+\_\+type}}\label{classcmn_tokenizer_aa1b3819de936a3639e8ef5841f7fe762}
-\hypertarget{classcmn_tokenizer_a6f2e13cc6f1f02a1692febd80eb7c0e2}{}\index{cmn\+Tokenizer@{cmn\+Tokenizer}!Tokens\+Container@{Tokens\+Container}}
-\index{Tokens\+Container@{Tokens\+Container}!cmn\+Tokenizer@{cmn\+Tokenizer}}
-\subsubsection[{Tokens\+Container}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::vector$<$const char $\ast$$>$ {\bf cmn\+Tokenizer\+::\+Tokens\+Container}}\label{classcmn_tokenizer_a6f2e13cc6f1f02a1692febd80eb7c0e2}
+\hypertarget{classcmn_tokenizer_aa1b3819de936a3639e8ef5841f7fe762}{\index{cmn\-Tokenizer@{cmn\-Tokenizer}!size\-\_\-type@{size\-\_\-type}}
+\index{size\-\_\-type@{size\-\_\-type}!cmnTokenizer@{cmn\-Tokenizer}}
+\subsubsection[{size\-\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}typedef Tokens\-Container\-::size\-\_\-type {\bf cmn\-Tokenizer\-::size\-\_\-type}}}\label{classcmn_tokenizer_aa1b3819de936a3639e8ef5841f7fe762}
+\hypertarget{classcmn_tokenizer_a6f2e13cc6f1f02a1692febd80eb7c0e2}{\index{cmn\-Tokenizer@{cmn\-Tokenizer}!Tokens\-Container@{Tokens\-Container}}
+\index{Tokens\-Container@{Tokens\-Container}!cmnTokenizer@{cmn\-Tokenizer}}
+\subsubsection[{Tokens\-Container}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\-::vector$<$const char $\ast$$>$ {\bf cmn\-Tokenizer\-::\-Tokens\-Container}}}\label{classcmn_tokenizer_a6f2e13cc6f1f02a1692febd80eb7c0e2}
 
 
 \subsection{Constructor \& Destructor Documentation}
-\hypertarget{classcmn_tokenizer_ad18f864eb2837d7d6c4f8f595bb28e12}{}\index{cmn\+Tokenizer@{cmn\+Tokenizer}!cmn\+Tokenizer@{cmn\+Tokenizer}}
-\index{cmn\+Tokenizer@{cmn\+Tokenizer}!cmn\+Tokenizer@{cmn\+Tokenizer}}
-\subsubsection[{cmn\+Tokenizer}]{\setlength{\rightskip}{0pt plus 5cm}cmn\+Tokenizer\+::cmn\+Tokenizer (
+\hypertarget{classcmn_tokenizer_ad18f864eb2837d7d6c4f8f595bb28e12}{\index{cmn\-Tokenizer@{cmn\-Tokenizer}!cmn\-Tokenizer@{cmn\-Tokenizer}}
+\index{cmn\-Tokenizer@{cmn\-Tokenizer}!cmnTokenizer@{cmn\-Tokenizer}}
+\subsubsection[{cmn\-Tokenizer}]{\setlength{\rightskip}{0pt plus 5cm}cmn\-Tokenizer\-::cmn\-Tokenizer (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}\label{classcmn_tokenizer_ad18f864eb2837d7d6c4f8f595bb28e12}
-\hypertarget{classcmn_tokenizer_a3590cb8c8426fdd6ff137bf80de4866c}{}\index{cmn\+Tokenizer@{cmn\+Tokenizer}!````~cmn\+Tokenizer@{$\sim$cmn\+Tokenizer}}
-\index{````~cmn\+Tokenizer@{$\sim$cmn\+Tokenizer}!cmn\+Tokenizer@{cmn\+Tokenizer}}
-\subsubsection[{$\sim$cmn\+Tokenizer}]{\setlength{\rightskip}{0pt plus 5cm}cmn\+Tokenizer\+::$\sim$cmn\+Tokenizer (
+)}}\label{classcmn_tokenizer_ad18f864eb2837d7d6c4f8f595bb28e12}
+\hypertarget{classcmn_tokenizer_a3590cb8c8426fdd6ff137bf80de4866c}{\index{cmn\-Tokenizer@{cmn\-Tokenizer}!$\sim$cmn\-Tokenizer@{$\sim$cmn\-Tokenizer}}
+\index{$\sim$cmn\-Tokenizer@{$\sim$cmn\-Tokenizer}!cmnTokenizer@{cmn\-Tokenizer}}
+\subsubsection[{$\sim$cmn\-Tokenizer}]{\setlength{\rightskip}{0pt plus 5cm}cmn\-Tokenizer\-::$\sim$cmn\-Tokenizer (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}\label{classcmn_tokenizer_a3590cb8c8426fdd6ff137bf80de4866c}
+)}}\label{classcmn_tokenizer_a3590cb8c8426fdd6ff137bf80de4866c}
 
 
 \subsection{Member Function Documentation}
-\hypertarget{classcmn_tokenizer_a2fe39c6751f33cf1b81c9461d47b1462}{}\index{cmn\+Tokenizer@{cmn\+Tokenizer}!Get\+Argv\+Tokens@{Get\+Argv\+Tokens}}
-\index{Get\+Argv\+Tokens@{Get\+Argv\+Tokens}!cmn\+Tokenizer@{cmn\+Tokenizer}}
-\subsubsection[{Get\+Argv\+Tokens}]{\setlength{\rightskip}{0pt plus 5cm}void cmn\+Tokenizer\+::\+Get\+Argv\+Tokens (
+\hypertarget{classcmn_tokenizer_a2fe39c6751f33cf1b81c9461d47b1462}{\index{cmn\-Tokenizer@{cmn\-Tokenizer}!Get\-Argv\-Tokens@{Get\-Argv\-Tokens}}
+\index{Get\-Argv\-Tokens@{Get\-Argv\-Tokens}!cmnTokenizer@{cmn\-Tokenizer}}
+\subsubsection[{Get\-Argv\-Tokens}]{\setlength{\rightskip}{0pt plus 5cm}void cmn\-Tokenizer\-::\-Get\-Argv\-Tokens (
 \begin{DoxyParamCaption}
-\item[{std\+::vector$<$ const char $\ast$ $>$ \&}]{argv\+Tokens}
+\item[{std\-::vector$<$ const char $\ast$ $>$ \&}]{argv\-Tokens}
 \end{DoxyParamCaption}
-) const}\label{classcmn_tokenizer_a2fe39c6751f33cf1b81c9461d47b1462}
-This method will fill the input vector with the tokens, but first set the 0-\/index element to N\+U\+L\+L, to follow the argv convention, where argv\mbox{[}0\mbox{]} contains the \char`\"{}name of the program\char`\"{}. \hypertarget{classcmn_tokenizer_aecd698f78bea30e2aa945378510080d9}{}\index{cmn\+Tokenizer@{cmn\+Tokenizer}!Get\+Default\+Delimiters@{Get\+Default\+Delimiters}}
-\index{Get\+Default\+Delimiters@{Get\+Default\+Delimiters}!cmn\+Tokenizer@{cmn\+Tokenizer}}
-\subsubsection[{Get\+Default\+Delimiters}]{\setlength{\rightskip}{0pt plus 5cm}static const char$\ast$ cmn\+Tokenizer\+::\+Get\+Default\+Delimiters (
-\begin{DoxyParamCaption}
-\item[{void}]{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classcmn_tokenizer_aecd698f78bea30e2aa945378510080d9}
-\hypertarget{classcmn_tokenizer_aa9bdfbc4257afa5cab0793bb56823378}{}\index{cmn\+Tokenizer@{cmn\+Tokenizer}!Get\+Default\+Escape\+Markers@{Get\+Default\+Escape\+Markers}}
-\index{Get\+Default\+Escape\+Markers@{Get\+Default\+Escape\+Markers}!cmn\+Tokenizer@{cmn\+Tokenizer}}
-\subsubsection[{Get\+Default\+Escape\+Markers}]{\setlength{\rightskip}{0pt plus 5cm}static const char$\ast$ cmn\+Tokenizer\+::\+Get\+Default\+Escape\+Markers (
+) const}}\label{classcmn_tokenizer_a2fe39c6751f33cf1b81c9461d47b1462}
+This method will fill the input vector with the tokens, but first set the 0-\/index element to N\-U\-L\-L, to follow the argv convention, where argv\mbox{[}0\mbox{]} contains the \char`\"{}name of the program\char`\"{}. \hypertarget{classcmn_tokenizer_aecd698f78bea30e2aa945378510080d9}{\index{cmn\-Tokenizer@{cmn\-Tokenizer}!Get\-Default\-Delimiters@{Get\-Default\-Delimiters}}
+\index{Get\-Default\-Delimiters@{Get\-Default\-Delimiters}!cmnTokenizer@{cmn\-Tokenizer}}
+\subsubsection[{Get\-Default\-Delimiters}]{\setlength{\rightskip}{0pt plus 5cm}static const char$\ast$ cmn\-Tokenizer\-::\-Get\-Default\-Delimiters (
 \begin{DoxyParamCaption}
 \item[{void}]{}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classcmn_tokenizer_aa9bdfbc4257afa5cab0793bb56823378}
-\hypertarget{classcmn_tokenizer_af5f444c9daae22083ecbbd28c3646425}{}\index{cmn\+Tokenizer@{cmn\+Tokenizer}!Get\+Default\+Quote\+Markers@{Get\+Default\+Quote\+Markers}}
-\index{Get\+Default\+Quote\+Markers@{Get\+Default\+Quote\+Markers}!cmn\+Tokenizer@{cmn\+Tokenizer}}
-\subsubsection[{Get\+Default\+Quote\+Markers}]{\setlength{\rightskip}{0pt plus 5cm}static const char$\ast$ cmn\+Tokenizer\+::\+Get\+Default\+Quote\+Markers (
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classcmn_tokenizer_aecd698f78bea30e2aa945378510080d9}
+\hypertarget{classcmn_tokenizer_aa9bdfbc4257afa5cab0793bb56823378}{\index{cmn\-Tokenizer@{cmn\-Tokenizer}!Get\-Default\-Escape\-Markers@{Get\-Default\-Escape\-Markers}}
+\index{Get\-Default\-Escape\-Markers@{Get\-Default\-Escape\-Markers}!cmnTokenizer@{cmn\-Tokenizer}}
+\subsubsection[{Get\-Default\-Escape\-Markers}]{\setlength{\rightskip}{0pt plus 5cm}static const char$\ast$ cmn\-Tokenizer\-::\-Get\-Default\-Escape\-Markers (
 \begin{DoxyParamCaption}
 \item[{void}]{}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classcmn_tokenizer_af5f444c9daae22083ecbbd28c3646425}
-\hypertarget{classcmn_tokenizer_a18d44606191cfdd4b9aba9683e5810a4}{}\index{cmn\+Tokenizer@{cmn\+Tokenizer}!Get\+Delimiters@{Get\+Delimiters}}
-\index{Get\+Delimiters@{Get\+Delimiters}!cmn\+Tokenizer@{cmn\+Tokenizer}}
-\subsubsection[{Get\+Delimiters}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ cmn\+Tokenizer\+::\+Get\+Delimiters (
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classcmn_tokenizer_aa9bdfbc4257afa5cab0793bb56823378}
+\hypertarget{classcmn_tokenizer_af5f444c9daae22083ecbbd28c3646425}{\index{cmn\-Tokenizer@{cmn\-Tokenizer}!Get\-Default\-Quote\-Markers@{Get\-Default\-Quote\-Markers}}
+\index{Get\-Default\-Quote\-Markers@{Get\-Default\-Quote\-Markers}!cmnTokenizer@{cmn\-Tokenizer}}
+\subsubsection[{Get\-Default\-Quote\-Markers}]{\setlength{\rightskip}{0pt plus 5cm}static const char$\ast$ cmn\-Tokenizer\-::\-Get\-Default\-Quote\-Markers (
 \begin{DoxyParamCaption}
 \item[{void}]{}
 \end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classcmn_tokenizer_a18d44606191cfdd4b9aba9683e5810a4}
-\hypertarget{classcmn_tokenizer_a3656f9c6bdd738742111edfdc960360e}{}\index{cmn\+Tokenizer@{cmn\+Tokenizer}!Get\+Escape\+Markers@{Get\+Escape\+Markers}}
-\index{Get\+Escape\+Markers@{Get\+Escape\+Markers}!cmn\+Tokenizer@{cmn\+Tokenizer}}
-\subsubsection[{Get\+Escape\+Markers}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ cmn\+Tokenizer\+::\+Get\+Escape\+Markers (
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classcmn_tokenizer_af5f444c9daae22083ecbbd28c3646425}
+\hypertarget{classcmn_tokenizer_a18d44606191cfdd4b9aba9683e5810a4}{\index{cmn\-Tokenizer@{cmn\-Tokenizer}!Get\-Delimiters@{Get\-Delimiters}}
+\index{Get\-Delimiters@{Get\-Delimiters}!cmnTokenizer@{cmn\-Tokenizer}}
+\subsubsection[{Get\-Delimiters}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ cmn\-Tokenizer\-::\-Get\-Delimiters (
 \begin{DoxyParamCaption}
 \item[{void}]{}
 \end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classcmn_tokenizer_a3656f9c6bdd738742111edfdc960360e}
-\hypertarget{classcmn_tokenizer_a3a374f093c9e476458394a148c4f82da}{}\index{cmn\+Tokenizer@{cmn\+Tokenizer}!Get\+Num\+Tokens@{Get\+Num\+Tokens}}
-\index{Get\+Num\+Tokens@{Get\+Num\+Tokens}!cmn\+Tokenizer@{cmn\+Tokenizer}}
-\subsubsection[{Get\+Num\+Tokens}]{\setlength{\rightskip}{0pt plus 5cm}{\bf size\+\_\+type} cmn\+Tokenizer\+::\+Get\+Num\+Tokens (
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcmn_tokenizer_a18d44606191cfdd4b9aba9683e5810a4}
+\hypertarget{classcmn_tokenizer_a3656f9c6bdd738742111edfdc960360e}{\index{cmn\-Tokenizer@{cmn\-Tokenizer}!Get\-Escape\-Markers@{Get\-Escape\-Markers}}
+\index{Get\-Escape\-Markers@{Get\-Escape\-Markers}!cmnTokenizer@{cmn\-Tokenizer}}
+\subsubsection[{Get\-Escape\-Markers}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ cmn\-Tokenizer\-::\-Get\-Escape\-Markers (
 \begin{DoxyParamCaption}
 \item[{void}]{}
 \end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classcmn_tokenizer_a3a374f093c9e476458394a148c4f82da}
-Return the number of tokens stored. Note that the last token is a N\+U\+L\+L. \hypertarget{classcmn_tokenizer_ab9ddd7ecb5f418b4cc11c049f7369581}{}\index{cmn\+Tokenizer@{cmn\+Tokenizer}!Get\+Quote\+Markers@{Get\+Quote\+Markers}}
-\index{Get\+Quote\+Markers@{Get\+Quote\+Markers}!cmn\+Tokenizer@{cmn\+Tokenizer}}
-\subsubsection[{Get\+Quote\+Markers}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ cmn\+Tokenizer\+::\+Get\+Quote\+Markers (
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcmn_tokenizer_a3656f9c6bdd738742111edfdc960360e}
+\hypertarget{classcmn_tokenizer_a3a374f093c9e476458394a148c4f82da}{\index{cmn\-Tokenizer@{cmn\-Tokenizer}!Get\-Num\-Tokens@{Get\-Num\-Tokens}}
+\index{Get\-Num\-Tokens@{Get\-Num\-Tokens}!cmnTokenizer@{cmn\-Tokenizer}}
+\subsubsection[{Get\-Num\-Tokens}]{\setlength{\rightskip}{0pt plus 5cm}{\bf size\-\_\-type} cmn\-Tokenizer\-::\-Get\-Num\-Tokens (
 \begin{DoxyParamCaption}
 \item[{void}]{}
 \end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classcmn_tokenizer_ab9ddd7ecb5f418b4cc11c049f7369581}
-\hypertarget{classcmn_tokenizer_aed48e923ab4b6b98fd284838cb5d0d49}{}\index{cmn\+Tokenizer@{cmn\+Tokenizer}!Get\+Token@{Get\+Token}}
-\index{Get\+Token@{Get\+Token}!cmn\+Tokenizer@{cmn\+Tokenizer}}
-\subsubsection[{Get\+Token}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ cmn\+Tokenizer\+::\+Get\+Token (
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcmn_tokenizer_a3a374f093c9e476458394a148c4f82da}
+Return the number of tokens stored. Note that the last token is a N\-U\-L\-L. \hypertarget{classcmn_tokenizer_ab9ddd7ecb5f418b4cc11c049f7369581}{\index{cmn\-Tokenizer@{cmn\-Tokenizer}!Get\-Quote\-Markers@{Get\-Quote\-Markers}}
+\index{Get\-Quote\-Markers@{Get\-Quote\-Markers}!cmnTokenizer@{cmn\-Tokenizer}}
+\subsubsection[{Get\-Quote\-Markers}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ cmn\-Tokenizer\-::\-Get\-Quote\-Markers (
 \begin{DoxyParamCaption}
-\item[{{\bf size\+\_\+type}}]{num}
+\item[{void}]{}
 \end{DoxyParamCaption}
-) const}\label{classcmn_tokenizer_aed48e923ab4b6b98fd284838cb5d0d49}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcmn_tokenizer_ab9ddd7ecb5f418b4cc11c049f7369581}
+\hypertarget{classcmn_tokenizer_aed48e923ab4b6b98fd284838cb5d0d49}{\index{cmn\-Tokenizer@{cmn\-Tokenizer}!Get\-Token@{Get\-Token}}
+\index{Get\-Token@{Get\-Token}!cmnTokenizer@{cmn\-Tokenizer}}
+\subsubsection[{Get\-Token}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ cmn\-Tokenizer\-::\-Get\-Token (
+\begin{DoxyParamCaption}
+\item[{{\bf size\-\_\-type}}]{num}
+\end{DoxyParamCaption}
+) const}}\label{classcmn_tokenizer_aed48e923ab4b6b98fd284838cb5d0d49}
 Return the specified token. 
 \begin{DoxyParams}{Parameters}
-{\em num} & the token number (0..\hyperlink{classcmn_tokenizer_a3a374f093c9e476458394a148c4f82da}{Get\+Num\+Tokens()}) \\
+{\em num} & the token number (0..\hyperlink{classcmn_tokenizer_a3a374f093c9e476458394a148c4f82da}{Get\-Num\-Tokens()}) \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 pointer to token string (0 if not valid) 
 \end{DoxyReturn}
-\hypertarget{classcmn_tokenizer_ae09e7f92f12ce54fa4116ba95f4af942}{}\index{cmn\+Tokenizer@{cmn\+Tokenizer}!Get\+Tokens\+Array@{Get\+Tokens\+Array}}
-\index{Get\+Tokens\+Array@{Get\+Tokens\+Array}!cmn\+Tokenizer@{cmn\+Tokenizer}}
-\subsubsection[{Get\+Tokens\+Array}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ const$\ast$ cmn\+Tokenizer\+::\+Get\+Tokens\+Array (
+\hypertarget{classcmn_tokenizer_ae09e7f92f12ce54fa4116ba95f4af942}{\index{cmn\-Tokenizer@{cmn\-Tokenizer}!Get\-Tokens\-Array@{Get\-Tokens\-Array}}
+\index{Get\-Tokens\-Array@{Get\-Tokens\-Array}!cmnTokenizer@{cmn\-Tokenizer}}
+\subsubsection[{Get\-Tokens\-Array}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ const$\ast$ cmn\-Tokenizer\-::\-Get\-Tokens\-Array (
 \begin{DoxyParamCaption}
 \item[{void}]{}
 \end{DoxyParamCaption}
-) const}\label{classcmn_tokenizer_ae09e7f92f12ce54fa4116ba95f4af942}
+) const}}\label{classcmn_tokenizer_ae09e7f92f12ce54fa4116ba95f4af942}
 Return the array of tokens in an argv fashion.
 
 \begin{DoxyNote}{Note}
-This parsing returns exactly the tokens in the input string. For an argv-\/style set of argument, one needs to have the \char`\"{}name of the program\char`\"{} argument in index 0, and the arguments starting at index 1. Use the method \hyperlink{classcmn_tokenizer_a2fe39c6751f33cf1b81c9461d47b1462}{Get\+Argv\+Tokens()} for that. 
+This parsing returns exactly the tokens in the input string. For an argv-\/style set of argument, one needs to have the \char`\"{}name of the program\char`\"{} argument in index 0, and the arguments starting at index 1. Use the method \hyperlink{classcmn_tokenizer_a2fe39c6751f33cf1b81c9461d47b1462}{Get\-Argv\-Tokens()} for that. 
 \end{DoxyNote}
-\hypertarget{classcmn_tokenizer_a1c90fd9b013360f7de462e8bf546a663}{}\index{cmn\+Tokenizer@{cmn\+Tokenizer}!Parse@{Parse}}
-\index{Parse@{Parse}!cmn\+Tokenizer@{cmn\+Tokenizer}}
-\subsubsection[{Parse}]{\setlength{\rightskip}{0pt plus 5cm}void cmn\+Tokenizer\+::\+Parse (
+\hypertarget{classcmn_tokenizer_a1c90fd9b013360f7de462e8bf546a663}{\index{cmn\-Tokenizer@{cmn\-Tokenizer}!Parse@{Parse}}
+\index{Parse@{Parse}!cmnTokenizer@{cmn\-Tokenizer}}
+\subsubsection[{Parse}]{\setlength{\rightskip}{0pt plus 5cm}void cmn\-Tokenizer\-::\-Parse (
 \begin{DoxyParamCaption}
 \item[{const char $\ast$}]{string}
 \end{DoxyParamCaption}
-) throw  std\+::runtime\+\_\+error) }\label{classcmn_tokenizer_a1c90fd9b013360f7de462e8bf546a663}
-Parse the input string and store the tokens internally. If there is a syntax error (e.\+g., unclosed quotes) throw an exception. 
+) throw  std\-::runtime\-\_\-error) }}\label{classcmn_tokenizer_a1c90fd9b013360f7de462e8bf546a663}
+Parse the input string and store the tokens internally. If there is a syntax error (e.\-g., unclosed quotes) throw an exception. 
 \begin{DoxyParams}{Parameters}
 {\em string} & the text to be parsed. \\
 \hline
 \end{DoxyParams}
-\hypertarget{classcmn_tokenizer_a73139aca8f34b41e94822b7a86095714}{}\index{cmn\+Tokenizer@{cmn\+Tokenizer}!Parse@{Parse}}
-\index{Parse@{Parse}!cmn\+Tokenizer@{cmn\+Tokenizer}}
-\subsubsection[{Parse}]{\setlength{\rightskip}{0pt plus 5cm}void cmn\+Tokenizer\+::\+Parse (
+\hypertarget{classcmn_tokenizer_a73139aca8f34b41e94822b7a86095714}{\index{cmn\-Tokenizer@{cmn\-Tokenizer}!Parse@{Parse}}
+\index{Parse@{Parse}!cmnTokenizer@{cmn\-Tokenizer}}
+\subsubsection[{Parse}]{\setlength{\rightskip}{0pt plus 5cm}void cmn\-Tokenizer\-::\-Parse (
 \begin{DoxyParamCaption}
-\item[{const std\+::string \&}]{string}
+\item[{const std\-::string \&}]{string}
 \end{DoxyParamCaption}
-) throw  std\+::runtime\+\_\+error) \hspace{0.3cm}{\ttfamily [inline]}}\label{classcmn_tokenizer_a73139aca8f34b41e94822b7a86095714}
-\hypertarget{classcmn_tokenizer_aa5a30cc94732f312ed82370e218be236}{}\index{cmn\+Tokenizer@{cmn\+Tokenizer}!Set\+Delimiters@{Set\+Delimiters}}
-\index{Set\+Delimiters@{Set\+Delimiters}!cmn\+Tokenizer@{cmn\+Tokenizer}}
-\subsubsection[{Set\+Delimiters}]{\setlength{\rightskip}{0pt plus 5cm}void cmn\+Tokenizer\+::\+Set\+Delimiters (
+) throw  std\-::runtime\-\_\-error) \hspace{0.3cm}{\ttfamily [inline]}}}\label{classcmn_tokenizer_a73139aca8f34b41e94822b7a86095714}
+\hypertarget{classcmn_tokenizer_aa5a30cc94732f312ed82370e218be236}{\index{cmn\-Tokenizer@{cmn\-Tokenizer}!Set\-Delimiters@{Set\-Delimiters}}
+\index{Set\-Delimiters@{Set\-Delimiters}!cmnTokenizer@{cmn\-Tokenizer}}
+\subsubsection[{Set\-Delimiters}]{\setlength{\rightskip}{0pt plus 5cm}void cmn\-Tokenizer\-::\-Set\-Delimiters (
 \begin{DoxyParamCaption}
 \item[{const char $\ast$}]{delimiters}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\label{classcmn_tokenizer_aa5a30cc94732f312ed82370e218be236}
-\hypertarget{classcmn_tokenizer_a7bb0f1c5767837a9021898139956bee5}{}\index{cmn\+Tokenizer@{cmn\+Tokenizer}!Set\+Escape\+Markers@{Set\+Escape\+Markers}}
-\index{Set\+Escape\+Markers@{Set\+Escape\+Markers}!cmn\+Tokenizer@{cmn\+Tokenizer}}
-\subsubsection[{Set\+Escape\+Markers}]{\setlength{\rightskip}{0pt plus 5cm}void cmn\+Tokenizer\+::\+Set\+Escape\+Markers (
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcmn_tokenizer_aa5a30cc94732f312ed82370e218be236}
+\hypertarget{classcmn_tokenizer_a7bb0f1c5767837a9021898139956bee5}{\index{cmn\-Tokenizer@{cmn\-Tokenizer}!Set\-Escape\-Markers@{Set\-Escape\-Markers}}
+\index{Set\-Escape\-Markers@{Set\-Escape\-Markers}!cmnTokenizer@{cmn\-Tokenizer}}
+\subsubsection[{Set\-Escape\-Markers}]{\setlength{\rightskip}{0pt plus 5cm}void cmn\-Tokenizer\-::\-Set\-Escape\-Markers (
 \begin{DoxyParamCaption}
 \item[{const char $\ast$}]{markers}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\label{classcmn_tokenizer_a7bb0f1c5767837a9021898139956bee5}
-\hypertarget{classcmn_tokenizer_accde43d610ec450536f310e6f832eb3c}{}\index{cmn\+Tokenizer@{cmn\+Tokenizer}!Set\+Quote\+Markers@{Set\+Quote\+Markers}}
-\index{Set\+Quote\+Markers@{Set\+Quote\+Markers}!cmn\+Tokenizer@{cmn\+Tokenizer}}
-\subsubsection[{Set\+Quote\+Markers}]{\setlength{\rightskip}{0pt plus 5cm}void cmn\+Tokenizer\+::\+Set\+Quote\+Markers (
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcmn_tokenizer_a7bb0f1c5767837a9021898139956bee5}
+\hypertarget{classcmn_tokenizer_accde43d610ec450536f310e6f832eb3c}{\index{cmn\-Tokenizer@{cmn\-Tokenizer}!Set\-Quote\-Markers@{Set\-Quote\-Markers}}
+\index{Set\-Quote\-Markers@{Set\-Quote\-Markers}!cmnTokenizer@{cmn\-Tokenizer}}
+\subsubsection[{Set\-Quote\-Markers}]{\setlength{\rightskip}{0pt plus 5cm}void cmn\-Tokenizer\-::\-Set\-Quote\-Markers (
 \begin{DoxyParamCaption}
 \item[{const char $\ast$}]{markers}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\label{classcmn_tokenizer_accde43d610ec450536f310e6f832eb3c}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcmn_tokenizer_accde43d610ec450536f310e6f832eb3c}
 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
 \item 
-/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Common/\hyperlink{cmn_tokenizer_8h}{cmn\+Tokenizer.\+h}\end{DoxyCompactItemize}
+/home/adeguet1/catkin\-\_\-ws/src/cisst-\/saw/cisst/cisst\-Common/\hyperlink{cmn_tokenizer_8h}{cmn\-Tokenizer.\-h}\end{DoxyCompactItemize}

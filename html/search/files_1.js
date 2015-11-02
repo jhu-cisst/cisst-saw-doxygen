@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['changelog_2emd',['CHANGELOG.md',['../da/d00/_c_h_a_n_g_e_l_o_g_8md.html',1,'']]],
   ['cia301_2eh',['CiA301.h',['../da/df9/_ci_a301_8h.html',1,'']]],
   ['cia402_2eh',['CiA402.h',['../dc/d3d/_ci_a402_8h.html',1,'']]],
   ['cisstbuildtype_2eh',['cisstBuildType.h',['../dd/dc8/cisst_build_type_8h.html',1,'']]],

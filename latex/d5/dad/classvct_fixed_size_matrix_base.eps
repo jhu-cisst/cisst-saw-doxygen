@@ -5,7 +5,7 @@
 %%For: 
 %Magnification: 1.00
 %%Orientation: Portrait
-%%BoundingBox: 0 0 500 207.100592
+%%BoundingBox: 0 0 500 236.686391
 %%Pages: 0
 %%BeginSetup
 %%EndSetup
@@ -19,12 +19,12 @@
 /marginwidth 10 def
 /distx 20 def
 /disty 40 def
-/boundaspect 2.414286 def  % aspect ratio of the BoundingBox (width/height)
+/boundaspect 2.112500 def  % aspect ratio of the BoundingBox (width/height)
 /boundx 500 def
 /boundy boundx boundaspect div def
 /xspacing 0 def
 /yspacing 0 def
-/rows 14 def
+/rows 16 def
 /cols 2 def
 /scalefactor 0 def
 /boxfont /Times-Roman findfont fontheight scalefont def
@@ -181,9 +181,11 @@ boxfont setfont
 (vctFixedSizeMatrix< CISSTNETLIB_DOUBLE, _rows, _rows, _storageOrder >) cw
 (vctFixedSizeMatrix< double, 3, 3 >) cw
 (vctFixedSizeMatrix< double, 3, 3, _rowMajor >) cw
+(vctFixedSizeMatrix< double, 3, 3, VCT_ROW_MAJOR >) cw
 (vctFixedSizeMatrix< double, 4, 4 >) cw
 (vctFixedSizeMatrix< double, 4, 4, _rowMajor >) cw
 (vctFixedSizeMatrix< double, 4, 4, VCT_COL_MAJOR >) cw
+(vctFixedSizeMatrix< double, 4, 4, VCT_ROW_MAJOR >) cw
 (vctFixedSizeMatrixRef< CISSTNETLIB_DOUBLE, _cols, _cols, _storageOrder?_cols:1, _storageOrder?1:_cols >) cw
 (vctFixedSizeMatrixRef< CISSTNETLIB_DOUBLE, _cols, _rows, _storageOrder?_cols:1, _storageOrder?1:_rows >) cw
 (vctFixedSizeMatrixRef< CISSTNETLIB_DOUBLE, _rows, _rows, _storageOrder?_rows:1, _storageOrder?1:_rows >) cw
@@ -198,19 +200,23 @@ boundx scalefactor div boundy scalefactor div scale
 
 % ----- classes -----
 
- (vctFixedSizeMatrixBase< _rows, _cols, _rowStride, _colStride, _elementType, _dataPtrType >) 0.000000 12.000000 box
- (vctFixedSizeConstMatrixBase< _rows, _cols, _rowStride, _colStride, _elementType, _dataPtrType >) 0.000000 13.000000 box
- (vctFixedSizeMatrix< CISSTNETLIB_DOUBLE, _cols, _cols, _storageOrder >) 1.000000 11.000000 box
- (vctFixedSizeMatrix< CISSTNETLIB_DOUBLE, _cols, _rows, _storageOrder >) 1.000000 10.000000 box
- (vctFixedSizeMatrix< CISSTNETLIB_DOUBLE, _ma+_me+_mg, _n+1, VCT_COL_MAJOR >) 1.000000 9.000000 box
- (vctFixedSizeMatrix< CISSTNETLIB_DOUBLE, _rows, _rows, _storageOrder >) 1.000000 8.000000 box
- (vctFixedSizeMatrix< double, 3, 3 >) 1.000000 7.000000 box
- (vctFixedSizeMatrix< double, 3, 3, _rowMajor >) 1.000000 6.000000 box
-1.000000 6.000000 mark
- (vctFixedSizeMatrix< double, 4, 4 >) 1.000000 5.000000 box
- (vctFixedSizeMatrix< double, 4, 4, _rowMajor >) 1.000000 4.000000 box
-1.000000 4.000000 mark
- (vctFixedSizeMatrix< double, 4, 4, VCT_COL_MAJOR >) 1.000000 3.000000 box
+ (vctFixedSizeMatrixBase< _rows, _cols, _rowStride, _colStride, _elementType, _dataPtrType >) 0.000000 14.000000 box
+ (vctFixedSizeConstMatrixBase< _rows, _cols, _rowStride, _colStride, _elementType, _dataPtrType >) 0.000000 15.000000 box
+ (vctFixedSizeMatrix< CISSTNETLIB_DOUBLE, _cols, _cols, _storageOrder >) 1.000000 13.000000 box
+ (vctFixedSizeMatrix< CISSTNETLIB_DOUBLE, _cols, _rows, _storageOrder >) 1.000000 12.000000 box
+ (vctFixedSizeMatrix< CISSTNETLIB_DOUBLE, _ma+_me+_mg, _n+1, VCT_COL_MAJOR >) 1.000000 11.000000 box
+ (vctFixedSizeMatrix< CISSTNETLIB_DOUBLE, _rows, _rows, _storageOrder >) 1.000000 10.000000 box
+ (vctFixedSizeMatrix< double, 3, 3 >) 1.000000 9.000000 box
+ (vctFixedSizeMatrix< double, 3, 3, _rowMajor >) 1.000000 8.000000 box
+1.000000 8.000000 mark
+ (vctFixedSizeMatrix< double, 3, 3, VCT_ROW_MAJOR >) 1.000000 7.000000 box
+1.000000 7.000000 mark
+ (vctFixedSizeMatrix< double, 4, 4 >) 1.000000 6.000000 box
+ (vctFixedSizeMatrix< double, 4, 4, _rowMajor >) 1.000000 5.000000 box
+1.000000 5.000000 mark
+ (vctFixedSizeMatrix< double, 4, 4, VCT_COL_MAJOR >) 1.000000 4.000000 box
+ (vctFixedSizeMatrix< double, 4, 4, VCT_ROW_MAJOR >) 1.000000 3.000000 box
+1.000000 3.000000 mark
  (vctFixedSizeMatrixRef< CISSTNETLIB_DOUBLE, _cols, _cols, _storageOrder?_cols:1, _storageOrder?1:_cols >) 1.000000 2.000000 box
  (vctFixedSizeMatrixRef< CISSTNETLIB_DOUBLE, _cols, _rows, _storageOrder?_cols:1, _storageOrder?1:_rows >) 1.000000 1.000000 box
  (vctFixedSizeMatrixRef< CISSTNETLIB_DOUBLE, _rows, _rows, _storageOrder?_rows:1, _storageOrder?1:_rows >) 1.000000 0.000000 box
@@ -218,11 +224,15 @@ boundx scalefactor div boundy scalefactor div scale
 % ----- relations -----
 
 solid
-0 0.000000 12.000000 out
+0 0.000000 14.000000 out
 solid
-1 0.000000 13.000000 in
+1 0.000000 15.000000 in
 solid
-1 0.000000 11.250000 out
+1 0.000000 13.250000 out
+solid
+0 0.000000 13.500000 hedge
+solid
+0 0.000000 12.500000 hedge
 solid
 0 0.000000 11.500000 hedge
 solid
@@ -248,4 +258,4 @@ solid
 solid
 0 0.000000 0.500000 hedge
 solid
-0.000000 12.000000 0.500000 vedge
+0.000000 14.000000 0.500000 vedge

@@ -12,6 +12,7 @@ var searchData=
   ['osacpuaffinity_2eh',['osaCPUAffinity.h',['../d6/d98/osa_c_p_u_affinity_8h.html',1,'']]],
   ['osacriticalsection_2eh',['osaCriticalSection.h',['../dc/db6/osa_critical_section_8h.html',1,'']]],
   ['osadigitalinput1394_2eh',['osaDigitalInput1394.h',['../d0/d77/osa_digital_input1394_8h.html',1,'']]],
+  ['osadigitaloutput1394_2eh',['osaDigitalOutput1394.h',['../d0/ddb/osa_digital_output1394_8h.html',1,'']]],
   ['osadynamicloader_2eh',['osaDynamicLoader.h',['../dd/d6c/osa_dynamic_loader_8h.html',1,'']]],
   ['osadynamicloaderandfactory_2eh',['osaDynamicLoaderAndFactory.h',['../d0/d3b/osa_dynamic_loader_and_factory_8h.html',1,'']]],
   ['osaexport_2eh',['osaExport.h',['../db/de1/osa_export_8h.html',1,'']]],

@@ -1,5 +1,6 @@
-\hypertarget{classosa_dynamic_loader_and_factory}{}\section{osa\+Dynamic\+Loader\+And\+Factory$<$ Base\+Class $>$ Class Template Reference}
-\label{classosa_dynamic_loader_and_factory}\index{osa\+Dynamic\+Loader\+And\+Factory$<$ Base\+Class $>$@{osa\+Dynamic\+Loader\+And\+Factory$<$ Base\+Class $>$}}
+\hypertarget{classosa_dynamic_loader_and_factory}{\section{osa\-Dynamic\-Loader\-And\-Factory$<$ Base\-Class $>$ Class Template Reference}
+\label{classosa_dynamic_loader_and_factory}\index{osa\-Dynamic\-Loader\-And\-Factory$<$ Base\-Class $>$@{osa\-Dynamic\-Loader\-And\-Factory$<$ Base\-Class $>$}}
+}
 
 
 Dynamically load a shared library file and find the factory methods in the file.  
@@ -7,9 +8,9 @@ Dynamically load a shared library file and find the factory methods in the file.
 
 
 
-{\ttfamily \#include $<$osa\+Dynamic\+Loader\+And\+Factory.\+h$>$}
+{\ttfamily \#include $<$osa\-Dynamic\-Loader\-And\-Factory.\-h$>$}
 
-Inheritance diagram for osa\+Dynamic\+Loader\+And\+Factory$<$ Base\+Class $>$\+:\begin{figure}[H]
+Inheritance diagram for osa\-Dynamic\-Loader\-And\-Factory$<$ Base\-Class $>$\-:\begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[height=3.000000cm]{da/d80/classosa_dynamic_loader_and_factory}
@@ -18,9 +19,9 @@ Inheritance diagram for osa\+Dynamic\+Loader\+And\+Factory$<$ Base\+Class $>$\+:
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classosa_dynamic_loader_and_factory_a62c5ebb6a73695309d35e234c5364aca}{osa\+Dynamic\+Loader\+And\+Factory} ()
+\hyperlink{classosa_dynamic_loader_and_factory_a62c5ebb6a73695309d35e234c5364aca}{osa\-Dynamic\-Loader\-And\-Factory} ()
 \item 
-virtual \hyperlink{classosa_dynamic_loader_and_factory_a89a5ed41795886528c8be5174b414eb0}{$\sim$osa\+Dynamic\+Loader\+And\+Factory} ()
+virtual \hyperlink{classosa_dynamic_loader_and_factory_a89a5ed41795886528c8be5174b414eb0}{$\sim$osa\-Dynamic\-Loader\-And\-Factory} ()
 \item 
 bool \hyperlink{classosa_dynamic_loader_and_factory_ad8fe0ce199004dc602e8e2c445aedd1a}{Init} (const char $\ast$name, const char $\ast$file, const char $\ast$path=0)
 \item 
@@ -28,76 +29,76 @@ bool \hyperlink{classosa_dynamic_loader_and_factory_a8cf38f618bf61e039dbc9eef498
 \item 
 void \hyperlink{classosa_dynamic_loader_and_factory_a99c410f1a99f8b332a5741e6f86bb467}{Reset} ()
 \item 
-Base\+Class $\ast$ \hyperlink{classosa_dynamic_loader_and_factory_a5d98120e99e856ede533caeb4497ec0e}{Create\+Object} () const 
+Base\-Class $\ast$ \hyperlink{classosa_dynamic_loader_and_factory_a5d98120e99e856ede533caeb4497ec0e}{Create\-Object} () const 
 \item 
-void \hyperlink{classosa_dynamic_loader_and_factory_a395ef97059b8b948cfa040a15644857e}{Destroy\+Object} (Base\+Class $\ast$obj) const 
+void \hyperlink{classosa_dynamic_loader_and_factory_a395ef97059b8b948cfa040a15644857e}{Destroy\-Object} (Base\-Class $\ast$obj) const 
 \end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
 
 \subsection{Detailed Description}
-\subsubsection*{template$<$class Base\+Class$>$class osa\+Dynamic\+Loader\+And\+Factory$<$ Base\+Class $>$}
+\subsubsection*{template$<$class Base\-Class$>$class osa\-Dynamic\-Loader\-And\-Factory$<$ Base\-Class $>$}
 
 Dynamically load a shared library file and find the factory methods in the file. 
 
-This is a templated class that is used to dynamically load \char`\"{}plugin\char`\"{} modules that are implemented as derived classes of the specified base class (template parameter). The advantage of this class over {\itshape \hyperlink{classosa_dynamic_loader}{osa\+Dynamic\+Loader}} is that any class can serve as the base class. It is not necessary for the base or derived class to inherit from {\itshape \hyperlink{classcmn_generic_object}{cmn\+Generic\+Object}}. The only requirement is that it contain a public {\itshape V\+E\+R\+S\+I\+O\+N} enum that specifies the \char`\"{}interface version\char`\"{} of the base class. The {\itshape V\+E\+R\+S\+I\+O\+N} should be changed for any base class changes that could affect the derived classes (e.\+g., adding member data, changing public methods, etc.).
+This is a templated class that is used to dynamically load \char`\"{}plugin\char`\"{} modules that are implemented as derived classes of the specified base class (template parameter). The advantage of this class over {\itshape \hyperlink{classosa_dynamic_loader}{osa\-Dynamic\-Loader}} is that any class can serve as the base class. It is not necessary for the base or derived class to inherit from {\itshape \hyperlink{classcmn_generic_object}{cmn\-Generic\-Object}}. The only requirement is that it contain a public {\itshape V\-E\-R\-S\-I\-O\-N} enum that specifies the \char`\"{}interface version\char`\"{} of the base class. The {\itshape V\-E\-R\-S\-I\-O\-N} should be changed for any base class changes that could affect the derived classes (e.\-g., adding member data, changing public methods, etc.).
 
-If the base class is {\itshape \hyperlink{classcmn_generic_object}{cmn\+Generic\+Object}} (or derived from it), the {\itshape \hyperlink{classosa_dynamic_loader}{osa\+Dynamic\+Loader}} class should be used instead.
+If the base class is {\itshape \hyperlink{classcmn_generic_object}{cmn\-Generic\-Object}} (or derived from it), the {\itshape \hyperlink{classosa_dynamic_loader}{osa\-Dynamic\-Loader}} class should be used instead.
 
-\begin{DoxySeeAlso}{See also}
-\hyperlink{classosa_dynamic_loader}{osa\+Dynamic\+Loader} 
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classosa_dynamic_loader}{osa\-Dynamic\-Loader} 
 \end{DoxySeeAlso}
 
 
 \subsection{Constructor \& Destructor Documentation}
-\hypertarget{classosa_dynamic_loader_and_factory_a62c5ebb6a73695309d35e234c5364aca}{}\index{osa\+Dynamic\+Loader\+And\+Factory@{osa\+Dynamic\+Loader\+And\+Factory}!osa\+Dynamic\+Loader\+And\+Factory@{osa\+Dynamic\+Loader\+And\+Factory}}
-\index{osa\+Dynamic\+Loader\+And\+Factory@{osa\+Dynamic\+Loader\+And\+Factory}!osa\+Dynamic\+Loader\+And\+Factory@{osa\+Dynamic\+Loader\+And\+Factory}}
-\subsubsection[{osa\+Dynamic\+Loader\+And\+Factory}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Base\+Class $>$ {\bf osa\+Dynamic\+Loader\+And\+Factory}$<$ Base\+Class $>$\+::{\bf osa\+Dynamic\+Loader\+And\+Factory} (
+\hypertarget{classosa_dynamic_loader_and_factory_a62c5ebb6a73695309d35e234c5364aca}{\index{osa\-Dynamic\-Loader\-And\-Factory@{osa\-Dynamic\-Loader\-And\-Factory}!osa\-Dynamic\-Loader\-And\-Factory@{osa\-Dynamic\-Loader\-And\-Factory}}
+\index{osa\-Dynamic\-Loader\-And\-Factory@{osa\-Dynamic\-Loader\-And\-Factory}!osaDynamicLoaderAndFactory@{osa\-Dynamic\-Loader\-And\-Factory}}
+\subsubsection[{osa\-Dynamic\-Loader\-And\-Factory}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Base\-Class $>$ {\bf osa\-Dynamic\-Loader\-And\-Factory}$<$ Base\-Class $>$\-::{\bf osa\-Dynamic\-Loader\-And\-Factory} (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\label{classosa_dynamic_loader_and_factory_a62c5ebb6a73695309d35e234c5364aca}
-Default constructor. Calls \hyperlink{classosa_dynamic_loader_and_factory_a99c410f1a99f8b332a5741e6f86bb467}{Reset()} method. \hypertarget{classosa_dynamic_loader_and_factory_a89a5ed41795886528c8be5174b414eb0}{}\index{osa\+Dynamic\+Loader\+And\+Factory@{osa\+Dynamic\+Loader\+And\+Factory}!````~osa\+Dynamic\+Loader\+And\+Factory@{$\sim$osa\+Dynamic\+Loader\+And\+Factory}}
-\index{````~osa\+Dynamic\+Loader\+And\+Factory@{$\sim$osa\+Dynamic\+Loader\+And\+Factory}!osa\+Dynamic\+Loader\+And\+Factory@{osa\+Dynamic\+Loader\+And\+Factory}}
-\subsubsection[{$\sim$osa\+Dynamic\+Loader\+And\+Factory}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Base\+Class $>$ virtual {\bf osa\+Dynamic\+Loader\+And\+Factory}$<$ Base\+Class $>$\+::$\sim${\bf osa\+Dynamic\+Loader\+And\+Factory} (
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classosa_dynamic_loader_and_factory_a62c5ebb6a73695309d35e234c5364aca}
+Default constructor. Calls \hyperlink{classosa_dynamic_loader_and_factory_a99c410f1a99f8b332a5741e6f86bb467}{Reset()} method. \hypertarget{classosa_dynamic_loader_and_factory_a89a5ed41795886528c8be5174b414eb0}{\index{osa\-Dynamic\-Loader\-And\-Factory@{osa\-Dynamic\-Loader\-And\-Factory}!$\sim$osa\-Dynamic\-Loader\-And\-Factory@{$\sim$osa\-Dynamic\-Loader\-And\-Factory}}
+\index{$\sim$osa\-Dynamic\-Loader\-And\-Factory@{$\sim$osa\-Dynamic\-Loader\-And\-Factory}!osaDynamicLoaderAndFactory@{osa\-Dynamic\-Loader\-And\-Factory}}
+\subsubsection[{$\sim$osa\-Dynamic\-Loader\-And\-Factory}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Base\-Class $>$ virtual {\bf osa\-Dynamic\-Loader\-And\-Factory}$<$ Base\-Class $>$\-::$\sim${\bf osa\-Dynamic\-Loader\-And\-Factory} (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classosa_dynamic_loader_and_factory_a89a5ed41795886528c8be5174b414eb0}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classosa_dynamic_loader_and_factory_a89a5ed41795886528c8be5174b414eb0}
 Destructor. Does not unload library in case any objects created from within the library still exist. To close library, call \hyperlink{classosa_dynamic_loader_and_factory_a99c410f1a99f8b332a5741e6f86bb467}{Reset()}. 
 
 \subsection{Member Function Documentation}
-\hypertarget{classosa_dynamic_loader_and_factory_a5d98120e99e856ede533caeb4497ec0e}{}\index{osa\+Dynamic\+Loader\+And\+Factory@{osa\+Dynamic\+Loader\+And\+Factory}!Create\+Object@{Create\+Object}}
-\index{Create\+Object@{Create\+Object}!osa\+Dynamic\+Loader\+And\+Factory@{osa\+Dynamic\+Loader\+And\+Factory}}
-\subsubsection[{Create\+Object}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Base\+Class $>$ Base\+Class$\ast$ {\bf osa\+Dynamic\+Loader\+And\+Factory}$<$ Base\+Class $>$\+::Create\+Object (
+\hypertarget{classosa_dynamic_loader_and_factory_a5d98120e99e856ede533caeb4497ec0e}{\index{osa\-Dynamic\-Loader\-And\-Factory@{osa\-Dynamic\-Loader\-And\-Factory}!Create\-Object@{Create\-Object}}
+\index{Create\-Object@{Create\-Object}!osaDynamicLoaderAndFactory@{osa\-Dynamic\-Loader\-And\-Factory}}
+\subsubsection[{Create\-Object}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Base\-Class $>$ Base\-Class$\ast$ {\bf osa\-Dynamic\-Loader\-And\-Factory}$<$ Base\-Class $>$\-::Create\-Object (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classosa_dynamic_loader_and_factory_a5d98120e99e856ede533caeb4497ec0e}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classosa_dynamic_loader_and_factory_a5d98120e99e856ede533caeb4497ec0e}
 Create a new instance of the derived class (from the dynamically loaded library). \begin{DoxyReturn}{Returns}
 a pointer to the new instance (0 if class not initialized) 
 \end{DoxyReturn}
-\hypertarget{classosa_dynamic_loader_and_factory_a395ef97059b8b948cfa040a15644857e}{}\index{osa\+Dynamic\+Loader\+And\+Factory@{osa\+Dynamic\+Loader\+And\+Factory}!Destroy\+Object@{Destroy\+Object}}
-\index{Destroy\+Object@{Destroy\+Object}!osa\+Dynamic\+Loader\+And\+Factory@{osa\+Dynamic\+Loader\+And\+Factory}}
-\subsubsection[{Destroy\+Object}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Base\+Class $>$ void {\bf osa\+Dynamic\+Loader\+And\+Factory}$<$ Base\+Class $>$\+::Destroy\+Object (
+\hypertarget{classosa_dynamic_loader_and_factory_a395ef97059b8b948cfa040a15644857e}{\index{osa\-Dynamic\-Loader\-And\-Factory@{osa\-Dynamic\-Loader\-And\-Factory}!Destroy\-Object@{Destroy\-Object}}
+\index{Destroy\-Object@{Destroy\-Object}!osaDynamicLoaderAndFactory@{osa\-Dynamic\-Loader\-And\-Factory}}
+\subsubsection[{Destroy\-Object}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Base\-Class $>$ void {\bf osa\-Dynamic\-Loader\-And\-Factory}$<$ Base\-Class $>$\-::Destroy\-Object (
 \begin{DoxyParamCaption}
-\item[{Base\+Class $\ast$}]{obj}
+\item[{Base\-Class $\ast$}]{obj}
 \end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classosa_dynamic_loader_and_factory_a395ef97059b8b948cfa040a15644857e}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classosa_dynamic_loader_and_factory_a395ef97059b8b948cfa040a15644857e}
 Delete an instance of the derived class. 
 \begin{DoxyParams}{Parameters}
 {\em obj} & Pointer to object to be destroyed. \\
 \hline
 \end{DoxyParams}
-\hypertarget{classosa_dynamic_loader_and_factory_ad8fe0ce199004dc602e8e2c445aedd1a}{}\index{osa\+Dynamic\+Loader\+And\+Factory@{osa\+Dynamic\+Loader\+And\+Factory}!Init@{Init}}
-\index{Init@{Init}!osa\+Dynamic\+Loader\+And\+Factory@{osa\+Dynamic\+Loader\+And\+Factory}}
-\subsubsection[{Init}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Base\+Class $>$ bool {\bf osa\+Dynamic\+Loader\+And\+Factory}$<$ Base\+Class $>$\+::Init (
+\hypertarget{classosa_dynamic_loader_and_factory_ad8fe0ce199004dc602e8e2c445aedd1a}{\index{osa\-Dynamic\-Loader\-And\-Factory@{osa\-Dynamic\-Loader\-And\-Factory}!Init@{Init}}
+\index{Init@{Init}!osaDynamicLoaderAndFactory@{osa\-Dynamic\-Loader\-And\-Factory}}
+\subsubsection[{Init}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Base\-Class $>$ bool {\bf osa\-Dynamic\-Loader\-And\-Factory}$<$ Base\-Class $>$\-::Init (
 \begin{DoxyParamCaption}
 \item[{const char $\ast$}]{name, }
 \item[{const char $\ast$}]{file, }
 \item[{const char $\ast$}]{path = {\ttfamily 0}}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\label{classosa_dynamic_loader_and_factory_ad8fe0ce199004dc602e8e2c445aedd1a}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classosa_dynamic_loader_and_factory_ad8fe0ce199004dc602e8e2c445aedd1a}
 Load the derived class from the specified file. Note that a file may contain more than one derived class, but each derived class must be accessed via a new dynamic loader object. The operating system ensures that a library is only loaded once. 
 \begin{DoxyParams}{Parameters}
 {\em name} & Name of derived class \\
@@ -110,13 +111,13 @@ Load the derived class from the specified file. Note that a file may contain mor
 \begin{DoxyReturn}{Returns}
 true if sucessful; false otherwise 
 \end{DoxyReturn}
-\hypertarget{classosa_dynamic_loader_and_factory_a8cf38f618bf61e039dbc9eef49897900}{}\index{osa\+Dynamic\+Loader\+And\+Factory@{osa\+Dynamic\+Loader\+And\+Factory}!Init@{Init}}
-\index{Init@{Init}!osa\+Dynamic\+Loader\+And\+Factory@{osa\+Dynamic\+Loader\+And\+Factory}}
-\subsubsection[{Init}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Base\+Class $>$ bool {\bf osa\+Dynamic\+Loader\+And\+Factory}$<$ Base\+Class $>$\+::Init (
+\hypertarget{classosa_dynamic_loader_and_factory_a8cf38f618bf61e039dbc9eef49897900}{\index{osa\-Dynamic\-Loader\-And\-Factory@{osa\-Dynamic\-Loader\-And\-Factory}!Init@{Init}}
+\index{Init@{Init}!osaDynamicLoaderAndFactory@{osa\-Dynamic\-Loader\-And\-Factory}}
+\subsubsection[{Init}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Base\-Class $>$ bool {\bf osa\-Dynamic\-Loader\-And\-Factory}$<$ Base\-Class $>$\-::Init (
 \begin{DoxyParamCaption}
 \item[{const char $\ast$}]{name}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\label{classosa_dynamic_loader_and_factory_a8cf38f618bf61e039dbc9eef49897900}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classosa_dynamic_loader_and_factory_a8cf38f618bf61e039dbc9eef49897900}
 Load the derived class from a file that has the same name as the derived class (no extension). 
 \begin{DoxyParams}{Parameters}
 {\em name} & Name of derived class \\
@@ -125,15 +126,15 @@ Load the derived class from a file that has the same name as the derived class (
 \begin{DoxyReturn}{Returns}
 true if sucessful; false otherwise 
 \end{DoxyReturn}
-\hypertarget{classosa_dynamic_loader_and_factory_a99c410f1a99f8b332a5741e6f86bb467}{}\index{osa\+Dynamic\+Loader\+And\+Factory@{osa\+Dynamic\+Loader\+And\+Factory}!Reset@{Reset}}
-\index{Reset@{Reset}!osa\+Dynamic\+Loader\+And\+Factory@{osa\+Dynamic\+Loader\+And\+Factory}}
-\subsubsection[{Reset}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Base\+Class $>$ void {\bf osa\+Dynamic\+Loader\+And\+Factory}$<$ Base\+Class $>$\+::Reset (
+\hypertarget{classosa_dynamic_loader_and_factory_a99c410f1a99f8b332a5741e6f86bb467}{\index{osa\-Dynamic\-Loader\-And\-Factory@{osa\-Dynamic\-Loader\-And\-Factory}!Reset@{Reset}}
+\index{Reset@{Reset}!osaDynamicLoaderAndFactory@{osa\-Dynamic\-Loader\-And\-Factory}}
+\subsubsection[{Reset}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Base\-Class $>$ void {\bf osa\-Dynamic\-Loader\-And\-Factory}$<$ Base\-Class $>$\-::Reset (
 \begin{DoxyParamCaption}
 \item[{void}]{}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\label{classosa_dynamic_loader_and_factory_a99c410f1a99f8b332a5741e6f86bb467}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classosa_dynamic_loader_and_factory_a99c410f1a99f8b332a5741e6f86bb467}
 Unload the library file and clear the factory functions. Do not call this method unless you are sure that all instances of the derived class have already been destroyed. 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
 \item 
-/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+O\+S\+Abstraction/\hyperlink{osa_dynamic_loader_and_factory_8h}{osa\+Dynamic\+Loader\+And\+Factory.\+h}\end{DoxyCompactItemize}
+/home/adeguet1/catkin\-\_\-ws/src/cisst-\/saw/cisst/cisst\-O\-S\-Abstraction/\hyperlink{osa_dynamic_loader_and_factory_8h}{osa\-Dynamic\-Loader\-And\-Factory.\-h}\end{DoxyCompactItemize}

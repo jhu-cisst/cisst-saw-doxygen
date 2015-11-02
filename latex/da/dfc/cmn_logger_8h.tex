@@ -1,136 +1,129 @@
-\hypertarget{cmn_logger_8h}{}\section{/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Common/cmn\+Logger.h File Reference}
-\label{cmn_logger_8h}\index{/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Common/cmn\+Logger.\+h@{/\+Users/anton/devel/cisst-\/saw/cisst/cisst\+Common/cmn\+Logger.\+h}}
+\hypertarget{cmn_logger_8h}{\section{/home/adeguet1/catkin\-\_\-ws/src/cisst-\/saw/cisst/cisst\-Common/cmn\-Logger.h File Reference}
+\label{cmn_logger_8h}\index{/home/adeguet1/catkin\-\_\-ws/src/cisst-\/saw/cisst/cisst\-Common/cmn\-Logger.\-h@{/home/adeguet1/catkin\-\_\-ws/src/cisst-\/saw/cisst/cisst\-Common/cmn\-Logger.\-h}}
+}
 
 
-Declaration of \hyperlink{classcmn_logger}{cmn\+Logger} amd macros for human readable logging.  
+Declaration of \hyperlink{classcmn_logger}{cmn\-Logger} amd macros for human readable logging.  
 
 
-{\ttfamily \#include $<$cisst\+Common/cmn\+Portability.\+h$>$}\\*
-{\ttfamily \#include $<$cisst\+Common/cmn\+Log\+Lo\+D.\+h$>$}\\*
-{\ttfamily \#include $<$cisst\+Common/cmn\+L\+O\+D\+Output\+Multiplexer.\+h$>$}\\*
-{\ttfamily \#include $<$cisst\+Common/cmn\+Multiplexer\+Streambuf.\+h$>$}\\*
-{\ttfamily \#include $<$cisst\+Common/cmn\+L\+O\+D\+Multiplexer\+Streambuf.\+h$>$}\\*
+{\ttfamily \#include $<$cisst\-Common/cmn\-Portability.\-h$>$}\\*
+{\ttfamily \#include $<$cisst\-Common/cmn\-Log\-Lo\-D.\-h$>$}\\*
+{\ttfamily \#include $<$cisst\-Common/cmn\-L\-O\-D\-Output\-Multiplexer.\-h$>$}\\*
+{\ttfamily \#include $<$cisst\-Common/cmn\-Multiplexer\-Streambuf.\-h$>$}\\*
+{\ttfamily \#include $<$cisst\-Common/cmn\-L\-O\-D\-Multiplexer\-Streambuf.\-h$>$}\\*
 {\ttfamily \#include $<$string$>$}\\*
 {\ttfamily \#include $<$vector$>$}\\*
 {\ttfamily \#include $<$fstream$>$}\\*
-{\ttfamily \#include $<$cisst\+Common/cmn\+Export.\+h$>$}\\*
+{\ttfamily \#include $<$cisst\-Common/cmn\-Export.\-h$>$}\\*
 \subsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
-class \hyperlink{classcmn_logger}{cmn\+Logger}
+class \hyperlink{classcmn_logger}{cmn\-Logger}
 \begin{DoxyCompactList}\small\item\em Class to glue the class register, the output multiplexer and the message level of detail to form the logging entity of cisst. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Macros}
 \begin{DoxyCompactItemize}
 \item 
-\#define \hyperlink{cmn_logger_8h_adb1a0222996a138a964a50959cbbcd94}{\+\_\+cmn\+Logger\+\_\+h}
+\#define \hyperlink{cmn_logger_8h_adb1a0222996a138a964a50959cbbcd94}{\-\_\-cmn\-Logger\-\_\-h}
 \item 
-\#define \hyperlink{cmn_logger_8h_a2ec657ed70017f50c5cd25e8a0e72dea}{B\+Y\+P\+A\+S\+S\+\_\+\+C\+M\+N\+\_\+\+L\+O\+G}~0
+\#define \hyperlink{cmn_logger_8h_a2ec657ed70017f50c5cd25e8a0e72dea}{B\-Y\-P\-A\-S\-S\-\_\-\-C\-M\-N\-\_\-\-L\-O\-G}
 \item 
-\#define \hyperlink{cmn_logger_8h_adda96d359bb6be5ef4ad871018bb2b58}{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E}(object\+Pointer,  lod)
+\#define \hyperlink{cmn_logger_8h_adda96d359bb6be5ef4ad871018bb2b58}{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-S\-T\-A\-N\-C\-E}(object\-Pointer, lod)~std\-::cout
 \item 
-\#define \hyperlink{cmn_logger_8h_a3fa9ee12c1a4d138c2594449aaf23729}{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S}(lod)~\hyperlink{cmn_logger_8h_adda96d359bb6be5ef4ad871018bb2b58}{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E}(this, lod)
+\#define \hyperlink{cmn_logger_8h_a3fa9ee12c1a4d138c2594449aaf23729}{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S}(lod)~\hyperlink{cmn_logger_8h_adda96d359bb6be5ef4ad871018bb2b58}{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-S\-T\-A\-N\-C\-E}(this, lod)
 \item 
-\#define \hyperlink{cmn_logger_8h_a2eb3b40558ec17c9ae45197777aca7b2}{C\+M\+N\+\_\+\+L\+O\+G}(lod)
+\#define \hyperlink{cmn_logger_8h_a2eb3b40558ec17c9ae45197777aca7b2}{C\-M\-N\-\_\-\-L\-O\-G}(lod)~std\-::cout
 \item 
-\#define \hyperlink{cmn_logger_8h_ae7bc2c891a95721784bbedfec97a0d1f}{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+D\+E\+T\+A\+I\+L\+S}~\char`\"{}File\+: \char`\"{} $<$$<$ cmn\+Logger\+::\+Extract\+File\+Name(\+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+) $<$$<$ \char`\"{} Line\+: \char`\"{} $<$$<$ \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+ $<$$<$ \char`\"{} -\/ \char`\"{}
+\#define \hyperlink{cmn_logger_8h_ae7bc2c891a95721784bbedfec97a0d1f}{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-D\-E\-T\-A\-I\-L\-S}~\char`\"{}File\-: \char`\"{} $<$$<$ cmn\-Logger\-::\-Extract\-File\-Name(\-\_\-\-\_\-\-F\-I\-L\-E\-\_\-\-\_\-) $<$$<$ \char`\"{} Line\-: \char`\"{} $<$$<$ \-\_\-\-\_\-\-L\-I\-N\-E\-\_\-\-\_\- $<$$<$ \char`\"{} -\/ \char`\"{}
 \end{DoxyCompactItemize}
 {\bf }\par
 \begin{DoxyCompactItemize}
 \item 
-\#define \hyperlink{cmn_logger_8h_ab6e2034b695d5bee24ce2e465af12ba2}{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+I\+N\+I\+T\+\_\+\+E\+R\+R\+O\+R}(object\+Pointer)~\hyperlink{cmn_logger_8h_adda96d359bb6be5ef4ad871018bb2b58}{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E}(object\+Pointer, \hyperlink{cmn_log_lo_d_8h_a7ad431df88335f9088fc2c38d5199ff8}{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+I\+N\+I\+T\+\_\+\+E\+R\+R\+O\+R}) $<$$<$ \hyperlink{cmn_logger_8h_ae7bc2c891a95721784bbedfec97a0d1f}{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+D\+E\+T\+A\+I\+L\+S} $<$$<$ \char`\"{} \char`\"{}
+\#define \hyperlink{cmn_logger_8h_ab6e2034b695d5bee24ce2e465af12ba2}{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-S\-T\-A\-N\-C\-E\-\_\-\-I\-N\-I\-T\-\_\-\-E\-R\-R\-O\-R}(object\-Pointer)~\hyperlink{cmn_logger_8h_adda96d359bb6be5ef4ad871018bb2b58}{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-S\-T\-A\-N\-C\-E}(object\-Pointer, \hyperlink{cmn_log_lo_d_8h_a7ad431df88335f9088fc2c38d5199ff8}{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-L\-E\-V\-E\-L\-\_\-\-I\-N\-I\-T\-\_\-\-E\-R\-R\-O\-R}) $<$$<$ \hyperlink{cmn_logger_8h_ae7bc2c891a95721784bbedfec97a0d1f}{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-D\-E\-T\-A\-I\-L\-S} $<$$<$ \char`\"{} \char`\"{}
 \item 
-\#define \hyperlink{cmn_logger_8h_af26e0b5f3eed2b75c7bdd9d9bd9cabed}{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+I\+N\+I\+T\+\_\+\+W\+A\+R\+N\+I\+N\+G}(object\+Pointer)~\hyperlink{cmn_logger_8h_adda96d359bb6be5ef4ad871018bb2b58}{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E}(object\+Pointer, \hyperlink{cmn_log_lo_d_8h_a708aa17ccbbbe1c92f63803adc1d6abb}{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+I\+N\+I\+T\+\_\+\+W\+A\+R\+N\+I\+N\+G})
+\#define \hyperlink{cmn_logger_8h_af26e0b5f3eed2b75c7bdd9d9bd9cabed}{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-S\-T\-A\-N\-C\-E\-\_\-\-I\-N\-I\-T\-\_\-\-W\-A\-R\-N\-I\-N\-G}(object\-Pointer)~\hyperlink{cmn_logger_8h_adda96d359bb6be5ef4ad871018bb2b58}{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-S\-T\-A\-N\-C\-E}(object\-Pointer, \hyperlink{cmn_log_lo_d_8h_a708aa17ccbbbe1c92f63803adc1d6abb}{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-L\-E\-V\-E\-L\-\_\-\-I\-N\-I\-T\-\_\-\-W\-A\-R\-N\-I\-N\-G})
 \item 
-\#define \hyperlink{cmn_logger_8h_a9ba28a8838afce0dc63777b928188e92}{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+I\+N\+I\+T\+\_\+\+V\+E\+R\+B\+O\+S\+E}(object\+Pointer)~\hyperlink{cmn_logger_8h_adda96d359bb6be5ef4ad871018bb2b58}{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E}(object\+Pointer, \hyperlink{cmn_log_lo_d_8h_ae0fcf22a2f3faaba0c5bf49a237e3f3e}{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+I\+N\+I\+T\+\_\+\+V\+E\+R\+B\+O\+S\+E})
+\#define \hyperlink{cmn_logger_8h_a9ba28a8838afce0dc63777b928188e92}{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-S\-T\-A\-N\-C\-E\-\_\-\-I\-N\-I\-T\-\_\-\-V\-E\-R\-B\-O\-S\-E}(object\-Pointer)~\hyperlink{cmn_logger_8h_adda96d359bb6be5ef4ad871018bb2b58}{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-S\-T\-A\-N\-C\-E}(object\-Pointer, \hyperlink{cmn_log_lo_d_8h_ae0fcf22a2f3faaba0c5bf49a237e3f3e}{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-L\-E\-V\-E\-L\-\_\-\-I\-N\-I\-T\-\_\-\-V\-E\-R\-B\-O\-S\-E})
 \item 
-\#define \hyperlink{cmn_logger_8h_a25ac5303ca9638dc39b9a941ff33e56e}{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+I\+N\+I\+T\+\_\+\+D\+E\+B\+U\+G}(object\+Pointer)~\hyperlink{cmn_logger_8h_adda96d359bb6be5ef4ad871018bb2b58}{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E}(object\+Pointer, \hyperlink{cmn_log_lo_d_8h_a27e55e3638c78366331ee3c1ca3d60ef}{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+I\+N\+I\+T\+\_\+\+D\+E\+B\+U\+G})
+\#define \hyperlink{cmn_logger_8h_a25ac5303ca9638dc39b9a941ff33e56e}{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-S\-T\-A\-N\-C\-E\-\_\-\-I\-N\-I\-T\-\_\-\-D\-E\-B\-U\-G}(object\-Pointer)~\hyperlink{cmn_logger_8h_adda96d359bb6be5ef4ad871018bb2b58}{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-S\-T\-A\-N\-C\-E}(object\-Pointer, \hyperlink{cmn_log_lo_d_8h_a27e55e3638c78366331ee3c1ca3d60ef}{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-L\-E\-V\-E\-L\-\_\-\-I\-N\-I\-T\-\_\-\-D\-E\-B\-U\-G})
 \item 
-\#define \hyperlink{cmn_logger_8h_aeecbadde8aebbfe6c0c4301d9ec99f39}{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+R\+U\+N\+\_\+\+E\+R\+R\+O\+R}(object\+Pointer)~\hyperlink{cmn_logger_8h_adda96d359bb6be5ef4ad871018bb2b58}{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E}(object\+Pointer, \hyperlink{cmn_log_lo_d_8h_a7ace6c3eaafa3c4670c6d0dc71406e37}{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+R\+U\+N\+\_\+\+E\+R\+R\+O\+R}) $<$$<$ \hyperlink{cmn_logger_8h_ae7bc2c891a95721784bbedfec97a0d1f}{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+D\+E\+T\+A\+I\+L\+S} $<$$<$ \char`\"{} \char`\"{}
+\#define \hyperlink{cmn_logger_8h_aeecbadde8aebbfe6c0c4301d9ec99f39}{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-S\-T\-A\-N\-C\-E\-\_\-\-R\-U\-N\-\_\-\-E\-R\-R\-O\-R}(object\-Pointer)~\hyperlink{cmn_logger_8h_adda96d359bb6be5ef4ad871018bb2b58}{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-S\-T\-A\-N\-C\-E}(object\-Pointer, \hyperlink{cmn_log_lo_d_8h_a7ace6c3eaafa3c4670c6d0dc71406e37}{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-L\-E\-V\-E\-L\-\_\-\-R\-U\-N\-\_\-\-E\-R\-R\-O\-R}) $<$$<$ \hyperlink{cmn_logger_8h_ae7bc2c891a95721784bbedfec97a0d1f}{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-D\-E\-T\-A\-I\-L\-S} $<$$<$ \char`\"{} \char`\"{}
 \item 
-\#define \hyperlink{cmn_logger_8h_a0be1cbca81ed0daa47b8be061fd027b6}{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+R\+U\+N\+\_\+\+W\+A\+R\+N\+I\+N\+G}(object\+Pointer)~\hyperlink{cmn_logger_8h_adda96d359bb6be5ef4ad871018bb2b58}{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E}(object\+Pointer, \hyperlink{cmn_log_lo_d_8h_a0bced3208a653ee94f650b8427ba0274}{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+R\+U\+N\+\_\+\+W\+A\+R\+N\+I\+N\+G})
+\#define \hyperlink{cmn_logger_8h_a0be1cbca81ed0daa47b8be061fd027b6}{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-S\-T\-A\-N\-C\-E\-\_\-\-R\-U\-N\-\_\-\-W\-A\-R\-N\-I\-N\-G}(object\-Pointer)~\hyperlink{cmn_logger_8h_adda96d359bb6be5ef4ad871018bb2b58}{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-S\-T\-A\-N\-C\-E}(object\-Pointer, \hyperlink{cmn_log_lo_d_8h_a0bced3208a653ee94f650b8427ba0274}{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-L\-E\-V\-E\-L\-\_\-\-R\-U\-N\-\_\-\-W\-A\-R\-N\-I\-N\-G})
 \item 
-\#define \hyperlink{cmn_logger_8h_a7aa924c5068460e58d36505290ea274d}{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+R\+U\+N\+\_\+\+V\+E\+R\+B\+O\+S\+E}(object\+Pointer)~\hyperlink{cmn_logger_8h_adda96d359bb6be5ef4ad871018bb2b58}{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E}(object\+Pointer, \hyperlink{cmn_log_lo_d_8h_a937175d7a250bf915b6a3f54690ebb36}{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+R\+U\+N\+\_\+\+V\+E\+R\+B\+O\+S\+E})
+\#define \hyperlink{cmn_logger_8h_a7aa924c5068460e58d36505290ea274d}{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-S\-T\-A\-N\-C\-E\-\_\-\-R\-U\-N\-\_\-\-V\-E\-R\-B\-O\-S\-E}(object\-Pointer)~\hyperlink{cmn_logger_8h_adda96d359bb6be5ef4ad871018bb2b58}{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-S\-T\-A\-N\-C\-E}(object\-Pointer, \hyperlink{cmn_log_lo_d_8h_a937175d7a250bf915b6a3f54690ebb36}{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-L\-E\-V\-E\-L\-\_\-\-R\-U\-N\-\_\-\-V\-E\-R\-B\-O\-S\-E})
 \item 
-\#define \hyperlink{cmn_logger_8h_a15ad96dd66d18e84efefb9870af96825}{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+R\+U\+N\+\_\+\+D\+E\+B\+U\+G}(object\+Pointer)~\hyperlink{cmn_logger_8h_adda96d359bb6be5ef4ad871018bb2b58}{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E}(object\+Pointer, \hyperlink{cmn_log_lo_d_8h_a285ec3fc9bf3bf806e6752070005504b}{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+R\+U\+N\+\_\+\+D\+E\+B\+U\+G})
-\end{DoxyCompactItemize}
-
-{\bf }\par
-\begin{DoxyCompactItemize}
-\item 
-\#define \hyperlink{cmn_logger_8h_a25e7cb4bb77d89a759f34b42d8945ee3}{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+I\+T\+\_\+\+E\+R\+R\+O\+R}~\hyperlink{cmn_logger_8h_a3fa9ee12c1a4d138c2594449aaf23729}{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S}(\hyperlink{cmn_log_lo_d_8h_a7ad431df88335f9088fc2c38d5199ff8}{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+I\+N\+I\+T\+\_\+\+E\+R\+R\+O\+R}) $<$$<$ \hyperlink{cmn_logger_8h_ae7bc2c891a95721784bbedfec97a0d1f}{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+D\+E\+T\+A\+I\+L\+S} $<$$<$ \char`\"{} \char`\"{}
-\item 
-\#define \hyperlink{cmn_logger_8h_ae49b26c98b2066c71ea28817bd9b9535}{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+I\+T\+\_\+\+W\+A\+R\+N\+I\+N\+G}~\hyperlink{cmn_logger_8h_a3fa9ee12c1a4d138c2594449aaf23729}{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S}(\hyperlink{cmn_log_lo_d_8h_a708aa17ccbbbe1c92f63803adc1d6abb}{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+I\+N\+I\+T\+\_\+\+W\+A\+R\+N\+I\+N\+G})
-\item 
-\#define \hyperlink{cmn_logger_8h_a56f4f348afa2a7e8d32a1215f189da67}{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+I\+T\+\_\+\+V\+E\+R\+B\+O\+S\+E}~\hyperlink{cmn_logger_8h_a3fa9ee12c1a4d138c2594449aaf23729}{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S}(\hyperlink{cmn_log_lo_d_8h_ae0fcf22a2f3faaba0c5bf49a237e3f3e}{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+I\+N\+I\+T\+\_\+\+V\+E\+R\+B\+O\+S\+E})
-\item 
-\#define \hyperlink{cmn_logger_8h_a0c2eb3b8921d5e923d2b315d37b4f0b8}{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+I\+T\+\_\+\+D\+E\+B\+U\+G}~\hyperlink{cmn_logger_8h_a3fa9ee12c1a4d138c2594449aaf23729}{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S}(\hyperlink{cmn_log_lo_d_8h_a27e55e3638c78366331ee3c1ca3d60ef}{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+I\+N\+I\+T\+\_\+\+D\+E\+B\+U\+G})
-\item 
-\#define \hyperlink{cmn_logger_8h_a0b8a9e58306fa2e82e1cec55da24aaf8}{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+R\+U\+N\+\_\+\+E\+R\+R\+O\+R}~\hyperlink{cmn_logger_8h_a3fa9ee12c1a4d138c2594449aaf23729}{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S}(\hyperlink{cmn_log_lo_d_8h_a7ace6c3eaafa3c4670c6d0dc71406e37}{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+R\+U\+N\+\_\+\+E\+R\+R\+O\+R}) $<$$<$ \hyperlink{cmn_logger_8h_ae7bc2c891a95721784bbedfec97a0d1f}{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+D\+E\+T\+A\+I\+L\+S} $<$$<$ \char`\"{} \char`\"{}
-\item 
-\#define \hyperlink{cmn_logger_8h_a1da0afff3068776b4b73dbf7c103732c}{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+R\+U\+N\+\_\+\+W\+A\+R\+N\+I\+N\+G}~\hyperlink{cmn_logger_8h_a3fa9ee12c1a4d138c2594449aaf23729}{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S}(\hyperlink{cmn_log_lo_d_8h_a0bced3208a653ee94f650b8427ba0274}{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+R\+U\+N\+\_\+\+W\+A\+R\+N\+I\+N\+G})
-\item 
-\#define \hyperlink{cmn_logger_8h_a3eb7a3ca7877b9b116caa603d854127c}{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+R\+U\+N\+\_\+\+V\+E\+R\+B\+O\+S\+E}~\hyperlink{cmn_logger_8h_a3fa9ee12c1a4d138c2594449aaf23729}{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S}(\hyperlink{cmn_log_lo_d_8h_a937175d7a250bf915b6a3f54690ebb36}{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+R\+U\+N\+\_\+\+V\+E\+R\+B\+O\+S\+E})
-\item 
-\#define \hyperlink{cmn_logger_8h_af1bc73c91a5a7c33e6660457194df96d}{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+R\+U\+N\+\_\+\+D\+E\+B\+U\+G}~\hyperlink{cmn_logger_8h_a3fa9ee12c1a4d138c2594449aaf23729}{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S}(\hyperlink{cmn_log_lo_d_8h_a285ec3fc9bf3bf806e6752070005504b}{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+R\+U\+N\+\_\+\+D\+E\+B\+U\+G})
+\#define \hyperlink{cmn_logger_8h_a15ad96dd66d18e84efefb9870af96825}{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-S\-T\-A\-N\-C\-E\-\_\-\-R\-U\-N\-\_\-\-D\-E\-B\-U\-G}(object\-Pointer)~\hyperlink{cmn_logger_8h_adda96d359bb6be5ef4ad871018bb2b58}{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-S\-T\-A\-N\-C\-E}(object\-Pointer, \hyperlink{cmn_log_lo_d_8h_a285ec3fc9bf3bf806e6752070005504b}{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-L\-E\-V\-E\-L\-\_\-\-R\-U\-N\-\_\-\-D\-E\-B\-U\-G})
 \end{DoxyCompactItemize}
 
 {\bf }\par
 \begin{DoxyCompactItemize}
 \item 
-\#define \hyperlink{cmn_logger_8h_ad6bf31d204ebdfa9d018523c32ec5448}{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+I\+N\+I\+T\+\_\+\+E\+R\+R\+O\+R}~\hyperlink{cmn_logger_8h_a2eb3b40558ec17c9ae45197777aca7b2}{C\+M\+N\+\_\+\+L\+O\+G}(\hyperlink{cmn_log_lo_d_8h_a7ad431df88335f9088fc2c38d5199ff8}{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+I\+N\+I\+T\+\_\+\+E\+R\+R\+O\+R}) $<$$<$ \hyperlink{cmn_logger_8h_ae7bc2c891a95721784bbedfec97a0d1f}{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+D\+E\+T\+A\+I\+L\+S} $<$$<$ \char`\"{} \char`\"{}
+\#define \hyperlink{cmn_logger_8h_a25e7cb4bb77d89a759f34b42d8945ee3}{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-I\-T\-\_\-\-E\-R\-R\-O\-R}~\hyperlink{cmn_logger_8h_a3fa9ee12c1a4d138c2594449aaf23729}{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S}(\hyperlink{cmn_log_lo_d_8h_a7ad431df88335f9088fc2c38d5199ff8}{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-L\-E\-V\-E\-L\-\_\-\-I\-N\-I\-T\-\_\-\-E\-R\-R\-O\-R}) $<$$<$ \hyperlink{cmn_logger_8h_ae7bc2c891a95721784bbedfec97a0d1f}{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-D\-E\-T\-A\-I\-L\-S} $<$$<$ \char`\"{} \char`\"{}
 \item 
-\#define \hyperlink{cmn_logger_8h_ad5b4f12aa2e8938d6c706ae4a2df3585}{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+I\+N\+I\+T\+\_\+\+W\+A\+R\+N\+I\+N\+G}~\hyperlink{cmn_logger_8h_a2eb3b40558ec17c9ae45197777aca7b2}{C\+M\+N\+\_\+\+L\+O\+G}(\hyperlink{cmn_log_lo_d_8h_a708aa17ccbbbe1c92f63803adc1d6abb}{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+I\+N\+I\+T\+\_\+\+W\+A\+R\+N\+I\+N\+G})
+\#define \hyperlink{cmn_logger_8h_ae49b26c98b2066c71ea28817bd9b9535}{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-I\-T\-\_\-\-W\-A\-R\-N\-I\-N\-G}~\hyperlink{cmn_logger_8h_a3fa9ee12c1a4d138c2594449aaf23729}{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S}(\hyperlink{cmn_log_lo_d_8h_a708aa17ccbbbe1c92f63803adc1d6abb}{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-L\-E\-V\-E\-L\-\_\-\-I\-N\-I\-T\-\_\-\-W\-A\-R\-N\-I\-N\-G})
 \item 
-\#define \hyperlink{cmn_logger_8h_a6ace6721d5dfc9ff1911693d9ec67aed}{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+I\+N\+I\+T\+\_\+\+V\+E\+R\+B\+O\+S\+E}~\hyperlink{cmn_logger_8h_a2eb3b40558ec17c9ae45197777aca7b2}{C\+M\+N\+\_\+\+L\+O\+G}(\hyperlink{cmn_log_lo_d_8h_ae0fcf22a2f3faaba0c5bf49a237e3f3e}{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+I\+N\+I\+T\+\_\+\+V\+E\+R\+B\+O\+S\+E})
+\#define \hyperlink{cmn_logger_8h_a56f4f348afa2a7e8d32a1215f189da67}{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-I\-T\-\_\-\-V\-E\-R\-B\-O\-S\-E}~\hyperlink{cmn_logger_8h_a3fa9ee12c1a4d138c2594449aaf23729}{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S}(\hyperlink{cmn_log_lo_d_8h_ae0fcf22a2f3faaba0c5bf49a237e3f3e}{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-L\-E\-V\-E\-L\-\_\-\-I\-N\-I\-T\-\_\-\-V\-E\-R\-B\-O\-S\-E})
 \item 
-\#define \hyperlink{cmn_logger_8h_a18ad1a0f1196eaa11e873c3279ae5dc4}{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+I\+N\+I\+T\+\_\+\+D\+E\+B\+U\+G}~\hyperlink{cmn_logger_8h_a2eb3b40558ec17c9ae45197777aca7b2}{C\+M\+N\+\_\+\+L\+O\+G}(\hyperlink{cmn_log_lo_d_8h_a27e55e3638c78366331ee3c1ca3d60ef}{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+I\+N\+I\+T\+\_\+\+D\+E\+B\+U\+G})
+\#define \hyperlink{cmn_logger_8h_a0c2eb3b8921d5e923d2b315d37b4f0b8}{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-I\-T\-\_\-\-D\-E\-B\-U\-G}~\hyperlink{cmn_logger_8h_a3fa9ee12c1a4d138c2594449aaf23729}{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S}(\hyperlink{cmn_log_lo_d_8h_a27e55e3638c78366331ee3c1ca3d60ef}{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-L\-E\-V\-E\-L\-\_\-\-I\-N\-I\-T\-\_\-\-D\-E\-B\-U\-G})
 \item 
-\#define \hyperlink{cmn_logger_8h_a1136d387b21f8d0584ffa3c8c8c0abbf}{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+R\+U\+N\+\_\+\+E\+R\+R\+O\+R}~\hyperlink{cmn_logger_8h_a2eb3b40558ec17c9ae45197777aca7b2}{C\+M\+N\+\_\+\+L\+O\+G}(\hyperlink{cmn_log_lo_d_8h_a7ace6c3eaafa3c4670c6d0dc71406e37}{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+R\+U\+N\+\_\+\+E\+R\+R\+O\+R}) $<$$<$ \hyperlink{cmn_logger_8h_ae7bc2c891a95721784bbedfec97a0d1f}{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+D\+E\+T\+A\+I\+L\+S} $<$$<$ \char`\"{} \char`\"{}
+\#define \hyperlink{cmn_logger_8h_a0b8a9e58306fa2e82e1cec55da24aaf8}{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-R\-U\-N\-\_\-\-E\-R\-R\-O\-R}~\hyperlink{cmn_logger_8h_a3fa9ee12c1a4d138c2594449aaf23729}{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S}(\hyperlink{cmn_log_lo_d_8h_a7ace6c3eaafa3c4670c6d0dc71406e37}{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-L\-E\-V\-E\-L\-\_\-\-R\-U\-N\-\_\-\-E\-R\-R\-O\-R}) $<$$<$ \hyperlink{cmn_logger_8h_ae7bc2c891a95721784bbedfec97a0d1f}{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-D\-E\-T\-A\-I\-L\-S} $<$$<$ \char`\"{} \char`\"{}
 \item 
-\#define \hyperlink{cmn_logger_8h_ab87e61ac3a72d44a89ac0079583d77e3}{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+R\+U\+N\+\_\+\+W\+A\+R\+N\+I\+N\+G}~\hyperlink{cmn_logger_8h_a2eb3b40558ec17c9ae45197777aca7b2}{C\+M\+N\+\_\+\+L\+O\+G}(\hyperlink{cmn_log_lo_d_8h_a0bced3208a653ee94f650b8427ba0274}{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+R\+U\+N\+\_\+\+W\+A\+R\+N\+I\+N\+G})
+\#define \hyperlink{cmn_logger_8h_a1da0afff3068776b4b73dbf7c103732c}{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-R\-U\-N\-\_\-\-W\-A\-R\-N\-I\-N\-G}~\hyperlink{cmn_logger_8h_a3fa9ee12c1a4d138c2594449aaf23729}{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S}(\hyperlink{cmn_log_lo_d_8h_a0bced3208a653ee94f650b8427ba0274}{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-L\-E\-V\-E\-L\-\_\-\-R\-U\-N\-\_\-\-W\-A\-R\-N\-I\-N\-G})
 \item 
-\#define \hyperlink{cmn_logger_8h_a6d0e5e722c09fa2b7a6f1fe21b14fa23}{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+R\+U\+N\+\_\+\+V\+E\+R\+B\+O\+S\+E}~\hyperlink{cmn_logger_8h_a2eb3b40558ec17c9ae45197777aca7b2}{C\+M\+N\+\_\+\+L\+O\+G}(\hyperlink{cmn_log_lo_d_8h_a937175d7a250bf915b6a3f54690ebb36}{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+R\+U\+N\+\_\+\+V\+E\+R\+B\+O\+S\+E})
+\#define \hyperlink{cmn_logger_8h_a3eb7a3ca7877b9b116caa603d854127c}{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-R\-U\-N\-\_\-\-V\-E\-R\-B\-O\-S\-E}~\hyperlink{cmn_logger_8h_a3fa9ee12c1a4d138c2594449aaf23729}{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S}(\hyperlink{cmn_log_lo_d_8h_a937175d7a250bf915b6a3f54690ebb36}{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-L\-E\-V\-E\-L\-\_\-\-R\-U\-N\-\_\-\-V\-E\-R\-B\-O\-S\-E})
 \item 
-\#define \hyperlink{cmn_logger_8h_a1cf43b249cb13a544d595265301d05ac}{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+R\+U\+N\+\_\+\+D\+E\+B\+U\+G}~\hyperlink{cmn_logger_8h_a2eb3b40558ec17c9ae45197777aca7b2}{C\+M\+N\+\_\+\+L\+O\+G}(\hyperlink{cmn_log_lo_d_8h_a285ec3fc9bf3bf806e6752070005504b}{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+R\+U\+N\+\_\+\+D\+E\+B\+U\+G})
+\#define \hyperlink{cmn_logger_8h_af1bc73c91a5a7c33e6660457194df96d}{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-R\-U\-N\-\_\-\-D\-E\-B\-U\-G}~\hyperlink{cmn_logger_8h_a3fa9ee12c1a4d138c2594449aaf23729}{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S}(\hyperlink{cmn_log_lo_d_8h_a285ec3fc9bf3bf806e6752070005504b}{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-L\-E\-V\-E\-L\-\_\-\-R\-U\-N\-\_\-\-D\-E\-B\-U\-G})
+\end{DoxyCompactItemize}
+
+{\bf }\par
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{cmn_logger_8h_ad6bf31d204ebdfa9d018523c32ec5448}{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-I\-N\-I\-T\-\_\-\-E\-R\-R\-O\-R}~\hyperlink{cmn_logger_8h_a2eb3b40558ec17c9ae45197777aca7b2}{C\-M\-N\-\_\-\-L\-O\-G}(\hyperlink{cmn_log_lo_d_8h_a7ad431df88335f9088fc2c38d5199ff8}{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-L\-E\-V\-E\-L\-\_\-\-I\-N\-I\-T\-\_\-\-E\-R\-R\-O\-R}) $<$$<$ \hyperlink{cmn_logger_8h_ae7bc2c891a95721784bbedfec97a0d1f}{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-D\-E\-T\-A\-I\-L\-S} $<$$<$ \char`\"{} \char`\"{}
+\item 
+\#define \hyperlink{cmn_logger_8h_ad5b4f12aa2e8938d6c706ae4a2df3585}{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-I\-N\-I\-T\-\_\-\-W\-A\-R\-N\-I\-N\-G}~\hyperlink{cmn_logger_8h_a2eb3b40558ec17c9ae45197777aca7b2}{C\-M\-N\-\_\-\-L\-O\-G}(\hyperlink{cmn_log_lo_d_8h_a708aa17ccbbbe1c92f63803adc1d6abb}{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-L\-E\-V\-E\-L\-\_\-\-I\-N\-I\-T\-\_\-\-W\-A\-R\-N\-I\-N\-G})
+\item 
+\#define \hyperlink{cmn_logger_8h_a6ace6721d5dfc9ff1911693d9ec67aed}{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-I\-N\-I\-T\-\_\-\-V\-E\-R\-B\-O\-S\-E}~\hyperlink{cmn_logger_8h_a2eb3b40558ec17c9ae45197777aca7b2}{C\-M\-N\-\_\-\-L\-O\-G}(\hyperlink{cmn_log_lo_d_8h_ae0fcf22a2f3faaba0c5bf49a237e3f3e}{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-L\-E\-V\-E\-L\-\_\-\-I\-N\-I\-T\-\_\-\-V\-E\-R\-B\-O\-S\-E})
+\item 
+\#define \hyperlink{cmn_logger_8h_a18ad1a0f1196eaa11e873c3279ae5dc4}{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-I\-N\-I\-T\-\_\-\-D\-E\-B\-U\-G}~\hyperlink{cmn_logger_8h_a2eb3b40558ec17c9ae45197777aca7b2}{C\-M\-N\-\_\-\-L\-O\-G}(\hyperlink{cmn_log_lo_d_8h_a27e55e3638c78366331ee3c1ca3d60ef}{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-L\-E\-V\-E\-L\-\_\-\-I\-N\-I\-T\-\_\-\-D\-E\-B\-U\-G})
+\item 
+\#define \hyperlink{cmn_logger_8h_a1136d387b21f8d0584ffa3c8c8c0abbf}{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-R\-U\-N\-\_\-\-E\-R\-R\-O\-R}~\hyperlink{cmn_logger_8h_a2eb3b40558ec17c9ae45197777aca7b2}{C\-M\-N\-\_\-\-L\-O\-G}(\hyperlink{cmn_log_lo_d_8h_a7ace6c3eaafa3c4670c6d0dc71406e37}{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-L\-E\-V\-E\-L\-\_\-\-R\-U\-N\-\_\-\-E\-R\-R\-O\-R}) $<$$<$ \hyperlink{cmn_logger_8h_ae7bc2c891a95721784bbedfec97a0d1f}{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-D\-E\-T\-A\-I\-L\-S} $<$$<$ \char`\"{} \char`\"{}
+\item 
+\#define \hyperlink{cmn_logger_8h_ab87e61ac3a72d44a89ac0079583d77e3}{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-R\-U\-N\-\_\-\-W\-A\-R\-N\-I\-N\-G}~\hyperlink{cmn_logger_8h_a2eb3b40558ec17c9ae45197777aca7b2}{C\-M\-N\-\_\-\-L\-O\-G}(\hyperlink{cmn_log_lo_d_8h_a0bced3208a653ee94f650b8427ba0274}{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-L\-E\-V\-E\-L\-\_\-\-R\-U\-N\-\_\-\-W\-A\-R\-N\-I\-N\-G})
+\item 
+\#define \hyperlink{cmn_logger_8h_a6d0e5e722c09fa2b7a6f1fe21b14fa23}{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-R\-U\-N\-\_\-\-V\-E\-R\-B\-O\-S\-E}~\hyperlink{cmn_logger_8h_a2eb3b40558ec17c9ae45197777aca7b2}{C\-M\-N\-\_\-\-L\-O\-G}(\hyperlink{cmn_log_lo_d_8h_a937175d7a250bf915b6a3f54690ebb36}{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-L\-E\-V\-E\-L\-\_\-\-R\-U\-N\-\_\-\-V\-E\-R\-B\-O\-S\-E})
+\item 
+\#define \hyperlink{cmn_logger_8h_a1cf43b249cb13a544d595265301d05ac}{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-R\-U\-N\-\_\-\-D\-E\-B\-U\-G}~\hyperlink{cmn_logger_8h_a2eb3b40558ec17c9ae45197777aca7b2}{C\-M\-N\-\_\-\-L\-O\-G}(\hyperlink{cmn_log_lo_d_8h_a285ec3fc9bf3bf806e6752070005504b}{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-L\-E\-V\-E\-L\-\_\-\-R\-U\-N\-\_\-\-D\-E\-B\-U\-G})
 \end{DoxyCompactItemize}
 
 
 
 \subsection{Detailed Description}
-Declaration of \hyperlink{classcmn_logger}{cmn\+Logger} amd macros for human readable logging. 
-
-
+Declaration of \hyperlink{classcmn_logger}{cmn\-Logger} amd macros for human readable logging. 
 
 \subsection{Macro Definition Documentation}
-\hypertarget{cmn_logger_8h_adb1a0222996a138a964a50959cbbcd94}{}\index{cmn\+Logger.\+h@{cmn\+Logger.\+h}!\+\_\+cmn\+Logger\+\_\+h@{\+\_\+cmn\+Logger\+\_\+h}}
-\index{\+\_\+cmn\+Logger\+\_\+h@{\+\_\+cmn\+Logger\+\_\+h}!cmn\+Logger.\+h@{cmn\+Logger.\+h}}
-\subsubsection[{\+\_\+cmn\+Logger\+\_\+h}]{\setlength{\rightskip}{0pt plus 5cm}\#define \+\_\+cmn\+Logger\+\_\+h}\label{cmn_logger_8h_adb1a0222996a138a964a50959cbbcd94}
-\hypertarget{cmn_logger_8h_a2ec657ed70017f50c5cd25e8a0e72dea}{}\index{cmn\+Logger.\+h@{cmn\+Logger.\+h}!B\+Y\+P\+A\+S\+S\+\_\+\+C\+M\+N\+\_\+\+L\+O\+G@{B\+Y\+P\+A\+S\+S\+\_\+\+C\+M\+N\+\_\+\+L\+O\+G}}
-\index{B\+Y\+P\+A\+S\+S\+\_\+\+C\+M\+N\+\_\+\+L\+O\+G@{B\+Y\+P\+A\+S\+S\+\_\+\+C\+M\+N\+\_\+\+L\+O\+G}!cmn\+Logger.\+h@{cmn\+Logger.\+h}}
-\subsubsection[{B\+Y\+P\+A\+S\+S\+\_\+\+C\+M\+N\+\_\+\+L\+O\+G}]{\setlength{\rightskip}{0pt plus 5cm}\#define B\+Y\+P\+A\+S\+S\+\_\+\+C\+M\+N\+\_\+\+L\+O\+G~0}\label{cmn_logger_8h_a2ec657ed70017f50c5cd25e8a0e72dea}
-\hypertarget{cmn_logger_8h_a2eb3b40558ec17c9ae45197777aca7b2}{}\index{cmn\+Logger.\+h@{cmn\+Logger.\+h}!C\+M\+N\+\_\+\+L\+O\+G@{C\+M\+N\+\_\+\+L\+O\+G}}
-\index{C\+M\+N\+\_\+\+L\+O\+G@{C\+M\+N\+\_\+\+L\+O\+G}!cmn\+Logger.\+h@{cmn\+Logger.\+h}}
-\subsubsection[{C\+M\+N\+\_\+\+L\+O\+G}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+M\+N\+\_\+\+L\+O\+G(
+\hypertarget{cmn_logger_8h_adb1a0222996a138a964a50959cbbcd94}{\index{cmn\-Logger.\-h@{cmn\-Logger.\-h}!\-\_\-cmn\-Logger\-\_\-h@{\-\_\-cmn\-Logger\-\_\-h}}
+\index{\-\_\-cmn\-Logger\-\_\-h@{\-\_\-cmn\-Logger\-\_\-h}!cmnLogger.h@{cmn\-Logger.\-h}}
+\subsubsection[{\-\_\-cmn\-Logger\-\_\-h}]{\setlength{\rightskip}{0pt plus 5cm}\#define \-\_\-cmn\-Logger\-\_\-h}}\label{cmn_logger_8h_adb1a0222996a138a964a50959cbbcd94}
+\hypertarget{cmn_logger_8h_a2ec657ed70017f50c5cd25e8a0e72dea}{\index{cmn\-Logger.\-h@{cmn\-Logger.\-h}!B\-Y\-P\-A\-S\-S\-\_\-\-C\-M\-N\-\_\-\-L\-O\-G@{B\-Y\-P\-A\-S\-S\-\_\-\-C\-M\-N\-\_\-\-L\-O\-G}}
+\index{B\-Y\-P\-A\-S\-S\-\_\-\-C\-M\-N\-\_\-\-L\-O\-G@{B\-Y\-P\-A\-S\-S\-\_\-\-C\-M\-N\-\_\-\-L\-O\-G}!cmnLogger.h@{cmn\-Logger.\-h}}
+\subsubsection[{B\-Y\-P\-A\-S\-S\-\_\-\-C\-M\-N\-\_\-\-L\-O\-G}]{\setlength{\rightskip}{0pt plus 5cm}\#define B\-Y\-P\-A\-S\-S\-\_\-\-C\-M\-N\-\_\-\-L\-O\-G}}\label{cmn_logger_8h_a2ec657ed70017f50c5cd25e8a0e72dea}
+\hypertarget{cmn_logger_8h_a2eb3b40558ec17c9ae45197777aca7b2}{\index{cmn\-Logger.\-h@{cmn\-Logger.\-h}!C\-M\-N\-\_\-\-L\-O\-G@{C\-M\-N\-\_\-\-L\-O\-G}}
+\index{C\-M\-N\-\_\-\-L\-O\-G@{C\-M\-N\-\_\-\-L\-O\-G}!cmnLogger.h@{cmn\-Logger.\-h}}
+\subsubsection[{C\-M\-N\-\_\-\-L\-O\-G}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-M\-N\-\_\-\-L\-O\-G(
 \begin{DoxyParamCaption}
 \item[{}]{lod}
 \end{DoxyParamCaption}
-)}\label{cmn_logger_8h_a2eb3b40558ec17c9ae45197777aca7b2}
-{\bfseries Value\+:}
-\begin{DoxyCode}
-\textcolor{keywordflow}{if} (\hyperlink{classcmn_logger_a96c349facac6bbc27220b091ff26a838}{cmnLogger::GetMask}() & \hyperlink{classcmn_logger_ac9a9ba32485a733c51bc7927f76b2355}{cmnLogger::GetMaskFunction}() & lod) 
-      \(\backslash\)
-    ((\hyperlink{classcmn_l_o_d_output_multiplexer}{cmnLODOutputMultiplexer}(\hyperlink{classcmn_logger_aa9a44af4d1640661d784d1da92c9d394}{cmnLogger::GetMultiplexer}(), 
-      lod).\hyperlink{classcmn_l_o_d_output_multiplexer_a4a0452cd477f67f2dc29660ea55aca7e}{Ref}()) << \hyperlink{cmn_log_lo_d_8h_a30e111c7e53ceedb7d85649c246ec3b2}{cmnLogLevelToString}(lod) << \textcolor{stringliteral}{" "})
-\end{DoxyCode}
-This macro is used to log human readable information within the scope of a global function (e.\+g. main()). It can also be used in classes which are not registered in \hyperlink{classcmn_class_register}{cmn\+Class\+Register} (see also macros \hyperlink{cmn_class_register_macros_8h_a7fbab4cbcdfbf35062de4f734e697034}{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S} and \hyperlink{cmn_class_register_macros_8h_a59997edde1868f5ce515ff85dfeaf2f8}{C\+M\+N\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S} declared in \hyperlink{cmn_class_register_8h}{cmn\+Class\+Register.\+h}). For a registered class, please use \hyperlink{cmn_logger_8h_a3fa9ee12c1a4d138c2594449aaf23729}{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S}.
+)~std\-::cout}}\label{cmn_logger_8h_a2eb3b40558ec17c9ae45197777aca7b2}
+This macro is used to log human readable information within the scope of a global function (e.\-g. main()). It can also be used in classes which are not registered in \hyperlink{classcmn_class_register}{cmn\-Class\-Register} (see also macros \hyperlink{cmn_class_register_macros_8h_a7fbab4cbcdfbf35062de4f734e697034}{C\-M\-N\-\_\-\-D\-E\-C\-L\-A\-R\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-S} and \hyperlink{cmn_class_register_macros_8h_a59997edde1868f5ce515ff85dfeaf2f8}{C\-M\-N\-\_\-\-I\-M\-P\-L\-E\-M\-E\-N\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-S} declared in \hyperlink{cmn_class_register_8h}{cmn\-Class\-Register.\-h}). For a registered class, please use \hyperlink{cmn_logger_8h_a3fa9ee12c1a4d138c2594449aaf23729}{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S}.
 
-The message is streamed along with a Level of Detail to \hyperlink{classcmn_logger}{cmn\+Logger} provided that the function and overall log masks allow the level of detail associated to the message. The overall mask can be set using \hyperlink{classcmn_logger_aa1b05cddbe0f496c381453656a21af7d}{cmn\+Logger\+::\+Set\+Mask}. The function mask can be set using \hyperlink{classcmn_logger_afa246173cc26b1fa0bac407842dfd31c}{cmn\+Logger\+::\+Set\+Mask\+Function}.
+The message is streamed along with a Level of Detail to \hyperlink{classcmn_logger}{cmn\-Logger} provided that the function and overall log masks allow the level of detail associated to the message. The overall mask can be set using \hyperlink{classcmn_logger_aa1b05cddbe0f496c381453656a21af7d}{cmn\-Logger\-::\-Set\-Mask}. The function mask can be set using \hyperlink{classcmn_logger_afa246173cc26b1fa0bac407842dfd31c}{cmn\-Logger\-::\-Set\-Mask\-Function}.
 
-The macro creates an output stream if the level of detail of the message satisfies the criterion defined above. It can be used as any other output stream\+:
+The macro creates an output stream if the level of detail of the message satisfies the criterion defined above. It can be used as any other output stream\-:
 
 
 \begin{DoxyCode}
-1 CMN\_LOG\_INIT\_ERROR << "This is a message of LoD CMN\_LOG\_LEVEL\_INIT\_ERROR" << argc << std::endl;
+\hyperlink{cmn_logger_8h_ad6bf31d204ebdfa9d018523c32ec5448}{CMN\_LOG\_INIT\_ERROR} << \textcolor{stringliteral}{"This is a message of LoD CMN\_LOG\_LEVEL\_INIT\_ERROR"} << argc << 
+      std::endl;
 \end{DoxyCode}
 
 
@@ -139,162 +132,158 @@ The macro creates an output stream if the level of detail of the message satisfi
 {\em lod} & The log level of detail of the message. \\
 \hline
 \end{DoxyParams}
-\hypertarget{cmn_logger_8h_a3fa9ee12c1a4d138c2594449aaf23729}{}\index{cmn\+Logger.\+h@{cmn\+Logger.\+h}!C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S@{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S}}
-\index{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S@{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S}!cmn\+Logger.\+h@{cmn\+Logger.\+h}}
-\subsubsection[{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S(
+\hypertarget{cmn_logger_8h_a3fa9ee12c1a4d138c2594449aaf23729}{\index{cmn\-Logger.\-h@{cmn\-Logger.\-h}!C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S@{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S}}
+\index{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S@{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S}!cmnLogger.h@{cmn\-Logger.\-h}}
+\subsubsection[{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S(
 \begin{DoxyParamCaption}
 \item[{}]{lod}
 \end{DoxyParamCaption}
-)~{\bf C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E}(this, lod)}\label{cmn_logger_8h_a3fa9ee12c1a4d138c2594449aaf23729}
-\hypertarget{cmn_logger_8h_a0c2eb3b8921d5e923d2b315d37b4f0b8}{}\index{cmn\+Logger.\+h@{cmn\+Logger.\+h}!C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+I\+T\+\_\+\+D\+E\+B\+U\+G@{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+I\+T\+\_\+\+D\+E\+B\+U\+G}}
-\index{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+I\+T\+\_\+\+D\+E\+B\+U\+G@{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+I\+T\+\_\+\+D\+E\+B\+U\+G}!cmn\+Logger.\+h@{cmn\+Logger.\+h}}
-\subsubsection[{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+I\+T\+\_\+\+D\+E\+B\+U\+G}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+I\+T\+\_\+\+D\+E\+B\+U\+G~{\bf C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S}({\bf C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+I\+N\+I\+T\+\_\+\+D\+E\+B\+U\+G})}\label{cmn_logger_8h_a0c2eb3b8921d5e923d2b315d37b4f0b8}
-\hypertarget{cmn_logger_8h_a25e7cb4bb77d89a759f34b42d8945ee3}{}\index{cmn\+Logger.\+h@{cmn\+Logger.\+h}!C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+I\+T\+\_\+\+E\+R\+R\+O\+R@{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+I\+T\+\_\+\+E\+R\+R\+O\+R}}
-\index{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+I\+T\+\_\+\+E\+R\+R\+O\+R@{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+I\+T\+\_\+\+E\+R\+R\+O\+R}!cmn\+Logger.\+h@{cmn\+Logger.\+h}}
-\subsubsection[{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+I\+T\+\_\+\+E\+R\+R\+O\+R}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+I\+T\+\_\+\+E\+R\+R\+O\+R~{\bf C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S}({\bf C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+I\+N\+I\+T\+\_\+\+E\+R\+R\+O\+R}) $<$$<$ {\bf C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+D\+E\+T\+A\+I\+L\+S} $<$$<$ \char`\"{} \char`\"{}}\label{cmn_logger_8h_a25e7cb4bb77d89a759f34b42d8945ee3}
-Macros defined to use \hyperlink{cmn_logger_8h_a3fa9ee12c1a4d138c2594449aaf23729}{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S} for a given level of detail. \hypertarget{cmn_logger_8h_a56f4f348afa2a7e8d32a1215f189da67}{}\index{cmn\+Logger.\+h@{cmn\+Logger.\+h}!C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+I\+T\+\_\+\+V\+E\+R\+B\+O\+S\+E@{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+I\+T\+\_\+\+V\+E\+R\+B\+O\+S\+E}}
-\index{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+I\+T\+\_\+\+V\+E\+R\+B\+O\+S\+E@{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+I\+T\+\_\+\+V\+E\+R\+B\+O\+S\+E}!cmn\+Logger.\+h@{cmn\+Logger.\+h}}
-\subsubsection[{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+I\+T\+\_\+\+V\+E\+R\+B\+O\+S\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+I\+T\+\_\+\+V\+E\+R\+B\+O\+S\+E~{\bf C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S}({\bf C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+I\+N\+I\+T\+\_\+\+V\+E\+R\+B\+O\+S\+E})}\label{cmn_logger_8h_a56f4f348afa2a7e8d32a1215f189da67}
-\hypertarget{cmn_logger_8h_ae49b26c98b2066c71ea28817bd9b9535}{}\index{cmn\+Logger.\+h@{cmn\+Logger.\+h}!C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+I\+T\+\_\+\+W\+A\+R\+N\+I\+N\+G@{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+I\+T\+\_\+\+W\+A\+R\+N\+I\+N\+G}}
-\index{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+I\+T\+\_\+\+W\+A\+R\+N\+I\+N\+G@{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+I\+T\+\_\+\+W\+A\+R\+N\+I\+N\+G}!cmn\+Logger.\+h@{cmn\+Logger.\+h}}
-\subsubsection[{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+I\+T\+\_\+\+W\+A\+R\+N\+I\+N\+G}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+I\+T\+\_\+\+W\+A\+R\+N\+I\+N\+G~{\bf C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S}({\bf C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+I\+N\+I\+T\+\_\+\+W\+A\+R\+N\+I\+N\+G})}\label{cmn_logger_8h_ae49b26c98b2066c71ea28817bd9b9535}
-\hypertarget{cmn_logger_8h_adda96d359bb6be5ef4ad871018bb2b58}{}\index{cmn\+Logger.\+h@{cmn\+Logger.\+h}!C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E@{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E}}
-\index{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E@{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E}!cmn\+Logger.\+h@{cmn\+Logger.\+h}}
-\subsubsection[{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E(
+)~{\bf C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-S\-T\-A\-N\-C\-E}(this, lod)}}\label{cmn_logger_8h_a3fa9ee12c1a4d138c2594449aaf23729}
+\hypertarget{cmn_logger_8h_a0c2eb3b8921d5e923d2b315d37b4f0b8}{\index{cmn\-Logger.\-h@{cmn\-Logger.\-h}!C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-I\-T\-\_\-\-D\-E\-B\-U\-G@{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-I\-T\-\_\-\-D\-E\-B\-U\-G}}
+\index{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-I\-T\-\_\-\-D\-E\-B\-U\-G@{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-I\-T\-\_\-\-D\-E\-B\-U\-G}!cmnLogger.h@{cmn\-Logger.\-h}}
+\subsubsection[{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-I\-T\-\_\-\-D\-E\-B\-U\-G}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-I\-T\-\_\-\-D\-E\-B\-U\-G~{\bf C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S}({\bf C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-L\-E\-V\-E\-L\-\_\-\-I\-N\-I\-T\-\_\-\-D\-E\-B\-U\-G})}}\label{cmn_logger_8h_a0c2eb3b8921d5e923d2b315d37b4f0b8}
+\hypertarget{cmn_logger_8h_a25e7cb4bb77d89a759f34b42d8945ee3}{\index{cmn\-Logger.\-h@{cmn\-Logger.\-h}!C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-I\-T\-\_\-\-E\-R\-R\-O\-R@{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-I\-T\-\_\-\-E\-R\-R\-O\-R}}
+\index{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-I\-T\-\_\-\-E\-R\-R\-O\-R@{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-I\-T\-\_\-\-E\-R\-R\-O\-R}!cmnLogger.h@{cmn\-Logger.\-h}}
+\subsubsection[{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-I\-T\-\_\-\-E\-R\-R\-O\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-I\-T\-\_\-\-E\-R\-R\-O\-R~{\bf C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S}({\bf C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-L\-E\-V\-E\-L\-\_\-\-I\-N\-I\-T\-\_\-\-E\-R\-R\-O\-R}) $<$$<$ {\bf C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-D\-E\-T\-A\-I\-L\-S} $<$$<$ \char`\"{} \char`\"{}}}\label{cmn_logger_8h_a25e7cb4bb77d89a759f34b42d8945ee3}
+Macros defined to use \hyperlink{cmn_logger_8h_a3fa9ee12c1a4d138c2594449aaf23729}{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S} for a given level of detail. \hypertarget{cmn_logger_8h_a56f4f348afa2a7e8d32a1215f189da67}{\index{cmn\-Logger.\-h@{cmn\-Logger.\-h}!C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-I\-T\-\_\-\-V\-E\-R\-B\-O\-S\-E@{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-I\-T\-\_\-\-V\-E\-R\-B\-O\-S\-E}}
+\index{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-I\-T\-\_\-\-V\-E\-R\-B\-O\-S\-E@{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-I\-T\-\_\-\-V\-E\-R\-B\-O\-S\-E}!cmnLogger.h@{cmn\-Logger.\-h}}
+\subsubsection[{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-I\-T\-\_\-\-V\-E\-R\-B\-O\-S\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-I\-T\-\_\-\-V\-E\-R\-B\-O\-S\-E~{\bf C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S}({\bf C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-L\-E\-V\-E\-L\-\_\-\-I\-N\-I\-T\-\_\-\-V\-E\-R\-B\-O\-S\-E})}}\label{cmn_logger_8h_a56f4f348afa2a7e8d32a1215f189da67}
+\hypertarget{cmn_logger_8h_ae49b26c98b2066c71ea28817bd9b9535}{\index{cmn\-Logger.\-h@{cmn\-Logger.\-h}!C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-I\-T\-\_\-\-W\-A\-R\-N\-I\-N\-G@{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-I\-T\-\_\-\-W\-A\-R\-N\-I\-N\-G}}
+\index{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-I\-T\-\_\-\-W\-A\-R\-N\-I\-N\-G@{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-I\-T\-\_\-\-W\-A\-R\-N\-I\-N\-G}!cmnLogger.h@{cmn\-Logger.\-h}}
+\subsubsection[{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-I\-T\-\_\-\-W\-A\-R\-N\-I\-N\-G}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-I\-T\-\_\-\-W\-A\-R\-N\-I\-N\-G~{\bf C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S}({\bf C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-L\-E\-V\-E\-L\-\_\-\-I\-N\-I\-T\-\_\-\-W\-A\-R\-N\-I\-N\-G})}}\label{cmn_logger_8h_ae49b26c98b2066c71ea28817bd9b9535}
+\hypertarget{cmn_logger_8h_adda96d359bb6be5ef4ad871018bb2b58}{\index{cmn\-Logger.\-h@{cmn\-Logger.\-h}!C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-S\-T\-A\-N\-C\-E@{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-S\-T\-A\-N\-C\-E}}
+\index{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-S\-T\-A\-N\-C\-E@{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-S\-T\-A\-N\-C\-E}!cmnLogger.h@{cmn\-Logger.\-h}}
+\subsubsection[{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-S\-T\-A\-N\-C\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-S\-T\-A\-N\-C\-E(
 \begin{DoxyParamCaption}
-\item[{}]{object\+Pointer, }
+\item[{}]{object\-Pointer, }
 \item[{}]{lod}
 \end{DoxyParamCaption}
-)}\label{cmn_logger_8h_adda96d359bb6be5ef4ad871018bb2b58}
-{\bfseries Value\+:}
-\begin{DoxyCode}
-\textcolor{keywordflow}{if} (\hyperlink{classcmn_logger_a96c349facac6bbc27220b091ff26a838}{cmnLogger::GetMask}() & objectPointer->Services()->GetLogMask() & lod) \(\backslash\)
-    ((\hyperlink{classcmn_l_o_d_output_multiplexer}{cmnLODOutputMultiplexer}(objectPointer->GetLogMultiplexer(), lod).Ref()) << 
-      \hyperlink{cmn_log_lo_d_8h_a30e111c7e53ceedb7d85649c246ec3b2}{cmnLogLevelToString}(lod) << \textcolor{stringliteral}{" Class "} << objectPointer->Services()->GetName() << \textcolor{stringliteral}{": "})
-\end{DoxyCode}
-This macro is used to log human readable information within a registered class. It can only be used within the scope of a method part of a class registered in the \hyperlink{classcmn_class_register}{cmn\+Class\+Register} using the macros \hyperlink{cmn_class_register_macros_8h_a7fbab4cbcdfbf35062de4f734e697034}{C\+M\+N\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S} and \hyperlink{cmn_class_register_macros_8h_a59997edde1868f5ce515ff85dfeaf2f8}{C\+M\+N\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S} declared in \hyperlink{cmn_class_register_8h}{cmn\+Class\+Register.\+h}. For a non registered class of a global function, please use \hyperlink{cmn_logger_8h_a2eb3b40558ec17c9ae45197777aca7b2}{C\+M\+N\+\_\+\+L\+O\+G}.
+)~std\-::cout}}\label{cmn_logger_8h_adda96d359bb6be5ef4ad871018bb2b58}
+This macro is used to log human readable information within a registered class. It can only be used within the scope of a method part of a class registered in the \hyperlink{classcmn_class_register}{cmn\-Class\-Register} using the macros \hyperlink{cmn_class_register_macros_8h_a7fbab4cbcdfbf35062de4f734e697034}{C\-M\-N\-\_\-\-D\-E\-C\-L\-A\-R\-E\-\_\-\-S\-E\-R\-V\-I\-C\-E\-S} and \hyperlink{cmn_class_register_macros_8h_a59997edde1868f5ce515ff85dfeaf2f8}{C\-M\-N\-\_\-\-I\-M\-P\-L\-E\-M\-E\-N\-T\-\_\-\-S\-E\-R\-V\-I\-C\-E\-S} declared in \hyperlink{cmn_class_register_8h}{cmn\-Class\-Register.\-h}. For a non registered class of a global function, please use \hyperlink{cmn_logger_8h_a2eb3b40558ec17c9ae45197777aca7b2}{C\-M\-N\-\_\-\-L\-O\-G}.
 
-The message is streamed along with a Level of Detail to \hyperlink{classcmn_logger}{cmn\+Logger} provided that two conditions are met\+:
+The message is streamed along with a Level of Detail to \hyperlink{classcmn_logger}{cmn\-Logger} provided that two conditions are met\-:
 
 
 \begin{DoxyItemize}
-\item The overall log mask must allow the level of detail associated to the message. The overall mask can be set using \hyperlink{classcmn_logger_aa1b05cddbe0f496c381453656a21af7d}{cmn\+Logger\+::\+Set\+Mask}.
-\item The class specific log mask must allow the level of detail associated to the message. Class specific masks can be set using \hyperlink{classcmn_logger_ac02d8a05e26687bf66951aab021adad7}{cmn\+Logger\+::\+Set\+Mask\+Class}, \hyperlink{classcmn_logger_ae835d053611487f98a3d216ca8ca6f28}{cmn\+Logger\+::\+Set\+Mask\+Class\+Matching} or \hyperlink{classcmn_logger_a88413527ca33537b0d13d1a9645c46a4}{cmn\+Logger\+::\+Set\+Mask\+Class\+All}.
+\item The overall log mask must allow the level of detail associated to the message. The overall mask can be set using \hyperlink{classcmn_logger_aa1b05cddbe0f496c381453656a21af7d}{cmn\-Logger\-::\-Set\-Mask}.
+\item The class specific log mask must allow the level of detail associated to the message. Class specific masks can be set using \hyperlink{classcmn_logger_ac02d8a05e26687bf66951aab021adad7}{cmn\-Logger\-::\-Set\-Mask\-Class}, \hyperlink{classcmn_logger_ae835d053611487f98a3d216ca8ca6f28}{cmn\-Logger\-::\-Set\-Mask\-Class\-Matching} or \hyperlink{classcmn_logger_a88413527ca33537b0d13d1a9645c46a4}{cmn\-Logger\-::\-Set\-Mask\-Class\-All}.
 \end{DoxyItemize}
 
-The macro creates an output stream if the level of detail of the message satisfies the two criteria defined above. It can be used as any other output stream\+:
+The macro creates an output stream if the level of detail of the message satisfies the two criteria defined above. It can be used as any other output stream\-:
 
 
 \begin{DoxyCode}
-1 CMN\_LOG\_CLASS\_INIT\_DEBUG << "This is a message of LoD 4" << this->x << std::endl;
+\hyperlink{cmn_logger_8h_a0c2eb3b8921d5e923d2b315d37b4f0b8}{CMN\_LOG\_CLASS\_INIT\_DEBUG} << \textcolor{stringliteral}{"This is a message of LoD 4"} << this->x << std::endl;
 \end{DoxyCode}
 
 
 
 \begin{DoxyParams}{Parameters}
-{\em lod} & The log level of detail of the message. \\
+{\em lod} & The log level of detail of the message.\\
 \hline
 \end{DoxyParams}
-\hypertarget{cmn_logger_8h_a25ac5303ca9638dc39b9a941ff33e56e}{}\index{cmn\+Logger.\+h@{cmn\+Logger.\+h}!C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+I\+N\+I\+T\+\_\+\+D\+E\+B\+U\+G@{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+I\+N\+I\+T\+\_\+\+D\+E\+B\+U\+G}}
-\index{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+I\+N\+I\+T\+\_\+\+D\+E\+B\+U\+G@{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+I\+N\+I\+T\+\_\+\+D\+E\+B\+U\+G}!cmn\+Logger.\+h@{cmn\+Logger.\+h}}
-\subsubsection[{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+I\+N\+I\+T\+\_\+\+D\+E\+B\+U\+G}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+I\+N\+I\+T\+\_\+\+D\+E\+B\+U\+G(
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000001}{Todo}]replace (C\-I\-S\-S\-T\-\_\-\-O\-S == C\-I\-S\-S\-T\-\_\-\-D\-A\-R\-W\-I\-N) with a better solution for O\-S X logging compiler errors \end{DoxyRefDesc}
+\hypertarget{cmn_logger_8h_a25ac5303ca9638dc39b9a941ff33e56e}{\index{cmn\-Logger.\-h@{cmn\-Logger.\-h}!C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-S\-T\-A\-N\-C\-E\-\_\-\-I\-N\-I\-T\-\_\-\-D\-E\-B\-U\-G@{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-S\-T\-A\-N\-C\-E\-\_\-\-I\-N\-I\-T\-\_\-\-D\-E\-B\-U\-G}}
+\index{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-S\-T\-A\-N\-C\-E\-\_\-\-I\-N\-I\-T\-\_\-\-D\-E\-B\-U\-G@{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-S\-T\-A\-N\-C\-E\-\_\-\-I\-N\-I\-T\-\_\-\-D\-E\-B\-U\-G}!cmnLogger.h@{cmn\-Logger.\-h}}
+\subsubsection[{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-S\-T\-A\-N\-C\-E\-\_\-\-I\-N\-I\-T\-\_\-\-D\-E\-B\-U\-G}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-S\-T\-A\-N\-C\-E\-\_\-\-I\-N\-I\-T\-\_\-\-D\-E\-B\-U\-G(
 \begin{DoxyParamCaption}
-\item[{}]{object\+Pointer}
+\item[{}]{object\-Pointer}
 \end{DoxyParamCaption}
-)~{\bf C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E}(object\+Pointer, {\bf C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+I\+N\+I\+T\+\_\+\+D\+E\+B\+U\+G})}\label{cmn_logger_8h_a25ac5303ca9638dc39b9a941ff33e56e}
-\hypertarget{cmn_logger_8h_ab6e2034b695d5bee24ce2e465af12ba2}{}\index{cmn\+Logger.\+h@{cmn\+Logger.\+h}!C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+I\+N\+I\+T\+\_\+\+E\+R\+R\+O\+R@{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+I\+N\+I\+T\+\_\+\+E\+R\+R\+O\+R}}
-\index{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+I\+N\+I\+T\+\_\+\+E\+R\+R\+O\+R@{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+I\+N\+I\+T\+\_\+\+E\+R\+R\+O\+R}!cmn\+Logger.\+h@{cmn\+Logger.\+h}}
-\subsubsection[{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+I\+N\+I\+T\+\_\+\+E\+R\+R\+O\+R}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+I\+N\+I\+T\+\_\+\+E\+R\+R\+O\+R(
+)~{\bf C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-S\-T\-A\-N\-C\-E}(object\-Pointer, {\bf C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-L\-E\-V\-E\-L\-\_\-\-I\-N\-I\-T\-\_\-\-D\-E\-B\-U\-G})}}\label{cmn_logger_8h_a25ac5303ca9638dc39b9a941ff33e56e}
+\hypertarget{cmn_logger_8h_ab6e2034b695d5bee24ce2e465af12ba2}{\index{cmn\-Logger.\-h@{cmn\-Logger.\-h}!C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-S\-T\-A\-N\-C\-E\-\_\-\-I\-N\-I\-T\-\_\-\-E\-R\-R\-O\-R@{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-S\-T\-A\-N\-C\-E\-\_\-\-I\-N\-I\-T\-\_\-\-E\-R\-R\-O\-R}}
+\index{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-S\-T\-A\-N\-C\-E\-\_\-\-I\-N\-I\-T\-\_\-\-E\-R\-R\-O\-R@{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-S\-T\-A\-N\-C\-E\-\_\-\-I\-N\-I\-T\-\_\-\-E\-R\-R\-O\-R}!cmnLogger.h@{cmn\-Logger.\-h}}
+\subsubsection[{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-S\-T\-A\-N\-C\-E\-\_\-\-I\-N\-I\-T\-\_\-\-E\-R\-R\-O\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-S\-T\-A\-N\-C\-E\-\_\-\-I\-N\-I\-T\-\_\-\-E\-R\-R\-O\-R(
 \begin{DoxyParamCaption}
-\item[{}]{object\+Pointer}
+\item[{}]{object\-Pointer}
 \end{DoxyParamCaption}
-)~{\bf C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E}(object\+Pointer, {\bf C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+I\+N\+I\+T\+\_\+\+E\+R\+R\+O\+R}) $<$$<$ {\bf C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+D\+E\+T\+A\+I\+L\+S} $<$$<$ \char`\"{} \char`\"{}}\label{cmn_logger_8h_ab6e2034b695d5bee24ce2e465af12ba2}
-Macros defined to use \hyperlink{cmn_logger_8h_adda96d359bb6be5ef4ad871018bb2b58}{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E} for a given level of detail. \hypertarget{cmn_logger_8h_a9ba28a8838afce0dc63777b928188e92}{}\index{cmn\+Logger.\+h@{cmn\+Logger.\+h}!C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+I\+N\+I\+T\+\_\+\+V\+E\+R\+B\+O\+S\+E@{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+I\+N\+I\+T\+\_\+\+V\+E\+R\+B\+O\+S\+E}}
-\index{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+I\+N\+I\+T\+\_\+\+V\+E\+R\+B\+O\+S\+E@{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+I\+N\+I\+T\+\_\+\+V\+E\+R\+B\+O\+S\+E}!cmn\+Logger.\+h@{cmn\+Logger.\+h}}
-\subsubsection[{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+I\+N\+I\+T\+\_\+\+V\+E\+R\+B\+O\+S\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+I\+N\+I\+T\+\_\+\+V\+E\+R\+B\+O\+S\+E(
+)~{\bf C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-S\-T\-A\-N\-C\-E}(object\-Pointer, {\bf C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-L\-E\-V\-E\-L\-\_\-\-I\-N\-I\-T\-\_\-\-E\-R\-R\-O\-R}) $<$$<$ {\bf C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-D\-E\-T\-A\-I\-L\-S} $<$$<$ \char`\"{} \char`\"{}}}\label{cmn_logger_8h_ab6e2034b695d5bee24ce2e465af12ba2}
+Macros defined to use \hyperlink{cmn_logger_8h_adda96d359bb6be5ef4ad871018bb2b58}{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-S\-T\-A\-N\-C\-E} for a given level of detail. \hypertarget{cmn_logger_8h_a9ba28a8838afce0dc63777b928188e92}{\index{cmn\-Logger.\-h@{cmn\-Logger.\-h}!C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-S\-T\-A\-N\-C\-E\-\_\-\-I\-N\-I\-T\-\_\-\-V\-E\-R\-B\-O\-S\-E@{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-S\-T\-A\-N\-C\-E\-\_\-\-I\-N\-I\-T\-\_\-\-V\-E\-R\-B\-O\-S\-E}}
+\index{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-S\-T\-A\-N\-C\-E\-\_\-\-I\-N\-I\-T\-\_\-\-V\-E\-R\-B\-O\-S\-E@{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-S\-T\-A\-N\-C\-E\-\_\-\-I\-N\-I\-T\-\_\-\-V\-E\-R\-B\-O\-S\-E}!cmnLogger.h@{cmn\-Logger.\-h}}
+\subsubsection[{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-S\-T\-A\-N\-C\-E\-\_\-\-I\-N\-I\-T\-\_\-\-V\-E\-R\-B\-O\-S\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-S\-T\-A\-N\-C\-E\-\_\-\-I\-N\-I\-T\-\_\-\-V\-E\-R\-B\-O\-S\-E(
 \begin{DoxyParamCaption}
-\item[{}]{object\+Pointer}
+\item[{}]{object\-Pointer}
 \end{DoxyParamCaption}
-)~{\bf C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E}(object\+Pointer, {\bf C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+I\+N\+I\+T\+\_\+\+V\+E\+R\+B\+O\+S\+E})}\label{cmn_logger_8h_a9ba28a8838afce0dc63777b928188e92}
-\hypertarget{cmn_logger_8h_af26e0b5f3eed2b75c7bdd9d9bd9cabed}{}\index{cmn\+Logger.\+h@{cmn\+Logger.\+h}!C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+I\+N\+I\+T\+\_\+\+W\+A\+R\+N\+I\+N\+G@{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+I\+N\+I\+T\+\_\+\+W\+A\+R\+N\+I\+N\+G}}
-\index{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+I\+N\+I\+T\+\_\+\+W\+A\+R\+N\+I\+N\+G@{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+I\+N\+I\+T\+\_\+\+W\+A\+R\+N\+I\+N\+G}!cmn\+Logger.\+h@{cmn\+Logger.\+h}}
-\subsubsection[{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+I\+N\+I\+T\+\_\+\+W\+A\+R\+N\+I\+N\+G}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+I\+N\+I\+T\+\_\+\+W\+A\+R\+N\+I\+N\+G(
+)~{\bf C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-S\-T\-A\-N\-C\-E}(object\-Pointer, {\bf C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-L\-E\-V\-E\-L\-\_\-\-I\-N\-I\-T\-\_\-\-V\-E\-R\-B\-O\-S\-E})}}\label{cmn_logger_8h_a9ba28a8838afce0dc63777b928188e92}
+\hypertarget{cmn_logger_8h_af26e0b5f3eed2b75c7bdd9d9bd9cabed}{\index{cmn\-Logger.\-h@{cmn\-Logger.\-h}!C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-S\-T\-A\-N\-C\-E\-\_\-\-I\-N\-I\-T\-\_\-\-W\-A\-R\-N\-I\-N\-G@{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-S\-T\-A\-N\-C\-E\-\_\-\-I\-N\-I\-T\-\_\-\-W\-A\-R\-N\-I\-N\-G}}
+\index{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-S\-T\-A\-N\-C\-E\-\_\-\-I\-N\-I\-T\-\_\-\-W\-A\-R\-N\-I\-N\-G@{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-S\-T\-A\-N\-C\-E\-\_\-\-I\-N\-I\-T\-\_\-\-W\-A\-R\-N\-I\-N\-G}!cmnLogger.h@{cmn\-Logger.\-h}}
+\subsubsection[{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-S\-T\-A\-N\-C\-E\-\_\-\-I\-N\-I\-T\-\_\-\-W\-A\-R\-N\-I\-N\-G}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-S\-T\-A\-N\-C\-E\-\_\-\-I\-N\-I\-T\-\_\-\-W\-A\-R\-N\-I\-N\-G(
 \begin{DoxyParamCaption}
-\item[{}]{object\+Pointer}
+\item[{}]{object\-Pointer}
 \end{DoxyParamCaption}
-)~{\bf C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E}(object\+Pointer, {\bf C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+I\+N\+I\+T\+\_\+\+W\+A\+R\+N\+I\+N\+G})}\label{cmn_logger_8h_af26e0b5f3eed2b75c7bdd9d9bd9cabed}
-\hypertarget{cmn_logger_8h_a15ad96dd66d18e84efefb9870af96825}{}\index{cmn\+Logger.\+h@{cmn\+Logger.\+h}!C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+R\+U\+N\+\_\+\+D\+E\+B\+U\+G@{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+R\+U\+N\+\_\+\+D\+E\+B\+U\+G}}
-\index{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+R\+U\+N\+\_\+\+D\+E\+B\+U\+G@{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+R\+U\+N\+\_\+\+D\+E\+B\+U\+G}!cmn\+Logger.\+h@{cmn\+Logger.\+h}}
-\subsubsection[{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+R\+U\+N\+\_\+\+D\+E\+B\+U\+G}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+R\+U\+N\+\_\+\+D\+E\+B\+U\+G(
+)~{\bf C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-S\-T\-A\-N\-C\-E}(object\-Pointer, {\bf C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-L\-E\-V\-E\-L\-\_\-\-I\-N\-I\-T\-\_\-\-W\-A\-R\-N\-I\-N\-G})}}\label{cmn_logger_8h_af26e0b5f3eed2b75c7bdd9d9bd9cabed}
+\hypertarget{cmn_logger_8h_a15ad96dd66d18e84efefb9870af96825}{\index{cmn\-Logger.\-h@{cmn\-Logger.\-h}!C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-S\-T\-A\-N\-C\-E\-\_\-\-R\-U\-N\-\_\-\-D\-E\-B\-U\-G@{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-S\-T\-A\-N\-C\-E\-\_\-\-R\-U\-N\-\_\-\-D\-E\-B\-U\-G}}
+\index{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-S\-T\-A\-N\-C\-E\-\_\-\-R\-U\-N\-\_\-\-D\-E\-B\-U\-G@{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-S\-T\-A\-N\-C\-E\-\_\-\-R\-U\-N\-\_\-\-D\-E\-B\-U\-G}!cmnLogger.h@{cmn\-Logger.\-h}}
+\subsubsection[{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-S\-T\-A\-N\-C\-E\-\_\-\-R\-U\-N\-\_\-\-D\-E\-B\-U\-G}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-S\-T\-A\-N\-C\-E\-\_\-\-R\-U\-N\-\_\-\-D\-E\-B\-U\-G(
 \begin{DoxyParamCaption}
-\item[{}]{object\+Pointer}
+\item[{}]{object\-Pointer}
 \end{DoxyParamCaption}
-)~{\bf C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E}(object\+Pointer, {\bf C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+R\+U\+N\+\_\+\+D\+E\+B\+U\+G})}\label{cmn_logger_8h_a15ad96dd66d18e84efefb9870af96825}
-\hypertarget{cmn_logger_8h_aeecbadde8aebbfe6c0c4301d9ec99f39}{}\index{cmn\+Logger.\+h@{cmn\+Logger.\+h}!C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+R\+U\+N\+\_\+\+E\+R\+R\+O\+R@{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+R\+U\+N\+\_\+\+E\+R\+R\+O\+R}}
-\index{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+R\+U\+N\+\_\+\+E\+R\+R\+O\+R@{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+R\+U\+N\+\_\+\+E\+R\+R\+O\+R}!cmn\+Logger.\+h@{cmn\+Logger.\+h}}
-\subsubsection[{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+R\+U\+N\+\_\+\+E\+R\+R\+O\+R}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+R\+U\+N\+\_\+\+E\+R\+R\+O\+R(
+)~{\bf C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-S\-T\-A\-N\-C\-E}(object\-Pointer, {\bf C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-L\-E\-V\-E\-L\-\_\-\-R\-U\-N\-\_\-\-D\-E\-B\-U\-G})}}\label{cmn_logger_8h_a15ad96dd66d18e84efefb9870af96825}
+\hypertarget{cmn_logger_8h_aeecbadde8aebbfe6c0c4301d9ec99f39}{\index{cmn\-Logger.\-h@{cmn\-Logger.\-h}!C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-S\-T\-A\-N\-C\-E\-\_\-\-R\-U\-N\-\_\-\-E\-R\-R\-O\-R@{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-S\-T\-A\-N\-C\-E\-\_\-\-R\-U\-N\-\_\-\-E\-R\-R\-O\-R}}
+\index{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-S\-T\-A\-N\-C\-E\-\_\-\-R\-U\-N\-\_\-\-E\-R\-R\-O\-R@{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-S\-T\-A\-N\-C\-E\-\_\-\-R\-U\-N\-\_\-\-E\-R\-R\-O\-R}!cmnLogger.h@{cmn\-Logger.\-h}}
+\subsubsection[{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-S\-T\-A\-N\-C\-E\-\_\-\-R\-U\-N\-\_\-\-E\-R\-R\-O\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-S\-T\-A\-N\-C\-E\-\_\-\-R\-U\-N\-\_\-\-E\-R\-R\-O\-R(
 \begin{DoxyParamCaption}
-\item[{}]{object\+Pointer}
+\item[{}]{object\-Pointer}
 \end{DoxyParamCaption}
-)~{\bf C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E}(object\+Pointer, {\bf C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+R\+U\+N\+\_\+\+E\+R\+R\+O\+R}) $<$$<$ {\bf C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+D\+E\+T\+A\+I\+L\+S} $<$$<$ \char`\"{} \char`\"{}}\label{cmn_logger_8h_aeecbadde8aebbfe6c0c4301d9ec99f39}
-\hypertarget{cmn_logger_8h_a7aa924c5068460e58d36505290ea274d}{}\index{cmn\+Logger.\+h@{cmn\+Logger.\+h}!C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+R\+U\+N\+\_\+\+V\+E\+R\+B\+O\+S\+E@{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+R\+U\+N\+\_\+\+V\+E\+R\+B\+O\+S\+E}}
-\index{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+R\+U\+N\+\_\+\+V\+E\+R\+B\+O\+S\+E@{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+R\+U\+N\+\_\+\+V\+E\+R\+B\+O\+S\+E}!cmn\+Logger.\+h@{cmn\+Logger.\+h}}
-\subsubsection[{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+R\+U\+N\+\_\+\+V\+E\+R\+B\+O\+S\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+R\+U\+N\+\_\+\+V\+E\+R\+B\+O\+S\+E(
+)~{\bf C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-S\-T\-A\-N\-C\-E}(object\-Pointer, {\bf C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-L\-E\-V\-E\-L\-\_\-\-R\-U\-N\-\_\-\-E\-R\-R\-O\-R}) $<$$<$ {\bf C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-D\-E\-T\-A\-I\-L\-S} $<$$<$ \char`\"{} \char`\"{}}}\label{cmn_logger_8h_aeecbadde8aebbfe6c0c4301d9ec99f39}
+\hypertarget{cmn_logger_8h_a7aa924c5068460e58d36505290ea274d}{\index{cmn\-Logger.\-h@{cmn\-Logger.\-h}!C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-S\-T\-A\-N\-C\-E\-\_\-\-R\-U\-N\-\_\-\-V\-E\-R\-B\-O\-S\-E@{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-S\-T\-A\-N\-C\-E\-\_\-\-R\-U\-N\-\_\-\-V\-E\-R\-B\-O\-S\-E}}
+\index{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-S\-T\-A\-N\-C\-E\-\_\-\-R\-U\-N\-\_\-\-V\-E\-R\-B\-O\-S\-E@{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-S\-T\-A\-N\-C\-E\-\_\-\-R\-U\-N\-\_\-\-V\-E\-R\-B\-O\-S\-E}!cmnLogger.h@{cmn\-Logger.\-h}}
+\subsubsection[{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-S\-T\-A\-N\-C\-E\-\_\-\-R\-U\-N\-\_\-\-V\-E\-R\-B\-O\-S\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-S\-T\-A\-N\-C\-E\-\_\-\-R\-U\-N\-\_\-\-V\-E\-R\-B\-O\-S\-E(
 \begin{DoxyParamCaption}
-\item[{}]{object\+Pointer}
+\item[{}]{object\-Pointer}
 \end{DoxyParamCaption}
-)~{\bf C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E}(object\+Pointer, {\bf C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+R\+U\+N\+\_\+\+V\+E\+R\+B\+O\+S\+E})}\label{cmn_logger_8h_a7aa924c5068460e58d36505290ea274d}
-\hypertarget{cmn_logger_8h_a0be1cbca81ed0daa47b8be061fd027b6}{}\index{cmn\+Logger.\+h@{cmn\+Logger.\+h}!C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+R\+U\+N\+\_\+\+W\+A\+R\+N\+I\+N\+G@{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+R\+U\+N\+\_\+\+W\+A\+R\+N\+I\+N\+G}}
-\index{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+R\+U\+N\+\_\+\+W\+A\+R\+N\+I\+N\+G@{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+R\+U\+N\+\_\+\+W\+A\+R\+N\+I\+N\+G}!cmn\+Logger.\+h@{cmn\+Logger.\+h}}
-\subsubsection[{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+R\+U\+N\+\_\+\+W\+A\+R\+N\+I\+N\+G}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+R\+U\+N\+\_\+\+W\+A\+R\+N\+I\+N\+G(
+)~{\bf C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-S\-T\-A\-N\-C\-E}(object\-Pointer, {\bf C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-L\-E\-V\-E\-L\-\_\-\-R\-U\-N\-\_\-\-V\-E\-R\-B\-O\-S\-E})}}\label{cmn_logger_8h_a7aa924c5068460e58d36505290ea274d}
+\hypertarget{cmn_logger_8h_a0be1cbca81ed0daa47b8be061fd027b6}{\index{cmn\-Logger.\-h@{cmn\-Logger.\-h}!C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-S\-T\-A\-N\-C\-E\-\_\-\-R\-U\-N\-\_\-\-W\-A\-R\-N\-I\-N\-G@{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-S\-T\-A\-N\-C\-E\-\_\-\-R\-U\-N\-\_\-\-W\-A\-R\-N\-I\-N\-G}}
+\index{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-S\-T\-A\-N\-C\-E\-\_\-\-R\-U\-N\-\_\-\-W\-A\-R\-N\-I\-N\-G@{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-S\-T\-A\-N\-C\-E\-\_\-\-R\-U\-N\-\_\-\-W\-A\-R\-N\-I\-N\-G}!cmnLogger.h@{cmn\-Logger.\-h}}
+\subsubsection[{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-S\-T\-A\-N\-C\-E\-\_\-\-R\-U\-N\-\_\-\-W\-A\-R\-N\-I\-N\-G}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-S\-T\-A\-N\-C\-E\-\_\-\-R\-U\-N\-\_\-\-W\-A\-R\-N\-I\-N\-G(
 \begin{DoxyParamCaption}
-\item[{}]{object\+Pointer}
+\item[{}]{object\-Pointer}
 \end{DoxyParamCaption}
-)~{\bf C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E}(object\+Pointer, {\bf C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+R\+U\+N\+\_\+\+W\+A\+R\+N\+I\+N\+G})}\label{cmn_logger_8h_a0be1cbca81ed0daa47b8be061fd027b6}
-\hypertarget{cmn_logger_8h_af1bc73c91a5a7c33e6660457194df96d}{}\index{cmn\+Logger.\+h@{cmn\+Logger.\+h}!C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+R\+U\+N\+\_\+\+D\+E\+B\+U\+G@{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+R\+U\+N\+\_\+\+D\+E\+B\+U\+G}}
-\index{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+R\+U\+N\+\_\+\+D\+E\+B\+U\+G@{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+R\+U\+N\+\_\+\+D\+E\+B\+U\+G}!cmn\+Logger.\+h@{cmn\+Logger.\+h}}
-\subsubsection[{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+R\+U\+N\+\_\+\+D\+E\+B\+U\+G}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+R\+U\+N\+\_\+\+D\+E\+B\+U\+G~{\bf C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S}({\bf C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+R\+U\+N\+\_\+\+D\+E\+B\+U\+G})}\label{cmn_logger_8h_af1bc73c91a5a7c33e6660457194df96d}
-\hypertarget{cmn_logger_8h_a0b8a9e58306fa2e82e1cec55da24aaf8}{}\index{cmn\+Logger.\+h@{cmn\+Logger.\+h}!C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+R\+U\+N\+\_\+\+E\+R\+R\+O\+R@{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+R\+U\+N\+\_\+\+E\+R\+R\+O\+R}}
-\index{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+R\+U\+N\+\_\+\+E\+R\+R\+O\+R@{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+R\+U\+N\+\_\+\+E\+R\+R\+O\+R}!cmn\+Logger.\+h@{cmn\+Logger.\+h}}
-\subsubsection[{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+R\+U\+N\+\_\+\+E\+R\+R\+O\+R}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+R\+U\+N\+\_\+\+E\+R\+R\+O\+R~{\bf C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S}({\bf C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+R\+U\+N\+\_\+\+E\+R\+R\+O\+R}) $<$$<$ {\bf C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+D\+E\+T\+A\+I\+L\+S} $<$$<$ \char`\"{} \char`\"{}}\label{cmn_logger_8h_a0b8a9e58306fa2e82e1cec55da24aaf8}
-\hypertarget{cmn_logger_8h_a3eb7a3ca7877b9b116caa603d854127c}{}\index{cmn\+Logger.\+h@{cmn\+Logger.\+h}!C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+R\+U\+N\+\_\+\+V\+E\+R\+B\+O\+S\+E@{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+R\+U\+N\+\_\+\+V\+E\+R\+B\+O\+S\+E}}
-\index{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+R\+U\+N\+\_\+\+V\+E\+R\+B\+O\+S\+E@{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+R\+U\+N\+\_\+\+V\+E\+R\+B\+O\+S\+E}!cmn\+Logger.\+h@{cmn\+Logger.\+h}}
-\subsubsection[{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+R\+U\+N\+\_\+\+V\+E\+R\+B\+O\+S\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+R\+U\+N\+\_\+\+V\+E\+R\+B\+O\+S\+E~{\bf C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S}({\bf C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+R\+U\+N\+\_\+\+V\+E\+R\+B\+O\+S\+E})}\label{cmn_logger_8h_a3eb7a3ca7877b9b116caa603d854127c}
-\hypertarget{cmn_logger_8h_a1da0afff3068776b4b73dbf7c103732c}{}\index{cmn\+Logger.\+h@{cmn\+Logger.\+h}!C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+R\+U\+N\+\_\+\+W\+A\+R\+N\+I\+N\+G@{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+R\+U\+N\+\_\+\+W\+A\+R\+N\+I\+N\+G}}
-\index{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+R\+U\+N\+\_\+\+W\+A\+R\+N\+I\+N\+G@{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+R\+U\+N\+\_\+\+W\+A\+R\+N\+I\+N\+G}!cmn\+Logger.\+h@{cmn\+Logger.\+h}}
-\subsubsection[{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+R\+U\+N\+\_\+\+W\+A\+R\+N\+I\+N\+G}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S\+\_\+\+R\+U\+N\+\_\+\+W\+A\+R\+N\+I\+N\+G~{\bf C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S}({\bf C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+R\+U\+N\+\_\+\+W\+A\+R\+N\+I\+N\+G})}\label{cmn_logger_8h_a1da0afff3068776b4b73dbf7c103732c}
-\hypertarget{cmn_logger_8h_ae7bc2c891a95721784bbedfec97a0d1f}{}\index{cmn\+Logger.\+h@{cmn\+Logger.\+h}!C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+D\+E\+T\+A\+I\+L\+S@{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+D\+E\+T\+A\+I\+L\+S}}
-\index{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+D\+E\+T\+A\+I\+L\+S@{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+D\+E\+T\+A\+I\+L\+S}!cmn\+Logger.\+h@{cmn\+Logger.\+h}}
-\subsubsection[{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+D\+E\+T\+A\+I\+L\+S}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+D\+E\+T\+A\+I\+L\+S~\char`\"{}File\+: \char`\"{} $<$$<$ cmn\+Logger\+::\+Extract\+File\+Name(\+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+) $<$$<$ \char`\"{} Line\+: \char`\"{} $<$$<$ \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+ $<$$<$ \char`\"{} -\/ \char`\"{}}\label{cmn_logger_8h_ae7bc2c891a95721784bbedfec97a0d1f}
-This macro is used to add useful information to Log macros (\hyperlink{cmn_logger_8h_a3fa9ee12c1a4d138c2594449aaf23729}{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+C\+L\+A\+S\+S} and \hyperlink{cmn_logger_8h_a2eb3b40558ec17c9ae45197777aca7b2}{C\+M\+N\+\_\+\+L\+O\+G}). It provides the additional functionality of logging the file name and line number at which the message was generated.
+)~{\bf C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-I\-N\-S\-T\-A\-N\-C\-E}(object\-Pointer, {\bf C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-L\-E\-V\-E\-L\-\_\-\-R\-U\-N\-\_\-\-W\-A\-R\-N\-I\-N\-G})}}\label{cmn_logger_8h_a0be1cbca81ed0daa47b8be061fd027b6}
+\hypertarget{cmn_logger_8h_af1bc73c91a5a7c33e6660457194df96d}{\index{cmn\-Logger.\-h@{cmn\-Logger.\-h}!C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-R\-U\-N\-\_\-\-D\-E\-B\-U\-G@{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-R\-U\-N\-\_\-\-D\-E\-B\-U\-G}}
+\index{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-R\-U\-N\-\_\-\-D\-E\-B\-U\-G@{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-R\-U\-N\-\_\-\-D\-E\-B\-U\-G}!cmnLogger.h@{cmn\-Logger.\-h}}
+\subsubsection[{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-R\-U\-N\-\_\-\-D\-E\-B\-U\-G}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-R\-U\-N\-\_\-\-D\-E\-B\-U\-G~{\bf C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S}({\bf C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-L\-E\-V\-E\-L\-\_\-\-R\-U\-N\-\_\-\-D\-E\-B\-U\-G})}}\label{cmn_logger_8h_af1bc73c91a5a7c33e6660457194df96d}
+\hypertarget{cmn_logger_8h_a0b8a9e58306fa2e82e1cec55da24aaf8}{\index{cmn\-Logger.\-h@{cmn\-Logger.\-h}!C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-R\-U\-N\-\_\-\-E\-R\-R\-O\-R@{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-R\-U\-N\-\_\-\-E\-R\-R\-O\-R}}
+\index{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-R\-U\-N\-\_\-\-E\-R\-R\-O\-R@{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-R\-U\-N\-\_\-\-E\-R\-R\-O\-R}!cmnLogger.h@{cmn\-Logger.\-h}}
+\subsubsection[{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-R\-U\-N\-\_\-\-E\-R\-R\-O\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-R\-U\-N\-\_\-\-E\-R\-R\-O\-R~{\bf C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S}({\bf C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-L\-E\-V\-E\-L\-\_\-\-R\-U\-N\-\_\-\-E\-R\-R\-O\-R}) $<$$<$ {\bf C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-D\-E\-T\-A\-I\-L\-S} $<$$<$ \char`\"{} \char`\"{}}}\label{cmn_logger_8h_a0b8a9e58306fa2e82e1cec55da24aaf8}
+\hypertarget{cmn_logger_8h_a3eb7a3ca7877b9b116caa603d854127c}{\index{cmn\-Logger.\-h@{cmn\-Logger.\-h}!C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-R\-U\-N\-\_\-\-V\-E\-R\-B\-O\-S\-E@{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-R\-U\-N\-\_\-\-V\-E\-R\-B\-O\-S\-E}}
+\index{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-R\-U\-N\-\_\-\-V\-E\-R\-B\-O\-S\-E@{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-R\-U\-N\-\_\-\-V\-E\-R\-B\-O\-S\-E}!cmnLogger.h@{cmn\-Logger.\-h}}
+\subsubsection[{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-R\-U\-N\-\_\-\-V\-E\-R\-B\-O\-S\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-R\-U\-N\-\_\-\-V\-E\-R\-B\-O\-S\-E~{\bf C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S}({\bf C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-L\-E\-V\-E\-L\-\_\-\-R\-U\-N\-\_\-\-V\-E\-R\-B\-O\-S\-E})}}\label{cmn_logger_8h_a3eb7a3ca7877b9b116caa603d854127c}
+\hypertarget{cmn_logger_8h_a1da0afff3068776b4b73dbf7c103732c}{\index{cmn\-Logger.\-h@{cmn\-Logger.\-h}!C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-R\-U\-N\-\_\-\-W\-A\-R\-N\-I\-N\-G@{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-R\-U\-N\-\_\-\-W\-A\-R\-N\-I\-N\-G}}
+\index{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-R\-U\-N\-\_\-\-W\-A\-R\-N\-I\-N\-G@{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-R\-U\-N\-\_\-\-W\-A\-R\-N\-I\-N\-G}!cmnLogger.h@{cmn\-Logger.\-h}}
+\subsubsection[{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-R\-U\-N\-\_\-\-W\-A\-R\-N\-I\-N\-G}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S\-\_\-\-R\-U\-N\-\_\-\-W\-A\-R\-N\-I\-N\-G~{\bf C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S}({\bf C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-L\-E\-V\-E\-L\-\_\-\-R\-U\-N\-\_\-\-W\-A\-R\-N\-I\-N\-G})}}\label{cmn_logger_8h_a1da0afff3068776b4b73dbf7c103732c}
+\hypertarget{cmn_logger_8h_ae7bc2c891a95721784bbedfec97a0d1f}{\index{cmn\-Logger.\-h@{cmn\-Logger.\-h}!C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-D\-E\-T\-A\-I\-L\-S@{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-D\-E\-T\-A\-I\-L\-S}}
+\index{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-D\-E\-T\-A\-I\-L\-S@{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-D\-E\-T\-A\-I\-L\-S}!cmnLogger.h@{cmn\-Logger.\-h}}
+\subsubsection[{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-D\-E\-T\-A\-I\-L\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-D\-E\-T\-A\-I\-L\-S~\char`\"{}File\-: \char`\"{} $<$$<$ cmn\-Logger\-::\-Extract\-File\-Name(\-\_\-\-\_\-\-F\-I\-L\-E\-\_\-\-\_\-) $<$$<$ \char`\"{} Line\-: \char`\"{} $<$$<$ \-\_\-\-\_\-\-L\-I\-N\-E\-\_\-\-\_\- $<$$<$ \char`\"{} -\/ \char`\"{}}}\label{cmn_logger_8h_ae7bc2c891a95721784bbedfec97a0d1f}
+This macro is used to add useful information to Log macros (\hyperlink{cmn_logger_8h_a3fa9ee12c1a4d138c2594449aaf23729}{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-C\-L\-A\-S\-S} and \hyperlink{cmn_logger_8h_a2eb3b40558ec17c9ae45197777aca7b2}{C\-M\-N\-\_\-\-L\-O\-G}). It provides the additional functionality of logging the file name and line number at which the message was generated.
 
-For example\+: 
+For example\-: 
 \begin{DoxyCode}
-1 CMN\_LOG\_INIT\_ERROR << CMN\_LOG\_DETAILS << "Error occurs" << std::endl;
+\hyperlink{cmn_logger_8h_ad6bf31d204ebdfa9d018523c32ec5448}{CMN\_LOG\_INIT\_ERROR} << \hyperlink{cmn_logger_8h_ae7bc2c891a95721784bbedfec97a0d1f}{CMN\_LOG\_DETAILS} << \textcolor{stringliteral}{"Error occurs"} << std::endl;
 \end{DoxyCode}
 
 
-For any error with a very common message, this helps the programmer to quickly find the origin of the message in the source code. \hypertarget{cmn_logger_8h_a18ad1a0f1196eaa11e873c3279ae5dc4}{}\index{cmn\+Logger.\+h@{cmn\+Logger.\+h}!C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+I\+N\+I\+T\+\_\+\+D\+E\+B\+U\+G@{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+I\+N\+I\+T\+\_\+\+D\+E\+B\+U\+G}}
-\index{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+I\+N\+I\+T\+\_\+\+D\+E\+B\+U\+G@{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+I\+N\+I\+T\+\_\+\+D\+E\+B\+U\+G}!cmn\+Logger.\+h@{cmn\+Logger.\+h}}
-\subsubsection[{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+I\+N\+I\+T\+\_\+\+D\+E\+B\+U\+G}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+I\+N\+I\+T\+\_\+\+D\+E\+B\+U\+G~{\bf C\+M\+N\+\_\+\+L\+O\+G}({\bf C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+I\+N\+I\+T\+\_\+\+D\+E\+B\+U\+G})}\label{cmn_logger_8h_a18ad1a0f1196eaa11e873c3279ae5dc4}
-\hypertarget{cmn_logger_8h_ad6bf31d204ebdfa9d018523c32ec5448}{}\index{cmn\+Logger.\+h@{cmn\+Logger.\+h}!C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+I\+N\+I\+T\+\_\+\+E\+R\+R\+O\+R@{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+I\+N\+I\+T\+\_\+\+E\+R\+R\+O\+R}}
-\index{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+I\+N\+I\+T\+\_\+\+E\+R\+R\+O\+R@{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+I\+N\+I\+T\+\_\+\+E\+R\+R\+O\+R}!cmn\+Logger.\+h@{cmn\+Logger.\+h}}
-\subsubsection[{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+I\+N\+I\+T\+\_\+\+E\+R\+R\+O\+R}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+I\+N\+I\+T\+\_\+\+E\+R\+R\+O\+R~{\bf C\+M\+N\+\_\+\+L\+O\+G}({\bf C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+I\+N\+I\+T\+\_\+\+E\+R\+R\+O\+R}) $<$$<$ {\bf C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+D\+E\+T\+A\+I\+L\+S} $<$$<$ \char`\"{} \char`\"{}}\label{cmn_logger_8h_ad6bf31d204ebdfa9d018523c32ec5448}
-Macros defined to use \hyperlink{cmn_logger_8h_a2eb3b40558ec17c9ae45197777aca7b2}{C\+M\+N\+\_\+\+L\+O\+G} for a given level of detail. \hypertarget{cmn_logger_8h_a6ace6721d5dfc9ff1911693d9ec67aed}{}\index{cmn\+Logger.\+h@{cmn\+Logger.\+h}!C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+I\+N\+I\+T\+\_\+\+V\+E\+R\+B\+O\+S\+E@{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+I\+N\+I\+T\+\_\+\+V\+E\+R\+B\+O\+S\+E}}
-\index{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+I\+N\+I\+T\+\_\+\+V\+E\+R\+B\+O\+S\+E@{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+I\+N\+I\+T\+\_\+\+V\+E\+R\+B\+O\+S\+E}!cmn\+Logger.\+h@{cmn\+Logger.\+h}}
-\subsubsection[{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+I\+N\+I\+T\+\_\+\+V\+E\+R\+B\+O\+S\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+I\+N\+I\+T\+\_\+\+V\+E\+R\+B\+O\+S\+E~{\bf C\+M\+N\+\_\+\+L\+O\+G}({\bf C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+I\+N\+I\+T\+\_\+\+V\+E\+R\+B\+O\+S\+E})}\label{cmn_logger_8h_a6ace6721d5dfc9ff1911693d9ec67aed}
-\hypertarget{cmn_logger_8h_ad5b4f12aa2e8938d6c706ae4a2df3585}{}\index{cmn\+Logger.\+h@{cmn\+Logger.\+h}!C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+I\+N\+I\+T\+\_\+\+W\+A\+R\+N\+I\+N\+G@{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+I\+N\+I\+T\+\_\+\+W\+A\+R\+N\+I\+N\+G}}
-\index{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+I\+N\+I\+T\+\_\+\+W\+A\+R\+N\+I\+N\+G@{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+I\+N\+I\+T\+\_\+\+W\+A\+R\+N\+I\+N\+G}!cmn\+Logger.\+h@{cmn\+Logger.\+h}}
-\subsubsection[{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+I\+N\+I\+T\+\_\+\+W\+A\+R\+N\+I\+N\+G}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+I\+N\+I\+T\+\_\+\+W\+A\+R\+N\+I\+N\+G~{\bf C\+M\+N\+\_\+\+L\+O\+G}({\bf C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+I\+N\+I\+T\+\_\+\+W\+A\+R\+N\+I\+N\+G})}\label{cmn_logger_8h_ad5b4f12aa2e8938d6c706ae4a2df3585}
-\hypertarget{cmn_logger_8h_a1cf43b249cb13a544d595265301d05ac}{}\index{cmn\+Logger.\+h@{cmn\+Logger.\+h}!C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+R\+U\+N\+\_\+\+D\+E\+B\+U\+G@{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+R\+U\+N\+\_\+\+D\+E\+B\+U\+G}}
-\index{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+R\+U\+N\+\_\+\+D\+E\+B\+U\+G@{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+R\+U\+N\+\_\+\+D\+E\+B\+U\+G}!cmn\+Logger.\+h@{cmn\+Logger.\+h}}
-\subsubsection[{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+R\+U\+N\+\_\+\+D\+E\+B\+U\+G}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+R\+U\+N\+\_\+\+D\+E\+B\+U\+G~{\bf C\+M\+N\+\_\+\+L\+O\+G}({\bf C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+R\+U\+N\+\_\+\+D\+E\+B\+U\+G})}\label{cmn_logger_8h_a1cf43b249cb13a544d595265301d05ac}
-\hypertarget{cmn_logger_8h_a1136d387b21f8d0584ffa3c8c8c0abbf}{}\index{cmn\+Logger.\+h@{cmn\+Logger.\+h}!C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+R\+U\+N\+\_\+\+E\+R\+R\+O\+R@{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+R\+U\+N\+\_\+\+E\+R\+R\+O\+R}}
-\index{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+R\+U\+N\+\_\+\+E\+R\+R\+O\+R@{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+R\+U\+N\+\_\+\+E\+R\+R\+O\+R}!cmn\+Logger.\+h@{cmn\+Logger.\+h}}
-\subsubsection[{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+R\+U\+N\+\_\+\+E\+R\+R\+O\+R}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+R\+U\+N\+\_\+\+E\+R\+R\+O\+R~{\bf C\+M\+N\+\_\+\+L\+O\+G}({\bf C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+R\+U\+N\+\_\+\+E\+R\+R\+O\+R}) $<$$<$ {\bf C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+D\+E\+T\+A\+I\+L\+S} $<$$<$ \char`\"{} \char`\"{}}\label{cmn_logger_8h_a1136d387b21f8d0584ffa3c8c8c0abbf}
-\hypertarget{cmn_logger_8h_a6d0e5e722c09fa2b7a6f1fe21b14fa23}{}\index{cmn\+Logger.\+h@{cmn\+Logger.\+h}!C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+R\+U\+N\+\_\+\+V\+E\+R\+B\+O\+S\+E@{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+R\+U\+N\+\_\+\+V\+E\+R\+B\+O\+S\+E}}
-\index{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+R\+U\+N\+\_\+\+V\+E\+R\+B\+O\+S\+E@{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+R\+U\+N\+\_\+\+V\+E\+R\+B\+O\+S\+E}!cmn\+Logger.\+h@{cmn\+Logger.\+h}}
-\subsubsection[{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+R\+U\+N\+\_\+\+V\+E\+R\+B\+O\+S\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+R\+U\+N\+\_\+\+V\+E\+R\+B\+O\+S\+E~{\bf C\+M\+N\+\_\+\+L\+O\+G}({\bf C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+R\+U\+N\+\_\+\+V\+E\+R\+B\+O\+S\+E})}\label{cmn_logger_8h_a6d0e5e722c09fa2b7a6f1fe21b14fa23}
-\hypertarget{cmn_logger_8h_ab87e61ac3a72d44a89ac0079583d77e3}{}\index{cmn\+Logger.\+h@{cmn\+Logger.\+h}!C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+R\+U\+N\+\_\+\+W\+A\+R\+N\+I\+N\+G@{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+R\+U\+N\+\_\+\+W\+A\+R\+N\+I\+N\+G}}
-\index{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+R\+U\+N\+\_\+\+W\+A\+R\+N\+I\+N\+G@{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+R\+U\+N\+\_\+\+W\+A\+R\+N\+I\+N\+G}!cmn\+Logger.\+h@{cmn\+Logger.\+h}}
-\subsubsection[{C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+R\+U\+N\+\_\+\+W\+A\+R\+N\+I\+N\+G}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+R\+U\+N\+\_\+\+W\+A\+R\+N\+I\+N\+G~{\bf C\+M\+N\+\_\+\+L\+O\+G}({\bf C\+M\+N\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+R\+U\+N\+\_\+\+W\+A\+R\+N\+I\+N\+G})}\label{cmn_logger_8h_ab87e61ac3a72d44a89ac0079583d77e3}
+For any error with a very common message, this helps the programmer to quickly find the origin of the message in the source code. \hypertarget{cmn_logger_8h_a18ad1a0f1196eaa11e873c3279ae5dc4}{\index{cmn\-Logger.\-h@{cmn\-Logger.\-h}!C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-I\-N\-I\-T\-\_\-\-D\-E\-B\-U\-G@{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-I\-N\-I\-T\-\_\-\-D\-E\-B\-U\-G}}
+\index{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-I\-N\-I\-T\-\_\-\-D\-E\-B\-U\-G@{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-I\-N\-I\-T\-\_\-\-D\-E\-B\-U\-G}!cmnLogger.h@{cmn\-Logger.\-h}}
+\subsubsection[{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-I\-N\-I\-T\-\_\-\-D\-E\-B\-U\-G}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-I\-N\-I\-T\-\_\-\-D\-E\-B\-U\-G~{\bf C\-M\-N\-\_\-\-L\-O\-G}({\bf C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-L\-E\-V\-E\-L\-\_\-\-I\-N\-I\-T\-\_\-\-D\-E\-B\-U\-G})}}\label{cmn_logger_8h_a18ad1a0f1196eaa11e873c3279ae5dc4}
+\hypertarget{cmn_logger_8h_ad6bf31d204ebdfa9d018523c32ec5448}{\index{cmn\-Logger.\-h@{cmn\-Logger.\-h}!C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-I\-N\-I\-T\-\_\-\-E\-R\-R\-O\-R@{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-I\-N\-I\-T\-\_\-\-E\-R\-R\-O\-R}}
+\index{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-I\-N\-I\-T\-\_\-\-E\-R\-R\-O\-R@{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-I\-N\-I\-T\-\_\-\-E\-R\-R\-O\-R}!cmnLogger.h@{cmn\-Logger.\-h}}
+\subsubsection[{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-I\-N\-I\-T\-\_\-\-E\-R\-R\-O\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-I\-N\-I\-T\-\_\-\-E\-R\-R\-O\-R~{\bf C\-M\-N\-\_\-\-L\-O\-G}({\bf C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-L\-E\-V\-E\-L\-\_\-\-I\-N\-I\-T\-\_\-\-E\-R\-R\-O\-R}) $<$$<$ {\bf C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-D\-E\-T\-A\-I\-L\-S} $<$$<$ \char`\"{} \char`\"{}}}\label{cmn_logger_8h_ad6bf31d204ebdfa9d018523c32ec5448}
+Macros defined to use \hyperlink{cmn_logger_8h_a2eb3b40558ec17c9ae45197777aca7b2}{C\-M\-N\-\_\-\-L\-O\-G} for a given level of detail. \hypertarget{cmn_logger_8h_a6ace6721d5dfc9ff1911693d9ec67aed}{\index{cmn\-Logger.\-h@{cmn\-Logger.\-h}!C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-I\-N\-I\-T\-\_\-\-V\-E\-R\-B\-O\-S\-E@{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-I\-N\-I\-T\-\_\-\-V\-E\-R\-B\-O\-S\-E}}
+\index{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-I\-N\-I\-T\-\_\-\-V\-E\-R\-B\-O\-S\-E@{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-I\-N\-I\-T\-\_\-\-V\-E\-R\-B\-O\-S\-E}!cmnLogger.h@{cmn\-Logger.\-h}}
+\subsubsection[{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-I\-N\-I\-T\-\_\-\-V\-E\-R\-B\-O\-S\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-I\-N\-I\-T\-\_\-\-V\-E\-R\-B\-O\-S\-E~{\bf C\-M\-N\-\_\-\-L\-O\-G}({\bf C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-L\-E\-V\-E\-L\-\_\-\-I\-N\-I\-T\-\_\-\-V\-E\-R\-B\-O\-S\-E})}}\label{cmn_logger_8h_a6ace6721d5dfc9ff1911693d9ec67aed}
+\hypertarget{cmn_logger_8h_ad5b4f12aa2e8938d6c706ae4a2df3585}{\index{cmn\-Logger.\-h@{cmn\-Logger.\-h}!C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-I\-N\-I\-T\-\_\-\-W\-A\-R\-N\-I\-N\-G@{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-I\-N\-I\-T\-\_\-\-W\-A\-R\-N\-I\-N\-G}}
+\index{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-I\-N\-I\-T\-\_\-\-W\-A\-R\-N\-I\-N\-G@{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-I\-N\-I\-T\-\_\-\-W\-A\-R\-N\-I\-N\-G}!cmnLogger.h@{cmn\-Logger.\-h}}
+\subsubsection[{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-I\-N\-I\-T\-\_\-\-W\-A\-R\-N\-I\-N\-G}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-I\-N\-I\-T\-\_\-\-W\-A\-R\-N\-I\-N\-G~{\bf C\-M\-N\-\_\-\-L\-O\-G}({\bf C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-L\-E\-V\-E\-L\-\_\-\-I\-N\-I\-T\-\_\-\-W\-A\-R\-N\-I\-N\-G})}}\label{cmn_logger_8h_ad5b4f12aa2e8938d6c706ae4a2df3585}
+\hypertarget{cmn_logger_8h_a1cf43b249cb13a544d595265301d05ac}{\index{cmn\-Logger.\-h@{cmn\-Logger.\-h}!C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-R\-U\-N\-\_\-\-D\-E\-B\-U\-G@{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-R\-U\-N\-\_\-\-D\-E\-B\-U\-G}}
+\index{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-R\-U\-N\-\_\-\-D\-E\-B\-U\-G@{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-R\-U\-N\-\_\-\-D\-E\-B\-U\-G}!cmnLogger.h@{cmn\-Logger.\-h}}
+\subsubsection[{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-R\-U\-N\-\_\-\-D\-E\-B\-U\-G}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-R\-U\-N\-\_\-\-D\-E\-B\-U\-G~{\bf C\-M\-N\-\_\-\-L\-O\-G}({\bf C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-L\-E\-V\-E\-L\-\_\-\-R\-U\-N\-\_\-\-D\-E\-B\-U\-G})}}\label{cmn_logger_8h_a1cf43b249cb13a544d595265301d05ac}
+\hypertarget{cmn_logger_8h_a1136d387b21f8d0584ffa3c8c8c0abbf}{\index{cmn\-Logger.\-h@{cmn\-Logger.\-h}!C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-R\-U\-N\-\_\-\-E\-R\-R\-O\-R@{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-R\-U\-N\-\_\-\-E\-R\-R\-O\-R}}
+\index{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-R\-U\-N\-\_\-\-E\-R\-R\-O\-R@{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-R\-U\-N\-\_\-\-E\-R\-R\-O\-R}!cmnLogger.h@{cmn\-Logger.\-h}}
+\subsubsection[{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-R\-U\-N\-\_\-\-E\-R\-R\-O\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-R\-U\-N\-\_\-\-E\-R\-R\-O\-R~{\bf C\-M\-N\-\_\-\-L\-O\-G}({\bf C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-L\-E\-V\-E\-L\-\_\-\-R\-U\-N\-\_\-\-E\-R\-R\-O\-R}) $<$$<$ {\bf C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-D\-E\-T\-A\-I\-L\-S} $<$$<$ \char`\"{} \char`\"{}}}\label{cmn_logger_8h_a1136d387b21f8d0584ffa3c8c8c0abbf}
+\hypertarget{cmn_logger_8h_a6d0e5e722c09fa2b7a6f1fe21b14fa23}{\index{cmn\-Logger.\-h@{cmn\-Logger.\-h}!C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-R\-U\-N\-\_\-\-V\-E\-R\-B\-O\-S\-E@{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-R\-U\-N\-\_\-\-V\-E\-R\-B\-O\-S\-E}}
+\index{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-R\-U\-N\-\_\-\-V\-E\-R\-B\-O\-S\-E@{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-R\-U\-N\-\_\-\-V\-E\-R\-B\-O\-S\-E}!cmnLogger.h@{cmn\-Logger.\-h}}
+\subsubsection[{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-R\-U\-N\-\_\-\-V\-E\-R\-B\-O\-S\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-R\-U\-N\-\_\-\-V\-E\-R\-B\-O\-S\-E~{\bf C\-M\-N\-\_\-\-L\-O\-G}({\bf C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-L\-E\-V\-E\-L\-\_\-\-R\-U\-N\-\_\-\-V\-E\-R\-B\-O\-S\-E})}}\label{cmn_logger_8h_a6d0e5e722c09fa2b7a6f1fe21b14fa23}
+\hypertarget{cmn_logger_8h_ab87e61ac3a72d44a89ac0079583d77e3}{\index{cmn\-Logger.\-h@{cmn\-Logger.\-h}!C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-R\-U\-N\-\_\-\-W\-A\-R\-N\-I\-N\-G@{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-R\-U\-N\-\_\-\-W\-A\-R\-N\-I\-N\-G}}
+\index{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-R\-U\-N\-\_\-\-W\-A\-R\-N\-I\-N\-G@{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-R\-U\-N\-\_\-\-W\-A\-R\-N\-I\-N\-G}!cmnLogger.h@{cmn\-Logger.\-h}}
+\subsubsection[{C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-R\-U\-N\-\_\-\-W\-A\-R\-N\-I\-N\-G}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-R\-U\-N\-\_\-\-W\-A\-R\-N\-I\-N\-G~{\bf C\-M\-N\-\_\-\-L\-O\-G}({\bf C\-M\-N\-\_\-\-L\-O\-G\-\_\-\-L\-E\-V\-E\-L\-\_\-\-R\-U\-N\-\_\-\-W\-A\-R\-N\-I\-N\-G})}}\label{cmn_logger_8h_ab87e61ac3a72d44a89ac0079583d77e3}
